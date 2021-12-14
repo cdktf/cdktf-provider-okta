@@ -1,0 +1,430 @@
+// https://www.terraform.io/docs/providers/okta/r/org_configuration.html
+// generated from terraform resource schema
+
+import { Construct } from 'constructs';
+import * as cdktf from 'cdktf';
+
+// Configuration
+
+export interface OrgConfigurationConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Primary address of org
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration.html#address_1 OrgConfiguration#address_1}
+  */
+  readonly address1?: string;
+  /**
+  * Secondary address of org
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration.html#address_2 OrgConfiguration#address_2}
+  */
+  readonly address2?: string;
+  /**
+  * User ID representing the billing contact
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration.html#billing_contact_user OrgConfiguration#billing_contact_user}
+  */
+  readonly billingContactUser?: string;
+  /**
+  * City of org
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration.html#city OrgConfiguration#city}
+  */
+  readonly city?: string;
+  /**
+  * Name of org
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration.html#company_name OrgConfiguration#company_name}
+  */
+  readonly companyName: string;
+  /**
+  * Country of org
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration.html#country OrgConfiguration#country}
+  */
+  readonly country?: string;
+  /**
+  * Support link of org
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration.html#end_user_support_help_url OrgConfiguration#end_user_support_help_url}
+  */
+  readonly endUserSupportHelpUrl?: string;
+  /**
+  * Local path to logo of the org.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration.html#logo OrgConfiguration#logo}
+  */
+  readonly logo?: string;
+  /**
+  * Indicates whether the org's users receive Okta Communication emails
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration.html#opt_out_communication_emails OrgConfiguration#opt_out_communication_emails}
+  */
+  readonly optOutCommunicationEmails?: boolean | cdktf.IResolvable;
+  /**
+  * Support help phone of org
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration.html#phone_number OrgConfiguration#phone_number}
+  */
+  readonly phoneNumber?: string;
+  /**
+  * Postal code of org
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration.html#postal_code OrgConfiguration#postal_code}
+  */
+  readonly postalCode?: string;
+  /**
+  * State of org
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration.html#state OrgConfiguration#state}
+  */
+  readonly state?: string;
+  /**
+  * Support help phone of org
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration.html#support_phone_number OrgConfiguration#support_phone_number}
+  */
+  readonly supportPhoneNumber?: string;
+  /**
+  * User ID representing the technical contact
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration.html#technical_contact_user OrgConfiguration#technical_contact_user}
+  */
+  readonly technicalContactUser?: string;
+  /**
+  * The org's website
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration.html#website OrgConfiguration#website}
+  */
+  readonly website?: string;
+}
+
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/okta/r/org_configuration.html okta_org_configuration}
+*/
+export class OrgConfiguration extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "okta_org_configuration";
+
+  // ===========
+  // INITIALIZER
+  // ===========
+
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/org_configuration.html okta_org_configuration} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options OrgConfigurationConfig
+  */
+  public constructor(scope: Construct, id: string, config: OrgConfigurationConfig) {
+    super(scope, id, {
+      terraformResourceType: 'okta_org_configuration',
+      terraformGeneratorMetadata: {
+        providerName: 'okta'
+      },
+      provider: config.provider,
+      dependsOn: config.dependsOn,
+      count: config.count,
+      lifecycle: config.lifecycle
+    });
+    this._address1 = config.address1;
+    this._address2 = config.address2;
+    this._billingContactUser = config.billingContactUser;
+    this._city = config.city;
+    this._companyName = config.companyName;
+    this._country = config.country;
+    this._endUserSupportHelpUrl = config.endUserSupportHelpUrl;
+    this._logo = config.logo;
+    this._optOutCommunicationEmails = config.optOutCommunicationEmails;
+    this._phoneNumber = config.phoneNumber;
+    this._postalCode = config.postalCode;
+    this._state = config.state;
+    this._supportPhoneNumber = config.supportPhoneNumber;
+    this._technicalContactUser = config.technicalContactUser;
+    this._website = config.website;
+  }
+
+  // ==========
+  // ATTRIBUTES
+  // ==========
+
+  // address_1 - computed: false, optional: true, required: false
+  private _address1?: string; 
+  public get address1() {
+    return this.getStringAttribute('address_1');
+  }
+  public set address1(value: string) {
+    this._address1 = value;
+  }
+  public resetAddress1() {
+    this._address1 = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get address1Input() {
+    return this._address1;
+  }
+
+  // address_2 - computed: false, optional: true, required: false
+  private _address2?: string; 
+  public get address2() {
+    return this.getStringAttribute('address_2');
+  }
+  public set address2(value: string) {
+    this._address2 = value;
+  }
+  public resetAddress2() {
+    this._address2 = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get address2Input() {
+    return this._address2;
+  }
+
+  // billing_contact_user - computed: false, optional: true, required: false
+  private _billingContactUser?: string; 
+  public get billingContactUser() {
+    return this.getStringAttribute('billing_contact_user');
+  }
+  public set billingContactUser(value: string) {
+    this._billingContactUser = value;
+  }
+  public resetBillingContactUser() {
+    this._billingContactUser = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get billingContactUserInput() {
+    return this._billingContactUser;
+  }
+
+  // city - computed: false, optional: true, required: false
+  private _city?: string; 
+  public get city() {
+    return this.getStringAttribute('city');
+  }
+  public set city(value: string) {
+    this._city = value;
+  }
+  public resetCity() {
+    this._city = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cityInput() {
+    return this._city;
+  }
+
+  // company_name - computed: false, optional: false, required: true
+  private _companyName?: string; 
+  public get companyName() {
+    return this.getStringAttribute('company_name');
+  }
+  public set companyName(value: string) {
+    this._companyName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get companyNameInput() {
+    return this._companyName;
+  }
+
+  // country - computed: false, optional: true, required: false
+  private _country?: string; 
+  public get country() {
+    return this.getStringAttribute('country');
+  }
+  public set country(value: string) {
+    this._country = value;
+  }
+  public resetCountry() {
+    this._country = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get countryInput() {
+    return this._country;
+  }
+
+  // end_user_support_help_url - computed: false, optional: true, required: false
+  private _endUserSupportHelpUrl?: string; 
+  public get endUserSupportHelpUrl() {
+    return this.getStringAttribute('end_user_support_help_url');
+  }
+  public set endUserSupportHelpUrl(value: string) {
+    this._endUserSupportHelpUrl = value;
+  }
+  public resetEndUserSupportHelpUrl() {
+    this._endUserSupportHelpUrl = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get endUserSupportHelpUrlInput() {
+    return this._endUserSupportHelpUrl;
+  }
+
+  // expires_at - computed: true, optional: false, required: false
+  public get expiresAt() {
+    return this.getStringAttribute('expires_at');
+  }
+
+  // id - computed: true, optional: true, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
+  // logo - computed: false, optional: true, required: false
+  private _logo?: string; 
+  public get logo() {
+    return this.getStringAttribute('logo');
+  }
+  public set logo(value: string) {
+    this._logo = value;
+  }
+  public resetLogo() {
+    this._logo = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get logoInput() {
+    return this._logo;
+  }
+
+  // opt_out_communication_emails - computed: false, optional: true, required: false
+  private _optOutCommunicationEmails?: boolean | cdktf.IResolvable; 
+  public get optOutCommunicationEmails() {
+    return this.getBooleanAttribute('opt_out_communication_emails') as any;
+  }
+  public set optOutCommunicationEmails(value: boolean | cdktf.IResolvable) {
+    this._optOutCommunicationEmails = value;
+  }
+  public resetOptOutCommunicationEmails() {
+    this._optOutCommunicationEmails = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get optOutCommunicationEmailsInput() {
+    return this._optOutCommunicationEmails;
+  }
+
+  // phone_number - computed: false, optional: true, required: false
+  private _phoneNumber?: string; 
+  public get phoneNumber() {
+    return this.getStringAttribute('phone_number');
+  }
+  public set phoneNumber(value: string) {
+    this._phoneNumber = value;
+  }
+  public resetPhoneNumber() {
+    this._phoneNumber = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get phoneNumberInput() {
+    return this._phoneNumber;
+  }
+
+  // postal_code - computed: false, optional: true, required: false
+  private _postalCode?: string; 
+  public get postalCode() {
+    return this.getStringAttribute('postal_code');
+  }
+  public set postalCode(value: string) {
+    this._postalCode = value;
+  }
+  public resetPostalCode() {
+    this._postalCode = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get postalCodeInput() {
+    return this._postalCode;
+  }
+
+  // state - computed: false, optional: true, required: false
+  private _state?: string; 
+  public get state() {
+    return this.getStringAttribute('state');
+  }
+  public set state(value: string) {
+    this._state = value;
+  }
+  public resetState() {
+    this._state = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stateInput() {
+    return this._state;
+  }
+
+  // subdomain - computed: true, optional: false, required: false
+  public get subdomain() {
+    return this.getStringAttribute('subdomain');
+  }
+
+  // support_phone_number - computed: false, optional: true, required: false
+  private _supportPhoneNumber?: string; 
+  public get supportPhoneNumber() {
+    return this.getStringAttribute('support_phone_number');
+  }
+  public set supportPhoneNumber(value: string) {
+    this._supportPhoneNumber = value;
+  }
+  public resetSupportPhoneNumber() {
+    this._supportPhoneNumber = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get supportPhoneNumberInput() {
+    return this._supportPhoneNumber;
+  }
+
+  // technical_contact_user - computed: false, optional: true, required: false
+  private _technicalContactUser?: string; 
+  public get technicalContactUser() {
+    return this.getStringAttribute('technical_contact_user');
+  }
+  public set technicalContactUser(value: string) {
+    this._technicalContactUser = value;
+  }
+  public resetTechnicalContactUser() {
+    this._technicalContactUser = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get technicalContactUserInput() {
+    return this._technicalContactUser;
+  }
+
+  // website - computed: false, optional: true, required: false
+  private _website?: string; 
+  public get website() {
+    return this.getStringAttribute('website');
+  }
+  public set website(value: string) {
+    this._website = value;
+  }
+  public resetWebsite() {
+    this._website = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get websiteInput() {
+    return this._website;
+  }
+
+  // =========
+  // SYNTHESIS
+  // =========
+
+  protected synthesizeAttributes(): { [name: string]: any } {
+    return {
+      address_1: cdktf.stringToTerraform(this._address1),
+      address_2: cdktf.stringToTerraform(this._address2),
+      billing_contact_user: cdktf.stringToTerraform(this._billingContactUser),
+      city: cdktf.stringToTerraform(this._city),
+      company_name: cdktf.stringToTerraform(this._companyName),
+      country: cdktf.stringToTerraform(this._country),
+      end_user_support_help_url: cdktf.stringToTerraform(this._endUserSupportHelpUrl),
+      logo: cdktf.stringToTerraform(this._logo),
+      opt_out_communication_emails: cdktf.booleanToTerraform(this._optOutCommunicationEmails),
+      phone_number: cdktf.stringToTerraform(this._phoneNumber),
+      postal_code: cdktf.stringToTerraform(this._postalCode),
+      state: cdktf.stringToTerraform(this._state),
+      support_phone_number: cdktf.stringToTerraform(this._supportPhoneNumber),
+      technical_contact_user: cdktf.stringToTerraform(this._technicalContactUser),
+      website: cdktf.stringToTerraform(this._website),
+    };
+  }
+}

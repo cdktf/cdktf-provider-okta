@@ -1,0 +1,416 @@
+// https://www.terraform.io/docs/providers/okta
+// generated from terraform resource schema
+
+import { Construct } from 'constructs';
+import * as cdktf from 'cdktf';
+
+// Configuration
+
+export interface OktaProviderConfig {
+  /**
+  * API Token granting privileges to Okta API.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta#api_token OktaProvider#api_token}
+  */
+  readonly apiToken?: string;
+  /**
+  * Use exponential back off strategy for rate limits.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta#backoff OktaProvider#backoff}
+  */
+  readonly backoff?: boolean | cdktf.IResolvable;
+  /**
+  * The Okta url. (Use 'oktapreview.com' for Okta testing)
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta#base_url OktaProvider#base_url}
+  */
+  readonly baseUrl?: string;
+  /**
+  * API Token granting privileges to Okta API.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta#client_id OktaProvider#client_id}
+  */
+  readonly clientId?: string;
+  /**
+  * providers log level. Minimum is 1 (TRACE), and maximum is 5 (ERROR)
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta#log_level OktaProvider#log_level}
+  */
+  readonly logLevel?: number;
+  /**
+  * (Experimental) sets what percentage of capacity the provider can use of the total rate limit capacity while making calls to the Okta management API endpoints. Okta API operates in one minute buckets. See Okta Management API Rate Limits: https://developer.okta.com/docs/reference/rl-global-mgmt/
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta#max_api_capacity OktaProvider#max_api_capacity}
+  */
+  readonly maxApiCapacity?: number;
+  /**
+  * maximum number of retries to attempt before erroring out.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta#max_retries OktaProvider#max_retries}
+  */
+  readonly maxRetries?: number;
+  /**
+  * maximum seconds to wait when rate limit is hit. We use exponential backoffs when backoff is enabled.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta#max_wait_seconds OktaProvider#max_wait_seconds}
+  */
+  readonly maxWaitSeconds?: number;
+  /**
+  * minimum seconds to wait when rate limit is hit. We use exponential backoffs when backoff is enabled.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta#min_wait_seconds OktaProvider#min_wait_seconds}
+  */
+  readonly minWaitSeconds?: number;
+  /**
+  * The organization to manage in Okta.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta#org_name OktaProvider#org_name}
+  */
+  readonly orgName?: string;
+  /**
+  * Number of concurrent requests to make within a resource where bulk operations are not possible. Take note of https://developer.okta.com/docs/api/getting_started/rate-limits.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta#parallelism OktaProvider#parallelism}
+  */
+  readonly parallelism?: number;
+  /**
+  * API Token granting privileges to Okta API.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta#private_key OktaProvider#private_key}
+  */
+  readonly privateKey?: string;
+  /**
+  * Timeout for single request (in seconds) which is made to Okta, the default is `0` (means no limit is set). The maximum value can be `300`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta#request_timeout OktaProvider#request_timeout}
+  */
+  readonly requestTimeout?: number;
+  /**
+  * API Token granting privileges to Okta API.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta#scopes OktaProvider#scopes}
+  */
+  readonly scopes?: string[];
+  /**
+  * Alias name
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta#alias OktaProvider#alias}
+  */
+  readonly alias?: string;
+}
+
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/okta okta}
+*/
+export class OktaProvider extends cdktf.TerraformProvider {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "okta";
+
+  // ===========
+  // INITIALIZER
+  // ===========
+
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/okta okta} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options OktaProviderConfig = {}
+  */
+  public constructor(scope: Construct, id: string, config: OktaProviderConfig = {}) {
+    super(scope, id, {
+      terraformResourceType: 'okta',
+      terraformGeneratorMetadata: {
+        providerName: 'okta',
+        providerVersionConstraint: '~> 3.20.2'
+      },
+      terraformProviderSource: 'okta/okta'
+    });
+    this._apiToken = config.apiToken;
+    this._backoff = config.backoff;
+    this._baseUrl = config.baseUrl;
+    this._clientId = config.clientId;
+    this._logLevel = config.logLevel;
+    this._maxApiCapacity = config.maxApiCapacity;
+    this._maxRetries = config.maxRetries;
+    this._maxWaitSeconds = config.maxWaitSeconds;
+    this._minWaitSeconds = config.minWaitSeconds;
+    this._orgName = config.orgName;
+    this._parallelism = config.parallelism;
+    this._privateKey = config.privateKey;
+    this._requestTimeout = config.requestTimeout;
+    this._scopes = config.scopes;
+    this._alias = config.alias;
+  }
+
+  // ==========
+  // ATTRIBUTES
+  // ==========
+
+  // api_token - computed: false, optional: true, required: false
+  private _apiToken?: string; 
+  public get apiToken() {
+    return this._apiToken;
+  }
+  public set apiToken(value: string | undefined) {
+    this._apiToken = value;
+  }
+  public resetApiToken() {
+    this._apiToken = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get apiTokenInput() {
+    return this._apiToken;
+  }
+
+  // backoff - computed: false, optional: true, required: false
+  private _backoff?: boolean | cdktf.IResolvable; 
+  public get backoff() {
+    return this._backoff;
+  }
+  public set backoff(value: boolean | cdktf.IResolvable | undefined) {
+    this._backoff = value;
+  }
+  public resetBackoff() {
+    this._backoff = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get backoffInput() {
+    return this._backoff;
+  }
+
+  // base_url - computed: false, optional: true, required: false
+  private _baseUrl?: string; 
+  public get baseUrl() {
+    return this._baseUrl;
+  }
+  public set baseUrl(value: string | undefined) {
+    this._baseUrl = value;
+  }
+  public resetBaseUrl() {
+    this._baseUrl = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get baseUrlInput() {
+    return this._baseUrl;
+  }
+
+  // client_id - computed: false, optional: true, required: false
+  private _clientId?: string; 
+  public get clientId() {
+    return this._clientId;
+  }
+  public set clientId(value: string | undefined) {
+    this._clientId = value;
+  }
+  public resetClientId() {
+    this._clientId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clientIdInput() {
+    return this._clientId;
+  }
+
+  // log_level - computed: false, optional: true, required: false
+  private _logLevel?: number; 
+  public get logLevel() {
+    return this._logLevel;
+  }
+  public set logLevel(value: number | undefined) {
+    this._logLevel = value;
+  }
+  public resetLogLevel() {
+    this._logLevel = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get logLevelInput() {
+    return this._logLevel;
+  }
+
+  // max_api_capacity - computed: false, optional: true, required: false
+  private _maxApiCapacity?: number; 
+  public get maxApiCapacity() {
+    return this._maxApiCapacity;
+  }
+  public set maxApiCapacity(value: number | undefined) {
+    this._maxApiCapacity = value;
+  }
+  public resetMaxApiCapacity() {
+    this._maxApiCapacity = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxApiCapacityInput() {
+    return this._maxApiCapacity;
+  }
+
+  // max_retries - computed: false, optional: true, required: false
+  private _maxRetries?: number; 
+  public get maxRetries() {
+    return this._maxRetries;
+  }
+  public set maxRetries(value: number | undefined) {
+    this._maxRetries = value;
+  }
+  public resetMaxRetries() {
+    this._maxRetries = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxRetriesInput() {
+    return this._maxRetries;
+  }
+
+  // max_wait_seconds - computed: false, optional: true, required: false
+  private _maxWaitSeconds?: number; 
+  public get maxWaitSeconds() {
+    return this._maxWaitSeconds;
+  }
+  public set maxWaitSeconds(value: number | undefined) {
+    this._maxWaitSeconds = value;
+  }
+  public resetMaxWaitSeconds() {
+    this._maxWaitSeconds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxWaitSecondsInput() {
+    return this._maxWaitSeconds;
+  }
+
+  // min_wait_seconds - computed: false, optional: true, required: false
+  private _minWaitSeconds?: number; 
+  public get minWaitSeconds() {
+    return this._minWaitSeconds;
+  }
+  public set minWaitSeconds(value: number | undefined) {
+    this._minWaitSeconds = value;
+  }
+  public resetMinWaitSeconds() {
+    this._minWaitSeconds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get minWaitSecondsInput() {
+    return this._minWaitSeconds;
+  }
+
+  // org_name - computed: false, optional: true, required: false
+  private _orgName?: string; 
+  public get orgName() {
+    return this._orgName;
+  }
+  public set orgName(value: string | undefined) {
+    this._orgName = value;
+  }
+  public resetOrgName() {
+    this._orgName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get orgNameInput() {
+    return this._orgName;
+  }
+
+  // parallelism - computed: false, optional: true, required: false
+  private _parallelism?: number; 
+  public get parallelism() {
+    return this._parallelism;
+  }
+  public set parallelism(value: number | undefined) {
+    this._parallelism = value;
+  }
+  public resetParallelism() {
+    this._parallelism = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get parallelismInput() {
+    return this._parallelism;
+  }
+
+  // private_key - computed: false, optional: true, required: false
+  private _privateKey?: string; 
+  public get privateKey() {
+    return this._privateKey;
+  }
+  public set privateKey(value: string | undefined) {
+    this._privateKey = value;
+  }
+  public resetPrivateKey() {
+    this._privateKey = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get privateKeyInput() {
+    return this._privateKey;
+  }
+
+  // request_timeout - computed: false, optional: true, required: false
+  private _requestTimeout?: number; 
+  public get requestTimeout() {
+    return this._requestTimeout;
+  }
+  public set requestTimeout(value: number | undefined) {
+    this._requestTimeout = value;
+  }
+  public resetRequestTimeout() {
+    this._requestTimeout = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get requestTimeoutInput() {
+    return this._requestTimeout;
+  }
+
+  // scopes - computed: false, optional: true, required: false
+  private _scopes?: string[]; 
+  public get scopes() {
+    return this._scopes;
+  }
+  public set scopes(value: string[] | undefined) {
+    this._scopes = value;
+  }
+  public resetScopes() {
+    this._scopes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scopesInput() {
+    return this._scopes;
+  }
+
+  // alias - computed: false, optional: true, required: false
+  private _alias?: string; 
+  public get alias() {
+    return this._alias;
+  }
+  public set alias(value: string | undefined) {
+    this._alias = value;
+  }
+  public resetAlias() {
+    this._alias = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get aliasInput() {
+    return this._alias;
+  }
+
+  // =========
+  // SYNTHESIS
+  // =========
+
+  protected synthesizeAttributes(): { [name: string]: any } {
+    return {
+      api_token: cdktf.stringToTerraform(this._apiToken),
+      backoff: cdktf.booleanToTerraform(this._backoff),
+      base_url: cdktf.stringToTerraform(this._baseUrl),
+      client_id: cdktf.stringToTerraform(this._clientId),
+      log_level: cdktf.numberToTerraform(this._logLevel),
+      max_api_capacity: cdktf.numberToTerraform(this._maxApiCapacity),
+      max_retries: cdktf.numberToTerraform(this._maxRetries),
+      max_wait_seconds: cdktf.numberToTerraform(this._maxWaitSeconds),
+      min_wait_seconds: cdktf.numberToTerraform(this._minWaitSeconds),
+      org_name: cdktf.stringToTerraform(this._orgName),
+      parallelism: cdktf.numberToTerraform(this._parallelism),
+      private_key: cdktf.stringToTerraform(this._privateKey),
+      request_timeout: cdktf.numberToTerraform(this._requestTimeout),
+      scopes: cdktf.listMapper(cdktf.stringToTerraform)(this._scopes),
+      alias: cdktf.stringToTerraform(this._alias),
+    };
+  }
+}
