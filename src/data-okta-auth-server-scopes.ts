@@ -52,7 +52,7 @@ export class DataOktaAuthServerScopesScopes extends cdktf.ComplexComputedList {
   }
 
   // system - computed: true, optional: false, required: false
-  public get system() {
+  public get systemAttribute() {
     return this.getBooleanAttribute('system') as any;
   }
 }
