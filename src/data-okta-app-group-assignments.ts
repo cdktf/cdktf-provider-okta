@@ -1,0 +1,84 @@
+// https://www.terraform.io/docs/providers/okta/d/app_group_assignments.html
+// generated from terraform resource schema
+
+import { Construct } from 'constructs';
+import * as cdktf from 'cdktf';
+
+// Configuration
+
+export interface DataOktaAppGroupAssignmentsConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * ID of the Okta App being queried for groups
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_group_assignments.html#id DataOktaAppGroupAssignments#id}
+  */
+  readonly id: string;
+}
+
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/okta/d/app_group_assignments.html okta_app_group_assignments}
+*/
+export class DataOktaAppGroupAssignments extends cdktf.TerraformDataSource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "okta_app_group_assignments";
+
+  // ===========
+  // INITIALIZER
+  // ===========
+
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/okta/d/app_group_assignments.html okta_app_group_assignments} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataOktaAppGroupAssignmentsConfig
+  */
+  public constructor(scope: Construct, id: string, config: DataOktaAppGroupAssignmentsConfig) {
+    super(scope, id, {
+      terraformResourceType: 'okta_app_group_assignments',
+      terraformGeneratorMetadata: {
+        providerName: 'okta'
+      },
+      provider: config.provider,
+      dependsOn: config.dependsOn,
+      count: config.count,
+      lifecycle: config.lifecycle
+    });
+    this._id = config.id;
+  }
+
+  // ==========
+  // ATTRIBUTES
+  // ==========
+
+  // groups - computed: true, optional: false, required: false
+  public get groups() {
+    return this.getListAttribute('groups');
+  }
+
+  // id - computed: false, optional: false, required: true
+  private _id?: string; 
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
+  }
+
+  // =========
+  // SYNTHESIS
+  // =========
+
+  protected synthesizeAttributes(): { [name: string]: any } {
+    return {
+      id: cdktf.stringToTerraform(this._id),
+    };
+  }
+}
