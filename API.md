@@ -91426,7 +91426,7 @@ new DataOktaAuthServerScopesScopes(terraformResource: ITerraformResource, terraf
 | [`id`](#cdktfprovideroktadataoktaauthserverscopesscopespropertyid)<span title="Required">*</span> | `string` | *No description.* |
 | [`metadataPublish`](#cdktfprovideroktadataoktaauthserverscopesscopespropertymetadatapublish)<span title="Required">*</span> | `string` | *No description.* |
 | [`name`](#cdktfprovideroktadataoktaauthserverscopesscopespropertyname)<span title="Required">*</span> | `string` | *No description.* |
-| [`system`](#cdktfprovideroktadataoktaauthserverscopesscopespropertysystem)<span title="Required">*</span> | `any` | *No description.* |
+| [`systemAttribute`](#cdktfprovideroktadataoktaauthserverscopesscopespropertysystemattribute)<span title="Required">*</span> | `any` | *No description.* |
 
 ---
 
@@ -91500,10 +91500,10 @@ public readonly name: string;
 
 ---
 
-##### `system`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAuthServerScopesScopes.property.system" id="cdktfprovideroktadataoktaauthserverscopesscopespropertysystem"></a>
+##### `systemAttribute`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAuthServerScopesScopes.property.systemAttribute" id="cdktfprovideroktadataoktaauthserverscopesscopespropertysystemattribute"></a>
 
 ```typescript
-public readonly system: any;
+public readonly systemAttribute: any;
 ```
 
 - *Type:* `any`
