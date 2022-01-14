@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/r/domain_certificate.html
+// https://www.terraform.io/docs/providers/okta/r/domain_certificate
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,37 +10,37 @@ export interface DomainCertificateConfig extends cdktf.TerraformMetaArguments {
   /**
   * Certificate content
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/domain_certificate.html#certificate DomainCertificate#certificate}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/domain_certificate#certificate DomainCertificate#certificate}
   */
   readonly certificate: string;
   /**
   * Certificate chain
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/domain_certificate.html#certificate_chain DomainCertificate#certificate_chain}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/domain_certificate#certificate_chain DomainCertificate#certificate_chain}
   */
   readonly certificateChain: string;
   /**
   * Domain's ID
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/domain_certificate.html#domain_id DomainCertificate#domain_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/domain_certificate#domain_id DomainCertificate#domain_id}
   */
   readonly domainId: string;
   /**
   * Certificate private key
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/domain_certificate.html#private_key DomainCertificate#private_key}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/domain_certificate#private_key DomainCertificate#private_key}
   */
   readonly privateKey: string;
   /**
   * Certificate type
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/domain_certificate.html#type DomainCertificate#type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/domain_certificate#type DomainCertificate#type}
   */
   readonly type?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/r/domain_certificate.html okta_domain_certificate}
+* Represents a {@link https://www.terraform.io/docs/providers/okta/r/domain_certificate okta_domain_certificate}
 */
 export class DomainCertificate extends cdktf.TerraformResource {
 
@@ -54,7 +54,7 @@ export class DomainCertificate extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/domain_certificate.html okta_domain_certificate} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/domain_certificate okta_domain_certificate} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

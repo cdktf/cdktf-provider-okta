@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/r/org_support.html
+// https://www.terraform.io/docs/providers/okta/r/org_support
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,13 +10,13 @@ export interface OrgSupportConfig extends cdktf.TerraformMetaArguments {
   /**
   * Number of days the support should be extended by
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_support.html#extend_by OrgSupport#extend_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_support#extend_by OrgSupport#extend_by}
   */
   readonly extendBy?: number;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/r/org_support.html okta_org_support}
+* Represents a {@link https://www.terraform.io/docs/providers/okta/r/org_support okta_org_support}
 */
 export class OrgSupport extends cdktf.TerraformResource {
 
@@ -30,7 +30,7 @@ export class OrgSupport extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/org_support.html okta_org_support} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/org_support okta_org_support} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

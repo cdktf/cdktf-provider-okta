@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/r/captcha_org_wide_settings.html
+// https://www.terraform.io/docs/providers/okta/r/captcha_org_wide_settings
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,19 +10,19 @@ export interface CaptchaOrgWideSettingsConfig extends cdktf.TerraformMetaArgumen
   /**
   * ID of the CAPTCHA
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/captcha_org_wide_settings.html#captcha_id CaptchaOrgWideSettings#captcha_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/captcha_org_wide_settings#captcha_id CaptchaOrgWideSettings#captcha_id}
   */
   readonly captchaId?: string;
   /**
   * Set of pages that have CAPTCHA enabled
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/captcha_org_wide_settings.html#enabled_for CaptchaOrgWideSettings#enabled_for}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/captcha_org_wide_settings#enabled_for CaptchaOrgWideSettings#enabled_for}
   */
   readonly enabledFor?: string[];
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/r/captcha_org_wide_settings.html okta_captcha_org_wide_settings}
+* Represents a {@link https://www.terraform.io/docs/providers/okta/r/captcha_org_wide_settings okta_captcha_org_wide_settings}
 */
 export class CaptchaOrgWideSettings extends cdktf.TerraformResource {
 
@@ -36,7 +36,7 @@ export class CaptchaOrgWideSettings extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/captcha_org_wide_settings.html okta_captcha_org_wide_settings} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/captcha_org_wide_settings okta_captcha_org_wide_settings} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

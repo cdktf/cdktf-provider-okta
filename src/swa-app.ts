@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/r/swa_app.html
+// https://www.terraform.io/docs/providers/okta/r/swa_app
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,169 +10,169 @@ export interface SwaAppConfig extends cdktf.TerraformMetaArguments {
   /**
   * Custom error page URL
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app.html#accessibility_error_redirect_url SwaApp#accessibility_error_redirect_url}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#accessibility_error_redirect_url SwaApp#accessibility_error_redirect_url}
   */
   readonly accessibilityErrorRedirectUrl?: string;
   /**
   * Custom login page URL
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app.html#accessibility_login_redirect_url SwaApp#accessibility_login_redirect_url}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#accessibility_login_redirect_url SwaApp#accessibility_login_redirect_url}
   */
   readonly accessibilityLoginRedirectUrl?: string;
   /**
   * Enable self service
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app.html#accessibility_self_service SwaApp#accessibility_self_service}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#accessibility_self_service SwaApp#accessibility_self_service}
   */
   readonly accessibilitySelfService?: boolean | cdktf.IResolvable;
   /**
   * Application notes for admins.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app.html#admin_note SwaApp#admin_note}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#admin_note SwaApp#admin_note}
   */
   readonly adminNote?: string;
   /**
   * Displays specific appLinks for the app
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app.html#app_links_json SwaApp#app_links_json}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#app_links_json SwaApp#app_links_json}
   */
   readonly appLinksJson?: string;
   /**
   * Display auto submit toolbar
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app.html#auto_submit_toolbar SwaApp#auto_submit_toolbar}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#auto_submit_toolbar SwaApp#auto_submit_toolbar}
   */
   readonly autoSubmitToolbar?: boolean | cdktf.IResolvable;
   /**
   * Login button field
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app.html#button_field SwaApp#button_field}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#button_field SwaApp#button_field}
   */
   readonly buttonField?: string;
   /**
   * CSS selector for the checkbox
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app.html#checkbox SwaApp#checkbox}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#checkbox SwaApp#checkbox}
   */
   readonly checkbox?: string;
   /**
   * Application notes for end users.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app.html#enduser_note SwaApp#enduser_note}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#enduser_note SwaApp#enduser_note}
   */
   readonly enduserNote?: string;
   /**
   * Groups associated with the application
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app.html#groups SwaApp#groups}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#groups SwaApp#groups}
   */
   readonly groups?: string[];
   /**
   * Do not display application icon on mobile app
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app.html#hide_ios SwaApp#hide_ios}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#hide_ios SwaApp#hide_ios}
   */
   readonly hideIos?: boolean | cdktf.IResolvable;
   /**
   * Do not display application icon to users
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app.html#hide_web SwaApp#hide_web}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#hide_web SwaApp#hide_web}
   */
   readonly hideWeb?: boolean | cdktf.IResolvable;
   /**
   * Pretty name of app.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app.html#label SwaApp#label}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#label SwaApp#label}
   */
   readonly label: string;
   /**
   * Local path to logo of the application.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app.html#logo SwaApp#logo}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#logo SwaApp#logo}
   */
   readonly logo?: string;
   /**
   * Login password field
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app.html#password_field SwaApp#password_field}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#password_field SwaApp#password_field}
   */
   readonly passwordField?: string;
   /**
   * Preconfigured app name
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app.html#preconfigured_app SwaApp#preconfigured_app}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#preconfigured_app SwaApp#preconfigured_app}
   */
   readonly preconfiguredApp?: string;
   /**
   * If going to the login page URL redirects to another page, then enter that URL here
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app.html#redirect_url SwaApp#redirect_url}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#redirect_url SwaApp#redirect_url}
   */
   readonly redirectUrl?: string;
   /**
   * Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app.html#skip_groups SwaApp#skip_groups}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#skip_groups SwaApp#skip_groups}
   */
   readonly skipGroups?: boolean | cdktf.IResolvable;
   /**
   * Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app.html#skip_users SwaApp#skip_users}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#skip_users SwaApp#skip_users}
   */
   readonly skipUsers?: boolean | cdktf.IResolvable;
   /**
   * Status of application.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app.html#status SwaApp#status}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#status SwaApp#status}
   */
   readonly status?: string;
   /**
   * Login URL
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app.html#url SwaApp#url}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#url SwaApp#url}
   */
   readonly url?: string;
   /**
   * A regex that further restricts URL to the specified regex
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app.html#url_regex SwaApp#url_regex}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#url_regex SwaApp#url_regex}
   */
   readonly urlRegex?: string;
   /**
   * Username template
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app.html#user_name_template SwaApp#user_name_template}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#user_name_template SwaApp#user_name_template}
   */
   readonly userNameTemplate?: string;
   /**
   * Push username on update
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app.html#user_name_template_push_status SwaApp#user_name_template_push_status}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#user_name_template_push_status SwaApp#user_name_template_push_status}
   */
   readonly userNameTemplatePushStatus?: string;
   /**
   * Username template suffix
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app.html#user_name_template_suffix SwaApp#user_name_template_suffix}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#user_name_template_suffix SwaApp#user_name_template_suffix}
   */
   readonly userNameTemplateSuffix?: string;
   /**
   * Username template type
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app.html#user_name_template_type SwaApp#user_name_template_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#user_name_template_type SwaApp#user_name_template_type}
   */
   readonly userNameTemplateType?: string;
   /**
   * Login username field
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app.html#username_field SwaApp#username_field}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#username_field SwaApp#username_field}
   */
   readonly usernameField?: string;
   /**
   * users block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app.html#users SwaApp#users}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#users SwaApp#users}
   */
   readonly users?: SwaAppUsers[];
 }
@@ -180,19 +180,19 @@ export interface SwaAppUsers {
   /**
   * User ID.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app.html#id SwaApp#id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#id SwaApp#id}
   */
   readonly id?: string;
   /**
   * Password for user application.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app.html#password SwaApp#password}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#password SwaApp#password}
   */
   readonly password?: string;
   /**
   * Username for user.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app.html#username SwaApp#username}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#username SwaApp#username}
   */
   readonly username?: string;
 }
@@ -211,7 +211,7 @@ export function swaAppUsersToTerraform(struct?: SwaAppUsers): any {
 
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/r/swa_app.html okta_swa_app}
+* Represents a {@link https://www.terraform.io/docs/providers/okta/r/swa_app okta_swa_app}
 */
 export class SwaApp extends cdktf.TerraformResource {
 
@@ -225,7 +225,7 @@ export class SwaApp extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/swa_app.html okta_swa_app} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/swa_app okta_swa_app} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

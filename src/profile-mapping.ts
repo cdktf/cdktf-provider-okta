@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/r/profile_mapping.html
+// https://www.terraform.io/docs/providers/okta/r/profile_mapping
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,47 +10,47 @@ export interface ProfileMappingConfig extends cdktf.TerraformMetaArguments {
   /**
   * Whether apply the changes to all users with this profile after updating or creating the these mappings.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/profile_mapping.html#always_apply ProfileMapping#always_apply}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/profile_mapping#always_apply ProfileMapping#always_apply}
   */
   readonly alwaysApply?: boolean | cdktf.IResolvable;
   /**
   * When turned on this flag will trigger the provider to delete mapping properties that are not defined in config. By default, we do not delete missing properties.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/profile_mapping.html#delete_when_absent ProfileMapping#delete_when_absent}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/profile_mapping#delete_when_absent ProfileMapping#delete_when_absent}
   */
   readonly deleteWhenAbsent?: boolean | cdktf.IResolvable;
   /**
   * The source id of the mapping to manage.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/profile_mapping.html#source_id ProfileMapping#source_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/profile_mapping#source_id ProfileMapping#source_id}
   */
   readonly sourceId: string;
   /**
   * The target id of the mapping to manage.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/profile_mapping.html#target_id ProfileMapping#target_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/profile_mapping#target_id ProfileMapping#target_id}
   */
   readonly targetId: string;
   /**
   * mappings block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/profile_mapping.html#mappings ProfileMapping#mappings}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/profile_mapping#mappings ProfileMapping#mappings}
   */
   readonly mappings?: ProfileMappingMappings[];
 }
 export interface ProfileMappingMappings {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/profile_mapping.html#expression ProfileMapping#expression}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/profile_mapping#expression ProfileMapping#expression}
   */
   readonly expression: string;
   /**
   * The mapping property key.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/profile_mapping.html#id ProfileMapping#id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/profile_mapping#id ProfileMapping#id}
   */
   readonly id: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/profile_mapping.html#push_status ProfileMapping#push_status}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/profile_mapping#push_status ProfileMapping#push_status}
   */
   readonly pushStatus?: string;
 }
@@ -69,7 +69,7 @@ export function profileMappingMappingsToTerraform(struct?: ProfileMappingMapping
 
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/r/profile_mapping.html okta_profile_mapping}
+* Represents a {@link https://www.terraform.io/docs/providers/okta/r/profile_mapping okta_profile_mapping}
 */
 export class ProfileMapping extends cdktf.TerraformResource {
 
@@ -83,7 +83,7 @@ export class ProfileMapping extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/profile_mapping.html okta_profile_mapping} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/profile_mapping okta_profile_mapping} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

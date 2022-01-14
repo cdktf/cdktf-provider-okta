@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/r/user_admin_roles.html
+// https://www.terraform.io/docs/providers/okta/r/user_admin_roles
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,25 +10,25 @@ export interface UserAdminRolesConfig extends cdktf.TerraformMetaArguments {
   /**
   * User Okta admin roles - ie. ['APP_ADMIN', 'USER_ADMIN']
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_admin_roles.html#admin_roles UserAdminRoles#admin_roles}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_admin_roles#admin_roles UserAdminRoles#admin_roles}
   */
   readonly adminRoles: string[];
   /**
   * When this setting is enabled, the admins won't receive any of the default Okta administrator emails
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_admin_roles.html#disable_notifications UserAdminRoles#disable_notifications}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_admin_roles#disable_notifications UserAdminRoles#disable_notifications}
   */
   readonly disableNotifications?: boolean | cdktf.IResolvable;
   /**
   * ID of a Okta User
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_admin_roles.html#user_id UserAdminRoles#user_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_admin_roles#user_id UserAdminRoles#user_id}
   */
   readonly userId: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/r/user_admin_roles.html okta_user_admin_roles}
+* Represents a {@link https://www.terraform.io/docs/providers/okta/r/user_admin_roles okta_user_admin_roles}
 */
 export class UserAdminRoles extends cdktf.TerraformResource {
 
@@ -42,7 +42,7 @@ export class UserAdminRoles extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/user_admin_roles.html okta_user_admin_roles} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/user_admin_roles okta_user_admin_roles} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/r/threat_insight_settings.html
+// https://www.terraform.io/docs/providers/okta/r/threat_insight_settings
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,19 +10,19 @@ export interface ThreatInsightSettingsConfig extends cdktf.TerraformMetaArgument
   /**
   * Specifies how Okta responds to authentication requests from suspicious IPs
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/threat_insight_settings.html#action ThreatInsightSettings#action}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/threat_insight_settings#action ThreatInsightSettings#action}
   */
   readonly action: string;
   /**
   * List of Network Zone IDs to exclude to be not logged or blocked by Okta ThreatInsight and proceed to Sign On rules evaluation
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/threat_insight_settings.html#network_excludes ThreatInsightSettings#network_excludes}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/threat_insight_settings#network_excludes ThreatInsightSettings#network_excludes}
   */
   readonly networkExcludes?: string[];
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/r/threat_insight_settings.html okta_threat_insight_settings}
+* Represents a {@link https://www.terraform.io/docs/providers/okta/r/threat_insight_settings okta_threat_insight_settings}
 */
 export class ThreatInsightSettings extends cdktf.TerraformResource {
 
@@ -36,7 +36,7 @@ export class ThreatInsightSettings extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/threat_insight_settings.html okta_threat_insight_settings} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/threat_insight_settings okta_threat_insight_settings} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

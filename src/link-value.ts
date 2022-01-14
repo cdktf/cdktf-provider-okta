@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/r/link_value.html
+// https://www.terraform.io/docs/providers/okta/r/link_value
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,25 +10,25 @@ export interface LinkValueConfig extends cdktf.TerraformMetaArguments {
   /**
   * Set of User IDs or login values of the users to be assigned the 'associated' relationship.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/link_value.html#associated_user_ids LinkValue#associated_user_ids}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/link_value#associated_user_ids LinkValue#associated_user_ids}
   */
   readonly associatedUserIds?: string[];
   /**
   * Name of the 'primary' relationship being assigned.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/link_value.html#primary_name LinkValue#primary_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/link_value#primary_name LinkValue#primary_name}
   */
   readonly primaryName: string;
   /**
   * User ID to be assigned to 'primary' for the 'associated' user in the specified relationship.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/link_value.html#primary_user_id LinkValue#primary_user_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/link_value#primary_user_id LinkValue#primary_user_id}
   */
   readonly primaryUserId: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/r/link_value.html okta_link_value}
+* Represents a {@link https://www.terraform.io/docs/providers/okta/r/link_value okta_link_value}
 */
 export class LinkValue extends cdktf.TerraformResource {
 
@@ -42,7 +42,7 @@ export class LinkValue extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/link_value.html okta_link_value} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/link_value okta_link_value} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

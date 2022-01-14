@@ -4,7 +4,7 @@
 
 ### AdminRoleCustom <a name="@cdktf/provider-okta.AdminRoleCustom" id="cdktfprovideroktaadminrolecustom"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/admin_role_custom.html okta_admin_role_custom}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/admin_role_custom okta_admin_role_custom}.
 
 #### Initializers <a name="@cdktf/provider-okta.AdminRoleCustom.Initializer" id="cdktfprovideroktaadminrolecustominitializer"></a>
 
@@ -161,7 +161,7 @@ public readonly permissions: string[];
 
 ### AdminRoleCustomAssignments <a name="@cdktf/provider-okta.AdminRoleCustomAssignments" id="cdktfprovideroktaadminrolecustomassignments"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/admin_role_custom_assignments.html okta_admin_role_custom_assignments}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/admin_role_custom_assignments okta_admin_role_custom_assignments}.
 
 #### Initializers <a name="@cdktf/provider-okta.AdminRoleCustomAssignments.Initializer" id="cdktfprovideroktaadminrolecustomassignmentsinitializer"></a>
 
@@ -318,7 +318,7 @@ public readonly resourceSetId: string;
 
 ### AdminRoleTargets <a name="@cdktf/provider-okta.AdminRoleTargets" id="cdktfprovideroktaadminroletargets"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/admin_role_targets.html okta_admin_role_targets}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/admin_role_targets okta_admin_role_targets}.
 
 #### Initializers <a name="@cdktf/provider-okta.AdminRoleTargets.Initializer" id="cdktfprovideroktaadminroletargetsinitializer"></a>
 
@@ -515,7 +515,7 @@ public readonly userId: string;
 
 ### AppAutoLogin <a name="@cdktf/provider-okta.AppAutoLogin" id="cdktfprovideroktaappautologin"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/app_auto_login.html okta_app_auto_login}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/app_auto_login okta_app_auto_login}.
 
 #### Initializers <a name="@cdktf/provider-okta.AppAutoLogin.Initializer" id="cdktfprovideroktaappautologininitializer"></a>
 
@@ -1437,7 +1437,7 @@ public readonly users: AppAutoLoginUsers[];
 
 ### AppBasicAuth <a name="@cdktf/provider-okta.AppBasicAuth" id="cdktfprovideroktaappbasicauth"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/app_basic_auth.html okta_app_basic_auth}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/app_basic_auth okta_app_basic_auth}.
 
 #### Initializers <a name="@cdktf/provider-okta.AppBasicAuth.Initializer" id="cdktfprovideroktaappbasicauthinitializer"></a>
 
@@ -2055,7 +2055,7 @@ public readonly users: AppBasicAuthUsers[];
 
 ### AppBookmark <a name="@cdktf/provider-okta.AppBookmark" id="cdktfprovideroktaappbookmark"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark.html okta_app_bookmark}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark okta_app_bookmark}.
 
 #### Initializers <a name="@cdktf/provider-okta.AppBookmark.Initializer" id="cdktfprovideroktaappbookmarkinitializer"></a>
 
@@ -2680,7 +2680,7 @@ public readonly users: AppBookmarkUsers[];
 
 ### AppGroupAssignment <a name="@cdktf/provider-okta.AppGroupAssignment" id="cdktfprovideroktaappgroupassignment"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/app_group_assignment.html okta_app_group_assignment}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/app_group_assignment okta_app_group_assignment}.
 
 #### Initializers <a name="@cdktf/provider-okta.AppGroupAssignment.Initializer" id="cdktfprovideroktaappgroupassignmentinitializer"></a>
 
@@ -2895,7 +2895,7 @@ public readonly retainAssignment: boolean | IResolvable;
 
 ### AppGroupAssignments <a name="@cdktf/provider-okta.AppGroupAssignments" id="cdktfprovideroktaappgroupassignments"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/app_group_assignments.html okta_app_group_assignments}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/app_group_assignments okta_app_group_assignments}.
 
 #### Initializers <a name="@cdktf/provider-okta.AppGroupAssignments.Initializer" id="cdktfprovideroktaappgroupassignmentsinitializer"></a>
 
@@ -3017,7 +3017,7 @@ public readonly group: AppGroupAssignmentsGroup[];
 
 ### AppOauth <a name="@cdktf/provider-okta.AppOauth" id="cdktfprovideroktaappoauth"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/app_oauth.html okta_app_oauth}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/app_oauth okta_app_oauth}.
 
 #### Initializers <a name="@cdktf/provider-okta.AppOauth.Initializer" id="cdktfprovideroktaappoauthinitializer"></a>
 
@@ -4536,7 +4536,7 @@ public readonly wildcardRedirect: string;
 
 ### AppOauthApiScope <a name="@cdktf/provider-okta.AppOauthApiScope" id="cdktfprovideroktaappoauthapiscope"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/app_oauth_api_scope.html okta_app_oauth_api_scope}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/app_oauth_api_scope okta_app_oauth_api_scope}.
 
 #### Initializers <a name="@cdktf/provider-okta.AppOauthApiScope.Initializer" id="cdktfprovideroktaappoauthapiscopeinitializer"></a>
 
@@ -4680,7 +4680,7 @@ public readonly scopes: string[];
 
 ### AppOauthRedirectUri <a name="@cdktf/provider-okta.AppOauthRedirectUri" id="cdktfprovideroktaappoauthredirecturi"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/app_oauth_redirect_uri.html okta_app_oauth_redirect_uri}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/app_oauth_redirect_uri okta_app_oauth_redirect_uri}.
 
 #### Initializers <a name="@cdktf/provider-okta.AppOauthRedirectUri.Initializer" id="cdktfprovideroktaappoauthredirecturiinitializer"></a>
 
@@ -4802,7 +4802,7 @@ public readonly uri: string;
 
 ### AppSaml <a name="@cdktf/provider-okta.AppSaml" id="cdktfprovideroktaappsaml"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/app_saml.html okta_app_saml}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/app_saml okta_app_saml}.
 
 #### Initializers <a name="@cdktf/provider-okta.AppSaml.Initializer" id="cdktfprovideroktaappsamlinitializer"></a>
 
@@ -6421,7 +6421,7 @@ public readonly users: AppSamlUsers[];
 
 ### AppSamlAppSettings <a name="@cdktf/provider-okta.AppSamlAppSettings" id="cdktfprovideroktaappsamlappsettings"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/app_saml_app_settings.html okta_app_saml_app_settings}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/app_saml_app_settings okta_app_saml_app_settings}.
 
 #### Initializers <a name="@cdktf/provider-okta.AppSamlAppSettings.Initializer" id="cdktfprovideroktaappsamlappsettingsinitializer"></a>
 
@@ -6543,7 +6543,7 @@ public readonly settings: string;
 
 ### AppSecurePasswordStore <a name="@cdktf/provider-okta.AppSecurePasswordStore" id="cdktfprovideroktaappsecurepasswordstore"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/app_secure_password_store.html okta_app_secure_password_store}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/app_secure_password_store okta_app_secure_password_store}.
 
 #### Initializers <a name="@cdktf/provider-okta.AppSecurePasswordStore.Initializer" id="cdktfprovideroktaappsecurepasswordstoreinitializer"></a>
 
@@ -7589,7 +7589,7 @@ public readonly users: AppSecurePasswordStoreUsers[];
 
 ### AppSharedCredentials <a name="@cdktf/provider-okta.AppSharedCredentials" id="cdktfprovideroktaappsharedcredentials"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/app_shared_credentials.html okta_app_shared_credentials}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/app_shared_credentials okta_app_shared_credentials}.
 
 #### Initializers <a name="@cdktf/provider-okta.AppSharedCredentials.Initializer" id="cdktfprovideroktaappsharedcredentialsinitializer"></a>
 
@@ -8569,7 +8569,7 @@ public readonly users: AppSharedCredentialsUsers[];
 
 ### AppSignonPolicyRule <a name="@cdktf/provider-okta.AppSignonPolicyRule" id="cdktfprovideroktaappsignonpolicyrule"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/app_signon_policy_rule.html okta_app_signon_policy_rule}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/app_signon_policy_rule okta_app_signon_policy_rule}.
 
 #### Initializers <a name="@cdktf/provider-okta.AppSignonPolicyRule.Initializer" id="cdktfprovideroktaappsignonpolicyruleinitializer"></a>
 
@@ -9277,7 +9277,7 @@ public readonly userTypesIncluded: string[];
 
 ### AppSwa <a name="@cdktf/provider-okta.AppSwa" id="cdktfprovideroktaappswa"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/app_swa.html okta_app_swa}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/app_swa okta_app_swa}.
 
 #### Initializers <a name="@cdktf/provider-okta.AppSwa.Initializer" id="cdktfprovideroktaappswainitializer"></a>
 
@@ -10199,7 +10199,7 @@ public readonly users: AppSwaUsers[];
 
 ### AppThreeField <a name="@cdktf/provider-okta.AppThreeField" id="cdktfprovideroktaappthreefield"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/app_three_field.html okta_app_three_field}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/app_three_field okta_app_three_field}.
 
 #### Initializers <a name="@cdktf/provider-okta.AppThreeField.Initializer" id="cdktfprovideroktaappthreefieldinitializer"></a>
 
@@ -11166,7 +11166,7 @@ public readonly users: AppThreeFieldUsers[];
 
 ### AppUser <a name="@cdktf/provider-okta.AppUser" id="cdktfprovideroktaappuser"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/app_user.html okta_app_user}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/app_user okta_app_user}.
 
 #### Initializers <a name="@cdktf/provider-okta.AppUser.Initializer" id="cdktfprovideroktaappuserinitializer"></a>
 
@@ -11421,7 +11421,7 @@ public readonly username: string;
 
 ### AppUserBaseSchema <a name="@cdktf/provider-okta.AppUserBaseSchema" id="cdktfprovideroktaappuserbaseschema"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema.html okta_app_user_base_schema}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema okta_app_user_base_schema}.
 
 #### Initializers <a name="@cdktf/provider-okta.AppUserBaseSchema.Initializer" id="cdktfprovideroktaappuserbaseschemainitializer"></a>
 
@@ -11738,7 +11738,7 @@ public readonly userType: string;
 
 ### AppUserBaseSchemaProperty <a name="@cdktf/provider-okta.AppUserBaseSchemaProperty" id="cdktfprovideroktaappuserbaseschemaproperty"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema_property.html okta_app_user_base_schema_property}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema_property okta_app_user_base_schema_property}.
 
 #### Initializers <a name="@cdktf/provider-okta.AppUserBaseSchemaProperty.Initializer" id="cdktfprovideroktaappuserbaseschemapropertyinitializer"></a>
 
@@ -12055,7 +12055,7 @@ public readonly userType: string;
 
 ### AppUserSchema <a name="@cdktf/provider-okta.AppUserSchema" id="cdktfprovideroktaappuserschema"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema.html okta_app_user_schema}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema okta_app_user_schema}.
 
 #### Initializers <a name="@cdktf/provider-okta.AppUserSchema.Initializer" id="cdktfprovideroktaappuserschemainitializer"></a>
 
@@ -12720,7 +12720,7 @@ public readonly userType: string;
 
 ### AppUserSchemaProperty <a name="@cdktf/provider-okta.AppUserSchemaProperty" id="cdktfprovideroktaappuserschemaproperty"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema_property.html okta_app_user_schema_property}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema_property okta_app_user_schema_property}.
 
 #### Initializers <a name="@cdktf/provider-okta.AppUserSchemaProperty.Initializer" id="cdktfprovideroktaappuserschemapropertyinitializer"></a>
 
@@ -13385,7 +13385,7 @@ public readonly userType: string;
 
 ### Authenticator <a name="@cdktf/provider-okta.Authenticator" id="cdktfprovideroktaauthenticator"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/authenticator.html okta_authenticator}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/authenticator okta_authenticator}.
 
 #### Initializers <a name="@cdktf/provider-okta.Authenticator.Initializer" id="cdktfprovideroktaauthenticatorinitializer"></a>
 
@@ -13720,7 +13720,7 @@ public readonly status: string;
 
 ### AuthServer <a name="@cdktf/provider-okta.AuthServer" id="cdktfprovideroktaauthserver"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/auth_server.html okta_auth_server}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/auth_server okta_auth_server}.
 
 #### Initializers <a name="@cdktf/provider-okta.AuthServer.Initializer" id="cdktfprovideroktaauthserverinitializer"></a>
 
@@ -14008,7 +14008,7 @@ public readonly status: string;
 
 ### AuthServerClaim <a name="@cdktf/provider-okta.AuthServerClaim" id="cdktfprovideroktaauthserverclaim"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/auth_server_claim.html okta_auth_server_claim}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/auth_server_claim okta_auth_server_claim}.
 
 #### Initializers <a name="@cdktf/provider-okta.AuthServerClaim.Initializer" id="cdktfprovideroktaauthserverclaiminitializer"></a>
 
@@ -14325,7 +14325,7 @@ public readonly valueType: string;
 
 ### AuthServerClaimDefault <a name="@cdktf/provider-okta.AuthServerClaimDefault" id="cdktfprovideroktaauthserverclaimdefault"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/auth_server_claim_default.html okta_auth_server_claim_default}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/auth_server_claim_default okta_auth_server_claim_default}.
 
 #### Initializers <a name="@cdktf/provider-okta.AuthServerClaimDefault.Initializer" id="cdktfprovideroktaauthserverclaimdefaultinitializer"></a>
 
@@ -14555,7 +14555,7 @@ public readonly value: string;
 
 ### AuthServerDefault <a name="@cdktf/provider-okta.AuthServerDefault" id="cdktfprovideroktaauthserverdefault"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/auth_server_default.html okta_auth_server_default}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/auth_server_default okta_auth_server_default}.
 
 #### Initializers <a name="@cdktf/provider-okta.AuthServerDefault.Initializer" id="cdktfprovideroktaauthserverdefaultinitializer"></a>
 
@@ -14850,7 +14850,7 @@ public readonly status: string;
 
 ### AuthServerPolicy <a name="@cdktf/provider-okta.AuthServerPolicy" id="cdktfprovideroktaauthserverpolicy"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy.html okta_auth_server_policy}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy okta_auth_server_policy}.
 
 #### Initializers <a name="@cdktf/provider-okta.AuthServerPolicy.Initializer" id="cdktfprovideroktaauthserverpolicyinitializer"></a>
 
@@ -15102,7 +15102,7 @@ public readonly type: string;
 
 ### AuthServerPolicyRule <a name="@cdktf/provider-okta.AuthServerPolicyRule" id="cdktfprovideroktaauthserverpolicyrule"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy_rule.html okta_auth_server_policy_rule}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy_rule okta_auth_server_policy_rule}.
 
 #### Initializers <a name="@cdktf/provider-okta.AuthServerPolicyRule.Initializer" id="cdktfprovideroktaauthserverpolicyruleinitializer"></a>
 
@@ -15615,7 +15615,7 @@ public readonly userWhitelist: string[];
 
 ### AuthServerScope <a name="@cdktf/provider-okta.AuthServerScope" id="cdktfprovideroktaauthserverscope"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/auth_server_scope.html okta_auth_server_scope}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/auth_server_scope okta_auth_server_scope}.
 
 #### Initializers <a name="@cdktf/provider-okta.AuthServerScope.Initializer" id="cdktfprovideroktaauthserverscopeinitializer"></a>
 
@@ -15888,7 +15888,7 @@ public readonly name: string;
 
 ### AutoLoginApp <a name="@cdktf/provider-okta.AutoLoginApp" id="cdktfprovideroktaautologinapp"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/auto_login_app.html okta_auto_login_app}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/auto_login_app okta_auto_login_app}.
 
 #### Initializers <a name="@cdktf/provider-okta.AutoLoginApp.Initializer" id="cdktfprovideroktaautologinappinitializer"></a>
 
@@ -16810,7 +16810,7 @@ public readonly users: AutoLoginAppUsers[];
 
 ### Behavior <a name="@cdktf/provider-okta.Behavior" id="cdktfprovideroktabehavior"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/behavior.html okta_behavior}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/behavior okta_behavior}.
 
 #### Initializers <a name="@cdktf/provider-okta.Behavior.Initializer" id="cdktfprovideroktabehaviorinitializer"></a>
 
@@ -17083,7 +17083,7 @@ public readonly velocity: number;
 
 ### BookmarkApp <a name="@cdktf/provider-okta.BookmarkApp" id="cdktfprovideroktabookmarkapp"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/bookmark_app.html okta_bookmark_app}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/bookmark_app okta_bookmark_app}.
 
 #### Initializers <a name="@cdktf/provider-okta.BookmarkApp.Initializer" id="cdktfprovideroktabookmarkappinitializer"></a>
 
@@ -17708,7 +17708,7 @@ public readonly users: BookmarkAppUsers[];
 
 ### Captcha <a name="@cdktf/provider-okta.Captcha" id="cdktfprovideroktacaptcha"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/captcha.html okta_captcha}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/captcha okta_captcha}.
 
 #### Initializers <a name="@cdktf/provider-okta.Captcha.Initializer" id="cdktfprovideroktacaptchainitializer"></a>
 
@@ -17874,7 +17874,7 @@ public readonly type: string;
 
 ### CaptchaOrgWideSettings <a name="@cdktf/provider-okta.CaptchaOrgWideSettings" id="cdktfprovideroktacaptchaorgwidesettings"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/captcha_org_wide_settings.html okta_captcha_org_wide_settings}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/captcha_org_wide_settings okta_captcha_org_wide_settings}.
 
 #### Initializers <a name="@cdktf/provider-okta.CaptchaOrgWideSettings.Initializer" id="cdktfprovideroktacaptchaorgwidesettingsinitializer"></a>
 
@@ -18016,7 +18016,7 @@ public readonly enabledFor: string[];
 
 ### DataOktaApp <a name="@cdktf/provider-okta.DataOktaApp" id="cdktfprovideroktadataoktaapp"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/d/app.html okta_app}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/d/app okta_app}.
 
 #### Initializers <a name="@cdktf/provider-okta.DataOktaApp.Initializer" id="cdktfprovideroktadataoktaappinitializer"></a>
 
@@ -18318,7 +18318,7 @@ public readonly skipUsers: boolean | IResolvable;
 
 ### DataOktaAppGroupAssignments <a name="@cdktf/provider-okta.DataOktaAppGroupAssignments" id="cdktfprovideroktadataoktaappgroupassignments"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/d/app_group_assignments.html okta_app_group_assignments}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/d/app_group_assignments okta_app_group_assignments}.
 
 #### Initializers <a name="@cdktf/provider-okta.DataOktaAppGroupAssignments.Initializer" id="cdktfprovideroktadataoktaappgroupassignmentsinitializer"></a>
 
@@ -18418,7 +18418,7 @@ public readonly id: string;
 
 ### DataOktaAppMetadataSaml <a name="@cdktf/provider-okta.DataOktaAppMetadataSaml" id="cdktfprovideroktadataoktaappmetadatasaml"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/d/app_metadata_saml.html okta_app_metadata_saml}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/d/app_metadata_saml okta_app_metadata_saml}.
 
 #### Initializers <a name="@cdktf/provider-okta.DataOktaAppMetadataSaml.Initializer" id="cdktfprovideroktadataoktaappmetadatasamlinitializer"></a>
 
@@ -18619,7 +18619,7 @@ public readonly keyId: string;
 
 ### DataOktaAppOauth <a name="@cdktf/provider-okta.DataOktaAppOauth" id="cdktfprovideroktadataoktaappoauth"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/d/app_oauth.html okta_app_oauth}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/d/app_oauth okta_app_oauth}.
 
 #### Initializers <a name="@cdktf/provider-okta.DataOktaAppOauth.Initializer" id="cdktfprovideroktadataoktaappoauthinitializer"></a>
 
@@ -19097,7 +19097,7 @@ public readonly skipUsers: boolean | IResolvable;
 
 ### DataOktaAppSaml <a name="@cdktf/provider-okta.DataOktaAppSaml" id="cdktfprovideroktadataoktaappsaml"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/d/app_saml.html okta_app_saml}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/d/app_saml okta_app_saml}.
 
 #### Initializers <a name="@cdktf/provider-okta.DataOktaAppSaml.Initializer" id="cdktfprovideroktadataoktaappsamlinitializer"></a>
 
@@ -19804,7 +19804,7 @@ public readonly skipUsers: boolean | IResolvable;
 
 ### DataOktaAppSignonPolicy <a name="@cdktf/provider-okta.DataOktaAppSignonPolicy" id="cdktfprovideroktadataoktaappsignonpolicy"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/d/app_signon_policy.html okta_app_signon_policy}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/d/app_signon_policy okta_app_signon_policy}.
 
 #### Initializers <a name="@cdktf/provider-okta.DataOktaAppSignonPolicy.Initializer" id="cdktfprovideroktadataoktaappsignonpolicyinitializer"></a>
 
@@ -19915,7 +19915,7 @@ public readonly appId: string;
 
 ### DataOktaAppUserAssignments <a name="@cdktf/provider-okta.DataOktaAppUserAssignments" id="cdktfprovideroktadataoktaappuserassignments"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/d/app_user_assignments.html okta_app_user_assignments}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/d/app_user_assignments okta_app_user_assignments}.
 
 #### Initializers <a name="@cdktf/provider-okta.DataOktaAppUserAssignments.Initializer" id="cdktfprovideroktadataoktaappuserassignmentsinitializer"></a>
 
@@ -20015,7 +20015,7 @@ public readonly id: string;
 
 ### DataOktaAuthenticator <a name="@cdktf/provider-okta.DataOktaAuthenticator" id="cdktfprovideroktadataoktaauthenticator"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/d/authenticator.html okta_authenticator}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/d/authenticator okta_authenticator}.
 
 #### Initializers <a name="@cdktf/provider-okta.DataOktaAuthenticator.Initializer" id="cdktfprovideroktadataoktaauthenticatorinitializer"></a>
 
@@ -20263,7 +20263,7 @@ public readonly name: string;
 
 ### DataOktaAuthServer <a name="@cdktf/provider-okta.DataOktaAuthServer" id="cdktfprovideroktadataoktaauthserver"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/d/auth_server.html okta_auth_server}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/d/auth_server okta_auth_server}.
 
 #### Initializers <a name="@cdktf/provider-okta.DataOktaAuthServer.Initializer" id="cdktfprovideroktadataoktaauthserverinitializer"></a>
 
@@ -20462,7 +20462,7 @@ public readonly name: string;
 
 ### DataOktaAuthServerClaim <a name="@cdktf/provider-okta.DataOktaAuthServerClaim" id="cdktfprovideroktadataoktaauthserverclaim"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/d/auth_server_claim.html okta_auth_server_claim}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/d/auth_server_claim okta_auth_server_claim}.
 
 #### Initializers <a name="@cdktf/provider-okta.DataOktaAuthServerClaim.Initializer" id="cdktfprovideroktadataoktaauthserverclaiminitializer"></a>
 
@@ -20681,7 +20681,7 @@ public readonly name: string;
 
 ### DataOktaAuthServerClaims <a name="@cdktf/provider-okta.DataOktaAuthServerClaims" id="cdktfprovideroktadataoktaauthserverclaims"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/d/auth_server_claims.html okta_auth_server_claims}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/d/auth_server_claims okta_auth_server_claims}.
 
 #### Initializers <a name="@cdktf/provider-okta.DataOktaAuthServerClaims.Initializer" id="cdktfprovideroktadataoktaauthserverclaimsinitializer"></a>
 
@@ -20800,7 +20800,7 @@ public readonly authServerId: string;
 
 ### DataOktaAuthServerPolicy <a name="@cdktf/provider-okta.DataOktaAuthServerPolicy" id="cdktfprovideroktadataoktaauthserverpolicy"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/d/auth_server_policy.html okta_auth_server_policy}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/d/auth_server_policy okta_auth_server_policy}.
 
 #### Initializers <a name="@cdktf/provider-okta.DataOktaAuthServerPolicy.Initializer" id="cdktfprovideroktadataoktaauthserverpolicyinitializer"></a>
 
@@ -20944,7 +20944,7 @@ public readonly name: string;
 
 ### DataOktaAuthServerScopes <a name="@cdktf/provider-okta.DataOktaAuthServerScopes" id="cdktfprovideroktadataoktaauthserverscopes"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/d/auth_server_scopes.html okta_auth_server_scopes}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/d/auth_server_scopes okta_auth_server_scopes}.
 
 #### Initializers <a name="@cdktf/provider-okta.DataOktaAuthServerScopes.Initializer" id="cdktfprovideroktadataoktaauthserverscopesinitializer"></a>
 
@@ -21063,7 +21063,7 @@ public readonly authServerId: string;
 
 ### DataOktaBehavior <a name="@cdktf/provider-okta.DataOktaBehavior" id="cdktfprovideroktadataoktabehavior"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/d/behavior.html okta_behavior}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/d/behavior okta_behavior}.
 
 #### Initializers <a name="@cdktf/provider-okta.DataOktaBehavior.Initializer" id="cdktfprovideroktadataoktabehaviorinitializer"></a>
 
@@ -21229,7 +21229,7 @@ public readonly name: string;
 
 ### DataOktaBehaviors <a name="@cdktf/provider-okta.DataOktaBehaviors" id="cdktfprovideroktadataoktabehaviors"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/d/behaviors.html okta_behaviors}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/d/behaviors okta_behaviors}.
 
 #### Initializers <a name="@cdktf/provider-okta.DataOktaBehaviors.Initializer" id="cdktfprovideroktadataoktabehaviorsinitializer"></a>
 
@@ -21355,7 +21355,7 @@ public readonly q: string;
 
 ### DataOktaDefaultPolicies <a name="@cdktf/provider-okta.DataOktaDefaultPolicies" id="cdktfprovideroktadataoktadefaultpolicies"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/d/default_policies.html okta_default_policies}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/d/default_policies okta_default_policies}.
 
 #### Initializers <a name="@cdktf/provider-okta.DataOktaDefaultPolicies.Initializer" id="cdktfprovideroktadataoktadefaultpoliciesinitializer"></a>
 
@@ -21455,7 +21455,7 @@ public readonly type: string;
 
 ### DataOktaDefaultPolicy <a name="@cdktf/provider-okta.DataOktaDefaultPolicy" id="cdktfprovideroktadataoktadefaultpolicy"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/d/default_policy.html okta_default_policy}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/d/default_policy okta_default_policy}.
 
 #### Initializers <a name="@cdktf/provider-okta.DataOktaDefaultPolicy.Initializer" id="cdktfprovideroktadataoktadefaultpolicyinitializer"></a>
 
@@ -21555,7 +21555,7 @@ public readonly type: string;
 
 ### DataOktaEveryoneGroup <a name="@cdktf/provider-okta.DataOktaEveryoneGroup" id="cdktfprovideroktadataoktaeveryonegroup"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/d/everyone_group.html okta_everyone_group}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/d/everyone_group okta_everyone_group}.
 
 #### Initializers <a name="@cdktf/provider-okta.DataOktaEveryoneGroup.Initializer" id="cdktfprovideroktadataoktaeveryonegroupinitializer"></a>
 
@@ -21679,7 +21679,7 @@ public readonly includeUsers: boolean | IResolvable;
 
 ### DataOktaGroup <a name="@cdktf/provider-okta.DataOktaGroup" id="cdktfprovideroktadataoktagroup"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/d/group.html okta_group}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/d/group okta_group}.
 
 #### Initializers <a name="@cdktf/provider-okta.DataOktaGroup.Initializer" id="cdktfprovideroktadataoktagroupinitializer"></a>
 
@@ -21890,7 +21890,7 @@ public readonly type: string;
 
 ### DataOktaGroups <a name="@cdktf/provider-okta.DataOktaGroups" id="cdktfprovideroktadataoktagroups"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/d/groups.html okta_groups}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/d/groups okta_groups}.
 
 #### Initializers <a name="@cdktf/provider-okta.DataOktaGroups.Initializer" id="cdktfprovideroktadataoktagroupsinitializer"></a>
 
@@ -22074,7 +22074,7 @@ public readonly type: string;
 
 ### DataOktaIdpMetadataSaml <a name="@cdktf/provider-okta.DataOktaIdpMetadataSaml" id="cdktfprovideroktadataoktaidpmetadatasaml"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/d/idp_metadata_saml.html okta_idp_metadata_saml}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/d/idp_metadata_saml okta_idp_metadata_saml}.
 
 #### Initializers <a name="@cdktf/provider-okta.DataOktaIdpMetadataSaml.Initializer" id="cdktfprovideroktadataoktaidpmetadatasamlinitializer"></a>
 
@@ -22275,7 +22275,7 @@ public readonly idpId: string;
 
 ### DataOktaIdpOidc <a name="@cdktf/provider-okta.DataOktaIdpOidc" id="cdktfprovideroktadataoktaidpoidc"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/d/idp_oidc.html okta_idp_oidc}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/d/idp_oidc okta_idp_oidc}.
 
 #### Initializers <a name="@cdktf/provider-okta.DataOktaIdpOidc.Initializer" id="cdktfprovideroktadataoktaidpoidcinitializer"></a>
 
@@ -22582,7 +22582,7 @@ public readonly name: string;
 
 ### DataOktaIdpSaml <a name="@cdktf/provider-okta.DataOktaIdpSaml" id="cdktfprovideroktadataoktaidpsaml"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/d/idp_saml.html okta_idp_saml}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/d/idp_saml okta_idp_saml}.
 
 #### Initializers <a name="@cdktf/provider-okta.DataOktaIdpSaml.Initializer" id="cdktfprovideroktadataoktaidpsamlinitializer"></a>
 
@@ -22845,7 +22845,7 @@ public readonly name: string;
 
 ### DataOktaIdpSocial <a name="@cdktf/provider-okta.DataOktaIdpSocial" id="cdktfprovideroktadataoktaidpsocial"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/d/idp_social.html okta_idp_social}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/d/idp_social okta_idp_social}.
 
 #### Initializers <a name="@cdktf/provider-okta.DataOktaIdpSocial.Initializer" id="cdktfprovideroktadataoktaidpsocialinitializer"></a>
 
@@ -23251,7 +23251,7 @@ public readonly name: string;
 
 ### DataOktaNetworkZone <a name="@cdktf/provider-okta.DataOktaNetworkZone" id="cdktfprovideroktadataoktanetworkzone"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/d/network_zone.html okta_network_zone}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/d/network_zone okta_network_zone}.
 
 #### Initializers <a name="@cdktf/provider-okta.DataOktaNetworkZone.Initializer" id="cdktfprovideroktadataoktanetworkzoneinitializer"></a>
 
@@ -23459,7 +23459,7 @@ public readonly name: string;
 
 ### DataOktaPolicy <a name="@cdktf/provider-okta.DataOktaPolicy" id="cdktfprovideroktadataoktapolicy"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/d/policy.html okta_policy}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/d/policy okta_policy}.
 
 #### Initializers <a name="@cdktf/provider-okta.DataOktaPolicy.Initializer" id="cdktfprovideroktadataoktapolicyinitializer"></a>
 
@@ -23592,7 +23592,7 @@ public readonly type: string;
 
 ### DataOktaRoleSubscription <a name="@cdktf/provider-okta.DataOktaRoleSubscription" id="cdktfprovideroktadataoktarolesubscription"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/d/role_subscription.html okta_role_subscription}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/d/role_subscription okta_role_subscription}.
 
 #### Initializers <a name="@cdktf/provider-okta.DataOktaRoleSubscription.Initializer" id="cdktfprovideroktadataoktarolesubscriptioninitializer"></a>
 
@@ -23725,7 +23725,7 @@ public readonly roleType: string;
 
 ### DataOktaTrustedOrigins <a name="@cdktf/provider-okta.DataOktaTrustedOrigins" id="cdktfprovideroktadataoktatrustedorigins"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/d/trusted_origins.html okta_trusted_origins}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/d/trusted_origins okta_trusted_origins}.
 
 #### Initializers <a name="@cdktf/provider-okta.DataOktaTrustedOrigins.Initializer" id="cdktfprovideroktadataoktatrustedoriginsinitializer"></a>
 
@@ -23851,7 +23851,7 @@ public readonly filter: string;
 
 ### DataOktaUser <a name="@cdktf/provider-okta.DataOktaUser" id="cdktfprovideroktadataoktauser"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/d/user.html okta_user}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/d/user okta_user}.
 
 #### Initializers <a name="@cdktf/provider-okta.DataOktaUser.Initializer" id="cdktfprovideroktadataoktauserinitializer"></a>
 
@@ -24378,7 +24378,7 @@ public readonly userId: string;
 
 ### DataOktaUserProfileMappingSource <a name="@cdktf/provider-okta.DataOktaUserProfileMappingSource" id="cdktfprovideroktadataoktauserprofilemappingsource"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/d/user_profile_mapping_source.html okta_user_profile_mapping_source}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/d/user_profile_mapping_source okta_user_profile_mapping_source}.
 
 #### Initializers <a name="@cdktf/provider-okta.DataOktaUserProfileMappingSource.Initializer" id="cdktfprovideroktadataoktauserprofilemappingsourceinitializer"></a>
 
@@ -24478,7 +24478,7 @@ public readonly type: string;
 
 ### DataOktaUsers <a name="@cdktf/provider-okta.DataOktaUsers" id="cdktfprovideroktadataoktausers"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/d/users.html okta_users}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/d/users okta_users}.
 
 #### Initializers <a name="@cdktf/provider-okta.DataOktaUsers.Initializer" id="cdktfprovideroktadataoktausersinitializer"></a>
 
@@ -24597,7 +24597,7 @@ public readonly search: DataOktaUsersSearch[];
 
 ### DataOktaUserSecurityQuestions <a name="@cdktf/provider-okta.DataOktaUserSecurityQuestions" id="cdktfprovideroktadataoktausersecurityquestions"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/d/user_security_questions.html okta_user_security_questions}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/d/user_security_questions okta_user_security_questions}.
 
 #### Initializers <a name="@cdktf/provider-okta.DataOktaUserSecurityQuestions.Initializer" id="cdktfprovideroktadataoktausersecurityquestionsinitializer"></a>
 
@@ -24716,7 +24716,7 @@ public readonly userId: string;
 
 ### DataOktaUserType <a name="@cdktf/provider-okta.DataOktaUserType" id="cdktfprovideroktadataoktausertype"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/d/user_type.html okta_user_type}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/d/user_type okta_user_type}.
 
 #### Initializers <a name="@cdktf/provider-okta.DataOktaUserType.Initializer" id="cdktfprovideroktadataoktausertypeinitializer"></a>
 
@@ -24838,7 +24838,7 @@ public readonly name: string;
 
 ### Domain <a name="@cdktf/provider-okta.Domain" id="cdktfprovideroktadomain"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/domain.html okta_domain}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/domain okta_domain}.
 
 #### Initializers <a name="@cdktf/provider-okta.Domain.Initializer" id="cdktfprovideroktadomaininitializer"></a>
 
@@ -24997,7 +24997,7 @@ public readonly verify: boolean | IResolvable;
 
 ### DomainCertificate <a name="@cdktf/provider-okta.DomainCertificate" id="cdktfprovideroktadomaincertificate"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/domain_certificate.html okta_domain_certificate}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/domain_certificate okta_domain_certificate}.
 
 #### Initializers <a name="@cdktf/provider-okta.DomainCertificate.Initializer" id="cdktfprovideroktadomaincertificateinitializer"></a>
 
@@ -25198,7 +25198,7 @@ public readonly type: string;
 
 ### DomainVerification <a name="@cdktf/provider-okta.DomainVerification" id="cdktfprovideroktadomainverification"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/domain_verification.html okta_domain_verification}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/domain_verification okta_domain_verification}.
 
 #### Initializers <a name="@cdktf/provider-okta.DomainVerification.Initializer" id="cdktfprovideroktadomainverificationinitializer"></a>
 
@@ -25298,7 +25298,7 @@ public readonly domainId: string;
 
 ### EmailSender <a name="@cdktf/provider-okta.EmailSender" id="cdktfprovideroktaemailsender"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/email_sender.html okta_email_sender}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/email_sender okta_email_sender}.
 
 #### Initializers <a name="@cdktf/provider-okta.EmailSender.Initializer" id="cdktfprovideroktaemailsenderinitializer"></a>
 
@@ -25472,7 +25472,7 @@ public readonly subdomain: string;
 
 ### EmailSenderVerification <a name="@cdktf/provider-okta.EmailSenderVerification" id="cdktfprovideroktaemailsenderverification"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/email_sender_verification.html okta_email_sender_verification}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/email_sender_verification okta_email_sender_verification}.
 
 #### Initializers <a name="@cdktf/provider-okta.EmailSenderVerification.Initializer" id="cdktfprovideroktaemailsenderverificationinitializer"></a>
 
@@ -25572,7 +25572,7 @@ public readonly senderId: string;
 
 ### EventHook <a name="@cdktf/provider-okta.EventHook" id="cdktfprovideroktaeventhook"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/event_hook.html okta_event_hook}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/event_hook okta_event_hook}.
 
 #### Initializers <a name="@cdktf/provider-okta.EventHook.Initializer" id="cdktfprovideroktaeventhookinitializer"></a>
 
@@ -25809,7 +25809,7 @@ public readonly status: string;
 
 ### EventHookVerification <a name="@cdktf/provider-okta.EventHookVerification" id="cdktfprovideroktaeventhookverification"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/event_hook_verification.html okta_event_hook_verification}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/event_hook_verification okta_event_hook_verification}.
 
 #### Initializers <a name="@cdktf/provider-okta.EventHookVerification.Initializer" id="cdktfprovideroktaeventhookverificationinitializer"></a>
 
@@ -25909,7 +25909,7 @@ public readonly eventHookId: string;
 
 ### Factor <a name="@cdktf/provider-okta.Factor" id="cdktfprovideroktafactor"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/factor.html okta_factor}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/factor okta_factor}.
 
 #### Initializers <a name="@cdktf/provider-okta.Factor.Initializer" id="cdktfprovideroktafactorinitializer"></a>
 
@@ -26044,7 +26044,7 @@ public readonly providerId: string;
 
 ### FactorTotp <a name="@cdktf/provider-okta.FactorTotp" id="cdktfprovideroktafactortotp"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/factor_totp.html okta_factor_totp}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/factor_totp okta_factor_totp}.
 
 #### Initializers <a name="@cdktf/provider-okta.FactorTotp.Initializer" id="cdktfprovideroktafactortotpinitializer"></a>
 
@@ -26295,7 +26295,7 @@ public readonly timeStep: number;
 
 ### Group <a name="@cdktf/provider-okta.Group" id="cdktfprovideroktagroup"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/group.html okta_group}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/group okta_group}.
 
 #### Initializers <a name="@cdktf/provider-okta.Group.Initializer" id="cdktfprovideroktagroupinitializer"></a>
 
@@ -26488,7 +26488,7 @@ public readonly users: string[];
 
 ### GroupMembership <a name="@cdktf/provider-okta.GroupMembership" id="cdktfprovideroktagroupmembership"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/group_membership.html okta_group_membership}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/group_membership okta_group_membership}.
 
 #### Initializers <a name="@cdktf/provider-okta.GroupMembership.Initializer" id="cdktfprovideroktagroupmembershipinitializer"></a>
 
@@ -26610,7 +26610,7 @@ public readonly userId: string;
 
 ### GroupMemberships <a name="@cdktf/provider-okta.GroupMemberships" id="cdktfprovideroktagroupmemberships"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/group_memberships.html okta_group_memberships}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/group_memberships okta_group_memberships}.
 
 #### Initializers <a name="@cdktf/provider-okta.GroupMemberships.Initializer" id="cdktfprovideroktagroupmembershipsinitializer"></a>
 
@@ -26732,7 +26732,7 @@ public readonly users: string[];
 
 ### GroupRole <a name="@cdktf/provider-okta.GroupRole" id="cdktfprovideroktagrouprole"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/group_role.html okta_group_role}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/group_role okta_group_role}.
 
 #### Initializers <a name="@cdktf/provider-okta.GroupRole.Initializer" id="cdktfprovideroktagrouproleinitializer"></a>
 
@@ -26947,7 +26947,7 @@ public readonly targetGroupList: string[];
 
 ### GroupRoles <a name="@cdktf/provider-okta.GroupRoles" id="cdktfprovideroktagrouproles"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/group_roles.html okta_group_roles}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/group_roles okta_group_roles}.
 
 #### Initializers <a name="@cdktf/provider-okta.GroupRoles.Initializer" id="cdktfprovideroktagrouprolesinitializer"></a>
 
@@ -27082,7 +27082,7 @@ public readonly groupId: string;
 
 ### GroupRule <a name="@cdktf/provider-okta.GroupRule" id="cdktfprovideroktagrouprule"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/group_rule.html okta_group_rule}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/group_rule okta_group_rule}.
 
 #### Initializers <a name="@cdktf/provider-okta.GroupRule.Initializer" id="cdktfprovideroktagroupruleinitializer"></a>
 
@@ -27348,7 +27348,7 @@ public readonly usersExcluded: string[];
 
 ### GroupSchemaProperty <a name="@cdktf/provider-okta.GroupSchemaProperty" id="cdktfprovideroktagroupschemaproperty"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/group_schema_property.html okta_group_schema_property}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/group_schema_property okta_group_schema_property}.
 
 #### Initializers <a name="@cdktf/provider-okta.GroupSchemaProperty.Initializer" id="cdktfprovideroktagroupschemapropertyinitializer"></a>
 
@@ -27962,7 +27962,7 @@ public readonly unique: string;
 
 ### Idp <a name="@cdktf/provider-okta.Idp" id="cdktfprovideroktaidp"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/idp.html okta_idp}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/idp okta_idp}.
 
 #### Initializers <a name="@cdktf/provider-okta.Idp.Initializer" id="cdktfprovideroktaidpinitializer"></a>
 
@@ -28966,7 +28966,7 @@ public readonly usernameTemplate: string;
 
 ### IdpOidc <a name="@cdktf/provider-okta.IdpOidc" id="cdktfprovideroktaidpoidc"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html okta_idp_oidc}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc okta_idp_oidc}.
 
 #### Initializers <a name="@cdktf/provider-okta.IdpOidc.Initializer" id="cdktfprovideroktaidpoidcinitializer"></a>
 
@@ -29970,7 +29970,7 @@ public readonly usernameTemplate: string;
 
 ### IdpSaml <a name="@cdktf/provider-okta.IdpSaml" id="cdktfprovideroktaidpsaml"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/idp_saml.html okta_idp_saml}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/idp_saml okta_idp_saml}.
 
 #### Initializers <a name="@cdktf/provider-okta.IdpSaml.Initializer" id="cdktfprovideroktaidpsamlinitializer"></a>
 
@@ -30947,7 +30947,7 @@ public readonly usernameTemplate: string;
 
 ### IdpSamlKey <a name="@cdktf/provider-okta.IdpSamlKey" id="cdktfprovideroktaidpsamlkey"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/idp_saml_key.html okta_idp_saml_key}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/idp_saml_key okta_idp_saml_key}.
 
 #### Initializers <a name="@cdktf/provider-okta.IdpSamlKey.Initializer" id="cdktfprovideroktaidpsamlkeyinitializer"></a>
 
@@ -31113,7 +31113,7 @@ public readonly x5C: string[];
 
 ### IdpSocial <a name="@cdktf/provider-okta.IdpSocial" id="cdktfprovideroktaidpsocial"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/idp_social.html okta_idp_social}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/idp_social okta_idp_social}.
 
 #### Initializers <a name="@cdktf/provider-okta.IdpSocial.Initializer" id="cdktfprovideroktaidpsocialinitializer"></a>
 
@@ -32119,7 +32119,7 @@ public readonly usernameTemplate: string;
 
 ### InlineHook <a name="@cdktf/provider-okta.InlineHook" id="cdktfprovideroktainlinehook"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/inline_hook.html okta_inline_hook}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/inline_hook okta_inline_hook}.
 
 #### Initializers <a name="@cdktf/provider-okta.InlineHook.Initializer" id="cdktfprovideroktainlinehookinitializer"></a>
 
@@ -32378,7 +32378,7 @@ public readonly version: string;
 
 ### LinkDefinition <a name="@cdktf/provider-okta.LinkDefinition" id="cdktfprovideroktalinkdefinition"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/link_definition.html okta_link_definition}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/link_definition okta_link_definition}.
 
 #### Initializers <a name="@cdktf/provider-okta.LinkDefinition.Initializer" id="cdktfprovideroktalinkdefinitioninitializer"></a>
 
@@ -32588,7 +32588,7 @@ public readonly primaryTitle: string;
 
 ### LinkValue <a name="@cdktf/provider-okta.LinkValue" id="cdktfprovideroktalinkvalue"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/link_value.html okta_link_value}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/link_value okta_link_value}.
 
 #### Initializers <a name="@cdktf/provider-okta.LinkValue.Initializer" id="cdktfprovideroktalinkvalueinitializer"></a>
 
@@ -32745,7 +32745,7 @@ public readonly primaryUserId: string;
 
 ### MfaPolicy <a name="@cdktf/provider-okta.MfaPolicy" id="cdktfprovideroktamfapolicy"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy.html okta_mfa_policy}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy okta_mfa_policy}.
 
 #### Initializers <a name="@cdktf/provider-okta.MfaPolicy.Initializer" id="cdktfprovideroktamfapolicyinitializer"></a>
 
@@ -33402,7 +33402,7 @@ public readonly yubikeyToken: IResolvable | {[ key: string ]: string};
 
 ### MfaPolicyRule <a name="@cdktf/provider-okta.MfaPolicyRule" id="cdktfprovideroktamfapolicyrule"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy_rule.html okta_mfa_policy_rule}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy_rule okta_mfa_policy_rule}.
 
 #### Initializers <a name="@cdktf/provider-okta.MfaPolicyRule.Initializer" id="cdktfprovideroktamfapolicyruleinitializer"></a>
 
@@ -33827,7 +33827,7 @@ public readonly usersExcluded: string[];
 
 ### NetworkZone <a name="@cdktf/provider-okta.NetworkZone" id="cdktfprovideroktanetworkzone"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/network_zone.html okta_network_zone}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/network_zone okta_network_zone}.
 
 #### Initializers <a name="@cdktf/provider-okta.NetworkZone.Initializer" id="cdktfprovideroktanetworkzoneinitializer"></a>
 
@@ -34129,7 +34129,7 @@ public readonly usage: string;
 
 ### OauthApp <a name="@cdktf/provider-okta.OauthApp" id="cdktfprovideroktaoauthapp"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/oauth_app.html okta_oauth_app}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/oauth_app okta_oauth_app}.
 
 #### Initializers <a name="@cdktf/provider-okta.OauthApp.Initializer" id="cdktfprovideroktaoauthappinitializer"></a>
 
@@ -35648,7 +35648,7 @@ public readonly wildcardRedirect: string;
 
 ### OauthAppRedirectUri <a name="@cdktf/provider-okta.OauthAppRedirectUri" id="cdktfprovideroktaoauthappredirecturi"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/oauth_app_redirect_uri.html okta_oauth_app_redirect_uri}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/oauth_app_redirect_uri okta_oauth_app_redirect_uri}.
 
 #### Initializers <a name="@cdktf/provider-okta.OauthAppRedirectUri.Initializer" id="cdktfprovideroktaoauthappredirecturiinitializer"></a>
 
@@ -36278,7 +36278,7 @@ public readonly scopes: string[];
 
 ### OrgConfiguration <a name="@cdktf/provider-okta.OrgConfiguration" id="cdktfprovideroktaorgconfiguration"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/org_configuration.html okta_org_configuration}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/org_configuration okta_org_configuration}.
 
 #### Initializers <a name="@cdktf/provider-okta.OrgConfiguration.Initializer" id="cdktfprovideroktaorgconfigurationinitializer"></a>
 
@@ -36812,7 +36812,7 @@ public readonly website: string;
 
 ### OrgSupport <a name="@cdktf/provider-okta.OrgSupport" id="cdktfprovideroktaorgsupport"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/org_support.html okta_org_support}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/org_support okta_org_support}.
 
 #### Initializers <a name="@cdktf/provider-okta.OrgSupport.Initializer" id="cdktfprovideroktaorgsupportinitializer"></a>
 
@@ -36947,7 +36947,7 @@ public readonly extendBy: number;
 
 ### PasswordPolicy <a name="@cdktf/provider-okta.PasswordPolicy" id="cdktfprovideroktapasswordpolicy"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/password_policy.html okta_password_policy}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/password_policy okta_password_policy}.
 
 #### Initializers <a name="@cdktf/provider-okta.PasswordPolicy.Initializer" id="cdktfprovideroktapasswordpolicyinitializer"></a>
 
@@ -37894,7 +37894,7 @@ public readonly status: string;
 
 ### PasswordPolicyRule <a name="@cdktf/provider-okta.PasswordPolicyRule" id="cdktfprovideroktapasswordpolicyrule"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/password_policy_rule.html okta_password_policy_rule}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/password_policy_rule okta_password_policy_rule}.
 
 #### Initializers <a name="@cdktf/provider-okta.PasswordPolicyRule.Initializer" id="cdktfprovideroktapasswordpolicyruleinitializer"></a>
 
@@ -38319,7 +38319,7 @@ public readonly usersExcluded: string[];
 
 ### PolicyMfa <a name="@cdktf/provider-okta.PolicyMfa" id="cdktfprovideroktapolicymfa"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa.html okta_policy_mfa}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa okta_policy_mfa}.
 
 #### Initializers <a name="@cdktf/provider-okta.PolicyMfa.Initializer" id="cdktfprovideroktapolicymfainitializer"></a>
 
@@ -38976,7 +38976,7 @@ public readonly yubikeyToken: IResolvable | {[ key: string ]: string};
 
 ### PolicyMfaDefault <a name="@cdktf/provider-okta.PolicyMfaDefault" id="cdktfprovideroktapolicymfadefault"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default.html okta_policy_mfa_default}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default okta_policy_mfa_default}.
 
 #### Initializers <a name="@cdktf/provider-okta.PolicyMfaDefault.Initializer" id="cdktfprovideroktapolicymfadefaultinitializer"></a>
 
@@ -39550,7 +39550,7 @@ public readonly yubikeyToken: IResolvable | {[ key: string ]: string};
 
 ### PolicyPassword <a name="@cdktf/provider-okta.PolicyPassword" id="cdktfprovideroktapolicypassword"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/policy_password.html okta_policy_password}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/policy_password okta_policy_password}.
 
 #### Initializers <a name="@cdktf/provider-okta.PolicyPassword.Initializer" id="cdktfprovideroktapolicypasswordinitializer"></a>
 
@@ -40497,7 +40497,7 @@ public readonly status: string;
 
 ### PolicyPasswordDefault <a name="@cdktf/provider-okta.PolicyPasswordDefault" id="cdktfprovideroktapolicypassworddefault"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/policy_password_default.html okta_policy_password_default}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/policy_password_default okta_policy_password_default}.
 
 #### Initializers <a name="@cdktf/provider-okta.PolicyPasswordDefault.Initializer" id="cdktfprovideroktapolicypassworddefaultinitializer"></a>
 
@@ -41343,7 +41343,7 @@ public readonly smsRecovery: string;
 
 ### PolicyProfileEnrollment <a name="@cdktf/provider-okta.PolicyProfileEnrollment" id="cdktfprovideroktapolicyprofileenrollment"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/policy_profile_enrollment.html okta_policy_profile_enrollment}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/policy_profile_enrollment okta_policy_profile_enrollment}.
 
 #### Initializers <a name="@cdktf/provider-okta.PolicyProfileEnrollment.Initializer" id="cdktfprovideroktapolicyprofileenrollmentinitializer"></a>
 
@@ -41478,7 +41478,7 @@ public readonly status: string;
 
 ### PolicyRuleIdpDiscovery <a name="@cdktf/provider-okta.PolicyRuleIdpDiscovery" id="cdktfprovideroktapolicyruleidpdiscovery"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery.html okta_policy_rule_idp_discovery}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery okta_policy_rule_idp_discovery}.
 
 #### Initializers <a name="@cdktf/provider-okta.PolicyRuleIdpDiscovery.Initializer" id="cdktfprovideroktapolicyruleidpdiscoveryinitializer"></a>
 
@@ -42019,7 +42019,7 @@ public readonly userIdentifierType: string;
 
 ### PolicyRuleMfa <a name="@cdktf/provider-okta.PolicyRuleMfa" id="cdktfprovideroktapolicyrulemfa"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_mfa.html okta_policy_rule_mfa}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_mfa okta_policy_rule_mfa}.
 
 #### Initializers <a name="@cdktf/provider-okta.PolicyRuleMfa.Initializer" id="cdktfprovideroktapolicyrulemfainitializer"></a>
 
@@ -42444,7 +42444,7 @@ public readonly usersExcluded: string[];
 
 ### PolicyRulePassword <a name="@cdktf/provider-okta.PolicyRulePassword" id="cdktfprovideroktapolicyrulepassword"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_password.html okta_policy_rule_password}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_password okta_policy_rule_password}.
 
 #### Initializers <a name="@cdktf/provider-okta.PolicyRulePassword.Initializer" id="cdktfprovideroktapolicyrulepasswordinitializer"></a>
 
@@ -42869,7 +42869,7 @@ public readonly usersExcluded: string[];
 
 ### PolicyRuleProfileEnrollment <a name="@cdktf/provider-okta.PolicyRuleProfileEnrollment" id="cdktfprovideroktapolicyruleprofileenrollment"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_profile_enrollment.html okta_policy_rule_profile_enrollment}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_profile_enrollment okta_policy_rule_profile_enrollment}.
 
 #### Initializers <a name="@cdktf/provider-okta.PolicyRuleProfileEnrollment.Initializer" id="cdktfprovideroktapolicyruleprofileenrollmentinitializer"></a>
 
@@ -43164,7 +43164,7 @@ public readonly unknownUserAction: string;
 
 ### PolicyRuleSignon <a name="@cdktf/provider-okta.PolicyRuleSignon" id="cdktfprovideroktapolicyrulesignon"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_signon.html okta_policy_rule_signon}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_signon okta_policy_rule_signon}.
 
 #### Initializers <a name="@cdktf/provider-okta.PolicyRuleSignon.Initializer" id="cdktfprovideroktapolicyrulesignoninitializer"></a>
 
@@ -43879,7 +43879,7 @@ public readonly usersExcluded: string[];
 
 ### PolicySignon <a name="@cdktf/provider-okta.PolicySignon" id="cdktfprovideroktapolicysignon"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/policy_signon.html okta_policy_signon}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/policy_signon okta_policy_signon}.
 
 #### Initializers <a name="@cdktf/provider-okta.PolicySignon.Initializer" id="cdktfprovideroktapolicysignoninitializer"></a>
 
@@ -44101,7 +44101,7 @@ public readonly status: string;
 
 ### ProfileMapping <a name="@cdktf/provider-okta.ProfileMapping" id="cdktfprovideroktaprofilemapping"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/profile_mapping.html okta_profile_mapping}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/profile_mapping okta_profile_mapping}.
 
 #### Initializers <a name="@cdktf/provider-okta.ProfileMapping.Initializer" id="cdktfprovideroktaprofilemappinginitializer"></a>
 
@@ -44360,7 +44360,7 @@ public readonly targetId: string;
 
 ### RateLimiting <a name="@cdktf/provider-okta.RateLimiting" id="cdktfprovideroktaratelimiting"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/rate_limiting.html okta_rate_limiting}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/rate_limiting okta_rate_limiting}.
 
 #### Initializers <a name="@cdktf/provider-okta.RateLimiting.Initializer" id="cdktfprovideroktaratelimitinginitializer"></a>
 
@@ -44517,7 +44517,7 @@ public readonly login: string;
 
 ### ResourceSet <a name="@cdktf/provider-okta.ResourceSet" id="cdktfprovideroktaresourceset"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/resource_set.html okta_resource_set}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/resource_set okta_resource_set}.
 
 #### Initializers <a name="@cdktf/provider-okta.ResourceSet.Initializer" id="cdktfprovideroktaresourcesetinitializer"></a>
 
@@ -44674,7 +44674,7 @@ public readonly resources: string[];
 
 ### RoleSubscription <a name="@cdktf/provider-okta.RoleSubscription" id="cdktfprovideroktarolesubscription"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/role_subscription.html okta_role_subscription}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/role_subscription okta_role_subscription}.
 
 #### Initializers <a name="@cdktf/provider-okta.RoleSubscription.Initializer" id="cdktfprovideroktarolesubscriptioninitializer"></a>
 
@@ -44831,7 +44831,7 @@ public readonly status: string;
 
 ### SamlApp <a name="@cdktf/provider-okta.SamlApp" id="cdktfprovideroktasamlapp"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html okta_saml_app}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/saml_app okta_saml_app}.
 
 #### Initializers <a name="@cdktf/provider-okta.SamlApp.Initializer" id="cdktfprovideroktasamlappinitializer"></a>
 
@@ -46450,7 +46450,7 @@ public readonly users: SamlAppUsers[];
 
 ### SamlIdp <a name="@cdktf/provider-okta.SamlIdp" id="cdktfprovideroktasamlidp"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html okta_saml_idp}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/saml_idp okta_saml_idp}.
 
 #### Initializers <a name="@cdktf/provider-okta.SamlIdp.Initializer" id="cdktfprovideroktasamlidpinitializer"></a>
 
@@ -47427,7 +47427,7 @@ public readonly usernameTemplate: string;
 
 ### SamlIdpSigningKey <a name="@cdktf/provider-okta.SamlIdpSigningKey" id="cdktfprovideroktasamlidpsigningkey"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/saml_idp_signing_key.html okta_saml_idp_signing_key}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/saml_idp_signing_key okta_saml_idp_signing_key}.
 
 #### Initializers <a name="@cdktf/provider-okta.SamlIdpSigningKey.Initializer" id="cdktfprovideroktasamlidpsigningkeyinitializer"></a>
 
@@ -47593,7 +47593,7 @@ public readonly x5C: string[];
 
 ### SecurePasswordStoreApp <a name="@cdktf/provider-okta.SecurePasswordStoreApp" id="cdktfprovideroktasecurepasswordstoreapp"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/secure_password_store_app.html okta_secure_password_store_app}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/secure_password_store_app okta_secure_password_store_app}.
 
 #### Initializers <a name="@cdktf/provider-okta.SecurePasswordStoreApp.Initializer" id="cdktfprovideroktasecurepasswordstoreappinitializer"></a>
 
@@ -48639,7 +48639,7 @@ public readonly users: SecurePasswordStoreAppUsers[];
 
 ### SecurityNotificationEmails <a name="@cdktf/provider-okta.SecurityNotificationEmails" id="cdktfprovideroktasecuritynotificationemails"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/security_notification_emails.html okta_security_notification_emails}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/security_notification_emails okta_security_notification_emails}.
 
 #### Initializers <a name="@cdktf/provider-okta.SecurityNotificationEmails.Initializer" id="cdktfprovideroktasecuritynotificationemailsinitializer"></a>
 
@@ -48868,7 +48868,7 @@ public readonly sendEmailForPasswordChangedEnabled: boolean | IResolvable;
 
 ### SignonPolicy <a name="@cdktf/provider-okta.SignonPolicy" id="cdktfprovideroktasignonpolicy"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/signon_policy.html okta_signon_policy}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/signon_policy okta_signon_policy}.
 
 #### Initializers <a name="@cdktf/provider-okta.SignonPolicy.Initializer" id="cdktfprovideroktasignonpolicyinitializer"></a>
 
@@ -49090,7 +49090,7 @@ public readonly status: string;
 
 ### SignonPolicyRule <a name="@cdktf/provider-okta.SignonPolicyRule" id="cdktfprovideroktasignonpolicyrule"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule.html okta_signon_policy_rule}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule okta_signon_policy_rule}.
 
 #### Initializers <a name="@cdktf/provider-okta.SignonPolicyRule.Initializer" id="cdktfprovideroktasignonpolicyruleinitializer"></a>
 
@@ -49805,7 +49805,7 @@ public readonly usersExcluded: string[];
 
 ### SocialIdp <a name="@cdktf/provider-okta.SocialIdp" id="cdktfprovideroktasocialidp"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html okta_social_idp}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/social_idp okta_social_idp}.
 
 #### Initializers <a name="@cdktf/provider-okta.SocialIdp.Initializer" id="cdktfprovideroktasocialidpinitializer"></a>
 
@@ -50811,7 +50811,7 @@ public readonly usernameTemplate: string;
 
 ### SwaApp <a name="@cdktf/provider-okta.SwaApp" id="cdktfprovideroktaswaapp"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/swa_app.html okta_swa_app}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/swa_app okta_swa_app}.
 
 #### Initializers <a name="@cdktf/provider-okta.SwaApp.Initializer" id="cdktfprovideroktaswaappinitializer"></a>
 
@@ -51733,7 +51733,7 @@ public readonly users: SwaAppUsers[];
 
 ### TemplateEmail <a name="@cdktf/provider-okta.TemplateEmail" id="cdktfprovideroktatemplateemail"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/template_email.html okta_template_email}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/template_email okta_template_email}.
 
 #### Initializers <a name="@cdktf/provider-okta.TemplateEmail.Initializer" id="cdktfprovideroktatemplateemailinitializer"></a>
 
@@ -51890,7 +51890,7 @@ public readonly type: string;
 
 ### TemplateSms <a name="@cdktf/provider-okta.TemplateSms" id="cdktfprovideroktatemplatesms"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/template_sms.html okta_template_sms}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/template_sms okta_template_sms}.
 
 #### Initializers <a name="@cdktf/provider-okta.TemplateSms.Initializer" id="cdktfprovideroktatemplatesmsinitializer"></a>
 
@@ -52047,7 +52047,7 @@ public readonly type: string;
 
 ### ThreatInsightSettings <a name="@cdktf/provider-okta.ThreatInsightSettings" id="cdktfprovideroktathreatinsightsettings"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/threat_insight_settings.html okta_threat_insight_settings}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/threat_insight_settings okta_threat_insight_settings}.
 
 #### Initializers <a name="@cdktf/provider-okta.ThreatInsightSettings.Initializer" id="cdktfprovideroktathreatinsightsettingsinitializer"></a>
 
@@ -52182,7 +52182,7 @@ public readonly networkExcludes: string[];
 
 ### ThreeFieldApp <a name="@cdktf/provider-okta.ThreeFieldApp" id="cdktfprovideroktathreefieldapp"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/three_field_app.html okta_three_field_app}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/three_field_app okta_three_field_app}.
 
 #### Initializers <a name="@cdktf/provider-okta.ThreeFieldApp.Initializer" id="cdktfprovideroktathreefieldappinitializer"></a>
 
@@ -53149,7 +53149,7 @@ public readonly users: ThreeFieldAppUsers[];
 
 ### TrustedOrigin <a name="@cdktf/provider-okta.TrustedOrigin" id="cdktfprovideroktatrustedorigin"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/trusted_origin.html okta_trusted_origin}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/trusted_origin okta_trusted_origin}.
 
 #### Initializers <a name="@cdktf/provider-okta.TrustedOrigin.Initializer" id="cdktfprovideroktatrustedorigininitializer"></a>
 
@@ -53328,7 +53328,7 @@ public readonly scopes: string[];
 
 ### User <a name="@cdktf/provider-okta.User" id="cdktfprovideroktauser"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/user.html okta_user}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/user okta_user}.
 
 #### Initializers <a name="@cdktf/provider-okta.User.Initializer" id="cdktfprovideroktauserinitializer"></a>
 
@@ -54597,7 +54597,7 @@ public readonly zipCode: string;
 
 ### UserAdminRoles <a name="@cdktf/provider-okta.UserAdminRoles" id="cdktfprovideroktauseradminroles"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/user_admin_roles.html okta_user_admin_roles}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/user_admin_roles okta_user_admin_roles}.
 
 #### Initializers <a name="@cdktf/provider-okta.UserAdminRoles.Initializer" id="cdktfprovideroktauseradminrolesinitializer"></a>
 
@@ -54754,7 +54754,7 @@ public readonly userId: string;
 
 ### UserBaseSchema <a name="@cdktf/provider-okta.UserBaseSchema" id="cdktfprovideroktauserbaseschema"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/user_base_schema.html okta_user_base_schema}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/user_base_schema okta_user_base_schema}.
 
 #### Initializers <a name="@cdktf/provider-okta.UserBaseSchema.Initializer" id="cdktfprovideroktauserbaseschemainitializer"></a>
 
@@ -55049,7 +55049,7 @@ public readonly userType: string;
 
 ### UserBaseSchemaProperty <a name="@cdktf/provider-okta.UserBaseSchemaProperty" id="cdktfprovideroktauserbaseschemaproperty"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/user_base_schema_property.html okta_user_base_schema_property}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/user_base_schema_property okta_user_base_schema_property}.
 
 #### Initializers <a name="@cdktf/provider-okta.UserBaseSchemaProperty.Initializer" id="cdktfprovideroktauserbaseschemapropertyinitializer"></a>
 
@@ -55344,7 +55344,7 @@ public readonly userType: string;
 
 ### UserFactorQuestion <a name="@cdktf/provider-okta.UserFactorQuestion" id="cdktfprovideroktauserfactorquestion"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/user_factor_question.html okta_user_factor_question}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/user_factor_question okta_user_factor_question}.
 
 #### Initializers <a name="@cdktf/provider-okta.UserFactorQuestion.Initializer" id="cdktfprovideroktauserfactorquestioninitializer"></a>
 
@@ -55510,7 +55510,7 @@ public readonly userId: string;
 
 ### UserGroupMemberships <a name="@cdktf/provider-okta.UserGroupMemberships" id="cdktfprovideroktausergroupmemberships"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/user_group_memberships.html okta_user_group_memberships}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/user_group_memberships okta_user_group_memberships}.
 
 #### Initializers <a name="@cdktf/provider-okta.UserGroupMemberships.Initializer" id="cdktfprovideroktausergroupmembershipsinitializer"></a>
 
@@ -55632,7 +55632,7 @@ public readonly userId: string;
 
 ### UserSchema <a name="@cdktf/provider-okta.UserSchema" id="cdktfprovideroktauserschema"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/user_schema.html okta_user_schema}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/user_schema okta_user_schema}.
 
 #### Initializers <a name="@cdktf/provider-okta.UserSchema.Initializer" id="cdktfprovideroktauserschemainitializer"></a>
 
@@ -56304,7 +56304,7 @@ public readonly userType: string;
 
 ### UserSchemaProperty <a name="@cdktf/provider-okta.UserSchemaProperty" id="cdktfprovideroktauserschemaproperty"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/user_schema_property.html okta_user_schema_property}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/user_schema_property okta_user_schema_property}.
 
 #### Initializers <a name="@cdktf/provider-okta.UserSchemaProperty.Initializer" id="cdktfprovideroktauserschemapropertyinitializer"></a>
 
@@ -56976,7 +56976,7 @@ public readonly userType: string;
 
 ### UserType <a name="@cdktf/provider-okta.UserType" id="cdktfprovideroktausertype"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/user_type.html okta_user_type}.
+Represents a {@link https://www.terraform.io/docs/providers/okta/r/user_type okta_user_type}.
 
 #### Initializers <a name="@cdktf/provider-okta.UserType.Initializer" id="cdktfprovideroktausertypeinitializer"></a>
 
@@ -57194,7 +57194,7 @@ public readonly customRoleId: string;
 
 ID of the Custom Role.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/admin_role_custom_assignments.html#custom_role_id AdminRoleCustomAssignments#custom_role_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/admin_role_custom_assignments#custom_role_id AdminRoleCustomAssignments#custom_role_id}
 
 ---
 
@@ -57208,7 +57208,7 @@ public readonly resourceSetId: string;
 
 ID of the target Resource Set.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/admin_role_custom_assignments.html#resource_set_id AdminRoleCustomAssignments#resource_set_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/admin_role_custom_assignments#resource_set_id AdminRoleCustomAssignments#resource_set_id}
 
 ---
 
@@ -57222,7 +57222,7 @@ public readonly members: string[];
 
 The hrefs that point to User(s) and/or Group(s) that receive the Role.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/admin_role_custom_assignments.html#members AdminRoleCustomAssignments#members}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/admin_role_custom_assignments#members AdminRoleCustomAssignments#members}
 
 ---
 
@@ -57300,7 +57300,7 @@ public readonly description: string;
 
 A human-readable description of the new Role.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/admin_role_custom.html#description AdminRoleCustom#description}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/admin_role_custom#description AdminRoleCustom#description}
 
 ---
 
@@ -57314,7 +57314,7 @@ public readonly label: string;
 
 The name given to the new Role.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/admin_role_custom.html#label AdminRoleCustom#label}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/admin_role_custom#label AdminRoleCustom#label}
 
 ---
 
@@ -57328,7 +57328,7 @@ public readonly permissions: string[];
 
 The permissions that the new Role grants.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/admin_role_custom.html#permissions AdminRoleCustom#permissions}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/admin_role_custom#permissions AdminRoleCustom#permissions}
 
 ---
 
@@ -57407,7 +57407,7 @@ public readonly roleType: string;
 
 Type of the role that is assigned to the user and supports optional targets.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/admin_role_targets.html#role_type AdminRoleTargets#role_type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/admin_role_targets#role_type AdminRoleTargets#role_type}
 
 ---
 
@@ -57421,7 +57421,7 @@ public readonly userId: string;
 
 User associated with the role.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/admin_role_targets.html#user_id AdminRoleTargets#user_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/admin_role_targets#user_id AdminRoleTargets#user_id}
 
 ---
 
@@ -57435,7 +57435,7 @@ public readonly apps: string[];
 
 List of app names (name represents set of app instances) or a combination of app name and app instance ID (like 'salesforce' or 'facebook.0oapsqQ6dv19pqyEo0g3').
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/admin_role_targets.html#apps AdminRoleTargets#apps}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/admin_role_targets#apps AdminRoleTargets#apps}
 
 ---
 
@@ -57449,7 +57449,7 @@ public readonly groups: string[];
 
 List of group IDs.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/admin_role_targets.html#groups AdminRoleTargets#groups}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/admin_role_targets#groups AdminRoleTargets#groups}
 
 ---
 
@@ -57552,7 +57552,7 @@ public readonly label: string;
 
 Pretty name of app.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_auto_login.html#label AppAutoLogin#label}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_auto_login#label AppAutoLogin#label}
 
 ---
 
@@ -57566,7 +57566,7 @@ public readonly accessibilityErrorRedirectUrl: string;
 
 Custom error page URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_auto_login.html#accessibility_error_redirect_url AppAutoLogin#accessibility_error_redirect_url}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_auto_login#accessibility_error_redirect_url AppAutoLogin#accessibility_error_redirect_url}
 
 ---
 
@@ -57580,7 +57580,7 @@ public readonly accessibilityLoginRedirectUrl: string;
 
 Custom login page URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_auto_login.html#accessibility_login_redirect_url AppAutoLogin#accessibility_login_redirect_url}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_auto_login#accessibility_login_redirect_url AppAutoLogin#accessibility_login_redirect_url}
 
 ---
 
@@ -57594,7 +57594,7 @@ public readonly accessibilitySelfService: boolean | IResolvable;
 
 Enable self service.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_auto_login.html#accessibility_self_service AppAutoLogin#accessibility_self_service}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_auto_login#accessibility_self_service AppAutoLogin#accessibility_self_service}
 
 ---
 
@@ -57608,7 +57608,7 @@ public readonly adminNote: string;
 
 Application notes for admins.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_auto_login.html#admin_note AppAutoLogin#admin_note}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_auto_login#admin_note AppAutoLogin#admin_note}
 
 ---
 
@@ -57622,7 +57622,7 @@ public readonly appLinksJson: string;
 
 Displays specific appLinks for the app.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_auto_login.html#app_links_json AppAutoLogin#app_links_json}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_auto_login#app_links_json AppAutoLogin#app_links_json}
 
 ---
 
@@ -57636,7 +57636,7 @@ public readonly appSettingsJson: string;
 
 Application settings in JSON format.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_auto_login.html#app_settings_json AppAutoLogin#app_settings_json}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_auto_login#app_settings_json AppAutoLogin#app_settings_json}
 
 ---
 
@@ -57650,7 +57650,7 @@ public readonly autoSubmitToolbar: boolean | IResolvable;
 
 Display auto submit toolbar.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_auto_login.html#auto_submit_toolbar AppAutoLogin#auto_submit_toolbar}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_auto_login#auto_submit_toolbar AppAutoLogin#auto_submit_toolbar}
 
 ---
 
@@ -57664,7 +57664,7 @@ public readonly credentialsScheme: string;
 
 Application credentials scheme.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_auto_login.html#credentials_scheme AppAutoLogin#credentials_scheme}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_auto_login#credentials_scheme AppAutoLogin#credentials_scheme}
 
 ---
 
@@ -57678,7 +57678,7 @@ public readonly enduserNote: string;
 
 Application notes for end users.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_auto_login.html#enduser_note AppAutoLogin#enduser_note}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_auto_login#enduser_note AppAutoLogin#enduser_note}
 
 ---
 
@@ -57692,7 +57692,7 @@ public readonly groups: string[];
 
 Groups associated with the application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_auto_login.html#groups AppAutoLogin#groups}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_auto_login#groups AppAutoLogin#groups}
 
 ---
 
@@ -57706,7 +57706,7 @@ public readonly hideIos: boolean | IResolvable;
 
 Do not display application icon on mobile app.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_auto_login.html#hide_ios AppAutoLogin#hide_ios}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_auto_login#hide_ios AppAutoLogin#hide_ios}
 
 ---
 
@@ -57720,7 +57720,7 @@ public readonly hideWeb: boolean | IResolvable;
 
 Do not display application icon to users.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_auto_login.html#hide_web AppAutoLogin#hide_web}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_auto_login#hide_web AppAutoLogin#hide_web}
 
 ---
 
@@ -57734,7 +57734,7 @@ public readonly logo: string;
 
 Local path to logo of the application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_auto_login.html#logo AppAutoLogin#logo}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_auto_login#logo AppAutoLogin#logo}
 
 ---
 
@@ -57748,7 +57748,7 @@ public readonly preconfiguredApp: string;
 
 Preconfigured app name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_auto_login.html#preconfigured_app AppAutoLogin#preconfigured_app}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_auto_login#preconfigured_app AppAutoLogin#preconfigured_app}
 
 ---
 
@@ -57762,7 +57762,7 @@ public readonly revealPassword: boolean | IResolvable;
 
 Allow user to reveal password.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_auto_login.html#reveal_password AppAutoLogin#reveal_password}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_auto_login#reveal_password AppAutoLogin#reveal_password}
 
 ---
 
@@ -57776,7 +57776,7 @@ public readonly sharedPassword: string;
 
 Shared password, required for certain schemes.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_auto_login.html#shared_password AppAutoLogin#shared_password}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_auto_login#shared_password AppAutoLogin#shared_password}
 
 ---
 
@@ -57790,7 +57790,7 @@ public readonly sharedUsername: string;
 
 Shared username, required for certain schemes.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_auto_login.html#shared_username AppAutoLogin#shared_username}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_auto_login#shared_username AppAutoLogin#shared_username}
 
 ---
 
@@ -57804,7 +57804,7 @@ public readonly signOnRedirectUrl: string;
 
 Post login redirect URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_auto_login.html#sign_on_redirect_url AppAutoLogin#sign_on_redirect_url}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_auto_login#sign_on_redirect_url AppAutoLogin#sign_on_redirect_url}
 
 ---
 
@@ -57818,7 +57818,7 @@ public readonly signOnUrl: string;
 
 Login URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_auto_login.html#sign_on_url AppAutoLogin#sign_on_url}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_auto_login#sign_on_url AppAutoLogin#sign_on_url}
 
 ---
 
@@ -57832,7 +57832,7 @@ public readonly skipGroups: boolean | IResolvable;
 
 Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_auto_login.html#skip_groups AppAutoLogin#skip_groups}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_auto_login#skip_groups AppAutoLogin#skip_groups}
 
 ---
 
@@ -57846,7 +57846,7 @@ public readonly skipUsers: boolean | IResolvable;
 
 Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_auto_login.html#skip_users AppAutoLogin#skip_users}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_auto_login#skip_users AppAutoLogin#skip_users}
 
 ---
 
@@ -57860,7 +57860,7 @@ public readonly status: string;
 
 Status of application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_auto_login.html#status AppAutoLogin#status}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_auto_login#status AppAutoLogin#status}
 
 ---
 
@@ -57874,7 +57874,7 @@ public readonly userNameTemplate: string;
 
 Username template.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_auto_login.html#user_name_template AppAutoLogin#user_name_template}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_auto_login#user_name_template AppAutoLogin#user_name_template}
 
 ---
 
@@ -57888,7 +57888,7 @@ public readonly userNameTemplatePushStatus: string;
 
 Push username on update.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_auto_login.html#user_name_template_push_status AppAutoLogin#user_name_template_push_status}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_auto_login#user_name_template_push_status AppAutoLogin#user_name_template_push_status}
 
 ---
 
@@ -57902,7 +57902,7 @@ public readonly userNameTemplateSuffix: string;
 
 Username template suffix.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_auto_login.html#user_name_template_suffix AppAutoLogin#user_name_template_suffix}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_auto_login#user_name_template_suffix AppAutoLogin#user_name_template_suffix}
 
 ---
 
@@ -57916,7 +57916,7 @@ public readonly userNameTemplateType: string;
 
 Username template type.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_auto_login.html#user_name_template_type AppAutoLogin#user_name_template_type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_auto_login#user_name_template_type AppAutoLogin#user_name_template_type}
 
 ---
 
@@ -57930,7 +57930,7 @@ public readonly users: AppAutoLoginUsers[];
 
 users block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_auto_login.html#users AppAutoLogin#users}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_auto_login#users AppAutoLogin#users}
 
 ---
 
@@ -57964,7 +57964,7 @@ public readonly id: string;
 
 User ID.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_auto_login.html#id AppAutoLogin#id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_auto_login#id AppAutoLogin#id}
 
 ---
 
@@ -57978,7 +57978,7 @@ public readonly password: string;
 
 Password for user application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_auto_login.html#password AppAutoLogin#password}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_auto_login#password AppAutoLogin#password}
 
 ---
 
@@ -57992,7 +57992,7 @@ public readonly username: string;
 
 Username for user.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_auto_login.html#username AppAutoLogin#username}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_auto_login#username AppAutoLogin#username}
 
 ---
 
@@ -58085,7 +58085,7 @@ public readonly authUrl: string;
 
 Login button field.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_basic_auth.html#auth_url AppBasicAuth#auth_url}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_basic_auth#auth_url AppBasicAuth#auth_url}
 
 ---
 
@@ -58099,7 +58099,7 @@ public readonly label: string;
 
 Pretty name of app.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_basic_auth.html#label AppBasicAuth#label}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_basic_auth#label AppBasicAuth#label}
 
 ---
 
@@ -58113,7 +58113,7 @@ public readonly url: string;
 
 Login password field.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_basic_auth.html#url AppBasicAuth#url}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_basic_auth#url AppBasicAuth#url}
 
 ---
 
@@ -58127,7 +58127,7 @@ public readonly accessibilityErrorRedirectUrl: string;
 
 Custom error page URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_basic_auth.html#accessibility_error_redirect_url AppBasicAuth#accessibility_error_redirect_url}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_basic_auth#accessibility_error_redirect_url AppBasicAuth#accessibility_error_redirect_url}
 
 ---
 
@@ -58141,7 +58141,7 @@ public readonly accessibilityLoginRedirectUrl: string;
 
 Custom login page URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_basic_auth.html#accessibility_login_redirect_url AppBasicAuth#accessibility_login_redirect_url}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_basic_auth#accessibility_login_redirect_url AppBasicAuth#accessibility_login_redirect_url}
 
 ---
 
@@ -58155,7 +58155,7 @@ public readonly accessibilitySelfService: boolean | IResolvable;
 
 Enable self service.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_basic_auth.html#accessibility_self_service AppBasicAuth#accessibility_self_service}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_basic_auth#accessibility_self_service AppBasicAuth#accessibility_self_service}
 
 ---
 
@@ -58169,7 +58169,7 @@ public readonly adminNote: string;
 
 Application notes for admins.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_basic_auth.html#admin_note AppBasicAuth#admin_note}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_basic_auth#admin_note AppBasicAuth#admin_note}
 
 ---
 
@@ -58183,7 +58183,7 @@ public readonly appLinksJson: string;
 
 Displays specific appLinks for the app.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_basic_auth.html#app_links_json AppBasicAuth#app_links_json}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_basic_auth#app_links_json AppBasicAuth#app_links_json}
 
 ---
 
@@ -58197,7 +58197,7 @@ public readonly autoSubmitToolbar: boolean | IResolvable;
 
 Display auto submit toolbar.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_basic_auth.html#auto_submit_toolbar AppBasicAuth#auto_submit_toolbar}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_basic_auth#auto_submit_toolbar AppBasicAuth#auto_submit_toolbar}
 
 ---
 
@@ -58211,7 +58211,7 @@ public readonly enduserNote: string;
 
 Application notes for end users.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_basic_auth.html#enduser_note AppBasicAuth#enduser_note}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_basic_auth#enduser_note AppBasicAuth#enduser_note}
 
 ---
 
@@ -58225,7 +58225,7 @@ public readonly groups: string[];
 
 Groups associated with the application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_basic_auth.html#groups AppBasicAuth#groups}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_basic_auth#groups AppBasicAuth#groups}
 
 ---
 
@@ -58239,7 +58239,7 @@ public readonly hideIos: boolean | IResolvable;
 
 Do not display application icon on mobile app.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_basic_auth.html#hide_ios AppBasicAuth#hide_ios}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_basic_auth#hide_ios AppBasicAuth#hide_ios}
 
 ---
 
@@ -58253,7 +58253,7 @@ public readonly hideWeb: boolean | IResolvable;
 
 Do not display application icon to users.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_basic_auth.html#hide_web AppBasicAuth#hide_web}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_basic_auth#hide_web AppBasicAuth#hide_web}
 
 ---
 
@@ -58267,7 +58267,7 @@ public readonly logo: string;
 
 Local path to logo of the application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_basic_auth.html#logo AppBasicAuth#logo}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_basic_auth#logo AppBasicAuth#logo}
 
 ---
 
@@ -58281,7 +58281,7 @@ public readonly skipGroups: boolean | IResolvable;
 
 Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_basic_auth.html#skip_groups AppBasicAuth#skip_groups}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_basic_auth#skip_groups AppBasicAuth#skip_groups}
 
 ---
 
@@ -58295,7 +58295,7 @@ public readonly skipUsers: boolean | IResolvable;
 
 Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_basic_auth.html#skip_users AppBasicAuth#skip_users}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_basic_auth#skip_users AppBasicAuth#skip_users}
 
 ---
 
@@ -58309,7 +58309,7 @@ public readonly status: string;
 
 Status of application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_basic_auth.html#status AppBasicAuth#status}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_basic_auth#status AppBasicAuth#status}
 
 ---
 
@@ -58323,7 +58323,7 @@ public readonly users: AppBasicAuthUsers[];
 
 users block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_basic_auth.html#users AppBasicAuth#users}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_basic_auth#users AppBasicAuth#users}
 
 ---
 
@@ -58357,7 +58357,7 @@ public readonly id: string;
 
 User ID.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_basic_auth.html#id AppBasicAuth#id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_basic_auth#id AppBasicAuth#id}
 
 ---
 
@@ -58371,7 +58371,7 @@ public readonly password: string;
 
 Password for user application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_basic_auth.html#password AppBasicAuth#password}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_basic_auth#password AppBasicAuth#password}
 
 ---
 
@@ -58385,7 +58385,7 @@ public readonly username: string;
 
 Username for user.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_basic_auth.html#username AppBasicAuth#username}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_basic_auth#username AppBasicAuth#username}
 
 ---
 
@@ -58408,7 +58408,7 @@ const appBookmarkConfig: AppBookmarkConfig = { ... }
 | [`lifecycle`](#cdktfprovideroktaappbookmarkconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktaappbookmarkconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
 | [`label`](#cdktfprovideroktaappbookmarkconfigpropertylabel)<span title="Required">*</span> | `string` | Pretty name of app. |
-| [`url`](#cdktfprovideroktaappbookmarkconfigpropertyurl)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark.html#url AppBookmark#url}. |
+| [`url`](#cdktfprovideroktaappbookmarkconfigpropertyurl)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark#url AppBookmark#url}. |
 | [`accessibilityErrorRedirectUrl`](#cdktfprovideroktaappbookmarkconfigpropertyaccessibilityerrorredirecturl) | `string` | Custom error page URL. |
 | [`accessibilityLoginRedirectUrl`](#cdktfprovideroktaappbookmarkconfigpropertyaccessibilityloginredirecturl) | `string` | Custom login page URL. |
 | [`accessibilitySelfService`](#cdktfprovideroktaappbookmarkconfigpropertyaccessibilityselfservice) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Enable self service. |
@@ -58420,7 +58420,7 @@ const appBookmarkConfig: AppBookmarkConfig = { ... }
 | [`hideIos`](#cdktfprovideroktaappbookmarkconfigpropertyhideios) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Do not display application icon on mobile app. |
 | [`hideWeb`](#cdktfprovideroktaappbookmarkconfigpropertyhideweb) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Do not display application icon to users. |
 | [`logo`](#cdktfprovideroktaappbookmarkconfigpropertylogo) | `string` | Local path to logo of the application. |
-| [`requestIntegration`](#cdktfprovideroktaappbookmarkconfigpropertyrequestintegration) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark.html#request_integration AppBookmark#request_integration}. |
+| [`requestIntegration`](#cdktfprovideroktaappbookmarkconfigpropertyrequestintegration) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark#request_integration AppBookmark#request_integration}. |
 | [`skipGroups`](#cdktfprovideroktaappbookmarkconfigpropertyskipgroups) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources. |
 | [`skipUsers`](#cdktfprovideroktaappbookmarkconfigpropertyskipusers) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources. |
 | [`status`](#cdktfprovideroktaappbookmarkconfigpropertystatus) | `string` | Status of application. |
@@ -58478,7 +58478,7 @@ public readonly label: string;
 
 Pretty name of app.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark.html#label AppBookmark#label}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark#label AppBookmark#label}
 
 ---
 
@@ -58490,7 +58490,7 @@ public readonly url: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark.html#url AppBookmark#url}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark#url AppBookmark#url}.
 
 ---
 
@@ -58504,7 +58504,7 @@ public readonly accessibilityErrorRedirectUrl: string;
 
 Custom error page URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark.html#accessibility_error_redirect_url AppBookmark#accessibility_error_redirect_url}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark#accessibility_error_redirect_url AppBookmark#accessibility_error_redirect_url}
 
 ---
 
@@ -58518,7 +58518,7 @@ public readonly accessibilityLoginRedirectUrl: string;
 
 Custom login page URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark.html#accessibility_login_redirect_url AppBookmark#accessibility_login_redirect_url}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark#accessibility_login_redirect_url AppBookmark#accessibility_login_redirect_url}
 
 ---
 
@@ -58532,7 +58532,7 @@ public readonly accessibilitySelfService: boolean | IResolvable;
 
 Enable self service.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark.html#accessibility_self_service AppBookmark#accessibility_self_service}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark#accessibility_self_service AppBookmark#accessibility_self_service}
 
 ---
 
@@ -58546,7 +58546,7 @@ public readonly adminNote: string;
 
 Application notes for admins.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark.html#admin_note AppBookmark#admin_note}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark#admin_note AppBookmark#admin_note}
 
 ---
 
@@ -58560,7 +58560,7 @@ public readonly appLinksJson: string;
 
 Displays specific appLinks for the app.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark.html#app_links_json AppBookmark#app_links_json}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark#app_links_json AppBookmark#app_links_json}
 
 ---
 
@@ -58574,7 +58574,7 @@ public readonly autoSubmitToolbar: boolean | IResolvable;
 
 Display auto submit toolbar.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark.html#auto_submit_toolbar AppBookmark#auto_submit_toolbar}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark#auto_submit_toolbar AppBookmark#auto_submit_toolbar}
 
 ---
 
@@ -58588,7 +58588,7 @@ public readonly enduserNote: string;
 
 Application notes for end users.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark.html#enduser_note AppBookmark#enduser_note}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark#enduser_note AppBookmark#enduser_note}
 
 ---
 
@@ -58602,7 +58602,7 @@ public readonly groups: string[];
 
 Groups associated with the application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark.html#groups AppBookmark#groups}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark#groups AppBookmark#groups}
 
 ---
 
@@ -58616,7 +58616,7 @@ public readonly hideIos: boolean | IResolvable;
 
 Do not display application icon on mobile app.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark.html#hide_ios AppBookmark#hide_ios}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark#hide_ios AppBookmark#hide_ios}
 
 ---
 
@@ -58630,7 +58630,7 @@ public readonly hideWeb: boolean | IResolvable;
 
 Do not display application icon to users.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark.html#hide_web AppBookmark#hide_web}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark#hide_web AppBookmark#hide_web}
 
 ---
 
@@ -58644,7 +58644,7 @@ public readonly logo: string;
 
 Local path to logo of the application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark.html#logo AppBookmark#logo}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark#logo AppBookmark#logo}
 
 ---
 
@@ -58656,7 +58656,7 @@ public readonly requestIntegration: boolean | IResolvable;
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark.html#request_integration AppBookmark#request_integration}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark#request_integration AppBookmark#request_integration}.
 
 ---
 
@@ -58670,7 +58670,7 @@ public readonly skipGroups: boolean | IResolvable;
 
 Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark.html#skip_groups AppBookmark#skip_groups}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark#skip_groups AppBookmark#skip_groups}
 
 ---
 
@@ -58684,7 +58684,7 @@ public readonly skipUsers: boolean | IResolvable;
 
 Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark.html#skip_users AppBookmark#skip_users}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark#skip_users AppBookmark#skip_users}
 
 ---
 
@@ -58698,7 +58698,7 @@ public readonly status: string;
 
 Status of application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark.html#status AppBookmark#status}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark#status AppBookmark#status}
 
 ---
 
@@ -58712,7 +58712,7 @@ public readonly users: AppBookmarkUsers[];
 
 users block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark.html#users AppBookmark#users}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark#users AppBookmark#users}
 
 ---
 
@@ -58746,7 +58746,7 @@ public readonly id: string;
 
 User ID.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark.html#id AppBookmark#id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark#id AppBookmark#id}
 
 ---
 
@@ -58760,7 +58760,7 @@ public readonly password: string;
 
 Password for user application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark.html#password AppBookmark#password}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark#password AppBookmark#password}
 
 ---
 
@@ -58774,7 +58774,7 @@ public readonly username: string;
 
 Username for user.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark.html#username AppBookmark#username}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark#username AppBookmark#username}
 
 ---
 
@@ -58798,8 +58798,8 @@ const appGroupAssignmentConfig: AppGroupAssignmentConfig = { ... }
 | [`provider`](#cdktfprovideroktaappgroupassignmentconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
 | [`appId`](#cdktfprovideroktaappgroupassignmentconfigpropertyappid)<span title="Required">*</span> | `string` | App to associate group with. |
 | [`groupId`](#cdktfprovideroktaappgroupassignmentconfigpropertygroupid)<span title="Required">*</span> | `string` | Group associated with the application. |
-| [`priority`](#cdktfprovideroktaappgroupassignmentconfigpropertypriority) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_group_assignment.html#priority AppGroupAssignment#priority}. |
-| [`profile`](#cdktfprovideroktaappgroupassignmentconfigpropertyprofile) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_group_assignment.html#profile AppGroupAssignment#profile}. |
+| [`priority`](#cdktfprovideroktaappgroupassignmentconfigpropertypriority) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_group_assignment#priority AppGroupAssignment#priority}. |
+| [`profile`](#cdktfprovideroktaappgroupassignmentconfigpropertyprofile) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_group_assignment#profile AppGroupAssignment#profile}. |
 | [`retainAssignment`](#cdktfprovideroktaappgroupassignmentconfigpropertyretainassignment) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Retain the group assignment on destroy. |
 
 ---
@@ -58854,7 +58854,7 @@ public readonly appId: string;
 
 App to associate group with.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_group_assignment.html#app_id AppGroupAssignment#app_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_group_assignment#app_id AppGroupAssignment#app_id}
 
 ---
 
@@ -58868,7 +58868,7 @@ public readonly groupId: string;
 
 Group associated with the application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_group_assignment.html#group_id AppGroupAssignment#group_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_group_assignment#group_id AppGroupAssignment#group_id}
 
 ---
 
@@ -58880,7 +58880,7 @@ public readonly priority: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_group_assignment.html#priority AppGroupAssignment#priority}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_group_assignment#priority AppGroupAssignment#priority}.
 
 ---
 
@@ -58892,7 +58892,7 @@ public readonly profile: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_group_assignment.html#profile AppGroupAssignment#profile}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_group_assignment#profile AppGroupAssignment#profile}.
 
 ---
 
@@ -58906,7 +58906,7 @@ public readonly retainAssignment: boolean | IResolvable;
 
 Retain the group assignment on destroy.
 
-If set to true, the resource will be removed from state but not from the Okta app.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_group_assignment.html#retain_assignment AppGroupAssignment#retain_assignment}
+If set to true, the resource will be removed from state but not from the Okta app.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_group_assignment#retain_assignment AppGroupAssignment#retain_assignment}
 
 ---
 
@@ -58928,7 +58928,7 @@ const appGroupAssignmentsConfig: AppGroupAssignmentsConfig = { ... }
 | [`dependsOn`](#cdktfprovideroktaappgroupassignmentsconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktaappgroupassignmentsconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktaappgroupassignmentsconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`appId`](#cdktfprovideroktaappgroupassignmentsconfigpropertyappid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_group_assignments.html#app_id AppGroupAssignments#app_id}. |
+| [`appId`](#cdktfprovideroktaappgroupassignmentsconfigpropertyappid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_group_assignments#app_id AppGroupAssignments#app_id}. |
 | [`group`](#cdktfprovideroktaappgroupassignmentsconfigpropertygroup)<span title="Required">*</span> | [`@cdktf/provider-okta.AppGroupAssignmentsGroup`](#@cdktf/provider-okta.AppGroupAssignmentsGroup)[] | group block. |
 
 ---
@@ -58981,7 +58981,7 @@ public readonly appId: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_group_assignments.html#app_id AppGroupAssignments#app_id}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_group_assignments#app_id AppGroupAssignments#app_id}.
 
 ---
 
@@ -58995,7 +58995,7 @@ public readonly group: AppGroupAssignmentsGroup[];
 
 group block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_group_assignments.html#group AppGroupAssignments#group}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_group_assignments#group AppGroupAssignments#group}
 
 ---
 
@@ -59014,8 +59014,8 @@ const appGroupAssignmentsGroup: AppGroupAssignmentsGroup = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | [`id`](#cdktfprovideroktaappgroupassignmentsgrouppropertyid)<span title="Required">*</span> | `string` | A group to associate with the application. |
-| [`priority`](#cdktfprovideroktaappgroupassignmentsgrouppropertypriority) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_group_assignments.html#priority AppGroupAssignments#priority}. |
-| [`profile`](#cdktfprovideroktaappgroupassignmentsgrouppropertyprofile) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_group_assignments.html#profile AppGroupAssignments#profile}. |
+| [`priority`](#cdktfprovideroktaappgroupassignmentsgrouppropertypriority) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_group_assignments#priority AppGroupAssignments#priority}. |
+| [`profile`](#cdktfprovideroktaappgroupassignmentsgrouppropertyprofile) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_group_assignments#profile AppGroupAssignments#profile}. |
 
 ---
 
@@ -59029,7 +59029,7 @@ public readonly id: string;
 
 A group to associate with the application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_group_assignments.html#id AppGroupAssignments#id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_group_assignments#id AppGroupAssignments#id}
 
 ---
 
@@ -59041,7 +59041,7 @@ public readonly priority: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_group_assignments.html#priority AppGroupAssignments#priority}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_group_assignments#priority AppGroupAssignments#priority}.
 
 ---
 
@@ -59053,7 +59053,7 @@ public readonly profile: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_group_assignments.html#profile AppGroupAssignments#profile}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_group_assignments#profile AppGroupAssignments#profile}.
 
 ---
 
@@ -59131,7 +59131,7 @@ public readonly appId: string;
 
 ID of the application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth_api_scope.html#app_id AppOauthApiScope#app_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth_api_scope#app_id AppOauthApiScope#app_id}
 
 ---
 
@@ -59145,7 +59145,7 @@ public readonly issuer: string;
 
 The issuer of your Org Authorization Server, your Org URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth_api_scope.html#issuer AppOauthApiScope#issuer}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth_api_scope#issuer AppOauthApiScope#issuer}
 
 ---
 
@@ -59159,7 +59159,7 @@ public readonly scopes: string[];
 
 Scopes of the application for which consent is granted.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth_api_scope.html#scopes AppOauthApiScope#scopes}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth_api_scope#scopes AppOauthApiScope#scopes}
 
 ---
 
@@ -59282,7 +59282,7 @@ public readonly label: string;
 
 Pretty name of app.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth.html#label AppOauth#label}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth#label AppOauth#label}
 
 ---
 
@@ -59296,7 +59296,7 @@ public readonly type: string;
 
 The type of client application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth.html#type AppOauth#type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth#type AppOauth#type}
 
 ---
 
@@ -59310,7 +59310,7 @@ public readonly accessibilityErrorRedirectUrl: string;
 
 Custom error page URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth.html#accessibility_error_redirect_url AppOauth#accessibility_error_redirect_url}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth#accessibility_error_redirect_url AppOauth#accessibility_error_redirect_url}
 
 ---
 
@@ -59324,7 +59324,7 @@ public readonly accessibilityLoginRedirectUrl: string;
 
 Custom login page URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth.html#accessibility_login_redirect_url AppOauth#accessibility_login_redirect_url}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth#accessibility_login_redirect_url AppOauth#accessibility_login_redirect_url}
 
 ---
 
@@ -59338,7 +59338,7 @@ public readonly accessibilitySelfService: boolean | IResolvable;
 
 Enable self service.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth.html#accessibility_self_service AppOauth#accessibility_self_service}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth#accessibility_self_service AppOauth#accessibility_self_service}
 
 ---
 
@@ -59352,7 +59352,7 @@ public readonly adminNote: string;
 
 Application notes for admins.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth.html#admin_note AppOauth#admin_note}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth#admin_note AppOauth#admin_note}
 
 ---
 
@@ -59366,7 +59366,7 @@ public readonly appLinksJson: string;
 
 Displays specific appLinks for the app.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth.html#app_links_json AppOauth#app_links_json}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth#app_links_json AppOauth#app_links_json}
 
 ---
 
@@ -59380,7 +59380,7 @@ public readonly appSettingsJson: string;
 
 Application settings in JSON format.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth.html#app_settings_json AppOauth#app_settings_json}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth#app_settings_json AppOauth#app_settings_json}
 
 ---
 
@@ -59394,7 +59394,7 @@ public readonly autoKeyRotation: boolean | IResolvable;
 
 Requested key rotation mode.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth.html#auto_key_rotation AppOauth#auto_key_rotation}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth#auto_key_rotation AppOauth#auto_key_rotation}
 
 ---
 
@@ -59408,7 +59408,7 @@ public readonly autoSubmitToolbar: boolean | IResolvable;
 
 Display auto submit toolbar.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth.html#auto_submit_toolbar AppOauth#auto_submit_toolbar}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth#auto_submit_toolbar AppOauth#auto_submit_toolbar}
 
 ---
 
@@ -59422,7 +59422,7 @@ public readonly clientBasicSecret: string;
 
 OAuth client secret key, this can be set when token_endpoint_auth_method is client_secret_basic.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth.html#client_basic_secret AppOauth#client_basic_secret}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth#client_basic_secret AppOauth#client_basic_secret}
 
 ---
 
@@ -59436,7 +59436,7 @@ public readonly clientId: string;
 
 OAuth client ID. If set during creation, app is created with this id.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth.html#client_id AppOauth#client_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth#client_id AppOauth#client_id}
 
 ---
 
@@ -59450,7 +59450,7 @@ public readonly clientUri: string;
 
 URI to a web page providing information about the client.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth.html#client_uri AppOauth#client_uri}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth#client_uri AppOauth#client_uri}
 
 ---
 
@@ -59464,7 +59464,7 @@ public readonly consentMethod: string;
 
 *Early Access Property*. Indicates whether user consent is required or implicit. Valid values: REQUIRED, TRUSTED. Default value is TRUSTED.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth.html#consent_method AppOauth#consent_method}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth#consent_method AppOauth#consent_method}
 
 ---
 
@@ -59478,7 +59478,7 @@ public readonly customClientId: string;
 
 **Deprecated** This property allows you to set your client_id during creation.
 
-NOTE: updating after creation will be a no-op, use client_id for that behavior instead.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth.html#custom_client_id AppOauth#custom_client_id}
+NOTE: updating after creation will be a no-op, use client_id for that behavior instead.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth#custom_client_id AppOauth#custom_client_id}
 
 ---
 
@@ -59492,7 +59492,7 @@ public readonly enduserNote: string;
 
 Application notes for end users.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth.html#enduser_note AppOauth#enduser_note}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth#enduser_note AppOauth#enduser_note}
 
 ---
 
@@ -59506,7 +59506,7 @@ public readonly grantTypes: string[];
 
 List of OAuth 2.0 grant types. Conditional validation params found here https://developer.okta.com/docs/api/resources/apps#credentials-settings-details. Defaults to minimum requirements per app type.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth.html#grant_types AppOauth#grant_types}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth#grant_types AppOauth#grant_types}
 
 ---
 
@@ -59520,7 +59520,7 @@ public readonly groups: string[];
 
 Groups associated with the application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth.html#groups AppOauth#groups}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth#groups AppOauth#groups}
 
 ---
 
@@ -59534,7 +59534,7 @@ public readonly groupsClaim: AppOauthGroupsClaim;
 
 groups_claim block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth.html#groups_claim AppOauth#groups_claim}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth#groups_claim AppOauth#groups_claim}
 
 ---
 
@@ -59548,7 +59548,7 @@ public readonly hideIos: boolean | IResolvable;
 
 Do not display application icon on mobile app.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth.html#hide_ios AppOauth#hide_ios}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth#hide_ios AppOauth#hide_ios}
 
 ---
 
@@ -59562,7 +59562,7 @@ public readonly hideWeb: boolean | IResolvable;
 
 Do not display application icon to users.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth.html#hide_web AppOauth#hide_web}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth#hide_web AppOauth#hide_web}
 
 ---
 
@@ -59576,7 +59576,7 @@ public readonly implicitAssignment: boolean | IResolvable;
 
 *Early Access Property*. Enable Federation Broker Mode.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth.html#implicit_assignment AppOauth#implicit_assignment}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth#implicit_assignment AppOauth#implicit_assignment}
 
 ---
 
@@ -59590,7 +59590,7 @@ public readonly issuerMode: string;
 
 *Early Access Property*.
 
-Indicates whether the Okta Authorization Server uses the original Okta org domain URL or a custom domain URL as the issuer of ID token for this client.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth.html#issuer_mode AppOauth#issuer_mode}
+Indicates whether the Okta Authorization Server uses the original Okta org domain URL or a custom domain URL as the issuer of ID token for this client.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth#issuer_mode AppOauth#issuer_mode}
 
 ---
 
@@ -59604,7 +59604,7 @@ public readonly jwks: AppOauthJwks[];
 
 jwks block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth.html#jwks AppOauth#jwks}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth#jwks AppOauth#jwks}
 
 ---
 
@@ -59618,7 +59618,7 @@ public readonly loginMode: string;
 
 The type of Idp-Initiated login that the client supports, if any.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth.html#login_mode AppOauth#login_mode}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth#login_mode AppOauth#login_mode}
 
 ---
 
@@ -59632,7 +59632,7 @@ public readonly loginScopes: string[];
 
 List of scopes to use for the request.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth.html#login_scopes AppOauth#login_scopes}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth#login_scopes AppOauth#login_scopes}
 
 ---
 
@@ -59646,7 +59646,7 @@ public readonly loginUri: string;
 
 URI that initiates login.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth.html#login_uri AppOauth#login_uri}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth#login_uri AppOauth#login_uri}
 
 ---
 
@@ -59660,7 +59660,7 @@ public readonly logo: string;
 
 Local path to logo of the application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth.html#logo AppOauth#logo}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth#logo AppOauth#logo}
 
 ---
 
@@ -59674,7 +59674,7 @@ public readonly logoUri: string;
 
 URI that references a logo for the client.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth.html#logo_uri AppOauth#logo_uri}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth#logo_uri AppOauth#logo_uri}
 
 ---
 
@@ -59688,7 +59688,7 @@ public readonly omitSecret: boolean | IResolvable;
 
 This tells the provider not to persist the application's secret to state.
 
-If this is ever changes from true => false your app will be recreated.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth.html#omit_secret AppOauth#omit_secret}
+If this is ever changes from true => false your app will be recreated.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth#omit_secret AppOauth#omit_secret}
 
 ---
 
@@ -59702,7 +59702,7 @@ public readonly policyUri: string;
 
 URI to web page providing client policy document.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth.html#policy_uri AppOauth#policy_uri}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth#policy_uri AppOauth#policy_uri}
 
 ---
 
@@ -59716,7 +59716,7 @@ public readonly postLogoutRedirectUris: string[];
 
 List of URIs for redirection after logout.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth.html#post_logout_redirect_uris AppOauth#post_logout_redirect_uris}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth#post_logout_redirect_uris AppOauth#post_logout_redirect_uris}
 
 ---
 
@@ -59730,7 +59730,7 @@ public readonly profile: string;
 
 Custom JSON that represents an OAuth application's profile.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth.html#profile AppOauth#profile}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth#profile AppOauth#profile}
 
 ---
 
@@ -59744,7 +59744,7 @@ public readonly redirectUris: string[];
 
 List of URIs for use in the redirect-based flow.
 
-This is required for all application types except service. Note: see okta_app_oauth_redirect_uri for appending to this list in a decentralized way.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth.html#redirect_uris AppOauth#redirect_uris}
+This is required for all application types except service. Note: see okta_app_oauth_redirect_uri for appending to this list in a decentralized way.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth#redirect_uris AppOauth#redirect_uris}
 
 ---
 
@@ -59758,7 +59758,7 @@ public readonly refreshTokenLeeway: number;
 
 *Early Access Property* Grace period for token rotation.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth.html#refresh_token_leeway AppOauth#refresh_token_leeway}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth#refresh_token_leeway AppOauth#refresh_token_leeway}
 
 ---
 
@@ -59772,7 +59772,7 @@ public readonly refreshTokenRotation: string;
 
 *Early Access Property* Refresh token rotation behavior.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth.html#refresh_token_rotation AppOauth#refresh_token_rotation}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth#refresh_token_rotation AppOauth#refresh_token_rotation}
 
 ---
 
@@ -59786,7 +59786,7 @@ public readonly responseTypes: string[];
 
 List of OAuth 2.0 response type strings.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth.html#response_types AppOauth#response_types}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth#response_types AppOauth#response_types}
 
 ---
 
@@ -59800,7 +59800,7 @@ public readonly skipGroups: boolean | IResolvable;
 
 Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth.html#skip_groups AppOauth#skip_groups}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth#skip_groups AppOauth#skip_groups}
 
 ---
 
@@ -59814,7 +59814,7 @@ public readonly skipUsers: boolean | IResolvable;
 
 Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth.html#skip_users AppOauth#skip_users}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth#skip_users AppOauth#skip_users}
 
 ---
 
@@ -59828,7 +59828,7 @@ public readonly status: string;
 
 Status of application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth.html#status AppOauth#status}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth#status AppOauth#status}
 
 ---
 
@@ -59842,7 +59842,7 @@ public readonly tokenEndpointAuthMethod: string;
 
 Requested authentication method for the token endpoint.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth.html#token_endpoint_auth_method AppOauth#token_endpoint_auth_method}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth#token_endpoint_auth_method AppOauth#token_endpoint_auth_method}
 
 ---
 
@@ -59856,7 +59856,7 @@ public readonly tosUri: string;
 
 URI to web page providing client tos (terms of service).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth.html#tos_uri AppOauth#tos_uri}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth#tos_uri AppOauth#tos_uri}
 
 ---
 
@@ -59870,7 +59870,7 @@ public readonly userNameTemplate: string;
 
 Username template.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth.html#user_name_template AppOauth#user_name_template}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth#user_name_template AppOauth#user_name_template}
 
 ---
 
@@ -59884,7 +59884,7 @@ public readonly userNameTemplatePushStatus: string;
 
 Push username on update.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth.html#user_name_template_push_status AppOauth#user_name_template_push_status}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth#user_name_template_push_status AppOauth#user_name_template_push_status}
 
 ---
 
@@ -59898,7 +59898,7 @@ public readonly userNameTemplateSuffix: string;
 
 Username template suffix.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth.html#user_name_template_suffix AppOauth#user_name_template_suffix}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth#user_name_template_suffix AppOauth#user_name_template_suffix}
 
 ---
 
@@ -59912,7 +59912,7 @@ public readonly userNameTemplateType: string;
 
 Username template type.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth.html#user_name_template_type AppOauth#user_name_template_type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth#user_name_template_type AppOauth#user_name_template_type}
 
 ---
 
@@ -59926,7 +59926,7 @@ public readonly users: AppOauthUsers[];
 
 users block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth.html#users AppOauth#users}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth#users AppOauth#users}
 
 ---
 
@@ -59940,7 +59940,7 @@ public readonly wildcardRedirect: string;
 
 *Early Access Property*. Indicates if the client is allowed to use wildcard matching of redirect_uris.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth.html#wildcard_redirect AppOauth#wildcard_redirect}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth#wildcard_redirect AppOauth#wildcard_redirect}
 
 ---
 
@@ -59975,7 +59975,7 @@ public readonly name: string;
 
 Name of the claim that will be used in the token.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth.html#name AppOauth#name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth#name AppOauth#name}
 
 ---
 
@@ -59989,7 +59989,7 @@ public readonly type: string;
 
 Groups claim type.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth.html#type AppOauth#type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth#type AppOauth#type}
 
 ---
 
@@ -60003,7 +60003,7 @@ public readonly value: string;
 
 Value of the claim.
 
-Can be an Okta Expression Language statement that evaluates at the time the token is minted.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth.html#value AppOauth#value}
+Can be an Okta Expression Language statement that evaluates at the time the token is minted.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth#value AppOauth#value}
 
 ---
 
@@ -60017,7 +60017,7 @@ public readonly filterType: string;
 
 Groups claim filter. Can only be set if type is FILTER.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth.html#filter_type AppOauth#filter_type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth#filter_type AppOauth#filter_type}
 
 ---
 
@@ -60052,7 +60052,7 @@ public readonly kid: string;
 
 Key ID.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth.html#kid AppOauth#kid}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth#kid AppOauth#kid}
 
 ---
 
@@ -60066,7 +60066,7 @@ public readonly kty: string;
 
 Key type.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth.html#kty AppOauth#kty}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth#kty AppOauth#kty}
 
 ---
 
@@ -60080,7 +60080,7 @@ public readonly e: string;
 
 RSA Exponent.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth.html#e AppOauth#e}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth#e AppOauth#e}
 
 ---
 
@@ -60094,7 +60094,7 @@ public readonly n: string;
 
 RSA Modulus.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth.html#n AppOauth#n}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth#n AppOauth#n}
 
 ---
 
@@ -60116,7 +60116,7 @@ const appOauthRedirectUriConfig: AppOauthRedirectUriConfig = { ... }
 | [`dependsOn`](#cdktfprovideroktaappoauthredirecturiconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktaappoauthredirecturiconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktaappoauthredirecturiconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`appId`](#cdktfprovideroktaappoauthredirecturiconfigpropertyappid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth_redirect_uri.html#app_id AppOauthRedirectUri#app_id}. |
+| [`appId`](#cdktfprovideroktaappoauthredirecturiconfigpropertyappid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth_redirect_uri#app_id AppOauthRedirectUri#app_id}. |
 | [`uri`](#cdktfprovideroktaappoauthredirecturiconfigpropertyuri)<span title="Required">*</span> | `string` | Redirect URI to append to Okta OIDC application. |
 
 ---
@@ -60169,7 +60169,7 @@ public readonly appId: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth_redirect_uri.html#app_id AppOauthRedirectUri#app_id}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth_redirect_uri#app_id AppOauthRedirectUri#app_id}.
 
 ---
 
@@ -60183,7 +60183,7 @@ public readonly uri: string;
 
 Redirect URI to append to Okta OIDC application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth_redirect_uri.html#uri AppOauthRedirectUri#uri}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth_redirect_uri#uri AppOauthRedirectUri#uri}
 
 ---
 
@@ -60217,7 +60217,7 @@ public readonly id: string;
 
 User ID.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth.html#id AppOauth#id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth#id AppOauth#id}
 
 ---
 
@@ -60231,7 +60231,7 @@ public readonly password: string;
 
 Password for user application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth.html#password AppOauth#password}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth#password AppOauth#password}
 
 ---
 
@@ -60245,7 +60245,7 @@ public readonly username: string;
 
 Username for user.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth.html#username AppOauth#username}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth#username AppOauth#username}
 
 ---
 
@@ -60322,7 +60322,7 @@ public readonly appId: string;
 
 Application ID.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml_app_settings.html#app_id AppSamlAppSettings#app_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml_app_settings#app_id AppSamlAppSettings#app_id}
 
 ---
 
@@ -60336,7 +60336,7 @@ public readonly settings: string;
 
 Application settings in JSON format.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml_app_settings.html#settings AppSamlAppSettings#settings}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml_app_settings#settings AppSamlAppSettings#settings}
 
 ---
 
@@ -60359,7 +60359,7 @@ const appSamlAttributeStatements: AppSamlAttributeStatements = { ... }
 | [`filterValue`](#cdktfprovideroktaappsamlattributestatementspropertyfiltervalue) | `string` | Filter value to use. |
 | [`namespace`](#cdktfprovideroktaappsamlattributestatementspropertynamespace) | `string` | The name format of the attribute. |
 | [`type`](#cdktfprovideroktaappsamlattributestatementspropertytype) | `string` | The type of attribute statements object. |
-| [`values`](#cdktfprovideroktaappsamlattributestatementspropertyvalues) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml.html#values AppSaml#values}. |
+| [`values`](#cdktfprovideroktaappsamlattributestatementspropertyvalues) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml#values AppSaml#values}. |
 
 ---
 
@@ -60373,7 +60373,7 @@ public readonly name: string;
 
 The reference name of the attribute statement.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml.html#name AppSaml#name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml#name AppSaml#name}
 
 ---
 
@@ -60387,7 +60387,7 @@ public readonly filterType: string;
 
 Type of group attribute filter.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml.html#filter_type AppSaml#filter_type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml#filter_type AppSaml#filter_type}
 
 ---
 
@@ -60401,7 +60401,7 @@ public readonly filterValue: string;
 
 Filter value to use.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml.html#filter_value AppSaml#filter_value}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml#filter_value AppSaml#filter_value}
 
 ---
 
@@ -60415,7 +60415,7 @@ public readonly namespace: string;
 
 The name format of the attribute.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml.html#namespace AppSaml#namespace}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml#namespace AppSaml#namespace}
 
 ---
 
@@ -60429,7 +60429,7 @@ public readonly type: string;
 
 The type of attribute statements object.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml.html#type AppSaml#type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml#type AppSaml#type}
 
 ---
 
@@ -60441,7 +60441,7 @@ public readonly values: string[];
 
 - *Type:* `string`[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml.html#values AppSaml#values}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml#values AppSaml#values}.
 
 ---
 
@@ -60565,7 +60565,7 @@ public readonly label: string;
 
 Pretty name of app.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml.html#label AppSaml#label}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml#label AppSaml#label}
 
 ---
 
@@ -60579,7 +60579,7 @@ public readonly accessibilityErrorRedirectUrl: string;
 
 Custom error page URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml.html#accessibility_error_redirect_url AppSaml#accessibility_error_redirect_url}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml#accessibility_error_redirect_url AppSaml#accessibility_error_redirect_url}
 
 ---
 
@@ -60593,7 +60593,7 @@ public readonly accessibilityLoginRedirectUrl: string;
 
 Custom login page URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml.html#accessibility_login_redirect_url AppSaml#accessibility_login_redirect_url}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml#accessibility_login_redirect_url AppSaml#accessibility_login_redirect_url}
 
 ---
 
@@ -60607,7 +60607,7 @@ public readonly accessibilitySelfService: boolean | IResolvable;
 
 Enable self service.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml.html#accessibility_self_service AppSaml#accessibility_self_service}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml#accessibility_self_service AppSaml#accessibility_self_service}
 
 ---
 
@@ -60621,7 +60621,7 @@ public readonly acsEndpoints: string[];
 
 List of ACS endpoints for this SAML application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml.html#acs_endpoints AppSaml#acs_endpoints}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml#acs_endpoints AppSaml#acs_endpoints}
 
 ---
 
@@ -60635,7 +60635,7 @@ public readonly adminNote: string;
 
 Application notes for admins.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml.html#admin_note AppSaml#admin_note}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml#admin_note AppSaml#admin_note}
 
 ---
 
@@ -60649,7 +60649,7 @@ public readonly appLinksJson: string;
 
 Displays specific appLinks for the app.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml.html#app_links_json AppSaml#app_links_json}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml#app_links_json AppSaml#app_links_json}
 
 ---
 
@@ -60663,7 +60663,7 @@ public readonly appSettingsJson: string;
 
 Application settings in JSON format.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml.html#app_settings_json AppSaml#app_settings_json}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml#app_settings_json AppSaml#app_settings_json}
 
 ---
 
@@ -60677,7 +60677,7 @@ public readonly assertionSigned: boolean | IResolvable;
 
 Determines whether the SAML assertion is digitally signed.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml.html#assertion_signed AppSaml#assertion_signed}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml#assertion_signed AppSaml#assertion_signed}
 
 ---
 
@@ -60691,7 +60691,7 @@ public readonly attributeStatements: AppSamlAttributeStatements[];
 
 attribute_statements block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml.html#attribute_statements AppSaml#attribute_statements}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml#attribute_statements AppSaml#attribute_statements}
 
 ---
 
@@ -60705,7 +60705,7 @@ public readonly audience: string;
 
 Audience Restriction.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml.html#audience AppSaml#audience}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml#audience AppSaml#audience}
 
 ---
 
@@ -60719,7 +60719,7 @@ public readonly authnContextClassRef: string;
 
 Identifies the SAML authentication context class for the assertion’s authentication statement.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml.html#authn_context_class_ref AppSaml#authn_context_class_ref}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml#authn_context_class_ref AppSaml#authn_context_class_ref}
 
 ---
 
@@ -60733,7 +60733,7 @@ public readonly autoSubmitToolbar: boolean | IResolvable;
 
 Display auto submit toolbar.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml.html#auto_submit_toolbar AppSaml#auto_submit_toolbar}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml#auto_submit_toolbar AppSaml#auto_submit_toolbar}
 
 ---
 
@@ -60747,7 +60747,7 @@ public readonly defaultRelayState: string;
 
 Identifies a specific application resource in an IDP initiated SSO scenario.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml.html#default_relay_state AppSaml#default_relay_state}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml#default_relay_state AppSaml#default_relay_state}
 
 ---
 
@@ -60761,7 +60761,7 @@ public readonly destination: string;
 
 Identifies the location where the SAML response is intended to be sent inside of the SAML assertion.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml.html#destination AppSaml#destination}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml#destination AppSaml#destination}
 
 ---
 
@@ -60775,7 +60775,7 @@ public readonly digestAlgorithm: string;
 
 Determines the digest algorithm used to digitally sign the SAML assertion and response.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml.html#digest_algorithm AppSaml#digest_algorithm}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml#digest_algorithm AppSaml#digest_algorithm}
 
 ---
 
@@ -60789,7 +60789,7 @@ public readonly enduserNote: string;
 
 Application notes for end users.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml.html#enduser_note AppSaml#enduser_note}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml#enduser_note AppSaml#enduser_note}
 
 ---
 
@@ -60803,7 +60803,7 @@ public readonly features: string[];
 
 features to enable.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml.html#features AppSaml#features}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml#features AppSaml#features}
 
 ---
 
@@ -60817,7 +60817,7 @@ public readonly groups: string[];
 
 Groups associated with the application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml.html#groups AppSaml#groups}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml#groups AppSaml#groups}
 
 ---
 
@@ -60831,7 +60831,7 @@ public readonly hideIos: boolean | IResolvable;
 
 Do not display application icon on mobile app.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml.html#hide_ios AppSaml#hide_ios}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml#hide_ios AppSaml#hide_ios}
 
 ---
 
@@ -60845,7 +60845,7 @@ public readonly hideWeb: boolean | IResolvable;
 
 Do not display application icon to users.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml.html#hide_web AppSaml#hide_web}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml#hide_web AppSaml#hide_web}
 
 ---
 
@@ -60859,7 +60859,7 @@ public readonly honorForceAuthn: boolean | IResolvable;
 
 Prompt user to re-authenticate if SP asks for it.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml.html#honor_force_authn AppSaml#honor_force_authn}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml#honor_force_authn AppSaml#honor_force_authn}
 
 ---
 
@@ -60873,7 +60873,7 @@ public readonly idpIssuer: string;
 
 SAML issuer ID.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml.html#idp_issuer AppSaml#idp_issuer}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml#idp_issuer AppSaml#idp_issuer}
 
 ---
 
@@ -60887,7 +60887,7 @@ public readonly implicitAssignment: boolean | IResolvable;
 
 *Early Access Property*. Enable Federation Broker Mode.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml.html#implicit_assignment AppSaml#implicit_assignment}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml#implicit_assignment AppSaml#implicit_assignment}
 
 ---
 
@@ -60901,7 +60901,7 @@ public readonly inlineHookId: string;
 
 Saml Inline Hook setting.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml.html#inline_hook_id AppSaml#inline_hook_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml#inline_hook_id AppSaml#inline_hook_id}
 
 ---
 
@@ -60915,7 +60915,7 @@ public readonly keyName: string;
 
 Certificate name. This modulates the rotation of keys. New name == new key.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml.html#key_name AppSaml#key_name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml#key_name AppSaml#key_name}
 
 ---
 
@@ -60929,7 +60929,7 @@ public readonly keyYearsValid: number;
 
 Number of years the certificate is valid.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml.html#key_years_valid AppSaml#key_years_valid}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml#key_years_valid AppSaml#key_years_valid}
 
 ---
 
@@ -60943,7 +60943,7 @@ public readonly logo: string;
 
 Local path to logo of the application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml.html#logo AppSaml#logo}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml#logo AppSaml#logo}
 
 ---
 
@@ -60957,7 +60957,7 @@ public readonly preconfiguredApp: string;
 
 Name of preexisting SAML application. For instance 'slack'.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml.html#preconfigured_app AppSaml#preconfigured_app}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml#preconfigured_app AppSaml#preconfigured_app}
 
 ---
 
@@ -60971,7 +60971,7 @@ public readonly recipient: string;
 
 The location where the app may present the SAML assertion.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml.html#recipient AppSaml#recipient}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml#recipient AppSaml#recipient}
 
 ---
 
@@ -60985,7 +60985,7 @@ public readonly requestCompressed: boolean | IResolvable;
 
 Denotes whether the request is compressed or not.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml.html#request_compressed AppSaml#request_compressed}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml#request_compressed AppSaml#request_compressed}
 
 ---
 
@@ -60999,7 +60999,7 @@ public readonly responseSigned: boolean | IResolvable;
 
 Determines whether the SAML auth response message is digitally signed.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml.html#response_signed AppSaml#response_signed}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml#response_signed AppSaml#response_signed}
 
 ---
 
@@ -61013,7 +61013,7 @@ public readonly samlVersion: string;
 
 SAML version for the app's sign-on mode.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml.html#saml_version AppSaml#saml_version}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml#saml_version AppSaml#saml_version}
 
 ---
 
@@ -61027,7 +61027,7 @@ public readonly signatureAlgorithm: string;
 
 Signature algorithm used ot digitally sign the assertion and response.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml.html#signature_algorithm AppSaml#signature_algorithm}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml#signature_algorithm AppSaml#signature_algorithm}
 
 ---
 
@@ -61041,7 +61041,7 @@ public readonly singleLogoutCertificate: string;
 
 x509 encoded certificate that the Service Provider uses to sign Single Logout requests.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml.html#single_logout_certificate AppSaml#single_logout_certificate}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml#single_logout_certificate AppSaml#single_logout_certificate}
 
 ---
 
@@ -61055,7 +61055,7 @@ public readonly singleLogoutIssuer: string;
 
 The issuer of the Service Provider that generates the Single Logout request.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml.html#single_logout_issuer AppSaml#single_logout_issuer}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml#single_logout_issuer AppSaml#single_logout_issuer}
 
 ---
 
@@ -61069,7 +61069,7 @@ public readonly singleLogoutUrl: string;
 
 The location where the logout response is sent.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml.html#single_logout_url AppSaml#single_logout_url}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml#single_logout_url AppSaml#single_logout_url}
 
 ---
 
@@ -61083,7 +61083,7 @@ public readonly skipGroups: boolean | IResolvable;
 
 Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml.html#skip_groups AppSaml#skip_groups}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml#skip_groups AppSaml#skip_groups}
 
 ---
 
@@ -61097,7 +61097,7 @@ public readonly skipUsers: boolean | IResolvable;
 
 Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml.html#skip_users AppSaml#skip_users}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml#skip_users AppSaml#skip_users}
 
 ---
 
@@ -61111,7 +61111,7 @@ public readonly spIssuer: string;
 
 SAML SP issuer ID.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml.html#sp_issuer AppSaml#sp_issuer}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml#sp_issuer AppSaml#sp_issuer}
 
 ---
 
@@ -61125,7 +61125,7 @@ public readonly ssoUrl: string;
 
 Single Sign On URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml.html#sso_url AppSaml#sso_url}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml#sso_url AppSaml#sso_url}
 
 ---
 
@@ -61139,7 +61139,7 @@ public readonly status: string;
 
 Status of application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml.html#status AppSaml#status}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml#status AppSaml#status}
 
 ---
 
@@ -61153,7 +61153,7 @@ public readonly subjectNameIdFormat: string;
 
 Identifies the SAML processing rules.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml.html#subject_name_id_format AppSaml#subject_name_id_format}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml#subject_name_id_format AppSaml#subject_name_id_format}
 
 ---
 
@@ -61167,7 +61167,7 @@ public readonly subjectNameIdTemplate: string;
 
 Template for app user's username when a user is assigned to the app.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml.html#subject_name_id_template AppSaml#subject_name_id_template}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml#subject_name_id_template AppSaml#subject_name_id_template}
 
 ---
 
@@ -61181,7 +61181,7 @@ public readonly userNameTemplate: string;
 
 Username template.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml.html#user_name_template AppSaml#user_name_template}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml#user_name_template AppSaml#user_name_template}
 
 ---
 
@@ -61195,7 +61195,7 @@ public readonly userNameTemplatePushStatus: string;
 
 Push username on update.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml.html#user_name_template_push_status AppSaml#user_name_template_push_status}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml#user_name_template_push_status AppSaml#user_name_template_push_status}
 
 ---
 
@@ -61209,7 +61209,7 @@ public readonly userNameTemplateSuffix: string;
 
 Username template suffix.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml.html#user_name_template_suffix AppSaml#user_name_template_suffix}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml#user_name_template_suffix AppSaml#user_name_template_suffix}
 
 ---
 
@@ -61223,7 +61223,7 @@ public readonly userNameTemplateType: string;
 
 Username template type.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml.html#user_name_template_type AppSaml#user_name_template_type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml#user_name_template_type AppSaml#user_name_template_type}
 
 ---
 
@@ -61237,7 +61237,7 @@ public readonly users: AppSamlUsers[];
 
 users block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml.html#users AppSaml#users}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml#users AppSaml#users}
 
 ---
 
@@ -61271,7 +61271,7 @@ public readonly id: string;
 
 User ID.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml.html#id AppSaml#id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml#id AppSaml#id}
 
 ---
 
@@ -61285,7 +61285,7 @@ public readonly password: string;
 
 Password for user application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml.html#password AppSaml#password}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml#password AppSaml#password}
 
 ---
 
@@ -61299,7 +61299,7 @@ public readonly username: string;
 
 Username for user.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml.html#username AppSaml#username}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml#username AppSaml#username}
 
 ---
 
@@ -61407,7 +61407,7 @@ public readonly label: string;
 
 Pretty name of app.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_secure_password_store.html#label AppSecurePasswordStore#label}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_secure_password_store#label AppSecurePasswordStore#label}
 
 ---
 
@@ -61421,7 +61421,7 @@ public readonly passwordField: string;
 
 Login password field.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_secure_password_store.html#password_field AppSecurePasswordStore#password_field}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_secure_password_store#password_field AppSecurePasswordStore#password_field}
 
 ---
 
@@ -61435,7 +61435,7 @@ public readonly url: string;
 
 Login URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_secure_password_store.html#url AppSecurePasswordStore#url}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_secure_password_store#url AppSecurePasswordStore#url}
 
 ---
 
@@ -61449,7 +61449,7 @@ public readonly usernameField: string;
 
 Login username field.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_secure_password_store.html#username_field AppSecurePasswordStore#username_field}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_secure_password_store#username_field AppSecurePasswordStore#username_field}
 
 ---
 
@@ -61463,7 +61463,7 @@ public readonly accessibilityErrorRedirectUrl: string;
 
 Custom error page URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_secure_password_store.html#accessibility_error_redirect_url AppSecurePasswordStore#accessibility_error_redirect_url}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_secure_password_store#accessibility_error_redirect_url AppSecurePasswordStore#accessibility_error_redirect_url}
 
 ---
 
@@ -61477,7 +61477,7 @@ public readonly accessibilityLoginRedirectUrl: string;
 
 Custom login page URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_secure_password_store.html#accessibility_login_redirect_url AppSecurePasswordStore#accessibility_login_redirect_url}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_secure_password_store#accessibility_login_redirect_url AppSecurePasswordStore#accessibility_login_redirect_url}
 
 ---
 
@@ -61491,7 +61491,7 @@ public readonly accessibilitySelfService: boolean | IResolvable;
 
 Enable self service.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_secure_password_store.html#accessibility_self_service AppSecurePasswordStore#accessibility_self_service}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_secure_password_store#accessibility_self_service AppSecurePasswordStore#accessibility_self_service}
 
 ---
 
@@ -61505,7 +61505,7 @@ public readonly adminNote: string;
 
 Application notes for admins.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_secure_password_store.html#admin_note AppSecurePasswordStore#admin_note}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_secure_password_store#admin_note AppSecurePasswordStore#admin_note}
 
 ---
 
@@ -61519,7 +61519,7 @@ public readonly appLinksJson: string;
 
 Displays specific appLinks for the app.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_secure_password_store.html#app_links_json AppSecurePasswordStore#app_links_json}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_secure_password_store#app_links_json AppSecurePasswordStore#app_links_json}
 
 ---
 
@@ -61533,7 +61533,7 @@ public readonly autoSubmitToolbar: boolean | IResolvable;
 
 Display auto submit toolbar.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_secure_password_store.html#auto_submit_toolbar AppSecurePasswordStore#auto_submit_toolbar}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_secure_password_store#auto_submit_toolbar AppSecurePasswordStore#auto_submit_toolbar}
 
 ---
 
@@ -61547,7 +61547,7 @@ public readonly credentialsScheme: string;
 
 Application credentials scheme.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_secure_password_store.html#credentials_scheme AppSecurePasswordStore#credentials_scheme}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_secure_password_store#credentials_scheme AppSecurePasswordStore#credentials_scheme}
 
 ---
 
@@ -61561,7 +61561,7 @@ public readonly enduserNote: string;
 
 Application notes for end users.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_secure_password_store.html#enduser_note AppSecurePasswordStore#enduser_note}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_secure_password_store#enduser_note AppSecurePasswordStore#enduser_note}
 
 ---
 
@@ -61575,7 +61575,7 @@ public readonly groups: string[];
 
 Groups associated with the application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_secure_password_store.html#groups AppSecurePasswordStore#groups}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_secure_password_store#groups AppSecurePasswordStore#groups}
 
 ---
 
@@ -61589,7 +61589,7 @@ public readonly hideIos: boolean | IResolvable;
 
 Do not display application icon on mobile app.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_secure_password_store.html#hide_ios AppSecurePasswordStore#hide_ios}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_secure_password_store#hide_ios AppSecurePasswordStore#hide_ios}
 
 ---
 
@@ -61603,7 +61603,7 @@ public readonly hideWeb: boolean | IResolvable;
 
 Do not display application icon to users.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_secure_password_store.html#hide_web AppSecurePasswordStore#hide_web}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_secure_password_store#hide_web AppSecurePasswordStore#hide_web}
 
 ---
 
@@ -61617,7 +61617,7 @@ public readonly logo: string;
 
 Local path to logo of the application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_secure_password_store.html#logo AppSecurePasswordStore#logo}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_secure_password_store#logo AppSecurePasswordStore#logo}
 
 ---
 
@@ -61631,7 +61631,7 @@ public readonly optionalField1: string;
 
 Name of optional param in the login form.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_secure_password_store.html#optional_field1 AppSecurePasswordStore#optional_field1}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_secure_password_store#optional_field1 AppSecurePasswordStore#optional_field1}
 
 ---
 
@@ -61645,7 +61645,7 @@ public readonly optionalField1Value: string;
 
 Name of optional value in login form.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_secure_password_store.html#optional_field1_value AppSecurePasswordStore#optional_field1_value}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_secure_password_store#optional_field1_value AppSecurePasswordStore#optional_field1_value}
 
 ---
 
@@ -61659,7 +61659,7 @@ public readonly optionalField2: string;
 
 Name of optional param in the login form.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_secure_password_store.html#optional_field2 AppSecurePasswordStore#optional_field2}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_secure_password_store#optional_field2 AppSecurePasswordStore#optional_field2}
 
 ---
 
@@ -61673,7 +61673,7 @@ public readonly optionalField2Value: string;
 
 Name of optional value in login form.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_secure_password_store.html#optional_field2_value AppSecurePasswordStore#optional_field2_value}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_secure_password_store#optional_field2_value AppSecurePasswordStore#optional_field2_value}
 
 ---
 
@@ -61687,7 +61687,7 @@ public readonly optionalField3: string;
 
 Name of optional param in the login form.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_secure_password_store.html#optional_field3 AppSecurePasswordStore#optional_field3}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_secure_password_store#optional_field3 AppSecurePasswordStore#optional_field3}
 
 ---
 
@@ -61701,7 +61701,7 @@ public readonly optionalField3Value: string;
 
 Name of optional value in login form.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_secure_password_store.html#optional_field3_value AppSecurePasswordStore#optional_field3_value}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_secure_password_store#optional_field3_value AppSecurePasswordStore#optional_field3_value}
 
 ---
 
@@ -61715,7 +61715,7 @@ public readonly revealPassword: boolean | IResolvable;
 
 Allow user to reveal password.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_secure_password_store.html#reveal_password AppSecurePasswordStore#reveal_password}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_secure_password_store#reveal_password AppSecurePasswordStore#reveal_password}
 
 ---
 
@@ -61729,7 +61729,7 @@ public readonly sharedPassword: string;
 
 Shared password, required for certain schemes.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_secure_password_store.html#shared_password AppSecurePasswordStore#shared_password}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_secure_password_store#shared_password AppSecurePasswordStore#shared_password}
 
 ---
 
@@ -61743,7 +61743,7 @@ public readonly sharedUsername: string;
 
 Shared username, required for certain schemes.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_secure_password_store.html#shared_username AppSecurePasswordStore#shared_username}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_secure_password_store#shared_username AppSecurePasswordStore#shared_username}
 
 ---
 
@@ -61757,7 +61757,7 @@ public readonly skipGroups: boolean | IResolvable;
 
 Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_secure_password_store.html#skip_groups AppSecurePasswordStore#skip_groups}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_secure_password_store#skip_groups AppSecurePasswordStore#skip_groups}
 
 ---
 
@@ -61771,7 +61771,7 @@ public readonly skipUsers: boolean | IResolvable;
 
 Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_secure_password_store.html#skip_users AppSecurePasswordStore#skip_users}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_secure_password_store#skip_users AppSecurePasswordStore#skip_users}
 
 ---
 
@@ -61785,7 +61785,7 @@ public readonly status: string;
 
 Status of application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_secure_password_store.html#status AppSecurePasswordStore#status}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_secure_password_store#status AppSecurePasswordStore#status}
 
 ---
 
@@ -61799,7 +61799,7 @@ public readonly userNameTemplate: string;
 
 Username template.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_secure_password_store.html#user_name_template AppSecurePasswordStore#user_name_template}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_secure_password_store#user_name_template AppSecurePasswordStore#user_name_template}
 
 ---
 
@@ -61813,7 +61813,7 @@ public readonly userNameTemplatePushStatus: string;
 
 Push username on update.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_secure_password_store.html#user_name_template_push_status AppSecurePasswordStore#user_name_template_push_status}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_secure_password_store#user_name_template_push_status AppSecurePasswordStore#user_name_template_push_status}
 
 ---
 
@@ -61827,7 +61827,7 @@ public readonly userNameTemplateSuffix: string;
 
 Username template suffix.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_secure_password_store.html#user_name_template_suffix AppSecurePasswordStore#user_name_template_suffix}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_secure_password_store#user_name_template_suffix AppSecurePasswordStore#user_name_template_suffix}
 
 ---
 
@@ -61841,7 +61841,7 @@ public readonly userNameTemplateType: string;
 
 Username template type.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_secure_password_store.html#user_name_template_type AppSecurePasswordStore#user_name_template_type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_secure_password_store#user_name_template_type AppSecurePasswordStore#user_name_template_type}
 
 ---
 
@@ -61855,7 +61855,7 @@ public readonly users: AppSecurePasswordStoreUsers[];
 
 users block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_secure_password_store.html#users AppSecurePasswordStore#users}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_secure_password_store#users AppSecurePasswordStore#users}
 
 ---
 
@@ -61889,7 +61889,7 @@ public readonly id: string;
 
 User ID.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_secure_password_store.html#id AppSecurePasswordStore#id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_secure_password_store#id AppSecurePasswordStore#id}
 
 ---
 
@@ -61903,7 +61903,7 @@ public readonly password: string;
 
 Password for user application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_secure_password_store.html#password AppSecurePasswordStore#password}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_secure_password_store#password AppSecurePasswordStore#password}
 
 ---
 
@@ -61917,7 +61917,7 @@ public readonly username: string;
 
 Username for user.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_secure_password_store.html#username AppSecurePasswordStore#username}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_secure_password_store#username AppSecurePasswordStore#username}
 
 ---
 
@@ -62022,7 +62022,7 @@ public readonly label: string;
 
 Pretty name of app.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_shared_credentials.html#label AppSharedCredentials#label}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_shared_credentials#label AppSharedCredentials#label}
 
 ---
 
@@ -62036,7 +62036,7 @@ public readonly accessibilityErrorRedirectUrl: string;
 
 Custom error page URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_shared_credentials.html#accessibility_error_redirect_url AppSharedCredentials#accessibility_error_redirect_url}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_shared_credentials#accessibility_error_redirect_url AppSharedCredentials#accessibility_error_redirect_url}
 
 ---
 
@@ -62050,7 +62050,7 @@ public readonly accessibilityLoginRedirectUrl: string;
 
 Custom login page URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_shared_credentials.html#accessibility_login_redirect_url AppSharedCredentials#accessibility_login_redirect_url}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_shared_credentials#accessibility_login_redirect_url AppSharedCredentials#accessibility_login_redirect_url}
 
 ---
 
@@ -62064,7 +62064,7 @@ public readonly accessibilitySelfService: boolean | IResolvable;
 
 Enable self service.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_shared_credentials.html#accessibility_self_service AppSharedCredentials#accessibility_self_service}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_shared_credentials#accessibility_self_service AppSharedCredentials#accessibility_self_service}
 
 ---
 
@@ -62078,7 +62078,7 @@ public readonly adminNote: string;
 
 Application notes for admins.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_shared_credentials.html#admin_note AppSharedCredentials#admin_note}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_shared_credentials#admin_note AppSharedCredentials#admin_note}
 
 ---
 
@@ -62092,7 +62092,7 @@ public readonly appLinksJson: string;
 
 Displays specific appLinks for the app.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_shared_credentials.html#app_links_json AppSharedCredentials#app_links_json}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_shared_credentials#app_links_json AppSharedCredentials#app_links_json}
 
 ---
 
@@ -62106,7 +62106,7 @@ public readonly autoSubmitToolbar: boolean | IResolvable;
 
 Display auto submit toolbar.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_shared_credentials.html#auto_submit_toolbar AppSharedCredentials#auto_submit_toolbar}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_shared_credentials#auto_submit_toolbar AppSharedCredentials#auto_submit_toolbar}
 
 ---
 
@@ -62120,7 +62120,7 @@ public readonly buttonField: string;
 
 Login button field.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_shared_credentials.html#button_field AppSharedCredentials#button_field}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_shared_credentials#button_field AppSharedCredentials#button_field}
 
 ---
 
@@ -62134,7 +62134,7 @@ public readonly checkbox: string;
 
 CSS selector for the checkbox.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_shared_credentials.html#checkbox AppSharedCredentials#checkbox}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_shared_credentials#checkbox AppSharedCredentials#checkbox}
 
 ---
 
@@ -62148,7 +62148,7 @@ public readonly enduserNote: string;
 
 Application notes for end users.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_shared_credentials.html#enduser_note AppSharedCredentials#enduser_note}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_shared_credentials#enduser_note AppSharedCredentials#enduser_note}
 
 ---
 
@@ -62162,7 +62162,7 @@ public readonly groups: string[];
 
 Groups associated with the application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_shared_credentials.html#groups AppSharedCredentials#groups}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_shared_credentials#groups AppSharedCredentials#groups}
 
 ---
 
@@ -62176,7 +62176,7 @@ public readonly hideIos: boolean | IResolvable;
 
 Do not display application icon on mobile app.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_shared_credentials.html#hide_ios AppSharedCredentials#hide_ios}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_shared_credentials#hide_ios AppSharedCredentials#hide_ios}
 
 ---
 
@@ -62190,7 +62190,7 @@ public readonly hideWeb: boolean | IResolvable;
 
 Do not display application icon to users.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_shared_credentials.html#hide_web AppSharedCredentials#hide_web}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_shared_credentials#hide_web AppSharedCredentials#hide_web}
 
 ---
 
@@ -62204,7 +62204,7 @@ public readonly logo: string;
 
 Local path to logo of the application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_shared_credentials.html#logo AppSharedCredentials#logo}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_shared_credentials#logo AppSharedCredentials#logo}
 
 ---
 
@@ -62218,7 +62218,7 @@ public readonly passwordField: string;
 
 Login password field.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_shared_credentials.html#password_field AppSharedCredentials#password_field}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_shared_credentials#password_field AppSharedCredentials#password_field}
 
 ---
 
@@ -62232,7 +62232,7 @@ public readonly preconfiguredApp: string;
 
 Preconfigured app name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_shared_credentials.html#preconfigured_app AppSharedCredentials#preconfigured_app}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_shared_credentials#preconfigured_app AppSharedCredentials#preconfigured_app}
 
 ---
 
@@ -62246,7 +62246,7 @@ public readonly redirectUrl: string;
 
 Secondary URL of the sign-in page for this app.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_shared_credentials.html#redirect_url AppSharedCredentials#redirect_url}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_shared_credentials#redirect_url AppSharedCredentials#redirect_url}
 
 ---
 
@@ -62260,7 +62260,7 @@ public readonly sharedPassword: string;
 
 Shared password, required for certain schemes.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_shared_credentials.html#shared_password AppSharedCredentials#shared_password}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_shared_credentials#shared_password AppSharedCredentials#shared_password}
 
 ---
 
@@ -62274,7 +62274,7 @@ public readonly sharedUsername: string;
 
 Shared username, required for certain schemes.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_shared_credentials.html#shared_username AppSharedCredentials#shared_username}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_shared_credentials#shared_username AppSharedCredentials#shared_username}
 
 ---
 
@@ -62288,7 +62288,7 @@ public readonly skipGroups: boolean | IResolvable;
 
 Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_shared_credentials.html#skip_groups AppSharedCredentials#skip_groups}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_shared_credentials#skip_groups AppSharedCredentials#skip_groups}
 
 ---
 
@@ -62302,7 +62302,7 @@ public readonly skipUsers: boolean | IResolvable;
 
 Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_shared_credentials.html#skip_users AppSharedCredentials#skip_users}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_shared_credentials#skip_users AppSharedCredentials#skip_users}
 
 ---
 
@@ -62316,7 +62316,7 @@ public readonly status: string;
 
 Status of application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_shared_credentials.html#status AppSharedCredentials#status}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_shared_credentials#status AppSharedCredentials#status}
 
 ---
 
@@ -62330,7 +62330,7 @@ public readonly url: string;
 
 Login URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_shared_credentials.html#url AppSharedCredentials#url}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_shared_credentials#url AppSharedCredentials#url}
 
 ---
 
@@ -62344,7 +62344,7 @@ public readonly urlRegex: string;
 
 A regex that further restricts URL to the specified regex.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_shared_credentials.html#url_regex AppSharedCredentials#url_regex}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_shared_credentials#url_regex AppSharedCredentials#url_regex}
 
 ---
 
@@ -62358,7 +62358,7 @@ public readonly usernameField: string;
 
 Login username field.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_shared_credentials.html#username_field AppSharedCredentials#username_field}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_shared_credentials#username_field AppSharedCredentials#username_field}
 
 ---
 
@@ -62372,7 +62372,7 @@ public readonly userNameTemplate: string;
 
 Username template.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_shared_credentials.html#user_name_template AppSharedCredentials#user_name_template}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_shared_credentials#user_name_template AppSharedCredentials#user_name_template}
 
 ---
 
@@ -62386,7 +62386,7 @@ public readonly userNameTemplatePushStatus: string;
 
 Push username on update.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_shared_credentials.html#user_name_template_push_status AppSharedCredentials#user_name_template_push_status}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_shared_credentials#user_name_template_push_status AppSharedCredentials#user_name_template_push_status}
 
 ---
 
@@ -62400,7 +62400,7 @@ public readonly userNameTemplateSuffix: string;
 
 Username template suffix.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_shared_credentials.html#user_name_template_suffix AppSharedCredentials#user_name_template_suffix}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_shared_credentials#user_name_template_suffix AppSharedCredentials#user_name_template_suffix}
 
 ---
 
@@ -62414,7 +62414,7 @@ public readonly userNameTemplateType: string;
 
 Username template type.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_shared_credentials.html#user_name_template_type AppSharedCredentials#user_name_template_type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_shared_credentials#user_name_template_type AppSharedCredentials#user_name_template_type}
 
 ---
 
@@ -62428,7 +62428,7 @@ public readonly users: AppSharedCredentialsUsers[];
 
 users block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_shared_credentials.html#users AppSharedCredentials#users}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_shared_credentials#users AppSharedCredentials#users}
 
 ---
 
@@ -62462,7 +62462,7 @@ public readonly id: string;
 
 User ID.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_shared_credentials.html#id AppSharedCredentials#id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_shared_credentials#id AppSharedCredentials#id}
 
 ---
 
@@ -62476,7 +62476,7 @@ public readonly password: string;
 
 Password for user application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_shared_credentials.html#password AppSharedCredentials#password}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_shared_credentials#password AppSharedCredentials#password}
 
 ---
 
@@ -62490,7 +62490,7 @@ public readonly username: string;
 
 Username for user.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_shared_credentials.html#username AppSharedCredentials#username}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_shared_credentials#username AppSharedCredentials#username}
 
 ---
 
@@ -62526,7 +62526,7 @@ const appSignonPolicyRuleConfig: AppSignonPolicyRuleConfig = { ... }
 | [`networkExcludes`](#cdktfprovideroktaappsignonpolicyruleconfigpropertynetworkexcludes) | `string`[] | The zones to exclude. |
 | [`networkIncludes`](#cdktfprovideroktaappsignonpolicyruleconfigpropertynetworkincludes) | `string`[] | The zones to include. |
 | [`platformInclude`](#cdktfprovideroktaappsignonpolicyruleconfigpropertyplatforminclude) | [`@cdktf/provider-okta.AppSignonPolicyRulePlatformInclude`](#@cdktf/provider-okta.AppSignonPolicyRulePlatformInclude)[] | platform_include block. |
-| [`priority`](#cdktfprovideroktaappsignonpolicyruleconfigpropertypriority) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_signon_policy_rule.html#priority AppSignonPolicyRule#priority}. |
+| [`priority`](#cdktfprovideroktaappsignonpolicyruleconfigpropertypriority) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_signon_policy_rule#priority AppSignonPolicyRule#priority}. |
 | [`reAuthenticationFrequency`](#cdktfprovideroktaappsignonpolicyruleconfigpropertyreauthenticationfrequency) | `string` | The duration after which the end user must re-authenticate, regardless of user activity. |
 | [`status`](#cdktfprovideroktaappsignonpolicyruleconfigpropertystatus) | `string` | Status of the rule. |
 | [`type`](#cdktfprovideroktaappsignonpolicyruleconfigpropertytype) | `string` | The Verification Method type. |
@@ -62587,7 +62587,7 @@ public readonly name: string;
 
 Policy Rule Name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_signon_policy_rule.html#name AppSignonPolicyRule#name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_signon_policy_rule#name AppSignonPolicyRule#name}
 
 ---
 
@@ -62601,7 +62601,7 @@ public readonly policyId: string;
 
 ID of the policy.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_signon_policy_rule.html#policy_id AppSignonPolicyRule#policy_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_signon_policy_rule#policy_id AppSignonPolicyRule#policy_id}
 
 ---
 
@@ -62615,7 +62615,7 @@ public readonly access: string;
 
 Allow or deny access based on the rule conditions: ALLOW or DENY.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_signon_policy_rule.html#access AppSignonPolicyRule#access}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_signon_policy_rule#access AppSignonPolicyRule#access}
 
 ---
 
@@ -62629,7 +62629,7 @@ public readonly constraints: string[];
 
 An array that contains nested Authenticator Constraint objects that are organized by the Authenticator class.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_signon_policy_rule.html#constraints AppSignonPolicyRule#constraints}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_signon_policy_rule#constraints AppSignonPolicyRule#constraints}
 
 ---
 
@@ -62643,7 +62643,7 @@ public readonly customExpression: string;
 
 This is an optional advanced setting.
 
-If the expression is formatted incorrectly or conflicts with conditions set above, the rule may not match any users.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_signon_policy_rule.html#custom_expression AppSignonPolicyRule#custom_expression}
+If the expression is formatted incorrectly or conflicts with conditions set above, the rule may not match any users.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_signon_policy_rule#custom_expression AppSignonPolicyRule#custom_expression}
 
 ---
 
@@ -62657,7 +62657,7 @@ public readonly deviceIsManaged: boolean | IResolvable;
 
 If the device is managed.
 
-A device is managed if it's managed by a device management system. When managed is passed, registered must also be included and must be set to true.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_signon_policy_rule.html#device_is_managed AppSignonPolicyRule#device_is_managed}
+A device is managed if it's managed by a device management system. When managed is passed, registered must also be included and must be set to true.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_signon_policy_rule#device_is_managed AppSignonPolicyRule#device_is_managed}
 
 ---
 
@@ -62671,7 +62671,7 @@ public readonly deviceIsRegistered: boolean | IResolvable;
 
 If the device is registered.
 
-A device is registered if the User enrolls with Okta Verify that is installed on the device.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_signon_policy_rule.html#device_is_registered AppSignonPolicyRule#device_is_registered}
+A device is registered if the User enrolls with Okta Verify that is installed on the device.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_signon_policy_rule#device_is_registered AppSignonPolicyRule#device_is_registered}
 
 ---
 
@@ -62685,7 +62685,7 @@ public readonly factorMode: string;
 
 The number of factors required to satisfy this assurance level.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_signon_policy_rule.html#factor_mode AppSignonPolicyRule#factor_mode}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_signon_policy_rule#factor_mode AppSignonPolicyRule#factor_mode}
 
 ---
 
@@ -62699,7 +62699,7 @@ public readonly groupsExcluded: string[];
 
 List of group IDs to exclude.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_signon_policy_rule.html#groups_excluded AppSignonPolicyRule#groups_excluded}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_signon_policy_rule#groups_excluded AppSignonPolicyRule#groups_excluded}
 
 ---
 
@@ -62713,7 +62713,7 @@ public readonly groupsIncluded: string[];
 
 List of group IDs to include.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_signon_policy_rule.html#groups_included AppSignonPolicyRule#groups_included}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_signon_policy_rule#groups_included AppSignonPolicyRule#groups_included}
 
 ---
 
@@ -62727,7 +62727,7 @@ public readonly networkConnection: string;
 
 Network selection mode: ANYWHERE, ZONE, ON_NETWORK, or OFF_NETWORK.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_signon_policy_rule.html#network_connection AppSignonPolicyRule#network_connection}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_signon_policy_rule#network_connection AppSignonPolicyRule#network_connection}
 
 ---
 
@@ -62741,7 +62741,7 @@ public readonly networkExcludes: string[];
 
 The zones to exclude.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_signon_policy_rule.html#network_excludes AppSignonPolicyRule#network_excludes}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_signon_policy_rule#network_excludes AppSignonPolicyRule#network_excludes}
 
 ---
 
@@ -62755,7 +62755,7 @@ public readonly networkIncludes: string[];
 
 The zones to include.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_signon_policy_rule.html#network_includes AppSignonPolicyRule#network_includes}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_signon_policy_rule#network_includes AppSignonPolicyRule#network_includes}
 
 ---
 
@@ -62769,7 +62769,7 @@ public readonly platformInclude: AppSignonPolicyRulePlatformInclude[];
 
 platform_include block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_signon_policy_rule.html#platform_include AppSignonPolicyRule#platform_include}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_signon_policy_rule#platform_include AppSignonPolicyRule#platform_include}
 
 ---
 
@@ -62781,7 +62781,7 @@ public readonly priority: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_signon_policy_rule.html#priority AppSignonPolicyRule#priority}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_signon_policy_rule#priority AppSignonPolicyRule#priority}.
 
 ---
 
@@ -62795,7 +62795,7 @@ public readonly reAuthenticationFrequency: string;
 
 The duration after which the end user must re-authenticate, regardless of user activity.
 
-Use the ISO 8601 Period format for recurring time intervals. PT0S - Every sign-in attempt, PT43800H - Once per session  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_signon_policy_rule.html#re_authentication_frequency AppSignonPolicyRule#re_authentication_frequency}
+Use the ISO 8601 Period format for recurring time intervals. PT0S - Every sign-in attempt, PT43800H - Once per session  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_signon_policy_rule#re_authentication_frequency AppSignonPolicyRule#re_authentication_frequency}
 
 ---
 
@@ -62809,7 +62809,7 @@ public readonly status: string;
 
 Status of the rule.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_signon_policy_rule.html#status AppSignonPolicyRule#status}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_signon_policy_rule#status AppSignonPolicyRule#status}
 
 ---
 
@@ -62823,7 +62823,7 @@ public readonly type: string;
 
 The Verification Method type.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_signon_policy_rule.html#type AppSignonPolicyRule#type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_signon_policy_rule#type AppSignonPolicyRule#type}
 
 ---
 
@@ -62837,7 +62837,7 @@ public readonly usersExcluded: string[];
 
 Set of User IDs to exclude.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_signon_policy_rule.html#users_excluded AppSignonPolicyRule#users_excluded}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_signon_policy_rule#users_excluded AppSignonPolicyRule#users_excluded}
 
 ---
 
@@ -62851,7 +62851,7 @@ public readonly usersIncluded: string[];
 
 Set of User IDs to include.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_signon_policy_rule.html#users_included AppSignonPolicyRule#users_included}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_signon_policy_rule#users_included AppSignonPolicyRule#users_included}
 
 ---
 
@@ -62865,7 +62865,7 @@ public readonly userTypesExcluded: string[];
 
 Set of User Type IDs to exclude.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_signon_policy_rule.html#user_types_excluded AppSignonPolicyRule#user_types_excluded}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_signon_policy_rule#user_types_excluded AppSignonPolicyRule#user_types_excluded}
 
 ---
 
@@ -62879,7 +62879,7 @@ public readonly userTypesIncluded: string[];
 
 Set of User Type IDs to include.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_signon_policy_rule.html#user_types_included AppSignonPolicyRule#user_types_included}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_signon_policy_rule#user_types_included AppSignonPolicyRule#user_types_included}
 
 ---
 
@@ -62898,8 +62898,8 @@ const appSignonPolicyRulePlatformInclude: AppSignonPolicyRulePlatformInclude = {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | [`osExpression`](#cdktfprovideroktaappsignonpolicyruleplatformincludepropertyosexpression) | `string` | Only available with OTHER OS type. |
-| [`osType`](#cdktfprovideroktaappsignonpolicyruleplatformincludepropertyostype) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_signon_policy_rule.html#os_type AppSignonPolicyRule#os_type}. |
-| [`type`](#cdktfprovideroktaappsignonpolicyruleplatformincludepropertytype) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_signon_policy_rule.html#type AppSignonPolicyRule#type}. |
+| [`osType`](#cdktfprovideroktaappsignonpolicyruleplatformincludepropertyostype) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_signon_policy_rule#os_type AppSignonPolicyRule#os_type}. |
+| [`type`](#cdktfprovideroktaappsignonpolicyruleplatformincludepropertytype) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_signon_policy_rule#type AppSignonPolicyRule#type}. |
 
 ---
 
@@ -62913,7 +62913,7 @@ public readonly osExpression: string;
 
 Only available with OTHER OS type.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_signon_policy_rule.html#os_expression AppSignonPolicyRule#os_expression}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_signon_policy_rule#os_expression AppSignonPolicyRule#os_expression}
 
 ---
 
@@ -62925,7 +62925,7 @@ public readonly osType: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_signon_policy_rule.html#os_type AppSignonPolicyRule#os_type}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_signon_policy_rule#os_type AppSignonPolicyRule#os_type}.
 
 ---
 
@@ -62937,7 +62937,7 @@ public readonly type: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_signon_policy_rule.html#type AppSignonPolicyRule#type}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_signon_policy_rule#type AppSignonPolicyRule#type}.
 
 ---
 
@@ -63040,7 +63040,7 @@ public readonly label: string;
 
 Pretty name of app.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_swa.html#label AppSwa#label}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_swa#label AppSwa#label}
 
 ---
 
@@ -63054,7 +63054,7 @@ public readonly accessibilityErrorRedirectUrl: string;
 
 Custom error page URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_swa.html#accessibility_error_redirect_url AppSwa#accessibility_error_redirect_url}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_swa#accessibility_error_redirect_url AppSwa#accessibility_error_redirect_url}
 
 ---
 
@@ -63068,7 +63068,7 @@ public readonly accessibilityLoginRedirectUrl: string;
 
 Custom login page URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_swa.html#accessibility_login_redirect_url AppSwa#accessibility_login_redirect_url}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_swa#accessibility_login_redirect_url AppSwa#accessibility_login_redirect_url}
 
 ---
 
@@ -63082,7 +63082,7 @@ public readonly accessibilitySelfService: boolean | IResolvable;
 
 Enable self service.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_swa.html#accessibility_self_service AppSwa#accessibility_self_service}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_swa#accessibility_self_service AppSwa#accessibility_self_service}
 
 ---
 
@@ -63096,7 +63096,7 @@ public readonly adminNote: string;
 
 Application notes for admins.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_swa.html#admin_note AppSwa#admin_note}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_swa#admin_note AppSwa#admin_note}
 
 ---
 
@@ -63110,7 +63110,7 @@ public readonly appLinksJson: string;
 
 Displays specific appLinks for the app.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_swa.html#app_links_json AppSwa#app_links_json}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_swa#app_links_json AppSwa#app_links_json}
 
 ---
 
@@ -63124,7 +63124,7 @@ public readonly autoSubmitToolbar: boolean | IResolvable;
 
 Display auto submit toolbar.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_swa.html#auto_submit_toolbar AppSwa#auto_submit_toolbar}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_swa#auto_submit_toolbar AppSwa#auto_submit_toolbar}
 
 ---
 
@@ -63138,7 +63138,7 @@ public readonly buttonField: string;
 
 Login button field.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_swa.html#button_field AppSwa#button_field}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_swa#button_field AppSwa#button_field}
 
 ---
 
@@ -63152,7 +63152,7 @@ public readonly checkbox: string;
 
 CSS selector for the checkbox.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_swa.html#checkbox AppSwa#checkbox}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_swa#checkbox AppSwa#checkbox}
 
 ---
 
@@ -63166,7 +63166,7 @@ public readonly enduserNote: string;
 
 Application notes for end users.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_swa.html#enduser_note AppSwa#enduser_note}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_swa#enduser_note AppSwa#enduser_note}
 
 ---
 
@@ -63180,7 +63180,7 @@ public readonly groups: string[];
 
 Groups associated with the application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_swa.html#groups AppSwa#groups}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_swa#groups AppSwa#groups}
 
 ---
 
@@ -63194,7 +63194,7 @@ public readonly hideIos: boolean | IResolvable;
 
 Do not display application icon on mobile app.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_swa.html#hide_ios AppSwa#hide_ios}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_swa#hide_ios AppSwa#hide_ios}
 
 ---
 
@@ -63208,7 +63208,7 @@ public readonly hideWeb: boolean | IResolvable;
 
 Do not display application icon to users.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_swa.html#hide_web AppSwa#hide_web}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_swa#hide_web AppSwa#hide_web}
 
 ---
 
@@ -63222,7 +63222,7 @@ public readonly logo: string;
 
 Local path to logo of the application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_swa.html#logo AppSwa#logo}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_swa#logo AppSwa#logo}
 
 ---
 
@@ -63236,7 +63236,7 @@ public readonly passwordField: string;
 
 Login password field.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_swa.html#password_field AppSwa#password_field}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_swa#password_field AppSwa#password_field}
 
 ---
 
@@ -63250,7 +63250,7 @@ public readonly preconfiguredApp: string;
 
 Preconfigured app name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_swa.html#preconfigured_app AppSwa#preconfigured_app}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_swa#preconfigured_app AppSwa#preconfigured_app}
 
 ---
 
@@ -63264,7 +63264,7 @@ public readonly redirectUrl: string;
 
 If going to the login page URL redirects to another page, then enter that URL here.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_swa.html#redirect_url AppSwa#redirect_url}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_swa#redirect_url AppSwa#redirect_url}
 
 ---
 
@@ -63278,7 +63278,7 @@ public readonly skipGroups: boolean | IResolvable;
 
 Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_swa.html#skip_groups AppSwa#skip_groups}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_swa#skip_groups AppSwa#skip_groups}
 
 ---
 
@@ -63292,7 +63292,7 @@ public readonly skipUsers: boolean | IResolvable;
 
 Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_swa.html#skip_users AppSwa#skip_users}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_swa#skip_users AppSwa#skip_users}
 
 ---
 
@@ -63306,7 +63306,7 @@ public readonly status: string;
 
 Status of application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_swa.html#status AppSwa#status}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_swa#status AppSwa#status}
 
 ---
 
@@ -63320,7 +63320,7 @@ public readonly url: string;
 
 Login URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_swa.html#url AppSwa#url}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_swa#url AppSwa#url}
 
 ---
 
@@ -63334,7 +63334,7 @@ public readonly urlRegex: string;
 
 A regex that further restricts URL to the specified regex.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_swa.html#url_regex AppSwa#url_regex}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_swa#url_regex AppSwa#url_regex}
 
 ---
 
@@ -63348,7 +63348,7 @@ public readonly usernameField: string;
 
 Login username field.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_swa.html#username_field AppSwa#username_field}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_swa#username_field AppSwa#username_field}
 
 ---
 
@@ -63362,7 +63362,7 @@ public readonly userNameTemplate: string;
 
 Username template.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_swa.html#user_name_template AppSwa#user_name_template}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_swa#user_name_template AppSwa#user_name_template}
 
 ---
 
@@ -63376,7 +63376,7 @@ public readonly userNameTemplatePushStatus: string;
 
 Push username on update.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_swa.html#user_name_template_push_status AppSwa#user_name_template_push_status}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_swa#user_name_template_push_status AppSwa#user_name_template_push_status}
 
 ---
 
@@ -63390,7 +63390,7 @@ public readonly userNameTemplateSuffix: string;
 
 Username template suffix.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_swa.html#user_name_template_suffix AppSwa#user_name_template_suffix}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_swa#user_name_template_suffix AppSwa#user_name_template_suffix}
 
 ---
 
@@ -63404,7 +63404,7 @@ public readonly userNameTemplateType: string;
 
 Username template type.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_swa.html#user_name_template_type AppSwa#user_name_template_type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_swa#user_name_template_type AppSwa#user_name_template_type}
 
 ---
 
@@ -63418,7 +63418,7 @@ public readonly users: AppSwaUsers[];
 
 users block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_swa.html#users AppSwa#users}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_swa#users AppSwa#users}
 
 ---
 
@@ -63452,7 +63452,7 @@ public readonly id: string;
 
 User ID.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_swa.html#id AppSwa#id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_swa#id AppSwa#id}
 
 ---
 
@@ -63466,7 +63466,7 @@ public readonly password: string;
 
 Password for user application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_swa.html#password AppSwa#password}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_swa#password AppSwa#password}
 
 ---
 
@@ -63480,7 +63480,7 @@ public readonly username: string;
 
 Username for user.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_swa.html#username AppSwa#username}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_swa#username AppSwa#username}
 
 ---
 
@@ -63586,7 +63586,7 @@ public readonly buttonSelector: string;
 
 Login button field CSS selector.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field.html#button_selector AppThreeField#button_selector}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#button_selector AppThreeField#button_selector}
 
 ---
 
@@ -63600,7 +63600,7 @@ public readonly extraFieldSelector: string;
 
 Extra field CSS selector.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field.html#extra_field_selector AppThreeField#extra_field_selector}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#extra_field_selector AppThreeField#extra_field_selector}
 
 ---
 
@@ -63614,7 +63614,7 @@ public readonly extraFieldValue: string;
 
 Value for extra form field.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field.html#extra_field_value AppThreeField#extra_field_value}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#extra_field_value AppThreeField#extra_field_value}
 
 ---
 
@@ -63628,7 +63628,7 @@ public readonly label: string;
 
 Pretty name of app.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field.html#label AppThreeField#label}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#label AppThreeField#label}
 
 ---
 
@@ -63642,7 +63642,7 @@ public readonly passwordSelector: string;
 
 Login password field CSS selector.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field.html#password_selector AppThreeField#password_selector}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#password_selector AppThreeField#password_selector}
 
 ---
 
@@ -63656,7 +63656,7 @@ public readonly url: string;
 
 Login URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field.html#url AppThreeField#url}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#url AppThreeField#url}
 
 ---
 
@@ -63670,7 +63670,7 @@ public readonly usernameSelector: string;
 
 Login username field CSS selector.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field.html#username_selector AppThreeField#username_selector}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#username_selector AppThreeField#username_selector}
 
 ---
 
@@ -63684,7 +63684,7 @@ public readonly accessibilityErrorRedirectUrl: string;
 
 Custom error page URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field.html#accessibility_error_redirect_url AppThreeField#accessibility_error_redirect_url}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#accessibility_error_redirect_url AppThreeField#accessibility_error_redirect_url}
 
 ---
 
@@ -63698,7 +63698,7 @@ public readonly accessibilityLoginRedirectUrl: string;
 
 Custom login page URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field.html#accessibility_login_redirect_url AppThreeField#accessibility_login_redirect_url}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#accessibility_login_redirect_url AppThreeField#accessibility_login_redirect_url}
 
 ---
 
@@ -63712,7 +63712,7 @@ public readonly accessibilitySelfService: boolean | IResolvable;
 
 Enable self service.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field.html#accessibility_self_service AppThreeField#accessibility_self_service}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#accessibility_self_service AppThreeField#accessibility_self_service}
 
 ---
 
@@ -63726,7 +63726,7 @@ public readonly adminNote: string;
 
 Application notes for admins.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field.html#admin_note AppThreeField#admin_note}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#admin_note AppThreeField#admin_note}
 
 ---
 
@@ -63740,7 +63740,7 @@ public readonly appLinksJson: string;
 
 Displays specific appLinks for the app.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field.html#app_links_json AppThreeField#app_links_json}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#app_links_json AppThreeField#app_links_json}
 
 ---
 
@@ -63754,7 +63754,7 @@ public readonly autoSubmitToolbar: boolean | IResolvable;
 
 Display auto submit toolbar.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field.html#auto_submit_toolbar AppThreeField#auto_submit_toolbar}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#auto_submit_toolbar AppThreeField#auto_submit_toolbar}
 
 ---
 
@@ -63768,7 +63768,7 @@ public readonly credentialsScheme: string;
 
 Application credentials scheme.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field.html#credentials_scheme AppThreeField#credentials_scheme}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#credentials_scheme AppThreeField#credentials_scheme}
 
 ---
 
@@ -63782,7 +63782,7 @@ public readonly enduserNote: string;
 
 Application notes for end users.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field.html#enduser_note AppThreeField#enduser_note}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#enduser_note AppThreeField#enduser_note}
 
 ---
 
@@ -63796,7 +63796,7 @@ public readonly groups: string[];
 
 Groups associated with the application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field.html#groups AppThreeField#groups}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#groups AppThreeField#groups}
 
 ---
 
@@ -63810,7 +63810,7 @@ public readonly hideIos: boolean | IResolvable;
 
 Do not display application icon on mobile app.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field.html#hide_ios AppThreeField#hide_ios}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#hide_ios AppThreeField#hide_ios}
 
 ---
 
@@ -63824,7 +63824,7 @@ public readonly hideWeb: boolean | IResolvable;
 
 Do not display application icon to users.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field.html#hide_web AppThreeField#hide_web}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#hide_web AppThreeField#hide_web}
 
 ---
 
@@ -63838,7 +63838,7 @@ public readonly logo: string;
 
 Local path to logo of the application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field.html#logo AppThreeField#logo}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#logo AppThreeField#logo}
 
 ---
 
@@ -63852,7 +63852,7 @@ public readonly revealPassword: boolean | IResolvable;
 
 Allow user to reveal password.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field.html#reveal_password AppThreeField#reveal_password}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#reveal_password AppThreeField#reveal_password}
 
 ---
 
@@ -63866,7 +63866,7 @@ public readonly sharedPassword: string;
 
 Shared password, required for certain schemes.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field.html#shared_password AppThreeField#shared_password}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#shared_password AppThreeField#shared_password}
 
 ---
 
@@ -63880,7 +63880,7 @@ public readonly sharedUsername: string;
 
 Shared username, required for certain schemes.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field.html#shared_username AppThreeField#shared_username}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#shared_username AppThreeField#shared_username}
 
 ---
 
@@ -63894,7 +63894,7 @@ public readonly skipGroups: boolean | IResolvable;
 
 Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field.html#skip_groups AppThreeField#skip_groups}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#skip_groups AppThreeField#skip_groups}
 
 ---
 
@@ -63908,7 +63908,7 @@ public readonly skipUsers: boolean | IResolvable;
 
 Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field.html#skip_users AppThreeField#skip_users}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#skip_users AppThreeField#skip_users}
 
 ---
 
@@ -63922,7 +63922,7 @@ public readonly status: string;
 
 Status of application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field.html#status AppThreeField#status}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#status AppThreeField#status}
 
 ---
 
@@ -63936,7 +63936,7 @@ public readonly urlRegex: string;
 
 A regex that further restricts URL to the specified regex.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field.html#url_regex AppThreeField#url_regex}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#url_regex AppThreeField#url_regex}
 
 ---
 
@@ -63950,7 +63950,7 @@ public readonly userNameTemplate: string;
 
 Username template.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field.html#user_name_template AppThreeField#user_name_template}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#user_name_template AppThreeField#user_name_template}
 
 ---
 
@@ -63964,7 +63964,7 @@ public readonly userNameTemplatePushStatus: string;
 
 Push username on update.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field.html#user_name_template_push_status AppThreeField#user_name_template_push_status}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#user_name_template_push_status AppThreeField#user_name_template_push_status}
 
 ---
 
@@ -63978,7 +63978,7 @@ public readonly userNameTemplateSuffix: string;
 
 Username template suffix.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field.html#user_name_template_suffix AppThreeField#user_name_template_suffix}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#user_name_template_suffix AppThreeField#user_name_template_suffix}
 
 ---
 
@@ -63992,7 +63992,7 @@ public readonly userNameTemplateType: string;
 
 Username template type.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field.html#user_name_template_type AppThreeField#user_name_template_type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#user_name_template_type AppThreeField#user_name_template_type}
 
 ---
 
@@ -64006,7 +64006,7 @@ public readonly users: AppThreeFieldUsers[];
 
 users block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field.html#users AppThreeField#users}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#users AppThreeField#users}
 
 ---
 
@@ -64040,7 +64040,7 @@ public readonly id: string;
 
 User ID.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field.html#id AppThreeField#id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#id AppThreeField#id}
 
 ---
 
@@ -64054,7 +64054,7 @@ public readonly password: string;
 
 Password for user application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field.html#password AppThreeField#password}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#password AppThreeField#password}
 
 ---
 
@@ -64068,7 +64068,7 @@ public readonly username: string;
 
 Username for user.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field.html#username AppThreeField#username}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#username AppThreeField#username}
 
 ---
 
@@ -64090,7 +64090,7 @@ const appUserBaseSchemaConfig: AppUserBaseSchemaConfig = { ... }
 | [`dependsOn`](#cdktfprovideroktaappuserbaseschemaconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktaappuserbaseschemaconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktaappuserbaseschemaconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`appId`](#cdktfprovideroktaappuserbaseschemaconfigpropertyappid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema.html#app_id AppUserBaseSchema#app_id}. |
+| [`appId`](#cdktfprovideroktaappuserbaseschemaconfigpropertyappid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema#app_id AppUserBaseSchema#app_id}. |
 | [`index`](#cdktfprovideroktaappuserbaseschemaconfigpropertyindex)<span title="Required">*</span> | `string` | Subschema unique string identifier. |
 | [`title`](#cdktfprovideroktaappuserbaseschemaconfigpropertytitle)<span title="Required">*</span> | `string` | Subschema title (display name). |
 | [`type`](#cdktfprovideroktaappuserbaseschemaconfigpropertytype)<span title="Required">*</span> | `string` | Subschema type: string, boolean, number, integer, array, or object. |
@@ -64150,7 +64150,7 @@ public readonly appId: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema.html#app_id AppUserBaseSchema#app_id}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema#app_id AppUserBaseSchema#app_id}.
 
 ---
 
@@ -64164,7 +64164,7 @@ public readonly index: string;
 
 Subschema unique string identifier.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema.html#index AppUserBaseSchema#index}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema#index AppUserBaseSchema#index}
 
 ---
 
@@ -64178,7 +64178,7 @@ public readonly title: string;
 
 Subschema title (display name).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema.html#title AppUserBaseSchema#title}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema#title AppUserBaseSchema#title}
 
 ---
 
@@ -64192,7 +64192,7 @@ public readonly type: string;
 
 Subschema type: string, boolean, number, integer, array, or object.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema.html#type AppUserBaseSchema#type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema#type AppUserBaseSchema#type}
 
 ---
 
@@ -64206,7 +64206,7 @@ public readonly master: string;
 
 SubSchema profile manager, if not set it will inherit its setting.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema.html#master AppUserBaseSchema#master}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema#master AppUserBaseSchema#master}
 
 ---
 
@@ -64220,7 +64220,7 @@ public readonly pattern: string;
 
 The validation pattern to use for the subschema. Must be in form of '.+', or '[<pattern>]+' if present.'.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema.html#pattern AppUserBaseSchema#pattern}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema#pattern AppUserBaseSchema#pattern}
 
 ---
 
@@ -64234,7 +64234,7 @@ public readonly permissions: string;
 
 SubSchema permissions: HIDE, READ_ONLY, or READ_WRITE.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema.html#permissions AppUserBaseSchema#permissions}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema#permissions AppUserBaseSchema#permissions}
 
 ---
 
@@ -64248,7 +64248,7 @@ public readonly required: boolean | IResolvable;
 
 Whether the subschema is required.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema.html#required AppUserBaseSchema#required}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema#required AppUserBaseSchema#required}
 
 ---
 
@@ -64262,7 +64262,7 @@ public readonly userType: string;
 
 Custom subschema user type.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema.html#user_type AppUserBaseSchema#user_type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema#user_type AppUserBaseSchema#user_type}
 
 ---
 
@@ -64284,7 +64284,7 @@ const appUserBaseSchemaPropertyConfig: AppUserBaseSchemaPropertyConfig = { ... }
 | [`dependsOn`](#cdktfprovideroktaappuserbaseschemapropertyconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktaappuserbaseschemapropertyconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktaappuserbaseschemapropertyconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`appId`](#cdktfprovideroktaappuserbaseschemapropertyconfigpropertyappid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema_property.html#app_id AppUserBaseSchemaProperty#app_id}. |
+| [`appId`](#cdktfprovideroktaappuserbaseschemapropertyconfigpropertyappid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema_property#app_id AppUserBaseSchemaProperty#app_id}. |
 | [`index`](#cdktfprovideroktaappuserbaseschemapropertyconfigpropertyindex)<span title="Required">*</span> | `string` | Subschema unique string identifier. |
 | [`title`](#cdktfprovideroktaappuserbaseschemapropertyconfigpropertytitle)<span title="Required">*</span> | `string` | Subschema title (display name). |
 | [`type`](#cdktfprovideroktaappuserbaseschemapropertyconfigpropertytype)<span title="Required">*</span> | `string` | Subschema type: string, boolean, number, integer, array, or object. |
@@ -64344,7 +64344,7 @@ public readonly appId: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema_property.html#app_id AppUserBaseSchemaProperty#app_id}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema_property#app_id AppUserBaseSchemaProperty#app_id}.
 
 ---
 
@@ -64358,7 +64358,7 @@ public readonly index: string;
 
 Subschema unique string identifier.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema_property.html#index AppUserBaseSchemaProperty#index}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema_property#index AppUserBaseSchemaProperty#index}
 
 ---
 
@@ -64372,7 +64372,7 @@ public readonly title: string;
 
 Subschema title (display name).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema_property.html#title AppUserBaseSchemaProperty#title}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema_property#title AppUserBaseSchemaProperty#title}
 
 ---
 
@@ -64386,7 +64386,7 @@ public readonly type: string;
 
 Subschema type: string, boolean, number, integer, array, or object.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema_property.html#type AppUserBaseSchemaProperty#type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema_property#type AppUserBaseSchemaProperty#type}
 
 ---
 
@@ -64400,7 +64400,7 @@ public readonly master: string;
 
 SubSchema profile manager, if not set it will inherit its setting.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema_property.html#master AppUserBaseSchemaProperty#master}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema_property#master AppUserBaseSchemaProperty#master}
 
 ---
 
@@ -64414,7 +64414,7 @@ public readonly pattern: string;
 
 The validation pattern to use for the subschema. Must be in form of '.+', or '[<pattern>]+' if present.'.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema_property.html#pattern AppUserBaseSchemaProperty#pattern}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema_property#pattern AppUserBaseSchemaProperty#pattern}
 
 ---
 
@@ -64428,7 +64428,7 @@ public readonly permissions: string;
 
 SubSchema permissions: HIDE, READ_ONLY, or READ_WRITE.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema_property.html#permissions AppUserBaseSchemaProperty#permissions}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema_property#permissions AppUserBaseSchemaProperty#permissions}
 
 ---
 
@@ -64442,7 +64442,7 @@ public readonly required: boolean | IResolvable;
 
 Whether the subschema is required.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema_property.html#required AppUserBaseSchemaProperty#required}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema_property#required AppUserBaseSchemaProperty#required}
 
 ---
 
@@ -64456,7 +64456,7 @@ public readonly userType: string;
 
 Custom subschema user type.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema_property.html#user_type AppUserBaseSchemaProperty#user_type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema_property#user_type AppUserBaseSchemaProperty#user_type}
 
 ---
 
@@ -64480,10 +64480,10 @@ const appUserConfig: AppUserConfig = { ... }
 | [`provider`](#cdktfprovideroktaappuserconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
 | [`appId`](#cdktfprovideroktaappuserconfigpropertyappid)<span title="Required">*</span> | `string` | App to associate user with. |
 | [`userId`](#cdktfprovideroktaappuserconfigpropertyuserid)<span title="Required">*</span> | `string` | User associated with the application. |
-| [`password`](#cdktfprovideroktaappuserconfigpropertypassword) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user.html#password AppUser#password}. |
-| [`profile`](#cdktfprovideroktaappuserconfigpropertyprofile) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user.html#profile AppUser#profile}. |
+| [`password`](#cdktfprovideroktaappuserconfigpropertypassword) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user#password AppUser#password}. |
+| [`profile`](#cdktfprovideroktaappuserconfigpropertyprofile) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user#profile AppUser#profile}. |
 | [`retainAssignment`](#cdktfprovideroktaappuserconfigpropertyretainassignment) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Retain the user assignment on destroy. |
-| [`username`](#cdktfprovideroktaappuserconfigpropertyusername) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user.html#username AppUser#username}. |
+| [`username`](#cdktfprovideroktaappuserconfigpropertyusername) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user#username AppUser#username}. |
 
 ---
 
@@ -64537,7 +64537,7 @@ public readonly appId: string;
 
 App to associate user with.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user.html#app_id AppUser#app_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user#app_id AppUser#app_id}
 
 ---
 
@@ -64551,7 +64551,7 @@ public readonly userId: string;
 
 User associated with the application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user.html#user_id AppUser#user_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user#user_id AppUser#user_id}
 
 ---
 
@@ -64563,7 +64563,7 @@ public readonly password: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user.html#password AppUser#password}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user#password AppUser#password}.
 
 ---
 
@@ -64575,7 +64575,7 @@ public readonly profile: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user.html#profile AppUser#profile}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user#profile AppUser#profile}.
 
 ---
 
@@ -64589,7 +64589,7 @@ public readonly retainAssignment: boolean | IResolvable;
 
 Retain the user assignment on destroy.
 
-If set to true, the resource will be removed from state but not from the Okta app.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user.html#retain_assignment AppUser#retain_assignment}
+If set to true, the resource will be removed from state but not from the Okta app.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user#retain_assignment AppUser#retain_assignment}
 
 ---
 
@@ -64601,7 +64601,7 @@ public readonly username: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user.html#username AppUser#username}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user#username AppUser#username}.
 
 ---
 
@@ -64634,7 +64634,7 @@ public readonly const: string;
 
 Enum value.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema.html#const AppUserSchema#const}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema#const AppUserSchema#const}
 
 ---
 
@@ -64648,7 +64648,7 @@ public readonly title: string;
 
 Enum title.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema.html#title AppUserSchema#title}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema#title AppUserSchema#title}
 
 ---
 
@@ -64670,7 +64670,7 @@ const appUserSchemaConfig: AppUserSchemaConfig = { ... }
 | [`dependsOn`](#cdktfprovideroktaappuserschemaconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktaappuserschemaconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktaappuserschemaconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`appId`](#cdktfprovideroktaappuserschemaconfigpropertyappid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema.html#app_id AppUserSchema#app_id}. |
+| [`appId`](#cdktfprovideroktaappuserschemaconfigpropertyappid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema#app_id AppUserSchema#app_id}. |
 | [`index`](#cdktfprovideroktaappuserschemaconfigpropertyindex)<span title="Required">*</span> | `string` | Subschema unique string identifier. |
 | [`title`](#cdktfprovideroktaappuserschemaconfigpropertytitle)<span title="Required">*</span> | `string` | Subschema title (display name). |
 | [`type`](#cdktfprovideroktaappuserschemaconfigpropertytype)<span title="Required">*</span> | `string` | Subschema type: string, boolean, number, integer, array, or object. |
@@ -64687,7 +64687,7 @@ const appUserSchemaConfig: AppUserSchemaConfig = { ... }
 | [`oneOf`](#cdktfprovideroktaappuserschemaconfigpropertyoneof) | [`@cdktf/provider-okta.AppUserSchemaOneOf`](#@cdktf/provider-okta.AppUserSchemaOneOf)[] | one_of block. |
 | [`permissions`](#cdktfprovideroktaappuserschemaconfigpropertypermissions) | `string` | SubSchema permissions: HIDE, READ_ONLY, or READ_WRITE. |
 | [`required`](#cdktfprovideroktaappuserschemaconfigpropertyrequired) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Whether the subschema is required. |
-| [`scope`](#cdktfprovideroktaappuserschemaconfigpropertyscope) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema.html#scope AppUserSchema#scope}. |
+| [`scope`](#cdktfprovideroktaappuserschemaconfigpropertyscope) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema#scope AppUserSchema#scope}. |
 | [`union`](#cdktfprovideroktaappuserschemaconfigpropertyunion) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Allows to assign attribute's group priority. |
 | [`unique`](#cdktfprovideroktaappuserschemaconfigpropertyunique) | `string` | Subschema unique restriction. |
 | [`userType`](#cdktfprovideroktaappuserschemaconfigpropertyusertype) | `string` | Custom subschema user type. |
@@ -64742,7 +64742,7 @@ public readonly appId: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema.html#app_id AppUserSchema#app_id}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema#app_id AppUserSchema#app_id}.
 
 ---
 
@@ -64756,7 +64756,7 @@ public readonly index: string;
 
 Subschema unique string identifier.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema.html#index AppUserSchema#index}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema#index AppUserSchema#index}
 
 ---
 
@@ -64770,7 +64770,7 @@ public readonly title: string;
 
 Subschema title (display name).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema.html#title AppUserSchema#title}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema#title AppUserSchema#title}
 
 ---
 
@@ -64784,7 +64784,7 @@ public readonly type: string;
 
 Subschema type: string, boolean, number, integer, array, or object.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema.html#type AppUserSchema#type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema#type AppUserSchema#type}
 
 ---
 
@@ -64798,7 +64798,7 @@ public readonly arrayEnum: string[];
 
 Custom Subschema enumerated value of a property of type array.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema.html#array_enum AppUserSchema#array_enum}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema#array_enum AppUserSchema#array_enum}
 
 ---
 
@@ -64812,7 +64812,7 @@ public readonly arrayOneOf: AppUserSchemaArrayOneOf[];
 
 array_one_of block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema.html#array_one_of AppUserSchema#array_one_of}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema#array_one_of AppUserSchema#array_one_of}
 
 ---
 
@@ -64826,7 +64826,7 @@ public readonly arrayType: string;
 
 Subschema array type: string, number, integer, reference. Type field must be an array.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema.html#array_type AppUserSchema#array_type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema#array_type AppUserSchema#array_type}
 
 ---
 
@@ -64840,7 +64840,7 @@ public readonly description: string;
 
 Custom Subschema description.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema.html#description AppUserSchema#description}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema#description AppUserSchema#description}
 
 ---
 
@@ -64854,7 +64854,7 @@ public readonly enum: string[];
 
 Custom Subschema enumerated value of the property. see: developer.okta.com/docs/api/resources/schemas#user-profile-schema-property-object.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema.html#enum AppUserSchema#enum}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema#enum AppUserSchema#enum}
 
 ---
 
@@ -64868,7 +64868,7 @@ public readonly externalName: string;
 
 Subschema external name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema.html#external_name AppUserSchema#external_name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema#external_name AppUserSchema#external_name}
 
 ---
 
@@ -64882,7 +64882,7 @@ public readonly externalNamespace: string;
 
 Subschema external namespace.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema.html#external_namespace AppUserSchema#external_namespace}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema#external_namespace AppUserSchema#external_namespace}
 
 ---
 
@@ -64896,7 +64896,7 @@ public readonly master: string;
 
 SubSchema profile manager, if not set it will inherit its setting.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema.html#master AppUserSchema#master}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema#master AppUserSchema#master}
 
 ---
 
@@ -64910,7 +64910,7 @@ public readonly maxLength: number;
 
 Subschema of type string maximum length.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema.html#max_length AppUserSchema#max_length}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema#max_length AppUserSchema#max_length}
 
 ---
 
@@ -64924,7 +64924,7 @@ public readonly minLength: number;
 
 Subschema of type string minimum length.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema.html#min_length AppUserSchema#min_length}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema#min_length AppUserSchema#min_length}
 
 ---
 
@@ -64938,7 +64938,7 @@ public readonly oneOf: AppUserSchemaOneOf[];
 
 one_of block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema.html#one_of AppUserSchema#one_of}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema#one_of AppUserSchema#one_of}
 
 ---
 
@@ -64952,7 +64952,7 @@ public readonly permissions: string;
 
 SubSchema permissions: HIDE, READ_ONLY, or READ_WRITE.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema.html#permissions AppUserSchema#permissions}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema#permissions AppUserSchema#permissions}
 
 ---
 
@@ -64966,7 +64966,7 @@ public readonly required: boolean | IResolvable;
 
 Whether the subschema is required.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema.html#required AppUserSchema#required}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema#required AppUserSchema#required}
 
 ---
 
@@ -64978,7 +64978,7 @@ public readonly scope: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema.html#scope AppUserSchema#scope}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema#scope AppUserSchema#scope}.
 
 ---
 
@@ -64992,7 +64992,7 @@ public readonly union: boolean | IResolvable;
 
 Allows to assign attribute's group priority.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema.html#union AppUserSchema#union}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema#union AppUserSchema#union}
 
 ---
 
@@ -65006,7 +65006,7 @@ public readonly unique: string;
 
 Subschema unique restriction.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema.html#unique AppUserSchema#unique}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema#unique AppUserSchema#unique}
 
 ---
 
@@ -65020,7 +65020,7 @@ public readonly userType: string;
 
 Custom subschema user type.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema.html#user_type AppUserSchema#user_type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema#user_type AppUserSchema#user_type}
 
 ---
 
@@ -65053,7 +65053,7 @@ public readonly const: string;
 
 Enum value.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema.html#const AppUserSchema#const}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema#const AppUserSchema#const}
 
 ---
 
@@ -65067,7 +65067,7 @@ public readonly title: string;
 
 Enum title.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema.html#title AppUserSchema#title}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema#title AppUserSchema#title}
 
 ---
 
@@ -65100,7 +65100,7 @@ public readonly const: string;
 
 Enum value.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema_property.html#const AppUserSchemaProperty#const}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema_property#const AppUserSchemaProperty#const}
 
 ---
 
@@ -65114,7 +65114,7 @@ public readonly title: string;
 
 Enum title.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema_property.html#title AppUserSchemaProperty#title}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema_property#title AppUserSchemaProperty#title}
 
 ---
 
@@ -65136,7 +65136,7 @@ const appUserSchemaPropertyConfig: AppUserSchemaPropertyConfig = { ... }
 | [`dependsOn`](#cdktfprovideroktaappuserschemapropertyconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktaappuserschemapropertyconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktaappuserschemapropertyconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`appId`](#cdktfprovideroktaappuserschemapropertyconfigpropertyappid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema_property.html#app_id AppUserSchemaProperty#app_id}. |
+| [`appId`](#cdktfprovideroktaappuserschemapropertyconfigpropertyappid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema_property#app_id AppUserSchemaProperty#app_id}. |
 | [`index`](#cdktfprovideroktaappuserschemapropertyconfigpropertyindex)<span title="Required">*</span> | `string` | Subschema unique string identifier. |
 | [`title`](#cdktfprovideroktaappuserschemapropertyconfigpropertytitle)<span title="Required">*</span> | `string` | Subschema title (display name). |
 | [`type`](#cdktfprovideroktaappuserschemapropertyconfigpropertytype)<span title="Required">*</span> | `string` | Subschema type: string, boolean, number, integer, array, or object. |
@@ -65153,7 +65153,7 @@ const appUserSchemaPropertyConfig: AppUserSchemaPropertyConfig = { ... }
 | [`oneOf`](#cdktfprovideroktaappuserschemapropertyconfigpropertyoneof) | [`@cdktf/provider-okta.AppUserSchemaPropertyOneOf`](#@cdktf/provider-okta.AppUserSchemaPropertyOneOf)[] | one_of block. |
 | [`permissions`](#cdktfprovideroktaappuserschemapropertyconfigpropertypermissions) | `string` | SubSchema permissions: HIDE, READ_ONLY, or READ_WRITE. |
 | [`required`](#cdktfprovideroktaappuserschemapropertyconfigpropertyrequired) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Whether the subschema is required. |
-| [`scope`](#cdktfprovideroktaappuserschemapropertyconfigpropertyscope) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema_property.html#scope AppUserSchemaProperty#scope}. |
+| [`scope`](#cdktfprovideroktaappuserschemapropertyconfigpropertyscope) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema_property#scope AppUserSchemaProperty#scope}. |
 | [`union`](#cdktfprovideroktaappuserschemapropertyconfigpropertyunion) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Allows to assign attribute's group priority. |
 | [`unique`](#cdktfprovideroktaappuserschemapropertyconfigpropertyunique) | `string` | Subschema unique restriction. |
 | [`userType`](#cdktfprovideroktaappuserschemapropertyconfigpropertyusertype) | `string` | Custom subschema user type. |
@@ -65208,7 +65208,7 @@ public readonly appId: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema_property.html#app_id AppUserSchemaProperty#app_id}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema_property#app_id AppUserSchemaProperty#app_id}.
 
 ---
 
@@ -65222,7 +65222,7 @@ public readonly index: string;
 
 Subschema unique string identifier.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema_property.html#index AppUserSchemaProperty#index}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema_property#index AppUserSchemaProperty#index}
 
 ---
 
@@ -65236,7 +65236,7 @@ public readonly title: string;
 
 Subschema title (display name).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema_property.html#title AppUserSchemaProperty#title}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema_property#title AppUserSchemaProperty#title}
 
 ---
 
@@ -65250,7 +65250,7 @@ public readonly type: string;
 
 Subschema type: string, boolean, number, integer, array, or object.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema_property.html#type AppUserSchemaProperty#type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema_property#type AppUserSchemaProperty#type}
 
 ---
 
@@ -65264,7 +65264,7 @@ public readonly arrayEnum: string[];
 
 Custom Subschema enumerated value of a property of type array.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema_property.html#array_enum AppUserSchemaProperty#array_enum}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema_property#array_enum AppUserSchemaProperty#array_enum}
 
 ---
 
@@ -65278,7 +65278,7 @@ public readonly arrayOneOf: AppUserSchemaPropertyArrayOneOf[];
 
 array_one_of block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema_property.html#array_one_of AppUserSchemaProperty#array_one_of}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema_property#array_one_of AppUserSchemaProperty#array_one_of}
 
 ---
 
@@ -65292,7 +65292,7 @@ public readonly arrayType: string;
 
 Subschema array type: string, number, integer, reference. Type field must be an array.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema_property.html#array_type AppUserSchemaProperty#array_type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema_property#array_type AppUserSchemaProperty#array_type}
 
 ---
 
@@ -65306,7 +65306,7 @@ public readonly description: string;
 
 Custom Subschema description.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema_property.html#description AppUserSchemaProperty#description}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema_property#description AppUserSchemaProperty#description}
 
 ---
 
@@ -65320,7 +65320,7 @@ public readonly enum: string[];
 
 Custom Subschema enumerated value of the property. see: developer.okta.com/docs/api/resources/schemas#user-profile-schema-property-object.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema_property.html#enum AppUserSchemaProperty#enum}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema_property#enum AppUserSchemaProperty#enum}
 
 ---
 
@@ -65334,7 +65334,7 @@ public readonly externalName: string;
 
 Subschema external name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema_property.html#external_name AppUserSchemaProperty#external_name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema_property#external_name AppUserSchemaProperty#external_name}
 
 ---
 
@@ -65348,7 +65348,7 @@ public readonly externalNamespace: string;
 
 Subschema external namespace.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema_property.html#external_namespace AppUserSchemaProperty#external_namespace}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema_property#external_namespace AppUserSchemaProperty#external_namespace}
 
 ---
 
@@ -65362,7 +65362,7 @@ public readonly master: string;
 
 SubSchema profile manager, if not set it will inherit its setting.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema_property.html#master AppUserSchemaProperty#master}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema_property#master AppUserSchemaProperty#master}
 
 ---
 
@@ -65376,7 +65376,7 @@ public readonly maxLength: number;
 
 Subschema of type string maximum length.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema_property.html#max_length AppUserSchemaProperty#max_length}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema_property#max_length AppUserSchemaProperty#max_length}
 
 ---
 
@@ -65390,7 +65390,7 @@ public readonly minLength: number;
 
 Subschema of type string minimum length.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema_property.html#min_length AppUserSchemaProperty#min_length}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema_property#min_length AppUserSchemaProperty#min_length}
 
 ---
 
@@ -65404,7 +65404,7 @@ public readonly oneOf: AppUserSchemaPropertyOneOf[];
 
 one_of block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema_property.html#one_of AppUserSchemaProperty#one_of}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema_property#one_of AppUserSchemaProperty#one_of}
 
 ---
 
@@ -65418,7 +65418,7 @@ public readonly permissions: string;
 
 SubSchema permissions: HIDE, READ_ONLY, or READ_WRITE.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema_property.html#permissions AppUserSchemaProperty#permissions}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema_property#permissions AppUserSchemaProperty#permissions}
 
 ---
 
@@ -65432,7 +65432,7 @@ public readonly required: boolean | IResolvable;
 
 Whether the subschema is required.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema_property.html#required AppUserSchemaProperty#required}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema_property#required AppUserSchemaProperty#required}
 
 ---
 
@@ -65444,7 +65444,7 @@ public readonly scope: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema_property.html#scope AppUserSchemaProperty#scope}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema_property#scope AppUserSchemaProperty#scope}.
 
 ---
 
@@ -65458,7 +65458,7 @@ public readonly union: boolean | IResolvable;
 
 Allows to assign attribute's group priority.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema_property.html#union AppUserSchemaProperty#union}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema_property#union AppUserSchemaProperty#union}
 
 ---
 
@@ -65472,7 +65472,7 @@ public readonly unique: string;
 
 Subschema unique restriction.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema_property.html#unique AppUserSchemaProperty#unique}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema_property#unique AppUserSchemaProperty#unique}
 
 ---
 
@@ -65486,7 +65486,7 @@ public readonly userType: string;
 
 Custom subschema user type.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema_property.html#user_type AppUserSchemaProperty#user_type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema_property#user_type AppUserSchemaProperty#user_type}
 
 ---
 
@@ -65519,7 +65519,7 @@ public readonly const: string;
 
 Enum value.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema_property.html#const AppUserSchemaProperty#const}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema_property#const AppUserSchemaProperty#const}
 
 ---
 
@@ -65533,7 +65533,7 @@ public readonly title: string;
 
 Enum title.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema_property.html#title AppUserSchemaProperty#title}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema_property#title AppUserSchemaProperty#title}
 
 ---
 
@@ -65616,7 +65616,7 @@ public readonly key: string;
 
 A human-readable string that identifies the Authenticator.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/authenticator.html#key Authenticator#key}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/authenticator#key Authenticator#key}
 
 ---
 
@@ -65630,7 +65630,7 @@ public readonly name: string;
 
 Display name of the Authenticator.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/authenticator.html#name Authenticator#name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/authenticator#name Authenticator#name}
 
 ---
 
@@ -65644,7 +65644,7 @@ public readonly providerAuthPort: number;
 
 The RADIUS server port (for example 1812). This is defined when the On-Prem RADIUS server is configured.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/authenticator.html#provider_auth_port Authenticator#provider_auth_port}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/authenticator#provider_auth_port Authenticator#provider_auth_port}
 
 ---
 
@@ -65658,7 +65658,7 @@ public readonly providerHostname: string;
 
 Server host name or IP address.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/authenticator.html#provider_hostname Authenticator#provider_hostname}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/authenticator#provider_hostname Authenticator#provider_hostname}
 
 ---
 
@@ -65672,7 +65672,7 @@ public readonly providerSharedSecret: string;
 
 An authentication key that must be defined when the RADIUS server is configured, and must be the same on both the RADIUS client and server.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/authenticator.html#provider_shared_secret Authenticator#provider_shared_secret}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/authenticator#provider_shared_secret Authenticator#provider_shared_secret}
 
 ---
 
@@ -65686,7 +65686,7 @@ public readonly providerUserNameTemplate: string;
 
 Format expected by the provider.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/authenticator.html#provider_user_name_template Authenticator#provider_user_name_template}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/authenticator#provider_user_name_template Authenticator#provider_user_name_template}
 
 ---
 
@@ -65700,7 +65700,7 @@ public readonly settings: string;
 
 Authenticator settings in JSON format.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/authenticator.html#settings Authenticator#settings}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/authenticator#settings Authenticator#settings}
 
 ---
 
@@ -65714,7 +65714,7 @@ public readonly status: string;
 
 Authenticator status: ACTIVE or INACTIVE.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/authenticator.html#status Authenticator#status}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/authenticator#status Authenticator#status}
 
 ---
 
@@ -65737,14 +65737,14 @@ const authServerClaimConfig: AuthServerClaimConfig = { ... }
 | [`lifecycle`](#cdktfprovideroktaauthserverclaimconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktaauthserverclaimconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
 | [`authServerId`](#cdktfprovideroktaauthserverclaimconfigpropertyauthserverid)<span title="Required">*</span> | `string` | Auth server ID. |
-| [`claimType`](#cdktfprovideroktaauthserverclaimconfigpropertyclaimtype)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_claim.html#claim_type AuthServerClaim#claim_type}. |
+| [`claimType`](#cdktfprovideroktaauthserverclaimconfigpropertyclaimtype)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_claim#claim_type AuthServerClaim#claim_type}. |
 | [`name`](#cdktfprovideroktaauthserverclaimconfigpropertyname)<span title="Required">*</span> | `string` | Auth server claim name. |
-| [`value`](#cdktfprovideroktaauthserverclaimconfigpropertyvalue)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_claim.html#value AuthServerClaim#value}. |
-| [`alwaysIncludeInToken`](#cdktfprovideroktaauthserverclaimconfigpropertyalwaysincludeintoken) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_claim.html#always_include_in_token AuthServerClaim#always_include_in_token}. |
+| [`value`](#cdktfprovideroktaauthserverclaimconfigpropertyvalue)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_claim#value AuthServerClaim#value}. |
+| [`alwaysIncludeInToken`](#cdktfprovideroktaauthserverclaimconfigpropertyalwaysincludeintoken) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_claim#always_include_in_token AuthServerClaim#always_include_in_token}. |
 | [`groupFilterType`](#cdktfprovideroktaauthserverclaimconfigpropertygroupfiltertype) | `string` | Required when value_type is GROUPS. |
 | [`scopes`](#cdktfprovideroktaauthserverclaimconfigpropertyscopes) | `string`[] | Auth server claim list of scopes. |
-| [`status`](#cdktfprovideroktaauthserverclaimconfigpropertystatus) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_claim.html#status AuthServerClaim#status}. |
-| [`valueType`](#cdktfprovideroktaauthserverclaimconfigpropertyvaluetype) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_claim.html#value_type AuthServerClaim#value_type}. |
+| [`status`](#cdktfprovideroktaauthserverclaimconfigpropertystatus) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_claim#status AuthServerClaim#status}. |
+| [`valueType`](#cdktfprovideroktaauthserverclaimconfigpropertyvaluetype) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_claim#value_type AuthServerClaim#value_type}. |
 
 ---
 
@@ -65798,7 +65798,7 @@ public readonly authServerId: string;
 
 Auth server ID.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_claim.html#auth_server_id AuthServerClaim#auth_server_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_claim#auth_server_id AuthServerClaim#auth_server_id}
 
 ---
 
@@ -65810,7 +65810,7 @@ public readonly claimType: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_claim.html#claim_type AuthServerClaim#claim_type}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_claim#claim_type AuthServerClaim#claim_type}.
 
 ---
 
@@ -65824,7 +65824,7 @@ public readonly name: string;
 
 Auth server claim name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_claim.html#name AuthServerClaim#name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_claim#name AuthServerClaim#name}
 
 ---
 
@@ -65836,7 +65836,7 @@ public readonly value: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_claim.html#value AuthServerClaim#value}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_claim#value AuthServerClaim#value}.
 
 ---
 
@@ -65848,7 +65848,7 @@ public readonly alwaysIncludeInToken: boolean | IResolvable;
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_claim.html#always_include_in_token AuthServerClaim#always_include_in_token}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_claim#always_include_in_token AuthServerClaim#always_include_in_token}.
 
 ---
 
@@ -65862,7 +65862,7 @@ public readonly groupFilterType: string;
 
 Required when value_type is GROUPS.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_claim.html#group_filter_type AuthServerClaim#group_filter_type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_claim#group_filter_type AuthServerClaim#group_filter_type}
 
 ---
 
@@ -65876,7 +65876,7 @@ public readonly scopes: string[];
 
 Auth server claim list of scopes.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_claim.html#scopes AuthServerClaim#scopes}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_claim#scopes AuthServerClaim#scopes}
 
 ---
 
@@ -65888,7 +65888,7 @@ public readonly status: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_claim.html#status AuthServerClaim#status}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_claim#status AuthServerClaim#status}.
 
 ---
 
@@ -65900,7 +65900,7 @@ public readonly valueType: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_claim.html#value_type AuthServerClaim#value_type}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_claim#value_type AuthServerClaim#value_type}.
 
 ---
 
@@ -65924,8 +65924,8 @@ const authServerClaimDefaultConfig: AuthServerClaimDefaultConfig = { ... }
 | [`provider`](#cdktfprovideroktaauthserverclaimdefaultconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
 | [`authServerId`](#cdktfprovideroktaauthserverclaimdefaultconfigpropertyauthserverid)<span title="Required">*</span> | `string` | Auth server ID. |
 | [`name`](#cdktfprovideroktaauthserverclaimdefaultconfigpropertyname)<span title="Required">*</span> | `string` | Default auth server claim name. |
-| [`alwaysIncludeInToken`](#cdktfprovideroktaauthserverclaimdefaultconfigpropertyalwaysincludeintoken) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_claim_default.html#always_include_in_token AuthServerClaimDefault#always_include_in_token}. |
-| [`value`](#cdktfprovideroktaauthserverclaimdefaultconfigpropertyvalue) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_claim_default.html#value AuthServerClaimDefault#value}. |
+| [`alwaysIncludeInToken`](#cdktfprovideroktaauthserverclaimdefaultconfigpropertyalwaysincludeintoken) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_claim_default#always_include_in_token AuthServerClaimDefault#always_include_in_token}. |
+| [`value`](#cdktfprovideroktaauthserverclaimdefaultconfigpropertyvalue) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_claim_default#value AuthServerClaimDefault#value}. |
 
 ---
 
@@ -65979,7 +65979,7 @@ public readonly authServerId: string;
 
 Auth server ID.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_claim_default.html#auth_server_id AuthServerClaimDefault#auth_server_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_claim_default#auth_server_id AuthServerClaimDefault#auth_server_id}
 
 ---
 
@@ -65993,7 +65993,7 @@ public readonly name: string;
 
 Default auth server claim name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_claim_default.html#name AuthServerClaimDefault#name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_claim_default#name AuthServerClaimDefault#name}
 
 ---
 
@@ -66005,7 +66005,7 @@ public readonly alwaysIncludeInToken: boolean | IResolvable;
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_claim_default.html#always_include_in_token AuthServerClaimDefault#always_include_in_token}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_claim_default#always_include_in_token AuthServerClaimDefault#always_include_in_token}.
 
 ---
 
@@ -66017,7 +66017,7 @@ public readonly value: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_claim_default.html#value AuthServerClaimDefault#value}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_claim_default#value AuthServerClaimDefault#value}.
 
 ---
 
@@ -66040,11 +66040,11 @@ const authServerConfig: AuthServerConfig = { ... }
 | [`lifecycle`](#cdktfprovideroktaauthserverconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktaauthserverconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
 | [`audiences`](#cdktfprovideroktaauthserverconfigpropertyaudiences)<span title="Required">*</span> | `string`[] | Currently Okta only supports a single value here. |
-| [`name`](#cdktfprovideroktaauthserverconfigpropertyname)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server.html#name AuthServer#name}. |
+| [`name`](#cdktfprovideroktaauthserverconfigpropertyname)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server#name AuthServer#name}. |
 | [`credentialsRotationMode`](#cdktfprovideroktaauthserverconfigpropertycredentialsrotationmode) | `string` | Credential rotation mode, in many cases you cannot set this to MANUAL, the API will ignore the value and you will get a perpetual diff. |
-| [`description`](#cdktfprovideroktaauthserverconfigpropertydescription) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server.html#description AuthServer#description}. |
+| [`description`](#cdktfprovideroktaauthserverconfigpropertydescription) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server#description AuthServer#description}. |
 | [`issuerMode`](#cdktfprovideroktaauthserverconfigpropertyissuermode) | `string` | *Early Access Property*. |
-| [`status`](#cdktfprovideroktaauthserverconfigpropertystatus) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server.html#status AuthServer#status}. |
+| [`status`](#cdktfprovideroktaauthserverconfigpropertystatus) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server#status AuthServer#status}. |
 
 ---
 
@@ -66098,7 +66098,7 @@ public readonly audiences: string[];
 
 Currently Okta only supports a single value here.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server.html#audiences AuthServer#audiences}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server#audiences AuthServer#audiences}
 
 ---
 
@@ -66110,7 +66110,7 @@ public readonly name: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server.html#name AuthServer#name}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server#name AuthServer#name}.
 
 ---
 
@@ -66124,7 +66124,7 @@ public readonly credentialsRotationMode: string;
 
 Credential rotation mode, in many cases you cannot set this to MANUAL, the API will ignore the value and you will get a perpetual diff.
 
-This should rarely be used.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server.html#credentials_rotation_mode AuthServer#credentials_rotation_mode}
+This should rarely be used.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server#credentials_rotation_mode AuthServer#credentials_rotation_mode}
 
 ---
 
@@ -66136,7 +66136,7 @@ public readonly description: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server.html#description AuthServer#description}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server#description AuthServer#description}.
 
 ---
 
@@ -66150,7 +66150,7 @@ public readonly issuerMode: string;
 
 *Early Access Property*.
 
-Indicates which value is specified in the issuer of the tokens that a Custom Authorization Server returns: the original Okta org domain URL or a custom domain URL  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server.html#issuer_mode AuthServer#issuer_mode}
+Indicates which value is specified in the issuer of the tokens that a Custom Authorization Server returns: the original Okta org domain URL or a custom domain URL  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server#issuer_mode AuthServer#issuer_mode}
 
 ---
 
@@ -66162,7 +66162,7 @@ public readonly status: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server.html#status AuthServer#status}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server#status AuthServer#status}.
 
 ---
 
@@ -66184,12 +66184,12 @@ const authServerDefaultConfig: AuthServerDefaultConfig = { ... }
 | [`dependsOn`](#cdktfprovideroktaauthserverdefaultconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktaauthserverdefaultconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktaauthserverdefaultconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`name`](#cdktfprovideroktaauthserverdefaultconfigpropertyname)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_default.html#name AuthServerDefault#name}. |
+| [`name`](#cdktfprovideroktaauthserverdefaultconfigpropertyname)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_default#name AuthServerDefault#name}. |
 | [`audiences`](#cdktfprovideroktaauthserverdefaultconfigpropertyaudiences) | `string`[] | Currently Okta only supports a single value here. |
 | [`credentialsRotationMode`](#cdktfprovideroktaauthserverdefaultconfigpropertycredentialsrotationmode) | `string` | Credential rotation mode, in many cases you cannot set this to MANUAL, the API will ignore the value and you will get a perpetual diff. |
-| [`description`](#cdktfprovideroktaauthserverdefaultconfigpropertydescription) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_default.html#description AuthServerDefault#description}. |
+| [`description`](#cdktfprovideroktaauthserverdefaultconfigpropertydescription) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_default#description AuthServerDefault#description}. |
 | [`issuerMode`](#cdktfprovideroktaauthserverdefaultconfigpropertyissuermode) | `string` | *Early Access Property*. |
-| [`status`](#cdktfprovideroktaauthserverdefaultconfigpropertystatus) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_default.html#status AuthServerDefault#status}. |
+| [`status`](#cdktfprovideroktaauthserverdefaultconfigpropertystatus) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_default#status AuthServerDefault#status}. |
 
 ---
 
@@ -66241,7 +66241,7 @@ public readonly name: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_default.html#name AuthServerDefault#name}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_default#name AuthServerDefault#name}.
 
 ---
 
@@ -66255,7 +66255,7 @@ public readonly audiences: string[];
 
 Currently Okta only supports a single value here.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_default.html#audiences AuthServerDefault#audiences}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_default#audiences AuthServerDefault#audiences}
 
 ---
 
@@ -66269,7 +66269,7 @@ public readonly credentialsRotationMode: string;
 
 Credential rotation mode, in many cases you cannot set this to MANUAL, the API will ignore the value and you will get a perpetual diff.
 
-This should rarely be used.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_default.html#credentials_rotation_mode AuthServerDefault#credentials_rotation_mode}
+This should rarely be used.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_default#credentials_rotation_mode AuthServerDefault#credentials_rotation_mode}
 
 ---
 
@@ -66281,7 +66281,7 @@ public readonly description: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_default.html#description AuthServerDefault#description}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_default#description AuthServerDefault#description}.
 
 ---
 
@@ -66295,7 +66295,7 @@ public readonly issuerMode: string;
 
 *Early Access Property*.
 
-Indicates which value is specified in the issuer of the tokens that a Custom Authorization Server returns: the original Okta org domain URL or a custom domain URL  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_default.html#issuer_mode AuthServerDefault#issuer_mode}
+Indicates which value is specified in the issuer of the tokens that a Custom Authorization Server returns: the original Okta org domain URL or a custom domain URL  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_default#issuer_mode AuthServerDefault#issuer_mode}
 
 ---
 
@@ -66307,7 +66307,7 @@ public readonly status: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_default.html#status AuthServerDefault#status}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_default#status AuthServerDefault#status}.
 
 ---
 
@@ -66329,12 +66329,12 @@ const authServerPolicyConfig: AuthServerPolicyConfig = { ... }
 | [`dependsOn`](#cdktfprovideroktaauthserverpolicyconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktaauthserverpolicyconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktaauthserverpolicyconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`authServerId`](#cdktfprovideroktaauthserverpolicyconfigpropertyauthserverid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy.html#auth_server_id AuthServerPolicy#auth_server_id}. |
+| [`authServerId`](#cdktfprovideroktaauthserverpolicyconfigpropertyauthserverid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy#auth_server_id AuthServerPolicy#auth_server_id}. |
 | [`clientWhitelist`](#cdktfprovideroktaauthserverpolicyconfigpropertyclientwhitelist)<span title="Required">*</span> | `string`[] | Use ["ALL_CLIENTS"] when unsure. |
-| [`description`](#cdktfprovideroktaauthserverpolicyconfigpropertydescription)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy.html#description AuthServerPolicy#description}. |
-| [`name`](#cdktfprovideroktaauthserverpolicyconfigpropertyname)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy.html#name AuthServerPolicy#name}. |
+| [`description`](#cdktfprovideroktaauthserverpolicyconfigpropertydescription)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy#description AuthServerPolicy#description}. |
+| [`name`](#cdktfprovideroktaauthserverpolicyconfigpropertyname)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy#name AuthServerPolicy#name}. |
 | [`priority`](#cdktfprovideroktaauthserverpolicyconfigpropertypriority)<span title="Required">*</span> | `number` | Priority of the auth server policy. |
-| [`status`](#cdktfprovideroktaauthserverpolicyconfigpropertystatus) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy.html#status AuthServerPolicy#status}. |
+| [`status`](#cdktfprovideroktaauthserverpolicyconfigpropertystatus) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy#status AuthServerPolicy#status}. |
 | [`type`](#cdktfprovideroktaauthserverpolicyconfigpropertytype) | `string` | Auth server policy type, unlikely this will be anything other then the default. |
 
 ---
@@ -66387,7 +66387,7 @@ public readonly authServerId: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy.html#auth_server_id AuthServerPolicy#auth_server_id}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy#auth_server_id AuthServerPolicy#auth_server_id}.
 
 ---
 
@@ -66401,7 +66401,7 @@ public readonly clientWhitelist: string[];
 
 Use ["ALL_CLIENTS"] when unsure.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy.html#client_whitelist AuthServerPolicy#client_whitelist}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy#client_whitelist AuthServerPolicy#client_whitelist}
 
 ---
 
@@ -66413,7 +66413,7 @@ public readonly description: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy.html#description AuthServerPolicy#description}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy#description AuthServerPolicy#description}.
 
 ---
 
@@ -66425,7 +66425,7 @@ public readonly name: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy.html#name AuthServerPolicy#name}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy#name AuthServerPolicy#name}.
 
 ---
 
@@ -66439,7 +66439,7 @@ public readonly priority: number;
 
 Priority of the auth server policy.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy.html#priority AuthServerPolicy#priority}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy#priority AuthServerPolicy#priority}
 
 ---
 
@@ -66451,7 +66451,7 @@ public readonly status: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy.html#status AuthServerPolicy#status}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy#status AuthServerPolicy#status}.
 
 ---
 
@@ -66465,7 +66465,7 @@ public readonly type: string;
 
 Auth server policy type, unlikely this will be anything other then the default.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy.html#type AuthServerPolicy#type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy#type AuthServerPolicy#type}
 
 ---
 
@@ -66492,17 +66492,17 @@ const authServerPolicyRuleConfig: AuthServerPolicyRuleConfig = { ... }
 | [`name`](#cdktfprovideroktaauthserverpolicyruleconfigpropertyname)<span title="Required">*</span> | `string` | Auth server policy rule name. |
 | [`policyId`](#cdktfprovideroktaauthserverpolicyruleconfigpropertypolicyid)<span title="Required">*</span> | `string` | Auth server policy ID. |
 | [`priority`](#cdktfprovideroktaauthserverpolicyruleconfigpropertypriority)<span title="Required">*</span> | `number` | Priority of the auth server policy rule. |
-| [`accessTokenLifetimeMinutes`](#cdktfprovideroktaauthserverpolicyruleconfigpropertyaccesstokenlifetimeminutes) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy_rule.html#access_token_lifetime_minutes AuthServerPolicyRule#access_token_lifetime_minutes}. |
-| [`groupBlacklist`](#cdktfprovideroktaauthserverpolicyruleconfigpropertygroupblacklist) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy_rule.html#group_blacklist AuthServerPolicyRule#group_blacklist}. |
-| [`groupWhitelist`](#cdktfprovideroktaauthserverpolicyruleconfigpropertygroupwhitelist) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy_rule.html#group_whitelist AuthServerPolicyRule#group_whitelist}. |
-| [`inlineHookId`](#cdktfprovideroktaauthserverpolicyruleconfigpropertyinlinehookid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy_rule.html#inline_hook_id AuthServerPolicyRule#inline_hook_id}. |
-| [`refreshTokenLifetimeMinutes`](#cdktfprovideroktaauthserverpolicyruleconfigpropertyrefreshtokenlifetimeminutes) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy_rule.html#refresh_token_lifetime_minutes AuthServerPolicyRule#refresh_token_lifetime_minutes}. |
-| [`refreshTokenWindowMinutes`](#cdktfprovideroktaauthserverpolicyruleconfigpropertyrefreshtokenwindowminutes) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy_rule.html#refresh_token_window_minutes AuthServerPolicyRule#refresh_token_window_minutes}. |
-| [`scopeWhitelist`](#cdktfprovideroktaauthserverpolicyruleconfigpropertyscopewhitelist) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy_rule.html#scope_whitelist AuthServerPolicyRule#scope_whitelist}. |
-| [`status`](#cdktfprovideroktaauthserverpolicyruleconfigpropertystatus) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy_rule.html#status AuthServerPolicyRule#status}. |
+| [`accessTokenLifetimeMinutes`](#cdktfprovideroktaauthserverpolicyruleconfigpropertyaccesstokenlifetimeminutes) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy_rule#access_token_lifetime_minutes AuthServerPolicyRule#access_token_lifetime_minutes}. |
+| [`groupBlacklist`](#cdktfprovideroktaauthserverpolicyruleconfigpropertygroupblacklist) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy_rule#group_blacklist AuthServerPolicyRule#group_blacklist}. |
+| [`groupWhitelist`](#cdktfprovideroktaauthserverpolicyruleconfigpropertygroupwhitelist) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy_rule#group_whitelist AuthServerPolicyRule#group_whitelist}. |
+| [`inlineHookId`](#cdktfprovideroktaauthserverpolicyruleconfigpropertyinlinehookid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy_rule#inline_hook_id AuthServerPolicyRule#inline_hook_id}. |
+| [`refreshTokenLifetimeMinutes`](#cdktfprovideroktaauthserverpolicyruleconfigpropertyrefreshtokenlifetimeminutes) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy_rule#refresh_token_lifetime_minutes AuthServerPolicyRule#refresh_token_lifetime_minutes}. |
+| [`refreshTokenWindowMinutes`](#cdktfprovideroktaauthserverpolicyruleconfigpropertyrefreshtokenwindowminutes) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy_rule#refresh_token_window_minutes AuthServerPolicyRule#refresh_token_window_minutes}. |
+| [`scopeWhitelist`](#cdktfprovideroktaauthserverpolicyruleconfigpropertyscopewhitelist) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy_rule#scope_whitelist AuthServerPolicyRule#scope_whitelist}. |
+| [`status`](#cdktfprovideroktaauthserverpolicyruleconfigpropertystatus) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy_rule#status AuthServerPolicyRule#status}. |
 | [`type`](#cdktfprovideroktaauthserverpolicyruleconfigpropertytype) | `string` | Auth server policy rule type, unlikely this will be anything other then the default. |
-| [`userBlacklist`](#cdktfprovideroktaauthserverpolicyruleconfigpropertyuserblacklist) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy_rule.html#user_blacklist AuthServerPolicyRule#user_blacklist}. |
-| [`userWhitelist`](#cdktfprovideroktaauthserverpolicyruleconfigpropertyuserwhitelist) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy_rule.html#user_whitelist AuthServerPolicyRule#user_whitelist}. |
+| [`userBlacklist`](#cdktfprovideroktaauthserverpolicyruleconfigpropertyuserblacklist) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy_rule#user_blacklist AuthServerPolicyRule#user_blacklist}. |
+| [`userWhitelist`](#cdktfprovideroktaauthserverpolicyruleconfigpropertyuserwhitelist) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy_rule#user_whitelist AuthServerPolicyRule#user_whitelist}. |
 
 ---
 
@@ -66556,7 +66556,7 @@ public readonly authServerId: string;
 
 Auth server ID.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy_rule.html#auth_server_id AuthServerPolicyRule#auth_server_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy_rule#auth_server_id AuthServerPolicyRule#auth_server_id}
 
 ---
 
@@ -66570,7 +66570,7 @@ public readonly grantTypeWhitelist: string[];
 
 Accepted grant type values: authorization_code, implicit, password, client_credentials.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy_rule.html#grant_type_whitelist AuthServerPolicyRule#grant_type_whitelist}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy_rule#grant_type_whitelist AuthServerPolicyRule#grant_type_whitelist}
 
 ---
 
@@ -66584,7 +66584,7 @@ public readonly name: string;
 
 Auth server policy rule name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy_rule.html#name AuthServerPolicyRule#name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy_rule#name AuthServerPolicyRule#name}
 
 ---
 
@@ -66598,7 +66598,7 @@ public readonly policyId: string;
 
 Auth server policy ID.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy_rule.html#policy_id AuthServerPolicyRule#policy_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy_rule#policy_id AuthServerPolicyRule#policy_id}
 
 ---
 
@@ -66612,7 +66612,7 @@ public readonly priority: number;
 
 Priority of the auth server policy rule.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy_rule.html#priority AuthServerPolicyRule#priority}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy_rule#priority AuthServerPolicyRule#priority}
 
 ---
 
@@ -66624,7 +66624,7 @@ public readonly accessTokenLifetimeMinutes: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy_rule.html#access_token_lifetime_minutes AuthServerPolicyRule#access_token_lifetime_minutes}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy_rule#access_token_lifetime_minutes AuthServerPolicyRule#access_token_lifetime_minutes}.
 
 ---
 
@@ -66636,7 +66636,7 @@ public readonly groupBlacklist: string[];
 
 - *Type:* `string`[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy_rule.html#group_blacklist AuthServerPolicyRule#group_blacklist}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy_rule#group_blacklist AuthServerPolicyRule#group_blacklist}.
 
 ---
 
@@ -66648,7 +66648,7 @@ public readonly groupWhitelist: string[];
 
 - *Type:* `string`[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy_rule.html#group_whitelist AuthServerPolicyRule#group_whitelist}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy_rule#group_whitelist AuthServerPolicyRule#group_whitelist}.
 
 ---
 
@@ -66660,7 +66660,7 @@ public readonly inlineHookId: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy_rule.html#inline_hook_id AuthServerPolicyRule#inline_hook_id}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy_rule#inline_hook_id AuthServerPolicyRule#inline_hook_id}.
 
 ---
 
@@ -66672,7 +66672,7 @@ public readonly refreshTokenLifetimeMinutes: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy_rule.html#refresh_token_lifetime_minutes AuthServerPolicyRule#refresh_token_lifetime_minutes}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy_rule#refresh_token_lifetime_minutes AuthServerPolicyRule#refresh_token_lifetime_minutes}.
 
 ---
 
@@ -66684,7 +66684,7 @@ public readonly refreshTokenWindowMinutes: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy_rule.html#refresh_token_window_minutes AuthServerPolicyRule#refresh_token_window_minutes}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy_rule#refresh_token_window_minutes AuthServerPolicyRule#refresh_token_window_minutes}.
 
 ---
 
@@ -66696,7 +66696,7 @@ public readonly scopeWhitelist: string[];
 
 - *Type:* `string`[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy_rule.html#scope_whitelist AuthServerPolicyRule#scope_whitelist}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy_rule#scope_whitelist AuthServerPolicyRule#scope_whitelist}.
 
 ---
 
@@ -66708,7 +66708,7 @@ public readonly status: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy_rule.html#status AuthServerPolicyRule#status}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy_rule#status AuthServerPolicyRule#status}.
 
 ---
 
@@ -66722,7 +66722,7 @@ public readonly type: string;
 
 Auth server policy rule type, unlikely this will be anything other then the default.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy_rule.html#type AuthServerPolicyRule#type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy_rule#type AuthServerPolicyRule#type}
 
 ---
 
@@ -66734,7 +66734,7 @@ public readonly userBlacklist: string[];
 
 - *Type:* `string`[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy_rule.html#user_blacklist AuthServerPolicyRule#user_blacklist}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy_rule#user_blacklist AuthServerPolicyRule#user_blacklist}.
 
 ---
 
@@ -66746,7 +66746,7 @@ public readonly userWhitelist: string[];
 
 - *Type:* `string`[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy_rule.html#user_whitelist AuthServerPolicyRule#user_whitelist}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy_rule#user_whitelist AuthServerPolicyRule#user_whitelist}.
 
 ---
 
@@ -66772,7 +66772,7 @@ const authServerScopeConfig: AuthServerScopeConfig = { ... }
 | [`name`](#cdktfprovideroktaauthserverscopeconfigpropertyname)<span title="Required">*</span> | `string` | Auth server scope name. |
 | [`consent`](#cdktfprovideroktaauthserverscopeconfigpropertyconsent) | `string` | EA Feature and thus it is simply ignored if the feature is off. |
 | [`default`](#cdktfprovideroktaauthserverscopeconfigpropertydefault) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | A default scope will be returned in an access token when the client omits the scope parameter in a token request, provided this scope is allowed as part of the access policy rule. |
-| [`description`](#cdktfprovideroktaauthserverscopeconfigpropertydescription) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_scope.html#description AuthServerScope#description}. |
+| [`description`](#cdktfprovideroktaauthserverscopeconfigpropertydescription) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_scope#description AuthServerScope#description}. |
 | [`displayName`](#cdktfprovideroktaauthserverscopeconfigpropertydisplayname) | `string` | Name of the end user displayed in a consent dialog box. |
 | [`metadataPublish`](#cdktfprovideroktaauthserverscopeconfigpropertymetadatapublish) | `string` | Whether to publish metadata or not, matching API type despite the fact it could just be a boolean. |
 
@@ -66828,7 +66828,7 @@ public readonly authServerId: string;
 
 Auth server ID.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_scope.html#auth_server_id AuthServerScope#auth_server_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_scope#auth_server_id AuthServerScope#auth_server_id}
 
 ---
 
@@ -66842,7 +66842,7 @@ public readonly name: string;
 
 Auth server scope name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_scope.html#name AuthServerScope#name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_scope#name AuthServerScope#name}
 
 ---
 
@@ -66856,7 +66856,7 @@ public readonly consent: string;
 
 EA Feature and thus it is simply ignored if the feature is off.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_scope.html#consent AuthServerScope#consent}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_scope#consent AuthServerScope#consent}
 
 ---
 
@@ -66870,7 +66870,7 @@ public readonly default: boolean | IResolvable;
 
 A default scope will be returned in an access token when the client omits the scope parameter in a token request, provided this scope is allowed as part of the access policy rule.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_scope.html#default AuthServerScope#default}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_scope#default AuthServerScope#default}
 
 ---
 
@@ -66882,7 +66882,7 @@ public readonly description: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_scope.html#description AuthServerScope#description}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_scope#description AuthServerScope#description}.
 
 ---
 
@@ -66896,7 +66896,7 @@ public readonly displayName: string;
 
 Name of the end user displayed in a consent dialog box.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_scope.html#display_name AuthServerScope#display_name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_scope#display_name AuthServerScope#display_name}
 
 ---
 
@@ -66910,7 +66910,7 @@ public readonly metadataPublish: string;
 
 Whether to publish metadata or not, matching API type despite the fact it could just be a boolean.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_scope.html#metadata_publish AuthServerScope#metadata_publish}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_scope#metadata_publish AuthServerScope#metadata_publish}
 
 ---
 
@@ -67013,7 +67013,7 @@ public readonly label: string;
 
 Pretty name of app.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auto_login_app.html#label AutoLoginApp#label}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auto_login_app#label AutoLoginApp#label}
 
 ---
 
@@ -67027,7 +67027,7 @@ public readonly accessibilityErrorRedirectUrl: string;
 
 Custom error page URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auto_login_app.html#accessibility_error_redirect_url AutoLoginApp#accessibility_error_redirect_url}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auto_login_app#accessibility_error_redirect_url AutoLoginApp#accessibility_error_redirect_url}
 
 ---
 
@@ -67041,7 +67041,7 @@ public readonly accessibilityLoginRedirectUrl: string;
 
 Custom login page URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auto_login_app.html#accessibility_login_redirect_url AutoLoginApp#accessibility_login_redirect_url}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auto_login_app#accessibility_login_redirect_url AutoLoginApp#accessibility_login_redirect_url}
 
 ---
 
@@ -67055,7 +67055,7 @@ public readonly accessibilitySelfService: boolean | IResolvable;
 
 Enable self service.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auto_login_app.html#accessibility_self_service AutoLoginApp#accessibility_self_service}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auto_login_app#accessibility_self_service AutoLoginApp#accessibility_self_service}
 
 ---
 
@@ -67069,7 +67069,7 @@ public readonly adminNote: string;
 
 Application notes for admins.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auto_login_app.html#admin_note AutoLoginApp#admin_note}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auto_login_app#admin_note AutoLoginApp#admin_note}
 
 ---
 
@@ -67083,7 +67083,7 @@ public readonly appLinksJson: string;
 
 Displays specific appLinks for the app.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auto_login_app.html#app_links_json AutoLoginApp#app_links_json}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auto_login_app#app_links_json AutoLoginApp#app_links_json}
 
 ---
 
@@ -67097,7 +67097,7 @@ public readonly appSettingsJson: string;
 
 Application settings in JSON format.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auto_login_app.html#app_settings_json AutoLoginApp#app_settings_json}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auto_login_app#app_settings_json AutoLoginApp#app_settings_json}
 
 ---
 
@@ -67111,7 +67111,7 @@ public readonly autoSubmitToolbar: boolean | IResolvable;
 
 Display auto submit toolbar.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auto_login_app.html#auto_submit_toolbar AutoLoginApp#auto_submit_toolbar}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auto_login_app#auto_submit_toolbar AutoLoginApp#auto_submit_toolbar}
 
 ---
 
@@ -67125,7 +67125,7 @@ public readonly credentialsScheme: string;
 
 Application credentials scheme.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auto_login_app.html#credentials_scheme AutoLoginApp#credentials_scheme}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auto_login_app#credentials_scheme AutoLoginApp#credentials_scheme}
 
 ---
 
@@ -67139,7 +67139,7 @@ public readonly enduserNote: string;
 
 Application notes for end users.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auto_login_app.html#enduser_note AutoLoginApp#enduser_note}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auto_login_app#enduser_note AutoLoginApp#enduser_note}
 
 ---
 
@@ -67153,7 +67153,7 @@ public readonly groups: string[];
 
 Groups associated with the application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auto_login_app.html#groups AutoLoginApp#groups}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auto_login_app#groups AutoLoginApp#groups}
 
 ---
 
@@ -67167,7 +67167,7 @@ public readonly hideIos: boolean | IResolvable;
 
 Do not display application icon on mobile app.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auto_login_app.html#hide_ios AutoLoginApp#hide_ios}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auto_login_app#hide_ios AutoLoginApp#hide_ios}
 
 ---
 
@@ -67181,7 +67181,7 @@ public readonly hideWeb: boolean | IResolvable;
 
 Do not display application icon to users.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auto_login_app.html#hide_web AutoLoginApp#hide_web}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auto_login_app#hide_web AutoLoginApp#hide_web}
 
 ---
 
@@ -67195,7 +67195,7 @@ public readonly logo: string;
 
 Local path to logo of the application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auto_login_app.html#logo AutoLoginApp#logo}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auto_login_app#logo AutoLoginApp#logo}
 
 ---
 
@@ -67209,7 +67209,7 @@ public readonly preconfiguredApp: string;
 
 Preconfigured app name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auto_login_app.html#preconfigured_app AutoLoginApp#preconfigured_app}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auto_login_app#preconfigured_app AutoLoginApp#preconfigured_app}
 
 ---
 
@@ -67223,7 +67223,7 @@ public readonly revealPassword: boolean | IResolvable;
 
 Allow user to reveal password.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auto_login_app.html#reveal_password AutoLoginApp#reveal_password}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auto_login_app#reveal_password AutoLoginApp#reveal_password}
 
 ---
 
@@ -67237,7 +67237,7 @@ public readonly sharedPassword: string;
 
 Shared password, required for certain schemes.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auto_login_app.html#shared_password AutoLoginApp#shared_password}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auto_login_app#shared_password AutoLoginApp#shared_password}
 
 ---
 
@@ -67251,7 +67251,7 @@ public readonly sharedUsername: string;
 
 Shared username, required for certain schemes.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auto_login_app.html#shared_username AutoLoginApp#shared_username}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auto_login_app#shared_username AutoLoginApp#shared_username}
 
 ---
 
@@ -67265,7 +67265,7 @@ public readonly signOnRedirectUrl: string;
 
 Post login redirect URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auto_login_app.html#sign_on_redirect_url AutoLoginApp#sign_on_redirect_url}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auto_login_app#sign_on_redirect_url AutoLoginApp#sign_on_redirect_url}
 
 ---
 
@@ -67279,7 +67279,7 @@ public readonly signOnUrl: string;
 
 Login URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auto_login_app.html#sign_on_url AutoLoginApp#sign_on_url}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auto_login_app#sign_on_url AutoLoginApp#sign_on_url}
 
 ---
 
@@ -67293,7 +67293,7 @@ public readonly skipGroups: boolean | IResolvable;
 
 Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auto_login_app.html#skip_groups AutoLoginApp#skip_groups}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auto_login_app#skip_groups AutoLoginApp#skip_groups}
 
 ---
 
@@ -67307,7 +67307,7 @@ public readonly skipUsers: boolean | IResolvable;
 
 Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auto_login_app.html#skip_users AutoLoginApp#skip_users}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auto_login_app#skip_users AutoLoginApp#skip_users}
 
 ---
 
@@ -67321,7 +67321,7 @@ public readonly status: string;
 
 Status of application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auto_login_app.html#status AutoLoginApp#status}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auto_login_app#status AutoLoginApp#status}
 
 ---
 
@@ -67335,7 +67335,7 @@ public readonly userNameTemplate: string;
 
 Username template.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auto_login_app.html#user_name_template AutoLoginApp#user_name_template}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auto_login_app#user_name_template AutoLoginApp#user_name_template}
 
 ---
 
@@ -67349,7 +67349,7 @@ public readonly userNameTemplatePushStatus: string;
 
 Push username on update.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auto_login_app.html#user_name_template_push_status AutoLoginApp#user_name_template_push_status}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auto_login_app#user_name_template_push_status AutoLoginApp#user_name_template_push_status}
 
 ---
 
@@ -67363,7 +67363,7 @@ public readonly userNameTemplateSuffix: string;
 
 Username template suffix.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auto_login_app.html#user_name_template_suffix AutoLoginApp#user_name_template_suffix}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auto_login_app#user_name_template_suffix AutoLoginApp#user_name_template_suffix}
 
 ---
 
@@ -67377,7 +67377,7 @@ public readonly userNameTemplateType: string;
 
 Username template type.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auto_login_app.html#user_name_template_type AutoLoginApp#user_name_template_type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auto_login_app#user_name_template_type AutoLoginApp#user_name_template_type}
 
 ---
 
@@ -67391,7 +67391,7 @@ public readonly users: AutoLoginAppUsers[];
 
 users block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auto_login_app.html#users AutoLoginApp#users}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auto_login_app#users AutoLoginApp#users}
 
 ---
 
@@ -67425,7 +67425,7 @@ public readonly id: string;
 
 User ID.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auto_login_app.html#id AutoLoginApp#id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auto_login_app#id AutoLoginApp#id}
 
 ---
 
@@ -67439,7 +67439,7 @@ public readonly password: string;
 
 Password for user application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auto_login_app.html#password AutoLoginApp#password}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auto_login_app#password AutoLoginApp#password}
 
 ---
 
@@ -67453,7 +67453,7 @@ public readonly username: string;
 
 Username for user.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auto_login_app.html#username AutoLoginApp#username}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auto_login_app#username AutoLoginApp#username}
 
 ---
 
@@ -67535,7 +67535,7 @@ public readonly name: string;
 
 Name of the behavior.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/behavior.html#name Behavior#name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/behavior#name Behavior#name}
 
 ---
 
@@ -67549,7 +67549,7 @@ public readonly type: string;
 
 Behavior type.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/behavior.html#type Behavior#type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/behavior#type Behavior#type}
 
 ---
 
@@ -67563,7 +67563,7 @@ public readonly locationGranularityType: string;
 
 Determines the method and level of detail used to evaluate the behavior.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/behavior.html#location_granularity_type Behavior#location_granularity_type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/behavior#location_granularity_type Behavior#location_granularity_type}
 
 ---
 
@@ -67577,7 +67577,7 @@ public readonly numberOfAuthentications: number;
 
 The number of recent authentications used to evaluate the behavior.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/behavior.html#number_of_authentications Behavior#number_of_authentications}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/behavior#number_of_authentications Behavior#number_of_authentications}
 
 ---
 
@@ -67591,7 +67591,7 @@ public readonly radiusFromLocation: number;
 
 Radius from location (in kilometers).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/behavior.html#radius_from_location Behavior#radius_from_location}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/behavior#radius_from_location Behavior#radius_from_location}
 
 ---
 
@@ -67605,7 +67605,7 @@ public readonly status: string;
 
 Behavior status: ACTIVE or INACTIVE.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/behavior.html#status Behavior#status}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/behavior#status Behavior#status}
 
 ---
 
@@ -67619,7 +67619,7 @@ public readonly velocity: number;
 
 Velocity (in kilometers per hour).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/behavior.html#velocity Behavior#velocity}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/behavior#velocity Behavior#velocity}
 
 ---
 
@@ -67642,7 +67642,7 @@ const bookmarkAppConfig: BookmarkAppConfig = { ... }
 | [`lifecycle`](#cdktfprovideroktabookmarkappconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktabookmarkappconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
 | [`label`](#cdktfprovideroktabookmarkappconfigpropertylabel)<span title="Required">*</span> | `string` | Pretty name of app. |
-| [`url`](#cdktfprovideroktabookmarkappconfigpropertyurl)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/bookmark_app.html#url BookmarkApp#url}. |
+| [`url`](#cdktfprovideroktabookmarkappconfigpropertyurl)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/bookmark_app#url BookmarkApp#url}. |
 | [`accessibilityErrorRedirectUrl`](#cdktfprovideroktabookmarkappconfigpropertyaccessibilityerrorredirecturl) | `string` | Custom error page URL. |
 | [`accessibilityLoginRedirectUrl`](#cdktfprovideroktabookmarkappconfigpropertyaccessibilityloginredirecturl) | `string` | Custom login page URL. |
 | [`accessibilitySelfService`](#cdktfprovideroktabookmarkappconfigpropertyaccessibilityselfservice) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Enable self service. |
@@ -67654,7 +67654,7 @@ const bookmarkAppConfig: BookmarkAppConfig = { ... }
 | [`hideIos`](#cdktfprovideroktabookmarkappconfigpropertyhideios) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Do not display application icon on mobile app. |
 | [`hideWeb`](#cdktfprovideroktabookmarkappconfigpropertyhideweb) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Do not display application icon to users. |
 | [`logo`](#cdktfprovideroktabookmarkappconfigpropertylogo) | `string` | Local path to logo of the application. |
-| [`requestIntegration`](#cdktfprovideroktabookmarkappconfigpropertyrequestintegration) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/bookmark_app.html#request_integration BookmarkApp#request_integration}. |
+| [`requestIntegration`](#cdktfprovideroktabookmarkappconfigpropertyrequestintegration) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/bookmark_app#request_integration BookmarkApp#request_integration}. |
 | [`skipGroups`](#cdktfprovideroktabookmarkappconfigpropertyskipgroups) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources. |
 | [`skipUsers`](#cdktfprovideroktabookmarkappconfigpropertyskipusers) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources. |
 | [`status`](#cdktfprovideroktabookmarkappconfigpropertystatus) | `string` | Status of application. |
@@ -67712,7 +67712,7 @@ public readonly label: string;
 
 Pretty name of app.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/bookmark_app.html#label BookmarkApp#label}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/bookmark_app#label BookmarkApp#label}
 
 ---
 
@@ -67724,7 +67724,7 @@ public readonly url: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/bookmark_app.html#url BookmarkApp#url}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/bookmark_app#url BookmarkApp#url}.
 
 ---
 
@@ -67738,7 +67738,7 @@ public readonly accessibilityErrorRedirectUrl: string;
 
 Custom error page URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/bookmark_app.html#accessibility_error_redirect_url BookmarkApp#accessibility_error_redirect_url}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/bookmark_app#accessibility_error_redirect_url BookmarkApp#accessibility_error_redirect_url}
 
 ---
 
@@ -67752,7 +67752,7 @@ public readonly accessibilityLoginRedirectUrl: string;
 
 Custom login page URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/bookmark_app.html#accessibility_login_redirect_url BookmarkApp#accessibility_login_redirect_url}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/bookmark_app#accessibility_login_redirect_url BookmarkApp#accessibility_login_redirect_url}
 
 ---
 
@@ -67766,7 +67766,7 @@ public readonly accessibilitySelfService: boolean | IResolvable;
 
 Enable self service.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/bookmark_app.html#accessibility_self_service BookmarkApp#accessibility_self_service}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/bookmark_app#accessibility_self_service BookmarkApp#accessibility_self_service}
 
 ---
 
@@ -67780,7 +67780,7 @@ public readonly adminNote: string;
 
 Application notes for admins.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/bookmark_app.html#admin_note BookmarkApp#admin_note}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/bookmark_app#admin_note BookmarkApp#admin_note}
 
 ---
 
@@ -67794,7 +67794,7 @@ public readonly appLinksJson: string;
 
 Displays specific appLinks for the app.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/bookmark_app.html#app_links_json BookmarkApp#app_links_json}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/bookmark_app#app_links_json BookmarkApp#app_links_json}
 
 ---
 
@@ -67808,7 +67808,7 @@ public readonly autoSubmitToolbar: boolean | IResolvable;
 
 Display auto submit toolbar.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/bookmark_app.html#auto_submit_toolbar BookmarkApp#auto_submit_toolbar}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/bookmark_app#auto_submit_toolbar BookmarkApp#auto_submit_toolbar}
 
 ---
 
@@ -67822,7 +67822,7 @@ public readonly enduserNote: string;
 
 Application notes for end users.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/bookmark_app.html#enduser_note BookmarkApp#enduser_note}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/bookmark_app#enduser_note BookmarkApp#enduser_note}
 
 ---
 
@@ -67836,7 +67836,7 @@ public readonly groups: string[];
 
 Groups associated with the application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/bookmark_app.html#groups BookmarkApp#groups}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/bookmark_app#groups BookmarkApp#groups}
 
 ---
 
@@ -67850,7 +67850,7 @@ public readonly hideIos: boolean | IResolvable;
 
 Do not display application icon on mobile app.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/bookmark_app.html#hide_ios BookmarkApp#hide_ios}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/bookmark_app#hide_ios BookmarkApp#hide_ios}
 
 ---
 
@@ -67864,7 +67864,7 @@ public readonly hideWeb: boolean | IResolvable;
 
 Do not display application icon to users.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/bookmark_app.html#hide_web BookmarkApp#hide_web}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/bookmark_app#hide_web BookmarkApp#hide_web}
 
 ---
 
@@ -67878,7 +67878,7 @@ public readonly logo: string;
 
 Local path to logo of the application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/bookmark_app.html#logo BookmarkApp#logo}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/bookmark_app#logo BookmarkApp#logo}
 
 ---
 
@@ -67890,7 +67890,7 @@ public readonly requestIntegration: boolean | IResolvable;
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/bookmark_app.html#request_integration BookmarkApp#request_integration}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/bookmark_app#request_integration BookmarkApp#request_integration}.
 
 ---
 
@@ -67904,7 +67904,7 @@ public readonly skipGroups: boolean | IResolvable;
 
 Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/bookmark_app.html#skip_groups BookmarkApp#skip_groups}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/bookmark_app#skip_groups BookmarkApp#skip_groups}
 
 ---
 
@@ -67918,7 +67918,7 @@ public readonly skipUsers: boolean | IResolvable;
 
 Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/bookmark_app.html#skip_users BookmarkApp#skip_users}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/bookmark_app#skip_users BookmarkApp#skip_users}
 
 ---
 
@@ -67932,7 +67932,7 @@ public readonly status: string;
 
 Status of application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/bookmark_app.html#status BookmarkApp#status}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/bookmark_app#status BookmarkApp#status}
 
 ---
 
@@ -67946,7 +67946,7 @@ public readonly users: BookmarkAppUsers[];
 
 users block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/bookmark_app.html#users BookmarkApp#users}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/bookmark_app#users BookmarkApp#users}
 
 ---
 
@@ -67980,7 +67980,7 @@ public readonly id: string;
 
 User ID.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/bookmark_app.html#id BookmarkApp#id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/bookmark_app#id BookmarkApp#id}
 
 ---
 
@@ -67994,7 +67994,7 @@ public readonly password: string;
 
 Password for user application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/bookmark_app.html#password BookmarkApp#password}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/bookmark_app#password BookmarkApp#password}
 
 ---
 
@@ -68008,7 +68008,7 @@ public readonly username: string;
 
 Username for user.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/bookmark_app.html#username BookmarkApp#username}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/bookmark_app#username BookmarkApp#username}
 
 ---
 
@@ -68087,7 +68087,7 @@ public readonly name: string;
 
 Name of the CAPTCHA.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/captcha.html#name Captcha#name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/captcha#name Captcha#name}
 
 ---
 
@@ -68101,7 +68101,7 @@ public readonly secretKey: string;
 
 Secret key issued from the CAPTCHA vendor to perform server-side validation for a CAPTCHA token.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/captcha.html#secret_key Captcha#secret_key}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/captcha#secret_key Captcha#secret_key}
 
 ---
 
@@ -68115,7 +68115,7 @@ public readonly siteKey: string;
 
 Site key issued from the CAPTCHA vendor to render a CAPTCHA on a page.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/captcha.html#site_key Captcha#site_key}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/captcha#site_key Captcha#site_key}
 
 ---
 
@@ -68129,7 +68129,7 @@ public readonly type: string;
 
 Captcha type.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/captcha.html#type Captcha#type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/captcha#type Captcha#type}
 
 ---
 
@@ -68206,7 +68206,7 @@ public readonly captchaId: string;
 
 ID of the CAPTCHA.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/captcha_org_wide_settings.html#captcha_id CaptchaOrgWideSettings#captcha_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/captcha_org_wide_settings#captcha_id CaptchaOrgWideSettings#captcha_id}
 
 ---
 
@@ -68220,7 +68220,7 @@ public readonly enabledFor: string[];
 
 Set of pages that have CAPTCHA enabled.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/captcha_org_wide_settings.html#enabled_for CaptchaOrgWideSettings#enabled_for}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/captcha_org_wide_settings#enabled_for CaptchaOrgWideSettings#enabled_for}
 
 ---
 
@@ -68243,9 +68243,9 @@ const dataOktaAppConfig: DataOktaAppConfig = { ... }
 | [`lifecycle`](#cdktfprovideroktadataoktaappconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktadataoktaappconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
 | [`activeOnly`](#cdktfprovideroktadataoktaappconfigpropertyactiveonly) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Search only ACTIVE applications. |
-| [`id`](#cdktfprovideroktadataoktaappconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app.html#id DataOktaApp#id}. |
-| [`label`](#cdktfprovideroktadataoktaappconfigpropertylabel) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app.html#label DataOktaApp#label}. |
-| [`labelPrefix`](#cdktfprovideroktadataoktaappconfigpropertylabelprefix) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app.html#label_prefix DataOktaApp#label_prefix}. |
+| [`id`](#cdktfprovideroktadataoktaappconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app#id DataOktaApp#id}. |
+| [`label`](#cdktfprovideroktadataoktaappconfigpropertylabel) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app#label DataOktaApp#label}. |
+| [`labelPrefix`](#cdktfprovideroktadataoktaappconfigpropertylabelprefix) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app#label_prefix DataOktaApp#label_prefix}. |
 | [`skipGroups`](#cdktfprovideroktadataoktaappconfigpropertyskipgroups) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources. |
 | [`skipUsers`](#cdktfprovideroktadataoktaappconfigpropertyskipusers) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources. |
 
@@ -68301,7 +68301,7 @@ public readonly activeOnly: boolean | IResolvable;
 
 Search only ACTIVE applications.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app.html#active_only DataOktaApp#active_only}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app#active_only DataOktaApp#active_only}
 
 ---
 
@@ -68313,7 +68313,7 @@ public readonly id: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app.html#id DataOktaApp#id}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app#id DataOktaApp#id}.
 
 ---
 
@@ -68325,7 +68325,7 @@ public readonly label: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app.html#label DataOktaApp#label}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app#label DataOktaApp#label}.
 
 ---
 
@@ -68337,7 +68337,7 @@ public readonly labelPrefix: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app.html#label_prefix DataOktaApp#label_prefix}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app#label_prefix DataOktaApp#label_prefix}.
 
 ---
 
@@ -68351,7 +68351,7 @@ public readonly skipGroups: boolean | IResolvable;
 
 Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app.html#skip_groups DataOktaApp#skip_groups}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app#skip_groups DataOktaApp#skip_groups}
 
 ---
 
@@ -68365,7 +68365,7 @@ public readonly skipUsers: boolean | IResolvable;
 
 Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app.html#skip_users DataOktaApp#skip_users}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app#skip_users DataOktaApp#skip_users}
 
 ---
 
@@ -68441,7 +68441,7 @@ public readonly id: string;
 
 ID of the Okta App being queried for groups.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_group_assignments.html#id DataOktaAppGroupAssignments#id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_group_assignments#id DataOktaAppGroupAssignments#id}
 
 ---
 
@@ -68463,8 +68463,8 @@ const dataOktaAppMetadataSamlConfig: DataOktaAppMetadataSamlConfig = { ... }
 | [`dependsOn`](#cdktfprovideroktadataoktaappmetadatasamlconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktadataoktaappmetadatasamlconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktadataoktaappmetadatasamlconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`appId`](#cdktfprovideroktadataoktaappmetadatasamlconfigpropertyappid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_metadata_saml.html#app_id DataOktaAppMetadataSaml#app_id}. |
-| [`keyId`](#cdktfprovideroktadataoktaappmetadatasamlconfigpropertykeyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_metadata_saml.html#key_id DataOktaAppMetadataSaml#key_id}. |
+| [`appId`](#cdktfprovideroktadataoktaappmetadatasamlconfigpropertyappid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_metadata_saml#app_id DataOktaAppMetadataSaml#app_id}. |
+| [`keyId`](#cdktfprovideroktadataoktaappmetadatasamlconfigpropertykeyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_metadata_saml#key_id DataOktaAppMetadataSaml#key_id}. |
 
 ---
 
@@ -68516,7 +68516,7 @@ public readonly appId: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_metadata_saml.html#app_id DataOktaAppMetadataSaml#app_id}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_metadata_saml#app_id DataOktaAppMetadataSaml#app_id}.
 
 ---
 
@@ -68528,7 +68528,7 @@ public readonly keyId: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_metadata_saml.html#key_id DataOktaAppMetadataSaml#key_id}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_metadata_saml#key_id DataOktaAppMetadataSaml#key_id}.
 
 ---
 
@@ -68551,9 +68551,9 @@ const dataOktaAppOauthConfig: DataOktaAppOauthConfig = { ... }
 | [`lifecycle`](#cdktfprovideroktadataoktaappoauthconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktadataoktaappoauthconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
 | [`activeOnly`](#cdktfprovideroktadataoktaappoauthconfigpropertyactiveonly) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Search only ACTIVE applications. |
-| [`id`](#cdktfprovideroktadataoktaappoauthconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_oauth.html#id DataOktaAppOauth#id}. |
-| [`label`](#cdktfprovideroktadataoktaappoauthconfigpropertylabel) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_oauth.html#label DataOktaAppOauth#label}. |
-| [`labelPrefix`](#cdktfprovideroktadataoktaappoauthconfigpropertylabelprefix) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_oauth.html#label_prefix DataOktaAppOauth#label_prefix}. |
+| [`id`](#cdktfprovideroktadataoktaappoauthconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_oauth#id DataOktaAppOauth#id}. |
+| [`label`](#cdktfprovideroktadataoktaappoauthconfigpropertylabel) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_oauth#label DataOktaAppOauth#label}. |
+| [`labelPrefix`](#cdktfprovideroktadataoktaappoauthconfigpropertylabelprefix) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_oauth#label_prefix DataOktaAppOauth#label_prefix}. |
 | [`skipGroups`](#cdktfprovideroktadataoktaappoauthconfigpropertyskipgroups) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources. |
 | [`skipUsers`](#cdktfprovideroktadataoktaappoauthconfigpropertyskipusers) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources. |
 
@@ -68609,7 +68609,7 @@ public readonly activeOnly: boolean | IResolvable;
 
 Search only ACTIVE applications.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_oauth.html#active_only DataOktaAppOauth#active_only}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_oauth#active_only DataOktaAppOauth#active_only}
 
 ---
 
@@ -68621,7 +68621,7 @@ public readonly id: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_oauth.html#id DataOktaAppOauth#id}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_oauth#id DataOktaAppOauth#id}.
 
 ---
 
@@ -68633,7 +68633,7 @@ public readonly label: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_oauth.html#label DataOktaAppOauth#label}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_oauth#label DataOktaAppOauth#label}.
 
 ---
 
@@ -68645,7 +68645,7 @@ public readonly labelPrefix: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_oauth.html#label_prefix DataOktaAppOauth#label_prefix}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_oauth#label_prefix DataOktaAppOauth#label_prefix}.
 
 ---
 
@@ -68659,7 +68659,7 @@ public readonly skipGroups: boolean | IResolvable;
 
 Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_oauth.html#skip_groups DataOktaAppOauth#skip_groups}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_oauth#skip_groups DataOktaAppOauth#skip_groups}
 
 ---
 
@@ -68673,7 +68673,7 @@ public readonly skipUsers: boolean | IResolvable;
 
 Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_oauth.html#skip_users DataOktaAppOauth#skip_users}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_oauth#skip_users DataOktaAppOauth#skip_users}
 
 ---
 
@@ -68696,9 +68696,9 @@ const dataOktaAppSamlConfig: DataOktaAppSamlConfig = { ... }
 | [`lifecycle`](#cdktfprovideroktadataoktaappsamlconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktadataoktaappsamlconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
 | [`activeOnly`](#cdktfprovideroktadataoktaappsamlconfigpropertyactiveonly) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Search only ACTIVE applications. |
-| [`id`](#cdktfprovideroktadataoktaappsamlconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_saml.html#id DataOktaAppSaml#id}. |
-| [`label`](#cdktfprovideroktadataoktaappsamlconfigpropertylabel) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_saml.html#label DataOktaAppSaml#label}. |
-| [`labelPrefix`](#cdktfprovideroktadataoktaappsamlconfigpropertylabelprefix) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_saml.html#label_prefix DataOktaAppSaml#label_prefix}. |
+| [`id`](#cdktfprovideroktadataoktaappsamlconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_saml#id DataOktaAppSaml#id}. |
+| [`label`](#cdktfprovideroktadataoktaappsamlconfigpropertylabel) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_saml#label DataOktaAppSaml#label}. |
+| [`labelPrefix`](#cdktfprovideroktadataoktaappsamlconfigpropertylabelprefix) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_saml#label_prefix DataOktaAppSaml#label_prefix}. |
 | [`requestCompressed`](#cdktfprovideroktadataoktaappsamlconfigpropertyrequestcompressed) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Denotes whether the request is compressed or not. |
 | [`skipGroups`](#cdktfprovideroktadataoktaappsamlconfigpropertyskipgroups) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources. |
 | [`skipUsers`](#cdktfprovideroktadataoktaappsamlconfigpropertyskipusers) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources. |
@@ -68755,7 +68755,7 @@ public readonly activeOnly: boolean | IResolvable;
 
 Search only ACTIVE applications.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_saml.html#active_only DataOktaAppSaml#active_only}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_saml#active_only DataOktaAppSaml#active_only}
 
 ---
 
@@ -68767,7 +68767,7 @@ public readonly id: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_saml.html#id DataOktaAppSaml#id}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_saml#id DataOktaAppSaml#id}.
 
 ---
 
@@ -68779,7 +68779,7 @@ public readonly label: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_saml.html#label DataOktaAppSaml#label}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_saml#label DataOktaAppSaml#label}.
 
 ---
 
@@ -68791,7 +68791,7 @@ public readonly labelPrefix: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_saml.html#label_prefix DataOktaAppSaml#label_prefix}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_saml#label_prefix DataOktaAppSaml#label_prefix}.
 
 ---
 
@@ -68805,7 +68805,7 @@ public readonly requestCompressed: boolean | IResolvable;
 
 Denotes whether the request is compressed or not.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_saml.html#request_compressed DataOktaAppSaml#request_compressed}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_saml#request_compressed DataOktaAppSaml#request_compressed}
 
 ---
 
@@ -68819,7 +68819,7 @@ public readonly skipGroups: boolean | IResolvable;
 
 Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_saml.html#skip_groups DataOktaAppSaml#skip_groups}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_saml#skip_groups DataOktaAppSaml#skip_groups}
 
 ---
 
@@ -68833,7 +68833,7 @@ public readonly skipUsers: boolean | IResolvable;
 
 Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_saml.html#skip_users DataOktaAppSaml#skip_users}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_saml#skip_users DataOktaAppSaml#skip_users}
 
 ---
 
@@ -68909,7 +68909,7 @@ public readonly appId: string;
 
 App ID.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_signon_policy.html#app_id DataOktaAppSignonPolicy#app_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_signon_policy#app_id DataOktaAppSignonPolicy#app_id}
 
 ---
 
@@ -68985,7 +68985,7 @@ public readonly id: string;
 
 ID of the Okta App being queried for groups.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_user_assignments.html#id DataOktaAppUserAssignments#id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_user_assignments#id DataOktaAppUserAssignments#id}
 
 ---
 
@@ -69007,9 +69007,9 @@ const dataOktaAuthenticatorConfig: DataOktaAuthenticatorConfig = { ... }
 | [`dependsOn`](#cdktfprovideroktadataoktaauthenticatorconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktadataoktaauthenticatorconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktadataoktaauthenticatorconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`id`](#cdktfprovideroktadataoktaauthenticatorconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/authenticator.html#id DataOktaAuthenticator#id}. |
-| [`key`](#cdktfprovideroktadataoktaauthenticatorconfigpropertykey) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/authenticator.html#key DataOktaAuthenticator#key}. |
-| [`name`](#cdktfprovideroktadataoktaauthenticatorconfigpropertyname) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/authenticator.html#name DataOktaAuthenticator#name}. |
+| [`id`](#cdktfprovideroktadataoktaauthenticatorconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/authenticator#id DataOktaAuthenticator#id}. |
+| [`key`](#cdktfprovideroktadataoktaauthenticatorconfigpropertykey) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/authenticator#key DataOktaAuthenticator#key}. |
+| [`name`](#cdktfprovideroktadataoktaauthenticatorconfigpropertyname) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/authenticator#name DataOktaAuthenticator#name}. |
 
 ---
 
@@ -69061,7 +69061,7 @@ public readonly id: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/authenticator.html#id DataOktaAuthenticator#id}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/authenticator#id DataOktaAuthenticator#id}.
 
 ---
 
@@ -69073,7 +69073,7 @@ public readonly key: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/authenticator.html#key DataOktaAuthenticator#key}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/authenticator#key DataOktaAuthenticator#key}.
 
 ---
 
@@ -69085,7 +69085,7 @@ public readonly name: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/authenticator.html#name DataOktaAuthenticator#name}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/authenticator#name DataOktaAuthenticator#name}.
 
 ---
 
@@ -69108,8 +69108,8 @@ const dataOktaAuthServerClaimConfig: DataOktaAuthServerClaimConfig = { ... }
 | [`lifecycle`](#cdktfprovideroktadataoktaauthserverclaimconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktadataoktaauthserverclaimconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
 | [`authServerId`](#cdktfprovideroktadataoktaauthserverclaimconfigpropertyauthserverid)<span title="Required">*</span> | `string` | Auth server ID. |
-| [`id`](#cdktfprovideroktadataoktaauthserverclaimconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/auth_server_claim.html#id DataOktaAuthServerClaim#id}. |
-| [`name`](#cdktfprovideroktadataoktaauthserverclaimconfigpropertyname) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/auth_server_claim.html#name DataOktaAuthServerClaim#name}. |
+| [`id`](#cdktfprovideroktadataoktaauthserverclaimconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/auth_server_claim#id DataOktaAuthServerClaim#id}. |
+| [`name`](#cdktfprovideroktadataoktaauthserverclaimconfigpropertyname) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/auth_server_claim#name DataOktaAuthServerClaim#name}. |
 
 ---
 
@@ -69163,7 +69163,7 @@ public readonly authServerId: string;
 
 Auth server ID.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/auth_server_claim.html#auth_server_id DataOktaAuthServerClaim#auth_server_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/auth_server_claim#auth_server_id DataOktaAuthServerClaim#auth_server_id}
 
 ---
 
@@ -69175,7 +69175,7 @@ public readonly id: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/auth_server_claim.html#id DataOktaAuthServerClaim#id}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/auth_server_claim#id DataOktaAuthServerClaim#id}.
 
 ---
 
@@ -69187,7 +69187,7 @@ public readonly name: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/auth_server_claim.html#name DataOktaAuthServerClaim#name}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/auth_server_claim#name DataOktaAuthServerClaim#name}.
 
 ---
 
@@ -69263,7 +69263,7 @@ public readonly authServerId: string;
 
 Auth server ID.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/auth_server_claims.html#auth_server_id DataOktaAuthServerClaims#auth_server_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/auth_server_claims#auth_server_id DataOktaAuthServerClaims#auth_server_id}
 
 ---
 
@@ -69285,7 +69285,7 @@ const dataOktaAuthServerConfig: DataOktaAuthServerConfig = { ... }
 | [`dependsOn`](#cdktfprovideroktadataoktaauthserverconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktadataoktaauthserverconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktadataoktaauthserverconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`name`](#cdktfprovideroktadataoktaauthserverconfigpropertyname)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/auth_server.html#name DataOktaAuthServer#name}. |
+| [`name`](#cdktfprovideroktadataoktaauthserverconfigpropertyname)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/auth_server#name DataOktaAuthServer#name}. |
 
 ---
 
@@ -69337,7 +69337,7 @@ public readonly name: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/auth_server.html#name DataOktaAuthServer#name}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/auth_server#name DataOktaAuthServer#name}.
 
 ---
 
@@ -69414,7 +69414,7 @@ public readonly authServerId: string;
 
 Auth server ID.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/auth_server_policy.html#auth_server_id DataOktaAuthServerPolicy#auth_server_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/auth_server_policy#auth_server_id DataOktaAuthServerPolicy#auth_server_id}
 
 ---
 
@@ -69428,7 +69428,7 @@ public readonly name: string;
 
 Name of the policy.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/auth_server_policy.html#name DataOktaAuthServerPolicy#name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/auth_server_policy#name DataOktaAuthServerPolicy#name}
 
 ---
 
@@ -69504,7 +69504,7 @@ public readonly authServerId: string;
 
 Auth server ID.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/auth_server_scopes.html#auth_server_id DataOktaAuthServerScopes#auth_server_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/auth_server_scopes#auth_server_id DataOktaAuthServerScopes#auth_server_id}
 
 ---
 
@@ -69526,8 +69526,8 @@ const dataOktaBehaviorConfig: DataOktaBehaviorConfig = { ... }
 | [`dependsOn`](#cdktfprovideroktadataoktabehaviorconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktadataoktabehaviorconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktadataoktabehaviorconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`id`](#cdktfprovideroktadataoktabehaviorconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/behavior.html#id DataOktaBehavior#id}. |
-| [`name`](#cdktfprovideroktadataoktabehaviorconfigpropertyname) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/behavior.html#name DataOktaBehavior#name}. |
+| [`id`](#cdktfprovideroktadataoktabehaviorconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/behavior#id DataOktaBehavior#id}. |
+| [`name`](#cdktfprovideroktadataoktabehaviorconfigpropertyname) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/behavior#name DataOktaBehavior#name}. |
 
 ---
 
@@ -69579,7 +69579,7 @@ public readonly id: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/behavior.html#id DataOktaBehavior#id}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/behavior#id DataOktaBehavior#id}.
 
 ---
 
@@ -69591,7 +69591,7 @@ public readonly name: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/behavior.html#name DataOktaBehavior#name}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/behavior#name DataOktaBehavior#name}.
 
 ---
 
@@ -69667,7 +69667,7 @@ public readonly q: string;
 
 Searches the name property of behaviors for matching value.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/behaviors.html#q DataOktaBehaviors#q}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/behaviors#q DataOktaBehaviors#q}
 
 ---
 
@@ -69743,7 +69743,7 @@ public readonly type: string;
 
 Policy type: OKTA_SIGN_ON, PASSWORD, MFA_ENROLL, or IDP_DISCOVERY.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/default_policies.html#type DataOktaDefaultPolicies#type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/default_policies#type DataOktaDefaultPolicies#type}
 
 ---
 
@@ -69819,7 +69819,7 @@ public readonly type: string;
 
 Policy type: OKTA_SIGN_ON, PASSWORD, MFA_ENROLL, or IDP_DISCOVERY.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/default_policy.html#type DataOktaDefaultPolicy#type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/default_policy#type DataOktaDefaultPolicy#type}
 
 ---
 
@@ -69895,7 +69895,7 @@ public readonly includeUsers: boolean | IResolvable;
 
 Fetch group users, having default off cuts down on API calls.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/everyone_group.html#include_users DataOktaEveryoneGroup#include_users}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/everyone_group#include_users DataOktaEveryoneGroup#include_users}
 
 ---
 
@@ -69917,9 +69917,9 @@ const dataOktaGroupConfig: DataOktaGroupConfig = { ... }
 | [`dependsOn`](#cdktfprovideroktadataoktagroupconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktadataoktagroupconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktadataoktagroupconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`id`](#cdktfprovideroktadataoktagroupconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/group.html#id DataOktaGroup#id}. |
+| [`id`](#cdktfprovideroktadataoktagroupconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/group#id DataOktaGroup#id}. |
 | [`includeUsers`](#cdktfprovideroktadataoktagroupconfigpropertyincludeusers) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Fetch group users, having default off cuts down on API calls. |
-| [`name`](#cdktfprovideroktadataoktagroupconfigpropertyname) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/group.html#name DataOktaGroup#name}. |
+| [`name`](#cdktfprovideroktadataoktagroupconfigpropertyname) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/group#name DataOktaGroup#name}. |
 | [`type`](#cdktfprovideroktadataoktagroupconfigpropertytype) | `string` | Type of the group. |
 
 ---
@@ -69972,7 +69972,7 @@ public readonly id: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/group.html#id DataOktaGroup#id}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/group#id DataOktaGroup#id}.
 
 ---
 
@@ -69986,7 +69986,7 @@ public readonly includeUsers: boolean | IResolvable;
 
 Fetch group users, having default off cuts down on API calls.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/group.html#include_users DataOktaGroup#include_users}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/group#include_users DataOktaGroup#include_users}
 
 ---
 
@@ -69998,7 +69998,7 @@ public readonly name: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/group.html#name DataOktaGroup#name}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/group#name DataOktaGroup#name}.
 
 ---
 
@@ -70012,7 +70012,7 @@ public readonly type: string;
 
 Type of the group.
 
-When specified in the terraform resource, will act as a filter when searching for the group  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/group.html#type DataOktaGroup#type}
+When specified in the terraform resource, will act as a filter when searching for the group  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/group#type DataOktaGroup#type}
 
 ---
 
@@ -70090,7 +70090,7 @@ public readonly q: string;
 
 Searches the name property of groups for matching value.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/groups.html#q DataOktaGroups#q}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/groups#q DataOktaGroups#q}
 
 ---
 
@@ -70104,7 +70104,7 @@ public readonly search: string;
 
 Searches for groups with a supported filtering expression for all attributes except for '_embedded', '_links', and 'objectClass'.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/groups.html#search DataOktaGroups#search}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/groups#search DataOktaGroups#search}
 
 ---
 
@@ -70118,7 +70118,7 @@ public readonly type: string;
 
 Type of the group.
 
-When specified in the terraform resource, will act as a filter when searching for the groups  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/groups.html#type DataOktaGroups#type}
+When specified in the terraform resource, will act as a filter when searching for the groups  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/groups#type DataOktaGroups#type}
 
 ---
 
@@ -70140,7 +70140,7 @@ const dataOktaIdpMetadataSamlConfig: DataOktaIdpMetadataSamlConfig = { ... }
 | [`dependsOn`](#cdktfprovideroktadataoktaidpmetadatasamlconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktadataoktaidpmetadatasamlconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktadataoktaidpmetadatasamlconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`idpId`](#cdktfprovideroktadataoktaidpmetadatasamlconfigpropertyidpid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/idp_metadata_saml.html#idp_id DataOktaIdpMetadataSaml#idp_id}. |
+| [`idpId`](#cdktfprovideroktadataoktaidpmetadatasamlconfigpropertyidpid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/idp_metadata_saml#idp_id DataOktaIdpMetadataSaml#idp_id}. |
 
 ---
 
@@ -70192,7 +70192,7 @@ public readonly idpId: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/idp_metadata_saml.html#idp_id DataOktaIdpMetadataSaml#idp_id}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/idp_metadata_saml#idp_id DataOktaIdpMetadataSaml#idp_id}.
 
 ---
 
@@ -70214,8 +70214,8 @@ const dataOktaIdpOidcConfig: DataOktaIdpOidcConfig = { ... }
 | [`dependsOn`](#cdktfprovideroktadataoktaidpoidcconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktadataoktaidpoidcconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktadataoktaidpoidcconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`id`](#cdktfprovideroktadataoktaidpoidcconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/idp_oidc.html#id DataOktaIdpOidc#id}. |
-| [`name`](#cdktfprovideroktadataoktaidpoidcconfigpropertyname) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/idp_oidc.html#name DataOktaIdpOidc#name}. |
+| [`id`](#cdktfprovideroktadataoktaidpoidcconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/idp_oidc#id DataOktaIdpOidc#id}. |
+| [`name`](#cdktfprovideroktadataoktaidpoidcconfigpropertyname) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/idp_oidc#name DataOktaIdpOidc#name}. |
 
 ---
 
@@ -70267,7 +70267,7 @@ public readonly id: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/idp_oidc.html#id DataOktaIdpOidc#id}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/idp_oidc#id DataOktaIdpOidc#id}.
 
 ---
 
@@ -70279,7 +70279,7 @@ public readonly name: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/idp_oidc.html#name DataOktaIdpOidc#name}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/idp_oidc#name DataOktaIdpOidc#name}.
 
 ---
 
@@ -70301,8 +70301,8 @@ const dataOktaIdpSamlConfig: DataOktaIdpSamlConfig = { ... }
 | [`dependsOn`](#cdktfprovideroktadataoktaidpsamlconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktadataoktaidpsamlconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktadataoktaidpsamlconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`id`](#cdktfprovideroktadataoktaidpsamlconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/idp_saml.html#id DataOktaIdpSaml#id}. |
-| [`name`](#cdktfprovideroktadataoktaidpsamlconfigpropertyname) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/idp_saml.html#name DataOktaIdpSaml#name}. |
+| [`id`](#cdktfprovideroktadataoktaidpsamlconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/idp_saml#id DataOktaIdpSaml#id}. |
+| [`name`](#cdktfprovideroktadataoktaidpsamlconfigpropertyname) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/idp_saml#name DataOktaIdpSaml#name}. |
 
 ---
 
@@ -70354,7 +70354,7 @@ public readonly id: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/idp_saml.html#id DataOktaIdpSaml#id}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/idp_saml#id DataOktaIdpSaml#id}.
 
 ---
 
@@ -70366,7 +70366,7 @@ public readonly name: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/idp_saml.html#name DataOktaIdpSaml#name}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/idp_saml#name DataOktaIdpSaml#name}.
 
 ---
 
@@ -70443,7 +70443,7 @@ public readonly id: string;
 
 ID of the IdP.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/idp_social.html#id DataOktaIdpSocial#id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/idp_social#id DataOktaIdpSocial#id}
 
 ---
 
@@ -70457,7 +70457,7 @@ public readonly name: string;
 
 name of the IdP.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/idp_social.html#name DataOktaIdpSocial#name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/idp_social#name DataOktaIdpSocial#name}
 
 ---
 
@@ -70479,8 +70479,8 @@ const dataOktaNetworkZoneConfig: DataOktaNetworkZoneConfig = { ... }
 | [`dependsOn`](#cdktfprovideroktadataoktanetworkzoneconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktadataoktanetworkzoneconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktadataoktanetworkzoneconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`id`](#cdktfprovideroktadataoktanetworkzoneconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/network_zone.html#id DataOktaNetworkZone#id}. |
-| [`name`](#cdktfprovideroktadataoktanetworkzoneconfigpropertyname) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/network_zone.html#name DataOktaNetworkZone#name}. |
+| [`id`](#cdktfprovideroktadataoktanetworkzoneconfigpropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/network_zone#id DataOktaNetworkZone#id}. |
+| [`name`](#cdktfprovideroktadataoktanetworkzoneconfigpropertyname) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/network_zone#name DataOktaNetworkZone#name}. |
 
 ---
 
@@ -70532,7 +70532,7 @@ public readonly id: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/network_zone.html#id DataOktaNetworkZone#id}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/network_zone#id DataOktaNetworkZone#id}.
 
 ---
 
@@ -70544,7 +70544,7 @@ public readonly name: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/network_zone.html#name DataOktaNetworkZone#name}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/network_zone#name DataOktaNetworkZone#name}.
 
 ---
 
@@ -70621,7 +70621,7 @@ public readonly name: string;
 
 Name of the policy.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/policy.html#name DataOktaPolicy#name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/policy#name DataOktaPolicy#name}
 
 ---
 
@@ -70635,7 +70635,7 @@ public readonly type: string;
 
 Policy type: OKTA_SIGN_ON, PASSWORD, MFA_ENROLL, or IDP_DISCOVERY.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/policy.html#type DataOktaPolicy#type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/policy#type DataOktaPolicy#type}
 
 ---
 
@@ -70712,7 +70712,7 @@ public readonly notificationType: string;
 
 Type of the notification.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/role_subscription.html#notification_type DataOktaRoleSubscription#notification_type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/role_subscription#notification_type DataOktaRoleSubscription#notification_type}
 
 ---
 
@@ -70726,7 +70726,7 @@ public readonly roleType: string;
 
 Type of the role.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/role_subscription.html#role_type DataOktaRoleSubscription#role_type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/role_subscription#role_type DataOktaRoleSubscription#role_type}
 
 ---
 
@@ -70802,7 +70802,7 @@ public readonly filter: string;
 
 Filter criteria. Filter value will be URL-encoded by the provider.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/trusted_origins.html#filter DataOktaTrustedOrigins#filter}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/trusted_origins#filter DataOktaTrustedOrigins#filter}
 
 ---
 
@@ -70879,7 +70879,7 @@ public readonly search: DataOktaUserSearch[];
 
 search block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/user.html#search DataOktaUser#search}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/user#search DataOktaUser#search}
 
 ---
 
@@ -70893,7 +70893,7 @@ public readonly userId: string;
 
 Retrieve a single user based on their id.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/user.html#user_id DataOktaUser#user_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/user#user_id DataOktaUser#user_id}
 
 ---
 
@@ -71030,7 +71030,7 @@ public readonly search: DataOktaUsersSearch[];
 
 search block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/users.html#search DataOktaUsers#search}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/users#search DataOktaUsers#search}
 
 ---
 
@@ -71049,8 +71049,8 @@ const dataOktaUserSearch: DataOktaUserSearch = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | [`name`](#cdktfprovideroktadataoktausersearchpropertyname)<span title="Required">*</span> | `string` | Property name to search for. |
-| [`value`](#cdktfprovideroktadataoktausersearchpropertyvalue)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/user.html#value DataOktaUser#value}. |
-| [`comparison`](#cdktfprovideroktadataoktausersearchpropertycomparison) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/user.html#comparison DataOktaUser#comparison}. |
+| [`value`](#cdktfprovideroktadataoktausersearchpropertyvalue)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/user#value DataOktaUser#value}. |
+| [`comparison`](#cdktfprovideroktadataoktausersearchpropertycomparison) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/user#comparison DataOktaUser#comparison}. |
 
 ---
 
@@ -71064,7 +71064,7 @@ public readonly name: string;
 
 Property name to search for.
 
-This requires the search feature be on. Please see Okta documentation on their filter API for users. https://developer.okta.com/docs/api/resources/users#list-users-with-search  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/user.html#name DataOktaUser#name}
+This requires the search feature be on. Please see Okta documentation on their filter API for users. https://developer.okta.com/docs/api/resources/users#list-users-with-search  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/user#name DataOktaUser#name}
 
 ---
 
@@ -71076,7 +71076,7 @@ public readonly value: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/user.html#value DataOktaUser#value}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/user#value DataOktaUser#value}.
 
 ---
 
@@ -71088,7 +71088,7 @@ public readonly comparison: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/user.html#comparison DataOktaUser#comparison}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/user#comparison DataOktaUser#comparison}.
 
 ---
 
@@ -71164,7 +71164,7 @@ public readonly userId: string;
 
 ID of a Okta User.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/user_security_questions.html#user_id DataOktaUserSecurityQuestions#user_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/user_security_questions#user_id DataOktaUserSecurityQuestions#user_id}
 
 ---
 
@@ -71183,8 +71183,8 @@ const dataOktaUsersSearch: DataOktaUsersSearch = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | [`name`](#cdktfprovideroktadataoktauserssearchpropertyname)<span title="Required">*</span> | `string` | Property name to search for. |
-| [`value`](#cdktfprovideroktadataoktauserssearchpropertyvalue)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/users.html#value DataOktaUsers#value}. |
-| [`comparison`](#cdktfprovideroktadataoktauserssearchpropertycomparison) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/users.html#comparison DataOktaUsers#comparison}. |
+| [`value`](#cdktfprovideroktadataoktauserssearchpropertyvalue)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/users#value DataOktaUsers#value}. |
+| [`comparison`](#cdktfprovideroktadataoktauserssearchpropertycomparison) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/users#comparison DataOktaUsers#comparison}. |
 
 ---
 
@@ -71198,7 +71198,7 @@ public readonly name: string;
 
 Property name to search for.
 
-This requires the search feature be on. Please see Okta documentation on their filter API for users. https://developer.okta.com/docs/api/resources/users#list-users-with-search  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/users.html#name DataOktaUsers#name}
+This requires the search feature be on. Please see Okta documentation on their filter API for users. https://developer.okta.com/docs/api/resources/users#list-users-with-search  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/users#name DataOktaUsers#name}
 
 ---
 
@@ -71210,7 +71210,7 @@ public readonly value: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/users.html#value DataOktaUsers#value}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/users#value DataOktaUsers#value}.
 
 ---
 
@@ -71222,7 +71222,7 @@ public readonly comparison: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/users.html#comparison DataOktaUsers#comparison}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/users#comparison DataOktaUsers#comparison}.
 
 ---
 
@@ -71244,7 +71244,7 @@ const dataOktaUserTypeConfig: DataOktaUserTypeConfig = { ... }
 | [`dependsOn`](#cdktfprovideroktadataoktausertypeconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktadataoktausertypeconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktadataoktausertypeconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`name`](#cdktfprovideroktadataoktausertypeconfigpropertyname)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/user_type.html#name DataOktaUserType#name}. |
+| [`name`](#cdktfprovideroktadataoktausertypeconfigpropertyname)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/user_type#name DataOktaUserType#name}. |
 
 ---
 
@@ -71296,7 +71296,7 @@ public readonly name: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/user_type.html#name DataOktaUserType#name}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/user_type#name DataOktaUserType#name}.
 
 ---
 
@@ -71376,7 +71376,7 @@ public readonly certificate: string;
 
 Certificate content.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/domain_certificate.html#certificate DomainCertificate#certificate}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/domain_certificate#certificate DomainCertificate#certificate}
 
 ---
 
@@ -71390,7 +71390,7 @@ public readonly certificateChain: string;
 
 Certificate chain.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/domain_certificate.html#certificate_chain DomainCertificate#certificate_chain}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/domain_certificate#certificate_chain DomainCertificate#certificate_chain}
 
 ---
 
@@ -71404,7 +71404,7 @@ public readonly domainId: string;
 
 Domain's ID.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/domain_certificate.html#domain_id DomainCertificate#domain_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/domain_certificate#domain_id DomainCertificate#domain_id}
 
 ---
 
@@ -71418,7 +71418,7 @@ public readonly privateKey: string;
 
 Certificate private key.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/domain_certificate.html#private_key DomainCertificate#private_key}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/domain_certificate#private_key DomainCertificate#private_key}
 
 ---
 
@@ -71432,7 +71432,7 @@ public readonly type: string;
 
 Certificate type.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/domain_certificate.html#type DomainCertificate#type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/domain_certificate#type DomainCertificate#type}
 
 ---
 
@@ -71509,7 +71509,7 @@ public readonly name: string;
 
 Custom Domain name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/domain.html#name Domain#name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/domain#name Domain#name}
 
 ---
 
@@ -71523,7 +71523,7 @@ public readonly verify: boolean | IResolvable;
 
 Indicates whether the domain should be verified during creation.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/domain.html#verify Domain#verify}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/domain#verify Domain#verify}
 
 ---
 
@@ -71599,7 +71599,7 @@ public readonly domainId: string;
 
 Domain's ID.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/domain_verification.html#domain_id DomainVerification#domain_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/domain_verification#domain_id DomainVerification#domain_id}
 
 ---
 
@@ -71677,7 +71677,7 @@ public readonly fromAddress: string;
 
 Email address to send from.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/email_sender.html#from_address EmailSender#from_address}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/email_sender#from_address EmailSender#from_address}
 
 ---
 
@@ -71691,7 +71691,7 @@ public readonly fromName: string;
 
 Name of sender.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/email_sender.html#from_name EmailSender#from_name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/email_sender#from_name EmailSender#from_name}
 
 ---
 
@@ -71705,7 +71705,7 @@ public readonly subdomain: string;
 
 Mail domain to send from.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/email_sender.html#subdomain EmailSender#subdomain}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/email_sender#subdomain EmailSender#subdomain}
 
 ---
 
@@ -71781,7 +71781,7 @@ public readonly senderId: string;
 
 Email sender ID.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/email_sender_verification.html#sender_id EmailSenderVerification#sender_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/email_sender_verification#sender_id EmailSenderVerification#sender_id}
 
 ---
 
@@ -71803,12 +71803,12 @@ const eventHookConfig: EventHookConfig = { ... }
 | [`dependsOn`](#cdktfprovideroktaeventhookconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktaeventhookconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktaeventhookconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`channel`](#cdktfprovideroktaeventhookconfigpropertychannel)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/event_hook.html#channel EventHook#channel}. |
-| [`events`](#cdktfprovideroktaeventhookconfigpropertyevents)<span title="Required">*</span> | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/event_hook.html#events EventHook#events}. |
-| [`name`](#cdktfprovideroktaeventhookconfigpropertyname)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/event_hook.html#name EventHook#name}. |
-| [`auth`](#cdktfprovideroktaeventhookconfigpropertyauth) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/event_hook.html#auth EventHook#auth}. |
+| [`channel`](#cdktfprovideroktaeventhookconfigpropertychannel)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/event_hook#channel EventHook#channel}. |
+| [`events`](#cdktfprovideroktaeventhookconfigpropertyevents)<span title="Required">*</span> | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/event_hook#events EventHook#events}. |
+| [`name`](#cdktfprovideroktaeventhookconfigpropertyname)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/event_hook#name EventHook#name}. |
+| [`auth`](#cdktfprovideroktaeventhookconfigpropertyauth) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/event_hook#auth EventHook#auth}. |
 | [`headers`](#cdktfprovideroktaeventhookconfigpropertyheaders) | [`@cdktf/provider-okta.EventHookHeaders`](#@cdktf/provider-okta.EventHookHeaders)[] | headers block. |
-| [`status`](#cdktfprovideroktaeventhookconfigpropertystatus) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/event_hook.html#status EventHook#status}. |
+| [`status`](#cdktfprovideroktaeventhookconfigpropertystatus) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/event_hook#status EventHook#status}. |
 
 ---
 
@@ -71860,7 +71860,7 @@ public readonly channel: IResolvable | {[ key: string ]: string};
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/event_hook.html#channel EventHook#channel}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/event_hook#channel EventHook#channel}.
 
 ---
 
@@ -71872,7 +71872,7 @@ public readonly events: string[];
 
 - *Type:* `string`[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/event_hook.html#events EventHook#events}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/event_hook#events EventHook#events}.
 
 ---
 
@@ -71884,7 +71884,7 @@ public readonly name: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/event_hook.html#name EventHook#name}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/event_hook#name EventHook#name}.
 
 ---
 
@@ -71896,7 +71896,7 @@ public readonly auth: IResolvable | {[ key: string ]: string};
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/event_hook.html#auth EventHook#auth}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/event_hook#auth EventHook#auth}.
 
 ---
 
@@ -71910,7 +71910,7 @@ public readonly headers: EventHookHeaders[];
 
 headers block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/event_hook.html#headers EventHook#headers}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/event_hook#headers EventHook#headers}
 
 ---
 
@@ -71922,7 +71922,7 @@ public readonly status: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/event_hook.html#status EventHook#status}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/event_hook#status EventHook#status}.
 
 ---
 
@@ -71940,8 +71940,8 @@ const eventHookHeaders: EventHookHeaders = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`key`](#cdktfprovideroktaeventhookheaderspropertykey) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/event_hook.html#key EventHook#key}. |
-| [`value`](#cdktfprovideroktaeventhookheaderspropertyvalue) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/event_hook.html#value EventHook#value}. |
+| [`key`](#cdktfprovideroktaeventhookheaderspropertykey) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/event_hook#key EventHook#key}. |
+| [`value`](#cdktfprovideroktaeventhookheaderspropertyvalue) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/event_hook#value EventHook#value}. |
 
 ---
 
@@ -71953,7 +71953,7 @@ public readonly key: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/event_hook.html#key EventHook#key}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/event_hook#key EventHook#key}.
 
 ---
 
@@ -71965,7 +71965,7 @@ public readonly value: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/event_hook.html#value EventHook#value}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/event_hook#value EventHook#value}.
 
 ---
 
@@ -72041,7 +72041,7 @@ public readonly eventHookId: string;
 
 Event hook ID.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/event_hook_verification.html#event_hook_id EventHookVerification#event_hook_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/event_hook_verification#event_hook_id EventHookVerification#event_hook_id}
 
 ---
 
@@ -72118,7 +72118,7 @@ public readonly providerId: string;
 
 Factor provider ID.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/factor.html#provider_id Factor#provider_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/factor#provider_id Factor#provider_id}
 
 ---
 
@@ -72132,7 +72132,7 @@ public readonly active: boolean | IResolvable;
 
 Is this provider active?
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/factor.html#active Factor#active}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/factor#active Factor#active}
 
 ---
 
@@ -72213,7 +72213,7 @@ public readonly name: string;
 
 Factor name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/factor_totp.html#name FactorTotp#name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/factor_totp#name FactorTotp#name}
 
 ---
 
@@ -72227,7 +72227,7 @@ public readonly clockDriftInterval: number;
 
 Clock drift interval.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/factor_totp.html#clock_drift_interval FactorTotp#clock_drift_interval}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/factor_totp#clock_drift_interval FactorTotp#clock_drift_interval}
 
 ---
 
@@ -72241,7 +72241,7 @@ public readonly hmacAlgorithm: string;
 
 Hash-based message authentication code algorithm.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/factor_totp.html#hmac_algorithm FactorTotp#hmac_algorithm}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/factor_totp#hmac_algorithm FactorTotp#hmac_algorithm}
 
 ---
 
@@ -72255,7 +72255,7 @@ public readonly otpLength: number;
 
 Factor name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/factor_totp.html#otp_length FactorTotp#otp_length}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/factor_totp#otp_length FactorTotp#otp_length}
 
 ---
 
@@ -72269,7 +72269,7 @@ public readonly sharedSecretEncoding: string;
 
 Shared secret encoding.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/factor_totp.html#shared_secret_encoding FactorTotp#shared_secret_encoding}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/factor_totp#shared_secret_encoding FactorTotp#shared_secret_encoding}
 
 ---
 
@@ -72283,7 +72283,7 @@ public readonly timeStep: number;
 
 Time step in seconds.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/factor_totp.html#time_step FactorTotp#time_step}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/factor_totp#time_step FactorTotp#time_step}
 
 ---
 
@@ -72362,7 +72362,7 @@ public readonly name: string;
 
 Group name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group.html#name Group#name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group#name Group#name}
 
 ---
 
@@ -72376,7 +72376,7 @@ public readonly description: string;
 
 Group description.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group.html#description Group#description}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group#description Group#description}
 
 ---
 
@@ -72390,7 +72390,7 @@ public readonly skipUsers: boolean | IResolvable;
 
 Ignore users sync. This is a temporary solution until 'users' field is supported in this resource.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group.html#skip_users Group#skip_users}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group#skip_users Group#skip_users}
 
 ---
 
@@ -72404,7 +72404,7 @@ public readonly users: string[];
 
 Users associated with the group. This can also be done per user.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group.html#users Group#users}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group#users Group#users}
 
 ---
 
@@ -72481,7 +72481,7 @@ public readonly groupId: string;
 
 ID of a Okta Group.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_membership.html#group_id GroupMembership#group_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_membership#group_id GroupMembership#group_id}
 
 ---
 
@@ -72495,7 +72495,7 @@ public readonly userId: string;
 
 ID of a Okta User.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_membership.html#user_id GroupMembership#user_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_membership#user_id GroupMembership#user_id}
 
 ---
 
@@ -72572,7 +72572,7 @@ public readonly groupId: string;
 
 ID of a Okta group.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_memberships.html#group_id GroupMemberships#group_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_memberships#group_id GroupMemberships#group_id}
 
 ---
 
@@ -72586,7 +72586,7 @@ public readonly users: string[];
 
 The list of Okta user IDs which the group should have membership managed for.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_memberships.html#users GroupMemberships#users}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_memberships#users GroupMemberships#users}
 
 ---
 
@@ -72666,7 +72666,7 @@ public readonly groupId: string;
 
 ID of group to attach admin roles to.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_role.html#group_id GroupRole#group_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_role#group_id GroupRole#group_id}
 
 ---
 
@@ -72680,7 +72680,7 @@ public readonly roleType: string;
 
 Type of Role to assign.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_role.html#role_type GroupRole#role_type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_role#role_type GroupRole#role_type}
 
 ---
 
@@ -72694,7 +72694,7 @@ public readonly disableNotifications: boolean | IResolvable;
 
 When this setting is enabled, the admins won't receive any of the default Okta administrator emails.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_role.html#disable_notifications GroupRole#disable_notifications}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_role#disable_notifications GroupRole#disable_notifications}
 
 ---
 
@@ -72708,7 +72708,7 @@ public readonly targetAppList: string[];
 
 List of apps ids for the targets of the admin role.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_role.html#target_app_list GroupRole#target_app_list}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_role#target_app_list GroupRole#target_app_list}
 
 ---
 
@@ -72722,7 +72722,7 @@ public readonly targetGroupList: string[];
 
 List of groups ids for the targets of the admin role.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_role.html#target_group_list GroupRole#target_group_list}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_role#target_group_list GroupRole#target_group_list}
 
 ---
 
@@ -72799,7 +72799,7 @@ public readonly groupId: string;
 
 ID of group to attach admin roles to.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_roles.html#group_id GroupRoles#group_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_roles#group_id GroupRoles#group_id}
 
 ---
 
@@ -72813,7 +72813,7 @@ public readonly adminRoles: string[];
 
 Admin roles associated with the group. This can also be done per user.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_roles.html#admin_roles GroupRoles#admin_roles}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_roles#admin_roles GroupRoles#admin_roles}
 
 ---
 
@@ -72835,12 +72835,12 @@ const groupRuleConfig: GroupRuleConfig = { ... }
 | [`dependsOn`](#cdktfprovideroktagroupruleconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktagroupruleconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktagroupruleconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`expressionValue`](#cdktfprovideroktagroupruleconfigpropertyexpressionvalue)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_rule.html#expression_value GroupRule#expression_value}. |
-| [`groupAssignments`](#cdktfprovideroktagroupruleconfigpropertygroupassignments)<span title="Required">*</span> | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_rule.html#group_assignments GroupRule#group_assignments}. |
-| [`name`](#cdktfprovideroktagroupruleconfigpropertyname)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_rule.html#name GroupRule#name}. |
-| [`expressionType`](#cdktfprovideroktagroupruleconfigpropertyexpressiontype) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_rule.html#expression_type GroupRule#expression_type}. |
+| [`expressionValue`](#cdktfprovideroktagroupruleconfigpropertyexpressionvalue)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_rule#expression_value GroupRule#expression_value}. |
+| [`groupAssignments`](#cdktfprovideroktagroupruleconfigpropertygroupassignments)<span title="Required">*</span> | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_rule#group_assignments GroupRule#group_assignments}. |
+| [`name`](#cdktfprovideroktagroupruleconfigpropertyname)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_rule#name GroupRule#name}. |
+| [`expressionType`](#cdktfprovideroktagroupruleconfigpropertyexpressiontype) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_rule#expression_type GroupRule#expression_type}. |
 | [`removeAssignedUsers`](#cdktfprovideroktagroupruleconfigpropertyremoveassignedusers) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Remove users added by this rule from the assigned group after deleting this resource. |
-| [`status`](#cdktfprovideroktagroupruleconfigpropertystatus) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_rule.html#status GroupRule#status}. |
+| [`status`](#cdktfprovideroktagroupruleconfigpropertystatus) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_rule#status GroupRule#status}. |
 | [`usersExcluded`](#cdktfprovideroktagroupruleconfigpropertyusersexcluded) | `string`[] | The list of user IDs that would be excluded when rules are processed. |
 
 ---
@@ -72893,7 +72893,7 @@ public readonly expressionValue: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_rule.html#expression_value GroupRule#expression_value}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_rule#expression_value GroupRule#expression_value}.
 
 ---
 
@@ -72905,7 +72905,7 @@ public readonly groupAssignments: string[];
 
 - *Type:* `string`[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_rule.html#group_assignments GroupRule#group_assignments}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_rule#group_assignments GroupRule#group_assignments}.
 
 ---
 
@@ -72917,7 +72917,7 @@ public readonly name: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_rule.html#name GroupRule#name}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_rule#name GroupRule#name}.
 
 ---
 
@@ -72929,7 +72929,7 @@ public readonly expressionType: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_rule.html#expression_type GroupRule#expression_type}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_rule#expression_type GroupRule#expression_type}.
 
 ---
 
@@ -72943,7 +72943,7 @@ public readonly removeAssignedUsers: boolean | IResolvable;
 
 Remove users added by this rule from the assigned group after deleting this resource.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_rule.html#remove_assigned_users GroupRule#remove_assigned_users}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_rule#remove_assigned_users GroupRule#remove_assigned_users}
 
 ---
 
@@ -72955,7 +72955,7 @@ public readonly status: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_rule.html#status GroupRule#status}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_rule#status GroupRule#status}.
 
 ---
 
@@ -72969,7 +72969,7 @@ public readonly usersExcluded: string[];
 
 The list of user IDs that would be excluded when rules are processed.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_rule.html#users_excluded GroupRule#users_excluded}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_rule#users_excluded GroupRule#users_excluded}
 
 ---
 
@@ -73002,7 +73002,7 @@ public readonly const: string;
 
 Enum value.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_schema_property.html#const GroupSchemaProperty#const}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_schema_property#const GroupSchemaProperty#const}
 
 ---
 
@@ -73016,7 +73016,7 @@ public readonly title: string;
 
 Enum title.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_schema_property.html#title GroupSchemaProperty#title}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_schema_property#title GroupSchemaProperty#title}
 
 ---
 
@@ -73055,7 +73055,7 @@ const groupSchemaPropertyConfig: GroupSchemaPropertyConfig = { ... }
 | [`oneOf`](#cdktfprovideroktagroupschemapropertyconfigpropertyoneof) | [`@cdktf/provider-okta.GroupSchemaPropertyOneOf`](#@cdktf/provider-okta.GroupSchemaPropertyOneOf)[] | one_of block. |
 | [`permissions`](#cdktfprovideroktagroupschemapropertyconfigpropertypermissions) | `string` | SubSchema permissions: HIDE, READ_ONLY, or READ_WRITE. |
 | [`required`](#cdktfprovideroktagroupschemapropertyconfigpropertyrequired) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Whether the subschema is required. |
-| [`scope`](#cdktfprovideroktagroupschemapropertyconfigpropertyscope) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_schema_property.html#scope GroupSchemaProperty#scope}. |
+| [`scope`](#cdktfprovideroktagroupschemapropertyconfigpropertyscope) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_schema_property#scope GroupSchemaProperty#scope}. |
 | [`unique`](#cdktfprovideroktagroupschemapropertyconfigpropertyunique) | `string` | Subschema unique restriction. |
 
 ---
@@ -73110,7 +73110,7 @@ public readonly index: string;
 
 Subschema unique string identifier.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_schema_property.html#index GroupSchemaProperty#index}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_schema_property#index GroupSchemaProperty#index}
 
 ---
 
@@ -73124,7 +73124,7 @@ public readonly title: string;
 
 Subschema title (display name).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_schema_property.html#title GroupSchemaProperty#title}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_schema_property#title GroupSchemaProperty#title}
 
 ---
 
@@ -73138,7 +73138,7 @@ public readonly type: string;
 
 Subschema type: string, boolean, number, integer, array, or object.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_schema_property.html#type GroupSchemaProperty#type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_schema_property#type GroupSchemaProperty#type}
 
 ---
 
@@ -73152,7 +73152,7 @@ public readonly arrayEnum: string[];
 
 Custom Subschema enumerated value of a property of type array.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_schema_property.html#array_enum GroupSchemaProperty#array_enum}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_schema_property#array_enum GroupSchemaProperty#array_enum}
 
 ---
 
@@ -73166,7 +73166,7 @@ public readonly arrayOneOf: GroupSchemaPropertyArrayOneOf[];
 
 array_one_of block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_schema_property.html#array_one_of GroupSchemaProperty#array_one_of}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_schema_property#array_one_of GroupSchemaProperty#array_one_of}
 
 ---
 
@@ -73180,7 +73180,7 @@ public readonly arrayType: string;
 
 Subschema array type: string, number, integer, reference. Type field must be an array.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_schema_property.html#array_type GroupSchemaProperty#array_type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_schema_property#array_type GroupSchemaProperty#array_type}
 
 ---
 
@@ -73194,7 +73194,7 @@ public readonly description: string;
 
 Custom Subschema description.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_schema_property.html#description GroupSchemaProperty#description}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_schema_property#description GroupSchemaProperty#description}
 
 ---
 
@@ -73208,7 +73208,7 @@ public readonly enum: string[];
 
 Custom Subschema enumerated value of the property. see: developer.okta.com/docs/api/resources/schemas#user-profile-schema-property-object.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_schema_property.html#enum GroupSchemaProperty#enum}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_schema_property#enum GroupSchemaProperty#enum}
 
 ---
 
@@ -73222,7 +73222,7 @@ public readonly externalName: string;
 
 Subschema external name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_schema_property.html#external_name GroupSchemaProperty#external_name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_schema_property#external_name GroupSchemaProperty#external_name}
 
 ---
 
@@ -73236,7 +73236,7 @@ public readonly externalNamespace: string;
 
 Subschema external namespace.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_schema_property.html#external_namespace GroupSchemaProperty#external_namespace}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_schema_property#external_namespace GroupSchemaProperty#external_namespace}
 
 ---
 
@@ -73250,7 +73250,7 @@ public readonly master: string;
 
 SubSchema profile manager, if not set it will inherit its setting.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_schema_property.html#master GroupSchemaProperty#master}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_schema_property#master GroupSchemaProperty#master}
 
 ---
 
@@ -73264,7 +73264,7 @@ public readonly masterOverridePriority: GroupSchemaPropertyMasterOverridePriorit
 
 master_override_priority block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_schema_property.html#master_override_priority GroupSchemaProperty#master_override_priority}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_schema_property#master_override_priority GroupSchemaProperty#master_override_priority}
 
 ---
 
@@ -73278,7 +73278,7 @@ public readonly maxLength: number;
 
 Subschema of type string maximum length.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_schema_property.html#max_length GroupSchemaProperty#max_length}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_schema_property#max_length GroupSchemaProperty#max_length}
 
 ---
 
@@ -73292,7 +73292,7 @@ public readonly minLength: number;
 
 Subschema of type string minimum length.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_schema_property.html#min_length GroupSchemaProperty#min_length}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_schema_property#min_length GroupSchemaProperty#min_length}
 
 ---
 
@@ -73306,7 +73306,7 @@ public readonly oneOf: GroupSchemaPropertyOneOf[];
 
 one_of block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_schema_property.html#one_of GroupSchemaProperty#one_of}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_schema_property#one_of GroupSchemaProperty#one_of}
 
 ---
 
@@ -73320,7 +73320,7 @@ public readonly permissions: string;
 
 SubSchema permissions: HIDE, READ_ONLY, or READ_WRITE.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_schema_property.html#permissions GroupSchemaProperty#permissions}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_schema_property#permissions GroupSchemaProperty#permissions}
 
 ---
 
@@ -73334,7 +73334,7 @@ public readonly required: boolean | IResolvable;
 
 Whether the subschema is required.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_schema_property.html#required GroupSchemaProperty#required}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_schema_property#required GroupSchemaProperty#required}
 
 ---
 
@@ -73346,7 +73346,7 @@ public readonly scope: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_schema_property.html#scope GroupSchemaProperty#scope}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_schema_property#scope GroupSchemaProperty#scope}.
 
 ---
 
@@ -73360,7 +73360,7 @@ public readonly unique: string;
 
 Subschema unique restriction.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_schema_property.html#unique GroupSchemaProperty#unique}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_schema_property#unique GroupSchemaProperty#unique}
 
 ---
 
@@ -73378,8 +73378,8 @@ const groupSchemaPropertyMasterOverridePriority: GroupSchemaPropertyMasterOverri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`value`](#cdktfprovideroktagroupschemapropertymasteroverrideprioritypropertyvalue)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_schema_property.html#value GroupSchemaProperty#value}. |
-| [`type`](#cdktfprovideroktagroupschemapropertymasteroverrideprioritypropertytype) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_schema_property.html#type GroupSchemaProperty#type}. |
+| [`value`](#cdktfprovideroktagroupschemapropertymasteroverrideprioritypropertyvalue)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_schema_property#value GroupSchemaProperty#value}. |
+| [`type`](#cdktfprovideroktagroupschemapropertymasteroverrideprioritypropertytype) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_schema_property#type GroupSchemaProperty#type}. |
 
 ---
 
@@ -73391,7 +73391,7 @@ public readonly value: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_schema_property.html#value GroupSchemaProperty#value}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_schema_property#value GroupSchemaProperty#value}.
 
 ---
 
@@ -73403,7 +73403,7 @@ public readonly type: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_schema_property.html#type GroupSchemaProperty#type}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_schema_property#type GroupSchemaProperty#type}.
 
 ---
 
@@ -73436,7 +73436,7 @@ public readonly const: string;
 
 Enum value.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_schema_property.html#const GroupSchemaProperty#const}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_schema_property#const GroupSchemaProperty#const}
 
 ---
 
@@ -73450,7 +73450,7 @@ public readonly title: string;
 
 Enum title.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_schema_property.html#title GroupSchemaProperty#title}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_schema_property#title GroupSchemaProperty#title}
 
 ---
 
@@ -73472,40 +73472,40 @@ const idpConfig: IdpConfig = { ... }
 | [`dependsOn`](#cdktfprovideroktaidpconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktaidpconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktaidpconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`authorizationBinding`](#cdktfprovideroktaidpconfigpropertyauthorizationbinding)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp.html#authorization_binding Idp#authorization_binding}. |
-| [`authorizationUrl`](#cdktfprovideroktaidpconfigpropertyauthorizationurl)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp.html#authorization_url Idp#authorization_url}. |
-| [`clientId`](#cdktfprovideroktaidpconfigpropertyclientid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp.html#client_id Idp#client_id}. |
-| [`clientSecret`](#cdktfprovideroktaidpconfigpropertyclientsecret)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp.html#client_secret Idp#client_secret}. |
-| [`issuerUrl`](#cdktfprovideroktaidpconfigpropertyissuerurl)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp.html#issuer_url Idp#issuer_url}. |
-| [`jwksBinding`](#cdktfprovideroktaidpconfigpropertyjwksbinding)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp.html#jwks_binding Idp#jwks_binding}. |
-| [`jwksUrl`](#cdktfprovideroktaidpconfigpropertyjwksurl)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp.html#jwks_url Idp#jwks_url}. |
+| [`authorizationBinding`](#cdktfprovideroktaidpconfigpropertyauthorizationbinding)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp#authorization_binding Idp#authorization_binding}. |
+| [`authorizationUrl`](#cdktfprovideroktaidpconfigpropertyauthorizationurl)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp#authorization_url Idp#authorization_url}. |
+| [`clientId`](#cdktfprovideroktaidpconfigpropertyclientid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp#client_id Idp#client_id}. |
+| [`clientSecret`](#cdktfprovideroktaidpconfigpropertyclientsecret)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp#client_secret Idp#client_secret}. |
+| [`issuerUrl`](#cdktfprovideroktaidpconfigpropertyissuerurl)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp#issuer_url Idp#issuer_url}. |
+| [`jwksBinding`](#cdktfprovideroktaidpconfigpropertyjwksbinding)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp#jwks_binding Idp#jwks_binding}. |
+| [`jwksUrl`](#cdktfprovideroktaidpconfigpropertyjwksurl)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp#jwks_url Idp#jwks_url}. |
 | [`name`](#cdktfprovideroktaidpconfigpropertyname)<span title="Required">*</span> | `string` | Name of the IdP. |
-| [`scopes`](#cdktfprovideroktaidpconfigpropertyscopes)<span title="Required">*</span> | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp.html#scopes Idp#scopes}. |
-| [`tokenBinding`](#cdktfprovideroktaidpconfigpropertytokenbinding)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp.html#token_binding Idp#token_binding}. |
-| [`tokenUrl`](#cdktfprovideroktaidpconfigpropertytokenurl)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp.html#token_url Idp#token_url}. |
-| [`accountLinkAction`](#cdktfprovideroktaidpconfigpropertyaccountlinkaction) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp.html#account_link_action Idp#account_link_action}. |
-| [`accountLinkGroupInclude`](#cdktfprovideroktaidpconfigpropertyaccountlinkgroupinclude) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp.html#account_link_group_include Idp#account_link_group_include}. |
-| [`deprovisionedAction`](#cdktfprovideroktaidpconfigpropertydeprovisionedaction) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp.html#deprovisioned_action Idp#deprovisioned_action}. |
-| [`groupsAction`](#cdktfprovideroktaidpconfigpropertygroupsaction) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp.html#groups_action Idp#groups_action}. |
-| [`groupsAssignment`](#cdktfprovideroktaidpconfigpropertygroupsassignment) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp.html#groups_assignment Idp#groups_assignment}. |
-| [`groupsAttribute`](#cdktfprovideroktaidpconfigpropertygroupsattribute) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp.html#groups_attribute Idp#groups_attribute}. |
-| [`groupsFilter`](#cdktfprovideroktaidpconfigpropertygroupsfilter) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp.html#groups_filter Idp#groups_filter}. |
+| [`scopes`](#cdktfprovideroktaidpconfigpropertyscopes)<span title="Required">*</span> | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp#scopes Idp#scopes}. |
+| [`tokenBinding`](#cdktfprovideroktaidpconfigpropertytokenbinding)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp#token_binding Idp#token_binding}. |
+| [`tokenUrl`](#cdktfprovideroktaidpconfigpropertytokenurl)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp#token_url Idp#token_url}. |
+| [`accountLinkAction`](#cdktfprovideroktaidpconfigpropertyaccountlinkaction) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp#account_link_action Idp#account_link_action}. |
+| [`accountLinkGroupInclude`](#cdktfprovideroktaidpconfigpropertyaccountlinkgroupinclude) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp#account_link_group_include Idp#account_link_group_include}. |
+| [`deprovisionedAction`](#cdktfprovideroktaidpconfigpropertydeprovisionedaction) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp#deprovisioned_action Idp#deprovisioned_action}. |
+| [`groupsAction`](#cdktfprovideroktaidpconfigpropertygroupsaction) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp#groups_action Idp#groups_action}. |
+| [`groupsAssignment`](#cdktfprovideroktaidpconfigpropertygroupsassignment) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp#groups_assignment Idp#groups_assignment}. |
+| [`groupsAttribute`](#cdktfprovideroktaidpconfigpropertygroupsattribute) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp#groups_attribute Idp#groups_attribute}. |
+| [`groupsFilter`](#cdktfprovideroktaidpconfigpropertygroupsfilter) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp#groups_filter Idp#groups_filter}. |
 | [`issuerMode`](#cdktfprovideroktaidpconfigpropertyissuermode) | `string` | Indicates whether Okta uses the original Okta org domain URL, or a custom domain URL. |
-| [`maxClockSkew`](#cdktfprovideroktaidpconfigpropertymaxclockskew) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp.html#max_clock_skew Idp#max_clock_skew}. |
-| [`profileMaster`](#cdktfprovideroktaidpconfigpropertyprofilemaster) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp.html#profile_master Idp#profile_master}. |
-| [`protocolType`](#cdktfprovideroktaidpconfigpropertyprotocoltype) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp.html#protocol_type Idp#protocol_type}. |
-| [`provisioningAction`](#cdktfprovideroktaidpconfigpropertyprovisioningaction) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp.html#provisioning_action Idp#provisioning_action}. |
+| [`maxClockSkew`](#cdktfprovideroktaidpconfigpropertymaxclockskew) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp#max_clock_skew Idp#max_clock_skew}. |
+| [`profileMaster`](#cdktfprovideroktaidpconfigpropertyprofilemaster) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp#profile_master Idp#profile_master}. |
+| [`protocolType`](#cdktfprovideroktaidpconfigpropertyprotocoltype) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp#protocol_type Idp#protocol_type}. |
+| [`provisioningAction`](#cdktfprovideroktaidpconfigpropertyprovisioningaction) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp#provisioning_action Idp#provisioning_action}. |
 | [`requestSignatureAlgorithm`](#cdktfprovideroktaidpconfigpropertyrequestsignaturealgorithm) | `string` | algorithm to use to sign requests. |
 | [`requestSignatureScope`](#cdktfprovideroktaidpconfigpropertyrequestsignaturescope) | `string` | algorithm to use to sign response. |
 | [`responseSignatureAlgorithm`](#cdktfprovideroktaidpconfigpropertyresponsesignaturealgorithm) | `string` | algorithm to use to sign requests. |
 | [`responseSignatureScope`](#cdktfprovideroktaidpconfigpropertyresponsesignaturescope) | `string` | algorithm to use to sign response. |
-| [`status`](#cdktfprovideroktaidpconfigpropertystatus) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp.html#status Idp#status}. |
-| [`subjectMatchAttribute`](#cdktfprovideroktaidpconfigpropertysubjectmatchattribute) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp.html#subject_match_attribute Idp#subject_match_attribute}. |
-| [`subjectMatchType`](#cdktfprovideroktaidpconfigpropertysubjectmatchtype) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp.html#subject_match_type Idp#subject_match_type}. |
-| [`suspendedAction`](#cdktfprovideroktaidpconfigpropertysuspendedaction) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp.html#suspended_action Idp#suspended_action}. |
-| [`userInfoBinding`](#cdktfprovideroktaidpconfigpropertyuserinfobinding) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp.html#user_info_binding Idp#user_info_binding}. |
-| [`userInfoUrl`](#cdktfprovideroktaidpconfigpropertyuserinfourl) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp.html#user_info_url Idp#user_info_url}. |
-| [`usernameTemplate`](#cdktfprovideroktaidpconfigpropertyusernametemplate) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp.html#username_template Idp#username_template}. |
+| [`status`](#cdktfprovideroktaidpconfigpropertystatus) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp#status Idp#status}. |
+| [`subjectMatchAttribute`](#cdktfprovideroktaidpconfigpropertysubjectmatchattribute) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp#subject_match_attribute Idp#subject_match_attribute}. |
+| [`subjectMatchType`](#cdktfprovideroktaidpconfigpropertysubjectmatchtype) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp#subject_match_type Idp#subject_match_type}. |
+| [`suspendedAction`](#cdktfprovideroktaidpconfigpropertysuspendedaction) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp#suspended_action Idp#suspended_action}. |
+| [`userInfoBinding`](#cdktfprovideroktaidpconfigpropertyuserinfobinding) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp#user_info_binding Idp#user_info_binding}. |
+| [`userInfoUrl`](#cdktfprovideroktaidpconfigpropertyuserinfourl) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp#user_info_url Idp#user_info_url}. |
+| [`usernameTemplate`](#cdktfprovideroktaidpconfigpropertyusernametemplate) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp#username_template Idp#username_template}. |
 
 ---
 
@@ -73557,7 +73557,7 @@ public readonly authorizationBinding: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp.html#authorization_binding Idp#authorization_binding}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp#authorization_binding Idp#authorization_binding}.
 
 ---
 
@@ -73569,7 +73569,7 @@ public readonly authorizationUrl: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp.html#authorization_url Idp#authorization_url}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp#authorization_url Idp#authorization_url}.
 
 ---
 
@@ -73581,7 +73581,7 @@ public readonly clientId: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp.html#client_id Idp#client_id}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp#client_id Idp#client_id}.
 
 ---
 
@@ -73593,7 +73593,7 @@ public readonly clientSecret: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp.html#client_secret Idp#client_secret}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp#client_secret Idp#client_secret}.
 
 ---
 
@@ -73605,7 +73605,7 @@ public readonly issuerUrl: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp.html#issuer_url Idp#issuer_url}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp#issuer_url Idp#issuer_url}.
 
 ---
 
@@ -73617,7 +73617,7 @@ public readonly jwksBinding: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp.html#jwks_binding Idp#jwks_binding}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp#jwks_binding Idp#jwks_binding}.
 
 ---
 
@@ -73629,7 +73629,7 @@ public readonly jwksUrl: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp.html#jwks_url Idp#jwks_url}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp#jwks_url Idp#jwks_url}.
 
 ---
 
@@ -73643,7 +73643,7 @@ public readonly name: string;
 
 Name of the IdP.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp.html#name Idp#name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp#name Idp#name}
 
 ---
 
@@ -73655,7 +73655,7 @@ public readonly scopes: string[];
 
 - *Type:* `string`[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp.html#scopes Idp#scopes}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp#scopes Idp#scopes}.
 
 ---
 
@@ -73667,7 +73667,7 @@ public readonly tokenBinding: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp.html#token_binding Idp#token_binding}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp#token_binding Idp#token_binding}.
 
 ---
 
@@ -73679,7 +73679,7 @@ public readonly tokenUrl: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp.html#token_url Idp#token_url}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp#token_url Idp#token_url}.
 
 ---
 
@@ -73691,7 +73691,7 @@ public readonly accountLinkAction: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp.html#account_link_action Idp#account_link_action}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp#account_link_action Idp#account_link_action}.
 
 ---
 
@@ -73703,7 +73703,7 @@ public readonly accountLinkGroupInclude: string[];
 
 - *Type:* `string`[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp.html#account_link_group_include Idp#account_link_group_include}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp#account_link_group_include Idp#account_link_group_include}.
 
 ---
 
@@ -73715,7 +73715,7 @@ public readonly deprovisionedAction: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp.html#deprovisioned_action Idp#deprovisioned_action}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp#deprovisioned_action Idp#deprovisioned_action}.
 
 ---
 
@@ -73727,7 +73727,7 @@ public readonly groupsAction: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp.html#groups_action Idp#groups_action}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp#groups_action Idp#groups_action}.
 
 ---
 
@@ -73739,7 +73739,7 @@ public readonly groupsAssignment: string[];
 
 - *Type:* `string`[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp.html#groups_assignment Idp#groups_assignment}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp#groups_assignment Idp#groups_assignment}.
 
 ---
 
@@ -73751,7 +73751,7 @@ public readonly groupsAttribute: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp.html#groups_attribute Idp#groups_attribute}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp#groups_attribute Idp#groups_attribute}.
 
 ---
 
@@ -73763,7 +73763,7 @@ public readonly groupsFilter: string[];
 
 - *Type:* `string`[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp.html#groups_filter Idp#groups_filter}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp#groups_filter Idp#groups_filter}.
 
 ---
 
@@ -73777,7 +73777,7 @@ public readonly issuerMode: string;
 
 Indicates whether Okta uses the original Okta org domain URL, or a custom domain URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp.html#issuer_mode Idp#issuer_mode}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp#issuer_mode Idp#issuer_mode}
 
 ---
 
@@ -73789,7 +73789,7 @@ public readonly maxClockSkew: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp.html#max_clock_skew Idp#max_clock_skew}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp#max_clock_skew Idp#max_clock_skew}.
 
 ---
 
@@ -73801,7 +73801,7 @@ public readonly profileMaster: boolean | IResolvable;
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp.html#profile_master Idp#profile_master}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp#profile_master Idp#profile_master}.
 
 ---
 
@@ -73813,7 +73813,7 @@ public readonly protocolType: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp.html#protocol_type Idp#protocol_type}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp#protocol_type Idp#protocol_type}.
 
 ---
 
@@ -73825,7 +73825,7 @@ public readonly provisioningAction: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp.html#provisioning_action Idp#provisioning_action}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp#provisioning_action Idp#provisioning_action}.
 
 ---
 
@@ -73839,7 +73839,7 @@ public readonly requestSignatureAlgorithm: string;
 
 algorithm to use to sign requests.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp.html#request_signature_algorithm Idp#request_signature_algorithm}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp#request_signature_algorithm Idp#request_signature_algorithm}
 
 ---
 
@@ -73853,7 +73853,7 @@ public readonly requestSignatureScope: string;
 
 algorithm to use to sign response.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp.html#request_signature_scope Idp#request_signature_scope}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp#request_signature_scope Idp#request_signature_scope}
 
 ---
 
@@ -73867,7 +73867,7 @@ public readonly responseSignatureAlgorithm: string;
 
 algorithm to use to sign requests.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp.html#response_signature_algorithm Idp#response_signature_algorithm}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp#response_signature_algorithm Idp#response_signature_algorithm}
 
 ---
 
@@ -73881,7 +73881,7 @@ public readonly responseSignatureScope: string;
 
 algorithm to use to sign response.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp.html#response_signature_scope Idp#response_signature_scope}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp#response_signature_scope Idp#response_signature_scope}
 
 ---
 
@@ -73893,7 +73893,7 @@ public readonly status: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp.html#status Idp#status}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp#status Idp#status}.
 
 ---
 
@@ -73905,7 +73905,7 @@ public readonly subjectMatchAttribute: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp.html#subject_match_attribute Idp#subject_match_attribute}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp#subject_match_attribute Idp#subject_match_attribute}.
 
 ---
 
@@ -73917,7 +73917,7 @@ public readonly subjectMatchType: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp.html#subject_match_type Idp#subject_match_type}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp#subject_match_type Idp#subject_match_type}.
 
 ---
 
@@ -73929,7 +73929,7 @@ public readonly suspendedAction: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp.html#suspended_action Idp#suspended_action}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp#suspended_action Idp#suspended_action}.
 
 ---
 
@@ -73941,7 +73941,7 @@ public readonly userInfoBinding: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp.html#user_info_binding Idp#user_info_binding}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp#user_info_binding Idp#user_info_binding}.
 
 ---
 
@@ -73953,7 +73953,7 @@ public readonly userInfoUrl: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp.html#user_info_url Idp#user_info_url}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp#user_info_url Idp#user_info_url}.
 
 ---
 
@@ -73965,7 +73965,7 @@ public readonly usernameTemplate: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp.html#username_template Idp#username_template}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp#username_template Idp#username_template}.
 
 ---
 
@@ -73987,40 +73987,40 @@ const idpOidcConfig: IdpOidcConfig = { ... }
 | [`dependsOn`](#cdktfprovideroktaidpoidcconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktaidpoidcconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktaidpoidcconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`authorizationBinding`](#cdktfprovideroktaidpoidcconfigpropertyauthorizationbinding)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#authorization_binding IdpOidc#authorization_binding}. |
-| [`authorizationUrl`](#cdktfprovideroktaidpoidcconfigpropertyauthorizationurl)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#authorization_url IdpOidc#authorization_url}. |
-| [`clientId`](#cdktfprovideroktaidpoidcconfigpropertyclientid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#client_id IdpOidc#client_id}. |
-| [`clientSecret`](#cdktfprovideroktaidpoidcconfigpropertyclientsecret)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#client_secret IdpOidc#client_secret}. |
-| [`issuerUrl`](#cdktfprovideroktaidpoidcconfigpropertyissuerurl)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#issuer_url IdpOidc#issuer_url}. |
-| [`jwksBinding`](#cdktfprovideroktaidpoidcconfigpropertyjwksbinding)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#jwks_binding IdpOidc#jwks_binding}. |
-| [`jwksUrl`](#cdktfprovideroktaidpoidcconfigpropertyjwksurl)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#jwks_url IdpOidc#jwks_url}. |
+| [`authorizationBinding`](#cdktfprovideroktaidpoidcconfigpropertyauthorizationbinding)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#authorization_binding IdpOidc#authorization_binding}. |
+| [`authorizationUrl`](#cdktfprovideroktaidpoidcconfigpropertyauthorizationurl)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#authorization_url IdpOidc#authorization_url}. |
+| [`clientId`](#cdktfprovideroktaidpoidcconfigpropertyclientid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#client_id IdpOidc#client_id}. |
+| [`clientSecret`](#cdktfprovideroktaidpoidcconfigpropertyclientsecret)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#client_secret IdpOidc#client_secret}. |
+| [`issuerUrl`](#cdktfprovideroktaidpoidcconfigpropertyissuerurl)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#issuer_url IdpOidc#issuer_url}. |
+| [`jwksBinding`](#cdktfprovideroktaidpoidcconfigpropertyjwksbinding)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#jwks_binding IdpOidc#jwks_binding}. |
+| [`jwksUrl`](#cdktfprovideroktaidpoidcconfigpropertyjwksurl)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#jwks_url IdpOidc#jwks_url}. |
 | [`name`](#cdktfprovideroktaidpoidcconfigpropertyname)<span title="Required">*</span> | `string` | Name of the IdP. |
-| [`scopes`](#cdktfprovideroktaidpoidcconfigpropertyscopes)<span title="Required">*</span> | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#scopes IdpOidc#scopes}. |
-| [`tokenBinding`](#cdktfprovideroktaidpoidcconfigpropertytokenbinding)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#token_binding IdpOidc#token_binding}. |
-| [`tokenUrl`](#cdktfprovideroktaidpoidcconfigpropertytokenurl)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#token_url IdpOidc#token_url}. |
-| [`accountLinkAction`](#cdktfprovideroktaidpoidcconfigpropertyaccountlinkaction) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#account_link_action IdpOidc#account_link_action}. |
-| [`accountLinkGroupInclude`](#cdktfprovideroktaidpoidcconfigpropertyaccountlinkgroupinclude) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#account_link_group_include IdpOidc#account_link_group_include}. |
-| [`deprovisionedAction`](#cdktfprovideroktaidpoidcconfigpropertydeprovisionedaction) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#deprovisioned_action IdpOidc#deprovisioned_action}. |
-| [`groupsAction`](#cdktfprovideroktaidpoidcconfigpropertygroupsaction) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#groups_action IdpOidc#groups_action}. |
-| [`groupsAssignment`](#cdktfprovideroktaidpoidcconfigpropertygroupsassignment) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#groups_assignment IdpOidc#groups_assignment}. |
-| [`groupsAttribute`](#cdktfprovideroktaidpoidcconfigpropertygroupsattribute) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#groups_attribute IdpOidc#groups_attribute}. |
-| [`groupsFilter`](#cdktfprovideroktaidpoidcconfigpropertygroupsfilter) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#groups_filter IdpOidc#groups_filter}. |
+| [`scopes`](#cdktfprovideroktaidpoidcconfigpropertyscopes)<span title="Required">*</span> | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#scopes IdpOidc#scopes}. |
+| [`tokenBinding`](#cdktfprovideroktaidpoidcconfigpropertytokenbinding)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#token_binding IdpOidc#token_binding}. |
+| [`tokenUrl`](#cdktfprovideroktaidpoidcconfigpropertytokenurl)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#token_url IdpOidc#token_url}. |
+| [`accountLinkAction`](#cdktfprovideroktaidpoidcconfigpropertyaccountlinkaction) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#account_link_action IdpOidc#account_link_action}. |
+| [`accountLinkGroupInclude`](#cdktfprovideroktaidpoidcconfigpropertyaccountlinkgroupinclude) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#account_link_group_include IdpOidc#account_link_group_include}. |
+| [`deprovisionedAction`](#cdktfprovideroktaidpoidcconfigpropertydeprovisionedaction) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#deprovisioned_action IdpOidc#deprovisioned_action}. |
+| [`groupsAction`](#cdktfprovideroktaidpoidcconfigpropertygroupsaction) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#groups_action IdpOidc#groups_action}. |
+| [`groupsAssignment`](#cdktfprovideroktaidpoidcconfigpropertygroupsassignment) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#groups_assignment IdpOidc#groups_assignment}. |
+| [`groupsAttribute`](#cdktfprovideroktaidpoidcconfigpropertygroupsattribute) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#groups_attribute IdpOidc#groups_attribute}. |
+| [`groupsFilter`](#cdktfprovideroktaidpoidcconfigpropertygroupsfilter) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#groups_filter IdpOidc#groups_filter}. |
 | [`issuerMode`](#cdktfprovideroktaidpoidcconfigpropertyissuermode) | `string` | Indicates whether Okta uses the original Okta org domain URL, or a custom domain URL. |
-| [`maxClockSkew`](#cdktfprovideroktaidpoidcconfigpropertymaxclockskew) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#max_clock_skew IdpOidc#max_clock_skew}. |
-| [`profileMaster`](#cdktfprovideroktaidpoidcconfigpropertyprofilemaster) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#profile_master IdpOidc#profile_master}. |
-| [`protocolType`](#cdktfprovideroktaidpoidcconfigpropertyprotocoltype) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#protocol_type IdpOidc#protocol_type}. |
-| [`provisioningAction`](#cdktfprovideroktaidpoidcconfigpropertyprovisioningaction) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#provisioning_action IdpOidc#provisioning_action}. |
+| [`maxClockSkew`](#cdktfprovideroktaidpoidcconfigpropertymaxclockskew) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#max_clock_skew IdpOidc#max_clock_skew}. |
+| [`profileMaster`](#cdktfprovideroktaidpoidcconfigpropertyprofilemaster) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#profile_master IdpOidc#profile_master}. |
+| [`protocolType`](#cdktfprovideroktaidpoidcconfigpropertyprotocoltype) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#protocol_type IdpOidc#protocol_type}. |
+| [`provisioningAction`](#cdktfprovideroktaidpoidcconfigpropertyprovisioningaction) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#provisioning_action IdpOidc#provisioning_action}. |
 | [`requestSignatureAlgorithm`](#cdktfprovideroktaidpoidcconfigpropertyrequestsignaturealgorithm) | `string` | algorithm to use to sign requests. |
 | [`requestSignatureScope`](#cdktfprovideroktaidpoidcconfigpropertyrequestsignaturescope) | `string` | algorithm to use to sign response. |
 | [`responseSignatureAlgorithm`](#cdktfprovideroktaidpoidcconfigpropertyresponsesignaturealgorithm) | `string` | algorithm to use to sign requests. |
 | [`responseSignatureScope`](#cdktfprovideroktaidpoidcconfigpropertyresponsesignaturescope) | `string` | algorithm to use to sign response. |
-| [`status`](#cdktfprovideroktaidpoidcconfigpropertystatus) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#status IdpOidc#status}. |
-| [`subjectMatchAttribute`](#cdktfprovideroktaidpoidcconfigpropertysubjectmatchattribute) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#subject_match_attribute IdpOidc#subject_match_attribute}. |
-| [`subjectMatchType`](#cdktfprovideroktaidpoidcconfigpropertysubjectmatchtype) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#subject_match_type IdpOidc#subject_match_type}. |
-| [`suspendedAction`](#cdktfprovideroktaidpoidcconfigpropertysuspendedaction) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#suspended_action IdpOidc#suspended_action}. |
-| [`userInfoBinding`](#cdktfprovideroktaidpoidcconfigpropertyuserinfobinding) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#user_info_binding IdpOidc#user_info_binding}. |
-| [`userInfoUrl`](#cdktfprovideroktaidpoidcconfigpropertyuserinfourl) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#user_info_url IdpOidc#user_info_url}. |
-| [`usernameTemplate`](#cdktfprovideroktaidpoidcconfigpropertyusernametemplate) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#username_template IdpOidc#username_template}. |
+| [`status`](#cdktfprovideroktaidpoidcconfigpropertystatus) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#status IdpOidc#status}. |
+| [`subjectMatchAttribute`](#cdktfprovideroktaidpoidcconfigpropertysubjectmatchattribute) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#subject_match_attribute IdpOidc#subject_match_attribute}. |
+| [`subjectMatchType`](#cdktfprovideroktaidpoidcconfigpropertysubjectmatchtype) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#subject_match_type IdpOidc#subject_match_type}. |
+| [`suspendedAction`](#cdktfprovideroktaidpoidcconfigpropertysuspendedaction) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#suspended_action IdpOidc#suspended_action}. |
+| [`userInfoBinding`](#cdktfprovideroktaidpoidcconfigpropertyuserinfobinding) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#user_info_binding IdpOidc#user_info_binding}. |
+| [`userInfoUrl`](#cdktfprovideroktaidpoidcconfigpropertyuserinfourl) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#user_info_url IdpOidc#user_info_url}. |
+| [`usernameTemplate`](#cdktfprovideroktaidpoidcconfigpropertyusernametemplate) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#username_template IdpOidc#username_template}. |
 
 ---
 
@@ -74072,7 +74072,7 @@ public readonly authorizationBinding: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#authorization_binding IdpOidc#authorization_binding}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#authorization_binding IdpOidc#authorization_binding}.
 
 ---
 
@@ -74084,7 +74084,7 @@ public readonly authorizationUrl: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#authorization_url IdpOidc#authorization_url}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#authorization_url IdpOidc#authorization_url}.
 
 ---
 
@@ -74096,7 +74096,7 @@ public readonly clientId: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#client_id IdpOidc#client_id}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#client_id IdpOidc#client_id}.
 
 ---
 
@@ -74108,7 +74108,7 @@ public readonly clientSecret: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#client_secret IdpOidc#client_secret}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#client_secret IdpOidc#client_secret}.
 
 ---
 
@@ -74120,7 +74120,7 @@ public readonly issuerUrl: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#issuer_url IdpOidc#issuer_url}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#issuer_url IdpOidc#issuer_url}.
 
 ---
 
@@ -74132,7 +74132,7 @@ public readonly jwksBinding: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#jwks_binding IdpOidc#jwks_binding}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#jwks_binding IdpOidc#jwks_binding}.
 
 ---
 
@@ -74144,7 +74144,7 @@ public readonly jwksUrl: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#jwks_url IdpOidc#jwks_url}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#jwks_url IdpOidc#jwks_url}.
 
 ---
 
@@ -74158,7 +74158,7 @@ public readonly name: string;
 
 Name of the IdP.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#name IdpOidc#name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#name IdpOidc#name}
 
 ---
 
@@ -74170,7 +74170,7 @@ public readonly scopes: string[];
 
 - *Type:* `string`[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#scopes IdpOidc#scopes}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#scopes IdpOidc#scopes}.
 
 ---
 
@@ -74182,7 +74182,7 @@ public readonly tokenBinding: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#token_binding IdpOidc#token_binding}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#token_binding IdpOidc#token_binding}.
 
 ---
 
@@ -74194,7 +74194,7 @@ public readonly tokenUrl: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#token_url IdpOidc#token_url}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#token_url IdpOidc#token_url}.
 
 ---
 
@@ -74206,7 +74206,7 @@ public readonly accountLinkAction: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#account_link_action IdpOidc#account_link_action}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#account_link_action IdpOidc#account_link_action}.
 
 ---
 
@@ -74218,7 +74218,7 @@ public readonly accountLinkGroupInclude: string[];
 
 - *Type:* `string`[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#account_link_group_include IdpOidc#account_link_group_include}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#account_link_group_include IdpOidc#account_link_group_include}.
 
 ---
 
@@ -74230,7 +74230,7 @@ public readonly deprovisionedAction: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#deprovisioned_action IdpOidc#deprovisioned_action}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#deprovisioned_action IdpOidc#deprovisioned_action}.
 
 ---
 
@@ -74242,7 +74242,7 @@ public readonly groupsAction: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#groups_action IdpOidc#groups_action}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#groups_action IdpOidc#groups_action}.
 
 ---
 
@@ -74254,7 +74254,7 @@ public readonly groupsAssignment: string[];
 
 - *Type:* `string`[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#groups_assignment IdpOidc#groups_assignment}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#groups_assignment IdpOidc#groups_assignment}.
 
 ---
 
@@ -74266,7 +74266,7 @@ public readonly groupsAttribute: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#groups_attribute IdpOidc#groups_attribute}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#groups_attribute IdpOidc#groups_attribute}.
 
 ---
 
@@ -74278,7 +74278,7 @@ public readonly groupsFilter: string[];
 
 - *Type:* `string`[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#groups_filter IdpOidc#groups_filter}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#groups_filter IdpOidc#groups_filter}.
 
 ---
 
@@ -74292,7 +74292,7 @@ public readonly issuerMode: string;
 
 Indicates whether Okta uses the original Okta org domain URL, or a custom domain URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#issuer_mode IdpOidc#issuer_mode}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#issuer_mode IdpOidc#issuer_mode}
 
 ---
 
@@ -74304,7 +74304,7 @@ public readonly maxClockSkew: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#max_clock_skew IdpOidc#max_clock_skew}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#max_clock_skew IdpOidc#max_clock_skew}.
 
 ---
 
@@ -74316,7 +74316,7 @@ public readonly profileMaster: boolean | IResolvable;
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#profile_master IdpOidc#profile_master}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#profile_master IdpOidc#profile_master}.
 
 ---
 
@@ -74328,7 +74328,7 @@ public readonly protocolType: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#protocol_type IdpOidc#protocol_type}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#protocol_type IdpOidc#protocol_type}.
 
 ---
 
@@ -74340,7 +74340,7 @@ public readonly provisioningAction: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#provisioning_action IdpOidc#provisioning_action}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#provisioning_action IdpOidc#provisioning_action}.
 
 ---
 
@@ -74354,7 +74354,7 @@ public readonly requestSignatureAlgorithm: string;
 
 algorithm to use to sign requests.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#request_signature_algorithm IdpOidc#request_signature_algorithm}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#request_signature_algorithm IdpOidc#request_signature_algorithm}
 
 ---
 
@@ -74368,7 +74368,7 @@ public readonly requestSignatureScope: string;
 
 algorithm to use to sign response.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#request_signature_scope IdpOidc#request_signature_scope}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#request_signature_scope IdpOidc#request_signature_scope}
 
 ---
 
@@ -74382,7 +74382,7 @@ public readonly responseSignatureAlgorithm: string;
 
 algorithm to use to sign requests.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#response_signature_algorithm IdpOidc#response_signature_algorithm}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#response_signature_algorithm IdpOidc#response_signature_algorithm}
 
 ---
 
@@ -74396,7 +74396,7 @@ public readonly responseSignatureScope: string;
 
 algorithm to use to sign response.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#response_signature_scope IdpOidc#response_signature_scope}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#response_signature_scope IdpOidc#response_signature_scope}
 
 ---
 
@@ -74408,7 +74408,7 @@ public readonly status: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#status IdpOidc#status}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#status IdpOidc#status}.
 
 ---
 
@@ -74420,7 +74420,7 @@ public readonly subjectMatchAttribute: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#subject_match_attribute IdpOidc#subject_match_attribute}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#subject_match_attribute IdpOidc#subject_match_attribute}.
 
 ---
 
@@ -74432,7 +74432,7 @@ public readonly subjectMatchType: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#subject_match_type IdpOidc#subject_match_type}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#subject_match_type IdpOidc#subject_match_type}.
 
 ---
 
@@ -74444,7 +74444,7 @@ public readonly suspendedAction: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#suspended_action IdpOidc#suspended_action}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#suspended_action IdpOidc#suspended_action}.
 
 ---
 
@@ -74456,7 +74456,7 @@ public readonly userInfoBinding: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#user_info_binding IdpOidc#user_info_binding}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#user_info_binding IdpOidc#user_info_binding}.
 
 ---
 
@@ -74468,7 +74468,7 @@ public readonly userInfoUrl: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#user_info_url IdpOidc#user_info_url}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#user_info_url IdpOidc#user_info_url}.
 
 ---
 
@@ -74480,7 +74480,7 @@ public readonly usernameTemplate: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#username_template IdpOidc#username_template}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#username_template IdpOidc#username_template}.
 
 ---
 
@@ -74502,37 +74502,37 @@ const idpSamlConfig: IdpSamlConfig = { ... }
 | [`dependsOn`](#cdktfprovideroktaidpsamlconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktaidpsamlconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktaidpsamlconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`issuer`](#cdktfprovideroktaidpsamlconfigpropertyissuer)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml.html#issuer IdpSaml#issuer}. |
-| [`kid`](#cdktfprovideroktaidpsamlconfigpropertykid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml.html#kid IdpSaml#kid}. |
+| [`issuer`](#cdktfprovideroktaidpsamlconfigpropertyissuer)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml#issuer IdpSaml#issuer}. |
+| [`kid`](#cdktfprovideroktaidpsamlconfigpropertykid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml#kid IdpSaml#kid}. |
 | [`name`](#cdktfprovideroktaidpsamlconfigpropertyname)<span title="Required">*</span> | `string` | Name of the IdP. |
-| [`ssoUrl`](#cdktfprovideroktaidpsamlconfigpropertyssourl)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml.html#sso_url IdpSaml#sso_url}. |
-| [`accountLinkAction`](#cdktfprovideroktaidpsamlconfigpropertyaccountlinkaction) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml.html#account_link_action IdpSaml#account_link_action}. |
-| [`accountLinkGroupInclude`](#cdktfprovideroktaidpsamlconfigpropertyaccountlinkgroupinclude) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml.html#account_link_group_include IdpSaml#account_link_group_include}. |
-| [`acsBinding`](#cdktfprovideroktaidpsamlconfigpropertyacsbinding) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml.html#acs_binding IdpSaml#acs_binding}. |
-| [`acsType`](#cdktfprovideroktaidpsamlconfigpropertyacstype) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml.html#acs_type IdpSaml#acs_type}. |
-| [`deprovisionedAction`](#cdktfprovideroktaidpsamlconfigpropertydeprovisionedaction) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml.html#deprovisioned_action IdpSaml#deprovisioned_action}. |
-| [`groupsAction`](#cdktfprovideroktaidpsamlconfigpropertygroupsaction) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml.html#groups_action IdpSaml#groups_action}. |
-| [`groupsAssignment`](#cdktfprovideroktaidpsamlconfigpropertygroupsassignment) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml.html#groups_assignment IdpSaml#groups_assignment}. |
-| [`groupsAttribute`](#cdktfprovideroktaidpsamlconfigpropertygroupsattribute) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml.html#groups_attribute IdpSaml#groups_attribute}. |
-| [`groupsFilter`](#cdktfprovideroktaidpsamlconfigpropertygroupsfilter) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml.html#groups_filter IdpSaml#groups_filter}. |
+| [`ssoUrl`](#cdktfprovideroktaidpsamlconfigpropertyssourl)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml#sso_url IdpSaml#sso_url}. |
+| [`accountLinkAction`](#cdktfprovideroktaidpsamlconfigpropertyaccountlinkaction) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml#account_link_action IdpSaml#account_link_action}. |
+| [`accountLinkGroupInclude`](#cdktfprovideroktaidpsamlconfigpropertyaccountlinkgroupinclude) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml#account_link_group_include IdpSaml#account_link_group_include}. |
+| [`acsBinding`](#cdktfprovideroktaidpsamlconfigpropertyacsbinding) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml#acs_binding IdpSaml#acs_binding}. |
+| [`acsType`](#cdktfprovideroktaidpsamlconfigpropertyacstype) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml#acs_type IdpSaml#acs_type}. |
+| [`deprovisionedAction`](#cdktfprovideroktaidpsamlconfigpropertydeprovisionedaction) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml#deprovisioned_action IdpSaml#deprovisioned_action}. |
+| [`groupsAction`](#cdktfprovideroktaidpsamlconfigpropertygroupsaction) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml#groups_action IdpSaml#groups_action}. |
+| [`groupsAssignment`](#cdktfprovideroktaidpsamlconfigpropertygroupsassignment) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml#groups_assignment IdpSaml#groups_assignment}. |
+| [`groupsAttribute`](#cdktfprovideroktaidpsamlconfigpropertygroupsattribute) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml#groups_attribute IdpSaml#groups_attribute}. |
+| [`groupsFilter`](#cdktfprovideroktaidpsamlconfigpropertygroupsfilter) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml#groups_filter IdpSaml#groups_filter}. |
 | [`issuerMode`](#cdktfprovideroktaidpsamlconfigpropertyissuermode) | `string` | Indicates whether Okta uses the original Okta org domain URL, or a custom domain URL. |
-| [`maxClockSkew`](#cdktfprovideroktaidpsamlconfigpropertymaxclockskew) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml.html#max_clock_skew IdpSaml#max_clock_skew}. |
-| [`nameFormat`](#cdktfprovideroktaidpsamlconfigpropertynameformat) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml.html#name_format IdpSaml#name_format}. |
-| [`profileMaster`](#cdktfprovideroktaidpsamlconfigpropertyprofilemaster) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml.html#profile_master IdpSaml#profile_master}. |
-| [`provisioningAction`](#cdktfprovideroktaidpsamlconfigpropertyprovisioningaction) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml.html#provisioning_action IdpSaml#provisioning_action}. |
+| [`maxClockSkew`](#cdktfprovideroktaidpsamlconfigpropertymaxclockskew) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml#max_clock_skew IdpSaml#max_clock_skew}. |
+| [`nameFormat`](#cdktfprovideroktaidpsamlconfigpropertynameformat) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml#name_format IdpSaml#name_format}. |
+| [`profileMaster`](#cdktfprovideroktaidpsamlconfigpropertyprofilemaster) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml#profile_master IdpSaml#profile_master}. |
+| [`provisioningAction`](#cdktfprovideroktaidpsamlconfigpropertyprovisioningaction) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml#provisioning_action IdpSaml#provisioning_action}. |
 | [`requestSignatureAlgorithm`](#cdktfprovideroktaidpsamlconfigpropertyrequestsignaturealgorithm) | `string` | algorithm to use to sign requests. |
 | [`requestSignatureScope`](#cdktfprovideroktaidpsamlconfigpropertyrequestsignaturescope) | `string` | algorithm to use to sign response. |
 | [`responseSignatureAlgorithm`](#cdktfprovideroktaidpsamlconfigpropertyresponsesignaturealgorithm) | `string` | algorithm to use to sign requests. |
 | [`responseSignatureScope`](#cdktfprovideroktaidpsamlconfigpropertyresponsesignaturescope) | `string` | algorithm to use to sign response. |
-| [`ssoBinding`](#cdktfprovideroktaidpsamlconfigpropertyssobinding) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml.html#sso_binding IdpSaml#sso_binding}. |
-| [`ssoDestination`](#cdktfprovideroktaidpsamlconfigpropertyssodestination) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml.html#sso_destination IdpSaml#sso_destination}. |
-| [`status`](#cdktfprovideroktaidpsamlconfigpropertystatus) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml.html#status IdpSaml#status}. |
-| [`subjectFilter`](#cdktfprovideroktaidpsamlconfigpropertysubjectfilter) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml.html#subject_filter IdpSaml#subject_filter}. |
-| [`subjectFormat`](#cdktfprovideroktaidpsamlconfigpropertysubjectformat) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml.html#subject_format IdpSaml#subject_format}. |
-| [`subjectMatchAttribute`](#cdktfprovideroktaidpsamlconfigpropertysubjectmatchattribute) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml.html#subject_match_attribute IdpSaml#subject_match_attribute}. |
-| [`subjectMatchType`](#cdktfprovideroktaidpsamlconfigpropertysubjectmatchtype) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml.html#subject_match_type IdpSaml#subject_match_type}. |
-| [`suspendedAction`](#cdktfprovideroktaidpsamlconfigpropertysuspendedaction) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml.html#suspended_action IdpSaml#suspended_action}. |
-| [`usernameTemplate`](#cdktfprovideroktaidpsamlconfigpropertyusernametemplate) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml.html#username_template IdpSaml#username_template}. |
+| [`ssoBinding`](#cdktfprovideroktaidpsamlconfigpropertyssobinding) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml#sso_binding IdpSaml#sso_binding}. |
+| [`ssoDestination`](#cdktfprovideroktaidpsamlconfigpropertyssodestination) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml#sso_destination IdpSaml#sso_destination}. |
+| [`status`](#cdktfprovideroktaidpsamlconfigpropertystatus) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml#status IdpSaml#status}. |
+| [`subjectFilter`](#cdktfprovideroktaidpsamlconfigpropertysubjectfilter) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml#subject_filter IdpSaml#subject_filter}. |
+| [`subjectFormat`](#cdktfprovideroktaidpsamlconfigpropertysubjectformat) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml#subject_format IdpSaml#subject_format}. |
+| [`subjectMatchAttribute`](#cdktfprovideroktaidpsamlconfigpropertysubjectmatchattribute) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml#subject_match_attribute IdpSaml#subject_match_attribute}. |
+| [`subjectMatchType`](#cdktfprovideroktaidpsamlconfigpropertysubjectmatchtype) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml#subject_match_type IdpSaml#subject_match_type}. |
+| [`suspendedAction`](#cdktfprovideroktaidpsamlconfigpropertysuspendedaction) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml#suspended_action IdpSaml#suspended_action}. |
+| [`usernameTemplate`](#cdktfprovideroktaidpsamlconfigpropertyusernametemplate) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml#username_template IdpSaml#username_template}. |
 
 ---
 
@@ -74584,7 +74584,7 @@ public readonly issuer: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml.html#issuer IdpSaml#issuer}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml#issuer IdpSaml#issuer}.
 
 ---
 
@@ -74596,7 +74596,7 @@ public readonly kid: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml.html#kid IdpSaml#kid}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml#kid IdpSaml#kid}.
 
 ---
 
@@ -74610,7 +74610,7 @@ public readonly name: string;
 
 Name of the IdP.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml.html#name IdpSaml#name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml#name IdpSaml#name}
 
 ---
 
@@ -74622,7 +74622,7 @@ public readonly ssoUrl: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml.html#sso_url IdpSaml#sso_url}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml#sso_url IdpSaml#sso_url}.
 
 ---
 
@@ -74634,7 +74634,7 @@ public readonly accountLinkAction: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml.html#account_link_action IdpSaml#account_link_action}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml#account_link_action IdpSaml#account_link_action}.
 
 ---
 
@@ -74646,7 +74646,7 @@ public readonly accountLinkGroupInclude: string[];
 
 - *Type:* `string`[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml.html#account_link_group_include IdpSaml#account_link_group_include}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml#account_link_group_include IdpSaml#account_link_group_include}.
 
 ---
 
@@ -74658,7 +74658,7 @@ public readonly acsBinding: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml.html#acs_binding IdpSaml#acs_binding}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml#acs_binding IdpSaml#acs_binding}.
 
 ---
 
@@ -74670,7 +74670,7 @@ public readonly acsType: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml.html#acs_type IdpSaml#acs_type}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml#acs_type IdpSaml#acs_type}.
 
 ---
 
@@ -74682,7 +74682,7 @@ public readonly deprovisionedAction: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml.html#deprovisioned_action IdpSaml#deprovisioned_action}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml#deprovisioned_action IdpSaml#deprovisioned_action}.
 
 ---
 
@@ -74694,7 +74694,7 @@ public readonly groupsAction: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml.html#groups_action IdpSaml#groups_action}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml#groups_action IdpSaml#groups_action}.
 
 ---
 
@@ -74706,7 +74706,7 @@ public readonly groupsAssignment: string[];
 
 - *Type:* `string`[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml.html#groups_assignment IdpSaml#groups_assignment}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml#groups_assignment IdpSaml#groups_assignment}.
 
 ---
 
@@ -74718,7 +74718,7 @@ public readonly groupsAttribute: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml.html#groups_attribute IdpSaml#groups_attribute}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml#groups_attribute IdpSaml#groups_attribute}.
 
 ---
 
@@ -74730,7 +74730,7 @@ public readonly groupsFilter: string[];
 
 - *Type:* `string`[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml.html#groups_filter IdpSaml#groups_filter}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml#groups_filter IdpSaml#groups_filter}.
 
 ---
 
@@ -74744,7 +74744,7 @@ public readonly issuerMode: string;
 
 Indicates whether Okta uses the original Okta org domain URL, or a custom domain URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml.html#issuer_mode IdpSaml#issuer_mode}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml#issuer_mode IdpSaml#issuer_mode}
 
 ---
 
@@ -74756,7 +74756,7 @@ public readonly maxClockSkew: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml.html#max_clock_skew IdpSaml#max_clock_skew}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml#max_clock_skew IdpSaml#max_clock_skew}.
 
 ---
 
@@ -74768,7 +74768,7 @@ public readonly nameFormat: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml.html#name_format IdpSaml#name_format}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml#name_format IdpSaml#name_format}.
 
 ---
 
@@ -74780,7 +74780,7 @@ public readonly profileMaster: boolean | IResolvable;
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml.html#profile_master IdpSaml#profile_master}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml#profile_master IdpSaml#profile_master}.
 
 ---
 
@@ -74792,7 +74792,7 @@ public readonly provisioningAction: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml.html#provisioning_action IdpSaml#provisioning_action}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml#provisioning_action IdpSaml#provisioning_action}.
 
 ---
 
@@ -74806,7 +74806,7 @@ public readonly requestSignatureAlgorithm: string;
 
 algorithm to use to sign requests.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml.html#request_signature_algorithm IdpSaml#request_signature_algorithm}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml#request_signature_algorithm IdpSaml#request_signature_algorithm}
 
 ---
 
@@ -74820,7 +74820,7 @@ public readonly requestSignatureScope: string;
 
 algorithm to use to sign response.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml.html#request_signature_scope IdpSaml#request_signature_scope}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml#request_signature_scope IdpSaml#request_signature_scope}
 
 ---
 
@@ -74834,7 +74834,7 @@ public readonly responseSignatureAlgorithm: string;
 
 algorithm to use to sign requests.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml.html#response_signature_algorithm IdpSaml#response_signature_algorithm}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml#response_signature_algorithm IdpSaml#response_signature_algorithm}
 
 ---
 
@@ -74848,7 +74848,7 @@ public readonly responseSignatureScope: string;
 
 algorithm to use to sign response.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml.html#response_signature_scope IdpSaml#response_signature_scope}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml#response_signature_scope IdpSaml#response_signature_scope}
 
 ---
 
@@ -74860,7 +74860,7 @@ public readonly ssoBinding: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml.html#sso_binding IdpSaml#sso_binding}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml#sso_binding IdpSaml#sso_binding}.
 
 ---
 
@@ -74872,7 +74872,7 @@ public readonly ssoDestination: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml.html#sso_destination IdpSaml#sso_destination}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml#sso_destination IdpSaml#sso_destination}.
 
 ---
 
@@ -74884,7 +74884,7 @@ public readonly status: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml.html#status IdpSaml#status}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml#status IdpSaml#status}.
 
 ---
 
@@ -74896,7 +74896,7 @@ public readonly subjectFilter: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml.html#subject_filter IdpSaml#subject_filter}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml#subject_filter IdpSaml#subject_filter}.
 
 ---
 
@@ -74908,7 +74908,7 @@ public readonly subjectFormat: string[];
 
 - *Type:* `string`[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml.html#subject_format IdpSaml#subject_format}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml#subject_format IdpSaml#subject_format}.
 
 ---
 
@@ -74920,7 +74920,7 @@ public readonly subjectMatchAttribute: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml.html#subject_match_attribute IdpSaml#subject_match_attribute}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml#subject_match_attribute IdpSaml#subject_match_attribute}.
 
 ---
 
@@ -74932,7 +74932,7 @@ public readonly subjectMatchType: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml.html#subject_match_type IdpSaml#subject_match_type}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml#subject_match_type IdpSaml#subject_match_type}.
 
 ---
 
@@ -74944,7 +74944,7 @@ public readonly suspendedAction: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml.html#suspended_action IdpSaml#suspended_action}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml#suspended_action IdpSaml#suspended_action}.
 
 ---
 
@@ -74956,7 +74956,7 @@ public readonly usernameTemplate: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml.html#username_template IdpSaml#username_template}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml#username_template IdpSaml#username_template}.
 
 ---
 
@@ -75032,7 +75032,7 @@ public readonly x5C: string[];
 
 base64-encoded X.509 certificate chain with DER encoding.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml_key.html#x5c IdpSamlKey#x5c}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml_key#x5c IdpSamlKey#x5c}
 
 ---
 
@@ -75055,36 +75055,36 @@ const idpSocialConfig: IdpSocialConfig = { ... }
 | [`lifecycle`](#cdktfprovideroktaidpsocialconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktaidpsocialconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
 | [`name`](#cdktfprovideroktaidpsocialconfigpropertyname)<span title="Required">*</span> | `string` | Name of the IdP. |
-| [`scopes`](#cdktfprovideroktaidpsocialconfigpropertyscopes)<span title="Required">*</span> | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social.html#scopes IdpSocial#scopes}. |
-| [`type`](#cdktfprovideroktaidpsocialconfigpropertytype)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social.html#type IdpSocial#type}. |
-| [`accountLinkAction`](#cdktfprovideroktaidpsocialconfigpropertyaccountlinkaction) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social.html#account_link_action IdpSocial#account_link_action}. |
-| [`accountLinkGroupInclude`](#cdktfprovideroktaidpsocialconfigpropertyaccountlinkgroupinclude) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social.html#account_link_group_include IdpSocial#account_link_group_include}. |
+| [`scopes`](#cdktfprovideroktaidpsocialconfigpropertyscopes)<span title="Required">*</span> | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social#scopes IdpSocial#scopes}. |
+| [`type`](#cdktfprovideroktaidpsocialconfigpropertytype)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social#type IdpSocial#type}. |
+| [`accountLinkAction`](#cdktfprovideroktaidpsocialconfigpropertyaccountlinkaction) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social#account_link_action IdpSocial#account_link_action}. |
+| [`accountLinkGroupInclude`](#cdktfprovideroktaidpsocialconfigpropertyaccountlinkgroupinclude) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social#account_link_group_include IdpSocial#account_link_group_include}. |
 | [`appleKid`](#cdktfprovideroktaidpsocialconfigpropertyapplekid) | `string` | The Key ID that you obtained from Apple when you created the private key for the client. |
 | [`applePrivateKey`](#cdktfprovideroktaidpsocialconfigpropertyappleprivatekey) | `string` | The PKCS #8 encoded private key that you created for the client and downloaded from Apple. |
 | [`appleTeamId`](#cdktfprovideroktaidpsocialconfigpropertyappleteamid) | `string` | The Team ID associated with your Apple developer account. |
-| [`clientId`](#cdktfprovideroktaidpsocialconfigpropertyclientid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social.html#client_id IdpSocial#client_id}. |
-| [`clientSecret`](#cdktfprovideroktaidpsocialconfigpropertyclientsecret) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social.html#client_secret IdpSocial#client_secret}. |
-| [`deprovisionedAction`](#cdktfprovideroktaidpsocialconfigpropertydeprovisionedaction) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social.html#deprovisioned_action IdpSocial#deprovisioned_action}. |
-| [`groupsAction`](#cdktfprovideroktaidpsocialconfigpropertygroupsaction) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social.html#groups_action IdpSocial#groups_action}. |
-| [`groupsAssignment`](#cdktfprovideroktaidpsocialconfigpropertygroupsassignment) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social.html#groups_assignment IdpSocial#groups_assignment}. |
-| [`groupsAttribute`](#cdktfprovideroktaidpsocialconfigpropertygroupsattribute) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social.html#groups_attribute IdpSocial#groups_attribute}. |
-| [`groupsFilter`](#cdktfprovideroktaidpsocialconfigpropertygroupsfilter) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social.html#groups_filter IdpSocial#groups_filter}. |
+| [`clientId`](#cdktfprovideroktaidpsocialconfigpropertyclientid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social#client_id IdpSocial#client_id}. |
+| [`clientSecret`](#cdktfprovideroktaidpsocialconfigpropertyclientsecret) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social#client_secret IdpSocial#client_secret}. |
+| [`deprovisionedAction`](#cdktfprovideroktaidpsocialconfigpropertydeprovisionedaction) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social#deprovisioned_action IdpSocial#deprovisioned_action}. |
+| [`groupsAction`](#cdktfprovideroktaidpsocialconfigpropertygroupsaction) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social#groups_action IdpSocial#groups_action}. |
+| [`groupsAssignment`](#cdktfprovideroktaidpsocialconfigpropertygroupsassignment) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social#groups_assignment IdpSocial#groups_assignment}. |
+| [`groupsAttribute`](#cdktfprovideroktaidpsocialconfigpropertygroupsattribute) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social#groups_attribute IdpSocial#groups_attribute}. |
+| [`groupsFilter`](#cdktfprovideroktaidpsocialconfigpropertygroupsfilter) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social#groups_filter IdpSocial#groups_filter}. |
 | [`issuerMode`](#cdktfprovideroktaidpsocialconfigpropertyissuermode) | `string` | Indicates whether Okta uses the original Okta org domain URL, or a custom domain URL. |
-| [`matchAttribute`](#cdktfprovideroktaidpsocialconfigpropertymatchattribute) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social.html#match_attribute IdpSocial#match_attribute}. |
-| [`matchType`](#cdktfprovideroktaidpsocialconfigpropertymatchtype) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social.html#match_type IdpSocial#match_type}. |
-| [`maxClockSkew`](#cdktfprovideroktaidpsocialconfigpropertymaxclockskew) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social.html#max_clock_skew IdpSocial#max_clock_skew}. |
-| [`profileMaster`](#cdktfprovideroktaidpsocialconfigpropertyprofilemaster) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social.html#profile_master IdpSocial#profile_master}. |
-| [`protocolType`](#cdktfprovideroktaidpsocialconfigpropertyprotocoltype) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social.html#protocol_type IdpSocial#protocol_type}. |
-| [`provisioningAction`](#cdktfprovideroktaidpsocialconfigpropertyprovisioningaction) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social.html#provisioning_action IdpSocial#provisioning_action}. |
+| [`matchAttribute`](#cdktfprovideroktaidpsocialconfigpropertymatchattribute) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social#match_attribute IdpSocial#match_attribute}. |
+| [`matchType`](#cdktfprovideroktaidpsocialconfigpropertymatchtype) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social#match_type IdpSocial#match_type}. |
+| [`maxClockSkew`](#cdktfprovideroktaidpsocialconfigpropertymaxclockskew) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social#max_clock_skew IdpSocial#max_clock_skew}. |
+| [`profileMaster`](#cdktfprovideroktaidpsocialconfigpropertyprofilemaster) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social#profile_master IdpSocial#profile_master}. |
+| [`protocolType`](#cdktfprovideroktaidpsocialconfigpropertyprotocoltype) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social#protocol_type IdpSocial#protocol_type}. |
+| [`provisioningAction`](#cdktfprovideroktaidpsocialconfigpropertyprovisioningaction) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social#provisioning_action IdpSocial#provisioning_action}. |
 | [`requestSignatureAlgorithm`](#cdktfprovideroktaidpsocialconfigpropertyrequestsignaturealgorithm) | `string` | algorithm to use to sign requests. |
 | [`requestSignatureScope`](#cdktfprovideroktaidpsocialconfigpropertyrequestsignaturescope) | `string` | algorithm to use to sign response. |
 | [`responseSignatureAlgorithm`](#cdktfprovideroktaidpsocialconfigpropertyresponsesignaturealgorithm) | `string` | algorithm to use to sign requests. |
 | [`responseSignatureScope`](#cdktfprovideroktaidpsocialconfigpropertyresponsesignaturescope) | `string` | algorithm to use to sign response. |
-| [`status`](#cdktfprovideroktaidpsocialconfigpropertystatus) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social.html#status IdpSocial#status}. |
-| [`subjectMatchAttribute`](#cdktfprovideroktaidpsocialconfigpropertysubjectmatchattribute) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social.html#subject_match_attribute IdpSocial#subject_match_attribute}. |
-| [`subjectMatchType`](#cdktfprovideroktaidpsocialconfigpropertysubjectmatchtype) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social.html#subject_match_type IdpSocial#subject_match_type}. |
-| [`suspendedAction`](#cdktfprovideroktaidpsocialconfigpropertysuspendedaction) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social.html#suspended_action IdpSocial#suspended_action}. |
-| [`usernameTemplate`](#cdktfprovideroktaidpsocialconfigpropertyusernametemplate) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social.html#username_template IdpSocial#username_template}. |
+| [`status`](#cdktfprovideroktaidpsocialconfigpropertystatus) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social#status IdpSocial#status}. |
+| [`subjectMatchAttribute`](#cdktfprovideroktaidpsocialconfigpropertysubjectmatchattribute) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social#subject_match_attribute IdpSocial#subject_match_attribute}. |
+| [`subjectMatchType`](#cdktfprovideroktaidpsocialconfigpropertysubjectmatchtype) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social#subject_match_type IdpSocial#subject_match_type}. |
+| [`suspendedAction`](#cdktfprovideroktaidpsocialconfigpropertysuspendedaction) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social#suspended_action IdpSocial#suspended_action}. |
+| [`usernameTemplate`](#cdktfprovideroktaidpsocialconfigpropertyusernametemplate) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social#username_template IdpSocial#username_template}. |
 
 ---
 
@@ -75138,7 +75138,7 @@ public readonly name: string;
 
 Name of the IdP.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social.html#name IdpSocial#name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social#name IdpSocial#name}
 
 ---
 
@@ -75150,7 +75150,7 @@ public readonly scopes: string[];
 
 - *Type:* `string`[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social.html#scopes IdpSocial#scopes}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social#scopes IdpSocial#scopes}.
 
 ---
 
@@ -75162,7 +75162,7 @@ public readonly type: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social.html#type IdpSocial#type}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social#type IdpSocial#type}.
 
 ---
 
@@ -75174,7 +75174,7 @@ public readonly accountLinkAction: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social.html#account_link_action IdpSocial#account_link_action}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social#account_link_action IdpSocial#account_link_action}.
 
 ---
 
@@ -75186,7 +75186,7 @@ public readonly accountLinkGroupInclude: string[];
 
 - *Type:* `string`[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social.html#account_link_group_include IdpSocial#account_link_group_include}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social#account_link_group_include IdpSocial#account_link_group_include}.
 
 ---
 
@@ -75200,7 +75200,7 @@ public readonly appleKid: string;
 
 The Key ID that you obtained from Apple when you created the private key for the client.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social.html#apple_kid IdpSocial#apple_kid}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social#apple_kid IdpSocial#apple_kid}
 
 ---
 
@@ -75214,7 +75214,7 @@ public readonly applePrivateKey: string;
 
 The PKCS #8 encoded private key that you created for the client and downloaded from Apple.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social.html#apple_private_key IdpSocial#apple_private_key}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social#apple_private_key IdpSocial#apple_private_key}
 
 ---
 
@@ -75228,7 +75228,7 @@ public readonly appleTeamId: string;
 
 The Team ID associated with your Apple developer account.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social.html#apple_team_id IdpSocial#apple_team_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social#apple_team_id IdpSocial#apple_team_id}
 
 ---
 
@@ -75240,7 +75240,7 @@ public readonly clientId: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social.html#client_id IdpSocial#client_id}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social#client_id IdpSocial#client_id}.
 
 ---
 
@@ -75252,7 +75252,7 @@ public readonly clientSecret: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social.html#client_secret IdpSocial#client_secret}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social#client_secret IdpSocial#client_secret}.
 
 ---
 
@@ -75264,7 +75264,7 @@ public readonly deprovisionedAction: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social.html#deprovisioned_action IdpSocial#deprovisioned_action}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social#deprovisioned_action IdpSocial#deprovisioned_action}.
 
 ---
 
@@ -75276,7 +75276,7 @@ public readonly groupsAction: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social.html#groups_action IdpSocial#groups_action}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social#groups_action IdpSocial#groups_action}.
 
 ---
 
@@ -75288,7 +75288,7 @@ public readonly groupsAssignment: string[];
 
 - *Type:* `string`[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social.html#groups_assignment IdpSocial#groups_assignment}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social#groups_assignment IdpSocial#groups_assignment}.
 
 ---
 
@@ -75300,7 +75300,7 @@ public readonly groupsAttribute: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social.html#groups_attribute IdpSocial#groups_attribute}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social#groups_attribute IdpSocial#groups_attribute}.
 
 ---
 
@@ -75312,7 +75312,7 @@ public readonly groupsFilter: string[];
 
 - *Type:* `string`[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social.html#groups_filter IdpSocial#groups_filter}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social#groups_filter IdpSocial#groups_filter}.
 
 ---
 
@@ -75326,7 +75326,7 @@ public readonly issuerMode: string;
 
 Indicates whether Okta uses the original Okta org domain URL, or a custom domain URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social.html#issuer_mode IdpSocial#issuer_mode}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social#issuer_mode IdpSocial#issuer_mode}
 
 ---
 
@@ -75338,7 +75338,7 @@ public readonly matchAttribute: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social.html#match_attribute IdpSocial#match_attribute}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social#match_attribute IdpSocial#match_attribute}.
 
 ---
 
@@ -75350,7 +75350,7 @@ public readonly matchType: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social.html#match_type IdpSocial#match_type}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social#match_type IdpSocial#match_type}.
 
 ---
 
@@ -75362,7 +75362,7 @@ public readonly maxClockSkew: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social.html#max_clock_skew IdpSocial#max_clock_skew}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social#max_clock_skew IdpSocial#max_clock_skew}.
 
 ---
 
@@ -75374,7 +75374,7 @@ public readonly profileMaster: boolean | IResolvable;
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social.html#profile_master IdpSocial#profile_master}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social#profile_master IdpSocial#profile_master}.
 
 ---
 
@@ -75386,7 +75386,7 @@ public readonly protocolType: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social.html#protocol_type IdpSocial#protocol_type}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social#protocol_type IdpSocial#protocol_type}.
 
 ---
 
@@ -75398,7 +75398,7 @@ public readonly provisioningAction: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social.html#provisioning_action IdpSocial#provisioning_action}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social#provisioning_action IdpSocial#provisioning_action}.
 
 ---
 
@@ -75412,7 +75412,7 @@ public readonly requestSignatureAlgorithm: string;
 
 algorithm to use to sign requests.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social.html#request_signature_algorithm IdpSocial#request_signature_algorithm}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social#request_signature_algorithm IdpSocial#request_signature_algorithm}
 
 ---
 
@@ -75426,7 +75426,7 @@ public readonly requestSignatureScope: string;
 
 algorithm to use to sign response.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social.html#request_signature_scope IdpSocial#request_signature_scope}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social#request_signature_scope IdpSocial#request_signature_scope}
 
 ---
 
@@ -75440,7 +75440,7 @@ public readonly responseSignatureAlgorithm: string;
 
 algorithm to use to sign requests.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social.html#response_signature_algorithm IdpSocial#response_signature_algorithm}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social#response_signature_algorithm IdpSocial#response_signature_algorithm}
 
 ---
 
@@ -75454,7 +75454,7 @@ public readonly responseSignatureScope: string;
 
 algorithm to use to sign response.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social.html#response_signature_scope IdpSocial#response_signature_scope}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social#response_signature_scope IdpSocial#response_signature_scope}
 
 ---
 
@@ -75466,7 +75466,7 @@ public readonly status: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social.html#status IdpSocial#status}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social#status IdpSocial#status}.
 
 ---
 
@@ -75478,7 +75478,7 @@ public readonly subjectMatchAttribute: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social.html#subject_match_attribute IdpSocial#subject_match_attribute}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social#subject_match_attribute IdpSocial#subject_match_attribute}.
 
 ---
 
@@ -75490,7 +75490,7 @@ public readonly subjectMatchType: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social.html#subject_match_type IdpSocial#subject_match_type}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social#subject_match_type IdpSocial#subject_match_type}.
 
 ---
 
@@ -75502,7 +75502,7 @@ public readonly suspendedAction: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social.html#suspended_action IdpSocial#suspended_action}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social#suspended_action IdpSocial#suspended_action}.
 
 ---
 
@@ -75514,7 +75514,7 @@ public readonly usernameTemplate: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social.html#username_template IdpSocial#username_template}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social#username_template IdpSocial#username_template}.
 
 ---
 
@@ -75536,13 +75536,13 @@ const inlineHookConfig: InlineHookConfig = { ... }
 | [`dependsOn`](#cdktfprovideroktainlinehookconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktainlinehookconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktainlinehookconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`channel`](#cdktfprovideroktainlinehookconfigpropertychannel)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook.html#channel InlineHook#channel}. |
-| [`name`](#cdktfprovideroktainlinehookconfigpropertyname)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook.html#name InlineHook#name}. |
-| [`type`](#cdktfprovideroktainlinehookconfigpropertytype)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook.html#type InlineHook#type}. |
-| [`version`](#cdktfprovideroktainlinehookconfigpropertyversion)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook.html#version InlineHook#version}. |
-| [`auth`](#cdktfprovideroktainlinehookconfigpropertyauth) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook.html#auth InlineHook#auth}. |
+| [`channel`](#cdktfprovideroktainlinehookconfigpropertychannel)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook#channel InlineHook#channel}. |
+| [`name`](#cdktfprovideroktainlinehookconfigpropertyname)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook#name InlineHook#name}. |
+| [`type`](#cdktfprovideroktainlinehookconfigpropertytype)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook#type InlineHook#type}. |
+| [`version`](#cdktfprovideroktainlinehookconfigpropertyversion)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook#version InlineHook#version}. |
+| [`auth`](#cdktfprovideroktainlinehookconfigpropertyauth) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook#auth InlineHook#auth}. |
 | [`headers`](#cdktfprovideroktainlinehookconfigpropertyheaders) | [`@cdktf/provider-okta.InlineHookHeaders`](#@cdktf/provider-okta.InlineHookHeaders)[] | headers block. |
-| [`status`](#cdktfprovideroktainlinehookconfigpropertystatus) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook.html#status InlineHook#status}. |
+| [`status`](#cdktfprovideroktainlinehookconfigpropertystatus) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook#status InlineHook#status}. |
 
 ---
 
@@ -75594,7 +75594,7 @@ public readonly channel: IResolvable | {[ key: string ]: string};
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook.html#channel InlineHook#channel}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook#channel InlineHook#channel}.
 
 ---
 
@@ -75606,7 +75606,7 @@ public readonly name: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook.html#name InlineHook#name}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook#name InlineHook#name}.
 
 ---
 
@@ -75618,7 +75618,7 @@ public readonly type: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook.html#type InlineHook#type}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook#type InlineHook#type}.
 
 ---
 
@@ -75630,7 +75630,7 @@ public readonly version: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook.html#version InlineHook#version}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook#version InlineHook#version}.
 
 ---
 
@@ -75642,7 +75642,7 @@ public readonly auth: IResolvable | {[ key: string ]: string};
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook.html#auth InlineHook#auth}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook#auth InlineHook#auth}.
 
 ---
 
@@ -75656,7 +75656,7 @@ public readonly headers: InlineHookHeaders[];
 
 headers block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook.html#headers InlineHook#headers}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook#headers InlineHook#headers}
 
 ---
 
@@ -75668,7 +75668,7 @@ public readonly status: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook.html#status InlineHook#status}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook#status InlineHook#status}.
 
 ---
 
@@ -75686,8 +75686,8 @@ const inlineHookHeaders: InlineHookHeaders = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`key`](#cdktfprovideroktainlinehookheaderspropertykey) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook.html#key InlineHook#key}. |
-| [`value`](#cdktfprovideroktainlinehookheaderspropertyvalue) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook.html#value InlineHook#value}. |
+| [`key`](#cdktfprovideroktainlinehookheaderspropertykey) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook#key InlineHook#key}. |
+| [`value`](#cdktfprovideroktainlinehookheaderspropertyvalue) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook#value InlineHook#value}. |
 
 ---
 
@@ -75699,7 +75699,7 @@ public readonly key: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook.html#key InlineHook#key}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook#key InlineHook#key}.
 
 ---
 
@@ -75711,7 +75711,7 @@ public readonly value: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook.html#value InlineHook#value}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook#value InlineHook#value}.
 
 ---
 
@@ -75792,7 +75792,7 @@ public readonly associatedDescription: string;
 
 Description of the associated relationship.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/link_definition.html#associated_description LinkDefinition#associated_description}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/link_definition#associated_description LinkDefinition#associated_description}
 
 ---
 
@@ -75806,7 +75806,7 @@ public readonly associatedName: string;
 
 API name of the associated link.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/link_definition.html#associated_name LinkDefinition#associated_name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/link_definition#associated_name LinkDefinition#associated_name}
 
 ---
 
@@ -75820,7 +75820,7 @@ public readonly associatedTitle: string;
 
 Display name of the associated link.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/link_definition.html#associated_title LinkDefinition#associated_title}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/link_definition#associated_title LinkDefinition#associated_title}
 
 ---
 
@@ -75834,7 +75834,7 @@ public readonly primaryDescription: string;
 
 Description of the primary relationship.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/link_definition.html#primary_description LinkDefinition#primary_description}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/link_definition#primary_description LinkDefinition#primary_description}
 
 ---
 
@@ -75848,7 +75848,7 @@ public readonly primaryName: string;
 
 API name of the primary link.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/link_definition.html#primary_name LinkDefinition#primary_name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/link_definition#primary_name LinkDefinition#primary_name}
 
 ---
 
@@ -75862,7 +75862,7 @@ public readonly primaryTitle: string;
 
 Display name of the primary link.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/link_definition.html#primary_title LinkDefinition#primary_title}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/link_definition#primary_title LinkDefinition#primary_title}
 
 ---
 
@@ -75940,7 +75940,7 @@ public readonly primaryName: string;
 
 Name of the 'primary' relationship being assigned.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/link_value.html#primary_name LinkValue#primary_name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/link_value#primary_name LinkValue#primary_name}
 
 ---
 
@@ -75954,7 +75954,7 @@ public readonly primaryUserId: string;
 
 User ID to be assigned to 'primary' for the 'associated' user in the specified relationship.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/link_value.html#primary_user_id LinkValue#primary_user_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/link_value#primary_user_id LinkValue#primary_user_id}
 
 ---
 
@@ -75968,7 +75968,7 @@ public readonly associatedUserIds: string[];
 
 Set of User IDs or login values of the users to be assigned the 'associated' relationship.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/link_value.html#associated_user_ids LinkValue#associated_user_ids}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/link_value#associated_user_ids LinkValue#associated_user_ids}
 
 ---
 
@@ -75992,24 +75992,24 @@ const mfaPolicyConfig: MfaPolicyConfig = { ... }
 | [`provider`](#cdktfprovideroktamfapolicyconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
 | [`name`](#cdktfprovideroktamfapolicyconfigpropertyname)<span title="Required">*</span> | `string` | Policy Name. |
 | [`description`](#cdktfprovideroktamfapolicyconfigpropertydescription) | `string` | Policy Description. |
-| [`duo`](#cdktfprovideroktamfapolicyconfigpropertyduo) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy.html#duo MfaPolicy#duo}. |
-| [`fidoU2F`](#cdktfprovideroktamfapolicyconfigpropertyfidou2f) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy.html#fido_u2f MfaPolicy#fido_u2f}. |
-| [`fidoWebauthn`](#cdktfprovideroktamfapolicyconfigpropertyfidowebauthn) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy.html#fido_webauthn MfaPolicy#fido_webauthn}. |
-| [`googleOtp`](#cdktfprovideroktamfapolicyconfigpropertygoogleotp) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy.html#google_otp MfaPolicy#google_otp}. |
+| [`duo`](#cdktfprovideroktamfapolicyconfigpropertyduo) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#duo MfaPolicy#duo}. |
+| [`fidoU2F`](#cdktfprovideroktamfapolicyconfigpropertyfidou2f) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#fido_u2f MfaPolicy#fido_u2f}. |
+| [`fidoWebauthn`](#cdktfprovideroktamfapolicyconfigpropertyfidowebauthn) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#fido_webauthn MfaPolicy#fido_webauthn}. |
+| [`googleOtp`](#cdktfprovideroktamfapolicyconfigpropertygoogleotp) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#google_otp MfaPolicy#google_otp}. |
 | [`groupsIncluded`](#cdktfprovideroktamfapolicyconfigpropertygroupsincluded) | `string`[] | List of Group IDs to Include. |
-| [`hotp`](#cdktfprovideroktamfapolicyconfigpropertyhotp) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy.html#hotp MfaPolicy#hotp}. |
-| [`oktaCall`](#cdktfprovideroktamfapolicyconfigpropertyoktacall) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy.html#okta_call MfaPolicy#okta_call}. |
-| [`oktaEmail`](#cdktfprovideroktamfapolicyconfigpropertyoktaemail) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy.html#okta_email MfaPolicy#okta_email}. |
-| [`oktaOtp`](#cdktfprovideroktamfapolicyconfigpropertyoktaotp) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy.html#okta_otp MfaPolicy#okta_otp}. |
-| [`oktaPassword`](#cdktfprovideroktamfapolicyconfigpropertyoktapassword) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy.html#okta_password MfaPolicy#okta_password}. |
-| [`oktaPush`](#cdktfprovideroktamfapolicyconfigpropertyoktapush) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy.html#okta_push MfaPolicy#okta_push}. |
-| [`oktaQuestion`](#cdktfprovideroktamfapolicyconfigpropertyoktaquestion) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy.html#okta_question MfaPolicy#okta_question}. |
-| [`oktaSms`](#cdktfprovideroktamfapolicyconfigpropertyoktasms) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy.html#okta_sms MfaPolicy#okta_sms}. |
+| [`hotp`](#cdktfprovideroktamfapolicyconfigpropertyhotp) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#hotp MfaPolicy#hotp}. |
+| [`oktaCall`](#cdktfprovideroktamfapolicyconfigpropertyoktacall) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#okta_call MfaPolicy#okta_call}. |
+| [`oktaEmail`](#cdktfprovideroktamfapolicyconfigpropertyoktaemail) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#okta_email MfaPolicy#okta_email}. |
+| [`oktaOtp`](#cdktfprovideroktamfapolicyconfigpropertyoktaotp) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#okta_otp MfaPolicy#okta_otp}. |
+| [`oktaPassword`](#cdktfprovideroktamfapolicyconfigpropertyoktapassword) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#okta_password MfaPolicy#okta_password}. |
+| [`oktaPush`](#cdktfprovideroktamfapolicyconfigpropertyoktapush) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#okta_push MfaPolicy#okta_push}. |
+| [`oktaQuestion`](#cdktfprovideroktamfapolicyconfigpropertyoktaquestion) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#okta_question MfaPolicy#okta_question}. |
+| [`oktaSms`](#cdktfprovideroktamfapolicyconfigpropertyoktasms) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#okta_sms MfaPolicy#okta_sms}. |
 | [`priority`](#cdktfprovideroktamfapolicyconfigpropertypriority) | `number` | Policy Priority, this attribute can be set to a valid priority. |
-| [`rsaToken`](#cdktfprovideroktamfapolicyconfigpropertyrsatoken) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy.html#rsa_token MfaPolicy#rsa_token}. |
+| [`rsaToken`](#cdktfprovideroktamfapolicyconfigpropertyrsatoken) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#rsa_token MfaPolicy#rsa_token}. |
 | [`status`](#cdktfprovideroktamfapolicyconfigpropertystatus) | `string` | Policy Status: ACTIVE or INACTIVE. |
-| [`symantecVip`](#cdktfprovideroktamfapolicyconfigpropertysymantecvip) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy.html#symantec_vip MfaPolicy#symantec_vip}. |
-| [`yubikeyToken`](#cdktfprovideroktamfapolicyconfigpropertyyubikeytoken) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy.html#yubikey_token MfaPolicy#yubikey_token}. |
+| [`symantecVip`](#cdktfprovideroktamfapolicyconfigpropertysymantecvip) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#symantec_vip MfaPolicy#symantec_vip}. |
+| [`yubikeyToken`](#cdktfprovideroktamfapolicyconfigpropertyyubikeytoken) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#yubikey_token MfaPolicy#yubikey_token}. |
 
 ---
 
@@ -76063,7 +76063,7 @@ public readonly name: string;
 
 Policy Name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy.html#name MfaPolicy#name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#name MfaPolicy#name}
 
 ---
 
@@ -76077,7 +76077,7 @@ public readonly description: string;
 
 Policy Description.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy.html#description MfaPolicy#description}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#description MfaPolicy#description}
 
 ---
 
@@ -76089,7 +76089,7 @@ public readonly duo: IResolvable | {[ key: string ]: string};
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy.html#duo MfaPolicy#duo}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#duo MfaPolicy#duo}.
 
 ---
 
@@ -76101,7 +76101,7 @@ public readonly fidoU2F: IResolvable | {[ key: string ]: string};
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy.html#fido_u2f MfaPolicy#fido_u2f}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#fido_u2f MfaPolicy#fido_u2f}.
 
 ---
 
@@ -76113,7 +76113,7 @@ public readonly fidoWebauthn: IResolvable | {[ key: string ]: string};
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy.html#fido_webauthn MfaPolicy#fido_webauthn}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#fido_webauthn MfaPolicy#fido_webauthn}.
 
 ---
 
@@ -76125,7 +76125,7 @@ public readonly googleOtp: IResolvable | {[ key: string ]: string};
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy.html#google_otp MfaPolicy#google_otp}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#google_otp MfaPolicy#google_otp}.
 
 ---
 
@@ -76139,7 +76139,7 @@ public readonly groupsIncluded: string[];
 
 List of Group IDs to Include.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy.html#groups_included MfaPolicy#groups_included}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#groups_included MfaPolicy#groups_included}
 
 ---
 
@@ -76151,7 +76151,7 @@ public readonly hotp: IResolvable | {[ key: string ]: string};
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy.html#hotp MfaPolicy#hotp}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#hotp MfaPolicy#hotp}.
 
 ---
 
@@ -76163,7 +76163,7 @@ public readonly oktaCall: IResolvable | {[ key: string ]: string};
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy.html#okta_call MfaPolicy#okta_call}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#okta_call MfaPolicy#okta_call}.
 
 ---
 
@@ -76175,7 +76175,7 @@ public readonly oktaEmail: IResolvable | {[ key: string ]: string};
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy.html#okta_email MfaPolicy#okta_email}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#okta_email MfaPolicy#okta_email}.
 
 ---
 
@@ -76187,7 +76187,7 @@ public readonly oktaOtp: IResolvable | {[ key: string ]: string};
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy.html#okta_otp MfaPolicy#okta_otp}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#okta_otp MfaPolicy#okta_otp}.
 
 ---
 
@@ -76199,7 +76199,7 @@ public readonly oktaPassword: IResolvable | {[ key: string ]: string};
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy.html#okta_password MfaPolicy#okta_password}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#okta_password MfaPolicy#okta_password}.
 
 ---
 
@@ -76211,7 +76211,7 @@ public readonly oktaPush: IResolvable | {[ key: string ]: string};
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy.html#okta_push MfaPolicy#okta_push}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#okta_push MfaPolicy#okta_push}.
 
 ---
 
@@ -76223,7 +76223,7 @@ public readonly oktaQuestion: IResolvable | {[ key: string ]: string};
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy.html#okta_question MfaPolicy#okta_question}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#okta_question MfaPolicy#okta_question}.
 
 ---
 
@@ -76235,7 +76235,7 @@ public readonly oktaSms: IResolvable | {[ key: string ]: string};
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy.html#okta_sms MfaPolicy#okta_sms}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#okta_sms MfaPolicy#okta_sms}.
 
 ---
 
@@ -76249,7 +76249,7 @@ public readonly priority: number;
 
 Policy Priority, this attribute can be set to a valid priority.
 
-To avoid endless diff situation we error if an invalid priority is provided. API defaults it to the last (lowest) if not there.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy.html#priority MfaPolicy#priority}
+To avoid endless diff situation we error if an invalid priority is provided. API defaults it to the last (lowest) if not there.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#priority MfaPolicy#priority}
 
 ---
 
@@ -76261,7 +76261,7 @@ public readonly rsaToken: IResolvable | {[ key: string ]: string};
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy.html#rsa_token MfaPolicy#rsa_token}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#rsa_token MfaPolicy#rsa_token}.
 
 ---
 
@@ -76275,7 +76275,7 @@ public readonly status: string;
 
 Policy Status: ACTIVE or INACTIVE.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy.html#status MfaPolicy#status}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#status MfaPolicy#status}
 
 ---
 
@@ -76287,7 +76287,7 @@ public readonly symantecVip: IResolvable | {[ key: string ]: string};
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy.html#symantec_vip MfaPolicy#symantec_vip}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#symantec_vip MfaPolicy#symantec_vip}.
 
 ---
 
@@ -76299,7 +76299,7 @@ public readonly yubikeyToken: IResolvable | {[ key: string ]: string};
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy.html#yubikey_token MfaPolicy#yubikey_token}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#yubikey_token MfaPolicy#yubikey_token}.
 
 ---
 
@@ -76317,9 +76317,9 @@ const mfaPolicyRuleAppExclude: MfaPolicyRuleAppExclude = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`type`](#cdktfprovideroktamfapolicyruleappexcludepropertytype)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy_rule.html#type MfaPolicyRule#type}. |
-| [`id`](#cdktfprovideroktamfapolicyruleappexcludepropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy_rule.html#id MfaPolicyRule#id}. |
-| [`name`](#cdktfprovideroktamfapolicyruleappexcludepropertyname) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy_rule.html#name MfaPolicyRule#name}. |
+| [`type`](#cdktfprovideroktamfapolicyruleappexcludepropertytype)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy_rule#type MfaPolicyRule#type}. |
+| [`id`](#cdktfprovideroktamfapolicyruleappexcludepropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy_rule#id MfaPolicyRule#id}. |
+| [`name`](#cdktfprovideroktamfapolicyruleappexcludepropertyname) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy_rule#name MfaPolicyRule#name}. |
 
 ---
 
@@ -76331,7 +76331,7 @@ public readonly type: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy_rule.html#type MfaPolicyRule#type}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy_rule#type MfaPolicyRule#type}.
 
 ---
 
@@ -76343,7 +76343,7 @@ public readonly id: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy_rule.html#id MfaPolicyRule#id}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy_rule#id MfaPolicyRule#id}.
 
 ---
 
@@ -76355,7 +76355,7 @@ public readonly name: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy_rule.html#name MfaPolicyRule#name}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy_rule#name MfaPolicyRule#name}.
 
 ---
 
@@ -76373,9 +76373,9 @@ const mfaPolicyRuleAppInclude: MfaPolicyRuleAppInclude = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`type`](#cdktfprovideroktamfapolicyruleappincludepropertytype)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy_rule.html#type MfaPolicyRule#type}. |
-| [`id`](#cdktfprovideroktamfapolicyruleappincludepropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy_rule.html#id MfaPolicyRule#id}. |
-| [`name`](#cdktfprovideroktamfapolicyruleappincludepropertyname) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy_rule.html#name MfaPolicyRule#name}. |
+| [`type`](#cdktfprovideroktamfapolicyruleappincludepropertytype)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy_rule#type MfaPolicyRule#type}. |
+| [`id`](#cdktfprovideroktamfapolicyruleappincludepropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy_rule#id MfaPolicyRule#id}. |
+| [`name`](#cdktfprovideroktamfapolicyruleappincludepropertyname) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy_rule#name MfaPolicyRule#name}. |
 
 ---
 
@@ -76387,7 +76387,7 @@ public readonly type: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy_rule.html#type MfaPolicyRule#type}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy_rule#type MfaPolicyRule#type}.
 
 ---
 
@@ -76399,7 +76399,7 @@ public readonly id: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy_rule.html#id MfaPolicyRule#id}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy_rule#id MfaPolicyRule#id}.
 
 ---
 
@@ -76411,7 +76411,7 @@ public readonly name: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy_rule.html#name MfaPolicyRule#name}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy_rule#name MfaPolicyRule#name}.
 
 ---
 
@@ -76498,7 +76498,7 @@ public readonly name: string;
 
 Policy Rule Name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy_rule.html#name MfaPolicyRule#name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy_rule#name MfaPolicyRule#name}
 
 ---
 
@@ -76512,7 +76512,7 @@ public readonly appExclude: MfaPolicyRuleAppExclude[];
 
 app_exclude block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy_rule.html#app_exclude MfaPolicyRule#app_exclude}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy_rule#app_exclude MfaPolicyRule#app_exclude}
 
 ---
 
@@ -76526,7 +76526,7 @@ public readonly appInclude: MfaPolicyRuleAppInclude[];
 
 app_include block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy_rule.html#app_include MfaPolicyRule#app_include}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy_rule#app_include MfaPolicyRule#app_include}
 
 ---
 
@@ -76540,7 +76540,7 @@ public readonly enroll: string;
 
 Should the user be enrolled the first time they LOGIN, the next time they are CHALLENGED, or NEVER?
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy_rule.html#enroll MfaPolicyRule#enroll}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy_rule#enroll MfaPolicyRule#enroll}
 
 ---
 
@@ -76554,7 +76554,7 @@ public readonly networkConnection: string;
 
 Network selection mode: ANYWHERE, ZONE, ON_NETWORK, or OFF_NETWORK.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy_rule.html#network_connection MfaPolicyRule#network_connection}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy_rule#network_connection MfaPolicyRule#network_connection}
 
 ---
 
@@ -76568,7 +76568,7 @@ public readonly networkExcludes: string[];
 
 The zones to exclude.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy_rule.html#network_excludes MfaPolicyRule#network_excludes}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy_rule#network_excludes MfaPolicyRule#network_excludes}
 
 ---
 
@@ -76582,7 +76582,7 @@ public readonly networkIncludes: string[];
 
 The zones to include.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy_rule.html#network_includes MfaPolicyRule#network_includes}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy_rule#network_includes MfaPolicyRule#network_includes}
 
 ---
 
@@ -76596,7 +76596,7 @@ public readonly policyid: string;
 
 Policy ID of the Rule.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy_rule.html#policyid MfaPolicyRule#policyid}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy_rule#policyid MfaPolicyRule#policyid}
 
 ---
 
@@ -76610,7 +76610,7 @@ public readonly policyId: string;
 
 Policy ID of the Rule.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy_rule.html#policy_id MfaPolicyRule#policy_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy_rule#policy_id MfaPolicyRule#policy_id}
 
 ---
 
@@ -76624,7 +76624,7 @@ public readonly priority: number;
 
 Policy Rule Priority, this attribute can be set to a valid priority.
 
-To avoid endless diff situation we error if an invalid priority is provided. API defaults it to the last (lowest) if not there.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy_rule.html#priority MfaPolicyRule#priority}
+To avoid endless diff situation we error if an invalid priority is provided. API defaults it to the last (lowest) if not there.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy_rule#priority MfaPolicyRule#priority}
 
 ---
 
@@ -76638,7 +76638,7 @@ public readonly status: string;
 
 Policy Rule Status: ACTIVE or INACTIVE.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy_rule.html#status MfaPolicyRule#status}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy_rule#status MfaPolicyRule#status}
 
 ---
 
@@ -76652,7 +76652,7 @@ public readonly usersExcluded: string[];
 
 Set of User IDs to Exclude.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy_rule.html#users_excluded MfaPolicyRule#users_excluded}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy_rule#users_excluded MfaPolicyRule#users_excluded}
 
 ---
 
@@ -76735,7 +76735,7 @@ public readonly name: string;
 
 Name of the Network Zone Resource.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/network_zone.html#name NetworkZone#name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/network_zone#name NetworkZone#name}
 
 ---
 
@@ -76749,7 +76749,7 @@ public readonly type: string;
 
 Type of the Network Zone - can either be IP or DYNAMIC only.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/network_zone.html#type NetworkZone#type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/network_zone#type NetworkZone#type}
 
 ---
 
@@ -76763,7 +76763,7 @@ public readonly asns: string[];
 
 Format of each array value: a string representation of an ASN numeric value.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/network_zone.html#asns NetworkZone#asns}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/network_zone#asns NetworkZone#asns}
 
 ---
 
@@ -76777,7 +76777,7 @@ public readonly dynamicLocations: string[];
 
 Array of locations ISO-3166-1(2). Format code: countryCode OR countryCode-regionCode.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/network_zone.html#dynamic_locations NetworkZone#dynamic_locations}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/network_zone#dynamic_locations NetworkZone#dynamic_locations}
 
 ---
 
@@ -76791,7 +76791,7 @@ public readonly dynamicProxyType: string;
 
 Type of proxy being controlled by this network zone.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/network_zone.html#dynamic_proxy_type NetworkZone#dynamic_proxy_type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/network_zone#dynamic_proxy_type NetworkZone#dynamic_proxy_type}
 
 ---
 
@@ -76805,7 +76805,7 @@ public readonly gateways: string[];
 
 Array of values in CIDR/range form depending on the way it's been declared (i.e. CIDR will contain /suffix). Please check API docs for examples.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/network_zone.html#gateways NetworkZone#gateways}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/network_zone#gateways NetworkZone#gateways}
 
 ---
 
@@ -76819,7 +76819,7 @@ public readonly proxies: string[];
 
 Array of values in CIDR/range form depending on the way it's been declared (i.e. CIDR will contain /suffix). Please check API docs for examples.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/network_zone.html#proxies NetworkZone#proxies}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/network_zone#proxies NetworkZone#proxies}
 
 ---
 
@@ -76833,7 +76833,7 @@ public readonly usage: string;
 
 Zone's purpose: POLICY or BLOCKLIST.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/network_zone.html#usage NetworkZone#usage}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/network_zone#usage NetworkZone#usage}
 
 ---
 
@@ -76956,7 +76956,7 @@ public readonly label: string;
 
 Pretty name of app.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app.html#label OauthApp#label}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app#label OauthApp#label}
 
 ---
 
@@ -76970,7 +76970,7 @@ public readonly type: string;
 
 The type of client application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app.html#type OauthApp#type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app#type OauthApp#type}
 
 ---
 
@@ -76984,7 +76984,7 @@ public readonly accessibilityErrorRedirectUrl: string;
 
 Custom error page URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app.html#accessibility_error_redirect_url OauthApp#accessibility_error_redirect_url}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app#accessibility_error_redirect_url OauthApp#accessibility_error_redirect_url}
 
 ---
 
@@ -76998,7 +76998,7 @@ public readonly accessibilityLoginRedirectUrl: string;
 
 Custom login page URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app.html#accessibility_login_redirect_url OauthApp#accessibility_login_redirect_url}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app#accessibility_login_redirect_url OauthApp#accessibility_login_redirect_url}
 
 ---
 
@@ -77012,7 +77012,7 @@ public readonly accessibilitySelfService: boolean | IResolvable;
 
 Enable self service.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app.html#accessibility_self_service OauthApp#accessibility_self_service}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app#accessibility_self_service OauthApp#accessibility_self_service}
 
 ---
 
@@ -77026,7 +77026,7 @@ public readonly adminNote: string;
 
 Application notes for admins.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app.html#admin_note OauthApp#admin_note}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app#admin_note OauthApp#admin_note}
 
 ---
 
@@ -77040,7 +77040,7 @@ public readonly appLinksJson: string;
 
 Displays specific appLinks for the app.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app.html#app_links_json OauthApp#app_links_json}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app#app_links_json OauthApp#app_links_json}
 
 ---
 
@@ -77054,7 +77054,7 @@ public readonly appSettingsJson: string;
 
 Application settings in JSON format.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app.html#app_settings_json OauthApp#app_settings_json}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app#app_settings_json OauthApp#app_settings_json}
 
 ---
 
@@ -77068,7 +77068,7 @@ public readonly autoKeyRotation: boolean | IResolvable;
 
 Requested key rotation mode.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app.html#auto_key_rotation OauthApp#auto_key_rotation}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app#auto_key_rotation OauthApp#auto_key_rotation}
 
 ---
 
@@ -77082,7 +77082,7 @@ public readonly autoSubmitToolbar: boolean | IResolvable;
 
 Display auto submit toolbar.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app.html#auto_submit_toolbar OauthApp#auto_submit_toolbar}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app#auto_submit_toolbar OauthApp#auto_submit_toolbar}
 
 ---
 
@@ -77096,7 +77096,7 @@ public readonly clientBasicSecret: string;
 
 OAuth client secret key, this can be set when token_endpoint_auth_method is client_secret_basic.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app.html#client_basic_secret OauthApp#client_basic_secret}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app#client_basic_secret OauthApp#client_basic_secret}
 
 ---
 
@@ -77110,7 +77110,7 @@ public readonly clientId: string;
 
 OAuth client ID. If set during creation, app is created with this id.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app.html#client_id OauthApp#client_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app#client_id OauthApp#client_id}
 
 ---
 
@@ -77124,7 +77124,7 @@ public readonly clientUri: string;
 
 URI to a web page providing information about the client.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app.html#client_uri OauthApp#client_uri}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app#client_uri OauthApp#client_uri}
 
 ---
 
@@ -77138,7 +77138,7 @@ public readonly consentMethod: string;
 
 *Early Access Property*. Indicates whether user consent is required or implicit. Valid values: REQUIRED, TRUSTED. Default value is TRUSTED.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app.html#consent_method OauthApp#consent_method}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app#consent_method OauthApp#consent_method}
 
 ---
 
@@ -77152,7 +77152,7 @@ public readonly customClientId: string;
 
 **Deprecated** This property allows you to set your client_id during creation.
 
-NOTE: updating after creation will be a no-op, use client_id for that behavior instead.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app.html#custom_client_id OauthApp#custom_client_id}
+NOTE: updating after creation will be a no-op, use client_id for that behavior instead.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app#custom_client_id OauthApp#custom_client_id}
 
 ---
 
@@ -77166,7 +77166,7 @@ public readonly enduserNote: string;
 
 Application notes for end users.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app.html#enduser_note OauthApp#enduser_note}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app#enduser_note OauthApp#enduser_note}
 
 ---
 
@@ -77180,7 +77180,7 @@ public readonly grantTypes: string[];
 
 List of OAuth 2.0 grant types. Conditional validation params found here https://developer.okta.com/docs/api/resources/apps#credentials-settings-details. Defaults to minimum requirements per app type.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app.html#grant_types OauthApp#grant_types}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app#grant_types OauthApp#grant_types}
 
 ---
 
@@ -77194,7 +77194,7 @@ public readonly groups: string[];
 
 Groups associated with the application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app.html#groups OauthApp#groups}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app#groups OauthApp#groups}
 
 ---
 
@@ -77208,7 +77208,7 @@ public readonly groupsClaim: OauthAppGroupsClaim;
 
 groups_claim block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app.html#groups_claim OauthApp#groups_claim}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app#groups_claim OauthApp#groups_claim}
 
 ---
 
@@ -77222,7 +77222,7 @@ public readonly hideIos: boolean | IResolvable;
 
 Do not display application icon on mobile app.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app.html#hide_ios OauthApp#hide_ios}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app#hide_ios OauthApp#hide_ios}
 
 ---
 
@@ -77236,7 +77236,7 @@ public readonly hideWeb: boolean | IResolvable;
 
 Do not display application icon to users.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app.html#hide_web OauthApp#hide_web}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app#hide_web OauthApp#hide_web}
 
 ---
 
@@ -77250,7 +77250,7 @@ public readonly implicitAssignment: boolean | IResolvable;
 
 *Early Access Property*. Enable Federation Broker Mode.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app.html#implicit_assignment OauthApp#implicit_assignment}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app#implicit_assignment OauthApp#implicit_assignment}
 
 ---
 
@@ -77264,7 +77264,7 @@ public readonly issuerMode: string;
 
 *Early Access Property*.
 
-Indicates whether the Okta Authorization Server uses the original Okta org domain URL or a custom domain URL as the issuer of ID token for this client.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app.html#issuer_mode OauthApp#issuer_mode}
+Indicates whether the Okta Authorization Server uses the original Okta org domain URL or a custom domain URL as the issuer of ID token for this client.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app#issuer_mode OauthApp#issuer_mode}
 
 ---
 
@@ -77278,7 +77278,7 @@ public readonly jwks: OauthAppJwks[];
 
 jwks block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app.html#jwks OauthApp#jwks}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app#jwks OauthApp#jwks}
 
 ---
 
@@ -77292,7 +77292,7 @@ public readonly loginMode: string;
 
 The type of Idp-Initiated login that the client supports, if any.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app.html#login_mode OauthApp#login_mode}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app#login_mode OauthApp#login_mode}
 
 ---
 
@@ -77306,7 +77306,7 @@ public readonly loginScopes: string[];
 
 List of scopes to use for the request.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app.html#login_scopes OauthApp#login_scopes}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app#login_scopes OauthApp#login_scopes}
 
 ---
 
@@ -77320,7 +77320,7 @@ public readonly loginUri: string;
 
 URI that initiates login.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app.html#login_uri OauthApp#login_uri}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app#login_uri OauthApp#login_uri}
 
 ---
 
@@ -77334,7 +77334,7 @@ public readonly logo: string;
 
 Local path to logo of the application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app.html#logo OauthApp#logo}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app#logo OauthApp#logo}
 
 ---
 
@@ -77348,7 +77348,7 @@ public readonly logoUri: string;
 
 URI that references a logo for the client.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app.html#logo_uri OauthApp#logo_uri}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app#logo_uri OauthApp#logo_uri}
 
 ---
 
@@ -77362,7 +77362,7 @@ public readonly omitSecret: boolean | IResolvable;
 
 This tells the provider not to persist the application's secret to state.
 
-If this is ever changes from true => false your app will be recreated.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app.html#omit_secret OauthApp#omit_secret}
+If this is ever changes from true => false your app will be recreated.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app#omit_secret OauthApp#omit_secret}
 
 ---
 
@@ -77376,7 +77376,7 @@ public readonly policyUri: string;
 
 URI to web page providing client policy document.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app.html#policy_uri OauthApp#policy_uri}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app#policy_uri OauthApp#policy_uri}
 
 ---
 
@@ -77390,7 +77390,7 @@ public readonly postLogoutRedirectUris: string[];
 
 List of URIs for redirection after logout.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app.html#post_logout_redirect_uris OauthApp#post_logout_redirect_uris}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app#post_logout_redirect_uris OauthApp#post_logout_redirect_uris}
 
 ---
 
@@ -77404,7 +77404,7 @@ public readonly profile: string;
 
 Custom JSON that represents an OAuth application's profile.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app.html#profile OauthApp#profile}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app#profile OauthApp#profile}
 
 ---
 
@@ -77418,7 +77418,7 @@ public readonly redirectUris: string[];
 
 List of URIs for use in the redirect-based flow.
 
-This is required for all application types except service. Note: see okta_app_oauth_redirect_uri for appending to this list in a decentralized way.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app.html#redirect_uris OauthApp#redirect_uris}
+This is required for all application types except service. Note: see okta_app_oauth_redirect_uri for appending to this list in a decentralized way.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app#redirect_uris OauthApp#redirect_uris}
 
 ---
 
@@ -77432,7 +77432,7 @@ public readonly refreshTokenLeeway: number;
 
 *Early Access Property* Grace period for token rotation.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app.html#refresh_token_leeway OauthApp#refresh_token_leeway}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app#refresh_token_leeway OauthApp#refresh_token_leeway}
 
 ---
 
@@ -77446,7 +77446,7 @@ public readonly refreshTokenRotation: string;
 
 *Early Access Property* Refresh token rotation behavior.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app.html#refresh_token_rotation OauthApp#refresh_token_rotation}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app#refresh_token_rotation OauthApp#refresh_token_rotation}
 
 ---
 
@@ -77460,7 +77460,7 @@ public readonly responseTypes: string[];
 
 List of OAuth 2.0 response type strings.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app.html#response_types OauthApp#response_types}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app#response_types OauthApp#response_types}
 
 ---
 
@@ -77474,7 +77474,7 @@ public readonly skipGroups: boolean | IResolvable;
 
 Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app.html#skip_groups OauthApp#skip_groups}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app#skip_groups OauthApp#skip_groups}
 
 ---
 
@@ -77488,7 +77488,7 @@ public readonly skipUsers: boolean | IResolvable;
 
 Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app.html#skip_users OauthApp#skip_users}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app#skip_users OauthApp#skip_users}
 
 ---
 
@@ -77502,7 +77502,7 @@ public readonly status: string;
 
 Status of application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app.html#status OauthApp#status}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app#status OauthApp#status}
 
 ---
 
@@ -77516,7 +77516,7 @@ public readonly tokenEndpointAuthMethod: string;
 
 Requested authentication method for the token endpoint.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app.html#token_endpoint_auth_method OauthApp#token_endpoint_auth_method}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app#token_endpoint_auth_method OauthApp#token_endpoint_auth_method}
 
 ---
 
@@ -77530,7 +77530,7 @@ public readonly tosUri: string;
 
 URI to web page providing client tos (terms of service).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app.html#tos_uri OauthApp#tos_uri}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app#tos_uri OauthApp#tos_uri}
 
 ---
 
@@ -77544,7 +77544,7 @@ public readonly userNameTemplate: string;
 
 Username template.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app.html#user_name_template OauthApp#user_name_template}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app#user_name_template OauthApp#user_name_template}
 
 ---
 
@@ -77558,7 +77558,7 @@ public readonly userNameTemplatePushStatus: string;
 
 Push username on update.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app.html#user_name_template_push_status OauthApp#user_name_template_push_status}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app#user_name_template_push_status OauthApp#user_name_template_push_status}
 
 ---
 
@@ -77572,7 +77572,7 @@ public readonly userNameTemplateSuffix: string;
 
 Username template suffix.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app.html#user_name_template_suffix OauthApp#user_name_template_suffix}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app#user_name_template_suffix OauthApp#user_name_template_suffix}
 
 ---
 
@@ -77586,7 +77586,7 @@ public readonly userNameTemplateType: string;
 
 Username template type.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app.html#user_name_template_type OauthApp#user_name_template_type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app#user_name_template_type OauthApp#user_name_template_type}
 
 ---
 
@@ -77600,7 +77600,7 @@ public readonly users: OauthAppUsers[];
 
 users block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app.html#users OauthApp#users}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app#users OauthApp#users}
 
 ---
 
@@ -77614,7 +77614,7 @@ public readonly wildcardRedirect: string;
 
 *Early Access Property*. Indicates if the client is allowed to use wildcard matching of redirect_uris.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app.html#wildcard_redirect OauthApp#wildcard_redirect}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app#wildcard_redirect OauthApp#wildcard_redirect}
 
 ---
 
@@ -77649,7 +77649,7 @@ public readonly name: string;
 
 Name of the claim that will be used in the token.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app.html#name OauthApp#name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app#name OauthApp#name}
 
 ---
 
@@ -77663,7 +77663,7 @@ public readonly type: string;
 
 Groups claim type.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app.html#type OauthApp#type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app#type OauthApp#type}
 
 ---
 
@@ -77677,7 +77677,7 @@ public readonly value: string;
 
 Value of the claim.
 
-Can be an Okta Expression Language statement that evaluates at the time the token is minted.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app.html#value OauthApp#value}
+Can be an Okta Expression Language statement that evaluates at the time the token is minted.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app#value OauthApp#value}
 
 ---
 
@@ -77691,7 +77691,7 @@ public readonly filterType: string;
 
 Groups claim filter. Can only be set if type is FILTER.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app.html#filter_type OauthApp#filter_type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app#filter_type OauthApp#filter_type}
 
 ---
 
@@ -77726,7 +77726,7 @@ public readonly kid: string;
 
 Key ID.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app.html#kid OauthApp#kid}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app#kid OauthApp#kid}
 
 ---
 
@@ -77740,7 +77740,7 @@ public readonly kty: string;
 
 Key type.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app.html#kty OauthApp#kty}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app#kty OauthApp#kty}
 
 ---
 
@@ -77754,7 +77754,7 @@ public readonly e: string;
 
 RSA Exponent.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app.html#e OauthApp#e}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app#e OauthApp#e}
 
 ---
 
@@ -77768,7 +77768,7 @@ public readonly n: string;
 
 RSA Modulus.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app.html#n OauthApp#n}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app#n OauthApp#n}
 
 ---
 
@@ -77790,7 +77790,7 @@ const oauthAppRedirectUriConfig: OauthAppRedirectUriConfig = { ... }
 | [`dependsOn`](#cdktfprovideroktaoauthappredirecturiconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktaoauthappredirecturiconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktaoauthappredirecturiconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`appId`](#cdktfprovideroktaoauthappredirecturiconfigpropertyappid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app_redirect_uri.html#app_id OauthAppRedirectUri#app_id}. |
+| [`appId`](#cdktfprovideroktaoauthappredirecturiconfigpropertyappid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app_redirect_uri#app_id OauthAppRedirectUri#app_id}. |
 | [`uri`](#cdktfprovideroktaoauthappredirecturiconfigpropertyuri)<span title="Required">*</span> | `string` | Redirect URI to append to Okta OIDC application. |
 
 ---
@@ -77843,7 +77843,7 @@ public readonly appId: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app_redirect_uri.html#app_id OauthAppRedirectUri#app_id}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app_redirect_uri#app_id OauthAppRedirectUri#app_id}.
 
 ---
 
@@ -77857,7 +77857,7 @@ public readonly uri: string;
 
 Redirect URI to append to Okta OIDC application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app_redirect_uri.html#uri OauthAppRedirectUri#uri}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app_redirect_uri#uri OauthAppRedirectUri#uri}
 
 ---
 
@@ -77891,7 +77891,7 @@ public readonly id: string;
 
 User ID.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app.html#id OauthApp#id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app#id OauthApp#id}
 
 ---
 
@@ -77905,7 +77905,7 @@ public readonly password: string;
 
 Password for user application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app.html#password OauthApp#password}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app#password OauthApp#password}
 
 ---
 
@@ -77919,7 +77919,7 @@ public readonly username: string;
 
 Username for user.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app.html#username OauthApp#username}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app#username OauthApp#username}
 
 ---
 
@@ -78251,7 +78251,7 @@ public readonly companyName: string;
 
 Name of org.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration.html#company_name OrgConfiguration#company_name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration#company_name OrgConfiguration#company_name}
 
 ---
 
@@ -78265,7 +78265,7 @@ public readonly address1: string;
 
 Primary address of org.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration.html#address_1 OrgConfiguration#address_1}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration#address_1 OrgConfiguration#address_1}
 
 ---
 
@@ -78279,7 +78279,7 @@ public readonly address2: string;
 
 Secondary address of org.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration.html#address_2 OrgConfiguration#address_2}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration#address_2 OrgConfiguration#address_2}
 
 ---
 
@@ -78293,7 +78293,7 @@ public readonly billingContactUser: string;
 
 User ID representing the billing contact.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration.html#billing_contact_user OrgConfiguration#billing_contact_user}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration#billing_contact_user OrgConfiguration#billing_contact_user}
 
 ---
 
@@ -78307,7 +78307,7 @@ public readonly city: string;
 
 City of org.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration.html#city OrgConfiguration#city}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration#city OrgConfiguration#city}
 
 ---
 
@@ -78321,7 +78321,7 @@ public readonly country: string;
 
 Country of org.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration.html#country OrgConfiguration#country}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration#country OrgConfiguration#country}
 
 ---
 
@@ -78335,7 +78335,7 @@ public readonly endUserSupportHelpUrl: string;
 
 Support link of org.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration.html#end_user_support_help_url OrgConfiguration#end_user_support_help_url}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration#end_user_support_help_url OrgConfiguration#end_user_support_help_url}
 
 ---
 
@@ -78349,7 +78349,7 @@ public readonly logo: string;
 
 Local path to logo of the org.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration.html#logo OrgConfiguration#logo}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration#logo OrgConfiguration#logo}
 
 ---
 
@@ -78363,7 +78363,7 @@ public readonly optOutCommunicationEmails: boolean | IResolvable;
 
 Indicates whether the org's users receive Okta Communication emails.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration.html#opt_out_communication_emails OrgConfiguration#opt_out_communication_emails}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration#opt_out_communication_emails OrgConfiguration#opt_out_communication_emails}
 
 ---
 
@@ -78377,7 +78377,7 @@ public readonly phoneNumber: string;
 
 Support help phone of org.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration.html#phone_number OrgConfiguration#phone_number}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration#phone_number OrgConfiguration#phone_number}
 
 ---
 
@@ -78391,7 +78391,7 @@ public readonly postalCode: string;
 
 Postal code of org.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration.html#postal_code OrgConfiguration#postal_code}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration#postal_code OrgConfiguration#postal_code}
 
 ---
 
@@ -78405,7 +78405,7 @@ public readonly state: string;
 
 State of org.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration.html#state OrgConfiguration#state}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration#state OrgConfiguration#state}
 
 ---
 
@@ -78419,7 +78419,7 @@ public readonly supportPhoneNumber: string;
 
 Support help phone of org.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration.html#support_phone_number OrgConfiguration#support_phone_number}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration#support_phone_number OrgConfiguration#support_phone_number}
 
 ---
 
@@ -78433,7 +78433,7 @@ public readonly technicalContactUser: string;
 
 User ID representing the technical contact.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration.html#technical_contact_user OrgConfiguration#technical_contact_user}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration#technical_contact_user OrgConfiguration#technical_contact_user}
 
 ---
 
@@ -78447,7 +78447,7 @@ public readonly website: string;
 
 The org's website.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration.html#website OrgConfiguration#website}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration#website OrgConfiguration#website}
 
 ---
 
@@ -78523,7 +78523,7 @@ public readonly extendBy: number;
 
 Number of days the support should be extended by.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_support.html#extend_by OrgSupport#extend_by}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_support#extend_by OrgSupport#extend_by}
 
 ---
 
@@ -78628,7 +78628,7 @@ public readonly name: string;
 
 Policy Name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy.html#name PasswordPolicy#name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy#name PasswordPolicy#name}
 
 ---
 
@@ -78642,7 +78642,7 @@ public readonly authProvider: string;
 
 Authentication Provider: OKTA or ACTIVE_DIRECTORY.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy.html#auth_provider PasswordPolicy#auth_provider}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy#auth_provider PasswordPolicy#auth_provider}
 
 ---
 
@@ -78656,7 +78656,7 @@ public readonly callRecovery: string;
 
 Enable or disable voice call recovery: ACTIVE or INACTIVE.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy.html#call_recovery PasswordPolicy#call_recovery}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy#call_recovery PasswordPolicy#call_recovery}
 
 ---
 
@@ -78670,7 +78670,7 @@ public readonly description: string;
 
 Policy Description.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy.html#description PasswordPolicy#description}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy#description PasswordPolicy#description}
 
 ---
 
@@ -78684,7 +78684,7 @@ public readonly emailRecovery: string;
 
 Enable or disable email password recovery: ACTIVE or INACTIVE.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy.html#email_recovery PasswordPolicy#email_recovery}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy#email_recovery PasswordPolicy#email_recovery}
 
 ---
 
@@ -78698,7 +78698,7 @@ public readonly groupsIncluded: string[];
 
 List of Group IDs to Include.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy.html#groups_included PasswordPolicy#groups_included}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy#groups_included PasswordPolicy#groups_included}
 
 ---
 
@@ -78712,7 +78712,7 @@ public readonly passwordAutoUnlockMinutes: number;
 
 Number of minutes before a locked account is unlocked: 0 = no limit.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy.html#password_auto_unlock_minutes PasswordPolicy#password_auto_unlock_minutes}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy#password_auto_unlock_minutes PasswordPolicy#password_auto_unlock_minutes}
 
 ---
 
@@ -78726,7 +78726,7 @@ public readonly passwordDictionaryLookup: boolean | IResolvable;
 
 Check Passwords Against Common Password Dictionary.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy.html#password_dictionary_lookup PasswordPolicy#password_dictionary_lookup}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy#password_dictionary_lookup PasswordPolicy#password_dictionary_lookup}
 
 ---
 
@@ -78740,7 +78740,7 @@ public readonly passwordExcludeFirstName: boolean | IResolvable;
 
 User firstName attribute must be excluded from the password.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy.html#password_exclude_first_name PasswordPolicy#password_exclude_first_name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy#password_exclude_first_name PasswordPolicy#password_exclude_first_name}
 
 ---
 
@@ -78754,7 +78754,7 @@ public readonly passwordExcludeLastName: boolean | IResolvable;
 
 User lastName attribute must be excluded from the password.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy.html#password_exclude_last_name PasswordPolicy#password_exclude_last_name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy#password_exclude_last_name PasswordPolicy#password_exclude_last_name}
 
 ---
 
@@ -78768,7 +78768,7 @@ public readonly passwordExcludeUsername: boolean | IResolvable;
 
 If the user name must be excluded from the password.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy.html#password_exclude_username PasswordPolicy#password_exclude_username}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy#password_exclude_username PasswordPolicy#password_exclude_username}
 
 ---
 
@@ -78782,7 +78782,7 @@ public readonly passwordExpireWarnDays: number;
 
 Length in days a user will be warned before password expiry: 0 = no warning.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy.html#password_expire_warn_days PasswordPolicy#password_expire_warn_days}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy#password_expire_warn_days PasswordPolicy#password_expire_warn_days}
 
 ---
 
@@ -78796,7 +78796,7 @@ public readonly passwordHistoryCount: number;
 
 Number of distinct passwords that must be created before they can be reused: 0 = none.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy.html#password_history_count PasswordPolicy#password_history_count}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy#password_history_count PasswordPolicy#password_history_count}
 
 ---
 
@@ -78810,7 +78810,7 @@ public readonly passwordLockoutNotificationChannels: string[];
 
 Notification channels to use to notify a user when their account has been locked.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy.html#password_lockout_notification_channels PasswordPolicy#password_lockout_notification_channels}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy#password_lockout_notification_channels PasswordPolicy#password_lockout_notification_channels}
 
 ---
 
@@ -78824,7 +78824,7 @@ public readonly passwordMaxAgeDays: number;
 
 Length in days a password is valid before expiry: 0 = no limit.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy.html#password_max_age_days PasswordPolicy#password_max_age_days}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy#password_max_age_days PasswordPolicy#password_max_age_days}
 
 ---
 
@@ -78838,7 +78838,7 @@ public readonly passwordMaxLockoutAttempts: number;
 
 Number of unsuccessful login attempts allowed before lockout: 0 = no limit.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy.html#password_max_lockout_attempts PasswordPolicy#password_max_lockout_attempts}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy#password_max_lockout_attempts PasswordPolicy#password_max_lockout_attempts}
 
 ---
 
@@ -78852,7 +78852,7 @@ public readonly passwordMinAgeMinutes: number;
 
 Minimum time interval in minutes between password changes: 0 = no limit.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy.html#password_min_age_minutes PasswordPolicy#password_min_age_minutes}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy#password_min_age_minutes PasswordPolicy#password_min_age_minutes}
 
 ---
 
@@ -78866,7 +78866,7 @@ public readonly passwordMinLength: number;
 
 Minimum password length.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy.html#password_min_length PasswordPolicy#password_min_length}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy#password_min_length PasswordPolicy#password_min_length}
 
 ---
 
@@ -78880,7 +78880,7 @@ public readonly passwordMinLowercase: number;
 
 If a password must contain at least one lower case letter: 0 = no, 1 = yes.
 
-Default = 1  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy.html#password_min_lowercase PasswordPolicy#password_min_lowercase}
+Default = 1  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy#password_min_lowercase PasswordPolicy#password_min_lowercase}
 
 ---
 
@@ -78894,7 +78894,7 @@ public readonly passwordMinNumber: number;
 
 If a password must contain at least one number: 0 = no, 1 = yes. Default = 1.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy.html#password_min_number PasswordPolicy#password_min_number}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy#password_min_number PasswordPolicy#password_min_number}
 
 ---
 
@@ -78908,7 +78908,7 @@ public readonly passwordMinSymbol: number;
 
 If a password must contain at least one symbol (!@#$%^&*): 0 = no, 1 = yes. Default = 1.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy.html#password_min_symbol PasswordPolicy#password_min_symbol}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy#password_min_symbol PasswordPolicy#password_min_symbol}
 
 ---
 
@@ -78922,7 +78922,7 @@ public readonly passwordMinUppercase: number;
 
 If a password must contain at least one upper case letter: 0 = no, 1 = yes.
 
-Default = 1  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy.html#password_min_uppercase PasswordPolicy#password_min_uppercase}
+Default = 1  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy#password_min_uppercase PasswordPolicy#password_min_uppercase}
 
 ---
 
@@ -78936,7 +78936,7 @@ public readonly passwordShowLockoutFailures: boolean | IResolvable;
 
 If a user should be informed when their account is locked.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy.html#password_show_lockout_failures PasswordPolicy#password_show_lockout_failures}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy#password_show_lockout_failures PasswordPolicy#password_show_lockout_failures}
 
 ---
 
@@ -78950,7 +78950,7 @@ public readonly priority: number;
 
 Policy Priority, this attribute can be set to a valid priority.
 
-To avoid endless diff situation we error if an invalid priority is provided. API defaults it to the last (lowest) if not there.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy.html#priority PasswordPolicy#priority}
+To avoid endless diff situation we error if an invalid priority is provided. API defaults it to the last (lowest) if not there.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy#priority PasswordPolicy#priority}
 
 ---
 
@@ -78964,7 +78964,7 @@ public readonly questionMinLength: number;
 
 Min length of the password recovery question answer.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy.html#question_min_length PasswordPolicy#question_min_length}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy#question_min_length PasswordPolicy#question_min_length}
 
 ---
 
@@ -78978,7 +78978,7 @@ public readonly questionRecovery: string;
 
 Enable or disable security question password recovery: ACTIVE or INACTIVE.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy.html#question_recovery PasswordPolicy#question_recovery}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy#question_recovery PasswordPolicy#question_recovery}
 
 ---
 
@@ -78992,7 +78992,7 @@ public readonly recoveryEmailToken: number;
 
 Lifetime in minutes of the recovery email token.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy.html#recovery_email_token PasswordPolicy#recovery_email_token}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy#recovery_email_token PasswordPolicy#recovery_email_token}
 
 ---
 
@@ -79006,7 +79006,7 @@ public readonly skipUnlock: boolean | IResolvable;
 
 When an Active Directory user is locked out of Okta, the Okta unlock operation should also attempt to unlock the user's Windows account.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy.html#skip_unlock PasswordPolicy#skip_unlock}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy#skip_unlock PasswordPolicy#skip_unlock}
 
 ---
 
@@ -79020,7 +79020,7 @@ public readonly smsRecovery: string;
 
 Enable or disable SMS password recovery: ACTIVE or INACTIVE.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy.html#sms_recovery PasswordPolicy#sms_recovery}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy#sms_recovery PasswordPolicy#sms_recovery}
 
 ---
 
@@ -79034,7 +79034,7 @@ public readonly status: string;
 
 Policy Status: ACTIVE or INACTIVE.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy.html#status PasswordPolicy#status}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy#status PasswordPolicy#status}
 
 ---
 
@@ -79121,7 +79121,7 @@ public readonly name: string;
 
 Policy Rule Name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy_rule.html#name PasswordPolicyRule#name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy_rule#name PasswordPolicyRule#name}
 
 ---
 
@@ -79135,7 +79135,7 @@ public readonly networkConnection: string;
 
 Network selection mode: ANYWHERE, ZONE, ON_NETWORK, or OFF_NETWORK.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy_rule.html#network_connection PasswordPolicyRule#network_connection}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy_rule#network_connection PasswordPolicyRule#network_connection}
 
 ---
 
@@ -79149,7 +79149,7 @@ public readonly networkExcludes: string[];
 
 The zones to exclude.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy_rule.html#network_excludes PasswordPolicyRule#network_excludes}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy_rule#network_excludes PasswordPolicyRule#network_excludes}
 
 ---
 
@@ -79163,7 +79163,7 @@ public readonly networkIncludes: string[];
 
 The zones to include.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy_rule.html#network_includes PasswordPolicyRule#network_includes}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy_rule#network_includes PasswordPolicyRule#network_includes}
 
 ---
 
@@ -79177,7 +79177,7 @@ public readonly passwordChange: string;
 
 Allow or deny a user to change their password: ALLOW or DENY. Default = ALLOW.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy_rule.html#password_change PasswordPolicyRule#password_change}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy_rule#password_change PasswordPolicyRule#password_change}
 
 ---
 
@@ -79191,7 +79191,7 @@ public readonly passwordReset: string;
 
 Allow or deny a user to reset their password: ALLOW or DENY. Default = ALLOW.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy_rule.html#password_reset PasswordPolicyRule#password_reset}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy_rule#password_reset PasswordPolicyRule#password_reset}
 
 ---
 
@@ -79205,7 +79205,7 @@ public readonly passwordUnlock: string;
 
 Allow or deny a user to unlock. Default = DENY.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy_rule.html#password_unlock PasswordPolicyRule#password_unlock}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy_rule#password_unlock PasswordPolicyRule#password_unlock}
 
 ---
 
@@ -79219,7 +79219,7 @@ public readonly policyid: string;
 
 Policy ID of the Rule.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy_rule.html#policyid PasswordPolicyRule#policyid}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy_rule#policyid PasswordPolicyRule#policyid}
 
 ---
 
@@ -79233,7 +79233,7 @@ public readonly policyId: string;
 
 Policy ID of the Rule.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy_rule.html#policy_id PasswordPolicyRule#policy_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy_rule#policy_id PasswordPolicyRule#policy_id}
 
 ---
 
@@ -79247,7 +79247,7 @@ public readonly priority: number;
 
 Policy Rule Priority, this attribute can be set to a valid priority.
 
-To avoid endless diff situation we error if an invalid priority is provided. API defaults it to the last (lowest) if not there.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy_rule.html#priority PasswordPolicyRule#priority}
+To avoid endless diff situation we error if an invalid priority is provided. API defaults it to the last (lowest) if not there.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy_rule#priority PasswordPolicyRule#priority}
 
 ---
 
@@ -79261,7 +79261,7 @@ public readonly status: string;
 
 Policy Rule Status: ACTIVE or INACTIVE.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy_rule.html#status PasswordPolicyRule#status}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy_rule#status PasswordPolicyRule#status}
 
 ---
 
@@ -79275,7 +79275,7 @@ public readonly usersExcluded: string[];
 
 Set of User IDs to Exclude.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy_rule.html#users_excluded PasswordPolicyRule#users_excluded}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/password_policy_rule#users_excluded PasswordPolicyRule#users_excluded}
 
 ---
 
@@ -79299,24 +79299,24 @@ const policyMfaConfig: PolicyMfaConfig = { ... }
 | [`provider`](#cdktfprovideroktapolicymfaconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
 | [`name`](#cdktfprovideroktapolicymfaconfigpropertyname)<span title="Required">*</span> | `string` | Policy Name. |
 | [`description`](#cdktfprovideroktapolicymfaconfigpropertydescription) | `string` | Policy Description. |
-| [`duo`](#cdktfprovideroktapolicymfaconfigpropertyduo) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa.html#duo PolicyMfa#duo}. |
-| [`fidoU2F`](#cdktfprovideroktapolicymfaconfigpropertyfidou2f) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa.html#fido_u2f PolicyMfa#fido_u2f}. |
-| [`fidoWebauthn`](#cdktfprovideroktapolicymfaconfigpropertyfidowebauthn) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa.html#fido_webauthn PolicyMfa#fido_webauthn}. |
-| [`googleOtp`](#cdktfprovideroktapolicymfaconfigpropertygoogleotp) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa.html#google_otp PolicyMfa#google_otp}. |
+| [`duo`](#cdktfprovideroktapolicymfaconfigpropertyduo) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#duo PolicyMfa#duo}. |
+| [`fidoU2F`](#cdktfprovideroktapolicymfaconfigpropertyfidou2f) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#fido_u2f PolicyMfa#fido_u2f}. |
+| [`fidoWebauthn`](#cdktfprovideroktapolicymfaconfigpropertyfidowebauthn) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#fido_webauthn PolicyMfa#fido_webauthn}. |
+| [`googleOtp`](#cdktfprovideroktapolicymfaconfigpropertygoogleotp) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#google_otp PolicyMfa#google_otp}. |
 | [`groupsIncluded`](#cdktfprovideroktapolicymfaconfigpropertygroupsincluded) | `string`[] | List of Group IDs to Include. |
-| [`hotp`](#cdktfprovideroktapolicymfaconfigpropertyhotp) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa.html#hotp PolicyMfa#hotp}. |
-| [`oktaCall`](#cdktfprovideroktapolicymfaconfigpropertyoktacall) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa.html#okta_call PolicyMfa#okta_call}. |
-| [`oktaEmail`](#cdktfprovideroktapolicymfaconfigpropertyoktaemail) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa.html#okta_email PolicyMfa#okta_email}. |
-| [`oktaOtp`](#cdktfprovideroktapolicymfaconfigpropertyoktaotp) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa.html#okta_otp PolicyMfa#okta_otp}. |
-| [`oktaPassword`](#cdktfprovideroktapolicymfaconfigpropertyoktapassword) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa.html#okta_password PolicyMfa#okta_password}. |
-| [`oktaPush`](#cdktfprovideroktapolicymfaconfigpropertyoktapush) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa.html#okta_push PolicyMfa#okta_push}. |
-| [`oktaQuestion`](#cdktfprovideroktapolicymfaconfigpropertyoktaquestion) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa.html#okta_question PolicyMfa#okta_question}. |
-| [`oktaSms`](#cdktfprovideroktapolicymfaconfigpropertyoktasms) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa.html#okta_sms PolicyMfa#okta_sms}. |
+| [`hotp`](#cdktfprovideroktapolicymfaconfigpropertyhotp) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#hotp PolicyMfa#hotp}. |
+| [`oktaCall`](#cdktfprovideroktapolicymfaconfigpropertyoktacall) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#okta_call PolicyMfa#okta_call}. |
+| [`oktaEmail`](#cdktfprovideroktapolicymfaconfigpropertyoktaemail) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#okta_email PolicyMfa#okta_email}. |
+| [`oktaOtp`](#cdktfprovideroktapolicymfaconfigpropertyoktaotp) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#okta_otp PolicyMfa#okta_otp}. |
+| [`oktaPassword`](#cdktfprovideroktapolicymfaconfigpropertyoktapassword) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#okta_password PolicyMfa#okta_password}. |
+| [`oktaPush`](#cdktfprovideroktapolicymfaconfigpropertyoktapush) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#okta_push PolicyMfa#okta_push}. |
+| [`oktaQuestion`](#cdktfprovideroktapolicymfaconfigpropertyoktaquestion) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#okta_question PolicyMfa#okta_question}. |
+| [`oktaSms`](#cdktfprovideroktapolicymfaconfigpropertyoktasms) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#okta_sms PolicyMfa#okta_sms}. |
 | [`priority`](#cdktfprovideroktapolicymfaconfigpropertypriority) | `number` | Policy Priority, this attribute can be set to a valid priority. |
-| [`rsaToken`](#cdktfprovideroktapolicymfaconfigpropertyrsatoken) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa.html#rsa_token PolicyMfa#rsa_token}. |
+| [`rsaToken`](#cdktfprovideroktapolicymfaconfigpropertyrsatoken) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#rsa_token PolicyMfa#rsa_token}. |
 | [`status`](#cdktfprovideroktapolicymfaconfigpropertystatus) | `string` | Policy Status: ACTIVE or INACTIVE. |
-| [`symantecVip`](#cdktfprovideroktapolicymfaconfigpropertysymantecvip) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa.html#symantec_vip PolicyMfa#symantec_vip}. |
-| [`yubikeyToken`](#cdktfprovideroktapolicymfaconfigpropertyyubikeytoken) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa.html#yubikey_token PolicyMfa#yubikey_token}. |
+| [`symantecVip`](#cdktfprovideroktapolicymfaconfigpropertysymantecvip) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#symantec_vip PolicyMfa#symantec_vip}. |
+| [`yubikeyToken`](#cdktfprovideroktapolicymfaconfigpropertyyubikeytoken) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#yubikey_token PolicyMfa#yubikey_token}. |
 
 ---
 
@@ -79370,7 +79370,7 @@ public readonly name: string;
 
 Policy Name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa.html#name PolicyMfa#name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#name PolicyMfa#name}
 
 ---
 
@@ -79384,7 +79384,7 @@ public readonly description: string;
 
 Policy Description.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa.html#description PolicyMfa#description}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#description PolicyMfa#description}
 
 ---
 
@@ -79396,7 +79396,7 @@ public readonly duo: IResolvable | {[ key: string ]: string};
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa.html#duo PolicyMfa#duo}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#duo PolicyMfa#duo}.
 
 ---
 
@@ -79408,7 +79408,7 @@ public readonly fidoU2F: IResolvable | {[ key: string ]: string};
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa.html#fido_u2f PolicyMfa#fido_u2f}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#fido_u2f PolicyMfa#fido_u2f}.
 
 ---
 
@@ -79420,7 +79420,7 @@ public readonly fidoWebauthn: IResolvable | {[ key: string ]: string};
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa.html#fido_webauthn PolicyMfa#fido_webauthn}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#fido_webauthn PolicyMfa#fido_webauthn}.
 
 ---
 
@@ -79432,7 +79432,7 @@ public readonly googleOtp: IResolvable | {[ key: string ]: string};
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa.html#google_otp PolicyMfa#google_otp}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#google_otp PolicyMfa#google_otp}.
 
 ---
 
@@ -79446,7 +79446,7 @@ public readonly groupsIncluded: string[];
 
 List of Group IDs to Include.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa.html#groups_included PolicyMfa#groups_included}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#groups_included PolicyMfa#groups_included}
 
 ---
 
@@ -79458,7 +79458,7 @@ public readonly hotp: IResolvable | {[ key: string ]: string};
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa.html#hotp PolicyMfa#hotp}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#hotp PolicyMfa#hotp}.
 
 ---
 
@@ -79470,7 +79470,7 @@ public readonly oktaCall: IResolvable | {[ key: string ]: string};
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa.html#okta_call PolicyMfa#okta_call}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#okta_call PolicyMfa#okta_call}.
 
 ---
 
@@ -79482,7 +79482,7 @@ public readonly oktaEmail: IResolvable | {[ key: string ]: string};
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa.html#okta_email PolicyMfa#okta_email}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#okta_email PolicyMfa#okta_email}.
 
 ---
 
@@ -79494,7 +79494,7 @@ public readonly oktaOtp: IResolvable | {[ key: string ]: string};
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa.html#okta_otp PolicyMfa#okta_otp}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#okta_otp PolicyMfa#okta_otp}.
 
 ---
 
@@ -79506,7 +79506,7 @@ public readonly oktaPassword: IResolvable | {[ key: string ]: string};
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa.html#okta_password PolicyMfa#okta_password}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#okta_password PolicyMfa#okta_password}.
 
 ---
 
@@ -79518,7 +79518,7 @@ public readonly oktaPush: IResolvable | {[ key: string ]: string};
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa.html#okta_push PolicyMfa#okta_push}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#okta_push PolicyMfa#okta_push}.
 
 ---
 
@@ -79530,7 +79530,7 @@ public readonly oktaQuestion: IResolvable | {[ key: string ]: string};
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa.html#okta_question PolicyMfa#okta_question}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#okta_question PolicyMfa#okta_question}.
 
 ---
 
@@ -79542,7 +79542,7 @@ public readonly oktaSms: IResolvable | {[ key: string ]: string};
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa.html#okta_sms PolicyMfa#okta_sms}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#okta_sms PolicyMfa#okta_sms}.
 
 ---
 
@@ -79556,7 +79556,7 @@ public readonly priority: number;
 
 Policy Priority, this attribute can be set to a valid priority.
 
-To avoid endless diff situation we error if an invalid priority is provided. API defaults it to the last (lowest) if not there.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa.html#priority PolicyMfa#priority}
+To avoid endless diff situation we error if an invalid priority is provided. API defaults it to the last (lowest) if not there.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#priority PolicyMfa#priority}
 
 ---
 
@@ -79568,7 +79568,7 @@ public readonly rsaToken: IResolvable | {[ key: string ]: string};
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa.html#rsa_token PolicyMfa#rsa_token}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#rsa_token PolicyMfa#rsa_token}.
 
 ---
 
@@ -79582,7 +79582,7 @@ public readonly status: string;
 
 Policy Status: ACTIVE or INACTIVE.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa.html#status PolicyMfa#status}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#status PolicyMfa#status}
 
 ---
 
@@ -79594,7 +79594,7 @@ public readonly symantecVip: IResolvable | {[ key: string ]: string};
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa.html#symantec_vip PolicyMfa#symantec_vip}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#symantec_vip PolicyMfa#symantec_vip}.
 
 ---
 
@@ -79606,7 +79606,7 @@ public readonly yubikeyToken: IResolvable | {[ key: string ]: string};
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa.html#yubikey_token PolicyMfa#yubikey_token}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#yubikey_token PolicyMfa#yubikey_token}.
 
 ---
 
@@ -79628,21 +79628,21 @@ const policyMfaDefaultConfig: PolicyMfaDefaultConfig = { ... }
 | [`dependsOn`](#cdktfprovideroktapolicymfadefaultconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktapolicymfadefaultconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktapolicymfadefaultconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`duo`](#cdktfprovideroktapolicymfadefaultconfigpropertyduo) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default.html#duo PolicyMfaDefault#duo}. |
-| [`fidoU2F`](#cdktfprovideroktapolicymfadefaultconfigpropertyfidou2f) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default.html#fido_u2f PolicyMfaDefault#fido_u2f}. |
-| [`fidoWebauthn`](#cdktfprovideroktapolicymfadefaultconfigpropertyfidowebauthn) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default.html#fido_webauthn PolicyMfaDefault#fido_webauthn}. |
-| [`googleOtp`](#cdktfprovideroktapolicymfadefaultconfigpropertygoogleotp) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default.html#google_otp PolicyMfaDefault#google_otp}. |
-| [`hotp`](#cdktfprovideroktapolicymfadefaultconfigpropertyhotp) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default.html#hotp PolicyMfaDefault#hotp}. |
-| [`oktaCall`](#cdktfprovideroktapolicymfadefaultconfigpropertyoktacall) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default.html#okta_call PolicyMfaDefault#okta_call}. |
-| [`oktaEmail`](#cdktfprovideroktapolicymfadefaultconfigpropertyoktaemail) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default.html#okta_email PolicyMfaDefault#okta_email}. |
-| [`oktaOtp`](#cdktfprovideroktapolicymfadefaultconfigpropertyoktaotp) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default.html#okta_otp PolicyMfaDefault#okta_otp}. |
-| [`oktaPassword`](#cdktfprovideroktapolicymfadefaultconfigpropertyoktapassword) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default.html#okta_password PolicyMfaDefault#okta_password}. |
-| [`oktaPush`](#cdktfprovideroktapolicymfadefaultconfigpropertyoktapush) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default.html#okta_push PolicyMfaDefault#okta_push}. |
-| [`oktaQuestion`](#cdktfprovideroktapolicymfadefaultconfigpropertyoktaquestion) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default.html#okta_question PolicyMfaDefault#okta_question}. |
-| [`oktaSms`](#cdktfprovideroktapolicymfadefaultconfigpropertyoktasms) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default.html#okta_sms PolicyMfaDefault#okta_sms}. |
-| [`rsaToken`](#cdktfprovideroktapolicymfadefaultconfigpropertyrsatoken) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default.html#rsa_token PolicyMfaDefault#rsa_token}. |
-| [`symantecVip`](#cdktfprovideroktapolicymfadefaultconfigpropertysymantecvip) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default.html#symantec_vip PolicyMfaDefault#symantec_vip}. |
-| [`yubikeyToken`](#cdktfprovideroktapolicymfadefaultconfigpropertyyubikeytoken) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default.html#yubikey_token PolicyMfaDefault#yubikey_token}. |
+| [`duo`](#cdktfprovideroktapolicymfadefaultconfigpropertyduo) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#duo PolicyMfaDefault#duo}. |
+| [`fidoU2F`](#cdktfprovideroktapolicymfadefaultconfigpropertyfidou2f) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#fido_u2f PolicyMfaDefault#fido_u2f}. |
+| [`fidoWebauthn`](#cdktfprovideroktapolicymfadefaultconfigpropertyfidowebauthn) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#fido_webauthn PolicyMfaDefault#fido_webauthn}. |
+| [`googleOtp`](#cdktfprovideroktapolicymfadefaultconfigpropertygoogleotp) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#google_otp PolicyMfaDefault#google_otp}. |
+| [`hotp`](#cdktfprovideroktapolicymfadefaultconfigpropertyhotp) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#hotp PolicyMfaDefault#hotp}. |
+| [`oktaCall`](#cdktfprovideroktapolicymfadefaultconfigpropertyoktacall) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#okta_call PolicyMfaDefault#okta_call}. |
+| [`oktaEmail`](#cdktfprovideroktapolicymfadefaultconfigpropertyoktaemail) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#okta_email PolicyMfaDefault#okta_email}. |
+| [`oktaOtp`](#cdktfprovideroktapolicymfadefaultconfigpropertyoktaotp) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#okta_otp PolicyMfaDefault#okta_otp}. |
+| [`oktaPassword`](#cdktfprovideroktapolicymfadefaultconfigpropertyoktapassword) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#okta_password PolicyMfaDefault#okta_password}. |
+| [`oktaPush`](#cdktfprovideroktapolicymfadefaultconfigpropertyoktapush) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#okta_push PolicyMfaDefault#okta_push}. |
+| [`oktaQuestion`](#cdktfprovideroktapolicymfadefaultconfigpropertyoktaquestion) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#okta_question PolicyMfaDefault#okta_question}. |
+| [`oktaSms`](#cdktfprovideroktapolicymfadefaultconfigpropertyoktasms) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#okta_sms PolicyMfaDefault#okta_sms}. |
+| [`rsaToken`](#cdktfprovideroktapolicymfadefaultconfigpropertyrsatoken) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#rsa_token PolicyMfaDefault#rsa_token}. |
+| [`symantecVip`](#cdktfprovideroktapolicymfadefaultconfigpropertysymantecvip) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#symantec_vip PolicyMfaDefault#symantec_vip}. |
+| [`yubikeyToken`](#cdktfprovideroktapolicymfadefaultconfigpropertyyubikeytoken) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#yubikey_token PolicyMfaDefault#yubikey_token}. |
 
 ---
 
@@ -79694,7 +79694,7 @@ public readonly duo: IResolvable | {[ key: string ]: string};
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default.html#duo PolicyMfaDefault#duo}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#duo PolicyMfaDefault#duo}.
 
 ---
 
@@ -79706,7 +79706,7 @@ public readonly fidoU2F: IResolvable | {[ key: string ]: string};
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default.html#fido_u2f PolicyMfaDefault#fido_u2f}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#fido_u2f PolicyMfaDefault#fido_u2f}.
 
 ---
 
@@ -79718,7 +79718,7 @@ public readonly fidoWebauthn: IResolvable | {[ key: string ]: string};
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default.html#fido_webauthn PolicyMfaDefault#fido_webauthn}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#fido_webauthn PolicyMfaDefault#fido_webauthn}.
 
 ---
 
@@ -79730,7 +79730,7 @@ public readonly googleOtp: IResolvable | {[ key: string ]: string};
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default.html#google_otp PolicyMfaDefault#google_otp}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#google_otp PolicyMfaDefault#google_otp}.
 
 ---
 
@@ -79742,7 +79742,7 @@ public readonly hotp: IResolvable | {[ key: string ]: string};
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default.html#hotp PolicyMfaDefault#hotp}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#hotp PolicyMfaDefault#hotp}.
 
 ---
 
@@ -79754,7 +79754,7 @@ public readonly oktaCall: IResolvable | {[ key: string ]: string};
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default.html#okta_call PolicyMfaDefault#okta_call}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#okta_call PolicyMfaDefault#okta_call}.
 
 ---
 
@@ -79766,7 +79766,7 @@ public readonly oktaEmail: IResolvable | {[ key: string ]: string};
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default.html#okta_email PolicyMfaDefault#okta_email}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#okta_email PolicyMfaDefault#okta_email}.
 
 ---
 
@@ -79778,7 +79778,7 @@ public readonly oktaOtp: IResolvable | {[ key: string ]: string};
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default.html#okta_otp PolicyMfaDefault#okta_otp}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#okta_otp PolicyMfaDefault#okta_otp}.
 
 ---
 
@@ -79790,7 +79790,7 @@ public readonly oktaPassword: IResolvable | {[ key: string ]: string};
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default.html#okta_password PolicyMfaDefault#okta_password}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#okta_password PolicyMfaDefault#okta_password}.
 
 ---
 
@@ -79802,7 +79802,7 @@ public readonly oktaPush: IResolvable | {[ key: string ]: string};
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default.html#okta_push PolicyMfaDefault#okta_push}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#okta_push PolicyMfaDefault#okta_push}.
 
 ---
 
@@ -79814,7 +79814,7 @@ public readonly oktaQuestion: IResolvable | {[ key: string ]: string};
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default.html#okta_question PolicyMfaDefault#okta_question}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#okta_question PolicyMfaDefault#okta_question}.
 
 ---
 
@@ -79826,7 +79826,7 @@ public readonly oktaSms: IResolvable | {[ key: string ]: string};
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default.html#okta_sms PolicyMfaDefault#okta_sms}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#okta_sms PolicyMfaDefault#okta_sms}.
 
 ---
 
@@ -79838,7 +79838,7 @@ public readonly rsaToken: IResolvable | {[ key: string ]: string};
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default.html#rsa_token PolicyMfaDefault#rsa_token}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#rsa_token PolicyMfaDefault#rsa_token}.
 
 ---
 
@@ -79850,7 +79850,7 @@ public readonly symantecVip: IResolvable | {[ key: string ]: string};
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default.html#symantec_vip PolicyMfaDefault#symantec_vip}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#symantec_vip PolicyMfaDefault#symantec_vip}.
 
 ---
 
@@ -79862,7 +79862,7 @@ public readonly yubikeyToken: IResolvable | {[ key: string ]: string};
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default.html#yubikey_token PolicyMfaDefault#yubikey_token}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#yubikey_token PolicyMfaDefault#yubikey_token}.
 
 ---
 
@@ -79967,7 +79967,7 @@ public readonly name: string;
 
 Policy Name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password.html#name PolicyPassword#name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password#name PolicyPassword#name}
 
 ---
 
@@ -79981,7 +79981,7 @@ public readonly authProvider: string;
 
 Authentication Provider: OKTA or ACTIVE_DIRECTORY.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password.html#auth_provider PolicyPassword#auth_provider}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password#auth_provider PolicyPassword#auth_provider}
 
 ---
 
@@ -79995,7 +79995,7 @@ public readonly callRecovery: string;
 
 Enable or disable voice call recovery: ACTIVE or INACTIVE.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password.html#call_recovery PolicyPassword#call_recovery}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password#call_recovery PolicyPassword#call_recovery}
 
 ---
 
@@ -80009,7 +80009,7 @@ public readonly description: string;
 
 Policy Description.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password.html#description PolicyPassword#description}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password#description PolicyPassword#description}
 
 ---
 
@@ -80023,7 +80023,7 @@ public readonly emailRecovery: string;
 
 Enable or disable email password recovery: ACTIVE or INACTIVE.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password.html#email_recovery PolicyPassword#email_recovery}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password#email_recovery PolicyPassword#email_recovery}
 
 ---
 
@@ -80037,7 +80037,7 @@ public readonly groupsIncluded: string[];
 
 List of Group IDs to Include.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password.html#groups_included PolicyPassword#groups_included}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password#groups_included PolicyPassword#groups_included}
 
 ---
 
@@ -80051,7 +80051,7 @@ public readonly passwordAutoUnlockMinutes: number;
 
 Number of minutes before a locked account is unlocked: 0 = no limit.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password.html#password_auto_unlock_minutes PolicyPassword#password_auto_unlock_minutes}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password#password_auto_unlock_minutes PolicyPassword#password_auto_unlock_minutes}
 
 ---
 
@@ -80065,7 +80065,7 @@ public readonly passwordDictionaryLookup: boolean | IResolvable;
 
 Check Passwords Against Common Password Dictionary.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password.html#password_dictionary_lookup PolicyPassword#password_dictionary_lookup}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password#password_dictionary_lookup PolicyPassword#password_dictionary_lookup}
 
 ---
 
@@ -80079,7 +80079,7 @@ public readonly passwordExcludeFirstName: boolean | IResolvable;
 
 User firstName attribute must be excluded from the password.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password.html#password_exclude_first_name PolicyPassword#password_exclude_first_name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password#password_exclude_first_name PolicyPassword#password_exclude_first_name}
 
 ---
 
@@ -80093,7 +80093,7 @@ public readonly passwordExcludeLastName: boolean | IResolvable;
 
 User lastName attribute must be excluded from the password.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password.html#password_exclude_last_name PolicyPassword#password_exclude_last_name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password#password_exclude_last_name PolicyPassword#password_exclude_last_name}
 
 ---
 
@@ -80107,7 +80107,7 @@ public readonly passwordExcludeUsername: boolean | IResolvable;
 
 If the user name must be excluded from the password.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password.html#password_exclude_username PolicyPassword#password_exclude_username}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password#password_exclude_username PolicyPassword#password_exclude_username}
 
 ---
 
@@ -80121,7 +80121,7 @@ public readonly passwordExpireWarnDays: number;
 
 Length in days a user will be warned before password expiry: 0 = no warning.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password.html#password_expire_warn_days PolicyPassword#password_expire_warn_days}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password#password_expire_warn_days PolicyPassword#password_expire_warn_days}
 
 ---
 
@@ -80135,7 +80135,7 @@ public readonly passwordHistoryCount: number;
 
 Number of distinct passwords that must be created before they can be reused: 0 = none.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password.html#password_history_count PolicyPassword#password_history_count}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password#password_history_count PolicyPassword#password_history_count}
 
 ---
 
@@ -80149,7 +80149,7 @@ public readonly passwordLockoutNotificationChannels: string[];
 
 Notification channels to use to notify a user when their account has been locked.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password.html#password_lockout_notification_channels PolicyPassword#password_lockout_notification_channels}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password#password_lockout_notification_channels PolicyPassword#password_lockout_notification_channels}
 
 ---
 
@@ -80163,7 +80163,7 @@ public readonly passwordMaxAgeDays: number;
 
 Length in days a password is valid before expiry: 0 = no limit.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password.html#password_max_age_days PolicyPassword#password_max_age_days}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password#password_max_age_days PolicyPassword#password_max_age_days}
 
 ---
 
@@ -80177,7 +80177,7 @@ public readonly passwordMaxLockoutAttempts: number;
 
 Number of unsuccessful login attempts allowed before lockout: 0 = no limit.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password.html#password_max_lockout_attempts PolicyPassword#password_max_lockout_attempts}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password#password_max_lockout_attempts PolicyPassword#password_max_lockout_attempts}
 
 ---
 
@@ -80191,7 +80191,7 @@ public readonly passwordMinAgeMinutes: number;
 
 Minimum time interval in minutes between password changes: 0 = no limit.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password.html#password_min_age_minutes PolicyPassword#password_min_age_minutes}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password#password_min_age_minutes PolicyPassword#password_min_age_minutes}
 
 ---
 
@@ -80205,7 +80205,7 @@ public readonly passwordMinLength: number;
 
 Minimum password length.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password.html#password_min_length PolicyPassword#password_min_length}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password#password_min_length PolicyPassword#password_min_length}
 
 ---
 
@@ -80219,7 +80219,7 @@ public readonly passwordMinLowercase: number;
 
 If a password must contain at least one lower case letter: 0 = no, 1 = yes.
 
-Default = 1  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password.html#password_min_lowercase PolicyPassword#password_min_lowercase}
+Default = 1  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password#password_min_lowercase PolicyPassword#password_min_lowercase}
 
 ---
 
@@ -80233,7 +80233,7 @@ public readonly passwordMinNumber: number;
 
 If a password must contain at least one number: 0 = no, 1 = yes. Default = 1.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password.html#password_min_number PolicyPassword#password_min_number}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password#password_min_number PolicyPassword#password_min_number}
 
 ---
 
@@ -80247,7 +80247,7 @@ public readonly passwordMinSymbol: number;
 
 If a password must contain at least one symbol (!@#$%^&*): 0 = no, 1 = yes. Default = 1.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password.html#password_min_symbol PolicyPassword#password_min_symbol}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password#password_min_symbol PolicyPassword#password_min_symbol}
 
 ---
 
@@ -80261,7 +80261,7 @@ public readonly passwordMinUppercase: number;
 
 If a password must contain at least one upper case letter: 0 = no, 1 = yes.
 
-Default = 1  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password.html#password_min_uppercase PolicyPassword#password_min_uppercase}
+Default = 1  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password#password_min_uppercase PolicyPassword#password_min_uppercase}
 
 ---
 
@@ -80275,7 +80275,7 @@ public readonly passwordShowLockoutFailures: boolean | IResolvable;
 
 If a user should be informed when their account is locked.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password.html#password_show_lockout_failures PolicyPassword#password_show_lockout_failures}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password#password_show_lockout_failures PolicyPassword#password_show_lockout_failures}
 
 ---
 
@@ -80289,7 +80289,7 @@ public readonly priority: number;
 
 Policy Priority, this attribute can be set to a valid priority.
 
-To avoid endless diff situation we error if an invalid priority is provided. API defaults it to the last (lowest) if not there.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password.html#priority PolicyPassword#priority}
+To avoid endless diff situation we error if an invalid priority is provided. API defaults it to the last (lowest) if not there.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password#priority PolicyPassword#priority}
 
 ---
 
@@ -80303,7 +80303,7 @@ public readonly questionMinLength: number;
 
 Min length of the password recovery question answer.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password.html#question_min_length PolicyPassword#question_min_length}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password#question_min_length PolicyPassword#question_min_length}
 
 ---
 
@@ -80317,7 +80317,7 @@ public readonly questionRecovery: string;
 
 Enable or disable security question password recovery: ACTIVE or INACTIVE.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password.html#question_recovery PolicyPassword#question_recovery}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password#question_recovery PolicyPassword#question_recovery}
 
 ---
 
@@ -80331,7 +80331,7 @@ public readonly recoveryEmailToken: number;
 
 Lifetime in minutes of the recovery email token.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password.html#recovery_email_token PolicyPassword#recovery_email_token}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password#recovery_email_token PolicyPassword#recovery_email_token}
 
 ---
 
@@ -80345,7 +80345,7 @@ public readonly skipUnlock: boolean | IResolvable;
 
 When an Active Directory user is locked out of Okta, the Okta unlock operation should also attempt to unlock the user's Windows account.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password.html#skip_unlock PolicyPassword#skip_unlock}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password#skip_unlock PolicyPassword#skip_unlock}
 
 ---
 
@@ -80359,7 +80359,7 @@ public readonly smsRecovery: string;
 
 Enable or disable SMS password recovery: ACTIVE or INACTIVE.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password.html#sms_recovery PolicyPassword#sms_recovery}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password#sms_recovery PolicyPassword#sms_recovery}
 
 ---
 
@@ -80373,7 +80373,7 @@ public readonly status: string;
 
 Policy Status: ACTIVE or INACTIVE.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password.html#status PolicyPassword#status}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password#status PolicyPassword#status}
 
 ---
 
@@ -80472,7 +80472,7 @@ public readonly callRecovery: string;
 
 Enable or disable voice call recovery: ACTIVE or INACTIVE.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password_default.html#call_recovery PolicyPasswordDefault#call_recovery}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password_default#call_recovery PolicyPasswordDefault#call_recovery}
 
 ---
 
@@ -80486,7 +80486,7 @@ public readonly emailRecovery: string;
 
 Enable or disable email password recovery: ACTIVE or INACTIVE.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password_default.html#email_recovery PolicyPasswordDefault#email_recovery}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password_default#email_recovery PolicyPasswordDefault#email_recovery}
 
 ---
 
@@ -80500,7 +80500,7 @@ public readonly passwordAutoUnlockMinutes: number;
 
 Number of minutes before a locked account is unlocked: 0 = no limit.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password_default.html#password_auto_unlock_minutes PolicyPasswordDefault#password_auto_unlock_minutes}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password_default#password_auto_unlock_minutes PolicyPasswordDefault#password_auto_unlock_minutes}
 
 ---
 
@@ -80514,7 +80514,7 @@ public readonly passwordDictionaryLookup: boolean | IResolvable;
 
 Check Passwords Against Common Password Dictionary.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password_default.html#password_dictionary_lookup PolicyPasswordDefault#password_dictionary_lookup}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password_default#password_dictionary_lookup PolicyPasswordDefault#password_dictionary_lookup}
 
 ---
 
@@ -80528,7 +80528,7 @@ public readonly passwordExcludeFirstName: boolean | IResolvable;
 
 User firstName attribute must be excluded from the password.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password_default.html#password_exclude_first_name PolicyPasswordDefault#password_exclude_first_name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password_default#password_exclude_first_name PolicyPasswordDefault#password_exclude_first_name}
 
 ---
 
@@ -80542,7 +80542,7 @@ public readonly passwordExcludeLastName: boolean | IResolvable;
 
 User lastName attribute must be excluded from the password.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password_default.html#password_exclude_last_name PolicyPasswordDefault#password_exclude_last_name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password_default#password_exclude_last_name PolicyPasswordDefault#password_exclude_last_name}
 
 ---
 
@@ -80556,7 +80556,7 @@ public readonly passwordExcludeUsername: boolean | IResolvable;
 
 If the user name must be excluded from the password.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password_default.html#password_exclude_username PolicyPasswordDefault#password_exclude_username}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password_default#password_exclude_username PolicyPasswordDefault#password_exclude_username}
 
 ---
 
@@ -80570,7 +80570,7 @@ public readonly passwordExpireWarnDays: number;
 
 Length in days a user will be warned before password expiry: 0 = no warning.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password_default.html#password_expire_warn_days PolicyPasswordDefault#password_expire_warn_days}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password_default#password_expire_warn_days PolicyPasswordDefault#password_expire_warn_days}
 
 ---
 
@@ -80584,7 +80584,7 @@ public readonly passwordHistoryCount: number;
 
 Number of distinct passwords that must be created before they can be reused: 0 = none.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password_default.html#password_history_count PolicyPasswordDefault#password_history_count}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password_default#password_history_count PolicyPasswordDefault#password_history_count}
 
 ---
 
@@ -80598,7 +80598,7 @@ public readonly passwordLockoutNotificationChannels: string[];
 
 Notification channels to use to notify a user when their account has been locked.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password_default.html#password_lockout_notification_channels PolicyPasswordDefault#password_lockout_notification_channels}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password_default#password_lockout_notification_channels PolicyPasswordDefault#password_lockout_notification_channels}
 
 ---
 
@@ -80612,7 +80612,7 @@ public readonly passwordMaxAgeDays: number;
 
 Length in days a password is valid before expiry: 0 = no limit.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password_default.html#password_max_age_days PolicyPasswordDefault#password_max_age_days}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password_default#password_max_age_days PolicyPasswordDefault#password_max_age_days}
 
 ---
 
@@ -80626,7 +80626,7 @@ public readonly passwordMaxLockoutAttempts: number;
 
 Number of unsuccessful login attempts allowed before lockout: 0 = no limit.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password_default.html#password_max_lockout_attempts PolicyPasswordDefault#password_max_lockout_attempts}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password_default#password_max_lockout_attempts PolicyPasswordDefault#password_max_lockout_attempts}
 
 ---
 
@@ -80640,7 +80640,7 @@ public readonly passwordMinAgeMinutes: number;
 
 Minimum time interval in minutes between password changes: 0 = no limit.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password_default.html#password_min_age_minutes PolicyPasswordDefault#password_min_age_minutes}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password_default#password_min_age_minutes PolicyPasswordDefault#password_min_age_minutes}
 
 ---
 
@@ -80654,7 +80654,7 @@ public readonly passwordMinLength: number;
 
 Minimum password length.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password_default.html#password_min_length PolicyPasswordDefault#password_min_length}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password_default#password_min_length PolicyPasswordDefault#password_min_length}
 
 ---
 
@@ -80668,7 +80668,7 @@ public readonly passwordMinLowercase: number;
 
 If a password must contain at least one lower case letter: 0 = no, 1 = yes.
 
-Default = 1  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password_default.html#password_min_lowercase PolicyPasswordDefault#password_min_lowercase}
+Default = 1  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password_default#password_min_lowercase PolicyPasswordDefault#password_min_lowercase}
 
 ---
 
@@ -80682,7 +80682,7 @@ public readonly passwordMinNumber: number;
 
 If a password must contain at least one number: 0 = no, 1 = yes. Default = 1.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password_default.html#password_min_number PolicyPasswordDefault#password_min_number}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password_default#password_min_number PolicyPasswordDefault#password_min_number}
 
 ---
 
@@ -80696,7 +80696,7 @@ public readonly passwordMinSymbol: number;
 
 If a password must contain at least one symbol (!@#$%^&*): 0 = no, 1 = yes. Default = 1.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password_default.html#password_min_symbol PolicyPasswordDefault#password_min_symbol}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password_default#password_min_symbol PolicyPasswordDefault#password_min_symbol}
 
 ---
 
@@ -80710,7 +80710,7 @@ public readonly passwordMinUppercase: number;
 
 If a password must contain at least one upper case letter: 0 = no, 1 = yes.
 
-Default = 1  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password_default.html#password_min_uppercase PolicyPasswordDefault#password_min_uppercase}
+Default = 1  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password_default#password_min_uppercase PolicyPasswordDefault#password_min_uppercase}
 
 ---
 
@@ -80724,7 +80724,7 @@ public readonly passwordShowLockoutFailures: boolean | IResolvable;
 
 If a user should be informed when their account is locked.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password_default.html#password_show_lockout_failures PolicyPasswordDefault#password_show_lockout_failures}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password_default#password_show_lockout_failures PolicyPasswordDefault#password_show_lockout_failures}
 
 ---
 
@@ -80738,7 +80738,7 @@ public readonly questionMinLength: number;
 
 Min length of the password recovery question answer.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password_default.html#question_min_length PolicyPasswordDefault#question_min_length}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password_default#question_min_length PolicyPasswordDefault#question_min_length}
 
 ---
 
@@ -80752,7 +80752,7 @@ public readonly questionRecovery: string;
 
 Enable or disable security question password recovery: ACTIVE or INACTIVE.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password_default.html#question_recovery PolicyPasswordDefault#question_recovery}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password_default#question_recovery PolicyPasswordDefault#question_recovery}
 
 ---
 
@@ -80766,7 +80766,7 @@ public readonly recoveryEmailToken: number;
 
 Lifetime in minutes of the recovery email token.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password_default.html#recovery_email_token PolicyPasswordDefault#recovery_email_token}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password_default#recovery_email_token PolicyPasswordDefault#recovery_email_token}
 
 ---
 
@@ -80780,7 +80780,7 @@ public readonly skipUnlock: boolean | IResolvable;
 
 When an Active Directory user is locked out of Okta, the Okta unlock operation should also attempt to unlock the user's Windows account.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password_default.html#skip_unlock PolicyPasswordDefault#skip_unlock}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password_default#skip_unlock PolicyPasswordDefault#skip_unlock}
 
 ---
 
@@ -80794,7 +80794,7 @@ public readonly smsRecovery: string;
 
 Enable or disable SMS password recovery: ACTIVE or INACTIVE.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password_default.html#sms_recovery PolicyPasswordDefault#sms_recovery}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password_default#sms_recovery PolicyPasswordDefault#sms_recovery}
 
 ---
 
@@ -80871,7 +80871,7 @@ public readonly name: string;
 
 Name of the policy.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_profile_enrollment.html#name PolicyProfileEnrollment#name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_profile_enrollment#name PolicyProfileEnrollment#name}
 
 ---
 
@@ -80885,7 +80885,7 @@ public readonly status: string;
 
 Status of the policy.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_profile_enrollment.html#status PolicyProfileEnrollment#status}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_profile_enrollment#status PolicyProfileEnrollment#status}
 
 ---
 
@@ -80903,9 +80903,9 @@ const policyRuleIdpDiscoveryAppExclude: PolicyRuleIdpDiscoveryAppExclude = { ...
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`type`](#cdktfprovideroktapolicyruleidpdiscoveryappexcludepropertytype)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery.html#type PolicyRuleIdpDiscovery#type}. |
-| [`id`](#cdktfprovideroktapolicyruleidpdiscoveryappexcludepropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery.html#id PolicyRuleIdpDiscovery#id}. |
-| [`name`](#cdktfprovideroktapolicyruleidpdiscoveryappexcludepropertyname) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery.html#name PolicyRuleIdpDiscovery#name}. |
+| [`type`](#cdktfprovideroktapolicyruleidpdiscoveryappexcludepropertytype)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery#type PolicyRuleIdpDiscovery#type}. |
+| [`id`](#cdktfprovideroktapolicyruleidpdiscoveryappexcludepropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery#id PolicyRuleIdpDiscovery#id}. |
+| [`name`](#cdktfprovideroktapolicyruleidpdiscoveryappexcludepropertyname) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery#name PolicyRuleIdpDiscovery#name}. |
 
 ---
 
@@ -80917,7 +80917,7 @@ public readonly type: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery.html#type PolicyRuleIdpDiscovery#type}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery#type PolicyRuleIdpDiscovery#type}.
 
 ---
 
@@ -80929,7 +80929,7 @@ public readonly id: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery.html#id PolicyRuleIdpDiscovery#id}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery#id PolicyRuleIdpDiscovery#id}.
 
 ---
 
@@ -80941,7 +80941,7 @@ public readonly name: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery.html#name PolicyRuleIdpDiscovery#name}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery#name PolicyRuleIdpDiscovery#name}.
 
 ---
 
@@ -80959,9 +80959,9 @@ const policyRuleIdpDiscoveryAppInclude: PolicyRuleIdpDiscoveryAppInclude = { ...
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`type`](#cdktfprovideroktapolicyruleidpdiscoveryappincludepropertytype)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery.html#type PolicyRuleIdpDiscovery#type}. |
-| [`id`](#cdktfprovideroktapolicyruleidpdiscoveryappincludepropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery.html#id PolicyRuleIdpDiscovery#id}. |
-| [`name`](#cdktfprovideroktapolicyruleidpdiscoveryappincludepropertyname) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery.html#name PolicyRuleIdpDiscovery#name}. |
+| [`type`](#cdktfprovideroktapolicyruleidpdiscoveryappincludepropertytype)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery#type PolicyRuleIdpDiscovery#type}. |
+| [`id`](#cdktfprovideroktapolicyruleidpdiscoveryappincludepropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery#id PolicyRuleIdpDiscovery#id}. |
+| [`name`](#cdktfprovideroktapolicyruleidpdiscoveryappincludepropertyname) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery#name PolicyRuleIdpDiscovery#name}. |
 
 ---
 
@@ -80973,7 +80973,7 @@ public readonly type: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery.html#type PolicyRuleIdpDiscovery#type}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery#type PolicyRuleIdpDiscovery#type}.
 
 ---
 
@@ -80985,7 +80985,7 @@ public readonly id: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery.html#id PolicyRuleIdpDiscovery#id}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery#id PolicyRuleIdpDiscovery#id}.
 
 ---
 
@@ -80997,7 +80997,7 @@ public readonly name: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery.html#name PolicyRuleIdpDiscovery#name}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery#name PolicyRuleIdpDiscovery#name}.
 
 ---
 
@@ -81022,8 +81022,8 @@ const policyRuleIdpDiscoveryConfig: PolicyRuleIdpDiscoveryConfig = { ... }
 | [`name`](#cdktfprovideroktapolicyruleidpdiscoveryconfigpropertyname)<span title="Required">*</span> | `string` | Policy Rule Name. |
 | [`appExclude`](#cdktfprovideroktapolicyruleidpdiscoveryconfigpropertyappexclude) | [`@cdktf/provider-okta.PolicyRuleIdpDiscoveryAppExclude`](#@cdktf/provider-okta.PolicyRuleIdpDiscoveryAppExclude)[] | app_exclude block. |
 | [`appInclude`](#cdktfprovideroktapolicyruleidpdiscoveryconfigpropertyappinclude) | [`@cdktf/provider-okta.PolicyRuleIdpDiscoveryAppInclude`](#@cdktf/provider-okta.PolicyRuleIdpDiscoveryAppInclude)[] | app_include block. |
-| [`idpId`](#cdktfprovideroktapolicyruleidpdiscoveryconfigpropertyidpid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery.html#idp_id PolicyRuleIdpDiscovery#idp_id}. |
-| [`idpType`](#cdktfprovideroktapolicyruleidpdiscoveryconfigpropertyidptype) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery.html#idp_type PolicyRuleIdpDiscovery#idp_type}. |
+| [`idpId`](#cdktfprovideroktapolicyruleidpdiscoveryconfigpropertyidpid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery#idp_id PolicyRuleIdpDiscovery#idp_id}. |
+| [`idpType`](#cdktfprovideroktapolicyruleidpdiscoveryconfigpropertyidptype) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery#idp_type PolicyRuleIdpDiscovery#idp_type}. |
 | [`networkConnection`](#cdktfprovideroktapolicyruleidpdiscoveryconfigpropertynetworkconnection) | `string` | Network selection mode: ANYWHERE, ZONE, ON_NETWORK, or OFF_NETWORK. |
 | [`networkExcludes`](#cdktfprovideroktapolicyruleidpdiscoveryconfigpropertynetworkexcludes) | `string`[] | The zones to exclude. |
 | [`networkIncludes`](#cdktfprovideroktapolicyruleidpdiscoveryconfigpropertynetworkincludes) | `string`[] | The zones to include. |
@@ -81032,9 +81032,9 @@ const policyRuleIdpDiscoveryConfig: PolicyRuleIdpDiscoveryConfig = { ... }
 | [`policyId`](#cdktfprovideroktapolicyruleidpdiscoveryconfigpropertypolicyid) | `string` | Policy ID of the Rule. |
 | [`priority`](#cdktfprovideroktapolicyruleidpdiscoveryconfigpropertypriority) | `number` | Policy Rule Priority, this attribute can be set to a valid priority. |
 | [`status`](#cdktfprovideroktapolicyruleidpdiscoveryconfigpropertystatus) | `string` | Policy Rule Status: ACTIVE or INACTIVE. |
-| [`userIdentifierAttribute`](#cdktfprovideroktapolicyruleidpdiscoveryconfigpropertyuseridentifierattribute) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery.html#user_identifier_attribute PolicyRuleIdpDiscovery#user_identifier_attribute}. |
+| [`userIdentifierAttribute`](#cdktfprovideroktapolicyruleidpdiscoveryconfigpropertyuseridentifierattribute) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery#user_identifier_attribute PolicyRuleIdpDiscovery#user_identifier_attribute}. |
 | [`userIdentifierPatterns`](#cdktfprovideroktapolicyruleidpdiscoveryconfigpropertyuseridentifierpatterns) | [`@cdktf/provider-okta.PolicyRuleIdpDiscoveryUserIdentifierPatterns`](#@cdktf/provider-okta.PolicyRuleIdpDiscoveryUserIdentifierPatterns)[] | user_identifier_patterns block. |
-| [`userIdentifierType`](#cdktfprovideroktapolicyruleidpdiscoveryconfigpropertyuseridentifiertype) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery.html#user_identifier_type PolicyRuleIdpDiscovery#user_identifier_type}. |
+| [`userIdentifierType`](#cdktfprovideroktapolicyruleidpdiscoveryconfigpropertyuseridentifiertype) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery#user_identifier_type PolicyRuleIdpDiscovery#user_identifier_type}. |
 
 ---
 
@@ -81088,7 +81088,7 @@ public readonly name: string;
 
 Policy Rule Name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery.html#name PolicyRuleIdpDiscovery#name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery#name PolicyRuleIdpDiscovery#name}
 
 ---
 
@@ -81102,7 +81102,7 @@ public readonly appExclude: PolicyRuleIdpDiscoveryAppExclude[];
 
 app_exclude block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery.html#app_exclude PolicyRuleIdpDiscovery#app_exclude}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery#app_exclude PolicyRuleIdpDiscovery#app_exclude}
 
 ---
 
@@ -81116,7 +81116,7 @@ public readonly appInclude: PolicyRuleIdpDiscoveryAppInclude[];
 
 app_include block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery.html#app_include PolicyRuleIdpDiscovery#app_include}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery#app_include PolicyRuleIdpDiscovery#app_include}
 
 ---
 
@@ -81128,7 +81128,7 @@ public readonly idpId: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery.html#idp_id PolicyRuleIdpDiscovery#idp_id}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery#idp_id PolicyRuleIdpDiscovery#idp_id}.
 
 ---
 
@@ -81140,7 +81140,7 @@ public readonly idpType: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery.html#idp_type PolicyRuleIdpDiscovery#idp_type}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery#idp_type PolicyRuleIdpDiscovery#idp_type}.
 
 ---
 
@@ -81154,7 +81154,7 @@ public readonly networkConnection: string;
 
 Network selection mode: ANYWHERE, ZONE, ON_NETWORK, or OFF_NETWORK.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery.html#network_connection PolicyRuleIdpDiscovery#network_connection}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery#network_connection PolicyRuleIdpDiscovery#network_connection}
 
 ---
 
@@ -81168,7 +81168,7 @@ public readonly networkExcludes: string[];
 
 The zones to exclude.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery.html#network_excludes PolicyRuleIdpDiscovery#network_excludes}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery#network_excludes PolicyRuleIdpDiscovery#network_excludes}
 
 ---
 
@@ -81182,7 +81182,7 @@ public readonly networkIncludes: string[];
 
 The zones to include.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery.html#network_includes PolicyRuleIdpDiscovery#network_includes}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery#network_includes PolicyRuleIdpDiscovery#network_includes}
 
 ---
 
@@ -81196,7 +81196,7 @@ public readonly platformInclude: PolicyRuleIdpDiscoveryPlatformInclude[];
 
 platform_include block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery.html#platform_include PolicyRuleIdpDiscovery#platform_include}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery#platform_include PolicyRuleIdpDiscovery#platform_include}
 
 ---
 
@@ -81210,7 +81210,7 @@ public readonly policyid: string;
 
 Policy ID of the Rule.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery.html#policyid PolicyRuleIdpDiscovery#policyid}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery#policyid PolicyRuleIdpDiscovery#policyid}
 
 ---
 
@@ -81224,7 +81224,7 @@ public readonly policyId: string;
 
 Policy ID of the Rule.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery.html#policy_id PolicyRuleIdpDiscovery#policy_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery#policy_id PolicyRuleIdpDiscovery#policy_id}
 
 ---
 
@@ -81238,7 +81238,7 @@ public readonly priority: number;
 
 Policy Rule Priority, this attribute can be set to a valid priority.
 
-To avoid endless diff situation we error if an invalid priority is provided. API defaults it to the last (lowest) if not there.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery.html#priority PolicyRuleIdpDiscovery#priority}
+To avoid endless diff situation we error if an invalid priority is provided. API defaults it to the last (lowest) if not there.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery#priority PolicyRuleIdpDiscovery#priority}
 
 ---
 
@@ -81252,7 +81252,7 @@ public readonly status: string;
 
 Policy Rule Status: ACTIVE or INACTIVE.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery.html#status PolicyRuleIdpDiscovery#status}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery#status PolicyRuleIdpDiscovery#status}
 
 ---
 
@@ -81264,7 +81264,7 @@ public readonly userIdentifierAttribute: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery.html#user_identifier_attribute PolicyRuleIdpDiscovery#user_identifier_attribute}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery#user_identifier_attribute PolicyRuleIdpDiscovery#user_identifier_attribute}.
 
 ---
 
@@ -81278,7 +81278,7 @@ public readonly userIdentifierPatterns: PolicyRuleIdpDiscoveryUserIdentifierPatt
 
 user_identifier_patterns block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery.html#user_identifier_patterns PolicyRuleIdpDiscovery#user_identifier_patterns}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery#user_identifier_patterns PolicyRuleIdpDiscovery#user_identifier_patterns}
 
 ---
 
@@ -81290,7 +81290,7 @@ public readonly userIdentifierType: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery.html#user_identifier_type PolicyRuleIdpDiscovery#user_identifier_type}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery#user_identifier_type PolicyRuleIdpDiscovery#user_identifier_type}.
 
 ---
 
@@ -81309,8 +81309,8 @@ const policyRuleIdpDiscoveryPlatformInclude: PolicyRuleIdpDiscoveryPlatformInclu
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | [`osExpression`](#cdktfprovideroktapolicyruleidpdiscoveryplatformincludepropertyosexpression) | `string` | Only available with OTHER OS type. |
-| [`osType`](#cdktfprovideroktapolicyruleidpdiscoveryplatformincludepropertyostype) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery.html#os_type PolicyRuleIdpDiscovery#os_type}. |
-| [`type`](#cdktfprovideroktapolicyruleidpdiscoveryplatformincludepropertytype) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery.html#type PolicyRuleIdpDiscovery#type}. |
+| [`osType`](#cdktfprovideroktapolicyruleidpdiscoveryplatformincludepropertyostype) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery#os_type PolicyRuleIdpDiscovery#os_type}. |
+| [`type`](#cdktfprovideroktapolicyruleidpdiscoveryplatformincludepropertytype) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery#type PolicyRuleIdpDiscovery#type}. |
 
 ---
 
@@ -81324,7 +81324,7 @@ public readonly osExpression: string;
 
 Only available with OTHER OS type.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery.html#os_expression PolicyRuleIdpDiscovery#os_expression}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery#os_expression PolicyRuleIdpDiscovery#os_expression}
 
 ---
 
@@ -81336,7 +81336,7 @@ public readonly osType: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery.html#os_type PolicyRuleIdpDiscovery#os_type}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery#os_type PolicyRuleIdpDiscovery#os_type}.
 
 ---
 
@@ -81348,7 +81348,7 @@ public readonly type: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery.html#type PolicyRuleIdpDiscovery#type}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery#type PolicyRuleIdpDiscovery#type}.
 
 ---
 
@@ -81366,8 +81366,8 @@ const policyRuleIdpDiscoveryUserIdentifierPatterns: PolicyRuleIdpDiscoveryUserId
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`matchType`](#cdktfprovideroktapolicyruleidpdiscoveryuseridentifierpatternspropertymatchtype) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery.html#match_type PolicyRuleIdpDiscovery#match_type}. |
-| [`value`](#cdktfprovideroktapolicyruleidpdiscoveryuseridentifierpatternspropertyvalue) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery.html#value PolicyRuleIdpDiscovery#value}. |
+| [`matchType`](#cdktfprovideroktapolicyruleidpdiscoveryuseridentifierpatternspropertymatchtype) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery#match_type PolicyRuleIdpDiscovery#match_type}. |
+| [`value`](#cdktfprovideroktapolicyruleidpdiscoveryuseridentifierpatternspropertyvalue) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery#value PolicyRuleIdpDiscovery#value}. |
 
 ---
 
@@ -81379,7 +81379,7 @@ public readonly matchType: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery.html#match_type PolicyRuleIdpDiscovery#match_type}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery#match_type PolicyRuleIdpDiscovery#match_type}.
 
 ---
 
@@ -81391,7 +81391,7 @@ public readonly value: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery.html#value PolicyRuleIdpDiscovery#value}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery#value PolicyRuleIdpDiscovery#value}.
 
 ---
 
@@ -81409,9 +81409,9 @@ const policyRuleMfaAppExclude: PolicyRuleMfaAppExclude = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`type`](#cdktfprovideroktapolicyrulemfaappexcludepropertytype)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_mfa.html#type PolicyRuleMfa#type}. |
-| [`id`](#cdktfprovideroktapolicyrulemfaappexcludepropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_mfa.html#id PolicyRuleMfa#id}. |
-| [`name`](#cdktfprovideroktapolicyrulemfaappexcludepropertyname) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_mfa.html#name PolicyRuleMfa#name}. |
+| [`type`](#cdktfprovideroktapolicyrulemfaappexcludepropertytype)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_mfa#type PolicyRuleMfa#type}. |
+| [`id`](#cdktfprovideroktapolicyrulemfaappexcludepropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_mfa#id PolicyRuleMfa#id}. |
+| [`name`](#cdktfprovideroktapolicyrulemfaappexcludepropertyname) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_mfa#name PolicyRuleMfa#name}. |
 
 ---
 
@@ -81423,7 +81423,7 @@ public readonly type: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_mfa.html#type PolicyRuleMfa#type}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_mfa#type PolicyRuleMfa#type}.
 
 ---
 
@@ -81435,7 +81435,7 @@ public readonly id: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_mfa.html#id PolicyRuleMfa#id}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_mfa#id PolicyRuleMfa#id}.
 
 ---
 
@@ -81447,7 +81447,7 @@ public readonly name: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_mfa.html#name PolicyRuleMfa#name}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_mfa#name PolicyRuleMfa#name}.
 
 ---
 
@@ -81465,9 +81465,9 @@ const policyRuleMfaAppInclude: PolicyRuleMfaAppInclude = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`type`](#cdktfprovideroktapolicyrulemfaappincludepropertytype)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_mfa.html#type PolicyRuleMfa#type}. |
-| [`id`](#cdktfprovideroktapolicyrulemfaappincludepropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_mfa.html#id PolicyRuleMfa#id}. |
-| [`name`](#cdktfprovideroktapolicyrulemfaappincludepropertyname) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_mfa.html#name PolicyRuleMfa#name}. |
+| [`type`](#cdktfprovideroktapolicyrulemfaappincludepropertytype)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_mfa#type PolicyRuleMfa#type}. |
+| [`id`](#cdktfprovideroktapolicyrulemfaappincludepropertyid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_mfa#id PolicyRuleMfa#id}. |
+| [`name`](#cdktfprovideroktapolicyrulemfaappincludepropertyname) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_mfa#name PolicyRuleMfa#name}. |
 
 ---
 
@@ -81479,7 +81479,7 @@ public readonly type: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_mfa.html#type PolicyRuleMfa#type}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_mfa#type PolicyRuleMfa#type}.
 
 ---
 
@@ -81491,7 +81491,7 @@ public readonly id: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_mfa.html#id PolicyRuleMfa#id}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_mfa#id PolicyRuleMfa#id}.
 
 ---
 
@@ -81503,7 +81503,7 @@ public readonly name: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_mfa.html#name PolicyRuleMfa#name}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_mfa#name PolicyRuleMfa#name}.
 
 ---
 
@@ -81590,7 +81590,7 @@ public readonly name: string;
 
 Policy Rule Name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_mfa.html#name PolicyRuleMfa#name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_mfa#name PolicyRuleMfa#name}
 
 ---
 
@@ -81604,7 +81604,7 @@ public readonly appExclude: PolicyRuleMfaAppExclude[];
 
 app_exclude block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_mfa.html#app_exclude PolicyRuleMfa#app_exclude}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_mfa#app_exclude PolicyRuleMfa#app_exclude}
 
 ---
 
@@ -81618,7 +81618,7 @@ public readonly appInclude: PolicyRuleMfaAppInclude[];
 
 app_include block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_mfa.html#app_include PolicyRuleMfa#app_include}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_mfa#app_include PolicyRuleMfa#app_include}
 
 ---
 
@@ -81632,7 +81632,7 @@ public readonly enroll: string;
 
 Should the user be enrolled the first time they LOGIN, the next time they are CHALLENGED, or NEVER?
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_mfa.html#enroll PolicyRuleMfa#enroll}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_mfa#enroll PolicyRuleMfa#enroll}
 
 ---
 
@@ -81646,7 +81646,7 @@ public readonly networkConnection: string;
 
 Network selection mode: ANYWHERE, ZONE, ON_NETWORK, or OFF_NETWORK.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_mfa.html#network_connection PolicyRuleMfa#network_connection}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_mfa#network_connection PolicyRuleMfa#network_connection}
 
 ---
 
@@ -81660,7 +81660,7 @@ public readonly networkExcludes: string[];
 
 The zones to exclude.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_mfa.html#network_excludes PolicyRuleMfa#network_excludes}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_mfa#network_excludes PolicyRuleMfa#network_excludes}
 
 ---
 
@@ -81674,7 +81674,7 @@ public readonly networkIncludes: string[];
 
 The zones to include.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_mfa.html#network_includes PolicyRuleMfa#network_includes}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_mfa#network_includes PolicyRuleMfa#network_includes}
 
 ---
 
@@ -81688,7 +81688,7 @@ public readonly policyid: string;
 
 Policy ID of the Rule.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_mfa.html#policyid PolicyRuleMfa#policyid}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_mfa#policyid PolicyRuleMfa#policyid}
 
 ---
 
@@ -81702,7 +81702,7 @@ public readonly policyId: string;
 
 Policy ID of the Rule.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_mfa.html#policy_id PolicyRuleMfa#policy_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_mfa#policy_id PolicyRuleMfa#policy_id}
 
 ---
 
@@ -81716,7 +81716,7 @@ public readonly priority: number;
 
 Policy Rule Priority, this attribute can be set to a valid priority.
 
-To avoid endless diff situation we error if an invalid priority is provided. API defaults it to the last (lowest) if not there.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_mfa.html#priority PolicyRuleMfa#priority}
+To avoid endless diff situation we error if an invalid priority is provided. API defaults it to the last (lowest) if not there.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_mfa#priority PolicyRuleMfa#priority}
 
 ---
 
@@ -81730,7 +81730,7 @@ public readonly status: string;
 
 Policy Rule Status: ACTIVE or INACTIVE.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_mfa.html#status PolicyRuleMfa#status}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_mfa#status PolicyRuleMfa#status}
 
 ---
 
@@ -81744,7 +81744,7 @@ public readonly usersExcluded: string[];
 
 Set of User IDs to Exclude.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_mfa.html#users_excluded PolicyRuleMfa#users_excluded}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_mfa#users_excluded PolicyRuleMfa#users_excluded}
 
 ---
 
@@ -81831,7 +81831,7 @@ public readonly name: string;
 
 Policy Rule Name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_password.html#name PolicyRulePassword#name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_password#name PolicyRulePassword#name}
 
 ---
 
@@ -81845,7 +81845,7 @@ public readonly networkConnection: string;
 
 Network selection mode: ANYWHERE, ZONE, ON_NETWORK, or OFF_NETWORK.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_password.html#network_connection PolicyRulePassword#network_connection}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_password#network_connection PolicyRulePassword#network_connection}
 
 ---
 
@@ -81859,7 +81859,7 @@ public readonly networkExcludes: string[];
 
 The zones to exclude.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_password.html#network_excludes PolicyRulePassword#network_excludes}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_password#network_excludes PolicyRulePassword#network_excludes}
 
 ---
 
@@ -81873,7 +81873,7 @@ public readonly networkIncludes: string[];
 
 The zones to include.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_password.html#network_includes PolicyRulePassword#network_includes}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_password#network_includes PolicyRulePassword#network_includes}
 
 ---
 
@@ -81887,7 +81887,7 @@ public readonly passwordChange: string;
 
 Allow or deny a user to change their password: ALLOW or DENY. Default = ALLOW.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_password.html#password_change PolicyRulePassword#password_change}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_password#password_change PolicyRulePassword#password_change}
 
 ---
 
@@ -81901,7 +81901,7 @@ public readonly passwordReset: string;
 
 Allow or deny a user to reset their password: ALLOW or DENY. Default = ALLOW.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_password.html#password_reset PolicyRulePassword#password_reset}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_password#password_reset PolicyRulePassword#password_reset}
 
 ---
 
@@ -81915,7 +81915,7 @@ public readonly passwordUnlock: string;
 
 Allow or deny a user to unlock. Default = DENY.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_password.html#password_unlock PolicyRulePassword#password_unlock}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_password#password_unlock PolicyRulePassword#password_unlock}
 
 ---
 
@@ -81929,7 +81929,7 @@ public readonly policyid: string;
 
 Policy ID of the Rule.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_password.html#policyid PolicyRulePassword#policyid}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_password#policyid PolicyRulePassword#policyid}
 
 ---
 
@@ -81943,7 +81943,7 @@ public readonly policyId: string;
 
 Policy ID of the Rule.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_password.html#policy_id PolicyRulePassword#policy_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_password#policy_id PolicyRulePassword#policy_id}
 
 ---
 
@@ -81957,7 +81957,7 @@ public readonly priority: number;
 
 Policy Rule Priority, this attribute can be set to a valid priority.
 
-To avoid endless diff situation we error if an invalid priority is provided. API defaults it to the last (lowest) if not there.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_password.html#priority PolicyRulePassword#priority}
+To avoid endless diff situation we error if an invalid priority is provided. API defaults it to the last (lowest) if not there.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_password#priority PolicyRulePassword#priority}
 
 ---
 
@@ -81971,7 +81971,7 @@ public readonly status: string;
 
 Policy Rule Status: ACTIVE or INACTIVE.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_password.html#status PolicyRulePassword#status}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_password#status PolicyRulePassword#status}
 
 ---
 
@@ -81985,7 +81985,7 @@ public readonly usersExcluded: string[];
 
 Set of User IDs to Exclude.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_password.html#users_excluded PolicyRulePassword#users_excluded}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_password#users_excluded PolicyRulePassword#users_excluded}
 
 ---
 
@@ -82067,7 +82067,7 @@ public readonly policyId: string;
 
 ID of the policy.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_profile_enrollment.html#policy_id PolicyRuleProfileEnrollment#policy_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_profile_enrollment#policy_id PolicyRuleProfileEnrollment#policy_id}
 
 ---
 
@@ -82081,7 +82081,7 @@ public readonly unknownUserAction: string;
 
 Which action should be taken if this User is new.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_profile_enrollment.html#unknown_user_action PolicyRuleProfileEnrollment#unknown_user_action}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_profile_enrollment#unknown_user_action PolicyRuleProfileEnrollment#unknown_user_action}
 
 ---
 
@@ -82095,7 +82095,7 @@ public readonly access: string;
 
 Allow or deny access based on the rule conditions: ALLOW or DENY.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_profile_enrollment.html#access PolicyRuleProfileEnrollment#access}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_profile_enrollment#access PolicyRuleProfileEnrollment#access}
 
 ---
 
@@ -82109,7 +82109,7 @@ public readonly emailVerification: boolean | IResolvable;
 
 Indicates whether email verification should occur before access is granted.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_profile_enrollment.html#email_verification PolicyRuleProfileEnrollment#email_verification}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_profile_enrollment#email_verification PolicyRuleProfileEnrollment#email_verification}
 
 ---
 
@@ -82123,7 +82123,7 @@ public readonly inlineHookId: string;
 
 ID of a Registration Inline Hook.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_profile_enrollment.html#inline_hook_id PolicyRuleProfileEnrollment#inline_hook_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_profile_enrollment#inline_hook_id PolicyRuleProfileEnrollment#inline_hook_id}
 
 ---
 
@@ -82137,7 +82137,7 @@ public readonly profileAttributes: PolicyRuleProfileEnrollmentProfileAttributes[
 
 profile_attributes block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_profile_enrollment.html#profile_attributes PolicyRuleProfileEnrollment#profile_attributes}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_profile_enrollment#profile_attributes PolicyRuleProfileEnrollment#profile_attributes}
 
 ---
 
@@ -82151,7 +82151,7 @@ public readonly targetGroupId: string;
 
 The ID of a Group that this User should be added to.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_profile_enrollment.html#target_group_id PolicyRuleProfileEnrollment#target_group_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_profile_enrollment#target_group_id PolicyRuleProfileEnrollment#target_group_id}
 
 ---
 
@@ -82185,7 +82185,7 @@ public readonly label: string;
 
 A display-friendly label for this property.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_profile_enrollment.html#label PolicyRuleProfileEnrollment#label}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_profile_enrollment#label PolicyRuleProfileEnrollment#label}
 
 ---
 
@@ -82199,7 +82199,7 @@ public readonly name: string;
 
 The name of a User Profile property.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_profile_enrollment.html#name PolicyRuleProfileEnrollment#name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_profile_enrollment#name PolicyRuleProfileEnrollment#name}
 
 ---
 
@@ -82213,7 +82213,7 @@ public readonly required: boolean | IResolvable;
 
 Indicates if this property is required for enrollment.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_profile_enrollment.html#required PolicyRuleProfileEnrollment#required}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_profile_enrollment#required PolicyRuleProfileEnrollment#required}
 
 ---
 
@@ -82310,7 +82310,7 @@ public readonly name: string;
 
 Policy Rule Name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_signon.html#name PolicyRuleSignon#name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_signon#name PolicyRuleSignon#name}
 
 ---
 
@@ -82324,7 +82324,7 @@ public readonly access: string;
 
 Allow or deny access based on the rule conditions: ALLOW, DENY or CHALLENGE.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_signon.html#access PolicyRuleSignon#access}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_signon#access PolicyRuleSignon#access}
 
 ---
 
@@ -82338,7 +82338,7 @@ public readonly authtype: string;
 
 Authentication entrypoint: ANY, RADIUS or LDAP_INTERFACE.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_signon.html#authtype PolicyRuleSignon#authtype}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_signon#authtype PolicyRuleSignon#authtype}
 
 ---
 
@@ -82352,7 +82352,7 @@ public readonly behaviors: string[];
 
 List of behavior IDs.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_signon.html#behaviors PolicyRuleSignon#behaviors}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_signon#behaviors PolicyRuleSignon#behaviors}
 
 ---
 
@@ -82366,7 +82366,7 @@ public readonly factorSequence: PolicyRuleSignonFactorSequence[];
 
 factor_sequence block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_signon.html#factor_sequence PolicyRuleSignon#factor_sequence}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_signon#factor_sequence PolicyRuleSignon#factor_sequence}
 
 ---
 
@@ -82380,7 +82380,7 @@ public readonly mfaLifetime: number;
 
 Elapsed time before the next MFA challenge.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_signon.html#mfa_lifetime PolicyRuleSignon#mfa_lifetime}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_signon#mfa_lifetime PolicyRuleSignon#mfa_lifetime}
 
 ---
 
@@ -82394,7 +82394,7 @@ public readonly mfaPrompt: string;
 
 Prompt for MFA based on the device used, a factor session lifetime, or every sign-on attempt: DEVICE, SESSION or ALWAYS.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_signon.html#mfa_prompt PolicyRuleSignon#mfa_prompt}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_signon#mfa_prompt PolicyRuleSignon#mfa_prompt}
 
 ---
 
@@ -82408,7 +82408,7 @@ public readonly mfaRememberDevice: boolean | IResolvable;
 
 Remember MFA device.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_signon.html#mfa_remember_device PolicyRuleSignon#mfa_remember_device}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_signon#mfa_remember_device PolicyRuleSignon#mfa_remember_device}
 
 ---
 
@@ -82422,7 +82422,7 @@ public readonly mfaRequired: boolean | IResolvable;
 
 Require MFA.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_signon.html#mfa_required PolicyRuleSignon#mfa_required}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_signon#mfa_required PolicyRuleSignon#mfa_required}
 
 ---
 
@@ -82436,7 +82436,7 @@ public readonly networkConnection: string;
 
 Network selection mode: ANYWHERE, ZONE, ON_NETWORK, or OFF_NETWORK.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_signon.html#network_connection PolicyRuleSignon#network_connection}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_signon#network_connection PolicyRuleSignon#network_connection}
 
 ---
 
@@ -82450,7 +82450,7 @@ public readonly networkExcludes: string[];
 
 The zones to exclude.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_signon.html#network_excludes PolicyRuleSignon#network_excludes}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_signon#network_excludes PolicyRuleSignon#network_excludes}
 
 ---
 
@@ -82464,7 +82464,7 @@ public readonly networkIncludes: string[];
 
 The zones to include.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_signon.html#network_includes PolicyRuleSignon#network_includes}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_signon#network_includes PolicyRuleSignon#network_includes}
 
 ---
 
@@ -82478,7 +82478,7 @@ public readonly policyid: string;
 
 Policy ID of the Rule.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_signon.html#policyid PolicyRuleSignon#policyid}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_signon#policyid PolicyRuleSignon#policyid}
 
 ---
 
@@ -82492,7 +82492,7 @@ public readonly policyId: string;
 
 Policy ID of the Rule.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_signon.html#policy_id PolicyRuleSignon#policy_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_signon#policy_id PolicyRuleSignon#policy_id}
 
 ---
 
@@ -82506,7 +82506,7 @@ public readonly primaryFactor: string;
 
 Primary factor.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_signon.html#primary_factor PolicyRuleSignon#primary_factor}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_signon#primary_factor PolicyRuleSignon#primary_factor}
 
 ---
 
@@ -82520,7 +82520,7 @@ public readonly priority: number;
 
 Policy Rule Priority, this attribute can be set to a valid priority.
 
-To avoid endless diff situation we error if an invalid priority is provided. API defaults it to the last (lowest) if not there.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_signon.html#priority PolicyRuleSignon#priority}
+To avoid endless diff situation we error if an invalid priority is provided. API defaults it to the last (lowest) if not there.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_signon#priority PolicyRuleSignon#priority}
 
 ---
 
@@ -82534,7 +82534,7 @@ public readonly riscLevel: string;
 
 Risc level: ANY, LOW, MEDIUM or HIGH.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_signon.html#risc_level PolicyRuleSignon#risc_level}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_signon#risc_level PolicyRuleSignon#risc_level}
 
 ---
 
@@ -82548,7 +82548,7 @@ public readonly sessionIdle: number;
 
 Max minutes a session can be idle.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_signon.html#session_idle PolicyRuleSignon#session_idle}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_signon#session_idle PolicyRuleSignon#session_idle}
 
 ---
 
@@ -82562,7 +82562,7 @@ public readonly sessionLifetime: number;
 
 Max minutes a session is active: Disable = 0.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_signon.html#session_lifetime PolicyRuleSignon#session_lifetime}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_signon#session_lifetime PolicyRuleSignon#session_lifetime}
 
 ---
 
@@ -82576,7 +82576,7 @@ public readonly sessionPersistent: boolean | IResolvable;
 
 Whether session cookies will last across browser sessions. Okta Administrators can never have persistent session cookies.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_signon.html#session_persistent PolicyRuleSignon#session_persistent}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_signon#session_persistent PolicyRuleSignon#session_persistent}
 
 ---
 
@@ -82590,7 +82590,7 @@ public readonly status: string;
 
 Policy Rule Status: ACTIVE or INACTIVE.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_signon.html#status PolicyRuleSignon#status}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_signon#status PolicyRuleSignon#status}
 
 ---
 
@@ -82604,7 +82604,7 @@ public readonly usersExcluded: string[];
 
 Set of User IDs to Exclude.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_signon.html#users_excluded PolicyRuleSignon#users_excluded}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_signon#users_excluded PolicyRuleSignon#users_excluded}
 
 ---
 
@@ -82638,7 +82638,7 @@ public readonly primaryCriteriaFactorType: string;
 
 Type of a Factor.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_signon.html#primary_criteria_factor_type PolicyRuleSignon#primary_criteria_factor_type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_signon#primary_criteria_factor_type PolicyRuleSignon#primary_criteria_factor_type}
 
 ---
 
@@ -82652,7 +82652,7 @@ public readonly primaryCriteriaProvider: string;
 
 Factor provider.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_signon.html#primary_criteria_provider PolicyRuleSignon#primary_criteria_provider}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_signon#primary_criteria_provider PolicyRuleSignon#primary_criteria_provider}
 
 ---
 
@@ -82666,7 +82666,7 @@ public readonly secondaryCriteria: PolicyRuleSignonFactorSequenceSecondaryCriter
 
 secondary_criteria block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_signon.html#secondary_criteria PolicyRuleSignon#secondary_criteria}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_signon#secondary_criteria PolicyRuleSignon#secondary_criteria}
 
 ---
 
@@ -82699,7 +82699,7 @@ public readonly factorType: string;
 
 Type of a Factor.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_signon.html#factor_type PolicyRuleSignon#factor_type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_signon#factor_type PolicyRuleSignon#factor_type}
 
 ---
 
@@ -82713,7 +82713,7 @@ public readonly provider: string;
 
 Factor provider.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_signon.html#provider PolicyRuleSignon#provider}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_signon#provider PolicyRuleSignon#provider}
 
 ---
 
@@ -82793,7 +82793,7 @@ public readonly name: string;
 
 Policy Name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_signon.html#name PolicySignon#name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_signon#name PolicySignon#name}
 
 ---
 
@@ -82807,7 +82807,7 @@ public readonly description: string;
 
 Policy Description.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_signon.html#description PolicySignon#description}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_signon#description PolicySignon#description}
 
 ---
 
@@ -82821,7 +82821,7 @@ public readonly groupsIncluded: string[];
 
 List of Group IDs to Include.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_signon.html#groups_included PolicySignon#groups_included}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_signon#groups_included PolicySignon#groups_included}
 
 ---
 
@@ -82835,7 +82835,7 @@ public readonly priority: number;
 
 Policy Priority, this attribute can be set to a valid priority.
 
-To avoid endless diff situation we error if an invalid priority is provided. API defaults it to the last (lowest) if not there.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_signon.html#priority PolicySignon#priority}
+To avoid endless diff situation we error if an invalid priority is provided. API defaults it to the last (lowest) if not there.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_signon#priority PolicySignon#priority}
 
 ---
 
@@ -82849,7 +82849,7 @@ public readonly status: string;
 
 Policy Status: ACTIVE or INACTIVE.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_signon.html#status PolicySignon#status}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_signon#status PolicySignon#status}
 
 ---
 
@@ -82929,7 +82929,7 @@ public readonly sourceId: string;
 
 The source id of the mapping to manage.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/profile_mapping.html#source_id ProfileMapping#source_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/profile_mapping#source_id ProfileMapping#source_id}
 
 ---
 
@@ -82943,7 +82943,7 @@ public readonly targetId: string;
 
 The target id of the mapping to manage.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/profile_mapping.html#target_id ProfileMapping#target_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/profile_mapping#target_id ProfileMapping#target_id}
 
 ---
 
@@ -82957,7 +82957,7 @@ public readonly alwaysApply: boolean | IResolvable;
 
 Whether apply the changes to all users with this profile after updating or creating the these mappings.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/profile_mapping.html#always_apply ProfileMapping#always_apply}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/profile_mapping#always_apply ProfileMapping#always_apply}
 
 ---
 
@@ -82971,7 +82971,7 @@ public readonly deleteWhenAbsent: boolean | IResolvable;
 
 When turned on this flag will trigger the provider to delete mapping properties that are not defined in config.
 
-By default, we do not delete missing properties.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/profile_mapping.html#delete_when_absent ProfileMapping#delete_when_absent}
+By default, we do not delete missing properties.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/profile_mapping#delete_when_absent ProfileMapping#delete_when_absent}
 
 ---
 
@@ -82985,7 +82985,7 @@ public readonly mappings: ProfileMappingMappings[];
 
 mappings block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/profile_mapping.html#mappings ProfileMapping#mappings}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/profile_mapping#mappings ProfileMapping#mappings}
 
 ---
 
@@ -83003,9 +83003,9 @@ const profileMappingMappings: ProfileMappingMappings = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`expression`](#cdktfprovideroktaprofilemappingmappingspropertyexpression)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/profile_mapping.html#expression ProfileMapping#expression}. |
+| [`expression`](#cdktfprovideroktaprofilemappingmappingspropertyexpression)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/profile_mapping#expression ProfileMapping#expression}. |
 | [`id`](#cdktfprovideroktaprofilemappingmappingspropertyid)<span title="Required">*</span> | `string` | The mapping property key. |
-| [`pushStatus`](#cdktfprovideroktaprofilemappingmappingspropertypushstatus) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/profile_mapping.html#push_status ProfileMapping#push_status}. |
+| [`pushStatus`](#cdktfprovideroktaprofilemappingmappingspropertypushstatus) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/profile_mapping#push_status ProfileMapping#push_status}. |
 
 ---
 
@@ -83017,7 +83017,7 @@ public readonly expression: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/profile_mapping.html#expression ProfileMapping#expression}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/profile_mapping#expression ProfileMapping#expression}.
 
 ---
 
@@ -83031,7 +83031,7 @@ public readonly id: string;
 
 The mapping property key.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/profile_mapping.html#id ProfileMapping#id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/profile_mapping#id ProfileMapping#id}
 
 ---
 
@@ -83043,7 +83043,7 @@ public readonly pushStatus: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/profile_mapping.html#push_status ProfileMapping#push_status}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/profile_mapping#push_status ProfileMapping#push_status}.
 
 ---
 
@@ -83121,7 +83121,7 @@ public readonly authorize: string;
 
 Called during authentication.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/rate_limiting.html#authorize RateLimiting#authorize}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/rate_limiting#authorize RateLimiting#authorize}
 
 ---
 
@@ -83135,7 +83135,7 @@ public readonly login: string;
 
 Called when accessing the Okta hosted login page.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/rate_limiting.html#login RateLimiting#login}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/rate_limiting#login RateLimiting#login}
 
 ---
 
@@ -83149,7 +83149,7 @@ public readonly communicationsEnabled: boolean | IResolvable;
 
 Enables rate limit warning, violation, notification emails and banners when this org meets rate limits.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/rate_limiting.html#communications_enabled RateLimiting#communications_enabled}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/rate_limiting#communications_enabled RateLimiting#communications_enabled}
 
 ---
 
@@ -83227,7 +83227,7 @@ public readonly description: string;
 
 A description of the Resource Set.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/resource_set.html#description ResourceSet#description}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/resource_set#description ResourceSet#description}
 
 ---
 
@@ -83241,7 +83241,7 @@ public readonly label: string;
 
 Unique name given to the Resource Set.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/resource_set.html#label ResourceSet#label}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/resource_set#label ResourceSet#label}
 
 ---
 
@@ -83255,7 +83255,7 @@ public readonly resources: string[];
 
 The endpoints that reference the resources to be included in the new Resource Set.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/resource_set.html#resources ResourceSet#resources}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/resource_set#resources ResourceSet#resources}
 
 ---
 
@@ -83333,7 +83333,7 @@ public readonly notificationType: string;
 
 Type of the notification.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/role_subscription.html#notification_type RoleSubscription#notification_type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/role_subscription#notification_type RoleSubscription#notification_type}
 
 ---
 
@@ -83347,7 +83347,7 @@ public readonly roleType: string;
 
 Type of the role.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/role_subscription.html#role_type RoleSubscription#role_type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/role_subscription#role_type RoleSubscription#role_type}
 
 ---
 
@@ -83361,7 +83361,7 @@ public readonly status: string;
 
 Status of subscription.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/role_subscription.html#status RoleSubscription#status}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/role_subscription#status RoleSubscription#status}
 
 ---
 
@@ -83384,7 +83384,7 @@ const samlAppAttributeStatements: SamlAppAttributeStatements = { ... }
 | [`filterValue`](#cdktfprovideroktasamlappattributestatementspropertyfiltervalue) | `string` | Filter value to use. |
 | [`namespace`](#cdktfprovideroktasamlappattributestatementspropertynamespace) | `string` | The name format of the attribute. |
 | [`type`](#cdktfprovideroktasamlappattributestatementspropertytype) | `string` | The type of attribute statements object. |
-| [`values`](#cdktfprovideroktasamlappattributestatementspropertyvalues) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#values SamlApp#values}. |
+| [`values`](#cdktfprovideroktasamlappattributestatementspropertyvalues) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#values SamlApp#values}. |
 
 ---
 
@@ -83398,7 +83398,7 @@ public readonly name: string;
 
 The reference name of the attribute statement.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#name SamlApp#name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#name SamlApp#name}
 
 ---
 
@@ -83412,7 +83412,7 @@ public readonly filterType: string;
 
 Type of group attribute filter.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#filter_type SamlApp#filter_type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#filter_type SamlApp#filter_type}
 
 ---
 
@@ -83426,7 +83426,7 @@ public readonly filterValue: string;
 
 Filter value to use.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#filter_value SamlApp#filter_value}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#filter_value SamlApp#filter_value}
 
 ---
 
@@ -83440,7 +83440,7 @@ public readonly namespace: string;
 
 The name format of the attribute.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#namespace SamlApp#namespace}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#namespace SamlApp#namespace}
 
 ---
 
@@ -83454,7 +83454,7 @@ public readonly type: string;
 
 The type of attribute statements object.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#type SamlApp#type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#type SamlApp#type}
 
 ---
 
@@ -83466,7 +83466,7 @@ public readonly values: string[];
 
 - *Type:* `string`[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#values SamlApp#values}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#values SamlApp#values}.
 
 ---
 
@@ -83590,7 +83590,7 @@ public readonly label: string;
 
 Pretty name of app.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#label SamlApp#label}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#label SamlApp#label}
 
 ---
 
@@ -83604,7 +83604,7 @@ public readonly accessibilityErrorRedirectUrl: string;
 
 Custom error page URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#accessibility_error_redirect_url SamlApp#accessibility_error_redirect_url}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#accessibility_error_redirect_url SamlApp#accessibility_error_redirect_url}
 
 ---
 
@@ -83618,7 +83618,7 @@ public readonly accessibilityLoginRedirectUrl: string;
 
 Custom login page URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#accessibility_login_redirect_url SamlApp#accessibility_login_redirect_url}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#accessibility_login_redirect_url SamlApp#accessibility_login_redirect_url}
 
 ---
 
@@ -83632,7 +83632,7 @@ public readonly accessibilitySelfService: boolean | IResolvable;
 
 Enable self service.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#accessibility_self_service SamlApp#accessibility_self_service}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#accessibility_self_service SamlApp#accessibility_self_service}
 
 ---
 
@@ -83646,7 +83646,7 @@ public readonly acsEndpoints: string[];
 
 List of ACS endpoints for this SAML application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#acs_endpoints SamlApp#acs_endpoints}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#acs_endpoints SamlApp#acs_endpoints}
 
 ---
 
@@ -83660,7 +83660,7 @@ public readonly adminNote: string;
 
 Application notes for admins.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#admin_note SamlApp#admin_note}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#admin_note SamlApp#admin_note}
 
 ---
 
@@ -83674,7 +83674,7 @@ public readonly appLinksJson: string;
 
 Displays specific appLinks for the app.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#app_links_json SamlApp#app_links_json}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#app_links_json SamlApp#app_links_json}
 
 ---
 
@@ -83688,7 +83688,7 @@ public readonly appSettingsJson: string;
 
 Application settings in JSON format.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#app_settings_json SamlApp#app_settings_json}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#app_settings_json SamlApp#app_settings_json}
 
 ---
 
@@ -83702,7 +83702,7 @@ public readonly assertionSigned: boolean | IResolvable;
 
 Determines whether the SAML assertion is digitally signed.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#assertion_signed SamlApp#assertion_signed}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#assertion_signed SamlApp#assertion_signed}
 
 ---
 
@@ -83716,7 +83716,7 @@ public readonly attributeStatements: SamlAppAttributeStatements[];
 
 attribute_statements block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#attribute_statements SamlApp#attribute_statements}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#attribute_statements SamlApp#attribute_statements}
 
 ---
 
@@ -83730,7 +83730,7 @@ public readonly audience: string;
 
 Audience Restriction.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#audience SamlApp#audience}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#audience SamlApp#audience}
 
 ---
 
@@ -83744,7 +83744,7 @@ public readonly authnContextClassRef: string;
 
 Identifies the SAML authentication context class for the assertion’s authentication statement.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#authn_context_class_ref SamlApp#authn_context_class_ref}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#authn_context_class_ref SamlApp#authn_context_class_ref}
 
 ---
 
@@ -83758,7 +83758,7 @@ public readonly autoSubmitToolbar: boolean | IResolvable;
 
 Display auto submit toolbar.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#auto_submit_toolbar SamlApp#auto_submit_toolbar}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#auto_submit_toolbar SamlApp#auto_submit_toolbar}
 
 ---
 
@@ -83772,7 +83772,7 @@ public readonly defaultRelayState: string;
 
 Identifies a specific application resource in an IDP initiated SSO scenario.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#default_relay_state SamlApp#default_relay_state}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#default_relay_state SamlApp#default_relay_state}
 
 ---
 
@@ -83786,7 +83786,7 @@ public readonly destination: string;
 
 Identifies the location where the SAML response is intended to be sent inside of the SAML assertion.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#destination SamlApp#destination}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#destination SamlApp#destination}
 
 ---
 
@@ -83800,7 +83800,7 @@ public readonly digestAlgorithm: string;
 
 Determines the digest algorithm used to digitally sign the SAML assertion and response.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#digest_algorithm SamlApp#digest_algorithm}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#digest_algorithm SamlApp#digest_algorithm}
 
 ---
 
@@ -83814,7 +83814,7 @@ public readonly enduserNote: string;
 
 Application notes for end users.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#enduser_note SamlApp#enduser_note}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#enduser_note SamlApp#enduser_note}
 
 ---
 
@@ -83828,7 +83828,7 @@ public readonly features: string[];
 
 features to enable.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#features SamlApp#features}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#features SamlApp#features}
 
 ---
 
@@ -83842,7 +83842,7 @@ public readonly groups: string[];
 
 Groups associated with the application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#groups SamlApp#groups}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#groups SamlApp#groups}
 
 ---
 
@@ -83856,7 +83856,7 @@ public readonly hideIos: boolean | IResolvable;
 
 Do not display application icon on mobile app.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#hide_ios SamlApp#hide_ios}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#hide_ios SamlApp#hide_ios}
 
 ---
 
@@ -83870,7 +83870,7 @@ public readonly hideWeb: boolean | IResolvable;
 
 Do not display application icon to users.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#hide_web SamlApp#hide_web}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#hide_web SamlApp#hide_web}
 
 ---
 
@@ -83884,7 +83884,7 @@ public readonly honorForceAuthn: boolean | IResolvable;
 
 Prompt user to re-authenticate if SP asks for it.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#honor_force_authn SamlApp#honor_force_authn}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#honor_force_authn SamlApp#honor_force_authn}
 
 ---
 
@@ -83898,7 +83898,7 @@ public readonly idpIssuer: string;
 
 SAML issuer ID.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#idp_issuer SamlApp#idp_issuer}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#idp_issuer SamlApp#idp_issuer}
 
 ---
 
@@ -83912,7 +83912,7 @@ public readonly implicitAssignment: boolean | IResolvable;
 
 *Early Access Property*. Enable Federation Broker Mode.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#implicit_assignment SamlApp#implicit_assignment}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#implicit_assignment SamlApp#implicit_assignment}
 
 ---
 
@@ -83926,7 +83926,7 @@ public readonly inlineHookId: string;
 
 Saml Inline Hook setting.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#inline_hook_id SamlApp#inline_hook_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#inline_hook_id SamlApp#inline_hook_id}
 
 ---
 
@@ -83940,7 +83940,7 @@ public readonly keyName: string;
 
 Certificate name. This modulates the rotation of keys. New name == new key.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#key_name SamlApp#key_name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#key_name SamlApp#key_name}
 
 ---
 
@@ -83954,7 +83954,7 @@ public readonly keyYearsValid: number;
 
 Number of years the certificate is valid.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#key_years_valid SamlApp#key_years_valid}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#key_years_valid SamlApp#key_years_valid}
 
 ---
 
@@ -83968,7 +83968,7 @@ public readonly logo: string;
 
 Local path to logo of the application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#logo SamlApp#logo}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#logo SamlApp#logo}
 
 ---
 
@@ -83982,7 +83982,7 @@ public readonly preconfiguredApp: string;
 
 Name of preexisting SAML application. For instance 'slack'.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#preconfigured_app SamlApp#preconfigured_app}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#preconfigured_app SamlApp#preconfigured_app}
 
 ---
 
@@ -83996,7 +83996,7 @@ public readonly recipient: string;
 
 The location where the app may present the SAML assertion.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#recipient SamlApp#recipient}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#recipient SamlApp#recipient}
 
 ---
 
@@ -84010,7 +84010,7 @@ public readonly requestCompressed: boolean | IResolvable;
 
 Denotes whether the request is compressed or not.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#request_compressed SamlApp#request_compressed}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#request_compressed SamlApp#request_compressed}
 
 ---
 
@@ -84024,7 +84024,7 @@ public readonly responseSigned: boolean | IResolvable;
 
 Determines whether the SAML auth response message is digitally signed.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#response_signed SamlApp#response_signed}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#response_signed SamlApp#response_signed}
 
 ---
 
@@ -84038,7 +84038,7 @@ public readonly samlVersion: string;
 
 SAML version for the app's sign-on mode.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#saml_version SamlApp#saml_version}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#saml_version SamlApp#saml_version}
 
 ---
 
@@ -84052,7 +84052,7 @@ public readonly signatureAlgorithm: string;
 
 Signature algorithm used ot digitally sign the assertion and response.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#signature_algorithm SamlApp#signature_algorithm}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#signature_algorithm SamlApp#signature_algorithm}
 
 ---
 
@@ -84066,7 +84066,7 @@ public readonly singleLogoutCertificate: string;
 
 x509 encoded certificate that the Service Provider uses to sign Single Logout requests.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#single_logout_certificate SamlApp#single_logout_certificate}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#single_logout_certificate SamlApp#single_logout_certificate}
 
 ---
 
@@ -84080,7 +84080,7 @@ public readonly singleLogoutIssuer: string;
 
 The issuer of the Service Provider that generates the Single Logout request.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#single_logout_issuer SamlApp#single_logout_issuer}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#single_logout_issuer SamlApp#single_logout_issuer}
 
 ---
 
@@ -84094,7 +84094,7 @@ public readonly singleLogoutUrl: string;
 
 The location where the logout response is sent.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#single_logout_url SamlApp#single_logout_url}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#single_logout_url SamlApp#single_logout_url}
 
 ---
 
@@ -84108,7 +84108,7 @@ public readonly skipGroups: boolean | IResolvable;
 
 Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#skip_groups SamlApp#skip_groups}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#skip_groups SamlApp#skip_groups}
 
 ---
 
@@ -84122,7 +84122,7 @@ public readonly skipUsers: boolean | IResolvable;
 
 Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#skip_users SamlApp#skip_users}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#skip_users SamlApp#skip_users}
 
 ---
 
@@ -84136,7 +84136,7 @@ public readonly spIssuer: string;
 
 SAML SP issuer ID.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#sp_issuer SamlApp#sp_issuer}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#sp_issuer SamlApp#sp_issuer}
 
 ---
 
@@ -84150,7 +84150,7 @@ public readonly ssoUrl: string;
 
 Single Sign On URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#sso_url SamlApp#sso_url}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#sso_url SamlApp#sso_url}
 
 ---
 
@@ -84164,7 +84164,7 @@ public readonly status: string;
 
 Status of application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#status SamlApp#status}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#status SamlApp#status}
 
 ---
 
@@ -84178,7 +84178,7 @@ public readonly subjectNameIdFormat: string;
 
 Identifies the SAML processing rules.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#subject_name_id_format SamlApp#subject_name_id_format}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#subject_name_id_format SamlApp#subject_name_id_format}
 
 ---
 
@@ -84192,7 +84192,7 @@ public readonly subjectNameIdTemplate: string;
 
 Template for app user's username when a user is assigned to the app.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#subject_name_id_template SamlApp#subject_name_id_template}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#subject_name_id_template SamlApp#subject_name_id_template}
 
 ---
 
@@ -84206,7 +84206,7 @@ public readonly userNameTemplate: string;
 
 Username template.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#user_name_template SamlApp#user_name_template}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#user_name_template SamlApp#user_name_template}
 
 ---
 
@@ -84220,7 +84220,7 @@ public readonly userNameTemplatePushStatus: string;
 
 Push username on update.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#user_name_template_push_status SamlApp#user_name_template_push_status}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#user_name_template_push_status SamlApp#user_name_template_push_status}
 
 ---
 
@@ -84234,7 +84234,7 @@ public readonly userNameTemplateSuffix: string;
 
 Username template suffix.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#user_name_template_suffix SamlApp#user_name_template_suffix}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#user_name_template_suffix SamlApp#user_name_template_suffix}
 
 ---
 
@@ -84248,7 +84248,7 @@ public readonly userNameTemplateType: string;
 
 Username template type.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#user_name_template_type SamlApp#user_name_template_type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#user_name_template_type SamlApp#user_name_template_type}
 
 ---
 
@@ -84262,7 +84262,7 @@ public readonly users: SamlAppUsers[];
 
 users block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#users SamlApp#users}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#users SamlApp#users}
 
 ---
 
@@ -84296,7 +84296,7 @@ public readonly id: string;
 
 User ID.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#id SamlApp#id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#id SamlApp#id}
 
 ---
 
@@ -84310,7 +84310,7 @@ public readonly password: string;
 
 Password for user application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#password SamlApp#password}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#password SamlApp#password}
 
 ---
 
@@ -84324,7 +84324,7 @@ public readonly username: string;
 
 Username for user.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#username SamlApp#username}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#username SamlApp#username}
 
 ---
 
@@ -84346,37 +84346,37 @@ const samlIdpConfig: SamlIdpConfig = { ... }
 | [`dependsOn`](#cdktfprovideroktasamlidpconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktasamlidpconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktasamlidpconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`issuer`](#cdktfprovideroktasamlidpconfigpropertyissuer)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#issuer SamlIdp#issuer}. |
-| [`kid`](#cdktfprovideroktasamlidpconfigpropertykid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#kid SamlIdp#kid}. |
+| [`issuer`](#cdktfprovideroktasamlidpconfigpropertyissuer)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#issuer SamlIdp#issuer}. |
+| [`kid`](#cdktfprovideroktasamlidpconfigpropertykid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#kid SamlIdp#kid}. |
 | [`name`](#cdktfprovideroktasamlidpconfigpropertyname)<span title="Required">*</span> | `string` | Name of the IdP. |
-| [`ssoUrl`](#cdktfprovideroktasamlidpconfigpropertyssourl)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#sso_url SamlIdp#sso_url}. |
-| [`accountLinkAction`](#cdktfprovideroktasamlidpconfigpropertyaccountlinkaction) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#account_link_action SamlIdp#account_link_action}. |
-| [`accountLinkGroupInclude`](#cdktfprovideroktasamlidpconfigpropertyaccountlinkgroupinclude) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#account_link_group_include SamlIdp#account_link_group_include}. |
-| [`acsBinding`](#cdktfprovideroktasamlidpconfigpropertyacsbinding) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#acs_binding SamlIdp#acs_binding}. |
-| [`acsType`](#cdktfprovideroktasamlidpconfigpropertyacstype) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#acs_type SamlIdp#acs_type}. |
-| [`deprovisionedAction`](#cdktfprovideroktasamlidpconfigpropertydeprovisionedaction) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#deprovisioned_action SamlIdp#deprovisioned_action}. |
-| [`groupsAction`](#cdktfprovideroktasamlidpconfigpropertygroupsaction) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#groups_action SamlIdp#groups_action}. |
-| [`groupsAssignment`](#cdktfprovideroktasamlidpconfigpropertygroupsassignment) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#groups_assignment SamlIdp#groups_assignment}. |
-| [`groupsAttribute`](#cdktfprovideroktasamlidpconfigpropertygroupsattribute) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#groups_attribute SamlIdp#groups_attribute}. |
-| [`groupsFilter`](#cdktfprovideroktasamlidpconfigpropertygroupsfilter) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#groups_filter SamlIdp#groups_filter}. |
+| [`ssoUrl`](#cdktfprovideroktasamlidpconfigpropertyssourl)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#sso_url SamlIdp#sso_url}. |
+| [`accountLinkAction`](#cdktfprovideroktasamlidpconfigpropertyaccountlinkaction) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#account_link_action SamlIdp#account_link_action}. |
+| [`accountLinkGroupInclude`](#cdktfprovideroktasamlidpconfigpropertyaccountlinkgroupinclude) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#account_link_group_include SamlIdp#account_link_group_include}. |
+| [`acsBinding`](#cdktfprovideroktasamlidpconfigpropertyacsbinding) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#acs_binding SamlIdp#acs_binding}. |
+| [`acsType`](#cdktfprovideroktasamlidpconfigpropertyacstype) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#acs_type SamlIdp#acs_type}. |
+| [`deprovisionedAction`](#cdktfprovideroktasamlidpconfigpropertydeprovisionedaction) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#deprovisioned_action SamlIdp#deprovisioned_action}. |
+| [`groupsAction`](#cdktfprovideroktasamlidpconfigpropertygroupsaction) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#groups_action SamlIdp#groups_action}. |
+| [`groupsAssignment`](#cdktfprovideroktasamlidpconfigpropertygroupsassignment) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#groups_assignment SamlIdp#groups_assignment}. |
+| [`groupsAttribute`](#cdktfprovideroktasamlidpconfigpropertygroupsattribute) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#groups_attribute SamlIdp#groups_attribute}. |
+| [`groupsFilter`](#cdktfprovideroktasamlidpconfigpropertygroupsfilter) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#groups_filter SamlIdp#groups_filter}. |
 | [`issuerMode`](#cdktfprovideroktasamlidpconfigpropertyissuermode) | `string` | Indicates whether Okta uses the original Okta org domain URL, or a custom domain URL. |
-| [`maxClockSkew`](#cdktfprovideroktasamlidpconfigpropertymaxclockskew) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#max_clock_skew SamlIdp#max_clock_skew}. |
-| [`nameFormat`](#cdktfprovideroktasamlidpconfigpropertynameformat) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#name_format SamlIdp#name_format}. |
-| [`profileMaster`](#cdktfprovideroktasamlidpconfigpropertyprofilemaster) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#profile_master SamlIdp#profile_master}. |
-| [`provisioningAction`](#cdktfprovideroktasamlidpconfigpropertyprovisioningaction) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#provisioning_action SamlIdp#provisioning_action}. |
+| [`maxClockSkew`](#cdktfprovideroktasamlidpconfigpropertymaxclockskew) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#max_clock_skew SamlIdp#max_clock_skew}. |
+| [`nameFormat`](#cdktfprovideroktasamlidpconfigpropertynameformat) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#name_format SamlIdp#name_format}. |
+| [`profileMaster`](#cdktfprovideroktasamlidpconfigpropertyprofilemaster) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#profile_master SamlIdp#profile_master}. |
+| [`provisioningAction`](#cdktfprovideroktasamlidpconfigpropertyprovisioningaction) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#provisioning_action SamlIdp#provisioning_action}. |
 | [`requestSignatureAlgorithm`](#cdktfprovideroktasamlidpconfigpropertyrequestsignaturealgorithm) | `string` | algorithm to use to sign requests. |
 | [`requestSignatureScope`](#cdktfprovideroktasamlidpconfigpropertyrequestsignaturescope) | `string` | algorithm to use to sign response. |
 | [`responseSignatureAlgorithm`](#cdktfprovideroktasamlidpconfigpropertyresponsesignaturealgorithm) | `string` | algorithm to use to sign requests. |
 | [`responseSignatureScope`](#cdktfprovideroktasamlidpconfigpropertyresponsesignaturescope) | `string` | algorithm to use to sign response. |
-| [`ssoBinding`](#cdktfprovideroktasamlidpconfigpropertyssobinding) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#sso_binding SamlIdp#sso_binding}. |
-| [`ssoDestination`](#cdktfprovideroktasamlidpconfigpropertyssodestination) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#sso_destination SamlIdp#sso_destination}. |
-| [`status`](#cdktfprovideroktasamlidpconfigpropertystatus) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#status SamlIdp#status}. |
-| [`subjectFilter`](#cdktfprovideroktasamlidpconfigpropertysubjectfilter) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#subject_filter SamlIdp#subject_filter}. |
-| [`subjectFormat`](#cdktfprovideroktasamlidpconfigpropertysubjectformat) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#subject_format SamlIdp#subject_format}. |
-| [`subjectMatchAttribute`](#cdktfprovideroktasamlidpconfigpropertysubjectmatchattribute) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#subject_match_attribute SamlIdp#subject_match_attribute}. |
-| [`subjectMatchType`](#cdktfprovideroktasamlidpconfigpropertysubjectmatchtype) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#subject_match_type SamlIdp#subject_match_type}. |
-| [`suspendedAction`](#cdktfprovideroktasamlidpconfigpropertysuspendedaction) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#suspended_action SamlIdp#suspended_action}. |
-| [`usernameTemplate`](#cdktfprovideroktasamlidpconfigpropertyusernametemplate) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#username_template SamlIdp#username_template}. |
+| [`ssoBinding`](#cdktfprovideroktasamlidpconfigpropertyssobinding) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#sso_binding SamlIdp#sso_binding}. |
+| [`ssoDestination`](#cdktfprovideroktasamlidpconfigpropertyssodestination) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#sso_destination SamlIdp#sso_destination}. |
+| [`status`](#cdktfprovideroktasamlidpconfigpropertystatus) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#status SamlIdp#status}. |
+| [`subjectFilter`](#cdktfprovideroktasamlidpconfigpropertysubjectfilter) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#subject_filter SamlIdp#subject_filter}. |
+| [`subjectFormat`](#cdktfprovideroktasamlidpconfigpropertysubjectformat) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#subject_format SamlIdp#subject_format}. |
+| [`subjectMatchAttribute`](#cdktfprovideroktasamlidpconfigpropertysubjectmatchattribute) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#subject_match_attribute SamlIdp#subject_match_attribute}. |
+| [`subjectMatchType`](#cdktfprovideroktasamlidpconfigpropertysubjectmatchtype) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#subject_match_type SamlIdp#subject_match_type}. |
+| [`suspendedAction`](#cdktfprovideroktasamlidpconfigpropertysuspendedaction) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#suspended_action SamlIdp#suspended_action}. |
+| [`usernameTemplate`](#cdktfprovideroktasamlidpconfigpropertyusernametemplate) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#username_template SamlIdp#username_template}. |
 
 ---
 
@@ -84428,7 +84428,7 @@ public readonly issuer: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#issuer SamlIdp#issuer}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#issuer SamlIdp#issuer}.
 
 ---
 
@@ -84440,7 +84440,7 @@ public readonly kid: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#kid SamlIdp#kid}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#kid SamlIdp#kid}.
 
 ---
 
@@ -84454,7 +84454,7 @@ public readonly name: string;
 
 Name of the IdP.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#name SamlIdp#name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#name SamlIdp#name}
 
 ---
 
@@ -84466,7 +84466,7 @@ public readonly ssoUrl: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#sso_url SamlIdp#sso_url}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#sso_url SamlIdp#sso_url}.
 
 ---
 
@@ -84478,7 +84478,7 @@ public readonly accountLinkAction: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#account_link_action SamlIdp#account_link_action}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#account_link_action SamlIdp#account_link_action}.
 
 ---
 
@@ -84490,7 +84490,7 @@ public readonly accountLinkGroupInclude: string[];
 
 - *Type:* `string`[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#account_link_group_include SamlIdp#account_link_group_include}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#account_link_group_include SamlIdp#account_link_group_include}.
 
 ---
 
@@ -84502,7 +84502,7 @@ public readonly acsBinding: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#acs_binding SamlIdp#acs_binding}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#acs_binding SamlIdp#acs_binding}.
 
 ---
 
@@ -84514,7 +84514,7 @@ public readonly acsType: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#acs_type SamlIdp#acs_type}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#acs_type SamlIdp#acs_type}.
 
 ---
 
@@ -84526,7 +84526,7 @@ public readonly deprovisionedAction: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#deprovisioned_action SamlIdp#deprovisioned_action}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#deprovisioned_action SamlIdp#deprovisioned_action}.
 
 ---
 
@@ -84538,7 +84538,7 @@ public readonly groupsAction: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#groups_action SamlIdp#groups_action}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#groups_action SamlIdp#groups_action}.
 
 ---
 
@@ -84550,7 +84550,7 @@ public readonly groupsAssignment: string[];
 
 - *Type:* `string`[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#groups_assignment SamlIdp#groups_assignment}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#groups_assignment SamlIdp#groups_assignment}.
 
 ---
 
@@ -84562,7 +84562,7 @@ public readonly groupsAttribute: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#groups_attribute SamlIdp#groups_attribute}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#groups_attribute SamlIdp#groups_attribute}.
 
 ---
 
@@ -84574,7 +84574,7 @@ public readonly groupsFilter: string[];
 
 - *Type:* `string`[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#groups_filter SamlIdp#groups_filter}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#groups_filter SamlIdp#groups_filter}.
 
 ---
 
@@ -84588,7 +84588,7 @@ public readonly issuerMode: string;
 
 Indicates whether Okta uses the original Okta org domain URL, or a custom domain URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#issuer_mode SamlIdp#issuer_mode}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#issuer_mode SamlIdp#issuer_mode}
 
 ---
 
@@ -84600,7 +84600,7 @@ public readonly maxClockSkew: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#max_clock_skew SamlIdp#max_clock_skew}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#max_clock_skew SamlIdp#max_clock_skew}.
 
 ---
 
@@ -84612,7 +84612,7 @@ public readonly nameFormat: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#name_format SamlIdp#name_format}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#name_format SamlIdp#name_format}.
 
 ---
 
@@ -84624,7 +84624,7 @@ public readonly profileMaster: boolean | IResolvable;
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#profile_master SamlIdp#profile_master}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#profile_master SamlIdp#profile_master}.
 
 ---
 
@@ -84636,7 +84636,7 @@ public readonly provisioningAction: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#provisioning_action SamlIdp#provisioning_action}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#provisioning_action SamlIdp#provisioning_action}.
 
 ---
 
@@ -84650,7 +84650,7 @@ public readonly requestSignatureAlgorithm: string;
 
 algorithm to use to sign requests.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#request_signature_algorithm SamlIdp#request_signature_algorithm}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#request_signature_algorithm SamlIdp#request_signature_algorithm}
 
 ---
 
@@ -84664,7 +84664,7 @@ public readonly requestSignatureScope: string;
 
 algorithm to use to sign response.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#request_signature_scope SamlIdp#request_signature_scope}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#request_signature_scope SamlIdp#request_signature_scope}
 
 ---
 
@@ -84678,7 +84678,7 @@ public readonly responseSignatureAlgorithm: string;
 
 algorithm to use to sign requests.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#response_signature_algorithm SamlIdp#response_signature_algorithm}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#response_signature_algorithm SamlIdp#response_signature_algorithm}
 
 ---
 
@@ -84692,7 +84692,7 @@ public readonly responseSignatureScope: string;
 
 algorithm to use to sign response.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#response_signature_scope SamlIdp#response_signature_scope}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#response_signature_scope SamlIdp#response_signature_scope}
 
 ---
 
@@ -84704,7 +84704,7 @@ public readonly ssoBinding: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#sso_binding SamlIdp#sso_binding}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#sso_binding SamlIdp#sso_binding}.
 
 ---
 
@@ -84716,7 +84716,7 @@ public readonly ssoDestination: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#sso_destination SamlIdp#sso_destination}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#sso_destination SamlIdp#sso_destination}.
 
 ---
 
@@ -84728,7 +84728,7 @@ public readonly status: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#status SamlIdp#status}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#status SamlIdp#status}.
 
 ---
 
@@ -84740,7 +84740,7 @@ public readonly subjectFilter: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#subject_filter SamlIdp#subject_filter}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#subject_filter SamlIdp#subject_filter}.
 
 ---
 
@@ -84752,7 +84752,7 @@ public readonly subjectFormat: string[];
 
 - *Type:* `string`[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#subject_format SamlIdp#subject_format}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#subject_format SamlIdp#subject_format}.
 
 ---
 
@@ -84764,7 +84764,7 @@ public readonly subjectMatchAttribute: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#subject_match_attribute SamlIdp#subject_match_attribute}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#subject_match_attribute SamlIdp#subject_match_attribute}.
 
 ---
 
@@ -84776,7 +84776,7 @@ public readonly subjectMatchType: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#subject_match_type SamlIdp#subject_match_type}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#subject_match_type SamlIdp#subject_match_type}.
 
 ---
 
@@ -84788,7 +84788,7 @@ public readonly suspendedAction: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#suspended_action SamlIdp#suspended_action}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#suspended_action SamlIdp#suspended_action}.
 
 ---
 
@@ -84800,7 +84800,7 @@ public readonly usernameTemplate: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#username_template SamlIdp#username_template}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#username_template SamlIdp#username_template}.
 
 ---
 
@@ -84876,7 +84876,7 @@ public readonly x5C: string[];
 
 base64-encoded X.509 certificate chain with DER encoding.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp_signing_key.html#x5c SamlIdpSigningKey#x5c}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp_signing_key#x5c SamlIdpSigningKey#x5c}
 
 ---
 
@@ -84984,7 +84984,7 @@ public readonly label: string;
 
 Pretty name of app.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/secure_password_store_app.html#label SecurePasswordStoreApp#label}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/secure_password_store_app#label SecurePasswordStoreApp#label}
 
 ---
 
@@ -84998,7 +84998,7 @@ public readonly passwordField: string;
 
 Login password field.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/secure_password_store_app.html#password_field SecurePasswordStoreApp#password_field}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/secure_password_store_app#password_field SecurePasswordStoreApp#password_field}
 
 ---
 
@@ -85012,7 +85012,7 @@ public readonly url: string;
 
 Login URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/secure_password_store_app.html#url SecurePasswordStoreApp#url}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/secure_password_store_app#url SecurePasswordStoreApp#url}
 
 ---
 
@@ -85026,7 +85026,7 @@ public readonly usernameField: string;
 
 Login username field.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/secure_password_store_app.html#username_field SecurePasswordStoreApp#username_field}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/secure_password_store_app#username_field SecurePasswordStoreApp#username_field}
 
 ---
 
@@ -85040,7 +85040,7 @@ public readonly accessibilityErrorRedirectUrl: string;
 
 Custom error page URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/secure_password_store_app.html#accessibility_error_redirect_url SecurePasswordStoreApp#accessibility_error_redirect_url}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/secure_password_store_app#accessibility_error_redirect_url SecurePasswordStoreApp#accessibility_error_redirect_url}
 
 ---
 
@@ -85054,7 +85054,7 @@ public readonly accessibilityLoginRedirectUrl: string;
 
 Custom login page URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/secure_password_store_app.html#accessibility_login_redirect_url SecurePasswordStoreApp#accessibility_login_redirect_url}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/secure_password_store_app#accessibility_login_redirect_url SecurePasswordStoreApp#accessibility_login_redirect_url}
 
 ---
 
@@ -85068,7 +85068,7 @@ public readonly accessibilitySelfService: boolean | IResolvable;
 
 Enable self service.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/secure_password_store_app.html#accessibility_self_service SecurePasswordStoreApp#accessibility_self_service}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/secure_password_store_app#accessibility_self_service SecurePasswordStoreApp#accessibility_self_service}
 
 ---
 
@@ -85082,7 +85082,7 @@ public readonly adminNote: string;
 
 Application notes for admins.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/secure_password_store_app.html#admin_note SecurePasswordStoreApp#admin_note}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/secure_password_store_app#admin_note SecurePasswordStoreApp#admin_note}
 
 ---
 
@@ -85096,7 +85096,7 @@ public readonly appLinksJson: string;
 
 Displays specific appLinks for the app.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/secure_password_store_app.html#app_links_json SecurePasswordStoreApp#app_links_json}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/secure_password_store_app#app_links_json SecurePasswordStoreApp#app_links_json}
 
 ---
 
@@ -85110,7 +85110,7 @@ public readonly autoSubmitToolbar: boolean | IResolvable;
 
 Display auto submit toolbar.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/secure_password_store_app.html#auto_submit_toolbar SecurePasswordStoreApp#auto_submit_toolbar}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/secure_password_store_app#auto_submit_toolbar SecurePasswordStoreApp#auto_submit_toolbar}
 
 ---
 
@@ -85124,7 +85124,7 @@ public readonly credentialsScheme: string;
 
 Application credentials scheme.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/secure_password_store_app.html#credentials_scheme SecurePasswordStoreApp#credentials_scheme}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/secure_password_store_app#credentials_scheme SecurePasswordStoreApp#credentials_scheme}
 
 ---
 
@@ -85138,7 +85138,7 @@ public readonly enduserNote: string;
 
 Application notes for end users.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/secure_password_store_app.html#enduser_note SecurePasswordStoreApp#enduser_note}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/secure_password_store_app#enduser_note SecurePasswordStoreApp#enduser_note}
 
 ---
 
@@ -85152,7 +85152,7 @@ public readonly groups: string[];
 
 Groups associated with the application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/secure_password_store_app.html#groups SecurePasswordStoreApp#groups}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/secure_password_store_app#groups SecurePasswordStoreApp#groups}
 
 ---
 
@@ -85166,7 +85166,7 @@ public readonly hideIos: boolean | IResolvable;
 
 Do not display application icon on mobile app.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/secure_password_store_app.html#hide_ios SecurePasswordStoreApp#hide_ios}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/secure_password_store_app#hide_ios SecurePasswordStoreApp#hide_ios}
 
 ---
 
@@ -85180,7 +85180,7 @@ public readonly hideWeb: boolean | IResolvable;
 
 Do not display application icon to users.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/secure_password_store_app.html#hide_web SecurePasswordStoreApp#hide_web}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/secure_password_store_app#hide_web SecurePasswordStoreApp#hide_web}
 
 ---
 
@@ -85194,7 +85194,7 @@ public readonly logo: string;
 
 Local path to logo of the application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/secure_password_store_app.html#logo SecurePasswordStoreApp#logo}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/secure_password_store_app#logo SecurePasswordStoreApp#logo}
 
 ---
 
@@ -85208,7 +85208,7 @@ public readonly optionalField1: string;
 
 Name of optional param in the login form.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/secure_password_store_app.html#optional_field1 SecurePasswordStoreApp#optional_field1}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/secure_password_store_app#optional_field1 SecurePasswordStoreApp#optional_field1}
 
 ---
 
@@ -85222,7 +85222,7 @@ public readonly optionalField1Value: string;
 
 Name of optional value in login form.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/secure_password_store_app.html#optional_field1_value SecurePasswordStoreApp#optional_field1_value}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/secure_password_store_app#optional_field1_value SecurePasswordStoreApp#optional_field1_value}
 
 ---
 
@@ -85236,7 +85236,7 @@ public readonly optionalField2: string;
 
 Name of optional param in the login form.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/secure_password_store_app.html#optional_field2 SecurePasswordStoreApp#optional_field2}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/secure_password_store_app#optional_field2 SecurePasswordStoreApp#optional_field2}
 
 ---
 
@@ -85250,7 +85250,7 @@ public readonly optionalField2Value: string;
 
 Name of optional value in login form.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/secure_password_store_app.html#optional_field2_value SecurePasswordStoreApp#optional_field2_value}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/secure_password_store_app#optional_field2_value SecurePasswordStoreApp#optional_field2_value}
 
 ---
 
@@ -85264,7 +85264,7 @@ public readonly optionalField3: string;
 
 Name of optional param in the login form.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/secure_password_store_app.html#optional_field3 SecurePasswordStoreApp#optional_field3}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/secure_password_store_app#optional_field3 SecurePasswordStoreApp#optional_field3}
 
 ---
 
@@ -85278,7 +85278,7 @@ public readonly optionalField3Value: string;
 
 Name of optional value in login form.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/secure_password_store_app.html#optional_field3_value SecurePasswordStoreApp#optional_field3_value}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/secure_password_store_app#optional_field3_value SecurePasswordStoreApp#optional_field3_value}
 
 ---
 
@@ -85292,7 +85292,7 @@ public readonly revealPassword: boolean | IResolvable;
 
 Allow user to reveal password.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/secure_password_store_app.html#reveal_password SecurePasswordStoreApp#reveal_password}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/secure_password_store_app#reveal_password SecurePasswordStoreApp#reveal_password}
 
 ---
 
@@ -85306,7 +85306,7 @@ public readonly sharedPassword: string;
 
 Shared password, required for certain schemes.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/secure_password_store_app.html#shared_password SecurePasswordStoreApp#shared_password}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/secure_password_store_app#shared_password SecurePasswordStoreApp#shared_password}
 
 ---
 
@@ -85320,7 +85320,7 @@ public readonly sharedUsername: string;
 
 Shared username, required for certain schemes.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/secure_password_store_app.html#shared_username SecurePasswordStoreApp#shared_username}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/secure_password_store_app#shared_username SecurePasswordStoreApp#shared_username}
 
 ---
 
@@ -85334,7 +85334,7 @@ public readonly skipGroups: boolean | IResolvable;
 
 Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/secure_password_store_app.html#skip_groups SecurePasswordStoreApp#skip_groups}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/secure_password_store_app#skip_groups SecurePasswordStoreApp#skip_groups}
 
 ---
 
@@ -85348,7 +85348,7 @@ public readonly skipUsers: boolean | IResolvable;
 
 Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/secure_password_store_app.html#skip_users SecurePasswordStoreApp#skip_users}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/secure_password_store_app#skip_users SecurePasswordStoreApp#skip_users}
 
 ---
 
@@ -85362,7 +85362,7 @@ public readonly status: string;
 
 Status of application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/secure_password_store_app.html#status SecurePasswordStoreApp#status}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/secure_password_store_app#status SecurePasswordStoreApp#status}
 
 ---
 
@@ -85376,7 +85376,7 @@ public readonly userNameTemplate: string;
 
 Username template.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/secure_password_store_app.html#user_name_template SecurePasswordStoreApp#user_name_template}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/secure_password_store_app#user_name_template SecurePasswordStoreApp#user_name_template}
 
 ---
 
@@ -85390,7 +85390,7 @@ public readonly userNameTemplatePushStatus: string;
 
 Push username on update.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/secure_password_store_app.html#user_name_template_push_status SecurePasswordStoreApp#user_name_template_push_status}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/secure_password_store_app#user_name_template_push_status SecurePasswordStoreApp#user_name_template_push_status}
 
 ---
 
@@ -85404,7 +85404,7 @@ public readonly userNameTemplateSuffix: string;
 
 Username template suffix.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/secure_password_store_app.html#user_name_template_suffix SecurePasswordStoreApp#user_name_template_suffix}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/secure_password_store_app#user_name_template_suffix SecurePasswordStoreApp#user_name_template_suffix}
 
 ---
 
@@ -85418,7 +85418,7 @@ public readonly userNameTemplateType: string;
 
 Username template type.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/secure_password_store_app.html#user_name_template_type SecurePasswordStoreApp#user_name_template_type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/secure_password_store_app#user_name_template_type SecurePasswordStoreApp#user_name_template_type}
 
 ---
 
@@ -85432,7 +85432,7 @@ public readonly users: SecurePasswordStoreAppUsers[];
 
 users block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/secure_password_store_app.html#users SecurePasswordStoreApp#users}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/secure_password_store_app#users SecurePasswordStoreApp#users}
 
 ---
 
@@ -85466,7 +85466,7 @@ public readonly id: string;
 
 User ID.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/secure_password_store_app.html#id SecurePasswordStoreApp#id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/secure_password_store_app#id SecurePasswordStoreApp#id}
 
 ---
 
@@ -85480,7 +85480,7 @@ public readonly password: string;
 
 Password for user application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/secure_password_store_app.html#password SecurePasswordStoreApp#password}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/secure_password_store_app#password SecurePasswordStoreApp#password}
 
 ---
 
@@ -85494,7 +85494,7 @@ public readonly username: string;
 
 Username for user.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/secure_password_store_app.html#username SecurePasswordStoreApp#username}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/secure_password_store_app#username SecurePasswordStoreApp#username}
 
 ---
 
@@ -85574,7 +85574,7 @@ public readonly reportSuspiciousActivityEnabled: boolean | IResolvable;
 
 Notifies end users about suspicious or unrecognized activity from their account.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/security_notification_emails.html#report_suspicious_activity_enabled SecurityNotificationEmails#report_suspicious_activity_enabled}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/security_notification_emails#report_suspicious_activity_enabled SecurityNotificationEmails#report_suspicious_activity_enabled}
 
 ---
 
@@ -85588,7 +85588,7 @@ public readonly sendEmailForFactorEnrollmentEnabled: boolean | IResolvable;
 
 Notifies end users of any activity on their account related to MFA factor enrollment.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/security_notification_emails.html#send_email_for_factor_enrollment_enabled SecurityNotificationEmails#send_email_for_factor_enrollment_enabled}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/security_notification_emails#send_email_for_factor_enrollment_enabled SecurityNotificationEmails#send_email_for_factor_enrollment_enabled}
 
 ---
 
@@ -85602,7 +85602,7 @@ public readonly sendEmailForFactorResetEnabled: boolean | IResolvable;
 
 Notifies end users that one or more factors have been reset for their account.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/security_notification_emails.html#send_email_for_factor_reset_enabled SecurityNotificationEmails#send_email_for_factor_reset_enabled}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/security_notification_emails#send_email_for_factor_reset_enabled SecurityNotificationEmails#send_email_for_factor_reset_enabled}
 
 ---
 
@@ -85616,7 +85616,7 @@ public readonly sendEmailForNewDeviceEnabled: boolean | IResolvable;
 
 Notifies end users about new sign-on activity.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/security_notification_emails.html#send_email_for_new_device_enabled SecurityNotificationEmails#send_email_for_new_device_enabled}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/security_notification_emails#send_email_for_new_device_enabled SecurityNotificationEmails#send_email_for_new_device_enabled}
 
 ---
 
@@ -85630,7 +85630,7 @@ public readonly sendEmailForPasswordChangedEnabled: boolean | IResolvable;
 
 Notifies end users that the password for their account has changed.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/security_notification_emails.html#send_email_for_password_changed_enabled SecurityNotificationEmails#send_email_for_password_changed_enabled}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/security_notification_emails#send_email_for_password_changed_enabled SecurityNotificationEmails#send_email_for_password_changed_enabled}
 
 ---
 
@@ -85710,7 +85710,7 @@ public readonly name: string;
 
 Policy Name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy.html#name SignonPolicy#name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy#name SignonPolicy#name}
 
 ---
 
@@ -85724,7 +85724,7 @@ public readonly description: string;
 
 Policy Description.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy.html#description SignonPolicy#description}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy#description SignonPolicy#description}
 
 ---
 
@@ -85738,7 +85738,7 @@ public readonly groupsIncluded: string[];
 
 List of Group IDs to Include.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy.html#groups_included SignonPolicy#groups_included}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy#groups_included SignonPolicy#groups_included}
 
 ---
 
@@ -85752,7 +85752,7 @@ public readonly priority: number;
 
 Policy Priority, this attribute can be set to a valid priority.
 
-To avoid endless diff situation we error if an invalid priority is provided. API defaults it to the last (lowest) if not there.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy.html#priority SignonPolicy#priority}
+To avoid endless diff situation we error if an invalid priority is provided. API defaults it to the last (lowest) if not there.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy#priority SignonPolicy#priority}
 
 ---
 
@@ -85766,7 +85766,7 @@ public readonly status: string;
 
 Policy Status: ACTIVE or INACTIVE.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy.html#status SignonPolicy#status}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy#status SignonPolicy#status}
 
 ---
 
@@ -85863,7 +85863,7 @@ public readonly name: string;
 
 Policy Rule Name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule.html#name SignonPolicyRule#name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule#name SignonPolicyRule#name}
 
 ---
 
@@ -85877,7 +85877,7 @@ public readonly access: string;
 
 Allow or deny access based on the rule conditions: ALLOW, DENY or CHALLENGE.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule.html#access SignonPolicyRule#access}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule#access SignonPolicyRule#access}
 
 ---
 
@@ -85891,7 +85891,7 @@ public readonly authtype: string;
 
 Authentication entrypoint: ANY, RADIUS or LDAP_INTERFACE.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule.html#authtype SignonPolicyRule#authtype}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule#authtype SignonPolicyRule#authtype}
 
 ---
 
@@ -85905,7 +85905,7 @@ public readonly behaviors: string[];
 
 List of behavior IDs.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule.html#behaviors SignonPolicyRule#behaviors}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule#behaviors SignonPolicyRule#behaviors}
 
 ---
 
@@ -85919,7 +85919,7 @@ public readonly factorSequence: SignonPolicyRuleFactorSequence[];
 
 factor_sequence block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule.html#factor_sequence SignonPolicyRule#factor_sequence}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule#factor_sequence SignonPolicyRule#factor_sequence}
 
 ---
 
@@ -85933,7 +85933,7 @@ public readonly mfaLifetime: number;
 
 Elapsed time before the next MFA challenge.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule.html#mfa_lifetime SignonPolicyRule#mfa_lifetime}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule#mfa_lifetime SignonPolicyRule#mfa_lifetime}
 
 ---
 
@@ -85947,7 +85947,7 @@ public readonly mfaPrompt: string;
 
 Prompt for MFA based on the device used, a factor session lifetime, or every sign-on attempt: DEVICE, SESSION or ALWAYS.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule.html#mfa_prompt SignonPolicyRule#mfa_prompt}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule#mfa_prompt SignonPolicyRule#mfa_prompt}
 
 ---
 
@@ -85961,7 +85961,7 @@ public readonly mfaRememberDevice: boolean | IResolvable;
 
 Remember MFA device.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule.html#mfa_remember_device SignonPolicyRule#mfa_remember_device}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule#mfa_remember_device SignonPolicyRule#mfa_remember_device}
 
 ---
 
@@ -85975,7 +85975,7 @@ public readonly mfaRequired: boolean | IResolvable;
 
 Require MFA.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule.html#mfa_required SignonPolicyRule#mfa_required}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule#mfa_required SignonPolicyRule#mfa_required}
 
 ---
 
@@ -85989,7 +85989,7 @@ public readonly networkConnection: string;
 
 Network selection mode: ANYWHERE, ZONE, ON_NETWORK, or OFF_NETWORK.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule.html#network_connection SignonPolicyRule#network_connection}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule#network_connection SignonPolicyRule#network_connection}
 
 ---
 
@@ -86003,7 +86003,7 @@ public readonly networkExcludes: string[];
 
 The zones to exclude.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule.html#network_excludes SignonPolicyRule#network_excludes}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule#network_excludes SignonPolicyRule#network_excludes}
 
 ---
 
@@ -86017,7 +86017,7 @@ public readonly networkIncludes: string[];
 
 The zones to include.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule.html#network_includes SignonPolicyRule#network_includes}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule#network_includes SignonPolicyRule#network_includes}
 
 ---
 
@@ -86031,7 +86031,7 @@ public readonly policyid: string;
 
 Policy ID of the Rule.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule.html#policyid SignonPolicyRule#policyid}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule#policyid SignonPolicyRule#policyid}
 
 ---
 
@@ -86045,7 +86045,7 @@ public readonly policyId: string;
 
 Policy ID of the Rule.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule.html#policy_id SignonPolicyRule#policy_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule#policy_id SignonPolicyRule#policy_id}
 
 ---
 
@@ -86059,7 +86059,7 @@ public readonly primaryFactor: string;
 
 Primary factor.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule.html#primary_factor SignonPolicyRule#primary_factor}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule#primary_factor SignonPolicyRule#primary_factor}
 
 ---
 
@@ -86073,7 +86073,7 @@ public readonly priority: number;
 
 Policy Rule Priority, this attribute can be set to a valid priority.
 
-To avoid endless diff situation we error if an invalid priority is provided. API defaults it to the last (lowest) if not there.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule.html#priority SignonPolicyRule#priority}
+To avoid endless diff situation we error if an invalid priority is provided. API defaults it to the last (lowest) if not there.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule#priority SignonPolicyRule#priority}
 
 ---
 
@@ -86087,7 +86087,7 @@ public readonly riscLevel: string;
 
 Risc level: ANY, LOW, MEDIUM or HIGH.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule.html#risc_level SignonPolicyRule#risc_level}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule#risc_level SignonPolicyRule#risc_level}
 
 ---
 
@@ -86101,7 +86101,7 @@ public readonly sessionIdle: number;
 
 Max minutes a session can be idle.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule.html#session_idle SignonPolicyRule#session_idle}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule#session_idle SignonPolicyRule#session_idle}
 
 ---
 
@@ -86115,7 +86115,7 @@ public readonly sessionLifetime: number;
 
 Max minutes a session is active: Disable = 0.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule.html#session_lifetime SignonPolicyRule#session_lifetime}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule#session_lifetime SignonPolicyRule#session_lifetime}
 
 ---
 
@@ -86129,7 +86129,7 @@ public readonly sessionPersistent: boolean | IResolvable;
 
 Whether session cookies will last across browser sessions. Okta Administrators can never have persistent session cookies.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule.html#session_persistent SignonPolicyRule#session_persistent}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule#session_persistent SignonPolicyRule#session_persistent}
 
 ---
 
@@ -86143,7 +86143,7 @@ public readonly status: string;
 
 Policy Rule Status: ACTIVE or INACTIVE.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule.html#status SignonPolicyRule#status}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule#status SignonPolicyRule#status}
 
 ---
 
@@ -86157,7 +86157,7 @@ public readonly usersExcluded: string[];
 
 Set of User IDs to Exclude.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule.html#users_excluded SignonPolicyRule#users_excluded}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule#users_excluded SignonPolicyRule#users_excluded}
 
 ---
 
@@ -86191,7 +86191,7 @@ public readonly primaryCriteriaFactorType: string;
 
 Type of a Factor.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule.html#primary_criteria_factor_type SignonPolicyRule#primary_criteria_factor_type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule#primary_criteria_factor_type SignonPolicyRule#primary_criteria_factor_type}
 
 ---
 
@@ -86205,7 +86205,7 @@ public readonly primaryCriteriaProvider: string;
 
 Factor provider.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule.html#primary_criteria_provider SignonPolicyRule#primary_criteria_provider}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule#primary_criteria_provider SignonPolicyRule#primary_criteria_provider}
 
 ---
 
@@ -86219,7 +86219,7 @@ public readonly secondaryCriteria: SignonPolicyRuleFactorSequenceSecondaryCriter
 
 secondary_criteria block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule.html#secondary_criteria SignonPolicyRule#secondary_criteria}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule#secondary_criteria SignonPolicyRule#secondary_criteria}
 
 ---
 
@@ -86252,7 +86252,7 @@ public readonly factorType: string;
 
 Type of a Factor.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule.html#factor_type SignonPolicyRule#factor_type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule#factor_type SignonPolicyRule#factor_type}
 
 ---
 
@@ -86266,7 +86266,7 @@ public readonly provider: string;
 
 Factor provider.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule.html#provider SignonPolicyRule#provider}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule#provider SignonPolicyRule#provider}
 
 ---
 
@@ -86289,36 +86289,36 @@ const socialIdpConfig: SocialIdpConfig = { ... }
 | [`lifecycle`](#cdktfprovideroktasocialidpconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktasocialidpconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
 | [`name`](#cdktfprovideroktasocialidpconfigpropertyname)<span title="Required">*</span> | `string` | Name of the IdP. |
-| [`scopes`](#cdktfprovideroktasocialidpconfigpropertyscopes)<span title="Required">*</span> | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#scopes SocialIdp#scopes}. |
-| [`type`](#cdktfprovideroktasocialidpconfigpropertytype)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#type SocialIdp#type}. |
-| [`accountLinkAction`](#cdktfprovideroktasocialidpconfigpropertyaccountlinkaction) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#account_link_action SocialIdp#account_link_action}. |
-| [`accountLinkGroupInclude`](#cdktfprovideroktasocialidpconfigpropertyaccountlinkgroupinclude) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#account_link_group_include SocialIdp#account_link_group_include}. |
+| [`scopes`](#cdktfprovideroktasocialidpconfigpropertyscopes)<span title="Required">*</span> | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#scopes SocialIdp#scopes}. |
+| [`type`](#cdktfprovideroktasocialidpconfigpropertytype)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#type SocialIdp#type}. |
+| [`accountLinkAction`](#cdktfprovideroktasocialidpconfigpropertyaccountlinkaction) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#account_link_action SocialIdp#account_link_action}. |
+| [`accountLinkGroupInclude`](#cdktfprovideroktasocialidpconfigpropertyaccountlinkgroupinclude) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#account_link_group_include SocialIdp#account_link_group_include}. |
 | [`appleKid`](#cdktfprovideroktasocialidpconfigpropertyapplekid) | `string` | The Key ID that you obtained from Apple when you created the private key for the client. |
 | [`applePrivateKey`](#cdktfprovideroktasocialidpconfigpropertyappleprivatekey) | `string` | The PKCS #8 encoded private key that you created for the client and downloaded from Apple. |
 | [`appleTeamId`](#cdktfprovideroktasocialidpconfigpropertyappleteamid) | `string` | The Team ID associated with your Apple developer account. |
-| [`clientId`](#cdktfprovideroktasocialidpconfigpropertyclientid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#client_id SocialIdp#client_id}. |
-| [`clientSecret`](#cdktfprovideroktasocialidpconfigpropertyclientsecret) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#client_secret SocialIdp#client_secret}. |
-| [`deprovisionedAction`](#cdktfprovideroktasocialidpconfigpropertydeprovisionedaction) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#deprovisioned_action SocialIdp#deprovisioned_action}. |
-| [`groupsAction`](#cdktfprovideroktasocialidpconfigpropertygroupsaction) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#groups_action SocialIdp#groups_action}. |
-| [`groupsAssignment`](#cdktfprovideroktasocialidpconfigpropertygroupsassignment) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#groups_assignment SocialIdp#groups_assignment}. |
-| [`groupsAttribute`](#cdktfprovideroktasocialidpconfigpropertygroupsattribute) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#groups_attribute SocialIdp#groups_attribute}. |
-| [`groupsFilter`](#cdktfprovideroktasocialidpconfigpropertygroupsfilter) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#groups_filter SocialIdp#groups_filter}. |
+| [`clientId`](#cdktfprovideroktasocialidpconfigpropertyclientid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#client_id SocialIdp#client_id}. |
+| [`clientSecret`](#cdktfprovideroktasocialidpconfigpropertyclientsecret) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#client_secret SocialIdp#client_secret}. |
+| [`deprovisionedAction`](#cdktfprovideroktasocialidpconfigpropertydeprovisionedaction) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#deprovisioned_action SocialIdp#deprovisioned_action}. |
+| [`groupsAction`](#cdktfprovideroktasocialidpconfigpropertygroupsaction) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#groups_action SocialIdp#groups_action}. |
+| [`groupsAssignment`](#cdktfprovideroktasocialidpconfigpropertygroupsassignment) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#groups_assignment SocialIdp#groups_assignment}. |
+| [`groupsAttribute`](#cdktfprovideroktasocialidpconfigpropertygroupsattribute) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#groups_attribute SocialIdp#groups_attribute}. |
+| [`groupsFilter`](#cdktfprovideroktasocialidpconfigpropertygroupsfilter) | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#groups_filter SocialIdp#groups_filter}. |
 | [`issuerMode`](#cdktfprovideroktasocialidpconfigpropertyissuermode) | `string` | Indicates whether Okta uses the original Okta org domain URL, or a custom domain URL. |
-| [`matchAttribute`](#cdktfprovideroktasocialidpconfigpropertymatchattribute) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#match_attribute SocialIdp#match_attribute}. |
-| [`matchType`](#cdktfprovideroktasocialidpconfigpropertymatchtype) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#match_type SocialIdp#match_type}. |
-| [`maxClockSkew`](#cdktfprovideroktasocialidpconfigpropertymaxclockskew) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#max_clock_skew SocialIdp#max_clock_skew}. |
-| [`profileMaster`](#cdktfprovideroktasocialidpconfigpropertyprofilemaster) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#profile_master SocialIdp#profile_master}. |
-| [`protocolType`](#cdktfprovideroktasocialidpconfigpropertyprotocoltype) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#protocol_type SocialIdp#protocol_type}. |
-| [`provisioningAction`](#cdktfprovideroktasocialidpconfigpropertyprovisioningaction) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#provisioning_action SocialIdp#provisioning_action}. |
+| [`matchAttribute`](#cdktfprovideroktasocialidpconfigpropertymatchattribute) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#match_attribute SocialIdp#match_attribute}. |
+| [`matchType`](#cdktfprovideroktasocialidpconfigpropertymatchtype) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#match_type SocialIdp#match_type}. |
+| [`maxClockSkew`](#cdktfprovideroktasocialidpconfigpropertymaxclockskew) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#max_clock_skew SocialIdp#max_clock_skew}. |
+| [`profileMaster`](#cdktfprovideroktasocialidpconfigpropertyprofilemaster) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#profile_master SocialIdp#profile_master}. |
+| [`protocolType`](#cdktfprovideroktasocialidpconfigpropertyprotocoltype) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#protocol_type SocialIdp#protocol_type}. |
+| [`provisioningAction`](#cdktfprovideroktasocialidpconfigpropertyprovisioningaction) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#provisioning_action SocialIdp#provisioning_action}. |
 | [`requestSignatureAlgorithm`](#cdktfprovideroktasocialidpconfigpropertyrequestsignaturealgorithm) | `string` | algorithm to use to sign requests. |
 | [`requestSignatureScope`](#cdktfprovideroktasocialidpconfigpropertyrequestsignaturescope) | `string` | algorithm to use to sign response. |
 | [`responseSignatureAlgorithm`](#cdktfprovideroktasocialidpconfigpropertyresponsesignaturealgorithm) | `string` | algorithm to use to sign requests. |
 | [`responseSignatureScope`](#cdktfprovideroktasocialidpconfigpropertyresponsesignaturescope) | `string` | algorithm to use to sign response. |
-| [`status`](#cdktfprovideroktasocialidpconfigpropertystatus) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#status SocialIdp#status}. |
-| [`subjectMatchAttribute`](#cdktfprovideroktasocialidpconfigpropertysubjectmatchattribute) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#subject_match_attribute SocialIdp#subject_match_attribute}. |
-| [`subjectMatchType`](#cdktfprovideroktasocialidpconfigpropertysubjectmatchtype) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#subject_match_type SocialIdp#subject_match_type}. |
-| [`suspendedAction`](#cdktfprovideroktasocialidpconfigpropertysuspendedaction) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#suspended_action SocialIdp#suspended_action}. |
-| [`usernameTemplate`](#cdktfprovideroktasocialidpconfigpropertyusernametemplate) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#username_template SocialIdp#username_template}. |
+| [`status`](#cdktfprovideroktasocialidpconfigpropertystatus) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#status SocialIdp#status}. |
+| [`subjectMatchAttribute`](#cdktfprovideroktasocialidpconfigpropertysubjectmatchattribute) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#subject_match_attribute SocialIdp#subject_match_attribute}. |
+| [`subjectMatchType`](#cdktfprovideroktasocialidpconfigpropertysubjectmatchtype) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#subject_match_type SocialIdp#subject_match_type}. |
+| [`suspendedAction`](#cdktfprovideroktasocialidpconfigpropertysuspendedaction) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#suspended_action SocialIdp#suspended_action}. |
+| [`usernameTemplate`](#cdktfprovideroktasocialidpconfigpropertyusernametemplate) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#username_template SocialIdp#username_template}. |
 
 ---
 
@@ -86372,7 +86372,7 @@ public readonly name: string;
 
 Name of the IdP.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#name SocialIdp#name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#name SocialIdp#name}
 
 ---
 
@@ -86384,7 +86384,7 @@ public readonly scopes: string[];
 
 - *Type:* `string`[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#scopes SocialIdp#scopes}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#scopes SocialIdp#scopes}.
 
 ---
 
@@ -86396,7 +86396,7 @@ public readonly type: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#type SocialIdp#type}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#type SocialIdp#type}.
 
 ---
 
@@ -86408,7 +86408,7 @@ public readonly accountLinkAction: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#account_link_action SocialIdp#account_link_action}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#account_link_action SocialIdp#account_link_action}.
 
 ---
 
@@ -86420,7 +86420,7 @@ public readonly accountLinkGroupInclude: string[];
 
 - *Type:* `string`[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#account_link_group_include SocialIdp#account_link_group_include}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#account_link_group_include SocialIdp#account_link_group_include}.
 
 ---
 
@@ -86434,7 +86434,7 @@ public readonly appleKid: string;
 
 The Key ID that you obtained from Apple when you created the private key for the client.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#apple_kid SocialIdp#apple_kid}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#apple_kid SocialIdp#apple_kid}
 
 ---
 
@@ -86448,7 +86448,7 @@ public readonly applePrivateKey: string;
 
 The PKCS #8 encoded private key that you created for the client and downloaded from Apple.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#apple_private_key SocialIdp#apple_private_key}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#apple_private_key SocialIdp#apple_private_key}
 
 ---
 
@@ -86462,7 +86462,7 @@ public readonly appleTeamId: string;
 
 The Team ID associated with your Apple developer account.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#apple_team_id SocialIdp#apple_team_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#apple_team_id SocialIdp#apple_team_id}
 
 ---
 
@@ -86474,7 +86474,7 @@ public readonly clientId: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#client_id SocialIdp#client_id}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#client_id SocialIdp#client_id}.
 
 ---
 
@@ -86486,7 +86486,7 @@ public readonly clientSecret: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#client_secret SocialIdp#client_secret}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#client_secret SocialIdp#client_secret}.
 
 ---
 
@@ -86498,7 +86498,7 @@ public readonly deprovisionedAction: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#deprovisioned_action SocialIdp#deprovisioned_action}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#deprovisioned_action SocialIdp#deprovisioned_action}.
 
 ---
 
@@ -86510,7 +86510,7 @@ public readonly groupsAction: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#groups_action SocialIdp#groups_action}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#groups_action SocialIdp#groups_action}.
 
 ---
 
@@ -86522,7 +86522,7 @@ public readonly groupsAssignment: string[];
 
 - *Type:* `string`[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#groups_assignment SocialIdp#groups_assignment}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#groups_assignment SocialIdp#groups_assignment}.
 
 ---
 
@@ -86534,7 +86534,7 @@ public readonly groupsAttribute: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#groups_attribute SocialIdp#groups_attribute}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#groups_attribute SocialIdp#groups_attribute}.
 
 ---
 
@@ -86546,7 +86546,7 @@ public readonly groupsFilter: string[];
 
 - *Type:* `string`[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#groups_filter SocialIdp#groups_filter}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#groups_filter SocialIdp#groups_filter}.
 
 ---
 
@@ -86560,7 +86560,7 @@ public readonly issuerMode: string;
 
 Indicates whether Okta uses the original Okta org domain URL, or a custom domain URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#issuer_mode SocialIdp#issuer_mode}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#issuer_mode SocialIdp#issuer_mode}
 
 ---
 
@@ -86572,7 +86572,7 @@ public readonly matchAttribute: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#match_attribute SocialIdp#match_attribute}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#match_attribute SocialIdp#match_attribute}.
 
 ---
 
@@ -86584,7 +86584,7 @@ public readonly matchType: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#match_type SocialIdp#match_type}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#match_type SocialIdp#match_type}.
 
 ---
 
@@ -86596,7 +86596,7 @@ public readonly maxClockSkew: number;
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#max_clock_skew SocialIdp#max_clock_skew}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#max_clock_skew SocialIdp#max_clock_skew}.
 
 ---
 
@@ -86608,7 +86608,7 @@ public readonly profileMaster: boolean | IResolvable;
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#profile_master SocialIdp#profile_master}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#profile_master SocialIdp#profile_master}.
 
 ---
 
@@ -86620,7 +86620,7 @@ public readonly protocolType: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#protocol_type SocialIdp#protocol_type}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#protocol_type SocialIdp#protocol_type}.
 
 ---
 
@@ -86632,7 +86632,7 @@ public readonly provisioningAction: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#provisioning_action SocialIdp#provisioning_action}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#provisioning_action SocialIdp#provisioning_action}.
 
 ---
 
@@ -86646,7 +86646,7 @@ public readonly requestSignatureAlgorithm: string;
 
 algorithm to use to sign requests.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#request_signature_algorithm SocialIdp#request_signature_algorithm}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#request_signature_algorithm SocialIdp#request_signature_algorithm}
 
 ---
 
@@ -86660,7 +86660,7 @@ public readonly requestSignatureScope: string;
 
 algorithm to use to sign response.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#request_signature_scope SocialIdp#request_signature_scope}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#request_signature_scope SocialIdp#request_signature_scope}
 
 ---
 
@@ -86674,7 +86674,7 @@ public readonly responseSignatureAlgorithm: string;
 
 algorithm to use to sign requests.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#response_signature_algorithm SocialIdp#response_signature_algorithm}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#response_signature_algorithm SocialIdp#response_signature_algorithm}
 
 ---
 
@@ -86688,7 +86688,7 @@ public readonly responseSignatureScope: string;
 
 algorithm to use to sign response.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#response_signature_scope SocialIdp#response_signature_scope}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#response_signature_scope SocialIdp#response_signature_scope}
 
 ---
 
@@ -86700,7 +86700,7 @@ public readonly status: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#status SocialIdp#status}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#status SocialIdp#status}.
 
 ---
 
@@ -86712,7 +86712,7 @@ public readonly subjectMatchAttribute: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#subject_match_attribute SocialIdp#subject_match_attribute}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#subject_match_attribute SocialIdp#subject_match_attribute}.
 
 ---
 
@@ -86724,7 +86724,7 @@ public readonly subjectMatchType: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#subject_match_type SocialIdp#subject_match_type}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#subject_match_type SocialIdp#subject_match_type}.
 
 ---
 
@@ -86736,7 +86736,7 @@ public readonly suspendedAction: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#suspended_action SocialIdp#suspended_action}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#suspended_action SocialIdp#suspended_action}.
 
 ---
 
@@ -86748,7 +86748,7 @@ public readonly usernameTemplate: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#username_template SocialIdp#username_template}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#username_template SocialIdp#username_template}.
 
 ---
 
@@ -86851,7 +86851,7 @@ public readonly label: string;
 
 Pretty name of app.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app.html#label SwaApp#label}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#label SwaApp#label}
 
 ---
 
@@ -86865,7 +86865,7 @@ public readonly accessibilityErrorRedirectUrl: string;
 
 Custom error page URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app.html#accessibility_error_redirect_url SwaApp#accessibility_error_redirect_url}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#accessibility_error_redirect_url SwaApp#accessibility_error_redirect_url}
 
 ---
 
@@ -86879,7 +86879,7 @@ public readonly accessibilityLoginRedirectUrl: string;
 
 Custom login page URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app.html#accessibility_login_redirect_url SwaApp#accessibility_login_redirect_url}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#accessibility_login_redirect_url SwaApp#accessibility_login_redirect_url}
 
 ---
 
@@ -86893,7 +86893,7 @@ public readonly accessibilitySelfService: boolean | IResolvable;
 
 Enable self service.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app.html#accessibility_self_service SwaApp#accessibility_self_service}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#accessibility_self_service SwaApp#accessibility_self_service}
 
 ---
 
@@ -86907,7 +86907,7 @@ public readonly adminNote: string;
 
 Application notes for admins.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app.html#admin_note SwaApp#admin_note}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#admin_note SwaApp#admin_note}
 
 ---
 
@@ -86921,7 +86921,7 @@ public readonly appLinksJson: string;
 
 Displays specific appLinks for the app.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app.html#app_links_json SwaApp#app_links_json}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#app_links_json SwaApp#app_links_json}
 
 ---
 
@@ -86935,7 +86935,7 @@ public readonly autoSubmitToolbar: boolean | IResolvable;
 
 Display auto submit toolbar.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app.html#auto_submit_toolbar SwaApp#auto_submit_toolbar}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#auto_submit_toolbar SwaApp#auto_submit_toolbar}
 
 ---
 
@@ -86949,7 +86949,7 @@ public readonly buttonField: string;
 
 Login button field.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app.html#button_field SwaApp#button_field}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#button_field SwaApp#button_field}
 
 ---
 
@@ -86963,7 +86963,7 @@ public readonly checkbox: string;
 
 CSS selector for the checkbox.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app.html#checkbox SwaApp#checkbox}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#checkbox SwaApp#checkbox}
 
 ---
 
@@ -86977,7 +86977,7 @@ public readonly enduserNote: string;
 
 Application notes for end users.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app.html#enduser_note SwaApp#enduser_note}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#enduser_note SwaApp#enduser_note}
 
 ---
 
@@ -86991,7 +86991,7 @@ public readonly groups: string[];
 
 Groups associated with the application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app.html#groups SwaApp#groups}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#groups SwaApp#groups}
 
 ---
 
@@ -87005,7 +87005,7 @@ public readonly hideIos: boolean | IResolvable;
 
 Do not display application icon on mobile app.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app.html#hide_ios SwaApp#hide_ios}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#hide_ios SwaApp#hide_ios}
 
 ---
 
@@ -87019,7 +87019,7 @@ public readonly hideWeb: boolean | IResolvable;
 
 Do not display application icon to users.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app.html#hide_web SwaApp#hide_web}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#hide_web SwaApp#hide_web}
 
 ---
 
@@ -87033,7 +87033,7 @@ public readonly logo: string;
 
 Local path to logo of the application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app.html#logo SwaApp#logo}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#logo SwaApp#logo}
 
 ---
 
@@ -87047,7 +87047,7 @@ public readonly passwordField: string;
 
 Login password field.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app.html#password_field SwaApp#password_field}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#password_field SwaApp#password_field}
 
 ---
 
@@ -87061,7 +87061,7 @@ public readonly preconfiguredApp: string;
 
 Preconfigured app name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app.html#preconfigured_app SwaApp#preconfigured_app}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#preconfigured_app SwaApp#preconfigured_app}
 
 ---
 
@@ -87075,7 +87075,7 @@ public readonly redirectUrl: string;
 
 If going to the login page URL redirects to another page, then enter that URL here.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app.html#redirect_url SwaApp#redirect_url}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#redirect_url SwaApp#redirect_url}
 
 ---
 
@@ -87089,7 +87089,7 @@ public readonly skipGroups: boolean | IResolvable;
 
 Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app.html#skip_groups SwaApp#skip_groups}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#skip_groups SwaApp#skip_groups}
 
 ---
 
@@ -87103,7 +87103,7 @@ public readonly skipUsers: boolean | IResolvable;
 
 Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app.html#skip_users SwaApp#skip_users}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#skip_users SwaApp#skip_users}
 
 ---
 
@@ -87117,7 +87117,7 @@ public readonly status: string;
 
 Status of application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app.html#status SwaApp#status}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#status SwaApp#status}
 
 ---
 
@@ -87131,7 +87131,7 @@ public readonly url: string;
 
 Login URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app.html#url SwaApp#url}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#url SwaApp#url}
 
 ---
 
@@ -87145,7 +87145,7 @@ public readonly urlRegex: string;
 
 A regex that further restricts URL to the specified regex.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app.html#url_regex SwaApp#url_regex}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#url_regex SwaApp#url_regex}
 
 ---
 
@@ -87159,7 +87159,7 @@ public readonly usernameField: string;
 
 Login username field.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app.html#username_field SwaApp#username_field}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#username_field SwaApp#username_field}
 
 ---
 
@@ -87173,7 +87173,7 @@ public readonly userNameTemplate: string;
 
 Username template.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app.html#user_name_template SwaApp#user_name_template}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#user_name_template SwaApp#user_name_template}
 
 ---
 
@@ -87187,7 +87187,7 @@ public readonly userNameTemplatePushStatus: string;
 
 Push username on update.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app.html#user_name_template_push_status SwaApp#user_name_template_push_status}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#user_name_template_push_status SwaApp#user_name_template_push_status}
 
 ---
 
@@ -87201,7 +87201,7 @@ public readonly userNameTemplateSuffix: string;
 
 Username template suffix.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app.html#user_name_template_suffix SwaApp#user_name_template_suffix}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#user_name_template_suffix SwaApp#user_name_template_suffix}
 
 ---
 
@@ -87215,7 +87215,7 @@ public readonly userNameTemplateType: string;
 
 Username template type.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app.html#user_name_template_type SwaApp#user_name_template_type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#user_name_template_type SwaApp#user_name_template_type}
 
 ---
 
@@ -87229,7 +87229,7 @@ public readonly users: SwaAppUsers[];
 
 users block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app.html#users SwaApp#users}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#users SwaApp#users}
 
 ---
 
@@ -87263,7 +87263,7 @@ public readonly id: string;
 
 User ID.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app.html#id SwaApp#id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#id SwaApp#id}
 
 ---
 
@@ -87277,7 +87277,7 @@ public readonly password: string;
 
 Password for user application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app.html#password SwaApp#password}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#password SwaApp#password}
 
 ---
 
@@ -87291,7 +87291,7 @@ public readonly username: string;
 
 Username for user.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app.html#username SwaApp#username}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#username SwaApp#username}
 
 ---
 
@@ -87315,7 +87315,7 @@ const templateEmailConfig: TemplateEmailConfig = { ... }
 | [`provider`](#cdktfprovideroktatemplateemailconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
 | [`translations`](#cdktfprovideroktatemplateemailconfigpropertytranslations)<span title="Required">*</span> | [`@cdktf/provider-okta.TemplateEmailTranslations`](#@cdktf/provider-okta.TemplateEmailTranslations)[] | translations block. |
 | [`type`](#cdktfprovideroktatemplateemailconfigpropertytype)<span title="Required">*</span> | `string` | Email template type. |
-| [`defaultLanguage`](#cdktfprovideroktatemplateemailconfigpropertydefaultlanguage) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/template_email.html#default_language TemplateEmail#default_language}. |
+| [`defaultLanguage`](#cdktfprovideroktatemplateemailconfigpropertydefaultlanguage) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/template_email#default_language TemplateEmail#default_language}. |
 
 ---
 
@@ -87369,7 +87369,7 @@ public readonly translations: TemplateEmailTranslations[];
 
 translations block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/template_email.html#translations TemplateEmail#translations}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/template_email#translations TemplateEmail#translations}
 
 ---
 
@@ -87383,7 +87383,7 @@ public readonly type: string;
 
 Email template type.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/template_email.html#type TemplateEmail#type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/template_email#type TemplateEmail#type}
 
 ---
 
@@ -87395,7 +87395,7 @@ public readonly defaultLanguage: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/template_email.html#default_language TemplateEmail#default_language}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/template_email#default_language TemplateEmail#default_language}.
 
 ---
 
@@ -87413,9 +87413,9 @@ const templateEmailTranslations: TemplateEmailTranslations = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`language`](#cdktfprovideroktatemplateemailtranslationspropertylanguage)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/template_email.html#language TemplateEmail#language}. |
-| [`subject`](#cdktfprovideroktatemplateemailtranslationspropertysubject)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/template_email.html#subject TemplateEmail#subject}. |
-| [`template`](#cdktfprovideroktatemplateemailtranslationspropertytemplate)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/template_email.html#template TemplateEmail#template}. |
+| [`language`](#cdktfprovideroktatemplateemailtranslationspropertylanguage)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/template_email#language TemplateEmail#language}. |
+| [`subject`](#cdktfprovideroktatemplateemailtranslationspropertysubject)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/template_email#subject TemplateEmail#subject}. |
+| [`template`](#cdktfprovideroktatemplateemailtranslationspropertytemplate)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/template_email#template TemplateEmail#template}. |
 
 ---
 
@@ -87427,7 +87427,7 @@ public readonly language: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/template_email.html#language TemplateEmail#language}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/template_email#language TemplateEmail#language}.
 
 ---
 
@@ -87439,7 +87439,7 @@ public readonly subject: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/template_email.html#subject TemplateEmail#subject}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/template_email#subject TemplateEmail#subject}.
 
 ---
 
@@ -87451,7 +87451,7 @@ public readonly template: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/template_email.html#template TemplateEmail#template}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/template_email#template TemplateEmail#template}.
 
 ---
 
@@ -87529,7 +87529,7 @@ public readonly template: string;
 
 SMS default template.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/template_sms.html#template TemplateSms#template}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/template_sms#template TemplateSms#template}
 
 ---
 
@@ -87543,7 +87543,7 @@ public readonly type: string;
 
 SMS template type.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/template_sms.html#type TemplateSms#type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/template_sms#type TemplateSms#type}
 
 ---
 
@@ -87557,7 +87557,7 @@ public readonly translations: TemplateSmsTranslations[];
 
 translations block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/template_sms.html#translations TemplateSms#translations}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/template_sms#translations TemplateSms#translations}
 
 ---
 
@@ -87575,8 +87575,8 @@ const templateSmsTranslations: TemplateSmsTranslations = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`language`](#cdktfprovideroktatemplatesmstranslationspropertylanguage)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/template_sms.html#language TemplateSms#language}. |
-| [`template`](#cdktfprovideroktatemplatesmstranslationspropertytemplate)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/template_sms.html#template TemplateSms#template}. |
+| [`language`](#cdktfprovideroktatemplatesmstranslationspropertylanguage)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/template_sms#language TemplateSms#language}. |
+| [`template`](#cdktfprovideroktatemplatesmstranslationspropertytemplate)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/template_sms#template TemplateSms#template}. |
 
 ---
 
@@ -87588,7 +87588,7 @@ public readonly language: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/template_sms.html#language TemplateSms#language}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/template_sms#language TemplateSms#language}.
 
 ---
 
@@ -87600,7 +87600,7 @@ public readonly template: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/template_sms.html#template TemplateSms#template}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/template_sms#template TemplateSms#template}.
 
 ---
 
@@ -87677,7 +87677,7 @@ public readonly action: string;
 
 Specifies how Okta responds to authentication requests from suspicious IPs.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/threat_insight_settings.html#action ThreatInsightSettings#action}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/threat_insight_settings#action ThreatInsightSettings#action}
 
 ---
 
@@ -87691,7 +87691,7 @@ public readonly networkExcludes: string[];
 
 List of Network Zone IDs to exclude to be not logged or blocked by Okta ThreatInsight and proceed to Sign On rules evaluation.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/threat_insight_settings.html#network_excludes ThreatInsightSettings#network_excludes}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/threat_insight_settings#network_excludes ThreatInsightSettings#network_excludes}
 
 ---
 
@@ -87797,7 +87797,7 @@ public readonly buttonSelector: string;
 
 Login button field CSS selector.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app.html#button_selector ThreeFieldApp#button_selector}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app#button_selector ThreeFieldApp#button_selector}
 
 ---
 
@@ -87811,7 +87811,7 @@ public readonly extraFieldSelector: string;
 
 Extra field CSS selector.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app.html#extra_field_selector ThreeFieldApp#extra_field_selector}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app#extra_field_selector ThreeFieldApp#extra_field_selector}
 
 ---
 
@@ -87825,7 +87825,7 @@ public readonly extraFieldValue: string;
 
 Value for extra form field.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app.html#extra_field_value ThreeFieldApp#extra_field_value}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app#extra_field_value ThreeFieldApp#extra_field_value}
 
 ---
 
@@ -87839,7 +87839,7 @@ public readonly label: string;
 
 Pretty name of app.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app.html#label ThreeFieldApp#label}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app#label ThreeFieldApp#label}
 
 ---
 
@@ -87853,7 +87853,7 @@ public readonly passwordSelector: string;
 
 Login password field CSS selector.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app.html#password_selector ThreeFieldApp#password_selector}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app#password_selector ThreeFieldApp#password_selector}
 
 ---
 
@@ -87867,7 +87867,7 @@ public readonly url: string;
 
 Login URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app.html#url ThreeFieldApp#url}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app#url ThreeFieldApp#url}
 
 ---
 
@@ -87881,7 +87881,7 @@ public readonly usernameSelector: string;
 
 Login username field CSS selector.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app.html#username_selector ThreeFieldApp#username_selector}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app#username_selector ThreeFieldApp#username_selector}
 
 ---
 
@@ -87895,7 +87895,7 @@ public readonly accessibilityErrorRedirectUrl: string;
 
 Custom error page URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app.html#accessibility_error_redirect_url ThreeFieldApp#accessibility_error_redirect_url}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app#accessibility_error_redirect_url ThreeFieldApp#accessibility_error_redirect_url}
 
 ---
 
@@ -87909,7 +87909,7 @@ public readonly accessibilityLoginRedirectUrl: string;
 
 Custom login page URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app.html#accessibility_login_redirect_url ThreeFieldApp#accessibility_login_redirect_url}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app#accessibility_login_redirect_url ThreeFieldApp#accessibility_login_redirect_url}
 
 ---
 
@@ -87923,7 +87923,7 @@ public readonly accessibilitySelfService: boolean | IResolvable;
 
 Enable self service.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app.html#accessibility_self_service ThreeFieldApp#accessibility_self_service}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app#accessibility_self_service ThreeFieldApp#accessibility_self_service}
 
 ---
 
@@ -87937,7 +87937,7 @@ public readonly adminNote: string;
 
 Application notes for admins.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app.html#admin_note ThreeFieldApp#admin_note}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app#admin_note ThreeFieldApp#admin_note}
 
 ---
 
@@ -87951,7 +87951,7 @@ public readonly appLinksJson: string;
 
 Displays specific appLinks for the app.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app.html#app_links_json ThreeFieldApp#app_links_json}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app#app_links_json ThreeFieldApp#app_links_json}
 
 ---
 
@@ -87965,7 +87965,7 @@ public readonly autoSubmitToolbar: boolean | IResolvable;
 
 Display auto submit toolbar.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app.html#auto_submit_toolbar ThreeFieldApp#auto_submit_toolbar}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app#auto_submit_toolbar ThreeFieldApp#auto_submit_toolbar}
 
 ---
 
@@ -87979,7 +87979,7 @@ public readonly credentialsScheme: string;
 
 Application credentials scheme.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app.html#credentials_scheme ThreeFieldApp#credentials_scheme}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app#credentials_scheme ThreeFieldApp#credentials_scheme}
 
 ---
 
@@ -87993,7 +87993,7 @@ public readonly enduserNote: string;
 
 Application notes for end users.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app.html#enduser_note ThreeFieldApp#enduser_note}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app#enduser_note ThreeFieldApp#enduser_note}
 
 ---
 
@@ -88007,7 +88007,7 @@ public readonly groups: string[];
 
 Groups associated with the application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app.html#groups ThreeFieldApp#groups}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app#groups ThreeFieldApp#groups}
 
 ---
 
@@ -88021,7 +88021,7 @@ public readonly hideIos: boolean | IResolvable;
 
 Do not display application icon on mobile app.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app.html#hide_ios ThreeFieldApp#hide_ios}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app#hide_ios ThreeFieldApp#hide_ios}
 
 ---
 
@@ -88035,7 +88035,7 @@ public readonly hideWeb: boolean | IResolvable;
 
 Do not display application icon to users.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app.html#hide_web ThreeFieldApp#hide_web}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app#hide_web ThreeFieldApp#hide_web}
 
 ---
 
@@ -88049,7 +88049,7 @@ public readonly logo: string;
 
 Local path to logo of the application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app.html#logo ThreeFieldApp#logo}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app#logo ThreeFieldApp#logo}
 
 ---
 
@@ -88063,7 +88063,7 @@ public readonly revealPassword: boolean | IResolvable;
 
 Allow user to reveal password.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app.html#reveal_password ThreeFieldApp#reveal_password}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app#reveal_password ThreeFieldApp#reveal_password}
 
 ---
 
@@ -88077,7 +88077,7 @@ public readonly sharedPassword: string;
 
 Shared password, required for certain schemes.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app.html#shared_password ThreeFieldApp#shared_password}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app#shared_password ThreeFieldApp#shared_password}
 
 ---
 
@@ -88091,7 +88091,7 @@ public readonly sharedUsername: string;
 
 Shared username, required for certain schemes.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app.html#shared_username ThreeFieldApp#shared_username}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app#shared_username ThreeFieldApp#shared_username}
 
 ---
 
@@ -88105,7 +88105,7 @@ public readonly skipGroups: boolean | IResolvable;
 
 Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app.html#skip_groups ThreeFieldApp#skip_groups}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app#skip_groups ThreeFieldApp#skip_groups}
 
 ---
 
@@ -88119,7 +88119,7 @@ public readonly skipUsers: boolean | IResolvable;
 
 Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app.html#skip_users ThreeFieldApp#skip_users}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app#skip_users ThreeFieldApp#skip_users}
 
 ---
 
@@ -88133,7 +88133,7 @@ public readonly status: string;
 
 Status of application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app.html#status ThreeFieldApp#status}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app#status ThreeFieldApp#status}
 
 ---
 
@@ -88147,7 +88147,7 @@ public readonly urlRegex: string;
 
 A regex that further restricts URL to the specified regex.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app.html#url_regex ThreeFieldApp#url_regex}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app#url_regex ThreeFieldApp#url_regex}
 
 ---
 
@@ -88161,7 +88161,7 @@ public readonly userNameTemplate: string;
 
 Username template.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app.html#user_name_template ThreeFieldApp#user_name_template}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app#user_name_template ThreeFieldApp#user_name_template}
 
 ---
 
@@ -88175,7 +88175,7 @@ public readonly userNameTemplatePushStatus: string;
 
 Push username on update.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app.html#user_name_template_push_status ThreeFieldApp#user_name_template_push_status}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app#user_name_template_push_status ThreeFieldApp#user_name_template_push_status}
 
 ---
 
@@ -88189,7 +88189,7 @@ public readonly userNameTemplateSuffix: string;
 
 Username template suffix.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app.html#user_name_template_suffix ThreeFieldApp#user_name_template_suffix}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app#user_name_template_suffix ThreeFieldApp#user_name_template_suffix}
 
 ---
 
@@ -88203,7 +88203,7 @@ public readonly userNameTemplateType: string;
 
 Username template type.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app.html#user_name_template_type ThreeFieldApp#user_name_template_type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app#user_name_template_type ThreeFieldApp#user_name_template_type}
 
 ---
 
@@ -88217,7 +88217,7 @@ public readonly users: ThreeFieldAppUsers[];
 
 users block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app.html#users ThreeFieldApp#users}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app#users ThreeFieldApp#users}
 
 ---
 
@@ -88251,7 +88251,7 @@ public readonly id: string;
 
 User ID.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app.html#id ThreeFieldApp#id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app#id ThreeFieldApp#id}
 
 ---
 
@@ -88265,7 +88265,7 @@ public readonly password: string;
 
 Password for user application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app.html#password ThreeFieldApp#password}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app#password ThreeFieldApp#password}
 
 ---
 
@@ -88279,7 +88279,7 @@ public readonly username: string;
 
 Username for user.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app.html#username ThreeFieldApp#username}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app#username ThreeFieldApp#username}
 
 ---
 
@@ -88358,7 +88358,7 @@ public readonly name: string;
 
 Unique name for this trusted origin.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/trusted_origin.html#name TrustedOrigin#name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/trusted_origin#name TrustedOrigin#name}
 
 ---
 
@@ -88372,7 +88372,7 @@ public readonly origin: string;
 
 Unique origin URL for this trusted origin.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/trusted_origin.html#origin TrustedOrigin#origin}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/trusted_origin#origin TrustedOrigin#origin}
 
 ---
 
@@ -88386,7 +88386,7 @@ public readonly scopes: string[];
 
 Scopes of the Trusted Origin - can either be CORS or REDIRECT only.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/trusted_origin.html#scopes TrustedOrigin#scopes}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/trusted_origin#scopes TrustedOrigin#scopes}
 
 ---
 
@@ -88400,7 +88400,7 @@ public readonly active: boolean | IResolvable;
 
 Whether the Trusted Origin is active or not - can only be issued post-creation.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/trusted_origin.html#active TrustedOrigin#active}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/trusted_origin#active TrustedOrigin#active}
 
 ---
 
@@ -88478,7 +88478,7 @@ public readonly adminRoles: string[];
 
 User Okta admin roles - ie. ['APP_ADMIN', 'USER_ADMIN'].
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_admin_roles.html#admin_roles UserAdminRoles#admin_roles}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_admin_roles#admin_roles UserAdminRoles#admin_roles}
 
 ---
 
@@ -88492,7 +88492,7 @@ public readonly userId: string;
 
 ID of a Okta User.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_admin_roles.html#user_id UserAdminRoles#user_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_admin_roles#user_id UserAdminRoles#user_id}
 
 ---
 
@@ -88506,7 +88506,7 @@ public readonly disableNotifications: boolean | IResolvable;
 
 When this setting is enabled, the admins won't receive any of the default Okta administrator emails.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_admin_roles.html#disable_notifications UserAdminRoles#disable_notifications}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_admin_roles#disable_notifications UserAdminRoles#disable_notifications}
 
 ---
 
@@ -88589,7 +88589,7 @@ public readonly index: string;
 
 Subschema unique string identifier.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_base_schema.html#index UserBaseSchema#index}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_base_schema#index UserBaseSchema#index}
 
 ---
 
@@ -88603,7 +88603,7 @@ public readonly title: string;
 
 Subschema title (display name).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_base_schema.html#title UserBaseSchema#title}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_base_schema#title UserBaseSchema#title}
 
 ---
 
@@ -88617,7 +88617,7 @@ public readonly type: string;
 
 Subschema type: string, boolean, number, integer, array, or object.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_base_schema.html#type UserBaseSchema#type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_base_schema#type UserBaseSchema#type}
 
 ---
 
@@ -88631,7 +88631,7 @@ public readonly master: string;
 
 SubSchema profile manager, if not set it will inherit its setting.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_base_schema.html#master UserBaseSchema#master}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_base_schema#master UserBaseSchema#master}
 
 ---
 
@@ -88645,7 +88645,7 @@ public readonly pattern: string;
 
 The validation pattern to use for the subschema. Must be in form of '.+', or '[<pattern>]+' if present.'.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_base_schema.html#pattern UserBaseSchema#pattern}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_base_schema#pattern UserBaseSchema#pattern}
 
 ---
 
@@ -88659,7 +88659,7 @@ public readonly permissions: string;
 
 SubSchema permissions: HIDE, READ_ONLY, or READ_WRITE.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_base_schema.html#permissions UserBaseSchema#permissions}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_base_schema#permissions UserBaseSchema#permissions}
 
 ---
 
@@ -88673,7 +88673,7 @@ public readonly required: boolean | IResolvable;
 
 Whether the subschema is required.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_base_schema.html#required UserBaseSchema#required}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_base_schema#required UserBaseSchema#required}
 
 ---
 
@@ -88687,7 +88687,7 @@ public readonly userType: string;
 
 Custom subschema user type.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_base_schema.html#user_type UserBaseSchema#user_type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_base_schema#user_type UserBaseSchema#user_type}
 
 ---
 
@@ -88770,7 +88770,7 @@ public readonly index: string;
 
 Subschema unique string identifier.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_base_schema_property.html#index UserBaseSchemaProperty#index}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_base_schema_property#index UserBaseSchemaProperty#index}
 
 ---
 
@@ -88784,7 +88784,7 @@ public readonly title: string;
 
 Subschema title (display name).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_base_schema_property.html#title UserBaseSchemaProperty#title}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_base_schema_property#title UserBaseSchemaProperty#title}
 
 ---
 
@@ -88798,7 +88798,7 @@ public readonly type: string;
 
 Subschema type: string, boolean, number, integer, array, or object.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_base_schema_property.html#type UserBaseSchemaProperty#type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_base_schema_property#type UserBaseSchemaProperty#type}
 
 ---
 
@@ -88812,7 +88812,7 @@ public readonly master: string;
 
 SubSchema profile manager, if not set it will inherit its setting.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_base_schema_property.html#master UserBaseSchemaProperty#master}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_base_schema_property#master UserBaseSchemaProperty#master}
 
 ---
 
@@ -88826,7 +88826,7 @@ public readonly pattern: string;
 
 The validation pattern to use for the subschema. Must be in form of '.+', or '[<pattern>]+' if present.'.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_base_schema_property.html#pattern UserBaseSchemaProperty#pattern}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_base_schema_property#pattern UserBaseSchemaProperty#pattern}
 
 ---
 
@@ -88840,7 +88840,7 @@ public readonly permissions: string;
 
 SubSchema permissions: HIDE, READ_ONLY, or READ_WRITE.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_base_schema_property.html#permissions UserBaseSchemaProperty#permissions}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_base_schema_property#permissions UserBaseSchemaProperty#permissions}
 
 ---
 
@@ -88854,7 +88854,7 @@ public readonly required: boolean | IResolvable;
 
 Whether the subschema is required.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_base_schema_property.html#required UserBaseSchemaProperty#required}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_base_schema_property#required UserBaseSchemaProperty#required}
 
 ---
 
@@ -88868,7 +88868,7 @@ public readonly userType: string;
 
 Custom subschema user type.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_base_schema_property.html#user_type UserBaseSchemaProperty#user_type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_base_schema_property#user_type UserBaseSchemaProperty#user_type}
 
 ---
 
@@ -88984,7 +88984,7 @@ public readonly email: string;
 
 User primary email address.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#email User#email}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#email User#email}
 
 ---
 
@@ -88998,7 +88998,7 @@ public readonly firstName: string;
 
 User first name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#first_name User#first_name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#first_name User#first_name}
 
 ---
 
@@ -89012,7 +89012,7 @@ public readonly lastName: string;
 
 User last name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#last_name User#last_name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#last_name User#last_name}
 
 ---
 
@@ -89026,7 +89026,7 @@ public readonly login: string;
 
 User Okta login.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#login User#login}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#login User#login}
 
 ---
 
@@ -89040,7 +89040,7 @@ public readonly adminRoles: string[];
 
 User Okta admin roles - ie. ['APP_ADMIN', 'USER_ADMIN'].
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#admin_roles User#admin_roles}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#admin_roles User#admin_roles}
 
 ---
 
@@ -89054,7 +89054,7 @@ public readonly city: string;
 
 User city.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#city User#city}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#city User#city}
 
 ---
 
@@ -89068,7 +89068,7 @@ public readonly costCenter: string;
 
 User cost center.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#cost_center User#cost_center}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#cost_center User#cost_center}
 
 ---
 
@@ -89082,7 +89082,7 @@ public readonly countryCode: string;
 
 User country code.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#country_code User#country_code}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#country_code User#country_code}
 
 ---
 
@@ -89096,7 +89096,7 @@ public readonly customProfileAttributes: string;
 
 JSON formatted custom attributes for a user. It must be JSON due to various types Okta allows.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#custom_profile_attributes User#custom_profile_attributes}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#custom_profile_attributes User#custom_profile_attributes}
 
 ---
 
@@ -89110,7 +89110,7 @@ public readonly department: string;
 
 User department.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#department User#department}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#department User#department}
 
 ---
 
@@ -89124,7 +89124,7 @@ public readonly displayName: string;
 
 User display name, suitable to show end users.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#display_name User#display_name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#display_name User#display_name}
 
 ---
 
@@ -89138,7 +89138,7 @@ public readonly division: string;
 
 User division.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#division User#division}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#division User#division}
 
 ---
 
@@ -89152,7 +89152,7 @@ public readonly employeeNumber: string;
 
 User employee number.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#employee_number User#employee_number}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#employee_number User#employee_number}
 
 ---
 
@@ -89166,7 +89166,7 @@ public readonly groupMemberships: string[];
 
 The groups that you want this user to be a part of.
 
-This can also be done via the group using the `users` property.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#group_memberships User#group_memberships}
+This can also be done via the group using the `users` property.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#group_memberships User#group_memberships}
 
 ---
 
@@ -89180,7 +89180,7 @@ public readonly honorificPrefix: string;
 
 User honorific prefix.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#honorific_prefix User#honorific_prefix}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#honorific_prefix User#honorific_prefix}
 
 ---
 
@@ -89194,7 +89194,7 @@ public readonly honorificSuffix: string;
 
 User honorific suffix.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#honorific_suffix User#honorific_suffix}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#honorific_suffix User#honorific_suffix}
 
 ---
 
@@ -89208,7 +89208,7 @@ public readonly locale: string;
 
 User default location.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#locale User#locale}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#locale User#locale}
 
 ---
 
@@ -89222,7 +89222,7 @@ public readonly manager: string;
 
 Manager of User.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#manager User#manager}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#manager User#manager}
 
 ---
 
@@ -89236,7 +89236,7 @@ public readonly managerId: string;
 
 Manager ID of User.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#manager_id User#manager_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#manager_id User#manager_id}
 
 ---
 
@@ -89250,7 +89250,7 @@ public readonly middleName: string;
 
 User middle name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#middle_name User#middle_name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#middle_name User#middle_name}
 
 ---
 
@@ -89264,7 +89264,7 @@ public readonly mobilePhone: string;
 
 User mobile phone number.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#mobile_phone User#mobile_phone}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#mobile_phone User#mobile_phone}
 
 ---
 
@@ -89278,7 +89278,7 @@ public readonly nickName: string;
 
 User nickname.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#nick_name User#nick_name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#nick_name User#nick_name}
 
 ---
 
@@ -89292,7 +89292,7 @@ public readonly oldPassword: string;
 
 Old User Password. Should be only set in case the password was not changed using the provider.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#old_password User#old_password}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#old_password User#old_password}
 
 ---
 
@@ -89306,7 +89306,7 @@ public readonly organization: string;
 
 User organization.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#organization User#organization}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#organization User#organization}
 
 ---
 
@@ -89320,7 +89320,7 @@ public readonly password: string;
 
 User Password.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#password User#password}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#password User#password}
 
 ---
 
@@ -89334,7 +89334,7 @@ public readonly passwordHash: UserPasswordHash;
 
 password_hash block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#password_hash User#password_hash}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#password_hash User#password_hash}
 
 ---
 
@@ -89348,7 +89348,7 @@ public readonly passwordInlineHook: string;
 
 When specified, the Password Inline Hook is triggered to handle verification of the end user's password the first time the user tries to sign in.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#password_inline_hook User#password_inline_hook}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#password_inline_hook User#password_inline_hook}
 
 ---
 
@@ -89362,7 +89362,7 @@ public readonly postalAddress: string;
 
 User mailing address.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#postal_address User#postal_address}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#postal_address User#postal_address}
 
 ---
 
@@ -89376,7 +89376,7 @@ public readonly preferredLanguage: string;
 
 User preferred language.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#preferred_language User#preferred_language}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#preferred_language User#preferred_language}
 
 ---
 
@@ -89390,7 +89390,7 @@ public readonly primaryPhone: string;
 
 User primary phone number.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#primary_phone User#primary_phone}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#primary_phone User#primary_phone}
 
 ---
 
@@ -89404,7 +89404,7 @@ public readonly profileUrl: string;
 
 User online profile (web page).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#profile_url User#profile_url}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#profile_url User#profile_url}
 
 ---
 
@@ -89418,7 +89418,7 @@ public readonly recoveryAnswer: string;
 
 User Password Recovery Answer.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#recovery_answer User#recovery_answer}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#recovery_answer User#recovery_answer}
 
 ---
 
@@ -89432,7 +89432,7 @@ public readonly recoveryQuestion: string;
 
 User Password Recovery Question.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#recovery_question User#recovery_question}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#recovery_question User#recovery_question}
 
 ---
 
@@ -89446,7 +89446,7 @@ public readonly secondEmail: string;
 
 User secondary email address, used for account recovery.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#second_email User#second_email}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#second_email User#second_email}
 
 ---
 
@@ -89460,7 +89460,7 @@ public readonly state: string;
 
 User state or region.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#state User#state}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#state User#state}
 
 ---
 
@@ -89474,7 +89474,7 @@ public readonly status: string;
 
 The status of the User in Okta - remove to set user back to active/provisioned.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#status User#status}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#status User#status}
 
 ---
 
@@ -89488,7 +89488,7 @@ public readonly streetAddress: string;
 
 User street address.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#street_address User#street_address}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#street_address User#street_address}
 
 ---
 
@@ -89502,7 +89502,7 @@ public readonly timezone: string;
 
 User default timezone.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#timezone User#timezone}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#timezone User#timezone}
 
 ---
 
@@ -89516,7 +89516,7 @@ public readonly title: string;
 
 User title.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#title User#title}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#title User#title}
 
 ---
 
@@ -89530,7 +89530,7 @@ public readonly userType: string;
 
 User employee type.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#user_type User#user_type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#user_type User#user_type}
 
 ---
 
@@ -89544,7 +89544,7 @@ public readonly zipCode: string;
 
 User zipcode or postal code.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#zip_code User#zip_code}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#zip_code User#zip_code}
 
 ---
 
@@ -89622,7 +89622,7 @@ public readonly answer: string;
 
 User password security answer.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_factor_question.html#answer UserFactorQuestion#answer}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_factor_question#answer UserFactorQuestion#answer}
 
 ---
 
@@ -89636,7 +89636,7 @@ public readonly key: string;
 
 Unique key for question.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_factor_question.html#key UserFactorQuestion#key}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_factor_question#key UserFactorQuestion#key}
 
 ---
 
@@ -89650,7 +89650,7 @@ public readonly userId: string;
 
 ID of a Okta User.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_factor_question.html#user_id UserFactorQuestion#user_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_factor_question#user_id UserFactorQuestion#user_id}
 
 ---
 
@@ -89727,7 +89727,7 @@ public readonly groups: string[];
 
 The list of Okta group IDs which the user should have membership managed for.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_group_memberships.html#groups UserGroupMemberships#groups}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_group_memberships#groups UserGroupMemberships#groups}
 
 ---
 
@@ -89741,7 +89741,7 @@ public readonly userId: string;
 
 ID of a Okta User.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_group_memberships.html#user_id UserGroupMemberships#user_id}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_group_memberships#user_id UserGroupMemberships#user_id}
 
 ---
 
@@ -89777,7 +89777,7 @@ public readonly algorithm: string;
 
 The algorithm used to generate the hash using the password.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#algorithm User#algorithm}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#algorithm User#algorithm}
 
 ---
 
@@ -89791,7 +89791,7 @@ public readonly value: string;
 
 For SHA-512, SHA-256, SHA-1, MD5, This is the actual base64-encoded hash of the password (and salt, if used).
 
-This is the Base64 encoded value of the SHA-512/SHA-256/SHA-1/MD5 digest that was computed by either pre-fixing or post-fixing the salt to the password, depending on the saltOrder. If a salt was not used in the source system, then this should just be the the Base64 encoded value of the password's SHA-512/SHA-256/SHA-1/MD5 digest. For BCRYPT, This is the actual radix64-encoded hashed password.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#value User#value}
+This is the Base64 encoded value of the SHA-512/SHA-256/SHA-1/MD5 digest that was computed by either pre-fixing or post-fixing the salt to the password, depending on the saltOrder. If a salt was not used in the source system, then this should just be the the Base64 encoded value of the password's SHA-512/SHA-256/SHA-1/MD5 digest. For BCRYPT, This is the actual radix64-encoded hashed password.  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#value User#value}
 
 ---
 
@@ -89805,7 +89805,7 @@ public readonly salt: string;
 
 Only required for salted hashes.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#salt User#salt}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#salt User#salt}
 
 ---
 
@@ -89819,7 +89819,7 @@ public readonly saltOrder: string;
 
 Specifies whether salt was pre- or postfixed to the password before hashing.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#salt_order User#salt_order}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#salt_order User#salt_order}
 
 ---
 
@@ -89833,7 +89833,7 @@ public readonly workFactor: number;
 
 Governs the strength of the hash and the time required to compute it. Only required for BCRYPT algorithm.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#work_factor User#work_factor}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#work_factor User#work_factor}
 
 ---
 
@@ -89866,7 +89866,7 @@ public readonly const: string;
 
 Enum value.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema.html#const UserSchema#const}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema#const UserSchema#const}
 
 ---
 
@@ -89880,7 +89880,7 @@ public readonly title: string;
 
 Enum title.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema.html#title UserSchema#title}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema#title UserSchema#title}
 
 ---
 
@@ -89920,7 +89920,7 @@ const userSchemaConfig: UserSchemaConfig = { ... }
 | [`pattern`](#cdktfprovideroktauserschemaconfigpropertypattern) | `string` | The validation pattern to use for the subschema. Must be in form of '.+', or '[<pattern>]+' if present.'. |
 | [`permissions`](#cdktfprovideroktauserschemaconfigpropertypermissions) | `string` | SubSchema permissions: HIDE, READ_ONLY, or READ_WRITE. |
 | [`required`](#cdktfprovideroktauserschemaconfigpropertyrequired) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Whether the subschema is required. |
-| [`scope`](#cdktfprovideroktauserschemaconfigpropertyscope) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema.html#scope UserSchema#scope}. |
+| [`scope`](#cdktfprovideroktauserschemaconfigpropertyscope) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema#scope UserSchema#scope}. |
 | [`unique`](#cdktfprovideroktauserschemaconfigpropertyunique) | `string` | Subschema unique restriction. |
 | [`userType`](#cdktfprovideroktauserschemaconfigpropertyusertype) | `string` | Custom subschema user type. |
 
@@ -89976,7 +89976,7 @@ public readonly index: string;
 
 Subschema unique string identifier.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema.html#index UserSchema#index}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema#index UserSchema#index}
 
 ---
 
@@ -89990,7 +89990,7 @@ public readonly title: string;
 
 Subschema title (display name).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema.html#title UserSchema#title}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema#title UserSchema#title}
 
 ---
 
@@ -90004,7 +90004,7 @@ public readonly type: string;
 
 Subschema type: string, boolean, number, integer, array, or object.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema.html#type UserSchema#type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema#type UserSchema#type}
 
 ---
 
@@ -90018,7 +90018,7 @@ public readonly arrayEnum: string[];
 
 Custom Subschema enumerated value of a property of type array.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema.html#array_enum UserSchema#array_enum}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema#array_enum UserSchema#array_enum}
 
 ---
 
@@ -90032,7 +90032,7 @@ public readonly arrayOneOf: UserSchemaArrayOneOf[];
 
 array_one_of block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema.html#array_one_of UserSchema#array_one_of}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema#array_one_of UserSchema#array_one_of}
 
 ---
 
@@ -90046,7 +90046,7 @@ public readonly arrayType: string;
 
 Subschema array type: string, number, integer, reference. Type field must be an array.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema.html#array_type UserSchema#array_type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema#array_type UserSchema#array_type}
 
 ---
 
@@ -90060,7 +90060,7 @@ public readonly description: string;
 
 Custom Subschema description.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema.html#description UserSchema#description}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema#description UserSchema#description}
 
 ---
 
@@ -90074,7 +90074,7 @@ public readonly enum: string[];
 
 Custom Subschema enumerated value of the property. see: developer.okta.com/docs/api/resources/schemas#user-profile-schema-property-object.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema.html#enum UserSchema#enum}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema#enum UserSchema#enum}
 
 ---
 
@@ -90088,7 +90088,7 @@ public readonly externalName: string;
 
 Subschema external name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema.html#external_name UserSchema#external_name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema#external_name UserSchema#external_name}
 
 ---
 
@@ -90102,7 +90102,7 @@ public readonly externalNamespace: string;
 
 Subschema external namespace.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema.html#external_namespace UserSchema#external_namespace}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema#external_namespace UserSchema#external_namespace}
 
 ---
 
@@ -90116,7 +90116,7 @@ public readonly master: string;
 
 SubSchema profile manager, if not set it will inherit its setting.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema.html#master UserSchema#master}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema#master UserSchema#master}
 
 ---
 
@@ -90130,7 +90130,7 @@ public readonly masterOverridePriority: UserSchemaMasterOverridePriority[];
 
 master_override_priority block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema.html#master_override_priority UserSchema#master_override_priority}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema#master_override_priority UserSchema#master_override_priority}
 
 ---
 
@@ -90144,7 +90144,7 @@ public readonly maxLength: number;
 
 Subschema of type string maximum length.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema.html#max_length UserSchema#max_length}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema#max_length UserSchema#max_length}
 
 ---
 
@@ -90158,7 +90158,7 @@ public readonly minLength: number;
 
 Subschema of type string minimum length.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema.html#min_length UserSchema#min_length}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema#min_length UserSchema#min_length}
 
 ---
 
@@ -90172,7 +90172,7 @@ public readonly oneOf: UserSchemaOneOf[];
 
 one_of block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema.html#one_of UserSchema#one_of}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema#one_of UserSchema#one_of}
 
 ---
 
@@ -90186,7 +90186,7 @@ public readonly pattern: string;
 
 The validation pattern to use for the subschema. Must be in form of '.+', or '[<pattern>]+' if present.'.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema.html#pattern UserSchema#pattern}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema#pattern UserSchema#pattern}
 
 ---
 
@@ -90200,7 +90200,7 @@ public readonly permissions: string;
 
 SubSchema permissions: HIDE, READ_ONLY, or READ_WRITE.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema.html#permissions UserSchema#permissions}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema#permissions UserSchema#permissions}
 
 ---
 
@@ -90214,7 +90214,7 @@ public readonly required: boolean | IResolvable;
 
 Whether the subschema is required.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema.html#required UserSchema#required}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema#required UserSchema#required}
 
 ---
 
@@ -90226,7 +90226,7 @@ public readonly scope: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema.html#scope UserSchema#scope}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema#scope UserSchema#scope}.
 
 ---
 
@@ -90240,7 +90240,7 @@ public readonly unique: string;
 
 Subschema unique restriction.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema.html#unique UserSchema#unique}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema#unique UserSchema#unique}
 
 ---
 
@@ -90254,7 +90254,7 @@ public readonly userType: string;
 
 Custom subschema user type.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema.html#user_type UserSchema#user_type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema#user_type UserSchema#user_type}
 
 ---
 
@@ -90272,8 +90272,8 @@ const userSchemaMasterOverridePriority: UserSchemaMasterOverridePriority = { ...
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`value`](#cdktfprovideroktauserschemamasteroverrideprioritypropertyvalue)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema.html#value UserSchema#value}. |
-| [`type`](#cdktfprovideroktauserschemamasteroverrideprioritypropertytype) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema.html#type UserSchema#type}. |
+| [`value`](#cdktfprovideroktauserschemamasteroverrideprioritypropertyvalue)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema#value UserSchema#value}. |
+| [`type`](#cdktfprovideroktauserschemamasteroverrideprioritypropertytype) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema#type UserSchema#type}. |
 
 ---
 
@@ -90285,7 +90285,7 @@ public readonly value: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema.html#value UserSchema#value}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema#value UserSchema#value}.
 
 ---
 
@@ -90297,7 +90297,7 @@ public readonly type: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema.html#type UserSchema#type}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema#type UserSchema#type}.
 
 ---
 
@@ -90330,7 +90330,7 @@ public readonly const: string;
 
 Enum value.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema.html#const UserSchema#const}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema#const UserSchema#const}
 
 ---
 
@@ -90344,7 +90344,7 @@ public readonly title: string;
 
 Enum title.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema.html#title UserSchema#title}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema#title UserSchema#title}
 
 ---
 
@@ -90377,7 +90377,7 @@ public readonly const: string;
 
 Enum value.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema_property.html#const UserSchemaProperty#const}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema_property#const UserSchemaProperty#const}
 
 ---
 
@@ -90391,7 +90391,7 @@ public readonly title: string;
 
 Enum title.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema_property.html#title UserSchemaProperty#title}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema_property#title UserSchemaProperty#title}
 
 ---
 
@@ -90431,7 +90431,7 @@ const userSchemaPropertyConfig: UserSchemaPropertyConfig = { ... }
 | [`pattern`](#cdktfprovideroktauserschemapropertyconfigpropertypattern) | `string` | The validation pattern to use for the subschema. Must be in form of '.+', or '[<pattern>]+' if present.'. |
 | [`permissions`](#cdktfprovideroktauserschemapropertyconfigpropertypermissions) | `string` | SubSchema permissions: HIDE, READ_ONLY, or READ_WRITE. |
 | [`required`](#cdktfprovideroktauserschemapropertyconfigpropertyrequired) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Whether the subschema is required. |
-| [`scope`](#cdktfprovideroktauserschemapropertyconfigpropertyscope) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema_property.html#scope UserSchemaProperty#scope}. |
+| [`scope`](#cdktfprovideroktauserschemapropertyconfigpropertyscope) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema_property#scope UserSchemaProperty#scope}. |
 | [`unique`](#cdktfprovideroktauserschemapropertyconfigpropertyunique) | `string` | Subschema unique restriction. |
 | [`userType`](#cdktfprovideroktauserschemapropertyconfigpropertyusertype) | `string` | Custom subschema user type. |
 
@@ -90487,7 +90487,7 @@ public readonly index: string;
 
 Subschema unique string identifier.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema_property.html#index UserSchemaProperty#index}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema_property#index UserSchemaProperty#index}
 
 ---
 
@@ -90501,7 +90501,7 @@ public readonly title: string;
 
 Subschema title (display name).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema_property.html#title UserSchemaProperty#title}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema_property#title UserSchemaProperty#title}
 
 ---
 
@@ -90515,7 +90515,7 @@ public readonly type: string;
 
 Subschema type: string, boolean, number, integer, array, or object.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema_property.html#type UserSchemaProperty#type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema_property#type UserSchemaProperty#type}
 
 ---
 
@@ -90529,7 +90529,7 @@ public readonly arrayEnum: string[];
 
 Custom Subschema enumerated value of a property of type array.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema_property.html#array_enum UserSchemaProperty#array_enum}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema_property#array_enum UserSchemaProperty#array_enum}
 
 ---
 
@@ -90543,7 +90543,7 @@ public readonly arrayOneOf: UserSchemaPropertyArrayOneOf[];
 
 array_one_of block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema_property.html#array_one_of UserSchemaProperty#array_one_of}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema_property#array_one_of UserSchemaProperty#array_one_of}
 
 ---
 
@@ -90557,7 +90557,7 @@ public readonly arrayType: string;
 
 Subschema array type: string, number, integer, reference. Type field must be an array.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema_property.html#array_type UserSchemaProperty#array_type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema_property#array_type UserSchemaProperty#array_type}
 
 ---
 
@@ -90571,7 +90571,7 @@ public readonly description: string;
 
 Custom Subschema description.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema_property.html#description UserSchemaProperty#description}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema_property#description UserSchemaProperty#description}
 
 ---
 
@@ -90585,7 +90585,7 @@ public readonly enum: string[];
 
 Custom Subschema enumerated value of the property. see: developer.okta.com/docs/api/resources/schemas#user-profile-schema-property-object.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema_property.html#enum UserSchemaProperty#enum}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema_property#enum UserSchemaProperty#enum}
 
 ---
 
@@ -90599,7 +90599,7 @@ public readonly externalName: string;
 
 Subschema external name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema_property.html#external_name UserSchemaProperty#external_name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema_property#external_name UserSchemaProperty#external_name}
 
 ---
 
@@ -90613,7 +90613,7 @@ public readonly externalNamespace: string;
 
 Subschema external namespace.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema_property.html#external_namespace UserSchemaProperty#external_namespace}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema_property#external_namespace UserSchemaProperty#external_namespace}
 
 ---
 
@@ -90627,7 +90627,7 @@ public readonly master: string;
 
 SubSchema profile manager, if not set it will inherit its setting.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema_property.html#master UserSchemaProperty#master}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema_property#master UserSchemaProperty#master}
 
 ---
 
@@ -90641,7 +90641,7 @@ public readonly masterOverridePriority: UserSchemaPropertyMasterOverridePriority
 
 master_override_priority block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema_property.html#master_override_priority UserSchemaProperty#master_override_priority}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema_property#master_override_priority UserSchemaProperty#master_override_priority}
 
 ---
 
@@ -90655,7 +90655,7 @@ public readonly maxLength: number;
 
 Subschema of type string maximum length.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema_property.html#max_length UserSchemaProperty#max_length}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema_property#max_length UserSchemaProperty#max_length}
 
 ---
 
@@ -90669,7 +90669,7 @@ public readonly minLength: number;
 
 Subschema of type string minimum length.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema_property.html#min_length UserSchemaProperty#min_length}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema_property#min_length UserSchemaProperty#min_length}
 
 ---
 
@@ -90683,7 +90683,7 @@ public readonly oneOf: UserSchemaPropertyOneOf[];
 
 one_of block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema_property.html#one_of UserSchemaProperty#one_of}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema_property#one_of UserSchemaProperty#one_of}
 
 ---
 
@@ -90697,7 +90697,7 @@ public readonly pattern: string;
 
 The validation pattern to use for the subschema. Must be in form of '.+', or '[<pattern>]+' if present.'.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema_property.html#pattern UserSchemaProperty#pattern}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema_property#pattern UserSchemaProperty#pattern}
 
 ---
 
@@ -90711,7 +90711,7 @@ public readonly permissions: string;
 
 SubSchema permissions: HIDE, READ_ONLY, or READ_WRITE.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema_property.html#permissions UserSchemaProperty#permissions}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema_property#permissions UserSchemaProperty#permissions}
 
 ---
 
@@ -90725,7 +90725,7 @@ public readonly required: boolean | IResolvable;
 
 Whether the subschema is required.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema_property.html#required UserSchemaProperty#required}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema_property#required UserSchemaProperty#required}
 
 ---
 
@@ -90737,7 +90737,7 @@ public readonly scope: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema_property.html#scope UserSchemaProperty#scope}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema_property#scope UserSchemaProperty#scope}.
 
 ---
 
@@ -90751,7 +90751,7 @@ public readonly unique: string;
 
 Subschema unique restriction.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema_property.html#unique UserSchemaProperty#unique}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema_property#unique UserSchemaProperty#unique}
 
 ---
 
@@ -90765,7 +90765,7 @@ public readonly userType: string;
 
 Custom subschema user type.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema_property.html#user_type UserSchemaProperty#user_type}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema_property#user_type UserSchemaProperty#user_type}
 
 ---
 
@@ -90783,8 +90783,8 @@ const userSchemaPropertyMasterOverridePriority: UserSchemaPropertyMasterOverride
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`value`](#cdktfprovideroktauserschemapropertymasteroverrideprioritypropertyvalue)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema_property.html#value UserSchemaProperty#value}. |
-| [`type`](#cdktfprovideroktauserschemapropertymasteroverrideprioritypropertytype) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema_property.html#type UserSchemaProperty#type}. |
+| [`value`](#cdktfprovideroktauserschemapropertymasteroverrideprioritypropertyvalue)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema_property#value UserSchemaProperty#value}. |
+| [`type`](#cdktfprovideroktauserschemapropertymasteroverrideprioritypropertytype) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema_property#type UserSchemaProperty#type}. |
 
 ---
 
@@ -90796,7 +90796,7 @@ public readonly value: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema_property.html#value UserSchemaProperty#value}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema_property#value UserSchemaProperty#value}.
 
 ---
 
@@ -90808,7 +90808,7 @@ public readonly type: string;
 
 - *Type:* `string`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema_property.html#type UserSchemaProperty#type}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema_property#type UserSchemaProperty#type}.
 
 ---
 
@@ -90841,7 +90841,7 @@ public readonly const: string;
 
 Enum value.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema_property.html#const UserSchemaProperty#const}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema_property#const UserSchemaProperty#const}
 
 ---
 
@@ -90855,7 +90855,7 @@ public readonly title: string;
 
 Enum title.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema_property.html#title UserSchemaProperty#title}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema_property#title UserSchemaProperty#title}
 
 ---
 
@@ -90933,7 +90933,7 @@ public readonly description: string;
 
 A human-readable description of the type.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_type.html#description UserType#description}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_type#description UserType#description}
 
 ---
 
@@ -90947,7 +90947,7 @@ public readonly displayName: string;
 
 The display name for the type.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_type.html#display_name UserType#display_name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_type#display_name UserType#display_name}
 
 ---
 
@@ -90961,7 +90961,7 @@ public readonly name: string;
 
 The display name for the type.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_type.html#name UserType#name}
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_type#name UserType#name}
 
 ---
 

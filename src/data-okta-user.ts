@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/d/user.html
+// https://www.terraform.io/docs/providers/okta/d/user
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,29 +10,29 @@ export interface DataOktaUserConfig extends cdktf.TerraformMetaArguments {
   /**
   * Retrieve a single user based on their id
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/user.html#user_id DataOktaUser#user_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/user#user_id DataOktaUser#user_id}
   */
   readonly userId?: string;
   /**
   * search block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/user.html#search DataOktaUser#search}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/user#search DataOktaUser#search}
   */
   readonly search?: DataOktaUserSearch[];
 }
 export interface DataOktaUserSearch {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/user.html#comparison DataOktaUser#comparison}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/user#comparison DataOktaUser#comparison}
   */
   readonly comparison?: string;
   /**
   * Property name to search for. This requires the search feature be on. Please see Okta documentation on their filter API for users. https://developer.okta.com/docs/api/resources/users#list-users-with-search
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/user.html#name DataOktaUser#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/user#name DataOktaUser#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/user.html#value DataOktaUser#value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/user#value DataOktaUser#value}
   */
   readonly value: string;
 }
@@ -51,7 +51,7 @@ export function dataOktaUserSearchToTerraform(struct?: DataOktaUserSearch): any 
 
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/d/user.html okta_user}
+* Represents a {@link https://www.terraform.io/docs/providers/okta/d/user okta_user}
 */
 export class DataOktaUser extends cdktf.TerraformDataSource {
 
@@ -65,7 +65,7 @@ export class DataOktaUser extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/d/user.html okta_user} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/okta/d/user okta_user} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

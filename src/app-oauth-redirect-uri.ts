@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/r/app_oauth_redirect_uri.html
+// https://www.terraform.io/docs/providers/okta/r/app_oauth_redirect_uri
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,19 +8,19 @@ import * as cdktf from 'cdktf';
 
 export interface AppOauthRedirectUriConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth_redirect_uri.html#app_id AppOauthRedirectUri#app_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth_redirect_uri#app_id AppOauthRedirectUri#app_id}
   */
   readonly appId: string;
   /**
   * Redirect URI to append to Okta OIDC application.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth_redirect_uri.html#uri AppOauthRedirectUri#uri}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth_redirect_uri#uri AppOauthRedirectUri#uri}
   */
   readonly uri: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/r/app_oauth_redirect_uri.html okta_app_oauth_redirect_uri}
+* Represents a {@link https://www.terraform.io/docs/providers/okta/r/app_oauth_redirect_uri okta_app_oauth_redirect_uri}
 */
 export class AppOauthRedirectUri extends cdktf.TerraformResource {
 
@@ -34,7 +34,7 @@ export class AppOauthRedirectUri extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/app_oauth_redirect_uri.html okta_app_oauth_redirect_uri} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/app_oauth_redirect_uri okta_app_oauth_redirect_uri} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

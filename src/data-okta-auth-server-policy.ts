@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/d/auth_server_policy.html
+// https://www.terraform.io/docs/providers/okta/d/auth_server_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,19 +10,19 @@ export interface DataOktaAuthServerPolicyConfig extends cdktf.TerraformMetaArgum
   /**
   * Auth server ID
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/auth_server_policy.html#auth_server_id DataOktaAuthServerPolicy#auth_server_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/auth_server_policy#auth_server_id DataOktaAuthServerPolicy#auth_server_id}
   */
   readonly authServerId: string;
   /**
   * Name of the policy
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/auth_server_policy.html#name DataOktaAuthServerPolicy#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/auth_server_policy#name DataOktaAuthServerPolicy#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/d/auth_server_policy.html okta_auth_server_policy}
+* Represents a {@link https://www.terraform.io/docs/providers/okta/d/auth_server_policy okta_auth_server_policy}
 */
 export class DataOktaAuthServerPolicy extends cdktf.TerraformDataSource {
 
@@ -36,7 +36,7 @@ export class DataOktaAuthServerPolicy extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/d/auth_server_policy.html okta_auth_server_policy} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/okta/d/auth_server_policy okta_auth_server_policy} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

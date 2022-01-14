@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/r/app_group_assignment.html
+// https://www.terraform.io/docs/providers/okta/r/app_group_assignment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,33 +10,33 @@ export interface AppGroupAssignmentConfig extends cdktf.TerraformMetaArguments {
   /**
   * App to associate group with
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_group_assignment.html#app_id AppGroupAssignment#app_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_group_assignment#app_id AppGroupAssignment#app_id}
   */
   readonly appId: string;
   /**
   * Group associated with the application
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_group_assignment.html#group_id AppGroupAssignment#group_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_group_assignment#group_id AppGroupAssignment#group_id}
   */
   readonly groupId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_group_assignment.html#priority AppGroupAssignment#priority}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_group_assignment#priority AppGroupAssignment#priority}
   */
   readonly priority?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_group_assignment.html#profile AppGroupAssignment#profile}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_group_assignment#profile AppGroupAssignment#profile}
   */
   readonly profile?: string;
   /**
   * Retain the group assignment on destroy. If set to true, the resource will be removed from state but not from the Okta app.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_group_assignment.html#retain_assignment AppGroupAssignment#retain_assignment}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_group_assignment#retain_assignment AppGroupAssignment#retain_assignment}
   */
   readonly retainAssignment?: boolean | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/r/app_group_assignment.html okta_app_group_assignment}
+* Represents a {@link https://www.terraform.io/docs/providers/okta/r/app_group_assignment okta_app_group_assignment}
 */
 export class AppGroupAssignment extends cdktf.TerraformResource {
 
@@ -50,7 +50,7 @@ export class AppGroupAssignment extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/app_group_assignment.html okta_app_group_assignment} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/app_group_assignment okta_app_group_assignment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

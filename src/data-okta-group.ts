@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/d/group.html
+// https://www.terraform.io/docs/providers/okta/d/group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,29 +8,29 @@ import * as cdktf from 'cdktf';
 
 export interface DataOktaGroupConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/group.html#id DataOktaGroup#id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/group#id DataOktaGroup#id}
   */
   readonly id?: string;
   /**
   * Fetch group users, having default off cuts down on API calls.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/group.html#include_users DataOktaGroup#include_users}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/group#include_users DataOktaGroup#include_users}
   */
   readonly includeUsers?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/group.html#name DataOktaGroup#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/group#name DataOktaGroup#name}
   */
   readonly name?: string;
   /**
   * Type of the group. When specified in the terraform resource, will act as a filter when searching for the group
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/group.html#type DataOktaGroup#type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/group#type DataOktaGroup#type}
   */
   readonly type?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/d/group.html okta_group}
+* Represents a {@link https://www.terraform.io/docs/providers/okta/d/group okta_group}
 */
 export class DataOktaGroup extends cdktf.TerraformDataSource {
 
@@ -44,7 +44,7 @@ export class DataOktaGroup extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/d/group.html okta_group} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/okta/d/group okta_group} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/r/social_idp.html
+// https://www.terraform.io/docs/providers/okta/r/social_idp
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,151 +8,151 @@ import * as cdktf from 'cdktf';
 
 export interface SocialIdpConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#account_link_action SocialIdp#account_link_action}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#account_link_action SocialIdp#account_link_action}
   */
   readonly accountLinkAction?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#account_link_group_include SocialIdp#account_link_group_include}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#account_link_group_include SocialIdp#account_link_group_include}
   */
   readonly accountLinkGroupInclude?: string[];
   /**
   * The Key ID that you obtained from Apple when you created the private key for the client
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#apple_kid SocialIdp#apple_kid}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#apple_kid SocialIdp#apple_kid}
   */
   readonly appleKid?: string;
   /**
   * The PKCS #8 encoded private key that you created for the client and downloaded from Apple
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#apple_private_key SocialIdp#apple_private_key}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#apple_private_key SocialIdp#apple_private_key}
   */
   readonly applePrivateKey?: string;
   /**
   * The Team ID associated with your Apple developer account
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#apple_team_id SocialIdp#apple_team_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#apple_team_id SocialIdp#apple_team_id}
   */
   readonly appleTeamId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#client_id SocialIdp#client_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#client_id SocialIdp#client_id}
   */
   readonly clientId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#client_secret SocialIdp#client_secret}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#client_secret SocialIdp#client_secret}
   */
   readonly clientSecret?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#deprovisioned_action SocialIdp#deprovisioned_action}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#deprovisioned_action SocialIdp#deprovisioned_action}
   */
   readonly deprovisionedAction?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#groups_action SocialIdp#groups_action}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#groups_action SocialIdp#groups_action}
   */
   readonly groupsAction?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#groups_assignment SocialIdp#groups_assignment}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#groups_assignment SocialIdp#groups_assignment}
   */
   readonly groupsAssignment?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#groups_attribute SocialIdp#groups_attribute}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#groups_attribute SocialIdp#groups_attribute}
   */
   readonly groupsAttribute?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#groups_filter SocialIdp#groups_filter}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#groups_filter SocialIdp#groups_filter}
   */
   readonly groupsFilter?: string[];
   /**
   * Indicates whether Okta uses the original Okta org domain URL, or a custom domain URL
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#issuer_mode SocialIdp#issuer_mode}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#issuer_mode SocialIdp#issuer_mode}
   */
   readonly issuerMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#match_attribute SocialIdp#match_attribute}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#match_attribute SocialIdp#match_attribute}
   */
   readonly matchAttribute?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#match_type SocialIdp#match_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#match_type SocialIdp#match_type}
   */
   readonly matchType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#max_clock_skew SocialIdp#max_clock_skew}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#max_clock_skew SocialIdp#max_clock_skew}
   */
   readonly maxClockSkew?: number;
   /**
   * Name of the IdP
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#name SocialIdp#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#name SocialIdp#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#profile_master SocialIdp#profile_master}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#profile_master SocialIdp#profile_master}
   */
   readonly profileMaster?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#protocol_type SocialIdp#protocol_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#protocol_type SocialIdp#protocol_type}
   */
   readonly protocolType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#provisioning_action SocialIdp#provisioning_action}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#provisioning_action SocialIdp#provisioning_action}
   */
   readonly provisioningAction?: string;
   /**
   * algorithm to use to sign requests
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#request_signature_algorithm SocialIdp#request_signature_algorithm}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#request_signature_algorithm SocialIdp#request_signature_algorithm}
   */
   readonly requestSignatureAlgorithm?: string;
   /**
   * algorithm to use to sign response
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#request_signature_scope SocialIdp#request_signature_scope}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#request_signature_scope SocialIdp#request_signature_scope}
   */
   readonly requestSignatureScope?: string;
   /**
   * algorithm to use to sign requests
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#response_signature_algorithm SocialIdp#response_signature_algorithm}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#response_signature_algorithm SocialIdp#response_signature_algorithm}
   */
   readonly responseSignatureAlgorithm?: string;
   /**
   * algorithm to use to sign response
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#response_signature_scope SocialIdp#response_signature_scope}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#response_signature_scope SocialIdp#response_signature_scope}
   */
   readonly responseSignatureScope?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#scopes SocialIdp#scopes}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#scopes SocialIdp#scopes}
   */
   readonly scopes: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#status SocialIdp#status}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#status SocialIdp#status}
   */
   readonly status?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#subject_match_attribute SocialIdp#subject_match_attribute}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#subject_match_attribute SocialIdp#subject_match_attribute}
   */
   readonly subjectMatchAttribute?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#subject_match_type SocialIdp#subject_match_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#subject_match_type SocialIdp#subject_match_type}
   */
   readonly subjectMatchType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#suspended_action SocialIdp#suspended_action}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#suspended_action SocialIdp#suspended_action}
   */
   readonly suspendedAction?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#type SocialIdp#type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#type SocialIdp#type}
   */
   readonly type: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html#username_template SocialIdp#username_template}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#username_template SocialIdp#username_template}
   */
   readonly usernameTemplate?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html okta_social_idp}
+* Represents a {@link https://www.terraform.io/docs/providers/okta/r/social_idp okta_social_idp}
 */
 export class SocialIdp extends cdktf.TerraformResource {
 
@@ -166,7 +166,7 @@ export class SocialIdp extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/social_idp.html okta_social_idp} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/social_idp okta_social_idp} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

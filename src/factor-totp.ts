@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/r/factor_totp.html
+// https://www.terraform.io/docs/providers/okta/r/factor_totp
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,43 +10,43 @@ export interface FactorTotpConfig extends cdktf.TerraformMetaArguments {
   /**
   * Clock drift interval
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/factor_totp.html#clock_drift_interval FactorTotp#clock_drift_interval}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/factor_totp#clock_drift_interval FactorTotp#clock_drift_interval}
   */
   readonly clockDriftInterval?: number;
   /**
   * Hash-based message authentication code algorithm
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/factor_totp.html#hmac_algorithm FactorTotp#hmac_algorithm}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/factor_totp#hmac_algorithm FactorTotp#hmac_algorithm}
   */
   readonly hmacAlgorithm?: string;
   /**
   * Factor name
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/factor_totp.html#name FactorTotp#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/factor_totp#name FactorTotp#name}
   */
   readonly name: string;
   /**
   * Factor name
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/factor_totp.html#otp_length FactorTotp#otp_length}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/factor_totp#otp_length FactorTotp#otp_length}
   */
   readonly otpLength?: number;
   /**
   * Shared secret encoding
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/factor_totp.html#shared_secret_encoding FactorTotp#shared_secret_encoding}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/factor_totp#shared_secret_encoding FactorTotp#shared_secret_encoding}
   */
   readonly sharedSecretEncoding?: string;
   /**
   * Time step in seconds
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/factor_totp.html#time_step FactorTotp#time_step}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/factor_totp#time_step FactorTotp#time_step}
   */
   readonly timeStep?: number;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/r/factor_totp.html okta_factor_totp}
+* Represents a {@link https://www.terraform.io/docs/providers/okta/r/factor_totp okta_factor_totp}
 */
 export class FactorTotp extends cdktf.TerraformResource {
 
@@ -60,7 +60,7 @@ export class FactorTotp extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/factor_totp.html okta_factor_totp} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/factor_totp okta_factor_totp} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/r/org_configuration.html
+// https://www.terraform.io/docs/providers/okta/r/org_configuration
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,97 +10,97 @@ export interface OrgConfigurationConfig extends cdktf.TerraformMetaArguments {
   /**
   * Primary address of org
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration.html#address_1 OrgConfiguration#address_1}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration#address_1 OrgConfiguration#address_1}
   */
   readonly address1?: string;
   /**
   * Secondary address of org
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration.html#address_2 OrgConfiguration#address_2}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration#address_2 OrgConfiguration#address_2}
   */
   readonly address2?: string;
   /**
   * User ID representing the billing contact
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration.html#billing_contact_user OrgConfiguration#billing_contact_user}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration#billing_contact_user OrgConfiguration#billing_contact_user}
   */
   readonly billingContactUser?: string;
   /**
   * City of org
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration.html#city OrgConfiguration#city}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration#city OrgConfiguration#city}
   */
   readonly city?: string;
   /**
   * Name of org
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration.html#company_name OrgConfiguration#company_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration#company_name OrgConfiguration#company_name}
   */
   readonly companyName: string;
   /**
   * Country of org
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration.html#country OrgConfiguration#country}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration#country OrgConfiguration#country}
   */
   readonly country?: string;
   /**
   * Support link of org
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration.html#end_user_support_help_url OrgConfiguration#end_user_support_help_url}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration#end_user_support_help_url OrgConfiguration#end_user_support_help_url}
   */
   readonly endUserSupportHelpUrl?: string;
   /**
   * Local path to logo of the org.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration.html#logo OrgConfiguration#logo}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration#logo OrgConfiguration#logo}
   */
   readonly logo?: string;
   /**
   * Indicates whether the org's users receive Okta Communication emails
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration.html#opt_out_communication_emails OrgConfiguration#opt_out_communication_emails}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration#opt_out_communication_emails OrgConfiguration#opt_out_communication_emails}
   */
   readonly optOutCommunicationEmails?: boolean | cdktf.IResolvable;
   /**
   * Support help phone of org
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration.html#phone_number OrgConfiguration#phone_number}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration#phone_number OrgConfiguration#phone_number}
   */
   readonly phoneNumber?: string;
   /**
   * Postal code of org
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration.html#postal_code OrgConfiguration#postal_code}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration#postal_code OrgConfiguration#postal_code}
   */
   readonly postalCode?: string;
   /**
   * State of org
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration.html#state OrgConfiguration#state}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration#state OrgConfiguration#state}
   */
   readonly state?: string;
   /**
   * Support help phone of org
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration.html#support_phone_number OrgConfiguration#support_phone_number}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration#support_phone_number OrgConfiguration#support_phone_number}
   */
   readonly supportPhoneNumber?: string;
   /**
   * User ID representing the technical contact
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration.html#technical_contact_user OrgConfiguration#technical_contact_user}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration#technical_contact_user OrgConfiguration#technical_contact_user}
   */
   readonly technicalContactUser?: string;
   /**
   * The org's website
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration.html#website OrgConfiguration#website}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration#website OrgConfiguration#website}
   */
   readonly website?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/r/org_configuration.html okta_org_configuration}
+* Represents a {@link https://www.terraform.io/docs/providers/okta/r/org_configuration okta_org_configuration}
 */
 export class OrgConfiguration extends cdktf.TerraformResource {
 
@@ -114,7 +114,7 @@ export class OrgConfiguration extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/org_configuration.html okta_org_configuration} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/org_configuration okta_org_configuration} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

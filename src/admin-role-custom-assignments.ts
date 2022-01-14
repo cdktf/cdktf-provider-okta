@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/r/admin_role_custom_assignments.html
+// https://www.terraform.io/docs/providers/okta/r/admin_role_custom_assignments
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,25 +10,25 @@ export interface AdminRoleCustomAssignmentsConfig extends cdktf.TerraformMetaArg
   /**
   * ID of the Custom Role
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/admin_role_custom_assignments.html#custom_role_id AdminRoleCustomAssignments#custom_role_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/admin_role_custom_assignments#custom_role_id AdminRoleCustomAssignments#custom_role_id}
   */
   readonly customRoleId: string;
   /**
   * The hrefs that point to User(s) and/or Group(s) that receive the Role
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/admin_role_custom_assignments.html#members AdminRoleCustomAssignments#members}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/admin_role_custom_assignments#members AdminRoleCustomAssignments#members}
   */
   readonly members?: string[];
   /**
   * ID of the target Resource Set
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/admin_role_custom_assignments.html#resource_set_id AdminRoleCustomAssignments#resource_set_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/admin_role_custom_assignments#resource_set_id AdminRoleCustomAssignments#resource_set_id}
   */
   readonly resourceSetId: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/r/admin_role_custom_assignments.html okta_admin_role_custom_assignments}
+* Represents a {@link https://www.terraform.io/docs/providers/okta/r/admin_role_custom_assignments okta_admin_role_custom_assignments}
 */
 export class AdminRoleCustomAssignments extends cdktf.TerraformResource {
 
@@ -42,7 +42,7 @@ export class AdminRoleCustomAssignments extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/admin_role_custom_assignments.html okta_admin_role_custom_assignments} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/admin_role_custom_assignments okta_admin_role_custom_assignments} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

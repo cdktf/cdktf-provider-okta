@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/r/group.html
+// https://www.terraform.io/docs/providers/okta/r/group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,31 +10,31 @@ export interface GroupConfig extends cdktf.TerraformMetaArguments {
   /**
   * Group description
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group.html#description Group#description}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group#description Group#description}
   */
   readonly description?: string;
   /**
   * Group name
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group.html#name Group#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group#name Group#name}
   */
   readonly name: string;
   /**
   * Ignore users sync. This is a temporary solution until 'users' field is supported in this resource
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group.html#skip_users Group#skip_users}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group#skip_users Group#skip_users}
   */
   readonly skipUsers?: boolean | cdktf.IResolvable;
   /**
   * Users associated with the group. This can also be done per user.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group.html#users Group#users}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group#users Group#users}
   */
   readonly users?: string[];
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/r/group.html okta_group}
+* Represents a {@link https://www.terraform.io/docs/providers/okta/r/group okta_group}
 */
 export class Group extends cdktf.TerraformResource {
 
@@ -48,7 +48,7 @@ export class Group extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/group.html okta_group} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/group okta_group} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

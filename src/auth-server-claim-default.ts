@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/r/auth_server_claim_default.html
+// https://www.terraform.io/docs/providers/okta/r/auth_server_claim_default
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,29 +8,29 @@ import * as cdktf from 'cdktf';
 
 export interface AuthServerClaimDefaultConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_claim_default.html#always_include_in_token AuthServerClaimDefault#always_include_in_token}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_claim_default#always_include_in_token AuthServerClaimDefault#always_include_in_token}
   */
   readonly alwaysIncludeInToken?: boolean | cdktf.IResolvable;
   /**
   * Auth server ID
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_claim_default.html#auth_server_id AuthServerClaimDefault#auth_server_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_claim_default#auth_server_id AuthServerClaimDefault#auth_server_id}
   */
   readonly authServerId: string;
   /**
   * Default auth server claim name
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_claim_default.html#name AuthServerClaimDefault#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_claim_default#name AuthServerClaimDefault#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_claim_default.html#value AuthServerClaimDefault#value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_claim_default#value AuthServerClaimDefault#value}
   */
   readonly value?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/r/auth_server_claim_default.html okta_auth_server_claim_default}
+* Represents a {@link https://www.terraform.io/docs/providers/okta/r/auth_server_claim_default okta_auth_server_claim_default}
 */
 export class AuthServerClaimDefault extends cdktf.TerraformResource {
 
@@ -44,7 +44,7 @@ export class AuthServerClaimDefault extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/auth_server_claim_default.html okta_auth_server_claim_default} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/auth_server_claim_default okta_auth_server_claim_default} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/d/idp_social.html
+// https://www.terraform.io/docs/providers/okta/d/idp_social
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,19 +10,19 @@ export interface DataOktaIdpSocialConfig extends cdktf.TerraformMetaArguments {
   /**
   * ID of the IdP
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/idp_social.html#id DataOktaIdpSocial#id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/idp_social#id DataOktaIdpSocial#id}
   */
   readonly id?: string;
   /**
   * name of the IdP
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/idp_social.html#name DataOktaIdpSocial#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/idp_social#name DataOktaIdpSocial#name}
   */
   readonly name?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/d/idp_social.html okta_idp_social}
+* Represents a {@link https://www.terraform.io/docs/providers/okta/d/idp_social okta_idp_social}
 */
 export class DataOktaIdpSocial extends cdktf.TerraformDataSource {
 
@@ -36,7 +36,7 @@ export class DataOktaIdpSocial extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/d/idp_social.html okta_idp_social} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/okta/d/idp_social okta_idp_social} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

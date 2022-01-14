@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/d/app_group_assignments.html
+// https://www.terraform.io/docs/providers/okta/d/app_group_assignments
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,13 +10,13 @@ export interface DataOktaAppGroupAssignmentsConfig extends cdktf.TerraformMetaAr
   /**
   * ID of the Okta App being queried for groups
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_group_assignments.html#id DataOktaAppGroupAssignments#id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_group_assignments#id DataOktaAppGroupAssignments#id}
   */
   readonly id: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/d/app_group_assignments.html okta_app_group_assignments}
+* Represents a {@link https://www.terraform.io/docs/providers/okta/d/app_group_assignments okta_app_group_assignments}
 */
 export class DataOktaAppGroupAssignments extends cdktf.TerraformDataSource {
 
@@ -30,7 +30,7 @@ export class DataOktaAppGroupAssignments extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/d/app_group_assignments.html okta_app_group_assignments} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/okta/d/app_group_assignments okta_app_group_assignments} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

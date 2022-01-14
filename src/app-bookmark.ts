@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/r/app_bookmark.html
+// https://www.terraform.io/docs/providers/okta/r/app_bookmark
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,105 +10,105 @@ export interface AppBookmarkConfig extends cdktf.TerraformMetaArguments {
   /**
   * Custom error page URL
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark.html#accessibility_error_redirect_url AppBookmark#accessibility_error_redirect_url}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark#accessibility_error_redirect_url AppBookmark#accessibility_error_redirect_url}
   */
   readonly accessibilityErrorRedirectUrl?: string;
   /**
   * Custom login page URL
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark.html#accessibility_login_redirect_url AppBookmark#accessibility_login_redirect_url}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark#accessibility_login_redirect_url AppBookmark#accessibility_login_redirect_url}
   */
   readonly accessibilityLoginRedirectUrl?: string;
   /**
   * Enable self service
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark.html#accessibility_self_service AppBookmark#accessibility_self_service}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark#accessibility_self_service AppBookmark#accessibility_self_service}
   */
   readonly accessibilitySelfService?: boolean | cdktf.IResolvable;
   /**
   * Application notes for admins.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark.html#admin_note AppBookmark#admin_note}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark#admin_note AppBookmark#admin_note}
   */
   readonly adminNote?: string;
   /**
   * Displays specific appLinks for the app
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark.html#app_links_json AppBookmark#app_links_json}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark#app_links_json AppBookmark#app_links_json}
   */
   readonly appLinksJson?: string;
   /**
   * Display auto submit toolbar
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark.html#auto_submit_toolbar AppBookmark#auto_submit_toolbar}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark#auto_submit_toolbar AppBookmark#auto_submit_toolbar}
   */
   readonly autoSubmitToolbar?: boolean | cdktf.IResolvable;
   /**
   * Application notes for end users.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark.html#enduser_note AppBookmark#enduser_note}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark#enduser_note AppBookmark#enduser_note}
   */
   readonly enduserNote?: string;
   /**
   * Groups associated with the application
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark.html#groups AppBookmark#groups}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark#groups AppBookmark#groups}
   */
   readonly groups?: string[];
   /**
   * Do not display application icon on mobile app
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark.html#hide_ios AppBookmark#hide_ios}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark#hide_ios AppBookmark#hide_ios}
   */
   readonly hideIos?: boolean | cdktf.IResolvable;
   /**
   * Do not display application icon to users
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark.html#hide_web AppBookmark#hide_web}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark#hide_web AppBookmark#hide_web}
   */
   readonly hideWeb?: boolean | cdktf.IResolvable;
   /**
   * Pretty name of app.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark.html#label AppBookmark#label}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark#label AppBookmark#label}
   */
   readonly label: string;
   /**
   * Local path to logo of the application.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark.html#logo AppBookmark#logo}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark#logo AppBookmark#logo}
   */
   readonly logo?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark.html#request_integration AppBookmark#request_integration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark#request_integration AppBookmark#request_integration}
   */
   readonly requestIntegration?: boolean | cdktf.IResolvable;
   /**
   * Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark.html#skip_groups AppBookmark#skip_groups}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark#skip_groups AppBookmark#skip_groups}
   */
   readonly skipGroups?: boolean | cdktf.IResolvable;
   /**
   * Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark.html#skip_users AppBookmark#skip_users}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark#skip_users AppBookmark#skip_users}
   */
   readonly skipUsers?: boolean | cdktf.IResolvable;
   /**
   * Status of application.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark.html#status AppBookmark#status}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark#status AppBookmark#status}
   */
   readonly status?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark.html#url AppBookmark#url}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark#url AppBookmark#url}
   */
   readonly url: string;
   /**
   * users block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark.html#users AppBookmark#users}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark#users AppBookmark#users}
   */
   readonly users?: AppBookmarkUsers[];
 }
@@ -116,19 +116,19 @@ export interface AppBookmarkUsers {
   /**
   * User ID.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark.html#id AppBookmark#id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark#id AppBookmark#id}
   */
   readonly id?: string;
   /**
   * Password for user application.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark.html#password AppBookmark#password}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark#password AppBookmark#password}
   */
   readonly password?: string;
   /**
   * Username for user.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark.html#username AppBookmark#username}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark#username AppBookmark#username}
   */
   readonly username?: string;
 }
@@ -147,7 +147,7 @@ export function appBookmarkUsersToTerraform(struct?: AppBookmarkUsers): any {
 
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark.html okta_app_bookmark}
+* Represents a {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark okta_app_bookmark}
 */
 export class AppBookmark extends cdktf.TerraformResource {
 
@@ -161,7 +161,7 @@ export class AppBookmark extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark.html okta_app_bookmark} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark okta_app_bookmark} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

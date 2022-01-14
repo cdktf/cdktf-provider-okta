@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/d/app_metadata_saml.html
+// https://www.terraform.io/docs/providers/okta/d/app_metadata_saml
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,17 +8,17 @@ import * as cdktf from 'cdktf';
 
 export interface DataOktaAppMetadataSamlConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_metadata_saml.html#app_id DataOktaAppMetadataSaml#app_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_metadata_saml#app_id DataOktaAppMetadataSaml#app_id}
   */
   readonly appId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_metadata_saml.html#key_id DataOktaAppMetadataSaml#key_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_metadata_saml#key_id DataOktaAppMetadataSaml#key_id}
   */
   readonly keyId?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/d/app_metadata_saml.html okta_app_metadata_saml}
+* Represents a {@link https://www.terraform.io/docs/providers/okta/d/app_metadata_saml okta_app_metadata_saml}
 */
 export class DataOktaAppMetadataSaml extends cdktf.TerraformDataSource {
 
@@ -32,7 +32,7 @@ export class DataOktaAppMetadataSaml extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/d/app_metadata_saml.html okta_app_metadata_saml} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/okta/d/app_metadata_saml okta_app_metadata_saml} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

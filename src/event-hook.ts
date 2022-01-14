@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/r/event_hook.html
+// https://www.terraform.io/docs/providers/okta/r/event_hook
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,39 +8,39 @@ import * as cdktf from 'cdktf';
 
 export interface EventHookConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/event_hook.html#auth EventHook#auth}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/event_hook#auth EventHook#auth}
   */
   readonly auth?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/event_hook.html#channel EventHook#channel}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/event_hook#channel EventHook#channel}
   */
   readonly channel: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/event_hook.html#events EventHook#events}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/event_hook#events EventHook#events}
   */
   readonly events: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/event_hook.html#name EventHook#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/event_hook#name EventHook#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/event_hook.html#status EventHook#status}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/event_hook#status EventHook#status}
   */
   readonly status?: string;
   /**
   * headers block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/event_hook.html#headers EventHook#headers}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/event_hook#headers EventHook#headers}
   */
   readonly headers?: EventHookHeaders[];
 }
 export interface EventHookHeaders {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/event_hook.html#key EventHook#key}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/event_hook#key EventHook#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/event_hook.html#value EventHook#value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/event_hook#value EventHook#value}
   */
   readonly value?: string;
 }
@@ -58,7 +58,7 @@ export function eventHookHeadersToTerraform(struct?: EventHookHeaders): any {
 
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/r/event_hook.html okta_event_hook}
+* Represents a {@link https://www.terraform.io/docs/providers/okta/r/event_hook okta_event_hook}
 */
 export class EventHook extends cdktf.TerraformResource {
 
@@ -72,7 +72,7 @@ export class EventHook extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/event_hook.html okta_event_hook} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/event_hook okta_event_hook} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

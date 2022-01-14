@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/r/app_user.html
+// https://www.terraform.io/docs/providers/okta/r/app_user
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,37 +10,37 @@ export interface AppUserConfig extends cdktf.TerraformMetaArguments {
   /**
   * App to associate user with
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user.html#app_id AppUser#app_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user#app_id AppUser#app_id}
   */
   readonly appId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user.html#password AppUser#password}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user#password AppUser#password}
   */
   readonly password?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user.html#profile AppUser#profile}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user#profile AppUser#profile}
   */
   readonly profile?: string;
   /**
   * Retain the user assignment on destroy. If set to true, the resource will be removed from state but not from the Okta app.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user.html#retain_assignment AppUser#retain_assignment}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user#retain_assignment AppUser#retain_assignment}
   */
   readonly retainAssignment?: boolean | cdktf.IResolvable;
   /**
   * User associated with the application
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user.html#user_id AppUser#user_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user#user_id AppUser#user_id}
   */
   readonly userId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user.html#username AppUser#username}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user#username AppUser#username}
   */
   readonly username?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/r/app_user.html okta_app_user}
+* Represents a {@link https://www.terraform.io/docs/providers/okta/r/app_user okta_app_user}
 */
 export class AppUser extends cdktf.TerraformResource {
 
@@ -54,7 +54,7 @@ export class AppUser extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/app_user.html okta_app_user} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/app_user okta_app_user} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

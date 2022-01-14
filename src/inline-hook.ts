@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/r/inline_hook.html
+// https://www.terraform.io/docs/providers/okta/r/inline_hook
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,43 +8,43 @@ import * as cdktf from 'cdktf';
 
 export interface InlineHookConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook.html#auth InlineHook#auth}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook#auth InlineHook#auth}
   */
   readonly auth?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook.html#channel InlineHook#channel}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook#channel InlineHook#channel}
   */
   readonly channel: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook.html#name InlineHook#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook#name InlineHook#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook.html#status InlineHook#status}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook#status InlineHook#status}
   */
   readonly status?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook.html#type InlineHook#type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook#type InlineHook#type}
   */
   readonly type: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook.html#version InlineHook#version}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook#version InlineHook#version}
   */
   readonly version: string;
   /**
   * headers block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook.html#headers InlineHook#headers}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook#headers InlineHook#headers}
   */
   readonly headers?: InlineHookHeaders[];
 }
 export interface InlineHookHeaders {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook.html#key InlineHook#key}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook#key InlineHook#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook.html#value InlineHook#value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook#value InlineHook#value}
   */
   readonly value?: string;
 }
@@ -62,7 +62,7 @@ export function inlineHookHeadersToTerraform(struct?: InlineHookHeaders): any {
 
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/r/inline_hook.html okta_inline_hook}
+* Represents a {@link https://www.terraform.io/docs/providers/okta/r/inline_hook okta_inline_hook}
 */
 export class InlineHook extends cdktf.TerraformResource {
 
@@ -76,7 +76,7 @@ export class InlineHook extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/inline_hook.html okta_inline_hook} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/inline_hook okta_inline_hook} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

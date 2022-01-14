@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/r/email_sender_verification.html
+// https://www.terraform.io/docs/providers/okta/r/email_sender_verification
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,13 +10,13 @@ export interface EmailSenderVerificationConfig extends cdktf.TerraformMetaArgume
   /**
   * Email sender ID
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/email_sender_verification.html#sender_id EmailSenderVerification#sender_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/email_sender_verification#sender_id EmailSenderVerification#sender_id}
   */
   readonly senderId: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/r/email_sender_verification.html okta_email_sender_verification}
+* Represents a {@link https://www.terraform.io/docs/providers/okta/r/email_sender_verification okta_email_sender_verification}
 */
 export class EmailSenderVerification extends cdktf.TerraformResource {
 
@@ -30,7 +30,7 @@ export class EmailSenderVerification extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/email_sender_verification.html okta_email_sender_verification} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/email_sender_verification okta_email_sender_verification} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

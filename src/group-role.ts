@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/r/group_role.html
+// https://www.terraform.io/docs/providers/okta/r/group_role
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,37 +10,37 @@ export interface GroupRoleConfig extends cdktf.TerraformMetaArguments {
   /**
   * When this setting is enabled, the admins won't receive any of the default Okta administrator emails
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_role.html#disable_notifications GroupRole#disable_notifications}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_role#disable_notifications GroupRole#disable_notifications}
   */
   readonly disableNotifications?: boolean | cdktf.IResolvable;
   /**
   * ID of group to attach admin roles to
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_role.html#group_id GroupRole#group_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_role#group_id GroupRole#group_id}
   */
   readonly groupId: string;
   /**
   * Type of Role to assign
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_role.html#role_type GroupRole#role_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_role#role_type GroupRole#role_type}
   */
   readonly roleType: string;
   /**
   * List of apps ids for the targets of the admin role.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_role.html#target_app_list GroupRole#target_app_list}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_role#target_app_list GroupRole#target_app_list}
   */
   readonly targetAppList?: string[];
   /**
   * List of groups ids for the targets of the admin role.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_role.html#target_group_list GroupRole#target_group_list}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_role#target_group_list GroupRole#target_group_list}
   */
   readonly targetGroupList?: string[];
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/r/group_role.html okta_group_role}
+* Represents a {@link https://www.terraform.io/docs/providers/okta/r/group_role okta_group_role}
 */
 export class GroupRole extends cdktf.TerraformResource {
 
@@ -54,7 +54,7 @@ export class GroupRole extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/group_role.html okta_group_role} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/group_role okta_group_role} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

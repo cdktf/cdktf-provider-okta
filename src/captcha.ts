@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/r/captcha.html
+// https://www.terraform.io/docs/providers/okta/r/captcha
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,31 +10,31 @@ export interface CaptchaConfig extends cdktf.TerraformMetaArguments {
   /**
   * Name of the CAPTCHA
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/captcha.html#name Captcha#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/captcha#name Captcha#name}
   */
   readonly name: string;
   /**
   * Secret key issued from the CAPTCHA vendor to perform server-side validation for a CAPTCHA token
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/captcha.html#secret_key Captcha#secret_key}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/captcha#secret_key Captcha#secret_key}
   */
   readonly secretKey: string;
   /**
   * Site key issued from the CAPTCHA vendor to render a CAPTCHA on a page
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/captcha.html#site_key Captcha#site_key}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/captcha#site_key Captcha#site_key}
   */
   readonly siteKey: string;
   /**
   * Captcha type
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/captcha.html#type Captcha#type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/captcha#type Captcha#type}
   */
   readonly type: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/r/captcha.html okta_captcha}
+* Represents a {@link https://www.terraform.io/docs/providers/okta/r/captcha okta_captcha}
 */
 export class Captcha extends cdktf.TerraformResource {
 
@@ -48,7 +48,7 @@ export class Captcha extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/captcha.html okta_captcha} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/captcha okta_captcha} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

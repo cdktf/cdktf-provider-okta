@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/r/idp_oidc.html
+// https://www.terraform.io/docs/providers/okta/r/idp_oidc
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,157 +8,157 @@ import * as cdktf from 'cdktf';
 
 export interface IdpOidcConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#account_link_action IdpOidc#account_link_action}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#account_link_action IdpOidc#account_link_action}
   */
   readonly accountLinkAction?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#account_link_group_include IdpOidc#account_link_group_include}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#account_link_group_include IdpOidc#account_link_group_include}
   */
   readonly accountLinkGroupInclude?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#authorization_binding IdpOidc#authorization_binding}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#authorization_binding IdpOidc#authorization_binding}
   */
   readonly authorizationBinding: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#authorization_url IdpOidc#authorization_url}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#authorization_url IdpOidc#authorization_url}
   */
   readonly authorizationUrl: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#client_id IdpOidc#client_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#client_id IdpOidc#client_id}
   */
   readonly clientId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#client_secret IdpOidc#client_secret}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#client_secret IdpOidc#client_secret}
   */
   readonly clientSecret: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#deprovisioned_action IdpOidc#deprovisioned_action}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#deprovisioned_action IdpOidc#deprovisioned_action}
   */
   readonly deprovisionedAction?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#groups_action IdpOidc#groups_action}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#groups_action IdpOidc#groups_action}
   */
   readonly groupsAction?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#groups_assignment IdpOidc#groups_assignment}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#groups_assignment IdpOidc#groups_assignment}
   */
   readonly groupsAssignment?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#groups_attribute IdpOidc#groups_attribute}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#groups_attribute IdpOidc#groups_attribute}
   */
   readonly groupsAttribute?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#groups_filter IdpOidc#groups_filter}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#groups_filter IdpOidc#groups_filter}
   */
   readonly groupsFilter?: string[];
   /**
   * Indicates whether Okta uses the original Okta org domain URL, or a custom domain URL
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#issuer_mode IdpOidc#issuer_mode}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#issuer_mode IdpOidc#issuer_mode}
   */
   readonly issuerMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#issuer_url IdpOidc#issuer_url}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#issuer_url IdpOidc#issuer_url}
   */
   readonly issuerUrl: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#jwks_binding IdpOidc#jwks_binding}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#jwks_binding IdpOidc#jwks_binding}
   */
   readonly jwksBinding: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#jwks_url IdpOidc#jwks_url}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#jwks_url IdpOidc#jwks_url}
   */
   readonly jwksUrl: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#max_clock_skew IdpOidc#max_clock_skew}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#max_clock_skew IdpOidc#max_clock_skew}
   */
   readonly maxClockSkew?: number;
   /**
   * Name of the IdP
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#name IdpOidc#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#name IdpOidc#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#profile_master IdpOidc#profile_master}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#profile_master IdpOidc#profile_master}
   */
   readonly profileMaster?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#protocol_type IdpOidc#protocol_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#protocol_type IdpOidc#protocol_type}
   */
   readonly protocolType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#provisioning_action IdpOidc#provisioning_action}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#provisioning_action IdpOidc#provisioning_action}
   */
   readonly provisioningAction?: string;
   /**
   * algorithm to use to sign requests
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#request_signature_algorithm IdpOidc#request_signature_algorithm}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#request_signature_algorithm IdpOidc#request_signature_algorithm}
   */
   readonly requestSignatureAlgorithm?: string;
   /**
   * algorithm to use to sign response
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#request_signature_scope IdpOidc#request_signature_scope}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#request_signature_scope IdpOidc#request_signature_scope}
   */
   readonly requestSignatureScope?: string;
   /**
   * algorithm to use to sign requests
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#response_signature_algorithm IdpOidc#response_signature_algorithm}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#response_signature_algorithm IdpOidc#response_signature_algorithm}
   */
   readonly responseSignatureAlgorithm?: string;
   /**
   * algorithm to use to sign response
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#response_signature_scope IdpOidc#response_signature_scope}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#response_signature_scope IdpOidc#response_signature_scope}
   */
   readonly responseSignatureScope?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#scopes IdpOidc#scopes}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#scopes IdpOidc#scopes}
   */
   readonly scopes: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#status IdpOidc#status}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#status IdpOidc#status}
   */
   readonly status?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#subject_match_attribute IdpOidc#subject_match_attribute}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#subject_match_attribute IdpOidc#subject_match_attribute}
   */
   readonly subjectMatchAttribute?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#subject_match_type IdpOidc#subject_match_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#subject_match_type IdpOidc#subject_match_type}
   */
   readonly subjectMatchType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#suspended_action IdpOidc#suspended_action}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#suspended_action IdpOidc#suspended_action}
   */
   readonly suspendedAction?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#token_binding IdpOidc#token_binding}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#token_binding IdpOidc#token_binding}
   */
   readonly tokenBinding: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#token_url IdpOidc#token_url}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#token_url IdpOidc#token_url}
   */
   readonly tokenUrl: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#user_info_binding IdpOidc#user_info_binding}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#user_info_binding IdpOidc#user_info_binding}
   */
   readonly userInfoBinding?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#user_info_url IdpOidc#user_info_url}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#user_info_url IdpOidc#user_info_url}
   */
   readonly userInfoUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html#username_template IdpOidc#username_template}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#username_template IdpOidc#username_template}
   */
   readonly usernameTemplate?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html okta_idp_oidc}
+* Represents a {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc okta_idp_oidc}
 */
 export class IdpOidc extends cdktf.TerraformResource {
 
@@ -172,7 +172,7 @@ export class IdpOidc extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc.html okta_idp_oidc} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc okta_idp_oidc} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

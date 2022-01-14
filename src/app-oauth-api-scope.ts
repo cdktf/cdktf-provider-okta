@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/r/app_oauth_api_scope.html
+// https://www.terraform.io/docs/providers/okta/r/app_oauth_api_scope
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,25 +10,25 @@ export interface AppOauthApiScopeConfig extends cdktf.TerraformMetaArguments {
   /**
   * ID of the application.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth_api_scope.html#app_id AppOauthApiScope#app_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth_api_scope#app_id AppOauthApiScope#app_id}
   */
   readonly appId: string;
   /**
   * The issuer of your Org Authorization Server, your Org URL.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth_api_scope.html#issuer AppOauthApiScope#issuer}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth_api_scope#issuer AppOauthApiScope#issuer}
   */
   readonly issuer: string;
   /**
   * Scopes of the application for which consent is granted.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth_api_scope.html#scopes AppOauthApiScope#scopes}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth_api_scope#scopes AppOauthApiScope#scopes}
   */
   readonly scopes: string[];
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/r/app_oauth_api_scope.html okta_app_oauth_api_scope}
+* Represents a {@link https://www.terraform.io/docs/providers/okta/r/app_oauth_api_scope okta_app_oauth_api_scope}
 */
 export class AppOauthApiScope extends cdktf.TerraformResource {
 
@@ -42,7 +42,7 @@ export class AppOauthApiScope extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/app_oauth_api_scope.html okta_app_oauth_api_scope} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/app_oauth_api_scope okta_app_oauth_api_scope} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

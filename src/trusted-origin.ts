@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/r/trusted_origin.html
+// https://www.terraform.io/docs/providers/okta/r/trusted_origin
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,31 +10,31 @@ export interface TrustedOriginConfig extends cdktf.TerraformMetaArguments {
   /**
   * Whether the Trusted Origin is active or not - can only be issued post-creation
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/trusted_origin.html#active TrustedOrigin#active}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/trusted_origin#active TrustedOrigin#active}
   */
   readonly active?: boolean | cdktf.IResolvable;
   /**
   * Unique name for this trusted origin
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/trusted_origin.html#name TrustedOrigin#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/trusted_origin#name TrustedOrigin#name}
   */
   readonly name: string;
   /**
   * Unique origin URL for this trusted origin
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/trusted_origin.html#origin TrustedOrigin#origin}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/trusted_origin#origin TrustedOrigin#origin}
   */
   readonly origin: string;
   /**
   * Scopes of the Trusted Origin - can either be CORS or REDIRECT only
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/trusted_origin.html#scopes TrustedOrigin#scopes}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/trusted_origin#scopes TrustedOrigin#scopes}
   */
   readonly scopes: string[];
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/r/trusted_origin.html okta_trusted_origin}
+* Represents a {@link https://www.terraform.io/docs/providers/okta/r/trusted_origin okta_trusted_origin}
 */
 export class TrustedOrigin extends cdktf.TerraformResource {
 
@@ -48,7 +48,7 @@ export class TrustedOrigin extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/trusted_origin.html okta_trusted_origin} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/trusted_origin okta_trusted_origin} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

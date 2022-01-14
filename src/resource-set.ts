@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/r/resource_set.html
+// https://www.terraform.io/docs/providers/okta/r/resource_set
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,25 +10,25 @@ export interface ResourceSetConfig extends cdktf.TerraformMetaArguments {
   /**
   * A description of the Resource Set
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/resource_set.html#description ResourceSet#description}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/resource_set#description ResourceSet#description}
   */
   readonly description: string;
   /**
   * Unique name given to the Resource Set
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/resource_set.html#label ResourceSet#label}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/resource_set#label ResourceSet#label}
   */
   readonly label: string;
   /**
   * The endpoints that reference the resources to be included in the new Resource Set
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/resource_set.html#resources ResourceSet#resources}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/resource_set#resources ResourceSet#resources}
   */
   readonly resources?: string[];
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/r/resource_set.html okta_resource_set}
+* Represents a {@link https://www.terraform.io/docs/providers/okta/r/resource_set okta_resource_set}
 */
 export class ResourceSet extends cdktf.TerraformResource {
 
@@ -42,7 +42,7 @@ export class ResourceSet extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/resource_set.html okta_resource_set} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/resource_set okta_resource_set} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

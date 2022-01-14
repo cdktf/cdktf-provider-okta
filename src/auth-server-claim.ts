@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/r/auth_server_claim.html
+// https://www.terraform.io/docs/providers/okta/r/auth_server_claim
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,53 +8,53 @@ import * as cdktf from 'cdktf';
 
 export interface AuthServerClaimConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_claim.html#always_include_in_token AuthServerClaim#always_include_in_token}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_claim#always_include_in_token AuthServerClaim#always_include_in_token}
   */
   readonly alwaysIncludeInToken?: boolean | cdktf.IResolvable;
   /**
   * Auth server ID
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_claim.html#auth_server_id AuthServerClaim#auth_server_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_claim#auth_server_id AuthServerClaim#auth_server_id}
   */
   readonly authServerId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_claim.html#claim_type AuthServerClaim#claim_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_claim#claim_type AuthServerClaim#claim_type}
   */
   readonly claimType: string;
   /**
   * Required when value_type is GROUPS
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_claim.html#group_filter_type AuthServerClaim#group_filter_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_claim#group_filter_type AuthServerClaim#group_filter_type}
   */
   readonly groupFilterType?: string;
   /**
   * Auth server claim name
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_claim.html#name AuthServerClaim#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_claim#name AuthServerClaim#name}
   */
   readonly name: string;
   /**
   * Auth server claim list of scopes
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_claim.html#scopes AuthServerClaim#scopes}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_claim#scopes AuthServerClaim#scopes}
   */
   readonly scopes?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_claim.html#status AuthServerClaim#status}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_claim#status AuthServerClaim#status}
   */
   readonly status?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_claim.html#value AuthServerClaim#value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_claim#value AuthServerClaim#value}
   */
   readonly value: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_claim.html#value_type AuthServerClaim#value_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_claim#value_type AuthServerClaim#value_type}
   */
   readonly valueType?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/r/auth_server_claim.html okta_auth_server_claim}
+* Represents a {@link https://www.terraform.io/docs/providers/okta/r/auth_server_claim okta_auth_server_claim}
 */
 export class AuthServerClaim extends cdktf.TerraformResource {
 
@@ -68,7 +68,7 @@ export class AuthServerClaim extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/auth_server_claim.html okta_auth_server_claim} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/auth_server_claim okta_auth_server_claim} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

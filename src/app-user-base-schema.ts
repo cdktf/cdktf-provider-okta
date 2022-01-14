@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/r/app_user_base_schema.html
+// https://www.terraform.io/docs/providers/okta/r/app_user_base_schema
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,61 +8,61 @@ import * as cdktf from 'cdktf';
 
 export interface AppUserBaseSchemaConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema.html#app_id AppUserBaseSchema#app_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema#app_id AppUserBaseSchema#app_id}
   */
   readonly appId: string;
   /**
   * Subschema unique string identifier
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema.html#index AppUserBaseSchema#index}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema#index AppUserBaseSchema#index}
   */
   readonly index: string;
   /**
   * SubSchema profile manager, if not set it will inherit its setting.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema.html#master AppUserBaseSchema#master}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema#master AppUserBaseSchema#master}
   */
   readonly master?: string;
   /**
   * The validation pattern to use for the subschema. Must be in form of '.+', or '[<pattern>]+' if present.'
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema.html#pattern AppUserBaseSchema#pattern}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema#pattern AppUserBaseSchema#pattern}
   */
   readonly pattern?: string;
   /**
   * SubSchema permissions: HIDE, READ_ONLY, or READ_WRITE.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema.html#permissions AppUserBaseSchema#permissions}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema#permissions AppUserBaseSchema#permissions}
   */
   readonly permissions?: string;
   /**
   * Whether the subschema is required
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema.html#required AppUserBaseSchema#required}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema#required AppUserBaseSchema#required}
   */
   readonly required?: boolean | cdktf.IResolvable;
   /**
   * Subschema title (display name)
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema.html#title AppUserBaseSchema#title}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema#title AppUserBaseSchema#title}
   */
   readonly title: string;
   /**
   * Subschema type: string, boolean, number, integer, array, or object
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema.html#type AppUserBaseSchema#type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema#type AppUserBaseSchema#type}
   */
   readonly type: string;
   /**
   * Custom subschema user type
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema.html#user_type AppUserBaseSchema#user_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema#user_type AppUserBaseSchema#user_type}
   */
   readonly userType?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema.html okta_app_user_base_schema}
+* Represents a {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema okta_app_user_base_schema}
 */
 export class AppUserBaseSchema extends cdktf.TerraformResource {
 
@@ -76,7 +76,7 @@ export class AppUserBaseSchema extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema.html okta_app_user_base_schema} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema okta_app_user_base_schema} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
