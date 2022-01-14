@@ -8,6 +8,12 @@ import * as cdktf from 'cdktf';
 
 export interface GroupConfig extends cdktf.TerraformMetaArguments {
   /**
+  * JSON formatted custom attributes for a group. It must be JSON due to various types Okta allows.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group#custom_profile_attributes Group#custom_profile_attributes}
+  */
+  readonly customProfileAttributes?: string;
+  /**
   * Group description
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group#description Group#description}
@@ -65,6 +71,7 @@ export class Group extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._customProfileAttributes = config.customProfileAttributes;
     this._description = config.description;
     this._name = config.name;
     this._skipUsers = config.skipUsers;
@@ -74,6 +81,22 @@ export class Group extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // custom_profile_attributes - computed: false, optional: true, required: false
+  private _customProfileAttributes?: string; 
+  public get customProfileAttributes() {
+    return this.getStringAttribute('custom_profile_attributes');
+  }
+  public set customProfileAttributes(value: string) {
+    this._customProfileAttributes = value;
+  }
+  public resetCustomProfileAttributes() {
+    this._customProfileAttributes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get customProfileAttributesInput() {
+    return this._customProfileAttributes;
+  }
 
   // description - computed: false, optional: true, required: false
   private _description?: string; 
@@ -147,6 +170,7 @@ export class Group extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      custom_profile_attributes: cdktf.stringToTerraform(this._customProfileAttributes),
       description: cdktf.stringToTerraform(this._description),
       name: cdktf.stringToTerraform(this._name),
       skip_users: cdktf.booleanToTerraform(this._skipUsers),

@@ -24885,6 +24885,7 @@ Must be unique amongst siblings in the same scope
 | **Name** | **Description** |
 | --- | --- |
 | [`dnsRecords`](#cdktfprovideroktadomaindnsrecords) | *No description.* |
+| [`resetCertificateSourceType`](#cdktfprovideroktadomainresetcertificatesourcetype) | *No description.* |
 | [`resetVerify`](#cdktfprovideroktadomainresetverify) | *No description.* |
 
 ---
@@ -24901,6 +24902,12 @@ public dnsRecords(index: string)
 
 ---
 
+##### `resetCertificateSourceType` <a name="@cdktf/provider-okta.Domain.resetCertificateSourceType" id="cdktfprovideroktadomainresetcertificatesourcetype"></a>
+
+```typescript
+public resetCertificateSourceType()
+```
+
 ##### `resetVerify` <a name="@cdktf/provider-okta.Domain.resetVerify" id="cdktfprovideroktadomainresetverify"></a>
 
 ```typescript
@@ -24914,8 +24921,10 @@ public resetVerify()
 | --- | --- | --- |
 | [`id`](#cdktfprovideroktadomainpropertyid)<span title="Required">*</span> | `string` | *No description.* |
 | [`validationStatus`](#cdktfprovideroktadomainpropertyvalidationstatus)<span title="Required">*</span> | `string` | *No description.* |
+| [`certificateSourceTypeInput`](#cdktfprovideroktadomainpropertycertificatesourcetypeinput) | `string` | *No description.* |
 | [`nameInput`](#cdktfprovideroktadomainpropertynameinput) | `string` | *No description.* |
 | [`verifyInput`](#cdktfprovideroktadomainpropertyverifyinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`certificateSourceType`](#cdktfprovideroktadomainpropertycertificatesourcetype)<span title="Required">*</span> | `string` | *No description.* |
 | [`name`](#cdktfprovideroktadomainpropertyname)<span title="Required">*</span> | `string` | *No description.* |
 | [`verify`](#cdktfprovideroktadomainpropertyverify)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 
@@ -24941,6 +24950,16 @@ public readonly validationStatus: string;
 
 ---
 
+##### `certificateSourceTypeInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.Domain.property.certificateSourceTypeInput" id="cdktfprovideroktadomainpropertycertificatesourcetypeinput"></a>
+
+```typescript
+public readonly certificateSourceTypeInput: string;
+```
+
+- *Type:* `string`
+
+---
+
 ##### `nameInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.Domain.property.nameInput" id="cdktfprovideroktadomainpropertynameinput"></a>
 
 ```typescript
@@ -24958,6 +24977,16 @@ public readonly verifyInput: boolean | IResolvable;
 ```
 
 - *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `certificateSourceType`<sup>Required</sup> <a name="@cdktf/provider-okta.Domain.property.certificateSourceType" id="cdktfprovideroktadomainpropertycertificatesourcetype"></a>
+
+```typescript
+public readonly certificateSourceType: string;
+```
+
+- *Type:* `string`
 
 ---
 
@@ -26341,11 +26370,18 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
+| [`resetCustomProfileAttributes`](#cdktfprovideroktagroupresetcustomprofileattributes) | *No description.* |
 | [`resetDescription`](#cdktfprovideroktagroupresetdescription) | *No description.* |
 | [`resetSkipUsers`](#cdktfprovideroktagroupresetskipusers) | *No description.* |
 | [`resetUsers`](#cdktfprovideroktagroupresetusers) | *No description.* |
 
 ---
+
+##### `resetCustomProfileAttributes` <a name="@cdktf/provider-okta.Group.resetCustomProfileAttributes" id="cdktfprovideroktagroupresetcustomprofileattributes"></a>
+
+```typescript
+public resetCustomProfileAttributes()
+```
 
 ##### `resetDescription` <a name="@cdktf/provider-okta.Group.resetDescription" id="cdktfprovideroktagroupresetdescription"></a>
 
@@ -26371,10 +26407,12 @@ public resetUsers()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | [`id`](#cdktfprovideroktagrouppropertyid)<span title="Required">*</span> | `string` | *No description.* |
+| [`customProfileAttributesInput`](#cdktfprovideroktagrouppropertycustomprofileattributesinput) | `string` | *No description.* |
 | [`descriptionInput`](#cdktfprovideroktagrouppropertydescriptioninput) | `string` | *No description.* |
 | [`nameInput`](#cdktfprovideroktagrouppropertynameinput) | `string` | *No description.* |
 | [`skipUsersInput`](#cdktfprovideroktagrouppropertyskipusersinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`usersInput`](#cdktfprovideroktagrouppropertyusersinput) | `string`[] | *No description.* |
+| [`customProfileAttributes`](#cdktfprovideroktagrouppropertycustomprofileattributes)<span title="Required">*</span> | `string` | *No description.* |
 | [`description`](#cdktfprovideroktagrouppropertydescription)<span title="Required">*</span> | `string` | *No description.* |
 | [`name`](#cdktfprovideroktagrouppropertyname)<span title="Required">*</span> | `string` | *No description.* |
 | [`skipUsers`](#cdktfprovideroktagrouppropertyskipusers)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
@@ -26386,6 +26424,16 @@ public resetUsers()
 
 ```typescript
 public readonly id: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `customProfileAttributesInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.Group.property.customProfileAttributesInput" id="cdktfprovideroktagrouppropertycustomprofileattributesinput"></a>
+
+```typescript
+public readonly customProfileAttributesInput: string;
 ```
 
 - *Type:* `string`
@@ -26429,6 +26477,16 @@ public readonly usersInput: string[];
 ```
 
 - *Type:* `string`[]
+
+---
+
+##### `customProfileAttributes`<sup>Required</sup> <a name="@cdktf/provider-okta.Group.property.customProfileAttributes" id="cdktfprovideroktagrouppropertycustomprofileattributes"></a>
+
+```typescript
+public readonly customProfileAttributes: string;
+```
+
+- *Type:* `string`
 
 ---
 
@@ -71455,6 +71513,7 @@ const domainConfig: DomainConfig = { ... }
 | [`lifecycle`](#cdktfprovideroktadomainconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktadomainconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
 | [`name`](#cdktfprovideroktadomainconfigpropertyname)<span title="Required">*</span> | `string` | Custom Domain name. |
+| [`certificateSourceType`](#cdktfprovideroktadomainconfigpropertycertificatesourcetype) | `string` | Optional. |
 | [`verify`](#cdktfprovideroktadomainconfigpropertyverify) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Indicates whether the domain should be verified during creation. |
 
 ---
@@ -71510,6 +71569,20 @@ public readonly name: string;
 Custom Domain name.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/domain#name Domain#name}
+
+---
+
+##### `certificateSourceType`<sup>Optional</sup> <a name="@cdktf/provider-okta.DomainConfig.property.certificateSourceType" id="cdktfprovideroktadomainconfigpropertycertificatesourcetype"></a>
+
+```typescript
+public readonly certificateSourceType: string;
+```
+
+- *Type:* `string`
+
+Optional.
+
+Certificate source type that indicates whether the certificate is provided by the user or Okta. Accepted values: MANUAL, OKTA_MANAGED. Warning: Use of OKTA_MANAGED requires a feature flag to be enabled. Default value = MANUAL  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/domain#certificate_source_type Domain#certificate_source_type}
 
 ---
 
@@ -72306,6 +72379,7 @@ const groupConfig: GroupConfig = { ... }
 | [`lifecycle`](#cdktfprovideroktagroupconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktagroupconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
 | [`name`](#cdktfprovideroktagroupconfigpropertyname)<span title="Required">*</span> | `string` | Group name. |
+| [`customProfileAttributes`](#cdktfprovideroktagroupconfigpropertycustomprofileattributes) | `string` | JSON formatted custom attributes for a group. It must be JSON due to various types Okta allows. |
 | [`description`](#cdktfprovideroktagroupconfigpropertydescription) | `string` | Group description. |
 | [`skipUsers`](#cdktfprovideroktagroupconfigpropertyskipusers) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Ignore users sync. This is a temporary solution until 'users' field is supported in this resource. |
 | [`users`](#cdktfprovideroktagroupconfigpropertyusers) | `string`[] | Users associated with the group. This can also be done per user. |
@@ -72363,6 +72437,20 @@ public readonly name: string;
 Group name.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group#name Group#name}
+
+---
+
+##### `customProfileAttributes`<sup>Optional</sup> <a name="@cdktf/provider-okta.GroupConfig.property.customProfileAttributes" id="cdktfprovideroktagroupconfigpropertycustomprofileattributes"></a>
+
+```typescript
+public readonly customProfileAttributes: string;
+```
+
+- *Type:* `string`
+
+JSON formatted custom attributes for a group. It must be JSON due to various types Okta allows.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group#custom_profile_attributes Group#custom_profile_attributes}
 
 ---
 
