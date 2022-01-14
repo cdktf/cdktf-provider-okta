@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/d/user_security_questions.html
+// https://www.terraform.io/docs/providers/okta/d/user_security_questions
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,7 +10,7 @@ export interface DataOktaUserSecurityQuestionsConfig extends cdktf.TerraformMeta
   /**
   * ID of a Okta User
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/user_security_questions.html#user_id DataOktaUserSecurityQuestions#user_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/user_security_questions#user_id DataOktaUserSecurityQuestions#user_id}
   */
   readonly userId: string;
 }
@@ -28,7 +28,7 @@ export class DataOktaUserSecurityQuestionsQuestions extends cdktf.ComplexCompute
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/d/user_security_questions.html okta_user_security_questions}
+* Represents a {@link https://www.terraform.io/docs/providers/okta/d/user_security_questions okta_user_security_questions}
 */
 export class DataOktaUserSecurityQuestions extends cdktf.TerraformDataSource {
 
@@ -42,7 +42,7 @@ export class DataOktaUserSecurityQuestions extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/d/user_security_questions.html okta_user_security_questions} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/okta/d/user_security_questions okta_user_security_questions} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

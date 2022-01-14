@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/d/trusted_origins.html
+// https://www.terraform.io/docs/providers/okta/d/trusted_origins
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,7 +10,7 @@ export interface DataOktaTrustedOriginsConfig extends cdktf.TerraformMetaArgumen
   /**
   * Filter criteria. Filter value will be URL-encoded by the provider
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/trusted_origins.html#filter DataOktaTrustedOrigins#filter}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/trusted_origins#filter DataOktaTrustedOrigins#filter}
   */
   readonly filter?: string;
 }
@@ -43,7 +43,7 @@ export class DataOktaTrustedOriginsTrustedOrigins extends cdktf.ComplexComputedL
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/d/trusted_origins.html okta_trusted_origins}
+* Represents a {@link https://www.terraform.io/docs/providers/okta/d/trusted_origins okta_trusted_origins}
 */
 export class DataOktaTrustedOrigins extends cdktf.TerraformDataSource {
 
@@ -57,7 +57,7 @@ export class DataOktaTrustedOrigins extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/d/trusted_origins.html okta_trusted_origins} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/okta/d/trusted_origins okta_trusted_origins} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

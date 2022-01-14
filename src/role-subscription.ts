@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/r/role_subscription.html
+// https://www.terraform.io/docs/providers/okta/r/role_subscription
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,25 +10,25 @@ export interface RoleSubscriptionConfig extends cdktf.TerraformMetaArguments {
   /**
   * Type of the notification
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/role_subscription.html#notification_type RoleSubscription#notification_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/role_subscription#notification_type RoleSubscription#notification_type}
   */
   readonly notificationType: string;
   /**
   * Type of the role
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/role_subscription.html#role_type RoleSubscription#role_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/role_subscription#role_type RoleSubscription#role_type}
   */
   readonly roleType: string;
   /**
   * Status of subscription
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/role_subscription.html#status RoleSubscription#status}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/role_subscription#status RoleSubscription#status}
   */
   readonly status?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/r/role_subscription.html okta_role_subscription}
+* Represents a {@link https://www.terraform.io/docs/providers/okta/r/role_subscription okta_role_subscription}
 */
 export class RoleSubscription extends cdktf.TerraformResource {
 
@@ -42,7 +42,7 @@ export class RoleSubscription extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/role_subscription.html okta_role_subscription} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/role_subscription okta_role_subscription} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

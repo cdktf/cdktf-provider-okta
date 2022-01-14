@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/r/factor.html
+// https://www.terraform.io/docs/providers/okta/r/factor
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,19 +10,19 @@ export interface FactorConfig extends cdktf.TerraformMetaArguments {
   /**
   * Is this provider active?
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/factor.html#active Factor#active}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/factor#active Factor#active}
   */
   readonly active?: boolean | cdktf.IResolvable;
   /**
   * Factor provider ID
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/factor.html#provider_id Factor#provider_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/factor#provider_id Factor#provider_id}
   */
   readonly providerId: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/r/factor.html okta_factor}
+* Represents a {@link https://www.terraform.io/docs/providers/okta/r/factor okta_factor}
 */
 export class Factor extends cdktf.TerraformResource {
 
@@ -36,7 +36,7 @@ export class Factor extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/factor.html okta_factor} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/factor okta_factor} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

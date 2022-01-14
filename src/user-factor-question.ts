@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/r/user_factor_question.html
+// https://www.terraform.io/docs/providers/okta/r/user_factor_question
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,25 +10,25 @@ export interface UserFactorQuestionConfig extends cdktf.TerraformMetaArguments {
   /**
   * User password security answer
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_factor_question.html#answer UserFactorQuestion#answer}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_factor_question#answer UserFactorQuestion#answer}
   */
   readonly answer: string;
   /**
   * Unique key for question
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_factor_question.html#key UserFactorQuestion#key}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_factor_question#key UserFactorQuestion#key}
   */
   readonly key: string;
   /**
   * ID of a Okta User
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_factor_question.html#user_id UserFactorQuestion#user_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_factor_question#user_id UserFactorQuestion#user_id}
   */
   readonly userId: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/r/user_factor_question.html okta_user_factor_question}
+* Represents a {@link https://www.terraform.io/docs/providers/okta/r/user_factor_question okta_user_factor_question}
 */
 export class UserFactorQuestion extends cdktf.TerraformResource {
 
@@ -42,7 +42,7 @@ export class UserFactorQuestion extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/user_factor_question.html okta_user_factor_question} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/user_factor_question okta_user_factor_question} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

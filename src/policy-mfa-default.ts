@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/r/policy_mfa_default.html
+// https://www.terraform.io/docs/providers/okta/r/policy_mfa_default
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,69 +8,69 @@ import * as cdktf from 'cdktf';
 
 export interface PolicyMfaDefaultConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default.html#duo PolicyMfaDefault#duo}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#duo PolicyMfaDefault#duo}
   */
   readonly duo?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default.html#fido_u2f PolicyMfaDefault#fido_u2f}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#fido_u2f PolicyMfaDefault#fido_u2f}
   */
   readonly fidoU2F?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default.html#fido_webauthn PolicyMfaDefault#fido_webauthn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#fido_webauthn PolicyMfaDefault#fido_webauthn}
   */
   readonly fidoWebauthn?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default.html#google_otp PolicyMfaDefault#google_otp}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#google_otp PolicyMfaDefault#google_otp}
   */
   readonly googleOtp?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default.html#hotp PolicyMfaDefault#hotp}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#hotp PolicyMfaDefault#hotp}
   */
   readonly hotp?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default.html#okta_call PolicyMfaDefault#okta_call}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#okta_call PolicyMfaDefault#okta_call}
   */
   readonly oktaCall?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default.html#okta_email PolicyMfaDefault#okta_email}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#okta_email PolicyMfaDefault#okta_email}
   */
   readonly oktaEmail?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default.html#okta_otp PolicyMfaDefault#okta_otp}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#okta_otp PolicyMfaDefault#okta_otp}
   */
   readonly oktaOtp?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default.html#okta_password PolicyMfaDefault#okta_password}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#okta_password PolicyMfaDefault#okta_password}
   */
   readonly oktaPassword?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default.html#okta_push PolicyMfaDefault#okta_push}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#okta_push PolicyMfaDefault#okta_push}
   */
   readonly oktaPush?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default.html#okta_question PolicyMfaDefault#okta_question}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#okta_question PolicyMfaDefault#okta_question}
   */
   readonly oktaQuestion?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default.html#okta_sms PolicyMfaDefault#okta_sms}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#okta_sms PolicyMfaDefault#okta_sms}
   */
   readonly oktaSms?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default.html#rsa_token PolicyMfaDefault#rsa_token}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#rsa_token PolicyMfaDefault#rsa_token}
   */
   readonly rsaToken?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default.html#symantec_vip PolicyMfaDefault#symantec_vip}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#symantec_vip PolicyMfaDefault#symantec_vip}
   */
   readonly symantecVip?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default.html#yubikey_token PolicyMfaDefault#yubikey_token}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#yubikey_token PolicyMfaDefault#yubikey_token}
   */
   readonly yubikeyToken?: { [key: string]: string } | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default.html okta_policy_mfa_default}
+* Represents a {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default okta_policy_mfa_default}
 */
 export class PolicyMfaDefault extends cdktf.TerraformResource {
 
@@ -84,7 +84,7 @@ export class PolicyMfaDefault extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default.html okta_policy_mfa_default} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default okta_policy_mfa_default} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

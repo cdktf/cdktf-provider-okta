@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/d/app_oauth.html
+// https://www.terraform.io/docs/providers/okta/d/app_oauth
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,37 +10,37 @@ export interface DataOktaAppOauthConfig extends cdktf.TerraformMetaArguments {
   /**
   * Search only ACTIVE applications.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_oauth.html#active_only DataOktaAppOauth#active_only}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_oauth#active_only DataOktaAppOauth#active_only}
   */
   readonly activeOnly?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_oauth.html#id DataOktaAppOauth#id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_oauth#id DataOktaAppOauth#id}
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_oauth.html#label DataOktaAppOauth#label}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_oauth#label DataOktaAppOauth#label}
   */
   readonly label?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_oauth.html#label_prefix DataOktaAppOauth#label_prefix}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_oauth#label_prefix DataOktaAppOauth#label_prefix}
   */
   readonly labelPrefix?: string;
   /**
   * Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_oauth.html#skip_groups DataOktaAppOauth#skip_groups}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_oauth#skip_groups DataOktaAppOauth#skip_groups}
   */
   readonly skipGroups?: boolean | cdktf.IResolvable;
   /**
   * Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_oauth.html#skip_users DataOktaAppOauth#skip_users}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_oauth#skip_users DataOktaAppOauth#skip_users}
   */
   readonly skipUsers?: boolean | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/d/app_oauth.html okta_app_oauth}
+* Represents a {@link https://www.terraform.io/docs/providers/okta/d/app_oauth okta_app_oauth}
 */
 export class DataOktaAppOauth extends cdktf.TerraformDataSource {
 
@@ -54,7 +54,7 @@ export class DataOktaAppOauth extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/d/app_oauth.html okta_app_oauth} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/okta/d/app_oauth okta_app_oauth} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/d/app_signon_policy.html
+// https://www.terraform.io/docs/providers/okta/d/app_signon_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,13 +10,13 @@ export interface DataOktaAppSignonPolicyConfig extends cdktf.TerraformMetaArgume
   /**
   * App ID
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_signon_policy.html#app_id DataOktaAppSignonPolicy#app_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_signon_policy#app_id DataOktaAppSignonPolicy#app_id}
   */
   readonly appId: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/d/app_signon_policy.html okta_app_signon_policy}
+* Represents a {@link https://www.terraform.io/docs/providers/okta/d/app_signon_policy okta_app_signon_policy}
 */
 export class DataOktaAppSignonPolicy extends cdktf.TerraformDataSource {
 
@@ -30,7 +30,7 @@ export class DataOktaAppSignonPolicy extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/d/app_signon_policy.html okta_app_signon_policy} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/okta/d/app_signon_policy okta_app_signon_policy} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

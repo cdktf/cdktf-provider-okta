@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/r/domain_verification.html
+// https://www.terraform.io/docs/providers/okta/r/domain_verification
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,13 +10,13 @@ export interface DomainVerificationConfig extends cdktf.TerraformMetaArguments {
   /**
   * Domain's ID
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/domain_verification.html#domain_id DomainVerification#domain_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/domain_verification#domain_id DomainVerification#domain_id}
   */
   readonly domainId: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/r/domain_verification.html okta_domain_verification}
+* Represents a {@link https://www.terraform.io/docs/providers/okta/r/domain_verification okta_domain_verification}
 */
 export class DomainVerification extends cdktf.TerraformResource {
 
@@ -30,7 +30,7 @@ export class DomainVerification extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/domain_verification.html okta_domain_verification} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/domain_verification okta_domain_verification} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

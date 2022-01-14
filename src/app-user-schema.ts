@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/r/app_user_schema.html
+// https://www.terraform.io/docs/providers/okta/r/app_user_schema
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,125 +8,125 @@ import * as cdktf from 'cdktf';
 
 export interface AppUserSchemaConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema.html#app_id AppUserSchema#app_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema#app_id AppUserSchema#app_id}
   */
   readonly appId: string;
   /**
   * Custom Subschema enumerated value of a property of type array.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema.html#array_enum AppUserSchema#array_enum}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema#array_enum AppUserSchema#array_enum}
   */
   readonly arrayEnum?: string[];
   /**
   * Subschema array type: string, number, integer, reference. Type field must be an array.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema.html#array_type AppUserSchema#array_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema#array_type AppUserSchema#array_type}
   */
   readonly arrayType?: string;
   /**
   * Custom Subschema description
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema.html#description AppUserSchema#description}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema#description AppUserSchema#description}
   */
   readonly description?: string;
   /**
   * Custom Subschema enumerated value of the property. see: developer.okta.com/docs/api/resources/schemas#user-profile-schema-property-object
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema.html#enum AppUserSchema#enum}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema#enum AppUserSchema#enum}
   */
   readonly enum?: string[];
   /**
   * Subschema external name
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema.html#external_name AppUserSchema#external_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema#external_name AppUserSchema#external_name}
   */
   readonly externalName?: string;
   /**
   * Subschema external namespace
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema.html#external_namespace AppUserSchema#external_namespace}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema#external_namespace AppUserSchema#external_namespace}
   */
   readonly externalNamespace?: string;
   /**
   * Subschema unique string identifier
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema.html#index AppUserSchema#index}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema#index AppUserSchema#index}
   */
   readonly index: string;
   /**
   * SubSchema profile manager, if not set it will inherit its setting.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema.html#master AppUserSchema#master}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema#master AppUserSchema#master}
   */
   readonly master?: string;
   /**
   * Subschema of type string maximum length
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema.html#max_length AppUserSchema#max_length}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema#max_length AppUserSchema#max_length}
   */
   readonly maxLength?: number;
   /**
   * Subschema of type string minimum length
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema.html#min_length AppUserSchema#min_length}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema#min_length AppUserSchema#min_length}
   */
   readonly minLength?: number;
   /**
   * SubSchema permissions: HIDE, READ_ONLY, or READ_WRITE.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema.html#permissions AppUserSchema#permissions}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema#permissions AppUserSchema#permissions}
   */
   readonly permissions?: string;
   /**
   * Whether the subschema is required
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema.html#required AppUserSchema#required}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema#required AppUserSchema#required}
   */
   readonly required?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema.html#scope AppUserSchema#scope}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema#scope AppUserSchema#scope}
   */
   readonly scope?: string;
   /**
   * Subschema title (display name)
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema.html#title AppUserSchema#title}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema#title AppUserSchema#title}
   */
   readonly title: string;
   /**
   * Subschema type: string, boolean, number, integer, array, or object
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema.html#type AppUserSchema#type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema#type AppUserSchema#type}
   */
   readonly type: string;
   /**
   * Allows to assign attribute's group priority
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema.html#union AppUserSchema#union}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema#union AppUserSchema#union}
   */
   readonly union?: boolean | cdktf.IResolvable;
   /**
   * Subschema unique restriction
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema.html#unique AppUserSchema#unique}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema#unique AppUserSchema#unique}
   */
   readonly unique?: string;
   /**
   * Custom subschema user type
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema.html#user_type AppUserSchema#user_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema#user_type AppUserSchema#user_type}
   */
   readonly userType?: string;
   /**
   * array_one_of block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema.html#array_one_of AppUserSchema#array_one_of}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema#array_one_of AppUserSchema#array_one_of}
   */
   readonly arrayOneOf?: AppUserSchemaArrayOneOf[];
   /**
   * one_of block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema.html#one_of AppUserSchema#one_of}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema#one_of AppUserSchema#one_of}
   */
   readonly oneOf?: AppUserSchemaOneOf[];
 }
@@ -134,13 +134,13 @@ export interface AppUserSchemaArrayOneOf {
   /**
   * Enum value
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema.html#const AppUserSchema#const}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema#const AppUserSchema#const}
   */
   readonly const: string;
   /**
   * Enum title
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema.html#title AppUserSchema#title}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema#title AppUserSchema#title}
   */
   readonly title: string;
 }
@@ -160,13 +160,13 @@ export interface AppUserSchemaOneOf {
   /**
   * Enum value
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema.html#const AppUserSchema#const}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema#const AppUserSchema#const}
   */
   readonly const: string;
   /**
   * Enum title
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema.html#title AppUserSchema#title}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema#title AppUserSchema#title}
   */
   readonly title: string;
 }
@@ -184,7 +184,7 @@ export function appUserSchemaOneOfToTerraform(struct?: AppUserSchemaOneOf): any 
 
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema.html okta_app_user_schema}
+* Represents a {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema okta_app_user_schema}
 */
 export class AppUserSchema extends cdktf.TerraformResource {
 
@@ -198,7 +198,7 @@ export class AppUserSchema extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema.html okta_app_user_schema} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema okta_app_user_schema} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

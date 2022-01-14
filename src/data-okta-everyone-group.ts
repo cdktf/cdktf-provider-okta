@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/d/everyone_group.html
+// https://www.terraform.io/docs/providers/okta/d/everyone_group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,13 +10,13 @@ export interface DataOktaEveryoneGroupConfig extends cdktf.TerraformMetaArgument
   /**
   * Fetch group users, having default off cuts down on API calls.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/everyone_group.html#include_users DataOktaEveryoneGroup#include_users}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/everyone_group#include_users DataOktaEveryoneGroup#include_users}
   */
   readonly includeUsers?: boolean | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/d/everyone_group.html okta_everyone_group}
+* Represents a {@link https://www.terraform.io/docs/providers/okta/d/everyone_group okta_everyone_group}
 */
 export class DataOktaEveryoneGroup extends cdktf.TerraformDataSource {
 
@@ -30,7 +30,7 @@ export class DataOktaEveryoneGroup extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/d/everyone_group.html okta_everyone_group} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/okta/d/everyone_group okta_everyone_group} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

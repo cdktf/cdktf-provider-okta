@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/d/default_policies.html
+// https://www.terraform.io/docs/providers/okta/d/default_policies
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,13 +10,13 @@ export interface DataOktaDefaultPoliciesConfig extends cdktf.TerraformMetaArgume
   /**
   * Policy type: OKTA_SIGN_ON, PASSWORD, MFA_ENROLL, or IDP_DISCOVERY
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/default_policies.html#type DataOktaDefaultPolicies#type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/default_policies#type DataOktaDefaultPolicies#type}
   */
   readonly type: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/d/default_policies.html okta_default_policies}
+* Represents a {@link https://www.terraform.io/docs/providers/okta/d/default_policies okta_default_policies}
 */
 export class DataOktaDefaultPolicies extends cdktf.TerraformDataSource {
 
@@ -30,7 +30,7 @@ export class DataOktaDefaultPolicies extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/d/default_policies.html okta_default_policies} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/okta/d/default_policies okta_default_policies} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

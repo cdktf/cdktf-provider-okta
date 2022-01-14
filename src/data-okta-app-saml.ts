@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/d/app_saml.html
+// https://www.terraform.io/docs/providers/okta/d/app_saml
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,37 +10,37 @@ export interface DataOktaAppSamlConfig extends cdktf.TerraformMetaArguments {
   /**
   * Search only ACTIVE applications.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_saml.html#active_only DataOktaAppSaml#active_only}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_saml#active_only DataOktaAppSaml#active_only}
   */
   readonly activeOnly?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_saml.html#id DataOktaAppSaml#id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_saml#id DataOktaAppSaml#id}
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_saml.html#label DataOktaAppSaml#label}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_saml#label DataOktaAppSaml#label}
   */
   readonly label?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_saml.html#label_prefix DataOktaAppSaml#label_prefix}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_saml#label_prefix DataOktaAppSaml#label_prefix}
   */
   readonly labelPrefix?: string;
   /**
   * Denotes whether the request is compressed or not.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_saml.html#request_compressed DataOktaAppSaml#request_compressed}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_saml#request_compressed DataOktaAppSaml#request_compressed}
   */
   readonly requestCompressed?: boolean | cdktf.IResolvable;
   /**
   * Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_saml.html#skip_groups DataOktaAppSaml#skip_groups}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_saml#skip_groups DataOktaAppSaml#skip_groups}
   */
   readonly skipGroups?: boolean | cdktf.IResolvable;
   /**
   * Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_saml.html#skip_users DataOktaAppSaml#skip_users}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_saml#skip_users DataOktaAppSaml#skip_users}
   */
   readonly skipUsers?: boolean | cdktf.IResolvable;
 }
@@ -78,7 +78,7 @@ export class DataOktaAppSamlAttributeStatements extends cdktf.ComplexComputedLis
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/d/app_saml.html okta_app_saml}
+* Represents a {@link https://www.terraform.io/docs/providers/okta/d/app_saml okta_app_saml}
 */
 export class DataOktaAppSaml extends cdktf.TerraformDataSource {
 
@@ -92,7 +92,7 @@ export class DataOktaAppSaml extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/d/app_saml.html okta_app_saml} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/okta/d/app_saml okta_app_saml} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

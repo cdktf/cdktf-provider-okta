@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/d/idp_saml.html
+// https://www.terraform.io/docs/providers/okta/d/idp_saml
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,17 +8,17 @@ import * as cdktf from 'cdktf';
 
 export interface DataOktaIdpSamlConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/idp_saml.html#id DataOktaIdpSaml#id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/idp_saml#id DataOktaIdpSaml#id}
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/idp_saml.html#name DataOktaIdpSaml#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/idp_saml#name DataOktaIdpSaml#name}
   */
   readonly name?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/d/idp_saml.html okta_idp_saml}
+* Represents a {@link https://www.terraform.io/docs/providers/okta/d/idp_saml okta_idp_saml}
 */
 export class DataOktaIdpSaml extends cdktf.TerraformDataSource {
 
@@ -32,7 +32,7 @@ export class DataOktaIdpSaml extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/d/idp_saml.html okta_idp_saml} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/okta/d/idp_saml okta_idp_saml} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

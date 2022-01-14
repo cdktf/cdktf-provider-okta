@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/d/role_subscription.html
+// https://www.terraform.io/docs/providers/okta/d/role_subscription
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,19 +10,19 @@ export interface DataOktaRoleSubscriptionConfig extends cdktf.TerraformMetaArgum
   /**
   * Type of the notification
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/role_subscription.html#notification_type DataOktaRoleSubscription#notification_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/role_subscription#notification_type DataOktaRoleSubscription#notification_type}
   */
   readonly notificationType: string;
   /**
   * Type of the role
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/role_subscription.html#role_type DataOktaRoleSubscription#role_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/role_subscription#role_type DataOktaRoleSubscription#role_type}
   */
   readonly roleType: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/d/role_subscription.html okta_role_subscription}
+* Represents a {@link https://www.terraform.io/docs/providers/okta/d/role_subscription okta_role_subscription}
 */
 export class DataOktaRoleSubscription extends cdktf.TerraformDataSource {
 
@@ -36,7 +36,7 @@ export class DataOktaRoleSubscription extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/d/role_subscription.html okta_role_subscription} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/okta/d/role_subscription okta_role_subscription} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

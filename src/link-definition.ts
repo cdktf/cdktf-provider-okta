@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/r/link_definition.html
+// https://www.terraform.io/docs/providers/okta/r/link_definition
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,43 +10,43 @@ export interface LinkDefinitionConfig extends cdktf.TerraformMetaArguments {
   /**
   * Description of the associated relationship.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/link_definition.html#associated_description LinkDefinition#associated_description}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/link_definition#associated_description LinkDefinition#associated_description}
   */
   readonly associatedDescription: string;
   /**
   * API name of the associated link.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/link_definition.html#associated_name LinkDefinition#associated_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/link_definition#associated_name LinkDefinition#associated_name}
   */
   readonly associatedName: string;
   /**
   * Display name of the associated link.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/link_definition.html#associated_title LinkDefinition#associated_title}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/link_definition#associated_title LinkDefinition#associated_title}
   */
   readonly associatedTitle: string;
   /**
   * Description of the primary relationship.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/link_definition.html#primary_description LinkDefinition#primary_description}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/link_definition#primary_description LinkDefinition#primary_description}
   */
   readonly primaryDescription: string;
   /**
   * API name of the primary link.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/link_definition.html#primary_name LinkDefinition#primary_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/link_definition#primary_name LinkDefinition#primary_name}
   */
   readonly primaryName: string;
   /**
   * Display name of the primary link.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/link_definition.html#primary_title LinkDefinition#primary_title}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/link_definition#primary_title LinkDefinition#primary_title}
   */
   readonly primaryTitle: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/r/link_definition.html okta_link_definition}
+* Represents a {@link https://www.terraform.io/docs/providers/okta/r/link_definition okta_link_definition}
 */
 export class LinkDefinition extends cdktf.TerraformResource {
 
@@ -60,7 +60,7 @@ export class LinkDefinition extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/link_definition.html okta_link_definition} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/link_definition okta_link_definition} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

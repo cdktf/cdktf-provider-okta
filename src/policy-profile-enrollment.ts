@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/r/policy_profile_enrollment.html
+// https://www.terraform.io/docs/providers/okta/r/policy_profile_enrollment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,19 +10,19 @@ export interface PolicyProfileEnrollmentConfig extends cdktf.TerraformMetaArgume
   /**
   * Name of the policy
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_profile_enrollment.html#name PolicyProfileEnrollment#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_profile_enrollment#name PolicyProfileEnrollment#name}
   */
   readonly name: string;
   /**
   * Status of the policy
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_profile_enrollment.html#status PolicyProfileEnrollment#status}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_profile_enrollment#status PolicyProfileEnrollment#status}
   */
   readonly status?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/r/policy_profile_enrollment.html okta_policy_profile_enrollment}
+* Represents a {@link https://www.terraform.io/docs/providers/okta/r/policy_profile_enrollment okta_policy_profile_enrollment}
 */
 export class PolicyProfileEnrollment extends cdktf.TerraformResource {
 
@@ -36,7 +36,7 @@ export class PolicyProfileEnrollment extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/policy_profile_enrollment.html okta_policy_profile_enrollment} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/policy_profile_enrollment okta_policy_profile_enrollment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/r/app_group_assignments.html
+// https://www.terraform.io/docs/providers/okta/r/app_group_assignments
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,13 +8,13 @@ import * as cdktf from 'cdktf';
 
 export interface AppGroupAssignmentsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_group_assignments.html#app_id AppGroupAssignments#app_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_group_assignments#app_id AppGroupAssignments#app_id}
   */
   readonly appId: string;
   /**
   * group block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_group_assignments.html#group AppGroupAssignments#group}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_group_assignments#group AppGroupAssignments#group}
   */
   readonly group: AppGroupAssignmentsGroup[];
 }
@@ -22,15 +22,15 @@ export interface AppGroupAssignmentsGroup {
   /**
   * A group to associate with the application
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_group_assignments.html#id AppGroupAssignments#id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_group_assignments#id AppGroupAssignments#id}
   */
   readonly id: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_group_assignments.html#priority AppGroupAssignments#priority}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_group_assignments#priority AppGroupAssignments#priority}
   */
   readonly priority?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_group_assignments.html#profile AppGroupAssignments#profile}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_group_assignments#profile AppGroupAssignments#profile}
   */
   readonly profile?: string;
 }
@@ -49,7 +49,7 @@ export function appGroupAssignmentsGroupToTerraform(struct?: AppGroupAssignments
 
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/r/app_group_assignments.html okta_app_group_assignments}
+* Represents a {@link https://www.terraform.io/docs/providers/okta/r/app_group_assignments okta_app_group_assignments}
 */
 export class AppGroupAssignments extends cdktf.TerraformResource {
 
@@ -63,7 +63,7 @@ export class AppGroupAssignments extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/app_group_assignments.html okta_app_group_assignments} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/app_group_assignments okta_app_group_assignments} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

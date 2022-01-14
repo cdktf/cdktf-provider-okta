@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/r/saml_idp.html
+// https://www.terraform.io/docs/providers/okta/r/saml_idp
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,145 +8,145 @@ import * as cdktf from 'cdktf';
 
 export interface SamlIdpConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#account_link_action SamlIdp#account_link_action}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#account_link_action SamlIdp#account_link_action}
   */
   readonly accountLinkAction?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#account_link_group_include SamlIdp#account_link_group_include}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#account_link_group_include SamlIdp#account_link_group_include}
   */
   readonly accountLinkGroupInclude?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#acs_binding SamlIdp#acs_binding}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#acs_binding SamlIdp#acs_binding}
   */
   readonly acsBinding?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#acs_type SamlIdp#acs_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#acs_type SamlIdp#acs_type}
   */
   readonly acsType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#deprovisioned_action SamlIdp#deprovisioned_action}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#deprovisioned_action SamlIdp#deprovisioned_action}
   */
   readonly deprovisionedAction?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#groups_action SamlIdp#groups_action}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#groups_action SamlIdp#groups_action}
   */
   readonly groupsAction?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#groups_assignment SamlIdp#groups_assignment}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#groups_assignment SamlIdp#groups_assignment}
   */
   readonly groupsAssignment?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#groups_attribute SamlIdp#groups_attribute}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#groups_attribute SamlIdp#groups_attribute}
   */
   readonly groupsAttribute?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#groups_filter SamlIdp#groups_filter}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#groups_filter SamlIdp#groups_filter}
   */
   readonly groupsFilter?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#issuer SamlIdp#issuer}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#issuer SamlIdp#issuer}
   */
   readonly issuer: string;
   /**
   * Indicates whether Okta uses the original Okta org domain URL, or a custom domain URL
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#issuer_mode SamlIdp#issuer_mode}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#issuer_mode SamlIdp#issuer_mode}
   */
   readonly issuerMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#kid SamlIdp#kid}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#kid SamlIdp#kid}
   */
   readonly kid: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#max_clock_skew SamlIdp#max_clock_skew}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#max_clock_skew SamlIdp#max_clock_skew}
   */
   readonly maxClockSkew?: number;
   /**
   * Name of the IdP
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#name SamlIdp#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#name SamlIdp#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#name_format SamlIdp#name_format}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#name_format SamlIdp#name_format}
   */
   readonly nameFormat?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#profile_master SamlIdp#profile_master}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#profile_master SamlIdp#profile_master}
   */
   readonly profileMaster?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#provisioning_action SamlIdp#provisioning_action}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#provisioning_action SamlIdp#provisioning_action}
   */
   readonly provisioningAction?: string;
   /**
   * algorithm to use to sign requests
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#request_signature_algorithm SamlIdp#request_signature_algorithm}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#request_signature_algorithm SamlIdp#request_signature_algorithm}
   */
   readonly requestSignatureAlgorithm?: string;
   /**
   * algorithm to use to sign response
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#request_signature_scope SamlIdp#request_signature_scope}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#request_signature_scope SamlIdp#request_signature_scope}
   */
   readonly requestSignatureScope?: string;
   /**
   * algorithm to use to sign requests
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#response_signature_algorithm SamlIdp#response_signature_algorithm}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#response_signature_algorithm SamlIdp#response_signature_algorithm}
   */
   readonly responseSignatureAlgorithm?: string;
   /**
   * algorithm to use to sign response
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#response_signature_scope SamlIdp#response_signature_scope}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#response_signature_scope SamlIdp#response_signature_scope}
   */
   readonly responseSignatureScope?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#sso_binding SamlIdp#sso_binding}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#sso_binding SamlIdp#sso_binding}
   */
   readonly ssoBinding?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#sso_destination SamlIdp#sso_destination}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#sso_destination SamlIdp#sso_destination}
   */
   readonly ssoDestination?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#sso_url SamlIdp#sso_url}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#sso_url SamlIdp#sso_url}
   */
   readonly ssoUrl: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#status SamlIdp#status}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#status SamlIdp#status}
   */
   readonly status?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#subject_filter SamlIdp#subject_filter}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#subject_filter SamlIdp#subject_filter}
   */
   readonly subjectFilter?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#subject_format SamlIdp#subject_format}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#subject_format SamlIdp#subject_format}
   */
   readonly subjectFormat?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#subject_match_attribute SamlIdp#subject_match_attribute}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#subject_match_attribute SamlIdp#subject_match_attribute}
   */
   readonly subjectMatchAttribute?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#subject_match_type SamlIdp#subject_match_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#subject_match_type SamlIdp#subject_match_type}
   */
   readonly subjectMatchType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#suspended_action SamlIdp#suspended_action}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#suspended_action SamlIdp#suspended_action}
   */
   readonly suspendedAction?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html#username_template SamlIdp#username_template}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp#username_template SamlIdp#username_template}
   */
   readonly usernameTemplate?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html okta_saml_idp}
+* Represents a {@link https://www.terraform.io/docs/providers/okta/r/saml_idp okta_saml_idp}
 */
 export class SamlIdp extends cdktf.TerraformResource {
 
@@ -160,7 +160,7 @@ export class SamlIdp extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/saml_idp.html okta_saml_idp} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/saml_idp okta_saml_idp} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

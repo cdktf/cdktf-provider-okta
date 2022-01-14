@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/d/auth_server_claims.html
+// https://www.terraform.io/docs/providers/okta/d/auth_server_claims
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,7 +10,7 @@ export interface DataOktaAuthServerClaimsConfig extends cdktf.TerraformMetaArgum
   /**
   * Auth server ID
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/auth_server_claims.html#auth_server_id DataOktaAuthServerClaims#auth_server_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/auth_server_claims#auth_server_id DataOktaAuthServerClaims#auth_server_id}
   */
   readonly authServerId: string;
 }
@@ -58,7 +58,7 @@ export class DataOktaAuthServerClaimsClaims extends cdktf.ComplexComputedList {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/d/auth_server_claims.html okta_auth_server_claims}
+* Represents a {@link https://www.terraform.io/docs/providers/okta/d/auth_server_claims okta_auth_server_claims}
 */
 export class DataOktaAuthServerClaims extends cdktf.TerraformDataSource {
 
@@ -72,7 +72,7 @@ export class DataOktaAuthServerClaims extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/d/auth_server_claims.html okta_auth_server_claims} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/okta/d/auth_server_claims okta_auth_server_claims} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

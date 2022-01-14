@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/r/saml_app.html
+// https://www.terraform.io/docs/providers/okta/r/saml_app
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,295 +10,295 @@ export interface SamlAppConfig extends cdktf.TerraformMetaArguments {
   /**
   * Custom error page URL
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#accessibility_error_redirect_url SamlApp#accessibility_error_redirect_url}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#accessibility_error_redirect_url SamlApp#accessibility_error_redirect_url}
   */
   readonly accessibilityErrorRedirectUrl?: string;
   /**
   * Custom login page URL
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#accessibility_login_redirect_url SamlApp#accessibility_login_redirect_url}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#accessibility_login_redirect_url SamlApp#accessibility_login_redirect_url}
   */
   readonly accessibilityLoginRedirectUrl?: string;
   /**
   * Enable self service
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#accessibility_self_service SamlApp#accessibility_self_service}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#accessibility_self_service SamlApp#accessibility_self_service}
   */
   readonly accessibilitySelfService?: boolean | cdktf.IResolvable;
   /**
   * List of ACS endpoints for this SAML application
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#acs_endpoints SamlApp#acs_endpoints}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#acs_endpoints SamlApp#acs_endpoints}
   */
   readonly acsEndpoints?: string[];
   /**
   * Application notes for admins.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#admin_note SamlApp#admin_note}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#admin_note SamlApp#admin_note}
   */
   readonly adminNote?: string;
   /**
   * Displays specific appLinks for the app
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#app_links_json SamlApp#app_links_json}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#app_links_json SamlApp#app_links_json}
   */
   readonly appLinksJson?: string;
   /**
   * Application settings in JSON format
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#app_settings_json SamlApp#app_settings_json}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#app_settings_json SamlApp#app_settings_json}
   */
   readonly appSettingsJson?: string;
   /**
   * Determines whether the SAML assertion is digitally signed
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#assertion_signed SamlApp#assertion_signed}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#assertion_signed SamlApp#assertion_signed}
   */
   readonly assertionSigned?: boolean | cdktf.IResolvable;
   /**
   * Audience Restriction
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#audience SamlApp#audience}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#audience SamlApp#audience}
   */
   readonly audience?: string;
   /**
   * Identifies the SAML authentication context class for the assertion’s authentication statement
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#authn_context_class_ref SamlApp#authn_context_class_ref}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#authn_context_class_ref SamlApp#authn_context_class_ref}
   */
   readonly authnContextClassRef?: string;
   /**
   * Display auto submit toolbar
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#auto_submit_toolbar SamlApp#auto_submit_toolbar}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#auto_submit_toolbar SamlApp#auto_submit_toolbar}
   */
   readonly autoSubmitToolbar?: boolean | cdktf.IResolvable;
   /**
   * Identifies a specific application resource in an IDP initiated SSO scenario.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#default_relay_state SamlApp#default_relay_state}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#default_relay_state SamlApp#default_relay_state}
   */
   readonly defaultRelayState?: string;
   /**
   * Identifies the location where the SAML response is intended to be sent inside of the SAML assertion
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#destination SamlApp#destination}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#destination SamlApp#destination}
   */
   readonly destination?: string;
   /**
   * Determines the digest algorithm used to digitally sign the SAML assertion and response
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#digest_algorithm SamlApp#digest_algorithm}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#digest_algorithm SamlApp#digest_algorithm}
   */
   readonly digestAlgorithm?: string;
   /**
   * Application notes for end users.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#enduser_note SamlApp#enduser_note}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#enduser_note SamlApp#enduser_note}
   */
   readonly enduserNote?: string;
   /**
   * features to enable
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#features SamlApp#features}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#features SamlApp#features}
   */
   readonly features?: string[];
   /**
   * Groups associated with the application
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#groups SamlApp#groups}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#groups SamlApp#groups}
   */
   readonly groups?: string[];
   /**
   * Do not display application icon on mobile app
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#hide_ios SamlApp#hide_ios}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#hide_ios SamlApp#hide_ios}
   */
   readonly hideIos?: boolean | cdktf.IResolvable;
   /**
   * Do not display application icon to users
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#hide_web SamlApp#hide_web}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#hide_web SamlApp#hide_web}
   */
   readonly hideWeb?: boolean | cdktf.IResolvable;
   /**
   * Prompt user to re-authenticate if SP asks for it
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#honor_force_authn SamlApp#honor_force_authn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#honor_force_authn SamlApp#honor_force_authn}
   */
   readonly honorForceAuthn?: boolean | cdktf.IResolvable;
   /**
   * SAML issuer ID
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#idp_issuer SamlApp#idp_issuer}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#idp_issuer SamlApp#idp_issuer}
   */
   readonly idpIssuer?: string;
   /**
   * *Early Access Property*. Enable Federation Broker Mode.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#implicit_assignment SamlApp#implicit_assignment}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#implicit_assignment SamlApp#implicit_assignment}
   */
   readonly implicitAssignment?: boolean | cdktf.IResolvable;
   /**
   * Saml Inline Hook setting
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#inline_hook_id SamlApp#inline_hook_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#inline_hook_id SamlApp#inline_hook_id}
   */
   readonly inlineHookId?: string;
   /**
   * Certificate name. This modulates the rotation of keys. New name == new key.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#key_name SamlApp#key_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#key_name SamlApp#key_name}
   */
   readonly keyName?: string;
   /**
   * Number of years the certificate is valid.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#key_years_valid SamlApp#key_years_valid}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#key_years_valid SamlApp#key_years_valid}
   */
   readonly keyYearsValid?: number;
   /**
   * Pretty name of app.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#label SamlApp#label}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#label SamlApp#label}
   */
   readonly label: string;
   /**
   * Local path to logo of the application.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#logo SamlApp#logo}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#logo SamlApp#logo}
   */
   readonly logo?: string;
   /**
   * Name of preexisting SAML application. For instance 'slack'
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#preconfigured_app SamlApp#preconfigured_app}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#preconfigured_app SamlApp#preconfigured_app}
   */
   readonly preconfiguredApp?: string;
   /**
   * The location where the app may present the SAML assertion
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#recipient SamlApp#recipient}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#recipient SamlApp#recipient}
   */
   readonly recipient?: string;
   /**
   * Denotes whether the request is compressed or not.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#request_compressed SamlApp#request_compressed}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#request_compressed SamlApp#request_compressed}
   */
   readonly requestCompressed?: boolean | cdktf.IResolvable;
   /**
   * Determines whether the SAML auth response message is digitally signed
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#response_signed SamlApp#response_signed}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#response_signed SamlApp#response_signed}
   */
   readonly responseSigned?: boolean | cdktf.IResolvable;
   /**
   * SAML version for the app's sign-on mode
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#saml_version SamlApp#saml_version}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#saml_version SamlApp#saml_version}
   */
   readonly samlVersion?: string;
   /**
   * Signature algorithm used ot digitally sign the assertion and response
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#signature_algorithm SamlApp#signature_algorithm}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#signature_algorithm SamlApp#signature_algorithm}
   */
   readonly signatureAlgorithm?: string;
   /**
   * x509 encoded certificate that the Service Provider uses to sign Single Logout requests
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#single_logout_certificate SamlApp#single_logout_certificate}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#single_logout_certificate SamlApp#single_logout_certificate}
   */
   readonly singleLogoutCertificate?: string;
   /**
   * The issuer of the Service Provider that generates the Single Logout request
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#single_logout_issuer SamlApp#single_logout_issuer}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#single_logout_issuer SamlApp#single_logout_issuer}
   */
   readonly singleLogoutIssuer?: string;
   /**
   * The location where the logout response is sent
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#single_logout_url SamlApp#single_logout_url}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#single_logout_url SamlApp#single_logout_url}
   */
   readonly singleLogoutUrl?: string;
   /**
   * Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#skip_groups SamlApp#skip_groups}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#skip_groups SamlApp#skip_groups}
   */
   readonly skipGroups?: boolean | cdktf.IResolvable;
   /**
   * Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#skip_users SamlApp#skip_users}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#skip_users SamlApp#skip_users}
   */
   readonly skipUsers?: boolean | cdktf.IResolvable;
   /**
   * SAML SP issuer ID
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#sp_issuer SamlApp#sp_issuer}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#sp_issuer SamlApp#sp_issuer}
   */
   readonly spIssuer?: string;
   /**
   * Single Sign On URL
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#sso_url SamlApp#sso_url}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#sso_url SamlApp#sso_url}
   */
   readonly ssoUrl?: string;
   /**
   * Status of application.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#status SamlApp#status}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#status SamlApp#status}
   */
   readonly status?: string;
   /**
   * Identifies the SAML processing rules.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#subject_name_id_format SamlApp#subject_name_id_format}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#subject_name_id_format SamlApp#subject_name_id_format}
   */
   readonly subjectNameIdFormat?: string;
   /**
   * Template for app user's username when a user is assigned to the app
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#subject_name_id_template SamlApp#subject_name_id_template}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#subject_name_id_template SamlApp#subject_name_id_template}
   */
   readonly subjectNameIdTemplate?: string;
   /**
   * Username template
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#user_name_template SamlApp#user_name_template}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#user_name_template SamlApp#user_name_template}
   */
   readonly userNameTemplate?: string;
   /**
   * Push username on update
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#user_name_template_push_status SamlApp#user_name_template_push_status}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#user_name_template_push_status SamlApp#user_name_template_push_status}
   */
   readonly userNameTemplatePushStatus?: string;
   /**
   * Username template suffix
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#user_name_template_suffix SamlApp#user_name_template_suffix}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#user_name_template_suffix SamlApp#user_name_template_suffix}
   */
   readonly userNameTemplateSuffix?: string;
   /**
   * Username template type
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#user_name_template_type SamlApp#user_name_template_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#user_name_template_type SamlApp#user_name_template_type}
   */
   readonly userNameTemplateType?: string;
   /**
   * attribute_statements block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#attribute_statements SamlApp#attribute_statements}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#attribute_statements SamlApp#attribute_statements}
   */
   readonly attributeStatements?: SamlAppAttributeStatements[];
   /**
   * users block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#users SamlApp#users}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#users SamlApp#users}
   */
   readonly users?: SamlAppUsers[];
 }
@@ -306,35 +306,35 @@ export interface SamlAppAttributeStatements {
   /**
   * Type of group attribute filter
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#filter_type SamlApp#filter_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#filter_type SamlApp#filter_type}
   */
   readonly filterType?: string;
   /**
   * Filter value to use
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#filter_value SamlApp#filter_value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#filter_value SamlApp#filter_value}
   */
   readonly filterValue?: string;
   /**
   * The reference name of the attribute statement
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#name SamlApp#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#name SamlApp#name}
   */
   readonly name: string;
   /**
   * The name format of the attribute
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#namespace SamlApp#namespace}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#namespace SamlApp#namespace}
   */
   readonly namespace?: string;
   /**
   * The type of attribute statements object
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#type SamlApp#type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#type SamlApp#type}
   */
   readonly type?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#values SamlApp#values}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#values SamlApp#values}
   */
   readonly values?: string[];
 }
@@ -358,19 +358,19 @@ export interface SamlAppUsers {
   /**
   * User ID.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#id SamlApp#id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#id SamlApp#id}
   */
   readonly id?: string;
   /**
   * Password for user application.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#password SamlApp#password}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#password SamlApp#password}
   */
   readonly password?: string;
   /**
   * Username for user.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html#username SamlApp#username}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#username SamlApp#username}
   */
   readonly username?: string;
 }
@@ -389,7 +389,7 @@ export function samlAppUsersToTerraform(struct?: SamlAppUsers): any {
 
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html okta_saml_app}
+* Represents a {@link https://www.terraform.io/docs/providers/okta/r/saml_app okta_saml_app}
 */
 export class SamlApp extends cdktf.TerraformResource {
 
@@ -403,7 +403,7 @@ export class SamlApp extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/saml_app.html okta_saml_app} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/saml_app okta_saml_app} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

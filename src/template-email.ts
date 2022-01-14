@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/r/template_email.html
+// https://www.terraform.io/docs/providers/okta/r/template_email
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,33 +8,33 @@ import * as cdktf from 'cdktf';
 
 export interface TemplateEmailConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/template_email.html#default_language TemplateEmail#default_language}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/template_email#default_language TemplateEmail#default_language}
   */
   readonly defaultLanguage?: string;
   /**
   * Email template type
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/template_email.html#type TemplateEmail#type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/template_email#type TemplateEmail#type}
   */
   readonly type: string;
   /**
   * translations block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/template_email.html#translations TemplateEmail#translations}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/template_email#translations TemplateEmail#translations}
   */
   readonly translations: TemplateEmailTranslations[];
 }
 export interface TemplateEmailTranslations {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/template_email.html#language TemplateEmail#language}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/template_email#language TemplateEmail#language}
   */
   readonly language: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/template_email.html#subject TemplateEmail#subject}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/template_email#subject TemplateEmail#subject}
   */
   readonly subject: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/template_email.html#template TemplateEmail#template}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/template_email#template TemplateEmail#template}
   */
   readonly template: string;
 }
@@ -53,7 +53,7 @@ export function templateEmailTranslationsToTerraform(struct?: TemplateEmailTrans
 
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/r/template_email.html okta_template_email}
+* Represents a {@link https://www.terraform.io/docs/providers/okta/r/template_email okta_template_email}
 */
 export class TemplateEmail extends cdktf.TerraformResource {
 
@@ -67,7 +67,7 @@ export class TemplateEmail extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/template_email.html okta_template_email} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/template_email okta_template_email} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

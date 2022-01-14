@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/r/policy_signon.html
+// https://www.terraform.io/docs/providers/okta/r/policy_signon
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,37 +10,37 @@ export interface PolicySignonConfig extends cdktf.TerraformMetaArguments {
   /**
   * Policy Description
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_signon.html#description PolicySignon#description}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_signon#description PolicySignon#description}
   */
   readonly description?: string;
   /**
   * List of Group IDs to Include
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_signon.html#groups_included PolicySignon#groups_included}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_signon#groups_included PolicySignon#groups_included}
   */
   readonly groupsIncluded?: string[];
   /**
   * Policy Name
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_signon.html#name PolicySignon#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_signon#name PolicySignon#name}
   */
   readonly name: string;
   /**
   * Policy Priority, this attribute can be set to a valid priority. To avoid endless diff situation we error if an invalid priority is provided. API defaults it to the last (lowest) if not there.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_signon.html#priority PolicySignon#priority}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_signon#priority PolicySignon#priority}
   */
   readonly priority?: number;
   /**
   * Policy Status: ACTIVE or INACTIVE.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_signon.html#status PolicySignon#status}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_signon#status PolicySignon#status}
   */
   readonly status?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/r/policy_signon.html okta_policy_signon}
+* Represents a {@link https://www.terraform.io/docs/providers/okta/r/policy_signon okta_policy_signon}
 */
 export class PolicySignon extends cdktf.TerraformResource {
 
@@ -54,7 +54,7 @@ export class PolicySignon extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/policy_signon.html okta_policy_signon} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/policy_signon okta_policy_signon} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/r/policy_rule_password.html
+// https://www.terraform.io/docs/providers/okta/r/policy_rule_password
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,79 +10,79 @@ export interface PolicyRulePasswordConfig extends cdktf.TerraformMetaArguments {
   /**
   * Policy Rule Name
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_password.html#name PolicyRulePassword#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_password#name PolicyRulePassword#name}
   */
   readonly name: string;
   /**
   * Network selection mode: ANYWHERE, ZONE, ON_NETWORK, or OFF_NETWORK.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_password.html#network_connection PolicyRulePassword#network_connection}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_password#network_connection PolicyRulePassword#network_connection}
   */
   readonly networkConnection?: string;
   /**
   * The zones to exclude
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_password.html#network_excludes PolicyRulePassword#network_excludes}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_password#network_excludes PolicyRulePassword#network_excludes}
   */
   readonly networkExcludes?: string[];
   /**
   * The zones to include
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_password.html#network_includes PolicyRulePassword#network_includes}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_password#network_includes PolicyRulePassword#network_includes}
   */
   readonly networkIncludes?: string[];
   /**
   * Allow or deny a user to change their password: ALLOW or DENY. Default = ALLOW
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_password.html#password_change PolicyRulePassword#password_change}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_password#password_change PolicyRulePassword#password_change}
   */
   readonly passwordChange?: string;
   /**
   * Allow or deny a user to reset their password: ALLOW or DENY. Default = ALLOW
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_password.html#password_reset PolicyRulePassword#password_reset}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_password#password_reset PolicyRulePassword#password_reset}
   */
   readonly passwordReset?: string;
   /**
   * Allow or deny a user to unlock. Default = DENY
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_password.html#password_unlock PolicyRulePassword#password_unlock}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_password#password_unlock PolicyRulePassword#password_unlock}
   */
   readonly passwordUnlock?: string;
   /**
   * Policy ID of the Rule
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_password.html#policy_id PolicyRulePassword#policy_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_password#policy_id PolicyRulePassword#policy_id}
   */
   readonly policyId?: string;
   /**
   * Policy ID of the Rule
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_password.html#policyid PolicyRulePassword#policyid}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_password#policyid PolicyRulePassword#policyid}
   */
   readonly policyid?: string;
   /**
   * Policy Rule Priority, this attribute can be set to a valid priority. To avoid endless diff situation we error if an invalid priority is provided. API defaults it to the last (lowest) if not there.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_password.html#priority PolicyRulePassword#priority}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_password#priority PolicyRulePassword#priority}
   */
   readonly priority?: number;
   /**
   * Policy Rule Status: ACTIVE or INACTIVE.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_password.html#status PolicyRulePassword#status}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_password#status PolicyRulePassword#status}
   */
   readonly status?: string;
   /**
   * Set of User IDs to Exclude
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_password.html#users_excluded PolicyRulePassword#users_excluded}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_password#users_excluded PolicyRulePassword#users_excluded}
   */
   readonly usersExcluded?: string[];
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_password.html okta_policy_rule_password}
+* Represents a {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_password okta_policy_rule_password}
 */
 export class PolicyRulePassword extends cdktf.TerraformResource {
 
@@ -96,7 +96,7 @@ export class PolicyRulePassword extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_password.html okta_policy_rule_password} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_password okta_policy_rule_password} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

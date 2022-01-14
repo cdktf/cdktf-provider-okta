@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/d/behaviors.html
+// https://www.terraform.io/docs/providers/okta/d/behaviors
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,7 +10,7 @@ export interface DataOktaBehaviorsConfig extends cdktf.TerraformMetaArguments {
   /**
   * Searches the name property of behaviors for matching value
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/behaviors.html#q DataOktaBehaviors#q}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/behaviors#q DataOktaBehaviors#q}
   */
   readonly q?: string;
 }
@@ -44,7 +44,7 @@ export class DataOktaBehaviorsBehaviors extends cdktf.ComplexComputedList {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/d/behaviors.html okta_behaviors}
+* Represents a {@link https://www.terraform.io/docs/providers/okta/d/behaviors okta_behaviors}
 */
 export class DataOktaBehaviors extends cdktf.TerraformDataSource {
 
@@ -58,7 +58,7 @@ export class DataOktaBehaviors extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/d/behaviors.html okta_behaviors} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/okta/d/behaviors okta_behaviors} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

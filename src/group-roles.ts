@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/r/group_roles.html
+// https://www.terraform.io/docs/providers/okta/r/group_roles
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,19 +10,19 @@ export interface GroupRolesConfig extends cdktf.TerraformMetaArguments {
   /**
   * Admin roles associated with the group. This can also be done per user.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_roles.html#admin_roles GroupRoles#admin_roles}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_roles#admin_roles GroupRoles#admin_roles}
   */
   readonly adminRoles?: string[];
   /**
   * ID of group to attach admin roles to
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_roles.html#group_id GroupRoles#group_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_roles#group_id GroupRoles#group_id}
   */
   readonly groupId: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/r/group_roles.html okta_group_roles}
+* Represents a {@link https://www.terraform.io/docs/providers/okta/r/group_roles okta_group_roles}
 */
 export class GroupRoles extends cdktf.TerraformResource {
 
@@ -36,7 +36,7 @@ export class GroupRoles extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/group_roles.html okta_group_roles} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/group_roles okta_group_roles} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

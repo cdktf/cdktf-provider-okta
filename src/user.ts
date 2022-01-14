@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/r/user.html
+// https://www.terraform.io/docs/providers/okta/r/user
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,247 +10,247 @@ export interface UserConfig extends cdktf.TerraformMetaArguments {
   /**
   * User Okta admin roles - ie. ['APP_ADMIN', 'USER_ADMIN']
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#admin_roles User#admin_roles}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#admin_roles User#admin_roles}
   */
   readonly adminRoles?: string[];
   /**
   * User city
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#city User#city}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#city User#city}
   */
   readonly city?: string;
   /**
   * User cost center
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#cost_center User#cost_center}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#cost_center User#cost_center}
   */
   readonly costCenter?: string;
   /**
   * User country code
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#country_code User#country_code}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#country_code User#country_code}
   */
   readonly countryCode?: string;
   /**
   * JSON formatted custom attributes for a user. It must be JSON due to various types Okta allows.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#custom_profile_attributes User#custom_profile_attributes}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#custom_profile_attributes User#custom_profile_attributes}
   */
   readonly customProfileAttributes?: string;
   /**
   * User department
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#department User#department}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#department User#department}
   */
   readonly department?: string;
   /**
   * User display name, suitable to show end users
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#display_name User#display_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#display_name User#display_name}
   */
   readonly displayName?: string;
   /**
   * User division
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#division User#division}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#division User#division}
   */
   readonly division?: string;
   /**
   * User primary email address
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#email User#email}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#email User#email}
   */
   readonly email: string;
   /**
   * User employee number
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#employee_number User#employee_number}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#employee_number User#employee_number}
   */
   readonly employeeNumber?: string;
   /**
   * User first name
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#first_name User#first_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#first_name User#first_name}
   */
   readonly firstName: string;
   /**
   * The groups that you want this user to be a part of. This can also be done via the group using the `users` property.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#group_memberships User#group_memberships}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#group_memberships User#group_memberships}
   */
   readonly groupMemberships?: string[];
   /**
   * User honorific prefix
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#honorific_prefix User#honorific_prefix}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#honorific_prefix User#honorific_prefix}
   */
   readonly honorificPrefix?: string;
   /**
   * User honorific suffix
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#honorific_suffix User#honorific_suffix}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#honorific_suffix User#honorific_suffix}
   */
   readonly honorificSuffix?: string;
   /**
   * User last name
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#last_name User#last_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#last_name User#last_name}
   */
   readonly lastName: string;
   /**
   * User default location
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#locale User#locale}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#locale User#locale}
   */
   readonly locale?: string;
   /**
   * User Okta login
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#login User#login}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#login User#login}
   */
   readonly login: string;
   /**
   * Manager of User
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#manager User#manager}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#manager User#manager}
   */
   readonly manager?: string;
   /**
   * Manager ID of User
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#manager_id User#manager_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#manager_id User#manager_id}
   */
   readonly managerId?: string;
   /**
   * User middle name
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#middle_name User#middle_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#middle_name User#middle_name}
   */
   readonly middleName?: string;
   /**
   * User mobile phone number
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#mobile_phone User#mobile_phone}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#mobile_phone User#mobile_phone}
   */
   readonly mobilePhone?: string;
   /**
   * User nickname
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#nick_name User#nick_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#nick_name User#nick_name}
   */
   readonly nickName?: string;
   /**
   * Old User Password. Should be only set in case the password was not changed using the provider
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#old_password User#old_password}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#old_password User#old_password}
   */
   readonly oldPassword?: string;
   /**
   * User organization
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#organization User#organization}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#organization User#organization}
   */
   readonly organization?: string;
   /**
   * User Password
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#password User#password}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#password User#password}
   */
   readonly password?: string;
   /**
   * When specified, the Password Inline Hook is triggered to handle verification of the end user's password the first time the user tries to sign in
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#password_inline_hook User#password_inline_hook}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#password_inline_hook User#password_inline_hook}
   */
   readonly passwordInlineHook?: string;
   /**
   * User mailing address
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#postal_address User#postal_address}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#postal_address User#postal_address}
   */
   readonly postalAddress?: string;
   /**
   * User preferred language
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#preferred_language User#preferred_language}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#preferred_language User#preferred_language}
   */
   readonly preferredLanguage?: string;
   /**
   * User primary phone number
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#primary_phone User#primary_phone}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#primary_phone User#primary_phone}
   */
   readonly primaryPhone?: string;
   /**
   * User online profile (web page)
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#profile_url User#profile_url}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#profile_url User#profile_url}
   */
   readonly profileUrl?: string;
   /**
   * User Password Recovery Answer
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#recovery_answer User#recovery_answer}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#recovery_answer User#recovery_answer}
   */
   readonly recoveryAnswer?: string;
   /**
   * User Password Recovery Question
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#recovery_question User#recovery_question}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#recovery_question User#recovery_question}
   */
   readonly recoveryQuestion?: string;
   /**
   * User secondary email address, used for account recovery
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#second_email User#second_email}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#second_email User#second_email}
   */
   readonly secondEmail?: string;
   /**
   * User state or region
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#state User#state}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#state User#state}
   */
   readonly state?: string;
   /**
   * The status of the User in Okta - remove to set user back to active/provisioned
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#status User#status}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#status User#status}
   */
   readonly status?: string;
   /**
   * User street address
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#street_address User#street_address}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#street_address User#street_address}
   */
   readonly streetAddress?: string;
   /**
   * User default timezone
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#timezone User#timezone}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#timezone User#timezone}
   */
   readonly timezone?: string;
   /**
   * User title
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#title User#title}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#title User#title}
   */
   readonly title?: string;
   /**
   * User employee type
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#user_type User#user_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#user_type User#user_type}
   */
   readonly userType?: string;
   /**
   * User zipcode or postal code
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#zip_code User#zip_code}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#zip_code User#zip_code}
   */
   readonly zipCode?: string;
   /**
   * password_hash block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#password_hash User#password_hash}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#password_hash User#password_hash}
   */
   readonly passwordHash?: UserPasswordHash;
 }
@@ -258,31 +258,31 @@ export interface UserPasswordHash {
   /**
   * The algorithm used to generate the hash using the password
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#algorithm User#algorithm}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#algorithm User#algorithm}
   */
   readonly algorithm: string;
   /**
   * Only required for salted hashes
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#salt User#salt}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#salt User#salt}
   */
   readonly salt?: string;
   /**
   * Specifies whether salt was pre- or postfixed to the password before hashing
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#salt_order User#salt_order}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#salt_order User#salt_order}
   */
   readonly saltOrder?: string;
   /**
   * For SHA-512, SHA-256, SHA-1, MD5, This is the actual base64-encoded hash of the password (and salt, if used). This is the Base64 encoded value of the SHA-512/SHA-256/SHA-1/MD5 digest that was computed by either pre-fixing or post-fixing the salt to the password, depending on the saltOrder. If a salt was not used in the source system, then this should just be the the Base64 encoded value of the password's SHA-512/SHA-256/SHA-1/MD5 digest. For BCRYPT, This is the actual radix64-encoded hashed password.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#value User#value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#value User#value}
   */
   readonly value: string;
   /**
   * Governs the strength of the hash and the time required to compute it. Only required for BCRYPT algorithm
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user.html#work_factor User#work_factor}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#work_factor User#work_factor}
   */
   readonly workFactor?: number;
 }
@@ -434,7 +434,7 @@ export class UserPasswordHashOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/r/user.html okta_user}
+* Represents a {@link https://www.terraform.io/docs/providers/okta/r/user okta_user}
 */
 export class User extends cdktf.TerraformResource {
 
@@ -448,7 +448,7 @@ export class User extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/user.html okta_user} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/user okta_user} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

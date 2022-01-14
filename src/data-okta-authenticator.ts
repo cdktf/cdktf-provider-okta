@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/d/authenticator.html
+// https://www.terraform.io/docs/providers/okta/d/authenticator
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,21 +8,21 @@ import * as cdktf from 'cdktf';
 
 export interface DataOktaAuthenticatorConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/authenticator.html#id DataOktaAuthenticator#id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/authenticator#id DataOktaAuthenticator#id}
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/authenticator.html#key DataOktaAuthenticator#key}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/authenticator#key DataOktaAuthenticator#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/authenticator.html#name DataOktaAuthenticator#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/authenticator#name DataOktaAuthenticator#name}
   */
   readonly name?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/d/authenticator.html okta_authenticator}
+* Represents a {@link https://www.terraform.io/docs/providers/okta/d/authenticator okta_authenticator}
 */
 export class DataOktaAuthenticator extends cdktf.TerraformDataSource {
 
@@ -36,7 +36,7 @@ export class DataOktaAuthenticator extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/d/authenticator.html okta_authenticator} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/okta/d/authenticator okta_authenticator} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/r/auth_server.html
+// https://www.terraform.io/docs/providers/okta/r/auth_server
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,37 +10,37 @@ export interface AuthServerConfig extends cdktf.TerraformMetaArguments {
   /**
   * Currently Okta only supports a single value here
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server.html#audiences AuthServer#audiences}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server#audiences AuthServer#audiences}
   */
   readonly audiences: string[];
   /**
   * Credential rotation mode, in many cases you cannot set this to MANUAL, the API will ignore the value and you will get a perpetual diff. This should rarely be used.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server.html#credentials_rotation_mode AuthServer#credentials_rotation_mode}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server#credentials_rotation_mode AuthServer#credentials_rotation_mode}
   */
   readonly credentialsRotationMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server.html#description AuthServer#description}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server#description AuthServer#description}
   */
   readonly description?: string;
   /**
   * *Early Access Property*. Indicates which value is specified in the issuer of the tokens that a Custom Authorization Server returns: the original Okta org domain URL or a custom domain URL
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server.html#issuer_mode AuthServer#issuer_mode}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server#issuer_mode AuthServer#issuer_mode}
   */
   readonly issuerMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server.html#name AuthServer#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server#name AuthServer#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server.html#status AuthServer#status}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server#status AuthServer#status}
   */
   readonly status?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/r/auth_server.html okta_auth_server}
+* Represents a {@link https://www.terraform.io/docs/providers/okta/r/auth_server okta_auth_server}
 */
 export class AuthServer extends cdktf.TerraformResource {
 
@@ -54,7 +54,7 @@ export class AuthServer extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/auth_server.html okta_auth_server} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/auth_server okta_auth_server} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

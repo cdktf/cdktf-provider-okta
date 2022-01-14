@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/r/template_sms.html
+// https://www.terraform.io/docs/providers/okta/r/template_sms
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,29 +10,29 @@ export interface TemplateSmsConfig extends cdktf.TerraformMetaArguments {
   /**
   * SMS default template
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/template_sms.html#template TemplateSms#template}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/template_sms#template TemplateSms#template}
   */
   readonly template: string;
   /**
   * SMS template type
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/template_sms.html#type TemplateSms#type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/template_sms#type TemplateSms#type}
   */
   readonly type: string;
   /**
   * translations block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/template_sms.html#translations TemplateSms#translations}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/template_sms#translations TemplateSms#translations}
   */
   readonly translations?: TemplateSmsTranslations[];
 }
 export interface TemplateSmsTranslations {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/template_sms.html#language TemplateSms#language}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/template_sms#language TemplateSms#language}
   */
   readonly language: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/template_sms.html#template TemplateSms#template}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/template_sms#template TemplateSms#template}
   */
   readonly template: string;
 }
@@ -50,7 +50,7 @@ export function templateSmsTranslationsToTerraform(struct?: TemplateSmsTranslati
 
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/r/template_sms.html okta_template_sms}
+* Represents a {@link https://www.terraform.io/docs/providers/okta/r/template_sms okta_template_sms}
 */
 export class TemplateSms extends cdktf.TerraformResource {
 
@@ -64,7 +64,7 @@ export class TemplateSms extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/template_sms.html okta_template_sms} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/template_sms okta_template_sms} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

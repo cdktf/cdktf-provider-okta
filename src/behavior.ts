@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/r/behavior.html
+// https://www.terraform.io/docs/providers/okta/r/behavior
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,49 +10,49 @@ export interface BehaviorConfig extends cdktf.TerraformMetaArguments {
   /**
   * Determines the method and level of detail used to evaluate the behavior.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/behavior.html#location_granularity_type Behavior#location_granularity_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/behavior#location_granularity_type Behavior#location_granularity_type}
   */
   readonly locationGranularityType?: string;
   /**
   * Name of the behavior
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/behavior.html#name Behavior#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/behavior#name Behavior#name}
   */
   readonly name: string;
   /**
   * The number of recent authentications used to evaluate the behavior.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/behavior.html#number_of_authentications Behavior#number_of_authentications}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/behavior#number_of_authentications Behavior#number_of_authentications}
   */
   readonly numberOfAuthentications?: number;
   /**
   * Radius from location (in kilometers)
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/behavior.html#radius_from_location Behavior#radius_from_location}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/behavior#radius_from_location Behavior#radius_from_location}
   */
   readonly radiusFromLocation?: number;
   /**
   * Behavior status: ACTIVE or INACTIVE.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/behavior.html#status Behavior#status}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/behavior#status Behavior#status}
   */
   readonly status?: string;
   /**
   * Behavior type
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/behavior.html#type Behavior#type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/behavior#type Behavior#type}
   */
   readonly type: string;
   /**
   * Velocity (in kilometers per hour).
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/behavior.html#velocity Behavior#velocity}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/behavior#velocity Behavior#velocity}
   */
   readonly velocity?: number;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/r/behavior.html okta_behavior}
+* Represents a {@link https://www.terraform.io/docs/providers/okta/r/behavior okta_behavior}
 */
 export class Behavior extends cdktf.TerraformResource {
 
@@ -66,7 +66,7 @@ export class Behavior extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/behavior.html okta_behavior} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/behavior okta_behavior} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

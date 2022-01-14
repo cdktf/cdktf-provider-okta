@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/d/user_type.html
+// https://www.terraform.io/docs/providers/okta/d/user_type
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,13 +8,13 @@ import * as cdktf from 'cdktf';
 
 export interface DataOktaUserTypeConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/user_type.html#name DataOktaUserType#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/user_type#name DataOktaUserType#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/d/user_type.html okta_user_type}
+* Represents a {@link https://www.terraform.io/docs/providers/okta/d/user_type okta_user_type}
 */
 export class DataOktaUserType extends cdktf.TerraformDataSource {
 
@@ -28,7 +28,7 @@ export class DataOktaUserType extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/d/user_type.html okta_user_type} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/okta/d/user_type okta_user_type} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

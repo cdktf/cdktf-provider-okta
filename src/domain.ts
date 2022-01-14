@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/r/domain.html
+// https://www.terraform.io/docs/providers/okta/r/domain
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,13 +10,13 @@ export interface DomainConfig extends cdktf.TerraformMetaArguments {
   /**
   * Custom Domain name
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/domain.html#name Domain#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/domain#name Domain#name}
   */
   readonly name: string;
   /**
   * Indicates whether the domain should be verified during creation
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/domain.html#verify Domain#verify}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/domain#verify Domain#verify}
   */
   readonly verify?: boolean | cdktf.IResolvable;
 }
@@ -44,7 +44,7 @@ export class DomainDnsRecords extends cdktf.ComplexComputedList {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/r/domain.html okta_domain}
+* Represents a {@link https://www.terraform.io/docs/providers/okta/r/domain okta_domain}
 */
 export class Domain extends cdktf.TerraformResource {
 
@@ -58,7 +58,7 @@ export class Domain extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/domain.html okta_domain} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/domain okta_domain} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/d/idp_oidc.html
+// https://www.terraform.io/docs/providers/okta/d/idp_oidc
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,17 +8,17 @@ import * as cdktf from 'cdktf';
 
 export interface DataOktaIdpOidcConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/idp_oidc.html#id DataOktaIdpOidc#id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/idp_oidc#id DataOktaIdpOidc#id}
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/idp_oidc.html#name DataOktaIdpOidc#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/idp_oidc#name DataOktaIdpOidc#name}
   */
   readonly name?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/d/idp_oidc.html okta_idp_oidc}
+* Represents a {@link https://www.terraform.io/docs/providers/okta/d/idp_oidc okta_idp_oidc}
 */
 export class DataOktaIdpOidc extends cdktf.TerraformDataSource {
 
@@ -32,7 +32,7 @@ export class DataOktaIdpOidc extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/d/idp_oidc.html okta_idp_oidc} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/okta/d/idp_oidc okta_idp_oidc} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

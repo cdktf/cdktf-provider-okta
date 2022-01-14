@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/r/group_membership.html
+// https://www.terraform.io/docs/providers/okta/r/group_membership
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,19 +10,19 @@ export interface GroupMembershipConfig extends cdktf.TerraformMetaArguments {
   /**
   * ID of a Okta Group
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_membership.html#group_id GroupMembership#group_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_membership#group_id GroupMembership#group_id}
   */
   readonly groupId: string;
   /**
   * ID of a Okta User
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_membership.html#user_id GroupMembership#user_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_membership#user_id GroupMembership#user_id}
   */
   readonly userId: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/r/group_membership.html okta_group_membership}
+* Represents a {@link https://www.terraform.io/docs/providers/okta/r/group_membership okta_group_membership}
 */
 export class GroupMembership extends cdktf.TerraformResource {
 
@@ -36,7 +36,7 @@ export class GroupMembership extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/group_membership.html okta_group_membership} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/group_membership okta_group_membership} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

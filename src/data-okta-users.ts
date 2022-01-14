@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/d/users.html
+// https://www.terraform.io/docs/providers/okta/d/users
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,7 +10,7 @@ export interface DataOktaUsersConfig extends cdktf.TerraformMetaArguments {
   /**
   * search block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/users.html#search DataOktaUsers#search}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/users#search DataOktaUsers#search}
   */
   readonly search: DataOktaUsersSearch[];
 }
@@ -198,17 +198,17 @@ export class DataOktaUsersUsers extends cdktf.ComplexComputedList {
 }
 export interface DataOktaUsersSearch {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/users.html#comparison DataOktaUsers#comparison}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/users#comparison DataOktaUsers#comparison}
   */
   readonly comparison?: string;
   /**
   * Property name to search for. This requires the search feature be on. Please see Okta documentation on their filter API for users. https://developer.okta.com/docs/api/resources/users#list-users-with-search
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/users.html#name DataOktaUsers#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/users#name DataOktaUsers#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/users.html#value DataOktaUsers#value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/users#value DataOktaUsers#value}
   */
   readonly value: string;
 }
@@ -227,7 +227,7 @@ export function dataOktaUsersSearchToTerraform(struct?: DataOktaUsersSearch): an
 
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/d/users.html okta_users}
+* Represents a {@link https://www.terraform.io/docs/providers/okta/d/users okta_users}
 */
 export class DataOktaUsers extends cdktf.TerraformDataSource {
 
@@ -241,7 +241,7 @@ export class DataOktaUsers extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/d/users.html okta_users} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/okta/d/users okta_users} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

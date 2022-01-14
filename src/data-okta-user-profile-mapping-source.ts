@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/d/user_profile_mapping_source.html
+// https://www.terraform.io/docs/providers/okta/d/user_profile_mapping_source
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,7 +10,7 @@ export interface DataOktaUserProfileMappingSourceConfig extends cdktf.TerraformM
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/d/user_profile_mapping_source.html okta_user_profile_mapping_source}
+* Represents a {@link https://www.terraform.io/docs/providers/okta/d/user_profile_mapping_source okta_user_profile_mapping_source}
 */
 export class DataOktaUserProfileMappingSource extends cdktf.TerraformDataSource {
 
@@ -24,7 +24,7 @@ export class DataOktaUserProfileMappingSource extends cdktf.TerraformDataSource 
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/d/user_profile_mapping_source.html okta_user_profile_mapping_source} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/okta/d/user_profile_mapping_source okta_user_profile_mapping_source} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

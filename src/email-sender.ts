@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/r/email_sender.html
+// https://www.terraform.io/docs/providers/okta/r/email_sender
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,19 +10,19 @@ export interface EmailSenderConfig extends cdktf.TerraformMetaArguments {
   /**
   * Email address to send from 
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/email_sender.html#from_address EmailSender#from_address}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/email_sender#from_address EmailSender#from_address}
   */
   readonly fromAddress: string;
   /**
   * Name of sender
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/email_sender.html#from_name EmailSender#from_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/email_sender#from_name EmailSender#from_name}
   */
   readonly fromName: string;
   /**
   * Mail domain to send from
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/email_sender.html#subdomain EmailSender#subdomain}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/email_sender#subdomain EmailSender#subdomain}
   */
   readonly subdomain: string;
 }
@@ -45,7 +45,7 @@ export class EmailSenderDnsRecords extends cdktf.ComplexComputedList {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/r/email_sender.html okta_email_sender}
+* Represents a {@link https://www.terraform.io/docs/providers/okta/r/email_sender okta_email_sender}
 */
 export class EmailSender extends cdktf.TerraformResource {
 
@@ -59,7 +59,7 @@ export class EmailSender extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/email_sender.html okta_email_sender} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/email_sender okta_email_sender} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

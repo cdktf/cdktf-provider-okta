@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/d/auth_server_claim.html
+// https://www.terraform.io/docs/providers/okta/d/auth_server_claim
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,21 +10,21 @@ export interface DataOktaAuthServerClaimConfig extends cdktf.TerraformMetaArgume
   /**
   * Auth server ID
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/auth_server_claim.html#auth_server_id DataOktaAuthServerClaim#auth_server_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/auth_server_claim#auth_server_id DataOktaAuthServerClaim#auth_server_id}
   */
   readonly authServerId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/auth_server_claim.html#id DataOktaAuthServerClaim#id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/auth_server_claim#id DataOktaAuthServerClaim#id}
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/auth_server_claim.html#name DataOktaAuthServerClaim#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/auth_server_claim#name DataOktaAuthServerClaim#name}
   */
   readonly name?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/d/auth_server_claim.html okta_auth_server_claim}
+* Represents a {@link https://www.terraform.io/docs/providers/okta/d/auth_server_claim okta_auth_server_claim}
 */
 export class DataOktaAuthServerClaim extends cdktf.TerraformDataSource {
 
@@ -38,7 +38,7 @@ export class DataOktaAuthServerClaim extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/d/auth_server_claim.html okta_auth_server_claim} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/okta/d/auth_server_claim okta_auth_server_claim} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

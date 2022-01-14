@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/r/admin_role_custom.html
+// https://www.terraform.io/docs/providers/okta/r/admin_role_custom
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,25 +10,25 @@ export interface AdminRoleCustomConfig extends cdktf.TerraformMetaArguments {
   /**
   * A human-readable description of the new Role
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/admin_role_custom.html#description AdminRoleCustom#description}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/admin_role_custom#description AdminRoleCustom#description}
   */
   readonly description: string;
   /**
   * The name given to the new Role
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/admin_role_custom.html#label AdminRoleCustom#label}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/admin_role_custom#label AdminRoleCustom#label}
   */
   readonly label: string;
   /**
   * The permissions that the new Role grants.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/admin_role_custom.html#permissions AdminRoleCustom#permissions}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/admin_role_custom#permissions AdminRoleCustom#permissions}
   */
   readonly permissions?: string[];
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/r/admin_role_custom.html okta_admin_role_custom}
+* Represents a {@link https://www.terraform.io/docs/providers/okta/r/admin_role_custom okta_admin_role_custom}
 */
 export class AdminRoleCustom extends cdktf.TerraformResource {
 
@@ -42,7 +42,7 @@ export class AdminRoleCustom extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/admin_role_custom.html okta_admin_role_custom} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/admin_role_custom okta_admin_role_custom} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

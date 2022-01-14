@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/d/network_zone.html
+// https://www.terraform.io/docs/providers/okta/d/network_zone
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,17 +8,17 @@ import * as cdktf from 'cdktf';
 
 export interface DataOktaNetworkZoneConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/network_zone.html#id DataOktaNetworkZone#id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/network_zone#id DataOktaNetworkZone#id}
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/network_zone.html#name DataOktaNetworkZone#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/network_zone#name DataOktaNetworkZone#name}
   */
   readonly name?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/d/network_zone.html okta_network_zone}
+* Represents a {@link https://www.terraform.io/docs/providers/okta/d/network_zone okta_network_zone}
 */
 export class DataOktaNetworkZone extends cdktf.TerraformDataSource {
 
@@ -32,7 +32,7 @@ export class DataOktaNetworkZone extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/d/network_zone.html okta_network_zone} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/okta/d/network_zone okta_network_zone} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

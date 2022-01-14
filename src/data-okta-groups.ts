@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/d/groups.html
+// https://www.terraform.io/docs/providers/okta/d/groups
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,19 +10,19 @@ export interface DataOktaGroupsConfig extends cdktf.TerraformMetaArguments {
   /**
   * Searches the name property of groups for matching value
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/groups.html#q DataOktaGroups#q}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/groups#q DataOktaGroups#q}
   */
   readonly q?: string;
   /**
   * Searches for groups with a supported filtering expression for all attributes except for '_embedded', '_links', and 'objectClass'
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/groups.html#search DataOktaGroups#search}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/groups#search DataOktaGroups#search}
   */
   readonly search?: string;
   /**
   * Type of the group. When specified in the terraform resource, will act as a filter when searching for the groups
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/groups.html#type DataOktaGroups#type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/groups#type DataOktaGroups#type}
   */
   readonly type?: string;
 }
@@ -50,7 +50,7 @@ export class DataOktaGroupsGroups extends cdktf.ComplexComputedList {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/d/groups.html okta_groups}
+* Represents a {@link https://www.terraform.io/docs/providers/okta/d/groups okta_groups}
 */
 export class DataOktaGroups extends cdktf.TerraformDataSource {
 
@@ -64,7 +64,7 @@ export class DataOktaGroups extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/d/groups.html okta_groups} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/okta/d/groups okta_groups} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

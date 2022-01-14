@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/r/group_rule.html
+// https://www.terraform.io/docs/providers/okta/r/group_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,41 +8,41 @@ import * as cdktf from 'cdktf';
 
 export interface GroupRuleConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_rule.html#expression_type GroupRule#expression_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_rule#expression_type GroupRule#expression_type}
   */
   readonly expressionType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_rule.html#expression_value GroupRule#expression_value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_rule#expression_value GroupRule#expression_value}
   */
   readonly expressionValue: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_rule.html#group_assignments GroupRule#group_assignments}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_rule#group_assignments GroupRule#group_assignments}
   */
   readonly groupAssignments: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_rule.html#name GroupRule#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_rule#name GroupRule#name}
   */
   readonly name: string;
   /**
   * Remove users added by this rule from the assigned group after deleting this resource
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_rule.html#remove_assigned_users GroupRule#remove_assigned_users}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_rule#remove_assigned_users GroupRule#remove_assigned_users}
   */
   readonly removeAssignedUsers?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_rule.html#status GroupRule#status}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_rule#status GroupRule#status}
   */
   readonly status?: string;
   /**
   * The list of user IDs that would be excluded when rules are processed
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_rule.html#users_excluded GroupRule#users_excluded}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_rule#users_excluded GroupRule#users_excluded}
   */
   readonly usersExcluded?: string[];
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/r/group_rule.html okta_group_rule}
+* Represents a {@link https://www.terraform.io/docs/providers/okta/r/group_rule okta_group_rule}
 */
 export class GroupRule extends cdktf.TerraformResource {
 
@@ -56,7 +56,7 @@ export class GroupRule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/group_rule.html okta_group_rule} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/group_rule okta_group_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

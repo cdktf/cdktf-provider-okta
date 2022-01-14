@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/r/app_saml_app_settings.html
+// https://www.terraform.io/docs/providers/okta/r/app_saml_app_settings
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,19 +10,19 @@ export interface AppSamlAppSettingsConfig extends cdktf.TerraformMetaArguments {
   /**
   * Application ID
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml_app_settings.html#app_id AppSamlAppSettings#app_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml_app_settings#app_id AppSamlAppSettings#app_id}
   */
   readonly appId: string;
   /**
   * Application settings in JSON format
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml_app_settings.html#settings AppSamlAppSettings#settings}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml_app_settings#settings AppSamlAppSettings#settings}
   */
   readonly settings: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/r/app_saml_app_settings.html okta_app_saml_app_settings}
+* Represents a {@link https://www.terraform.io/docs/providers/okta/r/app_saml_app_settings okta_app_saml_app_settings}
 */
 export class AppSamlAppSettings extends cdktf.TerraformResource {
 
@@ -36,7 +36,7 @@ export class AppSamlAppSettings extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/app_saml_app_settings.html okta_app_saml_app_settings} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/app_saml_app_settings okta_app_saml_app_settings} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/r/auth_server_policy.html
+// https://www.terraform.io/docs/providers/okta/r/auth_server_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,43 +8,43 @@ import * as cdktf from 'cdktf';
 
 export interface AuthServerPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy.html#auth_server_id AuthServerPolicy#auth_server_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy#auth_server_id AuthServerPolicy#auth_server_id}
   */
   readonly authServerId: string;
   /**
   * Use ["ALL_CLIENTS"] when unsure.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy.html#client_whitelist AuthServerPolicy#client_whitelist}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy#client_whitelist AuthServerPolicy#client_whitelist}
   */
   readonly clientWhitelist: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy.html#description AuthServerPolicy#description}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy#description AuthServerPolicy#description}
   */
   readonly description: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy.html#name AuthServerPolicy#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy#name AuthServerPolicy#name}
   */
   readonly name: string;
   /**
   * Priority of the auth server policy
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy.html#priority AuthServerPolicy#priority}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy#priority AuthServerPolicy#priority}
   */
   readonly priority: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy.html#status AuthServerPolicy#status}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy#status AuthServerPolicy#status}
   */
   readonly status?: string;
   /**
   * Auth server policy type, unlikely this will be anything other then the default
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy.html#type AuthServerPolicy#type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy#type AuthServerPolicy#type}
   */
   readonly type?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy.html okta_auth_server_policy}
+* Represents a {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy okta_auth_server_policy}
 */
 export class AuthServerPolicy extends cdktf.TerraformResource {
 
@@ -58,7 +58,7 @@ export class AuthServerPolicy extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy.html okta_auth_server_policy} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy okta_auth_server_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

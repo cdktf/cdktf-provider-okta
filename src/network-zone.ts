@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/r/network_zone.html
+// https://www.terraform.io/docs/providers/okta/r/network_zone
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,55 +10,55 @@ export interface NetworkZoneConfig extends cdktf.TerraformMetaArguments {
   /**
   * Format of each array value: a string representation of an ASN numeric value
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/network_zone.html#asns NetworkZone#asns}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/network_zone#asns NetworkZone#asns}
   */
   readonly asns?: string[];
   /**
   * Array of locations ISO-3166-1(2). Format code: countryCode OR countryCode-regionCode
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/network_zone.html#dynamic_locations NetworkZone#dynamic_locations}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/network_zone#dynamic_locations NetworkZone#dynamic_locations}
   */
   readonly dynamicLocations?: string[];
   /**
   * Type of proxy being controlled by this network zone
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/network_zone.html#dynamic_proxy_type NetworkZone#dynamic_proxy_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/network_zone#dynamic_proxy_type NetworkZone#dynamic_proxy_type}
   */
   readonly dynamicProxyType?: string;
   /**
   * Array of values in CIDR/range form depending on the way it's been declared (i.e. CIDR will contain /suffix). Please check API docs for examples
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/network_zone.html#gateways NetworkZone#gateways}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/network_zone#gateways NetworkZone#gateways}
   */
   readonly gateways?: string[];
   /**
   * Name of the Network Zone Resource
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/network_zone.html#name NetworkZone#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/network_zone#name NetworkZone#name}
   */
   readonly name: string;
   /**
   * Array of values in CIDR/range form depending on the way it's been declared (i.e. CIDR will contain /suffix). Please check API docs for examples
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/network_zone.html#proxies NetworkZone#proxies}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/network_zone#proxies NetworkZone#proxies}
   */
   readonly proxies?: string[];
   /**
   * Type of the Network Zone - can either be IP or DYNAMIC only
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/network_zone.html#type NetworkZone#type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/network_zone#type NetworkZone#type}
   */
   readonly type: string;
   /**
   * Zone's purpose: POLICY or BLOCKLIST
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/network_zone.html#usage NetworkZone#usage}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/network_zone#usage NetworkZone#usage}
   */
   readonly usage?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/r/network_zone.html okta_network_zone}
+* Represents a {@link https://www.terraform.io/docs/providers/okta/r/network_zone okta_network_zone}
 */
 export class NetworkZone extends cdktf.TerraformResource {
 
@@ -72,7 +72,7 @@ export class NetworkZone extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/network_zone.html okta_network_zone} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/network_zone okta_network_zone} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
