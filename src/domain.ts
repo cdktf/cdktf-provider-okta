@@ -8,6 +8,12 @@ import * as cdktf from 'cdktf';
 
 export interface DomainConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Optional. Certificate source type that indicates whether the certificate is provided by the user or Okta. Accepted values: MANUAL, OKTA_MANAGED. Warning: Use of OKTA_MANAGED requires a feature flag to be enabled. Default value = MANUAL
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/domain#certificate_source_type Domain#certificate_source_type}
+  */
+  readonly certificateSourceType?: string;
+  /**
   * Custom Domain name
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/domain#name Domain#name}
@@ -75,6 +81,7 @@ export class Domain extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._certificateSourceType = config.certificateSourceType;
     this._name = config.name;
     this._verify = config.verify;
   }
@@ -82,6 +89,22 @@ export class Domain extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // certificate_source_type - computed: false, optional: true, required: false
+  private _certificateSourceType?: string; 
+  public get certificateSourceType() {
+    return this.getStringAttribute('certificate_source_type');
+  }
+  public set certificateSourceType(value: string) {
+    this._certificateSourceType = value;
+  }
+  public resetCertificateSourceType() {
+    this._certificateSourceType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get certificateSourceTypeInput() {
+    return this._certificateSourceType;
+  }
 
   // dns_records - computed: true, optional: false, required: false
   public dnsRecords(index: string) {
@@ -133,6 +156,7 @@ export class Domain extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      certificate_source_type: cdktf.stringToTerraform(this._certificateSourceType),
       name: cdktf.stringToTerraform(this._name),
       verify: cdktf.booleanToTerraform(this._verify),
     };
