@@ -80,7 +80,7 @@ export class CaptchaOrgWideSettings extends cdktf.TerraformResource {
   // enabled_for - computed: false, optional: true, required: false
   private _enabledFor?: string[]; 
   public get enabledFor() {
-    return this.getListAttribute('enabled_for');
+    return cdktf.Fn.tolist(this.getListAttribute('enabled_for'));
   }
   public set enabledFor(value: string[]) {
     this._enabledFor = value;

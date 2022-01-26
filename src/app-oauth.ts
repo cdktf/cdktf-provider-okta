@@ -288,13 +288,13 @@ export interface AppOauthConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth#jwks AppOauth#jwks}
   */
-  readonly jwks?: AppOauthJwks[];
+  readonly jwks?: AppOauthJwks[] | cdktf.IResolvable;
   /**
   * users block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth#users AppOauth#users}
   */
-  readonly users?: AppOauthUsers[];
+  readonly users?: AppOauthUsers[] | cdktf.IResolvable;
 }
 export interface AppOauthGroupsClaim {
   /**
@@ -323,8 +323,8 @@ export interface AppOauthGroupsClaim {
   readonly value: string;
 }
 
-export function appOauthGroupsClaimToTerraform(struct?: AppOauthGroupsClaimOutputReference | AppOauthGroupsClaim): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function appOauthGroupsClaimToTerraform(struct?: AppOauthGroupsClaimOutputReference | AppOauthGroupsClaim | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -344,7 +344,7 @@ export class AppOauthGroupsClaimOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -469,8 +469,8 @@ export interface AppOauthJwks {
   readonly n?: string;
 }
 
-export function appOauthJwksToTerraform(struct?: AppOauthJwks): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function appOauthJwksToTerraform(struct?: AppOauthJwks | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -503,8 +503,8 @@ export interface AppOauthUsers {
   readonly username?: string;
 }
 
-export function appOauthUsersToTerraform(struct?: AppOauthUsers): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function appOauthUsersToTerraform(struct?: AppOauthUsers | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -637,7 +637,7 @@ export class AppOauth extends cdktf.TerraformResource {
   // accessibility_self_service - computed: false, optional: true, required: false
   private _accessibilitySelfService?: boolean | cdktf.IResolvable; 
   public get accessibilitySelfService() {
-    return this.getBooleanAttribute('accessibility_self_service') as any;
+    return this.getBooleanAttribute('accessibility_self_service');
   }
   public set accessibilitySelfService(value: boolean | cdktf.IResolvable) {
     this._accessibilitySelfService = value;
@@ -701,7 +701,7 @@ export class AppOauth extends cdktf.TerraformResource {
   // auto_key_rotation - computed: false, optional: true, required: false
   private _autoKeyRotation?: boolean | cdktf.IResolvable; 
   public get autoKeyRotation() {
-    return this.getBooleanAttribute('auto_key_rotation') as any;
+    return this.getBooleanAttribute('auto_key_rotation');
   }
   public set autoKeyRotation(value: boolean | cdktf.IResolvable) {
     this._autoKeyRotation = value;
@@ -717,7 +717,7 @@ export class AppOauth extends cdktf.TerraformResource {
   // auto_submit_toolbar - computed: false, optional: true, required: false
   private _autoSubmitToolbar?: boolean | cdktf.IResolvable; 
   public get autoSubmitToolbar() {
-    return this.getBooleanAttribute('auto_submit_toolbar') as any;
+    return this.getBooleanAttribute('auto_submit_toolbar');
   }
   public set autoSubmitToolbar(value: boolean | cdktf.IResolvable) {
     this._autoSubmitToolbar = value;
@@ -834,7 +834,7 @@ export class AppOauth extends cdktf.TerraformResource {
   // grant_types - computed: false, optional: true, required: false
   private _grantTypes?: string[]; 
   public get grantTypes() {
-    return this.getListAttribute('grant_types');
+    return cdktf.Fn.tolist(this.getListAttribute('grant_types'));
   }
   public set grantTypes(value: string[]) {
     this._grantTypes = value;
@@ -850,7 +850,7 @@ export class AppOauth extends cdktf.TerraformResource {
   // groups - computed: false, optional: true, required: false
   private _groups?: string[]; 
   public get groups() {
-    return this.getListAttribute('groups');
+    return cdktf.Fn.tolist(this.getListAttribute('groups'));
   }
   public set groups(value: string[]) {
     this._groups = value;
@@ -866,7 +866,7 @@ export class AppOauth extends cdktf.TerraformResource {
   // hide_ios - computed: false, optional: true, required: false
   private _hideIos?: boolean | cdktf.IResolvable; 
   public get hideIos() {
-    return this.getBooleanAttribute('hide_ios') as any;
+    return this.getBooleanAttribute('hide_ios');
   }
   public set hideIos(value: boolean | cdktf.IResolvable) {
     this._hideIos = value;
@@ -882,7 +882,7 @@ export class AppOauth extends cdktf.TerraformResource {
   // hide_web - computed: false, optional: true, required: false
   private _hideWeb?: boolean | cdktf.IResolvable; 
   public get hideWeb() {
-    return this.getBooleanAttribute('hide_web') as any;
+    return this.getBooleanAttribute('hide_web');
   }
   public set hideWeb(value: boolean | cdktf.IResolvable) {
     this._hideWeb = value;
@@ -903,7 +903,7 @@ export class AppOauth extends cdktf.TerraformResource {
   // implicit_assignment - computed: false, optional: true, required: false
   private _implicitAssignment?: boolean | cdktf.IResolvable; 
   public get implicitAssignment() {
-    return this.getBooleanAttribute('implicit_assignment') as any;
+    return this.getBooleanAttribute('implicit_assignment');
   }
   public set implicitAssignment(value: boolean | cdktf.IResolvable) {
     this._implicitAssignment = value;
@@ -964,7 +964,7 @@ export class AppOauth extends cdktf.TerraformResource {
   // login_scopes - computed: false, optional: true, required: false
   private _loginScopes?: string[]; 
   public get loginScopes() {
-    return this.getListAttribute('login_scopes');
+    return cdktf.Fn.tolist(this.getListAttribute('login_scopes'));
   }
   public set loginScopes(value: string[]) {
     this._loginScopes = value;
@@ -1038,7 +1038,7 @@ export class AppOauth extends cdktf.TerraformResource {
   // omit_secret - computed: false, optional: true, required: false
   private _omitSecret?: boolean | cdktf.IResolvable; 
   public get omitSecret() {
-    return this.getBooleanAttribute('omit_secret') as any;
+    return this.getBooleanAttribute('omit_secret');
   }
   public set omitSecret(value: boolean | cdktf.IResolvable) {
     this._omitSecret = value;
@@ -1070,7 +1070,7 @@ export class AppOauth extends cdktf.TerraformResource {
   // post_logout_redirect_uris - computed: false, optional: true, required: false
   private _postLogoutRedirectUris?: string[]; 
   public get postLogoutRedirectUris() {
-    return this.getListAttribute('post_logout_redirect_uris');
+    return cdktf.Fn.tolist(this.getListAttribute('post_logout_redirect_uris'));
   }
   public set postLogoutRedirectUris(value: string[]) {
     this._postLogoutRedirectUris = value;
@@ -1102,7 +1102,7 @@ export class AppOauth extends cdktf.TerraformResource {
   // redirect_uris - computed: false, optional: true, required: false
   private _redirectUris?: string[]; 
   public get redirectUris() {
-    return this.getListAttribute('redirect_uris');
+    return cdktf.Fn.tolist(this.getListAttribute('redirect_uris'));
   }
   public set redirectUris(value: string[]) {
     this._redirectUris = value;
@@ -1150,7 +1150,7 @@ export class AppOauth extends cdktf.TerraformResource {
   // response_types - computed: false, optional: true, required: false
   private _responseTypes?: string[]; 
   public get responseTypes() {
-    return this.getListAttribute('response_types');
+    return cdktf.Fn.tolist(this.getListAttribute('response_types'));
   }
   public set responseTypes(value: string[]) {
     this._responseTypes = value;
@@ -1171,7 +1171,7 @@ export class AppOauth extends cdktf.TerraformResource {
   // skip_groups - computed: false, optional: true, required: false
   private _skipGroups?: boolean | cdktf.IResolvable; 
   public get skipGroups() {
-    return this.getBooleanAttribute('skip_groups') as any;
+    return this.getBooleanAttribute('skip_groups');
   }
   public set skipGroups(value: boolean | cdktf.IResolvable) {
     this._skipGroups = value;
@@ -1187,7 +1187,7 @@ export class AppOauth extends cdktf.TerraformResource {
   // skip_users - computed: false, optional: true, required: false
   private _skipUsers?: boolean | cdktf.IResolvable; 
   public get skipUsers() {
-    return this.getBooleanAttribute('skip_users') as any;
+    return this.getBooleanAttribute('skip_users');
   }
   public set skipUsers(value: boolean | cdktf.IResolvable) {
     this._skipUsers = value;
@@ -1342,7 +1342,7 @@ export class AppOauth extends cdktf.TerraformResource {
   }
 
   // groups_claim - computed: false, optional: true, required: false
-  private _groupsClaim = new AppOauthGroupsClaimOutputReference(this as any, "groups_claim", true);
+  private _groupsClaim = new AppOauthGroupsClaimOutputReference(this, "groups_claim", true);
   public get groupsClaim() {
     return this._groupsClaim;
   }
@@ -1358,12 +1358,12 @@ export class AppOauth extends cdktf.TerraformResource {
   }
 
   // jwks - computed: false, optional: true, required: false
-  private _jwks?: AppOauthJwks[]; 
+  private _jwks?: AppOauthJwks[] | cdktf.IResolvable; 
   public get jwks() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('jwks') as any;
+    return this.interpolationForAttribute('jwks');
   }
-  public set jwks(value: AppOauthJwks[]) {
+  public set jwks(value: AppOauthJwks[] | cdktf.IResolvable) {
     this._jwks = value;
   }
   public resetJwks() {
@@ -1375,12 +1375,12 @@ export class AppOauth extends cdktf.TerraformResource {
   }
 
   // users - computed: false, optional: true, required: false
-  private _users?: AppOauthUsers[]; 
+  private _users?: AppOauthUsers[] | cdktf.IResolvable; 
   public get users() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('users') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('users')));
   }
-  public set users(value: AppOauthUsers[]) {
+  public set users(value: AppOauthUsers[] | cdktf.IResolvable) {
     this._users = value;
   }
   public resetUsers() {

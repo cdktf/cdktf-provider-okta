@@ -171,7 +171,7 @@ export class AuthServerPolicyRule extends cdktf.TerraformResource {
   // grant_type_whitelist - computed: false, optional: false, required: true
   private _grantTypeWhitelist?: string[]; 
   public get grantTypeWhitelist() {
-    return this.getListAttribute('grant_type_whitelist');
+    return cdktf.Fn.tolist(this.getListAttribute('grant_type_whitelist'));
   }
   public set grantTypeWhitelist(value: string[]) {
     this._grantTypeWhitelist = value;
@@ -184,7 +184,7 @@ export class AuthServerPolicyRule extends cdktf.TerraformResource {
   // group_blacklist - computed: false, optional: true, required: false
   private _groupBlacklist?: string[]; 
   public get groupBlacklist() {
-    return this.getListAttribute('group_blacklist');
+    return cdktf.Fn.tolist(this.getListAttribute('group_blacklist'));
   }
   public set groupBlacklist(value: string[]) {
     this._groupBlacklist = value;
@@ -200,7 +200,7 @@ export class AuthServerPolicyRule extends cdktf.TerraformResource {
   // group_whitelist - computed: false, optional: true, required: false
   private _groupWhitelist?: string[]; 
   public get groupWhitelist() {
-    return this.getListAttribute('group_whitelist');
+    return cdktf.Fn.tolist(this.getListAttribute('group_whitelist'));
   }
   public set groupWhitelist(value: string[]) {
     this._groupWhitelist = value;
@@ -308,7 +308,7 @@ export class AuthServerPolicyRule extends cdktf.TerraformResource {
   // scope_whitelist - computed: false, optional: true, required: false
   private _scopeWhitelist?: string[]; 
   public get scopeWhitelist() {
-    return this.getListAttribute('scope_whitelist');
+    return cdktf.Fn.tolist(this.getListAttribute('scope_whitelist'));
   }
   public set scopeWhitelist(value: string[]) {
     this._scopeWhitelist = value;
@@ -356,7 +356,7 @@ export class AuthServerPolicyRule extends cdktf.TerraformResource {
   // user_blacklist - computed: false, optional: true, required: false
   private _userBlacklist?: string[]; 
   public get userBlacklist() {
-    return this.getListAttribute('user_blacklist');
+    return cdktf.Fn.tolist(this.getListAttribute('user_blacklist'));
   }
   public set userBlacklist(value: string[]) {
     this._userBlacklist = value;
@@ -372,7 +372,7 @@ export class AuthServerPolicyRule extends cdktf.TerraformResource {
   // user_whitelist - computed: false, optional: true, required: false
   private _userWhitelist?: string[]; 
   public get userWhitelist() {
-    return this.getListAttribute('user_whitelist');
+    return cdktf.Fn.tolist(this.getListAttribute('user_whitelist'));
   }
   public set userWhitelist(value: string[]) {
     this._userWhitelist = value;

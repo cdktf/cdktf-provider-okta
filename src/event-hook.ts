@@ -10,11 +10,11 @@ export interface EventHookConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/event_hook#auth EventHook#auth}
   */
-  readonly auth?: { [key: string]: string } | cdktf.IResolvable;
+  readonly auth?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/event_hook#channel EventHook#channel}
   */
-  readonly channel: { [key: string]: string } | cdktf.IResolvable;
+  readonly channel: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/event_hook#events EventHook#events}
   */
@@ -32,7 +32,7 @@ export interface EventHookConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/event_hook#headers EventHook#headers}
   */
-  readonly headers?: EventHookHeaders[];
+  readonly headers?: EventHookHeaders[] | cdktf.IResolvable;
 }
 export interface EventHookHeaders {
   /**
@@ -45,8 +45,8 @@ export interface EventHookHeaders {
   readonly value?: string;
 }
 
-export function eventHookHeadersToTerraform(struct?: EventHookHeaders): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function eventHookHeadersToTerraform(struct?: EventHookHeaders | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -102,12 +102,11 @@ export class EventHook extends cdktf.TerraformResource {
   // ==========
 
   // auth - computed: false, optional: true, required: false
-  private _auth?: { [key: string]: string } | cdktf.IResolvable; 
+  private _auth?: { [key: string]: string }; 
   public get auth() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('auth') as any;
+    return this.getStringMapAttribute('auth');
   }
-  public set auth(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set auth(value: { [key: string]: string }) {
     this._auth = value;
   }
   public resetAuth() {
@@ -119,12 +118,11 @@ export class EventHook extends cdktf.TerraformResource {
   }
 
   // channel - computed: false, optional: false, required: true
-  private _channel?: { [key: string]: string } | cdktf.IResolvable; 
+  private _channel?: { [key: string]: string }; 
   public get channel() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('channel') as any;
+    return this.getStringMapAttribute('channel');
   }
-  public set channel(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set channel(value: { [key: string]: string }) {
     this._channel = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -135,7 +133,7 @@ export class EventHook extends cdktf.TerraformResource {
   // events - computed: false, optional: false, required: true
   private _events?: string[]; 
   public get events() {
-    return this.getListAttribute('events');
+    return cdktf.Fn.tolist(this.getListAttribute('events'));
   }
   public set events(value: string[]) {
     this._events = value;
@@ -180,12 +178,12 @@ export class EventHook extends cdktf.TerraformResource {
   }
 
   // headers - computed: false, optional: true, required: false
-  private _headers?: EventHookHeaders[]; 
+  private _headers?: EventHookHeaders[] | cdktf.IResolvable; 
   public get headers() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('headers') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('headers')));
   }
-  public set headers(value: EventHookHeaders[]) {
+  public set headers(value: EventHookHeaders[] | cdktf.IResolvable) {
     this._headers = value;
   }
   public resetHeaders() {
@@ -202,8 +200,8 @@ export class EventHook extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      auth: cdktf.hashMapper(cdktf.anyToTerraform)(this._auth),
-      channel: cdktf.hashMapper(cdktf.anyToTerraform)(this._channel),
+      auth: cdktf.hashMapper(cdktf.stringToTerraform)(this._auth),
+      channel: cdktf.hashMapper(cdktf.stringToTerraform)(this._channel),
       events: cdktf.listMapper(cdktf.stringToTerraform)(this._events),
       name: cdktf.stringToTerraform(this._name),
       status: cdktf.stringToTerraform(this._status),

@@ -122,13 +122,13 @@ export interface AppUserSchemaConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema#array_one_of AppUserSchema#array_one_of}
   */
-  readonly arrayOneOf?: AppUserSchemaArrayOneOf[];
+  readonly arrayOneOf?: AppUserSchemaArrayOneOf[] | cdktf.IResolvable;
   /**
   * one_of block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema#one_of AppUserSchema#one_of}
   */
-  readonly oneOf?: AppUserSchemaOneOf[];
+  readonly oneOf?: AppUserSchemaOneOf[] | cdktf.IResolvable;
 }
 export interface AppUserSchemaArrayOneOf {
   /**
@@ -145,8 +145,8 @@ export interface AppUserSchemaArrayOneOf {
   readonly title: string;
 }
 
-export function appUserSchemaArrayOneOfToTerraform(struct?: AppUserSchemaArrayOneOf): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function appUserSchemaArrayOneOfToTerraform(struct?: AppUserSchemaArrayOneOf | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -171,8 +171,8 @@ export interface AppUserSchemaOneOf {
   readonly title: string;
 }
 
-export function appUserSchemaOneOfToTerraform(struct?: AppUserSchemaOneOf): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function appUserSchemaOneOfToTerraform(struct?: AppUserSchemaOneOf | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -436,7 +436,7 @@ export class AppUserSchema extends cdktf.TerraformResource {
   // required - computed: false, optional: true, required: false
   private _required?: boolean | cdktf.IResolvable; 
   public get required() {
-    return this.getBooleanAttribute('required') as any;
+    return this.getBooleanAttribute('required');
   }
   public set required(value: boolean | cdktf.IResolvable) {
     this._required = value;
@@ -494,7 +494,7 @@ export class AppUserSchema extends cdktf.TerraformResource {
   // union - computed: false, optional: true, required: false
   private _union?: boolean | cdktf.IResolvable; 
   public get union() {
-    return this.getBooleanAttribute('union') as any;
+    return this.getBooleanAttribute('union');
   }
   public set union(value: boolean | cdktf.IResolvable) {
     this._union = value;
@@ -540,12 +540,12 @@ export class AppUserSchema extends cdktf.TerraformResource {
   }
 
   // array_one_of - computed: false, optional: true, required: false
-  private _arrayOneOf?: AppUserSchemaArrayOneOf[]; 
+  private _arrayOneOf?: AppUserSchemaArrayOneOf[] | cdktf.IResolvable; 
   public get arrayOneOf() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('array_one_of') as any;
+    return this.interpolationForAttribute('array_one_of');
   }
-  public set arrayOneOf(value: AppUserSchemaArrayOneOf[]) {
+  public set arrayOneOf(value: AppUserSchemaArrayOneOf[] | cdktf.IResolvable) {
     this._arrayOneOf = value;
   }
   public resetArrayOneOf() {
@@ -557,12 +557,12 @@ export class AppUserSchema extends cdktf.TerraformResource {
   }
 
   // one_of - computed: false, optional: true, required: false
-  private _oneOf?: AppUserSchemaOneOf[]; 
+  private _oneOf?: AppUserSchemaOneOf[] | cdktf.IResolvable; 
   public get oneOf() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('one_of') as any;
+    return this.interpolationForAttribute('one_of');
   }
-  public set oneOf(value: AppUserSchemaOneOf[]) {
+  public set oneOf(value: AppUserSchemaOneOf[] | cdktf.IResolvable) {
     this._oneOf = value;
   }
   public resetOneOf() {

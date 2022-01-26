@@ -28,8 +28,7 @@ export class DataOktaBehaviorsBehaviors extends cdktf.ComplexComputedList {
 
   // settings - computed: true, optional: false, required: false
   public get settings() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('settings') as any;
+    return this.getStringMapAttribute('settings');
   }
 
   // status - computed: true, optional: false, required: false
@@ -84,7 +83,7 @@ export class DataOktaBehaviors extends cdktf.TerraformDataSource {
 
   // behaviors - computed: true, optional: false, required: false
   public behaviors(index: string) {
-    return new DataOktaBehaviorsBehaviors(this, 'behaviors', index);
+    return new DataOktaBehaviorsBehaviors(this, 'behaviors', index, false);
   }
 
   // id - computed: true, optional: true, required: false

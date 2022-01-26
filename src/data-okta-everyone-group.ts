@@ -67,7 +67,7 @@ export class DataOktaEveryoneGroup extends cdktf.TerraformDataSource {
   // include_users - computed: false, optional: true, required: false
   private _includeUsers?: boolean | cdktf.IResolvable; 
   public get includeUsers() {
-    return this.getBooleanAttribute('include_users') as any;
+    return this.getBooleanAttribute('include_users');
   }
   public set includeUsers(value: boolean | cdktf.IResolvable) {
     this._includeUsers = value;

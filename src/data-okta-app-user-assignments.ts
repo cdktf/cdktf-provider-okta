@@ -69,7 +69,7 @@ export class DataOktaAppUserAssignments extends cdktf.TerraformDataSource {
 
   // users - computed: true, optional: false, required: false
   public get users() {
-    return this.getListAttribute('users');
+    return cdktf.Fn.tolist(this.getListAttribute('users'));
   }
 
   // =========

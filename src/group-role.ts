@@ -85,7 +85,7 @@ export class GroupRole extends cdktf.TerraformResource {
   // disable_notifications - computed: false, optional: true, required: false
   private _disableNotifications?: boolean | cdktf.IResolvable; 
   public get disableNotifications() {
-    return this.getBooleanAttribute('disable_notifications') as any;
+    return this.getBooleanAttribute('disable_notifications');
   }
   public set disableNotifications(value: boolean | cdktf.IResolvable) {
     this._disableNotifications = value;
@@ -132,7 +132,7 @@ export class GroupRole extends cdktf.TerraformResource {
   // target_app_list - computed: false, optional: true, required: false
   private _targetAppList?: string[]; 
   public get targetAppList() {
-    return this.getListAttribute('target_app_list');
+    return cdktf.Fn.tolist(this.getListAttribute('target_app_list'));
   }
   public set targetAppList(value: string[]) {
     this._targetAppList = value;
@@ -148,7 +148,7 @@ export class GroupRole extends cdktf.TerraformResource {
   // target_group_list - computed: false, optional: true, required: false
   private _targetGroupList?: string[]; 
   public get targetGroupList() {
-    return this.getListAttribute('target_group_list');
+    return cdktf.Fn.tolist(this.getListAttribute('target_group_list'));
   }
   public set targetGroupList(value: string[]) {
     this._targetGroupList = value;

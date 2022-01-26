@@ -18,7 +18,7 @@ export interface DataOktaUserConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/user#search DataOktaUser#search}
   */
-  readonly search?: DataOktaUserSearch[];
+  readonly search?: DataOktaUserSearch[] | cdktf.IResolvable;
 }
 export interface DataOktaUserSearch {
   /**
@@ -37,8 +37,8 @@ export interface DataOktaUserSearch {
   readonly value: string;
 }
 
-export function dataOktaUserSearchToTerraform(struct?: DataOktaUserSearch): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dataOktaUserSearchToTerraform(struct?: DataOktaUserSearch | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -92,7 +92,7 @@ export class DataOktaUser extends cdktf.TerraformDataSource {
 
   // admin_roles - computed: true, optional: false, required: false
   public get adminRoles() {
-    return this.getListAttribute('admin_roles');
+    return cdktf.Fn.tolist(this.getListAttribute('admin_roles'));
   }
 
   // city - computed: true, optional: false, required: false
@@ -147,7 +147,7 @@ export class DataOktaUser extends cdktf.TerraformDataSource {
 
   // group_memberships - computed: true, optional: false, required: false
   public get groupMemberships() {
-    return this.getListAttribute('group_memberships');
+    return cdktf.Fn.tolist(this.getListAttribute('group_memberships'));
   }
 
   // honorific_prefix - computed: true, optional: false, required: false
@@ -287,12 +287,12 @@ export class DataOktaUser extends cdktf.TerraformDataSource {
   }
 
   // search - computed: false, optional: true, required: false
-  private _search?: DataOktaUserSearch[]; 
+  private _search?: DataOktaUserSearch[] | cdktf.IResolvable; 
   public get search() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('search') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('search')));
   }
-  public set search(value: DataOktaUserSearch[]) {
+  public set search(value: DataOktaUserSearch[] | cdktf.IResolvable) {
     this._search = value;
   }
   public resetSearch() {

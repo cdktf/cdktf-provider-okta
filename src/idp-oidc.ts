@@ -248,7 +248,7 @@ export class IdpOidc extends cdktf.TerraformResource {
   // account_link_group_include - computed: false, optional: true, required: false
   private _accountLinkGroupInclude?: string[]; 
   public get accountLinkGroupInclude() {
-    return this.getListAttribute('account_link_group_include');
+    return cdktf.Fn.tolist(this.getListAttribute('account_link_group_include'));
   }
   public set accountLinkGroupInclude(value: string[]) {
     this._accountLinkGroupInclude = value;
@@ -348,7 +348,7 @@ export class IdpOidc extends cdktf.TerraformResource {
   // groups_assignment - computed: false, optional: true, required: false
   private _groupsAssignment?: string[]; 
   public get groupsAssignment() {
-    return this.getListAttribute('groups_assignment');
+    return cdktf.Fn.tolist(this.getListAttribute('groups_assignment'));
   }
   public set groupsAssignment(value: string[]) {
     this._groupsAssignment = value;
@@ -380,7 +380,7 @@ export class IdpOidc extends cdktf.TerraformResource {
   // groups_filter - computed: false, optional: true, required: false
   private _groupsFilter?: string[]; 
   public get groupsFilter() {
-    return this.getListAttribute('groups_filter');
+    return cdktf.Fn.tolist(this.getListAttribute('groups_filter'));
   }
   public set groupsFilter(value: string[]) {
     this._groupsFilter = value;
@@ -485,7 +485,7 @@ export class IdpOidc extends cdktf.TerraformResource {
   // profile_master - computed: false, optional: true, required: false
   private _profileMaster?: boolean | cdktf.IResolvable; 
   public get profileMaster() {
-    return this.getBooleanAttribute('profile_master') as any;
+    return this.getBooleanAttribute('profile_master');
   }
   public set profileMaster(value: boolean | cdktf.IResolvable) {
     this._profileMaster = value;
@@ -597,7 +597,7 @@ export class IdpOidc extends cdktf.TerraformResource {
   // scopes - computed: false, optional: false, required: true
   private _scopes?: string[]; 
   public get scopes() {
-    return this.getListAttribute('scopes');
+    return cdktf.Fn.tolist(this.getListAttribute('scopes'));
   }
   public set scopes(value: string[]) {
     this._scopes = value;

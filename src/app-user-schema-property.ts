@@ -122,13 +122,13 @@ export interface AppUserSchemaPropertyConfig extends cdktf.TerraformMetaArgument
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema_property#array_one_of AppUserSchemaProperty#array_one_of}
   */
-  readonly arrayOneOf?: AppUserSchemaPropertyArrayOneOf[];
+  readonly arrayOneOf?: AppUserSchemaPropertyArrayOneOf[] | cdktf.IResolvable;
   /**
   * one_of block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema_property#one_of AppUserSchemaProperty#one_of}
   */
-  readonly oneOf?: AppUserSchemaPropertyOneOf[];
+  readonly oneOf?: AppUserSchemaPropertyOneOf[] | cdktf.IResolvable;
 }
 export interface AppUserSchemaPropertyArrayOneOf {
   /**
@@ -145,8 +145,8 @@ export interface AppUserSchemaPropertyArrayOneOf {
   readonly title: string;
 }
 
-export function appUserSchemaPropertyArrayOneOfToTerraform(struct?: AppUserSchemaPropertyArrayOneOf): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function appUserSchemaPropertyArrayOneOfToTerraform(struct?: AppUserSchemaPropertyArrayOneOf | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -171,8 +171,8 @@ export interface AppUserSchemaPropertyOneOf {
   readonly title: string;
 }
 
-export function appUserSchemaPropertyOneOfToTerraform(struct?: AppUserSchemaPropertyOneOf): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function appUserSchemaPropertyOneOfToTerraform(struct?: AppUserSchemaPropertyOneOf | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -436,7 +436,7 @@ export class AppUserSchemaProperty extends cdktf.TerraformResource {
   // required - computed: false, optional: true, required: false
   private _required?: boolean | cdktf.IResolvable; 
   public get required() {
-    return this.getBooleanAttribute('required') as any;
+    return this.getBooleanAttribute('required');
   }
   public set required(value: boolean | cdktf.IResolvable) {
     this._required = value;
@@ -494,7 +494,7 @@ export class AppUserSchemaProperty extends cdktf.TerraformResource {
   // union - computed: false, optional: true, required: false
   private _union?: boolean | cdktf.IResolvable; 
   public get union() {
-    return this.getBooleanAttribute('union') as any;
+    return this.getBooleanAttribute('union');
   }
   public set union(value: boolean | cdktf.IResolvable) {
     this._union = value;
@@ -540,12 +540,12 @@ export class AppUserSchemaProperty extends cdktf.TerraformResource {
   }
 
   // array_one_of - computed: false, optional: true, required: false
-  private _arrayOneOf?: AppUserSchemaPropertyArrayOneOf[]; 
+  private _arrayOneOf?: AppUserSchemaPropertyArrayOneOf[] | cdktf.IResolvable; 
   public get arrayOneOf() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('array_one_of') as any;
+    return this.interpolationForAttribute('array_one_of');
   }
-  public set arrayOneOf(value: AppUserSchemaPropertyArrayOneOf[]) {
+  public set arrayOneOf(value: AppUserSchemaPropertyArrayOneOf[] | cdktf.IResolvable) {
     this._arrayOneOf = value;
   }
   public resetArrayOneOf() {
@@ -557,12 +557,12 @@ export class AppUserSchemaProperty extends cdktf.TerraformResource {
   }
 
   // one_of - computed: false, optional: true, required: false
-  private _oneOf?: AppUserSchemaPropertyOneOf[]; 
+  private _oneOf?: AppUserSchemaPropertyOneOf[] | cdktf.IResolvable; 
   public get oneOf() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('one_of') as any;
+    return this.interpolationForAttribute('one_of');
   }
-  public set oneOf(value: AppUserSchemaPropertyOneOf[]) {
+  public set oneOf(value: AppUserSchemaPropertyOneOf[] | cdktf.IResolvable) {
     this._oneOf = value;
   }
   public resetOneOf() {

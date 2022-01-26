@@ -136,7 +136,7 @@ export interface AppSignonPolicyRuleConfig extends cdktf.TerraformMetaArguments 
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_signon_policy_rule#platform_include AppSignonPolicyRule#platform_include}
   */
-  readonly platformInclude?: AppSignonPolicyRulePlatformInclude[];
+  readonly platformInclude?: AppSignonPolicyRulePlatformInclude[] | cdktf.IResolvable;
 }
 export interface AppSignonPolicyRulePlatformInclude {
   /**
@@ -155,8 +155,8 @@ export interface AppSignonPolicyRulePlatformInclude {
   readonly type?: string;
 }
 
-export function appSignonPolicyRulePlatformIncludeToTerraform(struct?: AppSignonPolicyRulePlatformInclude): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function appSignonPolicyRulePlatformIncludeToTerraform(struct?: AppSignonPolicyRulePlatformInclude | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -279,7 +279,7 @@ export class AppSignonPolicyRule extends cdktf.TerraformResource {
   // device_is_managed - computed: false, optional: true, required: false
   private _deviceIsManaged?: boolean | cdktf.IResolvable; 
   public get deviceIsManaged() {
-    return this.getBooleanAttribute('device_is_managed') as any;
+    return this.getBooleanAttribute('device_is_managed');
   }
   public set deviceIsManaged(value: boolean | cdktf.IResolvable) {
     this._deviceIsManaged = value;
@@ -295,7 +295,7 @@ export class AppSignonPolicyRule extends cdktf.TerraformResource {
   // device_is_registered - computed: false, optional: true, required: false
   private _deviceIsRegistered?: boolean | cdktf.IResolvable; 
   public get deviceIsRegistered() {
-    return this.getBooleanAttribute('device_is_registered') as any;
+    return this.getBooleanAttribute('device_is_registered');
   }
   public set deviceIsRegistered(value: boolean | cdktf.IResolvable) {
     this._deviceIsRegistered = value;
@@ -327,7 +327,7 @@ export class AppSignonPolicyRule extends cdktf.TerraformResource {
   // groups_excluded - computed: false, optional: true, required: false
   private _groupsExcluded?: string[]; 
   public get groupsExcluded() {
-    return this.getListAttribute('groups_excluded');
+    return cdktf.Fn.tolist(this.getListAttribute('groups_excluded'));
   }
   public set groupsExcluded(value: string[]) {
     this._groupsExcluded = value;
@@ -343,7 +343,7 @@ export class AppSignonPolicyRule extends cdktf.TerraformResource {
   // groups_included - computed: false, optional: true, required: false
   private _groupsIncluded?: string[]; 
   public get groupsIncluded() {
-    return this.getListAttribute('groups_included');
+    return cdktf.Fn.tolist(this.getListAttribute('groups_included'));
   }
   public set groupsIncluded(value: string[]) {
     this._groupsIncluded = value;
@@ -502,7 +502,7 @@ export class AppSignonPolicyRule extends cdktf.TerraformResource {
   // user_types_excluded - computed: false, optional: true, required: false
   private _userTypesExcluded?: string[]; 
   public get userTypesExcluded() {
-    return this.getListAttribute('user_types_excluded');
+    return cdktf.Fn.tolist(this.getListAttribute('user_types_excluded'));
   }
   public set userTypesExcluded(value: string[]) {
     this._userTypesExcluded = value;
@@ -518,7 +518,7 @@ export class AppSignonPolicyRule extends cdktf.TerraformResource {
   // user_types_included - computed: false, optional: true, required: false
   private _userTypesIncluded?: string[]; 
   public get userTypesIncluded() {
-    return this.getListAttribute('user_types_included');
+    return cdktf.Fn.tolist(this.getListAttribute('user_types_included'));
   }
   public set userTypesIncluded(value: string[]) {
     this._userTypesIncluded = value;
@@ -534,7 +534,7 @@ export class AppSignonPolicyRule extends cdktf.TerraformResource {
   // users_excluded - computed: false, optional: true, required: false
   private _usersExcluded?: string[]; 
   public get usersExcluded() {
-    return this.getListAttribute('users_excluded');
+    return cdktf.Fn.tolist(this.getListAttribute('users_excluded'));
   }
   public set usersExcluded(value: string[]) {
     this._usersExcluded = value;
@@ -550,7 +550,7 @@ export class AppSignonPolicyRule extends cdktf.TerraformResource {
   // users_included - computed: false, optional: true, required: false
   private _usersIncluded?: string[]; 
   public get usersIncluded() {
-    return this.getListAttribute('users_included');
+    return cdktf.Fn.tolist(this.getListAttribute('users_included'));
   }
   public set usersIncluded(value: string[]) {
     this._usersIncluded = value;
@@ -564,12 +564,12 @@ export class AppSignonPolicyRule extends cdktf.TerraformResource {
   }
 
   // platform_include - computed: false, optional: true, required: false
-  private _platformInclude?: AppSignonPolicyRulePlatformInclude[]; 
+  private _platformInclude?: AppSignonPolicyRulePlatformInclude[] | cdktf.IResolvable; 
   public get platformInclude() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('platform_include') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('platform_include')));
   }
-  public set platformInclude(value: AppSignonPolicyRulePlatformInclude[]) {
+  public set platformInclude(value: AppSignonPolicyRulePlatformInclude[] | cdktf.IResolvable) {
     this._platformInclude = value;
   }
   public resetPlatformInclude() {

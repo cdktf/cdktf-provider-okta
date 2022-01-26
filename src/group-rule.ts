@@ -118,7 +118,7 @@ export class GroupRule extends cdktf.TerraformResource {
   // group_assignments - computed: false, optional: false, required: true
   private _groupAssignments?: string[]; 
   public get groupAssignments() {
-    return this.getListAttribute('group_assignments');
+    return cdktf.Fn.tolist(this.getListAttribute('group_assignments'));
   }
   public set groupAssignments(value: string[]) {
     this._groupAssignments = value;
@@ -149,7 +149,7 @@ export class GroupRule extends cdktf.TerraformResource {
   // remove_assigned_users - computed: false, optional: true, required: false
   private _removeAssignedUsers?: boolean | cdktf.IResolvable; 
   public get removeAssignedUsers() {
-    return this.getBooleanAttribute('remove_assigned_users') as any;
+    return this.getBooleanAttribute('remove_assigned_users');
   }
   public set removeAssignedUsers(value: boolean | cdktf.IResolvable) {
     this._removeAssignedUsers = value;
@@ -181,7 +181,7 @@ export class GroupRule extends cdktf.TerraformResource {
   // users_excluded - computed: false, optional: true, required: false
   private _usersExcluded?: string[]; 
   public get usersExcluded() {
-    return this.getListAttribute('users_excluded');
+    return cdktf.Fn.tolist(this.getListAttribute('users_excluded'));
   }
   public set usersExcluded(value: string[]) {
     this._usersExcluded = value;

@@ -106,19 +106,19 @@ export interface GroupSchemaPropertyConfig extends cdktf.TerraformMetaArguments 
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_schema_property#array_one_of GroupSchemaProperty#array_one_of}
   */
-  readonly arrayOneOf?: GroupSchemaPropertyArrayOneOf[];
+  readonly arrayOneOf?: GroupSchemaPropertyArrayOneOf[] | cdktf.IResolvable;
   /**
   * master_override_priority block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_schema_property#master_override_priority GroupSchemaProperty#master_override_priority}
   */
-  readonly masterOverridePriority?: GroupSchemaPropertyMasterOverridePriority[];
+  readonly masterOverridePriority?: GroupSchemaPropertyMasterOverridePriority[] | cdktf.IResolvable;
   /**
   * one_of block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_schema_property#one_of GroupSchemaProperty#one_of}
   */
-  readonly oneOf?: GroupSchemaPropertyOneOf[];
+  readonly oneOf?: GroupSchemaPropertyOneOf[] | cdktf.IResolvable;
 }
 export interface GroupSchemaPropertyArrayOneOf {
   /**
@@ -135,8 +135,8 @@ export interface GroupSchemaPropertyArrayOneOf {
   readonly title: string;
 }
 
-export function groupSchemaPropertyArrayOneOfToTerraform(struct?: GroupSchemaPropertyArrayOneOf): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function groupSchemaPropertyArrayOneOfToTerraform(struct?: GroupSchemaPropertyArrayOneOf | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -157,8 +157,8 @@ export interface GroupSchemaPropertyMasterOverridePriority {
   readonly value: string;
 }
 
-export function groupSchemaPropertyMasterOverridePriorityToTerraform(struct?: GroupSchemaPropertyMasterOverridePriority): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function groupSchemaPropertyMasterOverridePriorityToTerraform(struct?: GroupSchemaPropertyMasterOverridePriority | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -183,8 +183,8 @@ export interface GroupSchemaPropertyOneOf {
   readonly title: string;
 }
 
-export function groupSchemaPropertyOneOfToTerraform(struct?: GroupSchemaPropertyOneOf): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function groupSchemaPropertyOneOfToTerraform(struct?: GroupSchemaPropertyOneOf | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -433,7 +433,7 @@ export class GroupSchemaProperty extends cdktf.TerraformResource {
   // required - computed: false, optional: true, required: false
   private _required?: boolean | cdktf.IResolvable; 
   public get required() {
-    return this.getBooleanAttribute('required') as any;
+    return this.getBooleanAttribute('required');
   }
   public set required(value: boolean | cdktf.IResolvable) {
     this._required = value;
@@ -505,12 +505,12 @@ export class GroupSchemaProperty extends cdktf.TerraformResource {
   }
 
   // array_one_of - computed: false, optional: true, required: false
-  private _arrayOneOf?: GroupSchemaPropertyArrayOneOf[]; 
+  private _arrayOneOf?: GroupSchemaPropertyArrayOneOf[] | cdktf.IResolvable; 
   public get arrayOneOf() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('array_one_of') as any;
+    return this.interpolationForAttribute('array_one_of');
   }
-  public set arrayOneOf(value: GroupSchemaPropertyArrayOneOf[]) {
+  public set arrayOneOf(value: GroupSchemaPropertyArrayOneOf[] | cdktf.IResolvable) {
     this._arrayOneOf = value;
   }
   public resetArrayOneOf() {
@@ -522,12 +522,12 @@ export class GroupSchemaProperty extends cdktf.TerraformResource {
   }
 
   // master_override_priority - computed: false, optional: true, required: false
-  private _masterOverridePriority?: GroupSchemaPropertyMasterOverridePriority[]; 
+  private _masterOverridePriority?: GroupSchemaPropertyMasterOverridePriority[] | cdktf.IResolvable; 
   public get masterOverridePriority() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('master_override_priority') as any;
+    return this.interpolationForAttribute('master_override_priority');
   }
-  public set masterOverridePriority(value: GroupSchemaPropertyMasterOverridePriority[]) {
+  public set masterOverridePriority(value: GroupSchemaPropertyMasterOverridePriority[] | cdktf.IResolvable) {
     this._masterOverridePriority = value;
   }
   public resetMasterOverridePriority() {
@@ -539,12 +539,12 @@ export class GroupSchemaProperty extends cdktf.TerraformResource {
   }
 
   // one_of - computed: false, optional: true, required: false
-  private _oneOf?: GroupSchemaPropertyOneOf[]; 
+  private _oneOf?: GroupSchemaPropertyOneOf[] | cdktf.IResolvable; 
   public get oneOf() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('one_of') as any;
+    return this.interpolationForAttribute('one_of');
   }
-  public set oneOf(value: GroupSchemaPropertyOneOf[]) {
+  public set oneOf(value: GroupSchemaPropertyOneOf[] | cdktf.IResolvable) {
     this._oneOf = value;
   }
   public resetOneOf() {

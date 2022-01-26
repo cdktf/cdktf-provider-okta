@@ -73,7 +73,7 @@ export class DataOktaUserSecurityQuestions extends cdktf.TerraformDataSource {
 
   // questions - computed: true, optional: false, required: false
   public questions(index: string) {
-    return new DataOktaUserSecurityQuestionsQuestions(this, 'questions', index);
+    return new DataOktaUserSecurityQuestionsQuestions(this, 'questions', index, false);
   }
 
   // user_id - computed: false, optional: false, required: true

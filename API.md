@@ -789,7 +789,7 @@ public resetUsers()
 | [`userNameTemplatePushStatusInput`](#cdktfprovideroktaappautologinpropertyusernametemplatepushstatusinput) | `string` | *No description.* |
 | [`userNameTemplateSuffixInput`](#cdktfprovideroktaappautologinpropertyusernametemplatesuffixinput) | `string` | *No description.* |
 | [`userNameTemplateTypeInput`](#cdktfprovideroktaappautologinpropertyusernametemplatetypeinput) | `string` | *No description.* |
-| [`usersInput`](#cdktfprovideroktaappautologinpropertyusersinput) | [`@cdktf/provider-okta.AppAutoLoginUsers`](#@cdktf/provider-okta.AppAutoLoginUsers)[] | *No description.* |
+| [`usersInput`](#cdktfprovideroktaappautologinpropertyusersinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.AppAutoLoginUsers`](#@cdktf/provider-okta.AppAutoLoginUsers)[] | *No description.* |
 | [`accessibilityErrorRedirectUrl`](#cdktfprovideroktaappautologinpropertyaccessibilityerrorredirecturl)<span title="Required">*</span> | `string` | *No description.* |
 | [`accessibilityLoginRedirectUrl`](#cdktfprovideroktaappautologinpropertyaccessibilityloginredirecturl)<span title="Required">*</span> | `string` | *No description.* |
 | [`accessibilitySelfService`](#cdktfprovideroktaappautologinpropertyaccessibilityselfservice)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
@@ -817,7 +817,7 @@ public resetUsers()
 | [`userNameTemplatePushStatus`](#cdktfprovideroktaappautologinpropertyusernametemplatepushstatus)<span title="Required">*</span> | `string` | *No description.* |
 | [`userNameTemplateSuffix`](#cdktfprovideroktaappautologinpropertyusernametemplatesuffix)<span title="Required">*</span> | `string` | *No description.* |
 | [`userNameTemplateType`](#cdktfprovideroktaappautologinpropertyusernametemplatetype)<span title="Required">*</span> | `string` | *No description.* |
-| [`users`](#cdktfprovideroktaappautologinpropertyusers)<span title="Required">*</span> | [`@cdktf/provider-okta.AppAutoLoginUsers`](#@cdktf/provider-okta.AppAutoLoginUsers)[] | *No description.* |
+| [`users`](#cdktfprovideroktaappautologinpropertyusers)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.AppAutoLoginUsers`](#@cdktf/provider-okta.AppAutoLoginUsers)[] | *No description.* |
 
 ---
 
@@ -1134,10 +1134,10 @@ public readonly userNameTemplateTypeInput: string;
 ##### `usersInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.AppAutoLogin.property.usersInput" id="cdktfprovideroktaappautologinpropertyusersinput"></a>
 
 ```typescript
-public readonly usersInput: AppAutoLoginUsers[];
+public readonly usersInput: IResolvable | AppAutoLoginUsers[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.AppAutoLoginUsers`](#@cdktf/provider-okta.AppAutoLoginUsers)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.AppAutoLoginUsers`](#@cdktf/provider-okta.AppAutoLoginUsers)[]
 
 ---
 
@@ -1414,10 +1414,10 @@ public readonly userNameTemplateType: string;
 ##### `users`<sup>Required</sup> <a name="@cdktf/provider-okta.AppAutoLogin.property.users" id="cdktfprovideroktaappautologinpropertyusers"></a>
 
 ```typescript
-public readonly users: AppAutoLoginUsers[];
+public readonly users: IResolvable | AppAutoLoginUsers[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.AppAutoLoginUsers`](#@cdktf/provider-okta.AppAutoLoginUsers)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.AppAutoLoginUsers`](#@cdktf/provider-okta.AppAutoLoginUsers)[]
 
 ---
 
@@ -1617,7 +1617,7 @@ public resetUsers()
 | [`skipUsersInput`](#cdktfprovideroktaappbasicauthpropertyskipusersinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`statusInput`](#cdktfprovideroktaappbasicauthpropertystatusinput) | `string` | *No description.* |
 | [`urlInput`](#cdktfprovideroktaappbasicauthpropertyurlinput) | `string` | *No description.* |
-| [`usersInput`](#cdktfprovideroktaappbasicauthpropertyusersinput) | [`@cdktf/provider-okta.AppBasicAuthUsers`](#@cdktf/provider-okta.AppBasicAuthUsers)[] | *No description.* |
+| [`usersInput`](#cdktfprovideroktaappbasicauthpropertyusersinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.AppBasicAuthUsers`](#@cdktf/provider-okta.AppBasicAuthUsers)[] | *No description.* |
 | [`accessibilityErrorRedirectUrl`](#cdktfprovideroktaappbasicauthpropertyaccessibilityerrorredirecturl)<span title="Required">*</span> | `string` | *No description.* |
 | [`accessibilityLoginRedirectUrl`](#cdktfprovideroktaappbasicauthpropertyaccessibilityloginredirecturl)<span title="Required">*</span> | `string` | *No description.* |
 | [`accessibilitySelfService`](#cdktfprovideroktaappbasicauthpropertyaccessibilityselfservice)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
@@ -1635,7 +1635,7 @@ public resetUsers()
 | [`skipUsers`](#cdktfprovideroktaappbasicauthpropertyskipusers)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`status`](#cdktfprovideroktaappbasicauthpropertystatus)<span title="Required">*</span> | `string` | *No description.* |
 | [`url`](#cdktfprovideroktaappbasicauthpropertyurl)<span title="Required">*</span> | `string` | *No description.* |
-| [`users`](#cdktfprovideroktaappbasicauthpropertyusers)<span title="Required">*</span> | [`@cdktf/provider-okta.AppBasicAuthUsers`](#@cdktf/provider-okta.AppBasicAuthUsers)[] | *No description.* |
+| [`users`](#cdktfprovideroktaappbasicauthpropertyusers)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.AppBasicAuthUsers`](#@cdktf/provider-okta.AppBasicAuthUsers)[] | *No description.* |
 
 ---
 
@@ -1852,10 +1852,10 @@ public readonly urlInput: string;
 ##### `usersInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.AppBasicAuth.property.usersInput" id="cdktfprovideroktaappbasicauthpropertyusersinput"></a>
 
 ```typescript
-public readonly usersInput: AppBasicAuthUsers[];
+public readonly usersInput: IResolvable | AppBasicAuthUsers[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.AppBasicAuthUsers`](#@cdktf/provider-okta.AppBasicAuthUsers)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.AppBasicAuthUsers`](#@cdktf/provider-okta.AppBasicAuthUsers)[]
 
 ---
 
@@ -2032,10 +2032,10 @@ public readonly url: string;
 ##### `users`<sup>Required</sup> <a name="@cdktf/provider-okta.AppBasicAuth.property.users" id="cdktfprovideroktaappbasicauthpropertyusers"></a>
 
 ```typescript
-public readonly users: AppBasicAuthUsers[];
+public readonly users: IResolvable | AppBasicAuthUsers[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.AppBasicAuthUsers`](#@cdktf/provider-okta.AppBasicAuthUsers)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.AppBasicAuthUsers`](#@cdktf/provider-okta.AppBasicAuthUsers)[]
 
 ---
 
@@ -2242,7 +2242,7 @@ public resetUsers()
 | [`skipUsersInput`](#cdktfprovideroktaappbookmarkpropertyskipusersinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`statusInput`](#cdktfprovideroktaappbookmarkpropertystatusinput) | `string` | *No description.* |
 | [`urlInput`](#cdktfprovideroktaappbookmarkpropertyurlinput) | `string` | *No description.* |
-| [`usersInput`](#cdktfprovideroktaappbookmarkpropertyusersinput) | [`@cdktf/provider-okta.AppBookmarkUsers`](#@cdktf/provider-okta.AppBookmarkUsers)[] | *No description.* |
+| [`usersInput`](#cdktfprovideroktaappbookmarkpropertyusersinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.AppBookmarkUsers`](#@cdktf/provider-okta.AppBookmarkUsers)[] | *No description.* |
 | [`accessibilityErrorRedirectUrl`](#cdktfprovideroktaappbookmarkpropertyaccessibilityerrorredirecturl)<span title="Required">*</span> | `string` | *No description.* |
 | [`accessibilityLoginRedirectUrl`](#cdktfprovideroktaappbookmarkpropertyaccessibilityloginredirecturl)<span title="Required">*</span> | `string` | *No description.* |
 | [`accessibilitySelfService`](#cdktfprovideroktaappbookmarkpropertyaccessibilityselfservice)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
@@ -2260,7 +2260,7 @@ public resetUsers()
 | [`skipUsers`](#cdktfprovideroktaappbookmarkpropertyskipusers)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`status`](#cdktfprovideroktaappbookmarkpropertystatus)<span title="Required">*</span> | `string` | *No description.* |
 | [`url`](#cdktfprovideroktaappbookmarkpropertyurl)<span title="Required">*</span> | `string` | *No description.* |
-| [`users`](#cdktfprovideroktaappbookmarkpropertyusers)<span title="Required">*</span> | [`@cdktf/provider-okta.AppBookmarkUsers`](#@cdktf/provider-okta.AppBookmarkUsers)[] | *No description.* |
+| [`users`](#cdktfprovideroktaappbookmarkpropertyusers)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.AppBookmarkUsers`](#@cdktf/provider-okta.AppBookmarkUsers)[] | *No description.* |
 
 ---
 
@@ -2477,10 +2477,10 @@ public readonly urlInput: string;
 ##### `usersInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.AppBookmark.property.usersInput" id="cdktfprovideroktaappbookmarkpropertyusersinput"></a>
 
 ```typescript
-public readonly usersInput: AppBookmarkUsers[];
+public readonly usersInput: IResolvable | AppBookmarkUsers[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.AppBookmarkUsers`](#@cdktf/provider-okta.AppBookmarkUsers)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.AppBookmarkUsers`](#@cdktf/provider-okta.AppBookmarkUsers)[]
 
 ---
 
@@ -2657,10 +2657,10 @@ public readonly url: string;
 ##### `users`<sup>Required</sup> <a name="@cdktf/provider-okta.AppBookmark.property.users" id="cdktfprovideroktaappbookmarkpropertyusers"></a>
 
 ```typescript
-public readonly users: AppBookmarkUsers[];
+public readonly users: IResolvable | AppBookmarkUsers[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.AppBookmarkUsers`](#@cdktf/provider-okta.AppBookmarkUsers)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.AppBookmarkUsers`](#@cdktf/provider-okta.AppBookmarkUsers)[]
 
 ---
 
@@ -2945,9 +2945,9 @@ Must be unique amongst siblings in the same scope
 | --- | --- | --- |
 | [`id`](#cdktfprovideroktaappgroupassignmentspropertyid)<span title="Required">*</span> | `string` | *No description.* |
 | [`appIdInput`](#cdktfprovideroktaappgroupassignmentspropertyappidinput) | `string` | *No description.* |
-| [`groupInput`](#cdktfprovideroktaappgroupassignmentspropertygroupinput) | [`@cdktf/provider-okta.AppGroupAssignmentsGroup`](#@cdktf/provider-okta.AppGroupAssignmentsGroup)[] | *No description.* |
+| [`groupInput`](#cdktfprovideroktaappgroupassignmentspropertygroupinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.AppGroupAssignmentsGroup`](#@cdktf/provider-okta.AppGroupAssignmentsGroup)[] | *No description.* |
 | [`appId`](#cdktfprovideroktaappgroupassignmentspropertyappid)<span title="Required">*</span> | `string` | *No description.* |
-| [`group`](#cdktfprovideroktaappgroupassignmentspropertygroup)<span title="Required">*</span> | [`@cdktf/provider-okta.AppGroupAssignmentsGroup`](#@cdktf/provider-okta.AppGroupAssignmentsGroup)[] | *No description.* |
+| [`group`](#cdktfprovideroktaappgroupassignmentspropertygroup)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.AppGroupAssignmentsGroup`](#@cdktf/provider-okta.AppGroupAssignmentsGroup)[] | *No description.* |
 
 ---
 
@@ -2974,10 +2974,10 @@ public readonly appIdInput: string;
 ##### `groupInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.AppGroupAssignments.property.groupInput" id="cdktfprovideroktaappgroupassignmentspropertygroupinput"></a>
 
 ```typescript
-public readonly groupInput: AppGroupAssignmentsGroup[];
+public readonly groupInput: IResolvable | AppGroupAssignmentsGroup[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.AppGroupAssignmentsGroup`](#@cdktf/provider-okta.AppGroupAssignmentsGroup)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.AppGroupAssignmentsGroup`](#@cdktf/provider-okta.AppGroupAssignmentsGroup)[]
 
 ---
 
@@ -2994,10 +2994,10 @@ public readonly appId: string;
 ##### `group`<sup>Required</sup> <a name="@cdktf/provider-okta.AppGroupAssignments.property.group" id="cdktfprovideroktaappgroupassignmentspropertygroup"></a>
 
 ```typescript
-public readonly group: AppGroupAssignmentsGroup[];
+public readonly group: IResolvable | AppGroupAssignmentsGroup[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.AppGroupAssignmentsGroup`](#@cdktf/provider-okta.AppGroupAssignmentsGroup)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.AppGroupAssignmentsGroup`](#@cdktf/provider-okta.AppGroupAssignmentsGroup)[]
 
 ---
 
@@ -3433,7 +3433,7 @@ public resetWildcardRedirect()
 | [`hideWebInput`](#cdktfprovideroktaappoauthpropertyhidewebinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`implicitAssignmentInput`](#cdktfprovideroktaappoauthpropertyimplicitassignmentinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`issuerModeInput`](#cdktfprovideroktaappoauthpropertyissuermodeinput) | `string` | *No description.* |
-| [`jwksInput`](#cdktfprovideroktaappoauthpropertyjwksinput) | [`@cdktf/provider-okta.AppOauthJwks`](#@cdktf/provider-okta.AppOauthJwks)[] | *No description.* |
+| [`jwksInput`](#cdktfprovideroktaappoauthpropertyjwksinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.AppOauthJwks`](#@cdktf/provider-okta.AppOauthJwks)[] | *No description.* |
 | [`labelInput`](#cdktfprovideroktaappoauthpropertylabelinput) | `string` | *No description.* |
 | [`loginModeInput`](#cdktfprovideroktaappoauthpropertyloginmodeinput) | `string` | *No description.* |
 | [`loginScopesInput`](#cdktfprovideroktaappoauthpropertyloginscopesinput) | `string`[] | *No description.* |
@@ -3458,7 +3458,7 @@ public resetWildcardRedirect()
 | [`userNameTemplatePushStatusInput`](#cdktfprovideroktaappoauthpropertyusernametemplatepushstatusinput) | `string` | *No description.* |
 | [`userNameTemplateSuffixInput`](#cdktfprovideroktaappoauthpropertyusernametemplatesuffixinput) | `string` | *No description.* |
 | [`userNameTemplateTypeInput`](#cdktfprovideroktaappoauthpropertyusernametemplatetypeinput) | `string` | *No description.* |
-| [`usersInput`](#cdktfprovideroktaappoauthpropertyusersinput) | [`@cdktf/provider-okta.AppOauthUsers`](#@cdktf/provider-okta.AppOauthUsers)[] | *No description.* |
+| [`usersInput`](#cdktfprovideroktaappoauthpropertyusersinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.AppOauthUsers`](#@cdktf/provider-okta.AppOauthUsers)[] | *No description.* |
 | [`wildcardRedirectInput`](#cdktfprovideroktaappoauthpropertywildcardredirectinput) | `string` | *No description.* |
 | [`accessibilityErrorRedirectUrl`](#cdktfprovideroktaappoauthpropertyaccessibilityerrorredirecturl)<span title="Required">*</span> | `string` | *No description.* |
 | [`accessibilityLoginRedirectUrl`](#cdktfprovideroktaappoauthpropertyaccessibilityloginredirecturl)<span title="Required">*</span> | `string` | *No description.* |
@@ -3480,7 +3480,7 @@ public resetWildcardRedirect()
 | [`hideWeb`](#cdktfprovideroktaappoauthpropertyhideweb)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`implicitAssignment`](#cdktfprovideroktaappoauthpropertyimplicitassignment)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`issuerMode`](#cdktfprovideroktaappoauthpropertyissuermode)<span title="Required">*</span> | `string` | *No description.* |
-| [`jwks`](#cdktfprovideroktaappoauthpropertyjwks)<span title="Required">*</span> | [`@cdktf/provider-okta.AppOauthJwks`](#@cdktf/provider-okta.AppOauthJwks)[] | *No description.* |
+| [`jwks`](#cdktfprovideroktaappoauthpropertyjwks)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.AppOauthJwks`](#@cdktf/provider-okta.AppOauthJwks)[] | *No description.* |
 | [`label`](#cdktfprovideroktaappoauthpropertylabel)<span title="Required">*</span> | `string` | *No description.* |
 | [`loginMode`](#cdktfprovideroktaappoauthpropertyloginmode)<span title="Required">*</span> | `string` | *No description.* |
 | [`loginScopes`](#cdktfprovideroktaappoauthpropertyloginscopes)<span title="Required">*</span> | `string`[] | *No description.* |
@@ -3505,7 +3505,7 @@ public resetWildcardRedirect()
 | [`userNameTemplatePushStatus`](#cdktfprovideroktaappoauthpropertyusernametemplatepushstatus)<span title="Required">*</span> | `string` | *No description.* |
 | [`userNameTemplateSuffix`](#cdktfprovideroktaappoauthpropertyusernametemplatesuffix)<span title="Required">*</span> | `string` | *No description.* |
 | [`userNameTemplateType`](#cdktfprovideroktaappoauthpropertyusernametemplatetype)<span title="Required">*</span> | `string` | *No description.* |
-| [`users`](#cdktfprovideroktaappoauthpropertyusers)<span title="Required">*</span> | [`@cdktf/provider-okta.AppOauthUsers`](#@cdktf/provider-okta.AppOauthUsers)[] | *No description.* |
+| [`users`](#cdktfprovideroktaappoauthpropertyusers)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.AppOauthUsers`](#@cdktf/provider-okta.AppOauthUsers)[] | *No description.* |
 | [`wildcardRedirect`](#cdktfprovideroktaappoauthpropertywildcardredirect)<span title="Required">*</span> | `string` | *No description.* |
 
 ---
@@ -3783,10 +3783,10 @@ public readonly issuerModeInput: string;
 ##### `jwksInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.AppOauth.property.jwksInput" id="cdktfprovideroktaappoauthpropertyjwksinput"></a>
 
 ```typescript
-public readonly jwksInput: AppOauthJwks[];
+public readonly jwksInput: IResolvable | AppOauthJwks[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.AppOauthJwks`](#@cdktf/provider-okta.AppOauthJwks)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.AppOauthJwks`](#@cdktf/provider-okta.AppOauthJwks)[]
 
 ---
 
@@ -4033,10 +4033,10 @@ public readonly userNameTemplateTypeInput: string;
 ##### `usersInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.AppOauth.property.usersInput" id="cdktfprovideroktaappoauthpropertyusersinput"></a>
 
 ```typescript
-public readonly usersInput: AppOauthUsers[];
+public readonly usersInput: IResolvable | AppOauthUsers[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.AppOauthUsers`](#@cdktf/provider-okta.AppOauthUsers)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.AppOauthUsers`](#@cdktf/provider-okta.AppOauthUsers)[]
 
 ---
 
@@ -4253,10 +4253,10 @@ public readonly issuerMode: string;
 ##### `jwks`<sup>Required</sup> <a name="@cdktf/provider-okta.AppOauth.property.jwks" id="cdktfprovideroktaappoauthpropertyjwks"></a>
 
 ```typescript
-public readonly jwks: AppOauthJwks[];
+public readonly jwks: IResolvable | AppOauthJwks[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.AppOauthJwks`](#@cdktf/provider-okta.AppOauthJwks)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.AppOauthJwks`](#@cdktf/provider-okta.AppOauthJwks)[]
 
 ---
 
@@ -4503,10 +4503,10 @@ public readonly userNameTemplateType: string;
 ##### `users`<sup>Required</sup> <a name="@cdktf/provider-okta.AppOauth.property.users" id="cdktfprovideroktaappoauthpropertyusers"></a>
 
 ```typescript
-public readonly users: AppOauthUsers[];
+public readonly users: IResolvable | AppOauthUsers[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.AppOauthUsers`](#@cdktf/provider-okta.AppOauthUsers)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.AppOauthUsers`](#@cdktf/provider-okta.AppOauthUsers)[]
 
 ---
 
@@ -5212,7 +5212,7 @@ public resetUsers()
 | [`appLinksJsonInput`](#cdktfprovideroktaappsamlpropertyapplinksjsoninput) | `string` | *No description.* |
 | [`appSettingsJsonInput`](#cdktfprovideroktaappsamlpropertyappsettingsjsoninput) | `string` | *No description.* |
 | [`assertionSignedInput`](#cdktfprovideroktaappsamlpropertyassertionsignedinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
-| [`attributeStatementsInput`](#cdktfprovideroktaappsamlpropertyattributestatementsinput) | [`@cdktf/provider-okta.AppSamlAttributeStatements`](#@cdktf/provider-okta.AppSamlAttributeStatements)[] | *No description.* |
+| [`attributeStatementsInput`](#cdktfprovideroktaappsamlpropertyattributestatementsinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.AppSamlAttributeStatements`](#@cdktf/provider-okta.AppSamlAttributeStatements)[] | *No description.* |
 | [`audienceInput`](#cdktfprovideroktaappsamlpropertyaudienceinput) | `string` | *No description.* |
 | [`authnContextClassRefInput`](#cdktfprovideroktaappsamlpropertyauthncontextclassrefinput) | `string` | *No description.* |
 | [`autoSubmitToolbarInput`](#cdktfprovideroktaappsamlpropertyautosubmittoolbarinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
@@ -5252,7 +5252,7 @@ public resetUsers()
 | [`userNameTemplatePushStatusInput`](#cdktfprovideroktaappsamlpropertyusernametemplatepushstatusinput) | `string` | *No description.* |
 | [`userNameTemplateSuffixInput`](#cdktfprovideroktaappsamlpropertyusernametemplatesuffixinput) | `string` | *No description.* |
 | [`userNameTemplateTypeInput`](#cdktfprovideroktaappsamlpropertyusernametemplatetypeinput) | `string` | *No description.* |
-| [`usersInput`](#cdktfprovideroktaappsamlpropertyusersinput) | [`@cdktf/provider-okta.AppSamlUsers`](#@cdktf/provider-okta.AppSamlUsers)[] | *No description.* |
+| [`usersInput`](#cdktfprovideroktaappsamlpropertyusersinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.AppSamlUsers`](#@cdktf/provider-okta.AppSamlUsers)[] | *No description.* |
 | [`accessibilityErrorRedirectUrl`](#cdktfprovideroktaappsamlpropertyaccessibilityerrorredirecturl)<span title="Required">*</span> | `string` | *No description.* |
 | [`accessibilityLoginRedirectUrl`](#cdktfprovideroktaappsamlpropertyaccessibilityloginredirecturl)<span title="Required">*</span> | `string` | *No description.* |
 | [`accessibilitySelfService`](#cdktfprovideroktaappsamlpropertyaccessibilityselfservice)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
@@ -5261,7 +5261,7 @@ public resetUsers()
 | [`appLinksJson`](#cdktfprovideroktaappsamlpropertyapplinksjson)<span title="Required">*</span> | `string` | *No description.* |
 | [`appSettingsJson`](#cdktfprovideroktaappsamlpropertyappsettingsjson)<span title="Required">*</span> | `string` | *No description.* |
 | [`assertionSigned`](#cdktfprovideroktaappsamlpropertyassertionsigned)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
-| [`attributeStatements`](#cdktfprovideroktaappsamlpropertyattributestatements)<span title="Required">*</span> | [`@cdktf/provider-okta.AppSamlAttributeStatements`](#@cdktf/provider-okta.AppSamlAttributeStatements)[] | *No description.* |
+| [`attributeStatements`](#cdktfprovideroktaappsamlpropertyattributestatements)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.AppSamlAttributeStatements`](#@cdktf/provider-okta.AppSamlAttributeStatements)[] | *No description.* |
 | [`audience`](#cdktfprovideroktaappsamlpropertyaudience)<span title="Required">*</span> | `string` | *No description.* |
 | [`authnContextClassRef`](#cdktfprovideroktaappsamlpropertyauthncontextclassref)<span title="Required">*</span> | `string` | *No description.* |
 | [`autoSubmitToolbar`](#cdktfprovideroktaappsamlpropertyautosubmittoolbar)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
@@ -5301,7 +5301,7 @@ public resetUsers()
 | [`userNameTemplatePushStatus`](#cdktfprovideroktaappsamlpropertyusernametemplatepushstatus)<span title="Required">*</span> | `string` | *No description.* |
 | [`userNameTemplateSuffix`](#cdktfprovideroktaappsamlpropertyusernametemplatesuffix)<span title="Required">*</span> | `string` | *No description.* |
 | [`userNameTemplateType`](#cdktfprovideroktaappsamlpropertyusernametemplatetype)<span title="Required">*</span> | `string` | *No description.* |
-| [`users`](#cdktfprovideroktaappsamlpropertyusers)<span title="Required">*</span> | [`@cdktf/provider-okta.AppSamlUsers`](#@cdktf/provider-okta.AppSamlUsers)[] | *No description.* |
+| [`users`](#cdktfprovideroktaappsamlpropertyusers)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.AppSamlUsers`](#@cdktf/provider-okta.AppSamlUsers)[] | *No description.* |
 
 ---
 
@@ -5508,10 +5508,10 @@ public readonly assertionSignedInput: boolean | IResolvable;
 ##### `attributeStatementsInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.AppSaml.property.attributeStatementsInput" id="cdktfprovideroktaappsamlpropertyattributestatementsinput"></a>
 
 ```typescript
-public readonly attributeStatementsInput: AppSamlAttributeStatements[];
+public readonly attributeStatementsInput: IResolvable | AppSamlAttributeStatements[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.AppSamlAttributeStatements`](#@cdktf/provider-okta.AppSamlAttributeStatements)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.AppSamlAttributeStatements`](#@cdktf/provider-okta.AppSamlAttributeStatements)[]
 
 ---
 
@@ -5908,10 +5908,10 @@ public readonly userNameTemplateTypeInput: string;
 ##### `usersInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.AppSaml.property.usersInput" id="cdktfprovideroktaappsamlpropertyusersinput"></a>
 
 ```typescript
-public readonly usersInput: AppSamlUsers[];
+public readonly usersInput: IResolvable | AppSamlUsers[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.AppSamlUsers`](#@cdktf/provider-okta.AppSamlUsers)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.AppSamlUsers`](#@cdktf/provider-okta.AppSamlUsers)[]
 
 ---
 
@@ -5998,10 +5998,10 @@ public readonly assertionSigned: boolean | IResolvable;
 ##### `attributeStatements`<sup>Required</sup> <a name="@cdktf/provider-okta.AppSaml.property.attributeStatements" id="cdktfprovideroktaappsamlpropertyattributestatements"></a>
 
 ```typescript
-public readonly attributeStatements: AppSamlAttributeStatements[];
+public readonly attributeStatements: IResolvable | AppSamlAttributeStatements[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.AppSamlAttributeStatements`](#@cdktf/provider-okta.AppSamlAttributeStatements)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.AppSamlAttributeStatements`](#@cdktf/provider-okta.AppSamlAttributeStatements)[]
 
 ---
 
@@ -6398,10 +6398,10 @@ public readonly userNameTemplateType: string;
 ##### `users`<sup>Required</sup> <a name="@cdktf/provider-okta.AppSaml.property.users" id="cdktfprovideroktaappsamlpropertyusers"></a>
 
 ```typescript
-public readonly users: AppSamlUsers[];
+public readonly users: IResolvable | AppSamlUsers[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.AppSamlUsers`](#@cdktf/provider-okta.AppSamlUsers)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.AppSamlUsers`](#@cdktf/provider-okta.AppSamlUsers)[]
 
 ---
 
@@ -6836,7 +6836,7 @@ public resetUsers()
 | [`userNameTemplatePushStatusInput`](#cdktfprovideroktaappsecurepasswordstorepropertyusernametemplatepushstatusinput) | `string` | *No description.* |
 | [`userNameTemplateSuffixInput`](#cdktfprovideroktaappsecurepasswordstorepropertyusernametemplatesuffixinput) | `string` | *No description.* |
 | [`userNameTemplateTypeInput`](#cdktfprovideroktaappsecurepasswordstorepropertyusernametemplatetypeinput) | `string` | *No description.* |
-| [`usersInput`](#cdktfprovideroktaappsecurepasswordstorepropertyusersinput) | [`@cdktf/provider-okta.AppSecurePasswordStoreUsers`](#@cdktf/provider-okta.AppSecurePasswordStoreUsers)[] | *No description.* |
+| [`usersInput`](#cdktfprovideroktaappsecurepasswordstorepropertyusersinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.AppSecurePasswordStoreUsers`](#@cdktf/provider-okta.AppSecurePasswordStoreUsers)[] | *No description.* |
 | [`accessibilityErrorRedirectUrl`](#cdktfprovideroktaappsecurepasswordstorepropertyaccessibilityerrorredirecturl)<span title="Required">*</span> | `string` | *No description.* |
 | [`accessibilityLoginRedirectUrl`](#cdktfprovideroktaappsecurepasswordstorepropertyaccessibilityloginredirecturl)<span title="Required">*</span> | `string` | *No description.* |
 | [`accessibilitySelfService`](#cdktfprovideroktaappsecurepasswordstorepropertyaccessibilityselfservice)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
@@ -6869,7 +6869,7 @@ public resetUsers()
 | [`userNameTemplatePushStatus`](#cdktfprovideroktaappsecurepasswordstorepropertyusernametemplatepushstatus)<span title="Required">*</span> | `string` | *No description.* |
 | [`userNameTemplateSuffix`](#cdktfprovideroktaappsecurepasswordstorepropertyusernametemplatesuffix)<span title="Required">*</span> | `string` | *No description.* |
 | [`userNameTemplateType`](#cdktfprovideroktaappsecurepasswordstorepropertyusernametemplatetype)<span title="Required">*</span> | `string` | *No description.* |
-| [`users`](#cdktfprovideroktaappsecurepasswordstorepropertyusers)<span title="Required">*</span> | [`@cdktf/provider-okta.AppSecurePasswordStoreUsers`](#@cdktf/provider-okta.AppSecurePasswordStoreUsers)[] | *No description.* |
+| [`users`](#cdktfprovideroktaappsecurepasswordstorepropertyusers)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.AppSecurePasswordStoreUsers`](#@cdktf/provider-okta.AppSecurePasswordStoreUsers)[] | *No description.* |
 
 ---
 
@@ -7236,10 +7236,10 @@ public readonly userNameTemplateTypeInput: string;
 ##### `usersInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.AppSecurePasswordStore.property.usersInput" id="cdktfprovideroktaappsecurepasswordstorepropertyusersinput"></a>
 
 ```typescript
-public readonly usersInput: AppSecurePasswordStoreUsers[];
+public readonly usersInput: IResolvable | AppSecurePasswordStoreUsers[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.AppSecurePasswordStoreUsers`](#@cdktf/provider-okta.AppSecurePasswordStoreUsers)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.AppSecurePasswordStoreUsers`](#@cdktf/provider-okta.AppSecurePasswordStoreUsers)[]
 
 ---
 
@@ -7566,10 +7566,10 @@ public readonly userNameTemplateType: string;
 ##### `users`<sup>Required</sup> <a name="@cdktf/provider-okta.AppSecurePasswordStore.property.users" id="cdktfprovideroktaappsecurepasswordstorepropertyusers"></a>
 
 ```typescript
-public readonly users: AppSecurePasswordStoreUsers[];
+public readonly users: IResolvable | AppSecurePasswordStoreUsers[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.AppSecurePasswordStoreUsers`](#@cdktf/provider-okta.AppSecurePasswordStoreUsers)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.AppSecurePasswordStoreUsers`](#@cdktf/provider-okta.AppSecurePasswordStoreUsers)[]
 
 ---
 
@@ -7879,7 +7879,7 @@ public resetUsers()
 | [`userNameTemplatePushStatusInput`](#cdktfprovideroktaappsharedcredentialspropertyusernametemplatepushstatusinput) | `string` | *No description.* |
 | [`userNameTemplateSuffixInput`](#cdktfprovideroktaappsharedcredentialspropertyusernametemplatesuffixinput) | `string` | *No description.* |
 | [`userNameTemplateTypeInput`](#cdktfprovideroktaappsharedcredentialspropertyusernametemplatetypeinput) | `string` | *No description.* |
-| [`usersInput`](#cdktfprovideroktaappsharedcredentialspropertyusersinput) | [`@cdktf/provider-okta.AppSharedCredentialsUsers`](#@cdktf/provider-okta.AppSharedCredentialsUsers)[] | *No description.* |
+| [`usersInput`](#cdktfprovideroktaappsharedcredentialspropertyusersinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.AppSharedCredentialsUsers`](#@cdktf/provider-okta.AppSharedCredentialsUsers)[] | *No description.* |
 | [`accessibilityErrorRedirectUrl`](#cdktfprovideroktaappsharedcredentialspropertyaccessibilityerrorredirecturl)<span title="Required">*</span> | `string` | *No description.* |
 | [`accessibilityLoginRedirectUrl`](#cdktfprovideroktaappsharedcredentialspropertyaccessibilityloginredirecturl)<span title="Required">*</span> | `string` | *No description.* |
 | [`accessibilitySelfService`](#cdktfprovideroktaappsharedcredentialspropertyaccessibilityselfservice)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
@@ -7909,7 +7909,7 @@ public resetUsers()
 | [`userNameTemplatePushStatus`](#cdktfprovideroktaappsharedcredentialspropertyusernametemplatepushstatus)<span title="Required">*</span> | `string` | *No description.* |
 | [`userNameTemplateSuffix`](#cdktfprovideroktaappsharedcredentialspropertyusernametemplatesuffix)<span title="Required">*</span> | `string` | *No description.* |
 | [`userNameTemplateType`](#cdktfprovideroktaappsharedcredentialspropertyusernametemplatetype)<span title="Required">*</span> | `string` | *No description.* |
-| [`users`](#cdktfprovideroktaappsharedcredentialspropertyusers)<span title="Required">*</span> | [`@cdktf/provider-okta.AppSharedCredentialsUsers`](#@cdktf/provider-okta.AppSharedCredentialsUsers)[] | *No description.* |
+| [`users`](#cdktfprovideroktaappsharedcredentialspropertyusers)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.AppSharedCredentialsUsers`](#@cdktf/provider-okta.AppSharedCredentialsUsers)[] | *No description.* |
 
 ---
 
@@ -8246,10 +8246,10 @@ public readonly userNameTemplateTypeInput: string;
 ##### `usersInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.AppSharedCredentials.property.usersInput" id="cdktfprovideroktaappsharedcredentialspropertyusersinput"></a>
 
 ```typescript
-public readonly usersInput: AppSharedCredentialsUsers[];
+public readonly usersInput: IResolvable | AppSharedCredentialsUsers[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.AppSharedCredentialsUsers`](#@cdktf/provider-okta.AppSharedCredentialsUsers)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.AppSharedCredentialsUsers`](#@cdktf/provider-okta.AppSharedCredentialsUsers)[]
 
 ---
 
@@ -8546,10 +8546,10 @@ public readonly userNameTemplateType: string;
 ##### `users`<sup>Required</sup> <a name="@cdktf/provider-okta.AppSharedCredentials.property.users" id="cdktfprovideroktaappsharedcredentialspropertyusers"></a>
 
 ```typescript
-public readonly users: AppSharedCredentialsUsers[];
+public readonly users: IResolvable | AppSharedCredentialsUsers[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.AppSharedCredentialsUsers`](#@cdktf/provider-okta.AppSharedCredentialsUsers)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.AppSharedCredentialsUsers`](#@cdktf/provider-okta.AppSharedCredentialsUsers)[]
 
 ---
 
@@ -8776,7 +8776,7 @@ public resetUserTypesIncluded()
 | [`networkConnectionInput`](#cdktfprovideroktaappsignonpolicyrulepropertynetworkconnectioninput) | `string` | *No description.* |
 | [`networkExcludesInput`](#cdktfprovideroktaappsignonpolicyrulepropertynetworkexcludesinput) | `string`[] | *No description.* |
 | [`networkIncludesInput`](#cdktfprovideroktaappsignonpolicyrulepropertynetworkincludesinput) | `string`[] | *No description.* |
-| [`platformIncludeInput`](#cdktfprovideroktaappsignonpolicyrulepropertyplatformincludeinput) | [`@cdktf/provider-okta.AppSignonPolicyRulePlatformInclude`](#@cdktf/provider-okta.AppSignonPolicyRulePlatformInclude)[] | *No description.* |
+| [`platformIncludeInput`](#cdktfprovideroktaappsignonpolicyrulepropertyplatformincludeinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.AppSignonPolicyRulePlatformInclude`](#@cdktf/provider-okta.AppSignonPolicyRulePlatformInclude)[] | *No description.* |
 | [`policyIdInput`](#cdktfprovideroktaappsignonpolicyrulepropertypolicyidinput) | `string` | *No description.* |
 | [`priorityInput`](#cdktfprovideroktaappsignonpolicyrulepropertypriorityinput) | `number` | *No description.* |
 | [`reAuthenticationFrequencyInput`](#cdktfprovideroktaappsignonpolicyrulepropertyreauthenticationfrequencyinput) | `string` | *No description.* |
@@ -8798,7 +8798,7 @@ public resetUserTypesIncluded()
 | [`networkConnection`](#cdktfprovideroktaappsignonpolicyrulepropertynetworkconnection)<span title="Required">*</span> | `string` | *No description.* |
 | [`networkExcludes`](#cdktfprovideroktaappsignonpolicyrulepropertynetworkexcludes)<span title="Required">*</span> | `string`[] | *No description.* |
 | [`networkIncludes`](#cdktfprovideroktaappsignonpolicyrulepropertynetworkincludes)<span title="Required">*</span> | `string`[] | *No description.* |
-| [`platformInclude`](#cdktfprovideroktaappsignonpolicyrulepropertyplatforminclude)<span title="Required">*</span> | [`@cdktf/provider-okta.AppSignonPolicyRulePlatformInclude`](#@cdktf/provider-okta.AppSignonPolicyRulePlatformInclude)[] | *No description.* |
+| [`platformInclude`](#cdktfprovideroktaappsignonpolicyrulepropertyplatforminclude)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.AppSignonPolicyRulePlatformInclude`](#@cdktf/provider-okta.AppSignonPolicyRulePlatformInclude)[] | *No description.* |
 | [`policyId`](#cdktfprovideroktaappsignonpolicyrulepropertypolicyid)<span title="Required">*</span> | `string` | *No description.* |
 | [`priority`](#cdktfprovideroktaappsignonpolicyrulepropertypriority)<span title="Required">*</span> | `number` | *No description.* |
 | [`reAuthenticationFrequency`](#cdktfprovideroktaappsignonpolicyrulepropertyreauthenticationfrequency)<span title="Required">*</span> | `string` | *No description.* |
@@ -8944,10 +8944,10 @@ public readonly networkIncludesInput: string[];
 ##### `platformIncludeInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.AppSignonPolicyRule.property.platformIncludeInput" id="cdktfprovideroktaappsignonpolicyrulepropertyplatformincludeinput"></a>
 
 ```typescript
-public readonly platformIncludeInput: AppSignonPolicyRulePlatformInclude[];
+public readonly platformIncludeInput: IResolvable | AppSignonPolicyRulePlatformInclude[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.AppSignonPolicyRulePlatformInclude`](#@cdktf/provider-okta.AppSignonPolicyRulePlatformInclude)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.AppSignonPolicyRulePlatformInclude`](#@cdktf/provider-okta.AppSignonPolicyRulePlatformInclude)[]
 
 ---
 
@@ -9164,10 +9164,10 @@ public readonly networkIncludes: string[];
 ##### `platformInclude`<sup>Required</sup> <a name="@cdktf/provider-okta.AppSignonPolicyRule.property.platformInclude" id="cdktfprovideroktaappsignonpolicyrulepropertyplatforminclude"></a>
 
 ```typescript
-public readonly platformInclude: AppSignonPolicyRulePlatformInclude[];
+public readonly platformInclude: IResolvable | AppSignonPolicyRulePlatformInclude[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.AppSignonPolicyRulePlatformInclude`](#@cdktf/provider-okta.AppSignonPolicyRulePlatformInclude)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.AppSignonPolicyRulePlatformInclude`](#@cdktf/provider-okta.AppSignonPolicyRulePlatformInclude)[]
 
 ---
 
@@ -9551,7 +9551,7 @@ public resetUsers()
 | [`userNameTemplatePushStatusInput`](#cdktfprovideroktaappswapropertyusernametemplatepushstatusinput) | `string` | *No description.* |
 | [`userNameTemplateSuffixInput`](#cdktfprovideroktaappswapropertyusernametemplatesuffixinput) | `string` | *No description.* |
 | [`userNameTemplateTypeInput`](#cdktfprovideroktaappswapropertyusernametemplatetypeinput) | `string` | *No description.* |
-| [`usersInput`](#cdktfprovideroktaappswapropertyusersinput) | [`@cdktf/provider-okta.AppSwaUsers`](#@cdktf/provider-okta.AppSwaUsers)[] | *No description.* |
+| [`usersInput`](#cdktfprovideroktaappswapropertyusersinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.AppSwaUsers`](#@cdktf/provider-okta.AppSwaUsers)[] | *No description.* |
 | [`accessibilityErrorRedirectUrl`](#cdktfprovideroktaappswapropertyaccessibilityerrorredirecturl)<span title="Required">*</span> | `string` | *No description.* |
 | [`accessibilityLoginRedirectUrl`](#cdktfprovideroktaappswapropertyaccessibilityloginredirecturl)<span title="Required">*</span> | `string` | *No description.* |
 | [`accessibilitySelfService`](#cdktfprovideroktaappswapropertyaccessibilityselfservice)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
@@ -9579,7 +9579,7 @@ public resetUsers()
 | [`userNameTemplatePushStatus`](#cdktfprovideroktaappswapropertyusernametemplatepushstatus)<span title="Required">*</span> | `string` | *No description.* |
 | [`userNameTemplateSuffix`](#cdktfprovideroktaappswapropertyusernametemplatesuffix)<span title="Required">*</span> | `string` | *No description.* |
 | [`userNameTemplateType`](#cdktfprovideroktaappswapropertyusernametemplatetype)<span title="Required">*</span> | `string` | *No description.* |
-| [`users`](#cdktfprovideroktaappswapropertyusers)<span title="Required">*</span> | [`@cdktf/provider-okta.AppSwaUsers`](#@cdktf/provider-okta.AppSwaUsers)[] | *No description.* |
+| [`users`](#cdktfprovideroktaappswapropertyusers)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.AppSwaUsers`](#@cdktf/provider-okta.AppSwaUsers)[] | *No description.* |
 
 ---
 
@@ -9896,10 +9896,10 @@ public readonly userNameTemplateTypeInput: string;
 ##### `usersInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.AppSwa.property.usersInput" id="cdktfprovideroktaappswapropertyusersinput"></a>
 
 ```typescript
-public readonly usersInput: AppSwaUsers[];
+public readonly usersInput: IResolvable | AppSwaUsers[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.AppSwaUsers`](#@cdktf/provider-okta.AppSwaUsers)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.AppSwaUsers`](#@cdktf/provider-okta.AppSwaUsers)[]
 
 ---
 
@@ -10176,10 +10176,10 @@ public readonly userNameTemplateType: string;
 ##### `users`<sup>Required</sup> <a name="@cdktf/provider-okta.AppSwa.property.users" id="cdktfprovideroktaappswapropertyusers"></a>
 
 ```typescript
-public readonly users: AppSwaUsers[];
+public readonly users: IResolvable | AppSwaUsers[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.AppSwaUsers`](#@cdktf/provider-okta.AppSwaUsers)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.AppSwaUsers`](#@cdktf/provider-okta.AppSwaUsers)[]
 
 ---
 
@@ -10455,7 +10455,7 @@ public resetUsers()
 | [`userNameTemplatePushStatusInput`](#cdktfprovideroktaappthreefieldpropertyusernametemplatepushstatusinput) | `string` | *No description.* |
 | [`userNameTemplateSuffixInput`](#cdktfprovideroktaappthreefieldpropertyusernametemplatesuffixinput) | `string` | *No description.* |
 | [`userNameTemplateTypeInput`](#cdktfprovideroktaappthreefieldpropertyusernametemplatetypeinput) | `string` | *No description.* |
-| [`usersInput`](#cdktfprovideroktaappthreefieldpropertyusersinput) | [`@cdktf/provider-okta.AppThreeFieldUsers`](#@cdktf/provider-okta.AppThreeFieldUsers)[] | *No description.* |
+| [`usersInput`](#cdktfprovideroktaappthreefieldpropertyusersinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.AppThreeFieldUsers`](#@cdktf/provider-okta.AppThreeFieldUsers)[] | *No description.* |
 | [`accessibilityErrorRedirectUrl`](#cdktfprovideroktaappthreefieldpropertyaccessibilityerrorredirecturl)<span title="Required">*</span> | `string` | *No description.* |
 | [`accessibilityLoginRedirectUrl`](#cdktfprovideroktaappthreefieldpropertyaccessibilityloginredirecturl)<span title="Required">*</span> | `string` | *No description.* |
 | [`accessibilitySelfService`](#cdktfprovideroktaappthreefieldpropertyaccessibilityselfservice)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
@@ -10486,7 +10486,7 @@ public resetUsers()
 | [`userNameTemplatePushStatus`](#cdktfprovideroktaappthreefieldpropertyusernametemplatepushstatus)<span title="Required">*</span> | `string` | *No description.* |
 | [`userNameTemplateSuffix`](#cdktfprovideroktaappthreefieldpropertyusernametemplatesuffix)<span title="Required">*</span> | `string` | *No description.* |
 | [`userNameTemplateType`](#cdktfprovideroktaappthreefieldpropertyusernametemplatetype)<span title="Required">*</span> | `string` | *No description.* |
-| [`users`](#cdktfprovideroktaappthreefieldpropertyusers)<span title="Required">*</span> | [`@cdktf/provider-okta.AppThreeFieldUsers`](#@cdktf/provider-okta.AppThreeFieldUsers)[] | *No description.* |
+| [`users`](#cdktfprovideroktaappthreefieldpropertyusers)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.AppThreeFieldUsers`](#@cdktf/provider-okta.AppThreeFieldUsers)[] | *No description.* |
 
 ---
 
@@ -10833,10 +10833,10 @@ public readonly userNameTemplateTypeInput: string;
 ##### `usersInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.AppThreeField.property.usersInput" id="cdktfprovideroktaappthreefieldpropertyusersinput"></a>
 
 ```typescript
-public readonly usersInput: AppThreeFieldUsers[];
+public readonly usersInput: IResolvable | AppThreeFieldUsers[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.AppThreeFieldUsers`](#@cdktf/provider-okta.AppThreeFieldUsers)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.AppThreeFieldUsers`](#@cdktf/provider-okta.AppThreeFieldUsers)[]
 
 ---
 
@@ -11143,10 +11143,10 @@ public readonly userNameTemplateType: string;
 ##### `users`<sup>Required</sup> <a name="@cdktf/provider-okta.AppThreeField.property.users" id="cdktfprovideroktaappthreefieldpropertyusers"></a>
 
 ```typescript
-public readonly users: AppThreeFieldUsers[];
+public readonly users: IResolvable | AppThreeFieldUsers[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.AppThreeFieldUsers`](#@cdktf/provider-okta.AppThreeFieldUsers)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.AppThreeFieldUsers`](#@cdktf/provider-okta.AppThreeFieldUsers)[]
 
 ---
 
@@ -11248,7 +11248,7 @@ public resetUsername()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`hasSharedUsername`](#cdktfprovideroktaappuserpropertyhassharedusername)<span title="Required">*</span> | `any` | *No description.* |
+| [`hasSharedUsername`](#cdktfprovideroktaappuserpropertyhassharedusername)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`id`](#cdktfprovideroktaappuserpropertyid)<span title="Required">*</span> | `string` | *No description.* |
 | [`appIdInput`](#cdktfprovideroktaappuserpropertyappidinput) | `string` | *No description.* |
 | [`passwordInput`](#cdktfprovideroktaappuserpropertypasswordinput) | `string` | *No description.* |
@@ -11268,10 +11268,10 @@ public resetUsername()
 ##### `hasSharedUsername`<sup>Required</sup> <a name="@cdktf/provider-okta.AppUser.property.hasSharedUsername" id="cdktfprovideroktaappuserpropertyhassharedusername"></a>
 
 ```typescript
-public readonly hasSharedUsername: any;
+public readonly hasSharedUsername: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -12231,7 +12231,7 @@ public resetUserType()
 | [`id`](#cdktfprovideroktaappuserschemapropertyid)<span title="Required">*</span> | `string` | *No description.* |
 | [`appIdInput`](#cdktfprovideroktaappuserschemapropertyappidinput) | `string` | *No description.* |
 | [`arrayEnumInput`](#cdktfprovideroktaappuserschemapropertyarrayenuminput) | `string`[] | *No description.* |
-| [`arrayOneOfInput`](#cdktfprovideroktaappuserschemapropertyarrayoneofinput) | [`@cdktf/provider-okta.AppUserSchemaArrayOneOf`](#@cdktf/provider-okta.AppUserSchemaArrayOneOf)[] | *No description.* |
+| [`arrayOneOfInput`](#cdktfprovideroktaappuserschemapropertyarrayoneofinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.AppUserSchemaArrayOneOf`](#@cdktf/provider-okta.AppUserSchemaArrayOneOf)[] | *No description.* |
 | [`arrayTypeInput`](#cdktfprovideroktaappuserschemapropertyarraytypeinput) | `string` | *No description.* |
 | [`descriptionInput`](#cdktfprovideroktaappuserschemapropertydescriptioninput) | `string` | *No description.* |
 | [`enumInput`](#cdktfprovideroktaappuserschemapropertyenuminput) | `string`[] | *No description.* |
@@ -12241,7 +12241,7 @@ public resetUserType()
 | [`masterInput`](#cdktfprovideroktaappuserschemapropertymasterinput) | `string` | *No description.* |
 | [`maxLengthInput`](#cdktfprovideroktaappuserschemapropertymaxlengthinput) | `number` | *No description.* |
 | [`minLengthInput`](#cdktfprovideroktaappuserschemapropertyminlengthinput) | `number` | *No description.* |
-| [`oneOfInput`](#cdktfprovideroktaappuserschemapropertyoneofinput) | [`@cdktf/provider-okta.AppUserSchemaOneOf`](#@cdktf/provider-okta.AppUserSchemaOneOf)[] | *No description.* |
+| [`oneOfInput`](#cdktfprovideroktaappuserschemapropertyoneofinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.AppUserSchemaOneOf`](#@cdktf/provider-okta.AppUserSchemaOneOf)[] | *No description.* |
 | [`permissionsInput`](#cdktfprovideroktaappuserschemapropertypermissionsinput) | `string` | *No description.* |
 | [`requiredInput`](#cdktfprovideroktaappuserschemapropertyrequiredinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`scopeInput`](#cdktfprovideroktaappuserschemapropertyscopeinput) | `string` | *No description.* |
@@ -12252,7 +12252,7 @@ public resetUserType()
 | [`userTypeInput`](#cdktfprovideroktaappuserschemapropertyusertypeinput) | `string` | *No description.* |
 | [`appId`](#cdktfprovideroktaappuserschemapropertyappid)<span title="Required">*</span> | `string` | *No description.* |
 | [`arrayEnum`](#cdktfprovideroktaappuserschemapropertyarrayenum)<span title="Required">*</span> | `string`[] | *No description.* |
-| [`arrayOneOf`](#cdktfprovideroktaappuserschemapropertyarrayoneof)<span title="Required">*</span> | [`@cdktf/provider-okta.AppUserSchemaArrayOneOf`](#@cdktf/provider-okta.AppUserSchemaArrayOneOf)[] | *No description.* |
+| [`arrayOneOf`](#cdktfprovideroktaappuserschemapropertyarrayoneof)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.AppUserSchemaArrayOneOf`](#@cdktf/provider-okta.AppUserSchemaArrayOneOf)[] | *No description.* |
 | [`arrayType`](#cdktfprovideroktaappuserschemapropertyarraytype)<span title="Required">*</span> | `string` | *No description.* |
 | [`description`](#cdktfprovideroktaappuserschemapropertydescription)<span title="Required">*</span> | `string` | *No description.* |
 | [`enum`](#cdktfprovideroktaappuserschemapropertyenum)<span title="Required">*</span> | `string`[] | *No description.* |
@@ -12262,7 +12262,7 @@ public resetUserType()
 | [`master`](#cdktfprovideroktaappuserschemapropertymaster)<span title="Required">*</span> | `string` | *No description.* |
 | [`maxLength`](#cdktfprovideroktaappuserschemapropertymaxlength)<span title="Required">*</span> | `number` | *No description.* |
 | [`minLength`](#cdktfprovideroktaappuserschemapropertyminlength)<span title="Required">*</span> | `number` | *No description.* |
-| [`oneOf`](#cdktfprovideroktaappuserschemapropertyoneof)<span title="Required">*</span> | [`@cdktf/provider-okta.AppUserSchemaOneOf`](#@cdktf/provider-okta.AppUserSchemaOneOf)[] | *No description.* |
+| [`oneOf`](#cdktfprovideroktaappuserschemapropertyoneof)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.AppUserSchemaOneOf`](#@cdktf/provider-okta.AppUserSchemaOneOf)[] | *No description.* |
 | [`permissions`](#cdktfprovideroktaappuserschemapropertypermissions)<span title="Required">*</span> | `string` | *No description.* |
 | [`required`](#cdktfprovideroktaappuserschemapropertyrequired)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`scope`](#cdktfprovideroktaappuserschemapropertyscope)<span title="Required">*</span> | `string` | *No description.* |
@@ -12307,10 +12307,10 @@ public readonly arrayEnumInput: string[];
 ##### `arrayOneOfInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.AppUserSchema.property.arrayOneOfInput" id="cdktfprovideroktaappuserschemapropertyarrayoneofinput"></a>
 
 ```typescript
-public readonly arrayOneOfInput: AppUserSchemaArrayOneOf[];
+public readonly arrayOneOfInput: IResolvable | AppUserSchemaArrayOneOf[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.AppUserSchemaArrayOneOf`](#@cdktf/provider-okta.AppUserSchemaArrayOneOf)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.AppUserSchemaArrayOneOf`](#@cdktf/provider-okta.AppUserSchemaArrayOneOf)[]
 
 ---
 
@@ -12407,10 +12407,10 @@ public readonly minLengthInput: number;
 ##### `oneOfInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.AppUserSchema.property.oneOfInput" id="cdktfprovideroktaappuserschemapropertyoneofinput"></a>
 
 ```typescript
-public readonly oneOfInput: AppUserSchemaOneOf[];
+public readonly oneOfInput: IResolvable | AppUserSchemaOneOf[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.AppUserSchemaOneOf`](#@cdktf/provider-okta.AppUserSchemaOneOf)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.AppUserSchemaOneOf`](#@cdktf/provider-okta.AppUserSchemaOneOf)[]
 
 ---
 
@@ -12517,10 +12517,10 @@ public readonly arrayEnum: string[];
 ##### `arrayOneOf`<sup>Required</sup> <a name="@cdktf/provider-okta.AppUserSchema.property.arrayOneOf" id="cdktfprovideroktaappuserschemapropertyarrayoneof"></a>
 
 ```typescript
-public readonly arrayOneOf: AppUserSchemaArrayOneOf[];
+public readonly arrayOneOf: IResolvable | AppUserSchemaArrayOneOf[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.AppUserSchemaArrayOneOf`](#@cdktf/provider-okta.AppUserSchemaArrayOneOf)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.AppUserSchemaArrayOneOf`](#@cdktf/provider-okta.AppUserSchemaArrayOneOf)[]
 
 ---
 
@@ -12617,10 +12617,10 @@ public readonly minLength: number;
 ##### `oneOf`<sup>Required</sup> <a name="@cdktf/provider-okta.AppUserSchema.property.oneOf" id="cdktfprovideroktaappuserschemapropertyoneof"></a>
 
 ```typescript
-public readonly oneOf: AppUserSchemaOneOf[];
+public readonly oneOf: IResolvable | AppUserSchemaOneOf[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.AppUserSchemaOneOf`](#@cdktf/provider-okta.AppUserSchemaOneOf)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.AppUserSchemaOneOf`](#@cdktf/provider-okta.AppUserSchemaOneOf)[]
 
 ---
 
@@ -12896,7 +12896,7 @@ public resetUserType()
 | [`id`](#cdktfprovideroktaappuserschemapropertypropertyid)<span title="Required">*</span> | `string` | *No description.* |
 | [`appIdInput`](#cdktfprovideroktaappuserschemapropertypropertyappidinput) | `string` | *No description.* |
 | [`arrayEnumInput`](#cdktfprovideroktaappuserschemapropertypropertyarrayenuminput) | `string`[] | *No description.* |
-| [`arrayOneOfInput`](#cdktfprovideroktaappuserschemapropertypropertyarrayoneofinput) | [`@cdktf/provider-okta.AppUserSchemaPropertyArrayOneOf`](#@cdktf/provider-okta.AppUserSchemaPropertyArrayOneOf)[] | *No description.* |
+| [`arrayOneOfInput`](#cdktfprovideroktaappuserschemapropertypropertyarrayoneofinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.AppUserSchemaPropertyArrayOneOf`](#@cdktf/provider-okta.AppUserSchemaPropertyArrayOneOf)[] | *No description.* |
 | [`arrayTypeInput`](#cdktfprovideroktaappuserschemapropertypropertyarraytypeinput) | `string` | *No description.* |
 | [`descriptionInput`](#cdktfprovideroktaappuserschemapropertypropertydescriptioninput) | `string` | *No description.* |
 | [`enumInput`](#cdktfprovideroktaappuserschemapropertypropertyenuminput) | `string`[] | *No description.* |
@@ -12906,7 +12906,7 @@ public resetUserType()
 | [`masterInput`](#cdktfprovideroktaappuserschemapropertypropertymasterinput) | `string` | *No description.* |
 | [`maxLengthInput`](#cdktfprovideroktaappuserschemapropertypropertymaxlengthinput) | `number` | *No description.* |
 | [`minLengthInput`](#cdktfprovideroktaappuserschemapropertypropertyminlengthinput) | `number` | *No description.* |
-| [`oneOfInput`](#cdktfprovideroktaappuserschemapropertypropertyoneofinput) | [`@cdktf/provider-okta.AppUserSchemaPropertyOneOf`](#@cdktf/provider-okta.AppUserSchemaPropertyOneOf)[] | *No description.* |
+| [`oneOfInput`](#cdktfprovideroktaappuserschemapropertypropertyoneofinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.AppUserSchemaPropertyOneOf`](#@cdktf/provider-okta.AppUserSchemaPropertyOneOf)[] | *No description.* |
 | [`permissionsInput`](#cdktfprovideroktaappuserschemapropertypropertypermissionsinput) | `string` | *No description.* |
 | [`requiredInput`](#cdktfprovideroktaappuserschemapropertypropertyrequiredinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`scopeInput`](#cdktfprovideroktaappuserschemapropertypropertyscopeinput) | `string` | *No description.* |
@@ -12917,7 +12917,7 @@ public resetUserType()
 | [`userTypeInput`](#cdktfprovideroktaappuserschemapropertypropertyusertypeinput) | `string` | *No description.* |
 | [`appId`](#cdktfprovideroktaappuserschemapropertypropertyappid)<span title="Required">*</span> | `string` | *No description.* |
 | [`arrayEnum`](#cdktfprovideroktaappuserschemapropertypropertyarrayenum)<span title="Required">*</span> | `string`[] | *No description.* |
-| [`arrayOneOf`](#cdktfprovideroktaappuserschemapropertypropertyarrayoneof)<span title="Required">*</span> | [`@cdktf/provider-okta.AppUserSchemaPropertyArrayOneOf`](#@cdktf/provider-okta.AppUserSchemaPropertyArrayOneOf)[] | *No description.* |
+| [`arrayOneOf`](#cdktfprovideroktaappuserschemapropertypropertyarrayoneof)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.AppUserSchemaPropertyArrayOneOf`](#@cdktf/provider-okta.AppUserSchemaPropertyArrayOneOf)[] | *No description.* |
 | [`arrayType`](#cdktfprovideroktaappuserschemapropertypropertyarraytype)<span title="Required">*</span> | `string` | *No description.* |
 | [`description`](#cdktfprovideroktaappuserschemapropertypropertydescription)<span title="Required">*</span> | `string` | *No description.* |
 | [`enum`](#cdktfprovideroktaappuserschemapropertypropertyenum)<span title="Required">*</span> | `string`[] | *No description.* |
@@ -12927,7 +12927,7 @@ public resetUserType()
 | [`master`](#cdktfprovideroktaappuserschemapropertypropertymaster)<span title="Required">*</span> | `string` | *No description.* |
 | [`maxLength`](#cdktfprovideroktaappuserschemapropertypropertymaxlength)<span title="Required">*</span> | `number` | *No description.* |
 | [`minLength`](#cdktfprovideroktaappuserschemapropertypropertyminlength)<span title="Required">*</span> | `number` | *No description.* |
-| [`oneOf`](#cdktfprovideroktaappuserschemapropertypropertyoneof)<span title="Required">*</span> | [`@cdktf/provider-okta.AppUserSchemaPropertyOneOf`](#@cdktf/provider-okta.AppUserSchemaPropertyOneOf)[] | *No description.* |
+| [`oneOf`](#cdktfprovideroktaappuserschemapropertypropertyoneof)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.AppUserSchemaPropertyOneOf`](#@cdktf/provider-okta.AppUserSchemaPropertyOneOf)[] | *No description.* |
 | [`permissions`](#cdktfprovideroktaappuserschemapropertypropertypermissions)<span title="Required">*</span> | `string` | *No description.* |
 | [`required`](#cdktfprovideroktaappuserschemapropertypropertyrequired)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`scope`](#cdktfprovideroktaappuserschemapropertypropertyscope)<span title="Required">*</span> | `string` | *No description.* |
@@ -12972,10 +12972,10 @@ public readonly arrayEnumInput: string[];
 ##### `arrayOneOfInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.AppUserSchemaProperty.property.arrayOneOfInput" id="cdktfprovideroktaappuserschemapropertypropertyarrayoneofinput"></a>
 
 ```typescript
-public readonly arrayOneOfInput: AppUserSchemaPropertyArrayOneOf[];
+public readonly arrayOneOfInput: IResolvable | AppUserSchemaPropertyArrayOneOf[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.AppUserSchemaPropertyArrayOneOf`](#@cdktf/provider-okta.AppUserSchemaPropertyArrayOneOf)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.AppUserSchemaPropertyArrayOneOf`](#@cdktf/provider-okta.AppUserSchemaPropertyArrayOneOf)[]
 
 ---
 
@@ -13072,10 +13072,10 @@ public readonly minLengthInput: number;
 ##### `oneOfInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.AppUserSchemaProperty.property.oneOfInput" id="cdktfprovideroktaappuserschemapropertypropertyoneofinput"></a>
 
 ```typescript
-public readonly oneOfInput: AppUserSchemaPropertyOneOf[];
+public readonly oneOfInput: IResolvable | AppUserSchemaPropertyOneOf[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.AppUserSchemaPropertyOneOf`](#@cdktf/provider-okta.AppUserSchemaPropertyOneOf)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.AppUserSchemaPropertyOneOf`](#@cdktf/provider-okta.AppUserSchemaPropertyOneOf)[]
 
 ---
 
@@ -13182,10 +13182,10 @@ public readonly arrayEnum: string[];
 ##### `arrayOneOf`<sup>Required</sup> <a name="@cdktf/provider-okta.AppUserSchemaProperty.property.arrayOneOf" id="cdktfprovideroktaappuserschemapropertypropertyarrayoneof"></a>
 
 ```typescript
-public readonly arrayOneOf: AppUserSchemaPropertyArrayOneOf[];
+public readonly arrayOneOf: IResolvable | AppUserSchemaPropertyArrayOneOf[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.AppUserSchemaPropertyArrayOneOf`](#@cdktf/provider-okta.AppUserSchemaPropertyArrayOneOf)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.AppUserSchemaPropertyArrayOneOf`](#@cdktf/provider-okta.AppUserSchemaPropertyArrayOneOf)[]
 
 ---
 
@@ -13282,10 +13282,10 @@ public readonly minLength: number;
 ##### `oneOf`<sup>Required</sup> <a name="@cdktf/provider-okta.AppUserSchemaProperty.property.oneOf" id="cdktfprovideroktaappuserschemapropertypropertyoneof"></a>
 
 ```typescript
-public readonly oneOf: AppUserSchemaPropertyOneOf[];
+public readonly oneOf: IResolvable | AppUserSchemaPropertyOneOf[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.AppUserSchemaPropertyOneOf`](#@cdktf/provider-okta.AppUserSchemaPropertyOneOf)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.AppUserSchemaPropertyOneOf`](#@cdktf/provider-okta.AppUserSchemaPropertyOneOf)[]
 
 ---
 
@@ -16162,7 +16162,7 @@ public resetUsers()
 | [`userNameTemplatePushStatusInput`](#cdktfprovideroktaautologinapppropertyusernametemplatepushstatusinput) | `string` | *No description.* |
 | [`userNameTemplateSuffixInput`](#cdktfprovideroktaautologinapppropertyusernametemplatesuffixinput) | `string` | *No description.* |
 | [`userNameTemplateTypeInput`](#cdktfprovideroktaautologinapppropertyusernametemplatetypeinput) | `string` | *No description.* |
-| [`usersInput`](#cdktfprovideroktaautologinapppropertyusersinput) | [`@cdktf/provider-okta.AutoLoginAppUsers`](#@cdktf/provider-okta.AutoLoginAppUsers)[] | *No description.* |
+| [`usersInput`](#cdktfprovideroktaautologinapppropertyusersinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.AutoLoginAppUsers`](#@cdktf/provider-okta.AutoLoginAppUsers)[] | *No description.* |
 | [`accessibilityErrorRedirectUrl`](#cdktfprovideroktaautologinapppropertyaccessibilityerrorredirecturl)<span title="Required">*</span> | `string` | *No description.* |
 | [`accessibilityLoginRedirectUrl`](#cdktfprovideroktaautologinapppropertyaccessibilityloginredirecturl)<span title="Required">*</span> | `string` | *No description.* |
 | [`accessibilitySelfService`](#cdktfprovideroktaautologinapppropertyaccessibilityselfservice)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
@@ -16190,7 +16190,7 @@ public resetUsers()
 | [`userNameTemplatePushStatus`](#cdktfprovideroktaautologinapppropertyusernametemplatepushstatus)<span title="Required">*</span> | `string` | *No description.* |
 | [`userNameTemplateSuffix`](#cdktfprovideroktaautologinapppropertyusernametemplatesuffix)<span title="Required">*</span> | `string` | *No description.* |
 | [`userNameTemplateType`](#cdktfprovideroktaautologinapppropertyusernametemplatetype)<span title="Required">*</span> | `string` | *No description.* |
-| [`users`](#cdktfprovideroktaautologinapppropertyusers)<span title="Required">*</span> | [`@cdktf/provider-okta.AutoLoginAppUsers`](#@cdktf/provider-okta.AutoLoginAppUsers)[] | *No description.* |
+| [`users`](#cdktfprovideroktaautologinapppropertyusers)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.AutoLoginAppUsers`](#@cdktf/provider-okta.AutoLoginAppUsers)[] | *No description.* |
 
 ---
 
@@ -16507,10 +16507,10 @@ public readonly userNameTemplateTypeInput: string;
 ##### `usersInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.AutoLoginApp.property.usersInput" id="cdktfprovideroktaautologinapppropertyusersinput"></a>
 
 ```typescript
-public readonly usersInput: AutoLoginAppUsers[];
+public readonly usersInput: IResolvable | AutoLoginAppUsers[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.AutoLoginAppUsers`](#@cdktf/provider-okta.AutoLoginAppUsers)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.AutoLoginAppUsers`](#@cdktf/provider-okta.AutoLoginAppUsers)[]
 
 ---
 
@@ -16787,10 +16787,10 @@ public readonly userNameTemplateType: string;
 ##### `users`<sup>Required</sup> <a name="@cdktf/provider-okta.AutoLoginApp.property.users" id="cdktfprovideroktaautologinapppropertyusers"></a>
 
 ```typescript
-public readonly users: AutoLoginAppUsers[];
+public readonly users: IResolvable | AutoLoginAppUsers[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.AutoLoginAppUsers`](#@cdktf/provider-okta.AutoLoginAppUsers)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.AutoLoginAppUsers`](#@cdktf/provider-okta.AutoLoginAppUsers)[]
 
 ---
 
@@ -17270,7 +17270,7 @@ public resetUsers()
 | [`skipUsersInput`](#cdktfprovideroktabookmarkapppropertyskipusersinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`statusInput`](#cdktfprovideroktabookmarkapppropertystatusinput) | `string` | *No description.* |
 | [`urlInput`](#cdktfprovideroktabookmarkapppropertyurlinput) | `string` | *No description.* |
-| [`usersInput`](#cdktfprovideroktabookmarkapppropertyusersinput) | [`@cdktf/provider-okta.BookmarkAppUsers`](#@cdktf/provider-okta.BookmarkAppUsers)[] | *No description.* |
+| [`usersInput`](#cdktfprovideroktabookmarkapppropertyusersinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.BookmarkAppUsers`](#@cdktf/provider-okta.BookmarkAppUsers)[] | *No description.* |
 | [`accessibilityErrorRedirectUrl`](#cdktfprovideroktabookmarkapppropertyaccessibilityerrorredirecturl)<span title="Required">*</span> | `string` | *No description.* |
 | [`accessibilityLoginRedirectUrl`](#cdktfprovideroktabookmarkapppropertyaccessibilityloginredirecturl)<span title="Required">*</span> | `string` | *No description.* |
 | [`accessibilitySelfService`](#cdktfprovideroktabookmarkapppropertyaccessibilityselfservice)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
@@ -17288,7 +17288,7 @@ public resetUsers()
 | [`skipUsers`](#cdktfprovideroktabookmarkapppropertyskipusers)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`status`](#cdktfprovideroktabookmarkapppropertystatus)<span title="Required">*</span> | `string` | *No description.* |
 | [`url`](#cdktfprovideroktabookmarkapppropertyurl)<span title="Required">*</span> | `string` | *No description.* |
-| [`users`](#cdktfprovideroktabookmarkapppropertyusers)<span title="Required">*</span> | [`@cdktf/provider-okta.BookmarkAppUsers`](#@cdktf/provider-okta.BookmarkAppUsers)[] | *No description.* |
+| [`users`](#cdktfprovideroktabookmarkapppropertyusers)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.BookmarkAppUsers`](#@cdktf/provider-okta.BookmarkAppUsers)[] | *No description.* |
 
 ---
 
@@ -17505,10 +17505,10 @@ public readonly urlInput: string;
 ##### `usersInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.BookmarkApp.property.usersInput" id="cdktfprovideroktabookmarkapppropertyusersinput"></a>
 
 ```typescript
-public readonly usersInput: BookmarkAppUsers[];
+public readonly usersInput: IResolvable | BookmarkAppUsers[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.BookmarkAppUsers`](#@cdktf/provider-okta.BookmarkAppUsers)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.BookmarkAppUsers`](#@cdktf/provider-okta.BookmarkAppUsers)[]
 
 ---
 
@@ -17685,10 +17685,10 @@ public readonly url: string;
 ##### `users`<sup>Required</sup> <a name="@cdktf/provider-okta.BookmarkApp.property.users" id="cdktfprovideroktabookmarkapppropertyusers"></a>
 
 ```typescript
-public readonly users: BookmarkAppUsers[];
+public readonly users: IResolvable | BookmarkAppUsers[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.BookmarkAppUsers`](#@cdktf/provider-okta.BookmarkAppUsers)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.BookmarkAppUsers`](#@cdktf/provider-okta.BookmarkAppUsers)[]
 
 ---
 
@@ -18485,7 +18485,7 @@ public resetKeyId()
 | [`httpRedirectBinding`](#cdktfprovideroktadataoktaappmetadatasamlpropertyhttpredirectbinding)<span title="Required">*</span> | `string` | *No description.* |
 | [`id`](#cdktfprovideroktadataoktaappmetadatasamlpropertyid)<span title="Required">*</span> | `string` | *No description.* |
 | [`metadata`](#cdktfprovideroktadataoktaappmetadatasamlpropertymetadata)<span title="Required">*</span> | `string` | *No description.* |
-| [`wantAuthnRequestsSigned`](#cdktfprovideroktadataoktaappmetadatasamlpropertywantauthnrequestssigned)<span title="Required">*</span> | `any` | *No description.* |
+| [`wantAuthnRequestsSigned`](#cdktfprovideroktadataoktaappmetadatasamlpropertywantauthnrequestssigned)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`appIdInput`](#cdktfprovideroktadataoktaappmetadatasamlpropertyappidinput) | `string` | *No description.* |
 | [`keyIdInput`](#cdktfprovideroktadataoktaappmetadatasamlpropertykeyidinput) | `string` | *No description.* |
 | [`appId`](#cdktfprovideroktadataoktaappmetadatasamlpropertyappid)<span title="Required">*</span> | `string` | *No description.* |
@@ -18556,10 +18556,10 @@ public readonly metadata: string;
 ##### `wantAuthnRequestsSigned`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAppMetadataSaml.property.wantAuthnRequestsSigned" id="cdktfprovideroktadataoktaappmetadatasamlpropertywantauthnrequestssigned"></a>
 
 ```typescript
-public readonly wantAuthnRequestsSigned: any;
+public readonly wantAuthnRequestsSigned: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -18715,13 +18715,13 @@ public resetSkipUsers()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`autoSubmitToolbar`](#cdktfprovideroktadataoktaappoauthpropertyautosubmittoolbar)<span title="Required">*</span> | `any` | *No description.* |
+| [`autoSubmitToolbar`](#cdktfprovideroktadataoktaappoauthpropertyautosubmittoolbar)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`clientId`](#cdktfprovideroktadataoktaappoauthpropertyclientid)<span title="Required">*</span> | `string` | *No description.* |
 | [`clientUri`](#cdktfprovideroktadataoktaappoauthpropertyclienturi)<span title="Required">*</span> | `string` | *No description.* |
 | [`grantTypes`](#cdktfprovideroktadataoktaappoauthpropertygranttypes)<span title="Required">*</span> | `string`[] | *No description.* |
 | [`groups`](#cdktfprovideroktadataoktaappoauthpropertygroups)<span title="Required">*</span> | `string`[] | *No description.* |
-| [`hideIos`](#cdktfprovideroktadataoktaappoauthpropertyhideios)<span title="Required">*</span> | `any` | *No description.* |
-| [`hideWeb`](#cdktfprovideroktadataoktaappoauthpropertyhideweb)<span title="Required">*</span> | `any` | *No description.* |
+| [`hideIos`](#cdktfprovideroktadataoktaappoauthpropertyhideios)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`hideWeb`](#cdktfprovideroktadataoktaappoauthpropertyhideweb)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`links`](#cdktfprovideroktadataoktaappoauthpropertylinks)<span title="Required">*</span> | `string` | *No description.* |
 | [`loginMode`](#cdktfprovideroktadataoktaappoauthpropertyloginmode)<span title="Required">*</span> | `string` | *No description.* |
 | [`loginScopes`](#cdktfprovideroktadataoktaappoauthpropertyloginscopes)<span title="Required">*</span> | `string`[] | *No description.* |
@@ -18754,10 +18754,10 @@ public resetSkipUsers()
 ##### `autoSubmitToolbar`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAppOauth.property.autoSubmitToolbar" id="cdktfprovideroktadataoktaappoauthpropertyautosubmittoolbar"></a>
 
 ```typescript
-public readonly autoSubmitToolbar: any;
+public readonly autoSubmitToolbar: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -18804,20 +18804,20 @@ public readonly groups: string[];
 ##### `hideIos`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAppOauth.property.hideIos" id="cdktfprovideroktadataoktaappoauthpropertyhideios"></a>
 
 ```typescript
-public readonly hideIos: any;
+public readonly hideIos: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
 ##### `hideWeb`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAppOauth.property.hideWeb" id="cdktfprovideroktadataoktaappoauthpropertyhideweb"></a>
 
 ```typescript
-public readonly hideWeb: any;
+public readonly hideWeb: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -19215,28 +19215,28 @@ public resetSkipUsers()
 | --- | --- | --- |
 | [`accessibilityErrorRedirectUrl`](#cdktfprovideroktadataoktaappsamlpropertyaccessibilityerrorredirecturl)<span title="Required">*</span> | `string` | *No description.* |
 | [`accessibilityLoginRedirectUrl`](#cdktfprovideroktadataoktaappsamlpropertyaccessibilityloginredirecturl)<span title="Required">*</span> | `string` | *No description.* |
-| [`accessibilitySelfService`](#cdktfprovideroktadataoktaappsamlpropertyaccessibilityselfservice)<span title="Required">*</span> | `any` | *No description.* |
+| [`accessibilitySelfService`](#cdktfprovideroktadataoktaappsamlpropertyaccessibilityselfservice)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`acsEndpoints`](#cdktfprovideroktadataoktaappsamlpropertyacsendpoints)<span title="Required">*</span> | `string`[] | *No description.* |
 | [`appSettingsJson`](#cdktfprovideroktadataoktaappsamlpropertyappsettingsjson)<span title="Required">*</span> | `string` | *No description.* |
-| [`assertionSigned`](#cdktfprovideroktadataoktaappsamlpropertyassertionsigned)<span title="Required">*</span> | `any` | *No description.* |
+| [`assertionSigned`](#cdktfprovideroktadataoktaappsamlpropertyassertionsigned)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`audience`](#cdktfprovideroktadataoktaappsamlpropertyaudience)<span title="Required">*</span> | `string` | *No description.* |
 | [`authnContextClassRef`](#cdktfprovideroktadataoktaappsamlpropertyauthncontextclassref)<span title="Required">*</span> | `string` | *No description.* |
-| [`autoSubmitToolbar`](#cdktfprovideroktadataoktaappsamlpropertyautosubmittoolbar)<span title="Required">*</span> | `any` | *No description.* |
+| [`autoSubmitToolbar`](#cdktfprovideroktadataoktaappsamlpropertyautosubmittoolbar)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`defaultRelayState`](#cdktfprovideroktadataoktaappsamlpropertydefaultrelaystate)<span title="Required">*</span> | `string` | *No description.* |
 | [`destination`](#cdktfprovideroktadataoktaappsamlpropertydestination)<span title="Required">*</span> | `string` | *No description.* |
 | [`digestAlgorithm`](#cdktfprovideroktadataoktaappsamlpropertydigestalgorithm)<span title="Required">*</span> | `string` | *No description.* |
 | [`features`](#cdktfprovideroktadataoktaappsamlpropertyfeatures)<span title="Required">*</span> | `string`[] | *No description.* |
 | [`groups`](#cdktfprovideroktadataoktaappsamlpropertygroups)<span title="Required">*</span> | `string`[] | *No description.* |
-| [`hideIos`](#cdktfprovideroktadataoktaappsamlpropertyhideios)<span title="Required">*</span> | `any` | *No description.* |
-| [`hideWeb`](#cdktfprovideroktadataoktaappsamlpropertyhideweb)<span title="Required">*</span> | `any` | *No description.* |
-| [`honorForceAuthn`](#cdktfprovideroktadataoktaappsamlpropertyhonorforceauthn)<span title="Required">*</span> | `any` | *No description.* |
+| [`hideIos`](#cdktfprovideroktadataoktaappsamlpropertyhideios)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`hideWeb`](#cdktfprovideroktadataoktaappsamlpropertyhideweb)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`honorForceAuthn`](#cdktfprovideroktadataoktaappsamlpropertyhonorforceauthn)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`idpIssuer`](#cdktfprovideroktadataoktaappsamlpropertyidpissuer)<span title="Required">*</span> | `string` | *No description.* |
 | [`inlineHookId`](#cdktfprovideroktadataoktaappsamlpropertyinlinehookid)<span title="Required">*</span> | `string` | *No description.* |
 | [`keyId`](#cdktfprovideroktadataoktaappsamlpropertykeyid)<span title="Required">*</span> | `string` | *No description.* |
 | [`links`](#cdktfprovideroktadataoktaappsamlpropertylinks)<span title="Required">*</span> | `string` | *No description.* |
 | [`name`](#cdktfprovideroktadataoktaappsamlpropertyname)<span title="Required">*</span> | `string` | *No description.* |
 | [`recipient`](#cdktfprovideroktadataoktaappsamlpropertyrecipient)<span title="Required">*</span> | `string` | *No description.* |
-| [`responseSigned`](#cdktfprovideroktadataoktaappsamlpropertyresponsesigned)<span title="Required">*</span> | `any` | *No description.* |
+| [`responseSigned`](#cdktfprovideroktadataoktaappsamlpropertyresponsesigned)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`signatureAlgorithm`](#cdktfprovideroktadataoktaappsamlpropertysignaturealgorithm)<span title="Required">*</span> | `string` | *No description.* |
 | [`singleLogoutCertificate`](#cdktfprovideroktadataoktaappsamlpropertysinglelogoutcertificate)<span title="Required">*</span> | `string` | *No description.* |
 | [`singleLogoutIssuer`](#cdktfprovideroktadataoktaappsamlpropertysinglelogoutissuer)<span title="Required">*</span> | `string` | *No description.* |
@@ -19291,10 +19291,10 @@ public readonly accessibilityLoginRedirectUrl: string;
 ##### `accessibilitySelfService`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAppSaml.property.accessibilitySelfService" id="cdktfprovideroktadataoktaappsamlpropertyaccessibilityselfservice"></a>
 
 ```typescript
-public readonly accessibilitySelfService: any;
+public readonly accessibilitySelfService: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -19321,10 +19321,10 @@ public readonly appSettingsJson: string;
 ##### `assertionSigned`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAppSaml.property.assertionSigned" id="cdktfprovideroktadataoktaappsamlpropertyassertionsigned"></a>
 
 ```typescript
-public readonly assertionSigned: any;
+public readonly assertionSigned: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -19351,10 +19351,10 @@ public readonly authnContextClassRef: string;
 ##### `autoSubmitToolbar`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAppSaml.property.autoSubmitToolbar" id="cdktfprovideroktadataoktaappsamlpropertyautosubmittoolbar"></a>
 
 ```typescript
-public readonly autoSubmitToolbar: any;
+public readonly autoSubmitToolbar: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -19411,30 +19411,30 @@ public readonly groups: string[];
 ##### `hideIos`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAppSaml.property.hideIos" id="cdktfprovideroktadataoktaappsamlpropertyhideios"></a>
 
 ```typescript
-public readonly hideIos: any;
+public readonly hideIos: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
 ##### `hideWeb`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAppSaml.property.hideWeb" id="cdktfprovideroktadataoktaappsamlpropertyhideweb"></a>
 
 ```typescript
-public readonly hideWeb: any;
+public readonly hideWeb: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
 ##### `honorForceAuthn`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAppSaml.property.honorForceAuthn" id="cdktfprovideroktadataoktaappsamlpropertyhonorforceauthn"></a>
 
 ```typescript
-public readonly honorForceAuthn: any;
+public readonly honorForceAuthn: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -19501,10 +19501,10 @@ public readonly recipient: string;
 ##### `responseSigned`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAppSaml.property.responseSigned" id="cdktfprovideroktadataoktaappsamlpropertyresponsesigned"></a>
 
 ```typescript
-public readonly responseSigned: any;
+public readonly responseSigned: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -20530,7 +20530,7 @@ public resetName()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`alwaysIncludeInToken`](#cdktfprovideroktadataoktaauthserverclaimpropertyalwaysincludeintoken)<span title="Required">*</span> | `any` | *No description.* |
+| [`alwaysIncludeInToken`](#cdktfprovideroktadataoktaauthserverclaimpropertyalwaysincludeintoken)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`claimType`](#cdktfprovideroktadataoktaauthserverclaimpropertyclaimtype)<span title="Required">*</span> | `string` | *No description.* |
 | [`scopes`](#cdktfprovideroktadataoktaauthserverclaimpropertyscopes)<span title="Required">*</span> | `string`[] | *No description.* |
 | [`status`](#cdktfprovideroktadataoktaauthserverclaimpropertystatus)<span title="Required">*</span> | `string` | *No description.* |
@@ -20548,10 +20548,10 @@ public resetName()
 ##### `alwaysIncludeInToken`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAuthServerClaim.property.alwaysIncludeInToken" id="cdktfprovideroktadataoktaauthserverclaimpropertyalwaysincludeintoken"></a>
 
 ```typescript
-public readonly alwaysIncludeInToken: any;
+public readonly alwaysIncludeInToken: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -22135,8 +22135,8 @@ public resetIdpId()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`assertionsSigned`](#cdktfprovideroktadataoktaidpmetadatasamlpropertyassertionssigned)<span title="Required">*</span> | `any` | *No description.* |
-| [`authnRequestSigned`](#cdktfprovideroktadataoktaidpmetadatasamlpropertyauthnrequestsigned)<span title="Required">*</span> | `any` | *No description.* |
+| [`assertionsSigned`](#cdktfprovideroktadataoktaidpmetadatasamlpropertyassertionssigned)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`authnRequestSigned`](#cdktfprovideroktadataoktaidpmetadatasamlpropertyauthnrequestsigned)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`encryptionCertificate`](#cdktfprovideroktadataoktaidpmetadatasamlpropertyencryptioncertificate)<span title="Required">*</span> | `string` | *No description.* |
 | [`entityId`](#cdktfprovideroktadataoktaidpmetadatasamlpropertyentityid)<span title="Required">*</span> | `string` | *No description.* |
 | [`httpPostBinding`](#cdktfprovideroktadataoktaidpmetadatasamlpropertyhttppostbinding)<span title="Required">*</span> | `string` | *No description.* |
@@ -22152,20 +22152,20 @@ public resetIdpId()
 ##### `assertionsSigned`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaIdpMetadataSaml.property.assertionsSigned" id="cdktfprovideroktadataoktaidpmetadatasamlpropertyassertionssigned"></a>
 
 ```typescript
-public readonly assertionsSigned: any;
+public readonly assertionsSigned: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
 ##### `authnRequestSigned`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaIdpMetadataSaml.property.authnRequestSigned" id="cdktfprovideroktadataoktaidpmetadatasamlpropertyauthnrequestsigned"></a>
 
 ```typescript
-public readonly authnRequestSigned: any;
+public readonly authnRequestSigned: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -22926,7 +22926,7 @@ public resetName()
 | [`groupsFilter`](#cdktfprovideroktadataoktaidpsocialpropertygroupsfilter)<span title="Required">*</span> | `string`[] | *No description.* |
 | [`issuerMode`](#cdktfprovideroktadataoktaidpsocialpropertyissuermode)<span title="Required">*</span> | `string` | *No description.* |
 | [`maxClockSkew`](#cdktfprovideroktadataoktaidpsocialpropertymaxclockskew)<span title="Required">*</span> | `number` | *No description.* |
-| [`profileMaster`](#cdktfprovideroktadataoktaidpsocialpropertyprofilemaster)<span title="Required">*</span> | `any` | *No description.* |
+| [`profileMaster`](#cdktfprovideroktadataoktaidpsocialpropertyprofilemaster)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`protocolType`](#cdktfprovideroktadataoktaidpsocialpropertyprotocoltype)<span title="Required">*</span> | `string` | *No description.* |
 | [`provisioningAction`](#cdktfprovideroktadataoktaidpsocialpropertyprovisioningaction)<span title="Required">*</span> | `string` | *No description.* |
 | [`scopes`](#cdktfprovideroktadataoktaidpsocialpropertyscopes)<span title="Required">*</span> | `string`[] | *No description.* |
@@ -23078,10 +23078,10 @@ public readonly maxClockSkew: number;
 ##### `profileMaster`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaIdpSocial.property.profileMaster" id="cdktfprovideroktadataoktaidpsocialpropertyprofilemaster"></a>
 
 ```typescript
-public readonly profileMaster: any;
+public readonly profileMaster: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -23955,9 +23955,9 @@ public resetUserId()
 | [`title`](#cdktfprovideroktadataoktauserpropertytitle)<span title="Required">*</span> | `string` | *No description.* |
 | [`userType`](#cdktfprovideroktadataoktauserpropertyusertype)<span title="Required">*</span> | `string` | *No description.* |
 | [`zipCode`](#cdktfprovideroktadataoktauserpropertyzipcode)<span title="Required">*</span> | `string` | *No description.* |
-| [`searchInput`](#cdktfprovideroktadataoktauserpropertysearchinput) | [`@cdktf/provider-okta.DataOktaUserSearch`](#@cdktf/provider-okta.DataOktaUserSearch)[] | *No description.* |
+| [`searchInput`](#cdktfprovideroktadataoktauserpropertysearchinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.DataOktaUserSearch`](#@cdktf/provider-okta.DataOktaUserSearch)[] | *No description.* |
 | [`userIdInput`](#cdktfprovideroktadataoktauserpropertyuseridinput) | `string` | *No description.* |
-| [`search`](#cdktfprovideroktadataoktauserpropertysearch)<span title="Required">*</span> | [`@cdktf/provider-okta.DataOktaUserSearch`](#@cdktf/provider-okta.DataOktaUserSearch)[] | *No description.* |
+| [`search`](#cdktfprovideroktadataoktauserpropertysearch)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.DataOktaUserSearch`](#@cdktf/provider-okta.DataOktaUserSearch)[] | *No description.* |
 | [`userId`](#cdktfprovideroktadataoktauserpropertyuserid)<span title="Required">*</span> | `string` | *No description.* |
 
 ---
@@ -24325,10 +24325,10 @@ public readonly zipCode: string;
 ##### `searchInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.DataOktaUser.property.searchInput" id="cdktfprovideroktadataoktauserpropertysearchinput"></a>
 
 ```typescript
-public readonly searchInput: DataOktaUserSearch[];
+public readonly searchInput: IResolvable | DataOktaUserSearch[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.DataOktaUserSearch`](#@cdktf/provider-okta.DataOktaUserSearch)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.DataOktaUserSearch`](#@cdktf/provider-okta.DataOktaUserSearch)[]
 
 ---
 
@@ -24345,10 +24345,10 @@ public readonly userIdInput: string;
 ##### `search`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUser.property.search" id="cdktfprovideroktadataoktauserpropertysearch"></a>
 
 ```typescript
-public readonly search: DataOktaUserSearch[];
+public readonly search: IResolvable | DataOktaUserSearch[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.DataOktaUserSearch`](#@cdktf/provider-okta.DataOktaUserSearch)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.DataOktaUserSearch`](#@cdktf/provider-okta.DataOktaUserSearch)[]
 
 ---
 
@@ -24546,8 +24546,8 @@ public users(index: string)
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | [`id`](#cdktfprovideroktadataoktauserspropertyid)<span title="Required">*</span> | `string` | *No description.* |
-| [`searchInput`](#cdktfprovideroktadataoktauserspropertysearchinput) | [`@cdktf/provider-okta.DataOktaUsersSearch`](#@cdktf/provider-okta.DataOktaUsersSearch)[] | *No description.* |
-| [`search`](#cdktfprovideroktadataoktauserspropertysearch)<span title="Required">*</span> | [`@cdktf/provider-okta.DataOktaUsersSearch`](#@cdktf/provider-okta.DataOktaUsersSearch)[] | *No description.* |
+| [`searchInput`](#cdktfprovideroktadataoktauserspropertysearchinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.DataOktaUsersSearch`](#@cdktf/provider-okta.DataOktaUsersSearch)[] | *No description.* |
+| [`search`](#cdktfprovideroktadataoktauserspropertysearch)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.DataOktaUsersSearch`](#@cdktf/provider-okta.DataOktaUsersSearch)[] | *No description.* |
 
 ---
 
@@ -24564,20 +24564,20 @@ public readonly id: string;
 ##### `searchInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.DataOktaUsers.property.searchInput" id="cdktfprovideroktadataoktauserspropertysearchinput"></a>
 
 ```typescript
-public readonly searchInput: DataOktaUsersSearch[];
+public readonly searchInput: IResolvable | DataOktaUsersSearch[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.DataOktaUsersSearch`](#@cdktf/provider-okta.DataOktaUsersSearch)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.DataOktaUsersSearch`](#@cdktf/provider-okta.DataOktaUsersSearch)[]
 
 ---
 
 ##### `search`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsers.property.search" id="cdktfprovideroktadataoktauserspropertysearch"></a>
 
 ```typescript
-public readonly search: DataOktaUsersSearch[];
+public readonly search: IResolvable | DataOktaUsersSearch[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.DataOktaUsersSearch`](#@cdktf/provider-okta.DataOktaUsersSearch)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.DataOktaUsersSearch`](#@cdktf/provider-okta.DataOktaUsersSearch)[]
 
 ---
 
@@ -25677,16 +25677,16 @@ public resetStatus()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | [`id`](#cdktfprovideroktaeventhookpropertyid)<span title="Required">*</span> | `string` | *No description.* |
-| [`authInput`](#cdktfprovideroktaeventhookpropertyauthinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
-| [`channelInput`](#cdktfprovideroktaeventhookpropertychannelinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
+| [`authInput`](#cdktfprovideroktaeventhookpropertyauthinput) | {[ key: string ]: `string`} | *No description.* |
+| [`channelInput`](#cdktfprovideroktaeventhookpropertychannelinput) | {[ key: string ]: `string`} | *No description.* |
 | [`eventsInput`](#cdktfprovideroktaeventhookpropertyeventsinput) | `string`[] | *No description.* |
-| [`headersInput`](#cdktfprovideroktaeventhookpropertyheadersinput) | [`@cdktf/provider-okta.EventHookHeaders`](#@cdktf/provider-okta.EventHookHeaders)[] | *No description.* |
+| [`headersInput`](#cdktfprovideroktaeventhookpropertyheadersinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.EventHookHeaders`](#@cdktf/provider-okta.EventHookHeaders)[] | *No description.* |
 | [`nameInput`](#cdktfprovideroktaeventhookpropertynameinput) | `string` | *No description.* |
 | [`statusInput`](#cdktfprovideroktaeventhookpropertystatusinput) | `string` | *No description.* |
-| [`auth`](#cdktfprovideroktaeventhookpropertyauth)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
-| [`channel`](#cdktfprovideroktaeventhookpropertychannel)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
+| [`auth`](#cdktfprovideroktaeventhookpropertyauth)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
+| [`channel`](#cdktfprovideroktaeventhookpropertychannel)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
 | [`events`](#cdktfprovideroktaeventhookpropertyevents)<span title="Required">*</span> | `string`[] | *No description.* |
-| [`headers`](#cdktfprovideroktaeventhookpropertyheaders)<span title="Required">*</span> | [`@cdktf/provider-okta.EventHookHeaders`](#@cdktf/provider-okta.EventHookHeaders)[] | *No description.* |
+| [`headers`](#cdktfprovideroktaeventhookpropertyheaders)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.EventHookHeaders`](#@cdktf/provider-okta.EventHookHeaders)[] | *No description.* |
 | [`name`](#cdktfprovideroktaeventhookpropertyname)<span title="Required">*</span> | `string` | *No description.* |
 | [`status`](#cdktfprovideroktaeventhookpropertystatus)<span title="Required">*</span> | `string` | *No description.* |
 
@@ -25705,20 +25705,20 @@ public readonly id: string;
 ##### `authInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.EventHook.property.authInput" id="cdktfprovideroktaeventhookpropertyauthinput"></a>
 
 ```typescript
-public readonly authInput: IResolvable | {[ key: string ]: string};
+public readonly authInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `channelInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.EventHook.property.channelInput" id="cdktfprovideroktaeventhookpropertychannelinput"></a>
 
 ```typescript
-public readonly channelInput: IResolvable | {[ key: string ]: string};
+public readonly channelInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -25735,10 +25735,10 @@ public readonly eventsInput: string[];
 ##### `headersInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.EventHook.property.headersInput" id="cdktfprovideroktaeventhookpropertyheadersinput"></a>
 
 ```typescript
-public readonly headersInput: EventHookHeaders[];
+public readonly headersInput: IResolvable | EventHookHeaders[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.EventHookHeaders`](#@cdktf/provider-okta.EventHookHeaders)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.EventHookHeaders`](#@cdktf/provider-okta.EventHookHeaders)[]
 
 ---
 
@@ -25765,20 +25765,20 @@ public readonly statusInput: string;
 ##### `auth`<sup>Required</sup> <a name="@cdktf/provider-okta.EventHook.property.auth" id="cdktfprovideroktaeventhookpropertyauth"></a>
 
 ```typescript
-public readonly auth: IResolvable | {[ key: string ]: string};
+public readonly auth: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `channel`<sup>Required</sup> <a name="@cdktf/provider-okta.EventHook.property.channel" id="cdktfprovideroktaeventhookpropertychannel"></a>
 
 ```typescript
-public readonly channel: IResolvable | {[ key: string ]: string};
+public readonly channel: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -25795,10 +25795,10 @@ public readonly events: string[];
 ##### `headers`<sup>Required</sup> <a name="@cdktf/provider-okta.EventHook.property.headers" id="cdktfprovideroktaeventhookpropertyheaders"></a>
 
 ```typescript
-public readonly headers: EventHookHeaders[];
+public readonly headers: IResolvable | EventHookHeaders[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.EventHookHeaders`](#@cdktf/provider-okta.EventHookHeaders)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.EventHookHeaders`](#@cdktf/provider-okta.EventHookHeaders)[]
 
 ---
 
@@ -27574,7 +27574,7 @@ public resetUnique()
 | --- | --- | --- |
 | [`id`](#cdktfprovideroktagroupschemapropertypropertyid)<span title="Required">*</span> | `string` | *No description.* |
 | [`arrayEnumInput`](#cdktfprovideroktagroupschemapropertypropertyarrayenuminput) | `string`[] | *No description.* |
-| [`arrayOneOfInput`](#cdktfprovideroktagroupschemapropertypropertyarrayoneofinput) | [`@cdktf/provider-okta.GroupSchemaPropertyArrayOneOf`](#@cdktf/provider-okta.GroupSchemaPropertyArrayOneOf)[] | *No description.* |
+| [`arrayOneOfInput`](#cdktfprovideroktagroupschemapropertypropertyarrayoneofinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.GroupSchemaPropertyArrayOneOf`](#@cdktf/provider-okta.GroupSchemaPropertyArrayOneOf)[] | *No description.* |
 | [`arrayTypeInput`](#cdktfprovideroktagroupschemapropertypropertyarraytypeinput) | `string` | *No description.* |
 | [`descriptionInput`](#cdktfprovideroktagroupschemapropertypropertydescriptioninput) | `string` | *No description.* |
 | [`enumInput`](#cdktfprovideroktagroupschemapropertypropertyenuminput) | `string`[] | *No description.* |
@@ -27582,10 +27582,10 @@ public resetUnique()
 | [`externalNamespaceInput`](#cdktfprovideroktagroupschemapropertypropertyexternalnamespaceinput) | `string` | *No description.* |
 | [`indexInput`](#cdktfprovideroktagroupschemapropertypropertyindexinput) | `string` | *No description.* |
 | [`masterInput`](#cdktfprovideroktagroupschemapropertypropertymasterinput) | `string` | *No description.* |
-| [`masterOverridePriorityInput`](#cdktfprovideroktagroupschemapropertypropertymasteroverridepriorityinput) | [`@cdktf/provider-okta.GroupSchemaPropertyMasterOverridePriority`](#@cdktf/provider-okta.GroupSchemaPropertyMasterOverridePriority)[] | *No description.* |
+| [`masterOverridePriorityInput`](#cdktfprovideroktagroupschemapropertypropertymasteroverridepriorityinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.GroupSchemaPropertyMasterOverridePriority`](#@cdktf/provider-okta.GroupSchemaPropertyMasterOverridePriority)[] | *No description.* |
 | [`maxLengthInput`](#cdktfprovideroktagroupschemapropertypropertymaxlengthinput) | `number` | *No description.* |
 | [`minLengthInput`](#cdktfprovideroktagroupschemapropertypropertyminlengthinput) | `number` | *No description.* |
-| [`oneOfInput`](#cdktfprovideroktagroupschemapropertypropertyoneofinput) | [`@cdktf/provider-okta.GroupSchemaPropertyOneOf`](#@cdktf/provider-okta.GroupSchemaPropertyOneOf)[] | *No description.* |
+| [`oneOfInput`](#cdktfprovideroktagroupschemapropertypropertyoneofinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.GroupSchemaPropertyOneOf`](#@cdktf/provider-okta.GroupSchemaPropertyOneOf)[] | *No description.* |
 | [`permissionsInput`](#cdktfprovideroktagroupschemapropertypropertypermissionsinput) | `string` | *No description.* |
 | [`requiredInput`](#cdktfprovideroktagroupschemapropertypropertyrequiredinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`scopeInput`](#cdktfprovideroktagroupschemapropertypropertyscopeinput) | `string` | *No description.* |
@@ -27593,7 +27593,7 @@ public resetUnique()
 | [`typeInput`](#cdktfprovideroktagroupschemapropertypropertytypeinput) | `string` | *No description.* |
 | [`uniqueInput`](#cdktfprovideroktagroupschemapropertypropertyuniqueinput) | `string` | *No description.* |
 | [`arrayEnum`](#cdktfprovideroktagroupschemapropertypropertyarrayenum)<span title="Required">*</span> | `string`[] | *No description.* |
-| [`arrayOneOf`](#cdktfprovideroktagroupschemapropertypropertyarrayoneof)<span title="Required">*</span> | [`@cdktf/provider-okta.GroupSchemaPropertyArrayOneOf`](#@cdktf/provider-okta.GroupSchemaPropertyArrayOneOf)[] | *No description.* |
+| [`arrayOneOf`](#cdktfprovideroktagroupschemapropertypropertyarrayoneof)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.GroupSchemaPropertyArrayOneOf`](#@cdktf/provider-okta.GroupSchemaPropertyArrayOneOf)[] | *No description.* |
 | [`arrayType`](#cdktfprovideroktagroupschemapropertypropertyarraytype)<span title="Required">*</span> | `string` | *No description.* |
 | [`description`](#cdktfprovideroktagroupschemapropertypropertydescription)<span title="Required">*</span> | `string` | *No description.* |
 | [`enum`](#cdktfprovideroktagroupschemapropertypropertyenum)<span title="Required">*</span> | `string`[] | *No description.* |
@@ -27601,10 +27601,10 @@ public resetUnique()
 | [`externalNamespace`](#cdktfprovideroktagroupschemapropertypropertyexternalnamespace)<span title="Required">*</span> | `string` | *No description.* |
 | [`index`](#cdktfprovideroktagroupschemapropertypropertyindex)<span title="Required">*</span> | `string` | *No description.* |
 | [`master`](#cdktfprovideroktagroupschemapropertypropertymaster)<span title="Required">*</span> | `string` | *No description.* |
-| [`masterOverridePriority`](#cdktfprovideroktagroupschemapropertypropertymasteroverridepriority)<span title="Required">*</span> | [`@cdktf/provider-okta.GroupSchemaPropertyMasterOverridePriority`](#@cdktf/provider-okta.GroupSchemaPropertyMasterOverridePriority)[] | *No description.* |
+| [`masterOverridePriority`](#cdktfprovideroktagroupschemapropertypropertymasteroverridepriority)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.GroupSchemaPropertyMasterOverridePriority`](#@cdktf/provider-okta.GroupSchemaPropertyMasterOverridePriority)[] | *No description.* |
 | [`maxLength`](#cdktfprovideroktagroupschemapropertypropertymaxlength)<span title="Required">*</span> | `number` | *No description.* |
 | [`minLength`](#cdktfprovideroktagroupschemapropertypropertyminlength)<span title="Required">*</span> | `number` | *No description.* |
-| [`oneOf`](#cdktfprovideroktagroupschemapropertypropertyoneof)<span title="Required">*</span> | [`@cdktf/provider-okta.GroupSchemaPropertyOneOf`](#@cdktf/provider-okta.GroupSchemaPropertyOneOf)[] | *No description.* |
+| [`oneOf`](#cdktfprovideroktagroupschemapropertypropertyoneof)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.GroupSchemaPropertyOneOf`](#@cdktf/provider-okta.GroupSchemaPropertyOneOf)[] | *No description.* |
 | [`permissions`](#cdktfprovideroktagroupschemapropertypropertypermissions)<span title="Required">*</span> | `string` | *No description.* |
 | [`required`](#cdktfprovideroktagroupschemapropertypropertyrequired)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`scope`](#cdktfprovideroktagroupschemapropertypropertyscope)<span title="Required">*</span> | `string` | *No description.* |
@@ -27637,10 +27637,10 @@ public readonly arrayEnumInput: string[];
 ##### `arrayOneOfInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.GroupSchemaProperty.property.arrayOneOfInput" id="cdktfprovideroktagroupschemapropertypropertyarrayoneofinput"></a>
 
 ```typescript
-public readonly arrayOneOfInput: GroupSchemaPropertyArrayOneOf[];
+public readonly arrayOneOfInput: IResolvable | GroupSchemaPropertyArrayOneOf[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.GroupSchemaPropertyArrayOneOf`](#@cdktf/provider-okta.GroupSchemaPropertyArrayOneOf)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.GroupSchemaPropertyArrayOneOf`](#@cdktf/provider-okta.GroupSchemaPropertyArrayOneOf)[]
 
 ---
 
@@ -27717,10 +27717,10 @@ public readonly masterInput: string;
 ##### `masterOverridePriorityInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.GroupSchemaProperty.property.masterOverridePriorityInput" id="cdktfprovideroktagroupschemapropertypropertymasteroverridepriorityinput"></a>
 
 ```typescript
-public readonly masterOverridePriorityInput: GroupSchemaPropertyMasterOverridePriority[];
+public readonly masterOverridePriorityInput: IResolvable | GroupSchemaPropertyMasterOverridePriority[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.GroupSchemaPropertyMasterOverridePriority`](#@cdktf/provider-okta.GroupSchemaPropertyMasterOverridePriority)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.GroupSchemaPropertyMasterOverridePriority`](#@cdktf/provider-okta.GroupSchemaPropertyMasterOverridePriority)[]
 
 ---
 
@@ -27747,10 +27747,10 @@ public readonly minLengthInput: number;
 ##### `oneOfInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.GroupSchemaProperty.property.oneOfInput" id="cdktfprovideroktagroupschemapropertypropertyoneofinput"></a>
 
 ```typescript
-public readonly oneOfInput: GroupSchemaPropertyOneOf[];
+public readonly oneOfInput: IResolvable | GroupSchemaPropertyOneOf[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.GroupSchemaPropertyOneOf`](#@cdktf/provider-okta.GroupSchemaPropertyOneOf)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.GroupSchemaPropertyOneOf`](#@cdktf/provider-okta.GroupSchemaPropertyOneOf)[]
 
 ---
 
@@ -27827,10 +27827,10 @@ public readonly arrayEnum: string[];
 ##### `arrayOneOf`<sup>Required</sup> <a name="@cdktf/provider-okta.GroupSchemaProperty.property.arrayOneOf" id="cdktfprovideroktagroupschemapropertypropertyarrayoneof"></a>
 
 ```typescript
-public readonly arrayOneOf: GroupSchemaPropertyArrayOneOf[];
+public readonly arrayOneOf: IResolvable | GroupSchemaPropertyArrayOneOf[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.GroupSchemaPropertyArrayOneOf`](#@cdktf/provider-okta.GroupSchemaPropertyArrayOneOf)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.GroupSchemaPropertyArrayOneOf`](#@cdktf/provider-okta.GroupSchemaPropertyArrayOneOf)[]
 
 ---
 
@@ -27907,10 +27907,10 @@ public readonly master: string;
 ##### `masterOverridePriority`<sup>Required</sup> <a name="@cdktf/provider-okta.GroupSchemaProperty.property.masterOverridePriority" id="cdktfprovideroktagroupschemapropertypropertymasteroverridepriority"></a>
 
 ```typescript
-public readonly masterOverridePriority: GroupSchemaPropertyMasterOverridePriority[];
+public readonly masterOverridePriority: IResolvable | GroupSchemaPropertyMasterOverridePriority[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.GroupSchemaPropertyMasterOverridePriority`](#@cdktf/provider-okta.GroupSchemaPropertyMasterOverridePriority)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.GroupSchemaPropertyMasterOverridePriority`](#@cdktf/provider-okta.GroupSchemaPropertyMasterOverridePriority)[]
 
 ---
 
@@ -27937,10 +27937,10 @@ public readonly minLength: number;
 ##### `oneOf`<sup>Required</sup> <a name="@cdktf/provider-okta.GroupSchemaProperty.property.oneOf" id="cdktfprovideroktagroupschemapropertypropertyoneof"></a>
 
 ```typescript
-public readonly oneOf: GroupSchemaPropertyOneOf[];
+public readonly oneOf: IResolvable | GroupSchemaPropertyOneOf[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.GroupSchemaPropertyOneOf`](#@cdktf/provider-okta.GroupSchemaPropertyOneOf)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.GroupSchemaPropertyOneOf`](#@cdktf/provider-okta.GroupSchemaPropertyOneOf)[]
 
 ---
 
@@ -32253,16 +32253,16 @@ public resetStatus()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | [`id`](#cdktfprovideroktainlinehookpropertyid)<span title="Required">*</span> | `string` | *No description.* |
-| [`authInput`](#cdktfprovideroktainlinehookpropertyauthinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
-| [`channelInput`](#cdktfprovideroktainlinehookpropertychannelinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
-| [`headersInput`](#cdktfprovideroktainlinehookpropertyheadersinput) | [`@cdktf/provider-okta.InlineHookHeaders`](#@cdktf/provider-okta.InlineHookHeaders)[] | *No description.* |
+| [`authInput`](#cdktfprovideroktainlinehookpropertyauthinput) | {[ key: string ]: `string`} | *No description.* |
+| [`channelInput`](#cdktfprovideroktainlinehookpropertychannelinput) | {[ key: string ]: `string`} | *No description.* |
+| [`headersInput`](#cdktfprovideroktainlinehookpropertyheadersinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.InlineHookHeaders`](#@cdktf/provider-okta.InlineHookHeaders)[] | *No description.* |
 | [`nameInput`](#cdktfprovideroktainlinehookpropertynameinput) | `string` | *No description.* |
 | [`statusInput`](#cdktfprovideroktainlinehookpropertystatusinput) | `string` | *No description.* |
 | [`typeInput`](#cdktfprovideroktainlinehookpropertytypeinput) | `string` | *No description.* |
 | [`versionInput`](#cdktfprovideroktainlinehookpropertyversioninput) | `string` | *No description.* |
-| [`auth`](#cdktfprovideroktainlinehookpropertyauth)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
-| [`channel`](#cdktfprovideroktainlinehookpropertychannel)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
-| [`headers`](#cdktfprovideroktainlinehookpropertyheaders)<span title="Required">*</span> | [`@cdktf/provider-okta.InlineHookHeaders`](#@cdktf/provider-okta.InlineHookHeaders)[] | *No description.* |
+| [`auth`](#cdktfprovideroktainlinehookpropertyauth)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
+| [`channel`](#cdktfprovideroktainlinehookpropertychannel)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
+| [`headers`](#cdktfprovideroktainlinehookpropertyheaders)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.InlineHookHeaders`](#@cdktf/provider-okta.InlineHookHeaders)[] | *No description.* |
 | [`name`](#cdktfprovideroktainlinehookpropertyname)<span title="Required">*</span> | `string` | *No description.* |
 | [`status`](#cdktfprovideroktainlinehookpropertystatus)<span title="Required">*</span> | `string` | *No description.* |
 | [`type`](#cdktfprovideroktainlinehookpropertytype)<span title="Required">*</span> | `string` | *No description.* |
@@ -32283,30 +32283,30 @@ public readonly id: string;
 ##### `authInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.InlineHook.property.authInput" id="cdktfprovideroktainlinehookpropertyauthinput"></a>
 
 ```typescript
-public readonly authInput: IResolvable | {[ key: string ]: string};
+public readonly authInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `channelInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.InlineHook.property.channelInput" id="cdktfprovideroktainlinehookpropertychannelinput"></a>
 
 ```typescript
-public readonly channelInput: IResolvable | {[ key: string ]: string};
+public readonly channelInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `headersInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.InlineHook.property.headersInput" id="cdktfprovideroktainlinehookpropertyheadersinput"></a>
 
 ```typescript
-public readonly headersInput: InlineHookHeaders[];
+public readonly headersInput: IResolvable | InlineHookHeaders[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.InlineHookHeaders`](#@cdktf/provider-okta.InlineHookHeaders)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.InlineHookHeaders`](#@cdktf/provider-okta.InlineHookHeaders)[]
 
 ---
 
@@ -32353,30 +32353,30 @@ public readonly versionInput: string;
 ##### `auth`<sup>Required</sup> <a name="@cdktf/provider-okta.InlineHook.property.auth" id="cdktfprovideroktainlinehookpropertyauth"></a>
 
 ```typescript
-public readonly auth: IResolvable | {[ key: string ]: string};
+public readonly auth: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `channel`<sup>Required</sup> <a name="@cdktf/provider-okta.InlineHook.property.channel" id="cdktfprovideroktainlinehookpropertychannel"></a>
 
 ```typescript
-public readonly channel: IResolvable | {[ key: string ]: string};
+public readonly channel: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `headers`<sup>Required</sup> <a name="@cdktf/provider-okta.InlineHook.property.headers" id="cdktfprovideroktainlinehookpropertyheaders"></a>
 
 ```typescript
-public readonly headers: InlineHookHeaders[];
+public readonly headers: IResolvable | InlineHookHeaders[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.InlineHookHeaders`](#@cdktf/provider-okta.InlineHookHeaders)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.InlineHookHeaders`](#@cdktf/provider-okta.InlineHookHeaders)[]
 
 ---
 
@@ -32992,45 +32992,45 @@ public resetYubikeyToken()
 | --- | --- | --- |
 | [`id`](#cdktfprovideroktamfapolicypropertyid)<span title="Required">*</span> | `string` | *No description.* |
 | [`descriptionInput`](#cdktfprovideroktamfapolicypropertydescriptioninput) | `string` | *No description.* |
-| [`duoInput`](#cdktfprovideroktamfapolicypropertyduoinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
-| [`fidoU2FInput`](#cdktfprovideroktamfapolicypropertyfidou2finput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
-| [`fidoWebauthnInput`](#cdktfprovideroktamfapolicypropertyfidowebauthninput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
-| [`googleOtpInput`](#cdktfprovideroktamfapolicypropertygoogleotpinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
+| [`duoInput`](#cdktfprovideroktamfapolicypropertyduoinput) | {[ key: string ]: `string`} | *No description.* |
+| [`fidoU2FInput`](#cdktfprovideroktamfapolicypropertyfidou2finput) | {[ key: string ]: `string`} | *No description.* |
+| [`fidoWebauthnInput`](#cdktfprovideroktamfapolicypropertyfidowebauthninput) | {[ key: string ]: `string`} | *No description.* |
+| [`googleOtpInput`](#cdktfprovideroktamfapolicypropertygoogleotpinput) | {[ key: string ]: `string`} | *No description.* |
 | [`groupsIncludedInput`](#cdktfprovideroktamfapolicypropertygroupsincludedinput) | `string`[] | *No description.* |
-| [`hotpInput`](#cdktfprovideroktamfapolicypropertyhotpinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
+| [`hotpInput`](#cdktfprovideroktamfapolicypropertyhotpinput) | {[ key: string ]: `string`} | *No description.* |
 | [`nameInput`](#cdktfprovideroktamfapolicypropertynameinput) | `string` | *No description.* |
-| [`oktaCallInput`](#cdktfprovideroktamfapolicypropertyoktacallinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
-| [`oktaEmailInput`](#cdktfprovideroktamfapolicypropertyoktaemailinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
-| [`oktaOtpInput`](#cdktfprovideroktamfapolicypropertyoktaotpinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
-| [`oktaPasswordInput`](#cdktfprovideroktamfapolicypropertyoktapasswordinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
-| [`oktaPushInput`](#cdktfprovideroktamfapolicypropertyoktapushinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
-| [`oktaQuestionInput`](#cdktfprovideroktamfapolicypropertyoktaquestioninput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
-| [`oktaSmsInput`](#cdktfprovideroktamfapolicypropertyoktasmsinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
+| [`oktaCallInput`](#cdktfprovideroktamfapolicypropertyoktacallinput) | {[ key: string ]: `string`} | *No description.* |
+| [`oktaEmailInput`](#cdktfprovideroktamfapolicypropertyoktaemailinput) | {[ key: string ]: `string`} | *No description.* |
+| [`oktaOtpInput`](#cdktfprovideroktamfapolicypropertyoktaotpinput) | {[ key: string ]: `string`} | *No description.* |
+| [`oktaPasswordInput`](#cdktfprovideroktamfapolicypropertyoktapasswordinput) | {[ key: string ]: `string`} | *No description.* |
+| [`oktaPushInput`](#cdktfprovideroktamfapolicypropertyoktapushinput) | {[ key: string ]: `string`} | *No description.* |
+| [`oktaQuestionInput`](#cdktfprovideroktamfapolicypropertyoktaquestioninput) | {[ key: string ]: `string`} | *No description.* |
+| [`oktaSmsInput`](#cdktfprovideroktamfapolicypropertyoktasmsinput) | {[ key: string ]: `string`} | *No description.* |
 | [`priorityInput`](#cdktfprovideroktamfapolicypropertypriorityinput) | `number` | *No description.* |
-| [`rsaTokenInput`](#cdktfprovideroktamfapolicypropertyrsatokeninput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
+| [`rsaTokenInput`](#cdktfprovideroktamfapolicypropertyrsatokeninput) | {[ key: string ]: `string`} | *No description.* |
 | [`statusInput`](#cdktfprovideroktamfapolicypropertystatusinput) | `string` | *No description.* |
-| [`symantecVipInput`](#cdktfprovideroktamfapolicypropertysymantecvipinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
-| [`yubikeyTokenInput`](#cdktfprovideroktamfapolicypropertyyubikeytokeninput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
+| [`symantecVipInput`](#cdktfprovideroktamfapolicypropertysymantecvipinput) | {[ key: string ]: `string`} | *No description.* |
+| [`yubikeyTokenInput`](#cdktfprovideroktamfapolicypropertyyubikeytokeninput) | {[ key: string ]: `string`} | *No description.* |
 | [`description`](#cdktfprovideroktamfapolicypropertydescription)<span title="Required">*</span> | `string` | *No description.* |
-| [`duo`](#cdktfprovideroktamfapolicypropertyduo)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
-| [`fidoU2F`](#cdktfprovideroktamfapolicypropertyfidou2f)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
-| [`fidoWebauthn`](#cdktfprovideroktamfapolicypropertyfidowebauthn)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
-| [`googleOtp`](#cdktfprovideroktamfapolicypropertygoogleotp)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
+| [`duo`](#cdktfprovideroktamfapolicypropertyduo)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
+| [`fidoU2F`](#cdktfprovideroktamfapolicypropertyfidou2f)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
+| [`fidoWebauthn`](#cdktfprovideroktamfapolicypropertyfidowebauthn)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
+| [`googleOtp`](#cdktfprovideroktamfapolicypropertygoogleotp)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
 | [`groupsIncluded`](#cdktfprovideroktamfapolicypropertygroupsincluded)<span title="Required">*</span> | `string`[] | *No description.* |
-| [`hotp`](#cdktfprovideroktamfapolicypropertyhotp)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
+| [`hotp`](#cdktfprovideroktamfapolicypropertyhotp)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
 | [`name`](#cdktfprovideroktamfapolicypropertyname)<span title="Required">*</span> | `string` | *No description.* |
-| [`oktaCall`](#cdktfprovideroktamfapolicypropertyoktacall)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
-| [`oktaEmail`](#cdktfprovideroktamfapolicypropertyoktaemail)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
-| [`oktaOtp`](#cdktfprovideroktamfapolicypropertyoktaotp)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
-| [`oktaPassword`](#cdktfprovideroktamfapolicypropertyoktapassword)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
-| [`oktaPush`](#cdktfprovideroktamfapolicypropertyoktapush)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
-| [`oktaQuestion`](#cdktfprovideroktamfapolicypropertyoktaquestion)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
-| [`oktaSms`](#cdktfprovideroktamfapolicypropertyoktasms)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
+| [`oktaCall`](#cdktfprovideroktamfapolicypropertyoktacall)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
+| [`oktaEmail`](#cdktfprovideroktamfapolicypropertyoktaemail)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
+| [`oktaOtp`](#cdktfprovideroktamfapolicypropertyoktaotp)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
+| [`oktaPassword`](#cdktfprovideroktamfapolicypropertyoktapassword)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
+| [`oktaPush`](#cdktfprovideroktamfapolicypropertyoktapush)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
+| [`oktaQuestion`](#cdktfprovideroktamfapolicypropertyoktaquestion)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
+| [`oktaSms`](#cdktfprovideroktamfapolicypropertyoktasms)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
 | [`priority`](#cdktfprovideroktamfapolicypropertypriority)<span title="Required">*</span> | `number` | *No description.* |
-| [`rsaToken`](#cdktfprovideroktamfapolicypropertyrsatoken)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
+| [`rsaToken`](#cdktfprovideroktamfapolicypropertyrsatoken)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
 | [`status`](#cdktfprovideroktamfapolicypropertystatus)<span title="Required">*</span> | `string` | *No description.* |
-| [`symantecVip`](#cdktfprovideroktamfapolicypropertysymantecvip)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
-| [`yubikeyToken`](#cdktfprovideroktamfapolicypropertyyubikeytoken)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
+| [`symantecVip`](#cdktfprovideroktamfapolicypropertysymantecvip)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
+| [`yubikeyToken`](#cdktfprovideroktamfapolicypropertyyubikeytoken)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
 
 ---
 
@@ -33057,40 +33057,40 @@ public readonly descriptionInput: string;
 ##### `duoInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.MfaPolicy.property.duoInput" id="cdktfprovideroktamfapolicypropertyduoinput"></a>
 
 ```typescript
-public readonly duoInput: IResolvable | {[ key: string ]: string};
+public readonly duoInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `fidoU2FInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.MfaPolicy.property.fidoU2FInput" id="cdktfprovideroktamfapolicypropertyfidou2finput"></a>
 
 ```typescript
-public readonly fidoU2FInput: IResolvable | {[ key: string ]: string};
+public readonly fidoU2FInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `fidoWebauthnInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.MfaPolicy.property.fidoWebauthnInput" id="cdktfprovideroktamfapolicypropertyfidowebauthninput"></a>
 
 ```typescript
-public readonly fidoWebauthnInput: IResolvable | {[ key: string ]: string};
+public readonly fidoWebauthnInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `googleOtpInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.MfaPolicy.property.googleOtpInput" id="cdktfprovideroktamfapolicypropertygoogleotpinput"></a>
 
 ```typescript
-public readonly googleOtpInput: IResolvable | {[ key: string ]: string};
+public readonly googleOtpInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -33107,10 +33107,10 @@ public readonly groupsIncludedInput: string[];
 ##### `hotpInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.MfaPolicy.property.hotpInput" id="cdktfprovideroktamfapolicypropertyhotpinput"></a>
 
 ```typescript
-public readonly hotpInput: IResolvable | {[ key: string ]: string};
+public readonly hotpInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -33127,70 +33127,70 @@ public readonly nameInput: string;
 ##### `oktaCallInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.MfaPolicy.property.oktaCallInput" id="cdktfprovideroktamfapolicypropertyoktacallinput"></a>
 
 ```typescript
-public readonly oktaCallInput: IResolvable | {[ key: string ]: string};
+public readonly oktaCallInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `oktaEmailInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.MfaPolicy.property.oktaEmailInput" id="cdktfprovideroktamfapolicypropertyoktaemailinput"></a>
 
 ```typescript
-public readonly oktaEmailInput: IResolvable | {[ key: string ]: string};
+public readonly oktaEmailInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `oktaOtpInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.MfaPolicy.property.oktaOtpInput" id="cdktfprovideroktamfapolicypropertyoktaotpinput"></a>
 
 ```typescript
-public readonly oktaOtpInput: IResolvable | {[ key: string ]: string};
+public readonly oktaOtpInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `oktaPasswordInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.MfaPolicy.property.oktaPasswordInput" id="cdktfprovideroktamfapolicypropertyoktapasswordinput"></a>
 
 ```typescript
-public readonly oktaPasswordInput: IResolvable | {[ key: string ]: string};
+public readonly oktaPasswordInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `oktaPushInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.MfaPolicy.property.oktaPushInput" id="cdktfprovideroktamfapolicypropertyoktapushinput"></a>
 
 ```typescript
-public readonly oktaPushInput: IResolvable | {[ key: string ]: string};
+public readonly oktaPushInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `oktaQuestionInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.MfaPolicy.property.oktaQuestionInput" id="cdktfprovideroktamfapolicypropertyoktaquestioninput"></a>
 
 ```typescript
-public readonly oktaQuestionInput: IResolvable | {[ key: string ]: string};
+public readonly oktaQuestionInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `oktaSmsInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.MfaPolicy.property.oktaSmsInput" id="cdktfprovideroktamfapolicypropertyoktasmsinput"></a>
 
 ```typescript
-public readonly oktaSmsInput: IResolvable | {[ key: string ]: string};
+public readonly oktaSmsInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -33207,10 +33207,10 @@ public readonly priorityInput: number;
 ##### `rsaTokenInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.MfaPolicy.property.rsaTokenInput" id="cdktfprovideroktamfapolicypropertyrsatokeninput"></a>
 
 ```typescript
-public readonly rsaTokenInput: IResolvable | {[ key: string ]: string};
+public readonly rsaTokenInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -33227,20 +33227,20 @@ public readonly statusInput: string;
 ##### `symantecVipInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.MfaPolicy.property.symantecVipInput" id="cdktfprovideroktamfapolicypropertysymantecvipinput"></a>
 
 ```typescript
-public readonly symantecVipInput: IResolvable | {[ key: string ]: string};
+public readonly symantecVipInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `yubikeyTokenInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.MfaPolicy.property.yubikeyTokenInput" id="cdktfprovideroktamfapolicypropertyyubikeytokeninput"></a>
 
 ```typescript
-public readonly yubikeyTokenInput: IResolvable | {[ key: string ]: string};
+public readonly yubikeyTokenInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -33257,40 +33257,40 @@ public readonly description: string;
 ##### `duo`<sup>Required</sup> <a name="@cdktf/provider-okta.MfaPolicy.property.duo" id="cdktfprovideroktamfapolicypropertyduo"></a>
 
 ```typescript
-public readonly duo: IResolvable | {[ key: string ]: string};
+public readonly duo: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `fidoU2F`<sup>Required</sup> <a name="@cdktf/provider-okta.MfaPolicy.property.fidoU2F" id="cdktfprovideroktamfapolicypropertyfidou2f"></a>
 
 ```typescript
-public readonly fidoU2F: IResolvable | {[ key: string ]: string};
+public readonly fidoU2F: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `fidoWebauthn`<sup>Required</sup> <a name="@cdktf/provider-okta.MfaPolicy.property.fidoWebauthn" id="cdktfprovideroktamfapolicypropertyfidowebauthn"></a>
 
 ```typescript
-public readonly fidoWebauthn: IResolvable | {[ key: string ]: string};
+public readonly fidoWebauthn: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `googleOtp`<sup>Required</sup> <a name="@cdktf/provider-okta.MfaPolicy.property.googleOtp" id="cdktfprovideroktamfapolicypropertygoogleotp"></a>
 
 ```typescript
-public readonly googleOtp: IResolvable | {[ key: string ]: string};
+public readonly googleOtp: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -33307,10 +33307,10 @@ public readonly groupsIncluded: string[];
 ##### `hotp`<sup>Required</sup> <a name="@cdktf/provider-okta.MfaPolicy.property.hotp" id="cdktfprovideroktamfapolicypropertyhotp"></a>
 
 ```typescript
-public readonly hotp: IResolvable | {[ key: string ]: string};
+public readonly hotp: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -33327,70 +33327,70 @@ public readonly name: string;
 ##### `oktaCall`<sup>Required</sup> <a name="@cdktf/provider-okta.MfaPolicy.property.oktaCall" id="cdktfprovideroktamfapolicypropertyoktacall"></a>
 
 ```typescript
-public readonly oktaCall: IResolvable | {[ key: string ]: string};
+public readonly oktaCall: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `oktaEmail`<sup>Required</sup> <a name="@cdktf/provider-okta.MfaPolicy.property.oktaEmail" id="cdktfprovideroktamfapolicypropertyoktaemail"></a>
 
 ```typescript
-public readonly oktaEmail: IResolvable | {[ key: string ]: string};
+public readonly oktaEmail: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `oktaOtp`<sup>Required</sup> <a name="@cdktf/provider-okta.MfaPolicy.property.oktaOtp" id="cdktfprovideroktamfapolicypropertyoktaotp"></a>
 
 ```typescript
-public readonly oktaOtp: IResolvable | {[ key: string ]: string};
+public readonly oktaOtp: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `oktaPassword`<sup>Required</sup> <a name="@cdktf/provider-okta.MfaPolicy.property.oktaPassword" id="cdktfprovideroktamfapolicypropertyoktapassword"></a>
 
 ```typescript
-public readonly oktaPassword: IResolvable | {[ key: string ]: string};
+public readonly oktaPassword: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `oktaPush`<sup>Required</sup> <a name="@cdktf/provider-okta.MfaPolicy.property.oktaPush" id="cdktfprovideroktamfapolicypropertyoktapush"></a>
 
 ```typescript
-public readonly oktaPush: IResolvable | {[ key: string ]: string};
+public readonly oktaPush: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `oktaQuestion`<sup>Required</sup> <a name="@cdktf/provider-okta.MfaPolicy.property.oktaQuestion" id="cdktfprovideroktamfapolicypropertyoktaquestion"></a>
 
 ```typescript
-public readonly oktaQuestion: IResolvable | {[ key: string ]: string};
+public readonly oktaQuestion: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `oktaSms`<sup>Required</sup> <a name="@cdktf/provider-okta.MfaPolicy.property.oktaSms" id="cdktfprovideroktamfapolicypropertyoktasms"></a>
 
 ```typescript
-public readonly oktaSms: IResolvable | {[ key: string ]: string};
+public readonly oktaSms: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -33407,10 +33407,10 @@ public readonly priority: number;
 ##### `rsaToken`<sup>Required</sup> <a name="@cdktf/provider-okta.MfaPolicy.property.rsaToken" id="cdktfprovideroktamfapolicypropertyrsatoken"></a>
 
 ```typescript
-public readonly rsaToken: IResolvable | {[ key: string ]: string};
+public readonly rsaToken: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -33427,20 +33427,20 @@ public readonly status: string;
 ##### `symantecVip`<sup>Required</sup> <a name="@cdktf/provider-okta.MfaPolicy.property.symantecVip" id="cdktfprovideroktamfapolicypropertysymantecvip"></a>
 
 ```typescript
-public readonly symantecVip: IResolvable | {[ key: string ]: string};
+public readonly symantecVip: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `yubikeyToken`<sup>Required</sup> <a name="@cdktf/provider-okta.MfaPolicy.property.yubikeyToken" id="cdktfprovideroktamfapolicypropertyyubikeytoken"></a>
 
 ```typescript
-public readonly yubikeyToken: IResolvable | {[ key: string ]: string};
+public readonly yubikeyToken: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -33592,8 +33592,8 @@ public resetUsersExcluded()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | [`id`](#cdktfprovideroktamfapolicyrulepropertyid)<span title="Required">*</span> | `string` | *No description.* |
-| [`appExcludeInput`](#cdktfprovideroktamfapolicyrulepropertyappexcludeinput) | [`@cdktf/provider-okta.MfaPolicyRuleAppExclude`](#@cdktf/provider-okta.MfaPolicyRuleAppExclude)[] | *No description.* |
-| [`appIncludeInput`](#cdktfprovideroktamfapolicyrulepropertyappincludeinput) | [`@cdktf/provider-okta.MfaPolicyRuleAppInclude`](#@cdktf/provider-okta.MfaPolicyRuleAppInclude)[] | *No description.* |
+| [`appExcludeInput`](#cdktfprovideroktamfapolicyrulepropertyappexcludeinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.MfaPolicyRuleAppExclude`](#@cdktf/provider-okta.MfaPolicyRuleAppExclude)[] | *No description.* |
+| [`appIncludeInput`](#cdktfprovideroktamfapolicyrulepropertyappincludeinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.MfaPolicyRuleAppInclude`](#@cdktf/provider-okta.MfaPolicyRuleAppInclude)[] | *No description.* |
 | [`enrollInput`](#cdktfprovideroktamfapolicyrulepropertyenrollinput) | `string` | *No description.* |
 | [`nameInput`](#cdktfprovideroktamfapolicyrulepropertynameinput) | `string` | *No description.* |
 | [`networkConnectionInput`](#cdktfprovideroktamfapolicyrulepropertynetworkconnectioninput) | `string` | *No description.* |
@@ -33604,8 +33604,8 @@ public resetUsersExcluded()
 | [`priorityInput`](#cdktfprovideroktamfapolicyrulepropertypriorityinput) | `number` | *No description.* |
 | [`statusInput`](#cdktfprovideroktamfapolicyrulepropertystatusinput) | `string` | *No description.* |
 | [`usersExcludedInput`](#cdktfprovideroktamfapolicyrulepropertyusersexcludedinput) | `string`[] | *No description.* |
-| [`appExclude`](#cdktfprovideroktamfapolicyrulepropertyappexclude)<span title="Required">*</span> | [`@cdktf/provider-okta.MfaPolicyRuleAppExclude`](#@cdktf/provider-okta.MfaPolicyRuleAppExclude)[] | *No description.* |
-| [`appInclude`](#cdktfprovideroktamfapolicyrulepropertyappinclude)<span title="Required">*</span> | [`@cdktf/provider-okta.MfaPolicyRuleAppInclude`](#@cdktf/provider-okta.MfaPolicyRuleAppInclude)[] | *No description.* |
+| [`appExclude`](#cdktfprovideroktamfapolicyrulepropertyappexclude)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.MfaPolicyRuleAppExclude`](#@cdktf/provider-okta.MfaPolicyRuleAppExclude)[] | *No description.* |
+| [`appInclude`](#cdktfprovideroktamfapolicyrulepropertyappinclude)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.MfaPolicyRuleAppInclude`](#@cdktf/provider-okta.MfaPolicyRuleAppInclude)[] | *No description.* |
 | [`enroll`](#cdktfprovideroktamfapolicyrulepropertyenroll)<span title="Required">*</span> | `string` | *No description.* |
 | [`name`](#cdktfprovideroktamfapolicyrulepropertyname)<span title="Required">*</span> | `string` | *No description.* |
 | [`networkConnection`](#cdktfprovideroktamfapolicyrulepropertynetworkconnection)<span title="Required">*</span> | `string` | *No description.* |
@@ -33632,20 +33632,20 @@ public readonly id: string;
 ##### `appExcludeInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.MfaPolicyRule.property.appExcludeInput" id="cdktfprovideroktamfapolicyrulepropertyappexcludeinput"></a>
 
 ```typescript
-public readonly appExcludeInput: MfaPolicyRuleAppExclude[];
+public readonly appExcludeInput: IResolvable | MfaPolicyRuleAppExclude[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.MfaPolicyRuleAppExclude`](#@cdktf/provider-okta.MfaPolicyRuleAppExclude)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.MfaPolicyRuleAppExclude`](#@cdktf/provider-okta.MfaPolicyRuleAppExclude)[]
 
 ---
 
 ##### `appIncludeInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.MfaPolicyRule.property.appIncludeInput" id="cdktfprovideroktamfapolicyrulepropertyappincludeinput"></a>
 
 ```typescript
-public readonly appIncludeInput: MfaPolicyRuleAppInclude[];
+public readonly appIncludeInput: IResolvable | MfaPolicyRuleAppInclude[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.MfaPolicyRuleAppInclude`](#@cdktf/provider-okta.MfaPolicyRuleAppInclude)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.MfaPolicyRuleAppInclude`](#@cdktf/provider-okta.MfaPolicyRuleAppInclude)[]
 
 ---
 
@@ -33752,20 +33752,20 @@ public readonly usersExcludedInput: string[];
 ##### `appExclude`<sup>Required</sup> <a name="@cdktf/provider-okta.MfaPolicyRule.property.appExclude" id="cdktfprovideroktamfapolicyrulepropertyappexclude"></a>
 
 ```typescript
-public readonly appExclude: MfaPolicyRuleAppExclude[];
+public readonly appExclude: IResolvable | MfaPolicyRuleAppExclude[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.MfaPolicyRuleAppExclude`](#@cdktf/provider-okta.MfaPolicyRuleAppExclude)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.MfaPolicyRuleAppExclude`](#@cdktf/provider-okta.MfaPolicyRuleAppExclude)[]
 
 ---
 
 ##### `appInclude`<sup>Required</sup> <a name="@cdktf/provider-okta.MfaPolicyRule.property.appInclude" id="cdktfprovideroktamfapolicyrulepropertyappinclude"></a>
 
 ```typescript
-public readonly appInclude: MfaPolicyRuleAppInclude[];
+public readonly appInclude: IResolvable | MfaPolicyRuleAppInclude[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.MfaPolicyRuleAppInclude`](#@cdktf/provider-okta.MfaPolicyRuleAppInclude)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.MfaPolicyRuleAppInclude`](#@cdktf/provider-okta.MfaPolicyRuleAppInclude)[]
 
 ---
 
@@ -34603,7 +34603,7 @@ public resetWildcardRedirect()
 | [`hideWebInput`](#cdktfprovideroktaoauthapppropertyhidewebinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`implicitAssignmentInput`](#cdktfprovideroktaoauthapppropertyimplicitassignmentinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`issuerModeInput`](#cdktfprovideroktaoauthapppropertyissuermodeinput) | `string` | *No description.* |
-| [`jwksInput`](#cdktfprovideroktaoauthapppropertyjwksinput) | [`@cdktf/provider-okta.OauthAppJwks`](#@cdktf/provider-okta.OauthAppJwks)[] | *No description.* |
+| [`jwksInput`](#cdktfprovideroktaoauthapppropertyjwksinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.OauthAppJwks`](#@cdktf/provider-okta.OauthAppJwks)[] | *No description.* |
 | [`labelInput`](#cdktfprovideroktaoauthapppropertylabelinput) | `string` | *No description.* |
 | [`loginModeInput`](#cdktfprovideroktaoauthapppropertyloginmodeinput) | `string` | *No description.* |
 | [`loginScopesInput`](#cdktfprovideroktaoauthapppropertyloginscopesinput) | `string`[] | *No description.* |
@@ -34628,7 +34628,7 @@ public resetWildcardRedirect()
 | [`userNameTemplatePushStatusInput`](#cdktfprovideroktaoauthapppropertyusernametemplatepushstatusinput) | `string` | *No description.* |
 | [`userNameTemplateSuffixInput`](#cdktfprovideroktaoauthapppropertyusernametemplatesuffixinput) | `string` | *No description.* |
 | [`userNameTemplateTypeInput`](#cdktfprovideroktaoauthapppropertyusernametemplatetypeinput) | `string` | *No description.* |
-| [`usersInput`](#cdktfprovideroktaoauthapppropertyusersinput) | [`@cdktf/provider-okta.OauthAppUsers`](#@cdktf/provider-okta.OauthAppUsers)[] | *No description.* |
+| [`usersInput`](#cdktfprovideroktaoauthapppropertyusersinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.OauthAppUsers`](#@cdktf/provider-okta.OauthAppUsers)[] | *No description.* |
 | [`wildcardRedirectInput`](#cdktfprovideroktaoauthapppropertywildcardredirectinput) | `string` | *No description.* |
 | [`accessibilityErrorRedirectUrl`](#cdktfprovideroktaoauthapppropertyaccessibilityerrorredirecturl)<span title="Required">*</span> | `string` | *No description.* |
 | [`accessibilityLoginRedirectUrl`](#cdktfprovideroktaoauthapppropertyaccessibilityloginredirecturl)<span title="Required">*</span> | `string` | *No description.* |
@@ -34650,7 +34650,7 @@ public resetWildcardRedirect()
 | [`hideWeb`](#cdktfprovideroktaoauthapppropertyhideweb)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`implicitAssignment`](#cdktfprovideroktaoauthapppropertyimplicitassignment)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`issuerMode`](#cdktfprovideroktaoauthapppropertyissuermode)<span title="Required">*</span> | `string` | *No description.* |
-| [`jwks`](#cdktfprovideroktaoauthapppropertyjwks)<span title="Required">*</span> | [`@cdktf/provider-okta.OauthAppJwks`](#@cdktf/provider-okta.OauthAppJwks)[] | *No description.* |
+| [`jwks`](#cdktfprovideroktaoauthapppropertyjwks)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.OauthAppJwks`](#@cdktf/provider-okta.OauthAppJwks)[] | *No description.* |
 | [`label`](#cdktfprovideroktaoauthapppropertylabel)<span title="Required">*</span> | `string` | *No description.* |
 | [`loginMode`](#cdktfprovideroktaoauthapppropertyloginmode)<span title="Required">*</span> | `string` | *No description.* |
 | [`loginScopes`](#cdktfprovideroktaoauthapppropertyloginscopes)<span title="Required">*</span> | `string`[] | *No description.* |
@@ -34675,7 +34675,7 @@ public resetWildcardRedirect()
 | [`userNameTemplatePushStatus`](#cdktfprovideroktaoauthapppropertyusernametemplatepushstatus)<span title="Required">*</span> | `string` | *No description.* |
 | [`userNameTemplateSuffix`](#cdktfprovideroktaoauthapppropertyusernametemplatesuffix)<span title="Required">*</span> | `string` | *No description.* |
 | [`userNameTemplateType`](#cdktfprovideroktaoauthapppropertyusernametemplatetype)<span title="Required">*</span> | `string` | *No description.* |
-| [`users`](#cdktfprovideroktaoauthapppropertyusers)<span title="Required">*</span> | [`@cdktf/provider-okta.OauthAppUsers`](#@cdktf/provider-okta.OauthAppUsers)[] | *No description.* |
+| [`users`](#cdktfprovideroktaoauthapppropertyusers)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.OauthAppUsers`](#@cdktf/provider-okta.OauthAppUsers)[] | *No description.* |
 | [`wildcardRedirect`](#cdktfprovideroktaoauthapppropertywildcardredirect)<span title="Required">*</span> | `string` | *No description.* |
 
 ---
@@ -34953,10 +34953,10 @@ public readonly issuerModeInput: string;
 ##### `jwksInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.OauthApp.property.jwksInput" id="cdktfprovideroktaoauthapppropertyjwksinput"></a>
 
 ```typescript
-public readonly jwksInput: OauthAppJwks[];
+public readonly jwksInput: IResolvable | OauthAppJwks[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.OauthAppJwks`](#@cdktf/provider-okta.OauthAppJwks)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.OauthAppJwks`](#@cdktf/provider-okta.OauthAppJwks)[]
 
 ---
 
@@ -35203,10 +35203,10 @@ public readonly userNameTemplateTypeInput: string;
 ##### `usersInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.OauthApp.property.usersInput" id="cdktfprovideroktaoauthapppropertyusersinput"></a>
 
 ```typescript
-public readonly usersInput: OauthAppUsers[];
+public readonly usersInput: IResolvable | OauthAppUsers[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.OauthAppUsers`](#@cdktf/provider-okta.OauthAppUsers)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.OauthAppUsers`](#@cdktf/provider-okta.OauthAppUsers)[]
 
 ---
 
@@ -35423,10 +35423,10 @@ public readonly issuerMode: string;
 ##### `jwks`<sup>Required</sup> <a name="@cdktf/provider-okta.OauthApp.property.jwks" id="cdktfprovideroktaoauthapppropertyjwks"></a>
 
 ```typescript
-public readonly jwks: OauthAppJwks[];
+public readonly jwks: IResolvable | OauthAppJwks[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.OauthAppJwks`](#@cdktf/provider-okta.OauthAppJwks)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.OauthAppJwks`](#@cdktf/provider-okta.OauthAppJwks)[]
 
 ---
 
@@ -35673,10 +35673,10 @@ public readonly userNameTemplateType: string;
 ##### `users`<sup>Required</sup> <a name="@cdktf/provider-okta.OauthApp.property.users" id="cdktfprovideroktaoauthapppropertyusers"></a>
 
 ```typescript
-public readonly users: OauthAppUsers[];
+public readonly users: IResolvable | OauthAppUsers[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.OauthAppUsers`](#@cdktf/provider-okta.OauthAppUsers)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.OauthAppUsers`](#@cdktf/provider-okta.OauthAppUsers)[]
 
 ---
 
@@ -38566,45 +38566,45 @@ public resetYubikeyToken()
 | --- | --- | --- |
 | [`id`](#cdktfprovideroktapolicymfapropertyid)<span title="Required">*</span> | `string` | *No description.* |
 | [`descriptionInput`](#cdktfprovideroktapolicymfapropertydescriptioninput) | `string` | *No description.* |
-| [`duoInput`](#cdktfprovideroktapolicymfapropertyduoinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
-| [`fidoU2FInput`](#cdktfprovideroktapolicymfapropertyfidou2finput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
-| [`fidoWebauthnInput`](#cdktfprovideroktapolicymfapropertyfidowebauthninput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
-| [`googleOtpInput`](#cdktfprovideroktapolicymfapropertygoogleotpinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
+| [`duoInput`](#cdktfprovideroktapolicymfapropertyduoinput) | {[ key: string ]: `string`} | *No description.* |
+| [`fidoU2FInput`](#cdktfprovideroktapolicymfapropertyfidou2finput) | {[ key: string ]: `string`} | *No description.* |
+| [`fidoWebauthnInput`](#cdktfprovideroktapolicymfapropertyfidowebauthninput) | {[ key: string ]: `string`} | *No description.* |
+| [`googleOtpInput`](#cdktfprovideroktapolicymfapropertygoogleotpinput) | {[ key: string ]: `string`} | *No description.* |
 | [`groupsIncludedInput`](#cdktfprovideroktapolicymfapropertygroupsincludedinput) | `string`[] | *No description.* |
-| [`hotpInput`](#cdktfprovideroktapolicymfapropertyhotpinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
+| [`hotpInput`](#cdktfprovideroktapolicymfapropertyhotpinput) | {[ key: string ]: `string`} | *No description.* |
 | [`nameInput`](#cdktfprovideroktapolicymfapropertynameinput) | `string` | *No description.* |
-| [`oktaCallInput`](#cdktfprovideroktapolicymfapropertyoktacallinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
-| [`oktaEmailInput`](#cdktfprovideroktapolicymfapropertyoktaemailinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
-| [`oktaOtpInput`](#cdktfprovideroktapolicymfapropertyoktaotpinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
-| [`oktaPasswordInput`](#cdktfprovideroktapolicymfapropertyoktapasswordinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
-| [`oktaPushInput`](#cdktfprovideroktapolicymfapropertyoktapushinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
-| [`oktaQuestionInput`](#cdktfprovideroktapolicymfapropertyoktaquestioninput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
-| [`oktaSmsInput`](#cdktfprovideroktapolicymfapropertyoktasmsinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
+| [`oktaCallInput`](#cdktfprovideroktapolicymfapropertyoktacallinput) | {[ key: string ]: `string`} | *No description.* |
+| [`oktaEmailInput`](#cdktfprovideroktapolicymfapropertyoktaemailinput) | {[ key: string ]: `string`} | *No description.* |
+| [`oktaOtpInput`](#cdktfprovideroktapolicymfapropertyoktaotpinput) | {[ key: string ]: `string`} | *No description.* |
+| [`oktaPasswordInput`](#cdktfprovideroktapolicymfapropertyoktapasswordinput) | {[ key: string ]: `string`} | *No description.* |
+| [`oktaPushInput`](#cdktfprovideroktapolicymfapropertyoktapushinput) | {[ key: string ]: `string`} | *No description.* |
+| [`oktaQuestionInput`](#cdktfprovideroktapolicymfapropertyoktaquestioninput) | {[ key: string ]: `string`} | *No description.* |
+| [`oktaSmsInput`](#cdktfprovideroktapolicymfapropertyoktasmsinput) | {[ key: string ]: `string`} | *No description.* |
 | [`priorityInput`](#cdktfprovideroktapolicymfapropertypriorityinput) | `number` | *No description.* |
-| [`rsaTokenInput`](#cdktfprovideroktapolicymfapropertyrsatokeninput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
+| [`rsaTokenInput`](#cdktfprovideroktapolicymfapropertyrsatokeninput) | {[ key: string ]: `string`} | *No description.* |
 | [`statusInput`](#cdktfprovideroktapolicymfapropertystatusinput) | `string` | *No description.* |
-| [`symantecVipInput`](#cdktfprovideroktapolicymfapropertysymantecvipinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
-| [`yubikeyTokenInput`](#cdktfprovideroktapolicymfapropertyyubikeytokeninput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
+| [`symantecVipInput`](#cdktfprovideroktapolicymfapropertysymantecvipinput) | {[ key: string ]: `string`} | *No description.* |
+| [`yubikeyTokenInput`](#cdktfprovideroktapolicymfapropertyyubikeytokeninput) | {[ key: string ]: `string`} | *No description.* |
 | [`description`](#cdktfprovideroktapolicymfapropertydescription)<span title="Required">*</span> | `string` | *No description.* |
-| [`duo`](#cdktfprovideroktapolicymfapropertyduo)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
-| [`fidoU2F`](#cdktfprovideroktapolicymfapropertyfidou2f)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
-| [`fidoWebauthn`](#cdktfprovideroktapolicymfapropertyfidowebauthn)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
-| [`googleOtp`](#cdktfprovideroktapolicymfapropertygoogleotp)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
+| [`duo`](#cdktfprovideroktapolicymfapropertyduo)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
+| [`fidoU2F`](#cdktfprovideroktapolicymfapropertyfidou2f)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
+| [`fidoWebauthn`](#cdktfprovideroktapolicymfapropertyfidowebauthn)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
+| [`googleOtp`](#cdktfprovideroktapolicymfapropertygoogleotp)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
 | [`groupsIncluded`](#cdktfprovideroktapolicymfapropertygroupsincluded)<span title="Required">*</span> | `string`[] | *No description.* |
-| [`hotp`](#cdktfprovideroktapolicymfapropertyhotp)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
+| [`hotp`](#cdktfprovideroktapolicymfapropertyhotp)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
 | [`name`](#cdktfprovideroktapolicymfapropertyname)<span title="Required">*</span> | `string` | *No description.* |
-| [`oktaCall`](#cdktfprovideroktapolicymfapropertyoktacall)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
-| [`oktaEmail`](#cdktfprovideroktapolicymfapropertyoktaemail)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
-| [`oktaOtp`](#cdktfprovideroktapolicymfapropertyoktaotp)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
-| [`oktaPassword`](#cdktfprovideroktapolicymfapropertyoktapassword)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
-| [`oktaPush`](#cdktfprovideroktapolicymfapropertyoktapush)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
-| [`oktaQuestion`](#cdktfprovideroktapolicymfapropertyoktaquestion)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
-| [`oktaSms`](#cdktfprovideroktapolicymfapropertyoktasms)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
+| [`oktaCall`](#cdktfprovideroktapolicymfapropertyoktacall)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
+| [`oktaEmail`](#cdktfprovideroktapolicymfapropertyoktaemail)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
+| [`oktaOtp`](#cdktfprovideroktapolicymfapropertyoktaotp)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
+| [`oktaPassword`](#cdktfprovideroktapolicymfapropertyoktapassword)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
+| [`oktaPush`](#cdktfprovideroktapolicymfapropertyoktapush)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
+| [`oktaQuestion`](#cdktfprovideroktapolicymfapropertyoktaquestion)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
+| [`oktaSms`](#cdktfprovideroktapolicymfapropertyoktasms)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
 | [`priority`](#cdktfprovideroktapolicymfapropertypriority)<span title="Required">*</span> | `number` | *No description.* |
-| [`rsaToken`](#cdktfprovideroktapolicymfapropertyrsatoken)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
+| [`rsaToken`](#cdktfprovideroktapolicymfapropertyrsatoken)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
 | [`status`](#cdktfprovideroktapolicymfapropertystatus)<span title="Required">*</span> | `string` | *No description.* |
-| [`symantecVip`](#cdktfprovideroktapolicymfapropertysymantecvip)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
-| [`yubikeyToken`](#cdktfprovideroktapolicymfapropertyyubikeytoken)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
+| [`symantecVip`](#cdktfprovideroktapolicymfapropertysymantecvip)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
+| [`yubikeyToken`](#cdktfprovideroktapolicymfapropertyyubikeytoken)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
 
 ---
 
@@ -38631,40 +38631,40 @@ public readonly descriptionInput: string;
 ##### `duoInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfa.property.duoInput" id="cdktfprovideroktapolicymfapropertyduoinput"></a>
 
 ```typescript
-public readonly duoInput: IResolvable | {[ key: string ]: string};
+public readonly duoInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `fidoU2FInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfa.property.fidoU2FInput" id="cdktfprovideroktapolicymfapropertyfidou2finput"></a>
 
 ```typescript
-public readonly fidoU2FInput: IResolvable | {[ key: string ]: string};
+public readonly fidoU2FInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `fidoWebauthnInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfa.property.fidoWebauthnInput" id="cdktfprovideroktapolicymfapropertyfidowebauthninput"></a>
 
 ```typescript
-public readonly fidoWebauthnInput: IResolvable | {[ key: string ]: string};
+public readonly fidoWebauthnInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `googleOtpInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfa.property.googleOtpInput" id="cdktfprovideroktapolicymfapropertygoogleotpinput"></a>
 
 ```typescript
-public readonly googleOtpInput: IResolvable | {[ key: string ]: string};
+public readonly googleOtpInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -38681,10 +38681,10 @@ public readonly groupsIncludedInput: string[];
 ##### `hotpInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfa.property.hotpInput" id="cdktfprovideroktapolicymfapropertyhotpinput"></a>
 
 ```typescript
-public readonly hotpInput: IResolvable | {[ key: string ]: string};
+public readonly hotpInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -38701,70 +38701,70 @@ public readonly nameInput: string;
 ##### `oktaCallInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfa.property.oktaCallInput" id="cdktfprovideroktapolicymfapropertyoktacallinput"></a>
 
 ```typescript
-public readonly oktaCallInput: IResolvable | {[ key: string ]: string};
+public readonly oktaCallInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `oktaEmailInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfa.property.oktaEmailInput" id="cdktfprovideroktapolicymfapropertyoktaemailinput"></a>
 
 ```typescript
-public readonly oktaEmailInput: IResolvable | {[ key: string ]: string};
+public readonly oktaEmailInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `oktaOtpInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfa.property.oktaOtpInput" id="cdktfprovideroktapolicymfapropertyoktaotpinput"></a>
 
 ```typescript
-public readonly oktaOtpInput: IResolvable | {[ key: string ]: string};
+public readonly oktaOtpInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `oktaPasswordInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfa.property.oktaPasswordInput" id="cdktfprovideroktapolicymfapropertyoktapasswordinput"></a>
 
 ```typescript
-public readonly oktaPasswordInput: IResolvable | {[ key: string ]: string};
+public readonly oktaPasswordInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `oktaPushInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfa.property.oktaPushInput" id="cdktfprovideroktapolicymfapropertyoktapushinput"></a>
 
 ```typescript
-public readonly oktaPushInput: IResolvable | {[ key: string ]: string};
+public readonly oktaPushInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `oktaQuestionInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfa.property.oktaQuestionInput" id="cdktfprovideroktapolicymfapropertyoktaquestioninput"></a>
 
 ```typescript
-public readonly oktaQuestionInput: IResolvable | {[ key: string ]: string};
+public readonly oktaQuestionInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `oktaSmsInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfa.property.oktaSmsInput" id="cdktfprovideroktapolicymfapropertyoktasmsinput"></a>
 
 ```typescript
-public readonly oktaSmsInput: IResolvable | {[ key: string ]: string};
+public readonly oktaSmsInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -38781,10 +38781,10 @@ public readonly priorityInput: number;
 ##### `rsaTokenInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfa.property.rsaTokenInput" id="cdktfprovideroktapolicymfapropertyrsatokeninput"></a>
 
 ```typescript
-public readonly rsaTokenInput: IResolvable | {[ key: string ]: string};
+public readonly rsaTokenInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -38801,20 +38801,20 @@ public readonly statusInput: string;
 ##### `symantecVipInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfa.property.symantecVipInput" id="cdktfprovideroktapolicymfapropertysymantecvipinput"></a>
 
 ```typescript
-public readonly symantecVipInput: IResolvable | {[ key: string ]: string};
+public readonly symantecVipInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `yubikeyTokenInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfa.property.yubikeyTokenInput" id="cdktfprovideroktapolicymfapropertyyubikeytokeninput"></a>
 
 ```typescript
-public readonly yubikeyTokenInput: IResolvable | {[ key: string ]: string};
+public readonly yubikeyTokenInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -38831,40 +38831,40 @@ public readonly description: string;
 ##### `duo`<sup>Required</sup> <a name="@cdktf/provider-okta.PolicyMfa.property.duo" id="cdktfprovideroktapolicymfapropertyduo"></a>
 
 ```typescript
-public readonly duo: IResolvable | {[ key: string ]: string};
+public readonly duo: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `fidoU2F`<sup>Required</sup> <a name="@cdktf/provider-okta.PolicyMfa.property.fidoU2F" id="cdktfprovideroktapolicymfapropertyfidou2f"></a>
 
 ```typescript
-public readonly fidoU2F: IResolvable | {[ key: string ]: string};
+public readonly fidoU2F: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `fidoWebauthn`<sup>Required</sup> <a name="@cdktf/provider-okta.PolicyMfa.property.fidoWebauthn" id="cdktfprovideroktapolicymfapropertyfidowebauthn"></a>
 
 ```typescript
-public readonly fidoWebauthn: IResolvable | {[ key: string ]: string};
+public readonly fidoWebauthn: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `googleOtp`<sup>Required</sup> <a name="@cdktf/provider-okta.PolicyMfa.property.googleOtp" id="cdktfprovideroktapolicymfapropertygoogleotp"></a>
 
 ```typescript
-public readonly googleOtp: IResolvable | {[ key: string ]: string};
+public readonly googleOtp: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -38881,10 +38881,10 @@ public readonly groupsIncluded: string[];
 ##### `hotp`<sup>Required</sup> <a name="@cdktf/provider-okta.PolicyMfa.property.hotp" id="cdktfprovideroktapolicymfapropertyhotp"></a>
 
 ```typescript
-public readonly hotp: IResolvable | {[ key: string ]: string};
+public readonly hotp: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -38901,70 +38901,70 @@ public readonly name: string;
 ##### `oktaCall`<sup>Required</sup> <a name="@cdktf/provider-okta.PolicyMfa.property.oktaCall" id="cdktfprovideroktapolicymfapropertyoktacall"></a>
 
 ```typescript
-public readonly oktaCall: IResolvable | {[ key: string ]: string};
+public readonly oktaCall: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `oktaEmail`<sup>Required</sup> <a name="@cdktf/provider-okta.PolicyMfa.property.oktaEmail" id="cdktfprovideroktapolicymfapropertyoktaemail"></a>
 
 ```typescript
-public readonly oktaEmail: IResolvable | {[ key: string ]: string};
+public readonly oktaEmail: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `oktaOtp`<sup>Required</sup> <a name="@cdktf/provider-okta.PolicyMfa.property.oktaOtp" id="cdktfprovideroktapolicymfapropertyoktaotp"></a>
 
 ```typescript
-public readonly oktaOtp: IResolvable | {[ key: string ]: string};
+public readonly oktaOtp: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `oktaPassword`<sup>Required</sup> <a name="@cdktf/provider-okta.PolicyMfa.property.oktaPassword" id="cdktfprovideroktapolicymfapropertyoktapassword"></a>
 
 ```typescript
-public readonly oktaPassword: IResolvable | {[ key: string ]: string};
+public readonly oktaPassword: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `oktaPush`<sup>Required</sup> <a name="@cdktf/provider-okta.PolicyMfa.property.oktaPush" id="cdktfprovideroktapolicymfapropertyoktapush"></a>
 
 ```typescript
-public readonly oktaPush: IResolvable | {[ key: string ]: string};
+public readonly oktaPush: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `oktaQuestion`<sup>Required</sup> <a name="@cdktf/provider-okta.PolicyMfa.property.oktaQuestion" id="cdktfprovideroktapolicymfapropertyoktaquestion"></a>
 
 ```typescript
-public readonly oktaQuestion: IResolvable | {[ key: string ]: string};
+public readonly oktaQuestion: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `oktaSms`<sup>Required</sup> <a name="@cdktf/provider-okta.PolicyMfa.property.oktaSms" id="cdktfprovideroktapolicymfapropertyoktasms"></a>
 
 ```typescript
-public readonly oktaSms: IResolvable | {[ key: string ]: string};
+public readonly oktaSms: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -38981,10 +38981,10 @@ public readonly priority: number;
 ##### `rsaToken`<sup>Required</sup> <a name="@cdktf/provider-okta.PolicyMfa.property.rsaToken" id="cdktfprovideroktapolicymfapropertyrsatoken"></a>
 
 ```typescript
-public readonly rsaToken: IResolvable | {[ key: string ]: string};
+public readonly rsaToken: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -39001,20 +39001,20 @@ public readonly status: string;
 ##### `symantecVip`<sup>Required</sup> <a name="@cdktf/provider-okta.PolicyMfa.property.symantecVip" id="cdktfprovideroktapolicymfapropertysymantecvip"></a>
 
 ```typescript
-public readonly symantecVip: IResolvable | {[ key: string ]: string};
+public readonly symantecVip: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `yubikeyToken`<sup>Required</sup> <a name="@cdktf/provider-okta.PolicyMfa.property.yubikeyToken" id="cdktfprovideroktapolicymfapropertyyubikeytoken"></a>
 
 ```typescript
-public readonly yubikeyToken: IResolvable | {[ key: string ]: string};
+public readonly yubikeyToken: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -39199,36 +39199,36 @@ public resetYubikeyToken()
 | [`name`](#cdktfprovideroktapolicymfadefaultpropertyname)<span title="Required">*</span> | `string` | *No description.* |
 | [`priority`](#cdktfprovideroktapolicymfadefaultpropertypriority)<span title="Required">*</span> | `number` | *No description.* |
 | [`status`](#cdktfprovideroktapolicymfadefaultpropertystatus)<span title="Required">*</span> | `string` | *No description.* |
-| [`duoInput`](#cdktfprovideroktapolicymfadefaultpropertyduoinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
-| [`fidoU2FInput`](#cdktfprovideroktapolicymfadefaultpropertyfidou2finput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
-| [`fidoWebauthnInput`](#cdktfprovideroktapolicymfadefaultpropertyfidowebauthninput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
-| [`googleOtpInput`](#cdktfprovideroktapolicymfadefaultpropertygoogleotpinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
-| [`hotpInput`](#cdktfprovideroktapolicymfadefaultpropertyhotpinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
-| [`oktaCallInput`](#cdktfprovideroktapolicymfadefaultpropertyoktacallinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
-| [`oktaEmailInput`](#cdktfprovideroktapolicymfadefaultpropertyoktaemailinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
-| [`oktaOtpInput`](#cdktfprovideroktapolicymfadefaultpropertyoktaotpinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
-| [`oktaPasswordInput`](#cdktfprovideroktapolicymfadefaultpropertyoktapasswordinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
-| [`oktaPushInput`](#cdktfprovideroktapolicymfadefaultpropertyoktapushinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
-| [`oktaQuestionInput`](#cdktfprovideroktapolicymfadefaultpropertyoktaquestioninput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
-| [`oktaSmsInput`](#cdktfprovideroktapolicymfadefaultpropertyoktasmsinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
-| [`rsaTokenInput`](#cdktfprovideroktapolicymfadefaultpropertyrsatokeninput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
-| [`symantecVipInput`](#cdktfprovideroktapolicymfadefaultpropertysymantecvipinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
-| [`yubikeyTokenInput`](#cdktfprovideroktapolicymfadefaultpropertyyubikeytokeninput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
-| [`duo`](#cdktfprovideroktapolicymfadefaultpropertyduo)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
-| [`fidoU2F`](#cdktfprovideroktapolicymfadefaultpropertyfidou2f)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
-| [`fidoWebauthn`](#cdktfprovideroktapolicymfadefaultpropertyfidowebauthn)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
-| [`googleOtp`](#cdktfprovideroktapolicymfadefaultpropertygoogleotp)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
-| [`hotp`](#cdktfprovideroktapolicymfadefaultpropertyhotp)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
-| [`oktaCall`](#cdktfprovideroktapolicymfadefaultpropertyoktacall)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
-| [`oktaEmail`](#cdktfprovideroktapolicymfadefaultpropertyoktaemail)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
-| [`oktaOtp`](#cdktfprovideroktapolicymfadefaultpropertyoktaotp)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
-| [`oktaPassword`](#cdktfprovideroktapolicymfadefaultpropertyoktapassword)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
-| [`oktaPush`](#cdktfprovideroktapolicymfadefaultpropertyoktapush)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
-| [`oktaQuestion`](#cdktfprovideroktapolicymfadefaultpropertyoktaquestion)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
-| [`oktaSms`](#cdktfprovideroktapolicymfadefaultpropertyoktasms)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
-| [`rsaToken`](#cdktfprovideroktapolicymfadefaultpropertyrsatoken)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
-| [`symantecVip`](#cdktfprovideroktapolicymfadefaultpropertysymantecvip)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
-| [`yubikeyToken`](#cdktfprovideroktapolicymfadefaultpropertyyubikeytoken)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | *No description.* |
+| [`duoInput`](#cdktfprovideroktapolicymfadefaultpropertyduoinput) | {[ key: string ]: `string`} | *No description.* |
+| [`fidoU2FInput`](#cdktfprovideroktapolicymfadefaultpropertyfidou2finput) | {[ key: string ]: `string`} | *No description.* |
+| [`fidoWebauthnInput`](#cdktfprovideroktapolicymfadefaultpropertyfidowebauthninput) | {[ key: string ]: `string`} | *No description.* |
+| [`googleOtpInput`](#cdktfprovideroktapolicymfadefaultpropertygoogleotpinput) | {[ key: string ]: `string`} | *No description.* |
+| [`hotpInput`](#cdktfprovideroktapolicymfadefaultpropertyhotpinput) | {[ key: string ]: `string`} | *No description.* |
+| [`oktaCallInput`](#cdktfprovideroktapolicymfadefaultpropertyoktacallinput) | {[ key: string ]: `string`} | *No description.* |
+| [`oktaEmailInput`](#cdktfprovideroktapolicymfadefaultpropertyoktaemailinput) | {[ key: string ]: `string`} | *No description.* |
+| [`oktaOtpInput`](#cdktfprovideroktapolicymfadefaultpropertyoktaotpinput) | {[ key: string ]: `string`} | *No description.* |
+| [`oktaPasswordInput`](#cdktfprovideroktapolicymfadefaultpropertyoktapasswordinput) | {[ key: string ]: `string`} | *No description.* |
+| [`oktaPushInput`](#cdktfprovideroktapolicymfadefaultpropertyoktapushinput) | {[ key: string ]: `string`} | *No description.* |
+| [`oktaQuestionInput`](#cdktfprovideroktapolicymfadefaultpropertyoktaquestioninput) | {[ key: string ]: `string`} | *No description.* |
+| [`oktaSmsInput`](#cdktfprovideroktapolicymfadefaultpropertyoktasmsinput) | {[ key: string ]: `string`} | *No description.* |
+| [`rsaTokenInput`](#cdktfprovideroktapolicymfadefaultpropertyrsatokeninput) | {[ key: string ]: `string`} | *No description.* |
+| [`symantecVipInput`](#cdktfprovideroktapolicymfadefaultpropertysymantecvipinput) | {[ key: string ]: `string`} | *No description.* |
+| [`yubikeyTokenInput`](#cdktfprovideroktapolicymfadefaultpropertyyubikeytokeninput) | {[ key: string ]: `string`} | *No description.* |
+| [`duo`](#cdktfprovideroktapolicymfadefaultpropertyduo)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
+| [`fidoU2F`](#cdktfprovideroktapolicymfadefaultpropertyfidou2f)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
+| [`fidoWebauthn`](#cdktfprovideroktapolicymfadefaultpropertyfidowebauthn)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
+| [`googleOtp`](#cdktfprovideroktapolicymfadefaultpropertygoogleotp)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
+| [`hotp`](#cdktfprovideroktapolicymfadefaultpropertyhotp)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
+| [`oktaCall`](#cdktfprovideroktapolicymfadefaultpropertyoktacall)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
+| [`oktaEmail`](#cdktfprovideroktapolicymfadefaultpropertyoktaemail)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
+| [`oktaOtp`](#cdktfprovideroktapolicymfadefaultpropertyoktaotp)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
+| [`oktaPassword`](#cdktfprovideroktapolicymfadefaultpropertyoktapassword)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
+| [`oktaPush`](#cdktfprovideroktapolicymfadefaultpropertyoktapush)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
+| [`oktaQuestion`](#cdktfprovideroktapolicymfadefaultpropertyoktaquestion)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
+| [`oktaSms`](#cdktfprovideroktapolicymfadefaultpropertyoktasms)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
+| [`rsaToken`](#cdktfprovideroktapolicymfadefaultpropertyrsatoken)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
+| [`symantecVip`](#cdktfprovideroktapolicymfadefaultpropertysymantecvip)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
+| [`yubikeyToken`](#cdktfprovideroktapolicymfadefaultpropertyyubikeytoken)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
 
 ---
 
@@ -39295,300 +39295,300 @@ public readonly status: string;
 ##### `duoInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfaDefault.property.duoInput" id="cdktfprovideroktapolicymfadefaultpropertyduoinput"></a>
 
 ```typescript
-public readonly duoInput: IResolvable | {[ key: string ]: string};
+public readonly duoInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `fidoU2FInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfaDefault.property.fidoU2FInput" id="cdktfprovideroktapolicymfadefaultpropertyfidou2finput"></a>
 
 ```typescript
-public readonly fidoU2FInput: IResolvable | {[ key: string ]: string};
+public readonly fidoU2FInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `fidoWebauthnInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfaDefault.property.fidoWebauthnInput" id="cdktfprovideroktapolicymfadefaultpropertyfidowebauthninput"></a>
 
 ```typescript
-public readonly fidoWebauthnInput: IResolvable | {[ key: string ]: string};
+public readonly fidoWebauthnInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `googleOtpInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfaDefault.property.googleOtpInput" id="cdktfprovideroktapolicymfadefaultpropertygoogleotpinput"></a>
 
 ```typescript
-public readonly googleOtpInput: IResolvable | {[ key: string ]: string};
+public readonly googleOtpInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `hotpInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfaDefault.property.hotpInput" id="cdktfprovideroktapolicymfadefaultpropertyhotpinput"></a>
 
 ```typescript
-public readonly hotpInput: IResolvable | {[ key: string ]: string};
+public readonly hotpInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `oktaCallInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfaDefault.property.oktaCallInput" id="cdktfprovideroktapolicymfadefaultpropertyoktacallinput"></a>
 
 ```typescript
-public readonly oktaCallInput: IResolvable | {[ key: string ]: string};
+public readonly oktaCallInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `oktaEmailInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfaDefault.property.oktaEmailInput" id="cdktfprovideroktapolicymfadefaultpropertyoktaemailinput"></a>
 
 ```typescript
-public readonly oktaEmailInput: IResolvable | {[ key: string ]: string};
+public readonly oktaEmailInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `oktaOtpInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfaDefault.property.oktaOtpInput" id="cdktfprovideroktapolicymfadefaultpropertyoktaotpinput"></a>
 
 ```typescript
-public readonly oktaOtpInput: IResolvable | {[ key: string ]: string};
+public readonly oktaOtpInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `oktaPasswordInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfaDefault.property.oktaPasswordInput" id="cdktfprovideroktapolicymfadefaultpropertyoktapasswordinput"></a>
 
 ```typescript
-public readonly oktaPasswordInput: IResolvable | {[ key: string ]: string};
+public readonly oktaPasswordInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `oktaPushInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfaDefault.property.oktaPushInput" id="cdktfprovideroktapolicymfadefaultpropertyoktapushinput"></a>
 
 ```typescript
-public readonly oktaPushInput: IResolvable | {[ key: string ]: string};
+public readonly oktaPushInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `oktaQuestionInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfaDefault.property.oktaQuestionInput" id="cdktfprovideroktapolicymfadefaultpropertyoktaquestioninput"></a>
 
 ```typescript
-public readonly oktaQuestionInput: IResolvable | {[ key: string ]: string};
+public readonly oktaQuestionInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `oktaSmsInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfaDefault.property.oktaSmsInput" id="cdktfprovideroktapolicymfadefaultpropertyoktasmsinput"></a>
 
 ```typescript
-public readonly oktaSmsInput: IResolvable | {[ key: string ]: string};
+public readonly oktaSmsInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `rsaTokenInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfaDefault.property.rsaTokenInput" id="cdktfprovideroktapolicymfadefaultpropertyrsatokeninput"></a>
 
 ```typescript
-public readonly rsaTokenInput: IResolvable | {[ key: string ]: string};
+public readonly rsaTokenInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `symantecVipInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfaDefault.property.symantecVipInput" id="cdktfprovideroktapolicymfadefaultpropertysymantecvipinput"></a>
 
 ```typescript
-public readonly symantecVipInput: IResolvable | {[ key: string ]: string};
+public readonly symantecVipInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `yubikeyTokenInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfaDefault.property.yubikeyTokenInput" id="cdktfprovideroktapolicymfadefaultpropertyyubikeytokeninput"></a>
 
 ```typescript
-public readonly yubikeyTokenInput: IResolvable | {[ key: string ]: string};
+public readonly yubikeyTokenInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `duo`<sup>Required</sup> <a name="@cdktf/provider-okta.PolicyMfaDefault.property.duo" id="cdktfprovideroktapolicymfadefaultpropertyduo"></a>
 
 ```typescript
-public readonly duo: IResolvable | {[ key: string ]: string};
+public readonly duo: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `fidoU2F`<sup>Required</sup> <a name="@cdktf/provider-okta.PolicyMfaDefault.property.fidoU2F" id="cdktfprovideroktapolicymfadefaultpropertyfidou2f"></a>
 
 ```typescript
-public readonly fidoU2F: IResolvable | {[ key: string ]: string};
+public readonly fidoU2F: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `fidoWebauthn`<sup>Required</sup> <a name="@cdktf/provider-okta.PolicyMfaDefault.property.fidoWebauthn" id="cdktfprovideroktapolicymfadefaultpropertyfidowebauthn"></a>
 
 ```typescript
-public readonly fidoWebauthn: IResolvable | {[ key: string ]: string};
+public readonly fidoWebauthn: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `googleOtp`<sup>Required</sup> <a name="@cdktf/provider-okta.PolicyMfaDefault.property.googleOtp" id="cdktfprovideroktapolicymfadefaultpropertygoogleotp"></a>
 
 ```typescript
-public readonly googleOtp: IResolvable | {[ key: string ]: string};
+public readonly googleOtp: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `hotp`<sup>Required</sup> <a name="@cdktf/provider-okta.PolicyMfaDefault.property.hotp" id="cdktfprovideroktapolicymfadefaultpropertyhotp"></a>
 
 ```typescript
-public readonly hotp: IResolvable | {[ key: string ]: string};
+public readonly hotp: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `oktaCall`<sup>Required</sup> <a name="@cdktf/provider-okta.PolicyMfaDefault.property.oktaCall" id="cdktfprovideroktapolicymfadefaultpropertyoktacall"></a>
 
 ```typescript
-public readonly oktaCall: IResolvable | {[ key: string ]: string};
+public readonly oktaCall: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `oktaEmail`<sup>Required</sup> <a name="@cdktf/provider-okta.PolicyMfaDefault.property.oktaEmail" id="cdktfprovideroktapolicymfadefaultpropertyoktaemail"></a>
 
 ```typescript
-public readonly oktaEmail: IResolvable | {[ key: string ]: string};
+public readonly oktaEmail: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `oktaOtp`<sup>Required</sup> <a name="@cdktf/provider-okta.PolicyMfaDefault.property.oktaOtp" id="cdktfprovideroktapolicymfadefaultpropertyoktaotp"></a>
 
 ```typescript
-public readonly oktaOtp: IResolvable | {[ key: string ]: string};
+public readonly oktaOtp: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `oktaPassword`<sup>Required</sup> <a name="@cdktf/provider-okta.PolicyMfaDefault.property.oktaPassword" id="cdktfprovideroktapolicymfadefaultpropertyoktapassword"></a>
 
 ```typescript
-public readonly oktaPassword: IResolvable | {[ key: string ]: string};
+public readonly oktaPassword: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `oktaPush`<sup>Required</sup> <a name="@cdktf/provider-okta.PolicyMfaDefault.property.oktaPush" id="cdktfprovideroktapolicymfadefaultpropertyoktapush"></a>
 
 ```typescript
-public readonly oktaPush: IResolvable | {[ key: string ]: string};
+public readonly oktaPush: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `oktaQuestion`<sup>Required</sup> <a name="@cdktf/provider-okta.PolicyMfaDefault.property.oktaQuestion" id="cdktfprovideroktapolicymfadefaultpropertyoktaquestion"></a>
 
 ```typescript
-public readonly oktaQuestion: IResolvable | {[ key: string ]: string};
+public readonly oktaQuestion: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `oktaSms`<sup>Required</sup> <a name="@cdktf/provider-okta.PolicyMfaDefault.property.oktaSms" id="cdktfprovideroktapolicymfadefaultpropertyoktasms"></a>
 
 ```typescript
-public readonly oktaSms: IResolvable | {[ key: string ]: string};
+public readonly oktaSms: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `rsaToken`<sup>Required</sup> <a name="@cdktf/provider-okta.PolicyMfaDefault.property.rsaToken" id="cdktfprovideroktapolicymfadefaultpropertyrsatoken"></a>
 
 ```typescript
-public readonly rsaToken: IResolvable | {[ key: string ]: string};
+public readonly rsaToken: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `symantecVip`<sup>Required</sup> <a name="@cdktf/provider-okta.PolicyMfaDefault.property.symantecVip" id="cdktfprovideroktapolicymfadefaultpropertysymantecvip"></a>
 
 ```typescript
-public readonly symantecVip: IResolvable | {[ key: string ]: string};
+public readonly symantecVip: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `yubikeyToken`<sup>Required</sup> <a name="@cdktf/provider-okta.PolicyMfaDefault.property.yubikeyToken" id="cdktfprovideroktapolicymfadefaultpropertyyubikeytoken"></a>
 
 ```typescript
-public readonly yubikeyToken: IResolvable | {[ key: string ]: string};
+public readonly yubikeyToken: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -41696,37 +41696,37 @@ public resetUserIdentifierType()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | [`id`](#cdktfprovideroktapolicyruleidpdiscoverypropertyid)<span title="Required">*</span> | `string` | *No description.* |
-| [`appExcludeInput`](#cdktfprovideroktapolicyruleidpdiscoverypropertyappexcludeinput) | [`@cdktf/provider-okta.PolicyRuleIdpDiscoveryAppExclude`](#@cdktf/provider-okta.PolicyRuleIdpDiscoveryAppExclude)[] | *No description.* |
-| [`appIncludeInput`](#cdktfprovideroktapolicyruleidpdiscoverypropertyappincludeinput) | [`@cdktf/provider-okta.PolicyRuleIdpDiscoveryAppInclude`](#@cdktf/provider-okta.PolicyRuleIdpDiscoveryAppInclude)[] | *No description.* |
+| [`appExcludeInput`](#cdktfprovideroktapolicyruleidpdiscoverypropertyappexcludeinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.PolicyRuleIdpDiscoveryAppExclude`](#@cdktf/provider-okta.PolicyRuleIdpDiscoveryAppExclude)[] | *No description.* |
+| [`appIncludeInput`](#cdktfprovideroktapolicyruleidpdiscoverypropertyappincludeinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.PolicyRuleIdpDiscoveryAppInclude`](#@cdktf/provider-okta.PolicyRuleIdpDiscoveryAppInclude)[] | *No description.* |
 | [`idpIdInput`](#cdktfprovideroktapolicyruleidpdiscoverypropertyidpidinput) | `string` | *No description.* |
 | [`idpTypeInput`](#cdktfprovideroktapolicyruleidpdiscoverypropertyidptypeinput) | `string` | *No description.* |
 | [`nameInput`](#cdktfprovideroktapolicyruleidpdiscoverypropertynameinput) | `string` | *No description.* |
 | [`networkConnectionInput`](#cdktfprovideroktapolicyruleidpdiscoverypropertynetworkconnectioninput) | `string` | *No description.* |
 | [`networkExcludesInput`](#cdktfprovideroktapolicyruleidpdiscoverypropertynetworkexcludesinput) | `string`[] | *No description.* |
 | [`networkIncludesInput`](#cdktfprovideroktapolicyruleidpdiscoverypropertynetworkincludesinput) | `string`[] | *No description.* |
-| [`platformIncludeInput`](#cdktfprovideroktapolicyruleidpdiscoverypropertyplatformincludeinput) | [`@cdktf/provider-okta.PolicyRuleIdpDiscoveryPlatformInclude`](#@cdktf/provider-okta.PolicyRuleIdpDiscoveryPlatformInclude)[] | *No description.* |
+| [`platformIncludeInput`](#cdktfprovideroktapolicyruleidpdiscoverypropertyplatformincludeinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.PolicyRuleIdpDiscoveryPlatformInclude`](#@cdktf/provider-okta.PolicyRuleIdpDiscoveryPlatformInclude)[] | *No description.* |
 | [`policyidInput`](#cdktfprovideroktapolicyruleidpdiscoverypropertypolicyidinput) | `string` | *No description.* |
 | [`policyIdInput`](#cdktfprovideroktapolicyruleidpdiscoverypropertypolicyidinput) | `string` | *No description.* |
 | [`priorityInput`](#cdktfprovideroktapolicyruleidpdiscoverypropertypriorityinput) | `number` | *No description.* |
 | [`statusInput`](#cdktfprovideroktapolicyruleidpdiscoverypropertystatusinput) | `string` | *No description.* |
 | [`userIdentifierAttributeInput`](#cdktfprovideroktapolicyruleidpdiscoverypropertyuseridentifierattributeinput) | `string` | *No description.* |
-| [`userIdentifierPatternsInput`](#cdktfprovideroktapolicyruleidpdiscoverypropertyuseridentifierpatternsinput) | [`@cdktf/provider-okta.PolicyRuleIdpDiscoveryUserIdentifierPatterns`](#@cdktf/provider-okta.PolicyRuleIdpDiscoveryUserIdentifierPatterns)[] | *No description.* |
+| [`userIdentifierPatternsInput`](#cdktfprovideroktapolicyruleidpdiscoverypropertyuseridentifierpatternsinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.PolicyRuleIdpDiscoveryUserIdentifierPatterns`](#@cdktf/provider-okta.PolicyRuleIdpDiscoveryUserIdentifierPatterns)[] | *No description.* |
 | [`userIdentifierTypeInput`](#cdktfprovideroktapolicyruleidpdiscoverypropertyuseridentifiertypeinput) | `string` | *No description.* |
-| [`appExclude`](#cdktfprovideroktapolicyruleidpdiscoverypropertyappexclude)<span title="Required">*</span> | [`@cdktf/provider-okta.PolicyRuleIdpDiscoveryAppExclude`](#@cdktf/provider-okta.PolicyRuleIdpDiscoveryAppExclude)[] | *No description.* |
-| [`appInclude`](#cdktfprovideroktapolicyruleidpdiscoverypropertyappinclude)<span title="Required">*</span> | [`@cdktf/provider-okta.PolicyRuleIdpDiscoveryAppInclude`](#@cdktf/provider-okta.PolicyRuleIdpDiscoveryAppInclude)[] | *No description.* |
+| [`appExclude`](#cdktfprovideroktapolicyruleidpdiscoverypropertyappexclude)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.PolicyRuleIdpDiscoveryAppExclude`](#@cdktf/provider-okta.PolicyRuleIdpDiscoveryAppExclude)[] | *No description.* |
+| [`appInclude`](#cdktfprovideroktapolicyruleidpdiscoverypropertyappinclude)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.PolicyRuleIdpDiscoveryAppInclude`](#@cdktf/provider-okta.PolicyRuleIdpDiscoveryAppInclude)[] | *No description.* |
 | [`idpId`](#cdktfprovideroktapolicyruleidpdiscoverypropertyidpid)<span title="Required">*</span> | `string` | *No description.* |
 | [`idpType`](#cdktfprovideroktapolicyruleidpdiscoverypropertyidptype)<span title="Required">*</span> | `string` | *No description.* |
 | [`name`](#cdktfprovideroktapolicyruleidpdiscoverypropertyname)<span title="Required">*</span> | `string` | *No description.* |
 | [`networkConnection`](#cdktfprovideroktapolicyruleidpdiscoverypropertynetworkconnection)<span title="Required">*</span> | `string` | *No description.* |
 | [`networkExcludes`](#cdktfprovideroktapolicyruleidpdiscoverypropertynetworkexcludes)<span title="Required">*</span> | `string`[] | *No description.* |
 | [`networkIncludes`](#cdktfprovideroktapolicyruleidpdiscoverypropertynetworkincludes)<span title="Required">*</span> | `string`[] | *No description.* |
-| [`platformInclude`](#cdktfprovideroktapolicyruleidpdiscoverypropertyplatforminclude)<span title="Required">*</span> | [`@cdktf/provider-okta.PolicyRuleIdpDiscoveryPlatformInclude`](#@cdktf/provider-okta.PolicyRuleIdpDiscoveryPlatformInclude)[] | *No description.* |
+| [`platformInclude`](#cdktfprovideroktapolicyruleidpdiscoverypropertyplatforminclude)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.PolicyRuleIdpDiscoveryPlatformInclude`](#@cdktf/provider-okta.PolicyRuleIdpDiscoveryPlatformInclude)[] | *No description.* |
 | [`policyid`](#cdktfprovideroktapolicyruleidpdiscoverypropertypolicyid)<span title="Required">*</span> | `string` | *No description.* |
 | [`policyId`](#cdktfprovideroktapolicyruleidpdiscoverypropertypolicyid)<span title="Required">*</span> | `string` | *No description.* |
 | [`priority`](#cdktfprovideroktapolicyruleidpdiscoverypropertypriority)<span title="Required">*</span> | `number` | *No description.* |
 | [`status`](#cdktfprovideroktapolicyruleidpdiscoverypropertystatus)<span title="Required">*</span> | `string` | *No description.* |
 | [`userIdentifierAttribute`](#cdktfprovideroktapolicyruleidpdiscoverypropertyuseridentifierattribute)<span title="Required">*</span> | `string` | *No description.* |
-| [`userIdentifierPatterns`](#cdktfprovideroktapolicyruleidpdiscoverypropertyuseridentifierpatterns)<span title="Required">*</span> | [`@cdktf/provider-okta.PolicyRuleIdpDiscoveryUserIdentifierPatterns`](#@cdktf/provider-okta.PolicyRuleIdpDiscoveryUserIdentifierPatterns)[] | *No description.* |
+| [`userIdentifierPatterns`](#cdktfprovideroktapolicyruleidpdiscoverypropertyuseridentifierpatterns)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.PolicyRuleIdpDiscoveryUserIdentifierPatterns`](#@cdktf/provider-okta.PolicyRuleIdpDiscoveryUserIdentifierPatterns)[] | *No description.* |
 | [`userIdentifierType`](#cdktfprovideroktapolicyruleidpdiscoverypropertyuseridentifiertype)<span title="Required">*</span> | `string` | *No description.* |
 
 ---
@@ -41744,20 +41744,20 @@ public readonly id: string;
 ##### `appExcludeInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyRuleIdpDiscovery.property.appExcludeInput" id="cdktfprovideroktapolicyruleidpdiscoverypropertyappexcludeinput"></a>
 
 ```typescript
-public readonly appExcludeInput: PolicyRuleIdpDiscoveryAppExclude[];
+public readonly appExcludeInput: IResolvable | PolicyRuleIdpDiscoveryAppExclude[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.PolicyRuleIdpDiscoveryAppExclude`](#@cdktf/provider-okta.PolicyRuleIdpDiscoveryAppExclude)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.PolicyRuleIdpDiscoveryAppExclude`](#@cdktf/provider-okta.PolicyRuleIdpDiscoveryAppExclude)[]
 
 ---
 
 ##### `appIncludeInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyRuleIdpDiscovery.property.appIncludeInput" id="cdktfprovideroktapolicyruleidpdiscoverypropertyappincludeinput"></a>
 
 ```typescript
-public readonly appIncludeInput: PolicyRuleIdpDiscoveryAppInclude[];
+public readonly appIncludeInput: IResolvable | PolicyRuleIdpDiscoveryAppInclude[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.PolicyRuleIdpDiscoveryAppInclude`](#@cdktf/provider-okta.PolicyRuleIdpDiscoveryAppInclude)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.PolicyRuleIdpDiscoveryAppInclude`](#@cdktf/provider-okta.PolicyRuleIdpDiscoveryAppInclude)[]
 
 ---
 
@@ -41824,10 +41824,10 @@ public readonly networkIncludesInput: string[];
 ##### `platformIncludeInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyRuleIdpDiscovery.property.platformIncludeInput" id="cdktfprovideroktapolicyruleidpdiscoverypropertyplatformincludeinput"></a>
 
 ```typescript
-public readonly platformIncludeInput: PolicyRuleIdpDiscoveryPlatformInclude[];
+public readonly platformIncludeInput: IResolvable | PolicyRuleIdpDiscoveryPlatformInclude[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.PolicyRuleIdpDiscoveryPlatformInclude`](#@cdktf/provider-okta.PolicyRuleIdpDiscoveryPlatformInclude)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.PolicyRuleIdpDiscoveryPlatformInclude`](#@cdktf/provider-okta.PolicyRuleIdpDiscoveryPlatformInclude)[]
 
 ---
 
@@ -41884,10 +41884,10 @@ public readonly userIdentifierAttributeInput: string;
 ##### `userIdentifierPatternsInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyRuleIdpDiscovery.property.userIdentifierPatternsInput" id="cdktfprovideroktapolicyruleidpdiscoverypropertyuseridentifierpatternsinput"></a>
 
 ```typescript
-public readonly userIdentifierPatternsInput: PolicyRuleIdpDiscoveryUserIdentifierPatterns[];
+public readonly userIdentifierPatternsInput: IResolvable | PolicyRuleIdpDiscoveryUserIdentifierPatterns[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.PolicyRuleIdpDiscoveryUserIdentifierPatterns`](#@cdktf/provider-okta.PolicyRuleIdpDiscoveryUserIdentifierPatterns)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.PolicyRuleIdpDiscoveryUserIdentifierPatterns`](#@cdktf/provider-okta.PolicyRuleIdpDiscoveryUserIdentifierPatterns)[]
 
 ---
 
@@ -41904,20 +41904,20 @@ public readonly userIdentifierTypeInput: string;
 ##### `appExclude`<sup>Required</sup> <a name="@cdktf/provider-okta.PolicyRuleIdpDiscovery.property.appExclude" id="cdktfprovideroktapolicyruleidpdiscoverypropertyappexclude"></a>
 
 ```typescript
-public readonly appExclude: PolicyRuleIdpDiscoveryAppExclude[];
+public readonly appExclude: IResolvable | PolicyRuleIdpDiscoveryAppExclude[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.PolicyRuleIdpDiscoveryAppExclude`](#@cdktf/provider-okta.PolicyRuleIdpDiscoveryAppExclude)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.PolicyRuleIdpDiscoveryAppExclude`](#@cdktf/provider-okta.PolicyRuleIdpDiscoveryAppExclude)[]
 
 ---
 
 ##### `appInclude`<sup>Required</sup> <a name="@cdktf/provider-okta.PolicyRuleIdpDiscovery.property.appInclude" id="cdktfprovideroktapolicyruleidpdiscoverypropertyappinclude"></a>
 
 ```typescript
-public readonly appInclude: PolicyRuleIdpDiscoveryAppInclude[];
+public readonly appInclude: IResolvable | PolicyRuleIdpDiscoveryAppInclude[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.PolicyRuleIdpDiscoveryAppInclude`](#@cdktf/provider-okta.PolicyRuleIdpDiscoveryAppInclude)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.PolicyRuleIdpDiscoveryAppInclude`](#@cdktf/provider-okta.PolicyRuleIdpDiscoveryAppInclude)[]
 
 ---
 
@@ -41984,10 +41984,10 @@ public readonly networkIncludes: string[];
 ##### `platformInclude`<sup>Required</sup> <a name="@cdktf/provider-okta.PolicyRuleIdpDiscovery.property.platformInclude" id="cdktfprovideroktapolicyruleidpdiscoverypropertyplatforminclude"></a>
 
 ```typescript
-public readonly platformInclude: PolicyRuleIdpDiscoveryPlatformInclude[];
+public readonly platformInclude: IResolvable | PolicyRuleIdpDiscoveryPlatformInclude[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.PolicyRuleIdpDiscoveryPlatformInclude`](#@cdktf/provider-okta.PolicyRuleIdpDiscoveryPlatformInclude)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.PolicyRuleIdpDiscoveryPlatformInclude`](#@cdktf/provider-okta.PolicyRuleIdpDiscoveryPlatformInclude)[]
 
 ---
 
@@ -42044,10 +42044,10 @@ public readonly userIdentifierAttribute: string;
 ##### `userIdentifierPatterns`<sup>Required</sup> <a name="@cdktf/provider-okta.PolicyRuleIdpDiscovery.property.userIdentifierPatterns" id="cdktfprovideroktapolicyruleidpdiscoverypropertyuseridentifierpatterns"></a>
 
 ```typescript
-public readonly userIdentifierPatterns: PolicyRuleIdpDiscoveryUserIdentifierPatterns[];
+public readonly userIdentifierPatterns: IResolvable | PolicyRuleIdpDiscoveryUserIdentifierPatterns[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.PolicyRuleIdpDiscoveryUserIdentifierPatterns`](#@cdktf/provider-okta.PolicyRuleIdpDiscoveryUserIdentifierPatterns)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.PolicyRuleIdpDiscoveryUserIdentifierPatterns`](#@cdktf/provider-okta.PolicyRuleIdpDiscoveryUserIdentifierPatterns)[]
 
 ---
 
@@ -42209,8 +42209,8 @@ public resetUsersExcluded()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | [`id`](#cdktfprovideroktapolicyrulemfapropertyid)<span title="Required">*</span> | `string` | *No description.* |
-| [`appExcludeInput`](#cdktfprovideroktapolicyrulemfapropertyappexcludeinput) | [`@cdktf/provider-okta.PolicyRuleMfaAppExclude`](#@cdktf/provider-okta.PolicyRuleMfaAppExclude)[] | *No description.* |
-| [`appIncludeInput`](#cdktfprovideroktapolicyrulemfapropertyappincludeinput) | [`@cdktf/provider-okta.PolicyRuleMfaAppInclude`](#@cdktf/provider-okta.PolicyRuleMfaAppInclude)[] | *No description.* |
+| [`appExcludeInput`](#cdktfprovideroktapolicyrulemfapropertyappexcludeinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.PolicyRuleMfaAppExclude`](#@cdktf/provider-okta.PolicyRuleMfaAppExclude)[] | *No description.* |
+| [`appIncludeInput`](#cdktfprovideroktapolicyrulemfapropertyappincludeinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.PolicyRuleMfaAppInclude`](#@cdktf/provider-okta.PolicyRuleMfaAppInclude)[] | *No description.* |
 | [`enrollInput`](#cdktfprovideroktapolicyrulemfapropertyenrollinput) | `string` | *No description.* |
 | [`nameInput`](#cdktfprovideroktapolicyrulemfapropertynameinput) | `string` | *No description.* |
 | [`networkConnectionInput`](#cdktfprovideroktapolicyrulemfapropertynetworkconnectioninput) | `string` | *No description.* |
@@ -42221,8 +42221,8 @@ public resetUsersExcluded()
 | [`priorityInput`](#cdktfprovideroktapolicyrulemfapropertypriorityinput) | `number` | *No description.* |
 | [`statusInput`](#cdktfprovideroktapolicyrulemfapropertystatusinput) | `string` | *No description.* |
 | [`usersExcludedInput`](#cdktfprovideroktapolicyrulemfapropertyusersexcludedinput) | `string`[] | *No description.* |
-| [`appExclude`](#cdktfprovideroktapolicyrulemfapropertyappexclude)<span title="Required">*</span> | [`@cdktf/provider-okta.PolicyRuleMfaAppExclude`](#@cdktf/provider-okta.PolicyRuleMfaAppExclude)[] | *No description.* |
-| [`appInclude`](#cdktfprovideroktapolicyrulemfapropertyappinclude)<span title="Required">*</span> | [`@cdktf/provider-okta.PolicyRuleMfaAppInclude`](#@cdktf/provider-okta.PolicyRuleMfaAppInclude)[] | *No description.* |
+| [`appExclude`](#cdktfprovideroktapolicyrulemfapropertyappexclude)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.PolicyRuleMfaAppExclude`](#@cdktf/provider-okta.PolicyRuleMfaAppExclude)[] | *No description.* |
+| [`appInclude`](#cdktfprovideroktapolicyrulemfapropertyappinclude)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.PolicyRuleMfaAppInclude`](#@cdktf/provider-okta.PolicyRuleMfaAppInclude)[] | *No description.* |
 | [`enroll`](#cdktfprovideroktapolicyrulemfapropertyenroll)<span title="Required">*</span> | `string` | *No description.* |
 | [`name`](#cdktfprovideroktapolicyrulemfapropertyname)<span title="Required">*</span> | `string` | *No description.* |
 | [`networkConnection`](#cdktfprovideroktapolicyrulemfapropertynetworkconnection)<span title="Required">*</span> | `string` | *No description.* |
@@ -42249,20 +42249,20 @@ public readonly id: string;
 ##### `appExcludeInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyRuleMfa.property.appExcludeInput" id="cdktfprovideroktapolicyrulemfapropertyappexcludeinput"></a>
 
 ```typescript
-public readonly appExcludeInput: PolicyRuleMfaAppExclude[];
+public readonly appExcludeInput: IResolvable | PolicyRuleMfaAppExclude[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.PolicyRuleMfaAppExclude`](#@cdktf/provider-okta.PolicyRuleMfaAppExclude)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.PolicyRuleMfaAppExclude`](#@cdktf/provider-okta.PolicyRuleMfaAppExclude)[]
 
 ---
 
 ##### `appIncludeInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyRuleMfa.property.appIncludeInput" id="cdktfprovideroktapolicyrulemfapropertyappincludeinput"></a>
 
 ```typescript
-public readonly appIncludeInput: PolicyRuleMfaAppInclude[];
+public readonly appIncludeInput: IResolvable | PolicyRuleMfaAppInclude[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.PolicyRuleMfaAppInclude`](#@cdktf/provider-okta.PolicyRuleMfaAppInclude)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.PolicyRuleMfaAppInclude`](#@cdktf/provider-okta.PolicyRuleMfaAppInclude)[]
 
 ---
 
@@ -42369,20 +42369,20 @@ public readonly usersExcludedInput: string[];
 ##### `appExclude`<sup>Required</sup> <a name="@cdktf/provider-okta.PolicyRuleMfa.property.appExclude" id="cdktfprovideroktapolicyrulemfapropertyappexclude"></a>
 
 ```typescript
-public readonly appExclude: PolicyRuleMfaAppExclude[];
+public readonly appExclude: IResolvable | PolicyRuleMfaAppExclude[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.PolicyRuleMfaAppExclude`](#@cdktf/provider-okta.PolicyRuleMfaAppExclude)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.PolicyRuleMfaAppExclude`](#@cdktf/provider-okta.PolicyRuleMfaAppExclude)[]
 
 ---
 
 ##### `appInclude`<sup>Required</sup> <a name="@cdktf/provider-okta.PolicyRuleMfa.property.appInclude" id="cdktfprovideroktapolicyrulemfapropertyappinclude"></a>
 
 ```typescript
-public readonly appInclude: PolicyRuleMfaAppInclude[];
+public readonly appInclude: IResolvable | PolicyRuleMfaAppInclude[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.PolicyRuleMfaAppInclude`](#@cdktf/provider-okta.PolicyRuleMfaAppInclude)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.PolicyRuleMfaAppInclude`](#@cdktf/provider-okta.PolicyRuleMfaAppInclude)[]
 
 ---
 
@@ -43023,14 +43023,14 @@ public resetTargetGroupId()
 | [`emailVerificationInput`](#cdktfprovideroktapolicyruleprofileenrollmentpropertyemailverificationinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`inlineHookIdInput`](#cdktfprovideroktapolicyruleprofileenrollmentpropertyinlinehookidinput) | `string` | *No description.* |
 | [`policyIdInput`](#cdktfprovideroktapolicyruleprofileenrollmentpropertypolicyidinput) | `string` | *No description.* |
-| [`profileAttributesInput`](#cdktfprovideroktapolicyruleprofileenrollmentpropertyprofileattributesinput) | [`@cdktf/provider-okta.PolicyRuleProfileEnrollmentProfileAttributes`](#@cdktf/provider-okta.PolicyRuleProfileEnrollmentProfileAttributes)[] | *No description.* |
+| [`profileAttributesInput`](#cdktfprovideroktapolicyruleprofileenrollmentpropertyprofileattributesinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.PolicyRuleProfileEnrollmentProfileAttributes`](#@cdktf/provider-okta.PolicyRuleProfileEnrollmentProfileAttributes)[] | *No description.* |
 | [`targetGroupIdInput`](#cdktfprovideroktapolicyruleprofileenrollmentpropertytargetgroupidinput) | `string` | *No description.* |
 | [`unknownUserActionInput`](#cdktfprovideroktapolicyruleprofileenrollmentpropertyunknownuseractioninput) | `string` | *No description.* |
 | [`access`](#cdktfprovideroktapolicyruleprofileenrollmentpropertyaccess)<span title="Required">*</span> | `string` | *No description.* |
 | [`emailVerification`](#cdktfprovideroktapolicyruleprofileenrollmentpropertyemailverification)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`inlineHookId`](#cdktfprovideroktapolicyruleprofileenrollmentpropertyinlinehookid)<span title="Required">*</span> | `string` | *No description.* |
 | [`policyId`](#cdktfprovideroktapolicyruleprofileenrollmentpropertypolicyid)<span title="Required">*</span> | `string` | *No description.* |
-| [`profileAttributes`](#cdktfprovideroktapolicyruleprofileenrollmentpropertyprofileattributes)<span title="Required">*</span> | [`@cdktf/provider-okta.PolicyRuleProfileEnrollmentProfileAttributes`](#@cdktf/provider-okta.PolicyRuleProfileEnrollmentProfileAttributes)[] | *No description.* |
+| [`profileAttributes`](#cdktfprovideroktapolicyruleprofileenrollmentpropertyprofileattributes)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.PolicyRuleProfileEnrollmentProfileAttributes`](#@cdktf/provider-okta.PolicyRuleProfileEnrollmentProfileAttributes)[] | *No description.* |
 | [`targetGroupId`](#cdktfprovideroktapolicyruleprofileenrollmentpropertytargetgroupid)<span title="Required">*</span> | `string` | *No description.* |
 | [`unknownUserAction`](#cdktfprovideroktapolicyruleprofileenrollmentpropertyunknownuseraction)<span title="Required">*</span> | `string` | *No description.* |
 
@@ -43109,10 +43109,10 @@ public readonly policyIdInput: string;
 ##### `profileAttributesInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyRuleProfileEnrollment.property.profileAttributesInput" id="cdktfprovideroktapolicyruleprofileenrollmentpropertyprofileattributesinput"></a>
 
 ```typescript
-public readonly profileAttributesInput: PolicyRuleProfileEnrollmentProfileAttributes[];
+public readonly profileAttributesInput: IResolvable | PolicyRuleProfileEnrollmentProfileAttributes[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.PolicyRuleProfileEnrollmentProfileAttributes`](#@cdktf/provider-okta.PolicyRuleProfileEnrollmentProfileAttributes)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.PolicyRuleProfileEnrollmentProfileAttributes`](#@cdktf/provider-okta.PolicyRuleProfileEnrollmentProfileAttributes)[]
 
 ---
 
@@ -43179,10 +43179,10 @@ public readonly policyId: string;
 ##### `profileAttributes`<sup>Required</sup> <a name="@cdktf/provider-okta.PolicyRuleProfileEnrollment.property.profileAttributes" id="cdktfprovideroktapolicyruleprofileenrollmentpropertyprofileattributes"></a>
 
 ```typescript
-public readonly profileAttributes: PolicyRuleProfileEnrollmentProfileAttributes[];
+public readonly profileAttributes: IResolvable | PolicyRuleProfileEnrollmentProfileAttributes[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.PolicyRuleProfileEnrollmentProfileAttributes`](#@cdktf/provider-okta.PolicyRuleProfileEnrollmentProfileAttributes)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.PolicyRuleProfileEnrollmentProfileAttributes`](#@cdktf/provider-okta.PolicyRuleProfileEnrollmentProfileAttributes)[]
 
 ---
 
@@ -43427,7 +43427,7 @@ public resetUsersExcluded()
 | [`accessInput`](#cdktfprovideroktapolicyrulesignonpropertyaccessinput) | `string` | *No description.* |
 | [`authtypeInput`](#cdktfprovideroktapolicyrulesignonpropertyauthtypeinput) | `string` | *No description.* |
 | [`behaviorsInput`](#cdktfprovideroktapolicyrulesignonpropertybehaviorsinput) | `string`[] | *No description.* |
-| [`factorSequenceInput`](#cdktfprovideroktapolicyrulesignonpropertyfactorsequenceinput) | [`@cdktf/provider-okta.PolicyRuleSignonFactorSequence`](#@cdktf/provider-okta.PolicyRuleSignonFactorSequence)[] | *No description.* |
+| [`factorSequenceInput`](#cdktfprovideroktapolicyrulesignonpropertyfactorsequenceinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.PolicyRuleSignonFactorSequence`](#@cdktf/provider-okta.PolicyRuleSignonFactorSequence)[] | *No description.* |
 | [`mfaLifetimeInput`](#cdktfprovideroktapolicyrulesignonpropertymfalifetimeinput) | `number` | *No description.* |
 | [`mfaPromptInput`](#cdktfprovideroktapolicyrulesignonpropertymfapromptinput) | `string` | *No description.* |
 | [`mfaRememberDeviceInput`](#cdktfprovideroktapolicyrulesignonpropertymfarememberdeviceinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
@@ -43449,7 +43449,7 @@ public resetUsersExcluded()
 | [`access`](#cdktfprovideroktapolicyrulesignonpropertyaccess)<span title="Required">*</span> | `string` | *No description.* |
 | [`authtype`](#cdktfprovideroktapolicyrulesignonpropertyauthtype)<span title="Required">*</span> | `string` | *No description.* |
 | [`behaviors`](#cdktfprovideroktapolicyrulesignonpropertybehaviors)<span title="Required">*</span> | `string`[] | *No description.* |
-| [`factorSequence`](#cdktfprovideroktapolicyrulesignonpropertyfactorsequence)<span title="Required">*</span> | [`@cdktf/provider-okta.PolicyRuleSignonFactorSequence`](#@cdktf/provider-okta.PolicyRuleSignonFactorSequence)[] | *No description.* |
+| [`factorSequence`](#cdktfprovideroktapolicyrulesignonpropertyfactorsequence)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.PolicyRuleSignonFactorSequence`](#@cdktf/provider-okta.PolicyRuleSignonFactorSequence)[] | *No description.* |
 | [`mfaLifetime`](#cdktfprovideroktapolicyrulesignonpropertymfalifetime)<span title="Required">*</span> | `number` | *No description.* |
 | [`mfaPrompt`](#cdktfprovideroktapolicyrulesignonpropertymfaprompt)<span title="Required">*</span> | `string` | *No description.* |
 | [`mfaRememberDevice`](#cdktfprovideroktapolicyrulesignonpropertymfarememberdevice)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
@@ -43514,10 +43514,10 @@ public readonly behaviorsInput: string[];
 ##### `factorSequenceInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyRuleSignon.property.factorSequenceInput" id="cdktfprovideroktapolicyrulesignonpropertyfactorsequenceinput"></a>
 
 ```typescript
-public readonly factorSequenceInput: PolicyRuleSignonFactorSequence[];
+public readonly factorSequenceInput: IResolvable | PolicyRuleSignonFactorSequence[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.PolicyRuleSignonFactorSequence`](#@cdktf/provider-okta.PolicyRuleSignonFactorSequence)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.PolicyRuleSignonFactorSequence`](#@cdktf/provider-okta.PolicyRuleSignonFactorSequence)[]
 
 ---
 
@@ -43734,10 +43734,10 @@ public readonly behaviors: string[];
 ##### `factorSequence`<sup>Required</sup> <a name="@cdktf/provider-okta.PolicyRuleSignon.property.factorSequence" id="cdktfprovideroktapolicyrulesignonpropertyfactorsequence"></a>
 
 ```typescript
-public readonly factorSequence: PolicyRuleSignonFactorSequence[];
+public readonly factorSequence: IResolvable | PolicyRuleSignonFactorSequence[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.PolicyRuleSignonFactorSequence`](#@cdktf/provider-okta.PolicyRuleSignonFactorSequence)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.PolicyRuleSignonFactorSequence`](#@cdktf/provider-okta.PolicyRuleSignonFactorSequence)[]
 
 ---
 
@@ -44241,12 +44241,12 @@ public resetMappings()
 | [`targetType`](#cdktfprovideroktaprofilemappingpropertytargettype)<span title="Required">*</span> | `string` | *No description.* |
 | [`alwaysApplyInput`](#cdktfprovideroktaprofilemappingpropertyalwaysapplyinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`deleteWhenAbsentInput`](#cdktfprovideroktaprofilemappingpropertydeletewhenabsentinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
-| [`mappingsInput`](#cdktfprovideroktaprofilemappingpropertymappingsinput) | [`@cdktf/provider-okta.ProfileMappingMappings`](#@cdktf/provider-okta.ProfileMappingMappings)[] | *No description.* |
+| [`mappingsInput`](#cdktfprovideroktaprofilemappingpropertymappingsinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.ProfileMappingMappings`](#@cdktf/provider-okta.ProfileMappingMappings)[] | *No description.* |
 | [`sourceIdInput`](#cdktfprovideroktaprofilemappingpropertysourceidinput) | `string` | *No description.* |
 | [`targetIdInput`](#cdktfprovideroktaprofilemappingpropertytargetidinput) | `string` | *No description.* |
 | [`alwaysApply`](#cdktfprovideroktaprofilemappingpropertyalwaysapply)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`deleteWhenAbsent`](#cdktfprovideroktaprofilemappingpropertydeletewhenabsent)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
-| [`mappings`](#cdktfprovideroktaprofilemappingpropertymappings)<span title="Required">*</span> | [`@cdktf/provider-okta.ProfileMappingMappings`](#@cdktf/provider-okta.ProfileMappingMappings)[] | *No description.* |
+| [`mappings`](#cdktfprovideroktaprofilemappingpropertymappings)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.ProfileMappingMappings`](#@cdktf/provider-okta.ProfileMappingMappings)[] | *No description.* |
 | [`sourceId`](#cdktfprovideroktaprofilemappingpropertysourceid)<span title="Required">*</span> | `string` | *No description.* |
 | [`targetId`](#cdktfprovideroktaprofilemappingpropertytargetid)<span title="Required">*</span> | `string` | *No description.* |
 
@@ -44325,10 +44325,10 @@ public readonly deleteWhenAbsentInput: boolean | IResolvable;
 ##### `mappingsInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.ProfileMapping.property.mappingsInput" id="cdktfprovideroktaprofilemappingpropertymappingsinput"></a>
 
 ```typescript
-public readonly mappingsInput: ProfileMappingMappings[];
+public readonly mappingsInput: IResolvable | ProfileMappingMappings[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.ProfileMappingMappings`](#@cdktf/provider-okta.ProfileMappingMappings)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.ProfileMappingMappings`](#@cdktf/provider-okta.ProfileMappingMappings)[]
 
 ---
 
@@ -44375,10 +44375,10 @@ public readonly deleteWhenAbsent: boolean | IResolvable;
 ##### `mappings`<sup>Required</sup> <a name="@cdktf/provider-okta.ProfileMapping.property.mappings" id="cdktfprovideroktaprofilemappingpropertymappings"></a>
 
 ```typescript
-public readonly mappings: ProfileMappingMappings[];
+public readonly mappings: IResolvable | ProfileMappingMappings[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.ProfileMappingMappings`](#@cdktf/provider-okta.ProfileMappingMappings)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.ProfileMappingMappings`](#@cdktf/provider-okta.ProfileMappingMappings)[]
 
 ---
 
@@ -45299,7 +45299,7 @@ public resetUsers()
 | [`appLinksJsonInput`](#cdktfprovideroktasamlapppropertyapplinksjsoninput) | `string` | *No description.* |
 | [`appSettingsJsonInput`](#cdktfprovideroktasamlapppropertyappsettingsjsoninput) | `string` | *No description.* |
 | [`assertionSignedInput`](#cdktfprovideroktasamlapppropertyassertionsignedinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
-| [`attributeStatementsInput`](#cdktfprovideroktasamlapppropertyattributestatementsinput) | [`@cdktf/provider-okta.SamlAppAttributeStatements`](#@cdktf/provider-okta.SamlAppAttributeStatements)[] | *No description.* |
+| [`attributeStatementsInput`](#cdktfprovideroktasamlapppropertyattributestatementsinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.SamlAppAttributeStatements`](#@cdktf/provider-okta.SamlAppAttributeStatements)[] | *No description.* |
 | [`audienceInput`](#cdktfprovideroktasamlapppropertyaudienceinput) | `string` | *No description.* |
 | [`authnContextClassRefInput`](#cdktfprovideroktasamlapppropertyauthncontextclassrefinput) | `string` | *No description.* |
 | [`autoSubmitToolbarInput`](#cdktfprovideroktasamlapppropertyautosubmittoolbarinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
@@ -45339,7 +45339,7 @@ public resetUsers()
 | [`userNameTemplatePushStatusInput`](#cdktfprovideroktasamlapppropertyusernametemplatepushstatusinput) | `string` | *No description.* |
 | [`userNameTemplateSuffixInput`](#cdktfprovideroktasamlapppropertyusernametemplatesuffixinput) | `string` | *No description.* |
 | [`userNameTemplateTypeInput`](#cdktfprovideroktasamlapppropertyusernametemplatetypeinput) | `string` | *No description.* |
-| [`usersInput`](#cdktfprovideroktasamlapppropertyusersinput) | [`@cdktf/provider-okta.SamlAppUsers`](#@cdktf/provider-okta.SamlAppUsers)[] | *No description.* |
+| [`usersInput`](#cdktfprovideroktasamlapppropertyusersinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.SamlAppUsers`](#@cdktf/provider-okta.SamlAppUsers)[] | *No description.* |
 | [`accessibilityErrorRedirectUrl`](#cdktfprovideroktasamlapppropertyaccessibilityerrorredirecturl)<span title="Required">*</span> | `string` | *No description.* |
 | [`accessibilityLoginRedirectUrl`](#cdktfprovideroktasamlapppropertyaccessibilityloginredirecturl)<span title="Required">*</span> | `string` | *No description.* |
 | [`accessibilitySelfService`](#cdktfprovideroktasamlapppropertyaccessibilityselfservice)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
@@ -45348,7 +45348,7 @@ public resetUsers()
 | [`appLinksJson`](#cdktfprovideroktasamlapppropertyapplinksjson)<span title="Required">*</span> | `string` | *No description.* |
 | [`appSettingsJson`](#cdktfprovideroktasamlapppropertyappsettingsjson)<span title="Required">*</span> | `string` | *No description.* |
 | [`assertionSigned`](#cdktfprovideroktasamlapppropertyassertionsigned)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
-| [`attributeStatements`](#cdktfprovideroktasamlapppropertyattributestatements)<span title="Required">*</span> | [`@cdktf/provider-okta.SamlAppAttributeStatements`](#@cdktf/provider-okta.SamlAppAttributeStatements)[] | *No description.* |
+| [`attributeStatements`](#cdktfprovideroktasamlapppropertyattributestatements)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.SamlAppAttributeStatements`](#@cdktf/provider-okta.SamlAppAttributeStatements)[] | *No description.* |
 | [`audience`](#cdktfprovideroktasamlapppropertyaudience)<span title="Required">*</span> | `string` | *No description.* |
 | [`authnContextClassRef`](#cdktfprovideroktasamlapppropertyauthncontextclassref)<span title="Required">*</span> | `string` | *No description.* |
 | [`autoSubmitToolbar`](#cdktfprovideroktasamlapppropertyautosubmittoolbar)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
@@ -45388,7 +45388,7 @@ public resetUsers()
 | [`userNameTemplatePushStatus`](#cdktfprovideroktasamlapppropertyusernametemplatepushstatus)<span title="Required">*</span> | `string` | *No description.* |
 | [`userNameTemplateSuffix`](#cdktfprovideroktasamlapppropertyusernametemplatesuffix)<span title="Required">*</span> | `string` | *No description.* |
 | [`userNameTemplateType`](#cdktfprovideroktasamlapppropertyusernametemplatetype)<span title="Required">*</span> | `string` | *No description.* |
-| [`users`](#cdktfprovideroktasamlapppropertyusers)<span title="Required">*</span> | [`@cdktf/provider-okta.SamlAppUsers`](#@cdktf/provider-okta.SamlAppUsers)[] | *No description.* |
+| [`users`](#cdktfprovideroktasamlapppropertyusers)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.SamlAppUsers`](#@cdktf/provider-okta.SamlAppUsers)[] | *No description.* |
 
 ---
 
@@ -45595,10 +45595,10 @@ public readonly assertionSignedInput: boolean | IResolvable;
 ##### `attributeStatementsInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.SamlApp.property.attributeStatementsInput" id="cdktfprovideroktasamlapppropertyattributestatementsinput"></a>
 
 ```typescript
-public readonly attributeStatementsInput: SamlAppAttributeStatements[];
+public readonly attributeStatementsInput: IResolvable | SamlAppAttributeStatements[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.SamlAppAttributeStatements`](#@cdktf/provider-okta.SamlAppAttributeStatements)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.SamlAppAttributeStatements`](#@cdktf/provider-okta.SamlAppAttributeStatements)[]
 
 ---
 
@@ -45995,10 +45995,10 @@ public readonly userNameTemplateTypeInput: string;
 ##### `usersInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.SamlApp.property.usersInput" id="cdktfprovideroktasamlapppropertyusersinput"></a>
 
 ```typescript
-public readonly usersInput: SamlAppUsers[];
+public readonly usersInput: IResolvable | SamlAppUsers[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.SamlAppUsers`](#@cdktf/provider-okta.SamlAppUsers)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.SamlAppUsers`](#@cdktf/provider-okta.SamlAppUsers)[]
 
 ---
 
@@ -46085,10 +46085,10 @@ public readonly assertionSigned: boolean | IResolvable;
 ##### `attributeStatements`<sup>Required</sup> <a name="@cdktf/provider-okta.SamlApp.property.attributeStatements" id="cdktfprovideroktasamlapppropertyattributestatements"></a>
 
 ```typescript
-public readonly attributeStatements: SamlAppAttributeStatements[];
+public readonly attributeStatements: IResolvable | SamlAppAttributeStatements[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.SamlAppAttributeStatements`](#@cdktf/provider-okta.SamlAppAttributeStatements)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.SamlAppAttributeStatements`](#@cdktf/provider-okta.SamlAppAttributeStatements)[]
 
 ---
 
@@ -46485,10 +46485,10 @@ public readonly userNameTemplateType: string;
 ##### `users`<sup>Required</sup> <a name="@cdktf/provider-okta.SamlApp.property.users" id="cdktfprovideroktasamlapppropertyusers"></a>
 
 ```typescript
-public readonly users: SamlAppUsers[];
+public readonly users: IResolvable | SamlAppUsers[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.SamlAppUsers`](#@cdktf/provider-okta.SamlAppUsers)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.SamlAppUsers`](#@cdktf/provider-okta.SamlAppUsers)[]
 
 ---
 
@@ -47944,7 +47944,7 @@ public resetUsers()
 | [`userNameTemplatePushStatusInput`](#cdktfprovideroktasecurepasswordstoreapppropertyusernametemplatepushstatusinput) | `string` | *No description.* |
 | [`userNameTemplateSuffixInput`](#cdktfprovideroktasecurepasswordstoreapppropertyusernametemplatesuffixinput) | `string` | *No description.* |
 | [`userNameTemplateTypeInput`](#cdktfprovideroktasecurepasswordstoreapppropertyusernametemplatetypeinput) | `string` | *No description.* |
-| [`usersInput`](#cdktfprovideroktasecurepasswordstoreapppropertyusersinput) | [`@cdktf/provider-okta.SecurePasswordStoreAppUsers`](#@cdktf/provider-okta.SecurePasswordStoreAppUsers)[] | *No description.* |
+| [`usersInput`](#cdktfprovideroktasecurepasswordstoreapppropertyusersinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.SecurePasswordStoreAppUsers`](#@cdktf/provider-okta.SecurePasswordStoreAppUsers)[] | *No description.* |
 | [`accessibilityErrorRedirectUrl`](#cdktfprovideroktasecurepasswordstoreapppropertyaccessibilityerrorredirecturl)<span title="Required">*</span> | `string` | *No description.* |
 | [`accessibilityLoginRedirectUrl`](#cdktfprovideroktasecurepasswordstoreapppropertyaccessibilityloginredirecturl)<span title="Required">*</span> | `string` | *No description.* |
 | [`accessibilitySelfService`](#cdktfprovideroktasecurepasswordstoreapppropertyaccessibilityselfservice)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
@@ -47977,7 +47977,7 @@ public resetUsers()
 | [`userNameTemplatePushStatus`](#cdktfprovideroktasecurepasswordstoreapppropertyusernametemplatepushstatus)<span title="Required">*</span> | `string` | *No description.* |
 | [`userNameTemplateSuffix`](#cdktfprovideroktasecurepasswordstoreapppropertyusernametemplatesuffix)<span title="Required">*</span> | `string` | *No description.* |
 | [`userNameTemplateType`](#cdktfprovideroktasecurepasswordstoreapppropertyusernametemplatetype)<span title="Required">*</span> | `string` | *No description.* |
-| [`users`](#cdktfprovideroktasecurepasswordstoreapppropertyusers)<span title="Required">*</span> | [`@cdktf/provider-okta.SecurePasswordStoreAppUsers`](#@cdktf/provider-okta.SecurePasswordStoreAppUsers)[] | *No description.* |
+| [`users`](#cdktfprovideroktasecurepasswordstoreapppropertyusers)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.SecurePasswordStoreAppUsers`](#@cdktf/provider-okta.SecurePasswordStoreAppUsers)[] | *No description.* |
 
 ---
 
@@ -48344,10 +48344,10 @@ public readonly userNameTemplateTypeInput: string;
 ##### `usersInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.SecurePasswordStoreApp.property.usersInput" id="cdktfprovideroktasecurepasswordstoreapppropertyusersinput"></a>
 
 ```typescript
-public readonly usersInput: SecurePasswordStoreAppUsers[];
+public readonly usersInput: IResolvable | SecurePasswordStoreAppUsers[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.SecurePasswordStoreAppUsers`](#@cdktf/provider-okta.SecurePasswordStoreAppUsers)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.SecurePasswordStoreAppUsers`](#@cdktf/provider-okta.SecurePasswordStoreAppUsers)[]
 
 ---
 
@@ -48674,10 +48674,10 @@ public readonly userNameTemplateType: string;
 ##### `users`<sup>Required</sup> <a name="@cdktf/provider-okta.SecurePasswordStoreApp.property.users" id="cdktfprovideroktasecurepasswordstoreapppropertyusers"></a>
 
 ```typescript
-public readonly users: SecurePasswordStoreAppUsers[];
+public readonly users: IResolvable | SecurePasswordStoreAppUsers[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.SecurePasswordStoreAppUsers`](#@cdktf/provider-okta.SecurePasswordStoreAppUsers)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.SecurePasswordStoreAppUsers`](#@cdktf/provider-okta.SecurePasswordStoreAppUsers)[]
 
 ---
 
@@ -49353,7 +49353,7 @@ public resetUsersExcluded()
 | [`accessInput`](#cdktfprovideroktasignonpolicyrulepropertyaccessinput) | `string` | *No description.* |
 | [`authtypeInput`](#cdktfprovideroktasignonpolicyrulepropertyauthtypeinput) | `string` | *No description.* |
 | [`behaviorsInput`](#cdktfprovideroktasignonpolicyrulepropertybehaviorsinput) | `string`[] | *No description.* |
-| [`factorSequenceInput`](#cdktfprovideroktasignonpolicyrulepropertyfactorsequenceinput) | [`@cdktf/provider-okta.SignonPolicyRuleFactorSequence`](#@cdktf/provider-okta.SignonPolicyRuleFactorSequence)[] | *No description.* |
+| [`factorSequenceInput`](#cdktfprovideroktasignonpolicyrulepropertyfactorsequenceinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.SignonPolicyRuleFactorSequence`](#@cdktf/provider-okta.SignonPolicyRuleFactorSequence)[] | *No description.* |
 | [`mfaLifetimeInput`](#cdktfprovideroktasignonpolicyrulepropertymfalifetimeinput) | `number` | *No description.* |
 | [`mfaPromptInput`](#cdktfprovideroktasignonpolicyrulepropertymfapromptinput) | `string` | *No description.* |
 | [`mfaRememberDeviceInput`](#cdktfprovideroktasignonpolicyrulepropertymfarememberdeviceinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
@@ -49375,7 +49375,7 @@ public resetUsersExcluded()
 | [`access`](#cdktfprovideroktasignonpolicyrulepropertyaccess)<span title="Required">*</span> | `string` | *No description.* |
 | [`authtype`](#cdktfprovideroktasignonpolicyrulepropertyauthtype)<span title="Required">*</span> | `string` | *No description.* |
 | [`behaviors`](#cdktfprovideroktasignonpolicyrulepropertybehaviors)<span title="Required">*</span> | `string`[] | *No description.* |
-| [`factorSequence`](#cdktfprovideroktasignonpolicyrulepropertyfactorsequence)<span title="Required">*</span> | [`@cdktf/provider-okta.SignonPolicyRuleFactorSequence`](#@cdktf/provider-okta.SignonPolicyRuleFactorSequence)[] | *No description.* |
+| [`factorSequence`](#cdktfprovideroktasignonpolicyrulepropertyfactorsequence)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.SignonPolicyRuleFactorSequence`](#@cdktf/provider-okta.SignonPolicyRuleFactorSequence)[] | *No description.* |
 | [`mfaLifetime`](#cdktfprovideroktasignonpolicyrulepropertymfalifetime)<span title="Required">*</span> | `number` | *No description.* |
 | [`mfaPrompt`](#cdktfprovideroktasignonpolicyrulepropertymfaprompt)<span title="Required">*</span> | `string` | *No description.* |
 | [`mfaRememberDevice`](#cdktfprovideroktasignonpolicyrulepropertymfarememberdevice)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
@@ -49440,10 +49440,10 @@ public readonly behaviorsInput: string[];
 ##### `factorSequenceInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.SignonPolicyRule.property.factorSequenceInput" id="cdktfprovideroktasignonpolicyrulepropertyfactorsequenceinput"></a>
 
 ```typescript
-public readonly factorSequenceInput: SignonPolicyRuleFactorSequence[];
+public readonly factorSequenceInput: IResolvable | SignonPolicyRuleFactorSequence[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.SignonPolicyRuleFactorSequence`](#@cdktf/provider-okta.SignonPolicyRuleFactorSequence)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.SignonPolicyRuleFactorSequence`](#@cdktf/provider-okta.SignonPolicyRuleFactorSequence)[]
 
 ---
 
@@ -49660,10 +49660,10 @@ public readonly behaviors: string[];
 ##### `factorSequence`<sup>Required</sup> <a name="@cdktf/provider-okta.SignonPolicyRule.property.factorSequence" id="cdktfprovideroktasignonpolicyrulepropertyfactorsequence"></a>
 
 ```typescript
-public readonly factorSequence: SignonPolicyRuleFactorSequence[];
+public readonly factorSequence: IResolvable | SignonPolicyRuleFactorSequence[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.SignonPolicyRuleFactorSequence`](#@cdktf/provider-okta.SignonPolicyRuleFactorSequence)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.SignonPolicyRuleFactorSequence`](#@cdktf/provider-okta.SignonPolicyRuleFactorSequence)[]
 
 ---
 
@@ -51143,7 +51143,7 @@ public resetUsers()
 | [`userNameTemplatePushStatusInput`](#cdktfprovideroktaswaapppropertyusernametemplatepushstatusinput) | `string` | *No description.* |
 | [`userNameTemplateSuffixInput`](#cdktfprovideroktaswaapppropertyusernametemplatesuffixinput) | `string` | *No description.* |
 | [`userNameTemplateTypeInput`](#cdktfprovideroktaswaapppropertyusernametemplatetypeinput) | `string` | *No description.* |
-| [`usersInput`](#cdktfprovideroktaswaapppropertyusersinput) | [`@cdktf/provider-okta.SwaAppUsers`](#@cdktf/provider-okta.SwaAppUsers)[] | *No description.* |
+| [`usersInput`](#cdktfprovideroktaswaapppropertyusersinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.SwaAppUsers`](#@cdktf/provider-okta.SwaAppUsers)[] | *No description.* |
 | [`accessibilityErrorRedirectUrl`](#cdktfprovideroktaswaapppropertyaccessibilityerrorredirecturl)<span title="Required">*</span> | `string` | *No description.* |
 | [`accessibilityLoginRedirectUrl`](#cdktfprovideroktaswaapppropertyaccessibilityloginredirecturl)<span title="Required">*</span> | `string` | *No description.* |
 | [`accessibilitySelfService`](#cdktfprovideroktaswaapppropertyaccessibilityselfservice)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
@@ -51171,7 +51171,7 @@ public resetUsers()
 | [`userNameTemplatePushStatus`](#cdktfprovideroktaswaapppropertyusernametemplatepushstatus)<span title="Required">*</span> | `string` | *No description.* |
 | [`userNameTemplateSuffix`](#cdktfprovideroktaswaapppropertyusernametemplatesuffix)<span title="Required">*</span> | `string` | *No description.* |
 | [`userNameTemplateType`](#cdktfprovideroktaswaapppropertyusernametemplatetype)<span title="Required">*</span> | `string` | *No description.* |
-| [`users`](#cdktfprovideroktaswaapppropertyusers)<span title="Required">*</span> | [`@cdktf/provider-okta.SwaAppUsers`](#@cdktf/provider-okta.SwaAppUsers)[] | *No description.* |
+| [`users`](#cdktfprovideroktaswaapppropertyusers)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.SwaAppUsers`](#@cdktf/provider-okta.SwaAppUsers)[] | *No description.* |
 
 ---
 
@@ -51488,10 +51488,10 @@ public readonly userNameTemplateTypeInput: string;
 ##### `usersInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.SwaApp.property.usersInput" id="cdktfprovideroktaswaapppropertyusersinput"></a>
 
 ```typescript
-public readonly usersInput: SwaAppUsers[];
+public readonly usersInput: IResolvable | SwaAppUsers[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.SwaAppUsers`](#@cdktf/provider-okta.SwaAppUsers)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.SwaAppUsers`](#@cdktf/provider-okta.SwaAppUsers)[]
 
 ---
 
@@ -51768,10 +51768,10 @@ public readonly userNameTemplateType: string;
 ##### `users`<sup>Required</sup> <a name="@cdktf/provider-okta.SwaApp.property.users" id="cdktfprovideroktaswaapppropertyusers"></a>
 
 ```typescript
-public readonly users: SwaAppUsers[];
+public readonly users: IResolvable | SwaAppUsers[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.SwaAppUsers`](#@cdktf/provider-okta.SwaAppUsers)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.SwaAppUsers`](#@cdktf/provider-okta.SwaAppUsers)[]
 
 ---
 
@@ -51854,10 +51854,10 @@ public resetDefaultLanguage()
 | --- | --- | --- |
 | [`id`](#cdktfprovideroktatemplateemailpropertyid)<span title="Required">*</span> | `string` | *No description.* |
 | [`defaultLanguageInput`](#cdktfprovideroktatemplateemailpropertydefaultlanguageinput) | `string` | *No description.* |
-| [`translationsInput`](#cdktfprovideroktatemplateemailpropertytranslationsinput) | [`@cdktf/provider-okta.TemplateEmailTranslations`](#@cdktf/provider-okta.TemplateEmailTranslations)[] | *No description.* |
+| [`translationsInput`](#cdktfprovideroktatemplateemailpropertytranslationsinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.TemplateEmailTranslations`](#@cdktf/provider-okta.TemplateEmailTranslations)[] | *No description.* |
 | [`typeInput`](#cdktfprovideroktatemplateemailpropertytypeinput) | `string` | *No description.* |
 | [`defaultLanguage`](#cdktfprovideroktatemplateemailpropertydefaultlanguage)<span title="Required">*</span> | `string` | *No description.* |
-| [`translations`](#cdktfprovideroktatemplateemailpropertytranslations)<span title="Required">*</span> | [`@cdktf/provider-okta.TemplateEmailTranslations`](#@cdktf/provider-okta.TemplateEmailTranslations)[] | *No description.* |
+| [`translations`](#cdktfprovideroktatemplateemailpropertytranslations)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.TemplateEmailTranslations`](#@cdktf/provider-okta.TemplateEmailTranslations)[] | *No description.* |
 | [`type`](#cdktfprovideroktatemplateemailpropertytype)<span title="Required">*</span> | `string` | *No description.* |
 
 ---
@@ -51885,10 +51885,10 @@ public readonly defaultLanguageInput: string;
 ##### `translationsInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.TemplateEmail.property.translationsInput" id="cdktfprovideroktatemplateemailpropertytranslationsinput"></a>
 
 ```typescript
-public readonly translationsInput: TemplateEmailTranslations[];
+public readonly translationsInput: IResolvable | TemplateEmailTranslations[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.TemplateEmailTranslations`](#@cdktf/provider-okta.TemplateEmailTranslations)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.TemplateEmailTranslations`](#@cdktf/provider-okta.TemplateEmailTranslations)[]
 
 ---
 
@@ -51915,10 +51915,10 @@ public readonly defaultLanguage: string;
 ##### `translations`<sup>Required</sup> <a name="@cdktf/provider-okta.TemplateEmail.property.translations" id="cdktfprovideroktatemplateemailpropertytranslations"></a>
 
 ```typescript
-public readonly translations: TemplateEmailTranslations[];
+public readonly translations: IResolvable | TemplateEmailTranslations[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.TemplateEmailTranslations`](#@cdktf/provider-okta.TemplateEmailTranslations)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.TemplateEmailTranslations`](#@cdktf/provider-okta.TemplateEmailTranslations)[]
 
 ---
 
@@ -52011,10 +52011,10 @@ public resetTranslations()
 | --- | --- | --- |
 | [`id`](#cdktfprovideroktatemplatesmspropertyid)<span title="Required">*</span> | `string` | *No description.* |
 | [`templateInput`](#cdktfprovideroktatemplatesmspropertytemplateinput) | `string` | *No description.* |
-| [`translationsInput`](#cdktfprovideroktatemplatesmspropertytranslationsinput) | [`@cdktf/provider-okta.TemplateSmsTranslations`](#@cdktf/provider-okta.TemplateSmsTranslations)[] | *No description.* |
+| [`translationsInput`](#cdktfprovideroktatemplatesmspropertytranslationsinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.TemplateSmsTranslations`](#@cdktf/provider-okta.TemplateSmsTranslations)[] | *No description.* |
 | [`typeInput`](#cdktfprovideroktatemplatesmspropertytypeinput) | `string` | *No description.* |
 | [`template`](#cdktfprovideroktatemplatesmspropertytemplate)<span title="Required">*</span> | `string` | *No description.* |
-| [`translations`](#cdktfprovideroktatemplatesmspropertytranslations)<span title="Required">*</span> | [`@cdktf/provider-okta.TemplateSmsTranslations`](#@cdktf/provider-okta.TemplateSmsTranslations)[] | *No description.* |
+| [`translations`](#cdktfprovideroktatemplatesmspropertytranslations)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.TemplateSmsTranslations`](#@cdktf/provider-okta.TemplateSmsTranslations)[] | *No description.* |
 | [`type`](#cdktfprovideroktatemplatesmspropertytype)<span title="Required">*</span> | `string` | *No description.* |
 
 ---
@@ -52042,10 +52042,10 @@ public readonly templateInput: string;
 ##### `translationsInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.TemplateSms.property.translationsInput" id="cdktfprovideroktatemplatesmspropertytranslationsinput"></a>
 
 ```typescript
-public readonly translationsInput: TemplateSmsTranslations[];
+public readonly translationsInput: IResolvable | TemplateSmsTranslations[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.TemplateSmsTranslations`](#@cdktf/provider-okta.TemplateSmsTranslations)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.TemplateSmsTranslations`](#@cdktf/provider-okta.TemplateSmsTranslations)[]
 
 ---
 
@@ -52072,10 +52072,10 @@ public readonly template: string;
 ##### `translations`<sup>Required</sup> <a name="@cdktf/provider-okta.TemplateSms.property.translations" id="cdktfprovideroktatemplatesmspropertytranslations"></a>
 
 ```typescript
-public readonly translations: TemplateSmsTranslations[];
+public readonly translations: IResolvable | TemplateSmsTranslations[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.TemplateSmsTranslations`](#@cdktf/provider-okta.TemplateSmsTranslations)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.TemplateSmsTranslations`](#@cdktf/provider-okta.TemplateSmsTranslations)[]
 
 ---
 
@@ -52496,7 +52496,7 @@ public resetUsers()
 | [`userNameTemplatePushStatusInput`](#cdktfprovideroktathreefieldapppropertyusernametemplatepushstatusinput) | `string` | *No description.* |
 | [`userNameTemplateSuffixInput`](#cdktfprovideroktathreefieldapppropertyusernametemplatesuffixinput) | `string` | *No description.* |
 | [`userNameTemplateTypeInput`](#cdktfprovideroktathreefieldapppropertyusernametemplatetypeinput) | `string` | *No description.* |
-| [`usersInput`](#cdktfprovideroktathreefieldapppropertyusersinput) | [`@cdktf/provider-okta.ThreeFieldAppUsers`](#@cdktf/provider-okta.ThreeFieldAppUsers)[] | *No description.* |
+| [`usersInput`](#cdktfprovideroktathreefieldapppropertyusersinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.ThreeFieldAppUsers`](#@cdktf/provider-okta.ThreeFieldAppUsers)[] | *No description.* |
 | [`accessibilityErrorRedirectUrl`](#cdktfprovideroktathreefieldapppropertyaccessibilityerrorredirecturl)<span title="Required">*</span> | `string` | *No description.* |
 | [`accessibilityLoginRedirectUrl`](#cdktfprovideroktathreefieldapppropertyaccessibilityloginredirecturl)<span title="Required">*</span> | `string` | *No description.* |
 | [`accessibilitySelfService`](#cdktfprovideroktathreefieldapppropertyaccessibilityselfservice)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
@@ -52527,7 +52527,7 @@ public resetUsers()
 | [`userNameTemplatePushStatus`](#cdktfprovideroktathreefieldapppropertyusernametemplatepushstatus)<span title="Required">*</span> | `string` | *No description.* |
 | [`userNameTemplateSuffix`](#cdktfprovideroktathreefieldapppropertyusernametemplatesuffix)<span title="Required">*</span> | `string` | *No description.* |
 | [`userNameTemplateType`](#cdktfprovideroktathreefieldapppropertyusernametemplatetype)<span title="Required">*</span> | `string` | *No description.* |
-| [`users`](#cdktfprovideroktathreefieldapppropertyusers)<span title="Required">*</span> | [`@cdktf/provider-okta.ThreeFieldAppUsers`](#@cdktf/provider-okta.ThreeFieldAppUsers)[] | *No description.* |
+| [`users`](#cdktfprovideroktathreefieldapppropertyusers)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.ThreeFieldAppUsers`](#@cdktf/provider-okta.ThreeFieldAppUsers)[] | *No description.* |
 
 ---
 
@@ -52874,10 +52874,10 @@ public readonly userNameTemplateTypeInput: string;
 ##### `usersInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.ThreeFieldApp.property.usersInput" id="cdktfprovideroktathreefieldapppropertyusersinput"></a>
 
 ```typescript
-public readonly usersInput: ThreeFieldAppUsers[];
+public readonly usersInput: IResolvable | ThreeFieldAppUsers[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.ThreeFieldAppUsers`](#@cdktf/provider-okta.ThreeFieldAppUsers)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.ThreeFieldAppUsers`](#@cdktf/provider-okta.ThreeFieldAppUsers)[]
 
 ---
 
@@ -53184,10 +53184,10 @@ public readonly userNameTemplateType: string;
 ##### `users`<sup>Required</sup> <a name="@cdktf/provider-okta.ThreeFieldApp.property.users" id="cdktfprovideroktathreefieldapppropertyusers"></a>
 
 ```typescript
-public readonly users: ThreeFieldAppUsers[];
+public readonly users: IResolvable | ThreeFieldAppUsers[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.ThreeFieldAppUsers`](#@cdktf/provider-okta.ThreeFieldAppUsers)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.ThreeFieldAppUsers`](#@cdktf/provider-okta.ThreeFieldAppUsers)[]
 
 ---
 
@@ -55872,7 +55872,7 @@ public resetUserType()
 | --- | --- | --- |
 | [`id`](#cdktfprovideroktauserschemapropertyid)<span title="Required">*</span> | `string` | *No description.* |
 | [`arrayEnumInput`](#cdktfprovideroktauserschemapropertyarrayenuminput) | `string`[] | *No description.* |
-| [`arrayOneOfInput`](#cdktfprovideroktauserschemapropertyarrayoneofinput) | [`@cdktf/provider-okta.UserSchemaArrayOneOf`](#@cdktf/provider-okta.UserSchemaArrayOneOf)[] | *No description.* |
+| [`arrayOneOfInput`](#cdktfprovideroktauserschemapropertyarrayoneofinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.UserSchemaArrayOneOf`](#@cdktf/provider-okta.UserSchemaArrayOneOf)[] | *No description.* |
 | [`arrayTypeInput`](#cdktfprovideroktauserschemapropertyarraytypeinput) | `string` | *No description.* |
 | [`descriptionInput`](#cdktfprovideroktauserschemapropertydescriptioninput) | `string` | *No description.* |
 | [`enumInput`](#cdktfprovideroktauserschemapropertyenuminput) | `string`[] | *No description.* |
@@ -55880,10 +55880,10 @@ public resetUserType()
 | [`externalNamespaceInput`](#cdktfprovideroktauserschemapropertyexternalnamespaceinput) | `string` | *No description.* |
 | [`indexInput`](#cdktfprovideroktauserschemapropertyindexinput) | `string` | *No description.* |
 | [`masterInput`](#cdktfprovideroktauserschemapropertymasterinput) | `string` | *No description.* |
-| [`masterOverridePriorityInput`](#cdktfprovideroktauserschemapropertymasteroverridepriorityinput) | [`@cdktf/provider-okta.UserSchemaMasterOverridePriority`](#@cdktf/provider-okta.UserSchemaMasterOverridePriority)[] | *No description.* |
+| [`masterOverridePriorityInput`](#cdktfprovideroktauserschemapropertymasteroverridepriorityinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.UserSchemaMasterOverridePriority`](#@cdktf/provider-okta.UserSchemaMasterOverridePriority)[] | *No description.* |
 | [`maxLengthInput`](#cdktfprovideroktauserschemapropertymaxlengthinput) | `number` | *No description.* |
 | [`minLengthInput`](#cdktfprovideroktauserschemapropertyminlengthinput) | `number` | *No description.* |
-| [`oneOfInput`](#cdktfprovideroktauserschemapropertyoneofinput) | [`@cdktf/provider-okta.UserSchemaOneOf`](#@cdktf/provider-okta.UserSchemaOneOf)[] | *No description.* |
+| [`oneOfInput`](#cdktfprovideroktauserschemapropertyoneofinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.UserSchemaOneOf`](#@cdktf/provider-okta.UserSchemaOneOf)[] | *No description.* |
 | [`patternInput`](#cdktfprovideroktauserschemapropertypatterninput) | `string` | *No description.* |
 | [`permissionsInput`](#cdktfprovideroktauserschemapropertypermissionsinput) | `string` | *No description.* |
 | [`requiredInput`](#cdktfprovideroktauserschemapropertyrequiredinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
@@ -55893,7 +55893,7 @@ public resetUserType()
 | [`uniqueInput`](#cdktfprovideroktauserschemapropertyuniqueinput) | `string` | *No description.* |
 | [`userTypeInput`](#cdktfprovideroktauserschemapropertyusertypeinput) | `string` | *No description.* |
 | [`arrayEnum`](#cdktfprovideroktauserschemapropertyarrayenum)<span title="Required">*</span> | `string`[] | *No description.* |
-| [`arrayOneOf`](#cdktfprovideroktauserschemapropertyarrayoneof)<span title="Required">*</span> | [`@cdktf/provider-okta.UserSchemaArrayOneOf`](#@cdktf/provider-okta.UserSchemaArrayOneOf)[] | *No description.* |
+| [`arrayOneOf`](#cdktfprovideroktauserschemapropertyarrayoneof)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.UserSchemaArrayOneOf`](#@cdktf/provider-okta.UserSchemaArrayOneOf)[] | *No description.* |
 | [`arrayType`](#cdktfprovideroktauserschemapropertyarraytype)<span title="Required">*</span> | `string` | *No description.* |
 | [`description`](#cdktfprovideroktauserschemapropertydescription)<span title="Required">*</span> | `string` | *No description.* |
 | [`enum`](#cdktfprovideroktauserschemapropertyenum)<span title="Required">*</span> | `string`[] | *No description.* |
@@ -55901,10 +55901,10 @@ public resetUserType()
 | [`externalNamespace`](#cdktfprovideroktauserschemapropertyexternalnamespace)<span title="Required">*</span> | `string` | *No description.* |
 | [`index`](#cdktfprovideroktauserschemapropertyindex)<span title="Required">*</span> | `string` | *No description.* |
 | [`master`](#cdktfprovideroktauserschemapropertymaster)<span title="Required">*</span> | `string` | *No description.* |
-| [`masterOverridePriority`](#cdktfprovideroktauserschemapropertymasteroverridepriority)<span title="Required">*</span> | [`@cdktf/provider-okta.UserSchemaMasterOverridePriority`](#@cdktf/provider-okta.UserSchemaMasterOverridePriority)[] | *No description.* |
+| [`masterOverridePriority`](#cdktfprovideroktauserschemapropertymasteroverridepriority)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.UserSchemaMasterOverridePriority`](#@cdktf/provider-okta.UserSchemaMasterOverridePriority)[] | *No description.* |
 | [`maxLength`](#cdktfprovideroktauserschemapropertymaxlength)<span title="Required">*</span> | `number` | *No description.* |
 | [`minLength`](#cdktfprovideroktauserschemapropertyminlength)<span title="Required">*</span> | `number` | *No description.* |
-| [`oneOf`](#cdktfprovideroktauserschemapropertyoneof)<span title="Required">*</span> | [`@cdktf/provider-okta.UserSchemaOneOf`](#@cdktf/provider-okta.UserSchemaOneOf)[] | *No description.* |
+| [`oneOf`](#cdktfprovideroktauserschemapropertyoneof)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.UserSchemaOneOf`](#@cdktf/provider-okta.UserSchemaOneOf)[] | *No description.* |
 | [`pattern`](#cdktfprovideroktauserschemapropertypattern)<span title="Required">*</span> | `string` | *No description.* |
 | [`permissions`](#cdktfprovideroktauserschemapropertypermissions)<span title="Required">*</span> | `string` | *No description.* |
 | [`required`](#cdktfprovideroktauserschemapropertyrequired)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
@@ -55939,10 +55939,10 @@ public readonly arrayEnumInput: string[];
 ##### `arrayOneOfInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.UserSchema.property.arrayOneOfInput" id="cdktfprovideroktauserschemapropertyarrayoneofinput"></a>
 
 ```typescript
-public readonly arrayOneOfInput: UserSchemaArrayOneOf[];
+public readonly arrayOneOfInput: IResolvable | UserSchemaArrayOneOf[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.UserSchemaArrayOneOf`](#@cdktf/provider-okta.UserSchemaArrayOneOf)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.UserSchemaArrayOneOf`](#@cdktf/provider-okta.UserSchemaArrayOneOf)[]
 
 ---
 
@@ -56019,10 +56019,10 @@ public readonly masterInput: string;
 ##### `masterOverridePriorityInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.UserSchema.property.masterOverridePriorityInput" id="cdktfprovideroktauserschemapropertymasteroverridepriorityinput"></a>
 
 ```typescript
-public readonly masterOverridePriorityInput: UserSchemaMasterOverridePriority[];
+public readonly masterOverridePriorityInput: IResolvable | UserSchemaMasterOverridePriority[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.UserSchemaMasterOverridePriority`](#@cdktf/provider-okta.UserSchemaMasterOverridePriority)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.UserSchemaMasterOverridePriority`](#@cdktf/provider-okta.UserSchemaMasterOverridePriority)[]
 
 ---
 
@@ -56049,10 +56049,10 @@ public readonly minLengthInput: number;
 ##### `oneOfInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.UserSchema.property.oneOfInput" id="cdktfprovideroktauserschemapropertyoneofinput"></a>
 
 ```typescript
-public readonly oneOfInput: UserSchemaOneOf[];
+public readonly oneOfInput: IResolvable | UserSchemaOneOf[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.UserSchemaOneOf`](#@cdktf/provider-okta.UserSchemaOneOf)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.UserSchemaOneOf`](#@cdktf/provider-okta.UserSchemaOneOf)[]
 
 ---
 
@@ -56149,10 +56149,10 @@ public readonly arrayEnum: string[];
 ##### `arrayOneOf`<sup>Required</sup> <a name="@cdktf/provider-okta.UserSchema.property.arrayOneOf" id="cdktfprovideroktauserschemapropertyarrayoneof"></a>
 
 ```typescript
-public readonly arrayOneOf: UserSchemaArrayOneOf[];
+public readonly arrayOneOf: IResolvable | UserSchemaArrayOneOf[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.UserSchemaArrayOneOf`](#@cdktf/provider-okta.UserSchemaArrayOneOf)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.UserSchemaArrayOneOf`](#@cdktf/provider-okta.UserSchemaArrayOneOf)[]
 
 ---
 
@@ -56229,10 +56229,10 @@ public readonly master: string;
 ##### `masterOverridePriority`<sup>Required</sup> <a name="@cdktf/provider-okta.UserSchema.property.masterOverridePriority" id="cdktfprovideroktauserschemapropertymasteroverridepriority"></a>
 
 ```typescript
-public readonly masterOverridePriority: UserSchemaMasterOverridePriority[];
+public readonly masterOverridePriority: IResolvable | UserSchemaMasterOverridePriority[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.UserSchemaMasterOverridePriority`](#@cdktf/provider-okta.UserSchemaMasterOverridePriority)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.UserSchemaMasterOverridePriority`](#@cdktf/provider-okta.UserSchemaMasterOverridePriority)[]
 
 ---
 
@@ -56259,10 +56259,10 @@ public readonly minLength: number;
 ##### `oneOf`<sup>Required</sup> <a name="@cdktf/provider-okta.UserSchema.property.oneOf" id="cdktfprovideroktauserschemapropertyoneof"></a>
 
 ```typescript
-public readonly oneOf: UserSchemaOneOf[];
+public readonly oneOf: IResolvable | UserSchemaOneOf[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.UserSchemaOneOf`](#@cdktf/provider-okta.UserSchemaOneOf)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.UserSchemaOneOf`](#@cdktf/provider-okta.UserSchemaOneOf)[]
 
 ---
 
@@ -56544,7 +56544,7 @@ public resetUserType()
 | --- | --- | --- |
 | [`id`](#cdktfprovideroktauserschemapropertypropertyid)<span title="Required">*</span> | `string` | *No description.* |
 | [`arrayEnumInput`](#cdktfprovideroktauserschemapropertypropertyarrayenuminput) | `string`[] | *No description.* |
-| [`arrayOneOfInput`](#cdktfprovideroktauserschemapropertypropertyarrayoneofinput) | [`@cdktf/provider-okta.UserSchemaPropertyArrayOneOf`](#@cdktf/provider-okta.UserSchemaPropertyArrayOneOf)[] | *No description.* |
+| [`arrayOneOfInput`](#cdktfprovideroktauserschemapropertypropertyarrayoneofinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.UserSchemaPropertyArrayOneOf`](#@cdktf/provider-okta.UserSchemaPropertyArrayOneOf)[] | *No description.* |
 | [`arrayTypeInput`](#cdktfprovideroktauserschemapropertypropertyarraytypeinput) | `string` | *No description.* |
 | [`descriptionInput`](#cdktfprovideroktauserschemapropertypropertydescriptioninput) | `string` | *No description.* |
 | [`enumInput`](#cdktfprovideroktauserschemapropertypropertyenuminput) | `string`[] | *No description.* |
@@ -56552,10 +56552,10 @@ public resetUserType()
 | [`externalNamespaceInput`](#cdktfprovideroktauserschemapropertypropertyexternalnamespaceinput) | `string` | *No description.* |
 | [`indexInput`](#cdktfprovideroktauserschemapropertypropertyindexinput) | `string` | *No description.* |
 | [`masterInput`](#cdktfprovideroktauserschemapropertypropertymasterinput) | `string` | *No description.* |
-| [`masterOverridePriorityInput`](#cdktfprovideroktauserschemapropertypropertymasteroverridepriorityinput) | [`@cdktf/provider-okta.UserSchemaPropertyMasterOverridePriority`](#@cdktf/provider-okta.UserSchemaPropertyMasterOverridePriority)[] | *No description.* |
+| [`masterOverridePriorityInput`](#cdktfprovideroktauserschemapropertypropertymasteroverridepriorityinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.UserSchemaPropertyMasterOverridePriority`](#@cdktf/provider-okta.UserSchemaPropertyMasterOverridePriority)[] | *No description.* |
 | [`maxLengthInput`](#cdktfprovideroktauserschemapropertypropertymaxlengthinput) | `number` | *No description.* |
 | [`minLengthInput`](#cdktfprovideroktauserschemapropertypropertyminlengthinput) | `number` | *No description.* |
-| [`oneOfInput`](#cdktfprovideroktauserschemapropertypropertyoneofinput) | [`@cdktf/provider-okta.UserSchemaPropertyOneOf`](#@cdktf/provider-okta.UserSchemaPropertyOneOf)[] | *No description.* |
+| [`oneOfInput`](#cdktfprovideroktauserschemapropertypropertyoneofinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.UserSchemaPropertyOneOf`](#@cdktf/provider-okta.UserSchemaPropertyOneOf)[] | *No description.* |
 | [`patternInput`](#cdktfprovideroktauserschemapropertypropertypatterninput) | `string` | *No description.* |
 | [`permissionsInput`](#cdktfprovideroktauserschemapropertypropertypermissionsinput) | `string` | *No description.* |
 | [`requiredInput`](#cdktfprovideroktauserschemapropertypropertyrequiredinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
@@ -56565,7 +56565,7 @@ public resetUserType()
 | [`uniqueInput`](#cdktfprovideroktauserschemapropertypropertyuniqueinput) | `string` | *No description.* |
 | [`userTypeInput`](#cdktfprovideroktauserschemapropertypropertyusertypeinput) | `string` | *No description.* |
 | [`arrayEnum`](#cdktfprovideroktauserschemapropertypropertyarrayenum)<span title="Required">*</span> | `string`[] | *No description.* |
-| [`arrayOneOf`](#cdktfprovideroktauserschemapropertypropertyarrayoneof)<span title="Required">*</span> | [`@cdktf/provider-okta.UserSchemaPropertyArrayOneOf`](#@cdktf/provider-okta.UserSchemaPropertyArrayOneOf)[] | *No description.* |
+| [`arrayOneOf`](#cdktfprovideroktauserschemapropertypropertyarrayoneof)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.UserSchemaPropertyArrayOneOf`](#@cdktf/provider-okta.UserSchemaPropertyArrayOneOf)[] | *No description.* |
 | [`arrayType`](#cdktfprovideroktauserschemapropertypropertyarraytype)<span title="Required">*</span> | `string` | *No description.* |
 | [`description`](#cdktfprovideroktauserschemapropertypropertydescription)<span title="Required">*</span> | `string` | *No description.* |
 | [`enum`](#cdktfprovideroktauserschemapropertypropertyenum)<span title="Required">*</span> | `string`[] | *No description.* |
@@ -56573,10 +56573,10 @@ public resetUserType()
 | [`externalNamespace`](#cdktfprovideroktauserschemapropertypropertyexternalnamespace)<span title="Required">*</span> | `string` | *No description.* |
 | [`index`](#cdktfprovideroktauserschemapropertypropertyindex)<span title="Required">*</span> | `string` | *No description.* |
 | [`master`](#cdktfprovideroktauserschemapropertypropertymaster)<span title="Required">*</span> | `string` | *No description.* |
-| [`masterOverridePriority`](#cdktfprovideroktauserschemapropertypropertymasteroverridepriority)<span title="Required">*</span> | [`@cdktf/provider-okta.UserSchemaPropertyMasterOverridePriority`](#@cdktf/provider-okta.UserSchemaPropertyMasterOverridePriority)[] | *No description.* |
+| [`masterOverridePriority`](#cdktfprovideroktauserschemapropertypropertymasteroverridepriority)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.UserSchemaPropertyMasterOverridePriority`](#@cdktf/provider-okta.UserSchemaPropertyMasterOverridePriority)[] | *No description.* |
 | [`maxLength`](#cdktfprovideroktauserschemapropertypropertymaxlength)<span title="Required">*</span> | `number` | *No description.* |
 | [`minLength`](#cdktfprovideroktauserschemapropertypropertyminlength)<span title="Required">*</span> | `number` | *No description.* |
-| [`oneOf`](#cdktfprovideroktauserschemapropertypropertyoneof)<span title="Required">*</span> | [`@cdktf/provider-okta.UserSchemaPropertyOneOf`](#@cdktf/provider-okta.UserSchemaPropertyOneOf)[] | *No description.* |
+| [`oneOf`](#cdktfprovideroktauserschemapropertypropertyoneof)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.UserSchemaPropertyOneOf`](#@cdktf/provider-okta.UserSchemaPropertyOneOf)[] | *No description.* |
 | [`pattern`](#cdktfprovideroktauserschemapropertypropertypattern)<span title="Required">*</span> | `string` | *No description.* |
 | [`permissions`](#cdktfprovideroktauserschemapropertypropertypermissions)<span title="Required">*</span> | `string` | *No description.* |
 | [`required`](#cdktfprovideroktauserschemapropertypropertyrequired)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
@@ -56611,10 +56611,10 @@ public readonly arrayEnumInput: string[];
 ##### `arrayOneOfInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.UserSchemaProperty.property.arrayOneOfInput" id="cdktfprovideroktauserschemapropertypropertyarrayoneofinput"></a>
 
 ```typescript
-public readonly arrayOneOfInput: UserSchemaPropertyArrayOneOf[];
+public readonly arrayOneOfInput: IResolvable | UserSchemaPropertyArrayOneOf[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.UserSchemaPropertyArrayOneOf`](#@cdktf/provider-okta.UserSchemaPropertyArrayOneOf)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.UserSchemaPropertyArrayOneOf`](#@cdktf/provider-okta.UserSchemaPropertyArrayOneOf)[]
 
 ---
 
@@ -56691,10 +56691,10 @@ public readonly masterInput: string;
 ##### `masterOverridePriorityInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.UserSchemaProperty.property.masterOverridePriorityInput" id="cdktfprovideroktauserschemapropertypropertymasteroverridepriorityinput"></a>
 
 ```typescript
-public readonly masterOverridePriorityInput: UserSchemaPropertyMasterOverridePriority[];
+public readonly masterOverridePriorityInput: IResolvable | UserSchemaPropertyMasterOverridePriority[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.UserSchemaPropertyMasterOverridePriority`](#@cdktf/provider-okta.UserSchemaPropertyMasterOverridePriority)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.UserSchemaPropertyMasterOverridePriority`](#@cdktf/provider-okta.UserSchemaPropertyMasterOverridePriority)[]
 
 ---
 
@@ -56721,10 +56721,10 @@ public readonly minLengthInput: number;
 ##### `oneOfInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.UserSchemaProperty.property.oneOfInput" id="cdktfprovideroktauserschemapropertypropertyoneofinput"></a>
 
 ```typescript
-public readonly oneOfInput: UserSchemaPropertyOneOf[];
+public readonly oneOfInput: IResolvable | UserSchemaPropertyOneOf[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.UserSchemaPropertyOneOf`](#@cdktf/provider-okta.UserSchemaPropertyOneOf)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.UserSchemaPropertyOneOf`](#@cdktf/provider-okta.UserSchemaPropertyOneOf)[]
 
 ---
 
@@ -56821,10 +56821,10 @@ public readonly arrayEnum: string[];
 ##### `arrayOneOf`<sup>Required</sup> <a name="@cdktf/provider-okta.UserSchemaProperty.property.arrayOneOf" id="cdktfprovideroktauserschemapropertypropertyarrayoneof"></a>
 
 ```typescript
-public readonly arrayOneOf: UserSchemaPropertyArrayOneOf[];
+public readonly arrayOneOf: IResolvable | UserSchemaPropertyArrayOneOf[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.UserSchemaPropertyArrayOneOf`](#@cdktf/provider-okta.UserSchemaPropertyArrayOneOf)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.UserSchemaPropertyArrayOneOf`](#@cdktf/provider-okta.UserSchemaPropertyArrayOneOf)[]
 
 ---
 
@@ -56901,10 +56901,10 @@ public readonly master: string;
 ##### `masterOverridePriority`<sup>Required</sup> <a name="@cdktf/provider-okta.UserSchemaProperty.property.masterOverridePriority" id="cdktfprovideroktauserschemapropertypropertymasteroverridepriority"></a>
 
 ```typescript
-public readonly masterOverridePriority: UserSchemaPropertyMasterOverridePriority[];
+public readonly masterOverridePriority: IResolvable | UserSchemaPropertyMasterOverridePriority[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.UserSchemaPropertyMasterOverridePriority`](#@cdktf/provider-okta.UserSchemaPropertyMasterOverridePriority)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.UserSchemaPropertyMasterOverridePriority`](#@cdktf/provider-okta.UserSchemaPropertyMasterOverridePriority)[]
 
 ---
 
@@ -56931,10 +56931,10 @@ public readonly minLength: number;
 ##### `oneOf`<sup>Required</sup> <a name="@cdktf/provider-okta.UserSchemaProperty.property.oneOf" id="cdktfprovideroktauserschemapropertypropertyoneof"></a>
 
 ```typescript
-public readonly oneOf: UserSchemaPropertyOneOf[];
+public readonly oneOf: IResolvable | UserSchemaPropertyOneOf[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.UserSchemaPropertyOneOf`](#@cdktf/provider-okta.UserSchemaPropertyOneOf)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.UserSchemaPropertyOneOf`](#@cdktf/provider-okta.UserSchemaPropertyOneOf)[]
 
 ---
 
@@ -57192,7 +57192,7 @@ const adminRoleCustomAssignmentsConfig: AdminRoleCustomAssignmentsConfig = { ...
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktaadminrolecustomassignmentsconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktaadminrolecustomassignmentsconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktaadminrolecustomassignmentsconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktaadminrolecustomassignmentsconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktaadminrolecustomassignmentsconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -57205,10 +57205,10 @@ const adminRoleCustomAssignmentsConfig: AdminRoleCustomAssignmentsConfig = { ...
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.AdminRoleCustomAssignmentsConfig.property.count" id="cdktfprovideroktaadminrolecustomassignmentsconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -57298,7 +57298,7 @@ const adminRoleCustomConfig: AdminRoleCustomConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktaadminrolecustomconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktaadminrolecustomconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktaadminrolecustomconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktaadminrolecustomconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktaadminrolecustomconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -57311,10 +57311,10 @@ const adminRoleCustomConfig: AdminRoleCustomConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.AdminRoleCustomConfig.property.count" id="cdktfprovideroktaadminrolecustomconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -57404,7 +57404,7 @@ const adminRoleTargetsConfig: AdminRoleTargetsConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktaadminroletargetsconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktaadminroletargetsconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktaadminroletargetsconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktaadminroletargetsconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktaadminroletargetsconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -57418,10 +57418,10 @@ const adminRoleTargetsConfig: AdminRoleTargetsConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.AdminRoleTargetsConfig.property.count" id="cdktfprovideroktaadminroletargetsconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -57525,7 +57525,7 @@ const appAutoLoginConfig: AppAutoLoginConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktaappautologinconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktaappautologinconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktaappautologinconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktaappautologinconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktaappautologinconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -57556,17 +57556,17 @@ const appAutoLoginConfig: AppAutoLoginConfig = { ... }
 | [`userNameTemplatePushStatus`](#cdktfprovideroktaappautologinconfigpropertyusernametemplatepushstatus) | `string` | Push username on update. |
 | [`userNameTemplateSuffix`](#cdktfprovideroktaappautologinconfigpropertyusernametemplatesuffix) | `string` | Username template suffix. |
 | [`userNameTemplateType`](#cdktfprovideroktaappautologinconfigpropertyusernametemplatetype) | `string` | Username template type. |
-| [`users`](#cdktfprovideroktaappautologinconfigpropertyusers) | [`@cdktf/provider-okta.AppAutoLoginUsers`](#@cdktf/provider-okta.AppAutoLoginUsers)[] | users block. |
+| [`users`](#cdktfprovideroktaappautologinconfigpropertyusers) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.AppAutoLoginUsers`](#@cdktf/provider-okta.AppAutoLoginUsers)[] | users block. |
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.AppAutoLoginConfig.property.count" id="cdktfprovideroktaappautologinconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -57981,10 +57981,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `users`<sup>Optional</sup> <a name="@cdktf/provider-okta.AppAutoLoginConfig.property.users" id="cdktfprovideroktaappautologinconfigpropertyusers"></a>
 
 ```typescript
-public readonly users: AppAutoLoginUsers[];
+public readonly users: IResolvable | AppAutoLoginUsers[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.AppAutoLoginUsers`](#@cdktf/provider-okta.AppAutoLoginUsers)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.AppAutoLoginUsers`](#@cdktf/provider-okta.AppAutoLoginUsers)[]
 
 users block.
 
@@ -58068,7 +58068,7 @@ const appBasicAuthConfig: AppBasicAuthConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktaappbasicauthconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktaappbasicauthconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktaappbasicauthconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktaappbasicauthconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktaappbasicauthconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -58089,17 +58089,17 @@ const appBasicAuthConfig: AppBasicAuthConfig = { ... }
 | [`skipGroups`](#cdktfprovideroktaappbasicauthconfigpropertyskipgroups) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources. |
 | [`skipUsers`](#cdktfprovideroktaappbasicauthconfigpropertyskipusers) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources. |
 | [`status`](#cdktfprovideroktaappbasicauthconfigpropertystatus) | `string` | Status of application. |
-| [`users`](#cdktfprovideroktaappbasicauthconfigpropertyusers) | [`@cdktf/provider-okta.AppBasicAuthUsers`](#@cdktf/provider-okta.AppBasicAuthUsers)[] | users block. |
+| [`users`](#cdktfprovideroktaappbasicauthconfigpropertyusers) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.AppBasicAuthUsers`](#@cdktf/provider-okta.AppBasicAuthUsers)[] | users block. |
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.AppBasicAuthConfig.property.count" id="cdktfprovideroktaappbasicauthconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -58374,10 +58374,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `users`<sup>Optional</sup> <a name="@cdktf/provider-okta.AppBasicAuthConfig.property.users" id="cdktfprovideroktaappbasicauthconfigpropertyusers"></a>
 
 ```typescript
-public readonly users: AppBasicAuthUsers[];
+public readonly users: IResolvable | AppBasicAuthUsers[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.AppBasicAuthUsers`](#@cdktf/provider-okta.AppBasicAuthUsers)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.AppBasicAuthUsers`](#@cdktf/provider-okta.AppBasicAuthUsers)[]
 
 users block.
 
@@ -58461,7 +58461,7 @@ const appBookmarkConfig: AppBookmarkConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktaappbookmarkconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktaappbookmarkconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktaappbookmarkconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktaappbookmarkconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktaappbookmarkconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -58482,17 +58482,17 @@ const appBookmarkConfig: AppBookmarkConfig = { ... }
 | [`skipGroups`](#cdktfprovideroktaappbookmarkconfigpropertyskipgroups) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources. |
 | [`skipUsers`](#cdktfprovideroktaappbookmarkconfigpropertyskipusers) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources. |
 | [`status`](#cdktfprovideroktaappbookmarkconfigpropertystatus) | `string` | Status of application. |
-| [`users`](#cdktfprovideroktaappbookmarkconfigpropertyusers) | [`@cdktf/provider-okta.AppBookmarkUsers`](#@cdktf/provider-okta.AppBookmarkUsers)[] | users block. |
+| [`users`](#cdktfprovideroktaappbookmarkconfigpropertyusers) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.AppBookmarkUsers`](#@cdktf/provider-okta.AppBookmarkUsers)[] | users block. |
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.AppBookmarkConfig.property.count" id="cdktfprovideroktaappbookmarkconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -58763,10 +58763,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `users`<sup>Optional</sup> <a name="@cdktf/provider-okta.AppBookmarkConfig.property.users" id="cdktfprovideroktaappbookmarkconfigpropertyusers"></a>
 
 ```typescript
-public readonly users: AppBookmarkUsers[];
+public readonly users: IResolvable | AppBookmarkUsers[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.AppBookmarkUsers`](#@cdktf/provider-okta.AppBookmarkUsers)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.AppBookmarkUsers`](#@cdktf/provider-okta.AppBookmarkUsers)[]
 
 users block.
 
@@ -58850,7 +58850,7 @@ const appGroupAssignmentConfig: AppGroupAssignmentConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktaappgroupassignmentconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktaappgroupassignmentconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktaappgroupassignmentconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktaappgroupassignmentconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktaappgroupassignmentconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -58865,10 +58865,10 @@ const appGroupAssignmentConfig: AppGroupAssignmentConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.AppGroupAssignmentConfig.property.count" id="cdktfprovideroktaappgroupassignmentconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -58982,22 +58982,22 @@ const appGroupAssignmentsConfig: AppGroupAssignmentsConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktaappgroupassignmentsconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktaappgroupassignmentsconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktaappgroupassignmentsconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktaappgroupassignmentsconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktaappgroupassignmentsconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
 | [`appId`](#cdktfprovideroktaappgroupassignmentsconfigpropertyappid)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_group_assignments#app_id AppGroupAssignments#app_id}. |
-| [`group`](#cdktfprovideroktaappgroupassignmentsconfigpropertygroup)<span title="Required">*</span> | [`@cdktf/provider-okta.AppGroupAssignmentsGroup`](#@cdktf/provider-okta.AppGroupAssignmentsGroup)[] | group block. |
+| [`group`](#cdktfprovideroktaappgroupassignmentsconfigpropertygroup)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.AppGroupAssignmentsGroup`](#@cdktf/provider-okta.AppGroupAssignmentsGroup)[] | group block. |
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.AppGroupAssignmentsConfig.property.count" id="cdktfprovideroktaappgroupassignmentsconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -59046,10 +59046,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `group`<sup>Required</sup> <a name="@cdktf/provider-okta.AppGroupAssignmentsConfig.property.group" id="cdktfprovideroktaappgroupassignmentsconfigpropertygroup"></a>
 
 ```typescript
-public readonly group: AppGroupAssignmentsGroup[];
+public readonly group: IResolvable | AppGroupAssignmentsGroup[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.AppGroupAssignmentsGroup`](#@cdktf/provider-okta.AppGroupAssignmentsGroup)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.AppGroupAssignmentsGroup`](#@cdktf/provider-okta.AppGroupAssignmentsGroup)[]
 
 group block.
 
@@ -59129,7 +59129,7 @@ const appOauthApiScopeConfig: AppOauthApiScopeConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktaappoauthapiscopeconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktaappoauthapiscopeconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktaappoauthapiscopeconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktaappoauthapiscopeconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktaappoauthapiscopeconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -59142,10 +59142,10 @@ const appOauthApiScopeConfig: AppOauthApiScopeConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.AppOauthApiScopeConfig.property.count" id="cdktfprovideroktaappoauthapiscopeconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -59235,7 +59235,7 @@ const appOauthConfig: AppOauthConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktaappoauthconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktaappoauthconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktaappoauthconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktaappoauthconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktaappoauthconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -59262,7 +59262,7 @@ const appOauthConfig: AppOauthConfig = { ... }
 | [`hideWeb`](#cdktfprovideroktaappoauthconfigpropertyhideweb) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Do not display application icon to users. |
 | [`implicitAssignment`](#cdktfprovideroktaappoauthconfigpropertyimplicitassignment) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *Early Access Property*. Enable Federation Broker Mode. |
 | [`issuerMode`](#cdktfprovideroktaappoauthconfigpropertyissuermode) | `string` | *Early Access Property*. |
-| [`jwks`](#cdktfprovideroktaappoauthconfigpropertyjwks) | [`@cdktf/provider-okta.AppOauthJwks`](#@cdktf/provider-okta.AppOauthJwks)[] | jwks block. |
+| [`jwks`](#cdktfprovideroktaappoauthconfigpropertyjwks) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.AppOauthJwks`](#@cdktf/provider-okta.AppOauthJwks)[] | jwks block. |
 | [`loginMode`](#cdktfprovideroktaappoauthconfigpropertyloginmode) | `string` | The type of Idp-Initiated login that the client supports, if any. |
 | [`loginScopes`](#cdktfprovideroktaappoauthconfigpropertyloginscopes) | `string`[] | List of scopes to use for the request. |
 | [`loginUri`](#cdktfprovideroktaappoauthconfigpropertyloginuri) | `string` | URI that initiates login. |
@@ -59285,7 +59285,7 @@ const appOauthConfig: AppOauthConfig = { ... }
 | [`userNameTemplatePushStatus`](#cdktfprovideroktaappoauthconfigpropertyusernametemplatepushstatus) | `string` | Push username on update. |
 | [`userNameTemplateSuffix`](#cdktfprovideroktaappoauthconfigpropertyusernametemplatesuffix) | `string` | Username template suffix. |
 | [`userNameTemplateType`](#cdktfprovideroktaappoauthconfigpropertyusernametemplatetype) | `string` | Username template type. |
-| [`users`](#cdktfprovideroktaappoauthconfigpropertyusers) | [`@cdktf/provider-okta.AppOauthUsers`](#@cdktf/provider-okta.AppOauthUsers)[] | users block. |
+| [`users`](#cdktfprovideroktaappoauthconfigpropertyusers) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.AppOauthUsers`](#@cdktf/provider-okta.AppOauthUsers)[] | users block. |
 | [`wildcardRedirect`](#cdktfprovideroktaappoauthconfigpropertywildcardredirect) | `string` | *Early Access Property*. Indicates if the client is allowed to use wildcard matching of redirect_uris. |
 
 ---
@@ -59293,10 +59293,10 @@ const appOauthConfig: AppOauthConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.AppOauthConfig.property.count" id="cdktfprovideroktaappoauthconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -59655,10 +59655,10 @@ Indicates whether the Okta Authorization Server uses the original Okta org domai
 ##### `jwks`<sup>Optional</sup> <a name="@cdktf/provider-okta.AppOauthConfig.property.jwks" id="cdktfprovideroktaappoauthconfigpropertyjwks"></a>
 
 ```typescript
-public readonly jwks: AppOauthJwks[];
+public readonly jwks: IResolvable | AppOauthJwks[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.AppOauthJwks`](#@cdktf/provider-okta.AppOauthJwks)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.AppOauthJwks`](#@cdktf/provider-okta.AppOauthJwks)[]
 
 jwks block.
 
@@ -59977,10 +59977,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `users`<sup>Optional</sup> <a name="@cdktf/provider-okta.AppOauthConfig.property.users" id="cdktfprovideroktaappoauthconfigpropertyusers"></a>
 
 ```typescript
-public readonly users: AppOauthUsers[];
+public readonly users: IResolvable | AppOauthUsers[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.AppOauthUsers`](#@cdktf/provider-okta.AppOauthUsers)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.AppOauthUsers`](#@cdktf/provider-okta.AppOauthUsers)[]
 
 users block.
 
@@ -60170,7 +60170,7 @@ const appOauthRedirectUriConfig: AppOauthRedirectUriConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktaappoauthredirecturiconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktaappoauthredirecturiconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktaappoauthredirecturiconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktaappoauthredirecturiconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktaappoauthredirecturiconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -60182,10 +60182,10 @@ const appOauthRedirectUriConfig: AppOauthRedirectUriConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.AppOauthRedirectUriConfig.property.count" id="cdktfprovideroktaappoauthredirecturiconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -60321,7 +60321,7 @@ const appSamlAppSettingsConfig: AppSamlAppSettingsConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktaappsamlappsettingsconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktaappsamlappsettingsconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktaappsamlappsettingsconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktaappsamlappsettingsconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktaappsamlappsettingsconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -60333,10 +60333,10 @@ const appSamlAppSettingsConfig: AppSamlAppSettingsConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.AppSamlAppSettingsConfig.property.count" id="cdktfprovideroktaappsamlappsettingsconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -60517,7 +60517,7 @@ const appSamlConfig: AppSamlConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktaappsamlconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktaappsamlconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktaappsamlconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktaappsamlconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktaappsamlconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -60530,7 +60530,7 @@ const appSamlConfig: AppSamlConfig = { ... }
 | [`appLinksJson`](#cdktfprovideroktaappsamlconfigpropertyapplinksjson) | `string` | Displays specific appLinks for the app. |
 | [`appSettingsJson`](#cdktfprovideroktaappsamlconfigpropertyappsettingsjson) | `string` | Application settings in JSON format. |
 | [`assertionSigned`](#cdktfprovideroktaappsamlconfigpropertyassertionsigned) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Determines whether the SAML assertion is digitally signed. |
-| [`attributeStatements`](#cdktfprovideroktaappsamlconfigpropertyattributestatements) | [`@cdktf/provider-okta.AppSamlAttributeStatements`](#@cdktf/provider-okta.AppSamlAttributeStatements)[] | attribute_statements block. |
+| [`attributeStatements`](#cdktfprovideroktaappsamlconfigpropertyattributestatements) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.AppSamlAttributeStatements`](#@cdktf/provider-okta.AppSamlAttributeStatements)[] | attribute_statements block. |
 | [`audience`](#cdktfprovideroktaappsamlconfigpropertyaudience) | `string` | Audience Restriction. |
 | [`authnContextClassRef`](#cdktfprovideroktaappsamlconfigpropertyauthncontextclassref) | `string` | Identifies the SAML authentication context class for the assertion’s authentication statement. |
 | [`autoSubmitToolbar`](#cdktfprovideroktaappsamlconfigpropertyautosubmittoolbar) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Display auto submit toolbar. |
@@ -60569,17 +60569,17 @@ const appSamlConfig: AppSamlConfig = { ... }
 | [`userNameTemplatePushStatus`](#cdktfprovideroktaappsamlconfigpropertyusernametemplatepushstatus) | `string` | Push username on update. |
 | [`userNameTemplateSuffix`](#cdktfprovideroktaappsamlconfigpropertyusernametemplatesuffix) | `string` | Username template suffix. |
 | [`userNameTemplateType`](#cdktfprovideroktaappsamlconfigpropertyusernametemplatetype) | `string` | Username template type. |
-| [`users`](#cdktfprovideroktaappsamlconfigpropertyusers) | [`@cdktf/provider-okta.AppSamlUsers`](#@cdktf/provider-okta.AppSamlUsers)[] | users block. |
+| [`users`](#cdktfprovideroktaappsamlconfigpropertyusers) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.AppSamlUsers`](#@cdktf/provider-okta.AppSamlUsers)[] | users block. |
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.AppSamlConfig.property.count" id="cdktfprovideroktaappsamlconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -60742,10 +60742,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `attributeStatements`<sup>Optional</sup> <a name="@cdktf/provider-okta.AppSamlConfig.property.attributeStatements" id="cdktfprovideroktaappsamlconfigpropertyattributestatements"></a>
 
 ```typescript
-public readonly attributeStatements: AppSamlAttributeStatements[];
+public readonly attributeStatements: IResolvable | AppSamlAttributeStatements[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.AppSamlAttributeStatements`](#@cdktf/provider-okta.AppSamlAttributeStatements)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.AppSamlAttributeStatements`](#@cdktf/provider-okta.AppSamlAttributeStatements)[]
 
 attribute_statements block.
 
@@ -61288,10 +61288,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `users`<sup>Optional</sup> <a name="@cdktf/provider-okta.AppSamlConfig.property.users" id="cdktfprovideroktaappsamlconfigpropertyusers"></a>
 
 ```typescript
-public readonly users: AppSamlUsers[];
+public readonly users: IResolvable | AppSamlUsers[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.AppSamlUsers`](#@cdktf/provider-okta.AppSamlUsers)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.AppSamlUsers`](#@cdktf/provider-okta.AppSamlUsers)[]
 
 users block.
 
@@ -61375,7 +61375,7 @@ const appSecurePasswordStoreConfig: AppSecurePasswordStoreConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktaappsecurepasswordstoreconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktaappsecurepasswordstoreconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktaappsecurepasswordstoreconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktaappsecurepasswordstoreconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktaappsecurepasswordstoreconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -61411,17 +61411,17 @@ const appSecurePasswordStoreConfig: AppSecurePasswordStoreConfig = { ... }
 | [`userNameTemplatePushStatus`](#cdktfprovideroktaappsecurepasswordstoreconfigpropertyusernametemplatepushstatus) | `string` | Push username on update. |
 | [`userNameTemplateSuffix`](#cdktfprovideroktaappsecurepasswordstoreconfigpropertyusernametemplatesuffix) | `string` | Username template suffix. |
 | [`userNameTemplateType`](#cdktfprovideroktaappsecurepasswordstoreconfigpropertyusernametemplatetype) | `string` | Username template type. |
-| [`users`](#cdktfprovideroktaappsecurepasswordstoreconfigpropertyusers) | [`@cdktf/provider-okta.AppSecurePasswordStoreUsers`](#@cdktf/provider-okta.AppSecurePasswordStoreUsers)[] | users block. |
+| [`users`](#cdktfprovideroktaappsecurepasswordstoreconfigpropertyusers) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.AppSecurePasswordStoreUsers`](#@cdktf/provider-okta.AppSecurePasswordStoreUsers)[] | users block. |
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.AppSecurePasswordStoreConfig.property.count" id="cdktfprovideroktaappsecurepasswordstoreconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -61906,10 +61906,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `users`<sup>Optional</sup> <a name="@cdktf/provider-okta.AppSecurePasswordStoreConfig.property.users" id="cdktfprovideroktaappsecurepasswordstoreconfigpropertyusers"></a>
 
 ```typescript
-public readonly users: AppSecurePasswordStoreUsers[];
+public readonly users: IResolvable | AppSecurePasswordStoreUsers[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.AppSecurePasswordStoreUsers`](#@cdktf/provider-okta.AppSecurePasswordStoreUsers)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.AppSecurePasswordStoreUsers`](#@cdktf/provider-okta.AppSecurePasswordStoreUsers)[]
 
 users block.
 
@@ -61993,7 +61993,7 @@ const appSharedCredentialsConfig: AppSharedCredentialsConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktaappsharedcredentialsconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktaappsharedcredentialsconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktaappsharedcredentialsconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktaappsharedcredentialsconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktaappsharedcredentialsconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -62026,17 +62026,17 @@ const appSharedCredentialsConfig: AppSharedCredentialsConfig = { ... }
 | [`userNameTemplatePushStatus`](#cdktfprovideroktaappsharedcredentialsconfigpropertyusernametemplatepushstatus) | `string` | Push username on update. |
 | [`userNameTemplateSuffix`](#cdktfprovideroktaappsharedcredentialsconfigpropertyusernametemplatesuffix) | `string` | Username template suffix. |
 | [`userNameTemplateType`](#cdktfprovideroktaappsharedcredentialsconfigpropertyusernametemplatetype) | `string` | Username template type. |
-| [`users`](#cdktfprovideroktaappsharedcredentialsconfigpropertyusers) | [`@cdktf/provider-okta.AppSharedCredentialsUsers`](#@cdktf/provider-okta.AppSharedCredentialsUsers)[] | users block. |
+| [`users`](#cdktfprovideroktaappsharedcredentialsconfigpropertyusers) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.AppSharedCredentialsUsers`](#@cdktf/provider-okta.AppSharedCredentialsUsers)[] | users block. |
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.AppSharedCredentialsConfig.property.count" id="cdktfprovideroktaappsharedcredentialsconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -62479,10 +62479,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `users`<sup>Optional</sup> <a name="@cdktf/provider-okta.AppSharedCredentialsConfig.property.users" id="cdktfprovideroktaappsharedcredentialsconfigpropertyusers"></a>
 
 ```typescript
-public readonly users: AppSharedCredentialsUsers[];
+public readonly users: IResolvable | AppSharedCredentialsUsers[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.AppSharedCredentialsUsers`](#@cdktf/provider-okta.AppSharedCredentialsUsers)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.AppSharedCredentialsUsers`](#@cdktf/provider-okta.AppSharedCredentialsUsers)[]
 
 users block.
 
@@ -62566,7 +62566,7 @@ const appSignonPolicyRuleConfig: AppSignonPolicyRuleConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktaappsignonpolicyruleconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktaappsignonpolicyruleconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktaappsignonpolicyruleconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktaappsignonpolicyruleconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktaappsignonpolicyruleconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -62583,7 +62583,7 @@ const appSignonPolicyRuleConfig: AppSignonPolicyRuleConfig = { ... }
 | [`networkConnection`](#cdktfprovideroktaappsignonpolicyruleconfigpropertynetworkconnection) | `string` | Network selection mode: ANYWHERE, ZONE, ON_NETWORK, or OFF_NETWORK. |
 | [`networkExcludes`](#cdktfprovideroktaappsignonpolicyruleconfigpropertynetworkexcludes) | `string`[] | The zones to exclude. |
 | [`networkIncludes`](#cdktfprovideroktaappsignonpolicyruleconfigpropertynetworkincludes) | `string`[] | The zones to include. |
-| [`platformInclude`](#cdktfprovideroktaappsignonpolicyruleconfigpropertyplatforminclude) | [`@cdktf/provider-okta.AppSignonPolicyRulePlatformInclude`](#@cdktf/provider-okta.AppSignonPolicyRulePlatformInclude)[] | platform_include block. |
+| [`platformInclude`](#cdktfprovideroktaappsignonpolicyruleconfigpropertyplatforminclude) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.AppSignonPolicyRulePlatformInclude`](#@cdktf/provider-okta.AppSignonPolicyRulePlatformInclude)[] | platform_include block. |
 | [`priority`](#cdktfprovideroktaappsignonpolicyruleconfigpropertypriority) | `number` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_signon_policy_rule#priority AppSignonPolicyRule#priority}. |
 | [`reAuthenticationFrequency`](#cdktfprovideroktaappsignonpolicyruleconfigpropertyreauthenticationfrequency) | `string` | The duration after which the end user must re-authenticate, regardless of user activity. |
 | [`status`](#cdktfprovideroktaappsignonpolicyruleconfigpropertystatus) | `string` | Status of the rule. |
@@ -62598,10 +62598,10 @@ const appSignonPolicyRuleConfig: AppSignonPolicyRuleConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.AppSignonPolicyRuleConfig.property.count" id="cdktfprovideroktaappsignonpolicyruleconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -62820,10 +62820,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `platformInclude`<sup>Optional</sup> <a name="@cdktf/provider-okta.AppSignonPolicyRuleConfig.property.platformInclude" id="cdktfprovideroktaappsignonpolicyruleconfigpropertyplatforminclude"></a>
 
 ```typescript
-public readonly platformInclude: AppSignonPolicyRulePlatformInclude[];
+public readonly platformInclude: IResolvable | AppSignonPolicyRulePlatformInclude[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.AppSignonPolicyRulePlatformInclude`](#@cdktf/provider-okta.AppSignonPolicyRulePlatformInclude)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.AppSignonPolicyRulePlatformInclude`](#@cdktf/provider-okta.AppSignonPolicyRulePlatformInclude)[]
 
 platform_include block.
 
@@ -63013,7 +63013,7 @@ const appSwaConfig: AppSwaConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktaappswaconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktaappswaconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktaappswaconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktaappswaconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktaappswaconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -63044,17 +63044,17 @@ const appSwaConfig: AppSwaConfig = { ... }
 | [`userNameTemplatePushStatus`](#cdktfprovideroktaappswaconfigpropertyusernametemplatepushstatus) | `string` | Push username on update. |
 | [`userNameTemplateSuffix`](#cdktfprovideroktaappswaconfigpropertyusernametemplatesuffix) | `string` | Username template suffix. |
 | [`userNameTemplateType`](#cdktfprovideroktaappswaconfigpropertyusernametemplatetype) | `string` | Username template type. |
-| [`users`](#cdktfprovideroktaappswaconfigpropertyusers) | [`@cdktf/provider-okta.AppSwaUsers`](#@cdktf/provider-okta.AppSwaUsers)[] | users block. |
+| [`users`](#cdktfprovideroktaappswaconfigpropertyusers) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.AppSwaUsers`](#@cdktf/provider-okta.AppSwaUsers)[] | users block. |
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.AppSwaConfig.property.count" id="cdktfprovideroktaappswaconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -63469,10 +63469,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `users`<sup>Optional</sup> <a name="@cdktf/provider-okta.AppSwaConfig.property.users" id="cdktfprovideroktaappswaconfigpropertyusers"></a>
 
 ```typescript
-public readonly users: AppSwaUsers[];
+public readonly users: IResolvable | AppSwaUsers[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.AppSwaUsers`](#@cdktf/provider-okta.AppSwaUsers)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.AppSwaUsers`](#@cdktf/provider-okta.AppSwaUsers)[]
 
 users block.
 
@@ -63556,7 +63556,7 @@ const appThreeFieldConfig: AppThreeFieldConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktaappthreefieldconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktaappthreefieldconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktaappthreefieldconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktaappthreefieldconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktaappthreefieldconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -63590,17 +63590,17 @@ const appThreeFieldConfig: AppThreeFieldConfig = { ... }
 | [`userNameTemplatePushStatus`](#cdktfprovideroktaappthreefieldconfigpropertyusernametemplatepushstatus) | `string` | Push username on update. |
 | [`userNameTemplateSuffix`](#cdktfprovideroktaappthreefieldconfigpropertyusernametemplatesuffix) | `string` | Username template suffix. |
 | [`userNameTemplateType`](#cdktfprovideroktaappthreefieldconfigpropertyusernametemplatetype) | `string` | Username template type. |
-| [`users`](#cdktfprovideroktaappthreefieldconfigpropertyusers) | [`@cdktf/provider-okta.AppThreeFieldUsers`](#@cdktf/provider-okta.AppThreeFieldUsers)[] | users block. |
+| [`users`](#cdktfprovideroktaappthreefieldconfigpropertyusers) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.AppThreeFieldUsers`](#@cdktf/provider-okta.AppThreeFieldUsers)[] | users block. |
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.AppThreeFieldConfig.property.count" id="cdktfprovideroktaappthreefieldconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -64057,10 +64057,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `users`<sup>Optional</sup> <a name="@cdktf/provider-okta.AppThreeFieldConfig.property.users" id="cdktfprovideroktaappthreefieldconfigpropertyusers"></a>
 
 ```typescript
-public readonly users: AppThreeFieldUsers[];
+public readonly users: IResolvable | AppThreeFieldUsers[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.AppThreeFieldUsers`](#@cdktf/provider-okta.AppThreeFieldUsers)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.AppThreeFieldUsers`](#@cdktf/provider-okta.AppThreeFieldUsers)[]
 
 users block.
 
@@ -64144,7 +64144,7 @@ const appUserBaseSchemaConfig: AppUserBaseSchemaConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktaappuserbaseschemaconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktaappuserbaseschemaconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktaappuserbaseschemaconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktaappuserbaseschemaconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktaappuserbaseschemaconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -64163,10 +64163,10 @@ const appUserBaseSchemaConfig: AppUserBaseSchemaConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.AppUserBaseSchemaConfig.property.count" id="cdktfprovideroktaappuserbaseschemaconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -64338,7 +64338,7 @@ const appUserBaseSchemaPropertyConfig: AppUserBaseSchemaPropertyConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktaappuserbaseschemapropertyconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktaappuserbaseschemapropertyconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktaappuserbaseschemapropertyconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktaappuserbaseschemapropertyconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktaappuserbaseschemapropertyconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -64357,10 +64357,10 @@ const appUserBaseSchemaPropertyConfig: AppUserBaseSchemaPropertyConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.AppUserBaseSchemaPropertyConfig.property.count" id="cdktfprovideroktaappuserbaseschemapropertyconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -64532,7 +64532,7 @@ const appUserConfig: AppUserConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktaappuserconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktaappuserconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktaappuserconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktaappuserconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktaappuserconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -64548,10 +64548,10 @@ const appUserConfig: AppUserConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.AppUserConfig.property.count" id="cdktfprovideroktaappuserconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -64724,7 +64724,7 @@ const appUserSchemaConfig: AppUserSchemaConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktaappuserschemaconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktaappuserschemaconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktaappuserschemaconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktaappuserschemaconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktaappuserschemaconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -64733,7 +64733,7 @@ const appUserSchemaConfig: AppUserSchemaConfig = { ... }
 | [`title`](#cdktfprovideroktaappuserschemaconfigpropertytitle)<span title="Required">*</span> | `string` | Subschema title (display name). |
 | [`type`](#cdktfprovideroktaappuserschemaconfigpropertytype)<span title="Required">*</span> | `string` | Subschema type: string, boolean, number, integer, array, or object. |
 | [`arrayEnum`](#cdktfprovideroktaappuserschemaconfigpropertyarrayenum) | `string`[] | Custom Subschema enumerated value of a property of type array. |
-| [`arrayOneOf`](#cdktfprovideroktaappuserschemaconfigpropertyarrayoneof) | [`@cdktf/provider-okta.AppUserSchemaArrayOneOf`](#@cdktf/provider-okta.AppUserSchemaArrayOneOf)[] | array_one_of block. |
+| [`arrayOneOf`](#cdktfprovideroktaappuserschemaconfigpropertyarrayoneof) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.AppUserSchemaArrayOneOf`](#@cdktf/provider-okta.AppUserSchemaArrayOneOf)[] | array_one_of block. |
 | [`arrayType`](#cdktfprovideroktaappuserschemaconfigpropertyarraytype) | `string` | Subschema array type: string, number, integer, reference. Type field must be an array. |
 | [`description`](#cdktfprovideroktaappuserschemaconfigpropertydescription) | `string` | Custom Subschema description. |
 | [`enum`](#cdktfprovideroktaappuserschemaconfigpropertyenum) | `string`[] | Custom Subschema enumerated value of the property. see: developer.okta.com/docs/api/resources/schemas#user-profile-schema-property-object. |
@@ -64742,7 +64742,7 @@ const appUserSchemaConfig: AppUserSchemaConfig = { ... }
 | [`master`](#cdktfprovideroktaappuserschemaconfigpropertymaster) | `string` | SubSchema profile manager, if not set it will inherit its setting. |
 | [`maxLength`](#cdktfprovideroktaappuserschemaconfigpropertymaxlength) | `number` | Subschema of type string maximum length. |
 | [`minLength`](#cdktfprovideroktaappuserschemaconfigpropertyminlength) | `number` | Subschema of type string minimum length. |
-| [`oneOf`](#cdktfprovideroktaappuserschemaconfigpropertyoneof) | [`@cdktf/provider-okta.AppUserSchemaOneOf`](#@cdktf/provider-okta.AppUserSchemaOneOf)[] | one_of block. |
+| [`oneOf`](#cdktfprovideroktaappuserschemaconfigpropertyoneof) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.AppUserSchemaOneOf`](#@cdktf/provider-okta.AppUserSchemaOneOf)[] | one_of block. |
 | [`permissions`](#cdktfprovideroktaappuserschemaconfigpropertypermissions) | `string` | SubSchema permissions: HIDE, READ_ONLY, or READ_WRITE. |
 | [`required`](#cdktfprovideroktaappuserschemaconfigpropertyrequired) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Whether the subschema is required. |
 | [`scope`](#cdktfprovideroktaappuserschemaconfigpropertyscope) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema#scope AppUserSchema#scope}. |
@@ -64755,10 +64755,10 @@ const appUserSchemaConfig: AppUserSchemaConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.AppUserSchemaConfig.property.count" id="cdktfprovideroktaappuserschemaconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -64863,10 +64863,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `arrayOneOf`<sup>Optional</sup> <a name="@cdktf/provider-okta.AppUserSchemaConfig.property.arrayOneOf" id="cdktfprovideroktaappuserschemaconfigpropertyarrayoneof"></a>
 
 ```typescript
-public readonly arrayOneOf: AppUserSchemaArrayOneOf[];
+public readonly arrayOneOf: IResolvable | AppUserSchemaArrayOneOf[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.AppUserSchemaArrayOneOf`](#@cdktf/provider-okta.AppUserSchemaArrayOneOf)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.AppUserSchemaArrayOneOf`](#@cdktf/provider-okta.AppUserSchemaArrayOneOf)[]
 
 array_one_of block.
 
@@ -64989,10 +64989,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `oneOf`<sup>Optional</sup> <a name="@cdktf/provider-okta.AppUserSchemaConfig.property.oneOf" id="cdktfprovideroktaappuserschemaconfigpropertyoneof"></a>
 
 ```typescript
-public readonly oneOf: AppUserSchemaOneOf[];
+public readonly oneOf: IResolvable | AppUserSchemaOneOf[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.AppUserSchemaOneOf`](#@cdktf/provider-okta.AppUserSchemaOneOf)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.AppUserSchemaOneOf`](#@cdktf/provider-okta.AppUserSchemaOneOf)[]
 
 one_of block.
 
@@ -65190,7 +65190,7 @@ const appUserSchemaPropertyConfig: AppUserSchemaPropertyConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktaappuserschemapropertyconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktaappuserschemapropertyconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktaappuserschemapropertyconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktaappuserschemapropertyconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktaappuserschemapropertyconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -65199,7 +65199,7 @@ const appUserSchemaPropertyConfig: AppUserSchemaPropertyConfig = { ... }
 | [`title`](#cdktfprovideroktaappuserschemapropertyconfigpropertytitle)<span title="Required">*</span> | `string` | Subschema title (display name). |
 | [`type`](#cdktfprovideroktaappuserschemapropertyconfigpropertytype)<span title="Required">*</span> | `string` | Subschema type: string, boolean, number, integer, array, or object. |
 | [`arrayEnum`](#cdktfprovideroktaappuserschemapropertyconfigpropertyarrayenum) | `string`[] | Custom Subschema enumerated value of a property of type array. |
-| [`arrayOneOf`](#cdktfprovideroktaappuserschemapropertyconfigpropertyarrayoneof) | [`@cdktf/provider-okta.AppUserSchemaPropertyArrayOneOf`](#@cdktf/provider-okta.AppUserSchemaPropertyArrayOneOf)[] | array_one_of block. |
+| [`arrayOneOf`](#cdktfprovideroktaappuserschemapropertyconfigpropertyarrayoneof) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.AppUserSchemaPropertyArrayOneOf`](#@cdktf/provider-okta.AppUserSchemaPropertyArrayOneOf)[] | array_one_of block. |
 | [`arrayType`](#cdktfprovideroktaappuserschemapropertyconfigpropertyarraytype) | `string` | Subschema array type: string, number, integer, reference. Type field must be an array. |
 | [`description`](#cdktfprovideroktaappuserschemapropertyconfigpropertydescription) | `string` | Custom Subschema description. |
 | [`enum`](#cdktfprovideroktaappuserschemapropertyconfigpropertyenum) | `string`[] | Custom Subschema enumerated value of the property. see: developer.okta.com/docs/api/resources/schemas#user-profile-schema-property-object. |
@@ -65208,7 +65208,7 @@ const appUserSchemaPropertyConfig: AppUserSchemaPropertyConfig = { ... }
 | [`master`](#cdktfprovideroktaappuserschemapropertyconfigpropertymaster) | `string` | SubSchema profile manager, if not set it will inherit its setting. |
 | [`maxLength`](#cdktfprovideroktaappuserschemapropertyconfigpropertymaxlength) | `number` | Subschema of type string maximum length. |
 | [`minLength`](#cdktfprovideroktaappuserschemapropertyconfigpropertyminlength) | `number` | Subschema of type string minimum length. |
-| [`oneOf`](#cdktfprovideroktaappuserschemapropertyconfigpropertyoneof) | [`@cdktf/provider-okta.AppUserSchemaPropertyOneOf`](#@cdktf/provider-okta.AppUserSchemaPropertyOneOf)[] | one_of block. |
+| [`oneOf`](#cdktfprovideroktaappuserschemapropertyconfigpropertyoneof) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.AppUserSchemaPropertyOneOf`](#@cdktf/provider-okta.AppUserSchemaPropertyOneOf)[] | one_of block. |
 | [`permissions`](#cdktfprovideroktaappuserschemapropertyconfigpropertypermissions) | `string` | SubSchema permissions: HIDE, READ_ONLY, or READ_WRITE. |
 | [`required`](#cdktfprovideroktaappuserschemapropertyconfigpropertyrequired) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Whether the subschema is required. |
 | [`scope`](#cdktfprovideroktaappuserschemapropertyconfigpropertyscope) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema_property#scope AppUserSchemaProperty#scope}. |
@@ -65221,10 +65221,10 @@ const appUserSchemaPropertyConfig: AppUserSchemaPropertyConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.AppUserSchemaPropertyConfig.property.count" id="cdktfprovideroktaappuserschemapropertyconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -65329,10 +65329,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `arrayOneOf`<sup>Optional</sup> <a name="@cdktf/provider-okta.AppUserSchemaPropertyConfig.property.arrayOneOf" id="cdktfprovideroktaappuserschemapropertyconfigpropertyarrayoneof"></a>
 
 ```typescript
-public readonly arrayOneOf: AppUserSchemaPropertyArrayOneOf[];
+public readonly arrayOneOf: IResolvable | AppUserSchemaPropertyArrayOneOf[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.AppUserSchemaPropertyArrayOneOf`](#@cdktf/provider-okta.AppUserSchemaPropertyArrayOneOf)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.AppUserSchemaPropertyArrayOneOf`](#@cdktf/provider-okta.AppUserSchemaPropertyArrayOneOf)[]
 
 array_one_of block.
 
@@ -65455,10 +65455,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `oneOf`<sup>Optional</sup> <a name="@cdktf/provider-okta.AppUserSchemaPropertyConfig.property.oneOf" id="cdktfprovideroktaappuserschemapropertyconfigpropertyoneof"></a>
 
 ```typescript
-public readonly oneOf: AppUserSchemaPropertyOneOf[];
+public readonly oneOf: IResolvable | AppUserSchemaPropertyOneOf[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.AppUserSchemaPropertyOneOf`](#@cdktf/provider-okta.AppUserSchemaPropertyOneOf)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.AppUserSchemaPropertyOneOf`](#@cdktf/provider-okta.AppUserSchemaPropertyOneOf)[]
 
 one_of block.
 
@@ -65609,7 +65609,7 @@ const authenticatorConfig: AuthenticatorConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktaauthenticatorconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktaauthenticatorconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktaauthenticatorconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktaauthenticatorconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktaauthenticatorconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -65627,10 +65627,10 @@ const authenticatorConfig: AuthenticatorConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.AuthenticatorConfig.property.count" id="cdktfprovideroktaauthenticatorconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -65790,7 +65790,7 @@ const authServerClaimConfig: AuthServerClaimConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktaauthserverclaimconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktaauthserverclaimconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktaauthserverclaimconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktaauthserverclaimconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktaauthserverclaimconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -65809,10 +65809,10 @@ const authServerClaimConfig: AuthServerClaimConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.AuthServerClaimConfig.property.count" id="cdktfprovideroktaauthserverclaimconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -65976,7 +65976,7 @@ const authServerClaimDefaultConfig: AuthServerClaimDefaultConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktaauthserverclaimdefaultconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktaauthserverclaimdefaultconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktaauthserverclaimdefaultconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktaauthserverclaimdefaultconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktaauthserverclaimdefaultconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -65990,10 +65990,10 @@ const authServerClaimDefaultConfig: AuthServerClaimDefaultConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.AuthServerClaimDefaultConfig.property.count" id="cdktfprovideroktaauthserverclaimdefaultconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -66093,7 +66093,7 @@ const authServerConfig: AuthServerConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktaauthserverconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktaauthserverconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktaauthserverconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktaauthserverconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktaauthserverconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -66109,10 +66109,10 @@ const authServerConfig: AuthServerConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.AuthServerConfig.property.count" id="cdktfprovideroktaauthserverconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -66238,7 +66238,7 @@ const authServerDefaultConfig: AuthServerDefaultConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktaauthserverdefaultconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktaauthserverdefaultconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktaauthserverdefaultconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktaauthserverdefaultconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktaauthserverdefaultconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -66254,10 +66254,10 @@ const authServerDefaultConfig: AuthServerDefaultConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.AuthServerDefaultConfig.property.count" id="cdktfprovideroktaauthserverdefaultconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -66383,7 +66383,7 @@ const authServerPolicyConfig: AuthServerPolicyConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktaauthserverpolicyconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktaauthserverpolicyconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktaauthserverpolicyconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktaauthserverpolicyconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktaauthserverpolicyconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -66400,10 +66400,10 @@ const authServerPolicyConfig: AuthServerPolicyConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.AuthServerPolicyConfig.property.count" id="cdktfprovideroktaauthserverpolicyconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -66541,7 +66541,7 @@ const authServerPolicyRuleConfig: AuthServerPolicyRuleConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktaauthserverpolicyruleconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktaauthserverpolicyruleconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktaauthserverpolicyruleconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktaauthserverpolicyruleconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktaauthserverpolicyruleconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -66567,10 +66567,10 @@ const authServerPolicyRuleConfig: AuthServerPolicyRuleConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.AuthServerPolicyRuleConfig.property.count" id="cdktfprovideroktaauthserverpolicyruleconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -66822,7 +66822,7 @@ const authServerScopeConfig: AuthServerScopeConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktaauthserverscopeconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktaauthserverscopeconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktaauthserverscopeconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktaauthserverscopeconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktaauthserverscopeconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -66839,10 +66839,10 @@ const authServerScopeConfig: AuthServerScopeConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.AuthServerScopeConfig.property.count" id="cdktfprovideroktaauthserverscopeconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -66986,7 +66986,7 @@ const autoLoginAppConfig: AutoLoginAppConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktaautologinappconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktaautologinappconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktaautologinappconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktaautologinappconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktaautologinappconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -67017,17 +67017,17 @@ const autoLoginAppConfig: AutoLoginAppConfig = { ... }
 | [`userNameTemplatePushStatus`](#cdktfprovideroktaautologinappconfigpropertyusernametemplatepushstatus) | `string` | Push username on update. |
 | [`userNameTemplateSuffix`](#cdktfprovideroktaautologinappconfigpropertyusernametemplatesuffix) | `string` | Username template suffix. |
 | [`userNameTemplateType`](#cdktfprovideroktaautologinappconfigpropertyusernametemplatetype) | `string` | Username template type. |
-| [`users`](#cdktfprovideroktaautologinappconfigpropertyusers) | [`@cdktf/provider-okta.AutoLoginAppUsers`](#@cdktf/provider-okta.AutoLoginAppUsers)[] | users block. |
+| [`users`](#cdktfprovideroktaautologinappconfigpropertyusers) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.AutoLoginAppUsers`](#@cdktf/provider-okta.AutoLoginAppUsers)[] | users block. |
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.AutoLoginAppConfig.property.count" id="cdktfprovideroktaautologinappconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -67442,10 +67442,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `users`<sup>Optional</sup> <a name="@cdktf/provider-okta.AutoLoginAppConfig.property.users" id="cdktfprovideroktaautologinappconfigpropertyusers"></a>
 
 ```typescript
-public readonly users: AutoLoginAppUsers[];
+public readonly users: IResolvable | AutoLoginAppUsers[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.AutoLoginAppUsers`](#@cdktf/provider-okta.AutoLoginAppUsers)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.AutoLoginAppUsers`](#@cdktf/provider-okta.AutoLoginAppUsers)[]
 
 users block.
 
@@ -67529,7 +67529,7 @@ const behaviorConfig: BehaviorConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktabehaviorconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktabehaviorconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktabehaviorconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktabehaviorconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktabehaviorconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -67546,10 +67546,10 @@ const behaviorConfig: BehaviorConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.BehaviorConfig.property.count" id="cdktfprovideroktabehaviorconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -67695,7 +67695,7 @@ const bookmarkAppConfig: BookmarkAppConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktabookmarkappconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktabookmarkappconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktabookmarkappconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktabookmarkappconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktabookmarkappconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -67716,17 +67716,17 @@ const bookmarkAppConfig: BookmarkAppConfig = { ... }
 | [`skipGroups`](#cdktfprovideroktabookmarkappconfigpropertyskipgroups) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources. |
 | [`skipUsers`](#cdktfprovideroktabookmarkappconfigpropertyskipusers) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources. |
 | [`status`](#cdktfprovideroktabookmarkappconfigpropertystatus) | `string` | Status of application. |
-| [`users`](#cdktfprovideroktabookmarkappconfigpropertyusers) | [`@cdktf/provider-okta.BookmarkAppUsers`](#@cdktf/provider-okta.BookmarkAppUsers)[] | users block. |
+| [`users`](#cdktfprovideroktabookmarkappconfigpropertyusers) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.BookmarkAppUsers`](#@cdktf/provider-okta.BookmarkAppUsers)[] | users block. |
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.BookmarkAppConfig.property.count" id="cdktfprovideroktabookmarkappconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -67997,10 +67997,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `users`<sup>Optional</sup> <a name="@cdktf/provider-okta.BookmarkAppConfig.property.users" id="cdktfprovideroktabookmarkappconfigpropertyusers"></a>
 
 ```typescript
-public readonly users: BookmarkAppUsers[];
+public readonly users: IResolvable | BookmarkAppUsers[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.BookmarkAppUsers`](#@cdktf/provider-okta.BookmarkAppUsers)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.BookmarkAppUsers`](#@cdktf/provider-okta.BookmarkAppUsers)[]
 
 users block.
 
@@ -68084,7 +68084,7 @@ const captchaConfig: CaptchaConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktacaptchaconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktacaptchaconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktacaptchaconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktacaptchaconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktacaptchaconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -68098,10 +68098,10 @@ const captchaConfig: CaptchaConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.CaptchaConfig.property.count" id="cdktfprovideroktacaptchaconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -68205,7 +68205,7 @@ const captchaOrgWideSettingsConfig: CaptchaOrgWideSettingsConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktacaptchaorgwidesettingsconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktacaptchaorgwidesettingsconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktacaptchaorgwidesettingsconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktacaptchaorgwidesettingsconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktacaptchaorgwidesettingsconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -68217,10 +68217,10 @@ const captchaOrgWideSettingsConfig: CaptchaOrgWideSettingsConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.CaptchaOrgWideSettingsConfig.property.count" id="cdktfprovideroktacaptchaorgwidesettingsconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -68296,7 +68296,7 @@ const dataOktaAppConfig: DataOktaAppConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktadataoktaappconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktadataoktaappconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktadataoktaappconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktadataoktaappconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktadataoktaappconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -68312,10 +68312,10 @@ const dataOktaAppConfig: DataOktaAppConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.DataOktaAppConfig.property.count" id="cdktfprovideroktadataoktaappconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -68441,7 +68441,7 @@ const dataOktaAppGroupAssignmentsConfig: DataOktaAppGroupAssignmentsConfig = { .
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktadataoktaappgroupassignmentsconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktadataoktaappgroupassignmentsconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktadataoktaappgroupassignmentsconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktadataoktaappgroupassignmentsconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktadataoktaappgroupassignmentsconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -68452,10 +68452,10 @@ const dataOktaAppGroupAssignmentsConfig: DataOktaAppGroupAssignmentsConfig = { .
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.DataOktaAppGroupAssignmentsConfig.property.count" id="cdktfprovideroktadataoktaappgroupassignmentsconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -68517,7 +68517,7 @@ const dataOktaAppMetadataSamlConfig: DataOktaAppMetadataSamlConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktadataoktaappmetadatasamlconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktadataoktaappmetadatasamlconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktadataoktaappmetadatasamlconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktadataoktaappmetadatasamlconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktadataoktaappmetadatasamlconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -68529,10 +68529,10 @@ const dataOktaAppMetadataSamlConfig: DataOktaAppMetadataSamlConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.DataOktaAppMetadataSamlConfig.property.count" id="cdktfprovideroktadataoktaappmetadatasamlconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -68604,7 +68604,7 @@ const dataOktaAppOauthConfig: DataOktaAppOauthConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktadataoktaappoauthconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktadataoktaappoauthconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktadataoktaappoauthconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktadataoktaappoauthconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktadataoktaappoauthconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -68620,10 +68620,10 @@ const dataOktaAppOauthConfig: DataOktaAppOauthConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.DataOktaAppOauthConfig.property.count" id="cdktfprovideroktadataoktaappoauthconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -68749,7 +68749,7 @@ const dataOktaAppSamlConfig: DataOktaAppSamlConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktadataoktaappsamlconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktadataoktaappsamlconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktadataoktaappsamlconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktadataoktaappsamlconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktadataoktaappsamlconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -68766,10 +68766,10 @@ const dataOktaAppSamlConfig: DataOktaAppSamlConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.DataOktaAppSamlConfig.property.count" id="cdktfprovideroktadataoktaappsamlconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -68909,7 +68909,7 @@ const dataOktaAppSignonPolicyConfig: DataOktaAppSignonPolicyConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktadataoktaappsignonpolicyconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktadataoktaappsignonpolicyconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktadataoktaappsignonpolicyconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktadataoktaappsignonpolicyconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktadataoktaappsignonpolicyconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -68920,10 +68920,10 @@ const dataOktaAppSignonPolicyConfig: DataOktaAppSignonPolicyConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.DataOktaAppSignonPolicyConfig.property.count" id="cdktfprovideroktadataoktaappsignonpolicyconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -68985,7 +68985,7 @@ const dataOktaAppUserAssignmentsConfig: DataOktaAppUserAssignmentsConfig = { ...
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktadataoktaappuserassignmentsconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktadataoktaappuserassignmentsconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktadataoktaappuserassignmentsconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktadataoktaappuserassignmentsconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktadataoktaappuserassignmentsconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -68996,10 +68996,10 @@ const dataOktaAppUserAssignmentsConfig: DataOktaAppUserAssignmentsConfig = { ...
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.DataOktaAppUserAssignmentsConfig.property.count" id="cdktfprovideroktadataoktaappuserassignmentsconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -69061,7 +69061,7 @@ const dataOktaAuthenticatorConfig: DataOktaAuthenticatorConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktadataoktaauthenticatorconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktadataoktaauthenticatorconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktadataoktaauthenticatorconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktadataoktaauthenticatorconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktadataoktaauthenticatorconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -69074,10 +69074,10 @@ const dataOktaAuthenticatorConfig: DataOktaAuthenticatorConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.DataOktaAuthenticatorConfig.property.count" id="cdktfprovideroktadataoktaauthenticatorconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -69161,7 +69161,7 @@ const dataOktaAuthServerClaimConfig: DataOktaAuthServerClaimConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktadataoktaauthserverclaimconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktadataoktaauthserverclaimconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktadataoktaauthserverclaimconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktadataoktaauthserverclaimconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktadataoktaauthserverclaimconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -69174,10 +69174,10 @@ const dataOktaAuthServerClaimConfig: DataOktaAuthServerClaimConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.DataOktaAuthServerClaimConfig.property.count" id="cdktfprovideroktadataoktaauthserverclaimconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -69263,7 +69263,7 @@ const dataOktaAuthServerClaimsConfig: DataOktaAuthServerClaimsConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktadataoktaauthserverclaimsconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktadataoktaauthserverclaimsconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktadataoktaauthserverclaimsconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktadataoktaauthserverclaimsconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktadataoktaauthserverclaimsconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -69274,10 +69274,10 @@ const dataOktaAuthServerClaimsConfig: DataOktaAuthServerClaimsConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.DataOktaAuthServerClaimsConfig.property.count" id="cdktfprovideroktadataoktaauthserverclaimsconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -69339,7 +69339,7 @@ const dataOktaAuthServerConfig: DataOktaAuthServerConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktadataoktaauthserverconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktadataoktaauthserverconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktadataoktaauthserverconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktadataoktaauthserverconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktadataoktaauthserverconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -69350,10 +69350,10 @@ const dataOktaAuthServerConfig: DataOktaAuthServerConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.DataOktaAuthServerConfig.property.count" id="cdktfprovideroktadataoktaauthserverconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -69413,7 +69413,7 @@ const dataOktaAuthServerPolicyConfig: DataOktaAuthServerPolicyConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktadataoktaauthserverpolicyconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktadataoktaauthserverpolicyconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktadataoktaauthserverpolicyconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktadataoktaauthserverpolicyconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktadataoktaauthserverpolicyconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -69425,10 +69425,10 @@ const dataOktaAuthServerPolicyConfig: DataOktaAuthServerPolicyConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.DataOktaAuthServerPolicyConfig.property.count" id="cdktfprovideroktadataoktaauthserverpolicyconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -69504,7 +69504,7 @@ const dataOktaAuthServerScopesConfig: DataOktaAuthServerScopesConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktadataoktaauthserverscopesconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktadataoktaauthserverscopesconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktadataoktaauthserverscopesconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktadataoktaauthserverscopesconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktadataoktaauthserverscopesconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -69515,10 +69515,10 @@ const dataOktaAuthServerScopesConfig: DataOktaAuthServerScopesConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.DataOktaAuthServerScopesConfig.property.count" id="cdktfprovideroktadataoktaauthserverscopesconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -69580,7 +69580,7 @@ const dataOktaBehaviorConfig: DataOktaBehaviorConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktadataoktabehaviorconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktadataoktabehaviorconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktadataoktabehaviorconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktadataoktabehaviorconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktadataoktabehaviorconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -69592,10 +69592,10 @@ const dataOktaBehaviorConfig: DataOktaBehaviorConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.DataOktaBehaviorConfig.property.count" id="cdktfprovideroktadataoktabehaviorconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -69667,7 +69667,7 @@ const dataOktaBehaviorsConfig: DataOktaBehaviorsConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktadataoktabehaviorsconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktadataoktabehaviorsconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktadataoktabehaviorsconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktadataoktabehaviorsconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktadataoktabehaviorsconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -69678,10 +69678,10 @@ const dataOktaBehaviorsConfig: DataOktaBehaviorsConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.DataOktaBehaviorsConfig.property.count" id="cdktfprovideroktadataoktabehaviorsconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -69743,7 +69743,7 @@ const dataOktaDefaultPoliciesConfig: DataOktaDefaultPoliciesConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktadataoktadefaultpoliciesconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktadataoktadefaultpoliciesconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktadataoktadefaultpoliciesconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktadataoktadefaultpoliciesconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktadataoktadefaultpoliciesconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -69754,10 +69754,10 @@ const dataOktaDefaultPoliciesConfig: DataOktaDefaultPoliciesConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.DataOktaDefaultPoliciesConfig.property.count" id="cdktfprovideroktadataoktadefaultpoliciesconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -69819,7 +69819,7 @@ const dataOktaDefaultPolicyConfig: DataOktaDefaultPolicyConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktadataoktadefaultpolicyconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktadataoktadefaultpolicyconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktadataoktadefaultpolicyconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktadataoktadefaultpolicyconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktadataoktadefaultpolicyconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -69830,10 +69830,10 @@ const dataOktaDefaultPolicyConfig: DataOktaDefaultPolicyConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.DataOktaDefaultPolicyConfig.property.count" id="cdktfprovideroktadataoktadefaultpolicyconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -69895,7 +69895,7 @@ const dataOktaEveryoneGroupConfig: DataOktaEveryoneGroupConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktadataoktaeveryonegroupconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktadataoktaeveryonegroupconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktadataoktaeveryonegroupconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktadataoktaeveryonegroupconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktadataoktaeveryonegroupconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -69906,10 +69906,10 @@ const dataOktaEveryoneGroupConfig: DataOktaEveryoneGroupConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.DataOktaEveryoneGroupConfig.property.count" id="cdktfprovideroktadataoktaeveryonegroupconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -69971,7 +69971,7 @@ const dataOktaGroupConfig: DataOktaGroupConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktadataoktagroupconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktadataoktagroupconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktadataoktagroupconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktadataoktagroupconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktadataoktagroupconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -69985,10 +69985,10 @@ const dataOktaGroupConfig: DataOktaGroupConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.DataOktaGroupConfig.property.count" id="cdktfprovideroktadataoktagroupconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -70088,7 +70088,7 @@ const dataOktaGroupsConfig: DataOktaGroupsConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktadataoktagroupsconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktadataoktagroupsconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktadataoktagroupsconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktadataoktagroupsconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktadataoktagroupsconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -70101,10 +70101,10 @@ const dataOktaGroupsConfig: DataOktaGroupsConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.DataOktaGroupsConfig.property.count" id="cdktfprovideroktadataoktagroupsconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -70194,7 +70194,7 @@ const dataOktaIdpMetadataSamlConfig: DataOktaIdpMetadataSamlConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktadataoktaidpmetadatasamlconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktadataoktaidpmetadatasamlconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktadataoktaidpmetadatasamlconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktadataoktaidpmetadatasamlconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktadataoktaidpmetadatasamlconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -70205,10 +70205,10 @@ const dataOktaIdpMetadataSamlConfig: DataOktaIdpMetadataSamlConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.DataOktaIdpMetadataSamlConfig.property.count" id="cdktfprovideroktadataoktaidpmetadatasamlconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -70268,7 +70268,7 @@ const dataOktaIdpOidcConfig: DataOktaIdpOidcConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktadataoktaidpoidcconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktadataoktaidpoidcconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktadataoktaidpoidcconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktadataoktaidpoidcconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktadataoktaidpoidcconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -70280,10 +70280,10 @@ const dataOktaIdpOidcConfig: DataOktaIdpOidcConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.DataOktaIdpOidcConfig.property.count" id="cdktfprovideroktadataoktaidpoidcconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -70355,7 +70355,7 @@ const dataOktaIdpSamlConfig: DataOktaIdpSamlConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktadataoktaidpsamlconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktadataoktaidpsamlconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktadataoktaidpsamlconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktadataoktaidpsamlconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktadataoktaidpsamlconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -70367,10 +70367,10 @@ const dataOktaIdpSamlConfig: DataOktaIdpSamlConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.DataOktaIdpSamlConfig.property.count" id="cdktfprovideroktadataoktaidpsamlconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -70442,7 +70442,7 @@ const dataOktaIdpSocialConfig: DataOktaIdpSocialConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktadataoktaidpsocialconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktadataoktaidpsocialconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktadataoktaidpsocialconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktadataoktaidpsocialconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktadataoktaidpsocialconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -70454,10 +70454,10 @@ const dataOktaIdpSocialConfig: DataOktaIdpSocialConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.DataOktaIdpSocialConfig.property.count" id="cdktfprovideroktadataoktaidpsocialconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -70533,7 +70533,7 @@ const dataOktaNetworkZoneConfig: DataOktaNetworkZoneConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktadataoktanetworkzoneconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktadataoktanetworkzoneconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktadataoktanetworkzoneconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktadataoktanetworkzoneconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktadataoktanetworkzoneconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -70545,10 +70545,10 @@ const dataOktaNetworkZoneConfig: DataOktaNetworkZoneConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.DataOktaNetworkZoneConfig.property.count" id="cdktfprovideroktadataoktanetworkzoneconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -70620,7 +70620,7 @@ const dataOktaPolicyConfig: DataOktaPolicyConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktadataoktapolicyconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktadataoktapolicyconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktadataoktapolicyconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktadataoktapolicyconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktadataoktapolicyconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -70632,10 +70632,10 @@ const dataOktaPolicyConfig: DataOktaPolicyConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.DataOktaPolicyConfig.property.count" id="cdktfprovideroktadataoktapolicyconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -70711,7 +70711,7 @@ const dataOktaRoleSubscriptionConfig: DataOktaRoleSubscriptionConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktadataoktarolesubscriptionconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktadataoktarolesubscriptionconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktadataoktarolesubscriptionconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktadataoktarolesubscriptionconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktadataoktarolesubscriptionconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -70723,10 +70723,10 @@ const dataOktaRoleSubscriptionConfig: DataOktaRoleSubscriptionConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.DataOktaRoleSubscriptionConfig.property.count" id="cdktfprovideroktadataoktarolesubscriptionconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -70802,7 +70802,7 @@ const dataOktaTrustedOriginsConfig: DataOktaTrustedOriginsConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktadataoktatrustedoriginsconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktadataoktatrustedoriginsconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktadataoktatrustedoriginsconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktadataoktatrustedoriginsconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktadataoktatrustedoriginsconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -70813,10 +70813,10 @@ const dataOktaTrustedOriginsConfig: DataOktaTrustedOriginsConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.DataOktaTrustedOriginsConfig.property.count" id="cdktfprovideroktadataoktatrustedoriginsconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -70878,11 +70878,11 @@ const dataOktaUserConfig: DataOktaUserConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktadataoktauserconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktadataoktauserconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktadataoktauserconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktadataoktauserconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktadataoktauserconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`search`](#cdktfprovideroktadataoktauserconfigpropertysearch) | [`@cdktf/provider-okta.DataOktaUserSearch`](#@cdktf/provider-okta.DataOktaUserSearch)[] | search block. |
+| [`search`](#cdktfprovideroktadataoktauserconfigpropertysearch) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.DataOktaUserSearch`](#@cdktf/provider-okta.DataOktaUserSearch)[] | search block. |
 | [`userId`](#cdktfprovideroktadataoktauserconfigpropertyuserid) | `string` | Retrieve a single user based on their id. |
 
 ---
@@ -70890,10 +70890,10 @@ const dataOktaUserConfig: DataOktaUserConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.DataOktaUserConfig.property.count" id="cdktfprovideroktadataoktauserconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -70930,10 +70930,10 @@ public readonly provider: TerraformProvider;
 ##### `search`<sup>Optional</sup> <a name="@cdktf/provider-okta.DataOktaUserConfig.property.search" id="cdktfprovideroktadataoktauserconfigpropertysearch"></a>
 
 ```typescript
-public readonly search: DataOktaUserSearch[];
+public readonly search: IResolvable | DataOktaUserSearch[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.DataOktaUserSearch`](#@cdktf/provider-okta.DataOktaUserSearch)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.DataOktaUserSearch`](#@cdktf/provider-okta.DataOktaUserSearch)[]
 
 search block.
 
@@ -70969,7 +70969,7 @@ const dataOktaUserProfileMappingSourceConfig: DataOktaUserProfileMappingSourceCo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktadataoktauserprofilemappingsourceconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktadataoktauserprofilemappingsourceconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktadataoktauserprofilemappingsourceconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktadataoktauserprofilemappingsourceconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktadataoktauserprofilemappingsourceconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -70979,10 +70979,10 @@ const dataOktaUserProfileMappingSourceConfig: DataOktaUserProfileMappingSourceCo
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.DataOktaUserProfileMappingSourceConfig.property.count" id="cdktfprovideroktadataoktauserprofilemappingsourceconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -71030,21 +71030,21 @@ const dataOktaUsersConfig: DataOktaUsersConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktadataoktausersconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktadataoktausersconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktadataoktausersconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktadataoktausersconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktadataoktausersconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`search`](#cdktfprovideroktadataoktausersconfigpropertysearch)<span title="Required">*</span> | [`@cdktf/provider-okta.DataOktaUsersSearch`](#@cdktf/provider-okta.DataOktaUsersSearch)[] | search block. |
+| [`search`](#cdktfprovideroktadataoktausersconfigpropertysearch)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.DataOktaUsersSearch`](#@cdktf/provider-okta.DataOktaUsersSearch)[] | search block. |
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.DataOktaUsersConfig.property.count" id="cdktfprovideroktadataoktausersconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -71081,10 +71081,10 @@ public readonly provider: TerraformProvider;
 ##### `search`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersConfig.property.search" id="cdktfprovideroktadataoktausersconfigpropertysearch"></a>
 
 ```typescript
-public readonly search: DataOktaUsersSearch[];
+public readonly search: IResolvable | DataOktaUsersSearch[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.DataOktaUsersSearch`](#@cdktf/provider-okta.DataOktaUsersSearch)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.DataOktaUsersSearch`](#@cdktf/provider-okta.DataOktaUsersSearch)[]
 
 search block.
 
@@ -71164,7 +71164,7 @@ const dataOktaUserSecurityQuestionsConfig: DataOktaUserSecurityQuestionsConfig =
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktadataoktausersecurityquestionsconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktadataoktausersecurityquestionsconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktadataoktausersecurityquestionsconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktadataoktausersecurityquestionsconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktadataoktausersecurityquestionsconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -71175,10 +71175,10 @@ const dataOktaUserSecurityQuestionsConfig: DataOktaUserSecurityQuestionsConfig =
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.DataOktaUserSecurityQuestionsConfig.property.count" id="cdktfprovideroktadataoktausersecurityquestionsconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -71298,7 +71298,7 @@ const dataOktaUserTypeConfig: DataOktaUserTypeConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktadataoktausertypeconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktadataoktausertypeconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktadataoktausertypeconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktadataoktausertypeconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktadataoktausertypeconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -71309,10 +71309,10 @@ const dataOktaUserTypeConfig: DataOktaUserTypeConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.DataOktaUserTypeConfig.property.count" id="cdktfprovideroktadataoktausertypeconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -71372,7 +71372,7 @@ const domainCertificateConfig: DomainCertificateConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktadomaincertificateconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktadomaincertificateconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktadomaincertificateconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktadomaincertificateconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktadomaincertificateconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -71387,10 +71387,10 @@ const domainCertificateConfig: DomainCertificateConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.DomainCertificateConfig.property.count" id="cdktfprovideroktadomaincertificateconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -71508,7 +71508,7 @@ const domainConfig: DomainConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktadomainconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktadomainconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktadomainconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktadomainconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktadomainconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -71521,10 +71521,10 @@ const domainConfig: DomainConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.DomainConfig.property.count" id="cdktfprovideroktadomainconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -71614,7 +71614,7 @@ const domainVerificationConfig: DomainVerificationConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktadomainverificationconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktadomainverificationconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktadomainverificationconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktadomainverificationconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktadomainverificationconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -71625,10 +71625,10 @@ const domainVerificationConfig: DomainVerificationConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.DomainVerificationConfig.property.count" id="cdktfprovideroktadomainverificationconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -71690,7 +71690,7 @@ const emailSenderConfig: EmailSenderConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktaemailsenderconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktaemailsenderconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktaemailsenderconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktaemailsenderconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktaemailsenderconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -71703,10 +71703,10 @@ const emailSenderConfig: EmailSenderConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.EmailSenderConfig.property.count" id="cdktfprovideroktaemailsenderconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -71796,7 +71796,7 @@ const emailSenderVerificationConfig: EmailSenderVerificationConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktaemailsenderverificationconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktaemailsenderverificationconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktaemailsenderverificationconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktaemailsenderverificationconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktaemailsenderverificationconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -71807,10 +71807,10 @@ const emailSenderVerificationConfig: EmailSenderVerificationConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.EmailSenderVerificationConfig.property.count" id="cdktfprovideroktaemailsenderverificationconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -71872,15 +71872,15 @@ const eventHookConfig: EventHookConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktaeventhookconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktaeventhookconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktaeventhookconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktaeventhookconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktaeventhookconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`channel`](#cdktfprovideroktaeventhookconfigpropertychannel)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/event_hook#channel EventHook#channel}. |
+| [`channel`](#cdktfprovideroktaeventhookconfigpropertychannel)<span title="Required">*</span> | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/event_hook#channel EventHook#channel}. |
 | [`events`](#cdktfprovideroktaeventhookconfigpropertyevents)<span title="Required">*</span> | `string`[] | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/event_hook#events EventHook#events}. |
 | [`name`](#cdktfprovideroktaeventhookconfigpropertyname)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/event_hook#name EventHook#name}. |
-| [`auth`](#cdktfprovideroktaeventhookconfigpropertyauth) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/event_hook#auth EventHook#auth}. |
-| [`headers`](#cdktfprovideroktaeventhookconfigpropertyheaders) | [`@cdktf/provider-okta.EventHookHeaders`](#@cdktf/provider-okta.EventHookHeaders)[] | headers block. |
+| [`auth`](#cdktfprovideroktaeventhookconfigpropertyauth) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/event_hook#auth EventHook#auth}. |
+| [`headers`](#cdktfprovideroktaeventhookconfigpropertyheaders) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.EventHookHeaders`](#@cdktf/provider-okta.EventHookHeaders)[] | headers block. |
 | [`status`](#cdktfprovideroktaeventhookconfigpropertystatus) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/event_hook#status EventHook#status}. |
 
 ---
@@ -71888,10 +71888,10 @@ const eventHookConfig: EventHookConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.EventHookConfig.property.count" id="cdktfprovideroktaeventhookconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -71928,10 +71928,10 @@ public readonly provider: TerraformProvider;
 ##### `channel`<sup>Required</sup> <a name="@cdktf/provider-okta.EventHookConfig.property.channel" id="cdktfprovideroktaeventhookconfigpropertychannel"></a>
 
 ```typescript
-public readonly channel: IResolvable | {[ key: string ]: string};
+public readonly channel: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/event_hook#channel EventHook#channel}.
 
@@ -71964,10 +71964,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `auth`<sup>Optional</sup> <a name="@cdktf/provider-okta.EventHookConfig.property.auth" id="cdktfprovideroktaeventhookconfigpropertyauth"></a>
 
 ```typescript
-public readonly auth: IResolvable | {[ key: string ]: string};
+public readonly auth: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/event_hook#auth EventHook#auth}.
 
@@ -71976,10 +71976,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `headers`<sup>Optional</sup> <a name="@cdktf/provider-okta.EventHookConfig.property.headers" id="cdktfprovideroktaeventhookconfigpropertyheaders"></a>
 
 ```typescript
-public readonly headers: EventHookHeaders[];
+public readonly headers: IResolvable | EventHookHeaders[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.EventHookHeaders`](#@cdktf/provider-okta.EventHookHeaders)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.EventHookHeaders`](#@cdktf/provider-okta.EventHookHeaders)[]
 
 headers block.
 
@@ -72056,7 +72056,7 @@ const eventHookVerificationConfig: EventHookVerificationConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktaeventhookverificationconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktaeventhookverificationconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktaeventhookverificationconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktaeventhookverificationconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktaeventhookverificationconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -72067,10 +72067,10 @@ const eventHookVerificationConfig: EventHookVerificationConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.EventHookVerificationConfig.property.count" id="cdktfprovideroktaeventhookverificationconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -72132,7 +72132,7 @@ const factorConfig: FactorConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktafactorconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktafactorconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktafactorconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktafactorconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktafactorconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -72144,10 +72144,10 @@ const factorConfig: FactorConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.FactorConfig.property.count" id="cdktfprovideroktafactorconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -72223,7 +72223,7 @@ const factorTotpConfig: FactorTotpConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktafactortotpconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktafactortotpconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktafactortotpconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktafactortotpconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktafactortotpconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -72239,10 +72239,10 @@ const factorTotpConfig: FactorTotpConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.FactorTotpConfig.property.count" id="cdktfprovideroktafactortotpconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -72374,7 +72374,7 @@ const groupConfig: GroupConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktagroupconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktagroupconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktagroupconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktagroupconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktagroupconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -72389,10 +72389,10 @@ const groupConfig: GroupConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.GroupConfig.property.count" id="cdktfprovideroktagroupconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -72510,7 +72510,7 @@ const groupMembershipConfig: GroupMembershipConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktagroupmembershipconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktagroupmembershipconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktagroupmembershipconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktagroupmembershipconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktagroupmembershipconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -72522,10 +72522,10 @@ const groupMembershipConfig: GroupMembershipConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.GroupMembershipConfig.property.count" id="cdktfprovideroktagroupmembershipconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -72601,7 +72601,7 @@ const groupMembershipsConfig: GroupMembershipsConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktagroupmembershipsconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktagroupmembershipsconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktagroupmembershipsconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktagroupmembershipsconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktagroupmembershipsconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -72613,10 +72613,10 @@ const groupMembershipsConfig: GroupMembershipsConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.GroupMembershipsConfig.property.count" id="cdktfprovideroktagroupmembershipsconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -72692,7 +72692,7 @@ const groupRoleConfig: GroupRoleConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktagrouproleconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktagrouproleconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktagrouproleconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktagrouproleconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktagrouproleconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -72707,10 +72707,10 @@ const groupRoleConfig: GroupRoleConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.GroupRoleConfig.property.count" id="cdktfprovideroktagrouproleconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -72828,7 +72828,7 @@ const groupRolesConfig: GroupRolesConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktagrouprolesconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktagrouprolesconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktagrouprolesconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktagrouprolesconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktagrouprolesconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -72840,10 +72840,10 @@ const groupRolesConfig: GroupRolesConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.GroupRolesConfig.property.count" id="cdktfprovideroktagrouprolesconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -72919,7 +72919,7 @@ const groupRuleConfig: GroupRuleConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktagroupruleconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktagroupruleconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktagroupruleconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktagroupruleconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktagroupruleconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -72936,10 +72936,10 @@ const groupRuleConfig: GroupRuleConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.GroupRuleConfig.property.count" id="cdktfprovideroktagroupruleconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -73122,7 +73122,7 @@ const groupSchemaPropertyConfig: GroupSchemaPropertyConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktagroupschemapropertyconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktagroupschemapropertyconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktagroupschemapropertyconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktagroupschemapropertyconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktagroupschemapropertyconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -73130,17 +73130,17 @@ const groupSchemaPropertyConfig: GroupSchemaPropertyConfig = { ... }
 | [`title`](#cdktfprovideroktagroupschemapropertyconfigpropertytitle)<span title="Required">*</span> | `string` | Subschema title (display name). |
 | [`type`](#cdktfprovideroktagroupschemapropertyconfigpropertytype)<span title="Required">*</span> | `string` | Subschema type: string, boolean, number, integer, array, or object. |
 | [`arrayEnum`](#cdktfprovideroktagroupschemapropertyconfigpropertyarrayenum) | `string`[] | Custom Subschema enumerated value of a property of type array. |
-| [`arrayOneOf`](#cdktfprovideroktagroupschemapropertyconfigpropertyarrayoneof) | [`@cdktf/provider-okta.GroupSchemaPropertyArrayOneOf`](#@cdktf/provider-okta.GroupSchemaPropertyArrayOneOf)[] | array_one_of block. |
+| [`arrayOneOf`](#cdktfprovideroktagroupschemapropertyconfigpropertyarrayoneof) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.GroupSchemaPropertyArrayOneOf`](#@cdktf/provider-okta.GroupSchemaPropertyArrayOneOf)[] | array_one_of block. |
 | [`arrayType`](#cdktfprovideroktagroupschemapropertyconfigpropertyarraytype) | `string` | Subschema array type: string, number, integer, reference. Type field must be an array. |
 | [`description`](#cdktfprovideroktagroupschemapropertyconfigpropertydescription) | `string` | Custom Subschema description. |
 | [`enum`](#cdktfprovideroktagroupschemapropertyconfigpropertyenum) | `string`[] | Custom Subschema enumerated value of the property. see: developer.okta.com/docs/api/resources/schemas#user-profile-schema-property-object. |
 | [`externalName`](#cdktfprovideroktagroupschemapropertyconfigpropertyexternalname) | `string` | Subschema external name. |
 | [`externalNamespace`](#cdktfprovideroktagroupschemapropertyconfigpropertyexternalnamespace) | `string` | Subschema external namespace. |
 | [`master`](#cdktfprovideroktagroupschemapropertyconfigpropertymaster) | `string` | SubSchema profile manager, if not set it will inherit its setting. |
-| [`masterOverridePriority`](#cdktfprovideroktagroupschemapropertyconfigpropertymasteroverridepriority) | [`@cdktf/provider-okta.GroupSchemaPropertyMasterOverridePriority`](#@cdktf/provider-okta.GroupSchemaPropertyMasterOverridePriority)[] | master_override_priority block. |
+| [`masterOverridePriority`](#cdktfprovideroktagroupschemapropertyconfigpropertymasteroverridepriority) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.GroupSchemaPropertyMasterOverridePriority`](#@cdktf/provider-okta.GroupSchemaPropertyMasterOverridePriority)[] | master_override_priority block. |
 | [`maxLength`](#cdktfprovideroktagroupschemapropertyconfigpropertymaxlength) | `number` | Subschema of type string maximum length. |
 | [`minLength`](#cdktfprovideroktagroupschemapropertyconfigpropertyminlength) | `number` | Subschema of type string minimum length. |
-| [`oneOf`](#cdktfprovideroktagroupschemapropertyconfigpropertyoneof) | [`@cdktf/provider-okta.GroupSchemaPropertyOneOf`](#@cdktf/provider-okta.GroupSchemaPropertyOneOf)[] | one_of block. |
+| [`oneOf`](#cdktfprovideroktagroupschemapropertyconfigpropertyoneof) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.GroupSchemaPropertyOneOf`](#@cdktf/provider-okta.GroupSchemaPropertyOneOf)[] | one_of block. |
 | [`permissions`](#cdktfprovideroktagroupschemapropertyconfigpropertypermissions) | `string` | SubSchema permissions: HIDE, READ_ONLY, or READ_WRITE. |
 | [`required`](#cdktfprovideroktagroupschemapropertyconfigpropertyrequired) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Whether the subschema is required. |
 | [`scope`](#cdktfprovideroktagroupschemapropertyconfigpropertyscope) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_schema_property#scope GroupSchemaProperty#scope}. |
@@ -73151,10 +73151,10 @@ const groupSchemaPropertyConfig: GroupSchemaPropertyConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.GroupSchemaPropertyConfig.property.count" id="cdktfprovideroktagroupschemapropertyconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -73247,10 +73247,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `arrayOneOf`<sup>Optional</sup> <a name="@cdktf/provider-okta.GroupSchemaPropertyConfig.property.arrayOneOf" id="cdktfprovideroktagroupschemapropertyconfigpropertyarrayoneof"></a>
 
 ```typescript
-public readonly arrayOneOf: GroupSchemaPropertyArrayOneOf[];
+public readonly arrayOneOf: IResolvable | GroupSchemaPropertyArrayOneOf[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.GroupSchemaPropertyArrayOneOf`](#@cdktf/provider-okta.GroupSchemaPropertyArrayOneOf)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.GroupSchemaPropertyArrayOneOf`](#@cdktf/provider-okta.GroupSchemaPropertyArrayOneOf)[]
 
 array_one_of block.
 
@@ -73345,10 +73345,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `masterOverridePriority`<sup>Optional</sup> <a name="@cdktf/provider-okta.GroupSchemaPropertyConfig.property.masterOverridePriority" id="cdktfprovideroktagroupschemapropertyconfigpropertymasteroverridepriority"></a>
 
 ```typescript
-public readonly masterOverridePriority: GroupSchemaPropertyMasterOverridePriority[];
+public readonly masterOverridePriority: IResolvable | GroupSchemaPropertyMasterOverridePriority[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.GroupSchemaPropertyMasterOverridePriority`](#@cdktf/provider-okta.GroupSchemaPropertyMasterOverridePriority)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.GroupSchemaPropertyMasterOverridePriority`](#@cdktf/provider-okta.GroupSchemaPropertyMasterOverridePriority)[]
 
 master_override_priority block.
 
@@ -73387,10 +73387,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `oneOf`<sup>Optional</sup> <a name="@cdktf/provider-okta.GroupSchemaPropertyConfig.property.oneOf" id="cdktfprovideroktagroupschemapropertyconfigpropertyoneof"></a>
 
 ```typescript
-public readonly oneOf: GroupSchemaPropertyOneOf[];
+public readonly oneOf: IResolvable | GroupSchemaPropertyOneOf[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.GroupSchemaPropertyOneOf`](#@cdktf/provider-okta.GroupSchemaPropertyOneOf)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.GroupSchemaPropertyOneOf`](#@cdktf/provider-okta.GroupSchemaPropertyOneOf)[]
 
 one_of block.
 
@@ -73556,7 +73556,7 @@ const idpConfig: IdpConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktaidpconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktaidpconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktaidpconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktaidpconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktaidpconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -73600,10 +73600,10 @@ const idpConfig: IdpConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.IdpConfig.property.count" id="cdktfprovideroktaidpconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -74071,7 +74071,7 @@ const idpOidcConfig: IdpOidcConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktaidpoidcconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktaidpoidcconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktaidpoidcconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktaidpoidcconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktaidpoidcconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -74115,10 +74115,10 @@ const idpOidcConfig: IdpOidcConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.IdpOidcConfig.property.count" id="cdktfprovideroktaidpoidcconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -74586,7 +74586,7 @@ const idpSamlConfig: IdpSamlConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktaidpsamlconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktaidpsamlconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktaidpsamlconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktaidpsamlconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktaidpsamlconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -74627,10 +74627,10 @@ const idpSamlConfig: IdpSamlConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.IdpSamlConfig.property.count" id="cdktfprovideroktaidpsamlconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -75062,7 +75062,7 @@ const idpSamlKeyConfig: IdpSamlKeyConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktaidpsamlkeyconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktaidpsamlkeyconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktaidpsamlkeyconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktaidpsamlkeyconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktaidpsamlkeyconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -75073,10 +75073,10 @@ const idpSamlKeyConfig: IdpSamlKeyConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.IdpSamlKeyConfig.property.count" id="cdktfprovideroktaidpsamlkeyconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -75138,7 +75138,7 @@ const idpSocialConfig: IdpSocialConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktaidpsocialconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktaidpsocialconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktaidpsocialconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktaidpsocialconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktaidpsocialconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -75179,10 +75179,10 @@ const idpSocialConfig: IdpSocialConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.IdpSocialConfig.property.count" id="cdktfprovideroktaidpsocialconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -75620,16 +75620,16 @@ const inlineHookConfig: InlineHookConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktainlinehookconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktainlinehookconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktainlinehookconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktainlinehookconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktainlinehookconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`channel`](#cdktfprovideroktainlinehookconfigpropertychannel)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook#channel InlineHook#channel}. |
+| [`channel`](#cdktfprovideroktainlinehookconfigpropertychannel)<span title="Required">*</span> | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook#channel InlineHook#channel}. |
 | [`name`](#cdktfprovideroktainlinehookconfigpropertyname)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook#name InlineHook#name}. |
 | [`type`](#cdktfprovideroktainlinehookconfigpropertytype)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook#type InlineHook#type}. |
 | [`version`](#cdktfprovideroktainlinehookconfigpropertyversion)<span title="Required">*</span> | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook#version InlineHook#version}. |
-| [`auth`](#cdktfprovideroktainlinehookconfigpropertyauth) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook#auth InlineHook#auth}. |
-| [`headers`](#cdktfprovideroktainlinehookconfigpropertyheaders) | [`@cdktf/provider-okta.InlineHookHeaders`](#@cdktf/provider-okta.InlineHookHeaders)[] | headers block. |
+| [`auth`](#cdktfprovideroktainlinehookconfigpropertyauth) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook#auth InlineHook#auth}. |
+| [`headers`](#cdktfprovideroktainlinehookconfigpropertyheaders) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.InlineHookHeaders`](#@cdktf/provider-okta.InlineHookHeaders)[] | headers block. |
 | [`status`](#cdktfprovideroktainlinehookconfigpropertystatus) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook#status InlineHook#status}. |
 
 ---
@@ -75637,10 +75637,10 @@ const inlineHookConfig: InlineHookConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.InlineHookConfig.property.count" id="cdktfprovideroktainlinehookconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -75677,10 +75677,10 @@ public readonly provider: TerraformProvider;
 ##### `channel`<sup>Required</sup> <a name="@cdktf/provider-okta.InlineHookConfig.property.channel" id="cdktfprovideroktainlinehookconfigpropertychannel"></a>
 
 ```typescript
-public readonly channel: IResolvable | {[ key: string ]: string};
+public readonly channel: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook#channel InlineHook#channel}.
 
@@ -75725,10 +75725,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `auth`<sup>Optional</sup> <a name="@cdktf/provider-okta.InlineHookConfig.property.auth" id="cdktfprovideroktainlinehookconfigpropertyauth"></a>
 
 ```typescript
-public readonly auth: IResolvable | {[ key: string ]: string};
+public readonly auth: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook#auth InlineHook#auth}.
 
@@ -75737,10 +75737,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `headers`<sup>Optional</sup> <a name="@cdktf/provider-okta.InlineHookConfig.property.headers" id="cdktfprovideroktainlinehookconfigpropertyheaders"></a>
 
 ```typescript
-public readonly headers: InlineHookHeaders[];
+public readonly headers: IResolvable | InlineHookHeaders[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.InlineHookHeaders`](#@cdktf/provider-okta.InlineHookHeaders)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.InlineHookHeaders`](#@cdktf/provider-okta.InlineHookHeaders)[]
 
 headers block.
 
@@ -75817,7 +75817,7 @@ const linkDefinitionConfig: LinkDefinitionConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktalinkdefinitionconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktalinkdefinitionconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktalinkdefinitionconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktalinkdefinitionconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktalinkdefinitionconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -75833,10 +75833,10 @@ const linkDefinitionConfig: LinkDefinitionConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.LinkDefinitionConfig.property.count" id="cdktfprovideroktalinkdefinitionconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -75968,7 +75968,7 @@ const linkValueConfig: LinkValueConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktalinkvalueconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktalinkvalueconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktalinkvalueconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktalinkvalueconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktalinkvalueconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -75981,10 +75981,10 @@ const linkValueConfig: LinkValueConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.LinkValueConfig.property.count" id="cdktfprovideroktalinkvalueconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -76074,40 +76074,40 @@ const mfaPolicyConfig: MfaPolicyConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktamfapolicyconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktamfapolicyconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktamfapolicyconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktamfapolicyconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktamfapolicyconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
 | [`name`](#cdktfprovideroktamfapolicyconfigpropertyname)<span title="Required">*</span> | `string` | Policy Name. |
 | [`description`](#cdktfprovideroktamfapolicyconfigpropertydescription) | `string` | Policy Description. |
-| [`duo`](#cdktfprovideroktamfapolicyconfigpropertyduo) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#duo MfaPolicy#duo}. |
-| [`fidoU2F`](#cdktfprovideroktamfapolicyconfigpropertyfidou2f) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#fido_u2f MfaPolicy#fido_u2f}. |
-| [`fidoWebauthn`](#cdktfprovideroktamfapolicyconfigpropertyfidowebauthn) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#fido_webauthn MfaPolicy#fido_webauthn}. |
-| [`googleOtp`](#cdktfprovideroktamfapolicyconfigpropertygoogleotp) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#google_otp MfaPolicy#google_otp}. |
+| [`duo`](#cdktfprovideroktamfapolicyconfigpropertyduo) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#duo MfaPolicy#duo}. |
+| [`fidoU2F`](#cdktfprovideroktamfapolicyconfigpropertyfidou2f) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#fido_u2f MfaPolicy#fido_u2f}. |
+| [`fidoWebauthn`](#cdktfprovideroktamfapolicyconfigpropertyfidowebauthn) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#fido_webauthn MfaPolicy#fido_webauthn}. |
+| [`googleOtp`](#cdktfprovideroktamfapolicyconfigpropertygoogleotp) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#google_otp MfaPolicy#google_otp}. |
 | [`groupsIncluded`](#cdktfprovideroktamfapolicyconfigpropertygroupsincluded) | `string`[] | List of Group IDs to Include. |
-| [`hotp`](#cdktfprovideroktamfapolicyconfigpropertyhotp) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#hotp MfaPolicy#hotp}. |
-| [`oktaCall`](#cdktfprovideroktamfapolicyconfigpropertyoktacall) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#okta_call MfaPolicy#okta_call}. |
-| [`oktaEmail`](#cdktfprovideroktamfapolicyconfigpropertyoktaemail) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#okta_email MfaPolicy#okta_email}. |
-| [`oktaOtp`](#cdktfprovideroktamfapolicyconfigpropertyoktaotp) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#okta_otp MfaPolicy#okta_otp}. |
-| [`oktaPassword`](#cdktfprovideroktamfapolicyconfigpropertyoktapassword) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#okta_password MfaPolicy#okta_password}. |
-| [`oktaPush`](#cdktfprovideroktamfapolicyconfigpropertyoktapush) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#okta_push MfaPolicy#okta_push}. |
-| [`oktaQuestion`](#cdktfprovideroktamfapolicyconfigpropertyoktaquestion) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#okta_question MfaPolicy#okta_question}. |
-| [`oktaSms`](#cdktfprovideroktamfapolicyconfigpropertyoktasms) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#okta_sms MfaPolicy#okta_sms}. |
+| [`hotp`](#cdktfprovideroktamfapolicyconfigpropertyhotp) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#hotp MfaPolicy#hotp}. |
+| [`oktaCall`](#cdktfprovideroktamfapolicyconfigpropertyoktacall) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#okta_call MfaPolicy#okta_call}. |
+| [`oktaEmail`](#cdktfprovideroktamfapolicyconfigpropertyoktaemail) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#okta_email MfaPolicy#okta_email}. |
+| [`oktaOtp`](#cdktfprovideroktamfapolicyconfigpropertyoktaotp) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#okta_otp MfaPolicy#okta_otp}. |
+| [`oktaPassword`](#cdktfprovideroktamfapolicyconfigpropertyoktapassword) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#okta_password MfaPolicy#okta_password}. |
+| [`oktaPush`](#cdktfprovideroktamfapolicyconfigpropertyoktapush) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#okta_push MfaPolicy#okta_push}. |
+| [`oktaQuestion`](#cdktfprovideroktamfapolicyconfigpropertyoktaquestion) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#okta_question MfaPolicy#okta_question}. |
+| [`oktaSms`](#cdktfprovideroktamfapolicyconfigpropertyoktasms) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#okta_sms MfaPolicy#okta_sms}. |
 | [`priority`](#cdktfprovideroktamfapolicyconfigpropertypriority) | `number` | Policy Priority, this attribute can be set to a valid priority. |
-| [`rsaToken`](#cdktfprovideroktamfapolicyconfigpropertyrsatoken) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#rsa_token MfaPolicy#rsa_token}. |
+| [`rsaToken`](#cdktfprovideroktamfapolicyconfigpropertyrsatoken) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#rsa_token MfaPolicy#rsa_token}. |
 | [`status`](#cdktfprovideroktamfapolicyconfigpropertystatus) | `string` | Policy Status: ACTIVE or INACTIVE. |
-| [`symantecVip`](#cdktfprovideroktamfapolicyconfigpropertysymantecvip) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#symantec_vip MfaPolicy#symantec_vip}. |
-| [`yubikeyToken`](#cdktfprovideroktamfapolicyconfigpropertyyubikeytoken) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#yubikey_token MfaPolicy#yubikey_token}. |
+| [`symantecVip`](#cdktfprovideroktamfapolicyconfigpropertysymantecvip) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#symantec_vip MfaPolicy#symantec_vip}. |
+| [`yubikeyToken`](#cdktfprovideroktamfapolicyconfigpropertyyubikeytoken) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#yubikey_token MfaPolicy#yubikey_token}. |
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.MfaPolicyConfig.property.count" id="cdktfprovideroktamfapolicyconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -76172,10 +76172,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `duo`<sup>Optional</sup> <a name="@cdktf/provider-okta.MfaPolicyConfig.property.duo" id="cdktfprovideroktamfapolicyconfigpropertyduo"></a>
 
 ```typescript
-public readonly duo: IResolvable | {[ key: string ]: string};
+public readonly duo: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#duo MfaPolicy#duo}.
 
@@ -76184,10 +76184,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `fidoU2F`<sup>Optional</sup> <a name="@cdktf/provider-okta.MfaPolicyConfig.property.fidoU2F" id="cdktfprovideroktamfapolicyconfigpropertyfidou2f"></a>
 
 ```typescript
-public readonly fidoU2F: IResolvable | {[ key: string ]: string};
+public readonly fidoU2F: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#fido_u2f MfaPolicy#fido_u2f}.
 
@@ -76196,10 +76196,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `fidoWebauthn`<sup>Optional</sup> <a name="@cdktf/provider-okta.MfaPolicyConfig.property.fidoWebauthn" id="cdktfprovideroktamfapolicyconfigpropertyfidowebauthn"></a>
 
 ```typescript
-public readonly fidoWebauthn: IResolvable | {[ key: string ]: string};
+public readonly fidoWebauthn: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#fido_webauthn MfaPolicy#fido_webauthn}.
 
@@ -76208,10 +76208,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `googleOtp`<sup>Optional</sup> <a name="@cdktf/provider-okta.MfaPolicyConfig.property.googleOtp" id="cdktfprovideroktamfapolicyconfigpropertygoogleotp"></a>
 
 ```typescript
-public readonly googleOtp: IResolvable | {[ key: string ]: string};
+public readonly googleOtp: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#google_otp MfaPolicy#google_otp}.
 
@@ -76234,10 +76234,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `hotp`<sup>Optional</sup> <a name="@cdktf/provider-okta.MfaPolicyConfig.property.hotp" id="cdktfprovideroktamfapolicyconfigpropertyhotp"></a>
 
 ```typescript
-public readonly hotp: IResolvable | {[ key: string ]: string};
+public readonly hotp: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#hotp MfaPolicy#hotp}.
 
@@ -76246,10 +76246,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `oktaCall`<sup>Optional</sup> <a name="@cdktf/provider-okta.MfaPolicyConfig.property.oktaCall" id="cdktfprovideroktamfapolicyconfigpropertyoktacall"></a>
 
 ```typescript
-public readonly oktaCall: IResolvable | {[ key: string ]: string};
+public readonly oktaCall: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#okta_call MfaPolicy#okta_call}.
 
@@ -76258,10 +76258,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `oktaEmail`<sup>Optional</sup> <a name="@cdktf/provider-okta.MfaPolicyConfig.property.oktaEmail" id="cdktfprovideroktamfapolicyconfigpropertyoktaemail"></a>
 
 ```typescript
-public readonly oktaEmail: IResolvable | {[ key: string ]: string};
+public readonly oktaEmail: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#okta_email MfaPolicy#okta_email}.
 
@@ -76270,10 +76270,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `oktaOtp`<sup>Optional</sup> <a name="@cdktf/provider-okta.MfaPolicyConfig.property.oktaOtp" id="cdktfprovideroktamfapolicyconfigpropertyoktaotp"></a>
 
 ```typescript
-public readonly oktaOtp: IResolvable | {[ key: string ]: string};
+public readonly oktaOtp: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#okta_otp MfaPolicy#okta_otp}.
 
@@ -76282,10 +76282,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `oktaPassword`<sup>Optional</sup> <a name="@cdktf/provider-okta.MfaPolicyConfig.property.oktaPassword" id="cdktfprovideroktamfapolicyconfigpropertyoktapassword"></a>
 
 ```typescript
-public readonly oktaPassword: IResolvable | {[ key: string ]: string};
+public readonly oktaPassword: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#okta_password MfaPolicy#okta_password}.
 
@@ -76294,10 +76294,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `oktaPush`<sup>Optional</sup> <a name="@cdktf/provider-okta.MfaPolicyConfig.property.oktaPush" id="cdktfprovideroktamfapolicyconfigpropertyoktapush"></a>
 
 ```typescript
-public readonly oktaPush: IResolvable | {[ key: string ]: string};
+public readonly oktaPush: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#okta_push MfaPolicy#okta_push}.
 
@@ -76306,10 +76306,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `oktaQuestion`<sup>Optional</sup> <a name="@cdktf/provider-okta.MfaPolicyConfig.property.oktaQuestion" id="cdktfprovideroktamfapolicyconfigpropertyoktaquestion"></a>
 
 ```typescript
-public readonly oktaQuestion: IResolvable | {[ key: string ]: string};
+public readonly oktaQuestion: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#okta_question MfaPolicy#okta_question}.
 
@@ -76318,10 +76318,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `oktaSms`<sup>Optional</sup> <a name="@cdktf/provider-okta.MfaPolicyConfig.property.oktaSms" id="cdktfprovideroktamfapolicyconfigpropertyoktasms"></a>
 
 ```typescript
-public readonly oktaSms: IResolvable | {[ key: string ]: string};
+public readonly oktaSms: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#okta_sms MfaPolicy#okta_sms}.
 
@@ -76344,10 +76344,10 @@ To avoid endless diff situation we error if an invalid priority is provided. API
 ##### `rsaToken`<sup>Optional</sup> <a name="@cdktf/provider-okta.MfaPolicyConfig.property.rsaToken" id="cdktfprovideroktamfapolicyconfigpropertyrsatoken"></a>
 
 ```typescript
-public readonly rsaToken: IResolvable | {[ key: string ]: string};
+public readonly rsaToken: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#rsa_token MfaPolicy#rsa_token}.
 
@@ -76370,10 +76370,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `symantecVip`<sup>Optional</sup> <a name="@cdktf/provider-okta.MfaPolicyConfig.property.symantecVip" id="cdktfprovideroktamfapolicyconfigpropertysymantecvip"></a>
 
 ```typescript
-public readonly symantecVip: IResolvable | {[ key: string ]: string};
+public readonly symantecVip: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#symantec_vip MfaPolicy#symantec_vip}.
 
@@ -76382,10 +76382,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `yubikeyToken`<sup>Optional</sup> <a name="@cdktf/provider-okta.MfaPolicyConfig.property.yubikeyToken" id="cdktfprovideroktamfapolicyconfigpropertyyubikeytoken"></a>
 
 ```typescript
-public readonly yubikeyToken: IResolvable | {[ key: string ]: string};
+public readonly yubikeyToken: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#yubikey_token MfaPolicy#yubikey_token}.
 
@@ -76517,13 +76517,13 @@ const mfaPolicyRuleConfig: MfaPolicyRuleConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktamfapolicyruleconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktamfapolicyruleconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktamfapolicyruleconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktamfapolicyruleconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktamfapolicyruleconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
 | [`name`](#cdktfprovideroktamfapolicyruleconfigpropertyname)<span title="Required">*</span> | `string` | Policy Rule Name. |
-| [`appExclude`](#cdktfprovideroktamfapolicyruleconfigpropertyappexclude) | [`@cdktf/provider-okta.MfaPolicyRuleAppExclude`](#@cdktf/provider-okta.MfaPolicyRuleAppExclude)[] | app_exclude block. |
-| [`appInclude`](#cdktfprovideroktamfapolicyruleconfigpropertyappinclude) | [`@cdktf/provider-okta.MfaPolicyRuleAppInclude`](#@cdktf/provider-okta.MfaPolicyRuleAppInclude)[] | app_include block. |
+| [`appExclude`](#cdktfprovideroktamfapolicyruleconfigpropertyappexclude) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.MfaPolicyRuleAppExclude`](#@cdktf/provider-okta.MfaPolicyRuleAppExclude)[] | app_exclude block. |
+| [`appInclude`](#cdktfprovideroktamfapolicyruleconfigpropertyappinclude) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.MfaPolicyRuleAppInclude`](#@cdktf/provider-okta.MfaPolicyRuleAppInclude)[] | app_include block. |
 | [`enroll`](#cdktfprovideroktamfapolicyruleconfigpropertyenroll) | `string` | Should the user be enrolled the first time they LOGIN, the next time they are CHALLENGED, or NEVER? |
 | [`networkConnection`](#cdktfprovideroktamfapolicyruleconfigpropertynetworkconnection) | `string` | Network selection mode: ANYWHERE, ZONE, ON_NETWORK, or OFF_NETWORK. |
 | [`networkExcludes`](#cdktfprovideroktamfapolicyruleconfigpropertynetworkexcludes) | `string`[] | The zones to exclude. |
@@ -76539,10 +76539,10 @@ const mfaPolicyRuleConfig: MfaPolicyRuleConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.MfaPolicyRuleConfig.property.count" id="cdktfprovideroktamfapolicyruleconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -76593,10 +76593,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `appExclude`<sup>Optional</sup> <a name="@cdktf/provider-okta.MfaPolicyRuleConfig.property.appExclude" id="cdktfprovideroktamfapolicyruleconfigpropertyappexclude"></a>
 
 ```typescript
-public readonly appExclude: MfaPolicyRuleAppExclude[];
+public readonly appExclude: IResolvable | MfaPolicyRuleAppExclude[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.MfaPolicyRuleAppExclude`](#@cdktf/provider-okta.MfaPolicyRuleAppExclude)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.MfaPolicyRuleAppExclude`](#@cdktf/provider-okta.MfaPolicyRuleAppExclude)[]
 
 app_exclude block.
 
@@ -76607,10 +76607,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `appInclude`<sup>Optional</sup> <a name="@cdktf/provider-okta.MfaPolicyRuleConfig.property.appInclude" id="cdktfprovideroktamfapolicyruleconfigpropertyappinclude"></a>
 
 ```typescript
-public readonly appInclude: MfaPolicyRuleAppInclude[];
+public readonly appInclude: IResolvable | MfaPolicyRuleAppInclude[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.MfaPolicyRuleAppInclude`](#@cdktf/provider-okta.MfaPolicyRuleAppInclude)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.MfaPolicyRuleAppInclude`](#@cdktf/provider-okta.MfaPolicyRuleAppInclude)[]
 
 app_include block.
 
@@ -76758,7 +76758,7 @@ const networkZoneConfig: NetworkZoneConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktanetworkzoneconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktanetworkzoneconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktanetworkzoneconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktanetworkzoneconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktanetworkzoneconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -76776,10 +76776,10 @@ const networkZoneConfig: NetworkZoneConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.NetworkZoneConfig.property.count" id="cdktfprovideroktanetworkzoneconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -76939,7 +76939,7 @@ const oauthAppConfig: OauthAppConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktaoauthappconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktaoauthappconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktaoauthappconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktaoauthappconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktaoauthappconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -76966,7 +76966,7 @@ const oauthAppConfig: OauthAppConfig = { ... }
 | [`hideWeb`](#cdktfprovideroktaoauthappconfigpropertyhideweb) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Do not display application icon to users. |
 | [`implicitAssignment`](#cdktfprovideroktaoauthappconfigpropertyimplicitassignment) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *Early Access Property*. Enable Federation Broker Mode. |
 | [`issuerMode`](#cdktfprovideroktaoauthappconfigpropertyissuermode) | `string` | *Early Access Property*. |
-| [`jwks`](#cdktfprovideroktaoauthappconfigpropertyjwks) | [`@cdktf/provider-okta.OauthAppJwks`](#@cdktf/provider-okta.OauthAppJwks)[] | jwks block. |
+| [`jwks`](#cdktfprovideroktaoauthappconfigpropertyjwks) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.OauthAppJwks`](#@cdktf/provider-okta.OauthAppJwks)[] | jwks block. |
 | [`loginMode`](#cdktfprovideroktaoauthappconfigpropertyloginmode) | `string` | The type of Idp-Initiated login that the client supports, if any. |
 | [`loginScopes`](#cdktfprovideroktaoauthappconfigpropertyloginscopes) | `string`[] | List of scopes to use for the request. |
 | [`loginUri`](#cdktfprovideroktaoauthappconfigpropertyloginuri) | `string` | URI that initiates login. |
@@ -76989,7 +76989,7 @@ const oauthAppConfig: OauthAppConfig = { ... }
 | [`userNameTemplatePushStatus`](#cdktfprovideroktaoauthappconfigpropertyusernametemplatepushstatus) | `string` | Push username on update. |
 | [`userNameTemplateSuffix`](#cdktfprovideroktaoauthappconfigpropertyusernametemplatesuffix) | `string` | Username template suffix. |
 | [`userNameTemplateType`](#cdktfprovideroktaoauthappconfigpropertyusernametemplatetype) | `string` | Username template type. |
-| [`users`](#cdktfprovideroktaoauthappconfigpropertyusers) | [`@cdktf/provider-okta.OauthAppUsers`](#@cdktf/provider-okta.OauthAppUsers)[] | users block. |
+| [`users`](#cdktfprovideroktaoauthappconfigpropertyusers) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.OauthAppUsers`](#@cdktf/provider-okta.OauthAppUsers)[] | users block. |
 | [`wildcardRedirect`](#cdktfprovideroktaoauthappconfigpropertywildcardredirect) | `string` | *Early Access Property*. Indicates if the client is allowed to use wildcard matching of redirect_uris. |
 
 ---
@@ -76997,10 +76997,10 @@ const oauthAppConfig: OauthAppConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.OauthAppConfig.property.count" id="cdktfprovideroktaoauthappconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -77359,10 +77359,10 @@ Indicates whether the Okta Authorization Server uses the original Okta org domai
 ##### `jwks`<sup>Optional</sup> <a name="@cdktf/provider-okta.OauthAppConfig.property.jwks" id="cdktfprovideroktaoauthappconfigpropertyjwks"></a>
 
 ```typescript
-public readonly jwks: OauthAppJwks[];
+public readonly jwks: IResolvable | OauthAppJwks[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.OauthAppJwks`](#@cdktf/provider-okta.OauthAppJwks)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.OauthAppJwks`](#@cdktf/provider-okta.OauthAppJwks)[]
 
 jwks block.
 
@@ -77681,10 +77681,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `users`<sup>Optional</sup> <a name="@cdktf/provider-okta.OauthAppConfig.property.users" id="cdktfprovideroktaoauthappconfigpropertyusers"></a>
 
 ```typescript
-public readonly users: OauthAppUsers[];
+public readonly users: IResolvable | OauthAppUsers[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.OauthAppUsers`](#@cdktf/provider-okta.OauthAppUsers)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.OauthAppUsers`](#@cdktf/provider-okta.OauthAppUsers)[]
 
 users block.
 
@@ -77874,7 +77874,7 @@ const oauthAppRedirectUriConfig: OauthAppRedirectUriConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktaoauthappredirecturiconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktaoauthappredirecturiconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktaoauthappredirecturiconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktaoauthappredirecturiconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktaoauthappredirecturiconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -77886,10 +77886,10 @@ const oauthAppRedirectUriConfig: OauthAppRedirectUriConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.OauthAppRedirectUriConfig.property.count" id="cdktfprovideroktaoauthappredirecturiconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -78267,7 +78267,7 @@ const orgConfigurationConfig: OrgConfigurationConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktaorgconfigurationconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktaorgconfigurationconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktaorgconfigurationconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktaorgconfigurationconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktaorgconfigurationconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -78292,10 +78292,10 @@ const orgConfigurationConfig: OrgConfigurationConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.OrgConfigurationConfig.property.count" id="cdktfprovideroktaorgconfigurationconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -78553,7 +78553,7 @@ const orgSupportConfig: OrgSupportConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktaorgsupportconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktaorgsupportconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktaorgsupportconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktaorgsupportconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktaorgsupportconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -78564,10 +78564,10 @@ const orgSupportConfig: OrgSupportConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.OrgSupportConfig.property.count" id="cdktfprovideroktaorgsupportconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -78629,7 +78629,7 @@ const passwordPolicyConfig: PasswordPolicyConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktapasswordpolicyconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktapasswordpolicyconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktapasswordpolicyconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktapasswordpolicyconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktapasswordpolicyconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -78669,10 +78669,10 @@ const passwordPolicyConfig: PasswordPolicyConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.PasswordPolicyConfig.property.count" id="cdktfprovideroktapasswordpolicyconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -79140,7 +79140,7 @@ const passwordPolicyRuleConfig: PasswordPolicyRuleConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktapasswordpolicyruleconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktapasswordpolicyruleconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktapasswordpolicyruleconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktapasswordpolicyruleconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktapasswordpolicyruleconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -79162,10 +79162,10 @@ const passwordPolicyRuleConfig: PasswordPolicyRuleConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.PasswordPolicyRuleConfig.property.count" id="cdktfprovideroktapasswordpolicyruleconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -79381,40 +79381,40 @@ const policyMfaConfig: PolicyMfaConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktapolicymfaconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktapolicymfaconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktapolicymfaconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktapolicymfaconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktapolicymfaconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
 | [`name`](#cdktfprovideroktapolicymfaconfigpropertyname)<span title="Required">*</span> | `string` | Policy Name. |
 | [`description`](#cdktfprovideroktapolicymfaconfigpropertydescription) | `string` | Policy Description. |
-| [`duo`](#cdktfprovideroktapolicymfaconfigpropertyduo) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#duo PolicyMfa#duo}. |
-| [`fidoU2F`](#cdktfprovideroktapolicymfaconfigpropertyfidou2f) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#fido_u2f PolicyMfa#fido_u2f}. |
-| [`fidoWebauthn`](#cdktfprovideroktapolicymfaconfigpropertyfidowebauthn) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#fido_webauthn PolicyMfa#fido_webauthn}. |
-| [`googleOtp`](#cdktfprovideroktapolicymfaconfigpropertygoogleotp) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#google_otp PolicyMfa#google_otp}. |
+| [`duo`](#cdktfprovideroktapolicymfaconfigpropertyduo) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#duo PolicyMfa#duo}. |
+| [`fidoU2F`](#cdktfprovideroktapolicymfaconfigpropertyfidou2f) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#fido_u2f PolicyMfa#fido_u2f}. |
+| [`fidoWebauthn`](#cdktfprovideroktapolicymfaconfigpropertyfidowebauthn) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#fido_webauthn PolicyMfa#fido_webauthn}. |
+| [`googleOtp`](#cdktfprovideroktapolicymfaconfigpropertygoogleotp) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#google_otp PolicyMfa#google_otp}. |
 | [`groupsIncluded`](#cdktfprovideroktapolicymfaconfigpropertygroupsincluded) | `string`[] | List of Group IDs to Include. |
-| [`hotp`](#cdktfprovideroktapolicymfaconfigpropertyhotp) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#hotp PolicyMfa#hotp}. |
-| [`oktaCall`](#cdktfprovideroktapolicymfaconfigpropertyoktacall) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#okta_call PolicyMfa#okta_call}. |
-| [`oktaEmail`](#cdktfprovideroktapolicymfaconfigpropertyoktaemail) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#okta_email PolicyMfa#okta_email}. |
-| [`oktaOtp`](#cdktfprovideroktapolicymfaconfigpropertyoktaotp) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#okta_otp PolicyMfa#okta_otp}. |
-| [`oktaPassword`](#cdktfprovideroktapolicymfaconfigpropertyoktapassword) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#okta_password PolicyMfa#okta_password}. |
-| [`oktaPush`](#cdktfprovideroktapolicymfaconfigpropertyoktapush) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#okta_push PolicyMfa#okta_push}. |
-| [`oktaQuestion`](#cdktfprovideroktapolicymfaconfigpropertyoktaquestion) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#okta_question PolicyMfa#okta_question}. |
-| [`oktaSms`](#cdktfprovideroktapolicymfaconfigpropertyoktasms) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#okta_sms PolicyMfa#okta_sms}. |
+| [`hotp`](#cdktfprovideroktapolicymfaconfigpropertyhotp) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#hotp PolicyMfa#hotp}. |
+| [`oktaCall`](#cdktfprovideroktapolicymfaconfigpropertyoktacall) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#okta_call PolicyMfa#okta_call}. |
+| [`oktaEmail`](#cdktfprovideroktapolicymfaconfigpropertyoktaemail) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#okta_email PolicyMfa#okta_email}. |
+| [`oktaOtp`](#cdktfprovideroktapolicymfaconfigpropertyoktaotp) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#okta_otp PolicyMfa#okta_otp}. |
+| [`oktaPassword`](#cdktfprovideroktapolicymfaconfigpropertyoktapassword) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#okta_password PolicyMfa#okta_password}. |
+| [`oktaPush`](#cdktfprovideroktapolicymfaconfigpropertyoktapush) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#okta_push PolicyMfa#okta_push}. |
+| [`oktaQuestion`](#cdktfprovideroktapolicymfaconfigpropertyoktaquestion) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#okta_question PolicyMfa#okta_question}. |
+| [`oktaSms`](#cdktfprovideroktapolicymfaconfigpropertyoktasms) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#okta_sms PolicyMfa#okta_sms}. |
 | [`priority`](#cdktfprovideroktapolicymfaconfigpropertypriority) | `number` | Policy Priority, this attribute can be set to a valid priority. |
-| [`rsaToken`](#cdktfprovideroktapolicymfaconfigpropertyrsatoken) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#rsa_token PolicyMfa#rsa_token}. |
+| [`rsaToken`](#cdktfprovideroktapolicymfaconfigpropertyrsatoken) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#rsa_token PolicyMfa#rsa_token}. |
 | [`status`](#cdktfprovideroktapolicymfaconfigpropertystatus) | `string` | Policy Status: ACTIVE or INACTIVE. |
-| [`symantecVip`](#cdktfprovideroktapolicymfaconfigpropertysymantecvip) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#symantec_vip PolicyMfa#symantec_vip}. |
-| [`yubikeyToken`](#cdktfprovideroktapolicymfaconfigpropertyyubikeytoken) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#yubikey_token PolicyMfa#yubikey_token}. |
+| [`symantecVip`](#cdktfprovideroktapolicymfaconfigpropertysymantecvip) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#symantec_vip PolicyMfa#symantec_vip}. |
+| [`yubikeyToken`](#cdktfprovideroktapolicymfaconfigpropertyyubikeytoken) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#yubikey_token PolicyMfa#yubikey_token}. |
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfaConfig.property.count" id="cdktfprovideroktapolicymfaconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -79479,10 +79479,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `duo`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfaConfig.property.duo" id="cdktfprovideroktapolicymfaconfigpropertyduo"></a>
 
 ```typescript
-public readonly duo: IResolvable | {[ key: string ]: string};
+public readonly duo: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#duo PolicyMfa#duo}.
 
@@ -79491,10 +79491,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `fidoU2F`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfaConfig.property.fidoU2F" id="cdktfprovideroktapolicymfaconfigpropertyfidou2f"></a>
 
 ```typescript
-public readonly fidoU2F: IResolvable | {[ key: string ]: string};
+public readonly fidoU2F: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#fido_u2f PolicyMfa#fido_u2f}.
 
@@ -79503,10 +79503,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `fidoWebauthn`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfaConfig.property.fidoWebauthn" id="cdktfprovideroktapolicymfaconfigpropertyfidowebauthn"></a>
 
 ```typescript
-public readonly fidoWebauthn: IResolvable | {[ key: string ]: string};
+public readonly fidoWebauthn: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#fido_webauthn PolicyMfa#fido_webauthn}.
 
@@ -79515,10 +79515,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `googleOtp`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfaConfig.property.googleOtp" id="cdktfprovideroktapolicymfaconfigpropertygoogleotp"></a>
 
 ```typescript
-public readonly googleOtp: IResolvable | {[ key: string ]: string};
+public readonly googleOtp: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#google_otp PolicyMfa#google_otp}.
 
@@ -79541,10 +79541,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `hotp`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfaConfig.property.hotp" id="cdktfprovideroktapolicymfaconfigpropertyhotp"></a>
 
 ```typescript
-public readonly hotp: IResolvable | {[ key: string ]: string};
+public readonly hotp: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#hotp PolicyMfa#hotp}.
 
@@ -79553,10 +79553,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `oktaCall`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfaConfig.property.oktaCall" id="cdktfprovideroktapolicymfaconfigpropertyoktacall"></a>
 
 ```typescript
-public readonly oktaCall: IResolvable | {[ key: string ]: string};
+public readonly oktaCall: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#okta_call PolicyMfa#okta_call}.
 
@@ -79565,10 +79565,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `oktaEmail`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfaConfig.property.oktaEmail" id="cdktfprovideroktapolicymfaconfigpropertyoktaemail"></a>
 
 ```typescript
-public readonly oktaEmail: IResolvable | {[ key: string ]: string};
+public readonly oktaEmail: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#okta_email PolicyMfa#okta_email}.
 
@@ -79577,10 +79577,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `oktaOtp`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfaConfig.property.oktaOtp" id="cdktfprovideroktapolicymfaconfigpropertyoktaotp"></a>
 
 ```typescript
-public readonly oktaOtp: IResolvable | {[ key: string ]: string};
+public readonly oktaOtp: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#okta_otp PolicyMfa#okta_otp}.
 
@@ -79589,10 +79589,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `oktaPassword`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfaConfig.property.oktaPassword" id="cdktfprovideroktapolicymfaconfigpropertyoktapassword"></a>
 
 ```typescript
-public readonly oktaPassword: IResolvable | {[ key: string ]: string};
+public readonly oktaPassword: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#okta_password PolicyMfa#okta_password}.
 
@@ -79601,10 +79601,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `oktaPush`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfaConfig.property.oktaPush" id="cdktfprovideroktapolicymfaconfigpropertyoktapush"></a>
 
 ```typescript
-public readonly oktaPush: IResolvable | {[ key: string ]: string};
+public readonly oktaPush: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#okta_push PolicyMfa#okta_push}.
 
@@ -79613,10 +79613,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `oktaQuestion`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfaConfig.property.oktaQuestion" id="cdktfprovideroktapolicymfaconfigpropertyoktaquestion"></a>
 
 ```typescript
-public readonly oktaQuestion: IResolvable | {[ key: string ]: string};
+public readonly oktaQuestion: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#okta_question PolicyMfa#okta_question}.
 
@@ -79625,10 +79625,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `oktaSms`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfaConfig.property.oktaSms" id="cdktfprovideroktapolicymfaconfigpropertyoktasms"></a>
 
 ```typescript
-public readonly oktaSms: IResolvable | {[ key: string ]: string};
+public readonly oktaSms: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#okta_sms PolicyMfa#okta_sms}.
 
@@ -79651,10 +79651,10 @@ To avoid endless diff situation we error if an invalid priority is provided. API
 ##### `rsaToken`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfaConfig.property.rsaToken" id="cdktfprovideroktapolicymfaconfigpropertyrsatoken"></a>
 
 ```typescript
-public readonly rsaToken: IResolvable | {[ key: string ]: string};
+public readonly rsaToken: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#rsa_token PolicyMfa#rsa_token}.
 
@@ -79677,10 +79677,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `symantecVip`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfaConfig.property.symantecVip" id="cdktfprovideroktapolicymfaconfigpropertysymantecvip"></a>
 
 ```typescript
-public readonly symantecVip: IResolvable | {[ key: string ]: string};
+public readonly symantecVip: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#symantec_vip PolicyMfa#symantec_vip}.
 
@@ -79689,10 +79689,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `yubikeyToken`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfaConfig.property.yubikeyToken" id="cdktfprovideroktapolicymfaconfigpropertyyubikeytoken"></a>
 
 ```typescript
-public readonly yubikeyToken: IResolvable | {[ key: string ]: string};
+public readonly yubikeyToken: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#yubikey_token PolicyMfa#yubikey_token}.
 
@@ -79712,35 +79712,35 @@ const policyMfaDefaultConfig: PolicyMfaDefaultConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktapolicymfadefaultconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktapolicymfadefaultconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktapolicymfadefaultconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktapolicymfadefaultconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktapolicymfadefaultconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`duo`](#cdktfprovideroktapolicymfadefaultconfigpropertyduo) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#duo PolicyMfaDefault#duo}. |
-| [`fidoU2F`](#cdktfprovideroktapolicymfadefaultconfigpropertyfidou2f) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#fido_u2f PolicyMfaDefault#fido_u2f}. |
-| [`fidoWebauthn`](#cdktfprovideroktapolicymfadefaultconfigpropertyfidowebauthn) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#fido_webauthn PolicyMfaDefault#fido_webauthn}. |
-| [`googleOtp`](#cdktfprovideroktapolicymfadefaultconfigpropertygoogleotp) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#google_otp PolicyMfaDefault#google_otp}. |
-| [`hotp`](#cdktfprovideroktapolicymfadefaultconfigpropertyhotp) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#hotp PolicyMfaDefault#hotp}. |
-| [`oktaCall`](#cdktfprovideroktapolicymfadefaultconfigpropertyoktacall) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#okta_call PolicyMfaDefault#okta_call}. |
-| [`oktaEmail`](#cdktfprovideroktapolicymfadefaultconfigpropertyoktaemail) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#okta_email PolicyMfaDefault#okta_email}. |
-| [`oktaOtp`](#cdktfprovideroktapolicymfadefaultconfigpropertyoktaotp) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#okta_otp PolicyMfaDefault#okta_otp}. |
-| [`oktaPassword`](#cdktfprovideroktapolicymfadefaultconfigpropertyoktapassword) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#okta_password PolicyMfaDefault#okta_password}. |
-| [`oktaPush`](#cdktfprovideroktapolicymfadefaultconfigpropertyoktapush) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#okta_push PolicyMfaDefault#okta_push}. |
-| [`oktaQuestion`](#cdktfprovideroktapolicymfadefaultconfigpropertyoktaquestion) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#okta_question PolicyMfaDefault#okta_question}. |
-| [`oktaSms`](#cdktfprovideroktapolicymfadefaultconfigpropertyoktasms) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#okta_sms PolicyMfaDefault#okta_sms}. |
-| [`rsaToken`](#cdktfprovideroktapolicymfadefaultconfigpropertyrsatoken) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#rsa_token PolicyMfaDefault#rsa_token}. |
-| [`symantecVip`](#cdktfprovideroktapolicymfadefaultconfigpropertysymantecvip) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#symantec_vip PolicyMfaDefault#symantec_vip}. |
-| [`yubikeyToken`](#cdktfprovideroktapolicymfadefaultconfigpropertyyubikeytoken) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#yubikey_token PolicyMfaDefault#yubikey_token}. |
+| [`duo`](#cdktfprovideroktapolicymfadefaultconfigpropertyduo) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#duo PolicyMfaDefault#duo}. |
+| [`fidoU2F`](#cdktfprovideroktapolicymfadefaultconfigpropertyfidou2f) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#fido_u2f PolicyMfaDefault#fido_u2f}. |
+| [`fidoWebauthn`](#cdktfprovideroktapolicymfadefaultconfigpropertyfidowebauthn) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#fido_webauthn PolicyMfaDefault#fido_webauthn}. |
+| [`googleOtp`](#cdktfprovideroktapolicymfadefaultconfigpropertygoogleotp) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#google_otp PolicyMfaDefault#google_otp}. |
+| [`hotp`](#cdktfprovideroktapolicymfadefaultconfigpropertyhotp) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#hotp PolicyMfaDefault#hotp}. |
+| [`oktaCall`](#cdktfprovideroktapolicymfadefaultconfigpropertyoktacall) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#okta_call PolicyMfaDefault#okta_call}. |
+| [`oktaEmail`](#cdktfprovideroktapolicymfadefaultconfigpropertyoktaemail) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#okta_email PolicyMfaDefault#okta_email}. |
+| [`oktaOtp`](#cdktfprovideroktapolicymfadefaultconfigpropertyoktaotp) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#okta_otp PolicyMfaDefault#okta_otp}. |
+| [`oktaPassword`](#cdktfprovideroktapolicymfadefaultconfigpropertyoktapassword) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#okta_password PolicyMfaDefault#okta_password}. |
+| [`oktaPush`](#cdktfprovideroktapolicymfadefaultconfigpropertyoktapush) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#okta_push PolicyMfaDefault#okta_push}. |
+| [`oktaQuestion`](#cdktfprovideroktapolicymfadefaultconfigpropertyoktaquestion) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#okta_question PolicyMfaDefault#okta_question}. |
+| [`oktaSms`](#cdktfprovideroktapolicymfadefaultconfigpropertyoktasms) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#okta_sms PolicyMfaDefault#okta_sms}. |
+| [`rsaToken`](#cdktfprovideroktapolicymfadefaultconfigpropertyrsatoken) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#rsa_token PolicyMfaDefault#rsa_token}. |
+| [`symantecVip`](#cdktfprovideroktapolicymfadefaultconfigpropertysymantecvip) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#symantec_vip PolicyMfaDefault#symantec_vip}. |
+| [`yubikeyToken`](#cdktfprovideroktapolicymfadefaultconfigpropertyyubikeytoken) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#yubikey_token PolicyMfaDefault#yubikey_token}. |
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfaDefaultConfig.property.count" id="cdktfprovideroktapolicymfadefaultconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -79777,10 +79777,10 @@ public readonly provider: TerraformProvider;
 ##### `duo`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfaDefaultConfig.property.duo" id="cdktfprovideroktapolicymfadefaultconfigpropertyduo"></a>
 
 ```typescript
-public readonly duo: IResolvable | {[ key: string ]: string};
+public readonly duo: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#duo PolicyMfaDefault#duo}.
 
@@ -79789,10 +79789,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `fidoU2F`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfaDefaultConfig.property.fidoU2F" id="cdktfprovideroktapolicymfadefaultconfigpropertyfidou2f"></a>
 
 ```typescript
-public readonly fidoU2F: IResolvable | {[ key: string ]: string};
+public readonly fidoU2F: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#fido_u2f PolicyMfaDefault#fido_u2f}.
 
@@ -79801,10 +79801,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `fidoWebauthn`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfaDefaultConfig.property.fidoWebauthn" id="cdktfprovideroktapolicymfadefaultconfigpropertyfidowebauthn"></a>
 
 ```typescript
-public readonly fidoWebauthn: IResolvable | {[ key: string ]: string};
+public readonly fidoWebauthn: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#fido_webauthn PolicyMfaDefault#fido_webauthn}.
 
@@ -79813,10 +79813,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `googleOtp`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfaDefaultConfig.property.googleOtp" id="cdktfprovideroktapolicymfadefaultconfigpropertygoogleotp"></a>
 
 ```typescript
-public readonly googleOtp: IResolvable | {[ key: string ]: string};
+public readonly googleOtp: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#google_otp PolicyMfaDefault#google_otp}.
 
@@ -79825,10 +79825,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `hotp`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfaDefaultConfig.property.hotp" id="cdktfprovideroktapolicymfadefaultconfigpropertyhotp"></a>
 
 ```typescript
-public readonly hotp: IResolvable | {[ key: string ]: string};
+public readonly hotp: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#hotp PolicyMfaDefault#hotp}.
 
@@ -79837,10 +79837,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `oktaCall`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfaDefaultConfig.property.oktaCall" id="cdktfprovideroktapolicymfadefaultconfigpropertyoktacall"></a>
 
 ```typescript
-public readonly oktaCall: IResolvable | {[ key: string ]: string};
+public readonly oktaCall: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#okta_call PolicyMfaDefault#okta_call}.
 
@@ -79849,10 +79849,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `oktaEmail`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfaDefaultConfig.property.oktaEmail" id="cdktfprovideroktapolicymfadefaultconfigpropertyoktaemail"></a>
 
 ```typescript
-public readonly oktaEmail: IResolvable | {[ key: string ]: string};
+public readonly oktaEmail: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#okta_email PolicyMfaDefault#okta_email}.
 
@@ -79861,10 +79861,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `oktaOtp`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfaDefaultConfig.property.oktaOtp" id="cdktfprovideroktapolicymfadefaultconfigpropertyoktaotp"></a>
 
 ```typescript
-public readonly oktaOtp: IResolvable | {[ key: string ]: string};
+public readonly oktaOtp: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#okta_otp PolicyMfaDefault#okta_otp}.
 
@@ -79873,10 +79873,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `oktaPassword`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfaDefaultConfig.property.oktaPassword" id="cdktfprovideroktapolicymfadefaultconfigpropertyoktapassword"></a>
 
 ```typescript
-public readonly oktaPassword: IResolvable | {[ key: string ]: string};
+public readonly oktaPassword: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#okta_password PolicyMfaDefault#okta_password}.
 
@@ -79885,10 +79885,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `oktaPush`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfaDefaultConfig.property.oktaPush" id="cdktfprovideroktapolicymfadefaultconfigpropertyoktapush"></a>
 
 ```typescript
-public readonly oktaPush: IResolvable | {[ key: string ]: string};
+public readonly oktaPush: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#okta_push PolicyMfaDefault#okta_push}.
 
@@ -79897,10 +79897,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `oktaQuestion`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfaDefaultConfig.property.oktaQuestion" id="cdktfprovideroktapolicymfadefaultconfigpropertyoktaquestion"></a>
 
 ```typescript
-public readonly oktaQuestion: IResolvable | {[ key: string ]: string};
+public readonly oktaQuestion: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#okta_question PolicyMfaDefault#okta_question}.
 
@@ -79909,10 +79909,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `oktaSms`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfaDefaultConfig.property.oktaSms" id="cdktfprovideroktapolicymfadefaultconfigpropertyoktasms"></a>
 
 ```typescript
-public readonly oktaSms: IResolvable | {[ key: string ]: string};
+public readonly oktaSms: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#okta_sms PolicyMfaDefault#okta_sms}.
 
@@ -79921,10 +79921,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `rsaToken`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfaDefaultConfig.property.rsaToken" id="cdktfprovideroktapolicymfadefaultconfigpropertyrsatoken"></a>
 
 ```typescript
-public readonly rsaToken: IResolvable | {[ key: string ]: string};
+public readonly rsaToken: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#rsa_token PolicyMfaDefault#rsa_token}.
 
@@ -79933,10 +79933,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `symantecVip`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfaDefaultConfig.property.symantecVip" id="cdktfprovideroktapolicymfadefaultconfigpropertysymantecvip"></a>
 
 ```typescript
-public readonly symantecVip: IResolvable | {[ key: string ]: string};
+public readonly symantecVip: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#symantec_vip PolicyMfaDefault#symantec_vip}.
 
@@ -79945,10 +79945,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `yubikeyToken`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfaDefaultConfig.property.yubikeyToken" id="cdktfprovideroktapolicymfadefaultconfigpropertyyubikeytoken"></a>
 
 ```typescript
-public readonly yubikeyToken: IResolvable | {[ key: string ]: string};
+public readonly yubikeyToken: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#yubikey_token PolicyMfaDefault#yubikey_token}.
 
@@ -79968,7 +79968,7 @@ const policyPasswordConfig: PolicyPasswordConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktapolicypasswordconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktapolicypasswordconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktapolicypasswordconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktapolicypasswordconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktapolicypasswordconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -80008,10 +80008,10 @@ const policyPasswordConfig: PolicyPasswordConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyPasswordConfig.property.count" id="cdktfprovideroktapolicypasswordconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -80479,7 +80479,7 @@ const policyPasswordDefaultConfig: PolicyPasswordDefaultConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktapolicypassworddefaultconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktapolicypassworddefaultconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktapolicypassworddefaultconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktapolicypassworddefaultconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktapolicypassworddefaultconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -80513,10 +80513,10 @@ const policyPasswordDefaultConfig: PolicyPasswordDefaultConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyPasswordDefaultConfig.property.count" id="cdktfprovideroktapolicypassworddefaultconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -80900,7 +80900,7 @@ const policyProfileEnrollmentConfig: PolicyProfileEnrollmentConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktapolicyprofileenrollmentconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktapolicyprofileenrollmentconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktapolicyprofileenrollmentconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktapolicyprofileenrollmentconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktapolicyprofileenrollmentconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -80912,10 +80912,10 @@ const policyProfileEnrollmentConfig: PolicyProfileEnrollmentConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyProfileEnrollmentConfig.property.count" id="cdktfprovideroktapolicyprofileenrollmentconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -81103,25 +81103,25 @@ const policyRuleIdpDiscoveryConfig: PolicyRuleIdpDiscoveryConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktapolicyruleidpdiscoveryconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktapolicyruleidpdiscoveryconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktapolicyruleidpdiscoveryconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktapolicyruleidpdiscoveryconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktapolicyruleidpdiscoveryconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
 | [`name`](#cdktfprovideroktapolicyruleidpdiscoveryconfigpropertyname)<span title="Required">*</span> | `string` | Policy Rule Name. |
-| [`appExclude`](#cdktfprovideroktapolicyruleidpdiscoveryconfigpropertyappexclude) | [`@cdktf/provider-okta.PolicyRuleIdpDiscoveryAppExclude`](#@cdktf/provider-okta.PolicyRuleIdpDiscoveryAppExclude)[] | app_exclude block. |
-| [`appInclude`](#cdktfprovideroktapolicyruleidpdiscoveryconfigpropertyappinclude) | [`@cdktf/provider-okta.PolicyRuleIdpDiscoveryAppInclude`](#@cdktf/provider-okta.PolicyRuleIdpDiscoveryAppInclude)[] | app_include block. |
+| [`appExclude`](#cdktfprovideroktapolicyruleidpdiscoveryconfigpropertyappexclude) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.PolicyRuleIdpDiscoveryAppExclude`](#@cdktf/provider-okta.PolicyRuleIdpDiscoveryAppExclude)[] | app_exclude block. |
+| [`appInclude`](#cdktfprovideroktapolicyruleidpdiscoveryconfigpropertyappinclude) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.PolicyRuleIdpDiscoveryAppInclude`](#@cdktf/provider-okta.PolicyRuleIdpDiscoveryAppInclude)[] | app_include block. |
 | [`idpId`](#cdktfprovideroktapolicyruleidpdiscoveryconfigpropertyidpid) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery#idp_id PolicyRuleIdpDiscovery#idp_id}. |
 | [`idpType`](#cdktfprovideroktapolicyruleidpdiscoveryconfigpropertyidptype) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery#idp_type PolicyRuleIdpDiscovery#idp_type}. |
 | [`networkConnection`](#cdktfprovideroktapolicyruleidpdiscoveryconfigpropertynetworkconnection) | `string` | Network selection mode: ANYWHERE, ZONE, ON_NETWORK, or OFF_NETWORK. |
 | [`networkExcludes`](#cdktfprovideroktapolicyruleidpdiscoveryconfigpropertynetworkexcludes) | `string`[] | The zones to exclude. |
 | [`networkIncludes`](#cdktfprovideroktapolicyruleidpdiscoveryconfigpropertynetworkincludes) | `string`[] | The zones to include. |
-| [`platformInclude`](#cdktfprovideroktapolicyruleidpdiscoveryconfigpropertyplatforminclude) | [`@cdktf/provider-okta.PolicyRuleIdpDiscoveryPlatformInclude`](#@cdktf/provider-okta.PolicyRuleIdpDiscoveryPlatformInclude)[] | platform_include block. |
+| [`platformInclude`](#cdktfprovideroktapolicyruleidpdiscoveryconfigpropertyplatforminclude) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.PolicyRuleIdpDiscoveryPlatformInclude`](#@cdktf/provider-okta.PolicyRuleIdpDiscoveryPlatformInclude)[] | platform_include block. |
 | [`policyid`](#cdktfprovideroktapolicyruleidpdiscoveryconfigpropertypolicyid) | `string` | Policy ID of the Rule. |
 | [`policyId`](#cdktfprovideroktapolicyruleidpdiscoveryconfigpropertypolicyid) | `string` | Policy ID of the Rule. |
 | [`priority`](#cdktfprovideroktapolicyruleidpdiscoveryconfigpropertypriority) | `number` | Policy Rule Priority, this attribute can be set to a valid priority. |
 | [`status`](#cdktfprovideroktapolicyruleidpdiscoveryconfigpropertystatus) | `string` | Policy Rule Status: ACTIVE or INACTIVE. |
 | [`userIdentifierAttribute`](#cdktfprovideroktapolicyruleidpdiscoveryconfigpropertyuseridentifierattribute) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery#user_identifier_attribute PolicyRuleIdpDiscovery#user_identifier_attribute}. |
-| [`userIdentifierPatterns`](#cdktfprovideroktapolicyruleidpdiscoveryconfigpropertyuseridentifierpatterns) | [`@cdktf/provider-okta.PolicyRuleIdpDiscoveryUserIdentifierPatterns`](#@cdktf/provider-okta.PolicyRuleIdpDiscoveryUserIdentifierPatterns)[] | user_identifier_patterns block. |
+| [`userIdentifierPatterns`](#cdktfprovideroktapolicyruleidpdiscoveryconfigpropertyuseridentifierpatterns) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.PolicyRuleIdpDiscoveryUserIdentifierPatterns`](#@cdktf/provider-okta.PolicyRuleIdpDiscoveryUserIdentifierPatterns)[] | user_identifier_patterns block. |
 | [`userIdentifierType`](#cdktfprovideroktapolicyruleidpdiscoveryconfigpropertyuseridentifiertype) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery#user_identifier_type PolicyRuleIdpDiscovery#user_identifier_type}. |
 
 ---
@@ -81129,10 +81129,10 @@ const policyRuleIdpDiscoveryConfig: PolicyRuleIdpDiscoveryConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyRuleIdpDiscoveryConfig.property.count" id="cdktfprovideroktapolicyruleidpdiscoveryconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -81183,10 +81183,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `appExclude`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyRuleIdpDiscoveryConfig.property.appExclude" id="cdktfprovideroktapolicyruleidpdiscoveryconfigpropertyappexclude"></a>
 
 ```typescript
-public readonly appExclude: PolicyRuleIdpDiscoveryAppExclude[];
+public readonly appExclude: IResolvable | PolicyRuleIdpDiscoveryAppExclude[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.PolicyRuleIdpDiscoveryAppExclude`](#@cdktf/provider-okta.PolicyRuleIdpDiscoveryAppExclude)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.PolicyRuleIdpDiscoveryAppExclude`](#@cdktf/provider-okta.PolicyRuleIdpDiscoveryAppExclude)[]
 
 app_exclude block.
 
@@ -81197,10 +81197,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `appInclude`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyRuleIdpDiscoveryConfig.property.appInclude" id="cdktfprovideroktapolicyruleidpdiscoveryconfigpropertyappinclude"></a>
 
 ```typescript
-public readonly appInclude: PolicyRuleIdpDiscoveryAppInclude[];
+public readonly appInclude: IResolvable | PolicyRuleIdpDiscoveryAppInclude[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.PolicyRuleIdpDiscoveryAppInclude`](#@cdktf/provider-okta.PolicyRuleIdpDiscoveryAppInclude)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.PolicyRuleIdpDiscoveryAppInclude`](#@cdktf/provider-okta.PolicyRuleIdpDiscoveryAppInclude)[]
 
 app_include block.
 
@@ -81277,10 +81277,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `platformInclude`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyRuleIdpDiscoveryConfig.property.platformInclude" id="cdktfprovideroktapolicyruleidpdiscoveryconfigpropertyplatforminclude"></a>
 
 ```typescript
-public readonly platformInclude: PolicyRuleIdpDiscoveryPlatformInclude[];
+public readonly platformInclude: IResolvable | PolicyRuleIdpDiscoveryPlatformInclude[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.PolicyRuleIdpDiscoveryPlatformInclude`](#@cdktf/provider-okta.PolicyRuleIdpDiscoveryPlatformInclude)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.PolicyRuleIdpDiscoveryPlatformInclude`](#@cdktf/provider-okta.PolicyRuleIdpDiscoveryPlatformInclude)[]
 
 platform_include block.
 
@@ -81359,10 +81359,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `userIdentifierPatterns`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyRuleIdpDiscoveryConfig.property.userIdentifierPatterns" id="cdktfprovideroktapolicyruleidpdiscoveryconfigpropertyuseridentifierpatterns"></a>
 
 ```typescript
-public readonly userIdentifierPatterns: PolicyRuleIdpDiscoveryUserIdentifierPatterns[];
+public readonly userIdentifierPatterns: IResolvable | PolicyRuleIdpDiscoveryUserIdentifierPatterns[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.PolicyRuleIdpDiscoveryUserIdentifierPatterns`](#@cdktf/provider-okta.PolicyRuleIdpDiscoveryUserIdentifierPatterns)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.PolicyRuleIdpDiscoveryUserIdentifierPatterns`](#@cdktf/provider-okta.PolicyRuleIdpDiscoveryUserIdentifierPatterns)[]
 
 user_identifier_patterns block.
 
@@ -81609,13 +81609,13 @@ const policyRuleMfaConfig: PolicyRuleMfaConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktapolicyrulemfaconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktapolicyrulemfaconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktapolicyrulemfaconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktapolicyrulemfaconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktapolicyrulemfaconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
 | [`name`](#cdktfprovideroktapolicyrulemfaconfigpropertyname)<span title="Required">*</span> | `string` | Policy Rule Name. |
-| [`appExclude`](#cdktfprovideroktapolicyrulemfaconfigpropertyappexclude) | [`@cdktf/provider-okta.PolicyRuleMfaAppExclude`](#@cdktf/provider-okta.PolicyRuleMfaAppExclude)[] | app_exclude block. |
-| [`appInclude`](#cdktfprovideroktapolicyrulemfaconfigpropertyappinclude) | [`@cdktf/provider-okta.PolicyRuleMfaAppInclude`](#@cdktf/provider-okta.PolicyRuleMfaAppInclude)[] | app_include block. |
+| [`appExclude`](#cdktfprovideroktapolicyrulemfaconfigpropertyappexclude) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.PolicyRuleMfaAppExclude`](#@cdktf/provider-okta.PolicyRuleMfaAppExclude)[] | app_exclude block. |
+| [`appInclude`](#cdktfprovideroktapolicyrulemfaconfigpropertyappinclude) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.PolicyRuleMfaAppInclude`](#@cdktf/provider-okta.PolicyRuleMfaAppInclude)[] | app_include block. |
 | [`enroll`](#cdktfprovideroktapolicyrulemfaconfigpropertyenroll) | `string` | Should the user be enrolled the first time they LOGIN, the next time they are CHALLENGED, or NEVER? |
 | [`networkConnection`](#cdktfprovideroktapolicyrulemfaconfigpropertynetworkconnection) | `string` | Network selection mode: ANYWHERE, ZONE, ON_NETWORK, or OFF_NETWORK. |
 | [`networkExcludes`](#cdktfprovideroktapolicyrulemfaconfigpropertynetworkexcludes) | `string`[] | The zones to exclude. |
@@ -81631,10 +81631,10 @@ const policyRuleMfaConfig: PolicyRuleMfaConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyRuleMfaConfig.property.count" id="cdktfprovideroktapolicyrulemfaconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -81685,10 +81685,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `appExclude`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyRuleMfaConfig.property.appExclude" id="cdktfprovideroktapolicyrulemfaconfigpropertyappexclude"></a>
 
 ```typescript
-public readonly appExclude: PolicyRuleMfaAppExclude[];
+public readonly appExclude: IResolvable | PolicyRuleMfaAppExclude[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.PolicyRuleMfaAppExclude`](#@cdktf/provider-okta.PolicyRuleMfaAppExclude)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.PolicyRuleMfaAppExclude`](#@cdktf/provider-okta.PolicyRuleMfaAppExclude)[]
 
 app_exclude block.
 
@@ -81699,10 +81699,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `appInclude`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyRuleMfaConfig.property.appInclude" id="cdktfprovideroktapolicyrulemfaconfigpropertyappinclude"></a>
 
 ```typescript
-public readonly appInclude: PolicyRuleMfaAppInclude[];
+public readonly appInclude: IResolvable | PolicyRuleMfaAppInclude[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.PolicyRuleMfaAppInclude`](#@cdktf/provider-okta.PolicyRuleMfaAppInclude)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.PolicyRuleMfaAppInclude`](#@cdktf/provider-okta.PolicyRuleMfaAppInclude)[]
 
 app_include block.
 
@@ -81850,7 +81850,7 @@ const policyRulePasswordConfig: PolicyRulePasswordConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktapolicyrulepasswordconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktapolicyrulepasswordconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktapolicyrulepasswordconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktapolicyrulepasswordconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktapolicyrulepasswordconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -81872,10 +81872,10 @@ const policyRulePasswordConfig: PolicyRulePasswordConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyRulePasswordConfig.property.count" id="cdktfprovideroktapolicyrulepasswordconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -82091,7 +82091,7 @@ const policyRuleProfileEnrollmentConfig: PolicyRuleProfileEnrollmentConfig = { .
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktapolicyruleprofileenrollmentconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktapolicyruleprofileenrollmentconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktapolicyruleprofileenrollmentconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktapolicyruleprofileenrollmentconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktapolicyruleprofileenrollmentconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -82100,7 +82100,7 @@ const policyRuleProfileEnrollmentConfig: PolicyRuleProfileEnrollmentConfig = { .
 | [`access`](#cdktfprovideroktapolicyruleprofileenrollmentconfigpropertyaccess) | `string` | Allow or deny access based on the rule conditions: ALLOW or DENY. |
 | [`emailVerification`](#cdktfprovideroktapolicyruleprofileenrollmentconfigpropertyemailverification) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Indicates whether email verification should occur before access is granted. |
 | [`inlineHookId`](#cdktfprovideroktapolicyruleprofileenrollmentconfigpropertyinlinehookid) | `string` | ID of a Registration Inline Hook. |
-| [`profileAttributes`](#cdktfprovideroktapolicyruleprofileenrollmentconfigpropertyprofileattributes) | [`@cdktf/provider-okta.PolicyRuleProfileEnrollmentProfileAttributes`](#@cdktf/provider-okta.PolicyRuleProfileEnrollmentProfileAttributes)[] | profile_attributes block. |
+| [`profileAttributes`](#cdktfprovideroktapolicyruleprofileenrollmentconfigpropertyprofileattributes) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.PolicyRuleProfileEnrollmentProfileAttributes`](#@cdktf/provider-okta.PolicyRuleProfileEnrollmentProfileAttributes)[] | profile_attributes block. |
 | [`targetGroupId`](#cdktfprovideroktapolicyruleprofileenrollmentconfigpropertytargetgroupid) | `string` | The ID of a Group that this User should be added to. |
 
 ---
@@ -82108,10 +82108,10 @@ const policyRuleProfileEnrollmentConfig: PolicyRuleProfileEnrollmentConfig = { .
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyRuleProfileEnrollmentConfig.property.count" id="cdktfprovideroktapolicyruleprofileenrollmentconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -82218,10 +82218,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `profileAttributes`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyRuleProfileEnrollmentConfig.property.profileAttributes" id="cdktfprovideroktapolicyruleprofileenrollmentconfigpropertyprofileattributes"></a>
 
 ```typescript
-public readonly profileAttributes: PolicyRuleProfileEnrollmentProfileAttributes[];
+public readonly profileAttributes: IResolvable | PolicyRuleProfileEnrollmentProfileAttributes[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.PolicyRuleProfileEnrollmentProfileAttributes`](#@cdktf/provider-okta.PolicyRuleProfileEnrollmentProfileAttributes)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.PolicyRuleProfileEnrollmentProfileAttributes`](#@cdktf/provider-okta.PolicyRuleProfileEnrollmentProfileAttributes)[]
 
 profile_attributes block.
 
@@ -82319,7 +82319,7 @@ const policyRuleSignonConfig: PolicyRuleSignonConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktapolicyrulesignonconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktapolicyrulesignonconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktapolicyrulesignonconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktapolicyrulesignonconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktapolicyrulesignonconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -82327,7 +82327,7 @@ const policyRuleSignonConfig: PolicyRuleSignonConfig = { ... }
 | [`access`](#cdktfprovideroktapolicyrulesignonconfigpropertyaccess) | `string` | Allow or deny access based on the rule conditions: ALLOW, DENY or CHALLENGE. |
 | [`authtype`](#cdktfprovideroktapolicyrulesignonconfigpropertyauthtype) | `string` | Authentication entrypoint: ANY, RADIUS or LDAP_INTERFACE. |
 | [`behaviors`](#cdktfprovideroktapolicyrulesignonconfigpropertybehaviors) | `string`[] | List of behavior IDs. |
-| [`factorSequence`](#cdktfprovideroktapolicyrulesignonconfigpropertyfactorsequence) | [`@cdktf/provider-okta.PolicyRuleSignonFactorSequence`](#@cdktf/provider-okta.PolicyRuleSignonFactorSequence)[] | factor_sequence block. |
+| [`factorSequence`](#cdktfprovideroktapolicyrulesignonconfigpropertyfactorsequence) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.PolicyRuleSignonFactorSequence`](#@cdktf/provider-okta.PolicyRuleSignonFactorSequence)[] | factor_sequence block. |
 | [`mfaLifetime`](#cdktfprovideroktapolicyrulesignonconfigpropertymfalifetime) | `number` | Elapsed time before the next MFA challenge. |
 | [`mfaPrompt`](#cdktfprovideroktapolicyrulesignonconfigpropertymfaprompt) | `string` | Prompt for MFA based on the device used, a factor session lifetime, or every sign-on attempt: DEVICE, SESSION or ALWAYS. |
 | [`mfaRememberDevice`](#cdktfprovideroktapolicyrulesignonconfigpropertymfarememberdevice) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Remember MFA device. |
@@ -82351,10 +82351,10 @@ const policyRuleSignonConfig: PolicyRuleSignonConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyRuleSignonConfig.property.count" id="cdktfprovideroktapolicyrulesignonconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -82447,10 +82447,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `factorSequence`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyRuleSignonConfig.property.factorSequence" id="cdktfprovideroktapolicyrulesignonconfigpropertyfactorsequence"></a>
 
 ```typescript
-public readonly factorSequence: PolicyRuleSignonFactorSequence[];
+public readonly factorSequence: IResolvable | PolicyRuleSignonFactorSequence[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.PolicyRuleSignonFactorSequence`](#@cdktf/provider-okta.PolicyRuleSignonFactorSequence)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.PolicyRuleSignonFactorSequence`](#@cdktf/provider-okta.PolicyRuleSignonFactorSequence)[]
 
 factor_sequence block.
 
@@ -82712,7 +82712,7 @@ const policyRuleSignonFactorSequence: PolicyRuleSignonFactorSequence = { ... }
 | --- | --- | --- |
 | [`primaryCriteriaFactorType`](#cdktfprovideroktapolicyrulesignonfactorsequencepropertyprimarycriteriafactortype)<span title="Required">*</span> | `string` | Type of a Factor. |
 | [`primaryCriteriaProvider`](#cdktfprovideroktapolicyrulesignonfactorsequencepropertyprimarycriteriaprovider)<span title="Required">*</span> | `string` | Factor provider. |
-| [`secondaryCriteria`](#cdktfprovideroktapolicyrulesignonfactorsequencepropertysecondarycriteria) | [`@cdktf/provider-okta.PolicyRuleSignonFactorSequenceSecondaryCriteria`](#@cdktf/provider-okta.PolicyRuleSignonFactorSequenceSecondaryCriteria)[] | secondary_criteria block. |
+| [`secondaryCriteria`](#cdktfprovideroktapolicyrulesignonfactorsequencepropertysecondarycriteria) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.PolicyRuleSignonFactorSequenceSecondaryCriteria`](#@cdktf/provider-okta.PolicyRuleSignonFactorSequenceSecondaryCriteria)[] | secondary_criteria block. |
 
 ---
 
@@ -82747,10 +82747,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `secondaryCriteria`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyRuleSignonFactorSequence.property.secondaryCriteria" id="cdktfprovideroktapolicyrulesignonfactorsequencepropertysecondarycriteria"></a>
 
 ```typescript
-public readonly secondaryCriteria: PolicyRuleSignonFactorSequenceSecondaryCriteria[];
+public readonly secondaryCriteria: IResolvable | PolicyRuleSignonFactorSequenceSecondaryCriteria[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.PolicyRuleSignonFactorSequenceSecondaryCriteria`](#@cdktf/provider-okta.PolicyRuleSignonFactorSequenceSecondaryCriteria)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.PolicyRuleSignonFactorSequenceSecondaryCriteria`](#@cdktf/provider-okta.PolicyRuleSignonFactorSequenceSecondaryCriteria)[]
 
 secondary_criteria block.
 
@@ -82819,7 +82819,7 @@ const policySignonConfig: PolicySignonConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktapolicysignonconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktapolicysignonconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktapolicysignonconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktapolicysignonconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktapolicysignonconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -82834,10 +82834,10 @@ const policySignonConfig: PolicySignonConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicySignonConfig.property.count" id="cdktfprovideroktapolicysignonconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -82955,7 +82955,7 @@ const profileMappingConfig: ProfileMappingConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktaprofilemappingconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktaprofilemappingconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktaprofilemappingconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktaprofilemappingconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktaprofilemappingconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -82963,17 +82963,17 @@ const profileMappingConfig: ProfileMappingConfig = { ... }
 | [`targetId`](#cdktfprovideroktaprofilemappingconfigpropertytargetid)<span title="Required">*</span> | `string` | The target id of the mapping to manage. |
 | [`alwaysApply`](#cdktfprovideroktaprofilemappingconfigpropertyalwaysapply) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Whether apply the changes to all users with this profile after updating or creating the these mappings. |
 | [`deleteWhenAbsent`](#cdktfprovideroktaprofilemappingconfigpropertydeletewhenabsent) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | When turned on this flag will trigger the provider to delete mapping properties that are not defined in config. |
-| [`mappings`](#cdktfprovideroktaprofilemappingconfigpropertymappings) | [`@cdktf/provider-okta.ProfileMappingMappings`](#@cdktf/provider-okta.ProfileMappingMappings)[] | mappings block. |
+| [`mappings`](#cdktfprovideroktaprofilemappingconfigpropertymappings) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.ProfileMappingMappings`](#@cdktf/provider-okta.ProfileMappingMappings)[] | mappings block. |
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.ProfileMappingConfig.property.count" id="cdktfprovideroktaprofilemappingconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -83066,10 +83066,10 @@ By default, we do not delete missing properties.  Docs at Terraform Registry: {@
 ##### `mappings`<sup>Optional</sup> <a name="@cdktf/provider-okta.ProfileMappingConfig.property.mappings" id="cdktfprovideroktaprofilemappingconfigpropertymappings"></a>
 
 ```typescript
-public readonly mappings: ProfileMappingMappings[];
+public readonly mappings: IResolvable | ProfileMappingMappings[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.ProfileMappingMappings`](#@cdktf/provider-okta.ProfileMappingMappings)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.ProfileMappingMappings`](#@cdktf/provider-okta.ProfileMappingMappings)[]
 
 mappings block.
 
@@ -83149,7 +83149,7 @@ const rateLimitingConfig: RateLimitingConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktaratelimitingconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktaratelimitingconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktaratelimitingconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktaratelimitingconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktaratelimitingconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -83162,10 +83162,10 @@ const rateLimitingConfig: RateLimitingConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.RateLimitingConfig.property.count" id="cdktfprovideroktaratelimitingconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -83255,7 +83255,7 @@ const resourceSetConfig: ResourceSetConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktaresourcesetconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktaresourcesetconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktaresourcesetconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktaresourcesetconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktaresourcesetconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -83268,10 +83268,10 @@ const resourceSetConfig: ResourceSetConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.ResourceSetConfig.property.count" id="cdktfprovideroktaresourcesetconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -83361,7 +83361,7 @@ const roleSubscriptionConfig: RoleSubscriptionConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktarolesubscriptionconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktarolesubscriptionconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktarolesubscriptionconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktarolesubscriptionconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktarolesubscriptionconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -83374,10 +83374,10 @@ const roleSubscriptionConfig: RoleSubscriptionConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.RoleSubscriptionConfig.property.count" id="cdktfprovideroktarolesubscriptionconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -83572,7 +83572,7 @@ const samlAppConfig: SamlAppConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktasamlappconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktasamlappconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktasamlappconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktasamlappconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktasamlappconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -83585,7 +83585,7 @@ const samlAppConfig: SamlAppConfig = { ... }
 | [`appLinksJson`](#cdktfprovideroktasamlappconfigpropertyapplinksjson) | `string` | Displays specific appLinks for the app. |
 | [`appSettingsJson`](#cdktfprovideroktasamlappconfigpropertyappsettingsjson) | `string` | Application settings in JSON format. |
 | [`assertionSigned`](#cdktfprovideroktasamlappconfigpropertyassertionsigned) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Determines whether the SAML assertion is digitally signed. |
-| [`attributeStatements`](#cdktfprovideroktasamlappconfigpropertyattributestatements) | [`@cdktf/provider-okta.SamlAppAttributeStatements`](#@cdktf/provider-okta.SamlAppAttributeStatements)[] | attribute_statements block. |
+| [`attributeStatements`](#cdktfprovideroktasamlappconfigpropertyattributestatements) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.SamlAppAttributeStatements`](#@cdktf/provider-okta.SamlAppAttributeStatements)[] | attribute_statements block. |
 | [`audience`](#cdktfprovideroktasamlappconfigpropertyaudience) | `string` | Audience Restriction. |
 | [`authnContextClassRef`](#cdktfprovideroktasamlappconfigpropertyauthncontextclassref) | `string` | Identifies the SAML authentication context class for the assertion’s authentication statement. |
 | [`autoSubmitToolbar`](#cdktfprovideroktasamlappconfigpropertyautosubmittoolbar) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Display auto submit toolbar. |
@@ -83624,17 +83624,17 @@ const samlAppConfig: SamlAppConfig = { ... }
 | [`userNameTemplatePushStatus`](#cdktfprovideroktasamlappconfigpropertyusernametemplatepushstatus) | `string` | Push username on update. |
 | [`userNameTemplateSuffix`](#cdktfprovideroktasamlappconfigpropertyusernametemplatesuffix) | `string` | Username template suffix. |
 | [`userNameTemplateType`](#cdktfprovideroktasamlappconfigpropertyusernametemplatetype) | `string` | Username template type. |
-| [`users`](#cdktfprovideroktasamlappconfigpropertyusers) | [`@cdktf/provider-okta.SamlAppUsers`](#@cdktf/provider-okta.SamlAppUsers)[] | users block. |
+| [`users`](#cdktfprovideroktasamlappconfigpropertyusers) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.SamlAppUsers`](#@cdktf/provider-okta.SamlAppUsers)[] | users block. |
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.SamlAppConfig.property.count" id="cdktfprovideroktasamlappconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -83797,10 +83797,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `attributeStatements`<sup>Optional</sup> <a name="@cdktf/provider-okta.SamlAppConfig.property.attributeStatements" id="cdktfprovideroktasamlappconfigpropertyattributestatements"></a>
 
 ```typescript
-public readonly attributeStatements: SamlAppAttributeStatements[];
+public readonly attributeStatements: IResolvable | SamlAppAttributeStatements[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.SamlAppAttributeStatements`](#@cdktf/provider-okta.SamlAppAttributeStatements)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.SamlAppAttributeStatements`](#@cdktf/provider-okta.SamlAppAttributeStatements)[]
 
 attribute_statements block.
 
@@ -84343,10 +84343,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `users`<sup>Optional</sup> <a name="@cdktf/provider-okta.SamlAppConfig.property.users" id="cdktfprovideroktasamlappconfigpropertyusers"></a>
 
 ```typescript
-public readonly users: SamlAppUsers[];
+public readonly users: IResolvable | SamlAppUsers[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.SamlAppUsers`](#@cdktf/provider-okta.SamlAppUsers)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.SamlAppUsers`](#@cdktf/provider-okta.SamlAppUsers)[]
 
 users block.
 
@@ -84430,7 +84430,7 @@ const samlIdpConfig: SamlIdpConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktasamlidpconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktasamlidpconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktasamlidpconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktasamlidpconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktasamlidpconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -84471,10 +84471,10 @@ const samlIdpConfig: SamlIdpConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.SamlIdpConfig.property.count" id="cdktfprovideroktasamlidpconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -84906,7 +84906,7 @@ const samlIdpSigningKeyConfig: SamlIdpSigningKeyConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktasamlidpsigningkeyconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktasamlidpsigningkeyconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktasamlidpsigningkeyconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktasamlidpsigningkeyconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktasamlidpsigningkeyconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -84917,10 +84917,10 @@ const samlIdpSigningKeyConfig: SamlIdpSigningKeyConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.SamlIdpSigningKeyConfig.property.count" id="cdktfprovideroktasamlidpsigningkeyconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -84982,7 +84982,7 @@ const securePasswordStoreAppConfig: SecurePasswordStoreAppConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktasecurepasswordstoreappconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktasecurepasswordstoreappconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktasecurepasswordstoreappconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktasecurepasswordstoreappconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktasecurepasswordstoreappconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -85018,17 +85018,17 @@ const securePasswordStoreAppConfig: SecurePasswordStoreAppConfig = { ... }
 | [`userNameTemplatePushStatus`](#cdktfprovideroktasecurepasswordstoreappconfigpropertyusernametemplatepushstatus) | `string` | Push username on update. |
 | [`userNameTemplateSuffix`](#cdktfprovideroktasecurepasswordstoreappconfigpropertyusernametemplatesuffix) | `string` | Username template suffix. |
 | [`userNameTemplateType`](#cdktfprovideroktasecurepasswordstoreappconfigpropertyusernametemplatetype) | `string` | Username template type. |
-| [`users`](#cdktfprovideroktasecurepasswordstoreappconfigpropertyusers) | [`@cdktf/provider-okta.SecurePasswordStoreAppUsers`](#@cdktf/provider-okta.SecurePasswordStoreAppUsers)[] | users block. |
+| [`users`](#cdktfprovideroktasecurepasswordstoreappconfigpropertyusers) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.SecurePasswordStoreAppUsers`](#@cdktf/provider-okta.SecurePasswordStoreAppUsers)[] | users block. |
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.SecurePasswordStoreAppConfig.property.count" id="cdktfprovideroktasecurepasswordstoreappconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -85513,10 +85513,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `users`<sup>Optional</sup> <a name="@cdktf/provider-okta.SecurePasswordStoreAppConfig.property.users" id="cdktfprovideroktasecurepasswordstoreappconfigpropertyusers"></a>
 
 ```typescript
-public readonly users: SecurePasswordStoreAppUsers[];
+public readonly users: IResolvable | SecurePasswordStoreAppUsers[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.SecurePasswordStoreAppUsers`](#@cdktf/provider-okta.SecurePasswordStoreAppUsers)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.SecurePasswordStoreAppUsers`](#@cdktf/provider-okta.SecurePasswordStoreAppUsers)[]
 
 users block.
 
@@ -85600,7 +85600,7 @@ const securityNotificationEmailsConfig: SecurityNotificationEmailsConfig = { ...
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktasecuritynotificationemailsconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktasecuritynotificationemailsconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktasecuritynotificationemailsconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktasecuritynotificationemailsconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktasecuritynotificationemailsconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -85615,10 +85615,10 @@ const securityNotificationEmailsConfig: SecurityNotificationEmailsConfig = { ...
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.SecurityNotificationEmailsConfig.property.count" id="cdktfprovideroktasecuritynotificationemailsconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -85736,7 +85736,7 @@ const signonPolicyConfig: SignonPolicyConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktasignonpolicyconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktasignonpolicyconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktasignonpolicyconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktasignonpolicyconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktasignonpolicyconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -85751,10 +85751,10 @@ const signonPolicyConfig: SignonPolicyConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.SignonPolicyConfig.property.count" id="cdktfprovideroktasignonpolicyconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -85872,7 +85872,7 @@ const signonPolicyRuleConfig: SignonPolicyRuleConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktasignonpolicyruleconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktasignonpolicyruleconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktasignonpolicyruleconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktasignonpolicyruleconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktasignonpolicyruleconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -85880,7 +85880,7 @@ const signonPolicyRuleConfig: SignonPolicyRuleConfig = { ... }
 | [`access`](#cdktfprovideroktasignonpolicyruleconfigpropertyaccess) | `string` | Allow or deny access based on the rule conditions: ALLOW, DENY or CHALLENGE. |
 | [`authtype`](#cdktfprovideroktasignonpolicyruleconfigpropertyauthtype) | `string` | Authentication entrypoint: ANY, RADIUS or LDAP_INTERFACE. |
 | [`behaviors`](#cdktfprovideroktasignonpolicyruleconfigpropertybehaviors) | `string`[] | List of behavior IDs. |
-| [`factorSequence`](#cdktfprovideroktasignonpolicyruleconfigpropertyfactorsequence) | [`@cdktf/provider-okta.SignonPolicyRuleFactorSequence`](#@cdktf/provider-okta.SignonPolicyRuleFactorSequence)[] | factor_sequence block. |
+| [`factorSequence`](#cdktfprovideroktasignonpolicyruleconfigpropertyfactorsequence) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.SignonPolicyRuleFactorSequence`](#@cdktf/provider-okta.SignonPolicyRuleFactorSequence)[] | factor_sequence block. |
 | [`mfaLifetime`](#cdktfprovideroktasignonpolicyruleconfigpropertymfalifetime) | `number` | Elapsed time before the next MFA challenge. |
 | [`mfaPrompt`](#cdktfprovideroktasignonpolicyruleconfigpropertymfaprompt) | `string` | Prompt for MFA based on the device used, a factor session lifetime, or every sign-on attempt: DEVICE, SESSION or ALWAYS. |
 | [`mfaRememberDevice`](#cdktfprovideroktasignonpolicyruleconfigpropertymfarememberdevice) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Remember MFA device. |
@@ -85904,10 +85904,10 @@ const signonPolicyRuleConfig: SignonPolicyRuleConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.SignonPolicyRuleConfig.property.count" id="cdktfprovideroktasignonpolicyruleconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -86000,10 +86000,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `factorSequence`<sup>Optional</sup> <a name="@cdktf/provider-okta.SignonPolicyRuleConfig.property.factorSequence" id="cdktfprovideroktasignonpolicyruleconfigpropertyfactorsequence"></a>
 
 ```typescript
-public readonly factorSequence: SignonPolicyRuleFactorSequence[];
+public readonly factorSequence: IResolvable | SignonPolicyRuleFactorSequence[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.SignonPolicyRuleFactorSequence`](#@cdktf/provider-okta.SignonPolicyRuleFactorSequence)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.SignonPolicyRuleFactorSequence`](#@cdktf/provider-okta.SignonPolicyRuleFactorSequence)[]
 
 factor_sequence block.
 
@@ -86265,7 +86265,7 @@ const signonPolicyRuleFactorSequence: SignonPolicyRuleFactorSequence = { ... }
 | --- | --- | --- |
 | [`primaryCriteriaFactorType`](#cdktfprovideroktasignonpolicyrulefactorsequencepropertyprimarycriteriafactortype)<span title="Required">*</span> | `string` | Type of a Factor. |
 | [`primaryCriteriaProvider`](#cdktfprovideroktasignonpolicyrulefactorsequencepropertyprimarycriteriaprovider)<span title="Required">*</span> | `string` | Factor provider. |
-| [`secondaryCriteria`](#cdktfprovideroktasignonpolicyrulefactorsequencepropertysecondarycriteria) | [`@cdktf/provider-okta.SignonPolicyRuleFactorSequenceSecondaryCriteria`](#@cdktf/provider-okta.SignonPolicyRuleFactorSequenceSecondaryCriteria)[] | secondary_criteria block. |
+| [`secondaryCriteria`](#cdktfprovideroktasignonpolicyrulefactorsequencepropertysecondarycriteria) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.SignonPolicyRuleFactorSequenceSecondaryCriteria`](#@cdktf/provider-okta.SignonPolicyRuleFactorSequenceSecondaryCriteria)[] | secondary_criteria block. |
 
 ---
 
@@ -86300,10 +86300,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `secondaryCriteria`<sup>Optional</sup> <a name="@cdktf/provider-okta.SignonPolicyRuleFactorSequence.property.secondaryCriteria" id="cdktfprovideroktasignonpolicyrulefactorsequencepropertysecondarycriteria"></a>
 
 ```typescript
-public readonly secondaryCriteria: SignonPolicyRuleFactorSequenceSecondaryCriteria[];
+public readonly secondaryCriteria: IResolvable | SignonPolicyRuleFactorSequenceSecondaryCriteria[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.SignonPolicyRuleFactorSequenceSecondaryCriteria`](#@cdktf/provider-okta.SignonPolicyRuleFactorSequenceSecondaryCriteria)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.SignonPolicyRuleFactorSequenceSecondaryCriteria`](#@cdktf/provider-okta.SignonPolicyRuleFactorSequenceSecondaryCriteria)[]
 
 secondary_criteria block.
 
@@ -86372,7 +86372,7 @@ const socialIdpConfig: SocialIdpConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktasocialidpconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktasocialidpconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktasocialidpconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktasocialidpconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktasocialidpconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -86413,10 +86413,10 @@ const socialIdpConfig: SocialIdpConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.SocialIdpConfig.property.count" id="cdktfprovideroktasocialidpconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -86854,7 +86854,7 @@ const swaAppConfig: SwaAppConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktaswaappconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktaswaappconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktaswaappconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktaswaappconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktaswaappconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -86885,17 +86885,17 @@ const swaAppConfig: SwaAppConfig = { ... }
 | [`userNameTemplatePushStatus`](#cdktfprovideroktaswaappconfigpropertyusernametemplatepushstatus) | `string` | Push username on update. |
 | [`userNameTemplateSuffix`](#cdktfprovideroktaswaappconfigpropertyusernametemplatesuffix) | `string` | Username template suffix. |
 | [`userNameTemplateType`](#cdktfprovideroktaswaappconfigpropertyusernametemplatetype) | `string` | Username template type. |
-| [`users`](#cdktfprovideroktaswaappconfigpropertyusers) | [`@cdktf/provider-okta.SwaAppUsers`](#@cdktf/provider-okta.SwaAppUsers)[] | users block. |
+| [`users`](#cdktfprovideroktaswaappconfigpropertyusers) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.SwaAppUsers`](#@cdktf/provider-okta.SwaAppUsers)[] | users block. |
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.SwaAppConfig.property.count" id="cdktfprovideroktaswaappconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -87310,10 +87310,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `users`<sup>Optional</sup> <a name="@cdktf/provider-okta.SwaAppConfig.property.users" id="cdktfprovideroktaswaappconfigpropertyusers"></a>
 
 ```typescript
-public readonly users: SwaAppUsers[];
+public readonly users: IResolvable | SwaAppUsers[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.SwaAppUsers`](#@cdktf/provider-okta.SwaAppUsers)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.SwaAppUsers`](#@cdktf/provider-okta.SwaAppUsers)[]
 
 users block.
 
@@ -87397,11 +87397,11 @@ const templateEmailConfig: TemplateEmailConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktatemplateemailconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktatemplateemailconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktatemplateemailconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktatemplateemailconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktatemplateemailconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
-| [`translations`](#cdktfprovideroktatemplateemailconfigpropertytranslations)<span title="Required">*</span> | [`@cdktf/provider-okta.TemplateEmailTranslations`](#@cdktf/provider-okta.TemplateEmailTranslations)[] | translations block. |
+| [`translations`](#cdktfprovideroktatemplateemailconfigpropertytranslations)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.TemplateEmailTranslations`](#@cdktf/provider-okta.TemplateEmailTranslations)[] | translations block. |
 | [`type`](#cdktfprovideroktatemplateemailconfigpropertytype)<span title="Required">*</span> | `string` | Email template type. |
 | [`defaultLanguage`](#cdktfprovideroktatemplateemailconfigpropertydefaultlanguage) | `string` | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/template_email#default_language TemplateEmail#default_language}. |
 
@@ -87410,10 +87410,10 @@ const templateEmailConfig: TemplateEmailConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.TemplateEmailConfig.property.count" id="cdktfprovideroktatemplateemailconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -87450,10 +87450,10 @@ public readonly provider: TerraformProvider;
 ##### `translations`<sup>Required</sup> <a name="@cdktf/provider-okta.TemplateEmailConfig.property.translations" id="cdktfprovideroktatemplateemailconfigpropertytranslations"></a>
 
 ```typescript
-public readonly translations: TemplateEmailTranslations[];
+public readonly translations: IResolvable | TemplateEmailTranslations[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.TemplateEmailTranslations`](#@cdktf/provider-okta.TemplateEmailTranslations)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.TemplateEmailTranslations`](#@cdktf/provider-okta.TemplateEmailTranslations)[]
 
 translations block.
 
@@ -87557,23 +87557,23 @@ const templateSmsConfig: TemplateSmsConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktatemplatesmsconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktatemplatesmsconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktatemplatesmsconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktatemplatesmsconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktatemplatesmsconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
 | [`template`](#cdktfprovideroktatemplatesmsconfigpropertytemplate)<span title="Required">*</span> | `string` | SMS default template. |
 | [`type`](#cdktfprovideroktatemplatesmsconfigpropertytype)<span title="Required">*</span> | `string` | SMS template type. |
-| [`translations`](#cdktfprovideroktatemplatesmsconfigpropertytranslations) | [`@cdktf/provider-okta.TemplateSmsTranslations`](#@cdktf/provider-okta.TemplateSmsTranslations)[] | translations block. |
+| [`translations`](#cdktfprovideroktatemplatesmsconfigpropertytranslations) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.TemplateSmsTranslations`](#@cdktf/provider-okta.TemplateSmsTranslations)[] | translations block. |
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.TemplateSmsConfig.property.count" id="cdktfprovideroktatemplatesmsconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -87638,10 +87638,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `translations`<sup>Optional</sup> <a name="@cdktf/provider-okta.TemplateSmsConfig.property.translations" id="cdktfprovideroktatemplatesmsconfigpropertytranslations"></a>
 
 ```typescript
-public readonly translations: TemplateSmsTranslations[];
+public readonly translations: IResolvable | TemplateSmsTranslations[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.TemplateSmsTranslations`](#@cdktf/provider-okta.TemplateSmsTranslations)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.TemplateSmsTranslations`](#@cdktf/provider-okta.TemplateSmsTranslations)[]
 
 translations block.
 
@@ -87706,7 +87706,7 @@ const threatInsightSettingsConfig: ThreatInsightSettingsConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktathreatinsightsettingsconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktathreatinsightsettingsconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktathreatinsightsettingsconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktathreatinsightsettingsconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktathreatinsightsettingsconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -87718,10 +87718,10 @@ const threatInsightSettingsConfig: ThreatInsightSettingsConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.ThreatInsightSettingsConfig.property.count" id="cdktfprovideroktathreatinsightsettingsconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -87797,7 +87797,7 @@ const threeFieldAppConfig: ThreeFieldAppConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktathreefieldappconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktathreefieldappconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktathreefieldappconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktathreefieldappconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktathreefieldappconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -87831,17 +87831,17 @@ const threeFieldAppConfig: ThreeFieldAppConfig = { ... }
 | [`userNameTemplatePushStatus`](#cdktfprovideroktathreefieldappconfigpropertyusernametemplatepushstatus) | `string` | Push username on update. |
 | [`userNameTemplateSuffix`](#cdktfprovideroktathreefieldappconfigpropertyusernametemplatesuffix) | `string` | Username template suffix. |
 | [`userNameTemplateType`](#cdktfprovideroktathreefieldappconfigpropertyusernametemplatetype) | `string` | Username template type. |
-| [`users`](#cdktfprovideroktathreefieldappconfigpropertyusers) | [`@cdktf/provider-okta.ThreeFieldAppUsers`](#@cdktf/provider-okta.ThreeFieldAppUsers)[] | users block. |
+| [`users`](#cdktfprovideroktathreefieldappconfigpropertyusers) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.ThreeFieldAppUsers`](#@cdktf/provider-okta.ThreeFieldAppUsers)[] | users block. |
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.ThreeFieldAppConfig.property.count" id="cdktfprovideroktathreefieldappconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -88298,10 +88298,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `users`<sup>Optional</sup> <a name="@cdktf/provider-okta.ThreeFieldAppConfig.property.users" id="cdktfprovideroktathreefieldappconfigpropertyusers"></a>
 
 ```typescript
-public readonly users: ThreeFieldAppUsers[];
+public readonly users: IResolvable | ThreeFieldAppUsers[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.ThreeFieldAppUsers`](#@cdktf/provider-okta.ThreeFieldAppUsers)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.ThreeFieldAppUsers`](#@cdktf/provider-okta.ThreeFieldAppUsers)[]
 
 users block.
 
@@ -88385,7 +88385,7 @@ const trustedOriginConfig: TrustedOriginConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktatrustedoriginconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktatrustedoriginconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktatrustedoriginconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktatrustedoriginconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktatrustedoriginconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -88399,10 +88399,10 @@ const trustedOriginConfig: TrustedOriginConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.TrustedOriginConfig.property.count" id="cdktfprovideroktatrustedoriginconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -88506,7 +88506,7 @@ const userAdminRolesConfig: UserAdminRolesConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktauseradminrolesconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktauseradminrolesconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktauseradminrolesconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktauseradminrolesconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktauseradminrolesconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -88519,10 +88519,10 @@ const userAdminRolesConfig: UserAdminRolesConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.UserAdminRolesConfig.property.count" id="cdktfprovideroktauseradminrolesconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -88612,7 +88612,7 @@ const userBaseSchemaConfig: UserBaseSchemaConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktauserbaseschemaconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktauserbaseschemaconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktauserbaseschemaconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktauserbaseschemaconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktauserbaseschemaconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -88630,10 +88630,10 @@ const userBaseSchemaConfig: UserBaseSchemaConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.UserBaseSchemaConfig.property.count" id="cdktfprovideroktauserbaseschemaconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -88793,7 +88793,7 @@ const userBaseSchemaPropertyConfig: UserBaseSchemaPropertyConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktauserbaseschemapropertyconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktauserbaseschemapropertyconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktauserbaseschemapropertyconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktauserbaseschemapropertyconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktauserbaseschemapropertyconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -88811,10 +88811,10 @@ const userBaseSchemaPropertyConfig: UserBaseSchemaPropertyConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.UserBaseSchemaPropertyConfig.property.count" id="cdktfprovideroktauserbaseschemapropertyconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -88974,7 +88974,7 @@ const userConfig: UserConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktauserconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktauserconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktauserconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktauserconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktauserconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -89025,10 +89025,10 @@ const userConfig: UserConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.UserConfig.property.count" id="cdktfprovideroktauserconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -89650,7 +89650,7 @@ const userFactorQuestionConfig: UserFactorQuestionConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktauserfactorquestionconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktauserfactorquestionconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktauserfactorquestionconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktauserfactorquestionconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktauserfactorquestionconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -89663,10 +89663,10 @@ const userFactorQuestionConfig: UserFactorQuestionConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.UserFactorQuestionConfig.property.count" id="cdktfprovideroktauserfactorquestionconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -89756,7 +89756,7 @@ const userGroupMembershipsConfig: UserGroupMembershipsConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktausergroupmembershipsconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktausergroupmembershipsconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktausergroupmembershipsconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktausergroupmembershipsconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktausergroupmembershipsconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -89768,10 +89768,10 @@ const userGroupMembershipsConfig: UserGroupMembershipsConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.UserGroupMembershipsConfig.property.count" id="cdktfprovideroktausergroupmembershipsconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -89986,7 +89986,7 @@ const userSchemaConfig: UserSchemaConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktauserschemaconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktauserschemaconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktauserschemaconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktauserschemaconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktauserschemaconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -89994,17 +89994,17 @@ const userSchemaConfig: UserSchemaConfig = { ... }
 | [`title`](#cdktfprovideroktauserschemaconfigpropertytitle)<span title="Required">*</span> | `string` | Subschema title (display name). |
 | [`type`](#cdktfprovideroktauserschemaconfigpropertytype)<span title="Required">*</span> | `string` | Subschema type: string, boolean, number, integer, array, or object. |
 | [`arrayEnum`](#cdktfprovideroktauserschemaconfigpropertyarrayenum) | `string`[] | Custom Subschema enumerated value of a property of type array. |
-| [`arrayOneOf`](#cdktfprovideroktauserschemaconfigpropertyarrayoneof) | [`@cdktf/provider-okta.UserSchemaArrayOneOf`](#@cdktf/provider-okta.UserSchemaArrayOneOf)[] | array_one_of block. |
+| [`arrayOneOf`](#cdktfprovideroktauserschemaconfigpropertyarrayoneof) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.UserSchemaArrayOneOf`](#@cdktf/provider-okta.UserSchemaArrayOneOf)[] | array_one_of block. |
 | [`arrayType`](#cdktfprovideroktauserschemaconfigpropertyarraytype) | `string` | Subschema array type: string, number, integer, reference. Type field must be an array. |
 | [`description`](#cdktfprovideroktauserschemaconfigpropertydescription) | `string` | Custom Subschema description. |
 | [`enum`](#cdktfprovideroktauserschemaconfigpropertyenum) | `string`[] | Custom Subschema enumerated value of the property. see: developer.okta.com/docs/api/resources/schemas#user-profile-schema-property-object. |
 | [`externalName`](#cdktfprovideroktauserschemaconfigpropertyexternalname) | `string` | Subschema external name. |
 | [`externalNamespace`](#cdktfprovideroktauserschemaconfigpropertyexternalnamespace) | `string` | Subschema external namespace. |
 | [`master`](#cdktfprovideroktauserschemaconfigpropertymaster) | `string` | SubSchema profile manager, if not set it will inherit its setting. |
-| [`masterOverridePriority`](#cdktfprovideroktauserschemaconfigpropertymasteroverridepriority) | [`@cdktf/provider-okta.UserSchemaMasterOverridePriority`](#@cdktf/provider-okta.UserSchemaMasterOverridePriority)[] | master_override_priority block. |
+| [`masterOverridePriority`](#cdktfprovideroktauserschemaconfigpropertymasteroverridepriority) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.UserSchemaMasterOverridePriority`](#@cdktf/provider-okta.UserSchemaMasterOverridePriority)[] | master_override_priority block. |
 | [`maxLength`](#cdktfprovideroktauserschemaconfigpropertymaxlength) | `number` | Subschema of type string maximum length. |
 | [`minLength`](#cdktfprovideroktauserschemaconfigpropertyminlength) | `number` | Subschema of type string minimum length. |
-| [`oneOf`](#cdktfprovideroktauserschemaconfigpropertyoneof) | [`@cdktf/provider-okta.UserSchemaOneOf`](#@cdktf/provider-okta.UserSchemaOneOf)[] | one_of block. |
+| [`oneOf`](#cdktfprovideroktauserschemaconfigpropertyoneof) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.UserSchemaOneOf`](#@cdktf/provider-okta.UserSchemaOneOf)[] | one_of block. |
 | [`pattern`](#cdktfprovideroktauserschemaconfigpropertypattern) | `string` | The validation pattern to use for the subschema. Must be in form of '.+', or '[<pattern>]+' if present.'. |
 | [`permissions`](#cdktfprovideroktauserschemaconfigpropertypermissions) | `string` | SubSchema permissions: HIDE, READ_ONLY, or READ_WRITE. |
 | [`required`](#cdktfprovideroktauserschemaconfigpropertyrequired) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Whether the subschema is required. |
@@ -90017,10 +90017,10 @@ const userSchemaConfig: UserSchemaConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.UserSchemaConfig.property.count" id="cdktfprovideroktauserschemaconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -90113,10 +90113,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `arrayOneOf`<sup>Optional</sup> <a name="@cdktf/provider-okta.UserSchemaConfig.property.arrayOneOf" id="cdktfprovideroktauserschemaconfigpropertyarrayoneof"></a>
 
 ```typescript
-public readonly arrayOneOf: UserSchemaArrayOneOf[];
+public readonly arrayOneOf: IResolvable | UserSchemaArrayOneOf[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.UserSchemaArrayOneOf`](#@cdktf/provider-okta.UserSchemaArrayOneOf)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.UserSchemaArrayOneOf`](#@cdktf/provider-okta.UserSchemaArrayOneOf)[]
 
 array_one_of block.
 
@@ -90211,10 +90211,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `masterOverridePriority`<sup>Optional</sup> <a name="@cdktf/provider-okta.UserSchemaConfig.property.masterOverridePriority" id="cdktfprovideroktauserschemaconfigpropertymasteroverridepriority"></a>
 
 ```typescript
-public readonly masterOverridePriority: UserSchemaMasterOverridePriority[];
+public readonly masterOverridePriority: IResolvable | UserSchemaMasterOverridePriority[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.UserSchemaMasterOverridePriority`](#@cdktf/provider-okta.UserSchemaMasterOverridePriority)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.UserSchemaMasterOverridePriority`](#@cdktf/provider-okta.UserSchemaMasterOverridePriority)[]
 
 master_override_priority block.
 
@@ -90253,10 +90253,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `oneOf`<sup>Optional</sup> <a name="@cdktf/provider-okta.UserSchemaConfig.property.oneOf" id="cdktfprovideroktauserschemaconfigpropertyoneof"></a>
 
 ```typescript
-public readonly oneOf: UserSchemaOneOf[];
+public readonly oneOf: IResolvable | UserSchemaOneOf[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.UserSchemaOneOf`](#@cdktf/provider-okta.UserSchemaOneOf)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.UserSchemaOneOf`](#@cdktf/provider-okta.UserSchemaOneOf)[]
 
 one_of block.
 
@@ -90497,7 +90497,7 @@ const userSchemaPropertyConfig: UserSchemaPropertyConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktauserschemapropertyconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktauserschemapropertyconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktauserschemapropertyconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktauserschemapropertyconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktauserschemapropertyconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -90505,17 +90505,17 @@ const userSchemaPropertyConfig: UserSchemaPropertyConfig = { ... }
 | [`title`](#cdktfprovideroktauserschemapropertyconfigpropertytitle)<span title="Required">*</span> | `string` | Subschema title (display name). |
 | [`type`](#cdktfprovideroktauserschemapropertyconfigpropertytype)<span title="Required">*</span> | `string` | Subschema type: string, boolean, number, integer, array, or object. |
 | [`arrayEnum`](#cdktfprovideroktauserschemapropertyconfigpropertyarrayenum) | `string`[] | Custom Subschema enumerated value of a property of type array. |
-| [`arrayOneOf`](#cdktfprovideroktauserschemapropertyconfigpropertyarrayoneof) | [`@cdktf/provider-okta.UserSchemaPropertyArrayOneOf`](#@cdktf/provider-okta.UserSchemaPropertyArrayOneOf)[] | array_one_of block. |
+| [`arrayOneOf`](#cdktfprovideroktauserschemapropertyconfigpropertyarrayoneof) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.UserSchemaPropertyArrayOneOf`](#@cdktf/provider-okta.UserSchemaPropertyArrayOneOf)[] | array_one_of block. |
 | [`arrayType`](#cdktfprovideroktauserschemapropertyconfigpropertyarraytype) | `string` | Subschema array type: string, number, integer, reference. Type field must be an array. |
 | [`description`](#cdktfprovideroktauserschemapropertyconfigpropertydescription) | `string` | Custom Subschema description. |
 | [`enum`](#cdktfprovideroktauserschemapropertyconfigpropertyenum) | `string`[] | Custom Subschema enumerated value of the property. see: developer.okta.com/docs/api/resources/schemas#user-profile-schema-property-object. |
 | [`externalName`](#cdktfprovideroktauserschemapropertyconfigpropertyexternalname) | `string` | Subschema external name. |
 | [`externalNamespace`](#cdktfprovideroktauserschemapropertyconfigpropertyexternalnamespace) | `string` | Subschema external namespace. |
 | [`master`](#cdktfprovideroktauserschemapropertyconfigpropertymaster) | `string` | SubSchema profile manager, if not set it will inherit its setting. |
-| [`masterOverridePriority`](#cdktfprovideroktauserschemapropertyconfigpropertymasteroverridepriority) | [`@cdktf/provider-okta.UserSchemaPropertyMasterOverridePriority`](#@cdktf/provider-okta.UserSchemaPropertyMasterOverridePriority)[] | master_override_priority block. |
+| [`masterOverridePriority`](#cdktfprovideroktauserschemapropertyconfigpropertymasteroverridepriority) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.UserSchemaPropertyMasterOverridePriority`](#@cdktf/provider-okta.UserSchemaPropertyMasterOverridePriority)[] | master_override_priority block. |
 | [`maxLength`](#cdktfprovideroktauserschemapropertyconfigpropertymaxlength) | `number` | Subschema of type string maximum length. |
 | [`minLength`](#cdktfprovideroktauserschemapropertyconfigpropertyminlength) | `number` | Subschema of type string minimum length. |
-| [`oneOf`](#cdktfprovideroktauserschemapropertyconfigpropertyoneof) | [`@cdktf/provider-okta.UserSchemaPropertyOneOf`](#@cdktf/provider-okta.UserSchemaPropertyOneOf)[] | one_of block. |
+| [`oneOf`](#cdktfprovideroktauserschemapropertyconfigpropertyoneof) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.UserSchemaPropertyOneOf`](#@cdktf/provider-okta.UserSchemaPropertyOneOf)[] | one_of block. |
 | [`pattern`](#cdktfprovideroktauserschemapropertyconfigpropertypattern) | `string` | The validation pattern to use for the subschema. Must be in form of '.+', or '[<pattern>]+' if present.'. |
 | [`permissions`](#cdktfprovideroktauserschemapropertyconfigpropertypermissions) | `string` | SubSchema permissions: HIDE, READ_ONLY, or READ_WRITE. |
 | [`required`](#cdktfprovideroktauserschemapropertyconfigpropertyrequired) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Whether the subschema is required. |
@@ -90528,10 +90528,10 @@ const userSchemaPropertyConfig: UserSchemaPropertyConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.UserSchemaPropertyConfig.property.count" id="cdktfprovideroktauserschemapropertyconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -90624,10 +90624,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `arrayOneOf`<sup>Optional</sup> <a name="@cdktf/provider-okta.UserSchemaPropertyConfig.property.arrayOneOf" id="cdktfprovideroktauserschemapropertyconfigpropertyarrayoneof"></a>
 
 ```typescript
-public readonly arrayOneOf: UserSchemaPropertyArrayOneOf[];
+public readonly arrayOneOf: IResolvable | UserSchemaPropertyArrayOneOf[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.UserSchemaPropertyArrayOneOf`](#@cdktf/provider-okta.UserSchemaPropertyArrayOneOf)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.UserSchemaPropertyArrayOneOf`](#@cdktf/provider-okta.UserSchemaPropertyArrayOneOf)[]
 
 array_one_of block.
 
@@ -90722,10 +90722,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `masterOverridePriority`<sup>Optional</sup> <a name="@cdktf/provider-okta.UserSchemaPropertyConfig.property.masterOverridePriority" id="cdktfprovideroktauserschemapropertyconfigpropertymasteroverridepriority"></a>
 
 ```typescript
-public readonly masterOverridePriority: UserSchemaPropertyMasterOverridePriority[];
+public readonly masterOverridePriority: IResolvable | UserSchemaPropertyMasterOverridePriority[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.UserSchemaPropertyMasterOverridePriority`](#@cdktf/provider-okta.UserSchemaPropertyMasterOverridePriority)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.UserSchemaPropertyMasterOverridePriority`](#@cdktf/provider-okta.UserSchemaPropertyMasterOverridePriority)[]
 
 master_override_priority block.
 
@@ -90764,10 +90764,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ##### `oneOf`<sup>Optional</sup> <a name="@cdktf/provider-okta.UserSchemaPropertyConfig.property.oneOf" id="cdktfprovideroktauserschemapropertyconfigpropertyoneof"></a>
 
 ```typescript
-public readonly oneOf: UserSchemaPropertyOneOf[];
+public readonly oneOf: IResolvable | UserSchemaPropertyOneOf[];
 ```
 
-- *Type:* [`@cdktf/provider-okta.UserSchemaPropertyOneOf`](#@cdktf/provider-okta.UserSchemaPropertyOneOf)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.UserSchemaPropertyOneOf`](#@cdktf/provider-okta.UserSchemaPropertyOneOf)[]
 
 one_of block.
 
@@ -90961,7 +90961,7 @@ const userTypeConfig: UserTypeConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`count`](#cdktfprovideroktausertypeconfigpropertycount) | `number` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`count`](#cdktfprovideroktausertypeconfigpropertycount) | `number` | *No description.* |
 | [`dependsOn`](#cdktfprovideroktausertypeconfigpropertydependson) | [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[] | *No description.* |
 | [`lifecycle`](#cdktfprovideroktausertypeconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktausertypeconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
@@ -90974,10 +90974,10 @@ const userTypeConfig: UserTypeConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-okta.UserTypeConfig.property.count" id="cdktfprovideroktausertypeconfigpropertycount"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -91062,12 +91062,12 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ```typescript
 import { AppOauthGroupsClaimOutputReference } from '@cdktf/provider-okta'
 
-new AppOauthGroupsClaimOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new AppOauthGroupsClaimOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`terraformResource`](#cdktfprovideroktaappoauthgroupsclaimoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.ITerraformResource`](#cdktf.ITerraformResource) | The parent resource. |
+| [`terraformResource`](#cdktfprovideroktaappoauthgroupsclaimoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
 | [`terraformAttribute`](#cdktfprovideroktaappoauthgroupsclaimoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
 | [`isSingleItem`](#cdktfprovideroktaappoauthgroupsclaimoutputreferenceparameterissingleitem)<span title="Required">*</span> | `boolean` | True if this is a block, false if it's a list. |
 
@@ -91075,7 +91075,7 @@ new AppOauthGroupsClaimOutputReference(terraformResource: ITerraformResource, te
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-okta.AppOauthGroupsClaimOutputReference.parameter.terraformResource" id="cdktfprovideroktaappoauthgroupsclaimoutputreferenceparameterterraformresource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -91226,20 +91226,21 @@ public readonly internalValue: AppOauthGroupsClaim;
 ```typescript
 import { DataOktaAppSamlAttributeStatements } from '@cdktf/provider-okta'
 
-new DataOktaAppSamlAttributeStatements(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new DataOktaAppSamlAttributeStatements(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`terraformResource`](#cdktfprovideroktadataoktaappsamlattributestatementsparameterterraformresource)<span title="Required">*</span> | [`cdktf.ITerraformResource`](#cdktf.ITerraformResource) | *No description.* |
+| [`terraformResource`](#cdktfprovideroktadataoktaappsamlattributestatementsparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | *No description.* |
 | [`terraformAttribute`](#cdktfprovideroktadataoktaappsamlattributestatementsparameterterraformattribute)<span title="Required">*</span> | `string` | *No description.* |
 | [`complexComputedListIndex`](#cdktfprovideroktadataoktaappsamlattributestatementsparametercomplexcomputedlistindex)<span title="Required">*</span> | `string` | *No description.* |
+| [`wrapsSet`](#cdktfprovideroktadataoktaappsamlattributestatementsparameterwrapsset) | `boolean` | *No description.* |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAppSamlAttributeStatements.parameter.terraformResource" id="cdktfprovideroktadataoktaappsamlattributestatementsparameterterraformresource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -91252,6 +91253,12 @@ new DataOktaAppSamlAttributeStatements(terraformResource: ITerraformResource, te
 ##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAppSamlAttributeStatements.parameter.complexComputedListIndex" id="cdktfprovideroktadataoktaappsamlattributestatementsparametercomplexcomputedlistindex"></a>
 
 - *Type:* `string`
+
+---
+
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-okta.DataOktaAppSamlAttributeStatements.parameter.wrapsSet" id="cdktfprovideroktadataoktaappsamlattributestatementsparameterwrapsset"></a>
+
+- *Type:* `boolean`
 
 ---
 
@@ -91338,20 +91345,21 @@ public readonly values: string[];
 ```typescript
 import { DataOktaAuthServerClaimsClaims } from '@cdktf/provider-okta'
 
-new DataOktaAuthServerClaimsClaims(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new DataOktaAuthServerClaimsClaims(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`terraformResource`](#cdktfprovideroktadataoktaauthserverclaimsclaimsparameterterraformresource)<span title="Required">*</span> | [`cdktf.ITerraformResource`](#cdktf.ITerraformResource) | *No description.* |
+| [`terraformResource`](#cdktfprovideroktadataoktaauthserverclaimsclaimsparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | *No description.* |
 | [`terraformAttribute`](#cdktfprovideroktadataoktaauthserverclaimsclaimsparameterterraformattribute)<span title="Required">*</span> | `string` | *No description.* |
 | [`complexComputedListIndex`](#cdktfprovideroktadataoktaauthserverclaimsclaimsparametercomplexcomputedlistindex)<span title="Required">*</span> | `string` | *No description.* |
+| [`wrapsSet`](#cdktfprovideroktadataoktaauthserverclaimsclaimsparameterwrapsset) | `boolean` | *No description.* |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAuthServerClaimsClaims.parameter.terraformResource" id="cdktfprovideroktadataoktaauthserverclaimsclaimsparameterterraformresource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -91367,13 +91375,19 @@ new DataOktaAuthServerClaimsClaims(terraformResource: ITerraformResource, terraf
 
 ---
 
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-okta.DataOktaAuthServerClaimsClaims.parameter.wrapsSet" id="cdktfprovideroktadataoktaauthserverclaimsclaimsparameterwrapsset"></a>
+
+- *Type:* `boolean`
+
+---
+
 
 
 #### Properties <a name="Properties" id="properties"></a>
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`alwaysIncludeInToken`](#cdktfprovideroktadataoktaauthserverclaimsclaimspropertyalwaysincludeintoken)<span title="Required">*</span> | `any` | *No description.* |
+| [`alwaysIncludeInToken`](#cdktfprovideroktadataoktaauthserverclaimsclaimspropertyalwaysincludeintoken)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`claimType`](#cdktfprovideroktadataoktaauthserverclaimsclaimspropertyclaimtype)<span title="Required">*</span> | `string` | *No description.* |
 | [`id`](#cdktfprovideroktadataoktaauthserverclaimsclaimspropertyid)<span title="Required">*</span> | `string` | *No description.* |
 | [`name`](#cdktfprovideroktadataoktaauthserverclaimsclaimspropertyname)<span title="Required">*</span> | `string` | *No description.* |
@@ -91387,10 +91401,10 @@ new DataOktaAuthServerClaimsClaims(terraformResource: ITerraformResource, terraf
 ##### `alwaysIncludeInToken`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAuthServerClaimsClaims.property.alwaysIncludeInToken" id="cdktfprovideroktadataoktaauthserverclaimsclaimspropertyalwaysincludeintoken"></a>
 
 ```typescript
-public readonly alwaysIncludeInToken: any;
+public readonly alwaysIncludeInToken: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -91472,20 +91486,21 @@ public readonly valueType: string;
 ```typescript
 import { DataOktaAuthServerScopesScopes } from '@cdktf/provider-okta'
 
-new DataOktaAuthServerScopesScopes(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new DataOktaAuthServerScopesScopes(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`terraformResource`](#cdktfprovideroktadataoktaauthserverscopesscopesparameterterraformresource)<span title="Required">*</span> | [`cdktf.ITerraformResource`](#cdktf.ITerraformResource) | *No description.* |
+| [`terraformResource`](#cdktfprovideroktadataoktaauthserverscopesscopesparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | *No description.* |
 | [`terraformAttribute`](#cdktfprovideroktadataoktaauthserverscopesscopesparameterterraformattribute)<span title="Required">*</span> | `string` | *No description.* |
 | [`complexComputedListIndex`](#cdktfprovideroktadataoktaauthserverscopesscopesparametercomplexcomputedlistindex)<span title="Required">*</span> | `string` | *No description.* |
+| [`wrapsSet`](#cdktfprovideroktadataoktaauthserverscopesscopesparameterwrapsset) | `boolean` | *No description.* |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAuthServerScopesScopes.parameter.terraformResource" id="cdktfprovideroktadataoktaauthserverscopesscopesparameterterraformresource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -91501,6 +91516,12 @@ new DataOktaAuthServerScopesScopes(terraformResource: ITerraformResource, terraf
 
 ---
 
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-okta.DataOktaAuthServerScopesScopes.parameter.wrapsSet" id="cdktfprovideroktadataoktaauthserverscopesscopesparameterwrapsset"></a>
+
+- *Type:* `boolean`
+
+---
+
 
 
 #### Properties <a name="Properties" id="properties"></a>
@@ -91508,13 +91529,13 @@ new DataOktaAuthServerScopesScopes(terraformResource: ITerraformResource, terraf
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | [`consent`](#cdktfprovideroktadataoktaauthserverscopesscopespropertyconsent)<span title="Required">*</span> | `string` | *No description.* |
-| [`default`](#cdktfprovideroktadataoktaauthserverscopesscopespropertydefault)<span title="Required">*</span> | `any` | *No description.* |
+| [`default`](#cdktfprovideroktadataoktaauthserverscopesscopespropertydefault)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`description`](#cdktfprovideroktadataoktaauthserverscopesscopespropertydescription)<span title="Required">*</span> | `string` | *No description.* |
 | [`displayName`](#cdktfprovideroktadataoktaauthserverscopesscopespropertydisplayname)<span title="Required">*</span> | `string` | *No description.* |
 | [`id`](#cdktfprovideroktadataoktaauthserverscopesscopespropertyid)<span title="Required">*</span> | `string` | *No description.* |
 | [`metadataPublish`](#cdktfprovideroktadataoktaauthserverscopesscopespropertymetadatapublish)<span title="Required">*</span> | `string` | *No description.* |
 | [`name`](#cdktfprovideroktadataoktaauthserverscopesscopespropertyname)<span title="Required">*</span> | `string` | *No description.* |
-| [`systemAttribute`](#cdktfprovideroktadataoktaauthserverscopesscopespropertysystemattribute)<span title="Required">*</span> | `any` | *No description.* |
+| [`systemAttribute`](#cdktfprovideroktadataoktaauthserverscopesscopespropertysystemattribute)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 
 ---
 
@@ -91531,10 +91552,10 @@ public readonly consent: string;
 ##### `default`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAuthServerScopesScopes.property.default" id="cdktfprovideroktadataoktaauthserverscopesscopespropertydefault"></a>
 
 ```typescript
-public readonly default: any;
+public readonly default: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -91591,10 +91612,10 @@ public readonly name: string;
 ##### `systemAttribute`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAuthServerScopesScopes.property.systemAttribute" id="cdktfprovideroktadataoktaauthserverscopesscopespropertysystemattribute"></a>
 
 ```typescript
-public readonly systemAttribute: any;
+public readonly systemAttribute: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -91606,20 +91627,21 @@ public readonly systemAttribute: any;
 ```typescript
 import { DataOktaBehaviorsBehaviors } from '@cdktf/provider-okta'
 
-new DataOktaBehaviorsBehaviors(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new DataOktaBehaviorsBehaviors(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`terraformResource`](#cdktfprovideroktadataoktabehaviorsbehaviorsparameterterraformresource)<span title="Required">*</span> | [`cdktf.ITerraformResource`](#cdktf.ITerraformResource) | *No description.* |
+| [`terraformResource`](#cdktfprovideroktadataoktabehaviorsbehaviorsparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | *No description.* |
 | [`terraformAttribute`](#cdktfprovideroktadataoktabehaviorsbehaviorsparameterterraformattribute)<span title="Required">*</span> | `string` | *No description.* |
 | [`complexComputedListIndex`](#cdktfprovideroktadataoktabehaviorsbehaviorsparametercomplexcomputedlistindex)<span title="Required">*</span> | `string` | *No description.* |
+| [`wrapsSet`](#cdktfprovideroktadataoktabehaviorsbehaviorsparameterwrapsset) | `boolean` | *No description.* |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaBehaviorsBehaviors.parameter.terraformResource" id="cdktfprovideroktadataoktabehaviorsbehaviorsparameterterraformresource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -91635,6 +91657,12 @@ new DataOktaBehaviorsBehaviors(terraformResource: ITerraformResource, terraformA
 
 ---
 
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-okta.DataOktaBehaviorsBehaviors.parameter.wrapsSet" id="cdktfprovideroktadataoktabehaviorsbehaviorsparameterwrapsset"></a>
+
+- *Type:* `boolean`
+
+---
+
 
 
 #### Properties <a name="Properties" id="properties"></a>
@@ -91643,7 +91671,7 @@ new DataOktaBehaviorsBehaviors(terraformResource: ITerraformResource, terraformA
 | --- | --- | --- |
 | [`id`](#cdktfprovideroktadataoktabehaviorsbehaviorspropertyid)<span title="Required">*</span> | `string` | *No description.* |
 | [`name`](#cdktfprovideroktadataoktabehaviorsbehaviorspropertyname)<span title="Required">*</span> | `string` | *No description.* |
-| [`settings`](#cdktfprovideroktadataoktabehaviorsbehaviorspropertysettings)<span title="Required">*</span> | `any` | *No description.* |
+| [`settings`](#cdktfprovideroktadataoktabehaviorsbehaviorspropertysettings)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
 | [`status`](#cdktfprovideroktadataoktabehaviorsbehaviorspropertystatus)<span title="Required">*</span> | `string` | *No description.* |
 | [`type`](#cdktfprovideroktadataoktabehaviorsbehaviorspropertytype)<span title="Required">*</span> | `string` | *No description.* |
 
@@ -91672,10 +91700,10 @@ public readonly name: string;
 ##### `settings`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaBehaviorsBehaviors.property.settings" id="cdktfprovideroktadataoktabehaviorsbehaviorspropertysettings"></a>
 
 ```typescript
-public readonly settings: any;
+public readonly settings: {[ key: string ]: string};
 ```
 
-- *Type:* `any`
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -91707,20 +91735,21 @@ public readonly type: string;
 ```typescript
 import { DataOktaGroupsGroups } from '@cdktf/provider-okta'
 
-new DataOktaGroupsGroups(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new DataOktaGroupsGroups(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`terraformResource`](#cdktfprovideroktadataoktagroupsgroupsparameterterraformresource)<span title="Required">*</span> | [`cdktf.ITerraformResource`](#cdktf.ITerraformResource) | *No description.* |
+| [`terraformResource`](#cdktfprovideroktadataoktagroupsgroupsparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | *No description.* |
 | [`terraformAttribute`](#cdktfprovideroktadataoktagroupsgroupsparameterterraformattribute)<span title="Required">*</span> | `string` | *No description.* |
 | [`complexComputedListIndex`](#cdktfprovideroktadataoktagroupsgroupsparametercomplexcomputedlistindex)<span title="Required">*</span> | `string` | *No description.* |
+| [`wrapsSet`](#cdktfprovideroktadataoktagroupsgroupsparameterwrapsset) | `boolean` | *No description.* |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaGroupsGroups.parameter.terraformResource" id="cdktfprovideroktadataoktagroupsgroupsparameterterraformresource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -91733,6 +91762,12 @@ new DataOktaGroupsGroups(terraformResource: ITerraformResource, terraformAttribu
 ##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaGroupsGroups.parameter.complexComputedListIndex" id="cdktfprovideroktadataoktagroupsgroupsparametercomplexcomputedlistindex"></a>
 
 - *Type:* `string`
+
+---
+
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-okta.DataOktaGroupsGroups.parameter.wrapsSet" id="cdktfprovideroktadataoktagroupsgroupsparameterwrapsset"></a>
+
+- *Type:* `boolean`
 
 ---
 
@@ -91797,20 +91832,21 @@ public readonly type: string;
 ```typescript
 import { DataOktaTrustedOriginsTrustedOrigins } from '@cdktf/provider-okta'
 
-new DataOktaTrustedOriginsTrustedOrigins(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new DataOktaTrustedOriginsTrustedOrigins(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`terraformResource`](#cdktfprovideroktadataoktatrustedoriginstrustedoriginsparameterterraformresource)<span title="Required">*</span> | [`cdktf.ITerraformResource`](#cdktf.ITerraformResource) | *No description.* |
+| [`terraformResource`](#cdktfprovideroktadataoktatrustedoriginstrustedoriginsparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | *No description.* |
 | [`terraformAttribute`](#cdktfprovideroktadataoktatrustedoriginstrustedoriginsparameterterraformattribute)<span title="Required">*</span> | `string` | *No description.* |
 | [`complexComputedListIndex`](#cdktfprovideroktadataoktatrustedoriginstrustedoriginsparametercomplexcomputedlistindex)<span title="Required">*</span> | `string` | *No description.* |
+| [`wrapsSet`](#cdktfprovideroktadataoktatrustedoriginstrustedoriginsparameterwrapsset) | `boolean` | *No description.* |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaTrustedOriginsTrustedOrigins.parameter.terraformResource" id="cdktfprovideroktadataoktatrustedoriginstrustedoriginsparameterterraformresource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -91826,13 +91862,19 @@ new DataOktaTrustedOriginsTrustedOrigins(terraformResource: ITerraformResource, 
 
 ---
 
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-okta.DataOktaTrustedOriginsTrustedOrigins.parameter.wrapsSet" id="cdktfprovideroktadataoktatrustedoriginstrustedoriginsparameterwrapsset"></a>
+
+- *Type:* `boolean`
+
+---
+
 
 
 #### Properties <a name="Properties" id="properties"></a>
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`active`](#cdktfprovideroktadataoktatrustedoriginstrustedoriginspropertyactive)<span title="Required">*</span> | `any` | *No description.* |
+| [`active`](#cdktfprovideroktadataoktatrustedoriginstrustedoriginspropertyactive)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`id`](#cdktfprovideroktadataoktatrustedoriginstrustedoriginspropertyid)<span title="Required">*</span> | `string` | *No description.* |
 | [`name`](#cdktfprovideroktadataoktatrustedoriginstrustedoriginspropertyname)<span title="Required">*</span> | `string` | *No description.* |
 | [`origin`](#cdktfprovideroktadataoktatrustedoriginstrustedoriginspropertyorigin)<span title="Required">*</span> | `string` | *No description.* |
@@ -91843,10 +91885,10 @@ new DataOktaTrustedOriginsTrustedOrigins(terraformResource: ITerraformResource, 
 ##### `active`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaTrustedOriginsTrustedOrigins.property.active" id="cdktfprovideroktadataoktatrustedoriginstrustedoriginspropertyactive"></a>
 
 ```typescript
-public readonly active: any;
+public readonly active: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -91898,20 +91940,21 @@ public readonly scopes: string[];
 ```typescript
 import { DataOktaUserSecurityQuestionsQuestions } from '@cdktf/provider-okta'
 
-new DataOktaUserSecurityQuestionsQuestions(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new DataOktaUserSecurityQuestionsQuestions(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`terraformResource`](#cdktfprovideroktadataoktausersecurityquestionsquestionsparameterterraformresource)<span title="Required">*</span> | [`cdktf.ITerraformResource`](#cdktf.ITerraformResource) | *No description.* |
+| [`terraformResource`](#cdktfprovideroktadataoktausersecurityquestionsquestionsparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | *No description.* |
 | [`terraformAttribute`](#cdktfprovideroktadataoktausersecurityquestionsquestionsparameterterraformattribute)<span title="Required">*</span> | `string` | *No description.* |
 | [`complexComputedListIndex`](#cdktfprovideroktadataoktausersecurityquestionsquestionsparametercomplexcomputedlistindex)<span title="Required">*</span> | `string` | *No description.* |
+| [`wrapsSet`](#cdktfprovideroktadataoktausersecurityquestionsquestionsparameterwrapsset) | `boolean` | *No description.* |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUserSecurityQuestionsQuestions.parameter.terraformResource" id="cdktfprovideroktadataoktausersecurityquestionsquestionsparameterterraformresource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -91924,6 +91967,12 @@ new DataOktaUserSecurityQuestionsQuestions(terraformResource: ITerraformResource
 ##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUserSecurityQuestionsQuestions.parameter.complexComputedListIndex" id="cdktfprovideroktadataoktausersecurityquestionsquestionsparametercomplexcomputedlistindex"></a>
 
 - *Type:* `string`
+
+---
+
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-okta.DataOktaUserSecurityQuestionsQuestions.parameter.wrapsSet" id="cdktfprovideroktadataoktausersecurityquestionsquestionsparameterwrapsset"></a>
+
+- *Type:* `boolean`
 
 ---
 
@@ -91966,20 +92015,21 @@ public readonly text: string;
 ```typescript
 import { DataOktaUsersUsers } from '@cdktf/provider-okta'
 
-new DataOktaUsersUsers(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new DataOktaUsersUsers(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`terraformResource`](#cdktfprovideroktadataoktausersusersparameterterraformresource)<span title="Required">*</span> | [`cdktf.ITerraformResource`](#cdktf.ITerraformResource) | *No description.* |
+| [`terraformResource`](#cdktfprovideroktadataoktausersusersparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | *No description.* |
 | [`terraformAttribute`](#cdktfprovideroktadataoktausersusersparameterterraformattribute)<span title="Required">*</span> | `string` | *No description.* |
 | [`complexComputedListIndex`](#cdktfprovideroktadataoktausersusersparametercomplexcomputedlistindex)<span title="Required">*</span> | `string` | *No description.* |
+| [`wrapsSet`](#cdktfprovideroktadataoktausersusersparameterwrapsset) | `boolean` | *No description.* |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsers.parameter.terraformResource" id="cdktfprovideroktadataoktausersusersparameterterraformresource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -91992,6 +92042,12 @@ new DataOktaUsersUsers(terraformResource: ITerraformResource, terraformAttribute
 ##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsers.parameter.complexComputedListIndex" id="cdktfprovideroktadataoktausersusersparametercomplexcomputedlistindex"></a>
 
 - *Type:* `string`
+
+---
+
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsers.parameter.wrapsSet" id="cdktfprovideroktadataoktausersusersparameterwrapsset"></a>
+
+- *Type:* `boolean`
 
 ---
 
@@ -92408,20 +92464,21 @@ public readonly zipCode: string;
 ```typescript
 import { DomainDnsRecords } from '@cdktf/provider-okta'
 
-new DomainDnsRecords(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new DomainDnsRecords(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`terraformResource`](#cdktfprovideroktadomaindnsrecordsparameterterraformresource)<span title="Required">*</span> | [`cdktf.ITerraformResource`](#cdktf.ITerraformResource) | *No description.* |
+| [`terraformResource`](#cdktfprovideroktadomaindnsrecordsparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | *No description.* |
 | [`terraformAttribute`](#cdktfprovideroktadomaindnsrecordsparameterterraformattribute)<span title="Required">*</span> | `string` | *No description.* |
 | [`complexComputedListIndex`](#cdktfprovideroktadomaindnsrecordsparametercomplexcomputedlistindex)<span title="Required">*</span> | `string` | *No description.* |
+| [`wrapsSet`](#cdktfprovideroktadomaindnsrecordsparameterwrapsset) | `boolean` | *No description.* |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-okta.DomainDnsRecords.parameter.terraformResource" id="cdktfprovideroktadomaindnsrecordsparameterterraformresource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -92434,6 +92491,12 @@ new DomainDnsRecords(terraformResource: ITerraformResource, terraformAttribute: 
 ##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-okta.DomainDnsRecords.parameter.complexComputedListIndex" id="cdktfprovideroktadomaindnsrecordsparametercomplexcomputedlistindex"></a>
 
 - *Type:* `string`
+
+---
+
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-okta.DomainDnsRecords.parameter.wrapsSet" id="cdktfprovideroktadomaindnsrecordsparameterwrapsset"></a>
+
+- *Type:* `boolean`
 
 ---
 
@@ -92498,20 +92561,21 @@ public readonly values: string[];
 ```typescript
 import { EmailSenderDnsRecords } from '@cdktf/provider-okta'
 
-new EmailSenderDnsRecords(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new EmailSenderDnsRecords(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`terraformResource`](#cdktfprovideroktaemailsenderdnsrecordsparameterterraformresource)<span title="Required">*</span> | [`cdktf.ITerraformResource`](#cdktf.ITerraformResource) | *No description.* |
+| [`terraformResource`](#cdktfprovideroktaemailsenderdnsrecordsparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | *No description.* |
 | [`terraformAttribute`](#cdktfprovideroktaemailsenderdnsrecordsparameterterraformattribute)<span title="Required">*</span> | `string` | *No description.* |
 | [`complexComputedListIndex`](#cdktfprovideroktaemailsenderdnsrecordsparametercomplexcomputedlistindex)<span title="Required">*</span> | `string` | *No description.* |
+| [`wrapsSet`](#cdktfprovideroktaemailsenderdnsrecordsparameterwrapsset) | `boolean` | *No description.* |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-okta.EmailSenderDnsRecords.parameter.terraformResource" id="cdktfprovideroktaemailsenderdnsrecordsparameterterraformresource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -92524,6 +92588,12 @@ new EmailSenderDnsRecords(terraformResource: ITerraformResource, terraformAttrib
 ##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-okta.EmailSenderDnsRecords.parameter.complexComputedListIndex" id="cdktfprovideroktaemailsenderdnsrecordsparametercomplexcomputedlistindex"></a>
 
 - *Type:* `string`
+
+---
+
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-okta.EmailSenderDnsRecords.parameter.wrapsSet" id="cdktfprovideroktaemailsenderdnsrecordsparameterwrapsset"></a>
+
+- *Type:* `boolean`
 
 ---
 
@@ -92577,12 +92647,12 @@ public readonly value: string;
 ```typescript
 import { OauthAppGroupsClaimOutputReference } from '@cdktf/provider-okta'
 
-new OauthAppGroupsClaimOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new OauthAppGroupsClaimOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`terraformResource`](#cdktfprovideroktaoauthappgroupsclaimoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.ITerraformResource`](#cdktf.ITerraformResource) | The parent resource. |
+| [`terraformResource`](#cdktfprovideroktaoauthappgroupsclaimoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
 | [`terraformAttribute`](#cdktfprovideroktaoauthappgroupsclaimoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
 | [`isSingleItem`](#cdktfprovideroktaoauthappgroupsclaimoutputreferenceparameterissingleitem)<span title="Required">*</span> | `boolean` | True if this is a block, false if it's a list. |
 
@@ -92590,7 +92660,7 @@ new OauthAppGroupsClaimOutputReference(terraformResource: ITerraformResource, te
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-okta.OauthAppGroupsClaimOutputReference.parameter.terraformResource" id="cdktfprovideroktaoauthappgroupsclaimoutputreferenceparameterterraformresource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -92741,12 +92811,12 @@ public readonly internalValue: OauthAppGroupsClaim;
 ```typescript
 import { UserPasswordHashOutputReference } from '@cdktf/provider-okta'
 
-new UserPasswordHashOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new UserPasswordHashOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`terraformResource`](#cdktfprovideroktauserpasswordhashoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.ITerraformResource`](#cdktf.ITerraformResource) | The parent resource. |
+| [`terraformResource`](#cdktfprovideroktauserpasswordhashoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
 | [`terraformAttribute`](#cdktfprovideroktauserpasswordhashoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
 | [`isSingleItem`](#cdktfprovideroktauserpasswordhashoutputreferenceparameterissingleitem)<span title="Required">*</span> | `boolean` | True if this is a block, false if it's a list. |
 
@@ -92754,7 +92824,7 @@ new UserPasswordHashOutputReference(terraformResource: ITerraformResource, terra
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-okta.UserPasswordHashOutputReference.parameter.terraformResource" id="cdktfprovideroktauserpasswordhashoutputreferenceparameterterraformresource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 

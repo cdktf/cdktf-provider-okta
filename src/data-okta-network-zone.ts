@@ -59,12 +59,12 @@ export class DataOktaNetworkZone extends cdktf.TerraformDataSource {
 
   // asns - computed: true, optional: false, required: false
   public get asns() {
-    return this.getListAttribute('asns');
+    return cdktf.Fn.tolist(this.getListAttribute('asns'));
   }
 
   // dynamic_locations - computed: true, optional: false, required: false
   public get dynamicLocations() {
-    return this.getListAttribute('dynamic_locations');
+    return cdktf.Fn.tolist(this.getListAttribute('dynamic_locations'));
   }
 
   // dynamic_proxy_type - computed: true, optional: false, required: false
@@ -74,7 +74,7 @@ export class DataOktaNetworkZone extends cdktf.TerraformDataSource {
 
   // gateways - computed: true, optional: false, required: false
   public get gateways() {
-    return this.getListAttribute('gateways');
+    return cdktf.Fn.tolist(this.getListAttribute('gateways'));
   }
 
   // id - computed: false, optional: true, required: false
@@ -111,7 +111,7 @@ export class DataOktaNetworkZone extends cdktf.TerraformDataSource {
 
   // proxies - computed: true, optional: false, required: false
   public get proxies() {
-    return this.getListAttribute('proxies');
+    return cdktf.Fn.tolist(this.getListAttribute('proxies'));
   }
 
   // type - computed: true, optional: false, required: false

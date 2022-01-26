@@ -108,7 +108,7 @@ export class Domain extends cdktf.TerraformResource {
 
   // dns_records - computed: true, optional: false, required: false
   public dnsRecords(index: string) {
-    return new DomainDnsRecords(this, 'dns_records', index);
+    return new DomainDnsRecords(this, 'dns_records', index, false);
   }
 
   // id - computed: true, optional: true, required: false
@@ -137,7 +137,7 @@ export class Domain extends cdktf.TerraformResource {
   // verify - computed: false, optional: true, required: false
   private _verify?: boolean | cdktf.IResolvable; 
   public get verify() {
-    return this.getBooleanAttribute('verify') as any;
+    return this.getBooleanAttribute('verify');
   }
   public set verify(value: boolean | cdktf.IResolvable) {
     this._verify = value;

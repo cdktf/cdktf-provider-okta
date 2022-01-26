@@ -56,7 +56,7 @@ export class DataOktaAppGroupAssignments extends cdktf.TerraformDataSource {
 
   // groups - computed: true, optional: false, required: false
   public get groups() {
-    return this.getListAttribute('groups');
+    return cdktf.Fn.tolist(this.getListAttribute('groups'));
   }
 
   // id - computed: false, optional: false, required: true

@@ -102,7 +102,7 @@ export class AdminRoleCustom extends cdktf.TerraformResource {
   // permissions - computed: false, optional: true, required: false
   private _permissions?: string[]; 
   public get permissions() {
-    return this.getListAttribute('permissions');
+    return cdktf.Fn.tolist(this.getListAttribute('permissions'));
   }
   public set permissions(value: string[]) {
     this._permissions = value;

@@ -90,7 +90,7 @@ export class DataOktaBehavior extends cdktf.TerraformDataSource {
   }
 
   // settings - computed: true, optional: false, required: false
-  public settings(key: string): string {
+  public settings(key: string): string | cdktf.IResolvable {
     return new cdktf.StringMap(this, 'settings').lookup(key);
   }
 

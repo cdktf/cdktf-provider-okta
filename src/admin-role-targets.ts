@@ -78,7 +78,7 @@ export class AdminRoleTargets extends cdktf.TerraformResource {
   // apps - computed: false, optional: true, required: false
   private _apps?: string[]; 
   public get apps() {
-    return this.getListAttribute('apps');
+    return cdktf.Fn.tolist(this.getListAttribute('apps'));
   }
   public set apps(value: string[]) {
     this._apps = value;
@@ -94,7 +94,7 @@ export class AdminRoleTargets extends cdktf.TerraformResource {
   // groups - computed: false, optional: true, required: false
   private _groups?: string[]; 
   public get groups() {
-    return this.getListAttribute('groups');
+    return cdktf.Fn.tolist(this.getListAttribute('groups'));
   }
   public set groups(value: string[]) {
     this._groups = value;

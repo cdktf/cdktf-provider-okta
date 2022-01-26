@@ -36,7 +36,7 @@ export interface ProfileMappingConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/profile_mapping#mappings ProfileMapping#mappings}
   */
-  readonly mappings?: ProfileMappingMappings[];
+  readonly mappings?: ProfileMappingMappings[] | cdktf.IResolvable;
 }
 export interface ProfileMappingMappings {
   /**
@@ -55,8 +55,8 @@ export interface ProfileMappingMappings {
   readonly pushStatus?: string;
 }
 
-export function profileMappingMappingsToTerraform(struct?: ProfileMappingMappings): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function profileMappingMappingsToTerraform(struct?: ProfileMappingMappings | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -114,7 +114,7 @@ export class ProfileMapping extends cdktf.TerraformResource {
   // always_apply - computed: false, optional: true, required: false
   private _alwaysApply?: boolean | cdktf.IResolvable; 
   public get alwaysApply() {
-    return this.getBooleanAttribute('always_apply') as any;
+    return this.getBooleanAttribute('always_apply');
   }
   public set alwaysApply(value: boolean | cdktf.IResolvable) {
     this._alwaysApply = value;
@@ -130,7 +130,7 @@ export class ProfileMapping extends cdktf.TerraformResource {
   // delete_when_absent - computed: false, optional: true, required: false
   private _deleteWhenAbsent?: boolean | cdktf.IResolvable; 
   public get deleteWhenAbsent() {
-    return this.getBooleanAttribute('delete_when_absent') as any;
+    return this.getBooleanAttribute('delete_when_absent');
   }
   public set deleteWhenAbsent(value: boolean | cdktf.IResolvable) {
     this._deleteWhenAbsent = value;
@@ -195,12 +195,12 @@ export class ProfileMapping extends cdktf.TerraformResource {
   }
 
   // mappings - computed: false, optional: true, required: false
-  private _mappings?: ProfileMappingMappings[]; 
+  private _mappings?: ProfileMappingMappings[] | cdktf.IResolvable; 
   public get mappings() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('mappings') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('mappings')));
   }
-  public set mappings(value: ProfileMappingMappings[]) {
+  public set mappings(value: ProfileMappingMappings[] | cdktf.IResolvable) {
     this._mappings = value;
   }
   public resetMappings() {

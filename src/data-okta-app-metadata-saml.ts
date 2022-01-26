@@ -118,7 +118,7 @@ export class DataOktaAppMetadataSaml extends cdktf.TerraformDataSource {
 
   // want_authn_requests_signed - computed: true, optional: false, required: false
   public get wantAuthnRequestsSigned() {
-    return this.getBooleanAttribute('want_authn_requests_signed') as any;
+    return this.getBooleanAttribute('want_authn_requests_signed');
   }
 
   // =========

@@ -138,7 +138,7 @@ export interface PolicyRuleSignonConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_signon#factor_sequence PolicyRuleSignon#factor_sequence}
   */
-  readonly factorSequence?: PolicyRuleSignonFactorSequence[];
+  readonly factorSequence?: PolicyRuleSignonFactorSequence[] | cdktf.IResolvable;
 }
 export interface PolicyRuleSignonFactorSequenceSecondaryCriteria {
   /**
@@ -155,8 +155,8 @@ export interface PolicyRuleSignonFactorSequenceSecondaryCriteria {
   readonly provider: string;
 }
 
-export function policyRuleSignonFactorSequenceSecondaryCriteriaToTerraform(struct?: PolicyRuleSignonFactorSequenceSecondaryCriteria): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function policyRuleSignonFactorSequenceSecondaryCriteriaToTerraform(struct?: PolicyRuleSignonFactorSequenceSecondaryCriteria | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -184,11 +184,11 @@ export interface PolicyRuleSignonFactorSequence {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_signon#secondary_criteria PolicyRuleSignon#secondary_criteria}
   */
-  readonly secondaryCriteria?: PolicyRuleSignonFactorSequenceSecondaryCriteria[];
+  readonly secondaryCriteria?: PolicyRuleSignonFactorSequenceSecondaryCriteria[] | cdktf.IResolvable;
 }
 
-export function policyRuleSignonFactorSequenceToTerraform(struct?: PolicyRuleSignonFactorSequence): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function policyRuleSignonFactorSequenceToTerraform(struct?: PolicyRuleSignonFactorSequence | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -295,7 +295,7 @@ export class PolicyRuleSignon extends cdktf.TerraformResource {
   // behaviors - computed: false, optional: true, required: false
   private _behaviors?: string[]; 
   public get behaviors() {
-    return this.getListAttribute('behaviors');
+    return cdktf.Fn.tolist(this.getListAttribute('behaviors'));
   }
   public set behaviors(value: string[]) {
     this._behaviors = value;
@@ -348,7 +348,7 @@ export class PolicyRuleSignon extends cdktf.TerraformResource {
   // mfa_remember_device - computed: false, optional: true, required: false
   private _mfaRememberDevice?: boolean | cdktf.IResolvable; 
   public get mfaRememberDevice() {
-    return this.getBooleanAttribute('mfa_remember_device') as any;
+    return this.getBooleanAttribute('mfa_remember_device');
   }
   public set mfaRememberDevice(value: boolean | cdktf.IResolvable) {
     this._mfaRememberDevice = value;
@@ -364,7 +364,7 @@ export class PolicyRuleSignon extends cdktf.TerraformResource {
   // mfa_required - computed: false, optional: true, required: false
   private _mfaRequired?: boolean | cdktf.IResolvable; 
   public get mfaRequired() {
-    return this.getBooleanAttribute('mfa_required') as any;
+    return this.getBooleanAttribute('mfa_required');
   }
   public set mfaRequired(value: boolean | cdktf.IResolvable) {
     this._mfaRequired = value;
@@ -553,7 +553,7 @@ export class PolicyRuleSignon extends cdktf.TerraformResource {
   // session_persistent - computed: false, optional: true, required: false
   private _sessionPersistent?: boolean | cdktf.IResolvable; 
   public get sessionPersistent() {
-    return this.getBooleanAttribute('session_persistent') as any;
+    return this.getBooleanAttribute('session_persistent');
   }
   public set sessionPersistent(value: boolean | cdktf.IResolvable) {
     this._sessionPersistent = value;
@@ -585,7 +585,7 @@ export class PolicyRuleSignon extends cdktf.TerraformResource {
   // users_excluded - computed: false, optional: true, required: false
   private _usersExcluded?: string[]; 
   public get usersExcluded() {
-    return this.getListAttribute('users_excluded');
+    return cdktf.Fn.tolist(this.getListAttribute('users_excluded'));
   }
   public set usersExcluded(value: string[]) {
     this._usersExcluded = value;
@@ -599,12 +599,12 @@ export class PolicyRuleSignon extends cdktf.TerraformResource {
   }
 
   // factor_sequence - computed: false, optional: true, required: false
-  private _factorSequence?: PolicyRuleSignonFactorSequence[]; 
+  private _factorSequence?: PolicyRuleSignonFactorSequence[] | cdktf.IResolvable; 
   public get factorSequence() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('factor_sequence') as any;
+    return this.interpolationForAttribute('factor_sequence');
   }
-  public set factorSequence(value: PolicyRuleSignonFactorSequence[]) {
+  public set factorSequence(value: PolicyRuleSignonFactorSequence[] | cdktf.IResolvable) {
     this._factorSequence = value;
   }
   public resetFactorSequence() {

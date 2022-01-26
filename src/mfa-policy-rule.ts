@@ -72,13 +72,13 @@ export interface MfaPolicyRuleConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy_rule#app_exclude MfaPolicyRule#app_exclude}
   */
-  readonly appExclude?: MfaPolicyRuleAppExclude[];
+  readonly appExclude?: MfaPolicyRuleAppExclude[] | cdktf.IResolvable;
   /**
   * app_include block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy_rule#app_include MfaPolicyRule#app_include}
   */
-  readonly appInclude?: MfaPolicyRuleAppInclude[];
+  readonly appInclude?: MfaPolicyRuleAppInclude[] | cdktf.IResolvable;
 }
 export interface MfaPolicyRuleAppExclude {
   /**
@@ -95,8 +95,8 @@ export interface MfaPolicyRuleAppExclude {
   readonly type: string;
 }
 
-export function mfaPolicyRuleAppExcludeToTerraform(struct?: MfaPolicyRuleAppExclude): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function mfaPolicyRuleAppExcludeToTerraform(struct?: MfaPolicyRuleAppExclude | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -122,8 +122,8 @@ export interface MfaPolicyRuleAppInclude {
   readonly type: string;
 }
 
-export function mfaPolicyRuleAppIncludeToTerraform(struct?: MfaPolicyRuleAppInclude): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function mfaPolicyRuleAppIncludeToTerraform(struct?: MfaPolicyRuleAppInclude | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -334,7 +334,7 @@ export class MfaPolicyRule extends cdktf.TerraformResource {
   // users_excluded - computed: false, optional: true, required: false
   private _usersExcluded?: string[]; 
   public get usersExcluded() {
-    return this.getListAttribute('users_excluded');
+    return cdktf.Fn.tolist(this.getListAttribute('users_excluded'));
   }
   public set usersExcluded(value: string[]) {
     this._usersExcluded = value;
@@ -348,12 +348,12 @@ export class MfaPolicyRule extends cdktf.TerraformResource {
   }
 
   // app_exclude - computed: false, optional: true, required: false
-  private _appExclude?: MfaPolicyRuleAppExclude[]; 
+  private _appExclude?: MfaPolicyRuleAppExclude[] | cdktf.IResolvable; 
   public get appExclude() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('app_exclude') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('app_exclude')));
   }
-  public set appExclude(value: MfaPolicyRuleAppExclude[]) {
+  public set appExclude(value: MfaPolicyRuleAppExclude[] | cdktf.IResolvable) {
     this._appExclude = value;
   }
   public resetAppExclude() {
@@ -365,12 +365,12 @@ export class MfaPolicyRule extends cdktf.TerraformResource {
   }
 
   // app_include - computed: false, optional: true, required: false
-  private _appInclude?: MfaPolicyRuleAppInclude[]; 
+  private _appInclude?: MfaPolicyRuleAppInclude[] | cdktf.IResolvable; 
   public get appInclude() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('app_include') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('app_include')));
   }
-  public set appInclude(value: MfaPolicyRuleAppInclude[]) {
+  public set appInclude(value: MfaPolicyRuleAppInclude[] | cdktf.IResolvable) {
     this._appInclude = value;
   }
   public resetAppInclude() {

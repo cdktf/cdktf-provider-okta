@@ -71,7 +71,7 @@ export class UserAdminRoles extends cdktf.TerraformResource {
   // admin_roles - computed: false, optional: false, required: true
   private _adminRoles?: string[]; 
   public get adminRoles() {
-    return this.getListAttribute('admin_roles');
+    return cdktf.Fn.tolist(this.getListAttribute('admin_roles'));
   }
   public set adminRoles(value: string[]) {
     this._adminRoles = value;
@@ -84,7 +84,7 @@ export class UserAdminRoles extends cdktf.TerraformResource {
   // disable_notifications - computed: false, optional: true, required: false
   private _disableNotifications?: boolean | cdktf.IResolvable; 
   public get disableNotifications() {
-    return this.getBooleanAttribute('disable_notifications') as any;
+    return this.getBooleanAttribute('disable_notifications');
   }
   public set disableNotifications(value: boolean | cdktf.IResolvable) {
     this._disableNotifications = value;

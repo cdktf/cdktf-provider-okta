@@ -87,7 +87,7 @@ export class EmailSender extends cdktf.TerraformResource {
 
   // dns_records - computed: true, optional: false, required: false
   public dnsRecords(index: string) {
-    return new EmailSenderDnsRecords(this, 'dns_records', index);
+    return new EmailSenderDnsRecords(this, 'dns_records', index, false);
   }
 
   // from_address - computed: false, optional: false, required: true

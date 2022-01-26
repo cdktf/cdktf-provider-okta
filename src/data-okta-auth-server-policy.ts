@@ -63,7 +63,7 @@ export class DataOktaAuthServerPolicy extends cdktf.TerraformDataSource {
 
   // assigned_clients - computed: true, optional: false, required: false
   public get assignedClients() {
-    return this.getListAttribute('assigned_clients');
+    return cdktf.Fn.tolist(this.getListAttribute('assigned_clients'));
   }
 
   // auth_server_id - computed: false, optional: false, required: true

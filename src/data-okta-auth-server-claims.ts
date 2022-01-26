@@ -18,7 +18,7 @@ export class DataOktaAuthServerClaimsClaims extends cdktf.ComplexComputedList {
 
   // always_include_in_token - computed: true, optional: false, required: false
   public get alwaysIncludeInToken() {
-    return this.getBooleanAttribute('always_include_in_token') as any;
+    return this.getBooleanAttribute('always_include_in_token');
   }
 
   // claim_type - computed: true, optional: false, required: false
@@ -38,7 +38,7 @@ export class DataOktaAuthServerClaimsClaims extends cdktf.ComplexComputedList {
 
   // scopes - computed: true, optional: false, required: false
   public get scopes() {
-    return this.getListAttribute('scopes');
+    return cdktf.Fn.tolist(this.getListAttribute('scopes'));
   }
 
   // status - computed: true, optional: false, required: false
@@ -111,7 +111,7 @@ export class DataOktaAuthServerClaims extends cdktf.TerraformDataSource {
 
   // claims - computed: true, optional: false, required: false
   public claims(index: string) {
-    return new DataOktaAuthServerClaimsClaims(this, 'claims', index);
+    return new DataOktaAuthServerClaimsClaims(this, 'claims', index, false);
   }
 
   // id - computed: true, optional: true, required: false

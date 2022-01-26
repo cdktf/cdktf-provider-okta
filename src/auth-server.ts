@@ -86,7 +86,7 @@ export class AuthServer extends cdktf.TerraformResource {
   // audiences - computed: false, optional: false, required: true
   private _audiences?: string[]; 
   public get audiences() {
-    return this.getListAttribute('audiences');
+    return cdktf.Fn.tolist(this.getListAttribute('audiences'));
   }
   public set audiences(value: string[]) {
     this._audiences = value;

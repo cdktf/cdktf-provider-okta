@@ -48,7 +48,7 @@ export interface PolicyRuleProfileEnrollmentConfig extends cdktf.TerraformMetaAr
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_profile_enrollment#profile_attributes PolicyRuleProfileEnrollment#profile_attributes}
   */
-  readonly profileAttributes?: PolicyRuleProfileEnrollmentProfileAttributes[];
+  readonly profileAttributes?: PolicyRuleProfileEnrollmentProfileAttributes[] | cdktf.IResolvable;
 }
 export interface PolicyRuleProfileEnrollmentProfileAttributes {
   /**
@@ -71,8 +71,8 @@ export interface PolicyRuleProfileEnrollmentProfileAttributes {
   readonly required?: boolean | cdktf.IResolvable;
 }
 
-export function policyRuleProfileEnrollmentProfileAttributesToTerraform(struct?: PolicyRuleProfileEnrollmentProfileAttributes): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function policyRuleProfileEnrollmentProfileAttributesToTerraform(struct?: PolicyRuleProfileEnrollmentProfileAttributes | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -148,7 +148,7 @@ export class PolicyRuleProfileEnrollment extends cdktf.TerraformResource {
   // email_verification - computed: false, optional: true, required: false
   private _emailVerification?: boolean | cdktf.IResolvable; 
   public get emailVerification() {
-    return this.getBooleanAttribute('email_verification') as any;
+    return this.getBooleanAttribute('email_verification');
   }
   public set emailVerification(value: boolean | cdktf.IResolvable) {
     this._emailVerification = value;
@@ -235,12 +235,12 @@ export class PolicyRuleProfileEnrollment extends cdktf.TerraformResource {
   }
 
   // profile_attributes - computed: false, optional: true, required: false
-  private _profileAttributes?: PolicyRuleProfileEnrollmentProfileAttributes[]; 
+  private _profileAttributes?: PolicyRuleProfileEnrollmentProfileAttributes[] | cdktf.IResolvable; 
   public get profileAttributes() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('profile_attributes') as any;
+    return this.interpolationForAttribute('profile_attributes');
   }
-  public set profileAttributes(value: PolicyRuleProfileEnrollmentProfileAttributes[]) {
+  public set profileAttributes(value: PolicyRuleProfileEnrollmentProfileAttributes[] | cdktf.IResolvable) {
     this._profileAttributes = value;
   }
   public resetProfileAttributes() {

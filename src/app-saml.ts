@@ -294,13 +294,13 @@ export interface AppSamlConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml#attribute_statements AppSaml#attribute_statements}
   */
-  readonly attributeStatements?: AppSamlAttributeStatements[];
+  readonly attributeStatements?: AppSamlAttributeStatements[] | cdktf.IResolvable;
   /**
   * users block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml#users AppSaml#users}
   */
-  readonly users?: AppSamlUsers[];
+  readonly users?: AppSamlUsers[] | cdktf.IResolvable;
 }
 export interface AppSamlAttributeStatements {
   /**
@@ -339,8 +339,8 @@ export interface AppSamlAttributeStatements {
   readonly values?: string[];
 }
 
-export function appSamlAttributeStatementsToTerraform(struct?: AppSamlAttributeStatements): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function appSamlAttributeStatementsToTerraform(struct?: AppSamlAttributeStatements | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -375,8 +375,8 @@ export interface AppSamlUsers {
   readonly username?: string;
 }
 
-export function appSamlUsersToTerraform(struct?: AppSamlUsers): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function appSamlUsersToTerraform(struct?: AppSamlUsers | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -510,7 +510,7 @@ export class AppSaml extends cdktf.TerraformResource {
   // accessibility_self_service - computed: false, optional: true, required: false
   private _accessibilitySelfService?: boolean | cdktf.IResolvable; 
   public get accessibilitySelfService() {
-    return this.getBooleanAttribute('accessibility_self_service') as any;
+    return this.getBooleanAttribute('accessibility_self_service');
   }
   public set accessibilitySelfService(value: boolean | cdktf.IResolvable) {
     this._accessibilitySelfService = value;
@@ -526,7 +526,7 @@ export class AppSaml extends cdktf.TerraformResource {
   // acs_endpoints - computed: false, optional: true, required: false
   private _acsEndpoints?: string[]; 
   public get acsEndpoints() {
-    return this.getListAttribute('acs_endpoints');
+    return cdktf.Fn.tolist(this.getListAttribute('acs_endpoints'));
   }
   public set acsEndpoints(value: string[]) {
     this._acsEndpoints = value;
@@ -590,7 +590,7 @@ export class AppSaml extends cdktf.TerraformResource {
   // assertion_signed - computed: false, optional: true, required: false
   private _assertionSigned?: boolean | cdktf.IResolvable; 
   public get assertionSigned() {
-    return this.getBooleanAttribute('assertion_signed') as any;
+    return this.getBooleanAttribute('assertion_signed');
   }
   public set assertionSigned(value: boolean | cdktf.IResolvable) {
     this._assertionSigned = value;
@@ -638,7 +638,7 @@ export class AppSaml extends cdktf.TerraformResource {
   // auto_submit_toolbar - computed: false, optional: true, required: false
   private _autoSubmitToolbar?: boolean | cdktf.IResolvable; 
   public get autoSubmitToolbar() {
-    return this.getBooleanAttribute('auto_submit_toolbar') as any;
+    return this.getBooleanAttribute('auto_submit_toolbar');
   }
   public set autoSubmitToolbar(value: boolean | cdktf.IResolvable) {
     this._autoSubmitToolbar = value;
@@ -733,7 +733,7 @@ export class AppSaml extends cdktf.TerraformResource {
   // features - computed: false, optional: true, required: false
   private _features?: string[]; 
   public get features() {
-    return this.getListAttribute('features');
+    return cdktf.Fn.tolist(this.getListAttribute('features'));
   }
   public set features(value: string[]) {
     this._features = value;
@@ -749,7 +749,7 @@ export class AppSaml extends cdktf.TerraformResource {
   // groups - computed: false, optional: true, required: false
   private _groups?: string[]; 
   public get groups() {
-    return this.getListAttribute('groups');
+    return cdktf.Fn.tolist(this.getListAttribute('groups'));
   }
   public set groups(value: string[]) {
     this._groups = value;
@@ -765,7 +765,7 @@ export class AppSaml extends cdktf.TerraformResource {
   // hide_ios - computed: false, optional: true, required: false
   private _hideIos?: boolean | cdktf.IResolvable; 
   public get hideIos() {
-    return this.getBooleanAttribute('hide_ios') as any;
+    return this.getBooleanAttribute('hide_ios');
   }
   public set hideIos(value: boolean | cdktf.IResolvable) {
     this._hideIos = value;
@@ -781,7 +781,7 @@ export class AppSaml extends cdktf.TerraformResource {
   // hide_web - computed: false, optional: true, required: false
   private _hideWeb?: boolean | cdktf.IResolvable; 
   public get hideWeb() {
-    return this.getBooleanAttribute('hide_web') as any;
+    return this.getBooleanAttribute('hide_web');
   }
   public set hideWeb(value: boolean | cdktf.IResolvable) {
     this._hideWeb = value;
@@ -797,7 +797,7 @@ export class AppSaml extends cdktf.TerraformResource {
   // honor_force_authn - computed: false, optional: true, required: false
   private _honorForceAuthn?: boolean | cdktf.IResolvable; 
   public get honorForceAuthn() {
-    return this.getBooleanAttribute('honor_force_authn') as any;
+    return this.getBooleanAttribute('honor_force_authn');
   }
   public set honorForceAuthn(value: boolean | cdktf.IResolvable) {
     this._honorForceAuthn = value;
@@ -844,7 +844,7 @@ export class AppSaml extends cdktf.TerraformResource {
   // implicit_assignment - computed: false, optional: true, required: false
   private _implicitAssignment?: boolean | cdktf.IResolvable; 
   public get implicitAssignment() {
-    return this.getBooleanAttribute('implicit_assignment') as any;
+    return this.getBooleanAttribute('implicit_assignment');
   }
   public set implicitAssignment(value: boolean | cdktf.IResolvable) {
     this._implicitAssignment = value;
@@ -994,7 +994,7 @@ export class AppSaml extends cdktf.TerraformResource {
   // request_compressed - computed: false, optional: true, required: false
   private _requestCompressed?: boolean | cdktf.IResolvable; 
   public get requestCompressed() {
-    return this.getBooleanAttribute('request_compressed') as any;
+    return this.getBooleanAttribute('request_compressed');
   }
   public set requestCompressed(value: boolean | cdktf.IResolvable) {
     this._requestCompressed = value;
@@ -1010,7 +1010,7 @@ export class AppSaml extends cdktf.TerraformResource {
   // response_signed - computed: false, optional: true, required: false
   private _responseSigned?: boolean | cdktf.IResolvable; 
   public get responseSigned() {
-    return this.getBooleanAttribute('response_signed') as any;
+    return this.getBooleanAttribute('response_signed');
   }
   public set responseSigned(value: boolean | cdktf.IResolvable) {
     this._responseSigned = value;
@@ -1111,7 +1111,7 @@ export class AppSaml extends cdktf.TerraformResource {
   // skip_groups - computed: false, optional: true, required: false
   private _skipGroups?: boolean | cdktf.IResolvable; 
   public get skipGroups() {
-    return this.getBooleanAttribute('skip_groups') as any;
+    return this.getBooleanAttribute('skip_groups');
   }
   public set skipGroups(value: boolean | cdktf.IResolvable) {
     this._skipGroups = value;
@@ -1127,7 +1127,7 @@ export class AppSaml extends cdktf.TerraformResource {
   // skip_users - computed: false, optional: true, required: false
   private _skipUsers?: boolean | cdktf.IResolvable; 
   public get skipUsers() {
-    return this.getBooleanAttribute('skip_users') as any;
+    return this.getBooleanAttribute('skip_users');
   }
   public set skipUsers(value: boolean | cdktf.IResolvable) {
     this._skipUsers = value;
@@ -1285,12 +1285,12 @@ export class AppSaml extends cdktf.TerraformResource {
   }
 
   // attribute_statements - computed: false, optional: true, required: false
-  private _attributeStatements?: AppSamlAttributeStatements[]; 
+  private _attributeStatements?: AppSamlAttributeStatements[] | cdktf.IResolvable; 
   public get attributeStatements() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('attribute_statements') as any;
+    return this.interpolationForAttribute('attribute_statements');
   }
-  public set attributeStatements(value: AppSamlAttributeStatements[]) {
+  public set attributeStatements(value: AppSamlAttributeStatements[] | cdktf.IResolvable) {
     this._attributeStatements = value;
   }
   public resetAttributeStatements() {
@@ -1302,12 +1302,12 @@ export class AppSaml extends cdktf.TerraformResource {
   }
 
   // users - computed: false, optional: true, required: false
-  private _users?: AppSamlUsers[]; 
+  private _users?: AppSamlUsers[] | cdktf.IResolvable; 
   public get users() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('users') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('users')));
   }
-  public set users(value: AppSamlUsers[]) {
+  public set users(value: AppSamlUsers[] | cdktf.IResolvable) {
     this._users = value;
   }
   public resetUsers() {

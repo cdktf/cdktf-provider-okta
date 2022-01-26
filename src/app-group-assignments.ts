@@ -16,7 +16,7 @@ export interface AppGroupAssignmentsConfig extends cdktf.TerraformMetaArguments 
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_group_assignments#group AppGroupAssignments#group}
   */
-  readonly group: AppGroupAssignmentsGroup[];
+  readonly group: AppGroupAssignmentsGroup[] | cdktf.IResolvable;
 }
 export interface AppGroupAssignmentsGroup {
   /**
@@ -35,8 +35,8 @@ export interface AppGroupAssignmentsGroup {
   readonly profile?: string;
 }
 
-export function appGroupAssignmentsGroupToTerraform(struct?: AppGroupAssignmentsGroup): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function appGroupAssignmentsGroupToTerraform(struct?: AppGroupAssignmentsGroup | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -107,12 +107,12 @@ export class AppGroupAssignments extends cdktf.TerraformResource {
   }
 
   // group - computed: false, optional: false, required: true
-  private _group?: AppGroupAssignmentsGroup[]; 
+  private _group?: AppGroupAssignmentsGroup[] | cdktf.IResolvable; 
   public get group() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('group') as any;
+    return this.interpolationForAttribute('group');
   }
-  public set group(value: AppGroupAssignmentsGroup[]) {
+  public set group(value: AppGroupAssignmentsGroup[] | cdktf.IResolvable) {
     this._group = value;
   }
   // Temporarily expose input value. Use with caution.

@@ -64,7 +64,7 @@ export class GroupRoles extends cdktf.TerraformResource {
   // admin_roles - computed: false, optional: true, required: false
   private _adminRoles?: string[]; 
   public get adminRoles() {
-    return this.getListAttribute('admin_roles');
+    return cdktf.Fn.tolist(this.getListAttribute('admin_roles'));
   }
   public set adminRoles(value: string[]) {
     this._adminRoles = value;

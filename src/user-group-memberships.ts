@@ -64,7 +64,7 @@ export class UserGroupMemberships extends cdktf.TerraformResource {
   // groups - computed: false, optional: false, required: true
   private _groups?: string[]; 
   public get groups() {
-    return this.getListAttribute('groups');
+    return cdktf.Fn.tolist(this.getListAttribute('groups'));
   }
   public set groups(value: string[]) {
     this._groups = value;
