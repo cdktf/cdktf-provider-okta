@@ -89,7 +89,7 @@ export class AdminRoleCustomAssignments extends cdktf.TerraformResource {
   // members - computed: false, optional: true, required: false
   private _members?: string[]; 
   public get members() {
-    return this.getListAttribute('members');
+    return cdktf.Fn.tolist(this.getListAttribute('members'));
   }
   public set members(value: string[]) {
     this._members = value;

@@ -287,8 +287,8 @@ export interface UserPasswordHash {
   readonly workFactor?: number;
 }
 
-export function userPasswordHashToTerraform(struct?: UserPasswordHashOutputReference | UserPasswordHash): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function userPasswordHashToTerraform(struct?: UserPasswordHashOutputReference | UserPasswordHash | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -309,7 +309,7 @@ export class UserPasswordHashOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -515,7 +515,7 @@ export class User extends cdktf.TerraformResource {
   // admin_roles - computed: false, optional: true, required: false
   private _adminRoles?: string[]; 
   public get adminRoles() {
-    return this.getListAttribute('admin_roles');
+    return cdktf.Fn.tolist(this.getListAttribute('admin_roles'));
   }
   public set adminRoles(value: string[]) {
     this._adminRoles = value;
@@ -685,7 +685,7 @@ export class User extends cdktf.TerraformResource {
   // group_memberships - computed: false, optional: true, required: false
   private _groupMemberships?: string[]; 
   public get groupMemberships() {
-    return this.getListAttribute('group_memberships');
+    return cdktf.Fn.tolist(this.getListAttribute('group_memberships'));
   }
   public set groupMemberships(value: string[]) {
     this._groupMemberships = value;
@@ -1151,7 +1151,7 @@ export class User extends cdktf.TerraformResource {
   }
 
   // password_hash - computed: false, optional: true, required: false
-  private _passwordHash = new UserPasswordHashOutputReference(this as any, "password_hash", true);
+  private _passwordHash = new UserPasswordHashOutputReference(this, "password_hash", true);
   public get passwordHash() {
     return this._passwordHash;
   }

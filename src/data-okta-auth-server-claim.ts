@@ -66,7 +66,7 @@ export class DataOktaAuthServerClaim extends cdktf.TerraformDataSource {
 
   // always_include_in_token - computed: true, optional: false, required: false
   public get alwaysIncludeInToken() {
-    return this.getBooleanAttribute('always_include_in_token') as any;
+    return this.getBooleanAttribute('always_include_in_token');
   }
 
   // auth_server_id - computed: false, optional: false, required: true
@@ -121,7 +121,7 @@ export class DataOktaAuthServerClaim extends cdktf.TerraformDataSource {
 
   // scopes - computed: true, optional: false, required: false
   public get scopes() {
-    return this.getListAttribute('scopes');
+    return cdktf.Fn.tolist(this.getListAttribute('scopes'));
   }
 
   // status - computed: true, optional: false, required: false

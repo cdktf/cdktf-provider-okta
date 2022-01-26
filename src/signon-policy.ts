@@ -101,7 +101,7 @@ export class SignonPolicy extends cdktf.TerraformResource {
   // groups_included - computed: false, optional: true, required: false
   private _groupsIncluded?: string[]; 
   public get groupsIncluded() {
-    return this.getListAttribute('groups_included');
+    return cdktf.Fn.tolist(this.getListAttribute('groups_included'));
   }
   public set groupsIncluded(value: string[]) {
     this._groupsIncluded = value;

@@ -90,7 +90,7 @@ export class SecurityNotificationEmails extends cdktf.TerraformResource {
   // report_suspicious_activity_enabled - computed: false, optional: true, required: false
   private _reportSuspiciousActivityEnabled?: boolean | cdktf.IResolvable; 
   public get reportSuspiciousActivityEnabled() {
-    return this.getBooleanAttribute('report_suspicious_activity_enabled') as any;
+    return this.getBooleanAttribute('report_suspicious_activity_enabled');
   }
   public set reportSuspiciousActivityEnabled(value: boolean | cdktf.IResolvable) {
     this._reportSuspiciousActivityEnabled = value;
@@ -106,7 +106,7 @@ export class SecurityNotificationEmails extends cdktf.TerraformResource {
   // send_email_for_factor_enrollment_enabled - computed: false, optional: true, required: false
   private _sendEmailForFactorEnrollmentEnabled?: boolean | cdktf.IResolvable; 
   public get sendEmailForFactorEnrollmentEnabled() {
-    return this.getBooleanAttribute('send_email_for_factor_enrollment_enabled') as any;
+    return this.getBooleanAttribute('send_email_for_factor_enrollment_enabled');
   }
   public set sendEmailForFactorEnrollmentEnabled(value: boolean | cdktf.IResolvable) {
     this._sendEmailForFactorEnrollmentEnabled = value;
@@ -122,7 +122,7 @@ export class SecurityNotificationEmails extends cdktf.TerraformResource {
   // send_email_for_factor_reset_enabled - computed: false, optional: true, required: false
   private _sendEmailForFactorResetEnabled?: boolean | cdktf.IResolvable; 
   public get sendEmailForFactorResetEnabled() {
-    return this.getBooleanAttribute('send_email_for_factor_reset_enabled') as any;
+    return this.getBooleanAttribute('send_email_for_factor_reset_enabled');
   }
   public set sendEmailForFactorResetEnabled(value: boolean | cdktf.IResolvable) {
     this._sendEmailForFactorResetEnabled = value;
@@ -138,7 +138,7 @@ export class SecurityNotificationEmails extends cdktf.TerraformResource {
   // send_email_for_new_device_enabled - computed: false, optional: true, required: false
   private _sendEmailForNewDeviceEnabled?: boolean | cdktf.IResolvable; 
   public get sendEmailForNewDeviceEnabled() {
-    return this.getBooleanAttribute('send_email_for_new_device_enabled') as any;
+    return this.getBooleanAttribute('send_email_for_new_device_enabled');
   }
   public set sendEmailForNewDeviceEnabled(value: boolean | cdktf.IResolvable) {
     this._sendEmailForNewDeviceEnabled = value;
@@ -154,7 +154,7 @@ export class SecurityNotificationEmails extends cdktf.TerraformResource {
   // send_email_for_password_changed_enabled - computed: false, optional: true, required: false
   private _sendEmailForPasswordChangedEnabled?: boolean | cdktf.IResolvable; 
   public get sendEmailForPasswordChangedEnabled() {
-    return this.getBooleanAttribute('send_email_for_password_changed_enabled') as any;
+    return this.getBooleanAttribute('send_email_for_password_changed_enabled');
   }
   public set sendEmailForPasswordChangedEnabled(value: boolean | cdktf.IResolvable) {
     this._sendEmailForPasswordChangedEnabled = value;

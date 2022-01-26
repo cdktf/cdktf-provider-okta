@@ -71,7 +71,7 @@ export class LinkValue extends cdktf.TerraformResource {
   // associated_user_ids - computed: false, optional: true, required: false
   private _associatedUserIds?: string[]; 
   public get associatedUserIds() {
-    return this.getListAttribute('associated_user_ids');
+    return cdktf.Fn.tolist(this.getListAttribute('associated_user_ids'));
   }
   public set associatedUserIds(value: string[]) {
     this._associatedUserIds = value;

@@ -174,7 +174,7 @@ export interface AppAutoLoginConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_auto_login#users AppAutoLogin#users}
   */
-  readonly users?: AppAutoLoginUsers[];
+  readonly users?: AppAutoLoginUsers[] | cdktf.IResolvable;
 }
 export interface AppAutoLoginUsers {
   /**
@@ -197,8 +197,8 @@ export interface AppAutoLoginUsers {
   readonly username?: string;
 }
 
-export function appAutoLoginUsersToTerraform(struct?: AppAutoLoginUsers): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function appAutoLoginUsersToTerraform(struct?: AppAutoLoginUsers | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -311,7 +311,7 @@ export class AppAutoLogin extends cdktf.TerraformResource {
   // accessibility_self_service - computed: false, optional: true, required: false
   private _accessibilitySelfService?: boolean | cdktf.IResolvable; 
   public get accessibilitySelfService() {
-    return this.getBooleanAttribute('accessibility_self_service') as any;
+    return this.getBooleanAttribute('accessibility_self_service');
   }
   public set accessibilitySelfService(value: boolean | cdktf.IResolvable) {
     this._accessibilitySelfService = value;
@@ -375,7 +375,7 @@ export class AppAutoLogin extends cdktf.TerraformResource {
   // auto_submit_toolbar - computed: false, optional: true, required: false
   private _autoSubmitToolbar?: boolean | cdktf.IResolvable; 
   public get autoSubmitToolbar() {
-    return this.getBooleanAttribute('auto_submit_toolbar') as any;
+    return this.getBooleanAttribute('auto_submit_toolbar');
   }
   public set autoSubmitToolbar(value: boolean | cdktf.IResolvable) {
     this._autoSubmitToolbar = value;
@@ -423,7 +423,7 @@ export class AppAutoLogin extends cdktf.TerraformResource {
   // groups - computed: false, optional: true, required: false
   private _groups?: string[]; 
   public get groups() {
-    return this.getListAttribute('groups');
+    return cdktf.Fn.tolist(this.getListAttribute('groups'));
   }
   public set groups(value: string[]) {
     this._groups = value;
@@ -439,7 +439,7 @@ export class AppAutoLogin extends cdktf.TerraformResource {
   // hide_ios - computed: false, optional: true, required: false
   private _hideIos?: boolean | cdktf.IResolvable; 
   public get hideIos() {
-    return this.getBooleanAttribute('hide_ios') as any;
+    return this.getBooleanAttribute('hide_ios');
   }
   public set hideIos(value: boolean | cdktf.IResolvable) {
     this._hideIos = value;
@@ -455,7 +455,7 @@ export class AppAutoLogin extends cdktf.TerraformResource {
   // hide_web - computed: false, optional: true, required: false
   private _hideWeb?: boolean | cdktf.IResolvable; 
   public get hideWeb() {
-    return this.getBooleanAttribute('hide_web') as any;
+    return this.getBooleanAttribute('hide_web');
   }
   public set hideWeb(value: boolean | cdktf.IResolvable) {
     this._hideWeb = value;
@@ -531,7 +531,7 @@ export class AppAutoLogin extends cdktf.TerraformResource {
   // reveal_password - computed: false, optional: true, required: false
   private _revealPassword?: boolean | cdktf.IResolvable; 
   public get revealPassword() {
-    return this.getBooleanAttribute('reveal_password') as any;
+    return this.getBooleanAttribute('reveal_password');
   }
   public set revealPassword(value: boolean | cdktf.IResolvable) {
     this._revealPassword = value;
@@ -616,7 +616,7 @@ export class AppAutoLogin extends cdktf.TerraformResource {
   // skip_groups - computed: false, optional: true, required: false
   private _skipGroups?: boolean | cdktf.IResolvable; 
   public get skipGroups() {
-    return this.getBooleanAttribute('skip_groups') as any;
+    return this.getBooleanAttribute('skip_groups');
   }
   public set skipGroups(value: boolean | cdktf.IResolvable) {
     this._skipGroups = value;
@@ -632,7 +632,7 @@ export class AppAutoLogin extends cdktf.TerraformResource {
   // skip_users - computed: false, optional: true, required: false
   private _skipUsers?: boolean | cdktf.IResolvable; 
   public get skipUsers() {
-    return this.getBooleanAttribute('skip_users') as any;
+    return this.getBooleanAttribute('skip_users');
   }
   public set skipUsers(value: boolean | cdktf.IResolvable) {
     this._skipUsers = value;
@@ -726,12 +726,12 @@ export class AppAutoLogin extends cdktf.TerraformResource {
   }
 
   // users - computed: false, optional: true, required: false
-  private _users?: AppAutoLoginUsers[]; 
+  private _users?: AppAutoLoginUsers[] | cdktf.IResolvable; 
   public get users() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('users') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('users')));
   }
-  public set users(value: AppAutoLoginUsers[]) {
+  public set users(value: AppAutoLoginUsers[] | cdktf.IResolvable) {
     this._users = value;
   }
   public resetUsers() {

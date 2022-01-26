@@ -23,7 +23,7 @@ export class DataOktaAuthServerScopesScopes extends cdktf.ComplexComputedList {
 
   // default - computed: true, optional: false, required: false
   public get default() {
-    return this.getBooleanAttribute('default') as any;
+    return this.getBooleanAttribute('default');
   }
 
   // description - computed: true, optional: false, required: false
@@ -53,7 +53,7 @@ export class DataOktaAuthServerScopesScopes extends cdktf.ComplexComputedList {
 
   // system - computed: true, optional: false, required: false
   public get systemAttribute() {
-    return this.getBooleanAttribute('system') as any;
+    return this.getBooleanAttribute('system');
   }
 }
 
@@ -116,7 +116,7 @@ export class DataOktaAuthServerScopes extends cdktf.TerraformDataSource {
 
   // scopes - computed: true, optional: false, required: false
   public scopes(index: string) {
-    return new DataOktaAuthServerScopesScopes(this, 'scopes', index);
+    return new DataOktaAuthServerScopesScopes(this, 'scopes', index, false);
   }
 
   // =========

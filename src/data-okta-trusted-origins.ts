@@ -18,7 +18,7 @@ export class DataOktaTrustedOriginsTrustedOrigins extends cdktf.ComplexComputedL
 
   // active - computed: true, optional: false, required: false
   public get active() {
-    return this.getBooleanAttribute('active') as any;
+    return this.getBooleanAttribute('active');
   }
 
   // id - computed: true, optional: false, required: false
@@ -104,7 +104,7 @@ export class DataOktaTrustedOrigins extends cdktf.TerraformDataSource {
 
   // trusted_origins - computed: true, optional: false, required: false
   public trustedOrigins(index: string) {
-    return new DataOktaTrustedOriginsTrustedOrigins(this, 'trusted_origins', index);
+    return new DataOktaTrustedOriginsTrustedOrigins(this, 'trusted_origins', index, false);
   }
 
   // =========

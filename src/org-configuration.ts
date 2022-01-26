@@ -290,7 +290,7 @@ export class OrgConfiguration extends cdktf.TerraformResource {
   // opt_out_communication_emails - computed: false, optional: true, required: false
   private _optOutCommunicationEmails?: boolean | cdktf.IResolvable; 
   public get optOutCommunicationEmails() {
-    return this.getBooleanAttribute('opt_out_communication_emails') as any;
+    return this.getBooleanAttribute('opt_out_communication_emails');
   }
   public set optOutCommunicationEmails(value: boolean | cdktf.IResolvable) {
     this._optOutCommunicationEmails = value;

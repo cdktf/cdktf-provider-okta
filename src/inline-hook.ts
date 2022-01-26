@@ -10,11 +10,11 @@ export interface InlineHookConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook#auth InlineHook#auth}
   */
-  readonly auth?: { [key: string]: string } | cdktf.IResolvable;
+  readonly auth?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook#channel InlineHook#channel}
   */
-  readonly channel: { [key: string]: string } | cdktf.IResolvable;
+  readonly channel: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook#name InlineHook#name}
   */
@@ -36,7 +36,7 @@ export interface InlineHookConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook#headers InlineHook#headers}
   */
-  readonly headers?: InlineHookHeaders[];
+  readonly headers?: InlineHookHeaders[] | cdktf.IResolvable;
 }
 export interface InlineHookHeaders {
   /**
@@ -49,8 +49,8 @@ export interface InlineHookHeaders {
   readonly value?: string;
 }
 
-export function inlineHookHeadersToTerraform(struct?: InlineHookHeaders): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function inlineHookHeadersToTerraform(struct?: InlineHookHeaders | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -107,12 +107,11 @@ export class InlineHook extends cdktf.TerraformResource {
   // ==========
 
   // auth - computed: false, optional: true, required: false
-  private _auth?: { [key: string]: string } | cdktf.IResolvable; 
+  private _auth?: { [key: string]: string }; 
   public get auth() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('auth') as any;
+    return this.getStringMapAttribute('auth');
   }
-  public set auth(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set auth(value: { [key: string]: string }) {
     this._auth = value;
   }
   public resetAuth() {
@@ -124,12 +123,11 @@ export class InlineHook extends cdktf.TerraformResource {
   }
 
   // channel - computed: false, optional: false, required: true
-  private _channel?: { [key: string]: string } | cdktf.IResolvable; 
+  private _channel?: { [key: string]: string }; 
   public get channel() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('channel') as any;
+    return this.getStringMapAttribute('channel');
   }
-  public set channel(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set channel(value: { [key: string]: string }) {
     this._channel = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -198,12 +196,12 @@ export class InlineHook extends cdktf.TerraformResource {
   }
 
   // headers - computed: false, optional: true, required: false
-  private _headers?: InlineHookHeaders[]; 
+  private _headers?: InlineHookHeaders[] | cdktf.IResolvable; 
   public get headers() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('headers') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('headers')));
   }
-  public set headers(value: InlineHookHeaders[]) {
+  public set headers(value: InlineHookHeaders[] | cdktf.IResolvable) {
     this._headers = value;
   }
   public resetHeaders() {
@@ -220,8 +218,8 @@ export class InlineHook extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      auth: cdktf.hashMapper(cdktf.anyToTerraform)(this._auth),
-      channel: cdktf.hashMapper(cdktf.anyToTerraform)(this._channel),
+      auth: cdktf.hashMapper(cdktf.stringToTerraform)(this._auth),
+      channel: cdktf.hashMapper(cdktf.stringToTerraform)(this._channel),
       name: cdktf.stringToTerraform(this._name),
       status: cdktf.stringToTerraform(this._status),
       type: cdktf.stringToTerraform(this._type),

@@ -141,7 +141,7 @@ export class DataOktaIdpOidc extends cdktf.TerraformDataSource {
 
   // scopes - computed: true, optional: false, required: false
   public get scopes() {
-    return this.getListAttribute('scopes');
+    return cdktf.Fn.tolist(this.getListAttribute('scopes'));
   }
 
   // token_binding - computed: true, optional: false, required: false

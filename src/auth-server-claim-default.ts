@@ -74,7 +74,7 @@ export class AuthServerClaimDefault extends cdktf.TerraformResource {
   // always_include_in_token - computed: true, optional: true, required: false
   private _alwaysIncludeInToken?: boolean | cdktf.IResolvable; 
   public get alwaysIncludeInToken() {
-    return this.getBooleanAttribute('always_include_in_token') as any;
+    return this.getBooleanAttribute('always_include_in_token');
   }
   public set alwaysIncludeInToken(value: boolean | cdktf.IResolvable) {
     this._alwaysIncludeInToken = value;
@@ -125,7 +125,7 @@ export class AuthServerClaimDefault extends cdktf.TerraformResource {
 
   // scopes - computed: true, optional: false, required: false
   public get scopes() {
-    return this.getListAttribute('scopes');
+    return cdktf.Fn.tolist(this.getListAttribute('scopes'));
   }
 
   // status - computed: true, optional: false, required: false

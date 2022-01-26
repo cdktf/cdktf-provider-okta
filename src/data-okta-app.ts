@@ -86,7 +86,7 @@ export class DataOktaApp extends cdktf.TerraformDataSource {
   // active_only - computed: false, optional: true, required: false
   private _activeOnly?: boolean | cdktf.IResolvable; 
   public get activeOnly() {
-    return this.getBooleanAttribute('active_only') as any;
+    return this.getBooleanAttribute('active_only');
   }
   public set activeOnly(value: boolean | cdktf.IResolvable) {
     this._activeOnly = value;
@@ -101,7 +101,7 @@ export class DataOktaApp extends cdktf.TerraformDataSource {
 
   // groups - computed: true, optional: false, required: false
   public get groups() {
-    return this.getListAttribute('groups');
+    return cdktf.Fn.tolist(this.getListAttribute('groups'));
   }
 
   // id - computed: false, optional: true, required: false
@@ -165,7 +165,7 @@ export class DataOktaApp extends cdktf.TerraformDataSource {
   // skip_groups - computed: false, optional: true, required: false
   private _skipGroups?: boolean | cdktf.IResolvable; 
   public get skipGroups() {
-    return this.getBooleanAttribute('skip_groups') as any;
+    return this.getBooleanAttribute('skip_groups');
   }
   public set skipGroups(value: boolean | cdktf.IResolvable) {
     this._skipGroups = value;
@@ -181,7 +181,7 @@ export class DataOktaApp extends cdktf.TerraformDataSource {
   // skip_users - computed: false, optional: true, required: false
   private _skipUsers?: boolean | cdktf.IResolvable; 
   public get skipUsers() {
-    return this.getBooleanAttribute('skip_users') as any;
+    return this.getBooleanAttribute('skip_users');
   }
   public set skipUsers(value: boolean | cdktf.IResolvable) {
     this._skipUsers = value;
@@ -201,7 +201,7 @@ export class DataOktaApp extends cdktf.TerraformDataSource {
 
   // users - computed: true, optional: false, required: false
   public get users() {
-    return this.getListAttribute('users');
+    return cdktf.Fn.tolist(this.getListAttribute('users'));
   }
 
   // =========

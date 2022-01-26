@@ -54,7 +54,7 @@ export class DataOktaAuthServer extends cdktf.TerraformDataSource {
 
   // audiences - computed: true, optional: false, required: false
   public get audiences() {
-    return this.getListAttribute('audiences');
+    return cdktf.Fn.tolist(this.getListAttribute('audiences'));
   }
 
   // credentials_last_rotated - computed: true, optional: false, required: false

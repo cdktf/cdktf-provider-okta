@@ -104,7 +104,7 @@ export class AuthServerPolicy extends cdktf.TerraformResource {
   // client_whitelist - computed: false, optional: false, required: true
   private _clientWhitelist?: string[]; 
   public get clientWhitelist() {
-    return this.getListAttribute('client_whitelist');
+    return cdktf.Fn.tolist(this.getListAttribute('client_whitelist'));
   }
   public set clientWhitelist(value: string[]) {
     this._clientWhitelist = value;

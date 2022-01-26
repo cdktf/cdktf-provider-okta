@@ -141,7 +141,7 @@ export class DataOktaIdpSaml extends cdktf.TerraformDataSource {
 
   // subject_format - computed: true, optional: false, required: false
   public get subjectFormat() {
-    return this.getListAttribute('subject_format');
+    return cdktf.Fn.tolist(this.getListAttribute('subject_format'));
   }
 
   // type - computed: true, optional: false, required: false

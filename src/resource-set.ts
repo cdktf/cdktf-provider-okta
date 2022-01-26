@@ -102,7 +102,7 @@ export class ResourceSet extends cdktf.TerraformResource {
   // resources - computed: false, optional: true, required: false
   private _resources?: string[]; 
   public get resources() {
-    return this.getListAttribute('resources');
+    return cdktf.Fn.tolist(this.getListAttribute('resources'));
   }
   public set resources(value: string[]) {
     this._resources = value;

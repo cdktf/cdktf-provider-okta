@@ -291,7 +291,7 @@ export class PolicyPasswordDefault extends cdktf.TerraformResource {
   // password_dictionary_lookup - computed: false, optional: true, required: false
   private _passwordDictionaryLookup?: boolean | cdktf.IResolvable; 
   public get passwordDictionaryLookup() {
-    return this.getBooleanAttribute('password_dictionary_lookup') as any;
+    return this.getBooleanAttribute('password_dictionary_lookup');
   }
   public set passwordDictionaryLookup(value: boolean | cdktf.IResolvable) {
     this._passwordDictionaryLookup = value;
@@ -307,7 +307,7 @@ export class PolicyPasswordDefault extends cdktf.TerraformResource {
   // password_exclude_first_name - computed: false, optional: true, required: false
   private _passwordExcludeFirstName?: boolean | cdktf.IResolvable; 
   public get passwordExcludeFirstName() {
-    return this.getBooleanAttribute('password_exclude_first_name') as any;
+    return this.getBooleanAttribute('password_exclude_first_name');
   }
   public set passwordExcludeFirstName(value: boolean | cdktf.IResolvable) {
     this._passwordExcludeFirstName = value;
@@ -323,7 +323,7 @@ export class PolicyPasswordDefault extends cdktf.TerraformResource {
   // password_exclude_last_name - computed: false, optional: true, required: false
   private _passwordExcludeLastName?: boolean | cdktf.IResolvable; 
   public get passwordExcludeLastName() {
-    return this.getBooleanAttribute('password_exclude_last_name') as any;
+    return this.getBooleanAttribute('password_exclude_last_name');
   }
   public set passwordExcludeLastName(value: boolean | cdktf.IResolvable) {
     this._passwordExcludeLastName = value;
@@ -339,7 +339,7 @@ export class PolicyPasswordDefault extends cdktf.TerraformResource {
   // password_exclude_username - computed: false, optional: true, required: false
   private _passwordExcludeUsername?: boolean | cdktf.IResolvable; 
   public get passwordExcludeUsername() {
-    return this.getBooleanAttribute('password_exclude_username') as any;
+    return this.getBooleanAttribute('password_exclude_username');
   }
   public set passwordExcludeUsername(value: boolean | cdktf.IResolvable) {
     this._passwordExcludeUsername = value;
@@ -387,7 +387,7 @@ export class PolicyPasswordDefault extends cdktf.TerraformResource {
   // password_lockout_notification_channels - computed: false, optional: true, required: false
   private _passwordLockoutNotificationChannels?: string[]; 
   public get passwordLockoutNotificationChannels() {
-    return this.getListAttribute('password_lockout_notification_channels');
+    return cdktf.Fn.tolist(this.getListAttribute('password_lockout_notification_channels'));
   }
   public set passwordLockoutNotificationChannels(value: string[]) {
     this._passwordLockoutNotificationChannels = value;
@@ -531,7 +531,7 @@ export class PolicyPasswordDefault extends cdktf.TerraformResource {
   // password_show_lockout_failures - computed: false, optional: true, required: false
   private _passwordShowLockoutFailures?: boolean | cdktf.IResolvable; 
   public get passwordShowLockoutFailures() {
-    return this.getBooleanAttribute('password_show_lockout_failures') as any;
+    return this.getBooleanAttribute('password_show_lockout_failures');
   }
   public set passwordShowLockoutFailures(value: boolean | cdktf.IResolvable) {
     this._passwordShowLockoutFailures = value;
@@ -600,7 +600,7 @@ export class PolicyPasswordDefault extends cdktf.TerraformResource {
   // skip_unlock - computed: false, optional: true, required: false
   private _skipUnlock?: boolean | cdktf.IResolvable; 
   public get skipUnlock() {
-    return this.getBooleanAttribute('skip_unlock') as any;
+    return this.getBooleanAttribute('skip_unlock');
   }
   public set skipUnlock(value: boolean | cdktf.IResolvable) {
     this._skipUnlock = value;

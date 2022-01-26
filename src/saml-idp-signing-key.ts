@@ -87,7 +87,7 @@ export class SamlIdpSigningKey extends cdktf.TerraformResource {
   // x5c - computed: false, optional: false, required: true
   private _x5C?: string[]; 
   public get x5C() {
-    return this.getListAttribute('x5c');
+    return cdktf.Fn.tolist(this.getListAttribute('x5c'));
   }
   public set x5C(value: string[]) {
     this._x5C = value;

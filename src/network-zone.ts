@@ -106,7 +106,7 @@ export class NetworkZone extends cdktf.TerraformResource {
   // asns - computed: false, optional: true, required: false
   private _asns?: string[]; 
   public get asns() {
-    return this.getListAttribute('asns');
+    return cdktf.Fn.tolist(this.getListAttribute('asns'));
   }
   public set asns(value: string[]) {
     this._asns = value;
@@ -122,7 +122,7 @@ export class NetworkZone extends cdktf.TerraformResource {
   // dynamic_locations - computed: false, optional: true, required: false
   private _dynamicLocations?: string[]; 
   public get dynamicLocations() {
-    return this.getListAttribute('dynamic_locations');
+    return cdktf.Fn.tolist(this.getListAttribute('dynamic_locations'));
   }
   public set dynamicLocations(value: string[]) {
     this._dynamicLocations = value;
@@ -154,7 +154,7 @@ export class NetworkZone extends cdktf.TerraformResource {
   // gateways - computed: false, optional: true, required: false
   private _gateways?: string[]; 
   public get gateways() {
-    return this.getListAttribute('gateways');
+    return cdktf.Fn.tolist(this.getListAttribute('gateways'));
   }
   public set gateways(value: string[]) {
     this._gateways = value;
@@ -188,7 +188,7 @@ export class NetworkZone extends cdktf.TerraformResource {
   // proxies - computed: false, optional: true, required: false
   private _proxies?: string[]; 
   public get proxies() {
-    return this.getListAttribute('proxies');
+    return cdktf.Fn.tolist(this.getListAttribute('proxies'));
   }
   public set proxies(value: string[]) {
     this._proxies = value;

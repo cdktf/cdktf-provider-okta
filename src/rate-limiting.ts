@@ -84,7 +84,7 @@ export class RateLimiting extends cdktf.TerraformResource {
   // communications_enabled - computed: false, optional: true, required: false
   private _communicationsEnabled?: boolean | cdktf.IResolvable; 
   public get communicationsEnabled() {
-    return this.getBooleanAttribute('communications_enabled') as any;
+    return this.getBooleanAttribute('communications_enabled');
   }
   public set communicationsEnabled(value: boolean | cdktf.IResolvable) {
     this._communicationsEnabled = value;

@@ -86,7 +86,7 @@ export class DataOktaAppOauth extends cdktf.TerraformDataSource {
   // active_only - computed: false, optional: true, required: false
   private _activeOnly?: boolean | cdktf.IResolvable; 
   public get activeOnly() {
-    return this.getBooleanAttribute('active_only') as any;
+    return this.getBooleanAttribute('active_only');
   }
   public set activeOnly(value: boolean | cdktf.IResolvable) {
     this._activeOnly = value;
@@ -101,7 +101,7 @@ export class DataOktaAppOauth extends cdktf.TerraformDataSource {
 
   // auto_submit_toolbar - computed: true, optional: false, required: false
   public get autoSubmitToolbar() {
-    return this.getBooleanAttribute('auto_submit_toolbar') as any;
+    return this.getBooleanAttribute('auto_submit_toolbar');
   }
 
   // client_id - computed: true, optional: false, required: false
@@ -116,22 +116,22 @@ export class DataOktaAppOauth extends cdktf.TerraformDataSource {
 
   // grant_types - computed: true, optional: false, required: false
   public get grantTypes() {
-    return this.getListAttribute('grant_types');
+    return cdktf.Fn.tolist(this.getListAttribute('grant_types'));
   }
 
   // groups - computed: true, optional: false, required: false
   public get groups() {
-    return this.getListAttribute('groups');
+    return cdktf.Fn.tolist(this.getListAttribute('groups'));
   }
 
   // hide_ios - computed: true, optional: false, required: false
   public get hideIos() {
-    return this.getBooleanAttribute('hide_ios') as any;
+    return this.getBooleanAttribute('hide_ios');
   }
 
   // hide_web - computed: true, optional: false, required: false
   public get hideWeb() {
-    return this.getBooleanAttribute('hide_web') as any;
+    return this.getBooleanAttribute('hide_web');
   }
 
   // id - computed: false, optional: true, required: false
@@ -194,7 +194,7 @@ export class DataOktaAppOauth extends cdktf.TerraformDataSource {
 
   // login_scopes - computed: true, optional: false, required: false
   public get loginScopes() {
-    return this.getListAttribute('login_scopes');
+    return cdktf.Fn.tolist(this.getListAttribute('login_scopes'));
   }
 
   // login_uri - computed: true, optional: false, required: false
@@ -219,23 +219,23 @@ export class DataOktaAppOauth extends cdktf.TerraformDataSource {
 
   // post_logout_redirect_uris - computed: true, optional: false, required: false
   public get postLogoutRedirectUris() {
-    return this.getListAttribute('post_logout_redirect_uris');
+    return cdktf.Fn.tolist(this.getListAttribute('post_logout_redirect_uris'));
   }
 
   // redirect_uris - computed: true, optional: false, required: false
   public get redirectUris() {
-    return this.getListAttribute('redirect_uris');
+    return cdktf.Fn.tolist(this.getListAttribute('redirect_uris'));
   }
 
   // response_types - computed: true, optional: false, required: false
   public get responseTypes() {
-    return this.getListAttribute('response_types');
+    return cdktf.Fn.tolist(this.getListAttribute('response_types'));
   }
 
   // skip_groups - computed: false, optional: true, required: false
   private _skipGroups?: boolean | cdktf.IResolvable; 
   public get skipGroups() {
-    return this.getBooleanAttribute('skip_groups') as any;
+    return this.getBooleanAttribute('skip_groups');
   }
   public set skipGroups(value: boolean | cdktf.IResolvable) {
     this._skipGroups = value;
@@ -251,7 +251,7 @@ export class DataOktaAppOauth extends cdktf.TerraformDataSource {
   // skip_users - computed: false, optional: true, required: false
   private _skipUsers?: boolean | cdktf.IResolvable; 
   public get skipUsers() {
-    return this.getBooleanAttribute('skip_users') as any;
+    return this.getBooleanAttribute('skip_users');
   }
   public set skipUsers(value: boolean | cdktf.IResolvable) {
     this._skipUsers = value;
@@ -276,7 +276,7 @@ export class DataOktaAppOauth extends cdktf.TerraformDataSource {
 
   // users - computed: true, optional: false, required: false
   public get users() {
-    return this.getListAttribute('users');
+    return cdktf.Fn.tolist(this.getListAttribute('users'));
   }
 
   // wildcard_redirect - computed: true, optional: false, required: false

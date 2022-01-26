@@ -54,12 +54,12 @@ export class DataOktaIdpMetadataSaml extends cdktf.TerraformDataSource {
 
   // assertions_signed - computed: true, optional: false, required: false
   public get assertionsSigned() {
-    return this.getBooleanAttribute('assertions_signed') as any;
+    return this.getBooleanAttribute('assertions_signed');
   }
 
   // authn_request_signed - computed: true, optional: false, required: false
   public get authnRequestSigned() {
-    return this.getBooleanAttribute('authn_request_signed') as any;
+    return this.getBooleanAttribute('authn_request_signed');
   }
 
   // encryption_certificate - computed: true, optional: false, required: false

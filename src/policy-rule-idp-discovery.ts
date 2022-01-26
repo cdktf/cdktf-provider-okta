@@ -76,25 +76,25 @@ export interface PolicyRuleIdpDiscoveryConfig extends cdktf.TerraformMetaArgumen
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery#app_exclude PolicyRuleIdpDiscovery#app_exclude}
   */
-  readonly appExclude?: PolicyRuleIdpDiscoveryAppExclude[];
+  readonly appExclude?: PolicyRuleIdpDiscoveryAppExclude[] | cdktf.IResolvable;
   /**
   * app_include block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery#app_include PolicyRuleIdpDiscovery#app_include}
   */
-  readonly appInclude?: PolicyRuleIdpDiscoveryAppInclude[];
+  readonly appInclude?: PolicyRuleIdpDiscoveryAppInclude[] | cdktf.IResolvable;
   /**
   * platform_include block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery#platform_include PolicyRuleIdpDiscovery#platform_include}
   */
-  readonly platformInclude?: PolicyRuleIdpDiscoveryPlatformInclude[];
+  readonly platformInclude?: PolicyRuleIdpDiscoveryPlatformInclude[] | cdktf.IResolvable;
   /**
   * user_identifier_patterns block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery#user_identifier_patterns PolicyRuleIdpDiscovery#user_identifier_patterns}
   */
-  readonly userIdentifierPatterns?: PolicyRuleIdpDiscoveryUserIdentifierPatterns[];
+  readonly userIdentifierPatterns?: PolicyRuleIdpDiscoveryUserIdentifierPatterns[] | cdktf.IResolvable;
 }
 export interface PolicyRuleIdpDiscoveryAppExclude {
   /**
@@ -111,8 +111,8 @@ export interface PolicyRuleIdpDiscoveryAppExclude {
   readonly type: string;
 }
 
-export function policyRuleIdpDiscoveryAppExcludeToTerraform(struct?: PolicyRuleIdpDiscoveryAppExclude): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function policyRuleIdpDiscoveryAppExcludeToTerraform(struct?: PolicyRuleIdpDiscoveryAppExclude | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -138,8 +138,8 @@ export interface PolicyRuleIdpDiscoveryAppInclude {
   readonly type: string;
 }
 
-export function policyRuleIdpDiscoveryAppIncludeToTerraform(struct?: PolicyRuleIdpDiscoveryAppInclude): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function policyRuleIdpDiscoveryAppIncludeToTerraform(struct?: PolicyRuleIdpDiscoveryAppInclude | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -167,8 +167,8 @@ export interface PolicyRuleIdpDiscoveryPlatformInclude {
   readonly type?: string;
 }
 
-export function policyRuleIdpDiscoveryPlatformIncludeToTerraform(struct?: PolicyRuleIdpDiscoveryPlatformInclude): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function policyRuleIdpDiscoveryPlatformIncludeToTerraform(struct?: PolicyRuleIdpDiscoveryPlatformInclude | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -190,8 +190,8 @@ export interface PolicyRuleIdpDiscoveryUserIdentifierPatterns {
   readonly value?: string;
 }
 
-export function policyRuleIdpDiscoveryUserIdentifierPatternsToTerraform(struct?: PolicyRuleIdpDiscoveryUserIdentifierPatterns): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function policyRuleIdpDiscoveryUserIdentifierPatternsToTerraform(struct?: PolicyRuleIdpDiscoveryUserIdentifierPatterns | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -451,12 +451,12 @@ export class PolicyRuleIdpDiscovery extends cdktf.TerraformResource {
   }
 
   // app_exclude - computed: false, optional: true, required: false
-  private _appExclude?: PolicyRuleIdpDiscoveryAppExclude[]; 
+  private _appExclude?: PolicyRuleIdpDiscoveryAppExclude[] | cdktf.IResolvable; 
   public get appExclude() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('app_exclude') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('app_exclude')));
   }
-  public set appExclude(value: PolicyRuleIdpDiscoveryAppExclude[]) {
+  public set appExclude(value: PolicyRuleIdpDiscoveryAppExclude[] | cdktf.IResolvable) {
     this._appExclude = value;
   }
   public resetAppExclude() {
@@ -468,12 +468,12 @@ export class PolicyRuleIdpDiscovery extends cdktf.TerraformResource {
   }
 
   // app_include - computed: false, optional: true, required: false
-  private _appInclude?: PolicyRuleIdpDiscoveryAppInclude[]; 
+  private _appInclude?: PolicyRuleIdpDiscoveryAppInclude[] | cdktf.IResolvable; 
   public get appInclude() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('app_include') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('app_include')));
   }
-  public set appInclude(value: PolicyRuleIdpDiscoveryAppInclude[]) {
+  public set appInclude(value: PolicyRuleIdpDiscoveryAppInclude[] | cdktf.IResolvable) {
     this._appInclude = value;
   }
   public resetAppInclude() {
@@ -485,12 +485,12 @@ export class PolicyRuleIdpDiscovery extends cdktf.TerraformResource {
   }
 
   // platform_include - computed: false, optional: true, required: false
-  private _platformInclude?: PolicyRuleIdpDiscoveryPlatformInclude[]; 
+  private _platformInclude?: PolicyRuleIdpDiscoveryPlatformInclude[] | cdktf.IResolvable; 
   public get platformInclude() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('platform_include') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('platform_include')));
   }
-  public set platformInclude(value: PolicyRuleIdpDiscoveryPlatformInclude[]) {
+  public set platformInclude(value: PolicyRuleIdpDiscoveryPlatformInclude[] | cdktf.IResolvable) {
     this._platformInclude = value;
   }
   public resetPlatformInclude() {
@@ -502,12 +502,12 @@ export class PolicyRuleIdpDiscovery extends cdktf.TerraformResource {
   }
 
   // user_identifier_patterns - computed: false, optional: true, required: false
-  private _userIdentifierPatterns?: PolicyRuleIdpDiscoveryUserIdentifierPatterns[]; 
+  private _userIdentifierPatterns?: PolicyRuleIdpDiscoveryUserIdentifierPatterns[] | cdktf.IResolvable; 
   public get userIdentifierPatterns() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('user_identifier_patterns') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('user_identifier_patterns')));
   }
-  public set userIdentifierPatterns(value: PolicyRuleIdpDiscoveryUserIdentifierPatterns[]) {
+  public set userIdentifierPatterns(value: PolicyRuleIdpDiscoveryUserIdentifierPatterns[] | cdktf.IResolvable) {
     this._userIdentifierPatterns = value;
   }
   public resetUserIdentifierPatterns() {

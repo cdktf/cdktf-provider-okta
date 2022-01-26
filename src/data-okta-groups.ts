@@ -92,7 +92,7 @@ export class DataOktaGroups extends cdktf.TerraformDataSource {
 
   // groups - computed: true, optional: false, required: false
   public groups(index: string) {
-    return new DataOktaGroupsGroups(this, 'groups', index);
+    return new DataOktaGroupsGroups(this, 'groups', index, false);
   }
 
   // id - computed: true, optional: true, required: false

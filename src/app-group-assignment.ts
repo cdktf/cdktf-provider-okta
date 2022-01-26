@@ -144,7 +144,7 @@ export class AppGroupAssignment extends cdktf.TerraformResource {
   // retain_assignment - computed: false, optional: true, required: false
   private _retainAssignment?: boolean | cdktf.IResolvable; 
   public get retainAssignment() {
-    return this.getBooleanAttribute('retain_assignment') as any;
+    return this.getBooleanAttribute('retain_assignment');
   }
   public set retainAssignment(value: boolean | cdktf.IResolvable) {
     this._retainAssignment = value;

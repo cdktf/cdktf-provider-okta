@@ -24,7 +24,7 @@ export interface TemplateSmsConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/template_sms#translations TemplateSms#translations}
   */
-  readonly translations?: TemplateSmsTranslations[];
+  readonly translations?: TemplateSmsTranslations[] | cdktf.IResolvable;
 }
 export interface TemplateSmsTranslations {
   /**
@@ -37,8 +37,8 @@ export interface TemplateSmsTranslations {
   readonly template: string;
 }
 
-export function templateSmsTranslationsToTerraform(struct?: TemplateSmsTranslations): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function templateSmsTranslationsToTerraform(struct?: TemplateSmsTranslations | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -122,12 +122,12 @@ export class TemplateSms extends cdktf.TerraformResource {
   }
 
   // translations - computed: false, optional: true, required: false
-  private _translations?: TemplateSmsTranslations[]; 
+  private _translations?: TemplateSmsTranslations[] | cdktf.IResolvable; 
   public get translations() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('translations') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('translations')));
   }
-  public set translations(value: TemplateSmsTranslations[]) {
+  public set translations(value: TemplateSmsTranslations[] | cdktf.IResolvable) {
     this._translations = value;
   }
   public resetTranslations() {

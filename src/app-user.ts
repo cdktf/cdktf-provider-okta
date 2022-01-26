@@ -98,7 +98,7 @@ export class AppUser extends cdktf.TerraformResource {
 
   // has_shared_username - computed: true, optional: false, required: false
   public get hasSharedUsername() {
-    return this.getBooleanAttribute('has_shared_username') as any;
+    return this.getBooleanAttribute('has_shared_username');
   }
 
   // id - computed: true, optional: true, required: false
@@ -141,7 +141,7 @@ export class AppUser extends cdktf.TerraformResource {
   // retain_assignment - computed: false, optional: true, required: false
   private _retainAssignment?: boolean | cdktf.IResolvable; 
   public get retainAssignment() {
-    return this.getBooleanAttribute('retain_assignment') as any;
+    return this.getBooleanAttribute('retain_assignment');
   }
   public set retainAssignment(value: boolean | cdktf.IResolvable) {
     this._retainAssignment = value;

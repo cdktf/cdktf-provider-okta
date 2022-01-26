@@ -68,7 +68,7 @@ export class DataOktaIdpSocial extends cdktf.TerraformDataSource {
 
   // account_link_group_include - computed: true, optional: false, required: false
   public get accountLinkGroupInclude() {
-    return this.getListAttribute('account_link_group_include');
+    return cdktf.Fn.tolist(this.getListAttribute('account_link_group_include'));
   }
 
   // authorization_binding - computed: true, optional: false, required: false
@@ -103,7 +103,7 @@ export class DataOktaIdpSocial extends cdktf.TerraformDataSource {
 
   // groups_assignment - computed: true, optional: false, required: false
   public get groupsAssignment() {
-    return this.getListAttribute('groups_assignment');
+    return cdktf.Fn.tolist(this.getListAttribute('groups_assignment'));
   }
 
   // groups_attribute - computed: true, optional: false, required: false
@@ -113,7 +113,7 @@ export class DataOktaIdpSocial extends cdktf.TerraformDataSource {
 
   // groups_filter - computed: true, optional: false, required: false
   public get groupsFilter() {
-    return this.getListAttribute('groups_filter');
+    return cdktf.Fn.tolist(this.getListAttribute('groups_filter'));
   }
 
   // id - computed: false, optional: true, required: false
@@ -160,7 +160,7 @@ export class DataOktaIdpSocial extends cdktf.TerraformDataSource {
 
   // profile_master - computed: true, optional: false, required: false
   public get profileMaster() {
-    return this.getBooleanAttribute('profile_master') as any;
+    return this.getBooleanAttribute('profile_master');
   }
 
   // protocol_type - computed: true, optional: false, required: false
@@ -175,7 +175,7 @@ export class DataOktaIdpSocial extends cdktf.TerraformDataSource {
 
   // scopes - computed: true, optional: false, required: false
   public get scopes() {
-    return this.getListAttribute('scopes');
+    return cdktf.Fn.tolist(this.getListAttribute('scopes'));
   }
 
   // status - computed: true, optional: false, required: false

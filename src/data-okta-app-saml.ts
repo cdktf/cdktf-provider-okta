@@ -134,18 +134,18 @@ export class DataOktaAppSaml extends cdktf.TerraformDataSource {
 
   // accessibility_self_service - computed: true, optional: false, required: false
   public get accessibilitySelfService() {
-    return this.getBooleanAttribute('accessibility_self_service') as any;
+    return this.getBooleanAttribute('accessibility_self_service');
   }
 
   // acs_endpoints - computed: true, optional: false, required: false
   public get acsEndpoints() {
-    return this.getListAttribute('acs_endpoints');
+    return cdktf.Fn.tolist(this.getListAttribute('acs_endpoints'));
   }
 
   // active_only - computed: false, optional: true, required: false
   private _activeOnly?: boolean | cdktf.IResolvable; 
   public get activeOnly() {
-    return this.getBooleanAttribute('active_only') as any;
+    return this.getBooleanAttribute('active_only');
   }
   public set activeOnly(value: boolean | cdktf.IResolvable) {
     this._activeOnly = value;
@@ -165,12 +165,12 @@ export class DataOktaAppSaml extends cdktf.TerraformDataSource {
 
   // assertion_signed - computed: true, optional: false, required: false
   public get assertionSigned() {
-    return this.getBooleanAttribute('assertion_signed') as any;
+    return this.getBooleanAttribute('assertion_signed');
   }
 
   // attribute_statements - computed: true, optional: false, required: false
   public attributeStatements(index: string) {
-    return new DataOktaAppSamlAttributeStatements(this, 'attribute_statements', index);
+    return new DataOktaAppSamlAttributeStatements(this, 'attribute_statements', index, false);
   }
 
   // audience - computed: true, optional: false, required: false
@@ -185,7 +185,7 @@ export class DataOktaAppSaml extends cdktf.TerraformDataSource {
 
   // auto_submit_toolbar - computed: true, optional: false, required: false
   public get autoSubmitToolbar() {
-    return this.getBooleanAttribute('auto_submit_toolbar') as any;
+    return this.getBooleanAttribute('auto_submit_toolbar');
   }
 
   // default_relay_state - computed: true, optional: false, required: false
@@ -205,27 +205,27 @@ export class DataOktaAppSaml extends cdktf.TerraformDataSource {
 
   // features - computed: true, optional: false, required: false
   public get features() {
-    return this.getListAttribute('features');
+    return cdktf.Fn.tolist(this.getListAttribute('features'));
   }
 
   // groups - computed: true, optional: false, required: false
   public get groups() {
-    return this.getListAttribute('groups');
+    return cdktf.Fn.tolist(this.getListAttribute('groups'));
   }
 
   // hide_ios - computed: true, optional: false, required: false
   public get hideIos() {
-    return this.getBooleanAttribute('hide_ios') as any;
+    return this.getBooleanAttribute('hide_ios');
   }
 
   // hide_web - computed: true, optional: false, required: false
   public get hideWeb() {
-    return this.getBooleanAttribute('hide_web') as any;
+    return this.getBooleanAttribute('hide_web');
   }
 
   // honor_force_authn - computed: true, optional: false, required: false
   public get honorForceAuthn() {
-    return this.getBooleanAttribute('honor_force_authn') as any;
+    return this.getBooleanAttribute('honor_force_authn');
   }
 
   // id - computed: false, optional: true, required: false
@@ -309,7 +309,7 @@ export class DataOktaAppSaml extends cdktf.TerraformDataSource {
   // request_compressed - computed: false, optional: true, required: false
   private _requestCompressed?: boolean | cdktf.IResolvable; 
   public get requestCompressed() {
-    return this.getBooleanAttribute('request_compressed') as any;
+    return this.getBooleanAttribute('request_compressed');
   }
   public set requestCompressed(value: boolean | cdktf.IResolvable) {
     this._requestCompressed = value;
@@ -324,7 +324,7 @@ export class DataOktaAppSaml extends cdktf.TerraformDataSource {
 
   // response_signed - computed: true, optional: false, required: false
   public get responseSigned() {
-    return this.getBooleanAttribute('response_signed') as any;
+    return this.getBooleanAttribute('response_signed');
   }
 
   // signature_algorithm - computed: true, optional: false, required: false
@@ -350,7 +350,7 @@ export class DataOktaAppSaml extends cdktf.TerraformDataSource {
   // skip_groups - computed: false, optional: true, required: false
   private _skipGroups?: boolean | cdktf.IResolvable; 
   public get skipGroups() {
-    return this.getBooleanAttribute('skip_groups') as any;
+    return this.getBooleanAttribute('skip_groups');
   }
   public set skipGroups(value: boolean | cdktf.IResolvable) {
     this._skipGroups = value;
@@ -366,7 +366,7 @@ export class DataOktaAppSaml extends cdktf.TerraformDataSource {
   // skip_users - computed: false, optional: true, required: false
   private _skipUsers?: boolean | cdktf.IResolvable; 
   public get skipUsers() {
-    return this.getBooleanAttribute('skip_users') as any;
+    return this.getBooleanAttribute('skip_users');
   }
   public set skipUsers(value: boolean | cdktf.IResolvable) {
     this._skipUsers = value;
@@ -426,7 +426,7 @@ export class DataOktaAppSaml extends cdktf.TerraformDataSource {
 
   // users - computed: true, optional: false, required: false
   public get users() {
-    return this.getListAttribute('users');
+    return cdktf.Fn.tolist(this.getListAttribute('users'));
   }
 
   // =========

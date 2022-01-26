@@ -190,7 +190,7 @@ export class AppUserBaseSchema extends cdktf.TerraformResource {
   // required - computed: false, optional: true, required: false
   private _required?: boolean | cdktf.IResolvable; 
   public get required() {
-    return this.getBooleanAttribute('required') as any;
+    return this.getBooleanAttribute('required');
   }
   public set required(value: boolean | cdktf.IResolvable) {
     this._required = value;
