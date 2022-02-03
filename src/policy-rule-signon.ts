@@ -26,6 +26,18 @@ export interface PolicyRuleSignonConfig extends cdktf.TerraformMetaArguments {
   */
   readonly behaviors?: string[];
   /**
+  * Apply rule based on the IdP used: ANY, OKTA or SPECIFIC_IDP.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_signon#identity_provider PolicyRuleSignon#identity_provider}
+  */
+  readonly identityProvider?: string;
+  /**
+  * When identity_provider is SPECIFIC_IDP then this is the list of IdP IDs to apply the rule on
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_signon#identity_provider_ids PolicyRuleSignon#identity_provider_ids}
+  */
+  readonly identityProviderIds?: string[];
+  /**
   * Elapsed time before the next MFA challenge
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_signon#mfa_lifetime PolicyRuleSignon#mfa_lifetime}
@@ -235,6 +247,8 @@ export class PolicyRuleSignon extends cdktf.TerraformResource {
     this._access = config.access;
     this._authtype = config.authtype;
     this._behaviors = config.behaviors;
+    this._identityProvider = config.identityProvider;
+    this._identityProviderIds = config.identityProviderIds;
     this._mfaLifetime = config.mfaLifetime;
     this._mfaPrompt = config.mfaPrompt;
     this._mfaRememberDevice = config.mfaRememberDevice;
@@ -311,6 +325,38 @@ export class PolicyRuleSignon extends cdktf.TerraformResource {
   // id - computed: true, optional: true, required: false
   public get id() {
     return this.getStringAttribute('id');
+  }
+
+  // identity_provider - computed: false, optional: true, required: false
+  private _identityProvider?: string; 
+  public get identityProvider() {
+    return this.getStringAttribute('identity_provider');
+  }
+  public set identityProvider(value: string) {
+    this._identityProvider = value;
+  }
+  public resetIdentityProvider() {
+    this._identityProvider = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get identityProviderInput() {
+    return this._identityProvider;
+  }
+
+  // identity_provider_ids - computed: false, optional: true, required: false
+  private _identityProviderIds?: string[]; 
+  public get identityProviderIds() {
+    return this.getListAttribute('identity_provider_ids');
+  }
+  public set identityProviderIds(value: string[]) {
+    this._identityProviderIds = value;
+  }
+  public resetIdentityProviderIds() {
+    this._identityProviderIds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get identityProviderIdsInput() {
+    return this._identityProviderIds;
   }
 
   // mfa_lifetime - computed: false, optional: true, required: false
@@ -624,6 +670,8 @@ export class PolicyRuleSignon extends cdktf.TerraformResource {
       access: cdktf.stringToTerraform(this._access),
       authtype: cdktf.stringToTerraform(this._authtype),
       behaviors: cdktf.listMapper(cdktf.stringToTerraform)(this._behaviors),
+      identity_provider: cdktf.stringToTerraform(this._identityProvider),
+      identity_provider_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._identityProviderIds),
       mfa_lifetime: cdktf.numberToTerraform(this._mfaLifetime),
       mfa_prompt: cdktf.stringToTerraform(this._mfaPrompt),
       mfa_remember_device: cdktf.booleanToTerraform(this._mfaRememberDevice),
