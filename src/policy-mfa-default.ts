@@ -12,6 +12,10 @@ export interface PolicyMfaDefaultConfig extends cdktf.TerraformMetaArguments {
   */
   readonly duo?: { [key: string]: string };
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#external_idp PolicyMfaDefault#external_idp}
+  */
+  readonly externalIdp?: { [key: string]: string };
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#fido_u2f PolicyMfaDefault#fido_u2f}
   */
   readonly fidoU2F?: { [key: string]: string };
@@ -27,6 +31,12 @@ export interface PolicyMfaDefaultConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#hotp PolicyMfaDefault#hotp}
   */
   readonly hotp?: { [key: string]: string };
+  /**
+  * Is the policy using Okta Identity Engine (OIE) with authenticators instead of factors?
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#is_oie PolicyMfaDefault#is_oie}
+  */
+  readonly isOie?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#okta_call PolicyMfaDefault#okta_call}
   */
@@ -56,13 +66,33 @@ export interface PolicyMfaDefaultConfig extends cdktf.TerraformMetaArguments {
   */
   readonly oktaSms?: { [key: string]: string };
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#okta_verify PolicyMfaDefault#okta_verify}
+  */
+  readonly oktaVerify?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#onprem_mfa PolicyMfaDefault#onprem_mfa}
+  */
+  readonly onpremMfa?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#phone_number PolicyMfaDefault#phone_number}
+  */
+  readonly phoneNumber?: { [key: string]: string };
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#rsa_token PolicyMfaDefault#rsa_token}
   */
   readonly rsaToken?: { [key: string]: string };
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#security_question PolicyMfaDefault#security_question}
+  */
+  readonly securityQuestion?: { [key: string]: string };
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#symantec_vip PolicyMfaDefault#symantec_vip}
   */
   readonly symantecVip?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#webauthn PolicyMfaDefault#webauthn}
+  */
+  readonly webauthn?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#yubikey_token PolicyMfaDefault#yubikey_token}
   */
@@ -102,10 +132,12 @@ export class PolicyMfaDefault extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._duo = config.duo;
+    this._externalIdp = config.externalIdp;
     this._fidoU2F = config.fidoU2F;
     this._fidoWebauthn = config.fidoWebauthn;
     this._googleOtp = config.googleOtp;
     this._hotp = config.hotp;
+    this._isOie = config.isOie;
     this._oktaCall = config.oktaCall;
     this._oktaEmail = config.oktaEmail;
     this._oktaOtp = config.oktaOtp;
@@ -113,8 +145,13 @@ export class PolicyMfaDefault extends cdktf.TerraformResource {
     this._oktaPush = config.oktaPush;
     this._oktaQuestion = config.oktaQuestion;
     this._oktaSms = config.oktaSms;
+    this._oktaVerify = config.oktaVerify;
+    this._onpremMfa = config.onpremMfa;
+    this._phoneNumber = config.phoneNumber;
     this._rsaToken = config.rsaToken;
+    this._securityQuestion = config.securityQuestion;
     this._symantecVip = config.symantecVip;
+    this._webauthn = config.webauthn;
     this._yubikeyToken = config.yubikeyToken;
   }
 
@@ -146,6 +183,22 @@ export class PolicyMfaDefault extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get duoInput() {
     return this._duo;
+  }
+
+  // external_idp - computed: false, optional: true, required: false
+  private _externalIdp?: { [key: string]: string }; 
+  public get externalIdp() {
+    return this.getStringMapAttribute('external_idp');
+  }
+  public set externalIdp(value: { [key: string]: string }) {
+    this._externalIdp = value;
+  }
+  public resetExternalIdp() {
+    this._externalIdp = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get externalIdpInput() {
+    return this._externalIdp;
   }
 
   // fido_u2f - computed: false, optional: true, required: false
@@ -215,6 +268,22 @@ export class PolicyMfaDefault extends cdktf.TerraformResource {
   // id - computed: true, optional: true, required: false
   public get id() {
     return this.getStringAttribute('id');
+  }
+
+  // is_oie - computed: false, optional: true, required: false
+  private _isOie?: boolean | cdktf.IResolvable; 
+  public get isOie() {
+    return this.getBooleanAttribute('is_oie');
+  }
+  public set isOie(value: boolean | cdktf.IResolvable) {
+    this._isOie = value;
+  }
+  public resetIsOie() {
+    this._isOie = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get isOieInput() {
+    return this._isOie;
   }
 
   // name - computed: true, optional: false, required: false
@@ -334,6 +403,54 @@ export class PolicyMfaDefault extends cdktf.TerraformResource {
     return this._oktaSms;
   }
 
+  // okta_verify - computed: false, optional: true, required: false
+  private _oktaVerify?: { [key: string]: string }; 
+  public get oktaVerify() {
+    return this.getStringMapAttribute('okta_verify');
+  }
+  public set oktaVerify(value: { [key: string]: string }) {
+    this._oktaVerify = value;
+  }
+  public resetOktaVerify() {
+    this._oktaVerify = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get oktaVerifyInput() {
+    return this._oktaVerify;
+  }
+
+  // onprem_mfa - computed: false, optional: true, required: false
+  private _onpremMfa?: { [key: string]: string }; 
+  public get onpremMfa() {
+    return this.getStringMapAttribute('onprem_mfa');
+  }
+  public set onpremMfa(value: { [key: string]: string }) {
+    this._onpremMfa = value;
+  }
+  public resetOnpremMfa() {
+    this._onpremMfa = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get onpremMfaInput() {
+    return this._onpremMfa;
+  }
+
+  // phone_number - computed: false, optional: true, required: false
+  private _phoneNumber?: { [key: string]: string }; 
+  public get phoneNumber() {
+    return this.getStringMapAttribute('phone_number');
+  }
+  public set phoneNumber(value: { [key: string]: string }) {
+    this._phoneNumber = value;
+  }
+  public resetPhoneNumber() {
+    this._phoneNumber = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get phoneNumberInput() {
+    return this._phoneNumber;
+  }
+
   // priority - computed: true, optional: false, required: false
   public get priority() {
     return this.getNumberAttribute('priority');
@@ -355,6 +472,22 @@ export class PolicyMfaDefault extends cdktf.TerraformResource {
     return this._rsaToken;
   }
 
+  // security_question - computed: false, optional: true, required: false
+  private _securityQuestion?: { [key: string]: string }; 
+  public get securityQuestion() {
+    return this.getStringMapAttribute('security_question');
+  }
+  public set securityQuestion(value: { [key: string]: string }) {
+    this._securityQuestion = value;
+  }
+  public resetSecurityQuestion() {
+    this._securityQuestion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get securityQuestionInput() {
+    return this._securityQuestion;
+  }
+
   // status - computed: true, optional: false, required: false
   public get status() {
     return this.getStringAttribute('status');
@@ -374,6 +507,22 @@ export class PolicyMfaDefault extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get symantecVipInput() {
     return this._symantecVip;
+  }
+
+  // webauthn - computed: false, optional: true, required: false
+  private _webauthn?: { [key: string]: string }; 
+  public get webauthn() {
+    return this.getStringMapAttribute('webauthn');
+  }
+  public set webauthn(value: { [key: string]: string }) {
+    this._webauthn = value;
+  }
+  public resetWebauthn() {
+    this._webauthn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get webauthnInput() {
+    return this._webauthn;
   }
 
   // yubikey_token - computed: false, optional: true, required: false
@@ -399,10 +548,12 @@ export class PolicyMfaDefault extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       duo: cdktf.hashMapper(cdktf.stringToTerraform)(this._duo),
+      external_idp: cdktf.hashMapper(cdktf.stringToTerraform)(this._externalIdp),
       fido_u2f: cdktf.hashMapper(cdktf.stringToTerraform)(this._fidoU2F),
       fido_webauthn: cdktf.hashMapper(cdktf.stringToTerraform)(this._fidoWebauthn),
       google_otp: cdktf.hashMapper(cdktf.stringToTerraform)(this._googleOtp),
       hotp: cdktf.hashMapper(cdktf.stringToTerraform)(this._hotp),
+      is_oie: cdktf.booleanToTerraform(this._isOie),
       okta_call: cdktf.hashMapper(cdktf.stringToTerraform)(this._oktaCall),
       okta_email: cdktf.hashMapper(cdktf.stringToTerraform)(this._oktaEmail),
       okta_otp: cdktf.hashMapper(cdktf.stringToTerraform)(this._oktaOtp),
@@ -410,8 +561,13 @@ export class PolicyMfaDefault extends cdktf.TerraformResource {
       okta_push: cdktf.hashMapper(cdktf.stringToTerraform)(this._oktaPush),
       okta_question: cdktf.hashMapper(cdktf.stringToTerraform)(this._oktaQuestion),
       okta_sms: cdktf.hashMapper(cdktf.stringToTerraform)(this._oktaSms),
+      okta_verify: cdktf.hashMapper(cdktf.stringToTerraform)(this._oktaVerify),
+      onprem_mfa: cdktf.hashMapper(cdktf.stringToTerraform)(this._onpremMfa),
+      phone_number: cdktf.hashMapper(cdktf.stringToTerraform)(this._phoneNumber),
       rsa_token: cdktf.hashMapper(cdktf.stringToTerraform)(this._rsaToken),
+      security_question: cdktf.hashMapper(cdktf.stringToTerraform)(this._securityQuestion),
       symantec_vip: cdktf.hashMapper(cdktf.stringToTerraform)(this._symantecVip),
+      webauthn: cdktf.hashMapper(cdktf.stringToTerraform)(this._webauthn),
       yubikey_token: cdktf.hashMapper(cdktf.stringToTerraform)(this._yubikeyToken),
     };
   }

@@ -32851,11 +32851,13 @@ Must be unique amongst siblings in the same scope
 | --- | --- |
 | [`resetDescription`](#cdktfprovideroktamfapolicyresetdescription) | *No description.* |
 | [`resetDuo`](#cdktfprovideroktamfapolicyresetduo) | *No description.* |
+| [`resetExternalIdp`](#cdktfprovideroktamfapolicyresetexternalidp) | *No description.* |
 | [`resetFidoU2F`](#cdktfprovideroktamfapolicyresetfidou2f) | *No description.* |
 | [`resetFidoWebauthn`](#cdktfprovideroktamfapolicyresetfidowebauthn) | *No description.* |
 | [`resetGoogleOtp`](#cdktfprovideroktamfapolicyresetgoogleotp) | *No description.* |
 | [`resetGroupsIncluded`](#cdktfprovideroktamfapolicyresetgroupsincluded) | *No description.* |
 | [`resetHotp`](#cdktfprovideroktamfapolicyresethotp) | *No description.* |
+| [`resetIsOie`](#cdktfprovideroktamfapolicyresetisoie) | *No description.* |
 | [`resetOktaCall`](#cdktfprovideroktamfapolicyresetoktacall) | *No description.* |
 | [`resetOktaEmail`](#cdktfprovideroktamfapolicyresetoktaemail) | *No description.* |
 | [`resetOktaOtp`](#cdktfprovideroktamfapolicyresetoktaotp) | *No description.* |
@@ -32863,10 +32865,15 @@ Must be unique amongst siblings in the same scope
 | [`resetOktaPush`](#cdktfprovideroktamfapolicyresetoktapush) | *No description.* |
 | [`resetOktaQuestion`](#cdktfprovideroktamfapolicyresetoktaquestion) | *No description.* |
 | [`resetOktaSms`](#cdktfprovideroktamfapolicyresetoktasms) | *No description.* |
+| [`resetOktaVerify`](#cdktfprovideroktamfapolicyresetoktaverify) | *No description.* |
+| [`resetOnpremMfa`](#cdktfprovideroktamfapolicyresetonpremmfa) | *No description.* |
+| [`resetPhoneNumber`](#cdktfprovideroktamfapolicyresetphonenumber) | *No description.* |
 | [`resetPriority`](#cdktfprovideroktamfapolicyresetpriority) | *No description.* |
 | [`resetRsaToken`](#cdktfprovideroktamfapolicyresetrsatoken) | *No description.* |
+| [`resetSecurityQuestion`](#cdktfprovideroktamfapolicyresetsecurityquestion) | *No description.* |
 | [`resetStatus`](#cdktfprovideroktamfapolicyresetstatus) | *No description.* |
 | [`resetSymantecVip`](#cdktfprovideroktamfapolicyresetsymantecvip) | *No description.* |
+| [`resetWebauthn`](#cdktfprovideroktamfapolicyresetwebauthn) | *No description.* |
 | [`resetYubikeyToken`](#cdktfprovideroktamfapolicyresetyubikeytoken) | *No description.* |
 
 ---
@@ -32881,6 +32888,12 @@ public resetDescription()
 
 ```typescript
 public resetDuo()
+```
+
+##### `resetExternalIdp` <a name="@cdktf/provider-okta.MfaPolicy.resetExternalIdp" id="cdktfprovideroktamfapolicyresetexternalidp"></a>
+
+```typescript
+public resetExternalIdp()
 ```
 
 ##### `resetFidoU2F` <a name="@cdktf/provider-okta.MfaPolicy.resetFidoU2F" id="cdktfprovideroktamfapolicyresetfidou2f"></a>
@@ -32911,6 +32924,12 @@ public resetGroupsIncluded()
 
 ```typescript
 public resetHotp()
+```
+
+##### `resetIsOie` <a name="@cdktf/provider-okta.MfaPolicy.resetIsOie" id="cdktfprovideroktamfapolicyresetisoie"></a>
+
+```typescript
+public resetIsOie()
 ```
 
 ##### `resetOktaCall` <a name="@cdktf/provider-okta.MfaPolicy.resetOktaCall" id="cdktfprovideroktamfapolicyresetoktacall"></a>
@@ -32955,6 +32974,24 @@ public resetOktaQuestion()
 public resetOktaSms()
 ```
 
+##### `resetOktaVerify` <a name="@cdktf/provider-okta.MfaPolicy.resetOktaVerify" id="cdktfprovideroktamfapolicyresetoktaverify"></a>
+
+```typescript
+public resetOktaVerify()
+```
+
+##### `resetOnpremMfa` <a name="@cdktf/provider-okta.MfaPolicy.resetOnpremMfa" id="cdktfprovideroktamfapolicyresetonpremmfa"></a>
+
+```typescript
+public resetOnpremMfa()
+```
+
+##### `resetPhoneNumber` <a name="@cdktf/provider-okta.MfaPolicy.resetPhoneNumber" id="cdktfprovideroktamfapolicyresetphonenumber"></a>
+
+```typescript
+public resetPhoneNumber()
+```
+
 ##### `resetPriority` <a name="@cdktf/provider-okta.MfaPolicy.resetPriority" id="cdktfprovideroktamfapolicyresetpriority"></a>
 
 ```typescript
@@ -32967,6 +33004,12 @@ public resetPriority()
 public resetRsaToken()
 ```
 
+##### `resetSecurityQuestion` <a name="@cdktf/provider-okta.MfaPolicy.resetSecurityQuestion" id="cdktfprovideroktamfapolicyresetsecurityquestion"></a>
+
+```typescript
+public resetSecurityQuestion()
+```
+
 ##### `resetStatus` <a name="@cdktf/provider-okta.MfaPolicy.resetStatus" id="cdktfprovideroktamfapolicyresetstatus"></a>
 
 ```typescript
@@ -32977,6 +33020,12 @@ public resetStatus()
 
 ```typescript
 public resetSymantecVip()
+```
+
+##### `resetWebauthn` <a name="@cdktf/provider-okta.MfaPolicy.resetWebauthn" id="cdktfprovideroktamfapolicyresetwebauthn"></a>
+
+```typescript
+public resetWebauthn()
 ```
 
 ##### `resetYubikeyToken` <a name="@cdktf/provider-okta.MfaPolicy.resetYubikeyToken" id="cdktfprovideroktamfapolicyresetyubikeytoken"></a>
@@ -32993,11 +33042,13 @@ public resetYubikeyToken()
 | [`id`](#cdktfprovideroktamfapolicypropertyid)<span title="Required">*</span> | `string` | *No description.* |
 | [`descriptionInput`](#cdktfprovideroktamfapolicypropertydescriptioninput) | `string` | *No description.* |
 | [`duoInput`](#cdktfprovideroktamfapolicypropertyduoinput) | {[ key: string ]: `string`} | *No description.* |
+| [`externalIdpInput`](#cdktfprovideroktamfapolicypropertyexternalidpinput) | {[ key: string ]: `string`} | *No description.* |
 | [`fidoU2FInput`](#cdktfprovideroktamfapolicypropertyfidou2finput) | {[ key: string ]: `string`} | *No description.* |
 | [`fidoWebauthnInput`](#cdktfprovideroktamfapolicypropertyfidowebauthninput) | {[ key: string ]: `string`} | *No description.* |
 | [`googleOtpInput`](#cdktfprovideroktamfapolicypropertygoogleotpinput) | {[ key: string ]: `string`} | *No description.* |
 | [`groupsIncludedInput`](#cdktfprovideroktamfapolicypropertygroupsincludedinput) | `string`[] | *No description.* |
 | [`hotpInput`](#cdktfprovideroktamfapolicypropertyhotpinput) | {[ key: string ]: `string`} | *No description.* |
+| [`isOieInput`](#cdktfprovideroktamfapolicypropertyisoieinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`nameInput`](#cdktfprovideroktamfapolicypropertynameinput) | `string` | *No description.* |
 | [`oktaCallInput`](#cdktfprovideroktamfapolicypropertyoktacallinput) | {[ key: string ]: `string`} | *No description.* |
 | [`oktaEmailInput`](#cdktfprovideroktamfapolicypropertyoktaemailinput) | {[ key: string ]: `string`} | *No description.* |
@@ -33006,18 +33057,25 @@ public resetYubikeyToken()
 | [`oktaPushInput`](#cdktfprovideroktamfapolicypropertyoktapushinput) | {[ key: string ]: `string`} | *No description.* |
 | [`oktaQuestionInput`](#cdktfprovideroktamfapolicypropertyoktaquestioninput) | {[ key: string ]: `string`} | *No description.* |
 | [`oktaSmsInput`](#cdktfprovideroktamfapolicypropertyoktasmsinput) | {[ key: string ]: `string`} | *No description.* |
+| [`oktaVerifyInput`](#cdktfprovideroktamfapolicypropertyoktaverifyinput) | {[ key: string ]: `string`} | *No description.* |
+| [`onpremMfaInput`](#cdktfprovideroktamfapolicypropertyonpremmfainput) | {[ key: string ]: `string`} | *No description.* |
+| [`phoneNumberInput`](#cdktfprovideroktamfapolicypropertyphonenumberinput) | {[ key: string ]: `string`} | *No description.* |
 | [`priorityInput`](#cdktfprovideroktamfapolicypropertypriorityinput) | `number` | *No description.* |
 | [`rsaTokenInput`](#cdktfprovideroktamfapolicypropertyrsatokeninput) | {[ key: string ]: `string`} | *No description.* |
+| [`securityQuestionInput`](#cdktfprovideroktamfapolicypropertysecurityquestioninput) | {[ key: string ]: `string`} | *No description.* |
 | [`statusInput`](#cdktfprovideroktamfapolicypropertystatusinput) | `string` | *No description.* |
 | [`symantecVipInput`](#cdktfprovideroktamfapolicypropertysymantecvipinput) | {[ key: string ]: `string`} | *No description.* |
+| [`webauthnInput`](#cdktfprovideroktamfapolicypropertywebauthninput) | {[ key: string ]: `string`} | *No description.* |
 | [`yubikeyTokenInput`](#cdktfprovideroktamfapolicypropertyyubikeytokeninput) | {[ key: string ]: `string`} | *No description.* |
 | [`description`](#cdktfprovideroktamfapolicypropertydescription)<span title="Required">*</span> | `string` | *No description.* |
 | [`duo`](#cdktfprovideroktamfapolicypropertyduo)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
+| [`externalIdp`](#cdktfprovideroktamfapolicypropertyexternalidp)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
 | [`fidoU2F`](#cdktfprovideroktamfapolicypropertyfidou2f)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
 | [`fidoWebauthn`](#cdktfprovideroktamfapolicypropertyfidowebauthn)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
 | [`googleOtp`](#cdktfprovideroktamfapolicypropertygoogleotp)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
 | [`groupsIncluded`](#cdktfprovideroktamfapolicypropertygroupsincluded)<span title="Required">*</span> | `string`[] | *No description.* |
 | [`hotp`](#cdktfprovideroktamfapolicypropertyhotp)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
+| [`isOie`](#cdktfprovideroktamfapolicypropertyisoie)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`name`](#cdktfprovideroktamfapolicypropertyname)<span title="Required">*</span> | `string` | *No description.* |
 | [`oktaCall`](#cdktfprovideroktamfapolicypropertyoktacall)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
 | [`oktaEmail`](#cdktfprovideroktamfapolicypropertyoktaemail)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
@@ -33026,10 +33084,15 @@ public resetYubikeyToken()
 | [`oktaPush`](#cdktfprovideroktamfapolicypropertyoktapush)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
 | [`oktaQuestion`](#cdktfprovideroktamfapolicypropertyoktaquestion)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
 | [`oktaSms`](#cdktfprovideroktamfapolicypropertyoktasms)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
+| [`oktaVerify`](#cdktfprovideroktamfapolicypropertyoktaverify)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
+| [`onpremMfa`](#cdktfprovideroktamfapolicypropertyonpremmfa)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
+| [`phoneNumber`](#cdktfprovideroktamfapolicypropertyphonenumber)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
 | [`priority`](#cdktfprovideroktamfapolicypropertypriority)<span title="Required">*</span> | `number` | *No description.* |
 | [`rsaToken`](#cdktfprovideroktamfapolicypropertyrsatoken)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
+| [`securityQuestion`](#cdktfprovideroktamfapolicypropertysecurityquestion)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
 | [`status`](#cdktfprovideroktamfapolicypropertystatus)<span title="Required">*</span> | `string` | *No description.* |
 | [`symantecVip`](#cdktfprovideroktamfapolicypropertysymantecvip)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
+| [`webauthn`](#cdktfprovideroktamfapolicypropertywebauthn)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
 | [`yubikeyToken`](#cdktfprovideroktamfapolicypropertyyubikeytoken)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
 
 ---
@@ -33058,6 +33121,16 @@ public readonly descriptionInput: string;
 
 ```typescript
 public readonly duoInput: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: `string`}
+
+---
+
+##### `externalIdpInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.MfaPolicy.property.externalIdpInput" id="cdktfprovideroktamfapolicypropertyexternalidpinput"></a>
+
+```typescript
+public readonly externalIdpInput: {[ key: string ]: string};
 ```
 
 - *Type:* {[ key: string ]: `string`}
@@ -33111,6 +33184,16 @@ public readonly hotpInput: {[ key: string ]: string};
 ```
 
 - *Type:* {[ key: string ]: `string`}
+
+---
+
+##### `isOieInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.MfaPolicy.property.isOieInput" id="cdktfprovideroktamfapolicypropertyisoieinput"></a>
+
+```typescript
+public readonly isOieInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -33194,6 +33277,36 @@ public readonly oktaSmsInput: {[ key: string ]: string};
 
 ---
 
+##### `oktaVerifyInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.MfaPolicy.property.oktaVerifyInput" id="cdktfprovideroktamfapolicypropertyoktaverifyinput"></a>
+
+```typescript
+public readonly oktaVerifyInput: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: `string`}
+
+---
+
+##### `onpremMfaInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.MfaPolicy.property.onpremMfaInput" id="cdktfprovideroktamfapolicypropertyonpremmfainput"></a>
+
+```typescript
+public readonly onpremMfaInput: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: `string`}
+
+---
+
+##### `phoneNumberInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.MfaPolicy.property.phoneNumberInput" id="cdktfprovideroktamfapolicypropertyphonenumberinput"></a>
+
+```typescript
+public readonly phoneNumberInput: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: `string`}
+
+---
+
 ##### `priorityInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.MfaPolicy.property.priorityInput" id="cdktfprovideroktamfapolicypropertypriorityinput"></a>
 
 ```typescript
@@ -33214,6 +33327,16 @@ public readonly rsaTokenInput: {[ key: string ]: string};
 
 ---
 
+##### `securityQuestionInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.MfaPolicy.property.securityQuestionInput" id="cdktfprovideroktamfapolicypropertysecurityquestioninput"></a>
+
+```typescript
+public readonly securityQuestionInput: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: `string`}
+
+---
+
 ##### `statusInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.MfaPolicy.property.statusInput" id="cdktfprovideroktamfapolicypropertystatusinput"></a>
 
 ```typescript
@@ -33228,6 +33351,16 @@ public readonly statusInput: string;
 
 ```typescript
 public readonly symantecVipInput: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: `string`}
+
+---
+
+##### `webauthnInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.MfaPolicy.property.webauthnInput" id="cdktfprovideroktamfapolicypropertywebauthninput"></a>
+
+```typescript
+public readonly webauthnInput: {[ key: string ]: string};
 ```
 
 - *Type:* {[ key: string ]: `string`}
@@ -33258,6 +33391,16 @@ public readonly description: string;
 
 ```typescript
 public readonly duo: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: `string`}
+
+---
+
+##### `externalIdp`<sup>Required</sup> <a name="@cdktf/provider-okta.MfaPolicy.property.externalIdp" id="cdktfprovideroktamfapolicypropertyexternalidp"></a>
+
+```typescript
+public readonly externalIdp: {[ key: string ]: string};
 ```
 
 - *Type:* {[ key: string ]: `string`}
@@ -33311,6 +33454,16 @@ public readonly hotp: {[ key: string ]: string};
 ```
 
 - *Type:* {[ key: string ]: `string`}
+
+---
+
+##### `isOie`<sup>Required</sup> <a name="@cdktf/provider-okta.MfaPolicy.property.isOie" id="cdktfprovideroktamfapolicypropertyisoie"></a>
+
+```typescript
+public readonly isOie: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -33394,6 +33547,36 @@ public readonly oktaSms: {[ key: string ]: string};
 
 ---
 
+##### `oktaVerify`<sup>Required</sup> <a name="@cdktf/provider-okta.MfaPolicy.property.oktaVerify" id="cdktfprovideroktamfapolicypropertyoktaverify"></a>
+
+```typescript
+public readonly oktaVerify: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: `string`}
+
+---
+
+##### `onpremMfa`<sup>Required</sup> <a name="@cdktf/provider-okta.MfaPolicy.property.onpremMfa" id="cdktfprovideroktamfapolicypropertyonpremmfa"></a>
+
+```typescript
+public readonly onpremMfa: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: `string`}
+
+---
+
+##### `phoneNumber`<sup>Required</sup> <a name="@cdktf/provider-okta.MfaPolicy.property.phoneNumber" id="cdktfprovideroktamfapolicypropertyphonenumber"></a>
+
+```typescript
+public readonly phoneNumber: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: `string`}
+
+---
+
 ##### `priority`<sup>Required</sup> <a name="@cdktf/provider-okta.MfaPolicy.property.priority" id="cdktfprovideroktamfapolicypropertypriority"></a>
 
 ```typescript
@@ -33414,6 +33597,16 @@ public readonly rsaToken: {[ key: string ]: string};
 
 ---
 
+##### `securityQuestion`<sup>Required</sup> <a name="@cdktf/provider-okta.MfaPolicy.property.securityQuestion" id="cdktfprovideroktamfapolicypropertysecurityquestion"></a>
+
+```typescript
+public readonly securityQuestion: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: `string`}
+
+---
+
 ##### `status`<sup>Required</sup> <a name="@cdktf/provider-okta.MfaPolicy.property.status" id="cdktfprovideroktamfapolicypropertystatus"></a>
 
 ```typescript
@@ -33428,6 +33621,16 @@ public readonly status: string;
 
 ```typescript
 public readonly symantecVip: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: `string`}
+
+---
+
+##### `webauthn`<sup>Required</sup> <a name="@cdktf/provider-okta.MfaPolicy.property.webauthn" id="cdktfprovideroktamfapolicypropertywebauthn"></a>
+
+```typescript
+public readonly webauthn: {[ key: string ]: string};
 ```
 
 - *Type:* {[ key: string ]: `string`}
@@ -38425,11 +38628,13 @@ Must be unique amongst siblings in the same scope
 | --- | --- |
 | [`resetDescription`](#cdktfprovideroktapolicymfaresetdescription) | *No description.* |
 | [`resetDuo`](#cdktfprovideroktapolicymfaresetduo) | *No description.* |
+| [`resetExternalIdp`](#cdktfprovideroktapolicymfaresetexternalidp) | *No description.* |
 | [`resetFidoU2F`](#cdktfprovideroktapolicymfaresetfidou2f) | *No description.* |
 | [`resetFidoWebauthn`](#cdktfprovideroktapolicymfaresetfidowebauthn) | *No description.* |
 | [`resetGoogleOtp`](#cdktfprovideroktapolicymfaresetgoogleotp) | *No description.* |
 | [`resetGroupsIncluded`](#cdktfprovideroktapolicymfaresetgroupsincluded) | *No description.* |
 | [`resetHotp`](#cdktfprovideroktapolicymfaresethotp) | *No description.* |
+| [`resetIsOie`](#cdktfprovideroktapolicymfaresetisoie) | *No description.* |
 | [`resetOktaCall`](#cdktfprovideroktapolicymfaresetoktacall) | *No description.* |
 | [`resetOktaEmail`](#cdktfprovideroktapolicymfaresetoktaemail) | *No description.* |
 | [`resetOktaOtp`](#cdktfprovideroktapolicymfaresetoktaotp) | *No description.* |
@@ -38437,10 +38642,15 @@ Must be unique amongst siblings in the same scope
 | [`resetOktaPush`](#cdktfprovideroktapolicymfaresetoktapush) | *No description.* |
 | [`resetOktaQuestion`](#cdktfprovideroktapolicymfaresetoktaquestion) | *No description.* |
 | [`resetOktaSms`](#cdktfprovideroktapolicymfaresetoktasms) | *No description.* |
+| [`resetOktaVerify`](#cdktfprovideroktapolicymfaresetoktaverify) | *No description.* |
+| [`resetOnpremMfa`](#cdktfprovideroktapolicymfaresetonpremmfa) | *No description.* |
+| [`resetPhoneNumber`](#cdktfprovideroktapolicymfaresetphonenumber) | *No description.* |
 | [`resetPriority`](#cdktfprovideroktapolicymfaresetpriority) | *No description.* |
 | [`resetRsaToken`](#cdktfprovideroktapolicymfaresetrsatoken) | *No description.* |
+| [`resetSecurityQuestion`](#cdktfprovideroktapolicymfaresetsecurityquestion) | *No description.* |
 | [`resetStatus`](#cdktfprovideroktapolicymfaresetstatus) | *No description.* |
 | [`resetSymantecVip`](#cdktfprovideroktapolicymfaresetsymantecvip) | *No description.* |
+| [`resetWebauthn`](#cdktfprovideroktapolicymfaresetwebauthn) | *No description.* |
 | [`resetYubikeyToken`](#cdktfprovideroktapolicymfaresetyubikeytoken) | *No description.* |
 
 ---
@@ -38455,6 +38665,12 @@ public resetDescription()
 
 ```typescript
 public resetDuo()
+```
+
+##### `resetExternalIdp` <a name="@cdktf/provider-okta.PolicyMfa.resetExternalIdp" id="cdktfprovideroktapolicymfaresetexternalidp"></a>
+
+```typescript
+public resetExternalIdp()
 ```
 
 ##### `resetFidoU2F` <a name="@cdktf/provider-okta.PolicyMfa.resetFidoU2F" id="cdktfprovideroktapolicymfaresetfidou2f"></a>
@@ -38485,6 +38701,12 @@ public resetGroupsIncluded()
 
 ```typescript
 public resetHotp()
+```
+
+##### `resetIsOie` <a name="@cdktf/provider-okta.PolicyMfa.resetIsOie" id="cdktfprovideroktapolicymfaresetisoie"></a>
+
+```typescript
+public resetIsOie()
 ```
 
 ##### `resetOktaCall` <a name="@cdktf/provider-okta.PolicyMfa.resetOktaCall" id="cdktfprovideroktapolicymfaresetoktacall"></a>
@@ -38529,6 +38751,24 @@ public resetOktaQuestion()
 public resetOktaSms()
 ```
 
+##### `resetOktaVerify` <a name="@cdktf/provider-okta.PolicyMfa.resetOktaVerify" id="cdktfprovideroktapolicymfaresetoktaverify"></a>
+
+```typescript
+public resetOktaVerify()
+```
+
+##### `resetOnpremMfa` <a name="@cdktf/provider-okta.PolicyMfa.resetOnpremMfa" id="cdktfprovideroktapolicymfaresetonpremmfa"></a>
+
+```typescript
+public resetOnpremMfa()
+```
+
+##### `resetPhoneNumber` <a name="@cdktf/provider-okta.PolicyMfa.resetPhoneNumber" id="cdktfprovideroktapolicymfaresetphonenumber"></a>
+
+```typescript
+public resetPhoneNumber()
+```
+
 ##### `resetPriority` <a name="@cdktf/provider-okta.PolicyMfa.resetPriority" id="cdktfprovideroktapolicymfaresetpriority"></a>
 
 ```typescript
@@ -38541,6 +38781,12 @@ public resetPriority()
 public resetRsaToken()
 ```
 
+##### `resetSecurityQuestion` <a name="@cdktf/provider-okta.PolicyMfa.resetSecurityQuestion" id="cdktfprovideroktapolicymfaresetsecurityquestion"></a>
+
+```typescript
+public resetSecurityQuestion()
+```
+
 ##### `resetStatus` <a name="@cdktf/provider-okta.PolicyMfa.resetStatus" id="cdktfprovideroktapolicymfaresetstatus"></a>
 
 ```typescript
@@ -38551,6 +38797,12 @@ public resetStatus()
 
 ```typescript
 public resetSymantecVip()
+```
+
+##### `resetWebauthn` <a name="@cdktf/provider-okta.PolicyMfa.resetWebauthn" id="cdktfprovideroktapolicymfaresetwebauthn"></a>
+
+```typescript
+public resetWebauthn()
 ```
 
 ##### `resetYubikeyToken` <a name="@cdktf/provider-okta.PolicyMfa.resetYubikeyToken" id="cdktfprovideroktapolicymfaresetyubikeytoken"></a>
@@ -38567,11 +38819,13 @@ public resetYubikeyToken()
 | [`id`](#cdktfprovideroktapolicymfapropertyid)<span title="Required">*</span> | `string` | *No description.* |
 | [`descriptionInput`](#cdktfprovideroktapolicymfapropertydescriptioninput) | `string` | *No description.* |
 | [`duoInput`](#cdktfprovideroktapolicymfapropertyduoinput) | {[ key: string ]: `string`} | *No description.* |
+| [`externalIdpInput`](#cdktfprovideroktapolicymfapropertyexternalidpinput) | {[ key: string ]: `string`} | *No description.* |
 | [`fidoU2FInput`](#cdktfprovideroktapolicymfapropertyfidou2finput) | {[ key: string ]: `string`} | *No description.* |
 | [`fidoWebauthnInput`](#cdktfprovideroktapolicymfapropertyfidowebauthninput) | {[ key: string ]: `string`} | *No description.* |
 | [`googleOtpInput`](#cdktfprovideroktapolicymfapropertygoogleotpinput) | {[ key: string ]: `string`} | *No description.* |
 | [`groupsIncludedInput`](#cdktfprovideroktapolicymfapropertygroupsincludedinput) | `string`[] | *No description.* |
 | [`hotpInput`](#cdktfprovideroktapolicymfapropertyhotpinput) | {[ key: string ]: `string`} | *No description.* |
+| [`isOieInput`](#cdktfprovideroktapolicymfapropertyisoieinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`nameInput`](#cdktfprovideroktapolicymfapropertynameinput) | `string` | *No description.* |
 | [`oktaCallInput`](#cdktfprovideroktapolicymfapropertyoktacallinput) | {[ key: string ]: `string`} | *No description.* |
 | [`oktaEmailInput`](#cdktfprovideroktapolicymfapropertyoktaemailinput) | {[ key: string ]: `string`} | *No description.* |
@@ -38580,18 +38834,25 @@ public resetYubikeyToken()
 | [`oktaPushInput`](#cdktfprovideroktapolicymfapropertyoktapushinput) | {[ key: string ]: `string`} | *No description.* |
 | [`oktaQuestionInput`](#cdktfprovideroktapolicymfapropertyoktaquestioninput) | {[ key: string ]: `string`} | *No description.* |
 | [`oktaSmsInput`](#cdktfprovideroktapolicymfapropertyoktasmsinput) | {[ key: string ]: `string`} | *No description.* |
+| [`oktaVerifyInput`](#cdktfprovideroktapolicymfapropertyoktaverifyinput) | {[ key: string ]: `string`} | *No description.* |
+| [`onpremMfaInput`](#cdktfprovideroktapolicymfapropertyonpremmfainput) | {[ key: string ]: `string`} | *No description.* |
+| [`phoneNumberInput`](#cdktfprovideroktapolicymfapropertyphonenumberinput) | {[ key: string ]: `string`} | *No description.* |
 | [`priorityInput`](#cdktfprovideroktapolicymfapropertypriorityinput) | `number` | *No description.* |
 | [`rsaTokenInput`](#cdktfprovideroktapolicymfapropertyrsatokeninput) | {[ key: string ]: `string`} | *No description.* |
+| [`securityQuestionInput`](#cdktfprovideroktapolicymfapropertysecurityquestioninput) | {[ key: string ]: `string`} | *No description.* |
 | [`statusInput`](#cdktfprovideroktapolicymfapropertystatusinput) | `string` | *No description.* |
 | [`symantecVipInput`](#cdktfprovideroktapolicymfapropertysymantecvipinput) | {[ key: string ]: `string`} | *No description.* |
+| [`webauthnInput`](#cdktfprovideroktapolicymfapropertywebauthninput) | {[ key: string ]: `string`} | *No description.* |
 | [`yubikeyTokenInput`](#cdktfprovideroktapolicymfapropertyyubikeytokeninput) | {[ key: string ]: `string`} | *No description.* |
 | [`description`](#cdktfprovideroktapolicymfapropertydescription)<span title="Required">*</span> | `string` | *No description.* |
 | [`duo`](#cdktfprovideroktapolicymfapropertyduo)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
+| [`externalIdp`](#cdktfprovideroktapolicymfapropertyexternalidp)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
 | [`fidoU2F`](#cdktfprovideroktapolicymfapropertyfidou2f)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
 | [`fidoWebauthn`](#cdktfprovideroktapolicymfapropertyfidowebauthn)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
 | [`googleOtp`](#cdktfprovideroktapolicymfapropertygoogleotp)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
 | [`groupsIncluded`](#cdktfprovideroktapolicymfapropertygroupsincluded)<span title="Required">*</span> | `string`[] | *No description.* |
 | [`hotp`](#cdktfprovideroktapolicymfapropertyhotp)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
+| [`isOie`](#cdktfprovideroktapolicymfapropertyisoie)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`name`](#cdktfprovideroktapolicymfapropertyname)<span title="Required">*</span> | `string` | *No description.* |
 | [`oktaCall`](#cdktfprovideroktapolicymfapropertyoktacall)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
 | [`oktaEmail`](#cdktfprovideroktapolicymfapropertyoktaemail)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
@@ -38600,10 +38861,15 @@ public resetYubikeyToken()
 | [`oktaPush`](#cdktfprovideroktapolicymfapropertyoktapush)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
 | [`oktaQuestion`](#cdktfprovideroktapolicymfapropertyoktaquestion)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
 | [`oktaSms`](#cdktfprovideroktapolicymfapropertyoktasms)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
+| [`oktaVerify`](#cdktfprovideroktapolicymfapropertyoktaverify)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
+| [`onpremMfa`](#cdktfprovideroktapolicymfapropertyonpremmfa)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
+| [`phoneNumber`](#cdktfprovideroktapolicymfapropertyphonenumber)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
 | [`priority`](#cdktfprovideroktapolicymfapropertypriority)<span title="Required">*</span> | `number` | *No description.* |
 | [`rsaToken`](#cdktfprovideroktapolicymfapropertyrsatoken)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
+| [`securityQuestion`](#cdktfprovideroktapolicymfapropertysecurityquestion)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
 | [`status`](#cdktfprovideroktapolicymfapropertystatus)<span title="Required">*</span> | `string` | *No description.* |
 | [`symantecVip`](#cdktfprovideroktapolicymfapropertysymantecvip)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
+| [`webauthn`](#cdktfprovideroktapolicymfapropertywebauthn)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
 | [`yubikeyToken`](#cdktfprovideroktapolicymfapropertyyubikeytoken)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
 
 ---
@@ -38632,6 +38898,16 @@ public readonly descriptionInput: string;
 
 ```typescript
 public readonly duoInput: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: `string`}
+
+---
+
+##### `externalIdpInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfa.property.externalIdpInput" id="cdktfprovideroktapolicymfapropertyexternalidpinput"></a>
+
+```typescript
+public readonly externalIdpInput: {[ key: string ]: string};
 ```
 
 - *Type:* {[ key: string ]: `string`}
@@ -38685,6 +38961,16 @@ public readonly hotpInput: {[ key: string ]: string};
 ```
 
 - *Type:* {[ key: string ]: `string`}
+
+---
+
+##### `isOieInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfa.property.isOieInput" id="cdktfprovideroktapolicymfapropertyisoieinput"></a>
+
+```typescript
+public readonly isOieInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -38768,6 +39054,36 @@ public readonly oktaSmsInput: {[ key: string ]: string};
 
 ---
 
+##### `oktaVerifyInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfa.property.oktaVerifyInput" id="cdktfprovideroktapolicymfapropertyoktaverifyinput"></a>
+
+```typescript
+public readonly oktaVerifyInput: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: `string`}
+
+---
+
+##### `onpremMfaInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfa.property.onpremMfaInput" id="cdktfprovideroktapolicymfapropertyonpremmfainput"></a>
+
+```typescript
+public readonly onpremMfaInput: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: `string`}
+
+---
+
+##### `phoneNumberInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfa.property.phoneNumberInput" id="cdktfprovideroktapolicymfapropertyphonenumberinput"></a>
+
+```typescript
+public readonly phoneNumberInput: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: `string`}
+
+---
+
 ##### `priorityInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfa.property.priorityInput" id="cdktfprovideroktapolicymfapropertypriorityinput"></a>
 
 ```typescript
@@ -38788,6 +39104,16 @@ public readonly rsaTokenInput: {[ key: string ]: string};
 
 ---
 
+##### `securityQuestionInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfa.property.securityQuestionInput" id="cdktfprovideroktapolicymfapropertysecurityquestioninput"></a>
+
+```typescript
+public readonly securityQuestionInput: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: `string`}
+
+---
+
 ##### `statusInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfa.property.statusInput" id="cdktfprovideroktapolicymfapropertystatusinput"></a>
 
 ```typescript
@@ -38802,6 +39128,16 @@ public readonly statusInput: string;
 
 ```typescript
 public readonly symantecVipInput: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: `string`}
+
+---
+
+##### `webauthnInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfa.property.webauthnInput" id="cdktfprovideroktapolicymfapropertywebauthninput"></a>
+
+```typescript
+public readonly webauthnInput: {[ key: string ]: string};
 ```
 
 - *Type:* {[ key: string ]: `string`}
@@ -38832,6 +39168,16 @@ public readonly description: string;
 
 ```typescript
 public readonly duo: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: `string`}
+
+---
+
+##### `externalIdp`<sup>Required</sup> <a name="@cdktf/provider-okta.PolicyMfa.property.externalIdp" id="cdktfprovideroktapolicymfapropertyexternalidp"></a>
+
+```typescript
+public readonly externalIdp: {[ key: string ]: string};
 ```
 
 - *Type:* {[ key: string ]: `string`}
@@ -38885,6 +39231,16 @@ public readonly hotp: {[ key: string ]: string};
 ```
 
 - *Type:* {[ key: string ]: `string`}
+
+---
+
+##### `isOie`<sup>Required</sup> <a name="@cdktf/provider-okta.PolicyMfa.property.isOie" id="cdktfprovideroktapolicymfapropertyisoie"></a>
+
+```typescript
+public readonly isOie: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -38968,6 +39324,36 @@ public readonly oktaSms: {[ key: string ]: string};
 
 ---
 
+##### `oktaVerify`<sup>Required</sup> <a name="@cdktf/provider-okta.PolicyMfa.property.oktaVerify" id="cdktfprovideroktapolicymfapropertyoktaverify"></a>
+
+```typescript
+public readonly oktaVerify: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: `string`}
+
+---
+
+##### `onpremMfa`<sup>Required</sup> <a name="@cdktf/provider-okta.PolicyMfa.property.onpremMfa" id="cdktfprovideroktapolicymfapropertyonpremmfa"></a>
+
+```typescript
+public readonly onpremMfa: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: `string`}
+
+---
+
+##### `phoneNumber`<sup>Required</sup> <a name="@cdktf/provider-okta.PolicyMfa.property.phoneNumber" id="cdktfprovideroktapolicymfapropertyphonenumber"></a>
+
+```typescript
+public readonly phoneNumber: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: `string`}
+
+---
+
 ##### `priority`<sup>Required</sup> <a name="@cdktf/provider-okta.PolicyMfa.property.priority" id="cdktfprovideroktapolicymfapropertypriority"></a>
 
 ```typescript
@@ -38988,6 +39374,16 @@ public readonly rsaToken: {[ key: string ]: string};
 
 ---
 
+##### `securityQuestion`<sup>Required</sup> <a name="@cdktf/provider-okta.PolicyMfa.property.securityQuestion" id="cdktfprovideroktapolicymfapropertysecurityquestion"></a>
+
+```typescript
+public readonly securityQuestion: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: `string`}
+
+---
+
 ##### `status`<sup>Required</sup> <a name="@cdktf/provider-okta.PolicyMfa.property.status" id="cdktfprovideroktapolicymfapropertystatus"></a>
 
 ```typescript
@@ -39002,6 +39398,16 @@ public readonly status: string;
 
 ```typescript
 public readonly symantecVip: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: `string`}
+
+---
+
+##### `webauthn`<sup>Required</sup> <a name="@cdktf/provider-okta.PolicyMfa.property.webauthn" id="cdktfprovideroktapolicymfapropertywebauthn"></a>
+
+```typescript
+public readonly webauthn: {[ key: string ]: string};
 ```
 
 - *Type:* {[ key: string ]: `string`}
@@ -39081,10 +39487,12 @@ Must be unique amongst siblings in the same scope
 | **Name** | **Description** |
 | --- | --- |
 | [`resetDuo`](#cdktfprovideroktapolicymfadefaultresetduo) | *No description.* |
+| [`resetExternalIdp`](#cdktfprovideroktapolicymfadefaultresetexternalidp) | *No description.* |
 | [`resetFidoU2F`](#cdktfprovideroktapolicymfadefaultresetfidou2f) | *No description.* |
 | [`resetFidoWebauthn`](#cdktfprovideroktapolicymfadefaultresetfidowebauthn) | *No description.* |
 | [`resetGoogleOtp`](#cdktfprovideroktapolicymfadefaultresetgoogleotp) | *No description.* |
 | [`resetHotp`](#cdktfprovideroktapolicymfadefaultresethotp) | *No description.* |
+| [`resetIsOie`](#cdktfprovideroktapolicymfadefaultresetisoie) | *No description.* |
 | [`resetOktaCall`](#cdktfprovideroktapolicymfadefaultresetoktacall) | *No description.* |
 | [`resetOktaEmail`](#cdktfprovideroktapolicymfadefaultresetoktaemail) | *No description.* |
 | [`resetOktaOtp`](#cdktfprovideroktapolicymfadefaultresetoktaotp) | *No description.* |
@@ -39092,8 +39500,13 @@ Must be unique amongst siblings in the same scope
 | [`resetOktaPush`](#cdktfprovideroktapolicymfadefaultresetoktapush) | *No description.* |
 | [`resetOktaQuestion`](#cdktfprovideroktapolicymfadefaultresetoktaquestion) | *No description.* |
 | [`resetOktaSms`](#cdktfprovideroktapolicymfadefaultresetoktasms) | *No description.* |
+| [`resetOktaVerify`](#cdktfprovideroktapolicymfadefaultresetoktaverify) | *No description.* |
+| [`resetOnpremMfa`](#cdktfprovideroktapolicymfadefaultresetonpremmfa) | *No description.* |
+| [`resetPhoneNumber`](#cdktfprovideroktapolicymfadefaultresetphonenumber) | *No description.* |
 | [`resetRsaToken`](#cdktfprovideroktapolicymfadefaultresetrsatoken) | *No description.* |
+| [`resetSecurityQuestion`](#cdktfprovideroktapolicymfadefaultresetsecurityquestion) | *No description.* |
 | [`resetSymantecVip`](#cdktfprovideroktapolicymfadefaultresetsymantecvip) | *No description.* |
+| [`resetWebauthn`](#cdktfprovideroktapolicymfadefaultresetwebauthn) | *No description.* |
 | [`resetYubikeyToken`](#cdktfprovideroktapolicymfadefaultresetyubikeytoken) | *No description.* |
 
 ---
@@ -39102,6 +39515,12 @@ Must be unique amongst siblings in the same scope
 
 ```typescript
 public resetDuo()
+```
+
+##### `resetExternalIdp` <a name="@cdktf/provider-okta.PolicyMfaDefault.resetExternalIdp" id="cdktfprovideroktapolicymfadefaultresetexternalidp"></a>
+
+```typescript
+public resetExternalIdp()
 ```
 
 ##### `resetFidoU2F` <a name="@cdktf/provider-okta.PolicyMfaDefault.resetFidoU2F" id="cdktfprovideroktapolicymfadefaultresetfidou2f"></a>
@@ -39126,6 +39545,12 @@ public resetGoogleOtp()
 
 ```typescript
 public resetHotp()
+```
+
+##### `resetIsOie` <a name="@cdktf/provider-okta.PolicyMfaDefault.resetIsOie" id="cdktfprovideroktapolicymfadefaultresetisoie"></a>
+
+```typescript
+public resetIsOie()
 ```
 
 ##### `resetOktaCall` <a name="@cdktf/provider-okta.PolicyMfaDefault.resetOktaCall" id="cdktfprovideroktapolicymfadefaultresetoktacall"></a>
@@ -39170,16 +39595,46 @@ public resetOktaQuestion()
 public resetOktaSms()
 ```
 
+##### `resetOktaVerify` <a name="@cdktf/provider-okta.PolicyMfaDefault.resetOktaVerify" id="cdktfprovideroktapolicymfadefaultresetoktaverify"></a>
+
+```typescript
+public resetOktaVerify()
+```
+
+##### `resetOnpremMfa` <a name="@cdktf/provider-okta.PolicyMfaDefault.resetOnpremMfa" id="cdktfprovideroktapolicymfadefaultresetonpremmfa"></a>
+
+```typescript
+public resetOnpremMfa()
+```
+
+##### `resetPhoneNumber` <a name="@cdktf/provider-okta.PolicyMfaDefault.resetPhoneNumber" id="cdktfprovideroktapolicymfadefaultresetphonenumber"></a>
+
+```typescript
+public resetPhoneNumber()
+```
+
 ##### `resetRsaToken` <a name="@cdktf/provider-okta.PolicyMfaDefault.resetRsaToken" id="cdktfprovideroktapolicymfadefaultresetrsatoken"></a>
 
 ```typescript
 public resetRsaToken()
 ```
 
+##### `resetSecurityQuestion` <a name="@cdktf/provider-okta.PolicyMfaDefault.resetSecurityQuestion" id="cdktfprovideroktapolicymfadefaultresetsecurityquestion"></a>
+
+```typescript
+public resetSecurityQuestion()
+```
+
 ##### `resetSymantecVip` <a name="@cdktf/provider-okta.PolicyMfaDefault.resetSymantecVip" id="cdktfprovideroktapolicymfadefaultresetsymantecvip"></a>
 
 ```typescript
 public resetSymantecVip()
+```
+
+##### `resetWebauthn` <a name="@cdktf/provider-okta.PolicyMfaDefault.resetWebauthn" id="cdktfprovideroktapolicymfadefaultresetwebauthn"></a>
+
+```typescript
+public resetWebauthn()
 ```
 
 ##### `resetYubikeyToken` <a name="@cdktf/provider-okta.PolicyMfaDefault.resetYubikeyToken" id="cdktfprovideroktapolicymfadefaultresetyubikeytoken"></a>
@@ -39200,10 +39655,12 @@ public resetYubikeyToken()
 | [`priority`](#cdktfprovideroktapolicymfadefaultpropertypriority)<span title="Required">*</span> | `number` | *No description.* |
 | [`status`](#cdktfprovideroktapolicymfadefaultpropertystatus)<span title="Required">*</span> | `string` | *No description.* |
 | [`duoInput`](#cdktfprovideroktapolicymfadefaultpropertyduoinput) | {[ key: string ]: `string`} | *No description.* |
+| [`externalIdpInput`](#cdktfprovideroktapolicymfadefaultpropertyexternalidpinput) | {[ key: string ]: `string`} | *No description.* |
 | [`fidoU2FInput`](#cdktfprovideroktapolicymfadefaultpropertyfidou2finput) | {[ key: string ]: `string`} | *No description.* |
 | [`fidoWebauthnInput`](#cdktfprovideroktapolicymfadefaultpropertyfidowebauthninput) | {[ key: string ]: `string`} | *No description.* |
 | [`googleOtpInput`](#cdktfprovideroktapolicymfadefaultpropertygoogleotpinput) | {[ key: string ]: `string`} | *No description.* |
 | [`hotpInput`](#cdktfprovideroktapolicymfadefaultpropertyhotpinput) | {[ key: string ]: `string`} | *No description.* |
+| [`isOieInput`](#cdktfprovideroktapolicymfadefaultpropertyisoieinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`oktaCallInput`](#cdktfprovideroktapolicymfadefaultpropertyoktacallinput) | {[ key: string ]: `string`} | *No description.* |
 | [`oktaEmailInput`](#cdktfprovideroktapolicymfadefaultpropertyoktaemailinput) | {[ key: string ]: `string`} | *No description.* |
 | [`oktaOtpInput`](#cdktfprovideroktapolicymfadefaultpropertyoktaotpinput) | {[ key: string ]: `string`} | *No description.* |
@@ -39211,14 +39668,21 @@ public resetYubikeyToken()
 | [`oktaPushInput`](#cdktfprovideroktapolicymfadefaultpropertyoktapushinput) | {[ key: string ]: `string`} | *No description.* |
 | [`oktaQuestionInput`](#cdktfprovideroktapolicymfadefaultpropertyoktaquestioninput) | {[ key: string ]: `string`} | *No description.* |
 | [`oktaSmsInput`](#cdktfprovideroktapolicymfadefaultpropertyoktasmsinput) | {[ key: string ]: `string`} | *No description.* |
+| [`oktaVerifyInput`](#cdktfprovideroktapolicymfadefaultpropertyoktaverifyinput) | {[ key: string ]: `string`} | *No description.* |
+| [`onpremMfaInput`](#cdktfprovideroktapolicymfadefaultpropertyonpremmfainput) | {[ key: string ]: `string`} | *No description.* |
+| [`phoneNumberInput`](#cdktfprovideroktapolicymfadefaultpropertyphonenumberinput) | {[ key: string ]: `string`} | *No description.* |
 | [`rsaTokenInput`](#cdktfprovideroktapolicymfadefaultpropertyrsatokeninput) | {[ key: string ]: `string`} | *No description.* |
+| [`securityQuestionInput`](#cdktfprovideroktapolicymfadefaultpropertysecurityquestioninput) | {[ key: string ]: `string`} | *No description.* |
 | [`symantecVipInput`](#cdktfprovideroktapolicymfadefaultpropertysymantecvipinput) | {[ key: string ]: `string`} | *No description.* |
+| [`webauthnInput`](#cdktfprovideroktapolicymfadefaultpropertywebauthninput) | {[ key: string ]: `string`} | *No description.* |
 | [`yubikeyTokenInput`](#cdktfprovideroktapolicymfadefaultpropertyyubikeytokeninput) | {[ key: string ]: `string`} | *No description.* |
 | [`duo`](#cdktfprovideroktapolicymfadefaultpropertyduo)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
+| [`externalIdp`](#cdktfprovideroktapolicymfadefaultpropertyexternalidp)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
 | [`fidoU2F`](#cdktfprovideroktapolicymfadefaultpropertyfidou2f)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
 | [`fidoWebauthn`](#cdktfprovideroktapolicymfadefaultpropertyfidowebauthn)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
 | [`googleOtp`](#cdktfprovideroktapolicymfadefaultpropertygoogleotp)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
 | [`hotp`](#cdktfprovideroktapolicymfadefaultpropertyhotp)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
+| [`isOie`](#cdktfprovideroktapolicymfadefaultpropertyisoie)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`oktaCall`](#cdktfprovideroktapolicymfadefaultpropertyoktacall)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
 | [`oktaEmail`](#cdktfprovideroktapolicymfadefaultpropertyoktaemail)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
 | [`oktaOtp`](#cdktfprovideroktapolicymfadefaultpropertyoktaotp)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
@@ -39226,8 +39690,13 @@ public resetYubikeyToken()
 | [`oktaPush`](#cdktfprovideroktapolicymfadefaultpropertyoktapush)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
 | [`oktaQuestion`](#cdktfprovideroktapolicymfadefaultpropertyoktaquestion)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
 | [`oktaSms`](#cdktfprovideroktapolicymfadefaultpropertyoktasms)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
+| [`oktaVerify`](#cdktfprovideroktapolicymfadefaultpropertyoktaverify)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
+| [`onpremMfa`](#cdktfprovideroktapolicymfadefaultpropertyonpremmfa)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
+| [`phoneNumber`](#cdktfprovideroktapolicymfadefaultpropertyphonenumber)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
 | [`rsaToken`](#cdktfprovideroktapolicymfadefaultpropertyrsatoken)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
+| [`securityQuestion`](#cdktfprovideroktapolicymfadefaultpropertysecurityquestion)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
 | [`symantecVip`](#cdktfprovideroktapolicymfadefaultpropertysymantecvip)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
+| [`webauthn`](#cdktfprovideroktapolicymfadefaultpropertywebauthn)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
 | [`yubikeyToken`](#cdktfprovideroktapolicymfadefaultpropertyyubikeytoken)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
 
 ---
@@ -39302,6 +39771,16 @@ public readonly duoInput: {[ key: string ]: string};
 
 ---
 
+##### `externalIdpInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfaDefault.property.externalIdpInput" id="cdktfprovideroktapolicymfadefaultpropertyexternalidpinput"></a>
+
+```typescript
+public readonly externalIdpInput: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: `string`}
+
+---
+
 ##### `fidoU2FInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfaDefault.property.fidoU2FInput" id="cdktfprovideroktapolicymfadefaultpropertyfidou2finput"></a>
 
 ```typescript
@@ -39339,6 +39818,16 @@ public readonly hotpInput: {[ key: string ]: string};
 ```
 
 - *Type:* {[ key: string ]: `string`}
+
+---
+
+##### `isOieInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfaDefault.property.isOieInput" id="cdktfprovideroktapolicymfadefaultpropertyisoieinput"></a>
+
+```typescript
+public readonly isOieInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -39412,6 +39901,36 @@ public readonly oktaSmsInput: {[ key: string ]: string};
 
 ---
 
+##### `oktaVerifyInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfaDefault.property.oktaVerifyInput" id="cdktfprovideroktapolicymfadefaultpropertyoktaverifyinput"></a>
+
+```typescript
+public readonly oktaVerifyInput: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: `string`}
+
+---
+
+##### `onpremMfaInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfaDefault.property.onpremMfaInput" id="cdktfprovideroktapolicymfadefaultpropertyonpremmfainput"></a>
+
+```typescript
+public readonly onpremMfaInput: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: `string`}
+
+---
+
+##### `phoneNumberInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfaDefault.property.phoneNumberInput" id="cdktfprovideroktapolicymfadefaultpropertyphonenumberinput"></a>
+
+```typescript
+public readonly phoneNumberInput: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: `string`}
+
+---
+
 ##### `rsaTokenInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfaDefault.property.rsaTokenInput" id="cdktfprovideroktapolicymfadefaultpropertyrsatokeninput"></a>
 
 ```typescript
@@ -39422,10 +39941,30 @@ public readonly rsaTokenInput: {[ key: string ]: string};
 
 ---
 
+##### `securityQuestionInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfaDefault.property.securityQuestionInput" id="cdktfprovideroktapolicymfadefaultpropertysecurityquestioninput"></a>
+
+```typescript
+public readonly securityQuestionInput: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: `string`}
+
+---
+
 ##### `symantecVipInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfaDefault.property.symantecVipInput" id="cdktfprovideroktapolicymfadefaultpropertysymantecvipinput"></a>
 
 ```typescript
 public readonly symantecVipInput: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: `string`}
+
+---
+
+##### `webauthnInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfaDefault.property.webauthnInput" id="cdktfprovideroktapolicymfadefaultpropertywebauthninput"></a>
+
+```typescript
+public readonly webauthnInput: {[ key: string ]: string};
 ```
 
 - *Type:* {[ key: string ]: `string`}
@@ -39446,6 +39985,16 @@ public readonly yubikeyTokenInput: {[ key: string ]: string};
 
 ```typescript
 public readonly duo: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: `string`}
+
+---
+
+##### `externalIdp`<sup>Required</sup> <a name="@cdktf/provider-okta.PolicyMfaDefault.property.externalIdp" id="cdktfprovideroktapolicymfadefaultpropertyexternalidp"></a>
+
+```typescript
+public readonly externalIdp: {[ key: string ]: string};
 ```
 
 - *Type:* {[ key: string ]: `string`}
@@ -39489,6 +40038,16 @@ public readonly hotp: {[ key: string ]: string};
 ```
 
 - *Type:* {[ key: string ]: `string`}
+
+---
+
+##### `isOie`<sup>Required</sup> <a name="@cdktf/provider-okta.PolicyMfaDefault.property.isOie" id="cdktfprovideroktapolicymfadefaultpropertyisoie"></a>
+
+```typescript
+public readonly isOie: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -39562,6 +40121,36 @@ public readonly oktaSms: {[ key: string ]: string};
 
 ---
 
+##### `oktaVerify`<sup>Required</sup> <a name="@cdktf/provider-okta.PolicyMfaDefault.property.oktaVerify" id="cdktfprovideroktapolicymfadefaultpropertyoktaverify"></a>
+
+```typescript
+public readonly oktaVerify: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: `string`}
+
+---
+
+##### `onpremMfa`<sup>Required</sup> <a name="@cdktf/provider-okta.PolicyMfaDefault.property.onpremMfa" id="cdktfprovideroktapolicymfadefaultpropertyonpremmfa"></a>
+
+```typescript
+public readonly onpremMfa: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: `string`}
+
+---
+
+##### `phoneNumber`<sup>Required</sup> <a name="@cdktf/provider-okta.PolicyMfaDefault.property.phoneNumber" id="cdktfprovideroktapolicymfadefaultpropertyphonenumber"></a>
+
+```typescript
+public readonly phoneNumber: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: `string`}
+
+---
+
 ##### `rsaToken`<sup>Required</sup> <a name="@cdktf/provider-okta.PolicyMfaDefault.property.rsaToken" id="cdktfprovideroktapolicymfadefaultpropertyrsatoken"></a>
 
 ```typescript
@@ -39572,10 +40161,30 @@ public readonly rsaToken: {[ key: string ]: string};
 
 ---
 
+##### `securityQuestion`<sup>Required</sup> <a name="@cdktf/provider-okta.PolicyMfaDefault.property.securityQuestion" id="cdktfprovideroktapolicymfadefaultpropertysecurityquestion"></a>
+
+```typescript
+public readonly securityQuestion: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: `string`}
+
+---
+
 ##### `symantecVip`<sup>Required</sup> <a name="@cdktf/provider-okta.PolicyMfaDefault.property.symantecVip" id="cdktfprovideroktapolicymfadefaultpropertysymantecvip"></a>
 
 ```typescript
 public readonly symantecVip: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: `string`}
+
+---
+
+##### `webauthn`<sup>Required</sup> <a name="@cdktf/provider-okta.PolicyMfaDefault.property.webauthn" id="cdktfprovideroktapolicymfadefaultpropertywebauthn"></a>
+
+```typescript
+public readonly webauthn: {[ key: string ]: string};
 ```
 
 - *Type:* {[ key: string ]: `string`}
@@ -43272,6 +43881,8 @@ Must be unique amongst siblings in the same scope
 | [`resetAuthtype`](#cdktfprovideroktapolicyrulesignonresetauthtype) | *No description.* |
 | [`resetBehaviors`](#cdktfprovideroktapolicyrulesignonresetbehaviors) | *No description.* |
 | [`resetFactorSequence`](#cdktfprovideroktapolicyrulesignonresetfactorsequence) | *No description.* |
+| [`resetIdentityProvider`](#cdktfprovideroktapolicyrulesignonresetidentityprovider) | *No description.* |
+| [`resetIdentityProviderIds`](#cdktfprovideroktapolicyrulesignonresetidentityproviderids) | *No description.* |
 | [`resetMfaLifetime`](#cdktfprovideroktapolicyrulesignonresetmfalifetime) | *No description.* |
 | [`resetMfaPrompt`](#cdktfprovideroktapolicyrulesignonresetmfaprompt) | *No description.* |
 | [`resetMfaRememberDevice`](#cdktfprovideroktapolicyrulesignonresetmfarememberdevice) | *No description.* |
@@ -43314,6 +43925,18 @@ public resetBehaviors()
 
 ```typescript
 public resetFactorSequence()
+```
+
+##### `resetIdentityProvider` <a name="@cdktf/provider-okta.PolicyRuleSignon.resetIdentityProvider" id="cdktfprovideroktapolicyrulesignonresetidentityprovider"></a>
+
+```typescript
+public resetIdentityProvider()
+```
+
+##### `resetIdentityProviderIds` <a name="@cdktf/provider-okta.PolicyRuleSignon.resetIdentityProviderIds" id="cdktfprovideroktapolicyrulesignonresetidentityproviderids"></a>
+
+```typescript
+public resetIdentityProviderIds()
 ```
 
 ##### `resetMfaLifetime` <a name="@cdktf/provider-okta.PolicyRuleSignon.resetMfaLifetime" id="cdktfprovideroktapolicyrulesignonresetmfalifetime"></a>
@@ -43428,6 +44051,8 @@ public resetUsersExcluded()
 | [`authtypeInput`](#cdktfprovideroktapolicyrulesignonpropertyauthtypeinput) | `string` | *No description.* |
 | [`behaviorsInput`](#cdktfprovideroktapolicyrulesignonpropertybehaviorsinput) | `string`[] | *No description.* |
 | [`factorSequenceInput`](#cdktfprovideroktapolicyrulesignonpropertyfactorsequenceinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.PolicyRuleSignonFactorSequence`](#@cdktf/provider-okta.PolicyRuleSignonFactorSequence)[] | *No description.* |
+| [`identityProviderIdsInput`](#cdktfprovideroktapolicyrulesignonpropertyidentityprovideridsinput) | `string`[] | *No description.* |
+| [`identityProviderInput`](#cdktfprovideroktapolicyrulesignonpropertyidentityproviderinput) | `string` | *No description.* |
 | [`mfaLifetimeInput`](#cdktfprovideroktapolicyrulesignonpropertymfalifetimeinput) | `number` | *No description.* |
 | [`mfaPromptInput`](#cdktfprovideroktapolicyrulesignonpropertymfapromptinput) | `string` | *No description.* |
 | [`mfaRememberDeviceInput`](#cdktfprovideroktapolicyrulesignonpropertymfarememberdeviceinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
@@ -43450,6 +44075,8 @@ public resetUsersExcluded()
 | [`authtype`](#cdktfprovideroktapolicyrulesignonpropertyauthtype)<span title="Required">*</span> | `string` | *No description.* |
 | [`behaviors`](#cdktfprovideroktapolicyrulesignonpropertybehaviors)<span title="Required">*</span> | `string`[] | *No description.* |
 | [`factorSequence`](#cdktfprovideroktapolicyrulesignonpropertyfactorsequence)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.PolicyRuleSignonFactorSequence`](#@cdktf/provider-okta.PolicyRuleSignonFactorSequence)[] | *No description.* |
+| [`identityProvider`](#cdktfprovideroktapolicyrulesignonpropertyidentityprovider)<span title="Required">*</span> | `string` | *No description.* |
+| [`identityProviderIds`](#cdktfprovideroktapolicyrulesignonpropertyidentityproviderids)<span title="Required">*</span> | `string`[] | *No description.* |
 | [`mfaLifetime`](#cdktfprovideroktapolicyrulesignonpropertymfalifetime)<span title="Required">*</span> | `number` | *No description.* |
 | [`mfaPrompt`](#cdktfprovideroktapolicyrulesignonpropertymfaprompt)<span title="Required">*</span> | `string` | *No description.* |
 | [`mfaRememberDevice`](#cdktfprovideroktapolicyrulesignonpropertymfarememberdevice)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
@@ -43518,6 +44145,26 @@ public readonly factorSequenceInput: IResolvable | PolicyRuleSignonFactorSequenc
 ```
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.PolicyRuleSignonFactorSequence`](#@cdktf/provider-okta.PolicyRuleSignonFactorSequence)[]
+
+---
+
+##### `identityProviderIdsInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyRuleSignon.property.identityProviderIdsInput" id="cdktfprovideroktapolicyrulesignonpropertyidentityprovideridsinput"></a>
+
+```typescript
+public readonly identityProviderIdsInput: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `identityProviderInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyRuleSignon.property.identityProviderInput" id="cdktfprovideroktapolicyrulesignonpropertyidentityproviderinput"></a>
+
+```typescript
+public readonly identityProviderInput: string;
+```
+
+- *Type:* `string`
 
 ---
 
@@ -43738,6 +44385,26 @@ public readonly factorSequence: IResolvable | PolicyRuleSignonFactorSequence[];
 ```
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.PolicyRuleSignonFactorSequence`](#@cdktf/provider-okta.PolicyRuleSignonFactorSequence)[]
+
+---
+
+##### `identityProvider`<sup>Required</sup> <a name="@cdktf/provider-okta.PolicyRuleSignon.property.identityProvider" id="cdktfprovideroktapolicyrulesignonpropertyidentityprovider"></a>
+
+```typescript
+public readonly identityProvider: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `identityProviderIds`<sup>Required</sup> <a name="@cdktf/provider-okta.PolicyRuleSignon.property.identityProviderIds" id="cdktfprovideroktapolicyrulesignonpropertyidentityproviderids"></a>
+
+```typescript
+public readonly identityProviderIds: string[];
+```
+
+- *Type:* `string`[]
 
 ---
 
@@ -49198,6 +49865,8 @@ Must be unique amongst siblings in the same scope
 | [`resetAuthtype`](#cdktfprovideroktasignonpolicyruleresetauthtype) | *No description.* |
 | [`resetBehaviors`](#cdktfprovideroktasignonpolicyruleresetbehaviors) | *No description.* |
 | [`resetFactorSequence`](#cdktfprovideroktasignonpolicyruleresetfactorsequence) | *No description.* |
+| [`resetIdentityProvider`](#cdktfprovideroktasignonpolicyruleresetidentityprovider) | *No description.* |
+| [`resetIdentityProviderIds`](#cdktfprovideroktasignonpolicyruleresetidentityproviderids) | *No description.* |
 | [`resetMfaLifetime`](#cdktfprovideroktasignonpolicyruleresetmfalifetime) | *No description.* |
 | [`resetMfaPrompt`](#cdktfprovideroktasignonpolicyruleresetmfaprompt) | *No description.* |
 | [`resetMfaRememberDevice`](#cdktfprovideroktasignonpolicyruleresetmfarememberdevice) | *No description.* |
@@ -49240,6 +49909,18 @@ public resetBehaviors()
 
 ```typescript
 public resetFactorSequence()
+```
+
+##### `resetIdentityProvider` <a name="@cdktf/provider-okta.SignonPolicyRule.resetIdentityProvider" id="cdktfprovideroktasignonpolicyruleresetidentityprovider"></a>
+
+```typescript
+public resetIdentityProvider()
+```
+
+##### `resetIdentityProviderIds` <a name="@cdktf/provider-okta.SignonPolicyRule.resetIdentityProviderIds" id="cdktfprovideroktasignonpolicyruleresetidentityproviderids"></a>
+
+```typescript
+public resetIdentityProviderIds()
 ```
 
 ##### `resetMfaLifetime` <a name="@cdktf/provider-okta.SignonPolicyRule.resetMfaLifetime" id="cdktfprovideroktasignonpolicyruleresetmfalifetime"></a>
@@ -49354,6 +50035,8 @@ public resetUsersExcluded()
 | [`authtypeInput`](#cdktfprovideroktasignonpolicyrulepropertyauthtypeinput) | `string` | *No description.* |
 | [`behaviorsInput`](#cdktfprovideroktasignonpolicyrulepropertybehaviorsinput) | `string`[] | *No description.* |
 | [`factorSequenceInput`](#cdktfprovideroktasignonpolicyrulepropertyfactorsequenceinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.SignonPolicyRuleFactorSequence`](#@cdktf/provider-okta.SignonPolicyRuleFactorSequence)[] | *No description.* |
+| [`identityProviderIdsInput`](#cdktfprovideroktasignonpolicyrulepropertyidentityprovideridsinput) | `string`[] | *No description.* |
+| [`identityProviderInput`](#cdktfprovideroktasignonpolicyrulepropertyidentityproviderinput) | `string` | *No description.* |
 | [`mfaLifetimeInput`](#cdktfprovideroktasignonpolicyrulepropertymfalifetimeinput) | `number` | *No description.* |
 | [`mfaPromptInput`](#cdktfprovideroktasignonpolicyrulepropertymfapromptinput) | `string` | *No description.* |
 | [`mfaRememberDeviceInput`](#cdktfprovideroktasignonpolicyrulepropertymfarememberdeviceinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
@@ -49376,6 +50059,8 @@ public resetUsersExcluded()
 | [`authtype`](#cdktfprovideroktasignonpolicyrulepropertyauthtype)<span title="Required">*</span> | `string` | *No description.* |
 | [`behaviors`](#cdktfprovideroktasignonpolicyrulepropertybehaviors)<span title="Required">*</span> | `string`[] | *No description.* |
 | [`factorSequence`](#cdktfprovideroktasignonpolicyrulepropertyfactorsequence)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.SignonPolicyRuleFactorSequence`](#@cdktf/provider-okta.SignonPolicyRuleFactorSequence)[] | *No description.* |
+| [`identityProvider`](#cdktfprovideroktasignonpolicyrulepropertyidentityprovider)<span title="Required">*</span> | `string` | *No description.* |
+| [`identityProviderIds`](#cdktfprovideroktasignonpolicyrulepropertyidentityproviderids)<span title="Required">*</span> | `string`[] | *No description.* |
 | [`mfaLifetime`](#cdktfprovideroktasignonpolicyrulepropertymfalifetime)<span title="Required">*</span> | `number` | *No description.* |
 | [`mfaPrompt`](#cdktfprovideroktasignonpolicyrulepropertymfaprompt)<span title="Required">*</span> | `string` | *No description.* |
 | [`mfaRememberDevice`](#cdktfprovideroktasignonpolicyrulepropertymfarememberdevice)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
@@ -49444,6 +50129,26 @@ public readonly factorSequenceInput: IResolvable | SignonPolicyRuleFactorSequenc
 ```
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.SignonPolicyRuleFactorSequence`](#@cdktf/provider-okta.SignonPolicyRuleFactorSequence)[]
+
+---
+
+##### `identityProviderIdsInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.SignonPolicyRule.property.identityProviderIdsInput" id="cdktfprovideroktasignonpolicyrulepropertyidentityprovideridsinput"></a>
+
+```typescript
+public readonly identityProviderIdsInput: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `identityProviderInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.SignonPolicyRule.property.identityProviderInput" id="cdktfprovideroktasignonpolicyrulepropertyidentityproviderinput"></a>
+
+```typescript
+public readonly identityProviderInput: string;
+```
+
+- *Type:* `string`
 
 ---
 
@@ -49664,6 +50369,26 @@ public readonly factorSequence: IResolvable | SignonPolicyRuleFactorSequence[];
 ```
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-okta.SignonPolicyRuleFactorSequence`](#@cdktf/provider-okta.SignonPolicyRuleFactorSequence)[]
+
+---
+
+##### `identityProvider`<sup>Required</sup> <a name="@cdktf/provider-okta.SignonPolicyRule.property.identityProvider" id="cdktfprovideroktasignonpolicyrulepropertyidentityprovider"></a>
+
+```typescript
+public readonly identityProvider: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `identityProviderIds`<sup>Required</sup> <a name="@cdktf/provider-okta.SignonPolicyRule.property.identityProviderIds" id="cdktfprovideroktasignonpolicyrulepropertyidentityproviderids"></a>
+
+```typescript
+public readonly identityProviderIds: string[];
+```
+
+- *Type:* `string`[]
 
 ---
 
@@ -76081,11 +76806,13 @@ const mfaPolicyConfig: MfaPolicyConfig = { ... }
 | [`name`](#cdktfprovideroktamfapolicyconfigpropertyname)<span title="Required">*</span> | `string` | Policy Name. |
 | [`description`](#cdktfprovideroktamfapolicyconfigpropertydescription) | `string` | Policy Description. |
 | [`duo`](#cdktfprovideroktamfapolicyconfigpropertyduo) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#duo MfaPolicy#duo}. |
+| [`externalIdp`](#cdktfprovideroktamfapolicyconfigpropertyexternalidp) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#external_idp MfaPolicy#external_idp}. |
 | [`fidoU2F`](#cdktfprovideroktamfapolicyconfigpropertyfidou2f) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#fido_u2f MfaPolicy#fido_u2f}. |
 | [`fidoWebauthn`](#cdktfprovideroktamfapolicyconfigpropertyfidowebauthn) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#fido_webauthn MfaPolicy#fido_webauthn}. |
 | [`googleOtp`](#cdktfprovideroktamfapolicyconfigpropertygoogleotp) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#google_otp MfaPolicy#google_otp}. |
 | [`groupsIncluded`](#cdktfprovideroktamfapolicyconfigpropertygroupsincluded) | `string`[] | List of Group IDs to Include. |
 | [`hotp`](#cdktfprovideroktamfapolicyconfigpropertyhotp) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#hotp MfaPolicy#hotp}. |
+| [`isOie`](#cdktfprovideroktamfapolicyconfigpropertyisoie) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Is the policy using Okta Identity Engine (OIE) with authenticators instead of factors? |
 | [`oktaCall`](#cdktfprovideroktamfapolicyconfigpropertyoktacall) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#okta_call MfaPolicy#okta_call}. |
 | [`oktaEmail`](#cdktfprovideroktamfapolicyconfigpropertyoktaemail) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#okta_email MfaPolicy#okta_email}. |
 | [`oktaOtp`](#cdktfprovideroktamfapolicyconfigpropertyoktaotp) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#okta_otp MfaPolicy#okta_otp}. |
@@ -76093,10 +76820,15 @@ const mfaPolicyConfig: MfaPolicyConfig = { ... }
 | [`oktaPush`](#cdktfprovideroktamfapolicyconfigpropertyoktapush) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#okta_push MfaPolicy#okta_push}. |
 | [`oktaQuestion`](#cdktfprovideroktamfapolicyconfigpropertyoktaquestion) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#okta_question MfaPolicy#okta_question}. |
 | [`oktaSms`](#cdktfprovideroktamfapolicyconfigpropertyoktasms) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#okta_sms MfaPolicy#okta_sms}. |
+| [`oktaVerify`](#cdktfprovideroktamfapolicyconfigpropertyoktaverify) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#okta_verify MfaPolicy#okta_verify}. |
+| [`onpremMfa`](#cdktfprovideroktamfapolicyconfigpropertyonpremmfa) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#onprem_mfa MfaPolicy#onprem_mfa}. |
+| [`phoneNumber`](#cdktfprovideroktamfapolicyconfigpropertyphonenumber) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#phone_number MfaPolicy#phone_number}. |
 | [`priority`](#cdktfprovideroktamfapolicyconfigpropertypriority) | `number` | Policy Priority, this attribute can be set to a valid priority. |
 | [`rsaToken`](#cdktfprovideroktamfapolicyconfigpropertyrsatoken) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#rsa_token MfaPolicy#rsa_token}. |
+| [`securityQuestion`](#cdktfprovideroktamfapolicyconfigpropertysecurityquestion) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#security_question MfaPolicy#security_question}. |
 | [`status`](#cdktfprovideroktamfapolicyconfigpropertystatus) | `string` | Policy Status: ACTIVE or INACTIVE. |
 | [`symantecVip`](#cdktfprovideroktamfapolicyconfigpropertysymantecvip) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#symantec_vip MfaPolicy#symantec_vip}. |
+| [`webauthn`](#cdktfprovideroktamfapolicyconfigpropertywebauthn) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#webauthn MfaPolicy#webauthn}. |
 | [`yubikeyToken`](#cdktfprovideroktamfapolicyconfigpropertyyubikeytoken) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#yubikey_token MfaPolicy#yubikey_token}. |
 
 ---
@@ -76181,6 +76913,18 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 ---
 
+##### `externalIdp`<sup>Optional</sup> <a name="@cdktf/provider-okta.MfaPolicyConfig.property.externalIdp" id="cdktfprovideroktamfapolicyconfigpropertyexternalidp"></a>
+
+```typescript
+public readonly externalIdp: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: `string`}
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#external_idp MfaPolicy#external_idp}.
+
+---
+
 ##### `fidoU2F`<sup>Optional</sup> <a name="@cdktf/provider-okta.MfaPolicyConfig.property.fidoU2F" id="cdktfprovideroktamfapolicyconfigpropertyfidou2f"></a>
 
 ```typescript
@@ -76240,6 +76984,20 @@ public readonly hotp: {[ key: string ]: string};
 - *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#hotp MfaPolicy#hotp}.
+
+---
+
+##### `isOie`<sup>Optional</sup> <a name="@cdktf/provider-okta.MfaPolicyConfig.property.isOie" id="cdktfprovideroktamfapolicyconfigpropertyisoie"></a>
+
+```typescript
+public readonly isOie: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+Is the policy using Okta Identity Engine (OIE) with authenticators instead of factors?
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#is_oie MfaPolicy#is_oie}
 
 ---
 
@@ -76327,6 +77085,42 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 ---
 
+##### `oktaVerify`<sup>Optional</sup> <a name="@cdktf/provider-okta.MfaPolicyConfig.property.oktaVerify" id="cdktfprovideroktamfapolicyconfigpropertyoktaverify"></a>
+
+```typescript
+public readonly oktaVerify: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: `string`}
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#okta_verify MfaPolicy#okta_verify}.
+
+---
+
+##### `onpremMfa`<sup>Optional</sup> <a name="@cdktf/provider-okta.MfaPolicyConfig.property.onpremMfa" id="cdktfprovideroktamfapolicyconfigpropertyonpremmfa"></a>
+
+```typescript
+public readonly onpremMfa: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: `string`}
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#onprem_mfa MfaPolicy#onprem_mfa}.
+
+---
+
+##### `phoneNumber`<sup>Optional</sup> <a name="@cdktf/provider-okta.MfaPolicyConfig.property.phoneNumber" id="cdktfprovideroktamfapolicyconfigpropertyphonenumber"></a>
+
+```typescript
+public readonly phoneNumber: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: `string`}
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#phone_number MfaPolicy#phone_number}.
+
+---
+
 ##### `priority`<sup>Optional</sup> <a name="@cdktf/provider-okta.MfaPolicyConfig.property.priority" id="cdktfprovideroktamfapolicyconfigpropertypriority"></a>
 
 ```typescript
@@ -76353,6 +77147,18 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 ---
 
+##### `securityQuestion`<sup>Optional</sup> <a name="@cdktf/provider-okta.MfaPolicyConfig.property.securityQuestion" id="cdktfprovideroktamfapolicyconfigpropertysecurityquestion"></a>
+
+```typescript
+public readonly securityQuestion: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: `string`}
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#security_question MfaPolicy#security_question}.
+
+---
+
 ##### `status`<sup>Optional</sup> <a name="@cdktf/provider-okta.MfaPolicyConfig.property.status" id="cdktfprovideroktamfapolicyconfigpropertystatus"></a>
 
 ```typescript
@@ -76376,6 +77182,18 @@ public readonly symantecVip: {[ key: string ]: string};
 - *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#symantec_vip MfaPolicy#symantec_vip}.
+
+---
+
+##### `webauthn`<sup>Optional</sup> <a name="@cdktf/provider-okta.MfaPolicyConfig.property.webauthn" id="cdktfprovideroktamfapolicyconfigpropertywebauthn"></a>
+
+```typescript
+public readonly webauthn: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: `string`}
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#webauthn MfaPolicy#webauthn}.
 
 ---
 
@@ -79388,11 +80206,13 @@ const policyMfaConfig: PolicyMfaConfig = { ... }
 | [`name`](#cdktfprovideroktapolicymfaconfigpropertyname)<span title="Required">*</span> | `string` | Policy Name. |
 | [`description`](#cdktfprovideroktapolicymfaconfigpropertydescription) | `string` | Policy Description. |
 | [`duo`](#cdktfprovideroktapolicymfaconfigpropertyduo) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#duo PolicyMfa#duo}. |
+| [`externalIdp`](#cdktfprovideroktapolicymfaconfigpropertyexternalidp) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#external_idp PolicyMfa#external_idp}. |
 | [`fidoU2F`](#cdktfprovideroktapolicymfaconfigpropertyfidou2f) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#fido_u2f PolicyMfa#fido_u2f}. |
 | [`fidoWebauthn`](#cdktfprovideroktapolicymfaconfigpropertyfidowebauthn) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#fido_webauthn PolicyMfa#fido_webauthn}. |
 | [`googleOtp`](#cdktfprovideroktapolicymfaconfigpropertygoogleotp) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#google_otp PolicyMfa#google_otp}. |
 | [`groupsIncluded`](#cdktfprovideroktapolicymfaconfigpropertygroupsincluded) | `string`[] | List of Group IDs to Include. |
 | [`hotp`](#cdktfprovideroktapolicymfaconfigpropertyhotp) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#hotp PolicyMfa#hotp}. |
+| [`isOie`](#cdktfprovideroktapolicymfaconfigpropertyisoie) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Is the policy using Okta Identity Engine (OIE) with authenticators instead of factors? |
 | [`oktaCall`](#cdktfprovideroktapolicymfaconfigpropertyoktacall) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#okta_call PolicyMfa#okta_call}. |
 | [`oktaEmail`](#cdktfprovideroktapolicymfaconfigpropertyoktaemail) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#okta_email PolicyMfa#okta_email}. |
 | [`oktaOtp`](#cdktfprovideroktapolicymfaconfigpropertyoktaotp) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#okta_otp PolicyMfa#okta_otp}. |
@@ -79400,10 +80220,15 @@ const policyMfaConfig: PolicyMfaConfig = { ... }
 | [`oktaPush`](#cdktfprovideroktapolicymfaconfigpropertyoktapush) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#okta_push PolicyMfa#okta_push}. |
 | [`oktaQuestion`](#cdktfprovideroktapolicymfaconfigpropertyoktaquestion) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#okta_question PolicyMfa#okta_question}. |
 | [`oktaSms`](#cdktfprovideroktapolicymfaconfigpropertyoktasms) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#okta_sms PolicyMfa#okta_sms}. |
+| [`oktaVerify`](#cdktfprovideroktapolicymfaconfigpropertyoktaverify) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#okta_verify PolicyMfa#okta_verify}. |
+| [`onpremMfa`](#cdktfprovideroktapolicymfaconfigpropertyonpremmfa) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#onprem_mfa PolicyMfa#onprem_mfa}. |
+| [`phoneNumber`](#cdktfprovideroktapolicymfaconfigpropertyphonenumber) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#phone_number PolicyMfa#phone_number}. |
 | [`priority`](#cdktfprovideroktapolicymfaconfigpropertypriority) | `number` | Policy Priority, this attribute can be set to a valid priority. |
 | [`rsaToken`](#cdktfprovideroktapolicymfaconfigpropertyrsatoken) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#rsa_token PolicyMfa#rsa_token}. |
+| [`securityQuestion`](#cdktfprovideroktapolicymfaconfigpropertysecurityquestion) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#security_question PolicyMfa#security_question}. |
 | [`status`](#cdktfprovideroktapolicymfaconfigpropertystatus) | `string` | Policy Status: ACTIVE or INACTIVE. |
 | [`symantecVip`](#cdktfprovideroktapolicymfaconfigpropertysymantecvip) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#symantec_vip PolicyMfa#symantec_vip}. |
+| [`webauthn`](#cdktfprovideroktapolicymfaconfigpropertywebauthn) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#webauthn PolicyMfa#webauthn}. |
 | [`yubikeyToken`](#cdktfprovideroktapolicymfaconfigpropertyyubikeytoken) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#yubikey_token PolicyMfa#yubikey_token}. |
 
 ---
@@ -79488,6 +80313,18 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 ---
 
+##### `externalIdp`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfaConfig.property.externalIdp" id="cdktfprovideroktapolicymfaconfigpropertyexternalidp"></a>
+
+```typescript
+public readonly externalIdp: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: `string`}
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#external_idp PolicyMfa#external_idp}.
+
+---
+
 ##### `fidoU2F`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfaConfig.property.fidoU2F" id="cdktfprovideroktapolicymfaconfigpropertyfidou2f"></a>
 
 ```typescript
@@ -79547,6 +80384,20 @@ public readonly hotp: {[ key: string ]: string};
 - *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#hotp PolicyMfa#hotp}.
+
+---
+
+##### `isOie`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfaConfig.property.isOie" id="cdktfprovideroktapolicymfaconfigpropertyisoie"></a>
+
+```typescript
+public readonly isOie: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+Is the policy using Okta Identity Engine (OIE) with authenticators instead of factors?
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#is_oie PolicyMfa#is_oie}
 
 ---
 
@@ -79634,6 +80485,42 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 ---
 
+##### `oktaVerify`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfaConfig.property.oktaVerify" id="cdktfprovideroktapolicymfaconfigpropertyoktaverify"></a>
+
+```typescript
+public readonly oktaVerify: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: `string`}
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#okta_verify PolicyMfa#okta_verify}.
+
+---
+
+##### `onpremMfa`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfaConfig.property.onpremMfa" id="cdktfprovideroktapolicymfaconfigpropertyonpremmfa"></a>
+
+```typescript
+public readonly onpremMfa: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: `string`}
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#onprem_mfa PolicyMfa#onprem_mfa}.
+
+---
+
+##### `phoneNumber`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfaConfig.property.phoneNumber" id="cdktfprovideroktapolicymfaconfigpropertyphonenumber"></a>
+
+```typescript
+public readonly phoneNumber: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: `string`}
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#phone_number PolicyMfa#phone_number}.
+
+---
+
 ##### `priority`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfaConfig.property.priority" id="cdktfprovideroktapolicymfaconfigpropertypriority"></a>
 
 ```typescript
@@ -79660,6 +80547,18 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 ---
 
+##### `securityQuestion`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfaConfig.property.securityQuestion" id="cdktfprovideroktapolicymfaconfigpropertysecurityquestion"></a>
+
+```typescript
+public readonly securityQuestion: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: `string`}
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#security_question PolicyMfa#security_question}.
+
+---
+
 ##### `status`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfaConfig.property.status" id="cdktfprovideroktapolicymfaconfigpropertystatus"></a>
 
 ```typescript
@@ -79683,6 +80582,18 @@ public readonly symantecVip: {[ key: string ]: string};
 - *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#symantec_vip PolicyMfa#symantec_vip}.
+
+---
+
+##### `webauthn`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfaConfig.property.webauthn" id="cdktfprovideroktapolicymfaconfigpropertywebauthn"></a>
+
+```typescript
+public readonly webauthn: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: `string`}
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa#webauthn PolicyMfa#webauthn}.
 
 ---
 
@@ -79717,10 +80628,12 @@ const policyMfaDefaultConfig: PolicyMfaDefaultConfig = { ... }
 | [`lifecycle`](#cdktfprovideroktapolicymfadefaultconfigpropertylifecycle) | [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle) | *No description.* |
 | [`provider`](#cdktfprovideroktapolicymfadefaultconfigpropertyprovider) | [`cdktf.TerraformProvider`](#cdktf.TerraformProvider) | *No description.* |
 | [`duo`](#cdktfprovideroktapolicymfadefaultconfigpropertyduo) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#duo PolicyMfaDefault#duo}. |
+| [`externalIdp`](#cdktfprovideroktapolicymfadefaultconfigpropertyexternalidp) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#external_idp PolicyMfaDefault#external_idp}. |
 | [`fidoU2F`](#cdktfprovideroktapolicymfadefaultconfigpropertyfidou2f) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#fido_u2f PolicyMfaDefault#fido_u2f}. |
 | [`fidoWebauthn`](#cdktfprovideroktapolicymfadefaultconfigpropertyfidowebauthn) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#fido_webauthn PolicyMfaDefault#fido_webauthn}. |
 | [`googleOtp`](#cdktfprovideroktapolicymfadefaultconfigpropertygoogleotp) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#google_otp PolicyMfaDefault#google_otp}. |
 | [`hotp`](#cdktfprovideroktapolicymfadefaultconfigpropertyhotp) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#hotp PolicyMfaDefault#hotp}. |
+| [`isOie`](#cdktfprovideroktapolicymfadefaultconfigpropertyisoie) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Is the policy using Okta Identity Engine (OIE) with authenticators instead of factors? |
 | [`oktaCall`](#cdktfprovideroktapolicymfadefaultconfigpropertyoktacall) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#okta_call PolicyMfaDefault#okta_call}. |
 | [`oktaEmail`](#cdktfprovideroktapolicymfadefaultconfigpropertyoktaemail) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#okta_email PolicyMfaDefault#okta_email}. |
 | [`oktaOtp`](#cdktfprovideroktapolicymfadefaultconfigpropertyoktaotp) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#okta_otp PolicyMfaDefault#okta_otp}. |
@@ -79728,8 +80641,13 @@ const policyMfaDefaultConfig: PolicyMfaDefaultConfig = { ... }
 | [`oktaPush`](#cdktfprovideroktapolicymfadefaultconfigpropertyoktapush) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#okta_push PolicyMfaDefault#okta_push}. |
 | [`oktaQuestion`](#cdktfprovideroktapolicymfadefaultconfigpropertyoktaquestion) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#okta_question PolicyMfaDefault#okta_question}. |
 | [`oktaSms`](#cdktfprovideroktapolicymfadefaultconfigpropertyoktasms) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#okta_sms PolicyMfaDefault#okta_sms}. |
+| [`oktaVerify`](#cdktfprovideroktapolicymfadefaultconfigpropertyoktaverify) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#okta_verify PolicyMfaDefault#okta_verify}. |
+| [`onpremMfa`](#cdktfprovideroktapolicymfadefaultconfigpropertyonpremmfa) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#onprem_mfa PolicyMfaDefault#onprem_mfa}. |
+| [`phoneNumber`](#cdktfprovideroktapolicymfadefaultconfigpropertyphonenumber) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#phone_number PolicyMfaDefault#phone_number}. |
 | [`rsaToken`](#cdktfprovideroktapolicymfadefaultconfigpropertyrsatoken) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#rsa_token PolicyMfaDefault#rsa_token}. |
+| [`securityQuestion`](#cdktfprovideroktapolicymfadefaultconfigpropertysecurityquestion) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#security_question PolicyMfaDefault#security_question}. |
 | [`symantecVip`](#cdktfprovideroktapolicymfadefaultconfigpropertysymantecvip) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#symantec_vip PolicyMfaDefault#symantec_vip}. |
+| [`webauthn`](#cdktfprovideroktapolicymfadefaultconfigpropertywebauthn) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#webauthn PolicyMfaDefault#webauthn}. |
 | [`yubikeyToken`](#cdktfprovideroktapolicymfadefaultconfigpropertyyubikeytoken) | {[ key: string ]: `string`} | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#yubikey_token PolicyMfaDefault#yubikey_token}. |
 
 ---
@@ -79786,6 +80704,18 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 ---
 
+##### `externalIdp`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfaDefaultConfig.property.externalIdp" id="cdktfprovideroktapolicymfadefaultconfigpropertyexternalidp"></a>
+
+```typescript
+public readonly externalIdp: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: `string`}
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#external_idp PolicyMfaDefault#external_idp}.
+
+---
+
 ##### `fidoU2F`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfaDefaultConfig.property.fidoU2F" id="cdktfprovideroktapolicymfadefaultconfigpropertyfidou2f"></a>
 
 ```typescript
@@ -79831,6 +80761,20 @@ public readonly hotp: {[ key: string ]: string};
 - *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#hotp PolicyMfaDefault#hotp}.
+
+---
+
+##### `isOie`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfaDefaultConfig.property.isOie" id="cdktfprovideroktapolicymfadefaultconfigpropertyisoie"></a>
+
+```typescript
+public readonly isOie: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+Is the policy using Okta Identity Engine (OIE) with authenticators instead of factors?
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#is_oie PolicyMfaDefault#is_oie}
 
 ---
 
@@ -79918,6 +80862,42 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 ---
 
+##### `oktaVerify`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfaDefaultConfig.property.oktaVerify" id="cdktfprovideroktapolicymfadefaultconfigpropertyoktaverify"></a>
+
+```typescript
+public readonly oktaVerify: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: `string`}
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#okta_verify PolicyMfaDefault#okta_verify}.
+
+---
+
+##### `onpremMfa`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfaDefaultConfig.property.onpremMfa" id="cdktfprovideroktapolicymfadefaultconfigpropertyonpremmfa"></a>
+
+```typescript
+public readonly onpremMfa: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: `string`}
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#onprem_mfa PolicyMfaDefault#onprem_mfa}.
+
+---
+
+##### `phoneNumber`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfaDefaultConfig.property.phoneNumber" id="cdktfprovideroktapolicymfadefaultconfigpropertyphonenumber"></a>
+
+```typescript
+public readonly phoneNumber: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: `string`}
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#phone_number PolicyMfaDefault#phone_number}.
+
+---
+
 ##### `rsaToken`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfaDefaultConfig.property.rsaToken" id="cdktfprovideroktapolicymfadefaultconfigpropertyrsatoken"></a>
 
 ```typescript
@@ -79930,6 +80910,18 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 ---
 
+##### `securityQuestion`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfaDefaultConfig.property.securityQuestion" id="cdktfprovideroktapolicymfadefaultconfigpropertysecurityquestion"></a>
+
+```typescript
+public readonly securityQuestion: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: `string`}
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#security_question PolicyMfaDefault#security_question}.
+
+---
+
 ##### `symantecVip`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfaDefaultConfig.property.symantecVip" id="cdktfprovideroktapolicymfadefaultconfigpropertysymantecvip"></a>
 
 ```typescript
@@ -79939,6 +80931,18 @@ public readonly symantecVip: {[ key: string ]: string};
 - *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#symantec_vip PolicyMfaDefault#symantec_vip}.
+
+---
+
+##### `webauthn`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyMfaDefaultConfig.property.webauthn" id="cdktfprovideroktapolicymfadefaultconfigpropertywebauthn"></a>
+
+```typescript
+public readonly webauthn: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: `string`}
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_default#webauthn PolicyMfaDefault#webauthn}.
 
 ---
 
@@ -82328,6 +83332,8 @@ const policyRuleSignonConfig: PolicyRuleSignonConfig = { ... }
 | [`authtype`](#cdktfprovideroktapolicyrulesignonconfigpropertyauthtype) | `string` | Authentication entrypoint: ANY, RADIUS or LDAP_INTERFACE. |
 | [`behaviors`](#cdktfprovideroktapolicyrulesignonconfigpropertybehaviors) | `string`[] | List of behavior IDs. |
 | [`factorSequence`](#cdktfprovideroktapolicyrulesignonconfigpropertyfactorsequence) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.PolicyRuleSignonFactorSequence`](#@cdktf/provider-okta.PolicyRuleSignonFactorSequence)[] | factor_sequence block. |
+| [`identityProvider`](#cdktfprovideroktapolicyrulesignonconfigpropertyidentityprovider) | `string` | Apply rule based on the IdP used: ANY, OKTA or SPECIFIC_IDP. |
+| [`identityProviderIds`](#cdktfprovideroktapolicyrulesignonconfigpropertyidentityproviderids) | `string`[] | When identity_provider is SPECIFIC_IDP then this is the list of IdP IDs to apply the rule on. |
 | [`mfaLifetime`](#cdktfprovideroktapolicyrulesignonconfigpropertymfalifetime) | `number` | Elapsed time before the next MFA challenge. |
 | [`mfaPrompt`](#cdktfprovideroktapolicyrulesignonconfigpropertymfaprompt) | `string` | Prompt for MFA based on the device used, a factor session lifetime, or every sign-on attempt: DEVICE, SESSION or ALWAYS. |
 | [`mfaRememberDevice`](#cdktfprovideroktapolicyrulesignonconfigpropertymfarememberdevice) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Remember MFA device. |
@@ -82455,6 +83461,34 @@ public readonly factorSequence: IResolvable | PolicyRuleSignonFactorSequence[];
 factor_sequence block.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_signon#factor_sequence PolicyRuleSignon#factor_sequence}
+
+---
+
+##### `identityProvider`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyRuleSignonConfig.property.identityProvider" id="cdktfprovideroktapolicyrulesignonconfigpropertyidentityprovider"></a>
+
+```typescript
+public readonly identityProvider: string;
+```
+
+- *Type:* `string`
+
+Apply rule based on the IdP used: ANY, OKTA or SPECIFIC_IDP.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_signon#identity_provider PolicyRuleSignon#identity_provider}
+
+---
+
+##### `identityProviderIds`<sup>Optional</sup> <a name="@cdktf/provider-okta.PolicyRuleSignonConfig.property.identityProviderIds" id="cdktfprovideroktapolicyrulesignonconfigpropertyidentityproviderids"></a>
+
+```typescript
+public readonly identityProviderIds: string[];
+```
+
+- *Type:* `string`[]
+
+When identity_provider is SPECIFIC_IDP then this is the list of IdP IDs to apply the rule on.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_signon#identity_provider_ids PolicyRuleSignon#identity_provider_ids}
 
 ---
 
@@ -85881,6 +86915,8 @@ const signonPolicyRuleConfig: SignonPolicyRuleConfig = { ... }
 | [`authtype`](#cdktfprovideroktasignonpolicyruleconfigpropertyauthtype) | `string` | Authentication entrypoint: ANY, RADIUS or LDAP_INTERFACE. |
 | [`behaviors`](#cdktfprovideroktasignonpolicyruleconfigpropertybehaviors) | `string`[] | List of behavior IDs. |
 | [`factorSequence`](#cdktfprovideroktasignonpolicyruleconfigpropertyfactorsequence) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.SignonPolicyRuleFactorSequence`](#@cdktf/provider-okta.SignonPolicyRuleFactorSequence)[] | factor_sequence block. |
+| [`identityProvider`](#cdktfprovideroktasignonpolicyruleconfigpropertyidentityprovider) | `string` | Apply rule based on the IdP used: ANY, OKTA or SPECIFIC_IDP. |
+| [`identityProviderIds`](#cdktfprovideroktasignonpolicyruleconfigpropertyidentityproviderids) | `string`[] | When identity_provider is SPECIFIC_IDP then this is the list of IdP IDs to apply the rule on. |
 | [`mfaLifetime`](#cdktfprovideroktasignonpolicyruleconfigpropertymfalifetime) | `number` | Elapsed time before the next MFA challenge. |
 | [`mfaPrompt`](#cdktfprovideroktasignonpolicyruleconfigpropertymfaprompt) | `string` | Prompt for MFA based on the device used, a factor session lifetime, or every sign-on attempt: DEVICE, SESSION or ALWAYS. |
 | [`mfaRememberDevice`](#cdktfprovideroktasignonpolicyruleconfigpropertymfarememberdevice) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | Remember MFA device. |
@@ -86008,6 +87044,34 @@ public readonly factorSequence: IResolvable | SignonPolicyRuleFactorSequence[];
 factor_sequence block.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule#factor_sequence SignonPolicyRule#factor_sequence}
+
+---
+
+##### `identityProvider`<sup>Optional</sup> <a name="@cdktf/provider-okta.SignonPolicyRuleConfig.property.identityProvider" id="cdktfprovideroktasignonpolicyruleconfigpropertyidentityprovider"></a>
+
+```typescript
+public readonly identityProvider: string;
+```
+
+- *Type:* `string`
+
+Apply rule based on the IdP used: ANY, OKTA or SPECIFIC_IDP.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule#identity_provider SignonPolicyRule#identity_provider}
+
+---
+
+##### `identityProviderIds`<sup>Optional</sup> <a name="@cdktf/provider-okta.SignonPolicyRuleConfig.property.identityProviderIds" id="cdktfprovideroktasignonpolicyruleconfigpropertyidentityproviderids"></a>
+
+```typescript
+public readonly identityProviderIds: string[];
+```
+
+- *Type:* `string`[]
+
+When identity_provider is SPECIFIC_IDP then this is the list of IdP IDs to apply the rule on.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule#identity_provider_ids SignonPolicyRule#identity_provider_ids}
 
 ---
 
