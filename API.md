@@ -28237,6 +28237,7 @@ public resetUsernameTemplate()
 | --- | --- | --- |
 | [`id`](#cdktfprovideroktaidppropertyid)<span title="Required">*</span> | `string` | *No description.* |
 | [`type`](#cdktfprovideroktaidppropertytype)<span title="Required">*</span> | `string` | *No description.* |
+| [`userTypeId`](#cdktfprovideroktaidppropertyusertypeid)<span title="Required">*</span> | `string` | *No description.* |
 | [`accountLinkActionInput`](#cdktfprovideroktaidppropertyaccountlinkactioninput) | `string` | *No description.* |
 | [`accountLinkGroupIncludeInput`](#cdktfprovideroktaidppropertyaccountlinkgroupincludeinput) | `string`[] | *No description.* |
 | [`authorizationBindingInput`](#cdktfprovideroktaidppropertyauthorizationbindinginput) | `string` | *No description.* |
@@ -28322,6 +28323,16 @@ public readonly id: string;
 
 ```typescript
 public readonly type: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `userTypeId`<sup>Required</sup> <a name="@cdktf/provider-okta.Idp.property.userTypeId" id="cdktfprovideroktaidppropertyusertypeid"></a>
+
+```typescript
+public readonly userTypeId: string;
 ```
 
 - *Type:* `string`
@@ -29241,6 +29252,7 @@ public resetUsernameTemplate()
 | --- | --- | --- |
 | [`id`](#cdktfprovideroktaidpoidcpropertyid)<span title="Required">*</span> | `string` | *No description.* |
 | [`type`](#cdktfprovideroktaidpoidcpropertytype)<span title="Required">*</span> | `string` | *No description.* |
+| [`userTypeId`](#cdktfprovideroktaidpoidcpropertyusertypeid)<span title="Required">*</span> | `string` | *No description.* |
 | [`accountLinkActionInput`](#cdktfprovideroktaidpoidcpropertyaccountlinkactioninput) | `string` | *No description.* |
 | [`accountLinkGroupIncludeInput`](#cdktfprovideroktaidpoidcpropertyaccountlinkgroupincludeinput) | `string`[] | *No description.* |
 | [`authorizationBindingInput`](#cdktfprovideroktaidpoidcpropertyauthorizationbindinginput) | `string` | *No description.* |
@@ -29326,6 +29338,16 @@ public readonly id: string;
 
 ```typescript
 public readonly type: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `userTypeId`<sup>Required</sup> <a name="@cdktf/provider-okta.IdpOidc.property.userTypeId" id="cdktfprovideroktaidpoidcpropertyusertypeid"></a>
+
+```typescript
+public readonly userTypeId: string;
 ```
 
 - *Type:* `string`
@@ -30274,6 +30296,7 @@ public resetUsernameTemplate()
 | [`audience`](#cdktfprovideroktaidpsamlpropertyaudience)<span title="Required">*</span> | `string` | *No description.* |
 | [`id`](#cdktfprovideroktaidpsamlpropertyid)<span title="Required">*</span> | `string` | *No description.* |
 | [`type`](#cdktfprovideroktaidpsamlpropertytype)<span title="Required">*</span> | `string` | *No description.* |
+| [`userTypeId`](#cdktfprovideroktaidpsamlpropertyusertypeid)<span title="Required">*</span> | `string` | *No description.* |
 | [`accountLinkActionInput`](#cdktfprovideroktaidpsamlpropertyaccountlinkactioninput) | `string` | *No description.* |
 | [`accountLinkGroupIncludeInput`](#cdktfprovideroktaidpsamlpropertyaccountlinkgroupincludeinput) | `string`[] | *No description.* |
 | [`acsBindingInput`](#cdktfprovideroktaidpsamlpropertyacsbindinginput) | `string` | *No description.* |
@@ -30363,6 +30386,16 @@ public readonly id: string;
 
 ```typescript
 public readonly type: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `userTypeId`<sup>Required</sup> <a name="@cdktf/provider-okta.IdpSaml.property.userTypeId" id="cdktfprovideroktaidpsamlpropertyusertypeid"></a>
+
+```typescript
+public readonly userTypeId: string;
 ```
 
 - *Type:* `string`
@@ -47421,6 +47454,7 @@ public resetUsernameTemplate()
 | [`audience`](#cdktfprovideroktasamlidppropertyaudience)<span title="Required">*</span> | `string` | *No description.* |
 | [`id`](#cdktfprovideroktasamlidppropertyid)<span title="Required">*</span> | `string` | *No description.* |
 | [`type`](#cdktfprovideroktasamlidppropertytype)<span title="Required">*</span> | `string` | *No description.* |
+| [`userTypeId`](#cdktfprovideroktasamlidppropertyusertypeid)<span title="Required">*</span> | `string` | *No description.* |
 | [`accountLinkActionInput`](#cdktfprovideroktasamlidppropertyaccountlinkactioninput) | `string` | *No description.* |
 | [`accountLinkGroupIncludeInput`](#cdktfprovideroktasamlidppropertyaccountlinkgroupincludeinput) | `string`[] | *No description.* |
 | [`acsBindingInput`](#cdktfprovideroktasamlidppropertyacsbindinginput) | `string` | *No description.* |
@@ -47510,6 +47544,16 @@ public readonly id: string;
 
 ```typescript
 public readonly type: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `userTypeId`<sup>Required</sup> <a name="@cdktf/provider-okta.SamlIdp.property.userTypeId" id="cdktfprovideroktasamlidppropertyusertypeid"></a>
+
+```typescript
+public readonly userTypeId: string;
 ```
 
 - *Type:* `string`
@@ -54167,6 +54211,7 @@ Must be unique amongst siblings in the same scope
 | [`resetDisplayName`](#cdktfprovideroktauserresetdisplayname) | *No description.* |
 | [`resetDivision`](#cdktfprovideroktauserresetdivision) | *No description.* |
 | [`resetEmployeeNumber`](#cdktfprovideroktauserresetemployeenumber) | *No description.* |
+| [`resetExpirePasswordOnCreate`](#cdktfprovideroktauserresetexpirepasswordoncreate) | *No description.* |
 | [`resetGroupMemberships`](#cdktfprovideroktauserresetgroupmemberships) | *No description.* |
 | [`resetHonorificPrefix`](#cdktfprovideroktauserresethonorificprefix) | *No description.* |
 | [`resetHonorificSuffix`](#cdktfprovideroktauserresethonorificsuffix) | *No description.* |
@@ -54262,6 +54307,12 @@ public resetDivision()
 
 ```typescript
 public resetEmployeeNumber()
+```
+
+##### `resetExpirePasswordOnCreate` <a name="@cdktf/provider-okta.User.resetExpirePasswordOnCreate" id="cdktfprovideroktauserresetexpirepasswordoncreate"></a>
+
+```typescript
+public resetExpirePasswordOnCreate()
 ```
 
 ##### `resetGroupMemberships` <a name="@cdktf/provider-okta.User.resetGroupMemberships" id="cdktfprovideroktauserresetgroupmemberships"></a>
@@ -54450,6 +54501,7 @@ public resetZipCode()
 | [`divisionInput`](#cdktfprovideroktauserpropertydivisioninput) | `string` | *No description.* |
 | [`emailInput`](#cdktfprovideroktauserpropertyemailinput) | `string` | *No description.* |
 | [`employeeNumberInput`](#cdktfprovideroktauserpropertyemployeenumberinput) | `string` | *No description.* |
+| [`expirePasswordOnCreateInput`](#cdktfprovideroktauserpropertyexpirepasswordoncreateinput) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`firstNameInput`](#cdktfprovideroktauserpropertyfirstnameinput) | `string` | *No description.* |
 | [`groupMembershipsInput`](#cdktfprovideroktauserpropertygroupmembershipsinput) | `string`[] | *No description.* |
 | [`honorificPrefixInput`](#cdktfprovideroktauserpropertyhonorificprefixinput) | `string` | *No description.* |
@@ -54491,6 +54543,7 @@ public resetZipCode()
 | [`division`](#cdktfprovideroktauserpropertydivision)<span title="Required">*</span> | `string` | *No description.* |
 | [`email`](#cdktfprovideroktauserpropertyemail)<span title="Required">*</span> | `string` | *No description.* |
 | [`employeeNumber`](#cdktfprovideroktauserpropertyemployeenumber)<span title="Required">*</span> | `string` | *No description.* |
+| [`expirePasswordOnCreate`](#cdktfprovideroktauserpropertyexpirepasswordoncreate)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
 | [`firstName`](#cdktfprovideroktauserpropertyfirstname)<span title="Required">*</span> | `string` | *No description.* |
 | [`groupMemberships`](#cdktfprovideroktauserpropertygroupmemberships)<span title="Required">*</span> | `string`[] | *No description.* |
 | [`honorificPrefix`](#cdktfprovideroktauserpropertyhonorificprefix)<span title="Required">*</span> | `string` | *No description.* |
@@ -54651,6 +54704,16 @@ public readonly employeeNumberInput: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `expirePasswordOnCreateInput`<sup>Optional</sup> <a name="@cdktf/provider-okta.User.property.expirePasswordOnCreateInput" id="cdktfprovideroktauserpropertyexpirepasswordoncreateinput"></a>
+
+```typescript
+public readonly expirePasswordOnCreateInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -55061,6 +55124,16 @@ public readonly employeeNumber: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `expirePasswordOnCreate`<sup>Required</sup> <a name="@cdktf/provider-okta.User.property.expirePasswordOnCreate" id="cdktfprovideroktauserpropertyexpirepasswordoncreate"></a>
+
+```typescript
+public readonly expirePasswordOnCreate: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -90055,6 +90128,7 @@ const userConfig: UserConfig = { ... }
 | [`displayName`](#cdktfprovideroktauserconfigpropertydisplayname) | `string` | User display name, suitable to show end users. |
 | [`division`](#cdktfprovideroktauserconfigpropertydivision) | `string` | User division. |
 | [`employeeNumber`](#cdktfprovideroktauserconfigpropertyemployeenumber) | `string` | User employee number. |
+| [`expirePasswordOnCreate`](#cdktfprovideroktauserconfigpropertyexpirepasswordoncreate) | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | If set to `true`, the user will have to change the password at the next login. |
 | [`groupMemberships`](#cdktfprovideroktauserconfigpropertygroupmemberships) | `string`[] | The groups that you want this user to be a part of. |
 | [`honorificPrefix`](#cdktfprovideroktauserconfigpropertyhonorificprefix) | `string` | User honorific prefix. |
 | [`honorificSuffix`](#cdktfprovideroktauserconfigpropertyhonorificsuffix) | `string` | User honorific suffix. |
@@ -90305,6 +90379,20 @@ public readonly employeeNumber: string;
 User employee number.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#employee_number User#employee_number}
+
+---
+
+##### `expirePasswordOnCreate`<sup>Optional</sup> <a name="@cdktf/provider-okta.UserConfig.property.expirePasswordOnCreate" id="cdktfprovideroktauserconfigpropertyexpirepasswordoncreate"></a>
+
+```typescript
+public readonly expirePasswordOnCreate: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+If set to `true`, the user will have to change the password at the next login.
+
+This property will be used when user is being created and works only when `password` field is set  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#expire_password_on_create User#expire_password_on_create}
 
 ---
 

@@ -697,6 +697,11 @@ export class IdpSaml extends cdktf.TerraformResource {
     return this.getStringAttribute('type');
   }
 
+  // user_type_id - computed: true, optional: false, required: false
+  public get userTypeId() {
+    return this.getStringAttribute('user_type_id');
+  }
+
   // username_template - computed: false, optional: true, required: false
   private _usernameTemplate?: string; 
   public get usernameTemplate() {

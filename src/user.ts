@@ -68,6 +68,12 @@ export interface UserConfig extends cdktf.TerraformMetaArguments {
   */
   readonly employeeNumber?: string;
   /**
+  * If set to `true`, the user will have to change the password at the next login. This property will be used when user is being created and works only when `password` field is set
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#expire_password_on_create User#expire_password_on_create}
+  */
+  readonly expirePasswordOnCreate?: boolean | cdktf.IResolvable;
+  /**
   * User first name
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#first_name User#first_name}
@@ -475,6 +481,7 @@ export class User extends cdktf.TerraformResource {
     this._division = config.division;
     this._email = config.email;
     this._employeeNumber = config.employeeNumber;
+    this._expirePasswordOnCreate = config.expirePasswordOnCreate;
     this._firstName = config.firstName;
     this._groupMemberships = config.groupMemberships;
     this._honorificPrefix = config.honorificPrefix;
@@ -667,6 +674,22 @@ export class User extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get employeeNumberInput() {
     return this._employeeNumber;
+  }
+
+  // expire_password_on_create - computed: false, optional: true, required: false
+  private _expirePasswordOnCreate?: boolean | cdktf.IResolvable; 
+  public get expirePasswordOnCreate() {
+    return this.getBooleanAttribute('expire_password_on_create');
+  }
+  public set expirePasswordOnCreate(value: boolean | cdktf.IResolvable) {
+    this._expirePasswordOnCreate = value;
+  }
+  public resetExpirePasswordOnCreate() {
+    this._expirePasswordOnCreate = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get expirePasswordOnCreateInput() {
+    return this._expirePasswordOnCreate;
   }
 
   // first_name - computed: false, optional: false, required: true
@@ -1182,6 +1205,7 @@ export class User extends cdktf.TerraformResource {
       division: cdktf.stringToTerraform(this._division),
       email: cdktf.stringToTerraform(this._email),
       employee_number: cdktf.stringToTerraform(this._employeeNumber),
+      expire_password_on_create: cdktf.booleanToTerraform(this._expirePasswordOnCreate),
       first_name: cdktf.stringToTerraform(this._firstName),
       group_memberships: cdktf.listMapper(cdktf.stringToTerraform)(this._groupMemberships),
       honorific_prefix: cdktf.stringToTerraform(this._honorificPrefix),
