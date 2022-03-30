@@ -23,7 +23,7 @@ export class DataOktaEveryoneGroup extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "okta_everyone_group";
+  public static readonly tfResourceType = "okta_everyone_group";
 
   // ===========
   // INITIALIZER
@@ -40,7 +40,9 @@ export class DataOktaEveryoneGroup extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'okta_everyone_group',
       terraformGeneratorMetadata: {
-        providerName: 'okta'
+        providerName: 'okta',
+        providerVersion: '3.20.8',
+        providerVersionConstraint: '~> 3.20.2'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

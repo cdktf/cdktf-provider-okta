@@ -27,7 +27,7 @@ export class OauthAppRedirectUri extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "okta_oauth_app_redirect_uri";
+  public static readonly tfResourceType = "okta_oauth_app_redirect_uri";
 
   // ===========
   // INITIALIZER
@@ -44,7 +44,9 @@ export class OauthAppRedirectUri extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'okta_oauth_app_redirect_uri',
       terraformGeneratorMetadata: {
-        providerName: 'okta'
+        providerName: 'okta',
+        providerVersion: '3.20.8',
+        providerVersionConstraint: '~> 3.20.2'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

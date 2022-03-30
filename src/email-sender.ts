@@ -26,7 +26,45 @@ export interface EmailSenderConfig extends cdktf.TerraformMetaArguments {
   */
   readonly subdomain: string;
 }
-export class EmailSenderDnsRecords extends cdktf.ComplexComputedList {
+export interface EmailSenderDnsRecords {
+}
+
+export function emailSenderDnsRecordsToTerraform(struct?: EmailSenderDnsRecords): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class EmailSenderDnsRecordsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): EmailSenderDnsRecords | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: EmailSenderDnsRecords | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // fqdn - computed: true, optional: false, required: false
   public get fqdn() {
@@ -44,6 +82,25 @@ export class EmailSenderDnsRecords extends cdktf.ComplexComputedList {
   }
 }
 
+export class EmailSenderDnsRecordsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): EmailSenderDnsRecordsOutputReference {
+    return new EmailSenderDnsRecordsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/okta/r/email_sender okta_email_sender}
 */
@@ -52,7 +109,7 @@ export class EmailSender extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "okta_email_sender";
+  public static readonly tfResourceType = "okta_email_sender";
 
   // ===========
   // INITIALIZER
@@ -69,7 +126,9 @@ export class EmailSender extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'okta_email_sender',
       terraformGeneratorMetadata: {
-        providerName: 'okta'
+        providerName: 'okta',
+        providerVersion: '3.20.8',
+        providerVersionConstraint: '~> 3.20.2'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -86,8 +145,9 @@ export class EmailSender extends cdktf.TerraformResource {
   // ==========
 
   // dns_records - computed: true, optional: false, required: false
-  public dnsRecords(index: string) {
-    return new EmailSenderDnsRecords(this, 'dns_records', index, false);
+  private _dnsRecords = new EmailSenderDnsRecordsList(this, "dns_records", false);
+  public get dnsRecords() {
+    return this._dnsRecords;
   }
 
   // from_address - computed: false, optional: false, required: true

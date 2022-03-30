@@ -35,7 +35,7 @@ export class UserFactorQuestion extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "okta_user_factor_question";
+  public static readonly tfResourceType = "okta_user_factor_question";
 
   // ===========
   // INITIALIZER
@@ -52,7 +52,9 @@ export class UserFactorQuestion extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'okta_user_factor_question',
       terraformGeneratorMetadata: {
-        providerName: 'okta'
+        providerName: 'okta',
+        providerVersion: '3.20.8',
+        providerVersionConstraint: '~> 3.20.2'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

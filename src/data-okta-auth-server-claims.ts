@@ -14,7 +14,45 @@ export interface DataOktaAuthServerClaimsConfig extends cdktf.TerraformMetaArgum
   */
   readonly authServerId: string;
 }
-export class DataOktaAuthServerClaimsClaims extends cdktf.ComplexComputedList {
+export interface DataOktaAuthServerClaimsClaims {
+}
+
+export function dataOktaAuthServerClaimsClaimsToTerraform(struct?: DataOktaAuthServerClaimsClaims): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataOktaAuthServerClaimsClaimsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataOktaAuthServerClaimsClaims | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataOktaAuthServerClaimsClaims | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // always_include_in_token - computed: true, optional: false, required: false
   public get alwaysIncludeInToken() {
@@ -57,6 +95,25 @@ export class DataOktaAuthServerClaimsClaims extends cdktf.ComplexComputedList {
   }
 }
 
+export class DataOktaAuthServerClaimsClaimsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataOktaAuthServerClaimsClaimsOutputReference {
+    return new DataOktaAuthServerClaimsClaimsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/okta/d/auth_server_claims okta_auth_server_claims}
 */
@@ -65,7 +122,7 @@ export class DataOktaAuthServerClaims extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "okta_auth_server_claims";
+  public static readonly tfResourceType = "okta_auth_server_claims";
 
   // ===========
   // INITIALIZER
@@ -82,7 +139,9 @@ export class DataOktaAuthServerClaims extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'okta_auth_server_claims',
       terraformGeneratorMetadata: {
-        providerName: 'okta'
+        providerName: 'okta',
+        providerVersion: '3.20.8',
+        providerVersionConstraint: '~> 3.20.2'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -110,8 +169,9 @@ export class DataOktaAuthServerClaims extends cdktf.TerraformDataSource {
   }
 
   // claims - computed: true, optional: false, required: false
-  public claims(index: string) {
-    return new DataOktaAuthServerClaimsClaims(this, 'claims', index, false);
+  private _claims = new DataOktaAuthServerClaimsClaimsList(this, "claims", false);
+  public get claims() {
+    return this._claims;
   }
 
   // id - computed: true, optional: true, required: false

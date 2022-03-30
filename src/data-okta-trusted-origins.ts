@@ -14,7 +14,45 @@ export interface DataOktaTrustedOriginsConfig extends cdktf.TerraformMetaArgumen
   */
   readonly filter?: string;
 }
-export class DataOktaTrustedOriginsTrustedOrigins extends cdktf.ComplexComputedList {
+export interface DataOktaTrustedOriginsTrustedOrigins {
+}
+
+export function dataOktaTrustedOriginsTrustedOriginsToTerraform(struct?: DataOktaTrustedOriginsTrustedOrigins): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataOktaTrustedOriginsTrustedOriginsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataOktaTrustedOriginsTrustedOrigins | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataOktaTrustedOriginsTrustedOrigins | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // active - computed: true, optional: false, required: false
   public get active() {
@@ -42,6 +80,25 @@ export class DataOktaTrustedOriginsTrustedOrigins extends cdktf.ComplexComputedL
   }
 }
 
+export class DataOktaTrustedOriginsTrustedOriginsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataOktaTrustedOriginsTrustedOriginsOutputReference {
+    return new DataOktaTrustedOriginsTrustedOriginsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/okta/d/trusted_origins okta_trusted_origins}
 */
@@ -50,7 +107,7 @@ export class DataOktaTrustedOrigins extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "okta_trusted_origins";
+  public static readonly tfResourceType = "okta_trusted_origins";
 
   // ===========
   // INITIALIZER
@@ -67,7 +124,9 @@ export class DataOktaTrustedOrigins extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'okta_trusted_origins',
       terraformGeneratorMetadata: {
-        providerName: 'okta'
+        providerName: 'okta',
+        providerVersion: '3.20.8',
+        providerVersionConstraint: '~> 3.20.2'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -103,8 +162,9 @@ export class DataOktaTrustedOrigins extends cdktf.TerraformDataSource {
   }
 
   // trusted_origins - computed: true, optional: false, required: false
-  public trustedOrigins(index: string) {
-    return new DataOktaTrustedOriginsTrustedOrigins(this, 'trusted_origins', index, false);
+  private _trustedOrigins = new DataOktaTrustedOriginsTrustedOriginsList(this, "trusted_origins", false);
+  public get trustedOrigins() {
+    return this._trustedOrigins;
   }
 
   // =========

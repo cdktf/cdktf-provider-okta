@@ -19143,7 +19143,6 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| [`attributeStatements`](#cdktfprovideroktadataoktaappsamlattributestatements) | *No description.* |
 | [`resetActiveOnly`](#cdktfprovideroktadataoktaappsamlresetactiveonly) | *No description.* |
 | [`resetId`](#cdktfprovideroktadataoktaappsamlresetid) | *No description.* |
 | [`resetLabel`](#cdktfprovideroktadataoktaappsamlresetlabel) | *No description.* |
@@ -19151,18 +19150,6 @@ Must be unique amongst siblings in the same scope
 | [`resetRequestCompressed`](#cdktfprovideroktadataoktaappsamlresetrequestcompressed) | *No description.* |
 | [`resetSkipGroups`](#cdktfprovideroktadataoktaappsamlresetskipgroups) | *No description.* |
 | [`resetSkipUsers`](#cdktfprovideroktadataoktaappsamlresetskipusers) | *No description.* |
-
----
-
-##### `attributeStatements` <a name="@cdktf/provider-okta.DataOktaAppSaml.attributeStatements" id="cdktfprovideroktadataoktaappsamlattributestatements"></a>
-
-```typescript
-public attributeStatements(index: string)
-```
-
-###### `index`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAppSaml.parameter.index" id="cdktfprovideroktadataoktaappsamlparameterindex"></a>
-
-- *Type:* `string`
 
 ---
 
@@ -19219,6 +19206,7 @@ public resetSkipUsers()
 | [`acsEndpoints`](#cdktfprovideroktadataoktaappsamlpropertyacsendpoints)<span title="Required">*</span> | `string`[] | *No description.* |
 | [`appSettingsJson`](#cdktfprovideroktadataoktaappsamlpropertyappsettingsjson)<span title="Required">*</span> | `string` | *No description.* |
 | [`assertionSigned`](#cdktfprovideroktadataoktaappsamlpropertyassertionsigned)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`attributeStatements`](#cdktfprovideroktadataoktaappsamlpropertyattributestatements)<span title="Required">*</span> | [`@cdktf/provider-okta.DataOktaAppSamlAttributeStatementsList`](#@cdktf/provider-okta.DataOktaAppSamlAttributeStatementsList) | *No description.* |
 | [`audience`](#cdktfprovideroktadataoktaappsamlpropertyaudience)<span title="Required">*</span> | `string` | *No description.* |
 | [`authnContextClassRef`](#cdktfprovideroktadataoktaappsamlpropertyauthncontextclassref)<span title="Required">*</span> | `string` | *No description.* |
 | [`autoSubmitToolbar`](#cdktfprovideroktadataoktaappsamlpropertyautosubmittoolbar)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
@@ -19325,6 +19313,16 @@ public readonly assertionSigned: IResolvable;
 ```
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `attributeStatements`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAppSaml.property.attributeStatements" id="cdktfprovideroktadataoktaappsamlpropertyattributestatements"></a>
+
+```typescript
+public readonly attributeStatements: DataOktaAppSamlAttributeStatementsList;
+```
+
+- *Type:* [`@cdktf/provider-okta.DataOktaAppSamlAttributeStatementsList`](#@cdktf/provider-okta.DataOktaAppSamlAttributeStatementsList)
 
 ---
 
@@ -20723,34 +20721,26 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-#### Methods <a name="Methods" id="methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| [`claims`](#cdktfprovideroktadataoktaauthserverclaimsclaims) | *No description.* |
-
----
-
-##### `claims` <a name="@cdktf/provider-okta.DataOktaAuthServerClaims.claims" id="cdktfprovideroktadataoktaauthserverclaimsclaims"></a>
-
-```typescript
-public claims(index: string)
-```
-
-###### `index`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAuthServerClaims.parameter.index" id="cdktfprovideroktadataoktaauthserverclaimsparameterindex"></a>
-
-- *Type:* `string`
-
----
 
 
 #### Properties <a name="Properties" id="properties"></a>
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`claims`](#cdktfprovideroktadataoktaauthserverclaimspropertyclaims)<span title="Required">*</span> | [`@cdktf/provider-okta.DataOktaAuthServerClaimsClaimsList`](#@cdktf/provider-okta.DataOktaAuthServerClaimsClaimsList) | *No description.* |
 | [`id`](#cdktfprovideroktadataoktaauthserverclaimspropertyid)<span title="Required">*</span> | `string` | *No description.* |
 | [`authServerIdInput`](#cdktfprovideroktadataoktaauthserverclaimspropertyauthserveridinput) | `string` | *No description.* |
 | [`authServerId`](#cdktfprovideroktadataoktaauthserverclaimspropertyauthserverid)<span title="Required">*</span> | `string` | *No description.* |
+
+---
+
+##### `claims`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAuthServerClaims.property.claims" id="cdktfprovideroktadataoktaauthserverclaimspropertyclaims"></a>
+
+```typescript
+public readonly claims: DataOktaAuthServerClaimsClaimsList;
+```
+
+- *Type:* [`@cdktf/provider-okta.DataOktaAuthServerClaimsClaimsList`](#@cdktf/provider-okta.DataOktaAuthServerClaimsClaimsList)
 
 ---
 
@@ -20986,25 +20976,6 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-#### Methods <a name="Methods" id="methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| [`scopes`](#cdktfprovideroktadataoktaauthserverscopesscopes) | *No description.* |
-
----
-
-##### `scopes` <a name="@cdktf/provider-okta.DataOktaAuthServerScopes.scopes" id="cdktfprovideroktadataoktaauthserverscopesscopes"></a>
-
-```typescript
-public scopes(index: string)
-```
-
-###### `index`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAuthServerScopes.parameter.index" id="cdktfprovideroktadataoktaauthserverscopesparameterindex"></a>
-
-- *Type:* `string`
-
----
 
 
 #### Properties <a name="Properties" id="properties"></a>
@@ -21012,6 +20983,7 @@ public scopes(index: string)
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | [`id`](#cdktfprovideroktadataoktaauthserverscopespropertyid)<span title="Required">*</span> | `string` | *No description.* |
+| [`scopes`](#cdktfprovideroktadataoktaauthserverscopespropertyscopes)<span title="Required">*</span> | [`@cdktf/provider-okta.DataOktaAuthServerScopesScopesList`](#@cdktf/provider-okta.DataOktaAuthServerScopesScopesList) | *No description.* |
 | [`authServerIdInput`](#cdktfprovideroktadataoktaauthserverscopespropertyauthserveridinput) | `string` | *No description.* |
 | [`authServerId`](#cdktfprovideroktadataoktaauthserverscopespropertyauthserverid)<span title="Required">*</span> | `string` | *No description.* |
 
@@ -21024,6 +20996,16 @@ public readonly id: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `scopes`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAuthServerScopes.property.scopes" id="cdktfprovideroktadataoktaauthserverscopespropertyscopes"></a>
+
+```typescript
+public readonly scopes: DataOktaAuthServerScopesScopesList;
+```
+
+- *Type:* [`@cdktf/provider-okta.DataOktaAuthServerScopesScopesList`](#@cdktf/provider-okta.DataOktaAuthServerScopesScopesList)
 
 ---
 
@@ -21275,20 +21257,7 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| [`behaviors`](#cdktfprovideroktadataoktabehaviorsbehaviors) | *No description.* |
 | [`resetQ`](#cdktfprovideroktadataoktabehaviorsresetq) | *No description.* |
-
----
-
-##### `behaviors` <a name="@cdktf/provider-okta.DataOktaBehaviors.behaviors" id="cdktfprovideroktadataoktabehaviorsbehaviors"></a>
-
-```typescript
-public behaviors(index: string)
-```
-
-###### `index`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaBehaviors.parameter.index" id="cdktfprovideroktadataoktabehaviorsparameterindex"></a>
-
-- *Type:* `string`
 
 ---
 
@@ -21303,9 +21272,20 @@ public resetQ()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`behaviors`](#cdktfprovideroktadataoktabehaviorspropertybehaviors)<span title="Required">*</span> | [`@cdktf/provider-okta.DataOktaBehaviorsBehaviorsList`](#@cdktf/provider-okta.DataOktaBehaviorsBehaviorsList) | *No description.* |
 | [`id`](#cdktfprovideroktadataoktabehaviorspropertyid)<span title="Required">*</span> | `string` | *No description.* |
 | [`qInput`](#cdktfprovideroktadataoktabehaviorspropertyqinput) | `string` | *No description.* |
 | [`q`](#cdktfprovideroktadataoktabehaviorspropertyq)<span title="Required">*</span> | `string` | *No description.* |
+
+---
+
+##### `behaviors`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaBehaviors.property.behaviors" id="cdktfprovideroktadataoktabehaviorspropertybehaviors"></a>
+
+```typescript
+public readonly behaviors: DataOktaBehaviorsBehaviorsList;
+```
+
+- *Type:* [`@cdktf/provider-okta.DataOktaBehaviorsBehaviorsList`](#@cdktf/provider-okta.DataOktaBehaviorsBehaviorsList)
 
 ---
 
@@ -21936,22 +21916,9 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| [`groups`](#cdktfprovideroktadataoktagroupsgroups) | *No description.* |
 | [`resetQ`](#cdktfprovideroktadataoktagroupsresetq) | *No description.* |
 | [`resetSearch`](#cdktfprovideroktadataoktagroupsresetsearch) | *No description.* |
 | [`resetType`](#cdktfprovideroktadataoktagroupsresettype) | *No description.* |
-
----
-
-##### `groups` <a name="@cdktf/provider-okta.DataOktaGroups.groups" id="cdktfprovideroktadataoktagroupsgroups"></a>
-
-```typescript
-public groups(index: string)
-```
-
-###### `index`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaGroups.parameter.index" id="cdktfprovideroktadataoktagroupsparameterindex"></a>
-
-- *Type:* `string`
 
 ---
 
@@ -21978,6 +21945,7 @@ public resetType()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`groups`](#cdktfprovideroktadataoktagroupspropertygroups)<span title="Required">*</span> | [`@cdktf/provider-okta.DataOktaGroupsGroupsList`](#@cdktf/provider-okta.DataOktaGroupsGroupsList) | *No description.* |
 | [`id`](#cdktfprovideroktadataoktagroupspropertyid)<span title="Required">*</span> | `string` | *No description.* |
 | [`qInput`](#cdktfprovideroktadataoktagroupspropertyqinput) | `string` | *No description.* |
 | [`searchInput`](#cdktfprovideroktadataoktagroupspropertysearchinput) | `string` | *No description.* |
@@ -21985,6 +21953,16 @@ public resetType()
 | [`q`](#cdktfprovideroktadataoktagroupspropertyq)<span title="Required">*</span> | `string` | *No description.* |
 | [`search`](#cdktfprovideroktadataoktagroupspropertysearch)<span title="Required">*</span> | `string` | *No description.* |
 | [`type`](#cdktfprovideroktadataoktagroupspropertytype)<span title="Required">*</span> | `string` | *No description.* |
+
+---
+
+##### `groups`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaGroups.property.groups" id="cdktfprovideroktadataoktagroupspropertygroups"></a>
+
+```typescript
+public readonly groups: DataOktaGroupsGroupsList;
+```
+
+- *Type:* [`@cdktf/provider-okta.DataOktaGroupsGroupsList`](#@cdktf/provider-okta.DataOktaGroupsGroupsList)
 
 ---
 
@@ -23772,7 +23750,6 @@ Must be unique amongst siblings in the same scope
 | **Name** | **Description** |
 | --- | --- |
 | [`resetFilter`](#cdktfprovideroktadataoktatrustedoriginsresetfilter) | *No description.* |
-| [`trustedOrigins`](#cdktfprovideroktadataoktatrustedoriginstrustedorigins) | *No description.* |
 
 ---
 
@@ -23782,24 +23759,13 @@ Must be unique amongst siblings in the same scope
 public resetFilter()
 ```
 
-##### `trustedOrigins` <a name="@cdktf/provider-okta.DataOktaTrustedOrigins.trustedOrigins" id="cdktfprovideroktadataoktatrustedoriginstrustedorigins"></a>
-
-```typescript
-public trustedOrigins(index: string)
-```
-
-###### `index`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaTrustedOrigins.parameter.index" id="cdktfprovideroktadataoktatrustedoriginsparameterindex"></a>
-
-- *Type:* `string`
-
----
-
 
 #### Properties <a name="Properties" id="properties"></a>
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | [`id`](#cdktfprovideroktadataoktatrustedoriginspropertyid)<span title="Required">*</span> | `string` | *No description.* |
+| [`trustedOrigins`](#cdktfprovideroktadataoktatrustedoriginspropertytrustedorigins)<span title="Required">*</span> | [`@cdktf/provider-okta.DataOktaTrustedOriginsTrustedOriginsList`](#@cdktf/provider-okta.DataOktaTrustedOriginsTrustedOriginsList) | *No description.* |
 | [`filterInput`](#cdktfprovideroktadataoktatrustedoriginspropertyfilterinput) | `string` | *No description.* |
 | [`filter`](#cdktfprovideroktadataoktatrustedoriginspropertyfilter)<span title="Required">*</span> | `string` | *No description.* |
 
@@ -23812,6 +23778,16 @@ public readonly id: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `trustedOrigins`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaTrustedOrigins.property.trustedOrigins" id="cdktfprovideroktadataoktatrustedoriginspropertytrustedorigins"></a>
+
+```typescript
+public readonly trustedOrigins: DataOktaTrustedOriginsTrustedOriginsList;
+```
+
+- *Type:* [`@cdktf/provider-okta.DataOktaTrustedOriginsTrustedOriginsList`](#@cdktf/provider-okta.DataOktaTrustedOriginsTrustedOriginsList)
 
 ---
 
@@ -24520,25 +24496,6 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-#### Methods <a name="Methods" id="methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| [`users`](#cdktfprovideroktadataoktausersusers) | *No description.* |
-
----
-
-##### `users` <a name="@cdktf/provider-okta.DataOktaUsers.users" id="cdktfprovideroktadataoktausersusers"></a>
-
-```typescript
-public users(index: string)
-```
-
-###### `index`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsers.parameter.index" id="cdktfprovideroktadataoktausersparameterindex"></a>
-
-- *Type:* `string`
-
----
 
 
 #### Properties <a name="Properties" id="properties"></a>
@@ -24546,6 +24503,7 @@ public users(index: string)
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | [`id`](#cdktfprovideroktadataoktauserspropertyid)<span title="Required">*</span> | `string` | *No description.* |
+| [`users`](#cdktfprovideroktadataoktauserspropertyusers)<span title="Required">*</span> | [`@cdktf/provider-okta.DataOktaUsersUsersList`](#@cdktf/provider-okta.DataOktaUsersUsersList) | *No description.* |
 | [`searchInput`](#cdktfprovideroktadataoktauserspropertysearchinput) | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.DataOktaUsersSearch`](#@cdktf/provider-okta.DataOktaUsersSearch)[] | *No description.* |
 | [`search`](#cdktfprovideroktadataoktauserspropertysearch)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) \| [`@cdktf/provider-okta.DataOktaUsersSearch`](#@cdktf/provider-okta.DataOktaUsersSearch)[] | *No description.* |
 
@@ -24558,6 +24516,16 @@ public readonly id: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `users`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsers.property.users" id="cdktfprovideroktadataoktauserspropertyusers"></a>
+
+```typescript
+public readonly users: DataOktaUsersUsersList;
+```
+
+- *Type:* [`@cdktf/provider-okta.DataOktaUsersUsersList`](#@cdktf/provider-okta.DataOktaUsersUsersList)
 
 ---
 
@@ -24639,25 +24607,6 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-#### Methods <a name="Methods" id="methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| [`questions`](#cdktfprovideroktadataoktausersecurityquestionsquestions) | *No description.* |
-
----
-
-##### `questions` <a name="@cdktf/provider-okta.DataOktaUserSecurityQuestions.questions" id="cdktfprovideroktadataoktausersecurityquestionsquestions"></a>
-
-```typescript
-public questions(index: string)
-```
-
-###### `index`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUserSecurityQuestions.parameter.index" id="cdktfprovideroktadataoktausersecurityquestionsparameterindex"></a>
-
-- *Type:* `string`
-
----
 
 
 #### Properties <a name="Properties" id="properties"></a>
@@ -24665,6 +24614,7 @@ public questions(index: string)
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | [`id`](#cdktfprovideroktadataoktausersecurityquestionspropertyid)<span title="Required">*</span> | `string` | *No description.* |
+| [`questions`](#cdktfprovideroktadataoktausersecurityquestionspropertyquestions)<span title="Required">*</span> | [`@cdktf/provider-okta.DataOktaUserSecurityQuestionsQuestionsList`](#@cdktf/provider-okta.DataOktaUserSecurityQuestionsQuestionsList) | *No description.* |
 | [`userIdInput`](#cdktfprovideroktadataoktausersecurityquestionspropertyuseridinput) | `string` | *No description.* |
 | [`userId`](#cdktfprovideroktadataoktausersecurityquestionspropertyuserid)<span title="Required">*</span> | `string` | *No description.* |
 
@@ -24677,6 +24627,16 @@ public readonly id: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `questions`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUserSecurityQuestions.property.questions" id="cdktfprovideroktadataoktausersecurityquestionspropertyquestions"></a>
+
+```typescript
+public readonly questions: DataOktaUserSecurityQuestionsQuestionsList;
+```
+
+- *Type:* [`@cdktf/provider-okta.DataOktaUserSecurityQuestionsQuestionsList`](#@cdktf/provider-okta.DataOktaUserSecurityQuestionsQuestionsList)
 
 ---
 
@@ -24884,21 +24844,8 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| [`dnsRecords`](#cdktfprovideroktadomaindnsrecords) | *No description.* |
 | [`resetCertificateSourceType`](#cdktfprovideroktadomainresetcertificatesourcetype) | *No description.* |
 | [`resetVerify`](#cdktfprovideroktadomainresetverify) | *No description.* |
-
----
-
-##### `dnsRecords` <a name="@cdktf/provider-okta.Domain.dnsRecords" id="cdktfprovideroktadomaindnsrecords"></a>
-
-```typescript
-public dnsRecords(index: string)
-```
-
-###### `index`<sup>Required</sup> <a name="@cdktf/provider-okta.Domain.parameter.index" id="cdktfprovideroktadomainparameterindex"></a>
-
-- *Type:* `string`
 
 ---
 
@@ -24919,6 +24866,7 @@ public resetVerify()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`dnsRecords`](#cdktfprovideroktadomainpropertydnsrecords)<span title="Required">*</span> | [`@cdktf/provider-okta.DomainDnsRecordsList`](#@cdktf/provider-okta.DomainDnsRecordsList) | *No description.* |
 | [`id`](#cdktfprovideroktadomainpropertyid)<span title="Required">*</span> | `string` | *No description.* |
 | [`validationStatus`](#cdktfprovideroktadomainpropertyvalidationstatus)<span title="Required">*</span> | `string` | *No description.* |
 | [`certificateSourceTypeInput`](#cdktfprovideroktadomainpropertycertificatesourcetypeinput) | `string` | *No description.* |
@@ -24927,6 +24875,16 @@ public resetVerify()
 | [`certificateSourceType`](#cdktfprovideroktadomainpropertycertificatesourcetype)<span title="Required">*</span> | `string` | *No description.* |
 | [`name`](#cdktfprovideroktadomainpropertyname)<span title="Required">*</span> | `string` | *No description.* |
 | [`verify`](#cdktfprovideroktadomainpropertyverify)<span title="Required">*</span> | `boolean` \| [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+
+---
+
+##### `dnsRecords`<sup>Required</sup> <a name="@cdktf/provider-okta.Domain.property.dnsRecords" id="cdktfprovideroktadomainpropertydnsrecords"></a>
+
+```typescript
+public readonly dnsRecords: DomainDnsRecordsList;
+```
+
+- *Type:* [`@cdktf/provider-okta.DomainDnsRecordsList`](#@cdktf/provider-okta.DomainDnsRecordsList)
 
 ---
 
@@ -25369,31 +25327,13 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-#### Methods <a name="Methods" id="methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| [`dnsRecords`](#cdktfprovideroktaemailsenderdnsrecords) | *No description.* |
-
----
-
-##### `dnsRecords` <a name="@cdktf/provider-okta.EmailSender.dnsRecords" id="cdktfprovideroktaemailsenderdnsrecords"></a>
-
-```typescript
-public dnsRecords(index: string)
-```
-
-###### `index`<sup>Required</sup> <a name="@cdktf/provider-okta.EmailSender.parameter.index" id="cdktfprovideroktaemailsenderparameterindex"></a>
-
-- *Type:* `string`
-
----
 
 
 #### Properties <a name="Properties" id="properties"></a>
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| [`dnsRecords`](#cdktfprovideroktaemailsenderpropertydnsrecords)<span title="Required">*</span> | [`@cdktf/provider-okta.EmailSenderDnsRecordsList`](#@cdktf/provider-okta.EmailSenderDnsRecordsList) | *No description.* |
 | [`id`](#cdktfprovideroktaemailsenderpropertyid)<span title="Required">*</span> | `string` | *No description.* |
 | [`status`](#cdktfprovideroktaemailsenderpropertystatus)<span title="Required">*</span> | `string` | *No description.* |
 | [`fromAddressInput`](#cdktfprovideroktaemailsenderpropertyfromaddressinput) | `string` | *No description.* |
@@ -25402,6 +25342,16 @@ public dnsRecords(index: string)
 | [`fromAddress`](#cdktfprovideroktaemailsenderpropertyfromaddress)<span title="Required">*</span> | `string` | *No description.* |
 | [`fromName`](#cdktfprovideroktaemailsenderpropertyfromname)<span title="Required">*</span> | `string` | *No description.* |
 | [`subdomain`](#cdktfprovideroktaemailsenderpropertysubdomain)<span title="Required">*</span> | `string` | *No description.* |
+
+---
+
+##### `dnsRecords`<sup>Required</sup> <a name="@cdktf/provider-okta.EmailSender.property.dnsRecords" id="cdktfprovideroktaemailsenderpropertydnsrecords"></a>
+
+```typescript
+public readonly dnsRecords: EmailSenderDnsRecordsList;
+```
+
+- *Type:* [`@cdktf/provider-okta.EmailSenderDnsRecordsList`](#@cdktf/provider-okta.EmailSenderDnsRecordsList)
 
 ---
 
@@ -69533,6 +69483,17 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 ---
 
+### DataOktaAppSamlAttributeStatements <a name="@cdktf/provider-okta.DataOktaAppSamlAttributeStatements" id="cdktfprovideroktadataoktaappsamlattributestatements"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { DataOktaAppSamlAttributeStatements } from '@cdktf/provider-okta'
+
+const dataOktaAppSamlAttributeStatements: DataOktaAppSamlAttributeStatements = { ... }
+```
+
+
 ### DataOktaAppSamlConfig <a name="@cdktf/provider-okta.DataOktaAppSamlConfig" id="cdktfprovideroktadataoktaappsamlconfig"></a>
 
 #### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
@@ -70047,6 +70008,17 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 ---
 
+### DataOktaAuthServerClaimsClaims <a name="@cdktf/provider-okta.DataOktaAuthServerClaimsClaims" id="cdktfprovideroktadataoktaauthserverclaimsclaims"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { DataOktaAuthServerClaimsClaims } from '@cdktf/provider-okta'
+
+const dataOktaAuthServerClaimsClaims: DataOktaAuthServerClaimsClaims = { ... }
+```
+
+
 ### DataOktaAuthServerClaimsConfig <a name="@cdktf/provider-okta.DataOktaAuthServerClaimsConfig" id="cdktfprovideroktadataoktaauthserverclaimsconfig"></a>
 
 #### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
@@ -70364,6 +70336,17 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 ---
 
+### DataOktaAuthServerScopesScopes <a name="@cdktf/provider-okta.DataOktaAuthServerScopesScopes" id="cdktfprovideroktadataoktaauthserverscopesscopes"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { DataOktaAuthServerScopesScopes } from '@cdktf/provider-okta'
+
+const dataOktaAuthServerScopesScopes: DataOktaAuthServerScopesScopes = { ... }
+```
+
+
 ### DataOktaBehaviorConfig <a name="@cdktf/provider-okta.DataOktaBehaviorConfig" id="cdktfprovideroktadataoktabehaviorconfig"></a>
 
 #### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
@@ -70450,6 +70433,17 @@ public readonly name: string;
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/behavior#name DataOktaBehavior#name}.
 
 ---
+
+### DataOktaBehaviorsBehaviors <a name="@cdktf/provider-okta.DataOktaBehaviorsBehaviors" id="cdktfprovideroktadataoktabehaviorsbehaviors"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { DataOktaBehaviorsBehaviors } from '@cdktf/provider-okta'
+
+const dataOktaBehaviorsBehaviors: DataOktaBehaviorsBehaviors = { ... }
+```
+
 
 ### DataOktaBehaviorsConfig <a name="@cdktf/provider-okta.DataOktaBehaviorsConfig" id="cdktfprovideroktadataoktabehaviorsconfig"></a>
 
@@ -70977,6 +70971,17 @@ Type of the group.
 When specified in the terraform resource, will act as a filter when searching for the groups  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/groups#type DataOktaGroups#type}
 
 ---
+
+### DataOktaGroupsGroups <a name="@cdktf/provider-okta.DataOktaGroupsGroups" id="cdktfprovideroktadataoktagroupsgroups"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { DataOktaGroupsGroups } from '@cdktf/provider-okta'
+
+const dataOktaGroupsGroups: DataOktaGroupsGroups = { ... }
+```
+
 
 ### DataOktaIdpMetadataSamlConfig <a name="@cdktf/provider-okta.DataOktaIdpMetadataSamlConfig" id="cdktfprovideroktadataoktaidpmetadatasamlconfig"></a>
 
@@ -71662,6 +71667,17 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 ---
 
+### DataOktaTrustedOriginsTrustedOrigins <a name="@cdktf/provider-okta.DataOktaTrustedOriginsTrustedOrigins" id="cdktfprovideroktadataoktatrustedoriginstrustedorigins"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { DataOktaTrustedOriginsTrustedOrigins } from '@cdktf/provider-okta'
+
+const dataOktaTrustedOriginsTrustedOrigins: DataOktaTrustedOriginsTrustedOrigins = { ... }
+```
+
+
 ### DataOktaUserConfig <a name="@cdktf/provider-okta.DataOktaUserConfig" id="cdktfprovideroktadataoktauserconfig"></a>
 
 #### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
@@ -72024,6 +72040,17 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 ---
 
+### DataOktaUserSecurityQuestionsQuestions <a name="@cdktf/provider-okta.DataOktaUserSecurityQuestionsQuestions" id="cdktfprovideroktadataoktausersecurityquestionsquestions"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { DataOktaUserSecurityQuestionsQuestions } from '@cdktf/provider-okta'
+
+const dataOktaUserSecurityQuestionsQuestions: DataOktaUserSecurityQuestionsQuestions = { ... }
+```
+
+
 ### DataOktaUsersSearch <a name="@cdktf/provider-okta.DataOktaUsersSearch" id="cdktfprovideroktadataoktauserssearch"></a>
 
 #### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
@@ -72081,6 +72108,17 @@ public readonly comparison: string;
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/users#comparison DataOktaUsers#comparison}.
 
 ---
+
+### DataOktaUsersUsers <a name="@cdktf/provider-okta.DataOktaUsersUsers" id="cdktfprovideroktadataoktausersusers"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { DataOktaUsersUsers } from '@cdktf/provider-okta'
+
+const dataOktaUsersUsers: DataOktaUsersUsers = { ... }
+```
+
 
 ### DataOktaUserTypeConfig <a name="@cdktf/provider-okta.DataOktaUserTypeConfig" id="cdktfprovideroktadataoktausertypeconfig"></a>
 
@@ -72398,6 +72436,17 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 ---
 
+### DomainDnsRecords <a name="@cdktf/provider-okta.DomainDnsRecords" id="cdktfprovideroktadomaindnsrecords"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { DomainDnsRecords } from '@cdktf/provider-okta'
+
+const domainDnsRecords: DomainDnsRecords = { ... }
+```
+
+
 ### DomainVerificationConfig <a name="@cdktf/provider-okta.DomainVerificationConfig" id="cdktfprovideroktadomainverificationconfig"></a>
 
 #### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
@@ -72579,6 +72628,17 @@ Mail domain to send from.
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/email_sender#subdomain EmailSender#subdomain}
 
 ---
+
+### EmailSenderDnsRecords <a name="@cdktf/provider-okta.EmailSenderDnsRecords" id="cdktfprovideroktaemailsenderdnsrecords"></a>
+
+#### Initializer <a name="[object Object].Initializer" id="object-objectinitializer"></a>
+
+```typescript
+import { EmailSenderDnsRecords } from '@cdktf/provider-okta'
+
+const emailSenderDnsRecords: EmailSenderDnsRecords = { ... }
+```
+
 
 ### EmailSenderVerificationConfig <a name="@cdktf/provider-okta.EmailSenderVerificationConfig" id="cdktfprovideroktaemailsenderverificationconfig"></a>
 
@@ -92214,14 +92274,13 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 ```typescript
 import { AppOauthGroupsClaimOutputReference } from '@cdktf/provider-okta'
 
-new AppOauthGroupsClaimOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new AppOauthGroupsClaimOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | [`terraformResource`](#cdktfprovideroktaappoauthgroupsclaimoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
 | [`terraformAttribute`](#cdktfprovideroktaappoauthgroupsclaimoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
-| [`isSingleItem`](#cdktfprovideroktaappoauthgroupsclaimoutputreferenceparameterissingleitem)<span title="Required">*</span> | `boolean` | True if this is a block, false if it's a list. |
 
 ---
 
@@ -92238,14 +92297,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-okta.AppOauthGroupsClaimOutputReference.parameter.isSingleItem" id="cdktfprovideroktaappoauthgroupsclaimoutputreferenceparameterissingleitem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -92371,46 +92422,121 @@ public readonly internalValue: AppOauthGroupsClaim;
 ---
 
 
-### DataOktaAppSamlAttributeStatements <a name="@cdktf/provider-okta.DataOktaAppSamlAttributeStatements" id="cdktfprovideroktadataoktaappsamlattributestatements"></a>
+### DataOktaAppSamlAttributeStatementsList <a name="@cdktf/provider-okta.DataOktaAppSamlAttributeStatementsList" id="cdktfprovideroktadataoktaappsamlattributestatementslist"></a>
 
-#### Initializers <a name="@cdktf/provider-okta.DataOktaAppSamlAttributeStatements.Initializer" id="cdktfprovideroktadataoktaappsamlattributestatementsinitializer"></a>
+#### Initializers <a name="@cdktf/provider-okta.DataOktaAppSamlAttributeStatementsList.Initializer" id="cdktfprovideroktadataoktaappsamlattributestatementslistinitializer"></a>
 
 ```typescript
-import { DataOktaAppSamlAttributeStatements } from '@cdktf/provider-okta'
+import { DataOktaAppSamlAttributeStatementsList } from '@cdktf/provider-okta'
 
-new DataOktaAppSamlAttributeStatements(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+new DataOktaAppSamlAttributeStatementsList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`terraformResource`](#cdktfprovideroktadataoktaappsamlattributestatementsparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | *No description.* |
-| [`terraformAttribute`](#cdktfprovideroktadataoktaappsamlattributestatementsparameterterraformattribute)<span title="Required">*</span> | `string` | *No description.* |
-| [`complexComputedListIndex`](#cdktfprovideroktadataoktaappsamlattributestatementsparametercomplexcomputedlistindex)<span title="Required">*</span> | `string` | *No description.* |
-| [`wrapsSet`](#cdktfprovideroktadataoktaappsamlattributestatementsparameterwrapsset) | `boolean` | *No description.* |
+| [`terraformResource`](#cdktfprovideroktadataoktaappsamlattributestatementslistparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovideroktadataoktaappsamlattributestatementslistparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+| [`wrapsSet`](#cdktfprovideroktadataoktaappsamlattributestatementslistparameterwrapsset)<span title="Required">*</span> | `boolean` | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAppSamlAttributeStatements.parameter.terraformResource" id="cdktfprovideroktadataoktaappsamlattributestatementsparameterterraformresource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAppSamlAttributeStatementsList.parameter.terraformResource" id="cdktfprovideroktadataoktaappsamlattributestatementslistparameterterraformresource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAppSamlAttributeStatements.parameter.terraformAttribute" id="cdktfprovideroktadataoktaappsamlattributestatementsparameterterraformattribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAppSamlAttributeStatementsList.parameter.terraformAttribute" id="cdktfprovideroktadataoktaappsamlattributestatementslistparameterterraformattribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAppSamlAttributeStatements.parameter.complexComputedListIndex" id="cdktfprovideroktadataoktaappsamlattributestatementsparametercomplexcomputedlistindex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-okta.DataOktaAppSamlAttributeStatements.parameter.wrapsSet" id="cdktfprovideroktadataoktaappsamlattributestatementsparameterwrapsset"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAppSamlAttributeStatementsList.parameter.wrapsSet" id="cdktfprovideroktadataoktaappsamlattributestatementslistparameterwrapsset"></a>
 
 - *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`get`](#cdktfprovideroktadataoktaappsamlattributestatementslistget) | *No description.* |
+
+---
+
+##### `get` <a name="@cdktf/provider-okta.DataOktaAppSamlAttributeStatementsList.get" id="cdktfprovideroktadataoktaappsamlattributestatementslistget"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAppSamlAttributeStatementsList.parameter.index" id="cdktfprovideroktadataoktaappsamlattributestatementslistparameterindex"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### DataOktaAppSamlAttributeStatementsOutputReference <a name="@cdktf/provider-okta.DataOktaAppSamlAttributeStatementsOutputReference" id="cdktfprovideroktadataoktaappsamlattributestatementsoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-okta.DataOktaAppSamlAttributeStatementsOutputReference.Initializer" id="cdktfprovideroktadataoktaappsamlattributestatementsoutputreferenceinitializer"></a>
+
+```typescript
+import { DataOktaAppSamlAttributeStatementsOutputReference } from '@cdktf/provider-okta'
+
+new DataOktaAppSamlAttributeStatementsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovideroktadataoktaappsamlattributestatementsoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovideroktadataoktaappsamlattributestatementsoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+| [`complexObjectIndex`](#cdktfprovideroktadataoktaappsamlattributestatementsoutputreferenceparametercomplexobjectindex)<span title="Required">*</span> | `number` | the index of this item in the list. |
+| [`complexObjectIsFromSet`](#cdktfprovideroktadataoktaappsamlattributestatementsoutputreferenceparametercomplexobjectisfromset)<span title="Required">*</span> | `boolean` | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAppSamlAttributeStatementsOutputReference.parameter.terraformResource" id="cdktfprovideroktadataoktaappsamlattributestatementsoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAppSamlAttributeStatementsOutputReference.parameter.terraformAttribute" id="cdktfprovideroktadataoktaappsamlattributestatementsoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAppSamlAttributeStatementsOutputReference.parameter.complexObjectIndex" id="cdktfprovideroktadataoktaappsamlattributestatementsoutputreferenceparametercomplexobjectindex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAppSamlAttributeStatementsOutputReference.parameter.complexObjectIsFromSet" id="cdktfprovideroktadataoktaappsamlattributestatementsoutputreferenceparametercomplexobjectisfromset"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -92420,16 +92546,17 @@ new DataOktaAppSamlAttributeStatements(terraformResource: IInterpolatingParent, 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`filterType`](#cdktfprovideroktadataoktaappsamlattributestatementspropertyfiltertype)<span title="Required">*</span> | `string` | *No description.* |
-| [`filterValue`](#cdktfprovideroktadataoktaappsamlattributestatementspropertyfiltervalue)<span title="Required">*</span> | `string` | *No description.* |
-| [`name`](#cdktfprovideroktadataoktaappsamlattributestatementspropertyname)<span title="Required">*</span> | `string` | *No description.* |
-| [`namespace`](#cdktfprovideroktadataoktaappsamlattributestatementspropertynamespace)<span title="Required">*</span> | `string` | *No description.* |
-| [`type`](#cdktfprovideroktadataoktaappsamlattributestatementspropertytype)<span title="Required">*</span> | `string` | *No description.* |
-| [`values`](#cdktfprovideroktadataoktaappsamlattributestatementspropertyvalues)<span title="Required">*</span> | `string`[] | *No description.* |
+| [`filterType`](#cdktfprovideroktadataoktaappsamlattributestatementsoutputreferencepropertyfiltertype)<span title="Required">*</span> | `string` | *No description.* |
+| [`filterValue`](#cdktfprovideroktadataoktaappsamlattributestatementsoutputreferencepropertyfiltervalue)<span title="Required">*</span> | `string` | *No description.* |
+| [`name`](#cdktfprovideroktadataoktaappsamlattributestatementsoutputreferencepropertyname)<span title="Required">*</span> | `string` | *No description.* |
+| [`namespace`](#cdktfprovideroktadataoktaappsamlattributestatementsoutputreferencepropertynamespace)<span title="Required">*</span> | `string` | *No description.* |
+| [`type`](#cdktfprovideroktadataoktaappsamlattributestatementsoutputreferencepropertytype)<span title="Required">*</span> | `string` | *No description.* |
+| [`values`](#cdktfprovideroktadataoktaappsamlattributestatementsoutputreferencepropertyvalues)<span title="Required">*</span> | `string`[] | *No description.* |
+| [`internalValue`](#cdktfprovideroktadataoktaappsamlattributestatementsoutputreferencepropertyinternalvalue) | [`@cdktf/provider-okta.DataOktaAppSamlAttributeStatements`](#@cdktf/provider-okta.DataOktaAppSamlAttributeStatements) | *No description.* |
 
 ---
 
-##### `filterType`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAppSamlAttributeStatements.property.filterType" id="cdktfprovideroktadataoktaappsamlattributestatementspropertyfiltertype"></a>
+##### `filterType`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAppSamlAttributeStatementsOutputReference.property.filterType" id="cdktfprovideroktadataoktaappsamlattributestatementsoutputreferencepropertyfiltertype"></a>
 
 ```typescript
 public readonly filterType: string;
@@ -92439,7 +92566,7 @@ public readonly filterType: string;
 
 ---
 
-##### `filterValue`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAppSamlAttributeStatements.property.filterValue" id="cdktfprovideroktadataoktaappsamlattributestatementspropertyfiltervalue"></a>
+##### `filterValue`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAppSamlAttributeStatementsOutputReference.property.filterValue" id="cdktfprovideroktadataoktaappsamlattributestatementsoutputreferencepropertyfiltervalue"></a>
 
 ```typescript
 public readonly filterValue: string;
@@ -92449,7 +92576,7 @@ public readonly filterValue: string;
 
 ---
 
-##### `name`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAppSamlAttributeStatements.property.name" id="cdktfprovideroktadataoktaappsamlattributestatementspropertyname"></a>
+##### `name`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAppSamlAttributeStatementsOutputReference.property.name" id="cdktfprovideroktadataoktaappsamlattributestatementsoutputreferencepropertyname"></a>
 
 ```typescript
 public readonly name: string;
@@ -92459,7 +92586,7 @@ public readonly name: string;
 
 ---
 
-##### `namespace`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAppSamlAttributeStatements.property.namespace" id="cdktfprovideroktadataoktaappsamlattributestatementspropertynamespace"></a>
+##### `namespace`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAppSamlAttributeStatementsOutputReference.property.namespace" id="cdktfprovideroktadataoktaappsamlattributestatementsoutputreferencepropertynamespace"></a>
 
 ```typescript
 public readonly namespace: string;
@@ -92469,7 +92596,7 @@ public readonly namespace: string;
 
 ---
 
-##### `type`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAppSamlAttributeStatements.property.type" id="cdktfprovideroktadataoktaappsamlattributestatementspropertytype"></a>
+##### `type`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAppSamlAttributeStatementsOutputReference.property.type" id="cdktfprovideroktadataoktaappsamlattributestatementsoutputreferencepropertytype"></a>
 
 ```typescript
 public readonly type: string;
@@ -92479,7 +92606,7 @@ public readonly type: string;
 
 ---
 
-##### `values`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAppSamlAttributeStatements.property.values" id="cdktfprovideroktadataoktaappsamlattributestatementspropertyvalues"></a>
+##### `values`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAppSamlAttributeStatementsOutputReference.property.values" id="cdktfprovideroktadataoktaappsamlattributestatementsoutputreferencepropertyvalues"></a>
 
 ```typescript
 public readonly values: string[];
@@ -92489,47 +92616,132 @@ public readonly values: string[];
 
 ---
 
-
-### DataOktaAuthServerClaimsClaims <a name="@cdktf/provider-okta.DataOktaAuthServerClaimsClaims" id="cdktfprovideroktadataoktaauthserverclaimsclaims"></a>
-
-#### Initializers <a name="@cdktf/provider-okta.DataOktaAuthServerClaimsClaims.Initializer" id="cdktfprovideroktadataoktaauthserverclaimsclaimsinitializer"></a>
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-okta.DataOktaAppSamlAttributeStatementsOutputReference.property.internalValue" id="cdktfprovideroktadataoktaappsamlattributestatementsoutputreferencepropertyinternalvalue"></a>
 
 ```typescript
-import { DataOktaAuthServerClaimsClaims } from '@cdktf/provider-okta'
+public readonly internalValue: DataOktaAppSamlAttributeStatements;
+```
 
-new DataOktaAuthServerClaimsClaims(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+- *Type:* [`@cdktf/provider-okta.DataOktaAppSamlAttributeStatements`](#@cdktf/provider-okta.DataOktaAppSamlAttributeStatements)
+
+---
+
+
+### DataOktaAuthServerClaimsClaimsList <a name="@cdktf/provider-okta.DataOktaAuthServerClaimsClaimsList" id="cdktfprovideroktadataoktaauthserverclaimsclaimslist"></a>
+
+#### Initializers <a name="@cdktf/provider-okta.DataOktaAuthServerClaimsClaimsList.Initializer" id="cdktfprovideroktadataoktaauthserverclaimsclaimslistinitializer"></a>
+
+```typescript
+import { DataOktaAuthServerClaimsClaimsList } from '@cdktf/provider-okta'
+
+new DataOktaAuthServerClaimsClaimsList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`terraformResource`](#cdktfprovideroktadataoktaauthserverclaimsclaimsparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | *No description.* |
-| [`terraformAttribute`](#cdktfprovideroktadataoktaauthserverclaimsclaimsparameterterraformattribute)<span title="Required">*</span> | `string` | *No description.* |
-| [`complexComputedListIndex`](#cdktfprovideroktadataoktaauthserverclaimsclaimsparametercomplexcomputedlistindex)<span title="Required">*</span> | `string` | *No description.* |
-| [`wrapsSet`](#cdktfprovideroktadataoktaauthserverclaimsclaimsparameterwrapsset) | `boolean` | *No description.* |
+| [`terraformResource`](#cdktfprovideroktadataoktaauthserverclaimsclaimslistparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovideroktadataoktaauthserverclaimsclaimslistparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+| [`wrapsSet`](#cdktfprovideroktadataoktaauthserverclaimsclaimslistparameterwrapsset)<span title="Required">*</span> | `boolean` | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAuthServerClaimsClaims.parameter.terraformResource" id="cdktfprovideroktadataoktaauthserverclaimsclaimsparameterterraformresource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAuthServerClaimsClaimsList.parameter.terraformResource" id="cdktfprovideroktadataoktaauthserverclaimsclaimslistparameterterraformresource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAuthServerClaimsClaims.parameter.terraformAttribute" id="cdktfprovideroktadataoktaauthserverclaimsclaimsparameterterraformattribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAuthServerClaimsClaimsList.parameter.terraformAttribute" id="cdktfprovideroktadataoktaauthserverclaimsclaimslistparameterterraformattribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAuthServerClaimsClaims.parameter.complexComputedListIndex" id="cdktfprovideroktadataoktaauthserverclaimsclaimsparametercomplexcomputedlistindex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-okta.DataOktaAuthServerClaimsClaims.parameter.wrapsSet" id="cdktfprovideroktadataoktaauthserverclaimsclaimsparameterwrapsset"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAuthServerClaimsClaimsList.parameter.wrapsSet" id="cdktfprovideroktadataoktaauthserverclaimsclaimslistparameterwrapsset"></a>
 
 - *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`get`](#cdktfprovideroktadataoktaauthserverclaimsclaimslistget) | *No description.* |
+
+---
+
+##### `get` <a name="@cdktf/provider-okta.DataOktaAuthServerClaimsClaimsList.get" id="cdktfprovideroktadataoktaauthserverclaimsclaimslistget"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAuthServerClaimsClaimsList.parameter.index" id="cdktfprovideroktadataoktaauthserverclaimsclaimslistparameterindex"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### DataOktaAuthServerClaimsClaimsOutputReference <a name="@cdktf/provider-okta.DataOktaAuthServerClaimsClaimsOutputReference" id="cdktfprovideroktadataoktaauthserverclaimsclaimsoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-okta.DataOktaAuthServerClaimsClaimsOutputReference.Initializer" id="cdktfprovideroktadataoktaauthserverclaimsclaimsoutputreferenceinitializer"></a>
+
+```typescript
+import { DataOktaAuthServerClaimsClaimsOutputReference } from '@cdktf/provider-okta'
+
+new DataOktaAuthServerClaimsClaimsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovideroktadataoktaauthserverclaimsclaimsoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovideroktadataoktaauthserverclaimsclaimsoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+| [`complexObjectIndex`](#cdktfprovideroktadataoktaauthserverclaimsclaimsoutputreferenceparametercomplexobjectindex)<span title="Required">*</span> | `number` | the index of this item in the list. |
+| [`complexObjectIsFromSet`](#cdktfprovideroktadataoktaauthserverclaimsclaimsoutputreferenceparametercomplexobjectisfromset)<span title="Required">*</span> | `boolean` | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAuthServerClaimsClaimsOutputReference.parameter.terraformResource" id="cdktfprovideroktadataoktaauthserverclaimsclaimsoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAuthServerClaimsClaimsOutputReference.parameter.terraformAttribute" id="cdktfprovideroktadataoktaauthserverclaimsclaimsoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAuthServerClaimsClaimsOutputReference.parameter.complexObjectIndex" id="cdktfprovideroktadataoktaauthserverclaimsclaimsoutputreferenceparametercomplexobjectindex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAuthServerClaimsClaimsOutputReference.parameter.complexObjectIsFromSet" id="cdktfprovideroktadataoktaauthserverclaimsclaimsoutputreferenceparametercomplexobjectisfromset"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -92539,18 +92751,19 @@ new DataOktaAuthServerClaimsClaims(terraformResource: IInterpolatingParent, terr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`alwaysIncludeInToken`](#cdktfprovideroktadataoktaauthserverclaimsclaimspropertyalwaysincludeintoken)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
-| [`claimType`](#cdktfprovideroktadataoktaauthserverclaimsclaimspropertyclaimtype)<span title="Required">*</span> | `string` | *No description.* |
-| [`id`](#cdktfprovideroktadataoktaauthserverclaimsclaimspropertyid)<span title="Required">*</span> | `string` | *No description.* |
-| [`name`](#cdktfprovideroktadataoktaauthserverclaimsclaimspropertyname)<span title="Required">*</span> | `string` | *No description.* |
-| [`scopes`](#cdktfprovideroktadataoktaauthserverclaimsclaimspropertyscopes)<span title="Required">*</span> | `string`[] | *No description.* |
-| [`status`](#cdktfprovideroktadataoktaauthserverclaimsclaimspropertystatus)<span title="Required">*</span> | `string` | *No description.* |
-| [`value`](#cdktfprovideroktadataoktaauthserverclaimsclaimspropertyvalue)<span title="Required">*</span> | `string` | *No description.* |
-| [`valueType`](#cdktfprovideroktadataoktaauthserverclaimsclaimspropertyvaluetype)<span title="Required">*</span> | `string` | *No description.* |
+| [`alwaysIncludeInToken`](#cdktfprovideroktadataoktaauthserverclaimsclaimsoutputreferencepropertyalwaysincludeintoken)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`claimType`](#cdktfprovideroktadataoktaauthserverclaimsclaimsoutputreferencepropertyclaimtype)<span title="Required">*</span> | `string` | *No description.* |
+| [`id`](#cdktfprovideroktadataoktaauthserverclaimsclaimsoutputreferencepropertyid)<span title="Required">*</span> | `string` | *No description.* |
+| [`name`](#cdktfprovideroktadataoktaauthserverclaimsclaimsoutputreferencepropertyname)<span title="Required">*</span> | `string` | *No description.* |
+| [`scopes`](#cdktfprovideroktadataoktaauthserverclaimsclaimsoutputreferencepropertyscopes)<span title="Required">*</span> | `string`[] | *No description.* |
+| [`status`](#cdktfprovideroktadataoktaauthserverclaimsclaimsoutputreferencepropertystatus)<span title="Required">*</span> | `string` | *No description.* |
+| [`value`](#cdktfprovideroktadataoktaauthserverclaimsclaimsoutputreferencepropertyvalue)<span title="Required">*</span> | `string` | *No description.* |
+| [`valueType`](#cdktfprovideroktadataoktaauthserverclaimsclaimsoutputreferencepropertyvaluetype)<span title="Required">*</span> | `string` | *No description.* |
+| [`internalValue`](#cdktfprovideroktadataoktaauthserverclaimsclaimsoutputreferencepropertyinternalvalue) | [`@cdktf/provider-okta.DataOktaAuthServerClaimsClaims`](#@cdktf/provider-okta.DataOktaAuthServerClaimsClaims) | *No description.* |
 
 ---
 
-##### `alwaysIncludeInToken`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAuthServerClaimsClaims.property.alwaysIncludeInToken" id="cdktfprovideroktadataoktaauthserverclaimsclaimspropertyalwaysincludeintoken"></a>
+##### `alwaysIncludeInToken`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAuthServerClaimsClaimsOutputReference.property.alwaysIncludeInToken" id="cdktfprovideroktadataoktaauthserverclaimsclaimsoutputreferencepropertyalwaysincludeintoken"></a>
 
 ```typescript
 public readonly alwaysIncludeInToken: IResolvable;
@@ -92560,7 +92773,7 @@ public readonly alwaysIncludeInToken: IResolvable;
 
 ---
 
-##### `claimType`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAuthServerClaimsClaims.property.claimType" id="cdktfprovideroktadataoktaauthserverclaimsclaimspropertyclaimtype"></a>
+##### `claimType`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAuthServerClaimsClaimsOutputReference.property.claimType" id="cdktfprovideroktadataoktaauthserverclaimsclaimsoutputreferencepropertyclaimtype"></a>
 
 ```typescript
 public readonly claimType: string;
@@ -92570,7 +92783,7 @@ public readonly claimType: string;
 
 ---
 
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAuthServerClaimsClaims.property.id" id="cdktfprovideroktadataoktaauthserverclaimsclaimspropertyid"></a>
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAuthServerClaimsClaimsOutputReference.property.id" id="cdktfprovideroktadataoktaauthserverclaimsclaimsoutputreferencepropertyid"></a>
 
 ```typescript
 public readonly id: string;
@@ -92580,7 +92793,7 @@ public readonly id: string;
 
 ---
 
-##### `name`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAuthServerClaimsClaims.property.name" id="cdktfprovideroktadataoktaauthserverclaimsclaimspropertyname"></a>
+##### `name`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAuthServerClaimsClaimsOutputReference.property.name" id="cdktfprovideroktadataoktaauthserverclaimsclaimsoutputreferencepropertyname"></a>
 
 ```typescript
 public readonly name: string;
@@ -92590,7 +92803,7 @@ public readonly name: string;
 
 ---
 
-##### `scopes`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAuthServerClaimsClaims.property.scopes" id="cdktfprovideroktadataoktaauthserverclaimsclaimspropertyscopes"></a>
+##### `scopes`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAuthServerClaimsClaimsOutputReference.property.scopes" id="cdktfprovideroktadataoktaauthserverclaimsclaimsoutputreferencepropertyscopes"></a>
 
 ```typescript
 public readonly scopes: string[];
@@ -92600,7 +92813,7 @@ public readonly scopes: string[];
 
 ---
 
-##### `status`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAuthServerClaimsClaims.property.status" id="cdktfprovideroktadataoktaauthserverclaimsclaimspropertystatus"></a>
+##### `status`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAuthServerClaimsClaimsOutputReference.property.status" id="cdktfprovideroktadataoktaauthserverclaimsclaimsoutputreferencepropertystatus"></a>
 
 ```typescript
 public readonly status: string;
@@ -92610,7 +92823,7 @@ public readonly status: string;
 
 ---
 
-##### `value`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAuthServerClaimsClaims.property.value" id="cdktfprovideroktadataoktaauthserverclaimsclaimspropertyvalue"></a>
+##### `value`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAuthServerClaimsClaimsOutputReference.property.value" id="cdktfprovideroktadataoktaauthserverclaimsclaimsoutputreferencepropertyvalue"></a>
 
 ```typescript
 public readonly value: string;
@@ -92620,7 +92833,7 @@ public readonly value: string;
 
 ---
 
-##### `valueType`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAuthServerClaimsClaims.property.valueType" id="cdktfprovideroktadataoktaauthserverclaimsclaimspropertyvaluetype"></a>
+##### `valueType`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAuthServerClaimsClaimsOutputReference.property.valueType" id="cdktfprovideroktadataoktaauthserverclaimsclaimsoutputreferencepropertyvaluetype"></a>
 
 ```typescript
 public readonly valueType: string;
@@ -92630,47 +92843,132 @@ public readonly valueType: string;
 
 ---
 
-
-### DataOktaAuthServerScopesScopes <a name="@cdktf/provider-okta.DataOktaAuthServerScopesScopes" id="cdktfprovideroktadataoktaauthserverscopesscopes"></a>
-
-#### Initializers <a name="@cdktf/provider-okta.DataOktaAuthServerScopesScopes.Initializer" id="cdktfprovideroktadataoktaauthserverscopesscopesinitializer"></a>
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-okta.DataOktaAuthServerClaimsClaimsOutputReference.property.internalValue" id="cdktfprovideroktadataoktaauthserverclaimsclaimsoutputreferencepropertyinternalvalue"></a>
 
 ```typescript
-import { DataOktaAuthServerScopesScopes } from '@cdktf/provider-okta'
+public readonly internalValue: DataOktaAuthServerClaimsClaims;
+```
 
-new DataOktaAuthServerScopesScopes(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+- *Type:* [`@cdktf/provider-okta.DataOktaAuthServerClaimsClaims`](#@cdktf/provider-okta.DataOktaAuthServerClaimsClaims)
+
+---
+
+
+### DataOktaAuthServerScopesScopesList <a name="@cdktf/provider-okta.DataOktaAuthServerScopesScopesList" id="cdktfprovideroktadataoktaauthserverscopesscopeslist"></a>
+
+#### Initializers <a name="@cdktf/provider-okta.DataOktaAuthServerScopesScopesList.Initializer" id="cdktfprovideroktadataoktaauthserverscopesscopeslistinitializer"></a>
+
+```typescript
+import { DataOktaAuthServerScopesScopesList } from '@cdktf/provider-okta'
+
+new DataOktaAuthServerScopesScopesList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`terraformResource`](#cdktfprovideroktadataoktaauthserverscopesscopesparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | *No description.* |
-| [`terraformAttribute`](#cdktfprovideroktadataoktaauthserverscopesscopesparameterterraformattribute)<span title="Required">*</span> | `string` | *No description.* |
-| [`complexComputedListIndex`](#cdktfprovideroktadataoktaauthserverscopesscopesparametercomplexcomputedlistindex)<span title="Required">*</span> | `string` | *No description.* |
-| [`wrapsSet`](#cdktfprovideroktadataoktaauthserverscopesscopesparameterwrapsset) | `boolean` | *No description.* |
+| [`terraformResource`](#cdktfprovideroktadataoktaauthserverscopesscopeslistparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovideroktadataoktaauthserverscopesscopeslistparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+| [`wrapsSet`](#cdktfprovideroktadataoktaauthserverscopesscopeslistparameterwrapsset)<span title="Required">*</span> | `boolean` | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAuthServerScopesScopes.parameter.terraformResource" id="cdktfprovideroktadataoktaauthserverscopesscopesparameterterraformresource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAuthServerScopesScopesList.parameter.terraformResource" id="cdktfprovideroktadataoktaauthserverscopesscopeslistparameterterraformresource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAuthServerScopesScopes.parameter.terraformAttribute" id="cdktfprovideroktadataoktaauthserverscopesscopesparameterterraformattribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAuthServerScopesScopesList.parameter.terraformAttribute" id="cdktfprovideroktadataoktaauthserverscopesscopeslistparameterterraformattribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAuthServerScopesScopes.parameter.complexComputedListIndex" id="cdktfprovideroktadataoktaauthserverscopesscopesparametercomplexcomputedlistindex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-okta.DataOktaAuthServerScopesScopes.parameter.wrapsSet" id="cdktfprovideroktadataoktaauthserverscopesscopesparameterwrapsset"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAuthServerScopesScopesList.parameter.wrapsSet" id="cdktfprovideroktadataoktaauthserverscopesscopeslistparameterwrapsset"></a>
 
 - *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`get`](#cdktfprovideroktadataoktaauthserverscopesscopeslistget) | *No description.* |
+
+---
+
+##### `get` <a name="@cdktf/provider-okta.DataOktaAuthServerScopesScopesList.get" id="cdktfprovideroktadataoktaauthserverscopesscopeslistget"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAuthServerScopesScopesList.parameter.index" id="cdktfprovideroktadataoktaauthserverscopesscopeslistparameterindex"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### DataOktaAuthServerScopesScopesOutputReference <a name="@cdktf/provider-okta.DataOktaAuthServerScopesScopesOutputReference" id="cdktfprovideroktadataoktaauthserverscopesscopesoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-okta.DataOktaAuthServerScopesScopesOutputReference.Initializer" id="cdktfprovideroktadataoktaauthserverscopesscopesoutputreferenceinitializer"></a>
+
+```typescript
+import { DataOktaAuthServerScopesScopesOutputReference } from '@cdktf/provider-okta'
+
+new DataOktaAuthServerScopesScopesOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovideroktadataoktaauthserverscopesscopesoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovideroktadataoktaauthserverscopesscopesoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+| [`complexObjectIndex`](#cdktfprovideroktadataoktaauthserverscopesscopesoutputreferenceparametercomplexobjectindex)<span title="Required">*</span> | `number` | the index of this item in the list. |
+| [`complexObjectIsFromSet`](#cdktfprovideroktadataoktaauthserverscopesscopesoutputreferenceparametercomplexobjectisfromset)<span title="Required">*</span> | `boolean` | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAuthServerScopesScopesOutputReference.parameter.terraformResource" id="cdktfprovideroktadataoktaauthserverscopesscopesoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAuthServerScopesScopesOutputReference.parameter.terraformAttribute" id="cdktfprovideroktadataoktaauthserverscopesscopesoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAuthServerScopesScopesOutputReference.parameter.complexObjectIndex" id="cdktfprovideroktadataoktaauthserverscopesscopesoutputreferenceparametercomplexobjectindex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAuthServerScopesScopesOutputReference.parameter.complexObjectIsFromSet" id="cdktfprovideroktadataoktaauthserverscopesscopesoutputreferenceparametercomplexobjectisfromset"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -92680,18 +92978,19 @@ new DataOktaAuthServerScopesScopes(terraformResource: IInterpolatingParent, terr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`consent`](#cdktfprovideroktadataoktaauthserverscopesscopespropertyconsent)<span title="Required">*</span> | `string` | *No description.* |
-| [`default`](#cdktfprovideroktadataoktaauthserverscopesscopespropertydefault)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
-| [`description`](#cdktfprovideroktadataoktaauthserverscopesscopespropertydescription)<span title="Required">*</span> | `string` | *No description.* |
-| [`displayName`](#cdktfprovideroktadataoktaauthserverscopesscopespropertydisplayname)<span title="Required">*</span> | `string` | *No description.* |
-| [`id`](#cdktfprovideroktadataoktaauthserverscopesscopespropertyid)<span title="Required">*</span> | `string` | *No description.* |
-| [`metadataPublish`](#cdktfprovideroktadataoktaauthserverscopesscopespropertymetadatapublish)<span title="Required">*</span> | `string` | *No description.* |
-| [`name`](#cdktfprovideroktadataoktaauthserverscopesscopespropertyname)<span title="Required">*</span> | `string` | *No description.* |
-| [`systemAttribute`](#cdktfprovideroktadataoktaauthserverscopesscopespropertysystemattribute)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`consent`](#cdktfprovideroktadataoktaauthserverscopesscopesoutputreferencepropertyconsent)<span title="Required">*</span> | `string` | *No description.* |
+| [`default`](#cdktfprovideroktadataoktaauthserverscopesscopesoutputreferencepropertydefault)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`description`](#cdktfprovideroktadataoktaauthserverscopesscopesoutputreferencepropertydescription)<span title="Required">*</span> | `string` | *No description.* |
+| [`displayName`](#cdktfprovideroktadataoktaauthserverscopesscopesoutputreferencepropertydisplayname)<span title="Required">*</span> | `string` | *No description.* |
+| [`id`](#cdktfprovideroktadataoktaauthserverscopesscopesoutputreferencepropertyid)<span title="Required">*</span> | `string` | *No description.* |
+| [`metadataPublish`](#cdktfprovideroktadataoktaauthserverscopesscopesoutputreferencepropertymetadatapublish)<span title="Required">*</span> | `string` | *No description.* |
+| [`name`](#cdktfprovideroktadataoktaauthserverscopesscopesoutputreferencepropertyname)<span title="Required">*</span> | `string` | *No description.* |
+| [`systemAttribute`](#cdktfprovideroktadataoktaauthserverscopesscopesoutputreferencepropertysystemattribute)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`internalValue`](#cdktfprovideroktadataoktaauthserverscopesscopesoutputreferencepropertyinternalvalue) | [`@cdktf/provider-okta.DataOktaAuthServerScopesScopes`](#@cdktf/provider-okta.DataOktaAuthServerScopesScopes) | *No description.* |
 
 ---
 
-##### `consent`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAuthServerScopesScopes.property.consent" id="cdktfprovideroktadataoktaauthserverscopesscopespropertyconsent"></a>
+##### `consent`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAuthServerScopesScopesOutputReference.property.consent" id="cdktfprovideroktadataoktaauthserverscopesscopesoutputreferencepropertyconsent"></a>
 
 ```typescript
 public readonly consent: string;
@@ -92701,7 +93000,7 @@ public readonly consent: string;
 
 ---
 
-##### `default`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAuthServerScopesScopes.property.default" id="cdktfprovideroktadataoktaauthserverscopesscopespropertydefault"></a>
+##### `default`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAuthServerScopesScopesOutputReference.property.default" id="cdktfprovideroktadataoktaauthserverscopesscopesoutputreferencepropertydefault"></a>
 
 ```typescript
 public readonly default: IResolvable;
@@ -92711,7 +93010,7 @@ public readonly default: IResolvable;
 
 ---
 
-##### `description`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAuthServerScopesScopes.property.description" id="cdktfprovideroktadataoktaauthserverscopesscopespropertydescription"></a>
+##### `description`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAuthServerScopesScopesOutputReference.property.description" id="cdktfprovideroktadataoktaauthserverscopesscopesoutputreferencepropertydescription"></a>
 
 ```typescript
 public readonly description: string;
@@ -92721,7 +93020,7 @@ public readonly description: string;
 
 ---
 
-##### `displayName`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAuthServerScopesScopes.property.displayName" id="cdktfprovideroktadataoktaauthserverscopesscopespropertydisplayname"></a>
+##### `displayName`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAuthServerScopesScopesOutputReference.property.displayName" id="cdktfprovideroktadataoktaauthserverscopesscopesoutputreferencepropertydisplayname"></a>
 
 ```typescript
 public readonly displayName: string;
@@ -92731,7 +93030,7 @@ public readonly displayName: string;
 
 ---
 
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAuthServerScopesScopes.property.id" id="cdktfprovideroktadataoktaauthserverscopesscopespropertyid"></a>
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAuthServerScopesScopesOutputReference.property.id" id="cdktfprovideroktadataoktaauthserverscopesscopesoutputreferencepropertyid"></a>
 
 ```typescript
 public readonly id: string;
@@ -92741,7 +93040,7 @@ public readonly id: string;
 
 ---
 
-##### `metadataPublish`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAuthServerScopesScopes.property.metadataPublish" id="cdktfprovideroktadataoktaauthserverscopesscopespropertymetadatapublish"></a>
+##### `metadataPublish`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAuthServerScopesScopesOutputReference.property.metadataPublish" id="cdktfprovideroktadataoktaauthserverscopesscopesoutputreferencepropertymetadatapublish"></a>
 
 ```typescript
 public readonly metadataPublish: string;
@@ -92751,7 +93050,7 @@ public readonly metadataPublish: string;
 
 ---
 
-##### `name`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAuthServerScopesScopes.property.name" id="cdktfprovideroktadataoktaauthserverscopesscopespropertyname"></a>
+##### `name`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAuthServerScopesScopesOutputReference.property.name" id="cdktfprovideroktadataoktaauthserverscopesscopesoutputreferencepropertyname"></a>
 
 ```typescript
 public readonly name: string;
@@ -92761,7 +93060,7 @@ public readonly name: string;
 
 ---
 
-##### `systemAttribute`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAuthServerScopesScopes.property.systemAttribute" id="cdktfprovideroktadataoktaauthserverscopesscopespropertysystemattribute"></a>
+##### `systemAttribute`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaAuthServerScopesScopesOutputReference.property.systemAttribute" id="cdktfprovideroktadataoktaauthserverscopesscopesoutputreferencepropertysystemattribute"></a>
 
 ```typescript
 public readonly systemAttribute: IResolvable;
@@ -92771,65 +93070,169 @@ public readonly systemAttribute: IResolvable;
 
 ---
 
-
-### DataOktaBehaviorsBehaviors <a name="@cdktf/provider-okta.DataOktaBehaviorsBehaviors" id="cdktfprovideroktadataoktabehaviorsbehaviors"></a>
-
-#### Initializers <a name="@cdktf/provider-okta.DataOktaBehaviorsBehaviors.Initializer" id="cdktfprovideroktadataoktabehaviorsbehaviorsinitializer"></a>
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-okta.DataOktaAuthServerScopesScopesOutputReference.property.internalValue" id="cdktfprovideroktadataoktaauthserverscopesscopesoutputreferencepropertyinternalvalue"></a>
 
 ```typescript
-import { DataOktaBehaviorsBehaviors } from '@cdktf/provider-okta'
+public readonly internalValue: DataOktaAuthServerScopesScopes;
+```
 
-new DataOktaBehaviorsBehaviors(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+- *Type:* [`@cdktf/provider-okta.DataOktaAuthServerScopesScopes`](#@cdktf/provider-okta.DataOktaAuthServerScopesScopes)
+
+---
+
+
+### DataOktaBehaviorsBehaviorsList <a name="@cdktf/provider-okta.DataOktaBehaviorsBehaviorsList" id="cdktfprovideroktadataoktabehaviorsbehaviorslist"></a>
+
+#### Initializers <a name="@cdktf/provider-okta.DataOktaBehaviorsBehaviorsList.Initializer" id="cdktfprovideroktadataoktabehaviorsbehaviorslistinitializer"></a>
+
+```typescript
+import { DataOktaBehaviorsBehaviorsList } from '@cdktf/provider-okta'
+
+new DataOktaBehaviorsBehaviorsList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`terraformResource`](#cdktfprovideroktadataoktabehaviorsbehaviorsparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | *No description.* |
-| [`terraformAttribute`](#cdktfprovideroktadataoktabehaviorsbehaviorsparameterterraformattribute)<span title="Required">*</span> | `string` | *No description.* |
-| [`complexComputedListIndex`](#cdktfprovideroktadataoktabehaviorsbehaviorsparametercomplexcomputedlistindex)<span title="Required">*</span> | `string` | *No description.* |
-| [`wrapsSet`](#cdktfprovideroktadataoktabehaviorsbehaviorsparameterwrapsset) | `boolean` | *No description.* |
+| [`terraformResource`](#cdktfprovideroktadataoktabehaviorsbehaviorslistparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovideroktadataoktabehaviorsbehaviorslistparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+| [`wrapsSet`](#cdktfprovideroktadataoktabehaviorsbehaviorslistparameterwrapsset)<span title="Required">*</span> | `boolean` | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaBehaviorsBehaviors.parameter.terraformResource" id="cdktfprovideroktadataoktabehaviorsbehaviorsparameterterraformresource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaBehaviorsBehaviorsList.parameter.terraformResource" id="cdktfprovideroktadataoktabehaviorsbehaviorslistparameterterraformresource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaBehaviorsBehaviors.parameter.terraformAttribute" id="cdktfprovideroktadataoktabehaviorsbehaviorsparameterterraformattribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaBehaviorsBehaviorsList.parameter.terraformAttribute" id="cdktfprovideroktadataoktabehaviorsbehaviorslistparameterterraformattribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaBehaviorsBehaviors.parameter.complexComputedListIndex" id="cdktfprovideroktadataoktabehaviorsbehaviorsparametercomplexcomputedlistindex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-okta.DataOktaBehaviorsBehaviors.parameter.wrapsSet" id="cdktfprovideroktadataoktabehaviorsbehaviorsparameterwrapsset"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaBehaviorsBehaviorsList.parameter.wrapsSet" id="cdktfprovideroktadataoktabehaviorsbehaviorslistparameterwrapsset"></a>
 
 - *Type:* `boolean`
 
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
 ---
 
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`get`](#cdktfprovideroktadataoktabehaviorsbehaviorslistget) | *No description.* |
+
+---
+
+##### `get` <a name="@cdktf/provider-okta.DataOktaBehaviorsBehaviorsList.get" id="cdktfprovideroktadataoktabehaviorsbehaviorslistget"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaBehaviorsBehaviorsList.parameter.index" id="cdktfprovideroktadataoktabehaviorsbehaviorslistparameterindex"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### DataOktaBehaviorsBehaviorsOutputReference <a name="@cdktf/provider-okta.DataOktaBehaviorsBehaviorsOutputReference" id="cdktfprovideroktadataoktabehaviorsbehaviorsoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-okta.DataOktaBehaviorsBehaviorsOutputReference.Initializer" id="cdktfprovideroktadataoktabehaviorsbehaviorsoutputreferenceinitializer"></a>
+
+```typescript
+import { DataOktaBehaviorsBehaviorsOutputReference } from '@cdktf/provider-okta'
+
+new DataOktaBehaviorsBehaviorsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovideroktadataoktabehaviorsbehaviorsoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovideroktadataoktabehaviorsbehaviorsoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+| [`complexObjectIndex`](#cdktfprovideroktadataoktabehaviorsbehaviorsoutputreferenceparametercomplexobjectindex)<span title="Required">*</span> | `number` | the index of this item in the list. |
+| [`complexObjectIsFromSet`](#cdktfprovideroktadataoktabehaviorsbehaviorsoutputreferenceparametercomplexobjectisfromset)<span title="Required">*</span> | `boolean` | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaBehaviorsBehaviorsOutputReference.parameter.terraformResource" id="cdktfprovideroktadataoktabehaviorsbehaviorsoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaBehaviorsBehaviorsOutputReference.parameter.terraformAttribute" id="cdktfprovideroktadataoktabehaviorsbehaviorsoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaBehaviorsBehaviorsOutputReference.parameter.complexObjectIndex" id="cdktfprovideroktadataoktabehaviorsbehaviorsoutputreferenceparametercomplexobjectindex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaBehaviorsBehaviorsOutputReference.parameter.complexObjectIsFromSet" id="cdktfprovideroktadataoktabehaviorsbehaviorsoutputreferenceparametercomplexobjectisfromset"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`settings`](#cdktfprovideroktadataoktabehaviorsbehaviorsoutputreferencesettings) | *No description.* |
+
+---
+
+##### `settings` <a name="@cdktf/provider-okta.DataOktaBehaviorsBehaviorsOutputReference.settings" id="cdktfprovideroktadataoktabehaviorsbehaviorsoutputreferencesettings"></a>
+
+```typescript
+public settings(key: string)
+```
+
+###### `key`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaBehaviorsBehaviorsOutputReference.parameter.key" id="cdktfprovideroktadataoktabehaviorsbehaviorsoutputreferenceparameterkey"></a>
+
+- *Type:* `string`
+
+---
 
 
 #### Properties <a name="Properties" id="properties"></a>
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`id`](#cdktfprovideroktadataoktabehaviorsbehaviorspropertyid)<span title="Required">*</span> | `string` | *No description.* |
-| [`name`](#cdktfprovideroktadataoktabehaviorsbehaviorspropertyname)<span title="Required">*</span> | `string` | *No description.* |
-| [`settings`](#cdktfprovideroktadataoktabehaviorsbehaviorspropertysettings)<span title="Required">*</span> | {[ key: string ]: `string`} | *No description.* |
-| [`status`](#cdktfprovideroktadataoktabehaviorsbehaviorspropertystatus)<span title="Required">*</span> | `string` | *No description.* |
-| [`type`](#cdktfprovideroktadataoktabehaviorsbehaviorspropertytype)<span title="Required">*</span> | `string` | *No description.* |
+| [`id`](#cdktfprovideroktadataoktabehaviorsbehaviorsoutputreferencepropertyid)<span title="Required">*</span> | `string` | *No description.* |
+| [`name`](#cdktfprovideroktadataoktabehaviorsbehaviorsoutputreferencepropertyname)<span title="Required">*</span> | `string` | *No description.* |
+| [`status`](#cdktfprovideroktadataoktabehaviorsbehaviorsoutputreferencepropertystatus)<span title="Required">*</span> | `string` | *No description.* |
+| [`type`](#cdktfprovideroktadataoktabehaviorsbehaviorsoutputreferencepropertytype)<span title="Required">*</span> | `string` | *No description.* |
+| [`internalValue`](#cdktfprovideroktadataoktabehaviorsbehaviorsoutputreferencepropertyinternalvalue) | [`@cdktf/provider-okta.DataOktaBehaviorsBehaviors`](#@cdktf/provider-okta.DataOktaBehaviorsBehaviors) | *No description.* |
 
 ---
 
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaBehaviorsBehaviors.property.id" id="cdktfprovideroktadataoktabehaviorsbehaviorspropertyid"></a>
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaBehaviorsBehaviorsOutputReference.property.id" id="cdktfprovideroktadataoktabehaviorsbehaviorsoutputreferencepropertyid"></a>
 
 ```typescript
 public readonly id: string;
@@ -92839,7 +93242,7 @@ public readonly id: string;
 
 ---
 
-##### `name`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaBehaviorsBehaviors.property.name" id="cdktfprovideroktadataoktabehaviorsbehaviorspropertyname"></a>
+##### `name`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaBehaviorsBehaviorsOutputReference.property.name" id="cdktfprovideroktadataoktabehaviorsbehaviorsoutputreferencepropertyname"></a>
 
 ```typescript
 public readonly name: string;
@@ -92849,17 +93252,7 @@ public readonly name: string;
 
 ---
 
-##### `settings`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaBehaviorsBehaviors.property.settings" id="cdktfprovideroktadataoktabehaviorsbehaviorspropertysettings"></a>
-
-```typescript
-public readonly settings: {[ key: string ]: string};
-```
-
-- *Type:* {[ key: string ]: `string`}
-
----
-
-##### `status`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaBehaviorsBehaviors.property.status" id="cdktfprovideroktadataoktabehaviorsbehaviorspropertystatus"></a>
+##### `status`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaBehaviorsBehaviorsOutputReference.property.status" id="cdktfprovideroktadataoktabehaviorsbehaviorsoutputreferencepropertystatus"></a>
 
 ```typescript
 public readonly status: string;
@@ -92869,7 +93262,7 @@ public readonly status: string;
 
 ---
 
-##### `type`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaBehaviorsBehaviors.property.type" id="cdktfprovideroktadataoktabehaviorsbehaviorspropertytype"></a>
+##### `type`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaBehaviorsBehaviorsOutputReference.property.type" id="cdktfprovideroktadataoktabehaviorsbehaviorsoutputreferencepropertytype"></a>
 
 ```typescript
 public readonly type: string;
@@ -92879,47 +93272,132 @@ public readonly type: string;
 
 ---
 
-
-### DataOktaGroupsGroups <a name="@cdktf/provider-okta.DataOktaGroupsGroups" id="cdktfprovideroktadataoktagroupsgroups"></a>
-
-#### Initializers <a name="@cdktf/provider-okta.DataOktaGroupsGroups.Initializer" id="cdktfprovideroktadataoktagroupsgroupsinitializer"></a>
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-okta.DataOktaBehaviorsBehaviorsOutputReference.property.internalValue" id="cdktfprovideroktadataoktabehaviorsbehaviorsoutputreferencepropertyinternalvalue"></a>
 
 ```typescript
-import { DataOktaGroupsGroups } from '@cdktf/provider-okta'
+public readonly internalValue: DataOktaBehaviorsBehaviors;
+```
 
-new DataOktaGroupsGroups(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+- *Type:* [`@cdktf/provider-okta.DataOktaBehaviorsBehaviors`](#@cdktf/provider-okta.DataOktaBehaviorsBehaviors)
+
+---
+
+
+### DataOktaGroupsGroupsList <a name="@cdktf/provider-okta.DataOktaGroupsGroupsList" id="cdktfprovideroktadataoktagroupsgroupslist"></a>
+
+#### Initializers <a name="@cdktf/provider-okta.DataOktaGroupsGroupsList.Initializer" id="cdktfprovideroktadataoktagroupsgroupslistinitializer"></a>
+
+```typescript
+import { DataOktaGroupsGroupsList } from '@cdktf/provider-okta'
+
+new DataOktaGroupsGroupsList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`terraformResource`](#cdktfprovideroktadataoktagroupsgroupsparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | *No description.* |
-| [`terraformAttribute`](#cdktfprovideroktadataoktagroupsgroupsparameterterraformattribute)<span title="Required">*</span> | `string` | *No description.* |
-| [`complexComputedListIndex`](#cdktfprovideroktadataoktagroupsgroupsparametercomplexcomputedlistindex)<span title="Required">*</span> | `string` | *No description.* |
-| [`wrapsSet`](#cdktfprovideroktadataoktagroupsgroupsparameterwrapsset) | `boolean` | *No description.* |
+| [`terraformResource`](#cdktfprovideroktadataoktagroupsgroupslistparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovideroktadataoktagroupsgroupslistparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+| [`wrapsSet`](#cdktfprovideroktadataoktagroupsgroupslistparameterwrapsset)<span title="Required">*</span> | `boolean` | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaGroupsGroups.parameter.terraformResource" id="cdktfprovideroktadataoktagroupsgroupsparameterterraformresource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaGroupsGroupsList.parameter.terraformResource" id="cdktfprovideroktadataoktagroupsgroupslistparameterterraformresource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaGroupsGroups.parameter.terraformAttribute" id="cdktfprovideroktadataoktagroupsgroupsparameterterraformattribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaGroupsGroupsList.parameter.terraformAttribute" id="cdktfprovideroktadataoktagroupsgroupslistparameterterraformattribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaGroupsGroups.parameter.complexComputedListIndex" id="cdktfprovideroktadataoktagroupsgroupsparametercomplexcomputedlistindex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-okta.DataOktaGroupsGroups.parameter.wrapsSet" id="cdktfprovideroktadataoktagroupsgroupsparameterwrapsset"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaGroupsGroupsList.parameter.wrapsSet" id="cdktfprovideroktadataoktagroupsgroupslistparameterwrapsset"></a>
 
 - *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`get`](#cdktfprovideroktadataoktagroupsgroupslistget) | *No description.* |
+
+---
+
+##### `get` <a name="@cdktf/provider-okta.DataOktaGroupsGroupsList.get" id="cdktfprovideroktadataoktagroupsgroupslistget"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaGroupsGroupsList.parameter.index" id="cdktfprovideroktadataoktagroupsgroupslistparameterindex"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### DataOktaGroupsGroupsOutputReference <a name="@cdktf/provider-okta.DataOktaGroupsGroupsOutputReference" id="cdktfprovideroktadataoktagroupsgroupsoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-okta.DataOktaGroupsGroupsOutputReference.Initializer" id="cdktfprovideroktadataoktagroupsgroupsoutputreferenceinitializer"></a>
+
+```typescript
+import { DataOktaGroupsGroupsOutputReference } from '@cdktf/provider-okta'
+
+new DataOktaGroupsGroupsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovideroktadataoktagroupsgroupsoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovideroktadataoktagroupsgroupsoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+| [`complexObjectIndex`](#cdktfprovideroktadataoktagroupsgroupsoutputreferenceparametercomplexobjectindex)<span title="Required">*</span> | `number` | the index of this item in the list. |
+| [`complexObjectIsFromSet`](#cdktfprovideroktadataoktagroupsgroupsoutputreferenceparametercomplexobjectisfromset)<span title="Required">*</span> | `boolean` | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaGroupsGroupsOutputReference.parameter.terraformResource" id="cdktfprovideroktadataoktagroupsgroupsoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaGroupsGroupsOutputReference.parameter.terraformAttribute" id="cdktfprovideroktadataoktagroupsgroupsoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaGroupsGroupsOutputReference.parameter.complexObjectIndex" id="cdktfprovideroktadataoktagroupsgroupsoutputreferenceparametercomplexobjectindex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaGroupsGroupsOutputReference.parameter.complexObjectIsFromSet" id="cdktfprovideroktadataoktagroupsgroupsoutputreferenceparametercomplexobjectisfromset"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -92929,14 +93407,15 @@ new DataOktaGroupsGroups(terraformResource: IInterpolatingParent, terraformAttri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`description`](#cdktfprovideroktadataoktagroupsgroupspropertydescription)<span title="Required">*</span> | `string` | *No description.* |
-| [`id`](#cdktfprovideroktadataoktagroupsgroupspropertyid)<span title="Required">*</span> | `string` | *No description.* |
-| [`name`](#cdktfprovideroktadataoktagroupsgroupspropertyname)<span title="Required">*</span> | `string` | *No description.* |
-| [`type`](#cdktfprovideroktadataoktagroupsgroupspropertytype)<span title="Required">*</span> | `string` | *No description.* |
+| [`description`](#cdktfprovideroktadataoktagroupsgroupsoutputreferencepropertydescription)<span title="Required">*</span> | `string` | *No description.* |
+| [`id`](#cdktfprovideroktadataoktagroupsgroupsoutputreferencepropertyid)<span title="Required">*</span> | `string` | *No description.* |
+| [`name`](#cdktfprovideroktadataoktagroupsgroupsoutputreferencepropertyname)<span title="Required">*</span> | `string` | *No description.* |
+| [`type`](#cdktfprovideroktadataoktagroupsgroupsoutputreferencepropertytype)<span title="Required">*</span> | `string` | *No description.* |
+| [`internalValue`](#cdktfprovideroktadataoktagroupsgroupsoutputreferencepropertyinternalvalue) | [`@cdktf/provider-okta.DataOktaGroupsGroups`](#@cdktf/provider-okta.DataOktaGroupsGroups) | *No description.* |
 
 ---
 
-##### `description`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaGroupsGroups.property.description" id="cdktfprovideroktadataoktagroupsgroupspropertydescription"></a>
+##### `description`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaGroupsGroupsOutputReference.property.description" id="cdktfprovideroktadataoktagroupsgroupsoutputreferencepropertydescription"></a>
 
 ```typescript
 public readonly description: string;
@@ -92946,7 +93425,7 @@ public readonly description: string;
 
 ---
 
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaGroupsGroups.property.id" id="cdktfprovideroktadataoktagroupsgroupspropertyid"></a>
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaGroupsGroupsOutputReference.property.id" id="cdktfprovideroktadataoktagroupsgroupsoutputreferencepropertyid"></a>
 
 ```typescript
 public readonly id: string;
@@ -92956,7 +93435,7 @@ public readonly id: string;
 
 ---
 
-##### `name`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaGroupsGroups.property.name" id="cdktfprovideroktadataoktagroupsgroupspropertyname"></a>
+##### `name`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaGroupsGroupsOutputReference.property.name" id="cdktfprovideroktadataoktagroupsgroupsoutputreferencepropertyname"></a>
 
 ```typescript
 public readonly name: string;
@@ -92966,7 +93445,7 @@ public readonly name: string;
 
 ---
 
-##### `type`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaGroupsGroups.property.type" id="cdktfprovideroktadataoktagroupsgroupspropertytype"></a>
+##### `type`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaGroupsGroupsOutputReference.property.type" id="cdktfprovideroktadataoktagroupsgroupsoutputreferencepropertytype"></a>
 
 ```typescript
 public readonly type: string;
@@ -92976,47 +93455,132 @@ public readonly type: string;
 
 ---
 
-
-### DataOktaTrustedOriginsTrustedOrigins <a name="@cdktf/provider-okta.DataOktaTrustedOriginsTrustedOrigins" id="cdktfprovideroktadataoktatrustedoriginstrustedorigins"></a>
-
-#### Initializers <a name="@cdktf/provider-okta.DataOktaTrustedOriginsTrustedOrigins.Initializer" id="cdktfprovideroktadataoktatrustedoriginstrustedoriginsinitializer"></a>
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-okta.DataOktaGroupsGroupsOutputReference.property.internalValue" id="cdktfprovideroktadataoktagroupsgroupsoutputreferencepropertyinternalvalue"></a>
 
 ```typescript
-import { DataOktaTrustedOriginsTrustedOrigins } from '@cdktf/provider-okta'
+public readonly internalValue: DataOktaGroupsGroups;
+```
 
-new DataOktaTrustedOriginsTrustedOrigins(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+- *Type:* [`@cdktf/provider-okta.DataOktaGroupsGroups`](#@cdktf/provider-okta.DataOktaGroupsGroups)
+
+---
+
+
+### DataOktaTrustedOriginsTrustedOriginsList <a name="@cdktf/provider-okta.DataOktaTrustedOriginsTrustedOriginsList" id="cdktfprovideroktadataoktatrustedoriginstrustedoriginslist"></a>
+
+#### Initializers <a name="@cdktf/provider-okta.DataOktaTrustedOriginsTrustedOriginsList.Initializer" id="cdktfprovideroktadataoktatrustedoriginstrustedoriginslistinitializer"></a>
+
+```typescript
+import { DataOktaTrustedOriginsTrustedOriginsList } from '@cdktf/provider-okta'
+
+new DataOktaTrustedOriginsTrustedOriginsList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`terraformResource`](#cdktfprovideroktadataoktatrustedoriginstrustedoriginsparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | *No description.* |
-| [`terraformAttribute`](#cdktfprovideroktadataoktatrustedoriginstrustedoriginsparameterterraformattribute)<span title="Required">*</span> | `string` | *No description.* |
-| [`complexComputedListIndex`](#cdktfprovideroktadataoktatrustedoriginstrustedoriginsparametercomplexcomputedlistindex)<span title="Required">*</span> | `string` | *No description.* |
-| [`wrapsSet`](#cdktfprovideroktadataoktatrustedoriginstrustedoriginsparameterwrapsset) | `boolean` | *No description.* |
+| [`terraformResource`](#cdktfprovideroktadataoktatrustedoriginstrustedoriginslistparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovideroktadataoktatrustedoriginstrustedoriginslistparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+| [`wrapsSet`](#cdktfprovideroktadataoktatrustedoriginstrustedoriginslistparameterwrapsset)<span title="Required">*</span> | `boolean` | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaTrustedOriginsTrustedOrigins.parameter.terraformResource" id="cdktfprovideroktadataoktatrustedoriginstrustedoriginsparameterterraformresource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaTrustedOriginsTrustedOriginsList.parameter.terraformResource" id="cdktfprovideroktadataoktatrustedoriginstrustedoriginslistparameterterraformresource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaTrustedOriginsTrustedOrigins.parameter.terraformAttribute" id="cdktfprovideroktadataoktatrustedoriginstrustedoriginsparameterterraformattribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaTrustedOriginsTrustedOriginsList.parameter.terraformAttribute" id="cdktfprovideroktadataoktatrustedoriginstrustedoriginslistparameterterraformattribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaTrustedOriginsTrustedOrigins.parameter.complexComputedListIndex" id="cdktfprovideroktadataoktatrustedoriginstrustedoriginsparametercomplexcomputedlistindex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-okta.DataOktaTrustedOriginsTrustedOrigins.parameter.wrapsSet" id="cdktfprovideroktadataoktatrustedoriginstrustedoriginsparameterwrapsset"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaTrustedOriginsTrustedOriginsList.parameter.wrapsSet" id="cdktfprovideroktadataoktatrustedoriginstrustedoriginslistparameterwrapsset"></a>
 
 - *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`get`](#cdktfprovideroktadataoktatrustedoriginstrustedoriginslistget) | *No description.* |
+
+---
+
+##### `get` <a name="@cdktf/provider-okta.DataOktaTrustedOriginsTrustedOriginsList.get" id="cdktfprovideroktadataoktatrustedoriginstrustedoriginslistget"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaTrustedOriginsTrustedOriginsList.parameter.index" id="cdktfprovideroktadataoktatrustedoriginstrustedoriginslistparameterindex"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### DataOktaTrustedOriginsTrustedOriginsOutputReference <a name="@cdktf/provider-okta.DataOktaTrustedOriginsTrustedOriginsOutputReference" id="cdktfprovideroktadataoktatrustedoriginstrustedoriginsoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-okta.DataOktaTrustedOriginsTrustedOriginsOutputReference.Initializer" id="cdktfprovideroktadataoktatrustedoriginstrustedoriginsoutputreferenceinitializer"></a>
+
+```typescript
+import { DataOktaTrustedOriginsTrustedOriginsOutputReference } from '@cdktf/provider-okta'
+
+new DataOktaTrustedOriginsTrustedOriginsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovideroktadataoktatrustedoriginstrustedoriginsoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovideroktadataoktatrustedoriginstrustedoriginsoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+| [`complexObjectIndex`](#cdktfprovideroktadataoktatrustedoriginstrustedoriginsoutputreferenceparametercomplexobjectindex)<span title="Required">*</span> | `number` | the index of this item in the list. |
+| [`complexObjectIsFromSet`](#cdktfprovideroktadataoktatrustedoriginstrustedoriginsoutputreferenceparametercomplexobjectisfromset)<span title="Required">*</span> | `boolean` | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaTrustedOriginsTrustedOriginsOutputReference.parameter.terraformResource" id="cdktfprovideroktadataoktatrustedoriginstrustedoriginsoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaTrustedOriginsTrustedOriginsOutputReference.parameter.terraformAttribute" id="cdktfprovideroktadataoktatrustedoriginstrustedoriginsoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaTrustedOriginsTrustedOriginsOutputReference.parameter.complexObjectIndex" id="cdktfprovideroktadataoktatrustedoriginstrustedoriginsoutputreferenceparametercomplexobjectindex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaTrustedOriginsTrustedOriginsOutputReference.parameter.complexObjectIsFromSet" id="cdktfprovideroktadataoktatrustedoriginstrustedoriginsoutputreferenceparametercomplexobjectisfromset"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -93026,15 +93590,16 @@ new DataOktaTrustedOriginsTrustedOrigins(terraformResource: IInterpolatingParent
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`active`](#cdktfprovideroktadataoktatrustedoriginstrustedoriginspropertyactive)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
-| [`id`](#cdktfprovideroktadataoktatrustedoriginstrustedoriginspropertyid)<span title="Required">*</span> | `string` | *No description.* |
-| [`name`](#cdktfprovideroktadataoktatrustedoriginstrustedoriginspropertyname)<span title="Required">*</span> | `string` | *No description.* |
-| [`origin`](#cdktfprovideroktadataoktatrustedoriginstrustedoriginspropertyorigin)<span title="Required">*</span> | `string` | *No description.* |
-| [`scopes`](#cdktfprovideroktadataoktatrustedoriginstrustedoriginspropertyscopes)<span title="Required">*</span> | `string`[] | *No description.* |
+| [`active`](#cdktfprovideroktadataoktatrustedoriginstrustedoriginsoutputreferencepropertyactive)<span title="Required">*</span> | [`cdktf.IResolvable`](#cdktf.IResolvable) | *No description.* |
+| [`id`](#cdktfprovideroktadataoktatrustedoriginstrustedoriginsoutputreferencepropertyid)<span title="Required">*</span> | `string` | *No description.* |
+| [`name`](#cdktfprovideroktadataoktatrustedoriginstrustedoriginsoutputreferencepropertyname)<span title="Required">*</span> | `string` | *No description.* |
+| [`origin`](#cdktfprovideroktadataoktatrustedoriginstrustedoriginsoutputreferencepropertyorigin)<span title="Required">*</span> | `string` | *No description.* |
+| [`scopes`](#cdktfprovideroktadataoktatrustedoriginstrustedoriginsoutputreferencepropertyscopes)<span title="Required">*</span> | `string`[] | *No description.* |
+| [`internalValue`](#cdktfprovideroktadataoktatrustedoriginstrustedoriginsoutputreferencepropertyinternalvalue) | [`@cdktf/provider-okta.DataOktaTrustedOriginsTrustedOrigins`](#@cdktf/provider-okta.DataOktaTrustedOriginsTrustedOrigins) | *No description.* |
 
 ---
 
-##### `active`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaTrustedOriginsTrustedOrigins.property.active" id="cdktfprovideroktadataoktatrustedoriginstrustedoriginspropertyactive"></a>
+##### `active`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaTrustedOriginsTrustedOriginsOutputReference.property.active" id="cdktfprovideroktadataoktatrustedoriginstrustedoriginsoutputreferencepropertyactive"></a>
 
 ```typescript
 public readonly active: IResolvable;
@@ -93044,7 +93609,7 @@ public readonly active: IResolvable;
 
 ---
 
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaTrustedOriginsTrustedOrigins.property.id" id="cdktfprovideroktadataoktatrustedoriginstrustedoriginspropertyid"></a>
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaTrustedOriginsTrustedOriginsOutputReference.property.id" id="cdktfprovideroktadataoktatrustedoriginstrustedoriginsoutputreferencepropertyid"></a>
 
 ```typescript
 public readonly id: string;
@@ -93054,7 +93619,7 @@ public readonly id: string;
 
 ---
 
-##### `name`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaTrustedOriginsTrustedOrigins.property.name" id="cdktfprovideroktadataoktatrustedoriginstrustedoriginspropertyname"></a>
+##### `name`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaTrustedOriginsTrustedOriginsOutputReference.property.name" id="cdktfprovideroktadataoktatrustedoriginstrustedoriginsoutputreferencepropertyname"></a>
 
 ```typescript
 public readonly name: string;
@@ -93064,7 +93629,7 @@ public readonly name: string;
 
 ---
 
-##### `origin`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaTrustedOriginsTrustedOrigins.property.origin" id="cdktfprovideroktadataoktatrustedoriginstrustedoriginspropertyorigin"></a>
+##### `origin`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaTrustedOriginsTrustedOriginsOutputReference.property.origin" id="cdktfprovideroktadataoktatrustedoriginstrustedoriginsoutputreferencepropertyorigin"></a>
 
 ```typescript
 public readonly origin: string;
@@ -93074,7 +93639,7 @@ public readonly origin: string;
 
 ---
 
-##### `scopes`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaTrustedOriginsTrustedOrigins.property.scopes" id="cdktfprovideroktadataoktatrustedoriginstrustedoriginspropertyscopes"></a>
+##### `scopes`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaTrustedOriginsTrustedOriginsOutputReference.property.scopes" id="cdktfprovideroktadataoktatrustedoriginstrustedoriginsoutputreferencepropertyscopes"></a>
 
 ```typescript
 public readonly scopes: string[];
@@ -93084,47 +93649,132 @@ public readonly scopes: string[];
 
 ---
 
-
-### DataOktaUserSecurityQuestionsQuestions <a name="@cdktf/provider-okta.DataOktaUserSecurityQuestionsQuestions" id="cdktfprovideroktadataoktausersecurityquestionsquestions"></a>
-
-#### Initializers <a name="@cdktf/provider-okta.DataOktaUserSecurityQuestionsQuestions.Initializer" id="cdktfprovideroktadataoktausersecurityquestionsquestionsinitializer"></a>
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-okta.DataOktaTrustedOriginsTrustedOriginsOutputReference.property.internalValue" id="cdktfprovideroktadataoktatrustedoriginstrustedoriginsoutputreferencepropertyinternalvalue"></a>
 
 ```typescript
-import { DataOktaUserSecurityQuestionsQuestions } from '@cdktf/provider-okta'
+public readonly internalValue: DataOktaTrustedOriginsTrustedOrigins;
+```
 
-new DataOktaUserSecurityQuestionsQuestions(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+- *Type:* [`@cdktf/provider-okta.DataOktaTrustedOriginsTrustedOrigins`](#@cdktf/provider-okta.DataOktaTrustedOriginsTrustedOrigins)
+
+---
+
+
+### DataOktaUserSecurityQuestionsQuestionsList <a name="@cdktf/provider-okta.DataOktaUserSecurityQuestionsQuestionsList" id="cdktfprovideroktadataoktausersecurityquestionsquestionslist"></a>
+
+#### Initializers <a name="@cdktf/provider-okta.DataOktaUserSecurityQuestionsQuestionsList.Initializer" id="cdktfprovideroktadataoktausersecurityquestionsquestionslistinitializer"></a>
+
+```typescript
+import { DataOktaUserSecurityQuestionsQuestionsList } from '@cdktf/provider-okta'
+
+new DataOktaUserSecurityQuestionsQuestionsList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`terraformResource`](#cdktfprovideroktadataoktausersecurityquestionsquestionsparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | *No description.* |
-| [`terraformAttribute`](#cdktfprovideroktadataoktausersecurityquestionsquestionsparameterterraformattribute)<span title="Required">*</span> | `string` | *No description.* |
-| [`complexComputedListIndex`](#cdktfprovideroktadataoktausersecurityquestionsquestionsparametercomplexcomputedlistindex)<span title="Required">*</span> | `string` | *No description.* |
-| [`wrapsSet`](#cdktfprovideroktadataoktausersecurityquestionsquestionsparameterwrapsset) | `boolean` | *No description.* |
+| [`terraformResource`](#cdktfprovideroktadataoktausersecurityquestionsquestionslistparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovideroktadataoktausersecurityquestionsquestionslistparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+| [`wrapsSet`](#cdktfprovideroktadataoktausersecurityquestionsquestionslistparameterwrapsset)<span title="Required">*</span> | `boolean` | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUserSecurityQuestionsQuestions.parameter.terraformResource" id="cdktfprovideroktadataoktausersecurityquestionsquestionsparameterterraformresource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUserSecurityQuestionsQuestionsList.parameter.terraformResource" id="cdktfprovideroktadataoktausersecurityquestionsquestionslistparameterterraformresource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUserSecurityQuestionsQuestions.parameter.terraformAttribute" id="cdktfprovideroktadataoktausersecurityquestionsquestionsparameterterraformattribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUserSecurityQuestionsQuestionsList.parameter.terraformAttribute" id="cdktfprovideroktadataoktausersecurityquestionsquestionslistparameterterraformattribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUserSecurityQuestionsQuestions.parameter.complexComputedListIndex" id="cdktfprovideroktadataoktausersecurityquestionsquestionsparametercomplexcomputedlistindex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-okta.DataOktaUserSecurityQuestionsQuestions.parameter.wrapsSet" id="cdktfprovideroktadataoktausersecurityquestionsquestionsparameterwrapsset"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUserSecurityQuestionsQuestionsList.parameter.wrapsSet" id="cdktfprovideroktadataoktausersecurityquestionsquestionslistparameterwrapsset"></a>
 
 - *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`get`](#cdktfprovideroktadataoktausersecurityquestionsquestionslistget) | *No description.* |
+
+---
+
+##### `get` <a name="@cdktf/provider-okta.DataOktaUserSecurityQuestionsQuestionsList.get" id="cdktfprovideroktadataoktausersecurityquestionsquestionslistget"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUserSecurityQuestionsQuestionsList.parameter.index" id="cdktfprovideroktadataoktausersecurityquestionsquestionslistparameterindex"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### DataOktaUserSecurityQuestionsQuestionsOutputReference <a name="@cdktf/provider-okta.DataOktaUserSecurityQuestionsQuestionsOutputReference" id="cdktfprovideroktadataoktausersecurityquestionsquestionsoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-okta.DataOktaUserSecurityQuestionsQuestionsOutputReference.Initializer" id="cdktfprovideroktadataoktausersecurityquestionsquestionsoutputreferenceinitializer"></a>
+
+```typescript
+import { DataOktaUserSecurityQuestionsQuestionsOutputReference } from '@cdktf/provider-okta'
+
+new DataOktaUserSecurityQuestionsQuestionsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovideroktadataoktausersecurityquestionsquestionsoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovideroktadataoktausersecurityquestionsquestionsoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+| [`complexObjectIndex`](#cdktfprovideroktadataoktausersecurityquestionsquestionsoutputreferenceparametercomplexobjectindex)<span title="Required">*</span> | `number` | the index of this item in the list. |
+| [`complexObjectIsFromSet`](#cdktfprovideroktadataoktausersecurityquestionsquestionsoutputreferenceparametercomplexobjectisfromset)<span title="Required">*</span> | `boolean` | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUserSecurityQuestionsQuestionsOutputReference.parameter.terraformResource" id="cdktfprovideroktadataoktausersecurityquestionsquestionsoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUserSecurityQuestionsQuestionsOutputReference.parameter.terraformAttribute" id="cdktfprovideroktadataoktausersecurityquestionsquestionsoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUserSecurityQuestionsQuestionsOutputReference.parameter.complexObjectIndex" id="cdktfprovideroktadataoktausersecurityquestionsquestionsoutputreferenceparametercomplexobjectindex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUserSecurityQuestionsQuestionsOutputReference.parameter.complexObjectIsFromSet" id="cdktfprovideroktadataoktausersecurityquestionsquestionsoutputreferenceparametercomplexobjectisfromset"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -93134,12 +93784,13 @@ new DataOktaUserSecurityQuestionsQuestions(terraformResource: IInterpolatingPare
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`key`](#cdktfprovideroktadataoktausersecurityquestionsquestionspropertykey)<span title="Required">*</span> | `string` | *No description.* |
-| [`text`](#cdktfprovideroktadataoktausersecurityquestionsquestionspropertytext)<span title="Required">*</span> | `string` | *No description.* |
+| [`key`](#cdktfprovideroktadataoktausersecurityquestionsquestionsoutputreferencepropertykey)<span title="Required">*</span> | `string` | *No description.* |
+| [`text`](#cdktfprovideroktadataoktausersecurityquestionsquestionsoutputreferencepropertytext)<span title="Required">*</span> | `string` | *No description.* |
+| [`internalValue`](#cdktfprovideroktadataoktausersecurityquestionsquestionsoutputreferencepropertyinternalvalue) | [`@cdktf/provider-okta.DataOktaUserSecurityQuestionsQuestions`](#@cdktf/provider-okta.DataOktaUserSecurityQuestionsQuestions) | *No description.* |
 
 ---
 
-##### `key`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUserSecurityQuestionsQuestions.property.key" id="cdktfprovideroktadataoktausersecurityquestionsquestionspropertykey"></a>
+##### `key`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUserSecurityQuestionsQuestionsOutputReference.property.key" id="cdktfprovideroktadataoktausersecurityquestionsquestionsoutputreferencepropertykey"></a>
 
 ```typescript
 public readonly key: string;
@@ -93149,7 +93800,7 @@ public readonly key: string;
 
 ---
 
-##### `text`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUserSecurityQuestionsQuestions.property.text" id="cdktfprovideroktadataoktausersecurityquestionsquestionspropertytext"></a>
+##### `text`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUserSecurityQuestionsQuestionsOutputReference.property.text" id="cdktfprovideroktadataoktausersecurityquestionsquestionsoutputreferencepropertytext"></a>
 
 ```typescript
 public readonly text: string;
@@ -93159,47 +93810,132 @@ public readonly text: string;
 
 ---
 
-
-### DataOktaUsersUsers <a name="@cdktf/provider-okta.DataOktaUsersUsers" id="cdktfprovideroktadataoktausersusers"></a>
-
-#### Initializers <a name="@cdktf/provider-okta.DataOktaUsersUsers.Initializer" id="cdktfprovideroktadataoktausersusersinitializer"></a>
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-okta.DataOktaUserSecurityQuestionsQuestionsOutputReference.property.internalValue" id="cdktfprovideroktadataoktausersecurityquestionsquestionsoutputreferencepropertyinternalvalue"></a>
 
 ```typescript
-import { DataOktaUsersUsers } from '@cdktf/provider-okta'
+public readonly internalValue: DataOktaUserSecurityQuestionsQuestions;
+```
 
-new DataOktaUsersUsers(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+- *Type:* [`@cdktf/provider-okta.DataOktaUserSecurityQuestionsQuestions`](#@cdktf/provider-okta.DataOktaUserSecurityQuestionsQuestions)
+
+---
+
+
+### DataOktaUsersUsersList <a name="@cdktf/provider-okta.DataOktaUsersUsersList" id="cdktfprovideroktadataoktausersuserslist"></a>
+
+#### Initializers <a name="@cdktf/provider-okta.DataOktaUsersUsersList.Initializer" id="cdktfprovideroktadataoktausersuserslistinitializer"></a>
+
+```typescript
+import { DataOktaUsersUsersList } from '@cdktf/provider-okta'
+
+new DataOktaUsersUsersList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`terraformResource`](#cdktfprovideroktadataoktausersusersparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | *No description.* |
-| [`terraformAttribute`](#cdktfprovideroktadataoktausersusersparameterterraformattribute)<span title="Required">*</span> | `string` | *No description.* |
-| [`complexComputedListIndex`](#cdktfprovideroktadataoktausersusersparametercomplexcomputedlistindex)<span title="Required">*</span> | `string` | *No description.* |
-| [`wrapsSet`](#cdktfprovideroktadataoktausersusersparameterwrapsset) | `boolean` | *No description.* |
+| [`terraformResource`](#cdktfprovideroktadataoktausersuserslistparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovideroktadataoktausersuserslistparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+| [`wrapsSet`](#cdktfprovideroktadataoktausersuserslistparameterwrapsset)<span title="Required">*</span> | `boolean` | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsers.parameter.terraformResource" id="cdktfprovideroktadataoktausersusersparameterterraformresource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsersList.parameter.terraformResource" id="cdktfprovideroktadataoktausersuserslistparameterterraformresource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsers.parameter.terraformAttribute" id="cdktfprovideroktadataoktausersusersparameterterraformattribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsersList.parameter.terraformAttribute" id="cdktfprovideroktadataoktausersuserslistparameterterraformattribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsers.parameter.complexComputedListIndex" id="cdktfprovideroktadataoktausersusersparametercomplexcomputedlistindex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsers.parameter.wrapsSet" id="cdktfprovideroktadataoktausersusersparameterwrapsset"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsersList.parameter.wrapsSet" id="cdktfprovideroktadataoktausersuserslistparameterwrapsset"></a>
 
 - *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`get`](#cdktfprovideroktadataoktausersuserslistget) | *No description.* |
+
+---
+
+##### `get` <a name="@cdktf/provider-okta.DataOktaUsersUsersList.get" id="cdktfprovideroktadataoktausersuserslistget"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsersList.parameter.index" id="cdktfprovideroktadataoktausersuserslistparameterindex"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### DataOktaUsersUsersOutputReference <a name="@cdktf/provider-okta.DataOktaUsersUsersOutputReference" id="cdktfprovideroktadataoktausersusersoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-okta.DataOktaUsersUsersOutputReference.Initializer" id="cdktfprovideroktadataoktausersusersoutputreferenceinitializer"></a>
+
+```typescript
+import { DataOktaUsersUsersOutputReference } from '@cdktf/provider-okta'
+
+new DataOktaUsersUsersOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovideroktadataoktausersusersoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovideroktadataoktausersusersoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+| [`complexObjectIndex`](#cdktfprovideroktadataoktausersusersoutputreferenceparametercomplexobjectindex)<span title="Required">*</span> | `number` | the index of this item in the list. |
+| [`complexObjectIsFromSet`](#cdktfprovideroktadataoktausersusersoutputreferenceparametercomplexobjectisfromset)<span title="Required">*</span> | `boolean` | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsersOutputReference.parameter.terraformResource" id="cdktfprovideroktadataoktausersusersoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsersOutputReference.parameter.terraformAttribute" id="cdktfprovideroktadataoktausersusersoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsersOutputReference.parameter.complexObjectIndex" id="cdktfprovideroktadataoktausersusersoutputreferenceparametercomplexobjectindex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsersOutputReference.parameter.complexObjectIsFromSet" id="cdktfprovideroktadataoktausersusersoutputreferenceparametercomplexobjectisfromset"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -93209,46 +93945,47 @@ new DataOktaUsersUsers(terraformResource: IInterpolatingParent, terraformAttribu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`adminRoles`](#cdktfprovideroktadataoktausersuserspropertyadminroles)<span title="Required">*</span> | `string`[] | *No description.* |
-| [`city`](#cdktfprovideroktadataoktausersuserspropertycity)<span title="Required">*</span> | `string` | *No description.* |
-| [`costCenter`](#cdktfprovideroktadataoktausersuserspropertycostcenter)<span title="Required">*</span> | `string` | *No description.* |
-| [`countryCode`](#cdktfprovideroktadataoktausersuserspropertycountrycode)<span title="Required">*</span> | `string` | *No description.* |
-| [`customProfileAttributes`](#cdktfprovideroktadataoktausersuserspropertycustomprofileattributes)<span title="Required">*</span> | `string` | *No description.* |
-| [`department`](#cdktfprovideroktadataoktausersuserspropertydepartment)<span title="Required">*</span> | `string` | *No description.* |
-| [`displayName`](#cdktfprovideroktadataoktausersuserspropertydisplayname)<span title="Required">*</span> | `string` | *No description.* |
-| [`division`](#cdktfprovideroktadataoktausersuserspropertydivision)<span title="Required">*</span> | `string` | *No description.* |
-| [`email`](#cdktfprovideroktadataoktausersuserspropertyemail)<span title="Required">*</span> | `string` | *No description.* |
-| [`employeeNumber`](#cdktfprovideroktadataoktausersuserspropertyemployeenumber)<span title="Required">*</span> | `string` | *No description.* |
-| [`firstName`](#cdktfprovideroktadataoktausersuserspropertyfirstname)<span title="Required">*</span> | `string` | *No description.* |
-| [`groupMemberships`](#cdktfprovideroktadataoktausersuserspropertygroupmemberships)<span title="Required">*</span> | `string`[] | *No description.* |
-| [`honorificPrefix`](#cdktfprovideroktadataoktausersuserspropertyhonorificprefix)<span title="Required">*</span> | `string` | *No description.* |
-| [`honorificSuffix`](#cdktfprovideroktadataoktausersuserspropertyhonorificsuffix)<span title="Required">*</span> | `string` | *No description.* |
-| [`id`](#cdktfprovideroktadataoktausersuserspropertyid)<span title="Required">*</span> | `string` | *No description.* |
-| [`lastName`](#cdktfprovideroktadataoktausersuserspropertylastname)<span title="Required">*</span> | `string` | *No description.* |
-| [`locale`](#cdktfprovideroktadataoktausersuserspropertylocale)<span title="Required">*</span> | `string` | *No description.* |
-| [`login`](#cdktfprovideroktadataoktausersuserspropertylogin)<span title="Required">*</span> | `string` | *No description.* |
-| [`manager`](#cdktfprovideroktadataoktausersuserspropertymanager)<span title="Required">*</span> | `string` | *No description.* |
-| [`managerId`](#cdktfprovideroktadataoktausersuserspropertymanagerid)<span title="Required">*</span> | `string` | *No description.* |
-| [`middleName`](#cdktfprovideroktadataoktausersuserspropertymiddlename)<span title="Required">*</span> | `string` | *No description.* |
-| [`mobilePhone`](#cdktfprovideroktadataoktausersuserspropertymobilephone)<span title="Required">*</span> | `string` | *No description.* |
-| [`nickName`](#cdktfprovideroktadataoktausersuserspropertynickname)<span title="Required">*</span> | `string` | *No description.* |
-| [`organization`](#cdktfprovideroktadataoktausersuserspropertyorganization)<span title="Required">*</span> | `string` | *No description.* |
-| [`postalAddress`](#cdktfprovideroktadataoktausersuserspropertypostaladdress)<span title="Required">*</span> | `string` | *No description.* |
-| [`preferredLanguage`](#cdktfprovideroktadataoktausersuserspropertypreferredlanguage)<span title="Required">*</span> | `string` | *No description.* |
-| [`primaryPhone`](#cdktfprovideroktadataoktausersuserspropertyprimaryphone)<span title="Required">*</span> | `string` | *No description.* |
-| [`profileUrl`](#cdktfprovideroktadataoktausersuserspropertyprofileurl)<span title="Required">*</span> | `string` | *No description.* |
-| [`secondEmail`](#cdktfprovideroktadataoktausersuserspropertysecondemail)<span title="Required">*</span> | `string` | *No description.* |
-| [`state`](#cdktfprovideroktadataoktausersuserspropertystate)<span title="Required">*</span> | `string` | *No description.* |
-| [`status`](#cdktfprovideroktadataoktausersuserspropertystatus)<span title="Required">*</span> | `string` | *No description.* |
-| [`streetAddress`](#cdktfprovideroktadataoktausersuserspropertystreetaddress)<span title="Required">*</span> | `string` | *No description.* |
-| [`timezone`](#cdktfprovideroktadataoktausersuserspropertytimezone)<span title="Required">*</span> | `string` | *No description.* |
-| [`title`](#cdktfprovideroktadataoktausersuserspropertytitle)<span title="Required">*</span> | `string` | *No description.* |
-| [`userType`](#cdktfprovideroktadataoktausersuserspropertyusertype)<span title="Required">*</span> | `string` | *No description.* |
-| [`zipCode`](#cdktfprovideroktadataoktausersuserspropertyzipcode)<span title="Required">*</span> | `string` | *No description.* |
+| [`adminRoles`](#cdktfprovideroktadataoktausersusersoutputreferencepropertyadminroles)<span title="Required">*</span> | `string`[] | *No description.* |
+| [`city`](#cdktfprovideroktadataoktausersusersoutputreferencepropertycity)<span title="Required">*</span> | `string` | *No description.* |
+| [`costCenter`](#cdktfprovideroktadataoktausersusersoutputreferencepropertycostcenter)<span title="Required">*</span> | `string` | *No description.* |
+| [`countryCode`](#cdktfprovideroktadataoktausersusersoutputreferencepropertycountrycode)<span title="Required">*</span> | `string` | *No description.* |
+| [`customProfileAttributes`](#cdktfprovideroktadataoktausersusersoutputreferencepropertycustomprofileattributes)<span title="Required">*</span> | `string` | *No description.* |
+| [`department`](#cdktfprovideroktadataoktausersusersoutputreferencepropertydepartment)<span title="Required">*</span> | `string` | *No description.* |
+| [`displayName`](#cdktfprovideroktadataoktausersusersoutputreferencepropertydisplayname)<span title="Required">*</span> | `string` | *No description.* |
+| [`division`](#cdktfprovideroktadataoktausersusersoutputreferencepropertydivision)<span title="Required">*</span> | `string` | *No description.* |
+| [`email`](#cdktfprovideroktadataoktausersusersoutputreferencepropertyemail)<span title="Required">*</span> | `string` | *No description.* |
+| [`employeeNumber`](#cdktfprovideroktadataoktausersusersoutputreferencepropertyemployeenumber)<span title="Required">*</span> | `string` | *No description.* |
+| [`firstName`](#cdktfprovideroktadataoktausersusersoutputreferencepropertyfirstname)<span title="Required">*</span> | `string` | *No description.* |
+| [`groupMemberships`](#cdktfprovideroktadataoktausersusersoutputreferencepropertygroupmemberships)<span title="Required">*</span> | `string`[] | *No description.* |
+| [`honorificPrefix`](#cdktfprovideroktadataoktausersusersoutputreferencepropertyhonorificprefix)<span title="Required">*</span> | `string` | *No description.* |
+| [`honorificSuffix`](#cdktfprovideroktadataoktausersusersoutputreferencepropertyhonorificsuffix)<span title="Required">*</span> | `string` | *No description.* |
+| [`id`](#cdktfprovideroktadataoktausersusersoutputreferencepropertyid)<span title="Required">*</span> | `string` | *No description.* |
+| [`lastName`](#cdktfprovideroktadataoktausersusersoutputreferencepropertylastname)<span title="Required">*</span> | `string` | *No description.* |
+| [`locale`](#cdktfprovideroktadataoktausersusersoutputreferencepropertylocale)<span title="Required">*</span> | `string` | *No description.* |
+| [`login`](#cdktfprovideroktadataoktausersusersoutputreferencepropertylogin)<span title="Required">*</span> | `string` | *No description.* |
+| [`manager`](#cdktfprovideroktadataoktausersusersoutputreferencepropertymanager)<span title="Required">*</span> | `string` | *No description.* |
+| [`managerId`](#cdktfprovideroktadataoktausersusersoutputreferencepropertymanagerid)<span title="Required">*</span> | `string` | *No description.* |
+| [`middleName`](#cdktfprovideroktadataoktausersusersoutputreferencepropertymiddlename)<span title="Required">*</span> | `string` | *No description.* |
+| [`mobilePhone`](#cdktfprovideroktadataoktausersusersoutputreferencepropertymobilephone)<span title="Required">*</span> | `string` | *No description.* |
+| [`nickName`](#cdktfprovideroktadataoktausersusersoutputreferencepropertynickname)<span title="Required">*</span> | `string` | *No description.* |
+| [`organization`](#cdktfprovideroktadataoktausersusersoutputreferencepropertyorganization)<span title="Required">*</span> | `string` | *No description.* |
+| [`postalAddress`](#cdktfprovideroktadataoktausersusersoutputreferencepropertypostaladdress)<span title="Required">*</span> | `string` | *No description.* |
+| [`preferredLanguage`](#cdktfprovideroktadataoktausersusersoutputreferencepropertypreferredlanguage)<span title="Required">*</span> | `string` | *No description.* |
+| [`primaryPhone`](#cdktfprovideroktadataoktausersusersoutputreferencepropertyprimaryphone)<span title="Required">*</span> | `string` | *No description.* |
+| [`profileUrl`](#cdktfprovideroktadataoktausersusersoutputreferencepropertyprofileurl)<span title="Required">*</span> | `string` | *No description.* |
+| [`secondEmail`](#cdktfprovideroktadataoktausersusersoutputreferencepropertysecondemail)<span title="Required">*</span> | `string` | *No description.* |
+| [`state`](#cdktfprovideroktadataoktausersusersoutputreferencepropertystate)<span title="Required">*</span> | `string` | *No description.* |
+| [`status`](#cdktfprovideroktadataoktausersusersoutputreferencepropertystatus)<span title="Required">*</span> | `string` | *No description.* |
+| [`streetAddress`](#cdktfprovideroktadataoktausersusersoutputreferencepropertystreetaddress)<span title="Required">*</span> | `string` | *No description.* |
+| [`timezone`](#cdktfprovideroktadataoktausersusersoutputreferencepropertytimezone)<span title="Required">*</span> | `string` | *No description.* |
+| [`title`](#cdktfprovideroktadataoktausersusersoutputreferencepropertytitle)<span title="Required">*</span> | `string` | *No description.* |
+| [`userType`](#cdktfprovideroktadataoktausersusersoutputreferencepropertyusertype)<span title="Required">*</span> | `string` | *No description.* |
+| [`zipCode`](#cdktfprovideroktadataoktausersusersoutputreferencepropertyzipcode)<span title="Required">*</span> | `string` | *No description.* |
+| [`internalValue`](#cdktfprovideroktadataoktausersusersoutputreferencepropertyinternalvalue) | [`@cdktf/provider-okta.DataOktaUsersUsers`](#@cdktf/provider-okta.DataOktaUsersUsers) | *No description.* |
 
 ---
 
-##### `adminRoles`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsers.property.adminRoles" id="cdktfprovideroktadataoktausersuserspropertyadminroles"></a>
+##### `adminRoles`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsersOutputReference.property.adminRoles" id="cdktfprovideroktadataoktausersusersoutputreferencepropertyadminroles"></a>
 
 ```typescript
 public readonly adminRoles: string[];
@@ -93258,7 +93995,7 @@ public readonly adminRoles: string[];
 
 ---
 
-##### `city`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsers.property.city" id="cdktfprovideroktadataoktausersuserspropertycity"></a>
+##### `city`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsersOutputReference.property.city" id="cdktfprovideroktadataoktausersusersoutputreferencepropertycity"></a>
 
 ```typescript
 public readonly city: string;
@@ -93268,7 +94005,7 @@ public readonly city: string;
 
 ---
 
-##### `costCenter`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsers.property.costCenter" id="cdktfprovideroktadataoktausersuserspropertycostcenter"></a>
+##### `costCenter`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsersOutputReference.property.costCenter" id="cdktfprovideroktadataoktausersusersoutputreferencepropertycostcenter"></a>
 
 ```typescript
 public readonly costCenter: string;
@@ -93278,7 +94015,7 @@ public readonly costCenter: string;
 
 ---
 
-##### `countryCode`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsers.property.countryCode" id="cdktfprovideroktadataoktausersuserspropertycountrycode"></a>
+##### `countryCode`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsersOutputReference.property.countryCode" id="cdktfprovideroktadataoktausersusersoutputreferencepropertycountrycode"></a>
 
 ```typescript
 public readonly countryCode: string;
@@ -93288,7 +94025,7 @@ public readonly countryCode: string;
 
 ---
 
-##### `customProfileAttributes`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsers.property.customProfileAttributes" id="cdktfprovideroktadataoktausersuserspropertycustomprofileattributes"></a>
+##### `customProfileAttributes`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsersOutputReference.property.customProfileAttributes" id="cdktfprovideroktadataoktausersusersoutputreferencepropertycustomprofileattributes"></a>
 
 ```typescript
 public readonly customProfileAttributes: string;
@@ -93298,7 +94035,7 @@ public readonly customProfileAttributes: string;
 
 ---
 
-##### `department`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsers.property.department" id="cdktfprovideroktadataoktausersuserspropertydepartment"></a>
+##### `department`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsersOutputReference.property.department" id="cdktfprovideroktadataoktausersusersoutputreferencepropertydepartment"></a>
 
 ```typescript
 public readonly department: string;
@@ -93308,7 +94045,7 @@ public readonly department: string;
 
 ---
 
-##### `displayName`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsers.property.displayName" id="cdktfprovideroktadataoktausersuserspropertydisplayname"></a>
+##### `displayName`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsersOutputReference.property.displayName" id="cdktfprovideroktadataoktausersusersoutputreferencepropertydisplayname"></a>
 
 ```typescript
 public readonly displayName: string;
@@ -93318,7 +94055,7 @@ public readonly displayName: string;
 
 ---
 
-##### `division`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsers.property.division" id="cdktfprovideroktadataoktausersuserspropertydivision"></a>
+##### `division`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsersOutputReference.property.division" id="cdktfprovideroktadataoktausersusersoutputreferencepropertydivision"></a>
 
 ```typescript
 public readonly division: string;
@@ -93328,7 +94065,7 @@ public readonly division: string;
 
 ---
 
-##### `email`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsers.property.email" id="cdktfprovideroktadataoktausersuserspropertyemail"></a>
+##### `email`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsersOutputReference.property.email" id="cdktfprovideroktadataoktausersusersoutputreferencepropertyemail"></a>
 
 ```typescript
 public readonly email: string;
@@ -93338,7 +94075,7 @@ public readonly email: string;
 
 ---
 
-##### `employeeNumber`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsers.property.employeeNumber" id="cdktfprovideroktadataoktausersuserspropertyemployeenumber"></a>
+##### `employeeNumber`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsersOutputReference.property.employeeNumber" id="cdktfprovideroktadataoktausersusersoutputreferencepropertyemployeenumber"></a>
 
 ```typescript
 public readonly employeeNumber: string;
@@ -93348,7 +94085,7 @@ public readonly employeeNumber: string;
 
 ---
 
-##### `firstName`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsers.property.firstName" id="cdktfprovideroktadataoktausersuserspropertyfirstname"></a>
+##### `firstName`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsersOutputReference.property.firstName" id="cdktfprovideroktadataoktausersusersoutputreferencepropertyfirstname"></a>
 
 ```typescript
 public readonly firstName: string;
@@ -93358,7 +94095,7 @@ public readonly firstName: string;
 
 ---
 
-##### `groupMemberships`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsers.property.groupMemberships" id="cdktfprovideroktadataoktausersuserspropertygroupmemberships"></a>
+##### `groupMemberships`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsersOutputReference.property.groupMemberships" id="cdktfprovideroktadataoktausersusersoutputreferencepropertygroupmemberships"></a>
 
 ```typescript
 public readonly groupMemberships: string[];
@@ -93368,7 +94105,7 @@ public readonly groupMemberships: string[];
 
 ---
 
-##### `honorificPrefix`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsers.property.honorificPrefix" id="cdktfprovideroktadataoktausersuserspropertyhonorificprefix"></a>
+##### `honorificPrefix`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsersOutputReference.property.honorificPrefix" id="cdktfprovideroktadataoktausersusersoutputreferencepropertyhonorificprefix"></a>
 
 ```typescript
 public readonly honorificPrefix: string;
@@ -93378,7 +94115,7 @@ public readonly honorificPrefix: string;
 
 ---
 
-##### `honorificSuffix`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsers.property.honorificSuffix" id="cdktfprovideroktadataoktausersuserspropertyhonorificsuffix"></a>
+##### `honorificSuffix`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsersOutputReference.property.honorificSuffix" id="cdktfprovideroktadataoktausersusersoutputreferencepropertyhonorificsuffix"></a>
 
 ```typescript
 public readonly honorificSuffix: string;
@@ -93388,7 +94125,7 @@ public readonly honorificSuffix: string;
 
 ---
 
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsers.property.id" id="cdktfprovideroktadataoktausersuserspropertyid"></a>
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsersOutputReference.property.id" id="cdktfprovideroktadataoktausersusersoutputreferencepropertyid"></a>
 
 ```typescript
 public readonly id: string;
@@ -93398,7 +94135,7 @@ public readonly id: string;
 
 ---
 
-##### `lastName`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsers.property.lastName" id="cdktfprovideroktadataoktausersuserspropertylastname"></a>
+##### `lastName`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsersOutputReference.property.lastName" id="cdktfprovideroktadataoktausersusersoutputreferencepropertylastname"></a>
 
 ```typescript
 public readonly lastName: string;
@@ -93408,7 +94145,7 @@ public readonly lastName: string;
 
 ---
 
-##### `locale`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsers.property.locale" id="cdktfprovideroktadataoktausersuserspropertylocale"></a>
+##### `locale`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsersOutputReference.property.locale" id="cdktfprovideroktadataoktausersusersoutputreferencepropertylocale"></a>
 
 ```typescript
 public readonly locale: string;
@@ -93418,7 +94155,7 @@ public readonly locale: string;
 
 ---
 
-##### `login`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsers.property.login" id="cdktfprovideroktadataoktausersuserspropertylogin"></a>
+##### `login`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsersOutputReference.property.login" id="cdktfprovideroktadataoktausersusersoutputreferencepropertylogin"></a>
 
 ```typescript
 public readonly login: string;
@@ -93428,7 +94165,7 @@ public readonly login: string;
 
 ---
 
-##### `manager`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsers.property.manager" id="cdktfprovideroktadataoktausersuserspropertymanager"></a>
+##### `manager`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsersOutputReference.property.manager" id="cdktfprovideroktadataoktausersusersoutputreferencepropertymanager"></a>
 
 ```typescript
 public readonly manager: string;
@@ -93438,7 +94175,7 @@ public readonly manager: string;
 
 ---
 
-##### `managerId`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsers.property.managerId" id="cdktfprovideroktadataoktausersuserspropertymanagerid"></a>
+##### `managerId`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsersOutputReference.property.managerId" id="cdktfprovideroktadataoktausersusersoutputreferencepropertymanagerid"></a>
 
 ```typescript
 public readonly managerId: string;
@@ -93448,7 +94185,7 @@ public readonly managerId: string;
 
 ---
 
-##### `middleName`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsers.property.middleName" id="cdktfprovideroktadataoktausersuserspropertymiddlename"></a>
+##### `middleName`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsersOutputReference.property.middleName" id="cdktfprovideroktadataoktausersusersoutputreferencepropertymiddlename"></a>
 
 ```typescript
 public readonly middleName: string;
@@ -93458,7 +94195,7 @@ public readonly middleName: string;
 
 ---
 
-##### `mobilePhone`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsers.property.mobilePhone" id="cdktfprovideroktadataoktausersuserspropertymobilephone"></a>
+##### `mobilePhone`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsersOutputReference.property.mobilePhone" id="cdktfprovideroktadataoktausersusersoutputreferencepropertymobilephone"></a>
 
 ```typescript
 public readonly mobilePhone: string;
@@ -93468,7 +94205,7 @@ public readonly mobilePhone: string;
 
 ---
 
-##### `nickName`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsers.property.nickName" id="cdktfprovideroktadataoktausersuserspropertynickname"></a>
+##### `nickName`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsersOutputReference.property.nickName" id="cdktfprovideroktadataoktausersusersoutputreferencepropertynickname"></a>
 
 ```typescript
 public readonly nickName: string;
@@ -93478,7 +94215,7 @@ public readonly nickName: string;
 
 ---
 
-##### `organization`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsers.property.organization" id="cdktfprovideroktadataoktausersuserspropertyorganization"></a>
+##### `organization`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsersOutputReference.property.organization" id="cdktfprovideroktadataoktausersusersoutputreferencepropertyorganization"></a>
 
 ```typescript
 public readonly organization: string;
@@ -93488,7 +94225,7 @@ public readonly organization: string;
 
 ---
 
-##### `postalAddress`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsers.property.postalAddress" id="cdktfprovideroktadataoktausersuserspropertypostaladdress"></a>
+##### `postalAddress`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsersOutputReference.property.postalAddress" id="cdktfprovideroktadataoktausersusersoutputreferencepropertypostaladdress"></a>
 
 ```typescript
 public readonly postalAddress: string;
@@ -93498,7 +94235,7 @@ public readonly postalAddress: string;
 
 ---
 
-##### `preferredLanguage`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsers.property.preferredLanguage" id="cdktfprovideroktadataoktausersuserspropertypreferredlanguage"></a>
+##### `preferredLanguage`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsersOutputReference.property.preferredLanguage" id="cdktfprovideroktadataoktausersusersoutputreferencepropertypreferredlanguage"></a>
 
 ```typescript
 public readonly preferredLanguage: string;
@@ -93508,7 +94245,7 @@ public readonly preferredLanguage: string;
 
 ---
 
-##### `primaryPhone`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsers.property.primaryPhone" id="cdktfprovideroktadataoktausersuserspropertyprimaryphone"></a>
+##### `primaryPhone`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsersOutputReference.property.primaryPhone" id="cdktfprovideroktadataoktausersusersoutputreferencepropertyprimaryphone"></a>
 
 ```typescript
 public readonly primaryPhone: string;
@@ -93518,7 +94255,7 @@ public readonly primaryPhone: string;
 
 ---
 
-##### `profileUrl`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsers.property.profileUrl" id="cdktfprovideroktadataoktausersuserspropertyprofileurl"></a>
+##### `profileUrl`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsersOutputReference.property.profileUrl" id="cdktfprovideroktadataoktausersusersoutputreferencepropertyprofileurl"></a>
 
 ```typescript
 public readonly profileUrl: string;
@@ -93528,7 +94265,7 @@ public readonly profileUrl: string;
 
 ---
 
-##### `secondEmail`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsers.property.secondEmail" id="cdktfprovideroktadataoktausersuserspropertysecondemail"></a>
+##### `secondEmail`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsersOutputReference.property.secondEmail" id="cdktfprovideroktadataoktausersusersoutputreferencepropertysecondemail"></a>
 
 ```typescript
 public readonly secondEmail: string;
@@ -93538,7 +94275,7 @@ public readonly secondEmail: string;
 
 ---
 
-##### `state`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsers.property.state" id="cdktfprovideroktadataoktausersuserspropertystate"></a>
+##### `state`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsersOutputReference.property.state" id="cdktfprovideroktadataoktausersusersoutputreferencepropertystate"></a>
 
 ```typescript
 public readonly state: string;
@@ -93548,7 +94285,7 @@ public readonly state: string;
 
 ---
 
-##### `status`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsers.property.status" id="cdktfprovideroktadataoktausersuserspropertystatus"></a>
+##### `status`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsersOutputReference.property.status" id="cdktfprovideroktadataoktausersusersoutputreferencepropertystatus"></a>
 
 ```typescript
 public readonly status: string;
@@ -93558,7 +94295,7 @@ public readonly status: string;
 
 ---
 
-##### `streetAddress`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsers.property.streetAddress" id="cdktfprovideroktadataoktausersuserspropertystreetaddress"></a>
+##### `streetAddress`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsersOutputReference.property.streetAddress" id="cdktfprovideroktadataoktausersusersoutputreferencepropertystreetaddress"></a>
 
 ```typescript
 public readonly streetAddress: string;
@@ -93568,7 +94305,7 @@ public readonly streetAddress: string;
 
 ---
 
-##### `timezone`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsers.property.timezone" id="cdktfprovideroktadataoktausersuserspropertytimezone"></a>
+##### `timezone`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsersOutputReference.property.timezone" id="cdktfprovideroktadataoktausersusersoutputreferencepropertytimezone"></a>
 
 ```typescript
 public readonly timezone: string;
@@ -93578,7 +94315,7 @@ public readonly timezone: string;
 
 ---
 
-##### `title`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsers.property.title" id="cdktfprovideroktadataoktausersuserspropertytitle"></a>
+##### `title`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsersOutputReference.property.title" id="cdktfprovideroktadataoktausersusersoutputreferencepropertytitle"></a>
 
 ```typescript
 public readonly title: string;
@@ -93588,7 +94325,7 @@ public readonly title: string;
 
 ---
 
-##### `userType`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsers.property.userType" id="cdktfprovideroktadataoktausersuserspropertyusertype"></a>
+##### `userType`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsersOutputReference.property.userType" id="cdktfprovideroktadataoktausersusersoutputreferencepropertyusertype"></a>
 
 ```typescript
 public readonly userType: string;
@@ -93598,7 +94335,7 @@ public readonly userType: string;
 
 ---
 
-##### `zipCode`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsers.property.zipCode" id="cdktfprovideroktadataoktausersuserspropertyzipcode"></a>
+##### `zipCode`<sup>Required</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsersOutputReference.property.zipCode" id="cdktfprovideroktadataoktausersusersoutputreferencepropertyzipcode"></a>
 
 ```typescript
 public readonly zipCode: string;
@@ -93608,47 +94345,132 @@ public readonly zipCode: string;
 
 ---
 
-
-### DomainDnsRecords <a name="@cdktf/provider-okta.DomainDnsRecords" id="cdktfprovideroktadomaindnsrecords"></a>
-
-#### Initializers <a name="@cdktf/provider-okta.DomainDnsRecords.Initializer" id="cdktfprovideroktadomaindnsrecordsinitializer"></a>
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-okta.DataOktaUsersUsersOutputReference.property.internalValue" id="cdktfprovideroktadataoktausersusersoutputreferencepropertyinternalvalue"></a>
 
 ```typescript
-import { DomainDnsRecords } from '@cdktf/provider-okta'
+public readonly internalValue: DataOktaUsersUsers;
+```
 
-new DomainDnsRecords(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+- *Type:* [`@cdktf/provider-okta.DataOktaUsersUsers`](#@cdktf/provider-okta.DataOktaUsersUsers)
+
+---
+
+
+### DomainDnsRecordsList <a name="@cdktf/provider-okta.DomainDnsRecordsList" id="cdktfprovideroktadomaindnsrecordslist"></a>
+
+#### Initializers <a name="@cdktf/provider-okta.DomainDnsRecordsList.Initializer" id="cdktfprovideroktadomaindnsrecordslistinitializer"></a>
+
+```typescript
+import { DomainDnsRecordsList } from '@cdktf/provider-okta'
+
+new DomainDnsRecordsList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`terraformResource`](#cdktfprovideroktadomaindnsrecordsparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | *No description.* |
-| [`terraformAttribute`](#cdktfprovideroktadomaindnsrecordsparameterterraformattribute)<span title="Required">*</span> | `string` | *No description.* |
-| [`complexComputedListIndex`](#cdktfprovideroktadomaindnsrecordsparametercomplexcomputedlistindex)<span title="Required">*</span> | `string` | *No description.* |
-| [`wrapsSet`](#cdktfprovideroktadomaindnsrecordsparameterwrapsset) | `boolean` | *No description.* |
+| [`terraformResource`](#cdktfprovideroktadomaindnsrecordslistparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovideroktadomaindnsrecordslistparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+| [`wrapsSet`](#cdktfprovideroktadomaindnsrecordslistparameterwrapsset)<span title="Required">*</span> | `boolean` | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-okta.DomainDnsRecords.parameter.terraformResource" id="cdktfprovideroktadomaindnsrecordsparameterterraformresource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-okta.DomainDnsRecordsList.parameter.terraformResource" id="cdktfprovideroktadomaindnsrecordslistparameterterraformresource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-okta.DomainDnsRecords.parameter.terraformAttribute" id="cdktfprovideroktadomaindnsrecordsparameterterraformattribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-okta.DomainDnsRecordsList.parameter.terraformAttribute" id="cdktfprovideroktadomaindnsrecordslistparameterterraformattribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-okta.DomainDnsRecords.parameter.complexComputedListIndex" id="cdktfprovideroktadomaindnsrecordsparametercomplexcomputedlistindex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-okta.DomainDnsRecords.parameter.wrapsSet" id="cdktfprovideroktadomaindnsrecordsparameterwrapsset"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-okta.DomainDnsRecordsList.parameter.wrapsSet" id="cdktfprovideroktadomaindnsrecordslistparameterwrapsset"></a>
 
 - *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`get`](#cdktfprovideroktadomaindnsrecordslistget) | *No description.* |
+
+---
+
+##### `get` <a name="@cdktf/provider-okta.DomainDnsRecordsList.get" id="cdktfprovideroktadomaindnsrecordslistget"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-okta.DomainDnsRecordsList.parameter.index" id="cdktfprovideroktadomaindnsrecordslistparameterindex"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### DomainDnsRecordsOutputReference <a name="@cdktf/provider-okta.DomainDnsRecordsOutputReference" id="cdktfprovideroktadomaindnsrecordsoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-okta.DomainDnsRecordsOutputReference.Initializer" id="cdktfprovideroktadomaindnsrecordsoutputreferenceinitializer"></a>
+
+```typescript
+import { DomainDnsRecordsOutputReference } from '@cdktf/provider-okta'
+
+new DomainDnsRecordsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovideroktadomaindnsrecordsoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovideroktadomaindnsrecordsoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+| [`complexObjectIndex`](#cdktfprovideroktadomaindnsrecordsoutputreferenceparametercomplexobjectindex)<span title="Required">*</span> | `number` | the index of this item in the list. |
+| [`complexObjectIsFromSet`](#cdktfprovideroktadomaindnsrecordsoutputreferenceparametercomplexobjectisfromset)<span title="Required">*</span> | `boolean` | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-okta.DomainDnsRecordsOutputReference.parameter.terraformResource" id="cdktfprovideroktadomaindnsrecordsoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-okta.DomainDnsRecordsOutputReference.parameter.terraformAttribute" id="cdktfprovideroktadomaindnsrecordsoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-okta.DomainDnsRecordsOutputReference.parameter.complexObjectIndex" id="cdktfprovideroktadomaindnsrecordsoutputreferenceparametercomplexobjectindex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-okta.DomainDnsRecordsOutputReference.parameter.complexObjectIsFromSet" id="cdktfprovideroktadomaindnsrecordsoutputreferenceparametercomplexobjectisfromset"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -93658,14 +94480,15 @@ new DomainDnsRecords(terraformResource: IInterpolatingParent, terraformAttribute
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`expiration`](#cdktfprovideroktadomaindnsrecordspropertyexpiration)<span title="Required">*</span> | `string` | *No description.* |
-| [`fqdn`](#cdktfprovideroktadomaindnsrecordspropertyfqdn)<span title="Required">*</span> | `string` | *No description.* |
-| [`recordType`](#cdktfprovideroktadomaindnsrecordspropertyrecordtype)<span title="Required">*</span> | `string` | *No description.* |
-| [`values`](#cdktfprovideroktadomaindnsrecordspropertyvalues)<span title="Required">*</span> | `string`[] | *No description.* |
+| [`expiration`](#cdktfprovideroktadomaindnsrecordsoutputreferencepropertyexpiration)<span title="Required">*</span> | `string` | *No description.* |
+| [`fqdn`](#cdktfprovideroktadomaindnsrecordsoutputreferencepropertyfqdn)<span title="Required">*</span> | `string` | *No description.* |
+| [`recordType`](#cdktfprovideroktadomaindnsrecordsoutputreferencepropertyrecordtype)<span title="Required">*</span> | `string` | *No description.* |
+| [`values`](#cdktfprovideroktadomaindnsrecordsoutputreferencepropertyvalues)<span title="Required">*</span> | `string`[] | *No description.* |
+| [`internalValue`](#cdktfprovideroktadomaindnsrecordsoutputreferencepropertyinternalvalue) | [`@cdktf/provider-okta.DomainDnsRecords`](#@cdktf/provider-okta.DomainDnsRecords) | *No description.* |
 
 ---
 
-##### `expiration`<sup>Required</sup> <a name="@cdktf/provider-okta.DomainDnsRecords.property.expiration" id="cdktfprovideroktadomaindnsrecordspropertyexpiration"></a>
+##### `expiration`<sup>Required</sup> <a name="@cdktf/provider-okta.DomainDnsRecordsOutputReference.property.expiration" id="cdktfprovideroktadomaindnsrecordsoutputreferencepropertyexpiration"></a>
 
 ```typescript
 public readonly expiration: string;
@@ -93675,7 +94498,7 @@ public readonly expiration: string;
 
 ---
 
-##### `fqdn`<sup>Required</sup> <a name="@cdktf/provider-okta.DomainDnsRecords.property.fqdn" id="cdktfprovideroktadomaindnsrecordspropertyfqdn"></a>
+##### `fqdn`<sup>Required</sup> <a name="@cdktf/provider-okta.DomainDnsRecordsOutputReference.property.fqdn" id="cdktfprovideroktadomaindnsrecordsoutputreferencepropertyfqdn"></a>
 
 ```typescript
 public readonly fqdn: string;
@@ -93685,7 +94508,7 @@ public readonly fqdn: string;
 
 ---
 
-##### `recordType`<sup>Required</sup> <a name="@cdktf/provider-okta.DomainDnsRecords.property.recordType" id="cdktfprovideroktadomaindnsrecordspropertyrecordtype"></a>
+##### `recordType`<sup>Required</sup> <a name="@cdktf/provider-okta.DomainDnsRecordsOutputReference.property.recordType" id="cdktfprovideroktadomaindnsrecordsoutputreferencepropertyrecordtype"></a>
 
 ```typescript
 public readonly recordType: string;
@@ -93695,7 +94518,7 @@ public readonly recordType: string;
 
 ---
 
-##### `values`<sup>Required</sup> <a name="@cdktf/provider-okta.DomainDnsRecords.property.values" id="cdktfprovideroktadomaindnsrecordspropertyvalues"></a>
+##### `values`<sup>Required</sup> <a name="@cdktf/provider-okta.DomainDnsRecordsOutputReference.property.values" id="cdktfprovideroktadomaindnsrecordsoutputreferencepropertyvalues"></a>
 
 ```typescript
 public readonly values: string[];
@@ -93705,47 +94528,132 @@ public readonly values: string[];
 
 ---
 
-
-### EmailSenderDnsRecords <a name="@cdktf/provider-okta.EmailSenderDnsRecords" id="cdktfprovideroktaemailsenderdnsrecords"></a>
-
-#### Initializers <a name="@cdktf/provider-okta.EmailSenderDnsRecords.Initializer" id="cdktfprovideroktaemailsenderdnsrecordsinitializer"></a>
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-okta.DomainDnsRecordsOutputReference.property.internalValue" id="cdktfprovideroktadomaindnsrecordsoutputreferencepropertyinternalvalue"></a>
 
 ```typescript
-import { EmailSenderDnsRecords } from '@cdktf/provider-okta'
+public readonly internalValue: DomainDnsRecords;
+```
 
-new EmailSenderDnsRecords(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+- *Type:* [`@cdktf/provider-okta.DomainDnsRecords`](#@cdktf/provider-okta.DomainDnsRecords)
+
+---
+
+
+### EmailSenderDnsRecordsList <a name="@cdktf/provider-okta.EmailSenderDnsRecordsList" id="cdktfprovideroktaemailsenderdnsrecordslist"></a>
+
+#### Initializers <a name="@cdktf/provider-okta.EmailSenderDnsRecordsList.Initializer" id="cdktfprovideroktaemailsenderdnsrecordslistinitializer"></a>
+
+```typescript
+import { EmailSenderDnsRecordsList } from '@cdktf/provider-okta'
+
+new EmailSenderDnsRecordsList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`terraformResource`](#cdktfprovideroktaemailsenderdnsrecordsparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | *No description.* |
-| [`terraformAttribute`](#cdktfprovideroktaemailsenderdnsrecordsparameterterraformattribute)<span title="Required">*</span> | `string` | *No description.* |
-| [`complexComputedListIndex`](#cdktfprovideroktaemailsenderdnsrecordsparametercomplexcomputedlistindex)<span title="Required">*</span> | `string` | *No description.* |
-| [`wrapsSet`](#cdktfprovideroktaemailsenderdnsrecordsparameterwrapsset) | `boolean` | *No description.* |
+| [`terraformResource`](#cdktfprovideroktaemailsenderdnsrecordslistparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovideroktaemailsenderdnsrecordslistparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+| [`wrapsSet`](#cdktfprovideroktaemailsenderdnsrecordslistparameterwrapsset)<span title="Required">*</span> | `boolean` | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-okta.EmailSenderDnsRecords.parameter.terraformResource" id="cdktfprovideroktaemailsenderdnsrecordsparameterterraformresource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-okta.EmailSenderDnsRecordsList.parameter.terraformResource" id="cdktfprovideroktaemailsenderdnsrecordslistparameterterraformresource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-okta.EmailSenderDnsRecords.parameter.terraformAttribute" id="cdktfprovideroktaemailsenderdnsrecordsparameterterraformattribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-okta.EmailSenderDnsRecordsList.parameter.terraformAttribute" id="cdktfprovideroktaemailsenderdnsrecordslistparameterterraformattribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-okta.EmailSenderDnsRecords.parameter.complexComputedListIndex" id="cdktfprovideroktaemailsenderdnsrecordsparametercomplexcomputedlistindex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-okta.EmailSenderDnsRecords.parameter.wrapsSet" id="cdktfprovideroktaemailsenderdnsrecordsparameterwrapsset"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-okta.EmailSenderDnsRecordsList.parameter.wrapsSet" id="cdktfprovideroktaemailsenderdnsrecordslistparameterwrapsset"></a>
 
 - *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| [`get`](#cdktfprovideroktaemailsenderdnsrecordslistget) | *No description.* |
+
+---
+
+##### `get` <a name="@cdktf/provider-okta.EmailSenderDnsRecordsList.get" id="cdktfprovideroktaemailsenderdnsrecordslistget"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-okta.EmailSenderDnsRecordsList.parameter.index" id="cdktfprovideroktaemailsenderdnsrecordslistparameterindex"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### EmailSenderDnsRecordsOutputReference <a name="@cdktf/provider-okta.EmailSenderDnsRecordsOutputReference" id="cdktfprovideroktaemailsenderdnsrecordsoutputreference"></a>
+
+#### Initializers <a name="@cdktf/provider-okta.EmailSenderDnsRecordsOutputReference.Initializer" id="cdktfprovideroktaemailsenderdnsrecordsoutputreferenceinitializer"></a>
+
+```typescript
+import { EmailSenderDnsRecordsOutputReference } from '@cdktf/provider-okta'
+
+new EmailSenderDnsRecordsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| [`terraformResource`](#cdktfprovideroktaemailsenderdnsrecordsoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
+| [`terraformAttribute`](#cdktfprovideroktaemailsenderdnsrecordsoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
+| [`complexObjectIndex`](#cdktfprovideroktaemailsenderdnsrecordsoutputreferenceparametercomplexobjectindex)<span title="Required">*</span> | `number` | the index of this item in the list. |
+| [`complexObjectIsFromSet`](#cdktfprovideroktaemailsenderdnsrecordsoutputreferenceparametercomplexobjectisfromset)<span title="Required">*</span> | `boolean` | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-okta.EmailSenderDnsRecordsOutputReference.parameter.terraformResource" id="cdktfprovideroktaemailsenderdnsrecordsoutputreferenceparameterterraformresource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-okta.EmailSenderDnsRecordsOutputReference.parameter.terraformAttribute" id="cdktfprovideroktaemailsenderdnsrecordsoutputreferenceparameterterraformattribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-okta.EmailSenderDnsRecordsOutputReference.parameter.complexObjectIndex" id="cdktfprovideroktaemailsenderdnsrecordsoutputreferenceparametercomplexobjectindex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-okta.EmailSenderDnsRecordsOutputReference.parameter.complexObjectIsFromSet" id="cdktfprovideroktaemailsenderdnsrecordsoutputreferenceparametercomplexobjectisfromset"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -93755,13 +94663,14 @@ new EmailSenderDnsRecords(terraformResource: IInterpolatingParent, terraformAttr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`fqdn`](#cdktfprovideroktaemailsenderdnsrecordspropertyfqdn)<span title="Required">*</span> | `string` | *No description.* |
-| [`recordType`](#cdktfprovideroktaemailsenderdnsrecordspropertyrecordtype)<span title="Required">*</span> | `string` | *No description.* |
-| [`value`](#cdktfprovideroktaemailsenderdnsrecordspropertyvalue)<span title="Required">*</span> | `string` | *No description.* |
+| [`fqdn`](#cdktfprovideroktaemailsenderdnsrecordsoutputreferencepropertyfqdn)<span title="Required">*</span> | `string` | *No description.* |
+| [`recordType`](#cdktfprovideroktaemailsenderdnsrecordsoutputreferencepropertyrecordtype)<span title="Required">*</span> | `string` | *No description.* |
+| [`value`](#cdktfprovideroktaemailsenderdnsrecordsoutputreferencepropertyvalue)<span title="Required">*</span> | `string` | *No description.* |
+| [`internalValue`](#cdktfprovideroktaemailsenderdnsrecordsoutputreferencepropertyinternalvalue) | [`@cdktf/provider-okta.EmailSenderDnsRecords`](#@cdktf/provider-okta.EmailSenderDnsRecords) | *No description.* |
 
 ---
 
-##### `fqdn`<sup>Required</sup> <a name="@cdktf/provider-okta.EmailSenderDnsRecords.property.fqdn" id="cdktfprovideroktaemailsenderdnsrecordspropertyfqdn"></a>
+##### `fqdn`<sup>Required</sup> <a name="@cdktf/provider-okta.EmailSenderDnsRecordsOutputReference.property.fqdn" id="cdktfprovideroktaemailsenderdnsrecordsoutputreferencepropertyfqdn"></a>
 
 ```typescript
 public readonly fqdn: string;
@@ -93771,7 +94680,7 @@ public readonly fqdn: string;
 
 ---
 
-##### `recordType`<sup>Required</sup> <a name="@cdktf/provider-okta.EmailSenderDnsRecords.property.recordType" id="cdktfprovideroktaemailsenderdnsrecordspropertyrecordtype"></a>
+##### `recordType`<sup>Required</sup> <a name="@cdktf/provider-okta.EmailSenderDnsRecordsOutputReference.property.recordType" id="cdktfprovideroktaemailsenderdnsrecordsoutputreferencepropertyrecordtype"></a>
 
 ```typescript
 public readonly recordType: string;
@@ -93781,13 +94690,23 @@ public readonly recordType: string;
 
 ---
 
-##### `value`<sup>Required</sup> <a name="@cdktf/provider-okta.EmailSenderDnsRecords.property.value" id="cdktfprovideroktaemailsenderdnsrecordspropertyvalue"></a>
+##### `value`<sup>Required</sup> <a name="@cdktf/provider-okta.EmailSenderDnsRecordsOutputReference.property.value" id="cdktfprovideroktaemailsenderdnsrecordsoutputreferencepropertyvalue"></a>
 
 ```typescript
 public readonly value: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-okta.EmailSenderDnsRecordsOutputReference.property.internalValue" id="cdktfprovideroktaemailsenderdnsrecordsoutputreferencepropertyinternalvalue"></a>
+
+```typescript
+public readonly internalValue: EmailSenderDnsRecords;
+```
+
+- *Type:* [`@cdktf/provider-okta.EmailSenderDnsRecords`](#@cdktf/provider-okta.EmailSenderDnsRecords)
 
 ---
 
@@ -93799,14 +94718,13 @@ public readonly value: string;
 ```typescript
 import { OauthAppGroupsClaimOutputReference } from '@cdktf/provider-okta'
 
-new OauthAppGroupsClaimOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new OauthAppGroupsClaimOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | [`terraformResource`](#cdktfprovideroktaoauthappgroupsclaimoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
 | [`terraformAttribute`](#cdktfprovideroktaoauthappgroupsclaimoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
-| [`isSingleItem`](#cdktfprovideroktaoauthappgroupsclaimoutputreferenceparameterissingleitem)<span title="Required">*</span> | `boolean` | True if this is a block, false if it's a list. |
 
 ---
 
@@ -93823,14 +94741,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-okta.OauthAppGroupsClaimOutputReference.parameter.isSingleItem" id="cdktfprovideroktaoauthappgroupsclaimoutputreferenceparameterissingleitem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -93963,14 +94873,13 @@ public readonly internalValue: OauthAppGroupsClaim;
 ```typescript
 import { UserPasswordHashOutputReference } from '@cdktf/provider-okta'
 
-new UserPasswordHashOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new UserPasswordHashOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | [`terraformResource`](#cdktfprovideroktauserpasswordhashoutputreferenceparameterterraformresource)<span title="Required">*</span> | [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent) | The parent resource. |
 | [`terraformAttribute`](#cdktfprovideroktauserpasswordhashoutputreferenceparameterterraformattribute)<span title="Required">*</span> | `string` | The attribute on the parent resource this class is referencing. |
-| [`isSingleItem`](#cdktfprovideroktauserpasswordhashoutputreferenceparameterissingleitem)<span title="Required">*</span> | `boolean` | True if this is a block, false if it's a list. |
 
 ---
 
@@ -93987,14 +94896,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-okta.UserPasswordHashOutputReference.parameter.isSingleItem" id="cdktfprovideroktauserpasswordhashoutputreferenceparameterissingleitem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 

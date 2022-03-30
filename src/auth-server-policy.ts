@@ -51,7 +51,7 @@ export class AuthServerPolicy extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "okta_auth_server_policy";
+  public static readonly tfResourceType = "okta_auth_server_policy";
 
   // ===========
   // INITIALIZER
@@ -68,7 +68,9 @@ export class AuthServerPolicy extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'okta_auth_server_policy',
       terraformGeneratorMetadata: {
-        providerName: 'okta'
+        providerName: 'okta',
+        providerVersion: '3.20.8',
+        providerVersionConstraint: '~> 3.20.2'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

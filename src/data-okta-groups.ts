@@ -26,7 +26,45 @@ export interface DataOktaGroupsConfig extends cdktf.TerraformMetaArguments {
   */
   readonly type?: string;
 }
-export class DataOktaGroupsGroups extends cdktf.ComplexComputedList {
+export interface DataOktaGroupsGroups {
+}
+
+export function dataOktaGroupsGroupsToTerraform(struct?: DataOktaGroupsGroups): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataOktaGroupsGroupsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataOktaGroupsGroups | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataOktaGroupsGroups | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // description - computed: true, optional: false, required: false
   public get description() {
@@ -49,6 +87,25 @@ export class DataOktaGroupsGroups extends cdktf.ComplexComputedList {
   }
 }
 
+export class DataOktaGroupsGroupsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataOktaGroupsGroupsOutputReference {
+    return new DataOktaGroupsGroupsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/okta/d/groups okta_groups}
 */
@@ -57,7 +114,7 @@ export class DataOktaGroups extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "okta_groups";
+  public static readonly tfResourceType = "okta_groups";
 
   // ===========
   // INITIALIZER
@@ -74,7 +131,9 @@ export class DataOktaGroups extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'okta_groups',
       terraformGeneratorMetadata: {
-        providerName: 'okta'
+        providerName: 'okta',
+        providerVersion: '3.20.8',
+        providerVersionConstraint: '~> 3.20.2'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -91,8 +150,9 @@ export class DataOktaGroups extends cdktf.TerraformDataSource {
   // ==========
 
   // groups - computed: true, optional: false, required: false
-  public groups(index: string) {
-    return new DataOktaGroupsGroups(this, 'groups', index, false);
+  private _groups = new DataOktaGroupsGroupsList(this, "groups", false);
+  public get groups() {
+    return this._groups;
   }
 
   // id - computed: true, optional: true, required: false

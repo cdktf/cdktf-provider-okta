@@ -396,7 +396,7 @@ export class SamlApp extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "okta_saml_app";
+  public static readonly tfResourceType = "okta_saml_app";
 
   // ===========
   // INITIALIZER
@@ -413,7 +413,9 @@ export class SamlApp extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'okta_saml_app',
       terraformGeneratorMetadata: {
-        providerName: 'okta'
+        providerName: 'okta',
+        providerVersion: '3.20.8',
+        providerVersionConstraint: '~> 3.20.2'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

@@ -165,7 +165,7 @@ export class IdpOidc extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "okta_idp_oidc";
+  public static readonly tfResourceType = "okta_idp_oidc";
 
   // ===========
   // INITIALIZER
@@ -182,7 +182,9 @@ export class IdpOidc extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'okta_idp_oidc',
       terraformGeneratorMetadata: {
-        providerName: 'okta'
+        providerName: 'okta',
+        providerVersion: '3.20.8',
+        providerVersionConstraint: '~> 3.20.2'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

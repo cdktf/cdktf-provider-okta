@@ -218,7 +218,7 @@ export class AutoLoginApp extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "okta_auto_login_app";
+  public static readonly tfResourceType = "okta_auto_login_app";
 
   // ===========
   // INITIALIZER
@@ -235,7 +235,9 @@ export class AutoLoginApp extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'okta_auto_login_app',
       terraformGeneratorMetadata: {
-        providerName: 'okta'
+        providerName: 'okta',
+        providerVersion: '3.20.8',
+        providerVersionConstraint: '~> 3.20.2'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

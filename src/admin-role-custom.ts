@@ -35,7 +35,7 @@ export class AdminRoleCustom extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "okta_admin_role_custom";
+  public static readonly tfResourceType = "okta_admin_role_custom";
 
   // ===========
   // INITIALIZER
@@ -52,7 +52,9 @@ export class AdminRoleCustom extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'okta_admin_role_custom',
       terraformGeneratorMetadata: {
-        providerName: 'okta'
+        providerName: 'okta',
+        providerVersion: '3.20.8',
+        providerVersionConstraint: '~> 3.20.2'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

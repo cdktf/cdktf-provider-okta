@@ -14,7 +14,45 @@ export interface DataOktaAuthServerScopesConfig extends cdktf.TerraformMetaArgum
   */
   readonly authServerId: string;
 }
-export class DataOktaAuthServerScopesScopes extends cdktf.ComplexComputedList {
+export interface DataOktaAuthServerScopesScopes {
+}
+
+export function dataOktaAuthServerScopesScopesToTerraform(struct?: DataOktaAuthServerScopesScopes): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataOktaAuthServerScopesScopesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataOktaAuthServerScopesScopes | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataOktaAuthServerScopesScopes | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // consent - computed: true, optional: false, required: false
   public get consent() {
@@ -57,6 +95,25 @@ export class DataOktaAuthServerScopesScopes extends cdktf.ComplexComputedList {
   }
 }
 
+export class DataOktaAuthServerScopesScopesList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataOktaAuthServerScopesScopesOutputReference {
+    return new DataOktaAuthServerScopesScopesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/okta/d/auth_server_scopes okta_auth_server_scopes}
 */
@@ -65,7 +122,7 @@ export class DataOktaAuthServerScopes extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "okta_auth_server_scopes";
+  public static readonly tfResourceType = "okta_auth_server_scopes";
 
   // ===========
   // INITIALIZER
@@ -82,7 +139,9 @@ export class DataOktaAuthServerScopes extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'okta_auth_server_scopes',
       terraformGeneratorMetadata: {
-        providerName: 'okta'
+        providerName: 'okta',
+        providerVersion: '3.20.8',
+        providerVersionConstraint: '~> 3.20.2'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -115,8 +174,9 @@ export class DataOktaAuthServerScopes extends cdktf.TerraformDataSource {
   }
 
   // scopes - computed: true, optional: false, required: false
-  public scopes(index: string) {
-    return new DataOktaAuthServerScopesScopes(this, 'scopes', index, false);
+  private _scopes = new DataOktaAuthServerScopesScopesList(this, "scopes", false);
+  public get scopes() {
+    return this._scopes;
   }
 
   // =========

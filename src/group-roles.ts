@@ -29,7 +29,7 @@ export class GroupRoles extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "okta_group_roles";
+  public static readonly tfResourceType = "okta_group_roles";
 
   // ===========
   // INITIALIZER
@@ -46,7 +46,9 @@ export class GroupRoles extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'okta_group_roles',
       terraformGeneratorMetadata: {
-        providerName: 'okta'
+        providerName: 'okta',
+        providerVersion: '3.20.8',
+        providerVersionConstraint: '~> 3.20.2'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

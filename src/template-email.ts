@@ -60,7 +60,7 @@ export class TemplateEmail extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "okta_template_email";
+  public static readonly tfResourceType = "okta_template_email";
 
   // ===========
   // INITIALIZER
@@ -77,7 +77,9 @@ export class TemplateEmail extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'okta_template_email',
       terraformGeneratorMetadata: {
-        providerName: 'okta'
+        providerName: 'okta',
+        providerVersion: '3.20.8',
+        providerVersionConstraint: '~> 3.20.2'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

@@ -293,7 +293,7 @@ export interface UserPasswordHash {
   readonly workFactor?: number;
 }
 
-export function userPasswordHashToTerraform(struct?: UserPasswordHashOutputReference | UserPasswordHash | cdktf.IResolvable): any {
+export function userPasswordHashToTerraform(struct?: UserPasswordHashOutputReference | UserPasswordHash): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -313,10 +313,9 @@ export class UserPasswordHashOutputReference extends cdktf.ComplexObject {
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): UserPasswordHash | undefined {
@@ -447,7 +446,7 @@ export class User extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "okta_user";
+  public static readonly tfResourceType = "okta_user";
 
   // ===========
   // INITIALIZER
@@ -464,7 +463,9 @@ export class User extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'okta_user',
       terraformGeneratorMetadata: {
-        providerName: 'okta'
+        providerName: 'okta',
+        providerVersion: '3.20.8',
+        providerVersionConstraint: '~> 3.20.2'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -1174,7 +1175,7 @@ export class User extends cdktf.TerraformResource {
   }
 
   // password_hash - computed: false, optional: true, required: false
-  private _passwordHash = new UserPasswordHashOutputReference(this, "password_hash", true);
+  private _passwordHash = new UserPasswordHashOutputReference(this, "password_hash");
   public get passwordHash() {
     return this._passwordHash;
   }

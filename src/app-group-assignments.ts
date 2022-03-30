@@ -56,7 +56,7 @@ export class AppGroupAssignments extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "okta_app_group_assignments";
+  public static readonly tfResourceType = "okta_app_group_assignments";
 
   // ===========
   // INITIALIZER
@@ -73,7 +73,9 @@ export class AppGroupAssignments extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'okta_app_group_assignments',
       terraformGeneratorMetadata: {
-        providerName: 'okta'
+        providerName: 'okta',
+        providerVersion: '3.20.8',
+        providerVersionConstraint: '~> 3.20.2'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

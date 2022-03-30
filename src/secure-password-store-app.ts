@@ -248,7 +248,7 @@ export class SecurePasswordStoreApp extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "okta_secure_password_store_app";
+  public static readonly tfResourceType = "okta_secure_password_store_app";
 
   // ===========
   // INITIALIZER
@@ -265,7 +265,9 @@ export class SecurePasswordStoreApp extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'okta_secure_password_store_app',
       terraformGeneratorMetadata: {
-        providerName: 'okta'
+        providerName: 'okta',
+        providerVersion: '3.20.8',
+        providerVersionConstraint: '~> 3.20.2'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

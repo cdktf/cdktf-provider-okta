@@ -23,7 +23,7 @@ export class SamlIdpSigningKey extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "okta_saml_idp_signing_key";
+  public static readonly tfResourceType = "okta_saml_idp_signing_key";
 
   // ===========
   // INITIALIZER
@@ -40,7 +40,9 @@ export class SamlIdpSigningKey extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'okta_saml_idp_signing_key',
       terraformGeneratorMetadata: {
-        providerName: 'okta'
+        providerName: 'okta',
+        providerVersion: '3.20.8',
+        providerVersionConstraint: '~> 3.20.2'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

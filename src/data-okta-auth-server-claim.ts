@@ -31,7 +31,7 @@ export class DataOktaAuthServerClaim extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "okta_auth_server_claim";
+  public static readonly tfResourceType = "okta_auth_server_claim";
 
   // ===========
   // INITIALIZER
@@ -48,7 +48,9 @@ export class DataOktaAuthServerClaim extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'okta_auth_server_claim',
       terraformGeneratorMetadata: {
-        providerName: 'okta'
+        providerName: 'okta',
+        providerVersion: '3.20.8',
+        providerVersionConstraint: '~> 3.20.2'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
