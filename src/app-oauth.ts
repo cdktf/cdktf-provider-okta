@@ -323,7 +323,7 @@ export interface AppOauthGroupsClaim {
   readonly value: string;
 }
 
-export function appOauthGroupsClaimToTerraform(struct?: AppOauthGroupsClaimOutputReference | AppOauthGroupsClaim | cdktf.IResolvable): any {
+export function appOauthGroupsClaimToTerraform(struct?: AppOauthGroupsClaimOutputReference | AppOauthGroupsClaim): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -342,10 +342,9 @@ export class AppOauthGroupsClaimOutputReference extends cdktf.ComplexObject {
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AppOauthGroupsClaim | undefined {
@@ -524,7 +523,7 @@ export class AppOauth extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "okta_app_oauth";
+  public static readonly tfResourceType = "okta_app_oauth";
 
   // ===========
   // INITIALIZER
@@ -541,7 +540,9 @@ export class AppOauth extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'okta_app_oauth',
       terraformGeneratorMetadata: {
-        providerName: 'okta'
+        providerName: 'okta',
+        providerVersion: '3.20.8',
+        providerVersionConstraint: '~> 3.20.2'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -1342,7 +1343,7 @@ export class AppOauth extends cdktf.TerraformResource {
   }
 
   // groups_claim - computed: false, optional: true, required: false
-  private _groupsClaim = new AppOauthGroupsClaimOutputReference(this, "groups_claim", true);
+  private _groupsClaim = new AppOauthGroupsClaimOutputReference(this, "groups_claim");
   public get groupsClaim() {
     return this._groupsClaim;
   }

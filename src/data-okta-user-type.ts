@@ -21,7 +21,7 @@ export class DataOktaUserType extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "okta_user_type";
+  public static readonly tfResourceType = "okta_user_type";
 
   // ===========
   // INITIALIZER
@@ -38,7 +38,9 @@ export class DataOktaUserType extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'okta_user_type',
       terraformGeneratorMetadata: {
-        providerName: 'okta'
+        providerName: 'okta',
+        providerVersion: '3.20.8',
+        providerVersionConstraint: '~> 3.20.2'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

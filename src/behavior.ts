@@ -59,7 +59,7 @@ export class Behavior extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "okta_behavior";
+  public static readonly tfResourceType = "okta_behavior";
 
   // ===========
   // INITIALIZER
@@ -76,7 +76,9 @@ export class Behavior extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'okta_behavior',
       terraformGeneratorMetadata: {
-        providerName: 'okta'
+        providerName: 'okta',
+        providerVersion: '3.20.8',
+        providerVersionConstraint: '~> 3.20.2'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

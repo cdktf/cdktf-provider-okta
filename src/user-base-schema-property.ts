@@ -65,7 +65,7 @@ export class UserBaseSchemaProperty extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "okta_user_base_schema_property";
+  public static readonly tfResourceType = "okta_user_base_schema_property";
 
   // ===========
   // INITIALIZER
@@ -82,7 +82,9 @@ export class UserBaseSchemaProperty extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'okta_user_base_schema_property',
       terraformGeneratorMetadata: {
-        providerName: 'okta'
+        providerName: 'okta',
+        providerVersion: '3.20.8',
+        providerVersionConstraint: '~> 3.20.2'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

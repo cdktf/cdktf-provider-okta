@@ -29,7 +29,7 @@ export class DataOktaPolicy extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "okta_policy";
+  public static readonly tfResourceType = "okta_policy";
 
   // ===========
   // INITIALIZER
@@ -46,7 +46,9 @@ export class DataOktaPolicy extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'okta_policy',
       terraformGeneratorMetadata: {
-        providerName: 'okta'
+        providerName: 'okta',
+        providerVersion: '3.20.8',
+        providerVersionConstraint: '~> 3.20.2'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

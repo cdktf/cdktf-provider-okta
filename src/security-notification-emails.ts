@@ -47,7 +47,7 @@ export class SecurityNotificationEmails extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "okta_security_notification_emails";
+  public static readonly tfResourceType = "okta_security_notification_emails";
 
   // ===========
   // INITIALIZER
@@ -64,7 +64,9 @@ export class SecurityNotificationEmails extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'okta_security_notification_emails',
       terraformGeneratorMetadata: {
-        providerName: 'okta'
+        providerName: 'okta',
+        providerVersion: '3.20.8',
+        providerVersionConstraint: '~> 3.20.2'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

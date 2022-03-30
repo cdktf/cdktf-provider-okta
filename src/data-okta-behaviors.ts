@@ -14,7 +14,45 @@ export interface DataOktaBehaviorsConfig extends cdktf.TerraformMetaArguments {
   */
   readonly q?: string;
 }
-export class DataOktaBehaviorsBehaviors extends cdktf.ComplexComputedList {
+export interface DataOktaBehaviorsBehaviors {
+}
+
+export function dataOktaBehaviorsBehaviorsToTerraform(struct?: DataOktaBehaviorsBehaviors): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataOktaBehaviorsBehaviorsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataOktaBehaviorsBehaviors | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataOktaBehaviorsBehaviors | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // id - computed: true, optional: false, required: false
   public get id() {
@@ -27,8 +65,8 @@ export class DataOktaBehaviorsBehaviors extends cdktf.ComplexComputedList {
   }
 
   // settings - computed: true, optional: false, required: false
-  public get settings() {
-    return this.getStringMapAttribute('settings');
+  public settings(key: string): string | cdktf.IResolvable {
+    return new cdktf.StringMap(this, 'settings').lookup(key);
   }
 
   // status - computed: true, optional: false, required: false
@@ -42,6 +80,25 @@ export class DataOktaBehaviorsBehaviors extends cdktf.ComplexComputedList {
   }
 }
 
+export class DataOktaBehaviorsBehaviorsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataOktaBehaviorsBehaviorsOutputReference {
+    return new DataOktaBehaviorsBehaviorsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/okta/d/behaviors okta_behaviors}
 */
@@ -50,7 +107,7 @@ export class DataOktaBehaviors extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "okta_behaviors";
+  public static readonly tfResourceType = "okta_behaviors";
 
   // ===========
   // INITIALIZER
@@ -67,7 +124,9 @@ export class DataOktaBehaviors extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'okta_behaviors',
       terraformGeneratorMetadata: {
-        providerName: 'okta'
+        providerName: 'okta',
+        providerVersion: '3.20.8',
+        providerVersionConstraint: '~> 3.20.2'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -82,8 +141,9 @@ export class DataOktaBehaviors extends cdktf.TerraformDataSource {
   // ==========
 
   // behaviors - computed: true, optional: false, required: false
-  public behaviors(index: string) {
-    return new DataOktaBehaviorsBehaviors(this, 'behaviors', index, false);
+  private _behaviors = new DataOktaBehaviorsBehaviorsList(this, "behaviors", false);
+  public get behaviors() {
+    return this._behaviors;
   }
 
   // id - computed: true, optional: true, required: false

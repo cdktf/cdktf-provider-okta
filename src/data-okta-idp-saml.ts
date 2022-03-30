@@ -25,7 +25,7 @@ export class DataOktaIdpSaml extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "okta_idp_saml";
+  public static readonly tfResourceType = "okta_idp_saml";
 
   // ===========
   // INITIALIZER
@@ -42,7 +42,9 @@ export class DataOktaIdpSaml extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'okta_idp_saml',
       terraformGeneratorMetadata: {
-        providerName: 'okta'
+        providerName: 'okta',
+        providerVersion: '3.20.8',
+        providerVersionConstraint: '~> 3.20.2'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

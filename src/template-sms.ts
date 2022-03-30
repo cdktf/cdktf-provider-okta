@@ -57,7 +57,7 @@ export class TemplateSms extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "okta_template_sms";
+  public static readonly tfResourceType = "okta_template_sms";
 
   // ===========
   // INITIALIZER
@@ -74,7 +74,9 @@ export class TemplateSms extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'okta_template_sms',
       terraformGeneratorMetadata: {
-        providerName: 'okta'
+        providerName: 'okta',
+        providerVersion: '3.20.8',
+        providerVersionConstraint: '~> 3.20.2'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

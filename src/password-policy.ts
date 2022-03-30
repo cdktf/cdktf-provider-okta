@@ -197,7 +197,7 @@ export class PasswordPolicy extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "okta_password_policy";
+  public static readonly tfResourceType = "okta_password_policy";
 
   // ===========
   // INITIALIZER
@@ -214,7 +214,9 @@ export class PasswordPolicy extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'okta_password_policy',
       terraformGeneratorMetadata: {
-        providerName: 'okta'
+        providerName: 'okta',
+        providerVersion: '3.20.8',
+        providerVersionConstraint: '~> 3.20.2'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

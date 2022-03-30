@@ -29,7 +29,7 @@ export class PolicyProfileEnrollment extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "okta_policy_profile_enrollment";
+  public static readonly tfResourceType = "okta_policy_profile_enrollment";
 
   // ===========
   // INITIALIZER
@@ -46,7 +46,9 @@ export class PolicyProfileEnrollment extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'okta_policy_profile_enrollment',
       terraformGeneratorMetadata: {
-        providerName: 'okta'
+        providerName: 'okta',
+        providerVersion: '3.20.8',
+        providerVersionConstraint: '~> 3.20.2'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

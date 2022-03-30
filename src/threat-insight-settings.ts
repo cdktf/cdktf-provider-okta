@@ -29,7 +29,7 @@ export class ThreatInsightSettings extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "okta_threat_insight_settings";
+  public static readonly tfResourceType = "okta_threat_insight_settings";
 
   // ===========
   // INITIALIZER
@@ -46,7 +46,9 @@ export class ThreatInsightSettings extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'okta_threat_insight_settings',
       terraformGeneratorMetadata: {
-        providerName: 'okta'
+        providerName: 'okta',
+        providerVersion: '3.20.8',
+        providerVersionConstraint: '~> 3.20.2'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

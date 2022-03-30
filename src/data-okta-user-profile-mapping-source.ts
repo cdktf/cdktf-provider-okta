@@ -17,7 +17,7 @@ export class DataOktaUserProfileMappingSource extends cdktf.TerraformDataSource 
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "okta_user_profile_mapping_source";
+  public static readonly tfResourceType = "okta_user_profile_mapping_source";
 
   // ===========
   // INITIALIZER
@@ -34,7 +34,9 @@ export class DataOktaUserProfileMappingSource extends cdktf.TerraformDataSource 
     super(scope, id, {
       terraformResourceType: 'okta_user_profile_mapping_source',
       terraformGeneratorMetadata: {
-        providerName: 'okta'
+        providerName: 'okta',
+        providerVersion: '3.20.8',
+        providerVersionConstraint: '~> 3.20.2'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

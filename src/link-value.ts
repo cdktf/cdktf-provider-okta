@@ -35,7 +35,7 @@ export class LinkValue extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "okta_link_value";
+  public static readonly tfResourceType = "okta_link_value";
 
   // ===========
   // INITIALIZER
@@ -52,7 +52,9 @@ export class LinkValue extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'okta_link_value',
       terraformGeneratorMetadata: {
-        providerName: 'okta'
+        providerName: 'okta',
+        providerVersion: '3.20.8',
+        providerVersionConstraint: '~> 3.20.2'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

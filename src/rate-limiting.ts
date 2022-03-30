@@ -35,7 +35,7 @@ export class RateLimiting extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "okta_rate_limiting";
+  public static readonly tfResourceType = "okta_rate_limiting";
 
   // ===========
   // INITIALIZER
@@ -52,7 +52,9 @@ export class RateLimiting extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'okta_rate_limiting',
       terraformGeneratorMetadata: {
-        providerName: 'okta'
+        providerName: 'okta',
+        providerVersion: '3.20.8',
+        providerVersionConstraint: '~> 3.20.2'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

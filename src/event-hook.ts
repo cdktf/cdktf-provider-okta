@@ -65,7 +65,7 @@ export class EventHook extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "okta_event_hook";
+  public static readonly tfResourceType = "okta_event_hook";
 
   // ===========
   // INITIALIZER
@@ -82,7 +82,9 @@ export class EventHook extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'okta_event_hook',
       terraformGeneratorMetadata: {
-        providerName: 'okta'
+        providerName: 'okta',
+        providerVersion: '3.20.8',
+        providerVersionConstraint: '~> 3.20.2'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

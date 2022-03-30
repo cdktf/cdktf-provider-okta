@@ -107,7 +107,7 @@ export class OktaProvider extends cdktf.TerraformProvider {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "okta";
+  public static readonly tfResourceType = "okta";
 
   // ===========
   // INITIALIZER
@@ -125,6 +125,7 @@ export class OktaProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'okta',
       terraformGeneratorMetadata: {
         providerName: 'okta',
+        providerVersion: '3.20.8',
         providerVersionConstraint: '~> 3.20.2'
       },
       terraformProviderSource: 'okta/okta'

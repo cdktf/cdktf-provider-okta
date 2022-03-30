@@ -76,7 +76,7 @@ export class ProfileMapping extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "okta_profile_mapping";
+  public static readonly tfResourceType = "okta_profile_mapping";
 
   // ===========
   // INITIALIZER
@@ -93,7 +93,9 @@ export class ProfileMapping extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'okta_profile_mapping',
       terraformGeneratorMetadata: {
-        providerName: 'okta'
+        providerName: 'okta',
+        providerVersion: '3.20.8',
+        providerVersionConstraint: '~> 3.20.2'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

@@ -23,7 +23,7 @@ export class DataOktaAppSignonPolicy extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "okta_app_signon_policy";
+  public static readonly tfResourceType = "okta_app_signon_policy";
 
   // ===========
   // INITIALIZER
@@ -40,7 +40,9 @@ export class DataOktaAppSignonPolicy extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'okta_app_signon_policy',
       terraformGeneratorMetadata: {
-        providerName: 'okta'
+        providerName: 'okta',
+        providerVersion: '3.20.8',
+        providerVersionConstraint: '~> 3.20.2'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

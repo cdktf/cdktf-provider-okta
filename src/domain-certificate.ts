@@ -47,7 +47,7 @@ export class DomainCertificate extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "okta_domain_certificate";
+  public static readonly tfResourceType = "okta_domain_certificate";
 
   // ===========
   // INITIALIZER
@@ -64,7 +64,9 @@ export class DomainCertificate extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'okta_domain_certificate',
       terraformGeneratorMetadata: {
-        providerName: 'okta'
+        providerName: 'okta',
+        providerVersion: '3.20.8',
+        providerVersionConstraint: '~> 3.20.2'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

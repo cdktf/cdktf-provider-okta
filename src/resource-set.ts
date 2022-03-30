@@ -35,7 +35,7 @@ export class ResourceSet extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "okta_resource_set";
+  public static readonly tfResourceType = "okta_resource_set";
 
   // ===========
   // INITIALIZER
@@ -52,7 +52,9 @@ export class ResourceSet extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'okta_resource_set',
       terraformGeneratorMetadata: {
-        providerName: 'okta'
+        providerName: 'okta',
+        providerVersion: '3.20.8',
+        providerVersionConstraint: '~> 3.20.2'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

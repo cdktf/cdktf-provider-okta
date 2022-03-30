@@ -107,7 +107,7 @@ export class PolicyMfaDefault extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "okta_policy_mfa_default";
+  public static readonly tfResourceType = "okta_policy_mfa_default";
 
   // ===========
   // INITIALIZER
@@ -124,7 +124,9 @@ export class PolicyMfaDefault extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'okta_policy_mfa_default',
       terraformGeneratorMetadata: {
-        providerName: 'okta'
+        providerName: 'okta',
+        providerVersion: '3.20.8',
+        providerVersionConstraint: '~> 3.20.2'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

@@ -107,7 +107,7 @@ export class OrgConfiguration extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "okta_org_configuration";
+  public static readonly tfResourceType = "okta_org_configuration";
 
   // ===========
   // INITIALIZER
@@ -124,7 +124,9 @@ export class OrgConfiguration extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'okta_org_configuration',
       terraformGeneratorMetadata: {
-        providerName: 'okta'
+        providerName: 'okta',
+        providerVersion: '3.20.8',
+        providerVersionConstraint: '~> 3.20.2'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

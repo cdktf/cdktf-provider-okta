@@ -41,7 +41,7 @@ export class Captcha extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "okta_captcha";
+  public static readonly tfResourceType = "okta_captcha";
 
   // ===========
   // INITIALIZER
@@ -58,7 +58,9 @@ export class Captcha extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'okta_captcha',
       terraformGeneratorMetadata: {
-        providerName: 'okta'
+        providerName: 'okta',
+        providerVersion: '3.20.8',
+        providerVersionConstraint: '~> 3.20.2'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
