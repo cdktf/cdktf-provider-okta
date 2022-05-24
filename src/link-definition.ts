@@ -26,6 +26,13 @@ export interface LinkDefinitionConfig extends cdktf.TerraformMetaArguments {
   */
   readonly associatedTitle: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/link_definition#id LinkDefinition#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Description of the primary relationship.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/link_definition#primary_description LinkDefinition#primary_description}
@@ -82,6 +89,7 @@ export class LinkDefinition extends cdktf.TerraformResource {
     this._associatedDescription = config.associatedDescription;
     this._associatedName = config.associatedName;
     this._associatedTitle = config.associatedTitle;
+    this._id = config.id;
     this._primaryDescription = config.primaryDescription;
     this._primaryName = config.primaryName;
     this._primaryTitle = config.primaryTitle;
@@ -131,8 +139,19 @@ export class LinkDefinition extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // primary_description - computed: false, optional: false, required: true
@@ -183,6 +202,7 @@ export class LinkDefinition extends cdktf.TerraformResource {
       associated_description: cdktf.stringToTerraform(this._associatedDescription),
       associated_name: cdktf.stringToTerraform(this._associatedName),
       associated_title: cdktf.stringToTerraform(this._associatedTitle),
+      id: cdktf.stringToTerraform(this._id),
       primary_description: cdktf.stringToTerraform(this._primaryDescription),
       primary_name: cdktf.stringToTerraform(this._primaryName),
       primary_title: cdktf.stringToTerraform(this._primaryTitle),

@@ -32,6 +32,13 @@ export interface NetworkZoneConfig extends cdktf.TerraformMetaArguments {
   */
   readonly gateways?: string[];
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/network_zone#id NetworkZone#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Name of the Network Zone Resource
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/network_zone#name NetworkZone#name}
@@ -95,6 +102,7 @@ export class NetworkZone extends cdktf.TerraformResource {
     this._dynamicLocations = config.dynamicLocations;
     this._dynamicProxyType = config.dynamicProxyType;
     this._gateways = config.gateways;
+    this._id = config.id;
     this._name = config.name;
     this._proxies = config.proxies;
     this._type = config.type;
@@ -170,8 +178,19 @@ export class NetworkZone extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -242,6 +261,7 @@ export class NetworkZone extends cdktf.TerraformResource {
       dynamic_locations: cdktf.listMapper(cdktf.stringToTerraform)(this._dynamicLocations),
       dynamic_proxy_type: cdktf.stringToTerraform(this._dynamicProxyType),
       gateways: cdktf.listMapper(cdktf.stringToTerraform)(this._gateways),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       proxies: cdktf.listMapper(cdktf.stringToTerraform)(this._proxies),
       type: cdktf.stringToTerraform(this._type),

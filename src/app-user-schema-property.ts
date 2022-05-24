@@ -48,6 +48,13 @@ export interface AppUserSchemaPropertyConfig extends cdktf.TerraformMetaArgument
   */
   readonly externalNamespace?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema_property#id AppUserSchemaProperty#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Subschema unique string identifier
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema_property#index AppUserSchemaProperty#index}
@@ -156,6 +163,102 @@ export function appUserSchemaPropertyArrayOneOfToTerraform(struct?: AppUserSchem
   }
 }
 
+export class AppUserSchemaPropertyArrayOneOfOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AppUserSchemaPropertyArrayOneOf | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._const !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.const = this._const;
+    }
+    if (this._title !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.title = this._title;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AppUserSchemaPropertyArrayOneOf | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._const = undefined;
+      this._title = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._const = value.const;
+      this._title = value.title;
+    }
+  }
+
+  // const - computed: false, optional: false, required: true
+  private _const?: string; 
+  public get const() {
+    return this.getStringAttribute('const');
+  }
+  public set const(value: string) {
+    this._const = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get constInput() {
+    return this._const;
+  }
+
+  // title - computed: false, optional: false, required: true
+  private _title?: string; 
+  public get title() {
+    return this.getStringAttribute('title');
+  }
+  public set title(value: string) {
+    this._title = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get titleInput() {
+    return this._title;
+  }
+}
+
+export class AppUserSchemaPropertyArrayOneOfList extends cdktf.ComplexList {
+  public internalValue? : AppUserSchemaPropertyArrayOneOf[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AppUserSchemaPropertyArrayOneOfOutputReference {
+    return new AppUserSchemaPropertyArrayOneOfOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface AppUserSchemaPropertyOneOf {
   /**
   * Enum value
@@ -182,6 +285,102 @@ export function appUserSchemaPropertyOneOfToTerraform(struct?: AppUserSchemaProp
   }
 }
 
+export class AppUserSchemaPropertyOneOfOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AppUserSchemaPropertyOneOf | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._const !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.const = this._const;
+    }
+    if (this._title !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.title = this._title;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AppUserSchemaPropertyOneOf | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._const = undefined;
+      this._title = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._const = value.const;
+      this._title = value.title;
+    }
+  }
+
+  // const - computed: false, optional: false, required: true
+  private _const?: string; 
+  public get const() {
+    return this.getStringAttribute('const');
+  }
+  public set const(value: string) {
+    this._const = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get constInput() {
+    return this._const;
+  }
+
+  // title - computed: false, optional: false, required: true
+  private _title?: string; 
+  public get title() {
+    return this.getStringAttribute('title');
+  }
+  public set title(value: string) {
+    this._title = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get titleInput() {
+    return this._title;
+  }
+}
+
+export class AppUserSchemaPropertyOneOfList extends cdktf.ComplexList {
+  public internalValue? : AppUserSchemaPropertyOneOf[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AppUserSchemaPropertyOneOfOutputReference {
+    return new AppUserSchemaPropertyOneOfOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/okta/r/app_user_schema_property okta_app_user_schema_property}
@@ -224,6 +423,7 @@ export class AppUserSchemaProperty extends cdktf.TerraformResource {
     this._enum = config.enum;
     this._externalName = config.externalName;
     this._externalNamespace = config.externalNamespace;
+    this._id = config.id;
     this._index = config.index;
     this._master = config.master;
     this._maxLength = config.maxLength;
@@ -236,8 +436,8 @@ export class AppUserSchemaProperty extends cdktf.TerraformResource {
     this._union = config.union;
     this._unique = config.unique;
     this._userType = config.userType;
-    this._arrayOneOf = config.arrayOneOf;
-    this._oneOf = config.oneOf;
+    this._arrayOneOf.internalValue = config.arrayOneOf;
+    this._oneOf.internalValue = config.oneOf;
   }
 
   // ==========
@@ -354,8 +554,19 @@ export class AppUserSchemaProperty extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // index - computed: false, optional: false, required: true
@@ -542,37 +753,35 @@ export class AppUserSchemaProperty extends cdktf.TerraformResource {
   }
 
   // array_one_of - computed: false, optional: true, required: false
-  private _arrayOneOf?: AppUserSchemaPropertyArrayOneOf[] | cdktf.IResolvable; 
+  private _arrayOneOf = new AppUserSchemaPropertyArrayOneOfList(this, "array_one_of", false);
   public get arrayOneOf() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('array_one_of');
+    return this._arrayOneOf;
   }
-  public set arrayOneOf(value: AppUserSchemaPropertyArrayOneOf[] | cdktf.IResolvable) {
-    this._arrayOneOf = value;
+  public putArrayOneOf(value: AppUserSchemaPropertyArrayOneOf[] | cdktf.IResolvable) {
+    this._arrayOneOf.internalValue = value;
   }
   public resetArrayOneOf() {
-    this._arrayOneOf = undefined;
+    this._arrayOneOf.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get arrayOneOfInput() {
-    return this._arrayOneOf;
+    return this._arrayOneOf.internalValue;
   }
 
   // one_of - computed: false, optional: true, required: false
-  private _oneOf?: AppUserSchemaPropertyOneOf[] | cdktf.IResolvable; 
+  private _oneOf = new AppUserSchemaPropertyOneOfList(this, "one_of", false);
   public get oneOf() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('one_of');
+    return this._oneOf;
   }
-  public set oneOf(value: AppUserSchemaPropertyOneOf[] | cdktf.IResolvable) {
-    this._oneOf = value;
+  public putOneOf(value: AppUserSchemaPropertyOneOf[] | cdktf.IResolvable) {
+    this._oneOf.internalValue = value;
   }
   public resetOneOf() {
-    this._oneOf = undefined;
+    this._oneOf.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get oneOfInput() {
-    return this._oneOf;
+    return this._oneOf.internalValue;
   }
 
   // =========
@@ -588,6 +797,7 @@ export class AppUserSchemaProperty extends cdktf.TerraformResource {
       enum: cdktf.listMapper(cdktf.stringToTerraform)(this._enum),
       external_name: cdktf.stringToTerraform(this._externalName),
       external_namespace: cdktf.stringToTerraform(this._externalNamespace),
+      id: cdktf.stringToTerraform(this._id),
       index: cdktf.stringToTerraform(this._index),
       master: cdktf.stringToTerraform(this._master),
       max_length: cdktf.numberToTerraform(this._maxLength),
@@ -600,8 +810,8 @@ export class AppUserSchemaProperty extends cdktf.TerraformResource {
       union: cdktf.booleanToTerraform(this._union),
       unique: cdktf.stringToTerraform(this._unique),
       user_type: cdktf.stringToTerraform(this._userType),
-      array_one_of: cdktf.listMapper(appUserSchemaPropertyArrayOneOfToTerraform)(this._arrayOneOf),
-      one_of: cdktf.listMapper(appUserSchemaPropertyOneOfToTerraform)(this._oneOf),
+      array_one_of: cdktf.listMapper(appUserSchemaPropertyArrayOneOfToTerraform)(this._arrayOneOf.internalValue),
+      one_of: cdktf.listMapper(appUserSchemaPropertyOneOfToTerraform)(this._oneOf.internalValue),
     };
   }
 }

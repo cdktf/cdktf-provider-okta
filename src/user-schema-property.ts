@@ -44,6 +44,13 @@ export interface UserSchemaPropertyConfig extends cdktf.TerraformMetaArguments {
   */
   readonly externalNamespace?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema_property#id UserSchemaProperty#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Subschema unique string identifier
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema_property#index UserSchemaProperty#index}
@@ -158,6 +165,102 @@ export function userSchemaPropertyArrayOneOfToTerraform(struct?: UserSchemaPrope
   }
 }
 
+export class UserSchemaPropertyArrayOneOfOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): UserSchemaPropertyArrayOneOf | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._const !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.const = this._const;
+    }
+    if (this._title !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.title = this._title;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: UserSchemaPropertyArrayOneOf | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._const = undefined;
+      this._title = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._const = value.const;
+      this._title = value.title;
+    }
+  }
+
+  // const - computed: false, optional: false, required: true
+  private _const?: string; 
+  public get const() {
+    return this.getStringAttribute('const');
+  }
+  public set const(value: string) {
+    this._const = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get constInput() {
+    return this._const;
+  }
+
+  // title - computed: false, optional: false, required: true
+  private _title?: string; 
+  public get title() {
+    return this.getStringAttribute('title');
+  }
+  public set title(value: string) {
+    this._title = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get titleInput() {
+    return this._title;
+  }
+}
+
+export class UserSchemaPropertyArrayOneOfList extends cdktf.ComplexList {
+  public internalValue? : UserSchemaPropertyArrayOneOf[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): UserSchemaPropertyArrayOneOfOutputReference {
+    return new UserSchemaPropertyArrayOneOfOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface UserSchemaPropertyMasterOverridePriority {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema_property#type UserSchemaProperty#type}
@@ -180,6 +283,105 @@ export function userSchemaPropertyMasterOverridePriorityToTerraform(struct?: Use
   }
 }
 
+export class UserSchemaPropertyMasterOverridePriorityOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): UserSchemaPropertyMasterOverridePriority | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: UserSchemaPropertyMasterOverridePriority | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._type = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._type = value.type;
+      this._value = value.value;
+    }
+  }
+
+  // type - computed: false, optional: true, required: false
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  public resetType() {
+    this._type = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+
+  // value - computed: false, optional: false, required: true
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class UserSchemaPropertyMasterOverridePriorityList extends cdktf.ComplexList {
+  public internalValue? : UserSchemaPropertyMasterOverridePriority[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): UserSchemaPropertyMasterOverridePriorityOutputReference {
+    return new UserSchemaPropertyMasterOverridePriorityOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface UserSchemaPropertyOneOf {
   /**
   * Enum value
@@ -206,6 +408,102 @@ export function userSchemaPropertyOneOfToTerraform(struct?: UserSchemaPropertyOn
   }
 }
 
+export class UserSchemaPropertyOneOfOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): UserSchemaPropertyOneOf | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._const !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.const = this._const;
+    }
+    if (this._title !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.title = this._title;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: UserSchemaPropertyOneOf | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._const = undefined;
+      this._title = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._const = value.const;
+      this._title = value.title;
+    }
+  }
+
+  // const - computed: false, optional: false, required: true
+  private _const?: string; 
+  public get const() {
+    return this.getStringAttribute('const');
+  }
+  public set const(value: string) {
+    this._const = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get constInput() {
+    return this._const;
+  }
+
+  // title - computed: false, optional: false, required: true
+  private _title?: string; 
+  public get title() {
+    return this.getStringAttribute('title');
+  }
+  public set title(value: string) {
+    this._title = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get titleInput() {
+    return this._title;
+  }
+}
+
+export class UserSchemaPropertyOneOfList extends cdktf.ComplexList {
+  public internalValue? : UserSchemaPropertyOneOf[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): UserSchemaPropertyOneOfOutputReference {
+    return new UserSchemaPropertyOneOfOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/okta/r/user_schema_property okta_user_schema_property}
@@ -247,6 +545,7 @@ export class UserSchemaProperty extends cdktf.TerraformResource {
     this._enum = config.enum;
     this._externalName = config.externalName;
     this._externalNamespace = config.externalNamespace;
+    this._id = config.id;
     this._index = config.index;
     this._master = config.master;
     this._maxLength = config.maxLength;
@@ -259,9 +558,9 @@ export class UserSchemaProperty extends cdktf.TerraformResource {
     this._type = config.type;
     this._unique = config.unique;
     this._userType = config.userType;
-    this._arrayOneOf = config.arrayOneOf;
-    this._masterOverridePriority = config.masterOverridePriority;
-    this._oneOf = config.oneOf;
+    this._arrayOneOf.internalValue = config.arrayOneOf;
+    this._masterOverridePriority.internalValue = config.masterOverridePriority;
+    this._oneOf.internalValue = config.oneOf;
   }
 
   // ==========
@@ -365,8 +664,19 @@ export class UserSchemaProperty extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // index - computed: false, optional: false, required: true
@@ -553,54 +863,51 @@ export class UserSchemaProperty extends cdktf.TerraformResource {
   }
 
   // array_one_of - computed: false, optional: true, required: false
-  private _arrayOneOf?: UserSchemaPropertyArrayOneOf[] | cdktf.IResolvable; 
+  private _arrayOneOf = new UserSchemaPropertyArrayOneOfList(this, "array_one_of", false);
   public get arrayOneOf() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('array_one_of');
+    return this._arrayOneOf;
   }
-  public set arrayOneOf(value: UserSchemaPropertyArrayOneOf[] | cdktf.IResolvable) {
-    this._arrayOneOf = value;
+  public putArrayOneOf(value: UserSchemaPropertyArrayOneOf[] | cdktf.IResolvable) {
+    this._arrayOneOf.internalValue = value;
   }
   public resetArrayOneOf() {
-    this._arrayOneOf = undefined;
+    this._arrayOneOf.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get arrayOneOfInput() {
-    return this._arrayOneOf;
+    return this._arrayOneOf.internalValue;
   }
 
   // master_override_priority - computed: false, optional: true, required: false
-  private _masterOverridePriority?: UserSchemaPropertyMasterOverridePriority[] | cdktf.IResolvable; 
+  private _masterOverridePriority = new UserSchemaPropertyMasterOverridePriorityList(this, "master_override_priority", false);
   public get masterOverridePriority() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('master_override_priority');
+    return this._masterOverridePriority;
   }
-  public set masterOverridePriority(value: UserSchemaPropertyMasterOverridePriority[] | cdktf.IResolvable) {
-    this._masterOverridePriority = value;
+  public putMasterOverridePriority(value: UserSchemaPropertyMasterOverridePriority[] | cdktf.IResolvable) {
+    this._masterOverridePriority.internalValue = value;
   }
   public resetMasterOverridePriority() {
-    this._masterOverridePriority = undefined;
+    this._masterOverridePriority.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get masterOverridePriorityInput() {
-    return this._masterOverridePriority;
+    return this._masterOverridePriority.internalValue;
   }
 
   // one_of - computed: false, optional: true, required: false
-  private _oneOf?: UserSchemaPropertyOneOf[] | cdktf.IResolvable; 
+  private _oneOf = new UserSchemaPropertyOneOfList(this, "one_of", false);
   public get oneOf() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('one_of');
+    return this._oneOf;
   }
-  public set oneOf(value: UserSchemaPropertyOneOf[] | cdktf.IResolvable) {
-    this._oneOf = value;
+  public putOneOf(value: UserSchemaPropertyOneOf[] | cdktf.IResolvable) {
+    this._oneOf.internalValue = value;
   }
   public resetOneOf() {
-    this._oneOf = undefined;
+    this._oneOf.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get oneOfInput() {
-    return this._oneOf;
+    return this._oneOf.internalValue;
   }
 
   // =========
@@ -615,6 +922,7 @@ export class UserSchemaProperty extends cdktf.TerraformResource {
       enum: cdktf.listMapper(cdktf.stringToTerraform)(this._enum),
       external_name: cdktf.stringToTerraform(this._externalName),
       external_namespace: cdktf.stringToTerraform(this._externalNamespace),
+      id: cdktf.stringToTerraform(this._id),
       index: cdktf.stringToTerraform(this._index),
       master: cdktf.stringToTerraform(this._master),
       max_length: cdktf.numberToTerraform(this._maxLength),
@@ -627,9 +935,9 @@ export class UserSchemaProperty extends cdktf.TerraformResource {
       type: cdktf.stringToTerraform(this._type),
       unique: cdktf.stringToTerraform(this._unique),
       user_type: cdktf.stringToTerraform(this._userType),
-      array_one_of: cdktf.listMapper(userSchemaPropertyArrayOneOfToTerraform)(this._arrayOneOf),
-      master_override_priority: cdktf.listMapper(userSchemaPropertyMasterOverridePriorityToTerraform)(this._masterOverridePriority),
-      one_of: cdktf.listMapper(userSchemaPropertyOneOfToTerraform)(this._oneOf),
+      array_one_of: cdktf.listMapper(userSchemaPropertyArrayOneOfToTerraform)(this._arrayOneOf.internalValue),
+      master_override_priority: cdktf.listMapper(userSchemaPropertyMasterOverridePriorityToTerraform)(this._masterOverridePriority.internalValue),
+      one_of: cdktf.listMapper(userSchemaPropertyOneOfToTerraform)(this._oneOf.internalValue),
     };
   }
 }

@@ -68,6 +68,13 @@ export interface AppBookmarkConfig extends cdktf.TerraformMetaArguments {
   */
   readonly hideWeb?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark#id AppBookmark#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Pretty name of app.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark#label AppBookmark#label}
@@ -117,6 +124,9 @@ export interface AppBookmarkUsers {
   * User ID.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark#id AppBookmark#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
@@ -145,6 +155,135 @@ export function appBookmarkUsersToTerraform(struct?: AppBookmarkUsers | cdktf.IR
   }
 }
 
+export class AppBookmarkUsersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AppBookmarkUsers | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._id !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.id = this._id;
+    }
+    if (this._password !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.password = this._password;
+    }
+    if (this._username !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.username = this._username;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AppBookmarkUsers | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._id = undefined;
+      this._password = undefined;
+      this._username = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._id = value.id;
+      this._password = value.password;
+      this._username = value.username;
+    }
+  }
+
+  // id - computed: false, optional: true, required: false
+  private _id?: string; 
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
+  }
+
+  // password - computed: false, optional: true, required: false
+  private _password?: string; 
+  public get password() {
+    return this.getStringAttribute('password');
+  }
+  public set password(value: string) {
+    this._password = value;
+  }
+  public resetPassword() {
+    this._password = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get passwordInput() {
+    return this._password;
+  }
+
+  // scope - computed: true, optional: false, required: false
+  public get scope() {
+    return this.getStringAttribute('scope');
+  }
+
+  // username - computed: false, optional: true, required: false
+  private _username?: string; 
+  public get username() {
+    return this.getStringAttribute('username');
+  }
+  public set username(value: string) {
+    this._username = value;
+  }
+  public resetUsername() {
+    this._username = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get usernameInput() {
+    return this._username;
+  }
+}
+
+export class AppBookmarkUsersList extends cdktf.ComplexList {
+  public internalValue? : AppBookmarkUsers[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AppBookmarkUsersOutputReference {
+    return new AppBookmarkUsersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark okta_app_bookmark}
@@ -190,6 +329,7 @@ export class AppBookmark extends cdktf.TerraformResource {
     this._groups = config.groups;
     this._hideIos = config.hideIos;
     this._hideWeb = config.hideWeb;
+    this._id = config.id;
     this._label = config.label;
     this._logo = config.logo;
     this._requestIntegration = config.requestIntegration;
@@ -197,7 +337,7 @@ export class AppBookmark extends cdktf.TerraformResource {
     this._skipUsers = config.skipUsers;
     this._status = config.status;
     this._url = config.url;
-    this._users = config.users;
+    this._users.internalValue = config.users;
   }
 
   // ==========
@@ -365,8 +505,19 @@ export class AppBookmark extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // label - computed: false, optional: false, required: true
@@ -491,20 +642,19 @@ export class AppBookmark extends cdktf.TerraformResource {
   }
 
   // users - computed: false, optional: true, required: false
-  private _users?: AppBookmarkUsers[] | cdktf.IResolvable; 
+  private _users = new AppBookmarkUsersList(this, "users", true);
   public get users() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('users')));
+    return this._users;
   }
-  public set users(value: AppBookmarkUsers[] | cdktf.IResolvable) {
-    this._users = value;
+  public putUsers(value: AppBookmarkUsers[] | cdktf.IResolvable) {
+    this._users.internalValue = value;
   }
   public resetUsers() {
-    this._users = undefined;
+    this._users.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get usersInput() {
-    return this._users;
+    return this._users.internalValue;
   }
 
   // =========
@@ -523,6 +673,7 @@ export class AppBookmark extends cdktf.TerraformResource {
       groups: cdktf.listMapper(cdktf.stringToTerraform)(this._groups),
       hide_ios: cdktf.booleanToTerraform(this._hideIos),
       hide_web: cdktf.booleanToTerraform(this._hideWeb),
+      id: cdktf.stringToTerraform(this._id),
       label: cdktf.stringToTerraform(this._label),
       logo: cdktf.stringToTerraform(this._logo),
       request_integration: cdktf.booleanToTerraform(this._requestIntegration),
@@ -530,7 +681,7 @@ export class AppBookmark extends cdktf.TerraformResource {
       skip_users: cdktf.booleanToTerraform(this._skipUsers),
       status: cdktf.stringToTerraform(this._status),
       url: cdktf.stringToTerraform(this._url),
-      users: cdktf.listMapper(appBookmarkUsersToTerraform)(this._users),
+      users: cdktf.listMapper(appBookmarkUsersToTerraform)(this._users.internalValue),
     };
   }
 }

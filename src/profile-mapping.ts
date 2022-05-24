@@ -20,6 +20,13 @@ export interface ProfileMappingConfig extends cdktf.TerraformMetaArguments {
   */
   readonly deleteWhenAbsent?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/profile_mapping#id ProfileMapping#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * The source id of the mapping to manage.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/profile_mapping#source_id ProfileMapping#source_id}
@@ -47,6 +54,9 @@ export interface ProfileMappingMappings {
   * The mapping property key.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/profile_mapping#id ProfileMapping#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id: string;
   /**
@@ -67,6 +77,124 @@ export function profileMappingMappingsToTerraform(struct?: ProfileMappingMapping
   }
 }
 
+export class ProfileMappingMappingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ProfileMappingMappings | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._expression !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.expression = this._expression;
+    }
+    if (this._id !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.id = this._id;
+    }
+    if (this._pushStatus !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pushStatus = this._pushStatus;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ProfileMappingMappings | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._expression = undefined;
+      this._id = undefined;
+      this._pushStatus = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._expression = value.expression;
+      this._id = value.id;
+      this._pushStatus = value.pushStatus;
+    }
+  }
+
+  // expression - computed: false, optional: false, required: true
+  private _expression?: string; 
+  public get expression() {
+    return this.getStringAttribute('expression');
+  }
+  public set expression(value: string) {
+    this._expression = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get expressionInput() {
+    return this._expression;
+  }
+
+  // id - computed: false, optional: false, required: true
+  private _id?: string; 
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
+  }
+
+  // push_status - computed: false, optional: true, required: false
+  private _pushStatus?: string; 
+  public get pushStatus() {
+    return this.getStringAttribute('push_status');
+  }
+  public set pushStatus(value: string) {
+    this._pushStatus = value;
+  }
+  public resetPushStatus() {
+    this._pushStatus = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pushStatusInput() {
+    return this._pushStatus;
+  }
+}
+
+export class ProfileMappingMappingsList extends cdktf.ComplexList {
+  public internalValue? : ProfileMappingMappings[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ProfileMappingMappingsOutputReference {
+    return new ProfileMappingMappingsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/okta/r/profile_mapping okta_profile_mapping}
@@ -104,9 +232,10 @@ export class ProfileMapping extends cdktf.TerraformResource {
     });
     this._alwaysApply = config.alwaysApply;
     this._deleteWhenAbsent = config.deleteWhenAbsent;
+    this._id = config.id;
     this._sourceId = config.sourceId;
     this._targetId = config.targetId;
-    this._mappings = config.mappings;
+    this._mappings.internalValue = config.mappings;
   }
 
   // ==========
@@ -146,8 +275,19 @@ export class ProfileMapping extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // source_id - computed: false, optional: false, required: true
@@ -197,20 +337,19 @@ export class ProfileMapping extends cdktf.TerraformResource {
   }
 
   // mappings - computed: false, optional: true, required: false
-  private _mappings?: ProfileMappingMappings[] | cdktf.IResolvable; 
+  private _mappings = new ProfileMappingMappingsList(this, "mappings", true);
   public get mappings() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('mappings')));
+    return this._mappings;
   }
-  public set mappings(value: ProfileMappingMappings[] | cdktf.IResolvable) {
-    this._mappings = value;
+  public putMappings(value: ProfileMappingMappings[] | cdktf.IResolvable) {
+    this._mappings.internalValue = value;
   }
   public resetMappings() {
-    this._mappings = undefined;
+    this._mappings.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get mappingsInput() {
-    return this._mappings;
+    return this._mappings.internalValue;
   }
 
   // =========
@@ -221,9 +360,10 @@ export class ProfileMapping extends cdktf.TerraformResource {
     return {
       always_apply: cdktf.booleanToTerraform(this._alwaysApply),
       delete_when_absent: cdktf.booleanToTerraform(this._deleteWhenAbsent),
+      id: cdktf.stringToTerraform(this._id),
       source_id: cdktf.stringToTerraform(this._sourceId),
       target_id: cdktf.stringToTerraform(this._targetId),
-      mappings: cdktf.listMapper(profileMappingMappingsToTerraform)(this._mappings),
+      mappings: cdktf.listMapper(profileMappingMappingsToTerraform)(this._mappings.internalValue),
     };
   }
 }

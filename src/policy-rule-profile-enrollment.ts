@@ -20,6 +20,13 @@ export interface PolicyRuleProfileEnrollmentConfig extends cdktf.TerraformMetaAr
   */
   readonly emailVerification?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_profile_enrollment#id PolicyRuleProfileEnrollment#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * ID of a Registration Inline Hook
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_profile_enrollment#inline_hook_id PolicyRuleProfileEnrollment#inline_hook_id}
@@ -83,6 +90,124 @@ export function policyRuleProfileEnrollmentProfileAttributesToTerraform(struct?:
   }
 }
 
+export class PolicyRuleProfileEnrollmentProfileAttributesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): PolicyRuleProfileEnrollmentProfileAttributes | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._label !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.label = this._label;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._required !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.required = this._required;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: PolicyRuleProfileEnrollmentProfileAttributes | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._label = undefined;
+      this._name = undefined;
+      this._required = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._label = value.label;
+      this._name = value.name;
+      this._required = value.required;
+    }
+  }
+
+  // label - computed: false, optional: false, required: true
+  private _label?: string; 
+  public get label() {
+    return this.getStringAttribute('label');
+  }
+  public set label(value: string) {
+    this._label = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get labelInput() {
+    return this._label;
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // required - computed: false, optional: true, required: false
+  private _required?: boolean | cdktf.IResolvable; 
+  public get required() {
+    return this.getBooleanAttribute('required');
+  }
+  public set required(value: boolean | cdktf.IResolvable) {
+    this._required = value;
+  }
+  public resetRequired() {
+    this._required = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get requiredInput() {
+    return this._required;
+  }
+}
+
+export class PolicyRuleProfileEnrollmentProfileAttributesList extends cdktf.ComplexList {
+  public internalValue? : PolicyRuleProfileEnrollmentProfileAttributes[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): PolicyRuleProfileEnrollmentProfileAttributesOutputReference {
+    return new PolicyRuleProfileEnrollmentProfileAttributesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_profile_enrollment okta_policy_rule_profile_enrollment}
@@ -120,11 +245,12 @@ export class PolicyRuleProfileEnrollment extends cdktf.TerraformResource {
     });
     this._access = config.access;
     this._emailVerification = config.emailVerification;
+    this._id = config.id;
     this._inlineHookId = config.inlineHookId;
     this._policyId = config.policyId;
     this._targetGroupId = config.targetGroupId;
     this._unknownUserAction = config.unknownUserAction;
-    this._profileAttributes = config.profileAttributes;
+    this._profileAttributes.internalValue = config.profileAttributes;
   }
 
   // ==========
@@ -164,8 +290,19 @@ export class PolicyRuleProfileEnrollment extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // inline_hook_id - computed: false, optional: true, required: false
@@ -237,20 +374,19 @@ export class PolicyRuleProfileEnrollment extends cdktf.TerraformResource {
   }
 
   // profile_attributes - computed: false, optional: true, required: false
-  private _profileAttributes?: PolicyRuleProfileEnrollmentProfileAttributes[] | cdktf.IResolvable; 
+  private _profileAttributes = new PolicyRuleProfileEnrollmentProfileAttributesList(this, "profile_attributes", false);
   public get profileAttributes() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('profile_attributes');
+    return this._profileAttributes;
   }
-  public set profileAttributes(value: PolicyRuleProfileEnrollmentProfileAttributes[] | cdktf.IResolvable) {
-    this._profileAttributes = value;
+  public putProfileAttributes(value: PolicyRuleProfileEnrollmentProfileAttributes[] | cdktf.IResolvable) {
+    this._profileAttributes.internalValue = value;
   }
   public resetProfileAttributes() {
-    this._profileAttributes = undefined;
+    this._profileAttributes.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get profileAttributesInput() {
-    return this._profileAttributes;
+    return this._profileAttributes.internalValue;
   }
 
   // =========
@@ -261,11 +397,12 @@ export class PolicyRuleProfileEnrollment extends cdktf.TerraformResource {
     return {
       access: cdktf.stringToTerraform(this._access),
       email_verification: cdktf.booleanToTerraform(this._emailVerification),
+      id: cdktf.stringToTerraform(this._id),
       inline_hook_id: cdktf.stringToTerraform(this._inlineHookId),
       policy_id: cdktf.stringToTerraform(this._policyId),
       target_group_id: cdktf.stringToTerraform(this._targetGroupId),
       unknown_user_action: cdktf.stringToTerraform(this._unknownUserAction),
-      profile_attributes: cdktf.listMapper(policyRuleProfileEnrollmentProfileAttributesToTerraform)(this._profileAttributes),
+      profile_attributes: cdktf.listMapper(policyRuleProfileEnrollmentProfileAttributesToTerraform)(this._profileAttributes.internalValue),
     };
   }
 }

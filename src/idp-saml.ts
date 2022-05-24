@@ -44,6 +44,13 @@ export interface IdpSamlConfig extends cdktf.TerraformMetaArguments {
   */
   readonly groupsFilter?: string[];
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml#id IdpSaml#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml#issuer IdpSaml#issuer}
   */
   readonly issuer: string;
@@ -188,6 +195,7 @@ export class IdpSaml extends cdktf.TerraformResource {
     this._groupsAssignment = config.groupsAssignment;
     this._groupsAttribute = config.groupsAttribute;
     this._groupsFilter = config.groupsFilter;
+    this._id = config.id;
     this._issuer = config.issuer;
     this._issuerMode = config.issuerMode;
     this._kid = config.kid;
@@ -366,8 +374,19 @@ export class IdpSaml extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // issuer - computed: false, optional: false, required: true
@@ -735,6 +754,7 @@ export class IdpSaml extends cdktf.TerraformResource {
       groups_assignment: cdktf.listMapper(cdktf.stringToTerraform)(this._groupsAssignment),
       groups_attribute: cdktf.stringToTerraform(this._groupsAttribute),
       groups_filter: cdktf.listMapper(cdktf.stringToTerraform)(this._groupsFilter),
+      id: cdktf.stringToTerraform(this._id),
       issuer: cdktf.stringToTerraform(this._issuer),
       issuer_mode: cdktf.stringToTerraform(this._issuerMode),
       kid: cdktf.stringToTerraform(this._kid),

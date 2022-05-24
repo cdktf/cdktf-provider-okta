@@ -20,6 +20,13 @@ export interface EventHookConfig extends cdktf.TerraformMetaArguments {
   */
   readonly events: string[];
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/event_hook#id EventHook#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/event_hook#name EventHook#name}
   */
   readonly name: string;
@@ -56,6 +63,108 @@ export function eventHookHeadersToTerraform(struct?: EventHookHeaders | cdktf.IR
   }
 }
 
+export class EventHookHeadersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): EventHookHeaders | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: EventHookHeaders | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._key = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._key = value.key;
+      this._value = value.value;
+    }
+  }
+
+  // key - computed: false, optional: true, required: false
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  public resetKey() {
+    this._key = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // value - computed: false, optional: true, required: false
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  public resetValue() {
+    this._value = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class EventHookHeadersList extends cdktf.ComplexList {
+  public internalValue? : EventHookHeaders[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): EventHookHeadersOutputReference {
+    return new EventHookHeadersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/okta/r/event_hook okta_event_hook}
@@ -94,9 +203,10 @@ export class EventHook extends cdktf.TerraformResource {
     this._auth = config.auth;
     this._channel = config.channel;
     this._events = config.events;
+    this._id = config.id;
     this._name = config.name;
     this._status = config.status;
-    this._headers = config.headers;
+    this._headers.internalValue = config.headers;
   }
 
   // ==========
@@ -146,8 +256,19 @@ export class EventHook extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -180,20 +301,19 @@ export class EventHook extends cdktf.TerraformResource {
   }
 
   // headers - computed: false, optional: true, required: false
-  private _headers?: EventHookHeaders[] | cdktf.IResolvable; 
+  private _headers = new EventHookHeadersList(this, "headers", true);
   public get headers() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('headers')));
+    return this._headers;
   }
-  public set headers(value: EventHookHeaders[] | cdktf.IResolvable) {
-    this._headers = value;
+  public putHeaders(value: EventHookHeaders[] | cdktf.IResolvable) {
+    this._headers.internalValue = value;
   }
   public resetHeaders() {
-    this._headers = undefined;
+    this._headers.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get headersInput() {
-    return this._headers;
+    return this._headers.internalValue;
   }
 
   // =========
@@ -205,9 +325,10 @@ export class EventHook extends cdktf.TerraformResource {
       auth: cdktf.hashMapper(cdktf.stringToTerraform)(this._auth),
       channel: cdktf.hashMapper(cdktf.stringToTerraform)(this._channel),
       events: cdktf.listMapper(cdktf.stringToTerraform)(this._events),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       status: cdktf.stringToTerraform(this._status),
-      headers: cdktf.listMapper(eventHookHeadersToTerraform)(this._headers),
+      headers: cdktf.listMapper(eventHookHeadersToTerraform)(this._headers.internalValue),
     };
   }
 }

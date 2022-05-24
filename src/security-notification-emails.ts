@@ -8,6 +8,13 @@ import * as cdktf from 'cdktf';
 
 export interface SecurityNotificationEmailsConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/security_notification_emails#id SecurityNotificationEmails#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Notifies end users about suspicious or unrecognized activity from their account
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/security_notification_emails#report_suspicious_activity_enabled SecurityNotificationEmails#report_suspicious_activity_enabled}
@@ -73,6 +80,7 @@ export class SecurityNotificationEmails extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._id = config.id;
     this._reportSuspiciousActivityEnabled = config.reportSuspiciousActivityEnabled;
     this._sendEmailForFactorEnrollmentEnabled = config.sendEmailForFactorEnrollmentEnabled;
     this._sendEmailForFactorResetEnabled = config.sendEmailForFactorResetEnabled;
@@ -85,8 +93,19 @@ export class SecurityNotificationEmails extends cdktf.TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // report_suspicious_activity_enabled - computed: false, optional: true, required: false
@@ -175,6 +194,7 @@ export class SecurityNotificationEmails extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      id: cdktf.stringToTerraform(this._id),
       report_suspicious_activity_enabled: cdktf.booleanToTerraform(this._reportSuspiciousActivityEnabled),
       send_email_for_factor_enrollment_enabled: cdktf.booleanToTerraform(this._sendEmailForFactorEnrollmentEnabled),
       send_email_for_factor_reset_enabled: cdktf.booleanToTerraform(this._sendEmailForFactorResetEnabled),

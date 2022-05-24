@@ -20,6 +20,13 @@ export interface PolicyPasswordDefaultConfig extends cdktf.TerraformMetaArgument
   */
   readonly emailRecovery?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password_default#id PolicyPasswordDefault#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Number of minutes before a locked account is unlocked: 0 = no limit.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password_default#password_auto_unlock_minutes PolicyPasswordDefault#password_auto_unlock_minutes}
@@ -189,6 +196,7 @@ export class PolicyPasswordDefault extends cdktf.TerraformResource {
     });
     this._callRecovery = config.callRecovery;
     this._emailRecovery = config.emailRecovery;
+    this._id = config.id;
     this._passwordAutoUnlockMinutes = config.passwordAutoUnlockMinutes;
     this._passwordDictionaryLookup = config.passwordDictionaryLookup;
     this._passwordExcludeFirstName = config.passwordExcludeFirstName;
@@ -265,8 +273,19 @@ export class PolicyPasswordDefault extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: true, optional: false, required: false
@@ -644,6 +663,7 @@ export class PolicyPasswordDefault extends cdktf.TerraformResource {
     return {
       call_recovery: cdktf.stringToTerraform(this._callRecovery),
       email_recovery: cdktf.stringToTerraform(this._emailRecovery),
+      id: cdktf.stringToTerraform(this._id),
       password_auto_unlock_minutes: cdktf.numberToTerraform(this._passwordAutoUnlockMinutes),
       password_dictionary_lookup: cdktf.booleanToTerraform(this._passwordDictionaryLookup),
       password_exclude_first_name: cdktf.booleanToTerraform(this._passwordExcludeFirstName),

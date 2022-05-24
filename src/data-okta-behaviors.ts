@@ -8,6 +8,13 @@ import * as cdktf from 'cdktf';
 
 export interface DataOktaBehaviorsConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/behaviors#id DataOktaBehaviors#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Searches the name property of behaviors for matching value
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/behaviors#q DataOktaBehaviors#q}
@@ -65,8 +72,9 @@ export class DataOktaBehaviorsBehaviorsOutputReference extends cdktf.ComplexObje
   }
 
   // settings - computed: true, optional: false, required: false
-  public settings(key: string): string | cdktf.IResolvable {
-    return new cdktf.StringMap(this, 'settings').lookup(key);
+  private _settings = new cdktf.StringMap(this, "settings");
+  public get settings() {
+    return this._settings;
   }
 
   // status - computed: true, optional: false, required: false
@@ -133,6 +141,7 @@ export class DataOktaBehaviors extends cdktf.TerraformDataSource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._id = config.id;
     this._q = config.q;
   }
 
@@ -147,8 +156,19 @@ export class DataOktaBehaviors extends cdktf.TerraformDataSource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // q - computed: false, optional: true, required: false
@@ -173,6 +193,7 @@ export class DataOktaBehaviors extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      id: cdktf.stringToTerraform(this._id),
       q: cdktf.stringToTerraform(this._q),
     };
   }

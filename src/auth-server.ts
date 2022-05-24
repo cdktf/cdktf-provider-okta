@@ -24,6 +24,13 @@ export interface AuthServerConfig extends cdktf.TerraformMetaArguments {
   */
   readonly description?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server#id AuthServer#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * *Early Access Property*. Indicates which value is specified in the issuer of the tokens that a Custom Authorization Server returns: the original Okta org domain URL or a custom domain URL
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server#issuer_mode AuthServer#issuer_mode}
@@ -76,6 +83,7 @@ export class AuthServer extends cdktf.TerraformResource {
     this._audiences = config.audiences;
     this._credentialsRotationMode = config.credentialsRotationMode;
     this._description = config.description;
+    this._id = config.id;
     this._issuerMode = config.issuerMode;
     this._name = config.name;
     this._status = config.status;
@@ -141,8 +149,19 @@ export class AuthServer extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // issuer - computed: true, optional: false, required: false
@@ -209,6 +228,7 @@ export class AuthServer extends cdktf.TerraformResource {
       audiences: cdktf.listMapper(cdktf.stringToTerraform)(this._audiences),
       credentials_rotation_mode: cdktf.stringToTerraform(this._credentialsRotationMode),
       description: cdktf.stringToTerraform(this._description),
+      id: cdktf.stringToTerraform(this._id),
       issuer_mode: cdktf.stringToTerraform(this._issuerMode),
       name: cdktf.stringToTerraform(this._name),
       status: cdktf.stringToTerraform(this._status),

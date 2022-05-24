@@ -20,6 +20,13 @@ export interface AdminRoleTargetsConfig extends cdktf.TerraformMetaArguments {
   */
   readonly groups?: string[];
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/admin_role_targets#id AdminRoleTargets#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Type of the role that is assigned to the user and supports optional targets
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/admin_role_targets#role_type AdminRoleTargets#role_type}
@@ -69,6 +76,7 @@ export class AdminRoleTargets extends cdktf.TerraformResource {
     });
     this._apps = config.apps;
     this._groups = config.groups;
+    this._id = config.id;
     this._roleType = config.roleType;
     this._userId = config.userId;
   }
@@ -110,8 +118,19 @@ export class AdminRoleTargets extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // role_id - computed: true, optional: false, required: false
@@ -153,6 +172,7 @@ export class AdminRoleTargets extends cdktf.TerraformResource {
     return {
       apps: cdktf.listMapper(cdktf.stringToTerraform)(this._apps),
       groups: cdktf.listMapper(cdktf.stringToTerraform)(this._groups),
+      id: cdktf.stringToTerraform(this._id),
       role_type: cdktf.stringToTerraform(this._roleType),
       user_id: cdktf.stringToTerraform(this._userId),
     };

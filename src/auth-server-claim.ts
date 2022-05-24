@@ -28,6 +28,13 @@ export interface AuthServerClaimConfig extends cdktf.TerraformMetaArguments {
   */
   readonly groupFilterType?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_claim#id AuthServerClaim#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Auth server claim name
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_claim#name AuthServerClaim#name}
@@ -91,6 +98,7 @@ export class AuthServerClaim extends cdktf.TerraformResource {
     this._authServerId = config.authServerId;
     this._claimType = config.claimType;
     this._groupFilterType = config.groupFilterType;
+    this._id = config.id;
     this._name = config.name;
     this._scopes = config.scopes;
     this._status = config.status;
@@ -161,8 +169,19 @@ export class AuthServerClaim extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -249,6 +268,7 @@ export class AuthServerClaim extends cdktf.TerraformResource {
       auth_server_id: cdktf.stringToTerraform(this._authServerId),
       claim_type: cdktf.stringToTerraform(this._claimType),
       group_filter_type: cdktf.stringToTerraform(this._groupFilterType),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       scopes: cdktf.listMapper(cdktf.stringToTerraform)(this._scopes),
       status: cdktf.stringToTerraform(this._status),

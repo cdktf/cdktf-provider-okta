@@ -20,6 +20,13 @@ export interface AppGroupAssignmentConfig extends cdktf.TerraformMetaArguments {
   */
   readonly groupId: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_group_assignment#id AppGroupAssignment#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_group_assignment#priority AppGroupAssignment#priority}
   */
   readonly priority?: number;
@@ -71,6 +78,7 @@ export class AppGroupAssignment extends cdktf.TerraformResource {
     });
     this._appId = config.appId;
     this._groupId = config.groupId;
+    this._id = config.id;
     this._priority = config.priority;
     this._profile = config.profile;
     this._retainAssignment = config.retainAssignment;
@@ -107,8 +115,19 @@ export class AppGroupAssignment extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // priority - computed: false, optional: true, required: false
@@ -167,6 +186,7 @@ export class AppGroupAssignment extends cdktf.TerraformResource {
     return {
       app_id: cdktf.stringToTerraform(this._appId),
       group_id: cdktf.stringToTerraform(this._groupId),
+      id: cdktf.stringToTerraform(this._id),
       priority: cdktf.numberToTerraform(this._priority),
       profile: cdktf.stringToTerraform(this._profile),
       retain_assignment: cdktf.booleanToTerraform(this._retainAssignment),
