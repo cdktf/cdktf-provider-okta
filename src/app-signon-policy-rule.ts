@@ -56,6 +56,13 @@ export interface AppSignonPolicyRuleConfig extends cdktf.TerraformMetaArguments 
   */
   readonly groupsIncluded?: string[];
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_signon_policy_rule#id AppSignonPolicyRule#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Policy Rule Name
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_signon_policy_rule#name AppSignonPolicyRule#name}
@@ -167,6 +174,130 @@ export function appSignonPolicyRulePlatformIncludeToTerraform(struct?: AppSignon
   }
 }
 
+export class AppSignonPolicyRulePlatformIncludeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AppSignonPolicyRulePlatformInclude | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._osExpression !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.osExpression = this._osExpression;
+    }
+    if (this._osType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.osType = this._osType;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AppSignonPolicyRulePlatformInclude | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._osExpression = undefined;
+      this._osType = undefined;
+      this._type = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._osExpression = value.osExpression;
+      this._osType = value.osType;
+      this._type = value.type;
+    }
+  }
+
+  // os_expression - computed: false, optional: true, required: false
+  private _osExpression?: string; 
+  public get osExpression() {
+    return this.getStringAttribute('os_expression');
+  }
+  public set osExpression(value: string) {
+    this._osExpression = value;
+  }
+  public resetOsExpression() {
+    this._osExpression = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get osExpressionInput() {
+    return this._osExpression;
+  }
+
+  // os_type - computed: false, optional: true, required: false
+  private _osType?: string; 
+  public get osType() {
+    return this.getStringAttribute('os_type');
+  }
+  public set osType(value: string) {
+    this._osType = value;
+  }
+  public resetOsType() {
+    this._osType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get osTypeInput() {
+    return this._osType;
+  }
+
+  // type - computed: false, optional: true, required: false
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  public resetType() {
+    this._type = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+}
+
+export class AppSignonPolicyRulePlatformIncludeList extends cdktf.ComplexList {
+  public internalValue? : AppSignonPolicyRulePlatformInclude[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AppSignonPolicyRulePlatformIncludeOutputReference {
+    return new AppSignonPolicyRulePlatformIncludeOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/okta/r/app_signon_policy_rule okta_app_signon_policy_rule}
@@ -210,6 +341,7 @@ export class AppSignonPolicyRule extends cdktf.TerraformResource {
     this._factorMode = config.factorMode;
     this._groupsExcluded = config.groupsExcluded;
     this._groupsIncluded = config.groupsIncluded;
+    this._id = config.id;
     this._name = config.name;
     this._networkConnection = config.networkConnection;
     this._networkExcludes = config.networkExcludes;
@@ -223,7 +355,7 @@ export class AppSignonPolicyRule extends cdktf.TerraformResource {
     this._userTypesIncluded = config.userTypesIncluded;
     this._usersExcluded = config.usersExcluded;
     this._usersIncluded = config.usersIncluded;
-    this._platformInclude = config.platformInclude;
+    this._platformInclude.internalValue = config.platformInclude;
   }
 
   // ==========
@@ -359,8 +491,19 @@ export class AppSignonPolicyRule extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -566,20 +709,19 @@ export class AppSignonPolicyRule extends cdktf.TerraformResource {
   }
 
   // platform_include - computed: false, optional: true, required: false
-  private _platformInclude?: AppSignonPolicyRulePlatformInclude[] | cdktf.IResolvable; 
+  private _platformInclude = new AppSignonPolicyRulePlatformIncludeList(this, "platform_include", true);
   public get platformInclude() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('platform_include')));
+    return this._platformInclude;
   }
-  public set platformInclude(value: AppSignonPolicyRulePlatformInclude[] | cdktf.IResolvable) {
-    this._platformInclude = value;
+  public putPlatformInclude(value: AppSignonPolicyRulePlatformInclude[] | cdktf.IResolvable) {
+    this._platformInclude.internalValue = value;
   }
   public resetPlatformInclude() {
-    this._platformInclude = undefined;
+    this._platformInclude.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get platformIncludeInput() {
-    return this._platformInclude;
+    return this._platformInclude.internalValue;
   }
 
   // =========
@@ -596,6 +738,7 @@ export class AppSignonPolicyRule extends cdktf.TerraformResource {
       factor_mode: cdktf.stringToTerraform(this._factorMode),
       groups_excluded: cdktf.listMapper(cdktf.stringToTerraform)(this._groupsExcluded),
       groups_included: cdktf.listMapper(cdktf.stringToTerraform)(this._groupsIncluded),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       network_connection: cdktf.stringToTerraform(this._networkConnection),
       network_excludes: cdktf.listMapper(cdktf.stringToTerraform)(this._networkExcludes),
@@ -609,7 +752,7 @@ export class AppSignonPolicyRule extends cdktf.TerraformResource {
       user_types_included: cdktf.listMapper(cdktf.stringToTerraform)(this._userTypesIncluded),
       users_excluded: cdktf.listMapper(cdktf.stringToTerraform)(this._usersExcluded),
       users_included: cdktf.listMapper(cdktf.stringToTerraform)(this._usersIncluded),
-      platform_include: cdktf.listMapper(appSignonPolicyRulePlatformIncludeToTerraform)(this._platformInclude),
+      platform_include: cdktf.listMapper(appSignonPolicyRulePlatformIncludeToTerraform)(this._platformInclude.internalValue),
     };
   }
 }

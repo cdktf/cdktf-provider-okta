@@ -50,6 +50,13 @@ export interface OrgConfigurationConfig extends cdktf.TerraformMetaArguments {
   */
   readonly endUserSupportHelpUrl?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration#id OrgConfiguration#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Local path to logo of the org.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration#logo OrgConfiguration#logo}
@@ -140,6 +147,7 @@ export class OrgConfiguration extends cdktf.TerraformResource {
     this._companyName = config.companyName;
     this._country = config.country;
     this._endUserSupportHelpUrl = config.endUserSupportHelpUrl;
+    this._id = config.id;
     this._logo = config.logo;
     this._optOutCommunicationEmails = config.optOutCommunicationEmails;
     this._phoneNumber = config.phoneNumber;
@@ -269,8 +277,19 @@ export class OrgConfiguration extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // logo - computed: false, optional: true, required: false
@@ -419,6 +438,7 @@ export class OrgConfiguration extends cdktf.TerraformResource {
       company_name: cdktf.stringToTerraform(this._companyName),
       country: cdktf.stringToTerraform(this._country),
       end_user_support_help_url: cdktf.stringToTerraform(this._endUserSupportHelpUrl),
+      id: cdktf.stringToTerraform(this._id),
       logo: cdktf.stringToTerraform(this._logo),
       opt_out_communication_emails: cdktf.booleanToTerraform(this._optOutCommunicationEmails),
       phone_number: cdktf.stringToTerraform(this._phoneNumber),

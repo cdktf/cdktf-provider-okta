@@ -36,6 +36,13 @@ export interface AuthServerScopeConfig extends cdktf.TerraformMetaArguments {
   */
   readonly displayName?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_scope#id AuthServerScope#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Whether to publish metadata or not, matching API type despite the fact it could just be a boolean
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_scope#metadata_publish AuthServerScope#metadata_publish}
@@ -88,6 +95,7 @@ export class AuthServerScope extends cdktf.TerraformResource {
     this._default = config.default;
     this._description = config.description;
     this._displayName = config.displayName;
+    this._id = config.id;
     this._metadataPublish = config.metadataPublish;
     this._name = config.name;
   }
@@ -174,8 +182,19 @@ export class AuthServerScope extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // metadata_publish - computed: false, optional: true, required: false
@@ -218,6 +237,7 @@ export class AuthServerScope extends cdktf.TerraformResource {
       default: cdktf.booleanToTerraform(this._default),
       description: cdktf.stringToTerraform(this._description),
       display_name: cdktf.stringToTerraform(this._displayName),
+      id: cdktf.stringToTerraform(this._id),
       metadata_publish: cdktf.stringToTerraform(this._metadataPublish),
       name: cdktf.stringToTerraform(this._name),
     };

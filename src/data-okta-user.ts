@@ -8,6 +8,13 @@ import * as cdktf from 'cdktf';
 
 export interface DataOktaUserConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/user#id DataOktaUser#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Retrieve a single user based on their id
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/user#user_id DataOktaUser#user_id}
@@ -49,6 +56,124 @@ export function dataOktaUserSearchToTerraform(struct?: DataOktaUserSearch | cdkt
   }
 }
 
+export class DataOktaUserSearchOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataOktaUserSearch | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._comparison !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.comparison = this._comparison;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataOktaUserSearch | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._comparison = undefined;
+      this._name = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._comparison = value.comparison;
+      this._name = value.name;
+      this._value = value.value;
+    }
+  }
+
+  // comparison - computed: false, optional: true, required: false
+  private _comparison?: string; 
+  public get comparison() {
+    return this.getStringAttribute('comparison');
+  }
+  public set comparison(value: string) {
+    this._comparison = value;
+  }
+  public resetComparison() {
+    this._comparison = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get comparisonInput() {
+    return this._comparison;
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // value - computed: false, optional: false, required: true
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class DataOktaUserSearchList extends cdktf.ComplexList {
+  public internalValue? : DataOktaUserSearch[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataOktaUserSearchOutputReference {
+    return new DataOktaUserSearchOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/okta/d/user okta_user}
@@ -84,8 +209,9 @@ export class DataOktaUser extends cdktf.TerraformDataSource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._id = config.id;
     this._userId = config.userId;
-    this._search = config.search;
+    this._search.internalValue = config.search;
   }
 
   // ==========
@@ -163,8 +289,19 @@ export class DataOktaUser extends cdktf.TerraformDataSource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // last_name - computed: true, optional: false, required: false
@@ -289,20 +426,19 @@ export class DataOktaUser extends cdktf.TerraformDataSource {
   }
 
   // search - computed: false, optional: true, required: false
-  private _search?: DataOktaUserSearch[] | cdktf.IResolvable; 
+  private _search = new DataOktaUserSearchList(this, "search", true);
   public get search() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('search')));
+    return this._search;
   }
-  public set search(value: DataOktaUserSearch[] | cdktf.IResolvable) {
-    this._search = value;
+  public putSearch(value: DataOktaUserSearch[] | cdktf.IResolvable) {
+    this._search.internalValue = value;
   }
   public resetSearch() {
-    this._search = undefined;
+    this._search.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get searchInput() {
-    return this._search;
+    return this._search.internalValue;
   }
 
   // =========
@@ -311,8 +447,9 @@ export class DataOktaUser extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      id: cdktf.stringToTerraform(this._id),
       user_id: cdktf.stringToTerraform(this._userId),
-      search: cdktf.listMapper(dataOktaUserSearchToTerraform)(this._search),
+      search: cdktf.listMapper(dataOktaUserSearchToTerraform)(this._search.internalValue),
     };
   }
 }

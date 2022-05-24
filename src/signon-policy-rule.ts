@@ -26,6 +26,13 @@ export interface SignonPolicyRuleConfig extends cdktf.TerraformMetaArguments {
   */
   readonly behaviors?: string[];
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule#id SignonPolicyRule#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Apply rule based on the IdP used: ANY, OKTA or SPECIFIC_IDP.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule#identity_provider SignonPolicyRule#identity_provider}
@@ -178,6 +185,102 @@ export function signonPolicyRuleFactorSequenceSecondaryCriteriaToTerraform(struc
   }
 }
 
+export class SignonPolicyRuleFactorSequenceSecondaryCriteriaOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): SignonPolicyRuleFactorSequenceSecondaryCriteria | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._factorType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.factorType = this._factorType;
+    }
+    if (this._provider !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.provider = this._provider;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SignonPolicyRuleFactorSequenceSecondaryCriteria | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._factorType = undefined;
+      this._provider = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._factorType = value.factorType;
+      this._provider = value.provider;
+    }
+  }
+
+  // factor_type - computed: false, optional: false, required: true
+  private _factorType?: string; 
+  public get factorType() {
+    return this.getStringAttribute('factor_type');
+  }
+  public set factorType(value: string) {
+    this._factorType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get factorTypeInput() {
+    return this._factorType;
+  }
+
+  // provider - computed: false, optional: false, required: true
+  private _provider?: string; 
+  public get provider() {
+    return this.getStringAttribute('provider');
+  }
+  public set provider(value: string) {
+    this._provider = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get providerInput() {
+    return this._provider;
+  }
+}
+
+export class SignonPolicyRuleFactorSequenceSecondaryCriteriaList extends cdktf.ComplexList {
+  public internalValue? : SignonPolicyRuleFactorSequenceSecondaryCriteria[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): SignonPolicyRuleFactorSequenceSecondaryCriteriaOutputReference {
+    return new SignonPolicyRuleFactorSequenceSecondaryCriteriaOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface SignonPolicyRuleFactorSequence {
   /**
   * Type of a Factor
@@ -211,6 +314,124 @@ export function signonPolicyRuleFactorSequenceToTerraform(struct?: SignonPolicyR
   }
 }
 
+export class SignonPolicyRuleFactorSequenceOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): SignonPolicyRuleFactorSequence | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._primaryCriteriaFactorType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.primaryCriteriaFactorType = this._primaryCriteriaFactorType;
+    }
+    if (this._primaryCriteriaProvider !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.primaryCriteriaProvider = this._primaryCriteriaProvider;
+    }
+    if (this._secondaryCriteria?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.secondaryCriteria = this._secondaryCriteria?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SignonPolicyRuleFactorSequence | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._primaryCriteriaFactorType = undefined;
+      this._primaryCriteriaProvider = undefined;
+      this._secondaryCriteria.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._primaryCriteriaFactorType = value.primaryCriteriaFactorType;
+      this._primaryCriteriaProvider = value.primaryCriteriaProvider;
+      this._secondaryCriteria.internalValue = value.secondaryCriteria;
+    }
+  }
+
+  // primary_criteria_factor_type - computed: false, optional: false, required: true
+  private _primaryCriteriaFactorType?: string; 
+  public get primaryCriteriaFactorType() {
+    return this.getStringAttribute('primary_criteria_factor_type');
+  }
+  public set primaryCriteriaFactorType(value: string) {
+    this._primaryCriteriaFactorType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get primaryCriteriaFactorTypeInput() {
+    return this._primaryCriteriaFactorType;
+  }
+
+  // primary_criteria_provider - computed: false, optional: false, required: true
+  private _primaryCriteriaProvider?: string; 
+  public get primaryCriteriaProvider() {
+    return this.getStringAttribute('primary_criteria_provider');
+  }
+  public set primaryCriteriaProvider(value: string) {
+    this._primaryCriteriaProvider = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get primaryCriteriaProviderInput() {
+    return this._primaryCriteriaProvider;
+  }
+
+  // secondary_criteria - computed: false, optional: true, required: false
+  private _secondaryCriteria = new SignonPolicyRuleFactorSequenceSecondaryCriteriaList(this, "secondary_criteria", false);
+  public get secondaryCriteria() {
+    return this._secondaryCriteria;
+  }
+  public putSecondaryCriteria(value: SignonPolicyRuleFactorSequenceSecondaryCriteria[] | cdktf.IResolvable) {
+    this._secondaryCriteria.internalValue = value;
+  }
+  public resetSecondaryCriteria() {
+    this._secondaryCriteria.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get secondaryCriteriaInput() {
+    return this._secondaryCriteria.internalValue;
+  }
+}
+
+export class SignonPolicyRuleFactorSequenceList extends cdktf.ComplexList {
+  public internalValue? : SignonPolicyRuleFactorSequence[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): SignonPolicyRuleFactorSequenceOutputReference {
+    return new SignonPolicyRuleFactorSequenceOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule okta_signon_policy_rule}
@@ -249,6 +470,7 @@ export class SignonPolicyRule extends cdktf.TerraformResource {
     this._access = config.access;
     this._authtype = config.authtype;
     this._behaviors = config.behaviors;
+    this._id = config.id;
     this._identityProvider = config.identityProvider;
     this._identityProviderIds = config.identityProviderIds;
     this._mfaLifetime = config.mfaLifetime;
@@ -269,7 +491,7 @@ export class SignonPolicyRule extends cdktf.TerraformResource {
     this._sessionPersistent = config.sessionPersistent;
     this._status = config.status;
     this._usersExcluded = config.usersExcluded;
-    this._factorSequence = config.factorSequence;
+    this._factorSequence.internalValue = config.factorSequence;
   }
 
   // ==========
@@ -325,8 +547,19 @@ export class SignonPolicyRule extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // identity_provider - computed: false, optional: true, required: false
@@ -647,20 +880,19 @@ export class SignonPolicyRule extends cdktf.TerraformResource {
   }
 
   // factor_sequence - computed: false, optional: true, required: false
-  private _factorSequence?: SignonPolicyRuleFactorSequence[] | cdktf.IResolvable; 
+  private _factorSequence = new SignonPolicyRuleFactorSequenceList(this, "factor_sequence", false);
   public get factorSequence() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('factor_sequence');
+    return this._factorSequence;
   }
-  public set factorSequence(value: SignonPolicyRuleFactorSequence[] | cdktf.IResolvable) {
-    this._factorSequence = value;
+  public putFactorSequence(value: SignonPolicyRuleFactorSequence[] | cdktf.IResolvable) {
+    this._factorSequence.internalValue = value;
   }
   public resetFactorSequence() {
-    this._factorSequence = undefined;
+    this._factorSequence.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get factorSequenceInput() {
-    return this._factorSequence;
+    return this._factorSequence.internalValue;
   }
 
   // =========
@@ -672,6 +904,7 @@ export class SignonPolicyRule extends cdktf.TerraformResource {
       access: cdktf.stringToTerraform(this._access),
       authtype: cdktf.stringToTerraform(this._authtype),
       behaviors: cdktf.listMapper(cdktf.stringToTerraform)(this._behaviors),
+      id: cdktf.stringToTerraform(this._id),
       identity_provider: cdktf.stringToTerraform(this._identityProvider),
       identity_provider_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._identityProviderIds),
       mfa_lifetime: cdktf.numberToTerraform(this._mfaLifetime),
@@ -692,7 +925,7 @@ export class SignonPolicyRule extends cdktf.TerraformResource {
       session_persistent: cdktf.booleanToTerraform(this._sessionPersistent),
       status: cdktf.stringToTerraform(this._status),
       users_excluded: cdktf.listMapper(cdktf.stringToTerraform)(this._usersExcluded),
-      factor_sequence: cdktf.listMapper(signonPolicyRuleFactorSequenceToTerraform)(this._factorSequence),
+      factor_sequence: cdktf.listMapper(signonPolicyRuleFactorSequenceToTerraform)(this._factorSequence.internalValue),
     };
   }
 }

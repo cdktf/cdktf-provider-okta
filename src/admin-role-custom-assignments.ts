@@ -14,6 +14,13 @@ export interface AdminRoleCustomAssignmentsConfig extends cdktf.TerraformMetaArg
   */
   readonly customRoleId: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/admin_role_custom_assignments#id AdminRoleCustomAssignments#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * The hrefs that point to User(s) and/or Group(s) that receive the Role
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/admin_role_custom_assignments#members AdminRoleCustomAssignments#members}
@@ -62,6 +69,7 @@ export class AdminRoleCustomAssignments extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._customRoleId = config.customRoleId;
+    this._id = config.id;
     this._members = config.members;
     this._resourceSetId = config.resourceSetId;
   }
@@ -84,8 +92,19 @@ export class AdminRoleCustomAssignments extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // members - computed: false, optional: true, required: false
@@ -124,6 +143,7 @@ export class AdminRoleCustomAssignments extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       custom_role_id: cdktf.stringToTerraform(this._customRoleId),
+      id: cdktf.stringToTerraform(this._id),
       members: cdktf.listMapper(cdktf.stringToTerraform)(this._members),
       resource_set_id: cdktf.stringToTerraform(this._resourceSetId),
     };

@@ -9,6 +9,9 @@ import * as cdktf from 'cdktf';
 export interface DataOktaBehaviorConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/behavior#id DataOktaBehavior#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
@@ -92,8 +95,9 @@ export class DataOktaBehavior extends cdktf.TerraformDataSource {
   }
 
   // settings - computed: true, optional: false, required: false
-  public settings(key: string): string | cdktf.IResolvable {
-    return new cdktf.StringMap(this, 'settings').lookup(key);
+  private _settings = new cdktf.StringMap(this, "settings");
+  public get settings() {
+    return this._settings;
   }
 
   // status - computed: true, optional: false, required: false

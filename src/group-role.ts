@@ -20,6 +20,13 @@ export interface GroupRoleConfig extends cdktf.TerraformMetaArguments {
   */
   readonly groupId: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_role#id GroupRole#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Type of Role to assign
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_role#role_type GroupRole#role_type}
@@ -75,6 +82,7 @@ export class GroupRole extends cdktf.TerraformResource {
     });
     this._disableNotifications = config.disableNotifications;
     this._groupId = config.groupId;
+    this._id = config.id;
     this._roleType = config.roleType;
     this._targetAppList = config.targetAppList;
     this._targetGroupList = config.targetGroupList;
@@ -114,8 +122,19 @@ export class GroupRole extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // role_type - computed: false, optional: false, required: true
@@ -171,6 +190,7 @@ export class GroupRole extends cdktf.TerraformResource {
     return {
       disable_notifications: cdktf.booleanToTerraform(this._disableNotifications),
       group_id: cdktf.stringToTerraform(this._groupId),
+      id: cdktf.stringToTerraform(this._id),
       role_type: cdktf.stringToTerraform(this._roleType),
       target_app_list: cdktf.listMapper(cdktf.stringToTerraform)(this._targetAppList),
       target_group_list: cdktf.listMapper(cdktf.stringToTerraform)(this._targetGroupList),

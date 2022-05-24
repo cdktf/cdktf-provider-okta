@@ -128,6 +128,13 @@ export interface SamlAppConfig extends cdktf.TerraformMetaArguments {
   */
   readonly honorForceAuthn?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#id SamlApp#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * SAML issuer ID
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#idp_issuer SamlApp#idp_issuer}
@@ -354,11 +361,201 @@ export function samlAppAttributeStatementsToTerraform(struct?: SamlAppAttributeS
   }
 }
 
+export class SamlAppAttributeStatementsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): SamlAppAttributeStatements | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._filterType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.filterType = this._filterType;
+    }
+    if (this._filterValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.filterValue = this._filterValue;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._namespace !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.namespace = this._namespace;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SamlAppAttributeStatements | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._filterType = undefined;
+      this._filterValue = undefined;
+      this._name = undefined;
+      this._namespace = undefined;
+      this._type = undefined;
+      this._values = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._filterType = value.filterType;
+      this._filterValue = value.filterValue;
+      this._name = value.name;
+      this._namespace = value.namespace;
+      this._type = value.type;
+      this._values = value.values;
+    }
+  }
+
+  // filter_type - computed: false, optional: true, required: false
+  private _filterType?: string; 
+  public get filterType() {
+    return this.getStringAttribute('filter_type');
+  }
+  public set filterType(value: string) {
+    this._filterType = value;
+  }
+  public resetFilterType() {
+    this._filterType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filterTypeInput() {
+    return this._filterType;
+  }
+
+  // filter_value - computed: false, optional: true, required: false
+  private _filterValue?: string; 
+  public get filterValue() {
+    return this.getStringAttribute('filter_value');
+  }
+  public set filterValue(value: string) {
+    this._filterValue = value;
+  }
+  public resetFilterValue() {
+    this._filterValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filterValueInput() {
+    return this._filterValue;
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // namespace - computed: false, optional: true, required: false
+  private _namespace?: string; 
+  public get namespace() {
+    return this.getStringAttribute('namespace');
+  }
+  public set namespace(value: string) {
+    this._namespace = value;
+  }
+  public resetNamespace() {
+    this._namespace = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get namespaceInput() {
+    return this._namespace;
+  }
+
+  // type - computed: false, optional: true, required: false
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  public resetType() {
+    this._type = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+
+  // values - computed: false, optional: true, required: false
+  private _values?: string[]; 
+  public get values() {
+    return this.getListAttribute('values');
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  public resetValues() {
+    this._values = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
+}
+
+export class SamlAppAttributeStatementsList extends cdktf.ComplexList {
+  public internalValue? : SamlAppAttributeStatements[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): SamlAppAttributeStatementsOutputReference {
+    return new SamlAppAttributeStatementsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface SamlAppUsers {
   /**
   * User ID.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#id SamlApp#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
@@ -387,6 +584,135 @@ export function samlAppUsersToTerraform(struct?: SamlAppUsers | cdktf.IResolvabl
   }
 }
 
+export class SamlAppUsersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): SamlAppUsers | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._id !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.id = this._id;
+    }
+    if (this._password !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.password = this._password;
+    }
+    if (this._username !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.username = this._username;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SamlAppUsers | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._id = undefined;
+      this._password = undefined;
+      this._username = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._id = value.id;
+      this._password = value.password;
+      this._username = value.username;
+    }
+  }
+
+  // id - computed: false, optional: true, required: false
+  private _id?: string; 
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
+  }
+
+  // password - computed: false, optional: true, required: false
+  private _password?: string; 
+  public get password() {
+    return this.getStringAttribute('password');
+  }
+  public set password(value: string) {
+    this._password = value;
+  }
+  public resetPassword() {
+    this._password = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get passwordInput() {
+    return this._password;
+  }
+
+  // scope - computed: true, optional: false, required: false
+  public get scope() {
+    return this.getStringAttribute('scope');
+  }
+
+  // username - computed: false, optional: true, required: false
+  private _username?: string; 
+  public get username() {
+    return this.getStringAttribute('username');
+  }
+  public set username(value: string) {
+    this._username = value;
+  }
+  public resetUsername() {
+    this._username = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get usernameInput() {
+    return this._username;
+  }
+}
+
+export class SamlAppUsersList extends cdktf.ComplexList {
+  public internalValue? : SamlAppUsers[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): SamlAppUsersOutputReference {
+    return new SamlAppUsersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/okta/r/saml_app okta_saml_app}
@@ -442,6 +768,7 @@ export class SamlApp extends cdktf.TerraformResource {
     this._hideIos = config.hideIos;
     this._hideWeb = config.hideWeb;
     this._honorForceAuthn = config.honorForceAuthn;
+    this._id = config.id;
     this._idpIssuer = config.idpIssuer;
     this._implicitAssignment = config.implicitAssignment;
     this._inlineHookId = config.inlineHookId;
@@ -469,8 +796,8 @@ export class SamlApp extends cdktf.TerraformResource {
     this._userNameTemplatePushStatus = config.userNameTemplatePushStatus;
     this._userNameTemplateSuffix = config.userNameTemplateSuffix;
     this._userNameTemplateType = config.userNameTemplateType;
-    this._attributeStatements = config.attributeStatements;
-    this._users = config.users;
+    this._attributeStatements.internalValue = config.attributeStatements;
+    this._users.internalValue = config.users;
   }
 
   // ==========
@@ -823,8 +1150,19 @@ export class SamlApp extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // idp_issuer - computed: false, optional: true, required: false
@@ -1287,37 +1625,35 @@ export class SamlApp extends cdktf.TerraformResource {
   }
 
   // attribute_statements - computed: false, optional: true, required: false
-  private _attributeStatements?: SamlAppAttributeStatements[] | cdktf.IResolvable; 
+  private _attributeStatements = new SamlAppAttributeStatementsList(this, "attribute_statements", false);
   public get attributeStatements() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('attribute_statements');
+    return this._attributeStatements;
   }
-  public set attributeStatements(value: SamlAppAttributeStatements[] | cdktf.IResolvable) {
-    this._attributeStatements = value;
+  public putAttributeStatements(value: SamlAppAttributeStatements[] | cdktf.IResolvable) {
+    this._attributeStatements.internalValue = value;
   }
   public resetAttributeStatements() {
-    this._attributeStatements = undefined;
+    this._attributeStatements.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get attributeStatementsInput() {
-    return this._attributeStatements;
+    return this._attributeStatements.internalValue;
   }
 
   // users - computed: false, optional: true, required: false
-  private _users?: SamlAppUsers[] | cdktf.IResolvable; 
+  private _users = new SamlAppUsersList(this, "users", true);
   public get users() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('users')));
+    return this._users;
   }
-  public set users(value: SamlAppUsers[] | cdktf.IResolvable) {
-    this._users = value;
+  public putUsers(value: SamlAppUsers[] | cdktf.IResolvable) {
+    this._users.internalValue = value;
   }
   public resetUsers() {
-    this._users = undefined;
+    this._users.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get usersInput() {
-    return this._users;
+    return this._users.internalValue;
   }
 
   // =========
@@ -1346,6 +1682,7 @@ export class SamlApp extends cdktf.TerraformResource {
       hide_ios: cdktf.booleanToTerraform(this._hideIos),
       hide_web: cdktf.booleanToTerraform(this._hideWeb),
       honor_force_authn: cdktf.booleanToTerraform(this._honorForceAuthn),
+      id: cdktf.stringToTerraform(this._id),
       idp_issuer: cdktf.stringToTerraform(this._idpIssuer),
       implicit_assignment: cdktf.booleanToTerraform(this._implicitAssignment),
       inline_hook_id: cdktf.stringToTerraform(this._inlineHookId),
@@ -1373,8 +1710,8 @@ export class SamlApp extends cdktf.TerraformResource {
       user_name_template_push_status: cdktf.stringToTerraform(this._userNameTemplatePushStatus),
       user_name_template_suffix: cdktf.stringToTerraform(this._userNameTemplateSuffix),
       user_name_template_type: cdktf.stringToTerraform(this._userNameTemplateType),
-      attribute_statements: cdktf.listMapper(samlAppAttributeStatementsToTerraform)(this._attributeStatements),
-      users: cdktf.listMapper(samlAppUsersToTerraform)(this._users),
+      attribute_statements: cdktf.listMapper(samlAppAttributeStatementsToTerraform)(this._attributeStatements.internalValue),
+      users: cdktf.listMapper(samlAppUsersToTerraform)(this._users.internalValue),
     };
   }
 }

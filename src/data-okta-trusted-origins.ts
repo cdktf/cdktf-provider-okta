@@ -13,6 +13,13 @@ export interface DataOktaTrustedOriginsConfig extends cdktf.TerraformMetaArgumen
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/trusted_origins#filter DataOktaTrustedOrigins#filter}
   */
   readonly filter?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/trusted_origins#id DataOktaTrustedOrigins#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
 }
 export interface DataOktaTrustedOriginsTrustedOrigins {
 }
@@ -134,6 +141,7 @@ export class DataOktaTrustedOrigins extends cdktf.TerraformDataSource {
       lifecycle: config.lifecycle
     });
     this._filter = config.filter;
+    this._id = config.id;
   }
 
   // ==========
@@ -157,8 +165,19 @@ export class DataOktaTrustedOrigins extends cdktf.TerraformDataSource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // trusted_origins - computed: true, optional: false, required: false
@@ -174,6 +193,7 @@ export class DataOktaTrustedOrigins extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       filter: cdktf.stringToTerraform(this._filter),
+      id: cdktf.stringToTerraform(this._id),
     };
   }
 }

@@ -44,6 +44,13 @@ export interface MfaPolicyConfig extends cdktf.TerraformMetaArguments {
   */
   readonly hotp?: { [key: string]: string };
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#id MfaPolicy#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Is the policy using Okta Identity Engine (OIE) with authenticators instead of factors?
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy#is_oie MfaPolicy#is_oie}
@@ -171,6 +178,7 @@ export class MfaPolicy extends cdktf.TerraformResource {
     this._googleOtp = config.googleOtp;
     this._groupsIncluded = config.groupsIncluded;
     this._hotp = config.hotp;
+    this._id = config.id;
     this._isOie = config.isOie;
     this._name = config.name;
     this._oktaCall = config.oktaCall;
@@ -325,8 +333,19 @@ export class MfaPolicy extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // is_oie - computed: false, optional: true, required: false
@@ -644,6 +663,7 @@ export class MfaPolicy extends cdktf.TerraformResource {
       google_otp: cdktf.hashMapper(cdktf.stringToTerraform)(this._googleOtp),
       groups_included: cdktf.listMapper(cdktf.stringToTerraform)(this._groupsIncluded),
       hotp: cdktf.hashMapper(cdktf.stringToTerraform)(this._hotp),
+      id: cdktf.stringToTerraform(this._id),
       is_oie: cdktf.booleanToTerraform(this._isOie),
       name: cdktf.stringToTerraform(this._name),
       okta_call: cdktf.hashMapper(cdktf.stringToTerraform)(this._oktaCall),

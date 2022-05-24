@@ -8,6 +8,13 @@ import * as cdktf from 'cdktf';
 
 export interface PolicyRuleIdpDiscoveryConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery#id PolicyRuleIdpDiscovery#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery#idp_id PolicyRuleIdpDiscovery#idp_id}
   */
   readonly idpId?: string;
@@ -99,6 +106,9 @@ export interface PolicyRuleIdpDiscoveryConfig extends cdktf.TerraformMetaArgumen
 export interface PolicyRuleIdpDiscoveryAppExclude {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery#id PolicyRuleIdpDiscovery#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
@@ -123,9 +133,133 @@ export function policyRuleIdpDiscoveryAppExcludeToTerraform(struct?: PolicyRuleI
   }
 }
 
+export class PolicyRuleIdpDiscoveryAppExcludeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): PolicyRuleIdpDiscoveryAppExclude | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._id !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.id = this._id;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: PolicyRuleIdpDiscoveryAppExclude | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._id = undefined;
+      this._name = undefined;
+      this._type = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._id = value.id;
+      this._name = value.name;
+      this._type = value.type;
+    }
+  }
+
+  // id - computed: false, optional: true, required: false
+  private _id?: string; 
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
+  }
+
+  // name - computed: false, optional: true, required: false
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // type - computed: false, optional: false, required: true
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+}
+
+export class PolicyRuleIdpDiscoveryAppExcludeList extends cdktf.ComplexList {
+  public internalValue? : PolicyRuleIdpDiscoveryAppExclude[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): PolicyRuleIdpDiscoveryAppExcludeOutputReference {
+    return new PolicyRuleIdpDiscoveryAppExcludeOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface PolicyRuleIdpDiscoveryAppInclude {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery#id PolicyRuleIdpDiscovery#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
@@ -150,6 +284,127 @@ export function policyRuleIdpDiscoveryAppIncludeToTerraform(struct?: PolicyRuleI
   }
 }
 
+export class PolicyRuleIdpDiscoveryAppIncludeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): PolicyRuleIdpDiscoveryAppInclude | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._id !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.id = this._id;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: PolicyRuleIdpDiscoveryAppInclude | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._id = undefined;
+      this._name = undefined;
+      this._type = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._id = value.id;
+      this._name = value.name;
+      this._type = value.type;
+    }
+  }
+
+  // id - computed: false, optional: true, required: false
+  private _id?: string; 
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
+  }
+
+  // name - computed: false, optional: true, required: false
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // type - computed: false, optional: false, required: true
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+}
+
+export class PolicyRuleIdpDiscoveryAppIncludeList extends cdktf.ComplexList {
+  public internalValue? : PolicyRuleIdpDiscoveryAppInclude[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): PolicyRuleIdpDiscoveryAppIncludeOutputReference {
+    return new PolicyRuleIdpDiscoveryAppIncludeOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface PolicyRuleIdpDiscoveryPlatformInclude {
   /**
   * Only available with OTHER OS type
@@ -179,6 +434,130 @@ export function policyRuleIdpDiscoveryPlatformIncludeToTerraform(struct?: Policy
   }
 }
 
+export class PolicyRuleIdpDiscoveryPlatformIncludeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): PolicyRuleIdpDiscoveryPlatformInclude | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._osExpression !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.osExpression = this._osExpression;
+    }
+    if (this._osType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.osType = this._osType;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: PolicyRuleIdpDiscoveryPlatformInclude | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._osExpression = undefined;
+      this._osType = undefined;
+      this._type = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._osExpression = value.osExpression;
+      this._osType = value.osType;
+      this._type = value.type;
+    }
+  }
+
+  // os_expression - computed: false, optional: true, required: false
+  private _osExpression?: string; 
+  public get osExpression() {
+    return this.getStringAttribute('os_expression');
+  }
+  public set osExpression(value: string) {
+    this._osExpression = value;
+  }
+  public resetOsExpression() {
+    this._osExpression = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get osExpressionInput() {
+    return this._osExpression;
+  }
+
+  // os_type - computed: false, optional: true, required: false
+  private _osType?: string; 
+  public get osType() {
+    return this.getStringAttribute('os_type');
+  }
+  public set osType(value: string) {
+    this._osType = value;
+  }
+  public resetOsType() {
+    this._osType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get osTypeInput() {
+    return this._osType;
+  }
+
+  // type - computed: false, optional: true, required: false
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  public resetType() {
+    this._type = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+}
+
+export class PolicyRuleIdpDiscoveryPlatformIncludeList extends cdktf.ComplexList {
+  public internalValue? : PolicyRuleIdpDiscoveryPlatformInclude[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): PolicyRuleIdpDiscoveryPlatformIncludeOutputReference {
+    return new PolicyRuleIdpDiscoveryPlatformIncludeOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface PolicyRuleIdpDiscoveryUserIdentifierPatterns {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery#match_type PolicyRuleIdpDiscovery#match_type}
@@ -201,6 +580,108 @@ export function policyRuleIdpDiscoveryUserIdentifierPatternsToTerraform(struct?:
   }
 }
 
+export class PolicyRuleIdpDiscoveryUserIdentifierPatternsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): PolicyRuleIdpDiscoveryUserIdentifierPatterns | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._matchType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.matchType = this._matchType;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: PolicyRuleIdpDiscoveryUserIdentifierPatterns | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._matchType = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._matchType = value.matchType;
+      this._value = value.value;
+    }
+  }
+
+  // match_type - computed: false, optional: true, required: false
+  private _matchType?: string; 
+  public get matchType() {
+    return this.getStringAttribute('match_type');
+  }
+  public set matchType(value: string) {
+    this._matchType = value;
+  }
+  public resetMatchType() {
+    this._matchType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get matchTypeInput() {
+    return this._matchType;
+  }
+
+  // value - computed: false, optional: true, required: false
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  public resetValue() {
+    this._value = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class PolicyRuleIdpDiscoveryUserIdentifierPatternsList extends cdktf.ComplexList {
+  public internalValue? : PolicyRuleIdpDiscoveryUserIdentifierPatterns[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): PolicyRuleIdpDiscoveryUserIdentifierPatternsOutputReference {
+    return new PolicyRuleIdpDiscoveryUserIdentifierPatternsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_idp_discovery okta_policy_rule_idp_discovery}
@@ -236,6 +717,7 @@ export class PolicyRuleIdpDiscovery extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._id = config.id;
     this._idpId = config.idpId;
     this._idpType = config.idpType;
     this._name = config.name;
@@ -248,10 +730,10 @@ export class PolicyRuleIdpDiscovery extends cdktf.TerraformResource {
     this._status = config.status;
     this._userIdentifierAttribute = config.userIdentifierAttribute;
     this._userIdentifierType = config.userIdentifierType;
-    this._appExclude = config.appExclude;
-    this._appInclude = config.appInclude;
-    this._platformInclude = config.platformInclude;
-    this._userIdentifierPatterns = config.userIdentifierPatterns;
+    this._appExclude.internalValue = config.appExclude;
+    this._appInclude.internalValue = config.appInclude;
+    this._platformInclude.internalValue = config.platformInclude;
+    this._userIdentifierPatterns.internalValue = config.userIdentifierPatterns;
   }
 
   // ==========
@@ -259,8 +741,19 @@ export class PolicyRuleIdpDiscovery extends cdktf.TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // idp_id - computed: false, optional: true, required: false
@@ -453,71 +946,67 @@ export class PolicyRuleIdpDiscovery extends cdktf.TerraformResource {
   }
 
   // app_exclude - computed: false, optional: true, required: false
-  private _appExclude?: PolicyRuleIdpDiscoveryAppExclude[] | cdktf.IResolvable; 
+  private _appExclude = new PolicyRuleIdpDiscoveryAppExcludeList(this, "app_exclude", true);
   public get appExclude() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('app_exclude')));
+    return this._appExclude;
   }
-  public set appExclude(value: PolicyRuleIdpDiscoveryAppExclude[] | cdktf.IResolvable) {
-    this._appExclude = value;
+  public putAppExclude(value: PolicyRuleIdpDiscoveryAppExclude[] | cdktf.IResolvable) {
+    this._appExclude.internalValue = value;
   }
   public resetAppExclude() {
-    this._appExclude = undefined;
+    this._appExclude.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get appExcludeInput() {
-    return this._appExclude;
+    return this._appExclude.internalValue;
   }
 
   // app_include - computed: false, optional: true, required: false
-  private _appInclude?: PolicyRuleIdpDiscoveryAppInclude[] | cdktf.IResolvable; 
+  private _appInclude = new PolicyRuleIdpDiscoveryAppIncludeList(this, "app_include", true);
   public get appInclude() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('app_include')));
+    return this._appInclude;
   }
-  public set appInclude(value: PolicyRuleIdpDiscoveryAppInclude[] | cdktf.IResolvable) {
-    this._appInclude = value;
+  public putAppInclude(value: PolicyRuleIdpDiscoveryAppInclude[] | cdktf.IResolvable) {
+    this._appInclude.internalValue = value;
   }
   public resetAppInclude() {
-    this._appInclude = undefined;
+    this._appInclude.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get appIncludeInput() {
-    return this._appInclude;
+    return this._appInclude.internalValue;
   }
 
   // platform_include - computed: false, optional: true, required: false
-  private _platformInclude?: PolicyRuleIdpDiscoveryPlatformInclude[] | cdktf.IResolvable; 
+  private _platformInclude = new PolicyRuleIdpDiscoveryPlatformIncludeList(this, "platform_include", true);
   public get platformInclude() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('platform_include')));
+    return this._platformInclude;
   }
-  public set platformInclude(value: PolicyRuleIdpDiscoveryPlatformInclude[] | cdktf.IResolvable) {
-    this._platformInclude = value;
+  public putPlatformInclude(value: PolicyRuleIdpDiscoveryPlatformInclude[] | cdktf.IResolvable) {
+    this._platformInclude.internalValue = value;
   }
   public resetPlatformInclude() {
-    this._platformInclude = undefined;
+    this._platformInclude.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get platformIncludeInput() {
-    return this._platformInclude;
+    return this._platformInclude.internalValue;
   }
 
   // user_identifier_patterns - computed: false, optional: true, required: false
-  private _userIdentifierPatterns?: PolicyRuleIdpDiscoveryUserIdentifierPatterns[] | cdktf.IResolvable; 
+  private _userIdentifierPatterns = new PolicyRuleIdpDiscoveryUserIdentifierPatternsList(this, "user_identifier_patterns", true);
   public get userIdentifierPatterns() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('user_identifier_patterns')));
+    return this._userIdentifierPatterns;
   }
-  public set userIdentifierPatterns(value: PolicyRuleIdpDiscoveryUserIdentifierPatterns[] | cdktf.IResolvable) {
-    this._userIdentifierPatterns = value;
+  public putUserIdentifierPatterns(value: PolicyRuleIdpDiscoveryUserIdentifierPatterns[] | cdktf.IResolvable) {
+    this._userIdentifierPatterns.internalValue = value;
   }
   public resetUserIdentifierPatterns() {
-    this._userIdentifierPatterns = undefined;
+    this._userIdentifierPatterns.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get userIdentifierPatternsInput() {
-    return this._userIdentifierPatterns;
+    return this._userIdentifierPatterns.internalValue;
   }
 
   // =========
@@ -526,6 +1015,7 @@ export class PolicyRuleIdpDiscovery extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      id: cdktf.stringToTerraform(this._id),
       idp_id: cdktf.stringToTerraform(this._idpId),
       idp_type: cdktf.stringToTerraform(this._idpType),
       name: cdktf.stringToTerraform(this._name),
@@ -538,10 +1028,10 @@ export class PolicyRuleIdpDiscovery extends cdktf.TerraformResource {
       status: cdktf.stringToTerraform(this._status),
       user_identifier_attribute: cdktf.stringToTerraform(this._userIdentifierAttribute),
       user_identifier_type: cdktf.stringToTerraform(this._userIdentifierType),
-      app_exclude: cdktf.listMapper(policyRuleIdpDiscoveryAppExcludeToTerraform)(this._appExclude),
-      app_include: cdktf.listMapper(policyRuleIdpDiscoveryAppIncludeToTerraform)(this._appInclude),
-      platform_include: cdktf.listMapper(policyRuleIdpDiscoveryPlatformIncludeToTerraform)(this._platformInclude),
-      user_identifier_patterns: cdktf.listMapper(policyRuleIdpDiscoveryUserIdentifierPatternsToTerraform)(this._userIdentifierPatterns),
+      app_exclude: cdktf.listMapper(policyRuleIdpDiscoveryAppExcludeToTerraform)(this._appExclude.internalValue),
+      app_include: cdktf.listMapper(policyRuleIdpDiscoveryAppIncludeToTerraform)(this._appInclude.internalValue),
+      platform_include: cdktf.listMapper(policyRuleIdpDiscoveryPlatformIncludeToTerraform)(this._platformInclude.internalValue),
+      user_identifier_patterns: cdktf.listMapper(policyRuleIdpDiscoveryUserIdentifierPatternsToTerraform)(this._userIdentifierPatterns.internalValue),
     };
   }
 }

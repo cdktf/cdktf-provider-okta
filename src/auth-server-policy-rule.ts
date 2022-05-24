@@ -32,6 +32,13 @@ export interface AuthServerPolicyRuleConfig extends cdktf.TerraformMetaArguments
   */
   readonly groupWhitelist?: string[];
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy_rule#id AuthServerPolicyRule#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server_policy_rule#inline_hook_id AuthServerPolicyRule#inline_hook_id}
   */
   readonly inlineHookId?: string;
@@ -124,6 +131,7 @@ export class AuthServerPolicyRule extends cdktf.TerraformResource {
     this._grantTypeWhitelist = config.grantTypeWhitelist;
     this._groupBlacklist = config.groupBlacklist;
     this._groupWhitelist = config.groupWhitelist;
+    this._id = config.id;
     this._inlineHookId = config.inlineHookId;
     this._name = config.name;
     this._policyId = config.policyId;
@@ -216,8 +224,19 @@ export class AuthServerPolicyRule extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // inline_hook_id - computed: false, optional: true, required: false
@@ -398,6 +417,7 @@ export class AuthServerPolicyRule extends cdktf.TerraformResource {
       grant_type_whitelist: cdktf.listMapper(cdktf.stringToTerraform)(this._grantTypeWhitelist),
       group_blacklist: cdktf.listMapper(cdktf.stringToTerraform)(this._groupBlacklist),
       group_whitelist: cdktf.listMapper(cdktf.stringToTerraform)(this._groupWhitelist),
+      id: cdktf.stringToTerraform(this._id),
       inline_hook_id: cdktf.stringToTerraform(this._inlineHookId),
       name: cdktf.stringToTerraform(this._name),
       policy_id: cdktf.stringToTerraform(this._policyId),
