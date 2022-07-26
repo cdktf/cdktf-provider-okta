@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface PolicyPasswordConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Authentication Provider: OKTA or ACTIVE_DIRECTORY.
+  * Authentication Provider: OKTA, ACTIVE_DIRECTORY or LDAP
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_password#auth_provider PolicyPassword#auth_provider}
   */
@@ -222,8 +222,8 @@ export class PolicyPassword extends cdktf.TerraformResource {
       terraformResourceType: 'okta_policy_password',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '3.20.8',
-        providerVersionConstraint: '~> 3.20.2'
+        providerVersion: '3.31.0',
+        providerVersionConstraint: '~> 3.20'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

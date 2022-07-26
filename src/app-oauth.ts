@@ -44,6 +44,12 @@ export interface AppOauthConfig extends cdktf.TerraformMetaArguments {
   */
   readonly appSettingsJson?: string;
   /**
+  * Id of this apps authentication policy
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth#authentication_policy AppOauth#authentication_policy}
+  */
+  readonly authenticationPolicy?: string;
+  /**
   * Requested key rotation mode.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth#auto_key_rotation AppOauth#auto_key_rotation}
@@ -183,7 +189,7 @@ export interface AppOauthConfig extends cdktf.TerraformMetaArguments {
   */
   readonly policyUri?: string;
   /**
-  * List of URIs for redirection after logout
+  * List of URIs for redirection after logout. Note: see okta_app_oauth_post_logout_redirect_uri for appending to this list in a decentralized way.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth#post_logout_redirect_uris AppOauth#post_logout_redirect_uris}
   */
@@ -407,6 +413,11 @@ export class AppOauthGroupsClaimOutputReference extends cdktf.ComplexObject {
   // Temporarily expose input value. Use with caution.
   public get filterTypeInput() {
     return this._filterType;
+  }
+
+  // issuer_mode - computed: true, optional: false, required: false
+  public get issuerMode() {
+    return this.getStringAttribute('issuer_mode');
   }
 
   // name - computed: false, optional: false, required: true
@@ -820,8 +831,8 @@ export class AppOauth extends cdktf.TerraformResource {
       terraformResourceType: 'okta_app_oauth',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '3.20.8',
-        providerVersionConstraint: '~> 3.20.2'
+        providerVersion: '3.31.0',
+        providerVersionConstraint: '~> 3.20'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -834,6 +845,7 @@ export class AppOauth extends cdktf.TerraformResource {
     this._adminNote = config.adminNote;
     this._appLinksJson = config.appLinksJson;
     this._appSettingsJson = config.appSettingsJson;
+    this._authenticationPolicy = config.authenticationPolicy;
     this._autoKeyRotation = config.autoKeyRotation;
     this._autoSubmitToolbar = config.autoSubmitToolbar;
     this._clientBasicSecret = config.clientBasicSecret;
@@ -977,6 +989,22 @@ export class AppOauth extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get appSettingsJsonInput() {
     return this._appSettingsJson;
+  }
+
+  // authentication_policy - computed: false, optional: true, required: false
+  private _authenticationPolicy?: string; 
+  public get authenticationPolicy() {
+    return this.getStringAttribute('authentication_policy');
+  }
+  public set authenticationPolicy(value: string) {
+    this._authenticationPolicy = value;
+  }
+  public resetAuthenticationPolicy() {
+    this._authenticationPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get authenticationPolicyInput() {
+    return this._authenticationPolicy;
   }
 
   // auto_key_rotation - computed: false, optional: true, required: false
@@ -1394,7 +1422,7 @@ export class AppOauth extends cdktf.TerraformResource {
   // redirect_uris - computed: false, optional: true, required: false
   private _redirectUris?: string[]; 
   public get redirectUris() {
-    return cdktf.Fn.tolist(this.getListAttribute('redirect_uris'));
+    return this.getListAttribute('redirect_uris');
   }
   public set redirectUris(value: string[]) {
     this._redirectUris = value;
@@ -1693,6 +1721,7 @@ export class AppOauth extends cdktf.TerraformResource {
       admin_note: cdktf.stringToTerraform(this._adminNote),
       app_links_json: cdktf.stringToTerraform(this._appLinksJson),
       app_settings_json: cdktf.stringToTerraform(this._appSettingsJson),
+      authentication_policy: cdktf.stringToTerraform(this._authenticationPolicy),
       auto_key_rotation: cdktf.booleanToTerraform(this._autoKeyRotation),
       auto_submit_toolbar: cdktf.booleanToTerraform(this._autoSubmitToolbar),
       client_basic_secret: cdktf.stringToTerraform(this._clientBasicSecret),

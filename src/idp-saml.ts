@@ -87,25 +87,25 @@ export interface IdpSamlConfig extends cdktf.TerraformMetaArguments {
   */
   readonly provisioningAction?: string;
   /**
-  * algorithm to use to sign requests
+  * The XML digital Signature Algorithm used when signing an <AuthnRequest> message
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml#request_signature_algorithm IdpSaml#request_signature_algorithm}
   */
   readonly requestSignatureAlgorithm?: string;
   /**
-  * algorithm to use to sign response
+  * Specifies whether to digitally sign <AuthnRequest> messages to the IdP
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml#request_signature_scope IdpSaml#request_signature_scope}
   */
   readonly requestSignatureScope?: string;
   /**
-  * algorithm to use to sign requests
+  * The minimum XML digital Signature Algorithm allowed when verifying a <SAMLResponse> message or <Assertion> element
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml#response_signature_algorithm IdpSaml#response_signature_algorithm}
   */
   readonly responseSignatureAlgorithm?: string;
   /**
-  * algorithm to use to sign response
+  * Specifies whether to verify a <SAMLResponse> message or <Assertion> element XML digital signature
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml#response_signature_scope IdpSaml#response_signature_scope}
   */
@@ -178,8 +178,8 @@ export class IdpSaml extends cdktf.TerraformResource {
       terraformResourceType: 'okta_idp_saml',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '3.20.8',
-        providerVersionConstraint: '~> 3.20.2'
+        providerVersion: '3.31.0',
+        providerVersionConstraint: '~> 3.20'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

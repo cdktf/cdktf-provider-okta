@@ -8,6 +8,12 @@ import * as cdktf from 'cdktf';
 
 export interface DataOktaGroupConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Force delay of the group read by N seconds. Useful when eventual consistency of group information needs to be allowed for; for instance, when group rules are known to have been applied.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/group#delay_read_seconds DataOktaGroup#delay_read_seconds}
+  */
+  readonly delayReadSeconds?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/group#id DataOktaGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -58,14 +64,15 @@ export class DataOktaGroup extends cdktf.TerraformDataSource {
       terraformResourceType: 'okta_group',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '3.20.8',
-        providerVersionConstraint: '~> 3.20.2'
+        providerVersion: '3.31.0',
+        providerVersionConstraint: '~> 3.20'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._delayReadSeconds = config.delayReadSeconds;
     this._id = config.id;
     this._includeUsers = config.includeUsers;
     this._name = config.name;
@@ -75,6 +82,22 @@ export class DataOktaGroup extends cdktf.TerraformDataSource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // delay_read_seconds - computed: false, optional: true, required: false
+  private _delayReadSeconds?: string; 
+  public get delayReadSeconds() {
+    return this.getStringAttribute('delay_read_seconds');
+  }
+  public set delayReadSeconds(value: string) {
+    this._delayReadSeconds = value;
+  }
+  public resetDelayReadSeconds() {
+    this._delayReadSeconds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get delayReadSecondsInput() {
+    return this._delayReadSeconds;
+  }
 
   // description - computed: true, optional: false, required: false
   public get description() {
@@ -156,6 +179,7 @@ export class DataOktaGroup extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      delay_read_seconds: cdktf.stringToTerraform(this._delayReadSeconds),
       id: cdktf.stringToTerraform(this._id),
       include_users: cdktf.booleanToTerraform(this._includeUsers),
       name: cdktf.stringToTerraform(this._name),

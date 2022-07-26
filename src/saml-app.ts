@@ -62,6 +62,12 @@ export interface SamlAppConfig extends cdktf.TerraformMetaArguments {
   */
   readonly audience?: string;
   /**
+  * Id of this apps authentication policy
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#authentication_policy SamlApp#authentication_policy}
+  */
+  readonly authenticationPolicy?: string;
+  /**
   * Identifies the SAML authentication context class for the assertion’s authentication statement
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#authn_context_class_ref SamlApp#authn_context_class_ref}
@@ -740,8 +746,8 @@ export class SamlApp extends cdktf.TerraformResource {
       terraformResourceType: 'okta_saml_app',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '3.20.8',
-        providerVersionConstraint: '~> 3.20.2'
+        providerVersion: '3.31.0',
+        providerVersionConstraint: '~> 3.20'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -757,6 +763,7 @@ export class SamlApp extends cdktf.TerraformResource {
     this._appSettingsJson = config.appSettingsJson;
     this._assertionSigned = config.assertionSigned;
     this._audience = config.audience;
+    this._authenticationPolicy = config.authenticationPolicy;
     this._authnContextClassRef = config.authnContextClassRef;
     this._autoSubmitToolbar = config.autoSubmitToolbar;
     this._defaultRelayState = config.defaultRelayState;
@@ -946,6 +953,22 @@ export class SamlApp extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get audienceInput() {
     return this._audience;
+  }
+
+  // authentication_policy - computed: false, optional: true, required: false
+  private _authenticationPolicy?: string; 
+  public get authenticationPolicy() {
+    return this.getStringAttribute('authentication_policy');
+  }
+  public set authenticationPolicy(value: string) {
+    this._authenticationPolicy = value;
+  }
+  public resetAuthenticationPolicy() {
+    this._authenticationPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get authenticationPolicyInput() {
+    return this._authenticationPolicy;
   }
 
   // authn_context_class_ref - computed: false, optional: true, required: false
@@ -1671,6 +1694,7 @@ export class SamlApp extends cdktf.TerraformResource {
       app_settings_json: cdktf.stringToTerraform(this._appSettingsJson),
       assertion_signed: cdktf.booleanToTerraform(this._assertionSigned),
       audience: cdktf.stringToTerraform(this._audience),
+      authentication_policy: cdktf.stringToTerraform(this._authenticationPolicy),
       authn_context_class_ref: cdktf.stringToTerraform(this._authnContextClassRef),
       auto_submit_toolbar: cdktf.booleanToTerraform(this._autoSubmitToolbar),
       default_relay_state: cdktf.stringToTerraform(this._defaultRelayState),

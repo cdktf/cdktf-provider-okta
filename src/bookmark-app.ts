@@ -311,8 +311,8 @@ export class BookmarkApp extends cdktf.TerraformResource {
       terraformResourceType: 'okta_bookmark_app',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '3.20.8',
-        providerVersionConstraint: '~> 3.20.2'
+        providerVersion: '3.31.0',
+        providerVersionConstraint: '~> 3.20'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

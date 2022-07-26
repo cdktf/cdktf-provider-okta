@@ -32,6 +32,12 @@ export interface OktaProviderConfig {
   */
   readonly clientId?: string;
   /**
+  * Alternate HTTP proxy of scheme://hostname or scheme://hostname:port format
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta#http_proxy OktaProvider#http_proxy}
+  */
+  readonly httpProxy?: string;
+  /**
   * providers log level. Minimum is 1 (TRACE), and maximum is 5 (ERROR)
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta#log_level OktaProvider#log_level}
@@ -125,8 +131,8 @@ export class OktaProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'okta',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '3.20.8',
-        providerVersionConstraint: '~> 3.20.2'
+        providerVersion: '3.31.0',
+        providerVersionConstraint: '~> 3.20'
       },
       terraformProviderSource: 'okta/okta'
     });
@@ -134,6 +140,7 @@ export class OktaProvider extends cdktf.TerraformProvider {
     this._backoff = config.backoff;
     this._baseUrl = config.baseUrl;
     this._clientId = config.clientId;
+    this._httpProxy = config.httpProxy;
     this._logLevel = config.logLevel;
     this._maxApiCapacity = config.maxApiCapacity;
     this._maxRetries = config.maxRetries;
@@ -213,6 +220,22 @@ export class OktaProvider extends cdktf.TerraformProvider {
   // Temporarily expose input value. Use with caution.
   public get clientIdInput() {
     return this._clientId;
+  }
+
+  // http_proxy - computed: false, optional: true, required: false
+  private _httpProxy?: string; 
+  public get httpProxy() {
+    return this._httpProxy;
+  }
+  public set httpProxy(value: string | undefined) {
+    this._httpProxy = value;
+  }
+  public resetHttpProxy() {
+    this._httpProxy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get httpProxyInput() {
+    return this._httpProxy;
   }
 
   // log_level - computed: false, optional: true, required: false
@@ -401,6 +424,7 @@ export class OktaProvider extends cdktf.TerraformProvider {
       backoff: cdktf.booleanToTerraform(this._backoff),
       base_url: cdktf.stringToTerraform(this._baseUrl),
       client_id: cdktf.stringToTerraform(this._clientId),
+      http_proxy: cdktf.stringToTerraform(this._httpProxy),
       log_level: cdktf.numberToTerraform(this._logLevel),
       max_api_capacity: cdktf.numberToTerraform(this._maxApiCapacity),
       max_retries: cdktf.numberToTerraform(this._maxRetries),

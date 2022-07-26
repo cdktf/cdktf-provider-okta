@@ -82,8 +82,8 @@ export class AuthServerScope extends cdktf.TerraformResource {
       terraformResourceType: 'okta_auth_server_scope',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '3.20.8',
-        providerVersionConstraint: '~> 3.20.2'
+        providerVersion: '3.31.0',
+        providerVersionConstraint: '~> 3.20'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -224,6 +224,11 @@ export class AuthServerScope extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
     return this._name;
+  }
+
+  // system - computed: true, optional: false, required: false
+  public get systemAttribute() {
+    return this.getBooleanAttribute('system');
   }
 
   // =========

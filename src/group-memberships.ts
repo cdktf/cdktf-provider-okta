@@ -21,6 +21,12 @@ export interface GroupMembershipsConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * The resource concerns itself with all users added/deleted to the group; even those managed outside of the resource.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_memberships#track_all_users GroupMemberships#track_all_users}
+  */
+  readonly trackAllUsers?: boolean | cdktf.IResolvable;
+  /**
   * The list of Okta user IDs which the group should have membership managed for.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_memberships#users GroupMemberships#users}
@@ -54,8 +60,8 @@ export class GroupMemberships extends cdktf.TerraformResource {
       terraformResourceType: 'okta_group_memberships',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '3.20.8',
-        providerVersionConstraint: '~> 3.20.2'
+        providerVersion: '3.31.0',
+        providerVersionConstraint: '~> 3.20'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -64,6 +70,7 @@ export class GroupMemberships extends cdktf.TerraformResource {
     });
     this._groupId = config.groupId;
     this._id = config.id;
+    this._trackAllUsers = config.trackAllUsers;
     this._users = config.users;
   }
 
@@ -100,6 +107,22 @@ export class GroupMemberships extends cdktf.TerraformResource {
     return this._id;
   }
 
+  // track_all_users - computed: false, optional: true, required: false
+  private _trackAllUsers?: boolean | cdktf.IResolvable; 
+  public get trackAllUsers() {
+    return this.getBooleanAttribute('track_all_users');
+  }
+  public set trackAllUsers(value: boolean | cdktf.IResolvable) {
+    this._trackAllUsers = value;
+  }
+  public resetTrackAllUsers() {
+    this._trackAllUsers = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get trackAllUsersInput() {
+    return this._trackAllUsers;
+  }
+
   // users - computed: false, optional: false, required: true
   private _users?: string[]; 
   public get users() {
@@ -121,6 +144,7 @@ export class GroupMemberships extends cdktf.TerraformResource {
     return {
       group_id: cdktf.stringToTerraform(this._groupId),
       id: cdktf.stringToTerraform(this._id),
+      track_all_users: cdktf.booleanToTerraform(this._trackAllUsers),
       users: cdktf.listMapper(cdktf.stringToTerraform)(this._users),
     };
   }

@@ -8,6 +8,24 @@ import * as cdktf from 'cdktf';
 
 export interface DataOktaUsersConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Search operator used when joining mulitple search clauses
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/users#compound_search_operator DataOktaUsers#compound_search_operator}
+  */
+  readonly compoundSearchOperator?: string;
+  /**
+  * Force delay of the users read by N seconds. Useful when eventual consistency of users information needs to be allowed for.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/users#delay_read_seconds DataOktaUsers#delay_read_seconds}
+  */
+  readonly delayReadSeconds?: string;
+  /**
+  * Find users based on group membership using the id of the group.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/users#group_id DataOktaUsers#group_id}
+  */
+  readonly groupId?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/users#id DataOktaUsers#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -15,11 +33,23 @@ export interface DataOktaUsersConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * Fetch group memberships for each user
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/users#include_groups DataOktaUsers#include_groups}
+  */
+  readonly includeGroups?: boolean | cdktf.IResolvable;
+  /**
+  * Fetch user roles for each user
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/users#include_roles DataOktaUsers#include_roles}
+  */
+  readonly includeRoles?: boolean | cdktf.IResolvable;
+  /**
   * search block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/users#search DataOktaUsers#search}
   */
-  readonly search: DataOktaUsersSearch[] | cdktf.IResolvable;
+  readonly search?: DataOktaUsersSearch[] | cdktf.IResolvable;
 }
 export interface DataOktaUsersUsers {
 }
@@ -266,15 +296,21 @@ export interface DataOktaUsersSearch {
   */
   readonly comparison?: string;
   /**
+  * A raw search expression string. This requires the search feature be on. Please see Okta documentation on their filter API for users. https://developer.okta.com/docs/api/resources/users#list-users-with-search
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/users#expression DataOktaUsers#expression}
+  */
+  readonly expression?: string;
+  /**
   * Property name to search for. This requires the search feature be on. Please see Okta documentation on their filter API for users. https://developer.okta.com/docs/api/resources/users#list-users-with-search
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/users#name DataOktaUsers#name}
   */
-  readonly name: string;
+  readonly name?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/users#value DataOktaUsers#value}
   */
-  readonly value: string;
+  readonly value?: string;
 }
 
 export function dataOktaUsersSearchToTerraform(struct?: DataOktaUsersSearch | cdktf.IResolvable): any {
@@ -284,6 +320,7 @@ export function dataOktaUsersSearchToTerraform(struct?: DataOktaUsersSearch | cd
   }
   return {
     comparison: cdktf.stringToTerraform(struct!.comparison),
+    expression: cdktf.stringToTerraform(struct!.expression),
     name: cdktf.stringToTerraform(struct!.name),
     value: cdktf.stringToTerraform(struct!.value),
   }
@@ -313,6 +350,10 @@ export class DataOktaUsersSearchOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.comparison = this._comparison;
     }
+    if (this._expression !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.expression = this._expression;
+    }
     if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
@@ -329,6 +370,7 @@ export class DataOktaUsersSearchOutputReference extends cdktf.ComplexObject {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._comparison = undefined;
+      this._expression = undefined;
       this._name = undefined;
       this._value = undefined;
     }
@@ -340,6 +382,7 @@ export class DataOktaUsersSearchOutputReference extends cdktf.ComplexObject {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
       this._comparison = value.comparison;
+      this._expression = value.expression;
       this._name = value.name;
       this._value = value.value;
     }
@@ -361,7 +404,23 @@ export class DataOktaUsersSearchOutputReference extends cdktf.ComplexObject {
     return this._comparison;
   }
 
-  // name - computed: false, optional: false, required: true
+  // expression - computed: false, optional: true, required: false
+  private _expression?: string; 
+  public get expression() {
+    return this.getStringAttribute('expression');
+  }
+  public set expression(value: string) {
+    this._expression = value;
+  }
+  public resetExpression() {
+    this._expression = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get expressionInput() {
+    return this._expression;
+  }
+
+  // name - computed: false, optional: true, required: false
   private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
@@ -369,18 +428,24 @@ export class DataOktaUsersSearchOutputReference extends cdktf.ComplexObject {
   public set name(value: string) {
     this._name = value;
   }
+  public resetName() {
+    this._name = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
     return this._name;
   }
 
-  // value - computed: false, optional: false, required: true
+  // value - computed: false, optional: true, required: false
   private _value?: string; 
   public get value() {
     return this.getStringAttribute('value');
   }
   public set value(value: string) {
     this._value = value;
+  }
+  public resetValue() {
+    this._value = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get valueInput() {
@@ -427,28 +492,81 @@ export class DataOktaUsers extends cdktf.TerraformDataSource {
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options DataOktaUsersConfig
+  * @param options DataOktaUsersConfig = {}
   */
-  public constructor(scope: Construct, id: string, config: DataOktaUsersConfig) {
+  public constructor(scope: Construct, id: string, config: DataOktaUsersConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'okta_users',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '3.20.8',
-        providerVersionConstraint: '~> 3.20.2'
+        providerVersion: '3.31.0',
+        providerVersionConstraint: '~> 3.20'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._compoundSearchOperator = config.compoundSearchOperator;
+    this._delayReadSeconds = config.delayReadSeconds;
+    this._groupId = config.groupId;
     this._id = config.id;
+    this._includeGroups = config.includeGroups;
+    this._includeRoles = config.includeRoles;
     this._search.internalValue = config.search;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // compound_search_operator - computed: false, optional: true, required: false
+  private _compoundSearchOperator?: string; 
+  public get compoundSearchOperator() {
+    return this.getStringAttribute('compound_search_operator');
+  }
+  public set compoundSearchOperator(value: string) {
+    this._compoundSearchOperator = value;
+  }
+  public resetCompoundSearchOperator() {
+    this._compoundSearchOperator = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get compoundSearchOperatorInput() {
+    return this._compoundSearchOperator;
+  }
+
+  // delay_read_seconds - computed: false, optional: true, required: false
+  private _delayReadSeconds?: string; 
+  public get delayReadSeconds() {
+    return this.getStringAttribute('delay_read_seconds');
+  }
+  public set delayReadSeconds(value: string) {
+    this._delayReadSeconds = value;
+  }
+  public resetDelayReadSeconds() {
+    this._delayReadSeconds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get delayReadSecondsInput() {
+    return this._delayReadSeconds;
+  }
+
+  // group_id - computed: false, optional: true, required: false
+  private _groupId?: string; 
+  public get groupId() {
+    return this.getStringAttribute('group_id');
+  }
+  public set groupId(value: string) {
+    this._groupId = value;
+  }
+  public resetGroupId() {
+    this._groupId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get groupIdInput() {
+    return this._groupId;
+  }
 
   // id - computed: true, optional: true, required: false
   private _id?: string; 
@@ -466,19 +584,54 @@ export class DataOktaUsers extends cdktf.TerraformDataSource {
     return this._id;
   }
 
+  // include_groups - computed: false, optional: true, required: false
+  private _includeGroups?: boolean | cdktf.IResolvable; 
+  public get includeGroups() {
+    return this.getBooleanAttribute('include_groups');
+  }
+  public set includeGroups(value: boolean | cdktf.IResolvable) {
+    this._includeGroups = value;
+  }
+  public resetIncludeGroups() {
+    this._includeGroups = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get includeGroupsInput() {
+    return this._includeGroups;
+  }
+
+  // include_roles - computed: false, optional: true, required: false
+  private _includeRoles?: boolean | cdktf.IResolvable; 
+  public get includeRoles() {
+    return this.getBooleanAttribute('include_roles');
+  }
+  public set includeRoles(value: boolean | cdktf.IResolvable) {
+    this._includeRoles = value;
+  }
+  public resetIncludeRoles() {
+    this._includeRoles = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get includeRolesInput() {
+    return this._includeRoles;
+  }
+
   // users - computed: true, optional: false, required: false
   private _users = new DataOktaUsersUsersList(this, "users", false);
   public get users() {
     return this._users;
   }
 
-  // search - computed: false, optional: false, required: true
+  // search - computed: false, optional: true, required: false
   private _search = new DataOktaUsersSearchList(this, "search", true);
   public get search() {
     return this._search;
   }
   public putSearch(value: DataOktaUsersSearch[] | cdktf.IResolvable) {
     this._search.internalValue = value;
+  }
+  public resetSearch() {
+    this._search.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get searchInput() {
@@ -491,7 +644,12 @@ export class DataOktaUsers extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      compound_search_operator: cdktf.stringToTerraform(this._compoundSearchOperator),
+      delay_read_seconds: cdktf.stringToTerraform(this._delayReadSeconds),
+      group_id: cdktf.stringToTerraform(this._groupId),
       id: cdktf.stringToTerraform(this._id),
+      include_groups: cdktf.booleanToTerraform(this._includeGroups),
+      include_roles: cdktf.booleanToTerraform(this._includeRoles),
       search: cdktf.listMapper(dataOktaUsersSearchToTerraform)(this._search.internalValue),
     };
   }
