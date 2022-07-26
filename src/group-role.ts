@@ -78,7 +78,10 @@ export class GroupRole extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._disableNotifications = config.disableNotifications;
     this._groupId = config.groupId;
@@ -192,8 +195,8 @@ export class GroupRole extends cdktf.TerraformResource {
       group_id: cdktf.stringToTerraform(this._groupId),
       id: cdktf.stringToTerraform(this._id),
       role_type: cdktf.stringToTerraform(this._roleType),
-      target_app_list: cdktf.listMapper(cdktf.stringToTerraform)(this._targetAppList),
-      target_group_list: cdktf.listMapper(cdktf.stringToTerraform)(this._targetGroupList),
+      target_app_list: cdktf.listMapper(cdktf.stringToTerraform, false)(this._targetAppList),
+      target_group_list: cdktf.listMapper(cdktf.stringToTerraform, false)(this._targetGroupList),
     };
   }
 }

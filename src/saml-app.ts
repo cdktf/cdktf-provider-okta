@@ -363,7 +363,7 @@ export function samlAppAttributeStatementsToTerraform(struct?: SamlAppAttributeS
     name: cdktf.stringToTerraform(struct!.name),
     namespace: cdktf.stringToTerraform(struct!.namespace),
     type: cdktf.stringToTerraform(struct!.type),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -752,7 +752,10 @@ export class SamlApp extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._accessibilityErrorRedirectUrl = config.accessibilityErrorRedirectUrl;
     this._accessibilityLoginRedirectUrl = config.accessibilityLoginRedirectUrl;
@@ -1688,7 +1691,7 @@ export class SamlApp extends cdktf.TerraformResource {
       accessibility_error_redirect_url: cdktf.stringToTerraform(this._accessibilityErrorRedirectUrl),
       accessibility_login_redirect_url: cdktf.stringToTerraform(this._accessibilityLoginRedirectUrl),
       accessibility_self_service: cdktf.booleanToTerraform(this._accessibilitySelfService),
-      acs_endpoints: cdktf.listMapper(cdktf.stringToTerraform)(this._acsEndpoints),
+      acs_endpoints: cdktf.listMapper(cdktf.stringToTerraform, false)(this._acsEndpoints),
       admin_note: cdktf.stringToTerraform(this._adminNote),
       app_links_json: cdktf.stringToTerraform(this._appLinksJson),
       app_settings_json: cdktf.stringToTerraform(this._appSettingsJson),
@@ -1701,8 +1704,8 @@ export class SamlApp extends cdktf.TerraformResource {
       destination: cdktf.stringToTerraform(this._destination),
       digest_algorithm: cdktf.stringToTerraform(this._digestAlgorithm),
       enduser_note: cdktf.stringToTerraform(this._enduserNote),
-      features: cdktf.listMapper(cdktf.stringToTerraform)(this._features),
-      groups: cdktf.listMapper(cdktf.stringToTerraform)(this._groups),
+      features: cdktf.listMapper(cdktf.stringToTerraform, false)(this._features),
+      groups: cdktf.listMapper(cdktf.stringToTerraform, false)(this._groups),
       hide_ios: cdktf.booleanToTerraform(this._hideIos),
       hide_web: cdktf.booleanToTerraform(this._hideWeb),
       honor_force_authn: cdktf.booleanToTerraform(this._honorForceAuthn),
@@ -1734,8 +1737,8 @@ export class SamlApp extends cdktf.TerraformResource {
       user_name_template_push_status: cdktf.stringToTerraform(this._userNameTemplatePushStatus),
       user_name_template_suffix: cdktf.stringToTerraform(this._userNameTemplateSuffix),
       user_name_template_type: cdktf.stringToTerraform(this._userNameTemplateType),
-      attribute_statements: cdktf.listMapper(samlAppAttributeStatementsToTerraform)(this._attributeStatements.internalValue),
-      users: cdktf.listMapper(samlAppUsersToTerraform)(this._users.internalValue),
+      attribute_statements: cdktf.listMapper(samlAppAttributeStatementsToTerraform, true)(this._attributeStatements.internalValue),
+      users: cdktf.listMapper(samlAppUsersToTerraform, true)(this._users.internalValue),
     };
   }
 }

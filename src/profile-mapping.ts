@@ -228,7 +228,10 @@ export class ProfileMapping extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._alwaysApply = config.alwaysApply;
     this._deleteWhenAbsent = config.deleteWhenAbsent;
@@ -363,7 +366,7 @@ export class ProfileMapping extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       source_id: cdktf.stringToTerraform(this._sourceId),
       target_id: cdktf.stringToTerraform(this._targetId),
-      mappings: cdktf.listMapper(profileMappingMappingsToTerraform)(this._mappings.internalValue),
+      mappings: cdktf.listMapper(profileMappingMappingsToTerraform, true)(this._mappings.internalValue),
     };
   }
 }

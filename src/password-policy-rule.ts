@@ -120,7 +120,10 @@ export class PasswordPolicyRule extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._name = config.name;
@@ -355,8 +358,8 @@ export class PasswordPolicyRule extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       network_connection: cdktf.stringToTerraform(this._networkConnection),
-      network_excludes: cdktf.listMapper(cdktf.stringToTerraform)(this._networkExcludes),
-      network_includes: cdktf.listMapper(cdktf.stringToTerraform)(this._networkIncludes),
+      network_excludes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._networkExcludes),
+      network_includes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._networkIncludes),
       password_change: cdktf.stringToTerraform(this._passwordChange),
       password_reset: cdktf.stringToTerraform(this._passwordReset),
       password_unlock: cdktf.stringToTerraform(this._passwordUnlock),
@@ -364,7 +367,7 @@ export class PasswordPolicyRule extends cdktf.TerraformResource {
       policyid: cdktf.stringToTerraform(this._policyid),
       priority: cdktf.numberToTerraform(this._priority),
       status: cdktf.stringToTerraform(this._status),
-      users_excluded: cdktf.listMapper(cdktf.stringToTerraform)(this._usersExcluded),
+      users_excluded: cdktf.listMapper(cdktf.stringToTerraform, false)(this._usersExcluded),
     };
   }
 }

@@ -202,7 +202,10 @@ export class InlineHook extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._auth = config.auth;
     this._channel = config.channel;
@@ -347,7 +350,7 @@ export class InlineHook extends cdktf.TerraformResource {
       status: cdktf.stringToTerraform(this._status),
       type: cdktf.stringToTerraform(this._type),
       version: cdktf.stringToTerraform(this._version),
-      headers: cdktf.listMapper(inlineHookHeadersToTerraform)(this._headers.internalValue),
+      headers: cdktf.listMapper(inlineHookHeadersToTerraform, true)(this._headers.internalValue),
     };
   }
 }

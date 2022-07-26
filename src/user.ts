@@ -477,7 +477,10 @@ export class User extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._adminRoles = config.adminRoles;
     this._city = config.city;
@@ -1215,7 +1218,7 @@ export class User extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      admin_roles: cdktf.listMapper(cdktf.stringToTerraform)(this._adminRoles),
+      admin_roles: cdktf.listMapper(cdktf.stringToTerraform, false)(this._adminRoles),
       city: cdktf.stringToTerraform(this._city),
       cost_center: cdktf.stringToTerraform(this._costCenter),
       country_code: cdktf.stringToTerraform(this._countryCode),
@@ -1227,7 +1230,7 @@ export class User extends cdktf.TerraformResource {
       employee_number: cdktf.stringToTerraform(this._employeeNumber),
       expire_password_on_create: cdktf.booleanToTerraform(this._expirePasswordOnCreate),
       first_name: cdktf.stringToTerraform(this._firstName),
-      group_memberships: cdktf.listMapper(cdktf.stringToTerraform)(this._groupMemberships),
+      group_memberships: cdktf.listMapper(cdktf.stringToTerraform, false)(this._groupMemberships),
       honorific_prefix: cdktf.stringToTerraform(this._honorificPrefix),
       honorific_suffix: cdktf.stringToTerraform(this._honorificSuffix),
       id: cdktf.stringToTerraform(this._id),

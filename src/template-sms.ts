@@ -184,7 +184,10 @@ export class TemplateSms extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._template = config.template;
@@ -263,7 +266,7 @@ export class TemplateSms extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       template: cdktf.stringToTerraform(this._template),
       type: cdktf.stringToTerraform(this._type),
-      translations: cdktf.listMapper(templateSmsTranslationsToTerraform)(this._translations.internalValue),
+      translations: cdktf.listMapper(templateSmsTranslationsToTerraform, true)(this._translations.internalValue),
     };
   }
 }

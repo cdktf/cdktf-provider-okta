@@ -337,7 +337,10 @@ export class AppSignonPolicyRule extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._access = config.access;
     this._constraints = config.constraints;
@@ -754,29 +757,29 @@ export class AppSignonPolicyRule extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       access: cdktf.stringToTerraform(this._access),
-      constraints: cdktf.listMapper(cdktf.stringToTerraform)(this._constraints),
+      constraints: cdktf.listMapper(cdktf.stringToTerraform, false)(this._constraints),
       custom_expression: cdktf.stringToTerraform(this._customExpression),
       device_is_managed: cdktf.booleanToTerraform(this._deviceIsManaged),
       device_is_registered: cdktf.booleanToTerraform(this._deviceIsRegistered),
       factor_mode: cdktf.stringToTerraform(this._factorMode),
-      groups_excluded: cdktf.listMapper(cdktf.stringToTerraform)(this._groupsExcluded),
-      groups_included: cdktf.listMapper(cdktf.stringToTerraform)(this._groupsIncluded),
+      groups_excluded: cdktf.listMapper(cdktf.stringToTerraform, false)(this._groupsExcluded),
+      groups_included: cdktf.listMapper(cdktf.stringToTerraform, false)(this._groupsIncluded),
       id: cdktf.stringToTerraform(this._id),
       inactivity_period: cdktf.stringToTerraform(this._inactivityPeriod),
       name: cdktf.stringToTerraform(this._name),
       network_connection: cdktf.stringToTerraform(this._networkConnection),
-      network_excludes: cdktf.listMapper(cdktf.stringToTerraform)(this._networkExcludes),
-      network_includes: cdktf.listMapper(cdktf.stringToTerraform)(this._networkIncludes),
+      network_excludes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._networkExcludes),
+      network_includes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._networkIncludes),
       policy_id: cdktf.stringToTerraform(this._policyId),
       priority: cdktf.numberToTerraform(this._priority),
       re_authentication_frequency: cdktf.stringToTerraform(this._reAuthenticationFrequency),
       status: cdktf.stringToTerraform(this._status),
       type: cdktf.stringToTerraform(this._type),
-      user_types_excluded: cdktf.listMapper(cdktf.stringToTerraform)(this._userTypesExcluded),
-      user_types_included: cdktf.listMapper(cdktf.stringToTerraform)(this._userTypesIncluded),
-      users_excluded: cdktf.listMapper(cdktf.stringToTerraform)(this._usersExcluded),
-      users_included: cdktf.listMapper(cdktf.stringToTerraform)(this._usersIncluded),
-      platform_include: cdktf.listMapper(appSignonPolicyRulePlatformIncludeToTerraform)(this._platformInclude.internalValue),
+      user_types_excluded: cdktf.listMapper(cdktf.stringToTerraform, false)(this._userTypesExcluded),
+      user_types_included: cdktf.listMapper(cdktf.stringToTerraform, false)(this._userTypesIncluded),
+      users_excluded: cdktf.listMapper(cdktf.stringToTerraform, false)(this._usersExcluded),
+      users_included: cdktf.listMapper(cdktf.stringToTerraform, false)(this._usersIncluded),
+      platform_include: cdktf.listMapper(appSignonPolicyRulePlatformIncludeToTerraform, true)(this._platformInclude.internalValue),
     };
   }
 }

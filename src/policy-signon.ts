@@ -78,7 +78,10 @@ export class PolicySignon extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._description = config.description;
     this._groupsIncluded = config.groupsIncluded;
@@ -192,7 +195,7 @@ export class PolicySignon extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       description: cdktf.stringToTerraform(this._description),
-      groups_included: cdktf.listMapper(cdktf.stringToTerraform)(this._groupsIncluded),
+      groups_included: cdktf.listMapper(cdktf.stringToTerraform, false)(this._groupsIncluded),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       priority: cdktf.numberToTerraform(this._priority),

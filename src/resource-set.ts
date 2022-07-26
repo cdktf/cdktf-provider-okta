@@ -66,7 +66,10 @@ export class ResourceSet extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._description = config.description;
     this._id = config.id;
@@ -145,7 +148,7 @@ export class ResourceSet extends cdktf.TerraformResource {
       description: cdktf.stringToTerraform(this._description),
       id: cdktf.stringToTerraform(this._id),
       label: cdktf.stringToTerraform(this._label),
-      resources: cdktf.listMapper(cdktf.stringToTerraform)(this._resources),
+      resources: cdktf.listMapper(cdktf.stringToTerraform, false)(this._resources),
     };
   }
 }

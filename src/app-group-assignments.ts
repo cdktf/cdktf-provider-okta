@@ -211,7 +211,10 @@ export class AppGroupAssignments extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._appId = config.appId;
     this._id = config.id;
@@ -272,7 +275,7 @@ export class AppGroupAssignments extends cdktf.TerraformResource {
     return {
       app_id: cdktf.stringToTerraform(this._appId),
       id: cdktf.stringToTerraform(this._id),
-      group: cdktf.listMapper(appGroupAssignmentsGroupToTerraform)(this._group.internalValue),
+      group: cdktf.listMapper(appGroupAssignmentsGroupToTerraform, true)(this._group.internalValue),
     };
   }
 }

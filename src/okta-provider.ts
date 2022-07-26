@@ -434,7 +434,7 @@ export class OktaProvider extends cdktf.TerraformProvider {
       parallelism: cdktf.numberToTerraform(this._parallelism),
       private_key: cdktf.stringToTerraform(this._privateKey),
       request_timeout: cdktf.numberToTerraform(this._requestTimeout),
-      scopes: cdktf.listMapper(cdktf.stringToTerraform)(this._scopes),
+      scopes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._scopes),
       alias: cdktf.stringToTerraform(this._alias),
     };
   }

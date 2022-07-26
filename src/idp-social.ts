@@ -166,7 +166,10 @@ export class IdpSocial extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._accountLinkAction = config.accountLinkAction;
     this._accountLinkGroupInclude = config.accountLinkGroupInclude;
@@ -668,7 +671,7 @@ export class IdpSocial extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       account_link_action: cdktf.stringToTerraform(this._accountLinkAction),
-      account_link_group_include: cdktf.listMapper(cdktf.stringToTerraform)(this._accountLinkGroupInclude),
+      account_link_group_include: cdktf.listMapper(cdktf.stringToTerraform, false)(this._accountLinkGroupInclude),
       apple_kid: cdktf.stringToTerraform(this._appleKid),
       apple_private_key: cdktf.stringToTerraform(this._applePrivateKey),
       apple_team_id: cdktf.stringToTerraform(this._appleTeamId),
@@ -676,9 +679,9 @@ export class IdpSocial extends cdktf.TerraformResource {
       client_secret: cdktf.stringToTerraform(this._clientSecret),
       deprovisioned_action: cdktf.stringToTerraform(this._deprovisionedAction),
       groups_action: cdktf.stringToTerraform(this._groupsAction),
-      groups_assignment: cdktf.listMapper(cdktf.stringToTerraform)(this._groupsAssignment),
+      groups_assignment: cdktf.listMapper(cdktf.stringToTerraform, false)(this._groupsAssignment),
       groups_attribute: cdktf.stringToTerraform(this._groupsAttribute),
-      groups_filter: cdktf.listMapper(cdktf.stringToTerraform)(this._groupsFilter),
+      groups_filter: cdktf.listMapper(cdktf.stringToTerraform, false)(this._groupsFilter),
       id: cdktf.stringToTerraform(this._id),
       issuer_mode: cdktf.stringToTerraform(this._issuerMode),
       match_attribute: cdktf.stringToTerraform(this._matchAttribute),
@@ -688,7 +691,7 @@ export class IdpSocial extends cdktf.TerraformResource {
       profile_master: cdktf.booleanToTerraform(this._profileMaster),
       protocol_type: cdktf.stringToTerraform(this._protocolType),
       provisioning_action: cdktf.stringToTerraform(this._provisioningAction),
-      scopes: cdktf.listMapper(cdktf.stringToTerraform)(this._scopes),
+      scopes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._scopes),
       status: cdktf.stringToTerraform(this._status),
       subject_match_attribute: cdktf.stringToTerraform(this._subjectMatchAttribute),
       subject_match_type: cdktf.stringToTerraform(this._subjectMatchType),

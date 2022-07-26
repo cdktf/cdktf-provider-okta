@@ -124,7 +124,10 @@ export class AuthServerPolicyRule extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._accessTokenLifetimeMinutes = config.accessTokenLifetimeMinutes;
     this._authServerId = config.authServerId;
@@ -414,9 +417,9 @@ export class AuthServerPolicyRule extends cdktf.TerraformResource {
     return {
       access_token_lifetime_minutes: cdktf.numberToTerraform(this._accessTokenLifetimeMinutes),
       auth_server_id: cdktf.stringToTerraform(this._authServerId),
-      grant_type_whitelist: cdktf.listMapper(cdktf.stringToTerraform)(this._grantTypeWhitelist),
-      group_blacklist: cdktf.listMapper(cdktf.stringToTerraform)(this._groupBlacklist),
-      group_whitelist: cdktf.listMapper(cdktf.stringToTerraform)(this._groupWhitelist),
+      grant_type_whitelist: cdktf.listMapper(cdktf.stringToTerraform, false)(this._grantTypeWhitelist),
+      group_blacklist: cdktf.listMapper(cdktf.stringToTerraform, false)(this._groupBlacklist),
+      group_whitelist: cdktf.listMapper(cdktf.stringToTerraform, false)(this._groupWhitelist),
       id: cdktf.stringToTerraform(this._id),
       inline_hook_id: cdktf.stringToTerraform(this._inlineHookId),
       name: cdktf.stringToTerraform(this._name),
@@ -424,11 +427,11 @@ export class AuthServerPolicyRule extends cdktf.TerraformResource {
       priority: cdktf.numberToTerraform(this._priority),
       refresh_token_lifetime_minutes: cdktf.numberToTerraform(this._refreshTokenLifetimeMinutes),
       refresh_token_window_minutes: cdktf.numberToTerraform(this._refreshTokenWindowMinutes),
-      scope_whitelist: cdktf.listMapper(cdktf.stringToTerraform)(this._scopeWhitelist),
+      scope_whitelist: cdktf.listMapper(cdktf.stringToTerraform, false)(this._scopeWhitelist),
       status: cdktf.stringToTerraform(this._status),
       type: cdktf.stringToTerraform(this._type),
-      user_blacklist: cdktf.listMapper(cdktf.stringToTerraform)(this._userBlacklist),
-      user_whitelist: cdktf.listMapper(cdktf.stringToTerraform)(this._userWhitelist),
+      user_blacklist: cdktf.listMapper(cdktf.stringToTerraform, false)(this._userBlacklist),
+      user_whitelist: cdktf.listMapper(cdktf.stringToTerraform, false)(this._userWhitelist),
     };
   }
 }

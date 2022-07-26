@@ -78,7 +78,10 @@ export class Group extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._customProfileAttributes = config.customProfileAttributes;
     this._description = config.description;
@@ -196,7 +199,7 @@ export class Group extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       skip_users: cdktf.booleanToTerraform(this._skipUsers),
-      users: cdktf.listMapper(cdktf.stringToTerraform)(this._users),
+      users: cdktf.listMapper(cdktf.stringToTerraform, false)(this._users),
     };
   }
 }

@@ -310,7 +310,7 @@ export function signonPolicyRuleFactorSequenceToTerraform(struct?: SignonPolicyR
   return {
     primary_criteria_factor_type: cdktf.stringToTerraform(struct!.primaryCriteriaFactorType),
     primary_criteria_provider: cdktf.stringToTerraform(struct!.primaryCriteriaProvider),
-    secondary_criteria: cdktf.listMapper(signonPolicyRuleFactorSequenceSecondaryCriteriaToTerraform)(struct!.secondaryCriteria),
+    secondary_criteria: cdktf.listMapper(signonPolicyRuleFactorSequenceSecondaryCriteriaToTerraform, true)(struct!.secondaryCriteria),
   }
 }
 
@@ -465,7 +465,10 @@ export class SignonPolicyRule extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._access = config.access;
     this._authtype = config.authtype;
@@ -903,18 +906,18 @@ export class SignonPolicyRule extends cdktf.TerraformResource {
     return {
       access: cdktf.stringToTerraform(this._access),
       authtype: cdktf.stringToTerraform(this._authtype),
-      behaviors: cdktf.listMapper(cdktf.stringToTerraform)(this._behaviors),
+      behaviors: cdktf.listMapper(cdktf.stringToTerraform, false)(this._behaviors),
       id: cdktf.stringToTerraform(this._id),
       identity_provider: cdktf.stringToTerraform(this._identityProvider),
-      identity_provider_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._identityProviderIds),
+      identity_provider_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._identityProviderIds),
       mfa_lifetime: cdktf.numberToTerraform(this._mfaLifetime),
       mfa_prompt: cdktf.stringToTerraform(this._mfaPrompt),
       mfa_remember_device: cdktf.booleanToTerraform(this._mfaRememberDevice),
       mfa_required: cdktf.booleanToTerraform(this._mfaRequired),
       name: cdktf.stringToTerraform(this._name),
       network_connection: cdktf.stringToTerraform(this._networkConnection),
-      network_excludes: cdktf.listMapper(cdktf.stringToTerraform)(this._networkExcludes),
-      network_includes: cdktf.listMapper(cdktf.stringToTerraform)(this._networkIncludes),
+      network_excludes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._networkExcludes),
+      network_includes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._networkIncludes),
       policy_id: cdktf.stringToTerraform(this._policyId),
       policyid: cdktf.stringToTerraform(this._policyid),
       primary_factor: cdktf.stringToTerraform(this._primaryFactor),
@@ -924,8 +927,8 @@ export class SignonPolicyRule extends cdktf.TerraformResource {
       session_lifetime: cdktf.numberToTerraform(this._sessionLifetime),
       session_persistent: cdktf.booleanToTerraform(this._sessionPersistent),
       status: cdktf.stringToTerraform(this._status),
-      users_excluded: cdktf.listMapper(cdktf.stringToTerraform)(this._usersExcluded),
-      factor_sequence: cdktf.listMapper(signonPolicyRuleFactorSequenceToTerraform)(this._factorSequence.internalValue),
+      users_excluded: cdktf.listMapper(cdktf.stringToTerraform, false)(this._usersExcluded),
+      factor_sequence: cdktf.listMapper(signonPolicyRuleFactorSequenceToTerraform, true)(this._factorSequence.internalValue),
     };
   }
 }

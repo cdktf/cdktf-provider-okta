@@ -206,7 +206,10 @@ export class TemplateEmail extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._defaultLanguage = config.defaultLanguage;
     this._id = config.id;
@@ -285,7 +288,7 @@ export class TemplateEmail extends cdktf.TerraformResource {
       default_language: cdktf.stringToTerraform(this._defaultLanguage),
       id: cdktf.stringToTerraform(this._id),
       type: cdktf.stringToTerraform(this._type),
-      translations: cdktf.listMapper(templateEmailTranslationsToTerraform)(this._translations.internalValue),
+      translations: cdktf.listMapper(templateEmailTranslationsToTerraform, true)(this._translations.internalValue),
     };
   }
 }

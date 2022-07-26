@@ -168,7 +168,10 @@ export class MfaPolicy extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._description = config.description;
     this._duo = config.duo;
@@ -661,7 +664,7 @@ export class MfaPolicy extends cdktf.TerraformResource {
       fido_u2f: cdktf.hashMapper(cdktf.stringToTerraform)(this._fidoU2F),
       fido_webauthn: cdktf.hashMapper(cdktf.stringToTerraform)(this._fidoWebauthn),
       google_otp: cdktf.hashMapper(cdktf.stringToTerraform)(this._googleOtp),
-      groups_included: cdktf.listMapper(cdktf.stringToTerraform)(this._groupsIncluded),
+      groups_included: cdktf.listMapper(cdktf.stringToTerraform, false)(this._groupsIncluded),
       hotp: cdktf.hashMapper(cdktf.stringToTerraform)(this._hotp),
       id: cdktf.stringToTerraform(this._id),
       is_oie: cdktf.booleanToTerraform(this._isOie),

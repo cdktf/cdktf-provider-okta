@@ -66,7 +66,10 @@ export class LinkValue extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._associatedUserIds = config.associatedUserIds;
     this._id = config.id;
@@ -142,7 +145,7 @@ export class LinkValue extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      associated_user_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._associatedUserIds),
+      associated_user_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._associatedUserIds),
       id: cdktf.stringToTerraform(this._id),
       primary_name: cdktf.stringToTerraform(this._primaryName),
       primary_user_id: cdktf.stringToTerraform(this._primaryUserId),
