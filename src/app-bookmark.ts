@@ -317,7 +317,10 @@ export class AppBookmark extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._accessibilityErrorRedirectUrl = config.accessibilityErrorRedirectUrl;
     this._accessibilityLoginRedirectUrl = config.accessibilityLoginRedirectUrl;
@@ -670,7 +673,7 @@ export class AppBookmark extends cdktf.TerraformResource {
       app_links_json: cdktf.stringToTerraform(this._appLinksJson),
       auto_submit_toolbar: cdktf.booleanToTerraform(this._autoSubmitToolbar),
       enduser_note: cdktf.stringToTerraform(this._enduserNote),
-      groups: cdktf.listMapper(cdktf.stringToTerraform)(this._groups),
+      groups: cdktf.listMapper(cdktf.stringToTerraform, false)(this._groups),
       hide_ios: cdktf.booleanToTerraform(this._hideIos),
       hide_web: cdktf.booleanToTerraform(this._hideWeb),
       id: cdktf.stringToTerraform(this._id),
@@ -681,7 +684,7 @@ export class AppBookmark extends cdktf.TerraformResource {
       skip_users: cdktf.booleanToTerraform(this._skipUsers),
       status: cdktf.stringToTerraform(this._status),
       url: cdktf.stringToTerraform(this._url),
-      users: cdktf.listMapper(appBookmarkUsersToTerraform)(this._users.internalValue),
+      users: cdktf.listMapper(appBookmarkUsersToTerraform, true)(this._users.internalValue),
     };
   }
 }

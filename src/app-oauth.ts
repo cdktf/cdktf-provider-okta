@@ -837,7 +837,10 @@ export class AppOauth extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._accessibilityErrorRedirectUrl = config.accessibilityErrorRedirectUrl;
     this._accessibilityLoginRedirectUrl = config.accessibilityLoginRedirectUrl;
@@ -1730,8 +1733,8 @@ export class AppOauth extends cdktf.TerraformResource {
       consent_method: cdktf.stringToTerraform(this._consentMethod),
       custom_client_id: cdktf.stringToTerraform(this._customClientId),
       enduser_note: cdktf.stringToTerraform(this._enduserNote),
-      grant_types: cdktf.listMapper(cdktf.stringToTerraform)(this._grantTypes),
-      groups: cdktf.listMapper(cdktf.stringToTerraform)(this._groups),
+      grant_types: cdktf.listMapper(cdktf.stringToTerraform, false)(this._grantTypes),
+      groups: cdktf.listMapper(cdktf.stringToTerraform, false)(this._groups),
       hide_ios: cdktf.booleanToTerraform(this._hideIos),
       hide_web: cdktf.booleanToTerraform(this._hideWeb),
       id: cdktf.stringToTerraform(this._id),
@@ -1739,18 +1742,18 @@ export class AppOauth extends cdktf.TerraformResource {
       issuer_mode: cdktf.stringToTerraform(this._issuerMode),
       label: cdktf.stringToTerraform(this._label),
       login_mode: cdktf.stringToTerraform(this._loginMode),
-      login_scopes: cdktf.listMapper(cdktf.stringToTerraform)(this._loginScopes),
+      login_scopes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._loginScopes),
       login_uri: cdktf.stringToTerraform(this._loginUri),
       logo: cdktf.stringToTerraform(this._logo),
       logo_uri: cdktf.stringToTerraform(this._logoUri),
       omit_secret: cdktf.booleanToTerraform(this._omitSecret),
       policy_uri: cdktf.stringToTerraform(this._policyUri),
-      post_logout_redirect_uris: cdktf.listMapper(cdktf.stringToTerraform)(this._postLogoutRedirectUris),
+      post_logout_redirect_uris: cdktf.listMapper(cdktf.stringToTerraform, false)(this._postLogoutRedirectUris),
       profile: cdktf.stringToTerraform(this._profile),
-      redirect_uris: cdktf.listMapper(cdktf.stringToTerraform)(this._redirectUris),
+      redirect_uris: cdktf.listMapper(cdktf.stringToTerraform, false)(this._redirectUris),
       refresh_token_leeway: cdktf.numberToTerraform(this._refreshTokenLeeway),
       refresh_token_rotation: cdktf.stringToTerraform(this._refreshTokenRotation),
-      response_types: cdktf.listMapper(cdktf.stringToTerraform)(this._responseTypes),
+      response_types: cdktf.listMapper(cdktf.stringToTerraform, false)(this._responseTypes),
       skip_groups: cdktf.booleanToTerraform(this._skipGroups),
       skip_users: cdktf.booleanToTerraform(this._skipUsers),
       status: cdktf.stringToTerraform(this._status),
@@ -1763,8 +1766,8 @@ export class AppOauth extends cdktf.TerraformResource {
       user_name_template_type: cdktf.stringToTerraform(this._userNameTemplateType),
       wildcard_redirect: cdktf.stringToTerraform(this._wildcardRedirect),
       groups_claim: appOauthGroupsClaimToTerraform(this._groupsClaim.internalValue),
-      jwks: cdktf.listMapper(appOauthJwksToTerraform)(this._jwks.internalValue),
-      users: cdktf.listMapper(appOauthUsersToTerraform)(this._users.internalValue),
+      jwks: cdktf.listMapper(appOauthJwksToTerraform, true)(this._jwks.internalValue),
+      users: cdktf.listMapper(appOauthUsersToTerraform, true)(this._users.internalValue),
     };
   }
 }

@@ -80,7 +80,10 @@ export class GroupRule extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._expressionType = config.expressionType;
     this._expressionValue = config.expressionValue;
@@ -223,12 +226,12 @@ export class GroupRule extends cdktf.TerraformResource {
     return {
       expression_type: cdktf.stringToTerraform(this._expressionType),
       expression_value: cdktf.stringToTerraform(this._expressionValue),
-      group_assignments: cdktf.listMapper(cdktf.stringToTerraform)(this._groupAssignments),
+      group_assignments: cdktf.listMapper(cdktf.stringToTerraform, false)(this._groupAssignments),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       remove_assigned_users: cdktf.booleanToTerraform(this._removeAssignedUsers),
       status: cdktf.stringToTerraform(this._status),
-      users_excluded: cdktf.listMapper(cdktf.stringToTerraform)(this._usersExcluded),
+      users_excluded: cdktf.listMapper(cdktf.stringToTerraform, false)(this._usersExcluded),
     };
   }
 }

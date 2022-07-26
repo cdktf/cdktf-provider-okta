@@ -72,7 +72,10 @@ export class AdminRoleTargets extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._apps = config.apps;
     this._groups = config.groups;
@@ -170,8 +173,8 @@ export class AdminRoleTargets extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      apps: cdktf.listMapper(cdktf.stringToTerraform)(this._apps),
-      groups: cdktf.listMapper(cdktf.stringToTerraform)(this._groups),
+      apps: cdktf.listMapper(cdktf.stringToTerraform, false)(this._apps),
+      groups: cdktf.listMapper(cdktf.stringToTerraform, false)(this._groups),
       id: cdktf.stringToTerraform(this._id),
       role_type: cdktf.stringToTerraform(this._roleType),
       user_id: cdktf.stringToTerraform(this._userId),

@@ -96,7 +96,10 @@ export class NetworkZone extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._asns = config.asns;
     this._dynamicLocations = config.dynamicLocations;
@@ -257,13 +260,13 @@ export class NetworkZone extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      asns: cdktf.listMapper(cdktf.stringToTerraform)(this._asns),
-      dynamic_locations: cdktf.listMapper(cdktf.stringToTerraform)(this._dynamicLocations),
+      asns: cdktf.listMapper(cdktf.stringToTerraform, false)(this._asns),
+      dynamic_locations: cdktf.listMapper(cdktf.stringToTerraform, false)(this._dynamicLocations),
       dynamic_proxy_type: cdktf.stringToTerraform(this._dynamicProxyType),
-      gateways: cdktf.listMapper(cdktf.stringToTerraform)(this._gateways),
+      gateways: cdktf.listMapper(cdktf.stringToTerraform, false)(this._gateways),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
-      proxies: cdktf.listMapper(cdktf.stringToTerraform)(this._proxies),
+      proxies: cdktf.listMapper(cdktf.stringToTerraform, false)(this._proxies),
       type: cdktf.stringToTerraform(this._type),
       usage: cdktf.stringToTerraform(this._usage),
     };

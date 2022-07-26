@@ -715,7 +715,10 @@ export class PolicyRuleIdpDiscovery extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._idpId = config.idpId;
@@ -1020,18 +1023,18 @@ export class PolicyRuleIdpDiscovery extends cdktf.TerraformResource {
       idp_type: cdktf.stringToTerraform(this._idpType),
       name: cdktf.stringToTerraform(this._name),
       network_connection: cdktf.stringToTerraform(this._networkConnection),
-      network_excludes: cdktf.listMapper(cdktf.stringToTerraform)(this._networkExcludes),
-      network_includes: cdktf.listMapper(cdktf.stringToTerraform)(this._networkIncludes),
+      network_excludes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._networkExcludes),
+      network_includes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._networkIncludes),
       policy_id: cdktf.stringToTerraform(this._policyId),
       policyid: cdktf.stringToTerraform(this._policyid),
       priority: cdktf.numberToTerraform(this._priority),
       status: cdktf.stringToTerraform(this._status),
       user_identifier_attribute: cdktf.stringToTerraform(this._userIdentifierAttribute),
       user_identifier_type: cdktf.stringToTerraform(this._userIdentifierType),
-      app_exclude: cdktf.listMapper(policyRuleIdpDiscoveryAppExcludeToTerraform)(this._appExclude.internalValue),
-      app_include: cdktf.listMapper(policyRuleIdpDiscoveryAppIncludeToTerraform)(this._appInclude.internalValue),
-      platform_include: cdktf.listMapper(policyRuleIdpDiscoveryPlatformIncludeToTerraform)(this._platformInclude.internalValue),
-      user_identifier_patterns: cdktf.listMapper(policyRuleIdpDiscoveryUserIdentifierPatternsToTerraform)(this._userIdentifierPatterns.internalValue),
+      app_exclude: cdktf.listMapper(policyRuleIdpDiscoveryAppExcludeToTerraform, true)(this._appExclude.internalValue),
+      app_include: cdktf.listMapper(policyRuleIdpDiscoveryAppIncludeToTerraform, true)(this._appInclude.internalValue),
+      platform_include: cdktf.listMapper(policyRuleIdpDiscoveryPlatformIncludeToTerraform, true)(this._platformInclude.internalValue),
+      user_identifier_patterns: cdktf.listMapper(policyRuleIdpDiscoveryUserIdentifierPatternsToTerraform, true)(this._userIdentifierPatterns.internalValue),
     };
   }
 }

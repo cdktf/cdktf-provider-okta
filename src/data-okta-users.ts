@@ -505,7 +505,10 @@ export class DataOktaUsers extends cdktf.TerraformDataSource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._compoundSearchOperator = config.compoundSearchOperator;
     this._delayReadSeconds = config.delayReadSeconds;
@@ -650,7 +653,7 @@ export class DataOktaUsers extends cdktf.TerraformDataSource {
       id: cdktf.stringToTerraform(this._id),
       include_groups: cdktf.booleanToTerraform(this._includeGroups),
       include_roles: cdktf.booleanToTerraform(this._includeRoles),
-      search: cdktf.listMapper(dataOktaUsersSearchToTerraform)(this._search.internalValue),
+      search: cdktf.listMapper(dataOktaUsersSearchToTerraform, true)(this._search.internalValue),
     };
   }
 }

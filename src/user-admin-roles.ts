@@ -66,7 +66,10 @@ export class UserAdminRoles extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._adminRoles = config.adminRoles;
     this._disableNotifications = config.disableNotifications;
@@ -142,7 +145,7 @@ export class UserAdminRoles extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      admin_roles: cdktf.listMapper(cdktf.stringToTerraform)(this._adminRoles),
+      admin_roles: cdktf.listMapper(cdktf.stringToTerraform, false)(this._adminRoles),
       disable_notifications: cdktf.booleanToTerraform(this._disableNotifications),
       id: cdktf.stringToTerraform(this._id),
       user_id: cdktf.stringToTerraform(this._userId),

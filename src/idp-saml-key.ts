@@ -54,7 +54,10 @@ export class IdpSamlKey extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._x5C = config.x5C;
@@ -130,7 +133,7 @@ export class IdpSamlKey extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       id: cdktf.stringToTerraform(this._id),
-      x5c: cdktf.listMapper(cdktf.stringToTerraform)(this._x5C),
+      x5c: cdktf.listMapper(cdktf.stringToTerraform, false)(this._x5C),
     };
   }
 }

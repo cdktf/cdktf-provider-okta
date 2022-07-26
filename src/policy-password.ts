@@ -228,7 +228,10 @@ export class PolicyPassword extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._authProvider = config.authProvider;
     this._callRecovery = config.callRecovery;
@@ -770,7 +773,7 @@ export class PolicyPassword extends cdktf.TerraformResource {
       call_recovery: cdktf.stringToTerraform(this._callRecovery),
       description: cdktf.stringToTerraform(this._description),
       email_recovery: cdktf.stringToTerraform(this._emailRecovery),
-      groups_included: cdktf.listMapper(cdktf.stringToTerraform)(this._groupsIncluded),
+      groups_included: cdktf.listMapper(cdktf.stringToTerraform, false)(this._groupsIncluded),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       password_auto_unlock_minutes: cdktf.numberToTerraform(this._passwordAutoUnlockMinutes),
@@ -780,7 +783,7 @@ export class PolicyPassword extends cdktf.TerraformResource {
       password_exclude_username: cdktf.booleanToTerraform(this._passwordExcludeUsername),
       password_expire_warn_days: cdktf.numberToTerraform(this._passwordExpireWarnDays),
       password_history_count: cdktf.numberToTerraform(this._passwordHistoryCount),
-      password_lockout_notification_channels: cdktf.listMapper(cdktf.stringToTerraform)(this._passwordLockoutNotificationChannels),
+      password_lockout_notification_channels: cdktf.listMapper(cdktf.stringToTerraform, false)(this._passwordLockoutNotificationChannels),
       password_max_age_days: cdktf.numberToTerraform(this._passwordMaxAgeDays),
       password_max_lockout_attempts: cdktf.numberToTerraform(this._passwordMaxLockoutAttempts),
       password_min_age_minutes: cdktf.numberToTerraform(this._passwordMinAgeMinutes),

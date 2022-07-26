@@ -525,7 +525,10 @@ export class GroupSchemaProperty extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._arrayEnum = config.arrayEnum;
     this._arrayType = config.arrayType;
@@ -870,10 +873,10 @@ export class GroupSchemaProperty extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      array_enum: cdktf.listMapper(cdktf.stringToTerraform)(this._arrayEnum),
+      array_enum: cdktf.listMapper(cdktf.stringToTerraform, false)(this._arrayEnum),
       array_type: cdktf.stringToTerraform(this._arrayType),
       description: cdktf.stringToTerraform(this._description),
-      enum: cdktf.listMapper(cdktf.stringToTerraform)(this._enum),
+      enum: cdktf.listMapper(cdktf.stringToTerraform, false)(this._enum),
       external_name: cdktf.stringToTerraform(this._externalName),
       external_namespace: cdktf.stringToTerraform(this._externalNamespace),
       id: cdktf.stringToTerraform(this._id),
@@ -887,9 +890,9 @@ export class GroupSchemaProperty extends cdktf.TerraformResource {
       title: cdktf.stringToTerraform(this._title),
       type: cdktf.stringToTerraform(this._type),
       unique: cdktf.stringToTerraform(this._unique),
-      array_one_of: cdktf.listMapper(groupSchemaPropertyArrayOneOfToTerraform)(this._arrayOneOf.internalValue),
-      master_override_priority: cdktf.listMapper(groupSchemaPropertyMasterOverridePriorityToTerraform)(this._masterOverridePriority.internalValue),
-      one_of: cdktf.listMapper(groupSchemaPropertyOneOfToTerraform)(this._oneOf.internalValue),
+      array_one_of: cdktf.listMapper(groupSchemaPropertyArrayOneOfToTerraform, true)(this._arrayOneOf.internalValue),
+      master_override_priority: cdktf.listMapper(groupSchemaPropertyMasterOverridePriorityToTerraform, true)(this._masterOverridePriority.internalValue),
+      one_of: cdktf.listMapper(groupSchemaPropertyOneOfToTerraform, true)(this._oneOf.internalValue),
     };
   }
 }

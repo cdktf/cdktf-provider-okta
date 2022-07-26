@@ -60,7 +60,10 @@ export class ThreatInsightSettings extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._action = config.action;
     this._id = config.id;
@@ -124,7 +127,7 @@ export class ThreatInsightSettings extends cdktf.TerraformResource {
     return {
       action: cdktf.stringToTerraform(this._action),
       id: cdktf.stringToTerraform(this._id),
-      network_excludes: cdktf.listMapper(cdktf.stringToTerraform)(this._networkExcludes),
+      network_excludes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._networkExcludes),
     };
   }
 }

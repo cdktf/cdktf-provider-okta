@@ -78,7 +78,10 @@ export class AuthServer extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._audiences = config.audiences;
     this._credentialsRotationMode = config.credentialsRotationMode;
@@ -225,7 +228,7 @@ export class AuthServer extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      audiences: cdktf.listMapper(cdktf.stringToTerraform)(this._audiences),
+      audiences: cdktf.listMapper(cdktf.stringToTerraform, false)(this._audiences),
       credentials_rotation_mode: cdktf.stringToTerraform(this._credentialsRotationMode),
       description: cdktf.stringToTerraform(this._description),
       id: cdktf.stringToTerraform(this._id),

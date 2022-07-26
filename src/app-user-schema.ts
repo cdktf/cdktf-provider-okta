@@ -414,7 +414,10 @@ export class AppUserSchema extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._appId = config.appId;
     this._arrayEnum = config.arrayEnum;
@@ -791,10 +794,10 @@ export class AppUserSchema extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       app_id: cdktf.stringToTerraform(this._appId),
-      array_enum: cdktf.listMapper(cdktf.stringToTerraform)(this._arrayEnum),
+      array_enum: cdktf.listMapper(cdktf.stringToTerraform, false)(this._arrayEnum),
       array_type: cdktf.stringToTerraform(this._arrayType),
       description: cdktf.stringToTerraform(this._description),
-      enum: cdktf.listMapper(cdktf.stringToTerraform)(this._enum),
+      enum: cdktf.listMapper(cdktf.stringToTerraform, false)(this._enum),
       external_name: cdktf.stringToTerraform(this._externalName),
       external_namespace: cdktf.stringToTerraform(this._externalNamespace),
       id: cdktf.stringToTerraform(this._id),
@@ -810,8 +813,8 @@ export class AppUserSchema extends cdktf.TerraformResource {
       union: cdktf.booleanToTerraform(this._union),
       unique: cdktf.stringToTerraform(this._unique),
       user_type: cdktf.stringToTerraform(this._userType),
-      array_one_of: cdktf.listMapper(appUserSchemaArrayOneOfToTerraform)(this._arrayOneOf.internalValue),
-      one_of: cdktf.listMapper(appUserSchemaOneOfToTerraform)(this._oneOf.internalValue),
+      array_one_of: cdktf.listMapper(appUserSchemaArrayOneOfToTerraform, true)(this._arrayOneOf.internalValue),
+      one_of: cdktf.listMapper(appUserSchemaOneOfToTerraform, true)(this._oneOf.internalValue),
     };
   }
 }

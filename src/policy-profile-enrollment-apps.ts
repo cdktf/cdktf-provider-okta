@@ -60,7 +60,10 @@ export class PolicyProfileEnrollmentApps extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._apps = config.apps;
     this._id = config.id;
@@ -127,7 +130,7 @@ export class PolicyProfileEnrollmentApps extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      apps: cdktf.listMapper(cdktf.stringToTerraform)(this._apps),
+      apps: cdktf.listMapper(cdktf.stringToTerraform, false)(this._apps),
       id: cdktf.stringToTerraform(this._id),
       policy_id: cdktf.stringToTerraform(this._policyId),
     };

@@ -82,7 +82,10 @@ export class AuthServerPolicy extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._authServerId = config.authServerId;
     this._clientWhitelist = config.clientWhitelist;
@@ -218,7 +221,7 @@ export class AuthServerPolicy extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       auth_server_id: cdktf.stringToTerraform(this._authServerId),
-      client_whitelist: cdktf.listMapper(cdktf.stringToTerraform)(this._clientWhitelist),
+      client_whitelist: cdktf.listMapper(cdktf.stringToTerraform, false)(this._clientWhitelist),
       description: cdktf.stringToTerraform(this._description),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),

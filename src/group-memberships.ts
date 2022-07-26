@@ -66,7 +66,10 @@ export class GroupMemberships extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._groupId = config.groupId;
     this._id = config.id;
@@ -145,7 +148,7 @@ export class GroupMemberships extends cdktf.TerraformResource {
       group_id: cdktf.stringToTerraform(this._groupId),
       id: cdktf.stringToTerraform(this._id),
       track_all_users: cdktf.booleanToTerraform(this._trackAllUsers),
-      users: cdktf.listMapper(cdktf.stringToTerraform)(this._users),
+      users: cdktf.listMapper(cdktf.stringToTerraform, false)(this._users),
     };
   }
 }

@@ -393,7 +393,10 @@ export class AppSharedCredentials extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._accessibilityErrorRedirectUrl = config.accessibilityErrorRedirectUrl;
     this._accessibilityLoginRedirectUrl = config.accessibilityLoginRedirectUrl;
@@ -955,7 +958,7 @@ export class AppSharedCredentials extends cdktf.TerraformResource {
       button_field: cdktf.stringToTerraform(this._buttonField),
       checkbox: cdktf.stringToTerraform(this._checkbox),
       enduser_note: cdktf.stringToTerraform(this._enduserNote),
-      groups: cdktf.listMapper(cdktf.stringToTerraform)(this._groups),
+      groups: cdktf.listMapper(cdktf.stringToTerraform, false)(this._groups),
       hide_ios: cdktf.booleanToTerraform(this._hideIos),
       hide_web: cdktf.booleanToTerraform(this._hideWeb),
       id: cdktf.stringToTerraform(this._id),
@@ -976,7 +979,7 @@ export class AppSharedCredentials extends cdktf.TerraformResource {
       user_name_template_suffix: cdktf.stringToTerraform(this._userNameTemplateSuffix),
       user_name_template_type: cdktf.stringToTerraform(this._userNameTemplateType),
       username_field: cdktf.stringToTerraform(this._usernameField),
-      users: cdktf.listMapper(appSharedCredentialsUsersToTerraform)(this._users.internalValue),
+      users: cdktf.listMapper(appSharedCredentialsUsersToTerraform, true)(this._users.internalValue),
     };
   }
 }

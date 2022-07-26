@@ -198,7 +198,10 @@ export class EventHook extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._auth = config.auth;
     this._channel = config.channel;
@@ -324,11 +327,11 @@ export class EventHook extends cdktf.TerraformResource {
     return {
       auth: cdktf.hashMapper(cdktf.stringToTerraform)(this._auth),
       channel: cdktf.hashMapper(cdktf.stringToTerraform)(this._channel),
-      events: cdktf.listMapper(cdktf.stringToTerraform)(this._events),
+      events: cdktf.listMapper(cdktf.stringToTerraform, false)(this._events),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       status: cdktf.stringToTerraform(this._status),
-      headers: cdktf.listMapper(eventHookHeadersToTerraform)(this._headers.internalValue),
+      headers: cdktf.listMapper(eventHookHeadersToTerraform, true)(this._headers.internalValue),
     };
   }
 }

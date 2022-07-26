@@ -66,7 +66,10 @@ export class AdminRoleCustomAssignments extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._customRoleId = config.customRoleId;
     this._id = config.id;
@@ -144,7 +147,7 @@ export class AdminRoleCustomAssignments extends cdktf.TerraformResource {
     return {
       custom_role_id: cdktf.stringToTerraform(this._customRoleId),
       id: cdktf.stringToTerraform(this._id),
-      members: cdktf.listMapper(cdktf.stringToTerraform)(this._members),
+      members: cdktf.listMapper(cdktf.stringToTerraform, false)(this._members),
       resource_set_id: cdktf.stringToTerraform(this._resourceSetId),
     };
   }

@@ -66,7 +66,10 @@ export class AppOauthApiScope extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._appId = config.appId;
     this._id = config.id;
@@ -142,7 +145,7 @@ export class AppOauthApiScope extends cdktf.TerraformResource {
       app_id: cdktf.stringToTerraform(this._appId),
       id: cdktf.stringToTerraform(this._id),
       issuer: cdktf.stringToTerraform(this._issuer),
-      scopes: cdktf.listMapper(cdktf.stringToTerraform)(this._scopes),
+      scopes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._scopes),
     };
   }
 }

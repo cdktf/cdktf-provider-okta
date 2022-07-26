@@ -92,7 +92,10 @@ export class AuthServerClaim extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._alwaysIncludeInToken = config.alwaysIncludeInToken;
     this._authServerId = config.authServerId;
@@ -270,7 +273,7 @@ export class AuthServerClaim extends cdktf.TerraformResource {
       group_filter_type: cdktf.stringToTerraform(this._groupFilterType),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
-      scopes: cdktf.listMapper(cdktf.stringToTerraform)(this._scopes),
+      scopes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._scopes),
       status: cdktf.stringToTerraform(this._status),
       value: cdktf.stringToTerraform(this._value),
       value_type: cdktf.stringToTerraform(this._valueType),

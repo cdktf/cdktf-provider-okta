@@ -60,7 +60,10 @@ export class CaptchaOrgWideSettings extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._captchaId = config.captchaId;
     this._enabledFor = config.enabledFor;
@@ -126,7 +129,7 @@ export class CaptchaOrgWideSettings extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       captcha_id: cdktf.stringToTerraform(this._captchaId),
-      enabled_for: cdktf.listMapper(cdktf.stringToTerraform)(this._enabledFor),
+      enabled_for: cdktf.listMapper(cdktf.stringToTerraform, false)(this._enabledFor),
       id: cdktf.stringToTerraform(this._id),
     };
   }

@@ -184,7 +184,10 @@ export class IdpSaml extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._accountLinkAction = config.accountLinkAction;
     this._accountLinkGroupInclude = config.accountLinkGroupInclude;
@@ -746,14 +749,14 @@ export class IdpSaml extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       account_link_action: cdktf.stringToTerraform(this._accountLinkAction),
-      account_link_group_include: cdktf.listMapper(cdktf.stringToTerraform)(this._accountLinkGroupInclude),
+      account_link_group_include: cdktf.listMapper(cdktf.stringToTerraform, false)(this._accountLinkGroupInclude),
       acs_binding: cdktf.stringToTerraform(this._acsBinding),
       acs_type: cdktf.stringToTerraform(this._acsType),
       deprovisioned_action: cdktf.stringToTerraform(this._deprovisionedAction),
       groups_action: cdktf.stringToTerraform(this._groupsAction),
-      groups_assignment: cdktf.listMapper(cdktf.stringToTerraform)(this._groupsAssignment),
+      groups_assignment: cdktf.listMapper(cdktf.stringToTerraform, false)(this._groupsAssignment),
       groups_attribute: cdktf.stringToTerraform(this._groupsAttribute),
-      groups_filter: cdktf.listMapper(cdktf.stringToTerraform)(this._groupsFilter),
+      groups_filter: cdktf.listMapper(cdktf.stringToTerraform, false)(this._groupsFilter),
       id: cdktf.stringToTerraform(this._id),
       issuer: cdktf.stringToTerraform(this._issuer),
       issuer_mode: cdktf.stringToTerraform(this._issuerMode),
@@ -772,7 +775,7 @@ export class IdpSaml extends cdktf.TerraformResource {
       sso_url: cdktf.stringToTerraform(this._ssoUrl),
       status: cdktf.stringToTerraform(this._status),
       subject_filter: cdktf.stringToTerraform(this._subjectFilter),
-      subject_format: cdktf.listMapper(cdktf.stringToTerraform)(this._subjectFormat),
+      subject_format: cdktf.listMapper(cdktf.stringToTerraform, false)(this._subjectFormat),
       subject_match_attribute: cdktf.stringToTerraform(this._subjectMatchAttribute),
       subject_match_type: cdktf.stringToTerraform(this._subjectMatchType),
       suspended_action: cdktf.stringToTerraform(this._suspendedAction),

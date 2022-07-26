@@ -241,7 +241,10 @@ export class PolicyRuleProfileEnrollment extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._access = config.access;
     this._emailVerification = config.emailVerification;
@@ -402,7 +405,7 @@ export class PolicyRuleProfileEnrollment extends cdktf.TerraformResource {
       policy_id: cdktf.stringToTerraform(this._policyId),
       target_group_id: cdktf.stringToTerraform(this._targetGroupId),
       unknown_user_action: cdktf.stringToTerraform(this._unknownUserAction),
-      profile_attributes: cdktf.listMapper(policyRuleProfileEnrollmentProfileAttributesToTerraform)(this._profileAttributes.internalValue),
+      profile_attributes: cdktf.listMapper(policyRuleProfileEnrollmentProfileAttributesToTerraform, true)(this._profileAttributes.internalValue),
     };
   }
 }

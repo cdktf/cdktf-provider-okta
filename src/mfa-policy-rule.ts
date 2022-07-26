@@ -422,7 +422,10 @@ export class MfaPolicyRule extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._enroll = config.enroll;
     this._id = config.id;
@@ -658,15 +661,15 @@ export class MfaPolicyRule extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       network_connection: cdktf.stringToTerraform(this._networkConnection),
-      network_excludes: cdktf.listMapper(cdktf.stringToTerraform)(this._networkExcludes),
-      network_includes: cdktf.listMapper(cdktf.stringToTerraform)(this._networkIncludes),
+      network_excludes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._networkExcludes),
+      network_includes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._networkIncludes),
       policy_id: cdktf.stringToTerraform(this._policyId),
       policyid: cdktf.stringToTerraform(this._policyid),
       priority: cdktf.numberToTerraform(this._priority),
       status: cdktf.stringToTerraform(this._status),
-      users_excluded: cdktf.listMapper(cdktf.stringToTerraform)(this._usersExcluded),
-      app_exclude: cdktf.listMapper(mfaPolicyRuleAppExcludeToTerraform)(this._appExclude.internalValue),
-      app_include: cdktf.listMapper(mfaPolicyRuleAppIncludeToTerraform)(this._appInclude.internalValue),
+      users_excluded: cdktf.listMapper(cdktf.stringToTerraform, false)(this._usersExcluded),
+      app_exclude: cdktf.listMapper(mfaPolicyRuleAppExcludeToTerraform, true)(this._appExclude.internalValue),
+      app_include: cdktf.listMapper(mfaPolicyRuleAppIncludeToTerraform, true)(this._appInclude.internalValue),
     };
   }
 }
