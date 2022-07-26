@@ -105,30 +105,6 @@ export interface SocialIdpConfig extends cdktf.TerraformMetaArguments {
   */
   readonly provisioningAction?: string;
   /**
-  * algorithm to use to sign requests
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#request_signature_algorithm SocialIdp#request_signature_algorithm}
-  */
-  readonly requestSignatureAlgorithm?: string;
-  /**
-  * algorithm to use to sign response
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#request_signature_scope SocialIdp#request_signature_scope}
-  */
-  readonly requestSignatureScope?: string;
-  /**
-  * algorithm to use to sign requests
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#response_signature_algorithm SocialIdp#response_signature_algorithm}
-  */
-  readonly responseSignatureAlgorithm?: string;
-  /**
-  * algorithm to use to sign response
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#response_signature_scope SocialIdp#response_signature_scope}
-  */
-  readonly responseSignatureScope?: string;
-  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/social_idp#scopes SocialIdp#scopes}
   */
   readonly scopes: string[];
@@ -184,8 +160,8 @@ export class SocialIdp extends cdktf.TerraformResource {
       terraformResourceType: 'okta_social_idp',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '3.20.8',
-        providerVersionConstraint: '~> 3.20.2'
+        providerVersion: '3.31.0',
+        providerVersionConstraint: '~> 3.20'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -213,10 +189,6 @@ export class SocialIdp extends cdktf.TerraformResource {
     this._profileMaster = config.profileMaster;
     this._protocolType = config.protocolType;
     this._provisioningAction = config.provisioningAction;
-    this._requestSignatureAlgorithm = config.requestSignatureAlgorithm;
-    this._requestSignatureScope = config.requestSignatureScope;
-    this._responseSignatureAlgorithm = config.responseSignatureAlgorithm;
-    this._responseSignatureScope = config.responseSignatureScope;
     this._scopes = config.scopes;
     this._status = config.status;
     this._subjectMatchAttribute = config.subjectMatchAttribute;
@@ -573,70 +545,6 @@ export class SocialIdp extends cdktf.TerraformResource {
     return this._provisioningAction;
   }
 
-  // request_signature_algorithm - computed: false, optional: true, required: false
-  private _requestSignatureAlgorithm?: string; 
-  public get requestSignatureAlgorithm() {
-    return this.getStringAttribute('request_signature_algorithm');
-  }
-  public set requestSignatureAlgorithm(value: string) {
-    this._requestSignatureAlgorithm = value;
-  }
-  public resetRequestSignatureAlgorithm() {
-    this._requestSignatureAlgorithm = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get requestSignatureAlgorithmInput() {
-    return this._requestSignatureAlgorithm;
-  }
-
-  // request_signature_scope - computed: false, optional: true, required: false
-  private _requestSignatureScope?: string; 
-  public get requestSignatureScope() {
-    return this.getStringAttribute('request_signature_scope');
-  }
-  public set requestSignatureScope(value: string) {
-    this._requestSignatureScope = value;
-  }
-  public resetRequestSignatureScope() {
-    this._requestSignatureScope = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get requestSignatureScopeInput() {
-    return this._requestSignatureScope;
-  }
-
-  // response_signature_algorithm - computed: false, optional: true, required: false
-  private _responseSignatureAlgorithm?: string; 
-  public get responseSignatureAlgorithm() {
-    return this.getStringAttribute('response_signature_algorithm');
-  }
-  public set responseSignatureAlgorithm(value: string) {
-    this._responseSignatureAlgorithm = value;
-  }
-  public resetResponseSignatureAlgorithm() {
-    this._responseSignatureAlgorithm = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get responseSignatureAlgorithmInput() {
-    return this._responseSignatureAlgorithm;
-  }
-
-  // response_signature_scope - computed: false, optional: true, required: false
-  private _responseSignatureScope?: string; 
-  public get responseSignatureScope() {
-    return this.getStringAttribute('response_signature_scope');
-  }
-  public set responseSignatureScope(value: string) {
-    this._responseSignatureScope = value;
-  }
-  public resetResponseSignatureScope() {
-    this._responseSignatureScope = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get responseSignatureScopeInput() {
-    return this._responseSignatureScope;
-  }
-
   // scopes - computed: false, optional: false, required: true
   private _scopes?: string[]; 
   public get scopes() {
@@ -780,10 +688,6 @@ export class SocialIdp extends cdktf.TerraformResource {
       profile_master: cdktf.booleanToTerraform(this._profileMaster),
       protocol_type: cdktf.stringToTerraform(this._protocolType),
       provisioning_action: cdktf.stringToTerraform(this._provisioningAction),
-      request_signature_algorithm: cdktf.stringToTerraform(this._requestSignatureAlgorithm),
-      request_signature_scope: cdktf.stringToTerraform(this._requestSignatureScope),
-      response_signature_algorithm: cdktf.stringToTerraform(this._responseSignatureAlgorithm),
-      response_signature_scope: cdktf.stringToTerraform(this._responseSignatureScope),
       scopes: cdktf.listMapper(cdktf.stringToTerraform)(this._scopes),
       status: cdktf.stringToTerraform(this._status),
       subject_match_attribute: cdktf.stringToTerraform(this._subjectMatchAttribute),

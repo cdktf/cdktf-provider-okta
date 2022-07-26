@@ -54,8 +54,8 @@ export class DataOktaAuthServerPolicy extends cdktf.TerraformDataSource {
       terraformResourceType: 'okta_auth_server_policy',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '3.20.8',
-        providerVersionConstraint: '~> 3.20.2'
+        providerVersion: '3.31.0',
+        providerVersionConstraint: '~> 3.20'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -121,6 +121,11 @@ export class DataOktaAuthServerPolicy extends cdktf.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
     return this._name;
+  }
+
+  // priority - computed: true, optional: false, required: false
+  public get priority() {
+    return this.getNumberAttribute('priority');
   }
 
   // =========

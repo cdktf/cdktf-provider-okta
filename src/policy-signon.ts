@@ -72,8 +72,8 @@ export class PolicySignon extends cdktf.TerraformResource {
       terraformResourceType: 'okta_policy_signon',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '3.20.8',
-        providerVersionConstraint: '~> 3.20.2'
+        providerVersion: '3.31.0',
+        providerVersionConstraint: '~> 3.20'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

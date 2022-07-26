@@ -459,8 +459,8 @@ export class SignonPolicyRule extends cdktf.TerraformResource {
       terraformResourceType: 'okta_signon_policy_rule',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '3.20.8',
-        providerVersionConstraint: '~> 3.20.2'
+        providerVersion: '3.31.0',
+        providerVersionConstraint: '~> 3.20'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

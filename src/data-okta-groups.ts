@@ -73,6 +73,11 @@ export class DataOktaGroupsGroupsOutputReference extends cdktf.ComplexObject {
     }
   }
 
+  // custom_profile_attributes - computed: true, optional: false, required: false
+  public get customProfileAttributes() {
+    return this.getStringAttribute('custom_profile_attributes');
+  }
+
   // description - computed: true, optional: false, required: false
   public get description() {
     return this.getStringAttribute('description');
@@ -139,8 +144,8 @@ export class DataOktaGroups extends cdktf.TerraformDataSource {
       terraformResourceType: 'okta_groups',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '3.20.8',
-        providerVersionConstraint: '~> 3.20.2'
+        providerVersion: '3.31.0',
+        providerVersionConstraint: '~> 3.20'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

@@ -63,6 +63,12 @@ export interface AppSignonPolicyRuleConfig extends cdktf.TerraformMetaArguments 
   */
   readonly id?: string;
   /**
+  * The inactivity duration after which the end user must re-authenticate. Use the ISO 8601 Period format for recurring time intervals.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_signon_policy_rule#inactivity_period AppSignonPolicyRule#inactivity_period}
+  */
+  readonly inactivityPeriod?: string;
+  /**
   * Policy Rule Name
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_signon_policy_rule#name AppSignonPolicyRule#name}
@@ -325,8 +331,8 @@ export class AppSignonPolicyRule extends cdktf.TerraformResource {
       terraformResourceType: 'okta_app_signon_policy_rule',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '3.20.8',
-        providerVersionConstraint: '~> 3.20.2'
+        providerVersion: '3.31.0',
+        providerVersionConstraint: '~> 3.20'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -342,6 +348,7 @@ export class AppSignonPolicyRule extends cdktf.TerraformResource {
     this._groupsExcluded = config.groupsExcluded;
     this._groupsIncluded = config.groupsIncluded;
     this._id = config.id;
+    this._inactivityPeriod = config.inactivityPeriod;
     this._name = config.name;
     this._networkConnection = config.networkConnection;
     this._networkExcludes = config.networkExcludes;
@@ -504,6 +511,22 @@ export class AppSignonPolicyRule extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get idInput() {
     return this._id;
+  }
+
+  // inactivity_period - computed: false, optional: true, required: false
+  private _inactivityPeriod?: string; 
+  public get inactivityPeriod() {
+    return this.getStringAttribute('inactivity_period');
+  }
+  public set inactivityPeriod(value: string) {
+    this._inactivityPeriod = value;
+  }
+  public resetInactivityPeriod() {
+    this._inactivityPeriod = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get inactivityPeriodInput() {
+    return this._inactivityPeriod;
   }
 
   // name - computed: false, optional: false, required: true
@@ -739,6 +762,7 @@ export class AppSignonPolicyRule extends cdktf.TerraformResource {
       groups_excluded: cdktf.listMapper(cdktf.stringToTerraform)(this._groupsExcluded),
       groups_included: cdktf.listMapper(cdktf.stringToTerraform)(this._groupsIncluded),
       id: cdktf.stringToTerraform(this._id),
+      inactivity_period: cdktf.stringToTerraform(this._inactivityPeriod),
       name: cdktf.stringToTerraform(this._name),
       network_connection: cdktf.stringToTerraform(this._networkConnection),
       network_excludes: cdktf.listMapper(cdktf.stringToTerraform)(this._networkExcludes),
