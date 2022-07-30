@@ -41,7 +41,7 @@ export class DataOktaBrand extends cdktf.TerraformDataSource {
       terraformResourceType: 'okta_brand',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '3.31.0',
+        providerVersion: '3.32.0',
         providerVersionConstraint: '~> 3.20'
       },
       provider: config.provider,

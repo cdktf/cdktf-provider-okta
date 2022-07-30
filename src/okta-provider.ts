@@ -8,6 +8,12 @@ import * as cdktf from 'cdktf';
 
 export interface OktaProviderConfig {
   /**
+  * Bearer token granting privileges to Okta API.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta#access_token OktaProvider#access_token}
+  */
+  readonly accessToken?: string;
+  /**
   * API Token granting privileges to Okta API.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta#api_token OktaProvider#api_token}
@@ -86,6 +92,12 @@ export interface OktaProviderConfig {
   */
   readonly privateKey?: string;
   /**
+  * API Token Id granting privileges to Okta API.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta#private_key_id OktaProvider#private_key_id}
+  */
+  readonly privateKeyId?: string;
+  /**
   * Timeout for single request (in seconds) which is made to Okta, the default is `0` (means no limit is set). The maximum value can be `300`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta#request_timeout OktaProvider#request_timeout}
@@ -131,11 +143,12 @@ export class OktaProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'okta',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '3.31.0',
+        providerVersion: '3.32.0',
         providerVersionConstraint: '~> 3.20'
       },
       terraformProviderSource: 'okta/okta'
     });
+    this._accessToken = config.accessToken;
     this._apiToken = config.apiToken;
     this._backoff = config.backoff;
     this._baseUrl = config.baseUrl;
@@ -149,6 +162,7 @@ export class OktaProvider extends cdktf.TerraformProvider {
     this._orgName = config.orgName;
     this._parallelism = config.parallelism;
     this._privateKey = config.privateKey;
+    this._privateKeyId = config.privateKeyId;
     this._requestTimeout = config.requestTimeout;
     this._scopes = config.scopes;
     this._alias = config.alias;
@@ -157,6 +171,22 @@ export class OktaProvider extends cdktf.TerraformProvider {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // access_token - computed: false, optional: true, required: false
+  private _accessToken?: string; 
+  public get accessToken() {
+    return this._accessToken;
+  }
+  public set accessToken(value: string | undefined) {
+    this._accessToken = value;
+  }
+  public resetAccessToken() {
+    this._accessToken = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get accessTokenInput() {
+    return this._accessToken;
+  }
 
   // api_token - computed: false, optional: true, required: false
   private _apiToken?: string; 
@@ -366,6 +396,22 @@ export class OktaProvider extends cdktf.TerraformProvider {
     return this._privateKey;
   }
 
+  // private_key_id - computed: false, optional: true, required: false
+  private _privateKeyId?: string; 
+  public get privateKeyId() {
+    return this._privateKeyId;
+  }
+  public set privateKeyId(value: string | undefined) {
+    this._privateKeyId = value;
+  }
+  public resetPrivateKeyId() {
+    this._privateKeyId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get privateKeyIdInput() {
+    return this._privateKeyId;
+  }
+
   // request_timeout - computed: false, optional: true, required: false
   private _requestTimeout?: number; 
   public get requestTimeout() {
@@ -420,6 +466,7 @@ export class OktaProvider extends cdktf.TerraformProvider {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      access_token: cdktf.stringToTerraform(this._accessToken),
       api_token: cdktf.stringToTerraform(this._apiToken),
       backoff: cdktf.booleanToTerraform(this._backoff),
       base_url: cdktf.stringToTerraform(this._baseUrl),
@@ -433,6 +480,7 @@ export class OktaProvider extends cdktf.TerraformProvider {
       org_name: cdktf.stringToTerraform(this._orgName),
       parallelism: cdktf.numberToTerraform(this._parallelism),
       private_key: cdktf.stringToTerraform(this._privateKey),
+      private_key_id: cdktf.stringToTerraform(this._privateKeyId),
       request_timeout: cdktf.numberToTerraform(this._requestTimeout),
       scopes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._scopes),
       alias: cdktf.stringToTerraform(this._alias),
