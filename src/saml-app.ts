@@ -315,6 +315,115 @@ export interface SamlAppConfig extends cdktf.TerraformMetaArguments {
   */
   readonly users?: SamlAppUsers[] | cdktf.IResolvable;
 }
+export interface SamlAppKeys {
+}
+
+export function samlAppKeysToTerraform(struct?: SamlAppKeys): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class SamlAppKeysOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): SamlAppKeys | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SamlAppKeys | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // created - computed: true, optional: false, required: false
+  public get created() {
+    return this.getStringAttribute('created');
+  }
+
+  // e - computed: true, optional: false, required: false
+  public get e() {
+    return this.getStringAttribute('e');
+  }
+
+  // expires_at - computed: true, optional: false, required: false
+  public get expiresAt() {
+    return this.getStringAttribute('expires_at');
+  }
+
+  // kid - computed: true, optional: false, required: false
+  public get kid() {
+    return this.getStringAttribute('kid');
+  }
+
+  // kty - computed: true, optional: false, required: false
+  public get kty() {
+    return this.getStringAttribute('kty');
+  }
+
+  // last_updated - computed: true, optional: false, required: false
+  public get lastUpdated() {
+    return this.getStringAttribute('last_updated');
+  }
+
+  // n - computed: true, optional: false, required: false
+  public get n() {
+    return this.getStringAttribute('n');
+  }
+
+  // use - computed: true, optional: false, required: false
+  public get use() {
+    return this.getStringAttribute('use');
+  }
+
+  // x5c - computed: true, optional: false, required: false
+  public get x5C() {
+    return this.getListAttribute('x5c');
+  }
+
+  // x5t_s256 - computed: true, optional: false, required: false
+  public get x5TS256() {
+    return this.getStringAttribute('x5t_s256');
+  }
+}
+
+export class SamlAppKeysList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): SamlAppKeysOutputReference {
+    return new SamlAppKeysOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface SamlAppAttributeStatements {
   /**
   * Type of group attribute filter
@@ -746,7 +855,7 @@ export class SamlApp extends cdktf.TerraformResource {
       terraformResourceType: 'okta_saml_app',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '3.31.0',
+        providerVersion: '3.32.0',
         providerVersionConstraint: '~> 3.20'
       },
       provider: config.provider,
@@ -1059,6 +1168,11 @@ export class SamlApp extends cdktf.TerraformResource {
     return this._digestAlgorithm;
   }
 
+  // embed_url - computed: true, optional: false, required: false
+  public get embedUrl() {
+    return this.getStringAttribute('embed_url');
+  }
+
   // enduser_note - computed: false, optional: true, required: false
   private _enduserNote?: string; 
   public get enduserNote() {
@@ -1274,6 +1388,12 @@ export class SamlApp extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get keyYearsValidInput() {
     return this._keyYearsValid;
+  }
+
+  // keys - computed: true, optional: false, required: false
+  private _keys = new SamlAppKeysList(this, "keys", false);
+  public get keys() {
+    return this._keys;
   }
 
   // label - computed: false, optional: false, required: true
