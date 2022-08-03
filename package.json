@@ -110,7 +110,7 @@
   "cdktf": {
     "provider": {
       "name": "registry.terraform.io/okta/okta",
-      "version": "3.32.0"
+      "version": "3.33.0"
     }
   },
   "resolutions": {
