@@ -52,7 +52,7 @@ export class AppOauthPostLogoutRedirectUri extends cdktf.TerraformResource {
       terraformResourceType: 'okta_app_oauth_post_logout_redirect_uri',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '3.32.0',
+        providerVersion: '3.33.0',
         providerVersionConstraint: '~> 3.20'
       },
       provider: config.provider,
