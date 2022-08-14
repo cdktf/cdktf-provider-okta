@@ -132,7 +132,7 @@ export class DataOktaTrustedOrigins extends cdktf.TerraformDataSource {
       terraformResourceType: 'okta_trusted_origins',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '3.33.0',
+        providerVersion: '3.34.0',
         providerVersionConstraint: '~> 3.20'
       },
       provider: config.provider,

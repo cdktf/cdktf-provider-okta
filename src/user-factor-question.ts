@@ -60,7 +60,7 @@ export class UserFactorQuestion extends cdktf.TerraformResource {
       terraformResourceType: 'okta_user_factor_question',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '3.33.0',
+        providerVersion: '3.34.0',
         providerVersionConstraint: '~> 3.20'
       },
       provider: config.provider,
