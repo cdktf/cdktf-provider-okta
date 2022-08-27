@@ -309,6 +309,12 @@ export interface AppSamlConfig extends cdktf.TerraformMetaArguments {
   */
   readonly attributeStatements?: AppSamlAttributeStatements[] | cdktf.IResolvable;
   /**
+  * timeouts block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml#timeouts AppSaml#timeouts}
+  */
+  readonly timeouts?: AppSamlTimeouts;
+  /**
   * users block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml#users AppSaml#users}
@@ -663,6 +669,135 @@ export class AppSamlAttributeStatementsList extends cdktf.ComplexList {
     return new AppSamlAttributeStatementsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface AppSamlTimeouts {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml#create AppSaml#create}
+  */
+  readonly create?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml#read AppSaml#read}
+  */
+  readonly read?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml#update AppSaml#update}
+  */
+  readonly update?: string;
+}
+
+export function appSamlTimeoutsToTerraform(struct?: AppSamlTimeoutsOutputReference | AppSamlTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    read: cdktf.stringToTerraform(struct!.read),
+    update: cdktf.stringToTerraform(struct!.update),
+  }
+}
+
+export class AppSamlTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): AppSamlTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._create !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.create = this._create;
+    }
+    if (this._read !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.read = this._read;
+    }
+    if (this._update !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.update = this._update;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AppSamlTimeouts | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._create = undefined;
+      this._read = undefined;
+      this._update = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._create = value.create;
+      this._read = value.read;
+      this._update = value.update;
+    }
+  }
+
+  // create - computed: false, optional: true, required: false
+  private _create?: string; 
+  public get create() {
+    return this.getStringAttribute('create');
+  }
+  public set create(value: string) {
+    this._create = value;
+  }
+  public resetCreate() {
+    this._create = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get createInput() {
+    return this._create;
+  }
+
+  // read - computed: false, optional: true, required: false
+  private _read?: string; 
+  public get read() {
+    return this.getStringAttribute('read');
+  }
+  public set read(value: string) {
+    this._read = value;
+  }
+  public resetRead() {
+    this._read = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get readInput() {
+    return this._read;
+  }
+
+  // update - computed: false, optional: true, required: false
+  private _update?: string; 
+  public get update() {
+    return this.getStringAttribute('update');
+  }
+  public set update(value: string) {
+    this._update = value;
+  }
+  public resetUpdate() {
+    this._update = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get updateInput() {
+    return this._update;
+  }
+}
 export interface AppSamlUsers {
   /**
   * User ID.
@@ -855,7 +990,7 @@ export class AppSaml extends cdktf.TerraformResource {
       terraformResourceType: 'okta_app_saml',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '3.34.0',
+        providerVersion: '3.35.0',
         providerVersionConstraint: '~> 3.20'
       },
       provider: config.provider,
@@ -916,6 +1051,7 @@ export class AppSaml extends cdktf.TerraformResource {
     this._userNameTemplateSuffix = config.userNameTemplateSuffix;
     this._userNameTemplateType = config.userNameTemplateType;
     this._attributeStatements.internalValue = config.attributeStatements;
+    this._timeouts.internalValue = config.timeouts;
     this._users.internalValue = config.users;
   }
 
@@ -1786,6 +1922,22 @@ export class AppSaml extends cdktf.TerraformResource {
     return this._attributeStatements.internalValue;
   }
 
+  // timeouts - computed: false, optional: true, required: false
+  private _timeouts = new AppSamlTimeoutsOutputReference(this, "timeouts");
+  public get timeouts() {
+    return this._timeouts;
+  }
+  public putTimeouts(value: AppSamlTimeouts) {
+    this._timeouts.internalValue = value;
+  }
+  public resetTimeouts() {
+    this._timeouts.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts.internalValue;
+  }
+
   // users - computed: false, optional: true, required: false
   private _users = new AppSamlUsersList(this, "users", true);
   public get users() {
@@ -1858,6 +2010,7 @@ export class AppSaml extends cdktf.TerraformResource {
       user_name_template_suffix: cdktf.stringToTerraform(this._userNameTemplateSuffix),
       user_name_template_type: cdktf.stringToTerraform(this._userNameTemplateType),
       attribute_statements: cdktf.listMapper(appSamlAttributeStatementsToTerraform, true)(this._attributeStatements.internalValue),
+      timeouts: appSamlTimeoutsToTerraform(this._timeouts.internalValue),
       users: cdktf.listMapper(appSamlUsersToTerraform, true)(this._users.internalValue),
     };
   }

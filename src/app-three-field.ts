@@ -195,11 +195,146 @@ export interface AppThreeFieldConfig extends cdktf.TerraformMetaArguments {
   */
   readonly usernameSelector: string;
   /**
+  * timeouts block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#timeouts AppThreeField#timeouts}
+  */
+  readonly timeouts?: AppThreeFieldTimeouts;
+  /**
   * users block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#users AppThreeField#users}
   */
   readonly users?: AppThreeFieldUsers[] | cdktf.IResolvable;
+}
+export interface AppThreeFieldTimeouts {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#create AppThreeField#create}
+  */
+  readonly create?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#read AppThreeField#read}
+  */
+  readonly read?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#update AppThreeField#update}
+  */
+  readonly update?: string;
+}
+
+export function appThreeFieldTimeoutsToTerraform(struct?: AppThreeFieldTimeoutsOutputReference | AppThreeFieldTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    read: cdktf.stringToTerraform(struct!.read),
+    update: cdktf.stringToTerraform(struct!.update),
+  }
+}
+
+export class AppThreeFieldTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): AppThreeFieldTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._create !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.create = this._create;
+    }
+    if (this._read !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.read = this._read;
+    }
+    if (this._update !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.update = this._update;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AppThreeFieldTimeouts | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._create = undefined;
+      this._read = undefined;
+      this._update = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._create = value.create;
+      this._read = value.read;
+      this._update = value.update;
+    }
+  }
+
+  // create - computed: false, optional: true, required: false
+  private _create?: string; 
+  public get create() {
+    return this.getStringAttribute('create');
+  }
+  public set create(value: string) {
+    this._create = value;
+  }
+  public resetCreate() {
+    this._create = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get createInput() {
+    return this._create;
+  }
+
+  // read - computed: false, optional: true, required: false
+  private _read?: string; 
+  public get read() {
+    return this.getStringAttribute('read');
+  }
+  public set read(value: string) {
+    this._read = value;
+  }
+  public resetRead() {
+    this._read = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get readInput() {
+    return this._read;
+  }
+
+  // update - computed: false, optional: true, required: false
+  private _update?: string; 
+  public get update() {
+    return this.getStringAttribute('update');
+  }
+  public set update(value: string) {
+    this._update = value;
+  }
+  public resetUpdate() {
+    this._update = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get updateInput() {
+    return this._update;
+  }
 }
 export interface AppThreeFieldUsers {
   /**
@@ -393,7 +528,7 @@ export class AppThreeField extends cdktf.TerraformResource {
       terraformResourceType: 'okta_app_three_field',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '3.34.0',
+        providerVersion: '3.35.0',
         providerVersionConstraint: '~> 3.20'
       },
       provider: config.provider,
@@ -435,6 +570,7 @@ export class AppThreeField extends cdktf.TerraformResource {
     this._userNameTemplateSuffix = config.userNameTemplateSuffix;
     this._userNameTemplateType = config.userNameTemplateType;
     this._usernameSelector = config.usernameSelector;
+    this._timeouts.internalValue = config.timeouts;
     this._users.internalValue = config.users;
   }
 
@@ -932,6 +1068,22 @@ export class AppThreeField extends cdktf.TerraformResource {
     return this._usernameSelector;
   }
 
+  // timeouts - computed: false, optional: true, required: false
+  private _timeouts = new AppThreeFieldTimeoutsOutputReference(this, "timeouts");
+  public get timeouts() {
+    return this._timeouts;
+  }
+  public putTimeouts(value: AppThreeFieldTimeouts) {
+    this._timeouts.internalValue = value;
+  }
+  public resetTimeouts() {
+    this._timeouts.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts.internalValue;
+  }
+
   // users - computed: false, optional: true, required: false
   private _users = new AppThreeFieldUsersList(this, "users", true);
   public get users() {
@@ -985,6 +1137,7 @@ export class AppThreeField extends cdktf.TerraformResource {
       user_name_template_suffix: cdktf.stringToTerraform(this._userNameTemplateSuffix),
       user_name_template_type: cdktf.stringToTerraform(this._userNameTemplateType),
       username_selector: cdktf.stringToTerraform(this._usernameSelector),
+      timeouts: appThreeFieldTimeoutsToTerraform(this._timeouts.internalValue),
       users: cdktf.listMapper(appThreeFieldUsersToTerraform, true)(this._users.internalValue),
     };
   }

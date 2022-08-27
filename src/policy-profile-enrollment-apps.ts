@@ -54,7 +54,7 @@ export class PolicyProfileEnrollmentApps extends cdktf.TerraformResource {
       terraformResourceType: 'okta_policy_profile_enrollment_apps',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '3.34.0',
+        providerVersion: '3.35.0',
         providerVersionConstraint: '~> 3.20'
       },
       provider: config.provider,

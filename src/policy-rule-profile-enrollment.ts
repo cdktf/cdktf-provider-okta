@@ -235,7 +235,7 @@ export class PolicyRuleProfileEnrollment extends cdktf.TerraformResource {
       terraformResourceType: 'okta_policy_rule_profile_enrollment',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '3.34.0',
+        providerVersion: '3.35.0',
         providerVersionConstraint: '~> 3.20'
       },
       provider: config.provider,
