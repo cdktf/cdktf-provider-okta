@@ -52,7 +52,7 @@ export class DataOktaAuthServerClaim extends cdktf.TerraformDataSource {
       terraformResourceType: 'okta_auth_server_claim',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '3.34.0',
+        providerVersion: '3.35.0',
         providerVersionConstraint: '~> 3.20'
       },
       provider: config.provider,

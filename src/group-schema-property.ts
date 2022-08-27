@@ -519,7 +519,7 @@ export class GroupSchemaProperty extends cdktf.TerraformResource {
       terraformResourceType: 'okta_group_schema_property',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '3.34.0',
+        providerVersion: '3.35.0',
         providerVersionConstraint: '~> 3.20'
       },
       provider: config.provider,
