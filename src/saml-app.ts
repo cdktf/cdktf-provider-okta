@@ -104,12 +104,6 @@ export interface SamlAppConfig extends cdktf.TerraformMetaArguments {
   */
   readonly enduserNote?: string;
   /**
-  * features to enable
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#features SamlApp#features}
-  */
-  readonly features?: string[];
-  /**
   * Groups associated with the application
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#groups SamlApp#groups}
@@ -990,7 +984,7 @@ export class SamlApp extends cdktf.TerraformResource {
       terraformResourceType: 'okta_saml_app',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '3.35.0',
+        providerVersion: '3.36.0',
         providerVersionConstraint: '~> 3.20'
       },
       provider: config.provider,
@@ -1017,7 +1011,6 @@ export class SamlApp extends cdktf.TerraformResource {
     this._destination = config.destination;
     this._digestAlgorithm = config.digestAlgorithm;
     this._enduserNote = config.enduserNote;
-    this._features = config.features;
     this._groups = config.groups;
     this._hideIos = config.hideIos;
     this._hideWeb = config.hideWeb;
@@ -1335,20 +1328,9 @@ export class SamlApp extends cdktf.TerraformResource {
     return this.getStringAttribute('entity_url');
   }
 
-  // features - computed: false, optional: true, required: false
-  private _features?: string[]; 
+  // features - computed: true, optional: false, required: false
   public get features() {
     return cdktf.Fn.tolist(this.getListAttribute('features'));
-  }
-  public set features(value: string[]) {
-    this._features = value;
-  }
-  public resetFeatures() {
-    this._features = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get featuresInput() {
-    return this._features;
   }
 
   // groups - computed: false, optional: true, required: false
@@ -1976,7 +1958,6 @@ export class SamlApp extends cdktf.TerraformResource {
       destination: cdktf.stringToTerraform(this._destination),
       digest_algorithm: cdktf.stringToTerraform(this._digestAlgorithm),
       enduser_note: cdktf.stringToTerraform(this._enduserNote),
-      features: cdktf.listMapper(cdktf.stringToTerraform, false)(this._features),
       groups: cdktf.listMapper(cdktf.stringToTerraform, false)(this._groups),
       hide_ios: cdktf.booleanToTerraform(this._hideIos),
       hide_web: cdktf.booleanToTerraform(this._hideWeb),

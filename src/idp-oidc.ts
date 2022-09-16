@@ -59,7 +59,7 @@ export interface IdpOidcConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
-  * Indicates whether Okta uses the original Okta org domain URL, or a custom domain URL
+  * Indicates whether Okta uses the original Okta org domain URL, custom domain URL, or dynamic. See Identity Provider attributes - issuerMode - https://developer.okta.com/docs/reference/api/idps/#identity-provider-attributes
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc#issuer_mode IdpOidc#issuer_mode}
   */
@@ -178,7 +178,7 @@ export class IdpOidc extends cdktf.TerraformResource {
       terraformResourceType: 'okta_idp_oidc',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '3.35.0',
+        providerVersion: '3.36.0',
         providerVersionConstraint: '~> 3.20'
       },
       provider: config.provider,

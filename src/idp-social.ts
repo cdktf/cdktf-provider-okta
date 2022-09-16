@@ -125,6 +125,8 @@ export interface IdpSocialConfig extends cdktf.TerraformMetaArguments {
   */
   readonly suspendedAction?: string;
   /**
+  * Identity Provider Types: https://developer.okta.com/docs/reference/api/idps/#identity-provider-type
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_social#type IdpSocial#type}
   */
   readonly type: string;
@@ -160,7 +162,7 @@ export class IdpSocial extends cdktf.TerraformResource {
       terraformResourceType: 'okta_idp_social',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '3.35.0',
+        providerVersion: '3.36.0',
         providerVersionConstraint: '~> 3.20'
       },
       provider: config.provider,

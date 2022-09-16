@@ -183,6 +183,12 @@ export interface OauthAppConfig extends cdktf.TerraformMetaArguments {
   */
   readonly omitSecret?: boolean | cdktf.IResolvable;
   /**
+  * Require Proof Key for Code Exchange (PKCE) for additional verification key rotation mode. `true` for `browser` and `native` application types.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app#pkce_required OauthApp#pkce_required}
+  */
+  readonly pkceRequired?: boolean | cdktf.IResolvable;
+  /**
   * URI to web page providing client policy document.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app#policy_uri OauthApp#policy_uri}
@@ -966,7 +972,7 @@ export class OauthApp extends cdktf.TerraformResource {
       terraformResourceType: 'okta_oauth_app',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '3.35.0',
+        providerVersion: '3.36.0',
         providerVersionConstraint: '~> 3.20'
       },
       provider: config.provider,
@@ -1006,6 +1012,7 @@ export class OauthApp extends cdktf.TerraformResource {
     this._logo = config.logo;
     this._logoUri = config.logoUri;
     this._omitSecret = config.omitSecret;
+    this._pkceRequired = config.pkceRequired;
     this._policyUri = config.policyUri;
     this._postLogoutRedirectUris = config.postLogoutRedirectUris;
     this._profile = config.profile;
@@ -1510,6 +1517,22 @@ export class OauthApp extends cdktf.TerraformResource {
     return this._omitSecret;
   }
 
+  // pkce_required - computed: false, optional: true, required: false
+  private _pkceRequired?: boolean | cdktf.IResolvable; 
+  public get pkceRequired() {
+    return this.getBooleanAttribute('pkce_required');
+  }
+  public set pkceRequired(value: boolean | cdktf.IResolvable) {
+    this._pkceRequired = value;
+  }
+  public resetPkceRequired() {
+    this._pkceRequired = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pkceRequiredInput() {
+    return this._pkceRequired;
+  }
+
   // policy_uri - computed: false, optional: true, required: false
   private _policyUri?: string; 
   public get policyUri() {
@@ -1899,6 +1922,7 @@ export class OauthApp extends cdktf.TerraformResource {
       logo: cdktf.stringToTerraform(this._logo),
       logo_uri: cdktf.stringToTerraform(this._logoUri),
       omit_secret: cdktf.booleanToTerraform(this._omitSecret),
+      pkce_required: cdktf.booleanToTerraform(this._pkceRequired),
       policy_uri: cdktf.stringToTerraform(this._policyUri),
       post_logout_redirect_uris: cdktf.listMapper(cdktf.stringToTerraform, false)(this._postLogoutRedirectUris),
       profile: cdktf.stringToTerraform(this._profile),

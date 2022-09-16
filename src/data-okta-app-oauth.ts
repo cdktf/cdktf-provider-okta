@@ -68,7 +68,7 @@ export class DataOktaAppOauth extends cdktf.TerraformDataSource {
       terraformResourceType: 'okta_app_oauth',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '3.35.0',
+        providerVersion: '3.36.0',
         providerVersionConstraint: '~> 3.20'
       },
       provider: config.provider,
@@ -115,6 +115,11 @@ export class DataOktaAppOauth extends cdktf.TerraformDataSource {
   // client_id - computed: true, optional: false, required: false
   public get clientId() {
     return this.getStringAttribute('client_id');
+  }
+
+  // client_secret - computed: true, optional: false, required: false
+  public get clientSecret() {
+    return this.getStringAttribute('client_secret');
   }
 
   // client_uri - computed: true, optional: false, required: false
