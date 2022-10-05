@@ -72,7 +72,7 @@ export class AuthServerDefault extends cdktf.TerraformResource {
       terraformResourceType: 'okta_auth_server_default',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '3.36.0',
+        providerVersion: '3.37.0',
         providerVersionConstraint: '~> 3.20'
       },
       provider: config.provider,
