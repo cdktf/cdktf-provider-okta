@@ -66,7 +66,7 @@ export class AdminRoleTargets extends cdktf.TerraformResource {
       terraformResourceType: 'okta_admin_role_targets',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '3.36.0',
+        providerVersion: '3.37.0',
         providerVersionConstraint: '~> 3.20'
       },
       provider: config.provider,

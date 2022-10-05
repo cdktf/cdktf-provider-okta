@@ -20,6 +20,12 @@ export interface EmailCustomizationConfig extends cdktf.TerraformMetaArguments {
   */
   readonly brandId: string;
   /**
+  * Force is_default on the create and delete by deleting all email customizations. Comma separated string with values of 'create' or 'destroy' or both `create,destroy'.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/email_customization#force_is_default EmailCustomization#force_is_default}
+  */
+  readonly forceIsDefault?: string;
+  /**
   * Whether the customization is the default
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/email_customization#is_default EmailCustomization#is_default}
@@ -71,7 +77,7 @@ export class EmailCustomization extends cdktf.TerraformResource {
       terraformResourceType: 'okta_email_customization',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '3.36.0',
+        providerVersion: '3.37.0',
         providerVersionConstraint: '~> 3.20'
       },
       provider: config.provider,
@@ -84,6 +90,7 @@ export class EmailCustomization extends cdktf.TerraformResource {
     });
     this._body = config.body;
     this._brandId = config.brandId;
+    this._forceIsDefault = config.forceIsDefault;
     this._isDefault = config.isDefault;
     this._language = config.language;
     this._subject = config.subject;
@@ -121,6 +128,22 @@ export class EmailCustomization extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get brandIdInput() {
     return this._brandId;
+  }
+
+  // force_is_default - computed: false, optional: true, required: false
+  private _forceIsDefault?: string; 
+  public get forceIsDefault() {
+    return this.getStringAttribute('force_is_default');
+  }
+  public set forceIsDefault(value: string) {
+    this._forceIsDefault = value;
+  }
+  public resetForceIsDefault() {
+    this._forceIsDefault = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get forceIsDefaultInput() {
+    return this._forceIsDefault;
   }
 
   // id - computed: true, optional: false, required: false
@@ -202,6 +225,7 @@ export class EmailCustomization extends cdktf.TerraformResource {
     return {
       body: cdktf.stringToTerraform(this._body),
       brand_id: cdktf.stringToTerraform(this._brandId),
+      force_is_default: cdktf.stringToTerraform(this._forceIsDefault),
       is_default: cdktf.booleanToTerraform(this._isDefault),
       language: cdktf.stringToTerraform(this._language),
       subject: cdktf.stringToTerraform(this._subject),

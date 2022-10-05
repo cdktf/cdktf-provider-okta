@@ -45,6 +45,12 @@ export interface PolicyRuleProfileEnrollmentConfig extends cdktf.TerraformMetaAr
   */
   readonly targetGroupId?: string;
   /**
+  * Value created by the backend. If present all policy updates must include this attribute/value.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_profile_enrollment#ui_schema_id PolicyRuleProfileEnrollment#ui_schema_id}
+  */
+  readonly uiSchemaId?: string;
+  /**
   * Which action should be taken if this User is new
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_rule_profile_enrollment#unknown_user_action PolicyRuleProfileEnrollment#unknown_user_action}
@@ -235,7 +241,7 @@ export class PolicyRuleProfileEnrollment extends cdktf.TerraformResource {
       terraformResourceType: 'okta_policy_rule_profile_enrollment',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '3.36.0',
+        providerVersion: '3.37.0',
         providerVersionConstraint: '~> 3.20'
       },
       provider: config.provider,
@@ -252,6 +258,7 @@ export class PolicyRuleProfileEnrollment extends cdktf.TerraformResource {
     this._inlineHookId = config.inlineHookId;
     this._policyId = config.policyId;
     this._targetGroupId = config.targetGroupId;
+    this._uiSchemaId = config.uiSchemaId;
     this._unknownUserAction = config.unknownUserAction;
     this._profileAttributes.internalValue = config.profileAttributes;
   }
@@ -363,6 +370,22 @@ export class PolicyRuleProfileEnrollment extends cdktf.TerraformResource {
     return this._targetGroupId;
   }
 
+  // ui_schema_id - computed: false, optional: true, required: false
+  private _uiSchemaId?: string; 
+  public get uiSchemaId() {
+    return this.getStringAttribute('ui_schema_id');
+  }
+  public set uiSchemaId(value: string) {
+    this._uiSchemaId = value;
+  }
+  public resetUiSchemaId() {
+    this._uiSchemaId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get uiSchemaIdInput() {
+    return this._uiSchemaId;
+  }
+
   // unknown_user_action - computed: false, optional: false, required: true
   private _unknownUserAction?: string; 
   public get unknownUserAction() {
@@ -404,6 +427,7 @@ export class PolicyRuleProfileEnrollment extends cdktf.TerraformResource {
       inline_hook_id: cdktf.stringToTerraform(this._inlineHookId),
       policy_id: cdktf.stringToTerraform(this._policyId),
       target_group_id: cdktf.stringToTerraform(this._targetGroupId),
+      ui_schema_id: cdktf.stringToTerraform(this._uiSchemaId),
       unknown_user_action: cdktf.stringToTerraform(this._unknownUserAction),
       profile_attributes: cdktf.listMapper(policyRuleProfileEnrollmentProfileAttributesToTerraform, true)(this._profileAttributes.internalValue),
     };
