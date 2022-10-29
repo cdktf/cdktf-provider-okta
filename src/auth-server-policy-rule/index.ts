@@ -118,7 +118,7 @@ export class AuthServerPolicyRule extends cdktf.TerraformResource {
       terraformResourceType: 'okta_auth_server_policy_rule',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '3.37.0',
+        providerVersion: '3.38.0',
         providerVersionConstraint: '~> 3.20'
       },
       provider: config.provider,

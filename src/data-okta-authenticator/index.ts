@@ -50,7 +50,7 @@ export class DataOktaAuthenticator extends cdktf.TerraformDataSource {
       terraformResourceType: 'okta_authenticator',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '3.37.0',
+        providerVersion: '3.38.0',
         providerVersionConstraint: '~> 3.20'
       },
       provider: config.provider,
