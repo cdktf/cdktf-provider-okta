@@ -183,7 +183,7 @@ export interface OauthAppConfig extends cdktf.TerraformMetaArguments {
   */
   readonly omitSecret?: boolean | cdktf.IResolvable;
   /**
-  * Require Proof Key for Code Exchange (PKCE) for additional verification key rotation mode. `true` for `browser` and `native` application types.
+  * Require Proof Key for Code Exchange (PKCE) for additional verification key rotation mode. See: https://developer.okta.com/docs/reference/api/apps/#oauth-credential-object
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app#pkce_required OauthApp#pkce_required}
   */
@@ -972,7 +972,7 @@ export class OauthApp extends cdktf.TerraformResource {
       terraformResourceType: 'okta_oauth_app',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '3.37.0',
+        providerVersion: '3.38.0',
         providerVersionConstraint: '~> 3.20'
       },
       provider: config.provider,

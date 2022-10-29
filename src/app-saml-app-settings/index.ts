@@ -54,7 +54,7 @@ export class AppSamlAppSettings extends cdktf.TerraformResource {
       terraformResourceType: 'okta_app_saml_app_settings',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '3.37.0',
+        providerVersion: '3.38.0',
         providerVersionConstraint: '~> 3.20'
       },
       provider: config.provider,

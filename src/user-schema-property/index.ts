@@ -531,7 +531,7 @@ export class UserSchemaProperty extends cdktf.TerraformResource {
       terraformResourceType: 'okta_user_schema_property',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '3.37.0',
+        providerVersion: '3.38.0',
         providerVersionConstraint: '~> 3.20'
       },
       provider: config.provider,
