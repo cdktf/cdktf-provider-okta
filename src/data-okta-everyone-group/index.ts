@@ -48,7 +48,7 @@ export class DataOktaEveryoneGroup extends cdktf.TerraformDataSource {
       terraformResourceType: 'okta_everyone_group',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '3.38.0',
+        providerVersion: '3.39.0',
         providerVersionConstraint: '~> 3.20'
       },
       provider: config.provider,
