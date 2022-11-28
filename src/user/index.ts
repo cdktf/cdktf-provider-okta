@@ -219,6 +219,12 @@ export interface UserConfig extends cdktf.TerraformMetaArguments {
   */
   readonly secondEmail?: string;
   /**
+  * Do not populate user roles information (prevents additional API call)
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#skip_roles User#skip_roles}
+  */
+  readonly skipRoles?: boolean | cdktf.IResolvable;
+  /**
   * User state or region
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#state User#state}
@@ -471,7 +477,7 @@ export class User extends cdktf.TerraformResource {
       terraformResourceType: 'okta_user',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '3.38.0',
+        providerVersion: '3.39.0',
         providerVersionConstraint: '~> 3.20'
       },
       provider: config.provider,
@@ -517,6 +523,7 @@ export class User extends cdktf.TerraformResource {
     this._recoveryAnswer = config.recoveryAnswer;
     this._recoveryQuestion = config.recoveryQuestion;
     this._secondEmail = config.secondEmail;
+    this._skipRoles = config.skipRoles;
     this._state = config.state;
     this._status = config.status;
     this._streetAddress = config.streetAddress;
@@ -1084,6 +1091,22 @@ export class User extends cdktf.TerraformResource {
     return this._secondEmail;
   }
 
+  // skip_roles - computed: false, optional: true, required: false
+  private _skipRoles?: boolean | cdktf.IResolvable; 
+  public get skipRoles() {
+    return this.getBooleanAttribute('skip_roles');
+  }
+  public set skipRoles(value: boolean | cdktf.IResolvable) {
+    this._skipRoles = value;
+  }
+  public resetSkipRoles() {
+    this._skipRoles = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get skipRolesInput() {
+    return this._skipRoles;
+  }
+
   // state - computed: false, optional: true, required: false
   private _state?: string; 
   public get state() {
@@ -1253,6 +1276,7 @@ export class User extends cdktf.TerraformResource {
       recovery_answer: cdktf.stringToTerraform(this._recoveryAnswer),
       recovery_question: cdktf.stringToTerraform(this._recoveryQuestion),
       second_email: cdktf.stringToTerraform(this._secondEmail),
+      skip_roles: cdktf.booleanToTerraform(this._skipRoles),
       state: cdktf.stringToTerraform(this._state),
       status: cdktf.stringToTerraform(this._status),
       street_address: cdktf.stringToTerraform(this._streetAddress),
