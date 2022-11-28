@@ -33,11 +33,35 @@ export interface AuthenticatorConfig extends cdktf.TerraformMetaArguments {
   */
   readonly providerAuthPort?: number;
   /**
+  * The Duo Security API hostname
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/authenticator#provider_host Authenticator#provider_host}
+  */
+  readonly providerHost?: string;
+  /**
   * Server host name or IP address
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/authenticator#provider_hostname Authenticator#provider_hostname}
   */
   readonly providerHostname?: string;
+  /**
+  * The Duo Security integration key
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/authenticator#provider_integration_key Authenticator#provider_integration_key}
+  */
+  readonly providerIntegrationKey?: string;
+  /**
+  * Provider in JSON format
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/authenticator#provider_json Authenticator#provider_json}
+  */
+  readonly providerJson?: string;
+  /**
+  * The Duo Security secret key
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/authenticator#provider_secret_key Authenticator#provider_secret_key}
+  */
+  readonly providerSecretKey?: string;
   /**
   * An authentication key that must be defined when the RADIUS server is configured, and must be the same on both the RADIUS client and server.
   * 
@@ -90,7 +114,7 @@ export class Authenticator extends cdktf.TerraformResource {
       terraformResourceType: 'okta_authenticator',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '3.38.0',
+        providerVersion: '3.39.0',
         providerVersionConstraint: '~> 3.20'
       },
       provider: config.provider,
@@ -105,7 +129,11 @@ export class Authenticator extends cdktf.TerraformResource {
     this._key = config.key;
     this._name = config.name;
     this._providerAuthPort = config.providerAuthPort;
+    this._providerHost = config.providerHost;
     this._providerHostname = config.providerHostname;
+    this._providerIntegrationKey = config.providerIntegrationKey;
+    this._providerJson = config.providerJson;
+    this._providerSecretKey = config.providerSecretKey;
     this._providerSharedSecret = config.providerSharedSecret;
     this._providerUserNameTemplate = config.providerUserNameTemplate;
     this._settings = config.settings;
@@ -174,6 +202,22 @@ export class Authenticator extends cdktf.TerraformResource {
     return this._providerAuthPort;
   }
 
+  // provider_host - computed: false, optional: true, required: false
+  private _providerHost?: string; 
+  public get providerHost() {
+    return this.getStringAttribute('provider_host');
+  }
+  public set providerHost(value: string) {
+    this._providerHost = value;
+  }
+  public resetProviderHost() {
+    this._providerHost = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get providerHostInput() {
+    return this._providerHost;
+  }
+
   // provider_hostname - computed: false, optional: true, required: false
   private _providerHostname?: string; 
   public get providerHostname() {
@@ -193,6 +237,54 @@ export class Authenticator extends cdktf.TerraformResource {
   // provider_instance_id - computed: true, optional: false, required: false
   public get providerInstanceId() {
     return this.getStringAttribute('provider_instance_id');
+  }
+
+  // provider_integration_key - computed: false, optional: true, required: false
+  private _providerIntegrationKey?: string; 
+  public get providerIntegrationKey() {
+    return this.getStringAttribute('provider_integration_key');
+  }
+  public set providerIntegrationKey(value: string) {
+    this._providerIntegrationKey = value;
+  }
+  public resetProviderIntegrationKey() {
+    this._providerIntegrationKey = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get providerIntegrationKeyInput() {
+    return this._providerIntegrationKey;
+  }
+
+  // provider_json - computed: false, optional: true, required: false
+  private _providerJson?: string; 
+  public get providerJson() {
+    return this.getStringAttribute('provider_json');
+  }
+  public set providerJson(value: string) {
+    this._providerJson = value;
+  }
+  public resetProviderJson() {
+    this._providerJson = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get providerJsonInput() {
+    return this._providerJson;
+  }
+
+  // provider_secret_key - computed: false, optional: true, required: false
+  private _providerSecretKey?: string; 
+  public get providerSecretKey() {
+    return this.getStringAttribute('provider_secret_key');
+  }
+  public set providerSecretKey(value: string) {
+    this._providerSecretKey = value;
+  }
+  public resetProviderSecretKey() {
+    this._providerSecretKey = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get providerSecretKeyInput() {
+    return this._providerSecretKey;
   }
 
   // provider_shared_secret - computed: false, optional: true, required: false
@@ -279,7 +371,11 @@ export class Authenticator extends cdktf.TerraformResource {
       key: cdktf.stringToTerraform(this._key),
       name: cdktf.stringToTerraform(this._name),
       provider_auth_port: cdktf.numberToTerraform(this._providerAuthPort),
+      provider_host: cdktf.stringToTerraform(this._providerHost),
       provider_hostname: cdktf.stringToTerraform(this._providerHostname),
+      provider_integration_key: cdktf.stringToTerraform(this._providerIntegrationKey),
+      provider_json: cdktf.stringToTerraform(this._providerJson),
+      provider_secret_key: cdktf.stringToTerraform(this._providerSecretKey),
       provider_shared_secret: cdktf.stringToTerraform(this._providerSharedSecret),
       provider_user_name_template: cdktf.stringToTerraform(this._providerUserNameTemplate),
       settings: cdktf.stringToTerraform(this._settings),

@@ -38,6 +38,12 @@ export interface BookmarkAppConfig extends cdktf.TerraformMetaArguments {
   */
   readonly appLinksJson?: string;
   /**
+  * Id of this apps authentication policy
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/bookmark_app#authentication_policy BookmarkApp#authentication_policy}
+  */
+  readonly authenticationPolicy?: string;
+  /**
   * Display auto submit toolbar
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/bookmark_app#auto_submit_toolbar BookmarkApp#auto_submit_toolbar}
@@ -446,7 +452,7 @@ export class BookmarkApp extends cdktf.TerraformResource {
       terraformResourceType: 'okta_bookmark_app',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '3.38.0',
+        providerVersion: '3.39.0',
         providerVersionConstraint: '~> 3.20'
       },
       provider: config.provider,
@@ -462,6 +468,7 @@ export class BookmarkApp extends cdktf.TerraformResource {
     this._accessibilitySelfService = config.accessibilitySelfService;
     this._adminNote = config.adminNote;
     this._appLinksJson = config.appLinksJson;
+    this._authenticationPolicy = config.authenticationPolicy;
     this._autoSubmitToolbar = config.autoSubmitToolbar;
     this._enduserNote = config.enduserNote;
     this._groups = config.groups;
@@ -561,6 +568,22 @@ export class BookmarkApp extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get appLinksJsonInput() {
     return this._appLinksJson;
+  }
+
+  // authentication_policy - computed: false, optional: true, required: false
+  private _authenticationPolicy?: string; 
+  public get authenticationPolicy() {
+    return this.getStringAttribute('authentication_policy');
+  }
+  public set authenticationPolicy(value: string) {
+    this._authenticationPolicy = value;
+  }
+  public resetAuthenticationPolicy() {
+    this._authenticationPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get authenticationPolicyInput() {
+    return this._authenticationPolicy;
   }
 
   // auto_submit_toolbar - computed: false, optional: true, required: false
@@ -823,6 +846,7 @@ export class BookmarkApp extends cdktf.TerraformResource {
       accessibility_self_service: cdktf.booleanToTerraform(this._accessibilitySelfService),
       admin_note: cdktf.stringToTerraform(this._adminNote),
       app_links_json: cdktf.stringToTerraform(this._appLinksJson),
+      authentication_policy: cdktf.stringToTerraform(this._authenticationPolicy),
       auto_submit_toolbar: cdktf.booleanToTerraform(this._autoSubmitToolbar),
       enduser_note: cdktf.stringToTerraform(this._enduserNote),
       groups: cdktf.listMapper(cdktf.stringToTerraform, false)(this._groups),
