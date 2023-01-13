@@ -522,7 +522,7 @@ export class AppSharedCredentials extends cdktf.TerraformResource {
       terraformResourceType: 'okta_app_shared_credentials',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '3.39.0',
+        providerVersion: '3.40.0',
         providerVersionConstraint: '~> 3.20'
       },
       provider: config.provider,

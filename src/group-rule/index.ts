@@ -74,7 +74,7 @@ export class GroupRule extends cdktf.TerraformResource {
       terraformResourceType: 'okta_group_rule',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '3.39.0',
+        providerVersion: '3.40.0',
         providerVersionConstraint: '~> 3.20'
       },
       provider: config.provider,
