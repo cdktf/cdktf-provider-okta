@@ -60,7 +60,7 @@ export class AdminRoleCustomAssignments extends cdktf.TerraformResource {
       terraformResourceType: 'okta_admin_role_custom_assignments',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '3.39.0',
+        providerVersion: '3.40.0',
         providerVersionConstraint: '~> 3.20'
       },
       provider: config.provider,

@@ -331,7 +331,7 @@ export class AppSignonPolicyRule extends cdktf.TerraformResource {
       terraformResourceType: 'okta_app_signon_policy_rule',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '3.39.0',
+        providerVersion: '3.40.0',
         providerVersionConstraint: '~> 3.20'
       },
       provider: config.provider,
