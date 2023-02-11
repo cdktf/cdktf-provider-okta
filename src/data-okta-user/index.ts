@@ -260,7 +260,7 @@ export class DataOktaUser extends cdktf.TerraformDataSource {
       terraformResourceType: 'okta_user',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '3.41.0',
+        providerVersion: '3.42.0',
         providerVersionConstraint: '~> 3.20'
       },
       provider: config.provider,
@@ -465,6 +465,11 @@ export class DataOktaUser extends cdktf.TerraformDataSource {
   // profile_url - computed: true, optional: false, required: false
   public get profileUrl() {
     return this.getStringAttribute('profile_url');
+  }
+
+  // roles - computed: true, optional: false, required: false
+  public get roles() {
+    return cdktf.Fn.tolist(this.getListAttribute('roles'));
   }
 
   // second_email - computed: true, optional: false, required: false

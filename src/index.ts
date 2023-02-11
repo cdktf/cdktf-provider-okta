@@ -131,6 +131,7 @@ export * as dataOktaBrand from './data-okta-brand';
 export * as dataOktaBrands from './data-okta-brands';
 export * as dataOktaDefaultPolicies from './data-okta-default-policies';
 export * as dataOktaDefaultPolicy from './data-okta-default-policy';
+export * as dataOktaDomain from './data-okta-domain';
 export * as dataOktaEmailCustomization from './data-okta-email-customization';
 export * as dataOktaEmailCustomizations from './data-okta-email-customizations';
 export * as dataOktaEmailTemplate from './data-okta-email-template';

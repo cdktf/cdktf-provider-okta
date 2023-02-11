@@ -21,7 +21,7 @@ export interface DataOktaPolicyConfig extends cdktf.TerraformMetaArguments {
   */
   readonly name: string;
   /**
-  * Policy type: OKTA_SIGN_ON, PASSWORD, MFA_ENROLL, or IDP_DISCOVERY
+  * Policy type, see https://developer.okta.com/docs/reference/api/policy/#policy-object
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/policy#type DataOktaPolicy#type}
   */
@@ -54,7 +54,7 @@ export class DataOktaPolicy extends cdktf.TerraformDataSource {
       terraformResourceType: 'okta_policy',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '3.41.0',
+        providerVersion: '3.42.0',
         providerVersionConstraint: '~> 3.20'
       },
       provider: config.provider,
