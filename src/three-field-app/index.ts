@@ -528,7 +528,7 @@ export class ThreeFieldApp extends cdktf.TerraformResource {
       terraformResourceType: 'okta_three_field_app',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '3.41.0',
+        providerVersion: '3.42.0',
         providerVersionConstraint: '~> 3.20'
       },
       provider: config.provider,
