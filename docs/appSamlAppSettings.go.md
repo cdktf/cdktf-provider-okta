@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/okta/r/app_saml_app_
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appSamlAppSettings.AppSamlAppSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/appsamlappsettings"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/appsamlappsettings"
 
 appsamlappsettings.NewAppSamlAppSettings(scope Construct, id *string, config AppSamlAppSettingsConfig) AppSamlAppSettings
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.appSamlAppSettings.AppSamlAppSettings.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/appsamlappsettings"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/appsamlappsettings"
 
 appsamlappsettings.AppSamlAppSettings_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.appSamlAppSettings.AppSamlAppSettings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/appsamlappsettings"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/appsamlappsettings"
 
 appsamlappsettings.AppSamlAppSettings_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ appsamlappsettings.AppSamlAppSettings_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.appSamlAppSettings.AppSamlAppSettings.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/appsamlappsettings"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/appsamlappsettings"
 
 appsamlappsettings.AppSamlAppSettings_IsTerraformResource(x interface{}) *bool
 ```
@@ -584,7 +584,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.appSamlAppSettings.AppSamlAppSettingsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/appsamlappsettings"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/appsamlappsettings"
 
 &appsamlappsettings.AppSamlAppSettingsConfig {
 	Connection: interface{},
