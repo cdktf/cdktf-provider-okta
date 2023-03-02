@@ -2112,9 +2112,9 @@ ini@^3.0.1:
   integrity sha512-it4HyVAUTKBc6m8e1iXWvXSTdndF7HbdN713+kvLrymxTaU4AUBWrJ4vEooP+V7fexnVD3LKcBshjGGPefSMUQ==
 
 ink-select-input@^4.2.1:
-  version "4.2.1"
-  resolved "https://registry.yarnpkg.com/ink-select-input/-/ink-select-input-4.2.1.tgz#121108ccbcb42aa619f9f0baedb796c24c971a2a"
-  integrity sha512-WvlrYdwmdnD6/nE/9mNhaaanTQOKmwy/hT/vuAqbDec3PUQBQ8Pkwszii/8eGvDTx5bGiUHu18P9D5IoB/ERaw==
+  version "4.2.2"
+  resolved "https://registry.yarnpkg.com/ink-select-input/-/ink-select-input-4.2.2.tgz#484672a648b6b214052de721f02a645500cb75d3"
+  integrity sha512-E5AS2Vnd4CSzEa7Rm+hG47wxRQo1ASfh4msKxO7FHmn/ym+GKSSsFIfR+FonqjKNDPXYJClw8lM47RdN3Pi+nw==
   dependencies:
     arr-rotate "^1.0.0"
     figures "^3.2.0"
@@ -2607,9 +2607,9 @@ lru-cache@^6.0.0:
     yallist "^4.0.0"
 
 lru-cache@^7.4.4, lru-cache@^7.5.1, lru-cache@^7.7.1:
-  version "7.18.0"
-  resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-7.18.0.tgz#c420f068ace992e8c52377418aec2cb08f86d362"
-  integrity sha512-zB4mTJNwserMxerHY0evAuBe/5wnyeznwZ6h19vTV3B9lbqm2c7pWlExjjXgBx8E2J64JF4siGBqKksl2cHTgg==
+  version "7.18.1"
+  resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-7.18.1.tgz#4716408dec51d5d0104732647f584d1f6738b109"
+  integrity sha512-8/HcIENyQnfUTCDizRu9rrDyG6XG/21M4X7/YEGZeD76ZJilFPAUVb/2zysFf7VVO1LEjCDFyHp8pMMvozIrvg==
 
 lru_map@^0.3.3:
   version "0.3.3"
@@ -2741,9 +2741,9 @@ minimatch@^6.1.0, minimatch@^6.1.6:
     brace-expansion "^2.0.1"
 
 minimatch@^7.0.1:
-  version "7.4.1"
-  resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-7.4.1.tgz#166705f9417985ba5149f2dbf2fa50c29832913b"
-  integrity sha512-Oz1iPEP+MGl7KS3SciLsLLcuZ7VsBfb7Qrz/jYt/s/sYAv272P26HSLz2f77Y6hzTKXiBi6g765fqpEDNc5fJw==
+  version "7.4.2"
+  resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-7.4.2.tgz#157e847d79ca671054253b840656720cb733f10f"
+  integrity sha512-xy4q7wou3vUoC9k1xGTXc+awNdGaGVHtFUaey8tiX4H1QRc04DZ/rmDFwNm2EBsuYEhAZ6SgMmYf3InGY6OauA==
   dependencies:
     brace-expansion "^2.0.1"
 
@@ -3648,9 +3648,9 @@ rimraf@^3.0.2:
     glob "^7.1.3"
 
 rimraf@^4.1.2:
-  version "4.1.2"
-  resolved "https://registry.yarnpkg.com/rimraf/-/rimraf-4.1.2.tgz#20dfbc98083bdfaa28b01183162885ef213dbf7c"
-  integrity sha512-BlIbgFryTbw3Dz6hyoWFhKk+unCcHMSkZGrTFVAx2WmttdBSonsdtRlwiuTbDqTKr+UlXIUqJVS4QT5tUzGENQ==
+  version "4.1.3"
+  resolved "https://registry.yarnpkg.com/rimraf/-/rimraf-4.1.3.tgz#e8ace19d5f009b4fa6108deeaffe39ef68bba194"
+  integrity sha512-iyzalDLo3l5FZxxaIGUY7xI4Bf90Xt7pCipc1Mr7RsdU7H3538z+M0tlsUDrz0aHeGS9uNqiKHUJyTewwRP91Q==
 
 run-parallel@^1.1.9:
   version "1.2.0"
