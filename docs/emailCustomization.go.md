@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/okta/r/email_customi
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.emailCustomization.EmailCustomization.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/emailcustomization"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/emailcustomization"
 
 emailcustomization.NewEmailCustomization(scope Construct, id *string, config EmailCustomizationConfig) EmailCustomization
 ```
@@ -301,7 +301,7 @@ func ResetSubject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.emailCustomization.EmailCustomization.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/emailcustomization"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/emailcustomization"
 
 emailcustomization.EmailCustomization_IsConstruct(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.emailCustomization.EmailCustomization.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/emailcustomization"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/emailcustomization"
 
 emailcustomization.EmailCustomization_IsTerraformElement(x interface{}) *bool
 ```
@@ -347,7 +347,7 @@ emailcustomization.EmailCustomization_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.emailCustomization.EmailCustomization.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/emailcustomization"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/emailcustomization"
 
 emailcustomization.EmailCustomization_IsTerraformResource(x interface{}) *bool
 ```
@@ -722,7 +722,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.emailCustomization.EmailCustomizationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/emailcustomization"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/emailcustomization"
 
 &emailcustomization.EmailCustomizationConfig {
 	Connection: interface{},
