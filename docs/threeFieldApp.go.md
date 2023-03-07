@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/okta/r/three_field_a
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.threeFieldApp.ThreeFieldApp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/threefieldapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/threefieldapp"
 
 threefieldapp.NewThreeFieldApp(scope Construct, id *string, config ThreeFieldAppConfig) ThreeFieldApp
 ```
@@ -474,7 +474,7 @@ func ResetUsers()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.threeFieldApp.ThreeFieldApp.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/threefieldapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/threefieldapp"
 
 threefieldapp.ThreeFieldApp_IsConstruct(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.threeFieldApp.ThreeFieldApp.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/threefieldapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/threefieldapp"
 
 threefieldapp.ThreeFieldApp_IsTerraformElement(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ threefieldapp.ThreeFieldApp_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.threeFieldApp.ThreeFieldApp.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/threefieldapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/threefieldapp"
 
 threefieldapp.ThreeFieldApp_IsTerraformResource(x interface{}) *bool
 ```
@@ -1478,7 +1478,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.threeFieldApp.ThreeFieldAppConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/threefieldapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/threefieldapp"
 
 &threefieldapp.ThreeFieldAppConfig {
 	Connection: interface{},
@@ -1514,7 +1514,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/threefieldapp"
 	SkipGroups: interface{},
 	SkipUsers: interface{},
 	Status: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-okta-go/okta/v5.threeFieldApp.ThreeFieldAppTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-okta-go/okta.threeFieldApp.ThreeFieldAppTimeouts,
 	UrlRegex: *string,
 	UserNameTemplate: *string,
 	UserNameTemplatePushStatus: *string,
@@ -2109,7 +2109,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.threeFieldApp.ThreeFieldAppTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/threefieldapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/threefieldapp"
 
 &threefieldapp.ThreeFieldAppTimeouts {
 	Create: *string,
@@ -2169,7 +2169,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.threeFieldApp.ThreeFieldAppUsers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/threefieldapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/threefieldapp"
 
 &threefieldapp.ThreeFieldAppUsers {
 	Id: *string,
@@ -2240,7 +2240,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.threeFieldApp.ThreeFieldAppTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/threefieldapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/threefieldapp"
 
 threefieldapp.NewThreeFieldAppTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ThreeFieldAppTimeoutsOutputReference
 ```
@@ -2576,7 +2576,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.threeFieldApp.ThreeFieldAppUsersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/threefieldapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/threefieldapp"
 
 threefieldapp.NewThreeFieldAppUsersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ThreeFieldAppUsersList
 ```
@@ -2719,7 +2719,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.threeFieldApp.ThreeFieldAppUsersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/threefieldapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/threefieldapp"
 
 threefieldapp.NewThreeFieldAppUsersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ThreeFieldAppUsersOutputReference
 ```

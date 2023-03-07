@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/okta/r/saml_app okta
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.samlApp.SamlApp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/samlapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/samlapp"
 
 samlapp.NewSamlApp(scope Construct, id *string, config SamlAppConfig) SamlApp
 ```
@@ -655,7 +655,7 @@ func ResetUsers()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.samlApp.SamlApp.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/samlapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/samlapp"
 
 samlapp.SamlApp_IsConstruct(x interface{}) *bool
 ```
@@ -687,7 +687,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.samlApp.SamlApp.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/samlapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/samlapp"
 
 samlapp.SamlApp_IsTerraformElement(x interface{}) *bool
 ```
@@ -701,7 +701,7 @@ samlapp.SamlApp_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.samlApp.SamlApp.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/samlapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/samlapp"
 
 samlapp.SamlApp_IsTerraformResource(x interface{}) *bool
 ```
@@ -2176,7 +2176,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.samlApp.SamlAppAttributeStatements.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/samlapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/samlapp"
 
 &samlapp.SamlAppAttributeStatements {
 	Name: *string,
@@ -2288,7 +2288,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.samlApp.SamlAppConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/samlapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/samlapp"
 
 &samlapp.SamlAppConfig {
 	Connection: interface{},
@@ -2343,7 +2343,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/samlapp"
 	Status: *string,
 	SubjectNameIdFormat: *string,
 	SubjectNameIdTemplate: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-okta-go/okta/v5.samlApp.SamlAppTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-okta-go/okta.samlApp.SamlAppTimeouts,
 	UserNameTemplate: *string,
 	UserNameTemplatePushStatus: *string,
 	UserNameTemplateSuffix: *string,
@@ -3207,7 +3207,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.samlApp.SamlAppKeys.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/samlapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/samlapp"
 
 &samlapp.SamlAppKeys {
 
@@ -3220,7 +3220,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/samlapp"
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.samlApp.SamlAppTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/samlapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/samlapp"
 
 &samlapp.SamlAppTimeouts {
 	Create: *string,
@@ -3280,7 +3280,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.samlApp.SamlAppUsers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/samlapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/samlapp"
 
 &samlapp.SamlAppUsers {
 	Id: *string,
@@ -3351,7 +3351,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.samlApp.SamlAppAttributeStatementsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/samlapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/samlapp"
 
 samlapp.NewSamlAppAttributeStatementsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SamlAppAttributeStatementsList
 ```
@@ -3494,7 +3494,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.samlApp.SamlAppAttributeStatementsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/samlapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/samlapp"
 
 samlapp.NewSamlAppAttributeStatementsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SamlAppAttributeStatementsOutputReference
 ```
@@ -3928,7 +3928,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.samlApp.SamlAppKeysList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/samlapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/samlapp"
 
 samlapp.NewSamlAppKeysList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SamlAppKeysList
 ```
@@ -4060,7 +4060,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.samlApp.SamlAppKeysOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/samlapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/samlapp"
 
 samlapp.NewSamlAppKeysOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SamlAppKeysOutputReference
 ```
@@ -4437,7 +4437,7 @@ func InternalValue() SamlAppKeys
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.samlApp.SamlAppTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/samlapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/samlapp"
 
 samlapp.NewSamlAppTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SamlAppTimeoutsOutputReference
 ```
@@ -4773,7 +4773,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.samlApp.SamlAppUsersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/samlapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/samlapp"
 
 samlapp.NewSamlAppUsersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SamlAppUsersList
 ```
@@ -4916,7 +4916,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.samlApp.SamlAppUsersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/samlapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/samlapp"
 
 samlapp.NewSamlAppUsersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SamlAppUsersOutputReference
 ```
