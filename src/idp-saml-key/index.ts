@@ -48,7 +48,7 @@ export class IdpSamlKey extends cdktf.TerraformResource {
       terraformResourceType: 'okta_idp_saml_key',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '3.42.0',
+        providerVersion: '3.43.0',
         providerVersionConstraint: '~> 3.20'
       },
       provider: config.provider,

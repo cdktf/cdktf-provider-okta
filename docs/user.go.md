@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/okta/r/user okta_use
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.user.User.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/user"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/user"
 
 user.NewUser(scope Construct, id *string, config UserConfig) User
 ```
@@ -72,6 +72,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-okta.user.User.resetCostCenter">ResetCostCenter</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.resetCountryCode">ResetCountryCode</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.resetCustomProfileAttributes">ResetCustomProfileAttributes</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.user.User.resetCustomProfileAttributesToIgnore">ResetCustomProfileAttributesToIgnore</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.resetDepartment">ResetDepartment</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.resetDisplayName">ResetDisplayName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.resetDivision">ResetDivision</a></code> | *No description.* |
@@ -336,6 +337,12 @@ func ResetCountryCode()
 func ResetCustomProfileAttributes()
 ```
 
+##### `ResetCustomProfileAttributesToIgnore` <a name="ResetCustomProfileAttributesToIgnore" id="@cdktf/provider-okta.user.User.resetCustomProfileAttributesToIgnore"></a>
+
+```go
+func ResetCustomProfileAttributesToIgnore()
+```
+
 ##### `ResetDepartment` <a name="ResetDepartment" id="@cdktf/provider-okta.user.User.resetDepartment"></a>
 
 ```go
@@ -559,7 +566,7 @@ func ResetZipCode()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.user.User.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/user"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/user"
 
 user.User_IsConstruct(x interface{}) *bool
 ```
@@ -591,7 +598,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.user.User.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/user"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/user"
 
 user.User_IsTerraformElement(x interface{}) *bool
 ```
@@ -605,7 +612,7 @@ user.User_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.user.User.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/user"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/user"
 
 user.User_IsTerraformResource(x interface{}) *bool
 ```
@@ -641,6 +648,7 @@ user.User_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-okta.user.User.property.costCenterInput">CostCenterInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.countryCodeInput">CountryCodeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.customProfileAttributesInput">CustomProfileAttributesInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.user.User.property.customProfileAttributesToIgnoreInput">CustomProfileAttributesToIgnoreInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.departmentInput">DepartmentInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.displayNameInput">DisplayNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.divisionInput">DivisionInput</a></code> | <code>*string</code> | *No description.* |
@@ -685,6 +693,7 @@ user.User_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-okta.user.User.property.costCenter">CostCenter</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.countryCode">CountryCode</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.customProfileAttributes">CustomProfileAttributes</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.user.User.property.customProfileAttributesToIgnore">CustomProfileAttributesToIgnore</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.department">Department</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.displayName">DisplayName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.division">Division</a></code> | <code>*string</code> | *No description.* |
@@ -935,6 +944,16 @@ func CustomProfileAttributesInput() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `CustomProfileAttributesToIgnoreInput`<sup>Optional</sup> <a name="CustomProfileAttributesToIgnoreInput" id="@cdktf/provider-okta.user.User.property.customProfileAttributesToIgnoreInput"></a>
+
+```go
+func CustomProfileAttributesToIgnoreInput() *[]*string
+```
+
+- *Type:* *[]*string
 
 ---
 
@@ -1378,6 +1397,16 @@ func CustomProfileAttributes() *string
 
 ---
 
+##### `CustomProfileAttributesToIgnore`<sup>Required</sup> <a name="CustomProfileAttributesToIgnore" id="@cdktf/provider-okta.user.User.property.customProfileAttributesToIgnore"></a>
+
+```go
+func CustomProfileAttributesToIgnore() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
 ##### `Department`<sup>Required</sup> <a name="Department" id="@cdktf/provider-okta.user.User.property.department"></a>
 
 ```go
@@ -1783,7 +1812,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.user.UserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/user"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/user"
 
 &user.UserConfig {
 	Connection: interface{},
@@ -1802,6 +1831,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/user"
 	CostCenter: *string,
 	CountryCode: *string,
 	CustomProfileAttributes: *string,
+	CustomProfileAttributesToIgnore: *[]*string,
 	Department: *string,
 	DisplayName: *string,
 	Division: *string,
@@ -1820,7 +1850,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/user"
 	OldPassword: *string,
 	Organization: *string,
 	Password: *string,
-	PasswordHash: github.com/cdktf/cdktf-provider-okta-go/okta/v5.user.UserPasswordHash,
+	PasswordHash: github.com/cdktf/cdktf-provider-okta-go/okta.user.UserPasswordHash,
 	PasswordInlineHook: *string,
 	PostalAddress: *string,
 	PreferredLanguage: *string,
@@ -1860,6 +1890,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/user"
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.costCenter">CostCenter</a></code> | <code>*string</code> | User cost center. |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.countryCode">CountryCode</a></code> | <code>*string</code> | User country code. |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.customProfileAttributes">CustomProfileAttributes</a></code> | <code>*string</code> | JSON formatted custom attributes for a user. It must be JSON due to various types Okta allows. |
+| <code><a href="#@cdktf/provider-okta.user.UserConfig.property.customProfileAttributesToIgnore">CustomProfileAttributesToIgnore</a></code> | <code>*[]*string</code> | List of custom_profile_attribute keys that should be excluded from being managed by Terraform. |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.department">Department</a></code> | <code>*string</code> | User department. |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | User display name, suitable to show end users. |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.division">Division</a></code> | <code>*string</code> | User division. |
@@ -2091,6 +2122,20 @@ CustomProfileAttributes *string
 JSON formatted custom attributes for a user. It must be JSON due to various types Okta allows.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#custom_profile_attributes User#custom_profile_attributes}
+
+---
+
+##### `CustomProfileAttributesToIgnore`<sup>Optional</sup> <a name="CustomProfileAttributesToIgnore" id="@cdktf/provider-okta.user.UserConfig.property.customProfileAttributesToIgnore"></a>
+
+```go
+CustomProfileAttributesToIgnore *[]*string
+```
+
+- *Type:* *[]*string
+
+List of custom_profile_attribute keys that should be excluded from being managed by Terraform.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#custom_profile_attributes_to_ignore User#custom_profile_attributes_to_ignore}
 
 ---
 
@@ -2594,7 +2639,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.user.UserPasswordHash.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/user"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/user"
 
 &user.UserPasswordHash {
 	Algorithm: *string,
@@ -2696,7 +2741,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.user.UserPasswordHashOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/user"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/user"
 
 user.NewUserPasswordHashOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) UserPasswordHashOutputReference
 ```

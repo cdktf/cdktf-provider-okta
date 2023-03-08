@@ -101,6 +101,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.resetRecipient">ResetRecipient</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.resetRequestCompressed">ResetRequestCompressed</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.resetResponseSigned">ResetResponseSigned</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.resetSamlSignedRequestEnabled">ResetSamlSignedRequestEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.resetSamlVersion">ResetSamlVersion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.resetSignatureAlgorithm">ResetSignatureAlgorithm</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.resetSingleLogoutCertificate">ResetSingleLogoutCertificate</a></code> | *No description.* |
@@ -534,6 +535,12 @@ private void ResetRequestCompressed()
 private void ResetResponseSigned()
 ```
 
+##### `ResetSamlSignedRequestEnabled` <a name="ResetSamlSignedRequestEnabled" id="@cdktf/provider-okta.appSaml.AppSaml.resetSamlSignedRequestEnabled"></a>
+
+```csharp
+private void ResetSamlSignedRequestEnabled()
+```
+
 ##### `ResetSamlVersion` <a name="ResetSamlVersion" id="@cdktf/provider-okta.appSaml.AppSaml.resetSamlVersion"></a>
 
 ```csharp
@@ -780,6 +787,7 @@ AppSaml.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.recipientInput">RecipientInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.requestCompressedInput">RequestCompressedInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.responseSignedInput">ResponseSignedInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.samlSignedRequestEnabledInput">SamlSignedRequestEnabledInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.samlVersionInput">SamlVersionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.signatureAlgorithmInput">SignatureAlgorithmInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.singleLogoutCertificateInput">SingleLogoutCertificateInput</a></code> | <code>string</code> | *No description.* |
@@ -830,6 +838,7 @@ AppSaml.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.recipient">Recipient</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.requestCompressed">RequestCompressed</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.responseSigned">ResponseSigned</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.samlSignedRequestEnabled">SamlSignedRequestEnabled</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.samlVersion">SamlVersion</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.signatureAlgorithm">SignatureAlgorithm</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.singleLogoutCertificate">SingleLogoutCertificate</a></code> | <code>string</code> | *No description.* |
@@ -1491,6 +1500,16 @@ public object ResponseSignedInput { get; }
 
 ---
 
+##### `SamlSignedRequestEnabledInput`<sup>Optional</sup> <a name="SamlSignedRequestEnabledInput" id="@cdktf/provider-okta.appSaml.AppSaml.property.samlSignedRequestEnabledInput"></a>
+
+```csharp
+public object SamlSignedRequestEnabledInput { get; }
+```
+
+- *Type:* object
+
+---
+
 ##### `SamlVersionInput`<sup>Optional</sup> <a name="SamlVersionInput" id="@cdktf/provider-okta.appSaml.AppSaml.property.samlVersionInput"></a>
 
 ```csharp
@@ -1991,6 +2010,16 @@ public object ResponseSigned { get; }
 
 ---
 
+##### `SamlSignedRequestEnabled`<sup>Required</sup> <a name="SamlSignedRequestEnabled" id="@cdktf/provider-okta.appSaml.AppSaml.property.samlSignedRequestEnabled"></a>
+
+```csharp
+public object SamlSignedRequestEnabled { get; }
+```
+
+- *Type:* object
+
+---
+
 ##### `SamlVersion`<sup>Required</sup> <a name="SamlVersion" id="@cdktf/provider-okta.appSaml.AppSaml.property.samlVersion"></a>
 
 ```csharp
@@ -2331,6 +2360,7 @@ new AppSamlConfig {
     string Recipient = null,
     object RequestCompressed = null,
     object ResponseSigned = null,
+    object SamlSignedRequestEnabled = null,
     string SamlVersion = null,
     string SignatureAlgorithm = null,
     string SingleLogoutCertificate = null,
@@ -2396,6 +2426,7 @@ new AppSamlConfig {
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.recipient">Recipient</a></code> | <code>string</code> | The location where the app may present the SAML assertion. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.requestCompressed">RequestCompressed</a></code> | <code>object</code> | Denotes whether the request is compressed or not. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.responseSigned">ResponseSigned</a></code> | <code>object</code> | Determines whether the SAML auth response message is digitally signed. |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.samlSignedRequestEnabled">SamlSignedRequestEnabled</a></code> | <code>object</code> | SAML Signed Request enabled. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.samlVersion">SamlVersion</a></code> | <code>string</code> | SAML version for the app's sign-on mode. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.signatureAlgorithm">SignatureAlgorithm</a></code> | <code>string</code> | Signature algorithm used ot digitally sign the assertion and response. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.singleLogoutCertificate">SingleLogoutCertificate</a></code> | <code>string</code> | x509 encoded certificate that the Service Provider uses to sign Single Logout requests. |
@@ -2947,6 +2978,20 @@ public object ResponseSigned { get; set; }
 Determines whether the SAML auth response message is digitally signed.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml#response_signed AppSaml#response_signed}
+
+---
+
+##### `SamlSignedRequestEnabled`<sup>Optional</sup> <a name="SamlSignedRequestEnabled" id="@cdktf/provider-okta.appSaml.AppSamlConfig.property.samlSignedRequestEnabled"></a>
+
+```csharp
+public object SamlSignedRequestEnabled { get; set; }
+```
+
+- *Type:* object
+
+SAML Signed Request enabled.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml#saml_signed_request_enabled AppSaml#saml_signed_request_enabled}
 
 ---
 

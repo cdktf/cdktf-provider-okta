@@ -634,9 +634,9 @@ new UserTypeConfig {
 | <code><a href="#@cdktf/provider-okta.userType.UserTypeConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.userType.UserTypeConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.userType.UserTypeConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.userType.UserTypeConfig.property.description">Description</a></code> | <code>string</code> | A human-readable description of the type. |
-| <code><a href="#@cdktf/provider-okta.userType.UserTypeConfig.property.displayName">DisplayName</a></code> | <code>string</code> | The display name for the type. |
-| <code><a href="#@cdktf/provider-okta.userType.UserTypeConfig.property.name">Name</a></code> | <code>string</code> | The display name for the type. |
+| <code><a href="#@cdktf/provider-okta.userType.UserTypeConfig.property.description">Description</a></code> | <code>string</code> | A human-readable description of the User type. |
+| <code><a href="#@cdktf/provider-okta.userType.UserTypeConfig.property.displayName">DisplayName</a></code> | <code>string</code> | The display name of the user type. |
+| <code><a href="#@cdktf/provider-okta.userType.UserTypeConfig.property.name">Name</a></code> | <code>string</code> | Name of the user type. |
 | <code><a href="#@cdktf/provider-okta.userType.UserTypeConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_type#id UserType#id}. |
 
 ---
@@ -719,7 +719,7 @@ public string Description { get; set; }
 
 - *Type:* string
 
-A human-readable description of the type.
+A human-readable description of the User type.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_type#description UserType#description}
 
@@ -733,7 +733,7 @@ public string DisplayName { get; set; }
 
 - *Type:* string
 
-The display name for the type.
+The display name of the user type.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_type#display_name UserType#display_name}
 
@@ -747,7 +747,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-The display name for the type.
+Name of the user type.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_type#name UserType#name}
 

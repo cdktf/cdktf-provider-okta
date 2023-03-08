@@ -72,6 +72,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-okta.user.User.resetCostCenter">ResetCostCenter</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.resetCountryCode">ResetCountryCode</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.resetCustomProfileAttributes">ResetCustomProfileAttributes</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.user.User.resetCustomProfileAttributesToIgnore">ResetCustomProfileAttributesToIgnore</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.resetDepartment">ResetDepartment</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.resetDisplayName">ResetDisplayName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.resetDivision">ResetDivision</a></code> | *No description.* |
@@ -334,6 +335,12 @@ private void ResetCountryCode()
 
 ```csharp
 private void ResetCustomProfileAttributes()
+```
+
+##### `ResetCustomProfileAttributesToIgnore` <a name="ResetCustomProfileAttributesToIgnore" id="@cdktf/provider-okta.user.User.resetCustomProfileAttributesToIgnore"></a>
+
+```csharp
+private void ResetCustomProfileAttributesToIgnore()
 ```
 
 ##### `ResetDepartment` <a name="ResetDepartment" id="@cdktf/provider-okta.user.User.resetDepartment"></a>
@@ -641,6 +648,7 @@ User.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-okta.user.User.property.costCenterInput">CostCenterInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.countryCodeInput">CountryCodeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.customProfileAttributesInput">CustomProfileAttributesInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.user.User.property.customProfileAttributesToIgnoreInput">CustomProfileAttributesToIgnoreInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.departmentInput">DepartmentInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.displayNameInput">DisplayNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.divisionInput">DivisionInput</a></code> | <code>string</code> | *No description.* |
@@ -685,6 +693,7 @@ User.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-okta.user.User.property.costCenter">CostCenter</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.countryCode">CountryCode</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.customProfileAttributes">CustomProfileAttributes</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.user.User.property.customProfileAttributesToIgnore">CustomProfileAttributesToIgnore</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.department">Department</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.displayName">DisplayName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.division">Division</a></code> | <code>string</code> | *No description.* |
@@ -935,6 +944,16 @@ public string CustomProfileAttributesInput { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `CustomProfileAttributesToIgnoreInput`<sup>Optional</sup> <a name="CustomProfileAttributesToIgnoreInput" id="@cdktf/provider-okta.user.User.property.customProfileAttributesToIgnoreInput"></a>
+
+```csharp
+public string[] CustomProfileAttributesToIgnoreInput { get; }
+```
+
+- *Type:* string[]
 
 ---
 
@@ -1378,6 +1397,16 @@ public string CustomProfileAttributes { get; }
 
 ---
 
+##### `CustomProfileAttributesToIgnore`<sup>Required</sup> <a name="CustomProfileAttributesToIgnore" id="@cdktf/provider-okta.user.User.property.customProfileAttributesToIgnore"></a>
+
+```csharp
+public string[] CustomProfileAttributesToIgnore { get; }
+```
+
+- *Type:* string[]
+
+---
+
 ##### `Department`<sup>Required</sup> <a name="Department" id="@cdktf/provider-okta.user.User.property.department"></a>
 
 ```csharp
@@ -1802,6 +1831,7 @@ new UserConfig {
     string CostCenter = null,
     string CountryCode = null,
     string CustomProfileAttributes = null,
+    string[] CustomProfileAttributesToIgnore = null,
     string Department = null,
     string DisplayName = null,
     string Division = null,
@@ -1860,6 +1890,7 @@ new UserConfig {
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.costCenter">CostCenter</a></code> | <code>string</code> | User cost center. |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.countryCode">CountryCode</a></code> | <code>string</code> | User country code. |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.customProfileAttributes">CustomProfileAttributes</a></code> | <code>string</code> | JSON formatted custom attributes for a user. It must be JSON due to various types Okta allows. |
+| <code><a href="#@cdktf/provider-okta.user.UserConfig.property.customProfileAttributesToIgnore">CustomProfileAttributesToIgnore</a></code> | <code>string[]</code> | List of custom_profile_attribute keys that should be excluded from being managed by Terraform. |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.department">Department</a></code> | <code>string</code> | User department. |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.displayName">DisplayName</a></code> | <code>string</code> | User display name, suitable to show end users. |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.division">Division</a></code> | <code>string</code> | User division. |
@@ -2091,6 +2122,20 @@ public string CustomProfileAttributes { get; set; }
 JSON formatted custom attributes for a user. It must be JSON due to various types Okta allows.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#custom_profile_attributes User#custom_profile_attributes}
+
+---
+
+##### `CustomProfileAttributesToIgnore`<sup>Optional</sup> <a name="CustomProfileAttributesToIgnore" id="@cdktf/provider-okta.user.UserConfig.property.customProfileAttributesToIgnore"></a>
+
+```csharp
+public string[] CustomProfileAttributesToIgnore { get; set; }
+```
+
+- *Type:* string[]
+
+List of custom_profile_attribute keys that should be excluded from being managed by Terraform.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#custom_profile_attributes_to_ignore User#custom_profile_attributes_to_ignore}
 
 ---
 

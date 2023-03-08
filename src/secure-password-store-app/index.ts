@@ -540,7 +540,7 @@ export class SecurePasswordStoreApp extends cdktf.TerraformResource {
       terraformResourceType: 'okta_secure_password_store_app',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '3.42.0',
+        providerVersion: '3.43.0',
         providerVersionConstraint: '~> 3.20'
       },
       provider: config.provider,

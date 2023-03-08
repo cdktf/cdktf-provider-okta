@@ -30,6 +30,7 @@ user.User(
   cost_center: str = None,
   country_code: str = None,
   custom_profile_attributes: str = None,
+  custom_profile_attributes_to_ignore: typing.List[str] = None,
   department: str = None,
   display_name: str = None,
   division: str = None,
@@ -88,6 +89,7 @@ user.User(
 | <code><a href="#@cdktf/provider-okta.user.User.Initializer.parameter.costCenter">cost_center</a></code> | <code>str</code> | User cost center. |
 | <code><a href="#@cdktf/provider-okta.user.User.Initializer.parameter.countryCode">country_code</a></code> | <code>str</code> | User country code. |
 | <code><a href="#@cdktf/provider-okta.user.User.Initializer.parameter.customProfileAttributes">custom_profile_attributes</a></code> | <code>str</code> | JSON formatted custom attributes for a user. It must be JSON due to various types Okta allows. |
+| <code><a href="#@cdktf/provider-okta.user.User.Initializer.parameter.customProfileAttributesToIgnore">custom_profile_attributes_to_ignore</a></code> | <code>typing.List[str]</code> | List of custom_profile_attribute keys that should be excluded from being managed by Terraform. |
 | <code><a href="#@cdktf/provider-okta.user.User.Initializer.parameter.department">department</a></code> | <code>str</code> | User department. |
 | <code><a href="#@cdktf/provider-okta.user.User.Initializer.parameter.displayName">display_name</a></code> | <code>str</code> | User display name, suitable to show end users. |
 | <code><a href="#@cdktf/provider-okta.user.User.Initializer.parameter.division">division</a></code> | <code>str</code> | User division. |
@@ -273,6 +275,16 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 JSON formatted custom attributes for a user. It must be JSON due to various types Okta allows.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#custom_profile_attributes User#custom_profile_attributes}
+
+---
+
+##### `custom_profile_attributes_to_ignore`<sup>Optional</sup> <a name="custom_profile_attributes_to_ignore" id="@cdktf/provider-okta.user.User.Initializer.parameter.customProfileAttributesToIgnore"></a>
+
+- *Type:* typing.List[str]
+
+List of custom_profile_attribute keys that should be excluded from being managed by Terraform.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#custom_profile_attributes_to_ignore User#custom_profile_attributes_to_ignore}
 
 ---
 
@@ -657,6 +669,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 | <code><a href="#@cdktf/provider-okta.user.User.resetCostCenter">reset_cost_center</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.resetCountryCode">reset_country_code</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.resetCustomProfileAttributes">reset_custom_profile_attributes</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.user.User.resetCustomProfileAttributesToIgnore">reset_custom_profile_attributes_to_ignore</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.resetDepartment">reset_department</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.resetDisplayName">reset_display_name</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.resetDivision">reset_division</a></code> | *No description.* |
@@ -998,6 +1011,12 @@ def reset_country_code() -> None
 def reset_custom_profile_attributes() -> None
 ```
 
+##### `reset_custom_profile_attributes_to_ignore` <a name="reset_custom_profile_attributes_to_ignore" id="@cdktf/provider-okta.user.User.resetCustomProfileAttributesToIgnore"></a>
+
+```python
+def reset_custom_profile_attributes_to_ignore() -> None
+```
+
 ##### `reset_department` <a name="reset_department" id="@cdktf/provider-okta.user.User.resetDepartment"></a>
 
 ```python
@@ -1309,6 +1328,7 @@ user.User.is_terraform_resource(
 | <code><a href="#@cdktf/provider-okta.user.User.property.costCenterInput">cost_center_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.countryCodeInput">country_code_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.customProfileAttributesInput">custom_profile_attributes_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.user.User.property.customProfileAttributesToIgnoreInput">custom_profile_attributes_to_ignore_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.departmentInput">department_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.displayNameInput">display_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.divisionInput">division_input</a></code> | <code>str</code> | *No description.* |
@@ -1353,6 +1373,7 @@ user.User.is_terraform_resource(
 | <code><a href="#@cdktf/provider-okta.user.User.property.costCenter">cost_center</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.countryCode">country_code</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.customProfileAttributes">custom_profile_attributes</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.user.User.property.customProfileAttributesToIgnore">custom_profile_attributes_to_ignore</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.department">department</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.displayName">display_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.division">division</a></code> | <code>str</code> | *No description.* |
@@ -1603,6 +1624,16 @@ custom_profile_attributes_input: str
 ```
 
 - *Type:* str
+
+---
+
+##### `custom_profile_attributes_to_ignore_input`<sup>Optional</sup> <a name="custom_profile_attributes_to_ignore_input" id="@cdktf/provider-okta.user.User.property.customProfileAttributesToIgnoreInput"></a>
+
+```python
+custom_profile_attributes_to_ignore_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
 
 ---
 
@@ -2046,6 +2077,16 @@ custom_profile_attributes: str
 
 ---
 
+##### `custom_profile_attributes_to_ignore`<sup>Required</sup> <a name="custom_profile_attributes_to_ignore" id="@cdktf/provider-okta.user.User.property.customProfileAttributesToIgnore"></a>
+
+```python
+custom_profile_attributes_to_ignore: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
 ##### `department`<sup>Required</sup> <a name="department" id="@cdktf/provider-okta.user.User.property.department"></a>
 
 ```python
@@ -2470,6 +2511,7 @@ user.UserConfig(
   cost_center: str = None,
   country_code: str = None,
   custom_profile_attributes: str = None,
+  custom_profile_attributes_to_ignore: typing.List[str] = None,
   department: str = None,
   display_name: str = None,
   division: str = None,
@@ -2528,6 +2570,7 @@ user.UserConfig(
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.costCenter">cost_center</a></code> | <code>str</code> | User cost center. |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.countryCode">country_code</a></code> | <code>str</code> | User country code. |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.customProfileAttributes">custom_profile_attributes</a></code> | <code>str</code> | JSON formatted custom attributes for a user. It must be JSON due to various types Okta allows. |
+| <code><a href="#@cdktf/provider-okta.user.UserConfig.property.customProfileAttributesToIgnore">custom_profile_attributes_to_ignore</a></code> | <code>typing.List[str]</code> | List of custom_profile_attribute keys that should be excluded from being managed by Terraform. |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.department">department</a></code> | <code>str</code> | User department. |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.displayName">display_name</a></code> | <code>str</code> | User display name, suitable to show end users. |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.division">division</a></code> | <code>str</code> | User division. |
@@ -2759,6 +2802,20 @@ custom_profile_attributes: str
 JSON formatted custom attributes for a user. It must be JSON due to various types Okta allows.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#custom_profile_attributes User#custom_profile_attributes}
+
+---
+
+##### `custom_profile_attributes_to_ignore`<sup>Optional</sup> <a name="custom_profile_attributes_to_ignore" id="@cdktf/provider-okta.user.UserConfig.property.customProfileAttributesToIgnore"></a>
+
+```python
+custom_profile_attributes_to_ignore: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+List of custom_profile_attribute keys that should be excluded from being managed by Terraform.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#custom_profile_attributes_to_ignore User#custom_profile_attributes_to_ignore}
 
 ---
 

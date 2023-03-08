@@ -577,6 +577,7 @@ dataOktaAppSaml.DataOktaAppSaml.is_terraform_data_source(
 | <code><a href="#@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSaml.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSaml.property.recipient">recipient</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSaml.property.responseSigned">response_signed</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSaml.property.samlSignedRequestEnabled">saml_signed_request_enabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSaml.property.signatureAlgorithm">signature_algorithm</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSaml.property.singleLogoutCertificate">single_logout_certificate</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSaml.property.singleLogoutIssuer">single_logout_issuer</a></code> | <code>str</code> | *No description.* |
@@ -974,6 +975,16 @@ recipient: str
 
 ```python
 response_signed: IResolvable
+```
+
+- *Type:* cdktf.IResolvable
+
+---
+
+##### `saml_signed_request_enabled`<sup>Required</sup> <a name="saml_signed_request_enabled" id="@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSaml.property.samlSignedRequestEnabled"></a>
+
+```python
+saml_signed_request_enabled: IResolvable
 ```
 
 - *Type:* cdktf.IResolvable

@@ -201,6 +201,12 @@ export interface SamlAppConfig extends cdktf.TerraformMetaArguments {
   */
   readonly responseSigned?: boolean | cdktf.IResolvable;
   /**
+  * SAML Signed Request enabled
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#saml_signed_request_enabled SamlApp#saml_signed_request_enabled}
+  */
+  readonly samlSignedRequestEnabled?: boolean | cdktf.IResolvable;
+  /**
   * SAML version for the app's sign-on mode
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#saml_version SamlApp#saml_version}
@@ -984,7 +990,7 @@ export class SamlApp extends cdktf.TerraformResource {
       terraformResourceType: 'okta_saml_app',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '3.42.0',
+        providerVersion: '3.43.0',
         providerVersionConstraint: '~> 3.20'
       },
       provider: config.provider,
@@ -1027,6 +1033,7 @@ export class SamlApp extends cdktf.TerraformResource {
     this._recipient = config.recipient;
     this._requestCompressed = config.requestCompressed;
     this._responseSigned = config.responseSigned;
+    this._samlSignedRequestEnabled = config.samlSignedRequestEnabled;
     this._samlVersion = config.samlVersion;
     this._signatureAlgorithm = config.signatureAlgorithm;
     this._singleLogoutCertificate = config.singleLogoutCertificate;
@@ -1627,6 +1634,22 @@ export class SamlApp extends cdktf.TerraformResource {
     return this._responseSigned;
   }
 
+  // saml_signed_request_enabled - computed: false, optional: true, required: false
+  private _samlSignedRequestEnabled?: boolean | cdktf.IResolvable; 
+  public get samlSignedRequestEnabled() {
+    return this.getBooleanAttribute('saml_signed_request_enabled');
+  }
+  public set samlSignedRequestEnabled(value: boolean | cdktf.IResolvable) {
+    this._samlSignedRequestEnabled = value;
+  }
+  public resetSamlSignedRequestEnabled() {
+    this._samlSignedRequestEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get samlSignedRequestEnabledInput() {
+    return this._samlSignedRequestEnabled;
+  }
+
   // saml_version - computed: false, optional: true, required: false
   private _samlVersion?: string; 
   public get samlVersion() {
@@ -1974,6 +1997,7 @@ export class SamlApp extends cdktf.TerraformResource {
       recipient: cdktf.stringToTerraform(this._recipient),
       request_compressed: cdktf.booleanToTerraform(this._requestCompressed),
       response_signed: cdktf.booleanToTerraform(this._responseSigned),
+      saml_signed_request_enabled: cdktf.booleanToTerraform(this._samlSignedRequestEnabled),
       saml_version: cdktf.stringToTerraform(this._samlVersion),
       signature_algorithm: cdktf.stringToTerraform(this._signatureAlgorithm),
       single_logout_certificate: cdktf.stringToTerraform(this._singleLogoutCertificate),

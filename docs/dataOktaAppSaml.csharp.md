@@ -413,6 +413,7 @@ DataOktaAppSaml.IsTerraformDataSource(object X);
 | <code><a href="#@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSaml.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSaml.property.recipient">Recipient</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSaml.property.responseSigned">ResponseSigned</a></code> | <code>HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSaml.property.samlSignedRequestEnabled">SamlSignedRequestEnabled</a></code> | <code>HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSaml.property.signatureAlgorithm">SignatureAlgorithm</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSaml.property.singleLogoutCertificate">SingleLogoutCertificate</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSaml.property.singleLogoutIssuer">SingleLogoutIssuer</a></code> | <code>string</code> | *No description.* |
@@ -810,6 +811,16 @@ public string Recipient { get; }
 
 ```csharp
 public IResolvable ResponseSigned { get; }
+```
+
+- *Type:* HashiCorp.Cdktf.IResolvable
+
+---
+
+##### `SamlSignedRequestEnabled`<sup>Required</sup> <a name="SamlSignedRequestEnabled" id="@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSaml.property.samlSignedRequestEnabled"></a>
+
+```csharp
+public IResolvable SamlSignedRequestEnabled { get; }
 ```
 
 - *Type:* HashiCorp.Cdktf.IResolvable

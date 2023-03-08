@@ -163,7 +163,7 @@ export class DataOktaAppSaml extends cdktf.TerraformDataSource {
       terraformResourceType: 'okta_app_saml',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '3.42.0',
+        providerVersion: '3.43.0',
         providerVersionConstraint: '~> 3.20'
       },
       provider: config.provider,
@@ -391,6 +391,11 @@ export class DataOktaAppSaml extends cdktf.TerraformDataSource {
   // response_signed - computed: true, optional: false, required: false
   public get responseSigned() {
     return this.getBooleanAttribute('response_signed');
+  }
+
+  // saml_signed_request_enabled - computed: true, optional: false, required: false
+  public get samlSignedRequestEnabled() {
+    return this.getBooleanAttribute('saml_signed_request_enabled');
   }
 
   // signature_algorithm - computed: true, optional: false, required: false

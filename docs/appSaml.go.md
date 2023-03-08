@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/okta/r/app_saml okta
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appSaml.AppSaml.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/appsaml"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appsaml"
 
 appsaml.NewAppSaml(scope Construct, id *string, config AppSamlConfig) AppSaml
 ```
@@ -101,6 +101,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.resetRecipient">ResetRecipient</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.resetRequestCompressed">ResetRequestCompressed</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.resetResponseSigned">ResetResponseSigned</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.resetSamlSignedRequestEnabled">ResetSamlSignedRequestEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.resetSamlVersion">ResetSamlVersion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.resetSignatureAlgorithm">ResetSignatureAlgorithm</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.resetSingleLogoutCertificate">ResetSingleLogoutCertificate</a></code> | *No description.* |
@@ -534,6 +535,12 @@ func ResetRequestCompressed()
 func ResetResponseSigned()
 ```
 
+##### `ResetSamlSignedRequestEnabled` <a name="ResetSamlSignedRequestEnabled" id="@cdktf/provider-okta.appSaml.AppSaml.resetSamlSignedRequestEnabled"></a>
+
+```go
+func ResetSamlSignedRequestEnabled()
+```
+
 ##### `ResetSamlVersion` <a name="ResetSamlVersion" id="@cdktf/provider-okta.appSaml.AppSaml.resetSamlVersion"></a>
 
 ```go
@@ -655,7 +662,7 @@ func ResetUsers()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.appSaml.AppSaml.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/appsaml"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appsaml"
 
 appsaml.AppSaml_IsConstruct(x interface{}) *bool
 ```
@@ -687,7 +694,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.appSaml.AppSaml.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/appsaml"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appsaml"
 
 appsaml.AppSaml_IsTerraformElement(x interface{}) *bool
 ```
@@ -701,7 +708,7 @@ appsaml.AppSaml_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.appSaml.AppSaml.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/appsaml"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appsaml"
 
 appsaml.AppSaml_IsTerraformResource(x interface{}) *bool
 ```
@@ -780,6 +787,7 @@ appsaml.AppSaml_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.recipientInput">RecipientInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.requestCompressedInput">RequestCompressedInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.responseSignedInput">ResponseSignedInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.samlSignedRequestEnabledInput">SamlSignedRequestEnabledInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.samlVersionInput">SamlVersionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.signatureAlgorithmInput">SignatureAlgorithmInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.singleLogoutCertificateInput">SingleLogoutCertificateInput</a></code> | <code>*string</code> | *No description.* |
@@ -830,6 +838,7 @@ appsaml.AppSaml_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.recipient">Recipient</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.requestCompressed">RequestCompressed</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.responseSigned">ResponseSigned</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.samlSignedRequestEnabled">SamlSignedRequestEnabled</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.samlVersion">SamlVersion</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.signatureAlgorithm">SignatureAlgorithm</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.singleLogoutCertificate">SingleLogoutCertificate</a></code> | <code>*string</code> | *No description.* |
@@ -1491,6 +1500,16 @@ func ResponseSignedInput() interface{}
 
 ---
 
+##### `SamlSignedRequestEnabledInput`<sup>Optional</sup> <a name="SamlSignedRequestEnabledInput" id="@cdktf/provider-okta.appSaml.AppSaml.property.samlSignedRequestEnabledInput"></a>
+
+```go
+func SamlSignedRequestEnabledInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `SamlVersionInput`<sup>Optional</sup> <a name="SamlVersionInput" id="@cdktf/provider-okta.appSaml.AppSaml.property.samlVersionInput"></a>
 
 ```go
@@ -1991,6 +2010,16 @@ func ResponseSigned() interface{}
 
 ---
 
+##### `SamlSignedRequestEnabled`<sup>Required</sup> <a name="SamlSignedRequestEnabled" id="@cdktf/provider-okta.appSaml.AppSaml.property.samlSignedRequestEnabled"></a>
+
+```go
+func SamlSignedRequestEnabled() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `SamlVersion`<sup>Required</sup> <a name="SamlVersion" id="@cdktf/provider-okta.appSaml.AppSaml.property.samlVersion"></a>
 
 ```go
@@ -2176,7 +2205,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.appSaml.AppSamlAttributeStatements.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/appsaml"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appsaml"
 
 &appsaml.AppSamlAttributeStatements {
 	Name: *string,
@@ -2288,7 +2317,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.appSaml.AppSamlConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/appsaml"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appsaml"
 
 &appsaml.AppSamlConfig {
 	Connection: interface{},
@@ -2331,6 +2360,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/appsaml"
 	Recipient: *string,
 	RequestCompressed: interface{},
 	ResponseSigned: interface{},
+	SamlSignedRequestEnabled: interface{},
 	SamlVersion: *string,
 	SignatureAlgorithm: *string,
 	SingleLogoutCertificate: *string,
@@ -2343,7 +2373,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/appsaml"
 	Status: *string,
 	SubjectNameIdFormat: *string,
 	SubjectNameIdTemplate: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-okta-go/okta/v5.appSaml.AppSamlTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-okta-go/okta.appSaml.AppSamlTimeouts,
 	UserNameTemplate: *string,
 	UserNameTemplatePushStatus: *string,
 	UserNameTemplateSuffix: *string,
@@ -2396,6 +2426,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/appsaml"
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.recipient">Recipient</a></code> | <code>*string</code> | The location where the app may present the SAML assertion. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.requestCompressed">RequestCompressed</a></code> | <code>interface{}</code> | Denotes whether the request is compressed or not. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.responseSigned">ResponseSigned</a></code> | <code>interface{}</code> | Determines whether the SAML auth response message is digitally signed. |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.samlSignedRequestEnabled">SamlSignedRequestEnabled</a></code> | <code>interface{}</code> | SAML Signed Request enabled. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.samlVersion">SamlVersion</a></code> | <code>*string</code> | SAML version for the app's sign-on mode. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.signatureAlgorithm">SignatureAlgorithm</a></code> | <code>*string</code> | Signature algorithm used ot digitally sign the assertion and response. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.singleLogoutCertificate">SingleLogoutCertificate</a></code> | <code>*string</code> | x509 encoded certificate that the Service Provider uses to sign Single Logout requests. |
@@ -2950,6 +2981,20 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 ---
 
+##### `SamlSignedRequestEnabled`<sup>Optional</sup> <a name="SamlSignedRequestEnabled" id="@cdktf/provider-okta.appSaml.AppSamlConfig.property.samlSignedRequestEnabled"></a>
+
+```go
+SamlSignedRequestEnabled interface{}
+```
+
+- *Type:* interface{}
+
+SAML Signed Request enabled.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml#saml_signed_request_enabled AppSaml#saml_signed_request_enabled}
+
+---
+
 ##### `SamlVersion`<sup>Optional</sup> <a name="SamlVersion" id="@cdktf/provider-okta.appSaml.AppSamlConfig.property.samlVersion"></a>
 
 ```go
@@ -3207,7 +3252,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.appSaml.AppSamlKeys.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/appsaml"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appsaml"
 
 &appsaml.AppSamlKeys {
 
@@ -3220,7 +3265,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/appsaml"
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.appSaml.AppSamlTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/appsaml"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appsaml"
 
 &appsaml.AppSamlTimeouts {
 	Create: *string,
@@ -3280,7 +3325,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.appSaml.AppSamlUsers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/appsaml"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appsaml"
 
 &appsaml.AppSamlUsers {
 	Id: *string,
@@ -3351,7 +3396,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appSaml.AppSamlAttributeStatementsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/appsaml"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appsaml"
 
 appsaml.NewAppSamlAttributeStatementsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppSamlAttributeStatementsList
 ```
@@ -3494,7 +3539,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appSaml.AppSamlAttributeStatementsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/appsaml"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appsaml"
 
 appsaml.NewAppSamlAttributeStatementsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppSamlAttributeStatementsOutputReference
 ```
@@ -3928,7 +3973,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appSaml.AppSamlKeysList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/appsaml"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appsaml"
 
 appsaml.NewAppSamlKeysList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppSamlKeysList
 ```
@@ -4060,7 +4105,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appSaml.AppSamlKeysOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/appsaml"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appsaml"
 
 appsaml.NewAppSamlKeysOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppSamlKeysOutputReference
 ```
@@ -4437,7 +4482,7 @@ func InternalValue() AppSamlKeys
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appSaml.AppSamlTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/appsaml"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appsaml"
 
 appsaml.NewAppSamlTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSamlTimeoutsOutputReference
 ```
@@ -4773,7 +4818,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appSaml.AppSamlUsersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/appsaml"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appsaml"
 
 appsaml.NewAppSamlUsersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppSamlUsersList
 ```
@@ -4916,7 +4961,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appSaml.AppSamlUsersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/appsaml"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appsaml"
 
 appsaml.NewAppSamlUsersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppSamlUsersOutputReference
 ```

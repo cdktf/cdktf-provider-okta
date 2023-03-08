@@ -72,6 +72,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-okta.user.User.resetCostCenter">resetCostCenter</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.resetCountryCode">resetCountryCode</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.resetCustomProfileAttributes">resetCustomProfileAttributes</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.user.User.resetCustomProfileAttributesToIgnore">resetCustomProfileAttributesToIgnore</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.resetDepartment">resetDepartment</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.resetDisplayName">resetDisplayName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.resetDivision">resetDivision</a></code> | *No description.* |
@@ -334,6 +335,12 @@ public resetCountryCode(): void
 
 ```typescript
 public resetCustomProfileAttributes(): void
+```
+
+##### `resetCustomProfileAttributesToIgnore` <a name="resetCustomProfileAttributesToIgnore" id="@cdktf/provider-okta.user.User.resetCustomProfileAttributesToIgnore"></a>
+
+```typescript
+public resetCustomProfileAttributesToIgnore(): void
 ```
 
 ##### `resetDepartment` <a name="resetDepartment" id="@cdktf/provider-okta.user.User.resetDepartment"></a>
@@ -641,6 +648,7 @@ user.User.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-okta.user.User.property.costCenterInput">costCenterInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.countryCodeInput">countryCodeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.customProfileAttributesInput">customProfileAttributesInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.user.User.property.customProfileAttributesToIgnoreInput">customProfileAttributesToIgnoreInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.departmentInput">departmentInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.displayNameInput">displayNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.divisionInput">divisionInput</a></code> | <code>string</code> | *No description.* |
@@ -685,6 +693,7 @@ user.User.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-okta.user.User.property.costCenter">costCenter</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.countryCode">countryCode</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.customProfileAttributes">customProfileAttributes</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.user.User.property.customProfileAttributesToIgnore">customProfileAttributesToIgnore</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.department">department</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.displayName">displayName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.division">division</a></code> | <code>string</code> | *No description.* |
@@ -935,6 +944,16 @@ public readonly customProfileAttributesInput: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `customProfileAttributesToIgnoreInput`<sup>Optional</sup> <a name="customProfileAttributesToIgnoreInput" id="@cdktf/provider-okta.user.User.property.customProfileAttributesToIgnoreInput"></a>
+
+```typescript
+public readonly customProfileAttributesToIgnoreInput: string[];
+```
+
+- *Type:* string[]
 
 ---
 
@@ -1378,6 +1397,16 @@ public readonly customProfileAttributes: string;
 
 ---
 
+##### `customProfileAttributesToIgnore`<sup>Required</sup> <a name="customProfileAttributesToIgnore" id="@cdktf/provider-okta.user.User.property.customProfileAttributesToIgnore"></a>
+
+```typescript
+public readonly customProfileAttributesToIgnore: string[];
+```
+
+- *Type:* string[]
+
+---
+
 ##### `department`<sup>Required</sup> <a name="department" id="@cdktf/provider-okta.user.User.property.department"></a>
 
 ```typescript
@@ -1808,6 +1837,7 @@ const userConfig: user.UserConfig = { ... }
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.costCenter">costCenter</a></code> | <code>string</code> | User cost center. |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.countryCode">countryCode</a></code> | <code>string</code> | User country code. |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.customProfileAttributes">customProfileAttributes</a></code> | <code>string</code> | JSON formatted custom attributes for a user. It must be JSON due to various types Okta allows. |
+| <code><a href="#@cdktf/provider-okta.user.UserConfig.property.customProfileAttributesToIgnore">customProfileAttributesToIgnore</a></code> | <code>string[]</code> | List of custom_profile_attribute keys that should be excluded from being managed by Terraform. |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.department">department</a></code> | <code>string</code> | User department. |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.displayName">displayName</a></code> | <code>string</code> | User display name, suitable to show end users. |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.division">division</a></code> | <code>string</code> | User division. |
@@ -2039,6 +2069,20 @@ public readonly customProfileAttributes: string;
 JSON formatted custom attributes for a user. It must be JSON due to various types Okta allows.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#custom_profile_attributes User#custom_profile_attributes}
+
+---
+
+##### `customProfileAttributesToIgnore`<sup>Optional</sup> <a name="customProfileAttributesToIgnore" id="@cdktf/provider-okta.user.UserConfig.property.customProfileAttributesToIgnore"></a>
+
+```typescript
+public readonly customProfileAttributesToIgnore: string[];
+```
+
+- *Type:* string[]
+
+List of custom_profile_attribute keys that should be excluded from being managed by Terraform.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#custom_profile_attributes_to_ignore User#custom_profile_attributes_to_ignore}
 
 ---
 

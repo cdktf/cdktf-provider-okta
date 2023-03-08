@@ -8,13 +8,13 @@ import * as cdktf from 'cdktf';
 
 export interface UserTypeConfig extends cdktf.TerraformMetaArguments {
   /**
-  * A human-readable description of the type
+  * A human-readable description of the User type
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_type#description UserType#description}
   */
   readonly description: string;
   /**
-  * The display name for the type	
+  * The display name of the user type
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_type#display_name UserType#display_name}
   */
@@ -27,7 +27,7 @@ export interface UserTypeConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
-  * The display name for the type
+  * Name of the user type
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_type#name UserType#name}
   */
@@ -60,7 +60,7 @@ export class UserType extends cdktf.TerraformResource {
       terraformResourceType: 'okta_user_type',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '3.42.0',
+        providerVersion: '3.43.0',
         providerVersionConstraint: '~> 3.20'
       },
       provider: config.provider,

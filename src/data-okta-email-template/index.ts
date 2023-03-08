@@ -54,7 +54,7 @@ export class DataOktaEmailTemplate extends cdktf.TerraformDataSource {
       terraformResourceType: 'okta_email_template',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '3.42.0',
+        providerVersion: '3.43.0',
         providerVersionConstraint: '~> 3.20'
       },
       provider: config.provider,

@@ -31,6 +31,7 @@ User.Builder.create(Construct scope, java.lang.String id)
 //  .costCenter(java.lang.String)
 //  .countryCode(java.lang.String)
 //  .customProfileAttributes(java.lang.String)
+//  .customProfileAttributesToIgnore(java.util.List<java.lang.String>)
 //  .department(java.lang.String)
 //  .displayName(java.lang.String)
 //  .division(java.lang.String)
@@ -91,6 +92,7 @@ User.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-okta.user.User.Initializer.parameter.costCenter">costCenter</a></code> | <code>java.lang.String</code> | User cost center. |
 | <code><a href="#@cdktf/provider-okta.user.User.Initializer.parameter.countryCode">countryCode</a></code> | <code>java.lang.String</code> | User country code. |
 | <code><a href="#@cdktf/provider-okta.user.User.Initializer.parameter.customProfileAttributes">customProfileAttributes</a></code> | <code>java.lang.String</code> | JSON formatted custom attributes for a user. It must be JSON due to various types Okta allows. |
+| <code><a href="#@cdktf/provider-okta.user.User.Initializer.parameter.customProfileAttributesToIgnore">customProfileAttributesToIgnore</a></code> | <code>java.util.List<java.lang.String></code> | List of custom_profile_attribute keys that should be excluded from being managed by Terraform. |
 | <code><a href="#@cdktf/provider-okta.user.User.Initializer.parameter.department">department</a></code> | <code>java.lang.String</code> | User department. |
 | <code><a href="#@cdktf/provider-okta.user.User.Initializer.parameter.displayName">displayName</a></code> | <code>java.lang.String</code> | User display name, suitable to show end users. |
 | <code><a href="#@cdktf/provider-okta.user.User.Initializer.parameter.division">division</a></code> | <code>java.lang.String</code> | User division. |
@@ -276,6 +278,16 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 JSON formatted custom attributes for a user. It must be JSON due to various types Okta allows.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#custom_profile_attributes User#custom_profile_attributes}
+
+---
+
+##### `customProfileAttributesToIgnore`<sup>Optional</sup> <a name="customProfileAttributesToIgnore" id="@cdktf/provider-okta.user.User.Initializer.parameter.customProfileAttributesToIgnore"></a>
+
+- *Type:* java.util.List<java.lang.String>
+
+List of custom_profile_attribute keys that should be excluded from being managed by Terraform.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#custom_profile_attributes_to_ignore User#custom_profile_attributes_to_ignore}
 
 ---
 
@@ -660,6 +672,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 | <code><a href="#@cdktf/provider-okta.user.User.resetCostCenter">resetCostCenter</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.resetCountryCode">resetCountryCode</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.resetCustomProfileAttributes">resetCustomProfileAttributes</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.user.User.resetCustomProfileAttributesToIgnore">resetCustomProfileAttributesToIgnore</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.resetDepartment">resetDepartment</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.resetDisplayName">resetDisplayName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.resetDivision">resetDivision</a></code> | *No description.* |
@@ -922,6 +935,12 @@ public void resetCountryCode()
 
 ```java
 public void resetCustomProfileAttributes()
+```
+
+##### `resetCustomProfileAttributesToIgnore` <a name="resetCustomProfileAttributesToIgnore" id="@cdktf/provider-okta.user.User.resetCustomProfileAttributesToIgnore"></a>
+
+```java
+public void resetCustomProfileAttributesToIgnore()
 ```
 
 ##### `resetDepartment` <a name="resetDepartment" id="@cdktf/provider-okta.user.User.resetDepartment"></a>
@@ -1229,6 +1248,7 @@ User.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-okta.user.User.property.costCenterInput">costCenterInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.countryCodeInput">countryCodeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.customProfileAttributesInput">customProfileAttributesInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.user.User.property.customProfileAttributesToIgnoreInput">customProfileAttributesToIgnoreInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.departmentInput">departmentInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.displayNameInput">displayNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.divisionInput">divisionInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -1273,6 +1293,7 @@ User.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-okta.user.User.property.costCenter">costCenter</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.countryCode">countryCode</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.customProfileAttributes">customProfileAttributes</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.user.User.property.customProfileAttributesToIgnore">customProfileAttributesToIgnore</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.department">department</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.displayName">displayName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.division">division</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -1523,6 +1544,16 @@ public java.lang.String getCustomProfileAttributesInput();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `customProfileAttributesToIgnoreInput`<sup>Optional</sup> <a name="customProfileAttributesToIgnoreInput" id="@cdktf/provider-okta.user.User.property.customProfileAttributesToIgnoreInput"></a>
+
+```java
+public java.util.List<java.lang.String> getCustomProfileAttributesToIgnoreInput();
+```
+
+- *Type:* java.util.List<java.lang.String>
 
 ---
 
@@ -1966,6 +1997,16 @@ public java.lang.String getCustomProfileAttributes();
 
 ---
 
+##### `customProfileAttributesToIgnore`<sup>Required</sup> <a name="customProfileAttributesToIgnore" id="@cdktf/provider-okta.user.User.property.customProfileAttributesToIgnore"></a>
+
+```java
+public java.util.List<java.lang.String> getCustomProfileAttributesToIgnore();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
 ##### `department`<sup>Required</sup> <a name="department" id="@cdktf/provider-okta.user.User.property.department"></a>
 
 ```java
@@ -2393,6 +2434,7 @@ UserConfig.builder()
 //  .costCenter(java.lang.String)
 //  .countryCode(java.lang.String)
 //  .customProfileAttributes(java.lang.String)
+//  .customProfileAttributesToIgnore(java.util.List<java.lang.String>)
 //  .department(java.lang.String)
 //  .displayName(java.lang.String)
 //  .division(java.lang.String)
@@ -2453,6 +2495,7 @@ UserConfig.builder()
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.costCenter">costCenter</a></code> | <code>java.lang.String</code> | User cost center. |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.countryCode">countryCode</a></code> | <code>java.lang.String</code> | User country code. |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.customProfileAttributes">customProfileAttributes</a></code> | <code>java.lang.String</code> | JSON formatted custom attributes for a user. It must be JSON due to various types Okta allows. |
+| <code><a href="#@cdktf/provider-okta.user.UserConfig.property.customProfileAttributesToIgnore">customProfileAttributesToIgnore</a></code> | <code>java.util.List<java.lang.String></code> | List of custom_profile_attribute keys that should be excluded from being managed by Terraform. |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.department">department</a></code> | <code>java.lang.String</code> | User department. |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.displayName">displayName</a></code> | <code>java.lang.String</code> | User display name, suitable to show end users. |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.division">division</a></code> | <code>java.lang.String</code> | User division. |
@@ -2684,6 +2727,20 @@ public java.lang.String getCustomProfileAttributes();
 JSON formatted custom attributes for a user. It must be JSON due to various types Okta allows.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#custom_profile_attributes User#custom_profile_attributes}
+
+---
+
+##### `customProfileAttributesToIgnore`<sup>Optional</sup> <a name="customProfileAttributesToIgnore" id="@cdktf/provider-okta.user.UserConfig.property.customProfileAttributesToIgnore"></a>
+
+```java
+public java.util.List<java.lang.String> getCustomProfileAttributesToIgnore();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+List of custom_profile_attribute keys that should be excluded from being managed by Terraform.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#custom_profile_attributes_to_ignore User#custom_profile_attributes_to_ignore}
 
 ---
 
