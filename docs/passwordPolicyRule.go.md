@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/okta/r/password_poli
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.passwordPolicyRule.PasswordPolicyRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/passwordpolicyrule"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/passwordpolicyrule"
 
 passwordpolicyrule.NewPasswordPolicyRule(scope Construct, id *string, config PasswordPolicyRuleConfig) PasswordPolicyRule
 ```
@@ -350,7 +350,7 @@ func ResetUsersExcluded()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.passwordPolicyRule.PasswordPolicyRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/passwordpolicyrule"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/passwordpolicyrule"
 
 passwordpolicyrule.PasswordPolicyRule_IsConstruct(x interface{}) *bool
 ```
@@ -382,7 +382,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.passwordPolicyRule.PasswordPolicyRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/passwordpolicyrule"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/passwordpolicyrule"
 
 passwordpolicyrule.PasswordPolicyRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -396,7 +396,7 @@ passwordpolicyrule.PasswordPolicyRule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.passwordPolicyRule.PasswordPolicyRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/passwordpolicyrule"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/passwordpolicyrule"
 
 passwordpolicyrule.PasswordPolicyRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -881,7 +881,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.passwordPolicyRule.PasswordPolicyRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/passwordpolicyrule"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/passwordpolicyrule"
 
 &passwordpolicyrule.PasswordPolicyRuleConfig {
 	Connection: interface{},
