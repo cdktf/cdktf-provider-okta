@@ -634,9 +634,9 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/usertype"
 | <code><a href="#@cdktf/provider-okta.userType.UserTypeConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.userType.UserTypeConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.userType.UserTypeConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.userType.UserTypeConfig.property.description">Description</a></code> | <code>*string</code> | A human-readable description of the type. |
-| <code><a href="#@cdktf/provider-okta.userType.UserTypeConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | The display name for the type. |
-| <code><a href="#@cdktf/provider-okta.userType.UserTypeConfig.property.name">Name</a></code> | <code>*string</code> | The display name for the type. |
+| <code><a href="#@cdktf/provider-okta.userType.UserTypeConfig.property.description">Description</a></code> | <code>*string</code> | A human-readable description of the User type. |
+| <code><a href="#@cdktf/provider-okta.userType.UserTypeConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | The display name of the user type. |
+| <code><a href="#@cdktf/provider-okta.userType.UserTypeConfig.property.name">Name</a></code> | <code>*string</code> | Name of the user type. |
 | <code><a href="#@cdktf/provider-okta.userType.UserTypeConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_type#id UserType#id}. |
 
 ---
@@ -719,7 +719,7 @@ Description *string
 
 - *Type:* *string
 
-A human-readable description of the type.
+A human-readable description of the User type.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_type#description UserType#description}
 
@@ -733,7 +733,7 @@ DisplayName *string
 
 - *Type:* *string
 
-The display name for the type.
+The display name of the user type.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_type#display_name UserType#display_name}
 
@@ -747,7 +747,7 @@ Name *string
 
 - *Type:* *string
 
-The display name for the type.
+Name of the user type.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_type#name UserType#name}
 

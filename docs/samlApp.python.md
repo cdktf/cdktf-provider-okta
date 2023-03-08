@@ -54,6 +54,7 @@ samlApp.SamlApp(
   recipient: str = None,
   request_compressed: typing.Union[bool, IResolvable] = None,
   response_signed: typing.Union[bool, IResolvable] = None,
+  saml_signed_request_enabled: typing.Union[bool, IResolvable] = None,
   saml_version: str = None,
   signature_algorithm: str = None,
   single_logout_certificate: str = None,
@@ -119,6 +120,7 @@ samlApp.SamlApp(
 | <code><a href="#@cdktf/provider-okta.samlApp.SamlApp.Initializer.parameter.recipient">recipient</a></code> | <code>str</code> | The location where the app may present the SAML assertion. |
 | <code><a href="#@cdktf/provider-okta.samlApp.SamlApp.Initializer.parameter.requestCompressed">request_compressed</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Denotes whether the request is compressed or not. |
 | <code><a href="#@cdktf/provider-okta.samlApp.SamlApp.Initializer.parameter.responseSigned">response_signed</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Determines whether the SAML auth response message is digitally signed. |
+| <code><a href="#@cdktf/provider-okta.samlApp.SamlApp.Initializer.parameter.samlSignedRequestEnabled">saml_signed_request_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | SAML Signed Request enabled. |
 | <code><a href="#@cdktf/provider-okta.samlApp.SamlApp.Initializer.parameter.samlVersion">saml_version</a></code> | <code>str</code> | SAML version for the app's sign-on mode. |
 | <code><a href="#@cdktf/provider-okta.samlApp.SamlApp.Initializer.parameter.signatureAlgorithm">signature_algorithm</a></code> | <code>str</code> | Signature algorithm used ot digitally sign the assertion and response. |
 | <code><a href="#@cdktf/provider-okta.samlApp.SamlApp.Initializer.parameter.singleLogoutCertificate">single_logout_certificate</a></code> | <code>str</code> | x509 encoded certificate that the Service Provider uses to sign Single Logout requests. |
@@ -531,6 +533,16 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 ---
 
+##### `saml_signed_request_enabled`<sup>Optional</sup> <a name="saml_signed_request_enabled" id="@cdktf/provider-okta.samlApp.SamlApp.Initializer.parameter.samlSignedRequestEnabled"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+SAML Signed Request enabled.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#saml_signed_request_enabled SamlApp#saml_signed_request_enabled}
+
+---
+
 ##### `saml_version`<sup>Optional</sup> <a name="saml_version" id="@cdktf/provider-okta.samlApp.SamlApp.Initializer.parameter.samlVersion"></a>
 
 - *Type:* str
@@ -766,6 +778,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 | <code><a href="#@cdktf/provider-okta.samlApp.SamlApp.resetRecipient">reset_recipient</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.samlApp.SamlApp.resetRequestCompressed">reset_request_compressed</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.samlApp.SamlApp.resetResponseSigned">reset_response_signed</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.samlApp.SamlApp.resetSamlSignedRequestEnabled">reset_saml_signed_request_enabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.samlApp.SamlApp.resetSamlVersion">reset_saml_version</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.samlApp.SamlApp.resetSignatureAlgorithm">reset_signature_algorithm</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.samlApp.SamlApp.resetSingleLogoutCertificate">reset_single_logout_certificate</a></code> | *No description.* |
@@ -1250,6 +1263,12 @@ def reset_request_compressed() -> None
 def reset_response_signed() -> None
 ```
 
+##### `reset_saml_signed_request_enabled` <a name="reset_saml_signed_request_enabled" id="@cdktf/provider-okta.samlApp.SamlApp.resetSamlSignedRequestEnabled"></a>
+
+```python
+def reset_saml_signed_request_enabled() -> None
+```
+
 ##### `reset_saml_version` <a name="reset_saml_version" id="@cdktf/provider-okta.samlApp.SamlApp.resetSamlVersion"></a>
 
 ```python
@@ -1502,6 +1521,7 @@ samlApp.SamlApp.is_terraform_resource(
 | <code><a href="#@cdktf/provider-okta.samlApp.SamlApp.property.recipientInput">recipient_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.samlApp.SamlApp.property.requestCompressedInput">request_compressed_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.samlApp.SamlApp.property.responseSignedInput">response_signed_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.samlApp.SamlApp.property.samlSignedRequestEnabledInput">saml_signed_request_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.samlApp.SamlApp.property.samlVersionInput">saml_version_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.samlApp.SamlApp.property.signatureAlgorithmInput">signature_algorithm_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.samlApp.SamlApp.property.singleLogoutCertificateInput">single_logout_certificate_input</a></code> | <code>str</code> | *No description.* |
@@ -1552,6 +1572,7 @@ samlApp.SamlApp.is_terraform_resource(
 | <code><a href="#@cdktf/provider-okta.samlApp.SamlApp.property.recipient">recipient</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.samlApp.SamlApp.property.requestCompressed">request_compressed</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.samlApp.SamlApp.property.responseSigned">response_signed</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.samlApp.SamlApp.property.samlSignedRequestEnabled">saml_signed_request_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.samlApp.SamlApp.property.samlVersion">saml_version</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.samlApp.SamlApp.property.signatureAlgorithm">signature_algorithm</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.samlApp.SamlApp.property.singleLogoutCertificate">single_logout_certificate</a></code> | <code>str</code> | *No description.* |
@@ -2213,6 +2234,16 @@ response_signed_input: typing.Union[bool, IResolvable]
 
 ---
 
+##### `saml_signed_request_enabled_input`<sup>Optional</sup> <a name="saml_signed_request_enabled_input" id="@cdktf/provider-okta.samlApp.SamlApp.property.samlSignedRequestEnabledInput"></a>
+
+```python
+saml_signed_request_enabled_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
 ##### `saml_version_input`<sup>Optional</sup> <a name="saml_version_input" id="@cdktf/provider-okta.samlApp.SamlApp.property.samlVersionInput"></a>
 
 ```python
@@ -2713,6 +2744,16 @@ response_signed: typing.Union[bool, IResolvable]
 
 ---
 
+##### `saml_signed_request_enabled`<sup>Required</sup> <a name="saml_signed_request_enabled" id="@cdktf/provider-okta.samlApp.SamlApp.property.samlSignedRequestEnabled"></a>
+
+```python
+saml_signed_request_enabled: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
 ##### `saml_version`<sup>Required</sup> <a name="saml_version" id="@cdktf/provider-okta.samlApp.SamlApp.property.samlVersion"></a>
 
 ```python
@@ -3053,6 +3094,7 @@ samlApp.SamlAppConfig(
   recipient: str = None,
   request_compressed: typing.Union[bool, IResolvable] = None,
   response_signed: typing.Union[bool, IResolvable] = None,
+  saml_signed_request_enabled: typing.Union[bool, IResolvable] = None,
   saml_version: str = None,
   signature_algorithm: str = None,
   single_logout_certificate: str = None,
@@ -3118,6 +3160,7 @@ samlApp.SamlAppConfig(
 | <code><a href="#@cdktf/provider-okta.samlApp.SamlAppConfig.property.recipient">recipient</a></code> | <code>str</code> | The location where the app may present the SAML assertion. |
 | <code><a href="#@cdktf/provider-okta.samlApp.SamlAppConfig.property.requestCompressed">request_compressed</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Denotes whether the request is compressed or not. |
 | <code><a href="#@cdktf/provider-okta.samlApp.SamlAppConfig.property.responseSigned">response_signed</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Determines whether the SAML auth response message is digitally signed. |
+| <code><a href="#@cdktf/provider-okta.samlApp.SamlAppConfig.property.samlSignedRequestEnabled">saml_signed_request_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | SAML Signed Request enabled. |
 | <code><a href="#@cdktf/provider-okta.samlApp.SamlAppConfig.property.samlVersion">saml_version</a></code> | <code>str</code> | SAML version for the app's sign-on mode. |
 | <code><a href="#@cdktf/provider-okta.samlApp.SamlAppConfig.property.signatureAlgorithm">signature_algorithm</a></code> | <code>str</code> | Signature algorithm used ot digitally sign the assertion and response. |
 | <code><a href="#@cdktf/provider-okta.samlApp.SamlAppConfig.property.singleLogoutCertificate">single_logout_certificate</a></code> | <code>str</code> | x509 encoded certificate that the Service Provider uses to sign Single Logout requests. |
@@ -3669,6 +3712,20 @@ response_signed: typing.Union[bool, IResolvable]
 Determines whether the SAML auth response message is digitally signed.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#response_signed SamlApp#response_signed}
+
+---
+
+##### `saml_signed_request_enabled`<sup>Optional</sup> <a name="saml_signed_request_enabled" id="@cdktf/provider-okta.samlApp.SamlAppConfig.property.samlSignedRequestEnabled"></a>
+
+```python
+saml_signed_request_enabled: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+SAML Signed Request enabled.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#saml_signed_request_enabled SamlApp#saml_signed_request_enabled}
 
 ---
 

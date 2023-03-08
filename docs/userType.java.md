@@ -40,9 +40,9 @@ UserType.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-okta.userType.UserType.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.userType.UserType.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.userType.UserType.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.userType.UserType.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | A human-readable description of the type. |
-| <code><a href="#@cdktf/provider-okta.userType.UserType.Initializer.parameter.displayName">displayName</a></code> | <code>java.lang.String</code> | The display name for the type. |
-| <code><a href="#@cdktf/provider-okta.userType.UserType.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The display name for the type. |
+| <code><a href="#@cdktf/provider-okta.userType.UserType.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | A human-readable description of the User type. |
+| <code><a href="#@cdktf/provider-okta.userType.UserType.Initializer.parameter.displayName">displayName</a></code> | <code>java.lang.String</code> | The display name of the user type. |
+| <code><a href="#@cdktf/provider-okta.userType.UserType.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Name of the user type. |
 | <code><a href="#@cdktf/provider-okta.userType.UserType.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_type#id UserType#id}. |
 
 ---
@@ -111,7 +111,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-A human-readable description of the type.
+A human-readable description of the User type.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_type#description UserType#description}
 
@@ -121,7 +121,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 - *Type:* java.lang.String
 
-The display name for the type.
+The display name of the user type.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_type#display_name UserType#display_name}
 
@@ -131,7 +131,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 - *Type:* java.lang.String
 
-The display name for the type.
+Name of the user type.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_type#name UserType#name}
 
@@ -739,9 +739,9 @@ UserTypeConfig.builder()
 | <code><a href="#@cdktf/provider-okta.userType.UserTypeConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.userType.UserTypeConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.userType.UserTypeConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.userType.UserTypeConfig.property.description">description</a></code> | <code>java.lang.String</code> | A human-readable description of the type. |
-| <code><a href="#@cdktf/provider-okta.userType.UserTypeConfig.property.displayName">displayName</a></code> | <code>java.lang.String</code> | The display name for the type. |
-| <code><a href="#@cdktf/provider-okta.userType.UserTypeConfig.property.name">name</a></code> | <code>java.lang.String</code> | The display name for the type. |
+| <code><a href="#@cdktf/provider-okta.userType.UserTypeConfig.property.description">description</a></code> | <code>java.lang.String</code> | A human-readable description of the User type. |
+| <code><a href="#@cdktf/provider-okta.userType.UserTypeConfig.property.displayName">displayName</a></code> | <code>java.lang.String</code> | The display name of the user type. |
+| <code><a href="#@cdktf/provider-okta.userType.UserTypeConfig.property.name">name</a></code> | <code>java.lang.String</code> | Name of the user type. |
 | <code><a href="#@cdktf/provider-okta.userType.UserTypeConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_type#id UserType#id}. |
 
 ---
@@ -824,7 +824,7 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-A human-readable description of the type.
+A human-readable description of the User type.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_type#description UserType#description}
 
@@ -838,7 +838,7 @@ public java.lang.String getDisplayName();
 
 - *Type:* java.lang.String
 
-The display name for the type.
+The display name of the user type.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_type#display_name UserType#display_name}
 
@@ -852,7 +852,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-The display name for the type.
+Name of the user type.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_type#name UserType#name}
 

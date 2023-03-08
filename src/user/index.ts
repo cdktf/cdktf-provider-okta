@@ -38,6 +38,12 @@ export interface UserConfig extends cdktf.TerraformMetaArguments {
   */
   readonly customProfileAttributes?: string;
   /**
+  * List of custom_profile_attribute keys that should be excluded from being managed by Terraform.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#custom_profile_attributes_to_ignore User#custom_profile_attributes_to_ignore}
+  */
+  readonly customProfileAttributesToIgnore?: string[];
+  /**
   * User department
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user#department User#department}
@@ -477,7 +483,7 @@ export class User extends cdktf.TerraformResource {
       terraformResourceType: 'okta_user',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '3.42.0',
+        providerVersion: '3.43.0',
         providerVersionConstraint: '~> 3.20'
       },
       provider: config.provider,
@@ -493,6 +499,7 @@ export class User extends cdktf.TerraformResource {
     this._costCenter = config.costCenter;
     this._countryCode = config.countryCode;
     this._customProfileAttributes = config.customProfileAttributes;
+    this._customProfileAttributesToIgnore = config.customProfileAttributesToIgnore;
     this._department = config.department;
     this._displayName = config.displayName;
     this._division = config.division;
@@ -602,7 +609,7 @@ export class User extends cdktf.TerraformResource {
     return this._countryCode;
   }
 
-  // custom_profile_attributes - computed: false, optional: true, required: false
+  // custom_profile_attributes - computed: true, optional: true, required: false
   private _customProfileAttributes?: string; 
   public get customProfileAttributes() {
     return this.getStringAttribute('custom_profile_attributes');
@@ -616,6 +623,22 @@ export class User extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get customProfileAttributesInput() {
     return this._customProfileAttributes;
+  }
+
+  // custom_profile_attributes_to_ignore - computed: false, optional: true, required: false
+  private _customProfileAttributesToIgnore?: string[]; 
+  public get customProfileAttributesToIgnore() {
+    return cdktf.Fn.tolist(this.getListAttribute('custom_profile_attributes_to_ignore'));
+  }
+  public set customProfileAttributesToIgnore(value: string[]) {
+    this._customProfileAttributesToIgnore = value;
+  }
+  public resetCustomProfileAttributesToIgnore() {
+    this._customProfileAttributesToIgnore = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get customProfileAttributesToIgnoreInput() {
+    return this._customProfileAttributesToIgnore;
   }
 
   // department - computed: false, optional: true, required: false
@@ -1246,6 +1269,7 @@ export class User extends cdktf.TerraformResource {
       cost_center: cdktf.stringToTerraform(this._costCenter),
       country_code: cdktf.stringToTerraform(this._countryCode),
       custom_profile_attributes: cdktf.stringToTerraform(this._customProfileAttributes),
+      custom_profile_attributes_to_ignore: cdktf.listMapper(cdktf.stringToTerraform, false)(this._customProfileAttributesToIgnore),
       department: cdktf.stringToTerraform(this._department),
       display_name: cdktf.stringToTerraform(this._displayName),
       division: cdktf.stringToTerraform(this._division),

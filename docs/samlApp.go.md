@@ -101,6 +101,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-okta.samlApp.SamlApp.resetRecipient">ResetRecipient</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.samlApp.SamlApp.resetRequestCompressed">ResetRequestCompressed</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.samlApp.SamlApp.resetResponseSigned">ResetResponseSigned</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.samlApp.SamlApp.resetSamlSignedRequestEnabled">ResetSamlSignedRequestEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.samlApp.SamlApp.resetSamlVersion">ResetSamlVersion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.samlApp.SamlApp.resetSignatureAlgorithm">ResetSignatureAlgorithm</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.samlApp.SamlApp.resetSingleLogoutCertificate">ResetSingleLogoutCertificate</a></code> | *No description.* |
@@ -534,6 +535,12 @@ func ResetRequestCompressed()
 func ResetResponseSigned()
 ```
 
+##### `ResetSamlSignedRequestEnabled` <a name="ResetSamlSignedRequestEnabled" id="@cdktf/provider-okta.samlApp.SamlApp.resetSamlSignedRequestEnabled"></a>
+
+```go
+func ResetSamlSignedRequestEnabled()
+```
+
 ##### `ResetSamlVersion` <a name="ResetSamlVersion" id="@cdktf/provider-okta.samlApp.SamlApp.resetSamlVersion"></a>
 
 ```go
@@ -780,6 +787,7 @@ samlapp.SamlApp_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-okta.samlApp.SamlApp.property.recipientInput">RecipientInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.samlApp.SamlApp.property.requestCompressedInput">RequestCompressedInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.samlApp.SamlApp.property.responseSignedInput">ResponseSignedInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.samlApp.SamlApp.property.samlSignedRequestEnabledInput">SamlSignedRequestEnabledInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.samlApp.SamlApp.property.samlVersionInput">SamlVersionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.samlApp.SamlApp.property.signatureAlgorithmInput">SignatureAlgorithmInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.samlApp.SamlApp.property.singleLogoutCertificateInput">SingleLogoutCertificateInput</a></code> | <code>*string</code> | *No description.* |
@@ -830,6 +838,7 @@ samlapp.SamlApp_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-okta.samlApp.SamlApp.property.recipient">Recipient</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.samlApp.SamlApp.property.requestCompressed">RequestCompressed</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.samlApp.SamlApp.property.responseSigned">ResponseSigned</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.samlApp.SamlApp.property.samlSignedRequestEnabled">SamlSignedRequestEnabled</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.samlApp.SamlApp.property.samlVersion">SamlVersion</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.samlApp.SamlApp.property.signatureAlgorithm">SignatureAlgorithm</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.samlApp.SamlApp.property.singleLogoutCertificate">SingleLogoutCertificate</a></code> | <code>*string</code> | *No description.* |
@@ -1491,6 +1500,16 @@ func ResponseSignedInput() interface{}
 
 ---
 
+##### `SamlSignedRequestEnabledInput`<sup>Optional</sup> <a name="SamlSignedRequestEnabledInput" id="@cdktf/provider-okta.samlApp.SamlApp.property.samlSignedRequestEnabledInput"></a>
+
+```go
+func SamlSignedRequestEnabledInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `SamlVersionInput`<sup>Optional</sup> <a name="SamlVersionInput" id="@cdktf/provider-okta.samlApp.SamlApp.property.samlVersionInput"></a>
 
 ```go
@@ -1991,6 +2010,16 @@ func ResponseSigned() interface{}
 
 ---
 
+##### `SamlSignedRequestEnabled`<sup>Required</sup> <a name="SamlSignedRequestEnabled" id="@cdktf/provider-okta.samlApp.SamlApp.property.samlSignedRequestEnabled"></a>
+
+```go
+func SamlSignedRequestEnabled() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `SamlVersion`<sup>Required</sup> <a name="SamlVersion" id="@cdktf/provider-okta.samlApp.SamlApp.property.samlVersion"></a>
 
 ```go
@@ -2331,6 +2360,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/samlapp"
 	Recipient: *string,
 	RequestCompressed: interface{},
 	ResponseSigned: interface{},
+	SamlSignedRequestEnabled: interface{},
 	SamlVersion: *string,
 	SignatureAlgorithm: *string,
 	SingleLogoutCertificate: *string,
@@ -2396,6 +2426,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/samlapp"
 | <code><a href="#@cdktf/provider-okta.samlApp.SamlAppConfig.property.recipient">Recipient</a></code> | <code>*string</code> | The location where the app may present the SAML assertion. |
 | <code><a href="#@cdktf/provider-okta.samlApp.SamlAppConfig.property.requestCompressed">RequestCompressed</a></code> | <code>interface{}</code> | Denotes whether the request is compressed or not. |
 | <code><a href="#@cdktf/provider-okta.samlApp.SamlAppConfig.property.responseSigned">ResponseSigned</a></code> | <code>interface{}</code> | Determines whether the SAML auth response message is digitally signed. |
+| <code><a href="#@cdktf/provider-okta.samlApp.SamlAppConfig.property.samlSignedRequestEnabled">SamlSignedRequestEnabled</a></code> | <code>interface{}</code> | SAML Signed Request enabled. |
 | <code><a href="#@cdktf/provider-okta.samlApp.SamlAppConfig.property.samlVersion">SamlVersion</a></code> | <code>*string</code> | SAML version for the app's sign-on mode. |
 | <code><a href="#@cdktf/provider-okta.samlApp.SamlAppConfig.property.signatureAlgorithm">SignatureAlgorithm</a></code> | <code>*string</code> | Signature algorithm used ot digitally sign the assertion and response. |
 | <code><a href="#@cdktf/provider-okta.samlApp.SamlAppConfig.property.singleLogoutCertificate">SingleLogoutCertificate</a></code> | <code>*string</code> | x509 encoded certificate that the Service Provider uses to sign Single Logout requests. |
@@ -2947,6 +2978,20 @@ ResponseSigned interface{}
 Determines whether the SAML auth response message is digitally signed.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#response_signed SamlApp#response_signed}
+
+---
+
+##### `SamlSignedRequestEnabled`<sup>Optional</sup> <a name="SamlSignedRequestEnabled" id="@cdktf/provider-okta.samlApp.SamlAppConfig.property.samlSignedRequestEnabled"></a>
+
+```go
+SamlSignedRequestEnabled interface{}
+```
+
+- *Type:* interface{}
+
+SAML Signed Request enabled.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_app#saml_signed_request_enabled SamlApp#saml_signed_request_enabled}
 
 ---
 
