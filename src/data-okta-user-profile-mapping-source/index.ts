@@ -35,7 +35,7 @@ export class DataOktaUserProfileMappingSource extends cdktf.TerraformDataSource 
       terraformResourceType: 'okta_user_profile_mapping_source',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '3.43.0',
+        providerVersion: '3.44.0',
         providerVersionConstraint: '~> 3.20'
       },
       provider: config.provider,
