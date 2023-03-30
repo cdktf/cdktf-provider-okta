@@ -222,7 +222,7 @@ export class ProfileMapping extends cdktf.TerraformResource {
       terraformResourceType: 'okta_profile_mapping',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '3.44.0',
+        providerVersion: '3.45.0',
         providerVersionConstraint: '~> 3.20'
       },
       provider: config.provider,

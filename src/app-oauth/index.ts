@@ -972,7 +972,7 @@ export class AppOauth extends cdktf.TerraformResource {
       terraformResourceType: 'okta_app_oauth',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '3.44.0',
+        providerVersion: '3.45.0',
         providerVersionConstraint: '~> 3.20'
       },
       provider: config.provider,
