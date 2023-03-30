@@ -139,7 +139,7 @@ export class Domain extends cdktf.TerraformResource {
       terraformResourceType: 'okta_domain',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '3.44.0',
+        providerVersion: '3.45.0',
         providerVersionConstraint: '~> 3.20'
       },
       provider: config.provider,
