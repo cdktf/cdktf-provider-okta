@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/okta/r/oauth_app okt
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.oauthApp.OauthApp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/oauthapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/oauthapp"
 
 oauthapp.NewOauthApp(scope Construct, id *string, config OauthAppConfig) OauthApp
 ```
@@ -668,7 +668,7 @@ func ResetWildcardRedirect()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.oauthApp.OauthApp.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/oauthapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/oauthapp"
 
 oauthapp.OauthApp_IsConstruct(x interface{}) *bool
 ```
@@ -700,7 +700,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.oauthApp.OauthApp.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/oauthapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/oauthapp"
 
 oauthapp.OauthApp_IsTerraformElement(x interface{}) *bool
 ```
@@ -714,7 +714,7 @@ oauthapp.OauthApp_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.oauthApp.OauthApp.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/oauthapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/oauthapp"
 
 oauthapp.OauthApp_IsTerraformResource(x interface{}) *bool
 ```
@@ -2101,7 +2101,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.oauthApp.OauthAppConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/oauthapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/oauthapp"
 
 &oauthapp.OauthAppConfig {
 	Connection: interface{},
@@ -2130,7 +2130,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/oauthapp"
 	EnduserNote: *string,
 	GrantTypes: *[]*string,
 	Groups: *[]*string,
-	GroupsClaim: github.com/cdktf/cdktf-provider-okta-go/okta/v5.oauthApp.OauthAppGroupsClaim,
+	GroupsClaim: github.com/cdktf/cdktf-provider-okta-go/okta.oauthApp.OauthAppGroupsClaim,
 	HideIos: interface{},
 	HideWeb: interface{},
 	Id: *string,
@@ -2154,7 +2154,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/oauthapp"
 	SkipGroups: interface{},
 	SkipUsers: interface{},
 	Status: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-okta-go/okta/v5.oauthApp.OauthAppTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-okta-go/okta.oauthApp.OauthAppTimeouts,
 	TokenEndpointAuthMethod: *string,
 	TosUri: *string,
 	UserNameTemplate: *string,
@@ -3044,7 +3044,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.oauthApp.OauthAppGroupsClaim.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/oauthapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/oauthapp"
 
 &oauthapp.OauthAppGroupsClaim {
 	Name: *string,
@@ -3128,7 +3128,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.oauthApp.OauthAppJwks.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/oauthapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/oauthapp"
 
 &oauthapp.OauthAppJwks {
 	Kid: *string,
@@ -3210,7 +3210,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.oauthApp.OauthAppTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/oauthapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/oauthapp"
 
 &oauthapp.OauthAppTimeouts {
 	Create: *string,
@@ -3270,7 +3270,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.oauthApp.OauthAppUsers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/oauthapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/oauthapp"
 
 &oauthapp.OauthAppUsers {
 	Id: *string,
@@ -3341,7 +3341,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.oauthApp.OauthAppGroupsClaimOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/oauthapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/oauthapp"
 
 oauthapp.NewOauthAppGroupsClaimOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OauthAppGroupsClaimOutputReference
 ```
@@ -3696,7 +3696,7 @@ func InternalValue() OauthAppGroupsClaim
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.oauthApp.OauthAppJwksList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/oauthapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/oauthapp"
 
 oauthapp.NewOauthAppJwksList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OauthAppJwksList
 ```
@@ -3839,7 +3839,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.oauthApp.OauthAppJwksOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/oauthapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/oauthapp"
 
 oauthapp.NewOauthAppJwksOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OauthAppJwksOutputReference
 ```
@@ -4208,7 +4208,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.oauthApp.OauthAppTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/oauthapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/oauthapp"
 
 oauthapp.NewOauthAppTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OauthAppTimeoutsOutputReference
 ```
@@ -4544,7 +4544,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.oauthApp.OauthAppUsersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/oauthapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/oauthapp"
 
 oauthapp.NewOauthAppUsersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OauthAppUsersList
 ```
@@ -4687,7 +4687,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.oauthApp.OauthAppUsersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/oauthapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/oauthapp"
 
 oauthapp.NewOauthAppUsersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OauthAppUsersOutputReference
 ```
