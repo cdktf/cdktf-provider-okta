@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/okta/r/group_rule ok
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.groupRule.GroupRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/grouprule"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/grouprule"
 
 grouprule.NewGroupRule(scope Construct, id *string, config GroupRuleConfig) GroupRule
 ```
@@ -301,7 +301,7 @@ func ResetUsersExcluded()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.groupRule.GroupRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/grouprule"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/grouprule"
 
 grouprule.GroupRule_IsConstruct(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.groupRule.GroupRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/grouprule"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/grouprule"
 
 grouprule.GroupRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -347,7 +347,7 @@ grouprule.GroupRule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.groupRule.GroupRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/grouprule"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/grouprule"
 
 grouprule.GroupRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -722,7 +722,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.groupRule.GroupRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/grouprule"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/grouprule"
 
 &grouprule.GroupRuleConfig {
 	Connection: interface{},

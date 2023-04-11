@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/okta/d/network_zone 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktanetworkzone"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/dataoktanetworkzone"
 
 dataoktanetworkzone.NewDataOktaNetworkZone(scope Construct, id *string, config DataOktaNetworkZoneConfig) DataOktaNetworkZone
 ```
@@ -280,7 +280,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktanetworkzone"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/dataoktanetworkzone"
 
 dataoktanetworkzone.DataOktaNetworkZone_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktanetworkzone"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/dataoktanetworkzone"
 
 dataoktanetworkzone.DataOktaNetworkZone_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ dataoktanetworkzone.DataOktaNetworkZone_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktanetworkzone"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/dataoktanetworkzone"
 
 dataoktanetworkzone.DataOktaNetworkZone_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -624,7 +624,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZoneConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktanetworkzone"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/dataoktanetworkzone"
 
 &dataoktanetworkzone.DataOktaNetworkZoneConfig {
 	Connection: interface{},

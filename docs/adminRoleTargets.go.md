@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/okta/r/admin_role_ta
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.adminRoleTargets.AdminRoleTargets.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/adminroletargets"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/adminroletargets"
 
 adminroletargets.NewAdminRoleTargets(scope Construct, id *string, config AdminRoleTargetsConfig) AdminRoleTargets
 ```
@@ -287,7 +287,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.adminRoleTargets.AdminRoleTargets.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/adminroletargets"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/adminroletargets"
 
 adminroletargets.AdminRoleTargets_IsConstruct(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.adminRoleTargets.AdminRoleTargets.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/adminroletargets"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/adminroletargets"
 
 adminroletargets.AdminRoleTargets_IsTerraformElement(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ adminroletargets.AdminRoleTargets_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.adminRoleTargets.AdminRoleTargets.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/adminroletargets"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/adminroletargets"
 
 adminroletargets.AdminRoleTargets_IsTerraformResource(x interface{}) *bool
 ```
@@ -653,7 +653,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.adminRoleTargets.AdminRoleTargetsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/adminroletargets"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/adminroletargets"
 
 &adminroletargets.AdminRoleTargetsConfig {
 	Connection: interface{},
