@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/okta/d/idp_saml okta
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaIdpSaml.DataOktaIdpSaml.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/dataoktaidpsaml"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/dataoktaidpsaml"
 
 dataoktaidpsaml.NewDataOktaIdpSaml(scope Construct, id *string, config DataOktaIdpSamlConfig) DataOktaIdpSaml
 ```
@@ -280,7 +280,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.dataOktaIdpSaml.DataOktaIdpSaml.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/dataoktaidpsaml"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/dataoktaidpsaml"
 
 dataoktaidpsaml.DataOktaIdpSaml_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.dataOktaIdpSaml.DataOktaIdpSaml.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/dataoktaidpsaml"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/dataoktaidpsaml"
 
 dataoktaidpsaml.DataOktaIdpSaml_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ dataoktaidpsaml.DataOktaIdpSaml_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-okta.dataOktaIdpSaml.DataOktaIdpSaml.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/dataoktaidpsaml"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/dataoktaidpsaml"
 
 dataoktaidpsaml.DataOktaIdpSaml_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -679,7 +679,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaIdpSaml.DataOktaIdpSamlConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/dataoktaidpsaml"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/dataoktaidpsaml"
 
 &dataoktaidpsaml.DataOktaIdpSamlConfig {
 	Connection: interface{},

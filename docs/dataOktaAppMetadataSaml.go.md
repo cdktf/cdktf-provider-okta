@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/okta/d/app_metadata_
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaAppMetadataSaml.DataOktaAppMetadataSaml.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/dataoktaappmetadatasaml"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/dataoktaappmetadatasaml"
 
 dataoktaappmetadatasaml.NewDataOktaAppMetadataSaml(scope Construct, id *string, config DataOktaAppMetadataSamlConfig) DataOktaAppMetadataSaml
 ```
@@ -280,7 +280,7 @@ func ResetKeyId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.dataOktaAppMetadataSaml.DataOktaAppMetadataSaml.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/dataoktaappmetadatasaml"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/dataoktaappmetadatasaml"
 
 dataoktaappmetadatasaml.DataOktaAppMetadataSaml_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.dataOktaAppMetadataSaml.DataOktaAppMetadataSaml.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/dataoktaappmetadatasaml"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/dataoktaappmetadatasaml"
 
 dataoktaappmetadatasaml.DataOktaAppMetadataSaml_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ dataoktaappmetadatasaml.DataOktaAppMetadataSaml_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-okta.dataOktaAppMetadataSaml.DataOktaAppMetadataSaml.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/dataoktaappmetadatasaml"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/dataoktaappmetadatasaml"
 
 dataoktaappmetadatasaml.DataOktaAppMetadataSaml_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -635,7 +635,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaAppMetadataSaml.DataOktaAppMetadataSamlConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/dataoktaappmetadatasaml"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/dataoktaappmetadatasaml"
 
 &dataoktaappmetadatasaml.DataOktaAppMetadataSamlConfig {
 	Connection: interface{},

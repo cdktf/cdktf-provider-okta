@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/okta/r/factor_totp o
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.factorTotp.FactorTotp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/factortotp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/factortotp"
 
 factortotp.NewFactorTotp(scope Construct, id *string, config FactorTotpConfig) FactorTotp
 ```
@@ -308,7 +308,7 @@ func ResetTimeStep()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.factorTotp.FactorTotp.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/factortotp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/factortotp"
 
 factortotp.FactorTotp_IsConstruct(x interface{}) *bool
 ```
@@ -340,7 +340,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.factorTotp.FactorTotp.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/factortotp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/factortotp"
 
 factortotp.FactorTotp_IsTerraformElement(x interface{}) *bool
 ```
@@ -354,7 +354,7 @@ factortotp.FactorTotp_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.factorTotp.FactorTotp.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/factortotp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/factortotp"
 
 factortotp.FactorTotp_IsTerraformResource(x interface{}) *bool
 ```
@@ -707,7 +707,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.factorTotp.FactorTotpConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/factortotp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/factortotp"
 
 &factortotp.FactorTotpConfig {
 	Connection: interface{},

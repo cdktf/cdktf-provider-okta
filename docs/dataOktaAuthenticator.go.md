@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/okta/d/authenticator
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaAuthenticator.DataOktaAuthenticator.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/dataoktaauthenticator"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/dataoktaauthenticator"
 
 dataoktaauthenticator.NewDataOktaAuthenticator(scope Construct, id *string, config DataOktaAuthenticatorConfig) DataOktaAuthenticator
 ```
@@ -287,7 +287,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.dataOktaAuthenticator.DataOktaAuthenticator.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/dataoktaauthenticator"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/dataoktaauthenticator"
 
 dataoktaauthenticator.DataOktaAuthenticator_IsConstruct(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.dataOktaAuthenticator.DataOktaAuthenticator.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/dataoktaauthenticator"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/dataoktaauthenticator"
 
 dataoktaauthenticator.DataOktaAuthenticator_IsTerraformElement(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ dataoktaauthenticator.DataOktaAuthenticator_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-okta.dataOktaAuthenticator.DataOktaAuthenticator.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/dataoktaauthenticator"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/dataoktaauthenticator"
 
 dataoktaauthenticator.DataOktaAuthenticator_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -675,7 +675,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaAuthenticator.DataOktaAuthenticatorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/dataoktaauthenticator"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/dataoktaauthenticator"
 
 &dataoktaauthenticator.DataOktaAuthenticatorConfig {
 	Connection: interface{},

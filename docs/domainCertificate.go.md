@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/okta/r/domain_certif
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.domainCertificate.DomainCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/domaincertificate"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/domaincertificate"
 
 domaincertificate.NewDomainCertificate(scope Construct, id *string, config DomainCertificateConfig) DomainCertificate
 ```
@@ -280,7 +280,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.domainCertificate.DomainCertificate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/domaincertificate"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/domaincertificate"
 
 domaincertificate.DomainCertificate_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.domainCertificate.DomainCertificate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/domaincertificate"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/domaincertificate"
 
 domaincertificate.DomainCertificate_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ domaincertificate.DomainCertificate_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.domainCertificate.DomainCertificate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/domaincertificate"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/domaincertificate"
 
 domaincertificate.DomainCertificate_IsTerraformResource(x interface{}) *bool
 ```
@@ -657,7 +657,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.domainCertificate.DomainCertificateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/domaincertificate"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/domaincertificate"
 
 &domaincertificate.DomainCertificateConfig {
 	Connection: interface{},

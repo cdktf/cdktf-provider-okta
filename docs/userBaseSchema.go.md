@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/okta/r/user_base_sch
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.userBaseSchema.UserBaseSchema.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/userbaseschema"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/userbaseschema"
 
 userbaseschema.NewUserBaseSchema(scope Construct, id *string, config UserBaseSchemaConfig) UserBaseSchema
 ```
@@ -308,7 +308,7 @@ func ResetUserType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.userBaseSchema.UserBaseSchema.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/userbaseschema"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/userbaseschema"
 
 userbaseschema.UserBaseSchema_IsConstruct(x interface{}) *bool
 ```
@@ -340,7 +340,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.userBaseSchema.UserBaseSchema.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/userbaseschema"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/userbaseschema"
 
 userbaseschema.UserBaseSchema_IsTerraformElement(x interface{}) *bool
 ```
@@ -354,7 +354,7 @@ userbaseschema.UserBaseSchema_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.userBaseSchema.UserBaseSchema.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/userbaseschema"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/userbaseschema"
 
 userbaseschema.UserBaseSchema_IsTerraformResource(x interface{}) *bool
 ```
@@ -751,7 +751,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.userBaseSchema.UserBaseSchemaConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/userbaseschema"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/userbaseschema"
 
 &userbaseschema.UserBaseSchemaConfig {
 	Connection: interface{},

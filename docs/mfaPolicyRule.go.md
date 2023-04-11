@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy_ru
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.mfaPolicyRule.MfaPolicyRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/mfapolicyrule"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/mfapolicyrule"
 
 mfapolicyrule.NewMfaPolicyRule(scope Construct, id *string, config MfaPolicyRuleConfig) MfaPolicyRule
 ```
@@ -376,7 +376,7 @@ func ResetUsersExcluded()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.mfaPolicyRule.MfaPolicyRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/mfapolicyrule"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/mfapolicyrule"
 
 mfapolicyrule.MfaPolicyRule_IsConstruct(x interface{}) *bool
 ```
@@ -408,7 +408,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.mfaPolicyRule.MfaPolicyRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/mfapolicyrule"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/mfapolicyrule"
 
 mfapolicyrule.MfaPolicyRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -422,7 +422,7 @@ mfapolicyrule.MfaPolicyRule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.mfaPolicyRule.MfaPolicyRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/mfapolicyrule"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/mfapolicyrule"
 
 mfapolicyrule.MfaPolicyRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -907,7 +907,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.mfaPolicyRule.MfaPolicyRuleAppExclude.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/mfapolicyrule"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/mfapolicyrule"
 
 &mfapolicyrule.MfaPolicyRuleAppExclude {
 	Type: *string,
@@ -970,7 +970,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.mfaPolicyRule.MfaPolicyRuleAppInclude.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/mfapolicyrule"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/mfapolicyrule"
 
 &mfapolicyrule.MfaPolicyRuleAppInclude {
 	Type: *string,
@@ -1033,7 +1033,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.mfaPolicyRule.MfaPolicyRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/mfapolicyrule"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/mfapolicyrule"
 
 &mfapolicyrule.MfaPolicyRuleConfig {
 	Connection: interface{},
@@ -1348,7 +1348,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.mfaPolicyRule.MfaPolicyRuleAppExcludeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/mfapolicyrule"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/mfapolicyrule"
 
 mfapolicyrule.NewMfaPolicyRuleAppExcludeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MfaPolicyRuleAppExcludeList
 ```
@@ -1491,7 +1491,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.mfaPolicyRule.MfaPolicyRuleAppExcludeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/mfapolicyrule"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/mfapolicyrule"
 
 mfapolicyrule.NewMfaPolicyRuleAppExcludeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MfaPolicyRuleAppExcludeOutputReference
 ```
@@ -1838,7 +1838,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.mfaPolicyRule.MfaPolicyRuleAppIncludeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/mfapolicyrule"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/mfapolicyrule"
 
 mfapolicyrule.NewMfaPolicyRuleAppIncludeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MfaPolicyRuleAppIncludeList
 ```
@@ -1981,7 +1981,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.mfaPolicyRule.MfaPolicyRuleAppIncludeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v5/mfapolicyrule"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/mfapolicyrule"
 
 mfapolicyrule.NewMfaPolicyRuleAppIncludeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MfaPolicyRuleAppIncludeOutputReference
 ```
