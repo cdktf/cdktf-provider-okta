@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/okta/r/domain_verifi
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.domainVerification.DomainVerification.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/domainverification"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/domainverification"
 
 domainverification.NewDomainVerification(scope Construct, id *string, config DomainVerificationConfig) DomainVerification
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.domainVerification.DomainVerification.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/domainverification"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/domainverification"
 
 domainverification.DomainVerification_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.domainVerification.DomainVerification.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/domainverification"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/domainverification"
 
 domainverification.DomainVerification_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ domainverification.DomainVerification_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.domainVerification.DomainVerification.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/domainverification"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/domainverification"
 
 domainverification.DomainVerification_IsTerraformResource(x interface{}) *bool
 ```
@@ -562,7 +562,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.domainVerification.DomainVerificationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/domainverification"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/domainverification"
 
 &domainverification.DomainVerificationConfig {
 	Connection: interface{},

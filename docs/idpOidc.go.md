@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/okta/r/idp_oidc okta
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.idpOidc.IdpOidc.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/idpoidc"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/idpoidc"
 
 idpoidc.NewIdpOidc(scope Construct, id *string, config IdpOidcConfig) IdpOidc
 ```
@@ -420,7 +420,7 @@ func ResetUsernameTemplate()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.idpOidc.IdpOidc.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/idpoidc"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/idpoidc"
 
 idpoidc.IdpOidc_IsConstruct(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.idpOidc.IdpOidc.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/idpoidc"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/idpoidc"
 
 idpoidc.IdpOidc_IsTerraformElement(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ idpoidc.IdpOidc_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.idpOidc.IdpOidc.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/idpoidc"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/idpoidc"
 
 idpoidc.IdpOidc_IsTerraformResource(x interface{}) *bool
 ```
@@ -1413,7 +1413,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.idpOidc.IdpOidcConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/idpoidc"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/idpoidc"
 
 &idpoidc.IdpOidcConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/okta/r/link_value ok
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.linkValue.LinkValue.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/linkvalue"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/linkvalue"
 
 linkvalue.NewLinkValue(scope Construct, id *string, config LinkValueConfig) LinkValue
 ```
@@ -280,7 +280,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.linkValue.LinkValue.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/linkvalue"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/linkvalue"
 
 linkvalue.LinkValue_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.linkValue.LinkValue.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/linkvalue"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/linkvalue"
 
 linkvalue.LinkValue_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ linkvalue.LinkValue_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.linkValue.LinkValue.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/linkvalue"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/linkvalue"
 
 linkvalue.LinkValue_IsTerraformResource(x interface{}) *bool
 ```
@@ -613,7 +613,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.linkValue.LinkValueConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/linkvalue"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/linkvalue"
 
 &linkvalue.LinkValueConfig {
 	Connection: interface{},

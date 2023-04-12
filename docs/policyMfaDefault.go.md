@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/okta/r/policy_mfa_de
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefault.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/policymfadefault"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/policymfadefault"
 
 policymfadefault.NewPolicyMfaDefault(scope Construct, id *string, config PolicyMfaDefaultConfig) PolicyMfaDefault
 ```
@@ -427,7 +427,7 @@ func ResetYubikeyToken()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefault.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/policymfadefault"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/policymfadefault"
 
 policymfadefault.PolicyMfaDefault_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefault.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/policymfadefault"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/policymfadefault"
 
 policymfadefault.PolicyMfaDefault_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ policymfadefault.PolicyMfaDefault_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefault.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/policymfadefault"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/policymfadefault"
 
 policymfadefault.PolicyMfaDefault_IsTerraformResource(x interface{}) *bool
 ```
@@ -1233,7 +1233,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefaultConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/policymfadefault"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/policymfadefault"
 
 &policymfadefault.PolicyMfaDefaultConfig {
 	Connection: interface{},

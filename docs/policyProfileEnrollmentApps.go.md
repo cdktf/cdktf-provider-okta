@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/okta/r/policy_profil
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.policyProfileEnrollmentApps.PolicyProfileEnrollmentApps.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/policyprofileenrollmentapps"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/policyprofileenrollmentapps"
 
 policyprofileenrollmentapps.NewPolicyProfileEnrollmentApps(scope Construct, id *string, config PolicyProfileEnrollmentAppsConfig) PolicyProfileEnrollmentApps
 ```
@@ -280,7 +280,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.policyProfileEnrollmentApps.PolicyProfileEnrollmentApps.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/policyprofileenrollmentapps"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/policyprofileenrollmentapps"
 
 policyprofileenrollmentapps.PolicyProfileEnrollmentApps_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.policyProfileEnrollmentApps.PolicyProfileEnrollmentApps.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/policyprofileenrollmentapps"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/policyprofileenrollmentapps"
 
 policyprofileenrollmentapps.PolicyProfileEnrollmentApps_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ policyprofileenrollmentapps.PolicyProfileEnrollmentApps_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.policyProfileEnrollmentApps.PolicyProfileEnrollmentApps.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/policyprofileenrollmentapps"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/policyprofileenrollmentapps"
 
 policyprofileenrollmentapps.PolicyProfileEnrollmentApps_IsTerraformResource(x interface{}) *bool
 ```
@@ -602,7 +602,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.policyProfileEnrollmentApps.PolicyProfileEnrollmentAppsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/policyprofileenrollmentapps"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/policyprofileenrollmentapps"
 
 &policyprofileenrollmentapps.PolicyProfileEnrollmentAppsConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/okta/r/app_user_sche
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appUserSchema.AppUserSchema.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/appuserschema"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/appuserschema"
 
 appuserschema.NewAppUserSchema(scope Construct, id *string, config AppUserSchemaConfig) AppUserSchema
 ```
@@ -418,7 +418,7 @@ func ResetUserType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.appUserSchema.AppUserSchema.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/appuserschema"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/appuserschema"
 
 appuserschema.AppUserSchema_IsConstruct(x interface{}) *bool
 ```
@@ -450,7 +450,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.appUserSchema.AppUserSchema.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/appuserschema"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/appuserschema"
 
 appuserschema.AppUserSchema_IsTerraformElement(x interface{}) *bool
 ```
@@ -464,7 +464,7 @@ appuserschema.AppUserSchema_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.appUserSchema.AppUserSchema.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/appuserschema"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/appuserschema"
 
 appuserschema.AppUserSchema_IsTerraformResource(x interface{}) *bool
 ```
@@ -1147,7 +1147,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.appUserSchema.AppUserSchemaArrayOneOf.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/appuserschema"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/appuserschema"
 
 &appuserschema.AppUserSchemaArrayOneOf {
 	Const: *string,
@@ -1197,7 +1197,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.appUserSchema.AppUserSchemaConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/appuserschema"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/appuserschema"
 
 &appuserschema.AppUserSchemaConfig {
 	Connection: interface{},
@@ -1648,7 +1648,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.appUserSchema.AppUserSchemaOneOf.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/appuserschema"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/appuserschema"
 
 &appuserschema.AppUserSchemaOneOf {
 	Const: *string,
@@ -1700,7 +1700,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appUserSchema.AppUserSchemaArrayOneOfList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/appuserschema"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/appuserschema"
 
 appuserschema.NewAppUserSchemaArrayOneOfList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppUserSchemaArrayOneOfList
 ```
@@ -1843,7 +1843,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appUserSchema.AppUserSchemaArrayOneOfOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/appuserschema"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/appuserschema"
 
 appuserschema.NewAppUserSchemaArrayOneOfOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppUserSchemaArrayOneOfOutputReference
 ```
@@ -2154,7 +2154,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appUserSchema.AppUserSchemaOneOfList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/appuserschema"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/appuserschema"
 
 appuserschema.NewAppUserSchemaOneOfList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppUserSchemaOneOfList
 ```
@@ -2297,7 +2297,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appUserSchema.AppUserSchemaOneOfOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/appuserschema"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/appuserschema"
 
 appuserschema.NewAppUserSchemaOneOfOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppUserSchemaOneOfOutputReference
 ```
