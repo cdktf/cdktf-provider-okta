@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/okta/r/app_oauth_api
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appOauthApiScope.AppOauthApiScope.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/appoauthapiscope"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appoauthapiscope"
 
 appoauthapiscope.NewAppOauthApiScope(scope Construct, id *string, config AppOauthApiScopeConfig) AppOauthApiScope
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.appOauthApiScope.AppOauthApiScope.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/appoauthapiscope"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appoauthapiscope"
 
 appoauthapiscope.AppOauthApiScope_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.appOauthApiScope.AppOauthApiScope.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/appoauthapiscope"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appoauthapiscope"
 
 appoauthapiscope.AppOauthApiScope_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ appoauthapiscope.AppOauthApiScope_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.appOauthApiScope.AppOauthApiScope.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/appoauthapiscope"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appoauthapiscope"
 
 appoauthapiscope.AppOauthApiScope_IsTerraformResource(x interface{}) *bool
 ```
@@ -606,7 +606,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.appOauthApiScope.AppOauthApiScopeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/appoauthapiscope"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appoauthapiscope"
 
 &appoauthapiscope.AppOauthApiScopeConfig {
 	Connection: interface{},

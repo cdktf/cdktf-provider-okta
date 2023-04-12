@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/okta/r/user_schema o
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.userSchema.UserSchema.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/userschema"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/userschema"
 
 userschema.NewUserSchema(scope Construct, id *string, config UserSchemaConfig) UserSchema
 ```
@@ -438,7 +438,7 @@ func ResetUserType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.userSchema.UserSchema.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/userschema"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/userschema"
 
 userschema.UserSchema_IsConstruct(x interface{}) *bool
 ```
@@ -470,7 +470,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.userSchema.UserSchema.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/userschema"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/userschema"
 
 userschema.UserSchema_IsTerraformElement(x interface{}) *bool
 ```
@@ -484,7 +484,7 @@ userschema.UserSchema_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.userSchema.UserSchema.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/userschema"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/userschema"
 
 userschema.UserSchema_IsTerraformResource(x interface{}) *bool
 ```
@@ -1167,7 +1167,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.userSchema.UserSchemaArrayOneOf.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/userschema"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/userschema"
 
 &userschema.UserSchemaArrayOneOf {
 	Const: *string,
@@ -1217,7 +1217,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.userSchema.UserSchemaConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/userschema"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/userschema"
 
 &userschema.UserSchemaConfig {
 	Connection: interface{},
@@ -1670,7 +1670,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.userSchema.UserSchemaMasterOverridePriority.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/userschema"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/userschema"
 
 &userschema.UserSchemaMasterOverridePriority {
 	Value: *string,
@@ -1716,7 +1716,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.userSchema.UserSchemaOneOf.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/userschema"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/userschema"
 
 &userschema.UserSchemaOneOf {
 	Const: *string,
@@ -1768,7 +1768,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.userSchema.UserSchemaArrayOneOfList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/userschema"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/userschema"
 
 userschema.NewUserSchemaArrayOneOfList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) UserSchemaArrayOneOfList
 ```
@@ -1911,7 +1911,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.userSchema.UserSchemaArrayOneOfOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/userschema"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/userschema"
 
 userschema.NewUserSchemaArrayOneOfOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) UserSchemaArrayOneOfOutputReference
 ```
@@ -2222,7 +2222,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.userSchema.UserSchemaMasterOverridePriorityList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/userschema"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/userschema"
 
 userschema.NewUserSchemaMasterOverridePriorityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) UserSchemaMasterOverridePriorityList
 ```
@@ -2365,7 +2365,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.userSchema.UserSchemaMasterOverridePriorityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/userschema"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/userschema"
 
 userschema.NewUserSchemaMasterOverridePriorityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) UserSchemaMasterOverridePriorityOutputReference
 ```
@@ -2683,7 +2683,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.userSchema.UserSchemaOneOfList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/userschema"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/userschema"
 
 userschema.NewUserSchemaOneOfList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) UserSchemaOneOfList
 ```
@@ -2826,7 +2826,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.userSchema.UserSchemaOneOfOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/userschema"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/userschema"
 
 userschema.NewUserSchemaOneOfOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) UserSchemaOneOfOutputReference
 ```

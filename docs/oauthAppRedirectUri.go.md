@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/okta/r/oauth_app_red
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.oauthAppRedirectUri.OauthAppRedirectUri.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/oauthappredirecturi"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/oauthappredirecturi"
 
 oauthappredirecturi.NewOauthAppRedirectUri(scope Construct, id *string, config OauthAppRedirectUriConfig) OauthAppRedirectUri
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.oauthAppRedirectUri.OauthAppRedirectUri.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/oauthappredirecturi"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/oauthappredirecturi"
 
 oauthappredirecturi.OauthAppRedirectUri_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.oauthAppRedirectUri.OauthAppRedirectUri.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/oauthappredirecturi"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/oauthappredirecturi"
 
 oauthappredirecturi.OauthAppRedirectUri_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ oauthappredirecturi.OauthAppRedirectUri_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.oauthAppRedirectUri.OauthAppRedirectUri.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/oauthappredirecturi"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/oauthappredirecturi"
 
 oauthappredirecturi.OauthAppRedirectUri_IsTerraformResource(x interface{}) *bool
 ```
@@ -584,7 +584,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.oauthAppRedirectUri.OauthAppRedirectUriConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/oauthappredirecturi"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/oauthappredirecturi"
 
 &oauthappredirecturi.OauthAppRedirectUriConfig {
 	Connection: interface{},

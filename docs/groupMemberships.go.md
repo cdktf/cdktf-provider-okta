@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/okta/r/group_members
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.groupMemberships.GroupMemberships.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/groupmemberships"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/groupmemberships"
 
 groupmemberships.NewGroupMemberships(scope Construct, id *string, config GroupMembershipsConfig) GroupMemberships
 ```
@@ -280,7 +280,7 @@ func ResetTrackAllUsers()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.groupMemberships.GroupMemberships.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/groupmemberships"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/groupmemberships"
 
 groupmemberships.GroupMemberships_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.groupMemberships.GroupMemberships.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/groupmemberships"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/groupmemberships"
 
 groupmemberships.GroupMemberships_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ groupmemberships.GroupMemberships_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.groupMemberships.GroupMemberships.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/groupmemberships"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/groupmemberships"
 
 groupmemberships.GroupMemberships_IsTerraformResource(x interface{}) *bool
 ```
@@ -613,7 +613,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.groupMemberships.GroupMembershipsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/groupmemberships"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/groupmemberships"
 
 &groupmemberships.GroupMembershipsConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/okta/d/domain okta_d
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaDomain.DataOktaDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/dataoktadomain"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktadomain"
 
 dataoktadomain.NewDataOktaDomain(scope Construct, id *string, config DataOktaDomainConfig) DataOktaDomain
 ```
@@ -266,7 +266,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.dataOktaDomain.DataOktaDomain.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/dataoktadomain"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktadomain"
 
 dataoktadomain.DataOktaDomain_IsConstruct(x interface{}) *bool
 ```
@@ -298,7 +298,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.dataOktaDomain.DataOktaDomain.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/dataoktadomain"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktadomain"
 
 dataoktadomain.DataOktaDomain_IsTerraformElement(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ dataoktadomain.DataOktaDomain_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-okta.dataOktaDomain.DataOktaDomain.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/dataoktadomain"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktadomain"
 
 dataoktadomain.DataOktaDomain_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -577,7 +577,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaDomain.DataOktaDomainConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/dataoktadomain"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktadomain"
 
 &dataoktadomain.DataOktaDomainConfig {
 	Connection: interface{},
@@ -695,7 +695,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaDomain.DataOktaDomainDnsRecords.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/dataoktadomain"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktadomain"
 
 &dataoktadomain.DataOktaDomainDnsRecords {
 
@@ -710,7 +710,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/dataoktadomain"
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaDomain.DataOktaDomainDnsRecordsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/dataoktadomain"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktadomain"
 
 dataoktadomain.NewDataOktaDomainDnsRecordsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOktaDomainDnsRecordsList
 ```
@@ -842,7 +842,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaDomain.DataOktaDomainDnsRecordsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/dataoktadomain"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktadomain"
 
 dataoktadomain.NewDataOktaDomainDnsRecordsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataOktaDomainDnsRecordsOutputReference
 ```

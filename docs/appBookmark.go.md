@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/okta/r/app_bookmark 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appBookmark.AppBookmark.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/appbookmark"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appbookmark"
 
 appbookmark.NewAppBookmark(scope Construct, id *string, config AppBookmarkConfig) AppBookmark
 ```
@@ -425,7 +425,7 @@ func ResetUsers()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.appBookmark.AppBookmark.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/appbookmark"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appbookmark"
 
 appbookmark.AppBookmark_IsConstruct(x interface{}) *bool
 ```
@@ -457,7 +457,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.appBookmark.AppBookmark.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/appbookmark"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appbookmark"
 
 appbookmark.AppBookmark_IsTerraformElement(x interface{}) *bool
 ```
@@ -471,7 +471,7 @@ appbookmark.AppBookmark_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.appBookmark.AppBookmark.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/appbookmark"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appbookmark"
 
 appbookmark.AppBookmark_IsTerraformResource(x interface{}) *bool
 ```
@@ -1165,7 +1165,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.appBookmark.AppBookmarkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/appbookmark"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appbookmark"
 
 &appbookmark.AppBookmarkConfig {
 	Connection: interface{},
@@ -1194,7 +1194,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/appbookmark"
 	SkipGroups: interface{},
 	SkipUsers: interface{},
 	Status: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-okta-go/okta/v6.appBookmark.AppBookmarkTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-okta-go/okta.appBookmark.AppBookmarkTimeouts,
 	Users: interface{},
 }
 ```
@@ -1600,7 +1600,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.appBookmark.AppBookmarkTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/appbookmark"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appbookmark"
 
 &appbookmark.AppBookmarkTimeouts {
 	Create: *string,
@@ -1660,7 +1660,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/appbookmark"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appbookmark"
 
 &appbookmark.AppBookmarkUsers {
 	Id: *string,
@@ -1731,7 +1731,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appBookmark.AppBookmarkTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/appbookmark"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appbookmark"
 
 appbookmark.NewAppBookmarkTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppBookmarkTimeoutsOutputReference
 ```
@@ -2067,7 +2067,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/appbookmark"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appbookmark"
 
 appbookmark.NewAppBookmarkUsersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppBookmarkUsersList
 ```
@@ -2210,7 +2210,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/appbookmark"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appbookmark"
 
 appbookmark.NewAppBookmarkUsersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppBookmarkUsersOutputReference
 ```

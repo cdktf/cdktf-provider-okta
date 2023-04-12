@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/okta/d/email_customi
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaEmailCustomization.DataOktaEmailCustomization.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/dataoktaemailcustomization"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaemailcustomization"
 
 dataoktaemailcustomization.NewDataOktaEmailCustomization(scope Construct, id *string, config DataOktaEmailCustomizationConfig) DataOktaEmailCustomization
 ```
@@ -266,7 +266,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.dataOktaEmailCustomization.DataOktaEmailCustomization.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/dataoktaemailcustomization"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaemailcustomization"
 
 dataoktaemailcustomization.DataOktaEmailCustomization_IsConstruct(x interface{}) *bool
 ```
@@ -298,7 +298,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.dataOktaEmailCustomization.DataOktaEmailCustomization.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/dataoktaemailcustomization"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaemailcustomization"
 
 dataoktaemailcustomization.DataOktaEmailCustomization_IsTerraformElement(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ dataoktaemailcustomization.DataOktaEmailCustomization_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-okta.dataOktaEmailCustomization.DataOktaEmailCustomization.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/dataoktaemailcustomization"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaemailcustomization"
 
 dataoktaemailcustomization.DataOktaEmailCustomization_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -621,7 +621,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaEmailCustomization.DataOktaEmailCustomizationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/dataoktaemailcustomization"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaemailcustomization"
 
 &dataoktaemailcustomization.DataOktaEmailCustomizationConfig {
 	Connection: interface{},
