@@ -1,3 +1,7 @@
+# `okta_link_definition`
+
+Refer to the Terraform Registory for docs: [`okta_link_definition`](https://www.terraform.io/docs/providers/okta/r/link_definition).
+
 # `linkDefinition` Submodule <a name="`linkDefinition` Submodule" id="@cdktf/provider-okta.linkDefinition"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

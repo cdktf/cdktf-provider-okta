@@ -1,3 +1,7 @@
+# `okta_role_subscription`
+
+Refer to the Terraform Registory for docs: [`okta_role_subscription`](https://www.terraform.io/docs/providers/okta/r/role_subscription).
+
 # `roleSubscription` Submodule <a name="`roleSubscription` Submodule" id="@cdktf/provider-okta.roleSubscription"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

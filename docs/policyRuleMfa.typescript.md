@@ -1,3 +1,7 @@
+# `okta_policy_rule_mfa`
+
+Refer to the Terraform Registory for docs: [`okta_policy_rule_mfa`](https://www.terraform.io/docs/providers/okta/r/policy_rule_mfa).
+
 # `policyRuleMfa` Submodule <a name="`policyRuleMfa` Submodule" id="@cdktf/provider-okta.policyRuleMfa"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

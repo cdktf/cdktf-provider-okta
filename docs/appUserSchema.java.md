@@ -1,3 +1,7 @@
+# `okta_app_user_schema`
+
+Refer to the Terraform Registory for docs: [`okta_app_user_schema`](https://www.terraform.io/docs/providers/okta/r/app_user_schema).
+
 # `appUserSchema` Submodule <a name="`appUserSchema` Submodule" id="@cdktf/provider-okta.appUserSchema"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

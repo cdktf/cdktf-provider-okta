@@ -1,3 +1,7 @@
+# `okta_network_zone`
+
+Refer to the Terraform Registory for docs: [`okta_network_zone`](https://www.terraform.io/docs/providers/okta/r/network_zone).
+
 # `networkZone` Submodule <a name="`networkZone` Submodule" id="@cdktf/provider-okta.networkZone"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

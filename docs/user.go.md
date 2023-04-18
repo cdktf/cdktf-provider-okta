@@ -1,3 +1,7 @@
+# `okta_user`
+
+Refer to the Terraform Registory for docs: [`okta_user`](https://www.terraform.io/docs/providers/okta/r/user).
+
 # `user` Submodule <a name="`user` Submodule" id="@cdktf/provider-okta.user"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

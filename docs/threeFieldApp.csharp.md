@@ -1,3 +1,7 @@
+# `okta_three_field_app`
+
+Refer to the Terraform Registory for docs: [`okta_three_field_app`](https://www.terraform.io/docs/providers/okta/r/three_field_app).
+
 # `threeFieldApp` Submodule <a name="`threeFieldApp` Submodule" id="@cdktf/provider-okta.threeFieldApp"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

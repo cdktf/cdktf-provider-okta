@@ -1,3 +1,7 @@
+# `okta_email_sender_verification`
+
+Refer to the Terraform Registory for docs: [`okta_email_sender_verification`](https://www.terraform.io/docs/providers/okta/r/email_sender_verification).
+
 # `emailSenderVerification` Submodule <a name="`emailSenderVerification` Submodule" id="@cdktf/provider-okta.emailSenderVerification"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

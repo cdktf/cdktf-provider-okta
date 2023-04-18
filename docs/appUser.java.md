@@ -1,3 +1,7 @@
+# `okta_app_user`
+
+Refer to the Terraform Registory for docs: [`okta_app_user`](https://www.terraform.io/docs/providers/okta/r/app_user).
+
 # `appUser` Submodule <a name="`appUser` Submodule" id="@cdktf/provider-okta.appUser"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

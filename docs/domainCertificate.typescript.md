@@ -1,3 +1,7 @@
+# `okta_domain_certificate`
+
+Refer to the Terraform Registory for docs: [`okta_domain_certificate`](https://www.terraform.io/docs/providers/okta/r/domain_certificate).
+
 # `domainCertificate` Submodule <a name="`domainCertificate` Submodule" id="@cdktf/provider-okta.domainCertificate"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

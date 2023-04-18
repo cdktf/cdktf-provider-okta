@@ -1,3 +1,7 @@
+# `data_okta_app_user_assignments`
+
+Refer to the Terraform Registory for docs: [`data_okta_app_user_assignments`](https://www.terraform.io/docs/providers/okta/d/app_user_assignments).
+
 # `dataOktaAppUserAssignments` Submodule <a name="`dataOktaAppUserAssignments` Submodule" id="@cdktf/provider-okta.dataOktaAppUserAssignments"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `okta_idp_oidc`
+
+Refer to the Terraform Registory for docs: [`okta_idp_oidc`](https://www.terraform.io/docs/providers/okta/r/idp_oidc).
+
 # `idpOidc` Submodule <a name="`idpOidc` Submodule" id="@cdktf/provider-okta.idpOidc"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

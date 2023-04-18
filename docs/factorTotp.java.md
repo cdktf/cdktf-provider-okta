@@ -1,3 +1,7 @@
+# `okta_factor_totp`
+
+Refer to the Terraform Registory for docs: [`okta_factor_totp`](https://www.terraform.io/docs/providers/okta/r/factor_totp).
+
 # `factorTotp` Submodule <a name="`factorTotp` Submodule" id="@cdktf/provider-okta.factorTotp"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

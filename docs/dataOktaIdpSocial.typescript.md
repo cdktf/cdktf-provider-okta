@@ -1,3 +1,7 @@
+# `data_okta_idp_social`
+
+Refer to the Terraform Registory for docs: [`data_okta_idp_social`](https://www.terraform.io/docs/providers/okta/d/idp_social).
+
 # `dataOktaIdpSocial` Submodule <a name="`dataOktaIdpSocial` Submodule" id="@cdktf/provider-okta.dataOktaIdpSocial"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `okta_factor`
+
+Refer to the Terraform Registory for docs: [`okta_factor`](https://www.terraform.io/docs/providers/okta/r/factor).
+
 # `factor` Submodule <a name="`factor` Submodule" id="@cdktf/provider-okta.factor"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

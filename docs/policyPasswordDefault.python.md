@@ -1,3 +1,7 @@
+# `okta_policy_password_default`
+
+Refer to the Terraform Registory for docs: [`okta_policy_password_default`](https://www.terraform.io/docs/providers/okta/r/policy_password_default).
+
 # `policyPasswordDefault` Submodule <a name="`policyPasswordDefault` Submodule" id="@cdktf/provider-okta.policyPasswordDefault"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

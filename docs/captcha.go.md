@@ -1,3 +1,7 @@
+# `okta_captcha`
+
+Refer to the Terraform Registory for docs: [`okta_captcha`](https://www.terraform.io/docs/providers/okta/r/captcha).
+
 # `captcha` Submodule <a name="`captcha` Submodule" id="@cdktf/provider-okta.captcha"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

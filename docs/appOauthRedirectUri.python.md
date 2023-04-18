@@ -1,3 +1,7 @@
+# `okta_app_oauth_redirect_uri`
+
+Refer to the Terraform Registory for docs: [`okta_app_oauth_redirect_uri`](https://www.terraform.io/docs/providers/okta/r/app_oauth_redirect_uri).
+
 # `appOauthRedirectUri` Submodule <a name="`appOauthRedirectUri` Submodule" id="@cdktf/provider-okta.appOauthRedirectUri"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

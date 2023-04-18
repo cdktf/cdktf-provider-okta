@@ -1,3 +1,7 @@
+# `data_okta_policy`
+
+Refer to the Terraform Registory for docs: [`data_okta_policy`](https://www.terraform.io/docs/providers/okta/d/policy).
+
 # `dataOktaPolicy` Submodule <a name="`dataOktaPolicy` Submodule" id="@cdktf/provider-okta.dataOktaPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
