@@ -1,3 +1,7 @@
+# `okta_app_secure_password_store`
+
+Refer to the Terraform Registory for docs: [`okta_app_secure_password_store`](https://www.terraform.io/docs/providers/okta/r/app_secure_password_store).
+
 # `appSecurePasswordStore` Submodule <a name="`appSecurePasswordStore` Submodule" id="@cdktf/provider-okta.appSecurePasswordStore"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

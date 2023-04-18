@@ -1,3 +1,7 @@
+# `data_okta_everyone_group`
+
+Refer to the Terraform Registory for docs: [`data_okta_everyone_group`](https://www.terraform.io/docs/providers/okta/d/everyone_group).
+
 # `dataOktaEveryoneGroup` Submodule <a name="`dataOktaEveryoneGroup` Submodule" id="@cdktf/provider-okta.dataOktaEveryoneGroup"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

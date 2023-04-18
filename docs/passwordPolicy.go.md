@@ -1,3 +1,7 @@
+# `okta_password_policy`
+
+Refer to the Terraform Registory for docs: [`okta_password_policy`](https://www.terraform.io/docs/providers/okta/r/password_policy).
+
 # `passwordPolicy` Submodule <a name="`passwordPolicy` Submodule" id="@cdktf/provider-okta.passwordPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

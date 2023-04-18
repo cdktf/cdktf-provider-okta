@@ -1,3 +1,7 @@
+# `okta_event_hook_verification`
+
+Refer to the Terraform Registory for docs: [`okta_event_hook_verification`](https://www.terraform.io/docs/providers/okta/r/event_hook_verification).
+
 # `eventHookVerification` Submodule <a name="`eventHookVerification` Submodule" id="@cdktf/provider-okta.eventHookVerification"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

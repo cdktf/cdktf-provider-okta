@@ -1,3 +1,7 @@
+# `data_okta_authenticator`
+
+Refer to the Terraform Registory for docs: [`data_okta_authenticator`](https://www.terraform.io/docs/providers/okta/d/authenticator).
+
 # `dataOktaAuthenticator` Submodule <a name="`dataOktaAuthenticator` Submodule" id="@cdktf/provider-okta.dataOktaAuthenticator"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

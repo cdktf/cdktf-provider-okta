@@ -1,3 +1,7 @@
+# `okta_security_notification_emails`
+
+Refer to the Terraform Registory for docs: [`okta_security_notification_emails`](https://www.terraform.io/docs/providers/okta/r/security_notification_emails).
+
 # `securityNotificationEmails` Submodule <a name="`securityNotificationEmails` Submodule" id="@cdktf/provider-okta.securityNotificationEmails"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `okta_user_schema_property`
+
+Refer to the Terraform Registory for docs: [`okta_user_schema_property`](https://www.terraform.io/docs/providers/okta/r/user_schema_property).
+
 # `userSchemaProperty` Submodule <a name="`userSchemaProperty` Submodule" id="@cdktf/provider-okta.userSchemaProperty"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `okta_user_base_schema`
+
+Refer to the Terraform Registory for docs: [`okta_user_base_schema`](https://www.terraform.io/docs/providers/okta/r/user_base_schema).
+
 # `userBaseSchema` Submodule <a name="`userBaseSchema` Submodule" id="@cdktf/provider-okta.userBaseSchema"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

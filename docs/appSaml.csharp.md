@@ -1,3 +1,7 @@
+# `okta_app_saml`
+
+Refer to the Terraform Registory for docs: [`okta_app_saml`](https://www.terraform.io/docs/providers/okta/r/app_saml).
+
 # `appSaml` Submodule <a name="`appSaml` Submodule" id="@cdktf/provider-okta.appSaml"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

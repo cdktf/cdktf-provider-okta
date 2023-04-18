@@ -1,3 +1,7 @@
+# `okta_policy_signon`
+
+Refer to the Terraform Registory for docs: [`okta_policy_signon`](https://www.terraform.io/docs/providers/okta/r/policy_signon).
+
 # `policySignon` Submodule <a name="`policySignon` Submodule" id="@cdktf/provider-okta.policySignon"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

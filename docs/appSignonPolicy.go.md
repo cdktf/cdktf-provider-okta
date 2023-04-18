@@ -1,3 +1,7 @@
+# `okta_app_signon_policy`
+
+Refer to the Terraform Registory for docs: [`okta_app_signon_policy`](https://www.terraform.io/docs/providers/okta/r/app_signon_policy).
+
 # `appSignonPolicy` Submodule <a name="`appSignonPolicy` Submodule" id="@cdktf/provider-okta.appSignonPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

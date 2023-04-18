@@ -1,3 +1,7 @@
+# `okta_group_memberships`
+
+Refer to the Terraform Registory for docs: [`okta_group_memberships`](https://www.terraform.io/docs/providers/okta/r/group_memberships).
+
 # `groupMemberships` Submodule <a name="`groupMemberships` Submodule" id="@cdktf/provider-okta.groupMemberships"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

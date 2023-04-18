@@ -1,3 +1,7 @@
+# `okta_org_configuration`
+
+Refer to the Terraform Registory for docs: [`okta_org_configuration`](https://www.terraform.io/docs/providers/okta/r/org_configuration).
+
 # `orgConfiguration` Submodule <a name="`orgConfiguration` Submodule" id="@cdktf/provider-okta.orgConfiguration"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

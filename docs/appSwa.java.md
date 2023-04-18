@@ -1,3 +1,7 @@
+# `okta_app_swa`
+
+Refer to the Terraform Registory for docs: [`okta_app_swa`](https://www.terraform.io/docs/providers/okta/r/app_swa).
+
 # `appSwa` Submodule <a name="`appSwa` Submodule" id="@cdktf/provider-okta.appSwa"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

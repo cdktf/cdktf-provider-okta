@@ -1,3 +1,7 @@
+# `okta_behavior`
+
+Refer to the Terraform Registory for docs: [`okta_behavior`](https://www.terraform.io/docs/providers/okta/r/behavior).
+
 # `behavior` Submodule <a name="`behavior` Submodule" id="@cdktf/provider-okta.behavior"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `okta_policy_profile_enrollment_apps`
+
+Refer to the Terraform Registory for docs: [`okta_policy_profile_enrollment_apps`](https://www.terraform.io/docs/providers/okta/r/policy_profile_enrollment_apps).
+
 # `policyProfileEnrollmentApps` Submodule <a name="`policyProfileEnrollmentApps` Submodule" id="@cdktf/provider-okta.policyProfileEnrollmentApps"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

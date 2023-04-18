@@ -1,3 +1,7 @@
+# `okta_template_sms`
+
+Refer to the Terraform Registory for docs: [`okta_template_sms`](https://www.terraform.io/docs/providers/okta/r/template_sms).
+
 # `templateSms` Submodule <a name="`templateSms` Submodule" id="@cdktf/provider-okta.templateSms"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

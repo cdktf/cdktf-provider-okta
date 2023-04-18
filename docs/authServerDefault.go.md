@@ -1,3 +1,7 @@
+# `okta_auth_server_default`
+
+Refer to the Terraform Registory for docs: [`okta_auth_server_default`](https://www.terraform.io/docs/providers/okta/r/auth_server_default).
+
 # `authServerDefault` Submodule <a name="`authServerDefault` Submodule" id="@cdktf/provider-okta.authServerDefault"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
