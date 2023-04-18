@@ -162,7 +162,7 @@ export class IdpSocial extends cdktf.TerraformResource {
       terraformResourceType: 'okta_idp_social',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '3.45.0',
+        providerVersion: '3.46.0',
         providerVersionConstraint: '~> 3.20'
       },
       provider: config.provider,
