@@ -13,7 +13,7 @@ Represents a {@link https://www.terraform.io/docs/providers/okta/d/auth_server_c
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaAuthServerClaim.DataOktaAuthServerClaim.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/dataoktaauthserverclaim"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaauthserverclaim"
 
 dataoktaauthserverclaim.NewDataOktaAuthServerClaim(scope Construct, id *string, config DataOktaAuthServerClaimConfig) DataOktaAuthServerClaim
 ```
@@ -284,7 +284,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.dataOktaAuthServerClaim.DataOktaAuthServerClaim.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/dataoktaauthserverclaim"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaauthserverclaim"
 
 dataoktaauthserverclaim.DataOktaAuthServerClaim_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.dataOktaAuthServerClaim.DataOktaAuthServerClaim.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/dataoktaauthserverclaim"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaauthserverclaim"
 
 dataoktaauthserverclaim.DataOktaAuthServerClaim_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ dataoktaauthserverclaim.DataOktaAuthServerClaim_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-okta.dataOktaAuthServerClaim.DataOktaAuthServerClaim.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/dataoktaauthserverclaim"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaauthserverclaim"
 
 dataoktaauthserverclaim.DataOktaAuthServerClaim_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -639,7 +639,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaAuthServerClaim.DataOktaAuthServerClaimConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/dataoktaauthserverclaim"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaauthserverclaim"
 
 &dataoktaauthserverclaim.DataOktaAuthServerClaimConfig {
 	Connection: interface{},

@@ -13,7 +13,7 @@ Represents a {@link https://www.terraform.io/docs/providers/okta/r/swa_app okta_
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.swaApp.SwaApp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/swaapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/swaapp"
 
 swaapp.NewSwaApp(scope Construct, id *string, config SwaAppConfig) SwaApp
 ```
@@ -499,7 +499,7 @@ func ResetUsers()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.swaApp.SwaApp.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/swaapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/swaapp"
 
 swaapp.SwaApp_IsConstruct(x interface{}) *bool
 ```
@@ -531,7 +531,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.swaApp.SwaApp.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/swaapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/swaapp"
 
 swaapp.SwaApp_IsTerraformElement(x interface{}) *bool
 ```
@@ -545,7 +545,7 @@ swaapp.SwaApp_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.swaApp.SwaApp.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/swaapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/swaapp"
 
 swaapp.SwaApp_IsTerraformResource(x interface{}) *bool
 ```
@@ -1437,7 +1437,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.swaApp.SwaAppConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/swaapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/swaapp"
 
 &swaapp.SwaAppConfig {
 	Connection: interface{},
@@ -1468,7 +1468,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/swaapp"
 	SkipGroups: interface{},
 	SkipUsers: interface{},
 	Status: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-okta-go/okta/v6.swaApp.SwaAppTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-okta-go/okta.swaApp.SwaAppTimeouts,
 	Url: *string,
 	UrlRegex: *string,
 	UsernameField: *string,
@@ -2020,7 +2020,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.swaApp.SwaAppTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/swaapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/swaapp"
 
 &swaapp.SwaAppTimeouts {
 	Create: *string,
@@ -2080,7 +2080,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.swaApp.SwaAppUsers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/swaapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/swaapp"
 
 &swaapp.SwaAppUsers {
 	Id: *string,
@@ -2151,7 +2151,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.swaApp.SwaAppTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/swaapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/swaapp"
 
 swaapp.NewSwaAppTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SwaAppTimeoutsOutputReference
 ```
@@ -2487,7 +2487,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.swaApp.SwaAppUsersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/swaapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/swaapp"
 
 swaapp.NewSwaAppUsersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SwaAppUsersList
 ```
@@ -2630,7 +2630,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.swaApp.SwaAppUsersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/swaapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/swaapp"
 
 swaapp.NewSwaAppUsersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SwaAppUsersOutputReference
 ```

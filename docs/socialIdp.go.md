@@ -13,7 +13,7 @@ Represents a {@link https://www.terraform.io/docs/providers/okta/r/social_idp ok
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.socialIdp.SocialIdp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/socialidp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/socialidp"
 
 socialidp.NewSocialIdp(scope Construct, id *string, config SocialIdpConfig) SocialIdp
 ```
@@ -445,7 +445,7 @@ func ResetUsernameTemplate()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.socialIdp.SocialIdp.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/socialidp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/socialidp"
 
 socialidp.SocialIdp_IsConstruct(x interface{}) *bool
 ```
@@ -477,7 +477,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.socialIdp.SocialIdp.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/socialidp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/socialidp"
 
 socialidp.SocialIdp_IsTerraformElement(x interface{}) *bool
 ```
@@ -491,7 +491,7 @@ socialidp.SocialIdp_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.socialIdp.SocialIdp.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/socialidp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/socialidp"
 
 socialidp.SocialIdp_IsTerraformResource(x interface{}) *bool
 ```
@@ -1350,7 +1350,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.socialIdp.SocialIdpConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/socialidp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/socialidp"
 
 &socialidp.SocialIdpConfig {
 	Connection: interface{},

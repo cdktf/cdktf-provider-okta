@@ -13,7 +13,7 @@ Represents a {@link https://www.terraform.io/docs/providers/okta/r/idp okta_idp}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.idp.Idp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/idp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/idp"
 
 idp.NewIdp(scope Construct, id *string, config IdpConfig) Idp
 ```
@@ -424,7 +424,7 @@ func ResetUsernameTemplate()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.idp.Idp.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/idp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/idp"
 
 idp.Idp_IsConstruct(x interface{}) *bool
 ```
@@ -456,7 +456,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.idp.Idp.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/idp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/idp"
 
 idp.Idp_IsTerraformElement(x interface{}) *bool
 ```
@@ -470,7 +470,7 @@ idp.Idp_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.idp.Idp.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/idp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/idp"
 
 idp.Idp_IsTerraformResource(x interface{}) *bool
 ```
@@ -1417,7 +1417,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.idp.IdpConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/idp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/idp"
 
 &idp.IdpConfig {
 	Connection: interface{},

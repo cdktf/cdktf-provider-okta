@@ -13,7 +13,7 @@ Represents a {@link https://www.terraform.io/docs/providers/okta/r/saml_idp_sign
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.samlIdpSigningKey.SamlIdpSigningKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/samlidpsigningkey"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/samlidpsigningkey"
 
 samlidpsigningkey.NewSamlIdpSigningKey(scope Construct, id *string, config SamlIdpSigningKeyConfig) SamlIdpSigningKey
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.samlIdpSigningKey.SamlIdpSigningKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/samlidpsigningkey"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/samlidpsigningkey"
 
 samlidpsigningkey.SamlIdpSigningKey_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.samlIdpSigningKey.SamlIdpSigningKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/samlidpsigningkey"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/samlidpsigningkey"
 
 samlidpsigningkey.SamlIdpSigningKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ samlidpsigningkey.SamlIdpSigningKey_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.samlIdpSigningKey.SamlIdpSigningKey.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/samlidpsigningkey"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/samlidpsigningkey"
 
 samlidpsigningkey.SamlIdpSigningKey_IsTerraformResource(x interface{}) *bool
 ```
@@ -632,7 +632,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.samlIdpSigningKey.SamlIdpSigningKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/samlidpsigningkey"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/samlidpsigningkey"
 
 &samlidpsigningkey.SamlIdpSigningKeyConfig {
 	Connection: interface{},
