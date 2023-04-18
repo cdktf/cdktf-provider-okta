@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/doc
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaDefaultPolicies.DataOktaDefaultPolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktadefaultpolicies"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/dataoktadefaultpolicies"
 
 dataoktadefaultpolicies.NewDataOktaDefaultPolicies(scope Construct, id *string, config DataOktaDefaultPoliciesConfig) DataOktaDefaultPolicies
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.dataOktaDefaultPolicies.DataOktaDefaultPolicies.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktadefaultpolicies"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/dataoktadefaultpolicies"
 
 dataoktadefaultpolicies.DataOktaDefaultPolicies_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.dataOktaDefaultPolicies.DataOktaDefaultPolicies.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktadefaultpolicies"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/dataoktadefaultpolicies"
 
 dataoktadefaultpolicies.DataOktaDefaultPolicies_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ dataoktadefaultpolicies.DataOktaDefaultPolicies_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-okta.dataOktaDefaultPolicies.DataOktaDefaultPolicies.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktadefaultpolicies"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/dataoktadefaultpolicies"
 
 dataoktadefaultpolicies.DataOktaDefaultPolicies_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -544,7 +544,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaDefaultPolicies.DataOktaDefaultPoliciesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktadefaultpolicies"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/dataoktadefaultpolicies"
 
 &dataoktadefaultpolicies.DataOktaDefaultPoliciesConfig {
 	Connection: interface{},
