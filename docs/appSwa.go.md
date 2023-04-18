@@ -13,7 +13,7 @@ Represents a {@link https://www.terraform.io/docs/providers/okta/r/app_swa okta_
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appSwa.AppSwa.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/appswa"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/appswa"
 
 appswa.NewAppSwa(scope Construct, id *string, config AppSwaConfig) AppSwa
 ```
@@ -499,7 +499,7 @@ func ResetUsers()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.appSwa.AppSwa.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/appswa"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/appswa"
 
 appswa.AppSwa_IsConstruct(x interface{}) *bool
 ```
@@ -531,7 +531,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.appSwa.AppSwa.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/appswa"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/appswa"
 
 appswa.AppSwa_IsTerraformElement(x interface{}) *bool
 ```
@@ -545,7 +545,7 @@ appswa.AppSwa_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.appSwa.AppSwa.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/appswa"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/appswa"
 
 appswa.AppSwa_IsTerraformResource(x interface{}) *bool
 ```
@@ -1437,7 +1437,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.appSwa.AppSwaConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/appswa"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/appswa"
 
 &appswa.AppSwaConfig {
 	Connection: interface{},
@@ -1468,7 +1468,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/appswa"
 	SkipGroups: interface{},
 	SkipUsers: interface{},
 	Status: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-okta-go/okta.appSwa.AppSwaTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-okta-go/okta/v6.appSwa.AppSwaTimeouts,
 	Url: *string,
 	UrlRegex: *string,
 	UsernameField: *string,
@@ -2020,7 +2020,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.appSwa.AppSwaTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/appswa"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/appswa"
 
 &appswa.AppSwaTimeouts {
 	Create: *string,
@@ -2080,7 +2080,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.appSwa.AppSwaUsers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/appswa"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/appswa"
 
 &appswa.AppSwaUsers {
 	Id: *string,
@@ -2151,7 +2151,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appSwa.AppSwaTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/appswa"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/appswa"
 
 appswa.NewAppSwaTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSwaTimeoutsOutputReference
 ```
@@ -2487,7 +2487,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appSwa.AppSwaUsersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/appswa"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/appswa"
 
 appswa.NewAppSwaUsersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppSwaUsersList
 ```
@@ -2630,7 +2630,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/appswa"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/appswa"
 
 appswa.NewAppSwaUsersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppSwaUsersOutputReference
 ```

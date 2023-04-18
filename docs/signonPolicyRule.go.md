@@ -13,7 +13,7 @@ Represents a {@link https://www.terraform.io/docs/providers/okta/r/signon_policy
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.signonPolicyRule.SignonPolicyRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/signonpolicyrule"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/signonpolicyrule"
 
 signonpolicyrule.NewSignonPolicyRule(scope Construct, id *string, config SignonPolicyRuleConfig) SignonPolicyRule
 ```
@@ -451,7 +451,7 @@ func ResetUsersExcluded()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.signonPolicyRule.SignonPolicyRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/signonpolicyrule"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/signonpolicyrule"
 
 signonpolicyrule.SignonPolicyRule_IsConstruct(x interface{}) *bool
 ```
@@ -483,7 +483,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.signonPolicyRule.SignonPolicyRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/signonpolicyrule"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/signonpolicyrule"
 
 signonpolicyrule.SignonPolicyRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -497,7 +497,7 @@ signonpolicyrule.SignonPolicyRule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.signonPolicyRule.SignonPolicyRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/signonpolicyrule"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/signonpolicyrule"
 
 signonpolicyrule.SignonPolicyRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -1246,7 +1246,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.signonPolicyRule.SignonPolicyRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/signonpolicyrule"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/signonpolicyrule"
 
 &signonpolicyrule.SignonPolicyRuleConfig {
 	Connection: interface{},
@@ -1751,7 +1751,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.signonPolicyRule.SignonPolicyRuleFactorSequence.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/signonpolicyrule"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/signonpolicyrule"
 
 &signonpolicyrule.SignonPolicyRuleFactorSequence {
 	PrimaryCriteriaFactorType: *string,
@@ -1817,7 +1817,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.signonPolicyRule.SignonPolicyRuleFactorSequenceSecondaryCriteria.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/signonpolicyrule"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/signonpolicyrule"
 
 &signonpolicyrule.SignonPolicyRuleFactorSequenceSecondaryCriteria {
 	FactorType: *string,
@@ -1869,7 +1869,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.signonPolicyRule.SignonPolicyRuleFactorSequenceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/signonpolicyrule"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/signonpolicyrule"
 
 signonpolicyrule.NewSignonPolicyRuleFactorSequenceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SignonPolicyRuleFactorSequenceList
 ```
@@ -2012,7 +2012,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.signonPolicyRule.SignonPolicyRuleFactorSequenceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/signonpolicyrule"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/signonpolicyrule"
 
 signonpolicyrule.NewSignonPolicyRuleFactorSequenceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SignonPolicyRuleFactorSequenceOutputReference
 ```
@@ -2365,7 +2365,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.signonPolicyRule.SignonPolicyRuleFactorSequenceSecondaryCriteriaList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/signonpolicyrule"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/signonpolicyrule"
 
 signonpolicyrule.NewSignonPolicyRuleFactorSequenceSecondaryCriteriaList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SignonPolicyRuleFactorSequenceSecondaryCriteriaList
 ```
@@ -2508,7 +2508,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.signonPolicyRule.SignonPolicyRuleFactorSequenceSecondaryCriteriaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/signonpolicyrule"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/signonpolicyrule"
 
 signonpolicyrule.NewSignonPolicyRuleFactorSequenceSecondaryCriteriaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SignonPolicyRuleFactorSequenceSecondaryCriteriaOutputReference
 ```

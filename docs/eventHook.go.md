@@ -13,7 +13,7 @@ Represents a {@link https://www.terraform.io/docs/providers/okta/r/event_hook ok
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.eventHook.EventHook.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/eventhook"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/eventhook"
 
 eventhook.NewEventHook(scope Construct, id *string, config EventHookConfig) EventHook
 ```
@@ -311,7 +311,7 @@ func ResetStatus()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.eventHook.EventHook.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/eventhook"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/eventhook"
 
 eventhook.EventHook_IsConstruct(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.eventHook.EventHook.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/eventhook"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/eventhook"
 
 eventhook.EventHook_IsTerraformElement(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ eventhook.EventHook_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.eventHook.EventHook.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/eventhook"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/eventhook"
 
 eventhook.EventHook_IsTerraformResource(x interface{}) *bool
 ```
@@ -710,7 +710,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.eventHook.EventHookConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/eventhook"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/eventhook"
 
 &eventhook.EventHookConfig {
 	Connection: interface{},
@@ -915,7 +915,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.eventHook.EventHookHeaders.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/eventhook"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/eventhook"
 
 &eventhook.EventHookHeaders {
 	Key: *string,
@@ -963,7 +963,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.eventHook.EventHookHeadersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/eventhook"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/eventhook"
 
 eventhook.NewEventHookHeadersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EventHookHeadersList
 ```
@@ -1106,7 +1106,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.eventHook.EventHookHeadersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/eventhook"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/eventhook"
 
 eventhook.NewEventHookHeadersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EventHookHeadersOutputReference
 ```

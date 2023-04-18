@@ -13,7 +13,7 @@ Represents a {@link https://www.terraform.io/docs/providers/okta/r/app_group_ass
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appGroupAssignment.AppGroupAssignment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/appgroupassignment"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/appgroupassignment"
 
 appgroupassignment.NewAppGroupAssignment(scope Construct, id *string, config AppGroupAssignmentConfig) AppGroupAssignment
 ```
@@ -318,7 +318,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.appGroupAssignment.AppGroupAssignment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/appgroupassignment"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/appgroupassignment"
 
 appgroupassignment.AppGroupAssignment_IsConstruct(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.appGroupAssignment.AppGroupAssignment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/appgroupassignment"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/appgroupassignment"
 
 appgroupassignment.AppGroupAssignment_IsTerraformElement(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ appgroupassignment.AppGroupAssignment_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.appGroupAssignment.AppGroupAssignment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/appgroupassignment"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/appgroupassignment"
 
 appgroupassignment.AppGroupAssignment_IsTerraformResource(x interface{}) *bool
 ```
@@ -717,7 +717,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.appGroupAssignment.AppGroupAssignmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/appgroupassignment"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/appgroupassignment"
 
 &appgroupassignment.AppGroupAssignmentConfig {
 	Connection: interface{},
@@ -733,7 +733,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/appgroupassignment"
 	Priority: *f64,
 	Profile: *string,
 	RetainAssignment: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-okta-go/okta.appGroupAssignment.AppGroupAssignmentTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-okta-go/okta/v6.appGroupAssignment.AppGroupAssignmentTimeouts,
 }
 ```
 
@@ -930,7 +930,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.appGroupAssignment.AppGroupAssignmentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/appgroupassignment"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/appgroupassignment"
 
 &appgroupassignment.AppGroupAssignmentTimeouts {
 	Create: *string,
@@ -992,7 +992,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appGroupAssignment.AppGroupAssignmentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/appgroupassignment"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/appgroupassignment"
 
 appgroupassignment.NewAppGroupAssignmentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppGroupAssignmentTimeoutsOutputReference
 ```
