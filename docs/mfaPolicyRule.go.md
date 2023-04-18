@@ -1,6 +1,6 @@
 # `okta_mfa_policy_rule`
 
-Refer to the Terraform Registory for docs: [`okta_mfa_policy_rule`](https://www.terraform.io/docs/providers/okta/r/mfa_policy_rule).
+Refer to the Terraform Registory for docs: [`okta_mfa_policy_rule`](https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/mfa_policy_rule).
 
 # `mfaPolicyRule` Submodule <a name="`mfaPolicyRule` Submodule" id="@cdktf/provider-okta.mfaPolicyRule"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`okta_mfa_policy_rule`](https://www.
 
 ### MfaPolicyRule <a name="MfaPolicyRule" id="@cdktf/provider-okta.mfaPolicyRule.MfaPolicyRule"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy_rule okta_mfa_policy_rule}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/mfa_policy_rule okta_mfa_policy_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.mfaPolicyRule.MfaPolicyRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/mfapolicyrule"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/mfapolicyrule"
 
 mfapolicyrule.NewMfaPolicyRule(scope Construct, id *string, config MfaPolicyRuleConfig) MfaPolicyRule
 ```
@@ -380,7 +380,7 @@ func ResetUsersExcluded()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.mfaPolicyRule.MfaPolicyRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/mfapolicyrule"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/mfapolicyrule"
 
 mfapolicyrule.MfaPolicyRule_IsConstruct(x interface{}) *bool
 ```
@@ -412,7 +412,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.mfaPolicyRule.MfaPolicyRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/mfapolicyrule"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/mfapolicyrule"
 
 mfapolicyrule.MfaPolicyRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -426,7 +426,7 @@ mfapolicyrule.MfaPolicyRule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.mfaPolicyRule.MfaPolicyRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/mfapolicyrule"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/mfapolicyrule"
 
 mfapolicyrule.MfaPolicyRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -449,7 +449,7 @@ mfapolicyrule.MfaPolicyRule_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-okta.mfaPolicyRule.MfaPolicyRule.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.mfaPolicyRule.MfaPolicyRule.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.mfaPolicyRule.MfaPolicyRule.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.mfaPolicyRule.MfaPolicyRule.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.mfaPolicyRule.MfaPolicyRule.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.mfaPolicyRule.MfaPolicyRule.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.mfaPolicyRule.MfaPolicyRule.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.mfaPolicyRule.MfaPolicyRule.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -569,10 +569,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.mfaPolicyRule.MfaPolicyRule.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -911,7 +911,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.mfaPolicyRule.MfaPolicyRuleAppExclude.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/mfapolicyrule"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/mfapolicyrule"
 
 &mfapolicyrule.MfaPolicyRuleAppExclude {
 	Type: *string,
@@ -924,9 +924,9 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/mfapolicyrule"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.mfaPolicyRule.MfaPolicyRuleAppExclude.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy_rule#type MfaPolicyRule#type}. |
-| <code><a href="#@cdktf/provider-okta.mfaPolicyRule.MfaPolicyRuleAppExclude.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy_rule#id MfaPolicyRule#id}. |
-| <code><a href="#@cdktf/provider-okta.mfaPolicyRule.MfaPolicyRuleAppExclude.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy_rule#name MfaPolicyRule#name}. |
+| <code><a href="#@cdktf/provider-okta.mfaPolicyRule.MfaPolicyRuleAppExclude.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/mfa_policy_rule#type MfaPolicyRule#type}. |
+| <code><a href="#@cdktf/provider-okta.mfaPolicyRule.MfaPolicyRuleAppExclude.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/mfa_policy_rule#id MfaPolicyRule#id}. |
+| <code><a href="#@cdktf/provider-okta.mfaPolicyRule.MfaPolicyRuleAppExclude.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/mfa_policy_rule#name MfaPolicyRule#name}. |
 
 ---
 
@@ -938,7 +938,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy_rule#type MfaPolicyRule#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/mfa_policy_rule#type MfaPolicyRule#type}.
 
 ---
 
@@ -950,7 +950,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy_rule#id MfaPolicyRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/mfa_policy_rule#id MfaPolicyRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -965,7 +965,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy_rule#name MfaPolicyRule#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/mfa_policy_rule#name MfaPolicyRule#name}.
 
 ---
 
@@ -974,7 +974,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.mfaPolicyRule.MfaPolicyRuleAppInclude.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/mfapolicyrule"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/mfapolicyrule"
 
 &mfapolicyrule.MfaPolicyRuleAppInclude {
 	Type: *string,
@@ -987,9 +987,9 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/mfapolicyrule"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.mfaPolicyRule.MfaPolicyRuleAppInclude.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy_rule#type MfaPolicyRule#type}. |
-| <code><a href="#@cdktf/provider-okta.mfaPolicyRule.MfaPolicyRuleAppInclude.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy_rule#id MfaPolicyRule#id}. |
-| <code><a href="#@cdktf/provider-okta.mfaPolicyRule.MfaPolicyRuleAppInclude.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy_rule#name MfaPolicyRule#name}. |
+| <code><a href="#@cdktf/provider-okta.mfaPolicyRule.MfaPolicyRuleAppInclude.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/mfa_policy_rule#type MfaPolicyRule#type}. |
+| <code><a href="#@cdktf/provider-okta.mfaPolicyRule.MfaPolicyRuleAppInclude.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/mfa_policy_rule#id MfaPolicyRule#id}. |
+| <code><a href="#@cdktf/provider-okta.mfaPolicyRule.MfaPolicyRuleAppInclude.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/mfa_policy_rule#name MfaPolicyRule#name}. |
 
 ---
 
@@ -1001,7 +1001,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy_rule#type MfaPolicyRule#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/mfa_policy_rule#type MfaPolicyRule#type}.
 
 ---
 
@@ -1013,7 +1013,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy_rule#id MfaPolicyRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/mfa_policy_rule#id MfaPolicyRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1028,7 +1028,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy_rule#name MfaPolicyRule#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/mfa_policy_rule#name MfaPolicyRule#name}.
 
 ---
 
@@ -1037,11 +1037,11 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.mfaPolicyRule.MfaPolicyRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/mfapolicyrule"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/mfapolicyrule"
 
 &mfapolicyrule.MfaPolicyRuleConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -1068,7 +1068,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/mfapolicyrule"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-okta.mfaPolicyRule.MfaPolicyRuleConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.mfaPolicyRule.MfaPolicyRuleConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.mfaPolicyRule.MfaPolicyRuleConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.mfaPolicyRule.MfaPolicyRuleConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.mfaPolicyRule.MfaPolicyRuleConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.mfaPolicyRule.MfaPolicyRuleConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -1078,7 +1078,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/mfapolicyrule"
 | <code><a href="#@cdktf/provider-okta.mfaPolicyRule.MfaPolicyRuleConfig.property.appExclude">AppExclude</a></code> | <code>interface{}</code> | app_exclude block. |
 | <code><a href="#@cdktf/provider-okta.mfaPolicyRule.MfaPolicyRuleConfig.property.appInclude">AppInclude</a></code> | <code>interface{}</code> | app_include block. |
 | <code><a href="#@cdktf/provider-okta.mfaPolicyRule.MfaPolicyRuleConfig.property.enroll">Enroll</a></code> | <code>*string</code> | Should the user be enrolled the first time they LOGIN, the next time they are CHALLENGED, or NEVER? |
-| <code><a href="#@cdktf/provider-okta.mfaPolicyRule.MfaPolicyRuleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy_rule#id MfaPolicyRule#id}. |
+| <code><a href="#@cdktf/provider-okta.mfaPolicyRule.MfaPolicyRuleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/mfa_policy_rule#id MfaPolicyRule#id}. |
 | <code><a href="#@cdktf/provider-okta.mfaPolicyRule.MfaPolicyRuleConfig.property.networkConnection">NetworkConnection</a></code> | <code>*string</code> | Network selection mode: ANYWHERE, ZONE, ON_NETWORK, or OFF_NETWORK. |
 | <code><a href="#@cdktf/provider-okta.mfaPolicyRule.MfaPolicyRuleConfig.property.networkExcludes">NetworkExcludes</a></code> | <code>*[]*string</code> | The zones to exclude. |
 | <code><a href="#@cdktf/provider-okta.mfaPolicyRule.MfaPolicyRuleConfig.property.networkIncludes">NetworkIncludes</a></code> | <code>*[]*string</code> | The zones to include. |
@@ -1103,10 +1103,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.mfaPolicyRule.MfaPolicyRuleConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -1170,7 +1170,7 @@ Name *string
 
 Policy Rule Name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy_rule#name MfaPolicyRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/mfa_policy_rule#name MfaPolicyRule#name}
 
 ---
 
@@ -1184,7 +1184,7 @@ AppExclude interface{}
 
 app_exclude block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy_rule#app_exclude MfaPolicyRule#app_exclude}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/mfa_policy_rule#app_exclude MfaPolicyRule#app_exclude}
 
 ---
 
@@ -1198,7 +1198,7 @@ AppInclude interface{}
 
 app_include block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy_rule#app_include MfaPolicyRule#app_include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/mfa_policy_rule#app_include MfaPolicyRule#app_include}
 
 ---
 
@@ -1212,7 +1212,7 @@ Enroll *string
 
 Should the user be enrolled the first time they LOGIN, the next time they are CHALLENGED, or NEVER?
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy_rule#enroll MfaPolicyRule#enroll}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/mfa_policy_rule#enroll MfaPolicyRule#enroll}
 
 ---
 
@@ -1224,7 +1224,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy_rule#id MfaPolicyRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/mfa_policy_rule#id MfaPolicyRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1241,7 +1241,7 @@ NetworkConnection *string
 
 Network selection mode: ANYWHERE, ZONE, ON_NETWORK, or OFF_NETWORK.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy_rule#network_connection MfaPolicyRule#network_connection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/mfa_policy_rule#network_connection MfaPolicyRule#network_connection}
 
 ---
 
@@ -1255,7 +1255,7 @@ NetworkExcludes *[]*string
 
 The zones to exclude.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy_rule#network_excludes MfaPolicyRule#network_excludes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/mfa_policy_rule#network_excludes MfaPolicyRule#network_excludes}
 
 ---
 
@@ -1269,7 +1269,7 @@ NetworkIncludes *[]*string
 
 The zones to include.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy_rule#network_includes MfaPolicyRule#network_includes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/mfa_policy_rule#network_includes MfaPolicyRule#network_includes}
 
 ---
 
@@ -1283,7 +1283,7 @@ Policyid *string
 
 Policy ID of the Rule.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy_rule#policyid MfaPolicyRule#policyid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/mfa_policy_rule#policyid MfaPolicyRule#policyid}
 
 ---
 
@@ -1297,7 +1297,7 @@ PolicyId *string
 
 Policy ID of the Rule.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy_rule#policy_id MfaPolicyRule#policy_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/mfa_policy_rule#policy_id MfaPolicyRule#policy_id}
 
 ---
 
@@ -1313,7 +1313,7 @@ Policy Rule Priority, this attribute can be set to a valid priority.
 
 To avoid endless diff situation we error if an invalid priority is provided. API defaults it to the last (lowest) if not there.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy_rule#priority MfaPolicyRule#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/mfa_policy_rule#priority MfaPolicyRule#priority}
 
 ---
 
@@ -1327,7 +1327,7 @@ Status *string
 
 Policy Rule Status: ACTIVE or INACTIVE.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy_rule#status MfaPolicyRule#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/mfa_policy_rule#status MfaPolicyRule#status}
 
 ---
 
@@ -1341,7 +1341,7 @@ UsersExcluded *[]*string
 
 Set of User IDs to Exclude.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/mfa_policy_rule#users_excluded MfaPolicyRule#users_excluded}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/mfa_policy_rule#users_excluded MfaPolicyRule#users_excluded}
 
 ---
 
@@ -1352,7 +1352,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.mfaPolicyRule.MfaPolicyRuleAppExcludeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/mfapolicyrule"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/mfapolicyrule"
 
 mfapolicyrule.NewMfaPolicyRuleAppExcludeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MfaPolicyRuleAppExcludeList
 ```
@@ -1495,7 +1495,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.mfaPolicyRule.MfaPolicyRuleAppExcludeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/mfapolicyrule"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/mfapolicyrule"
 
 mfapolicyrule.NewMfaPolicyRuleAppExcludeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MfaPolicyRuleAppExcludeOutputReference
 ```
@@ -1842,7 +1842,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.mfaPolicyRule.MfaPolicyRuleAppIncludeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/mfapolicyrule"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/mfapolicyrule"
 
 mfapolicyrule.NewMfaPolicyRuleAppIncludeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MfaPolicyRuleAppIncludeList
 ```
@@ -1985,7 +1985,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.mfaPolicyRule.MfaPolicyRuleAppIncludeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/mfapolicyrule"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/mfapolicyrule"
 
 mfapolicyrule.NewMfaPolicyRuleAppIncludeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MfaPolicyRuleAppIncludeOutputReference
 ```

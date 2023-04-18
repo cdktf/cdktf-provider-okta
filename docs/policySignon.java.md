@@ -1,6 +1,6 @@
 # `okta_policy_signon`
 
-Refer to the Terraform Registory for docs: [`okta_policy_signon`](https://www.terraform.io/docs/providers/okta/r/policy_signon).
+Refer to the Terraform Registory for docs: [`okta_policy_signon`](https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/policy_signon).
 
 # `policySignon` Submodule <a name="`policySignon` Submodule" id="@cdktf/provider-okta.policySignon"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_policy_signon`](https://www.te
 
 ### PolicySignon <a name="PolicySignon" id="@cdktf/provider-okta.policySignon.PolicySignon"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/policy_signon okta_policy_signon}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/policy_signon okta_policy_signon}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.policySignon.PolicySignon.Initializer"></a>
 
@@ -19,6 +19,7 @@ PolicySignon.Builder.create(Construct scope, java.lang.String id)
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -40,7 +41,7 @@ PolicySignon.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-okta.policySignon.PolicySignon.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-okta.policySignon.PolicySignon.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-okta.policySignon.PolicySignon.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policySignon.PolicySignon.Initializer.parameter.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policySignon.PolicySignon.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policySignon.PolicySignon.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policySignon.PolicySignon.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policySignon.PolicySignon.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -49,7 +50,7 @@ PolicySignon.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-okta.policySignon.PolicySignon.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Policy Name. |
 | <code><a href="#@cdktf/provider-okta.policySignon.PolicySignon.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Policy Description. |
 | <code><a href="#@cdktf/provider-okta.policySignon.PolicySignon.Initializer.parameter.groupsIncluded">groupsIncluded</a></code> | <code>java.util.List<java.lang.String></code> | List of Group IDs to Include. |
-| <code><a href="#@cdktf/provider-okta.policySignon.PolicySignon.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_signon#id PolicySignon#id}. |
+| <code><a href="#@cdktf/provider-okta.policySignon.PolicySignon.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/policy_signon#id PolicySignon#id}. |
 | <code><a href="#@cdktf/provider-okta.policySignon.PolicySignon.Initializer.parameter.priority">priority</a></code> | <code>java.lang.Number</code> | Policy Priority, this attribute can be set to a valid priority. |
 | <code><a href="#@cdktf/provider-okta.policySignon.PolicySignon.Initializer.parameter.status">status</a></code> | <code>java.lang.String</code> | Policy Status: ACTIVE or INACTIVE. |
 
@@ -81,7 +82,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.policySignon.PolicySignon.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -121,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 Policy Name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_signon#name PolicySignon#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/policy_signon#name PolicySignon#name}
 
 ---
 
@@ -131,7 +132,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 Policy Description.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_signon#description PolicySignon#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/policy_signon#description PolicySignon#description}
 
 ---
 
@@ -141,7 +142,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 List of Group IDs to Include.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_signon#groups_included PolicySignon#groups_included}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/policy_signon#groups_included PolicySignon#groups_included}
 
 ---
 
@@ -149,7 +150,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_signon#id PolicySignon#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/policy_signon#id PolicySignon#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -164,7 +165,7 @@ Policy Priority, this attribute can be set to a valid priority.
 
 To avoid endless diff situation we error if an invalid priority is provided. API defaults it to the last (lowest) if not there.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_signon#priority PolicySignon#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/policy_signon#priority PolicySignon#priority}
 
 ---
 
@@ -174,7 +175,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 Policy Status: ACTIVE or INACTIVE.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_signon#status PolicySignon#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/policy_signon#status PolicySignon#status}
 
 ---
 
@@ -502,7 +503,7 @@ PolicySignon.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-okta.policySignon.PolicySignon.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policySignon.PolicySignon.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policySignon.PolicySignon.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policySignon.PolicySignon.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policySignon.PolicySignon.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policySignon.PolicySignon.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policySignon.PolicySignon.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policySignon.PolicySignon.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -608,10 +609,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.policySignon.PolicySignon.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -816,6 +817,7 @@ PolicySignonConfig.builder()
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -837,7 +839,7 @@ PolicySignonConfig.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-okta.policySignon.PolicySignonConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policySignon.PolicySignonConfig.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policySignon.PolicySignonConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policySignon.PolicySignonConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policySignon.PolicySignonConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policySignon.PolicySignonConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -846,7 +848,7 @@ PolicySignonConfig.builder()
 | <code><a href="#@cdktf/provider-okta.policySignon.PolicySignonConfig.property.name">name</a></code> | <code>java.lang.String</code> | Policy Name. |
 | <code><a href="#@cdktf/provider-okta.policySignon.PolicySignonConfig.property.description">description</a></code> | <code>java.lang.String</code> | Policy Description. |
 | <code><a href="#@cdktf/provider-okta.policySignon.PolicySignonConfig.property.groupsIncluded">groupsIncluded</a></code> | <code>java.util.List<java.lang.String></code> | List of Group IDs to Include. |
-| <code><a href="#@cdktf/provider-okta.policySignon.PolicySignonConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_signon#id PolicySignon#id}. |
+| <code><a href="#@cdktf/provider-okta.policySignon.PolicySignonConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/policy_signon#id PolicySignon#id}. |
 | <code><a href="#@cdktf/provider-okta.policySignon.PolicySignonConfig.property.priority">priority</a></code> | <code>java.lang.Number</code> | Policy Priority, this attribute can be set to a valid priority. |
 | <code><a href="#@cdktf/provider-okta.policySignon.PolicySignonConfig.property.status">status</a></code> | <code>java.lang.String</code> | Policy Status: ACTIVE or INACTIVE. |
 
@@ -865,10 +867,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.policySignon.PolicySignonConfig.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -932,7 +934,7 @@ public java.lang.String getName();
 
 Policy Name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_signon#name PolicySignon#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/policy_signon#name PolicySignon#name}
 
 ---
 
@@ -946,7 +948,7 @@ public java.lang.String getDescription();
 
 Policy Description.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_signon#description PolicySignon#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/policy_signon#description PolicySignon#description}
 
 ---
 
@@ -960,7 +962,7 @@ public java.util.List<java.lang.String> getGroupsIncluded();
 
 List of Group IDs to Include.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_signon#groups_included PolicySignon#groups_included}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/policy_signon#groups_included PolicySignon#groups_included}
 
 ---
 
@@ -972,7 +974,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_signon#id PolicySignon#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/policy_signon#id PolicySignon#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -991,7 +993,7 @@ Policy Priority, this attribute can be set to a valid priority.
 
 To avoid endless diff situation we error if an invalid priority is provided. API defaults it to the last (lowest) if not there.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_signon#priority PolicySignon#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/policy_signon#priority PolicySignon#priority}
 
 ---
 
@@ -1005,7 +1007,7 @@ public java.lang.String getStatus();
 
 Policy Status: ACTIVE or INACTIVE.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_signon#status PolicySignon#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/policy_signon#status PolicySignon#status}
 
 ---
 

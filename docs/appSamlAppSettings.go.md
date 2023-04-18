@@ -1,6 +1,6 @@
 # `okta_app_saml_app_settings`
 
-Refer to the Terraform Registory for docs: [`okta_app_saml_app_settings`](https://www.terraform.io/docs/providers/okta/r/app_saml_app_settings).
+Refer to the Terraform Registory for docs: [`okta_app_saml_app_settings`](https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_saml_app_settings).
 
 # `appSamlAppSettings` Submodule <a name="`appSamlAppSettings` Submodule" id="@cdktf/provider-okta.appSamlAppSettings"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`okta_app_saml_app_settings`](https:
 
 ### AppSamlAppSettings <a name="AppSamlAppSettings" id="@cdktf/provider-okta.appSamlAppSettings.AppSamlAppSettings"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/app_saml_app_settings okta_app_saml_app_settings}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_saml_app_settings okta_app_saml_app_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appSamlAppSettings.AppSamlAppSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/appsamlappsettings"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/appsamlappsettings"
 
 appsamlappsettings.NewAppSamlAppSettings(scope Construct, id *string, config AppSamlAppSettingsConfig) AppSamlAppSettings
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.appSamlAppSettings.AppSamlAppSettings.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/appsamlappsettings"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/appsamlappsettings"
 
 appsamlappsettings.AppSamlAppSettings_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.appSamlAppSettings.AppSamlAppSettings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/appsamlappsettings"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/appsamlappsettings"
 
 appsamlappsettings.AppSamlAppSettings_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ appsamlappsettings.AppSamlAppSettings_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.appSamlAppSettings.AppSamlAppSettings.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/appsamlappsettings"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/appsamlappsettings"
 
 appsamlappsettings.AppSamlAppSettings_IsTerraformResource(x interface{}) *bool
 ```
@@ -346,7 +346,7 @@ appsamlappsettings.AppSamlAppSettings_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-okta.appSamlAppSettings.AppSamlAppSettings.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSamlAppSettings.AppSamlAppSettings.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSamlAppSettings.AppSamlAppSettings.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSamlAppSettings.AppSamlAppSettings.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSamlAppSettings.AppSamlAppSettings.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSamlAppSettings.AppSamlAppSettings.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSamlAppSettings.AppSamlAppSettings.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSamlAppSettings.AppSamlAppSettings.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -446,10 +446,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.appSamlAppSettings.AppSamlAppSettings.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -588,11 +588,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.appSamlAppSettings.AppSamlAppSettingsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/appsamlappsettings"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/appsamlappsettings"
 
 &appsamlappsettings.AppSamlAppSettingsConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -609,7 +609,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/appsamlappsettings"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-okta.appSamlAppSettings.AppSamlAppSettingsConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSamlAppSettings.AppSamlAppSettingsConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSamlAppSettings.AppSamlAppSettingsConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSamlAppSettings.AppSamlAppSettingsConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSamlAppSettings.AppSamlAppSettingsConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSamlAppSettings.AppSamlAppSettingsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -617,7 +617,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/appsamlappsettings"
 | <code><a href="#@cdktf/provider-okta.appSamlAppSettings.AppSamlAppSettingsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSamlAppSettings.AppSamlAppSettingsConfig.property.appId">AppId</a></code> | <code>*string</code> | Application ID. |
 | <code><a href="#@cdktf/provider-okta.appSamlAppSettings.AppSamlAppSettingsConfig.property.settings">Settings</a></code> | <code>*string</code> | Application settings in JSON format. |
-| <code><a href="#@cdktf/provider-okta.appSamlAppSettings.AppSamlAppSettingsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml_app_settings#id AppSamlAppSettings#id}. |
+| <code><a href="#@cdktf/provider-okta.appSamlAppSettings.AppSamlAppSettingsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_saml_app_settings#id AppSamlAppSettings#id}. |
 
 ---
 
@@ -634,10 +634,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.appSamlAppSettings.AppSamlAppSettingsConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -701,7 +701,7 @@ AppId *string
 
 Application ID.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml_app_settings#app_id AppSamlAppSettings#app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_saml_app_settings#app_id AppSamlAppSettings#app_id}
 
 ---
 
@@ -715,7 +715,7 @@ Settings *string
 
 Application settings in JSON format.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml_app_settings#settings AppSamlAppSettings#settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_saml_app_settings#settings AppSamlAppSettings#settings}
 
 ---
 
@@ -727,7 +727,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_saml_app_settings#id AppSamlAppSettings#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_saml_app_settings#id AppSamlAppSettings#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

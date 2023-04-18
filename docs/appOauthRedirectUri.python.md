@@ -1,6 +1,6 @@
 # `okta_app_oauth_redirect_uri`
 
-Refer to the Terraform Registory for docs: [`okta_app_oauth_redirect_uri`](https://www.terraform.io/docs/providers/okta/r/app_oauth_redirect_uri).
+Refer to the Terraform Registory for docs: [`okta_app_oauth_redirect_uri`](https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth_redirect_uri).
 
 # `appOauthRedirectUri` Submodule <a name="`appOauthRedirectUri` Submodule" id="@cdktf/provider-okta.appOauthRedirectUri"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_app_oauth_redirect_uri`](https
 
 ### AppOauthRedirectUri <a name="AppOauthRedirectUri" id="@cdktf/provider-okta.appOauthRedirectUri.AppOauthRedirectUri"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/app_oauth_redirect_uri okta_app_oauth_redirect_uri}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth_redirect_uri okta_app_oauth_redirect_uri}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appOauthRedirectUri.AppOauthRedirectUri.Initializer"></a>
 
@@ -19,7 +19,7 @@ appOauthRedirectUri.AppOauthRedirectUri(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -36,15 +36,15 @@ appOauthRedirectUri.AppOauthRedirectUri(
 | <code><a href="#@cdktf/provider-okta.appOauthRedirectUri.AppOauthRedirectUri.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-okta.appOauthRedirectUri.AppOauthRedirectUri.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-okta.appOauthRedirectUri.AppOauthRedirectUri.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauthRedirectUri.AppOauthRedirectUri.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appOauthRedirectUri.AppOauthRedirectUri.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauthRedirectUri.AppOauthRedirectUri.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauthRedirectUri.AppOauthRedirectUri.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauthRedirectUri.AppOauthRedirectUri.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauthRedirectUri.AppOauthRedirectUri.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauthRedirectUri.AppOauthRedirectUri.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauthRedirectUri.AppOauthRedirectUri.Initializer.parameter.appId">app_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth_redirect_uri#app_id AppOauthRedirectUri#app_id}. |
+| <code><a href="#@cdktf/provider-okta.appOauthRedirectUri.AppOauthRedirectUri.Initializer.parameter.appId">app_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth_redirect_uri#app_id AppOauthRedirectUri#app_id}. |
 | <code><a href="#@cdktf/provider-okta.appOauthRedirectUri.AppOauthRedirectUri.Initializer.parameter.uri">uri</a></code> | <code>str</code> | Redirect URI to append to Okta OIDC application. |
-| <code><a href="#@cdktf/provider-okta.appOauthRedirectUri.AppOauthRedirectUri.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth_redirect_uri#id AppOauthRedirectUri#id}. |
+| <code><a href="#@cdktf/provider-okta.appOauthRedirectUri.AppOauthRedirectUri.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth_redirect_uri#id AppOauthRedirectUri#id}. |
 
 ---
 
@@ -74,7 +74,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.appOauthRedirectUri.AppOauthRedirectUri.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth_redirect_uri#app_id AppOauthRedirectUri#app_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth_redirect_uri#app_id AppOauthRedirectUri#app_id}.
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 Redirect URI to append to Okta OIDC application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth_redirect_uri#uri AppOauthRedirectUri#uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth_redirect_uri#uri AppOauthRedirectUri#uri}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth_redirect_uri#id AppOauthRedirectUri#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth_redirect_uri#id AppOauthRedirectUri#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -464,7 +464,7 @@ appOauthRedirectUri.AppOauthRedirectUri.is_terraform_resource(
 | <code><a href="#@cdktf/provider-okta.appOauthRedirectUri.AppOauthRedirectUri.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauthRedirectUri.AppOauthRedirectUri.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauthRedirectUri.AppOauthRedirectUri.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauthRedirectUri.AppOauthRedirectUri.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appOauthRedirectUri.AppOauthRedirectUri.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauthRedirectUri.AppOauthRedirectUri.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauthRedirectUri.AppOauthRedirectUri.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauthRedirectUri.AppOauthRedirectUri.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -564,10 +564,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.appOauthRedirectUri.AppOauthRedirectUri.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -710,7 +710,7 @@ from cdktf_cdktf_provider_okta import app_oauth_redirect_uri
 
 appOauthRedirectUri.AppOauthRedirectUriConfig(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -727,15 +727,15 @@ appOauthRedirectUri.AppOauthRedirectUriConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-okta.appOauthRedirectUri.AppOauthRedirectUriConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauthRedirectUri.AppOauthRedirectUriConfig.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appOauthRedirectUri.AppOauthRedirectUriConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauthRedirectUri.AppOauthRedirectUriConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauthRedirectUri.AppOauthRedirectUriConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauthRedirectUri.AppOauthRedirectUriConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauthRedirectUri.AppOauthRedirectUriConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauthRedirectUri.AppOauthRedirectUriConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauthRedirectUri.AppOauthRedirectUriConfig.property.appId">app_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth_redirect_uri#app_id AppOauthRedirectUri#app_id}. |
+| <code><a href="#@cdktf/provider-okta.appOauthRedirectUri.AppOauthRedirectUriConfig.property.appId">app_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth_redirect_uri#app_id AppOauthRedirectUri#app_id}. |
 | <code><a href="#@cdktf/provider-okta.appOauthRedirectUri.AppOauthRedirectUriConfig.property.uri">uri</a></code> | <code>str</code> | Redirect URI to append to Okta OIDC application. |
-| <code><a href="#@cdktf/provider-okta.appOauthRedirectUri.AppOauthRedirectUriConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth_redirect_uri#id AppOauthRedirectUri#id}. |
+| <code><a href="#@cdktf/provider-okta.appOauthRedirectUri.AppOauthRedirectUriConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth_redirect_uri#id AppOauthRedirectUri#id}. |
 
 ---
 
@@ -752,10 +752,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.appOauthRedirectUri.AppOauthRedirectUriConfig.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -817,7 +817,7 @@ app_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth_redirect_uri#app_id AppOauthRedirectUri#app_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth_redirect_uri#app_id AppOauthRedirectUri#app_id}.
 
 ---
 
@@ -831,7 +831,7 @@ uri: str
 
 Redirect URI to append to Okta OIDC application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth_redirect_uri#uri AppOauthRedirectUri#uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth_redirect_uri#uri AppOauthRedirectUri#uri}
 
 ---
 
@@ -843,7 +843,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth_redirect_uri#id AppOauthRedirectUri#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth_redirect_uri#id AppOauthRedirectUri#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

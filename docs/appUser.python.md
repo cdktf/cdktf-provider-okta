@@ -1,6 +1,6 @@
 # `okta_app_user`
 
-Refer to the Terraform Registory for docs: [`okta_app_user`](https://www.terraform.io/docs/providers/okta/r/app_user).
+Refer to the Terraform Registory for docs: [`okta_app_user`](https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_user).
 
 # `appUser` Submodule <a name="`appUser` Submodule" id="@cdktf/provider-okta.appUser"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_app_user`](https://www.terrafo
 
 ### AppUser <a name="AppUser" id="@cdktf/provider-okta.appUser.AppUser"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/app_user okta_app_user}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_user okta_app_user}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appUser.AppUser.Initializer"></a>
 
@@ -19,7 +19,7 @@ appUser.AppUser(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -40,7 +40,7 @@ appUser.AppUser(
 | <code><a href="#@cdktf/provider-okta.appUser.AppUser.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-okta.appUser.AppUser.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-okta.appUser.AppUser.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appUser.AppUser.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appUser.AppUser.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appUser.AppUser.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appUser.AppUser.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appUser.AppUser.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -48,11 +48,11 @@ appUser.AppUser(
 | <code><a href="#@cdktf/provider-okta.appUser.AppUser.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appUser.AppUser.Initializer.parameter.appId">app_id</a></code> | <code>str</code> | App to associate user with. |
 | <code><a href="#@cdktf/provider-okta.appUser.AppUser.Initializer.parameter.userId">user_id</a></code> | <code>str</code> | User associated with the application. |
-| <code><a href="#@cdktf/provider-okta.appUser.AppUser.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user#id AppUser#id}. |
-| <code><a href="#@cdktf/provider-okta.appUser.AppUser.Initializer.parameter.password">password</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user#password AppUser#password}. |
-| <code><a href="#@cdktf/provider-okta.appUser.AppUser.Initializer.parameter.profile">profile</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user#profile AppUser#profile}. |
+| <code><a href="#@cdktf/provider-okta.appUser.AppUser.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_user#id AppUser#id}. |
+| <code><a href="#@cdktf/provider-okta.appUser.AppUser.Initializer.parameter.password">password</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_user#password AppUser#password}. |
+| <code><a href="#@cdktf/provider-okta.appUser.AppUser.Initializer.parameter.profile">profile</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_user#profile AppUser#profile}. |
 | <code><a href="#@cdktf/provider-okta.appUser.AppUser.Initializer.parameter.retainAssignment">retain_assignment</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Retain the user assignment on destroy. |
-| <code><a href="#@cdktf/provider-okta.appUser.AppUser.Initializer.parameter.username">username</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user#username AppUser#username}. |
+| <code><a href="#@cdktf/provider-okta.appUser.AppUser.Initializer.parameter.username">username</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_user#username AppUser#username}. |
 
 ---
 
@@ -82,7 +82,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.appUser.AppUser.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -122,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 App to associate user with.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user#app_id AppUser#app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_user#app_id AppUser#app_id}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 User associated with the application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user#user_id AppUser#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_user#user_id AppUser#user_id}
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user#id AppUser#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_user#id AppUser#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -151,7 +151,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user#password AppUser#password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_user#password AppUser#password}.
 
 ---
 
@@ -159,7 +159,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user#profile AppUser#profile}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_user#profile AppUser#profile}.
 
 ---
 
@@ -171,7 +171,7 @@ Retain the user assignment on destroy.
 
 If set to true, the resource will be removed from state but not from the Okta app.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user#retain_assignment AppUser#retain_assignment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_user#retain_assignment AppUser#retain_assignment}
 
 ---
 
@@ -179,7 +179,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user#username AppUser#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_user#username AppUser#username}.
 
 ---
 
@@ -538,7 +538,7 @@ appUser.AppUser.is_terraform_resource(
 | <code><a href="#@cdktf/provider-okta.appUser.AppUser.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appUser.AppUser.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appUser.AppUser.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appUser.AppUser.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appUser.AppUser.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appUser.AppUser.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appUser.AppUser.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appUser.AppUser.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -647,10 +647,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.appUser.AppUser.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -883,7 +883,7 @@ from cdktf_cdktf_provider_okta import app_user
 
 appUser.AppUserConfig(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -904,7 +904,7 @@ appUser.AppUserConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-okta.appUser.AppUserConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appUser.AppUserConfig.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appUser.AppUserConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appUser.AppUserConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appUser.AppUserConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appUser.AppUserConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -912,11 +912,11 @@ appUser.AppUserConfig(
 | <code><a href="#@cdktf/provider-okta.appUser.AppUserConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appUser.AppUserConfig.property.appId">app_id</a></code> | <code>str</code> | App to associate user with. |
 | <code><a href="#@cdktf/provider-okta.appUser.AppUserConfig.property.userId">user_id</a></code> | <code>str</code> | User associated with the application. |
-| <code><a href="#@cdktf/provider-okta.appUser.AppUserConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user#id AppUser#id}. |
-| <code><a href="#@cdktf/provider-okta.appUser.AppUserConfig.property.password">password</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user#password AppUser#password}. |
-| <code><a href="#@cdktf/provider-okta.appUser.AppUserConfig.property.profile">profile</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user#profile AppUser#profile}. |
+| <code><a href="#@cdktf/provider-okta.appUser.AppUserConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_user#id AppUser#id}. |
+| <code><a href="#@cdktf/provider-okta.appUser.AppUserConfig.property.password">password</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_user#password AppUser#password}. |
+| <code><a href="#@cdktf/provider-okta.appUser.AppUserConfig.property.profile">profile</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_user#profile AppUser#profile}. |
 | <code><a href="#@cdktf/provider-okta.appUser.AppUserConfig.property.retainAssignment">retain_assignment</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Retain the user assignment on destroy. |
-| <code><a href="#@cdktf/provider-okta.appUser.AppUserConfig.property.username">username</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user#username AppUser#username}. |
+| <code><a href="#@cdktf/provider-okta.appUser.AppUserConfig.property.username">username</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_user#username AppUser#username}. |
 
 ---
 
@@ -933,10 +933,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.appUser.AppUserConfig.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -1000,7 +1000,7 @@ app_id: str
 
 App to associate user with.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user#app_id AppUser#app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_user#app_id AppUser#app_id}
 
 ---
 
@@ -1014,7 +1014,7 @@ user_id: str
 
 User associated with the application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user#user_id AppUser#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_user#user_id AppUser#user_id}
 
 ---
 
@@ -1026,7 +1026,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user#id AppUser#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_user#id AppUser#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1041,7 +1041,7 @@ password: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user#password AppUser#password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_user#password AppUser#password}.
 
 ---
 
@@ -1053,7 +1053,7 @@ profile: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user#profile AppUser#profile}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_user#profile AppUser#profile}.
 
 ---
 
@@ -1069,7 +1069,7 @@ Retain the user assignment on destroy.
 
 If set to true, the resource will be removed from state but not from the Okta app.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user#retain_assignment AppUser#retain_assignment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_user#retain_assignment AppUser#retain_assignment}
 
 ---
 
@@ -1081,7 +1081,7 @@ username: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user#username AppUser#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_user#username AppUser#username}.
 
 ---
 

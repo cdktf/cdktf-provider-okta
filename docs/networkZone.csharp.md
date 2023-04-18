@@ -1,6 +1,6 @@
 # `okta_network_zone`
 
-Refer to the Terraform Registory for docs: [`okta_network_zone`](https://www.terraform.io/docs/providers/okta/r/network_zone).
+Refer to the Terraform Registory for docs: [`okta_network_zone`](https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/network_zone).
 
 # `networkZone` Submodule <a name="`networkZone` Submodule" id="@cdktf/provider-okta.networkZone"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_network_zone`](https://www.ter
 
 ### NetworkZone <a name="NetworkZone" id="@cdktf/provider-okta.networkZone.NetworkZone"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/network_zone okta_network_zone}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/network_zone okta_network_zone}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.networkZone.NetworkZone.Initializer"></a>
 
@@ -388,7 +388,7 @@ NetworkZone.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-okta.networkZone.NetworkZone.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.networkZone.NetworkZone.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.networkZone.NetworkZone.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.networkZone.NetworkZone.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.networkZone.NetworkZone.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.networkZone.NetworkZone.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.networkZone.NetworkZone.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.networkZone.NetworkZone.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -500,10 +500,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.networkZone.NetworkZone.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -766,7 +766,7 @@ using HashiCorp.Cdktf.Providers.Okta;
 
 new NetworkZoneConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -789,7 +789,7 @@ new NetworkZoneConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-okta.networkZone.NetworkZoneConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.networkZone.NetworkZoneConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.networkZone.NetworkZoneConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.networkZone.NetworkZoneConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.networkZone.NetworkZoneConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.networkZone.NetworkZoneConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -801,7 +801,7 @@ new NetworkZoneConfig {
 | <code><a href="#@cdktf/provider-okta.networkZone.NetworkZoneConfig.property.dynamicLocations">DynamicLocations</a></code> | <code>string[]</code> | Array of locations ISO-3166-1(2). Format code: countryCode OR countryCode-regionCode. |
 | <code><a href="#@cdktf/provider-okta.networkZone.NetworkZoneConfig.property.dynamicProxyType">DynamicProxyType</a></code> | <code>string</code> | Type of proxy being controlled by this network zone. |
 | <code><a href="#@cdktf/provider-okta.networkZone.NetworkZoneConfig.property.gateways">Gateways</a></code> | <code>string[]</code> | Array of values in CIDR/range form depending on the way it's been declared (i.e. CIDR will contain /suffix). Please check API docs for examples. |
-| <code><a href="#@cdktf/provider-okta.networkZone.NetworkZoneConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/network_zone#id NetworkZone#id}. |
+| <code><a href="#@cdktf/provider-okta.networkZone.NetworkZoneConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/network_zone#id NetworkZone#id}. |
 | <code><a href="#@cdktf/provider-okta.networkZone.NetworkZoneConfig.property.proxies">Proxies</a></code> | <code>string[]</code> | Array of values in CIDR/range form depending on the way it's been declared (i.e. CIDR will contain /suffix). Please check API docs for examples. |
 | <code><a href="#@cdktf/provider-okta.networkZone.NetworkZoneConfig.property.usage">Usage</a></code> | <code>string</code> | Zone's purpose: POLICY or BLOCKLIST. |
 
@@ -820,10 +820,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.networkZone.NetworkZoneConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -887,7 +887,7 @@ public string Name { get; set; }
 
 Name of the Network Zone Resource.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/network_zone#name NetworkZone#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/network_zone#name NetworkZone#name}
 
 ---
 
@@ -901,7 +901,7 @@ public string Type { get; set; }
 
 Type of the Network Zone - can either be IP or DYNAMIC only.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/network_zone#type NetworkZone#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/network_zone#type NetworkZone#type}
 
 ---
 
@@ -915,7 +915,7 @@ public string[] Asns { get; set; }
 
 Format of each array value: a string representation of an ASN numeric value.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/network_zone#asns NetworkZone#asns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/network_zone#asns NetworkZone#asns}
 
 ---
 
@@ -929,7 +929,7 @@ public string[] DynamicLocations { get; set; }
 
 Array of locations ISO-3166-1(2). Format code: countryCode OR countryCode-regionCode.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/network_zone#dynamic_locations NetworkZone#dynamic_locations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/network_zone#dynamic_locations NetworkZone#dynamic_locations}
 
 ---
 
@@ -943,7 +943,7 @@ public string DynamicProxyType { get; set; }
 
 Type of proxy being controlled by this network zone.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/network_zone#dynamic_proxy_type NetworkZone#dynamic_proxy_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/network_zone#dynamic_proxy_type NetworkZone#dynamic_proxy_type}
 
 ---
 
@@ -957,7 +957,7 @@ public string[] Gateways { get; set; }
 
 Array of values in CIDR/range form depending on the way it's been declared (i.e. CIDR will contain /suffix). Please check API docs for examples.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/network_zone#gateways NetworkZone#gateways}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/network_zone#gateways NetworkZone#gateways}
 
 ---
 
@@ -969,7 +969,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/network_zone#id NetworkZone#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/network_zone#id NetworkZone#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -986,7 +986,7 @@ public string[] Proxies { get; set; }
 
 Array of values in CIDR/range form depending on the way it's been declared (i.e. CIDR will contain /suffix). Please check API docs for examples.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/network_zone#proxies NetworkZone#proxies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/network_zone#proxies NetworkZone#proxies}
 
 ---
 
@@ -1000,7 +1000,7 @@ public string Usage { get; set; }
 
 Zone's purpose: POLICY or BLOCKLIST.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/network_zone#usage NetworkZone#usage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/network_zone#usage NetworkZone#usage}
 
 ---
 

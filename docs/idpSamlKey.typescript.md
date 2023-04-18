@@ -1,6 +1,6 @@
 # `okta_idp_saml_key`
 
-Refer to the Terraform Registory for docs: [`okta_idp_saml_key`](https://www.terraform.io/docs/providers/okta/r/idp_saml_key).
+Refer to the Terraform Registory for docs: [`okta_idp_saml_key`](https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_saml_key).
 
 # `idpSamlKey` Submodule <a name="`idpSamlKey` Submodule" id="@cdktf/provider-okta.idpSamlKey"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_idp_saml_key`](https://www.ter
 
 ### IdpSamlKey <a name="IdpSamlKey" id="@cdktf/provider-okta.idpSamlKey.IdpSamlKey"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/idp_saml_key okta_idp_saml_key}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_saml_key okta_idp_saml_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.idpSamlKey.IdpSamlKey.Initializer"></a>
 
@@ -346,7 +346,7 @@ idpSamlKey.IdpSamlKey.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-okta.idpSamlKey.IdpSamlKey.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSamlKey.IdpSamlKey.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSamlKey.IdpSamlKey.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.idpSamlKey.IdpSamlKey.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.idpSamlKey.IdpSamlKey.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSamlKey.IdpSamlKey.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSamlKey.IdpSamlKey.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSamlKey.IdpSamlKey.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -450,10 +450,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.idpSamlKey.IdpSamlKey.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -642,14 +642,14 @@ const idpSamlKeyConfig: idpSamlKey.IdpSamlKeyConfig = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-okta.idpSamlKey.IdpSamlKeyConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.idpSamlKey.IdpSamlKeyConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.idpSamlKey.IdpSamlKeyConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSamlKey.IdpSamlKeyConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSamlKey.IdpSamlKeyConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSamlKey.IdpSamlKeyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSamlKey.IdpSamlKeyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSamlKey.IdpSamlKeyConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSamlKey.IdpSamlKeyConfig.property.x5C">x5C</a></code> | <code>string[]</code> | base64-encoded X.509 certificate chain with DER encoding. |
-| <code><a href="#@cdktf/provider-okta.idpSamlKey.IdpSamlKeyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml_key#id IdpSamlKey#id}. |
+| <code><a href="#@cdktf/provider-okta.idpSamlKey.IdpSamlKeyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_saml_key#id IdpSamlKey#id}. |
 
 ---
 
@@ -666,10 +666,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.idpSamlKey.IdpSamlKeyConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -733,7 +733,7 @@ public readonly x5C: string[];
 
 base64-encoded X.509 certificate chain with DER encoding.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml_key#x5c IdpSamlKey#x5c}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_saml_key#x5c IdpSamlKey#x5c}
 
 ---
 
@@ -745,7 +745,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/idp_saml_key#id IdpSamlKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_saml_key#id IdpSamlKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

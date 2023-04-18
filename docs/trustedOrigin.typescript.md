@@ -1,6 +1,6 @@
 # `okta_trusted_origin`
 
-Refer to the Terraform Registory for docs: [`okta_trusted_origin`](https://www.terraform.io/docs/providers/okta/r/trusted_origin).
+Refer to the Terraform Registory for docs: [`okta_trusted_origin`](https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/trusted_origin).
 
 # `trustedOrigin` Submodule <a name="`trustedOrigin` Submodule" id="@cdktf/provider-okta.trustedOrigin"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_trusted_origin`](https://www.t
 
 ### TrustedOrigin <a name="TrustedOrigin" id="@cdktf/provider-okta.trustedOrigin.TrustedOrigin"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/trusted_origin okta_trusted_origin}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/trusted_origin okta_trusted_origin}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.trustedOrigin.TrustedOrigin.Initializer"></a>
 
@@ -353,7 +353,7 @@ trustedOrigin.TrustedOrigin.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-okta.trustedOrigin.TrustedOrigin.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.trustedOrigin.TrustedOrigin.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.trustedOrigin.TrustedOrigin.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.trustedOrigin.TrustedOrigin.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.trustedOrigin.TrustedOrigin.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.trustedOrigin.TrustedOrigin.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.trustedOrigin.TrustedOrigin.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.trustedOrigin.TrustedOrigin.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -457,10 +457,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.trustedOrigin.TrustedOrigin.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -649,7 +649,7 @@ const trustedOriginConfig: trustedOrigin.TrustedOriginConfig = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-okta.trustedOrigin.TrustedOriginConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.trustedOrigin.TrustedOriginConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.trustedOrigin.TrustedOriginConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.trustedOrigin.TrustedOriginConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.trustedOrigin.TrustedOriginConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.trustedOrigin.TrustedOriginConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -659,7 +659,7 @@ const trustedOriginConfig: trustedOrigin.TrustedOriginConfig = { ... }
 | <code><a href="#@cdktf/provider-okta.trustedOrigin.TrustedOriginConfig.property.origin">origin</a></code> | <code>string</code> | Unique origin URL for this trusted origin. |
 | <code><a href="#@cdktf/provider-okta.trustedOrigin.TrustedOriginConfig.property.scopes">scopes</a></code> | <code>string[]</code> | Scopes of the Trusted Origin - can either be CORS or REDIRECT only. |
 | <code><a href="#@cdktf/provider-okta.trustedOrigin.TrustedOriginConfig.property.active">active</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether the Trusted Origin is active or not - can only be issued post-creation. |
-| <code><a href="#@cdktf/provider-okta.trustedOrigin.TrustedOriginConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/trusted_origin#id TrustedOrigin#id}. |
+| <code><a href="#@cdktf/provider-okta.trustedOrigin.TrustedOriginConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/trusted_origin#id TrustedOrigin#id}. |
 
 ---
 
@@ -676,10 +676,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.trustedOrigin.TrustedOriginConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -743,7 +743,7 @@ public readonly name: string;
 
 Unique name for this trusted origin.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/trusted_origin#name TrustedOrigin#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/trusted_origin#name TrustedOrigin#name}
 
 ---
 
@@ -757,7 +757,7 @@ public readonly origin: string;
 
 Unique origin URL for this trusted origin.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/trusted_origin#origin TrustedOrigin#origin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/trusted_origin#origin TrustedOrigin#origin}
 
 ---
 
@@ -771,7 +771,7 @@ public readonly scopes: string[];
 
 Scopes of the Trusted Origin - can either be CORS or REDIRECT only.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/trusted_origin#scopes TrustedOrigin#scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/trusted_origin#scopes TrustedOrigin#scopes}
 
 ---
 
@@ -785,7 +785,7 @@ public readonly active: boolean | IResolvable;
 
 Whether the Trusted Origin is active or not - can only be issued post-creation.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/trusted_origin#active TrustedOrigin#active}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/trusted_origin#active TrustedOrigin#active}
 
 ---
 
@@ -797,7 +797,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/trusted_origin#id TrustedOrigin#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/trusted_origin#id TrustedOrigin#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

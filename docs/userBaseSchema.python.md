@@ -1,6 +1,6 @@
 # `okta_user_base_schema`
 
-Refer to the Terraform Registory for docs: [`okta_user_base_schema`](https://www.terraform.io/docs/providers/okta/r/user_base_schema).
+Refer to the Terraform Registory for docs: [`okta_user_base_schema`](https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user_base_schema).
 
 # `userBaseSchema` Submodule <a name="`userBaseSchema` Submodule" id="@cdktf/provider-okta.userBaseSchema"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_user_base_schema`](https://www
 
 ### UserBaseSchema <a name="UserBaseSchema" id="@cdktf/provider-okta.userBaseSchema.UserBaseSchema"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/user_base_schema okta_user_base_schema}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user_base_schema okta_user_base_schema}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.userBaseSchema.UserBaseSchema.Initializer"></a>
 
@@ -19,7 +19,7 @@ userBaseSchema.UserBaseSchema(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -42,7 +42,7 @@ userBaseSchema.UserBaseSchema(
 | <code><a href="#@cdktf/provider-okta.userBaseSchema.UserBaseSchema.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-okta.userBaseSchema.UserBaseSchema.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-okta.userBaseSchema.UserBaseSchema.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.userBaseSchema.UserBaseSchema.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.userBaseSchema.UserBaseSchema.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.userBaseSchema.UserBaseSchema.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.userBaseSchema.UserBaseSchema.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.userBaseSchema.UserBaseSchema.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -51,7 +51,7 @@ userBaseSchema.UserBaseSchema(
 | <code><a href="#@cdktf/provider-okta.userBaseSchema.UserBaseSchema.Initializer.parameter.index">index</a></code> | <code>str</code> | Subschema unique string identifier. |
 | <code><a href="#@cdktf/provider-okta.userBaseSchema.UserBaseSchema.Initializer.parameter.title">title</a></code> | <code>str</code> | Subschema title (display name). |
 | <code><a href="#@cdktf/provider-okta.userBaseSchema.UserBaseSchema.Initializer.parameter.type">type</a></code> | <code>str</code> | Subschema type: string, boolean, number, integer, array, or object. |
-| <code><a href="#@cdktf/provider-okta.userBaseSchema.UserBaseSchema.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_base_schema#id UserBaseSchema#id}. |
+| <code><a href="#@cdktf/provider-okta.userBaseSchema.UserBaseSchema.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user_base_schema#id UserBaseSchema#id}. |
 | <code><a href="#@cdktf/provider-okta.userBaseSchema.UserBaseSchema.Initializer.parameter.master">master</a></code> | <code>str</code> | SubSchema profile manager, if not set it will inherit its setting. |
 | <code><a href="#@cdktf/provider-okta.userBaseSchema.UserBaseSchema.Initializer.parameter.pattern">pattern</a></code> | <code>str</code> | The validation pattern to use for the subschema. Must be in form of '.+', or '[<pattern>]+' if present.'. |
 | <code><a href="#@cdktf/provider-okta.userBaseSchema.UserBaseSchema.Initializer.parameter.permissions">permissions</a></code> | <code>str</code> | SubSchema permissions: HIDE, READ_ONLY, or READ_WRITE. |
@@ -86,7 +86,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.userBaseSchema.UserBaseSchema.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -126,7 +126,7 @@ Must be unique amongst siblings in the same scope
 
 Subschema unique string identifier.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_base_schema#index UserBaseSchema#index}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user_base_schema#index UserBaseSchema#index}
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 Subschema title (display name).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_base_schema#title UserBaseSchema#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user_base_schema#title UserBaseSchema#title}
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 Subschema type: string, boolean, number, integer, array, or object.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_base_schema#type UserBaseSchema#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user_base_schema#type UserBaseSchema#type}
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_base_schema#id UserBaseSchema#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user_base_schema#id UserBaseSchema#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -167,7 +167,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 SubSchema profile manager, if not set it will inherit its setting.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_base_schema#master UserBaseSchema#master}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user_base_schema#master UserBaseSchema#master}
 
 ---
 
@@ -177,7 +177,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 The validation pattern to use for the subschema. Must be in form of '.+', or '[<pattern>]+' if present.'.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_base_schema#pattern UserBaseSchema#pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user_base_schema#pattern UserBaseSchema#pattern}
 
 ---
 
@@ -187,7 +187,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 SubSchema permissions: HIDE, READ_ONLY, or READ_WRITE.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_base_schema#permissions UserBaseSchema#permissions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user_base_schema#permissions UserBaseSchema#permissions}
 
 ---
 
@@ -197,7 +197,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 Whether the subschema is required.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_base_schema#required UserBaseSchema#required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user_base_schema#required UserBaseSchema#required}
 
 ---
 
@@ -207,7 +207,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 Custom subschema user type.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_base_schema#user_type UserBaseSchema#user_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user_base_schema#user_type UserBaseSchema#user_type}
 
 ---
 
@@ -573,7 +573,7 @@ userBaseSchema.UserBaseSchema.is_terraform_resource(
 | <code><a href="#@cdktf/provider-okta.userBaseSchema.UserBaseSchema.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.userBaseSchema.UserBaseSchema.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.userBaseSchema.UserBaseSchema.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.userBaseSchema.UserBaseSchema.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.userBaseSchema.UserBaseSchema.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.userBaseSchema.UserBaseSchema.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.userBaseSchema.UserBaseSchema.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.userBaseSchema.UserBaseSchema.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -685,10 +685,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.userBaseSchema.UserBaseSchema.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -951,7 +951,7 @@ from cdktf_cdktf_provider_okta import user_base_schema
 
 userBaseSchema.UserBaseSchemaConfig(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -974,7 +974,7 @@ userBaseSchema.UserBaseSchemaConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-okta.userBaseSchema.UserBaseSchemaConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.userBaseSchema.UserBaseSchemaConfig.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.userBaseSchema.UserBaseSchemaConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.userBaseSchema.UserBaseSchemaConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.userBaseSchema.UserBaseSchemaConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.userBaseSchema.UserBaseSchemaConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -983,7 +983,7 @@ userBaseSchema.UserBaseSchemaConfig(
 | <code><a href="#@cdktf/provider-okta.userBaseSchema.UserBaseSchemaConfig.property.index">index</a></code> | <code>str</code> | Subschema unique string identifier. |
 | <code><a href="#@cdktf/provider-okta.userBaseSchema.UserBaseSchemaConfig.property.title">title</a></code> | <code>str</code> | Subschema title (display name). |
 | <code><a href="#@cdktf/provider-okta.userBaseSchema.UserBaseSchemaConfig.property.type">type</a></code> | <code>str</code> | Subschema type: string, boolean, number, integer, array, or object. |
-| <code><a href="#@cdktf/provider-okta.userBaseSchema.UserBaseSchemaConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_base_schema#id UserBaseSchema#id}. |
+| <code><a href="#@cdktf/provider-okta.userBaseSchema.UserBaseSchemaConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user_base_schema#id UserBaseSchema#id}. |
 | <code><a href="#@cdktf/provider-okta.userBaseSchema.UserBaseSchemaConfig.property.master">master</a></code> | <code>str</code> | SubSchema profile manager, if not set it will inherit its setting. |
 | <code><a href="#@cdktf/provider-okta.userBaseSchema.UserBaseSchemaConfig.property.pattern">pattern</a></code> | <code>str</code> | The validation pattern to use for the subschema. Must be in form of '.+', or '[<pattern>]+' if present.'. |
 | <code><a href="#@cdktf/provider-okta.userBaseSchema.UserBaseSchemaConfig.property.permissions">permissions</a></code> | <code>str</code> | SubSchema permissions: HIDE, READ_ONLY, or READ_WRITE. |
@@ -1005,10 +1005,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.userBaseSchema.UserBaseSchemaConfig.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -1072,7 +1072,7 @@ index: str
 
 Subschema unique string identifier.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_base_schema#index UserBaseSchema#index}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user_base_schema#index UserBaseSchema#index}
 
 ---
 
@@ -1086,7 +1086,7 @@ title: str
 
 Subschema title (display name).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_base_schema#title UserBaseSchema#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user_base_schema#title UserBaseSchema#title}
 
 ---
 
@@ -1100,7 +1100,7 @@ type: str
 
 Subschema type: string, boolean, number, integer, array, or object.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_base_schema#type UserBaseSchema#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user_base_schema#type UserBaseSchema#type}
 
 ---
 
@@ -1112,7 +1112,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_base_schema#id UserBaseSchema#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user_base_schema#id UserBaseSchema#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1129,7 +1129,7 @@ master: str
 
 SubSchema profile manager, if not set it will inherit its setting.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_base_schema#master UserBaseSchema#master}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user_base_schema#master UserBaseSchema#master}
 
 ---
 
@@ -1143,7 +1143,7 @@ pattern: str
 
 The validation pattern to use for the subschema. Must be in form of '.+', or '[<pattern>]+' if present.'.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_base_schema#pattern UserBaseSchema#pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user_base_schema#pattern UserBaseSchema#pattern}
 
 ---
 
@@ -1157,7 +1157,7 @@ permissions: str
 
 SubSchema permissions: HIDE, READ_ONLY, or READ_WRITE.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_base_schema#permissions UserBaseSchema#permissions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user_base_schema#permissions UserBaseSchema#permissions}
 
 ---
 
@@ -1171,7 +1171,7 @@ required: typing.Union[bool, IResolvable]
 
 Whether the subschema is required.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_base_schema#required UserBaseSchema#required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user_base_schema#required UserBaseSchema#required}
 
 ---
 
@@ -1185,7 +1185,7 @@ user_type: str
 
 Custom subschema user type.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_base_schema#user_type UserBaseSchema#user_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user_base_schema#user_type UserBaseSchema#user_type}
 
 ---
 

@@ -1,6 +1,6 @@
 # `okta_three_field_app`
 
-Refer to the Terraform Registory for docs: [`okta_three_field_app`](https://www.terraform.io/docs/providers/okta/r/three_field_app).
+Refer to the Terraform Registory for docs: [`okta_three_field_app`](https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/three_field_app).
 
 # `threeFieldApp` Submodule <a name="`threeFieldApp` Submodule" id="@cdktf/provider-okta.threeFieldApp"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`okta_three_field_app`](https://www.
 
 ### ThreeFieldApp <a name="ThreeFieldApp" id="@cdktf/provider-okta.threeFieldApp.ThreeFieldApp"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/three_field_app okta_three_field_app}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/three_field_app okta_three_field_app}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.threeFieldApp.ThreeFieldApp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/threefieldapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/threefieldapp"
 
 threefieldapp.NewThreeFieldApp(scope Construct, id *string, config ThreeFieldAppConfig) ThreeFieldApp
 ```
@@ -478,7 +478,7 @@ func ResetUsers()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.threeFieldApp.ThreeFieldApp.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/threefieldapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/threefieldapp"
 
 threefieldapp.ThreeFieldApp_IsConstruct(x interface{}) *bool
 ```
@@ -510,7 +510,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.threeFieldApp.ThreeFieldApp.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/threefieldapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/threefieldapp"
 
 threefieldapp.ThreeFieldApp_IsTerraformElement(x interface{}) *bool
 ```
@@ -524,7 +524,7 @@ threefieldapp.ThreeFieldApp_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.threeFieldApp.ThreeFieldApp.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/threefieldapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/threefieldapp"
 
 threefieldapp.ThreeFieldApp_IsTerraformResource(x interface{}) *bool
 ```
@@ -547,7 +547,7 @@ threefieldapp.ThreeFieldApp_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-okta.threeFieldApp.ThreeFieldApp.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.threeFieldApp.ThreeFieldApp.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.threeFieldApp.ThreeFieldApp.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.threeFieldApp.ThreeFieldApp.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.threeFieldApp.ThreeFieldApp.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.threeFieldApp.ThreeFieldApp.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.threeFieldApp.ThreeFieldApp.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.threeFieldApp.ThreeFieldApp.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -710,10 +710,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.threeFieldApp.ThreeFieldApp.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -1482,11 +1482,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.threeFieldApp.ThreeFieldAppConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/threefieldapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/threefieldapp"
 
 &threefieldapp.ThreeFieldAppConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -1518,7 +1518,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/threefieldapp"
 	SkipGroups: interface{},
 	SkipUsers: interface{},
 	Status: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-okta-go/okta/v6.threeFieldApp.ThreeFieldAppTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-okta-go/okta/v7.threeFieldApp.ThreeFieldAppTimeouts,
 	UrlRegex: *string,
 	UserNameTemplate: *string,
 	UserNameTemplatePushStatus: *string,
@@ -1533,7 +1533,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/threefieldapp"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-okta.threeFieldApp.ThreeFieldAppConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.threeFieldApp.ThreeFieldAppConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.threeFieldApp.ThreeFieldAppConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.threeFieldApp.ThreeFieldAppConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.threeFieldApp.ThreeFieldAppConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.threeFieldApp.ThreeFieldAppConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -1557,7 +1557,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/threefieldapp"
 | <code><a href="#@cdktf/provider-okta.threeFieldApp.ThreeFieldAppConfig.property.groups">Groups</a></code> | <code>*[]*string</code> | Groups associated with the application. |
 | <code><a href="#@cdktf/provider-okta.threeFieldApp.ThreeFieldAppConfig.property.hideIos">HideIos</a></code> | <code>interface{}</code> | Do not display application icon on mobile app. |
 | <code><a href="#@cdktf/provider-okta.threeFieldApp.ThreeFieldAppConfig.property.hideWeb">HideWeb</a></code> | <code>interface{}</code> | Do not display application icon to users. |
-| <code><a href="#@cdktf/provider-okta.threeFieldApp.ThreeFieldAppConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app#id ThreeFieldApp#id}. |
+| <code><a href="#@cdktf/provider-okta.threeFieldApp.ThreeFieldAppConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/three_field_app#id ThreeFieldApp#id}. |
 | <code><a href="#@cdktf/provider-okta.threeFieldApp.ThreeFieldAppConfig.property.logo">Logo</a></code> | <code>*string</code> | Local path to logo of the application. |
 | <code><a href="#@cdktf/provider-okta.threeFieldApp.ThreeFieldAppConfig.property.revealPassword">RevealPassword</a></code> | <code>interface{}</code> | Allow user to reveal password. |
 | <code><a href="#@cdktf/provider-okta.threeFieldApp.ThreeFieldAppConfig.property.sharedPassword">SharedPassword</a></code> | <code>*string</code> | Shared password, required for certain schemes. |
@@ -1588,10 +1588,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.threeFieldApp.ThreeFieldAppConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -1655,7 +1655,7 @@ ButtonSelector *string
 
 Login button field CSS selector.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app#button_selector ThreeFieldApp#button_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/three_field_app#button_selector ThreeFieldApp#button_selector}
 
 ---
 
@@ -1669,7 +1669,7 @@ ExtraFieldSelector *string
 
 Extra field CSS selector.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app#extra_field_selector ThreeFieldApp#extra_field_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/three_field_app#extra_field_selector ThreeFieldApp#extra_field_selector}
 
 ---
 
@@ -1683,7 +1683,7 @@ ExtraFieldValue *string
 
 Value for extra form field.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app#extra_field_value ThreeFieldApp#extra_field_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/three_field_app#extra_field_value ThreeFieldApp#extra_field_value}
 
 ---
 
@@ -1697,7 +1697,7 @@ Label *string
 
 Pretty name of app.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app#label ThreeFieldApp#label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/three_field_app#label ThreeFieldApp#label}
 
 ---
 
@@ -1711,7 +1711,7 @@ PasswordSelector *string
 
 Login password field CSS selector.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app#password_selector ThreeFieldApp#password_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/three_field_app#password_selector ThreeFieldApp#password_selector}
 
 ---
 
@@ -1725,7 +1725,7 @@ Url *string
 
 Login URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app#url ThreeFieldApp#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/three_field_app#url ThreeFieldApp#url}
 
 ---
 
@@ -1739,7 +1739,7 @@ UsernameSelector *string
 
 Login username field CSS selector.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app#username_selector ThreeFieldApp#username_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/three_field_app#username_selector ThreeFieldApp#username_selector}
 
 ---
 
@@ -1753,7 +1753,7 @@ AccessibilityErrorRedirectUrl *string
 
 Custom error page URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app#accessibility_error_redirect_url ThreeFieldApp#accessibility_error_redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/three_field_app#accessibility_error_redirect_url ThreeFieldApp#accessibility_error_redirect_url}
 
 ---
 
@@ -1767,7 +1767,7 @@ AccessibilityLoginRedirectUrl *string
 
 Custom login page URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app#accessibility_login_redirect_url ThreeFieldApp#accessibility_login_redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/three_field_app#accessibility_login_redirect_url ThreeFieldApp#accessibility_login_redirect_url}
 
 ---
 
@@ -1781,7 +1781,7 @@ AccessibilitySelfService interface{}
 
 Enable self service.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app#accessibility_self_service ThreeFieldApp#accessibility_self_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/three_field_app#accessibility_self_service ThreeFieldApp#accessibility_self_service}
 
 ---
 
@@ -1795,7 +1795,7 @@ AdminNote *string
 
 Application notes for admins.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app#admin_note ThreeFieldApp#admin_note}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/three_field_app#admin_note ThreeFieldApp#admin_note}
 
 ---
 
@@ -1809,7 +1809,7 @@ AppLinksJson *string
 
 Displays specific appLinks for the app.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app#app_links_json ThreeFieldApp#app_links_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/three_field_app#app_links_json ThreeFieldApp#app_links_json}
 
 ---
 
@@ -1823,7 +1823,7 @@ AutoSubmitToolbar interface{}
 
 Display auto submit toolbar.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app#auto_submit_toolbar ThreeFieldApp#auto_submit_toolbar}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/three_field_app#auto_submit_toolbar ThreeFieldApp#auto_submit_toolbar}
 
 ---
 
@@ -1837,7 +1837,7 @@ CredentialsScheme *string
 
 Application credentials scheme.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app#credentials_scheme ThreeFieldApp#credentials_scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/three_field_app#credentials_scheme ThreeFieldApp#credentials_scheme}
 
 ---
 
@@ -1851,7 +1851,7 @@ EnduserNote *string
 
 Application notes for end users.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app#enduser_note ThreeFieldApp#enduser_note}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/three_field_app#enduser_note ThreeFieldApp#enduser_note}
 
 ---
 
@@ -1865,7 +1865,7 @@ Groups *[]*string
 
 Groups associated with the application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app#groups ThreeFieldApp#groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/three_field_app#groups ThreeFieldApp#groups}
 
 ---
 
@@ -1879,7 +1879,7 @@ HideIos interface{}
 
 Do not display application icon on mobile app.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app#hide_ios ThreeFieldApp#hide_ios}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/three_field_app#hide_ios ThreeFieldApp#hide_ios}
 
 ---
 
@@ -1893,7 +1893,7 @@ HideWeb interface{}
 
 Do not display application icon to users.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app#hide_web ThreeFieldApp#hide_web}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/three_field_app#hide_web ThreeFieldApp#hide_web}
 
 ---
 
@@ -1905,7 +1905,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app#id ThreeFieldApp#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/three_field_app#id ThreeFieldApp#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1922,7 +1922,7 @@ Logo *string
 
 Local path to logo of the application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app#logo ThreeFieldApp#logo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/three_field_app#logo ThreeFieldApp#logo}
 
 ---
 
@@ -1936,7 +1936,7 @@ RevealPassword interface{}
 
 Allow user to reveal password.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app#reveal_password ThreeFieldApp#reveal_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/three_field_app#reveal_password ThreeFieldApp#reveal_password}
 
 ---
 
@@ -1950,7 +1950,7 @@ SharedPassword *string
 
 Shared password, required for certain schemes.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app#shared_password ThreeFieldApp#shared_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/three_field_app#shared_password ThreeFieldApp#shared_password}
 
 ---
 
@@ -1964,7 +1964,7 @@ SharedUsername *string
 
 Shared username, required for certain schemes.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app#shared_username ThreeFieldApp#shared_username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/three_field_app#shared_username ThreeFieldApp#shared_username}
 
 ---
 
@@ -1978,7 +1978,7 @@ SkipGroups interface{}
 
 Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app#skip_groups ThreeFieldApp#skip_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/three_field_app#skip_groups ThreeFieldApp#skip_groups}
 
 ---
 
@@ -1992,7 +1992,7 @@ SkipUsers interface{}
 
 Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app#skip_users ThreeFieldApp#skip_users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/three_field_app#skip_users ThreeFieldApp#skip_users}
 
 ---
 
@@ -2006,7 +2006,7 @@ Status *string
 
 Status of application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app#status ThreeFieldApp#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/three_field_app#status ThreeFieldApp#status}
 
 ---
 
@@ -2020,7 +2020,7 @@ Timeouts ThreeFieldAppTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app#timeouts ThreeFieldApp#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/three_field_app#timeouts ThreeFieldApp#timeouts}
 
 ---
 
@@ -2034,7 +2034,7 @@ UrlRegex *string
 
 A regex that further restricts URL to the specified regex.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app#url_regex ThreeFieldApp#url_regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/three_field_app#url_regex ThreeFieldApp#url_regex}
 
 ---
 
@@ -2048,7 +2048,7 @@ UserNameTemplate *string
 
 Username template.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app#user_name_template ThreeFieldApp#user_name_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/three_field_app#user_name_template ThreeFieldApp#user_name_template}
 
 ---
 
@@ -2062,7 +2062,7 @@ UserNameTemplatePushStatus *string
 
 Push username on update.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app#user_name_template_push_status ThreeFieldApp#user_name_template_push_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/three_field_app#user_name_template_push_status ThreeFieldApp#user_name_template_push_status}
 
 ---
 
@@ -2076,7 +2076,7 @@ UserNameTemplateSuffix *string
 
 Username template suffix.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app#user_name_template_suffix ThreeFieldApp#user_name_template_suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/three_field_app#user_name_template_suffix ThreeFieldApp#user_name_template_suffix}
 
 ---
 
@@ -2090,7 +2090,7 @@ UserNameTemplateType *string
 
 Username template type.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app#user_name_template_type ThreeFieldApp#user_name_template_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/three_field_app#user_name_template_type ThreeFieldApp#user_name_template_type}
 
 ---
 
@@ -2104,7 +2104,7 @@ Users interface{}
 
 users block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app#users ThreeFieldApp#users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/three_field_app#users ThreeFieldApp#users}
 
 ---
 
@@ -2113,7 +2113,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.threeFieldApp.ThreeFieldAppTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/threefieldapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/threefieldapp"
 
 &threefieldapp.ThreeFieldAppTimeouts {
 	Create: *string,
@@ -2126,9 +2126,9 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/threefieldapp"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.threeFieldApp.ThreeFieldAppTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app#create ThreeFieldApp#create}. |
-| <code><a href="#@cdktf/provider-okta.threeFieldApp.ThreeFieldAppTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app#read ThreeFieldApp#read}. |
-| <code><a href="#@cdktf/provider-okta.threeFieldApp.ThreeFieldAppTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app#update ThreeFieldApp#update}. |
+| <code><a href="#@cdktf/provider-okta.threeFieldApp.ThreeFieldAppTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/three_field_app#create ThreeFieldApp#create}. |
+| <code><a href="#@cdktf/provider-okta.threeFieldApp.ThreeFieldAppTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/three_field_app#read ThreeFieldApp#read}. |
+| <code><a href="#@cdktf/provider-okta.threeFieldApp.ThreeFieldAppTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/three_field_app#update ThreeFieldApp#update}. |
 
 ---
 
@@ -2140,7 +2140,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app#create ThreeFieldApp#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/three_field_app#create ThreeFieldApp#create}.
 
 ---
 
@@ -2152,7 +2152,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app#read ThreeFieldApp#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/three_field_app#read ThreeFieldApp#read}.
 
 ---
 
@@ -2164,7 +2164,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app#update ThreeFieldApp#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/three_field_app#update ThreeFieldApp#update}.
 
 ---
 
@@ -2173,7 +2173,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.threeFieldApp.ThreeFieldAppUsers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/threefieldapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/threefieldapp"
 
 &threefieldapp.ThreeFieldAppUsers {
 	Id: *string,
@@ -2202,7 +2202,7 @@ Id *string
 
 User ID.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app#id ThreeFieldApp#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/three_field_app#id ThreeFieldApp#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2219,7 +2219,7 @@ Password *string
 
 Password for user application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app#password ThreeFieldApp#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/three_field_app#password ThreeFieldApp#password}
 
 ---
 
@@ -2233,7 +2233,7 @@ Username *string
 
 Username for user.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/three_field_app#username ThreeFieldApp#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/three_field_app#username ThreeFieldApp#username}
 
 ---
 
@@ -2244,7 +2244,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.threeFieldApp.ThreeFieldAppTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/threefieldapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/threefieldapp"
 
 threefieldapp.NewThreeFieldAppTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ThreeFieldAppTimeoutsOutputReference
 ```
@@ -2580,7 +2580,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.threeFieldApp.ThreeFieldAppUsersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/threefieldapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/threefieldapp"
 
 threefieldapp.NewThreeFieldAppUsersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ThreeFieldAppUsersList
 ```
@@ -2723,7 +2723,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.threeFieldApp.ThreeFieldAppUsersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/threefieldapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/threefieldapp"
 
 threefieldapp.NewThreeFieldAppUsersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ThreeFieldAppUsersOutputReference
 ```

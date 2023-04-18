@@ -1,6 +1,6 @@
 # `okta_oauth_app_redirect_uri`
 
-Refer to the Terraform Registory for docs: [`okta_oauth_app_redirect_uri`](https://www.terraform.io/docs/providers/okta/r/oauth_app_redirect_uri).
+Refer to the Terraform Registory for docs: [`okta_oauth_app_redirect_uri`](https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/oauth_app_redirect_uri).
 
 # `oauthAppRedirectUri` Submodule <a name="`oauthAppRedirectUri` Submodule" id="@cdktf/provider-okta.oauthAppRedirectUri"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`okta_oauth_app_redirect_uri`](https
 
 ### OauthAppRedirectUri <a name="OauthAppRedirectUri" id="@cdktf/provider-okta.oauthAppRedirectUri.OauthAppRedirectUri"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/oauth_app_redirect_uri okta_oauth_app_redirect_uri}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/oauth_app_redirect_uri okta_oauth_app_redirect_uri}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.oauthAppRedirectUri.OauthAppRedirectUri.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/oauthappredirecturi"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/oauthappredirecturi"
 
 oauthappredirecturi.NewOauthAppRedirectUri(scope Construct, id *string, config OauthAppRedirectUriConfig) OauthAppRedirectUri
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.oauthAppRedirectUri.OauthAppRedirectUri.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/oauthappredirecturi"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/oauthappredirecturi"
 
 oauthappredirecturi.OauthAppRedirectUri_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.oauthAppRedirectUri.OauthAppRedirectUri.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/oauthappredirecturi"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/oauthappredirecturi"
 
 oauthappredirecturi.OauthAppRedirectUri_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ oauthappredirecturi.OauthAppRedirectUri_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.oauthAppRedirectUri.OauthAppRedirectUri.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/oauthappredirecturi"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/oauthappredirecturi"
 
 oauthappredirecturi.OauthAppRedirectUri_IsTerraformResource(x interface{}) *bool
 ```
@@ -346,7 +346,7 @@ oauthappredirecturi.OauthAppRedirectUri_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-okta.oauthAppRedirectUri.OauthAppRedirectUri.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.oauthAppRedirectUri.OauthAppRedirectUri.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.oauthAppRedirectUri.OauthAppRedirectUri.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.oauthAppRedirectUri.OauthAppRedirectUri.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.oauthAppRedirectUri.OauthAppRedirectUri.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.oauthAppRedirectUri.OauthAppRedirectUri.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.oauthAppRedirectUri.OauthAppRedirectUri.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.oauthAppRedirectUri.OauthAppRedirectUri.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -446,10 +446,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.oauthAppRedirectUri.OauthAppRedirectUri.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -588,11 +588,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.oauthAppRedirectUri.OauthAppRedirectUriConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/oauthappredirecturi"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/oauthappredirecturi"
 
 &oauthappredirecturi.OauthAppRedirectUriConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -609,15 +609,15 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/oauthappredirecturi"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-okta.oauthAppRedirectUri.OauthAppRedirectUriConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.oauthAppRedirectUri.OauthAppRedirectUriConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.oauthAppRedirectUri.OauthAppRedirectUriConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.oauthAppRedirectUri.OauthAppRedirectUriConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.oauthAppRedirectUri.OauthAppRedirectUriConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.oauthAppRedirectUri.OauthAppRedirectUriConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.oauthAppRedirectUri.OauthAppRedirectUriConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.oauthAppRedirectUri.OauthAppRedirectUriConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.oauthAppRedirectUri.OauthAppRedirectUriConfig.property.appId">AppId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app_redirect_uri#app_id OauthAppRedirectUri#app_id}. |
+| <code><a href="#@cdktf/provider-okta.oauthAppRedirectUri.OauthAppRedirectUriConfig.property.appId">AppId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/oauth_app_redirect_uri#app_id OauthAppRedirectUri#app_id}. |
 | <code><a href="#@cdktf/provider-okta.oauthAppRedirectUri.OauthAppRedirectUriConfig.property.uri">Uri</a></code> | <code>*string</code> | Redirect URI to append to Okta OIDC application. |
-| <code><a href="#@cdktf/provider-okta.oauthAppRedirectUri.OauthAppRedirectUriConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app_redirect_uri#id OauthAppRedirectUri#id}. |
+| <code><a href="#@cdktf/provider-okta.oauthAppRedirectUri.OauthAppRedirectUriConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/oauth_app_redirect_uri#id OauthAppRedirectUri#id}. |
 
 ---
 
@@ -634,10 +634,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.oauthAppRedirectUri.OauthAppRedirectUriConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -699,7 +699,7 @@ AppId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app_redirect_uri#app_id OauthAppRedirectUri#app_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/oauth_app_redirect_uri#app_id OauthAppRedirectUri#app_id}.
 
 ---
 
@@ -713,7 +713,7 @@ Uri *string
 
 Redirect URI to append to Okta OIDC application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app_redirect_uri#uri OauthAppRedirectUri#uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/oauth_app_redirect_uri#uri OauthAppRedirectUri#uri}
 
 ---
 
@@ -725,7 +725,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app_redirect_uri#id OauthAppRedirectUri#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/oauth_app_redirect_uri#id OauthAppRedirectUri#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

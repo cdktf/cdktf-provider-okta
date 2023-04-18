@@ -1,6 +1,6 @@
 # `okta_profile_mapping`
 
-Refer to the Terraform Registory for docs: [`okta_profile_mapping`](https://www.terraform.io/docs/providers/okta/r/profile_mapping).
+Refer to the Terraform Registory for docs: [`okta_profile_mapping`](https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/profile_mapping).
 
 # `profileMapping` Submodule <a name="`profileMapping` Submodule" id="@cdktf/provider-okta.profileMapping"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`okta_profile_mapping`](https://www.
 
 ### ProfileMapping <a name="ProfileMapping" id="@cdktf/provider-okta.profileMapping.ProfileMapping"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/profile_mapping okta_profile_mapping}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/profile_mapping okta_profile_mapping}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.profileMapping.ProfileMapping.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/profilemapping"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/profilemapping"
 
 profilemapping.NewProfileMapping(scope Construct, id *string, config ProfileMappingConfig) ProfileMapping
 ```
@@ -311,7 +311,7 @@ func ResetMappings()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.profileMapping.ProfileMapping.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/profilemapping"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/profilemapping"
 
 profilemapping.ProfileMapping_IsConstruct(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.profileMapping.ProfileMapping.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/profilemapping"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/profilemapping"
 
 profilemapping.ProfileMapping_IsTerraformElement(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ profilemapping.ProfileMapping_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.profileMapping.ProfileMapping.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/profilemapping"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/profilemapping"
 
 profilemapping.ProfileMapping_IsTerraformResource(x interface{}) *bool
 ```
@@ -380,7 +380,7 @@ profilemapping.ProfileMapping_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -490,10 +490,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.profileMapping.ProfileMapping.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -732,11 +732,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.profileMapping.ProfileMappingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/profilemapping"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/profilemapping"
 
 &profilemapping.ProfileMappingConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -756,7 +756,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/profilemapping"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -766,7 +766,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/profilemapping"
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingConfig.property.targetId">TargetId</a></code> | <code>*string</code> | The target id of the mapping to manage. |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingConfig.property.alwaysApply">AlwaysApply</a></code> | <code>interface{}</code> | Whether apply the changes to all users with this profile after updating or creating the these mappings. |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingConfig.property.deleteWhenAbsent">DeleteWhenAbsent</a></code> | <code>interface{}</code> | When turned on this flag will trigger the provider to delete mapping properties that are not defined in config. |
-| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/profile_mapping#id ProfileMapping#id}. |
+| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/profile_mapping#id ProfileMapping#id}. |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingConfig.property.mappings">Mappings</a></code> | <code>interface{}</code> | mappings block. |
 
 ---
@@ -784,10 +784,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.profileMapping.ProfileMappingConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -851,7 +851,7 @@ SourceId *string
 
 The source id of the mapping to manage.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/profile_mapping#source_id ProfileMapping#source_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/profile_mapping#source_id ProfileMapping#source_id}
 
 ---
 
@@ -865,7 +865,7 @@ TargetId *string
 
 The target id of the mapping to manage.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/profile_mapping#target_id ProfileMapping#target_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/profile_mapping#target_id ProfileMapping#target_id}
 
 ---
 
@@ -879,7 +879,7 @@ AlwaysApply interface{}
 
 Whether apply the changes to all users with this profile after updating or creating the these mappings.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/profile_mapping#always_apply ProfileMapping#always_apply}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/profile_mapping#always_apply ProfileMapping#always_apply}
 
 ---
 
@@ -895,7 +895,7 @@ When turned on this flag will trigger the provider to delete mapping properties 
 
 By default, we do not delete missing properties.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/profile_mapping#delete_when_absent ProfileMapping#delete_when_absent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/profile_mapping#delete_when_absent ProfileMapping#delete_when_absent}
 
 ---
 
@@ -907,7 +907,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/profile_mapping#id ProfileMapping#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/profile_mapping#id ProfileMapping#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -924,7 +924,7 @@ Mappings interface{}
 
 mappings block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/profile_mapping#mappings ProfileMapping#mappings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/profile_mapping#mappings ProfileMapping#mappings}
 
 ---
 
@@ -933,7 +933,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.profileMapping.ProfileMappingMappings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/profilemapping"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/profilemapping"
 
 &profilemapping.ProfileMappingMappings {
 	Expression: *string,
@@ -946,9 +946,9 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/profilemapping"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingMappings.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/profile_mapping#expression ProfileMapping#expression}. |
+| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingMappings.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/profile_mapping#expression ProfileMapping#expression}. |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingMappings.property.id">Id</a></code> | <code>*string</code> | The mapping property key. |
-| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingMappings.property.pushStatus">PushStatus</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/profile_mapping#push_status ProfileMapping#push_status}. |
+| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingMappings.property.pushStatus">PushStatus</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/profile_mapping#push_status ProfileMapping#push_status}. |
 
 ---
 
@@ -960,7 +960,7 @@ Expression *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/profile_mapping#expression ProfileMapping#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/profile_mapping#expression ProfileMapping#expression}.
 
 ---
 
@@ -974,7 +974,7 @@ Id *string
 
 The mapping property key.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/profile_mapping#id ProfileMapping#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/profile_mapping#id ProfileMapping#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -989,7 +989,7 @@ PushStatus *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/profile_mapping#push_status ProfileMapping#push_status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/profile_mapping#push_status ProfileMapping#push_status}.
 
 ---
 
@@ -1000,7 +1000,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.profileMapping.ProfileMappingMappingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/profilemapping"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/profilemapping"
 
 profilemapping.NewProfileMappingMappingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ProfileMappingMappingsList
 ```
@@ -1143,7 +1143,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.profileMapping.ProfileMappingMappingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/profilemapping"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/profilemapping"
 
 profilemapping.NewProfileMappingMappingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ProfileMappingMappingsOutputReference
 ```

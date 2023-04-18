@@ -1,6 +1,6 @@
 # `data_okta_app_group_assignments`
 
-Refer to the Terraform Registory for docs: [`data_okta_app_group_assignments`](https://www.terraform.io/docs/providers/okta/d/app_group_assignments).
+Refer to the Terraform Registory for docs: [`data_okta_app_group_assignments`](https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/app_group_assignments).
 
 # `dataOktaAppGroupAssignments` Submodule <a name="`dataOktaAppGroupAssignments` Submodule" id="@cdktf/provider-okta.dataOktaAppGroupAssignments"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_okta_app_group_assignments`](h
 
 ### DataOktaAppGroupAssignments <a name="DataOktaAppGroupAssignments" id="@cdktf/provider-okta.dataOktaAppGroupAssignments.DataOktaAppGroupAssignments"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/d/app_group_assignments okta_app_group_assignments}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/app_group_assignments okta_app_group_assignments}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaAppGroupAssignments.DataOktaAppGroupAssignments.Initializer"></a>
 
@@ -338,7 +338,7 @@ DataOktaAppGroupAssignments.IsTerraformDataSource(object X);
 | <code><a href="#@cdktf/provider-okta.dataOktaAppGroupAssignments.DataOktaAppGroupAssignments.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaAppGroupAssignments.DataOktaAppGroupAssignments.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaAppGroupAssignments.DataOktaAppGroupAssignments.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.dataOktaAppGroupAssignments.DataOktaAppGroupAssignments.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.dataOktaAppGroupAssignments.DataOktaAppGroupAssignments.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaAppGroupAssignments.DataOktaAppGroupAssignments.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaAppGroupAssignments.DataOktaAppGroupAssignments.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaAppGroupAssignments.DataOktaAppGroupAssignments.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -424,10 +424,10 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.dataOktaAppGroupAssignments.DataOktaAppGroupAssignments.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -530,7 +530,7 @@ using HashiCorp.Cdktf.Providers.Okta;
 
 new DataOktaAppGroupAssignmentsConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -545,7 +545,7 @@ new DataOktaAppGroupAssignmentsConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-okta.dataOktaAppGroupAssignments.DataOktaAppGroupAssignmentsConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.dataOktaAppGroupAssignments.DataOktaAppGroupAssignmentsConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.dataOktaAppGroupAssignments.DataOktaAppGroupAssignmentsConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaAppGroupAssignments.DataOktaAppGroupAssignmentsConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaAppGroupAssignments.DataOktaAppGroupAssignmentsConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaAppGroupAssignments.DataOktaAppGroupAssignmentsConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -568,10 +568,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.dataOktaAppGroupAssignments.DataOktaAppGroupAssignmentsConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -635,7 +635,7 @@ public string Id { get; set; }
 
 ID of the Okta App being queried for groups.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_group_assignments#id DataOktaAppGroupAssignments#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/app_group_assignments#id DataOktaAppGroupAssignments#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

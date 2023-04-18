@@ -1,6 +1,6 @@
 # `okta_swa_app`
 
-Refer to the Terraform Registory for docs: [`okta_swa_app`](https://www.terraform.io/docs/providers/okta/r/swa_app).
+Refer to the Terraform Registory for docs: [`okta_swa_app`](https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app).
 
 # `swaApp` Submodule <a name="`swaApp` Submodule" id="@cdktf/provider-okta.swaApp"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_swa_app`](https://www.terrafor
 
 ### SwaApp <a name="SwaApp" id="@cdktf/provider-okta.swaApp.SwaApp"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/swa_app okta_swa_app}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app okta_swa_app}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.swaApp.SwaApp.Initializer"></a>
 
@@ -568,7 +568,7 @@ swaApp.SwaApp.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-okta.swaApp.SwaApp.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.swaApp.SwaApp.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.swaApp.SwaApp.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.swaApp.SwaApp.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.swaApp.SwaApp.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.swaApp.SwaApp.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.swaApp.SwaApp.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.swaApp.SwaApp.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -725,10 +725,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.swaApp.SwaApp.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -1447,7 +1447,7 @@ const swaAppConfig: swaApp.SwaAppConfig = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-okta.swaApp.SwaAppConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.swaApp.SwaAppConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.swaApp.SwaAppConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.swaApp.SwaAppConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.swaApp.SwaAppConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.swaApp.SwaAppConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -1466,7 +1466,7 @@ const swaAppConfig: swaApp.SwaAppConfig = { ... }
 | <code><a href="#@cdktf/provider-okta.swaApp.SwaAppConfig.property.groups">groups</a></code> | <code>string[]</code> | Groups associated with the application. |
 | <code><a href="#@cdktf/provider-okta.swaApp.SwaAppConfig.property.hideIos">hideIos</a></code> | <code>boolean \| cdktf.IResolvable</code> | Do not display application icon on mobile app. |
 | <code><a href="#@cdktf/provider-okta.swaApp.SwaAppConfig.property.hideWeb">hideWeb</a></code> | <code>boolean \| cdktf.IResolvable</code> | Do not display application icon to users. |
-| <code><a href="#@cdktf/provider-okta.swaApp.SwaAppConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#id SwaApp#id}. |
+| <code><a href="#@cdktf/provider-okta.swaApp.SwaAppConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app#id SwaApp#id}. |
 | <code><a href="#@cdktf/provider-okta.swaApp.SwaAppConfig.property.logo">logo</a></code> | <code>string</code> | Local path to logo of the application. |
 | <code><a href="#@cdktf/provider-okta.swaApp.SwaAppConfig.property.passwordField">passwordField</a></code> | <code>string</code> | Login password field. |
 | <code><a href="#@cdktf/provider-okta.swaApp.SwaAppConfig.property.preconfiguredApp">preconfiguredApp</a></code> | <code>string</code> | Preconfigured app name. |
@@ -1499,10 +1499,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.swaApp.SwaAppConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -1566,7 +1566,7 @@ public readonly label: string;
 
 Pretty name of app.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#label SwaApp#label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app#label SwaApp#label}
 
 ---
 
@@ -1580,7 +1580,7 @@ public readonly accessibilityErrorRedirectUrl: string;
 
 Custom error page URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#accessibility_error_redirect_url SwaApp#accessibility_error_redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app#accessibility_error_redirect_url SwaApp#accessibility_error_redirect_url}
 
 ---
 
@@ -1594,7 +1594,7 @@ public readonly accessibilityLoginRedirectUrl: string;
 
 Custom login page URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#accessibility_login_redirect_url SwaApp#accessibility_login_redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app#accessibility_login_redirect_url SwaApp#accessibility_login_redirect_url}
 
 ---
 
@@ -1608,7 +1608,7 @@ public readonly accessibilitySelfService: boolean | IResolvable;
 
 Enable self service.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#accessibility_self_service SwaApp#accessibility_self_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app#accessibility_self_service SwaApp#accessibility_self_service}
 
 ---
 
@@ -1622,7 +1622,7 @@ public readonly adminNote: string;
 
 Application notes for admins.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#admin_note SwaApp#admin_note}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app#admin_note SwaApp#admin_note}
 
 ---
 
@@ -1636,7 +1636,7 @@ public readonly appLinksJson: string;
 
 Displays specific appLinks for the app.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#app_links_json SwaApp#app_links_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app#app_links_json SwaApp#app_links_json}
 
 ---
 
@@ -1650,7 +1650,7 @@ public readonly autoSubmitToolbar: boolean | IResolvable;
 
 Display auto submit toolbar.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#auto_submit_toolbar SwaApp#auto_submit_toolbar}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app#auto_submit_toolbar SwaApp#auto_submit_toolbar}
 
 ---
 
@@ -1664,7 +1664,7 @@ public readonly buttonField: string;
 
 Login button field.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#button_field SwaApp#button_field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app#button_field SwaApp#button_field}
 
 ---
 
@@ -1678,7 +1678,7 @@ public readonly checkbox: string;
 
 CSS selector for the checkbox.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#checkbox SwaApp#checkbox}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app#checkbox SwaApp#checkbox}
 
 ---
 
@@ -1692,7 +1692,7 @@ public readonly enduserNote: string;
 
 Application notes for end users.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#enduser_note SwaApp#enduser_note}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app#enduser_note SwaApp#enduser_note}
 
 ---
 
@@ -1706,7 +1706,7 @@ public readonly groups: string[];
 
 Groups associated with the application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#groups SwaApp#groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app#groups SwaApp#groups}
 
 ---
 
@@ -1720,7 +1720,7 @@ public readonly hideIos: boolean | IResolvable;
 
 Do not display application icon on mobile app.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#hide_ios SwaApp#hide_ios}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app#hide_ios SwaApp#hide_ios}
 
 ---
 
@@ -1734,7 +1734,7 @@ public readonly hideWeb: boolean | IResolvable;
 
 Do not display application icon to users.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#hide_web SwaApp#hide_web}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app#hide_web SwaApp#hide_web}
 
 ---
 
@@ -1746,7 +1746,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#id SwaApp#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app#id SwaApp#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1763,7 +1763,7 @@ public readonly logo: string;
 
 Local path to logo of the application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#logo SwaApp#logo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app#logo SwaApp#logo}
 
 ---
 
@@ -1777,7 +1777,7 @@ public readonly passwordField: string;
 
 Login password field.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#password_field SwaApp#password_field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app#password_field SwaApp#password_field}
 
 ---
 
@@ -1791,7 +1791,7 @@ public readonly preconfiguredApp: string;
 
 Preconfigured app name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#preconfigured_app SwaApp#preconfigured_app}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app#preconfigured_app SwaApp#preconfigured_app}
 
 ---
 
@@ -1805,7 +1805,7 @@ public readonly redirectUrl: string;
 
 If going to the login page URL redirects to another page, then enter that URL here.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#redirect_url SwaApp#redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app#redirect_url SwaApp#redirect_url}
 
 ---
 
@@ -1819,7 +1819,7 @@ public readonly skipGroups: boolean | IResolvable;
 
 Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#skip_groups SwaApp#skip_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app#skip_groups SwaApp#skip_groups}
 
 ---
 
@@ -1833,7 +1833,7 @@ public readonly skipUsers: boolean | IResolvable;
 
 Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#skip_users SwaApp#skip_users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app#skip_users SwaApp#skip_users}
 
 ---
 
@@ -1847,7 +1847,7 @@ public readonly status: string;
 
 Status of application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#status SwaApp#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app#status SwaApp#status}
 
 ---
 
@@ -1861,7 +1861,7 @@ public readonly timeouts: SwaAppTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#timeouts SwaApp#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app#timeouts SwaApp#timeouts}
 
 ---
 
@@ -1875,7 +1875,7 @@ public readonly url: string;
 
 Login URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#url SwaApp#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app#url SwaApp#url}
 
 ---
 
@@ -1889,7 +1889,7 @@ public readonly urlRegex: string;
 
 A regex that further restricts URL to the specified regex.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#url_regex SwaApp#url_regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app#url_regex SwaApp#url_regex}
 
 ---
 
@@ -1903,7 +1903,7 @@ public readonly usernameField: string;
 
 Login username field.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#username_field SwaApp#username_field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app#username_field SwaApp#username_field}
 
 ---
 
@@ -1917,7 +1917,7 @@ public readonly userNameTemplate: string;
 
 Username template.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#user_name_template SwaApp#user_name_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app#user_name_template SwaApp#user_name_template}
 
 ---
 
@@ -1931,7 +1931,7 @@ public readonly userNameTemplatePushStatus: string;
 
 Push username on update.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#user_name_template_push_status SwaApp#user_name_template_push_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app#user_name_template_push_status SwaApp#user_name_template_push_status}
 
 ---
 
@@ -1945,7 +1945,7 @@ public readonly userNameTemplateSuffix: string;
 
 Username template suffix.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#user_name_template_suffix SwaApp#user_name_template_suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app#user_name_template_suffix SwaApp#user_name_template_suffix}
 
 ---
 
@@ -1959,7 +1959,7 @@ public readonly userNameTemplateType: string;
 
 Username template type.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#user_name_template_type SwaApp#user_name_template_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app#user_name_template_type SwaApp#user_name_template_type}
 
 ---
 
@@ -1973,7 +1973,7 @@ public readonly users: IResolvable | SwaAppUsers[];
 
 users block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#users SwaApp#users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app#users SwaApp#users}
 
 ---
 
@@ -1991,9 +1991,9 @@ const swaAppTimeouts: swaApp.SwaAppTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.swaApp.SwaAppTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#create SwaApp#create}. |
-| <code><a href="#@cdktf/provider-okta.swaApp.SwaAppTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#read SwaApp#read}. |
-| <code><a href="#@cdktf/provider-okta.swaApp.SwaAppTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#update SwaApp#update}. |
+| <code><a href="#@cdktf/provider-okta.swaApp.SwaAppTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app#create SwaApp#create}. |
+| <code><a href="#@cdktf/provider-okta.swaApp.SwaAppTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app#read SwaApp#read}. |
+| <code><a href="#@cdktf/provider-okta.swaApp.SwaAppTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app#update SwaApp#update}. |
 
 ---
 
@@ -2005,7 +2005,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#create SwaApp#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app#create SwaApp#create}.
 
 ---
 
@@ -2017,7 +2017,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#read SwaApp#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app#read SwaApp#read}.
 
 ---
 
@@ -2029,7 +2029,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#update SwaApp#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app#update SwaApp#update}.
 
 ---
 
@@ -2063,7 +2063,7 @@ public readonly id: string;
 
 User ID.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#id SwaApp#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app#id SwaApp#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2080,7 +2080,7 @@ public readonly password: string;
 
 Password for user application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#password SwaApp#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app#password SwaApp#password}
 
 ---
 
@@ -2094,7 +2094,7 @@ public readonly username: string;
 
 Username for user.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#username SwaApp#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app#username SwaApp#username}
 
 ---
 

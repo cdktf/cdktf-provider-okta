@@ -1,6 +1,6 @@
 # `okta_app_user_base_schema`
 
-Refer to the Terraform Registory for docs: [`okta_app_user_base_schema`](https://www.terraform.io/docs/providers/okta/r/app_user_base_schema).
+Refer to the Terraform Registory for docs: [`okta_app_user_base_schema`](https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_user_base_schema).
 
 # `appUserBaseSchema` Submodule <a name="`appUserBaseSchema` Submodule" id="@cdktf/provider-okta.appUserBaseSchema"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_app_user_base_schema`](https:/
 
 ### AppUserBaseSchema <a name="AppUserBaseSchema" id="@cdktf/provider-okta.appUserBaseSchema.AppUserBaseSchema"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema okta_app_user_base_schema}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_user_base_schema okta_app_user_base_schema}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appUserBaseSchema.AppUserBaseSchema.Initializer"></a>
 
@@ -381,7 +381,7 @@ AppUserBaseSchema.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-okta.appUserBaseSchema.AppUserBaseSchema.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appUserBaseSchema.AppUserBaseSchema.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appUserBaseSchema.AppUserBaseSchema.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appUserBaseSchema.AppUserBaseSchema.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appUserBaseSchema.AppUserBaseSchema.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appUserBaseSchema.AppUserBaseSchema.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appUserBaseSchema.AppUserBaseSchema.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appUserBaseSchema.AppUserBaseSchema.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -495,10 +495,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.appUserBaseSchema.AppUserBaseSchema.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -781,7 +781,7 @@ using HashiCorp.Cdktf.Providers.Okta;
 
 new AppUserBaseSchemaConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -805,17 +805,17 @@ new AppUserBaseSchemaConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-okta.appUserBaseSchema.AppUserBaseSchemaConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appUserBaseSchema.AppUserBaseSchemaConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appUserBaseSchema.AppUserBaseSchemaConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appUserBaseSchema.AppUserBaseSchemaConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appUserBaseSchema.AppUserBaseSchemaConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appUserBaseSchema.AppUserBaseSchemaConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appUserBaseSchema.AppUserBaseSchemaConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appUserBaseSchema.AppUserBaseSchemaConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appUserBaseSchema.AppUserBaseSchemaConfig.property.appId">AppId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema#app_id AppUserBaseSchema#app_id}. |
+| <code><a href="#@cdktf/provider-okta.appUserBaseSchema.AppUserBaseSchemaConfig.property.appId">AppId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_user_base_schema#app_id AppUserBaseSchema#app_id}. |
 | <code><a href="#@cdktf/provider-okta.appUserBaseSchema.AppUserBaseSchemaConfig.property.index">Index</a></code> | <code>string</code> | Subschema unique string identifier. |
 | <code><a href="#@cdktf/provider-okta.appUserBaseSchema.AppUserBaseSchemaConfig.property.title">Title</a></code> | <code>string</code> | Subschema title (display name). |
 | <code><a href="#@cdktf/provider-okta.appUserBaseSchema.AppUserBaseSchemaConfig.property.type">Type</a></code> | <code>string</code> | Subschema type: string, boolean, number, integer, array, or object. |
-| <code><a href="#@cdktf/provider-okta.appUserBaseSchema.AppUserBaseSchemaConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema#id AppUserBaseSchema#id}. |
+| <code><a href="#@cdktf/provider-okta.appUserBaseSchema.AppUserBaseSchemaConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_user_base_schema#id AppUserBaseSchema#id}. |
 | <code><a href="#@cdktf/provider-okta.appUserBaseSchema.AppUserBaseSchemaConfig.property.master">Master</a></code> | <code>string</code> | SubSchema profile manager, if not set it will inherit its setting. |
 | <code><a href="#@cdktf/provider-okta.appUserBaseSchema.AppUserBaseSchemaConfig.property.pattern">Pattern</a></code> | <code>string</code> | The validation pattern to use for the subschema. Must be in form of '.+', or '[<pattern>]+' if present.'. |
 | <code><a href="#@cdktf/provider-okta.appUserBaseSchema.AppUserBaseSchemaConfig.property.permissions">Permissions</a></code> | <code>string</code> | SubSchema permissions: HIDE, READ_ONLY, or READ_WRITE. |
@@ -837,10 +837,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.appUserBaseSchema.AppUserBaseSchemaConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -902,7 +902,7 @@ public string AppId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema#app_id AppUserBaseSchema#app_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_user_base_schema#app_id AppUserBaseSchema#app_id}.
 
 ---
 
@@ -916,7 +916,7 @@ public string Index { get; set; }
 
 Subschema unique string identifier.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema#index AppUserBaseSchema#index}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_user_base_schema#index AppUserBaseSchema#index}
 
 ---
 
@@ -930,7 +930,7 @@ public string Title { get; set; }
 
 Subschema title (display name).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema#title AppUserBaseSchema#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_user_base_schema#title AppUserBaseSchema#title}
 
 ---
 
@@ -944,7 +944,7 @@ public string Type { get; set; }
 
 Subschema type: string, boolean, number, integer, array, or object.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema#type AppUserBaseSchema#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_user_base_schema#type AppUserBaseSchema#type}
 
 ---
 
@@ -956,7 +956,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema#id AppUserBaseSchema#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_user_base_schema#id AppUserBaseSchema#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -973,7 +973,7 @@ public string Master { get; set; }
 
 SubSchema profile manager, if not set it will inherit its setting.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema#master AppUserBaseSchema#master}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_user_base_schema#master AppUserBaseSchema#master}
 
 ---
 
@@ -987,7 +987,7 @@ public string Pattern { get; set; }
 
 The validation pattern to use for the subschema. Must be in form of '.+', or '[<pattern>]+' if present.'.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema#pattern AppUserBaseSchema#pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_user_base_schema#pattern AppUserBaseSchema#pattern}
 
 ---
 
@@ -1001,7 +1001,7 @@ public string Permissions { get; set; }
 
 SubSchema permissions: HIDE, READ_ONLY, or READ_WRITE.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema#permissions AppUserBaseSchema#permissions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_user_base_schema#permissions AppUserBaseSchema#permissions}
 
 ---
 
@@ -1015,7 +1015,7 @@ public object Required { get; set; }
 
 Whether the subschema is required.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema#required AppUserBaseSchema#required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_user_base_schema#required AppUserBaseSchema#required}
 
 ---
 
@@ -1029,7 +1029,7 @@ public string UserType { get; set; }
 
 Custom subschema user type.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_user_base_schema#user_type AppUserBaseSchema#user_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_user_base_schema#user_type AppUserBaseSchema#user_type}
 
 ---
 

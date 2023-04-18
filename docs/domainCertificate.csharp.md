@@ -1,6 +1,6 @@
 # `okta_domain_certificate`
 
-Refer to the Terraform Registory for docs: [`okta_domain_certificate`](https://www.terraform.io/docs/providers/okta/r/domain_certificate).
+Refer to the Terraform Registory for docs: [`okta_domain_certificate`](https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/domain_certificate).
 
 # `domainCertificate` Submodule <a name="`domainCertificate` Submodule" id="@cdktf/provider-okta.domainCertificate"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_domain_certificate`](https://w
 
 ### DomainCertificate <a name="DomainCertificate" id="@cdktf/provider-okta.domainCertificate.DomainCertificate"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/domain_certificate okta_domain_certificate}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/domain_certificate okta_domain_certificate}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.domainCertificate.DomainCertificate.Initializer"></a>
 
@@ -353,7 +353,7 @@ DomainCertificate.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-okta.domainCertificate.DomainCertificate.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.domainCertificate.DomainCertificate.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.domainCertificate.DomainCertificate.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.domainCertificate.DomainCertificate.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.domainCertificate.DomainCertificate.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.domainCertificate.DomainCertificate.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.domainCertificate.DomainCertificate.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.domainCertificate.DomainCertificate.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -459,10 +459,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.domainCertificate.DomainCertificate.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -665,7 +665,7 @@ using HashiCorp.Cdktf.Providers.Okta;
 
 new DomainCertificateConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -685,7 +685,7 @@ new DomainCertificateConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-okta.domainCertificate.DomainCertificateConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.domainCertificate.DomainCertificateConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.domainCertificate.DomainCertificateConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.domainCertificate.DomainCertificateConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.domainCertificate.DomainCertificateConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.domainCertificate.DomainCertificateConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -695,7 +695,7 @@ new DomainCertificateConfig {
 | <code><a href="#@cdktf/provider-okta.domainCertificate.DomainCertificateConfig.property.certificateChain">CertificateChain</a></code> | <code>string</code> | Certificate chain. |
 | <code><a href="#@cdktf/provider-okta.domainCertificate.DomainCertificateConfig.property.domainId">DomainId</a></code> | <code>string</code> | Domain's ID. |
 | <code><a href="#@cdktf/provider-okta.domainCertificate.DomainCertificateConfig.property.privateKey">PrivateKey</a></code> | <code>string</code> | Certificate private key. |
-| <code><a href="#@cdktf/provider-okta.domainCertificate.DomainCertificateConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/domain_certificate#id DomainCertificate#id}. |
+| <code><a href="#@cdktf/provider-okta.domainCertificate.DomainCertificateConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/domain_certificate#id DomainCertificate#id}. |
 | <code><a href="#@cdktf/provider-okta.domainCertificate.DomainCertificateConfig.property.type">Type</a></code> | <code>string</code> | Certificate type. |
 
 ---
@@ -713,10 +713,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.domainCertificate.DomainCertificateConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -780,7 +780,7 @@ public string Certificate { get; set; }
 
 Certificate content.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/domain_certificate#certificate DomainCertificate#certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/domain_certificate#certificate DomainCertificate#certificate}
 
 ---
 
@@ -794,7 +794,7 @@ public string CertificateChain { get; set; }
 
 Certificate chain.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/domain_certificate#certificate_chain DomainCertificate#certificate_chain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/domain_certificate#certificate_chain DomainCertificate#certificate_chain}
 
 ---
 
@@ -808,7 +808,7 @@ public string DomainId { get; set; }
 
 Domain's ID.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/domain_certificate#domain_id DomainCertificate#domain_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/domain_certificate#domain_id DomainCertificate#domain_id}
 
 ---
 
@@ -822,7 +822,7 @@ public string PrivateKey { get; set; }
 
 Certificate private key.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/domain_certificate#private_key DomainCertificate#private_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/domain_certificate#private_key DomainCertificate#private_key}
 
 ---
 
@@ -834,7 +834,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/domain_certificate#id DomainCertificate#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/domain_certificate#id DomainCertificate#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -851,7 +851,7 @@ public string Type { get; set; }
 
 Certificate type.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/domain_certificate#type DomainCertificate#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/domain_certificate#type DomainCertificate#type}
 
 ---
 

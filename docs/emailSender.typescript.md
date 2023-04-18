@@ -1,6 +1,6 @@
 # `okta_email_sender`
 
-Refer to the Terraform Registory for docs: [`okta_email_sender`](https://www.terraform.io/docs/providers/okta/r/email_sender).
+Refer to the Terraform Registory for docs: [`okta_email_sender`](https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/email_sender).
 
 # `emailSender` Submodule <a name="`emailSender` Submodule" id="@cdktf/provider-okta.emailSender"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_email_sender`](https://www.ter
 
 ### EmailSender <a name="EmailSender" id="@cdktf/provider-okta.emailSender.EmailSender"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/email_sender okta_email_sender}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/email_sender okta_email_sender}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.emailSender.EmailSender.Initializer"></a>
 
@@ -346,7 +346,7 @@ emailSender.EmailSender.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-okta.emailSender.EmailSender.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.emailSender.EmailSender.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.emailSender.EmailSender.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.emailSender.EmailSender.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.emailSender.EmailSender.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.emailSender.EmailSender.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.emailSender.EmailSender.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.emailSender.EmailSender.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -450,10 +450,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.emailSender.EmailSender.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -642,7 +642,7 @@ const emailSenderConfig: emailSender.EmailSenderConfig = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-okta.emailSender.EmailSenderConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.emailSender.EmailSenderConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.emailSender.EmailSenderConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.emailSender.EmailSenderConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.emailSender.EmailSenderConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.emailSender.EmailSenderConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -651,7 +651,7 @@ const emailSenderConfig: emailSender.EmailSenderConfig = { ... }
 | <code><a href="#@cdktf/provider-okta.emailSender.EmailSenderConfig.property.fromAddress">fromAddress</a></code> | <code>string</code> | Email address to send from. |
 | <code><a href="#@cdktf/provider-okta.emailSender.EmailSenderConfig.property.fromName">fromName</a></code> | <code>string</code> | Name of sender. |
 | <code><a href="#@cdktf/provider-okta.emailSender.EmailSenderConfig.property.subdomain">subdomain</a></code> | <code>string</code> | Mail domain to send from. |
-| <code><a href="#@cdktf/provider-okta.emailSender.EmailSenderConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/email_sender#id EmailSender#id}. |
+| <code><a href="#@cdktf/provider-okta.emailSender.EmailSenderConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/email_sender#id EmailSender#id}. |
 
 ---
 
@@ -668,10 +668,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.emailSender.EmailSenderConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -735,7 +735,7 @@ public readonly fromAddress: string;
 
 Email address to send from.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/email_sender#from_address EmailSender#from_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/email_sender#from_address EmailSender#from_address}
 
 ---
 
@@ -749,7 +749,7 @@ public readonly fromName: string;
 
 Name of sender.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/email_sender#from_name EmailSender#from_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/email_sender#from_name EmailSender#from_name}
 
 ---
 
@@ -763,7 +763,7 @@ public readonly subdomain: string;
 
 Mail domain to send from.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/email_sender#subdomain EmailSender#subdomain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/email_sender#subdomain EmailSender#subdomain}
 
 ---
 
@@ -775,7 +775,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/email_sender#id EmailSender#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/email_sender#id EmailSender#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

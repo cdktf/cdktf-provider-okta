@@ -1,6 +1,6 @@
 # `okta_org_configuration`
 
-Refer to the Terraform Registory for docs: [`okta_org_configuration`](https://www.terraform.io/docs/providers/okta/r/org_configuration).
+Refer to the Terraform Registory for docs: [`okta_org_configuration`](https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/org_configuration).
 
 # `orgConfiguration` Submodule <a name="`orgConfiguration` Submodule" id="@cdktf/provider-okta.orgConfiguration"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`okta_org_configuration`](https://ww
 
 ### OrgConfiguration <a name="OrgConfiguration" id="@cdktf/provider-okta.orgConfiguration.OrgConfiguration"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/org_configuration okta_org_configuration}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/org_configuration okta_org_configuration}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.orgConfiguration.OrgConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/orgconfiguration"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/orgconfiguration"
 
 orgconfiguration.NewOrgConfiguration(scope Construct, id *string, config OrgConfigurationConfig) OrgConfiguration
 ```
@@ -375,7 +375,7 @@ func ResetWebsite()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.orgConfiguration.OrgConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/orgconfiguration"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/orgconfiguration"
 
 orgconfiguration.OrgConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -407,7 +407,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.orgConfiguration.OrgConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/orgconfiguration"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/orgconfiguration"
 
 orgconfiguration.OrgConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -421,7 +421,7 @@ orgconfiguration.OrgConfiguration_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.orgConfiguration.OrgConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/orgconfiguration"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/orgconfiguration"
 
 orgconfiguration.OrgConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ orgconfiguration.OrgConfiguration_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-okta.orgConfiguration.OrgConfiguration.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.orgConfiguration.OrgConfiguration.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.orgConfiguration.OrgConfiguration.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.orgConfiguration.OrgConfiguration.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.orgConfiguration.OrgConfiguration.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.orgConfiguration.OrgConfiguration.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.orgConfiguration.OrgConfiguration.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.orgConfiguration.OrgConfiguration.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -572,10 +572,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.orgConfiguration.OrgConfiguration.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -994,11 +994,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.orgConfiguration.OrgConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/orgconfiguration"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/orgconfiguration"
 
 &orgconfiguration.OrgConfigurationConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -1028,7 +1028,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/orgconfiguration"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-okta.orgConfiguration.OrgConfigurationConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.orgConfiguration.OrgConfigurationConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.orgConfiguration.OrgConfigurationConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.orgConfiguration.OrgConfigurationConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.orgConfiguration.OrgConfigurationConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.orgConfiguration.OrgConfigurationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -1041,7 +1041,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/orgconfiguration"
 | <code><a href="#@cdktf/provider-okta.orgConfiguration.OrgConfigurationConfig.property.city">City</a></code> | <code>*string</code> | City of org. |
 | <code><a href="#@cdktf/provider-okta.orgConfiguration.OrgConfigurationConfig.property.country">Country</a></code> | <code>*string</code> | Country of org. |
 | <code><a href="#@cdktf/provider-okta.orgConfiguration.OrgConfigurationConfig.property.endUserSupportHelpUrl">EndUserSupportHelpUrl</a></code> | <code>*string</code> | Support link of org. |
-| <code><a href="#@cdktf/provider-okta.orgConfiguration.OrgConfigurationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration#id OrgConfiguration#id}. |
+| <code><a href="#@cdktf/provider-okta.orgConfiguration.OrgConfigurationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/org_configuration#id OrgConfiguration#id}. |
 | <code><a href="#@cdktf/provider-okta.orgConfiguration.OrgConfigurationConfig.property.logo">Logo</a></code> | <code>*string</code> | Local path to logo of the org. |
 | <code><a href="#@cdktf/provider-okta.orgConfiguration.OrgConfigurationConfig.property.optOutCommunicationEmails">OptOutCommunicationEmails</a></code> | <code>interface{}</code> | Indicates whether the org's users receive Okta Communication emails. |
 | <code><a href="#@cdktf/provider-okta.orgConfiguration.OrgConfigurationConfig.property.phoneNumber">PhoneNumber</a></code> | <code>*string</code> | Support help phone of org. |
@@ -1066,10 +1066,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.orgConfiguration.OrgConfigurationConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -1133,7 +1133,7 @@ CompanyName *string
 
 Name of org.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration#company_name OrgConfiguration#company_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/org_configuration#company_name OrgConfiguration#company_name}
 
 ---
 
@@ -1147,7 +1147,7 @@ Address1 *string
 
 Primary address of org.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration#address_1 OrgConfiguration#address_1}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/org_configuration#address_1 OrgConfiguration#address_1}
 
 ---
 
@@ -1161,7 +1161,7 @@ Address2 *string
 
 Secondary address of org.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration#address_2 OrgConfiguration#address_2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/org_configuration#address_2 OrgConfiguration#address_2}
 
 ---
 
@@ -1175,7 +1175,7 @@ BillingContactUser *string
 
 User ID representing the billing contact.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration#billing_contact_user OrgConfiguration#billing_contact_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/org_configuration#billing_contact_user OrgConfiguration#billing_contact_user}
 
 ---
 
@@ -1189,7 +1189,7 @@ City *string
 
 City of org.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration#city OrgConfiguration#city}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/org_configuration#city OrgConfiguration#city}
 
 ---
 
@@ -1203,7 +1203,7 @@ Country *string
 
 Country of org.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration#country OrgConfiguration#country}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/org_configuration#country OrgConfiguration#country}
 
 ---
 
@@ -1217,7 +1217,7 @@ EndUserSupportHelpUrl *string
 
 Support link of org.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration#end_user_support_help_url OrgConfiguration#end_user_support_help_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/org_configuration#end_user_support_help_url OrgConfiguration#end_user_support_help_url}
 
 ---
 
@@ -1229,7 +1229,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration#id OrgConfiguration#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/org_configuration#id OrgConfiguration#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1246,7 +1246,7 @@ Logo *string
 
 Local path to logo of the org.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration#logo OrgConfiguration#logo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/org_configuration#logo OrgConfiguration#logo}
 
 ---
 
@@ -1260,7 +1260,7 @@ OptOutCommunicationEmails interface{}
 
 Indicates whether the org's users receive Okta Communication emails.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration#opt_out_communication_emails OrgConfiguration#opt_out_communication_emails}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/org_configuration#opt_out_communication_emails OrgConfiguration#opt_out_communication_emails}
 
 ---
 
@@ -1274,7 +1274,7 @@ PhoneNumber *string
 
 Support help phone of org.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration#phone_number OrgConfiguration#phone_number}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/org_configuration#phone_number OrgConfiguration#phone_number}
 
 ---
 
@@ -1288,7 +1288,7 @@ PostalCode *string
 
 Postal code of org.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration#postal_code OrgConfiguration#postal_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/org_configuration#postal_code OrgConfiguration#postal_code}
 
 ---
 
@@ -1302,7 +1302,7 @@ State *string
 
 State of org.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration#state OrgConfiguration#state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/org_configuration#state OrgConfiguration#state}
 
 ---
 
@@ -1316,7 +1316,7 @@ SupportPhoneNumber *string
 
 Support help phone of org.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration#support_phone_number OrgConfiguration#support_phone_number}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/org_configuration#support_phone_number OrgConfiguration#support_phone_number}
 
 ---
 
@@ -1330,7 +1330,7 @@ TechnicalContactUser *string
 
 User ID representing the technical contact.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration#technical_contact_user OrgConfiguration#technical_contact_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/org_configuration#technical_contact_user OrgConfiguration#technical_contact_user}
 
 ---
 
@@ -1344,7 +1344,7 @@ Website *string
 
 The org's website.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/org_configuration#website OrgConfiguration#website}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/org_configuration#website OrgConfiguration#website}
 
 ---
 

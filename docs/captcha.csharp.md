@@ -1,6 +1,6 @@
 # `okta_captcha`
 
-Refer to the Terraform Registory for docs: [`okta_captcha`](https://www.terraform.io/docs/providers/okta/r/captcha).
+Refer to the Terraform Registory for docs: [`okta_captcha`](https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/captcha).
 
 # `captcha` Submodule <a name="`captcha` Submodule" id="@cdktf/provider-okta.captcha"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_captcha`](https://www.terrafor
 
 ### Captcha <a name="Captcha" id="@cdktf/provider-okta.captcha.Captcha"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/captcha okta_captcha}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/captcha okta_captcha}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.captcha.Captcha.Initializer"></a>
 
@@ -346,7 +346,7 @@ Captcha.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-okta.captcha.Captcha.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.captcha.Captcha.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.captcha.Captcha.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.captcha.Captcha.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.captcha.Captcha.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.captcha.Captcha.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.captcha.Captcha.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.captcha.Captcha.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -450,10 +450,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.captcha.Captcha.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -636,7 +636,7 @@ using HashiCorp.Cdktf.Providers.Okta;
 
 new CaptchaConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -655,7 +655,7 @@ new CaptchaConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-okta.captcha.CaptchaConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.captcha.CaptchaConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.captcha.CaptchaConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.captcha.CaptchaConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.captcha.CaptchaConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.captcha.CaptchaConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -665,7 +665,7 @@ new CaptchaConfig {
 | <code><a href="#@cdktf/provider-okta.captcha.CaptchaConfig.property.secretKey">SecretKey</a></code> | <code>string</code> | Secret key issued from the CAPTCHA vendor to perform server-side validation for a CAPTCHA token. |
 | <code><a href="#@cdktf/provider-okta.captcha.CaptchaConfig.property.siteKey">SiteKey</a></code> | <code>string</code> | Site key issued from the CAPTCHA vendor to render a CAPTCHA on a page. |
 | <code><a href="#@cdktf/provider-okta.captcha.CaptchaConfig.property.type">Type</a></code> | <code>string</code> | Captcha type. |
-| <code><a href="#@cdktf/provider-okta.captcha.CaptchaConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/captcha#id Captcha#id}. |
+| <code><a href="#@cdktf/provider-okta.captcha.CaptchaConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/captcha#id Captcha#id}. |
 
 ---
 
@@ -682,10 +682,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.captcha.CaptchaConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -749,7 +749,7 @@ public string Name { get; set; }
 
 Name of the CAPTCHA.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/captcha#name Captcha#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/captcha#name Captcha#name}
 
 ---
 
@@ -763,7 +763,7 @@ public string SecretKey { get; set; }
 
 Secret key issued from the CAPTCHA vendor to perform server-side validation for a CAPTCHA token.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/captcha#secret_key Captcha#secret_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/captcha#secret_key Captcha#secret_key}
 
 ---
 
@@ -777,7 +777,7 @@ public string SiteKey { get; set; }
 
 Site key issued from the CAPTCHA vendor to render a CAPTCHA on a page.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/captcha#site_key Captcha#site_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/captcha#site_key Captcha#site_key}
 
 ---
 
@@ -791,7 +791,7 @@ public string Type { get; set; }
 
 Captcha type.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/captcha#type Captcha#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/captcha#type Captcha#type}
 
 ---
 
@@ -803,7 +803,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/captcha#id Captcha#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/captcha#id Captcha#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -1,6 +1,6 @@
 # `data_okta_theme`
 
-Refer to the Terraform Registory for docs: [`data_okta_theme`](https://www.terraform.io/docs/providers/okta/d/theme).
+Refer to the Terraform Registory for docs: [`data_okta_theme`](https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/theme).
 
 # `dataOktaTheme` Submodule <a name="`dataOktaTheme` Submodule" id="@cdktf/provider-okta.dataOktaTheme"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_okta_theme`](https://www.terra
 
 ### DataOktaTheme <a name="DataOktaTheme" id="@cdktf/provider-okta.dataOktaTheme.DataOktaTheme"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/d/theme okta_theme}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/theme okta_theme}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaTheme.DataOktaTheme.Initializer"></a>
 
@@ -338,7 +338,7 @@ DataOktaTheme.IsTerraformDataSource(object X);
 | <code><a href="#@cdktf/provider-okta.dataOktaTheme.DataOktaTheme.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaTheme.DataOktaTheme.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaTheme.DataOktaTheme.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.dataOktaTheme.DataOktaTheme.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.dataOktaTheme.DataOktaTheme.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaTheme.DataOktaTheme.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaTheme.DataOktaTheme.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaTheme.DataOktaTheme.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -438,10 +438,10 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.dataOktaTheme.DataOktaTheme.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -684,7 +684,7 @@ using HashiCorp.Cdktf.Providers.Okta;
 
 new DataOktaThemeConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -700,7 +700,7 @@ new DataOktaThemeConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-okta.dataOktaTheme.DataOktaThemeConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.dataOktaTheme.DataOktaThemeConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.dataOktaTheme.DataOktaThemeConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaTheme.DataOktaThemeConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaTheme.DataOktaThemeConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaTheme.DataOktaThemeConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -724,10 +724,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.dataOktaTheme.DataOktaThemeConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -791,7 +791,7 @@ public string BrandId { get; set; }
 
 Brand ID.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/theme#brand_id DataOktaTheme#brand_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/theme#brand_id DataOktaTheme#brand_id}
 
 ---
 
@@ -805,7 +805,7 @@ public string ThemeId { get; set; }
 
 Theme ID.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/theme#theme_id DataOktaTheme#theme_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/theme#theme_id DataOktaTheme#theme_id}
 
 ---
 

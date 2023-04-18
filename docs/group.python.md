@@ -1,6 +1,6 @@
 # `okta_group`
 
-Refer to the Terraform Registory for docs: [`okta_group`](https://www.terraform.io/docs/providers/okta/r/group).
+Refer to the Terraform Registory for docs: [`okta_group`](https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group).
 
 # `group` Submodule <a name="`group` Submodule" id="@cdktf/provider-okta.group"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_group`](https://www.terraform.
 
 ### Group <a name="Group" id="@cdktf/provider-okta.group.Group"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/group okta_group}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group okta_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.group.Group.Initializer"></a>
 
@@ -19,7 +19,7 @@ group.Group(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -39,7 +39,7 @@ group.Group(
 | <code><a href="#@cdktf/provider-okta.group.Group.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-okta.group.Group.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-okta.group.Group.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.group.Group.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.group.Group.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.group.Group.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.group.Group.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.group.Group.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -48,7 +48,7 @@ group.Group(
 | <code><a href="#@cdktf/provider-okta.group.Group.Initializer.parameter.name">name</a></code> | <code>str</code> | Group name. |
 | <code><a href="#@cdktf/provider-okta.group.Group.Initializer.parameter.customProfileAttributes">custom_profile_attributes</a></code> | <code>str</code> | JSON formatted custom attributes for a group. It must be JSON due to various types Okta allows. |
 | <code><a href="#@cdktf/provider-okta.group.Group.Initializer.parameter.description">description</a></code> | <code>str</code> | Group description. |
-| <code><a href="#@cdktf/provider-okta.group.Group.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group#id Group#id}. |
+| <code><a href="#@cdktf/provider-okta.group.Group.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group#id Group#id}. |
 | <code><a href="#@cdktf/provider-okta.group.Group.Initializer.parameter.skipUsers">skip_users</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Ignore users sync. This is a temporary solution until 'users' field is supported in this resource. |
 | <code><a href="#@cdktf/provider-okta.group.Group.Initializer.parameter.users">users</a></code> | <code>typing.List[str]</code> | Users associated with the group. This can also be done per user. |
 
@@ -80,7 +80,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.group.Group.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -120,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 Group name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group#name Group#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group#name Group#name}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 JSON formatted custom attributes for a group. It must be JSON due to various types Okta allows.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group#custom_profile_attributes Group#custom_profile_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group#custom_profile_attributes Group#custom_profile_attributes}
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 Group description.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group#description Group#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group#description Group#description}
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group#id Group#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group#id Group#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -161,7 +161,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Ignore users sync. This is a temporary solution until 'users' field is supported in this resource.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group#skip_users Group#skip_users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group#skip_users Group#skip_users}
 
 ---
 
@@ -171,7 +171,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 Users associated with the group. This can also be done per user.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group#users Group#users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group#users Group#users}
 
 ---
 
@@ -530,7 +530,7 @@ group.Group.is_terraform_resource(
 | <code><a href="#@cdktf/provider-okta.group.Group.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.group.Group.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.group.Group.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.group.Group.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.group.Group.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.group.Group.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.group.Group.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.group.Group.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -636,10 +636,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.group.Group.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -842,7 +842,7 @@ from cdktf_cdktf_provider_okta import group
 
 group.GroupConfig(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -862,7 +862,7 @@ group.GroupConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-okta.group.GroupConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.group.GroupConfig.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.group.GroupConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.group.GroupConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.group.GroupConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.group.GroupConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -871,7 +871,7 @@ group.GroupConfig(
 | <code><a href="#@cdktf/provider-okta.group.GroupConfig.property.name">name</a></code> | <code>str</code> | Group name. |
 | <code><a href="#@cdktf/provider-okta.group.GroupConfig.property.customProfileAttributes">custom_profile_attributes</a></code> | <code>str</code> | JSON formatted custom attributes for a group. It must be JSON due to various types Okta allows. |
 | <code><a href="#@cdktf/provider-okta.group.GroupConfig.property.description">description</a></code> | <code>str</code> | Group description. |
-| <code><a href="#@cdktf/provider-okta.group.GroupConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group#id Group#id}. |
+| <code><a href="#@cdktf/provider-okta.group.GroupConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group#id Group#id}. |
 | <code><a href="#@cdktf/provider-okta.group.GroupConfig.property.skipUsers">skip_users</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Ignore users sync. This is a temporary solution until 'users' field is supported in this resource. |
 | <code><a href="#@cdktf/provider-okta.group.GroupConfig.property.users">users</a></code> | <code>typing.List[str]</code> | Users associated with the group. This can also be done per user. |
 
@@ -890,10 +890,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.group.GroupConfig.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -957,7 +957,7 @@ name: str
 
 Group name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group#name Group#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group#name Group#name}
 
 ---
 
@@ -971,7 +971,7 @@ custom_profile_attributes: str
 
 JSON formatted custom attributes for a group. It must be JSON due to various types Okta allows.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group#custom_profile_attributes Group#custom_profile_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group#custom_profile_attributes Group#custom_profile_attributes}
 
 ---
 
@@ -985,7 +985,7 @@ description: str
 
 Group description.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group#description Group#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group#description Group#description}
 
 ---
 
@@ -997,7 +997,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group#id Group#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group#id Group#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1014,7 +1014,7 @@ skip_users: typing.Union[bool, IResolvable]
 
 Ignore users sync. This is a temporary solution until 'users' field is supported in this resource.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group#skip_users Group#skip_users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group#skip_users Group#skip_users}
 
 ---
 
@@ -1028,7 +1028,7 @@ users: typing.List[str]
 
 Users associated with the group. This can also be done per user.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group#users Group#users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group#users Group#users}
 
 ---
 

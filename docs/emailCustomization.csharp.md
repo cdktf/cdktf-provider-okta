@@ -1,6 +1,6 @@
 # `okta_email_customization`
 
-Refer to the Terraform Registory for docs: [`okta_email_customization`](https://www.terraform.io/docs/providers/okta/r/email_customization).
+Refer to the Terraform Registory for docs: [`okta_email_customization`](https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/email_customization).
 
 # `emailCustomization` Submodule <a name="`emailCustomization` Submodule" id="@cdktf/provider-okta.emailCustomization"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_email_customization`](https://
 
 ### EmailCustomization <a name="EmailCustomization" id="@cdktf/provider-okta.emailCustomization.EmailCustomization"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/email_customization okta_email_customization}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/email_customization okta_email_customization}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.emailCustomization.EmailCustomization.Initializer"></a>
 
@@ -374,7 +374,7 @@ EmailCustomization.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-okta.emailCustomization.EmailCustomization.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.emailCustomization.EmailCustomization.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.emailCustomization.EmailCustomization.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.emailCustomization.EmailCustomization.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.emailCustomization.EmailCustomization.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.emailCustomization.EmailCustomization.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.emailCustomization.EmailCustomization.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.emailCustomization.EmailCustomization.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -484,10 +484,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.emailCustomization.EmailCustomization.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -730,7 +730,7 @@ using HashiCorp.Cdktf.Providers.Okta;
 
 new EmailCustomizationConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -751,7 +751,7 @@ new EmailCustomizationConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-okta.emailCustomization.EmailCustomizationConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.emailCustomization.EmailCustomizationConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.emailCustomization.EmailCustomizationConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.emailCustomization.EmailCustomizationConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.emailCustomization.EmailCustomizationConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.emailCustomization.EmailCustomizationConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -780,10 +780,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.emailCustomization.EmailCustomizationConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -847,7 +847,7 @@ public string BrandId { get; set; }
 
 Brand ID.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/email_customization#brand_id EmailCustomization#brand_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/email_customization#brand_id EmailCustomization#brand_id}
 
 ---
 
@@ -861,7 +861,7 @@ public string TemplateName { get; set; }
 
 Template Name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/email_customization#template_name EmailCustomization#template_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/email_customization#template_name EmailCustomization#template_name}
 
 ---
 
@@ -875,7 +875,7 @@ public string Body { get; set; }
 
 The body of the customization.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/email_customization#body EmailCustomization#body}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/email_customization#body EmailCustomization#body}
 
 ---
 
@@ -891,7 +891,7 @@ Force is_default on the create and delete by deleting all email customizations.
 
 Comma separated string with values of 'create' or 'destroy' or both `create,destroy'.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/email_customization#force_is_default EmailCustomization#force_is_default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/email_customization#force_is_default EmailCustomization#force_is_default}
 
 ---
 
@@ -905,7 +905,7 @@ public object IsDefault { get; set; }
 
 Whether the customization is the default.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/email_customization#is_default EmailCustomization#is_default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/email_customization#is_default EmailCustomization#is_default}
 
 ---
 
@@ -919,7 +919,7 @@ public string Language { get; set; }
 
 The language supported by the customization.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/email_customization#language EmailCustomization#language}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/email_customization#language EmailCustomization#language}
 
 ---
 
@@ -933,7 +933,7 @@ public string Subject { get; set; }
 
 The subject of the customization.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/email_customization#subject EmailCustomization#subject}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/email_customization#subject EmailCustomization#subject}
 
 ---
 

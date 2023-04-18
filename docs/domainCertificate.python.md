@@ -1,6 +1,6 @@
 # `okta_domain_certificate`
 
-Refer to the Terraform Registory for docs: [`okta_domain_certificate`](https://www.terraform.io/docs/providers/okta/r/domain_certificate).
+Refer to the Terraform Registory for docs: [`okta_domain_certificate`](https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/domain_certificate).
 
 # `domainCertificate` Submodule <a name="`domainCertificate` Submodule" id="@cdktf/provider-okta.domainCertificate"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_domain_certificate`](https://w
 
 ### DomainCertificate <a name="DomainCertificate" id="@cdktf/provider-okta.domainCertificate.DomainCertificate"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/domain_certificate okta_domain_certificate}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/domain_certificate okta_domain_certificate}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.domainCertificate.DomainCertificate.Initializer"></a>
 
@@ -19,7 +19,7 @@ domainCertificate.DomainCertificate(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -39,7 +39,7 @@ domainCertificate.DomainCertificate(
 | <code><a href="#@cdktf/provider-okta.domainCertificate.DomainCertificate.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-okta.domainCertificate.DomainCertificate.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-okta.domainCertificate.DomainCertificate.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.domainCertificate.DomainCertificate.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.domainCertificate.DomainCertificate.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.domainCertificate.DomainCertificate.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.domainCertificate.DomainCertificate.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.domainCertificate.DomainCertificate.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -49,7 +49,7 @@ domainCertificate.DomainCertificate(
 | <code><a href="#@cdktf/provider-okta.domainCertificate.DomainCertificate.Initializer.parameter.certificateChain">certificate_chain</a></code> | <code>str</code> | Certificate chain. |
 | <code><a href="#@cdktf/provider-okta.domainCertificate.DomainCertificate.Initializer.parameter.domainId">domain_id</a></code> | <code>str</code> | Domain's ID. |
 | <code><a href="#@cdktf/provider-okta.domainCertificate.DomainCertificate.Initializer.parameter.privateKey">private_key</a></code> | <code>str</code> | Certificate private key. |
-| <code><a href="#@cdktf/provider-okta.domainCertificate.DomainCertificate.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/domain_certificate#id DomainCertificate#id}. |
+| <code><a href="#@cdktf/provider-okta.domainCertificate.DomainCertificate.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/domain_certificate#id DomainCertificate#id}. |
 | <code><a href="#@cdktf/provider-okta.domainCertificate.DomainCertificate.Initializer.parameter.type">type</a></code> | <code>str</code> | Certificate type. |
 
 ---
@@ -80,7 +80,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.domainCertificate.DomainCertificate.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -120,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 Certificate content.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/domain_certificate#certificate DomainCertificate#certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/domain_certificate#certificate DomainCertificate#certificate}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 Certificate chain.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/domain_certificate#certificate_chain DomainCertificate#certificate_chain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/domain_certificate#certificate_chain DomainCertificate#certificate_chain}
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 Domain's ID.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/domain_certificate#domain_id DomainCertificate#domain_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/domain_certificate#domain_id DomainCertificate#domain_id}
 
 ---
 
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 Certificate private key.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/domain_certificate#private_key DomainCertificate#private_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/domain_certificate#private_key DomainCertificate#private_key}
 
 ---
 
@@ -158,7 +158,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/domain_certificate#id DomainCertificate#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/domain_certificate#id DomainCertificate#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -171,7 +171,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Certificate type.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/domain_certificate#type DomainCertificate#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/domain_certificate#type DomainCertificate#type}
 
 ---
 
@@ -509,7 +509,7 @@ domainCertificate.DomainCertificate.is_terraform_resource(
 | <code><a href="#@cdktf/provider-okta.domainCertificate.DomainCertificate.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.domainCertificate.DomainCertificate.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.domainCertificate.DomainCertificate.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.domainCertificate.DomainCertificate.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.domainCertificate.DomainCertificate.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.domainCertificate.DomainCertificate.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.domainCertificate.DomainCertificate.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.domainCertificate.DomainCertificate.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -615,10 +615,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.domainCertificate.DomainCertificate.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -821,7 +821,7 @@ from cdktf_cdktf_provider_okta import domain_certificate
 
 domainCertificate.DomainCertificateConfig(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -841,7 +841,7 @@ domainCertificate.DomainCertificateConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-okta.domainCertificate.DomainCertificateConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.domainCertificate.DomainCertificateConfig.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.domainCertificate.DomainCertificateConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.domainCertificate.DomainCertificateConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.domainCertificate.DomainCertificateConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.domainCertificate.DomainCertificateConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -851,7 +851,7 @@ domainCertificate.DomainCertificateConfig(
 | <code><a href="#@cdktf/provider-okta.domainCertificate.DomainCertificateConfig.property.certificateChain">certificate_chain</a></code> | <code>str</code> | Certificate chain. |
 | <code><a href="#@cdktf/provider-okta.domainCertificate.DomainCertificateConfig.property.domainId">domain_id</a></code> | <code>str</code> | Domain's ID. |
 | <code><a href="#@cdktf/provider-okta.domainCertificate.DomainCertificateConfig.property.privateKey">private_key</a></code> | <code>str</code> | Certificate private key. |
-| <code><a href="#@cdktf/provider-okta.domainCertificate.DomainCertificateConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/domain_certificate#id DomainCertificate#id}. |
+| <code><a href="#@cdktf/provider-okta.domainCertificate.DomainCertificateConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/domain_certificate#id DomainCertificate#id}. |
 | <code><a href="#@cdktf/provider-okta.domainCertificate.DomainCertificateConfig.property.type">type</a></code> | <code>str</code> | Certificate type. |
 
 ---
@@ -869,10 +869,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.domainCertificate.DomainCertificateConfig.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -936,7 +936,7 @@ certificate: str
 
 Certificate content.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/domain_certificate#certificate DomainCertificate#certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/domain_certificate#certificate DomainCertificate#certificate}
 
 ---
 
@@ -950,7 +950,7 @@ certificate_chain: str
 
 Certificate chain.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/domain_certificate#certificate_chain DomainCertificate#certificate_chain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/domain_certificate#certificate_chain DomainCertificate#certificate_chain}
 
 ---
 
@@ -964,7 +964,7 @@ domain_id: str
 
 Domain's ID.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/domain_certificate#domain_id DomainCertificate#domain_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/domain_certificate#domain_id DomainCertificate#domain_id}
 
 ---
 
@@ -978,7 +978,7 @@ private_key: str
 
 Certificate private key.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/domain_certificate#private_key DomainCertificate#private_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/domain_certificate#private_key DomainCertificate#private_key}
 
 ---
 
@@ -990,7 +990,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/domain_certificate#id DomainCertificate#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/domain_certificate#id DomainCertificate#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1007,7 +1007,7 @@ type: str
 
 Certificate type.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/domain_certificate#type DomainCertificate#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/domain_certificate#type DomainCertificate#type}
 
 ---
 

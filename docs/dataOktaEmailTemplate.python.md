@@ -1,6 +1,6 @@
 # `data_okta_email_template`
 
-Refer to the Terraform Registory for docs: [`data_okta_email_template`](https://www.terraform.io/docs/providers/okta/d/email_template).
+Refer to the Terraform Registory for docs: [`data_okta_email_template`](https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/email_template).
 
 # `dataOktaEmailTemplate` Submodule <a name="`dataOktaEmailTemplate` Submodule" id="@cdktf/provider-okta.dataOktaEmailTemplate"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_okta_email_template`](https://
 
 ### DataOktaEmailTemplate <a name="DataOktaEmailTemplate" id="@cdktf/provider-okta.dataOktaEmailTemplate.DataOktaEmailTemplate"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/d/email_template okta_email_template}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/email_template okta_email_template}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaEmailTemplate.DataOktaEmailTemplate.Initializer"></a>
 
@@ -19,7 +19,7 @@ dataOktaEmailTemplate.DataOktaEmailTemplate(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -36,7 +36,7 @@ dataOktaEmailTemplate.DataOktaEmailTemplate(
 | <code><a href="#@cdktf/provider-okta.dataOktaEmailTemplate.DataOktaEmailTemplate.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-okta.dataOktaEmailTemplate.DataOktaEmailTemplate.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-okta.dataOktaEmailTemplate.DataOktaEmailTemplate.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.dataOktaEmailTemplate.DataOktaEmailTemplate.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.dataOktaEmailTemplate.DataOktaEmailTemplate.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaEmailTemplate.DataOktaEmailTemplate.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaEmailTemplate.DataOktaEmailTemplate.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaEmailTemplate.DataOktaEmailTemplate.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -44,7 +44,7 @@ dataOktaEmailTemplate.DataOktaEmailTemplate(
 | <code><a href="#@cdktf/provider-okta.dataOktaEmailTemplate.DataOktaEmailTemplate.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaEmailTemplate.DataOktaEmailTemplate.Initializer.parameter.brandId">brand_id</a></code> | <code>str</code> | Brand ID. |
 | <code><a href="#@cdktf/provider-okta.dataOktaEmailTemplate.DataOktaEmailTemplate.Initializer.parameter.name">name</a></code> | <code>str</code> | The name of the email template. |
-| <code><a href="#@cdktf/provider-okta.dataOktaEmailTemplate.DataOktaEmailTemplate.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/email_template#id DataOktaEmailTemplate#id}. |
+| <code><a href="#@cdktf/provider-okta.dataOktaEmailTemplate.DataOktaEmailTemplate.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/email_template#id DataOktaEmailTemplate#id}. |
 
 ---
 
@@ -74,7 +74,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.dataOktaEmailTemplate.DataOktaEmailTemplate.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 Brand ID.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/email_template#brand_id DataOktaEmailTemplate#brand_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/email_template#brand_id DataOktaEmailTemplate#brand_id}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 The name of the email template.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/email_template#name DataOktaEmailTemplate#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/email_template#name DataOktaEmailTemplate#name}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/email_template#id DataOktaEmailTemplate#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/email_template#id DataOktaEmailTemplate#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -465,7 +465,7 @@ dataOktaEmailTemplate.DataOktaEmailTemplate.is_terraform_data_source(
 | <code><a href="#@cdktf/provider-okta.dataOktaEmailTemplate.DataOktaEmailTemplate.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaEmailTemplate.DataOktaEmailTemplate.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaEmailTemplate.DataOktaEmailTemplate.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.dataOktaEmailTemplate.DataOktaEmailTemplate.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.dataOktaEmailTemplate.DataOktaEmailTemplate.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaEmailTemplate.DataOktaEmailTemplate.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaEmailTemplate.DataOktaEmailTemplate.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaEmailTemplate.DataOktaEmailTemplate.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -555,10 +555,10 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.dataOktaEmailTemplate.DataOktaEmailTemplate.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -701,7 +701,7 @@ from cdktf_cdktf_provider_okta import data_okta_email_template
 
 dataOktaEmailTemplate.DataOktaEmailTemplateConfig(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -718,7 +718,7 @@ dataOktaEmailTemplate.DataOktaEmailTemplateConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-okta.dataOktaEmailTemplate.DataOktaEmailTemplateConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.dataOktaEmailTemplate.DataOktaEmailTemplateConfig.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.dataOktaEmailTemplate.DataOktaEmailTemplateConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaEmailTemplate.DataOktaEmailTemplateConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaEmailTemplate.DataOktaEmailTemplateConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaEmailTemplate.DataOktaEmailTemplateConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -726,7 +726,7 @@ dataOktaEmailTemplate.DataOktaEmailTemplateConfig(
 | <code><a href="#@cdktf/provider-okta.dataOktaEmailTemplate.DataOktaEmailTemplateConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaEmailTemplate.DataOktaEmailTemplateConfig.property.brandId">brand_id</a></code> | <code>str</code> | Brand ID. |
 | <code><a href="#@cdktf/provider-okta.dataOktaEmailTemplate.DataOktaEmailTemplateConfig.property.name">name</a></code> | <code>str</code> | The name of the email template. |
-| <code><a href="#@cdktf/provider-okta.dataOktaEmailTemplate.DataOktaEmailTemplateConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/email_template#id DataOktaEmailTemplate#id}. |
+| <code><a href="#@cdktf/provider-okta.dataOktaEmailTemplate.DataOktaEmailTemplateConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/email_template#id DataOktaEmailTemplate#id}. |
 
 ---
 
@@ -743,10 +743,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.dataOktaEmailTemplate.DataOktaEmailTemplateConfig.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -810,7 +810,7 @@ brand_id: str
 
 Brand ID.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/email_template#brand_id DataOktaEmailTemplate#brand_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/email_template#brand_id DataOktaEmailTemplate#brand_id}
 
 ---
 
@@ -824,7 +824,7 @@ name: str
 
 The name of the email template.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/email_template#name DataOktaEmailTemplate#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/email_template#name DataOktaEmailTemplate#name}
 
 ---
 
@@ -836,7 +836,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/email_template#id DataOktaEmailTemplate#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/email_template#id DataOktaEmailTemplate#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

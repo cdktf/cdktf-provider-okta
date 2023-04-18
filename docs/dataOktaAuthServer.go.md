@@ -1,6 +1,6 @@
 # `data_okta_auth_server`
 
-Refer to the Terraform Registory for docs: [`data_okta_auth_server`](https://www.terraform.io/docs/providers/okta/d/auth_server).
+Refer to the Terraform Registory for docs: [`data_okta_auth_server`](https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/auth_server).
 
 # `dataOktaAuthServer` Submodule <a name="`dataOktaAuthServer` Submodule" id="@cdktf/provider-okta.dataOktaAuthServer"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_okta_auth_server`](https://www
 
 ### DataOktaAuthServer <a name="DataOktaAuthServer" id="@cdktf/provider-okta.dataOktaAuthServer.DataOktaAuthServer"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/d/auth_server okta_auth_server}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/auth_server okta_auth_server}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaAuthServer.DataOktaAuthServer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/dataoktaauthserver"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/dataoktaauthserver"
 
 dataoktaauthserver.NewDataOktaAuthServer(scope Construct, id *string, config DataOktaAuthServerConfig) DataOktaAuthServer
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.dataOktaAuthServer.DataOktaAuthServer.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/dataoktaauthserver"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/dataoktaauthserver"
 
 dataoktaauthserver.DataOktaAuthServer_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.dataOktaAuthServer.DataOktaAuthServer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/dataoktaauthserver"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/dataoktaauthserver"
 
 dataoktaauthserver.DataOktaAuthServer_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ dataoktaauthserver.DataOktaAuthServer_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-okta.dataOktaAuthServer.DataOktaAuthServer.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/dataoktaauthserver"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/dataoktaauthserver"
 
 dataoktaauthserver.DataOktaAuthServer_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -345,7 +345,7 @@ dataoktaauthserver.DataOktaAuthServer_IsTerraformDataSource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-okta.dataOktaAuthServer.DataOktaAuthServer.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaAuthServer.DataOktaAuthServer.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaAuthServer.DataOktaAuthServer.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.dataOktaAuthServer.DataOktaAuthServer.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.dataOktaAuthServer.DataOktaAuthServer.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaAuthServer.DataOktaAuthServer.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaAuthServer.DataOktaAuthServer.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaAuthServer.DataOktaAuthServer.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -441,10 +441,10 @@ func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.dataOktaAuthServer.DataOktaAuthServer.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -643,11 +643,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaAuthServer.DataOktaAuthServerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/dataoktaauthserver"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/dataoktaauthserver"
 
 &dataoktaauthserver.DataOktaAuthServerConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -663,14 +663,14 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/dataoktaauthserver"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-okta.dataOktaAuthServer.DataOktaAuthServerConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.dataOktaAuthServer.DataOktaAuthServerConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.dataOktaAuthServer.DataOktaAuthServerConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaAuthServer.DataOktaAuthServerConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaAuthServer.DataOktaAuthServerConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaAuthServer.DataOktaAuthServerConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaAuthServer.DataOktaAuthServerConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaAuthServer.DataOktaAuthServerConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.dataOktaAuthServer.DataOktaAuthServerConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/auth_server#name DataOktaAuthServer#name}. |
-| <code><a href="#@cdktf/provider-okta.dataOktaAuthServer.DataOktaAuthServerConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/auth_server#id DataOktaAuthServer#id}. |
+| <code><a href="#@cdktf/provider-okta.dataOktaAuthServer.DataOktaAuthServerConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/auth_server#name DataOktaAuthServer#name}. |
+| <code><a href="#@cdktf/provider-okta.dataOktaAuthServer.DataOktaAuthServerConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/auth_server#id DataOktaAuthServer#id}. |
 
 ---
 
@@ -687,10 +687,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.dataOktaAuthServer.DataOktaAuthServerConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -752,7 +752,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/auth_server#name DataOktaAuthServer#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/auth_server#name DataOktaAuthServer#name}.
 
 ---
 
@@ -764,7 +764,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/auth_server#id DataOktaAuthServer#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/auth_server#id DataOktaAuthServer#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

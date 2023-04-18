@@ -1,6 +1,6 @@
 # `okta_admin_role_custom`
 
-Refer to the Terraform Registory for docs: [`okta_admin_role_custom`](https://www.terraform.io/docs/providers/okta/r/admin_role_custom).
+Refer to the Terraform Registory for docs: [`okta_admin_role_custom`](https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/admin_role_custom).
 
 # `adminRoleCustom` Submodule <a name="`adminRoleCustom` Submodule" id="@cdktf/provider-okta.adminRoleCustom"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_admin_role_custom`](https://ww
 
 ### AdminRoleCustom <a name="AdminRoleCustom" id="@cdktf/provider-okta.adminRoleCustom.AdminRoleCustom"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/admin_role_custom okta_admin_role_custom}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/admin_role_custom okta_admin_role_custom}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.adminRoleCustom.AdminRoleCustom.Initializer"></a>
 
@@ -19,7 +19,7 @@ adminRoleCustom.AdminRoleCustom(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -37,7 +37,7 @@ adminRoleCustom.AdminRoleCustom(
 | <code><a href="#@cdktf/provider-okta.adminRoleCustom.AdminRoleCustom.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-okta.adminRoleCustom.AdminRoleCustom.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-okta.adminRoleCustom.AdminRoleCustom.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.adminRoleCustom.AdminRoleCustom.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.adminRoleCustom.AdminRoleCustom.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.adminRoleCustom.AdminRoleCustom.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.adminRoleCustom.AdminRoleCustom.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.adminRoleCustom.AdminRoleCustom.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -45,7 +45,7 @@ adminRoleCustom.AdminRoleCustom(
 | <code><a href="#@cdktf/provider-okta.adminRoleCustom.AdminRoleCustom.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.adminRoleCustom.AdminRoleCustom.Initializer.parameter.description">description</a></code> | <code>str</code> | A human-readable description of the new Role. |
 | <code><a href="#@cdktf/provider-okta.adminRoleCustom.AdminRoleCustom.Initializer.parameter.label">label</a></code> | <code>str</code> | The name given to the new Role. |
-| <code><a href="#@cdktf/provider-okta.adminRoleCustom.AdminRoleCustom.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/admin_role_custom#id AdminRoleCustom#id}. |
+| <code><a href="#@cdktf/provider-okta.adminRoleCustom.AdminRoleCustom.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/admin_role_custom#id AdminRoleCustom#id}. |
 | <code><a href="#@cdktf/provider-okta.adminRoleCustom.AdminRoleCustom.Initializer.parameter.permissions">permissions</a></code> | <code>typing.List[str]</code> | The permissions that the new Role grants. |
 
 ---
@@ -76,7 +76,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.adminRoleCustom.AdminRoleCustom.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 A human-readable description of the new Role.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/admin_role_custom#description AdminRoleCustom#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/admin_role_custom#description AdminRoleCustom#description}
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 The name given to the new Role.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/admin_role_custom#label AdminRoleCustom#label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/admin_role_custom#label AdminRoleCustom#label}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/admin_role_custom#id AdminRoleCustom#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/admin_role_custom#id AdminRoleCustom#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -147,7 +147,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The permissions that the new Role grants.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/admin_role_custom#permissions AdminRoleCustom#permissions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/admin_role_custom#permissions AdminRoleCustom#permissions}
 
 ---
 
@@ -485,7 +485,7 @@ adminRoleCustom.AdminRoleCustom.is_terraform_resource(
 | <code><a href="#@cdktf/provider-okta.adminRoleCustom.AdminRoleCustom.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.adminRoleCustom.AdminRoleCustom.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.adminRoleCustom.AdminRoleCustom.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.adminRoleCustom.AdminRoleCustom.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.adminRoleCustom.AdminRoleCustom.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.adminRoleCustom.AdminRoleCustom.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.adminRoleCustom.AdminRoleCustom.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.adminRoleCustom.AdminRoleCustom.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -587,10 +587,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.adminRoleCustom.AdminRoleCustom.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -753,7 +753,7 @@ from cdktf_cdktf_provider_okta import admin_role_custom
 
 adminRoleCustom.AdminRoleCustomConfig(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -771,7 +771,7 @@ adminRoleCustom.AdminRoleCustomConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-okta.adminRoleCustom.AdminRoleCustomConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.adminRoleCustom.AdminRoleCustomConfig.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.adminRoleCustom.AdminRoleCustomConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.adminRoleCustom.AdminRoleCustomConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.adminRoleCustom.AdminRoleCustomConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.adminRoleCustom.AdminRoleCustomConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -779,7 +779,7 @@ adminRoleCustom.AdminRoleCustomConfig(
 | <code><a href="#@cdktf/provider-okta.adminRoleCustom.AdminRoleCustomConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.adminRoleCustom.AdminRoleCustomConfig.property.description">description</a></code> | <code>str</code> | A human-readable description of the new Role. |
 | <code><a href="#@cdktf/provider-okta.adminRoleCustom.AdminRoleCustomConfig.property.label">label</a></code> | <code>str</code> | The name given to the new Role. |
-| <code><a href="#@cdktf/provider-okta.adminRoleCustom.AdminRoleCustomConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/admin_role_custom#id AdminRoleCustom#id}. |
+| <code><a href="#@cdktf/provider-okta.adminRoleCustom.AdminRoleCustomConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/admin_role_custom#id AdminRoleCustom#id}. |
 | <code><a href="#@cdktf/provider-okta.adminRoleCustom.AdminRoleCustomConfig.property.permissions">permissions</a></code> | <code>typing.List[str]</code> | The permissions that the new Role grants. |
 
 ---
@@ -797,10 +797,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.adminRoleCustom.AdminRoleCustomConfig.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -864,7 +864,7 @@ description: str
 
 A human-readable description of the new Role.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/admin_role_custom#description AdminRoleCustom#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/admin_role_custom#description AdminRoleCustom#description}
 
 ---
 
@@ -878,7 +878,7 @@ label: str
 
 The name given to the new Role.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/admin_role_custom#label AdminRoleCustom#label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/admin_role_custom#label AdminRoleCustom#label}
 
 ---
 
@@ -890,7 +890,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/admin_role_custom#id AdminRoleCustom#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/admin_role_custom#id AdminRoleCustom#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -907,7 +907,7 @@ permissions: typing.List[str]
 
 The permissions that the new Role grants.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/admin_role_custom#permissions AdminRoleCustom#permissions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/admin_role_custom#permissions AdminRoleCustom#permissions}
 
 ---
 

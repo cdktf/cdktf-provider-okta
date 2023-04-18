@@ -1,6 +1,6 @@
 # `okta_admin_role_targets`
 
-Refer to the Terraform Registory for docs: [`okta_admin_role_targets`](https://www.terraform.io/docs/providers/okta/r/admin_role_targets).
+Refer to the Terraform Registory for docs: [`okta_admin_role_targets`](https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/admin_role_targets).
 
 # `adminRoleTargets` Submodule <a name="`adminRoleTargets` Submodule" id="@cdktf/provider-okta.adminRoleTargets"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`okta_admin_role_targets`](https://w
 
 ### AdminRoleTargets <a name="AdminRoleTargets" id="@cdktf/provider-okta.adminRoleTargets.AdminRoleTargets"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/admin_role_targets okta_admin_role_targets}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/admin_role_targets okta_admin_role_targets}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.adminRoleTargets.AdminRoleTargets.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/adminroletargets"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/adminroletargets"
 
 adminroletargets.NewAdminRoleTargets(scope Construct, id *string, config AdminRoleTargetsConfig) AdminRoleTargets
 ```
@@ -291,7 +291,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.adminRoleTargets.AdminRoleTargets.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/adminroletargets"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/adminroletargets"
 
 adminroletargets.AdminRoleTargets_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.adminRoleTargets.AdminRoleTargets.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/adminroletargets"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/adminroletargets"
 
 adminroletargets.AdminRoleTargets_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ adminroletargets.AdminRoleTargets_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.adminRoleTargets.AdminRoleTargets.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/adminroletargets"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/adminroletargets"
 
 adminroletargets.AdminRoleTargets_IsTerraformResource(x interface{}) *bool
 ```
@@ -360,7 +360,7 @@ adminroletargets.AdminRoleTargets_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-okta.adminRoleTargets.AdminRoleTargets.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.adminRoleTargets.AdminRoleTargets.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.adminRoleTargets.AdminRoleTargets.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.adminRoleTargets.AdminRoleTargets.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.adminRoleTargets.AdminRoleTargets.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.adminRoleTargets.AdminRoleTargets.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.adminRoleTargets.AdminRoleTargets.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.adminRoleTargets.AdminRoleTargets.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -465,10 +465,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.adminRoleTargets.AdminRoleTargets.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -657,11 +657,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.adminRoleTargets.AdminRoleTargetsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/adminroletargets"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/adminroletargets"
 
 &adminroletargets.AdminRoleTargetsConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -680,7 +680,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/adminroletargets"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-okta.adminRoleTargets.AdminRoleTargetsConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.adminRoleTargets.AdminRoleTargetsConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.adminRoleTargets.AdminRoleTargetsConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.adminRoleTargets.AdminRoleTargetsConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.adminRoleTargets.AdminRoleTargetsConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.adminRoleTargets.AdminRoleTargetsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -690,7 +690,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/adminroletargets"
 | <code><a href="#@cdktf/provider-okta.adminRoleTargets.AdminRoleTargetsConfig.property.userId">UserId</a></code> | <code>*string</code> | User associated with the role. |
 | <code><a href="#@cdktf/provider-okta.adminRoleTargets.AdminRoleTargetsConfig.property.apps">Apps</a></code> | <code>*[]*string</code> | List of app names (name represents set of app instances) or a combination of app name and app instance ID (like 'salesforce' or 'facebook.0oapsqQ6dv19pqyEo0g3'). |
 | <code><a href="#@cdktf/provider-okta.adminRoleTargets.AdminRoleTargetsConfig.property.groups">Groups</a></code> | <code>*[]*string</code> | List of group IDs. |
-| <code><a href="#@cdktf/provider-okta.adminRoleTargets.AdminRoleTargetsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/admin_role_targets#id AdminRoleTargets#id}. |
+| <code><a href="#@cdktf/provider-okta.adminRoleTargets.AdminRoleTargetsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/admin_role_targets#id AdminRoleTargets#id}. |
 
 ---
 
@@ -707,10 +707,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.adminRoleTargets.AdminRoleTargetsConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -774,7 +774,7 @@ RoleType *string
 
 Type of the role that is assigned to the user and supports optional targets.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/admin_role_targets#role_type AdminRoleTargets#role_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/admin_role_targets#role_type AdminRoleTargets#role_type}
 
 ---
 
@@ -788,7 +788,7 @@ UserId *string
 
 User associated with the role.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/admin_role_targets#user_id AdminRoleTargets#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/admin_role_targets#user_id AdminRoleTargets#user_id}
 
 ---
 
@@ -802,7 +802,7 @@ Apps *[]*string
 
 List of app names (name represents set of app instances) or a combination of app name and app instance ID (like 'salesforce' or 'facebook.0oapsqQ6dv19pqyEo0g3').
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/admin_role_targets#apps AdminRoleTargets#apps}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/admin_role_targets#apps AdminRoleTargets#apps}
 
 ---
 
@@ -816,7 +816,7 @@ Groups *[]*string
 
 List of group IDs.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/admin_role_targets#groups AdminRoleTargets#groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/admin_role_targets#groups AdminRoleTargets#groups}
 
 ---
 
@@ -828,7 +828,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/admin_role_targets#id AdminRoleTargets#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/admin_role_targets#id AdminRoleTargets#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -1,6 +1,6 @@
 # `okta_app_oauth_api_scope`
 
-Refer to the Terraform Registory for docs: [`okta_app_oauth_api_scope`](https://www.terraform.io/docs/providers/okta/r/app_oauth_api_scope).
+Refer to the Terraform Registory for docs: [`okta_app_oauth_api_scope`](https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth_api_scope).
 
 # `appOauthApiScope` Submodule <a name="`appOauthApiScope` Submodule" id="@cdktf/provider-okta.appOauthApiScope"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_app_oauth_api_scope`](https://
 
 ### AppOauthApiScope <a name="AppOauthApiScope" id="@cdktf/provider-okta.appOauthApiScope.AppOauthApiScope"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/app_oauth_api_scope okta_app_oauth_api_scope}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth_api_scope okta_app_oauth_api_scope}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appOauthApiScope.AppOauthApiScope.Initializer"></a>
 
@@ -346,7 +346,7 @@ appOauthApiScope.AppOauthApiScope.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-okta.appOauthApiScope.AppOauthApiScope.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauthApiScope.AppOauthApiScope.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauthApiScope.AppOauthApiScope.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauthApiScope.AppOauthApiScope.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appOauthApiScope.AppOauthApiScope.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauthApiScope.AppOauthApiScope.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauthApiScope.AppOauthApiScope.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauthApiScope.AppOauthApiScope.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -448,10 +448,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.appOauthApiScope.AppOauthApiScope.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -620,7 +620,7 @@ const appOauthApiScopeConfig: appOauthApiScope.AppOauthApiScopeConfig = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-okta.appOauthApiScope.AppOauthApiScopeConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauthApiScope.AppOauthApiScopeConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appOauthApiScope.AppOauthApiScopeConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauthApiScope.AppOauthApiScopeConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauthApiScope.AppOauthApiScopeConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauthApiScope.AppOauthApiScopeConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -629,7 +629,7 @@ const appOauthApiScopeConfig: appOauthApiScope.AppOauthApiScopeConfig = { ... }
 | <code><a href="#@cdktf/provider-okta.appOauthApiScope.AppOauthApiScopeConfig.property.appId">appId</a></code> | <code>string</code> | ID of the application. |
 | <code><a href="#@cdktf/provider-okta.appOauthApiScope.AppOauthApiScopeConfig.property.issuer">issuer</a></code> | <code>string</code> | The issuer of your Org Authorization Server, your Org URL. |
 | <code><a href="#@cdktf/provider-okta.appOauthApiScope.AppOauthApiScopeConfig.property.scopes">scopes</a></code> | <code>string[]</code> | Scopes of the application for which consent is granted. |
-| <code><a href="#@cdktf/provider-okta.appOauthApiScope.AppOauthApiScopeConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth_api_scope#id AppOauthApiScope#id}. |
+| <code><a href="#@cdktf/provider-okta.appOauthApiScope.AppOauthApiScopeConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth_api_scope#id AppOauthApiScope#id}. |
 
 ---
 
@@ -646,10 +646,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.appOauthApiScope.AppOauthApiScopeConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -713,7 +713,7 @@ public readonly appId: string;
 
 ID of the application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth_api_scope#app_id AppOauthApiScope#app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth_api_scope#app_id AppOauthApiScope#app_id}
 
 ---
 
@@ -727,7 +727,7 @@ public readonly issuer: string;
 
 The issuer of your Org Authorization Server, your Org URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth_api_scope#issuer AppOauthApiScope#issuer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth_api_scope#issuer AppOauthApiScope#issuer}
 
 ---
 
@@ -741,7 +741,7 @@ public readonly scopes: string[];
 
 Scopes of the application for which consent is granted.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth_api_scope#scopes AppOauthApiScope#scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth_api_scope#scopes AppOauthApiScope#scopes}
 
 ---
 
@@ -753,7 +753,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_oauth_api_scope#id AppOauthApiScope#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth_api_scope#id AppOauthApiScope#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

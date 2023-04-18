@@ -1,6 +1,6 @@
 # `okta_template_email`
 
-Refer to the Terraform Registory for docs: [`okta_template_email`](https://www.terraform.io/docs/providers/okta/r/template_email).
+Refer to the Terraform Registory for docs: [`okta_template_email`](https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/template_email).
 
 # `templateEmail` Submodule <a name="`templateEmail` Submodule" id="@cdktf/provider-okta.templateEmail"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`okta_template_email`](https://www.t
 
 ### TemplateEmail <a name="TemplateEmail" id="@cdktf/provider-okta.templateEmail.TemplateEmail"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/template_email okta_template_email}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/template_email okta_template_email}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.templateEmail.TemplateEmail.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/templateemail"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/templateemail"
 
 templateemail.NewTemplateEmail(scope Construct, id *string, config TemplateEmailConfig) TemplateEmail
 ```
@@ -297,7 +297,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.templateEmail.TemplateEmail.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/templateemail"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/templateemail"
 
 templateemail.TemplateEmail_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.templateEmail.TemplateEmail.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/templateemail"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/templateemail"
 
 templateemail.TemplateEmail_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ templateemail.TemplateEmail_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.templateEmail.TemplateEmail.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/templateemail"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/templateemail"
 
 templateemail.TemplateEmail_IsTerraformResource(x interface{}) *bool
 ```
@@ -366,7 +366,7 @@ templateemail.TemplateEmail_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-okta.templateEmail.TemplateEmail.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.templateEmail.TemplateEmail.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.templateEmail.TemplateEmail.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.templateEmail.TemplateEmail.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.templateEmail.TemplateEmail.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.templateEmail.TemplateEmail.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.templateEmail.TemplateEmail.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.templateEmail.TemplateEmail.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -468,10 +468,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.templateEmail.TemplateEmail.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -630,11 +630,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.templateEmail.TemplateEmailConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/templateemail"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/templateemail"
 
 &templateemail.TemplateEmailConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -652,7 +652,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/templateemail"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-okta.templateEmail.TemplateEmailConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.templateEmail.TemplateEmailConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.templateEmail.TemplateEmailConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.templateEmail.TemplateEmailConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.templateEmail.TemplateEmailConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.templateEmail.TemplateEmailConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -660,8 +660,8 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/templateemail"
 | <code><a href="#@cdktf/provider-okta.templateEmail.TemplateEmailConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.templateEmail.TemplateEmailConfig.property.translations">Translations</a></code> | <code>interface{}</code> | translations block. |
 | <code><a href="#@cdktf/provider-okta.templateEmail.TemplateEmailConfig.property.type">Type</a></code> | <code>*string</code> | Email template type. |
-| <code><a href="#@cdktf/provider-okta.templateEmail.TemplateEmailConfig.property.defaultLanguage">DefaultLanguage</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/template_email#default_language TemplateEmail#default_language}. |
-| <code><a href="#@cdktf/provider-okta.templateEmail.TemplateEmailConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/template_email#id TemplateEmail#id}. |
+| <code><a href="#@cdktf/provider-okta.templateEmail.TemplateEmailConfig.property.defaultLanguage">DefaultLanguage</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/template_email#default_language TemplateEmail#default_language}. |
+| <code><a href="#@cdktf/provider-okta.templateEmail.TemplateEmailConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/template_email#id TemplateEmail#id}. |
 
 ---
 
@@ -678,10 +678,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.templateEmail.TemplateEmailConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -745,7 +745,7 @@ Translations interface{}
 
 translations block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/template_email#translations TemplateEmail#translations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/template_email#translations TemplateEmail#translations}
 
 ---
 
@@ -759,7 +759,7 @@ Type *string
 
 Email template type.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/template_email#type TemplateEmail#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/template_email#type TemplateEmail#type}
 
 ---
 
@@ -771,7 +771,7 @@ DefaultLanguage *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/template_email#default_language TemplateEmail#default_language}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/template_email#default_language TemplateEmail#default_language}.
 
 ---
 
@@ -783,7 +783,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/template_email#id TemplateEmail#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/template_email#id TemplateEmail#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -795,7 +795,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.templateEmail.TemplateEmailTranslations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/templateemail"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/templateemail"
 
 &templateemail.TemplateEmailTranslations {
 	Language: *string,
@@ -808,9 +808,9 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/templateemail"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.templateEmail.TemplateEmailTranslations.property.language">Language</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/template_email#language TemplateEmail#language}. |
-| <code><a href="#@cdktf/provider-okta.templateEmail.TemplateEmailTranslations.property.subject">Subject</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/template_email#subject TemplateEmail#subject}. |
-| <code><a href="#@cdktf/provider-okta.templateEmail.TemplateEmailTranslations.property.template">Template</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/template_email#template TemplateEmail#template}. |
+| <code><a href="#@cdktf/provider-okta.templateEmail.TemplateEmailTranslations.property.language">Language</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/template_email#language TemplateEmail#language}. |
+| <code><a href="#@cdktf/provider-okta.templateEmail.TemplateEmailTranslations.property.subject">Subject</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/template_email#subject TemplateEmail#subject}. |
+| <code><a href="#@cdktf/provider-okta.templateEmail.TemplateEmailTranslations.property.template">Template</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/template_email#template TemplateEmail#template}. |
 
 ---
 
@@ -822,7 +822,7 @@ Language *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/template_email#language TemplateEmail#language}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/template_email#language TemplateEmail#language}.
 
 ---
 
@@ -834,7 +834,7 @@ Subject *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/template_email#subject TemplateEmail#subject}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/template_email#subject TemplateEmail#subject}.
 
 ---
 
@@ -846,7 +846,7 @@ Template *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/template_email#template TemplateEmail#template}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/template_email#template TemplateEmail#template}.
 
 ---
 
@@ -857,7 +857,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.templateEmail.TemplateEmailTranslationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/templateemail"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/templateemail"
 
 templateemail.NewTemplateEmailTranslationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TemplateEmailTranslationsList
 ```
@@ -1000,7 +1000,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.templateEmail.TemplateEmailTranslationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/templateemail"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/templateemail"
 
 templateemail.NewTemplateEmailTranslationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) TemplateEmailTranslationsOutputReference
 ```

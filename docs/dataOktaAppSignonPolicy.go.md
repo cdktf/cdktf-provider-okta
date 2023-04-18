@@ -1,6 +1,6 @@
 # `data_okta_app_signon_policy`
 
-Refer to the Terraform Registory for docs: [`data_okta_app_signon_policy`](https://www.terraform.io/docs/providers/okta/d/app_signon_policy).
+Refer to the Terraform Registory for docs: [`data_okta_app_signon_policy`](https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/app_signon_policy).
 
 # `dataOktaAppSignonPolicy` Submodule <a name="`dataOktaAppSignonPolicy` Submodule" id="@cdktf/provider-okta.dataOktaAppSignonPolicy"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_okta_app_signon_policy`](https
 
 ### DataOktaAppSignonPolicy <a name="DataOktaAppSignonPolicy" id="@cdktf/provider-okta.dataOktaAppSignonPolicy.DataOktaAppSignonPolicy"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/d/app_signon_policy okta_app_signon_policy}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/app_signon_policy okta_app_signon_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaAppSignonPolicy.DataOktaAppSignonPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/dataoktaappsignonpolicy"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/dataoktaappsignonpolicy"
 
 dataoktaappsignonpolicy.NewDataOktaAppSignonPolicy(scope Construct, id *string, config DataOktaAppSignonPolicyConfig) DataOktaAppSignonPolicy
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.dataOktaAppSignonPolicy.DataOktaAppSignonPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/dataoktaappsignonpolicy"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/dataoktaappsignonpolicy"
 
 dataoktaappsignonpolicy.DataOktaAppSignonPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.dataOktaAppSignonPolicy.DataOktaAppSignonPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/dataoktaappsignonpolicy"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/dataoktaappsignonpolicy"
 
 dataoktaappsignonpolicy.DataOktaAppSignonPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ dataoktaappsignonpolicy.DataOktaAppSignonPolicy_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-okta.dataOktaAppSignonPolicy.DataOktaAppSignonPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/dataoktaappsignonpolicy"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/dataoktaappsignonpolicy"
 
 dataoktaappsignonpolicy.DataOktaAppSignonPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -345,7 +345,7 @@ dataoktaappsignonpolicy.DataOktaAppSignonPolicy_IsTerraformDataSource(x interfac
 | <code><a href="#@cdktf/provider-okta.dataOktaAppSignonPolicy.DataOktaAppSignonPolicy.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaAppSignonPolicy.DataOktaAppSignonPolicy.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaAppSignonPolicy.DataOktaAppSignonPolicy.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.dataOktaAppSignonPolicy.DataOktaAppSignonPolicy.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.dataOktaAppSignonPolicy.DataOktaAppSignonPolicy.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaAppSignonPolicy.DataOktaAppSignonPolicy.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaAppSignonPolicy.DataOktaAppSignonPolicy.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaAppSignonPolicy.DataOktaAppSignonPolicy.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -433,10 +433,10 @@ func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.dataOktaAppSignonPolicy.DataOktaAppSignonPolicy.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -555,11 +555,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaAppSignonPolicy.DataOktaAppSignonPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/dataoktaappsignonpolicy"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/dataoktaappsignonpolicy"
 
 &dataoktaappsignonpolicy.DataOktaAppSignonPolicyConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -575,14 +575,14 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/dataoktaappsignonpolicy"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-okta.dataOktaAppSignonPolicy.DataOktaAppSignonPolicyConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.dataOktaAppSignonPolicy.DataOktaAppSignonPolicyConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.dataOktaAppSignonPolicy.DataOktaAppSignonPolicyConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaAppSignonPolicy.DataOktaAppSignonPolicyConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaAppSignonPolicy.DataOktaAppSignonPolicyConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaAppSignonPolicy.DataOktaAppSignonPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaAppSignonPolicy.DataOktaAppSignonPolicyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaAppSignonPolicy.DataOktaAppSignonPolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaAppSignonPolicy.DataOktaAppSignonPolicyConfig.property.appId">AppId</a></code> | <code>*string</code> | App ID. |
-| <code><a href="#@cdktf/provider-okta.dataOktaAppSignonPolicy.DataOktaAppSignonPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_signon_policy#id DataOktaAppSignonPolicy#id}. |
+| <code><a href="#@cdktf/provider-okta.dataOktaAppSignonPolicy.DataOktaAppSignonPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/app_signon_policy#id DataOktaAppSignonPolicy#id}. |
 
 ---
 
@@ -599,10 +599,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.dataOktaAppSignonPolicy.DataOktaAppSignonPolicyConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -666,7 +666,7 @@ AppId *string
 
 App ID.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_signon_policy#app_id DataOktaAppSignonPolicy#app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/app_signon_policy#app_id DataOktaAppSignonPolicy#app_id}
 
 ---
 
@@ -678,7 +678,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/app_signon_policy#id DataOktaAppSignonPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/app_signon_policy#id DataOktaAppSignonPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

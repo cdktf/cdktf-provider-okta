@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/r/group
+// https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,17 +10,17 @@ export interface GroupConfig extends cdktf.TerraformMetaArguments {
   /**
   * JSON formatted custom attributes for a group. It must be JSON due to various types Okta allows.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group#custom_profile_attributes Group#custom_profile_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group#custom_profile_attributes Group#custom_profile_attributes}
   */
   readonly customProfileAttributes?: string;
   /**
   * Group description
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group#description Group#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group#description Group#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group#id Group#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group#id Group#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -29,25 +29,25 @@ export interface GroupConfig extends cdktf.TerraformMetaArguments {
   /**
   * Group name
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group#name Group#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group#name Group#name}
   */
   readonly name: string;
   /**
   * Ignore users sync. This is a temporary solution until 'users' field is supported in this resource
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group#skip_users Group#skip_users}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group#skip_users Group#skip_users}
   */
   readonly skipUsers?: boolean | cdktf.IResolvable;
   /**
   * Users associated with the group. This can also be done per user.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group#users Group#users}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group#users Group#users}
   */
   readonly users?: string[];
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/r/group okta_group}
+* Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group okta_group}
 */
 export class Group extends cdktf.TerraformResource {
 
@@ -61,7 +61,7 @@ export class Group extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/group okta_group} Resource
+  * Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group okta_group} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

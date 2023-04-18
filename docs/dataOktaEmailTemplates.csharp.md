@@ -1,6 +1,6 @@
 # `data_okta_email_templates`
 
-Refer to the Terraform Registory for docs: [`data_okta_email_templates`](https://www.terraform.io/docs/providers/okta/d/email_templates).
+Refer to the Terraform Registory for docs: [`data_okta_email_templates`](https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/email_templates).
 
 # `dataOktaEmailTemplates` Submodule <a name="`dataOktaEmailTemplates` Submodule" id="@cdktf/provider-okta.dataOktaEmailTemplates"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_okta_email_templates`](https:/
 
 ### DataOktaEmailTemplates <a name="DataOktaEmailTemplates" id="@cdktf/provider-okta.dataOktaEmailTemplates.DataOktaEmailTemplates"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/d/email_templates okta_email_templates}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/email_templates okta_email_templates}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaEmailTemplates.DataOktaEmailTemplates.Initializer"></a>
 
@@ -345,7 +345,7 @@ DataOktaEmailTemplates.IsTerraformDataSource(object X);
 | <code><a href="#@cdktf/provider-okta.dataOktaEmailTemplates.DataOktaEmailTemplates.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaEmailTemplates.DataOktaEmailTemplates.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaEmailTemplates.DataOktaEmailTemplates.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.dataOktaEmailTemplates.DataOktaEmailTemplates.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.dataOktaEmailTemplates.DataOktaEmailTemplates.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaEmailTemplates.DataOktaEmailTemplates.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaEmailTemplates.DataOktaEmailTemplates.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaEmailTemplates.DataOktaEmailTemplates.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -433,10 +433,10 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.dataOktaEmailTemplates.DataOktaEmailTemplates.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -559,7 +559,7 @@ using HashiCorp.Cdktf.Providers.Okta;
 
 new DataOktaEmailTemplatesConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -575,14 +575,14 @@ new DataOktaEmailTemplatesConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-okta.dataOktaEmailTemplates.DataOktaEmailTemplatesConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.dataOktaEmailTemplates.DataOktaEmailTemplatesConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.dataOktaEmailTemplates.DataOktaEmailTemplatesConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaEmailTemplates.DataOktaEmailTemplatesConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaEmailTemplates.DataOktaEmailTemplatesConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaEmailTemplates.DataOktaEmailTemplatesConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaEmailTemplates.DataOktaEmailTemplatesConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaEmailTemplates.DataOktaEmailTemplatesConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaEmailTemplates.DataOktaEmailTemplatesConfig.property.brandId">BrandId</a></code> | <code>string</code> | Brand ID. |
-| <code><a href="#@cdktf/provider-okta.dataOktaEmailTemplates.DataOktaEmailTemplatesConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/email_templates#id DataOktaEmailTemplates#id}. |
+| <code><a href="#@cdktf/provider-okta.dataOktaEmailTemplates.DataOktaEmailTemplatesConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/email_templates#id DataOktaEmailTemplates#id}. |
 
 ---
 
@@ -599,10 +599,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.dataOktaEmailTemplates.DataOktaEmailTemplatesConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -666,7 +666,7 @@ public string BrandId { get; set; }
 
 Brand ID.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/email_templates#brand_id DataOktaEmailTemplates#brand_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/email_templates#brand_id DataOktaEmailTemplates#brand_id}
 
 ---
 
@@ -678,7 +678,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/email_templates#id DataOktaEmailTemplates#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/email_templates#id DataOktaEmailTemplates#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

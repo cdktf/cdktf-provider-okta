@@ -1,6 +1,6 @@
 # `okta_policy_profile_enrollment`
 
-Refer to the Terraform Registory for docs: [`okta_policy_profile_enrollment`](https://www.terraform.io/docs/providers/okta/r/policy_profile_enrollment).
+Refer to the Terraform Registory for docs: [`okta_policy_profile_enrollment`](https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/policy_profile_enrollment).
 
 # `policyProfileEnrollment` Submodule <a name="`policyProfileEnrollment` Submodule" id="@cdktf/provider-okta.policyProfileEnrollment"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_policy_profile_enrollment`](ht
 
 ### PolicyProfileEnrollment <a name="PolicyProfileEnrollment" id="@cdktf/provider-okta.policyProfileEnrollment.PolicyProfileEnrollment"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/policy_profile_enrollment okta_policy_profile_enrollment}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/policy_profile_enrollment okta_policy_profile_enrollment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.policyProfileEnrollment.PolicyProfileEnrollment.Initializer"></a>
 
@@ -19,6 +19,7 @@ PolicyProfileEnrollment.Builder.create(Construct scope, java.lang.String id)
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -37,14 +38,14 @@ PolicyProfileEnrollment.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-okta.policyProfileEnrollment.PolicyProfileEnrollment.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-okta.policyProfileEnrollment.PolicyProfileEnrollment.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-okta.policyProfileEnrollment.PolicyProfileEnrollment.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyProfileEnrollment.PolicyProfileEnrollment.Initializer.parameter.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyProfileEnrollment.PolicyProfileEnrollment.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyProfileEnrollment.PolicyProfileEnrollment.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyProfileEnrollment.PolicyProfileEnrollment.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyProfileEnrollment.PolicyProfileEnrollment.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyProfileEnrollment.PolicyProfileEnrollment.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyProfileEnrollment.PolicyProfileEnrollment.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyProfileEnrollment.PolicyProfileEnrollment.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Name of the policy. |
-| <code><a href="#@cdktf/provider-okta.policyProfileEnrollment.PolicyProfileEnrollment.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_profile_enrollment#id PolicyProfileEnrollment#id}. |
+| <code><a href="#@cdktf/provider-okta.policyProfileEnrollment.PolicyProfileEnrollment.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/policy_profile_enrollment#id PolicyProfileEnrollment#id}. |
 | <code><a href="#@cdktf/provider-okta.policyProfileEnrollment.PolicyProfileEnrollment.Initializer.parameter.status">status</a></code> | <code>java.lang.String</code> | Status of the policy. |
 
 ---
@@ -75,7 +76,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.policyProfileEnrollment.PolicyProfileEnrollment.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -115,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 Name of the policy.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_profile_enrollment#name PolicyProfileEnrollment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/policy_profile_enrollment#name PolicyProfileEnrollment#name}
 
 ---
 
@@ -123,7 +124,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_profile_enrollment#id PolicyProfileEnrollment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/policy_profile_enrollment#id PolicyProfileEnrollment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -136,7 +137,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Status of the policy.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_profile_enrollment#status PolicyProfileEnrollment#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/policy_profile_enrollment#status PolicyProfileEnrollment#status}
 
 ---
 
@@ -443,7 +444,7 @@ PolicyProfileEnrollment.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-okta.policyProfileEnrollment.PolicyProfileEnrollment.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyProfileEnrollment.PolicyProfileEnrollment.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyProfileEnrollment.PolicyProfileEnrollment.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyProfileEnrollment.PolicyProfileEnrollment.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyProfileEnrollment.PolicyProfileEnrollment.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyProfileEnrollment.PolicyProfileEnrollment.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyProfileEnrollment.PolicyProfileEnrollment.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyProfileEnrollment.PolicyProfileEnrollment.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -543,10 +544,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.policyProfileEnrollment.PolicyProfileEnrollment.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -691,6 +692,7 @@ PolicyProfileEnrollmentConfig.builder()
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -709,14 +711,14 @@ PolicyProfileEnrollmentConfig.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-okta.policyProfileEnrollment.PolicyProfileEnrollmentConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyProfileEnrollment.PolicyProfileEnrollmentConfig.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyProfileEnrollment.PolicyProfileEnrollmentConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyProfileEnrollment.PolicyProfileEnrollmentConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyProfileEnrollment.PolicyProfileEnrollmentConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyProfileEnrollment.PolicyProfileEnrollmentConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyProfileEnrollment.PolicyProfileEnrollmentConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyProfileEnrollment.PolicyProfileEnrollmentConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyProfileEnrollment.PolicyProfileEnrollmentConfig.property.name">name</a></code> | <code>java.lang.String</code> | Name of the policy. |
-| <code><a href="#@cdktf/provider-okta.policyProfileEnrollment.PolicyProfileEnrollmentConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_profile_enrollment#id PolicyProfileEnrollment#id}. |
+| <code><a href="#@cdktf/provider-okta.policyProfileEnrollment.PolicyProfileEnrollmentConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/policy_profile_enrollment#id PolicyProfileEnrollment#id}. |
 | <code><a href="#@cdktf/provider-okta.policyProfileEnrollment.PolicyProfileEnrollmentConfig.property.status">status</a></code> | <code>java.lang.String</code> | Status of the policy. |
 
 ---
@@ -734,10 +736,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.policyProfileEnrollment.PolicyProfileEnrollmentConfig.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -801,7 +803,7 @@ public java.lang.String getName();
 
 Name of the policy.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_profile_enrollment#name PolicyProfileEnrollment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/policy_profile_enrollment#name PolicyProfileEnrollment#name}
 
 ---
 
@@ -813,7 +815,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_profile_enrollment#id PolicyProfileEnrollment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/policy_profile_enrollment#id PolicyProfileEnrollment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -830,7 +832,7 @@ public java.lang.String getStatus();
 
 Status of the policy.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/policy_profile_enrollment#status PolicyProfileEnrollment#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/policy_profile_enrollment#status PolicyProfileEnrollment#status}
 
 ---
 

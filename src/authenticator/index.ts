@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/r/authenticator
+// https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/authenticator
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface AuthenticatorConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/authenticator#id Authenticator#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/authenticator#id Authenticator#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -17,79 +17,79 @@ export interface AuthenticatorConfig extends cdktf.TerraformMetaArguments {
   /**
   * A human-readable string that identifies the Authenticator
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/authenticator#key Authenticator#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/authenticator#key Authenticator#key}
   */
   readonly key: string;
   /**
   * Display name of the Authenticator
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/authenticator#name Authenticator#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/authenticator#name Authenticator#name}
   */
   readonly name: string;
   /**
   * The RADIUS server port (for example 1812). This is defined when the On-Prem RADIUS server is configured
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/authenticator#provider_auth_port Authenticator#provider_auth_port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/authenticator#provider_auth_port Authenticator#provider_auth_port}
   */
   readonly providerAuthPort?: number;
   /**
   * The Duo Security API hostname
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/authenticator#provider_host Authenticator#provider_host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/authenticator#provider_host Authenticator#provider_host}
   */
   readonly providerHost?: string;
   /**
   * Server host name or IP address
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/authenticator#provider_hostname Authenticator#provider_hostname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/authenticator#provider_hostname Authenticator#provider_hostname}
   */
   readonly providerHostname?: string;
   /**
   * The Duo Security integration key
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/authenticator#provider_integration_key Authenticator#provider_integration_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/authenticator#provider_integration_key Authenticator#provider_integration_key}
   */
   readonly providerIntegrationKey?: string;
   /**
   * Provider in JSON format
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/authenticator#provider_json Authenticator#provider_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/authenticator#provider_json Authenticator#provider_json}
   */
   readonly providerJson?: string;
   /**
   * The Duo Security secret key
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/authenticator#provider_secret_key Authenticator#provider_secret_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/authenticator#provider_secret_key Authenticator#provider_secret_key}
   */
   readonly providerSecretKey?: string;
   /**
   * An authentication key that must be defined when the RADIUS server is configured, and must be the same on both the RADIUS client and server.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/authenticator#provider_shared_secret Authenticator#provider_shared_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/authenticator#provider_shared_secret Authenticator#provider_shared_secret}
   */
   readonly providerSharedSecret?: string;
   /**
   * Format expected by the provider
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/authenticator#provider_user_name_template Authenticator#provider_user_name_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/authenticator#provider_user_name_template Authenticator#provider_user_name_template}
   */
   readonly providerUserNameTemplate?: string;
   /**
   * Authenticator settings in JSON format
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/authenticator#settings Authenticator#settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/authenticator#settings Authenticator#settings}
   */
   readonly settings?: string;
   /**
   * Authenticator status: ACTIVE or INACTIVE
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/authenticator#status Authenticator#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/authenticator#status Authenticator#status}
   */
   readonly status?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/r/authenticator okta_authenticator}
+* Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/authenticator okta_authenticator}
 */
 export class Authenticator extends cdktf.TerraformResource {
 
@@ -103,7 +103,7 @@ export class Authenticator extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/authenticator okta_authenticator} Resource
+  * Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/authenticator okta_authenticator} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

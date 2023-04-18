@@ -1,6 +1,6 @@
 # `okta_oauth_app_redirect_uri`
 
-Refer to the Terraform Registory for docs: [`okta_oauth_app_redirect_uri`](https://www.terraform.io/docs/providers/okta/r/oauth_app_redirect_uri).
+Refer to the Terraform Registory for docs: [`okta_oauth_app_redirect_uri`](https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/oauth_app_redirect_uri).
 
 # `oauthAppRedirectUri` Submodule <a name="`oauthAppRedirectUri` Submodule" id="@cdktf/provider-okta.oauthAppRedirectUri"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_oauth_app_redirect_uri`](https
 
 ### OauthAppRedirectUri <a name="OauthAppRedirectUri" id="@cdktf/provider-okta.oauthAppRedirectUri.OauthAppRedirectUri"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/oauth_app_redirect_uri okta_oauth_app_redirect_uri}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/oauth_app_redirect_uri okta_oauth_app_redirect_uri}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.oauthAppRedirectUri.OauthAppRedirectUri.Initializer"></a>
 
@@ -346,7 +346,7 @@ oauthAppRedirectUri.OauthAppRedirectUri.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-okta.oauthAppRedirectUri.OauthAppRedirectUri.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.oauthAppRedirectUri.OauthAppRedirectUri.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.oauthAppRedirectUri.OauthAppRedirectUri.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.oauthAppRedirectUri.OauthAppRedirectUri.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.oauthAppRedirectUri.OauthAppRedirectUri.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.oauthAppRedirectUri.OauthAppRedirectUri.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.oauthAppRedirectUri.OauthAppRedirectUri.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.oauthAppRedirectUri.OauthAppRedirectUri.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -446,10 +446,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.oauthAppRedirectUri.OauthAppRedirectUri.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -598,15 +598,15 @@ const oauthAppRedirectUriConfig: oauthAppRedirectUri.OauthAppRedirectUriConfig =
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-okta.oauthAppRedirectUri.OauthAppRedirectUriConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.oauthAppRedirectUri.OauthAppRedirectUriConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.oauthAppRedirectUri.OauthAppRedirectUriConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.oauthAppRedirectUri.OauthAppRedirectUriConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.oauthAppRedirectUri.OauthAppRedirectUriConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.oauthAppRedirectUri.OauthAppRedirectUriConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.oauthAppRedirectUri.OauthAppRedirectUriConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.oauthAppRedirectUri.OauthAppRedirectUriConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.oauthAppRedirectUri.OauthAppRedirectUriConfig.property.appId">appId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app_redirect_uri#app_id OauthAppRedirectUri#app_id}. |
+| <code><a href="#@cdktf/provider-okta.oauthAppRedirectUri.OauthAppRedirectUriConfig.property.appId">appId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/oauth_app_redirect_uri#app_id OauthAppRedirectUri#app_id}. |
 | <code><a href="#@cdktf/provider-okta.oauthAppRedirectUri.OauthAppRedirectUriConfig.property.uri">uri</a></code> | <code>string</code> | Redirect URI to append to Okta OIDC application. |
-| <code><a href="#@cdktf/provider-okta.oauthAppRedirectUri.OauthAppRedirectUriConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app_redirect_uri#id OauthAppRedirectUri#id}. |
+| <code><a href="#@cdktf/provider-okta.oauthAppRedirectUri.OauthAppRedirectUriConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/oauth_app_redirect_uri#id OauthAppRedirectUri#id}. |
 
 ---
 
@@ -623,10 +623,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.oauthAppRedirectUri.OauthAppRedirectUriConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -688,7 +688,7 @@ public readonly appId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app_redirect_uri#app_id OauthAppRedirectUri#app_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/oauth_app_redirect_uri#app_id OauthAppRedirectUri#app_id}.
 
 ---
 
@@ -702,7 +702,7 @@ public readonly uri: string;
 
 Redirect URI to append to Okta OIDC application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app_redirect_uri#uri OauthAppRedirectUri#uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/oauth_app_redirect_uri#uri OauthAppRedirectUri#uri}
 
 ---
 
@@ -714,7 +714,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/oauth_app_redirect_uri#id OauthAppRedirectUri#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/oauth_app_redirect_uri#id OauthAppRedirectUri#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

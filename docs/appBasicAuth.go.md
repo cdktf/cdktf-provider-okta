@@ -1,6 +1,6 @@
 # `okta_app_basic_auth`
 
-Refer to the Terraform Registory for docs: [`okta_app_basic_auth`](https://www.terraform.io/docs/providers/okta/r/app_basic_auth).
+Refer to the Terraform Registory for docs: [`okta_app_basic_auth`](https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth).
 
 # `appBasicAuth` Submodule <a name="`appBasicAuth` Submodule" id="@cdktf/provider-okta.appBasicAuth"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`okta_app_basic_auth`](https://www.t
 
 ### AppBasicAuth <a name="AppBasicAuth" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuth"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/app_basic_auth okta_app_basic_auth}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth okta_app_basic_auth}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuth.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/appbasicauth"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/appbasicauth"
 
 appbasicauth.NewAppBasicAuth(scope Construct, id *string, config AppBasicAuthConfig) AppBasicAuth
 ```
@@ -415,7 +415,7 @@ func ResetUsers()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuth.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/appbasicauth"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/appbasicauth"
 
 appbasicauth.AppBasicAuth_IsConstruct(x interface{}) *bool
 ```
@@ -447,7 +447,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuth.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/appbasicauth"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/appbasicauth"
 
 appbasicauth.AppBasicAuth_IsTerraformElement(x interface{}) *bool
 ```
@@ -461,7 +461,7 @@ appbasicauth.AppBasicAuth_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuth.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/appbasicauth"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/appbasicauth"
 
 appbasicauth.AppBasicAuth_IsTerraformResource(x interface{}) *bool
 ```
@@ -484,7 +484,7 @@ appbasicauth.AppBasicAuth_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuth.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuth.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuth.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuth.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuth.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuth.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuth.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuth.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -621,10 +621,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuth.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -1133,11 +1133,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuthConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/appbasicauth"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/appbasicauth"
 
 &appbasicauth.AppBasicAuthConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -1161,7 +1161,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/appbasicauth"
 	SkipGroups: interface{},
 	SkipUsers: interface{},
 	Status: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-okta-go/okta/v6.appBasicAuth.AppBasicAuthTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-okta-go/okta/v7.appBasicAuth.AppBasicAuthTimeouts,
 	Users: interface{},
 }
 ```
@@ -1171,7 +1171,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/appbasicauth"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -1190,7 +1190,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/appbasicauth"
 | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthConfig.property.groups">Groups</a></code> | <code>*[]*string</code> | Groups associated with the application. |
 | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthConfig.property.hideIos">HideIos</a></code> | <code>interface{}</code> | Do not display application icon on mobile app. |
 | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthConfig.property.hideWeb">HideWeb</a></code> | <code>interface{}</code> | Do not display application icon to users. |
-| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_basic_auth#id AppBasicAuth#id}. |
+| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth#id AppBasicAuth#id}. |
 | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthConfig.property.logo">Logo</a></code> | <code>*string</code> | Local path to logo of the application. |
 | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthConfig.property.skipGroups">SkipGroups</a></code> | <code>interface{}</code> | Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources. |
 | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthConfig.property.skipUsers">SkipUsers</a></code> | <code>interface{}</code> | Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources. |
@@ -1213,10 +1213,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuthConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -1280,7 +1280,7 @@ AuthUrl *string
 
 Login button field.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_basic_auth#auth_url AppBasicAuth#auth_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth#auth_url AppBasicAuth#auth_url}
 
 ---
 
@@ -1294,7 +1294,7 @@ Label *string
 
 Pretty name of app.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_basic_auth#label AppBasicAuth#label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth#label AppBasicAuth#label}
 
 ---
 
@@ -1308,7 +1308,7 @@ Url *string
 
 Login password field.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_basic_auth#url AppBasicAuth#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth#url AppBasicAuth#url}
 
 ---
 
@@ -1322,7 +1322,7 @@ AccessibilityErrorRedirectUrl *string
 
 Custom error page URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_basic_auth#accessibility_error_redirect_url AppBasicAuth#accessibility_error_redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth#accessibility_error_redirect_url AppBasicAuth#accessibility_error_redirect_url}
 
 ---
 
@@ -1336,7 +1336,7 @@ AccessibilityLoginRedirectUrl *string
 
 Custom login page URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_basic_auth#accessibility_login_redirect_url AppBasicAuth#accessibility_login_redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth#accessibility_login_redirect_url AppBasicAuth#accessibility_login_redirect_url}
 
 ---
 
@@ -1350,7 +1350,7 @@ AccessibilitySelfService interface{}
 
 Enable self service.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_basic_auth#accessibility_self_service AppBasicAuth#accessibility_self_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth#accessibility_self_service AppBasicAuth#accessibility_self_service}
 
 ---
 
@@ -1364,7 +1364,7 @@ AdminNote *string
 
 Application notes for admins.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_basic_auth#admin_note AppBasicAuth#admin_note}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth#admin_note AppBasicAuth#admin_note}
 
 ---
 
@@ -1378,7 +1378,7 @@ AppLinksJson *string
 
 Displays specific appLinks for the app.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_basic_auth#app_links_json AppBasicAuth#app_links_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth#app_links_json AppBasicAuth#app_links_json}
 
 ---
 
@@ -1392,7 +1392,7 @@ AutoSubmitToolbar interface{}
 
 Display auto submit toolbar.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_basic_auth#auto_submit_toolbar AppBasicAuth#auto_submit_toolbar}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth#auto_submit_toolbar AppBasicAuth#auto_submit_toolbar}
 
 ---
 
@@ -1406,7 +1406,7 @@ EnduserNote *string
 
 Application notes for end users.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_basic_auth#enduser_note AppBasicAuth#enduser_note}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth#enduser_note AppBasicAuth#enduser_note}
 
 ---
 
@@ -1420,7 +1420,7 @@ Groups *[]*string
 
 Groups associated with the application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_basic_auth#groups AppBasicAuth#groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth#groups AppBasicAuth#groups}
 
 ---
 
@@ -1434,7 +1434,7 @@ HideIos interface{}
 
 Do not display application icon on mobile app.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_basic_auth#hide_ios AppBasicAuth#hide_ios}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth#hide_ios AppBasicAuth#hide_ios}
 
 ---
 
@@ -1448,7 +1448,7 @@ HideWeb interface{}
 
 Do not display application icon to users.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_basic_auth#hide_web AppBasicAuth#hide_web}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth#hide_web AppBasicAuth#hide_web}
 
 ---
 
@@ -1460,7 +1460,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_basic_auth#id AppBasicAuth#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth#id AppBasicAuth#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1477,7 +1477,7 @@ Logo *string
 
 Local path to logo of the application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_basic_auth#logo AppBasicAuth#logo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth#logo AppBasicAuth#logo}
 
 ---
 
@@ -1491,7 +1491,7 @@ SkipGroups interface{}
 
 Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_basic_auth#skip_groups AppBasicAuth#skip_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth#skip_groups AppBasicAuth#skip_groups}
 
 ---
 
@@ -1505,7 +1505,7 @@ SkipUsers interface{}
 
 Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_basic_auth#skip_users AppBasicAuth#skip_users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth#skip_users AppBasicAuth#skip_users}
 
 ---
 
@@ -1519,7 +1519,7 @@ Status *string
 
 Status of application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_basic_auth#status AppBasicAuth#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth#status AppBasicAuth#status}
 
 ---
 
@@ -1533,7 +1533,7 @@ Timeouts AppBasicAuthTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_basic_auth#timeouts AppBasicAuth#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth#timeouts AppBasicAuth#timeouts}
 
 ---
 
@@ -1547,7 +1547,7 @@ Users interface{}
 
 users block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_basic_auth#users AppBasicAuth#users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth#users AppBasicAuth#users}
 
 ---
 
@@ -1556,7 +1556,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuthTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/appbasicauth"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/appbasicauth"
 
 &appbasicauth.AppBasicAuthTimeouts {
 	Create: *string,
@@ -1569,9 +1569,9 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/appbasicauth"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_basic_auth#create AppBasicAuth#create}. |
-| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_basic_auth#read AppBasicAuth#read}. |
-| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_basic_auth#update AppBasicAuth#update}. |
+| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth#create AppBasicAuth#create}. |
+| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth#read AppBasicAuth#read}. |
+| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth#update AppBasicAuth#update}. |
 
 ---
 
@@ -1583,7 +1583,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_basic_auth#create AppBasicAuth#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth#create AppBasicAuth#create}.
 
 ---
 
@@ -1595,7 +1595,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_basic_auth#read AppBasicAuth#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth#read AppBasicAuth#read}.
 
 ---
 
@@ -1607,7 +1607,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_basic_auth#update AppBasicAuth#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth#update AppBasicAuth#update}.
 
 ---
 
@@ -1616,7 +1616,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/appbasicauth"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/appbasicauth"
 
 &appbasicauth.AppBasicAuthUsers {
 	Id: *string,
@@ -1645,7 +1645,7 @@ Id *string
 
 User ID.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_basic_auth#id AppBasicAuth#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth#id AppBasicAuth#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1662,7 +1662,7 @@ Password *string
 
 Password for user application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_basic_auth#password AppBasicAuth#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth#password AppBasicAuth#password}
 
 ---
 
@@ -1676,7 +1676,7 @@ Username *string
 
 Username for user.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_basic_auth#username AppBasicAuth#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth#username AppBasicAuth#username}
 
 ---
 
@@ -1687,7 +1687,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuthTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/appbasicauth"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/appbasicauth"
 
 appbasicauth.NewAppBasicAuthTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppBasicAuthTimeoutsOutputReference
 ```
@@ -2023,7 +2023,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/appbasicauth"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/appbasicauth"
 
 appbasicauth.NewAppBasicAuthUsersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppBasicAuthUsersList
 ```
@@ -2166,7 +2166,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/appbasicauth"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/appbasicauth"
 
 appbasicauth.NewAppBasicAuthUsersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppBasicAuthUsersOutputReference
 ```

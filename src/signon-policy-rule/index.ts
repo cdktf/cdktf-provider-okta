@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/r/signon_policy_rule
+// https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/signon_policy_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,23 +10,23 @@ export interface SignonPolicyRuleConfig extends cdktf.TerraformMetaArguments {
   /**
   * Allow or deny access based on the rule conditions: ALLOW, DENY or CHALLENGE.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule#access SignonPolicyRule#access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/signon_policy_rule#access SignonPolicyRule#access}
   */
   readonly access?: string;
   /**
   * Authentication entrypoint: ANY, RADIUS or LDAP_INTERFACE
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule#authtype SignonPolicyRule#authtype}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/signon_policy_rule#authtype SignonPolicyRule#authtype}
   */
   readonly authtype?: string;
   /**
   * List of behavior IDs
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule#behaviors SignonPolicyRule#behaviors}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/signon_policy_rule#behaviors SignonPolicyRule#behaviors}
   */
   readonly behaviors?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule#id SignonPolicyRule#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/signon_policy_rule#id SignonPolicyRule#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -35,127 +35,127 @@ export interface SignonPolicyRuleConfig extends cdktf.TerraformMetaArguments {
   /**
   * Apply rule based on the IdP used: ANY, OKTA or SPECIFIC_IDP.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule#identity_provider SignonPolicyRule#identity_provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/signon_policy_rule#identity_provider SignonPolicyRule#identity_provider}
   */
   readonly identityProvider?: string;
   /**
   * When identity_provider is SPECIFIC_IDP then this is the list of IdP IDs to apply the rule on
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule#identity_provider_ids SignonPolicyRule#identity_provider_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/signon_policy_rule#identity_provider_ids SignonPolicyRule#identity_provider_ids}
   */
   readonly identityProviderIds?: string[];
   /**
   * Elapsed time before the next MFA challenge
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule#mfa_lifetime SignonPolicyRule#mfa_lifetime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/signon_policy_rule#mfa_lifetime SignonPolicyRule#mfa_lifetime}
   */
   readonly mfaLifetime?: number;
   /**
   * Prompt for MFA based on the device used, a factor session lifetime, or every sign-on attempt: DEVICE, SESSION or ALWAYS
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule#mfa_prompt SignonPolicyRule#mfa_prompt}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/signon_policy_rule#mfa_prompt SignonPolicyRule#mfa_prompt}
   */
   readonly mfaPrompt?: string;
   /**
   * Remember MFA device.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule#mfa_remember_device SignonPolicyRule#mfa_remember_device}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/signon_policy_rule#mfa_remember_device SignonPolicyRule#mfa_remember_device}
   */
   readonly mfaRememberDevice?: boolean | cdktf.IResolvable;
   /**
   * Require MFA.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule#mfa_required SignonPolicyRule#mfa_required}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/signon_policy_rule#mfa_required SignonPolicyRule#mfa_required}
   */
   readonly mfaRequired?: boolean | cdktf.IResolvable;
   /**
   * Policy Rule Name
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule#name SignonPolicyRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/signon_policy_rule#name SignonPolicyRule#name}
   */
   readonly name: string;
   /**
   * Network selection mode: ANYWHERE, ZONE, ON_NETWORK, or OFF_NETWORK.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule#network_connection SignonPolicyRule#network_connection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/signon_policy_rule#network_connection SignonPolicyRule#network_connection}
   */
   readonly networkConnection?: string;
   /**
   * The zones to exclude
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule#network_excludes SignonPolicyRule#network_excludes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/signon_policy_rule#network_excludes SignonPolicyRule#network_excludes}
   */
   readonly networkExcludes?: string[];
   /**
   * The zones to include
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule#network_includes SignonPolicyRule#network_includes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/signon_policy_rule#network_includes SignonPolicyRule#network_includes}
   */
   readonly networkIncludes?: string[];
   /**
   * Policy ID of the Rule
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule#policy_id SignonPolicyRule#policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/signon_policy_rule#policy_id SignonPolicyRule#policy_id}
   */
   readonly policyId?: string;
   /**
   * Policy ID of the Rule
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule#policyid SignonPolicyRule#policyid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/signon_policy_rule#policyid SignonPolicyRule#policyid}
   */
   readonly policyid?: string;
   /**
   * Primary factor.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule#primary_factor SignonPolicyRule#primary_factor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/signon_policy_rule#primary_factor SignonPolicyRule#primary_factor}
   */
   readonly primaryFactor?: string;
   /**
   * Policy Rule Priority, this attribute can be set to a valid priority. To avoid endless diff situation we error if an invalid priority is provided. API defaults it to the last (lowest) if not there.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule#priority SignonPolicyRule#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/signon_policy_rule#priority SignonPolicyRule#priority}
   */
   readonly priority?: number;
   /**
   * Risc level: ANY, LOW, MEDIUM or HIGH
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule#risc_level SignonPolicyRule#risc_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/signon_policy_rule#risc_level SignonPolicyRule#risc_level}
   */
   readonly riscLevel?: string;
   /**
   * Max minutes a session can be idle.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule#session_idle SignonPolicyRule#session_idle}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/signon_policy_rule#session_idle SignonPolicyRule#session_idle}
   */
   readonly sessionIdle?: number;
   /**
   * Max minutes a session is active: Disable = 0.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule#session_lifetime SignonPolicyRule#session_lifetime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/signon_policy_rule#session_lifetime SignonPolicyRule#session_lifetime}
   */
   readonly sessionLifetime?: number;
   /**
   * Whether session cookies will last across browser sessions. Okta Administrators can never have persistent session cookies.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule#session_persistent SignonPolicyRule#session_persistent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/signon_policy_rule#session_persistent SignonPolicyRule#session_persistent}
   */
   readonly sessionPersistent?: boolean | cdktf.IResolvable;
   /**
   * Policy Rule Status: ACTIVE or INACTIVE.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule#status SignonPolicyRule#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/signon_policy_rule#status SignonPolicyRule#status}
   */
   readonly status?: string;
   /**
   * Set of User IDs to Exclude
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule#users_excluded SignonPolicyRule#users_excluded}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/signon_policy_rule#users_excluded SignonPolicyRule#users_excluded}
   */
   readonly usersExcluded?: string[];
   /**
   * factor_sequence block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule#factor_sequence SignonPolicyRule#factor_sequence}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/signon_policy_rule#factor_sequence SignonPolicyRule#factor_sequence}
   */
   readonly factorSequence?: SignonPolicyRuleFactorSequence[] | cdktf.IResolvable;
 }
@@ -163,13 +163,13 @@ export interface SignonPolicyRuleFactorSequenceSecondaryCriteria {
   /**
   * Type of a Factor
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule#factor_type SignonPolicyRule#factor_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/signon_policy_rule#factor_type SignonPolicyRule#factor_type}
   */
   readonly factorType: string;
   /**
   * Factor provider
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule#provider SignonPolicyRule#provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/signon_policy_rule#provider SignonPolicyRule#provider}
   */
   readonly provider: string;
 }
@@ -285,19 +285,19 @@ export interface SignonPolicyRuleFactorSequence {
   /**
   * Type of a Factor
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule#primary_criteria_factor_type SignonPolicyRule#primary_criteria_factor_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/signon_policy_rule#primary_criteria_factor_type SignonPolicyRule#primary_criteria_factor_type}
   */
   readonly primaryCriteriaFactorType: string;
   /**
   * Factor provider
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule#primary_criteria_provider SignonPolicyRule#primary_criteria_provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/signon_policy_rule#primary_criteria_provider SignonPolicyRule#primary_criteria_provider}
   */
   readonly primaryCriteriaProvider: string;
   /**
   * secondary_criteria block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule#secondary_criteria SignonPolicyRule#secondary_criteria}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/signon_policy_rule#secondary_criteria SignonPolicyRule#secondary_criteria}
   */
   readonly secondaryCriteria?: SignonPolicyRuleFactorSequenceSecondaryCriteria[] | cdktf.IResolvable;
 }
@@ -434,7 +434,7 @@ export class SignonPolicyRuleFactorSequenceList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule okta_signon_policy_rule}
+* Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/signon_policy_rule okta_signon_policy_rule}
 */
 export class SignonPolicyRule extends cdktf.TerraformResource {
 
@@ -448,7 +448,7 @@ export class SignonPolicyRule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/signon_policy_rule okta_signon_policy_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/signon_policy_rule okta_signon_policy_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

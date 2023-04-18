@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/r/group_roles
+// https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group_roles
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,17 +10,17 @@ export interface GroupRolesConfig extends cdktf.TerraformMetaArguments {
   /**
   * Admin roles associated with the group. This can also be done per user.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_roles#admin_roles GroupRoles#admin_roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group_roles#admin_roles GroupRoles#admin_roles}
   */
   readonly adminRoles?: string[];
   /**
   * ID of group to attach admin roles to
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_roles#group_id GroupRoles#group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group_roles#group_id GroupRoles#group_id}
   */
   readonly groupId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_roles#id GroupRoles#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group_roles#id GroupRoles#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -29,7 +29,7 @@ export interface GroupRolesConfig extends cdktf.TerraformMetaArguments {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/r/group_roles okta_group_roles}
+* Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group_roles okta_group_roles}
 */
 export class GroupRoles extends cdktf.TerraformResource {
 
@@ -43,7 +43,7 @@ export class GroupRoles extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/group_roles okta_group_roles} Resource
+  * Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group_roles okta_group_roles} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

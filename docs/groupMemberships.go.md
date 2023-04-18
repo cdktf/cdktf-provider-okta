@@ -1,6 +1,6 @@
 # `okta_group_memberships`
 
-Refer to the Terraform Registory for docs: [`okta_group_memberships`](https://www.terraform.io/docs/providers/okta/r/group_memberships).
+Refer to the Terraform Registory for docs: [`okta_group_memberships`](https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group_memberships).
 
 # `groupMemberships` Submodule <a name="`groupMemberships` Submodule" id="@cdktf/provider-okta.groupMemberships"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`okta_group_memberships`](https://ww
 
 ### GroupMemberships <a name="GroupMemberships" id="@cdktf/provider-okta.groupMemberships.GroupMemberships"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/group_memberships okta_group_memberships}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group_memberships okta_group_memberships}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.groupMemberships.GroupMemberships.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/groupmemberships"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/groupmemberships"
 
 groupmemberships.NewGroupMemberships(scope Construct, id *string, config GroupMembershipsConfig) GroupMemberships
 ```
@@ -284,7 +284,7 @@ func ResetTrackAllUsers()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.groupMemberships.GroupMemberships.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/groupmemberships"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/groupmemberships"
 
 groupmemberships.GroupMemberships_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.groupMemberships.GroupMemberships.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/groupmemberships"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/groupmemberships"
 
 groupmemberships.GroupMemberships_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ groupmemberships.GroupMemberships_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.groupMemberships.GroupMemberships.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/groupmemberships"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/groupmemberships"
 
 groupmemberships.GroupMemberships_IsTerraformResource(x interface{}) *bool
 ```
@@ -353,7 +353,7 @@ groupmemberships.GroupMemberships_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-okta.groupMemberships.GroupMemberships.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupMemberships.GroupMemberships.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupMemberships.GroupMemberships.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.groupMemberships.GroupMemberships.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.groupMemberships.GroupMemberships.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupMemberships.GroupMemberships.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupMemberships.GroupMemberships.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupMemberships.GroupMemberships.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -455,10 +455,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.groupMemberships.GroupMemberships.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -617,11 +617,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.groupMemberships.GroupMembershipsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/groupmemberships"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/groupmemberships"
 
 &groupmemberships.GroupMembershipsConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -639,7 +639,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/groupmemberships"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-okta.groupMemberships.GroupMembershipsConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.groupMemberships.GroupMembershipsConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.groupMemberships.GroupMembershipsConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupMemberships.GroupMembershipsConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupMemberships.GroupMembershipsConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupMemberships.GroupMembershipsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -647,7 +647,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/groupmemberships"
 | <code><a href="#@cdktf/provider-okta.groupMemberships.GroupMembershipsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupMemberships.GroupMembershipsConfig.property.groupId">GroupId</a></code> | <code>*string</code> | ID of a Okta group. |
 | <code><a href="#@cdktf/provider-okta.groupMemberships.GroupMembershipsConfig.property.users">Users</a></code> | <code>*[]*string</code> | The list of Okta user IDs which the group should have membership managed for. |
-| <code><a href="#@cdktf/provider-okta.groupMemberships.GroupMembershipsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_memberships#id GroupMemberships#id}. |
+| <code><a href="#@cdktf/provider-okta.groupMemberships.GroupMembershipsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group_memberships#id GroupMemberships#id}. |
 | <code><a href="#@cdktf/provider-okta.groupMemberships.GroupMembershipsConfig.property.trackAllUsers">TrackAllUsers</a></code> | <code>interface{}</code> | The resource concerns itself with all users added/deleted to the group; even those managed outside of the resource. |
 
 ---
@@ -665,10 +665,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.groupMemberships.GroupMembershipsConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -732,7 +732,7 @@ GroupId *string
 
 ID of a Okta group.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_memberships#group_id GroupMemberships#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group_memberships#group_id GroupMemberships#group_id}
 
 ---
 
@@ -746,7 +746,7 @@ Users *[]*string
 
 The list of Okta user IDs which the group should have membership managed for.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_memberships#users GroupMemberships#users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group_memberships#users GroupMemberships#users}
 
 ---
 
@@ -758,7 +758,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_memberships#id GroupMemberships#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group_memberships#id GroupMemberships#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -775,7 +775,7 @@ TrackAllUsers interface{}
 
 The resource concerns itself with all users added/deleted to the group; even those managed outside of the resource.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_memberships#track_all_users GroupMemberships#track_all_users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group_memberships#track_all_users GroupMemberships#track_all_users}
 
 ---
 

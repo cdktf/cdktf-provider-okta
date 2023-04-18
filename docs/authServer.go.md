@@ -1,6 +1,6 @@
 # `okta_auth_server`
 
-Refer to the Terraform Registory for docs: [`okta_auth_server`](https://www.terraform.io/docs/providers/okta/r/auth_server).
+Refer to the Terraform Registory for docs: [`okta_auth_server`](https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/auth_server).
 
 # `authServer` Submodule <a name="`authServer` Submodule" id="@cdktf/provider-okta.authServer"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`okta_auth_server`](https://www.terr
 
 ### AuthServer <a name="AuthServer" id="@cdktf/provider-okta.authServer.AuthServer"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/auth_server okta_auth_server}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/auth_server okta_auth_server}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.authServer.AuthServer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/authserver"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/authserver"
 
 authserver.NewAuthServer(scope Construct, id *string, config AuthServerConfig) AuthServer
 ```
@@ -305,7 +305,7 @@ func ResetStatus()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.authServer.AuthServer.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/authserver"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/authserver"
 
 authserver.AuthServer_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.authServer.AuthServer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/authserver"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/authserver"
 
 authserver.AuthServer_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ authserver.AuthServer_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.authServer.AuthServer.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/authserver"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/authserver"
 
 authserver.AuthServer_IsTerraformResource(x interface{}) *bool
 ```
@@ -374,7 +374,7 @@ authserver.AuthServer_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-okta.authServer.AuthServer.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.authServer.AuthServer.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.authServer.AuthServer.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.authServer.AuthServer.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.authServer.AuthServer.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.authServer.AuthServer.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.authServer.AuthServer.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.authServer.AuthServer.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -486,10 +486,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.authServer.AuthServer.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -748,11 +748,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.authServer.AuthServerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/authserver"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/authserver"
 
 &authserver.AuthServerConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -773,19 +773,19 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/authserver"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-okta.authServer.AuthServerConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.authServer.AuthServerConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.authServer.AuthServerConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.authServer.AuthServerConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.authServer.AuthServerConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.authServer.AuthServerConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.authServer.AuthServerConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.authServer.AuthServerConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.authServer.AuthServerConfig.property.audiences">Audiences</a></code> | <code>*[]*string</code> | Currently Okta only supports a single value here. |
-| <code><a href="#@cdktf/provider-okta.authServer.AuthServerConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server#name AuthServer#name}. |
+| <code><a href="#@cdktf/provider-okta.authServer.AuthServerConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/auth_server#name AuthServer#name}. |
 | <code><a href="#@cdktf/provider-okta.authServer.AuthServerConfig.property.credentialsRotationMode">CredentialsRotationMode</a></code> | <code>*string</code> | Credential rotation mode, in many cases you cannot set this to MANUAL, the API will ignore the value and you will get a perpetual diff. |
-| <code><a href="#@cdktf/provider-okta.authServer.AuthServerConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server#description AuthServer#description}. |
-| <code><a href="#@cdktf/provider-okta.authServer.AuthServerConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server#id AuthServer#id}. |
+| <code><a href="#@cdktf/provider-okta.authServer.AuthServerConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/auth_server#description AuthServer#description}. |
+| <code><a href="#@cdktf/provider-okta.authServer.AuthServerConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/auth_server#id AuthServer#id}. |
 | <code><a href="#@cdktf/provider-okta.authServer.AuthServerConfig.property.issuerMode">IssuerMode</a></code> | <code>*string</code> | *Early Access Property*. |
-| <code><a href="#@cdktf/provider-okta.authServer.AuthServerConfig.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server#status AuthServer#status}. |
+| <code><a href="#@cdktf/provider-okta.authServer.AuthServerConfig.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/auth_server#status AuthServer#status}. |
 
 ---
 
@@ -802,10 +802,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.authServer.AuthServerConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -869,7 +869,7 @@ Audiences *[]*string
 
 Currently Okta only supports a single value here.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server#audiences AuthServer#audiences}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/auth_server#audiences AuthServer#audiences}
 
 ---
 
@@ -881,7 +881,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server#name AuthServer#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/auth_server#name AuthServer#name}.
 
 ---
 
@@ -897,7 +897,7 @@ Credential rotation mode, in many cases you cannot set this to MANUAL, the API w
 
 This should rarely be used.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server#credentials_rotation_mode AuthServer#credentials_rotation_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/auth_server#credentials_rotation_mode AuthServer#credentials_rotation_mode}
 
 ---
 
@@ -909,7 +909,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server#description AuthServer#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/auth_server#description AuthServer#description}.
 
 ---
 
@@ -921,7 +921,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server#id AuthServer#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/auth_server#id AuthServer#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -940,7 +940,7 @@ IssuerMode *string
 
 Indicates which value is specified in the issuer of the tokens that a Custom Authorization Server returns: the original Okta org domain URL or a custom domain URL
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server#issuer_mode AuthServer#issuer_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/auth_server#issuer_mode AuthServer#issuer_mode}
 
 ---
 
@@ -952,7 +952,7 @@ Status *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/auth_server#status AuthServer#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/auth_server#status AuthServer#status}.
 
 ---
 

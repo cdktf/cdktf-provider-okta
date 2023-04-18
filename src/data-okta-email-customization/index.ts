@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/d/email_customization
+// https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/email_customization
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,25 +10,25 @@ export interface DataOktaEmailCustomizationConfig extends cdktf.TerraformMetaArg
   /**
   * Brand ID
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/email_customization#brand_id DataOktaEmailCustomization#brand_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/email_customization#brand_id DataOktaEmailCustomization#brand_id}
   */
   readonly brandId: string;
   /**
   * The ID of the customization
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/email_customization#customization_id DataOktaEmailCustomization#customization_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/email_customization#customization_id DataOktaEmailCustomization#customization_id}
   */
   readonly customizationId: string;
   /**
   * Template Name
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/email_customization#template_name DataOktaEmailCustomization#template_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/email_customization#template_name DataOktaEmailCustomization#template_name}
   */
   readonly templateName: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/d/email_customization okta_email_customization}
+* Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/email_customization okta_email_customization}
 */
 export class DataOktaEmailCustomization extends cdktf.TerraformDataSource {
 
@@ -42,7 +42,7 @@ export class DataOktaEmailCustomization extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/d/email_customization okta_email_customization} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/email_customization okta_email_customization} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

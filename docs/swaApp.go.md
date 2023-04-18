@@ -1,6 +1,6 @@
 # `okta_swa_app`
 
-Refer to the Terraform Registory for docs: [`okta_swa_app`](https://www.terraform.io/docs/providers/okta/r/swa_app).
+Refer to the Terraform Registory for docs: [`okta_swa_app`](https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app).
 
 # `swaApp` Submodule <a name="`swaApp` Submodule" id="@cdktf/provider-okta.swaApp"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`okta_swa_app`](https://www.terrafor
 
 ### SwaApp <a name="SwaApp" id="@cdktf/provider-okta.swaApp.SwaApp"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/swa_app okta_swa_app}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app okta_swa_app}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.swaApp.SwaApp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/swaapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/swaapp"
 
 swaapp.NewSwaApp(scope Construct, id *string, config SwaAppConfig) SwaApp
 ```
@@ -499,7 +499,7 @@ func ResetUsers()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.swaApp.SwaApp.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/swaapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/swaapp"
 
 swaapp.SwaApp_IsConstruct(x interface{}) *bool
 ```
@@ -531,7 +531,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.swaApp.SwaApp.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/swaapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/swaapp"
 
 swaapp.SwaApp_IsTerraformElement(x interface{}) *bool
 ```
@@ -545,7 +545,7 @@ swaapp.SwaApp_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.swaApp.SwaApp.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/swaapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/swaapp"
 
 swaapp.SwaApp_IsTerraformResource(x interface{}) *bool
 ```
@@ -568,7 +568,7 @@ swaapp.SwaApp_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-okta.swaApp.SwaApp.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.swaApp.SwaApp.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.swaApp.SwaApp.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.swaApp.SwaApp.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.swaApp.SwaApp.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.swaApp.SwaApp.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.swaApp.SwaApp.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.swaApp.SwaApp.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -725,10 +725,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.swaApp.SwaApp.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -1437,11 +1437,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.swaApp.SwaAppConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/swaapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/swaapp"
 
 &swaapp.SwaAppConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -1468,7 +1468,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/swaapp"
 	SkipGroups: interface{},
 	SkipUsers: interface{},
 	Status: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-okta-go/okta/v6.swaApp.SwaAppTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-okta-go/okta/v7.swaApp.SwaAppTimeouts,
 	Url: *string,
 	UrlRegex: *string,
 	UsernameField: *string,
@@ -1485,7 +1485,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/swaapp"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-okta.swaApp.SwaAppConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.swaApp.SwaAppConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.swaApp.SwaAppConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.swaApp.SwaAppConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.swaApp.SwaAppConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.swaApp.SwaAppConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -1504,7 +1504,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/swaapp"
 | <code><a href="#@cdktf/provider-okta.swaApp.SwaAppConfig.property.groups">Groups</a></code> | <code>*[]*string</code> | Groups associated with the application. |
 | <code><a href="#@cdktf/provider-okta.swaApp.SwaAppConfig.property.hideIos">HideIos</a></code> | <code>interface{}</code> | Do not display application icon on mobile app. |
 | <code><a href="#@cdktf/provider-okta.swaApp.SwaAppConfig.property.hideWeb">HideWeb</a></code> | <code>interface{}</code> | Do not display application icon to users. |
-| <code><a href="#@cdktf/provider-okta.swaApp.SwaAppConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#id SwaApp#id}. |
+| <code><a href="#@cdktf/provider-okta.swaApp.SwaAppConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app#id SwaApp#id}. |
 | <code><a href="#@cdktf/provider-okta.swaApp.SwaAppConfig.property.logo">Logo</a></code> | <code>*string</code> | Local path to logo of the application. |
 | <code><a href="#@cdktf/provider-okta.swaApp.SwaAppConfig.property.passwordField">PasswordField</a></code> | <code>*string</code> | Login password field. |
 | <code><a href="#@cdktf/provider-okta.swaApp.SwaAppConfig.property.preconfiguredApp">PreconfiguredApp</a></code> | <code>*string</code> | Preconfigured app name. |
@@ -1537,10 +1537,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.swaApp.SwaAppConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -1604,7 +1604,7 @@ Label *string
 
 Pretty name of app.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#label SwaApp#label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app#label SwaApp#label}
 
 ---
 
@@ -1618,7 +1618,7 @@ AccessibilityErrorRedirectUrl *string
 
 Custom error page URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#accessibility_error_redirect_url SwaApp#accessibility_error_redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app#accessibility_error_redirect_url SwaApp#accessibility_error_redirect_url}
 
 ---
 
@@ -1632,7 +1632,7 @@ AccessibilityLoginRedirectUrl *string
 
 Custom login page URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#accessibility_login_redirect_url SwaApp#accessibility_login_redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app#accessibility_login_redirect_url SwaApp#accessibility_login_redirect_url}
 
 ---
 
@@ -1646,7 +1646,7 @@ AccessibilitySelfService interface{}
 
 Enable self service.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#accessibility_self_service SwaApp#accessibility_self_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app#accessibility_self_service SwaApp#accessibility_self_service}
 
 ---
 
@@ -1660,7 +1660,7 @@ AdminNote *string
 
 Application notes for admins.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#admin_note SwaApp#admin_note}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app#admin_note SwaApp#admin_note}
 
 ---
 
@@ -1674,7 +1674,7 @@ AppLinksJson *string
 
 Displays specific appLinks for the app.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#app_links_json SwaApp#app_links_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app#app_links_json SwaApp#app_links_json}
 
 ---
 
@@ -1688,7 +1688,7 @@ AutoSubmitToolbar interface{}
 
 Display auto submit toolbar.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#auto_submit_toolbar SwaApp#auto_submit_toolbar}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app#auto_submit_toolbar SwaApp#auto_submit_toolbar}
 
 ---
 
@@ -1702,7 +1702,7 @@ ButtonField *string
 
 Login button field.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#button_field SwaApp#button_field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app#button_field SwaApp#button_field}
 
 ---
 
@@ -1716,7 +1716,7 @@ Checkbox *string
 
 CSS selector for the checkbox.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#checkbox SwaApp#checkbox}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app#checkbox SwaApp#checkbox}
 
 ---
 
@@ -1730,7 +1730,7 @@ EnduserNote *string
 
 Application notes for end users.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#enduser_note SwaApp#enduser_note}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app#enduser_note SwaApp#enduser_note}
 
 ---
 
@@ -1744,7 +1744,7 @@ Groups *[]*string
 
 Groups associated with the application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#groups SwaApp#groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app#groups SwaApp#groups}
 
 ---
 
@@ -1758,7 +1758,7 @@ HideIos interface{}
 
 Do not display application icon on mobile app.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#hide_ios SwaApp#hide_ios}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app#hide_ios SwaApp#hide_ios}
 
 ---
 
@@ -1772,7 +1772,7 @@ HideWeb interface{}
 
 Do not display application icon to users.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#hide_web SwaApp#hide_web}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app#hide_web SwaApp#hide_web}
 
 ---
 
@@ -1784,7 +1784,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#id SwaApp#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app#id SwaApp#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1801,7 +1801,7 @@ Logo *string
 
 Local path to logo of the application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#logo SwaApp#logo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app#logo SwaApp#logo}
 
 ---
 
@@ -1815,7 +1815,7 @@ PasswordField *string
 
 Login password field.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#password_field SwaApp#password_field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app#password_field SwaApp#password_field}
 
 ---
 
@@ -1829,7 +1829,7 @@ PreconfiguredApp *string
 
 Preconfigured app name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#preconfigured_app SwaApp#preconfigured_app}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app#preconfigured_app SwaApp#preconfigured_app}
 
 ---
 
@@ -1843,7 +1843,7 @@ RedirectUrl *string
 
 If going to the login page URL redirects to another page, then enter that URL here.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#redirect_url SwaApp#redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app#redirect_url SwaApp#redirect_url}
 
 ---
 
@@ -1857,7 +1857,7 @@ SkipGroups interface{}
 
 Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#skip_groups SwaApp#skip_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app#skip_groups SwaApp#skip_groups}
 
 ---
 
@@ -1871,7 +1871,7 @@ SkipUsers interface{}
 
 Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#skip_users SwaApp#skip_users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app#skip_users SwaApp#skip_users}
 
 ---
 
@@ -1885,7 +1885,7 @@ Status *string
 
 Status of application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#status SwaApp#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app#status SwaApp#status}
 
 ---
 
@@ -1899,7 +1899,7 @@ Timeouts SwaAppTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#timeouts SwaApp#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app#timeouts SwaApp#timeouts}
 
 ---
 
@@ -1913,7 +1913,7 @@ Url *string
 
 Login URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#url SwaApp#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app#url SwaApp#url}
 
 ---
 
@@ -1927,7 +1927,7 @@ UrlRegex *string
 
 A regex that further restricts URL to the specified regex.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#url_regex SwaApp#url_regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app#url_regex SwaApp#url_regex}
 
 ---
 
@@ -1941,7 +1941,7 @@ UsernameField *string
 
 Login username field.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#username_field SwaApp#username_field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app#username_field SwaApp#username_field}
 
 ---
 
@@ -1955,7 +1955,7 @@ UserNameTemplate *string
 
 Username template.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#user_name_template SwaApp#user_name_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app#user_name_template SwaApp#user_name_template}
 
 ---
 
@@ -1969,7 +1969,7 @@ UserNameTemplatePushStatus *string
 
 Push username on update.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#user_name_template_push_status SwaApp#user_name_template_push_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app#user_name_template_push_status SwaApp#user_name_template_push_status}
 
 ---
 
@@ -1983,7 +1983,7 @@ UserNameTemplateSuffix *string
 
 Username template suffix.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#user_name_template_suffix SwaApp#user_name_template_suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app#user_name_template_suffix SwaApp#user_name_template_suffix}
 
 ---
 
@@ -1997,7 +1997,7 @@ UserNameTemplateType *string
 
 Username template type.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#user_name_template_type SwaApp#user_name_template_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app#user_name_template_type SwaApp#user_name_template_type}
 
 ---
 
@@ -2011,7 +2011,7 @@ Users interface{}
 
 users block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#users SwaApp#users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app#users SwaApp#users}
 
 ---
 
@@ -2020,7 +2020,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.swaApp.SwaAppTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/swaapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/swaapp"
 
 &swaapp.SwaAppTimeouts {
 	Create: *string,
@@ -2033,9 +2033,9 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/swaapp"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.swaApp.SwaAppTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#create SwaApp#create}. |
-| <code><a href="#@cdktf/provider-okta.swaApp.SwaAppTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#read SwaApp#read}. |
-| <code><a href="#@cdktf/provider-okta.swaApp.SwaAppTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#update SwaApp#update}. |
+| <code><a href="#@cdktf/provider-okta.swaApp.SwaAppTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app#create SwaApp#create}. |
+| <code><a href="#@cdktf/provider-okta.swaApp.SwaAppTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app#read SwaApp#read}. |
+| <code><a href="#@cdktf/provider-okta.swaApp.SwaAppTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app#update SwaApp#update}. |
 
 ---
 
@@ -2047,7 +2047,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#create SwaApp#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app#create SwaApp#create}.
 
 ---
 
@@ -2059,7 +2059,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#read SwaApp#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app#read SwaApp#read}.
 
 ---
 
@@ -2071,7 +2071,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#update SwaApp#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app#update SwaApp#update}.
 
 ---
 
@@ -2080,7 +2080,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.swaApp.SwaAppUsers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/swaapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/swaapp"
 
 &swaapp.SwaAppUsers {
 	Id: *string,
@@ -2109,7 +2109,7 @@ Id *string
 
 User ID.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#id SwaApp#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app#id SwaApp#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2126,7 +2126,7 @@ Password *string
 
 Password for user application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#password SwaApp#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app#password SwaApp#password}
 
 ---
 
@@ -2140,7 +2140,7 @@ Username *string
 
 Username for user.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/swa_app#username SwaApp#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/swa_app#username SwaApp#username}
 
 ---
 
@@ -2151,7 +2151,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.swaApp.SwaAppTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/swaapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/swaapp"
 
 swaapp.NewSwaAppTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SwaAppTimeoutsOutputReference
 ```
@@ -2487,7 +2487,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.swaApp.SwaAppUsersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/swaapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/swaapp"
 
 swaapp.NewSwaAppUsersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SwaAppUsersList
 ```
@@ -2630,7 +2630,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.swaApp.SwaAppUsersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/swaapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/swaapp"
 
 swaapp.NewSwaAppUsersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SwaAppUsersOutputReference
 ```

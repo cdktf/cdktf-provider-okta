@@ -1,6 +1,6 @@
 # `okta_group_role`
 
-Refer to the Terraform Registory for docs: [`okta_group_role`](https://www.terraform.io/docs/providers/okta/r/group_role).
+Refer to the Terraform Registory for docs: [`okta_group_role`](https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group_role).
 
 # `groupRole` Submodule <a name="`groupRole` Submodule" id="@cdktf/provider-okta.groupRole"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_group_role`](https://www.terra
 
 ### GroupRole <a name="GroupRole" id="@cdktf/provider-okta.groupRole.GroupRole"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/group_role okta_group_role}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group_role okta_group_role}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.groupRole.GroupRole.Initializer"></a>
 
@@ -19,6 +19,7 @@ GroupRole.Builder.create(Construct scope, java.lang.String id)
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -41,7 +42,7 @@ GroupRole.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-okta.groupRole.GroupRole.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-okta.groupRole.GroupRole.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-okta.groupRole.GroupRole.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.groupRole.GroupRole.Initializer.parameter.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.groupRole.GroupRole.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRole.GroupRole.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRole.GroupRole.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRole.GroupRole.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -50,7 +51,7 @@ GroupRole.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-okta.groupRole.GroupRole.Initializer.parameter.groupId">groupId</a></code> | <code>java.lang.String</code> | ID of group to attach admin roles to. |
 | <code><a href="#@cdktf/provider-okta.groupRole.GroupRole.Initializer.parameter.roleType">roleType</a></code> | <code>java.lang.String</code> | Type of Role to assign. |
 | <code><a href="#@cdktf/provider-okta.groupRole.GroupRole.Initializer.parameter.disableNotifications">disableNotifications</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | When this setting is enabled, the admins won't receive any of the default Okta administrator emails. |
-| <code><a href="#@cdktf/provider-okta.groupRole.GroupRole.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_role#id GroupRole#id}. |
+| <code><a href="#@cdktf/provider-okta.groupRole.GroupRole.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group_role#id GroupRole#id}. |
 | <code><a href="#@cdktf/provider-okta.groupRole.GroupRole.Initializer.parameter.targetAppList">targetAppList</a></code> | <code>java.util.List<java.lang.String></code> | List of apps ids for the targets of the admin role. |
 | <code><a href="#@cdktf/provider-okta.groupRole.GroupRole.Initializer.parameter.targetGroupList">targetGroupList</a></code> | <code>java.util.List<java.lang.String></code> | List of groups ids for the targets of the admin role. |
 
@@ -82,7 +83,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.groupRole.GroupRole.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -122,7 +123,7 @@ Must be unique amongst siblings in the same scope
 
 ID of group to attach admin roles to.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_role#group_id GroupRole#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group_role#group_id GroupRole#group_id}
 
 ---
 
@@ -132,7 +133,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 Type of Role to assign.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_role#role_type GroupRole#role_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group_role#role_type GroupRole#role_type}
 
 ---
 
@@ -142,7 +143,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 When this setting is enabled, the admins won't receive any of the default Okta administrator emails.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_role#disable_notifications GroupRole#disable_notifications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group_role#disable_notifications GroupRole#disable_notifications}
 
 ---
 
@@ -150,7 +151,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_role#id GroupRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group_role#id GroupRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -163,7 +164,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 List of apps ids for the targets of the admin role.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_role#target_app_list GroupRole#target_app_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group_role#target_app_list GroupRole#target_app_list}
 
 ---
 
@@ -173,7 +174,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 List of groups ids for the targets of the admin role.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_role#target_group_list GroupRole#target_group_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group_role#target_group_list GroupRole#target_group_list}
 
 ---
 
@@ -494,7 +495,7 @@ GroupRole.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-okta.groupRole.GroupRole.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRole.GroupRole.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRole.GroupRole.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.groupRole.GroupRole.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.groupRole.GroupRole.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRole.GroupRole.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRole.GroupRole.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRole.GroupRole.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -600,10 +601,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.groupRole.GroupRole.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -808,6 +809,7 @@ GroupRoleConfig.builder()
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -830,7 +832,7 @@ GroupRoleConfig.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-okta.groupRole.GroupRoleConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.groupRole.GroupRoleConfig.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.groupRole.GroupRoleConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRole.GroupRoleConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRole.GroupRoleConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRole.GroupRoleConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -839,7 +841,7 @@ GroupRoleConfig.builder()
 | <code><a href="#@cdktf/provider-okta.groupRole.GroupRoleConfig.property.groupId">groupId</a></code> | <code>java.lang.String</code> | ID of group to attach admin roles to. |
 | <code><a href="#@cdktf/provider-okta.groupRole.GroupRoleConfig.property.roleType">roleType</a></code> | <code>java.lang.String</code> | Type of Role to assign. |
 | <code><a href="#@cdktf/provider-okta.groupRole.GroupRoleConfig.property.disableNotifications">disableNotifications</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | When this setting is enabled, the admins won't receive any of the default Okta administrator emails. |
-| <code><a href="#@cdktf/provider-okta.groupRole.GroupRoleConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_role#id GroupRole#id}. |
+| <code><a href="#@cdktf/provider-okta.groupRole.GroupRoleConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group_role#id GroupRole#id}. |
 | <code><a href="#@cdktf/provider-okta.groupRole.GroupRoleConfig.property.targetAppList">targetAppList</a></code> | <code>java.util.List<java.lang.String></code> | List of apps ids for the targets of the admin role. |
 | <code><a href="#@cdktf/provider-okta.groupRole.GroupRoleConfig.property.targetGroupList">targetGroupList</a></code> | <code>java.util.List<java.lang.String></code> | List of groups ids for the targets of the admin role. |
 
@@ -858,10 +860,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.groupRole.GroupRoleConfig.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -925,7 +927,7 @@ public java.lang.String getGroupId();
 
 ID of group to attach admin roles to.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_role#group_id GroupRole#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group_role#group_id GroupRole#group_id}
 
 ---
 
@@ -939,7 +941,7 @@ public java.lang.String getRoleType();
 
 Type of Role to assign.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_role#role_type GroupRole#role_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group_role#role_type GroupRole#role_type}
 
 ---
 
@@ -953,7 +955,7 @@ public java.lang.Object getDisableNotifications();
 
 When this setting is enabled, the admins won't receive any of the default Okta administrator emails.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_role#disable_notifications GroupRole#disable_notifications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group_role#disable_notifications GroupRole#disable_notifications}
 
 ---
 
@@ -965,7 +967,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_role#id GroupRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group_role#id GroupRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -982,7 +984,7 @@ public java.util.List<java.lang.String> getTargetAppList();
 
 List of apps ids for the targets of the admin role.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_role#target_app_list GroupRole#target_app_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group_role#target_app_list GroupRole#target_app_list}
 
 ---
 
@@ -996,7 +998,7 @@ public java.util.List<java.lang.String> getTargetGroupList();
 
 List of groups ids for the targets of the admin role.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group_role#target_group_list GroupRole#target_group_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group_role#target_group_list GroupRole#target_group_list}
 
 ---
 

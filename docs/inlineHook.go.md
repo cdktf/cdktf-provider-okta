@@ -1,6 +1,6 @@
 # `okta_inline_hook`
 
-Refer to the Terraform Registory for docs: [`okta_inline_hook`](https://www.terraform.io/docs/providers/okta/r/inline_hook).
+Refer to the Terraform Registory for docs: [`okta_inline_hook`](https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/inline_hook).
 
 # `inlineHook` Submodule <a name="`inlineHook` Submodule" id="@cdktf/provider-okta.inlineHook"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`okta_inline_hook`](https://www.terr
 
 ### InlineHook <a name="InlineHook" id="@cdktf/provider-okta.inlineHook.InlineHook"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/inline_hook okta_inline_hook}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/inline_hook okta_inline_hook}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.inlineHook.InlineHook.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/inlinehook"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/inlinehook"
 
 inlinehook.NewInlineHook(scope Construct, id *string, config InlineHookConfig) InlineHook
 ```
@@ -311,7 +311,7 @@ func ResetStatus()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.inlineHook.InlineHook.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/inlinehook"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/inlinehook"
 
 inlinehook.InlineHook_IsConstruct(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.inlineHook.InlineHook.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/inlinehook"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/inlinehook"
 
 inlinehook.InlineHook_IsTerraformElement(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ inlinehook.InlineHook_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.inlineHook.InlineHook.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/inlinehook"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/inlinehook"
 
 inlinehook.InlineHook_IsTerraformResource(x interface{}) *bool
 ```
@@ -380,7 +380,7 @@ inlinehook.InlineHook_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-okta.inlineHook.InlineHook.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.inlineHook.InlineHook.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.inlineHook.InlineHook.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.inlineHook.InlineHook.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.inlineHook.InlineHook.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.inlineHook.InlineHook.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.inlineHook.InlineHook.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.inlineHook.InlineHook.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -490,10 +490,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.inlineHook.InlineHook.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -732,11 +732,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.inlineHook.InlineHookConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/inlinehook"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/inlinehook"
 
 &inlinehook.InlineHookConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -758,20 +758,20 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/inlinehook"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-okta.inlineHook.InlineHookConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.inlineHook.InlineHookConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.inlineHook.InlineHookConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.inlineHook.InlineHookConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.inlineHook.InlineHookConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.inlineHook.InlineHookConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.inlineHook.InlineHookConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.inlineHook.InlineHookConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.inlineHook.InlineHookConfig.property.channel">Channel</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook#channel InlineHook#channel}. |
-| <code><a href="#@cdktf/provider-okta.inlineHook.InlineHookConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook#name InlineHook#name}. |
-| <code><a href="#@cdktf/provider-okta.inlineHook.InlineHookConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook#type InlineHook#type}. |
-| <code><a href="#@cdktf/provider-okta.inlineHook.InlineHookConfig.property.version">Version</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook#version InlineHook#version}. |
-| <code><a href="#@cdktf/provider-okta.inlineHook.InlineHookConfig.property.auth">Auth</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook#auth InlineHook#auth}. |
+| <code><a href="#@cdktf/provider-okta.inlineHook.InlineHookConfig.property.channel">Channel</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/inline_hook#channel InlineHook#channel}. |
+| <code><a href="#@cdktf/provider-okta.inlineHook.InlineHookConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/inline_hook#name InlineHook#name}. |
+| <code><a href="#@cdktf/provider-okta.inlineHook.InlineHookConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/inline_hook#type InlineHook#type}. |
+| <code><a href="#@cdktf/provider-okta.inlineHook.InlineHookConfig.property.version">Version</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/inline_hook#version InlineHook#version}. |
+| <code><a href="#@cdktf/provider-okta.inlineHook.InlineHookConfig.property.auth">Auth</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/inline_hook#auth InlineHook#auth}. |
 | <code><a href="#@cdktf/provider-okta.inlineHook.InlineHookConfig.property.headers">Headers</a></code> | <code>interface{}</code> | headers block. |
-| <code><a href="#@cdktf/provider-okta.inlineHook.InlineHookConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook#id InlineHook#id}. |
-| <code><a href="#@cdktf/provider-okta.inlineHook.InlineHookConfig.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook#status InlineHook#status}. |
+| <code><a href="#@cdktf/provider-okta.inlineHook.InlineHookConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/inline_hook#id InlineHook#id}. |
+| <code><a href="#@cdktf/provider-okta.inlineHook.InlineHookConfig.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/inline_hook#status InlineHook#status}. |
 
 ---
 
@@ -788,10 +788,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.inlineHook.InlineHookConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -853,7 +853,7 @@ Channel *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook#channel InlineHook#channel}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/inline_hook#channel InlineHook#channel}.
 
 ---
 
@@ -865,7 +865,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook#name InlineHook#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/inline_hook#name InlineHook#name}.
 
 ---
 
@@ -877,7 +877,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook#type InlineHook#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/inline_hook#type InlineHook#type}.
 
 ---
 
@@ -889,7 +889,7 @@ Version *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook#version InlineHook#version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/inline_hook#version InlineHook#version}.
 
 ---
 
@@ -901,7 +901,7 @@ Auth *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook#auth InlineHook#auth}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/inline_hook#auth InlineHook#auth}.
 
 ---
 
@@ -915,7 +915,7 @@ Headers interface{}
 
 headers block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook#headers InlineHook#headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/inline_hook#headers InlineHook#headers}
 
 ---
 
@@ -927,7 +927,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook#id InlineHook#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/inline_hook#id InlineHook#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -942,7 +942,7 @@ Status *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook#status InlineHook#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/inline_hook#status InlineHook#status}.
 
 ---
 
@@ -951,7 +951,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.inlineHook.InlineHookHeaders.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/inlinehook"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/inlinehook"
 
 &inlinehook.InlineHookHeaders {
 	Key: *string,
@@ -963,8 +963,8 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/inlinehook"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.inlineHook.InlineHookHeaders.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook#key InlineHook#key}. |
-| <code><a href="#@cdktf/provider-okta.inlineHook.InlineHookHeaders.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook#value InlineHook#value}. |
+| <code><a href="#@cdktf/provider-okta.inlineHook.InlineHookHeaders.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/inline_hook#key InlineHook#key}. |
+| <code><a href="#@cdktf/provider-okta.inlineHook.InlineHookHeaders.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/inline_hook#value InlineHook#value}. |
 
 ---
 
@@ -976,7 +976,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook#key InlineHook#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/inline_hook#key InlineHook#key}.
 
 ---
 
@@ -988,7 +988,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/inline_hook#value InlineHook#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/inline_hook#value InlineHook#value}.
 
 ---
 
@@ -999,7 +999,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.inlineHook.InlineHookHeadersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/inlinehook"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/inlinehook"
 
 inlinehook.NewInlineHookHeadersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) InlineHookHeadersList
 ```
@@ -1142,7 +1142,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.inlineHook.InlineHookHeadersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/inlinehook"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/inlinehook"
 
 inlinehook.NewInlineHookHeadersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) InlineHookHeadersOutputReference
 ```

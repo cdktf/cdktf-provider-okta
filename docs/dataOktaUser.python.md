@@ -1,6 +1,6 @@
 # `data_okta_user`
 
-Refer to the Terraform Registory for docs: [`data_okta_user`](https://www.terraform.io/docs/providers/okta/d/user).
+Refer to the Terraform Registory for docs: [`data_okta_user`](https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/user).
 
 # `dataOktaUser` Submodule <a name="`dataOktaUser` Submodule" id="@cdktf/provider-okta.dataOktaUser"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_okta_user`](https://www.terraf
 
 ### DataOktaUser <a name="DataOktaUser" id="@cdktf/provider-okta.dataOktaUser.DataOktaUser"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/d/user okta_user}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/user okta_user}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaUser.DataOktaUser.Initializer"></a>
 
@@ -19,7 +19,7 @@ dataOktaUser.DataOktaUser(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -40,7 +40,7 @@ dataOktaUser.DataOktaUser(
 | <code><a href="#@cdktf/provider-okta.dataOktaUser.DataOktaUser.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-okta.dataOktaUser.DataOktaUser.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-okta.dataOktaUser.DataOktaUser.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.dataOktaUser.DataOktaUser.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.dataOktaUser.DataOktaUser.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaUser.DataOktaUser.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaUser.DataOktaUser.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaUser.DataOktaUser.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -48,7 +48,7 @@ dataOktaUser.DataOktaUser(
 | <code><a href="#@cdktf/provider-okta.dataOktaUser.DataOktaUser.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaUser.DataOktaUser.Initializer.parameter.compoundSearchOperator">compound_search_operator</a></code> | <code>str</code> | Search operator used when joining mulitple search clauses. |
 | <code><a href="#@cdktf/provider-okta.dataOktaUser.DataOktaUser.Initializer.parameter.delayReadSeconds">delay_read_seconds</a></code> | <code>str</code> | Force delay of the user read by N seconds. |
-| <code><a href="#@cdktf/provider-okta.dataOktaUser.DataOktaUser.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/user#id DataOktaUser#id}. |
+| <code><a href="#@cdktf/provider-okta.dataOktaUser.DataOktaUser.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/user#id DataOktaUser#id}. |
 | <code><a href="#@cdktf/provider-okta.dataOktaUser.DataOktaUser.Initializer.parameter.search">search</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.dataOktaUser.DataOktaUserSearch">DataOktaUserSearch</a>]]</code> | search block. |
 | <code><a href="#@cdktf/provider-okta.dataOktaUser.DataOktaUser.Initializer.parameter.skipGroups">skip_groups</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Do not populate user groups information (prevents additional API call). |
 | <code><a href="#@cdktf/provider-okta.dataOktaUser.DataOktaUser.Initializer.parameter.skipRoles">skip_roles</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Do not populate user roles information (prevents additional API call). |
@@ -82,7 +82,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.dataOktaUser.DataOktaUser.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -122,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 Search operator used when joining mulitple search clauses.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/user#compound_search_operator DataOktaUser#compound_search_operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/user#compound_search_operator DataOktaUser#compound_search_operator}
 
 ---
 
@@ -134,7 +134,7 @@ Force delay of the user read by N seconds.
 
 Useful when eventual consistency of user information needs to be allowed for.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/user#delay_read_seconds DataOktaUser#delay_read_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/user#delay_read_seconds DataOktaUser#delay_read_seconds}
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/user#id DataOktaUser#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/user#id DataOktaUser#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -155,7 +155,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 search block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/user#search DataOktaUser#search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/user#search DataOktaUser#search}
 
 ---
 
@@ -165,7 +165,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 Do not populate user groups information (prevents additional API call).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/user#skip_groups DataOktaUser#skip_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/user#skip_groups DataOktaUser#skip_groups}
 
 ---
 
@@ -175,7 +175,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 Do not populate user roles information (prevents additional API call).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/user#skip_roles DataOktaUser#skip_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/user#skip_roles DataOktaUser#skip_roles}
 
 ---
 
@@ -185,7 +185,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 Retrieve a single user based on their id.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/user#user_id DataOktaUser#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/user#user_id DataOktaUser#user_id}
 
 ---
 
@@ -572,7 +572,7 @@ dataOktaUser.DataOktaUser.is_terraform_data_source(
 | <code><a href="#@cdktf/provider-okta.dataOktaUser.DataOktaUser.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaUser.DataOktaUser.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaUser.DataOktaUser.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.dataOktaUser.DataOktaUser.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.dataOktaUser.DataOktaUser.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaUser.DataOktaUser.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaUser.DataOktaUser.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaUser.DataOktaUser.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -705,10 +705,10 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.dataOktaUser.DataOktaUser.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -1281,7 +1281,7 @@ from cdktf_cdktf_provider_okta import data_okta_user
 
 dataOktaUser.DataOktaUserConfig(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -1302,7 +1302,7 @@ dataOktaUser.DataOktaUserConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-okta.dataOktaUser.DataOktaUserConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.dataOktaUser.DataOktaUserConfig.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.dataOktaUser.DataOktaUserConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaUser.DataOktaUserConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaUser.DataOktaUserConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaUser.DataOktaUserConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -1310,7 +1310,7 @@ dataOktaUser.DataOktaUserConfig(
 | <code><a href="#@cdktf/provider-okta.dataOktaUser.DataOktaUserConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaUser.DataOktaUserConfig.property.compoundSearchOperator">compound_search_operator</a></code> | <code>str</code> | Search operator used when joining mulitple search clauses. |
 | <code><a href="#@cdktf/provider-okta.dataOktaUser.DataOktaUserConfig.property.delayReadSeconds">delay_read_seconds</a></code> | <code>str</code> | Force delay of the user read by N seconds. |
-| <code><a href="#@cdktf/provider-okta.dataOktaUser.DataOktaUserConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/user#id DataOktaUser#id}. |
+| <code><a href="#@cdktf/provider-okta.dataOktaUser.DataOktaUserConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/user#id DataOktaUser#id}. |
 | <code><a href="#@cdktf/provider-okta.dataOktaUser.DataOktaUserConfig.property.search">search</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.dataOktaUser.DataOktaUserSearch">DataOktaUserSearch</a>]]</code> | search block. |
 | <code><a href="#@cdktf/provider-okta.dataOktaUser.DataOktaUserConfig.property.skipGroups">skip_groups</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Do not populate user groups information (prevents additional API call). |
 | <code><a href="#@cdktf/provider-okta.dataOktaUser.DataOktaUserConfig.property.skipRoles">skip_roles</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Do not populate user roles information (prevents additional API call). |
@@ -1331,10 +1331,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.dataOktaUser.DataOktaUserConfig.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -1398,7 +1398,7 @@ compound_search_operator: str
 
 Search operator used when joining mulitple search clauses.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/user#compound_search_operator DataOktaUser#compound_search_operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/user#compound_search_operator DataOktaUser#compound_search_operator}
 
 ---
 
@@ -1414,7 +1414,7 @@ Force delay of the user read by N seconds.
 
 Useful when eventual consistency of user information needs to be allowed for.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/user#delay_read_seconds DataOktaUser#delay_read_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/user#delay_read_seconds DataOktaUser#delay_read_seconds}
 
 ---
 
@@ -1426,7 +1426,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/user#id DataOktaUser#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/user#id DataOktaUser#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1443,7 +1443,7 @@ search: typing.Union[IResolvable, typing.List[DataOktaUserSearch]]
 
 search block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/user#search DataOktaUser#search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/user#search DataOktaUser#search}
 
 ---
 
@@ -1457,7 +1457,7 @@ skip_groups: typing.Union[bool, IResolvable]
 
 Do not populate user groups information (prevents additional API call).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/user#skip_groups DataOktaUser#skip_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/user#skip_groups DataOktaUser#skip_groups}
 
 ---
 
@@ -1471,7 +1471,7 @@ skip_roles: typing.Union[bool, IResolvable]
 
 Do not populate user roles information (prevents additional API call).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/user#skip_roles DataOktaUser#skip_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/user#skip_roles DataOktaUser#skip_roles}
 
 ---
 
@@ -1485,7 +1485,7 @@ user_id: str
 
 Retrieve a single user based on their id.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/user#user_id DataOktaUser#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/user#user_id DataOktaUser#user_id}
 
 ---
 
@@ -1508,10 +1508,10 @@ dataOktaUser.DataOktaUserSearch(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.dataOktaUser.DataOktaUserSearch.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/user#comparison DataOktaUser#comparison}. |
+| <code><a href="#@cdktf/provider-okta.dataOktaUser.DataOktaUserSearch.property.comparison">comparison</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/user#comparison DataOktaUser#comparison}. |
 | <code><a href="#@cdktf/provider-okta.dataOktaUser.DataOktaUserSearch.property.expression">expression</a></code> | <code>str</code> | A raw search expression string. |
 | <code><a href="#@cdktf/provider-okta.dataOktaUser.DataOktaUserSearch.property.name">name</a></code> | <code>str</code> | Property name to search for. |
-| <code><a href="#@cdktf/provider-okta.dataOktaUser.DataOktaUserSearch.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/user#value DataOktaUser#value}. |
+| <code><a href="#@cdktf/provider-okta.dataOktaUser.DataOktaUserSearch.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/user#value DataOktaUser#value}. |
 
 ---
 
@@ -1523,7 +1523,7 @@ comparison: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/user#comparison DataOktaUser#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/user#comparison DataOktaUser#comparison}.
 
 ---
 
@@ -1539,7 +1539,7 @@ A raw search expression string.
 
 This requires the search feature be on. Please see Okta documentation on their filter API for users. https://developer.okta.com/docs/api/resources/users#list-users-with-search
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/user#expression DataOktaUser#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/user#expression DataOktaUser#expression}
 
 ---
 
@@ -1555,7 +1555,7 @@ Property name to search for.
 
 This requires the search feature be on. Please see Okta documentation on their filter API for users. https://developer.okta.com/docs/api/resources/users#list-users-with-search
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/user#name DataOktaUser#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/user#name DataOktaUser#name}
 
 ---
 
@@ -1567,7 +1567,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/user#value DataOktaUser#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/user#value DataOktaUser#value}.
 
 ---
 

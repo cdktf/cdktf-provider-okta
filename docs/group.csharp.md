@@ -1,6 +1,6 @@
 # `okta_group`
 
-Refer to the Terraform Registory for docs: [`okta_group`](https://www.terraform.io/docs/providers/okta/r/group).
+Refer to the Terraform Registory for docs: [`okta_group`](https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group).
 
 # `group` Submodule <a name="`group` Submodule" id="@cdktf/provider-okta.group"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_group`](https://www.terraform.
 
 ### Group <a name="Group" id="@cdktf/provider-okta.group.Group"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/group okta_group}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group okta_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.group.Group.Initializer"></a>
 
@@ -374,7 +374,7 @@ Group.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-okta.group.Group.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.group.Group.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.group.Group.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.group.Group.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.group.Group.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.group.Group.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.group.Group.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.group.Group.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -480,10 +480,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.group.Group.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -686,7 +686,7 @@ using HashiCorp.Cdktf.Providers.Okta;
 
 new GroupConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -706,7 +706,7 @@ new GroupConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-okta.group.GroupConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.group.GroupConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.group.GroupConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.group.GroupConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.group.GroupConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.group.GroupConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -715,7 +715,7 @@ new GroupConfig {
 | <code><a href="#@cdktf/provider-okta.group.GroupConfig.property.name">Name</a></code> | <code>string</code> | Group name. |
 | <code><a href="#@cdktf/provider-okta.group.GroupConfig.property.customProfileAttributes">CustomProfileAttributes</a></code> | <code>string</code> | JSON formatted custom attributes for a group. It must be JSON due to various types Okta allows. |
 | <code><a href="#@cdktf/provider-okta.group.GroupConfig.property.description">Description</a></code> | <code>string</code> | Group description. |
-| <code><a href="#@cdktf/provider-okta.group.GroupConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group#id Group#id}. |
+| <code><a href="#@cdktf/provider-okta.group.GroupConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group#id Group#id}. |
 | <code><a href="#@cdktf/provider-okta.group.GroupConfig.property.skipUsers">SkipUsers</a></code> | <code>object</code> | Ignore users sync. This is a temporary solution until 'users' field is supported in this resource. |
 | <code><a href="#@cdktf/provider-okta.group.GroupConfig.property.users">Users</a></code> | <code>string[]</code> | Users associated with the group. This can also be done per user. |
 
@@ -734,10 +734,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.group.GroupConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -801,7 +801,7 @@ public string Name { get; set; }
 
 Group name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group#name Group#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group#name Group#name}
 
 ---
 
@@ -815,7 +815,7 @@ public string CustomProfileAttributes { get; set; }
 
 JSON formatted custom attributes for a group. It must be JSON due to various types Okta allows.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group#custom_profile_attributes Group#custom_profile_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group#custom_profile_attributes Group#custom_profile_attributes}
 
 ---
 
@@ -829,7 +829,7 @@ public string Description { get; set; }
 
 Group description.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group#description Group#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group#description Group#description}
 
 ---
 
@@ -841,7 +841,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group#id Group#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group#id Group#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -858,7 +858,7 @@ public object SkipUsers { get; set; }
 
 Ignore users sync. This is a temporary solution until 'users' field is supported in this resource.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group#skip_users Group#skip_users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group#skip_users Group#skip_users}
 
 ---
 
@@ -872,7 +872,7 @@ public string[] Users { get; set; }
 
 Users associated with the group. This can also be done per user.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/group#users Group#users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group#users Group#users}
 
 ---
 

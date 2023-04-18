@@ -1,6 +1,6 @@
 # `okta_app_three_field`
 
-Refer to the Terraform Registory for docs: [`okta_app_three_field`](https://www.terraform.io/docs/providers/okta/r/app_three_field).
+Refer to the Terraform Registory for docs: [`okta_app_three_field`](https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field).
 
 # `appThreeField` Submodule <a name="`appThreeField` Submodule" id="@cdktf/provider-okta.appThreeField"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_app_three_field`](https://www.
 
 ### AppThreeField <a name="AppThreeField" id="@cdktf/provider-okta.appThreeField.AppThreeField"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/app_three_field okta_app_three_field}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field okta_app_three_field}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appThreeField.AppThreeField.Initializer"></a>
 
@@ -19,6 +19,7 @@ AppThreeField.Builder.create(Construct scope, java.lang.String id)
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -75,7 +76,7 @@ AppThreeField.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.Initializer.parameter.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -99,7 +100,7 @@ AppThreeField.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.Initializer.parameter.groups">groups</a></code> | <code>java.util.List<java.lang.String></code> | Groups associated with the application. |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.Initializer.parameter.hideIos">hideIos</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Do not display application icon on mobile app. |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.Initializer.parameter.hideWeb">hideWeb</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Do not display application icon to users. |
-| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#id AppThreeField#id}. |
+| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#id AppThreeField#id}. |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.Initializer.parameter.logo">logo</a></code> | <code>java.lang.String</code> | Local path to logo of the application. |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.Initializer.parameter.revealPassword">revealPassword</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Allow user to reveal password. |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.Initializer.parameter.sharedPassword">sharedPassword</a></code> | <code>java.lang.String</code> | Shared password, required for certain schemes. |
@@ -143,7 +144,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.appThreeField.AppThreeField.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -183,7 +184,7 @@ Must be unique amongst siblings in the same scope
 
 Login button field CSS selector.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#button_selector AppThreeField#button_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#button_selector AppThreeField#button_selector}
 
 ---
 
@@ -193,7 +194,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 Extra field CSS selector.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#extra_field_selector AppThreeField#extra_field_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#extra_field_selector AppThreeField#extra_field_selector}
 
 ---
 
@@ -203,7 +204,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 Value for extra form field.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#extra_field_value AppThreeField#extra_field_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#extra_field_value AppThreeField#extra_field_value}
 
 ---
 
@@ -213,7 +214,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 Pretty name of app.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#label AppThreeField#label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#label AppThreeField#label}
 
 ---
 
@@ -223,7 +224,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 Login password field CSS selector.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#password_selector AppThreeField#password_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#password_selector AppThreeField#password_selector}
 
 ---
 
@@ -233,7 +234,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 Login URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#url AppThreeField#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#url AppThreeField#url}
 
 ---
 
@@ -243,7 +244,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 Login username field CSS selector.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#username_selector AppThreeField#username_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#username_selector AppThreeField#username_selector}
 
 ---
 
@@ -253,7 +254,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 Custom error page URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#accessibility_error_redirect_url AppThreeField#accessibility_error_redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#accessibility_error_redirect_url AppThreeField#accessibility_error_redirect_url}
 
 ---
 
@@ -263,7 +264,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 Custom login page URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#accessibility_login_redirect_url AppThreeField#accessibility_login_redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#accessibility_login_redirect_url AppThreeField#accessibility_login_redirect_url}
 
 ---
 
@@ -273,7 +274,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 Enable self service.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#accessibility_self_service AppThreeField#accessibility_self_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#accessibility_self_service AppThreeField#accessibility_self_service}
 
 ---
 
@@ -283,7 +284,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 Application notes for admins.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#admin_note AppThreeField#admin_note}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#admin_note AppThreeField#admin_note}
 
 ---
 
@@ -293,7 +294,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 Displays specific appLinks for the app.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#app_links_json AppThreeField#app_links_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#app_links_json AppThreeField#app_links_json}
 
 ---
 
@@ -303,7 +304,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 Display auto submit toolbar.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#auto_submit_toolbar AppThreeField#auto_submit_toolbar}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#auto_submit_toolbar AppThreeField#auto_submit_toolbar}
 
 ---
 
@@ -313,7 +314,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 Application credentials scheme.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#credentials_scheme AppThreeField#credentials_scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#credentials_scheme AppThreeField#credentials_scheme}
 
 ---
 
@@ -323,7 +324,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 Application notes for end users.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#enduser_note AppThreeField#enduser_note}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#enduser_note AppThreeField#enduser_note}
 
 ---
 
@@ -333,7 +334,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 Groups associated with the application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#groups AppThreeField#groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#groups AppThreeField#groups}
 
 ---
 
@@ -343,7 +344,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 Do not display application icon on mobile app.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#hide_ios AppThreeField#hide_ios}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#hide_ios AppThreeField#hide_ios}
 
 ---
 
@@ -353,7 +354,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 Do not display application icon to users.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#hide_web AppThreeField#hide_web}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#hide_web AppThreeField#hide_web}
 
 ---
 
@@ -361,7 +362,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#id AppThreeField#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#id AppThreeField#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -374,7 +375,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Local path to logo of the application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#logo AppThreeField#logo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#logo AppThreeField#logo}
 
 ---
 
@@ -384,7 +385,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 Allow user to reveal password.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#reveal_password AppThreeField#reveal_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#reveal_password AppThreeField#reveal_password}
 
 ---
 
@@ -394,7 +395,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 Shared password, required for certain schemes.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#shared_password AppThreeField#shared_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#shared_password AppThreeField#shared_password}
 
 ---
 
@@ -404,7 +405,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 Shared username, required for certain schemes.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#shared_username AppThreeField#shared_username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#shared_username AppThreeField#shared_username}
 
 ---
 
@@ -414,7 +415,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#skip_groups AppThreeField#skip_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#skip_groups AppThreeField#skip_groups}
 
 ---
 
@@ -424,7 +425,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#skip_users AppThreeField#skip_users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#skip_users AppThreeField#skip_users}
 
 ---
 
@@ -434,7 +435,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 Status of application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#status AppThreeField#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#status AppThreeField#status}
 
 ---
 
@@ -444,7 +445,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#timeouts AppThreeField#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#timeouts AppThreeField#timeouts}
 
 ---
 
@@ -454,7 +455,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 A regex that further restricts URL to the specified regex.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#url_regex AppThreeField#url_regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#url_regex AppThreeField#url_regex}
 
 ---
 
@@ -464,7 +465,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 Username template.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#user_name_template AppThreeField#user_name_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#user_name_template AppThreeField#user_name_template}
 
 ---
 
@@ -474,7 +475,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 Push username on update.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#user_name_template_push_status AppThreeField#user_name_template_push_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#user_name_template_push_status AppThreeField#user_name_template_push_status}
 
 ---
 
@@ -484,7 +485,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 Username template suffix.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#user_name_template_suffix AppThreeField#user_name_template_suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#user_name_template_suffix AppThreeField#user_name_template_suffix}
 
 ---
 
@@ -494,7 +495,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 Username template type.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#user_name_template_type AppThreeField#user_name_template_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#user_name_template_type AppThreeField#user_name_template_type}
 
 ---
 
@@ -504,7 +505,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 users block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#users AppThreeField#users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#users AppThreeField#users}
 
 ---
 
@@ -1005,7 +1006,7 @@ AppThreeField.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -1168,10 +1169,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.appThreeField.AppThreeField.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -1946,6 +1947,7 @@ AppThreeFieldConfig.builder()
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -2002,7 +2004,7 @@ AppThreeFieldConfig.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldConfig.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -2026,7 +2028,7 @@ AppThreeFieldConfig.builder()
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldConfig.property.groups">groups</a></code> | <code>java.util.List<java.lang.String></code> | Groups associated with the application. |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldConfig.property.hideIos">hideIos</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Do not display application icon on mobile app. |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldConfig.property.hideWeb">hideWeb</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Do not display application icon to users. |
-| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#id AppThreeField#id}. |
+| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#id AppThreeField#id}. |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldConfig.property.logo">logo</a></code> | <code>java.lang.String</code> | Local path to logo of the application. |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldConfig.property.revealPassword">revealPassword</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Allow user to reveal password. |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldConfig.property.sharedPassword">sharedPassword</a></code> | <code>java.lang.String</code> | Shared password, required for certain schemes. |
@@ -2057,10 +2059,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.appThreeField.AppThreeFieldConfig.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -2124,7 +2126,7 @@ public java.lang.String getButtonSelector();
 
 Login button field CSS selector.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#button_selector AppThreeField#button_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#button_selector AppThreeField#button_selector}
 
 ---
 
@@ -2138,7 +2140,7 @@ public java.lang.String getExtraFieldSelector();
 
 Extra field CSS selector.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#extra_field_selector AppThreeField#extra_field_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#extra_field_selector AppThreeField#extra_field_selector}
 
 ---
 
@@ -2152,7 +2154,7 @@ public java.lang.String getExtraFieldValue();
 
 Value for extra form field.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#extra_field_value AppThreeField#extra_field_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#extra_field_value AppThreeField#extra_field_value}
 
 ---
 
@@ -2166,7 +2168,7 @@ public java.lang.String getLabel();
 
 Pretty name of app.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#label AppThreeField#label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#label AppThreeField#label}
 
 ---
 
@@ -2180,7 +2182,7 @@ public java.lang.String getPasswordSelector();
 
 Login password field CSS selector.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#password_selector AppThreeField#password_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#password_selector AppThreeField#password_selector}
 
 ---
 
@@ -2194,7 +2196,7 @@ public java.lang.String getUrl();
 
 Login URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#url AppThreeField#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#url AppThreeField#url}
 
 ---
 
@@ -2208,7 +2210,7 @@ public java.lang.String getUsernameSelector();
 
 Login username field CSS selector.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#username_selector AppThreeField#username_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#username_selector AppThreeField#username_selector}
 
 ---
 
@@ -2222,7 +2224,7 @@ public java.lang.String getAccessibilityErrorRedirectUrl();
 
 Custom error page URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#accessibility_error_redirect_url AppThreeField#accessibility_error_redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#accessibility_error_redirect_url AppThreeField#accessibility_error_redirect_url}
 
 ---
 
@@ -2236,7 +2238,7 @@ public java.lang.String getAccessibilityLoginRedirectUrl();
 
 Custom login page URL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#accessibility_login_redirect_url AppThreeField#accessibility_login_redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#accessibility_login_redirect_url AppThreeField#accessibility_login_redirect_url}
 
 ---
 
@@ -2250,7 +2252,7 @@ public java.lang.Object getAccessibilitySelfService();
 
 Enable self service.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#accessibility_self_service AppThreeField#accessibility_self_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#accessibility_self_service AppThreeField#accessibility_self_service}
 
 ---
 
@@ -2264,7 +2266,7 @@ public java.lang.String getAdminNote();
 
 Application notes for admins.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#admin_note AppThreeField#admin_note}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#admin_note AppThreeField#admin_note}
 
 ---
 
@@ -2278,7 +2280,7 @@ public java.lang.String getAppLinksJson();
 
 Displays specific appLinks for the app.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#app_links_json AppThreeField#app_links_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#app_links_json AppThreeField#app_links_json}
 
 ---
 
@@ -2292,7 +2294,7 @@ public java.lang.Object getAutoSubmitToolbar();
 
 Display auto submit toolbar.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#auto_submit_toolbar AppThreeField#auto_submit_toolbar}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#auto_submit_toolbar AppThreeField#auto_submit_toolbar}
 
 ---
 
@@ -2306,7 +2308,7 @@ public java.lang.String getCredentialsScheme();
 
 Application credentials scheme.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#credentials_scheme AppThreeField#credentials_scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#credentials_scheme AppThreeField#credentials_scheme}
 
 ---
 
@@ -2320,7 +2322,7 @@ public java.lang.String getEnduserNote();
 
 Application notes for end users.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#enduser_note AppThreeField#enduser_note}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#enduser_note AppThreeField#enduser_note}
 
 ---
 
@@ -2334,7 +2336,7 @@ public java.util.List<java.lang.String> getGroups();
 
 Groups associated with the application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#groups AppThreeField#groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#groups AppThreeField#groups}
 
 ---
 
@@ -2348,7 +2350,7 @@ public java.lang.Object getHideIos();
 
 Do not display application icon on mobile app.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#hide_ios AppThreeField#hide_ios}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#hide_ios AppThreeField#hide_ios}
 
 ---
 
@@ -2362,7 +2364,7 @@ public java.lang.Object getHideWeb();
 
 Do not display application icon to users.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#hide_web AppThreeField#hide_web}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#hide_web AppThreeField#hide_web}
 
 ---
 
@@ -2374,7 +2376,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#id AppThreeField#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#id AppThreeField#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2391,7 +2393,7 @@ public java.lang.String getLogo();
 
 Local path to logo of the application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#logo AppThreeField#logo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#logo AppThreeField#logo}
 
 ---
 
@@ -2405,7 +2407,7 @@ public java.lang.Object getRevealPassword();
 
 Allow user to reveal password.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#reveal_password AppThreeField#reveal_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#reveal_password AppThreeField#reveal_password}
 
 ---
 
@@ -2419,7 +2421,7 @@ public java.lang.String getSharedPassword();
 
 Shared password, required for certain schemes.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#shared_password AppThreeField#shared_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#shared_password AppThreeField#shared_password}
 
 ---
 
@@ -2433,7 +2435,7 @@ public java.lang.String getSharedUsername();
 
 Shared username, required for certain schemes.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#shared_username AppThreeField#shared_username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#shared_username AppThreeField#shared_username}
 
 ---
 
@@ -2447,7 +2449,7 @@ public java.lang.Object getSkipGroups();
 
 Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#skip_groups AppThreeField#skip_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#skip_groups AppThreeField#skip_groups}
 
 ---
 
@@ -2461,7 +2463,7 @@ public java.lang.Object getSkipUsers();
 
 Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#skip_users AppThreeField#skip_users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#skip_users AppThreeField#skip_users}
 
 ---
 
@@ -2475,7 +2477,7 @@ public java.lang.String getStatus();
 
 Status of application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#status AppThreeField#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#status AppThreeField#status}
 
 ---
 
@@ -2489,7 +2491,7 @@ public AppThreeFieldTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#timeouts AppThreeField#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#timeouts AppThreeField#timeouts}
 
 ---
 
@@ -2503,7 +2505,7 @@ public java.lang.String getUrlRegex();
 
 A regex that further restricts URL to the specified regex.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#url_regex AppThreeField#url_regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#url_regex AppThreeField#url_regex}
 
 ---
 
@@ -2517,7 +2519,7 @@ public java.lang.String getUserNameTemplate();
 
 Username template.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#user_name_template AppThreeField#user_name_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#user_name_template AppThreeField#user_name_template}
 
 ---
 
@@ -2531,7 +2533,7 @@ public java.lang.String getUserNameTemplatePushStatus();
 
 Push username on update.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#user_name_template_push_status AppThreeField#user_name_template_push_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#user_name_template_push_status AppThreeField#user_name_template_push_status}
 
 ---
 
@@ -2545,7 +2547,7 @@ public java.lang.String getUserNameTemplateSuffix();
 
 Username template suffix.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#user_name_template_suffix AppThreeField#user_name_template_suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#user_name_template_suffix AppThreeField#user_name_template_suffix}
 
 ---
 
@@ -2559,7 +2561,7 @@ public java.lang.String getUserNameTemplateType();
 
 Username template type.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#user_name_template_type AppThreeField#user_name_template_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#user_name_template_type AppThreeField#user_name_template_type}
 
 ---
 
@@ -2573,7 +2575,7 @@ public java.lang.Object getUsers();
 
 users block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#users AppThreeField#users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#users AppThreeField#users}
 
 ---
 
@@ -2595,9 +2597,9 @@ AppThreeFieldTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#create AppThreeField#create}. |
-| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#read AppThreeField#read}. |
-| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#update AppThreeField#update}. |
+| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#create AppThreeField#create}. |
+| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#read AppThreeField#read}. |
+| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#update AppThreeField#update}. |
 
 ---
 
@@ -2609,7 +2611,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#create AppThreeField#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#create AppThreeField#create}.
 
 ---
 
@@ -2621,7 +2623,7 @@ public java.lang.String getRead();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#read AppThreeField#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#read AppThreeField#read}.
 
 ---
 
@@ -2633,7 +2635,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#update AppThreeField#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#update AppThreeField#update}.
 
 ---
 
@@ -2671,7 +2673,7 @@ public java.lang.String getId();
 
 User ID.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#id AppThreeField#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#id AppThreeField#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2688,7 +2690,7 @@ public java.lang.String getPassword();
 
 Password for user application.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#password AppThreeField#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#password AppThreeField#password}
 
 ---
 
@@ -2702,7 +2704,7 @@ public java.lang.String getUsername();
 
 Username for user.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/app_three_field#username AppThreeField#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#username AppThreeField#username}
 
 ---
 

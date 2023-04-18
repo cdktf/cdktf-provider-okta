@@ -1,6 +1,6 @@
 # `data_okta_email_customization`
 
-Refer to the Terraform Registory for docs: [`data_okta_email_customization`](https://www.terraform.io/docs/providers/okta/d/email_customization).
+Refer to the Terraform Registory for docs: [`data_okta_email_customization`](https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/email_customization).
 
 # `dataOktaEmailCustomization` Submodule <a name="`dataOktaEmailCustomization` Submodule" id="@cdktf/provider-okta.dataOktaEmailCustomization"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_okta_email_customization`](htt
 
 ### DataOktaEmailCustomization <a name="DataOktaEmailCustomization" id="@cdktf/provider-okta.dataOktaEmailCustomization.DataOktaEmailCustomization"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/d/email_customization okta_email_customization}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/email_customization okta_email_customization}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaEmailCustomization.DataOktaEmailCustomization.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/dataoktaemailcustomization"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/dataoktaemailcustomization"
 
 dataoktaemailcustomization.NewDataOktaEmailCustomization(scope Construct, id *string, config DataOktaEmailCustomizationConfig) DataOktaEmailCustomization
 ```
@@ -270,7 +270,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.dataOktaEmailCustomization.DataOktaEmailCustomization.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/dataoktaemailcustomization"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/dataoktaemailcustomization"
 
 dataoktaemailcustomization.DataOktaEmailCustomization_IsConstruct(x interface{}) *bool
 ```
@@ -302,7 +302,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.dataOktaEmailCustomization.DataOktaEmailCustomization.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/dataoktaemailcustomization"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/dataoktaemailcustomization"
 
 dataoktaemailcustomization.DataOktaEmailCustomization_IsTerraformElement(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ dataoktaemailcustomization.DataOktaEmailCustomization_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-okta.dataOktaEmailCustomization.DataOktaEmailCustomization.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/dataoktaemailcustomization"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/dataoktaemailcustomization"
 
 dataoktaemailcustomization.DataOktaEmailCustomization_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,7 +338,7 @@ dataoktaemailcustomization.DataOktaEmailCustomization_IsTerraformDataSource(x in
 | <code><a href="#@cdktf/provider-okta.dataOktaEmailCustomization.DataOktaEmailCustomization.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaEmailCustomization.DataOktaEmailCustomization.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaEmailCustomization.DataOktaEmailCustomization.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.dataOktaEmailCustomization.DataOktaEmailCustomization.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.dataOktaEmailCustomization.DataOktaEmailCustomization.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaEmailCustomization.DataOktaEmailCustomization.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaEmailCustomization.DataOktaEmailCustomization.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaEmailCustomization.DataOktaEmailCustomization.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -433,10 +433,10 @@ func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.dataOktaEmailCustomization.DataOktaEmailCustomization.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -625,11 +625,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaEmailCustomization.DataOktaEmailCustomizationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/dataoktaemailcustomization"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/dataoktaemailcustomization"
 
 &dataoktaemailcustomization.DataOktaEmailCustomizationConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -646,7 +646,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/dataoktaemailcustomizati
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-okta.dataOktaEmailCustomization.DataOktaEmailCustomizationConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.dataOktaEmailCustomization.DataOktaEmailCustomizationConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.dataOktaEmailCustomization.DataOktaEmailCustomizationConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaEmailCustomization.DataOktaEmailCustomizationConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaEmailCustomization.DataOktaEmailCustomizationConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaEmailCustomization.DataOktaEmailCustomizationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -671,10 +671,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.dataOktaEmailCustomization.DataOktaEmailCustomizationConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -738,7 +738,7 @@ BrandId *string
 
 Brand ID.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/email_customization#brand_id DataOktaEmailCustomization#brand_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/email_customization#brand_id DataOktaEmailCustomization#brand_id}
 
 ---
 
@@ -752,7 +752,7 @@ CustomizationId *string
 
 The ID of the customization.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/email_customization#customization_id DataOktaEmailCustomization#customization_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/email_customization#customization_id DataOktaEmailCustomization#customization_id}
 
 ---
 
@@ -766,7 +766,7 @@ TemplateName *string
 
 Template Name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/email_customization#template_name DataOktaEmailCustomization#template_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/email_customization#template_name DataOktaEmailCustomization#template_name}
 
 ---
 
