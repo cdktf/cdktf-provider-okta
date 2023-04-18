@@ -1,6 +1,6 @@
 # `okta_rate_limiting`
 
-Refer to the Terraform Registory for docs: [`okta_rate_limiting`](https://www.terraform.io/docs/providers/okta/r/rate_limiting).
+Refer to the Terraform Registory for docs: [`okta_rate_limiting`](https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/rate_limiting).
 
 # `rateLimiting` Submodule <a name="`rateLimiting` Submodule" id="@cdktf/provider-okta.rateLimiting"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_rate_limiting`](https://www.te
 
 ### RateLimiting <a name="RateLimiting" id="@cdktf/provider-okta.rateLimiting.RateLimiting"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/rate_limiting okta_rate_limiting}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/rate_limiting okta_rate_limiting}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.rateLimiting.RateLimiting.Initializer"></a>
 
@@ -353,7 +353,7 @@ rateLimiting.RateLimiting.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-okta.rateLimiting.RateLimiting.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.rateLimiting.RateLimiting.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.rateLimiting.RateLimiting.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.rateLimiting.RateLimiting.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.rateLimiting.RateLimiting.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.rateLimiting.RateLimiting.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.rateLimiting.RateLimiting.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.rateLimiting.RateLimiting.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -455,10 +455,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.rateLimiting.RateLimiting.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -627,7 +627,7 @@ const rateLimitingConfig: rateLimiting.RateLimitingConfig = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-okta.rateLimiting.RateLimitingConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.rateLimiting.RateLimitingConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.rateLimiting.RateLimitingConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.rateLimiting.RateLimitingConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.rateLimiting.RateLimitingConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.rateLimiting.RateLimitingConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -636,7 +636,7 @@ const rateLimitingConfig: rateLimiting.RateLimitingConfig = { ... }
 | <code><a href="#@cdktf/provider-okta.rateLimiting.RateLimitingConfig.property.authorize">authorize</a></code> | <code>string</code> | Called during authentication. |
 | <code><a href="#@cdktf/provider-okta.rateLimiting.RateLimitingConfig.property.login">login</a></code> | <code>string</code> | Called when accessing the Okta hosted login page. |
 | <code><a href="#@cdktf/provider-okta.rateLimiting.RateLimitingConfig.property.communicationsEnabled">communicationsEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Enables rate limit warning, violation, notification emails and banners when this org meets rate limits. |
-| <code><a href="#@cdktf/provider-okta.rateLimiting.RateLimitingConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/rate_limiting#id RateLimiting#id}. |
+| <code><a href="#@cdktf/provider-okta.rateLimiting.RateLimitingConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/rate_limiting#id RateLimiting#id}. |
 
 ---
 
@@ -653,10 +653,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.rateLimiting.RateLimitingConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -720,7 +720,7 @@ public readonly authorize: string;
 
 Called during authentication.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/rate_limiting#authorize RateLimiting#authorize}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/rate_limiting#authorize RateLimiting#authorize}
 
 ---
 
@@ -734,7 +734,7 @@ public readonly login: string;
 
 Called when accessing the Okta hosted login page.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/rate_limiting#login RateLimiting#login}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/rate_limiting#login RateLimiting#login}
 
 ---
 
@@ -748,7 +748,7 @@ public readonly communicationsEnabled: boolean | IResolvable;
 
 Enables rate limit warning, violation, notification emails and banners when this org meets rate limits.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/rate_limiting#communications_enabled RateLimiting#communications_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/rate_limiting#communications_enabled RateLimiting#communications_enabled}
 
 ---
 
@@ -760,7 +760,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/rate_limiting#id RateLimiting#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/rate_limiting#id RateLimiting#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

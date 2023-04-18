@@ -1,6 +1,6 @@
 # `okta_behavior`
 
-Refer to the Terraform Registory for docs: [`okta_behavior`](https://www.terraform.io/docs/providers/okta/r/behavior).
+Refer to the Terraform Registory for docs: [`okta_behavior`](https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/behavior).
 
 # `behavior` Submodule <a name="`behavior` Submodule" id="@cdktf/provider-okta.behavior"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`okta_behavior`](https://www.terrafo
 
 ### Behavior <a name="Behavior" id="@cdktf/provider-okta.behavior.Behavior"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/behavior okta_behavior}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/behavior okta_behavior}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.behavior.Behavior.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/behavior"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/behavior"
 
 behavior.NewBehavior(scope Construct, id *string, config BehaviorConfig) Behavior
 ```
@@ -312,7 +312,7 @@ func ResetVelocity()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.behavior.Behavior.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/behavior"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/behavior"
 
 behavior.Behavior_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.behavior.Behavior.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/behavior"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/behavior"
 
 behavior.Behavior_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ behavior.Behavior_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.behavior.Behavior.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/behavior"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/behavior"
 
 behavior.Behavior_IsTerraformResource(x interface{}) *bool
 ```
@@ -381,7 +381,7 @@ behavior.Behavior_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-okta.behavior.Behavior.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.behavior.Behavior.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.behavior.Behavior.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.behavior.Behavior.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.behavior.Behavior.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.behavior.Behavior.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.behavior.Behavior.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.behavior.Behavior.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -491,10 +491,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.behavior.Behavior.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -733,11 +733,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.behavior.BehaviorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/behavior"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/behavior"
 
 &behavior.BehaviorConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -759,7 +759,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/behavior"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-okta.behavior.BehaviorConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.behavior.BehaviorConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.behavior.BehaviorConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.behavior.BehaviorConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.behavior.BehaviorConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.behavior.BehaviorConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -767,7 +767,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/behavior"
 | <code><a href="#@cdktf/provider-okta.behavior.BehaviorConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.behavior.BehaviorConfig.property.name">Name</a></code> | <code>*string</code> | Name of the behavior. |
 | <code><a href="#@cdktf/provider-okta.behavior.BehaviorConfig.property.type">Type</a></code> | <code>*string</code> | Behavior type. |
-| <code><a href="#@cdktf/provider-okta.behavior.BehaviorConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/behavior#id Behavior#id}. |
+| <code><a href="#@cdktf/provider-okta.behavior.BehaviorConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/behavior#id Behavior#id}. |
 | <code><a href="#@cdktf/provider-okta.behavior.BehaviorConfig.property.locationGranularityType">LocationGranularityType</a></code> | <code>*string</code> | Determines the method and level of detail used to evaluate the behavior. |
 | <code><a href="#@cdktf/provider-okta.behavior.BehaviorConfig.property.numberOfAuthentications">NumberOfAuthentications</a></code> | <code>*f64</code> | The number of recent authentications used to evaluate the behavior. |
 | <code><a href="#@cdktf/provider-okta.behavior.BehaviorConfig.property.radiusFromLocation">RadiusFromLocation</a></code> | <code>*f64</code> | Radius from location (in kilometers). |
@@ -789,10 +789,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.behavior.BehaviorConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -856,7 +856,7 @@ Name *string
 
 Name of the behavior.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/behavior#name Behavior#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/behavior#name Behavior#name}
 
 ---
 
@@ -870,7 +870,7 @@ Type *string
 
 Behavior type.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/behavior#type Behavior#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/behavior#type Behavior#type}
 
 ---
 
@@ -882,7 +882,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/behavior#id Behavior#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/behavior#id Behavior#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -899,7 +899,7 @@ LocationGranularityType *string
 
 Determines the method and level of detail used to evaluate the behavior.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/behavior#location_granularity_type Behavior#location_granularity_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/behavior#location_granularity_type Behavior#location_granularity_type}
 
 ---
 
@@ -913,7 +913,7 @@ NumberOfAuthentications *f64
 
 The number of recent authentications used to evaluate the behavior.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/behavior#number_of_authentications Behavior#number_of_authentications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/behavior#number_of_authentications Behavior#number_of_authentications}
 
 ---
 
@@ -927,7 +927,7 @@ RadiusFromLocation *f64
 
 Radius from location (in kilometers).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/behavior#radius_from_location Behavior#radius_from_location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/behavior#radius_from_location Behavior#radius_from_location}
 
 ---
 
@@ -941,7 +941,7 @@ Status *string
 
 Behavior status: ACTIVE or INACTIVE.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/behavior#status Behavior#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/behavior#status Behavior#status}
 
 ---
 
@@ -955,7 +955,7 @@ Velocity *f64
 
 Velocity (in kilometers per hour).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/behavior#velocity Behavior#velocity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/behavior#velocity Behavior#velocity}
 
 ---
 

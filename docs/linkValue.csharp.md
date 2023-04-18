@@ -1,6 +1,6 @@
 # `okta_link_value`
 
-Refer to the Terraform Registory for docs: [`okta_link_value`](https://www.terraform.io/docs/providers/okta/r/link_value).
+Refer to the Terraform Registory for docs: [`okta_link_value`](https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/link_value).
 
 # `linkValue` Submodule <a name="`linkValue` Submodule" id="@cdktf/provider-okta.linkValue"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_link_value`](https://www.terra
 
 ### LinkValue <a name="LinkValue" id="@cdktf/provider-okta.linkValue.LinkValue"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/link_value okta_link_value}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/link_value okta_link_value}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.linkValue.LinkValue.Initializer"></a>
 
@@ -353,7 +353,7 @@ LinkValue.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-okta.linkValue.LinkValue.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.linkValue.LinkValue.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.linkValue.LinkValue.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.linkValue.LinkValue.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.linkValue.LinkValue.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.linkValue.LinkValue.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.linkValue.LinkValue.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.linkValue.LinkValue.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -455,10 +455,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.linkValue.LinkValue.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -621,7 +621,7 @@ using HashiCorp.Cdktf.Providers.Okta;
 
 new LinkValueConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -639,7 +639,7 @@ new LinkValueConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-okta.linkValue.LinkValueConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.linkValue.LinkValueConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.linkValue.LinkValueConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.linkValue.LinkValueConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.linkValue.LinkValueConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.linkValue.LinkValueConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -648,7 +648,7 @@ new LinkValueConfig {
 | <code><a href="#@cdktf/provider-okta.linkValue.LinkValueConfig.property.primaryName">PrimaryName</a></code> | <code>string</code> | Name of the 'primary' relationship being assigned. |
 | <code><a href="#@cdktf/provider-okta.linkValue.LinkValueConfig.property.primaryUserId">PrimaryUserId</a></code> | <code>string</code> | User ID to be assigned to 'primary' for the 'associated' user in the specified relationship. |
 | <code><a href="#@cdktf/provider-okta.linkValue.LinkValueConfig.property.associatedUserIds">AssociatedUserIds</a></code> | <code>string[]</code> | Set of User IDs or login values of the users to be assigned the 'associated' relationship. |
-| <code><a href="#@cdktf/provider-okta.linkValue.LinkValueConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/link_value#id LinkValue#id}. |
+| <code><a href="#@cdktf/provider-okta.linkValue.LinkValueConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/link_value#id LinkValue#id}. |
 
 ---
 
@@ -665,10 +665,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.linkValue.LinkValueConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -732,7 +732,7 @@ public string PrimaryName { get; set; }
 
 Name of the 'primary' relationship being assigned.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/link_value#primary_name LinkValue#primary_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/link_value#primary_name LinkValue#primary_name}
 
 ---
 
@@ -746,7 +746,7 @@ public string PrimaryUserId { get; set; }
 
 User ID to be assigned to 'primary' for the 'associated' user in the specified relationship.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/link_value#primary_user_id LinkValue#primary_user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/link_value#primary_user_id LinkValue#primary_user_id}
 
 ---
 
@@ -760,7 +760,7 @@ public string[] AssociatedUserIds { get; set; }
 
 Set of User IDs or login values of the users to be assigned the 'associated' relationship.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/link_value#associated_user_ids LinkValue#associated_user_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/link_value#associated_user_ids LinkValue#associated_user_ids}
 
 ---
 
@@ -772,7 +772,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/link_value#id LinkValue#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/link_value#id LinkValue#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

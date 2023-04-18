@@ -1,3 +1,3 @@
 # `okta_app_oauth`
 
-Refer to the Terraform Registory for docs: [`okta_app_oauth`](https://www.terraform.io/docs/providers/okta/r/app_oauth).
+Refer to the Terraform Registory for docs: [`okta_app_oauth`](https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth).

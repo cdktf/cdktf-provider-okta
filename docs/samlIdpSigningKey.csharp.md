@@ -1,6 +1,6 @@
 # `okta_saml_idp_signing_key`
 
-Refer to the Terraform Registory for docs: [`okta_saml_idp_signing_key`](https://www.terraform.io/docs/providers/okta/r/saml_idp_signing_key).
+Refer to the Terraform Registory for docs: [`okta_saml_idp_signing_key`](https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/saml_idp_signing_key).
 
 # `samlIdpSigningKey` Submodule <a name="`samlIdpSigningKey` Submodule" id="@cdktf/provider-okta.samlIdpSigningKey"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_saml_idp_signing_key`](https:/
 
 ### SamlIdpSigningKey <a name="SamlIdpSigningKey" id="@cdktf/provider-okta.samlIdpSigningKey.SamlIdpSigningKey"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/saml_idp_signing_key okta_saml_idp_signing_key}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/saml_idp_signing_key okta_saml_idp_signing_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.samlIdpSigningKey.SamlIdpSigningKey.Initializer"></a>
 
@@ -346,7 +346,7 @@ SamlIdpSigningKey.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-okta.samlIdpSigningKey.SamlIdpSigningKey.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.samlIdpSigningKey.SamlIdpSigningKey.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.samlIdpSigningKey.SamlIdpSigningKey.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.samlIdpSigningKey.SamlIdpSigningKey.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.samlIdpSigningKey.SamlIdpSigningKey.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.samlIdpSigningKey.SamlIdpSigningKey.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.samlIdpSigningKey.SamlIdpSigningKey.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.samlIdpSigningKey.SamlIdpSigningKey.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -450,10 +450,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.samlIdpSigningKey.SamlIdpSigningKey.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -636,7 +636,7 @@ using HashiCorp.Cdktf.Providers.Okta;
 
 new SamlIdpSigningKeyConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -652,14 +652,14 @@ new SamlIdpSigningKeyConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-okta.samlIdpSigningKey.SamlIdpSigningKeyConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.samlIdpSigningKey.SamlIdpSigningKeyConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.samlIdpSigningKey.SamlIdpSigningKeyConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.samlIdpSigningKey.SamlIdpSigningKeyConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.samlIdpSigningKey.SamlIdpSigningKeyConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.samlIdpSigningKey.SamlIdpSigningKeyConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.samlIdpSigningKey.SamlIdpSigningKeyConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.samlIdpSigningKey.SamlIdpSigningKeyConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.samlIdpSigningKey.SamlIdpSigningKeyConfig.property.x5C">X5C</a></code> | <code>string[]</code> | base64-encoded X.509 certificate chain with DER encoding. |
-| <code><a href="#@cdktf/provider-okta.samlIdpSigningKey.SamlIdpSigningKeyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp_signing_key#id SamlIdpSigningKey#id}. |
+| <code><a href="#@cdktf/provider-okta.samlIdpSigningKey.SamlIdpSigningKeyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/saml_idp_signing_key#id SamlIdpSigningKey#id}. |
 
 ---
 
@@ -676,10 +676,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.samlIdpSigningKey.SamlIdpSigningKeyConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -743,7 +743,7 @@ public string[] X5C { get; set; }
 
 base64-encoded X.509 certificate chain with DER encoding.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp_signing_key#x5c SamlIdpSigningKey#x5c}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/saml_idp_signing_key#x5c SamlIdpSigningKey#x5c}
 
 ---
 
@@ -755,7 +755,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/saml_idp_signing_key#id SamlIdpSigningKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/saml_idp_signing_key#id SamlIdpSigningKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

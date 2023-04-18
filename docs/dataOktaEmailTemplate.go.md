@@ -1,6 +1,6 @@
 # `data_okta_email_template`
 
-Refer to the Terraform Registory for docs: [`data_okta_email_template`](https://www.terraform.io/docs/providers/okta/d/email_template).
+Refer to the Terraform Registory for docs: [`data_okta_email_template`](https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/email_template).
 
 # `dataOktaEmailTemplate` Submodule <a name="`dataOktaEmailTemplate` Submodule" id="@cdktf/provider-okta.dataOktaEmailTemplate"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_okta_email_template`](https://
 
 ### DataOktaEmailTemplate <a name="DataOktaEmailTemplate" id="@cdktf/provider-okta.dataOktaEmailTemplate.DataOktaEmailTemplate"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/d/email_template okta_email_template}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/email_template okta_email_template}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaEmailTemplate.DataOktaEmailTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/dataoktaemailtemplate"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaemailtemplate"
 
 dataoktaemailtemplate.NewDataOktaEmailTemplate(scope Construct, id *string, config DataOktaEmailTemplateConfig) DataOktaEmailTemplate
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.dataOktaEmailTemplate.DataOktaEmailTemplate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/dataoktaemailtemplate"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaemailtemplate"
 
 dataoktaemailtemplate.DataOktaEmailTemplate_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.dataOktaEmailTemplate.DataOktaEmailTemplate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/dataoktaemailtemplate"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaemailtemplate"
 
 dataoktaemailtemplate.DataOktaEmailTemplate_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ dataoktaemailtemplate.DataOktaEmailTemplate_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-okta.dataOktaEmailTemplate.DataOktaEmailTemplate.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/dataoktaemailtemplate"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaemailtemplate"
 
 dataoktaemailtemplate.DataOktaEmailTemplate_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -345,7 +345,7 @@ dataoktaemailtemplate.DataOktaEmailTemplate_IsTerraformDataSource(x interface{})
 | <code><a href="#@cdktf/provider-okta.dataOktaEmailTemplate.DataOktaEmailTemplate.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaEmailTemplate.DataOktaEmailTemplate.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaEmailTemplate.DataOktaEmailTemplate.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.dataOktaEmailTemplate.DataOktaEmailTemplate.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.dataOktaEmailTemplate.DataOktaEmailTemplate.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaEmailTemplate.DataOktaEmailTemplate.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaEmailTemplate.DataOktaEmailTemplate.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaEmailTemplate.DataOktaEmailTemplate.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -435,10 +435,10 @@ func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.dataOktaEmailTemplate.DataOktaEmailTemplate.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -577,11 +577,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaEmailTemplate.DataOktaEmailTemplateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/dataoktaemailtemplate"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaemailtemplate"
 
 &dataoktaemailtemplate.DataOktaEmailTemplateConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -598,7 +598,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/dataoktaemailtemplate"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-okta.dataOktaEmailTemplate.DataOktaEmailTemplateConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.dataOktaEmailTemplate.DataOktaEmailTemplateConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.dataOktaEmailTemplate.DataOktaEmailTemplateConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaEmailTemplate.DataOktaEmailTemplateConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaEmailTemplate.DataOktaEmailTemplateConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaEmailTemplate.DataOktaEmailTemplateConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -606,7 +606,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/dataoktaemailtemplate"
 | <code><a href="#@cdktf/provider-okta.dataOktaEmailTemplate.DataOktaEmailTemplateConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaEmailTemplate.DataOktaEmailTemplateConfig.property.brandId">BrandId</a></code> | <code>*string</code> | Brand ID. |
 | <code><a href="#@cdktf/provider-okta.dataOktaEmailTemplate.DataOktaEmailTemplateConfig.property.name">Name</a></code> | <code>*string</code> | The name of the email template. |
-| <code><a href="#@cdktf/provider-okta.dataOktaEmailTemplate.DataOktaEmailTemplateConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/email_template#id DataOktaEmailTemplate#id}. |
+| <code><a href="#@cdktf/provider-okta.dataOktaEmailTemplate.DataOktaEmailTemplateConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/email_template#id DataOktaEmailTemplate#id}. |
 
 ---
 
@@ -623,10 +623,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.dataOktaEmailTemplate.DataOktaEmailTemplateConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -690,7 +690,7 @@ BrandId *string
 
 Brand ID.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/email_template#brand_id DataOktaEmailTemplate#brand_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/email_template#brand_id DataOktaEmailTemplate#brand_id}
 
 ---
 
@@ -704,7 +704,7 @@ Name *string
 
 The name of the email template.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/email_template#name DataOktaEmailTemplate#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/email_template#name DataOktaEmailTemplate#name}
 
 ---
 
@@ -716,7 +716,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/email_template#id DataOktaEmailTemplate#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/email_template#id DataOktaEmailTemplate#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

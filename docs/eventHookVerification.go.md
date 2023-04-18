@@ -1,6 +1,6 @@
 # `okta_event_hook_verification`
 
-Refer to the Terraform Registory for docs: [`okta_event_hook_verification`](https://www.terraform.io/docs/providers/okta/r/event_hook_verification).
+Refer to the Terraform Registory for docs: [`okta_event_hook_verification`](https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/event_hook_verification).
 
 # `eventHookVerification` Submodule <a name="`eventHookVerification` Submodule" id="@cdktf/provider-okta.eventHookVerification"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`okta_event_hook_verification`](http
 
 ### EventHookVerification <a name="EventHookVerification" id="@cdktf/provider-okta.eventHookVerification.EventHookVerification"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/event_hook_verification okta_event_hook_verification}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/event_hook_verification okta_event_hook_verification}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.eventHookVerification.EventHookVerification.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/eventhookverification"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/eventhookverification"
 
 eventhookverification.NewEventHookVerification(scope Construct, id *string, config EventHookVerificationConfig) EventHookVerification
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.eventHookVerification.EventHookVerification.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/eventhookverification"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/eventhookverification"
 
 eventhookverification.EventHookVerification_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.eventHookVerification.EventHookVerification.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/eventhookverification"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/eventhookverification"
 
 eventhookverification.EventHookVerification_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ eventhookverification.EventHookVerification_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.eventHookVerification.EventHookVerification.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/eventhookverification"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/eventhookverification"
 
 eventhookverification.EventHookVerification_IsTerraformResource(x interface{}) *bool
 ```
@@ -346,7 +346,7 @@ eventhookverification.EventHookVerification_IsTerraformResource(x interface{}) *
 | <code><a href="#@cdktf/provider-okta.eventHookVerification.EventHookVerification.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.eventHookVerification.EventHookVerification.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.eventHookVerification.EventHookVerification.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.eventHookVerification.EventHookVerification.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.eventHookVerification.EventHookVerification.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.eventHookVerification.EventHookVerification.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.eventHookVerification.EventHookVerification.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.eventHookVerification.EventHookVerification.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -444,10 +444,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.eventHookVerification.EventHookVerification.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -566,11 +566,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.eventHookVerification.EventHookVerificationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/eventhookverification"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/eventhookverification"
 
 &eventhookverification.EventHookVerificationConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -586,14 +586,14 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/eventhookverification"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-okta.eventHookVerification.EventHookVerificationConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.eventHookVerification.EventHookVerificationConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.eventHookVerification.EventHookVerificationConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.eventHookVerification.EventHookVerificationConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.eventHookVerification.EventHookVerificationConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.eventHookVerification.EventHookVerificationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.eventHookVerification.EventHookVerificationConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.eventHookVerification.EventHookVerificationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.eventHookVerification.EventHookVerificationConfig.property.eventHookId">EventHookId</a></code> | <code>*string</code> | Event hook ID. |
-| <code><a href="#@cdktf/provider-okta.eventHookVerification.EventHookVerificationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/event_hook_verification#id EventHookVerification#id}. |
+| <code><a href="#@cdktf/provider-okta.eventHookVerification.EventHookVerificationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/event_hook_verification#id EventHookVerification#id}. |
 
 ---
 
@@ -610,10 +610,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.eventHookVerification.EventHookVerificationConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -677,7 +677,7 @@ EventHookId *string
 
 Event hook ID.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/event_hook_verification#event_hook_id EventHookVerification#event_hook_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/event_hook_verification#event_hook_id EventHookVerification#event_hook_id}
 
 ---
 
@@ -689,7 +689,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/event_hook_verification#id EventHookVerification#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/event_hook_verification#id EventHookVerification#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

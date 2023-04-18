@@ -1,6 +1,6 @@
 # `okta_link_definition`
 
-Refer to the Terraform Registory for docs: [`okta_link_definition`](https://www.terraform.io/docs/providers/okta/r/link_definition).
+Refer to the Terraform Registory for docs: [`okta_link_definition`](https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/link_definition).
 
 # `linkDefinition` Submodule <a name="`linkDefinition` Submodule" id="@cdktf/provider-okta.linkDefinition"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`okta_link_definition`](https://www.
 
 ### LinkDefinition <a name="LinkDefinition" id="@cdktf/provider-okta.linkDefinition.LinkDefinition"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/link_definition okta_link_definition}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/link_definition okta_link_definition}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.linkDefinition.LinkDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/linkdefinition"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/linkdefinition"
 
 linkdefinition.NewLinkDefinition(scope Construct, id *string, config LinkDefinitionConfig) LinkDefinition
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.linkDefinition.LinkDefinition.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/linkdefinition"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/linkdefinition"
 
 linkdefinition.LinkDefinition_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.linkDefinition.LinkDefinition.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/linkdefinition"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/linkdefinition"
 
 linkdefinition.LinkDefinition_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ linkdefinition.LinkDefinition_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.linkDefinition.LinkDefinition.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/linkdefinition"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/linkdefinition"
 
 linkdefinition.LinkDefinition_IsTerraformResource(x interface{}) *bool
 ```
@@ -346,7 +346,7 @@ linkdefinition.LinkDefinition_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-okta.linkDefinition.LinkDefinition.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.linkDefinition.LinkDefinition.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.linkDefinition.LinkDefinition.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.linkDefinition.LinkDefinition.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.linkDefinition.LinkDefinition.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.linkDefinition.LinkDefinition.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.linkDefinition.LinkDefinition.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.linkDefinition.LinkDefinition.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -454,10 +454,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.linkDefinition.LinkDefinition.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -676,11 +676,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.linkDefinition.LinkDefinitionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/linkdefinition"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/linkdefinition"
 
 &linkdefinition.LinkDefinitionConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -701,7 +701,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/linkdefinition"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-okta.linkDefinition.LinkDefinitionConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.linkDefinition.LinkDefinitionConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.linkDefinition.LinkDefinitionConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.linkDefinition.LinkDefinitionConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.linkDefinition.LinkDefinitionConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.linkDefinition.LinkDefinitionConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -713,7 +713,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/linkdefinition"
 | <code><a href="#@cdktf/provider-okta.linkDefinition.LinkDefinitionConfig.property.primaryDescription">PrimaryDescription</a></code> | <code>*string</code> | Description of the primary relationship. |
 | <code><a href="#@cdktf/provider-okta.linkDefinition.LinkDefinitionConfig.property.primaryName">PrimaryName</a></code> | <code>*string</code> | API name of the primary link. |
 | <code><a href="#@cdktf/provider-okta.linkDefinition.LinkDefinitionConfig.property.primaryTitle">PrimaryTitle</a></code> | <code>*string</code> | Display name of the primary link. |
-| <code><a href="#@cdktf/provider-okta.linkDefinition.LinkDefinitionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/link_definition#id LinkDefinition#id}. |
+| <code><a href="#@cdktf/provider-okta.linkDefinition.LinkDefinitionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/link_definition#id LinkDefinition#id}. |
 
 ---
 
@@ -730,10 +730,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.linkDefinition.LinkDefinitionConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -797,7 +797,7 @@ AssociatedDescription *string
 
 Description of the associated relationship.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/link_definition#associated_description LinkDefinition#associated_description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/link_definition#associated_description LinkDefinition#associated_description}
 
 ---
 
@@ -811,7 +811,7 @@ AssociatedName *string
 
 API name of the associated link.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/link_definition#associated_name LinkDefinition#associated_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/link_definition#associated_name LinkDefinition#associated_name}
 
 ---
 
@@ -825,7 +825,7 @@ AssociatedTitle *string
 
 Display name of the associated link.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/link_definition#associated_title LinkDefinition#associated_title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/link_definition#associated_title LinkDefinition#associated_title}
 
 ---
 
@@ -839,7 +839,7 @@ PrimaryDescription *string
 
 Description of the primary relationship.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/link_definition#primary_description LinkDefinition#primary_description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/link_definition#primary_description LinkDefinition#primary_description}
 
 ---
 
@@ -853,7 +853,7 @@ PrimaryName *string
 
 API name of the primary link.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/link_definition#primary_name LinkDefinition#primary_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/link_definition#primary_name LinkDefinition#primary_name}
 
 ---
 
@@ -867,7 +867,7 @@ PrimaryTitle *string
 
 Display name of the primary link.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/link_definition#primary_title LinkDefinition#primary_title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/link_definition#primary_title LinkDefinition#primary_title}
 
 ---
 
@@ -879,7 +879,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/link_definition#id LinkDefinition#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/link_definition#id LinkDefinition#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

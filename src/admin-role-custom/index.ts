@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/r/admin_role_custom
+// https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/admin_role_custom
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,11 +10,11 @@ export interface AdminRoleCustomConfig extends cdktf.TerraformMetaArguments {
   /**
   * A human-readable description of the new Role
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/admin_role_custom#description AdminRoleCustom#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/admin_role_custom#description AdminRoleCustom#description}
   */
   readonly description: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/admin_role_custom#id AdminRoleCustom#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/admin_role_custom#id AdminRoleCustom#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -23,19 +23,19 @@ export interface AdminRoleCustomConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name given to the new Role
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/admin_role_custom#label AdminRoleCustom#label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/admin_role_custom#label AdminRoleCustom#label}
   */
   readonly label: string;
   /**
   * The permissions that the new Role grants.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/admin_role_custom#permissions AdminRoleCustom#permissions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/admin_role_custom#permissions AdminRoleCustom#permissions}
   */
   readonly permissions?: string[];
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/r/admin_role_custom okta_admin_role_custom}
+* Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/admin_role_custom okta_admin_role_custom}
 */
 export class AdminRoleCustom extends cdktf.TerraformResource {
 
@@ -49,7 +49,7 @@ export class AdminRoleCustom extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/admin_role_custom okta_admin_role_custom} Resource
+  * Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/admin_role_custom okta_admin_role_custom} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

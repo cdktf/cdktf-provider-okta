@@ -1,6 +1,6 @@
 # `okta_factor`
 
-Refer to the Terraform Registory for docs: [`okta_factor`](https://www.terraform.io/docs/providers/okta/r/factor).
+Refer to the Terraform Registory for docs: [`okta_factor`](https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/factor).
 
 # `factor` Submodule <a name="`factor` Submodule" id="@cdktf/provider-okta.factor"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_factor`](https://www.terraform
 
 ### Factor <a name="Factor" id="@cdktf/provider-okta.factor.Factor"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/factor okta_factor}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/factor okta_factor}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.factor.Factor.Initializer"></a>
 
@@ -353,7 +353,7 @@ Factor.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-okta.factor.Factor.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.factor.Factor.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.factor.Factor.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.factor.Factor.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.factor.Factor.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.factor.Factor.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.factor.Factor.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.factor.Factor.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -453,10 +453,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.factor.Factor.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -599,7 +599,7 @@ using HashiCorp.Cdktf.Providers.Okta;
 
 new FactorConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -616,7 +616,7 @@ new FactorConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-okta.factor.FactorConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.factor.FactorConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.factor.FactorConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.factor.FactorConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.factor.FactorConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.factor.FactorConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -624,7 +624,7 @@ new FactorConfig {
 | <code><a href="#@cdktf/provider-okta.factor.FactorConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.factor.FactorConfig.property.providerId">ProviderId</a></code> | <code>string</code> | Factor provider ID. |
 | <code><a href="#@cdktf/provider-okta.factor.FactorConfig.property.active">Active</a></code> | <code>object</code> | Is this provider active? |
-| <code><a href="#@cdktf/provider-okta.factor.FactorConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/factor#id Factor#id}. |
+| <code><a href="#@cdktf/provider-okta.factor.FactorConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/factor#id Factor#id}. |
 
 ---
 
@@ -641,10 +641,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.factor.FactorConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -708,7 +708,7 @@ public string ProviderId { get; set; }
 
 Factor provider ID.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/factor#provider_id Factor#provider_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/factor#provider_id Factor#provider_id}
 
 ---
 
@@ -722,7 +722,7 @@ public object Active { get; set; }
 
 Is this provider active?
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/factor#active Factor#active}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/factor#active Factor#active}
 
 ---
 
@@ -734,7 +734,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/factor#id Factor#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/factor#id Factor#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

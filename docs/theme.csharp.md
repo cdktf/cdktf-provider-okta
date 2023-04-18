@@ -1,6 +1,6 @@
 # `okta_theme`
 
-Refer to the Terraform Registory for docs: [`okta_theme`](https://www.terraform.io/docs/providers/okta/r/theme).
+Refer to the Terraform Registory for docs: [`okta_theme`](https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/theme).
 
 # `theme` Submodule <a name="`theme` Submodule" id="@cdktf/provider-okta.theme"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_theme`](https://www.terraform.
 
 ### Theme <a name="Theme" id="@cdktf/provider-okta.theme.Theme"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/theme okta_theme}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/theme okta_theme}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.theme.Theme.Initializer"></a>
 
@@ -423,7 +423,7 @@ Theme.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-okta.theme.Theme.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.theme.Theme.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.theme.Theme.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.theme.Theme.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.theme.Theme.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.theme.Theme.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.theme.Theme.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.theme.Theme.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -548,10 +548,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.theme.Theme.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -944,7 +944,7 @@ using HashiCorp.Cdktf.Providers.Okta;
 
 new ThemeConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -971,7 +971,7 @@ new ThemeConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-okta.theme.ThemeConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.theme.ThemeConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.theme.ThemeConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.theme.ThemeConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.theme.ThemeConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.theme.ThemeConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -1006,10 +1006,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.theme.ThemeConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -1073,7 +1073,7 @@ public string BrandId { get; set; }
 
 Brand ID.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/theme#brand_id Theme#brand_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/theme#brand_id Theme#brand_id}
 
 ---
 
@@ -1087,7 +1087,7 @@ public string BackgroundImage { get; set; }
 
 Path to local file.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/theme#background_image Theme#background_image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/theme#background_image Theme#background_image}
 
 ---
 
@@ -1101,7 +1101,7 @@ public string EmailTemplateTouchPointVariant { get; set; }
 
 Variant for email templates (`OKTA_DEFAULT`, `FULL_THEME`).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/theme#email_template_touch_point_variant Theme#email_template_touch_point_variant}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/theme#email_template_touch_point_variant Theme#email_template_touch_point_variant}
 
 ---
 
@@ -1115,7 +1115,7 @@ public string EndUserDashboardTouchPointVariant { get; set; }
 
 Variant for the Okta End-User Dashboard (`OKTA_DEFAULT`, `WHITE_LOGO_BACKGROUND`, `FULL_THEME`, `LOGO_ON_FULL_WHITE_BACKGROUND`).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/theme#end_user_dashboard_touch_point_variant Theme#end_user_dashboard_touch_point_variant}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/theme#end_user_dashboard_touch_point_variant Theme#end_user_dashboard_touch_point_variant}
 
 ---
 
@@ -1129,7 +1129,7 @@ public string ErrorPageTouchPointVariant { get; set; }
 
 Variant for the error page (`OKTA_DEFAULT`, `BACKGROUND_SECONDARY_COLOR`, `BACKGROUND_IMAGE`).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/theme#error_page_touch_point_variant Theme#error_page_touch_point_variant}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/theme#error_page_touch_point_variant Theme#error_page_touch_point_variant}
 
 ---
 
@@ -1143,7 +1143,7 @@ public string Favicon { get; set; }
 
 Path to local file.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/theme#favicon Theme#favicon}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/theme#favicon Theme#favicon}
 
 ---
 
@@ -1157,7 +1157,7 @@ public string Logo { get; set; }
 
 Path to local file.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/theme#logo Theme#logo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/theme#logo Theme#logo}
 
 ---
 
@@ -1171,7 +1171,7 @@ public string PrimaryColorContrastHex { get; set; }
 
 Primary color contrast hex code.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/theme#primary_color_contrast_hex Theme#primary_color_contrast_hex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/theme#primary_color_contrast_hex Theme#primary_color_contrast_hex}
 
 ---
 
@@ -1185,7 +1185,7 @@ public string PrimaryColorHex { get; set; }
 
 Primary color hex code.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/theme#primary_color_hex Theme#primary_color_hex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/theme#primary_color_hex Theme#primary_color_hex}
 
 ---
 
@@ -1199,7 +1199,7 @@ public string SecondaryColorContrastHex { get; set; }
 
 Secondary color contrast hex code.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/theme#secondary_color_contrast_hex Theme#secondary_color_contrast_hex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/theme#secondary_color_contrast_hex Theme#secondary_color_contrast_hex}
 
 ---
 
@@ -1213,7 +1213,7 @@ public string SecondaryColorHex { get; set; }
 
 Secondary color hex code.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/theme#secondary_color_hex Theme#secondary_color_hex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/theme#secondary_color_hex Theme#secondary_color_hex}
 
 ---
 
@@ -1227,7 +1227,7 @@ public string SignInPageTouchPointVariant { get; set; }
 
 Variant for the Okta Sign-In Page (`OKTA_DEFAULT`, `BACKGROUND_SECONDARY_COLOR`, `BACKGROUND_IMAGE`).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/theme#sign_in_page_touch_point_variant Theme#sign_in_page_touch_point_variant}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/theme#sign_in_page_touch_point_variant Theme#sign_in_page_touch_point_variant}
 
 ---
 
@@ -1243,7 +1243,7 @@ Theme ID - Note: Okta API for theme only reads and updates therefore the okta_th
 
 Do this by setting theme_id.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/theme#theme_id Theme#theme_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/theme#theme_id Theme#theme_id}
 
 ---
 

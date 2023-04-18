@@ -1,6 +1,6 @@
 # `okta_resource_set`
 
-Refer to the Terraform Registory for docs: [`okta_resource_set`](https://www.terraform.io/docs/providers/okta/r/resource_set).
+Refer to the Terraform Registory for docs: [`okta_resource_set`](https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/resource_set).
 
 # `resourceSet` Submodule <a name="`resourceSet` Submodule" id="@cdktf/provider-okta.resourceSet"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_resource_set`](https://www.ter
 
 ### ResourceSet <a name="ResourceSet" id="@cdktf/provider-okta.resourceSet.ResourceSet"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/resource_set okta_resource_set}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/resource_set okta_resource_set}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.resourceSet.ResourceSet.Initializer"></a>
 
@@ -19,6 +19,7 @@ ResourceSet.Builder.create(Construct scope, java.lang.String id)
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -38,7 +39,7 @@ ResourceSet.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSet.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSet.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSet.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSet.Initializer.parameter.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSet.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSet.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSet.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSet.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -46,7 +47,7 @@ ResourceSet.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSet.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSet.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | A description of the Resource Set. |
 | <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSet.Initializer.parameter.label">label</a></code> | <code>java.lang.String</code> | Unique name given to the Resource Set. |
-| <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSet.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/resource_set#id ResourceSet#id}. |
+| <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSet.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/resource_set#id ResourceSet#id}. |
 | <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSet.Initializer.parameter.resources">resources</a></code> | <code>java.util.List<java.lang.String></code> | The endpoints that reference the resources to be included in the new Resource Set. |
 
 ---
@@ -77,7 +78,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.resourceSet.ResourceSet.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -117,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 A description of the Resource Set.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/resource_set#description ResourceSet#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/resource_set#description ResourceSet#description}
 
 ---
 
@@ -127,7 +128,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 Unique name given to the Resource Set.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/resource_set#label ResourceSet#label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/resource_set#label ResourceSet#label}
 
 ---
 
@@ -135,7 +136,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/resource_set#id ResourceSet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/resource_set#id ResourceSet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -148,7 +149,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The endpoints that reference the resources to be included in the new Resource Set.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/resource_set#resources ResourceSet#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/resource_set#resources ResourceSet#resources}
 
 ---
 
@@ -455,7 +456,7 @@ ResourceSet.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSet.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSet.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSet.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSet.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSet.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSet.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSet.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSet.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -557,10 +558,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.resourceSet.ResourceSet.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -725,6 +726,7 @@ ResourceSetConfig.builder()
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -744,7 +746,7 @@ ResourceSetConfig.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSetConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSetConfig.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSetConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSetConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSetConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSetConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -752,7 +754,7 @@ ResourceSetConfig.builder()
 | <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSetConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSetConfig.property.description">description</a></code> | <code>java.lang.String</code> | A description of the Resource Set. |
 | <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSetConfig.property.label">label</a></code> | <code>java.lang.String</code> | Unique name given to the Resource Set. |
-| <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSetConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/resource_set#id ResourceSet#id}. |
+| <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSetConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/resource_set#id ResourceSet#id}. |
 | <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSetConfig.property.resources">resources</a></code> | <code>java.util.List<java.lang.String></code> | The endpoints that reference the resources to be included in the new Resource Set. |
 
 ---
@@ -770,10 +772,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.resourceSet.ResourceSetConfig.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -837,7 +839,7 @@ public java.lang.String getDescription();
 
 A description of the Resource Set.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/resource_set#description ResourceSet#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/resource_set#description ResourceSet#description}
 
 ---
 
@@ -851,7 +853,7 @@ public java.lang.String getLabel();
 
 Unique name given to the Resource Set.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/resource_set#label ResourceSet#label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/resource_set#label ResourceSet#label}
 
 ---
 
@@ -863,7 +865,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/resource_set#id ResourceSet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/resource_set#id ResourceSet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -880,7 +882,7 @@ public java.util.List<java.lang.String> getResources();
 
 The endpoints that reference the resources to be included in the new Resource Set.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/resource_set#resources ResourceSet#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/resource_set#resources ResourceSet#resources}
 
 ---
 

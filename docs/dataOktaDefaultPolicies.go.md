@@ -1,6 +1,6 @@
 # `data_okta_default_policies`
 
-Refer to the Terraform Registory for docs: [`data_okta_default_policies`](https://www.terraform.io/docs/providers/okta/d/default_policies).
+Refer to the Terraform Registory for docs: [`data_okta_default_policies`](https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/default_policies).
 
 # `dataOktaDefaultPolicies` Submodule <a name="`dataOktaDefaultPolicies` Submodule" id="@cdktf/provider-okta.dataOktaDefaultPolicies"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_okta_default_policies`](https:
 
 ### DataOktaDefaultPolicies <a name="DataOktaDefaultPolicies" id="@cdktf/provider-okta.dataOktaDefaultPolicies.DataOktaDefaultPolicies"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/d/default_policies okta_default_policies}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/default_policies okta_default_policies}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaDefaultPolicies.DataOktaDefaultPolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/dataoktadefaultpolicies"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktadefaultpolicies"
 
 dataoktadefaultpolicies.NewDataOktaDefaultPolicies(scope Construct, id *string, config DataOktaDefaultPoliciesConfig) DataOktaDefaultPolicies
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.dataOktaDefaultPolicies.DataOktaDefaultPolicies.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/dataoktadefaultpolicies"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktadefaultpolicies"
 
 dataoktadefaultpolicies.DataOktaDefaultPolicies_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.dataOktaDefaultPolicies.DataOktaDefaultPolicies.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/dataoktadefaultpolicies"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktadefaultpolicies"
 
 dataoktadefaultpolicies.DataOktaDefaultPolicies_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ dataoktadefaultpolicies.DataOktaDefaultPolicies_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-okta.dataOktaDefaultPolicies.DataOktaDefaultPolicies.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/dataoktadefaultpolicies"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktadefaultpolicies"
 
 dataoktadefaultpolicies.DataOktaDefaultPolicies_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -345,7 +345,7 @@ dataoktadefaultpolicies.DataOktaDefaultPolicies_IsTerraformDataSource(x interfac
 | <code><a href="#@cdktf/provider-okta.dataOktaDefaultPolicies.DataOktaDefaultPolicies.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaDefaultPolicies.DataOktaDefaultPolicies.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaDefaultPolicies.DataOktaDefaultPolicies.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.dataOktaDefaultPolicies.DataOktaDefaultPolicies.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.dataOktaDefaultPolicies.DataOktaDefaultPolicies.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaDefaultPolicies.DataOktaDefaultPolicies.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaDefaultPolicies.DataOktaDefaultPolicies.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaDefaultPolicies.DataOktaDefaultPolicies.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -432,10 +432,10 @@ func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.dataOktaDefaultPolicies.DataOktaDefaultPolicies.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -544,11 +544,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaDefaultPolicies.DataOktaDefaultPoliciesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/dataoktadefaultpolicies"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktadefaultpolicies"
 
 &dataoktadefaultpolicies.DataOktaDefaultPoliciesConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -564,14 +564,14 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v6/dataoktadefaultpolicies"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-okta.dataOktaDefaultPolicies.DataOktaDefaultPoliciesConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.dataOktaDefaultPolicies.DataOktaDefaultPoliciesConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.dataOktaDefaultPolicies.DataOktaDefaultPoliciesConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaDefaultPolicies.DataOktaDefaultPoliciesConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaDefaultPolicies.DataOktaDefaultPoliciesConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaDefaultPolicies.DataOktaDefaultPoliciesConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaDefaultPolicies.DataOktaDefaultPoliciesConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaDefaultPolicies.DataOktaDefaultPoliciesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaDefaultPolicies.DataOktaDefaultPoliciesConfig.property.type">Type</a></code> | <code>*string</code> | Policy type: OKTA_SIGN_ON, PASSWORD, MFA_ENROLL, or IDP_DISCOVERY. |
-| <code><a href="#@cdktf/provider-okta.dataOktaDefaultPolicies.DataOktaDefaultPoliciesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/default_policies#id DataOktaDefaultPolicies#id}. |
+| <code><a href="#@cdktf/provider-okta.dataOktaDefaultPolicies.DataOktaDefaultPoliciesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/default_policies#id DataOktaDefaultPolicies#id}. |
 
 ---
 
@@ -588,10 +588,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.dataOktaDefaultPolicies.DataOktaDefaultPoliciesConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -655,7 +655,7 @@ Type *string
 
 Policy type: OKTA_SIGN_ON, PASSWORD, MFA_ENROLL, or IDP_DISCOVERY.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/default_policies#type DataOktaDefaultPolicies#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/default_policies#type DataOktaDefaultPolicies#type}
 
 ---
 
@@ -667,7 +667,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/d/default_policies#id DataOktaDefaultPolicies#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/default_policies#id DataOktaDefaultPolicies#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

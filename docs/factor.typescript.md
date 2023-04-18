@@ -1,6 +1,6 @@
 # `okta_factor`
 
-Refer to the Terraform Registory for docs: [`okta_factor`](https://www.terraform.io/docs/providers/okta/r/factor).
+Refer to the Terraform Registory for docs: [`okta_factor`](https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/factor).
 
 # `factor` Submodule <a name="`factor` Submodule" id="@cdktf/provider-okta.factor"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_factor`](https://www.terraform
 
 ### Factor <a name="Factor" id="@cdktf/provider-okta.factor.Factor"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/okta/r/factor okta_factor}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/factor okta_factor}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.factor.Factor.Initializer"></a>
 
@@ -353,7 +353,7 @@ factor.Factor.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-okta.factor.Factor.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.factor.Factor.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.factor.Factor.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.factor.Factor.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.factor.Factor.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.factor.Factor.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.factor.Factor.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.factor.Factor.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -453,10 +453,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.factor.Factor.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -605,7 +605,7 @@ const factorConfig: factor.FactorConfig = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-okta.factor.FactorConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.factor.FactorConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.factor.FactorConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.factor.FactorConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.factor.FactorConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.factor.FactorConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -613,7 +613,7 @@ const factorConfig: factor.FactorConfig = { ... }
 | <code><a href="#@cdktf/provider-okta.factor.FactorConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.factor.FactorConfig.property.providerId">providerId</a></code> | <code>string</code> | Factor provider ID. |
 | <code><a href="#@cdktf/provider-okta.factor.FactorConfig.property.active">active</a></code> | <code>boolean \| cdktf.IResolvable</code> | Is this provider active? |
-| <code><a href="#@cdktf/provider-okta.factor.FactorConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/factor#id Factor#id}. |
+| <code><a href="#@cdktf/provider-okta.factor.FactorConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/factor#id Factor#id}. |
 
 ---
 
@@ -630,10 +630,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.factor.FactorConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -697,7 +697,7 @@ public readonly providerId: string;
 
 Factor provider ID.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/factor#provider_id Factor#provider_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/factor#provider_id Factor#provider_id}
 
 ---
 
@@ -711,7 +711,7 @@ public readonly active: boolean | IResolvable;
 
 Is this provider active?
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/factor#active Factor#active}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/factor#active Factor#active}
 
 ---
 
@@ -723,7 +723,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/factor#id Factor#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/factor#id Factor#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

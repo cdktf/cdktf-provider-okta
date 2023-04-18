@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/okta/r/user_schema
+// https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user_schema
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,41 +10,41 @@ export interface UserSchemaConfig extends cdktf.TerraformMetaArguments {
   /**
   * Custom Subschema enumerated value of a property of type array.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema#array_enum UserSchema#array_enum}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user_schema#array_enum UserSchema#array_enum}
   */
   readonly arrayEnum?: string[];
   /**
   * Subschema array type: string, number, integer, reference. Type field must be an array.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema#array_type UserSchema#array_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user_schema#array_type UserSchema#array_type}
   */
   readonly arrayType?: string;
   /**
   * Custom Subschema description
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema#description UserSchema#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user_schema#description UserSchema#description}
   */
   readonly description?: string;
   /**
   * Custom Subschema enumerated value of the property. see: developer.okta.com/docs/api/resources/schemas#user-profile-schema-property-object
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema#enum UserSchema#enum}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user_schema#enum UserSchema#enum}
   */
   readonly enum?: string[];
   /**
   * Subschema external name
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema#external_name UserSchema#external_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user_schema#external_name UserSchema#external_name}
   */
   readonly externalName?: string;
   /**
   * Subschema external namespace
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema#external_namespace UserSchema#external_namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user_schema#external_namespace UserSchema#external_namespace}
   */
   readonly externalNamespace?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema#id UserSchema#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user_schema#id UserSchema#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -53,89 +53,89 @@ export interface UserSchemaConfig extends cdktf.TerraformMetaArguments {
   /**
   * Subschema unique string identifier
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema#index UserSchema#index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user_schema#index UserSchema#index}
   */
   readonly index: string;
   /**
   * SubSchema profile manager, if not set it will inherit its setting.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema#master UserSchema#master}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user_schema#master UserSchema#master}
   */
   readonly master?: string;
   /**
   * Subschema of type string maximum length
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema#max_length UserSchema#max_length}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user_schema#max_length UserSchema#max_length}
   */
   readonly maxLength?: number;
   /**
   * Subschema of type string minimum length
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema#min_length UserSchema#min_length}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user_schema#min_length UserSchema#min_length}
   */
   readonly minLength?: number;
   /**
   * The validation pattern to use for the subschema. Must be in form of '.+', or '[<pattern>]+' if present.'
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema#pattern UserSchema#pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user_schema#pattern UserSchema#pattern}
   */
   readonly pattern?: string;
   /**
   * SubSchema permissions: HIDE, READ_ONLY, or READ_WRITE.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema#permissions UserSchema#permissions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user_schema#permissions UserSchema#permissions}
   */
   readonly permissions?: string;
   /**
   * Whether the subschema is required
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema#required UserSchema#required}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user_schema#required UserSchema#required}
   */
   readonly required?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema#scope UserSchema#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user_schema#scope UserSchema#scope}
   */
   readonly scope?: string;
   /**
   * Subschema title (display name)
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema#title UserSchema#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user_schema#title UserSchema#title}
   */
   readonly title: string;
   /**
   * Subschema type: string, boolean, number, integer, array, or object
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema#type UserSchema#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user_schema#type UserSchema#type}
   */
   readonly type: string;
   /**
   * Subschema unique restriction
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema#unique UserSchema#unique}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user_schema#unique UserSchema#unique}
   */
   readonly unique?: string;
   /**
   * Custom subschema user type
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema#user_type UserSchema#user_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user_schema#user_type UserSchema#user_type}
   */
   readonly userType?: string;
   /**
   * array_one_of block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema#array_one_of UserSchema#array_one_of}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user_schema#array_one_of UserSchema#array_one_of}
   */
   readonly arrayOneOf?: UserSchemaArrayOneOf[] | cdktf.IResolvable;
   /**
   * master_override_priority block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema#master_override_priority UserSchema#master_override_priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user_schema#master_override_priority UserSchema#master_override_priority}
   */
   readonly masterOverridePriority?: UserSchemaMasterOverridePriority[] | cdktf.IResolvable;
   /**
   * one_of block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema#one_of UserSchema#one_of}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user_schema#one_of UserSchema#one_of}
   */
   readonly oneOf?: UserSchemaOneOf[] | cdktf.IResolvable;
 }
@@ -143,13 +143,13 @@ export interface UserSchemaArrayOneOf {
   /**
   * Enum value
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema#const UserSchema#const}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user_schema#const UserSchema#const}
   */
   readonly const: string;
   /**
   * Enum title
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema#title UserSchema#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user_schema#title UserSchema#title}
   */
   readonly title: string;
 }
@@ -263,11 +263,11 @@ export class UserSchemaArrayOneOfList extends cdktf.ComplexList {
 }
 export interface UserSchemaMasterOverridePriority {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema#type UserSchema#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user_schema#type UserSchema#type}
   */
   readonly type?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema#value UserSchema#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user_schema#value UserSchema#value}
   */
   readonly value: string;
 }
@@ -386,13 +386,13 @@ export interface UserSchemaOneOf {
   /**
   * Enum value
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema#const UserSchema#const}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user_schema#const UserSchema#const}
   */
   readonly const: string;
   /**
   * Enum title
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/okta/r/user_schema#title UserSchema#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user_schema#title UserSchema#title}
   */
   readonly title: string;
 }
@@ -506,7 +506,7 @@ export class UserSchemaOneOfList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/okta/r/user_schema okta_user_schema}
+* Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user_schema okta_user_schema}
 */
 export class UserSchema extends cdktf.TerraformResource {
 
@@ -520,7 +520,7 @@ export class UserSchema extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/okta/r/user_schema okta_user_schema} Resource
+  * Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user_schema okta_user_schema} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
