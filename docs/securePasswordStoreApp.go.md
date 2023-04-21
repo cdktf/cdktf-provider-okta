@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/doc
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.securePasswordStoreApp.SecurePasswordStoreApp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/securepasswordstoreapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/securepasswordstoreapp"
 
 securepasswordstoreapp.NewSecurePasswordStoreApp(scope Construct, id *string, config SecurePasswordStoreAppConfig) SecurePasswordStoreApp
 ```
@@ -513,7 +513,7 @@ func ResetUsers()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.securePasswordStoreApp.SecurePasswordStoreApp.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/securepasswordstoreapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/securepasswordstoreapp"
 
 securepasswordstoreapp.SecurePasswordStoreApp_IsConstruct(x interface{}) *bool
 ```
@@ -545,7 +545,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.securePasswordStoreApp.SecurePasswordStoreApp.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/securepasswordstoreapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/securepasswordstoreapp"
 
 securepasswordstoreapp.SecurePasswordStoreApp_IsTerraformElement(x interface{}) *bool
 ```
@@ -559,7 +559,7 @@ securepasswordstoreapp.SecurePasswordStoreApp_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.securePasswordStoreApp.SecurePasswordStoreApp.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/securepasswordstoreapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/securepasswordstoreapp"
 
 securepasswordstoreapp.SecurePasswordStoreApp_IsTerraformResource(x interface{}) *bool
 ```
@@ -1561,7 +1561,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.securePasswordStoreApp.SecurePasswordStoreAppConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/securepasswordstoreapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/securepasswordstoreapp"
 
 &securepasswordstoreapp.SecurePasswordStoreAppConfig {
 	Connection: interface{},
@@ -1600,7 +1600,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/securepasswordstoreapp"
 	SkipGroups: interface{},
 	SkipUsers: interface{},
 	Status: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-okta-go/okta/v7.securePasswordStoreApp.SecurePasswordStoreAppTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-okta-go/okta.securePasswordStoreApp.SecurePasswordStoreAppTimeouts,
 	UserNameTemplate: *string,
 	UserNameTemplatePushStatus: *string,
 	UserNameTemplateSuffix: *string,
@@ -2224,7 +2224,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.securePasswordStoreApp.SecurePasswordStoreAppTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/securepasswordstoreapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/securepasswordstoreapp"
 
 &securepasswordstoreapp.SecurePasswordStoreAppTimeouts {
 	Create: *string,
@@ -2284,7 +2284,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.securePasswordStoreApp.SecurePasswordStoreAppUsers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/securepasswordstoreapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/securepasswordstoreapp"
 
 &securepasswordstoreapp.SecurePasswordStoreAppUsers {
 	Id: *string,
@@ -2355,7 +2355,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.securePasswordStoreApp.SecurePasswordStoreAppTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/securepasswordstoreapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/securepasswordstoreapp"
 
 securepasswordstoreapp.NewSecurePasswordStoreAppTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecurePasswordStoreAppTimeoutsOutputReference
 ```
@@ -2691,7 +2691,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.securePasswordStoreApp.SecurePasswordStoreAppUsersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/securepasswordstoreapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/securepasswordstoreapp"
 
 securepasswordstoreapp.NewSecurePasswordStoreAppUsersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecurePasswordStoreAppUsersList
 ```
@@ -2834,7 +2834,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.securePasswordStoreApp.SecurePasswordStoreAppUsersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/securepasswordstoreapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/securepasswordstoreapp"
 
 securepasswordstoreapp.NewSecurePasswordStoreAppUsersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecurePasswordStoreAppUsersOutputReference
 ```
