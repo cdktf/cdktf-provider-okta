@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/doc
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaUserType.DataOktaUserType.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktausertype"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/dataoktausertype"
 
 dataoktausertype.NewDataOktaUserType(scope Construct, id *string, config DataOktaUserTypeConfig) DataOktaUserType
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.dataOktaUserType.DataOktaUserType.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktausertype"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/dataoktausertype"
 
 dataoktausertype.DataOktaUserType_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.dataOktaUserType.DataOktaUserType.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktausertype"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/dataoktausertype"
 
 dataoktausertype.DataOktaUserType_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ dataoktausertype.DataOktaUserType_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-okta.dataOktaUserType.DataOktaUserType.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktausertype"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/dataoktausertype"
 
 dataoktausertype.DataOktaUserType_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -566,7 +566,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaUserType.DataOktaUserTypeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktausertype"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/dataoktausertype"
 
 &dataoktausertype.DataOktaUserTypeConfig {
 	Connection: interface{},
