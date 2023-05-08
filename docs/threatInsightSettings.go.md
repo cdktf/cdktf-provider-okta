@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/doc
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.threatInsightSettings.ThreatInsightSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/threatinsightsettings"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/threatinsightsettings"
 
 threatinsightsettings.NewThreatInsightSettings(scope Construct, id *string, config ThreatInsightSettingsConfig) ThreatInsightSettings
 ```
@@ -284,7 +284,7 @@ func ResetNetworkExcludes()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.threatInsightSettings.ThreatInsightSettings.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/threatinsightsettings"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/threatinsightsettings"
 
 threatinsightsettings.ThreatInsightSettings_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.threatInsightSettings.ThreatInsightSettings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/threatinsightsettings"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/threatinsightsettings"
 
 threatinsightsettings.ThreatInsightSettings_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ threatinsightsettings.ThreatInsightSettings_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.threatInsightSettings.ThreatInsightSettings.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/threatinsightsettings"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/threatinsightsettings"
 
 threatinsightsettings.ThreatInsightSettings_IsTerraformResource(x interface{}) *bool
 ```
@@ -595,7 +595,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.threatInsightSettings.ThreatInsightSettingsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/threatinsightsettings"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/threatinsightsettings"
 
 &threatinsightsettings.ThreatInsightSettingsConfig {
 	Connection: interface{},

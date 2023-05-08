@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/doc
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.autoLoginApp.AutoLoginApp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/autologinapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/autologinapp"
 
 autologinapp.NewAutoLoginApp(scope Construct, id *string, config AutoLoginAppConfig) AutoLoginApp
 ```
@@ -499,7 +499,7 @@ func ResetUsers()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.autoLoginApp.AutoLoginApp.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/autologinapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/autologinapp"
 
 autologinapp.AutoLoginApp_IsConstruct(x interface{}) *bool
 ```
@@ -531,7 +531,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.autoLoginApp.AutoLoginApp.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/autologinapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/autologinapp"
 
 autologinapp.AutoLoginApp_IsTerraformElement(x interface{}) *bool
 ```
@@ -545,7 +545,7 @@ autologinapp.AutoLoginApp_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.autoLoginApp.AutoLoginApp.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/autologinapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/autologinapp"
 
 autologinapp.AutoLoginApp_IsTerraformResource(x interface{}) *bool
 ```
@@ -1437,7 +1437,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.autoLoginApp.AutoLoginAppConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/autologinapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/autologinapp"
 
 &autologinapp.AutoLoginAppConfig {
 	Connection: interface{},
@@ -1471,7 +1471,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/autologinapp"
 	SkipGroups: interface{},
 	SkipUsers: interface{},
 	Status: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-okta-go/okta.autoLoginApp.AutoLoginAppTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-okta-go/okta/v7.autoLoginApp.AutoLoginAppTimeouts,
 	UserNameTemplate: *string,
 	UserNameTemplatePushStatus: *string,
 	UserNameTemplateSuffix: *string,
@@ -2020,7 +2020,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.autoLoginApp.AutoLoginAppTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/autologinapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/autologinapp"
 
 &autologinapp.AutoLoginAppTimeouts {
 	Create: *string,
@@ -2080,7 +2080,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.autoLoginApp.AutoLoginAppUsers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/autologinapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/autologinapp"
 
 &autologinapp.AutoLoginAppUsers {
 	Id: *string,
@@ -2151,7 +2151,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.autoLoginApp.AutoLoginAppTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/autologinapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/autologinapp"
 
 autologinapp.NewAutoLoginAppTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AutoLoginAppTimeoutsOutputReference
 ```
@@ -2487,7 +2487,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.autoLoginApp.AutoLoginAppUsersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/autologinapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/autologinapp"
 
 autologinapp.NewAutoLoginAppUsersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AutoLoginAppUsersList
 ```
@@ -2630,7 +2630,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.autoLoginApp.AutoLoginAppUsersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/autologinapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/autologinapp"
 
 autologinapp.NewAutoLoginAppUsersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AutoLoginAppUsersOutputReference
 ```

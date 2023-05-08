@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/doc
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.signonPolicy.SignonPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/signonpolicy"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/signonpolicy"
 
 signonpolicy.NewSignonPolicy(scope Construct, id *string, config SignonPolicyConfig) SignonPolicy
 ```
@@ -305,7 +305,7 @@ func ResetStatus()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.signonPolicy.SignonPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/signonpolicy"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/signonpolicy"
 
 signonpolicy.SignonPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.signonPolicy.SignonPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/signonpolicy"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/signonpolicy"
 
 signonpolicy.SignonPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ signonpolicy.SignonPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.signonPolicy.SignonPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/signonpolicy"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/signonpolicy"
 
 signonpolicy.SignonPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -682,7 +682,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.signonPolicy.SignonPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/signonpolicy"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/signonpolicy"
 
 &signonpolicy.SignonPolicyConfig {
 	Connection: interface{},

@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/doc
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaEveryoneGroup.DataOktaEveryoneGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaeveryonegroup"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/dataoktaeveryonegroup"
 
 dataoktaeveryonegroup.NewDataOktaEveryoneGroup(scope Construct, id *string, config DataOktaEveryoneGroupConfig) DataOktaEveryoneGroup
 ```
@@ -284,7 +284,7 @@ func ResetIncludeUsers()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.dataOktaEveryoneGroup.DataOktaEveryoneGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaeveryonegroup"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/dataoktaeveryonegroup"
 
 dataoktaeveryonegroup.DataOktaEveryoneGroup_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.dataOktaEveryoneGroup.DataOktaEveryoneGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaeveryonegroup"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/dataoktaeveryonegroup"
 
 dataoktaeveryonegroup.DataOktaEveryoneGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ dataoktaeveryonegroup.DataOktaEveryoneGroup_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-okta.dataOktaEveryoneGroup.DataOktaEveryoneGroup.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaeveryonegroup"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/dataoktaeveryonegroup"
 
 dataoktaeveryonegroup.DataOktaEveryoneGroup_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -562,7 +562,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaEveryoneGroup.DataOktaEveryoneGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaeveryonegroup"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/dataoktaeveryonegroup"
 
 &dataoktaeveryonegroup.DataOktaEveryoneGroupConfig {
 	Connection: interface{},
