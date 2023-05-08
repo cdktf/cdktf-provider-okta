@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/doc
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.passwordPolicy.PasswordPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/passwordpolicy"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/passwordpolicy"
 
 passwordpolicy.NewPasswordPolicy(scope Construct, id *string, config PasswordPolicyConfig) PasswordPolicy
 ```
@@ -480,7 +480,7 @@ func ResetStatus()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.passwordPolicy.PasswordPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/passwordpolicy"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/passwordpolicy"
 
 passwordpolicy.PasswordPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -512,7 +512,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.passwordPolicy.PasswordPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/passwordpolicy"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/passwordpolicy"
 
 passwordpolicy.PasswordPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -526,7 +526,7 @@ passwordpolicy.PasswordPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.passwordPolicy.PasswordPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/passwordpolicy"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/passwordpolicy"
 
 passwordpolicy.PasswordPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -1407,7 +1407,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.passwordPolicy.PasswordPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/passwordpolicy"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/passwordpolicy"
 
 &passwordpolicy.PasswordPolicyConfig {
 	Connection: interface{},
