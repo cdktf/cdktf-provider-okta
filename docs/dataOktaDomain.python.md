@@ -1,6 +1,6 @@
 # `data_okta_domain`
 
-Refer to the Terraform Registory for docs: [`data_okta_domain`](https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/domain).
+Refer to the Terraform Registory for docs: [`data_okta_domain`](https://registry.terraform.io/providers/okta/okta/4.0.0/docs/data-sources/domain).
 
 # `dataOktaDomain` Submodule <a name="`dataOktaDomain` Submodule" id="@cdktf/provider-okta.dataOktaDomain"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_okta_domain`](https://registry
 
 ### DataOktaDomain <a name="DataOktaDomain" id="@cdktf/provider-okta.dataOktaDomain.DataOktaDomain"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/domain okta_domain}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/data-sources/domain okta_domain}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaDomain.DataOktaDomain.Initializer"></a>
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 Brand ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/domain#domain_id_or_name DataOktaDomain#domain_id_or_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/data-sources/domain#domain_id_or_name DataOktaDomain#domain_id_or_name}
 
 ---
 
@@ -785,7 +785,7 @@ domain_id_or_name: str
 
 Brand ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/domain#domain_id_or_name DataOktaDomain#domain_id_or_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/data-sources/domain#domain_id_or_name DataOktaDomain#domain_id_or_name}
 
 ---
 

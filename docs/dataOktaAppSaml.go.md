@@ -1,6 +1,6 @@
 # `data_okta_app_saml`
 
-Refer to the Terraform Registory for docs: [`data_okta_app_saml`](https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/app_saml).
+Refer to the Terraform Registory for docs: [`data_okta_app_saml`](https://registry.terraform.io/providers/okta/okta/4.0.0/docs/data-sources/app_saml).
 
 # `dataOktaAppSaml` Submodule <a name="`dataOktaAppSaml` Submodule" id="@cdktf/provider-okta.dataOktaAppSaml"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_okta_app_saml`](https://regist
 
 ### DataOktaAppSaml <a name="DataOktaAppSaml" id="@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSaml"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/app_saml okta_app_saml}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/data-sources/app_saml okta_app_saml}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSaml.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/dataoktaappsaml"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaappsaml"
 
 dataoktaappsaml.NewDataOktaAppSaml(scope Construct, id *string, config DataOktaAppSamlConfig) DataOktaAppSaml
 ```
@@ -75,8 +75,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSaml.resetLabel">ResetLabel</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSaml.resetLabelPrefix">ResetLabelPrefix</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSaml.resetRequestCompressed">ResetRequestCompressed</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSaml.resetSkipGroups">ResetSkipGroups</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSaml.resetSkipUsers">ResetSkipUsers</a></code> | *No description.* |
 
 ---
 
@@ -294,18 +292,6 @@ func ResetLabelPrefix()
 func ResetRequestCompressed()
 ```
 
-##### `ResetSkipGroups` <a name="ResetSkipGroups" id="@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSaml.resetSkipGroups"></a>
-
-```go
-func ResetSkipGroups()
-```
-
-##### `ResetSkipUsers` <a name="ResetSkipUsers" id="@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSaml.resetSkipUsers"></a>
-
-```go
-func ResetSkipUsers()
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -319,7 +305,7 @@ func ResetSkipUsers()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSaml.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/dataoktaappsaml"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaappsaml"
 
 dataoktaappsaml.DataOktaAppSaml_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSaml.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/dataoktaappsaml"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaappsaml"
 
 dataoktaappsaml.DataOktaAppSaml_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +351,7 @@ dataoktaappsaml.DataOktaAppSaml_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSaml.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/dataoktaappsaml"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaappsaml"
 
 dataoktaappsaml.DataOktaAppSaml_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -437,15 +423,11 @@ dataoktaappsaml.DataOktaAppSaml_IsTerraformDataSource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSaml.property.labelInput">LabelInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSaml.property.labelPrefixInput">LabelPrefixInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSaml.property.requestCompressedInput">RequestCompressedInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSaml.property.skipGroupsInput">SkipGroupsInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSaml.property.skipUsersInput">SkipUsersInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSaml.property.activeOnly">ActiveOnly</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSaml.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSaml.property.label">Label</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSaml.property.labelPrefix">LabelPrefix</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSaml.property.requestCompressed">RequestCompressed</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSaml.property.skipGroups">SkipGroups</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSaml.property.skipUsers">SkipUsers</a></code> | <code>interface{}</code> | *No description.* |
 
 ---
 
@@ -1021,26 +1003,6 @@ func RequestCompressedInput() interface{}
 
 ---
 
-##### `SkipGroupsInput`<sup>Optional</sup> <a name="SkipGroupsInput" id="@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSaml.property.skipGroupsInput"></a>
-
-```go
-func SkipGroupsInput() interface{}
-```
-
-- *Type:* interface{}
-
----
-
-##### `SkipUsersInput`<sup>Optional</sup> <a name="SkipUsersInput" id="@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSaml.property.skipUsersInput"></a>
-
-```go
-func SkipUsersInput() interface{}
-```
-
-- *Type:* interface{}
-
----
-
 ##### `ActiveOnly`<sup>Required</sup> <a name="ActiveOnly" id="@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSaml.property.activeOnly"></a>
 
 ```go
@@ -1091,26 +1053,6 @@ func RequestCompressed() interface{}
 
 ---
 
-##### `SkipGroups`<sup>Required</sup> <a name="SkipGroups" id="@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSaml.property.skipGroups"></a>
-
-```go
-func SkipGroups() interface{}
-```
-
-- *Type:* interface{}
-
----
-
-##### `SkipUsers`<sup>Required</sup> <a name="SkipUsers" id="@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSaml.property.skipUsers"></a>
-
-```go
-func SkipUsers() interface{}
-```
-
-- *Type:* interface{}
-
----
-
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -1136,7 +1078,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSamlAttributeStatements.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/dataoktaappsaml"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaappsaml"
 
 &dataoktaappsaml.DataOktaAppSamlAttributeStatements {
 
@@ -1149,7 +1091,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/dataoktaappsaml"
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSamlConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/dataoktaappsaml"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaappsaml"
 
 &dataoktaappsaml.DataOktaAppSamlConfig {
 	Connection: interface{},
@@ -1164,8 +1106,6 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/dataoktaappsaml"
 	Label: *string,
 	LabelPrefix: *string,
 	RequestCompressed: interface{},
-	SkipGroups: interface{},
-	SkipUsers: interface{},
 }
 ```
 
@@ -1181,12 +1121,10 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/dataoktaappsaml"
 | <code><a href="#@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSamlConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSamlConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSamlConfig.property.activeOnly">ActiveOnly</a></code> | <code>interface{}</code> | Search only ACTIVE applications. |
-| <code><a href="#@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSamlConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/app_saml#id DataOktaAppSaml#id}. |
-| <code><a href="#@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSamlConfig.property.label">Label</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/app_saml#label DataOktaAppSaml#label}. |
-| <code><a href="#@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSamlConfig.property.labelPrefix">LabelPrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/app_saml#label_prefix DataOktaAppSaml#label_prefix}. |
+| <code><a href="#@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSamlConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/data-sources/app_saml#id DataOktaAppSaml#id}. |
+| <code><a href="#@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSamlConfig.property.label">Label</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/data-sources/app_saml#label DataOktaAppSaml#label}. |
+| <code><a href="#@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSamlConfig.property.labelPrefix">LabelPrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/data-sources/app_saml#label_prefix DataOktaAppSaml#label_prefix}. |
 | <code><a href="#@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSamlConfig.property.requestCompressed">RequestCompressed</a></code> | <code>interface{}</code> | Denotes whether the request is compressed or not. |
-| <code><a href="#@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSamlConfig.property.skipGroups">SkipGroups</a></code> | <code>interface{}</code> | Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources. |
-| <code><a href="#@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSamlConfig.property.skipUsers">SkipUsers</a></code> | <code>interface{}</code> | Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources. |
 
 ---
 
@@ -1270,7 +1208,7 @@ ActiveOnly interface{}
 
 Search only ACTIVE applications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/app_saml#active_only DataOktaAppSaml#active_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/data-sources/app_saml#active_only DataOktaAppSaml#active_only}
 
 ---
 
@@ -1282,7 +1220,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/app_saml#id DataOktaAppSaml#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/data-sources/app_saml#id DataOktaAppSaml#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1297,7 +1235,7 @@ Label *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/app_saml#label DataOktaAppSaml#label}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/data-sources/app_saml#label DataOktaAppSaml#label}.
 
 ---
 
@@ -1309,7 +1247,7 @@ LabelPrefix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/app_saml#label_prefix DataOktaAppSaml#label_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/data-sources/app_saml#label_prefix DataOktaAppSaml#label_prefix}.
 
 ---
 
@@ -1323,35 +1261,7 @@ RequestCompressed interface{}
 
 Denotes whether the request is compressed or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/app_saml#request_compressed DataOktaAppSaml#request_compressed}
-
----
-
-##### `SkipGroups`<sup>Optional</sup> <a name="SkipGroups" id="@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSamlConfig.property.skipGroups"></a>
-
-```go
-SkipGroups interface{}
-```
-
-- *Type:* interface{}
-
-Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/app_saml#skip_groups DataOktaAppSaml#skip_groups}
-
----
-
-##### `SkipUsers`<sup>Optional</sup> <a name="SkipUsers" id="@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSamlConfig.property.skipUsers"></a>
-
-```go
-SkipUsers interface{}
-```
-
-- *Type:* interface{}
-
-Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/app_saml#skip_users DataOktaAppSaml#skip_users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/data-sources/app_saml#request_compressed DataOktaAppSaml#request_compressed}
 
 ---
 
@@ -1362,7 +1272,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSamlAttributeStatementsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/dataoktaappsaml"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaappsaml"
 
 dataoktaappsaml.NewDataOktaAppSamlAttributeStatementsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOktaAppSamlAttributeStatementsList
 ```
@@ -1494,7 +1404,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSamlAttributeStatementsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/dataoktaappsaml"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaappsaml"
 
 dataoktaappsaml.NewDataOktaAppSamlAttributeStatementsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataOktaAppSamlAttributeStatementsOutputReference
 ```

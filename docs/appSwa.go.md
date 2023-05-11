@@ -1,6 +1,6 @@
 # `okta_app_swa`
 
-Refer to the Terraform Registory for docs: [`okta_app_swa`](https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa).
+Refer to the Terraform Registory for docs: [`okta_app_swa`](https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa).
 
 # `appSwa` Submodule <a name="`appSwa` Submodule" id="@cdktf/provider-okta.appSwa"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`okta_app_swa`](https://registry.ter
 
 ### AppSwa <a name="AppSwa" id="@cdktf/provider-okta.appSwa.AppSwa"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa okta_app_swa}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa okta_app_swa}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appSwa.AppSwa.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/appswa"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appswa"
 
 appswa.NewAppSwa(scope Construct, id *string, config AppSwaConfig) AppSwa
 ```
@@ -71,7 +71,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.putTimeouts">PutTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.putUsers">PutUsers</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.resetAccessibilityErrorRedirectUrl">ResetAccessibilityErrorRedirectUrl</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.resetAccessibilityLoginRedirectUrl">ResetAccessibilityLoginRedirectUrl</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.resetAccessibilitySelfService">ResetAccessibilitySelfService</a></code> | *No description.* |
@@ -81,7 +80,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.resetButtonField">ResetButtonField</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.resetCheckbox">ResetCheckbox</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.resetEnduserNote">ResetEnduserNote</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.resetGroups">ResetGroups</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.resetHideIos">ResetHideIos</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.resetHideWeb">ResetHideWeb</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.resetId">ResetId</a></code> | *No description.* |
@@ -89,8 +87,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.resetPasswordField">ResetPasswordField</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.resetPreconfiguredApp">ResetPreconfiguredApp</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.resetRedirectUrl">ResetRedirectUrl</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.resetSkipGroups">ResetSkipGroups</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.resetSkipUsers">ResetSkipUsers</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.resetStatus">ResetStatus</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.resetUrl">ResetUrl</a></code> | *No description.* |
@@ -100,7 +96,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.resetUserNameTemplatePushStatus">ResetUserNameTemplatePushStatus</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.resetUserNameTemplateSuffix">ResetUserNameTemplateSuffix</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.resetUserNameTemplateType">ResetUserNameTemplateType</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.resetUsers">ResetUsers</a></code> | *No description.* |
 
 ---
 
@@ -300,18 +295,6 @@ func PutTimeouts(value AppSwaTimeouts)
 
 ---
 
-##### `PutUsers` <a name="PutUsers" id="@cdktf/provider-okta.appSwa.AppSwa.putUsers"></a>
-
-```go
-func PutUsers(value interface{})
-```
-
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-okta.appSwa.AppSwa.putUsers.parameter.value"></a>
-
-- *Type:* interface{}
-
----
-
 ##### `ResetAccessibilityErrorRedirectUrl` <a name="ResetAccessibilityErrorRedirectUrl" id="@cdktf/provider-okta.appSwa.AppSwa.resetAccessibilityErrorRedirectUrl"></a>
 
 ```go
@@ -366,12 +349,6 @@ func ResetCheckbox()
 func ResetEnduserNote()
 ```
 
-##### `ResetGroups` <a name="ResetGroups" id="@cdktf/provider-okta.appSwa.AppSwa.resetGroups"></a>
-
-```go
-func ResetGroups()
-```
-
 ##### `ResetHideIos` <a name="ResetHideIos" id="@cdktf/provider-okta.appSwa.AppSwa.resetHideIos"></a>
 
 ```go
@@ -412,18 +389,6 @@ func ResetPreconfiguredApp()
 
 ```go
 func ResetRedirectUrl()
-```
-
-##### `ResetSkipGroups` <a name="ResetSkipGroups" id="@cdktf/provider-okta.appSwa.AppSwa.resetSkipGroups"></a>
-
-```go
-func ResetSkipGroups()
-```
-
-##### `ResetSkipUsers` <a name="ResetSkipUsers" id="@cdktf/provider-okta.appSwa.AppSwa.resetSkipUsers"></a>
-
-```go
-func ResetSkipUsers()
 ```
 
 ##### `ResetStatus` <a name="ResetStatus" id="@cdktf/provider-okta.appSwa.AppSwa.resetStatus"></a>
@@ -480,12 +445,6 @@ func ResetUserNameTemplateSuffix()
 func ResetUserNameTemplateType()
 ```
 
-##### `ResetUsers` <a name="ResetUsers" id="@cdktf/provider-okta.appSwa.AppSwa.resetUsers"></a>
-
-```go
-func ResetUsers()
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -499,7 +458,7 @@ func ResetUsers()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.appSwa.AppSwa.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/appswa"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appswa"
 
 appswa.AppSwa_IsConstruct(x interface{}) *bool
 ```
@@ -531,7 +490,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.appSwa.AppSwa.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/appswa"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appswa"
 
 appswa.AppSwa_IsTerraformElement(x interface{}) *bool
 ```
@@ -545,7 +504,7 @@ appswa.AppSwa_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.appSwa.AppSwa.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/appswa"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appswa"
 
 appswa.AppSwa_IsTerraformResource(x interface{}) *bool
 ```
@@ -578,7 +537,6 @@ appswa.AppSwa_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.signOnMode">SignOnMode</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-okta.appSwa.AppSwaTimeoutsOutputReference">AppSwaTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.users">Users</a></code> | <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsersList">AppSwaUsersList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.accessibilityErrorRedirectUrlInput">AccessibilityErrorRedirectUrlInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.accessibilityLoginRedirectUrlInput">AccessibilityLoginRedirectUrlInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.accessibilitySelfServiceInput">AccessibilitySelfServiceInput</a></code> | <code>interface{}</code> | *No description.* |
@@ -588,7 +546,6 @@ appswa.AppSwa_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.buttonFieldInput">ButtonFieldInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.checkboxInput">CheckboxInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.enduserNoteInput">EnduserNoteInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.groupsInput">GroupsInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.hideIosInput">HideIosInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.hideWebInput">HideWebInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
@@ -597,8 +554,6 @@ appswa.AppSwa_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.passwordFieldInput">PasswordFieldInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.preconfiguredAppInput">PreconfiguredAppInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.redirectUrlInput">RedirectUrlInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.skipGroupsInput">SkipGroupsInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.skipUsersInput">SkipUsersInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.statusInput">StatusInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.urlInput">UrlInput</a></code> | <code>*string</code> | *No description.* |
@@ -608,7 +563,6 @@ appswa.AppSwa_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.userNameTemplatePushStatusInput">UserNameTemplatePushStatusInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.userNameTemplateSuffixInput">UserNameTemplateSuffixInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.userNameTemplateTypeInput">UserNameTemplateTypeInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.usersInput">UsersInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.accessibilityErrorRedirectUrl">AccessibilityErrorRedirectUrl</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.accessibilityLoginRedirectUrl">AccessibilityLoginRedirectUrl</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.accessibilitySelfService">AccessibilitySelfService</a></code> | <code>interface{}</code> | *No description.* |
@@ -618,7 +572,6 @@ appswa.AppSwa_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.buttonField">ButtonField</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.checkbox">Checkbox</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.enduserNote">EnduserNote</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.groups">Groups</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.hideIos">HideIos</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.hideWeb">HideWeb</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.id">Id</a></code> | <code>*string</code> | *No description.* |
@@ -627,8 +580,6 @@ appswa.AppSwa_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.passwordField">PasswordField</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.preconfiguredApp">PreconfiguredApp</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.redirectUrl">RedirectUrl</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.skipGroups">SkipGroups</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.skipUsers">SkipUsers</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.status">Status</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.url">Url</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.urlRegex">UrlRegex</a></code> | <code>*string</code> | *No description.* |
@@ -822,16 +773,6 @@ func Timeouts() AppSwaTimeoutsOutputReference
 
 ---
 
-##### `Users`<sup>Required</sup> <a name="Users" id="@cdktf/provider-okta.appSwa.AppSwa.property.users"></a>
-
-```go
-func Users() AppSwaUsersList
-```
-
-- *Type:* <a href="#@cdktf/provider-okta.appSwa.AppSwaUsersList">AppSwaUsersList</a>
-
----
-
 ##### `AccessibilityErrorRedirectUrlInput`<sup>Optional</sup> <a name="AccessibilityErrorRedirectUrlInput" id="@cdktf/provider-okta.appSwa.AppSwa.property.accessibilityErrorRedirectUrlInput"></a>
 
 ```go
@@ -922,16 +863,6 @@ func EnduserNoteInput() *string
 
 ---
 
-##### `GroupsInput`<sup>Optional</sup> <a name="GroupsInput" id="@cdktf/provider-okta.appSwa.AppSwa.property.groupsInput"></a>
-
-```go
-func GroupsInput() *[]*string
-```
-
-- *Type:* *[]*string
-
----
-
 ##### `HideIosInput`<sup>Optional</sup> <a name="HideIosInput" id="@cdktf/provider-okta.appSwa.AppSwa.property.hideIosInput"></a>
 
 ```go
@@ -1009,26 +940,6 @@ func RedirectUrlInput() *string
 ```
 
 - *Type:* *string
-
----
-
-##### `SkipGroupsInput`<sup>Optional</sup> <a name="SkipGroupsInput" id="@cdktf/provider-okta.appSwa.AppSwa.property.skipGroupsInput"></a>
-
-```go
-func SkipGroupsInput() interface{}
-```
-
-- *Type:* interface{}
-
----
-
-##### `SkipUsersInput`<sup>Optional</sup> <a name="SkipUsersInput" id="@cdktf/provider-okta.appSwa.AppSwa.property.skipUsersInput"></a>
-
-```go
-func SkipUsersInput() interface{}
-```
-
-- *Type:* interface{}
 
 ---
 
@@ -1122,16 +1033,6 @@ func UserNameTemplateTypeInput() *string
 
 ---
 
-##### `UsersInput`<sup>Optional</sup> <a name="UsersInput" id="@cdktf/provider-okta.appSwa.AppSwa.property.usersInput"></a>
-
-```go
-func UsersInput() interface{}
-```
-
-- *Type:* interface{}
-
----
-
 ##### `AccessibilityErrorRedirectUrl`<sup>Required</sup> <a name="AccessibilityErrorRedirectUrl" id="@cdktf/provider-okta.appSwa.AppSwa.property.accessibilityErrorRedirectUrl"></a>
 
 ```go
@@ -1222,16 +1123,6 @@ func EnduserNote() *string
 
 ---
 
-##### `Groups`<sup>Required</sup> <a name="Groups" id="@cdktf/provider-okta.appSwa.AppSwa.property.groups"></a>
-
-```go
-func Groups() *[]*string
-```
-
-- *Type:* *[]*string
-
----
-
 ##### `HideIos`<sup>Required</sup> <a name="HideIos" id="@cdktf/provider-okta.appSwa.AppSwa.property.hideIos"></a>
 
 ```go
@@ -1309,26 +1200,6 @@ func RedirectUrl() *string
 ```
 
 - *Type:* *string
-
----
-
-##### `SkipGroups`<sup>Required</sup> <a name="SkipGroups" id="@cdktf/provider-okta.appSwa.AppSwa.property.skipGroups"></a>
-
-```go
-func SkipGroups() interface{}
-```
-
-- *Type:* interface{}
-
----
-
-##### `SkipUsers`<sup>Required</sup> <a name="SkipUsers" id="@cdktf/provider-okta.appSwa.AppSwa.property.skipUsers"></a>
-
-```go
-func SkipUsers() interface{}
-```
-
-- *Type:* interface{}
 
 ---
 
@@ -1437,7 +1308,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.appSwa.AppSwaConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/appswa"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appswa"
 
 &appswa.AppSwaConfig {
 	Connection: interface{},
@@ -1457,7 +1328,6 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/appswa"
 	ButtonField: *string,
 	Checkbox: *string,
 	EnduserNote: *string,
-	Groups: *[]*string,
 	HideIos: interface{},
 	HideWeb: interface{},
 	Id: *string,
@@ -1465,10 +1335,8 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/appswa"
 	PasswordField: *string,
 	PreconfiguredApp: *string,
 	RedirectUrl: *string,
-	SkipGroups: interface{},
-	SkipUsers: interface{},
 	Status: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-okta-go/okta/v7.appSwa.AppSwaTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-okta-go/okta.appSwa.AppSwaTimeouts,
 	Url: *string,
 	UrlRegex: *string,
 	UsernameField: *string,
@@ -1476,7 +1344,6 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/appswa"
 	UserNameTemplatePushStatus: *string,
 	UserNameTemplateSuffix: *string,
 	UserNameTemplateType: *string,
-	Users: interface{},
 }
 ```
 
@@ -1501,16 +1368,13 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/appswa"
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.buttonField">ButtonField</a></code> | <code>*string</code> | Login button field. |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.checkbox">Checkbox</a></code> | <code>*string</code> | CSS selector for the checkbox. |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.enduserNote">EnduserNote</a></code> | <code>*string</code> | Application notes for end users. |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.groups">Groups</a></code> | <code>*[]*string</code> | Groups associated with the application. |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.hideIos">HideIos</a></code> | <code>interface{}</code> | Do not display application icon on mobile app. |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.hideWeb">HideWeb</a></code> | <code>interface{}</code> | Do not display application icon to users. |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#id AppSwa#id}. |
+| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#id AppSwa#id}. |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.logo">Logo</a></code> | <code>*string</code> | Local path to logo of the application. |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.passwordField">PasswordField</a></code> | <code>*string</code> | Login password field. |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.preconfiguredApp">PreconfiguredApp</a></code> | <code>*string</code> | Preconfigured app name. |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.redirectUrl">RedirectUrl</a></code> | <code>*string</code> | If going to the login page URL redirects to another page, then enter that URL here. |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.skipGroups">SkipGroups</a></code> | <code>interface{}</code> | Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources. |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.skipUsers">SkipUsers</a></code> | <code>interface{}</code> | Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources. |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.status">Status</a></code> | <code>*string</code> | Status of application. |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-okta.appSwa.AppSwaTimeouts">AppSwaTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.url">Url</a></code> | <code>*string</code> | Login URL. |
@@ -1520,7 +1384,6 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/appswa"
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.userNameTemplatePushStatus">UserNameTemplatePushStatus</a></code> | <code>*string</code> | Push username on update. |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.userNameTemplateSuffix">UserNameTemplateSuffix</a></code> | <code>*string</code> | Username template suffix. |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.userNameTemplateType">UserNameTemplateType</a></code> | <code>*string</code> | Username template type. |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.users">Users</a></code> | <code>interface{}</code> | users block. |
 
 ---
 
@@ -1604,7 +1467,7 @@ Label *string
 
 Pretty name of app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#label AppSwa#label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#label AppSwa#label}
 
 ---
 
@@ -1618,7 +1481,7 @@ AccessibilityErrorRedirectUrl *string
 
 Custom error page URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#accessibility_error_redirect_url AppSwa#accessibility_error_redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#accessibility_error_redirect_url AppSwa#accessibility_error_redirect_url}
 
 ---
 
@@ -1632,7 +1495,7 @@ AccessibilityLoginRedirectUrl *string
 
 Custom login page URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#accessibility_login_redirect_url AppSwa#accessibility_login_redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#accessibility_login_redirect_url AppSwa#accessibility_login_redirect_url}
 
 ---
 
@@ -1646,7 +1509,7 @@ AccessibilitySelfService interface{}
 
 Enable self service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#accessibility_self_service AppSwa#accessibility_self_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#accessibility_self_service AppSwa#accessibility_self_service}
 
 ---
 
@@ -1660,7 +1523,7 @@ AdminNote *string
 
 Application notes for admins.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#admin_note AppSwa#admin_note}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#admin_note AppSwa#admin_note}
 
 ---
 
@@ -1674,7 +1537,7 @@ AppLinksJson *string
 
 Displays specific appLinks for the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#app_links_json AppSwa#app_links_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#app_links_json AppSwa#app_links_json}
 
 ---
 
@@ -1688,7 +1551,7 @@ AutoSubmitToolbar interface{}
 
 Display auto submit toolbar.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#auto_submit_toolbar AppSwa#auto_submit_toolbar}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#auto_submit_toolbar AppSwa#auto_submit_toolbar}
 
 ---
 
@@ -1702,7 +1565,7 @@ ButtonField *string
 
 Login button field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#button_field AppSwa#button_field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#button_field AppSwa#button_field}
 
 ---
 
@@ -1716,7 +1579,7 @@ Checkbox *string
 
 CSS selector for the checkbox.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#checkbox AppSwa#checkbox}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#checkbox AppSwa#checkbox}
 
 ---
 
@@ -1730,21 +1593,7 @@ EnduserNote *string
 
 Application notes for end users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#enduser_note AppSwa#enduser_note}
-
----
-
-##### `Groups`<sup>Optional</sup> <a name="Groups" id="@cdktf/provider-okta.appSwa.AppSwaConfig.property.groups"></a>
-
-```go
-Groups *[]*string
-```
-
-- *Type:* *[]*string
-
-Groups associated with the application.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#groups AppSwa#groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#enduser_note AppSwa#enduser_note}
 
 ---
 
@@ -1758,7 +1607,7 @@ HideIos interface{}
 
 Do not display application icon on mobile app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#hide_ios AppSwa#hide_ios}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#hide_ios AppSwa#hide_ios}
 
 ---
 
@@ -1772,7 +1621,7 @@ HideWeb interface{}
 
 Do not display application icon to users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#hide_web AppSwa#hide_web}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#hide_web AppSwa#hide_web}
 
 ---
 
@@ -1784,7 +1633,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#id AppSwa#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#id AppSwa#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1801,7 +1650,7 @@ Logo *string
 
 Local path to logo of the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#logo AppSwa#logo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#logo AppSwa#logo}
 
 ---
 
@@ -1815,7 +1664,7 @@ PasswordField *string
 
 Login password field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#password_field AppSwa#password_field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#password_field AppSwa#password_field}
 
 ---
 
@@ -1829,7 +1678,7 @@ PreconfiguredApp *string
 
 Preconfigured app name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#preconfigured_app AppSwa#preconfigured_app}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#preconfigured_app AppSwa#preconfigured_app}
 
 ---
 
@@ -1843,35 +1692,7 @@ RedirectUrl *string
 
 If going to the login page URL redirects to another page, then enter that URL here.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#redirect_url AppSwa#redirect_url}
-
----
-
-##### `SkipGroups`<sup>Optional</sup> <a name="SkipGroups" id="@cdktf/provider-okta.appSwa.AppSwaConfig.property.skipGroups"></a>
-
-```go
-SkipGroups interface{}
-```
-
-- *Type:* interface{}
-
-Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#skip_groups AppSwa#skip_groups}
-
----
-
-##### `SkipUsers`<sup>Optional</sup> <a name="SkipUsers" id="@cdktf/provider-okta.appSwa.AppSwaConfig.property.skipUsers"></a>
-
-```go
-SkipUsers interface{}
-```
-
-- *Type:* interface{}
-
-Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#skip_users AppSwa#skip_users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#redirect_url AppSwa#redirect_url}
 
 ---
 
@@ -1885,7 +1706,7 @@ Status *string
 
 Status of application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#status AppSwa#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#status AppSwa#status}
 
 ---
 
@@ -1899,7 +1720,7 @@ Timeouts AppSwaTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#timeouts AppSwa#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#timeouts AppSwa#timeouts}
 
 ---
 
@@ -1913,7 +1734,7 @@ Url *string
 
 Login URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#url AppSwa#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#url AppSwa#url}
 
 ---
 
@@ -1927,7 +1748,7 @@ UrlRegex *string
 
 A regex that further restricts URL to the specified regex.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#url_regex AppSwa#url_regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#url_regex AppSwa#url_regex}
 
 ---
 
@@ -1941,7 +1762,7 @@ UsernameField *string
 
 Login username field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#username_field AppSwa#username_field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#username_field AppSwa#username_field}
 
 ---
 
@@ -1955,7 +1776,7 @@ UserNameTemplate *string
 
 Username template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#user_name_template AppSwa#user_name_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#user_name_template AppSwa#user_name_template}
 
 ---
 
@@ -1969,7 +1790,7 @@ UserNameTemplatePushStatus *string
 
 Push username on update.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#user_name_template_push_status AppSwa#user_name_template_push_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#user_name_template_push_status AppSwa#user_name_template_push_status}
 
 ---
 
@@ -1983,7 +1804,7 @@ UserNameTemplateSuffix *string
 
 Username template suffix.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#user_name_template_suffix AppSwa#user_name_template_suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#user_name_template_suffix AppSwa#user_name_template_suffix}
 
 ---
 
@@ -1997,21 +1818,7 @@ UserNameTemplateType *string
 
 Username template type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#user_name_template_type AppSwa#user_name_template_type}
-
----
-
-##### `Users`<sup>Optional</sup> <a name="Users" id="@cdktf/provider-okta.appSwa.AppSwaConfig.property.users"></a>
-
-```go
-Users interface{}
-```
-
-- *Type:* interface{}
-
-users block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#users AppSwa#users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#user_name_template_type AppSwa#user_name_template_type}
 
 ---
 
@@ -2020,7 +1827,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.appSwa.AppSwaTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/appswa"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appswa"
 
 &appswa.AppSwaTimeouts {
 	Create: *string,
@@ -2033,9 +1840,9 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/appswa"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#create AppSwa#create}. |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#read AppSwa#read}. |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#update AppSwa#update}. |
+| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#create AppSwa#create}. |
+| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#read AppSwa#read}. |
+| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#update AppSwa#update}. |
 
 ---
 
@@ -2047,7 +1854,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#create AppSwa#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#create AppSwa#create}.
 
 ---
 
@@ -2059,7 +1866,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#read AppSwa#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#read AppSwa#read}.
 
 ---
 
@@ -2071,76 +1878,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#update AppSwa#update}.
-
----
-
-### AppSwaUsers <a name="AppSwaUsers" id="@cdktf/provider-okta.appSwa.AppSwaUsers"></a>
-
-#### Initializer <a name="Initializer" id="@cdktf/provider-okta.appSwa.AppSwaUsers.Initializer"></a>
-
-```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/appswa"
-
-&appswa.AppSwaUsers {
-	Id: *string,
-	Password: *string,
-	Username: *string,
-}
-```
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsers.property.id">Id</a></code> | <code>*string</code> | User ID. |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsers.property.password">Password</a></code> | <code>*string</code> | Password for user application. |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsers.property.username">Username</a></code> | <code>*string</code> | Username for user. |
-
----
-
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-okta.appSwa.AppSwaUsers.property.id"></a>
-
-```go
-Id *string
-```
-
-- *Type:* *string
-
-User ID.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#id AppSwa#id}
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-
----
-
-##### `Password`<sup>Optional</sup> <a name="Password" id="@cdktf/provider-okta.appSwa.AppSwaUsers.property.password"></a>
-
-```go
-Password *string
-```
-
-- *Type:* *string
-
-Password for user application.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#password AppSwa#password}
-
----
-
-##### `Username`<sup>Optional</sup> <a name="Username" id="@cdktf/provider-okta.appSwa.AppSwaUsers.property.username"></a>
-
-```go
-Username *string
-```
-
-- *Type:* *string
-
-Username for user.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#username AppSwa#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#update AppSwa#update}.
 
 ---
 
@@ -2151,7 +1889,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appSwa.AppSwaTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/appswa"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appswa"
 
 appswa.NewAppSwaTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSwaTimeoutsOutputReference
 ```
@@ -2472,514 +2210,6 @@ func Update() *string
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-okta.appSwa.AppSwaTimeoutsOutputReference.property.internalValue"></a>
-
-```go
-func InternalValue() interface{}
-```
-
-- *Type:* interface{}
-
----
-
-
-### AppSwaUsersList <a name="AppSwaUsersList" id="@cdktf/provider-okta.appSwa.AppSwaUsersList"></a>
-
-#### Initializers <a name="Initializers" id="@cdktf/provider-okta.appSwa.AppSwaUsersList.Initializer"></a>
-
-```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/appswa"
-
-appswa.NewAppSwaUsersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppSwaUsersList
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsersList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsersList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsersList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
-
----
-
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-okta.appSwa.AppSwaUsersList.Initializer.parameter.terraformResource"></a>
-
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
-
-The parent resource.
-
----
-
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-okta.appSwa.AppSwaUsersList.Initializer.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
-The attribute on the parent resource this class is referencing.
-
----
-
-##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-okta.appSwa.AppSwaUsersList.Initializer.parameter.wrapsSet"></a>
-
-- *Type:* *bool
-
-whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsersList.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsersList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsersList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsersList.get">Get</a></code> | *No description.* |
-
----
-
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-okta.appSwa.AppSwaUsersList.computeFqn"></a>
-
-```go
-func ComputeFqn() *string
-```
-
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-okta.appSwa.AppSwaUsersList.resolve"></a>
-
-```go
-func Resolve(_context IResolveContext) interface{}
-```
-
-Produce the Token's value at resolution time.
-
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-okta.appSwa.AppSwaUsersList.resolve.parameter._context"></a>
-
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
-
----
-
-##### `ToString` <a name="ToString" id="@cdktf/provider-okta.appSwa.AppSwaUsersList.toString"></a>
-
-```go
-func ToString() *string
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-##### `Get` <a name="Get" id="@cdktf/provider-okta.appSwa.AppSwaUsersList.get"></a>
-
-```go
-func Get(index *f64) AppSwaUsersOutputReference
-```
-
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-okta.appSwa.AppSwaUsersList.get.parameter.index"></a>
-
-- *Type:* *f64
-
-the index of the item to return.
-
----
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsersList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsersList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsersList.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
-
----
-
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-okta.appSwa.AppSwaUsersList.property.creationStack"></a>
-
-```go
-func CreationStack() *[]*string
-```
-
-- *Type:* *[]*string
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-okta.appSwa.AppSwaUsersList.property.fqn"></a>
-
-```go
-func Fqn() *string
-```
-
-- *Type:* *string
-
----
-
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-okta.appSwa.AppSwaUsersList.property.internalValue"></a>
-
-```go
-func InternalValue() interface{}
-```
-
-- *Type:* interface{}
-
----
-
-
-### AppSwaUsersOutputReference <a name="AppSwaUsersOutputReference" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference"></a>
-
-#### Initializers <a name="Initializers" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.Initializer"></a>
-
-```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/appswa"
-
-appswa.NewAppSwaUsersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppSwaUsersOutputReference
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
-
----
-
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.Initializer.parameter.terraformResource"></a>
-
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
-
-The parent resource.
-
----
-
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.Initializer.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
-The attribute on the parent resource this class is referencing.
-
----
-
-##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.Initializer.parameter.complexObjectIndex"></a>
-
-- *Type:* *f64
-
-the index of this item in the list.
-
----
-
-##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
-
-- *Type:* *bool
-
-whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.resetId">ResetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.resetPassword">ResetPassword</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.resetUsername">ResetUsername</a></code> | *No description.* |
-
----
-
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.computeFqn"></a>
-
-```go
-func ComputeFqn() *string
-```
-
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.getAnyMapAttribute"></a>
-
-```go
-func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
----
-
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.getBooleanAttribute"></a>
-
-```go
-func GetBooleanAttribute(terraformAttribute *string) IResolvable
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
----
-
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.getBooleanMapAttribute"></a>
-
-```go
-func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
----
-
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.getListAttribute"></a>
-
-```go
-func GetListAttribute(terraformAttribute *string) *[]*string
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.getListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
----
-
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.getNumberAttribute"></a>
-
-```go
-func GetNumberAttribute(terraformAttribute *string) *f64
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
----
-
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.getNumberListAttribute"></a>
-
-```go
-func GetNumberListAttribute(terraformAttribute *string) *[]*f64
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
----
-
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.getNumberMapAttribute"></a>
-
-```go
-func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
----
-
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.getStringAttribute"></a>
-
-```go
-func GetStringAttribute(terraformAttribute *string) *string
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
----
-
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.getStringMapAttribute"></a>
-
-```go
-func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
----
-
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.interpolationForAttribute"></a>
-
-```go
-func InterpolationForAttribute(property *string) IResolvable
-```
-
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.interpolationForAttribute.parameter.property"></a>
-
-- *Type:* *string
-
----
-
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.resolve"></a>
-
-```go
-func Resolve(_context IResolveContext) interface{}
-```
-
-Produce the Token's value at resolution time.
-
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.resolve.parameter._context"></a>
-
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
-
----
-
-##### `ToString` <a name="ToString" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.toString"></a>
-
-```go
-func ToString() *string
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.resetId"></a>
-
-```go
-func ResetId()
-```
-
-##### `ResetPassword` <a name="ResetPassword" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.resetPassword"></a>
-
-```go
-func ResetPassword()
-```
-
-##### `ResetUsername` <a name="ResetUsername" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.resetUsername"></a>
-
-```go
-func ResetUsername()
-```
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.property.scope">Scope</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.property.passwordInput">PasswordInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.property.usernameInput">UsernameInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.property.id">Id</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.property.password">Password</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.property.username">Username</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
-
----
-
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.property.creationStack"></a>
-
-```go
-func CreationStack() *[]*string
-```
-
-- *Type:* *[]*string
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.property.fqn"></a>
-
-```go
-func Fqn() *string
-```
-
-- *Type:* *string
-
----
-
-##### `Scope`<sup>Required</sup> <a name="Scope" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.property.scope"></a>
-
-```go
-func Scope() *string
-```
-
-- *Type:* *string
-
----
-
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.property.idInput"></a>
-
-```go
-func IdInput() *string
-```
-
-- *Type:* *string
-
----
-
-##### `PasswordInput`<sup>Optional</sup> <a name="PasswordInput" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.property.passwordInput"></a>
-
-```go
-func PasswordInput() *string
-```
-
-- *Type:* *string
-
----
-
-##### `UsernameInput`<sup>Optional</sup> <a name="UsernameInput" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.property.usernameInput"></a>
-
-```go
-func UsernameInput() *string
-```
-
-- *Type:* *string
-
----
-
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.property.id"></a>
-
-```go
-func Id() *string
-```
-
-- *Type:* *string
-
----
-
-##### `Password`<sup>Required</sup> <a name="Password" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.property.password"></a>
-
-```go
-func Password() *string
-```
-
-- *Type:* *string
-
----
-
-##### `Username`<sup>Required</sup> <a name="Username" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.property.username"></a>
-
-```go
-func Username() *string
-```
-
-- *Type:* *string
-
----
-
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.property.internalValue"></a>
 
 ```go
 func InternalValue() interface{}

@@ -1,6 +1,6 @@
 # `okta_app_basic_auth`
 
-Refer to the Terraform Registory for docs: [`okta_app_basic_auth`](https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth).
+Refer to the Terraform Registory for docs: [`okta_app_basic_auth`](https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_basic_auth).
 
 # `appBasicAuth` Submodule <a name="`appBasicAuth` Submodule" id="@cdktf/provider-okta.appBasicAuth"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_app_basic_auth`](https://regis
 
 ### AppBasicAuth <a name="AppBasicAuth" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuth"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth okta_app_basic_auth}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_basic_auth okta_app_basic_auth}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuth.Initializer"></a>
 
@@ -39,21 +39,14 @@ AppBasicAuth.Builder.create(Construct scope, java.lang.String id)
 //  .autoSubmitToolbar(java.lang.Boolean)
 //  .autoSubmitToolbar(IResolvable)
 //  .enduserNote(java.lang.String)
-//  .groups(java.util.List<java.lang.String>)
 //  .hideIos(java.lang.Boolean)
 //  .hideIos(IResolvable)
 //  .hideWeb(java.lang.Boolean)
 //  .hideWeb(IResolvable)
 //  .id(java.lang.String)
 //  .logo(java.lang.String)
-//  .skipGroups(java.lang.Boolean)
-//  .skipGroups(IResolvable)
-//  .skipUsers(java.lang.Boolean)
-//  .skipUsers(IResolvable)
 //  .status(java.lang.String)
 //  .timeouts(AppBasicAuthTimeouts)
-//  .users(IResolvable)
-//  .users(java.util.List<AppBasicAuthUsers>)
     .build();
 ```
 
@@ -78,16 +71,12 @@ AppBasicAuth.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuth.Initializer.parameter.appLinksJson">appLinksJson</a></code> | <code>java.lang.String</code> | Displays specific appLinks for the app. |
 | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuth.Initializer.parameter.autoSubmitToolbar">autoSubmitToolbar</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Display auto submit toolbar. |
 | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuth.Initializer.parameter.enduserNote">enduserNote</a></code> | <code>java.lang.String</code> | Application notes for end users. |
-| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuth.Initializer.parameter.groups">groups</a></code> | <code>java.util.List<java.lang.String></code> | Groups associated with the application. |
 | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuth.Initializer.parameter.hideIos">hideIos</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Do not display application icon on mobile app. |
 | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuth.Initializer.parameter.hideWeb">hideWeb</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Do not display application icon to users. |
-| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuth.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth#id AppBasicAuth#id}. |
+| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuth.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_basic_auth#id AppBasicAuth#id}. |
 | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuth.Initializer.parameter.logo">logo</a></code> | <code>java.lang.String</code> | Local path to logo of the application. |
-| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuth.Initializer.parameter.skipGroups">skipGroups</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources. |
-| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuth.Initializer.parameter.skipUsers">skipUsers</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources. |
 | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuth.Initializer.parameter.status">status</a></code> | <code>java.lang.String</code> | Status of application. |
 | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuth.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthTimeouts">AppBasicAuthTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuth.Initializer.parameter.users">users</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsers">AppBasicAuthUsers</a>></code> | users block. |
 
 ---
 
@@ -157,7 +146,7 @@ Must be unique amongst siblings in the same scope
 
 Login button field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth#auth_url AppBasicAuth#auth_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_basic_auth#auth_url AppBasicAuth#auth_url}
 
 ---
 
@@ -167,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Pretty name of app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth#label AppBasicAuth#label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_basic_auth#label AppBasicAuth#label}
 
 ---
 
@@ -177,7 +166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Login password field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth#url AppBasicAuth#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_basic_auth#url AppBasicAuth#url}
 
 ---
 
@@ -187,7 +176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Custom error page URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth#accessibility_error_redirect_url AppBasicAuth#accessibility_error_redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_basic_auth#accessibility_error_redirect_url AppBasicAuth#accessibility_error_redirect_url}
 
 ---
 
@@ -197,7 +186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Custom login page URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth#accessibility_login_redirect_url AppBasicAuth#accessibility_login_redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_basic_auth#accessibility_login_redirect_url AppBasicAuth#accessibility_login_redirect_url}
 
 ---
 
@@ -207,7 +196,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Enable self service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth#accessibility_self_service AppBasicAuth#accessibility_self_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_basic_auth#accessibility_self_service AppBasicAuth#accessibility_self_service}
 
 ---
 
@@ -217,7 +206,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Application notes for admins.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth#admin_note AppBasicAuth#admin_note}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_basic_auth#admin_note AppBasicAuth#admin_note}
 
 ---
 
@@ -227,7 +216,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Displays specific appLinks for the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth#app_links_json AppBasicAuth#app_links_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_basic_auth#app_links_json AppBasicAuth#app_links_json}
 
 ---
 
@@ -237,7 +226,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Display auto submit toolbar.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth#auto_submit_toolbar AppBasicAuth#auto_submit_toolbar}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_basic_auth#auto_submit_toolbar AppBasicAuth#auto_submit_toolbar}
 
 ---
 
@@ -247,17 +236,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Application notes for end users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth#enduser_note AppBasicAuth#enduser_note}
-
----
-
-##### `groups`<sup>Optional</sup> <a name="groups" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuth.Initializer.parameter.groups"></a>
-
-- *Type:* java.util.List<java.lang.String>
-
-Groups associated with the application.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth#groups AppBasicAuth#groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_basic_auth#enduser_note AppBasicAuth#enduser_note}
 
 ---
 
@@ -267,7 +246,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Do not display application icon on mobile app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth#hide_ios AppBasicAuth#hide_ios}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_basic_auth#hide_ios AppBasicAuth#hide_ios}
 
 ---
 
@@ -277,7 +256,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Do not display application icon to users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth#hide_web AppBasicAuth#hide_web}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_basic_auth#hide_web AppBasicAuth#hide_web}
 
 ---
 
@@ -285,7 +264,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth#id AppBasicAuth#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_basic_auth#id AppBasicAuth#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -298,27 +277,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Local path to logo of the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth#logo AppBasicAuth#logo}
-
----
-
-##### `skipGroups`<sup>Optional</sup> <a name="skipGroups" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuth.Initializer.parameter.skipGroups"></a>
-
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
-
-Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth#skip_groups AppBasicAuth#skip_groups}
-
----
-
-##### `skipUsers`<sup>Optional</sup> <a name="skipUsers" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuth.Initializer.parameter.skipUsers"></a>
-
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
-
-Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth#skip_users AppBasicAuth#skip_users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_basic_auth#logo AppBasicAuth#logo}
 
 ---
 
@@ -328,7 +287,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Status of application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth#status AppBasicAuth#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_basic_auth#status AppBasicAuth#status}
 
 ---
 
@@ -338,17 +297,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth#timeouts AppBasicAuth#timeouts}
-
----
-
-##### `users`<sup>Optional</sup> <a name="users" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuth.Initializer.parameter.users"></a>
-
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsers">AppBasicAuthUsers</a>>
-
-users block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth#users AppBasicAuth#users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_basic_auth#timeouts AppBasicAuth#timeouts}
 
 ---
 
@@ -373,7 +322,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuth.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuth.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuth.putTimeouts">putTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuth.putUsers">putUsers</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuth.resetAccessibilityErrorRedirectUrl">resetAccessibilityErrorRedirectUrl</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuth.resetAccessibilityLoginRedirectUrl">resetAccessibilityLoginRedirectUrl</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuth.resetAccessibilitySelfService">resetAccessibilitySelfService</a></code> | *No description.* |
@@ -381,16 +329,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuth.resetAppLinksJson">resetAppLinksJson</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuth.resetAutoSubmitToolbar">resetAutoSubmitToolbar</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuth.resetEnduserNote">resetEnduserNote</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuth.resetGroups">resetGroups</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuth.resetHideIos">resetHideIos</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuth.resetHideWeb">resetHideWeb</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuth.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuth.resetLogo">resetLogo</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuth.resetSkipGroups">resetSkipGroups</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuth.resetSkipUsers">resetSkipUsers</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuth.resetStatus">resetStatus</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuth.resetTimeouts">resetTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuth.resetUsers">resetUsers</a></code> | *No description.* |
 
 ---
 
@@ -590,18 +534,6 @@ public void putTimeouts(AppBasicAuthTimeouts value)
 
 ---
 
-##### `putUsers` <a name="putUsers" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuth.putUsers"></a>
-
-```java
-public void putUsers(IResolvable OR java.util.List<AppBasicAuthUsers> value)
-```
-
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuth.putUsers.parameter.value"></a>
-
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsers">AppBasicAuthUsers</a>>
-
----
-
 ##### `resetAccessibilityErrorRedirectUrl` <a name="resetAccessibilityErrorRedirectUrl" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuth.resetAccessibilityErrorRedirectUrl"></a>
 
 ```java
@@ -644,12 +576,6 @@ public void resetAutoSubmitToolbar()
 public void resetEnduserNote()
 ```
 
-##### `resetGroups` <a name="resetGroups" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuth.resetGroups"></a>
-
-```java
-public void resetGroups()
-```
-
 ##### `resetHideIos` <a name="resetHideIos" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuth.resetHideIos"></a>
 
 ```java
@@ -674,18 +600,6 @@ public void resetId()
 public void resetLogo()
 ```
 
-##### `resetSkipGroups` <a name="resetSkipGroups" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuth.resetSkipGroups"></a>
-
-```java
-public void resetSkipGroups()
-```
-
-##### `resetSkipUsers` <a name="resetSkipUsers" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuth.resetSkipUsers"></a>
-
-```java
-public void resetSkipUsers()
-```
-
 ##### `resetStatus` <a name="resetStatus" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuth.resetStatus"></a>
 
 ```java
@@ -696,12 +610,6 @@ public void resetStatus()
 
 ```java
 public void resetTimeouts()
-```
-
-##### `resetUsers` <a name="resetUsers" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuth.resetUsers"></a>
-
-```java
-public void resetUsers()
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -796,7 +704,6 @@ AppBasicAuth.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuth.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuth.property.signOnMode">signOnMode</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuth.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthTimeoutsOutputReference">AppBasicAuthTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuth.property.users">users</a></code> | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersList">AppBasicAuthUsersList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuth.property.accessibilityErrorRedirectUrlInput">accessibilityErrorRedirectUrlInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuth.property.accessibilityLoginRedirectUrlInput">accessibilityLoginRedirectUrlInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuth.property.accessibilitySelfServiceInput">accessibilitySelfServiceInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
@@ -805,18 +712,14 @@ AppBasicAuth.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuth.property.authUrlInput">authUrlInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuth.property.autoSubmitToolbarInput">autoSubmitToolbarInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuth.property.enduserNoteInput">enduserNoteInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuth.property.groupsInput">groupsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuth.property.hideIosInput">hideIosInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuth.property.hideWebInput">hideWebInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuth.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuth.property.labelInput">labelInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuth.property.logoInput">logoInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuth.property.skipGroupsInput">skipGroupsInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuth.property.skipUsersInput">skipUsersInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuth.property.statusInput">statusInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuth.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthTimeouts">AppBasicAuthTimeouts</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuth.property.urlInput">urlInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuth.property.usersInput">usersInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsers">AppBasicAuthUsers</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuth.property.accessibilityErrorRedirectUrl">accessibilityErrorRedirectUrl</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuth.property.accessibilityLoginRedirectUrl">accessibilityLoginRedirectUrl</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuth.property.accessibilitySelfService">accessibilitySelfService</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
@@ -825,14 +728,11 @@ AppBasicAuth.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuth.property.authUrl">authUrl</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuth.property.autoSubmitToolbar">autoSubmitToolbar</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuth.property.enduserNote">enduserNote</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuth.property.groups">groups</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuth.property.hideIos">hideIos</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuth.property.hideWeb">hideWeb</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuth.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuth.property.label">label</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuth.property.logo">logo</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuth.property.skipGroups">skipGroups</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuth.property.skipUsers">skipUsers</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuth.property.status">status</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuth.property.url">url</a></code> | <code>java.lang.String</code> | *No description.* |
 
@@ -1020,16 +920,6 @@ public AppBasicAuthTimeoutsOutputReference getTimeouts();
 
 ---
 
-##### `users`<sup>Required</sup> <a name="users" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuth.property.users"></a>
-
-```java
-public AppBasicAuthUsersList getUsers();
-```
-
-- *Type:* <a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersList">AppBasicAuthUsersList</a>
-
----
-
 ##### `accessibilityErrorRedirectUrlInput`<sup>Optional</sup> <a name="accessibilityErrorRedirectUrlInput" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuth.property.accessibilityErrorRedirectUrlInput"></a>
 
 ```java
@@ -1110,16 +1000,6 @@ public java.lang.String getEnduserNoteInput();
 
 ---
 
-##### `groupsInput`<sup>Optional</sup> <a name="groupsInput" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuth.property.groupsInput"></a>
-
-```java
-public java.util.List<java.lang.String> getGroupsInput();
-```
-
-- *Type:* java.util.List<java.lang.String>
-
----
-
 ##### `hideIosInput`<sup>Optional</sup> <a name="hideIosInput" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuth.property.hideIosInput"></a>
 
 ```java
@@ -1170,26 +1050,6 @@ public java.lang.String getLogoInput();
 
 ---
 
-##### `skipGroupsInput`<sup>Optional</sup> <a name="skipGroupsInput" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuth.property.skipGroupsInput"></a>
-
-```java
-public java.lang.Object getSkipGroupsInput();
-```
-
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
-
----
-
-##### `skipUsersInput`<sup>Optional</sup> <a name="skipUsersInput" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuth.property.skipUsersInput"></a>
-
-```java
-public java.lang.Object getSkipUsersInput();
-```
-
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
-
----
-
 ##### `statusInput`<sup>Optional</sup> <a name="statusInput" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuth.property.statusInput"></a>
 
 ```java
@@ -1217,16 +1077,6 @@ public java.lang.String getUrlInput();
 ```
 
 - *Type:* java.lang.String
-
----
-
-##### `usersInput`<sup>Optional</sup> <a name="usersInput" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuth.property.usersInput"></a>
-
-```java
-public java.lang.Object getUsersInput();
-```
-
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsers">AppBasicAuthUsers</a>>
 
 ---
 
@@ -1310,16 +1160,6 @@ public java.lang.String getEnduserNote();
 
 ---
 
-##### `groups`<sup>Required</sup> <a name="groups" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuth.property.groups"></a>
-
-```java
-public java.util.List<java.lang.String> getGroups();
-```
-
-- *Type:* java.util.List<java.lang.String>
-
----
-
 ##### `hideIos`<sup>Required</sup> <a name="hideIos" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuth.property.hideIos"></a>
 
 ```java
@@ -1367,26 +1207,6 @@ public java.lang.String getLogo();
 ```
 
 - *Type:* java.lang.String
-
----
-
-##### `skipGroups`<sup>Required</sup> <a name="skipGroups" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuth.property.skipGroups"></a>
-
-```java
-public java.lang.Object getSkipGroups();
-```
-
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
-
----
-
-##### `skipUsers`<sup>Required</sup> <a name="skipUsers" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuth.property.skipUsers"></a>
-
-```java
-public java.lang.Object getSkipUsers();
-```
-
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1461,21 +1281,14 @@ AppBasicAuthConfig.builder()
 //  .autoSubmitToolbar(java.lang.Boolean)
 //  .autoSubmitToolbar(IResolvable)
 //  .enduserNote(java.lang.String)
-//  .groups(java.util.List<java.lang.String>)
 //  .hideIos(java.lang.Boolean)
 //  .hideIos(IResolvable)
 //  .hideWeb(java.lang.Boolean)
 //  .hideWeb(IResolvable)
 //  .id(java.lang.String)
 //  .logo(java.lang.String)
-//  .skipGroups(java.lang.Boolean)
-//  .skipGroups(IResolvable)
-//  .skipUsers(java.lang.Boolean)
-//  .skipUsers(IResolvable)
 //  .status(java.lang.String)
 //  .timeouts(AppBasicAuthTimeouts)
-//  .users(IResolvable)
-//  .users(java.util.List<AppBasicAuthUsers>)
     .build();
 ```
 
@@ -1500,16 +1313,12 @@ AppBasicAuthConfig.builder()
 | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthConfig.property.appLinksJson">appLinksJson</a></code> | <code>java.lang.String</code> | Displays specific appLinks for the app. |
 | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthConfig.property.autoSubmitToolbar">autoSubmitToolbar</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Display auto submit toolbar. |
 | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthConfig.property.enduserNote">enduserNote</a></code> | <code>java.lang.String</code> | Application notes for end users. |
-| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthConfig.property.groups">groups</a></code> | <code>java.util.List<java.lang.String></code> | Groups associated with the application. |
 | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthConfig.property.hideIos">hideIos</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Do not display application icon on mobile app. |
 | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthConfig.property.hideWeb">hideWeb</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Do not display application icon to users. |
-| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth#id AppBasicAuth#id}. |
+| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_basic_auth#id AppBasicAuth#id}. |
 | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthConfig.property.logo">logo</a></code> | <code>java.lang.String</code> | Local path to logo of the application. |
-| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthConfig.property.skipGroups">skipGroups</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources. |
-| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthConfig.property.skipUsers">skipUsers</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources. |
 | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthConfig.property.status">status</a></code> | <code>java.lang.String</code> | Status of application. |
 | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthTimeouts">AppBasicAuthTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthConfig.property.users">users</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsers">AppBasicAuthUsers</a>></code> | users block. |
 
 ---
 
@@ -1593,7 +1402,7 @@ public java.lang.String getAuthUrl();
 
 Login button field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth#auth_url AppBasicAuth#auth_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_basic_auth#auth_url AppBasicAuth#auth_url}
 
 ---
 
@@ -1607,7 +1416,7 @@ public java.lang.String getLabel();
 
 Pretty name of app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth#label AppBasicAuth#label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_basic_auth#label AppBasicAuth#label}
 
 ---
 
@@ -1621,7 +1430,7 @@ public java.lang.String getUrl();
 
 Login password field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth#url AppBasicAuth#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_basic_auth#url AppBasicAuth#url}
 
 ---
 
@@ -1635,7 +1444,7 @@ public java.lang.String getAccessibilityErrorRedirectUrl();
 
 Custom error page URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth#accessibility_error_redirect_url AppBasicAuth#accessibility_error_redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_basic_auth#accessibility_error_redirect_url AppBasicAuth#accessibility_error_redirect_url}
 
 ---
 
@@ -1649,7 +1458,7 @@ public java.lang.String getAccessibilityLoginRedirectUrl();
 
 Custom login page URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth#accessibility_login_redirect_url AppBasicAuth#accessibility_login_redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_basic_auth#accessibility_login_redirect_url AppBasicAuth#accessibility_login_redirect_url}
 
 ---
 
@@ -1663,7 +1472,7 @@ public java.lang.Object getAccessibilitySelfService();
 
 Enable self service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth#accessibility_self_service AppBasicAuth#accessibility_self_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_basic_auth#accessibility_self_service AppBasicAuth#accessibility_self_service}
 
 ---
 
@@ -1677,7 +1486,7 @@ public java.lang.String getAdminNote();
 
 Application notes for admins.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth#admin_note AppBasicAuth#admin_note}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_basic_auth#admin_note AppBasicAuth#admin_note}
 
 ---
 
@@ -1691,7 +1500,7 @@ public java.lang.String getAppLinksJson();
 
 Displays specific appLinks for the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth#app_links_json AppBasicAuth#app_links_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_basic_auth#app_links_json AppBasicAuth#app_links_json}
 
 ---
 
@@ -1705,7 +1514,7 @@ public java.lang.Object getAutoSubmitToolbar();
 
 Display auto submit toolbar.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth#auto_submit_toolbar AppBasicAuth#auto_submit_toolbar}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_basic_auth#auto_submit_toolbar AppBasicAuth#auto_submit_toolbar}
 
 ---
 
@@ -1719,21 +1528,7 @@ public java.lang.String getEnduserNote();
 
 Application notes for end users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth#enduser_note AppBasicAuth#enduser_note}
-
----
-
-##### `groups`<sup>Optional</sup> <a name="groups" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuthConfig.property.groups"></a>
-
-```java
-public java.util.List<java.lang.String> getGroups();
-```
-
-- *Type:* java.util.List<java.lang.String>
-
-Groups associated with the application.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth#groups AppBasicAuth#groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_basic_auth#enduser_note AppBasicAuth#enduser_note}
 
 ---
 
@@ -1747,7 +1542,7 @@ public java.lang.Object getHideIos();
 
 Do not display application icon on mobile app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth#hide_ios AppBasicAuth#hide_ios}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_basic_auth#hide_ios AppBasicAuth#hide_ios}
 
 ---
 
@@ -1761,7 +1556,7 @@ public java.lang.Object getHideWeb();
 
 Do not display application icon to users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth#hide_web AppBasicAuth#hide_web}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_basic_auth#hide_web AppBasicAuth#hide_web}
 
 ---
 
@@ -1773,7 +1568,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth#id AppBasicAuth#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_basic_auth#id AppBasicAuth#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1790,35 +1585,7 @@ public java.lang.String getLogo();
 
 Local path to logo of the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth#logo AppBasicAuth#logo}
-
----
-
-##### `skipGroups`<sup>Optional</sup> <a name="skipGroups" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuthConfig.property.skipGroups"></a>
-
-```java
-public java.lang.Object getSkipGroups();
-```
-
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
-
-Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth#skip_groups AppBasicAuth#skip_groups}
-
----
-
-##### `skipUsers`<sup>Optional</sup> <a name="skipUsers" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuthConfig.property.skipUsers"></a>
-
-```java
-public java.lang.Object getSkipUsers();
-```
-
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
-
-Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth#skip_users AppBasicAuth#skip_users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_basic_auth#logo AppBasicAuth#logo}
 
 ---
 
@@ -1832,7 +1599,7 @@ public java.lang.String getStatus();
 
 Status of application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth#status AppBasicAuth#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_basic_auth#status AppBasicAuth#status}
 
 ---
 
@@ -1846,21 +1613,7 @@ public AppBasicAuthTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth#timeouts AppBasicAuth#timeouts}
-
----
-
-##### `users`<sup>Optional</sup> <a name="users" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuthConfig.property.users"></a>
-
-```java
-public java.lang.Object getUsers();
-```
-
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsers">AppBasicAuthUsers</a>>
-
-users block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth#users AppBasicAuth#users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_basic_auth#timeouts AppBasicAuth#timeouts}
 
 ---
 
@@ -1882,9 +1635,9 @@ AppBasicAuthTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth#create AppBasicAuth#create}. |
-| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth#read AppBasicAuth#read}. |
-| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth#update AppBasicAuth#update}. |
+| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_basic_auth#create AppBasicAuth#create}. |
+| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_basic_auth#read AppBasicAuth#read}. |
+| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_basic_auth#update AppBasicAuth#update}. |
 
 ---
 
@@ -1896,7 +1649,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth#create AppBasicAuth#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_basic_auth#create AppBasicAuth#create}.
 
 ---
 
@@ -1908,7 +1661,7 @@ public java.lang.String getRead();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth#read AppBasicAuth#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_basic_auth#read AppBasicAuth#read}.
 
 ---
 
@@ -1920,76 +1673,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth#update AppBasicAuth#update}.
-
----
-
-### AppBasicAuthUsers <a name="AppBasicAuthUsers" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsers"></a>
-
-#### Initializer <a name="Initializer" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsers.Initializer"></a>
-
-```java
-import com.hashicorp.cdktf.providers.okta.app_basic_auth.AppBasicAuthUsers;
-
-AppBasicAuthUsers.builder()
-//  .id(java.lang.String)
-//  .password(java.lang.String)
-//  .username(java.lang.String)
-    .build();
-```
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsers.property.id">id</a></code> | <code>java.lang.String</code> | User ID. |
-| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsers.property.password">password</a></code> | <code>java.lang.String</code> | Password for user application. |
-| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsers.property.username">username</a></code> | <code>java.lang.String</code> | Username for user. |
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsers.property.id"></a>
-
-```java
-public java.lang.String getId();
-```
-
-- *Type:* java.lang.String
-
-User ID.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth#id AppBasicAuth#id}
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-
----
-
-##### `password`<sup>Optional</sup> <a name="password" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsers.property.password"></a>
-
-```java
-public java.lang.String getPassword();
-```
-
-- *Type:* java.lang.String
-
-Password for user application.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth#password AppBasicAuth#password}
-
----
-
-##### `username`<sup>Optional</sup> <a name="username" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsers.property.username"></a>
-
-```java
-public java.lang.String getUsername();
-```
-
-- *Type:* java.lang.String
-
-Username for user.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_basic_auth#username AppBasicAuth#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_basic_auth#update AppBasicAuth#update}.
 
 ---
 
@@ -2327,514 +2011,6 @@ public java.lang.Object getInternalValue();
 ```
 
 - *Type:* <a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthTimeouts">AppBasicAuthTimeouts</a> OR com.hashicorp.cdktf.IResolvable
-
----
-
-
-### AppBasicAuthUsersList <a name="AppBasicAuthUsersList" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersList"></a>
-
-#### Initializers <a name="Initializers" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersList.Initializer"></a>
-
-```java
-import com.hashicorp.cdktf.providers.okta.app_basic_auth.AppBasicAuthUsersList;
-
-new AppBasicAuthUsersList(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Boolean wrapsSet);
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
-
----
-
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersList.Initializer.parameter.terraformResource"></a>
-
-- *Type:* com.hashicorp.cdktf.IInterpolatingParent
-
-The parent resource.
-
----
-
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersList.Initializer.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
-The attribute on the parent resource this class is referencing.
-
----
-
-##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersList.Initializer.parameter.wrapsSet"></a>
-
-- *Type:* java.lang.Boolean
-
-whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersList.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersList.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersList.get">get</a></code> | *No description.* |
-
----
-
-##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersList.computeFqn"></a>
-
-```java
-public java.lang.String computeFqn()
-```
-
-##### `resolve` <a name="resolve" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersList.resolve"></a>
-
-```java
-public java.lang.Object resolve(IResolveContext _context)
-```
-
-Produce the Token's value at resolution time.
-
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersList.resolve.parameter._context"></a>
-
-- *Type:* com.hashicorp.cdktf.IResolveContext
-
----
-
-##### `toString` <a name="toString" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersList.toString"></a>
-
-```java
-public java.lang.String toString()
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-##### `get` <a name="get" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersList.get"></a>
-
-```java
-public AppBasicAuthUsersOutputReference get(java.lang.Number index)
-```
-
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersList.get.parameter.index"></a>
-
-- *Type:* java.lang.Number
-
-the index of the item to return.
-
----
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsers">AppBasicAuthUsers</a>></code> | *No description.* |
-
----
-
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersList.property.creationStack"></a>
-
-```java
-public java.util.List<java.lang.String> getCreationStack();
-```
-
-- *Type:* java.util.List<java.lang.String>
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersList.property.fqn"></a>
-
-```java
-public java.lang.String getFqn();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersList.property.internalValue"></a>
-
-```java
-public java.lang.Object getInternalValue();
-```
-
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsers">AppBasicAuthUsers</a>>
-
----
-
-
-### AppBasicAuthUsersOutputReference <a name="AppBasicAuthUsersOutputReference" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersOutputReference"></a>
-
-#### Initializers <a name="Initializers" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersOutputReference.Initializer"></a>
-
-```java
-import com.hashicorp.cdktf.providers.okta.app_basic_auth.AppBasicAuthUsersOutputReference;
-
-new AppBasicAuthUsersOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Number complexObjectIndex, java.lang.Boolean complexObjectIsFromSet);
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>java.lang.Number</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
-
----
-
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersOutputReference.Initializer.parameter.terraformResource"></a>
-
-- *Type:* com.hashicorp.cdktf.IInterpolatingParent
-
-The parent resource.
-
----
-
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersOutputReference.Initializer.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
-The attribute on the parent resource this class is referencing.
-
----
-
-##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersOutputReference.Initializer.parameter.complexObjectIndex"></a>
-
-- *Type:* java.lang.Number
-
-the index of this item in the list.
-
----
-
-##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
-
-- *Type:* java.lang.Boolean
-
-whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersOutputReference.resetId">resetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersOutputReference.resetPassword">resetPassword</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersOutputReference.resetUsername">resetUsername</a></code> | *No description.* |
-
----
-
-##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersOutputReference.computeFqn"></a>
-
-```java
-public java.lang.String computeFqn()
-```
-
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersOutputReference.getAnyMapAttribute"></a>
-
-```java
-public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersOutputReference.getBooleanAttribute"></a>
-
-```java
-public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersOutputReference.getBooleanMapAttribute"></a>
-
-```java
-public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersOutputReference.getListAttribute"></a>
-
-```java
-public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersOutputReference.getListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersOutputReference.getNumberAttribute"></a>
-
-```java
-public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersOutputReference.getNumberListAttribute"></a>
-
-```java
-public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersOutputReference.getNumberMapAttribute"></a>
-
-```java
-public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersOutputReference.getStringAttribute"></a>
-
-```java
-public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersOutputReference.getStringMapAttribute"></a>
-
-```java
-public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersOutputReference.interpolationForAttribute"></a>
-
-```java
-public IResolvable interpolationForAttribute(java.lang.String property)
-```
-
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersOutputReference.interpolationForAttribute.parameter.property"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `resolve` <a name="resolve" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersOutputReference.resolve"></a>
-
-```java
-public java.lang.Object resolve(IResolveContext _context)
-```
-
-Produce the Token's value at resolution time.
-
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersOutputReference.resolve.parameter._context"></a>
-
-- *Type:* com.hashicorp.cdktf.IResolveContext
-
----
-
-##### `toString` <a name="toString" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersOutputReference.toString"></a>
-
-```java
-public java.lang.String toString()
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-##### `resetId` <a name="resetId" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersOutputReference.resetId"></a>
-
-```java
-public void resetId()
-```
-
-##### `resetPassword` <a name="resetPassword" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersOutputReference.resetPassword"></a>
-
-```java
-public void resetPassword()
-```
-
-##### `resetUsername` <a name="resetUsername" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersOutputReference.resetUsername"></a>
-
-```java
-public void resetUsername()
-```
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersOutputReference.property.scope">scope</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersOutputReference.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersOutputReference.property.passwordInput">passwordInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersOutputReference.property.usernameInput">usernameInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersOutputReference.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersOutputReference.property.password">password</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersOutputReference.property.username">username</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsers">AppBasicAuthUsers</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-
----
-
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersOutputReference.property.creationStack"></a>
-
-```java
-public java.util.List<java.lang.String> getCreationStack();
-```
-
-- *Type:* java.util.List<java.lang.String>
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersOutputReference.property.fqn"></a>
-
-```java
-public java.lang.String getFqn();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersOutputReference.property.scope"></a>
-
-```java
-public java.lang.String getScope();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersOutputReference.property.idInput"></a>
-
-```java
-public java.lang.String getIdInput();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `passwordInput`<sup>Optional</sup> <a name="passwordInput" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersOutputReference.property.passwordInput"></a>
-
-```java
-public java.lang.String getPasswordInput();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `usernameInput`<sup>Optional</sup> <a name="usernameInput" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersOutputReference.property.usernameInput"></a>
-
-```java
-public java.lang.String getUsernameInput();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersOutputReference.property.id"></a>
-
-```java
-public java.lang.String getId();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `password`<sup>Required</sup> <a name="password" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersOutputReference.property.password"></a>
-
-```java
-public java.lang.String getPassword();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `username`<sup>Required</sup> <a name="username" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersOutputReference.property.username"></a>
-
-```java
-public java.lang.String getUsername();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersOutputReference.property.internalValue"></a>
-
-```java
-public java.lang.Object getInternalValue();
-```
-
-- *Type:* <a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsers">AppBasicAuthUsers</a> OR com.hashicorp.cdktf.IResolvable
 
 ---
 

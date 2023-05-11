@@ -1,6 +1,6 @@
 # `okta_app_saml`
 
-Refer to the Terraform Registory for docs: [`okta_app_saml`](https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_saml).
+Refer to the Terraform Registory for docs: [`okta_app_saml`](https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_saml).
 
 # `appSaml` Submodule <a name="`appSaml` Submodule" id="@cdktf/provider-okta.appSaml"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_app_saml`](https://registry.te
 
 ### AppSaml <a name="AppSaml" id="@cdktf/provider-okta.appSaml.AppSaml"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_saml okta_app_saml}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_saml okta_app_saml}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appSaml.AppSaml.Initializer"></a>
 
@@ -72,7 +72,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.putAttributeStatements">putAttributeStatements</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.putTimeouts">putTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.putUsers">putUsers</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.resetAccessibilityErrorRedirectUrl">resetAccessibilityErrorRedirectUrl</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.resetAccessibilityLoginRedirectUrl">resetAccessibilityLoginRedirectUrl</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.resetAccessibilitySelfService">resetAccessibilitySelfService</a></code> | *No description.* |
@@ -90,7 +89,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.resetDestination">resetDestination</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.resetDigestAlgorithm">resetDigestAlgorithm</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.resetEnduserNote">resetEnduserNote</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.resetGroups">resetGroups</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.resetHideIos">resetHideIos</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.resetHideWeb">resetHideWeb</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.resetHonorForceAuthn">resetHonorForceAuthn</a></code> | *No description.* |
@@ -111,8 +109,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.resetSingleLogoutCertificate">resetSingleLogoutCertificate</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.resetSingleLogoutIssuer">resetSingleLogoutIssuer</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.resetSingleLogoutUrl">resetSingleLogoutUrl</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.resetSkipGroups">resetSkipGroups</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.resetSkipUsers">resetSkipUsers</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.resetSpIssuer">resetSpIssuer</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.resetSsoUrl">resetSsoUrl</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.resetStatus">resetStatus</a></code> | *No description.* |
@@ -123,7 +119,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.resetUserNameTemplatePushStatus">resetUserNameTemplatePushStatus</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.resetUserNameTemplateSuffix">resetUserNameTemplateSuffix</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.resetUserNameTemplateType">resetUserNameTemplateType</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.resetUsers">resetUsers</a></code> | *No description.* |
 
 ---
 
@@ -335,18 +330,6 @@ public putTimeouts(value: AppSamlTimeouts): void
 
 ---
 
-##### `putUsers` <a name="putUsers" id="@cdktf/provider-okta.appSaml.AppSaml.putUsers"></a>
-
-```typescript
-public putUsers(value: IResolvable | AppSamlUsers[]): void
-```
-
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-okta.appSaml.AppSaml.putUsers.parameter.value"></a>
-
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-okta.appSaml.AppSamlUsers">AppSamlUsers</a>[]
-
----
-
 ##### `resetAccessibilityErrorRedirectUrl` <a name="resetAccessibilityErrorRedirectUrl" id="@cdktf/provider-okta.appSaml.AppSaml.resetAccessibilityErrorRedirectUrl"></a>
 
 ```typescript
@@ -447,12 +430,6 @@ public resetDigestAlgorithm(): void
 
 ```typescript
 public resetEnduserNote(): void
-```
-
-##### `resetGroups` <a name="resetGroups" id="@cdktf/provider-okta.appSaml.AppSaml.resetGroups"></a>
-
-```typescript
-public resetGroups(): void
 ```
 
 ##### `resetHideIos` <a name="resetHideIos" id="@cdktf/provider-okta.appSaml.AppSaml.resetHideIos"></a>
@@ -575,18 +552,6 @@ public resetSingleLogoutIssuer(): void
 public resetSingleLogoutUrl(): void
 ```
 
-##### `resetSkipGroups` <a name="resetSkipGroups" id="@cdktf/provider-okta.appSaml.AppSaml.resetSkipGroups"></a>
-
-```typescript
-public resetSkipGroups(): void
-```
-
-##### `resetSkipUsers` <a name="resetSkipUsers" id="@cdktf/provider-okta.appSaml.AppSaml.resetSkipUsers"></a>
-
-```typescript
-public resetSkipUsers(): void
-```
-
 ##### `resetSpIssuer` <a name="resetSpIssuer" id="@cdktf/provider-okta.appSaml.AppSaml.resetSpIssuer"></a>
 
 ```typescript
@@ -645,12 +610,6 @@ public resetUserNameTemplateSuffix(): void
 
 ```typescript
 public resetUserNameTemplateType(): void
-```
-
-##### `resetUsers` <a name="resetUsers" id="@cdktf/provider-okta.appSaml.AppSaml.resetUsers"></a>
-
-```typescript
-public resetUsers(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -757,7 +716,6 @@ appSaml.AppSaml.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.signOnMode">signOnMode</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlTimeoutsOutputReference">AppSamlTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.users">users</a></code> | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlUsersList">AppSamlUsersList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.accessibilityErrorRedirectUrlInput">accessibilityErrorRedirectUrlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.accessibilityLoginRedirectUrlInput">accessibilityLoginRedirectUrlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.accessibilitySelfServiceInput">accessibilitySelfServiceInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
@@ -775,7 +733,6 @@ appSaml.AppSaml.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.destinationInput">destinationInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.digestAlgorithmInput">digestAlgorithmInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.enduserNoteInput">enduserNoteInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.groupsInput">groupsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.hideIosInput">hideIosInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.hideWebInput">hideWebInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.honorForceAuthnInput">honorForceAuthnInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
@@ -797,8 +754,6 @@ appSaml.AppSaml.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.singleLogoutCertificateInput">singleLogoutCertificateInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.singleLogoutIssuerInput">singleLogoutIssuerInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.singleLogoutUrlInput">singleLogoutUrlInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.skipGroupsInput">skipGroupsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.skipUsersInput">skipUsersInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.spIssuerInput">spIssuerInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.ssoUrlInput">ssoUrlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.statusInput">statusInput</a></code> | <code>string</code> | *No description.* |
@@ -809,7 +764,6 @@ appSaml.AppSaml.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.userNameTemplatePushStatusInput">userNameTemplatePushStatusInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.userNameTemplateSuffixInput">userNameTemplateSuffixInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.userNameTemplateTypeInput">userNameTemplateTypeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.usersInput">usersInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-okta.appSaml.AppSamlUsers">AppSamlUsers</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.accessibilityErrorRedirectUrl">accessibilityErrorRedirectUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.accessibilityLoginRedirectUrl">accessibilityLoginRedirectUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.accessibilitySelfService">accessibilitySelfService</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
@@ -826,7 +780,6 @@ appSaml.AppSaml.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.destination">destination</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.digestAlgorithm">digestAlgorithm</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.enduserNote">enduserNote</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.groups">groups</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.hideIos">hideIos</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.hideWeb">hideWeb</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.honorForceAuthn">honorForceAuthn</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
@@ -848,8 +801,6 @@ appSaml.AppSaml.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.singleLogoutCertificate">singleLogoutCertificate</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.singleLogoutIssuer">singleLogoutIssuer</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.singleLogoutUrl">singleLogoutUrl</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.skipGroups">skipGroups</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.skipUsers">skipUsers</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.spIssuer">spIssuer</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.ssoUrl">ssoUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.status">status</a></code> | <code>string</code> | *No description.* |
@@ -1164,16 +1115,6 @@ public readonly timeouts: AppSamlTimeoutsOutputReference;
 
 ---
 
-##### `users`<sup>Required</sup> <a name="users" id="@cdktf/provider-okta.appSaml.AppSaml.property.users"></a>
-
-```typescript
-public readonly users: AppSamlUsersList;
-```
-
-- *Type:* <a href="#@cdktf/provider-okta.appSaml.AppSamlUsersList">AppSamlUsersList</a>
-
----
-
 ##### `accessibilityErrorRedirectUrlInput`<sup>Optional</sup> <a name="accessibilityErrorRedirectUrlInput" id="@cdktf/provider-okta.appSaml.AppSaml.property.accessibilityErrorRedirectUrlInput"></a>
 
 ```typescript
@@ -1341,16 +1282,6 @@ public readonly enduserNoteInput: string;
 ```
 
 - *Type:* string
-
----
-
-##### `groupsInput`<sup>Optional</sup> <a name="groupsInput" id="@cdktf/provider-okta.appSaml.AppSaml.property.groupsInput"></a>
-
-```typescript
-public readonly groupsInput: string[];
-```
-
-- *Type:* string[]
 
 ---
 
@@ -1564,26 +1495,6 @@ public readonly singleLogoutUrlInput: string;
 
 ---
 
-##### `skipGroupsInput`<sup>Optional</sup> <a name="skipGroupsInput" id="@cdktf/provider-okta.appSaml.AppSaml.property.skipGroupsInput"></a>
-
-```typescript
-public readonly skipGroupsInput: boolean | IResolvable;
-```
-
-- *Type:* boolean | cdktf.IResolvable
-
----
-
-##### `skipUsersInput`<sup>Optional</sup> <a name="skipUsersInput" id="@cdktf/provider-okta.appSaml.AppSaml.property.skipUsersInput"></a>
-
-```typescript
-public readonly skipUsersInput: boolean | IResolvable;
-```
-
-- *Type:* boolean | cdktf.IResolvable
-
----
-
 ##### `spIssuerInput`<sup>Optional</sup> <a name="spIssuerInput" id="@cdktf/provider-okta.appSaml.AppSaml.property.spIssuerInput"></a>
 
 ```typescript
@@ -1681,16 +1592,6 @@ public readonly userNameTemplateTypeInput: string;
 ```
 
 - *Type:* string
-
----
-
-##### `usersInput`<sup>Optional</sup> <a name="usersInput" id="@cdktf/provider-okta.appSaml.AppSaml.property.usersInput"></a>
-
-```typescript
-public readonly usersInput: IResolvable | AppSamlUsers[];
-```
-
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-okta.appSaml.AppSamlUsers">AppSamlUsers</a>[]
 
 ---
 
@@ -1851,16 +1752,6 @@ public readonly enduserNote: string;
 ```
 
 - *Type:* string
-
----
-
-##### `groups`<sup>Required</sup> <a name="groups" id="@cdktf/provider-okta.appSaml.AppSaml.property.groups"></a>
-
-```typescript
-public readonly groups: string[];
-```
-
-- *Type:* string[]
 
 ---
 
@@ -2074,26 +1965,6 @@ public readonly singleLogoutUrl: string;
 
 ---
 
-##### `skipGroups`<sup>Required</sup> <a name="skipGroups" id="@cdktf/provider-okta.appSaml.AppSaml.property.skipGroups"></a>
-
-```typescript
-public readonly skipGroups: boolean | IResolvable;
-```
-
-- *Type:* boolean | cdktf.IResolvable
-
----
-
-##### `skipUsers`<sup>Required</sup> <a name="skipUsers" id="@cdktf/provider-okta.appSaml.AppSaml.property.skipUsers"></a>
-
-```typescript
-public readonly skipUsers: boolean | IResolvable;
-```
-
-- *Type:* boolean | cdktf.IResolvable
-
----
-
 ##### `spIssuer`<sup>Required</sup> <a name="spIssuer" id="@cdktf/provider-okta.appSaml.AppSaml.property.spIssuer"></a>
 
 ```typescript
@@ -2223,7 +2094,7 @@ const appSamlAttributeStatements: appSaml.AppSamlAttributeStatements = { ... }
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlAttributeStatements.property.filterValue">filterValue</a></code> | <code>string</code> | Filter value to use. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlAttributeStatements.property.namespace">namespace</a></code> | <code>string</code> | The name format of the attribute. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlAttributeStatements.property.type">type</a></code> | <code>string</code> | The type of attribute statements object. |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlAttributeStatements.property.values">values</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_saml#values AppSaml#values}. |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlAttributeStatements.property.values">values</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_saml#values AppSaml#values}. |
 
 ---
 
@@ -2237,7 +2108,7 @@ public readonly name: string;
 
 The reference name of the attribute statement.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_saml#name AppSaml#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_saml#name AppSaml#name}
 
 ---
 
@@ -2251,7 +2122,7 @@ public readonly filterType: string;
 
 Type of group attribute filter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_saml#filter_type AppSaml#filter_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_saml#filter_type AppSaml#filter_type}
 
 ---
 
@@ -2265,7 +2136,7 @@ public readonly filterValue: string;
 
 Filter value to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_saml#filter_value AppSaml#filter_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_saml#filter_value AppSaml#filter_value}
 
 ---
 
@@ -2279,7 +2150,7 @@ public readonly namespace: string;
 
 The name format of the attribute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_saml#namespace AppSaml#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_saml#namespace AppSaml#namespace}
 
 ---
 
@@ -2293,7 +2164,7 @@ public readonly type: string;
 
 The type of attribute statements object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_saml#type AppSaml#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_saml#type AppSaml#type}
 
 ---
 
@@ -2305,7 +2176,7 @@ public readonly values: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_saml#values AppSaml#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_saml#values AppSaml#values}.
 
 ---
 
@@ -2348,11 +2219,10 @@ const appSamlConfig: appSaml.AppSamlConfig = { ... }
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.destination">destination</a></code> | <code>string</code> | Identifies the location where the SAML response is intended to be sent inside of the SAML assertion. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.digestAlgorithm">digestAlgorithm</a></code> | <code>string</code> | Determines the digest algorithm used to digitally sign the SAML assertion and response. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.enduserNote">enduserNote</a></code> | <code>string</code> | Application notes for end users. |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.groups">groups</a></code> | <code>string[]</code> | Groups associated with the application. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.hideIos">hideIos</a></code> | <code>boolean \| cdktf.IResolvable</code> | Do not display application icon on mobile app. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.hideWeb">hideWeb</a></code> | <code>boolean \| cdktf.IResolvable</code> | Do not display application icon to users. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.honorForceAuthn">honorForceAuthn</a></code> | <code>boolean \| cdktf.IResolvable</code> | Prompt user to re-authenticate if SP asks for it. |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_saml#id AppSaml#id}. |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_saml#id AppSaml#id}. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.idpIssuer">idpIssuer</a></code> | <code>string</code> | SAML issuer ID. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.implicitAssignment">implicitAssignment</a></code> | <code>boolean \| cdktf.IResolvable</code> | *Early Access Property*. Enable Federation Broker Mode. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.inlineHookId">inlineHookId</a></code> | <code>string</code> | Saml Inline Hook setting. |
@@ -2369,8 +2239,6 @@ const appSamlConfig: appSaml.AppSamlConfig = { ... }
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.singleLogoutCertificate">singleLogoutCertificate</a></code> | <code>string</code> | x509 encoded certificate that the Service Provider uses to sign Single Logout requests. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.singleLogoutIssuer">singleLogoutIssuer</a></code> | <code>string</code> | The issuer of the Service Provider that generates the Single Logout request. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.singleLogoutUrl">singleLogoutUrl</a></code> | <code>string</code> | The location where the logout response is sent. |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.skipGroups">skipGroups</a></code> | <code>boolean \| cdktf.IResolvable</code> | Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources. |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.skipUsers">skipUsers</a></code> | <code>boolean \| cdktf.IResolvable</code> | Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.spIssuer">spIssuer</a></code> | <code>string</code> | SAML SP issuer ID. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.ssoUrl">ssoUrl</a></code> | <code>string</code> | Single Sign On URL. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.status">status</a></code> | <code>string</code> | Status of application. |
@@ -2381,7 +2249,6 @@ const appSamlConfig: appSaml.AppSamlConfig = { ... }
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.userNameTemplatePushStatus">userNameTemplatePushStatus</a></code> | <code>string</code> | Push username on update. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.userNameTemplateSuffix">userNameTemplateSuffix</a></code> | <code>string</code> | Username template suffix. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.userNameTemplateType">userNameTemplateType</a></code> | <code>string</code> | Username template type. |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.users">users</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-okta.appSaml.AppSamlUsers">AppSamlUsers</a>[]</code> | users block. |
 
 ---
 
@@ -2465,7 +2332,7 @@ public readonly label: string;
 
 Pretty name of app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_saml#label AppSaml#label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_saml#label AppSaml#label}
 
 ---
 
@@ -2479,7 +2346,7 @@ public readonly accessibilityErrorRedirectUrl: string;
 
 Custom error page URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_saml#accessibility_error_redirect_url AppSaml#accessibility_error_redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_saml#accessibility_error_redirect_url AppSaml#accessibility_error_redirect_url}
 
 ---
 
@@ -2493,7 +2360,7 @@ public readonly accessibilityLoginRedirectUrl: string;
 
 Custom login page URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_saml#accessibility_login_redirect_url AppSaml#accessibility_login_redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_saml#accessibility_login_redirect_url AppSaml#accessibility_login_redirect_url}
 
 ---
 
@@ -2507,7 +2374,7 @@ public readonly accessibilitySelfService: boolean | IResolvable;
 
 Enable self service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_saml#accessibility_self_service AppSaml#accessibility_self_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_saml#accessibility_self_service AppSaml#accessibility_self_service}
 
 ---
 
@@ -2521,7 +2388,7 @@ public readonly acsEndpoints: string[];
 
 List of ACS endpoints for this SAML application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_saml#acs_endpoints AppSaml#acs_endpoints}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_saml#acs_endpoints AppSaml#acs_endpoints}
 
 ---
 
@@ -2535,7 +2402,7 @@ public readonly adminNote: string;
 
 Application notes for admins.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_saml#admin_note AppSaml#admin_note}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_saml#admin_note AppSaml#admin_note}
 
 ---
 
@@ -2549,7 +2416,7 @@ public readonly appLinksJson: string;
 
 Displays specific appLinks for the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_saml#app_links_json AppSaml#app_links_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_saml#app_links_json AppSaml#app_links_json}
 
 ---
 
@@ -2563,7 +2430,7 @@ public readonly appSettingsJson: string;
 
 Application settings in JSON format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_saml#app_settings_json AppSaml#app_settings_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_saml#app_settings_json AppSaml#app_settings_json}
 
 ---
 
@@ -2577,7 +2444,7 @@ public readonly assertionSigned: boolean | IResolvable;
 
 Determines whether the SAML assertion is digitally signed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_saml#assertion_signed AppSaml#assertion_signed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_saml#assertion_signed AppSaml#assertion_signed}
 
 ---
 
@@ -2591,7 +2458,7 @@ public readonly attributeStatements: IResolvable | AppSamlAttributeStatements[];
 
 attribute_statements block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_saml#attribute_statements AppSaml#attribute_statements}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_saml#attribute_statements AppSaml#attribute_statements}
 
 ---
 
@@ -2605,7 +2472,7 @@ public readonly audience: string;
 
 Audience Restriction.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_saml#audience AppSaml#audience}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_saml#audience AppSaml#audience}
 
 ---
 
@@ -2619,7 +2486,7 @@ public readonly authenticationPolicy: string;
 
 Id of this apps authentication policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_saml#authentication_policy AppSaml#authentication_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_saml#authentication_policy AppSaml#authentication_policy}
 
 ---
 
@@ -2633,7 +2500,7 @@ public readonly authnContextClassRef: string;
 
 Identifies the SAML authentication context class for the assertion’s authentication statement.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_saml#authn_context_class_ref AppSaml#authn_context_class_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_saml#authn_context_class_ref AppSaml#authn_context_class_ref}
 
 ---
 
@@ -2647,7 +2514,7 @@ public readonly autoSubmitToolbar: boolean | IResolvable;
 
 Display auto submit toolbar.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_saml#auto_submit_toolbar AppSaml#auto_submit_toolbar}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_saml#auto_submit_toolbar AppSaml#auto_submit_toolbar}
 
 ---
 
@@ -2661,7 +2528,7 @@ public readonly defaultRelayState: string;
 
 Identifies a specific application resource in an IDP initiated SSO scenario.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_saml#default_relay_state AppSaml#default_relay_state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_saml#default_relay_state AppSaml#default_relay_state}
 
 ---
 
@@ -2675,7 +2542,7 @@ public readonly destination: string;
 
 Identifies the location where the SAML response is intended to be sent inside of the SAML assertion.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_saml#destination AppSaml#destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_saml#destination AppSaml#destination}
 
 ---
 
@@ -2689,7 +2556,7 @@ public readonly digestAlgorithm: string;
 
 Determines the digest algorithm used to digitally sign the SAML assertion and response.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_saml#digest_algorithm AppSaml#digest_algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_saml#digest_algorithm AppSaml#digest_algorithm}
 
 ---
 
@@ -2703,21 +2570,7 @@ public readonly enduserNote: string;
 
 Application notes for end users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_saml#enduser_note AppSaml#enduser_note}
-
----
-
-##### `groups`<sup>Optional</sup> <a name="groups" id="@cdktf/provider-okta.appSaml.AppSamlConfig.property.groups"></a>
-
-```typescript
-public readonly groups: string[];
-```
-
-- *Type:* string[]
-
-Groups associated with the application.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_saml#groups AppSaml#groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_saml#enduser_note AppSaml#enduser_note}
 
 ---
 
@@ -2731,7 +2584,7 @@ public readonly hideIos: boolean | IResolvable;
 
 Do not display application icon on mobile app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_saml#hide_ios AppSaml#hide_ios}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_saml#hide_ios AppSaml#hide_ios}
 
 ---
 
@@ -2745,7 +2598,7 @@ public readonly hideWeb: boolean | IResolvable;
 
 Do not display application icon to users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_saml#hide_web AppSaml#hide_web}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_saml#hide_web AppSaml#hide_web}
 
 ---
 
@@ -2759,7 +2612,7 @@ public readonly honorForceAuthn: boolean | IResolvable;
 
 Prompt user to re-authenticate if SP asks for it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_saml#honor_force_authn AppSaml#honor_force_authn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_saml#honor_force_authn AppSaml#honor_force_authn}
 
 ---
 
@@ -2771,7 +2624,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_saml#id AppSaml#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_saml#id AppSaml#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2788,7 +2641,7 @@ public readonly idpIssuer: string;
 
 SAML issuer ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_saml#idp_issuer AppSaml#idp_issuer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_saml#idp_issuer AppSaml#idp_issuer}
 
 ---
 
@@ -2802,7 +2655,7 @@ public readonly implicitAssignment: boolean | IResolvable;
 
 *Early Access Property*. Enable Federation Broker Mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_saml#implicit_assignment AppSaml#implicit_assignment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_saml#implicit_assignment AppSaml#implicit_assignment}
 
 ---
 
@@ -2816,7 +2669,7 @@ public readonly inlineHookId: string;
 
 Saml Inline Hook setting.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_saml#inline_hook_id AppSaml#inline_hook_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_saml#inline_hook_id AppSaml#inline_hook_id}
 
 ---
 
@@ -2830,7 +2683,7 @@ public readonly keyName: string;
 
 Certificate name. This modulates the rotation of keys. New name == new key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_saml#key_name AppSaml#key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_saml#key_name AppSaml#key_name}
 
 ---
 
@@ -2844,7 +2697,7 @@ public readonly keyYearsValid: number;
 
 Number of years the certificate is valid.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_saml#key_years_valid AppSaml#key_years_valid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_saml#key_years_valid AppSaml#key_years_valid}
 
 ---
 
@@ -2858,7 +2711,7 @@ public readonly logo: string;
 
 Local path to logo of the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_saml#logo AppSaml#logo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_saml#logo AppSaml#logo}
 
 ---
 
@@ -2872,7 +2725,7 @@ public readonly preconfiguredApp: string;
 
 Name of preexisting SAML application. For instance 'slack'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_saml#preconfigured_app AppSaml#preconfigured_app}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_saml#preconfigured_app AppSaml#preconfigured_app}
 
 ---
 
@@ -2886,7 +2739,7 @@ public readonly recipient: string;
 
 The location where the app may present the SAML assertion.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_saml#recipient AppSaml#recipient}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_saml#recipient AppSaml#recipient}
 
 ---
 
@@ -2900,7 +2753,7 @@ public readonly requestCompressed: boolean | IResolvable;
 
 Denotes whether the request is compressed or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_saml#request_compressed AppSaml#request_compressed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_saml#request_compressed AppSaml#request_compressed}
 
 ---
 
@@ -2914,7 +2767,7 @@ public readonly responseSigned: boolean | IResolvable;
 
 Determines whether the SAML auth response message is digitally signed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_saml#response_signed AppSaml#response_signed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_saml#response_signed AppSaml#response_signed}
 
 ---
 
@@ -2928,7 +2781,7 @@ public readonly samlSignedRequestEnabled: boolean | IResolvable;
 
 SAML Signed Request enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_saml#saml_signed_request_enabled AppSaml#saml_signed_request_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_saml#saml_signed_request_enabled AppSaml#saml_signed_request_enabled}
 
 ---
 
@@ -2942,7 +2795,7 @@ public readonly samlVersion: string;
 
 SAML version for the app's sign-on mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_saml#saml_version AppSaml#saml_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_saml#saml_version AppSaml#saml_version}
 
 ---
 
@@ -2956,7 +2809,7 @@ public readonly signatureAlgorithm: string;
 
 Signature algorithm used ot digitally sign the assertion and response.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_saml#signature_algorithm AppSaml#signature_algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_saml#signature_algorithm AppSaml#signature_algorithm}
 
 ---
 
@@ -2970,7 +2823,7 @@ public readonly singleLogoutCertificate: string;
 
 x509 encoded certificate that the Service Provider uses to sign Single Logout requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_saml#single_logout_certificate AppSaml#single_logout_certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_saml#single_logout_certificate AppSaml#single_logout_certificate}
 
 ---
 
@@ -2984,7 +2837,7 @@ public readonly singleLogoutIssuer: string;
 
 The issuer of the Service Provider that generates the Single Logout request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_saml#single_logout_issuer AppSaml#single_logout_issuer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_saml#single_logout_issuer AppSaml#single_logout_issuer}
 
 ---
 
@@ -2998,35 +2851,7 @@ public readonly singleLogoutUrl: string;
 
 The location where the logout response is sent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_saml#single_logout_url AppSaml#single_logout_url}
-
----
-
-##### `skipGroups`<sup>Optional</sup> <a name="skipGroups" id="@cdktf/provider-okta.appSaml.AppSamlConfig.property.skipGroups"></a>
-
-```typescript
-public readonly skipGroups: boolean | IResolvable;
-```
-
-- *Type:* boolean | cdktf.IResolvable
-
-Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_saml#skip_groups AppSaml#skip_groups}
-
----
-
-##### `skipUsers`<sup>Optional</sup> <a name="skipUsers" id="@cdktf/provider-okta.appSaml.AppSamlConfig.property.skipUsers"></a>
-
-```typescript
-public readonly skipUsers: boolean | IResolvable;
-```
-
-- *Type:* boolean | cdktf.IResolvable
-
-Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_saml#skip_users AppSaml#skip_users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_saml#single_logout_url AppSaml#single_logout_url}
 
 ---
 
@@ -3040,7 +2865,7 @@ public readonly spIssuer: string;
 
 SAML SP issuer ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_saml#sp_issuer AppSaml#sp_issuer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_saml#sp_issuer AppSaml#sp_issuer}
 
 ---
 
@@ -3054,7 +2879,7 @@ public readonly ssoUrl: string;
 
 Single Sign On URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_saml#sso_url AppSaml#sso_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_saml#sso_url AppSaml#sso_url}
 
 ---
 
@@ -3068,7 +2893,7 @@ public readonly status: string;
 
 Status of application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_saml#status AppSaml#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_saml#status AppSaml#status}
 
 ---
 
@@ -3082,7 +2907,7 @@ public readonly subjectNameIdFormat: string;
 
 Identifies the SAML processing rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_saml#subject_name_id_format AppSaml#subject_name_id_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_saml#subject_name_id_format AppSaml#subject_name_id_format}
 
 ---
 
@@ -3096,7 +2921,7 @@ public readonly subjectNameIdTemplate: string;
 
 Template for app user's username when a user is assigned to the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_saml#subject_name_id_template AppSaml#subject_name_id_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_saml#subject_name_id_template AppSaml#subject_name_id_template}
 
 ---
 
@@ -3110,7 +2935,7 @@ public readonly timeouts: AppSamlTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_saml#timeouts AppSaml#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_saml#timeouts AppSaml#timeouts}
 
 ---
 
@@ -3124,7 +2949,7 @@ public readonly userNameTemplate: string;
 
 Username template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_saml#user_name_template AppSaml#user_name_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_saml#user_name_template AppSaml#user_name_template}
 
 ---
 
@@ -3138,7 +2963,7 @@ public readonly userNameTemplatePushStatus: string;
 
 Push username on update.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_saml#user_name_template_push_status AppSaml#user_name_template_push_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_saml#user_name_template_push_status AppSaml#user_name_template_push_status}
 
 ---
 
@@ -3152,7 +2977,7 @@ public readonly userNameTemplateSuffix: string;
 
 Username template suffix.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_saml#user_name_template_suffix AppSaml#user_name_template_suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_saml#user_name_template_suffix AppSaml#user_name_template_suffix}
 
 ---
 
@@ -3166,21 +2991,7 @@ public readonly userNameTemplateType: string;
 
 Username template type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_saml#user_name_template_type AppSaml#user_name_template_type}
-
----
-
-##### `users`<sup>Optional</sup> <a name="users" id="@cdktf/provider-okta.appSaml.AppSamlConfig.property.users"></a>
-
-```typescript
-public readonly users: IResolvable | AppSamlUsers[];
-```
-
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-okta.appSaml.AppSamlUsers">AppSamlUsers</a>[]
-
-users block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_saml#users AppSaml#users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_saml#user_name_template_type AppSaml#user_name_template_type}
 
 ---
 
@@ -3209,9 +3020,9 @@ const appSamlTimeouts: appSaml.AppSamlTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_saml#create AppSaml#create}. |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_saml#read AppSaml#read}. |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_saml#update AppSaml#update}. |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_saml#create AppSaml#create}. |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_saml#read AppSaml#read}. |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_saml#update AppSaml#update}. |
 
 ---
 
@@ -3223,7 +3034,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_saml#create AppSaml#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_saml#create AppSaml#create}.
 
 ---
 
@@ -3235,7 +3046,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_saml#read AppSaml#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_saml#read AppSaml#read}.
 
 ---
 
@@ -3247,72 +3058,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_saml#update AppSaml#update}.
-
----
-
-### AppSamlUsers <a name="AppSamlUsers" id="@cdktf/provider-okta.appSaml.AppSamlUsers"></a>
-
-#### Initializer <a name="Initializer" id="@cdktf/provider-okta.appSaml.AppSamlUsers.Initializer"></a>
-
-```typescript
-import { appSaml } from '@cdktf/provider-okta'
-
-const appSamlUsers: appSaml.AppSamlUsers = { ... }
-```
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlUsers.property.id">id</a></code> | <code>string</code> | User ID. |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlUsers.property.password">password</a></code> | <code>string</code> | Password for user application. |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlUsers.property.username">username</a></code> | <code>string</code> | Username for user. |
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-okta.appSaml.AppSamlUsers.property.id"></a>
-
-```typescript
-public readonly id: string;
-```
-
-- *Type:* string
-
-User ID.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_saml#id AppSaml#id}
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-
----
-
-##### `password`<sup>Optional</sup> <a name="password" id="@cdktf/provider-okta.appSaml.AppSamlUsers.property.password"></a>
-
-```typescript
-public readonly password: string;
-```
-
-- *Type:* string
-
-Password for user application.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_saml#password AppSaml#password}
-
----
-
-##### `username`<sup>Optional</sup> <a name="username" id="@cdktf/provider-okta.appSaml.AppSamlUsers.property.username"></a>
-
-```typescript
-public readonly username: string;
-```
-
-- *Type:* string
-
-Username for user.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_saml#username AppSaml#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_saml#update AppSaml#update}.
 
 ---
 
@@ -4736,514 +4482,6 @@ public readonly internalValue: AppSamlTimeouts | IResolvable;
 ```
 
 - *Type:* <a href="#@cdktf/provider-okta.appSaml.AppSamlTimeouts">AppSamlTimeouts</a> | cdktf.IResolvable
-
----
-
-
-### AppSamlUsersList <a name="AppSamlUsersList" id="@cdktf/provider-okta.appSaml.AppSamlUsersList"></a>
-
-#### Initializers <a name="Initializers" id="@cdktf/provider-okta.appSaml.AppSamlUsersList.Initializer"></a>
-
-```typescript
-import { appSaml } from '@cdktf/provider-okta'
-
-new appSaml.AppSamlUsersList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlUsersList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlUsersList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlUsersList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
-
----
-
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-okta.appSaml.AppSamlUsersList.Initializer.parameter.terraformResource"></a>
-
-- *Type:* cdktf.IInterpolatingParent
-
-The parent resource.
-
----
-
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-okta.appSaml.AppSamlUsersList.Initializer.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
-The attribute on the parent resource this class is referencing.
-
----
-
-##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-okta.appSaml.AppSamlUsersList.Initializer.parameter.wrapsSet"></a>
-
-- *Type:* boolean
-
-whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlUsersList.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlUsersList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlUsersList.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlUsersList.get">get</a></code> | *No description.* |
-
----
-
-##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-okta.appSaml.AppSamlUsersList.computeFqn"></a>
-
-```typescript
-public computeFqn(): string
-```
-
-##### `resolve` <a name="resolve" id="@cdktf/provider-okta.appSaml.AppSamlUsersList.resolve"></a>
-
-```typescript
-public resolve(_context: IResolveContext): any
-```
-
-Produce the Token's value at resolution time.
-
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-okta.appSaml.AppSamlUsersList.resolve.parameter._context"></a>
-
-- *Type:* cdktf.IResolveContext
-
----
-
-##### `toString` <a name="toString" id="@cdktf/provider-okta.appSaml.AppSamlUsersList.toString"></a>
-
-```typescript
-public toString(): string
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-##### `get` <a name="get" id="@cdktf/provider-okta.appSaml.AppSamlUsersList.get"></a>
-
-```typescript
-public get(index: number): AppSamlUsersOutputReference
-```
-
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-okta.appSaml.AppSamlUsersList.get.parameter.index"></a>
-
-- *Type:* number
-
-the index of the item to return.
-
----
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlUsersList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlUsersList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlUsersList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-okta.appSaml.AppSamlUsers">AppSamlUsers</a>[]</code> | *No description.* |
-
----
-
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-okta.appSaml.AppSamlUsersList.property.creationStack"></a>
-
-```typescript
-public readonly creationStack: string[];
-```
-
-- *Type:* string[]
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-okta.appSaml.AppSamlUsersList.property.fqn"></a>
-
-```typescript
-public readonly fqn: string;
-```
-
-- *Type:* string
-
----
-
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-okta.appSaml.AppSamlUsersList.property.internalValue"></a>
-
-```typescript
-public readonly internalValue: IResolvable | AppSamlUsers[];
-```
-
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-okta.appSaml.AppSamlUsers">AppSamlUsers</a>[]
-
----
-
-
-### AppSamlUsersOutputReference <a name="AppSamlUsersOutputReference" id="@cdktf/provider-okta.appSaml.AppSamlUsersOutputReference"></a>
-
-#### Initializers <a name="Initializers" id="@cdktf/provider-okta.appSaml.AppSamlUsersOutputReference.Initializer"></a>
-
-```typescript
-import { appSaml } from '@cdktf/provider-okta'
-
-new appSaml.AppSamlUsersOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlUsersOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlUsersOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlUsersOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlUsersOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
-
----
-
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-okta.appSaml.AppSamlUsersOutputReference.Initializer.parameter.terraformResource"></a>
-
-- *Type:* cdktf.IInterpolatingParent
-
-The parent resource.
-
----
-
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-okta.appSaml.AppSamlUsersOutputReference.Initializer.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
-The attribute on the parent resource this class is referencing.
-
----
-
-##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-okta.appSaml.AppSamlUsersOutputReference.Initializer.parameter.complexObjectIndex"></a>
-
-- *Type:* number
-
-the index of this item in the list.
-
----
-
-##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-okta.appSaml.AppSamlUsersOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
-
-- *Type:* boolean
-
-whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlUsersOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlUsersOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlUsersOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlUsersOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlUsersOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlUsersOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlUsersOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlUsersOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlUsersOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlUsersOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlUsersOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlUsersOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlUsersOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlUsersOutputReference.resetId">resetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlUsersOutputReference.resetPassword">resetPassword</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlUsersOutputReference.resetUsername">resetUsername</a></code> | *No description.* |
-
----
-
-##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-okta.appSaml.AppSamlUsersOutputReference.computeFqn"></a>
-
-```typescript
-public computeFqn(): string
-```
-
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-okta.appSaml.AppSamlUsersOutputReference.getAnyMapAttribute"></a>
-
-```typescript
-public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-okta.appSaml.AppSamlUsersOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
----
-
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-okta.appSaml.AppSamlUsersOutputReference.getBooleanAttribute"></a>
-
-```typescript
-public getBooleanAttribute(terraformAttribute: string): IResolvable
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-okta.appSaml.AppSamlUsersOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
----
-
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-okta.appSaml.AppSamlUsersOutputReference.getBooleanMapAttribute"></a>
-
-```typescript
-public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-okta.appSaml.AppSamlUsersOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
----
-
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-okta.appSaml.AppSamlUsersOutputReference.getListAttribute"></a>
-
-```typescript
-public getListAttribute(terraformAttribute: string): string[]
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-okta.appSaml.AppSamlUsersOutputReference.getListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
----
-
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-okta.appSaml.AppSamlUsersOutputReference.getNumberAttribute"></a>
-
-```typescript
-public getNumberAttribute(terraformAttribute: string): number
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-okta.appSaml.AppSamlUsersOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
----
-
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-okta.appSaml.AppSamlUsersOutputReference.getNumberListAttribute"></a>
-
-```typescript
-public getNumberListAttribute(terraformAttribute: string): number[]
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-okta.appSaml.AppSamlUsersOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
----
-
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-okta.appSaml.AppSamlUsersOutputReference.getNumberMapAttribute"></a>
-
-```typescript
-public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-okta.appSaml.AppSamlUsersOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
----
-
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-okta.appSaml.AppSamlUsersOutputReference.getStringAttribute"></a>
-
-```typescript
-public getStringAttribute(terraformAttribute: string): string
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-okta.appSaml.AppSamlUsersOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
----
-
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-okta.appSaml.AppSamlUsersOutputReference.getStringMapAttribute"></a>
-
-```typescript
-public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-okta.appSaml.AppSamlUsersOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
----
-
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-okta.appSaml.AppSamlUsersOutputReference.interpolationForAttribute"></a>
-
-```typescript
-public interpolationForAttribute(property: string): IResolvable
-```
-
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-okta.appSaml.AppSamlUsersOutputReference.interpolationForAttribute.parameter.property"></a>
-
-- *Type:* string
-
----
-
-##### `resolve` <a name="resolve" id="@cdktf/provider-okta.appSaml.AppSamlUsersOutputReference.resolve"></a>
-
-```typescript
-public resolve(_context: IResolveContext): any
-```
-
-Produce the Token's value at resolution time.
-
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-okta.appSaml.AppSamlUsersOutputReference.resolve.parameter._context"></a>
-
-- *Type:* cdktf.IResolveContext
-
----
-
-##### `toString` <a name="toString" id="@cdktf/provider-okta.appSaml.AppSamlUsersOutputReference.toString"></a>
-
-```typescript
-public toString(): string
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-##### `resetId` <a name="resetId" id="@cdktf/provider-okta.appSaml.AppSamlUsersOutputReference.resetId"></a>
-
-```typescript
-public resetId(): void
-```
-
-##### `resetPassword` <a name="resetPassword" id="@cdktf/provider-okta.appSaml.AppSamlUsersOutputReference.resetPassword"></a>
-
-```typescript
-public resetPassword(): void
-```
-
-##### `resetUsername` <a name="resetUsername" id="@cdktf/provider-okta.appSaml.AppSamlUsersOutputReference.resetUsername"></a>
-
-```typescript
-public resetUsername(): void
-```
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlUsersOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlUsersOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlUsersOutputReference.property.scope">scope</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlUsersOutputReference.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlUsersOutputReference.property.passwordInput">passwordInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlUsersOutputReference.property.usernameInput">usernameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlUsersOutputReference.property.id">id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlUsersOutputReference.property.password">password</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlUsersOutputReference.property.username">username</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlUsersOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlUsers">AppSamlUsers</a> \| cdktf.IResolvable</code> | *No description.* |
-
----
-
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-okta.appSaml.AppSamlUsersOutputReference.property.creationStack"></a>
-
-```typescript
-public readonly creationStack: string[];
-```
-
-- *Type:* string[]
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-okta.appSaml.AppSamlUsersOutputReference.property.fqn"></a>
-
-```typescript
-public readonly fqn: string;
-```
-
-- *Type:* string
-
----
-
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-okta.appSaml.AppSamlUsersOutputReference.property.scope"></a>
-
-```typescript
-public readonly scope: string;
-```
-
-- *Type:* string
-
----
-
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-okta.appSaml.AppSamlUsersOutputReference.property.idInput"></a>
-
-```typescript
-public readonly idInput: string;
-```
-
-- *Type:* string
-
----
-
-##### `passwordInput`<sup>Optional</sup> <a name="passwordInput" id="@cdktf/provider-okta.appSaml.AppSamlUsersOutputReference.property.passwordInput"></a>
-
-```typescript
-public readonly passwordInput: string;
-```
-
-- *Type:* string
-
----
-
-##### `usernameInput`<sup>Optional</sup> <a name="usernameInput" id="@cdktf/provider-okta.appSaml.AppSamlUsersOutputReference.property.usernameInput"></a>
-
-```typescript
-public readonly usernameInput: string;
-```
-
-- *Type:* string
-
----
-
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-okta.appSaml.AppSamlUsersOutputReference.property.id"></a>
-
-```typescript
-public readonly id: string;
-```
-
-- *Type:* string
-
----
-
-##### `password`<sup>Required</sup> <a name="password" id="@cdktf/provider-okta.appSaml.AppSamlUsersOutputReference.property.password"></a>
-
-```typescript
-public readonly password: string;
-```
-
-- *Type:* string
-
----
-
-##### `username`<sup>Required</sup> <a name="username" id="@cdktf/provider-okta.appSaml.AppSamlUsersOutputReference.property.username"></a>
-
-```typescript
-public readonly username: string;
-```
-
-- *Type:* string
-
----
-
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-okta.appSaml.AppSamlUsersOutputReference.property.internalValue"></a>
-
-```typescript
-public readonly internalValue: AppSamlUsers | IResolvable;
-```
-
-- *Type:* <a href="#@cdktf/provider-okta.appSaml.AppSamlUsers">AppSamlUsers</a> | cdktf.IResolvable
 
 ---
 

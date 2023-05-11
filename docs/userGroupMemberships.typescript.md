@@ -1,6 +1,6 @@
 # `okta_user_group_memberships`
 
-Refer to the Terraform Registory for docs: [`okta_user_group_memberships`](https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user_group_memberships).
+Refer to the Terraform Registory for docs: [`okta_user_group_memberships`](https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/user_group_memberships).
 
 # `userGroupMemberships` Submodule <a name="`userGroupMemberships` Submodule" id="@cdktf/provider-okta.userGroupMemberships"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_user_group_memberships`](https
 
 ### UserGroupMemberships <a name="UserGroupMemberships" id="@cdktf/provider-okta.userGroupMemberships.UserGroupMemberships"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user_group_memberships okta_user_group_memberships}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/user_group_memberships okta_user_group_memberships}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.userGroupMemberships.UserGroupMemberships.Initializer"></a>
 
@@ -606,7 +606,7 @@ const userGroupMembershipsConfig: userGroupMemberships.UserGroupMembershipsConfi
 | <code><a href="#@cdktf/provider-okta.userGroupMemberships.UserGroupMembershipsConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.userGroupMemberships.UserGroupMembershipsConfig.property.groups">groups</a></code> | <code>string[]</code> | The list of Okta group IDs which the user should have membership managed for. |
 | <code><a href="#@cdktf/provider-okta.userGroupMemberships.UserGroupMembershipsConfig.property.userId">userId</a></code> | <code>string</code> | ID of a Okta User. |
-| <code><a href="#@cdktf/provider-okta.userGroupMemberships.UserGroupMembershipsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user_group_memberships#id UserGroupMemberships#id}. |
+| <code><a href="#@cdktf/provider-okta.userGroupMemberships.UserGroupMembershipsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/user_group_memberships#id UserGroupMemberships#id}. |
 
 ---
 
@@ -690,7 +690,7 @@ public readonly groups: string[];
 
 The list of Okta group IDs which the user should have membership managed for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user_group_memberships#groups UserGroupMemberships#groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/user_group_memberships#groups UserGroupMemberships#groups}
 
 ---
 
@@ -704,7 +704,7 @@ public readonly userId: string;
 
 ID of a Okta User.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user_group_memberships#user_id UserGroupMemberships#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/user_group_memberships#user_id UserGroupMemberships#user_id}
 
 ---
 
@@ -716,7 +716,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user_group_memberships#id UserGroupMemberships#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/user_group_memberships#id UserGroupMemberships#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

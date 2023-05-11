@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/idp_metadata_saml
+// https://registry.terraform.io/providers/okta/okta/4.0.0/docs/data-sources/idp_metadata_saml
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,20 +8,20 @@ import * as cdktf from 'cdktf';
 
 export interface DataOktaIdpMetadataSamlConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/idp_metadata_saml#id DataOktaIdpMetadataSaml#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/data-sources/idp_metadata_saml#id DataOktaIdpMetadataSaml#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/idp_metadata_saml#idp_id DataOktaIdpMetadataSaml#idp_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/data-sources/idp_metadata_saml#idp_id DataOktaIdpMetadataSaml#idp_id}
   */
   readonly idpId?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/idp_metadata_saml okta_idp_metadata_saml}
+* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/data-sources/idp_metadata_saml okta_idp_metadata_saml}
 */
 export class DataOktaIdpMetadataSaml extends cdktf.TerraformDataSource {
 
@@ -35,7 +35,7 @@ export class DataOktaIdpMetadataSaml extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/idp_metadata_saml okta_idp_metadata_saml} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/data-sources/idp_metadata_saml okta_idp_metadata_saml} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -46,8 +46,8 @@ export class DataOktaIdpMetadataSaml extends cdktf.TerraformDataSource {
       terraformResourceType: 'okta_idp_metadata_saml',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '3.46.0',
-        providerVersionConstraint: '~> 3.20'
+        providerVersion: '4.0.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

@@ -1,6 +1,6 @@
 # `okta_auth_server_policy`
 
-Refer to the Terraform Registory for docs: [`okta_auth_server_policy`](https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/auth_server_policy).
+Refer to the Terraform Registory for docs: [`okta_auth_server_policy`](https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/auth_server_policy).
 
 # `authServerPolicy` Submodule <a name="`authServerPolicy` Submodule" id="@cdktf/provider-okta.authServerPolicy"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_auth_server_policy`](https://r
 
 ### AuthServerPolicy <a name="AuthServerPolicy" id="@cdktf/provider-okta.authServerPolicy.AuthServerPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/auth_server_policy okta_auth_server_policy}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/auth_server_policy okta_auth_server_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.authServerPolicy.AuthServerPolicy.Initializer"></a>
 
@@ -31,8 +31,7 @@ authServerPolicy.AuthServerPolicy(
   name: str,
   priority: typing.Union[int, float],
   id: str = None,
-  status: str = None,
-  type: str = None
+  status: str = None
 )
 ```
 
@@ -47,14 +46,13 @@ authServerPolicy.AuthServerPolicy(
 | <code><a href="#@cdktf/provider-okta.authServerPolicy.AuthServerPolicy.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.authServerPolicy.AuthServerPolicy.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.authServerPolicy.AuthServerPolicy.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.authServerPolicy.AuthServerPolicy.Initializer.parameter.authServerId">auth_server_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/auth_server_policy#auth_server_id AuthServerPolicy#auth_server_id}. |
+| <code><a href="#@cdktf/provider-okta.authServerPolicy.AuthServerPolicy.Initializer.parameter.authServerId">auth_server_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/auth_server_policy#auth_server_id AuthServerPolicy#auth_server_id}. |
 | <code><a href="#@cdktf/provider-okta.authServerPolicy.AuthServerPolicy.Initializer.parameter.clientWhitelist">client_whitelist</a></code> | <code>typing.List[str]</code> | Use ["ALL_CLIENTS"] when unsure. |
-| <code><a href="#@cdktf/provider-okta.authServerPolicy.AuthServerPolicy.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/auth_server_policy#description AuthServerPolicy#description}. |
-| <code><a href="#@cdktf/provider-okta.authServerPolicy.AuthServerPolicy.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/auth_server_policy#name AuthServerPolicy#name}. |
+| <code><a href="#@cdktf/provider-okta.authServerPolicy.AuthServerPolicy.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/auth_server_policy#description AuthServerPolicy#description}. |
+| <code><a href="#@cdktf/provider-okta.authServerPolicy.AuthServerPolicy.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/auth_server_policy#name AuthServerPolicy#name}. |
 | <code><a href="#@cdktf/provider-okta.authServerPolicy.AuthServerPolicy.Initializer.parameter.priority">priority</a></code> | <code>typing.Union[int, float]</code> | Priority of the auth server policy. |
-| <code><a href="#@cdktf/provider-okta.authServerPolicy.AuthServerPolicy.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/auth_server_policy#id AuthServerPolicy#id}. |
-| <code><a href="#@cdktf/provider-okta.authServerPolicy.AuthServerPolicy.Initializer.parameter.status">status</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/auth_server_policy#status AuthServerPolicy#status}. |
-| <code><a href="#@cdktf/provider-okta.authServerPolicy.AuthServerPolicy.Initializer.parameter.type">type</a></code> | <code>str</code> | Auth server policy type, unlikely this will be anything other then the default. |
+| <code><a href="#@cdktf/provider-okta.authServerPolicy.AuthServerPolicy.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/auth_server_policy#id AuthServerPolicy#id}. |
+| <code><a href="#@cdktf/provider-okta.authServerPolicy.AuthServerPolicy.Initializer.parameter.status">status</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/auth_server_policy#status AuthServerPolicy#status}. |
 
 ---
 
@@ -122,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/auth_server_policy#auth_server_id AuthServerPolicy#auth_server_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/auth_server_policy#auth_server_id AuthServerPolicy#auth_server_id}.
 
 ---
 
@@ -132,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Use ["ALL_CLIENTS"] when unsure.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/auth_server_policy#client_whitelist AuthServerPolicy#client_whitelist}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/auth_server_policy#client_whitelist AuthServerPolicy#client_whitelist}
 
 ---
 
@@ -140,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/auth_server_policy#description AuthServerPolicy#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/auth_server_policy#description AuthServerPolicy#description}.
 
 ---
 
@@ -148,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/auth_server_policy#name AuthServerPolicy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/auth_server_policy#name AuthServerPolicy#name}.
 
 ---
 
@@ -158,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Priority of the auth server policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/auth_server_policy#priority AuthServerPolicy#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/auth_server_policy#priority AuthServerPolicy#priority}
 
 ---
 
@@ -166,7 +164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/auth_server_policy#id AuthServerPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/auth_server_policy#id AuthServerPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -177,17 +175,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/auth_server_policy#status AuthServerPolicy#status}.
-
----
-
-##### `type`<sup>Optional</sup> <a name="type" id="@cdktf/provider-okta.authServerPolicy.AuthServerPolicy.Initializer.parameter.type"></a>
-
-- *Type:* str
-
-Auth server policy type, unlikely this will be anything other then the default.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/auth_server_policy#type AuthServerPolicy#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/auth_server_policy#status AuthServerPolicy#status}.
 
 ---
 
@@ -213,7 +201,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 | <code><a href="#@cdktf/provider-okta.authServerPolicy.AuthServerPolicy.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.authServerPolicy.AuthServerPolicy.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.authServerPolicy.AuthServerPolicy.resetStatus">reset_status</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.authServerPolicy.AuthServerPolicy.resetType">reset_type</a></code> | *No description.* |
 
 ---
 
@@ -438,12 +425,6 @@ def reset_id() -> None
 def reset_status() -> None
 ```
 
-##### `reset_type` <a name="reset_type" id="@cdktf/provider-okta.authServerPolicy.AuthServerPolicy.resetType"></a>
-
-```python
-def reset_type() -> None
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -545,7 +526,6 @@ authServerPolicy.AuthServerPolicy.is_terraform_resource(
 | <code><a href="#@cdktf/provider-okta.authServerPolicy.AuthServerPolicy.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.authServerPolicy.AuthServerPolicy.property.priorityInput">priority_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.authServerPolicy.AuthServerPolicy.property.statusInput">status_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.authServerPolicy.AuthServerPolicy.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.authServerPolicy.AuthServerPolicy.property.authServerId">auth_server_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.authServerPolicy.AuthServerPolicy.property.clientWhitelist">client_whitelist</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.authServerPolicy.AuthServerPolicy.property.description">description</a></code> | <code>str</code> | *No description.* |
@@ -553,7 +533,6 @@ authServerPolicy.AuthServerPolicy.is_terraform_resource(
 | <code><a href="#@cdktf/provider-okta.authServerPolicy.AuthServerPolicy.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.authServerPolicy.AuthServerPolicy.property.priority">priority</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.authServerPolicy.AuthServerPolicy.property.status">status</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.authServerPolicy.AuthServerPolicy.property.type">type</a></code> | <code>str</code> | *No description.* |
 
 ---
 
@@ -769,16 +748,6 @@ status_input: str
 
 ---
 
-##### `type_input`<sup>Optional</sup> <a name="type_input" id="@cdktf/provider-okta.authServerPolicy.AuthServerPolicy.property.typeInput"></a>
-
-```python
-type_input: str
-```
-
-- *Type:* str
-
----
-
 ##### `auth_server_id`<sup>Required</sup> <a name="auth_server_id" id="@cdktf/provider-okta.authServerPolicy.AuthServerPolicy.property.authServerId"></a>
 
 ```python
@@ -849,16 +818,6 @@ status: str
 
 ---
 
-##### `type`<sup>Required</sup> <a name="type" id="@cdktf/provider-okta.authServerPolicy.AuthServerPolicy.property.type"></a>
-
-```python
-type: str
-```
-
-- *Type:* str
-
----
-
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -900,8 +859,7 @@ authServerPolicy.AuthServerPolicyConfig(
   name: str,
   priority: typing.Union[int, float],
   id: str = None,
-  status: str = None,
-  type: str = None
+  status: str = None
 )
 ```
 
@@ -916,14 +874,13 @@ authServerPolicy.AuthServerPolicyConfig(
 | <code><a href="#@cdktf/provider-okta.authServerPolicy.AuthServerPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.authServerPolicy.AuthServerPolicyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.authServerPolicy.AuthServerPolicyConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.authServerPolicy.AuthServerPolicyConfig.property.authServerId">auth_server_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/auth_server_policy#auth_server_id AuthServerPolicy#auth_server_id}. |
+| <code><a href="#@cdktf/provider-okta.authServerPolicy.AuthServerPolicyConfig.property.authServerId">auth_server_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/auth_server_policy#auth_server_id AuthServerPolicy#auth_server_id}. |
 | <code><a href="#@cdktf/provider-okta.authServerPolicy.AuthServerPolicyConfig.property.clientWhitelist">client_whitelist</a></code> | <code>typing.List[str]</code> | Use ["ALL_CLIENTS"] when unsure. |
-| <code><a href="#@cdktf/provider-okta.authServerPolicy.AuthServerPolicyConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/auth_server_policy#description AuthServerPolicy#description}. |
-| <code><a href="#@cdktf/provider-okta.authServerPolicy.AuthServerPolicyConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/auth_server_policy#name AuthServerPolicy#name}. |
+| <code><a href="#@cdktf/provider-okta.authServerPolicy.AuthServerPolicyConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/auth_server_policy#description AuthServerPolicy#description}. |
+| <code><a href="#@cdktf/provider-okta.authServerPolicy.AuthServerPolicyConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/auth_server_policy#name AuthServerPolicy#name}. |
 | <code><a href="#@cdktf/provider-okta.authServerPolicy.AuthServerPolicyConfig.property.priority">priority</a></code> | <code>typing.Union[int, float]</code> | Priority of the auth server policy. |
-| <code><a href="#@cdktf/provider-okta.authServerPolicy.AuthServerPolicyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/auth_server_policy#id AuthServerPolicy#id}. |
-| <code><a href="#@cdktf/provider-okta.authServerPolicy.AuthServerPolicyConfig.property.status">status</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/auth_server_policy#status AuthServerPolicy#status}. |
-| <code><a href="#@cdktf/provider-okta.authServerPolicy.AuthServerPolicyConfig.property.type">type</a></code> | <code>str</code> | Auth server policy type, unlikely this will be anything other then the default. |
+| <code><a href="#@cdktf/provider-okta.authServerPolicy.AuthServerPolicyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/auth_server_policy#id AuthServerPolicy#id}. |
+| <code><a href="#@cdktf/provider-okta.authServerPolicy.AuthServerPolicyConfig.property.status">status</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/auth_server_policy#status AuthServerPolicy#status}. |
 
 ---
 
@@ -1005,7 +962,7 @@ auth_server_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/auth_server_policy#auth_server_id AuthServerPolicy#auth_server_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/auth_server_policy#auth_server_id AuthServerPolicy#auth_server_id}.
 
 ---
 
@@ -1019,7 +976,7 @@ client_whitelist: typing.List[str]
 
 Use ["ALL_CLIENTS"] when unsure.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/auth_server_policy#client_whitelist AuthServerPolicy#client_whitelist}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/auth_server_policy#client_whitelist AuthServerPolicy#client_whitelist}
 
 ---
 
@@ -1031,7 +988,7 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/auth_server_policy#description AuthServerPolicy#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/auth_server_policy#description AuthServerPolicy#description}.
 
 ---
 
@@ -1043,7 +1000,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/auth_server_policy#name AuthServerPolicy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/auth_server_policy#name AuthServerPolicy#name}.
 
 ---
 
@@ -1057,7 +1014,7 @@ priority: typing.Union[int, float]
 
 Priority of the auth server policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/auth_server_policy#priority AuthServerPolicy#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/auth_server_policy#priority AuthServerPolicy#priority}
 
 ---
 
@@ -1069,7 +1026,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/auth_server_policy#id AuthServerPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/auth_server_policy#id AuthServerPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1084,21 +1041,7 @@ status: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/auth_server_policy#status AuthServerPolicy#status}.
-
----
-
-##### `type`<sup>Optional</sup> <a name="type" id="@cdktf/provider-okta.authServerPolicy.AuthServerPolicyConfig.property.type"></a>
-
-```python
-type: str
-```
-
-- *Type:* str
-
-Auth server policy type, unlikely this will be anything other then the default.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/auth_server_policy#type AuthServerPolicy#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/auth_server_policy#status AuthServerPolicy#status}.
 
 ---
 

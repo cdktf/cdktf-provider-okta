@@ -1,6 +1,6 @@
 # `okta_app_bookmark`
 
-Refer to the Terraform Registory for docs: [`okta_app_bookmark`](https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark).
+Refer to the Terraform Registory for docs: [`okta_app_bookmark`](https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_bookmark).
 
 # `appBookmark` Submodule <a name="`appBookmark` Submodule" id="@cdktf/provider-okta.appBookmark"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_app_bookmark`](https://registr
 
 ### AppBookmark <a name="AppBookmark" id="@cdktf/provider-okta.appBookmark.AppBookmark"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark okta_app_bookmark}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_bookmark okta_app_bookmark}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appBookmark.AppBookmark.Initializer"></a>
 
@@ -39,7 +39,6 @@ AppBookmark.Builder.create(Construct scope, java.lang.String id)
 //  .autoSubmitToolbar(java.lang.Boolean)
 //  .autoSubmitToolbar(IResolvable)
 //  .enduserNote(java.lang.String)
-//  .groups(java.util.List<java.lang.String>)
 //  .hideIos(java.lang.Boolean)
 //  .hideIos(IResolvable)
 //  .hideWeb(java.lang.Boolean)
@@ -48,14 +47,8 @@ AppBookmark.Builder.create(Construct scope, java.lang.String id)
 //  .logo(java.lang.String)
 //  .requestIntegration(java.lang.Boolean)
 //  .requestIntegration(IResolvable)
-//  .skipGroups(java.lang.Boolean)
-//  .skipGroups(IResolvable)
-//  .skipUsers(java.lang.Boolean)
-//  .skipUsers(IResolvable)
 //  .status(java.lang.String)
 //  .timeouts(AppBookmarkTimeouts)
-//  .users(IResolvable)
-//  .users(java.util.List<AppBookmarkUsers>)
     .build();
 ```
 
@@ -71,7 +64,7 @@ AppBookmark.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.Initializer.parameter.label">label</a></code> | <code>java.lang.String</code> | Pretty name of app. |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.Initializer.parameter.url">url</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#url AppBookmark#url}. |
+| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.Initializer.parameter.url">url</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_bookmark#url AppBookmark#url}. |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.Initializer.parameter.accessibilityErrorRedirectUrl">accessibilityErrorRedirectUrl</a></code> | <code>java.lang.String</code> | Custom error page URL. |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.Initializer.parameter.accessibilityLoginRedirectUrl">accessibilityLoginRedirectUrl</a></code> | <code>java.lang.String</code> | Custom login page URL. |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.Initializer.parameter.accessibilitySelfService">accessibilitySelfService</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Enable self service. |
@@ -80,17 +73,13 @@ AppBookmark.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.Initializer.parameter.authenticationPolicy">authenticationPolicy</a></code> | <code>java.lang.String</code> | Id of this apps authentication policy. |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.Initializer.parameter.autoSubmitToolbar">autoSubmitToolbar</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Display auto submit toolbar. |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.Initializer.parameter.enduserNote">enduserNote</a></code> | <code>java.lang.String</code> | Application notes for end users. |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.Initializer.parameter.groups">groups</a></code> | <code>java.util.List<java.lang.String></code> | Groups associated with the application. |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.Initializer.parameter.hideIos">hideIos</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Do not display application icon on mobile app. |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.Initializer.parameter.hideWeb">hideWeb</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Do not display application icon to users. |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#id AppBookmark#id}. |
+| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_bookmark#id AppBookmark#id}. |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.Initializer.parameter.logo">logo</a></code> | <code>java.lang.String</code> | Local path to logo of the application. |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.Initializer.parameter.requestIntegration">requestIntegration</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#request_integration AppBookmark#request_integration}. |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.Initializer.parameter.skipGroups">skipGroups</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources. |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.Initializer.parameter.skipUsers">skipUsers</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources. |
+| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.Initializer.parameter.requestIntegration">requestIntegration</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_bookmark#request_integration AppBookmark#request_integration}. |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.Initializer.parameter.status">status</a></code> | <code>java.lang.String</code> | Status of application. |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkTimeouts">AppBookmarkTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.Initializer.parameter.users">users</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsers">AppBookmarkUsers</a>></code> | users block. |
 
 ---
 
@@ -160,7 +149,7 @@ Must be unique amongst siblings in the same scope
 
 Pretty name of app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#label AppBookmark#label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_bookmark#label AppBookmark#label}
 
 ---
 
@@ -168,7 +157,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#url AppBookmark#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_bookmark#url AppBookmark#url}.
 
 ---
 
@@ -178,7 +167,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Custom error page URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#accessibility_error_redirect_url AppBookmark#accessibility_error_redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_bookmark#accessibility_error_redirect_url AppBookmark#accessibility_error_redirect_url}
 
 ---
 
@@ -188,7 +177,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Custom login page URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#accessibility_login_redirect_url AppBookmark#accessibility_login_redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_bookmark#accessibility_login_redirect_url AppBookmark#accessibility_login_redirect_url}
 
 ---
 
@@ -198,7 +187,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Enable self service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#accessibility_self_service AppBookmark#accessibility_self_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_bookmark#accessibility_self_service AppBookmark#accessibility_self_service}
 
 ---
 
@@ -208,7 +197,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Application notes for admins.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#admin_note AppBookmark#admin_note}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_bookmark#admin_note AppBookmark#admin_note}
 
 ---
 
@@ -218,7 +207,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Displays specific appLinks for the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#app_links_json AppBookmark#app_links_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_bookmark#app_links_json AppBookmark#app_links_json}
 
 ---
 
@@ -228,7 +217,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Id of this apps authentication policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#authentication_policy AppBookmark#authentication_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_bookmark#authentication_policy AppBookmark#authentication_policy}
 
 ---
 
@@ -238,7 +227,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Display auto submit toolbar.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#auto_submit_toolbar AppBookmark#auto_submit_toolbar}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_bookmark#auto_submit_toolbar AppBookmark#auto_submit_toolbar}
 
 ---
 
@@ -248,17 +237,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Application notes for end users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#enduser_note AppBookmark#enduser_note}
-
----
-
-##### `groups`<sup>Optional</sup> <a name="groups" id="@cdktf/provider-okta.appBookmark.AppBookmark.Initializer.parameter.groups"></a>
-
-- *Type:* java.util.List<java.lang.String>
-
-Groups associated with the application.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#groups AppBookmark#groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_bookmark#enduser_note AppBookmark#enduser_note}
 
 ---
 
@@ -268,7 +247,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Do not display application icon on mobile app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#hide_ios AppBookmark#hide_ios}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_bookmark#hide_ios AppBookmark#hide_ios}
 
 ---
 
@@ -278,7 +257,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Do not display application icon to users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#hide_web AppBookmark#hide_web}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_bookmark#hide_web AppBookmark#hide_web}
 
 ---
 
@@ -286,7 +265,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#id AppBookmark#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_bookmark#id AppBookmark#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -299,7 +278,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Local path to logo of the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#logo AppBookmark#logo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_bookmark#logo AppBookmark#logo}
 
 ---
 
@@ -307,27 +286,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#request_integration AppBookmark#request_integration}.
-
----
-
-##### `skipGroups`<sup>Optional</sup> <a name="skipGroups" id="@cdktf/provider-okta.appBookmark.AppBookmark.Initializer.parameter.skipGroups"></a>
-
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
-
-Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#skip_groups AppBookmark#skip_groups}
-
----
-
-##### `skipUsers`<sup>Optional</sup> <a name="skipUsers" id="@cdktf/provider-okta.appBookmark.AppBookmark.Initializer.parameter.skipUsers"></a>
-
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
-
-Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#skip_users AppBookmark#skip_users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_bookmark#request_integration AppBookmark#request_integration}.
 
 ---
 
@@ -337,7 +296,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Status of application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#status AppBookmark#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_bookmark#status AppBookmark#status}
 
 ---
 
@@ -347,17 +306,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#timeouts AppBookmark#timeouts}
-
----
-
-##### `users`<sup>Optional</sup> <a name="users" id="@cdktf/provider-okta.appBookmark.AppBookmark.Initializer.parameter.users"></a>
-
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsers">AppBookmarkUsers</a>>
-
-users block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#users AppBookmark#users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_bookmark#timeouts AppBookmark#timeouts}
 
 ---
 
@@ -382,7 +331,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.putTimeouts">putTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.putUsers">putUsers</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.resetAccessibilityErrorRedirectUrl">resetAccessibilityErrorRedirectUrl</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.resetAccessibilityLoginRedirectUrl">resetAccessibilityLoginRedirectUrl</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.resetAccessibilitySelfService">resetAccessibilitySelfService</a></code> | *No description.* |
@@ -391,17 +339,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.resetAuthenticationPolicy">resetAuthenticationPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.resetAutoSubmitToolbar">resetAutoSubmitToolbar</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.resetEnduserNote">resetEnduserNote</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.resetGroups">resetGroups</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.resetHideIos">resetHideIos</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.resetHideWeb">resetHideWeb</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.resetLogo">resetLogo</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.resetRequestIntegration">resetRequestIntegration</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.resetSkipGroups">resetSkipGroups</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.resetSkipUsers">resetSkipUsers</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.resetStatus">resetStatus</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.resetTimeouts">resetTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.resetUsers">resetUsers</a></code> | *No description.* |
 
 ---
 
@@ -601,18 +545,6 @@ public void putTimeouts(AppBookmarkTimeouts value)
 
 ---
 
-##### `putUsers` <a name="putUsers" id="@cdktf/provider-okta.appBookmark.AppBookmark.putUsers"></a>
-
-```java
-public void putUsers(IResolvable OR java.util.List<AppBookmarkUsers> value)
-```
-
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-okta.appBookmark.AppBookmark.putUsers.parameter.value"></a>
-
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsers">AppBookmarkUsers</a>>
-
----
-
 ##### `resetAccessibilityErrorRedirectUrl` <a name="resetAccessibilityErrorRedirectUrl" id="@cdktf/provider-okta.appBookmark.AppBookmark.resetAccessibilityErrorRedirectUrl"></a>
 
 ```java
@@ -661,12 +593,6 @@ public void resetAutoSubmitToolbar()
 public void resetEnduserNote()
 ```
 
-##### `resetGroups` <a name="resetGroups" id="@cdktf/provider-okta.appBookmark.AppBookmark.resetGroups"></a>
-
-```java
-public void resetGroups()
-```
-
 ##### `resetHideIos` <a name="resetHideIos" id="@cdktf/provider-okta.appBookmark.AppBookmark.resetHideIos"></a>
 
 ```java
@@ -697,18 +623,6 @@ public void resetLogo()
 public void resetRequestIntegration()
 ```
 
-##### `resetSkipGroups` <a name="resetSkipGroups" id="@cdktf/provider-okta.appBookmark.AppBookmark.resetSkipGroups"></a>
-
-```java
-public void resetSkipGroups()
-```
-
-##### `resetSkipUsers` <a name="resetSkipUsers" id="@cdktf/provider-okta.appBookmark.AppBookmark.resetSkipUsers"></a>
-
-```java
-public void resetSkipUsers()
-```
-
 ##### `resetStatus` <a name="resetStatus" id="@cdktf/provider-okta.appBookmark.AppBookmark.resetStatus"></a>
 
 ```java
@@ -719,12 +633,6 @@ public void resetStatus()
 
 ```java
 public void resetTimeouts()
-```
-
-##### `resetUsers` <a name="resetUsers" id="@cdktf/provider-okta.appBookmark.AppBookmark.resetUsers"></a>
-
-```java
-public void resetUsers()
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -819,7 +727,6 @@ AppBookmark.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.signOnMode">signOnMode</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkTimeoutsOutputReference">AppBookmarkTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.users">users</a></code> | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersList">AppBookmarkUsersList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.accessibilityErrorRedirectUrlInput">accessibilityErrorRedirectUrlInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.accessibilityLoginRedirectUrlInput">accessibilityLoginRedirectUrlInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.accessibilitySelfServiceInput">accessibilitySelfServiceInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
@@ -828,19 +735,15 @@ AppBookmark.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.authenticationPolicyInput">authenticationPolicyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.autoSubmitToolbarInput">autoSubmitToolbarInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.enduserNoteInput">enduserNoteInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.groupsInput">groupsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.hideIosInput">hideIosInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.hideWebInput">hideWebInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.labelInput">labelInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.logoInput">logoInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.requestIntegrationInput">requestIntegrationInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.skipGroupsInput">skipGroupsInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.skipUsersInput">skipUsersInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.statusInput">statusInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkTimeouts">AppBookmarkTimeouts</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.urlInput">urlInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.usersInput">usersInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsers">AppBookmarkUsers</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.accessibilityErrorRedirectUrl">accessibilityErrorRedirectUrl</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.accessibilityLoginRedirectUrl">accessibilityLoginRedirectUrl</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.accessibilitySelfService">accessibilitySelfService</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
@@ -849,15 +752,12 @@ AppBookmark.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.authenticationPolicy">authenticationPolicy</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.autoSubmitToolbar">autoSubmitToolbar</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.enduserNote">enduserNote</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.groups">groups</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.hideIos">hideIos</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.hideWeb">hideWeb</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.label">label</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.logo">logo</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.requestIntegration">requestIntegration</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.skipGroups">skipGroups</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.skipUsers">skipUsers</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.status">status</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.url">url</a></code> | <code>java.lang.String</code> | *No description.* |
 
@@ -1045,16 +945,6 @@ public AppBookmarkTimeoutsOutputReference getTimeouts();
 
 ---
 
-##### `users`<sup>Required</sup> <a name="users" id="@cdktf/provider-okta.appBookmark.AppBookmark.property.users"></a>
-
-```java
-public AppBookmarkUsersList getUsers();
-```
-
-- *Type:* <a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersList">AppBookmarkUsersList</a>
-
----
-
 ##### `accessibilityErrorRedirectUrlInput`<sup>Optional</sup> <a name="accessibilityErrorRedirectUrlInput" id="@cdktf/provider-okta.appBookmark.AppBookmark.property.accessibilityErrorRedirectUrlInput"></a>
 
 ```java
@@ -1135,16 +1025,6 @@ public java.lang.String getEnduserNoteInput();
 
 ---
 
-##### `groupsInput`<sup>Optional</sup> <a name="groupsInput" id="@cdktf/provider-okta.appBookmark.AppBookmark.property.groupsInput"></a>
-
-```java
-public java.util.List<java.lang.String> getGroupsInput();
-```
-
-- *Type:* java.util.List<java.lang.String>
-
----
-
 ##### `hideIosInput`<sup>Optional</sup> <a name="hideIosInput" id="@cdktf/provider-okta.appBookmark.AppBookmark.property.hideIosInput"></a>
 
 ```java
@@ -1205,26 +1085,6 @@ public java.lang.Object getRequestIntegrationInput();
 
 ---
 
-##### `skipGroupsInput`<sup>Optional</sup> <a name="skipGroupsInput" id="@cdktf/provider-okta.appBookmark.AppBookmark.property.skipGroupsInput"></a>
-
-```java
-public java.lang.Object getSkipGroupsInput();
-```
-
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
-
----
-
-##### `skipUsersInput`<sup>Optional</sup> <a name="skipUsersInput" id="@cdktf/provider-okta.appBookmark.AppBookmark.property.skipUsersInput"></a>
-
-```java
-public java.lang.Object getSkipUsersInput();
-```
-
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
-
----
-
 ##### `statusInput`<sup>Optional</sup> <a name="statusInput" id="@cdktf/provider-okta.appBookmark.AppBookmark.property.statusInput"></a>
 
 ```java
@@ -1252,16 +1112,6 @@ public java.lang.String getUrlInput();
 ```
 
 - *Type:* java.lang.String
-
----
-
-##### `usersInput`<sup>Optional</sup> <a name="usersInput" id="@cdktf/provider-okta.appBookmark.AppBookmark.property.usersInput"></a>
-
-```java
-public java.lang.Object getUsersInput();
-```
-
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsers">AppBookmarkUsers</a>>
 
 ---
 
@@ -1345,16 +1195,6 @@ public java.lang.String getEnduserNote();
 
 ---
 
-##### `groups`<sup>Required</sup> <a name="groups" id="@cdktf/provider-okta.appBookmark.AppBookmark.property.groups"></a>
-
-```java
-public java.util.List<java.lang.String> getGroups();
-```
-
-- *Type:* java.util.List<java.lang.String>
-
----
-
 ##### `hideIos`<sup>Required</sup> <a name="hideIos" id="@cdktf/provider-okta.appBookmark.AppBookmark.property.hideIos"></a>
 
 ```java
@@ -1409,26 +1249,6 @@ public java.lang.String getLogo();
 
 ```java
 public java.lang.Object getRequestIntegration();
-```
-
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
-
----
-
-##### `skipGroups`<sup>Required</sup> <a name="skipGroups" id="@cdktf/provider-okta.appBookmark.AppBookmark.property.skipGroups"></a>
-
-```java
-public java.lang.Object getSkipGroups();
-```
-
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
-
----
-
-##### `skipUsers`<sup>Required</sup> <a name="skipUsers" id="@cdktf/provider-okta.appBookmark.AppBookmark.property.skipUsers"></a>
-
-```java
-public java.lang.Object getSkipUsers();
 ```
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
@@ -1506,7 +1326,6 @@ AppBookmarkConfig.builder()
 //  .autoSubmitToolbar(java.lang.Boolean)
 //  .autoSubmitToolbar(IResolvable)
 //  .enduserNote(java.lang.String)
-//  .groups(java.util.List<java.lang.String>)
 //  .hideIos(java.lang.Boolean)
 //  .hideIos(IResolvable)
 //  .hideWeb(java.lang.Boolean)
@@ -1515,14 +1334,8 @@ AppBookmarkConfig.builder()
 //  .logo(java.lang.String)
 //  .requestIntegration(java.lang.Boolean)
 //  .requestIntegration(IResolvable)
-//  .skipGroups(java.lang.Boolean)
-//  .skipGroups(IResolvable)
-//  .skipUsers(java.lang.Boolean)
-//  .skipUsers(IResolvable)
 //  .status(java.lang.String)
 //  .timeouts(AppBookmarkTimeouts)
-//  .users(IResolvable)
-//  .users(java.util.List<AppBookmarkUsers>)
     .build();
 ```
 
@@ -1538,7 +1351,7 @@ AppBookmarkConfig.builder()
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.label">label</a></code> | <code>java.lang.String</code> | Pretty name of app. |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.url">url</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#url AppBookmark#url}. |
+| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.url">url</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_bookmark#url AppBookmark#url}. |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.accessibilityErrorRedirectUrl">accessibilityErrorRedirectUrl</a></code> | <code>java.lang.String</code> | Custom error page URL. |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.accessibilityLoginRedirectUrl">accessibilityLoginRedirectUrl</a></code> | <code>java.lang.String</code> | Custom login page URL. |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.accessibilitySelfService">accessibilitySelfService</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Enable self service. |
@@ -1547,17 +1360,13 @@ AppBookmarkConfig.builder()
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.authenticationPolicy">authenticationPolicy</a></code> | <code>java.lang.String</code> | Id of this apps authentication policy. |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.autoSubmitToolbar">autoSubmitToolbar</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Display auto submit toolbar. |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.enduserNote">enduserNote</a></code> | <code>java.lang.String</code> | Application notes for end users. |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.groups">groups</a></code> | <code>java.util.List<java.lang.String></code> | Groups associated with the application. |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.hideIos">hideIos</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Do not display application icon on mobile app. |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.hideWeb">hideWeb</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Do not display application icon to users. |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#id AppBookmark#id}. |
+| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_bookmark#id AppBookmark#id}. |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.logo">logo</a></code> | <code>java.lang.String</code> | Local path to logo of the application. |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.requestIntegration">requestIntegration</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#request_integration AppBookmark#request_integration}. |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.skipGroups">skipGroups</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources. |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.skipUsers">skipUsers</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources. |
+| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.requestIntegration">requestIntegration</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_bookmark#request_integration AppBookmark#request_integration}. |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.status">status</a></code> | <code>java.lang.String</code> | Status of application. |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkTimeouts">AppBookmarkTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.users">users</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsers">AppBookmarkUsers</a>></code> | users block. |
 
 ---
 
@@ -1641,7 +1450,7 @@ public java.lang.String getLabel();
 
 Pretty name of app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#label AppBookmark#label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_bookmark#label AppBookmark#label}
 
 ---
 
@@ -1653,7 +1462,7 @@ public java.lang.String getUrl();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#url AppBookmark#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_bookmark#url AppBookmark#url}.
 
 ---
 
@@ -1667,7 +1476,7 @@ public java.lang.String getAccessibilityErrorRedirectUrl();
 
 Custom error page URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#accessibility_error_redirect_url AppBookmark#accessibility_error_redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_bookmark#accessibility_error_redirect_url AppBookmark#accessibility_error_redirect_url}
 
 ---
 
@@ -1681,7 +1490,7 @@ public java.lang.String getAccessibilityLoginRedirectUrl();
 
 Custom login page URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#accessibility_login_redirect_url AppBookmark#accessibility_login_redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_bookmark#accessibility_login_redirect_url AppBookmark#accessibility_login_redirect_url}
 
 ---
 
@@ -1695,7 +1504,7 @@ public java.lang.Object getAccessibilitySelfService();
 
 Enable self service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#accessibility_self_service AppBookmark#accessibility_self_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_bookmark#accessibility_self_service AppBookmark#accessibility_self_service}
 
 ---
 
@@ -1709,7 +1518,7 @@ public java.lang.String getAdminNote();
 
 Application notes for admins.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#admin_note AppBookmark#admin_note}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_bookmark#admin_note AppBookmark#admin_note}
 
 ---
 
@@ -1723,7 +1532,7 @@ public java.lang.String getAppLinksJson();
 
 Displays specific appLinks for the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#app_links_json AppBookmark#app_links_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_bookmark#app_links_json AppBookmark#app_links_json}
 
 ---
 
@@ -1737,7 +1546,7 @@ public java.lang.String getAuthenticationPolicy();
 
 Id of this apps authentication policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#authentication_policy AppBookmark#authentication_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_bookmark#authentication_policy AppBookmark#authentication_policy}
 
 ---
 
@@ -1751,7 +1560,7 @@ public java.lang.Object getAutoSubmitToolbar();
 
 Display auto submit toolbar.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#auto_submit_toolbar AppBookmark#auto_submit_toolbar}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_bookmark#auto_submit_toolbar AppBookmark#auto_submit_toolbar}
 
 ---
 
@@ -1765,21 +1574,7 @@ public java.lang.String getEnduserNote();
 
 Application notes for end users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#enduser_note AppBookmark#enduser_note}
-
----
-
-##### `groups`<sup>Optional</sup> <a name="groups" id="@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.groups"></a>
-
-```java
-public java.util.List<java.lang.String> getGroups();
-```
-
-- *Type:* java.util.List<java.lang.String>
-
-Groups associated with the application.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#groups AppBookmark#groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_bookmark#enduser_note AppBookmark#enduser_note}
 
 ---
 
@@ -1793,7 +1588,7 @@ public java.lang.Object getHideIos();
 
 Do not display application icon on mobile app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#hide_ios AppBookmark#hide_ios}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_bookmark#hide_ios AppBookmark#hide_ios}
 
 ---
 
@@ -1807,7 +1602,7 @@ public java.lang.Object getHideWeb();
 
 Do not display application icon to users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#hide_web AppBookmark#hide_web}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_bookmark#hide_web AppBookmark#hide_web}
 
 ---
 
@@ -1819,7 +1614,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#id AppBookmark#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_bookmark#id AppBookmark#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1836,7 +1631,7 @@ public java.lang.String getLogo();
 
 Local path to logo of the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#logo AppBookmark#logo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_bookmark#logo AppBookmark#logo}
 
 ---
 
@@ -1848,35 +1643,7 @@ public java.lang.Object getRequestIntegration();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#request_integration AppBookmark#request_integration}.
-
----
-
-##### `skipGroups`<sup>Optional</sup> <a name="skipGroups" id="@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.skipGroups"></a>
-
-```java
-public java.lang.Object getSkipGroups();
-```
-
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
-
-Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#skip_groups AppBookmark#skip_groups}
-
----
-
-##### `skipUsers`<sup>Optional</sup> <a name="skipUsers" id="@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.skipUsers"></a>
-
-```java
-public java.lang.Object getSkipUsers();
-```
-
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
-
-Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#skip_users AppBookmark#skip_users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_bookmark#request_integration AppBookmark#request_integration}.
 
 ---
 
@@ -1890,7 +1657,7 @@ public java.lang.String getStatus();
 
 Status of application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#status AppBookmark#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_bookmark#status AppBookmark#status}
 
 ---
 
@@ -1904,21 +1671,7 @@ public AppBookmarkTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#timeouts AppBookmark#timeouts}
-
----
-
-##### `users`<sup>Optional</sup> <a name="users" id="@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.users"></a>
-
-```java
-public java.lang.Object getUsers();
-```
-
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsers">AppBookmarkUsers</a>>
-
-users block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#users AppBookmark#users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_bookmark#timeouts AppBookmark#timeouts}
 
 ---
 
@@ -1940,9 +1693,9 @@ AppBookmarkTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#create AppBookmark#create}. |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#read AppBookmark#read}. |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#update AppBookmark#update}. |
+| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_bookmark#create AppBookmark#create}. |
+| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_bookmark#read AppBookmark#read}. |
+| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_bookmark#update AppBookmark#update}. |
 
 ---
 
@@ -1954,7 +1707,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#create AppBookmark#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_bookmark#create AppBookmark#create}.
 
 ---
 
@@ -1966,7 +1719,7 @@ public java.lang.String getRead();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#read AppBookmark#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_bookmark#read AppBookmark#read}.
 
 ---
 
@@ -1978,76 +1731,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#update AppBookmark#update}.
-
----
-
-### AppBookmarkUsers <a name="AppBookmarkUsers" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsers"></a>
-
-#### Initializer <a name="Initializer" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsers.Initializer"></a>
-
-```java
-import com.hashicorp.cdktf.providers.okta.app_bookmark.AppBookmarkUsers;
-
-AppBookmarkUsers.builder()
-//  .id(java.lang.String)
-//  .password(java.lang.String)
-//  .username(java.lang.String)
-    .build();
-```
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsers.property.id">id</a></code> | <code>java.lang.String</code> | User ID. |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsers.property.password">password</a></code> | <code>java.lang.String</code> | Password for user application. |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsers.property.username">username</a></code> | <code>java.lang.String</code> | Username for user. |
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsers.property.id"></a>
-
-```java
-public java.lang.String getId();
-```
-
-- *Type:* java.lang.String
-
-User ID.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#id AppBookmark#id}
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-
----
-
-##### `password`<sup>Optional</sup> <a name="password" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsers.property.password"></a>
-
-```java
-public java.lang.String getPassword();
-```
-
-- *Type:* java.lang.String
-
-Password for user application.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#password AppBookmark#password}
-
----
-
-##### `username`<sup>Optional</sup> <a name="username" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsers.property.username"></a>
-
-```java
-public java.lang.String getUsername();
-```
-
-- *Type:* java.lang.String
-
-Username for user.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#username AppBookmark#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_bookmark#update AppBookmark#update}.
 
 ---
 
@@ -2385,514 +2069,6 @@ public java.lang.Object getInternalValue();
 ```
 
 - *Type:* <a href="#@cdktf/provider-okta.appBookmark.AppBookmarkTimeouts">AppBookmarkTimeouts</a> OR com.hashicorp.cdktf.IResolvable
-
----
-
-
-### AppBookmarkUsersList <a name="AppBookmarkUsersList" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersList"></a>
-
-#### Initializers <a name="Initializers" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersList.Initializer"></a>
-
-```java
-import com.hashicorp.cdktf.providers.okta.app_bookmark.AppBookmarkUsersList;
-
-new AppBookmarkUsersList(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Boolean wrapsSet);
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
-
----
-
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersList.Initializer.parameter.terraformResource"></a>
-
-- *Type:* com.hashicorp.cdktf.IInterpolatingParent
-
-The parent resource.
-
----
-
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersList.Initializer.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
-The attribute on the parent resource this class is referencing.
-
----
-
-##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersList.Initializer.parameter.wrapsSet"></a>
-
-- *Type:* java.lang.Boolean
-
-whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersList.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersList.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersList.get">get</a></code> | *No description.* |
-
----
-
-##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersList.computeFqn"></a>
-
-```java
-public java.lang.String computeFqn()
-```
-
-##### `resolve` <a name="resolve" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersList.resolve"></a>
-
-```java
-public java.lang.Object resolve(IResolveContext _context)
-```
-
-Produce the Token's value at resolution time.
-
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersList.resolve.parameter._context"></a>
-
-- *Type:* com.hashicorp.cdktf.IResolveContext
-
----
-
-##### `toString` <a name="toString" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersList.toString"></a>
-
-```java
-public java.lang.String toString()
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-##### `get` <a name="get" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersList.get"></a>
-
-```java
-public AppBookmarkUsersOutputReference get(java.lang.Number index)
-```
-
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersList.get.parameter.index"></a>
-
-- *Type:* java.lang.Number
-
-the index of the item to return.
-
----
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsers">AppBookmarkUsers</a>></code> | *No description.* |
-
----
-
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersList.property.creationStack"></a>
-
-```java
-public java.util.List<java.lang.String> getCreationStack();
-```
-
-- *Type:* java.util.List<java.lang.String>
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersList.property.fqn"></a>
-
-```java
-public java.lang.String getFqn();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersList.property.internalValue"></a>
-
-```java
-public java.lang.Object getInternalValue();
-```
-
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsers">AppBookmarkUsers</a>>
-
----
-
-
-### AppBookmarkUsersOutputReference <a name="AppBookmarkUsersOutputReference" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference"></a>
-
-#### Initializers <a name="Initializers" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.Initializer"></a>
-
-```java
-import com.hashicorp.cdktf.providers.okta.app_bookmark.AppBookmarkUsersOutputReference;
-
-new AppBookmarkUsersOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Number complexObjectIndex, java.lang.Boolean complexObjectIsFromSet);
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>java.lang.Number</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
-
----
-
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.Initializer.parameter.terraformResource"></a>
-
-- *Type:* com.hashicorp.cdktf.IInterpolatingParent
-
-The parent resource.
-
----
-
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.Initializer.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
-The attribute on the parent resource this class is referencing.
-
----
-
-##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.Initializer.parameter.complexObjectIndex"></a>
-
-- *Type:* java.lang.Number
-
-the index of this item in the list.
-
----
-
-##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
-
-- *Type:* java.lang.Boolean
-
-whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.resetId">resetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.resetPassword">resetPassword</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.resetUsername">resetUsername</a></code> | *No description.* |
-
----
-
-##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.computeFqn"></a>
-
-```java
-public java.lang.String computeFqn()
-```
-
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.getAnyMapAttribute"></a>
-
-```java
-public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.getBooleanAttribute"></a>
-
-```java
-public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.getBooleanMapAttribute"></a>
-
-```java
-public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.getListAttribute"></a>
-
-```java
-public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.getListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.getNumberAttribute"></a>
-
-```java
-public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.getNumberListAttribute"></a>
-
-```java
-public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.getNumberMapAttribute"></a>
-
-```java
-public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.getStringAttribute"></a>
-
-```java
-public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.getStringMapAttribute"></a>
-
-```java
-public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.interpolationForAttribute"></a>
-
-```java
-public IResolvable interpolationForAttribute(java.lang.String property)
-```
-
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.interpolationForAttribute.parameter.property"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `resolve` <a name="resolve" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.resolve"></a>
-
-```java
-public java.lang.Object resolve(IResolveContext _context)
-```
-
-Produce the Token's value at resolution time.
-
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.resolve.parameter._context"></a>
-
-- *Type:* com.hashicorp.cdktf.IResolveContext
-
----
-
-##### `toString` <a name="toString" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.toString"></a>
-
-```java
-public java.lang.String toString()
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-##### `resetId` <a name="resetId" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.resetId"></a>
-
-```java
-public void resetId()
-```
-
-##### `resetPassword` <a name="resetPassword" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.resetPassword"></a>
-
-```java
-public void resetPassword()
-```
-
-##### `resetUsername` <a name="resetUsername" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.resetUsername"></a>
-
-```java
-public void resetUsername()
-```
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.property.scope">scope</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.property.passwordInput">passwordInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.property.usernameInput">usernameInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.property.password">password</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.property.username">username</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsers">AppBookmarkUsers</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-
----
-
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.property.creationStack"></a>
-
-```java
-public java.util.List<java.lang.String> getCreationStack();
-```
-
-- *Type:* java.util.List<java.lang.String>
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.property.fqn"></a>
-
-```java
-public java.lang.String getFqn();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.property.scope"></a>
-
-```java
-public java.lang.String getScope();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.property.idInput"></a>
-
-```java
-public java.lang.String getIdInput();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `passwordInput`<sup>Optional</sup> <a name="passwordInput" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.property.passwordInput"></a>
-
-```java
-public java.lang.String getPasswordInput();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `usernameInput`<sup>Optional</sup> <a name="usernameInput" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.property.usernameInput"></a>
-
-```java
-public java.lang.String getUsernameInput();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.property.id"></a>
-
-```java
-public java.lang.String getId();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `password`<sup>Required</sup> <a name="password" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.property.password"></a>
-
-```java
-public java.lang.String getPassword();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `username`<sup>Required</sup> <a name="username" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.property.username"></a>
-
-```java
-public java.lang.String getUsername();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.property.internalValue"></a>
-
-```java
-public java.lang.Object getInternalValue();
-```
-
-- *Type:* <a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsers">AppBookmarkUsers</a> OR com.hashicorp.cdktf.IResolvable
 
 ---
 

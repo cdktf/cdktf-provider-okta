@@ -1,6 +1,6 @@
 # `okta_policy_rule_password`
 
-Refer to the Terraform Registory for docs: [`okta_policy_rule_password`](https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/policy_rule_password).
+Refer to the Terraform Registory for docs: [`okta_policy_rule_password`](https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/policy_rule_password).
 
 # `policyRulePassword` Submodule <a name="`policyRulePassword` Submodule" id="@cdktf/provider-okta.policyRulePassword"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`okta_policy_rule_password`](https:/
 
 ### PolicyRulePassword <a name="PolicyRulePassword" id="@cdktf/provider-okta.policyRulePassword.PolicyRulePassword"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/policy_rule_password okta_policy_rule_password}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/policy_rule_password okta_policy_rule_password}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.policyRulePassword.PolicyRulePassword.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/policyrulepassword"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policyrulepassword"
 
 policyrulepassword.NewPolicyRulePassword(scope Construct, id *string, config PolicyRulePasswordConfig) PolicyRulePassword
 ```
@@ -77,7 +77,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-okta.policyRulePassword.PolicyRulePassword.resetPasswordChange">ResetPasswordChange</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRulePassword.PolicyRulePassword.resetPasswordReset">ResetPasswordReset</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRulePassword.PolicyRulePassword.resetPasswordUnlock">ResetPasswordUnlock</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyRulePassword.PolicyRulePassword.resetPolicyid">ResetPolicyid</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRulePassword.PolicyRulePassword.resetPolicyId">ResetPolicyId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRulePassword.PolicyRulePassword.resetPriority">ResetPriority</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRulePassword.PolicyRulePassword.resetStatus">ResetStatus</a></code> | *No description.* |
@@ -311,12 +310,6 @@ func ResetPasswordReset()
 func ResetPasswordUnlock()
 ```
 
-##### `ResetPolicyid` <a name="ResetPolicyid" id="@cdktf/provider-okta.policyRulePassword.PolicyRulePassword.resetPolicyid"></a>
-
-```go
-func ResetPolicyid()
-```
-
 ##### `ResetPolicyId` <a name="ResetPolicyId" id="@cdktf/provider-okta.policyRulePassword.PolicyRulePassword.resetPolicyId"></a>
 
 ```go
@@ -354,7 +347,7 @@ func ResetUsersExcluded()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.policyRulePassword.PolicyRulePassword.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/policyrulepassword"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policyrulepassword"
 
 policyrulepassword.PolicyRulePassword_IsConstruct(x interface{}) *bool
 ```
@@ -386,7 +379,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.policyRulePassword.PolicyRulePassword.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/policyrulepassword"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policyrulepassword"
 
 policyrulepassword.PolicyRulePassword_IsTerraformElement(x interface{}) *bool
 ```
@@ -400,7 +393,7 @@ policyrulepassword.PolicyRulePassword_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.policyRulePassword.PolicyRulePassword.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/policyrulepassword"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policyrulepassword"
 
 policyrulepassword.PolicyRulePassword_IsTerraformResource(x interface{}) *bool
 ```
@@ -437,7 +430,6 @@ policyrulepassword.PolicyRulePassword_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-okta.policyRulePassword.PolicyRulePassword.property.passwordChangeInput">PasswordChangeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRulePassword.PolicyRulePassword.property.passwordResetInput">PasswordResetInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRulePassword.PolicyRulePassword.property.passwordUnlockInput">PasswordUnlockInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyRulePassword.PolicyRulePassword.property.policyidInput">PolicyidInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRulePassword.PolicyRulePassword.property.policyIdInput">PolicyIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRulePassword.PolicyRulePassword.property.priorityInput">PriorityInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRulePassword.PolicyRulePassword.property.statusInput">StatusInput</a></code> | <code>*string</code> | *No description.* |
@@ -450,7 +442,6 @@ policyrulepassword.PolicyRulePassword_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-okta.policyRulePassword.PolicyRulePassword.property.passwordChange">PasswordChange</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRulePassword.PolicyRulePassword.property.passwordReset">PasswordReset</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRulePassword.PolicyRulePassword.property.passwordUnlock">PasswordUnlock</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyRulePassword.PolicyRulePassword.property.policyid">Policyid</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRulePassword.PolicyRulePassword.property.policyId">PolicyId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRulePassword.PolicyRulePassword.property.priority">Priority</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRulePassword.PolicyRulePassword.property.status">Status</a></code> | <code>*string</code> | *No description.* |
@@ -680,16 +671,6 @@ func PasswordUnlockInput() *string
 
 ---
 
-##### `PolicyidInput`<sup>Optional</sup> <a name="PolicyidInput" id="@cdktf/provider-okta.policyRulePassword.PolicyRulePassword.property.policyidInput"></a>
-
-```go
-func PolicyidInput() *string
-```
-
-- *Type:* *string
-
----
-
 ##### `PolicyIdInput`<sup>Optional</sup> <a name="PolicyIdInput" id="@cdktf/provider-okta.policyRulePassword.PolicyRulePassword.property.policyIdInput"></a>
 
 ```go
@@ -810,16 +791,6 @@ func PasswordUnlock() *string
 
 ---
 
-##### `Policyid`<sup>Required</sup> <a name="Policyid" id="@cdktf/provider-okta.policyRulePassword.PolicyRulePassword.property.policyid"></a>
-
-```go
-func Policyid() *string
-```
-
-- *Type:* *string
-
----
-
 ##### `PolicyId`<sup>Required</sup> <a name="PolicyId" id="@cdktf/provider-okta.policyRulePassword.PolicyRulePassword.property.policyId"></a>
 
 ```go
@@ -885,7 +856,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.policyRulePassword.PolicyRulePasswordConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/policyrulepassword"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policyrulepassword"
 
 &policyrulepassword.PolicyRulePasswordConfig {
 	Connection: interface{},
@@ -903,7 +874,6 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/policyrulepassword"
 	PasswordChange: *string,
 	PasswordReset: *string,
 	PasswordUnlock: *string,
-	Policyid: *string,
 	PolicyId: *string,
 	Priority: *f64,
 	Status: *string,
@@ -923,14 +893,13 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/policyrulepassword"
 | <code><a href="#@cdktf/provider-okta.policyRulePassword.PolicyRulePasswordConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRulePassword.PolicyRulePasswordConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRulePassword.PolicyRulePasswordConfig.property.name">Name</a></code> | <code>*string</code> | Policy Rule Name. |
-| <code><a href="#@cdktf/provider-okta.policyRulePassword.PolicyRulePasswordConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/policy_rule_password#id PolicyRulePassword#id}. |
+| <code><a href="#@cdktf/provider-okta.policyRulePassword.PolicyRulePasswordConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/policy_rule_password#id PolicyRulePassword#id}. |
 | <code><a href="#@cdktf/provider-okta.policyRulePassword.PolicyRulePasswordConfig.property.networkConnection">NetworkConnection</a></code> | <code>*string</code> | Network selection mode: ANYWHERE, ZONE, ON_NETWORK, or OFF_NETWORK. |
 | <code><a href="#@cdktf/provider-okta.policyRulePassword.PolicyRulePasswordConfig.property.networkExcludes">NetworkExcludes</a></code> | <code>*[]*string</code> | The zones to exclude. |
 | <code><a href="#@cdktf/provider-okta.policyRulePassword.PolicyRulePasswordConfig.property.networkIncludes">NetworkIncludes</a></code> | <code>*[]*string</code> | The zones to include. |
 | <code><a href="#@cdktf/provider-okta.policyRulePassword.PolicyRulePasswordConfig.property.passwordChange">PasswordChange</a></code> | <code>*string</code> | Allow or deny a user to change their password: ALLOW or DENY. Default = ALLOW. |
 | <code><a href="#@cdktf/provider-okta.policyRulePassword.PolicyRulePasswordConfig.property.passwordReset">PasswordReset</a></code> | <code>*string</code> | Allow or deny a user to reset their password: ALLOW or DENY. Default = ALLOW. |
 | <code><a href="#@cdktf/provider-okta.policyRulePassword.PolicyRulePasswordConfig.property.passwordUnlock">PasswordUnlock</a></code> | <code>*string</code> | Allow or deny a user to unlock. Default = DENY. |
-| <code><a href="#@cdktf/provider-okta.policyRulePassword.PolicyRulePasswordConfig.property.policyid">Policyid</a></code> | <code>*string</code> | Policy ID of the Rule. |
 | <code><a href="#@cdktf/provider-okta.policyRulePassword.PolicyRulePasswordConfig.property.policyId">PolicyId</a></code> | <code>*string</code> | Policy ID of the Rule. |
 | <code><a href="#@cdktf/provider-okta.policyRulePassword.PolicyRulePasswordConfig.property.priority">Priority</a></code> | <code>*f64</code> | Policy Rule Priority, this attribute can be set to a valid priority. |
 | <code><a href="#@cdktf/provider-okta.policyRulePassword.PolicyRulePasswordConfig.property.status">Status</a></code> | <code>*string</code> | Policy Rule Status: ACTIVE or INACTIVE. |
@@ -1018,7 +987,7 @@ Name *string
 
 Policy Rule Name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/policy_rule_password#name PolicyRulePassword#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/policy_rule_password#name PolicyRulePassword#name}
 
 ---
 
@@ -1030,7 +999,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/policy_rule_password#id PolicyRulePassword#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/policy_rule_password#id PolicyRulePassword#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1047,7 +1016,7 @@ NetworkConnection *string
 
 Network selection mode: ANYWHERE, ZONE, ON_NETWORK, or OFF_NETWORK.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/policy_rule_password#network_connection PolicyRulePassword#network_connection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/policy_rule_password#network_connection PolicyRulePassword#network_connection}
 
 ---
 
@@ -1061,7 +1030,7 @@ NetworkExcludes *[]*string
 
 The zones to exclude.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/policy_rule_password#network_excludes PolicyRulePassword#network_excludes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/policy_rule_password#network_excludes PolicyRulePassword#network_excludes}
 
 ---
 
@@ -1075,7 +1044,7 @@ NetworkIncludes *[]*string
 
 The zones to include.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/policy_rule_password#network_includes PolicyRulePassword#network_includes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/policy_rule_password#network_includes PolicyRulePassword#network_includes}
 
 ---
 
@@ -1089,7 +1058,7 @@ PasswordChange *string
 
 Allow or deny a user to change their password: ALLOW or DENY. Default = ALLOW.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/policy_rule_password#password_change PolicyRulePassword#password_change}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/policy_rule_password#password_change PolicyRulePassword#password_change}
 
 ---
 
@@ -1103,7 +1072,7 @@ PasswordReset *string
 
 Allow or deny a user to reset their password: ALLOW or DENY. Default = ALLOW.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/policy_rule_password#password_reset PolicyRulePassword#password_reset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/policy_rule_password#password_reset PolicyRulePassword#password_reset}
 
 ---
 
@@ -1117,21 +1086,7 @@ PasswordUnlock *string
 
 Allow or deny a user to unlock. Default = DENY.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/policy_rule_password#password_unlock PolicyRulePassword#password_unlock}
-
----
-
-##### `Policyid`<sup>Optional</sup> <a name="Policyid" id="@cdktf/provider-okta.policyRulePassword.PolicyRulePasswordConfig.property.policyid"></a>
-
-```go
-Policyid *string
-```
-
-- *Type:* *string
-
-Policy ID of the Rule.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/policy_rule_password#policyid PolicyRulePassword#policyid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/policy_rule_password#password_unlock PolicyRulePassword#password_unlock}
 
 ---
 
@@ -1145,7 +1100,7 @@ PolicyId *string
 
 Policy ID of the Rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/policy_rule_password#policy_id PolicyRulePassword#policy_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/policy_rule_password#policy_id PolicyRulePassword#policy_id}
 
 ---
 
@@ -1161,7 +1116,7 @@ Policy Rule Priority, this attribute can be set to a valid priority.
 
 To avoid endless diff situation we error if an invalid priority is provided. API defaults it to the last (lowest) if not there.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/policy_rule_password#priority PolicyRulePassword#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/policy_rule_password#priority PolicyRulePassword#priority}
 
 ---
 
@@ -1175,7 +1130,7 @@ Status *string
 
 Policy Rule Status: ACTIVE or INACTIVE.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/policy_rule_password#status PolicyRulePassword#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/policy_rule_password#status PolicyRulePassword#status}
 
 ---
 
@@ -1189,7 +1144,7 @@ UsersExcluded *[]*string
 
 Set of User IDs to Exclude.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/policy_rule_password#users_excluded PolicyRulePassword#users_excluded}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/policy_rule_password#users_excluded PolicyRulePassword#users_excluded}
 
 ---
 

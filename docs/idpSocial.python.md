@@ -1,6 +1,6 @@
 # `okta_idp_social`
 
-Refer to the Terraform Registory for docs: [`okta_idp_social`](https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social).
+Refer to the Terraform Registory for docs: [`okta_idp_social`](https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social).
 
 # `idpSocial` Submodule <a name="`idpSocial` Submodule" id="@cdktf/provider-okta.idpSocial"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_idp_social`](https://registry.
 
 ### IdpSocial <a name="IdpSocial" id="@cdktf/provider-okta.idpSocial.IdpSocial"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social okta_idp_social}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social okta_idp_social}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.idpSocial.IdpSocial.Initializer"></a>
 
@@ -42,8 +42,6 @@ idpSocial.IdpSocial(
   groups_filter: typing.List[str] = None,
   id: str = None,
   issuer_mode: str = None,
-  match_attribute: str = None,
-  match_type: str = None,
   max_clock_skew: typing.Union[int, float] = None,
   profile_master: typing.Union[bool, IResolvable] = None,
   protocol_type: str = None,
@@ -68,33 +66,31 @@ idpSocial.IdpSocial(
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.name">name</a></code> | <code>str</code> | Name of the IdP. |
-| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.scopes">scopes</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#scopes IdpSocial#scopes}. |
+| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.scopes">scopes</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#scopes IdpSocial#scopes}. |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.type">type</a></code> | <code>str</code> | Identity Provider Types: https://developer.okta.com/docs/reference/api/idps/#identity-provider-type. |
-| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.accountLinkAction">account_link_action</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#account_link_action IdpSocial#account_link_action}. |
-| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.accountLinkGroupInclude">account_link_group_include</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#account_link_group_include IdpSocial#account_link_group_include}. |
+| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.accountLinkAction">account_link_action</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#account_link_action IdpSocial#account_link_action}. |
+| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.accountLinkGroupInclude">account_link_group_include</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#account_link_group_include IdpSocial#account_link_group_include}. |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.appleKid">apple_kid</a></code> | <code>str</code> | The Key ID that you obtained from Apple when you created the private key for the client. |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.applePrivateKey">apple_private_key</a></code> | <code>str</code> | The PKCS #8 encoded private key that you created for the client and downloaded from Apple. |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.appleTeamId">apple_team_id</a></code> | <code>str</code> | The Team ID associated with your Apple developer account. |
-| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.clientId">client_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#client_id IdpSocial#client_id}. |
-| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.clientSecret">client_secret</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#client_secret IdpSocial#client_secret}. |
-| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.deprovisionedAction">deprovisioned_action</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#deprovisioned_action IdpSocial#deprovisioned_action}. |
-| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.groupsAction">groups_action</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#groups_action IdpSocial#groups_action}. |
-| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.groupsAssignment">groups_assignment</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#groups_assignment IdpSocial#groups_assignment}. |
-| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.groupsAttribute">groups_attribute</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#groups_attribute IdpSocial#groups_attribute}. |
-| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.groupsFilter">groups_filter</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#groups_filter IdpSocial#groups_filter}. |
-| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#id IdpSocial#id}. |
+| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.clientId">client_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#client_id IdpSocial#client_id}. |
+| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.clientSecret">client_secret</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#client_secret IdpSocial#client_secret}. |
+| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.deprovisionedAction">deprovisioned_action</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#deprovisioned_action IdpSocial#deprovisioned_action}. |
+| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.groupsAction">groups_action</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#groups_action IdpSocial#groups_action}. |
+| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.groupsAssignment">groups_assignment</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#groups_assignment IdpSocial#groups_assignment}. |
+| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.groupsAttribute">groups_attribute</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#groups_attribute IdpSocial#groups_attribute}. |
+| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.groupsFilter">groups_filter</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#groups_filter IdpSocial#groups_filter}. |
+| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#id IdpSocial#id}. |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.issuerMode">issuer_mode</a></code> | <code>str</code> | Indicates whether Okta uses the original Okta org domain URL, or a custom domain URL. |
-| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.matchAttribute">match_attribute</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#match_attribute IdpSocial#match_attribute}. |
-| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.matchType">match_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#match_type IdpSocial#match_type}. |
-| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.maxClockSkew">max_clock_skew</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#max_clock_skew IdpSocial#max_clock_skew}. |
-| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.profileMaster">profile_master</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#profile_master IdpSocial#profile_master}. |
-| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.protocolType">protocol_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#protocol_type IdpSocial#protocol_type}. |
-| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.provisioningAction">provisioning_action</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#provisioning_action IdpSocial#provisioning_action}. |
-| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.status">status</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#status IdpSocial#status}. |
-| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.subjectMatchAttribute">subject_match_attribute</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#subject_match_attribute IdpSocial#subject_match_attribute}. |
-| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.subjectMatchType">subject_match_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#subject_match_type IdpSocial#subject_match_type}. |
-| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.suspendedAction">suspended_action</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#suspended_action IdpSocial#suspended_action}. |
-| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.usernameTemplate">username_template</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#username_template IdpSocial#username_template}. |
+| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.maxClockSkew">max_clock_skew</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#max_clock_skew IdpSocial#max_clock_skew}. |
+| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.profileMaster">profile_master</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#profile_master IdpSocial#profile_master}. |
+| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.protocolType">protocol_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#protocol_type IdpSocial#protocol_type}. |
+| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.provisioningAction">provisioning_action</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#provisioning_action IdpSocial#provisioning_action}. |
+| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.status">status</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#status IdpSocial#status}. |
+| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.subjectMatchAttribute">subject_match_attribute</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#subject_match_attribute IdpSocial#subject_match_attribute}. |
+| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.subjectMatchType">subject_match_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#subject_match_type IdpSocial#subject_match_type}. |
+| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.suspendedAction">suspended_action</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#suspended_action IdpSocial#suspended_action}. |
+| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.usernameTemplate">username_template</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#username_template IdpSocial#username_template}. |
 
 ---
 
@@ -164,7 +160,7 @@ Must be unique amongst siblings in the same scope
 
 Name of the IdP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#name IdpSocial#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#name IdpSocial#name}
 
 ---
 
@@ -172,7 +168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#scopes IdpSocial#scopes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#scopes IdpSocial#scopes}.
 
 ---
 
@@ -182,7 +178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Identity Provider Types: https://developer.okta.com/docs/reference/api/idps/#identity-provider-type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#type IdpSocial#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#type IdpSocial#type}
 
 ---
 
@@ -190,7 +186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#account_link_action IdpSocial#account_link_action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#account_link_action IdpSocial#account_link_action}.
 
 ---
 
@@ -198,7 +194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#account_link_group_include IdpSocial#account_link_group_include}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#account_link_group_include IdpSocial#account_link_group_include}.
 
 ---
 
@@ -208,7 +204,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 The Key ID that you obtained from Apple when you created the private key for the client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#apple_kid IdpSocial#apple_kid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#apple_kid IdpSocial#apple_kid}
 
 ---
 
@@ -218,7 +214,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 The PKCS #8 encoded private key that you created for the client and downloaded from Apple.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#apple_private_key IdpSocial#apple_private_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#apple_private_key IdpSocial#apple_private_key}
 
 ---
 
@@ -228,7 +224,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 The Team ID associated with your Apple developer account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#apple_team_id IdpSocial#apple_team_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#apple_team_id IdpSocial#apple_team_id}
 
 ---
 
@@ -236,7 +232,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#client_id IdpSocial#client_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#client_id IdpSocial#client_id}.
 
 ---
 
@@ -244,7 +240,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#client_secret IdpSocial#client_secret}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#client_secret IdpSocial#client_secret}.
 
 ---
 
@@ -252,7 +248,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#deprovisioned_action IdpSocial#deprovisioned_action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#deprovisioned_action IdpSocial#deprovisioned_action}.
 
 ---
 
@@ -260,7 +256,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#groups_action IdpSocial#groups_action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#groups_action IdpSocial#groups_action}.
 
 ---
 
@@ -268,7 +264,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#groups_assignment IdpSocial#groups_assignment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#groups_assignment IdpSocial#groups_assignment}.
 
 ---
 
@@ -276,7 +272,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#groups_attribute IdpSocial#groups_attribute}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#groups_attribute IdpSocial#groups_attribute}.
 
 ---
 
@@ -284,7 +280,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#groups_filter IdpSocial#groups_filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#groups_filter IdpSocial#groups_filter}.
 
 ---
 
@@ -292,7 +288,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#id IdpSocial#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#id IdpSocial#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -305,23 +301,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Indicates whether Okta uses the original Okta org domain URL, or a custom domain URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#issuer_mode IdpSocial#issuer_mode}
-
----
-
-##### `match_attribute`<sup>Optional</sup> <a name="match_attribute" id="@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.matchAttribute"></a>
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#match_attribute IdpSocial#match_attribute}.
-
----
-
-##### `match_type`<sup>Optional</sup> <a name="match_type" id="@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.matchType"></a>
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#match_type IdpSocial#match_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#issuer_mode IdpSocial#issuer_mode}
 
 ---
 
@@ -329,7 +309,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#max_clock_skew IdpSocial#max_clock_skew}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#max_clock_skew IdpSocial#max_clock_skew}.
 
 ---
 
@@ -337,7 +317,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#profile_master IdpSocial#profile_master}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#profile_master IdpSocial#profile_master}.
 
 ---
 
@@ -345,7 +325,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#protocol_type IdpSocial#protocol_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#protocol_type IdpSocial#protocol_type}.
 
 ---
 
@@ -353,7 +333,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#provisioning_action IdpSocial#provisioning_action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#provisioning_action IdpSocial#provisioning_action}.
 
 ---
 
@@ -361,7 +341,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#status IdpSocial#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#status IdpSocial#status}.
 
 ---
 
@@ -369,7 +349,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#subject_match_attribute IdpSocial#subject_match_attribute}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#subject_match_attribute IdpSocial#subject_match_attribute}.
 
 ---
 
@@ -377,7 +357,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#subject_match_type IdpSocial#subject_match_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#subject_match_type IdpSocial#subject_match_type}.
 
 ---
 
@@ -385,7 +365,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#suspended_action IdpSocial#suspended_action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#suspended_action IdpSocial#suspended_action}.
 
 ---
 
@@ -393,7 +373,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#username_template IdpSocial#username_template}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#username_template IdpSocial#username_template}.
 
 ---
 
@@ -431,8 +411,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.resetGroupsFilter">reset_groups_filter</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.resetIssuerMode">reset_issuer_mode</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.resetMatchAttribute">reset_match_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.resetMatchType">reset_match_type</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.resetMaxClockSkew">reset_max_clock_skew</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.resetProfileMaster">reset_profile_master</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.resetProtocolType">reset_protocol_type</a></code> | *No description.* |
@@ -738,18 +716,6 @@ def reset_id() -> None
 def reset_issuer_mode() -> None
 ```
 
-##### `reset_match_attribute` <a name="reset_match_attribute" id="@cdktf/provider-okta.idpSocial.IdpSocial.resetMatchAttribute"></a>
-
-```python
-def reset_match_attribute() -> None
-```
-
-##### `reset_match_type` <a name="reset_match_type" id="@cdktf/provider-okta.idpSocial.IdpSocial.resetMatchType"></a>
-
-```python
-def reset_match_type() -> None
-```
-
 ##### `reset_max_clock_skew` <a name="reset_max_clock_skew" id="@cdktf/provider-okta.idpSocial.IdpSocial.resetMaxClockSkew"></a>
 
 ```python
@@ -916,8 +882,6 @@ idpSocial.IdpSocial.is_terraform_resource(
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.property.groupsFilterInput">groups_filter_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.property.issuerModeInput">issuer_mode_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.property.matchAttributeInput">match_attribute_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.property.matchTypeInput">match_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.property.maxClockSkewInput">max_clock_skew_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.property.profileMasterInput">profile_master_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
@@ -944,8 +908,6 @@ idpSocial.IdpSocial.is_terraform_resource(
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.property.groupsFilter">groups_filter</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.property.issuerMode">issuer_mode</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.property.matchAttribute">match_attribute</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.property.matchType">match_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.property.maxClockSkew">max_clock_skew</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.property.profileMaster">profile_master</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
@@ -1283,26 +1245,6 @@ issuer_mode_input: str
 
 ---
 
-##### `match_attribute_input`<sup>Optional</sup> <a name="match_attribute_input" id="@cdktf/provider-okta.idpSocial.IdpSocial.property.matchAttributeInput"></a>
-
-```python
-match_attribute_input: str
-```
-
-- *Type:* str
-
----
-
-##### `match_type_input`<sup>Optional</sup> <a name="match_type_input" id="@cdktf/provider-okta.idpSocial.IdpSocial.property.matchTypeInput"></a>
-
-```python
-match_type_input: str
-```
-
-- *Type:* str
-
----
-
 ##### `max_clock_skew_input`<sup>Optional</sup> <a name="max_clock_skew_input" id="@cdktf/provider-okta.idpSocial.IdpSocial.property.maxClockSkewInput"></a>
 
 ```python
@@ -1563,26 +1505,6 @@ issuer_mode: str
 
 ---
 
-##### `match_attribute`<sup>Required</sup> <a name="match_attribute" id="@cdktf/provider-okta.idpSocial.IdpSocial.property.matchAttribute"></a>
-
-```python
-match_attribute: str
-```
-
-- *Type:* str
-
----
-
-##### `match_type`<sup>Required</sup> <a name="match_type" id="@cdktf/provider-okta.idpSocial.IdpSocial.property.matchType"></a>
-
-```python
-match_type: str
-```
-
-- *Type:* str
-
----
-
 ##### `max_clock_skew`<sup>Required</sup> <a name="max_clock_skew" id="@cdktf/provider-okta.idpSocial.IdpSocial.property.maxClockSkew"></a>
 
 ```python
@@ -1755,8 +1677,6 @@ idpSocial.IdpSocialConfig(
   groups_filter: typing.List[str] = None,
   id: str = None,
   issuer_mode: str = None,
-  match_attribute: str = None,
-  match_type: str = None,
   max_clock_skew: typing.Union[int, float] = None,
   profile_master: typing.Union[bool, IResolvable] = None,
   protocol_type: str = None,
@@ -1781,33 +1701,31 @@ idpSocial.IdpSocialConfig(
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.name">name</a></code> | <code>str</code> | Name of the IdP. |
-| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.scopes">scopes</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#scopes IdpSocial#scopes}. |
+| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.scopes">scopes</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#scopes IdpSocial#scopes}. |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.type">type</a></code> | <code>str</code> | Identity Provider Types: https://developer.okta.com/docs/reference/api/idps/#identity-provider-type. |
-| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.accountLinkAction">account_link_action</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#account_link_action IdpSocial#account_link_action}. |
-| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.accountLinkGroupInclude">account_link_group_include</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#account_link_group_include IdpSocial#account_link_group_include}. |
+| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.accountLinkAction">account_link_action</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#account_link_action IdpSocial#account_link_action}. |
+| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.accountLinkGroupInclude">account_link_group_include</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#account_link_group_include IdpSocial#account_link_group_include}. |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.appleKid">apple_kid</a></code> | <code>str</code> | The Key ID that you obtained from Apple when you created the private key for the client. |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.applePrivateKey">apple_private_key</a></code> | <code>str</code> | The PKCS #8 encoded private key that you created for the client and downloaded from Apple. |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.appleTeamId">apple_team_id</a></code> | <code>str</code> | The Team ID associated with your Apple developer account. |
-| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.clientId">client_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#client_id IdpSocial#client_id}. |
-| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.clientSecret">client_secret</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#client_secret IdpSocial#client_secret}. |
-| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.deprovisionedAction">deprovisioned_action</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#deprovisioned_action IdpSocial#deprovisioned_action}. |
-| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.groupsAction">groups_action</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#groups_action IdpSocial#groups_action}. |
-| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.groupsAssignment">groups_assignment</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#groups_assignment IdpSocial#groups_assignment}. |
-| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.groupsAttribute">groups_attribute</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#groups_attribute IdpSocial#groups_attribute}. |
-| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.groupsFilter">groups_filter</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#groups_filter IdpSocial#groups_filter}. |
-| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#id IdpSocial#id}. |
+| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.clientId">client_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#client_id IdpSocial#client_id}. |
+| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.clientSecret">client_secret</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#client_secret IdpSocial#client_secret}. |
+| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.deprovisionedAction">deprovisioned_action</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#deprovisioned_action IdpSocial#deprovisioned_action}. |
+| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.groupsAction">groups_action</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#groups_action IdpSocial#groups_action}. |
+| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.groupsAssignment">groups_assignment</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#groups_assignment IdpSocial#groups_assignment}. |
+| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.groupsAttribute">groups_attribute</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#groups_attribute IdpSocial#groups_attribute}. |
+| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.groupsFilter">groups_filter</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#groups_filter IdpSocial#groups_filter}. |
+| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#id IdpSocial#id}. |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.issuerMode">issuer_mode</a></code> | <code>str</code> | Indicates whether Okta uses the original Okta org domain URL, or a custom domain URL. |
-| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.matchAttribute">match_attribute</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#match_attribute IdpSocial#match_attribute}. |
-| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.matchType">match_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#match_type IdpSocial#match_type}. |
-| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.maxClockSkew">max_clock_skew</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#max_clock_skew IdpSocial#max_clock_skew}. |
-| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.profileMaster">profile_master</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#profile_master IdpSocial#profile_master}. |
-| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.protocolType">protocol_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#protocol_type IdpSocial#protocol_type}. |
-| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.provisioningAction">provisioning_action</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#provisioning_action IdpSocial#provisioning_action}. |
-| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.status">status</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#status IdpSocial#status}. |
-| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.subjectMatchAttribute">subject_match_attribute</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#subject_match_attribute IdpSocial#subject_match_attribute}. |
-| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.subjectMatchType">subject_match_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#subject_match_type IdpSocial#subject_match_type}. |
-| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.suspendedAction">suspended_action</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#suspended_action IdpSocial#suspended_action}. |
-| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.usernameTemplate">username_template</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#username_template IdpSocial#username_template}. |
+| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.maxClockSkew">max_clock_skew</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#max_clock_skew IdpSocial#max_clock_skew}. |
+| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.profileMaster">profile_master</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#profile_master IdpSocial#profile_master}. |
+| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.protocolType">protocol_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#protocol_type IdpSocial#protocol_type}. |
+| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.provisioningAction">provisioning_action</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#provisioning_action IdpSocial#provisioning_action}. |
+| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.status">status</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#status IdpSocial#status}. |
+| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.subjectMatchAttribute">subject_match_attribute</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#subject_match_attribute IdpSocial#subject_match_attribute}. |
+| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.subjectMatchType">subject_match_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#subject_match_type IdpSocial#subject_match_type}. |
+| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.suspendedAction">suspended_action</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#suspended_action IdpSocial#suspended_action}. |
+| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.usernameTemplate">username_template</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#username_template IdpSocial#username_template}. |
 
 ---
 
@@ -1891,7 +1809,7 @@ name: str
 
 Name of the IdP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#name IdpSocial#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#name IdpSocial#name}
 
 ---
 
@@ -1903,7 +1821,7 @@ scopes: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#scopes IdpSocial#scopes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#scopes IdpSocial#scopes}.
 
 ---
 
@@ -1917,7 +1835,7 @@ type: str
 
 Identity Provider Types: https://developer.okta.com/docs/reference/api/idps/#identity-provider-type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#type IdpSocial#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#type IdpSocial#type}
 
 ---
 
@@ -1929,7 +1847,7 @@ account_link_action: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#account_link_action IdpSocial#account_link_action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#account_link_action IdpSocial#account_link_action}.
 
 ---
 
@@ -1941,7 +1859,7 @@ account_link_group_include: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#account_link_group_include IdpSocial#account_link_group_include}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#account_link_group_include IdpSocial#account_link_group_include}.
 
 ---
 
@@ -1955,7 +1873,7 @@ apple_kid: str
 
 The Key ID that you obtained from Apple when you created the private key for the client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#apple_kid IdpSocial#apple_kid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#apple_kid IdpSocial#apple_kid}
 
 ---
 
@@ -1969,7 +1887,7 @@ apple_private_key: str
 
 The PKCS #8 encoded private key that you created for the client and downloaded from Apple.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#apple_private_key IdpSocial#apple_private_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#apple_private_key IdpSocial#apple_private_key}
 
 ---
 
@@ -1983,7 +1901,7 @@ apple_team_id: str
 
 The Team ID associated with your Apple developer account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#apple_team_id IdpSocial#apple_team_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#apple_team_id IdpSocial#apple_team_id}
 
 ---
 
@@ -1995,7 +1913,7 @@ client_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#client_id IdpSocial#client_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#client_id IdpSocial#client_id}.
 
 ---
 
@@ -2007,7 +1925,7 @@ client_secret: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#client_secret IdpSocial#client_secret}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#client_secret IdpSocial#client_secret}.
 
 ---
 
@@ -2019,7 +1937,7 @@ deprovisioned_action: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#deprovisioned_action IdpSocial#deprovisioned_action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#deprovisioned_action IdpSocial#deprovisioned_action}.
 
 ---
 
@@ -2031,7 +1949,7 @@ groups_action: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#groups_action IdpSocial#groups_action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#groups_action IdpSocial#groups_action}.
 
 ---
 
@@ -2043,7 +1961,7 @@ groups_assignment: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#groups_assignment IdpSocial#groups_assignment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#groups_assignment IdpSocial#groups_assignment}.
 
 ---
 
@@ -2055,7 +1973,7 @@ groups_attribute: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#groups_attribute IdpSocial#groups_attribute}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#groups_attribute IdpSocial#groups_attribute}.
 
 ---
 
@@ -2067,7 +1985,7 @@ groups_filter: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#groups_filter IdpSocial#groups_filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#groups_filter IdpSocial#groups_filter}.
 
 ---
 
@@ -2079,7 +1997,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#id IdpSocial#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#id IdpSocial#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2096,31 +2014,7 @@ issuer_mode: str
 
 Indicates whether Okta uses the original Okta org domain URL, or a custom domain URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#issuer_mode IdpSocial#issuer_mode}
-
----
-
-##### `match_attribute`<sup>Optional</sup> <a name="match_attribute" id="@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.matchAttribute"></a>
-
-```python
-match_attribute: str
-```
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#match_attribute IdpSocial#match_attribute}.
-
----
-
-##### `match_type`<sup>Optional</sup> <a name="match_type" id="@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.matchType"></a>
-
-```python
-match_type: str
-```
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#match_type IdpSocial#match_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#issuer_mode IdpSocial#issuer_mode}
 
 ---
 
@@ -2132,7 +2026,7 @@ max_clock_skew: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#max_clock_skew IdpSocial#max_clock_skew}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#max_clock_skew IdpSocial#max_clock_skew}.
 
 ---
 
@@ -2144,7 +2038,7 @@ profile_master: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#profile_master IdpSocial#profile_master}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#profile_master IdpSocial#profile_master}.
 
 ---
 
@@ -2156,7 +2050,7 @@ protocol_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#protocol_type IdpSocial#protocol_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#protocol_type IdpSocial#protocol_type}.
 
 ---
 
@@ -2168,7 +2062,7 @@ provisioning_action: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#provisioning_action IdpSocial#provisioning_action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#provisioning_action IdpSocial#provisioning_action}.
 
 ---
 
@@ -2180,7 +2074,7 @@ status: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#status IdpSocial#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#status IdpSocial#status}.
 
 ---
 
@@ -2192,7 +2086,7 @@ subject_match_attribute: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#subject_match_attribute IdpSocial#subject_match_attribute}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#subject_match_attribute IdpSocial#subject_match_attribute}.
 
 ---
 
@@ -2204,7 +2098,7 @@ subject_match_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#subject_match_type IdpSocial#subject_match_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#subject_match_type IdpSocial#subject_match_type}.
 
 ---
 
@@ -2216,7 +2110,7 @@ suspended_action: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#suspended_action IdpSocial#suspended_action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#suspended_action IdpSocial#suspended_action}.
 
 ---
 
@@ -2228,7 +2122,7 @@ username_template: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/idp_social#username_template IdpSocial#username_template}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/idp_social#username_template IdpSocial#username_template}.
 
 ---
 

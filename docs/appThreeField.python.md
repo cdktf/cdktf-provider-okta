@@ -1,6 +1,6 @@
 # `okta_app_three_field`
 
-Refer to the Terraform Registory for docs: [`okta_app_three_field`](https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field).
+Refer to the Terraform Registory for docs: [`okta_app_three_field`](https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_three_field).
 
 # `appThreeField` Submodule <a name="`appThreeField` Submodule" id="@cdktf/provider-okta.appThreeField"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_app_three_field`](https://regi
 
 ### AppThreeField <a name="AppThreeField" id="@cdktf/provider-okta.appThreeField.AppThreeField"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field okta_app_three_field}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_three_field okta_app_three_field}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appThreeField.AppThreeField.Initializer"></a>
 
@@ -40,7 +40,6 @@ appThreeField.AppThreeField(
   auto_submit_toolbar: typing.Union[bool, IResolvable] = None,
   credentials_scheme: str = None,
   enduser_note: str = None,
-  groups: typing.List[str] = None,
   hide_ios: typing.Union[bool, IResolvable] = None,
   hide_web: typing.Union[bool, IResolvable] = None,
   id: str = None,
@@ -48,16 +47,13 @@ appThreeField.AppThreeField(
   reveal_password: typing.Union[bool, IResolvable] = None,
   shared_password: str = None,
   shared_username: str = None,
-  skip_groups: typing.Union[bool, IResolvable] = None,
-  skip_users: typing.Union[bool, IResolvable] = None,
   status: str = None,
   timeouts: AppThreeFieldTimeouts = None,
   url_regex: str = None,
   user_name_template: str = None,
   user_name_template_push_status: str = None,
   user_name_template_suffix: str = None,
-  user_name_template_type: str = None,
-  users: typing.Union[IResolvable, typing.List[AppThreeFieldUsers]] = None
+  user_name_template_type: str = None
 )
 ```
 
@@ -87,16 +83,13 @@ appThreeField.AppThreeField(
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.Initializer.parameter.autoSubmitToolbar">auto_submit_toolbar</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Display auto submit toolbar. |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.Initializer.parameter.credentialsScheme">credentials_scheme</a></code> | <code>str</code> | Application credentials scheme. |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.Initializer.parameter.enduserNote">enduser_note</a></code> | <code>str</code> | Application notes for end users. |
-| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.Initializer.parameter.groups">groups</a></code> | <code>typing.List[str]</code> | Groups associated with the application. |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.Initializer.parameter.hideIos">hide_ios</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Do not display application icon on mobile app. |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.Initializer.parameter.hideWeb">hide_web</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Do not display application icon to users. |
-| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#id AppThreeField#id}. |
+| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_three_field#id AppThreeField#id}. |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.Initializer.parameter.logo">logo</a></code> | <code>str</code> | Local path to logo of the application. |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.Initializer.parameter.revealPassword">reveal_password</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Allow user to reveal password. |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.Initializer.parameter.sharedPassword">shared_password</a></code> | <code>str</code> | Shared password, required for certain schemes. |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.Initializer.parameter.sharedUsername">shared_username</a></code> | <code>str</code> | Shared username, required for certain schemes. |
-| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.Initializer.parameter.skipGroups">skip_groups</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources. |
-| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.Initializer.parameter.skipUsers">skip_users</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources. |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.Initializer.parameter.status">status</a></code> | <code>str</code> | Status of application. |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldTimeouts">AppThreeFieldTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.Initializer.parameter.urlRegex">url_regex</a></code> | <code>str</code> | A regex that further restricts URL to the specified regex. |
@@ -104,7 +97,6 @@ appThreeField.AppThreeField(
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.Initializer.parameter.userNameTemplatePushStatus">user_name_template_push_status</a></code> | <code>str</code> | Push username on update. |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.Initializer.parameter.userNameTemplateSuffix">user_name_template_suffix</a></code> | <code>str</code> | Username template suffix. |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.Initializer.parameter.userNameTemplateType">user_name_template_type</a></code> | <code>str</code> | Username template type. |
-| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.Initializer.parameter.users">users</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldUsers">AppThreeFieldUsers</a>]]</code> | users block. |
 
 ---
 
@@ -174,7 +166,7 @@ Must be unique amongst siblings in the same scope
 
 Login button field CSS selector.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#button_selector AppThreeField#button_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_three_field#button_selector AppThreeField#button_selector}
 
 ---
 
@@ -184,7 +176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Extra field CSS selector.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#extra_field_selector AppThreeField#extra_field_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_three_field#extra_field_selector AppThreeField#extra_field_selector}
 
 ---
 
@@ -194,7 +186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Value for extra form field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#extra_field_value AppThreeField#extra_field_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_three_field#extra_field_value AppThreeField#extra_field_value}
 
 ---
 
@@ -204,7 +196,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Pretty name of app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#label AppThreeField#label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_three_field#label AppThreeField#label}
 
 ---
 
@@ -214,7 +206,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Login password field CSS selector.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#password_selector AppThreeField#password_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_three_field#password_selector AppThreeField#password_selector}
 
 ---
 
@@ -224,7 +216,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Login URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#url AppThreeField#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_three_field#url AppThreeField#url}
 
 ---
 
@@ -234,7 +226,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Login username field CSS selector.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#username_selector AppThreeField#username_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_three_field#username_selector AppThreeField#username_selector}
 
 ---
 
@@ -244,7 +236,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Custom error page URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#accessibility_error_redirect_url AppThreeField#accessibility_error_redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_three_field#accessibility_error_redirect_url AppThreeField#accessibility_error_redirect_url}
 
 ---
 
@@ -254,7 +246,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Custom login page URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#accessibility_login_redirect_url AppThreeField#accessibility_login_redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_three_field#accessibility_login_redirect_url AppThreeField#accessibility_login_redirect_url}
 
 ---
 
@@ -264,7 +256,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Enable self service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#accessibility_self_service AppThreeField#accessibility_self_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_three_field#accessibility_self_service AppThreeField#accessibility_self_service}
 
 ---
 
@@ -274,7 +266,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Application notes for admins.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#admin_note AppThreeField#admin_note}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_three_field#admin_note AppThreeField#admin_note}
 
 ---
 
@@ -284,7 +276,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Displays specific appLinks for the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#app_links_json AppThreeField#app_links_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_three_field#app_links_json AppThreeField#app_links_json}
 
 ---
 
@@ -294,7 +286,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Display auto submit toolbar.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#auto_submit_toolbar AppThreeField#auto_submit_toolbar}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_three_field#auto_submit_toolbar AppThreeField#auto_submit_toolbar}
 
 ---
 
@@ -304,7 +296,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Application credentials scheme.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#credentials_scheme AppThreeField#credentials_scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_three_field#credentials_scheme AppThreeField#credentials_scheme}
 
 ---
 
@@ -314,17 +306,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Application notes for end users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#enduser_note AppThreeField#enduser_note}
-
----
-
-##### `groups`<sup>Optional</sup> <a name="groups" id="@cdktf/provider-okta.appThreeField.AppThreeField.Initializer.parameter.groups"></a>
-
-- *Type:* typing.List[str]
-
-Groups associated with the application.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#groups AppThreeField#groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_three_field#enduser_note AppThreeField#enduser_note}
 
 ---
 
@@ -334,7 +316,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Do not display application icon on mobile app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#hide_ios AppThreeField#hide_ios}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_three_field#hide_ios AppThreeField#hide_ios}
 
 ---
 
@@ -344,7 +326,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Do not display application icon to users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#hide_web AppThreeField#hide_web}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_three_field#hide_web AppThreeField#hide_web}
 
 ---
 
@@ -352,7 +334,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#id AppThreeField#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_three_field#id AppThreeField#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -365,7 +347,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Local path to logo of the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#logo AppThreeField#logo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_three_field#logo AppThreeField#logo}
 
 ---
 
@@ -375,7 +357,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Allow user to reveal password.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#reveal_password AppThreeField#reveal_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_three_field#reveal_password AppThreeField#reveal_password}
 
 ---
 
@@ -385,7 +367,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Shared password, required for certain schemes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#shared_password AppThreeField#shared_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_three_field#shared_password AppThreeField#shared_password}
 
 ---
 
@@ -395,27 +377,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Shared username, required for certain schemes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#shared_username AppThreeField#shared_username}
-
----
-
-##### `skip_groups`<sup>Optional</sup> <a name="skip_groups" id="@cdktf/provider-okta.appThreeField.AppThreeField.Initializer.parameter.skipGroups"></a>
-
-- *Type:* typing.Union[bool, cdktf.IResolvable]
-
-Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#skip_groups AppThreeField#skip_groups}
-
----
-
-##### `skip_users`<sup>Optional</sup> <a name="skip_users" id="@cdktf/provider-okta.appThreeField.AppThreeField.Initializer.parameter.skipUsers"></a>
-
-- *Type:* typing.Union[bool, cdktf.IResolvable]
-
-Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#skip_users AppThreeField#skip_users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_three_field#shared_username AppThreeField#shared_username}
 
 ---
 
@@ -425,7 +387,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Status of application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#status AppThreeField#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_three_field#status AppThreeField#status}
 
 ---
 
@@ -435,7 +397,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#timeouts AppThreeField#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_three_field#timeouts AppThreeField#timeouts}
 
 ---
 
@@ -445,7 +407,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 A regex that further restricts URL to the specified regex.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#url_regex AppThreeField#url_regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_three_field#url_regex AppThreeField#url_regex}
 
 ---
 
@@ -455,7 +417,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Username template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#user_name_template AppThreeField#user_name_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_three_field#user_name_template AppThreeField#user_name_template}
 
 ---
 
@@ -465,7 +427,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Push username on update.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#user_name_template_push_status AppThreeField#user_name_template_push_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_three_field#user_name_template_push_status AppThreeField#user_name_template_push_status}
 
 ---
 
@@ -475,7 +437,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Username template suffix.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#user_name_template_suffix AppThreeField#user_name_template_suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_three_field#user_name_template_suffix AppThreeField#user_name_template_suffix}
 
 ---
 
@@ -485,17 +447,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Username template type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#user_name_template_type AppThreeField#user_name_template_type}
-
----
-
-##### `users`<sup>Optional</sup> <a name="users" id="@cdktf/provider-okta.appThreeField.AppThreeField.Initializer.parameter.users"></a>
-
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldUsers">AppThreeFieldUsers</a>]]
-
-users block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#users AppThreeField#users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_three_field#user_name_template_type AppThreeField#user_name_template_type}
 
 ---
 
@@ -520,7 +472,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.putTimeouts">put_timeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.putUsers">put_users</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.resetAccessibilityErrorRedirectUrl">reset_accessibility_error_redirect_url</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.resetAccessibilityLoginRedirectUrl">reset_accessibility_login_redirect_url</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.resetAccessibilitySelfService">reset_accessibility_self_service</a></code> | *No description.* |
@@ -529,7 +480,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.resetAutoSubmitToolbar">reset_auto_submit_toolbar</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.resetCredentialsScheme">reset_credentials_scheme</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.resetEnduserNote">reset_enduser_note</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.resetGroups">reset_groups</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.resetHideIos">reset_hide_ios</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.resetHideWeb">reset_hide_web</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.resetId">reset_id</a></code> | *No description.* |
@@ -537,8 +487,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.resetRevealPassword">reset_reveal_password</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.resetSharedPassword">reset_shared_password</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.resetSharedUsername">reset_shared_username</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.resetSkipGroups">reset_skip_groups</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.resetSkipUsers">reset_skip_users</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.resetStatus">reset_status</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.resetTimeouts">reset_timeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.resetUrlRegex">reset_url_regex</a></code> | *No description.* |
@@ -546,7 +494,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.resetUserNameTemplatePushStatus">reset_user_name_template_push_status</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.resetUserNameTemplateSuffix">reset_user_name_template_suffix</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.resetUserNameTemplateType">reset_user_name_template_type</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.resetUsers">reset_users</a></code> | *No description.* |
 
 ---
 
@@ -773,7 +720,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#create AppThreeField#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_three_field#create AppThreeField#create}.
 
 ---
 
@@ -781,7 +728,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#read AppThreeField#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_three_field#read AppThreeField#read}.
 
 ---
 
@@ -789,21 +736,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#update AppThreeField#update}.
-
----
-
-##### `put_users` <a name="put_users" id="@cdktf/provider-okta.appThreeField.AppThreeField.putUsers"></a>
-
-```python
-def put_users(
-  value: typing.Union[IResolvable, typing.List[AppThreeFieldUsers]]
-) -> None
-```
-
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-okta.appThreeField.AppThreeField.putUsers.parameter.value"></a>
-
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldUsers">AppThreeFieldUsers</a>]]
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_three_field#update AppThreeField#update}.
 
 ---
 
@@ -855,12 +788,6 @@ def reset_credentials_scheme() -> None
 def reset_enduser_note() -> None
 ```
 
-##### `reset_groups` <a name="reset_groups" id="@cdktf/provider-okta.appThreeField.AppThreeField.resetGroups"></a>
-
-```python
-def reset_groups() -> None
-```
-
 ##### `reset_hide_ios` <a name="reset_hide_ios" id="@cdktf/provider-okta.appThreeField.AppThreeField.resetHideIos"></a>
 
 ```python
@@ -903,18 +830,6 @@ def reset_shared_password() -> None
 def reset_shared_username() -> None
 ```
 
-##### `reset_skip_groups` <a name="reset_skip_groups" id="@cdktf/provider-okta.appThreeField.AppThreeField.resetSkipGroups"></a>
-
-```python
-def reset_skip_groups() -> None
-```
-
-##### `reset_skip_users` <a name="reset_skip_users" id="@cdktf/provider-okta.appThreeField.AppThreeField.resetSkipUsers"></a>
-
-```python
-def reset_skip_users() -> None
-```
-
 ##### `reset_status` <a name="reset_status" id="@cdktf/provider-okta.appThreeField.AppThreeField.resetStatus"></a>
 
 ```python
@@ -955,12 +870,6 @@ def reset_user_name_template_suffix() -> None
 
 ```python
 def reset_user_name_template_type() -> None
-```
-
-##### `reset_users` <a name="reset_users" id="@cdktf/provider-okta.appThreeField.AppThreeField.resetUsers"></a>
-
-```python
-def reset_users() -> None
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -1061,7 +970,6 @@ appThreeField.AppThreeField.is_terraform_resource(
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.property.signOnMode">sign_on_mode</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldTimeoutsOutputReference">AppThreeFieldTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.property.users">users</a></code> | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldUsersList">AppThreeFieldUsersList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.property.accessibilityErrorRedirectUrlInput">accessibility_error_redirect_url_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.property.accessibilityLoginRedirectUrlInput">accessibility_login_redirect_url_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.property.accessibilitySelfServiceInput">accessibility_self_service_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
@@ -1073,7 +981,6 @@ appThreeField.AppThreeField.is_terraform_resource(
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.property.enduserNoteInput">enduser_note_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.property.extraFieldSelectorInput">extra_field_selector_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.property.extraFieldValueInput">extra_field_value_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.property.groupsInput">groups_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.property.hideIosInput">hide_ios_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.property.hideWebInput">hide_web_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
@@ -1083,8 +990,6 @@ appThreeField.AppThreeField.is_terraform_resource(
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.property.revealPasswordInput">reveal_password_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.property.sharedPasswordInput">shared_password_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.property.sharedUsernameInput">shared_username_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.property.skipGroupsInput">skip_groups_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.property.skipUsersInput">skip_users_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.property.statusInput">status_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[<a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldTimeouts">AppThreeFieldTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.property.urlInput">url_input</a></code> | <code>str</code> | *No description.* |
@@ -1094,7 +999,6 @@ appThreeField.AppThreeField.is_terraform_resource(
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.property.userNameTemplatePushStatusInput">user_name_template_push_status_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.property.userNameTemplateSuffixInput">user_name_template_suffix_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.property.userNameTemplateTypeInput">user_name_template_type_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.property.usersInput">users_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldUsers">AppThreeFieldUsers</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.property.accessibilityErrorRedirectUrl">accessibility_error_redirect_url</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.property.accessibilityLoginRedirectUrl">accessibility_login_redirect_url</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.property.accessibilitySelfService">accessibility_self_service</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
@@ -1106,7 +1010,6 @@ appThreeField.AppThreeField.is_terraform_resource(
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.property.enduserNote">enduser_note</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.property.extraFieldSelector">extra_field_selector</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.property.extraFieldValue">extra_field_value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.property.groups">groups</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.property.hideIos">hide_ios</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.property.hideWeb">hide_web</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.property.id">id</a></code> | <code>str</code> | *No description.* |
@@ -1116,8 +1019,6 @@ appThreeField.AppThreeField.is_terraform_resource(
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.property.revealPassword">reveal_password</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.property.sharedPassword">shared_password</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.property.sharedUsername">shared_username</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.property.skipGroups">skip_groups</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.property.skipUsers">skip_users</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.property.status">status</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.property.url">url</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeField.property.urlRegex">url_regex</a></code> | <code>str</code> | *No description.* |
@@ -1311,16 +1212,6 @@ timeouts: AppThreeFieldTimeoutsOutputReference
 
 ---
 
-##### `users`<sup>Required</sup> <a name="users" id="@cdktf/provider-okta.appThreeField.AppThreeField.property.users"></a>
-
-```python
-users: AppThreeFieldUsersList
-```
-
-- *Type:* <a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldUsersList">AppThreeFieldUsersList</a>
-
----
-
 ##### `accessibility_error_redirect_url_input`<sup>Optional</sup> <a name="accessibility_error_redirect_url_input" id="@cdktf/provider-okta.appThreeField.AppThreeField.property.accessibilityErrorRedirectUrlInput"></a>
 
 ```python
@@ -1431,16 +1322,6 @@ extra_field_value_input: str
 
 ---
 
-##### `groups_input`<sup>Optional</sup> <a name="groups_input" id="@cdktf/provider-okta.appThreeField.AppThreeField.property.groupsInput"></a>
-
-```python
-groups_input: typing.List[str]
-```
-
-- *Type:* typing.List[str]
-
----
-
 ##### `hide_ios_input`<sup>Optional</sup> <a name="hide_ios_input" id="@cdktf/provider-okta.appThreeField.AppThreeField.property.hideIosInput"></a>
 
 ```python
@@ -1531,26 +1412,6 @@ shared_username_input: str
 
 ---
 
-##### `skip_groups_input`<sup>Optional</sup> <a name="skip_groups_input" id="@cdktf/provider-okta.appThreeField.AppThreeField.property.skipGroupsInput"></a>
-
-```python
-skip_groups_input: typing.Union[bool, IResolvable]
-```
-
-- *Type:* typing.Union[bool, cdktf.IResolvable]
-
----
-
-##### `skip_users_input`<sup>Optional</sup> <a name="skip_users_input" id="@cdktf/provider-okta.appThreeField.AppThreeField.property.skipUsersInput"></a>
-
-```python
-skip_users_input: typing.Union[bool, IResolvable]
-```
-
-- *Type:* typing.Union[bool, cdktf.IResolvable]
-
----
-
 ##### `status_input`<sup>Optional</sup> <a name="status_input" id="@cdktf/provider-okta.appThreeField.AppThreeField.property.statusInput"></a>
 
 ```python
@@ -1638,16 +1499,6 @@ user_name_template_type_input: str
 ```
 
 - *Type:* str
-
----
-
-##### `users_input`<sup>Optional</sup> <a name="users_input" id="@cdktf/provider-okta.appThreeField.AppThreeField.property.usersInput"></a>
-
-```python
-users_input: typing.Union[IResolvable, typing.List[AppThreeFieldUsers]]
-```
-
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldUsers">AppThreeFieldUsers</a>]]
 
 ---
 
@@ -1761,16 +1612,6 @@ extra_field_value: str
 
 ---
 
-##### `groups`<sup>Required</sup> <a name="groups" id="@cdktf/provider-okta.appThreeField.AppThreeField.property.groups"></a>
-
-```python
-groups: typing.List[str]
-```
-
-- *Type:* typing.List[str]
-
----
-
 ##### `hide_ios`<sup>Required</sup> <a name="hide_ios" id="@cdktf/provider-okta.appThreeField.AppThreeField.property.hideIos"></a>
 
 ```python
@@ -1858,26 +1699,6 @@ shared_username: str
 ```
 
 - *Type:* str
-
----
-
-##### `skip_groups`<sup>Required</sup> <a name="skip_groups" id="@cdktf/provider-okta.appThreeField.AppThreeField.property.skipGroups"></a>
-
-```python
-skip_groups: typing.Union[bool, IResolvable]
-```
-
-- *Type:* typing.Union[bool, cdktf.IResolvable]
-
----
-
-##### `skip_users`<sup>Required</sup> <a name="skip_users" id="@cdktf/provider-okta.appThreeField.AppThreeField.property.skipUsers"></a>
-
-```python
-skip_users: typing.Union[bool, IResolvable]
-```
-
-- *Type:* typing.Union[bool, cdktf.IResolvable]
 
 ---
 
@@ -2011,7 +1832,6 @@ appThreeField.AppThreeFieldConfig(
   auto_submit_toolbar: typing.Union[bool, IResolvable] = None,
   credentials_scheme: str = None,
   enduser_note: str = None,
-  groups: typing.List[str] = None,
   hide_ios: typing.Union[bool, IResolvable] = None,
   hide_web: typing.Union[bool, IResolvable] = None,
   id: str = None,
@@ -2019,16 +1839,13 @@ appThreeField.AppThreeFieldConfig(
   reveal_password: typing.Union[bool, IResolvable] = None,
   shared_password: str = None,
   shared_username: str = None,
-  skip_groups: typing.Union[bool, IResolvable] = None,
-  skip_users: typing.Union[bool, IResolvable] = None,
   status: str = None,
   timeouts: AppThreeFieldTimeouts = None,
   url_regex: str = None,
   user_name_template: str = None,
   user_name_template_push_status: str = None,
   user_name_template_suffix: str = None,
-  user_name_template_type: str = None,
-  users: typing.Union[IResolvable, typing.List[AppThreeFieldUsers]] = None
+  user_name_template_type: str = None
 )
 ```
 
@@ -2058,16 +1875,13 @@ appThreeField.AppThreeFieldConfig(
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldConfig.property.autoSubmitToolbar">auto_submit_toolbar</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Display auto submit toolbar. |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldConfig.property.credentialsScheme">credentials_scheme</a></code> | <code>str</code> | Application credentials scheme. |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldConfig.property.enduserNote">enduser_note</a></code> | <code>str</code> | Application notes for end users. |
-| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldConfig.property.groups">groups</a></code> | <code>typing.List[str]</code> | Groups associated with the application. |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldConfig.property.hideIos">hide_ios</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Do not display application icon on mobile app. |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldConfig.property.hideWeb">hide_web</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Do not display application icon to users. |
-| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#id AppThreeField#id}. |
+| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_three_field#id AppThreeField#id}. |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldConfig.property.logo">logo</a></code> | <code>str</code> | Local path to logo of the application. |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldConfig.property.revealPassword">reveal_password</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Allow user to reveal password. |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldConfig.property.sharedPassword">shared_password</a></code> | <code>str</code> | Shared password, required for certain schemes. |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldConfig.property.sharedUsername">shared_username</a></code> | <code>str</code> | Shared username, required for certain schemes. |
-| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldConfig.property.skipGroups">skip_groups</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources. |
-| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldConfig.property.skipUsers">skip_users</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources. |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldConfig.property.status">status</a></code> | <code>str</code> | Status of application. |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldTimeouts">AppThreeFieldTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldConfig.property.urlRegex">url_regex</a></code> | <code>str</code> | A regex that further restricts URL to the specified regex. |
@@ -2075,7 +1889,6 @@ appThreeField.AppThreeFieldConfig(
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldConfig.property.userNameTemplatePushStatus">user_name_template_push_status</a></code> | <code>str</code> | Push username on update. |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldConfig.property.userNameTemplateSuffix">user_name_template_suffix</a></code> | <code>str</code> | Username template suffix. |
 | <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldConfig.property.userNameTemplateType">user_name_template_type</a></code> | <code>str</code> | Username template type. |
-| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldConfig.property.users">users</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldUsers">AppThreeFieldUsers</a>]]</code> | users block. |
 
 ---
 
@@ -2159,7 +1972,7 @@ button_selector: str
 
 Login button field CSS selector.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#button_selector AppThreeField#button_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_three_field#button_selector AppThreeField#button_selector}
 
 ---
 
@@ -2173,7 +1986,7 @@ extra_field_selector: str
 
 Extra field CSS selector.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#extra_field_selector AppThreeField#extra_field_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_three_field#extra_field_selector AppThreeField#extra_field_selector}
 
 ---
 
@@ -2187,7 +2000,7 @@ extra_field_value: str
 
 Value for extra form field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#extra_field_value AppThreeField#extra_field_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_three_field#extra_field_value AppThreeField#extra_field_value}
 
 ---
 
@@ -2201,7 +2014,7 @@ label: str
 
 Pretty name of app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#label AppThreeField#label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_three_field#label AppThreeField#label}
 
 ---
 
@@ -2215,7 +2028,7 @@ password_selector: str
 
 Login password field CSS selector.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#password_selector AppThreeField#password_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_three_field#password_selector AppThreeField#password_selector}
 
 ---
 
@@ -2229,7 +2042,7 @@ url: str
 
 Login URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#url AppThreeField#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_three_field#url AppThreeField#url}
 
 ---
 
@@ -2243,7 +2056,7 @@ username_selector: str
 
 Login username field CSS selector.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#username_selector AppThreeField#username_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_three_field#username_selector AppThreeField#username_selector}
 
 ---
 
@@ -2257,7 +2070,7 @@ accessibility_error_redirect_url: str
 
 Custom error page URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#accessibility_error_redirect_url AppThreeField#accessibility_error_redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_three_field#accessibility_error_redirect_url AppThreeField#accessibility_error_redirect_url}
 
 ---
 
@@ -2271,7 +2084,7 @@ accessibility_login_redirect_url: str
 
 Custom login page URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#accessibility_login_redirect_url AppThreeField#accessibility_login_redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_three_field#accessibility_login_redirect_url AppThreeField#accessibility_login_redirect_url}
 
 ---
 
@@ -2285,7 +2098,7 @@ accessibility_self_service: typing.Union[bool, IResolvable]
 
 Enable self service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#accessibility_self_service AppThreeField#accessibility_self_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_three_field#accessibility_self_service AppThreeField#accessibility_self_service}
 
 ---
 
@@ -2299,7 +2112,7 @@ admin_note: str
 
 Application notes for admins.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#admin_note AppThreeField#admin_note}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_three_field#admin_note AppThreeField#admin_note}
 
 ---
 
@@ -2313,7 +2126,7 @@ app_links_json: str
 
 Displays specific appLinks for the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#app_links_json AppThreeField#app_links_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_three_field#app_links_json AppThreeField#app_links_json}
 
 ---
 
@@ -2327,7 +2140,7 @@ auto_submit_toolbar: typing.Union[bool, IResolvable]
 
 Display auto submit toolbar.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#auto_submit_toolbar AppThreeField#auto_submit_toolbar}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_three_field#auto_submit_toolbar AppThreeField#auto_submit_toolbar}
 
 ---
 
@@ -2341,7 +2154,7 @@ credentials_scheme: str
 
 Application credentials scheme.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#credentials_scheme AppThreeField#credentials_scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_three_field#credentials_scheme AppThreeField#credentials_scheme}
 
 ---
 
@@ -2355,21 +2168,7 @@ enduser_note: str
 
 Application notes for end users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#enduser_note AppThreeField#enduser_note}
-
----
-
-##### `groups`<sup>Optional</sup> <a name="groups" id="@cdktf/provider-okta.appThreeField.AppThreeFieldConfig.property.groups"></a>
-
-```python
-groups: typing.List[str]
-```
-
-- *Type:* typing.List[str]
-
-Groups associated with the application.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#groups AppThreeField#groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_three_field#enduser_note AppThreeField#enduser_note}
 
 ---
 
@@ -2383,7 +2182,7 @@ hide_ios: typing.Union[bool, IResolvable]
 
 Do not display application icon on mobile app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#hide_ios AppThreeField#hide_ios}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_three_field#hide_ios AppThreeField#hide_ios}
 
 ---
 
@@ -2397,7 +2196,7 @@ hide_web: typing.Union[bool, IResolvable]
 
 Do not display application icon to users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#hide_web AppThreeField#hide_web}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_three_field#hide_web AppThreeField#hide_web}
 
 ---
 
@@ -2409,7 +2208,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#id AppThreeField#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_three_field#id AppThreeField#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2426,7 +2225,7 @@ logo: str
 
 Local path to logo of the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#logo AppThreeField#logo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_three_field#logo AppThreeField#logo}
 
 ---
 
@@ -2440,7 +2239,7 @@ reveal_password: typing.Union[bool, IResolvable]
 
 Allow user to reveal password.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#reveal_password AppThreeField#reveal_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_three_field#reveal_password AppThreeField#reveal_password}
 
 ---
 
@@ -2454,7 +2253,7 @@ shared_password: str
 
 Shared password, required for certain schemes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#shared_password AppThreeField#shared_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_three_field#shared_password AppThreeField#shared_password}
 
 ---
 
@@ -2468,35 +2267,7 @@ shared_username: str
 
 Shared username, required for certain schemes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#shared_username AppThreeField#shared_username}
-
----
-
-##### `skip_groups`<sup>Optional</sup> <a name="skip_groups" id="@cdktf/provider-okta.appThreeField.AppThreeFieldConfig.property.skipGroups"></a>
-
-```python
-skip_groups: typing.Union[bool, IResolvable]
-```
-
-- *Type:* typing.Union[bool, cdktf.IResolvable]
-
-Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#skip_groups AppThreeField#skip_groups}
-
----
-
-##### `skip_users`<sup>Optional</sup> <a name="skip_users" id="@cdktf/provider-okta.appThreeField.AppThreeFieldConfig.property.skipUsers"></a>
-
-```python
-skip_users: typing.Union[bool, IResolvable]
-```
-
-- *Type:* typing.Union[bool, cdktf.IResolvable]
-
-Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#skip_users AppThreeField#skip_users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_three_field#shared_username AppThreeField#shared_username}
 
 ---
 
@@ -2510,7 +2281,7 @@ status: str
 
 Status of application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#status AppThreeField#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_three_field#status AppThreeField#status}
 
 ---
 
@@ -2524,7 +2295,7 @@ timeouts: AppThreeFieldTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#timeouts AppThreeField#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_three_field#timeouts AppThreeField#timeouts}
 
 ---
 
@@ -2538,7 +2309,7 @@ url_regex: str
 
 A regex that further restricts URL to the specified regex.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#url_regex AppThreeField#url_regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_three_field#url_regex AppThreeField#url_regex}
 
 ---
 
@@ -2552,7 +2323,7 @@ user_name_template: str
 
 Username template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#user_name_template AppThreeField#user_name_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_three_field#user_name_template AppThreeField#user_name_template}
 
 ---
 
@@ -2566,7 +2337,7 @@ user_name_template_push_status: str
 
 Push username on update.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#user_name_template_push_status AppThreeField#user_name_template_push_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_three_field#user_name_template_push_status AppThreeField#user_name_template_push_status}
 
 ---
 
@@ -2580,7 +2351,7 @@ user_name_template_suffix: str
 
 Username template suffix.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#user_name_template_suffix AppThreeField#user_name_template_suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_three_field#user_name_template_suffix AppThreeField#user_name_template_suffix}
 
 ---
 
@@ -2594,21 +2365,7 @@ user_name_template_type: str
 
 Username template type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#user_name_template_type AppThreeField#user_name_template_type}
-
----
-
-##### `users`<sup>Optional</sup> <a name="users" id="@cdktf/provider-okta.appThreeField.AppThreeFieldConfig.property.users"></a>
-
-```python
-users: typing.Union[IResolvable, typing.List[AppThreeFieldUsers]]
-```
-
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldUsers">AppThreeFieldUsers</a>]]
-
-users block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#users AppThreeField#users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_three_field#user_name_template_type AppThreeField#user_name_template_type}
 
 ---
 
@@ -2630,9 +2387,9 @@ appThreeField.AppThreeFieldTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#create AppThreeField#create}. |
-| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#read AppThreeField#read}. |
-| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#update AppThreeField#update}. |
+| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_three_field#create AppThreeField#create}. |
+| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_three_field#read AppThreeField#read}. |
+| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_three_field#update AppThreeField#update}. |
 
 ---
 
@@ -2644,7 +2401,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#create AppThreeField#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_three_field#create AppThreeField#create}.
 
 ---
 
@@ -2656,7 +2413,7 @@ read: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#read AppThreeField#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_three_field#read AppThreeField#read}.
 
 ---
 
@@ -2668,76 +2425,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#update AppThreeField#update}.
-
----
-
-### AppThreeFieldUsers <a name="AppThreeFieldUsers" id="@cdktf/provider-okta.appThreeField.AppThreeFieldUsers"></a>
-
-#### Initializer <a name="Initializer" id="@cdktf/provider-okta.appThreeField.AppThreeFieldUsers.Initializer"></a>
-
-```python
-from cdktf_cdktf_provider_okta import app_three_field
-
-appThreeField.AppThreeFieldUsers(
-  id: str = None,
-  password: str = None,
-  username: str = None
-)
-```
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldUsers.property.id">id</a></code> | <code>str</code> | User ID. |
-| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldUsers.property.password">password</a></code> | <code>str</code> | Password for user application. |
-| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldUsers.property.username">username</a></code> | <code>str</code> | Username for user. |
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-okta.appThreeField.AppThreeFieldUsers.property.id"></a>
-
-```python
-id: str
-```
-
-- *Type:* str
-
-User ID.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#id AppThreeField#id}
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-
----
-
-##### `password`<sup>Optional</sup> <a name="password" id="@cdktf/provider-okta.appThreeField.AppThreeFieldUsers.property.password"></a>
-
-```python
-password: str
-```
-
-- *Type:* str
-
-Password for user application.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#password AppThreeField#password}
-
----
-
-##### `username`<sup>Optional</sup> <a name="username" id="@cdktf/provider-okta.appThreeField.AppThreeFieldUsers.property.username"></a>
-
-```python
-username: str
-```
-
-- *Type:* str
-
-Username for user.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_three_field#username AppThreeField#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_three_field#update AppThreeField#update}.
 
 ---
 
@@ -3100,549 +2788,6 @@ internal_value: typing.Union[AppThreeFieldTimeouts, IResolvable]
 ```
 
 - *Type:* typing.Union[<a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldTimeouts">AppThreeFieldTimeouts</a>, cdktf.IResolvable]
-
----
-
-
-### AppThreeFieldUsersList <a name="AppThreeFieldUsersList" id="@cdktf/provider-okta.appThreeField.AppThreeFieldUsersList"></a>
-
-#### Initializers <a name="Initializers" id="@cdktf/provider-okta.appThreeField.AppThreeFieldUsersList.Initializer"></a>
-
-```python
-from cdktf_cdktf_provider_okta import app_three_field
-
-appThreeField.AppThreeFieldUsersList(
-  terraform_resource: IInterpolatingParent,
-  terraform_attribute: str,
-  wraps_set: bool
-)
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldUsersList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldUsersList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldUsersList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
-
----
-
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-okta.appThreeField.AppThreeFieldUsersList.Initializer.parameter.terraformResource"></a>
-
-- *Type:* cdktf.IInterpolatingParent
-
-The parent resource.
-
----
-
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-okta.appThreeField.AppThreeFieldUsersList.Initializer.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
-The attribute on the parent resource this class is referencing.
-
----
-
-##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-okta.appThreeField.AppThreeFieldUsersList.Initializer.parameter.wrapsSet"></a>
-
-- *Type:* bool
-
-whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldUsersList.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldUsersList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldUsersList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldUsersList.get">get</a></code> | *No description.* |
-
----
-
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-okta.appThreeField.AppThreeFieldUsersList.computeFqn"></a>
-
-```python
-def compute_fqn() -> str
-```
-
-##### `resolve` <a name="resolve" id="@cdktf/provider-okta.appThreeField.AppThreeFieldUsersList.resolve"></a>
-
-```python
-def resolve(
-  _context: IResolveContext
-) -> typing.Any
-```
-
-Produce the Token's value at resolution time.
-
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-okta.appThreeField.AppThreeFieldUsersList.resolve.parameter._context"></a>
-
-- *Type:* cdktf.IResolveContext
-
----
-
-##### `to_string` <a name="to_string" id="@cdktf/provider-okta.appThreeField.AppThreeFieldUsersList.toString"></a>
-
-```python
-def to_string() -> str
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-##### `get` <a name="get" id="@cdktf/provider-okta.appThreeField.AppThreeFieldUsersList.get"></a>
-
-```python
-def get(
-  index: typing.Union[int, float]
-) -> AppThreeFieldUsersOutputReference
-```
-
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-okta.appThreeField.AppThreeFieldUsersList.get.parameter.index"></a>
-
-- *Type:* typing.Union[int, float]
-
-the index of the item to return.
-
----
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldUsersList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldUsersList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldUsersList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldUsers">AppThreeFieldUsers</a>]]</code> | *No description.* |
-
----
-
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-okta.appThreeField.AppThreeFieldUsersList.property.creationStack"></a>
-
-```python
-creation_stack: typing.List[str]
-```
-
-- *Type:* typing.List[str]
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-okta.appThreeField.AppThreeFieldUsersList.property.fqn"></a>
-
-```python
-fqn: str
-```
-
-- *Type:* str
-
----
-
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-okta.appThreeField.AppThreeFieldUsersList.property.internalValue"></a>
-
-```python
-internal_value: typing.Union[IResolvable, typing.List[AppThreeFieldUsers]]
-```
-
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldUsers">AppThreeFieldUsers</a>]]
-
----
-
-
-### AppThreeFieldUsersOutputReference <a name="AppThreeFieldUsersOutputReference" id="@cdktf/provider-okta.appThreeField.AppThreeFieldUsersOutputReference"></a>
-
-#### Initializers <a name="Initializers" id="@cdktf/provider-okta.appThreeField.AppThreeFieldUsersOutputReference.Initializer"></a>
-
-```python
-from cdktf_cdktf_provider_okta import app_three_field
-
-appThreeField.AppThreeFieldUsersOutputReference(
-  terraform_resource: IInterpolatingParent,
-  terraform_attribute: str,
-  complex_object_index: typing.Union[int, float],
-  complex_object_is_from_set: bool
-)
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldUsersOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldUsersOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldUsersOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldUsersOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
-
----
-
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-okta.appThreeField.AppThreeFieldUsersOutputReference.Initializer.parameter.terraformResource"></a>
-
-- *Type:* cdktf.IInterpolatingParent
-
-The parent resource.
-
----
-
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-okta.appThreeField.AppThreeFieldUsersOutputReference.Initializer.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
-The attribute on the parent resource this class is referencing.
-
----
-
-##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-okta.appThreeField.AppThreeFieldUsersOutputReference.Initializer.parameter.complexObjectIndex"></a>
-
-- *Type:* typing.Union[int, float]
-
-the index of this item in the list.
-
----
-
-##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-okta.appThreeField.AppThreeFieldUsersOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
-
-- *Type:* bool
-
-whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldUsersOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldUsersOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldUsersOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldUsersOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldUsersOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldUsersOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldUsersOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldUsersOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldUsersOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldUsersOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldUsersOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldUsersOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldUsersOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldUsersOutputReference.resetId">reset_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldUsersOutputReference.resetPassword">reset_password</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldUsersOutputReference.resetUsername">reset_username</a></code> | *No description.* |
-
----
-
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-okta.appThreeField.AppThreeFieldUsersOutputReference.computeFqn"></a>
-
-```python
-def compute_fqn() -> str
-```
-
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-okta.appThreeField.AppThreeFieldUsersOutputReference.getAnyMapAttribute"></a>
-
-```python
-def get_any_map_attribute(
-  terraform_attribute: str
-) -> typing.Mapping[typing.Any]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-okta.appThreeField.AppThreeFieldUsersOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-okta.appThreeField.AppThreeFieldUsersOutputReference.getBooleanAttribute"></a>
-
-```python
-def get_boolean_attribute(
-  terraform_attribute: str
-) -> IResolvable
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-okta.appThreeField.AppThreeFieldUsersOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-okta.appThreeField.AppThreeFieldUsersOutputReference.getBooleanMapAttribute"></a>
-
-```python
-def get_boolean_map_attribute(
-  terraform_attribute: str
-) -> typing.Mapping[bool]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-okta.appThreeField.AppThreeFieldUsersOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-okta.appThreeField.AppThreeFieldUsersOutputReference.getListAttribute"></a>
-
-```python
-def get_list_attribute(
-  terraform_attribute: str
-) -> typing.List[str]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-okta.appThreeField.AppThreeFieldUsersOutputReference.getListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-okta.appThreeField.AppThreeFieldUsersOutputReference.getNumberAttribute"></a>
-
-```python
-def get_number_attribute(
-  terraform_attribute: str
-) -> typing.Union[int, float]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-okta.appThreeField.AppThreeFieldUsersOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-okta.appThreeField.AppThreeFieldUsersOutputReference.getNumberListAttribute"></a>
-
-```python
-def get_number_list_attribute(
-  terraform_attribute: str
-) -> typing.List[typing.Union[int, float]]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-okta.appThreeField.AppThreeFieldUsersOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-okta.appThreeField.AppThreeFieldUsersOutputReference.getNumberMapAttribute"></a>
-
-```python
-def get_number_map_attribute(
-  terraform_attribute: str
-) -> typing.Mapping[typing.Union[int, float]]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-okta.appThreeField.AppThreeFieldUsersOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-okta.appThreeField.AppThreeFieldUsersOutputReference.getStringAttribute"></a>
-
-```python
-def get_string_attribute(
-  terraform_attribute: str
-) -> str
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-okta.appThreeField.AppThreeFieldUsersOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-okta.appThreeField.AppThreeFieldUsersOutputReference.getStringMapAttribute"></a>
-
-```python
-def get_string_map_attribute(
-  terraform_attribute: str
-) -> typing.Mapping[str]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-okta.appThreeField.AppThreeFieldUsersOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-okta.appThreeField.AppThreeFieldUsersOutputReference.interpolationForAttribute"></a>
-
-```python
-def interpolation_for_attribute(
-  property: str
-) -> IResolvable
-```
-
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-okta.appThreeField.AppThreeFieldUsersOutputReference.interpolationForAttribute.parameter.property"></a>
-
-- *Type:* str
-
----
-
-##### `resolve` <a name="resolve" id="@cdktf/provider-okta.appThreeField.AppThreeFieldUsersOutputReference.resolve"></a>
-
-```python
-def resolve(
-  _context: IResolveContext
-) -> typing.Any
-```
-
-Produce the Token's value at resolution time.
-
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-okta.appThreeField.AppThreeFieldUsersOutputReference.resolve.parameter._context"></a>
-
-- *Type:* cdktf.IResolveContext
-
----
-
-##### `to_string` <a name="to_string" id="@cdktf/provider-okta.appThreeField.AppThreeFieldUsersOutputReference.toString"></a>
-
-```python
-def to_string() -> str
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-okta.appThreeField.AppThreeFieldUsersOutputReference.resetId"></a>
-
-```python
-def reset_id() -> None
-```
-
-##### `reset_password` <a name="reset_password" id="@cdktf/provider-okta.appThreeField.AppThreeFieldUsersOutputReference.resetPassword"></a>
-
-```python
-def reset_password() -> None
-```
-
-##### `reset_username` <a name="reset_username" id="@cdktf/provider-okta.appThreeField.AppThreeFieldUsersOutputReference.resetUsername"></a>
-
-```python
-def reset_username() -> None
-```
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldUsersOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldUsersOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldUsersOutputReference.property.scope">scope</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldUsersOutputReference.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldUsersOutputReference.property.passwordInput">password_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldUsersOutputReference.property.usernameInput">username_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldUsersOutputReference.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldUsersOutputReference.property.password">password</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldUsersOutputReference.property.username">username</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldUsersOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldUsers">AppThreeFieldUsers</a>, cdktf.IResolvable]</code> | *No description.* |
-
----
-
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-okta.appThreeField.AppThreeFieldUsersOutputReference.property.creationStack"></a>
-
-```python
-creation_stack: typing.List[str]
-```
-
-- *Type:* typing.List[str]
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-okta.appThreeField.AppThreeFieldUsersOutputReference.property.fqn"></a>
-
-```python
-fqn: str
-```
-
-- *Type:* str
-
----
-
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-okta.appThreeField.AppThreeFieldUsersOutputReference.property.scope"></a>
-
-```python
-scope: str
-```
-
-- *Type:* str
-
----
-
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-okta.appThreeField.AppThreeFieldUsersOutputReference.property.idInput"></a>
-
-```python
-id_input: str
-```
-
-- *Type:* str
-
----
-
-##### `password_input`<sup>Optional</sup> <a name="password_input" id="@cdktf/provider-okta.appThreeField.AppThreeFieldUsersOutputReference.property.passwordInput"></a>
-
-```python
-password_input: str
-```
-
-- *Type:* str
-
----
-
-##### `username_input`<sup>Optional</sup> <a name="username_input" id="@cdktf/provider-okta.appThreeField.AppThreeFieldUsersOutputReference.property.usernameInput"></a>
-
-```python
-username_input: str
-```
-
-- *Type:* str
-
----
-
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-okta.appThreeField.AppThreeFieldUsersOutputReference.property.id"></a>
-
-```python
-id: str
-```
-
-- *Type:* str
-
----
-
-##### `password`<sup>Required</sup> <a name="password" id="@cdktf/provider-okta.appThreeField.AppThreeFieldUsersOutputReference.property.password"></a>
-
-```python
-password: str
-```
-
-- *Type:* str
-
----
-
-##### `username`<sup>Required</sup> <a name="username" id="@cdktf/provider-okta.appThreeField.AppThreeFieldUsersOutputReference.property.username"></a>
-
-```python
-username: str
-```
-
-- *Type:* str
-
----
-
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-okta.appThreeField.AppThreeFieldUsersOutputReference.property.internalValue"></a>
-
-```python
-internal_value: typing.Union[AppThreeFieldUsers, IResolvable]
-```
-
-- *Type:* typing.Union[<a href="#@cdktf/provider-okta.appThreeField.AppThreeFieldUsers">AppThreeFieldUsers</a>, cdktf.IResolvable]
 
 ---
 

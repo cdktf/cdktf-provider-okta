@@ -1,6 +1,6 @@
 # `okta_link_value`
 
-Refer to the Terraform Registory for docs: [`okta_link_value`](https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/link_value).
+Refer to the Terraform Registory for docs: [`okta_link_value`](https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/link_value).
 
 # `linkValue` Submodule <a name="`linkValue` Submodule" id="@cdktf/provider-okta.linkValue"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`okta_link_value`](https://registry.
 
 ### LinkValue <a name="LinkValue" id="@cdktf/provider-okta.linkValue.LinkValue"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/link_value okta_link_value}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/link_value okta_link_value}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.linkValue.LinkValue.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/linkvalue"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/linkvalue"
 
 linkvalue.NewLinkValue(scope Construct, id *string, config LinkValueConfig) LinkValue
 ```
@@ -284,7 +284,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.linkValue.LinkValue.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/linkvalue"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/linkvalue"
 
 linkvalue.LinkValue_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.linkValue.LinkValue.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/linkvalue"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/linkvalue"
 
 linkvalue.LinkValue_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ linkvalue.LinkValue_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.linkValue.LinkValue.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/linkvalue"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/linkvalue"
 
 linkvalue.LinkValue_IsTerraformResource(x interface{}) *bool
 ```
@@ -617,7 +617,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.linkValue.LinkValueConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/linkvalue"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/linkvalue"
 
 &linkvalue.LinkValueConfig {
 	Connection: interface{},
@@ -648,7 +648,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/linkvalue"
 | <code><a href="#@cdktf/provider-okta.linkValue.LinkValueConfig.property.primaryName">PrimaryName</a></code> | <code>*string</code> | Name of the 'primary' relationship being assigned. |
 | <code><a href="#@cdktf/provider-okta.linkValue.LinkValueConfig.property.primaryUserId">PrimaryUserId</a></code> | <code>*string</code> | User ID to be assigned to 'primary' for the 'associated' user in the specified relationship. |
 | <code><a href="#@cdktf/provider-okta.linkValue.LinkValueConfig.property.associatedUserIds">AssociatedUserIds</a></code> | <code>*[]*string</code> | Set of User IDs or login values of the users to be assigned the 'associated' relationship. |
-| <code><a href="#@cdktf/provider-okta.linkValue.LinkValueConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/link_value#id LinkValue#id}. |
+| <code><a href="#@cdktf/provider-okta.linkValue.LinkValueConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/link_value#id LinkValue#id}. |
 
 ---
 
@@ -732,7 +732,7 @@ PrimaryName *string
 
 Name of the 'primary' relationship being assigned.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/link_value#primary_name LinkValue#primary_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/link_value#primary_name LinkValue#primary_name}
 
 ---
 
@@ -746,7 +746,7 @@ PrimaryUserId *string
 
 User ID to be assigned to 'primary' for the 'associated' user in the specified relationship.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/link_value#primary_user_id LinkValue#primary_user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/link_value#primary_user_id LinkValue#primary_user_id}
 
 ---
 
@@ -760,7 +760,7 @@ AssociatedUserIds *[]*string
 
 Set of User IDs or login values of the users to be assigned the 'associated' relationship.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/link_value#associated_user_ids LinkValue#associated_user_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/link_value#associated_user_ids LinkValue#associated_user_ids}
 
 ---
 
@@ -772,7 +772,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/link_value#id LinkValue#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/link_value#id LinkValue#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

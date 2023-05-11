@@ -1,6 +1,6 @@
 # `okta_app_oauth`
 
-Refer to the Terraform Registory for docs: [`okta_app_oauth`](https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth).
+Refer to the Terraform Registory for docs: [`okta_app_oauth`](https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth).
 
 # `appOauth` Submodule <a name="`appOauth` Submodule" id="@cdktf/provider-okta.appOauth"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`okta_app_oauth`](https://registry.t
 
 ### AppOauth <a name="AppOauth" id="@cdktf/provider-okta.appOauth.AppOauth"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth okta_app_oauth}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth okta_app_oauth}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appOauth.AppOauth.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/appoauth"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appoauth"
 
 appoauth.NewAppOauth(scope Construct, id *string, config AppOauthConfig) AppOauth
 ```
@@ -73,7 +73,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.putGroupsClaim">PutGroupsClaim</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.putJwks">PutJwks</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.putTimeouts">PutTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.putUsers">PutUsers</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.resetAccessibilityErrorRedirectUrl">ResetAccessibilityErrorRedirectUrl</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.resetAccessibilityLoginRedirectUrl">ResetAccessibilityLoginRedirectUrl</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.resetAccessibilitySelfService">ResetAccessibilitySelfService</a></code> | *No description.* |
@@ -87,10 +86,8 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.resetClientId">ResetClientId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.resetClientUri">ResetClientUri</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.resetConsentMethod">ResetConsentMethod</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.resetCustomClientId">ResetCustomClientId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.resetEnduserNote">ResetEnduserNote</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.resetGrantTypes">ResetGrantTypes</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.resetGroups">ResetGroups</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.resetGroupsClaim">ResetGroupsClaim</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.resetHideIos">ResetHideIos</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.resetHideWeb">ResetHideWeb</a></code> | *No description.* |
@@ -112,8 +109,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.resetRefreshTokenLeeway">ResetRefreshTokenLeeway</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.resetRefreshTokenRotation">ResetRefreshTokenRotation</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.resetResponseTypes">ResetResponseTypes</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.resetSkipGroups">ResetSkipGroups</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.resetSkipUsers">ResetSkipUsers</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.resetStatus">ResetStatus</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.resetTokenEndpointAuthMethod">ResetTokenEndpointAuthMethod</a></code> | *No description.* |
@@ -122,7 +117,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.resetUserNameTemplatePushStatus">ResetUserNameTemplatePushStatus</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.resetUserNameTemplateSuffix">ResetUserNameTemplateSuffix</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.resetUserNameTemplateType">ResetUserNameTemplateType</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.resetUsers">ResetUsers</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.resetWildcardRedirect">ResetWildcardRedirect</a></code> | *No description.* |
 
 ---
@@ -347,18 +341,6 @@ func PutTimeouts(value AppOauthTimeouts)
 
 ---
 
-##### `PutUsers` <a name="PutUsers" id="@cdktf/provider-okta.appOauth.AppOauth.putUsers"></a>
-
-```go
-func PutUsers(value interface{})
-```
-
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-okta.appOauth.AppOauth.putUsers.parameter.value"></a>
-
-- *Type:* interface{}
-
----
-
 ##### `ResetAccessibilityErrorRedirectUrl` <a name="ResetAccessibilityErrorRedirectUrl" id="@cdktf/provider-okta.appOauth.AppOauth.resetAccessibilityErrorRedirectUrl"></a>
 
 ```go
@@ -437,12 +419,6 @@ func ResetClientUri()
 func ResetConsentMethod()
 ```
 
-##### `ResetCustomClientId` <a name="ResetCustomClientId" id="@cdktf/provider-okta.appOauth.AppOauth.resetCustomClientId"></a>
-
-```go
-func ResetCustomClientId()
-```
-
 ##### `ResetEnduserNote` <a name="ResetEnduserNote" id="@cdktf/provider-okta.appOauth.AppOauth.resetEnduserNote"></a>
 
 ```go
@@ -453,12 +429,6 @@ func ResetEnduserNote()
 
 ```go
 func ResetGrantTypes()
-```
-
-##### `ResetGroups` <a name="ResetGroups" id="@cdktf/provider-okta.appOauth.AppOauth.resetGroups"></a>
-
-```go
-func ResetGroups()
 ```
 
 ##### `ResetGroupsClaim` <a name="ResetGroupsClaim" id="@cdktf/provider-okta.appOauth.AppOauth.resetGroupsClaim"></a>
@@ -587,18 +557,6 @@ func ResetRefreshTokenRotation()
 func ResetResponseTypes()
 ```
 
-##### `ResetSkipGroups` <a name="ResetSkipGroups" id="@cdktf/provider-okta.appOauth.AppOauth.resetSkipGroups"></a>
-
-```go
-func ResetSkipGroups()
-```
-
-##### `ResetSkipUsers` <a name="ResetSkipUsers" id="@cdktf/provider-okta.appOauth.AppOauth.resetSkipUsers"></a>
-
-```go
-func ResetSkipUsers()
-```
-
 ##### `ResetStatus` <a name="ResetStatus" id="@cdktf/provider-okta.appOauth.AppOauth.resetStatus"></a>
 
 ```go
@@ -647,12 +605,6 @@ func ResetUserNameTemplateSuffix()
 func ResetUserNameTemplateType()
 ```
 
-##### `ResetUsers` <a name="ResetUsers" id="@cdktf/provider-okta.appOauth.AppOauth.resetUsers"></a>
-
-```go
-func ResetUsers()
-```
-
 ##### `ResetWildcardRedirect` <a name="ResetWildcardRedirect" id="@cdktf/provider-okta.appOauth.AppOauth.resetWildcardRedirect"></a>
 
 ```go
@@ -672,7 +624,7 @@ func ResetWildcardRedirect()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.appOauth.AppOauth.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/appoauth"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appoauth"
 
 appoauth.AppOauth_IsConstruct(x interface{}) *bool
 ```
@@ -704,7 +656,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.appOauth.AppOauth.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/appoauth"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appoauth"
 
 appoauth.AppOauth_IsTerraformElement(x interface{}) *bool
 ```
@@ -718,7 +670,7 @@ appoauth.AppOauth_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.appOauth.AppOauth.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/appoauth"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appoauth"
 
 appoauth.AppOauth_IsTerraformResource(x interface{}) *bool
 ```
@@ -754,7 +706,6 @@ appoauth.AppOauth_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.signOnMode">SignOnMode</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthTimeoutsOutputReference">AppOauthTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.users">Users</a></code> | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthUsersList">AppOauthUsersList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.accessibilityErrorRedirectUrlInput">AccessibilityErrorRedirectUrlInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.accessibilityLoginRedirectUrlInput">AccessibilityLoginRedirectUrlInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.accessibilitySelfServiceInput">AccessibilitySelfServiceInput</a></code> | <code>interface{}</code> | *No description.* |
@@ -768,11 +719,9 @@ appoauth.AppOauth_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.clientIdInput">ClientIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.clientUriInput">ClientUriInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.consentMethodInput">ConsentMethodInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.customClientIdInput">CustomClientIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.enduserNoteInput">EnduserNoteInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.grantTypesInput">GrantTypesInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.groupsClaimInput">GroupsClaimInput</a></code> | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthGroupsClaim">AppOauthGroupsClaim</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.groupsInput">GroupsInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.hideIosInput">HideIosInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.hideWebInput">HideWebInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
@@ -794,8 +743,6 @@ appoauth.AppOauth_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.refreshTokenLeewayInput">RefreshTokenLeewayInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.refreshTokenRotationInput">RefreshTokenRotationInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.responseTypesInput">ResponseTypesInput</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.skipGroupsInput">SkipGroupsInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.skipUsersInput">SkipUsersInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.statusInput">StatusInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.tokenEndpointAuthMethodInput">TokenEndpointAuthMethodInput</a></code> | <code>*string</code> | *No description.* |
@@ -805,7 +752,6 @@ appoauth.AppOauth_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.userNameTemplatePushStatusInput">UserNameTemplatePushStatusInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.userNameTemplateSuffixInput">UserNameTemplateSuffixInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.userNameTemplateTypeInput">UserNameTemplateTypeInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.usersInput">UsersInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.wildcardRedirectInput">WildcardRedirectInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.accessibilityErrorRedirectUrl">AccessibilityErrorRedirectUrl</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.accessibilityLoginRedirectUrl">AccessibilityLoginRedirectUrl</a></code> | <code>*string</code> | *No description.* |
@@ -820,10 +766,8 @@ appoauth.AppOauth_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.clientId">ClientId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.clientUri">ClientUri</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.consentMethod">ConsentMethod</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.customClientId">CustomClientId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.enduserNote">EnduserNote</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.grantTypes">GrantTypes</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.groups">Groups</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.hideIos">HideIos</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.hideWeb">HideWeb</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.id">Id</a></code> | <code>*string</code> | *No description.* |
@@ -844,8 +788,6 @@ appoauth.AppOauth_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.refreshTokenLeeway">RefreshTokenLeeway</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.refreshTokenRotation">RefreshTokenRotation</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.responseTypes">ResponseTypes</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.skipGroups">SkipGroups</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.skipUsers">SkipUsers</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.status">Status</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.tokenEndpointAuthMethod">TokenEndpointAuthMethod</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.tosUri">TosUri</a></code> | <code>*string</code> | *No description.* |
@@ -1070,16 +1012,6 @@ func Timeouts() AppOauthTimeoutsOutputReference
 
 ---
 
-##### `Users`<sup>Required</sup> <a name="Users" id="@cdktf/provider-okta.appOauth.AppOauth.property.users"></a>
-
-```go
-func Users() AppOauthUsersList
-```
-
-- *Type:* <a href="#@cdktf/provider-okta.appOauth.AppOauthUsersList">AppOauthUsersList</a>
-
----
-
 ##### `AccessibilityErrorRedirectUrlInput`<sup>Optional</sup> <a name="AccessibilityErrorRedirectUrlInput" id="@cdktf/provider-okta.appOauth.AppOauth.property.accessibilityErrorRedirectUrlInput"></a>
 
 ```go
@@ -1210,16 +1142,6 @@ func ConsentMethodInput() *string
 
 ---
 
-##### `CustomClientIdInput`<sup>Optional</sup> <a name="CustomClientIdInput" id="@cdktf/provider-okta.appOauth.AppOauth.property.customClientIdInput"></a>
-
-```go
-func CustomClientIdInput() *string
-```
-
-- *Type:* *string
-
----
-
 ##### `EnduserNoteInput`<sup>Optional</sup> <a name="EnduserNoteInput" id="@cdktf/provider-okta.appOauth.AppOauth.property.enduserNoteInput"></a>
 
 ```go
@@ -1247,16 +1169,6 @@ func GroupsClaimInput() AppOauthGroupsClaim
 ```
 
 - *Type:* <a href="#@cdktf/provider-okta.appOauth.AppOauthGroupsClaim">AppOauthGroupsClaim</a>
-
----
-
-##### `GroupsInput`<sup>Optional</sup> <a name="GroupsInput" id="@cdktf/provider-okta.appOauth.AppOauth.property.groupsInput"></a>
-
-```go
-func GroupsInput() *[]*string
-```
-
-- *Type:* *[]*string
 
 ---
 
@@ -1470,26 +1382,6 @@ func ResponseTypesInput() *[]*string
 
 ---
 
-##### `SkipGroupsInput`<sup>Optional</sup> <a name="SkipGroupsInput" id="@cdktf/provider-okta.appOauth.AppOauth.property.skipGroupsInput"></a>
-
-```go
-func SkipGroupsInput() interface{}
-```
-
-- *Type:* interface{}
-
----
-
-##### `SkipUsersInput`<sup>Optional</sup> <a name="SkipUsersInput" id="@cdktf/provider-okta.appOauth.AppOauth.property.skipUsersInput"></a>
-
-```go
-func SkipUsersInput() interface{}
-```
-
-- *Type:* interface{}
-
----
-
 ##### `StatusInput`<sup>Optional</sup> <a name="StatusInput" id="@cdktf/provider-okta.appOauth.AppOauth.property.statusInput"></a>
 
 ```go
@@ -1577,16 +1469,6 @@ func UserNameTemplateTypeInput() *string
 ```
 
 - *Type:* *string
-
----
-
-##### `UsersInput`<sup>Optional</sup> <a name="UsersInput" id="@cdktf/provider-okta.appOauth.AppOauth.property.usersInput"></a>
-
-```go
-func UsersInput() interface{}
-```
-
-- *Type:* interface{}
 
 ---
 
@@ -1730,16 +1612,6 @@ func ConsentMethod() *string
 
 ---
 
-##### `CustomClientId`<sup>Required</sup> <a name="CustomClientId" id="@cdktf/provider-okta.appOauth.AppOauth.property.customClientId"></a>
-
-```go
-func CustomClientId() *string
-```
-
-- *Type:* *string
-
----
-
 ##### `EnduserNote`<sup>Required</sup> <a name="EnduserNote" id="@cdktf/provider-okta.appOauth.AppOauth.property.enduserNote"></a>
 
 ```go
@@ -1754,16 +1626,6 @@ func EnduserNote() *string
 
 ```go
 func GrantTypes() *[]*string
-```
-
-- *Type:* *[]*string
-
----
-
-##### `Groups`<sup>Required</sup> <a name="Groups" id="@cdktf/provider-okta.appOauth.AppOauth.property.groups"></a>
-
-```go
-func Groups() *[]*string
 ```
 
 - *Type:* *[]*string
@@ -1970,26 +1832,6 @@ func ResponseTypes() *[]*string
 
 ---
 
-##### `SkipGroups`<sup>Required</sup> <a name="SkipGroups" id="@cdktf/provider-okta.appOauth.AppOauth.property.skipGroups"></a>
-
-```go
-func SkipGroups() interface{}
-```
-
-- *Type:* interface{}
-
----
-
-##### `SkipUsers`<sup>Required</sup> <a name="SkipUsers" id="@cdktf/provider-okta.appOauth.AppOauth.property.skipUsers"></a>
-
-```go
-func SkipUsers() interface{}
-```
-
-- *Type:* interface{}
-
----
-
 ##### `Status`<sup>Required</sup> <a name="Status" id="@cdktf/provider-okta.appOauth.AppOauth.property.status"></a>
 
 ```go
@@ -2105,7 +1947,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.appOauth.AppOauthConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/appoauth"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appoauth"
 
 &appoauth.AppOauthConfig {
 	Connection: interface{},
@@ -2130,11 +1972,9 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/appoauth"
 	ClientId: *string,
 	ClientUri: *string,
 	ConsentMethod: *string,
-	CustomClientId: *string,
 	EnduserNote: *string,
 	GrantTypes: *[]*string,
-	Groups: *[]*string,
-	GroupsClaim: github.com/cdktf/cdktf-provider-okta-go/okta/v7.appOauth.AppOauthGroupsClaim,
+	GroupsClaim: github.com/cdktf/cdktf-provider-okta-go/okta.appOauth.AppOauthGroupsClaim,
 	HideIos: interface{},
 	HideWeb: interface{},
 	Id: *string,
@@ -2155,17 +1995,14 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/appoauth"
 	RefreshTokenLeeway: *f64,
 	RefreshTokenRotation: *string,
 	ResponseTypes: *[]*string,
-	SkipGroups: interface{},
-	SkipUsers: interface{},
 	Status: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-okta-go/okta/v7.appOauth.AppOauthTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-okta-go/okta.appOauth.AppOauthTimeouts,
 	TokenEndpointAuthMethod: *string,
 	TosUri: *string,
 	UserNameTemplate: *string,
 	UserNameTemplatePushStatus: *string,
 	UserNameTemplateSuffix: *string,
 	UserNameTemplateType: *string,
-	Users: interface{},
 	WildcardRedirect: *string,
 }
 ```
@@ -2196,14 +2033,12 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/appoauth"
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.clientId">ClientId</a></code> | <code>*string</code> | OAuth client ID. If set during creation, app is created with this id. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.clientUri">ClientUri</a></code> | <code>*string</code> | URI to a web page providing information about the client. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.consentMethod">ConsentMethod</a></code> | <code>*string</code> | *Early Access Property*. Indicates whether user consent is required or implicit. Valid values: REQUIRED, TRUSTED. Default value is TRUSTED. |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.customClientId">CustomClientId</a></code> | <code>*string</code> | **Deprecated** This property allows you to set your client_id during creation. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.enduserNote">EnduserNote</a></code> | <code>*string</code> | Application notes for end users. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.grantTypes">GrantTypes</a></code> | <code>*[]*string</code> | List of OAuth 2.0 grant types. Conditional validation params found here https://developer.okta.com/docs/api/resources/apps#credentials-settings-details. Defaults to minimum requirements per app type. |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.groups">Groups</a></code> | <code>*[]*string</code> | Groups associated with the application. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.groupsClaim">GroupsClaim</a></code> | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthGroupsClaim">AppOauthGroupsClaim</a></code> | groups_claim block. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.hideIos">HideIos</a></code> | <code>interface{}</code> | Do not display application icon on mobile app. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.hideWeb">HideWeb</a></code> | <code>interface{}</code> | Do not display application icon to users. |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth#id AppOauth#id}. |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#id AppOauth#id}. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.implicitAssignment">ImplicitAssignment</a></code> | <code>interface{}</code> | *Early Access Property*. Enable Federation Broker Mode. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.issuerMode">IssuerMode</a></code> | <code>*string</code> | *Early Access Property*. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.jwks">Jwks</a></code> | <code>interface{}</code> | jwks block. |
@@ -2221,8 +2056,6 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/appoauth"
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.refreshTokenLeeway">RefreshTokenLeeway</a></code> | <code>*f64</code> | *Early Access Property* Grace period for token rotation. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.refreshTokenRotation">RefreshTokenRotation</a></code> | <code>*string</code> | *Early Access Property* Refresh token rotation behavior. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.responseTypes">ResponseTypes</a></code> | <code>*[]*string</code> | List of OAuth 2.0 response type strings. |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.skipGroups">SkipGroups</a></code> | <code>interface{}</code> | Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources. |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.skipUsers">SkipUsers</a></code> | <code>interface{}</code> | Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.status">Status</a></code> | <code>*string</code> | Status of application. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthTimeouts">AppOauthTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.tokenEndpointAuthMethod">TokenEndpointAuthMethod</a></code> | <code>*string</code> | Requested authentication method for the token endpoint. |
@@ -2231,7 +2064,6 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/appoauth"
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.userNameTemplatePushStatus">UserNameTemplatePushStatus</a></code> | <code>*string</code> | Push username on update. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.userNameTemplateSuffix">UserNameTemplateSuffix</a></code> | <code>*string</code> | Username template suffix. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.userNameTemplateType">UserNameTemplateType</a></code> | <code>*string</code> | Username template type. |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.users">Users</a></code> | <code>interface{}</code> | users block. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.wildcardRedirect">WildcardRedirect</a></code> | <code>*string</code> | *Early Access Property*. Indicates if the client is allowed to use wildcard matching of redirect_uris. |
 
 ---
@@ -2316,7 +2148,7 @@ Label *string
 
 Pretty name of app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth#label AppOauth#label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#label AppOauth#label}
 
 ---
 
@@ -2330,7 +2162,7 @@ Type *string
 
 The type of client application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth#type AppOauth#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#type AppOauth#type}
 
 ---
 
@@ -2344,7 +2176,7 @@ AccessibilityErrorRedirectUrl *string
 
 Custom error page URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth#accessibility_error_redirect_url AppOauth#accessibility_error_redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#accessibility_error_redirect_url AppOauth#accessibility_error_redirect_url}
 
 ---
 
@@ -2358,7 +2190,7 @@ AccessibilityLoginRedirectUrl *string
 
 Custom login page URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth#accessibility_login_redirect_url AppOauth#accessibility_login_redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#accessibility_login_redirect_url AppOauth#accessibility_login_redirect_url}
 
 ---
 
@@ -2372,7 +2204,7 @@ AccessibilitySelfService interface{}
 
 Enable self service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth#accessibility_self_service AppOauth#accessibility_self_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#accessibility_self_service AppOauth#accessibility_self_service}
 
 ---
 
@@ -2386,7 +2218,7 @@ AdminNote *string
 
 Application notes for admins.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth#admin_note AppOauth#admin_note}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#admin_note AppOauth#admin_note}
 
 ---
 
@@ -2400,7 +2232,7 @@ AppLinksJson *string
 
 Displays specific appLinks for the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth#app_links_json AppOauth#app_links_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#app_links_json AppOauth#app_links_json}
 
 ---
 
@@ -2414,7 +2246,7 @@ AppSettingsJson *string
 
 Application settings in JSON format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth#app_settings_json AppOauth#app_settings_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#app_settings_json AppOauth#app_settings_json}
 
 ---
 
@@ -2428,7 +2260,7 @@ AuthenticationPolicy *string
 
 Id of this apps authentication policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth#authentication_policy AppOauth#authentication_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#authentication_policy AppOauth#authentication_policy}
 
 ---
 
@@ -2442,7 +2274,7 @@ AutoKeyRotation interface{}
 
 Requested key rotation mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth#auto_key_rotation AppOauth#auto_key_rotation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#auto_key_rotation AppOauth#auto_key_rotation}
 
 ---
 
@@ -2456,7 +2288,7 @@ AutoSubmitToolbar interface{}
 
 Display auto submit toolbar.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth#auto_submit_toolbar AppOauth#auto_submit_toolbar}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#auto_submit_toolbar AppOauth#auto_submit_toolbar}
 
 ---
 
@@ -2470,7 +2302,7 @@ ClientBasicSecret *string
 
 OAuth client secret key, this can be set when token_endpoint_auth_method is client_secret_basic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth#client_basic_secret AppOauth#client_basic_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#client_basic_secret AppOauth#client_basic_secret}
 
 ---
 
@@ -2484,7 +2316,7 @@ ClientId *string
 
 OAuth client ID. If set during creation, app is created with this id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth#client_id AppOauth#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#client_id AppOauth#client_id}
 
 ---
 
@@ -2498,7 +2330,7 @@ ClientUri *string
 
 URI to a web page providing information about the client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth#client_uri AppOauth#client_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#client_uri AppOauth#client_uri}
 
 ---
 
@@ -2512,23 +2344,7 @@ ConsentMethod *string
 
 *Early Access Property*. Indicates whether user consent is required or implicit. Valid values: REQUIRED, TRUSTED. Default value is TRUSTED.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth#consent_method AppOauth#consent_method}
-
----
-
-##### `CustomClientId`<sup>Optional</sup> <a name="CustomClientId" id="@cdktf/provider-okta.appOauth.AppOauthConfig.property.customClientId"></a>
-
-```go
-CustomClientId *string
-```
-
-- *Type:* *string
-
-**Deprecated** This property allows you to set your client_id during creation.
-
-NOTE: updating after creation will be a no-op, use client_id for that behavior instead.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth#custom_client_id AppOauth#custom_client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#consent_method AppOauth#consent_method}
 
 ---
 
@@ -2542,7 +2358,7 @@ EnduserNote *string
 
 Application notes for end users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth#enduser_note AppOauth#enduser_note}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#enduser_note AppOauth#enduser_note}
 
 ---
 
@@ -2556,21 +2372,7 @@ GrantTypes *[]*string
 
 List of OAuth 2.0 grant types. Conditional validation params found here https://developer.okta.com/docs/api/resources/apps#credentials-settings-details. Defaults to minimum requirements per app type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth#grant_types AppOauth#grant_types}
-
----
-
-##### `Groups`<sup>Optional</sup> <a name="Groups" id="@cdktf/provider-okta.appOauth.AppOauthConfig.property.groups"></a>
-
-```go
-Groups *[]*string
-```
-
-- *Type:* *[]*string
-
-Groups associated with the application.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth#groups AppOauth#groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#grant_types AppOauth#grant_types}
 
 ---
 
@@ -2584,7 +2386,7 @@ GroupsClaim AppOauthGroupsClaim
 
 groups_claim block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth#groups_claim AppOauth#groups_claim}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#groups_claim AppOauth#groups_claim}
 
 ---
 
@@ -2598,7 +2400,7 @@ HideIos interface{}
 
 Do not display application icon on mobile app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth#hide_ios AppOauth#hide_ios}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#hide_ios AppOauth#hide_ios}
 
 ---
 
@@ -2612,7 +2414,7 @@ HideWeb interface{}
 
 Do not display application icon to users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth#hide_web AppOauth#hide_web}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#hide_web AppOauth#hide_web}
 
 ---
 
@@ -2624,7 +2426,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth#id AppOauth#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#id AppOauth#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2641,7 +2443,7 @@ ImplicitAssignment interface{}
 
 *Early Access Property*. Enable Federation Broker Mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth#implicit_assignment AppOauth#implicit_assignment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#implicit_assignment AppOauth#implicit_assignment}
 
 ---
 
@@ -2657,7 +2459,7 @@ IssuerMode *string
 
 Indicates whether the Okta Authorization Server uses the original Okta org domain URL or a custom domain URL as the issuer of ID token for this client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth#issuer_mode AppOauth#issuer_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#issuer_mode AppOauth#issuer_mode}
 
 ---
 
@@ -2671,7 +2473,7 @@ Jwks interface{}
 
 jwks block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth#jwks AppOauth#jwks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#jwks AppOauth#jwks}
 
 ---
 
@@ -2685,7 +2487,7 @@ LoginMode *string
 
 The type of Idp-Initiated login that the client supports, if any.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth#login_mode AppOauth#login_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#login_mode AppOauth#login_mode}
 
 ---
 
@@ -2699,7 +2501,7 @@ LoginScopes *[]*string
 
 List of scopes to use for the request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth#login_scopes AppOauth#login_scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#login_scopes AppOauth#login_scopes}
 
 ---
 
@@ -2713,7 +2515,7 @@ LoginUri *string
 
 URI that initiates login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth#login_uri AppOauth#login_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#login_uri AppOauth#login_uri}
 
 ---
 
@@ -2727,7 +2529,7 @@ Logo *string
 
 Local path to logo of the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth#logo AppOauth#logo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#logo AppOauth#logo}
 
 ---
 
@@ -2741,7 +2543,7 @@ LogoUri *string
 
 URI that references a logo for the client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth#logo_uri AppOauth#logo_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#logo_uri AppOauth#logo_uri}
 
 ---
 
@@ -2757,7 +2559,7 @@ This tells the provider not to persist the application's secret to state.
 
 If this is ever changes from true => false your app will be recreated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth#omit_secret AppOauth#omit_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#omit_secret AppOauth#omit_secret}
 
 ---
 
@@ -2771,7 +2573,7 @@ PkceRequired interface{}
 
 Require Proof Key for Code Exchange (PKCE) for additional verification key rotation mode. See: https://developer.okta.com/docs/reference/api/apps/#oauth-credential-object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth#pkce_required AppOauth#pkce_required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#pkce_required AppOauth#pkce_required}
 
 ---
 
@@ -2785,7 +2587,7 @@ PolicyUri *string
 
 URI to web page providing client policy document.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth#policy_uri AppOauth#policy_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#policy_uri AppOauth#policy_uri}
 
 ---
 
@@ -2799,7 +2601,7 @@ PostLogoutRedirectUris *[]*string
 
 List of URIs for redirection after logout. Note: see okta_app_oauth_post_logout_redirect_uri for appending to this list in a decentralized way.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth#post_logout_redirect_uris AppOauth#post_logout_redirect_uris}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#post_logout_redirect_uris AppOauth#post_logout_redirect_uris}
 
 ---
 
@@ -2813,7 +2615,7 @@ Profile *string
 
 Custom JSON that represents an OAuth application's profile.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth#profile AppOauth#profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#profile AppOauth#profile}
 
 ---
 
@@ -2829,7 +2631,7 @@ List of URIs for use in the redirect-based flow.
 
 This is required for all application types except service. Note: see okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth#redirect_uris AppOauth#redirect_uris}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#redirect_uris AppOauth#redirect_uris}
 
 ---
 
@@ -2843,7 +2645,7 @@ RefreshTokenLeeway *f64
 
 *Early Access Property* Grace period for token rotation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth#refresh_token_leeway AppOauth#refresh_token_leeway}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#refresh_token_leeway AppOauth#refresh_token_leeway}
 
 ---
 
@@ -2857,7 +2659,7 @@ RefreshTokenRotation *string
 
 *Early Access Property* Refresh token rotation behavior.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth#refresh_token_rotation AppOauth#refresh_token_rotation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#refresh_token_rotation AppOauth#refresh_token_rotation}
 
 ---
 
@@ -2871,35 +2673,7 @@ ResponseTypes *[]*string
 
 List of OAuth 2.0 response type strings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth#response_types AppOauth#response_types}
-
----
-
-##### `SkipGroups`<sup>Optional</sup> <a name="SkipGroups" id="@cdktf/provider-okta.appOauth.AppOauthConfig.property.skipGroups"></a>
-
-```go
-SkipGroups interface{}
-```
-
-- *Type:* interface{}
-
-Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth#skip_groups AppOauth#skip_groups}
-
----
-
-##### `SkipUsers`<sup>Optional</sup> <a name="SkipUsers" id="@cdktf/provider-okta.appOauth.AppOauthConfig.property.skipUsers"></a>
-
-```go
-SkipUsers interface{}
-```
-
-- *Type:* interface{}
-
-Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth#skip_users AppOauth#skip_users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#response_types AppOauth#response_types}
 
 ---
 
@@ -2913,7 +2687,7 @@ Status *string
 
 Status of application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth#status AppOauth#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#status AppOauth#status}
 
 ---
 
@@ -2927,7 +2701,7 @@ Timeouts AppOauthTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth#timeouts AppOauth#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#timeouts AppOauth#timeouts}
 
 ---
 
@@ -2941,7 +2715,7 @@ TokenEndpointAuthMethod *string
 
 Requested authentication method for the token endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth#token_endpoint_auth_method AppOauth#token_endpoint_auth_method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#token_endpoint_auth_method AppOauth#token_endpoint_auth_method}
 
 ---
 
@@ -2955,7 +2729,7 @@ TosUri *string
 
 URI to web page providing client tos (terms of service).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth#tos_uri AppOauth#tos_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#tos_uri AppOauth#tos_uri}
 
 ---
 
@@ -2969,7 +2743,7 @@ UserNameTemplate *string
 
 Username template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth#user_name_template AppOauth#user_name_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#user_name_template AppOauth#user_name_template}
 
 ---
 
@@ -2983,7 +2757,7 @@ UserNameTemplatePushStatus *string
 
 Push username on update.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth#user_name_template_push_status AppOauth#user_name_template_push_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#user_name_template_push_status AppOauth#user_name_template_push_status}
 
 ---
 
@@ -2997,7 +2771,7 @@ UserNameTemplateSuffix *string
 
 Username template suffix.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth#user_name_template_suffix AppOauth#user_name_template_suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#user_name_template_suffix AppOauth#user_name_template_suffix}
 
 ---
 
@@ -3011,21 +2785,7 @@ UserNameTemplateType *string
 
 Username template type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth#user_name_template_type AppOauth#user_name_template_type}
-
----
-
-##### `Users`<sup>Optional</sup> <a name="Users" id="@cdktf/provider-okta.appOauth.AppOauthConfig.property.users"></a>
-
-```go
-Users interface{}
-```
-
-- *Type:* interface{}
-
-users block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth#users AppOauth#users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#user_name_template_type AppOauth#user_name_template_type}
 
 ---
 
@@ -3039,7 +2799,7 @@ WildcardRedirect *string
 
 *Early Access Property*. Indicates if the client is allowed to use wildcard matching of redirect_uris.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth#wildcard_redirect AppOauth#wildcard_redirect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#wildcard_redirect AppOauth#wildcard_redirect}
 
 ---
 
@@ -3048,7 +2808,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.appOauth.AppOauthGroupsClaim.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/appoauth"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appoauth"
 
 &appoauth.AppOauthGroupsClaim {
 	Name: *string,
@@ -3079,7 +2839,7 @@ Name *string
 
 Name of the claim that will be used in the token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth#name AppOauth#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#name AppOauth#name}
 
 ---
 
@@ -3093,7 +2853,7 @@ Type *string
 
 Groups claim type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth#type AppOauth#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#type AppOauth#type}
 
 ---
 
@@ -3109,7 +2869,7 @@ Value of the claim.
 
 Can be an Okta Expression Language statement that evaluates at the time the token is minted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth#value AppOauth#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#value AppOauth#value}
 
 ---
 
@@ -3123,7 +2883,7 @@ FilterType *string
 
 Groups claim filter. Can only be set if type is FILTER.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth#filter_type AppOauth#filter_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#filter_type AppOauth#filter_type}
 
 ---
 
@@ -3132,7 +2892,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.appOauth.AppOauthJwks.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/appoauth"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appoauth"
 
 &appoauth.AppOauthJwks {
 	Kid: *string,
@@ -3163,7 +2923,7 @@ Kid *string
 
 Key ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth#kid AppOauth#kid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#kid AppOauth#kid}
 
 ---
 
@@ -3177,7 +2937,7 @@ Kty *string
 
 Key type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth#kty AppOauth#kty}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#kty AppOauth#kty}
 
 ---
 
@@ -3191,7 +2951,7 @@ E *string
 
 RSA Exponent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth#e AppOauth#e}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#e AppOauth#e}
 
 ---
 
@@ -3205,7 +2965,7 @@ N *string
 
 RSA Modulus.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth#n AppOauth#n}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#n AppOauth#n}
 
 ---
 
@@ -3214,7 +2974,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.appOauth.AppOauthTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/appoauth"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appoauth"
 
 &appoauth.AppOauthTimeouts {
 	Create: *string,
@@ -3227,9 +2987,9 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/appoauth"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth#create AppOauth#create}. |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth#read AppOauth#read}. |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth#update AppOauth#update}. |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#create AppOauth#create}. |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#read AppOauth#read}. |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#update AppOauth#update}. |
 
 ---
 
@@ -3241,7 +3001,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth#create AppOauth#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#create AppOauth#create}.
 
 ---
 
@@ -3253,7 +3013,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth#read AppOauth#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#read AppOauth#read}.
 
 ---
 
@@ -3265,76 +3025,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth#update AppOauth#update}.
-
----
-
-### AppOauthUsers <a name="AppOauthUsers" id="@cdktf/provider-okta.appOauth.AppOauthUsers"></a>
-
-#### Initializer <a name="Initializer" id="@cdktf/provider-okta.appOauth.AppOauthUsers.Initializer"></a>
-
-```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/appoauth"
-
-&appoauth.AppOauthUsers {
-	Id: *string,
-	Password: *string,
-	Username: *string,
-}
-```
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthUsers.property.id">Id</a></code> | <code>*string</code> | User ID. |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthUsers.property.password">Password</a></code> | <code>*string</code> | Password for user application. |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthUsers.property.username">Username</a></code> | <code>*string</code> | Username for user. |
-
----
-
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-okta.appOauth.AppOauthUsers.property.id"></a>
-
-```go
-Id *string
-```
-
-- *Type:* *string
-
-User ID.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth#id AppOauth#id}
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-
----
-
-##### `Password`<sup>Optional</sup> <a name="Password" id="@cdktf/provider-okta.appOauth.AppOauthUsers.property.password"></a>
-
-```go
-Password *string
-```
-
-- *Type:* *string
-
-Password for user application.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth#password AppOauth#password}
-
----
-
-##### `Username`<sup>Optional</sup> <a name="Username" id="@cdktf/provider-okta.appOauth.AppOauthUsers.property.username"></a>
-
-```go
-Username *string
-```
-
-- *Type:* *string
-
-Username for user.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_oauth#username AppOauth#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#update AppOauth#update}.
 
 ---
 
@@ -3345,7 +3036,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appOauth.AppOauthGroupsClaimOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/appoauth"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appoauth"
 
 appoauth.NewAppOauthGroupsClaimOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppOauthGroupsClaimOutputReference
 ```
@@ -3700,7 +3391,7 @@ func InternalValue() AppOauthGroupsClaim
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appOauth.AppOauthJwksList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/appoauth"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appoauth"
 
 appoauth.NewAppOauthJwksList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppOauthJwksList
 ```
@@ -3843,7 +3534,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appOauth.AppOauthJwksOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/appoauth"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appoauth"
 
 appoauth.NewAppOauthJwksOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppOauthJwksOutputReference
 ```
@@ -4212,7 +3903,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appOauth.AppOauthTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/appoauth"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appoauth"
 
 appoauth.NewAppOauthTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppOauthTimeoutsOutputReference
 ```
@@ -4533,514 +4224,6 @@ func Update() *string
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-okta.appOauth.AppOauthTimeoutsOutputReference.property.internalValue"></a>
-
-```go
-func InternalValue() interface{}
-```
-
-- *Type:* interface{}
-
----
-
-
-### AppOauthUsersList <a name="AppOauthUsersList" id="@cdktf/provider-okta.appOauth.AppOauthUsersList"></a>
-
-#### Initializers <a name="Initializers" id="@cdktf/provider-okta.appOauth.AppOauthUsersList.Initializer"></a>
-
-```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/appoauth"
-
-appoauth.NewAppOauthUsersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppOauthUsersList
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthUsersList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthUsersList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthUsersList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
-
----
-
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-okta.appOauth.AppOauthUsersList.Initializer.parameter.terraformResource"></a>
-
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
-
-The parent resource.
-
----
-
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-okta.appOauth.AppOauthUsersList.Initializer.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
-The attribute on the parent resource this class is referencing.
-
----
-
-##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-okta.appOauth.AppOauthUsersList.Initializer.parameter.wrapsSet"></a>
-
-- *Type:* *bool
-
-whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthUsersList.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthUsersList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthUsersList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthUsersList.get">Get</a></code> | *No description.* |
-
----
-
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-okta.appOauth.AppOauthUsersList.computeFqn"></a>
-
-```go
-func ComputeFqn() *string
-```
-
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-okta.appOauth.AppOauthUsersList.resolve"></a>
-
-```go
-func Resolve(_context IResolveContext) interface{}
-```
-
-Produce the Token's value at resolution time.
-
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-okta.appOauth.AppOauthUsersList.resolve.parameter._context"></a>
-
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
-
----
-
-##### `ToString` <a name="ToString" id="@cdktf/provider-okta.appOauth.AppOauthUsersList.toString"></a>
-
-```go
-func ToString() *string
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-##### `Get` <a name="Get" id="@cdktf/provider-okta.appOauth.AppOauthUsersList.get"></a>
-
-```go
-func Get(index *f64) AppOauthUsersOutputReference
-```
-
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-okta.appOauth.AppOauthUsersList.get.parameter.index"></a>
-
-- *Type:* *f64
-
-the index of the item to return.
-
----
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthUsersList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthUsersList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthUsersList.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
-
----
-
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-okta.appOauth.AppOauthUsersList.property.creationStack"></a>
-
-```go
-func CreationStack() *[]*string
-```
-
-- *Type:* *[]*string
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-okta.appOauth.AppOauthUsersList.property.fqn"></a>
-
-```go
-func Fqn() *string
-```
-
-- *Type:* *string
-
----
-
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-okta.appOauth.AppOauthUsersList.property.internalValue"></a>
-
-```go
-func InternalValue() interface{}
-```
-
-- *Type:* interface{}
-
----
-
-
-### AppOauthUsersOutputReference <a name="AppOauthUsersOutputReference" id="@cdktf/provider-okta.appOauth.AppOauthUsersOutputReference"></a>
-
-#### Initializers <a name="Initializers" id="@cdktf/provider-okta.appOauth.AppOauthUsersOutputReference.Initializer"></a>
-
-```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/appoauth"
-
-appoauth.NewAppOauthUsersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppOauthUsersOutputReference
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthUsersOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthUsersOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthUsersOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthUsersOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
-
----
-
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-okta.appOauth.AppOauthUsersOutputReference.Initializer.parameter.terraformResource"></a>
-
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
-
-The parent resource.
-
----
-
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-okta.appOauth.AppOauthUsersOutputReference.Initializer.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
-The attribute on the parent resource this class is referencing.
-
----
-
-##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-okta.appOauth.AppOauthUsersOutputReference.Initializer.parameter.complexObjectIndex"></a>
-
-- *Type:* *f64
-
-the index of this item in the list.
-
----
-
-##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-okta.appOauth.AppOauthUsersOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
-
-- *Type:* *bool
-
-whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthUsersOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthUsersOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthUsersOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthUsersOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthUsersOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthUsersOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthUsersOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthUsersOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthUsersOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthUsersOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthUsersOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthUsersOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthUsersOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthUsersOutputReference.resetId">ResetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthUsersOutputReference.resetPassword">ResetPassword</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthUsersOutputReference.resetUsername">ResetUsername</a></code> | *No description.* |
-
----
-
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-okta.appOauth.AppOauthUsersOutputReference.computeFqn"></a>
-
-```go
-func ComputeFqn() *string
-```
-
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-okta.appOauth.AppOauthUsersOutputReference.getAnyMapAttribute"></a>
-
-```go
-func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-okta.appOauth.AppOauthUsersOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
----
-
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-okta.appOauth.AppOauthUsersOutputReference.getBooleanAttribute"></a>
-
-```go
-func GetBooleanAttribute(terraformAttribute *string) IResolvable
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-okta.appOauth.AppOauthUsersOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
----
-
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-okta.appOauth.AppOauthUsersOutputReference.getBooleanMapAttribute"></a>
-
-```go
-func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-okta.appOauth.AppOauthUsersOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
----
-
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-okta.appOauth.AppOauthUsersOutputReference.getListAttribute"></a>
-
-```go
-func GetListAttribute(terraformAttribute *string) *[]*string
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-okta.appOauth.AppOauthUsersOutputReference.getListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
----
-
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-okta.appOauth.AppOauthUsersOutputReference.getNumberAttribute"></a>
-
-```go
-func GetNumberAttribute(terraformAttribute *string) *f64
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-okta.appOauth.AppOauthUsersOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
----
-
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-okta.appOauth.AppOauthUsersOutputReference.getNumberListAttribute"></a>
-
-```go
-func GetNumberListAttribute(terraformAttribute *string) *[]*f64
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-okta.appOauth.AppOauthUsersOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
----
-
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-okta.appOauth.AppOauthUsersOutputReference.getNumberMapAttribute"></a>
-
-```go
-func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-okta.appOauth.AppOauthUsersOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
----
-
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-okta.appOauth.AppOauthUsersOutputReference.getStringAttribute"></a>
-
-```go
-func GetStringAttribute(terraformAttribute *string) *string
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-okta.appOauth.AppOauthUsersOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
----
-
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-okta.appOauth.AppOauthUsersOutputReference.getStringMapAttribute"></a>
-
-```go
-func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-okta.appOauth.AppOauthUsersOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
----
-
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-okta.appOauth.AppOauthUsersOutputReference.interpolationForAttribute"></a>
-
-```go
-func InterpolationForAttribute(property *string) IResolvable
-```
-
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-okta.appOauth.AppOauthUsersOutputReference.interpolationForAttribute.parameter.property"></a>
-
-- *Type:* *string
-
----
-
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-okta.appOauth.AppOauthUsersOutputReference.resolve"></a>
-
-```go
-func Resolve(_context IResolveContext) interface{}
-```
-
-Produce the Token's value at resolution time.
-
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-okta.appOauth.AppOauthUsersOutputReference.resolve.parameter._context"></a>
-
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
-
----
-
-##### `ToString` <a name="ToString" id="@cdktf/provider-okta.appOauth.AppOauthUsersOutputReference.toString"></a>
-
-```go
-func ToString() *string
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-okta.appOauth.AppOauthUsersOutputReference.resetId"></a>
-
-```go
-func ResetId()
-```
-
-##### `ResetPassword` <a name="ResetPassword" id="@cdktf/provider-okta.appOauth.AppOauthUsersOutputReference.resetPassword"></a>
-
-```go
-func ResetPassword()
-```
-
-##### `ResetUsername` <a name="ResetUsername" id="@cdktf/provider-okta.appOauth.AppOauthUsersOutputReference.resetUsername"></a>
-
-```go
-func ResetUsername()
-```
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthUsersOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthUsersOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthUsersOutputReference.property.scope">Scope</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthUsersOutputReference.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthUsersOutputReference.property.passwordInput">PasswordInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthUsersOutputReference.property.usernameInput">UsernameInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthUsersOutputReference.property.id">Id</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthUsersOutputReference.property.password">Password</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthUsersOutputReference.property.username">Username</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthUsersOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
-
----
-
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-okta.appOauth.AppOauthUsersOutputReference.property.creationStack"></a>
-
-```go
-func CreationStack() *[]*string
-```
-
-- *Type:* *[]*string
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-okta.appOauth.AppOauthUsersOutputReference.property.fqn"></a>
-
-```go
-func Fqn() *string
-```
-
-- *Type:* *string
-
----
-
-##### `Scope`<sup>Required</sup> <a name="Scope" id="@cdktf/provider-okta.appOauth.AppOauthUsersOutputReference.property.scope"></a>
-
-```go
-func Scope() *string
-```
-
-- *Type:* *string
-
----
-
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-okta.appOauth.AppOauthUsersOutputReference.property.idInput"></a>
-
-```go
-func IdInput() *string
-```
-
-- *Type:* *string
-
----
-
-##### `PasswordInput`<sup>Optional</sup> <a name="PasswordInput" id="@cdktf/provider-okta.appOauth.AppOauthUsersOutputReference.property.passwordInput"></a>
-
-```go
-func PasswordInput() *string
-```
-
-- *Type:* *string
-
----
-
-##### `UsernameInput`<sup>Optional</sup> <a name="UsernameInput" id="@cdktf/provider-okta.appOauth.AppOauthUsersOutputReference.property.usernameInput"></a>
-
-```go
-func UsernameInput() *string
-```
-
-- *Type:* *string
-
----
-
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-okta.appOauth.AppOauthUsersOutputReference.property.id"></a>
-
-```go
-func Id() *string
-```
-
-- *Type:* *string
-
----
-
-##### `Password`<sup>Required</sup> <a name="Password" id="@cdktf/provider-okta.appOauth.AppOauthUsersOutputReference.property.password"></a>
-
-```go
-func Password() *string
-```
-
-- *Type:* *string
-
----
-
-##### `Username`<sup>Required</sup> <a name="Username" id="@cdktf/provider-okta.appOauth.AppOauthUsersOutputReference.property.username"></a>
-
-```go
-func Username() *string
-```
-
-- *Type:* *string
-
----
-
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-okta.appOauth.AppOauthUsersOutputReference.property.internalValue"></a>
 
 ```go
 func InternalValue() interface{}

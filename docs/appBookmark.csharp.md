@@ -1,6 +1,6 @@
 # `okta_app_bookmark`
 
-Refer to the Terraform Registory for docs: [`okta_app_bookmark`](https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark).
+Refer to the Terraform Registory for docs: [`okta_app_bookmark`](https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_bookmark).
 
 # `appBookmark` Submodule <a name="`appBookmark` Submodule" id="@cdktf/provider-okta.appBookmark"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_app_bookmark`](https://registr
 
 ### AppBookmark <a name="AppBookmark" id="@cdktf/provider-okta.appBookmark.AppBookmark"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark okta_app_bookmark}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_bookmark okta_app_bookmark}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appBookmark.AppBookmark.Initializer"></a>
 
@@ -71,7 +71,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.putTimeouts">PutTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.putUsers">PutUsers</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.resetAccessibilityErrorRedirectUrl">ResetAccessibilityErrorRedirectUrl</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.resetAccessibilityLoginRedirectUrl">ResetAccessibilityLoginRedirectUrl</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.resetAccessibilitySelfService">ResetAccessibilitySelfService</a></code> | *No description.* |
@@ -80,17 +79,13 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.resetAuthenticationPolicy">ResetAuthenticationPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.resetAutoSubmitToolbar">ResetAutoSubmitToolbar</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.resetEnduserNote">ResetEnduserNote</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.resetGroups">ResetGroups</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.resetHideIos">ResetHideIos</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.resetHideWeb">ResetHideWeb</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.resetLogo">ResetLogo</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.resetRequestIntegration">ResetRequestIntegration</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.resetSkipGroups">ResetSkipGroups</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.resetSkipUsers">ResetSkipUsers</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.resetStatus">ResetStatus</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.resetUsers">ResetUsers</a></code> | *No description.* |
 
 ---
 
@@ -290,18 +285,6 @@ private void PutTimeouts(AppBookmarkTimeouts Value)
 
 ---
 
-##### `PutUsers` <a name="PutUsers" id="@cdktf/provider-okta.appBookmark.AppBookmark.putUsers"></a>
-
-```csharp
-private void PutUsers(object Value)
-```
-
-###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-okta.appBookmark.AppBookmark.putUsers.parameter.value"></a>
-
-- *Type:* object
-
----
-
 ##### `ResetAccessibilityErrorRedirectUrl` <a name="ResetAccessibilityErrorRedirectUrl" id="@cdktf/provider-okta.appBookmark.AppBookmark.resetAccessibilityErrorRedirectUrl"></a>
 
 ```csharp
@@ -350,12 +333,6 @@ private void ResetAutoSubmitToolbar()
 private void ResetEnduserNote()
 ```
 
-##### `ResetGroups` <a name="ResetGroups" id="@cdktf/provider-okta.appBookmark.AppBookmark.resetGroups"></a>
-
-```csharp
-private void ResetGroups()
-```
-
 ##### `ResetHideIos` <a name="ResetHideIos" id="@cdktf/provider-okta.appBookmark.AppBookmark.resetHideIos"></a>
 
 ```csharp
@@ -386,18 +363,6 @@ private void ResetLogo()
 private void ResetRequestIntegration()
 ```
 
-##### `ResetSkipGroups` <a name="ResetSkipGroups" id="@cdktf/provider-okta.appBookmark.AppBookmark.resetSkipGroups"></a>
-
-```csharp
-private void ResetSkipGroups()
-```
-
-##### `ResetSkipUsers` <a name="ResetSkipUsers" id="@cdktf/provider-okta.appBookmark.AppBookmark.resetSkipUsers"></a>
-
-```csharp
-private void ResetSkipUsers()
-```
-
 ##### `ResetStatus` <a name="ResetStatus" id="@cdktf/provider-okta.appBookmark.AppBookmark.resetStatus"></a>
 
 ```csharp
@@ -408,12 +373,6 @@ private void ResetStatus()
 
 ```csharp
 private void ResetTimeouts()
-```
-
-##### `ResetUsers` <a name="ResetUsers" id="@cdktf/provider-okta.appBookmark.AppBookmark.resetUsers"></a>
-
-```csharp
-private void ResetUsers()
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -508,7 +467,6 @@ AppBookmark.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.signOnMode">SignOnMode</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkTimeoutsOutputReference">AppBookmarkTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.users">Users</a></code> | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersList">AppBookmarkUsersList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.accessibilityErrorRedirectUrlInput">AccessibilityErrorRedirectUrlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.accessibilityLoginRedirectUrlInput">AccessibilityLoginRedirectUrlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.accessibilitySelfServiceInput">AccessibilitySelfServiceInput</a></code> | <code>object</code> | *No description.* |
@@ -517,19 +475,15 @@ AppBookmark.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.authenticationPolicyInput">AuthenticationPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.autoSubmitToolbarInput">AutoSubmitToolbarInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.enduserNoteInput">EnduserNoteInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.groupsInput">GroupsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.hideIosInput">HideIosInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.hideWebInput">HideWebInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.labelInput">LabelInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.logoInput">LogoInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.requestIntegrationInput">RequestIntegrationInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.skipGroupsInput">SkipGroupsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.skipUsersInput">SkipUsersInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.statusInput">StatusInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.timeoutsInput">TimeoutsInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.urlInput">UrlInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.usersInput">UsersInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.accessibilityErrorRedirectUrl">AccessibilityErrorRedirectUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.accessibilityLoginRedirectUrl">AccessibilityLoginRedirectUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.accessibilitySelfService">AccessibilitySelfService</a></code> | <code>object</code> | *No description.* |
@@ -538,15 +492,12 @@ AppBookmark.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.authenticationPolicy">AuthenticationPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.autoSubmitToolbar">AutoSubmitToolbar</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.enduserNote">EnduserNote</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.groups">Groups</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.hideIos">HideIos</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.hideWeb">HideWeb</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.label">Label</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.logo">Logo</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.requestIntegration">RequestIntegration</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.skipGroups">SkipGroups</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.skipUsers">SkipUsers</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.status">Status</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.url">Url</a></code> | <code>string</code> | *No description.* |
 
@@ -734,16 +685,6 @@ public AppBookmarkTimeoutsOutputReference Timeouts { get; }
 
 ---
 
-##### `Users`<sup>Required</sup> <a name="Users" id="@cdktf/provider-okta.appBookmark.AppBookmark.property.users"></a>
-
-```csharp
-public AppBookmarkUsersList Users { get; }
-```
-
-- *Type:* <a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersList">AppBookmarkUsersList</a>
-
----
-
 ##### `AccessibilityErrorRedirectUrlInput`<sup>Optional</sup> <a name="AccessibilityErrorRedirectUrlInput" id="@cdktf/provider-okta.appBookmark.AppBookmark.property.accessibilityErrorRedirectUrlInput"></a>
 
 ```csharp
@@ -824,16 +765,6 @@ public string EnduserNoteInput { get; }
 
 ---
 
-##### `GroupsInput`<sup>Optional</sup> <a name="GroupsInput" id="@cdktf/provider-okta.appBookmark.AppBookmark.property.groupsInput"></a>
-
-```csharp
-public string[] GroupsInput { get; }
-```
-
-- *Type:* string[]
-
----
-
 ##### `HideIosInput`<sup>Optional</sup> <a name="HideIosInput" id="@cdktf/provider-okta.appBookmark.AppBookmark.property.hideIosInput"></a>
 
 ```csharp
@@ -894,26 +825,6 @@ public object RequestIntegrationInput { get; }
 
 ---
 
-##### `SkipGroupsInput`<sup>Optional</sup> <a name="SkipGroupsInput" id="@cdktf/provider-okta.appBookmark.AppBookmark.property.skipGroupsInput"></a>
-
-```csharp
-public object SkipGroupsInput { get; }
-```
-
-- *Type:* object
-
----
-
-##### `SkipUsersInput`<sup>Optional</sup> <a name="SkipUsersInput" id="@cdktf/provider-okta.appBookmark.AppBookmark.property.skipUsersInput"></a>
-
-```csharp
-public object SkipUsersInput { get; }
-```
-
-- *Type:* object
-
----
-
 ##### `StatusInput`<sup>Optional</sup> <a name="StatusInput" id="@cdktf/provider-okta.appBookmark.AppBookmark.property.statusInput"></a>
 
 ```csharp
@@ -941,16 +852,6 @@ public string UrlInput { get; }
 ```
 
 - *Type:* string
-
----
-
-##### `UsersInput`<sup>Optional</sup> <a name="UsersInput" id="@cdktf/provider-okta.appBookmark.AppBookmark.property.usersInput"></a>
-
-```csharp
-public object UsersInput { get; }
-```
-
-- *Type:* object
 
 ---
 
@@ -1034,16 +935,6 @@ public string EnduserNote { get; }
 
 ---
 
-##### `Groups`<sup>Required</sup> <a name="Groups" id="@cdktf/provider-okta.appBookmark.AppBookmark.property.groups"></a>
-
-```csharp
-public string[] Groups { get; }
-```
-
-- *Type:* string[]
-
----
-
 ##### `HideIos`<sup>Required</sup> <a name="HideIos" id="@cdktf/provider-okta.appBookmark.AppBookmark.property.hideIos"></a>
 
 ```csharp
@@ -1098,26 +989,6 @@ public string Logo { get; }
 
 ```csharp
 public object RequestIntegration { get; }
-```
-
-- *Type:* object
-
----
-
-##### `SkipGroups`<sup>Required</sup> <a name="SkipGroups" id="@cdktf/provider-okta.appBookmark.AppBookmark.property.skipGroups"></a>
-
-```csharp
-public object SkipGroups { get; }
-```
-
-- *Type:* object
-
----
-
-##### `SkipUsers`<sup>Required</sup> <a name="SkipUsers" id="@cdktf/provider-okta.appBookmark.AppBookmark.property.skipUsers"></a>
-
-```csharp
-public object SkipUsers { get; }
 ```
 
 - *Type:* object
@@ -1189,17 +1060,13 @@ new AppBookmarkConfig {
     string AuthenticationPolicy = null,
     object AutoSubmitToolbar = null,
     string EnduserNote = null,
-    string[] Groups = null,
     object HideIos = null,
     object HideWeb = null,
     string Id = null,
     string Logo = null,
     object RequestIntegration = null,
-    object SkipGroups = null,
-    object SkipUsers = null,
     string Status = null,
-    AppBookmarkTimeouts Timeouts = null,
-    object Users = null
+    AppBookmarkTimeouts Timeouts = null
 };
 ```
 
@@ -1215,7 +1082,7 @@ new AppBookmarkConfig {
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.label">Label</a></code> | <code>string</code> | Pretty name of app. |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.url">Url</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#url AppBookmark#url}. |
+| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.url">Url</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_bookmark#url AppBookmark#url}. |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.accessibilityErrorRedirectUrl">AccessibilityErrorRedirectUrl</a></code> | <code>string</code> | Custom error page URL. |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.accessibilityLoginRedirectUrl">AccessibilityLoginRedirectUrl</a></code> | <code>string</code> | Custom login page URL. |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.accessibilitySelfService">AccessibilitySelfService</a></code> | <code>object</code> | Enable self service. |
@@ -1224,17 +1091,13 @@ new AppBookmarkConfig {
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.authenticationPolicy">AuthenticationPolicy</a></code> | <code>string</code> | Id of this apps authentication policy. |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.autoSubmitToolbar">AutoSubmitToolbar</a></code> | <code>object</code> | Display auto submit toolbar. |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.enduserNote">EnduserNote</a></code> | <code>string</code> | Application notes for end users. |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.groups">Groups</a></code> | <code>string[]</code> | Groups associated with the application. |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.hideIos">HideIos</a></code> | <code>object</code> | Do not display application icon on mobile app. |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.hideWeb">HideWeb</a></code> | <code>object</code> | Do not display application icon to users. |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#id AppBookmark#id}. |
+| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_bookmark#id AppBookmark#id}. |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.logo">Logo</a></code> | <code>string</code> | Local path to logo of the application. |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.requestIntegration">RequestIntegration</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#request_integration AppBookmark#request_integration}. |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.skipGroups">SkipGroups</a></code> | <code>object</code> | Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources. |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.skipUsers">SkipUsers</a></code> | <code>object</code> | Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources. |
+| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.requestIntegration">RequestIntegration</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_bookmark#request_integration AppBookmark#request_integration}. |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.status">Status</a></code> | <code>string</code> | Status of application. |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkTimeouts">AppBookmarkTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.users">Users</a></code> | <code>object</code> | users block. |
 
 ---
 
@@ -1318,7 +1181,7 @@ public string Label { get; set; }
 
 Pretty name of app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#label AppBookmark#label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_bookmark#label AppBookmark#label}
 
 ---
 
@@ -1330,7 +1193,7 @@ public string Url { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#url AppBookmark#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_bookmark#url AppBookmark#url}.
 
 ---
 
@@ -1344,7 +1207,7 @@ public string AccessibilityErrorRedirectUrl { get; set; }
 
 Custom error page URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#accessibility_error_redirect_url AppBookmark#accessibility_error_redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_bookmark#accessibility_error_redirect_url AppBookmark#accessibility_error_redirect_url}
 
 ---
 
@@ -1358,7 +1221,7 @@ public string AccessibilityLoginRedirectUrl { get; set; }
 
 Custom login page URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#accessibility_login_redirect_url AppBookmark#accessibility_login_redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_bookmark#accessibility_login_redirect_url AppBookmark#accessibility_login_redirect_url}
 
 ---
 
@@ -1372,7 +1235,7 @@ public object AccessibilitySelfService { get; set; }
 
 Enable self service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#accessibility_self_service AppBookmark#accessibility_self_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_bookmark#accessibility_self_service AppBookmark#accessibility_self_service}
 
 ---
 
@@ -1386,7 +1249,7 @@ public string AdminNote { get; set; }
 
 Application notes for admins.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#admin_note AppBookmark#admin_note}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_bookmark#admin_note AppBookmark#admin_note}
 
 ---
 
@@ -1400,7 +1263,7 @@ public string AppLinksJson { get; set; }
 
 Displays specific appLinks for the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#app_links_json AppBookmark#app_links_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_bookmark#app_links_json AppBookmark#app_links_json}
 
 ---
 
@@ -1414,7 +1277,7 @@ public string AuthenticationPolicy { get; set; }
 
 Id of this apps authentication policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#authentication_policy AppBookmark#authentication_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_bookmark#authentication_policy AppBookmark#authentication_policy}
 
 ---
 
@@ -1428,7 +1291,7 @@ public object AutoSubmitToolbar { get; set; }
 
 Display auto submit toolbar.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#auto_submit_toolbar AppBookmark#auto_submit_toolbar}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_bookmark#auto_submit_toolbar AppBookmark#auto_submit_toolbar}
 
 ---
 
@@ -1442,21 +1305,7 @@ public string EnduserNote { get; set; }
 
 Application notes for end users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#enduser_note AppBookmark#enduser_note}
-
----
-
-##### `Groups`<sup>Optional</sup> <a name="Groups" id="@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.groups"></a>
-
-```csharp
-public string[] Groups { get; set; }
-```
-
-- *Type:* string[]
-
-Groups associated with the application.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#groups AppBookmark#groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_bookmark#enduser_note AppBookmark#enduser_note}
 
 ---
 
@@ -1470,7 +1319,7 @@ public object HideIos { get; set; }
 
 Do not display application icon on mobile app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#hide_ios AppBookmark#hide_ios}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_bookmark#hide_ios AppBookmark#hide_ios}
 
 ---
 
@@ -1484,7 +1333,7 @@ public object HideWeb { get; set; }
 
 Do not display application icon to users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#hide_web AppBookmark#hide_web}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_bookmark#hide_web AppBookmark#hide_web}
 
 ---
 
@@ -1496,7 +1345,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#id AppBookmark#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_bookmark#id AppBookmark#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1513,7 +1362,7 @@ public string Logo { get; set; }
 
 Local path to logo of the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#logo AppBookmark#logo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_bookmark#logo AppBookmark#logo}
 
 ---
 
@@ -1525,35 +1374,7 @@ public object RequestIntegration { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#request_integration AppBookmark#request_integration}.
-
----
-
-##### `SkipGroups`<sup>Optional</sup> <a name="SkipGroups" id="@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.skipGroups"></a>
-
-```csharp
-public object SkipGroups { get; set; }
-```
-
-- *Type:* object
-
-Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#skip_groups AppBookmark#skip_groups}
-
----
-
-##### `SkipUsers`<sup>Optional</sup> <a name="SkipUsers" id="@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.skipUsers"></a>
-
-```csharp
-public object SkipUsers { get; set; }
-```
-
-- *Type:* object
-
-Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#skip_users AppBookmark#skip_users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_bookmark#request_integration AppBookmark#request_integration}.
 
 ---
 
@@ -1567,7 +1388,7 @@ public string Status { get; set; }
 
 Status of application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#status AppBookmark#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_bookmark#status AppBookmark#status}
 
 ---
 
@@ -1581,21 +1402,7 @@ public AppBookmarkTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#timeouts AppBookmark#timeouts}
-
----
-
-##### `Users`<sup>Optional</sup> <a name="Users" id="@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.users"></a>
-
-```csharp
-public object Users { get; set; }
-```
-
-- *Type:* object
-
-users block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#users AppBookmark#users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_bookmark#timeouts AppBookmark#timeouts}
 
 ---
 
@@ -1617,9 +1424,9 @@ new AppBookmarkTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#create AppBookmark#create}. |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#read AppBookmark#read}. |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#update AppBookmark#update}. |
+| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_bookmark#create AppBookmark#create}. |
+| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_bookmark#read AppBookmark#read}. |
+| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_bookmark#update AppBookmark#update}. |
 
 ---
 
@@ -1631,7 +1438,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#create AppBookmark#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_bookmark#create AppBookmark#create}.
 
 ---
 
@@ -1643,7 +1450,7 @@ public string Read { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#read AppBookmark#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_bookmark#read AppBookmark#read}.
 
 ---
 
@@ -1655,76 +1462,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#update AppBookmark#update}.
-
----
-
-### AppBookmarkUsers <a name="AppBookmarkUsers" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsers"></a>
-
-#### Initializer <a name="Initializer" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsers.Initializer"></a>
-
-```csharp
-using HashiCorp.Cdktf.Providers.Okta;
-
-new AppBookmarkUsers {
-    string Id = null,
-    string Password = null,
-    string Username = null
-};
-```
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsers.property.id">Id</a></code> | <code>string</code> | User ID. |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsers.property.password">Password</a></code> | <code>string</code> | Password for user application. |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsers.property.username">Username</a></code> | <code>string</code> | Username for user. |
-
----
-
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsers.property.id"></a>
-
-```csharp
-public string Id { get; set; }
-```
-
-- *Type:* string
-
-User ID.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#id AppBookmark#id}
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-
----
-
-##### `Password`<sup>Optional</sup> <a name="Password" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsers.property.password"></a>
-
-```csharp
-public string Password { get; set; }
-```
-
-- *Type:* string
-
-Password for user application.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#password AppBookmark#password}
-
----
-
-##### `Username`<sup>Optional</sup> <a name="Username" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsers.property.username"></a>
-
-```csharp
-public string Username { get; set; }
-```
-
-- *Type:* string
-
-Username for user.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_bookmark#username AppBookmark#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_bookmark#update AppBookmark#update}.
 
 ---
 
@@ -2056,514 +1794,6 @@ public string Update { get; }
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-okta.appBookmark.AppBookmarkTimeoutsOutputReference.property.internalValue"></a>
-
-```csharp
-public object InternalValue { get; }
-```
-
-- *Type:* object
-
----
-
-
-### AppBookmarkUsersList <a name="AppBookmarkUsersList" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersList"></a>
-
-#### Initializers <a name="Initializers" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersList.Initializer"></a>
-
-```csharp
-using HashiCorp.Cdktf.Providers.Okta;
-
-new AppBookmarkUsersList(IInterpolatingParent TerraformResource, string TerraformAttribute, bool WrapsSet);
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersList.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersList.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersList.Initializer.parameter.wrapsSet">WrapsSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
-
----
-
-##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersList.Initializer.parameter.terraformResource"></a>
-
-- *Type:* HashiCorp.Cdktf.IInterpolatingParent
-
-The parent resource.
-
----
-
-##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersList.Initializer.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
-The attribute on the parent resource this class is referencing.
-
----
-
-##### `WrapsSet`<sup>Required</sup> <a name="WrapsSet" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersList.Initializer.parameter.wrapsSet"></a>
-
-- *Type:* bool
-
-whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersList.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersList.get">Get</a></code> | *No description.* |
-
----
-
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersList.computeFqn"></a>
-
-```csharp
-private string ComputeFqn()
-```
-
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersList.resolve"></a>
-
-```csharp
-private object Resolve(IResolveContext Context)
-```
-
-Produce the Token's value at resolution time.
-
-###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersList.resolve.parameter._context"></a>
-
-- *Type:* HashiCorp.Cdktf.IResolveContext
-
----
-
-##### `ToString` <a name="ToString" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersList.toString"></a>
-
-```csharp
-private string ToString()
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-##### `Get` <a name="Get" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersList.get"></a>
-
-```csharp
-private AppBookmarkUsersOutputReference Get(double Index)
-```
-
-###### `Index`<sup>Required</sup> <a name="Index" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersList.get.parameter.index"></a>
-
-- *Type:* double
-
-the index of the item to return.
-
----
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
-
----
-
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersList.property.creationStack"></a>
-
-```csharp
-public string[] CreationStack { get; }
-```
-
-- *Type:* string[]
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersList.property.fqn"></a>
-
-```csharp
-public string Fqn { get; }
-```
-
-- *Type:* string
-
----
-
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersList.property.internalValue"></a>
-
-```csharp
-public object InternalValue { get; }
-```
-
-- *Type:* object
-
----
-
-
-### AppBookmarkUsersOutputReference <a name="AppBookmarkUsersOutputReference" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference"></a>
-
-#### Initializers <a name="Initializers" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.Initializer"></a>
-
-```csharp
-using HashiCorp.Cdktf.Providers.Okta;
-
-new AppBookmarkUsersOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute, double ComplexObjectIndex, bool ComplexObjectIsFromSet);
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.Initializer.parameter.complexObjectIndex">ComplexObjectIndex</a></code> | <code>double</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.Initializer.parameter.complexObjectIsFromSet">ComplexObjectIsFromSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
-
----
-
-##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.Initializer.parameter.terraformResource"></a>
-
-- *Type:* HashiCorp.Cdktf.IInterpolatingParent
-
-The parent resource.
-
----
-
-##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.Initializer.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
-The attribute on the parent resource this class is referencing.
-
----
-
-##### `ComplexObjectIndex`<sup>Required</sup> <a name="ComplexObjectIndex" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.Initializer.parameter.complexObjectIndex"></a>
-
-- *Type:* double
-
-the index of this item in the list.
-
----
-
-##### `ComplexObjectIsFromSet`<sup>Required</sup> <a name="ComplexObjectIsFromSet" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
-
-- *Type:* bool
-
-whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.resetId">ResetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.resetPassword">ResetPassword</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.resetUsername">ResetUsername</a></code> | *No description.* |
-
----
-
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.computeFqn"></a>
-
-```csharp
-private string ComputeFqn()
-```
-
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.getAnyMapAttribute"></a>
-
-```csharp
-private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
-```
-
-###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
----
-
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.getBooleanAttribute"></a>
-
-```csharp
-private IResolvable GetBooleanAttribute(string TerraformAttribute)
-```
-
-###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
----
-
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.getBooleanMapAttribute"></a>
-
-```csharp
-private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
-```
-
-###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
----
-
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.getListAttribute"></a>
-
-```csharp
-private string[] GetListAttribute(string TerraformAttribute)
-```
-
-###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.getListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
----
-
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.getNumberAttribute"></a>
-
-```csharp
-private double GetNumberAttribute(string TerraformAttribute)
-```
-
-###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
----
-
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.getNumberListAttribute"></a>
-
-```csharp
-private double[] GetNumberListAttribute(string TerraformAttribute)
-```
-
-###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
----
-
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.getNumberMapAttribute"></a>
-
-```csharp
-private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
-```
-
-###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
----
-
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.getStringAttribute"></a>
-
-```csharp
-private string GetStringAttribute(string TerraformAttribute)
-```
-
-###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
----
-
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.getStringMapAttribute"></a>
-
-```csharp
-private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
-```
-
-###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
----
-
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.interpolationForAttribute"></a>
-
-```csharp
-private IResolvable InterpolationForAttribute(string Property)
-```
-
-###### `Property`<sup>Required</sup> <a name="Property" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.interpolationForAttribute.parameter.property"></a>
-
-- *Type:* string
-
----
-
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.resolve"></a>
-
-```csharp
-private object Resolve(IResolveContext Context)
-```
-
-Produce the Token's value at resolution time.
-
-###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.resolve.parameter._context"></a>
-
-- *Type:* HashiCorp.Cdktf.IResolveContext
-
----
-
-##### `ToString` <a name="ToString" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.toString"></a>
-
-```csharp
-private string ToString()
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.resetId"></a>
-
-```csharp
-private void ResetId()
-```
-
-##### `ResetPassword` <a name="ResetPassword" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.resetPassword"></a>
-
-```csharp
-private void ResetPassword()
-```
-
-##### `ResetUsername` <a name="ResetUsername" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.resetUsername"></a>
-
-```csharp
-private void ResetUsername()
-```
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.property.scope">Scope</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.property.passwordInput">PasswordInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.property.usernameInput">UsernameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.property.id">Id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.property.password">Password</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.property.username">Username</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
-
----
-
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.property.creationStack"></a>
-
-```csharp
-public string[] CreationStack { get; }
-```
-
-- *Type:* string[]
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.property.fqn"></a>
-
-```csharp
-public string Fqn { get; }
-```
-
-- *Type:* string
-
----
-
-##### `Scope`<sup>Required</sup> <a name="Scope" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.property.scope"></a>
-
-```csharp
-public string Scope { get; }
-```
-
-- *Type:* string
-
----
-
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.property.idInput"></a>
-
-```csharp
-public string IdInput { get; }
-```
-
-- *Type:* string
-
----
-
-##### `PasswordInput`<sup>Optional</sup> <a name="PasswordInput" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.property.passwordInput"></a>
-
-```csharp
-public string PasswordInput { get; }
-```
-
-- *Type:* string
-
----
-
-##### `UsernameInput`<sup>Optional</sup> <a name="UsernameInput" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.property.usernameInput"></a>
-
-```csharp
-public string UsernameInput { get; }
-```
-
-- *Type:* string
-
----
-
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.property.id"></a>
-
-```csharp
-public string Id { get; }
-```
-
-- *Type:* string
-
----
-
-##### `Password`<sup>Required</sup> <a name="Password" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.property.password"></a>
-
-```csharp
-public string Password { get; }
-```
-
-- *Type:* string
-
----
-
-##### `Username`<sup>Required</sup> <a name="Username" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.property.username"></a>
-
-```csharp
-public string Username { get; }
-```
-
-- *Type:* string
-
----
-
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-okta.appBookmark.AppBookmarkUsersOutputReference.property.internalValue"></a>
 
 ```csharp
 public object InternalValue { get; }

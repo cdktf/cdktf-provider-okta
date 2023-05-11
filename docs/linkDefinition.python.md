@@ -1,6 +1,6 @@
 # `okta_link_definition`
 
-Refer to the Terraform Registory for docs: [`okta_link_definition`](https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/link_definition).
+Refer to the Terraform Registory for docs: [`okta_link_definition`](https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/link_definition).
 
 # `linkDefinition` Submodule <a name="`linkDefinition` Submodule" id="@cdktf/provider-okta.linkDefinition"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_link_definition`](https://regi
 
 ### LinkDefinition <a name="LinkDefinition" id="@cdktf/provider-okta.linkDefinition.LinkDefinition"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/link_definition okta_link_definition}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/link_definition okta_link_definition}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.linkDefinition.LinkDefinition.Initializer"></a>
 
@@ -52,7 +52,7 @@ linkDefinition.LinkDefinition(
 | <code><a href="#@cdktf/provider-okta.linkDefinition.LinkDefinition.Initializer.parameter.primaryDescription">primary_description</a></code> | <code>str</code> | Description of the primary relationship. |
 | <code><a href="#@cdktf/provider-okta.linkDefinition.LinkDefinition.Initializer.parameter.primaryName">primary_name</a></code> | <code>str</code> | API name of the primary link. |
 | <code><a href="#@cdktf/provider-okta.linkDefinition.LinkDefinition.Initializer.parameter.primaryTitle">primary_title</a></code> | <code>str</code> | Display name of the primary link. |
-| <code><a href="#@cdktf/provider-okta.linkDefinition.LinkDefinition.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/link_definition#id LinkDefinition#id}. |
+| <code><a href="#@cdktf/provider-okta.linkDefinition.LinkDefinition.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/link_definition#id LinkDefinition#id}. |
 
 ---
 
@@ -122,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 Description of the associated relationship.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/link_definition#associated_description LinkDefinition#associated_description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/link_definition#associated_description LinkDefinition#associated_description}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 API name of the associated link.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/link_definition#associated_name LinkDefinition#associated_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/link_definition#associated_name LinkDefinition#associated_name}
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Display name of the associated link.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/link_definition#associated_title LinkDefinition#associated_title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/link_definition#associated_title LinkDefinition#associated_title}
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Description of the primary relationship.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/link_definition#primary_description LinkDefinition#primary_description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/link_definition#primary_description LinkDefinition#primary_description}
 
 ---
 
@@ -162,7 +162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 API name of the primary link.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/link_definition#primary_name LinkDefinition#primary_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/link_definition#primary_name LinkDefinition#primary_name}
 
 ---
 
@@ -172,7 +172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Display name of the primary link.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/link_definition#primary_title LinkDefinition#primary_title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/link_definition#primary_title LinkDefinition#primary_title}
 
 ---
 
@@ -180,7 +180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/link_definition#id LinkDefinition#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/link_definition#id LinkDefinition#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -881,7 +881,7 @@ linkDefinition.LinkDefinitionConfig(
 | <code><a href="#@cdktf/provider-okta.linkDefinition.LinkDefinitionConfig.property.primaryDescription">primary_description</a></code> | <code>str</code> | Description of the primary relationship. |
 | <code><a href="#@cdktf/provider-okta.linkDefinition.LinkDefinitionConfig.property.primaryName">primary_name</a></code> | <code>str</code> | API name of the primary link. |
 | <code><a href="#@cdktf/provider-okta.linkDefinition.LinkDefinitionConfig.property.primaryTitle">primary_title</a></code> | <code>str</code> | Display name of the primary link. |
-| <code><a href="#@cdktf/provider-okta.linkDefinition.LinkDefinitionConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/link_definition#id LinkDefinition#id}. |
+| <code><a href="#@cdktf/provider-okta.linkDefinition.LinkDefinitionConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/link_definition#id LinkDefinition#id}. |
 
 ---
 
@@ -965,7 +965,7 @@ associated_description: str
 
 Description of the associated relationship.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/link_definition#associated_description LinkDefinition#associated_description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/link_definition#associated_description LinkDefinition#associated_description}
 
 ---
 
@@ -979,7 +979,7 @@ associated_name: str
 
 API name of the associated link.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/link_definition#associated_name LinkDefinition#associated_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/link_definition#associated_name LinkDefinition#associated_name}
 
 ---
 
@@ -993,7 +993,7 @@ associated_title: str
 
 Display name of the associated link.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/link_definition#associated_title LinkDefinition#associated_title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/link_definition#associated_title LinkDefinition#associated_title}
 
 ---
 
@@ -1007,7 +1007,7 @@ primary_description: str
 
 Description of the primary relationship.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/link_definition#primary_description LinkDefinition#primary_description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/link_definition#primary_description LinkDefinition#primary_description}
 
 ---
 
@@ -1021,7 +1021,7 @@ primary_name: str
 
 API name of the primary link.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/link_definition#primary_name LinkDefinition#primary_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/link_definition#primary_name LinkDefinition#primary_name}
 
 ---
 
@@ -1035,7 +1035,7 @@ primary_title: str
 
 Display name of the primary link.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/link_definition#primary_title LinkDefinition#primary_title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/link_definition#primary_title LinkDefinition#primary_title}
 
 ---
 
@@ -1047,7 +1047,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/link_definition#id LinkDefinition#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/link_definition#id LinkDefinition#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

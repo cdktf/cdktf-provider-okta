@@ -1,6 +1,6 @@
 # `okta_app_auto_login`
 
-Refer to the Terraform Registory for docs: [`okta_app_auto_login`](https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_auto_login).
+Refer to the Terraform Registory for docs: [`okta_app_auto_login`](https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_auto_login).
 
 # `appAutoLogin` Submodule <a name="`appAutoLogin` Submodule" id="@cdktf/provider-okta.appAutoLogin"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_app_auto_login`](https://regis
 
 ### AppAutoLogin <a name="AppAutoLogin" id="@cdktf/provider-okta.appAutoLogin.AppAutoLogin"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_auto_login okta_app_auto_login}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_auto_login okta_app_auto_login}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appAutoLogin.AppAutoLogin.Initializer"></a>
 
@@ -35,7 +35,6 @@ appAutoLogin.AppAutoLogin(
   auto_submit_toolbar: typing.Union[bool, IResolvable] = None,
   credentials_scheme: str = None,
   enduser_note: str = None,
-  groups: typing.List[str] = None,
   hide_ios: typing.Union[bool, IResolvable] = None,
   hide_web: typing.Union[bool, IResolvable] = None,
   id: str = None,
@@ -46,15 +45,12 @@ appAutoLogin.AppAutoLogin(
   shared_username: str = None,
   sign_on_redirect_url: str = None,
   sign_on_url: str = None,
-  skip_groups: typing.Union[bool, IResolvable] = None,
-  skip_users: typing.Union[bool, IResolvable] = None,
   status: str = None,
   timeouts: AppAutoLoginTimeouts = None,
   user_name_template: str = None,
   user_name_template_push_status: str = None,
   user_name_template_suffix: str = None,
-  user_name_template_type: str = None,
-  users: typing.Union[IResolvable, typing.List[AppAutoLoginUsers]] = None
+  user_name_template_type: str = None
 )
 ```
 
@@ -79,10 +75,9 @@ appAutoLogin.AppAutoLogin(
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.Initializer.parameter.autoSubmitToolbar">auto_submit_toolbar</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Display auto submit toolbar. |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.Initializer.parameter.credentialsScheme">credentials_scheme</a></code> | <code>str</code> | Application credentials scheme. |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.Initializer.parameter.enduserNote">enduser_note</a></code> | <code>str</code> | Application notes for end users. |
-| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.Initializer.parameter.groups">groups</a></code> | <code>typing.List[str]</code> | Groups associated with the application. |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.Initializer.parameter.hideIos">hide_ios</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Do not display application icon on mobile app. |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.Initializer.parameter.hideWeb">hide_web</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Do not display application icon to users. |
-| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_auto_login#id AppAutoLogin#id}. |
+| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_auto_login#id AppAutoLogin#id}. |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.Initializer.parameter.logo">logo</a></code> | <code>str</code> | Local path to logo of the application. |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.Initializer.parameter.preconfiguredApp">preconfigured_app</a></code> | <code>str</code> | Preconfigured app name. |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.Initializer.parameter.revealPassword">reveal_password</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Allow user to reveal password. |
@@ -90,15 +85,12 @@ appAutoLogin.AppAutoLogin(
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.Initializer.parameter.sharedUsername">shared_username</a></code> | <code>str</code> | Shared username, required for certain schemes. |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.Initializer.parameter.signOnRedirectUrl">sign_on_redirect_url</a></code> | <code>str</code> | Post login redirect URL. |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.Initializer.parameter.signOnUrl">sign_on_url</a></code> | <code>str</code> | Login URL. |
-| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.Initializer.parameter.skipGroups">skip_groups</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources. |
-| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.Initializer.parameter.skipUsers">skip_users</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources. |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.Initializer.parameter.status">status</a></code> | <code>str</code> | Status of application. |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginTimeouts">AppAutoLoginTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.Initializer.parameter.userNameTemplate">user_name_template</a></code> | <code>str</code> | Username template. |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.Initializer.parameter.userNameTemplatePushStatus">user_name_template_push_status</a></code> | <code>str</code> | Push username on update. |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.Initializer.parameter.userNameTemplateSuffix">user_name_template_suffix</a></code> | <code>str</code> | Username template suffix. |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.Initializer.parameter.userNameTemplateType">user_name_template_type</a></code> | <code>str</code> | Username template type. |
-| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.Initializer.parameter.users">users</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsers">AppAutoLoginUsers</a>]]</code> | users block. |
 
 ---
 
@@ -168,7 +160,7 @@ Must be unique amongst siblings in the same scope
 
 Pretty name of app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_auto_login#label AppAutoLogin#label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_auto_login#label AppAutoLogin#label}
 
 ---
 
@@ -178,7 +170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Custom error page URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_auto_login#accessibility_error_redirect_url AppAutoLogin#accessibility_error_redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_auto_login#accessibility_error_redirect_url AppAutoLogin#accessibility_error_redirect_url}
 
 ---
 
@@ -188,7 +180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Custom login page URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_auto_login#accessibility_login_redirect_url AppAutoLogin#accessibility_login_redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_auto_login#accessibility_login_redirect_url AppAutoLogin#accessibility_login_redirect_url}
 
 ---
 
@@ -198,7 +190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Enable self service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_auto_login#accessibility_self_service AppAutoLogin#accessibility_self_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_auto_login#accessibility_self_service AppAutoLogin#accessibility_self_service}
 
 ---
 
@@ -208,7 +200,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Application notes for admins.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_auto_login#admin_note AppAutoLogin#admin_note}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_auto_login#admin_note AppAutoLogin#admin_note}
 
 ---
 
@@ -218,7 +210,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Displays specific appLinks for the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_auto_login#app_links_json AppAutoLogin#app_links_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_auto_login#app_links_json AppAutoLogin#app_links_json}
 
 ---
 
@@ -228,7 +220,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Application settings in JSON format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_auto_login#app_settings_json AppAutoLogin#app_settings_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_auto_login#app_settings_json AppAutoLogin#app_settings_json}
 
 ---
 
@@ -238,7 +230,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Display auto submit toolbar.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_auto_login#auto_submit_toolbar AppAutoLogin#auto_submit_toolbar}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_auto_login#auto_submit_toolbar AppAutoLogin#auto_submit_toolbar}
 
 ---
 
@@ -248,7 +240,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Application credentials scheme.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_auto_login#credentials_scheme AppAutoLogin#credentials_scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_auto_login#credentials_scheme AppAutoLogin#credentials_scheme}
 
 ---
 
@@ -258,17 +250,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Application notes for end users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_auto_login#enduser_note AppAutoLogin#enduser_note}
-
----
-
-##### `groups`<sup>Optional</sup> <a name="groups" id="@cdktf/provider-okta.appAutoLogin.AppAutoLogin.Initializer.parameter.groups"></a>
-
-- *Type:* typing.List[str]
-
-Groups associated with the application.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_auto_login#groups AppAutoLogin#groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_auto_login#enduser_note AppAutoLogin#enduser_note}
 
 ---
 
@@ -278,7 +260,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Do not display application icon on mobile app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_auto_login#hide_ios AppAutoLogin#hide_ios}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_auto_login#hide_ios AppAutoLogin#hide_ios}
 
 ---
 
@@ -288,7 +270,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Do not display application icon to users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_auto_login#hide_web AppAutoLogin#hide_web}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_auto_login#hide_web AppAutoLogin#hide_web}
 
 ---
 
@@ -296,7 +278,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_auto_login#id AppAutoLogin#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_auto_login#id AppAutoLogin#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -309,7 +291,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Local path to logo of the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_auto_login#logo AppAutoLogin#logo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_auto_login#logo AppAutoLogin#logo}
 
 ---
 
@@ -319,7 +301,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Preconfigured app name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_auto_login#preconfigured_app AppAutoLogin#preconfigured_app}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_auto_login#preconfigured_app AppAutoLogin#preconfigured_app}
 
 ---
 
@@ -329,7 +311,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Allow user to reveal password.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_auto_login#reveal_password AppAutoLogin#reveal_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_auto_login#reveal_password AppAutoLogin#reveal_password}
 
 ---
 
@@ -339,7 +321,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Shared password, required for certain schemes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_auto_login#shared_password AppAutoLogin#shared_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_auto_login#shared_password AppAutoLogin#shared_password}
 
 ---
 
@@ -349,7 +331,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Shared username, required for certain schemes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_auto_login#shared_username AppAutoLogin#shared_username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_auto_login#shared_username AppAutoLogin#shared_username}
 
 ---
 
@@ -359,7 +341,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Post login redirect URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_auto_login#sign_on_redirect_url AppAutoLogin#sign_on_redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_auto_login#sign_on_redirect_url AppAutoLogin#sign_on_redirect_url}
 
 ---
 
@@ -369,27 +351,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Login URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_auto_login#sign_on_url AppAutoLogin#sign_on_url}
-
----
-
-##### `skip_groups`<sup>Optional</sup> <a name="skip_groups" id="@cdktf/provider-okta.appAutoLogin.AppAutoLogin.Initializer.parameter.skipGroups"></a>
-
-- *Type:* typing.Union[bool, cdktf.IResolvable]
-
-Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_auto_login#skip_groups AppAutoLogin#skip_groups}
-
----
-
-##### `skip_users`<sup>Optional</sup> <a name="skip_users" id="@cdktf/provider-okta.appAutoLogin.AppAutoLogin.Initializer.parameter.skipUsers"></a>
-
-- *Type:* typing.Union[bool, cdktf.IResolvable]
-
-Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_auto_login#skip_users AppAutoLogin#skip_users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_auto_login#sign_on_url AppAutoLogin#sign_on_url}
 
 ---
 
@@ -399,7 +361,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Status of application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_auto_login#status AppAutoLogin#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_auto_login#status AppAutoLogin#status}
 
 ---
 
@@ -409,7 +371,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_auto_login#timeouts AppAutoLogin#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_auto_login#timeouts AppAutoLogin#timeouts}
 
 ---
 
@@ -419,7 +381,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Username template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_auto_login#user_name_template AppAutoLogin#user_name_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_auto_login#user_name_template AppAutoLogin#user_name_template}
 
 ---
 
@@ -429,7 +391,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Push username on update.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_auto_login#user_name_template_push_status AppAutoLogin#user_name_template_push_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_auto_login#user_name_template_push_status AppAutoLogin#user_name_template_push_status}
 
 ---
 
@@ -439,7 +401,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Username template suffix.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_auto_login#user_name_template_suffix AppAutoLogin#user_name_template_suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_auto_login#user_name_template_suffix AppAutoLogin#user_name_template_suffix}
 
 ---
 
@@ -449,17 +411,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Username template type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_auto_login#user_name_template_type AppAutoLogin#user_name_template_type}
-
----
-
-##### `users`<sup>Optional</sup> <a name="users" id="@cdktf/provider-okta.appAutoLogin.AppAutoLogin.Initializer.parameter.users"></a>
-
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsers">AppAutoLoginUsers</a>]]
-
-users block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_auto_login#users AppAutoLogin#users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_auto_login#user_name_template_type AppAutoLogin#user_name_template_type}
 
 ---
 
@@ -484,7 +436,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.putTimeouts">put_timeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.putUsers">put_users</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.resetAccessibilityErrorRedirectUrl">reset_accessibility_error_redirect_url</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.resetAccessibilityLoginRedirectUrl">reset_accessibility_login_redirect_url</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.resetAccessibilitySelfService">reset_accessibility_self_service</a></code> | *No description.* |
@@ -494,7 +445,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.resetAutoSubmitToolbar">reset_auto_submit_toolbar</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.resetCredentialsScheme">reset_credentials_scheme</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.resetEnduserNote">reset_enduser_note</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.resetGroups">reset_groups</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.resetHideIos">reset_hide_ios</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.resetHideWeb">reset_hide_web</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.resetId">reset_id</a></code> | *No description.* |
@@ -505,15 +455,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.resetSharedUsername">reset_shared_username</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.resetSignOnRedirectUrl">reset_sign_on_redirect_url</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.resetSignOnUrl">reset_sign_on_url</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.resetSkipGroups">reset_skip_groups</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.resetSkipUsers">reset_skip_users</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.resetStatus">reset_status</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.resetTimeouts">reset_timeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.resetUserNameTemplate">reset_user_name_template</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.resetUserNameTemplatePushStatus">reset_user_name_template_push_status</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.resetUserNameTemplateSuffix">reset_user_name_template_suffix</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.resetUserNameTemplateType">reset_user_name_template_type</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.resetUsers">reset_users</a></code> | *No description.* |
 
 ---
 
@@ -740,7 +687,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_auto_login#create AppAutoLogin#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_auto_login#create AppAutoLogin#create}.
 
 ---
 
@@ -748,7 +695,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_auto_login#read AppAutoLogin#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_auto_login#read AppAutoLogin#read}.
 
 ---
 
@@ -756,21 +703,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_auto_login#update AppAutoLogin#update}.
-
----
-
-##### `put_users` <a name="put_users" id="@cdktf/provider-okta.appAutoLogin.AppAutoLogin.putUsers"></a>
-
-```python
-def put_users(
-  value: typing.Union[IResolvable, typing.List[AppAutoLoginUsers]]
-) -> None
-```
-
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-okta.appAutoLogin.AppAutoLogin.putUsers.parameter.value"></a>
-
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsers">AppAutoLoginUsers</a>]]
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_auto_login#update AppAutoLogin#update}.
 
 ---
 
@@ -826,12 +759,6 @@ def reset_credentials_scheme() -> None
 
 ```python
 def reset_enduser_note() -> None
-```
-
-##### `reset_groups` <a name="reset_groups" id="@cdktf/provider-okta.appAutoLogin.AppAutoLogin.resetGroups"></a>
-
-```python
-def reset_groups() -> None
 ```
 
 ##### `reset_hide_ios` <a name="reset_hide_ios" id="@cdktf/provider-okta.appAutoLogin.AppAutoLogin.resetHideIos"></a>
@@ -894,18 +821,6 @@ def reset_sign_on_redirect_url() -> None
 def reset_sign_on_url() -> None
 ```
 
-##### `reset_skip_groups` <a name="reset_skip_groups" id="@cdktf/provider-okta.appAutoLogin.AppAutoLogin.resetSkipGroups"></a>
-
-```python
-def reset_skip_groups() -> None
-```
-
-##### `reset_skip_users` <a name="reset_skip_users" id="@cdktf/provider-okta.appAutoLogin.AppAutoLogin.resetSkipUsers"></a>
-
-```python
-def reset_skip_users() -> None
-```
-
 ##### `reset_status` <a name="reset_status" id="@cdktf/provider-okta.appAutoLogin.AppAutoLogin.resetStatus"></a>
 
 ```python
@@ -940,12 +855,6 @@ def reset_user_name_template_suffix() -> None
 
 ```python
 def reset_user_name_template_type() -> None
-```
-
-##### `reset_users` <a name="reset_users" id="@cdktf/provider-okta.appAutoLogin.AppAutoLogin.resetUsers"></a>
-
-```python
-def reset_users() -> None
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -1046,7 +955,6 @@ appAutoLogin.AppAutoLogin.is_terraform_resource(
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.property.signOnMode">sign_on_mode</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginTimeoutsOutputReference">AppAutoLoginTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.property.users">users</a></code> | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersList">AppAutoLoginUsersList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.property.accessibilityErrorRedirectUrlInput">accessibility_error_redirect_url_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.property.accessibilityLoginRedirectUrlInput">accessibility_login_redirect_url_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.property.accessibilitySelfServiceInput">accessibility_self_service_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
@@ -1056,7 +964,6 @@ appAutoLogin.AppAutoLogin.is_terraform_resource(
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.property.autoSubmitToolbarInput">auto_submit_toolbar_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.property.credentialsSchemeInput">credentials_scheme_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.property.enduserNoteInput">enduser_note_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.property.groupsInput">groups_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.property.hideIosInput">hide_ios_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.property.hideWebInput">hide_web_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
@@ -1068,15 +975,12 @@ appAutoLogin.AppAutoLogin.is_terraform_resource(
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.property.sharedUsernameInput">shared_username_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.property.signOnRedirectUrlInput">sign_on_redirect_url_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.property.signOnUrlInput">sign_on_url_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.property.skipGroupsInput">skip_groups_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.property.skipUsersInput">skip_users_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.property.statusInput">status_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[<a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginTimeouts">AppAutoLoginTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.property.userNameTemplateInput">user_name_template_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.property.userNameTemplatePushStatusInput">user_name_template_push_status_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.property.userNameTemplateSuffixInput">user_name_template_suffix_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.property.userNameTemplateTypeInput">user_name_template_type_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.property.usersInput">users_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsers">AppAutoLoginUsers</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.property.accessibilityErrorRedirectUrl">accessibility_error_redirect_url</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.property.accessibilityLoginRedirectUrl">accessibility_login_redirect_url</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.property.accessibilitySelfService">accessibility_self_service</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
@@ -1086,7 +990,6 @@ appAutoLogin.AppAutoLogin.is_terraform_resource(
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.property.autoSubmitToolbar">auto_submit_toolbar</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.property.credentialsScheme">credentials_scheme</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.property.enduserNote">enduser_note</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.property.groups">groups</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.property.hideIos">hide_ios</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.property.hideWeb">hide_web</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.property.id">id</a></code> | <code>str</code> | *No description.* |
@@ -1098,8 +1001,6 @@ appAutoLogin.AppAutoLogin.is_terraform_resource(
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.property.sharedUsername">shared_username</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.property.signOnRedirectUrl">sign_on_redirect_url</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.property.signOnUrl">sign_on_url</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.property.skipGroups">skip_groups</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.property.skipUsers">skip_users</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.property.status">status</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.property.userNameTemplate">user_name_template</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLogin.property.userNameTemplatePushStatus">user_name_template_push_status</a></code> | <code>str</code> | *No description.* |
@@ -1290,16 +1191,6 @@ timeouts: AppAutoLoginTimeoutsOutputReference
 
 ---
 
-##### `users`<sup>Required</sup> <a name="users" id="@cdktf/provider-okta.appAutoLogin.AppAutoLogin.property.users"></a>
-
-```python
-users: AppAutoLoginUsersList
-```
-
-- *Type:* <a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersList">AppAutoLoginUsersList</a>
-
----
-
 ##### `accessibility_error_redirect_url_input`<sup>Optional</sup> <a name="accessibility_error_redirect_url_input" id="@cdktf/provider-okta.appAutoLogin.AppAutoLogin.property.accessibilityErrorRedirectUrlInput"></a>
 
 ```python
@@ -1387,16 +1278,6 @@ enduser_note_input: str
 ```
 
 - *Type:* str
-
----
-
-##### `groups_input`<sup>Optional</sup> <a name="groups_input" id="@cdktf/provider-okta.appAutoLogin.AppAutoLogin.property.groupsInput"></a>
-
-```python
-groups_input: typing.List[str]
-```
-
-- *Type:* typing.List[str]
 
 ---
 
@@ -1510,26 +1391,6 @@ sign_on_url_input: str
 
 ---
 
-##### `skip_groups_input`<sup>Optional</sup> <a name="skip_groups_input" id="@cdktf/provider-okta.appAutoLogin.AppAutoLogin.property.skipGroupsInput"></a>
-
-```python
-skip_groups_input: typing.Union[bool, IResolvable]
-```
-
-- *Type:* typing.Union[bool, cdktf.IResolvable]
-
----
-
-##### `skip_users_input`<sup>Optional</sup> <a name="skip_users_input" id="@cdktf/provider-okta.appAutoLogin.AppAutoLogin.property.skipUsersInput"></a>
-
-```python
-skip_users_input: typing.Union[bool, IResolvable]
-```
-
-- *Type:* typing.Union[bool, cdktf.IResolvable]
-
----
-
 ##### `status_input`<sup>Optional</sup> <a name="status_input" id="@cdktf/provider-okta.appAutoLogin.AppAutoLogin.property.statusInput"></a>
 
 ```python
@@ -1587,16 +1448,6 @@ user_name_template_type_input: str
 ```
 
 - *Type:* str
-
----
-
-##### `users_input`<sup>Optional</sup> <a name="users_input" id="@cdktf/provider-okta.appAutoLogin.AppAutoLogin.property.usersInput"></a>
-
-```python
-users_input: typing.Union[IResolvable, typing.List[AppAutoLoginUsers]]
-```
-
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsers">AppAutoLoginUsers</a>]]
 
 ---
 
@@ -1687,16 +1538,6 @@ enduser_note: str
 ```
 
 - *Type:* str
-
----
-
-##### `groups`<sup>Required</sup> <a name="groups" id="@cdktf/provider-okta.appAutoLogin.AppAutoLogin.property.groups"></a>
-
-```python
-groups: typing.List[str]
-```
-
-- *Type:* typing.List[str]
 
 ---
 
@@ -1810,26 +1651,6 @@ sign_on_url: str
 
 ---
 
-##### `skip_groups`<sup>Required</sup> <a name="skip_groups" id="@cdktf/provider-okta.appAutoLogin.AppAutoLogin.property.skipGroups"></a>
-
-```python
-skip_groups: typing.Union[bool, IResolvable]
-```
-
-- *Type:* typing.Union[bool, cdktf.IResolvable]
-
----
-
-##### `skip_users`<sup>Required</sup> <a name="skip_users" id="@cdktf/provider-okta.appAutoLogin.AppAutoLogin.property.skipUsers"></a>
-
-```python
-skip_users: typing.Union[bool, IResolvable]
-```
-
-- *Type:* typing.Union[bool, cdktf.IResolvable]
-
----
-
 ##### `status`<sup>Required</sup> <a name="status" id="@cdktf/provider-okta.appAutoLogin.AppAutoLogin.property.status"></a>
 
 ```python
@@ -1925,7 +1746,6 @@ appAutoLogin.AppAutoLoginConfig(
   auto_submit_toolbar: typing.Union[bool, IResolvable] = None,
   credentials_scheme: str = None,
   enduser_note: str = None,
-  groups: typing.List[str] = None,
   hide_ios: typing.Union[bool, IResolvable] = None,
   hide_web: typing.Union[bool, IResolvable] = None,
   id: str = None,
@@ -1936,15 +1756,12 @@ appAutoLogin.AppAutoLoginConfig(
   shared_username: str = None,
   sign_on_redirect_url: str = None,
   sign_on_url: str = None,
-  skip_groups: typing.Union[bool, IResolvable] = None,
-  skip_users: typing.Union[bool, IResolvable] = None,
   status: str = None,
   timeouts: AppAutoLoginTimeouts = None,
   user_name_template: str = None,
   user_name_template_push_status: str = None,
   user_name_template_suffix: str = None,
-  user_name_template_type: str = None,
-  users: typing.Union[IResolvable, typing.List[AppAutoLoginUsers]] = None
+  user_name_template_type: str = None
 )
 ```
 
@@ -1969,10 +1786,9 @@ appAutoLogin.AppAutoLoginConfig(
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginConfig.property.autoSubmitToolbar">auto_submit_toolbar</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Display auto submit toolbar. |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginConfig.property.credentialsScheme">credentials_scheme</a></code> | <code>str</code> | Application credentials scheme. |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginConfig.property.enduserNote">enduser_note</a></code> | <code>str</code> | Application notes for end users. |
-| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginConfig.property.groups">groups</a></code> | <code>typing.List[str]</code> | Groups associated with the application. |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginConfig.property.hideIos">hide_ios</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Do not display application icon on mobile app. |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginConfig.property.hideWeb">hide_web</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Do not display application icon to users. |
-| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_auto_login#id AppAutoLogin#id}. |
+| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_auto_login#id AppAutoLogin#id}. |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginConfig.property.logo">logo</a></code> | <code>str</code> | Local path to logo of the application. |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginConfig.property.preconfiguredApp">preconfigured_app</a></code> | <code>str</code> | Preconfigured app name. |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginConfig.property.revealPassword">reveal_password</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Allow user to reveal password. |
@@ -1980,15 +1796,12 @@ appAutoLogin.AppAutoLoginConfig(
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginConfig.property.sharedUsername">shared_username</a></code> | <code>str</code> | Shared username, required for certain schemes. |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginConfig.property.signOnRedirectUrl">sign_on_redirect_url</a></code> | <code>str</code> | Post login redirect URL. |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginConfig.property.signOnUrl">sign_on_url</a></code> | <code>str</code> | Login URL. |
-| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginConfig.property.skipGroups">skip_groups</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources. |
-| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginConfig.property.skipUsers">skip_users</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources. |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginConfig.property.status">status</a></code> | <code>str</code> | Status of application. |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginTimeouts">AppAutoLoginTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginConfig.property.userNameTemplate">user_name_template</a></code> | <code>str</code> | Username template. |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginConfig.property.userNameTemplatePushStatus">user_name_template_push_status</a></code> | <code>str</code> | Push username on update. |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginConfig.property.userNameTemplateSuffix">user_name_template_suffix</a></code> | <code>str</code> | Username template suffix. |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginConfig.property.userNameTemplateType">user_name_template_type</a></code> | <code>str</code> | Username template type. |
-| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginConfig.property.users">users</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsers">AppAutoLoginUsers</a>]]</code> | users block. |
 
 ---
 
@@ -2072,7 +1885,7 @@ label: str
 
 Pretty name of app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_auto_login#label AppAutoLogin#label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_auto_login#label AppAutoLogin#label}
 
 ---
 
@@ -2086,7 +1899,7 @@ accessibility_error_redirect_url: str
 
 Custom error page URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_auto_login#accessibility_error_redirect_url AppAutoLogin#accessibility_error_redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_auto_login#accessibility_error_redirect_url AppAutoLogin#accessibility_error_redirect_url}
 
 ---
 
@@ -2100,7 +1913,7 @@ accessibility_login_redirect_url: str
 
 Custom login page URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_auto_login#accessibility_login_redirect_url AppAutoLogin#accessibility_login_redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_auto_login#accessibility_login_redirect_url AppAutoLogin#accessibility_login_redirect_url}
 
 ---
 
@@ -2114,7 +1927,7 @@ accessibility_self_service: typing.Union[bool, IResolvable]
 
 Enable self service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_auto_login#accessibility_self_service AppAutoLogin#accessibility_self_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_auto_login#accessibility_self_service AppAutoLogin#accessibility_self_service}
 
 ---
 
@@ -2128,7 +1941,7 @@ admin_note: str
 
 Application notes for admins.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_auto_login#admin_note AppAutoLogin#admin_note}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_auto_login#admin_note AppAutoLogin#admin_note}
 
 ---
 
@@ -2142,7 +1955,7 @@ app_links_json: str
 
 Displays specific appLinks for the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_auto_login#app_links_json AppAutoLogin#app_links_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_auto_login#app_links_json AppAutoLogin#app_links_json}
 
 ---
 
@@ -2156,7 +1969,7 @@ app_settings_json: str
 
 Application settings in JSON format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_auto_login#app_settings_json AppAutoLogin#app_settings_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_auto_login#app_settings_json AppAutoLogin#app_settings_json}
 
 ---
 
@@ -2170,7 +1983,7 @@ auto_submit_toolbar: typing.Union[bool, IResolvable]
 
 Display auto submit toolbar.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_auto_login#auto_submit_toolbar AppAutoLogin#auto_submit_toolbar}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_auto_login#auto_submit_toolbar AppAutoLogin#auto_submit_toolbar}
 
 ---
 
@@ -2184,7 +1997,7 @@ credentials_scheme: str
 
 Application credentials scheme.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_auto_login#credentials_scheme AppAutoLogin#credentials_scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_auto_login#credentials_scheme AppAutoLogin#credentials_scheme}
 
 ---
 
@@ -2198,21 +2011,7 @@ enduser_note: str
 
 Application notes for end users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_auto_login#enduser_note AppAutoLogin#enduser_note}
-
----
-
-##### `groups`<sup>Optional</sup> <a name="groups" id="@cdktf/provider-okta.appAutoLogin.AppAutoLoginConfig.property.groups"></a>
-
-```python
-groups: typing.List[str]
-```
-
-- *Type:* typing.List[str]
-
-Groups associated with the application.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_auto_login#groups AppAutoLogin#groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_auto_login#enduser_note AppAutoLogin#enduser_note}
 
 ---
 
@@ -2226,7 +2025,7 @@ hide_ios: typing.Union[bool, IResolvable]
 
 Do not display application icon on mobile app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_auto_login#hide_ios AppAutoLogin#hide_ios}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_auto_login#hide_ios AppAutoLogin#hide_ios}
 
 ---
 
@@ -2240,7 +2039,7 @@ hide_web: typing.Union[bool, IResolvable]
 
 Do not display application icon to users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_auto_login#hide_web AppAutoLogin#hide_web}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_auto_login#hide_web AppAutoLogin#hide_web}
 
 ---
 
@@ -2252,7 +2051,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_auto_login#id AppAutoLogin#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_auto_login#id AppAutoLogin#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2269,7 +2068,7 @@ logo: str
 
 Local path to logo of the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_auto_login#logo AppAutoLogin#logo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_auto_login#logo AppAutoLogin#logo}
 
 ---
 
@@ -2283,7 +2082,7 @@ preconfigured_app: str
 
 Preconfigured app name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_auto_login#preconfigured_app AppAutoLogin#preconfigured_app}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_auto_login#preconfigured_app AppAutoLogin#preconfigured_app}
 
 ---
 
@@ -2297,7 +2096,7 @@ reveal_password: typing.Union[bool, IResolvable]
 
 Allow user to reveal password.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_auto_login#reveal_password AppAutoLogin#reveal_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_auto_login#reveal_password AppAutoLogin#reveal_password}
 
 ---
 
@@ -2311,7 +2110,7 @@ shared_password: str
 
 Shared password, required for certain schemes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_auto_login#shared_password AppAutoLogin#shared_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_auto_login#shared_password AppAutoLogin#shared_password}
 
 ---
 
@@ -2325,7 +2124,7 @@ shared_username: str
 
 Shared username, required for certain schemes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_auto_login#shared_username AppAutoLogin#shared_username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_auto_login#shared_username AppAutoLogin#shared_username}
 
 ---
 
@@ -2339,7 +2138,7 @@ sign_on_redirect_url: str
 
 Post login redirect URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_auto_login#sign_on_redirect_url AppAutoLogin#sign_on_redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_auto_login#sign_on_redirect_url AppAutoLogin#sign_on_redirect_url}
 
 ---
 
@@ -2353,35 +2152,7 @@ sign_on_url: str
 
 Login URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_auto_login#sign_on_url AppAutoLogin#sign_on_url}
-
----
-
-##### `skip_groups`<sup>Optional</sup> <a name="skip_groups" id="@cdktf/provider-okta.appAutoLogin.AppAutoLoginConfig.property.skipGroups"></a>
-
-```python
-skip_groups: typing.Union[bool, IResolvable]
-```
-
-- *Type:* typing.Union[bool, cdktf.IResolvable]
-
-Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_auto_login#skip_groups AppAutoLogin#skip_groups}
-
----
-
-##### `skip_users`<sup>Optional</sup> <a name="skip_users" id="@cdktf/provider-okta.appAutoLogin.AppAutoLoginConfig.property.skipUsers"></a>
-
-```python
-skip_users: typing.Union[bool, IResolvable]
-```
-
-- *Type:* typing.Union[bool, cdktf.IResolvable]
-
-Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_auto_login#skip_users AppAutoLogin#skip_users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_auto_login#sign_on_url AppAutoLogin#sign_on_url}
 
 ---
 
@@ -2395,7 +2166,7 @@ status: str
 
 Status of application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_auto_login#status AppAutoLogin#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_auto_login#status AppAutoLogin#status}
 
 ---
 
@@ -2409,7 +2180,7 @@ timeouts: AppAutoLoginTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_auto_login#timeouts AppAutoLogin#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_auto_login#timeouts AppAutoLogin#timeouts}
 
 ---
 
@@ -2423,7 +2194,7 @@ user_name_template: str
 
 Username template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_auto_login#user_name_template AppAutoLogin#user_name_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_auto_login#user_name_template AppAutoLogin#user_name_template}
 
 ---
 
@@ -2437,7 +2208,7 @@ user_name_template_push_status: str
 
 Push username on update.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_auto_login#user_name_template_push_status AppAutoLogin#user_name_template_push_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_auto_login#user_name_template_push_status AppAutoLogin#user_name_template_push_status}
 
 ---
 
@@ -2451,7 +2222,7 @@ user_name_template_suffix: str
 
 Username template suffix.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_auto_login#user_name_template_suffix AppAutoLogin#user_name_template_suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_auto_login#user_name_template_suffix AppAutoLogin#user_name_template_suffix}
 
 ---
 
@@ -2465,21 +2236,7 @@ user_name_template_type: str
 
 Username template type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_auto_login#user_name_template_type AppAutoLogin#user_name_template_type}
-
----
-
-##### `users`<sup>Optional</sup> <a name="users" id="@cdktf/provider-okta.appAutoLogin.AppAutoLoginConfig.property.users"></a>
-
-```python
-users: typing.Union[IResolvable, typing.List[AppAutoLoginUsers]]
-```
-
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsers">AppAutoLoginUsers</a>]]
-
-users block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_auto_login#users AppAutoLogin#users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_auto_login#user_name_template_type AppAutoLogin#user_name_template_type}
 
 ---
 
@@ -2501,9 +2258,9 @@ appAutoLogin.AppAutoLoginTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_auto_login#create AppAutoLogin#create}. |
-| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_auto_login#read AppAutoLogin#read}. |
-| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_auto_login#update AppAutoLogin#update}. |
+| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_auto_login#create AppAutoLogin#create}. |
+| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_auto_login#read AppAutoLogin#read}. |
+| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_auto_login#update AppAutoLogin#update}. |
 
 ---
 
@@ -2515,7 +2272,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_auto_login#create AppAutoLogin#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_auto_login#create AppAutoLogin#create}.
 
 ---
 
@@ -2527,7 +2284,7 @@ read: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_auto_login#read AppAutoLogin#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_auto_login#read AppAutoLogin#read}.
 
 ---
 
@@ -2539,76 +2296,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_auto_login#update AppAutoLogin#update}.
-
----
-
-### AppAutoLoginUsers <a name="AppAutoLoginUsers" id="@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsers"></a>
-
-#### Initializer <a name="Initializer" id="@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsers.Initializer"></a>
-
-```python
-from cdktf_cdktf_provider_okta import app_auto_login
-
-appAutoLogin.AppAutoLoginUsers(
-  id: str = None,
-  password: str = None,
-  username: str = None
-)
-```
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsers.property.id">id</a></code> | <code>str</code> | User ID. |
-| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsers.property.password">password</a></code> | <code>str</code> | Password for user application. |
-| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsers.property.username">username</a></code> | <code>str</code> | Username for user. |
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsers.property.id"></a>
-
-```python
-id: str
-```
-
-- *Type:* str
-
-User ID.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_auto_login#id AppAutoLogin#id}
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-
----
-
-##### `password`<sup>Optional</sup> <a name="password" id="@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsers.property.password"></a>
-
-```python
-password: str
-```
-
-- *Type:* str
-
-Password for user application.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_auto_login#password AppAutoLogin#password}
-
----
-
-##### `username`<sup>Optional</sup> <a name="username" id="@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsers.property.username"></a>
-
-```python
-username: str
-```
-
-- *Type:* str
-
-Username for user.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_auto_login#username AppAutoLogin#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_auto_login#update AppAutoLogin#update}.
 
 ---
 
@@ -2971,549 +2659,6 @@ internal_value: typing.Union[AppAutoLoginTimeouts, IResolvable]
 ```
 
 - *Type:* typing.Union[<a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginTimeouts">AppAutoLoginTimeouts</a>, cdktf.IResolvable]
-
----
-
-
-### AppAutoLoginUsersList <a name="AppAutoLoginUsersList" id="@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersList"></a>
-
-#### Initializers <a name="Initializers" id="@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersList.Initializer"></a>
-
-```python
-from cdktf_cdktf_provider_okta import app_auto_login
-
-appAutoLogin.AppAutoLoginUsersList(
-  terraform_resource: IInterpolatingParent,
-  terraform_attribute: str,
-  wraps_set: bool
-)
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
-
----
-
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersList.Initializer.parameter.terraformResource"></a>
-
-- *Type:* cdktf.IInterpolatingParent
-
-The parent resource.
-
----
-
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersList.Initializer.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
-The attribute on the parent resource this class is referencing.
-
----
-
-##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersList.Initializer.parameter.wrapsSet"></a>
-
-- *Type:* bool
-
-whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersList.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersList.get">get</a></code> | *No description.* |
-
----
-
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersList.computeFqn"></a>
-
-```python
-def compute_fqn() -> str
-```
-
-##### `resolve` <a name="resolve" id="@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersList.resolve"></a>
-
-```python
-def resolve(
-  _context: IResolveContext
-) -> typing.Any
-```
-
-Produce the Token's value at resolution time.
-
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersList.resolve.parameter._context"></a>
-
-- *Type:* cdktf.IResolveContext
-
----
-
-##### `to_string` <a name="to_string" id="@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersList.toString"></a>
-
-```python
-def to_string() -> str
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-##### `get` <a name="get" id="@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersList.get"></a>
-
-```python
-def get(
-  index: typing.Union[int, float]
-) -> AppAutoLoginUsersOutputReference
-```
-
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersList.get.parameter.index"></a>
-
-- *Type:* typing.Union[int, float]
-
-the index of the item to return.
-
----
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsers">AppAutoLoginUsers</a>]]</code> | *No description.* |
-
----
-
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersList.property.creationStack"></a>
-
-```python
-creation_stack: typing.List[str]
-```
-
-- *Type:* typing.List[str]
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersList.property.fqn"></a>
-
-```python
-fqn: str
-```
-
-- *Type:* str
-
----
-
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersList.property.internalValue"></a>
-
-```python
-internal_value: typing.Union[IResolvable, typing.List[AppAutoLoginUsers]]
-```
-
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsers">AppAutoLoginUsers</a>]]
-
----
-
-
-### AppAutoLoginUsersOutputReference <a name="AppAutoLoginUsersOutputReference" id="@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersOutputReference"></a>
-
-#### Initializers <a name="Initializers" id="@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersOutputReference.Initializer"></a>
-
-```python
-from cdktf_cdktf_provider_okta import app_auto_login
-
-appAutoLogin.AppAutoLoginUsersOutputReference(
-  terraform_resource: IInterpolatingParent,
-  terraform_attribute: str,
-  complex_object_index: typing.Union[int, float],
-  complex_object_is_from_set: bool
-)
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
-
----
-
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersOutputReference.Initializer.parameter.terraformResource"></a>
-
-- *Type:* cdktf.IInterpolatingParent
-
-The parent resource.
-
----
-
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersOutputReference.Initializer.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
-The attribute on the parent resource this class is referencing.
-
----
-
-##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersOutputReference.Initializer.parameter.complexObjectIndex"></a>
-
-- *Type:* typing.Union[int, float]
-
-the index of this item in the list.
-
----
-
-##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
-
-- *Type:* bool
-
-whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersOutputReference.resetId">reset_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersOutputReference.resetPassword">reset_password</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersOutputReference.resetUsername">reset_username</a></code> | *No description.* |
-
----
-
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersOutputReference.computeFqn"></a>
-
-```python
-def compute_fqn() -> str
-```
-
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersOutputReference.getAnyMapAttribute"></a>
-
-```python
-def get_any_map_attribute(
-  terraform_attribute: str
-) -> typing.Mapping[typing.Any]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersOutputReference.getBooleanAttribute"></a>
-
-```python
-def get_boolean_attribute(
-  terraform_attribute: str
-) -> IResolvable
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersOutputReference.getBooleanMapAttribute"></a>
-
-```python
-def get_boolean_map_attribute(
-  terraform_attribute: str
-) -> typing.Mapping[bool]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersOutputReference.getListAttribute"></a>
-
-```python
-def get_list_attribute(
-  terraform_attribute: str
-) -> typing.List[str]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersOutputReference.getListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersOutputReference.getNumberAttribute"></a>
-
-```python
-def get_number_attribute(
-  terraform_attribute: str
-) -> typing.Union[int, float]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersOutputReference.getNumberListAttribute"></a>
-
-```python
-def get_number_list_attribute(
-  terraform_attribute: str
-) -> typing.List[typing.Union[int, float]]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersOutputReference.getNumberMapAttribute"></a>
-
-```python
-def get_number_map_attribute(
-  terraform_attribute: str
-) -> typing.Mapping[typing.Union[int, float]]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersOutputReference.getStringAttribute"></a>
-
-```python
-def get_string_attribute(
-  terraform_attribute: str
-) -> str
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersOutputReference.getStringMapAttribute"></a>
-
-```python
-def get_string_map_attribute(
-  terraform_attribute: str
-) -> typing.Mapping[str]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersOutputReference.interpolationForAttribute"></a>
-
-```python
-def interpolation_for_attribute(
-  property: str
-) -> IResolvable
-```
-
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersOutputReference.interpolationForAttribute.parameter.property"></a>
-
-- *Type:* str
-
----
-
-##### `resolve` <a name="resolve" id="@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersOutputReference.resolve"></a>
-
-```python
-def resolve(
-  _context: IResolveContext
-) -> typing.Any
-```
-
-Produce the Token's value at resolution time.
-
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersOutputReference.resolve.parameter._context"></a>
-
-- *Type:* cdktf.IResolveContext
-
----
-
-##### `to_string` <a name="to_string" id="@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersOutputReference.toString"></a>
-
-```python
-def to_string() -> str
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersOutputReference.resetId"></a>
-
-```python
-def reset_id() -> None
-```
-
-##### `reset_password` <a name="reset_password" id="@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersOutputReference.resetPassword"></a>
-
-```python
-def reset_password() -> None
-```
-
-##### `reset_username` <a name="reset_username" id="@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersOutputReference.resetUsername"></a>
-
-```python
-def reset_username() -> None
-```
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersOutputReference.property.scope">scope</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersOutputReference.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersOutputReference.property.passwordInput">password_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersOutputReference.property.usernameInput">username_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersOutputReference.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersOutputReference.property.password">password</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersOutputReference.property.username">username</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsers">AppAutoLoginUsers</a>, cdktf.IResolvable]</code> | *No description.* |
-
----
-
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersOutputReference.property.creationStack"></a>
-
-```python
-creation_stack: typing.List[str]
-```
-
-- *Type:* typing.List[str]
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersOutputReference.property.fqn"></a>
-
-```python
-fqn: str
-```
-
-- *Type:* str
-
----
-
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersOutputReference.property.scope"></a>
-
-```python
-scope: str
-```
-
-- *Type:* str
-
----
-
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersOutputReference.property.idInput"></a>
-
-```python
-id_input: str
-```
-
-- *Type:* str
-
----
-
-##### `password_input`<sup>Optional</sup> <a name="password_input" id="@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersOutputReference.property.passwordInput"></a>
-
-```python
-password_input: str
-```
-
-- *Type:* str
-
----
-
-##### `username_input`<sup>Optional</sup> <a name="username_input" id="@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersOutputReference.property.usernameInput"></a>
-
-```python
-username_input: str
-```
-
-- *Type:* str
-
----
-
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersOutputReference.property.id"></a>
-
-```python
-id: str
-```
-
-- *Type:* str
-
----
-
-##### `password`<sup>Required</sup> <a name="password" id="@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersOutputReference.property.password"></a>
-
-```python
-password: str
-```
-
-- *Type:* str
-
----
-
-##### `username`<sup>Required</sup> <a name="username" id="@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersOutputReference.property.username"></a>
-
-```python
-username: str
-```
-
-- *Type:* str
-
----
-
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersOutputReference.property.internalValue"></a>
-
-```python
-internal_value: typing.Union[AppAutoLoginUsers, IResolvable]
-```
-
-- *Type:* typing.Union[<a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsers">AppAutoLoginUsers</a>, cdktf.IResolvable]
 
 ---
 

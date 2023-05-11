@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/org_support
+// https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/org_support
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,11 +10,11 @@ export interface OrgSupportConfig extends cdktf.TerraformMetaArguments {
   /**
   * Number of days the support should be extended by
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/org_support#extend_by OrgSupport#extend_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/org_support#extend_by OrgSupport#extend_by}
   */
   readonly extendBy?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/org_support#id OrgSupport#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/org_support#id OrgSupport#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -23,7 +23,7 @@ export interface OrgSupportConfig extends cdktf.TerraformMetaArguments {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/org_support okta_org_support}
+* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/org_support okta_org_support}
 */
 export class OrgSupport extends cdktf.TerraformResource {
 
@@ -37,7 +37,7 @@ export class OrgSupport extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/org_support okta_org_support} Resource
+  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/org_support okta_org_support} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -48,8 +48,8 @@ export class OrgSupport extends cdktf.TerraformResource {
       terraformResourceType: 'okta_org_support',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '3.46.0',
-        providerVersionConstraint: '~> 3.20'
+        providerVersion: '4.0.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

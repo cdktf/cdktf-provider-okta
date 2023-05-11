@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group_role
+// https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/group_role
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,17 +10,17 @@ export interface GroupRoleConfig extends cdktf.TerraformMetaArguments {
   /**
   * When this setting is enabled, the admins won't receive any of the default Okta administrator emails
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group_role#disable_notifications GroupRole#disable_notifications}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/group_role#disable_notifications GroupRole#disable_notifications}
   */
   readonly disableNotifications?: boolean | cdktf.IResolvable;
   /**
   * ID of group to attach admin roles to
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group_role#group_id GroupRole#group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/group_role#group_id GroupRole#group_id}
   */
   readonly groupId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group_role#id GroupRole#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/group_role#id GroupRole#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -29,25 +29,25 @@ export interface GroupRoleConfig extends cdktf.TerraformMetaArguments {
   /**
   * Type of Role to assign
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group_role#role_type GroupRole#role_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/group_role#role_type GroupRole#role_type}
   */
   readonly roleType: string;
   /**
   * List of apps ids for the targets of the admin role.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group_role#target_app_list GroupRole#target_app_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/group_role#target_app_list GroupRole#target_app_list}
   */
   readonly targetAppList?: string[];
   /**
   * List of groups ids for the targets of the admin role.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group_role#target_group_list GroupRole#target_group_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/group_role#target_group_list GroupRole#target_group_list}
   */
   readonly targetGroupList?: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group_role okta_group_role}
+* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/group_role okta_group_role}
 */
 export class GroupRole extends cdktf.TerraformResource {
 
@@ -61,7 +61,7 @@ export class GroupRole extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group_role okta_group_role} Resource
+  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/group_role okta_group_role} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -72,8 +72,8 @@ export class GroupRole extends cdktf.TerraformResource {
       terraformResourceType: 'okta_group_role',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '3.46.0',
-        providerVersionConstraint: '~> 3.20'
+        providerVersion: '4.0.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

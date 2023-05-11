@@ -1,6 +1,6 @@
 # `okta_policy_rule_mfa`
 
-Refer to the Terraform Registory for docs: [`okta_policy_rule_mfa`](https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/policy_rule_mfa).
+Refer to the Terraform Registory for docs: [`okta_policy_rule_mfa`](https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/policy_rule_mfa).
 
 # `policyRuleMfa` Submodule <a name="`policyRuleMfa` Submodule" id="@cdktf/provider-okta.policyRuleMfa"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_policy_rule_mfa`](https://regi
 
 ### PolicyRuleMfa <a name="PolicyRuleMfa" id="@cdktf/provider-okta.policyRuleMfa.PolicyRuleMfa"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/policy_rule_mfa okta_policy_rule_mfa}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/policy_rule_mfa okta_policy_rule_mfa}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.policyRuleMfa.PolicyRuleMfa.Initializer"></a>
 
@@ -79,7 +79,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-okta.policyRuleMfa.PolicyRuleMfa.resetNetworkConnection">resetNetworkConnection</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleMfa.PolicyRuleMfa.resetNetworkExcludes">resetNetworkExcludes</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleMfa.PolicyRuleMfa.resetNetworkIncludes">resetNetworkIncludes</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyRuleMfa.PolicyRuleMfa.resetPolicyid">resetPolicyid</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleMfa.PolicyRuleMfa.resetPolicyId">resetPolicyId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleMfa.PolicyRuleMfa.resetPriority">resetPriority</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleMfa.PolicyRuleMfa.resetStatus">resetStatus</a></code> | *No description.* |
@@ -337,12 +336,6 @@ public resetNetworkExcludes(): void
 public resetNetworkIncludes(): void
 ```
 
-##### `resetPolicyid` <a name="resetPolicyid" id="@cdktf/provider-okta.policyRuleMfa.PolicyRuleMfa.resetPolicyid"></a>
-
-```typescript
-public resetPolicyid(): void
-```
-
 ##### `resetPolicyId` <a name="resetPolicyId" id="@cdktf/provider-okta.policyRuleMfa.PolicyRuleMfa.resetPolicyId"></a>
 
 ```typescript
@@ -465,7 +458,6 @@ policyRuleMfa.PolicyRuleMfa.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-okta.policyRuleMfa.PolicyRuleMfa.property.networkConnectionInput">networkConnectionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleMfa.PolicyRuleMfa.property.networkExcludesInput">networkExcludesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleMfa.PolicyRuleMfa.property.networkIncludesInput">networkIncludesInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyRuleMfa.PolicyRuleMfa.property.policyidInput">policyidInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleMfa.PolicyRuleMfa.property.policyIdInput">policyIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleMfa.PolicyRuleMfa.property.priorityInput">priorityInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleMfa.PolicyRuleMfa.property.statusInput">statusInput</a></code> | <code>string</code> | *No description.* |
@@ -476,7 +468,6 @@ policyRuleMfa.PolicyRuleMfa.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-okta.policyRuleMfa.PolicyRuleMfa.property.networkConnection">networkConnection</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleMfa.PolicyRuleMfa.property.networkExcludes">networkExcludes</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleMfa.PolicyRuleMfa.property.networkIncludes">networkIncludes</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyRuleMfa.PolicyRuleMfa.property.policyid">policyid</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleMfa.PolicyRuleMfa.property.policyId">policyId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleMfa.PolicyRuleMfa.property.priority">priority</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleMfa.PolicyRuleMfa.property.status">status</a></code> | <code>string</code> | *No description.* |
@@ -726,16 +717,6 @@ public readonly networkIncludesInput: string[];
 
 ---
 
-##### `policyidInput`<sup>Optional</sup> <a name="policyidInput" id="@cdktf/provider-okta.policyRuleMfa.PolicyRuleMfa.property.policyidInput"></a>
-
-```typescript
-public readonly policyidInput: string;
-```
-
-- *Type:* string
-
----
-
 ##### `policyIdInput`<sup>Optional</sup> <a name="policyIdInput" id="@cdktf/provider-okta.policyRuleMfa.PolicyRuleMfa.property.policyIdInput"></a>
 
 ```typescript
@@ -836,16 +817,6 @@ public readonly networkIncludes: string[];
 
 ---
 
-##### `policyid`<sup>Required</sup> <a name="policyid" id="@cdktf/provider-okta.policyRuleMfa.PolicyRuleMfa.property.policyid"></a>
-
-```typescript
-public readonly policyid: string;
-```
-
-- *Type:* string
-
----
-
 ##### `policyId`<sup>Required</sup> <a name="policyId" id="@cdktf/provider-okta.policyRuleMfa.PolicyRuleMfa.property.policyId"></a>
 
 ```typescript
@@ -920,9 +891,9 @@ const policyRuleMfaAppExclude: policyRuleMfa.PolicyRuleMfaAppExclude = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.policyRuleMfa.PolicyRuleMfaAppExclude.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/policy_rule_mfa#type PolicyRuleMfa#type}. |
-| <code><a href="#@cdktf/provider-okta.policyRuleMfa.PolicyRuleMfaAppExclude.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/policy_rule_mfa#id PolicyRuleMfa#id}. |
-| <code><a href="#@cdktf/provider-okta.policyRuleMfa.PolicyRuleMfaAppExclude.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/policy_rule_mfa#name PolicyRuleMfa#name}. |
+| <code><a href="#@cdktf/provider-okta.policyRuleMfa.PolicyRuleMfaAppExclude.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/policy_rule_mfa#type PolicyRuleMfa#type}. |
+| <code><a href="#@cdktf/provider-okta.policyRuleMfa.PolicyRuleMfaAppExclude.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/policy_rule_mfa#id PolicyRuleMfa#id}. |
+| <code><a href="#@cdktf/provider-okta.policyRuleMfa.PolicyRuleMfaAppExclude.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/policy_rule_mfa#name PolicyRuleMfa#name}. |
 
 ---
 
@@ -934,7 +905,7 @@ public readonly type: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/policy_rule_mfa#type PolicyRuleMfa#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/policy_rule_mfa#type PolicyRuleMfa#type}.
 
 ---
 
@@ -946,7 +917,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/policy_rule_mfa#id PolicyRuleMfa#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/policy_rule_mfa#id PolicyRuleMfa#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -961,7 +932,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/policy_rule_mfa#name PolicyRuleMfa#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/policy_rule_mfa#name PolicyRuleMfa#name}.
 
 ---
 
@@ -979,9 +950,9 @@ const policyRuleMfaAppInclude: policyRuleMfa.PolicyRuleMfaAppInclude = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.policyRuleMfa.PolicyRuleMfaAppInclude.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/policy_rule_mfa#type PolicyRuleMfa#type}. |
-| <code><a href="#@cdktf/provider-okta.policyRuleMfa.PolicyRuleMfaAppInclude.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/policy_rule_mfa#id PolicyRuleMfa#id}. |
-| <code><a href="#@cdktf/provider-okta.policyRuleMfa.PolicyRuleMfaAppInclude.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/policy_rule_mfa#name PolicyRuleMfa#name}. |
+| <code><a href="#@cdktf/provider-okta.policyRuleMfa.PolicyRuleMfaAppInclude.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/policy_rule_mfa#type PolicyRuleMfa#type}. |
+| <code><a href="#@cdktf/provider-okta.policyRuleMfa.PolicyRuleMfaAppInclude.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/policy_rule_mfa#id PolicyRuleMfa#id}. |
+| <code><a href="#@cdktf/provider-okta.policyRuleMfa.PolicyRuleMfaAppInclude.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/policy_rule_mfa#name PolicyRuleMfa#name}. |
 
 ---
 
@@ -993,7 +964,7 @@ public readonly type: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/policy_rule_mfa#type PolicyRuleMfa#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/policy_rule_mfa#type PolicyRuleMfa#type}.
 
 ---
 
@@ -1005,7 +976,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/policy_rule_mfa#id PolicyRuleMfa#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/policy_rule_mfa#id PolicyRuleMfa#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1020,7 +991,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/policy_rule_mfa#name PolicyRuleMfa#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/policy_rule_mfa#name PolicyRuleMfa#name}.
 
 ---
 
@@ -1049,11 +1020,10 @@ const policyRuleMfaConfig: policyRuleMfa.PolicyRuleMfaConfig = { ... }
 | <code><a href="#@cdktf/provider-okta.policyRuleMfa.PolicyRuleMfaConfig.property.appExclude">appExclude</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-okta.policyRuleMfa.PolicyRuleMfaAppExclude">PolicyRuleMfaAppExclude</a>[]</code> | app_exclude block. |
 | <code><a href="#@cdktf/provider-okta.policyRuleMfa.PolicyRuleMfaConfig.property.appInclude">appInclude</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-okta.policyRuleMfa.PolicyRuleMfaAppInclude">PolicyRuleMfaAppInclude</a>[]</code> | app_include block. |
 | <code><a href="#@cdktf/provider-okta.policyRuleMfa.PolicyRuleMfaConfig.property.enroll">enroll</a></code> | <code>string</code> | Should the user be enrolled the first time they LOGIN, the next time they are CHALLENGED, or NEVER? |
-| <code><a href="#@cdktf/provider-okta.policyRuleMfa.PolicyRuleMfaConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/policy_rule_mfa#id PolicyRuleMfa#id}. |
+| <code><a href="#@cdktf/provider-okta.policyRuleMfa.PolicyRuleMfaConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/policy_rule_mfa#id PolicyRuleMfa#id}. |
 | <code><a href="#@cdktf/provider-okta.policyRuleMfa.PolicyRuleMfaConfig.property.networkConnection">networkConnection</a></code> | <code>string</code> | Network selection mode: ANYWHERE, ZONE, ON_NETWORK, or OFF_NETWORK. |
 | <code><a href="#@cdktf/provider-okta.policyRuleMfa.PolicyRuleMfaConfig.property.networkExcludes">networkExcludes</a></code> | <code>string[]</code> | The zones to exclude. |
 | <code><a href="#@cdktf/provider-okta.policyRuleMfa.PolicyRuleMfaConfig.property.networkIncludes">networkIncludes</a></code> | <code>string[]</code> | The zones to include. |
-| <code><a href="#@cdktf/provider-okta.policyRuleMfa.PolicyRuleMfaConfig.property.policyid">policyid</a></code> | <code>string</code> | Policy ID of the Rule. |
 | <code><a href="#@cdktf/provider-okta.policyRuleMfa.PolicyRuleMfaConfig.property.policyId">policyId</a></code> | <code>string</code> | Policy ID of the Rule. |
 | <code><a href="#@cdktf/provider-okta.policyRuleMfa.PolicyRuleMfaConfig.property.priority">priority</a></code> | <code>number</code> | Policy Rule Priority, this attribute can be set to a valid priority. |
 | <code><a href="#@cdktf/provider-okta.policyRuleMfa.PolicyRuleMfaConfig.property.status">status</a></code> | <code>string</code> | Policy Rule Status: ACTIVE or INACTIVE. |
@@ -1141,7 +1111,7 @@ public readonly name: string;
 
 Policy Rule Name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/policy_rule_mfa#name PolicyRuleMfa#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/policy_rule_mfa#name PolicyRuleMfa#name}
 
 ---
 
@@ -1155,7 +1125,7 @@ public readonly appExclude: IResolvable | PolicyRuleMfaAppExclude[];
 
 app_exclude block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/policy_rule_mfa#app_exclude PolicyRuleMfa#app_exclude}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/policy_rule_mfa#app_exclude PolicyRuleMfa#app_exclude}
 
 ---
 
@@ -1169,7 +1139,7 @@ public readonly appInclude: IResolvable | PolicyRuleMfaAppInclude[];
 
 app_include block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/policy_rule_mfa#app_include PolicyRuleMfa#app_include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/policy_rule_mfa#app_include PolicyRuleMfa#app_include}
 
 ---
 
@@ -1183,7 +1153,7 @@ public readonly enroll: string;
 
 Should the user be enrolled the first time they LOGIN, the next time they are CHALLENGED, or NEVER?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/policy_rule_mfa#enroll PolicyRuleMfa#enroll}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/policy_rule_mfa#enroll PolicyRuleMfa#enroll}
 
 ---
 
@@ -1195,7 +1165,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/policy_rule_mfa#id PolicyRuleMfa#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/policy_rule_mfa#id PolicyRuleMfa#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1212,7 +1182,7 @@ public readonly networkConnection: string;
 
 Network selection mode: ANYWHERE, ZONE, ON_NETWORK, or OFF_NETWORK.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/policy_rule_mfa#network_connection PolicyRuleMfa#network_connection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/policy_rule_mfa#network_connection PolicyRuleMfa#network_connection}
 
 ---
 
@@ -1226,7 +1196,7 @@ public readonly networkExcludes: string[];
 
 The zones to exclude.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/policy_rule_mfa#network_excludes PolicyRuleMfa#network_excludes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/policy_rule_mfa#network_excludes PolicyRuleMfa#network_excludes}
 
 ---
 
@@ -1240,21 +1210,7 @@ public readonly networkIncludes: string[];
 
 The zones to include.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/policy_rule_mfa#network_includes PolicyRuleMfa#network_includes}
-
----
-
-##### `policyid`<sup>Optional</sup> <a name="policyid" id="@cdktf/provider-okta.policyRuleMfa.PolicyRuleMfaConfig.property.policyid"></a>
-
-```typescript
-public readonly policyid: string;
-```
-
-- *Type:* string
-
-Policy ID of the Rule.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/policy_rule_mfa#policyid PolicyRuleMfa#policyid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/policy_rule_mfa#network_includes PolicyRuleMfa#network_includes}
 
 ---
 
@@ -1268,7 +1224,7 @@ public readonly policyId: string;
 
 Policy ID of the Rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/policy_rule_mfa#policy_id PolicyRuleMfa#policy_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/policy_rule_mfa#policy_id PolicyRuleMfa#policy_id}
 
 ---
 
@@ -1284,7 +1240,7 @@ Policy Rule Priority, this attribute can be set to a valid priority.
 
 To avoid endless diff situation we error if an invalid priority is provided. API defaults it to the last (lowest) if not there.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/policy_rule_mfa#priority PolicyRuleMfa#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/policy_rule_mfa#priority PolicyRuleMfa#priority}
 
 ---
 
@@ -1298,7 +1254,7 @@ public readonly status: string;
 
 Policy Rule Status: ACTIVE or INACTIVE.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/policy_rule_mfa#status PolicyRuleMfa#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/policy_rule_mfa#status PolicyRuleMfa#status}
 
 ---
 
@@ -1312,7 +1268,7 @@ public readonly usersExcluded: string[];
 
 Set of User IDs to Exclude.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/policy_rule_mfa#users_excluded PolicyRuleMfa#users_excluded}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/policy_rule_mfa#users_excluded PolicyRuleMfa#users_excluded}
 
 ---
 

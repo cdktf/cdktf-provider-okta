@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/theme
+// https://registry.terraform.io/providers/okta/okta/4.0.0/docs/data-sources/theme
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,19 +10,19 @@ export interface DataOktaThemeConfig extends cdktf.TerraformMetaArguments {
   /**
   * Brand ID
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/theme#brand_id DataOktaTheme#brand_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/data-sources/theme#brand_id DataOktaTheme#brand_id}
   */
   readonly brandId: string;
   /**
   * Theme ID
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/theme#theme_id DataOktaTheme#theme_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/data-sources/theme#theme_id DataOktaTheme#theme_id}
   */
   readonly themeId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/theme okta_theme}
+* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/data-sources/theme okta_theme}
 */
 export class DataOktaTheme extends cdktf.TerraformDataSource {
 
@@ -36,7 +36,7 @@ export class DataOktaTheme extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/theme okta_theme} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/data-sources/theme okta_theme} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -47,8 +47,8 @@ export class DataOktaTheme extends cdktf.TerraformDataSource {
       terraformResourceType: 'okta_theme',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '3.46.0',
-        providerVersionConstraint: '~> 3.20'
+        providerVersion: '4.0.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

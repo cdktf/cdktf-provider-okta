@@ -1,6 +1,6 @@
 # `okta_domain`
 
-Refer to the Terraform Registory for docs: [`okta_domain`](https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/domain).
+Refer to the Terraform Registory for docs: [`okta_domain`](https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/domain).
 
 # `domain` Submodule <a name="`domain` Submodule" id="@cdktf/provider-okta.domain"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_domain`](https://registry.terr
 
 ### Domain <a name="Domain" id="@cdktf/provider-okta.domain.Domain"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/domain okta_domain}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/domain okta_domain}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.domain.Domain.Initializer"></a>
 
@@ -72,7 +72,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-okta.domain.Domain.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.domain.Domain.resetCertificateSourceType">ResetCertificateSourceType</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.domain.Domain.resetId">ResetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.domain.Domain.resetVerify">ResetVerify</a></code> | *No description.* |
 
 ---
 
@@ -272,12 +271,6 @@ private void ResetCertificateSourceType()
 private void ResetId()
 ```
 
-##### `ResetVerify` <a name="ResetVerify" id="@cdktf/provider-okta.domain.Domain.resetVerify"></a>
-
-```csharp
-private void ResetVerify()
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -371,11 +364,9 @@ Domain.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-okta.domain.Domain.property.certificateSourceTypeInput">CertificateSourceTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.domain.Domain.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.domain.Domain.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.domain.Domain.property.verifyInput">VerifyInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.domain.Domain.property.certificateSourceType">CertificateSourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.domain.Domain.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.domain.Domain.property.name">Name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.domain.Domain.property.verify">Verify</a></code> | <code>object</code> | *No description.* |
 
 ---
 
@@ -571,16 +562,6 @@ public string NameInput { get; }
 
 ---
 
-##### `VerifyInput`<sup>Optional</sup> <a name="VerifyInput" id="@cdktf/provider-okta.domain.Domain.property.verifyInput"></a>
-
-```csharp
-public object VerifyInput { get; }
-```
-
-- *Type:* object
-
----
-
 ##### `CertificateSourceType`<sup>Required</sup> <a name="CertificateSourceType" id="@cdktf/provider-okta.domain.Domain.property.certificateSourceType"></a>
 
 ```csharp
@@ -608,16 +589,6 @@ public string Name { get; }
 ```
 
 - *Type:* string
-
----
-
-##### `Verify`<sup>Required</sup> <a name="Verify" id="@cdktf/provider-okta.domain.Domain.property.verify"></a>
-
-```csharp
-public object Verify { get; }
-```
-
-- *Type:* object
 
 ---
 
@@ -658,8 +629,7 @@ new DomainConfig {
     object[] Provisioners = null,
     string Name,
     string CertificateSourceType = null,
-    string Id = null,
-    object Verify = null
+    string Id = null
 };
 ```
 
@@ -676,8 +646,7 @@ new DomainConfig {
 | <code><a href="#@cdktf/provider-okta.domain.DomainConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.domain.DomainConfig.property.name">Name</a></code> | <code>string</code> | Custom Domain name. |
 | <code><a href="#@cdktf/provider-okta.domain.DomainConfig.property.certificateSourceType">CertificateSourceType</a></code> | <code>string</code> | Optional. |
-| <code><a href="#@cdktf/provider-okta.domain.DomainConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/domain#id Domain#id}. |
-| <code><a href="#@cdktf/provider-okta.domain.DomainConfig.property.verify">Verify</a></code> | <code>object</code> | Indicates whether the domain should be verified during creation. |
+| <code><a href="#@cdktf/provider-okta.domain.DomainConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/domain#id Domain#id}. |
 
 ---
 
@@ -761,7 +730,7 @@ public string Name { get; set; }
 
 Custom Domain name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/domain#name Domain#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/domain#name Domain#name}
 
 ---
 
@@ -777,7 +746,7 @@ Optional.
 
 Certificate source type that indicates whether the certificate is provided by the user or Okta. Accepted values: MANUAL, OKTA_MANAGED. Warning: Use of OKTA_MANAGED requires a feature flag to be enabled. Default value = MANUAL
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/domain#certificate_source_type Domain#certificate_source_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/domain#certificate_source_type Domain#certificate_source_type}
 
 ---
 
@@ -789,24 +758,10 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/domain#id Domain#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/domain#id Domain#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-
----
-
-##### `Verify`<sup>Optional</sup> <a name="Verify" id="@cdktf/provider-okta.domain.DomainConfig.property.verify"></a>
-
-```csharp
-public object Verify { get; set; }
-```
-
-- *Type:* object
-
-Indicates whether the domain should be verified during creation.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/domain#verify Domain#verify}
 
 ---
 

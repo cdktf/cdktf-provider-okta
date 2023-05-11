@@ -1,6 +1,6 @@
 # `okta_app_signon_policy_rule`
 
-Refer to the Terraform Registory for docs: [`okta_app_signon_policy_rule`](https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_signon_policy_rule).
+Refer to the Terraform Registory for docs: [`okta_app_signon_policy_rule`](https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_signon_policy_rule).
 
 # `appSignonPolicyRule` Submodule <a name="`appSignonPolicyRule` Submodule" id="@cdktf/provider-okta.appSignonPolicyRule"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_app_signon_policy_rule`](https
 
 ### AppSignonPolicyRule <a name="AppSignonPolicyRule" id="@cdktf/provider-okta.appSignonPolicyRule.AppSignonPolicyRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_signon_policy_rule okta_app_signon_policy_rule}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_signon_policy_rule okta_app_signon_policy_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appSignonPolicyRule.AppSignonPolicyRule.Initializer"></a>
 
@@ -78,13 +78,13 @@ AppSignonPolicyRule.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-okta.appSignonPolicyRule.AppSignonPolicyRule.Initializer.parameter.factorMode">factorMode</a></code> | <code>java.lang.String</code> | The number of factors required to satisfy this assurance level. |
 | <code><a href="#@cdktf/provider-okta.appSignonPolicyRule.AppSignonPolicyRule.Initializer.parameter.groupsExcluded">groupsExcluded</a></code> | <code>java.util.List<java.lang.String></code> | List of group IDs to exclude. |
 | <code><a href="#@cdktf/provider-okta.appSignonPolicyRule.AppSignonPolicyRule.Initializer.parameter.groupsIncluded">groupsIncluded</a></code> | <code>java.util.List<java.lang.String></code> | List of group IDs to include. |
-| <code><a href="#@cdktf/provider-okta.appSignonPolicyRule.AppSignonPolicyRule.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_signon_policy_rule#id AppSignonPolicyRule#id}. |
+| <code><a href="#@cdktf/provider-okta.appSignonPolicyRule.AppSignonPolicyRule.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_signon_policy_rule#id AppSignonPolicyRule#id}. |
 | <code><a href="#@cdktf/provider-okta.appSignonPolicyRule.AppSignonPolicyRule.Initializer.parameter.inactivityPeriod">inactivityPeriod</a></code> | <code>java.lang.String</code> | The inactivity duration after which the end user must re-authenticate. |
 | <code><a href="#@cdktf/provider-okta.appSignonPolicyRule.AppSignonPolicyRule.Initializer.parameter.networkConnection">networkConnection</a></code> | <code>java.lang.String</code> | Network selection mode: ANYWHERE, ZONE, ON_NETWORK, or OFF_NETWORK. |
 | <code><a href="#@cdktf/provider-okta.appSignonPolicyRule.AppSignonPolicyRule.Initializer.parameter.networkExcludes">networkExcludes</a></code> | <code>java.util.List<java.lang.String></code> | The zones to exclude. |
 | <code><a href="#@cdktf/provider-okta.appSignonPolicyRule.AppSignonPolicyRule.Initializer.parameter.networkIncludes">networkIncludes</a></code> | <code>java.util.List<java.lang.String></code> | The zones to include. |
 | <code><a href="#@cdktf/provider-okta.appSignonPolicyRule.AppSignonPolicyRule.Initializer.parameter.platformInclude">platformInclude</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-okta.appSignonPolicyRule.AppSignonPolicyRulePlatformInclude">AppSignonPolicyRulePlatformInclude</a>></code> | platform_include block. |
-| <code><a href="#@cdktf/provider-okta.appSignonPolicyRule.AppSignonPolicyRule.Initializer.parameter.priority">priority</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_signon_policy_rule#priority AppSignonPolicyRule#priority}. |
+| <code><a href="#@cdktf/provider-okta.appSignonPolicyRule.AppSignonPolicyRule.Initializer.parameter.priority">priority</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_signon_policy_rule#priority AppSignonPolicyRule#priority}. |
 | <code><a href="#@cdktf/provider-okta.appSignonPolicyRule.AppSignonPolicyRule.Initializer.parameter.reAuthenticationFrequency">reAuthenticationFrequency</a></code> | <code>java.lang.String</code> | The duration after which the end user must re-authenticate, regardless of user activity. |
 | <code><a href="#@cdktf/provider-okta.appSignonPolicyRule.AppSignonPolicyRule.Initializer.parameter.status">status</a></code> | <code>java.lang.String</code> | Status of the rule. |
 | <code><a href="#@cdktf/provider-okta.appSignonPolicyRule.AppSignonPolicyRule.Initializer.parameter.type">type</a></code> | <code>java.lang.String</code> | The Verification Method type. |
@@ -161,7 +161,7 @@ Must be unique amongst siblings in the same scope
 
 Policy Rule Name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_signon_policy_rule#name AppSignonPolicyRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_signon_policy_rule#name AppSignonPolicyRule#name}
 
 ---
 
@@ -171,7 +171,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 ID of the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_signon_policy_rule#policy_id AppSignonPolicyRule#policy_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_signon_policy_rule#policy_id AppSignonPolicyRule#policy_id}
 
 ---
 
@@ -181,7 +181,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Allow or deny access based on the rule conditions: ALLOW or DENY.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_signon_policy_rule#access AppSignonPolicyRule#access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_signon_policy_rule#access AppSignonPolicyRule#access}
 
 ---
 
@@ -191,7 +191,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 An array that contains nested Authenticator Constraint objects that are organized by the Authenticator class.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_signon_policy_rule#constraints AppSignonPolicyRule#constraints}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_signon_policy_rule#constraints AppSignonPolicyRule#constraints}
 
 ---
 
@@ -203,7 +203,7 @@ This is an optional advanced setting.
 
 If the expression is formatted incorrectly or conflicts with conditions set above, the rule may not match any users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_signon_policy_rule#custom_expression AppSignonPolicyRule#custom_expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_signon_policy_rule#custom_expression AppSignonPolicyRule#custom_expression}
 
 ---
 
@@ -215,7 +215,7 @@ If the device is managed.
 
 A device is managed if it's managed by a device management system. When managed is passed, registered must also be included and must be set to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_signon_policy_rule#device_is_managed AppSignonPolicyRule#device_is_managed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_signon_policy_rule#device_is_managed AppSignonPolicyRule#device_is_managed}
 
 ---
 
@@ -227,7 +227,7 @@ If the device is registered.
 
 A device is registered if the User enrolls with Okta Verify that is installed on the device.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_signon_policy_rule#device_is_registered AppSignonPolicyRule#device_is_registered}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_signon_policy_rule#device_is_registered AppSignonPolicyRule#device_is_registered}
 
 ---
 
@@ -237,7 +237,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 The number of factors required to satisfy this assurance level.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_signon_policy_rule#factor_mode AppSignonPolicyRule#factor_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_signon_policy_rule#factor_mode AppSignonPolicyRule#factor_mode}
 
 ---
 
@@ -247,7 +247,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 List of group IDs to exclude.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_signon_policy_rule#groups_excluded AppSignonPolicyRule#groups_excluded}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_signon_policy_rule#groups_excluded AppSignonPolicyRule#groups_excluded}
 
 ---
 
@@ -257,7 +257,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 List of group IDs to include.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_signon_policy_rule#groups_included AppSignonPolicyRule#groups_included}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_signon_policy_rule#groups_included AppSignonPolicyRule#groups_included}
 
 ---
 
@@ -265,7 +265,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_signon_policy_rule#id AppSignonPolicyRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_signon_policy_rule#id AppSignonPolicyRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -280,7 +280,7 @@ The inactivity duration after which the end user must re-authenticate.
 
 Use the ISO 8601 Period format for recurring time intervals.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_signon_policy_rule#inactivity_period AppSignonPolicyRule#inactivity_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_signon_policy_rule#inactivity_period AppSignonPolicyRule#inactivity_period}
 
 ---
 
@@ -290,7 +290,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Network selection mode: ANYWHERE, ZONE, ON_NETWORK, or OFF_NETWORK.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_signon_policy_rule#network_connection AppSignonPolicyRule#network_connection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_signon_policy_rule#network_connection AppSignonPolicyRule#network_connection}
 
 ---
 
@@ -300,7 +300,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 The zones to exclude.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_signon_policy_rule#network_excludes AppSignonPolicyRule#network_excludes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_signon_policy_rule#network_excludes AppSignonPolicyRule#network_excludes}
 
 ---
 
@@ -310,7 +310,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 The zones to include.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_signon_policy_rule#network_includes AppSignonPolicyRule#network_includes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_signon_policy_rule#network_includes AppSignonPolicyRule#network_includes}
 
 ---
 
@@ -320,7 +320,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 platform_include block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_signon_policy_rule#platform_include AppSignonPolicyRule#platform_include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_signon_policy_rule#platform_include AppSignonPolicyRule#platform_include}
 
 ---
 
@@ -328,7 +328,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_signon_policy_rule#priority AppSignonPolicyRule#priority}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_signon_policy_rule#priority AppSignonPolicyRule#priority}.
 
 ---
 
@@ -340,7 +340,7 @@ The duration after which the end user must re-authenticate, regardless of user a
 
 Use the ISO 8601 Period format for recurring time intervals. PT0S - Every sign-in attempt, PT43800H - Once per session
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_signon_policy_rule#re_authentication_frequency AppSignonPolicyRule#re_authentication_frequency}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_signon_policy_rule#re_authentication_frequency AppSignonPolicyRule#re_authentication_frequency}
 
 ---
 
@@ -350,7 +350,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Status of the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_signon_policy_rule#status AppSignonPolicyRule#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_signon_policy_rule#status AppSignonPolicyRule#status}
 
 ---
 
@@ -360,7 +360,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 The Verification Method type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_signon_policy_rule#type AppSignonPolicyRule#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_signon_policy_rule#type AppSignonPolicyRule#type}
 
 ---
 
@@ -370,7 +370,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Set of User IDs to exclude.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_signon_policy_rule#users_excluded AppSignonPolicyRule#users_excluded}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_signon_policy_rule#users_excluded AppSignonPolicyRule#users_excluded}
 
 ---
 
@@ -380,7 +380,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Set of User IDs to include.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_signon_policy_rule#users_included AppSignonPolicyRule#users_included}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_signon_policy_rule#users_included AppSignonPolicyRule#users_included}
 
 ---
 
@@ -390,7 +390,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Set of User Type IDs to exclude.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_signon_policy_rule#user_types_excluded AppSignonPolicyRule#user_types_excluded}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_signon_policy_rule#user_types_excluded AppSignonPolicyRule#user_types_excluded}
 
 ---
 
@@ -400,7 +400,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Set of User Type IDs to include.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_signon_policy_rule#user_types_included AppSignonPolicyRule#user_types_included}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_signon_policy_rule#user_types_included AppSignonPolicyRule#user_types_included}
 
 ---
 
@@ -1629,13 +1629,13 @@ AppSignonPolicyRuleConfig.builder()
 | <code><a href="#@cdktf/provider-okta.appSignonPolicyRule.AppSignonPolicyRuleConfig.property.factorMode">factorMode</a></code> | <code>java.lang.String</code> | The number of factors required to satisfy this assurance level. |
 | <code><a href="#@cdktf/provider-okta.appSignonPolicyRule.AppSignonPolicyRuleConfig.property.groupsExcluded">groupsExcluded</a></code> | <code>java.util.List<java.lang.String></code> | List of group IDs to exclude. |
 | <code><a href="#@cdktf/provider-okta.appSignonPolicyRule.AppSignonPolicyRuleConfig.property.groupsIncluded">groupsIncluded</a></code> | <code>java.util.List<java.lang.String></code> | List of group IDs to include. |
-| <code><a href="#@cdktf/provider-okta.appSignonPolicyRule.AppSignonPolicyRuleConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_signon_policy_rule#id AppSignonPolicyRule#id}. |
+| <code><a href="#@cdktf/provider-okta.appSignonPolicyRule.AppSignonPolicyRuleConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_signon_policy_rule#id AppSignonPolicyRule#id}. |
 | <code><a href="#@cdktf/provider-okta.appSignonPolicyRule.AppSignonPolicyRuleConfig.property.inactivityPeriod">inactivityPeriod</a></code> | <code>java.lang.String</code> | The inactivity duration after which the end user must re-authenticate. |
 | <code><a href="#@cdktf/provider-okta.appSignonPolicyRule.AppSignonPolicyRuleConfig.property.networkConnection">networkConnection</a></code> | <code>java.lang.String</code> | Network selection mode: ANYWHERE, ZONE, ON_NETWORK, or OFF_NETWORK. |
 | <code><a href="#@cdktf/provider-okta.appSignonPolicyRule.AppSignonPolicyRuleConfig.property.networkExcludes">networkExcludes</a></code> | <code>java.util.List<java.lang.String></code> | The zones to exclude. |
 | <code><a href="#@cdktf/provider-okta.appSignonPolicyRule.AppSignonPolicyRuleConfig.property.networkIncludes">networkIncludes</a></code> | <code>java.util.List<java.lang.String></code> | The zones to include. |
 | <code><a href="#@cdktf/provider-okta.appSignonPolicyRule.AppSignonPolicyRuleConfig.property.platformInclude">platformInclude</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-okta.appSignonPolicyRule.AppSignonPolicyRulePlatformInclude">AppSignonPolicyRulePlatformInclude</a>></code> | platform_include block. |
-| <code><a href="#@cdktf/provider-okta.appSignonPolicyRule.AppSignonPolicyRuleConfig.property.priority">priority</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_signon_policy_rule#priority AppSignonPolicyRule#priority}. |
+| <code><a href="#@cdktf/provider-okta.appSignonPolicyRule.AppSignonPolicyRuleConfig.property.priority">priority</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_signon_policy_rule#priority AppSignonPolicyRule#priority}. |
 | <code><a href="#@cdktf/provider-okta.appSignonPolicyRule.AppSignonPolicyRuleConfig.property.reAuthenticationFrequency">reAuthenticationFrequency</a></code> | <code>java.lang.String</code> | The duration after which the end user must re-authenticate, regardless of user activity. |
 | <code><a href="#@cdktf/provider-okta.appSignonPolicyRule.AppSignonPolicyRuleConfig.property.status">status</a></code> | <code>java.lang.String</code> | Status of the rule. |
 | <code><a href="#@cdktf/provider-okta.appSignonPolicyRule.AppSignonPolicyRuleConfig.property.type">type</a></code> | <code>java.lang.String</code> | The Verification Method type. |
@@ -1726,7 +1726,7 @@ public java.lang.String getName();
 
 Policy Rule Name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_signon_policy_rule#name AppSignonPolicyRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_signon_policy_rule#name AppSignonPolicyRule#name}
 
 ---
 
@@ -1740,7 +1740,7 @@ public java.lang.String getPolicyId();
 
 ID of the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_signon_policy_rule#policy_id AppSignonPolicyRule#policy_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_signon_policy_rule#policy_id AppSignonPolicyRule#policy_id}
 
 ---
 
@@ -1754,7 +1754,7 @@ public java.lang.String getAccess();
 
 Allow or deny access based on the rule conditions: ALLOW or DENY.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_signon_policy_rule#access AppSignonPolicyRule#access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_signon_policy_rule#access AppSignonPolicyRule#access}
 
 ---
 
@@ -1768,7 +1768,7 @@ public java.util.List<java.lang.String> getConstraints();
 
 An array that contains nested Authenticator Constraint objects that are organized by the Authenticator class.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_signon_policy_rule#constraints AppSignonPolicyRule#constraints}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_signon_policy_rule#constraints AppSignonPolicyRule#constraints}
 
 ---
 
@@ -1784,7 +1784,7 @@ This is an optional advanced setting.
 
 If the expression is formatted incorrectly or conflicts with conditions set above, the rule may not match any users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_signon_policy_rule#custom_expression AppSignonPolicyRule#custom_expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_signon_policy_rule#custom_expression AppSignonPolicyRule#custom_expression}
 
 ---
 
@@ -1800,7 +1800,7 @@ If the device is managed.
 
 A device is managed if it's managed by a device management system. When managed is passed, registered must also be included and must be set to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_signon_policy_rule#device_is_managed AppSignonPolicyRule#device_is_managed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_signon_policy_rule#device_is_managed AppSignonPolicyRule#device_is_managed}
 
 ---
 
@@ -1816,7 +1816,7 @@ If the device is registered.
 
 A device is registered if the User enrolls with Okta Verify that is installed on the device.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_signon_policy_rule#device_is_registered AppSignonPolicyRule#device_is_registered}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_signon_policy_rule#device_is_registered AppSignonPolicyRule#device_is_registered}
 
 ---
 
@@ -1830,7 +1830,7 @@ public java.lang.String getFactorMode();
 
 The number of factors required to satisfy this assurance level.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_signon_policy_rule#factor_mode AppSignonPolicyRule#factor_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_signon_policy_rule#factor_mode AppSignonPolicyRule#factor_mode}
 
 ---
 
@@ -1844,7 +1844,7 @@ public java.util.List<java.lang.String> getGroupsExcluded();
 
 List of group IDs to exclude.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_signon_policy_rule#groups_excluded AppSignonPolicyRule#groups_excluded}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_signon_policy_rule#groups_excluded AppSignonPolicyRule#groups_excluded}
 
 ---
 
@@ -1858,7 +1858,7 @@ public java.util.List<java.lang.String> getGroupsIncluded();
 
 List of group IDs to include.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_signon_policy_rule#groups_included AppSignonPolicyRule#groups_included}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_signon_policy_rule#groups_included AppSignonPolicyRule#groups_included}
 
 ---
 
@@ -1870,7 +1870,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_signon_policy_rule#id AppSignonPolicyRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_signon_policy_rule#id AppSignonPolicyRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1889,7 +1889,7 @@ The inactivity duration after which the end user must re-authenticate.
 
 Use the ISO 8601 Period format for recurring time intervals.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_signon_policy_rule#inactivity_period AppSignonPolicyRule#inactivity_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_signon_policy_rule#inactivity_period AppSignonPolicyRule#inactivity_period}
 
 ---
 
@@ -1903,7 +1903,7 @@ public java.lang.String getNetworkConnection();
 
 Network selection mode: ANYWHERE, ZONE, ON_NETWORK, or OFF_NETWORK.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_signon_policy_rule#network_connection AppSignonPolicyRule#network_connection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_signon_policy_rule#network_connection AppSignonPolicyRule#network_connection}
 
 ---
 
@@ -1917,7 +1917,7 @@ public java.util.List<java.lang.String> getNetworkExcludes();
 
 The zones to exclude.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_signon_policy_rule#network_excludes AppSignonPolicyRule#network_excludes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_signon_policy_rule#network_excludes AppSignonPolicyRule#network_excludes}
 
 ---
 
@@ -1931,7 +1931,7 @@ public java.util.List<java.lang.String> getNetworkIncludes();
 
 The zones to include.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_signon_policy_rule#network_includes AppSignonPolicyRule#network_includes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_signon_policy_rule#network_includes AppSignonPolicyRule#network_includes}
 
 ---
 
@@ -1945,7 +1945,7 @@ public java.lang.Object getPlatformInclude();
 
 platform_include block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_signon_policy_rule#platform_include AppSignonPolicyRule#platform_include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_signon_policy_rule#platform_include AppSignonPolicyRule#platform_include}
 
 ---
 
@@ -1957,7 +1957,7 @@ public java.lang.Number getPriority();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_signon_policy_rule#priority AppSignonPolicyRule#priority}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_signon_policy_rule#priority AppSignonPolicyRule#priority}.
 
 ---
 
@@ -1973,7 +1973,7 @@ The duration after which the end user must re-authenticate, regardless of user a
 
 Use the ISO 8601 Period format for recurring time intervals. PT0S - Every sign-in attempt, PT43800H - Once per session
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_signon_policy_rule#re_authentication_frequency AppSignonPolicyRule#re_authentication_frequency}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_signon_policy_rule#re_authentication_frequency AppSignonPolicyRule#re_authentication_frequency}
 
 ---
 
@@ -1987,7 +1987,7 @@ public java.lang.String getStatus();
 
 Status of the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_signon_policy_rule#status AppSignonPolicyRule#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_signon_policy_rule#status AppSignonPolicyRule#status}
 
 ---
 
@@ -2001,7 +2001,7 @@ public java.lang.String getType();
 
 The Verification Method type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_signon_policy_rule#type AppSignonPolicyRule#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_signon_policy_rule#type AppSignonPolicyRule#type}
 
 ---
 
@@ -2015,7 +2015,7 @@ public java.util.List<java.lang.String> getUsersExcluded();
 
 Set of User IDs to exclude.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_signon_policy_rule#users_excluded AppSignonPolicyRule#users_excluded}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_signon_policy_rule#users_excluded AppSignonPolicyRule#users_excluded}
 
 ---
 
@@ -2029,7 +2029,7 @@ public java.util.List<java.lang.String> getUsersIncluded();
 
 Set of User IDs to include.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_signon_policy_rule#users_included AppSignonPolicyRule#users_included}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_signon_policy_rule#users_included AppSignonPolicyRule#users_included}
 
 ---
 
@@ -2043,7 +2043,7 @@ public java.util.List<java.lang.String> getUserTypesExcluded();
 
 Set of User Type IDs to exclude.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_signon_policy_rule#user_types_excluded AppSignonPolicyRule#user_types_excluded}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_signon_policy_rule#user_types_excluded AppSignonPolicyRule#user_types_excluded}
 
 ---
 
@@ -2057,7 +2057,7 @@ public java.util.List<java.lang.String> getUserTypesIncluded();
 
 Set of User Type IDs to include.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_signon_policy_rule#user_types_included AppSignonPolicyRule#user_types_included}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_signon_policy_rule#user_types_included AppSignonPolicyRule#user_types_included}
 
 ---
 
@@ -2080,8 +2080,8 @@ AppSignonPolicyRulePlatformInclude.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-okta.appSignonPolicyRule.AppSignonPolicyRulePlatformInclude.property.osExpression">osExpression</a></code> | <code>java.lang.String</code> | Only available with OTHER OS type. |
-| <code><a href="#@cdktf/provider-okta.appSignonPolicyRule.AppSignonPolicyRulePlatformInclude.property.osType">osType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_signon_policy_rule#os_type AppSignonPolicyRule#os_type}. |
-| <code><a href="#@cdktf/provider-okta.appSignonPolicyRule.AppSignonPolicyRulePlatformInclude.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_signon_policy_rule#type AppSignonPolicyRule#type}. |
+| <code><a href="#@cdktf/provider-okta.appSignonPolicyRule.AppSignonPolicyRulePlatformInclude.property.osType">osType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_signon_policy_rule#os_type AppSignonPolicyRule#os_type}. |
+| <code><a href="#@cdktf/provider-okta.appSignonPolicyRule.AppSignonPolicyRulePlatformInclude.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_signon_policy_rule#type AppSignonPolicyRule#type}. |
 
 ---
 
@@ -2095,7 +2095,7 @@ public java.lang.String getOsExpression();
 
 Only available with OTHER OS type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_signon_policy_rule#os_expression AppSignonPolicyRule#os_expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_signon_policy_rule#os_expression AppSignonPolicyRule#os_expression}
 
 ---
 
@@ -2107,7 +2107,7 @@ public java.lang.String getOsType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_signon_policy_rule#os_type AppSignonPolicyRule#os_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_signon_policy_rule#os_type AppSignonPolicyRule#os_type}.
 
 ---
 
@@ -2119,7 +2119,7 @@ public java.lang.String getType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_signon_policy_rule#type AppSignonPolicyRule#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_signon_policy_rule#type AppSignonPolicyRule#type}.
 
 ---
 

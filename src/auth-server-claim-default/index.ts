@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/auth_server_claim_default
+// https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/auth_server_claim_default
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,17 +8,17 @@ import * as cdktf from 'cdktf';
 
 export interface AuthServerClaimDefaultConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/auth_server_claim_default#always_include_in_token AuthServerClaimDefault#always_include_in_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/auth_server_claim_default#always_include_in_token AuthServerClaimDefault#always_include_in_token}
   */
   readonly alwaysIncludeInToken?: boolean | cdktf.IResolvable;
   /**
   * Auth server ID
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/auth_server_claim_default#auth_server_id AuthServerClaimDefault#auth_server_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/auth_server_claim_default#auth_server_id AuthServerClaimDefault#auth_server_id}
   */
   readonly authServerId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/auth_server_claim_default#id AuthServerClaimDefault#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/auth_server_claim_default#id AuthServerClaimDefault#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -27,17 +27,17 @@ export interface AuthServerClaimDefaultConfig extends cdktf.TerraformMetaArgumen
   /**
   * Default auth server claim name
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/auth_server_claim_default#name AuthServerClaimDefault#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/auth_server_claim_default#name AuthServerClaimDefault#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/auth_server_claim_default#value AuthServerClaimDefault#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/auth_server_claim_default#value AuthServerClaimDefault#value}
   */
   readonly value?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/auth_server_claim_default okta_auth_server_claim_default}
+* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/auth_server_claim_default okta_auth_server_claim_default}
 */
 export class AuthServerClaimDefault extends cdktf.TerraformResource {
 
@@ -51,7 +51,7 @@ export class AuthServerClaimDefault extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/auth_server_claim_default okta_auth_server_claim_default} Resource
+  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/auth_server_claim_default okta_auth_server_claim_default} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -62,8 +62,8 @@ export class AuthServerClaimDefault extends cdktf.TerraformResource {
       terraformResourceType: 'okta_auth_server_claim_default',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '3.46.0',
-        providerVersionConstraint: '~> 3.20'
+        providerVersion: '4.0.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
