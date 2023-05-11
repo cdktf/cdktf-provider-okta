@@ -1,6 +1,6 @@
 # `okta_user`
 
-Refer to the Terraform Registory for docs: [`okta_user`](https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user).
+Refer to the Terraform Registory for docs: [`okta_user`](https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/user).
 
 # `user` Submodule <a name="`user` Submodule" id="@cdktf/provider-okta.user"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`okta_user`](https://registry.terraf
 
 ### User <a name="User" id="@cdktf/provider-okta.user.User"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user okta_user}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/user okta_user}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.user.User.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/user"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v8/user"
 
 user.NewUser(scope Construct, id *string, config UserConfig) User
 ```
@@ -71,7 +71,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-okta.user.User.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.putPasswordHash">PutPasswordHash</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.user.User.resetAdminRoles">ResetAdminRoles</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.resetCity">ResetCity</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.resetCostCenter">ResetCostCenter</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.resetCountryCode">ResetCountryCode</a></code> | *No description.* |
@@ -82,7 +81,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-okta.user.User.resetDivision">ResetDivision</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.resetEmployeeNumber">ResetEmployeeNumber</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.resetExpirePasswordOnCreate">ResetExpirePasswordOnCreate</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.user.User.resetGroupMemberships">ResetGroupMemberships</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.resetHonorificPrefix">ResetHonorificPrefix</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.resetHonorificSuffix">ResetHonorificSuffix</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.resetId">ResetId</a></code> | *No description.* |
@@ -104,7 +102,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-okta.user.User.resetRecoveryAnswer">ResetRecoveryAnswer</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.resetRecoveryQuestion">ResetRecoveryQuestion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.resetSecondEmail">ResetSecondEmail</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.user.User.resetSkipRoles">ResetSkipRoles</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.resetState">ResetState</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.resetStatus">ResetStatus</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.resetStreetAddress">ResetStreetAddress</a></code> | *No description.* |
@@ -311,12 +308,6 @@ func PutPasswordHash(value UserPasswordHash)
 
 ---
 
-##### `ResetAdminRoles` <a name="ResetAdminRoles" id="@cdktf/provider-okta.user.User.resetAdminRoles"></a>
-
-```go
-func ResetAdminRoles()
-```
-
 ##### `ResetCity` <a name="ResetCity" id="@cdktf/provider-okta.user.User.resetCity"></a>
 
 ```go
@@ -375,12 +366,6 @@ func ResetEmployeeNumber()
 
 ```go
 func ResetExpirePasswordOnCreate()
-```
-
-##### `ResetGroupMemberships` <a name="ResetGroupMemberships" id="@cdktf/provider-okta.user.User.resetGroupMemberships"></a>
-
-```go
-func ResetGroupMemberships()
 ```
 
 ##### `ResetHonorificPrefix` <a name="ResetHonorificPrefix" id="@cdktf/provider-okta.user.User.resetHonorificPrefix"></a>
@@ -509,12 +494,6 @@ func ResetRecoveryQuestion()
 func ResetSecondEmail()
 ```
 
-##### `ResetSkipRoles` <a name="ResetSkipRoles" id="@cdktf/provider-okta.user.User.resetSkipRoles"></a>
-
-```go
-func ResetSkipRoles()
-```
-
 ##### `ResetState` <a name="ResetState" id="@cdktf/provider-okta.user.User.resetState"></a>
 
 ```go
@@ -570,7 +549,7 @@ func ResetZipCode()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.user.User.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/user"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v8/user"
 
 user.User_IsConstruct(x interface{}) *bool
 ```
@@ -602,7 +581,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.user.User.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/user"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v8/user"
 
 user.User_IsTerraformElement(x interface{}) *bool
 ```
@@ -616,7 +595,7 @@ user.User_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.user.User.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/user"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v8/user"
 
 user.User_IsTerraformResource(x interface{}) *bool
 ```
@@ -647,7 +626,6 @@ user.User_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-okta.user.User.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.passwordHash">PasswordHash</a></code> | <code><a href="#@cdktf/provider-okta.user.UserPasswordHashOutputReference">UserPasswordHashOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.rawStatus">RawStatus</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.user.User.property.adminRolesInput">AdminRolesInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.cityInput">CityInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.costCenterInput">CostCenterInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.countryCodeInput">CountryCodeInput</a></code> | <code>*string</code> | *No description.* |
@@ -660,7 +638,6 @@ user.User_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-okta.user.User.property.employeeNumberInput">EmployeeNumberInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.expirePasswordOnCreateInput">ExpirePasswordOnCreateInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.firstNameInput">FirstNameInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.user.User.property.groupMembershipsInput">GroupMembershipsInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.honorificPrefixInput">HonorificPrefixInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.honorificSuffixInput">HonorificSuffixInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
@@ -684,7 +661,6 @@ user.User_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-okta.user.User.property.recoveryAnswerInput">RecoveryAnswerInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.recoveryQuestionInput">RecoveryQuestionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.secondEmailInput">SecondEmailInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.user.User.property.skipRolesInput">SkipRolesInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.stateInput">StateInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.statusInput">StatusInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.streetAddressInput">StreetAddressInput</a></code> | <code>*string</code> | *No description.* |
@@ -692,7 +668,6 @@ user.User_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-okta.user.User.property.titleInput">TitleInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.userTypeInput">UserTypeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.zipCodeInput">ZipCodeInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.user.User.property.adminRoles">AdminRoles</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.city">City</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.costCenter">CostCenter</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.countryCode">CountryCode</a></code> | <code>*string</code> | *No description.* |
@@ -705,7 +680,6 @@ user.User_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-okta.user.User.property.employeeNumber">EmployeeNumber</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.expirePasswordOnCreate">ExpirePasswordOnCreate</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.firstName">FirstName</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.user.User.property.groupMemberships">GroupMemberships</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.honorificPrefix">HonorificPrefix</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.honorificSuffix">HonorificSuffix</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.id">Id</a></code> | <code>*string</code> | *No description.* |
@@ -728,7 +702,6 @@ user.User_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-okta.user.User.property.recoveryAnswer">RecoveryAnswer</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.recoveryQuestion">RecoveryQuestion</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.secondEmail">SecondEmail</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.user.User.property.skipRoles">SkipRoles</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.state">State</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.status">Status</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.streetAddress">StreetAddress</a></code> | <code>*string</code> | *No description.* |
@@ -901,16 +874,6 @@ func RawStatus() *string
 
 ---
 
-##### `AdminRolesInput`<sup>Optional</sup> <a name="AdminRolesInput" id="@cdktf/provider-okta.user.User.property.adminRolesInput"></a>
-
-```go
-func AdminRolesInput() *[]*string
-```
-
-- *Type:* *[]*string
-
----
-
 ##### `CityInput`<sup>Optional</sup> <a name="CityInput" id="@cdktf/provider-okta.user.User.property.cityInput"></a>
 
 ```go
@@ -1028,16 +991,6 @@ func FirstNameInput() *string
 ```
 
 - *Type:* *string
-
----
-
-##### `GroupMembershipsInput`<sup>Optional</sup> <a name="GroupMembershipsInput" id="@cdktf/provider-okta.user.User.property.groupMembershipsInput"></a>
-
-```go
-func GroupMembershipsInput() *[]*string
-```
-
-- *Type:* *[]*string
 
 ---
 
@@ -1271,16 +1224,6 @@ func SecondEmailInput() *string
 
 ---
 
-##### `SkipRolesInput`<sup>Optional</sup> <a name="SkipRolesInput" id="@cdktf/provider-okta.user.User.property.skipRolesInput"></a>
-
-```go
-func SkipRolesInput() interface{}
-```
-
-- *Type:* interface{}
-
----
-
 ##### `StateInput`<sup>Optional</sup> <a name="StateInput" id="@cdktf/provider-okta.user.User.property.stateInput"></a>
 
 ```go
@@ -1348,16 +1291,6 @@ func ZipCodeInput() *string
 ```
 
 - *Type:* *string
-
----
-
-##### `AdminRoles`<sup>Required</sup> <a name="AdminRoles" id="@cdktf/provider-okta.user.User.property.adminRoles"></a>
-
-```go
-func AdminRoles() *[]*string
-```
-
-- *Type:* *[]*string
 
 ---
 
@@ -1478,16 +1411,6 @@ func FirstName() *string
 ```
 
 - *Type:* *string
-
----
-
-##### `GroupMemberships`<sup>Required</sup> <a name="GroupMemberships" id="@cdktf/provider-okta.user.User.property.groupMemberships"></a>
-
-```go
-func GroupMemberships() *[]*string
-```
-
-- *Type:* *[]*string
 
 ---
 
@@ -1711,16 +1634,6 @@ func SecondEmail() *string
 
 ---
 
-##### `SkipRoles`<sup>Required</sup> <a name="SkipRoles" id="@cdktf/provider-okta.user.User.property.skipRoles"></a>
-
-```go
-func SkipRoles() interface{}
-```
-
-- *Type:* interface{}
-
----
-
 ##### `State`<sup>Required</sup> <a name="State" id="@cdktf/provider-okta.user.User.property.state"></a>
 
 ```go
@@ -1816,7 +1729,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.user.UserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/user"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v8/user"
 
 &user.UserConfig {
 	Connection: interface{},
@@ -1830,7 +1743,6 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/user"
 	FirstName: *string,
 	LastName: *string,
 	Login: *string,
-	AdminRoles: *[]*string,
 	City: *string,
 	CostCenter: *string,
 	CountryCode: *string,
@@ -1841,7 +1753,6 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/user"
 	Division: *string,
 	EmployeeNumber: *string,
 	ExpirePasswordOnCreate: interface{},
-	GroupMemberships: *[]*string,
 	HonorificPrefix: *string,
 	HonorificSuffix: *string,
 	Id: *string,
@@ -1854,7 +1765,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/user"
 	OldPassword: *string,
 	Organization: *string,
 	Password: *string,
-	PasswordHash: github.com/cdktf/cdktf-provider-okta-go/okta/v7.user.UserPasswordHash,
+	PasswordHash: github.com/cdktf/cdktf-provider-okta-go/okta/v8.user.UserPasswordHash,
 	PasswordInlineHook: *string,
 	PostalAddress: *string,
 	PreferredLanguage: *string,
@@ -1863,7 +1774,6 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/user"
 	RecoveryAnswer: *string,
 	RecoveryQuestion: *string,
 	SecondEmail: *string,
-	SkipRoles: interface{},
 	State: *string,
 	Status: *string,
 	StreetAddress: *string,
@@ -1889,7 +1799,6 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/user"
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.firstName">FirstName</a></code> | <code>*string</code> | User first name. |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.lastName">LastName</a></code> | <code>*string</code> | User last name. |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.login">Login</a></code> | <code>*string</code> | User Okta login. |
-| <code><a href="#@cdktf/provider-okta.user.UserConfig.property.adminRoles">AdminRoles</a></code> | <code>*[]*string</code> | User Okta admin roles - ie. ['APP_ADMIN', 'USER_ADMIN']. |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.city">City</a></code> | <code>*string</code> | User city. |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.costCenter">CostCenter</a></code> | <code>*string</code> | User cost center. |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.countryCode">CountryCode</a></code> | <code>*string</code> | User country code. |
@@ -1900,10 +1809,9 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/user"
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.division">Division</a></code> | <code>*string</code> | User division. |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.employeeNumber">EmployeeNumber</a></code> | <code>*string</code> | User employee number. |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.expirePasswordOnCreate">ExpirePasswordOnCreate</a></code> | <code>interface{}</code> | If set to `true`, the user will have to change the password at the next login. |
-| <code><a href="#@cdktf/provider-okta.user.UserConfig.property.groupMemberships">GroupMemberships</a></code> | <code>*[]*string</code> | The groups that you want this user to be a part of. |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.honorificPrefix">HonorificPrefix</a></code> | <code>*string</code> | User honorific prefix. |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.honorificSuffix">HonorificSuffix</a></code> | <code>*string</code> | User honorific suffix. |
-| <code><a href="#@cdktf/provider-okta.user.UserConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user#id User#id}. |
+| <code><a href="#@cdktf/provider-okta.user.UserConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/user#id User#id}. |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.locale">Locale</a></code> | <code>*string</code> | User default location. |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.manager">Manager</a></code> | <code>*string</code> | Manager of User. |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.managerId">ManagerId</a></code> | <code>*string</code> | Manager ID of User. |
@@ -1922,7 +1830,6 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/user"
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.recoveryAnswer">RecoveryAnswer</a></code> | <code>*string</code> | User Password Recovery Answer. |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.recoveryQuestion">RecoveryQuestion</a></code> | <code>*string</code> | User Password Recovery Question. |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.secondEmail">SecondEmail</a></code> | <code>*string</code> | User secondary email address, used for account recovery. |
-| <code><a href="#@cdktf/provider-okta.user.UserConfig.property.skipRoles">SkipRoles</a></code> | <code>interface{}</code> | Do not populate user roles information (prevents additional API call). |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.state">State</a></code> | <code>*string</code> | User state or region. |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.status">Status</a></code> | <code>*string</code> | The status of the User in Okta - remove to set user back to active/provisioned. |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.streetAddress">StreetAddress</a></code> | <code>*string</code> | User street address. |
@@ -2013,7 +1920,7 @@ Email *string
 
 User primary email address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user#email User#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/user#email User#email}
 
 ---
 
@@ -2027,7 +1934,7 @@ FirstName *string
 
 User first name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user#first_name User#first_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/user#first_name User#first_name}
 
 ---
 
@@ -2041,7 +1948,7 @@ LastName *string
 
 User last name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user#last_name User#last_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/user#last_name User#last_name}
 
 ---
 
@@ -2055,21 +1962,7 @@ Login *string
 
 User Okta login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user#login User#login}
-
----
-
-##### `AdminRoles`<sup>Optional</sup> <a name="AdminRoles" id="@cdktf/provider-okta.user.UserConfig.property.adminRoles"></a>
-
-```go
-AdminRoles *[]*string
-```
-
-- *Type:* *[]*string
-
-User Okta admin roles - ie. ['APP_ADMIN', 'USER_ADMIN'].
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user#admin_roles User#admin_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/user#login User#login}
 
 ---
 
@@ -2083,7 +1976,7 @@ City *string
 
 User city.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user#city User#city}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/user#city User#city}
 
 ---
 
@@ -2097,7 +1990,7 @@ CostCenter *string
 
 User cost center.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user#cost_center User#cost_center}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/user#cost_center User#cost_center}
 
 ---
 
@@ -2111,7 +2004,7 @@ CountryCode *string
 
 User country code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user#country_code User#country_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/user#country_code User#country_code}
 
 ---
 
@@ -2125,7 +2018,7 @@ CustomProfileAttributes *string
 
 JSON formatted custom attributes for a user. It must be JSON due to various types Okta allows.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user#custom_profile_attributes User#custom_profile_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/user#custom_profile_attributes User#custom_profile_attributes}
 
 ---
 
@@ -2139,7 +2032,7 @@ CustomProfileAttributesToIgnore *[]*string
 
 List of custom_profile_attribute keys that should be excluded from being managed by Terraform.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user#custom_profile_attributes_to_ignore User#custom_profile_attributes_to_ignore}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/user#custom_profile_attributes_to_ignore User#custom_profile_attributes_to_ignore}
 
 ---
 
@@ -2153,7 +2046,7 @@ Department *string
 
 User department.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user#department User#department}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/user#department User#department}
 
 ---
 
@@ -2167,7 +2060,7 @@ DisplayName *string
 
 User display name, suitable to show end users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user#display_name User#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/user#display_name User#display_name}
 
 ---
 
@@ -2181,7 +2074,7 @@ Division *string
 
 User division.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user#division User#division}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/user#division User#division}
 
 ---
 
@@ -2195,7 +2088,7 @@ EmployeeNumber *string
 
 User employee number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user#employee_number User#employee_number}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/user#employee_number User#employee_number}
 
 ---
 
@@ -2211,23 +2104,7 @@ If set to `true`, the user will have to change the password at the next login.
 
 This property will be used when user is being created and works only when `password` field is set
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user#expire_password_on_create User#expire_password_on_create}
-
----
-
-##### `GroupMemberships`<sup>Optional</sup> <a name="GroupMemberships" id="@cdktf/provider-okta.user.UserConfig.property.groupMemberships"></a>
-
-```go
-GroupMemberships *[]*string
-```
-
-- *Type:* *[]*string
-
-The groups that you want this user to be a part of.
-
-This can also be done via the group using the `users` property.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user#group_memberships User#group_memberships}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/user#expire_password_on_create User#expire_password_on_create}
 
 ---
 
@@ -2241,7 +2118,7 @@ HonorificPrefix *string
 
 User honorific prefix.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user#honorific_prefix User#honorific_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/user#honorific_prefix User#honorific_prefix}
 
 ---
 
@@ -2255,7 +2132,7 @@ HonorificSuffix *string
 
 User honorific suffix.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user#honorific_suffix User#honorific_suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/user#honorific_suffix User#honorific_suffix}
 
 ---
 
@@ -2267,7 +2144,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user#id User#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/user#id User#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2284,7 +2161,7 @@ Locale *string
 
 User default location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user#locale User#locale}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/user#locale User#locale}
 
 ---
 
@@ -2298,7 +2175,7 @@ Manager *string
 
 Manager of User.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user#manager User#manager}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/user#manager User#manager}
 
 ---
 
@@ -2312,7 +2189,7 @@ ManagerId *string
 
 Manager ID of User.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user#manager_id User#manager_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/user#manager_id User#manager_id}
 
 ---
 
@@ -2326,7 +2203,7 @@ MiddleName *string
 
 User middle name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user#middle_name User#middle_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/user#middle_name User#middle_name}
 
 ---
 
@@ -2340,7 +2217,7 @@ MobilePhone *string
 
 User mobile phone number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user#mobile_phone User#mobile_phone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/user#mobile_phone User#mobile_phone}
 
 ---
 
@@ -2354,7 +2231,7 @@ NickName *string
 
 User nickname.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user#nick_name User#nick_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/user#nick_name User#nick_name}
 
 ---
 
@@ -2368,7 +2245,7 @@ OldPassword *string
 
 Old User Password. Should be only set in case the password was not changed using the provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user#old_password User#old_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/user#old_password User#old_password}
 
 ---
 
@@ -2382,7 +2259,7 @@ Organization *string
 
 User organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user#organization User#organization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/user#organization User#organization}
 
 ---
 
@@ -2396,7 +2273,7 @@ Password *string
 
 User Password.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user#password User#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/user#password User#password}
 
 ---
 
@@ -2410,7 +2287,7 @@ PasswordHash UserPasswordHash
 
 password_hash block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user#password_hash User#password_hash}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/user#password_hash User#password_hash}
 
 ---
 
@@ -2424,7 +2301,7 @@ PasswordInlineHook *string
 
 When specified, the Password Inline Hook is triggered to handle verification of the end user's password the first time the user tries to sign in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user#password_inline_hook User#password_inline_hook}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/user#password_inline_hook User#password_inline_hook}
 
 ---
 
@@ -2438,7 +2315,7 @@ PostalAddress *string
 
 User mailing address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user#postal_address User#postal_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/user#postal_address User#postal_address}
 
 ---
 
@@ -2452,7 +2329,7 @@ PreferredLanguage *string
 
 User preferred language.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user#preferred_language User#preferred_language}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/user#preferred_language User#preferred_language}
 
 ---
 
@@ -2466,7 +2343,7 @@ PrimaryPhone *string
 
 User primary phone number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user#primary_phone User#primary_phone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/user#primary_phone User#primary_phone}
 
 ---
 
@@ -2480,7 +2357,7 @@ ProfileUrl *string
 
 User online profile (web page).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user#profile_url User#profile_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/user#profile_url User#profile_url}
 
 ---
 
@@ -2494,7 +2371,7 @@ RecoveryAnswer *string
 
 User Password Recovery Answer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user#recovery_answer User#recovery_answer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/user#recovery_answer User#recovery_answer}
 
 ---
 
@@ -2508,7 +2385,7 @@ RecoveryQuestion *string
 
 User Password Recovery Question.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user#recovery_question User#recovery_question}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/user#recovery_question User#recovery_question}
 
 ---
 
@@ -2522,21 +2399,7 @@ SecondEmail *string
 
 User secondary email address, used for account recovery.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user#second_email User#second_email}
-
----
-
-##### `SkipRoles`<sup>Optional</sup> <a name="SkipRoles" id="@cdktf/provider-okta.user.UserConfig.property.skipRoles"></a>
-
-```go
-SkipRoles interface{}
-```
-
-- *Type:* interface{}
-
-Do not populate user roles information (prevents additional API call).
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user#skip_roles User#skip_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/user#second_email User#second_email}
 
 ---
 
@@ -2550,7 +2413,7 @@ State *string
 
 User state or region.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user#state User#state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/user#state User#state}
 
 ---
 
@@ -2564,7 +2427,7 @@ Status *string
 
 The status of the User in Okta - remove to set user back to active/provisioned.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user#status User#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/user#status User#status}
 
 ---
 
@@ -2578,7 +2441,7 @@ StreetAddress *string
 
 User street address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user#street_address User#street_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/user#street_address User#street_address}
 
 ---
 
@@ -2592,7 +2455,7 @@ Timezone *string
 
 User default timezone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user#timezone User#timezone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/user#timezone User#timezone}
 
 ---
 
@@ -2606,7 +2469,7 @@ Title *string
 
 User title.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user#title User#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/user#title User#title}
 
 ---
 
@@ -2620,7 +2483,7 @@ UserType *string
 
 User employee type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user#user_type User#user_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/user#user_type User#user_type}
 
 ---
 
@@ -2634,7 +2497,7 @@ ZipCode *string
 
 User zipcode or postal code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user#zip_code User#zip_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/user#zip_code User#zip_code}
 
 ---
 
@@ -2643,7 +2506,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.user.UserPasswordHash.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/user"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v8/user"
 
 &user.UserPasswordHash {
 	Algorithm: *string,
@@ -2676,7 +2539,7 @@ Algorithm *string
 
 The algorithm used to generate the hash using the password.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user#algorithm User#algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/user#algorithm User#algorithm}
 
 ---
 
@@ -2692,7 +2555,7 @@ For SHA-512, SHA-256, SHA-1, MD5, This is the actual base64-encoded hash of the 
 
 This is the Base64 encoded value of the SHA-512/SHA-256/SHA-1/MD5 digest that was computed by either pre-fixing or post-fixing the salt to the password, depending on the saltOrder. If a salt was not used in the source system, then this should just be the the Base64 encoded value of the password's SHA-512/SHA-256/SHA-1/MD5 digest. For BCRYPT, This is the actual radix64-encoded hashed password.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user#value User#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/user#value User#value}
 
 ---
 
@@ -2706,7 +2569,7 @@ Salt *string
 
 Only required for salted hashes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user#salt User#salt}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/user#salt User#salt}
 
 ---
 
@@ -2720,7 +2583,7 @@ SaltOrder *string
 
 Specifies whether salt was pre- or postfixed to the password before hashing.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user#salt_order User#salt_order}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/user#salt_order User#salt_order}
 
 ---
 
@@ -2734,7 +2597,7 @@ WorkFactor *f64
 
 Governs the strength of the hash and the time required to compute it. Only required for BCRYPT algorithm.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/user#work_factor User#work_factor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/user#work_factor User#work_factor}
 
 ---
 
@@ -2745,7 +2608,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.user.UserPasswordHashOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v7/user"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v8/user"
 
 user.NewUserPasswordHashOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) UserPasswordHashOutputReference
 ```

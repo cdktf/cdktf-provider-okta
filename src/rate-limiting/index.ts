@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/rate_limiting
+// https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/rate_limiting
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,17 +10,17 @@ export interface RateLimitingConfig extends cdktf.TerraformMetaArguments {
   /**
   * Called during authentication.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/rate_limiting#authorize RateLimiting#authorize}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/rate_limiting#authorize RateLimiting#authorize}
   */
   readonly authorize: string;
   /**
   * Enables rate limit warning, violation, notification emails and banners when this org meets rate limits.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/rate_limiting#communications_enabled RateLimiting#communications_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/rate_limiting#communications_enabled RateLimiting#communications_enabled}
   */
   readonly communicationsEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/rate_limiting#id RateLimiting#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/rate_limiting#id RateLimiting#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -29,13 +29,13 @@ export interface RateLimitingConfig extends cdktf.TerraformMetaArguments {
   /**
   * Called when accessing the Okta hosted login page.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/rate_limiting#login RateLimiting#login}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/rate_limiting#login RateLimiting#login}
   */
   readonly login: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/rate_limiting okta_rate_limiting}
+* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/rate_limiting okta_rate_limiting}
 */
 export class RateLimiting extends cdktf.TerraformResource {
 
@@ -49,7 +49,7 @@ export class RateLimiting extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/rate_limiting okta_rate_limiting} Resource
+  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/rate_limiting okta_rate_limiting} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -60,8 +60,8 @@ export class RateLimiting extends cdktf.TerraformResource {
       terraformResourceType: 'okta_rate_limiting',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '3.46.0',
-        providerVersionConstraint: '~> 3.20'
+        providerVersion: '4.0.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

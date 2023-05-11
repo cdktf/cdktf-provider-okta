@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/trusted_origin
+// https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/trusted_origin
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,11 +10,11 @@ export interface TrustedOriginConfig extends cdktf.TerraformMetaArguments {
   /**
   * Whether the Trusted Origin is active or not - can only be issued post-creation
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/trusted_origin#active TrustedOrigin#active}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/trusted_origin#active TrustedOrigin#active}
   */
   readonly active?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/trusted_origin#id TrustedOrigin#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/trusted_origin#id TrustedOrigin#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -23,25 +23,25 @@ export interface TrustedOriginConfig extends cdktf.TerraformMetaArguments {
   /**
   * Unique name for this trusted origin
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/trusted_origin#name TrustedOrigin#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/trusted_origin#name TrustedOrigin#name}
   */
   readonly name: string;
   /**
   * Unique origin URL for this trusted origin
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/trusted_origin#origin TrustedOrigin#origin}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/trusted_origin#origin TrustedOrigin#origin}
   */
   readonly origin: string;
   /**
   * Scopes of the Trusted Origin - can either be CORS or REDIRECT only
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/trusted_origin#scopes TrustedOrigin#scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/trusted_origin#scopes TrustedOrigin#scopes}
   */
   readonly scopes: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/trusted_origin okta_trusted_origin}
+* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/trusted_origin okta_trusted_origin}
 */
 export class TrustedOrigin extends cdktf.TerraformResource {
 
@@ -55,7 +55,7 @@ export class TrustedOrigin extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/trusted_origin okta_trusted_origin} Resource
+  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/trusted_origin okta_trusted_origin} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,8 +66,8 @@ export class TrustedOrigin extends cdktf.TerraformResource {
       terraformResourceType: 'okta_trusted_origin',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '3.46.0',
-        providerVersionConstraint: '~> 3.20'
+        providerVersion: '4.0.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

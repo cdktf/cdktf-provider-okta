@@ -1,6 +1,6 @@
 # `okta_group`
 
-Refer to the Terraform Registory for docs: [`okta_group`](https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group).
+Refer to the Terraform Registory for docs: [`okta_group`](https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/group).
 
 # `group` Submodule <a name="`group` Submodule" id="@cdktf/provider-okta.group"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_group`](https://registry.terra
 
 ### Group <a name="Group" id="@cdktf/provider-okta.group.Group"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group okta_group}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/group okta_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.group.Group.Initializer"></a>
 
@@ -28,9 +28,7 @@ group.Group(
   name: str,
   custom_profile_attributes: str = None,
   description: str = None,
-  id: str = None,
-  skip_users: typing.Union[bool, IResolvable] = None,
-  users: typing.List[str] = None
+  id: str = None
 )
 ```
 
@@ -48,9 +46,7 @@ group.Group(
 | <code><a href="#@cdktf/provider-okta.group.Group.Initializer.parameter.name">name</a></code> | <code>str</code> | Group name. |
 | <code><a href="#@cdktf/provider-okta.group.Group.Initializer.parameter.customProfileAttributes">custom_profile_attributes</a></code> | <code>str</code> | JSON formatted custom attributes for a group. It must be JSON due to various types Okta allows. |
 | <code><a href="#@cdktf/provider-okta.group.Group.Initializer.parameter.description">description</a></code> | <code>str</code> | Group description. |
-| <code><a href="#@cdktf/provider-okta.group.Group.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group#id Group#id}. |
-| <code><a href="#@cdktf/provider-okta.group.Group.Initializer.parameter.skipUsers">skip_users</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Ignore users sync. This is a temporary solution until 'users' field is supported in this resource. |
-| <code><a href="#@cdktf/provider-okta.group.Group.Initializer.parameter.users">users</a></code> | <code>typing.List[str]</code> | Users associated with the group. This can also be done per user. |
+| <code><a href="#@cdktf/provider-okta.group.Group.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/group#id Group#id}. |
 
 ---
 
@@ -120,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 Group name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group#name Group#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/group#name Group#name}
 
 ---
 
@@ -130,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 JSON formatted custom attributes for a group. It must be JSON due to various types Okta allows.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group#custom_profile_attributes Group#custom_profile_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/group#custom_profile_attributes Group#custom_profile_attributes}
 
 ---
 
@@ -140,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Group description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group#description Group#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/group#description Group#description}
 
 ---
 
@@ -148,30 +144,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group#id Group#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/group#id Group#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-
----
-
-##### `skip_users`<sup>Optional</sup> <a name="skip_users" id="@cdktf/provider-okta.group.Group.Initializer.parameter.skipUsers"></a>
-
-- *Type:* typing.Union[bool, cdktf.IResolvable]
-
-Ignore users sync. This is a temporary solution until 'users' field is supported in this resource.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group#skip_users Group#skip_users}
-
----
-
-##### `users`<sup>Optional</sup> <a name="users" id="@cdktf/provider-okta.group.Group.Initializer.parameter.users"></a>
-
-- *Type:* typing.List[str]
-
-Users associated with the group. This can also be done per user.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group#users Group#users}
 
 ---
 
@@ -198,8 +174,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 | <code><a href="#@cdktf/provider-okta.group.Group.resetCustomProfileAttributes">reset_custom_profile_attributes</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.group.Group.resetDescription">reset_description</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.group.Group.resetId">reset_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.group.Group.resetSkipUsers">reset_skip_users</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.group.Group.resetUsers">reset_users</a></code> | *No description.* |
 
 ---
 
@@ -430,18 +404,6 @@ def reset_description() -> None
 def reset_id() -> None
 ```
 
-##### `reset_skip_users` <a name="reset_skip_users" id="@cdktf/provider-okta.group.Group.resetSkipUsers"></a>
-
-```python
-def reset_skip_users() -> None
-```
-
-##### `reset_users` <a name="reset_users" id="@cdktf/provider-okta.group.Group.resetUsers"></a>
-
-```python
-def reset_users() -> None
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -540,14 +502,10 @@ group.Group.is_terraform_resource(
 | <code><a href="#@cdktf/provider-okta.group.Group.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.group.Group.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.group.Group.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.group.Group.property.skipUsersInput">skip_users_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.group.Group.property.usersInput">users_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.group.Group.property.customProfileAttributes">custom_profile_attributes</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.group.Group.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.group.Group.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.group.Group.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.group.Group.property.skipUsers">skip_users</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.group.Group.property.users">users</a></code> | <code>typing.List[str]</code> | *No description.* |
 
 ---
 
@@ -733,26 +691,6 @@ name_input: str
 
 ---
 
-##### `skip_users_input`<sup>Optional</sup> <a name="skip_users_input" id="@cdktf/provider-okta.group.Group.property.skipUsersInput"></a>
-
-```python
-skip_users_input: typing.Union[bool, IResolvable]
-```
-
-- *Type:* typing.Union[bool, cdktf.IResolvable]
-
----
-
-##### `users_input`<sup>Optional</sup> <a name="users_input" id="@cdktf/provider-okta.group.Group.property.usersInput"></a>
-
-```python
-users_input: typing.List[str]
-```
-
-- *Type:* typing.List[str]
-
----
-
 ##### `custom_profile_attributes`<sup>Required</sup> <a name="custom_profile_attributes" id="@cdktf/provider-okta.group.Group.property.customProfileAttributes"></a>
 
 ```python
@@ -790,26 +728,6 @@ name: str
 ```
 
 - *Type:* str
-
----
-
-##### `skip_users`<sup>Required</sup> <a name="skip_users" id="@cdktf/provider-okta.group.Group.property.skipUsers"></a>
-
-```python
-skip_users: typing.Union[bool, IResolvable]
-```
-
-- *Type:* typing.Union[bool, cdktf.IResolvable]
-
----
-
-##### `users`<sup>Required</sup> <a name="users" id="@cdktf/provider-okta.group.Group.property.users"></a>
-
-```python
-users: typing.List[str]
-```
-
-- *Type:* typing.List[str]
 
 ---
 
@@ -851,9 +769,7 @@ group.GroupConfig(
   name: str,
   custom_profile_attributes: str = None,
   description: str = None,
-  id: str = None,
-  skip_users: typing.Union[bool, IResolvable] = None,
-  users: typing.List[str] = None
+  id: str = None
 )
 ```
 
@@ -871,9 +787,7 @@ group.GroupConfig(
 | <code><a href="#@cdktf/provider-okta.group.GroupConfig.property.name">name</a></code> | <code>str</code> | Group name. |
 | <code><a href="#@cdktf/provider-okta.group.GroupConfig.property.customProfileAttributes">custom_profile_attributes</a></code> | <code>str</code> | JSON formatted custom attributes for a group. It must be JSON due to various types Okta allows. |
 | <code><a href="#@cdktf/provider-okta.group.GroupConfig.property.description">description</a></code> | <code>str</code> | Group description. |
-| <code><a href="#@cdktf/provider-okta.group.GroupConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group#id Group#id}. |
-| <code><a href="#@cdktf/provider-okta.group.GroupConfig.property.skipUsers">skip_users</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Ignore users sync. This is a temporary solution until 'users' field is supported in this resource. |
-| <code><a href="#@cdktf/provider-okta.group.GroupConfig.property.users">users</a></code> | <code>typing.List[str]</code> | Users associated with the group. This can also be done per user. |
+| <code><a href="#@cdktf/provider-okta.group.GroupConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/group#id Group#id}. |
 
 ---
 
@@ -957,7 +871,7 @@ name: str
 
 Group name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group#name Group#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/group#name Group#name}
 
 ---
 
@@ -971,7 +885,7 @@ custom_profile_attributes: str
 
 JSON formatted custom attributes for a group. It must be JSON due to various types Okta allows.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group#custom_profile_attributes Group#custom_profile_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/group#custom_profile_attributes Group#custom_profile_attributes}
 
 ---
 
@@ -985,7 +899,7 @@ description: str
 
 Group description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group#description Group#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/group#description Group#description}
 
 ---
 
@@ -997,38 +911,10 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group#id Group#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/group#id Group#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-
----
-
-##### `skip_users`<sup>Optional</sup> <a name="skip_users" id="@cdktf/provider-okta.group.GroupConfig.property.skipUsers"></a>
-
-```python
-skip_users: typing.Union[bool, IResolvable]
-```
-
-- *Type:* typing.Union[bool, cdktf.IResolvable]
-
-Ignore users sync. This is a temporary solution until 'users' field is supported in this resource.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group#skip_users Group#skip_users}
-
----
-
-##### `users`<sup>Optional</sup> <a name="users" id="@cdktf/provider-okta.group.GroupConfig.property.users"></a>
-
-```python
-users: typing.List[str]
-```
-
-- *Type:* typing.List[str]
-
-Users associated with the group. This can also be done per user.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/group#users Group#users}
 
 ---
 

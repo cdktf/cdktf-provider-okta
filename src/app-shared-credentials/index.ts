@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_shared_credentials
+// https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_shared_credentials
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,77 +10,71 @@ export interface AppSharedCredentialsConfig extends cdktf.TerraformMetaArguments
   /**
   * Custom error page URL
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_shared_credentials#accessibility_error_redirect_url AppSharedCredentials#accessibility_error_redirect_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_shared_credentials#accessibility_error_redirect_url AppSharedCredentials#accessibility_error_redirect_url}
   */
   readonly accessibilityErrorRedirectUrl?: string;
   /**
   * Custom login page URL
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_shared_credentials#accessibility_login_redirect_url AppSharedCredentials#accessibility_login_redirect_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_shared_credentials#accessibility_login_redirect_url AppSharedCredentials#accessibility_login_redirect_url}
   */
   readonly accessibilityLoginRedirectUrl?: string;
   /**
   * Enable self service
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_shared_credentials#accessibility_self_service AppSharedCredentials#accessibility_self_service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_shared_credentials#accessibility_self_service AppSharedCredentials#accessibility_self_service}
   */
   readonly accessibilitySelfService?: boolean | cdktf.IResolvable;
   /**
   * Application notes for admins.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_shared_credentials#admin_note AppSharedCredentials#admin_note}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_shared_credentials#admin_note AppSharedCredentials#admin_note}
   */
   readonly adminNote?: string;
   /**
   * Displays specific appLinks for the app
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_shared_credentials#app_links_json AppSharedCredentials#app_links_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_shared_credentials#app_links_json AppSharedCredentials#app_links_json}
   */
   readonly appLinksJson?: string;
   /**
   * Display auto submit toolbar
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_shared_credentials#auto_submit_toolbar AppSharedCredentials#auto_submit_toolbar}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_shared_credentials#auto_submit_toolbar AppSharedCredentials#auto_submit_toolbar}
   */
   readonly autoSubmitToolbar?: boolean | cdktf.IResolvable;
   /**
   * Login button field
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_shared_credentials#button_field AppSharedCredentials#button_field}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_shared_credentials#button_field AppSharedCredentials#button_field}
   */
   readonly buttonField?: string;
   /**
   * CSS selector for the checkbox
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_shared_credentials#checkbox AppSharedCredentials#checkbox}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_shared_credentials#checkbox AppSharedCredentials#checkbox}
   */
   readonly checkbox?: string;
   /**
   * Application notes for end users.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_shared_credentials#enduser_note AppSharedCredentials#enduser_note}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_shared_credentials#enduser_note AppSharedCredentials#enduser_note}
   */
   readonly enduserNote?: string;
   /**
-  * Groups associated with the application
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_shared_credentials#groups AppSharedCredentials#groups}
-  */
-  readonly groups?: string[];
-  /**
   * Do not display application icon on mobile app
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_shared_credentials#hide_ios AppSharedCredentials#hide_ios}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_shared_credentials#hide_ios AppSharedCredentials#hide_ios}
   */
   readonly hideIos?: boolean | cdktf.IResolvable;
   /**
   * Do not display application icon to users
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_shared_credentials#hide_web AppSharedCredentials#hide_web}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_shared_credentials#hide_web AppSharedCredentials#hide_web}
   */
   readonly hideWeb?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_shared_credentials#id AppSharedCredentials#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_shared_credentials#id AppSharedCredentials#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -89,129 +83,111 @@ export interface AppSharedCredentialsConfig extends cdktf.TerraformMetaArguments
   /**
   * Pretty name of app.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_shared_credentials#label AppSharedCredentials#label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_shared_credentials#label AppSharedCredentials#label}
   */
   readonly label: string;
   /**
   * Local path to logo of the application.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_shared_credentials#logo AppSharedCredentials#logo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_shared_credentials#logo AppSharedCredentials#logo}
   */
   readonly logo?: string;
   /**
   * Login password field
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_shared_credentials#password_field AppSharedCredentials#password_field}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_shared_credentials#password_field AppSharedCredentials#password_field}
   */
   readonly passwordField?: string;
   /**
   * Preconfigured app name
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_shared_credentials#preconfigured_app AppSharedCredentials#preconfigured_app}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_shared_credentials#preconfigured_app AppSharedCredentials#preconfigured_app}
   */
   readonly preconfiguredApp?: string;
   /**
   * Secondary URL of the sign-in page for this app
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_shared_credentials#redirect_url AppSharedCredentials#redirect_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_shared_credentials#redirect_url AppSharedCredentials#redirect_url}
   */
   readonly redirectUrl?: string;
   /**
   * Shared password, required for certain schemes.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_shared_credentials#shared_password AppSharedCredentials#shared_password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_shared_credentials#shared_password AppSharedCredentials#shared_password}
   */
   readonly sharedPassword?: string;
   /**
   * Shared username, required for certain schemes.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_shared_credentials#shared_username AppSharedCredentials#shared_username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_shared_credentials#shared_username AppSharedCredentials#shared_username}
   */
   readonly sharedUsername?: string;
   /**
-  * Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_shared_credentials#skip_groups AppSharedCredentials#skip_groups}
-  */
-  readonly skipGroups?: boolean | cdktf.IResolvable;
-  /**
-  * Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_shared_credentials#skip_users AppSharedCredentials#skip_users}
-  */
-  readonly skipUsers?: boolean | cdktf.IResolvable;
-  /**
   * Status of application.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_shared_credentials#status AppSharedCredentials#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_shared_credentials#status AppSharedCredentials#status}
   */
   readonly status?: string;
   /**
   * Login URL
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_shared_credentials#url AppSharedCredentials#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_shared_credentials#url AppSharedCredentials#url}
   */
   readonly url?: string;
   /**
   * A regex that further restricts URL to the specified regex
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_shared_credentials#url_regex AppSharedCredentials#url_regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_shared_credentials#url_regex AppSharedCredentials#url_regex}
   */
   readonly urlRegex?: string;
   /**
   * Username template
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_shared_credentials#user_name_template AppSharedCredentials#user_name_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_shared_credentials#user_name_template AppSharedCredentials#user_name_template}
   */
   readonly userNameTemplate?: string;
   /**
   * Push username on update
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_shared_credentials#user_name_template_push_status AppSharedCredentials#user_name_template_push_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_shared_credentials#user_name_template_push_status AppSharedCredentials#user_name_template_push_status}
   */
   readonly userNameTemplatePushStatus?: string;
   /**
   * Username template suffix
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_shared_credentials#user_name_template_suffix AppSharedCredentials#user_name_template_suffix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_shared_credentials#user_name_template_suffix AppSharedCredentials#user_name_template_suffix}
   */
   readonly userNameTemplateSuffix?: string;
   /**
   * Username template type
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_shared_credentials#user_name_template_type AppSharedCredentials#user_name_template_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_shared_credentials#user_name_template_type AppSharedCredentials#user_name_template_type}
   */
   readonly userNameTemplateType?: string;
   /**
   * Login username field
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_shared_credentials#username_field AppSharedCredentials#username_field}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_shared_credentials#username_field AppSharedCredentials#username_field}
   */
   readonly usernameField?: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_shared_credentials#timeouts AppSharedCredentials#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_shared_credentials#timeouts AppSharedCredentials#timeouts}
   */
   readonly timeouts?: AppSharedCredentialsTimeouts;
-  /**
-  * users block
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_shared_credentials#users AppSharedCredentials#users}
-  */
-  readonly users?: AppSharedCredentialsUsers[] | cdktf.IResolvable;
 }
 export interface AppSharedCredentialsTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_shared_credentials#create AppSharedCredentials#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_shared_credentials#create AppSharedCredentials#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_shared_credentials#read AppSharedCredentials#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_shared_credentials#read AppSharedCredentials#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_shared_credentials#update AppSharedCredentials#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_shared_credentials#update AppSharedCredentials#update}
   */
   readonly update?: string;
 }
@@ -330,174 +306,9 @@ export class AppSharedCredentialsTimeoutsOutputReference extends cdktf.ComplexOb
     return this._update;
   }
 }
-export interface AppSharedCredentialsUsers {
-  /**
-  * User ID.
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_shared_credentials#id AppSharedCredentials#id}
-  *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
-  /**
-  * Password for user application.
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_shared_credentials#password AppSharedCredentials#password}
-  */
-  readonly password?: string;
-  /**
-  * Username for user.
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_shared_credentials#username AppSharedCredentials#username}
-  */
-  readonly username?: string;
-}
-
-export function appSharedCredentialsUsersToTerraform(struct?: AppSharedCredentialsUsers | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    id: cdktf.stringToTerraform(struct!.id),
-    password: cdktf.stringToTerraform(struct!.password),
-    username: cdktf.stringToTerraform(struct!.username),
-  }
-}
-
-export class AppSharedCredentialsUsersOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): AppSharedCredentialsUsers | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._id !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.id = this._id;
-    }
-    if (this._password !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.password = this._password;
-    }
-    if (this._username !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.username = this._username;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: AppSharedCredentialsUsers | cdktf.IResolvable | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._id = undefined;
-      this._password = undefined;
-      this._username = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._id = value.id;
-      this._password = value.password;
-      this._username = value.username;
-    }
-  }
-
-  // id - computed: false, optional: true, required: false
-  private _id?: string; 
-  public get id() {
-    return this.getStringAttribute('id');
-  }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
-  }
-
-  // password - computed: false, optional: true, required: false
-  private _password?: string; 
-  public get password() {
-    return this.getStringAttribute('password');
-  }
-  public set password(value: string) {
-    this._password = value;
-  }
-  public resetPassword() {
-    this._password = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get passwordInput() {
-    return this._password;
-  }
-
-  // scope - computed: true, optional: false, required: false
-  public get scope() {
-    return this.getStringAttribute('scope');
-  }
-
-  // username - computed: false, optional: true, required: false
-  private _username?: string; 
-  public get username() {
-    return this.getStringAttribute('username');
-  }
-  public set username(value: string) {
-    this._username = value;
-  }
-  public resetUsername() {
-    this._username = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get usernameInput() {
-    return this._username;
-  }
-}
-
-export class AppSharedCredentialsUsersList extends cdktf.ComplexList {
-  public internalValue? : AppSharedCredentialsUsers[] | cdktf.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): AppSharedCredentialsUsersOutputReference {
-    return new AppSharedCredentialsUsersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_shared_credentials okta_app_shared_credentials}
+* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_shared_credentials okta_app_shared_credentials}
 */
 export class AppSharedCredentials extends cdktf.TerraformResource {
 
@@ -511,7 +322,7 @@ export class AppSharedCredentials extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_shared_credentials okta_app_shared_credentials} Resource
+  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_shared_credentials okta_app_shared_credentials} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -522,8 +333,8 @@ export class AppSharedCredentials extends cdktf.TerraformResource {
       terraformResourceType: 'okta_app_shared_credentials',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '3.46.0',
-        providerVersionConstraint: '~> 3.20'
+        providerVersion: '4.0.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -542,7 +353,6 @@ export class AppSharedCredentials extends cdktf.TerraformResource {
     this._buttonField = config.buttonField;
     this._checkbox = config.checkbox;
     this._enduserNote = config.enduserNote;
-    this._groups = config.groups;
     this._hideIos = config.hideIos;
     this._hideWeb = config.hideWeb;
     this._id = config.id;
@@ -553,8 +363,6 @@ export class AppSharedCredentials extends cdktf.TerraformResource {
     this._redirectUrl = config.redirectUrl;
     this._sharedPassword = config.sharedPassword;
     this._sharedUsername = config.sharedUsername;
-    this._skipGroups = config.skipGroups;
-    this._skipUsers = config.skipUsers;
     this._status = config.status;
     this._url = config.url;
     this._urlRegex = config.urlRegex;
@@ -564,7 +372,6 @@ export class AppSharedCredentials extends cdktf.TerraformResource {
     this._userNameTemplateType = config.userNameTemplateType;
     this._usernameField = config.usernameField;
     this._timeouts.internalValue = config.timeouts;
-    this._users.internalValue = config.users;
   }
 
   // ==========
@@ -713,22 +520,6 @@ export class AppSharedCredentials extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get enduserNoteInput() {
     return this._enduserNote;
-  }
-
-  // groups - computed: false, optional: true, required: false
-  private _groups?: string[]; 
-  public get groups() {
-    return cdktf.Fn.tolist(this.getListAttribute('groups'));
-  }
-  public set groups(value: string[]) {
-    this._groups = value;
-  }
-  public resetGroups() {
-    this._groups = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get groupsInput() {
-    return this._groups;
   }
 
   // hide_ios - computed: false, optional: true, required: false
@@ -903,38 +694,6 @@ export class AppSharedCredentials extends cdktf.TerraformResource {
     return this.getStringAttribute('sign_on_mode');
   }
 
-  // skip_groups - computed: false, optional: true, required: false
-  private _skipGroups?: boolean | cdktf.IResolvable; 
-  public get skipGroups() {
-    return this.getBooleanAttribute('skip_groups');
-  }
-  public set skipGroups(value: boolean | cdktf.IResolvable) {
-    this._skipGroups = value;
-  }
-  public resetSkipGroups() {
-    this._skipGroups = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get skipGroupsInput() {
-    return this._skipGroups;
-  }
-
-  // skip_users - computed: false, optional: true, required: false
-  private _skipUsers?: boolean | cdktf.IResolvable; 
-  public get skipUsers() {
-    return this.getBooleanAttribute('skip_users');
-  }
-  public set skipUsers(value: boolean | cdktf.IResolvable) {
-    this._skipUsers = value;
-  }
-  public resetSkipUsers() {
-    this._skipUsers = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get skipUsersInput() {
-    return this._skipUsers;
-  }
-
   // status - computed: false, optional: true, required: false
   private _status?: string; 
   public get status() {
@@ -1079,22 +838,6 @@ export class AppSharedCredentials extends cdktf.TerraformResource {
     return this._timeouts.internalValue;
   }
 
-  // users - computed: false, optional: true, required: false
-  private _users = new AppSharedCredentialsUsersList(this, "users", true);
-  public get users() {
-    return this._users;
-  }
-  public putUsers(value: AppSharedCredentialsUsers[] | cdktf.IResolvable) {
-    this._users.internalValue = value;
-  }
-  public resetUsers() {
-    this._users.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get usersInput() {
-    return this._users.internalValue;
-  }
-
   // =========
   // SYNTHESIS
   // =========
@@ -1110,7 +853,6 @@ export class AppSharedCredentials extends cdktf.TerraformResource {
       button_field: cdktf.stringToTerraform(this._buttonField),
       checkbox: cdktf.stringToTerraform(this._checkbox),
       enduser_note: cdktf.stringToTerraform(this._enduserNote),
-      groups: cdktf.listMapper(cdktf.stringToTerraform, false)(this._groups),
       hide_ios: cdktf.booleanToTerraform(this._hideIos),
       hide_web: cdktf.booleanToTerraform(this._hideWeb),
       id: cdktf.stringToTerraform(this._id),
@@ -1121,8 +863,6 @@ export class AppSharedCredentials extends cdktf.TerraformResource {
       redirect_url: cdktf.stringToTerraform(this._redirectUrl),
       shared_password: cdktf.stringToTerraform(this._sharedPassword),
       shared_username: cdktf.stringToTerraform(this._sharedUsername),
-      skip_groups: cdktf.booleanToTerraform(this._skipGroups),
-      skip_users: cdktf.booleanToTerraform(this._skipUsers),
       status: cdktf.stringToTerraform(this._status),
       url: cdktf.stringToTerraform(this._url),
       url_regex: cdktf.stringToTerraform(this._urlRegex),
@@ -1132,7 +872,6 @@ export class AppSharedCredentials extends cdktf.TerraformResource {
       user_name_template_type: cdktf.stringToTerraform(this._userNameTemplateType),
       username_field: cdktf.stringToTerraform(this._usernameField),
       timeouts: appSharedCredentialsTimeoutsToTerraform(this._timeouts.internalValue),
-      users: cdktf.listMapper(appSharedCredentialsUsersToTerraform, true)(this._users.internalValue),
     };
   }
 }

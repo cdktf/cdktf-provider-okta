@@ -1,6 +1,6 @@
 # `okta_app_swa`
 
-Refer to the Terraform Registory for docs: [`okta_app_swa`](https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa).
+Refer to the Terraform Registory for docs: [`okta_app_swa`](https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa).
 
 # `appSwa` Submodule <a name="`appSwa` Submodule" id="@cdktf/provider-okta.appSwa"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_app_swa`](https://registry.ter
 
 ### AppSwa <a name="AppSwa" id="@cdktf/provider-okta.appSwa.AppSwa"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa okta_app_swa}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa okta_app_swa}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appSwa.AppSwa.Initializer"></a>
 
@@ -35,7 +35,6 @@ appSwa.AppSwa(
   button_field: str = None,
   checkbox: str = None,
   enduser_note: str = None,
-  groups: typing.List[str] = None,
   hide_ios: typing.Union[bool, IResolvable] = None,
   hide_web: typing.Union[bool, IResolvable] = None,
   id: str = None,
@@ -43,8 +42,6 @@ appSwa.AppSwa(
   password_field: str = None,
   preconfigured_app: str = None,
   redirect_url: str = None,
-  skip_groups: typing.Union[bool, IResolvable] = None,
-  skip_users: typing.Union[bool, IResolvable] = None,
   status: str = None,
   timeouts: AppSwaTimeouts = None,
   url: str = None,
@@ -53,8 +50,7 @@ appSwa.AppSwa(
   user_name_template: str = None,
   user_name_template_push_status: str = None,
   user_name_template_suffix: str = None,
-  user_name_template_type: str = None,
-  users: typing.Union[IResolvable, typing.List[AppSwaUsers]] = None
+  user_name_template_type: str = None
 )
 ```
 
@@ -79,16 +75,13 @@ appSwa.AppSwa(
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.Initializer.parameter.buttonField">button_field</a></code> | <code>str</code> | Login button field. |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.Initializer.parameter.checkbox">checkbox</a></code> | <code>str</code> | CSS selector for the checkbox. |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.Initializer.parameter.enduserNote">enduser_note</a></code> | <code>str</code> | Application notes for end users. |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.Initializer.parameter.groups">groups</a></code> | <code>typing.List[str]</code> | Groups associated with the application. |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.Initializer.parameter.hideIos">hide_ios</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Do not display application icon on mobile app. |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.Initializer.parameter.hideWeb">hide_web</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Do not display application icon to users. |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#id AppSwa#id}. |
+| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#id AppSwa#id}. |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.Initializer.parameter.logo">logo</a></code> | <code>str</code> | Local path to logo of the application. |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.Initializer.parameter.passwordField">password_field</a></code> | <code>str</code> | Login password field. |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.Initializer.parameter.preconfiguredApp">preconfigured_app</a></code> | <code>str</code> | Preconfigured app name. |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.Initializer.parameter.redirectUrl">redirect_url</a></code> | <code>str</code> | If going to the login page URL redirects to another page, then enter that URL here. |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.Initializer.parameter.skipGroups">skip_groups</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources. |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.Initializer.parameter.skipUsers">skip_users</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources. |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.Initializer.parameter.status">status</a></code> | <code>str</code> | Status of application. |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-okta.appSwa.AppSwaTimeouts">AppSwaTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.Initializer.parameter.url">url</a></code> | <code>str</code> | Login URL. |
@@ -98,7 +91,6 @@ appSwa.AppSwa(
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.Initializer.parameter.userNameTemplatePushStatus">user_name_template_push_status</a></code> | <code>str</code> | Push username on update. |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.Initializer.parameter.userNameTemplateSuffix">user_name_template_suffix</a></code> | <code>str</code> | Username template suffix. |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.Initializer.parameter.userNameTemplateType">user_name_template_type</a></code> | <code>str</code> | Username template type. |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.Initializer.parameter.users">users</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.appSwa.AppSwaUsers">AppSwaUsers</a>]]</code> | users block. |
 
 ---
 
@@ -168,7 +160,7 @@ Must be unique amongst siblings in the same scope
 
 Pretty name of app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#label AppSwa#label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#label AppSwa#label}
 
 ---
 
@@ -178,7 +170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Custom error page URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#accessibility_error_redirect_url AppSwa#accessibility_error_redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#accessibility_error_redirect_url AppSwa#accessibility_error_redirect_url}
 
 ---
 
@@ -188,7 +180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Custom login page URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#accessibility_login_redirect_url AppSwa#accessibility_login_redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#accessibility_login_redirect_url AppSwa#accessibility_login_redirect_url}
 
 ---
 
@@ -198,7 +190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Enable self service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#accessibility_self_service AppSwa#accessibility_self_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#accessibility_self_service AppSwa#accessibility_self_service}
 
 ---
 
@@ -208,7 +200,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Application notes for admins.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#admin_note AppSwa#admin_note}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#admin_note AppSwa#admin_note}
 
 ---
 
@@ -218,7 +210,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Displays specific appLinks for the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#app_links_json AppSwa#app_links_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#app_links_json AppSwa#app_links_json}
 
 ---
 
@@ -228,7 +220,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Display auto submit toolbar.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#auto_submit_toolbar AppSwa#auto_submit_toolbar}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#auto_submit_toolbar AppSwa#auto_submit_toolbar}
 
 ---
 
@@ -238,7 +230,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Login button field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#button_field AppSwa#button_field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#button_field AppSwa#button_field}
 
 ---
 
@@ -248,7 +240,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 CSS selector for the checkbox.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#checkbox AppSwa#checkbox}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#checkbox AppSwa#checkbox}
 
 ---
 
@@ -258,17 +250,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Application notes for end users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#enduser_note AppSwa#enduser_note}
-
----
-
-##### `groups`<sup>Optional</sup> <a name="groups" id="@cdktf/provider-okta.appSwa.AppSwa.Initializer.parameter.groups"></a>
-
-- *Type:* typing.List[str]
-
-Groups associated with the application.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#groups AppSwa#groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#enduser_note AppSwa#enduser_note}
 
 ---
 
@@ -278,7 +260,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Do not display application icon on mobile app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#hide_ios AppSwa#hide_ios}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#hide_ios AppSwa#hide_ios}
 
 ---
 
@@ -288,7 +270,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Do not display application icon to users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#hide_web AppSwa#hide_web}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#hide_web AppSwa#hide_web}
 
 ---
 
@@ -296,7 +278,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#id AppSwa#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#id AppSwa#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -309,7 +291,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Local path to logo of the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#logo AppSwa#logo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#logo AppSwa#logo}
 
 ---
 
@@ -319,7 +301,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Login password field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#password_field AppSwa#password_field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#password_field AppSwa#password_field}
 
 ---
 
@@ -329,7 +311,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Preconfigured app name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#preconfigured_app AppSwa#preconfigured_app}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#preconfigured_app AppSwa#preconfigured_app}
 
 ---
 
@@ -339,27 +321,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 If going to the login page URL redirects to another page, then enter that URL here.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#redirect_url AppSwa#redirect_url}
-
----
-
-##### `skip_groups`<sup>Optional</sup> <a name="skip_groups" id="@cdktf/provider-okta.appSwa.AppSwa.Initializer.parameter.skipGroups"></a>
-
-- *Type:* typing.Union[bool, cdktf.IResolvable]
-
-Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#skip_groups AppSwa#skip_groups}
-
----
-
-##### `skip_users`<sup>Optional</sup> <a name="skip_users" id="@cdktf/provider-okta.appSwa.AppSwa.Initializer.parameter.skipUsers"></a>
-
-- *Type:* typing.Union[bool, cdktf.IResolvable]
-
-Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#skip_users AppSwa#skip_users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#redirect_url AppSwa#redirect_url}
 
 ---
 
@@ -369,7 +331,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Status of application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#status AppSwa#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#status AppSwa#status}
 
 ---
 
@@ -379,7 +341,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#timeouts AppSwa#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#timeouts AppSwa#timeouts}
 
 ---
 
@@ -389,7 +351,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Login URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#url AppSwa#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#url AppSwa#url}
 
 ---
 
@@ -399,7 +361,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 A regex that further restricts URL to the specified regex.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#url_regex AppSwa#url_regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#url_regex AppSwa#url_regex}
 
 ---
 
@@ -409,7 +371,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Login username field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#username_field AppSwa#username_field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#username_field AppSwa#username_field}
 
 ---
 
@@ -419,7 +381,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Username template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#user_name_template AppSwa#user_name_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#user_name_template AppSwa#user_name_template}
 
 ---
 
@@ -429,7 +391,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Push username on update.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#user_name_template_push_status AppSwa#user_name_template_push_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#user_name_template_push_status AppSwa#user_name_template_push_status}
 
 ---
 
@@ -439,7 +401,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Username template suffix.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#user_name_template_suffix AppSwa#user_name_template_suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#user_name_template_suffix AppSwa#user_name_template_suffix}
 
 ---
 
@@ -449,17 +411,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Username template type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#user_name_template_type AppSwa#user_name_template_type}
-
----
-
-##### `users`<sup>Optional</sup> <a name="users" id="@cdktf/provider-okta.appSwa.AppSwa.Initializer.parameter.users"></a>
-
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.appSwa.AppSwaUsers">AppSwaUsers</a>]]
-
-users block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#users AppSwa#users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#user_name_template_type AppSwa#user_name_template_type}
 
 ---
 
@@ -484,7 +436,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.putTimeouts">put_timeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.putUsers">put_users</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.resetAccessibilityErrorRedirectUrl">reset_accessibility_error_redirect_url</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.resetAccessibilityLoginRedirectUrl">reset_accessibility_login_redirect_url</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.resetAccessibilitySelfService">reset_accessibility_self_service</a></code> | *No description.* |
@@ -494,7 +445,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.resetButtonField">reset_button_field</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.resetCheckbox">reset_checkbox</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.resetEnduserNote">reset_enduser_note</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.resetGroups">reset_groups</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.resetHideIos">reset_hide_ios</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.resetHideWeb">reset_hide_web</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.resetId">reset_id</a></code> | *No description.* |
@@ -502,8 +452,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.resetPasswordField">reset_password_field</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.resetPreconfiguredApp">reset_preconfigured_app</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.resetRedirectUrl">reset_redirect_url</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.resetSkipGroups">reset_skip_groups</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.resetSkipUsers">reset_skip_users</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.resetStatus">reset_status</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.resetTimeouts">reset_timeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.resetUrl">reset_url</a></code> | *No description.* |
@@ -513,7 +461,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.resetUserNameTemplatePushStatus">reset_user_name_template_push_status</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.resetUserNameTemplateSuffix">reset_user_name_template_suffix</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.resetUserNameTemplateType">reset_user_name_template_type</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.resetUsers">reset_users</a></code> | *No description.* |
 
 ---
 
@@ -740,7 +687,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#create AppSwa#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#create AppSwa#create}.
 
 ---
 
@@ -748,7 +695,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#read AppSwa#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#read AppSwa#read}.
 
 ---
 
@@ -756,21 +703,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#update AppSwa#update}.
-
----
-
-##### `put_users` <a name="put_users" id="@cdktf/provider-okta.appSwa.AppSwa.putUsers"></a>
-
-```python
-def put_users(
-  value: typing.Union[IResolvable, typing.List[AppSwaUsers]]
-) -> None
-```
-
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-okta.appSwa.AppSwa.putUsers.parameter.value"></a>
-
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.appSwa.AppSwaUsers">AppSwaUsers</a>]]
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#update AppSwa#update}.
 
 ---
 
@@ -828,12 +761,6 @@ def reset_checkbox() -> None
 def reset_enduser_note() -> None
 ```
 
-##### `reset_groups` <a name="reset_groups" id="@cdktf/provider-okta.appSwa.AppSwa.resetGroups"></a>
-
-```python
-def reset_groups() -> None
-```
-
 ##### `reset_hide_ios` <a name="reset_hide_ios" id="@cdktf/provider-okta.appSwa.AppSwa.resetHideIos"></a>
 
 ```python
@@ -874,18 +801,6 @@ def reset_preconfigured_app() -> None
 
 ```python
 def reset_redirect_url() -> None
-```
-
-##### `reset_skip_groups` <a name="reset_skip_groups" id="@cdktf/provider-okta.appSwa.AppSwa.resetSkipGroups"></a>
-
-```python
-def reset_skip_groups() -> None
-```
-
-##### `reset_skip_users` <a name="reset_skip_users" id="@cdktf/provider-okta.appSwa.AppSwa.resetSkipUsers"></a>
-
-```python
-def reset_skip_users() -> None
 ```
 
 ##### `reset_status` <a name="reset_status" id="@cdktf/provider-okta.appSwa.AppSwa.resetStatus"></a>
@@ -940,12 +855,6 @@ def reset_user_name_template_suffix() -> None
 
 ```python
 def reset_user_name_template_type() -> None
-```
-
-##### `reset_users` <a name="reset_users" id="@cdktf/provider-okta.appSwa.AppSwa.resetUsers"></a>
-
-```python
-def reset_users() -> None
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -1046,7 +955,6 @@ appSwa.AppSwa.is_terraform_resource(
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.signOnMode">sign_on_mode</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-okta.appSwa.AppSwaTimeoutsOutputReference">AppSwaTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.users">users</a></code> | <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsersList">AppSwaUsersList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.accessibilityErrorRedirectUrlInput">accessibility_error_redirect_url_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.accessibilityLoginRedirectUrlInput">accessibility_login_redirect_url_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.accessibilitySelfServiceInput">accessibility_self_service_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
@@ -1056,7 +964,6 @@ appSwa.AppSwa.is_terraform_resource(
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.buttonFieldInput">button_field_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.checkboxInput">checkbox_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.enduserNoteInput">enduser_note_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.groupsInput">groups_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.hideIosInput">hide_ios_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.hideWebInput">hide_web_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
@@ -1065,8 +972,6 @@ appSwa.AppSwa.is_terraform_resource(
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.passwordFieldInput">password_field_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.preconfiguredAppInput">preconfigured_app_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.redirectUrlInput">redirect_url_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.skipGroupsInput">skip_groups_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.skipUsersInput">skip_users_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.statusInput">status_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[<a href="#@cdktf/provider-okta.appSwa.AppSwaTimeouts">AppSwaTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.urlInput">url_input</a></code> | <code>str</code> | *No description.* |
@@ -1076,7 +981,6 @@ appSwa.AppSwa.is_terraform_resource(
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.userNameTemplatePushStatusInput">user_name_template_push_status_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.userNameTemplateSuffixInput">user_name_template_suffix_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.userNameTemplateTypeInput">user_name_template_type_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.usersInput">users_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.appSwa.AppSwaUsers">AppSwaUsers</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.accessibilityErrorRedirectUrl">accessibility_error_redirect_url</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.accessibilityLoginRedirectUrl">accessibility_login_redirect_url</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.accessibilitySelfService">accessibility_self_service</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
@@ -1086,7 +990,6 @@ appSwa.AppSwa.is_terraform_resource(
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.buttonField">button_field</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.checkbox">checkbox</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.enduserNote">enduser_note</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.groups">groups</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.hideIos">hide_ios</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.hideWeb">hide_web</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.id">id</a></code> | <code>str</code> | *No description.* |
@@ -1095,8 +998,6 @@ appSwa.AppSwa.is_terraform_resource(
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.passwordField">password_field</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.preconfiguredApp">preconfigured_app</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.redirectUrl">redirect_url</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.skipGroups">skip_groups</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.skipUsers">skip_users</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.status">status</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.url">url</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.urlRegex">url_regex</a></code> | <code>str</code> | *No description.* |
@@ -1290,16 +1191,6 @@ timeouts: AppSwaTimeoutsOutputReference
 
 ---
 
-##### `users`<sup>Required</sup> <a name="users" id="@cdktf/provider-okta.appSwa.AppSwa.property.users"></a>
-
-```python
-users: AppSwaUsersList
-```
-
-- *Type:* <a href="#@cdktf/provider-okta.appSwa.AppSwaUsersList">AppSwaUsersList</a>
-
----
-
 ##### `accessibility_error_redirect_url_input`<sup>Optional</sup> <a name="accessibility_error_redirect_url_input" id="@cdktf/provider-okta.appSwa.AppSwa.property.accessibilityErrorRedirectUrlInput"></a>
 
 ```python
@@ -1390,16 +1281,6 @@ enduser_note_input: str
 
 ---
 
-##### `groups_input`<sup>Optional</sup> <a name="groups_input" id="@cdktf/provider-okta.appSwa.AppSwa.property.groupsInput"></a>
-
-```python
-groups_input: typing.List[str]
-```
-
-- *Type:* typing.List[str]
-
----
-
 ##### `hide_ios_input`<sup>Optional</sup> <a name="hide_ios_input" id="@cdktf/provider-okta.appSwa.AppSwa.property.hideIosInput"></a>
 
 ```python
@@ -1477,26 +1358,6 @@ redirect_url_input: str
 ```
 
 - *Type:* str
-
----
-
-##### `skip_groups_input`<sup>Optional</sup> <a name="skip_groups_input" id="@cdktf/provider-okta.appSwa.AppSwa.property.skipGroupsInput"></a>
-
-```python
-skip_groups_input: typing.Union[bool, IResolvable]
-```
-
-- *Type:* typing.Union[bool, cdktf.IResolvable]
-
----
-
-##### `skip_users_input`<sup>Optional</sup> <a name="skip_users_input" id="@cdktf/provider-okta.appSwa.AppSwa.property.skipUsersInput"></a>
-
-```python
-skip_users_input: typing.Union[bool, IResolvable]
-```
-
-- *Type:* typing.Union[bool, cdktf.IResolvable]
 
 ---
 
@@ -1590,16 +1451,6 @@ user_name_template_type_input: str
 
 ---
 
-##### `users_input`<sup>Optional</sup> <a name="users_input" id="@cdktf/provider-okta.appSwa.AppSwa.property.usersInput"></a>
-
-```python
-users_input: typing.Union[IResolvable, typing.List[AppSwaUsers]]
-```
-
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.appSwa.AppSwaUsers">AppSwaUsers</a>]]
-
----
-
 ##### `accessibility_error_redirect_url`<sup>Required</sup> <a name="accessibility_error_redirect_url" id="@cdktf/provider-okta.appSwa.AppSwa.property.accessibilityErrorRedirectUrl"></a>
 
 ```python
@@ -1690,16 +1541,6 @@ enduser_note: str
 
 ---
 
-##### `groups`<sup>Required</sup> <a name="groups" id="@cdktf/provider-okta.appSwa.AppSwa.property.groups"></a>
-
-```python
-groups: typing.List[str]
-```
-
-- *Type:* typing.List[str]
-
----
-
 ##### `hide_ios`<sup>Required</sup> <a name="hide_ios" id="@cdktf/provider-okta.appSwa.AppSwa.property.hideIos"></a>
 
 ```python
@@ -1777,26 +1618,6 @@ redirect_url: str
 ```
 
 - *Type:* str
-
----
-
-##### `skip_groups`<sup>Required</sup> <a name="skip_groups" id="@cdktf/provider-okta.appSwa.AppSwa.property.skipGroups"></a>
-
-```python
-skip_groups: typing.Union[bool, IResolvable]
-```
-
-- *Type:* typing.Union[bool, cdktf.IResolvable]
-
----
-
-##### `skip_users`<sup>Required</sup> <a name="skip_users" id="@cdktf/provider-okta.appSwa.AppSwa.property.skipUsers"></a>
-
-```python
-skip_users: typing.Union[bool, IResolvable]
-```
-
-- *Type:* typing.Union[bool, cdktf.IResolvable]
 
 ---
 
@@ -1925,7 +1746,6 @@ appSwa.AppSwaConfig(
   button_field: str = None,
   checkbox: str = None,
   enduser_note: str = None,
-  groups: typing.List[str] = None,
   hide_ios: typing.Union[bool, IResolvable] = None,
   hide_web: typing.Union[bool, IResolvable] = None,
   id: str = None,
@@ -1933,8 +1753,6 @@ appSwa.AppSwaConfig(
   password_field: str = None,
   preconfigured_app: str = None,
   redirect_url: str = None,
-  skip_groups: typing.Union[bool, IResolvable] = None,
-  skip_users: typing.Union[bool, IResolvable] = None,
   status: str = None,
   timeouts: AppSwaTimeouts = None,
   url: str = None,
@@ -1943,8 +1761,7 @@ appSwa.AppSwaConfig(
   user_name_template: str = None,
   user_name_template_push_status: str = None,
   user_name_template_suffix: str = None,
-  user_name_template_type: str = None,
-  users: typing.Union[IResolvable, typing.List[AppSwaUsers]] = None
+  user_name_template_type: str = None
 )
 ```
 
@@ -1969,16 +1786,13 @@ appSwa.AppSwaConfig(
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.buttonField">button_field</a></code> | <code>str</code> | Login button field. |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.checkbox">checkbox</a></code> | <code>str</code> | CSS selector for the checkbox. |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.enduserNote">enduser_note</a></code> | <code>str</code> | Application notes for end users. |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.groups">groups</a></code> | <code>typing.List[str]</code> | Groups associated with the application. |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.hideIos">hide_ios</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Do not display application icon on mobile app. |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.hideWeb">hide_web</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Do not display application icon to users. |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#id AppSwa#id}. |
+| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#id AppSwa#id}. |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.logo">logo</a></code> | <code>str</code> | Local path to logo of the application. |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.passwordField">password_field</a></code> | <code>str</code> | Login password field. |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.preconfiguredApp">preconfigured_app</a></code> | <code>str</code> | Preconfigured app name. |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.redirectUrl">redirect_url</a></code> | <code>str</code> | If going to the login page URL redirects to another page, then enter that URL here. |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.skipGroups">skip_groups</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources. |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.skipUsers">skip_users</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources. |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.status">status</a></code> | <code>str</code> | Status of application. |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-okta.appSwa.AppSwaTimeouts">AppSwaTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.url">url</a></code> | <code>str</code> | Login URL. |
@@ -1988,7 +1802,6 @@ appSwa.AppSwaConfig(
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.userNameTemplatePushStatus">user_name_template_push_status</a></code> | <code>str</code> | Push username on update. |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.userNameTemplateSuffix">user_name_template_suffix</a></code> | <code>str</code> | Username template suffix. |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.userNameTemplateType">user_name_template_type</a></code> | <code>str</code> | Username template type. |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.users">users</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.appSwa.AppSwaUsers">AppSwaUsers</a>]]</code> | users block. |
 
 ---
 
@@ -2072,7 +1885,7 @@ label: str
 
 Pretty name of app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#label AppSwa#label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#label AppSwa#label}
 
 ---
 
@@ -2086,7 +1899,7 @@ accessibility_error_redirect_url: str
 
 Custom error page URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#accessibility_error_redirect_url AppSwa#accessibility_error_redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#accessibility_error_redirect_url AppSwa#accessibility_error_redirect_url}
 
 ---
 
@@ -2100,7 +1913,7 @@ accessibility_login_redirect_url: str
 
 Custom login page URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#accessibility_login_redirect_url AppSwa#accessibility_login_redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#accessibility_login_redirect_url AppSwa#accessibility_login_redirect_url}
 
 ---
 
@@ -2114,7 +1927,7 @@ accessibility_self_service: typing.Union[bool, IResolvable]
 
 Enable self service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#accessibility_self_service AppSwa#accessibility_self_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#accessibility_self_service AppSwa#accessibility_self_service}
 
 ---
 
@@ -2128,7 +1941,7 @@ admin_note: str
 
 Application notes for admins.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#admin_note AppSwa#admin_note}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#admin_note AppSwa#admin_note}
 
 ---
 
@@ -2142,7 +1955,7 @@ app_links_json: str
 
 Displays specific appLinks for the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#app_links_json AppSwa#app_links_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#app_links_json AppSwa#app_links_json}
 
 ---
 
@@ -2156,7 +1969,7 @@ auto_submit_toolbar: typing.Union[bool, IResolvable]
 
 Display auto submit toolbar.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#auto_submit_toolbar AppSwa#auto_submit_toolbar}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#auto_submit_toolbar AppSwa#auto_submit_toolbar}
 
 ---
 
@@ -2170,7 +1983,7 @@ button_field: str
 
 Login button field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#button_field AppSwa#button_field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#button_field AppSwa#button_field}
 
 ---
 
@@ -2184,7 +1997,7 @@ checkbox: str
 
 CSS selector for the checkbox.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#checkbox AppSwa#checkbox}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#checkbox AppSwa#checkbox}
 
 ---
 
@@ -2198,21 +2011,7 @@ enduser_note: str
 
 Application notes for end users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#enduser_note AppSwa#enduser_note}
-
----
-
-##### `groups`<sup>Optional</sup> <a name="groups" id="@cdktf/provider-okta.appSwa.AppSwaConfig.property.groups"></a>
-
-```python
-groups: typing.List[str]
-```
-
-- *Type:* typing.List[str]
-
-Groups associated with the application.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#groups AppSwa#groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#enduser_note AppSwa#enduser_note}
 
 ---
 
@@ -2226,7 +2025,7 @@ hide_ios: typing.Union[bool, IResolvable]
 
 Do not display application icon on mobile app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#hide_ios AppSwa#hide_ios}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#hide_ios AppSwa#hide_ios}
 
 ---
 
@@ -2240,7 +2039,7 @@ hide_web: typing.Union[bool, IResolvable]
 
 Do not display application icon to users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#hide_web AppSwa#hide_web}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#hide_web AppSwa#hide_web}
 
 ---
 
@@ -2252,7 +2051,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#id AppSwa#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#id AppSwa#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2269,7 +2068,7 @@ logo: str
 
 Local path to logo of the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#logo AppSwa#logo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#logo AppSwa#logo}
 
 ---
 
@@ -2283,7 +2082,7 @@ password_field: str
 
 Login password field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#password_field AppSwa#password_field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#password_field AppSwa#password_field}
 
 ---
 
@@ -2297,7 +2096,7 @@ preconfigured_app: str
 
 Preconfigured app name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#preconfigured_app AppSwa#preconfigured_app}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#preconfigured_app AppSwa#preconfigured_app}
 
 ---
 
@@ -2311,35 +2110,7 @@ redirect_url: str
 
 If going to the login page URL redirects to another page, then enter that URL here.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#redirect_url AppSwa#redirect_url}
-
----
-
-##### `skip_groups`<sup>Optional</sup> <a name="skip_groups" id="@cdktf/provider-okta.appSwa.AppSwaConfig.property.skipGroups"></a>
-
-```python
-skip_groups: typing.Union[bool, IResolvable]
-```
-
-- *Type:* typing.Union[bool, cdktf.IResolvable]
-
-Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#skip_groups AppSwa#skip_groups}
-
----
-
-##### `skip_users`<sup>Optional</sup> <a name="skip_users" id="@cdktf/provider-okta.appSwa.AppSwaConfig.property.skipUsers"></a>
-
-```python
-skip_users: typing.Union[bool, IResolvable]
-```
-
-- *Type:* typing.Union[bool, cdktf.IResolvable]
-
-Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#skip_users AppSwa#skip_users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#redirect_url AppSwa#redirect_url}
 
 ---
 
@@ -2353,7 +2124,7 @@ status: str
 
 Status of application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#status AppSwa#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#status AppSwa#status}
 
 ---
 
@@ -2367,7 +2138,7 @@ timeouts: AppSwaTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#timeouts AppSwa#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#timeouts AppSwa#timeouts}
 
 ---
 
@@ -2381,7 +2152,7 @@ url: str
 
 Login URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#url AppSwa#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#url AppSwa#url}
 
 ---
 
@@ -2395,7 +2166,7 @@ url_regex: str
 
 A regex that further restricts URL to the specified regex.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#url_regex AppSwa#url_regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#url_regex AppSwa#url_regex}
 
 ---
 
@@ -2409,7 +2180,7 @@ username_field: str
 
 Login username field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#username_field AppSwa#username_field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#username_field AppSwa#username_field}
 
 ---
 
@@ -2423,7 +2194,7 @@ user_name_template: str
 
 Username template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#user_name_template AppSwa#user_name_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#user_name_template AppSwa#user_name_template}
 
 ---
 
@@ -2437,7 +2208,7 @@ user_name_template_push_status: str
 
 Push username on update.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#user_name_template_push_status AppSwa#user_name_template_push_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#user_name_template_push_status AppSwa#user_name_template_push_status}
 
 ---
 
@@ -2451,7 +2222,7 @@ user_name_template_suffix: str
 
 Username template suffix.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#user_name_template_suffix AppSwa#user_name_template_suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#user_name_template_suffix AppSwa#user_name_template_suffix}
 
 ---
 
@@ -2465,21 +2236,7 @@ user_name_template_type: str
 
 Username template type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#user_name_template_type AppSwa#user_name_template_type}
-
----
-
-##### `users`<sup>Optional</sup> <a name="users" id="@cdktf/provider-okta.appSwa.AppSwaConfig.property.users"></a>
-
-```python
-users: typing.Union[IResolvable, typing.List[AppSwaUsers]]
-```
-
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.appSwa.AppSwaUsers">AppSwaUsers</a>]]
-
-users block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#users AppSwa#users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#user_name_template_type AppSwa#user_name_template_type}
 
 ---
 
@@ -2501,9 +2258,9 @@ appSwa.AppSwaTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#create AppSwa#create}. |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#read AppSwa#read}. |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#update AppSwa#update}. |
+| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#create AppSwa#create}. |
+| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#read AppSwa#read}. |
+| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#update AppSwa#update}. |
 
 ---
 
@@ -2515,7 +2272,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#create AppSwa#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#create AppSwa#create}.
 
 ---
 
@@ -2527,7 +2284,7 @@ read: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#read AppSwa#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#read AppSwa#read}.
 
 ---
 
@@ -2539,76 +2296,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#update AppSwa#update}.
-
----
-
-### AppSwaUsers <a name="AppSwaUsers" id="@cdktf/provider-okta.appSwa.AppSwaUsers"></a>
-
-#### Initializer <a name="Initializer" id="@cdktf/provider-okta.appSwa.AppSwaUsers.Initializer"></a>
-
-```python
-from cdktf_cdktf_provider_okta import app_swa
-
-appSwa.AppSwaUsers(
-  id: str = None,
-  password: str = None,
-  username: str = None
-)
-```
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsers.property.id">id</a></code> | <code>str</code> | User ID. |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsers.property.password">password</a></code> | <code>str</code> | Password for user application. |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsers.property.username">username</a></code> | <code>str</code> | Username for user. |
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-okta.appSwa.AppSwaUsers.property.id"></a>
-
-```python
-id: str
-```
-
-- *Type:* str
-
-User ID.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#id AppSwa#id}
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-
----
-
-##### `password`<sup>Optional</sup> <a name="password" id="@cdktf/provider-okta.appSwa.AppSwaUsers.property.password"></a>
-
-```python
-password: str
-```
-
-- *Type:* str
-
-Password for user application.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#password AppSwa#password}
-
----
-
-##### `username`<sup>Optional</sup> <a name="username" id="@cdktf/provider-okta.appSwa.AppSwaUsers.property.username"></a>
-
-```python
-username: str
-```
-
-- *Type:* str
-
-Username for user.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/resources/app_swa#username AppSwa#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_swa#update AppSwa#update}.
 
 ---
 
@@ -2971,549 +2659,6 @@ internal_value: typing.Union[AppSwaTimeouts, IResolvable]
 ```
 
 - *Type:* typing.Union[<a href="#@cdktf/provider-okta.appSwa.AppSwaTimeouts">AppSwaTimeouts</a>, cdktf.IResolvable]
-
----
-
-
-### AppSwaUsersList <a name="AppSwaUsersList" id="@cdktf/provider-okta.appSwa.AppSwaUsersList"></a>
-
-#### Initializers <a name="Initializers" id="@cdktf/provider-okta.appSwa.AppSwaUsersList.Initializer"></a>
-
-```python
-from cdktf_cdktf_provider_okta import app_swa
-
-appSwa.AppSwaUsersList(
-  terraform_resource: IInterpolatingParent,
-  terraform_attribute: str,
-  wraps_set: bool
-)
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsersList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsersList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsersList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
-
----
-
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-okta.appSwa.AppSwaUsersList.Initializer.parameter.terraformResource"></a>
-
-- *Type:* cdktf.IInterpolatingParent
-
-The parent resource.
-
----
-
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-okta.appSwa.AppSwaUsersList.Initializer.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
-The attribute on the parent resource this class is referencing.
-
----
-
-##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-okta.appSwa.AppSwaUsersList.Initializer.parameter.wrapsSet"></a>
-
-- *Type:* bool
-
-whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsersList.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsersList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsersList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsersList.get">get</a></code> | *No description.* |
-
----
-
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-okta.appSwa.AppSwaUsersList.computeFqn"></a>
-
-```python
-def compute_fqn() -> str
-```
-
-##### `resolve` <a name="resolve" id="@cdktf/provider-okta.appSwa.AppSwaUsersList.resolve"></a>
-
-```python
-def resolve(
-  _context: IResolveContext
-) -> typing.Any
-```
-
-Produce the Token's value at resolution time.
-
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-okta.appSwa.AppSwaUsersList.resolve.parameter._context"></a>
-
-- *Type:* cdktf.IResolveContext
-
----
-
-##### `to_string` <a name="to_string" id="@cdktf/provider-okta.appSwa.AppSwaUsersList.toString"></a>
-
-```python
-def to_string() -> str
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-##### `get` <a name="get" id="@cdktf/provider-okta.appSwa.AppSwaUsersList.get"></a>
-
-```python
-def get(
-  index: typing.Union[int, float]
-) -> AppSwaUsersOutputReference
-```
-
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-okta.appSwa.AppSwaUsersList.get.parameter.index"></a>
-
-- *Type:* typing.Union[int, float]
-
-the index of the item to return.
-
----
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsersList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsersList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsersList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.appSwa.AppSwaUsers">AppSwaUsers</a>]]</code> | *No description.* |
-
----
-
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-okta.appSwa.AppSwaUsersList.property.creationStack"></a>
-
-```python
-creation_stack: typing.List[str]
-```
-
-- *Type:* typing.List[str]
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-okta.appSwa.AppSwaUsersList.property.fqn"></a>
-
-```python
-fqn: str
-```
-
-- *Type:* str
-
----
-
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-okta.appSwa.AppSwaUsersList.property.internalValue"></a>
-
-```python
-internal_value: typing.Union[IResolvable, typing.List[AppSwaUsers]]
-```
-
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.appSwa.AppSwaUsers">AppSwaUsers</a>]]
-
----
-
-
-### AppSwaUsersOutputReference <a name="AppSwaUsersOutputReference" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference"></a>
-
-#### Initializers <a name="Initializers" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.Initializer"></a>
-
-```python
-from cdktf_cdktf_provider_okta import app_swa
-
-appSwa.AppSwaUsersOutputReference(
-  terraform_resource: IInterpolatingParent,
-  terraform_attribute: str,
-  complex_object_index: typing.Union[int, float],
-  complex_object_is_from_set: bool
-)
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
-
----
-
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.Initializer.parameter.terraformResource"></a>
-
-- *Type:* cdktf.IInterpolatingParent
-
-The parent resource.
-
----
-
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.Initializer.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
-The attribute on the parent resource this class is referencing.
-
----
-
-##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.Initializer.parameter.complexObjectIndex"></a>
-
-- *Type:* typing.Union[int, float]
-
-the index of this item in the list.
-
----
-
-##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
-
-- *Type:* bool
-
-whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.resetId">reset_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.resetPassword">reset_password</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.resetUsername">reset_username</a></code> | *No description.* |
-
----
-
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.computeFqn"></a>
-
-```python
-def compute_fqn() -> str
-```
-
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.getAnyMapAttribute"></a>
-
-```python
-def get_any_map_attribute(
-  terraform_attribute: str
-) -> typing.Mapping[typing.Any]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.getBooleanAttribute"></a>
-
-```python
-def get_boolean_attribute(
-  terraform_attribute: str
-) -> IResolvable
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.getBooleanMapAttribute"></a>
-
-```python
-def get_boolean_map_attribute(
-  terraform_attribute: str
-) -> typing.Mapping[bool]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.getListAttribute"></a>
-
-```python
-def get_list_attribute(
-  terraform_attribute: str
-) -> typing.List[str]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.getListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.getNumberAttribute"></a>
-
-```python
-def get_number_attribute(
-  terraform_attribute: str
-) -> typing.Union[int, float]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.getNumberListAttribute"></a>
-
-```python
-def get_number_list_attribute(
-  terraform_attribute: str
-) -> typing.List[typing.Union[int, float]]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.getNumberMapAttribute"></a>
-
-```python
-def get_number_map_attribute(
-  terraform_attribute: str
-) -> typing.Mapping[typing.Union[int, float]]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.getStringAttribute"></a>
-
-```python
-def get_string_attribute(
-  terraform_attribute: str
-) -> str
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.getStringMapAttribute"></a>
-
-```python
-def get_string_map_attribute(
-  terraform_attribute: str
-) -> typing.Mapping[str]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.interpolationForAttribute"></a>
-
-```python
-def interpolation_for_attribute(
-  property: str
-) -> IResolvable
-```
-
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.interpolationForAttribute.parameter.property"></a>
-
-- *Type:* str
-
----
-
-##### `resolve` <a name="resolve" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.resolve"></a>
-
-```python
-def resolve(
-  _context: IResolveContext
-) -> typing.Any
-```
-
-Produce the Token's value at resolution time.
-
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.resolve.parameter._context"></a>
-
-- *Type:* cdktf.IResolveContext
-
----
-
-##### `to_string` <a name="to_string" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.toString"></a>
-
-```python
-def to_string() -> str
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.resetId"></a>
-
-```python
-def reset_id() -> None
-```
-
-##### `reset_password` <a name="reset_password" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.resetPassword"></a>
-
-```python
-def reset_password() -> None
-```
-
-##### `reset_username` <a name="reset_username" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.resetUsername"></a>
-
-```python
-def reset_username() -> None
-```
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.property.scope">scope</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.property.passwordInput">password_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.property.usernameInput">username_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.property.password">password</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.property.username">username</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-okta.appSwa.AppSwaUsers">AppSwaUsers</a>, cdktf.IResolvable]</code> | *No description.* |
-
----
-
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.property.creationStack"></a>
-
-```python
-creation_stack: typing.List[str]
-```
-
-- *Type:* typing.List[str]
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.property.fqn"></a>
-
-```python
-fqn: str
-```
-
-- *Type:* str
-
----
-
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.property.scope"></a>
-
-```python
-scope: str
-```
-
-- *Type:* str
-
----
-
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.property.idInput"></a>
-
-```python
-id_input: str
-```
-
-- *Type:* str
-
----
-
-##### `password_input`<sup>Optional</sup> <a name="password_input" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.property.passwordInput"></a>
-
-```python
-password_input: str
-```
-
-- *Type:* str
-
----
-
-##### `username_input`<sup>Optional</sup> <a name="username_input" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.property.usernameInput"></a>
-
-```python
-username_input: str
-```
-
-- *Type:* str
-
----
-
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.property.id"></a>
-
-```python
-id: str
-```
-
-- *Type:* str
-
----
-
-##### `password`<sup>Required</sup> <a name="password" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.property.password"></a>
-
-```python
-password: str
-```
-
-- *Type:* str
-
----
-
-##### `username`<sup>Required</sup> <a name="username" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.property.username"></a>
-
-```python
-username: str
-```
-
-- *Type:* str
-
----
-
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-okta.appSwa.AppSwaUsersOutputReference.property.internalValue"></a>
-
-```python
-internal_value: typing.Union[AppSwaUsers, IResolvable]
-```
-
-- *Type:* typing.Union[<a href="#@cdktf/provider-okta.appSwa.AppSwaUsers">AppSwaUsers</a>, cdktf.IResolvable]
 
 ---
 

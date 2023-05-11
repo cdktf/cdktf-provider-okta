@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/brand
+// https://registry.terraform.io/providers/okta/okta/4.0.0/docs/data-sources/brand
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,13 +10,13 @@ export interface DataOktaBrandConfig extends cdktf.TerraformMetaArguments {
   /**
   * Brand ID
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/brand#brand_id DataOktaBrand#brand_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/data-sources/brand#brand_id DataOktaBrand#brand_id}
   */
   readonly brandId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/brand okta_brand}
+* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/data-sources/brand okta_brand}
 */
 export class DataOktaBrand extends cdktf.TerraformDataSource {
 
@@ -30,7 +30,7 @@ export class DataOktaBrand extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/brand okta_brand} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/data-sources/brand okta_brand} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -41,8 +41,8 @@ export class DataOktaBrand extends cdktf.TerraformDataSource {
       terraformResourceType: 'okta_brand',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '3.46.0',
-        providerVersionConstraint: '~> 3.20'
+        providerVersion: '4.0.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

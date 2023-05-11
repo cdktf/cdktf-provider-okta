@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/user_profile_mapping_source
+// https://registry.terraform.io/providers/okta/okta/4.0.0/docs/data-sources/user_profile_mapping_source
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,7 +10,7 @@ export interface DataOktaUserProfileMappingSourceConfig extends cdktf.TerraformM
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/user_profile_mapping_source okta_user_profile_mapping_source}
+* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/data-sources/user_profile_mapping_source okta_user_profile_mapping_source}
 */
 export class DataOktaUserProfileMappingSource extends cdktf.TerraformDataSource {
 
@@ -24,7 +24,7 @@ export class DataOktaUserProfileMappingSource extends cdktf.TerraformDataSource 
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/okta/okta/3.46.0/docs/data-sources/user_profile_mapping_source okta_user_profile_mapping_source} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/data-sources/user_profile_mapping_source okta_user_profile_mapping_source} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -35,8 +35,8 @@ export class DataOktaUserProfileMappingSource extends cdktf.TerraformDataSource 
       terraformResourceType: 'okta_user_profile_mapping_source',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '3.46.0',
-        providerVersionConstraint: '~> 3.20'
+        providerVersion: '4.0.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
