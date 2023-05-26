@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaAppOauth.DataOktaAppOauth.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v8/dataoktaappoauth"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaappoauth"
 
 dataoktaappoauth.NewDataOktaAppOauth(scope Construct, id *string, config DataOktaAppOauthConfig) DataOktaAppOauth
 ```
@@ -298,7 +298,7 @@ func ResetLabelPrefix()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.dataOktaAppOauth.DataOktaAppOauth.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v8/dataoktaappoauth"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaappoauth"
 
 dataoktaappoauth.DataOktaAppOauth_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.dataOktaAppOauth.DataOktaAppOauth.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v8/dataoktaappoauth"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaappoauth"
 
 dataoktaappoauth.DataOktaAppOauth_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ dataoktaappoauth.DataOktaAppOauth_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-okta.dataOktaAppOauth.DataOktaAppOauth.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v8/dataoktaappoauth"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaappoauth"
 
 dataoktaappoauth.DataOktaAppOauth_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -829,7 +829,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaAppOauth.DataOktaAppOauthConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v8/dataoktaappoauth"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaappoauth"
 
 &dataoktaappoauth.DataOktaAppOauthConfig {
 	Connection: interface{},
