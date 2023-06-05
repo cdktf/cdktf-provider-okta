@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSaml.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaappsaml"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v8/dataoktaappsaml"
 
 dataoktaappsaml.NewDataOktaAppSaml(scope Construct, id *string, config DataOktaAppSamlConfig) DataOktaAppSaml
 ```
@@ -305,7 +305,7 @@ func ResetRequestCompressed()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSaml.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaappsaml"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v8/dataoktaappsaml"
 
 dataoktaappsaml.DataOktaAppSaml_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSaml.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaappsaml"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v8/dataoktaappsaml"
 
 dataoktaappsaml.DataOktaAppSaml_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ dataoktaappsaml.DataOktaAppSaml_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSaml.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaappsaml"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v8/dataoktaappsaml"
 
 dataoktaappsaml.DataOktaAppSaml_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -1078,7 +1078,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSamlAttributeStatements.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaappsaml"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v8/dataoktaappsaml"
 
 &dataoktaappsaml.DataOktaAppSamlAttributeStatements {
 
@@ -1091,7 +1091,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaappsaml"
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSamlConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaappsaml"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v8/dataoktaappsaml"
 
 &dataoktaappsaml.DataOktaAppSamlConfig {
 	Connection: interface{},
@@ -1272,7 +1272,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSamlAttributeStatementsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaappsaml"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v8/dataoktaappsaml"
 
 dataoktaappsaml.NewDataOktaAppSamlAttributeStatementsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOktaAppSamlAttributeStatementsList
 ```
@@ -1404,7 +1404,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSamlAttributeStatementsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaappsaml"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v8/dataoktaappsaml"
 
 dataoktaappsaml.NewDataOktaAppSamlAttributeStatementsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataOktaAppSamlAttributeStatementsOutputReference
 ```
