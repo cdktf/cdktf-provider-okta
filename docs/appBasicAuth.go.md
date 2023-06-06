@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuth.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v8/appbasicauth"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appbasicauth"
 
 appbasicauth.NewAppBasicAuth(scope Construct, id *string, config AppBasicAuthConfig) AppBasicAuth
 ```
@@ -374,7 +374,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuth.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v8/appbasicauth"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appbasicauth"
 
 appbasicauth.AppBasicAuth_IsConstruct(x interface{}) *bool
 ```
@@ -406,7 +406,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuth.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v8/appbasicauth"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appbasicauth"
 
 appbasicauth.AppBasicAuth_IsTerraformElement(x interface{}) *bool
 ```
@@ -420,7 +420,7 @@ appbasicauth.AppBasicAuth_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuth.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v8/appbasicauth"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appbasicauth"
 
 appbasicauth.AppBasicAuth_IsTerraformResource(x interface{}) *bool
 ```
@@ -1004,7 +1004,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuthConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v8/appbasicauth"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appbasicauth"
 
 &appbasicauth.AppBasicAuthConfig {
 	Connection: interface{},
@@ -1029,7 +1029,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v8/appbasicauth"
 	Id: *string,
 	Logo: *string,
 	Status: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-okta-go/okta/v8.appBasicAuth.AppBasicAuthTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-okta-go/okta.appBasicAuth.AppBasicAuthTimeouts,
 }
 ```
 
@@ -1363,7 +1363,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuthTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v8/appbasicauth"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appbasicauth"
 
 &appbasicauth.AppBasicAuthTimeouts {
 	Create: *string,
@@ -1425,7 +1425,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuthTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v8/appbasicauth"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appbasicauth"
 
 appbasicauth.NewAppBasicAuthTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppBasicAuthTimeoutsOutputReference
 ```
