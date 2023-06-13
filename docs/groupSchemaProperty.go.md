@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.groupSchemaProperty.GroupSchemaProperty.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/groupschemaproperty"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v8/groupschemaproperty"
 
 groupschemaproperty.NewGroupSchemaProperty(scope Construct, id *string, config GroupSchemaPropertyConfig) GroupSchemaProperty
 ```
@@ -428,7 +428,7 @@ func ResetUnique()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.groupSchemaProperty.GroupSchemaProperty.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/groupschemaproperty"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v8/groupschemaproperty"
 
 groupschemaproperty.GroupSchemaProperty_IsConstruct(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.groupSchemaProperty.GroupSchemaProperty.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/groupschemaproperty"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v8/groupschemaproperty"
 
 groupschemaproperty.GroupSchemaProperty_IsTerraformElement(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ groupschemaproperty.GroupSchemaProperty_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.groupSchemaProperty.GroupSchemaProperty.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/groupschemaproperty"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v8/groupschemaproperty"
 
 groupschemaproperty.GroupSchemaProperty_IsTerraformResource(x interface{}) *bool
 ```
@@ -1113,7 +1113,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.groupSchemaProperty.GroupSchemaPropertyArrayOneOf.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/groupschemaproperty"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v8/groupschemaproperty"
 
 &groupschemaproperty.GroupSchemaPropertyArrayOneOf {
 	Const: *string,
@@ -1163,7 +1163,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.groupSchemaProperty.GroupSchemaPropertyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/groupschemaproperty"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v8/groupschemaproperty"
 
 &groupschemaproperty.GroupSchemaPropertyConfig {
 	Connection: interface{},
@@ -1584,7 +1584,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.groupSchemaProperty.GroupSchemaPropertyMasterOverridePriority.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/groupschemaproperty"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v8/groupschemaproperty"
 
 &groupschemaproperty.GroupSchemaPropertyMasterOverridePriority {
 	Value: *string,
@@ -1630,7 +1630,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.groupSchemaProperty.GroupSchemaPropertyOneOf.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/groupschemaproperty"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v8/groupschemaproperty"
 
 &groupschemaproperty.GroupSchemaPropertyOneOf {
 	Const: *string,
@@ -1682,7 +1682,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.groupSchemaProperty.GroupSchemaPropertyArrayOneOfList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/groupschemaproperty"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v8/groupschemaproperty"
 
 groupschemaproperty.NewGroupSchemaPropertyArrayOneOfList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GroupSchemaPropertyArrayOneOfList
 ```
@@ -1825,7 +1825,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.groupSchemaProperty.GroupSchemaPropertyArrayOneOfOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/groupschemaproperty"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v8/groupschemaproperty"
 
 groupschemaproperty.NewGroupSchemaPropertyArrayOneOfOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GroupSchemaPropertyArrayOneOfOutputReference
 ```
@@ -2136,7 +2136,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.groupSchemaProperty.GroupSchemaPropertyMasterOverridePriorityList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/groupschemaproperty"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v8/groupschemaproperty"
 
 groupschemaproperty.NewGroupSchemaPropertyMasterOverridePriorityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GroupSchemaPropertyMasterOverridePriorityList
 ```
@@ -2279,7 +2279,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.groupSchemaProperty.GroupSchemaPropertyMasterOverridePriorityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/groupschemaproperty"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v8/groupschemaproperty"
 
 groupschemaproperty.NewGroupSchemaPropertyMasterOverridePriorityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GroupSchemaPropertyMasterOverridePriorityOutputReference
 ```
@@ -2597,7 +2597,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.groupSchemaProperty.GroupSchemaPropertyOneOfList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/groupschemaproperty"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v8/groupschemaproperty"
 
 groupschemaproperty.NewGroupSchemaPropertyOneOfList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GroupSchemaPropertyOneOfList
 ```
@@ -2740,7 +2740,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.groupSchemaProperty.GroupSchemaPropertyOneOfOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/groupschemaproperty"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v8/groupschemaproperty"
 
 groupschemaproperty.NewGroupSchemaPropertyOneOfOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GroupSchemaPropertyOneOfOutputReference
 ```

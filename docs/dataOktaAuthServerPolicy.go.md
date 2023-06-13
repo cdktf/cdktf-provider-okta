@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaAuthServerPolicy.DataOktaAuthServerPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaauthserverpolicy"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v8/dataoktaauthserverpolicy"
 
 dataoktaauthserverpolicy.NewDataOktaAuthServerPolicy(scope Construct, id *string, config DataOktaAuthServerPolicyConfig) DataOktaAuthServerPolicy
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.dataOktaAuthServerPolicy.DataOktaAuthServerPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaauthserverpolicy"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v8/dataoktaauthserverpolicy"
 
 dataoktaauthserverpolicy.DataOktaAuthServerPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.dataOktaAuthServerPolicy.DataOktaAuthServerPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaauthserverpolicy"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v8/dataoktaauthserverpolicy"
 
 dataoktaauthserverpolicy.DataOktaAuthServerPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ dataoktaauthserverpolicy.DataOktaAuthServerPolicy_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-okta.dataOktaAuthServerPolicy.DataOktaAuthServerPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaauthserverpolicy"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v8/dataoktaauthserverpolicy"
 
 dataoktaauthserverpolicy.DataOktaAuthServerPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -599,7 +599,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaAuthServerPolicy.DataOktaAuthServerPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaauthserverpolicy"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v8/dataoktaauthserverpolicy"
 
 &dataoktaauthserverpolicy.DataOktaAuthServerPolicyConfig {
 	Connection: interface{},
