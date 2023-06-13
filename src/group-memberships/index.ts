@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/group_memberships
+// https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/group_memberships
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface GroupMembershipsConfig extends cdktf.TerraformMetaArguments {
   /**
   * ID of a Okta group.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/group_memberships#group_id GroupMemberships#group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/group_memberships#group_id GroupMemberships#group_id}
   */
   readonly groupId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/group_memberships#id GroupMemberships#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/group_memberships#id GroupMemberships#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,19 +23,19 @@ export interface GroupMembershipsConfig extends cdktf.TerraformMetaArguments {
   /**
   * The resource concerns itself with all users added/deleted to the group; even those managed outside of the resource.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/group_memberships#track_all_users GroupMemberships#track_all_users}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/group_memberships#track_all_users GroupMemberships#track_all_users}
   */
   readonly trackAllUsers?: boolean | cdktf.IResolvable;
   /**
   * The list of Okta user IDs which the group should have membership managed for.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/group_memberships#users GroupMemberships#users}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/group_memberships#users GroupMemberships#users}
   */
   readonly users: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/group_memberships okta_group_memberships}
+* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/group_memberships okta_group_memberships}
 */
 export class GroupMemberships extends cdktf.TerraformResource {
 
@@ -54,7 +49,7 @@ export class GroupMemberships extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/group_memberships okta_group_memberships} Resource
+  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/group_memberships okta_group_memberships} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -65,7 +60,7 @@ export class GroupMemberships extends cdktf.TerraformResource {
       terraformResourceType: 'okta_group_memberships',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '4.0.0',
+        providerVersion: '4.0.1',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

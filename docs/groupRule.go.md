@@ -1,6 +1,6 @@
 # `okta_group_rule`
 
-Refer to the Terraform Registory for docs: [`okta_group_rule`](https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/group_rule).
+Refer to the Terraform Registory for docs: [`okta_group_rule`](https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/group_rule).
 
 # `groupRule` Submodule <a name="`groupRule` Submodule" id="@cdktf/provider-okta.groupRule"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`okta_group_rule`](https://registry.
 
 ### GroupRule <a name="GroupRule" id="@cdktf/provider-okta.groupRule.GroupRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/group_rule okta_group_rule}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/group_rule okta_group_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.groupRule.GroupRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v8/grouprule"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/grouprule"
 
 grouprule.NewGroupRule(scope Construct, id *string, config GroupRuleConfig) GroupRule
 ```
@@ -305,7 +305,7 @@ func ResetUsersExcluded()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.groupRule.GroupRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v8/grouprule"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/grouprule"
 
 grouprule.GroupRule_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.groupRule.GroupRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v8/grouprule"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/grouprule"
 
 grouprule.GroupRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ grouprule.GroupRule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.groupRule.GroupRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v8/grouprule"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/grouprule"
 
 grouprule.GroupRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -726,7 +726,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.groupRule.GroupRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v8/grouprule"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/grouprule"
 
 &grouprule.GroupRuleConfig {
 	Connection: interface{},
@@ -758,13 +758,13 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v8/grouprule"
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRuleConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRuleConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRuleConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.groupRule.GroupRuleConfig.property.expressionValue">ExpressionValue</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/group_rule#expression_value GroupRule#expression_value}. |
-| <code><a href="#@cdktf/provider-okta.groupRule.GroupRuleConfig.property.groupAssignments">GroupAssignments</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/group_rule#group_assignments GroupRule#group_assignments}. |
-| <code><a href="#@cdktf/provider-okta.groupRule.GroupRuleConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/group_rule#name GroupRule#name}. |
-| <code><a href="#@cdktf/provider-okta.groupRule.GroupRuleConfig.property.expressionType">ExpressionType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/group_rule#expression_type GroupRule#expression_type}. |
-| <code><a href="#@cdktf/provider-okta.groupRule.GroupRuleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/group_rule#id GroupRule#id}. |
+| <code><a href="#@cdktf/provider-okta.groupRule.GroupRuleConfig.property.expressionValue">ExpressionValue</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/group_rule#expression_value GroupRule#expression_value}. |
+| <code><a href="#@cdktf/provider-okta.groupRule.GroupRuleConfig.property.groupAssignments">GroupAssignments</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/group_rule#group_assignments GroupRule#group_assignments}. |
+| <code><a href="#@cdktf/provider-okta.groupRule.GroupRuleConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/group_rule#name GroupRule#name}. |
+| <code><a href="#@cdktf/provider-okta.groupRule.GroupRuleConfig.property.expressionType">ExpressionType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/group_rule#expression_type GroupRule#expression_type}. |
+| <code><a href="#@cdktf/provider-okta.groupRule.GroupRuleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/group_rule#id GroupRule#id}. |
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRuleConfig.property.removeAssignedUsers">RemoveAssignedUsers</a></code> | <code>interface{}</code> | Remove users added by this rule from the assigned group after deleting this resource. |
-| <code><a href="#@cdktf/provider-okta.groupRule.GroupRuleConfig.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/group_rule#status GroupRule#status}. |
+| <code><a href="#@cdktf/provider-okta.groupRule.GroupRuleConfig.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/group_rule#status GroupRule#status}. |
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRuleConfig.property.usersExcluded">UsersExcluded</a></code> | <code>*[]*string</code> | The list of user IDs that would be excluded when rules are processed. |
 
 ---
@@ -847,7 +847,7 @@ ExpressionValue *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/group_rule#expression_value GroupRule#expression_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/group_rule#expression_value GroupRule#expression_value}.
 
 ---
 
@@ -859,7 +859,7 @@ GroupAssignments *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/group_rule#group_assignments GroupRule#group_assignments}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/group_rule#group_assignments GroupRule#group_assignments}.
 
 ---
 
@@ -871,7 +871,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/group_rule#name GroupRule#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/group_rule#name GroupRule#name}.
 
 ---
 
@@ -883,7 +883,7 @@ ExpressionType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/group_rule#expression_type GroupRule#expression_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/group_rule#expression_type GroupRule#expression_type}.
 
 ---
 
@@ -895,7 +895,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/group_rule#id GroupRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/group_rule#id GroupRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -912,7 +912,7 @@ RemoveAssignedUsers interface{}
 
 Remove users added by this rule from the assigned group after deleting this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/group_rule#remove_assigned_users GroupRule#remove_assigned_users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/group_rule#remove_assigned_users GroupRule#remove_assigned_users}
 
 ---
 
@@ -924,7 +924,7 @@ Status *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/group_rule#status GroupRule#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/group_rule#status GroupRule#status}.
 
 ---
 
@@ -938,7 +938,7 @@ UsersExcluded *[]*string
 
 The list of user IDs that would be excluded when rules are processed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/group_rule#users_excluded GroupRule#users_excluded}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/group_rule#users_excluded GroupRule#users_excluded}
 
 ---
 

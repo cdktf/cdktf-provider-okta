@@ -1,6 +1,6 @@
 # `data_okta_app`
 
-Refer to the Terraform Registory for docs: [`data_okta_app`](https://registry.terraform.io/providers/okta/okta/4.0.0/docs/data-sources/app).
+Refer to the Terraform Registory for docs: [`data_okta_app`](https://registry.terraform.io/providers/okta/okta/4.0.1/docs/data-sources/app).
 
 # `dataOktaApp` Submodule <a name="`dataOktaApp` Submodule" id="@cdktf/provider-okta.dataOktaApp"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_okta_app`](https://registry.te
 
 ### DataOktaApp <a name="DataOktaApp" id="@cdktf/provider-okta.dataOktaApp.DataOktaApp"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/data-sources/app okta_app}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/data-sources/app okta_app}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaApp.DataOktaApp.Initializer"></a>
 
@@ -74,6 +74,8 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-okta.dataOktaApp.DataOktaApp.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaApp.DataOktaApp.resetLabel">resetLabel</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaApp.DataOktaApp.resetLabelPrefix">resetLabelPrefix</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.dataOktaApp.DataOktaApp.resetSkipGroups">resetSkipGroups</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.dataOktaApp.DataOktaApp.resetSkipUsers">resetSkipUsers</a></code> | *No description.* |
 
 ---
 
@@ -285,6 +287,18 @@ public resetLabel(): void
 public resetLabelPrefix(): void
 ```
 
+##### `resetSkipGroups` <a name="resetSkipGroups" id="@cdktf/provider-okta.dataOktaApp.DataOktaApp.resetSkipGroups"></a>
+
+```typescript
+public resetSkipGroups(): void
+```
+
+##### `resetSkipUsers` <a name="resetSkipUsers" id="@cdktf/provider-okta.dataOktaApp.DataOktaApp.resetSkipUsers"></a>
+
+```typescript
+public resetSkipUsers(): void
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -380,10 +394,14 @@ dataOktaApp.DataOktaApp.isTerraformDataSource(x: any)
 | <code><a href="#@cdktf/provider-okta.dataOktaApp.DataOktaApp.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaApp.DataOktaApp.property.labelInput">labelInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaApp.DataOktaApp.property.labelPrefixInput">labelPrefixInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.dataOktaApp.DataOktaApp.property.skipGroupsInput">skipGroupsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.dataOktaApp.DataOktaApp.property.skipUsersInput">skipUsersInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaApp.DataOktaApp.property.activeOnly">activeOnly</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaApp.DataOktaApp.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaApp.DataOktaApp.property.label">label</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaApp.DataOktaApp.property.labelPrefix">labelPrefix</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.dataOktaApp.DataOktaApp.property.skipGroups">skipGroups</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.dataOktaApp.DataOktaApp.property.skipUsers">skipUsers</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 
 ---
 
@@ -599,6 +617,26 @@ public readonly labelPrefixInput: string;
 
 ---
 
+##### `skipGroupsInput`<sup>Optional</sup> <a name="skipGroupsInput" id="@cdktf/provider-okta.dataOktaApp.DataOktaApp.property.skipGroupsInput"></a>
+
+```typescript
+public readonly skipGroupsInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `skipUsersInput`<sup>Optional</sup> <a name="skipUsersInput" id="@cdktf/provider-okta.dataOktaApp.DataOktaApp.property.skipUsersInput"></a>
+
+```typescript
+public readonly skipUsersInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
 ##### `activeOnly`<sup>Required</sup> <a name="activeOnly" id="@cdktf/provider-okta.dataOktaApp.DataOktaApp.property.activeOnly"></a>
 
 ```typescript
@@ -636,6 +674,26 @@ public readonly labelPrefix: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `skipGroups`<sup>Required</sup> <a name="skipGroups" id="@cdktf/provider-okta.dataOktaApp.DataOktaApp.property.skipGroups"></a>
+
+```typescript
+public readonly skipGroups: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `skipUsers`<sup>Required</sup> <a name="skipUsers" id="@cdktf/provider-okta.dataOktaApp.DataOktaApp.property.skipUsers"></a>
+
+```typescript
+public readonly skipUsers: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
 
 ---
 
@@ -681,9 +739,11 @@ const dataOktaAppConfig: dataOktaApp.DataOktaAppConfig = { ... }
 | <code><a href="#@cdktf/provider-okta.dataOktaApp.DataOktaAppConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaApp.DataOktaAppConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaApp.DataOktaAppConfig.property.activeOnly">activeOnly</a></code> | <code>boolean \| cdktf.IResolvable</code> | Search only ACTIVE applications. |
-| <code><a href="#@cdktf/provider-okta.dataOktaApp.DataOktaAppConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/data-sources/app#id DataOktaApp#id}. |
-| <code><a href="#@cdktf/provider-okta.dataOktaApp.DataOktaAppConfig.property.label">label</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/data-sources/app#label DataOktaApp#label}. |
-| <code><a href="#@cdktf/provider-okta.dataOktaApp.DataOktaAppConfig.property.labelPrefix">labelPrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/data-sources/app#label_prefix DataOktaApp#label_prefix}. |
+| <code><a href="#@cdktf/provider-okta.dataOktaApp.DataOktaAppConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/data-sources/app#id DataOktaApp#id}. |
+| <code><a href="#@cdktf/provider-okta.dataOktaApp.DataOktaAppConfig.property.label">label</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/data-sources/app#label DataOktaApp#label}. |
+| <code><a href="#@cdktf/provider-okta.dataOktaApp.DataOktaAppConfig.property.labelPrefix">labelPrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/data-sources/app#label_prefix DataOktaApp#label_prefix}. |
+| <code><a href="#@cdktf/provider-okta.dataOktaApp.DataOktaAppConfig.property.skipGroups">skipGroups</a></code> | <code>boolean \| cdktf.IResolvable</code> | Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources. |
+| <code><a href="#@cdktf/provider-okta.dataOktaApp.DataOktaAppConfig.property.skipUsers">skipUsers</a></code> | <code>boolean \| cdktf.IResolvable</code> | Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources. |
 
 ---
 
@@ -767,7 +827,7 @@ public readonly activeOnly: boolean | IResolvable;
 
 Search only ACTIVE applications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/data-sources/app#active_only DataOktaApp#active_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/data-sources/app#active_only DataOktaApp#active_only}
 
 ---
 
@@ -779,7 +839,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/data-sources/app#id DataOktaApp#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/data-sources/app#id DataOktaApp#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -794,7 +854,7 @@ public readonly label: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/data-sources/app#label DataOktaApp#label}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/data-sources/app#label DataOktaApp#label}.
 
 ---
 
@@ -806,7 +866,35 @@ public readonly labelPrefix: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/data-sources/app#label_prefix DataOktaApp#label_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/data-sources/app#label_prefix DataOktaApp#label_prefix}.
+
+---
+
+##### `skipGroups`<sup>Optional</sup> <a name="skipGroups" id="@cdktf/provider-okta.dataOktaApp.DataOktaAppConfig.property.skipGroups"></a>
+
+```typescript
+public readonly skipGroups: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/data-sources/app#skip_groups DataOktaApp#skip_groups}
+
+---
+
+##### `skipUsers`<sup>Optional</sup> <a name="skipUsers" id="@cdktf/provider-okta.dataOktaApp.DataOktaAppConfig.property.skipUsers"></a>
+
+```typescript
+public readonly skipUsers: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/data-sources/app#skip_users DataOktaApp#skip_users}
 
 ---
 

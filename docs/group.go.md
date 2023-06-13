@@ -1,6 +1,6 @@
 # `okta_group`
 
-Refer to the Terraform Registory for docs: [`okta_group`](https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/group).
+Refer to the Terraform Registory for docs: [`okta_group`](https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/group).
 
 # `group` Submodule <a name="`group` Submodule" id="@cdktf/provider-okta.group"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`okta_group`](https://registry.terra
 
 ### Group <a name="Group" id="@cdktf/provider-okta.group.Group"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/group okta_group}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/group okta_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.group.Group.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v8/group"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/group"
 
 group.NewGroup(scope Construct, id *string, config GroupConfig) Group
 ```
@@ -73,6 +73,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-okta.group.Group.resetCustomProfileAttributes">ResetCustomProfileAttributes</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.group.Group.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.group.Group.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.group.Group.resetSkipUsers">ResetSkipUsers</a></code> | *No description.* |
 
 ---
 
@@ -278,6 +279,12 @@ func ResetDescription()
 func ResetId()
 ```
 
+##### `ResetSkipUsers` <a name="ResetSkipUsers" id="@cdktf/provider-okta.group.Group.resetSkipUsers"></a>
+
+```go
+func ResetSkipUsers()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -291,7 +298,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.group.Group.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v8/group"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/group"
 
 group.Group_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.group.Group.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v8/group"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/group"
 
 group.Group_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +344,7 @@ group.Group_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.group.Group.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v8/group"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/group"
 
 group.Group_IsTerraformResource(x interface{}) *bool
 ```
@@ -370,10 +377,12 @@ group.Group_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-okta.group.Group.property.descriptionInput">DescriptionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.group.Group.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.group.Group.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.group.Group.property.skipUsersInput">SkipUsersInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.group.Group.property.customProfileAttributes">CustomProfileAttributes</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.group.Group.property.description">Description</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.group.Group.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.group.Group.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.group.Group.property.skipUsers">SkipUsers</a></code> | <code>interface{}</code> | *No description.* |
 
 ---
 
@@ -559,6 +568,16 @@ func NameInput() *string
 
 ---
 
+##### `SkipUsersInput`<sup>Optional</sup> <a name="SkipUsersInput" id="@cdktf/provider-okta.group.Group.property.skipUsersInput"></a>
+
+```go
+func SkipUsersInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `CustomProfileAttributes`<sup>Required</sup> <a name="CustomProfileAttributes" id="@cdktf/provider-okta.group.Group.property.customProfileAttributes"></a>
 
 ```go
@@ -599,6 +618,16 @@ func Name() *string
 
 ---
 
+##### `SkipUsers`<sup>Required</sup> <a name="SkipUsers" id="@cdktf/provider-okta.group.Group.property.skipUsers"></a>
+
+```go
+func SkipUsers() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -624,7 +653,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.group.GroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v8/group"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/group"
 
 &group.GroupConfig {
 	Connection: interface{},
@@ -638,6 +667,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v8/group"
 	CustomProfileAttributes: *string,
 	Description: *string,
 	Id: *string,
+	SkipUsers: interface{},
 }
 ```
 
@@ -655,7 +685,8 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v8/group"
 | <code><a href="#@cdktf/provider-okta.group.GroupConfig.property.name">Name</a></code> | <code>*string</code> | Group name. |
 | <code><a href="#@cdktf/provider-okta.group.GroupConfig.property.customProfileAttributes">CustomProfileAttributes</a></code> | <code>*string</code> | JSON formatted custom attributes for a group. It must be JSON due to various types Okta allows. |
 | <code><a href="#@cdktf/provider-okta.group.GroupConfig.property.description">Description</a></code> | <code>*string</code> | Group description. |
-| <code><a href="#@cdktf/provider-okta.group.GroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/group#id Group#id}. |
+| <code><a href="#@cdktf/provider-okta.group.GroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/group#id Group#id}. |
+| <code><a href="#@cdktf/provider-okta.group.GroupConfig.property.skipUsers">SkipUsers</a></code> | <code>interface{}</code> | Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources. |
 
 ---
 
@@ -739,7 +770,7 @@ Name *string
 
 Group name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/group#name Group#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/group#name Group#name}
 
 ---
 
@@ -753,7 +784,7 @@ CustomProfileAttributes *string
 
 JSON formatted custom attributes for a group. It must be JSON due to various types Okta allows.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/group#custom_profile_attributes Group#custom_profile_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/group#custom_profile_attributes Group#custom_profile_attributes}
 
 ---
 
@@ -767,7 +798,7 @@ Description *string
 
 Group description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/group#description Group#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/group#description Group#description}
 
 ---
 
@@ -779,10 +810,24 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/group#id Group#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/group#id Group#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `SkipUsers`<sup>Optional</sup> <a name="SkipUsers" id="@cdktf/provider-okta.group.GroupConfig.property.skipUsers"></a>
+
+```go
+SkipUsers interface{}
+```
+
+- *Type:* interface{}
+
+Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/group#skip_users Group#skip_users}
 
 ---
 

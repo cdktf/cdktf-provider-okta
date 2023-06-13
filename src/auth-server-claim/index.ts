@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/auth_server_claim
+// https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/auth_server_claim
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,27 +8,27 @@ import * as cdktf from 'cdktf';
 
 export interface AuthServerClaimConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/auth_server_claim#always_include_in_token AuthServerClaim#always_include_in_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/auth_server_claim#always_include_in_token AuthServerClaim#always_include_in_token}
   */
   readonly alwaysIncludeInToken?: boolean | cdktf.IResolvable;
   /**
   * Auth server ID
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/auth_server_claim#auth_server_id AuthServerClaim#auth_server_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/auth_server_claim#auth_server_id AuthServerClaim#auth_server_id}
   */
   readonly authServerId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/auth_server_claim#claim_type AuthServerClaim#claim_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/auth_server_claim#claim_type AuthServerClaim#claim_type}
   */
   readonly claimType: string;
   /**
   * Required when value_type is GROUPS
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/auth_server_claim#group_filter_type AuthServerClaim#group_filter_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/auth_server_claim#group_filter_type AuthServerClaim#group_filter_type}
   */
   readonly groupFilterType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/auth_server_claim#id AuthServerClaim#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/auth_server_claim#id AuthServerClaim#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -42,31 +37,31 @@ export interface AuthServerClaimConfig extends cdktf.TerraformMetaArguments {
   /**
   * Auth server claim name
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/auth_server_claim#name AuthServerClaim#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/auth_server_claim#name AuthServerClaim#name}
   */
   readonly name: string;
   /**
   * Auth server claim list of scopes
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/auth_server_claim#scopes AuthServerClaim#scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/auth_server_claim#scopes AuthServerClaim#scopes}
   */
   readonly scopes?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/auth_server_claim#status AuthServerClaim#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/auth_server_claim#status AuthServerClaim#status}
   */
   readonly status?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/auth_server_claim#value AuthServerClaim#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/auth_server_claim#value AuthServerClaim#value}
   */
   readonly value: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/auth_server_claim#value_type AuthServerClaim#value_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/auth_server_claim#value_type AuthServerClaim#value_type}
   */
   readonly valueType?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/auth_server_claim okta_auth_server_claim}
+* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/auth_server_claim okta_auth_server_claim}
 */
 export class AuthServerClaim extends cdktf.TerraformResource {
 
@@ -80,7 +75,7 @@ export class AuthServerClaim extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/auth_server_claim okta_auth_server_claim} Resource
+  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/auth_server_claim okta_auth_server_claim} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -91,7 +86,7 @@ export class AuthServerClaim extends cdktf.TerraformResource {
       terraformResourceType: 'okta_auth_server_claim',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '4.0.0',
+        providerVersion: '4.0.1',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

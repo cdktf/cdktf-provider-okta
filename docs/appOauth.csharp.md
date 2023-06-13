@@ -1,6 +1,6 @@
 # `okta_app_oauth`
 
-Refer to the Terraform Registory for docs: [`okta_app_oauth`](https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth).
+Refer to the Terraform Registory for docs: [`okta_app_oauth`](https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/app_oauth).
 
 # `appOauth` Submodule <a name="`appOauth` Submodule" id="@cdktf/provider-okta.appOauth"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_app_oauth`](https://registry.t
 
 ### AppOauth <a name="AppOauth" id="@cdktf/provider-okta.appOauth.AppOauth"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth okta_app_oauth}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/app_oauth okta_app_oauth}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appOauth.AppOauth.Initializer"></a>
 
@@ -2038,7 +2038,7 @@ new AppOauthConfig {
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.groupsClaim">GroupsClaim</a></code> | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthGroupsClaim">AppOauthGroupsClaim</a></code> | groups_claim block. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.hideIos">HideIos</a></code> | <code>object</code> | Do not display application icon on mobile app. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.hideWeb">HideWeb</a></code> | <code>object</code> | Do not display application icon to users. |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#id AppOauth#id}. |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/app_oauth#id AppOauth#id}. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.implicitAssignment">ImplicitAssignment</a></code> | <code>object</code> | *Early Access Property*. Enable Federation Broker Mode. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.issuerMode">IssuerMode</a></code> | <code>string</code> | *Early Access Property*. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.jwks">Jwks</a></code> | <code>object</code> | jwks block. |
@@ -2148,7 +2148,7 @@ public string Label { get; set; }
 
 Pretty name of app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#label AppOauth#label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/app_oauth#label AppOauth#label}
 
 ---
 
@@ -2162,7 +2162,7 @@ public string Type { get; set; }
 
 The type of client application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#type AppOauth#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/app_oauth#type AppOauth#type}
 
 ---
 
@@ -2176,7 +2176,7 @@ public string AccessibilityErrorRedirectUrl { get; set; }
 
 Custom error page URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#accessibility_error_redirect_url AppOauth#accessibility_error_redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/app_oauth#accessibility_error_redirect_url AppOauth#accessibility_error_redirect_url}
 
 ---
 
@@ -2190,7 +2190,7 @@ public string AccessibilityLoginRedirectUrl { get; set; }
 
 Custom login page URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#accessibility_login_redirect_url AppOauth#accessibility_login_redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/app_oauth#accessibility_login_redirect_url AppOauth#accessibility_login_redirect_url}
 
 ---
 
@@ -2204,7 +2204,7 @@ public object AccessibilitySelfService { get; set; }
 
 Enable self service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#accessibility_self_service AppOauth#accessibility_self_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/app_oauth#accessibility_self_service AppOauth#accessibility_self_service}
 
 ---
 
@@ -2218,7 +2218,7 @@ public string AdminNote { get; set; }
 
 Application notes for admins.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#admin_note AppOauth#admin_note}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/app_oauth#admin_note AppOauth#admin_note}
 
 ---
 
@@ -2232,7 +2232,7 @@ public string AppLinksJson { get; set; }
 
 Displays specific appLinks for the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#app_links_json AppOauth#app_links_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/app_oauth#app_links_json AppOauth#app_links_json}
 
 ---
 
@@ -2246,7 +2246,7 @@ public string AppSettingsJson { get; set; }
 
 Application settings in JSON format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#app_settings_json AppOauth#app_settings_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/app_oauth#app_settings_json AppOauth#app_settings_json}
 
 ---
 
@@ -2260,7 +2260,7 @@ public string AuthenticationPolicy { get; set; }
 
 Id of this apps authentication policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#authentication_policy AppOauth#authentication_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/app_oauth#authentication_policy AppOauth#authentication_policy}
 
 ---
 
@@ -2274,7 +2274,7 @@ public object AutoKeyRotation { get; set; }
 
 Requested key rotation mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#auto_key_rotation AppOauth#auto_key_rotation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/app_oauth#auto_key_rotation AppOauth#auto_key_rotation}
 
 ---
 
@@ -2288,7 +2288,7 @@ public object AutoSubmitToolbar { get; set; }
 
 Display auto submit toolbar.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#auto_submit_toolbar AppOauth#auto_submit_toolbar}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/app_oauth#auto_submit_toolbar AppOauth#auto_submit_toolbar}
 
 ---
 
@@ -2302,7 +2302,7 @@ public string ClientBasicSecret { get; set; }
 
 OAuth client secret key, this can be set when token_endpoint_auth_method is client_secret_basic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#client_basic_secret AppOauth#client_basic_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/app_oauth#client_basic_secret AppOauth#client_basic_secret}
 
 ---
 
@@ -2316,7 +2316,7 @@ public string ClientId { get; set; }
 
 OAuth client ID. If set during creation, app is created with this id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#client_id AppOauth#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/app_oauth#client_id AppOauth#client_id}
 
 ---
 
@@ -2330,7 +2330,7 @@ public string ClientUri { get; set; }
 
 URI to a web page providing information about the client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#client_uri AppOauth#client_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/app_oauth#client_uri AppOauth#client_uri}
 
 ---
 
@@ -2344,7 +2344,7 @@ public string ConsentMethod { get; set; }
 
 *Early Access Property*. Indicates whether user consent is required or implicit. Valid values: REQUIRED, TRUSTED. Default value is TRUSTED.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#consent_method AppOauth#consent_method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/app_oauth#consent_method AppOauth#consent_method}
 
 ---
 
@@ -2358,7 +2358,7 @@ public string EnduserNote { get; set; }
 
 Application notes for end users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#enduser_note AppOauth#enduser_note}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/app_oauth#enduser_note AppOauth#enduser_note}
 
 ---
 
@@ -2372,7 +2372,7 @@ public string[] GrantTypes { get; set; }
 
 List of OAuth 2.0 grant types. Conditional validation params found here https://developer.okta.com/docs/api/resources/apps#credentials-settings-details. Defaults to minimum requirements per app type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#grant_types AppOauth#grant_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/app_oauth#grant_types AppOauth#grant_types}
 
 ---
 
@@ -2386,7 +2386,7 @@ public AppOauthGroupsClaim GroupsClaim { get; set; }
 
 groups_claim block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#groups_claim AppOauth#groups_claim}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/app_oauth#groups_claim AppOauth#groups_claim}
 
 ---
 
@@ -2400,7 +2400,7 @@ public object HideIos { get; set; }
 
 Do not display application icon on mobile app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#hide_ios AppOauth#hide_ios}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/app_oauth#hide_ios AppOauth#hide_ios}
 
 ---
 
@@ -2414,7 +2414,7 @@ public object HideWeb { get; set; }
 
 Do not display application icon to users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#hide_web AppOauth#hide_web}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/app_oauth#hide_web AppOauth#hide_web}
 
 ---
 
@@ -2426,7 +2426,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#id AppOauth#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/app_oauth#id AppOauth#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2443,7 +2443,7 @@ public object ImplicitAssignment { get; set; }
 
 *Early Access Property*. Enable Federation Broker Mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#implicit_assignment AppOauth#implicit_assignment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/app_oauth#implicit_assignment AppOauth#implicit_assignment}
 
 ---
 
@@ -2459,7 +2459,7 @@ public string IssuerMode { get; set; }
 
 Indicates whether the Okta Authorization Server uses the original Okta org domain URL or a custom domain URL as the issuer of ID token for this client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#issuer_mode AppOauth#issuer_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/app_oauth#issuer_mode AppOauth#issuer_mode}
 
 ---
 
@@ -2473,7 +2473,7 @@ public object Jwks { get; set; }
 
 jwks block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#jwks AppOauth#jwks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/app_oauth#jwks AppOauth#jwks}
 
 ---
 
@@ -2487,7 +2487,7 @@ public string LoginMode { get; set; }
 
 The type of Idp-Initiated login that the client supports, if any.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#login_mode AppOauth#login_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/app_oauth#login_mode AppOauth#login_mode}
 
 ---
 
@@ -2501,7 +2501,7 @@ public string[] LoginScopes { get; set; }
 
 List of scopes to use for the request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#login_scopes AppOauth#login_scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/app_oauth#login_scopes AppOauth#login_scopes}
 
 ---
 
@@ -2515,7 +2515,7 @@ public string LoginUri { get; set; }
 
 URI that initiates login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#login_uri AppOauth#login_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/app_oauth#login_uri AppOauth#login_uri}
 
 ---
 
@@ -2529,7 +2529,7 @@ public string Logo { get; set; }
 
 Local path to logo of the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#logo AppOauth#logo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/app_oauth#logo AppOauth#logo}
 
 ---
 
@@ -2543,7 +2543,7 @@ public string LogoUri { get; set; }
 
 URI that references a logo for the client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#logo_uri AppOauth#logo_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/app_oauth#logo_uri AppOauth#logo_uri}
 
 ---
 
@@ -2559,7 +2559,7 @@ This tells the provider not to persist the application's secret to state.
 
 If this is ever changes from true => false your app will be recreated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#omit_secret AppOauth#omit_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/app_oauth#omit_secret AppOauth#omit_secret}
 
 ---
 
@@ -2573,7 +2573,7 @@ public object PkceRequired { get; set; }
 
 Require Proof Key for Code Exchange (PKCE) for additional verification key rotation mode. See: https://developer.okta.com/docs/reference/api/apps/#oauth-credential-object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#pkce_required AppOauth#pkce_required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/app_oauth#pkce_required AppOauth#pkce_required}
 
 ---
 
@@ -2587,7 +2587,7 @@ public string PolicyUri { get; set; }
 
 URI to web page providing client policy document.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#policy_uri AppOauth#policy_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/app_oauth#policy_uri AppOauth#policy_uri}
 
 ---
 
@@ -2601,7 +2601,7 @@ public string[] PostLogoutRedirectUris { get; set; }
 
 List of URIs for redirection after logout. Note: see okta_app_oauth_post_logout_redirect_uri for appending to this list in a decentralized way.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#post_logout_redirect_uris AppOauth#post_logout_redirect_uris}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/app_oauth#post_logout_redirect_uris AppOauth#post_logout_redirect_uris}
 
 ---
 
@@ -2615,7 +2615,7 @@ public string Profile { get; set; }
 
 Custom JSON that represents an OAuth application's profile.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#profile AppOauth#profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/app_oauth#profile AppOauth#profile}
 
 ---
 
@@ -2631,7 +2631,7 @@ List of URIs for use in the redirect-based flow.
 
 This is required for all application types except service. Note: see okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#redirect_uris AppOauth#redirect_uris}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/app_oauth#redirect_uris AppOauth#redirect_uris}
 
 ---
 
@@ -2645,7 +2645,7 @@ public double RefreshTokenLeeway { get; set; }
 
 *Early Access Property* Grace period for token rotation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#refresh_token_leeway AppOauth#refresh_token_leeway}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/app_oauth#refresh_token_leeway AppOauth#refresh_token_leeway}
 
 ---
 
@@ -2659,7 +2659,7 @@ public string RefreshTokenRotation { get; set; }
 
 *Early Access Property* Refresh token rotation behavior.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#refresh_token_rotation AppOauth#refresh_token_rotation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/app_oauth#refresh_token_rotation AppOauth#refresh_token_rotation}
 
 ---
 
@@ -2673,7 +2673,7 @@ public string[] ResponseTypes { get; set; }
 
 List of OAuth 2.0 response type strings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#response_types AppOauth#response_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/app_oauth#response_types AppOauth#response_types}
 
 ---
 
@@ -2687,7 +2687,7 @@ public string Status { get; set; }
 
 Status of application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#status AppOauth#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/app_oauth#status AppOauth#status}
 
 ---
 
@@ -2701,7 +2701,7 @@ public AppOauthTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#timeouts AppOauth#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/app_oauth#timeouts AppOauth#timeouts}
 
 ---
 
@@ -2715,7 +2715,7 @@ public string TokenEndpointAuthMethod { get; set; }
 
 Requested authentication method for the token endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#token_endpoint_auth_method AppOauth#token_endpoint_auth_method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/app_oauth#token_endpoint_auth_method AppOauth#token_endpoint_auth_method}
 
 ---
 
@@ -2729,7 +2729,7 @@ public string TosUri { get; set; }
 
 URI to web page providing client tos (terms of service).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#tos_uri AppOauth#tos_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/app_oauth#tos_uri AppOauth#tos_uri}
 
 ---
 
@@ -2743,7 +2743,7 @@ public string UserNameTemplate { get; set; }
 
 Username template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#user_name_template AppOauth#user_name_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/app_oauth#user_name_template AppOauth#user_name_template}
 
 ---
 
@@ -2757,7 +2757,7 @@ public string UserNameTemplatePushStatus { get; set; }
 
 Push username on update.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#user_name_template_push_status AppOauth#user_name_template_push_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/app_oauth#user_name_template_push_status AppOauth#user_name_template_push_status}
 
 ---
 
@@ -2771,7 +2771,7 @@ public string UserNameTemplateSuffix { get; set; }
 
 Username template suffix.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#user_name_template_suffix AppOauth#user_name_template_suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/app_oauth#user_name_template_suffix AppOauth#user_name_template_suffix}
 
 ---
 
@@ -2785,7 +2785,7 @@ public string UserNameTemplateType { get; set; }
 
 Username template type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#user_name_template_type AppOauth#user_name_template_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/app_oauth#user_name_template_type AppOauth#user_name_template_type}
 
 ---
 
@@ -2799,7 +2799,7 @@ public string WildcardRedirect { get; set; }
 
 *Early Access Property*. Indicates if the client is allowed to use wildcard matching of redirect_uris.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#wildcard_redirect AppOauth#wildcard_redirect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/app_oauth#wildcard_redirect AppOauth#wildcard_redirect}
 
 ---
 
@@ -2839,7 +2839,7 @@ public string Name { get; set; }
 
 Name of the claim that will be used in the token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#name AppOauth#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/app_oauth#name AppOauth#name}
 
 ---
 
@@ -2853,7 +2853,7 @@ public string Type { get; set; }
 
 Groups claim type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#type AppOauth#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/app_oauth#type AppOauth#type}
 
 ---
 
@@ -2869,7 +2869,7 @@ Value of the claim.
 
 Can be an Okta Expression Language statement that evaluates at the time the token is minted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#value AppOauth#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/app_oauth#value AppOauth#value}
 
 ---
 
@@ -2883,7 +2883,7 @@ public string FilterType { get; set; }
 
 Groups claim filter. Can only be set if type is FILTER.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#filter_type AppOauth#filter_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/app_oauth#filter_type AppOauth#filter_type}
 
 ---
 
@@ -2923,7 +2923,7 @@ public string Kid { get; set; }
 
 Key ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#kid AppOauth#kid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/app_oauth#kid AppOauth#kid}
 
 ---
 
@@ -2937,7 +2937,7 @@ public string Kty { get; set; }
 
 Key type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#kty AppOauth#kty}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/app_oauth#kty AppOauth#kty}
 
 ---
 
@@ -2951,7 +2951,7 @@ public string E { get; set; }
 
 RSA Exponent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#e AppOauth#e}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/app_oauth#e AppOauth#e}
 
 ---
 
@@ -2965,7 +2965,7 @@ public string N { get; set; }
 
 RSA Modulus.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#n AppOauth#n}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/app_oauth#n AppOauth#n}
 
 ---
 
@@ -2987,9 +2987,9 @@ new AppOauthTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#create AppOauth#create}. |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#read AppOauth#read}. |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#update AppOauth#update}. |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/app_oauth#create AppOauth#create}. |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/app_oauth#read AppOauth#read}. |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/app_oauth#update AppOauth#update}. |
 
 ---
 
@@ -3001,7 +3001,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#create AppOauth#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/app_oauth#create AppOauth#create}.
 
 ---
 
@@ -3013,7 +3013,7 @@ public string Read { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#read AppOauth#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/app_oauth#read AppOauth#read}.
 
 ---
 
@@ -3025,7 +3025,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/app_oauth#update AppOauth#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/app_oauth#update AppOauth#update}.
 
 ---
 
