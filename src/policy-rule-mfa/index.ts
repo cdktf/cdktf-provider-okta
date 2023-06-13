@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/policy_rule_mfa
+// https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/policy_rule_mfa
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface PolicyRuleMfaConfig extends cdktf.TerraformMetaArguments {
   /**
   * Should the user be enrolled the first time they LOGIN, the next time they are CHALLENGED, or NEVER?
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/policy_rule_mfa#enroll PolicyRuleMfa#enroll}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/policy_rule_mfa#enroll PolicyRuleMfa#enroll}
   */
   readonly enroll?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/policy_rule_mfa#id PolicyRuleMfa#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/policy_rule_mfa#id PolicyRuleMfa#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,78 +28,78 @@ export interface PolicyRuleMfaConfig extends cdktf.TerraformMetaArguments {
   /**
   * Policy Rule Name
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/policy_rule_mfa#name PolicyRuleMfa#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/policy_rule_mfa#name PolicyRuleMfa#name}
   */
   readonly name: string;
   /**
   * Network selection mode: ANYWHERE, ZONE, ON_NETWORK, or OFF_NETWORK.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/policy_rule_mfa#network_connection PolicyRuleMfa#network_connection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/policy_rule_mfa#network_connection PolicyRuleMfa#network_connection}
   */
   readonly networkConnection?: string;
   /**
   * The zones to exclude
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/policy_rule_mfa#network_excludes PolicyRuleMfa#network_excludes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/policy_rule_mfa#network_excludes PolicyRuleMfa#network_excludes}
   */
   readonly networkExcludes?: string[];
   /**
   * The zones to include
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/policy_rule_mfa#network_includes PolicyRuleMfa#network_includes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/policy_rule_mfa#network_includes PolicyRuleMfa#network_includes}
   */
   readonly networkIncludes?: string[];
   /**
   * Policy ID of the Rule
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/policy_rule_mfa#policy_id PolicyRuleMfa#policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/policy_rule_mfa#policy_id PolicyRuleMfa#policy_id}
   */
   readonly policyId?: string;
   /**
   * Policy Rule Priority, this attribute can be set to a valid priority. To avoid endless diff situation we error if an invalid priority is provided. API defaults it to the last (lowest) if not there.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/policy_rule_mfa#priority PolicyRuleMfa#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/policy_rule_mfa#priority PolicyRuleMfa#priority}
   */
   readonly priority?: number;
   /**
   * Policy Rule Status: ACTIVE or INACTIVE.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/policy_rule_mfa#status PolicyRuleMfa#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/policy_rule_mfa#status PolicyRuleMfa#status}
   */
   readonly status?: string;
   /**
   * Set of User IDs to Exclude
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/policy_rule_mfa#users_excluded PolicyRuleMfa#users_excluded}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/policy_rule_mfa#users_excluded PolicyRuleMfa#users_excluded}
   */
   readonly usersExcluded?: string[];
   /**
   * app_exclude block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/policy_rule_mfa#app_exclude PolicyRuleMfa#app_exclude}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/policy_rule_mfa#app_exclude PolicyRuleMfa#app_exclude}
   */
   readonly appExclude?: PolicyRuleMfaAppExclude[] | cdktf.IResolvable;
   /**
   * app_include block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/policy_rule_mfa#app_include PolicyRuleMfa#app_include}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/policy_rule_mfa#app_include PolicyRuleMfa#app_include}
   */
   readonly appInclude?: PolicyRuleMfaAppInclude[] | cdktf.IResolvable;
 }
 export interface PolicyRuleMfaAppExclude {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/policy_rule_mfa#id PolicyRuleMfa#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/policy_rule_mfa#id PolicyRuleMfa#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/policy_rule_mfa#name PolicyRuleMfa#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/policy_rule_mfa#name PolicyRuleMfa#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/policy_rule_mfa#type PolicyRuleMfa#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/policy_rule_mfa#type PolicyRuleMfa#type}
   */
   readonly type: string;
 }
@@ -239,18 +239,18 @@ export class PolicyRuleMfaAppExcludeList extends cdktf.ComplexList {
 }
 export interface PolicyRuleMfaAppInclude {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/policy_rule_mfa#id PolicyRuleMfa#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/policy_rule_mfa#id PolicyRuleMfa#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/policy_rule_mfa#name PolicyRuleMfa#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/policy_rule_mfa#name PolicyRuleMfa#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/policy_rule_mfa#type PolicyRuleMfa#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/policy_rule_mfa#type PolicyRuleMfa#type}
   */
   readonly type: string;
 }
@@ -390,7 +390,7 @@ export class PolicyRuleMfaAppIncludeList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/policy_rule_mfa okta_policy_rule_mfa}
+* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/policy_rule_mfa okta_policy_rule_mfa}
 */
 export class PolicyRuleMfa extends cdktf.TerraformResource {
 
@@ -404,7 +404,7 @@ export class PolicyRuleMfa extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.0/docs/resources/policy_rule_mfa okta_policy_rule_mfa} Resource
+  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/policy_rule_mfa okta_policy_rule_mfa} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -415,7 +415,7 @@ export class PolicyRuleMfa extends cdktf.TerraformResource {
       terraformResourceType: 'okta_policy_rule_mfa',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '4.0.0',
+        providerVersion: '4.0.1',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
