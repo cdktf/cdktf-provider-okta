@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaEmailCustomizations.DataOktaEmailCustomizations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v8/dataoktaemailcustomizations"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaemailcustomizations"
 
 dataoktaemailcustomizations.NewDataOktaEmailCustomizations(scope Construct, id *string, config DataOktaEmailCustomizationsConfig) DataOktaEmailCustomizations
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.dataOktaEmailCustomizations.DataOktaEmailCustomizations.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v8/dataoktaemailcustomizations"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaemailcustomizations"
 
 dataoktaemailcustomizations.DataOktaEmailCustomizations_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.dataOktaEmailCustomizations.DataOktaEmailCustomizations.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v8/dataoktaemailcustomizations"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaemailcustomizations"
 
 dataoktaemailcustomizations.DataOktaEmailCustomizations_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ dataoktaemailcustomizations.DataOktaEmailCustomizations_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-okta.dataOktaEmailCustomizations.DataOktaEmailCustomizations.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v8/dataoktaemailcustomizations"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaemailcustomizations"
 
 dataoktaemailcustomizations.DataOktaEmailCustomizations_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -577,7 +577,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaEmailCustomizations.DataOktaEmailCustomizationsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v8/dataoktaemailcustomizations"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaemailcustomizations"
 
 &dataoktaemailcustomizations.DataOktaEmailCustomizationsConfig {
 	Connection: interface{},
@@ -728,7 +728,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaEmailCustomizations.DataOktaEmailCustomizationsEmailCustomizations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v8/dataoktaemailcustomizations"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaemailcustomizations"
 
 &dataoktaemailcustomizations.DataOktaEmailCustomizationsEmailCustomizations {
 
@@ -743,7 +743,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v8/dataoktaemailcustomizati
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaEmailCustomizations.DataOktaEmailCustomizationsEmailCustomizationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v8/dataoktaemailcustomizations"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaemailcustomizations"
 
 dataoktaemailcustomizations.NewDataOktaEmailCustomizationsEmailCustomizationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOktaEmailCustomizationsEmailCustomizationsList
 ```
@@ -875,7 +875,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaEmailCustomizations.DataOktaEmailCustomizationsEmailCustomizationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v8/dataoktaemailcustomizations"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaemailcustomizations"
 
 dataoktaemailcustomizations.NewDataOktaEmailCustomizationsEmailCustomizationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataOktaEmailCustomizationsEmailCustomizationsOutputReference
 ```
