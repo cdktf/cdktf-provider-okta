@@ -1364,7 +1364,7 @@ public resetValue(): void
 | <code><a href="#@cdktf/provider-okta.inlineHook.InlineHookHeadersOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.inlineHook.InlineHookHeadersOutputReference.property.key">key</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.inlineHook.InlineHookHeadersOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.inlineHook.InlineHookHeadersOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-okta.inlineHook.InlineHookHeaders">InlineHookHeaders</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.inlineHook.InlineHookHeadersOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-okta.inlineHook.InlineHookHeaders">InlineHookHeaders</a></code> | *No description.* |
 
 ---
 
@@ -1435,10 +1435,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-okta.inlineHook.InlineHookHeadersOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: InlineHookHeaders | IResolvable;
+public readonly internalValue: IResolvable | InlineHookHeaders;
 ```
 
-- *Type:* <a href="#@cdktf/provider-okta.inlineHook.InlineHookHeaders">InlineHookHeaders</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-okta.inlineHook.InlineHookHeaders">InlineHookHeaders</a>
 
 ---
 
