@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaTheme.DataOktaTheme.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktatheme"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/dataoktatheme"
 
 dataoktatheme.NewDataOktaTheme(scope Construct, id *string, config DataOktaThemeConfig) DataOktaTheme
 ```
@@ -270,7 +270,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.dataOktaTheme.DataOktaTheme.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktatheme"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/dataoktatheme"
 
 dataoktatheme.DataOktaTheme_IsConstruct(x interface{}) *bool
 ```
@@ -302,7 +302,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.dataOktaTheme.DataOktaTheme.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktatheme"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/dataoktatheme"
 
 dataoktatheme.DataOktaTheme_IsTerraformElement(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ dataoktatheme.DataOktaTheme_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-okta.dataOktaTheme.DataOktaTheme.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktatheme"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/dataoktatheme"
 
 dataoktatheme.DataOktaTheme_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -680,7 +680,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaTheme.DataOktaThemeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktatheme"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/dataoktatheme"
 
 &dataoktatheme.DataOktaThemeConfig {
 	Connection: interface{},

@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.authServerScope.AuthServerScope.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/authserverscope"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/authserverscope"
 
 authserverscope.NewAuthServerScope(scope Construct, id *string, config AuthServerScopeConfig) AuthServerScope
 ```
@@ -312,7 +312,7 @@ func ResetMetadataPublish()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.authServerScope.AuthServerScope.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/authserverscope"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/authserverscope"
 
 authserverscope.AuthServerScope_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.authServerScope.AuthServerScope.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/authserverscope"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/authserverscope"
 
 authserverscope.AuthServerScope_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ authserverscope.AuthServerScope_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.authServerScope.AuthServerScope.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/authserverscope"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/authserverscope"
 
 authserverscope.AuthServerScope_IsTerraformResource(x interface{}) *bool
 ```
@@ -744,7 +744,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.authServerScope.AuthServerScopeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/authserverscope"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/authserverscope"
 
 &authserverscope.AuthServerScopeConfig {
 	Connection: interface{},
