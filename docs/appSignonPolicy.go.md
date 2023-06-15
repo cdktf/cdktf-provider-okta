@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v9/appsignonpolicy"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/appsignonpolicy"
 
 appsignonpolicy.NewAppSignonPolicy(scope Construct, id *string, config AppSignonPolicyConfig) AppSignonPolicy
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v9/appsignonpolicy"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/appsignonpolicy"
 
 appsignonpolicy.AppSignonPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v9/appsignonpolicy"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/appsignonpolicy"
 
 appsignonpolicy.AppSignonPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ appsignonpolicy.AppSignonPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v9/appsignonpolicy"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/appsignonpolicy"
 
 appsignonpolicy.AppSignonPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -588,7 +588,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.appSignonPolicy.AppSignonPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v9/appsignonpolicy"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/appsignonpolicy"
 
 &appsignonpolicy.AppSignonPolicyConfig {
 	Connection: interface{},

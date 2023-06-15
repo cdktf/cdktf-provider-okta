@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaUserSecurityQuestions.DataOktaUserSecurityQuestions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v9/dataoktausersecurityquestions"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/dataoktausersecurityquestions"
 
 dataoktausersecurityquestions.NewDataOktaUserSecurityQuestions(scope Construct, id *string, config DataOktaUserSecurityQuestionsConfig) DataOktaUserSecurityQuestions
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.dataOktaUserSecurityQuestions.DataOktaUserSecurityQuestions.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v9/dataoktausersecurityquestions"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/dataoktausersecurityquestions"
 
 dataoktausersecurityquestions.DataOktaUserSecurityQuestions_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.dataOktaUserSecurityQuestions.DataOktaUserSecurityQuestions.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v9/dataoktausersecurityquestions"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/dataoktausersecurityquestions"
 
 dataoktausersecurityquestions.DataOktaUserSecurityQuestions_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ dataoktausersecurityquestions.DataOktaUserSecurityQuestions_IsTerraformElement(x
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-okta.dataOktaUserSecurityQuestions.DataOktaUserSecurityQuestions.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v9/dataoktausersecurityquestions"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/dataoktausersecurityquestions"
 
 dataoktausersecurityquestions.DataOktaUserSecurityQuestions_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -555,7 +555,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaUserSecurityQuestions.DataOktaUserSecurityQuestionsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v9/dataoktausersecurityquestions"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/dataoktausersecurityquestions"
 
 &dataoktausersecurityquestions.DataOktaUserSecurityQuestionsConfig {
 	Connection: interface{},
@@ -690,7 +690,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaUserSecurityQuestions.DataOktaUserSecurityQuestionsQuestions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v9/dataoktausersecurityquestions"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/dataoktausersecurityquestions"
 
 &dataoktausersecurityquestions.DataOktaUserSecurityQuestionsQuestions {
 
@@ -705,7 +705,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v9/dataoktausersecurityques
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaUserSecurityQuestions.DataOktaUserSecurityQuestionsQuestionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v9/dataoktausersecurityquestions"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/dataoktausersecurityquestions"
 
 dataoktausersecurityquestions.NewDataOktaUserSecurityQuestionsQuestionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOktaUserSecurityQuestionsQuestionsList
 ```
@@ -837,7 +837,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaUserSecurityQuestions.DataOktaUserSecurityQuestionsQuestionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v9/dataoktausersecurityquestions"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/dataoktausersecurityquestions"
 
 dataoktausersecurityquestions.NewDataOktaUserSecurityQuestionsQuestionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataOktaUserSecurityQuestionsQuestionsOutputReference
 ```
