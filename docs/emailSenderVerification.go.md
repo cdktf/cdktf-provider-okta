@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.emailSenderVerification.EmailSenderVerification.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/emailsenderverification"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v9/emailsenderverification"
 
 emailsenderverification.NewEmailSenderVerification(scope Construct, id *string, config EmailSenderVerificationConfig) EmailSenderVerification
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.emailSenderVerification.EmailSenderVerification.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/emailsenderverification"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v9/emailsenderverification"
 
 emailsenderverification.EmailSenderVerification_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.emailSenderVerification.EmailSenderVerification.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/emailsenderverification"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v9/emailsenderverification"
 
 emailsenderverification.EmailSenderVerification_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ emailsenderverification.EmailSenderVerification_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.emailSenderVerification.EmailSenderVerification.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/emailsenderverification"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v9/emailsenderverification"
 
 emailsenderverification.EmailSenderVerification_IsTerraformResource(x interface{}) *bool
 ```
@@ -566,7 +566,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.emailSenderVerification.EmailSenderVerificationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/emailsenderverification"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v9/emailsenderverification"
 
 &emailsenderverification.EmailSenderVerificationConfig {
 	Connection: interface{},

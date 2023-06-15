@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.linkDefinition.LinkDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/linkdefinition"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v9/linkdefinition"
 
 linkdefinition.NewLinkDefinition(scope Construct, id *string, config LinkDefinitionConfig) LinkDefinition
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.linkDefinition.LinkDefinition.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/linkdefinition"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v9/linkdefinition"
 
 linkdefinition.LinkDefinition_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.linkDefinition.LinkDefinition.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/linkdefinition"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v9/linkdefinition"
 
 linkdefinition.LinkDefinition_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ linkdefinition.LinkDefinition_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.linkDefinition.LinkDefinition.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/linkdefinition"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v9/linkdefinition"
 
 linkdefinition.LinkDefinition_IsTerraformResource(x interface{}) *bool
 ```
@@ -676,7 +676,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.linkDefinition.LinkDefinitionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/linkdefinition"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v9/linkdefinition"
 
 &linkdefinition.LinkDefinitionConfig {
 	Connection: interface{},
