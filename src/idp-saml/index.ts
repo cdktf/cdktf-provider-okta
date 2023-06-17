@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/idp_saml
+// https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/idp_saml
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,148 +13,148 @@ import * as cdktf from 'cdktf';
 
 export interface IdpSamlConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/idp_saml#account_link_action IdpSaml#account_link_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/idp_saml#account_link_action IdpSaml#account_link_action}
   */
   readonly accountLinkAction?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/idp_saml#account_link_group_include IdpSaml#account_link_group_include}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/idp_saml#account_link_group_include IdpSaml#account_link_group_include}
   */
   readonly accountLinkGroupInclude?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/idp_saml#acs_type IdpSaml#acs_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/idp_saml#acs_type IdpSaml#acs_type}
   */
   readonly acsType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/idp_saml#deprovisioned_action IdpSaml#deprovisioned_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/idp_saml#deprovisioned_action IdpSaml#deprovisioned_action}
   */
   readonly deprovisionedAction?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/idp_saml#groups_action IdpSaml#groups_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/idp_saml#groups_action IdpSaml#groups_action}
   */
   readonly groupsAction?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/idp_saml#groups_assignment IdpSaml#groups_assignment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/idp_saml#groups_assignment IdpSaml#groups_assignment}
   */
   readonly groupsAssignment?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/idp_saml#groups_attribute IdpSaml#groups_attribute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/idp_saml#groups_attribute IdpSaml#groups_attribute}
   */
   readonly groupsAttribute?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/idp_saml#groups_filter IdpSaml#groups_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/idp_saml#groups_filter IdpSaml#groups_filter}
   */
   readonly groupsFilter?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/idp_saml#id IdpSaml#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/idp_saml#id IdpSaml#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/idp_saml#issuer IdpSaml#issuer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/idp_saml#issuer IdpSaml#issuer}
   */
   readonly issuer: string;
   /**
   * Indicates whether Okta uses the original Okta org domain URL, or a custom domain URL
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/idp_saml#issuer_mode IdpSaml#issuer_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/idp_saml#issuer_mode IdpSaml#issuer_mode}
   */
   readonly issuerMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/idp_saml#kid IdpSaml#kid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/idp_saml#kid IdpSaml#kid}
   */
   readonly kid: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/idp_saml#max_clock_skew IdpSaml#max_clock_skew}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/idp_saml#max_clock_skew IdpSaml#max_clock_skew}
   */
   readonly maxClockSkew?: number;
   /**
   * Name of the IdP
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/idp_saml#name IdpSaml#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/idp_saml#name IdpSaml#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/idp_saml#name_format IdpSaml#name_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/idp_saml#name_format IdpSaml#name_format}
   */
   readonly nameFormat?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/idp_saml#profile_master IdpSaml#profile_master}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/idp_saml#profile_master IdpSaml#profile_master}
   */
   readonly profileMaster?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/idp_saml#provisioning_action IdpSaml#provisioning_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/idp_saml#provisioning_action IdpSaml#provisioning_action}
   */
   readonly provisioningAction?: string;
   /**
   * The XML digital Signature Algorithm used when signing an <AuthnRequest> message
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/idp_saml#request_signature_algorithm IdpSaml#request_signature_algorithm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/idp_saml#request_signature_algorithm IdpSaml#request_signature_algorithm}
   */
   readonly requestSignatureAlgorithm?: string;
   /**
   * Specifies whether to digitally sign <AuthnRequest> messages to the IdP
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/idp_saml#request_signature_scope IdpSaml#request_signature_scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/idp_saml#request_signature_scope IdpSaml#request_signature_scope}
   */
   readonly requestSignatureScope?: string;
   /**
   * The minimum XML digital Signature Algorithm allowed when verifying a <SAMLResponse> message or <Assertion> element
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/idp_saml#response_signature_algorithm IdpSaml#response_signature_algorithm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/idp_saml#response_signature_algorithm IdpSaml#response_signature_algorithm}
   */
   readonly responseSignatureAlgorithm?: string;
   /**
   * Specifies whether to verify a <SAMLResponse> message or <Assertion> element XML digital signature
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/idp_saml#response_signature_scope IdpSaml#response_signature_scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/idp_saml#response_signature_scope IdpSaml#response_signature_scope}
   */
   readonly responseSignatureScope?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/idp_saml#sso_binding IdpSaml#sso_binding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/idp_saml#sso_binding IdpSaml#sso_binding}
   */
   readonly ssoBinding?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/idp_saml#sso_destination IdpSaml#sso_destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/idp_saml#sso_destination IdpSaml#sso_destination}
   */
   readonly ssoDestination?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/idp_saml#sso_url IdpSaml#sso_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/idp_saml#sso_url IdpSaml#sso_url}
   */
   readonly ssoUrl: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/idp_saml#status IdpSaml#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/idp_saml#status IdpSaml#status}
   */
   readonly status?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/idp_saml#subject_filter IdpSaml#subject_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/idp_saml#subject_filter IdpSaml#subject_filter}
   */
   readonly subjectFilter?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/idp_saml#subject_format IdpSaml#subject_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/idp_saml#subject_format IdpSaml#subject_format}
   */
   readonly subjectFormat?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/idp_saml#subject_match_attribute IdpSaml#subject_match_attribute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/idp_saml#subject_match_attribute IdpSaml#subject_match_attribute}
   */
   readonly subjectMatchAttribute?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/idp_saml#subject_match_type IdpSaml#subject_match_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/idp_saml#subject_match_type IdpSaml#subject_match_type}
   */
   readonly subjectMatchType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/idp_saml#suspended_action IdpSaml#suspended_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/idp_saml#suspended_action IdpSaml#suspended_action}
   */
   readonly suspendedAction?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/idp_saml#username_template IdpSaml#username_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/idp_saml#username_template IdpSaml#username_template}
   */
   readonly usernameTemplate?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/idp_saml okta_idp_saml}
+* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/idp_saml okta_idp_saml}
 */
 export class IdpSaml extends cdktf.TerraformResource {
 
@@ -168,7 +168,7 @@ export class IdpSaml extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/idp_saml okta_idp_saml} Resource
+  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/idp_saml okta_idp_saml} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -179,7 +179,7 @@ export class IdpSaml extends cdktf.TerraformResource {
       terraformResourceType: 'okta_idp_saml',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '4.0.1',
+        providerVersion: '4.0.2',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

@@ -81,6 +81,8 @@ The following submodules are available:
 - [domainCertificate](./domainCertificate.java.md)
 - [domainVerification](./domainVerification.java.md)
 - [emailCustomization](./emailCustomization.java.md)
+- [emailDomain](./emailDomain.java.md)
+- [emailDomainVerification](./emailDomainVerification.java.md)
 - [emailSender](./emailSender.java.md)
 - [emailSenderVerification](./emailSenderVerification.java.md)
 - [eventHook](./eventHook.java.md)

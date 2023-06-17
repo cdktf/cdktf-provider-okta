@@ -1,6 +1,6 @@
 # `okta_auth_server_default`
 
-Refer to the Terraform Registory for docs: [`okta_auth_server_default`](https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/auth_server_default).
+Refer to the Terraform Registory for docs: [`okta_auth_server_default`](https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/auth_server_default).
 
 # `authServerDefault` Submodule <a name="`authServerDefault` Submodule" id="@cdktf/provider-okta.authServerDefault"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_auth_server_default`](https://
 
 ### AuthServerDefault <a name="AuthServerDefault" id="@cdktf/provider-okta.authServerDefault.AuthServerDefault"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/auth_server_default okta_auth_server_default}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/auth_server_default okta_auth_server_default}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.authServerDefault.AuthServerDefault.Initializer"></a>
 
@@ -786,13 +786,13 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/authserverdefault"
 | <code><a href="#@cdktf/provider-okta.authServerDefault.AuthServerDefaultConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.authServerDefault.AuthServerDefaultConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.authServerDefault.AuthServerDefaultConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.authServerDefault.AuthServerDefaultConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/auth_server_default#name AuthServerDefault#name}. |
+| <code><a href="#@cdktf/provider-okta.authServerDefault.AuthServerDefaultConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/auth_server_default#name AuthServerDefault#name}. |
 | <code><a href="#@cdktf/provider-okta.authServerDefault.AuthServerDefaultConfig.property.audiences">Audiences</a></code> | <code>*[]*string</code> | Currently Okta only supports a single value here. |
 | <code><a href="#@cdktf/provider-okta.authServerDefault.AuthServerDefaultConfig.property.credentialsRotationMode">CredentialsRotationMode</a></code> | <code>*string</code> | Credential rotation mode, in many cases you cannot set this to MANUAL, the API will ignore the value and you will get a perpetual diff. |
-| <code><a href="#@cdktf/provider-okta.authServerDefault.AuthServerDefaultConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/auth_server_default#description AuthServerDefault#description}. |
-| <code><a href="#@cdktf/provider-okta.authServerDefault.AuthServerDefaultConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/auth_server_default#id AuthServerDefault#id}. |
+| <code><a href="#@cdktf/provider-okta.authServerDefault.AuthServerDefaultConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/auth_server_default#description AuthServerDefault#description}. |
+| <code><a href="#@cdktf/provider-okta.authServerDefault.AuthServerDefaultConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/auth_server_default#id AuthServerDefault#id}. |
 | <code><a href="#@cdktf/provider-okta.authServerDefault.AuthServerDefaultConfig.property.issuerMode">IssuerMode</a></code> | <code>*string</code> | *Early Access Property*. |
-| <code><a href="#@cdktf/provider-okta.authServerDefault.AuthServerDefaultConfig.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/auth_server_default#status AuthServerDefault#status}. |
+| <code><a href="#@cdktf/provider-okta.authServerDefault.AuthServerDefaultConfig.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/auth_server_default#status AuthServerDefault#status}. |
 
 ---
 
@@ -874,7 +874,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/auth_server_default#name AuthServerDefault#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/auth_server_default#name AuthServerDefault#name}.
 
 ---
 
@@ -888,7 +888,7 @@ Audiences *[]*string
 
 Currently Okta only supports a single value here.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/auth_server_default#audiences AuthServerDefault#audiences}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/auth_server_default#audiences AuthServerDefault#audiences}
 
 ---
 
@@ -904,7 +904,7 @@ Credential rotation mode, in many cases you cannot set this to MANUAL, the API w
 
 This should rarely be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/auth_server_default#credentials_rotation_mode AuthServerDefault#credentials_rotation_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/auth_server_default#credentials_rotation_mode AuthServerDefault#credentials_rotation_mode}
 
 ---
 
@@ -916,7 +916,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/auth_server_default#description AuthServerDefault#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/auth_server_default#description AuthServerDefault#description}.
 
 ---
 
@@ -928,7 +928,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/auth_server_default#id AuthServerDefault#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/auth_server_default#id AuthServerDefault#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -947,7 +947,7 @@ IssuerMode *string
 
 Indicates which value is specified in the issuer of the tokens that a Custom Authorization Server returns: the original Okta org domain URL or a custom domain URL
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/auth_server_default#issuer_mode AuthServerDefault#issuer_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/auth_server_default#issuer_mode AuthServerDefault#issuer_mode}
 
 ---
 
@@ -959,7 +959,7 @@ Status *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/auth_server_default#status AuthServerDefault#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/auth_server_default#status AuthServerDefault#status}.
 
 ---
 

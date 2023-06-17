@@ -81,6 +81,8 @@ The following submodules are available:
 - [domainCertificate](./domainCertificate.python.md)
 - [domainVerification](./domainVerification.python.md)
 - [emailCustomization](./emailCustomization.python.md)
+- [emailDomain](./emailDomain.python.md)
+- [emailDomainVerification](./emailDomainVerification.python.md)
 - [emailSender](./emailSender.python.md)
 - [emailSenderVerification](./emailSenderVerification.python.md)
 - [eventHook](./eventHook.python.md)

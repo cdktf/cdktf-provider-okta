@@ -43,6 +43,8 @@ export * as domain from './domain';
 export * as domainCertificate from './domain-certificate';
 export * as domainVerification from './domain-verification';
 export * as emailCustomization from './email-customization';
+export * as emailDomain from './email-domain';
+export * as emailDomainVerification from './email-domain-verification';
 export * as emailSender from './email-sender';
 export * as emailSenderVerification from './email-sender-verification';
 export * as eventHook from './event-hook';
