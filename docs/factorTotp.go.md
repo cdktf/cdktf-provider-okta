@@ -1,6 +1,6 @@
 # `okta_factor_totp`
 
-Refer to the Terraform Registory for docs: [`okta_factor_totp`](https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/factor_totp).
+Refer to the Terraform Registory for docs: [`okta_factor_totp`](https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/factor_totp).
 
 # `factorTotp` Submodule <a name="`factorTotp` Submodule" id="@cdktf/provider-okta.factorTotp"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`okta_factor_totp`](https://registry
 
 ### FactorTotp <a name="FactorTotp" id="@cdktf/provider-okta.factorTotp.FactorTotp"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/factor_totp okta_factor_totp}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/factor_totp okta_factor_totp}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.factorTotp.FactorTotp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/factortotp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/factortotp"
 
 factortotp.NewFactorTotp(scope Construct, id *string, config FactorTotpConfig) FactorTotp
 ```
@@ -312,7 +312,7 @@ func ResetTimeStep()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.factorTotp.FactorTotp.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/factortotp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/factortotp"
 
 factortotp.FactorTotp_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.factorTotp.FactorTotp.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/factortotp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/factortotp"
 
 factortotp.FactorTotp_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ factortotp.FactorTotp_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.factorTotp.FactorTotp.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/factortotp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/factortotp"
 
 factortotp.FactorTotp_IsTerraformResource(x interface{}) *bool
 ```
@@ -711,7 +711,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.factorTotp.FactorTotpConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/factortotp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/factortotp"
 
 &factortotp.FactorTotpConfig {
 	Connection: interface{},
@@ -745,7 +745,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/factortotp"
 | <code><a href="#@cdktf/provider-okta.factorTotp.FactorTotpConfig.property.name">Name</a></code> | <code>*string</code> | Factor name. |
 | <code><a href="#@cdktf/provider-okta.factorTotp.FactorTotpConfig.property.clockDriftInterval">ClockDriftInterval</a></code> | <code>*f64</code> | Clock drift interval. |
 | <code><a href="#@cdktf/provider-okta.factorTotp.FactorTotpConfig.property.hmacAlgorithm">HmacAlgorithm</a></code> | <code>*string</code> | Hash-based message authentication code algorithm. |
-| <code><a href="#@cdktf/provider-okta.factorTotp.FactorTotpConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/factor_totp#id FactorTotp#id}. |
+| <code><a href="#@cdktf/provider-okta.factorTotp.FactorTotpConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/factor_totp#id FactorTotp#id}. |
 | <code><a href="#@cdktf/provider-okta.factorTotp.FactorTotpConfig.property.otpLength">OtpLength</a></code> | <code>*f64</code> | Factor name. |
 | <code><a href="#@cdktf/provider-okta.factorTotp.FactorTotpConfig.property.sharedSecretEncoding">SharedSecretEncoding</a></code> | <code>*string</code> | Shared secret encoding. |
 | <code><a href="#@cdktf/provider-okta.factorTotp.FactorTotpConfig.property.timeStep">TimeStep</a></code> | <code>*f64</code> | Time step in seconds. |
@@ -832,7 +832,7 @@ Name *string
 
 Factor name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/factor_totp#name FactorTotp#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/factor_totp#name FactorTotp#name}
 
 ---
 
@@ -846,7 +846,7 @@ ClockDriftInterval *f64
 
 Clock drift interval.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/factor_totp#clock_drift_interval FactorTotp#clock_drift_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/factor_totp#clock_drift_interval FactorTotp#clock_drift_interval}
 
 ---
 
@@ -860,7 +860,7 @@ HmacAlgorithm *string
 
 Hash-based message authentication code algorithm.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/factor_totp#hmac_algorithm FactorTotp#hmac_algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/factor_totp#hmac_algorithm FactorTotp#hmac_algorithm}
 
 ---
 
@@ -872,7 +872,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/factor_totp#id FactorTotp#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/factor_totp#id FactorTotp#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -889,7 +889,7 @@ OtpLength *f64
 
 Factor name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/factor_totp#otp_length FactorTotp#otp_length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/factor_totp#otp_length FactorTotp#otp_length}
 
 ---
 
@@ -903,7 +903,7 @@ SharedSecretEncoding *string
 
 Shared secret encoding.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/factor_totp#shared_secret_encoding FactorTotp#shared_secret_encoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/factor_totp#shared_secret_encoding FactorTotp#shared_secret_encoding}
 
 ---
 
@@ -917,7 +917,7 @@ TimeStep *f64
 
 Time step in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/factor_totp#time_step FactorTotp#time_step}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/factor_totp#time_step FactorTotp#time_step}
 
 ---
 

@@ -81,6 +81,8 @@ The following submodules are available:
 - [domainCertificate](./domainCertificate.go.md)
 - [domainVerification](./domainVerification.go.md)
 - [emailCustomization](./emailCustomization.go.md)
+- [emailDomain](./emailDomain.go.md)
+- [emailDomainVerification](./emailDomainVerification.go.md)
 - [emailSender](./emailSender.go.md)
 - [emailSenderVerification](./emailSenderVerification.go.md)
 - [eventHook](./eventHook.go.md)

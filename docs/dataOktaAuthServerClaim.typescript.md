@@ -1,6 +1,6 @@
 # `data_okta_auth_server_claim`
 
-Refer to the Terraform Registory for docs: [`data_okta_auth_server_claim`](https://registry.terraform.io/providers/okta/okta/4.0.1/docs/data-sources/auth_server_claim).
+Refer to the Terraform Registory for docs: [`data_okta_auth_server_claim`](https://registry.terraform.io/providers/okta/okta/4.0.2/docs/data-sources/auth_server_claim).
 
 # `dataOktaAuthServerClaim` Submodule <a name="`dataOktaAuthServerClaim` Submodule" id="@cdktf/provider-okta.dataOktaAuthServerClaim"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_okta_auth_server_claim`](https
 
 ### DataOktaAuthServerClaim <a name="DataOktaAuthServerClaim" id="@cdktf/provider-okta.dataOktaAuthServerClaim.DataOktaAuthServerClaim"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/data-sources/auth_server_claim okta_auth_server_claim}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/data-sources/auth_server_claim okta_auth_server_claim}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaAuthServerClaim.DataOktaAuthServerClaim.Initializer"></a>
 
@@ -656,8 +656,8 @@ const dataOktaAuthServerClaimConfig: dataOktaAuthServerClaim.DataOktaAuthServerC
 | <code><a href="#@cdktf/provider-okta.dataOktaAuthServerClaim.DataOktaAuthServerClaimConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaAuthServerClaim.DataOktaAuthServerClaimConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaAuthServerClaim.DataOktaAuthServerClaimConfig.property.authServerId">authServerId</a></code> | <code>string</code> | Auth server ID. |
-| <code><a href="#@cdktf/provider-okta.dataOktaAuthServerClaim.DataOktaAuthServerClaimConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/data-sources/auth_server_claim#id DataOktaAuthServerClaim#id}. |
-| <code><a href="#@cdktf/provider-okta.dataOktaAuthServerClaim.DataOktaAuthServerClaimConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/data-sources/auth_server_claim#name DataOktaAuthServerClaim#name}. |
+| <code><a href="#@cdktf/provider-okta.dataOktaAuthServerClaim.DataOktaAuthServerClaimConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/data-sources/auth_server_claim#id DataOktaAuthServerClaim#id}. |
+| <code><a href="#@cdktf/provider-okta.dataOktaAuthServerClaim.DataOktaAuthServerClaimConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/data-sources/auth_server_claim#name DataOktaAuthServerClaim#name}. |
 
 ---
 
@@ -741,7 +741,7 @@ public readonly authServerId: string;
 
 Auth server ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/data-sources/auth_server_claim#auth_server_id DataOktaAuthServerClaim#auth_server_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/data-sources/auth_server_claim#auth_server_id DataOktaAuthServerClaim#auth_server_id}
 
 ---
 
@@ -753,7 +753,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/data-sources/auth_server_claim#id DataOktaAuthServerClaim#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/data-sources/auth_server_claim#id DataOktaAuthServerClaim#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -768,7 +768,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/data-sources/auth_server_claim#name DataOktaAuthServerClaim#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/data-sources/auth_server_claim#name DataOktaAuthServerClaim#name}.
 
 ---
 

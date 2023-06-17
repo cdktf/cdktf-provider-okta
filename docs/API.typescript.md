@@ -81,6 +81,8 @@ The following submodules are available:
 - [domainCertificate](./domainCertificate.typescript.md)
 - [domainVerification](./domainVerification.typescript.md)
 - [emailCustomization](./emailCustomization.typescript.md)
+- [emailDomain](./emailDomain.typescript.md)
+- [emailDomainVerification](./emailDomainVerification.typescript.md)
 - [emailSender](./emailSender.typescript.md)
 - [emailSenderVerification](./emailSenderVerification.typescript.md)
 - [eventHook](./eventHook.typescript.md)

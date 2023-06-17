@@ -1,6 +1,6 @@
 # `data_okta_authenticator`
 
-Refer to the Terraform Registory for docs: [`data_okta_authenticator`](https://registry.terraform.io/providers/okta/okta/4.0.1/docs/data-sources/authenticator).
+Refer to the Terraform Registory for docs: [`data_okta_authenticator`](https://registry.terraform.io/providers/okta/okta/4.0.2/docs/data-sources/authenticator).
 
 # `dataOktaAuthenticator` Submodule <a name="`dataOktaAuthenticator` Submodule" id="@cdktf/provider-okta.dataOktaAuthenticator"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_okta_authenticator`](https://r
 
 ### DataOktaAuthenticator <a name="DataOktaAuthenticator" id="@cdktf/provider-okta.dataOktaAuthenticator.DataOktaAuthenticator"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/data-sources/authenticator okta_authenticator}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/data-sources/authenticator okta_authenticator}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaAuthenticator.DataOktaAuthenticator.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/dataoktaauthenticator"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaauthenticator"
 
 dataoktaauthenticator.NewDataOktaAuthenticator(scope Construct, id *string, config DataOktaAuthenticatorConfig) DataOktaAuthenticator
 ```
@@ -291,7 +291,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.dataOktaAuthenticator.DataOktaAuthenticator.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/dataoktaauthenticator"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaauthenticator"
 
 dataoktaauthenticator.DataOktaAuthenticator_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.dataOktaAuthenticator.DataOktaAuthenticator.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/dataoktaauthenticator"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaauthenticator"
 
 dataoktaauthenticator.DataOktaAuthenticator_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ dataoktaauthenticator.DataOktaAuthenticator_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-okta.dataOktaAuthenticator.DataOktaAuthenticator.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/dataoktaauthenticator"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaauthenticator"
 
 dataoktaauthenticator.DataOktaAuthenticator_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -679,7 +679,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaAuthenticator.DataOktaAuthenticatorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/dataoktaauthenticator"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaauthenticator"
 
 &dataoktaauthenticator.DataOktaAuthenticatorConfig {
 	Connection: interface{},
@@ -706,9 +706,9 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/dataoktaauthenticator"
 | <code><a href="#@cdktf/provider-okta.dataOktaAuthenticator.DataOktaAuthenticatorConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaAuthenticator.DataOktaAuthenticatorConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaAuthenticator.DataOktaAuthenticatorConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.dataOktaAuthenticator.DataOktaAuthenticatorConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/data-sources/authenticator#id DataOktaAuthenticator#id}. |
-| <code><a href="#@cdktf/provider-okta.dataOktaAuthenticator.DataOktaAuthenticatorConfig.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/data-sources/authenticator#key DataOktaAuthenticator#key}. |
-| <code><a href="#@cdktf/provider-okta.dataOktaAuthenticator.DataOktaAuthenticatorConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/data-sources/authenticator#name DataOktaAuthenticator#name}. |
+| <code><a href="#@cdktf/provider-okta.dataOktaAuthenticator.DataOktaAuthenticatorConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/data-sources/authenticator#id DataOktaAuthenticator#id}. |
+| <code><a href="#@cdktf/provider-okta.dataOktaAuthenticator.DataOktaAuthenticatorConfig.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/data-sources/authenticator#key DataOktaAuthenticator#key}. |
+| <code><a href="#@cdktf/provider-okta.dataOktaAuthenticator.DataOktaAuthenticatorConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/data-sources/authenticator#name DataOktaAuthenticator#name}. |
 
 ---
 
@@ -790,7 +790,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/data-sources/authenticator#id DataOktaAuthenticator#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/data-sources/authenticator#id DataOktaAuthenticator#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -805,7 +805,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/data-sources/authenticator#key DataOktaAuthenticator#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/data-sources/authenticator#key DataOktaAuthenticator#key}.
 
 ---
 
@@ -817,7 +817,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/data-sources/authenticator#name DataOktaAuthenticator#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/data-sources/authenticator#name DataOktaAuthenticator#name}.
 
 ---
 

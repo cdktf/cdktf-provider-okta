@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/theme
+// https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/theme
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,85 +10,85 @@ export interface ThemeConfig extends cdktf.TerraformMetaArguments {
   /**
   * Path to local file
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/theme#background_image Theme#background_image}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/theme#background_image Theme#background_image}
   */
   readonly backgroundImage?: string;
   /**
   * Brand ID
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/theme#brand_id Theme#brand_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/theme#brand_id Theme#brand_id}
   */
   readonly brandId: string;
   /**
   * Variant for email templates (`OKTA_DEFAULT`, `FULL_THEME`)
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/theme#email_template_touch_point_variant Theme#email_template_touch_point_variant}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/theme#email_template_touch_point_variant Theme#email_template_touch_point_variant}
   */
   readonly emailTemplateTouchPointVariant?: string;
   /**
   * Variant for the Okta End-User Dashboard (`OKTA_DEFAULT`, `WHITE_LOGO_BACKGROUND`, `FULL_THEME`, `LOGO_ON_FULL_WHITE_BACKGROUND`)
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/theme#end_user_dashboard_touch_point_variant Theme#end_user_dashboard_touch_point_variant}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/theme#end_user_dashboard_touch_point_variant Theme#end_user_dashboard_touch_point_variant}
   */
   readonly endUserDashboardTouchPointVariant?: string;
   /**
   * Variant for the error page (`OKTA_DEFAULT`, `BACKGROUND_SECONDARY_COLOR`, `BACKGROUND_IMAGE`)
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/theme#error_page_touch_point_variant Theme#error_page_touch_point_variant}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/theme#error_page_touch_point_variant Theme#error_page_touch_point_variant}
   */
   readonly errorPageTouchPointVariant?: string;
   /**
   * Path to local file
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/theme#favicon Theme#favicon}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/theme#favicon Theme#favicon}
   */
   readonly favicon?: string;
   /**
   * Path to local file
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/theme#logo Theme#logo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/theme#logo Theme#logo}
   */
   readonly logo?: string;
   /**
   * Primary color contrast hex code
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/theme#primary_color_contrast_hex Theme#primary_color_contrast_hex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/theme#primary_color_contrast_hex Theme#primary_color_contrast_hex}
   */
   readonly primaryColorContrastHex?: string;
   /**
   * Primary color hex code
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/theme#primary_color_hex Theme#primary_color_hex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/theme#primary_color_hex Theme#primary_color_hex}
   */
   readonly primaryColorHex?: string;
   /**
   * Secondary color contrast hex code
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/theme#secondary_color_contrast_hex Theme#secondary_color_contrast_hex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/theme#secondary_color_contrast_hex Theme#secondary_color_contrast_hex}
   */
   readonly secondaryColorContrastHex?: string;
   /**
   * Secondary color hex code
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/theme#secondary_color_hex Theme#secondary_color_hex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/theme#secondary_color_hex Theme#secondary_color_hex}
   */
   readonly secondaryColorHex?: string;
   /**
   * Variant for the Okta Sign-In Page (`OKTA_DEFAULT`, `BACKGROUND_SECONDARY_COLOR`, `BACKGROUND_IMAGE`)
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/theme#sign_in_page_touch_point_variant Theme#sign_in_page_touch_point_variant}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/theme#sign_in_page_touch_point_variant Theme#sign_in_page_touch_point_variant}
   */
   readonly signInPageTouchPointVariant?: string;
   /**
   * Theme ID - Note: Okta API for theme only reads and updates therefore the okta_theme resource needs to act as a quasi data source. Do this by setting theme_id.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/theme#theme_id Theme#theme_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/theme#theme_id Theme#theme_id}
   */
   readonly themeId?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/theme okta_theme}
+* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/theme okta_theme}
 */
 export class Theme extends cdktf.TerraformResource {
 
@@ -107,7 +102,7 @@ export class Theme extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/theme okta_theme} Resource
+  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/theme okta_theme} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -118,7 +113,7 @@ export class Theme extends cdktf.TerraformResource {
       terraformResourceType: 'okta_theme',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '4.0.1',
+        providerVersion: '4.0.2',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

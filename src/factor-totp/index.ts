@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/factor_totp
+// https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/factor_totp
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +10,17 @@ export interface FactorTotpConfig extends cdktf.TerraformMetaArguments {
   /**
   * Clock drift interval
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/factor_totp#clock_drift_interval FactorTotp#clock_drift_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/factor_totp#clock_drift_interval FactorTotp#clock_drift_interval}
   */
   readonly clockDriftInterval?: number;
   /**
   * Hash-based message authentication code algorithm
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/factor_totp#hmac_algorithm FactorTotp#hmac_algorithm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/factor_totp#hmac_algorithm FactorTotp#hmac_algorithm}
   */
   readonly hmacAlgorithm?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/factor_totp#id FactorTotp#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/factor_totp#id FactorTotp#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,31 +29,31 @@ export interface FactorTotpConfig extends cdktf.TerraformMetaArguments {
   /**
   * Factor name
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/factor_totp#name FactorTotp#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/factor_totp#name FactorTotp#name}
   */
   readonly name: string;
   /**
   * Factor name
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/factor_totp#otp_length FactorTotp#otp_length}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/factor_totp#otp_length FactorTotp#otp_length}
   */
   readonly otpLength?: number;
   /**
   * Shared secret encoding
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/factor_totp#shared_secret_encoding FactorTotp#shared_secret_encoding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/factor_totp#shared_secret_encoding FactorTotp#shared_secret_encoding}
   */
   readonly sharedSecretEncoding?: string;
   /**
   * Time step in seconds
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/factor_totp#time_step FactorTotp#time_step}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/factor_totp#time_step FactorTotp#time_step}
   */
   readonly timeStep?: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/factor_totp okta_factor_totp}
+* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/factor_totp okta_factor_totp}
 */
 export class FactorTotp extends cdktf.TerraformResource {
 
@@ -72,7 +67,7 @@ export class FactorTotp extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/factor_totp okta_factor_totp} Resource
+  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/factor_totp okta_factor_totp} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -83,7 +78,7 @@ export class FactorTotp extends cdktf.TerraformResource {
       terraformResourceType: 'okta_factor_totp',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '4.0.1',
+        providerVersion: '4.0.2',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

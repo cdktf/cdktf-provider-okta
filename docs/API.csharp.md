@@ -81,6 +81,8 @@ The following submodules are available:
 - [domainCertificate](./domainCertificate.csharp.md)
 - [domainVerification](./domainVerification.csharp.md)
 - [emailCustomization](./emailCustomization.csharp.md)
+- [emailDomain](./emailDomain.csharp.md)
+- [emailDomainVerification](./emailDomainVerification.csharp.md)
 - [emailSender](./emailSender.csharp.md)
 - [emailSenderVerification](./emailSenderVerification.csharp.md)
 - [eventHook](./eventHook.csharp.md)

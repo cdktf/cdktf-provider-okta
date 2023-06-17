@@ -1,6 +1,6 @@
 # `okta_user_factor_question`
 
-Refer to the Terraform Registory for docs: [`okta_user_factor_question`](https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/user_factor_question).
+Refer to the Terraform Registory for docs: [`okta_user_factor_question`](https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/user_factor_question).
 
 # `userFactorQuestion` Submodule <a name="`userFactorQuestion` Submodule" id="@cdktf/provider-okta.userFactorQuestion"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_user_factor_question`](https:/
 
 ### UserFactorQuestion <a name="UserFactorQuestion" id="@cdktf/provider-okta.userFactorQuestion.UserFactorQuestion"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/user_factor_question okta_user_factor_question}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/user_factor_question okta_user_factor_question}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.userFactorQuestion.UserFactorQuestion.Initializer"></a>
 
@@ -48,7 +48,7 @@ UserFactorQuestion.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-okta.userFactorQuestion.UserFactorQuestion.Initializer.parameter.answer">answer</a></code> | <code>java.lang.String</code> | User password security answer. |
 | <code><a href="#@cdktf/provider-okta.userFactorQuestion.UserFactorQuestion.Initializer.parameter.key">key</a></code> | <code>java.lang.String</code> | Unique key for question. |
 | <code><a href="#@cdktf/provider-okta.userFactorQuestion.UserFactorQuestion.Initializer.parameter.userId">userId</a></code> | <code>java.lang.String</code> | ID of a Okta User. |
-| <code><a href="#@cdktf/provider-okta.userFactorQuestion.UserFactorQuestion.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/user_factor_question#id UserFactorQuestion#id}. |
+| <code><a href="#@cdktf/provider-okta.userFactorQuestion.UserFactorQuestion.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/user_factor_question#id UserFactorQuestion#id}. |
 
 ---
 
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 User password security answer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/user_factor_question#answer UserFactorQuestion#answer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/user_factor_question#answer UserFactorQuestion#answer}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Unique key for question.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/user_factor_question#key UserFactorQuestion#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/user_factor_question#key UserFactorQuestion#key}
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 ID of a Okta User.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/user_factor_question#user_id UserFactorQuestion#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/user_factor_question#user_id UserFactorQuestion#user_id}
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/user_factor_question#id UserFactorQuestion#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/user_factor_question#id UserFactorQuestion#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -770,7 +770,7 @@ UserFactorQuestionConfig.builder()
 | <code><a href="#@cdktf/provider-okta.userFactorQuestion.UserFactorQuestionConfig.property.answer">answer</a></code> | <code>java.lang.String</code> | User password security answer. |
 | <code><a href="#@cdktf/provider-okta.userFactorQuestion.UserFactorQuestionConfig.property.key">key</a></code> | <code>java.lang.String</code> | Unique key for question. |
 | <code><a href="#@cdktf/provider-okta.userFactorQuestion.UserFactorQuestionConfig.property.userId">userId</a></code> | <code>java.lang.String</code> | ID of a Okta User. |
-| <code><a href="#@cdktf/provider-okta.userFactorQuestion.UserFactorQuestionConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/user_factor_question#id UserFactorQuestion#id}. |
+| <code><a href="#@cdktf/provider-okta.userFactorQuestion.UserFactorQuestionConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/user_factor_question#id UserFactorQuestion#id}. |
 
 ---
 
@@ -854,7 +854,7 @@ public java.lang.String getAnswer();
 
 User password security answer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/user_factor_question#answer UserFactorQuestion#answer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/user_factor_question#answer UserFactorQuestion#answer}
 
 ---
 
@@ -868,7 +868,7 @@ public java.lang.String getKey();
 
 Unique key for question.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/user_factor_question#key UserFactorQuestion#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/user_factor_question#key UserFactorQuestion#key}
 
 ---
 
@@ -882,7 +882,7 @@ public java.lang.String getUserId();
 
 ID of a Okta User.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/user_factor_question#user_id UserFactorQuestion#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/user_factor_question#user_id UserFactorQuestion#user_id}
 
 ---
 
@@ -894,7 +894,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.1/docs/resources/user_factor_question#id UserFactorQuestion#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/user_factor_question#id UserFactorQuestion#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
