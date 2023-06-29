@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaGroups.DataOktaGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/dataoktagroups"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktagroups"
 
 dataoktagroups.NewDataOktaGroups(scope Construct, id *string, config DataOktaGroupsConfig) DataOktaGroups
 ```
@@ -298,7 +298,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.dataOktaGroups.DataOktaGroups.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/dataoktagroups"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktagroups"
 
 dataoktagroups.DataOktaGroups_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.dataOktaGroups.DataOktaGroups.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/dataoktagroups"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktagroups"
 
 dataoktagroups.DataOktaGroups_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ dataoktagroups.DataOktaGroups_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-okta.dataOktaGroups.DataOktaGroups.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/dataoktagroups"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktagroups"
 
 dataoktagroups.DataOktaGroups_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -620,7 +620,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaGroups.DataOktaGroupsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/dataoktagroups"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktagroups"
 
 &dataoktagroups.DataOktaGroupsConfig {
 	Connection: interface{},
@@ -789,7 +789,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaGroups.DataOktaGroupsGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/dataoktagroups"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktagroups"
 
 &dataoktagroups.DataOktaGroupsGroups {
 
@@ -804,7 +804,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/dataoktagroups"
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaGroups.DataOktaGroupsGroupsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/dataoktagroups"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktagroups"
 
 dataoktagroups.NewDataOktaGroupsGroupsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOktaGroupsGroupsList
 ```
@@ -936,7 +936,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaGroups.DataOktaGroupsGroupsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/dataoktagroups"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktagroups"
 
 dataoktagroups.NewDataOktaGroupsGroupsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataOktaGroupsGroupsOutputReference
 ```
