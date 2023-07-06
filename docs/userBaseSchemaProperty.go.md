@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.userBaseSchemaProperty.UserBaseSchemaProperty.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/userbaseschemaproperty"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/userbaseschemaproperty"
 
 userbaseschemaproperty.NewUserBaseSchemaProperty(scope Construct, id *string, config UserBaseSchemaPropertyConfig) UserBaseSchemaProperty
 ```
@@ -312,7 +312,7 @@ func ResetUserType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.userBaseSchemaProperty.UserBaseSchemaProperty.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/userbaseschemaproperty"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/userbaseschemaproperty"
 
 userbaseschemaproperty.UserBaseSchemaProperty_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.userBaseSchemaProperty.UserBaseSchemaProperty.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/userbaseschemaproperty"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/userbaseschemaproperty"
 
 userbaseschemaproperty.UserBaseSchemaProperty_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ userbaseschemaproperty.UserBaseSchemaProperty_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.userBaseSchemaProperty.UserBaseSchemaProperty.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/userbaseschemaproperty"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/userbaseschemaproperty"
 
 userbaseschemaproperty.UserBaseSchemaProperty_IsTerraformResource(x interface{}) *bool
 ```
@@ -755,7 +755,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.userBaseSchemaProperty.UserBaseSchemaPropertyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/userbaseschemaproperty"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/userbaseschemaproperty"
 
 &userbaseschemaproperty.UserBaseSchemaPropertyConfig {
 	Connection: interface{},
