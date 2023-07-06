@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/auth_server_default
 // generated from terraform resource schema
 
