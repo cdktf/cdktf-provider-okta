@@ -1,6 +1,6 @@
 # `data_okta_group`
 
-Refer to the Terraform Registory for docs: [`data_okta_group`](https://registry.terraform.io/providers/okta/okta/4.0.2/docs/data-sources/group).
+Refer to the Terraform Registory for docs: [`data_okta_group`](https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/group).
 
 # `dataOktaGroup` Submodule <a name="`dataOktaGroup` Submodule" id="@cdktf/provider-okta.dataOktaGroup"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_okta_group`](https://registry.
 
 ### DataOktaGroup <a name="DataOktaGroup" id="@cdktf/provider-okta.dataOktaGroup.DataOktaGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/data-sources/group okta_group}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/group okta_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaGroup.DataOktaGroup.Initializer"></a>
 
@@ -48,9 +48,9 @@ DataOktaGroup.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-okta.dataOktaGroup.DataOktaGroup.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaGroup.DataOktaGroup.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaGroup.DataOktaGroup.Initializer.parameter.delayReadSeconds">delayReadSeconds</a></code> | <code>java.lang.String</code> | Force delay of the group read by N seconds. |
-| <code><a href="#@cdktf/provider-okta.dataOktaGroup.DataOktaGroup.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/data-sources/group#id DataOktaGroup#id}. |
+| <code><a href="#@cdktf/provider-okta.dataOktaGroup.DataOktaGroup.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/group#id DataOktaGroup#id}. |
 | <code><a href="#@cdktf/provider-okta.dataOktaGroup.DataOktaGroup.Initializer.parameter.includeUsers">includeUsers</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Fetch group users, having default off cuts down on API calls. |
-| <code><a href="#@cdktf/provider-okta.dataOktaGroup.DataOktaGroup.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/data-sources/group#name DataOktaGroup#name}. |
+| <code><a href="#@cdktf/provider-okta.dataOktaGroup.DataOktaGroup.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/group#name DataOktaGroup#name}. |
 | <code><a href="#@cdktf/provider-okta.dataOktaGroup.DataOktaGroup.Initializer.parameter.type">type</a></code> | <code>java.lang.String</code> | Type of the group. |
 
 ---
@@ -123,7 +123,7 @@ Force delay of the group read by N seconds.
 
 Useful when eventual consistency of group information needs to be allowed for; for instance, when group rules are known to have been applied.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/data-sources/group#delay_read_seconds DataOktaGroup#delay_read_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/group#delay_read_seconds DataOktaGroup#delay_read_seconds}
 
 ---
 
@@ -131,7 +131,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/data-sources/group#id DataOktaGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/group#id DataOktaGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -144,7 +144,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Fetch group users, having default off cuts down on API calls.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/data-sources/group#include_users DataOktaGroup#include_users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/group#include_users DataOktaGroup#include_users}
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/data-sources/group#name DataOktaGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/group#name DataOktaGroup#name}.
 
 ---
 
@@ -164,7 +164,7 @@ Type of the group.
 
 When specified in the terraform resource, will act as a filter when searching for the group
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/data-sources/group#type DataOktaGroup#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/group#type DataOktaGroup#type}
 
 ---
 
@@ -813,9 +813,9 @@ DataOktaGroupConfig.builder()
 | <code><a href="#@cdktf/provider-okta.dataOktaGroup.DataOktaGroupConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaGroup.DataOktaGroupConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaGroup.DataOktaGroupConfig.property.delayReadSeconds">delayReadSeconds</a></code> | <code>java.lang.String</code> | Force delay of the group read by N seconds. |
-| <code><a href="#@cdktf/provider-okta.dataOktaGroup.DataOktaGroupConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/data-sources/group#id DataOktaGroup#id}. |
+| <code><a href="#@cdktf/provider-okta.dataOktaGroup.DataOktaGroupConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/group#id DataOktaGroup#id}. |
 | <code><a href="#@cdktf/provider-okta.dataOktaGroup.DataOktaGroupConfig.property.includeUsers">includeUsers</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Fetch group users, having default off cuts down on API calls. |
-| <code><a href="#@cdktf/provider-okta.dataOktaGroup.DataOktaGroupConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/data-sources/group#name DataOktaGroup#name}. |
+| <code><a href="#@cdktf/provider-okta.dataOktaGroup.DataOktaGroupConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/group#name DataOktaGroup#name}. |
 | <code><a href="#@cdktf/provider-okta.dataOktaGroup.DataOktaGroupConfig.property.type">type</a></code> | <code>java.lang.String</code> | Type of the group. |
 
 ---
@@ -902,7 +902,7 @@ Force delay of the group read by N seconds.
 
 Useful when eventual consistency of group information needs to be allowed for; for instance, when group rules are known to have been applied.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/data-sources/group#delay_read_seconds DataOktaGroup#delay_read_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/group#delay_read_seconds DataOktaGroup#delay_read_seconds}
 
 ---
 
@@ -914,7 +914,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/data-sources/group#id DataOktaGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/group#id DataOktaGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -931,7 +931,7 @@ public java.lang.Object getIncludeUsers();
 
 Fetch group users, having default off cuts down on API calls.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/data-sources/group#include_users DataOktaGroup#include_users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/group#include_users DataOktaGroup#include_users}
 
 ---
 
@@ -943,7 +943,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/data-sources/group#name DataOktaGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/group#name DataOktaGroup#name}.
 
 ---
 
@@ -959,7 +959,7 @@ Type of the group.
 
 When specified in the terraform resource, will act as a filter when searching for the group
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/data-sources/group#type DataOktaGroup#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/group#type DataOktaGroup#type}
 
 ---
 

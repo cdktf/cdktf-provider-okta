@@ -1,6 +1,6 @@
 # `data_okta_brand`
 
-Refer to the Terraform Registory for docs: [`data_okta_brand`](https://registry.terraform.io/providers/okta/okta/4.0.2/docs/data-sources/brand).
+Refer to the Terraform Registory for docs: [`data_okta_brand`](https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/brand).
 
 # `dataOktaBrand` Submodule <a name="`dataOktaBrand` Submodule" id="@cdktf/provider-okta.dataOktaBrand"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_okta_brand`](https://registry.
 
 ### DataOktaBrand <a name="DataOktaBrand" id="@cdktf/provider-okta.dataOktaBrand.DataOktaBrand"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/data-sources/brand okta_brand}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/brand okta_brand}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaBrand.DataOktaBrand.Initializer"></a>
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 Brand ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/data-sources/brand#brand_id DataOktaBrand#brand_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/brand#brand_id DataOktaBrand#brand_id}
 
 ---
 
@@ -412,6 +412,7 @@ DataOktaBrand.isTerraformDataSource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-okta.dataOktaBrand.DataOktaBrand.property.customPrivacyPolicyUrl">customPrivacyPolicyUrl</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaBrand.DataOktaBrand.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaBrand.DataOktaBrand.property.links">links</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.dataOktaBrand.DataOktaBrand.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaBrand.DataOktaBrand.property.removePoweredByOkta">removePoweredByOkta</a></code> | <code>com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaBrand.DataOktaBrand.property.brandIdInput">brandIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaBrand.DataOktaBrand.property.brandId">brandId</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -564,6 +565,16 @@ public java.lang.String getId();
 
 ```java
 public java.lang.String getLinks();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-okta.dataOktaBrand.DataOktaBrand.property.name"></a>
+
+```java
+public java.lang.String getName();
 ```
 
 - *Type:* java.lang.String
@@ -738,7 +749,7 @@ public java.lang.String getBrandId();
 
 Brand ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/data-sources/brand#brand_id DataOktaBrand#brand_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/brand#brand_id DataOktaBrand#brand_id}
 
 ---
 

@@ -1,6 +1,6 @@
 # `okta_email_domain`
 
-Refer to the Terraform Registory for docs: [`okta_email_domain`](https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/email_domain).
+Refer to the Terraform Registory for docs: [`okta_email_domain`](https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/email_domain).
 
 # `emailDomain` Submodule <a name="`emailDomain` Submodule" id="@cdktf/provider-okta.emailDomain"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_email_domain`](https://registr
 
 ### EmailDomain <a name="EmailDomain" id="@cdktf/provider-okta.emailDomain.EmailDomain"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/email_domain okta_email_domain}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/email_domain okta_email_domain}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.emailDomain.EmailDomain.Initializer"></a>
 
@@ -50,7 +50,7 @@ EmailDomain.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-okta.emailDomain.EmailDomain.Initializer.parameter.displayName">displayName</a></code> | <code>java.lang.String</code> | Display name. |
 | <code><a href="#@cdktf/provider-okta.emailDomain.EmailDomain.Initializer.parameter.domain">domain</a></code> | <code>java.lang.String</code> | Domain name. |
 | <code><a href="#@cdktf/provider-okta.emailDomain.EmailDomain.Initializer.parameter.userName">userName</a></code> | <code>java.lang.String</code> | User name. |
-| <code><a href="#@cdktf/provider-okta.emailDomain.EmailDomain.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/email_domain#id EmailDomain#id}. |
+| <code><a href="#@cdktf/provider-okta.emailDomain.EmailDomain.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/email_domain#id EmailDomain#id}. |
 
 ---
 
@@ -120,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 Brand id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/email_domain#brand_id EmailDomain#brand_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/email_domain#brand_id EmailDomain#brand_id}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Display name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/email_domain#display_name EmailDomain#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/email_domain#display_name EmailDomain#display_name}
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Domain name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/email_domain#domain EmailDomain#domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/email_domain#domain EmailDomain#domain}
 
 ---
 
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 User name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/email_domain#user_name EmailDomain#user_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/email_domain#user_name EmailDomain#user_name}
 
 ---
 
@@ -158,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/email_domain#id EmailDomain#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/email_domain#id EmailDomain#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -806,7 +806,7 @@ EmailDomainConfig.builder()
 | <code><a href="#@cdktf/provider-okta.emailDomain.EmailDomainConfig.property.displayName">displayName</a></code> | <code>java.lang.String</code> | Display name. |
 | <code><a href="#@cdktf/provider-okta.emailDomain.EmailDomainConfig.property.domain">domain</a></code> | <code>java.lang.String</code> | Domain name. |
 | <code><a href="#@cdktf/provider-okta.emailDomain.EmailDomainConfig.property.userName">userName</a></code> | <code>java.lang.String</code> | User name. |
-| <code><a href="#@cdktf/provider-okta.emailDomain.EmailDomainConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/email_domain#id EmailDomain#id}. |
+| <code><a href="#@cdktf/provider-okta.emailDomain.EmailDomainConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/email_domain#id EmailDomain#id}. |
 
 ---
 
@@ -890,7 +890,7 @@ public java.lang.String getBrandId();
 
 Brand id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/email_domain#brand_id EmailDomain#brand_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/email_domain#brand_id EmailDomain#brand_id}
 
 ---
 
@@ -904,7 +904,7 @@ public java.lang.String getDisplayName();
 
 Display name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/email_domain#display_name EmailDomain#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/email_domain#display_name EmailDomain#display_name}
 
 ---
 
@@ -918,7 +918,7 @@ public java.lang.String getDomain();
 
 Domain name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/email_domain#domain EmailDomain#domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/email_domain#domain EmailDomain#domain}
 
 ---
 
@@ -932,7 +932,7 @@ public java.lang.String getUserName();
 
 User name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/email_domain#user_name EmailDomain#user_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/email_domain#user_name EmailDomain#user_name}
 
 ---
 
@@ -944,7 +944,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/email_domain#id EmailDomain#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/email_domain#id EmailDomain#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1328,7 +1328,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-okta.emailDomain.EmailDomainDnsValidationRecordsOutputReference.property.expiration">expiration</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.emailDomain.EmailDomainDnsValidationRecordsOutputReference.property.fqdn">fqdn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.emailDomain.EmailDomainDnsValidationRecordsOutputReference.property.recordType">recordType</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.emailDomain.EmailDomainDnsValidationRecordsOutputReference.property.values">values</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.emailDomain.EmailDomainDnsValidationRecordsOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.emailDomain.EmailDomainDnsValidationRecordsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-okta.emailDomain.EmailDomainDnsValidationRecords">EmailDomainDnsValidationRecords</a></code> | *No description.* |
 
 ---
@@ -1387,13 +1387,13 @@ public java.lang.String getRecordType();
 
 ---
 
-##### `values`<sup>Required</sup> <a name="values" id="@cdktf/provider-okta.emailDomain.EmailDomainDnsValidationRecordsOutputReference.property.values"></a>
+##### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-okta.emailDomain.EmailDomainDnsValidationRecordsOutputReference.property.value"></a>
 
 ```java
-public java.util.List<java.lang.String> getValues();
+public java.lang.String getValue();
 ```
 
-- *Type:* java.util.List<java.lang.String>
+- *Type:* java.lang.String
 
 ---
 

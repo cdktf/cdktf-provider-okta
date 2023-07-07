@@ -61,6 +61,7 @@ The following submodules are available:
 - [dataOktaEmailTemplates](./dataOktaEmailTemplates.go.md)
 - [dataOktaEveryoneGroup](./dataOktaEveryoneGroup.go.md)
 - [dataOktaGroup](./dataOktaGroup.go.md)
+- [dataOktaGroupRule](./dataOktaGroupRule.go.md)
 - [dataOktaGroups](./dataOktaGroups.go.md)
 - [dataOktaIdpMetadataSaml](./dataOktaIdpMetadataSaml.go.md)
 - [dataOktaIdpOidc](./dataOktaIdpOidc.go.md)

@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/okta/okta/4.0.2/docs/data-sources/trusted_origins
+// https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/trusted_origins
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface DataOktaTrustedOriginsConfig extends cdktf.TerraformMetaArgumen
   /**
   * Filter criteria. Filter value will be URL-encoded by the provider
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/data-sources/trusted_origins#filter DataOktaTrustedOrigins#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/trusted_origins#filter DataOktaTrustedOrigins#filter}
   */
   readonly filter?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/data-sources/trusted_origins#id DataOktaTrustedOrigins#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/trusted_origins#id DataOktaTrustedOrigins#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -112,7 +107,7 @@ export class DataOktaTrustedOriginsTrustedOriginsList extends cdktf.ComplexList 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/data-sources/trusted_origins okta_trusted_origins}
+* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/trusted_origins okta_trusted_origins}
 */
 export class DataOktaTrustedOrigins extends cdktf.TerraformDataSource {
 
@@ -126,7 +121,7 @@ export class DataOktaTrustedOrigins extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/data-sources/trusted_origins okta_trusted_origins} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/trusted_origins okta_trusted_origins} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -137,7 +132,7 @@ export class DataOktaTrustedOrigins extends cdktf.TerraformDataSource {
       terraformResourceType: 'okta_trusted_origins',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '4.0.2',
+        providerVersion: '4.1.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

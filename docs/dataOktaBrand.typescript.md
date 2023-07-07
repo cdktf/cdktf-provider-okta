@@ -1,6 +1,6 @@
 # `data_okta_brand`
 
-Refer to the Terraform Registory for docs: [`data_okta_brand`](https://registry.terraform.io/providers/okta/okta/4.0.2/docs/data-sources/brand).
+Refer to the Terraform Registory for docs: [`data_okta_brand`](https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/brand).
 
 # `dataOktaBrand` Submodule <a name="`dataOktaBrand` Submodule" id="@cdktf/provider-okta.dataOktaBrand"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_okta_brand`](https://registry.
 
 ### DataOktaBrand <a name="DataOktaBrand" id="@cdktf/provider-okta.dataOktaBrand.DataOktaBrand"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/data-sources/brand okta_brand}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/brand okta_brand}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaBrand.DataOktaBrand.Initializer"></a>
 
@@ -346,6 +346,7 @@ dataOktaBrand.DataOktaBrand.isTerraformDataSource(x: any)
 | <code><a href="#@cdktf/provider-okta.dataOktaBrand.DataOktaBrand.property.customPrivacyPolicyUrl">customPrivacyPolicyUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaBrand.DataOktaBrand.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaBrand.DataOktaBrand.property.links">links</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.dataOktaBrand.DataOktaBrand.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaBrand.DataOktaBrand.property.removePoweredByOkta">removePoweredByOkta</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaBrand.DataOktaBrand.property.brandIdInput">brandIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaBrand.DataOktaBrand.property.brandId">brandId</a></code> | <code>string</code> | *No description.* |
@@ -498,6 +499,16 @@ public readonly id: string;
 
 ```typescript
 public readonly links: string;
+```
+
+- *Type:* string
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-okta.dataOktaBrand.DataOktaBrand.property.name"></a>
+
+```typescript
+public readonly name: string;
 ```
 
 - *Type:* string
@@ -659,7 +670,7 @@ public readonly brandId: string;
 
 Brand ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/data-sources/brand#brand_id DataOktaBrand#brand_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/brand#brand_id DataOktaBrand#brand_id}
 
 ---
 
