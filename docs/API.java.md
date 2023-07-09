@@ -61,6 +61,7 @@ The following submodules are available:
 - [dataOktaEmailTemplates](./dataOktaEmailTemplates.java.md)
 - [dataOktaEveryoneGroup](./dataOktaEveryoneGroup.java.md)
 - [dataOktaGroup](./dataOktaGroup.java.md)
+- [dataOktaGroupRule](./dataOktaGroupRule.java.md)
 - [dataOktaGroups](./dataOktaGroups.java.md)
 - [dataOktaIdpMetadataSaml](./dataOktaIdpMetadataSaml.java.md)
 - [dataOktaIdpOidc](./dataOktaIdpOidc.java.md)
