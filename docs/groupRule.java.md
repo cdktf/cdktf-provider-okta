@@ -1,6 +1,6 @@
 # `okta_group_rule`
 
-Refer to the Terraform Registory for docs: [`okta_group_rule`](https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/group_rule).
+Refer to the Terraform Registory for docs: [`okta_group_rule`](https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/group_rule).
 
 # `groupRule` Submodule <a name="`groupRule` Submodule" id="@cdktf/provider-okta.groupRule"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_group_rule`](https://registry.
 
 ### GroupRule <a name="GroupRule" id="@cdktf/provider-okta.groupRule.GroupRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/group_rule okta_group_rule}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/group_rule okta_group_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.groupRule.GroupRule.Initializer"></a>
 
@@ -50,13 +50,13 @@ GroupRule.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.Initializer.parameter.expressionValue">expressionValue</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/group_rule#expression_value GroupRule#expression_value}. |
-| <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.Initializer.parameter.groupAssignments">groupAssignments</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/group_rule#group_assignments GroupRule#group_assignments}. |
-| <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/group_rule#name GroupRule#name}. |
-| <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.Initializer.parameter.expressionType">expressionType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/group_rule#expression_type GroupRule#expression_type}. |
-| <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/group_rule#id GroupRule#id}. |
+| <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.Initializer.parameter.expressionValue">expressionValue</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/group_rule#expression_value GroupRule#expression_value}. |
+| <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.Initializer.parameter.groupAssignments">groupAssignments</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/group_rule#group_assignments GroupRule#group_assignments}. |
+| <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/group_rule#name GroupRule#name}. |
+| <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.Initializer.parameter.expressionType">expressionType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/group_rule#expression_type GroupRule#expression_type}. |
+| <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/group_rule#id GroupRule#id}. |
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.Initializer.parameter.removeAssignedUsers">removeAssignedUsers</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Remove users added by this rule from the assigned group after deleting this resource. |
-| <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.Initializer.parameter.status">status</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/group_rule#status GroupRule#status}. |
+| <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.Initializer.parameter.status">status</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/group_rule#status GroupRule#status}. |
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.Initializer.parameter.usersExcluded">usersExcluded</a></code> | <code>java.util.List<java.lang.String></code> | The list of user IDs that would be excluded when rules are processed. |
 
 ---
@@ -125,7 +125,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/group_rule#expression_value GroupRule#expression_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/group_rule#expression_value GroupRule#expression_value}.
 
 ---
 
@@ -133,7 +133,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/group_rule#group_assignments GroupRule#group_assignments}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/group_rule#group_assignments GroupRule#group_assignments}.
 
 ---
 
@@ -141,7 +141,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/group_rule#name GroupRule#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/group_rule#name GroupRule#name}.
 
 ---
 
@@ -149,7 +149,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/group_rule#expression_type GroupRule#expression_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/group_rule#expression_type GroupRule#expression_type}.
 
 ---
 
@@ -157,7 +157,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/group_rule#id GroupRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/group_rule#id GroupRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -170,7 +170,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Remove users added by this rule from the assigned group after deleting this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/group_rule#remove_assigned_users GroupRule#remove_assigned_users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/group_rule#remove_assigned_users GroupRule#remove_assigned_users}
 
 ---
 
@@ -178,7 +178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/group_rule#status GroupRule#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/group_rule#status GroupRule#status}.
 
 ---
 
@@ -188,7 +188,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 The list of user IDs that would be excluded when rules are processed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/group_rule#users_excluded GroupRule#users_excluded}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/group_rule#users_excluded GroupRule#users_excluded}
 
 ---
 
@@ -905,13 +905,13 @@ GroupRuleConfig.builder()
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRuleConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRuleConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRuleConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.groupRule.GroupRuleConfig.property.expressionValue">expressionValue</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/group_rule#expression_value GroupRule#expression_value}. |
-| <code><a href="#@cdktf/provider-okta.groupRule.GroupRuleConfig.property.groupAssignments">groupAssignments</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/group_rule#group_assignments GroupRule#group_assignments}. |
-| <code><a href="#@cdktf/provider-okta.groupRule.GroupRuleConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/group_rule#name GroupRule#name}. |
-| <code><a href="#@cdktf/provider-okta.groupRule.GroupRuleConfig.property.expressionType">expressionType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/group_rule#expression_type GroupRule#expression_type}. |
-| <code><a href="#@cdktf/provider-okta.groupRule.GroupRuleConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/group_rule#id GroupRule#id}. |
+| <code><a href="#@cdktf/provider-okta.groupRule.GroupRuleConfig.property.expressionValue">expressionValue</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/group_rule#expression_value GroupRule#expression_value}. |
+| <code><a href="#@cdktf/provider-okta.groupRule.GroupRuleConfig.property.groupAssignments">groupAssignments</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/group_rule#group_assignments GroupRule#group_assignments}. |
+| <code><a href="#@cdktf/provider-okta.groupRule.GroupRuleConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/group_rule#name GroupRule#name}. |
+| <code><a href="#@cdktf/provider-okta.groupRule.GroupRuleConfig.property.expressionType">expressionType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/group_rule#expression_type GroupRule#expression_type}. |
+| <code><a href="#@cdktf/provider-okta.groupRule.GroupRuleConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/group_rule#id GroupRule#id}. |
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRuleConfig.property.removeAssignedUsers">removeAssignedUsers</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Remove users added by this rule from the assigned group after deleting this resource. |
-| <code><a href="#@cdktf/provider-okta.groupRule.GroupRuleConfig.property.status">status</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/group_rule#status GroupRule#status}. |
+| <code><a href="#@cdktf/provider-okta.groupRule.GroupRuleConfig.property.status">status</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/group_rule#status GroupRule#status}. |
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRuleConfig.property.usersExcluded">usersExcluded</a></code> | <code>java.util.List<java.lang.String></code> | The list of user IDs that would be excluded when rules are processed. |
 
 ---
@@ -994,7 +994,7 @@ public java.lang.String getExpressionValue();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/group_rule#expression_value GroupRule#expression_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/group_rule#expression_value GroupRule#expression_value}.
 
 ---
 
@@ -1006,7 +1006,7 @@ public java.util.List<java.lang.String> getGroupAssignments();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/group_rule#group_assignments GroupRule#group_assignments}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/group_rule#group_assignments GroupRule#group_assignments}.
 
 ---
 
@@ -1018,7 +1018,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/group_rule#name GroupRule#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/group_rule#name GroupRule#name}.
 
 ---
 
@@ -1030,7 +1030,7 @@ public java.lang.String getExpressionType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/group_rule#expression_type GroupRule#expression_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/group_rule#expression_type GroupRule#expression_type}.
 
 ---
 
@@ -1042,7 +1042,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/group_rule#id GroupRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/group_rule#id GroupRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1059,7 +1059,7 @@ public java.lang.Object getRemoveAssignedUsers();
 
 Remove users added by this rule from the assigned group after deleting this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/group_rule#remove_assigned_users GroupRule#remove_assigned_users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/group_rule#remove_assigned_users GroupRule#remove_assigned_users}
 
 ---
 
@@ -1071,7 +1071,7 @@ public java.lang.String getStatus();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/group_rule#status GroupRule#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/group_rule#status GroupRule#status}.
 
 ---
 
@@ -1085,7 +1085,7 @@ public java.util.List<java.lang.String> getUsersExcluded();
 
 The list of user IDs that would be excluded when rules are processed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/group_rule#users_excluded GroupRule#users_excluded}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/group_rule#users_excluded GroupRule#users_excluded}
 
 ---
 
