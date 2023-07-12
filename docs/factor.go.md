@@ -1,6 +1,6 @@
 # `okta_factor`
 
-Refer to the Terraform Registory for docs: [`okta_factor`](https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/factor).
+Refer to the Terraform Registory for docs: [`okta_factor`](https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/factor).
 
 # `factor` Submodule <a name="`factor` Submodule" id="@cdktf/provider-okta.factor"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`okta_factor`](https://registry.terr
 
 ### Factor <a name="Factor" id="@cdktf/provider-okta.factor.Factor"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/factor okta_factor}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/factor okta_factor}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.factor.Factor.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/factor"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/factor"
 
 factor.NewFactor(scope Construct, id *string, config FactorConfig) Factor
 ```
@@ -284,7 +284,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.factor.Factor.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/factor"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/factor"
 
 factor.Factor_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.factor.Factor.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/factor"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/factor"
 
 factor.Factor_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ factor.Factor_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.factor.Factor.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/factor"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/factor"
 
 factor.Factor_IsTerraformResource(x interface{}) *bool
 ```
@@ -595,7 +595,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.factor.FactorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/factor"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/factor"
 
 &factor.FactorConfig {
 	Connection: interface{},
@@ -624,7 +624,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/factor"
 | <code><a href="#@cdktf/provider-okta.factor.FactorConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.factor.FactorConfig.property.providerId">ProviderId</a></code> | <code>*string</code> | Factor provider ID. |
 | <code><a href="#@cdktf/provider-okta.factor.FactorConfig.property.active">Active</a></code> | <code>interface{}</code> | Is this provider active? |
-| <code><a href="#@cdktf/provider-okta.factor.FactorConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/factor#id Factor#id}. |
+| <code><a href="#@cdktf/provider-okta.factor.FactorConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/factor#id Factor#id}. |
 
 ---
 
@@ -708,7 +708,7 @@ ProviderId *string
 
 Factor provider ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/factor#provider_id Factor#provider_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/factor#provider_id Factor#provider_id}
 
 ---
 
@@ -722,7 +722,7 @@ Active interface{}
 
 Is this provider active?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/factor#active Factor#active}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/factor#active Factor#active}
 
 ---
 
@@ -734,7 +734,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/factor#id Factor#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/factor#id Factor#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

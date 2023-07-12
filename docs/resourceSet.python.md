@@ -1,6 +1,6 @@
 # `okta_resource_set`
 
-Refer to the Terraform Registory for docs: [`okta_resource_set`](https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/resource_set).
+Refer to the Terraform Registory for docs: [`okta_resource_set`](https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/resource_set).
 
 # `resourceSet` Submodule <a name="`resourceSet` Submodule" id="@cdktf/provider-okta.resourceSet"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_resource_set`](https://registr
 
 ### ResourceSet <a name="ResourceSet" id="@cdktf/provider-okta.resourceSet.ResourceSet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/resource_set okta_resource_set}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/resource_set okta_resource_set}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.resourceSet.ResourceSet.Initializer"></a>
 
@@ -45,7 +45,7 @@ resourceSet.ResourceSet(
 | <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSet.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSet.Initializer.parameter.description">description</a></code> | <code>str</code> | A description of the Resource Set. |
 | <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSet.Initializer.parameter.label">label</a></code> | <code>str</code> | Unique name given to the Resource Set. |
-| <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSet.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/resource_set#id ResourceSet#id}. |
+| <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSet.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/resource_set#id ResourceSet#id}. |
 | <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSet.Initializer.parameter.resources">resources</a></code> | <code>typing.List[str]</code> | The endpoints that reference the resources to be included in the new Resource Set. |
 
 ---
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 A description of the Resource Set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/resource_set#description ResourceSet#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/resource_set#description ResourceSet#description}
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Unique name given to the Resource Set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/resource_set#label ResourceSet#label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/resource_set#label ResourceSet#label}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/resource_set#id ResourceSet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/resource_set#id ResourceSet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -147,7 +147,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The endpoints that reference the resources to be included in the new Resource Set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/resource_set#resources ResourceSet#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/resource_set#resources ResourceSet#resources}
 
 ---
 
@@ -779,7 +779,7 @@ resourceSet.ResourceSetConfig(
 | <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSetConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSetConfig.property.description">description</a></code> | <code>str</code> | A description of the Resource Set. |
 | <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSetConfig.property.label">label</a></code> | <code>str</code> | Unique name given to the Resource Set. |
-| <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSetConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/resource_set#id ResourceSet#id}. |
+| <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSetConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/resource_set#id ResourceSet#id}. |
 | <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSetConfig.property.resources">resources</a></code> | <code>typing.List[str]</code> | The endpoints that reference the resources to be included in the new Resource Set. |
 
 ---
@@ -864,7 +864,7 @@ description: str
 
 A description of the Resource Set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/resource_set#description ResourceSet#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/resource_set#description ResourceSet#description}
 
 ---
 
@@ -878,7 +878,7 @@ label: str
 
 Unique name given to the Resource Set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/resource_set#label ResourceSet#label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/resource_set#label ResourceSet#label}
 
 ---
 
@@ -890,7 +890,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/resource_set#id ResourceSet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/resource_set#id ResourceSet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -907,7 +907,7 @@ resources: typing.List[str]
 
 The endpoints that reference the resources to be included in the new Resource Set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/resource_set#resources ResourceSet#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/resource_set#resources ResourceSet#resources}
 
 ---
 
