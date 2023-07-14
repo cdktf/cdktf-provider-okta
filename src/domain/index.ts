@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/domain
+// https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/domain
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface DomainConfig extends cdktf.TerraformMetaArguments {
   /**
   * Optional. Certificate source type that indicates whether the certificate is provided by the user or Okta. Accepted values: MANUAL, OKTA_MANAGED. Warning: Use of OKTA_MANAGED requires a feature flag to be enabled. Default value = MANUAL
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/domain#certificate_source_type Domain#certificate_source_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/domain#certificate_source_type Domain#certificate_source_type}
   */
   readonly certificateSourceType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/domain#id Domain#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/domain#id Domain#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,7 +23,7 @@ export interface DomainConfig extends cdktf.TerraformMetaArguments {
   /**
   * Custom Domain name
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/domain#name Domain#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/domain#name Domain#name}
   */
   readonly name: string;
 }
@@ -113,7 +108,7 @@ export class DomainDnsRecordsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/domain okta_domain}
+* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/domain okta_domain}
 */
 export class Domain extends cdktf.TerraformResource {
 
@@ -127,7 +122,7 @@ export class Domain extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/domain okta_domain} Resource
+  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/domain okta_domain} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -138,7 +133,7 @@ export class Domain extends cdktf.TerraformResource {
       terraformResourceType: 'okta_domain',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '4.0.2',
+        providerVersion: '4.1.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

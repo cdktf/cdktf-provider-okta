@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/app_oauth_api_scope
+// https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_oauth_api_scope
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface AppOauthApiScopeConfig extends cdktf.TerraformMetaArguments {
   /**
   * ID of the application.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/app_oauth_api_scope#app_id AppOauthApiScope#app_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_oauth_api_scope#app_id AppOauthApiScope#app_id}
   */
   readonly appId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/app_oauth_api_scope#id AppOauthApiScope#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_oauth_api_scope#id AppOauthApiScope#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,19 +23,19 @@ export interface AppOauthApiScopeConfig extends cdktf.TerraformMetaArguments {
   /**
   * The issuer of your Org Authorization Server, your Org URL.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/app_oauth_api_scope#issuer AppOauthApiScope#issuer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_oauth_api_scope#issuer AppOauthApiScope#issuer}
   */
   readonly issuer: string;
   /**
   * Scopes of the application for which consent is granted.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/app_oauth_api_scope#scopes AppOauthApiScope#scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_oauth_api_scope#scopes AppOauthApiScope#scopes}
   */
   readonly scopes: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/app_oauth_api_scope okta_app_oauth_api_scope}
+* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_oauth_api_scope okta_app_oauth_api_scope}
 */
 export class AppOauthApiScope extends cdktf.TerraformResource {
 
@@ -54,7 +49,7 @@ export class AppOauthApiScope extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/app_oauth_api_scope okta_app_oauth_api_scope} Resource
+  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_oauth_api_scope okta_app_oauth_api_scope} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -65,7 +60,7 @@ export class AppOauthApiScope extends cdktf.TerraformResource {
       terraformResourceType: 'okta_app_oauth_api_scope',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '4.0.2',
+        providerVersion: '4.1.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

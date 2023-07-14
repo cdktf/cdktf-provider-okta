@@ -1,6 +1,6 @@
 # `okta_network_zone`
 
-Refer to the Terraform Registory for docs: [`okta_network_zone`](https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/network_zone).
+Refer to the Terraform Registory for docs: [`okta_network_zone`](https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/network_zone).
 
 # `networkZone` Submodule <a name="`networkZone` Submodule" id="@cdktf/provider-okta.networkZone"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_network_zone`](https://registr
 
 ### NetworkZone <a name="NetworkZone" id="@cdktf/provider-okta.networkZone.NetworkZone"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/network_zone okta_network_zone}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/network_zone okta_network_zone}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.networkZone.NetworkZone.Initializer"></a>
 
@@ -76,6 +76,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-okta.networkZone.NetworkZone.resetGateways">ResetGateways</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.networkZone.NetworkZone.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.networkZone.NetworkZone.resetProxies">ResetProxies</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.networkZone.NetworkZone.resetStatus">ResetStatus</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.networkZone.NetworkZone.resetUsage">ResetUsage</a></code> | *No description.* |
 
 ---
@@ -300,6 +301,12 @@ private void ResetId()
 private void ResetProxies()
 ```
 
+##### `ResetStatus` <a name="ResetStatus" id="@cdktf/provider-okta.networkZone.NetworkZone.resetStatus"></a>
+
+```csharp
+private void ResetStatus()
+```
+
 ##### `ResetUsage` <a name="ResetUsage" id="@cdktf/provider-okta.networkZone.NetworkZone.resetUsage"></a>
 
 ```csharp
@@ -401,6 +408,7 @@ NetworkZone.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-okta.networkZone.NetworkZone.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.networkZone.NetworkZone.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.networkZone.NetworkZone.property.proxiesInput">ProxiesInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.networkZone.NetworkZone.property.statusInput">StatusInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.networkZone.NetworkZone.property.typeInput">TypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.networkZone.NetworkZone.property.usageInput">UsageInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.networkZone.NetworkZone.property.asns">Asns</a></code> | <code>string[]</code> | *No description.* |
@@ -410,6 +418,7 @@ NetworkZone.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-okta.networkZone.NetworkZone.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.networkZone.NetworkZone.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.networkZone.NetworkZone.property.proxies">Proxies</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.networkZone.NetworkZone.property.status">Status</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.networkZone.NetworkZone.property.type">Type</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.networkZone.NetworkZone.property.usage">Usage</a></code> | <code>string</code> | *No description.* |
 
@@ -627,6 +636,16 @@ public string[] ProxiesInput { get; }
 
 ---
 
+##### `StatusInput`<sup>Optional</sup> <a name="StatusInput" id="@cdktf/provider-okta.networkZone.NetworkZone.property.statusInput"></a>
+
+```csharp
+public string StatusInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `TypeInput`<sup>Optional</sup> <a name="TypeInput" id="@cdktf/provider-okta.networkZone.NetworkZone.property.typeInput"></a>
 
 ```csharp
@@ -717,6 +736,16 @@ public string[] Proxies { get; }
 
 ---
 
+##### `Status`<sup>Required</sup> <a name="Status" id="@cdktf/provider-okta.networkZone.NetworkZone.property.status"></a>
+
+```csharp
+public string Status { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `Type`<sup>Required</sup> <a name="Type" id="@cdktf/provider-okta.networkZone.NetworkZone.property.type"></a>
 
 ```csharp
@@ -780,6 +809,7 @@ new NetworkZoneConfig {
     string[] Gateways = null,
     string Id = null,
     string[] Proxies = null,
+    string Status = null,
     string Usage = null
 };
 ```
@@ -801,8 +831,9 @@ new NetworkZoneConfig {
 | <code><a href="#@cdktf/provider-okta.networkZone.NetworkZoneConfig.property.dynamicLocations">DynamicLocations</a></code> | <code>string[]</code> | Array of locations ISO-3166-1(2). Format code: countryCode OR countryCode-regionCode. |
 | <code><a href="#@cdktf/provider-okta.networkZone.NetworkZoneConfig.property.dynamicProxyType">DynamicProxyType</a></code> | <code>string</code> | Type of proxy being controlled by this network zone. |
 | <code><a href="#@cdktf/provider-okta.networkZone.NetworkZoneConfig.property.gateways">Gateways</a></code> | <code>string[]</code> | Array of values in CIDR/range form depending on the way it's been declared (i.e. CIDR will contain /suffix). Please check API docs for examples. |
-| <code><a href="#@cdktf/provider-okta.networkZone.NetworkZoneConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/network_zone#id NetworkZone#id}. |
+| <code><a href="#@cdktf/provider-okta.networkZone.NetworkZoneConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/network_zone#id NetworkZone#id}. |
 | <code><a href="#@cdktf/provider-okta.networkZone.NetworkZoneConfig.property.proxies">Proxies</a></code> | <code>string[]</code> | Array of values in CIDR/range form depending on the way it's been declared (i.e. CIDR will contain /suffix). Please check API docs for examples. |
+| <code><a href="#@cdktf/provider-okta.networkZone.NetworkZoneConfig.property.status">Status</a></code> | <code>string</code> | Network Status - can either be ACTIVE or INACTIVE only. |
 | <code><a href="#@cdktf/provider-okta.networkZone.NetworkZoneConfig.property.usage">Usage</a></code> | <code>string</code> | Zone's purpose: POLICY or BLOCKLIST. |
 
 ---
@@ -887,7 +918,7 @@ public string Name { get; set; }
 
 Name of the Network Zone Resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/network_zone#name NetworkZone#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/network_zone#name NetworkZone#name}
 
 ---
 
@@ -901,7 +932,7 @@ public string Type { get; set; }
 
 Type of the Network Zone - can either be IP or DYNAMIC only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/network_zone#type NetworkZone#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/network_zone#type NetworkZone#type}
 
 ---
 
@@ -915,7 +946,7 @@ public string[] Asns { get; set; }
 
 Format of each array value: a string representation of an ASN numeric value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/network_zone#asns NetworkZone#asns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/network_zone#asns NetworkZone#asns}
 
 ---
 
@@ -929,7 +960,7 @@ public string[] DynamicLocations { get; set; }
 
 Array of locations ISO-3166-1(2). Format code: countryCode OR countryCode-regionCode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/network_zone#dynamic_locations NetworkZone#dynamic_locations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/network_zone#dynamic_locations NetworkZone#dynamic_locations}
 
 ---
 
@@ -943,7 +974,7 @@ public string DynamicProxyType { get; set; }
 
 Type of proxy being controlled by this network zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/network_zone#dynamic_proxy_type NetworkZone#dynamic_proxy_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/network_zone#dynamic_proxy_type NetworkZone#dynamic_proxy_type}
 
 ---
 
@@ -957,7 +988,7 @@ public string[] Gateways { get; set; }
 
 Array of values in CIDR/range form depending on the way it's been declared (i.e. CIDR will contain /suffix). Please check API docs for examples.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/network_zone#gateways NetworkZone#gateways}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/network_zone#gateways NetworkZone#gateways}
 
 ---
 
@@ -969,7 +1000,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/network_zone#id NetworkZone#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/network_zone#id NetworkZone#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -986,7 +1017,21 @@ public string[] Proxies { get; set; }
 
 Array of values in CIDR/range form depending on the way it's been declared (i.e. CIDR will contain /suffix). Please check API docs for examples.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/network_zone#proxies NetworkZone#proxies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/network_zone#proxies NetworkZone#proxies}
+
+---
+
+##### `Status`<sup>Optional</sup> <a name="Status" id="@cdktf/provider-okta.networkZone.NetworkZoneConfig.property.status"></a>
+
+```csharp
+public string Status { get; set; }
+```
+
+- *Type:* string
+
+Network Status - can either be ACTIVE or INACTIVE only.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/network_zone#status NetworkZone#status}
 
 ---
 
@@ -1000,7 +1045,7 @@ public string Usage { get; set; }
 
 Zone's purpose: POLICY or BLOCKLIST.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/network_zone#usage NetworkZone#usage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/network_zone#usage NetworkZone#usage}
 
 ---
 
