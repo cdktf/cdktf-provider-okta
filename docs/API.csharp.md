@@ -61,6 +61,7 @@ The following submodules are available:
 - [dataOktaEmailTemplates](./dataOktaEmailTemplates.csharp.md)
 - [dataOktaEveryoneGroup](./dataOktaEveryoneGroup.csharp.md)
 - [dataOktaGroup](./dataOktaGroup.csharp.md)
+- [dataOktaGroupRule](./dataOktaGroupRule.csharp.md)
 - [dataOktaGroups](./dataOktaGroups.csharp.md)
 - [dataOktaIdpMetadataSaml](./dataOktaIdpMetadataSaml.csharp.md)
 - [dataOktaIdpOidc](./dataOktaIdpOidc.csharp.md)

@@ -61,6 +61,7 @@ The following submodules are available:
 - [dataOktaEmailTemplates](./dataOktaEmailTemplates.typescript.md)
 - [dataOktaEveryoneGroup](./dataOktaEveryoneGroup.typescript.md)
 - [dataOktaGroup](./dataOktaGroup.typescript.md)
+- [dataOktaGroupRule](./dataOktaGroupRule.typescript.md)
 - [dataOktaGroups](./dataOktaGroups.typescript.md)
 - [dataOktaIdpMetadataSaml](./dataOktaIdpMetadataSaml.typescript.md)
 - [dataOktaIdpOidc](./dataOktaIdpOidc.typescript.md)

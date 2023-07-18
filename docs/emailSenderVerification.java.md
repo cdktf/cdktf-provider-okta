@@ -1,6 +1,6 @@
 # `okta_email_sender_verification`
 
-Refer to the Terraform Registory for docs: [`okta_email_sender_verification`](https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/email_sender_verification).
+Refer to the Terraform Registory for docs: [`okta_email_sender_verification`](https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/email_sender_verification).
 
 # `emailSenderVerification` Submodule <a name="`emailSenderVerification` Submodule" id="@cdktf/provider-okta.emailSenderVerification"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_email_sender_verification`](ht
 
 ### EmailSenderVerification <a name="EmailSenderVerification" id="@cdktf/provider-okta.emailSenderVerification.EmailSenderVerification"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/email_sender_verification okta_email_sender_verification}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/email_sender_verification okta_email_sender_verification}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.emailSenderVerification.EmailSenderVerification.Initializer"></a>
 
@@ -44,7 +44,7 @@ EmailSenderVerification.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-okta.emailSenderVerification.EmailSenderVerification.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.emailSenderVerification.EmailSenderVerification.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.emailSenderVerification.EmailSenderVerification.Initializer.parameter.senderId">senderId</a></code> | <code>java.lang.String</code> | Email sender ID. |
-| <code><a href="#@cdktf/provider-okta.emailSenderVerification.EmailSenderVerification.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/email_sender_verification#id EmailSenderVerification#id}. |
+| <code><a href="#@cdktf/provider-okta.emailSenderVerification.EmailSenderVerification.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/email_sender_verification#id EmailSenderVerification#id}. |
 
 ---
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 Email sender ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/email_sender_verification#sender_id EmailSenderVerification#sender_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/email_sender_verification#sender_id EmailSenderVerification#sender_id}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/email_sender_verification#id EmailSenderVerification#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/email_sender_verification#id EmailSenderVerification#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -676,7 +676,7 @@ EmailSenderVerificationConfig.builder()
 | <code><a href="#@cdktf/provider-okta.emailSenderVerification.EmailSenderVerificationConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.emailSenderVerification.EmailSenderVerificationConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.emailSenderVerification.EmailSenderVerificationConfig.property.senderId">senderId</a></code> | <code>java.lang.String</code> | Email sender ID. |
-| <code><a href="#@cdktf/provider-okta.emailSenderVerification.EmailSenderVerificationConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/email_sender_verification#id EmailSenderVerification#id}. |
+| <code><a href="#@cdktf/provider-okta.emailSenderVerification.EmailSenderVerificationConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/email_sender_verification#id EmailSenderVerification#id}. |
 
 ---
 
@@ -760,7 +760,7 @@ public java.lang.String getSenderId();
 
 Email sender ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/email_sender_verification#sender_id EmailSenderVerification#sender_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/email_sender_verification#sender_id EmailSenderVerification#sender_id}
 
 ---
 
@@ -772,7 +772,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/email_sender_verification#id EmailSenderVerification#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/email_sender_verification#id EmailSenderVerification#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
