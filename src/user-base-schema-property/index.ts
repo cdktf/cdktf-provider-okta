@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/user_base_schema_property
+// https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/user_base_schema_property
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface UserBaseSchemaPropertyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/user_base_schema_property#id UserBaseSchemaProperty#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/user_base_schema_property#id UserBaseSchemaProperty#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,55 +17,55 @@ export interface UserBaseSchemaPropertyConfig extends cdktf.TerraformMetaArgumen
   /**
   * Subschema unique string identifier
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/user_base_schema_property#index UserBaseSchemaProperty#index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/user_base_schema_property#index UserBaseSchemaProperty#index}
   */
   readonly index: string;
   /**
   * SubSchema profile manager, if not set it will inherit its setting.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/user_base_schema_property#master UserBaseSchemaProperty#master}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/user_base_schema_property#master UserBaseSchemaProperty#master}
   */
   readonly master?: string;
   /**
   * The validation pattern to use for the subschema. Must be in form of '.+', or '[<pattern>]+' if present.'
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/user_base_schema_property#pattern UserBaseSchemaProperty#pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/user_base_schema_property#pattern UserBaseSchemaProperty#pattern}
   */
   readonly pattern?: string;
   /**
   * SubSchema permissions: HIDE, READ_ONLY, or READ_WRITE.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/user_base_schema_property#permissions UserBaseSchemaProperty#permissions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/user_base_schema_property#permissions UserBaseSchemaProperty#permissions}
   */
   readonly permissions?: string;
   /**
   * Whether the subschema is required
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/user_base_schema_property#required UserBaseSchemaProperty#required}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/user_base_schema_property#required UserBaseSchemaProperty#required}
   */
   readonly required?: boolean | cdktf.IResolvable;
   /**
   * Subschema title (display name)
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/user_base_schema_property#title UserBaseSchemaProperty#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/user_base_schema_property#title UserBaseSchemaProperty#title}
   */
   readonly title: string;
   /**
   * Subschema type: string, boolean, number, integer, array, or object
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/user_base_schema_property#type UserBaseSchemaProperty#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/user_base_schema_property#type UserBaseSchemaProperty#type}
   */
   readonly type: string;
   /**
   * Custom subschema user type
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/user_base_schema_property#user_type UserBaseSchemaProperty#user_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/user_base_schema_property#user_type UserBaseSchemaProperty#user_type}
   */
   readonly userType?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/user_base_schema_property okta_user_base_schema_property}
+* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/user_base_schema_property okta_user_base_schema_property}
 */
 export class UserBaseSchemaProperty extends cdktf.TerraformResource {
 
@@ -84,7 +79,7 @@ export class UserBaseSchemaProperty extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/user_base_schema_property okta_user_base_schema_property} Resource
+  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/user_base_schema_property okta_user_base_schema_property} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -95,7 +90,7 @@ export class UserBaseSchemaProperty extends cdktf.TerraformResource {
       terraformResourceType: 'okta_user_base_schema_property',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '4.0.2',
+        providerVersion: '4.1.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
