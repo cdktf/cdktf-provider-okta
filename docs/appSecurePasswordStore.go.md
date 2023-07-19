@@ -1,6 +1,6 @@
 # `okta_app_secure_password_store`
 
-Refer to the Terraform Registory for docs: [`okta_app_secure_password_store`](https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/app_secure_password_store).
+Refer to the Terraform Registory for docs: [`okta_app_secure_password_store`](https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_secure_password_store).
 
 # `appSecurePasswordStore` Submodule <a name="`appSecurePasswordStore` Submodule" id="@cdktf/provider-okta.appSecurePasswordStore"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_app_secure_password_store`](ht
 
 ### AppSecurePasswordStore <a name="AppSecurePasswordStore" id="@cdktf/provider-okta.appSecurePasswordStore.AppSecurePasswordStore"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/app_secure_password_store okta_app_secure_password_store}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_secure_password_store okta_app_secure_password_store}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appSecurePasswordStore.AppSecurePasswordStore.Initializer"></a>
 
@@ -1501,7 +1501,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/appsecurepasswordstore"
 | <code><a href="#@cdktf/provider-okta.appSecurePasswordStore.AppSecurePasswordStoreConfig.property.enduserNote">EnduserNote</a></code> | <code>*string</code> | Application notes for end users. |
 | <code><a href="#@cdktf/provider-okta.appSecurePasswordStore.AppSecurePasswordStoreConfig.property.hideIos">HideIos</a></code> | <code>interface{}</code> | Do not display application icon on mobile app. |
 | <code><a href="#@cdktf/provider-okta.appSecurePasswordStore.AppSecurePasswordStoreConfig.property.hideWeb">HideWeb</a></code> | <code>interface{}</code> | Do not display application icon to users. |
-| <code><a href="#@cdktf/provider-okta.appSecurePasswordStore.AppSecurePasswordStoreConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/app_secure_password_store#id AppSecurePasswordStore#id}. |
+| <code><a href="#@cdktf/provider-okta.appSecurePasswordStore.AppSecurePasswordStoreConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_secure_password_store#id AppSecurePasswordStore#id}. |
 | <code><a href="#@cdktf/provider-okta.appSecurePasswordStore.AppSecurePasswordStoreConfig.property.logo">Logo</a></code> | <code>*string</code> | Local path to logo of the application. |
 | <code><a href="#@cdktf/provider-okta.appSecurePasswordStore.AppSecurePasswordStoreConfig.property.optionalField1">OptionalField1</a></code> | <code>*string</code> | Name of optional param in the login form. |
 | <code><a href="#@cdktf/provider-okta.appSecurePasswordStore.AppSecurePasswordStoreConfig.property.optionalField1Value">OptionalField1Value</a></code> | <code>*string</code> | Name of optional value in login form. |
@@ -1601,7 +1601,7 @@ Label *string
 
 Pretty name of app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/app_secure_password_store#label AppSecurePasswordStore#label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_secure_password_store#label AppSecurePasswordStore#label}
 
 ---
 
@@ -1615,7 +1615,7 @@ PasswordField *string
 
 Login password field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/app_secure_password_store#password_field AppSecurePasswordStore#password_field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_secure_password_store#password_field AppSecurePasswordStore#password_field}
 
 ---
 
@@ -1629,7 +1629,7 @@ Url *string
 
 Login URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/app_secure_password_store#url AppSecurePasswordStore#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_secure_password_store#url AppSecurePasswordStore#url}
 
 ---
 
@@ -1643,7 +1643,7 @@ UsernameField *string
 
 Login username field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/app_secure_password_store#username_field AppSecurePasswordStore#username_field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_secure_password_store#username_field AppSecurePasswordStore#username_field}
 
 ---
 
@@ -1657,7 +1657,7 @@ AccessibilityErrorRedirectUrl *string
 
 Custom error page URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/app_secure_password_store#accessibility_error_redirect_url AppSecurePasswordStore#accessibility_error_redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_secure_password_store#accessibility_error_redirect_url AppSecurePasswordStore#accessibility_error_redirect_url}
 
 ---
 
@@ -1671,7 +1671,7 @@ AccessibilityLoginRedirectUrl *string
 
 Custom login page URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/app_secure_password_store#accessibility_login_redirect_url AppSecurePasswordStore#accessibility_login_redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_secure_password_store#accessibility_login_redirect_url AppSecurePasswordStore#accessibility_login_redirect_url}
 
 ---
 
@@ -1685,7 +1685,7 @@ AccessibilitySelfService interface{}
 
 Enable self service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/app_secure_password_store#accessibility_self_service AppSecurePasswordStore#accessibility_self_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_secure_password_store#accessibility_self_service AppSecurePasswordStore#accessibility_self_service}
 
 ---
 
@@ -1699,7 +1699,7 @@ AdminNote *string
 
 Application notes for admins.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/app_secure_password_store#admin_note AppSecurePasswordStore#admin_note}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_secure_password_store#admin_note AppSecurePasswordStore#admin_note}
 
 ---
 
@@ -1713,7 +1713,7 @@ AppLinksJson *string
 
 Displays specific appLinks for the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/app_secure_password_store#app_links_json AppSecurePasswordStore#app_links_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_secure_password_store#app_links_json AppSecurePasswordStore#app_links_json}
 
 ---
 
@@ -1727,7 +1727,7 @@ AutoSubmitToolbar interface{}
 
 Display auto submit toolbar.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/app_secure_password_store#auto_submit_toolbar AppSecurePasswordStore#auto_submit_toolbar}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_secure_password_store#auto_submit_toolbar AppSecurePasswordStore#auto_submit_toolbar}
 
 ---
 
@@ -1741,7 +1741,7 @@ CredentialsScheme *string
 
 Application credentials scheme.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/app_secure_password_store#credentials_scheme AppSecurePasswordStore#credentials_scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_secure_password_store#credentials_scheme AppSecurePasswordStore#credentials_scheme}
 
 ---
 
@@ -1755,7 +1755,7 @@ EnduserNote *string
 
 Application notes for end users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/app_secure_password_store#enduser_note AppSecurePasswordStore#enduser_note}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_secure_password_store#enduser_note AppSecurePasswordStore#enduser_note}
 
 ---
 
@@ -1769,7 +1769,7 @@ HideIos interface{}
 
 Do not display application icon on mobile app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/app_secure_password_store#hide_ios AppSecurePasswordStore#hide_ios}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_secure_password_store#hide_ios AppSecurePasswordStore#hide_ios}
 
 ---
 
@@ -1783,7 +1783,7 @@ HideWeb interface{}
 
 Do not display application icon to users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/app_secure_password_store#hide_web AppSecurePasswordStore#hide_web}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_secure_password_store#hide_web AppSecurePasswordStore#hide_web}
 
 ---
 
@@ -1795,7 +1795,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/app_secure_password_store#id AppSecurePasswordStore#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_secure_password_store#id AppSecurePasswordStore#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1812,7 +1812,7 @@ Logo *string
 
 Local path to logo of the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/app_secure_password_store#logo AppSecurePasswordStore#logo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_secure_password_store#logo AppSecurePasswordStore#logo}
 
 ---
 
@@ -1826,7 +1826,7 @@ OptionalField1 *string
 
 Name of optional param in the login form.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/app_secure_password_store#optional_field1 AppSecurePasswordStore#optional_field1}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_secure_password_store#optional_field1 AppSecurePasswordStore#optional_field1}
 
 ---
 
@@ -1840,7 +1840,7 @@ OptionalField1Value *string
 
 Name of optional value in login form.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/app_secure_password_store#optional_field1_value AppSecurePasswordStore#optional_field1_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_secure_password_store#optional_field1_value AppSecurePasswordStore#optional_field1_value}
 
 ---
 
@@ -1854,7 +1854,7 @@ OptionalField2 *string
 
 Name of optional param in the login form.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/app_secure_password_store#optional_field2 AppSecurePasswordStore#optional_field2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_secure_password_store#optional_field2 AppSecurePasswordStore#optional_field2}
 
 ---
 
@@ -1868,7 +1868,7 @@ OptionalField2Value *string
 
 Name of optional value in login form.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/app_secure_password_store#optional_field2_value AppSecurePasswordStore#optional_field2_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_secure_password_store#optional_field2_value AppSecurePasswordStore#optional_field2_value}
 
 ---
 
@@ -1882,7 +1882,7 @@ OptionalField3 *string
 
 Name of optional param in the login form.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/app_secure_password_store#optional_field3 AppSecurePasswordStore#optional_field3}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_secure_password_store#optional_field3 AppSecurePasswordStore#optional_field3}
 
 ---
 
@@ -1896,7 +1896,7 @@ OptionalField3Value *string
 
 Name of optional value in login form.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/app_secure_password_store#optional_field3_value AppSecurePasswordStore#optional_field3_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_secure_password_store#optional_field3_value AppSecurePasswordStore#optional_field3_value}
 
 ---
 
@@ -1910,7 +1910,7 @@ RevealPassword interface{}
 
 Allow user to reveal password.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/app_secure_password_store#reveal_password AppSecurePasswordStore#reveal_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_secure_password_store#reveal_password AppSecurePasswordStore#reveal_password}
 
 ---
 
@@ -1924,7 +1924,7 @@ SharedPassword *string
 
 Shared password, required for certain schemes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/app_secure_password_store#shared_password AppSecurePasswordStore#shared_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_secure_password_store#shared_password AppSecurePasswordStore#shared_password}
 
 ---
 
@@ -1938,7 +1938,7 @@ SharedUsername *string
 
 Shared username, required for certain schemes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/app_secure_password_store#shared_username AppSecurePasswordStore#shared_username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_secure_password_store#shared_username AppSecurePasswordStore#shared_username}
 
 ---
 
@@ -1952,7 +1952,7 @@ Status *string
 
 Status of application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/app_secure_password_store#status AppSecurePasswordStore#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_secure_password_store#status AppSecurePasswordStore#status}
 
 ---
 
@@ -1966,7 +1966,7 @@ Timeouts AppSecurePasswordStoreTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/app_secure_password_store#timeouts AppSecurePasswordStore#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_secure_password_store#timeouts AppSecurePasswordStore#timeouts}
 
 ---
 
@@ -1980,7 +1980,7 @@ UserNameTemplate *string
 
 Username template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/app_secure_password_store#user_name_template AppSecurePasswordStore#user_name_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_secure_password_store#user_name_template AppSecurePasswordStore#user_name_template}
 
 ---
 
@@ -1994,7 +1994,7 @@ UserNameTemplatePushStatus *string
 
 Push username on update.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/app_secure_password_store#user_name_template_push_status AppSecurePasswordStore#user_name_template_push_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_secure_password_store#user_name_template_push_status AppSecurePasswordStore#user_name_template_push_status}
 
 ---
 
@@ -2008,7 +2008,7 @@ UserNameTemplateSuffix *string
 
 Username template suffix.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/app_secure_password_store#user_name_template_suffix AppSecurePasswordStore#user_name_template_suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_secure_password_store#user_name_template_suffix AppSecurePasswordStore#user_name_template_suffix}
 
 ---
 
@@ -2022,7 +2022,7 @@ UserNameTemplateType *string
 
 Username template type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/app_secure_password_store#user_name_template_type AppSecurePasswordStore#user_name_template_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_secure_password_store#user_name_template_type AppSecurePasswordStore#user_name_template_type}
 
 ---
 
@@ -2044,9 +2044,9 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/appsecurepasswordstore"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.appSecurePasswordStore.AppSecurePasswordStoreTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/app_secure_password_store#create AppSecurePasswordStore#create}. |
-| <code><a href="#@cdktf/provider-okta.appSecurePasswordStore.AppSecurePasswordStoreTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/app_secure_password_store#read AppSecurePasswordStore#read}. |
-| <code><a href="#@cdktf/provider-okta.appSecurePasswordStore.AppSecurePasswordStoreTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/app_secure_password_store#update AppSecurePasswordStore#update}. |
+| <code><a href="#@cdktf/provider-okta.appSecurePasswordStore.AppSecurePasswordStoreTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_secure_password_store#create AppSecurePasswordStore#create}. |
+| <code><a href="#@cdktf/provider-okta.appSecurePasswordStore.AppSecurePasswordStoreTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_secure_password_store#read AppSecurePasswordStore#read}. |
+| <code><a href="#@cdktf/provider-okta.appSecurePasswordStore.AppSecurePasswordStoreTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_secure_password_store#update AppSecurePasswordStore#update}. |
 
 ---
 
@@ -2058,7 +2058,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/app_secure_password_store#create AppSecurePasswordStore#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_secure_password_store#create AppSecurePasswordStore#create}.
 
 ---
 
@@ -2070,7 +2070,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/app_secure_password_store#read AppSecurePasswordStore#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_secure_password_store#read AppSecurePasswordStore#read}.
 
 ---
 
@@ -2082,7 +2082,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.0.2/docs/resources/app_secure_password_store#update AppSecurePasswordStore#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_secure_password_store#update AppSecurePasswordStore#update}.
 
 ---
 

@@ -119,6 +119,7 @@ export * as dataOktaEmailTemplate from './data-okta-email-template';
 export * as dataOktaEmailTemplates from './data-okta-email-templates';
 export * as dataOktaEveryoneGroup from './data-okta-everyone-group';
 export * as dataOktaGroup from './data-okta-group';
+export * as dataOktaGroupRule from './data-okta-group-rule';
 export * as dataOktaGroups from './data-okta-groups';
 export * as dataOktaIdpMetadataSaml from './data-okta-idp-metadata-saml';
 export * as dataOktaIdpOidc from './data-okta-idp-oidc';
