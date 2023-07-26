@@ -14,19 +14,19 @@ import * as cdktf from 'cdktf';
 export interface DataOktaUsersConfig extends cdktf.TerraformMetaArguments {
   /**
   * Search operator used when joining mulitple search clauses
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/users#compound_search_operator DataOktaUsers#compound_search_operator}
   */
   readonly compoundSearchOperator?: string;
   /**
   * Force delay of the users read by N seconds. Useful when eventual consistency of users information needs to be allowed for.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/users#delay_read_seconds DataOktaUsers#delay_read_seconds}
   */
   readonly delayReadSeconds?: string;
   /**
   * Find users based on group membership using the id of the group.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/users#group_id DataOktaUsers#group_id}
   */
   readonly groupId?: string;
@@ -39,19 +39,19 @@ export interface DataOktaUsersConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Fetch group memberships for each user
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/users#include_groups DataOktaUsers#include_groups}
   */
   readonly includeGroups?: boolean | cdktf.IResolvable;
   /**
   * Fetch user roles for each user
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/users#include_roles DataOktaUsers#include_roles}
   */
   readonly includeRoles?: boolean | cdktf.IResolvable;
   /**
   * search block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/users#search DataOktaUsers#search}
   */
   readonly search?: DataOktaUsersSearch[] | cdktf.IResolvable;
@@ -307,13 +307,13 @@ export interface DataOktaUsersSearch {
   readonly comparison?: string;
   /**
   * A raw search expression string. This requires the search feature be on. Please see Okta documentation on their filter API for users. https://developer.okta.com/docs/api/resources/users#list-users-with-search
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/users#expression DataOktaUsers#expression}
   */
   readonly expression?: string;
   /**
   * Property name to search for. This requires the search feature be on. Please see Okta documentation on their filter API for users. https://developer.okta.com/docs/api/resources/users#list-users-with-search
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/users#name DataOktaUsers#name}
   */
   readonly name?: string;

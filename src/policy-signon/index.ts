@@ -14,13 +14,13 @@ import * as cdktf from 'cdktf';
 export interface PolicySignonConfig extends cdktf.TerraformMetaArguments {
   /**
   * Policy Description
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/policy_signon#description PolicySignon#description}
   */
   readonly description?: string;
   /**
   * List of Group IDs to Include
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/policy_signon#groups_included PolicySignon#groups_included}
   */
   readonly groupsIncluded?: string[];
@@ -33,19 +33,19 @@ export interface PolicySignonConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Policy Name
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/policy_signon#name PolicySignon#name}
   */
   readonly name: string;
   /**
   * Policy Priority, this attribute can be set to a valid priority. To avoid endless diff situation we error if an invalid priority is provided. API defaults it to the last (lowest) if not there.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/policy_signon#priority PolicySignon#priority}
   */
   readonly priority?: number;
   /**
   * Policy Status: ACTIVE or INACTIVE.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/policy_signon#status PolicySignon#status}
   */
   readonly status?: string;

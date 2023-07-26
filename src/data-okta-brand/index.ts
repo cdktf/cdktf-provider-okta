@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface DataOktaBrandConfig extends cdktf.TerraformMetaArguments {
   /**
   * Brand ID
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/brand#brand_id DataOktaBrand#brand_id}
   */
   readonly brandId: string;

@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface DomainConfig extends cdktf.TerraformMetaArguments {
   /**
   * Optional. Certificate source type that indicates whether the certificate is provided by the user or Okta. Accepted values: MANUAL, OKTA_MANAGED. Warning: Use of OKTA_MANAGED requires a feature flag to be enabled. Default value = MANUAL
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/domain#certificate_source_type Domain#certificate_source_type}
   */
   readonly certificateSourceType?: string;
@@ -27,7 +27,7 @@ export interface DomainConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Custom Domain name
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/domain#name Domain#name}
   */
   readonly name: string;

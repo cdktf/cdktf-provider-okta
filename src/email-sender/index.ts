@@ -14,13 +14,13 @@ import * as cdktf from 'cdktf';
 export interface EmailSenderConfig extends cdktf.TerraformMetaArguments {
   /**
   * Email address to send from 
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/email_sender#from_address EmailSender#from_address}
   */
   readonly fromAddress: string;
   /**
   * Name of sender
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/email_sender#from_name EmailSender#from_name}
   */
   readonly fromName: string;
@@ -33,7 +33,7 @@ export interface EmailSenderConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Mail domain to send from
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/email_sender#subdomain EmailSender#subdomain}
   */
   readonly subdomain: string;

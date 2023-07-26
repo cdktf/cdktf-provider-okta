@@ -14,13 +14,13 @@ import * as cdktf from 'cdktf';
 export interface FactorTotpConfig extends cdktf.TerraformMetaArguments {
   /**
   * Clock drift interval
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/factor_totp#clock_drift_interval FactorTotp#clock_drift_interval}
   */
   readonly clockDriftInterval?: number;
   /**
   * Hash-based message authentication code algorithm
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/factor_totp#hmac_algorithm FactorTotp#hmac_algorithm}
   */
   readonly hmacAlgorithm?: string;
@@ -33,25 +33,25 @@ export interface FactorTotpConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Factor name
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/factor_totp#name FactorTotp#name}
   */
   readonly name: string;
   /**
   * Factor name
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/factor_totp#otp_length FactorTotp#otp_length}
   */
   readonly otpLength?: number;
   /**
   * Shared secret encoding
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/factor_totp#shared_secret_encoding FactorTotp#shared_secret_encoding}
   */
   readonly sharedSecretEncoding?: string;
   /**
   * Time step in seconds
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/factor_totp#time_step FactorTotp#time_step}
   */
   readonly timeStep?: number;

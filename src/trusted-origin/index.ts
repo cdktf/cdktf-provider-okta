@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface TrustedOriginConfig extends cdktf.TerraformMetaArguments {
   /**
   * Whether the Trusted Origin is active or not - can only be issued post-creation
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/trusted_origin#active TrustedOrigin#active}
   */
   readonly active?: boolean | cdktf.IResolvable;
@@ -27,19 +27,19 @@ export interface TrustedOriginConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Unique name for this trusted origin
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/trusted_origin#name TrustedOrigin#name}
   */
   readonly name: string;
   /**
   * Unique origin URL for this trusted origin
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/trusted_origin#origin TrustedOrigin#origin}
   */
   readonly origin: string;
   /**
   * Scopes of the Trusted Origin - can either be CORS or REDIRECT only
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/trusted_origin#scopes TrustedOrigin#scopes}
   */
   readonly scopes: string[];

@@ -14,19 +14,19 @@ import * as cdktf from 'cdktf';
 export interface LinkDefinitionConfig extends cdktf.TerraformMetaArguments {
   /**
   * Description of the associated relationship.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/link_definition#associated_description LinkDefinition#associated_description}
   */
   readonly associatedDescription: string;
   /**
   * API name of the associated link.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/link_definition#associated_name LinkDefinition#associated_name}
   */
   readonly associatedName: string;
   /**
   * Display name of the associated link.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/link_definition#associated_title LinkDefinition#associated_title}
   */
   readonly associatedTitle: string;
@@ -39,19 +39,19 @@ export interface LinkDefinitionConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Description of the primary relationship.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/link_definition#primary_description LinkDefinition#primary_description}
   */
   readonly primaryDescription: string;
   /**
   * API name of the primary link.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/link_definition#primary_name LinkDefinition#primary_name}
   */
   readonly primaryName: string;
   /**
   * Display name of the primary link.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/link_definition#primary_title LinkDefinition#primary_title}
   */
   readonly primaryTitle: string;

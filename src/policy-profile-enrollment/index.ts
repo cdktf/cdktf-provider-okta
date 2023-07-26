@@ -21,13 +21,13 @@ export interface PolicyProfileEnrollmentConfig extends cdktf.TerraformMetaArgume
   readonly id?: string;
   /**
   * Name of the policy
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/policy_profile_enrollment#name PolicyProfileEnrollment#name}
   */
   readonly name: string;
   /**
   * Status of the policy
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/policy_profile_enrollment#status PolicyProfileEnrollment#status}
   */
   readonly status?: string;

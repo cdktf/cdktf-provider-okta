@@ -14,43 +14,43 @@ import * as cdktf from 'cdktf';
 export interface EmailCustomizationConfig extends cdktf.TerraformMetaArguments {
   /**
   * The body of the customization
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/email_customization#body EmailCustomization#body}
   */
   readonly body?: string;
   /**
   * Brand ID
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/email_customization#brand_id EmailCustomization#brand_id}
   */
   readonly brandId: string;
   /**
   * Force is_default on the create and delete by deleting all email customizations. Comma separated string with values of 'create' or 'destroy' or both `create,destroy'.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/email_customization#force_is_default EmailCustomization#force_is_default}
   */
   readonly forceIsDefault?: string;
   /**
   * Whether the customization is the default
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/email_customization#is_default EmailCustomization#is_default}
   */
   readonly isDefault?: boolean | cdktf.IResolvable;
   /**
   * The language supported by the customization
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/email_customization#language EmailCustomization#language}
   */
   readonly language?: string;
   /**
   * The subject of the customization
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/email_customization#subject EmailCustomization#subject}
   */
   readonly subject?: string;
   /**
   * Template Name
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/email_customization#template_name EmailCustomization#template_name}
   */
   readonly templateName: string;

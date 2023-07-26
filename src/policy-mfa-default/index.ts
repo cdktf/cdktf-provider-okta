@@ -45,7 +45,7 @@ export interface PolicyMfaDefaultConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Is the policy using Okta Identity Engine (OIE) with authenticators instead of factors?
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/policy_mfa_default#is_oie PolicyMfaDefault#is_oie}
   */
   readonly isOie?: boolean | cdktf.IResolvable;

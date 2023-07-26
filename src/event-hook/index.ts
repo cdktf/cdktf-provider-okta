@@ -41,7 +41,7 @@ export interface EventHookConfig extends cdktf.TerraformMetaArguments {
   readonly status?: string;
   /**
   * headers block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/event_hook#headers EventHook#headers}
   */
   readonly headers?: EventHookHeaders[] | cdktf.IResolvable;

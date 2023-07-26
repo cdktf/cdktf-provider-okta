@@ -57,7 +57,7 @@ export interface IdpSamlConfig extends cdktf.TerraformMetaArguments {
   readonly issuer: string;
   /**
   * Indicates whether Okta uses the original Okta org domain URL, or a custom domain URL
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/idp_saml#issuer_mode IdpSaml#issuer_mode}
   */
   readonly issuerMode?: string;
@@ -71,7 +71,7 @@ export interface IdpSamlConfig extends cdktf.TerraformMetaArguments {
   readonly maxClockSkew?: number;
   /**
   * Name of the IdP
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/idp_saml#name IdpSaml#name}
   */
   readonly name: string;
@@ -89,25 +89,25 @@ export interface IdpSamlConfig extends cdktf.TerraformMetaArguments {
   readonly provisioningAction?: string;
   /**
   * The XML digital Signature Algorithm used when signing an <AuthnRequest> message
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/idp_saml#request_signature_algorithm IdpSaml#request_signature_algorithm}
   */
   readonly requestSignatureAlgorithm?: string;
   /**
   * Specifies whether to digitally sign <AuthnRequest> messages to the IdP
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/idp_saml#request_signature_scope IdpSaml#request_signature_scope}
   */
   readonly requestSignatureScope?: string;
   /**
   * The minimum XML digital Signature Algorithm allowed when verifying a <SAMLResponse> message or <Assertion> element
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/idp_saml#response_signature_algorithm IdpSaml#response_signature_algorithm}
   */
   readonly responseSignatureAlgorithm?: string;
   /**
   * Specifies whether to verify a <SAMLResponse> message or <Assertion> element XML digital signature
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/idp_saml#response_signature_scope IdpSaml#response_signature_scope}
   */
   readonly responseSignatureScope?: string;

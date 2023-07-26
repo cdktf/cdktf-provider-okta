@@ -18,13 +18,13 @@ export interface AuthServerPolicyRuleConfig extends cdktf.TerraformMetaArguments
   readonly accessTokenLifetimeMinutes?: number;
   /**
   * Auth server ID
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/auth_server_policy_rule#auth_server_id AuthServerPolicyRule#auth_server_id}
   */
   readonly authServerId: string;
   /**
   * Accepted grant type values: authorization_code, implicit, password, client_credentials
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/auth_server_policy_rule#grant_type_whitelist AuthServerPolicyRule#grant_type_whitelist}
   */
   readonly grantTypeWhitelist: string[];
@@ -49,19 +49,19 @@ export interface AuthServerPolicyRuleConfig extends cdktf.TerraformMetaArguments
   readonly inlineHookId?: string;
   /**
   * Auth server policy rule name
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/auth_server_policy_rule#name AuthServerPolicyRule#name}
   */
   readonly name: string;
   /**
   * Auth server policy ID
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/auth_server_policy_rule#policy_id AuthServerPolicyRule#policy_id}
   */
   readonly policyId: string;
   /**
   * Priority of the auth server policy rule
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/auth_server_policy_rule#priority AuthServerPolicyRule#priority}
   */
   readonly priority: number;
@@ -83,7 +83,7 @@ export interface AuthServerPolicyRuleConfig extends cdktf.TerraformMetaArguments
   readonly status?: string;
   /**
   * Auth server policy rule type, unlikely this will be anything other then the default
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/auth_server_policy_rule#type AuthServerPolicyRule#type}
   */
   readonly type?: string;

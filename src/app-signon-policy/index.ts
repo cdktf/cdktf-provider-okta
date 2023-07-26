@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface AppSignonPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
   * Policy Description
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_signon_policy#description AppSignonPolicy#description}
   */
   readonly description: string;
@@ -27,7 +27,7 @@ export interface AppSignonPolicyConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Policy Name
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_signon_policy#name AppSignonPolicy#name}
   */
   readonly name: string;

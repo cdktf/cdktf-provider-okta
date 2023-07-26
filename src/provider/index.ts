@@ -14,109 +14,109 @@ import * as cdktf from 'cdktf';
 export interface OktaProviderConfig {
   /**
   * Bearer token granting privileges to Okta API.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs#access_token OktaProvider#access_token}
   */
   readonly accessToken?: string;
   /**
   * API Token granting privileges to Okta API.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs#api_token OktaProvider#api_token}
   */
   readonly apiToken?: string;
   /**
   * Use exponential back off strategy for rate limits.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs#backoff OktaProvider#backoff}
   */
   readonly backoff?: boolean | cdktf.IResolvable;
   /**
   * The Okta url. (Use 'oktapreview.com' for Okta testing)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs#base_url OktaProvider#base_url}
   */
   readonly baseUrl?: string;
   /**
   * API Token granting privileges to Okta API.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs#client_id OktaProvider#client_id}
   */
   readonly clientId?: string;
   /**
   * Alternate HTTP proxy of scheme://hostname or scheme://hostname:port format
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs#http_proxy OktaProvider#http_proxy}
   */
   readonly httpProxy?: string;
   /**
   * providers log level. Minimum is 1 (TRACE), and maximum is 5 (ERROR)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs#log_level OktaProvider#log_level}
   */
   readonly logLevel?: number;
   /**
   * (Experimental) sets what percentage of capacity the provider can use of the total rate limit capacity while making calls to the Okta management API endpoints. Okta API operates in one minute buckets. See Okta Management API Rate Limits: https://developer.okta.com/docs/reference/rl-global-mgmt/
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs#max_api_capacity OktaProvider#max_api_capacity}
   */
   readonly maxApiCapacity?: number;
   /**
   * maximum number of retries to attempt before erroring out.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs#max_retries OktaProvider#max_retries}
   */
   readonly maxRetries?: number;
   /**
   * maximum seconds to wait when rate limit is hit. We use exponential backoffs when backoff is enabled.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs#max_wait_seconds OktaProvider#max_wait_seconds}
   */
   readonly maxWaitSeconds?: number;
   /**
   * minimum seconds to wait when rate limit is hit. We use exponential backoffs when backoff is enabled.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs#min_wait_seconds OktaProvider#min_wait_seconds}
   */
   readonly minWaitSeconds?: number;
   /**
   * The organization to manage in Okta.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs#org_name OktaProvider#org_name}
   */
   readonly orgName?: string;
   /**
   * Number of concurrent requests to make within a resource where bulk operations are not possible. Take note of https://developer.okta.com/docs/api/getting_started/rate-limits.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs#parallelism OktaProvider#parallelism}
   */
   readonly parallelism?: number;
   /**
   * API Token granting privileges to Okta API.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs#private_key OktaProvider#private_key}
   */
   readonly privateKey?: string;
   /**
   * API Token Id granting privileges to Okta API.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs#private_key_id OktaProvider#private_key_id}
   */
   readonly privateKeyId?: string;
   /**
   * Timeout for single request (in seconds) which is made to Okta, the default is `0` (means no limit is set). The maximum value can be `300`.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs#request_timeout OktaProvider#request_timeout}
   */
   readonly requestTimeout?: number;
   /**
   * API Token granting privileges to Okta API.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs#scopes OktaProvider#scopes}
   */
   readonly scopes?: string[];
   /**
   * Alias name
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs#alias OktaProvider#alias}
   */
   readonly alias?: string;

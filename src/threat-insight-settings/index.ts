@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface ThreatInsightSettingsConfig extends cdktf.TerraformMetaArguments {
   /**
   * Specifies how Okta responds to authentication requests from suspicious IPs
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/threat_insight_settings#action ThreatInsightSettings#action}
   */
   readonly action: string;
@@ -27,7 +27,7 @@ export interface ThreatInsightSettingsConfig extends cdktf.TerraformMetaArgument
   readonly id?: string;
   /**
   * List of Network Zone IDs to exclude to be not logged or blocked by Okta ThreatInsight and proceed to Sign On rules evaluation
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/threat_insight_settings#network_excludes ThreatInsightSettings#network_excludes}
   */
   readonly networkExcludes?: string[];

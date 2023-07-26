@@ -14,13 +14,13 @@ import * as cdktf from 'cdktf';
 export interface GroupConfig extends cdktf.TerraformMetaArguments {
   /**
   * JSON formatted custom attributes for a group. It must be JSON due to various types Okta allows.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/group#custom_profile_attributes Group#custom_profile_attributes}
   */
   readonly customProfileAttributes?: string;
   /**
   * Group description
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/group#description Group#description}
   */
   readonly description?: string;
@@ -33,13 +33,13 @@ export interface GroupConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Group name
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/group#name Group#name}
   */
   readonly name: string;
   /**
   * Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/group#skip_users Group#skip_users}
   */
   readonly skipUsers?: boolean | cdktf.IResolvable;

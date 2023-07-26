@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface DataOktaAuthServerClaimConfig extends cdktf.TerraformMetaArguments {
   /**
   * Auth server ID
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/auth_server_claim#auth_server_id DataOktaAuthServerClaim#auth_server_id}
   */
   readonly authServerId: string;

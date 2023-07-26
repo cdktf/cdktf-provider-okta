@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface AdminRoleCustomConfig extends cdktf.TerraformMetaArguments {
   /**
   * A human-readable description of the new Role
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/admin_role_custom#description AdminRoleCustom#description}
   */
   readonly description: string;
@@ -27,13 +27,13 @@ export interface AdminRoleCustomConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * The name given to the new Role
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/admin_role_custom#label AdminRoleCustom#label}
   */
   readonly label: string;
   /**
   * The permissions that the new Role grants.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/admin_role_custom#permissions AdminRoleCustom#permissions}
   */
   readonly permissions?: string[];

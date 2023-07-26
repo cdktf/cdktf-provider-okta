@@ -21,7 +21,7 @@ export interface DataOktaBehaviorsConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Searches the name property of behaviors for matching value
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/behaviors#q DataOktaBehaviors#q}
   */
   readonly q?: string;

@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface AppSamlAppSettingsConfig extends cdktf.TerraformMetaArguments {
   /**
   * Application ID
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_saml_app_settings#app_id AppSamlAppSettings#app_id}
   */
   readonly appId: string;
@@ -27,7 +27,7 @@ export interface AppSamlAppSettingsConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Application settings in JSON format
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_saml_app_settings#settings AppSamlAppSettings#settings}
   */
   readonly settings: string;

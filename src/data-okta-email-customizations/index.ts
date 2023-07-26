@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface DataOktaEmailCustomizationsConfig extends cdktf.TerraformMetaArguments {
   /**
   * Brand ID
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/email_customizations#brand_id DataOktaEmailCustomizations#brand_id}
   */
   readonly brandId: string;
@@ -27,7 +27,7 @@ export interface DataOktaEmailCustomizationsConfig extends cdktf.TerraformMetaAr
   readonly id?: string;
   /**
   * Template Name
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/email_customizations#template_name DataOktaEmailCustomizations#template_name}
   */
   readonly templateName: string;

@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface DataOktaAppOauthConfig extends cdktf.TerraformMetaArguments {
   /**
   * Search only ACTIVE applications.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/app_oauth#active_only DataOktaAppOauth#active_only}
   */
   readonly activeOnly?: boolean | cdktf.IResolvable;
@@ -35,13 +35,13 @@ export interface DataOktaAppOauthConfig extends cdktf.TerraformMetaArguments {
   readonly labelPrefix?: string;
   /**
   * Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/app_oauth#skip_groups DataOktaAppOauth#skip_groups}
   */
   readonly skipGroups?: boolean | cdktf.IResolvable;
   /**
   * Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/app_oauth#skip_users DataOktaAppOauth#skip_users}
   */
   readonly skipUsers?: boolean | cdktf.IResolvable;

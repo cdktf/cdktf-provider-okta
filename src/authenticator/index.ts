@@ -21,73 +21,73 @@ export interface AuthenticatorConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * A human-readable string that identifies the Authenticator
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/authenticator#key Authenticator#key}
   */
   readonly key: string;
   /**
   * Display name of the Authenticator
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/authenticator#name Authenticator#name}
   */
   readonly name: string;
   /**
   * The RADIUS server port (for example 1812). This is defined when the On-Prem RADIUS server is configured
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/authenticator#provider_auth_port Authenticator#provider_auth_port}
   */
   readonly providerAuthPort?: number;
   /**
   * The Duo Security API hostname
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/authenticator#provider_host Authenticator#provider_host}
   */
   readonly providerHost?: string;
   /**
   * Server host name or IP address
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/authenticator#provider_hostname Authenticator#provider_hostname}
   */
   readonly providerHostname?: string;
   /**
   * The Duo Security integration key
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/authenticator#provider_integration_key Authenticator#provider_integration_key}
   */
   readonly providerIntegrationKey?: string;
   /**
   * Provider in JSON format
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/authenticator#provider_json Authenticator#provider_json}
   */
   readonly providerJson?: string;
   /**
   * The Duo Security secret key
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/authenticator#provider_secret_key Authenticator#provider_secret_key}
   */
   readonly providerSecretKey?: string;
   /**
   * An authentication key that must be defined when the RADIUS server is configured, and must be the same on both the RADIUS client and server.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/authenticator#provider_shared_secret Authenticator#provider_shared_secret}
   */
   readonly providerSharedSecret?: string;
   /**
   * Format expected by the provider
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/authenticator#provider_user_name_template Authenticator#provider_user_name_template}
   */
   readonly providerUserNameTemplate?: string;
   /**
   * Authenticator settings in JSON format
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/authenticator#settings Authenticator#settings}
   */
   readonly settings?: string;
   /**
   * Authenticator status: ACTIVE or INACTIVE
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/authenticator#status Authenticator#status}
   */
   readonly status?: string;

@@ -25,7 +25,7 @@ export interface AppOauthPostLogoutRedirectUriConfig extends cdktf.TerraformMeta
   readonly id?: string;
   /**
   * Post Logout Redirect URI to append to Okta OIDC application.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_oauth_post_logout_redirect_uri#uri AppOauthPostLogoutRedirectUri#uri}
   */
   readonly uri: string;

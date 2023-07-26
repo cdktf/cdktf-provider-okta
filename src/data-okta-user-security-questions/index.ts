@@ -21,7 +21,7 @@ export interface DataOktaUserSecurityQuestionsConfig extends cdktf.TerraformMeta
   readonly id?: string;
   /**
   * ID of a Okta User
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/user_security_questions#user_id DataOktaUserSecurityQuestions#user_id}
   */
   readonly userId: string;

@@ -14,67 +14,67 @@ import * as cdktf from 'cdktf';
 export interface AppSwaConfig extends cdktf.TerraformMetaArguments {
   /**
   * Custom error page URL
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_swa#accessibility_error_redirect_url AppSwa#accessibility_error_redirect_url}
   */
   readonly accessibilityErrorRedirectUrl?: string;
   /**
   * Custom login page URL
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_swa#accessibility_login_redirect_url AppSwa#accessibility_login_redirect_url}
   */
   readonly accessibilityLoginRedirectUrl?: string;
   /**
   * Enable self service
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_swa#accessibility_self_service AppSwa#accessibility_self_service}
   */
   readonly accessibilitySelfService?: boolean | cdktf.IResolvable;
   /**
   * Application notes for admins.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_swa#admin_note AppSwa#admin_note}
   */
   readonly adminNote?: string;
   /**
   * Displays specific appLinks for the app
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_swa#app_links_json AppSwa#app_links_json}
   */
   readonly appLinksJson?: string;
   /**
   * Display auto submit toolbar
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_swa#auto_submit_toolbar AppSwa#auto_submit_toolbar}
   */
   readonly autoSubmitToolbar?: boolean | cdktf.IResolvable;
   /**
   * Login button field
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_swa#button_field AppSwa#button_field}
   */
   readonly buttonField?: string;
   /**
   * CSS selector for the checkbox
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_swa#checkbox AppSwa#checkbox}
   */
   readonly checkbox?: string;
   /**
   * Application notes for end users.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_swa#enduser_note AppSwa#enduser_note}
   */
   readonly enduserNote?: string;
   /**
   * Do not display application icon on mobile app
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_swa#hide_ios AppSwa#hide_ios}
   */
   readonly hideIos?: boolean | cdktf.IResolvable;
   /**
   * Do not display application icon to users
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_swa#hide_web AppSwa#hide_web}
   */
   readonly hideWeb?: boolean | cdktf.IResolvable;
@@ -87,85 +87,85 @@ export interface AppSwaConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Pretty name of app.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_swa#label AppSwa#label}
   */
   readonly label: string;
   /**
   * Local path to logo of the application.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_swa#logo AppSwa#logo}
   */
   readonly logo?: string;
   /**
   * Login password field
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_swa#password_field AppSwa#password_field}
   */
   readonly passwordField?: string;
   /**
   * Preconfigured app name
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_swa#preconfigured_app AppSwa#preconfigured_app}
   */
   readonly preconfiguredApp?: string;
   /**
   * If going to the login page URL redirects to another page, then enter that URL here
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_swa#redirect_url AppSwa#redirect_url}
   */
   readonly redirectUrl?: string;
   /**
   * Status of application.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_swa#status AppSwa#status}
   */
   readonly status?: string;
   /**
   * Login URL
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_swa#url AppSwa#url}
   */
   readonly url?: string;
   /**
   * A regex that further restricts URL to the specified regex
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_swa#url_regex AppSwa#url_regex}
   */
   readonly urlRegex?: string;
   /**
   * Username template
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_swa#user_name_template AppSwa#user_name_template}
   */
   readonly userNameTemplate?: string;
   /**
   * Push username on update
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_swa#user_name_template_push_status AppSwa#user_name_template_push_status}
   */
   readonly userNameTemplatePushStatus?: string;
   /**
   * Username template suffix
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_swa#user_name_template_suffix AppSwa#user_name_template_suffix}
   */
   readonly userNameTemplateSuffix?: string;
   /**
   * Username template type
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_swa#user_name_template_type AppSwa#user_name_template_type}
   */
   readonly userNameTemplateType?: string;
   /**
   * Login username field
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_swa#username_field AppSwa#username_field}
   */
   readonly usernameField?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_swa#timeouts AppSwa#timeouts}
   */
   readonly timeouts?: AppSwaTimeouts;

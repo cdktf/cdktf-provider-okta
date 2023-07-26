@@ -21,7 +21,7 @@ export interface DataOktaEveryoneGroupConfig extends cdktf.TerraformMetaArgument
   readonly id?: string;
   /**
   * Fetch group users, having default off cuts down on API calls.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/everyone_group#include_users DataOktaEveryoneGroup#include_users}
   */
   readonly includeUsers?: boolean | cdktf.IResolvable;

@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface DomainVerificationConfig extends cdktf.TerraformMetaArguments {
   /**
   * Domain's ID
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/domain_verification#domain_id DomainVerification#domain_id}
   */
   readonly domainId: string;

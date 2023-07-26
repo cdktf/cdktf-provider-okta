@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface DataOktaAppUserAssignmentsConfig extends cdktf.TerraformMetaArguments {
   /**
   * ID of the Okta App being queried for groups
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/app_user_assignments#id DataOktaAppUserAssignments#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.

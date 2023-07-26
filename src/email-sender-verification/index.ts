@@ -21,7 +21,7 @@ export interface EmailSenderVerificationConfig extends cdktf.TerraformMetaArgume
   readonly id?: string;
   /**
   * Email sender ID
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/email_sender_verification#sender_id EmailSenderVerification#sender_id}
   */
   readonly senderId: string;

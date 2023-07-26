@@ -37,7 +37,7 @@ export interface GroupRuleConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   /**
   * Remove users added by this rule from the assigned group after deleting this resource
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/group_rule#remove_assigned_users GroupRule#remove_assigned_users}
   */
   readonly removeAssignedUsers?: boolean | cdktf.IResolvable;
@@ -47,7 +47,7 @@ export interface GroupRuleConfig extends cdktf.TerraformMetaArguments {
   readonly status?: string;
   /**
   * The list of user IDs that would be excluded when rules are processed
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/group_rule#users_excluded GroupRule#users_excluded}
   */
   readonly usersExcluded?: string[];

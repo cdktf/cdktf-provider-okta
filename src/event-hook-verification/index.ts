@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface EventHookVerificationConfig extends cdktf.TerraformMetaArguments {
   /**
   * Event hook ID
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/event_hook_verification#event_hook_id EventHookVerification#event_hook_id}
   */
   readonly eventHookId: string;

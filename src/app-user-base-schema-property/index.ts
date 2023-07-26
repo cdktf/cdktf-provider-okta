@@ -25,49 +25,49 @@ export interface AppUserBaseSchemaPropertyConfig extends cdktf.TerraformMetaArgu
   readonly id?: string;
   /**
   * Subschema unique string identifier
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_user_base_schema_property#index AppUserBaseSchemaProperty#index}
   */
   readonly index: string;
   /**
   * SubSchema profile manager, if not set it will inherit its setting.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_user_base_schema_property#master AppUserBaseSchemaProperty#master}
   */
   readonly master?: string;
   /**
   * The validation pattern to use for the subschema. Must be in form of '.+', or '[<pattern>]+' if present.'
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_user_base_schema_property#pattern AppUserBaseSchemaProperty#pattern}
   */
   readonly pattern?: string;
   /**
   * SubSchema permissions: HIDE, READ_ONLY, or READ_WRITE.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_user_base_schema_property#permissions AppUserBaseSchemaProperty#permissions}
   */
   readonly permissions?: string;
   /**
   * Whether the subschema is required
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_user_base_schema_property#required AppUserBaseSchemaProperty#required}
   */
   readonly required?: boolean | cdktf.IResolvable;
   /**
   * Subschema title (display name)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_user_base_schema_property#title AppUserBaseSchemaProperty#title}
   */
   readonly title: string;
   /**
   * Subschema type: string, boolean, number, integer, array, or object
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_user_base_schema_property#type AppUserBaseSchemaProperty#type}
   */
   readonly type: string;
   /**
   * Custom subschema user type
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_user_base_schema_property#user_type AppUserBaseSchemaProperty#user_type}
   */
   readonly userType?: string;

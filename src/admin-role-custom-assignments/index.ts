@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface AdminRoleCustomAssignmentsConfig extends cdktf.TerraformMetaArguments {
   /**
   * ID of the Custom Role
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/admin_role_custom_assignments#custom_role_id AdminRoleCustomAssignments#custom_role_id}
   */
   readonly customRoleId: string;
@@ -27,13 +27,13 @@ export interface AdminRoleCustomAssignmentsConfig extends cdktf.TerraformMetaArg
   readonly id?: string;
   /**
   * The hrefs that point to User(s) and/or Group(s) that receive the Role
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/admin_role_custom_assignments#members AdminRoleCustomAssignments#members}
   */
   readonly members?: string[];
   /**
   * ID of the target Resource Set
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/admin_role_custom_assignments#resource_set_id AdminRoleCustomAssignments#resource_set_id}
   */
   readonly resourceSetId: string;

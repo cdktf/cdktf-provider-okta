@@ -14,103 +14,103 @@ import * as cdktf from 'cdktf';
 export interface AppOauthConfig extends cdktf.TerraformMetaArguments {
   /**
   * Custom error page URL
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_oauth#accessibility_error_redirect_url AppOauth#accessibility_error_redirect_url}
   */
   readonly accessibilityErrorRedirectUrl?: string;
   /**
   * Custom login page URL
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_oauth#accessibility_login_redirect_url AppOauth#accessibility_login_redirect_url}
   */
   readonly accessibilityLoginRedirectUrl?: string;
   /**
   * Enable self service
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_oauth#accessibility_self_service AppOauth#accessibility_self_service}
   */
   readonly accessibilitySelfService?: boolean | cdktf.IResolvable;
   /**
   * Application notes for admins.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_oauth#admin_note AppOauth#admin_note}
   */
   readonly adminNote?: string;
   /**
   * Displays specific appLinks for the app
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_oauth#app_links_json AppOauth#app_links_json}
   */
   readonly appLinksJson?: string;
   /**
   * Application settings in JSON format
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_oauth#app_settings_json AppOauth#app_settings_json}
   */
   readonly appSettingsJson?: string;
   /**
   * Id of this apps authentication policy
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_oauth#authentication_policy AppOauth#authentication_policy}
   */
   readonly authenticationPolicy?: string;
   /**
   * Requested key rotation mode.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_oauth#auto_key_rotation AppOauth#auto_key_rotation}
   */
   readonly autoKeyRotation?: boolean | cdktf.IResolvable;
   /**
   * Display auto submit toolbar
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_oauth#auto_submit_toolbar AppOauth#auto_submit_toolbar}
   */
   readonly autoSubmitToolbar?: boolean | cdktf.IResolvable;
   /**
   * OAuth client secret key, this can be set when token_endpoint_auth_method is client_secret_basic.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_oauth#client_basic_secret AppOauth#client_basic_secret}
   */
   readonly clientBasicSecret?: string;
   /**
   * OAuth client ID. If set during creation, app is created with this id.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_oauth#client_id AppOauth#client_id}
   */
   readonly clientId?: string;
   /**
   * URI to a web page providing information about the client.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_oauth#client_uri AppOauth#client_uri}
   */
   readonly clientUri?: string;
   /**
   * *Early Access Property*. Indicates whether user consent is required or implicit. Valid values: REQUIRED, TRUSTED. Default value is TRUSTED
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_oauth#consent_method AppOauth#consent_method}
   */
   readonly consentMethod?: string;
   /**
   * Application notes for end users.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_oauth#enduser_note AppOauth#enduser_note}
   */
   readonly enduserNote?: string;
   /**
   * List of OAuth 2.0 grant types. Conditional validation params found here https://developer.okta.com/docs/api/resources/apps#credentials-settings-details. Defaults to minimum requirements per app type.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_oauth#grant_types AppOauth#grant_types}
   */
   readonly grantTypes?: string[];
   /**
   * Do not display application icon on mobile app
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_oauth#hide_ios AppOauth#hide_ios}
   */
   readonly hideIos?: boolean | cdktf.IResolvable;
   /**
   * Do not display application icon to users
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_oauth#hide_web AppOauth#hide_web}
   */
   readonly hideWeb?: boolean | cdktf.IResolvable;
@@ -123,181 +123,181 @@ export interface AppOauthConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * *Early Access Property*. Enable Federation Broker Mode.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_oauth#implicit_assignment AppOauth#implicit_assignment}
   */
   readonly implicitAssignment?: boolean | cdktf.IResolvable;
   /**
   * *Early Access Property*. Indicates whether the Okta Authorization Server uses the original Okta org domain URL or a custom domain URL as the issuer of ID token for this client.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_oauth#issuer_mode AppOauth#issuer_mode}
   */
   readonly issuerMode?: string;
   /**
   * URL reference to JWKS
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_oauth#jwks_uri AppOauth#jwks_uri}
   */
   readonly jwksUri?: string;
   /**
   * Pretty name of app.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_oauth#label AppOauth#label}
   */
   readonly label: string;
   /**
   * The type of Idp-Initiated login that the client supports, if any
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_oauth#login_mode AppOauth#login_mode}
   */
   readonly loginMode?: string;
   /**
   * List of scopes to use for the request
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_oauth#login_scopes AppOauth#login_scopes}
   */
   readonly loginScopes?: string[];
   /**
   * URI that initiates login.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_oauth#login_uri AppOauth#login_uri}
   */
   readonly loginUri?: string;
   /**
   * Local path to logo of the application.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_oauth#logo AppOauth#logo}
   */
   readonly logo?: string;
   /**
   * URI that references a logo for the client.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_oauth#logo_uri AppOauth#logo_uri}
   */
   readonly logoUri?: string;
   /**
   * This tells the provider not to persist the application's secret to state. If this is ever changes from true => false your app will be recreated.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_oauth#omit_secret AppOauth#omit_secret}
   */
   readonly omitSecret?: boolean | cdktf.IResolvable;
   /**
   * Require Proof Key for Code Exchange (PKCE) for additional verification key rotation mode. See: https://developer.okta.com/docs/reference/api/apps/#oauth-credential-object
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_oauth#pkce_required AppOauth#pkce_required}
   */
   readonly pkceRequired?: boolean | cdktf.IResolvable;
   /**
   * URI to web page providing client policy document.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_oauth#policy_uri AppOauth#policy_uri}
   */
   readonly policyUri?: string;
   /**
   * List of URIs for redirection after logout. Note: see okta_app_oauth_post_logout_redirect_uri for appending to this list in a decentralized way.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_oauth#post_logout_redirect_uris AppOauth#post_logout_redirect_uris}
   */
   readonly postLogoutRedirectUris?: string[];
   /**
   * Custom JSON that represents an OAuth application's profile
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_oauth#profile AppOauth#profile}
   */
   readonly profile?: string;
   /**
   * List of URIs for use in the redirect-based flow. This is required for all application types except service. Note: see okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_oauth#redirect_uris AppOauth#redirect_uris}
   */
   readonly redirectUris?: string[];
   /**
   * *Early Access Property* Grace period for token rotation
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_oauth#refresh_token_leeway AppOauth#refresh_token_leeway}
   */
   readonly refreshTokenLeeway?: number;
   /**
   * *Early Access Property* Refresh token rotation behavior
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_oauth#refresh_token_rotation AppOauth#refresh_token_rotation}
   */
   readonly refreshTokenRotation?: string;
   /**
   * List of OAuth 2.0 response type strings.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_oauth#response_types AppOauth#response_types}
   */
   readonly responseTypes?: string[];
   /**
   * Status of application.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_oauth#status AppOauth#status}
   */
   readonly status?: string;
   /**
   * Requested authentication method for the token endpoint.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_oauth#token_endpoint_auth_method AppOauth#token_endpoint_auth_method}
   */
   readonly tokenEndpointAuthMethod?: string;
   /**
   * URI to web page providing client tos (terms of service).
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_oauth#tos_uri AppOauth#tos_uri}
   */
   readonly tosUri?: string;
   /**
   * The type of client application.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_oauth#type AppOauth#type}
   */
   readonly type: string;
   /**
   * Username template
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_oauth#user_name_template AppOauth#user_name_template}
   */
   readonly userNameTemplate?: string;
   /**
   * Push username on update
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_oauth#user_name_template_push_status AppOauth#user_name_template_push_status}
   */
   readonly userNameTemplatePushStatus?: string;
   /**
   * Username template suffix
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_oauth#user_name_template_suffix AppOauth#user_name_template_suffix}
   */
   readonly userNameTemplateSuffix?: string;
   /**
   * Username template type
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_oauth#user_name_template_type AppOauth#user_name_template_type}
   */
   readonly userNameTemplateType?: string;
   /**
   * *Early Access Property*. Indicates if the client is allowed to use wildcard matching of redirect_uris
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_oauth#wildcard_redirect AppOauth#wildcard_redirect}
   */
   readonly wildcardRedirect?: string;
   /**
   * groups_claim block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_oauth#groups_claim AppOauth#groups_claim}
   */
   readonly groupsClaim?: AppOauthGroupsClaim;
   /**
   * jwks block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_oauth#jwks AppOauth#jwks}
   */
   readonly jwks?: AppOauthJwks[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_oauth#timeouts AppOauth#timeouts}
   */
   readonly timeouts?: AppOauthTimeouts;
@@ -305,25 +305,25 @@ export interface AppOauthConfig extends cdktf.TerraformMetaArguments {
 export interface AppOauthGroupsClaim {
   /**
   * Groups claim filter. Can only be set if type is FILTER.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_oauth#filter_type AppOauth#filter_type}
   */
   readonly filterType?: string;
   /**
   * Name of the claim that will be used in the token.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_oauth#name AppOauth#name}
   */
   readonly name: string;
   /**
   * Groups claim type.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_oauth#type AppOauth#type}
   */
   readonly type: string;
   /**
   * Value of the claim. Can be an Okta Expression Language statement that evaluates at the time the token is minted.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_oauth#value AppOauth#value}
   */
   readonly value: string;
@@ -455,25 +455,25 @@ export class AppOauthGroupsClaimOutputReference extends cdktf.ComplexObject {
 export interface AppOauthJwks {
   /**
   * RSA Exponent
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_oauth#e AppOauth#e}
   */
   readonly e?: string;
   /**
   * Key ID
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_oauth#kid AppOauth#kid}
   */
   readonly kid: string;
   /**
   * Key type
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_oauth#kty AppOauth#kty}
   */
   readonly kty: string;
   /**
   * RSA Modulus
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_oauth#n AppOauth#n}
   */
   readonly n?: string;

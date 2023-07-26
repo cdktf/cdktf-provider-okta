@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface GroupMembershipsConfig extends cdktf.TerraformMetaArguments {
   /**
   * ID of a Okta group.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/group_memberships#group_id GroupMemberships#group_id}
   */
   readonly groupId: string;
@@ -27,13 +27,13 @@ export interface GroupMembershipsConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * The resource concerns itself with all users added/deleted to the group; even those managed outside of the resource.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/group_memberships#track_all_users GroupMemberships#track_all_users}
   */
   readonly trackAllUsers?: boolean | cdktf.IResolvable;
   /**
   * The list of Okta user IDs which the group should have membership managed for.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/group_memberships#users GroupMemberships#users}
   */
   readonly users: string[];

@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface DataOktaAppSamlConfig extends cdktf.TerraformMetaArguments {
   /**
   * Search only ACTIVE applications.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/app_saml#active_only DataOktaAppSaml#active_only}
   */
   readonly activeOnly?: boolean | cdktf.IResolvable;
@@ -35,19 +35,19 @@ export interface DataOktaAppSamlConfig extends cdktf.TerraformMetaArguments {
   readonly labelPrefix?: string;
   /**
   * Denotes whether the request is compressed or not.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/app_saml#request_compressed DataOktaAppSaml#request_compressed}
   */
   readonly requestCompressed?: boolean | cdktf.IResolvable;
   /**
   * Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/app_saml#skip_groups DataOktaAppSaml#skip_groups}
   */
   readonly skipGroups?: boolean | cdktf.IResolvable;
   /**
   * Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/app_saml#skip_users DataOktaAppSaml#skip_users}
   */
   readonly skipUsers?: boolean | cdktf.IResolvable;

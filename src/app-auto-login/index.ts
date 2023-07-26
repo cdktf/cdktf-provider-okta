@@ -14,67 +14,67 @@ import * as cdktf from 'cdktf';
 export interface AppAutoLoginConfig extends cdktf.TerraformMetaArguments {
   /**
   * Custom error page URL
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_auto_login#accessibility_error_redirect_url AppAutoLogin#accessibility_error_redirect_url}
   */
   readonly accessibilityErrorRedirectUrl?: string;
   /**
   * Custom login page URL
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_auto_login#accessibility_login_redirect_url AppAutoLogin#accessibility_login_redirect_url}
   */
   readonly accessibilityLoginRedirectUrl?: string;
   /**
   * Enable self service
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_auto_login#accessibility_self_service AppAutoLogin#accessibility_self_service}
   */
   readonly accessibilitySelfService?: boolean | cdktf.IResolvable;
   /**
   * Application notes for admins.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_auto_login#admin_note AppAutoLogin#admin_note}
   */
   readonly adminNote?: string;
   /**
   * Displays specific appLinks for the app
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_auto_login#app_links_json AppAutoLogin#app_links_json}
   */
   readonly appLinksJson?: string;
   /**
   * Application settings in JSON format
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_auto_login#app_settings_json AppAutoLogin#app_settings_json}
   */
   readonly appSettingsJson?: string;
   /**
   * Display auto submit toolbar
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_auto_login#auto_submit_toolbar AppAutoLogin#auto_submit_toolbar}
   */
   readonly autoSubmitToolbar?: boolean | cdktf.IResolvable;
   /**
   * Application credentials scheme
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_auto_login#credentials_scheme AppAutoLogin#credentials_scheme}
   */
   readonly credentialsScheme?: string;
   /**
   * Application notes for end users.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_auto_login#enduser_note AppAutoLogin#enduser_note}
   */
   readonly enduserNote?: string;
   /**
   * Do not display application icon on mobile app
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_auto_login#hide_ios AppAutoLogin#hide_ios}
   */
   readonly hideIos?: boolean | cdktf.IResolvable;
   /**
   * Do not display application icon to users
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_auto_login#hide_web AppAutoLogin#hide_web}
   */
   readonly hideWeb?: boolean | cdktf.IResolvable;
@@ -87,85 +87,85 @@ export interface AppAutoLoginConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Pretty name of app.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_auto_login#label AppAutoLogin#label}
   */
   readonly label: string;
   /**
   * Local path to logo of the application.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_auto_login#logo AppAutoLogin#logo}
   */
   readonly logo?: string;
   /**
   * Preconfigured app name
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_auto_login#preconfigured_app AppAutoLogin#preconfigured_app}
   */
   readonly preconfiguredApp?: string;
   /**
   * Allow user to reveal password
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_auto_login#reveal_password AppAutoLogin#reveal_password}
   */
   readonly revealPassword?: boolean | cdktf.IResolvable;
   /**
   * Shared password, required for certain schemes.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_auto_login#shared_password AppAutoLogin#shared_password}
   */
   readonly sharedPassword?: string;
   /**
   * Shared username, required for certain schemes.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_auto_login#shared_username AppAutoLogin#shared_username}
   */
   readonly sharedUsername?: string;
   /**
   * Post login redirect URL
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_auto_login#sign_on_redirect_url AppAutoLogin#sign_on_redirect_url}
   */
   readonly signOnRedirectUrl?: string;
   /**
   * Login URL
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_auto_login#sign_on_url AppAutoLogin#sign_on_url}
   */
   readonly signOnUrl?: string;
   /**
   * Status of application.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_auto_login#status AppAutoLogin#status}
   */
   readonly status?: string;
   /**
   * Username template
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_auto_login#user_name_template AppAutoLogin#user_name_template}
   */
   readonly userNameTemplate?: string;
   /**
   * Push username on update
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_auto_login#user_name_template_push_status AppAutoLogin#user_name_template_push_status}
   */
   readonly userNameTemplatePushStatus?: string;
   /**
   * Username template suffix
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_auto_login#user_name_template_suffix AppAutoLogin#user_name_template_suffix}
   */
   readonly userNameTemplateSuffix?: string;
   /**
   * Username template type
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_auto_login#user_name_template_type AppAutoLogin#user_name_template_type}
   */
   readonly userNameTemplateType?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_auto_login#timeouts AppAutoLogin#timeouts}
   */
   readonly timeouts?: AppAutoLoginTimeouts;

@@ -14,13 +14,13 @@ import * as cdktf from 'cdktf';
 export interface AppGroupAssignmentConfig extends cdktf.TerraformMetaArguments {
   /**
   * App to associate group with
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_group_assignment#app_id AppGroupAssignment#app_id}
   */
   readonly appId: string;
   /**
   * Group associated with the application
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_group_assignment#group_id AppGroupAssignment#group_id}
   */
   readonly groupId: string;
@@ -41,13 +41,13 @@ export interface AppGroupAssignmentConfig extends cdktf.TerraformMetaArguments {
   readonly profile?: string;
   /**
   * Retain the group assignment on destroy. If set to true, the resource will be removed from state but not from the Okta app.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_group_assignment#retain_assignment AppGroupAssignment#retain_assignment}
   */
   readonly retainAssignment?: boolean | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_group_assignment#timeouts AppGroupAssignment#timeouts}
   */
   readonly timeouts?: AppGroupAssignmentTimeouts;

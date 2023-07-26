@@ -25,7 +25,7 @@ export interface AppOauthRedirectUriConfig extends cdktf.TerraformMetaArguments 
   readonly id?: string;
   /**
   * Redirect URI to append to Okta OIDC application.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_oauth_redirect_uri#uri AppOauthRedirectUri#uri}
   */
   readonly uri: string;

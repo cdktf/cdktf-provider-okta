@@ -14,13 +14,13 @@ import * as cdktf from 'cdktf';
 export interface PolicyRuleProfileEnrollmentConfig extends cdktf.TerraformMetaArguments {
   /**
   * Allow or deny access based on the rule conditions: ALLOW or DENY
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/policy_rule_profile_enrollment#access PolicyRuleProfileEnrollment#access}
   */
   readonly access?: string;
   /**
   * Indicates whether email verification should occur before access is granted
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/policy_rule_profile_enrollment#email_verification PolicyRuleProfileEnrollment#email_verification}
   */
   readonly emailVerification?: boolean | cdktf.IResolvable;
@@ -33,37 +33,37 @@ export interface PolicyRuleProfileEnrollmentConfig extends cdktf.TerraformMetaAr
   readonly id?: string;
   /**
   * ID of a Registration Inline Hook
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/policy_rule_profile_enrollment#inline_hook_id PolicyRuleProfileEnrollment#inline_hook_id}
   */
   readonly inlineHookId?: string;
   /**
   * ID of the policy
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/policy_rule_profile_enrollment#policy_id PolicyRuleProfileEnrollment#policy_id}
   */
   readonly policyId: string;
   /**
   * The ID of a Group that this User should be added to
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/policy_rule_profile_enrollment#target_group_id PolicyRuleProfileEnrollment#target_group_id}
   */
   readonly targetGroupId?: string;
   /**
   * Value created by the backend. If present all policy updates must include this attribute/value.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/policy_rule_profile_enrollment#ui_schema_id PolicyRuleProfileEnrollment#ui_schema_id}
   */
   readonly uiSchemaId?: string;
   /**
   * Which action should be taken if this User is new
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/policy_rule_profile_enrollment#unknown_user_action PolicyRuleProfileEnrollment#unknown_user_action}
   */
   readonly unknownUserAction: string;
   /**
   * profile_attributes block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/policy_rule_profile_enrollment#profile_attributes PolicyRuleProfileEnrollment#profile_attributes}
   */
   readonly profileAttributes?: PolicyRuleProfileEnrollmentProfileAttributes[] | cdktf.IResolvable;
@@ -71,19 +71,19 @@ export interface PolicyRuleProfileEnrollmentConfig extends cdktf.TerraformMetaAr
 export interface PolicyRuleProfileEnrollmentProfileAttributes {
   /**
   * A display-friendly label for this property
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/policy_rule_profile_enrollment#label PolicyRuleProfileEnrollment#label}
   */
   readonly label: string;
   /**
   * The name of a User Profile property
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/policy_rule_profile_enrollment#name PolicyRuleProfileEnrollment#name}
   */
   readonly name: string;
   /**
   * Indicates if this property is required for enrollment
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/policy_rule_profile_enrollment#required PolicyRuleProfileEnrollment#required}
   */
   readonly required?: boolean | cdktf.IResolvable;

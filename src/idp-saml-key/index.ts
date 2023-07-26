@@ -21,7 +21,7 @@ export interface IdpSamlKeyConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * base64-encoded X.509 certificate chain with DER encoding
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/idp_saml_key#x5c IdpSamlKey#x5c}
   */
   readonly x5C: string[];

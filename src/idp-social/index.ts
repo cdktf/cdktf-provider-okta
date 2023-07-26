@@ -22,19 +22,19 @@ export interface IdpSocialConfig extends cdktf.TerraformMetaArguments {
   readonly accountLinkGroupInclude?: string[];
   /**
   * The Key ID that you obtained from Apple when you created the private key for the client
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/idp_social#apple_kid IdpSocial#apple_kid}
   */
   readonly appleKid?: string;
   /**
   * The PKCS #8 encoded private key that you created for the client and downloaded from Apple
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/idp_social#apple_private_key IdpSocial#apple_private_key}
   */
   readonly applePrivateKey?: string;
   /**
   * The Team ID associated with your Apple developer account
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/idp_social#apple_team_id IdpSocial#apple_team_id}
   */
   readonly appleTeamId?: string;
@@ -75,7 +75,7 @@ export interface IdpSocialConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Indicates whether Okta uses the original Okta org domain URL, or a custom domain URL
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/idp_social#issuer_mode IdpSocial#issuer_mode}
   */
   readonly issuerMode?: string;
@@ -85,7 +85,7 @@ export interface IdpSocialConfig extends cdktf.TerraformMetaArguments {
   readonly maxClockSkew?: number;
   /**
   * Name of the IdP
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/idp_social#name IdpSocial#name}
   */
   readonly name: string;
@@ -123,7 +123,7 @@ export interface IdpSocialConfig extends cdktf.TerraformMetaArguments {
   readonly suspendedAction?: string;
   /**
   * Identity Provider Types: https://developer.okta.com/docs/reference/api/idps/#identity-provider-type
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/idp_social#type IdpSocial#type}
   */
   readonly type: string;

@@ -21,43 +21,43 @@ export interface BehaviorConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Determines the method and level of detail used to evaluate the behavior.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/behavior#location_granularity_type Behavior#location_granularity_type}
   */
   readonly locationGranularityType?: string;
   /**
   * Name of the behavior
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/behavior#name Behavior#name}
   */
   readonly name: string;
   /**
   * The number of recent authentications used to evaluate the behavior.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/behavior#number_of_authentications Behavior#number_of_authentications}
   */
   readonly numberOfAuthentications?: number;
   /**
   * Radius from location (in kilometers)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/behavior#radius_from_location Behavior#radius_from_location}
   */
   readonly radiusFromLocation?: number;
   /**
   * Behavior status: ACTIVE or INACTIVE.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/behavior#status Behavior#status}
   */
   readonly status?: string;
   /**
   * Behavior type
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/behavior#type Behavior#type}
   */
   readonly type: string;
   /**
   * Velocity (in kilometers per hour).
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/behavior#velocity Behavior#velocity}
   */
   readonly velocity?: number;

@@ -14,61 +14,61 @@ import * as cdktf from 'cdktf';
 export interface AppBookmarkConfig extends cdktf.TerraformMetaArguments {
   /**
   * Custom error page URL
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_bookmark#accessibility_error_redirect_url AppBookmark#accessibility_error_redirect_url}
   */
   readonly accessibilityErrorRedirectUrl?: string;
   /**
   * Custom login page URL
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_bookmark#accessibility_login_redirect_url AppBookmark#accessibility_login_redirect_url}
   */
   readonly accessibilityLoginRedirectUrl?: string;
   /**
   * Enable self service
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_bookmark#accessibility_self_service AppBookmark#accessibility_self_service}
   */
   readonly accessibilitySelfService?: boolean | cdktf.IResolvable;
   /**
   * Application notes for admins.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_bookmark#admin_note AppBookmark#admin_note}
   */
   readonly adminNote?: string;
   /**
   * Displays specific appLinks for the app
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_bookmark#app_links_json AppBookmark#app_links_json}
   */
   readonly appLinksJson?: string;
   /**
   * Id of this apps authentication policy
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_bookmark#authentication_policy AppBookmark#authentication_policy}
   */
   readonly authenticationPolicy?: string;
   /**
   * Display auto submit toolbar
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_bookmark#auto_submit_toolbar AppBookmark#auto_submit_toolbar}
   */
   readonly autoSubmitToolbar?: boolean | cdktf.IResolvable;
   /**
   * Application notes for end users.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_bookmark#enduser_note AppBookmark#enduser_note}
   */
   readonly enduserNote?: string;
   /**
   * Do not display application icon on mobile app
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_bookmark#hide_ios AppBookmark#hide_ios}
   */
   readonly hideIos?: boolean | cdktf.IResolvable;
   /**
   * Do not display application icon to users
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_bookmark#hide_web AppBookmark#hide_web}
   */
   readonly hideWeb?: boolean | cdktf.IResolvable;
@@ -81,13 +81,13 @@ export interface AppBookmarkConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Pretty name of app.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_bookmark#label AppBookmark#label}
   */
   readonly label: string;
   /**
   * Local path to logo of the application.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_bookmark#logo AppBookmark#logo}
   */
   readonly logo?: string;
@@ -97,7 +97,7 @@ export interface AppBookmarkConfig extends cdktf.TerraformMetaArguments {
   readonly requestIntegration?: boolean | cdktf.IResolvable;
   /**
   * Status of application.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_bookmark#status AppBookmark#status}
   */
   readonly status?: string;
@@ -107,7 +107,7 @@ export interface AppBookmarkConfig extends cdktf.TerraformMetaArguments {
   readonly url: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_bookmark#timeouts AppBookmark#timeouts}
   */
   readonly timeouts?: AppBookmarkTimeouts;

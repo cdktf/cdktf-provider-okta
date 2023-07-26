@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface EmailDomainVerificationConfig extends cdktf.TerraformMetaArguments {
   /**
   * Email domain ID
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/email_domain_verification#email_domain_id EmailDomainVerification#email_domain_id}
   */
   readonly emailDomainId: string;

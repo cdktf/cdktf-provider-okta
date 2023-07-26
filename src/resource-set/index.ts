@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface ResourceSetConfig extends cdktf.TerraformMetaArguments {
   /**
   * A description of the Resource Set
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/resource_set#description ResourceSet#description}
   */
   readonly description: string;
@@ -27,13 +27,13 @@ export interface ResourceSetConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Unique name given to the Resource Set
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/resource_set#label ResourceSet#label}
   */
   readonly label: string;
   /**
   * The endpoints that reference the resources to be included in the new Resource Set
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/resource_set#resources ResourceSet#resources}
   */
   readonly resources?: string[];

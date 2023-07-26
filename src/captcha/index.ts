@@ -21,25 +21,25 @@ export interface CaptchaConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Name of the CAPTCHA
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/captcha#name Captcha#name}
   */
   readonly name: string;
   /**
   * Secret key issued from the CAPTCHA vendor to perform server-side validation for a CAPTCHA token
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/captcha#secret_key Captcha#secret_key}
   */
   readonly secretKey: string;
   /**
   * Site key issued from the CAPTCHA vendor to render a CAPTCHA on a page
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/captcha#site_key Captcha#site_key}
   */
   readonly siteKey: string;
   /**
   * Captcha type
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/captcha#type Captcha#type}
   */
   readonly type: string;

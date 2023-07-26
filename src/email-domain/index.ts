@@ -14,19 +14,19 @@ import * as cdktf from 'cdktf';
 export interface EmailDomainConfig extends cdktf.TerraformMetaArguments {
   /**
   * Brand id
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/email_domain#brand_id EmailDomain#brand_id}
   */
   readonly brandId: string;
   /**
   * Display name
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/email_domain#display_name EmailDomain#display_name}
   */
   readonly displayName: string;
   /**
   * Domain name
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/email_domain#domain EmailDomain#domain}
   */
   readonly domain: string;
@@ -39,7 +39,7 @@ export interface EmailDomainConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * User name
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/email_domain#user_name EmailDomain#user_name}
   */
   readonly userName: string;

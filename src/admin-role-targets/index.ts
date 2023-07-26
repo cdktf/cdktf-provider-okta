@@ -14,13 +14,13 @@ import * as cdktf from 'cdktf';
 export interface AdminRoleTargetsConfig extends cdktf.TerraformMetaArguments {
   /**
   * List of app names (name represents set of app instances) or a combination of app name and app instance ID (like 'salesforce' or 'facebook.0oapsqQ6dv19pqyEo0g3')
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/admin_role_targets#apps AdminRoleTargets#apps}
   */
   readonly apps?: string[];
   /**
   * List of group IDs
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/admin_role_targets#groups AdminRoleTargets#groups}
   */
   readonly groups?: string[];
@@ -33,13 +33,13 @@ export interface AdminRoleTargetsConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Type of the role that is assigned to the user and supports optional targets
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/admin_role_targets#role_type AdminRoleTargets#role_type}
   */
   readonly roleType: string;
   /**
   * User associated with the role
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/admin_role_targets#user_id AdminRoleTargets#user_id}
   */
   readonly userId: string;
