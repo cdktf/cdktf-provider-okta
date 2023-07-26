@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/theme
 // generated from terraform resource schema
 
@@ -14,13 +9,13 @@ import * as cdktf from 'cdktf';
 export interface DataOktaThemeConfig extends cdktf.TerraformMetaArguments {
   /**
   * Brand ID
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/theme#brand_id DataOktaTheme#brand_id}
   */
   readonly brandId: string;
   /**
   * Theme ID
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/theme#theme_id DataOktaTheme#theme_id}
   */
   readonly themeId: string;

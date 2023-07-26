@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/auth_server_claim_default
 // generated from terraform resource schema
 
@@ -18,7 +13,7 @@ export interface AuthServerClaimDefaultConfig extends cdktf.TerraformMetaArgumen
   readonly alwaysIncludeInToken?: boolean | cdktf.IResolvable;
   /**
   * Auth server ID
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/auth_server_claim_default#auth_server_id AuthServerClaimDefault#auth_server_id}
   */
   readonly authServerId: string;
@@ -31,7 +26,7 @@ export interface AuthServerClaimDefaultConfig extends cdktf.TerraformMetaArgumen
   readonly id?: string;
   /**
   * Default auth server claim name
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/auth_server_claim_default#name AuthServerClaimDefault#name}
   */
   readonly name: string;

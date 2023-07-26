@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/auth_server_default
 // generated from terraform resource schema
 
@@ -14,13 +9,13 @@ import * as cdktf from 'cdktf';
 export interface AuthServerDefaultConfig extends cdktf.TerraformMetaArguments {
   /**
   * Currently Okta only supports a single value here
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/auth_server_default#audiences AuthServerDefault#audiences}
   */
   readonly audiences?: string[];
   /**
   * Credential rotation mode, in many cases you cannot set this to MANUAL, the API will ignore the value and you will get a perpetual diff. This should rarely be used.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/auth_server_default#credentials_rotation_mode AuthServerDefault#credentials_rotation_mode}
   */
   readonly credentialsRotationMode?: string;
@@ -37,7 +32,7 @@ export interface AuthServerDefaultConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * *Early Access Property*. Indicates which value is specified in the issuer of the tokens that a Custom Authorization Server returns: the original Okta org domain URL or a custom domain URL
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/auth_server_default#issuer_mode AuthServerDefault#issuer_mode}
   */
   readonly issuerMode?: string;

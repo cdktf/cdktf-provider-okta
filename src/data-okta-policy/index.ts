@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/policy
 // generated from terraform resource schema
 
@@ -21,13 +16,13 @@ export interface DataOktaPolicyConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Name of the policy
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/policy#name DataOktaPolicy#name}
   */
   readonly name: string;
   /**
   * Policy type, see https://developer.okta.com/docs/reference/api/policy/#policy-object
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/policy#type DataOktaPolicy#type}
   */
   readonly type: string;

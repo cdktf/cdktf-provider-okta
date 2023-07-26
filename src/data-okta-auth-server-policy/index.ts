@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/auth_server_policy
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface DataOktaAuthServerPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
   * Auth server ID
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/auth_server_policy#auth_server_id DataOktaAuthServerPolicy#auth_server_id}
   */
   readonly authServerId: string;
@@ -27,7 +22,7 @@ export interface DataOktaAuthServerPolicyConfig extends cdktf.TerraformMetaArgum
   readonly id?: string;
   /**
   * Name of the policy
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/auth_server_policy#name DataOktaAuthServerPolicy#name}
   */
   readonly name: string;

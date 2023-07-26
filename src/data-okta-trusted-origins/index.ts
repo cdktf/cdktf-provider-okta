@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/trusted_origins
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface DataOktaTrustedOriginsConfig extends cdktf.TerraformMetaArguments {
   /**
   * Filter criteria. Filter value will be URL-encoded by the provider
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/trusted_origins#filter DataOktaTrustedOrigins#filter}
   */
   readonly filter?: string;

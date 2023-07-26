@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/security_notification_emails
 // generated from terraform resource schema
 
@@ -21,31 +16,31 @@ export interface SecurityNotificationEmailsConfig extends cdktf.TerraformMetaArg
   readonly id?: string;
   /**
   * Notifies end users about suspicious or unrecognized activity from their account
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/security_notification_emails#report_suspicious_activity_enabled SecurityNotificationEmails#report_suspicious_activity_enabled}
   */
   readonly reportSuspiciousActivityEnabled?: boolean | cdktf.IResolvable;
   /**
   * Notifies end users of any activity on their account related to MFA factor enrollment
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/security_notification_emails#send_email_for_factor_enrollment_enabled SecurityNotificationEmails#send_email_for_factor_enrollment_enabled}
   */
   readonly sendEmailForFactorEnrollmentEnabled?: boolean | cdktf.IResolvable;
   /**
   * Notifies end users that one or more factors have been reset for their account
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/security_notification_emails#send_email_for_factor_reset_enabled SecurityNotificationEmails#send_email_for_factor_reset_enabled}
   */
   readonly sendEmailForFactorResetEnabled?: boolean | cdktf.IResolvable;
   /**
   * Notifies end users about new sign-on activity
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/security_notification_emails#send_email_for_new_device_enabled SecurityNotificationEmails#send_email_for_new_device_enabled}
   */
   readonly sendEmailForNewDeviceEnabled?: boolean | cdktf.IResolvable;
   /**
   * Notifies end users that the password for their account has changed
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/security_notification_emails#send_email_for_password_changed_enabled SecurityNotificationEmails#send_email_for_password_changed_enabled}
   */
   readonly sendEmailForPasswordChangedEnabled?: boolean | cdktf.IResolvable;

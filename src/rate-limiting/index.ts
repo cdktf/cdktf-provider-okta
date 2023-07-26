@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/rate_limiting
 // generated from terraform resource schema
 
@@ -14,13 +9,13 @@ import * as cdktf from 'cdktf';
 export interface RateLimitingConfig extends cdktf.TerraformMetaArguments {
   /**
   * Called during authentication.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/rate_limiting#authorize RateLimiting#authorize}
   */
   readonly authorize: string;
   /**
   * Enables rate limit warning, violation, notification emails and banners when this org meets rate limits.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/rate_limiting#communications_enabled RateLimiting#communications_enabled}
   */
   readonly communicationsEnabled?: boolean | cdktf.IResolvable;
@@ -33,7 +28,7 @@ export interface RateLimitingConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Called when accessing the Okta hosted login page.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/rate_limiting#login RateLimiting#login}
   */
   readonly login: string;

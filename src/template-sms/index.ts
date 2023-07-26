@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/template_sms
 // generated from terraform resource schema
 
@@ -21,19 +16,19 @@ export interface TemplateSmsConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * SMS default template
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/template_sms#template TemplateSms#template}
   */
   readonly template: string;
   /**
   * SMS template type
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/template_sms#type TemplateSms#type}
   */
   readonly type: string;
   /**
   * translations block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/template_sms#translations TemplateSms#translations}
   */
   readonly translations?: TemplateSmsTranslations[] | cdktf.IResolvable;

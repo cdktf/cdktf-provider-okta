@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/idp_oidc
 // generated from terraform resource schema
 
@@ -65,7 +60,7 @@ export interface IdpOidcConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Indicates whether Okta uses the original Okta org domain URL, custom domain URL, or dynamic. See Identity Provider attributes - issuerMode - https://developer.okta.com/docs/reference/api/idps/#identity-provider-attributes
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/idp_oidc#issuer_mode IdpOidc#issuer_mode}
   */
   readonly issuerMode?: string;
@@ -87,7 +82,7 @@ export interface IdpOidcConfig extends cdktf.TerraformMetaArguments {
   readonly maxClockSkew?: number;
   /**
   * Name of the IdP
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/idp_oidc#name IdpOidc#name}
   */
   readonly name: string;
@@ -105,13 +100,13 @@ export interface IdpOidcConfig extends cdktf.TerraformMetaArguments {
   readonly provisioningAction?: string;
   /**
   * The HMAC Signature Algorithm used when signing an authorization request
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/idp_oidc#request_signature_algorithm IdpOidc#request_signature_algorithm}
   */
   readonly requestSignatureAlgorithm?: string;
   /**
   * Specifies whether to digitally sign an authorization request to the IdP
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/idp_oidc#request_signature_scope IdpOidc#request_signature_scope}
   */
   readonly requestSignatureScope?: string;

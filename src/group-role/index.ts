@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/group_role
 // generated from terraform resource schema
 
@@ -14,13 +9,13 @@ import * as cdktf from 'cdktf';
 export interface GroupRoleConfig extends cdktf.TerraformMetaArguments {
   /**
   * When this setting is enabled, the admins won't receive any of the default Okta administrator emails
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/group_role#disable_notifications GroupRole#disable_notifications}
   */
   readonly disableNotifications?: boolean | cdktf.IResolvable;
   /**
   * ID of group to attach admin roles to
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/group_role#group_id GroupRole#group_id}
   */
   readonly groupId: string;
@@ -33,19 +28,19 @@ export interface GroupRoleConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Type of Role to assign
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/group_role#role_type GroupRole#role_type}
   */
   readonly roleType: string;
   /**
   * List of apps ids for the targets of the admin role.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/group_role#target_app_list GroupRole#target_app_list}
   */
   readonly targetAppList?: string[];
   /**
   * List of groups ids for the targets of the admin role.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/group_role#target_group_list GroupRole#target_group_list}
   */
   readonly targetGroupList?: string[];

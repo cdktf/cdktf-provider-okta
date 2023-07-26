@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/email_sender_verification
 // generated from terraform resource schema
 
@@ -21,7 +16,7 @@ export interface EmailSenderVerificationConfig extends cdktf.TerraformMetaArgume
   readonly id?: string;
   /**
   * Email sender ID
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/email_sender_verification#sender_id EmailSenderVerification#sender_id}
   */
   readonly senderId: string;

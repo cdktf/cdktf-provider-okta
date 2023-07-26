@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/user_group_memberships
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface UserGroupMembershipsConfig extends cdktf.TerraformMetaArguments {
   /**
   * The list of Okta group IDs which the user should have membership managed for.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/user_group_memberships#groups UserGroupMemberships#groups}
   */
   readonly groups: string[];
@@ -27,7 +22,7 @@ export interface UserGroupMembershipsConfig extends cdktf.TerraformMetaArguments
   readonly id?: string;
   /**
   * ID of a Okta User
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/user_group_memberships#user_id UserGroupMemberships#user_id}
   */
   readonly userId: string;

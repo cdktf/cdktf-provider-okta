@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/idp_social
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface DataOktaIdpSocialConfig extends cdktf.TerraformMetaArguments {
   /**
   * ID of the IdP
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/idp_social#id DataOktaIdpSocial#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -23,7 +18,7 @@ export interface DataOktaIdpSocialConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * name of the IdP
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/idp_social#name DataOktaIdpSocial#name}
   */
   readonly name?: string;

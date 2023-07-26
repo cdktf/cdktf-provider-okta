@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/network_zone
 // generated from terraform resource schema
 
@@ -14,25 +9,25 @@ import * as cdktf from 'cdktf';
 export interface NetworkZoneConfig extends cdktf.TerraformMetaArguments {
   /**
   * Format of each array value: a string representation of an ASN numeric value
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/network_zone#asns NetworkZone#asns}
   */
   readonly asns?: string[];
   /**
   * Array of locations ISO-3166-1(2). Format code: countryCode OR countryCode-regionCode
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/network_zone#dynamic_locations NetworkZone#dynamic_locations}
   */
   readonly dynamicLocations?: string[];
   /**
   * Type of proxy being controlled by this network zone
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/network_zone#dynamic_proxy_type NetworkZone#dynamic_proxy_type}
   */
   readonly dynamicProxyType?: string;
   /**
   * Array of values in CIDR/range form depending on the way it's been declared (i.e. CIDR will contain /suffix). Please check API docs for examples
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/network_zone#gateways NetworkZone#gateways}
   */
   readonly gateways?: string[];
@@ -45,31 +40,31 @@ export interface NetworkZoneConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Name of the Network Zone Resource
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/network_zone#name NetworkZone#name}
   */
   readonly name: string;
   /**
   * Array of values in CIDR/range form depending on the way it's been declared (i.e. CIDR will contain /suffix). Please check API docs for examples
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/network_zone#proxies NetworkZone#proxies}
   */
   readonly proxies?: string[];
   /**
   * Network Status - can either be ACTIVE or INACTIVE only
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/network_zone#status NetworkZone#status}
   */
   readonly status?: string;
   /**
   * Type of the Network Zone - can either be IP or DYNAMIC only
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/network_zone#type NetworkZone#type}
   */
   readonly type: string;
   /**
   * Zone's purpose: POLICY or BLOCKLIST
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/network_zone#usage NetworkZone#usage}
   */
   readonly usage?: string;

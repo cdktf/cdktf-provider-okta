@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_oauth_api_scope
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface AppOauthApiScopeConfig extends cdktf.TerraformMetaArguments {
   /**
   * ID of the application.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_oauth_api_scope#app_id AppOauthApiScope#app_id}
   */
   readonly appId: string;
@@ -27,13 +22,13 @@ export interface AppOauthApiScopeConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * The issuer of your Org Authorization Server, your Org URL.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_oauth_api_scope#issuer AppOauthApiScope#issuer}
   */
   readonly issuer: string;
   /**
   * Scopes of the application for which consent is granted.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_oauth_api_scope#scopes AppOauthApiScope#scopes}
   */
   readonly scopes: string[];

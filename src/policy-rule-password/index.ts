@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/policy_rule_password
 // generated from terraform resource schema
 
@@ -21,67 +16,67 @@ export interface PolicyRulePasswordConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Policy Rule Name
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/policy_rule_password#name PolicyRulePassword#name}
   */
   readonly name: string;
   /**
   * Network selection mode: ANYWHERE, ZONE, ON_NETWORK, or OFF_NETWORK.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/policy_rule_password#network_connection PolicyRulePassword#network_connection}
   */
   readonly networkConnection?: string;
   /**
   * The zones to exclude
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/policy_rule_password#network_excludes PolicyRulePassword#network_excludes}
   */
   readonly networkExcludes?: string[];
   /**
   * The zones to include
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/policy_rule_password#network_includes PolicyRulePassword#network_includes}
   */
   readonly networkIncludes?: string[];
   /**
   * Allow or deny a user to change their password: ALLOW or DENY. Default = ALLOW
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/policy_rule_password#password_change PolicyRulePassword#password_change}
   */
   readonly passwordChange?: string;
   /**
   * Allow or deny a user to reset their password: ALLOW or DENY. Default = ALLOW
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/policy_rule_password#password_reset PolicyRulePassword#password_reset}
   */
   readonly passwordReset?: string;
   /**
   * Allow or deny a user to unlock. Default = DENY
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/policy_rule_password#password_unlock PolicyRulePassword#password_unlock}
   */
   readonly passwordUnlock?: string;
   /**
   * Policy ID of the Rule
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/policy_rule_password#policy_id PolicyRulePassword#policy_id}
   */
   readonly policyId?: string;
   /**
   * Policy Rule Priority, this attribute can be set to a valid priority. To avoid endless diff situation we error if an invalid priority is provided. API defaults it to the last (lowest) if not there.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/policy_rule_password#priority PolicyRulePassword#priority}
   */
   readonly priority?: number;
   /**
   * Policy Rule Status: ACTIVE or INACTIVE.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/policy_rule_password#status PolicyRulePassword#status}
   */
   readonly status?: string;
   /**
   * Set of User IDs to Exclude
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/policy_rule_password#users_excluded PolicyRulePassword#users_excluded}
   */
   readonly usersExcluded?: string[];

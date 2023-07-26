@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/policy_profile_enrollment_apps
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface PolicyProfileEnrollmentAppsConfig extends cdktf.TerraformMetaArguments {
   /**
   * List of app IDs to be added to this policy
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/policy_profile_enrollment_apps#apps PolicyProfileEnrollmentApps#apps}
   */
   readonly apps?: string[];
@@ -27,7 +22,7 @@ export interface PolicyProfileEnrollmentAppsConfig extends cdktf.TerraformMetaAr
   readonly id?: string;
   /**
   * ID of the enrollment policy.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/policy_profile_enrollment_apps#policy_id PolicyProfileEnrollmentApps#policy_id}
   */
   readonly policyId: string;

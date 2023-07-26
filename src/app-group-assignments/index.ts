@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_group_assignments
 // generated from terraform resource schema
 
@@ -25,7 +20,7 @@ export interface AppGroupAssignmentsConfig extends cdktf.TerraformMetaArguments 
   readonly id?: string;
   /**
   * group block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_group_assignments#group AppGroupAssignments#group}
   */
   readonly group: AppGroupAssignmentsGroup[] | cdktf.IResolvable;
@@ -33,7 +28,7 @@ export interface AppGroupAssignmentsConfig extends cdktf.TerraformMetaArguments 
 export interface AppGroupAssignmentsGroup {
   /**
   * A group to associate with the application
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_group_assignments#id AppGroupAssignments#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.

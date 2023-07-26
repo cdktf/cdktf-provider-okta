@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/auth_server_scope
 // generated from terraform resource schema
 
@@ -14,19 +9,19 @@ import * as cdktf from 'cdktf';
 export interface AuthServerScopeConfig extends cdktf.TerraformMetaArguments {
   /**
   * Auth server ID
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/auth_server_scope#auth_server_id AuthServerScope#auth_server_id}
   */
   readonly authServerId: string;
   /**
   * EA Feature and thus it is simply ignored if the feature is off
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/auth_server_scope#consent AuthServerScope#consent}
   */
   readonly consent?: string;
   /**
   * A default scope will be returned in an access token when the client omits the scope parameter in a token request, provided this scope is allowed as part of the access policy rule.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/auth_server_scope#default AuthServerScope#default}
   */
   readonly default?: boolean | cdktf.IResolvable;
@@ -36,7 +31,7 @@ export interface AuthServerScopeConfig extends cdktf.TerraformMetaArguments {
   readonly description?: string;
   /**
   * Name of the end user displayed in a consent dialog box
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/auth_server_scope#display_name AuthServerScope#display_name}
   */
   readonly displayName?: string;
@@ -49,13 +44,13 @@ export interface AuthServerScopeConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Whether to publish metadata or not, matching API type despite the fact it could just be a boolean
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/auth_server_scope#metadata_publish AuthServerScope#metadata_publish}
   */
   readonly metadataPublish?: string;
   /**
   * Auth server scope name
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/auth_server_scope#name AuthServerScope#name}
   */
   readonly name: string;

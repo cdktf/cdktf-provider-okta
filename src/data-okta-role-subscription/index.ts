@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/role_subscription
 // generated from terraform resource schema
 
@@ -21,13 +16,13 @@ export interface DataOktaRoleSubscriptionConfig extends cdktf.TerraformMetaArgum
   readonly id?: string;
   /**
   * Type of the notification
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/role_subscription#notification_type DataOktaRoleSubscription#notification_type}
   */
   readonly notificationType: string;
   /**
   * Type of the role
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/role_subscription#role_type DataOktaRoleSubscription#role_type}
   */
   readonly roleType: string;

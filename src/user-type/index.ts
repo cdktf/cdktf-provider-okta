@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/user_type
 // generated from terraform resource schema
 
@@ -14,13 +9,13 @@ import * as cdktf from 'cdktf';
 export interface UserTypeConfig extends cdktf.TerraformMetaArguments {
   /**
   * A human-readable description of the User type
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/user_type#description UserType#description}
   */
   readonly description: string;
   /**
   * The display name of the user type
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/user_type#display_name UserType#display_name}
   */
   readonly displayName: string;
@@ -33,7 +28,7 @@ export interface UserTypeConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Name of the user type
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/user_type#name UserType#name}
   */
   readonly name: string;

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/inline_hook
 // generated from terraform resource schema
 
@@ -45,7 +40,7 @@ export interface InlineHookConfig extends cdktf.TerraformMetaArguments {
   readonly version: string;
   /**
   * headers block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/inline_hook#headers InlineHook#headers}
   */
   readonly headers?: InlineHookHeaders[] | cdktf.IResolvable;

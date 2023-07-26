@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/user_admin_roles
 // generated from terraform resource schema
 
@@ -14,13 +9,13 @@ import * as cdktf from 'cdktf';
 export interface UserAdminRolesConfig extends cdktf.TerraformMetaArguments {
   /**
   * User Okta admin roles - ie. ['APP_ADMIN', 'USER_ADMIN']
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/user_admin_roles#admin_roles UserAdminRoles#admin_roles}
   */
   readonly adminRoles: string[];
   /**
   * When this setting is enabled, the admins won't receive any of the default Okta administrator emails
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/user_admin_roles#disable_notifications UserAdminRoles#disable_notifications}
   */
   readonly disableNotifications?: boolean | cdktf.IResolvable;
@@ -33,7 +28,7 @@ export interface UserAdminRolesConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * ID of a Okta User
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/user_admin_roles#user_id UserAdminRoles#user_id}
   */
   readonly userId: string;

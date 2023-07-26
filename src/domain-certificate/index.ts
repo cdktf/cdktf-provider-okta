@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/domain_certificate
 // generated from terraform resource schema
 
@@ -14,19 +9,19 @@ import * as cdktf from 'cdktf';
 export interface DomainCertificateConfig extends cdktf.TerraformMetaArguments {
   /**
   * Certificate content
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/domain_certificate#certificate DomainCertificate#certificate}
   */
   readonly certificate: string;
   /**
   * Certificate chain
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/domain_certificate#certificate_chain DomainCertificate#certificate_chain}
   */
   readonly certificateChain: string;
   /**
   * Domain's ID
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/domain_certificate#domain_id DomainCertificate#domain_id}
   */
   readonly domainId: string;
@@ -39,13 +34,13 @@ export interface DomainCertificateConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Certificate private key
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/domain_certificate#private_key DomainCertificate#private_key}
   */
   readonly privateKey: string;
   /**
   * Certificate type
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/domain_certificate#type DomainCertificate#type}
   */
   readonly type?: string;

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/groups
 // generated from terraform resource schema
 
@@ -21,19 +16,19 @@ export interface DataOktaGroupsConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Searches the name property of groups for matching value
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/groups#q DataOktaGroups#q}
   */
   readonly q?: string;
   /**
   * Searches for groups with a supported filtering expression for all attributes except for '_embedded', '_links', and 'objectClass'
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/groups#search DataOktaGroups#search}
   */
   readonly search?: string;
   /**
   * Type of the group. When specified in the terraform resource, will act as a filter when searching for the groups
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/groups#type DataOktaGroups#type}
   */
   readonly type?: string;

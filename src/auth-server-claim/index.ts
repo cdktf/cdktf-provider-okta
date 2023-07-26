@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/auth_server_claim
 // generated from terraform resource schema
 
@@ -18,7 +13,7 @@ export interface AuthServerClaimConfig extends cdktf.TerraformMetaArguments {
   readonly alwaysIncludeInToken?: boolean | cdktf.IResolvable;
   /**
   * Auth server ID
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/auth_server_claim#auth_server_id AuthServerClaim#auth_server_id}
   */
   readonly authServerId: string;
@@ -28,7 +23,7 @@ export interface AuthServerClaimConfig extends cdktf.TerraformMetaArguments {
   readonly claimType: string;
   /**
   * Required when value_type is GROUPS
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/auth_server_claim#group_filter_type AuthServerClaim#group_filter_type}
   */
   readonly groupFilterType?: string;
@@ -41,13 +36,13 @@ export interface AuthServerClaimConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Auth server claim name
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/auth_server_claim#name AuthServerClaim#name}
   */
   readonly name: string;
   /**
   * Auth server claim list of scopes
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/auth_server_claim#scopes AuthServerClaim#scopes}
   */
   readonly scopes?: string[];

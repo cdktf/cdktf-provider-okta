@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/auth_server_policy
 // generated from terraform resource schema
 
@@ -18,7 +13,7 @@ export interface AuthServerPolicyConfig extends cdktf.TerraformMetaArguments {
   readonly authServerId: string;
   /**
   * Use ["ALL_CLIENTS"] when unsure.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/auth_server_policy#client_whitelist AuthServerPolicy#client_whitelist}
   */
   readonly clientWhitelist: string[];
@@ -39,7 +34,7 @@ export interface AuthServerPolicyConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   /**
   * Priority of the auth server policy
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/auth_server_policy#priority AuthServerPolicy#priority}
   */
   readonly priority: number;

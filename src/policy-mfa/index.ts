@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/policy_mfa
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface PolicyMfaConfig extends cdktf.TerraformMetaArguments {
   /**
   * Policy Description
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/policy_mfa#description PolicyMfa#description}
   */
   readonly description?: string;
@@ -40,7 +35,7 @@ export interface PolicyMfaConfig extends cdktf.TerraformMetaArguments {
   readonly googleOtp?: { [key: string]: string };
   /**
   * List of Group IDs to Include
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/policy_mfa#groups_included PolicyMfa#groups_included}
   */
   readonly groupsIncluded?: string[];
@@ -57,13 +52,13 @@ export interface PolicyMfaConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Is the policy using Okta Identity Engine (OIE) with authenticators instead of factors?
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/policy_mfa#is_oie PolicyMfa#is_oie}
   */
   readonly isOie?: boolean | cdktf.IResolvable;
   /**
   * Policy Name
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/policy_mfa#name PolicyMfa#name}
   */
   readonly name: string;
@@ -109,7 +104,7 @@ export interface PolicyMfaConfig extends cdktf.TerraformMetaArguments {
   readonly phoneNumber?: { [key: string]: string };
   /**
   * Policy Priority, this attribute can be set to a valid priority. To avoid endless diff situation we error if an invalid priority is provided. API defaults it to the last (lowest) if not there.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/policy_mfa#priority PolicyMfa#priority}
   */
   readonly priority?: number;
@@ -123,7 +118,7 @@ export interface PolicyMfaConfig extends cdktf.TerraformMetaArguments {
   readonly securityQuestion?: { [key: string]: string };
   /**
   * Policy Status: ACTIVE or INACTIVE.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/policy_mfa#status PolicyMfa#status}
   */
   readonly status?: string;

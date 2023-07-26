@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/factor
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface FactorConfig extends cdktf.TerraformMetaArguments {
   /**
   * Is this provider active?
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/factor#active Factor#active}
   */
   readonly active?: boolean | cdktf.IResolvable;
@@ -27,7 +22,7 @@ export interface FactorConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Factor provider ID
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/factor#provider_id Factor#provider_id}
   */
   readonly providerId: string;

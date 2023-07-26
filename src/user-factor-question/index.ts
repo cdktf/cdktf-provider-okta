@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/user_factor_question
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface UserFactorQuestionConfig extends cdktf.TerraformMetaArguments {
   /**
   * User password security answer
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/user_factor_question#answer UserFactorQuestion#answer}
   */
   readonly answer: string;
@@ -27,13 +22,13 @@ export interface UserFactorQuestionConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Unique key for question
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/user_factor_question#key UserFactorQuestion#key}
   */
   readonly key: string;
   /**
   * ID of a Okta User
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/user_factor_question#user_id UserFactorQuestion#user_id}
   */
   readonly userId: string;

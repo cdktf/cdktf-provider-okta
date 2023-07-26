@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/email_customization
 // generated from terraform resource schema
 
@@ -14,19 +9,19 @@ import * as cdktf from 'cdktf';
 export interface DataOktaEmailCustomizationConfig extends cdktf.TerraformMetaArguments {
   /**
   * Brand ID
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/email_customization#brand_id DataOktaEmailCustomization#brand_id}
   */
   readonly brandId: string;
   /**
   * The ID of the customization
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/email_customization#customization_id DataOktaEmailCustomization#customization_id}
   */
   readonly customizationId: string;
   /**
   * Template Name
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/email_customization#template_name DataOktaEmailCustomization#template_name}
   */
   readonly templateName: string;

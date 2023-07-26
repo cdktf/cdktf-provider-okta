@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/link_value
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface LinkValueConfig extends cdktf.TerraformMetaArguments {
   /**
   * Set of User IDs or login values of the users to be assigned the 'associated' relationship.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/link_value#associated_user_ids LinkValue#associated_user_ids}
   */
   readonly associatedUserIds?: string[];
@@ -27,13 +22,13 @@ export interface LinkValueConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Name of the 'primary' relationship being assigned.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/link_value#primary_name LinkValue#primary_name}
   */
   readonly primaryName: string;
   /**
   * User ID to be assigned to 'primary' for the 'associated' user in the specified relationship.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/link_value#primary_user_id LinkValue#primary_user_id}
   */
   readonly primaryUserId: string;

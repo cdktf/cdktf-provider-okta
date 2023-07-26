@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_user
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface AppUserConfig extends cdktf.TerraformMetaArguments {
   /**
   * App to associate user with
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_user#app_id AppUser#app_id}
   */
   readonly appId: string;
@@ -35,13 +30,13 @@ export interface AppUserConfig extends cdktf.TerraformMetaArguments {
   readonly profile?: string;
   /**
   * Retain the user assignment on destroy. If set to true, the resource will be removed from state but not from the Okta app.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_user#retain_assignment AppUser#retain_assignment}
   */
   readonly retainAssignment?: boolean | cdktf.IResolvable;
   /**
   * User associated with the application
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_user#user_id AppUser#user_id}
   */
   readonly userId: string;
