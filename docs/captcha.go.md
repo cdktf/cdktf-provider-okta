@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.captcha.Captcha.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/captcha"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/captcha"
 
 captcha.NewCaptcha(scope Construct, id *string, config CaptchaConfig) Captcha
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.captcha.Captcha.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/captcha"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/captcha"
 
 captcha.Captcha_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.captcha.Captcha.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/captcha"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/captcha"
 
 captcha.Captcha_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ captcha.Captcha_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.captcha.Captcha.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/captcha"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/captcha"
 
 captcha.Captcha_IsTerraformResource(x interface{}) *bool
 ```
@@ -632,7 +632,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.captcha.CaptchaConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/captcha"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/captcha"
 
 &captcha.CaptchaConfig {
 	Connection: interface{},
