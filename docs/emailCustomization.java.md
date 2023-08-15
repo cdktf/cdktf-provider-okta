@@ -1,6 +1,6 @@
 # `okta_email_customization`
 
-Refer to the Terraform Registory for docs: [`okta_email_customization`](https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/email_customization).
+Refer to the Terraform Registory for docs: [`okta_email_customization`](https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/email_customization).
 
 # `emailCustomization` Submodule <a name="`emailCustomization` Submodule" id="@cdktf/provider-okta.emailCustomization"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_email_customization`](https://
 
 ### EmailCustomization <a name="EmailCustomization" id="@cdktf/provider-okta.emailCustomization.EmailCustomization"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/email_customization okta_email_customization}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/email_customization okta_email_customization}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.emailCustomization.EmailCustomization.Initializer"></a>
 
@@ -125,7 +125,7 @@ Must be unique amongst siblings in the same scope
 
 Brand ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/email_customization#brand_id EmailCustomization#brand_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/email_customization#brand_id EmailCustomization#brand_id}
 
 ---
 
@@ -135,7 +135,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Template Name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/email_customization#template_name EmailCustomization#template_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/email_customization#template_name EmailCustomization#template_name}
 
 ---
 
@@ -145,7 +145,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 The body of the customization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/email_customization#body EmailCustomization#body}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/email_customization#body EmailCustomization#body}
 
 ---
 
@@ -157,7 +157,7 @@ Force is_default on the create and delete by deleting all email customizations.
 
 Comma separated string with values of 'create' or 'destroy' or both `create,destroy'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/email_customization#force_is_default EmailCustomization#force_is_default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/email_customization#force_is_default EmailCustomization#force_is_default}
 
 ---
 
@@ -167,7 +167,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Whether the customization is the default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/email_customization#is_default EmailCustomization#is_default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/email_customization#is_default EmailCustomization#is_default}
 
 ---
 
@@ -177,7 +177,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 The language supported by the customization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/email_customization#language EmailCustomization#language}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/email_customization#language EmailCustomization#language}
 
 ---
 
@@ -187,7 +187,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 The subject of the customization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/email_customization#subject EmailCustomization#subject}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/email_customization#subject EmailCustomization#subject}
 
 ---
 
@@ -993,7 +993,7 @@ public java.lang.String getBrandId();
 
 Brand ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/email_customization#brand_id EmailCustomization#brand_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/email_customization#brand_id EmailCustomization#brand_id}
 
 ---
 
@@ -1007,7 +1007,7 @@ public java.lang.String getTemplateName();
 
 Template Name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/email_customization#template_name EmailCustomization#template_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/email_customization#template_name EmailCustomization#template_name}
 
 ---
 
@@ -1021,7 +1021,7 @@ public java.lang.String getBody();
 
 The body of the customization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/email_customization#body EmailCustomization#body}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/email_customization#body EmailCustomization#body}
 
 ---
 
@@ -1037,7 +1037,7 @@ Force is_default on the create and delete by deleting all email customizations.
 
 Comma separated string with values of 'create' or 'destroy' or both `create,destroy'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/email_customization#force_is_default EmailCustomization#force_is_default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/email_customization#force_is_default EmailCustomization#force_is_default}
 
 ---
 
@@ -1051,7 +1051,7 @@ public java.lang.Object getIsDefault();
 
 Whether the customization is the default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/email_customization#is_default EmailCustomization#is_default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/email_customization#is_default EmailCustomization#is_default}
 
 ---
 
@@ -1065,7 +1065,7 @@ public java.lang.String getLanguage();
 
 The language supported by the customization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/email_customization#language EmailCustomization#language}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/email_customization#language EmailCustomization#language}
 
 ---
 
@@ -1079,7 +1079,7 @@ public java.lang.String getSubject();
 
 The subject of the customization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/email_customization#subject EmailCustomization#subject}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/email_customization#subject EmailCustomization#subject}
 
 ---
 

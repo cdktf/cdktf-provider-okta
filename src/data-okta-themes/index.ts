@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/themes
+// https://registry.terraform.io/providers/okta/okta/4.2.0/docs/data-sources/themes
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface DataOktaThemesConfig extends cdktf.TerraformMetaArguments {
   /**
   * Brand ID
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/themes#brand_id DataOktaThemes#brand_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/data-sources/themes#brand_id DataOktaThemes#brand_id}
   */
   readonly brandId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/themes#id DataOktaThemes#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/data-sources/themes#id DataOktaThemes#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -152,7 +152,7 @@ export class DataOktaThemesThemesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/themes okta_themes}
+* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/data-sources/themes okta_themes}
 */
 export class DataOktaThemes extends cdktf.TerraformDataSource {
 
@@ -166,7 +166,7 @@ export class DataOktaThemes extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/themes okta_themes} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/data-sources/themes okta_themes} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -177,7 +177,7 @@ export class DataOktaThemes extends cdktf.TerraformDataSource {
       terraformResourceType: 'okta_themes',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '4.1.0',
+        providerVersion: '4.2.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

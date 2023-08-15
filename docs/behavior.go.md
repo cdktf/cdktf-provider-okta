@@ -1,6 +1,6 @@
 # `okta_behavior`
 
-Refer to the Terraform Registory for docs: [`okta_behavior`](https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/behavior).
+Refer to the Terraform Registory for docs: [`okta_behavior`](https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/behavior).
 
 # `behavior` Submodule <a name="`behavior` Submodule" id="@cdktf/provider-okta.behavior"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_behavior`](https://registry.te
 
 ### Behavior <a name="Behavior" id="@cdktf/provider-okta.behavior.Behavior"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/behavior okta_behavior}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/behavior okta_behavior}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.behavior.Behavior.Initializer"></a>
 
@@ -767,7 +767,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/behavior"
 | <code><a href="#@cdktf/provider-okta.behavior.BehaviorConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.behavior.BehaviorConfig.property.name">Name</a></code> | <code>*string</code> | Name of the behavior. |
 | <code><a href="#@cdktf/provider-okta.behavior.BehaviorConfig.property.type">Type</a></code> | <code>*string</code> | Behavior type. |
-| <code><a href="#@cdktf/provider-okta.behavior.BehaviorConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/behavior#id Behavior#id}. |
+| <code><a href="#@cdktf/provider-okta.behavior.BehaviorConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/behavior#id Behavior#id}. |
 | <code><a href="#@cdktf/provider-okta.behavior.BehaviorConfig.property.locationGranularityType">LocationGranularityType</a></code> | <code>*string</code> | Determines the method and level of detail used to evaluate the behavior. |
 | <code><a href="#@cdktf/provider-okta.behavior.BehaviorConfig.property.numberOfAuthentications">NumberOfAuthentications</a></code> | <code>*f64</code> | The number of recent authentications used to evaluate the behavior. |
 | <code><a href="#@cdktf/provider-okta.behavior.BehaviorConfig.property.radiusFromLocation">RadiusFromLocation</a></code> | <code>*f64</code> | Radius from location (in kilometers). |
@@ -856,7 +856,7 @@ Name *string
 
 Name of the behavior.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/behavior#name Behavior#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/behavior#name Behavior#name}
 
 ---
 
@@ -870,7 +870,7 @@ Type *string
 
 Behavior type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/behavior#type Behavior#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/behavior#type Behavior#type}
 
 ---
 
@@ -882,7 +882,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/behavior#id Behavior#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/behavior#id Behavior#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -899,7 +899,7 @@ LocationGranularityType *string
 
 Determines the method and level of detail used to evaluate the behavior.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/behavior#location_granularity_type Behavior#location_granularity_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/behavior#location_granularity_type Behavior#location_granularity_type}
 
 ---
 
@@ -913,7 +913,7 @@ NumberOfAuthentications *f64
 
 The number of recent authentications used to evaluate the behavior.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/behavior#number_of_authentications Behavior#number_of_authentications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/behavior#number_of_authentications Behavior#number_of_authentications}
 
 ---
 
@@ -927,7 +927,7 @@ RadiusFromLocation *f64
 
 Radius from location (in kilometers).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/behavior#radius_from_location Behavior#radius_from_location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/behavior#radius_from_location Behavior#radius_from_location}
 
 ---
 
@@ -941,7 +941,7 @@ Status *string
 
 Behavior status: ACTIVE or INACTIVE.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/behavior#status Behavior#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/behavior#status Behavior#status}
 
 ---
 
@@ -955,7 +955,7 @@ Velocity *f64
 
 Velocity (in kilometers per hour).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/behavior#velocity Behavior#velocity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/behavior#velocity Behavior#velocity}
 
 ---
 
