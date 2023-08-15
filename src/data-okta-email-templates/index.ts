@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/email_templates
+// https://registry.terraform.io/providers/okta/okta/4.2.0/docs/data-sources/email_templates
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface DataOktaEmailTemplatesConfig extends cdktf.TerraformMetaArgumen
   /**
   * Brand ID
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/email_templates#brand_id DataOktaEmailTemplates#brand_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/data-sources/email_templates#brand_id DataOktaEmailTemplates#brand_id}
   */
   readonly brandId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/email_templates#id DataOktaEmailTemplates#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/data-sources/email_templates#id DataOktaEmailTemplates#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -97,7 +92,7 @@ export class DataOktaEmailTemplatesEmailTemplatesList extends cdktf.ComplexList 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/email_templates okta_email_templates}
+* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/data-sources/email_templates okta_email_templates}
 */
 export class DataOktaEmailTemplates extends cdktf.TerraformDataSource {
 
@@ -111,7 +106,7 @@ export class DataOktaEmailTemplates extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/email_templates okta_email_templates} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/data-sources/email_templates okta_email_templates} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -122,7 +117,7 @@ export class DataOktaEmailTemplates extends cdktf.TerraformDataSource {
       terraformResourceType: 'okta_email_templates',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '4.1.0',
+        providerVersion: '4.2.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

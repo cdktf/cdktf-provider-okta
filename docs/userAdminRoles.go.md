@@ -1,6 +1,6 @@
 # `okta_user_admin_roles`
 
-Refer to the Terraform Registory for docs: [`okta_user_admin_roles`](https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/user_admin_roles).
+Refer to the Terraform Registory for docs: [`okta_user_admin_roles`](https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/user_admin_roles).
 
 # `userAdminRoles` Submodule <a name="`userAdminRoles` Submodule" id="@cdktf/provider-okta.userAdminRoles"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`okta_user_admin_roles`](https://reg
 
 ### UserAdminRoles <a name="UserAdminRoles" id="@cdktf/provider-okta.userAdminRoles.UserAdminRoles"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/user_admin_roles okta_user_admin_roles}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/user_admin_roles okta_user_admin_roles}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.userAdminRoles.UserAdminRoles.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/useradminroles"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/useradminroles"
 
 useradminroles.NewUserAdminRoles(scope Construct, id *string, config UserAdminRolesConfig) UserAdminRoles
 ```
@@ -284,7 +284,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.userAdminRoles.UserAdminRoles.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/useradminroles"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/useradminroles"
 
 useradminroles.UserAdminRoles_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.userAdminRoles.UserAdminRoles.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/useradminroles"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/useradminroles"
 
 useradminroles.UserAdminRoles_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ useradminroles.UserAdminRoles_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.userAdminRoles.UserAdminRoles.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/useradminroles"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/useradminroles"
 
 useradminroles.UserAdminRoles_IsTerraformResource(x interface{}) *bool
 ```
@@ -617,7 +617,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.userAdminRoles.UserAdminRolesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/useradminroles"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/useradminroles"
 
 &useradminroles.UserAdminRolesConfig {
 	Connection: interface{},
@@ -648,7 +648,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/useradminroles"
 | <code><a href="#@cdktf/provider-okta.userAdminRoles.UserAdminRolesConfig.property.adminRoles">AdminRoles</a></code> | <code>*[]*string</code> | User Okta admin roles - ie. ['APP_ADMIN', 'USER_ADMIN']. |
 | <code><a href="#@cdktf/provider-okta.userAdminRoles.UserAdminRolesConfig.property.userId">UserId</a></code> | <code>*string</code> | ID of a Okta User. |
 | <code><a href="#@cdktf/provider-okta.userAdminRoles.UserAdminRolesConfig.property.disableNotifications">DisableNotifications</a></code> | <code>interface{}</code> | When this setting is enabled, the admins won't receive any of the default Okta administrator emails. |
-| <code><a href="#@cdktf/provider-okta.userAdminRoles.UserAdminRolesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/user_admin_roles#id UserAdminRoles#id}. |
+| <code><a href="#@cdktf/provider-okta.userAdminRoles.UserAdminRolesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/user_admin_roles#id UserAdminRoles#id}. |
 
 ---
 
@@ -732,7 +732,7 @@ AdminRoles *[]*string
 
 User Okta admin roles - ie. ['APP_ADMIN', 'USER_ADMIN'].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/user_admin_roles#admin_roles UserAdminRoles#admin_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/user_admin_roles#admin_roles UserAdminRoles#admin_roles}
 
 ---
 
@@ -746,7 +746,7 @@ UserId *string
 
 ID of a Okta User.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/user_admin_roles#user_id UserAdminRoles#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/user_admin_roles#user_id UserAdminRoles#user_id}
 
 ---
 
@@ -760,7 +760,7 @@ DisableNotifications interface{}
 
 When this setting is enabled, the admins won't receive any of the default Okta administrator emails.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/user_admin_roles#disable_notifications UserAdminRoles#disable_notifications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/user_admin_roles#disable_notifications UserAdminRoles#disable_notifications}
 
 ---
 
@@ -772,7 +772,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/user_admin_roles#id UserAdminRoles#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/user_admin_roles#id UserAdminRoles#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

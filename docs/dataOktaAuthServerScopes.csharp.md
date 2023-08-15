@@ -1,6 +1,6 @@
 # `data_okta_auth_server_scopes`
 
-Refer to the Terraform Registory for docs: [`data_okta_auth_server_scopes`](https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/auth_server_scopes).
+Refer to the Terraform Registory for docs: [`data_okta_auth_server_scopes`](https://registry.terraform.io/providers/okta/okta/4.2.0/docs/data-sources/auth_server_scopes).
 
 # `dataOktaAuthServerScopes` Submodule <a name="`dataOktaAuthServerScopes` Submodule" id="@cdktf/provider-okta.dataOktaAuthServerScopes"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_okta_auth_server_scopes`](http
 
 ### DataOktaAuthServerScopes <a name="DataOktaAuthServerScopes" id="@cdktf/provider-okta.dataOktaAuthServerScopes.DataOktaAuthServerScopes"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/auth_server_scopes okta_auth_server_scopes}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/data-sources/auth_server_scopes okta_auth_server_scopes}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaAuthServerScopes.DataOktaAuthServerScopes.Initializer"></a>
 
@@ -582,7 +582,7 @@ new DataOktaAuthServerScopesConfig {
 | <code><a href="#@cdktf/provider-okta.dataOktaAuthServerScopes.DataOktaAuthServerScopesConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaAuthServerScopes.DataOktaAuthServerScopesConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaAuthServerScopes.DataOktaAuthServerScopesConfig.property.authServerId">AuthServerId</a></code> | <code>string</code> | Auth server ID. |
-| <code><a href="#@cdktf/provider-okta.dataOktaAuthServerScopes.DataOktaAuthServerScopesConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/auth_server_scopes#id DataOktaAuthServerScopes#id}. |
+| <code><a href="#@cdktf/provider-okta.dataOktaAuthServerScopes.DataOktaAuthServerScopesConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/data-sources/auth_server_scopes#id DataOktaAuthServerScopes#id}. |
 
 ---
 
@@ -666,7 +666,7 @@ public string AuthServerId { get; set; }
 
 Auth server ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/auth_server_scopes#auth_server_id DataOktaAuthServerScopes#auth_server_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/data-sources/auth_server_scopes#auth_server_id DataOktaAuthServerScopes#auth_server_id}
 
 ---
 
@@ -678,7 +678,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/auth_server_scopes#id DataOktaAuthServerScopes#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/data-sources/auth_server_scopes#id DataOktaAuthServerScopes#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

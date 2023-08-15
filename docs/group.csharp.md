@@ -1,6 +1,6 @@
 # `okta_group`
 
-Refer to the Terraform Registory for docs: [`okta_group`](https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/group).
+Refer to the Terraform Registory for docs: [`okta_group`](https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/group).
 
 # `group` Submodule <a name="`group` Submodule" id="@cdktf/provider-okta.group"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_group`](https://registry.terra
 
 ### Group <a name="Group" id="@cdktf/provider-okta.group.Group"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/group okta_group}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/group okta_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.group.Group.Initializer"></a>
 
@@ -685,7 +685,7 @@ new GroupConfig {
 | <code><a href="#@cdktf/provider-okta.group.GroupConfig.property.name">Name</a></code> | <code>string</code> | Group name. |
 | <code><a href="#@cdktf/provider-okta.group.GroupConfig.property.customProfileAttributes">CustomProfileAttributes</a></code> | <code>string</code> | JSON formatted custom attributes for a group. It must be JSON due to various types Okta allows. |
 | <code><a href="#@cdktf/provider-okta.group.GroupConfig.property.description">Description</a></code> | <code>string</code> | Group description. |
-| <code><a href="#@cdktf/provider-okta.group.GroupConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/group#id Group#id}. |
+| <code><a href="#@cdktf/provider-okta.group.GroupConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/group#id Group#id}. |
 | <code><a href="#@cdktf/provider-okta.group.GroupConfig.property.skipUsers">SkipUsers</a></code> | <code>object</code> | Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources. |
 
 ---
@@ -770,7 +770,7 @@ public string Name { get; set; }
 
 Group name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/group#name Group#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/group#name Group#name}
 
 ---
 
@@ -784,7 +784,7 @@ public string CustomProfileAttributes { get; set; }
 
 JSON formatted custom attributes for a group. It must be JSON due to various types Okta allows.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/group#custom_profile_attributes Group#custom_profile_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/group#custom_profile_attributes Group#custom_profile_attributes}
 
 ---
 
@@ -798,7 +798,7 @@ public string Description { get; set; }
 
 Group description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/group#description Group#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/group#description Group#description}
 
 ---
 
@@ -810,7 +810,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/group#id Group#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/group#id Group#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -827,7 +827,7 @@ public object SkipUsers { get; set; }
 
 Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/group#skip_users Group#skip_users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/group#skip_users Group#skip_users}
 
 ---
 

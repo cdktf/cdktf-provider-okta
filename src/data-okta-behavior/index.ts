@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/behavior
+// https://registry.terraform.io/providers/okta/okta/4.2.0/docs/data-sources/behavior
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,20 +8,20 @@ import * as cdktf from 'cdktf';
 
 export interface DataOktaBehaviorConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/behavior#id DataOktaBehavior#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/data-sources/behavior#id DataOktaBehavior#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/behavior#name DataOktaBehavior#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/data-sources/behavior#name DataOktaBehavior#name}
   */
   readonly name?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/behavior okta_behavior}
+* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/data-sources/behavior okta_behavior}
 */
 export class DataOktaBehavior extends cdktf.TerraformDataSource {
 
@@ -40,7 +35,7 @@ export class DataOktaBehavior extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/behavior okta_behavior} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/data-sources/behavior okta_behavior} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -51,7 +46,7 @@ export class DataOktaBehavior extends cdktf.TerraformDataSource {
       terraformResourceType: 'okta_behavior',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '4.1.0',
+        providerVersion: '4.2.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

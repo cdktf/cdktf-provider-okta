@@ -1,6 +1,6 @@
 # `okta_domain`
 
-Refer to the Terraform Registory for docs: [`okta_domain`](https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/domain).
+Refer to the Terraform Registory for docs: [`okta_domain`](https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/domain).
 
 # `domain` Submodule <a name="`domain` Submodule" id="@cdktf/provider-okta.domain"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_domain`](https://registry.terr
 
 ### Domain <a name="Domain" id="@cdktf/provider-okta.domain.Domain"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/domain okta_domain}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/domain okta_domain}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.domain.Domain.Initializer"></a>
 
@@ -44,7 +44,7 @@ domain.Domain(
 | <code><a href="#@cdktf/provider-okta.domain.Domain.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.domain.Domain.Initializer.parameter.name">name</a></code> | <code>str</code> | Custom Domain name. |
 | <code><a href="#@cdktf/provider-okta.domain.Domain.Initializer.parameter.certificateSourceType">certificate_source_type</a></code> | <code>str</code> | Optional. |
-| <code><a href="#@cdktf/provider-okta.domain.Domain.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/domain#id Domain#id}. |
+| <code><a href="#@cdktf/provider-okta.domain.Domain.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/domain#id Domain#id}. |
 
 ---
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 Custom Domain name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/domain#name Domain#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/domain#name Domain#name}
 
 ---
 
@@ -126,7 +126,7 @@ Optional.
 
 Certificate source type that indicates whether the certificate is provided by the user or Okta. Accepted values: MANUAL, OKTA_MANAGED. Warning: Use of OKTA_MANAGED requires a feature flag to be enabled. Default value = MANUAL
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/domain#certificate_source_type Domain#certificate_source_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/domain#certificate_source_type Domain#certificate_source_type}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/domain#id Domain#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/domain#id Domain#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -768,7 +768,7 @@ domain.DomainConfig(
 | <code><a href="#@cdktf/provider-okta.domain.DomainConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.domain.DomainConfig.property.name">name</a></code> | <code>str</code> | Custom Domain name. |
 | <code><a href="#@cdktf/provider-okta.domain.DomainConfig.property.certificateSourceType">certificate_source_type</a></code> | <code>str</code> | Optional. |
-| <code><a href="#@cdktf/provider-okta.domain.DomainConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/domain#id Domain#id}. |
+| <code><a href="#@cdktf/provider-okta.domain.DomainConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/domain#id Domain#id}. |
 
 ---
 
@@ -852,7 +852,7 @@ name: str
 
 Custom Domain name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/domain#name Domain#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/domain#name Domain#name}
 
 ---
 
@@ -868,7 +868,7 @@ Optional.
 
 Certificate source type that indicates whether the certificate is provided by the user or Okta. Accepted values: MANUAL, OKTA_MANAGED. Warning: Use of OKTA_MANAGED requires a feature flag to be enabled. Default value = MANUAL
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/domain#certificate_source_type Domain#certificate_source_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/domain#certificate_source_type Domain#certificate_source_type}
 
 ---
 
@@ -880,7 +880,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/domain#id Domain#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/domain#id Domain#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -1,6 +1,6 @@
 # `data_okta_themes`
 
-Refer to the Terraform Registory for docs: [`data_okta_themes`](https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/themes).
+Refer to the Terraform Registory for docs: [`data_okta_themes`](https://registry.terraform.io/providers/okta/okta/4.2.0/docs/data-sources/themes).
 
 # `dataOktaThemes` Submodule <a name="`dataOktaThemes` Submodule" id="@cdktf/provider-okta.dataOktaThemes"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_okta_themes`](https://registry
 
 ### DataOktaThemes <a name="DataOktaThemes" id="@cdktf/provider-okta.dataOktaThemes.DataOktaThemes"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/themes okta_themes}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/data-sources/themes okta_themes}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaThemes.DataOktaThemes.Initializer"></a>
 
@@ -582,7 +582,7 @@ new DataOktaThemesConfig {
 | <code><a href="#@cdktf/provider-okta.dataOktaThemes.DataOktaThemesConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaThemes.DataOktaThemesConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaThemes.DataOktaThemesConfig.property.brandId">BrandId</a></code> | <code>string</code> | Brand ID. |
-| <code><a href="#@cdktf/provider-okta.dataOktaThemes.DataOktaThemesConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/themes#id DataOktaThemes#id}. |
+| <code><a href="#@cdktf/provider-okta.dataOktaThemes.DataOktaThemesConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/data-sources/themes#id DataOktaThemes#id}. |
 
 ---
 
@@ -666,7 +666,7 @@ public string BrandId { get; set; }
 
 Brand ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/themes#brand_id DataOktaThemes#brand_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/data-sources/themes#brand_id DataOktaThemes#brand_id}
 
 ---
 
@@ -678,7 +678,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/themes#id DataOktaThemes#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/data-sources/themes#id DataOktaThemes#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -1,6 +1,6 @@
 # `okta_app_basic_auth`
 
-Refer to the Terraform Registory for docs: [`okta_app_basic_auth`](https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_basic_auth).
+Refer to the Terraform Registory for docs: [`okta_app_basic_auth`](https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/app_basic_auth).
 
 # `appBasicAuth` Submodule <a name="`appBasicAuth` Submodule" id="@cdktf/provider-okta.appBasicAuth"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_app_basic_auth`](https://regis
 
 ### AppBasicAuth <a name="AppBasicAuth" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuth"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_basic_auth okta_app_basic_auth}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/app_basic_auth okta_app_basic_auth}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appBasicAuth.AppBasicAuth.Initializer"></a>
 
@@ -1032,7 +1032,7 @@ const appBasicAuthConfig: appBasicAuth.AppBasicAuthConfig = { ... }
 | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthConfig.property.enduserNote">enduserNote</a></code> | <code>string</code> | Application notes for end users. |
 | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthConfig.property.hideIos">hideIos</a></code> | <code>boolean \| cdktf.IResolvable</code> | Do not display application icon on mobile app. |
 | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthConfig.property.hideWeb">hideWeb</a></code> | <code>boolean \| cdktf.IResolvable</code> | Do not display application icon to users. |
-| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_basic_auth#id AppBasicAuth#id}. |
+| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/app_basic_auth#id AppBasicAuth#id}. |
 | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthConfig.property.logo">logo</a></code> | <code>string</code> | Local path to logo of the application. |
 | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthConfig.property.status">status</a></code> | <code>string</code> | Status of application. |
 | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthTimeouts">AppBasicAuthTimeouts</a></code> | timeouts block. |
@@ -1119,7 +1119,7 @@ public readonly authUrl: string;
 
 Login button field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_basic_auth#auth_url AppBasicAuth#auth_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/app_basic_auth#auth_url AppBasicAuth#auth_url}
 
 ---
 
@@ -1133,7 +1133,7 @@ public readonly label: string;
 
 Pretty name of app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_basic_auth#label AppBasicAuth#label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/app_basic_auth#label AppBasicAuth#label}
 
 ---
 
@@ -1147,7 +1147,7 @@ public readonly url: string;
 
 Login password field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_basic_auth#url AppBasicAuth#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/app_basic_auth#url AppBasicAuth#url}
 
 ---
 
@@ -1161,7 +1161,7 @@ public readonly accessibilityErrorRedirectUrl: string;
 
 Custom error page URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_basic_auth#accessibility_error_redirect_url AppBasicAuth#accessibility_error_redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/app_basic_auth#accessibility_error_redirect_url AppBasicAuth#accessibility_error_redirect_url}
 
 ---
 
@@ -1175,7 +1175,7 @@ public readonly accessibilityLoginRedirectUrl: string;
 
 Custom login page URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_basic_auth#accessibility_login_redirect_url AppBasicAuth#accessibility_login_redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/app_basic_auth#accessibility_login_redirect_url AppBasicAuth#accessibility_login_redirect_url}
 
 ---
 
@@ -1189,7 +1189,7 @@ public readonly accessibilitySelfService: boolean | IResolvable;
 
 Enable self service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_basic_auth#accessibility_self_service AppBasicAuth#accessibility_self_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/app_basic_auth#accessibility_self_service AppBasicAuth#accessibility_self_service}
 
 ---
 
@@ -1203,7 +1203,7 @@ public readonly adminNote: string;
 
 Application notes for admins.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_basic_auth#admin_note AppBasicAuth#admin_note}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/app_basic_auth#admin_note AppBasicAuth#admin_note}
 
 ---
 
@@ -1217,7 +1217,7 @@ public readonly appLinksJson: string;
 
 Displays specific appLinks for the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_basic_auth#app_links_json AppBasicAuth#app_links_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/app_basic_auth#app_links_json AppBasicAuth#app_links_json}
 
 ---
 
@@ -1231,7 +1231,7 @@ public readonly autoSubmitToolbar: boolean | IResolvable;
 
 Display auto submit toolbar.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_basic_auth#auto_submit_toolbar AppBasicAuth#auto_submit_toolbar}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/app_basic_auth#auto_submit_toolbar AppBasicAuth#auto_submit_toolbar}
 
 ---
 
@@ -1245,7 +1245,7 @@ public readonly enduserNote: string;
 
 Application notes for end users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_basic_auth#enduser_note AppBasicAuth#enduser_note}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/app_basic_auth#enduser_note AppBasicAuth#enduser_note}
 
 ---
 
@@ -1259,7 +1259,7 @@ public readonly hideIos: boolean | IResolvable;
 
 Do not display application icon on mobile app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_basic_auth#hide_ios AppBasicAuth#hide_ios}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/app_basic_auth#hide_ios AppBasicAuth#hide_ios}
 
 ---
 
@@ -1273,7 +1273,7 @@ public readonly hideWeb: boolean | IResolvable;
 
 Do not display application icon to users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_basic_auth#hide_web AppBasicAuth#hide_web}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/app_basic_auth#hide_web AppBasicAuth#hide_web}
 
 ---
 
@@ -1285,7 +1285,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_basic_auth#id AppBasicAuth#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/app_basic_auth#id AppBasicAuth#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1302,7 +1302,7 @@ public readonly logo: string;
 
 Local path to logo of the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_basic_auth#logo AppBasicAuth#logo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/app_basic_auth#logo AppBasicAuth#logo}
 
 ---
 
@@ -1316,7 +1316,7 @@ public readonly status: string;
 
 Status of application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_basic_auth#status AppBasicAuth#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/app_basic_auth#status AppBasicAuth#status}
 
 ---
 
@@ -1330,7 +1330,7 @@ public readonly timeouts: AppBasicAuthTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_basic_auth#timeouts AppBasicAuth#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/app_basic_auth#timeouts AppBasicAuth#timeouts}
 
 ---
 
@@ -1348,9 +1348,9 @@ const appBasicAuthTimeouts: appBasicAuth.AppBasicAuthTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_basic_auth#create AppBasicAuth#create}. |
-| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_basic_auth#read AppBasicAuth#read}. |
-| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_basic_auth#update AppBasicAuth#update}. |
+| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/app_basic_auth#create AppBasicAuth#create}. |
+| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/app_basic_auth#read AppBasicAuth#read}. |
+| <code><a href="#@cdktf/provider-okta.appBasicAuth.AppBasicAuthTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/app_basic_auth#update AppBasicAuth#update}. |
 
 ---
 
@@ -1362,7 +1362,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_basic_auth#create AppBasicAuth#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/app_basic_auth#create AppBasicAuth#create}.
 
 ---
 
@@ -1374,7 +1374,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_basic_auth#read AppBasicAuth#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/app_basic_auth#read AppBasicAuth#read}.
 
 ---
 
@@ -1386,7 +1386,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/app_basic_auth#update AppBasicAuth#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/app_basic_auth#update AppBasicAuth#update}.
 
 ---
 

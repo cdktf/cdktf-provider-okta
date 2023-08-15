@@ -1,6 +1,6 @@
 # `okta_auth_server_scope`
 
-Refer to the Terraform Registory for docs: [`okta_auth_server_scope`](https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/auth_server_scope).
+Refer to the Terraform Registory for docs: [`okta_auth_server_scope`](https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/auth_server_scope).
 
 # `authServerScope` Submodule <a name="`authServerScope` Submodule" id="@cdktf/provider-okta.authServerScope"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`okta_auth_server_scope`](https://re
 
 ### AuthServerScope <a name="AuthServerScope" id="@cdktf/provider-okta.authServerScope.AuthServerScope"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/auth_server_scope okta_auth_server_scope}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/auth_server_scope okta_auth_server_scope}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.authServerScope.AuthServerScope.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/authserverscope"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/authserverscope"
 
 authserverscope.NewAuthServerScope(scope Construct, id *string, config AuthServerScopeConfig) AuthServerScope
 ```
@@ -312,7 +312,7 @@ func ResetMetadataPublish()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.authServerScope.AuthServerScope.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/authserverscope"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/authserverscope"
 
 authserverscope.AuthServerScope_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.authServerScope.AuthServerScope.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/authserverscope"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/authserverscope"
 
 authserverscope.AuthServerScope_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ authserverscope.AuthServerScope_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.authServerScope.AuthServerScope.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/authserverscope"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/authserverscope"
 
 authserverscope.AuthServerScope_IsTerraformResource(x interface{}) *bool
 ```
@@ -744,7 +744,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.authServerScope.AuthServerScopeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/authserverscope"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/authserverscope"
 
 &authserverscope.AuthServerScopeConfig {
 	Connection: interface{},
@@ -780,9 +780,9 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/authserverscope"
 | <code><a href="#@cdktf/provider-okta.authServerScope.AuthServerScopeConfig.property.name">Name</a></code> | <code>*string</code> | Auth server scope name. |
 | <code><a href="#@cdktf/provider-okta.authServerScope.AuthServerScopeConfig.property.consent">Consent</a></code> | <code>*string</code> | EA Feature and thus it is simply ignored if the feature is off. |
 | <code><a href="#@cdktf/provider-okta.authServerScope.AuthServerScopeConfig.property.default">Default</a></code> | <code>interface{}</code> | A default scope will be returned in an access token when the client omits the scope parameter in a token request, provided this scope is allowed as part of the access policy rule. |
-| <code><a href="#@cdktf/provider-okta.authServerScope.AuthServerScopeConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/auth_server_scope#description AuthServerScope#description}. |
+| <code><a href="#@cdktf/provider-okta.authServerScope.AuthServerScopeConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/auth_server_scope#description AuthServerScope#description}. |
 | <code><a href="#@cdktf/provider-okta.authServerScope.AuthServerScopeConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | Name of the end user displayed in a consent dialog box. |
-| <code><a href="#@cdktf/provider-okta.authServerScope.AuthServerScopeConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/auth_server_scope#id AuthServerScope#id}. |
+| <code><a href="#@cdktf/provider-okta.authServerScope.AuthServerScopeConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/auth_server_scope#id AuthServerScope#id}. |
 | <code><a href="#@cdktf/provider-okta.authServerScope.AuthServerScopeConfig.property.metadataPublish">MetadataPublish</a></code> | <code>*string</code> | Whether to publish metadata or not, matching API type despite the fact it could just be a boolean. |
 
 ---
@@ -867,7 +867,7 @@ AuthServerId *string
 
 Auth server ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/auth_server_scope#auth_server_id AuthServerScope#auth_server_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/auth_server_scope#auth_server_id AuthServerScope#auth_server_id}
 
 ---
 
@@ -881,7 +881,7 @@ Name *string
 
 Auth server scope name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/auth_server_scope#name AuthServerScope#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/auth_server_scope#name AuthServerScope#name}
 
 ---
 
@@ -895,7 +895,7 @@ Consent *string
 
 EA Feature and thus it is simply ignored if the feature is off.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/auth_server_scope#consent AuthServerScope#consent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/auth_server_scope#consent AuthServerScope#consent}
 
 ---
 
@@ -909,7 +909,7 @@ Default interface{}
 
 A default scope will be returned in an access token when the client omits the scope parameter in a token request, provided this scope is allowed as part of the access policy rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/auth_server_scope#default AuthServerScope#default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/auth_server_scope#default AuthServerScope#default}
 
 ---
 
@@ -921,7 +921,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/auth_server_scope#description AuthServerScope#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/auth_server_scope#description AuthServerScope#description}.
 
 ---
 
@@ -935,7 +935,7 @@ DisplayName *string
 
 Name of the end user displayed in a consent dialog box.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/auth_server_scope#display_name AuthServerScope#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/auth_server_scope#display_name AuthServerScope#display_name}
 
 ---
 
@@ -947,7 +947,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/auth_server_scope#id AuthServerScope#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/auth_server_scope#id AuthServerScope#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -964,7 +964,7 @@ MetadataPublish *string
 
 Whether to publish metadata or not, matching API type despite the fact it could just be a boolean.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/auth_server_scope#metadata_publish AuthServerScope#metadata_publish}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/auth_server_scope#metadata_publish AuthServerScope#metadata_publish}
 
 ---
 

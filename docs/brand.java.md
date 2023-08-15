@@ -1,6 +1,6 @@
 # `okta_brand`
 
-Refer to the Terraform Registory for docs: [`okta_brand`](https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/brand).
+Refer to the Terraform Registory for docs: [`okta_brand`](https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/brand).
 
 # `brand` Submodule <a name="`brand` Submodule" id="@cdktf/provider-okta.brand"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_brand`](https://registry.terra
 
 ### Brand <a name="Brand" id="@cdktf/provider-okta.brand.Brand"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/brand okta_brand}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/brand okta_brand}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.brand.Brand.Initializer"></a>
 
@@ -120,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 Consent for updating the custom privacy policy URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/brand#agree_to_custom_privacy_policy Brand#agree_to_custom_privacy_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/brand#agree_to_custom_privacy_policy Brand#agree_to_custom_privacy_policy}
 
 ---
 
@@ -132,7 +132,7 @@ Brand ID - Note: Okta API for brands only reads and updates therefore the okta_b
 
 Do this by setting brand_id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/brand#brand_id Brand#brand_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/brand#brand_id Brand#brand_id}
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Custom privacy policy URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/brand#custom_privacy_policy_url Brand#custom_privacy_policy_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/brand#custom_privacy_policy_url Brand#custom_privacy_policy_url}
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Removes "Powered by Okta" from the Okta-hosted sign-in page and "© 2021 Okta, Inc." from the Okta End-User Dashboard.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/brand#remove_powered_by_okta Brand#remove_powered_by_okta}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/brand#remove_powered_by_okta Brand#remove_powered_by_okta}
 
 ---
 
@@ -891,7 +891,7 @@ public java.lang.Object getAgreeToCustomPrivacyPolicy();
 
 Consent for updating the custom privacy policy URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/brand#agree_to_custom_privacy_policy Brand#agree_to_custom_privacy_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/brand#agree_to_custom_privacy_policy Brand#agree_to_custom_privacy_policy}
 
 ---
 
@@ -907,7 +907,7 @@ Brand ID - Note: Okta API for brands only reads and updates therefore the okta_b
 
 Do this by setting brand_id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/brand#brand_id Brand#brand_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/brand#brand_id Brand#brand_id}
 
 ---
 
@@ -921,7 +921,7 @@ public java.lang.String getCustomPrivacyPolicyUrl();
 
 Custom privacy policy URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/brand#custom_privacy_policy_url Brand#custom_privacy_policy_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/brand#custom_privacy_policy_url Brand#custom_privacy_policy_url}
 
 ---
 
@@ -935,7 +935,7 @@ public java.lang.Object getRemovePoweredByOkta();
 
 Removes "Powered by Okta" from the Okta-hosted sign-in page and "© 2021 Okta, Inc." from the Okta End-User Dashboard.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/resources/brand#remove_powered_by_okta Brand#remove_powered_by_okta}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/brand#remove_powered_by_okta Brand#remove_powered_by_okta}
 
 ---
 

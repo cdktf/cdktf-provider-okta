@@ -1,6 +1,6 @@
 # `data_okta_trusted_origins`
 
-Refer to the Terraform Registory for docs: [`data_okta_trusted_origins`](https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/trusted_origins).
+Refer to the Terraform Registory for docs: [`data_okta_trusted_origins`](https://registry.terraform.io/providers/okta/okta/4.2.0/docs/data-sources/trusted_origins).
 
 # `dataOktaTrustedOrigins` Submodule <a name="`dataOktaTrustedOrigins` Submodule" id="@cdktf/provider-okta.dataOktaTrustedOrigins"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_okta_trusted_origins`](https:/
 
 ### DataOktaTrustedOrigins <a name="DataOktaTrustedOrigins" id="@cdktf/provider-okta.dataOktaTrustedOrigins.DataOktaTrustedOrigins"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/trusted_origins okta_trusted_origins}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/data-sources/trusted_origins okta_trusted_origins}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaTrustedOrigins.DataOktaTrustedOrigins.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/dataoktatrustedorigins"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktatrustedorigins"
 
 dataoktatrustedorigins.NewDataOktaTrustedOrigins(scope Construct, id *string, config DataOktaTrustedOriginsConfig) DataOktaTrustedOrigins
 ```
@@ -284,7 +284,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.dataOktaTrustedOrigins.DataOktaTrustedOrigins.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/dataoktatrustedorigins"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktatrustedorigins"
 
 dataoktatrustedorigins.DataOktaTrustedOrigins_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.dataOktaTrustedOrigins.DataOktaTrustedOrigins.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/dataoktatrustedorigins"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktatrustedorigins"
 
 dataoktatrustedorigins.DataOktaTrustedOrigins_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ dataoktatrustedorigins.DataOktaTrustedOrigins_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-okta.dataOktaTrustedOrigins.DataOktaTrustedOrigins.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/dataoktatrustedorigins"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktatrustedorigins"
 
 dataoktatrustedorigins.DataOktaTrustedOrigins_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -562,7 +562,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaTrustedOrigins.DataOktaTrustedOriginsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/dataoktatrustedorigins"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktatrustedorigins"
 
 &dataoktatrustedorigins.DataOktaTrustedOriginsConfig {
 	Connection: interface{},
@@ -589,7 +589,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/dataoktatrustedorigins"
 | <code><a href="#@cdktf/provider-okta.dataOktaTrustedOrigins.DataOktaTrustedOriginsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaTrustedOrigins.DataOktaTrustedOriginsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaTrustedOrigins.DataOktaTrustedOriginsConfig.property.filter">Filter</a></code> | <code>*string</code> | Filter criteria. Filter value will be URL-encoded by the provider. |
-| <code><a href="#@cdktf/provider-okta.dataOktaTrustedOrigins.DataOktaTrustedOriginsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/trusted_origins#id DataOktaTrustedOrigins#id}. |
+| <code><a href="#@cdktf/provider-okta.dataOktaTrustedOrigins.DataOktaTrustedOriginsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/data-sources/trusted_origins#id DataOktaTrustedOrigins#id}. |
 
 ---
 
@@ -673,7 +673,7 @@ Filter *string
 
 Filter criteria. Filter value will be URL-encoded by the provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/trusted_origins#filter DataOktaTrustedOrigins#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/data-sources/trusted_origins#filter DataOktaTrustedOrigins#filter}
 
 ---
 
@@ -685,7 +685,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.1.0/docs/data-sources/trusted_origins#id DataOktaTrustedOrigins#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/data-sources/trusted_origins#id DataOktaTrustedOrigins#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -697,7 +697,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaTrustedOrigins.DataOktaTrustedOriginsTrustedOrigins.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/dataoktatrustedorigins"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktatrustedorigins"
 
 &dataoktatrustedorigins.DataOktaTrustedOriginsTrustedOrigins {
 
@@ -712,7 +712,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/dataoktatrustedorigins"
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaTrustedOrigins.DataOktaTrustedOriginsTrustedOriginsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/dataoktatrustedorigins"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktatrustedorigins"
 
 dataoktatrustedorigins.NewDataOktaTrustedOriginsTrustedOriginsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOktaTrustedOriginsTrustedOriginsList
 ```
@@ -844,7 +844,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaTrustedOrigins.DataOktaTrustedOriginsTrustedOriginsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/dataoktatrustedorigins"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktatrustedorigins"
 
 dataoktatrustedorigins.NewDataOktaTrustedOriginsTrustedOriginsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataOktaTrustedOriginsTrustedOriginsOutputReference
 ```
