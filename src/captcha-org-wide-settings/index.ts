@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/captcha_org_wide_settings
+// https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/captcha_org_wide_settings
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface CaptchaOrgWideSettingsConfig extends cdktf.TerraformMetaArgumen
   /**
   * ID of the CAPTCHA
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/captcha_org_wide_settings#captcha_id CaptchaOrgWideSettings#captcha_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/captcha_org_wide_settings#captcha_id CaptchaOrgWideSettings#captcha_id}
   */
   readonly captchaId?: string;
   /**
   * Set of pages that have CAPTCHA enabled
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/captcha_org_wide_settings#enabled_for CaptchaOrgWideSettings#enabled_for}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/captcha_org_wide_settings#enabled_for CaptchaOrgWideSettings#enabled_for}
   */
   readonly enabledFor?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/captcha_org_wide_settings#id CaptchaOrgWideSettings#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/captcha_org_wide_settings#id CaptchaOrgWideSettings#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,7 +34,7 @@ export interface CaptchaOrgWideSettingsConfig extends cdktf.TerraformMetaArgumen
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/captcha_org_wide_settings okta_captcha_org_wide_settings}
+* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/captcha_org_wide_settings okta_captcha_org_wide_settings}
 */
 export class CaptchaOrgWideSettings extends cdktf.TerraformResource {
 
@@ -48,7 +48,7 @@ export class CaptchaOrgWideSettings extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/captcha_org_wide_settings okta_captcha_org_wide_settings} Resource
+  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/captcha_org_wide_settings okta_captcha_org_wide_settings} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -59,7 +59,7 @@ export class CaptchaOrgWideSettings extends cdktf.TerraformResource {
       terraformResourceType: 'okta_captcha_org_wide_settings',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '4.2.0',
+        providerVersion: '4.3.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

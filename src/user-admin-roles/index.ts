@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/user_admin_roles
+// https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/user_admin_roles
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface UserAdminRolesConfig extends cdktf.TerraformMetaArguments {
   /**
   * User Okta admin roles - ie. ['APP_ADMIN', 'USER_ADMIN']
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/user_admin_roles#admin_roles UserAdminRoles#admin_roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/user_admin_roles#admin_roles UserAdminRoles#admin_roles}
   */
   readonly adminRoles: string[];
   /**
   * When this setting is enabled, the admins won't receive any of the default Okta administrator emails
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/user_admin_roles#disable_notifications UserAdminRoles#disable_notifications}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/user_admin_roles#disable_notifications UserAdminRoles#disable_notifications}
   */
   readonly disableNotifications?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/user_admin_roles#id UserAdminRoles#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/user_admin_roles#id UserAdminRoles#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,13 +34,13 @@ export interface UserAdminRolesConfig extends cdktf.TerraformMetaArguments {
   /**
   * ID of a Okta User
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/user_admin_roles#user_id UserAdminRoles#user_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/user_admin_roles#user_id UserAdminRoles#user_id}
   */
   readonly userId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/user_admin_roles okta_user_admin_roles}
+* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/user_admin_roles okta_user_admin_roles}
 */
 export class UserAdminRoles extends cdktf.TerraformResource {
 
@@ -54,7 +54,7 @@ export class UserAdminRoles extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/user_admin_roles okta_user_admin_roles} Resource
+  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/user_admin_roles okta_user_admin_roles} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -65,7 +65,7 @@ export class UserAdminRoles extends cdktf.TerraformResource {
       terraformResourceType: 'okta_user_admin_roles',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '4.2.0',
+        providerVersion: '4.3.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

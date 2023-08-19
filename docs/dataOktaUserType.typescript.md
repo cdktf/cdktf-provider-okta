@@ -1,6 +1,6 @@
 # `data_okta_user_type`
 
-Refer to the Terraform Registory for docs: [`data_okta_user_type`](https://registry.terraform.io/providers/okta/okta/4.2.0/docs/data-sources/user_type).
+Refer to the Terraform Registory for docs: [`data_okta_user_type`](https://registry.terraform.io/providers/okta/okta/4.3.0/docs/data-sources/user_type).
 
 # `dataOktaUserType` Submodule <a name="`dataOktaUserType` Submodule" id="@cdktf/provider-okta.dataOktaUserType"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_okta_user_type`](https://regis
 
 ### DataOktaUserType <a name="DataOktaUserType" id="@cdktf/provider-okta.dataOktaUserType.DataOktaUserType"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/data-sources/user_type okta_user_type}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/data-sources/user_type okta_user_type}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaUserType.DataOktaUserType.Initializer"></a>
 
@@ -582,8 +582,8 @@ const dataOktaUserTypeConfig: dataOktaUserType.DataOktaUserTypeConfig = { ... }
 | <code><a href="#@cdktf/provider-okta.dataOktaUserType.DataOktaUserTypeConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaUserType.DataOktaUserTypeConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaUserType.DataOktaUserTypeConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.dataOktaUserType.DataOktaUserTypeConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/data-sources/user_type#name DataOktaUserType#name}. |
-| <code><a href="#@cdktf/provider-okta.dataOktaUserType.DataOktaUserTypeConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/data-sources/user_type#id DataOktaUserType#id}. |
+| <code><a href="#@cdktf/provider-okta.dataOktaUserType.DataOktaUserTypeConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/data-sources/user_type#name DataOktaUserType#name}. |
+| <code><a href="#@cdktf/provider-okta.dataOktaUserType.DataOktaUserTypeConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/data-sources/user_type#id DataOktaUserType#id}. |
 
 ---
 
@@ -665,7 +665,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/data-sources/user_type#name DataOktaUserType#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/data-sources/user_type#name DataOktaUserType#name}.
 
 ---
 
@@ -677,7 +677,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/data-sources/user_type#id DataOktaUserType#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/data-sources/user_type#id DataOktaUserType#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

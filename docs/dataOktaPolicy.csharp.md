@@ -1,6 +1,6 @@
 # `data_okta_policy`
 
-Refer to the Terraform Registory for docs: [`data_okta_policy`](https://registry.terraform.io/providers/okta/okta/4.2.0/docs/data-sources/policy).
+Refer to the Terraform Registory for docs: [`data_okta_policy`](https://registry.terraform.io/providers/okta/okta/4.3.0/docs/data-sources/policy).
 
 # `dataOktaPolicy` Submodule <a name="`dataOktaPolicy` Submodule" id="@cdktf/provider-okta.dataOktaPolicy"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_okta_policy`](https://registry
 
 ### DataOktaPolicy <a name="DataOktaPolicy" id="@cdktf/provider-okta.dataOktaPolicy.DataOktaPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/data-sources/policy okta_policy}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/data-sources/policy okta_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaPolicy.DataOktaPolicy.Initializer"></a>
 
@@ -606,7 +606,7 @@ new DataOktaPolicyConfig {
 | <code><a href="#@cdktf/provider-okta.dataOktaPolicy.DataOktaPolicyConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaPolicy.DataOktaPolicyConfig.property.name">Name</a></code> | <code>string</code> | Name of the policy. |
 | <code><a href="#@cdktf/provider-okta.dataOktaPolicy.DataOktaPolicyConfig.property.type">Type</a></code> | <code>string</code> | Policy type, see https://developer.okta.com/docs/reference/api/policy/#policy-object. |
-| <code><a href="#@cdktf/provider-okta.dataOktaPolicy.DataOktaPolicyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/data-sources/policy#id DataOktaPolicy#id}. |
+| <code><a href="#@cdktf/provider-okta.dataOktaPolicy.DataOktaPolicyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/data-sources/policy#id DataOktaPolicy#id}. |
 
 ---
 
@@ -690,7 +690,7 @@ public string Name { get; set; }
 
 Name of the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/data-sources/policy#name DataOktaPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/data-sources/policy#name DataOktaPolicy#name}
 
 ---
 
@@ -704,7 +704,7 @@ public string Type { get; set; }
 
 Policy type, see https://developer.okta.com/docs/reference/api/policy/#policy-object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/data-sources/policy#type DataOktaPolicy#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/data-sources/policy#type DataOktaPolicy#type}
 
 ---
 
@@ -716,7 +716,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/data-sources/policy#id DataOktaPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/data-sources/policy#id DataOktaPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

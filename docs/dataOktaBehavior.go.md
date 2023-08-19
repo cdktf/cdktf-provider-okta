@@ -1,6 +1,6 @@
 # `data_okta_behavior`
 
-Refer to the Terraform Registory for docs: [`data_okta_behavior`](https://registry.terraform.io/providers/okta/okta/4.2.0/docs/data-sources/behavior).
+Refer to the Terraform Registory for docs: [`data_okta_behavior`](https://registry.terraform.io/providers/okta/okta/4.3.0/docs/data-sources/behavior).
 
 # `dataOktaBehavior` Submodule <a name="`dataOktaBehavior` Submodule" id="@cdktf/provider-okta.dataOktaBehavior"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_okta_behavior`](https://regist
 
 ### DataOktaBehavior <a name="DataOktaBehavior" id="@cdktf/provider-okta.dataOktaBehavior.DataOktaBehavior"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/data-sources/behavior okta_behavior}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/data-sources/behavior okta_behavior}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaBehavior.DataOktaBehavior.Initializer"></a>
 
@@ -610,8 +610,8 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/dataoktabehavior"
 | <code><a href="#@cdktf/provider-okta.dataOktaBehavior.DataOktaBehaviorConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaBehavior.DataOktaBehaviorConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaBehavior.DataOktaBehaviorConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.dataOktaBehavior.DataOktaBehaviorConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/data-sources/behavior#id DataOktaBehavior#id}. |
-| <code><a href="#@cdktf/provider-okta.dataOktaBehavior.DataOktaBehaviorConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/data-sources/behavior#name DataOktaBehavior#name}. |
+| <code><a href="#@cdktf/provider-okta.dataOktaBehavior.DataOktaBehaviorConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/data-sources/behavior#id DataOktaBehavior#id}. |
+| <code><a href="#@cdktf/provider-okta.dataOktaBehavior.DataOktaBehaviorConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/data-sources/behavior#name DataOktaBehavior#name}. |
 
 ---
 
@@ -693,7 +693,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/data-sources/behavior#id DataOktaBehavior#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/data-sources/behavior#id DataOktaBehavior#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -708,7 +708,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/data-sources/behavior#name DataOktaBehavior#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/data-sources/behavior#name DataOktaBehavior#name}.
 
 ---
 
