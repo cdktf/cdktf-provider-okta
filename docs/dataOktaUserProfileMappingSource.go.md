@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaUserProfileMappingSource.DataOktaUserProfileMappingSource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktauserprofilemappingsource"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/dataoktauserprofilemappingsource"
 
 dataoktauserprofilemappingsource.NewDataOktaUserProfileMappingSource(scope Construct, id *string, config DataOktaUserProfileMappingSourceConfig) DataOktaUserProfileMappingSource
 ```
@@ -270,7 +270,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.dataOktaUserProfileMappingSource.DataOktaUserProfileMappingSource.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktauserprofilemappingsource"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/dataoktauserprofilemappingsource"
 
 dataoktauserprofilemappingsource.DataOktaUserProfileMappingSource_IsConstruct(x interface{}) *bool
 ```
@@ -302,7 +302,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.dataOktaUserProfileMappingSource.DataOktaUserProfileMappingSource.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktauserprofilemappingsource"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/dataoktauserprofilemappingsource"
 
 dataoktauserprofilemappingsource.DataOktaUserProfileMappingSource_IsTerraformElement(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ dataoktauserprofilemappingsource.DataOktaUserProfileMappingSource_IsTerraformEle
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-okta.dataOktaUserProfileMappingSource.DataOktaUserProfileMappingSource.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktauserprofilemappingsource"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/dataoktauserprofilemappingsource"
 
 dataoktauserprofilemappingsource.DataOktaUserProfileMappingSource_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -526,7 +526,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaUserProfileMappingSource.DataOktaUserProfileMappingSourceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktauserprofilemappingsource"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/dataoktauserprofilemappingsource"
 
 &dataoktauserprofilemappingsource.DataOktaUserProfileMappingSourceConfig {
 	Connection: interface{},
