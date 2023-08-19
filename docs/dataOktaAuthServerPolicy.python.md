@@ -1,6 +1,6 @@
 # `data_okta_auth_server_policy`
 
-Refer to the Terraform Registory for docs: [`data_okta_auth_server_policy`](https://registry.terraform.io/providers/okta/okta/4.2.0/docs/data-sources/auth_server_policy).
+Refer to the Terraform Registory for docs: [`data_okta_auth_server_policy`](https://registry.terraform.io/providers/okta/okta/4.3.0/docs/data-sources/auth_server_policy).
 
 # `dataOktaAuthServerPolicy` Submodule <a name="`dataOktaAuthServerPolicy` Submodule" id="@cdktf/provider-okta.dataOktaAuthServerPolicy"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_okta_auth_server_policy`](http
 
 ### DataOktaAuthServerPolicy <a name="DataOktaAuthServerPolicy" id="@cdktf/provider-okta.dataOktaAuthServerPolicy.DataOktaAuthServerPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/data-sources/auth_server_policy okta_auth_server_policy}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/data-sources/auth_server_policy okta_auth_server_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaAuthServerPolicy.DataOktaAuthServerPolicy.Initializer"></a>
 
@@ -44,7 +44,7 @@ dataOktaAuthServerPolicy.DataOktaAuthServerPolicy(
 | <code><a href="#@cdktf/provider-okta.dataOktaAuthServerPolicy.DataOktaAuthServerPolicy.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaAuthServerPolicy.DataOktaAuthServerPolicy.Initializer.parameter.authServerId">auth_server_id</a></code> | <code>str</code> | Auth server ID. |
 | <code><a href="#@cdktf/provider-okta.dataOktaAuthServerPolicy.DataOktaAuthServerPolicy.Initializer.parameter.name">name</a></code> | <code>str</code> | Name of the policy. |
-| <code><a href="#@cdktf/provider-okta.dataOktaAuthServerPolicy.DataOktaAuthServerPolicy.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/data-sources/auth_server_policy#id DataOktaAuthServerPolicy#id}. |
+| <code><a href="#@cdktf/provider-okta.dataOktaAuthServerPolicy.DataOktaAuthServerPolicy.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/data-sources/auth_server_policy#id DataOktaAuthServerPolicy#id}. |
 
 ---
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 Auth server ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/data-sources/auth_server_policy#auth_server_id DataOktaAuthServerPolicy#auth_server_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/data-sources/auth_server_policy#auth_server_id DataOktaAuthServerPolicy#auth_server_id}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Name of the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/data-sources/auth_server_policy#name DataOktaAuthServerPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/data-sources/auth_server_policy#name DataOktaAuthServerPolicy#name}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/data-sources/auth_server_policy#id DataOktaAuthServerPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/data-sources/auth_server_policy#id DataOktaAuthServerPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -748,7 +748,7 @@ dataOktaAuthServerPolicy.DataOktaAuthServerPolicyConfig(
 | <code><a href="#@cdktf/provider-okta.dataOktaAuthServerPolicy.DataOktaAuthServerPolicyConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaAuthServerPolicy.DataOktaAuthServerPolicyConfig.property.authServerId">auth_server_id</a></code> | <code>str</code> | Auth server ID. |
 | <code><a href="#@cdktf/provider-okta.dataOktaAuthServerPolicy.DataOktaAuthServerPolicyConfig.property.name">name</a></code> | <code>str</code> | Name of the policy. |
-| <code><a href="#@cdktf/provider-okta.dataOktaAuthServerPolicy.DataOktaAuthServerPolicyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/data-sources/auth_server_policy#id DataOktaAuthServerPolicy#id}. |
+| <code><a href="#@cdktf/provider-okta.dataOktaAuthServerPolicy.DataOktaAuthServerPolicyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/data-sources/auth_server_policy#id DataOktaAuthServerPolicy#id}. |
 
 ---
 
@@ -832,7 +832,7 @@ auth_server_id: str
 
 Auth server ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/data-sources/auth_server_policy#auth_server_id DataOktaAuthServerPolicy#auth_server_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/data-sources/auth_server_policy#auth_server_id DataOktaAuthServerPolicy#auth_server_id}
 
 ---
 
@@ -846,7 +846,7 @@ name: str
 
 Name of the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/data-sources/auth_server_policy#name DataOktaAuthServerPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/data-sources/auth_server_policy#name DataOktaAuthServerPolicy#name}
 
 ---
 
@@ -858,7 +858,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/data-sources/auth_server_policy#id DataOktaAuthServerPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/data-sources/auth_server_policy#id DataOktaAuthServerPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

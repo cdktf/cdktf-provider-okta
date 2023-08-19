@@ -1,3 +1,3 @@
 # `data_okta_domain`
 
-Refer to the Terraform Registory for docs: [`data_okta_domain`](https://registry.terraform.io/providers/okta/okta/4.2.0/docs/data-sources/domain).
+Refer to the Terraform Registory for docs: [`data_okta_domain`](https://registry.terraform.io/providers/okta/okta/4.3.0/docs/data-sources/domain).

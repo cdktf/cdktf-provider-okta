@@ -1,6 +1,6 @@
 # `okta_auth_server_claim_default`
 
-Refer to the Terraform Registory for docs: [`okta_auth_server_claim_default`](https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/auth_server_claim_default).
+Refer to the Terraform Registory for docs: [`okta_auth_server_claim_default`](https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/auth_server_claim_default).
 
 # `authServerClaimDefault` Submodule <a name="`authServerClaimDefault` Submodule" id="@cdktf/provider-okta.authServerClaimDefault"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_auth_server_claim_default`](ht
 
 ### AuthServerClaimDefault <a name="AuthServerClaimDefault" id="@cdktf/provider-okta.authServerClaimDefault.AuthServerClaimDefault"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/auth_server_claim_default okta_auth_server_claim_default}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/auth_server_claim_default okta_auth_server_claim_default}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.authServerClaimDefault.AuthServerClaimDefault.Initializer"></a>
 
@@ -46,9 +46,9 @@ authServerClaimDefault.AuthServerClaimDefault(
 | <code><a href="#@cdktf/provider-okta.authServerClaimDefault.AuthServerClaimDefault.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.authServerClaimDefault.AuthServerClaimDefault.Initializer.parameter.authServerId">auth_server_id</a></code> | <code>str</code> | Auth server ID. |
 | <code><a href="#@cdktf/provider-okta.authServerClaimDefault.AuthServerClaimDefault.Initializer.parameter.name">name</a></code> | <code>str</code> | Default auth server claim name. |
-| <code><a href="#@cdktf/provider-okta.authServerClaimDefault.AuthServerClaimDefault.Initializer.parameter.alwaysIncludeInToken">always_include_in_token</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/auth_server_claim_default#always_include_in_token AuthServerClaimDefault#always_include_in_token}. |
-| <code><a href="#@cdktf/provider-okta.authServerClaimDefault.AuthServerClaimDefault.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/auth_server_claim_default#id AuthServerClaimDefault#id}. |
-| <code><a href="#@cdktf/provider-okta.authServerClaimDefault.AuthServerClaimDefault.Initializer.parameter.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/auth_server_claim_default#value AuthServerClaimDefault#value}. |
+| <code><a href="#@cdktf/provider-okta.authServerClaimDefault.AuthServerClaimDefault.Initializer.parameter.alwaysIncludeInToken">always_include_in_token</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/auth_server_claim_default#always_include_in_token AuthServerClaimDefault#always_include_in_token}. |
+| <code><a href="#@cdktf/provider-okta.authServerClaimDefault.AuthServerClaimDefault.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/auth_server_claim_default#id AuthServerClaimDefault#id}. |
+| <code><a href="#@cdktf/provider-okta.authServerClaimDefault.AuthServerClaimDefault.Initializer.parameter.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/auth_server_claim_default#value AuthServerClaimDefault#value}. |
 
 ---
 
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 Auth server ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/auth_server_claim_default#auth_server_id AuthServerClaimDefault#auth_server_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/auth_server_claim_default#auth_server_id AuthServerClaimDefault#auth_server_id}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Default auth server claim name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/auth_server_claim_default#name AuthServerClaimDefault#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/auth_server_claim_default#name AuthServerClaimDefault#name}
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/auth_server_claim_default#always_include_in_token AuthServerClaimDefault#always_include_in_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/auth_server_claim_default#always_include_in_token AuthServerClaimDefault#always_include_in_token}.
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/auth_server_claim_default#id AuthServerClaimDefault#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/auth_server_claim_default#id AuthServerClaimDefault#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -155,7 +155,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/auth_server_claim_default#value AuthServerClaimDefault#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/auth_server_claim_default#value AuthServerClaimDefault#value}.
 
 ---
 
@@ -861,9 +861,9 @@ authServerClaimDefault.AuthServerClaimDefaultConfig(
 | <code><a href="#@cdktf/provider-okta.authServerClaimDefault.AuthServerClaimDefaultConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.authServerClaimDefault.AuthServerClaimDefaultConfig.property.authServerId">auth_server_id</a></code> | <code>str</code> | Auth server ID. |
 | <code><a href="#@cdktf/provider-okta.authServerClaimDefault.AuthServerClaimDefaultConfig.property.name">name</a></code> | <code>str</code> | Default auth server claim name. |
-| <code><a href="#@cdktf/provider-okta.authServerClaimDefault.AuthServerClaimDefaultConfig.property.alwaysIncludeInToken">always_include_in_token</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/auth_server_claim_default#always_include_in_token AuthServerClaimDefault#always_include_in_token}. |
-| <code><a href="#@cdktf/provider-okta.authServerClaimDefault.AuthServerClaimDefaultConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/auth_server_claim_default#id AuthServerClaimDefault#id}. |
-| <code><a href="#@cdktf/provider-okta.authServerClaimDefault.AuthServerClaimDefaultConfig.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/auth_server_claim_default#value AuthServerClaimDefault#value}. |
+| <code><a href="#@cdktf/provider-okta.authServerClaimDefault.AuthServerClaimDefaultConfig.property.alwaysIncludeInToken">always_include_in_token</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/auth_server_claim_default#always_include_in_token AuthServerClaimDefault#always_include_in_token}. |
+| <code><a href="#@cdktf/provider-okta.authServerClaimDefault.AuthServerClaimDefaultConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/auth_server_claim_default#id AuthServerClaimDefault#id}. |
+| <code><a href="#@cdktf/provider-okta.authServerClaimDefault.AuthServerClaimDefaultConfig.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/auth_server_claim_default#value AuthServerClaimDefault#value}. |
 
 ---
 
@@ -947,7 +947,7 @@ auth_server_id: str
 
 Auth server ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/auth_server_claim_default#auth_server_id AuthServerClaimDefault#auth_server_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/auth_server_claim_default#auth_server_id AuthServerClaimDefault#auth_server_id}
 
 ---
 
@@ -961,7 +961,7 @@ name: str
 
 Default auth server claim name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/auth_server_claim_default#name AuthServerClaimDefault#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/auth_server_claim_default#name AuthServerClaimDefault#name}
 
 ---
 
@@ -973,7 +973,7 @@ always_include_in_token: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/auth_server_claim_default#always_include_in_token AuthServerClaimDefault#always_include_in_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/auth_server_claim_default#always_include_in_token AuthServerClaimDefault#always_include_in_token}.
 
 ---
 
@@ -985,7 +985,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/auth_server_claim_default#id AuthServerClaimDefault#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/auth_server_claim_default#id AuthServerClaimDefault#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1000,7 +1000,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/auth_server_claim_default#value AuthServerClaimDefault#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/auth_server_claim_default#value AuthServerClaimDefault#value}.
 
 ---
 

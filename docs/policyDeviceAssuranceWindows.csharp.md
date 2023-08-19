@@ -1,6 +1,6 @@
 # `okta_policy_device_assurance_windows`
 
-Refer to the Terraform Registory for docs: [`okta_policy_device_assurance_windows`](https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/policy_device_assurance_windows).
+Refer to the Terraform Registory for docs: [`okta_policy_device_assurance_windows`](https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/policy_device_assurance_windows).
 
 # `policyDeviceAssuranceWindows` Submodule <a name="`policyDeviceAssuranceWindows` Submodule" id="@cdktf/provider-okta.policyDeviceAssuranceWindows"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_policy_device_assurance_window
 
 ### PolicyDeviceAssuranceWindows <a name="PolicyDeviceAssuranceWindows" id="@cdktf/provider-okta.policyDeviceAssuranceWindows.PolicyDeviceAssuranceWindows"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/policy_device_assurance_windows okta_policy_device_assurance_windows}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/policy_device_assurance_windows okta_policy_device_assurance_windows}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.policyDeviceAssuranceWindows.PolicyDeviceAssuranceWindows.Initializer"></a>
 
@@ -1456,7 +1456,7 @@ public string Name { get; set; }
 
 Policy device assurance name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/policy_device_assurance_windows#name PolicyDeviceAssuranceWindows#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/policy_device_assurance_windows#name PolicyDeviceAssuranceWindows#name}
 
 ---
 
@@ -1470,7 +1470,7 @@ public string[] DiskEncryptionType { get; set; }
 
 List of disk encryption type, can be ALL_INTERNAL_VOLUMES.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/policy_device_assurance_windows#disk_encryption_type PolicyDeviceAssuranceWindows#disk_encryption_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/policy_device_assurance_windows#disk_encryption_type PolicyDeviceAssuranceWindows#disk_encryption_type}
 
 ---
 
@@ -1484,7 +1484,7 @@ public string OsVersion { get; set; }
 
 The device os minimum version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/policy_device_assurance_windows#os_version PolicyDeviceAssuranceWindows#os_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/policy_device_assurance_windows#os_version PolicyDeviceAssuranceWindows#os_version}
 
 ---
 
@@ -1498,7 +1498,7 @@ public string[] ScreenlockType { get; set; }
 
 List of screenlock type, can be BIOMETRIC or BIOMETRIC, PASSCODE.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/policy_device_assurance_windows#screenlock_type PolicyDeviceAssuranceWindows#screenlock_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/policy_device_assurance_windows#screenlock_type PolicyDeviceAssuranceWindows#screenlock_type}
 
 ---
 
@@ -1512,7 +1512,7 @@ public object SecureHardwarePresent { get; set; }
 
 Indicates if the device constains a secure hardware functionality.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/policy_device_assurance_windows#secure_hardware_present PolicyDeviceAssuranceWindows#secure_hardware_present}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/policy_device_assurance_windows#secure_hardware_present PolicyDeviceAssuranceWindows#secure_hardware_present}
 
 ---
 
@@ -1526,7 +1526,7 @@ public object ThirdPartySignalProviders { get; set; }
 
 Check to include third party signal provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/policy_device_assurance_windows#third_party_signal_providers PolicyDeviceAssuranceWindows#third_party_signal_providers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/policy_device_assurance_windows#third_party_signal_providers PolicyDeviceAssuranceWindows#third_party_signal_providers}
 
 ---
 
@@ -1540,7 +1540,7 @@ public string TpspBrowserVersion { get; set; }
 
 Third party signal provider minimum browser version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/policy_device_assurance_windows#tpsp_browser_version PolicyDeviceAssuranceWindows#tpsp_browser_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/policy_device_assurance_windows#tpsp_browser_version PolicyDeviceAssuranceWindows#tpsp_browser_version}
 
 ---
 
@@ -1554,7 +1554,7 @@ public object TpspBuiltinDnsClientEnabled { get; set; }
 
 Third party signal provider builtin dns client enable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/policy_device_assurance_windows#tpsp_builtin_dns_client_enabled PolicyDeviceAssuranceWindows#tpsp_builtin_dns_client_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/policy_device_assurance_windows#tpsp_builtin_dns_client_enabled PolicyDeviceAssuranceWindows#tpsp_builtin_dns_client_enabled}
 
 ---
 
@@ -1568,7 +1568,7 @@ public object TpspChromeRemoteDesktopAppBlocked { get; set; }
 
 Third party signal provider chrome remote desktop app blocked.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/policy_device_assurance_windows#tpsp_chrome_remote_desktop_app_blocked PolicyDeviceAssuranceWindows#tpsp_chrome_remote_desktop_app_blocked}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/policy_device_assurance_windows#tpsp_chrome_remote_desktop_app_blocked PolicyDeviceAssuranceWindows#tpsp_chrome_remote_desktop_app_blocked}
 
 ---
 
@@ -1582,7 +1582,7 @@ public string TpspCrowdStrikeAgentId { get; set; }
 
 Third party signal provider crowdstrike agent id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/policy_device_assurance_windows#tpsp_crowd_strike_agent_id PolicyDeviceAssuranceWindows#tpsp_crowd_strike_agent_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/policy_device_assurance_windows#tpsp_crowd_strike_agent_id PolicyDeviceAssuranceWindows#tpsp_crowd_strike_agent_id}
 
 ---
 
@@ -1596,7 +1596,7 @@ public string TpspCrowdStrikeCustomerId { get; set; }
 
 Third party signal provider crowdstrike user id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/policy_device_assurance_windows#tpsp_crowd_strike_customer_id PolicyDeviceAssuranceWindows#tpsp_crowd_strike_customer_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/policy_device_assurance_windows#tpsp_crowd_strike_customer_id PolicyDeviceAssuranceWindows#tpsp_crowd_strike_customer_id}
 
 ---
 
@@ -1610,7 +1610,7 @@ public string TpspDeviceEnrollmentDomain { get; set; }
 
 Third party signal provider device enrollment domain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/policy_device_assurance_windows#tpsp_device_enrollment_domain PolicyDeviceAssuranceWindows#tpsp_device_enrollment_domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/policy_device_assurance_windows#tpsp_device_enrollment_domain PolicyDeviceAssuranceWindows#tpsp_device_enrollment_domain}
 
 ---
 
@@ -1624,7 +1624,7 @@ public object TpspDiskEncrypted { get; set; }
 
 Third party signal provider disk encrypted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/policy_device_assurance_windows#tpsp_disk_encrypted PolicyDeviceAssuranceWindows#tpsp_disk_encrypted}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/policy_device_assurance_windows#tpsp_disk_encrypted PolicyDeviceAssuranceWindows#tpsp_disk_encrypted}
 
 ---
 
@@ -1638,7 +1638,7 @@ public string TpspKeyTrustLevel { get; set; }
 
 Third party signal provider key trust level.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/policy_device_assurance_windows#tpsp_key_trust_level PolicyDeviceAssuranceWindows#tpsp_key_trust_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/policy_device_assurance_windows#tpsp_key_trust_level PolicyDeviceAssuranceWindows#tpsp_key_trust_level}
 
 ---
 
@@ -1652,7 +1652,7 @@ public object TpspOsFirewall { get; set; }
 
 Third party signal provider os firewall.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/policy_device_assurance_windows#tpsp_os_firewall PolicyDeviceAssuranceWindows#tpsp_os_firewall}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/policy_device_assurance_windows#tpsp_os_firewall PolicyDeviceAssuranceWindows#tpsp_os_firewall}
 
 ---
 
@@ -1666,7 +1666,7 @@ public string TpspOsVersion { get; set; }
 
 Third party signal provider minimum os version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/policy_device_assurance_windows#tpsp_os_version PolicyDeviceAssuranceWindows#tpsp_os_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/policy_device_assurance_windows#tpsp_os_version PolicyDeviceAssuranceWindows#tpsp_os_version}
 
 ---
 
@@ -1680,7 +1680,7 @@ public string TpspPasswordProctectionWarningTrigger { get; set; }
 
 Third party signal provider password protection warning trigger.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/policy_device_assurance_windows#tpsp_password_proctection_warning_trigger PolicyDeviceAssuranceWindows#tpsp_password_proctection_warning_trigger}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/policy_device_assurance_windows#tpsp_password_proctection_warning_trigger PolicyDeviceAssuranceWindows#tpsp_password_proctection_warning_trigger}
 
 ---
 
@@ -1694,7 +1694,7 @@ public object TpspRealtimeUrlCheckMode { get; set; }
 
 Third party signal provider realtime url check mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/policy_device_assurance_windows#tpsp_realtime_url_check_mode PolicyDeviceAssuranceWindows#tpsp_realtime_url_check_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/policy_device_assurance_windows#tpsp_realtime_url_check_mode PolicyDeviceAssuranceWindows#tpsp_realtime_url_check_mode}
 
 ---
 
@@ -1708,7 +1708,7 @@ public string TpspSafeBrowsingProtectionLevel { get; set; }
 
 Third party signal provider safe browsing protection level.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/policy_device_assurance_windows#tpsp_safe_browsing_protection_level PolicyDeviceAssuranceWindows#tpsp_safe_browsing_protection_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/policy_device_assurance_windows#tpsp_safe_browsing_protection_level PolicyDeviceAssuranceWindows#tpsp_safe_browsing_protection_level}
 
 ---
 
@@ -1722,7 +1722,7 @@ public object TpspScreenLockSecured { get; set; }
 
 Third party signal provider screen lock secure.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/policy_device_assurance_windows#tpsp_screen_lock_secured PolicyDeviceAssuranceWindows#tpsp_screen_lock_secured}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/policy_device_assurance_windows#tpsp_screen_lock_secured PolicyDeviceAssuranceWindows#tpsp_screen_lock_secured}
 
 ---
 
@@ -1736,7 +1736,7 @@ public object TpspSecureBootEnabled { get; set; }
 
 Third party signal provider secure boot enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/policy_device_assurance_windows#tpsp_secure_boot_enabled PolicyDeviceAssuranceWindows#tpsp_secure_boot_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/policy_device_assurance_windows#tpsp_secure_boot_enabled PolicyDeviceAssuranceWindows#tpsp_secure_boot_enabled}
 
 ---
 
@@ -1750,7 +1750,7 @@ public object TpspSiteIsolationEnabled { get; set; }
 
 Third party signal provider site isolation enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/policy_device_assurance_windows#tpsp_site_isolation_enabled PolicyDeviceAssuranceWindows#tpsp_site_isolation_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/policy_device_assurance_windows#tpsp_site_isolation_enabled PolicyDeviceAssuranceWindows#tpsp_site_isolation_enabled}
 
 ---
 
@@ -1764,7 +1764,7 @@ public object TpspThirdPartyBlockingEnabled { get; set; }
 
 Third party signal provider third party blocking enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/policy_device_assurance_windows#tpsp_third_party_blocking_enabled PolicyDeviceAssuranceWindows#tpsp_third_party_blocking_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/policy_device_assurance_windows#tpsp_third_party_blocking_enabled PolicyDeviceAssuranceWindows#tpsp_third_party_blocking_enabled}
 
 ---
 
@@ -1778,7 +1778,7 @@ public string TpspWindowsMachineDomain { get; set; }
 
 Third party signal provider windows machine domain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/policy_device_assurance_windows#tpsp_windows_machine_domain PolicyDeviceAssuranceWindows#tpsp_windows_machine_domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/policy_device_assurance_windows#tpsp_windows_machine_domain PolicyDeviceAssuranceWindows#tpsp_windows_machine_domain}
 
 ---
 
@@ -1792,7 +1792,7 @@ public string TpspWindowsUserDomain { get; set; }
 
 Third party signal provider windows user domain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/policy_device_assurance_windows#tpsp_windows_user_domain PolicyDeviceAssuranceWindows#tpsp_windows_user_domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/policy_device_assurance_windows#tpsp_windows_user_domain PolicyDeviceAssuranceWindows#tpsp_windows_user_domain}
 
 ---
 

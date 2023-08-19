@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/user_factor_question
+// https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/user_factor_question
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface UserFactorQuestionConfig extends cdktf.TerraformMetaArguments {
   /**
   * User password security answer
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/user_factor_question#answer UserFactorQuestion#answer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/user_factor_question#answer UserFactorQuestion#answer}
   */
   readonly answer: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/user_factor_question#id UserFactorQuestion#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/user_factor_question#id UserFactorQuestion#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,19 +23,19 @@ export interface UserFactorQuestionConfig extends cdktf.TerraformMetaArguments {
   /**
   * Unique key for question
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/user_factor_question#key UserFactorQuestion#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/user_factor_question#key UserFactorQuestion#key}
   */
   readonly key: string;
   /**
   * ID of a Okta User
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/user_factor_question#user_id UserFactorQuestion#user_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/user_factor_question#user_id UserFactorQuestion#user_id}
   */
   readonly userId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/user_factor_question okta_user_factor_question}
+* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/user_factor_question okta_user_factor_question}
 */
 export class UserFactorQuestion extends cdktf.TerraformResource {
 
@@ -54,7 +49,7 @@ export class UserFactorQuestion extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/user_factor_question okta_user_factor_question} Resource
+  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/user_factor_question okta_user_factor_question} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -65,7 +60,7 @@ export class UserFactorQuestion extends cdktf.TerraformResource {
       terraformResourceType: 'okta_user_factor_question',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '4.2.0',
+        providerVersion: '4.3.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

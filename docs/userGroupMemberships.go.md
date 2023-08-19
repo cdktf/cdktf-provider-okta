@@ -1,6 +1,6 @@
 # `okta_user_group_memberships`
 
-Refer to the Terraform Registory for docs: [`okta_user_group_memberships`](https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/user_group_memberships).
+Refer to the Terraform Registory for docs: [`okta_user_group_memberships`](https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/user_group_memberships).
 
 # `userGroupMemberships` Submodule <a name="`userGroupMemberships` Submodule" id="@cdktf/provider-okta.userGroupMemberships"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`okta_user_group_memberships`](https
 
 ### UserGroupMemberships <a name="UserGroupMemberships" id="@cdktf/provider-okta.userGroupMemberships.UserGroupMemberships"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/user_group_memberships okta_user_group_memberships}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/user_group_memberships okta_user_group_memberships}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.userGroupMemberships.UserGroupMemberships.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/usergroupmemberships"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/usergroupmemberships"
 
 usergroupmemberships.NewUserGroupMemberships(scope Construct, id *string, config UserGroupMembershipsConfig) UserGroupMemberships
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.userGroupMemberships.UserGroupMemberships.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/usergroupmemberships"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/usergroupmemberships"
 
 usergroupmemberships.UserGroupMemberships_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.userGroupMemberships.UserGroupMemberships.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/usergroupmemberships"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/usergroupmemberships"
 
 usergroupmemberships.UserGroupMemberships_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ usergroupmemberships.UserGroupMemberships_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.userGroupMemberships.UserGroupMemberships.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/usergroupmemberships"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/usergroupmemberships"
 
 usergroupmemberships.UserGroupMemberships_IsTerraformResource(x interface{}) *bool
 ```
@@ -588,7 +588,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.userGroupMemberships.UserGroupMembershipsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/usergroupmemberships"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/usergroupmemberships"
 
 &usergroupmemberships.UserGroupMembershipsConfig {
 	Connection: interface{},
@@ -617,7 +617,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/usergroupmemberships"
 | <code><a href="#@cdktf/provider-okta.userGroupMemberships.UserGroupMembershipsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.userGroupMemberships.UserGroupMembershipsConfig.property.groups">Groups</a></code> | <code>*[]*string</code> | The list of Okta group IDs which the user should have membership managed for. |
 | <code><a href="#@cdktf/provider-okta.userGroupMemberships.UserGroupMembershipsConfig.property.userId">UserId</a></code> | <code>*string</code> | ID of a Okta User. |
-| <code><a href="#@cdktf/provider-okta.userGroupMemberships.UserGroupMembershipsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/user_group_memberships#id UserGroupMemberships#id}. |
+| <code><a href="#@cdktf/provider-okta.userGroupMemberships.UserGroupMembershipsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/user_group_memberships#id UserGroupMemberships#id}. |
 
 ---
 
@@ -701,7 +701,7 @@ Groups *[]*string
 
 The list of Okta group IDs which the user should have membership managed for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/user_group_memberships#groups UserGroupMemberships#groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/user_group_memberships#groups UserGroupMemberships#groups}
 
 ---
 
@@ -715,7 +715,7 @@ UserId *string
 
 ID of a Okta User.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/user_group_memberships#user_id UserGroupMemberships#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/user_group_memberships#user_id UserGroupMemberships#user_id}
 
 ---
 
@@ -727,7 +727,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/resources/user_group_memberships#id UserGroupMemberships#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/user_group_memberships#id UserGroupMemberships#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

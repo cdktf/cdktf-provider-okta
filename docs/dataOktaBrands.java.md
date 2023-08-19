@@ -1,6 +1,6 @@
 # `data_okta_brands`
 
-Refer to the Terraform Registory for docs: [`data_okta_brands`](https://registry.terraform.io/providers/okta/okta/4.2.0/docs/data-sources/brands).
+Refer to the Terraform Registory for docs: [`data_okta_brands`](https://registry.terraform.io/providers/okta/okta/4.3.0/docs/data-sources/brands).
 
 # `dataOktaBrands` Submodule <a name="`dataOktaBrands` Submodule" id="@cdktf/provider-okta.dataOktaBrands"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_okta_brands`](https://registry
 
 ### DataOktaBrands <a name="DataOktaBrands" id="@cdktf/provider-okta.dataOktaBrands.DataOktaBrands"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/data-sources/brands okta_brands}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/data-sources/brands okta_brands}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaBrands.DataOktaBrands.Initializer"></a>
 
@@ -42,7 +42,7 @@ DataOktaBrands.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-okta.dataOktaBrands.DataOktaBrands.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaBrands.DataOktaBrands.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaBrands.DataOktaBrands.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.dataOktaBrands.DataOktaBrands.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/data-sources/brands#id DataOktaBrands#id}. |
+| <code><a href="#@cdktf/provider-okta.dataOktaBrands.DataOktaBrands.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/data-sources/brands#id DataOktaBrands#id}. |
 
 ---
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/data-sources/brands#id DataOktaBrands#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/data-sources/brands#id DataOktaBrands#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -641,7 +641,7 @@ DataOktaBrandsConfig.builder()
 | <code><a href="#@cdktf/provider-okta.dataOktaBrands.DataOktaBrandsConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaBrands.DataOktaBrandsConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaBrands.DataOktaBrandsConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.dataOktaBrands.DataOktaBrandsConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/data-sources/brands#id DataOktaBrands#id}. |
+| <code><a href="#@cdktf/provider-okta.dataOktaBrands.DataOktaBrandsConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/data-sources/brands#id DataOktaBrands#id}. |
 
 ---
 
@@ -723,7 +723,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/data-sources/brands#id DataOktaBrands#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/data-sources/brands#id DataOktaBrands#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

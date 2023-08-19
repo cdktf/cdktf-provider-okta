@@ -1,6 +1,6 @@
 # `data_okta_app_user_assignments`
 
-Refer to the Terraform Registory for docs: [`data_okta_app_user_assignments`](https://registry.terraform.io/providers/okta/okta/4.2.0/docs/data-sources/app_user_assignments).
+Refer to the Terraform Registory for docs: [`data_okta_app_user_assignments`](https://registry.terraform.io/providers/okta/okta/4.3.0/docs/data-sources/app_user_assignments).
 
 # `dataOktaAppUserAssignments` Submodule <a name="`dataOktaAppUserAssignments` Submodule" id="@cdktf/provider-okta.dataOktaAppUserAssignments"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_okta_app_user_assignments`](ht
 
 ### DataOktaAppUserAssignments <a name="DataOktaAppUserAssignments" id="@cdktf/provider-okta.dataOktaAppUserAssignments.DataOktaAppUserAssignments"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/data-sources/app_user_assignments okta_app_user_assignments}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/data-sources/app_user_assignments okta_app_user_assignments}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaAppUserAssignments.DataOktaAppUserAssignments.Initializer"></a>
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 ID of the Okta App being queried for groups.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/data-sources/app_user_assignments#id DataOktaAppUserAssignments#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/data-sources/app_user_assignments#id DataOktaAppUserAssignments#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -708,7 +708,7 @@ public java.lang.String getId();
 
 ID of the Okta App being queried for groups.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.2.0/docs/data-sources/app_user_assignments#id DataOktaAppUserAssignments#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/data-sources/app_user_assignments#id DataOktaAppUserAssignments#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
