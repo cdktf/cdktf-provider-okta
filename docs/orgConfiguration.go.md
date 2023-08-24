@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.orgConfiguration.OrgConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/orgconfiguration"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/orgconfiguration"
 
 orgconfiguration.NewOrgConfiguration(scope Construct, id *string, config OrgConfigurationConfig) OrgConfiguration
 ```
@@ -375,7 +375,7 @@ func ResetWebsite()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.orgConfiguration.OrgConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/orgconfiguration"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/orgconfiguration"
 
 orgconfiguration.OrgConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -407,7 +407,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.orgConfiguration.OrgConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/orgconfiguration"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/orgconfiguration"
 
 orgconfiguration.OrgConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -421,7 +421,7 @@ orgconfiguration.OrgConfiguration_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.orgConfiguration.OrgConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/orgconfiguration"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/orgconfiguration"
 
 orgconfiguration.OrgConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -994,7 +994,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.orgConfiguration.OrgConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/orgconfiguration"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/orgconfiguration"
 
 &orgconfiguration.OrgConfigurationConfig {
 	Connection: interface{},
