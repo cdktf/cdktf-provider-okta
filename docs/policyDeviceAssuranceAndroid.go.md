@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.policyDeviceAssuranceAndroid.PolicyDeviceAssuranceAndroid.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/policydeviceassuranceandroid"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v11/policydeviceassuranceandroid"
 
 policydeviceassuranceandroid.NewPolicyDeviceAssuranceAndroid(scope Construct, id *string, config PolicyDeviceAssuranceAndroidConfig) PolicyDeviceAssuranceAndroid
 ```
@@ -305,7 +305,7 @@ func ResetSecureHardwarePresent()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.policyDeviceAssuranceAndroid.PolicyDeviceAssuranceAndroid.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/policydeviceassuranceandroid"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v11/policydeviceassuranceandroid"
 
 policydeviceassuranceandroid.PolicyDeviceAssuranceAndroid_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.policyDeviceAssuranceAndroid.PolicyDeviceAssuranceAndroid.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/policydeviceassuranceandroid"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v11/policydeviceassuranceandroid"
 
 policydeviceassuranceandroid.PolicyDeviceAssuranceAndroid_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ policydeviceassuranceandroid.PolicyDeviceAssuranceAndroid_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.policyDeviceAssuranceAndroid.PolicyDeviceAssuranceAndroid.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/policydeviceassuranceandroid"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v11/policydeviceassuranceandroid"
 
 policydeviceassuranceandroid.PolicyDeviceAssuranceAndroid_IsTerraformResource(x interface{}) *bool
 ```
@@ -748,7 +748,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.policyDeviceAssuranceAndroid.PolicyDeviceAssuranceAndroidConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v10/policydeviceassuranceandroid"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v11/policydeviceassuranceandroid"
 
 &policydeviceassuranceandroid.PolicyDeviceAssuranceAndroidConfig {
 	Connection: interface{},
