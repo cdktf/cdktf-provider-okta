@@ -4,6 +4,7 @@ The following submodules are available:
 - [adminRoleCustom](./adminRoleCustom.python.md)
 - [adminRoleCustomAssignments](./adminRoleCustomAssignments.python.md)
 - [adminRoleTargets](./adminRoleTargets.python.md)
+- [appAccessPolicyAssignment](./appAccessPolicyAssignment.python.md)
 - [appAutoLogin](./appAutoLogin.python.md)
 - [appBasicAuth](./appBasicAuth.python.md)
 - [appBookmark](./appBookmark.python.md)

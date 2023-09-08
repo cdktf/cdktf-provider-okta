@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/okta/okta/4.3.0/docs/data-sources/groups
+// https://registry.terraform.io/providers/okta/okta/4.4.0/docs/data-sources/groups
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataOktaGroupsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/data-sources/groups#id DataOktaGroups#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/data-sources/groups#id DataOktaGroups#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,19 +17,19 @@ export interface DataOktaGroupsConfig extends cdktf.TerraformMetaArguments {
   /**
   * Searches the name property of groups for matching value
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/data-sources/groups#q DataOktaGroups#q}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/data-sources/groups#q DataOktaGroups#q}
   */
   readonly q?: string;
   /**
   * Searches for groups with a supported filtering expression for all attributes except for '_embedded', '_links', and 'objectClass'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/data-sources/groups#search DataOktaGroups#search}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/data-sources/groups#search DataOktaGroups#search}
   */
   readonly search?: string;
   /**
   * Type of the group. When specified in the terraform resource, will act as a filter when searching for the groups
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/data-sources/groups#type DataOktaGroups#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/data-sources/groups#type DataOktaGroups#type}
   */
   readonly type?: string;
 }
@@ -124,7 +119,7 @@ export class DataOktaGroupsGroupsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/data-sources/groups okta_groups}
+* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/data-sources/groups okta_groups}
 */
 export class DataOktaGroups extends cdktf.TerraformDataSource {
 
@@ -138,7 +133,7 @@ export class DataOktaGroups extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/data-sources/groups okta_groups} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/data-sources/groups okta_groups} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -149,7 +144,7 @@ export class DataOktaGroups extends cdktf.TerraformDataSource {
       terraformResourceType: 'okta_groups',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '4.3.0',
+        providerVersion: '4.4.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

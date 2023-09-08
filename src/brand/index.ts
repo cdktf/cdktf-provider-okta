@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/brand
+// https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/brand
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,31 +10,67 @@ export interface BrandConfig extends cdktf.TerraformMetaArguments {
   /**
   * Consent for updating the custom privacy policy URL.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/brand#agree_to_custom_privacy_policy Brand#agree_to_custom_privacy_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/brand#agree_to_custom_privacy_policy Brand#agree_to_custom_privacy_policy}
   */
   readonly agreeToCustomPrivacyPolicy?: boolean | cdktf.IResolvable;
   /**
   * Brand ID - Note: Okta API for brands only reads and updates therefore the okta_brand resource needs to act as a quasi data source. Do this by setting brand_id.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/brand#brand_id Brand#brand_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/brand#brand_id Brand#brand_id}
   */
   readonly brandId?: string;
   /**
   * Custom privacy policy URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/brand#custom_privacy_policy_url Brand#custom_privacy_policy_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/brand#custom_privacy_policy_url Brand#custom_privacy_policy_url}
   */
   readonly customPrivacyPolicyUrl?: string;
   /**
+  * Default app app instance id
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/brand#default_app_app_instance_id Brand#default_app_app_instance_id}
+  */
+  readonly defaultAppAppInstanceId?: string;
+  /**
+  * Default app app link name
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/brand#default_app_app_link_name Brand#default_app_app_link_name}
+  */
+  readonly defaultAppAppLinkName?: string;
+  /**
+  * Default app classic application uri
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/brand#default_app_classic_application_uri Brand#default_app_classic_application_uri}
+  */
+  readonly defaultAppClassicApplicationUri?: string;
+  /**
+  * Email Domain ID tied to this brand
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/brand#email_domain_id Brand#email_domain_id}
+  */
+  readonly emailDomainId?: string;
+  /**
+  * The language specified as an IETF BCP 47 language tag
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/brand#locale Brand#locale}
+  */
+  readonly locale?: string;
+  /**
+  * Brand name
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/brand#name Brand#name}
+  */
+  readonly name: string;
+  /**
   * Removes "Powered by Okta" from the Okta-hosted sign-in page and "© 2021 Okta, Inc." from the Okta End-User Dashboard
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/brand#remove_powered_by_okta Brand#remove_powered_by_okta}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/brand#remove_powered_by_okta Brand#remove_powered_by_okta}
   */
   readonly removePoweredByOkta?: boolean | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/brand okta_brand}
+* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/brand okta_brand}
 */
 export class Brand extends cdktf.TerraformResource {
 
@@ -53,18 +84,18 @@ export class Brand extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/brand okta_brand} Resource
+  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/brand okta_brand} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options BrandConfig = {}
+  * @param options BrandConfig
   */
-  public constructor(scope: Construct, id: string, config: BrandConfig = {}) {
+  public constructor(scope: Construct, id: string, config: BrandConfig) {
     super(scope, id, {
       terraformResourceType: 'okta_brand',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '4.3.0',
+        providerVersion: '4.4.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -78,6 +109,12 @@ export class Brand extends cdktf.TerraformResource {
     this._agreeToCustomPrivacyPolicy = config.agreeToCustomPrivacyPolicy;
     this._brandId = config.brandId;
     this._customPrivacyPolicyUrl = config.customPrivacyPolicyUrl;
+    this._defaultAppAppInstanceId = config.defaultAppAppInstanceId;
+    this._defaultAppAppLinkName = config.defaultAppAppLinkName;
+    this._defaultAppClassicApplicationUri = config.defaultAppClassicApplicationUri;
+    this._emailDomainId = config.emailDomainId;
+    this._locale = config.locale;
+    this._name = config.name;
     this._removePoweredByOkta = config.removePoweredByOkta;
   }
 
@@ -85,7 +122,7 @@ export class Brand extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // agree_to_custom_privacy_policy - computed: false, optional: true, required: false
+  // agree_to_custom_privacy_policy - computed: true, optional: true, required: false
   private _agreeToCustomPrivacyPolicy?: boolean | cdktf.IResolvable; 
   public get agreeToCustomPrivacyPolicy() {
     return this.getBooleanAttribute('agree_to_custom_privacy_policy');
@@ -101,7 +138,7 @@ export class Brand extends cdktf.TerraformResource {
     return this._agreeToCustomPrivacyPolicy;
   }
 
-  // brand_id - computed: false, optional: true, required: false
+  // brand_id - computed: true, optional: true, required: false
   private _brandId?: string; 
   public get brandId() {
     return this.getStringAttribute('brand_id');
@@ -133,9 +170,78 @@ export class Brand extends cdktf.TerraformResource {
     return this._customPrivacyPolicyUrl;
   }
 
+  // default_app_app_instance_id - computed: false, optional: true, required: false
+  private _defaultAppAppInstanceId?: string; 
+  public get defaultAppAppInstanceId() {
+    return this.getStringAttribute('default_app_app_instance_id');
+  }
+  public set defaultAppAppInstanceId(value: string) {
+    this._defaultAppAppInstanceId = value;
+  }
+  public resetDefaultAppAppInstanceId() {
+    this._defaultAppAppInstanceId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get defaultAppAppInstanceIdInput() {
+    return this._defaultAppAppInstanceId;
+  }
+
+  // default_app_app_link_name - computed: false, optional: true, required: false
+  private _defaultAppAppLinkName?: string; 
+  public get defaultAppAppLinkName() {
+    return this.getStringAttribute('default_app_app_link_name');
+  }
+  public set defaultAppAppLinkName(value: string) {
+    this._defaultAppAppLinkName = value;
+  }
+  public resetDefaultAppAppLinkName() {
+    this._defaultAppAppLinkName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get defaultAppAppLinkNameInput() {
+    return this._defaultAppAppLinkName;
+  }
+
+  // default_app_classic_application_uri - computed: false, optional: true, required: false
+  private _defaultAppClassicApplicationUri?: string; 
+  public get defaultAppClassicApplicationUri() {
+    return this.getStringAttribute('default_app_classic_application_uri');
+  }
+  public set defaultAppClassicApplicationUri(value: string) {
+    this._defaultAppClassicApplicationUri = value;
+  }
+  public resetDefaultAppClassicApplicationUri() {
+    this._defaultAppClassicApplicationUri = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get defaultAppClassicApplicationUriInput() {
+    return this._defaultAppClassicApplicationUri;
+  }
+
+  // email_domain_id - computed: false, optional: true, required: false
+  private _emailDomainId?: string; 
+  public get emailDomainId() {
+    return this.getStringAttribute('email_domain_id');
+  }
+  public set emailDomainId(value: string) {
+    this._emailDomainId = value;
+  }
+  public resetEmailDomainId() {
+    this._emailDomainId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get emailDomainIdInput() {
+    return this._emailDomainId;
+  }
+
   // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
+  }
+
+  // is_default - computed: true, optional: false, required: false
+  public get isDefault() {
+    return this.getBooleanAttribute('is_default');
   }
 
   // links - computed: true, optional: false, required: false
@@ -143,12 +249,36 @@ export class Brand extends cdktf.TerraformResource {
     return this.getStringAttribute('links');
   }
 
-  // name - computed: true, optional: false, required: false
+  // locale - computed: false, optional: true, required: false
+  private _locale?: string; 
+  public get locale() {
+    return this.getStringAttribute('locale');
+  }
+  public set locale(value: string) {
+    this._locale = value;
+  }
+  public resetLocale() {
+    this._locale = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get localeInput() {
+    return this._locale;
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
 
-  // remove_powered_by_okta - computed: false, optional: true, required: false
+  // remove_powered_by_okta - computed: true, optional: true, required: false
   private _removePoweredByOkta?: boolean | cdktf.IResolvable; 
   public get removePoweredByOkta() {
     return this.getBooleanAttribute('remove_powered_by_okta');
@@ -173,6 +303,12 @@ export class Brand extends cdktf.TerraformResource {
       agree_to_custom_privacy_policy: cdktf.booleanToTerraform(this._agreeToCustomPrivacyPolicy),
       brand_id: cdktf.stringToTerraform(this._brandId),
       custom_privacy_policy_url: cdktf.stringToTerraform(this._customPrivacyPolicyUrl),
+      default_app_app_instance_id: cdktf.stringToTerraform(this._defaultAppAppInstanceId),
+      default_app_app_link_name: cdktf.stringToTerraform(this._defaultAppAppLinkName),
+      default_app_classic_application_uri: cdktf.stringToTerraform(this._defaultAppClassicApplicationUri),
+      email_domain_id: cdktf.stringToTerraform(this._emailDomainId),
+      locale: cdktf.stringToTerraform(this._locale),
+      name: cdktf.stringToTerraform(this._name),
       remove_powered_by_okta: cdktf.booleanToTerraform(this._removePoweredByOkta),
     };
   }

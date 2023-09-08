@@ -4,6 +4,7 @@ The following submodules are available:
 - [adminRoleCustom](./adminRoleCustom.go.md)
 - [adminRoleCustomAssignments](./adminRoleCustomAssignments.go.md)
 - [adminRoleTargets](./adminRoleTargets.go.md)
+- [appAccessPolicyAssignment](./appAccessPolicyAssignment.go.md)
 - [appAutoLogin](./appAutoLogin.go.md)
 - [appBasicAuth](./appBasicAuth.go.md)
 - [appBookmark](./appBookmark.go.md)

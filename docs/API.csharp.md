@@ -4,6 +4,7 @@ The following submodules are available:
 - [adminRoleCustom](./adminRoleCustom.csharp.md)
 - [adminRoleCustomAssignments](./adminRoleCustomAssignments.csharp.md)
 - [adminRoleTargets](./adminRoleTargets.csharp.md)
+- [appAccessPolicyAssignment](./appAccessPolicyAssignment.csharp.md)
 - [appAutoLogin](./appAutoLogin.csharp.md)
 - [appBasicAuth](./appBasicAuth.csharp.md)
 - [appBookmark](./appBookmark.csharp.md)

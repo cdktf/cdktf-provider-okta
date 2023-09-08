@@ -4,6 +4,7 @@ The following submodules are available:
 - [adminRoleCustom](./adminRoleCustom.java.md)
 - [adminRoleCustomAssignments](./adminRoleCustomAssignments.java.md)
 - [adminRoleTargets](./adminRoleTargets.java.md)
+- [appAccessPolicyAssignment](./appAccessPolicyAssignment.java.md)
 - [appAutoLogin](./appAutoLogin.java.md)
 - [appBasicAuth](./appBasicAuth.java.md)
 - [appBookmark](./appBookmark.java.md)
