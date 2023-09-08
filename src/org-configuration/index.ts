@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/org_configuration
+// https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/org_configuration
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,47 +15,47 @@ export interface OrgConfigurationConfig extends cdktf.TerraformMetaArguments {
   /**
   * Primary address of org
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/org_configuration#address_1 OrgConfiguration#address_1}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/org_configuration#address_1 OrgConfiguration#address_1}
   */
   readonly address1?: string;
   /**
   * Secondary address of org
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/org_configuration#address_2 OrgConfiguration#address_2}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/org_configuration#address_2 OrgConfiguration#address_2}
   */
   readonly address2?: string;
   /**
   * User ID representing the billing contact
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/org_configuration#billing_contact_user OrgConfiguration#billing_contact_user}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/org_configuration#billing_contact_user OrgConfiguration#billing_contact_user}
   */
   readonly billingContactUser?: string;
   /**
   * City of org
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/org_configuration#city OrgConfiguration#city}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/org_configuration#city OrgConfiguration#city}
   */
   readonly city?: string;
   /**
   * Name of org
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/org_configuration#company_name OrgConfiguration#company_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/org_configuration#company_name OrgConfiguration#company_name}
   */
   readonly companyName: string;
   /**
   * Country of org
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/org_configuration#country OrgConfiguration#country}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/org_configuration#country OrgConfiguration#country}
   */
   readonly country?: string;
   /**
   * Support link of org
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/org_configuration#end_user_support_help_url OrgConfiguration#end_user_support_help_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/org_configuration#end_user_support_help_url OrgConfiguration#end_user_support_help_url}
   */
   readonly endUserSupportHelpUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/org_configuration#id OrgConfiguration#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/org_configuration#id OrgConfiguration#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -64,55 +64,55 @@ export interface OrgConfigurationConfig extends cdktf.TerraformMetaArguments {
   /**
   * Local path to logo of the org.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/org_configuration#logo OrgConfiguration#logo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/org_configuration#logo OrgConfiguration#logo}
   */
   readonly logo?: string;
   /**
   * Indicates whether the org's users receive Okta Communication emails
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/org_configuration#opt_out_communication_emails OrgConfiguration#opt_out_communication_emails}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/org_configuration#opt_out_communication_emails OrgConfiguration#opt_out_communication_emails}
   */
   readonly optOutCommunicationEmails?: boolean | cdktf.IResolvable;
   /**
   * Support help phone of org
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/org_configuration#phone_number OrgConfiguration#phone_number}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/org_configuration#phone_number OrgConfiguration#phone_number}
   */
   readonly phoneNumber?: string;
   /**
   * Postal code of org
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/org_configuration#postal_code OrgConfiguration#postal_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/org_configuration#postal_code OrgConfiguration#postal_code}
   */
   readonly postalCode?: string;
   /**
   * State of org
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/org_configuration#state OrgConfiguration#state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/org_configuration#state OrgConfiguration#state}
   */
   readonly state?: string;
   /**
   * Support help phone of org
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/org_configuration#support_phone_number OrgConfiguration#support_phone_number}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/org_configuration#support_phone_number OrgConfiguration#support_phone_number}
   */
   readonly supportPhoneNumber?: string;
   /**
   * User ID representing the technical contact
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/org_configuration#technical_contact_user OrgConfiguration#technical_contact_user}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/org_configuration#technical_contact_user OrgConfiguration#technical_contact_user}
   */
   readonly technicalContactUser?: string;
   /**
   * The org's website
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/org_configuration#website OrgConfiguration#website}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/org_configuration#website OrgConfiguration#website}
   */
   readonly website?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/org_configuration okta_org_configuration}
+* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/org_configuration okta_org_configuration}
 */
 export class OrgConfiguration extends cdktf.TerraformResource {
 
@@ -126,7 +126,7 @@ export class OrgConfiguration extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/org_configuration okta_org_configuration} Resource
+  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/org_configuration okta_org_configuration} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -137,7 +137,7 @@ export class OrgConfiguration extends cdktf.TerraformResource {
       terraformResourceType: 'okta_org_configuration',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '4.3.0',
+        providerVersion: '4.4.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

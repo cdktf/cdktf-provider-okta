@@ -1,6 +1,6 @@
 # `okta_brand`
 
-Refer to the Terraform Registory for docs: [`okta_brand`](https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/brand).
+Refer to the Terraform Registory for docs: [`okta_brand`](https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/brand).
 
 # `brand` Submodule <a name="`brand` Submodule" id="@cdktf/provider-okta.brand"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_brand`](https://registry.terra
 
 ### Brand <a name="Brand" id="@cdktf/provider-okta.brand.Brand"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/brand okta_brand}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/brand okta_brand}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.brand.Brand.Initializer"></a>
 
@@ -27,10 +27,16 @@ Brand.Builder.create(Construct scope, java.lang.String id)
 //  .provisioners(java.util.List<FileProvisioner)
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
+    .name(java.lang.String)
 //  .agreeToCustomPrivacyPolicy(java.lang.Boolean)
 //  .agreeToCustomPrivacyPolicy(IResolvable)
 //  .brandId(java.lang.String)
 //  .customPrivacyPolicyUrl(java.lang.String)
+//  .defaultAppAppInstanceId(java.lang.String)
+//  .defaultAppAppLinkName(java.lang.String)
+//  .defaultAppClassicApplicationUri(java.lang.String)
+//  .emailDomainId(java.lang.String)
+//  .locale(java.lang.String)
 //  .removePoweredByOkta(java.lang.Boolean)
 //  .removePoweredByOkta(IResolvable)
     .build();
@@ -47,9 +53,15 @@ Brand.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-okta.brand.Brand.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.brand.Brand.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.brand.Brand.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.brand.Brand.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Brand name. |
 | <code><a href="#@cdktf/provider-okta.brand.Brand.Initializer.parameter.agreeToCustomPrivacyPolicy">agreeToCustomPrivacyPolicy</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Consent for updating the custom privacy policy URL. |
 | <code><a href="#@cdktf/provider-okta.brand.Brand.Initializer.parameter.brandId">brandId</a></code> | <code>java.lang.String</code> | Brand ID - Note: Okta API for brands only reads and updates therefore the okta_brand resource needs to act as a quasi data source. |
 | <code><a href="#@cdktf/provider-okta.brand.Brand.Initializer.parameter.customPrivacyPolicyUrl">customPrivacyPolicyUrl</a></code> | <code>java.lang.String</code> | Custom privacy policy URL. |
+| <code><a href="#@cdktf/provider-okta.brand.Brand.Initializer.parameter.defaultAppAppInstanceId">defaultAppAppInstanceId</a></code> | <code>java.lang.String</code> | Default app app instance id. |
+| <code><a href="#@cdktf/provider-okta.brand.Brand.Initializer.parameter.defaultAppAppLinkName">defaultAppAppLinkName</a></code> | <code>java.lang.String</code> | Default app app link name. |
+| <code><a href="#@cdktf/provider-okta.brand.Brand.Initializer.parameter.defaultAppClassicApplicationUri">defaultAppClassicApplicationUri</a></code> | <code>java.lang.String</code> | Default app classic application uri. |
+| <code><a href="#@cdktf/provider-okta.brand.Brand.Initializer.parameter.emailDomainId">emailDomainId</a></code> | <code>java.lang.String</code> | Email Domain ID tied to this brand. |
+| <code><a href="#@cdktf/provider-okta.brand.Brand.Initializer.parameter.locale">locale</a></code> | <code>java.lang.String</code> | The language specified as an IETF BCP 47 language tag. |
 | <code><a href="#@cdktf/provider-okta.brand.Brand.Initializer.parameter.removePoweredByOkta">removePoweredByOkta</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Removes "Powered by Okta" from the Okta-hosted sign-in page and "© 2021 Okta, Inc." from the Okta End-User Dashboard. |
 
 ---
@@ -114,13 +126,23 @@ Must be unique amongst siblings in the same scope
 
 ---
 
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-okta.brand.Brand.Initializer.parameter.name"></a>
+
+- *Type:* java.lang.String
+
+Brand name.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/brand#name Brand#name}
+
+---
+
 ##### `agreeToCustomPrivacyPolicy`<sup>Optional</sup> <a name="agreeToCustomPrivacyPolicy" id="@cdktf/provider-okta.brand.Brand.Initializer.parameter.agreeToCustomPrivacyPolicy"></a>
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
 Consent for updating the custom privacy policy URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/brand#agree_to_custom_privacy_policy Brand#agree_to_custom_privacy_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/brand#agree_to_custom_privacy_policy Brand#agree_to_custom_privacy_policy}
 
 ---
 
@@ -132,7 +154,7 @@ Brand ID - Note: Okta API for brands only reads and updates therefore the okta_b
 
 Do this by setting brand_id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/brand#brand_id Brand#brand_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/brand#brand_id Brand#brand_id}
 
 ---
 
@@ -142,7 +164,57 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Custom privacy policy URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/brand#custom_privacy_policy_url Brand#custom_privacy_policy_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/brand#custom_privacy_policy_url Brand#custom_privacy_policy_url}
+
+---
+
+##### `defaultAppAppInstanceId`<sup>Optional</sup> <a name="defaultAppAppInstanceId" id="@cdktf/provider-okta.brand.Brand.Initializer.parameter.defaultAppAppInstanceId"></a>
+
+- *Type:* java.lang.String
+
+Default app app instance id.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/brand#default_app_app_instance_id Brand#default_app_app_instance_id}
+
+---
+
+##### `defaultAppAppLinkName`<sup>Optional</sup> <a name="defaultAppAppLinkName" id="@cdktf/provider-okta.brand.Brand.Initializer.parameter.defaultAppAppLinkName"></a>
+
+- *Type:* java.lang.String
+
+Default app app link name.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/brand#default_app_app_link_name Brand#default_app_app_link_name}
+
+---
+
+##### `defaultAppClassicApplicationUri`<sup>Optional</sup> <a name="defaultAppClassicApplicationUri" id="@cdktf/provider-okta.brand.Brand.Initializer.parameter.defaultAppClassicApplicationUri"></a>
+
+- *Type:* java.lang.String
+
+Default app classic application uri.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/brand#default_app_classic_application_uri Brand#default_app_classic_application_uri}
+
+---
+
+##### `emailDomainId`<sup>Optional</sup> <a name="emailDomainId" id="@cdktf/provider-okta.brand.Brand.Initializer.parameter.emailDomainId"></a>
+
+- *Type:* java.lang.String
+
+Email Domain ID tied to this brand.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/brand#email_domain_id Brand#email_domain_id}
+
+---
+
+##### `locale`<sup>Optional</sup> <a name="locale" id="@cdktf/provider-okta.brand.Brand.Initializer.parameter.locale"></a>
+
+- *Type:* java.lang.String
+
+The language specified as an IETF BCP 47 language tag.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/brand#locale Brand#locale}
 
 ---
 
@@ -152,7 +224,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Removes "Powered by Okta" from the Okta-hosted sign-in page and "© 2021 Okta, Inc." from the Okta End-User Dashboard.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/brand#remove_powered_by_okta Brand#remove_powered_by_okta}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/brand#remove_powered_by_okta Brand#remove_powered_by_okta}
 
 ---
 
@@ -179,6 +251,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 | <code><a href="#@cdktf/provider-okta.brand.Brand.resetAgreeToCustomPrivacyPolicy">resetAgreeToCustomPrivacyPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.brand.Brand.resetBrandId">resetBrandId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.brand.Brand.resetCustomPrivacyPolicyUrl">resetCustomPrivacyPolicyUrl</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.brand.Brand.resetDefaultAppAppInstanceId">resetDefaultAppAppInstanceId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.brand.Brand.resetDefaultAppAppLinkName">resetDefaultAppAppLinkName</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.brand.Brand.resetDefaultAppClassicApplicationUri">resetDefaultAppClassicApplicationUri</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.brand.Brand.resetEmailDomainId">resetEmailDomainId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.brand.Brand.resetLocale">resetLocale</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.brand.Brand.resetRemovePoweredByOkta">resetRemovePoweredByOkta</a></code> | *No description.* |
 
 ---
@@ -385,6 +462,36 @@ public void resetBrandId()
 public void resetCustomPrivacyPolicyUrl()
 ```
 
+##### `resetDefaultAppAppInstanceId` <a name="resetDefaultAppAppInstanceId" id="@cdktf/provider-okta.brand.Brand.resetDefaultAppAppInstanceId"></a>
+
+```java
+public void resetDefaultAppAppInstanceId()
+```
+
+##### `resetDefaultAppAppLinkName` <a name="resetDefaultAppAppLinkName" id="@cdktf/provider-okta.brand.Brand.resetDefaultAppAppLinkName"></a>
+
+```java
+public void resetDefaultAppAppLinkName()
+```
+
+##### `resetDefaultAppClassicApplicationUri` <a name="resetDefaultAppClassicApplicationUri" id="@cdktf/provider-okta.brand.Brand.resetDefaultAppClassicApplicationUri"></a>
+
+```java
+public void resetDefaultAppClassicApplicationUri()
+```
+
+##### `resetEmailDomainId` <a name="resetEmailDomainId" id="@cdktf/provider-okta.brand.Brand.resetEmailDomainId"></a>
+
+```java
+public void resetEmailDomainId()
+```
+
+##### `resetLocale` <a name="resetLocale" id="@cdktf/provider-okta.brand.Brand.resetLocale"></a>
+
+```java
+public void resetLocale()
+```
+
 ##### `resetRemovePoweredByOkta` <a name="resetRemovePoweredByOkta" id="@cdktf/provider-okta.brand.Brand.resetRemovePoweredByOkta"></a>
 
 ```java
@@ -480,15 +587,27 @@ Brand.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-okta.brand.Brand.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.brand.Brand.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.brand.Brand.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.brand.Brand.property.isDefault">isDefault</a></code> | <code>com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.brand.Brand.property.links">links</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.brand.Brand.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.brand.Brand.property.agreeToCustomPrivacyPolicyInput">agreeToCustomPrivacyPolicyInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.brand.Brand.property.brandIdInput">brandIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.brand.Brand.property.customPrivacyPolicyUrlInput">customPrivacyPolicyUrlInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.brand.Brand.property.defaultAppAppInstanceIdInput">defaultAppAppInstanceIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.brand.Brand.property.defaultAppAppLinkNameInput">defaultAppAppLinkNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.brand.Brand.property.defaultAppClassicApplicationUriInput">defaultAppClassicApplicationUriInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.brand.Brand.property.emailDomainIdInput">emailDomainIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.brand.Brand.property.localeInput">localeInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.brand.Brand.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.brand.Brand.property.removePoweredByOktaInput">removePoweredByOktaInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.brand.Brand.property.agreeToCustomPrivacyPolicy">agreeToCustomPrivacyPolicy</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.brand.Brand.property.brandId">brandId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.brand.Brand.property.customPrivacyPolicyUrl">customPrivacyPolicyUrl</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.brand.Brand.property.defaultAppAppInstanceId">defaultAppAppInstanceId</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.brand.Brand.property.defaultAppAppLinkName">defaultAppAppLinkName</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.brand.Brand.property.defaultAppClassicApplicationUri">defaultAppClassicApplicationUri</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.brand.Brand.property.emailDomainId">emailDomainId</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.brand.Brand.property.locale">locale</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.brand.Brand.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.brand.Brand.property.removePoweredByOkta">removePoweredByOkta</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 
 ---
@@ -645,20 +764,20 @@ public java.lang.String getId();
 
 ---
 
+##### `isDefault`<sup>Required</sup> <a name="isDefault" id="@cdktf/provider-okta.brand.Brand.property.isDefault"></a>
+
+```java
+public IResolvable getIsDefault();
+```
+
+- *Type:* com.hashicorp.cdktf.IResolvable
+
+---
+
 ##### `links`<sup>Required</sup> <a name="links" id="@cdktf/provider-okta.brand.Brand.property.links"></a>
 
 ```java
 public java.lang.String getLinks();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-okta.brand.Brand.property.name"></a>
-
-```java
-public java.lang.String getName();
 ```
 
 - *Type:* java.lang.String
@@ -689,6 +808,66 @@ public java.lang.String getBrandIdInput();
 
 ```java
 public java.lang.String getCustomPrivacyPolicyUrlInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `defaultAppAppInstanceIdInput`<sup>Optional</sup> <a name="defaultAppAppInstanceIdInput" id="@cdktf/provider-okta.brand.Brand.property.defaultAppAppInstanceIdInput"></a>
+
+```java
+public java.lang.String getDefaultAppAppInstanceIdInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `defaultAppAppLinkNameInput`<sup>Optional</sup> <a name="defaultAppAppLinkNameInput" id="@cdktf/provider-okta.brand.Brand.property.defaultAppAppLinkNameInput"></a>
+
+```java
+public java.lang.String getDefaultAppAppLinkNameInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `defaultAppClassicApplicationUriInput`<sup>Optional</sup> <a name="defaultAppClassicApplicationUriInput" id="@cdktf/provider-okta.brand.Brand.property.defaultAppClassicApplicationUriInput"></a>
+
+```java
+public java.lang.String getDefaultAppClassicApplicationUriInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `emailDomainIdInput`<sup>Optional</sup> <a name="emailDomainIdInput" id="@cdktf/provider-okta.brand.Brand.property.emailDomainIdInput"></a>
+
+```java
+public java.lang.String getEmailDomainIdInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `localeInput`<sup>Optional</sup> <a name="localeInput" id="@cdktf/provider-okta.brand.Brand.property.localeInput"></a>
+
+```java
+public java.lang.String getLocaleInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktf/provider-okta.brand.Brand.property.nameInput"></a>
+
+```java
+public java.lang.String getNameInput();
 ```
 
 - *Type:* java.lang.String
@@ -729,6 +908,66 @@ public java.lang.String getBrandId();
 
 ```java
 public java.lang.String getCustomPrivacyPolicyUrl();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `defaultAppAppInstanceId`<sup>Required</sup> <a name="defaultAppAppInstanceId" id="@cdktf/provider-okta.brand.Brand.property.defaultAppAppInstanceId"></a>
+
+```java
+public java.lang.String getDefaultAppAppInstanceId();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `defaultAppAppLinkName`<sup>Required</sup> <a name="defaultAppAppLinkName" id="@cdktf/provider-okta.brand.Brand.property.defaultAppAppLinkName"></a>
+
+```java
+public java.lang.String getDefaultAppAppLinkName();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `defaultAppClassicApplicationUri`<sup>Required</sup> <a name="defaultAppClassicApplicationUri" id="@cdktf/provider-okta.brand.Brand.property.defaultAppClassicApplicationUri"></a>
+
+```java
+public java.lang.String getDefaultAppClassicApplicationUri();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `emailDomainId`<sup>Required</sup> <a name="emailDomainId" id="@cdktf/provider-okta.brand.Brand.property.emailDomainId"></a>
+
+```java
+public java.lang.String getEmailDomainId();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `locale`<sup>Required</sup> <a name="locale" id="@cdktf/provider-okta.brand.Brand.property.locale"></a>
+
+```java
+public java.lang.String getLocale();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-okta.brand.Brand.property.name"></a>
+
+```java
+public java.lang.String getName();
 ```
 
 - *Type:* java.lang.String
@@ -784,10 +1023,16 @@ BrandConfig.builder()
 //  .provisioners(java.util.List<FileProvisioner)
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
+    .name(java.lang.String)
 //  .agreeToCustomPrivacyPolicy(java.lang.Boolean)
 //  .agreeToCustomPrivacyPolicy(IResolvable)
 //  .brandId(java.lang.String)
 //  .customPrivacyPolicyUrl(java.lang.String)
+//  .defaultAppAppInstanceId(java.lang.String)
+//  .defaultAppAppLinkName(java.lang.String)
+//  .defaultAppClassicApplicationUri(java.lang.String)
+//  .emailDomainId(java.lang.String)
+//  .locale(java.lang.String)
 //  .removePoweredByOkta(java.lang.Boolean)
 //  .removePoweredByOkta(IResolvable)
     .build();
@@ -804,9 +1049,15 @@ BrandConfig.builder()
 | <code><a href="#@cdktf/provider-okta.brand.BrandConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.brand.BrandConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.brand.BrandConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.brand.BrandConfig.property.name">name</a></code> | <code>java.lang.String</code> | Brand name. |
 | <code><a href="#@cdktf/provider-okta.brand.BrandConfig.property.agreeToCustomPrivacyPolicy">agreeToCustomPrivacyPolicy</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Consent for updating the custom privacy policy URL. |
 | <code><a href="#@cdktf/provider-okta.brand.BrandConfig.property.brandId">brandId</a></code> | <code>java.lang.String</code> | Brand ID - Note: Okta API for brands only reads and updates therefore the okta_brand resource needs to act as a quasi data source. |
 | <code><a href="#@cdktf/provider-okta.brand.BrandConfig.property.customPrivacyPolicyUrl">customPrivacyPolicyUrl</a></code> | <code>java.lang.String</code> | Custom privacy policy URL. |
+| <code><a href="#@cdktf/provider-okta.brand.BrandConfig.property.defaultAppAppInstanceId">defaultAppAppInstanceId</a></code> | <code>java.lang.String</code> | Default app app instance id. |
+| <code><a href="#@cdktf/provider-okta.brand.BrandConfig.property.defaultAppAppLinkName">defaultAppAppLinkName</a></code> | <code>java.lang.String</code> | Default app app link name. |
+| <code><a href="#@cdktf/provider-okta.brand.BrandConfig.property.defaultAppClassicApplicationUri">defaultAppClassicApplicationUri</a></code> | <code>java.lang.String</code> | Default app classic application uri. |
+| <code><a href="#@cdktf/provider-okta.brand.BrandConfig.property.emailDomainId">emailDomainId</a></code> | <code>java.lang.String</code> | Email Domain ID tied to this brand. |
+| <code><a href="#@cdktf/provider-okta.brand.BrandConfig.property.locale">locale</a></code> | <code>java.lang.String</code> | The language specified as an IETF BCP 47 language tag. |
 | <code><a href="#@cdktf/provider-okta.brand.BrandConfig.property.removePoweredByOkta">removePoweredByOkta</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Removes "Powered by Okta" from the Okta-hosted sign-in page and "© 2021 Okta, Inc." from the Okta End-User Dashboard. |
 
 ---
@@ -881,6 +1132,20 @@ public java.lang.Object getProvisioners();
 
 ---
 
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-okta.brand.BrandConfig.property.name"></a>
+
+```java
+public java.lang.String getName();
+```
+
+- *Type:* java.lang.String
+
+Brand name.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/brand#name Brand#name}
+
+---
+
 ##### `agreeToCustomPrivacyPolicy`<sup>Optional</sup> <a name="agreeToCustomPrivacyPolicy" id="@cdktf/provider-okta.brand.BrandConfig.property.agreeToCustomPrivacyPolicy"></a>
 
 ```java
@@ -891,7 +1156,7 @@ public java.lang.Object getAgreeToCustomPrivacyPolicy();
 
 Consent for updating the custom privacy policy URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/brand#agree_to_custom_privacy_policy Brand#agree_to_custom_privacy_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/brand#agree_to_custom_privacy_policy Brand#agree_to_custom_privacy_policy}
 
 ---
 
@@ -907,7 +1172,7 @@ Brand ID - Note: Okta API for brands only reads and updates therefore the okta_b
 
 Do this by setting brand_id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/brand#brand_id Brand#brand_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/brand#brand_id Brand#brand_id}
 
 ---
 
@@ -921,7 +1186,77 @@ public java.lang.String getCustomPrivacyPolicyUrl();
 
 Custom privacy policy URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/brand#custom_privacy_policy_url Brand#custom_privacy_policy_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/brand#custom_privacy_policy_url Brand#custom_privacy_policy_url}
+
+---
+
+##### `defaultAppAppInstanceId`<sup>Optional</sup> <a name="defaultAppAppInstanceId" id="@cdktf/provider-okta.brand.BrandConfig.property.defaultAppAppInstanceId"></a>
+
+```java
+public java.lang.String getDefaultAppAppInstanceId();
+```
+
+- *Type:* java.lang.String
+
+Default app app instance id.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/brand#default_app_app_instance_id Brand#default_app_app_instance_id}
+
+---
+
+##### `defaultAppAppLinkName`<sup>Optional</sup> <a name="defaultAppAppLinkName" id="@cdktf/provider-okta.brand.BrandConfig.property.defaultAppAppLinkName"></a>
+
+```java
+public java.lang.String getDefaultAppAppLinkName();
+```
+
+- *Type:* java.lang.String
+
+Default app app link name.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/brand#default_app_app_link_name Brand#default_app_app_link_name}
+
+---
+
+##### `defaultAppClassicApplicationUri`<sup>Optional</sup> <a name="defaultAppClassicApplicationUri" id="@cdktf/provider-okta.brand.BrandConfig.property.defaultAppClassicApplicationUri"></a>
+
+```java
+public java.lang.String getDefaultAppClassicApplicationUri();
+```
+
+- *Type:* java.lang.String
+
+Default app classic application uri.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/brand#default_app_classic_application_uri Brand#default_app_classic_application_uri}
+
+---
+
+##### `emailDomainId`<sup>Optional</sup> <a name="emailDomainId" id="@cdktf/provider-okta.brand.BrandConfig.property.emailDomainId"></a>
+
+```java
+public java.lang.String getEmailDomainId();
+```
+
+- *Type:* java.lang.String
+
+Email Domain ID tied to this brand.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/brand#email_domain_id Brand#email_domain_id}
+
+---
+
+##### `locale`<sup>Optional</sup> <a name="locale" id="@cdktf/provider-okta.brand.BrandConfig.property.locale"></a>
+
+```java
+public java.lang.String getLocale();
+```
+
+- *Type:* java.lang.String
+
+The language specified as an IETF BCP 47 language tag.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/brand#locale Brand#locale}
 
 ---
 
@@ -935,7 +1270,7 @@ public java.lang.Object getRemovePoweredByOkta();
 
 Removes "Powered by Okta" from the Okta-hosted sign-in page and "© 2021 Okta, Inc." from the Okta End-User Dashboard.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/brand#remove_powered_by_okta Brand#remove_powered_by_okta}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/brand#remove_powered_by_okta Brand#remove_powered_by_okta}
 
 ---
 

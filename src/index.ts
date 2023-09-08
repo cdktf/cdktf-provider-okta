@@ -7,6 +7,7 @@
 export * as adminRoleCustom from './admin-role-custom';
 export * as adminRoleCustomAssignments from './admin-role-custom-assignments';
 export * as adminRoleTargets from './admin-role-targets';
+export * as appAccessPolicyAssignment from './app-access-policy-assignment';
 export * as appAutoLogin from './app-auto-login';
 export * as appBasicAuth from './app-basic-auth';
 export * as appBookmark from './app-bookmark';

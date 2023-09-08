@@ -1,6 +1,6 @@
 # `okta_app_saml`
 
-Refer to the Terraform Registory for docs: [`okta_app_saml`](https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/app_saml).
+Refer to the Terraform Registory for docs: [`okta_app_saml`](https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_saml).
 
 # `appSaml` Submodule <a name="`appSaml` Submodule" id="@cdktf/provider-okta.appSaml"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_app_saml`](https://registry.te
 
 ### AppSaml <a name="AppSaml" id="@cdktf/provider-okta.appSaml.AppSaml"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/app_saml okta_app_saml}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_saml okta_app_saml}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appSaml.AppSaml.Initializer"></a>
 
@@ -2101,7 +2101,7 @@ new AppSamlAttributeStatements {
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlAttributeStatements.property.filterValue">FilterValue</a></code> | <code>string</code> | Filter value to use. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlAttributeStatements.property.namespace">Namespace</a></code> | <code>string</code> | The name format of the attribute. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlAttributeStatements.property.type">Type</a></code> | <code>string</code> | The type of attribute statements object. |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlAttributeStatements.property.values">Values</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/app_saml#values AppSaml#values}. |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlAttributeStatements.property.values">Values</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_saml#values AppSaml#values}. |
 
 ---
 
@@ -2115,7 +2115,7 @@ public string Name { get; set; }
 
 The reference name of the attribute statement.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/app_saml#name AppSaml#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_saml#name AppSaml#name}
 
 ---
 
@@ -2129,7 +2129,7 @@ public string FilterType { get; set; }
 
 Type of group attribute filter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/app_saml#filter_type AppSaml#filter_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_saml#filter_type AppSaml#filter_type}
 
 ---
 
@@ -2143,7 +2143,7 @@ public string FilterValue { get; set; }
 
 Filter value to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/app_saml#filter_value AppSaml#filter_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_saml#filter_value AppSaml#filter_value}
 
 ---
 
@@ -2157,7 +2157,7 @@ public string Namespace { get; set; }
 
 The name format of the attribute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/app_saml#namespace AppSaml#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_saml#namespace AppSaml#namespace}
 
 ---
 
@@ -2171,7 +2171,7 @@ public string Type { get; set; }
 
 The type of attribute statements object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/app_saml#type AppSaml#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_saml#type AppSaml#type}
 
 ---
 
@@ -2183,7 +2183,7 @@ public string[] Values { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/app_saml#values AppSaml#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_saml#values AppSaml#values}.
 
 ---
 
@@ -2285,7 +2285,7 @@ new AppSamlConfig {
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.hideIos">HideIos</a></code> | <code>object</code> | Do not display application icon on mobile app. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.hideWeb">HideWeb</a></code> | <code>object</code> | Do not display application icon to users. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.honorForceAuthn">HonorForceAuthn</a></code> | <code>object</code> | Prompt user to re-authenticate if SP asks for it. |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/app_saml#id AppSaml#id}. |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_saml#id AppSaml#id}. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.idpIssuer">IdpIssuer</a></code> | <code>string</code> | SAML issuer ID. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.implicitAssignment">ImplicitAssignment</a></code> | <code>object</code> | *Early Access Property*. Enable Federation Broker Mode. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.inlineHookId">InlineHookId</a></code> | <code>string</code> | Saml Inline Hook setting. |
@@ -2395,7 +2395,7 @@ public string Label { get; set; }
 
 Pretty name of app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/app_saml#label AppSaml#label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_saml#label AppSaml#label}
 
 ---
 
@@ -2409,7 +2409,7 @@ public string AccessibilityErrorRedirectUrl { get; set; }
 
 Custom error page URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/app_saml#accessibility_error_redirect_url AppSaml#accessibility_error_redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_saml#accessibility_error_redirect_url AppSaml#accessibility_error_redirect_url}
 
 ---
 
@@ -2423,7 +2423,7 @@ public string AccessibilityLoginRedirectUrl { get; set; }
 
 Custom login page URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/app_saml#accessibility_login_redirect_url AppSaml#accessibility_login_redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_saml#accessibility_login_redirect_url AppSaml#accessibility_login_redirect_url}
 
 ---
 
@@ -2437,7 +2437,7 @@ public object AccessibilitySelfService { get; set; }
 
 Enable self service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/app_saml#accessibility_self_service AppSaml#accessibility_self_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_saml#accessibility_self_service AppSaml#accessibility_self_service}
 
 ---
 
@@ -2451,7 +2451,7 @@ public string[] AcsEndpoints { get; set; }
 
 List of ACS endpoints for this SAML application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/app_saml#acs_endpoints AppSaml#acs_endpoints}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_saml#acs_endpoints AppSaml#acs_endpoints}
 
 ---
 
@@ -2465,7 +2465,7 @@ public string AdminNote { get; set; }
 
 Application notes for admins.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/app_saml#admin_note AppSaml#admin_note}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_saml#admin_note AppSaml#admin_note}
 
 ---
 
@@ -2479,7 +2479,7 @@ public string AppLinksJson { get; set; }
 
 Displays specific appLinks for the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/app_saml#app_links_json AppSaml#app_links_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_saml#app_links_json AppSaml#app_links_json}
 
 ---
 
@@ -2493,7 +2493,7 @@ public string AppSettingsJson { get; set; }
 
 Application settings in JSON format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/app_saml#app_settings_json AppSaml#app_settings_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_saml#app_settings_json AppSaml#app_settings_json}
 
 ---
 
@@ -2507,7 +2507,7 @@ public object AssertionSigned { get; set; }
 
 Determines whether the SAML assertion is digitally signed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/app_saml#assertion_signed AppSaml#assertion_signed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_saml#assertion_signed AppSaml#assertion_signed}
 
 ---
 
@@ -2521,7 +2521,7 @@ public object AttributeStatements { get; set; }
 
 attribute_statements block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/app_saml#attribute_statements AppSaml#attribute_statements}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_saml#attribute_statements AppSaml#attribute_statements}
 
 ---
 
@@ -2535,7 +2535,7 @@ public string Audience { get; set; }
 
 Audience Restriction.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/app_saml#audience AppSaml#audience}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_saml#audience AppSaml#audience}
 
 ---
 
@@ -2549,7 +2549,7 @@ public string AuthenticationPolicy { get; set; }
 
 Id of this apps authentication policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/app_saml#authentication_policy AppSaml#authentication_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_saml#authentication_policy AppSaml#authentication_policy}
 
 ---
 
@@ -2563,7 +2563,7 @@ public string AuthnContextClassRef { get; set; }
 
 Identifies the SAML authentication context class for the assertion’s authentication statement.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/app_saml#authn_context_class_ref AppSaml#authn_context_class_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_saml#authn_context_class_ref AppSaml#authn_context_class_ref}
 
 ---
 
@@ -2577,7 +2577,7 @@ public object AutoSubmitToolbar { get; set; }
 
 Display auto submit toolbar.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/app_saml#auto_submit_toolbar AppSaml#auto_submit_toolbar}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_saml#auto_submit_toolbar AppSaml#auto_submit_toolbar}
 
 ---
 
@@ -2591,7 +2591,7 @@ public string DefaultRelayState { get; set; }
 
 Identifies a specific application resource in an IDP initiated SSO scenario.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/app_saml#default_relay_state AppSaml#default_relay_state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_saml#default_relay_state AppSaml#default_relay_state}
 
 ---
 
@@ -2605,7 +2605,7 @@ public string Destination { get; set; }
 
 Identifies the location where the SAML response is intended to be sent inside of the SAML assertion.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/app_saml#destination AppSaml#destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_saml#destination AppSaml#destination}
 
 ---
 
@@ -2619,7 +2619,7 @@ public string DigestAlgorithm { get; set; }
 
 Determines the digest algorithm used to digitally sign the SAML assertion and response.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/app_saml#digest_algorithm AppSaml#digest_algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_saml#digest_algorithm AppSaml#digest_algorithm}
 
 ---
 
@@ -2633,7 +2633,7 @@ public string EnduserNote { get; set; }
 
 Application notes for end users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/app_saml#enduser_note AppSaml#enduser_note}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_saml#enduser_note AppSaml#enduser_note}
 
 ---
 
@@ -2647,7 +2647,7 @@ public object HideIos { get; set; }
 
 Do not display application icon on mobile app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/app_saml#hide_ios AppSaml#hide_ios}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_saml#hide_ios AppSaml#hide_ios}
 
 ---
 
@@ -2661,7 +2661,7 @@ public object HideWeb { get; set; }
 
 Do not display application icon to users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/app_saml#hide_web AppSaml#hide_web}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_saml#hide_web AppSaml#hide_web}
 
 ---
 
@@ -2675,7 +2675,7 @@ public object HonorForceAuthn { get; set; }
 
 Prompt user to re-authenticate if SP asks for it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/app_saml#honor_force_authn AppSaml#honor_force_authn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_saml#honor_force_authn AppSaml#honor_force_authn}
 
 ---
 
@@ -2687,7 +2687,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/app_saml#id AppSaml#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_saml#id AppSaml#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2704,7 +2704,7 @@ public string IdpIssuer { get; set; }
 
 SAML issuer ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/app_saml#idp_issuer AppSaml#idp_issuer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_saml#idp_issuer AppSaml#idp_issuer}
 
 ---
 
@@ -2718,7 +2718,7 @@ public object ImplicitAssignment { get; set; }
 
 *Early Access Property*. Enable Federation Broker Mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/app_saml#implicit_assignment AppSaml#implicit_assignment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_saml#implicit_assignment AppSaml#implicit_assignment}
 
 ---
 
@@ -2732,7 +2732,7 @@ public string InlineHookId { get; set; }
 
 Saml Inline Hook setting.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/app_saml#inline_hook_id AppSaml#inline_hook_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_saml#inline_hook_id AppSaml#inline_hook_id}
 
 ---
 
@@ -2746,7 +2746,7 @@ public string KeyName { get; set; }
 
 Certificate name. This modulates the rotation of keys. New name == new key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/app_saml#key_name AppSaml#key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_saml#key_name AppSaml#key_name}
 
 ---
 
@@ -2760,7 +2760,7 @@ public double KeyYearsValid { get; set; }
 
 Number of years the certificate is valid.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/app_saml#key_years_valid AppSaml#key_years_valid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_saml#key_years_valid AppSaml#key_years_valid}
 
 ---
 
@@ -2774,7 +2774,7 @@ public string Logo { get; set; }
 
 Local path to logo of the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/app_saml#logo AppSaml#logo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_saml#logo AppSaml#logo}
 
 ---
 
@@ -2788,7 +2788,7 @@ public string PreconfiguredApp { get; set; }
 
 Name of preexisting SAML application. For instance 'slack'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/app_saml#preconfigured_app AppSaml#preconfigured_app}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_saml#preconfigured_app AppSaml#preconfigured_app}
 
 ---
 
@@ -2802,7 +2802,7 @@ public string Recipient { get; set; }
 
 The location where the app may present the SAML assertion.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/app_saml#recipient AppSaml#recipient}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_saml#recipient AppSaml#recipient}
 
 ---
 
@@ -2816,7 +2816,7 @@ public object RequestCompressed { get; set; }
 
 Denotes whether the request is compressed or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/app_saml#request_compressed AppSaml#request_compressed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_saml#request_compressed AppSaml#request_compressed}
 
 ---
 
@@ -2830,7 +2830,7 @@ public object ResponseSigned { get; set; }
 
 Determines whether the SAML auth response message is digitally signed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/app_saml#response_signed AppSaml#response_signed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_saml#response_signed AppSaml#response_signed}
 
 ---
 
@@ -2844,7 +2844,7 @@ public object SamlSignedRequestEnabled { get; set; }
 
 SAML Signed Request enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/app_saml#saml_signed_request_enabled AppSaml#saml_signed_request_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_saml#saml_signed_request_enabled AppSaml#saml_signed_request_enabled}
 
 ---
 
@@ -2858,7 +2858,7 @@ public string SamlVersion { get; set; }
 
 SAML version for the app's sign-on mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/app_saml#saml_version AppSaml#saml_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_saml#saml_version AppSaml#saml_version}
 
 ---
 
@@ -2872,7 +2872,7 @@ public string SignatureAlgorithm { get; set; }
 
 Signature algorithm used ot digitally sign the assertion and response.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/app_saml#signature_algorithm AppSaml#signature_algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_saml#signature_algorithm AppSaml#signature_algorithm}
 
 ---
 
@@ -2886,7 +2886,7 @@ public string SingleLogoutCertificate { get; set; }
 
 x509 encoded certificate that the Service Provider uses to sign Single Logout requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/app_saml#single_logout_certificate AppSaml#single_logout_certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_saml#single_logout_certificate AppSaml#single_logout_certificate}
 
 ---
 
@@ -2900,7 +2900,7 @@ public string SingleLogoutIssuer { get; set; }
 
 The issuer of the Service Provider that generates the Single Logout request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/app_saml#single_logout_issuer AppSaml#single_logout_issuer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_saml#single_logout_issuer AppSaml#single_logout_issuer}
 
 ---
 
@@ -2914,7 +2914,7 @@ public string SingleLogoutUrl { get; set; }
 
 The location where the logout response is sent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/app_saml#single_logout_url AppSaml#single_logout_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_saml#single_logout_url AppSaml#single_logout_url}
 
 ---
 
@@ -2928,7 +2928,7 @@ public string SpIssuer { get; set; }
 
 SAML SP issuer ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/app_saml#sp_issuer AppSaml#sp_issuer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_saml#sp_issuer AppSaml#sp_issuer}
 
 ---
 
@@ -2942,7 +2942,7 @@ public string SsoUrl { get; set; }
 
 Single Sign On URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/app_saml#sso_url AppSaml#sso_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_saml#sso_url AppSaml#sso_url}
 
 ---
 
@@ -2956,7 +2956,7 @@ public string Status { get; set; }
 
 Status of application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/app_saml#status AppSaml#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_saml#status AppSaml#status}
 
 ---
 
@@ -2970,7 +2970,7 @@ public string SubjectNameIdFormat { get; set; }
 
 Identifies the SAML processing rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/app_saml#subject_name_id_format AppSaml#subject_name_id_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_saml#subject_name_id_format AppSaml#subject_name_id_format}
 
 ---
 
@@ -2984,7 +2984,7 @@ public string SubjectNameIdTemplate { get; set; }
 
 Template for app user's username when a user is assigned to the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/app_saml#subject_name_id_template AppSaml#subject_name_id_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_saml#subject_name_id_template AppSaml#subject_name_id_template}
 
 ---
 
@@ -2998,7 +2998,7 @@ public AppSamlTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/app_saml#timeouts AppSaml#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_saml#timeouts AppSaml#timeouts}
 
 ---
 
@@ -3012,7 +3012,7 @@ public string UserNameTemplate { get; set; }
 
 Username template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/app_saml#user_name_template AppSaml#user_name_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_saml#user_name_template AppSaml#user_name_template}
 
 ---
 
@@ -3026,7 +3026,7 @@ public string UserNameTemplatePushStatus { get; set; }
 
 Push username on update.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/app_saml#user_name_template_push_status AppSaml#user_name_template_push_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_saml#user_name_template_push_status AppSaml#user_name_template_push_status}
 
 ---
 
@@ -3040,7 +3040,7 @@ public string UserNameTemplateSuffix { get; set; }
 
 Username template suffix.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/app_saml#user_name_template_suffix AppSaml#user_name_template_suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_saml#user_name_template_suffix AppSaml#user_name_template_suffix}
 
 ---
 
@@ -3054,7 +3054,7 @@ public string UserNameTemplateType { get; set; }
 
 Username template type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/app_saml#user_name_template_type AppSaml#user_name_template_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_saml#user_name_template_type AppSaml#user_name_template_type}
 
 ---
 
@@ -3089,9 +3089,9 @@ new AppSamlTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/app_saml#create AppSaml#create}. |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/app_saml#read AppSaml#read}. |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/app_saml#update AppSaml#update}. |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_saml#create AppSaml#create}. |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_saml#read AppSaml#read}. |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_saml#update AppSaml#update}. |
 
 ---
 
@@ -3103,7 +3103,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/app_saml#create AppSaml#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_saml#create AppSaml#create}.
 
 ---
 
@@ -3115,7 +3115,7 @@ public string Read { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/app_saml#read AppSaml#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_saml#read AppSaml#read}.
 
 ---
 
@@ -3127,7 +3127,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/app_saml#update AppSaml#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_saml#update AppSaml#update}.
 
 ---
 

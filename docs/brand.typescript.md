@@ -1,6 +1,6 @@
 # `okta_brand`
 
-Refer to the Terraform Registory for docs: [`okta_brand`](https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/brand).
+Refer to the Terraform Registory for docs: [`okta_brand`](https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/brand).
 
 # `brand` Submodule <a name="`brand` Submodule" id="@cdktf/provider-okta.brand"></a>
 
@@ -8,14 +8,14 @@ Refer to the Terraform Registory for docs: [`okta_brand`](https://registry.terra
 
 ### Brand <a name="Brand" id="@cdktf/provider-okta.brand.Brand"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/brand okta_brand}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/brand okta_brand}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.brand.Brand.Initializer"></a>
 
 ```typescript
 import { brand } from '@cdktf/provider-okta'
 
-new brand.Brand(scope: Construct, id: string, config?: BrandConfig)
+new brand.Brand(scope: Construct, id: string, config: BrandConfig)
 ```
 
 | **Name** | **Type** | **Description** |
@@ -44,7 +44,7 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Optional</sup> <a name="config" id="@cdktf/provider-okta.brand.Brand.Initializer.parameter.config"></a>
+##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-okta.brand.Brand.Initializer.parameter.config"></a>
 
 - *Type:* <a href="#@cdktf/provider-okta.brand.BrandConfig">BrandConfig</a>
 
@@ -73,6 +73,11 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-okta.brand.Brand.resetAgreeToCustomPrivacyPolicy">resetAgreeToCustomPrivacyPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.brand.Brand.resetBrandId">resetBrandId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.brand.Brand.resetCustomPrivacyPolicyUrl">resetCustomPrivacyPolicyUrl</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.brand.Brand.resetDefaultAppAppInstanceId">resetDefaultAppAppInstanceId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.brand.Brand.resetDefaultAppAppLinkName">resetDefaultAppAppLinkName</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.brand.Brand.resetDefaultAppClassicApplicationUri">resetDefaultAppClassicApplicationUri</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.brand.Brand.resetEmailDomainId">resetEmailDomainId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.brand.Brand.resetLocale">resetLocale</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.brand.Brand.resetRemovePoweredByOkta">resetRemovePoweredByOkta</a></code> | *No description.* |
 
 ---
@@ -279,6 +284,36 @@ public resetBrandId(): void
 public resetCustomPrivacyPolicyUrl(): void
 ```
 
+##### `resetDefaultAppAppInstanceId` <a name="resetDefaultAppAppInstanceId" id="@cdktf/provider-okta.brand.Brand.resetDefaultAppAppInstanceId"></a>
+
+```typescript
+public resetDefaultAppAppInstanceId(): void
+```
+
+##### `resetDefaultAppAppLinkName` <a name="resetDefaultAppAppLinkName" id="@cdktf/provider-okta.brand.Brand.resetDefaultAppAppLinkName"></a>
+
+```typescript
+public resetDefaultAppAppLinkName(): void
+```
+
+##### `resetDefaultAppClassicApplicationUri` <a name="resetDefaultAppClassicApplicationUri" id="@cdktf/provider-okta.brand.Brand.resetDefaultAppClassicApplicationUri"></a>
+
+```typescript
+public resetDefaultAppClassicApplicationUri(): void
+```
+
+##### `resetEmailDomainId` <a name="resetEmailDomainId" id="@cdktf/provider-okta.brand.Brand.resetEmailDomainId"></a>
+
+```typescript
+public resetEmailDomainId(): void
+```
+
+##### `resetLocale` <a name="resetLocale" id="@cdktf/provider-okta.brand.Brand.resetLocale"></a>
+
+```typescript
+public resetLocale(): void
+```
+
 ##### `resetRemovePoweredByOkta` <a name="resetRemovePoweredByOkta" id="@cdktf/provider-okta.brand.Brand.resetRemovePoweredByOkta"></a>
 
 ```typescript
@@ -374,15 +409,27 @@ brand.Brand.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-okta.brand.Brand.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.brand.Brand.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.brand.Brand.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.brand.Brand.property.isDefault">isDefault</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.brand.Brand.property.links">links</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.brand.Brand.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.brand.Brand.property.agreeToCustomPrivacyPolicyInput">agreeToCustomPrivacyPolicyInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.brand.Brand.property.brandIdInput">brandIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.brand.Brand.property.customPrivacyPolicyUrlInput">customPrivacyPolicyUrlInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.brand.Brand.property.defaultAppAppInstanceIdInput">defaultAppAppInstanceIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.brand.Brand.property.defaultAppAppLinkNameInput">defaultAppAppLinkNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.brand.Brand.property.defaultAppClassicApplicationUriInput">defaultAppClassicApplicationUriInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.brand.Brand.property.emailDomainIdInput">emailDomainIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.brand.Brand.property.localeInput">localeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.brand.Brand.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.brand.Brand.property.removePoweredByOktaInput">removePoweredByOktaInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.brand.Brand.property.agreeToCustomPrivacyPolicy">agreeToCustomPrivacyPolicy</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.brand.Brand.property.brandId">brandId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.brand.Brand.property.customPrivacyPolicyUrl">customPrivacyPolicyUrl</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.brand.Brand.property.defaultAppAppInstanceId">defaultAppAppInstanceId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.brand.Brand.property.defaultAppAppLinkName">defaultAppAppLinkName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.brand.Brand.property.defaultAppClassicApplicationUri">defaultAppClassicApplicationUri</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.brand.Brand.property.emailDomainId">emailDomainId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.brand.Brand.property.locale">locale</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.brand.Brand.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.brand.Brand.property.removePoweredByOkta">removePoweredByOkta</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 
 ---
@@ -539,20 +586,20 @@ public readonly id: string;
 
 ---
 
+##### `isDefault`<sup>Required</sup> <a name="isDefault" id="@cdktf/provider-okta.brand.Brand.property.isDefault"></a>
+
+```typescript
+public readonly isDefault: IResolvable;
+```
+
+- *Type:* cdktf.IResolvable
+
+---
+
 ##### `links`<sup>Required</sup> <a name="links" id="@cdktf/provider-okta.brand.Brand.property.links"></a>
 
 ```typescript
 public readonly links: string;
-```
-
-- *Type:* string
-
----
-
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-okta.brand.Brand.property.name"></a>
-
-```typescript
-public readonly name: string;
 ```
 
 - *Type:* string
@@ -583,6 +630,66 @@ public readonly brandIdInput: string;
 
 ```typescript
 public readonly customPrivacyPolicyUrlInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `defaultAppAppInstanceIdInput`<sup>Optional</sup> <a name="defaultAppAppInstanceIdInput" id="@cdktf/provider-okta.brand.Brand.property.defaultAppAppInstanceIdInput"></a>
+
+```typescript
+public readonly defaultAppAppInstanceIdInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `defaultAppAppLinkNameInput`<sup>Optional</sup> <a name="defaultAppAppLinkNameInput" id="@cdktf/provider-okta.brand.Brand.property.defaultAppAppLinkNameInput"></a>
+
+```typescript
+public readonly defaultAppAppLinkNameInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `defaultAppClassicApplicationUriInput`<sup>Optional</sup> <a name="defaultAppClassicApplicationUriInput" id="@cdktf/provider-okta.brand.Brand.property.defaultAppClassicApplicationUriInput"></a>
+
+```typescript
+public readonly defaultAppClassicApplicationUriInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `emailDomainIdInput`<sup>Optional</sup> <a name="emailDomainIdInput" id="@cdktf/provider-okta.brand.Brand.property.emailDomainIdInput"></a>
+
+```typescript
+public readonly emailDomainIdInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `localeInput`<sup>Optional</sup> <a name="localeInput" id="@cdktf/provider-okta.brand.Brand.property.localeInput"></a>
+
+```typescript
+public readonly localeInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktf/provider-okta.brand.Brand.property.nameInput"></a>
+
+```typescript
+public readonly nameInput: string;
 ```
 
 - *Type:* string
@@ -623,6 +730,66 @@ public readonly brandId: string;
 
 ```typescript
 public readonly customPrivacyPolicyUrl: string;
+```
+
+- *Type:* string
+
+---
+
+##### `defaultAppAppInstanceId`<sup>Required</sup> <a name="defaultAppAppInstanceId" id="@cdktf/provider-okta.brand.Brand.property.defaultAppAppInstanceId"></a>
+
+```typescript
+public readonly defaultAppAppInstanceId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `defaultAppAppLinkName`<sup>Required</sup> <a name="defaultAppAppLinkName" id="@cdktf/provider-okta.brand.Brand.property.defaultAppAppLinkName"></a>
+
+```typescript
+public readonly defaultAppAppLinkName: string;
+```
+
+- *Type:* string
+
+---
+
+##### `defaultAppClassicApplicationUri`<sup>Required</sup> <a name="defaultAppClassicApplicationUri" id="@cdktf/provider-okta.brand.Brand.property.defaultAppClassicApplicationUri"></a>
+
+```typescript
+public readonly defaultAppClassicApplicationUri: string;
+```
+
+- *Type:* string
+
+---
+
+##### `emailDomainId`<sup>Required</sup> <a name="emailDomainId" id="@cdktf/provider-okta.brand.Brand.property.emailDomainId"></a>
+
+```typescript
+public readonly emailDomainId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `locale`<sup>Required</sup> <a name="locale" id="@cdktf/provider-okta.brand.Brand.property.locale"></a>
+
+```typescript
+public readonly locale: string;
+```
+
+- *Type:* string
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-okta.brand.Brand.property.name"></a>
+
+```typescript
+public readonly name: string;
 ```
 
 - *Type:* string
@@ -680,9 +847,15 @@ const brandConfig: brand.BrandConfig = { ... }
 | <code><a href="#@cdktf/provider-okta.brand.BrandConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.brand.BrandConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.brand.BrandConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.brand.BrandConfig.property.name">name</a></code> | <code>string</code> | Brand name. |
 | <code><a href="#@cdktf/provider-okta.brand.BrandConfig.property.agreeToCustomPrivacyPolicy">agreeToCustomPrivacyPolicy</a></code> | <code>boolean \| cdktf.IResolvable</code> | Consent for updating the custom privacy policy URL. |
 | <code><a href="#@cdktf/provider-okta.brand.BrandConfig.property.brandId">brandId</a></code> | <code>string</code> | Brand ID - Note: Okta API for brands only reads and updates therefore the okta_brand resource needs to act as a quasi data source. |
 | <code><a href="#@cdktf/provider-okta.brand.BrandConfig.property.customPrivacyPolicyUrl">customPrivacyPolicyUrl</a></code> | <code>string</code> | Custom privacy policy URL. |
+| <code><a href="#@cdktf/provider-okta.brand.BrandConfig.property.defaultAppAppInstanceId">defaultAppAppInstanceId</a></code> | <code>string</code> | Default app app instance id. |
+| <code><a href="#@cdktf/provider-okta.brand.BrandConfig.property.defaultAppAppLinkName">defaultAppAppLinkName</a></code> | <code>string</code> | Default app app link name. |
+| <code><a href="#@cdktf/provider-okta.brand.BrandConfig.property.defaultAppClassicApplicationUri">defaultAppClassicApplicationUri</a></code> | <code>string</code> | Default app classic application uri. |
+| <code><a href="#@cdktf/provider-okta.brand.BrandConfig.property.emailDomainId">emailDomainId</a></code> | <code>string</code> | Email Domain ID tied to this brand. |
+| <code><a href="#@cdktf/provider-okta.brand.BrandConfig.property.locale">locale</a></code> | <code>string</code> | The language specified as an IETF BCP 47 language tag. |
 | <code><a href="#@cdktf/provider-okta.brand.BrandConfig.property.removePoweredByOkta">removePoweredByOkta</a></code> | <code>boolean \| cdktf.IResolvable</code> | Removes "Powered by Okta" from the Okta-hosted sign-in page and "© 2021 Okta, Inc." from the Okta End-User Dashboard. |
 
 ---
@@ -757,6 +930,20 @@ public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExe
 
 ---
 
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-okta.brand.BrandConfig.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+Brand name.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/brand#name Brand#name}
+
+---
+
 ##### `agreeToCustomPrivacyPolicy`<sup>Optional</sup> <a name="agreeToCustomPrivacyPolicy" id="@cdktf/provider-okta.brand.BrandConfig.property.agreeToCustomPrivacyPolicy"></a>
 
 ```typescript
@@ -767,7 +954,7 @@ public readonly agreeToCustomPrivacyPolicy: boolean | IResolvable;
 
 Consent for updating the custom privacy policy URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/brand#agree_to_custom_privacy_policy Brand#agree_to_custom_privacy_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/brand#agree_to_custom_privacy_policy Brand#agree_to_custom_privacy_policy}
 
 ---
 
@@ -783,7 +970,7 @@ Brand ID - Note: Okta API for brands only reads and updates therefore the okta_b
 
 Do this by setting brand_id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/brand#brand_id Brand#brand_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/brand#brand_id Brand#brand_id}
 
 ---
 
@@ -797,7 +984,77 @@ public readonly customPrivacyPolicyUrl: string;
 
 Custom privacy policy URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/brand#custom_privacy_policy_url Brand#custom_privacy_policy_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/brand#custom_privacy_policy_url Brand#custom_privacy_policy_url}
+
+---
+
+##### `defaultAppAppInstanceId`<sup>Optional</sup> <a name="defaultAppAppInstanceId" id="@cdktf/provider-okta.brand.BrandConfig.property.defaultAppAppInstanceId"></a>
+
+```typescript
+public readonly defaultAppAppInstanceId: string;
+```
+
+- *Type:* string
+
+Default app app instance id.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/brand#default_app_app_instance_id Brand#default_app_app_instance_id}
+
+---
+
+##### `defaultAppAppLinkName`<sup>Optional</sup> <a name="defaultAppAppLinkName" id="@cdktf/provider-okta.brand.BrandConfig.property.defaultAppAppLinkName"></a>
+
+```typescript
+public readonly defaultAppAppLinkName: string;
+```
+
+- *Type:* string
+
+Default app app link name.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/brand#default_app_app_link_name Brand#default_app_app_link_name}
+
+---
+
+##### `defaultAppClassicApplicationUri`<sup>Optional</sup> <a name="defaultAppClassicApplicationUri" id="@cdktf/provider-okta.brand.BrandConfig.property.defaultAppClassicApplicationUri"></a>
+
+```typescript
+public readonly defaultAppClassicApplicationUri: string;
+```
+
+- *Type:* string
+
+Default app classic application uri.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/brand#default_app_classic_application_uri Brand#default_app_classic_application_uri}
+
+---
+
+##### `emailDomainId`<sup>Optional</sup> <a name="emailDomainId" id="@cdktf/provider-okta.brand.BrandConfig.property.emailDomainId"></a>
+
+```typescript
+public readonly emailDomainId: string;
+```
+
+- *Type:* string
+
+Email Domain ID tied to this brand.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/brand#email_domain_id Brand#email_domain_id}
+
+---
+
+##### `locale`<sup>Optional</sup> <a name="locale" id="@cdktf/provider-okta.brand.BrandConfig.property.locale"></a>
+
+```typescript
+public readonly locale: string;
+```
+
+- *Type:* string
+
+The language specified as an IETF BCP 47 language tag.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/brand#locale Brand#locale}
 
 ---
 
@@ -811,7 +1068,7 @@ public readonly removePoweredByOkta: boolean | IResolvable;
 
 Removes "Powered by Okta" from the Okta-hosted sign-in page and "© 2021 Okta, Inc." from the Okta End-User Dashboard.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/brand#remove_powered_by_okta Brand#remove_powered_by_okta}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/brand#remove_powered_by_okta Brand#remove_powered_by_okta}
 
 ---
 

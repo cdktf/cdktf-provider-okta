@@ -1,6 +1,6 @@
 # `data_okta_app_oauth`
 
-Refer to the Terraform Registory for docs: [`data_okta_app_oauth`](https://registry.terraform.io/providers/okta/okta/4.3.0/docs/data-sources/app_oauth).
+Refer to the Terraform Registory for docs: [`data_okta_app_oauth`](https://registry.terraform.io/providers/okta/okta/4.4.0/docs/data-sources/app_oauth).
 
 # `dataOktaAppOauth` Submodule <a name="`dataOktaAppOauth` Submodule" id="@cdktf/provider-okta.dataOktaAppOauth"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_okta_app_oauth`](https://regis
 
 ### DataOktaAppOauth <a name="DataOktaAppOauth" id="@cdktf/provider-okta.dataOktaAppOauth.DataOktaAppOauth"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/data-sources/app_oauth okta_app_oauth}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/data-sources/app_oauth okta_app_oauth}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaAppOauth.DataOktaAppOauth.Initializer"></a>
 
@@ -46,9 +46,9 @@ dataOktaAppOauth.DataOktaAppOauth(
 | <code><a href="#@cdktf/provider-okta.dataOktaAppOauth.DataOktaAppOauth.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaAppOauth.DataOktaAppOauth.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaAppOauth.DataOktaAppOauth.Initializer.parameter.activeOnly">active_only</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Search only ACTIVE applications. |
-| <code><a href="#@cdktf/provider-okta.dataOktaAppOauth.DataOktaAppOauth.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/data-sources/app_oauth#id DataOktaAppOauth#id}. |
-| <code><a href="#@cdktf/provider-okta.dataOktaAppOauth.DataOktaAppOauth.Initializer.parameter.label">label</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/data-sources/app_oauth#label DataOktaAppOauth#label}. |
-| <code><a href="#@cdktf/provider-okta.dataOktaAppOauth.DataOktaAppOauth.Initializer.parameter.labelPrefix">label_prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/data-sources/app_oauth#label_prefix DataOktaAppOauth#label_prefix}. |
+| <code><a href="#@cdktf/provider-okta.dataOktaAppOauth.DataOktaAppOauth.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/data-sources/app_oauth#id DataOktaAppOauth#id}. |
+| <code><a href="#@cdktf/provider-okta.dataOktaAppOauth.DataOktaAppOauth.Initializer.parameter.label">label</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/data-sources/app_oauth#label DataOktaAppOauth#label}. |
+| <code><a href="#@cdktf/provider-okta.dataOktaAppOauth.DataOktaAppOauth.Initializer.parameter.labelPrefix">label_prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/data-sources/app_oauth#label_prefix DataOktaAppOauth#label_prefix}. |
 | <code><a href="#@cdktf/provider-okta.dataOktaAppOauth.DataOktaAppOauth.Initializer.parameter.skipGroups">skip_groups</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources. |
 | <code><a href="#@cdktf/provider-okta.dataOktaAppOauth.DataOktaAppOauth.Initializer.parameter.skipUsers">skip_users</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources. |
 
@@ -120,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 Search only ACTIVE applications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/data-sources/app_oauth#active_only DataOktaAppOauth#active_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/data-sources/app_oauth#active_only DataOktaAppOauth#active_only}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/data-sources/app_oauth#id DataOktaAppOauth#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/data-sources/app_oauth#id DataOktaAppOauth#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -139,7 +139,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/data-sources/app_oauth#label DataOktaAppOauth#label}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/data-sources/app_oauth#label DataOktaAppOauth#label}.
 
 ---
 
@@ -147,7 +147,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/data-sources/app_oauth#label_prefix DataOktaAppOauth#label_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/data-sources/app_oauth#label_prefix DataOktaAppOauth#label_prefix}.
 
 ---
 
@@ -157,7 +157,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/data-sources/app_oauth#skip_groups DataOktaAppOauth#skip_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/data-sources/app_oauth#skip_groups DataOktaAppOauth#skip_groups}
 
 ---
 
@@ -167,7 +167,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/data-sources/app_oauth#skip_users DataOktaAppOauth#skip_users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/data-sources/app_oauth#skip_users DataOktaAppOauth#skip_users}
 
 ---
 
@@ -1070,9 +1070,9 @@ dataOktaAppOauth.DataOktaAppOauthConfig(
 | <code><a href="#@cdktf/provider-okta.dataOktaAppOauth.DataOktaAppOauthConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaAppOauth.DataOktaAppOauthConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaAppOauth.DataOktaAppOauthConfig.property.activeOnly">active_only</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Search only ACTIVE applications. |
-| <code><a href="#@cdktf/provider-okta.dataOktaAppOauth.DataOktaAppOauthConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/data-sources/app_oauth#id DataOktaAppOauth#id}. |
-| <code><a href="#@cdktf/provider-okta.dataOktaAppOauth.DataOktaAppOauthConfig.property.label">label</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/data-sources/app_oauth#label DataOktaAppOauth#label}. |
-| <code><a href="#@cdktf/provider-okta.dataOktaAppOauth.DataOktaAppOauthConfig.property.labelPrefix">label_prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/data-sources/app_oauth#label_prefix DataOktaAppOauth#label_prefix}. |
+| <code><a href="#@cdktf/provider-okta.dataOktaAppOauth.DataOktaAppOauthConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/data-sources/app_oauth#id DataOktaAppOauth#id}. |
+| <code><a href="#@cdktf/provider-okta.dataOktaAppOauth.DataOktaAppOauthConfig.property.label">label</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/data-sources/app_oauth#label DataOktaAppOauth#label}. |
+| <code><a href="#@cdktf/provider-okta.dataOktaAppOauth.DataOktaAppOauthConfig.property.labelPrefix">label_prefix</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/data-sources/app_oauth#label_prefix DataOktaAppOauth#label_prefix}. |
 | <code><a href="#@cdktf/provider-okta.dataOktaAppOauth.DataOktaAppOauthConfig.property.skipGroups">skip_groups</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources. |
 | <code><a href="#@cdktf/provider-okta.dataOktaAppOauth.DataOktaAppOauthConfig.property.skipUsers">skip_users</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources. |
 
@@ -1158,7 +1158,7 @@ active_only: typing.Union[bool, IResolvable]
 
 Search only ACTIVE applications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/data-sources/app_oauth#active_only DataOktaAppOauth#active_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/data-sources/app_oauth#active_only DataOktaAppOauth#active_only}
 
 ---
 
@@ -1170,7 +1170,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/data-sources/app_oauth#id DataOktaAppOauth#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/data-sources/app_oauth#id DataOktaAppOauth#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1185,7 +1185,7 @@ label: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/data-sources/app_oauth#label DataOktaAppOauth#label}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/data-sources/app_oauth#label DataOktaAppOauth#label}.
 
 ---
 
@@ -1197,7 +1197,7 @@ label_prefix: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/data-sources/app_oauth#label_prefix DataOktaAppOauth#label_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/data-sources/app_oauth#label_prefix DataOktaAppOauth#label_prefix}.
 
 ---
 
@@ -1211,7 +1211,7 @@ skip_groups: typing.Union[bool, IResolvable]
 
 Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/data-sources/app_oauth#skip_groups DataOktaAppOauth#skip_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/data-sources/app_oauth#skip_groups DataOktaAppOauth#skip_groups}
 
 ---
 
@@ -1225,7 +1225,7 @@ skip_users: typing.Union[bool, IResolvable]
 
 Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/data-sources/app_oauth#skip_users DataOktaAppOauth#skip_users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/data-sources/app_oauth#skip_users DataOktaAppOauth#skip_users}
 
 ---
 

@@ -7,6 +7,7 @@
 Object.defineProperty(exports, 'adminRoleCustom', { get: function () { return require('./admin-role-custom'); } });
 Object.defineProperty(exports, 'adminRoleCustomAssignments', { get: function () { return require('./admin-role-custom-assignments'); } });
 Object.defineProperty(exports, 'adminRoleTargets', { get: function () { return require('./admin-role-targets'); } });
+Object.defineProperty(exports, 'appAccessPolicyAssignment', { get: function () { return require('./app-access-policy-assignment'); } });
 Object.defineProperty(exports, 'appAutoLogin', { get: function () { return require('./app-auto-login'); } });
 Object.defineProperty(exports, 'appBasicAuth', { get: function () { return require('./app-basic-auth'); } });
 Object.defineProperty(exports, 'appBookmark', { get: function () { return require('./app-bookmark'); } });

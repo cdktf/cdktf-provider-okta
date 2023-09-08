@@ -1,6 +1,6 @@
 # `okta_org_configuration`
 
-Refer to the Terraform Registory for docs: [`okta_org_configuration`](https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/org_configuration).
+Refer to the Terraform Registory for docs: [`okta_org_configuration`](https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/org_configuration).
 
 # `orgConfiguration` Submodule <a name="`orgConfiguration` Submodule" id="@cdktf/provider-okta.orgConfiguration"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_org_configuration`](https://re
 
 ### OrgConfiguration <a name="OrgConfiguration" id="@cdktf/provider-okta.orgConfiguration.OrgConfiguration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/org_configuration okta_org_configuration}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/org_configuration okta_org_configuration}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.orgConfiguration.OrgConfiguration.Initializer"></a>
 
@@ -62,7 +62,7 @@ orgConfiguration.OrgConfiguration(
 | <code><a href="#@cdktf/provider-okta.orgConfiguration.OrgConfiguration.Initializer.parameter.city">city</a></code> | <code>str</code> | City of org. |
 | <code><a href="#@cdktf/provider-okta.orgConfiguration.OrgConfiguration.Initializer.parameter.country">country</a></code> | <code>str</code> | Country of org. |
 | <code><a href="#@cdktf/provider-okta.orgConfiguration.OrgConfiguration.Initializer.parameter.endUserSupportHelpUrl">end_user_support_help_url</a></code> | <code>str</code> | Support link of org. |
-| <code><a href="#@cdktf/provider-okta.orgConfiguration.OrgConfiguration.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/org_configuration#id OrgConfiguration#id}. |
+| <code><a href="#@cdktf/provider-okta.orgConfiguration.OrgConfiguration.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/org_configuration#id OrgConfiguration#id}. |
 | <code><a href="#@cdktf/provider-okta.orgConfiguration.OrgConfiguration.Initializer.parameter.logo">logo</a></code> | <code>str</code> | Local path to logo of the org. |
 | <code><a href="#@cdktf/provider-okta.orgConfiguration.OrgConfiguration.Initializer.parameter.optOutCommunicationEmails">opt_out_communication_emails</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates whether the org's users receive Okta Communication emails. |
 | <code><a href="#@cdktf/provider-okta.orgConfiguration.OrgConfiguration.Initializer.parameter.phoneNumber">phone_number</a></code> | <code>str</code> | Support help phone of org. |
@@ -140,7 +140,7 @@ Must be unique amongst siblings in the same scope
 
 Name of org.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/org_configuration#company_name OrgConfiguration#company_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/org_configuration#company_name OrgConfiguration#company_name}
 
 ---
 
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Primary address of org.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/org_configuration#address_1 OrgConfiguration#address_1}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/org_configuration#address_1 OrgConfiguration#address_1}
 
 ---
 
@@ -160,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Secondary address of org.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/org_configuration#address_2 OrgConfiguration#address_2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/org_configuration#address_2 OrgConfiguration#address_2}
 
 ---
 
@@ -170,7 +170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 User ID representing the billing contact.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/org_configuration#billing_contact_user OrgConfiguration#billing_contact_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/org_configuration#billing_contact_user OrgConfiguration#billing_contact_user}
 
 ---
 
@@ -180,7 +180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 City of org.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/org_configuration#city OrgConfiguration#city}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/org_configuration#city OrgConfiguration#city}
 
 ---
 
@@ -190,7 +190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Country of org.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/org_configuration#country OrgConfiguration#country}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/org_configuration#country OrgConfiguration#country}
 
 ---
 
@@ -200,7 +200,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Support link of org.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/org_configuration#end_user_support_help_url OrgConfiguration#end_user_support_help_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/org_configuration#end_user_support_help_url OrgConfiguration#end_user_support_help_url}
 
 ---
 
@@ -208,7 +208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/org_configuration#id OrgConfiguration#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/org_configuration#id OrgConfiguration#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -221,7 +221,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Local path to logo of the org.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/org_configuration#logo OrgConfiguration#logo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/org_configuration#logo OrgConfiguration#logo}
 
 ---
 
@@ -231,7 +231,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Indicates whether the org's users receive Okta Communication emails.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/org_configuration#opt_out_communication_emails OrgConfiguration#opt_out_communication_emails}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/org_configuration#opt_out_communication_emails OrgConfiguration#opt_out_communication_emails}
 
 ---
 
@@ -241,7 +241,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Support help phone of org.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/org_configuration#phone_number OrgConfiguration#phone_number}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/org_configuration#phone_number OrgConfiguration#phone_number}
 
 ---
 
@@ -251,7 +251,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Postal code of org.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/org_configuration#postal_code OrgConfiguration#postal_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/org_configuration#postal_code OrgConfiguration#postal_code}
 
 ---
 
@@ -261,7 +261,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 State of org.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/org_configuration#state OrgConfiguration#state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/org_configuration#state OrgConfiguration#state}
 
 ---
 
@@ -271,7 +271,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Support help phone of org.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/org_configuration#support_phone_number OrgConfiguration#support_phone_number}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/org_configuration#support_phone_number OrgConfiguration#support_phone_number}
 
 ---
 
@@ -281,7 +281,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 User ID representing the technical contact.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/org_configuration#technical_contact_user OrgConfiguration#technical_contact_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/org_configuration#technical_contact_user OrgConfiguration#technical_contact_user}
 
 ---
 
@@ -291,7 +291,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 The org's website.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/org_configuration#website OrgConfiguration#website}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/org_configuration#website OrgConfiguration#website}
 
 ---
 
@@ -1317,7 +1317,7 @@ orgConfiguration.OrgConfigurationConfig(
 | <code><a href="#@cdktf/provider-okta.orgConfiguration.OrgConfigurationConfig.property.city">city</a></code> | <code>str</code> | City of org. |
 | <code><a href="#@cdktf/provider-okta.orgConfiguration.OrgConfigurationConfig.property.country">country</a></code> | <code>str</code> | Country of org. |
 | <code><a href="#@cdktf/provider-okta.orgConfiguration.OrgConfigurationConfig.property.endUserSupportHelpUrl">end_user_support_help_url</a></code> | <code>str</code> | Support link of org. |
-| <code><a href="#@cdktf/provider-okta.orgConfiguration.OrgConfigurationConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/org_configuration#id OrgConfiguration#id}. |
+| <code><a href="#@cdktf/provider-okta.orgConfiguration.OrgConfigurationConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/org_configuration#id OrgConfiguration#id}. |
 | <code><a href="#@cdktf/provider-okta.orgConfiguration.OrgConfigurationConfig.property.logo">logo</a></code> | <code>str</code> | Local path to logo of the org. |
 | <code><a href="#@cdktf/provider-okta.orgConfiguration.OrgConfigurationConfig.property.optOutCommunicationEmails">opt_out_communication_emails</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates whether the org's users receive Okta Communication emails. |
 | <code><a href="#@cdktf/provider-okta.orgConfiguration.OrgConfigurationConfig.property.phoneNumber">phone_number</a></code> | <code>str</code> | Support help phone of org. |
@@ -1409,7 +1409,7 @@ company_name: str
 
 Name of org.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/org_configuration#company_name OrgConfiguration#company_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/org_configuration#company_name OrgConfiguration#company_name}
 
 ---
 
@@ -1423,7 +1423,7 @@ address1: str
 
 Primary address of org.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/org_configuration#address_1 OrgConfiguration#address_1}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/org_configuration#address_1 OrgConfiguration#address_1}
 
 ---
 
@@ -1437,7 +1437,7 @@ address2: str
 
 Secondary address of org.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/org_configuration#address_2 OrgConfiguration#address_2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/org_configuration#address_2 OrgConfiguration#address_2}
 
 ---
 
@@ -1451,7 +1451,7 @@ billing_contact_user: str
 
 User ID representing the billing contact.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/org_configuration#billing_contact_user OrgConfiguration#billing_contact_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/org_configuration#billing_contact_user OrgConfiguration#billing_contact_user}
 
 ---
 
@@ -1465,7 +1465,7 @@ city: str
 
 City of org.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/org_configuration#city OrgConfiguration#city}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/org_configuration#city OrgConfiguration#city}
 
 ---
 
@@ -1479,7 +1479,7 @@ country: str
 
 Country of org.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/org_configuration#country OrgConfiguration#country}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/org_configuration#country OrgConfiguration#country}
 
 ---
 
@@ -1493,7 +1493,7 @@ end_user_support_help_url: str
 
 Support link of org.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/org_configuration#end_user_support_help_url OrgConfiguration#end_user_support_help_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/org_configuration#end_user_support_help_url OrgConfiguration#end_user_support_help_url}
 
 ---
 
@@ -1505,7 +1505,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/org_configuration#id OrgConfiguration#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/org_configuration#id OrgConfiguration#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1522,7 +1522,7 @@ logo: str
 
 Local path to logo of the org.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/org_configuration#logo OrgConfiguration#logo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/org_configuration#logo OrgConfiguration#logo}
 
 ---
 
@@ -1536,7 +1536,7 @@ opt_out_communication_emails: typing.Union[bool, IResolvable]
 
 Indicates whether the org's users receive Okta Communication emails.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/org_configuration#opt_out_communication_emails OrgConfiguration#opt_out_communication_emails}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/org_configuration#opt_out_communication_emails OrgConfiguration#opt_out_communication_emails}
 
 ---
 
@@ -1550,7 +1550,7 @@ phone_number: str
 
 Support help phone of org.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/org_configuration#phone_number OrgConfiguration#phone_number}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/org_configuration#phone_number OrgConfiguration#phone_number}
 
 ---
 
@@ -1564,7 +1564,7 @@ postal_code: str
 
 Postal code of org.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/org_configuration#postal_code OrgConfiguration#postal_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/org_configuration#postal_code OrgConfiguration#postal_code}
 
 ---
 
@@ -1578,7 +1578,7 @@ state: str
 
 State of org.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/org_configuration#state OrgConfiguration#state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/org_configuration#state OrgConfiguration#state}
 
 ---
 
@@ -1592,7 +1592,7 @@ support_phone_number: str
 
 Support help phone of org.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/org_configuration#support_phone_number OrgConfiguration#support_phone_number}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/org_configuration#support_phone_number OrgConfiguration#support_phone_number}
 
 ---
 
@@ -1606,7 +1606,7 @@ technical_contact_user: str
 
 User ID representing the technical contact.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/org_configuration#technical_contact_user OrgConfiguration#technical_contact_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/org_configuration#technical_contact_user OrgConfiguration#technical_contact_user}
 
 ---
 
@@ -1620,7 +1620,7 @@ website: str
 
 The org's website.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/org_configuration#website OrgConfiguration#website}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/org_configuration#website OrgConfiguration#website}
 
 ---
 

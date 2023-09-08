@@ -1,6 +1,6 @@
 # `okta_brand`
 
-Refer to the Terraform Registory for docs: [`okta_brand`](https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/brand).
+Refer to the Terraform Registory for docs: [`okta_brand`](https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/brand).
 
 # `brand` Submodule <a name="`brand` Submodule" id="@cdktf/provider-okta.brand"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_brand`](https://registry.terra
 
 ### Brand <a name="Brand" id="@cdktf/provider-okta.brand.Brand"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/brand okta_brand}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/brand okta_brand}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.brand.Brand.Initializer"></a>
 
@@ -44,7 +44,7 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Optional</sup> <a name="config" id="@cdktf/provider-okta.brand.Brand.Initializer.parameter.config"></a>
+##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-okta.brand.Brand.Initializer.parameter.config"></a>
 
 - *Type:* <a href="#@cdktf/provider-okta.brand.BrandConfig">BrandConfig</a>
 
@@ -73,6 +73,11 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-okta.brand.Brand.resetAgreeToCustomPrivacyPolicy">ResetAgreeToCustomPrivacyPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.brand.Brand.resetBrandId">ResetBrandId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.brand.Brand.resetCustomPrivacyPolicyUrl">ResetCustomPrivacyPolicyUrl</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.brand.Brand.resetDefaultAppAppInstanceId">ResetDefaultAppAppInstanceId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.brand.Brand.resetDefaultAppAppLinkName">ResetDefaultAppAppLinkName</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.brand.Brand.resetDefaultAppClassicApplicationUri">ResetDefaultAppClassicApplicationUri</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.brand.Brand.resetEmailDomainId">ResetEmailDomainId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.brand.Brand.resetLocale">ResetLocale</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.brand.Brand.resetRemovePoweredByOkta">ResetRemovePoweredByOkta</a></code> | *No description.* |
 
 ---
@@ -279,6 +284,36 @@ func ResetBrandId()
 func ResetCustomPrivacyPolicyUrl()
 ```
 
+##### `ResetDefaultAppAppInstanceId` <a name="ResetDefaultAppAppInstanceId" id="@cdktf/provider-okta.brand.Brand.resetDefaultAppAppInstanceId"></a>
+
+```go
+func ResetDefaultAppAppInstanceId()
+```
+
+##### `ResetDefaultAppAppLinkName` <a name="ResetDefaultAppAppLinkName" id="@cdktf/provider-okta.brand.Brand.resetDefaultAppAppLinkName"></a>
+
+```go
+func ResetDefaultAppAppLinkName()
+```
+
+##### `ResetDefaultAppClassicApplicationUri` <a name="ResetDefaultAppClassicApplicationUri" id="@cdktf/provider-okta.brand.Brand.resetDefaultAppClassicApplicationUri"></a>
+
+```go
+func ResetDefaultAppClassicApplicationUri()
+```
+
+##### `ResetEmailDomainId` <a name="ResetEmailDomainId" id="@cdktf/provider-okta.brand.Brand.resetEmailDomainId"></a>
+
+```go
+func ResetEmailDomainId()
+```
+
+##### `ResetLocale` <a name="ResetLocale" id="@cdktf/provider-okta.brand.Brand.resetLocale"></a>
+
+```go
+func ResetLocale()
+```
+
 ##### `ResetRemovePoweredByOkta` <a name="ResetRemovePoweredByOkta" id="@cdktf/provider-okta.brand.Brand.resetRemovePoweredByOkta"></a>
 
 ```go
@@ -374,15 +409,27 @@ brand.Brand_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-okta.brand.Brand.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.brand.Brand.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.brand.Brand.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.brand.Brand.property.isDefault">IsDefault</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.brand.Brand.property.links">Links</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.brand.Brand.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.brand.Brand.property.agreeToCustomPrivacyPolicyInput">AgreeToCustomPrivacyPolicyInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.brand.Brand.property.brandIdInput">BrandIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.brand.Brand.property.customPrivacyPolicyUrlInput">CustomPrivacyPolicyUrlInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.brand.Brand.property.defaultAppAppInstanceIdInput">DefaultAppAppInstanceIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.brand.Brand.property.defaultAppAppLinkNameInput">DefaultAppAppLinkNameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.brand.Brand.property.defaultAppClassicApplicationUriInput">DefaultAppClassicApplicationUriInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.brand.Brand.property.emailDomainIdInput">EmailDomainIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.brand.Brand.property.localeInput">LocaleInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.brand.Brand.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.brand.Brand.property.removePoweredByOktaInput">RemovePoweredByOktaInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.brand.Brand.property.agreeToCustomPrivacyPolicy">AgreeToCustomPrivacyPolicy</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.brand.Brand.property.brandId">BrandId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.brand.Brand.property.customPrivacyPolicyUrl">CustomPrivacyPolicyUrl</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.brand.Brand.property.defaultAppAppInstanceId">DefaultAppAppInstanceId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.brand.Brand.property.defaultAppAppLinkName">DefaultAppAppLinkName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.brand.Brand.property.defaultAppClassicApplicationUri">DefaultAppClassicApplicationUri</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.brand.Brand.property.emailDomainId">EmailDomainId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.brand.Brand.property.locale">Locale</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.brand.Brand.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.brand.Brand.property.removePoweredByOkta">RemovePoweredByOkta</a></code> | <code>interface{}</code> | *No description.* |
 
 ---
@@ -539,20 +586,20 @@ func Id() *string
 
 ---
 
+##### `IsDefault`<sup>Required</sup> <a name="IsDefault" id="@cdktf/provider-okta.brand.Brand.property.isDefault"></a>
+
+```go
+func IsDefault() IResolvable
+```
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable
+
+---
+
 ##### `Links`<sup>Required</sup> <a name="Links" id="@cdktf/provider-okta.brand.Brand.property.links"></a>
 
 ```go
 func Links() *string
-```
-
-- *Type:* *string
-
----
-
-##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-okta.brand.Brand.property.name"></a>
-
-```go
-func Name() *string
 ```
 
 - *Type:* *string
@@ -583,6 +630,66 @@ func BrandIdInput() *string
 
 ```go
 func CustomPrivacyPolicyUrlInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `DefaultAppAppInstanceIdInput`<sup>Optional</sup> <a name="DefaultAppAppInstanceIdInput" id="@cdktf/provider-okta.brand.Brand.property.defaultAppAppInstanceIdInput"></a>
+
+```go
+func DefaultAppAppInstanceIdInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `DefaultAppAppLinkNameInput`<sup>Optional</sup> <a name="DefaultAppAppLinkNameInput" id="@cdktf/provider-okta.brand.Brand.property.defaultAppAppLinkNameInput"></a>
+
+```go
+func DefaultAppAppLinkNameInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `DefaultAppClassicApplicationUriInput`<sup>Optional</sup> <a name="DefaultAppClassicApplicationUriInput" id="@cdktf/provider-okta.brand.Brand.property.defaultAppClassicApplicationUriInput"></a>
+
+```go
+func DefaultAppClassicApplicationUriInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `EmailDomainIdInput`<sup>Optional</sup> <a name="EmailDomainIdInput" id="@cdktf/provider-okta.brand.Brand.property.emailDomainIdInput"></a>
+
+```go
+func EmailDomainIdInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `LocaleInput`<sup>Optional</sup> <a name="LocaleInput" id="@cdktf/provider-okta.brand.Brand.property.localeInput"></a>
+
+```go
+func LocaleInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `NameInput`<sup>Optional</sup> <a name="NameInput" id="@cdktf/provider-okta.brand.Brand.property.nameInput"></a>
+
+```go
+func NameInput() *string
 ```
 
 - *Type:* *string
@@ -623,6 +730,66 @@ func BrandId() *string
 
 ```go
 func CustomPrivacyPolicyUrl() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `DefaultAppAppInstanceId`<sup>Required</sup> <a name="DefaultAppAppInstanceId" id="@cdktf/provider-okta.brand.Brand.property.defaultAppAppInstanceId"></a>
+
+```go
+func DefaultAppAppInstanceId() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `DefaultAppAppLinkName`<sup>Required</sup> <a name="DefaultAppAppLinkName" id="@cdktf/provider-okta.brand.Brand.property.defaultAppAppLinkName"></a>
+
+```go
+func DefaultAppAppLinkName() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `DefaultAppClassicApplicationUri`<sup>Required</sup> <a name="DefaultAppClassicApplicationUri" id="@cdktf/provider-okta.brand.Brand.property.defaultAppClassicApplicationUri"></a>
+
+```go
+func DefaultAppClassicApplicationUri() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `EmailDomainId`<sup>Required</sup> <a name="EmailDomainId" id="@cdktf/provider-okta.brand.Brand.property.emailDomainId"></a>
+
+```go
+func EmailDomainId() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Locale`<sup>Required</sup> <a name="Locale" id="@cdktf/provider-okta.brand.Brand.property.locale"></a>
+
+```go
+func Locale() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-okta.brand.Brand.property.name"></a>
+
+```go
+func Name() *string
 ```
 
 - *Type:* *string
@@ -674,9 +841,15 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v11/brand"
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
+	Name: *string,
 	AgreeToCustomPrivacyPolicy: interface{},
 	BrandId: *string,
 	CustomPrivacyPolicyUrl: *string,
+	DefaultAppAppInstanceId: *string,
+	DefaultAppAppLinkName: *string,
+	DefaultAppClassicApplicationUri: *string,
+	EmailDomainId: *string,
+	Locale: *string,
 	RemovePoweredByOkta: interface{},
 }
 ```
@@ -692,9 +865,15 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v11/brand"
 | <code><a href="#@cdktf/provider-okta.brand.BrandConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.brand.BrandConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.brand.BrandConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.brand.BrandConfig.property.name">Name</a></code> | <code>*string</code> | Brand name. |
 | <code><a href="#@cdktf/provider-okta.brand.BrandConfig.property.agreeToCustomPrivacyPolicy">AgreeToCustomPrivacyPolicy</a></code> | <code>interface{}</code> | Consent for updating the custom privacy policy URL. |
 | <code><a href="#@cdktf/provider-okta.brand.BrandConfig.property.brandId">BrandId</a></code> | <code>*string</code> | Brand ID - Note: Okta API for brands only reads and updates therefore the okta_brand resource needs to act as a quasi data source. |
 | <code><a href="#@cdktf/provider-okta.brand.BrandConfig.property.customPrivacyPolicyUrl">CustomPrivacyPolicyUrl</a></code> | <code>*string</code> | Custom privacy policy URL. |
+| <code><a href="#@cdktf/provider-okta.brand.BrandConfig.property.defaultAppAppInstanceId">DefaultAppAppInstanceId</a></code> | <code>*string</code> | Default app app instance id. |
+| <code><a href="#@cdktf/provider-okta.brand.BrandConfig.property.defaultAppAppLinkName">DefaultAppAppLinkName</a></code> | <code>*string</code> | Default app app link name. |
+| <code><a href="#@cdktf/provider-okta.brand.BrandConfig.property.defaultAppClassicApplicationUri">DefaultAppClassicApplicationUri</a></code> | <code>*string</code> | Default app classic application uri. |
+| <code><a href="#@cdktf/provider-okta.brand.BrandConfig.property.emailDomainId">EmailDomainId</a></code> | <code>*string</code> | Email Domain ID tied to this brand. |
+| <code><a href="#@cdktf/provider-okta.brand.BrandConfig.property.locale">Locale</a></code> | <code>*string</code> | The language specified as an IETF BCP 47 language tag. |
 | <code><a href="#@cdktf/provider-okta.brand.BrandConfig.property.removePoweredByOkta">RemovePoweredByOkta</a></code> | <code>interface{}</code> | Removes "Powered by Okta" from the Okta-hosted sign-in page and "© 2021 Okta, Inc." from the Okta End-User Dashboard. |
 
 ---
@@ -769,6 +948,20 @@ Provisioners *[]interface{}
 
 ---
 
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-okta.brand.BrandConfig.property.name"></a>
+
+```go
+Name *string
+```
+
+- *Type:* *string
+
+Brand name.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/brand#name Brand#name}
+
+---
+
 ##### `AgreeToCustomPrivacyPolicy`<sup>Optional</sup> <a name="AgreeToCustomPrivacyPolicy" id="@cdktf/provider-okta.brand.BrandConfig.property.agreeToCustomPrivacyPolicy"></a>
 
 ```go
@@ -779,7 +972,7 @@ AgreeToCustomPrivacyPolicy interface{}
 
 Consent for updating the custom privacy policy URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/brand#agree_to_custom_privacy_policy Brand#agree_to_custom_privacy_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/brand#agree_to_custom_privacy_policy Brand#agree_to_custom_privacy_policy}
 
 ---
 
@@ -795,7 +988,7 @@ Brand ID - Note: Okta API for brands only reads and updates therefore the okta_b
 
 Do this by setting brand_id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/brand#brand_id Brand#brand_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/brand#brand_id Brand#brand_id}
 
 ---
 
@@ -809,7 +1002,77 @@ CustomPrivacyPolicyUrl *string
 
 Custom privacy policy URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/brand#custom_privacy_policy_url Brand#custom_privacy_policy_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/brand#custom_privacy_policy_url Brand#custom_privacy_policy_url}
+
+---
+
+##### `DefaultAppAppInstanceId`<sup>Optional</sup> <a name="DefaultAppAppInstanceId" id="@cdktf/provider-okta.brand.BrandConfig.property.defaultAppAppInstanceId"></a>
+
+```go
+DefaultAppAppInstanceId *string
+```
+
+- *Type:* *string
+
+Default app app instance id.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/brand#default_app_app_instance_id Brand#default_app_app_instance_id}
+
+---
+
+##### `DefaultAppAppLinkName`<sup>Optional</sup> <a name="DefaultAppAppLinkName" id="@cdktf/provider-okta.brand.BrandConfig.property.defaultAppAppLinkName"></a>
+
+```go
+DefaultAppAppLinkName *string
+```
+
+- *Type:* *string
+
+Default app app link name.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/brand#default_app_app_link_name Brand#default_app_app_link_name}
+
+---
+
+##### `DefaultAppClassicApplicationUri`<sup>Optional</sup> <a name="DefaultAppClassicApplicationUri" id="@cdktf/provider-okta.brand.BrandConfig.property.defaultAppClassicApplicationUri"></a>
+
+```go
+DefaultAppClassicApplicationUri *string
+```
+
+- *Type:* *string
+
+Default app classic application uri.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/brand#default_app_classic_application_uri Brand#default_app_classic_application_uri}
+
+---
+
+##### `EmailDomainId`<sup>Optional</sup> <a name="EmailDomainId" id="@cdktf/provider-okta.brand.BrandConfig.property.emailDomainId"></a>
+
+```go
+EmailDomainId *string
+```
+
+- *Type:* *string
+
+Email Domain ID tied to this brand.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/brand#email_domain_id Brand#email_domain_id}
+
+---
+
+##### `Locale`<sup>Optional</sup> <a name="Locale" id="@cdktf/provider-okta.brand.BrandConfig.property.locale"></a>
+
+```go
+Locale *string
+```
+
+- *Type:* *string
+
+The language specified as an IETF BCP 47 language tag.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/brand#locale Brand#locale}
 
 ---
 
@@ -823,7 +1086,7 @@ RemovePoweredByOkta interface{}
 
 Removes "Powered by Okta" from the Okta-hosted sign-in page and "© 2021 Okta, Inc." from the Okta End-User Dashboard.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/brand#remove_powered_by_okta Brand#remove_powered_by_okta}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/brand#remove_powered_by_okta Brand#remove_powered_by_okta}
 
 ---
 

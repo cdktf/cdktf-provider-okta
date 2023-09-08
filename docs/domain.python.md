@@ -1,6 +1,6 @@
 # `okta_domain`
 
-Refer to the Terraform Registory for docs: [`okta_domain`](https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/domain).
+Refer to the Terraform Registory for docs: [`okta_domain`](https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/domain).
 
 # `domain` Submodule <a name="`domain` Submodule" id="@cdktf/provider-okta.domain"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_domain`](https://registry.terr
 
 ### Domain <a name="Domain" id="@cdktf/provider-okta.domain.Domain"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/domain okta_domain}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/domain okta_domain}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.domain.Domain.Initializer"></a>
 
@@ -26,6 +26,7 @@ domain.Domain(
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   name: str,
+  brand_id: str = None,
   certificate_source_type: str = None,
   id: str = None
 )
@@ -43,8 +44,9 @@ domain.Domain(
 | <code><a href="#@cdktf/provider-okta.domain.Domain.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.domain.Domain.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.domain.Domain.Initializer.parameter.name">name</a></code> | <code>str</code> | Custom Domain name. |
+| <code><a href="#@cdktf/provider-okta.domain.Domain.Initializer.parameter.brandId">brand_id</a></code> | <code>str</code> | Brand id of the domain. |
 | <code><a href="#@cdktf/provider-okta.domain.Domain.Initializer.parameter.certificateSourceType">certificate_source_type</a></code> | <code>str</code> | Optional. |
-| <code><a href="#@cdktf/provider-okta.domain.Domain.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/domain#id Domain#id}. |
+| <code><a href="#@cdktf/provider-okta.domain.Domain.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/domain#id Domain#id}. |
 
 ---
 
@@ -114,7 +116,17 @@ Must be unique amongst siblings in the same scope
 
 Custom Domain name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/domain#name Domain#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/domain#name Domain#name}
+
+---
+
+##### `brand_id`<sup>Optional</sup> <a name="brand_id" id="@cdktf/provider-okta.domain.Domain.Initializer.parameter.brandId"></a>
+
+- *Type:* str
+
+Brand id of the domain.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/domain#brand_id Domain#brand_id}
 
 ---
 
@@ -126,7 +138,7 @@ Optional.
 
 Certificate source type that indicates whether the certificate is provided by the user or Okta. Accepted values: MANUAL, OKTA_MANAGED. Warning: Use of OKTA_MANAGED requires a feature flag to be enabled. Default value = MANUAL
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/domain#certificate_source_type Domain#certificate_source_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/domain#certificate_source_type Domain#certificate_source_type}
 
 ---
 
@@ -134,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/domain#id Domain#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/domain#id Domain#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -161,6 +173,7 @@ If you experience problems setting this value it might not be settable. Please t
 | <code><a href="#@cdktf/provider-okta.domain.Domain.getStringAttribute">get_string_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.domain.Domain.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.domain.Domain.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.domain.Domain.resetBrandId">reset_brand_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.domain.Domain.resetCertificateSourceType">reset_certificate_source_type</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.domain.Domain.resetId">reset_id</a></code> | *No description.* |
 
@@ -375,6 +388,12 @@ def interpolation_for_attribute(
 
 ---
 
+##### `reset_brand_id` <a name="reset_brand_id" id="@cdktf/provider-okta.domain.Domain.resetBrandId"></a>
+
+```python
+def reset_brand_id() -> None
+```
+
 ##### `reset_certificate_source_type` <a name="reset_certificate_source_type" id="@cdktf/provider-okta.domain.Domain.resetCertificateSourceType"></a>
 
 ```python
@@ -483,9 +502,11 @@ domain.Domain.is_terraform_resource(
 | <code><a href="#@cdktf/provider-okta.domain.Domain.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.domain.Domain.property.dnsRecords">dns_records</a></code> | <code><a href="#@cdktf/provider-okta.domain.DomainDnsRecordsList">DomainDnsRecordsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.domain.Domain.property.validationStatus">validation_status</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.domain.Domain.property.brandIdInput">brand_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.domain.Domain.property.certificateSourceTypeInput">certificate_source_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.domain.Domain.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.domain.Domain.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.domain.Domain.property.brandId">brand_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.domain.Domain.property.certificateSourceType">certificate_source_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.domain.Domain.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.domain.Domain.property.name">name</a></code> | <code>str</code> | *No description.* |
@@ -654,6 +675,16 @@ validation_status: str
 
 ---
 
+##### `brand_id_input`<sup>Optional</sup> <a name="brand_id_input" id="@cdktf/provider-okta.domain.Domain.property.brandIdInput"></a>
+
+```python
+brand_id_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `certificate_source_type_input`<sup>Optional</sup> <a name="certificate_source_type_input" id="@cdktf/provider-okta.domain.Domain.property.certificateSourceTypeInput"></a>
 
 ```python
@@ -678,6 +709,16 @@ id_input: str
 
 ```python
 name_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `brand_id`<sup>Required</sup> <a name="brand_id" id="@cdktf/provider-okta.domain.Domain.property.brandId"></a>
+
+```python
+brand_id: str
 ```
 
 - *Type:* str
@@ -750,6 +791,7 @@ domain.DomainConfig(
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   name: str,
+  brand_id: str = None,
   certificate_source_type: str = None,
   id: str = None
 )
@@ -767,8 +809,9 @@ domain.DomainConfig(
 | <code><a href="#@cdktf/provider-okta.domain.DomainConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.domain.DomainConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.domain.DomainConfig.property.name">name</a></code> | <code>str</code> | Custom Domain name. |
+| <code><a href="#@cdktf/provider-okta.domain.DomainConfig.property.brandId">brand_id</a></code> | <code>str</code> | Brand id of the domain. |
 | <code><a href="#@cdktf/provider-okta.domain.DomainConfig.property.certificateSourceType">certificate_source_type</a></code> | <code>str</code> | Optional. |
-| <code><a href="#@cdktf/provider-okta.domain.DomainConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/domain#id Domain#id}. |
+| <code><a href="#@cdktf/provider-okta.domain.DomainConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/domain#id Domain#id}. |
 
 ---
 
@@ -852,7 +895,21 @@ name: str
 
 Custom Domain name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/domain#name Domain#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/domain#name Domain#name}
+
+---
+
+##### `brand_id`<sup>Optional</sup> <a name="brand_id" id="@cdktf/provider-okta.domain.DomainConfig.property.brandId"></a>
+
+```python
+brand_id: str
+```
+
+- *Type:* str
+
+Brand id of the domain.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/domain#brand_id Domain#brand_id}
 
 ---
 
@@ -868,7 +925,7 @@ Optional.
 
 Certificate source type that indicates whether the certificate is provided by the user or Okta. Accepted values: MANUAL, OKTA_MANAGED. Warning: Use of OKTA_MANAGED requires a feature flag to be enabled. Default value = MANUAL
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/domain#certificate_source_type Domain#certificate_source_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/domain#certificate_source_type Domain#certificate_source_type}
 
 ---
 
@@ -880,7 +937,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/domain#id Domain#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/domain#id Domain#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

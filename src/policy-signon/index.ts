@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/policy_signon
+// https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/policy_signon
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface PolicySignonConfig extends cdktf.TerraformMetaArguments {
   /**
   * Policy Description
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/policy_signon#description PolicySignon#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/policy_signon#description PolicySignon#description}
   */
   readonly description?: string;
   /**
   * List of Group IDs to Include
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/policy_signon#groups_included PolicySignon#groups_included}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/policy_signon#groups_included PolicySignon#groups_included}
   */
   readonly groupsIncluded?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/policy_signon#id PolicySignon#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/policy_signon#id PolicySignon#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,25 +34,25 @@ export interface PolicySignonConfig extends cdktf.TerraformMetaArguments {
   /**
   * Policy Name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/policy_signon#name PolicySignon#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/policy_signon#name PolicySignon#name}
   */
   readonly name: string;
   /**
   * Policy Priority, this attribute can be set to a valid priority. To avoid endless diff situation we error if an invalid priority is provided. API defaults it to the last (lowest) if not there.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/policy_signon#priority PolicySignon#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/policy_signon#priority PolicySignon#priority}
   */
   readonly priority?: number;
   /**
   * Policy Status: ACTIVE or INACTIVE.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/policy_signon#status PolicySignon#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/policy_signon#status PolicySignon#status}
   */
   readonly status?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/policy_signon okta_policy_signon}
+* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/policy_signon okta_policy_signon}
 */
 export class PolicySignon extends cdktf.TerraformResource {
 
@@ -66,7 +66,7 @@ export class PolicySignon extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.3.0/docs/resources/policy_signon okta_policy_signon} Resource
+  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/policy_signon okta_policy_signon} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -77,7 +77,7 @@ export class PolicySignon extends cdktf.TerraformResource {
       terraformResourceType: 'okta_policy_signon',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '4.3.0',
+        providerVersion: '4.4.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

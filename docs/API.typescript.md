@@ -4,6 +4,7 @@ The following submodules are available:
 - [adminRoleCustom](./adminRoleCustom.typescript.md)
 - [adminRoleCustomAssignments](./adminRoleCustomAssignments.typescript.md)
 - [adminRoleTargets](./adminRoleTargets.typescript.md)
+- [appAccessPolicyAssignment](./appAccessPolicyAssignment.typescript.md)
 - [appAutoLogin](./appAutoLogin.typescript.md)
 - [appBasicAuth](./appBasicAuth.typescript.md)
 - [appBookmark](./appBookmark.typescript.md)
