@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaPolicy.DataOktaPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktapolicy"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v11/dataoktapolicy"
 
 dataoktapolicy.NewDataOktaPolicy(scope Construct, id *string, config DataOktaPolicyConfig) DataOktaPolicy
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.dataOktaPolicy.DataOktaPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktapolicy"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v11/dataoktapolicy"
 
 dataoktapolicy.DataOktaPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.dataOktaPolicy.DataOktaPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktapolicy"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v11/dataoktapolicy"
 
 dataoktapolicy.DataOktaPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ dataoktapolicy.DataOktaPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-okta.dataOktaPolicy.DataOktaPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktapolicy"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v11/dataoktapolicy"
 
 dataoktapolicy.DataOktaPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -577,7 +577,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaPolicy.DataOktaPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktapolicy"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v11/dataoktapolicy"
 
 &dataoktapolicy.DataOktaPolicyConfig {
 	Connection: interface{},
