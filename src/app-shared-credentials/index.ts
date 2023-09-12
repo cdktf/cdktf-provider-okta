@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_shared_credentials
+// https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/app_shared_credentials
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,71 +10,71 @@ export interface AppSharedCredentialsConfig extends cdktf.TerraformMetaArguments
   /**
   * Custom error page URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_shared_credentials#accessibility_error_redirect_url AppSharedCredentials#accessibility_error_redirect_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/app_shared_credentials#accessibility_error_redirect_url AppSharedCredentials#accessibility_error_redirect_url}
   */
   readonly accessibilityErrorRedirectUrl?: string;
   /**
   * Custom login page URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_shared_credentials#accessibility_login_redirect_url AppSharedCredentials#accessibility_login_redirect_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/app_shared_credentials#accessibility_login_redirect_url AppSharedCredentials#accessibility_login_redirect_url}
   */
   readonly accessibilityLoginRedirectUrl?: string;
   /**
   * Enable self service
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_shared_credentials#accessibility_self_service AppSharedCredentials#accessibility_self_service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/app_shared_credentials#accessibility_self_service AppSharedCredentials#accessibility_self_service}
   */
   readonly accessibilitySelfService?: boolean | cdktf.IResolvable;
   /**
   * Application notes for admins.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_shared_credentials#admin_note AppSharedCredentials#admin_note}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/app_shared_credentials#admin_note AppSharedCredentials#admin_note}
   */
   readonly adminNote?: string;
   /**
   * Displays specific appLinks for the app
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_shared_credentials#app_links_json AppSharedCredentials#app_links_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/app_shared_credentials#app_links_json AppSharedCredentials#app_links_json}
   */
   readonly appLinksJson?: string;
   /**
   * Display auto submit toolbar
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_shared_credentials#auto_submit_toolbar AppSharedCredentials#auto_submit_toolbar}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/app_shared_credentials#auto_submit_toolbar AppSharedCredentials#auto_submit_toolbar}
   */
   readonly autoSubmitToolbar?: boolean | cdktf.IResolvable;
   /**
   * Login button field
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_shared_credentials#button_field AppSharedCredentials#button_field}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/app_shared_credentials#button_field AppSharedCredentials#button_field}
   */
   readonly buttonField?: string;
   /**
   * CSS selector for the checkbox
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_shared_credentials#checkbox AppSharedCredentials#checkbox}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/app_shared_credentials#checkbox AppSharedCredentials#checkbox}
   */
   readonly checkbox?: string;
   /**
   * Application notes for end users.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_shared_credentials#enduser_note AppSharedCredentials#enduser_note}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/app_shared_credentials#enduser_note AppSharedCredentials#enduser_note}
   */
   readonly enduserNote?: string;
   /**
   * Do not display application icon on mobile app
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_shared_credentials#hide_ios AppSharedCredentials#hide_ios}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/app_shared_credentials#hide_ios AppSharedCredentials#hide_ios}
   */
   readonly hideIos?: boolean | cdktf.IResolvable;
   /**
   * Do not display application icon to users
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_shared_credentials#hide_web AppSharedCredentials#hide_web}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/app_shared_credentials#hide_web AppSharedCredentials#hide_web}
   */
   readonly hideWeb?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_shared_credentials#id AppSharedCredentials#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/app_shared_credentials#id AppSharedCredentials#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -88,111 +83,111 @@ export interface AppSharedCredentialsConfig extends cdktf.TerraformMetaArguments
   /**
   * Pretty name of app.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_shared_credentials#label AppSharedCredentials#label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/app_shared_credentials#label AppSharedCredentials#label}
   */
   readonly label: string;
   /**
   * Local path to logo of the application.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_shared_credentials#logo AppSharedCredentials#logo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/app_shared_credentials#logo AppSharedCredentials#logo}
   */
   readonly logo?: string;
   /**
   * Login password field
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_shared_credentials#password_field AppSharedCredentials#password_field}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/app_shared_credentials#password_field AppSharedCredentials#password_field}
   */
   readonly passwordField?: string;
   /**
   * Preconfigured app name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_shared_credentials#preconfigured_app AppSharedCredentials#preconfigured_app}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/app_shared_credentials#preconfigured_app AppSharedCredentials#preconfigured_app}
   */
   readonly preconfiguredApp?: string;
   /**
   * Secondary URL of the sign-in page for this app
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_shared_credentials#redirect_url AppSharedCredentials#redirect_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/app_shared_credentials#redirect_url AppSharedCredentials#redirect_url}
   */
   readonly redirectUrl?: string;
   /**
   * Shared password, required for certain schemes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_shared_credentials#shared_password AppSharedCredentials#shared_password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/app_shared_credentials#shared_password AppSharedCredentials#shared_password}
   */
   readonly sharedPassword?: string;
   /**
   * Shared username, required for certain schemes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_shared_credentials#shared_username AppSharedCredentials#shared_username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/app_shared_credentials#shared_username AppSharedCredentials#shared_username}
   */
   readonly sharedUsername?: string;
   /**
   * Status of application.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_shared_credentials#status AppSharedCredentials#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/app_shared_credentials#status AppSharedCredentials#status}
   */
   readonly status?: string;
   /**
   * Login URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_shared_credentials#url AppSharedCredentials#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/app_shared_credentials#url AppSharedCredentials#url}
   */
   readonly url?: string;
   /**
   * A regex that further restricts URL to the specified regex
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_shared_credentials#url_regex AppSharedCredentials#url_regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/app_shared_credentials#url_regex AppSharedCredentials#url_regex}
   */
   readonly urlRegex?: string;
   /**
   * Username template
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_shared_credentials#user_name_template AppSharedCredentials#user_name_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/app_shared_credentials#user_name_template AppSharedCredentials#user_name_template}
   */
   readonly userNameTemplate?: string;
   /**
   * Push username on update
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_shared_credentials#user_name_template_push_status AppSharedCredentials#user_name_template_push_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/app_shared_credentials#user_name_template_push_status AppSharedCredentials#user_name_template_push_status}
   */
   readonly userNameTemplatePushStatus?: string;
   /**
   * Username template suffix
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_shared_credentials#user_name_template_suffix AppSharedCredentials#user_name_template_suffix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/app_shared_credentials#user_name_template_suffix AppSharedCredentials#user_name_template_suffix}
   */
   readonly userNameTemplateSuffix?: string;
   /**
   * Username template type
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_shared_credentials#user_name_template_type AppSharedCredentials#user_name_template_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/app_shared_credentials#user_name_template_type AppSharedCredentials#user_name_template_type}
   */
   readonly userNameTemplateType?: string;
   /**
   * Login username field
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_shared_credentials#username_field AppSharedCredentials#username_field}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/app_shared_credentials#username_field AppSharedCredentials#username_field}
   */
   readonly usernameField?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_shared_credentials#timeouts AppSharedCredentials#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/app_shared_credentials#timeouts AppSharedCredentials#timeouts}
   */
   readonly timeouts?: AppSharedCredentialsTimeouts;
 }
 export interface AppSharedCredentialsTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_shared_credentials#create AppSharedCredentials#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/app_shared_credentials#create AppSharedCredentials#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_shared_credentials#read AppSharedCredentials#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/app_shared_credentials#read AppSharedCredentials#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_shared_credentials#update AppSharedCredentials#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/app_shared_credentials#update AppSharedCredentials#update}
   */
   readonly update?: string;
 }
@@ -313,7 +308,7 @@ export class AppSharedCredentialsTimeoutsOutputReference extends cdktf.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_shared_credentials okta_app_shared_credentials}
+* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/app_shared_credentials okta_app_shared_credentials}
 */
 export class AppSharedCredentials extends cdktf.TerraformResource {
 
@@ -327,7 +322,7 @@ export class AppSharedCredentials extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_shared_credentials okta_app_shared_credentials} Resource
+  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/app_shared_credentials okta_app_shared_credentials} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -338,7 +333,7 @@ export class AppSharedCredentials extends cdktf.TerraformResource {
       terraformResourceType: 'okta_app_shared_credentials',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '4.4.0',
+        providerVersion: '4.4.1',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

@@ -1,6 +1,6 @@
 # `okta_email_domain_verification`
 
-Refer to the Terraform Registory for docs: [`okta_email_domain_verification`](https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/email_domain_verification).
+Refer to the Terraform Registory for docs: [`okta_email_domain_verification`](https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/email_domain_verification).
 
 # `emailDomainVerification` Submodule <a name="`emailDomainVerification` Submodule" id="@cdktf/provider-okta.emailDomainVerification"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`okta_email_domain_verification`](ht
 
 ### EmailDomainVerification <a name="EmailDomainVerification" id="@cdktf/provider-okta.emailDomainVerification.EmailDomainVerification"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/email_domain_verification okta_email_domain_verification}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/email_domain_verification okta_email_domain_verification}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.emailDomainVerification.EmailDomainVerification.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v11/emaildomainverification"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/emaildomainverification"
 
 emaildomainverification.NewEmailDomainVerification(scope Construct, id *string, config EmailDomainVerificationConfig) EmailDomainVerification
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.emailDomainVerification.EmailDomainVerification.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v11/emaildomainverification"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/emaildomainverification"
 
 emaildomainverification.EmailDomainVerification_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.emailDomainVerification.EmailDomainVerification.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v11/emaildomainverification"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/emaildomainverification"
 
 emaildomainverification.EmailDomainVerification_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ emaildomainverification.EmailDomainVerification_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.emailDomainVerification.EmailDomainVerification.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v11/emaildomainverification"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/emaildomainverification"
 
 emaildomainverification.EmailDomainVerification_IsTerraformResource(x interface{}) *bool
 ```
@@ -566,7 +566,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.emailDomainVerification.EmailDomainVerificationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v11/emaildomainverification"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/emaildomainverification"
 
 &emaildomainverification.EmailDomainVerificationConfig {
 	Connection: interface{},
@@ -593,7 +593,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v11/emaildomainverification
 | <code><a href="#@cdktf/provider-okta.emailDomainVerification.EmailDomainVerificationConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.emailDomainVerification.EmailDomainVerificationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.emailDomainVerification.EmailDomainVerificationConfig.property.emailDomainId">EmailDomainId</a></code> | <code>*string</code> | Email domain ID. |
-| <code><a href="#@cdktf/provider-okta.emailDomainVerification.EmailDomainVerificationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/email_domain_verification#id EmailDomainVerification#id}. |
+| <code><a href="#@cdktf/provider-okta.emailDomainVerification.EmailDomainVerificationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/email_domain_verification#id EmailDomainVerification#id}. |
 
 ---
 
@@ -677,7 +677,7 @@ EmailDomainId *string
 
 Email domain ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/email_domain_verification#email_domain_id EmailDomainVerification#email_domain_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/email_domain_verification#email_domain_id EmailDomainVerification#email_domain_id}
 
 ---
 
@@ -689,7 +689,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/email_domain_verification#id EmailDomainVerification#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/email_domain_verification#id EmailDomainVerification#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

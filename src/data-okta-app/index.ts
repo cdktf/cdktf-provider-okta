@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/okta/okta/4.4.0/docs/data-sources/app
+// https://registry.terraform.io/providers/okta/okta/4.4.1/docs/data-sources/app
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,40 +10,40 @@ export interface DataOktaAppConfig extends cdktf.TerraformMetaArguments {
   /**
   * Search only ACTIVE applications.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/data-sources/app#active_only DataOktaApp#active_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/data-sources/app#active_only DataOktaApp#active_only}
   */
   readonly activeOnly?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/data-sources/app#id DataOktaApp#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/data-sources/app#id DataOktaApp#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/data-sources/app#label DataOktaApp#label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/data-sources/app#label DataOktaApp#label}
   */
   readonly label?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/data-sources/app#label_prefix DataOktaApp#label_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/data-sources/app#label_prefix DataOktaApp#label_prefix}
   */
   readonly labelPrefix?: string;
   /**
   * Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/data-sources/app#skip_groups DataOktaApp#skip_groups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/data-sources/app#skip_groups DataOktaApp#skip_groups}
   */
   readonly skipGroups?: boolean | cdktf.IResolvable;
   /**
   * Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/data-sources/app#skip_users DataOktaApp#skip_users}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/data-sources/app#skip_users DataOktaApp#skip_users}
   */
   readonly skipUsers?: boolean | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/data-sources/app okta_app}
+* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/data-sources/app okta_app}
 */
 export class DataOktaApp extends cdktf.TerraformDataSource {
 
@@ -62,7 +57,7 @@ export class DataOktaApp extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/data-sources/app okta_app} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/data-sources/app okta_app} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -73,7 +68,7 @@ export class DataOktaApp extends cdktf.TerraformDataSource {
       terraformResourceType: 'okta_app',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '4.4.0',
+        providerVersion: '4.4.1',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

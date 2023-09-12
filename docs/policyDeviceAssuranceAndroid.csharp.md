@@ -1,6 +1,6 @@
 # `okta_policy_device_assurance_android`
 
-Refer to the Terraform Registory for docs: [`okta_policy_device_assurance_android`](https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/policy_device_assurance_android).
+Refer to the Terraform Registory for docs: [`okta_policy_device_assurance_android`](https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/policy_device_assurance_android).
 
 # `policyDeviceAssuranceAndroid` Submodule <a name="`policyDeviceAssuranceAndroid` Submodule" id="@cdktf/provider-okta.policyDeviceAssuranceAndroid"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_policy_device_assurance_androi
 
 ### PolicyDeviceAssuranceAndroid <a name="PolicyDeviceAssuranceAndroid" id="@cdktf/provider-okta.policyDeviceAssuranceAndroid.PolicyDeviceAssuranceAndroid"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/policy_device_assurance_android okta_policy_device_assurance_android}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/policy_device_assurance_android okta_policy_device_assurance_android}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.policyDeviceAssuranceAndroid.PolicyDeviceAssuranceAndroid.Initializer"></a>
 
@@ -867,7 +867,7 @@ public string Name { get; set; }
 
 Policy device assurance name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/policy_device_assurance_android#name PolicyDeviceAssuranceAndroid#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/policy_device_assurance_android#name PolicyDeviceAssuranceAndroid#name}
 
 ---
 
@@ -881,7 +881,7 @@ public string[] DiskEncryptionType { get; set; }
 
 List of disk encryption type, can be FULL, USER.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/policy_device_assurance_android#disk_encryption_type PolicyDeviceAssuranceAndroid#disk_encryption_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/policy_device_assurance_android#disk_encryption_type PolicyDeviceAssuranceAndroid#disk_encryption_type}
 
 ---
 
@@ -895,7 +895,7 @@ public object Jailbreak { get; set; }
 
 The device jailbreak. Only for android and iOS platform.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/policy_device_assurance_android#jailbreak PolicyDeviceAssuranceAndroid#jailbreak}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/policy_device_assurance_android#jailbreak PolicyDeviceAssuranceAndroid#jailbreak}
 
 ---
 
@@ -909,7 +909,7 @@ public string OsVersion { get; set; }
 
 The device os minimum version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/policy_device_assurance_android#os_version PolicyDeviceAssuranceAndroid#os_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/policy_device_assurance_android#os_version PolicyDeviceAssuranceAndroid#os_version}
 
 ---
 
@@ -923,7 +923,7 @@ public string[] ScreenlockType { get; set; }
 
 List of screenlock type, can be BIOMETRIC or BIOMETRIC, PASSCODE.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/policy_device_assurance_android#screenlock_type PolicyDeviceAssuranceAndroid#screenlock_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/policy_device_assurance_android#screenlock_type PolicyDeviceAssuranceAndroid#screenlock_type}
 
 ---
 
@@ -937,7 +937,7 @@ public object SecureHardwarePresent { get; set; }
 
 Indicates if the device constains a secure hardware functionality.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/policy_device_assurance_android#secure_hardware_present PolicyDeviceAssuranceAndroid#secure_hardware_present}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/policy_device_assurance_android#secure_hardware_present PolicyDeviceAssuranceAndroid#secure_hardware_present}
 
 ---
 

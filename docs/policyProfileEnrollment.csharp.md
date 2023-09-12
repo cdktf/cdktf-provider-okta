@@ -1,6 +1,6 @@
 # `okta_policy_profile_enrollment`
 
-Refer to the Terraform Registory for docs: [`okta_policy_profile_enrollment`](https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/policy_profile_enrollment).
+Refer to the Terraform Registory for docs: [`okta_policy_profile_enrollment`](https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/policy_profile_enrollment).
 
 # `policyProfileEnrollment` Submodule <a name="`policyProfileEnrollment` Submodule" id="@cdktf/provider-okta.policyProfileEnrollment"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_policy_profile_enrollment`](ht
 
 ### PolicyProfileEnrollment <a name="PolicyProfileEnrollment" id="@cdktf/provider-okta.policyProfileEnrollment.PolicyProfileEnrollment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/policy_profile_enrollment okta_policy_profile_enrollment}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/policy_profile_enrollment okta_policy_profile_enrollment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.policyProfileEnrollment.PolicyProfileEnrollment.Initializer"></a>
 
@@ -623,7 +623,7 @@ new PolicyProfileEnrollmentConfig {
 | <code><a href="#@cdktf/provider-okta.policyProfileEnrollment.PolicyProfileEnrollmentConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyProfileEnrollment.PolicyProfileEnrollmentConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyProfileEnrollment.PolicyProfileEnrollmentConfig.property.name">Name</a></code> | <code>string</code> | Name of the policy. |
-| <code><a href="#@cdktf/provider-okta.policyProfileEnrollment.PolicyProfileEnrollmentConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/policy_profile_enrollment#id PolicyProfileEnrollment#id}. |
+| <code><a href="#@cdktf/provider-okta.policyProfileEnrollment.PolicyProfileEnrollmentConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/policy_profile_enrollment#id PolicyProfileEnrollment#id}. |
 | <code><a href="#@cdktf/provider-okta.policyProfileEnrollment.PolicyProfileEnrollmentConfig.property.status">Status</a></code> | <code>string</code> | Status of the policy. |
 
 ---
@@ -708,7 +708,7 @@ public string Name { get; set; }
 
 Name of the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/policy_profile_enrollment#name PolicyProfileEnrollment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/policy_profile_enrollment#name PolicyProfileEnrollment#name}
 
 ---
 
@@ -720,7 +720,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/policy_profile_enrollment#id PolicyProfileEnrollment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/policy_profile_enrollment#id PolicyProfileEnrollment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -737,7 +737,7 @@ public string Status { get; set; }
 
 Status of the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/policy_profile_enrollment#status PolicyProfileEnrollment#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/policy_profile_enrollment#status PolicyProfileEnrollment#status}
 
 ---
 

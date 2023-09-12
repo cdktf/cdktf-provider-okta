@@ -1,6 +1,6 @@
 # `okta_app_access_policy_assignment`
 
-Refer to the Terraform Registory for docs: [`okta_app_access_policy_assignment`](https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_access_policy_assignment).
+Refer to the Terraform Registory for docs: [`okta_app_access_policy_assignment`](https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/app_access_policy_assignment).
 
 # `appAccessPolicyAssignment` Submodule <a name="`appAccessPolicyAssignment` Submodule" id="@cdktf/provider-okta.appAccessPolicyAssignment"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`okta_app_access_policy_assignment`]
 
 ### AppAccessPolicyAssignment <a name="AppAccessPolicyAssignment" id="@cdktf/provider-okta.appAccessPolicyAssignment.AppAccessPolicyAssignment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_access_policy_assignment okta_app_access_policy_assignment}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/app_access_policy_assignment okta_app_access_policy_assignment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appAccessPolicyAssignment.AppAccessPolicyAssignment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v11/appaccesspolicyassignment"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appaccesspolicyassignment"
 
 appaccesspolicyassignment.NewAppAccessPolicyAssignment(scope Construct, id *string, config AppAccessPolicyAssignmentConfig) AppAccessPolicyAssignment
 ```
@@ -270,7 +270,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.appAccessPolicyAssignment.AppAccessPolicyAssignment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v11/appaccesspolicyassignment"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appaccesspolicyassignment"
 
 appaccesspolicyassignment.AppAccessPolicyAssignment_IsConstruct(x interface{}) *bool
 ```
@@ -302,7 +302,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.appAccessPolicyAssignment.AppAccessPolicyAssignment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v11/appaccesspolicyassignment"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appaccesspolicyassignment"
 
 appaccesspolicyassignment.AppAccessPolicyAssignment_IsTerraformElement(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ appaccesspolicyassignment.AppAccessPolicyAssignment_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.appAccessPolicyAssignment.AppAccessPolicyAssignment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v11/appaccesspolicyassignment"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appaccesspolicyassignment"
 
 appaccesspolicyassignment.AppAccessPolicyAssignment_IsTerraformResource(x interface{}) *bool
 ```
@@ -570,7 +570,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.appAccessPolicyAssignment.AppAccessPolicyAssignmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v11/appaccesspolicyassignment"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appaccesspolicyassignment"
 
 &appaccesspolicyassignment.AppAccessPolicyAssignmentConfig {
 	Connection: interface{},
@@ -681,7 +681,7 @@ AppId *string
 
 Application ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_access_policy_assignment#app_id AppAccessPolicyAssignment#app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/app_access_policy_assignment#app_id AppAccessPolicyAssignment#app_id}
 
 ---
 
@@ -695,7 +695,7 @@ PolicyId *string
 
 Policy ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_access_policy_assignment#policy_id AppAccessPolicyAssignment#policy_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/app_access_policy_assignment#policy_id AppAccessPolicyAssignment#policy_id}
 
 ---
 

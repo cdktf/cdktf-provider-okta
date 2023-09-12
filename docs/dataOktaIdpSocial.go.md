@@ -1,6 +1,6 @@
 # `data_okta_idp_social`
 
-Refer to the Terraform Registory for docs: [`data_okta_idp_social`](https://registry.terraform.io/providers/okta/okta/4.4.0/docs/data-sources/idp_social).
+Refer to the Terraform Registory for docs: [`data_okta_idp_social`](https://registry.terraform.io/providers/okta/okta/4.4.1/docs/data-sources/idp_social).
 
 # `dataOktaIdpSocial` Submodule <a name="`dataOktaIdpSocial` Submodule" id="@cdktf/provider-okta.dataOktaIdpSocial"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_okta_idp_social`](https://regi
 
 ### DataOktaIdpSocial <a name="DataOktaIdpSocial" id="@cdktf/provider-okta.dataOktaIdpSocial.DataOktaIdpSocial"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/data-sources/idp_social okta_idp_social}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/data-sources/idp_social okta_idp_social}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaIdpSocial.DataOktaIdpSocial.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v11/dataoktaidpsocial"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaidpsocial"
 
 dataoktaidpsocial.NewDataOktaIdpSocial(scope Construct, id *string, config DataOktaIdpSocialConfig) DataOktaIdpSocial
 ```
@@ -284,7 +284,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.dataOktaIdpSocial.DataOktaIdpSocial.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v11/dataoktaidpsocial"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaidpsocial"
 
 dataoktaidpsocial.DataOktaIdpSocial_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.dataOktaIdpSocial.DataOktaIdpSocial.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v11/dataoktaidpsocial"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaidpsocial"
 
 dataoktaidpsocial.DataOktaIdpSocial_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ dataoktaidpsocial.DataOktaIdpSocial_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-okta.dataOktaIdpSocial.DataOktaIdpSocial.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v11/dataoktaidpsocial"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaidpsocial"
 
 dataoktaidpsocial.DataOktaIdpSocial_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -826,7 +826,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaIdpSocial.DataOktaIdpSocialConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v11/dataoktaidpsocial"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaidpsocial"
 
 &dataoktaidpsocial.DataOktaIdpSocialConfig {
 	Connection: interface{},
@@ -937,7 +937,7 @@ Id *string
 
 ID of the IdP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/data-sources/idp_social#id DataOktaIdpSocial#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/data-sources/idp_social#id DataOktaIdpSocial#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -954,7 +954,7 @@ Name *string
 
 name of the IdP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/data-sources/idp_social#name DataOktaIdpSocial#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/data-sources/idp_social#name DataOktaIdpSocial#name}
 
 ---
 

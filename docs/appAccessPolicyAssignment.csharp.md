@@ -1,6 +1,6 @@
 # `okta_app_access_policy_assignment`
 
-Refer to the Terraform Registory for docs: [`okta_app_access_policy_assignment`](https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_access_policy_assignment).
+Refer to the Terraform Registory for docs: [`okta_app_access_policy_assignment`](https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/app_access_policy_assignment).
 
 # `appAccessPolicyAssignment` Submodule <a name="`appAccessPolicyAssignment` Submodule" id="@cdktf/provider-okta.appAccessPolicyAssignment"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_app_access_policy_assignment`]
 
 ### AppAccessPolicyAssignment <a name="AppAccessPolicyAssignment" id="@cdktf/provider-okta.appAccessPolicyAssignment.AppAccessPolicyAssignment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_access_policy_assignment okta_app_access_policy_assignment}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/app_access_policy_assignment okta_app_access_policy_assignment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appAccessPolicyAssignment.AppAccessPolicyAssignment.Initializer"></a>
 
@@ -681,7 +681,7 @@ public string AppId { get; set; }
 
 Application ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_access_policy_assignment#app_id AppAccessPolicyAssignment#app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/app_access_policy_assignment#app_id AppAccessPolicyAssignment#app_id}
 
 ---
 
@@ -695,7 +695,7 @@ public string PolicyId { get; set; }
 
 Policy ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/app_access_policy_assignment#policy_id AppAccessPolicyAssignment#policy_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/app_access_policy_assignment#policy_id AppAccessPolicyAssignment#policy_id}
 
 ---
 
