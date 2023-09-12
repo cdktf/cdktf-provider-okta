@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/okta/okta/4.4.0/docs/data-sources/app_signon_policy
+// https://registry.terraform.io/providers/okta/okta/4.4.1/docs/data-sources/app_signon_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface DataOktaAppSignonPolicyConfig extends cdktf.TerraformMetaArgume
   /**
   * App ID
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/data-sources/app_signon_policy#app_id DataOktaAppSignonPolicy#app_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/data-sources/app_signon_policy#app_id DataOktaAppSignonPolicy#app_id}
   */
   readonly appId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/data-sources/app_signon_policy#id DataOktaAppSignonPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/data-sources/app_signon_policy#id DataOktaAppSignonPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,7 +28,7 @@ export interface DataOktaAppSignonPolicyConfig extends cdktf.TerraformMetaArgume
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/data-sources/app_signon_policy okta_app_signon_policy}
+* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/data-sources/app_signon_policy okta_app_signon_policy}
 */
 export class DataOktaAppSignonPolicy extends cdktf.TerraformDataSource {
 
@@ -42,7 +42,7 @@ export class DataOktaAppSignonPolicy extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/data-sources/app_signon_policy okta_app_signon_policy} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/data-sources/app_signon_policy okta_app_signon_policy} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -53,7 +53,7 @@ export class DataOktaAppSignonPolicy extends cdktf.TerraformDataSource {
       terraformResourceType: 'okta_app_signon_policy',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '4.4.0',
+        providerVersion: '4.4.1',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

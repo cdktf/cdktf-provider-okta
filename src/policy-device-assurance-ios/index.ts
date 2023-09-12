@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/policy_device_assurance_ios
+// https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/policy_device_assurance_ios
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,31 +15,31 @@ export interface PolicyDeviceAssuranceIosConfig extends cdktf.TerraformMetaArgum
   /**
   * The device jailbreak. Only for android and iOS platform
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/policy_device_assurance_ios#jailbreak PolicyDeviceAssuranceIos#jailbreak}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/policy_device_assurance_ios#jailbreak PolicyDeviceAssuranceIos#jailbreak}
   */
   readonly jailbreak?: boolean | cdktf.IResolvable;
   /**
   * Policy device assurance name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/policy_device_assurance_ios#name PolicyDeviceAssuranceIos#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/policy_device_assurance_ios#name PolicyDeviceAssuranceIos#name}
   */
   readonly name: string;
   /**
   * The device os minimum version
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/policy_device_assurance_ios#os_version PolicyDeviceAssuranceIos#os_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/policy_device_assurance_ios#os_version PolicyDeviceAssuranceIos#os_version}
   */
   readonly osVersion?: string;
   /**
   * List of screenlock type, can be BIOMETRIC or BIOMETRIC, PASSCODE
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/policy_device_assurance_ios#screenlock_type PolicyDeviceAssuranceIos#screenlock_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/policy_device_assurance_ios#screenlock_type PolicyDeviceAssuranceIos#screenlock_type}
   */
   readonly screenlockType?: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/policy_device_assurance_ios okta_policy_device_assurance_ios}
+* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/policy_device_assurance_ios okta_policy_device_assurance_ios}
 */
 export class PolicyDeviceAssuranceIos extends cdktf.TerraformResource {
 
@@ -53,7 +53,7 @@ export class PolicyDeviceAssuranceIos extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.0/docs/resources/policy_device_assurance_ios okta_policy_device_assurance_ios} Resource
+  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/policy_device_assurance_ios okta_policy_device_assurance_ios} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -64,7 +64,7 @@ export class PolicyDeviceAssuranceIos extends cdktf.TerraformResource {
       terraformResourceType: 'okta_policy_device_assurance_ios',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '4.4.0',
+        providerVersion: '4.4.1',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
