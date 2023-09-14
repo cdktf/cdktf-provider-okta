@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/factor
+// https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/factor
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface FactorConfig extends cdktf.TerraformMetaArguments {
   /**
   * Is this provider active?
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/factor#active Factor#active}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/factor#active Factor#active}
   */
   readonly active?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/factor#id Factor#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/factor#id Factor#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,13 +28,13 @@ export interface FactorConfig extends cdktf.TerraformMetaArguments {
   /**
   * Factor provider ID
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/factor#provider_id Factor#provider_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/factor#provider_id Factor#provider_id}
   */
   readonly providerId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/factor okta_factor}
+* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/factor okta_factor}
 */
 export class Factor extends cdktf.TerraformResource {
 
@@ -48,7 +48,7 @@ export class Factor extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/factor okta_factor} Resource
+  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/factor okta_factor} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -59,7 +59,7 @@ export class Factor extends cdktf.TerraformResource {
       terraformResourceType: 'okta_factor',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '4.4.1',
+        providerVersion: '4.4.2',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
