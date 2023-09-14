@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/auth_server_policy_rule
+// https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/auth_server_policy_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,92 +8,92 @@ import * as cdktf from 'cdktf';
 
 export interface AuthServerPolicyRuleConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/auth_server_policy_rule#access_token_lifetime_minutes AuthServerPolicyRule#access_token_lifetime_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/auth_server_policy_rule#access_token_lifetime_minutes AuthServerPolicyRule#access_token_lifetime_minutes}
   */
   readonly accessTokenLifetimeMinutes?: number;
   /**
   * Auth server ID
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/auth_server_policy_rule#auth_server_id AuthServerPolicyRule#auth_server_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/auth_server_policy_rule#auth_server_id AuthServerPolicyRule#auth_server_id}
   */
   readonly authServerId: string;
   /**
   * Accepted grant type values: authorization_code, implicit, password, client_credentials
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/auth_server_policy_rule#grant_type_whitelist AuthServerPolicyRule#grant_type_whitelist}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/auth_server_policy_rule#grant_type_whitelist AuthServerPolicyRule#grant_type_whitelist}
   */
   readonly grantTypeWhitelist: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/auth_server_policy_rule#group_blacklist AuthServerPolicyRule#group_blacklist}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/auth_server_policy_rule#group_blacklist AuthServerPolicyRule#group_blacklist}
   */
   readonly groupBlacklist?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/auth_server_policy_rule#group_whitelist AuthServerPolicyRule#group_whitelist}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/auth_server_policy_rule#group_whitelist AuthServerPolicyRule#group_whitelist}
   */
   readonly groupWhitelist?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/auth_server_policy_rule#id AuthServerPolicyRule#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/auth_server_policy_rule#id AuthServerPolicyRule#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/auth_server_policy_rule#inline_hook_id AuthServerPolicyRule#inline_hook_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/auth_server_policy_rule#inline_hook_id AuthServerPolicyRule#inline_hook_id}
   */
   readonly inlineHookId?: string;
   /**
   * Auth server policy rule name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/auth_server_policy_rule#name AuthServerPolicyRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/auth_server_policy_rule#name AuthServerPolicyRule#name}
   */
   readonly name: string;
   /**
   * Auth server policy ID
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/auth_server_policy_rule#policy_id AuthServerPolicyRule#policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/auth_server_policy_rule#policy_id AuthServerPolicyRule#policy_id}
   */
   readonly policyId: string;
   /**
   * Priority of the auth server policy rule
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/auth_server_policy_rule#priority AuthServerPolicyRule#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/auth_server_policy_rule#priority AuthServerPolicyRule#priority}
   */
   readonly priority: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/auth_server_policy_rule#refresh_token_lifetime_minutes AuthServerPolicyRule#refresh_token_lifetime_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/auth_server_policy_rule#refresh_token_lifetime_minutes AuthServerPolicyRule#refresh_token_lifetime_minutes}
   */
   readonly refreshTokenLifetimeMinutes?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/auth_server_policy_rule#refresh_token_window_minutes AuthServerPolicyRule#refresh_token_window_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/auth_server_policy_rule#refresh_token_window_minutes AuthServerPolicyRule#refresh_token_window_minutes}
   */
   readonly refreshTokenWindowMinutes?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/auth_server_policy_rule#scope_whitelist AuthServerPolicyRule#scope_whitelist}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/auth_server_policy_rule#scope_whitelist AuthServerPolicyRule#scope_whitelist}
   */
   readonly scopeWhitelist?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/auth_server_policy_rule#status AuthServerPolicyRule#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/auth_server_policy_rule#status AuthServerPolicyRule#status}
   */
   readonly status?: string;
   /**
   * Auth server policy rule type, unlikely this will be anything other then the default
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/auth_server_policy_rule#type AuthServerPolicyRule#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/auth_server_policy_rule#type AuthServerPolicyRule#type}
   */
   readonly type?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/auth_server_policy_rule#user_blacklist AuthServerPolicyRule#user_blacklist}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/auth_server_policy_rule#user_blacklist AuthServerPolicyRule#user_blacklist}
   */
   readonly userBlacklist?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/auth_server_policy_rule#user_whitelist AuthServerPolicyRule#user_whitelist}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/auth_server_policy_rule#user_whitelist AuthServerPolicyRule#user_whitelist}
   */
   readonly userWhitelist?: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/auth_server_policy_rule okta_auth_server_policy_rule}
+* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/auth_server_policy_rule okta_auth_server_policy_rule}
 */
 export class AuthServerPolicyRule extends cdktf.TerraformResource {
 
@@ -112,7 +107,7 @@ export class AuthServerPolicyRule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/auth_server_policy_rule okta_auth_server_policy_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/auth_server_policy_rule okta_auth_server_policy_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -123,7 +118,7 @@ export class AuthServerPolicyRule extends cdktf.TerraformResource {
       terraformResourceType: 'okta_auth_server_policy_rule',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '4.4.1',
+        providerVersion: '4.4.2',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

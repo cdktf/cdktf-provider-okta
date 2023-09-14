@@ -1,6 +1,6 @@
 # `data_okta_default_policy`
 
-Refer to the Terraform Registory for docs: [`data_okta_default_policy`](https://registry.terraform.io/providers/okta/okta/4.4.1/docs/data-sources/default_policy).
+Refer to the Terraform Registory for docs: [`data_okta_default_policy`](https://registry.terraform.io/providers/okta/okta/4.4.2/docs/data-sources/default_policy).
 
 # `dataOktaDefaultPolicy` Submodule <a name="`dataOktaDefaultPolicy` Submodule" id="@cdktf/provider-okta.dataOktaDefaultPolicy"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_okta_default_policy`](https://
 
 ### DataOktaDefaultPolicy <a name="DataOktaDefaultPolicy" id="@cdktf/provider-okta.dataOktaDefaultPolicy.DataOktaDefaultPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/data-sources/default_policy okta_default_policy}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/data-sources/default_policy okta_default_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaDefaultPolicy.DataOktaDefaultPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v11/dataoktadefaultpolicy"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktadefaultpolicy"
 
 dataoktadefaultpolicy.NewDataOktaDefaultPolicy(scope Construct, id *string, config DataOktaDefaultPolicyConfig) DataOktaDefaultPolicy
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.dataOktaDefaultPolicy.DataOktaDefaultPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v11/dataoktadefaultpolicy"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktadefaultpolicy"
 
 dataoktadefaultpolicy.DataOktaDefaultPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.dataOktaDefaultPolicy.DataOktaDefaultPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v11/dataoktadefaultpolicy"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktadefaultpolicy"
 
 dataoktadefaultpolicy.DataOktaDefaultPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ dataoktadefaultpolicy.DataOktaDefaultPolicy_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-okta.dataOktaDefaultPolicy.DataOktaDefaultPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v11/dataoktadefaultpolicy"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktadefaultpolicy"
 
 dataoktadefaultpolicy.DataOktaDefaultPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -544,7 +544,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaDefaultPolicy.DataOktaDefaultPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v11/dataoktadefaultpolicy"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktadefaultpolicy"
 
 &dataoktadefaultpolicy.DataOktaDefaultPolicyConfig {
 	Connection: interface{},
@@ -571,7 +571,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v11/dataoktadefaultpolicy"
 | <code><a href="#@cdktf/provider-okta.dataOktaDefaultPolicy.DataOktaDefaultPolicyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaDefaultPolicy.DataOktaDefaultPolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaDefaultPolicy.DataOktaDefaultPolicyConfig.property.type">Type</a></code> | <code>*string</code> | Policy type: OKTA_SIGN_ON, PASSWORD, MFA_ENROLL, or IDP_DISCOVERY. |
-| <code><a href="#@cdktf/provider-okta.dataOktaDefaultPolicy.DataOktaDefaultPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/data-sources/default_policy#id DataOktaDefaultPolicy#id}. |
+| <code><a href="#@cdktf/provider-okta.dataOktaDefaultPolicy.DataOktaDefaultPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/data-sources/default_policy#id DataOktaDefaultPolicy#id}. |
 
 ---
 
@@ -655,7 +655,7 @@ Type *string
 
 Policy type: OKTA_SIGN_ON, PASSWORD, MFA_ENROLL, or IDP_DISCOVERY.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/data-sources/default_policy#type DataOktaDefaultPolicy#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/data-sources/default_policy#type DataOktaDefaultPolicy#type}
 
 ---
 
@@ -667,7 +667,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/data-sources/default_policy#id DataOktaDefaultPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/data-sources/default_policy#id DataOktaDefaultPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

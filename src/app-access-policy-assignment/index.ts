@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/app_access_policy_assignment
+// https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/app_access_policy_assignment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +10,19 @@ export interface AppAccessPolicyAssignmentConfig extends cdktf.TerraformMetaArgu
   /**
   * Application ID
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/app_access_policy_assignment#app_id AppAccessPolicyAssignment#app_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/app_access_policy_assignment#app_id AppAccessPolicyAssignment#app_id}
   */
   readonly appId: string;
   /**
   * Policy ID
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/app_access_policy_assignment#policy_id AppAccessPolicyAssignment#policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/app_access_policy_assignment#policy_id AppAccessPolicyAssignment#policy_id}
   */
   readonly policyId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/app_access_policy_assignment okta_app_access_policy_assignment}
+* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/app_access_policy_assignment okta_app_access_policy_assignment}
 */
 export class AppAccessPolicyAssignment extends cdktf.TerraformResource {
 
@@ -41,7 +36,7 @@ export class AppAccessPolicyAssignment extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.1/docs/resources/app_access_policy_assignment okta_app_access_policy_assignment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/app_access_policy_assignment okta_app_access_policy_assignment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -52,7 +47,7 @@ export class AppAccessPolicyAssignment extends cdktf.TerraformResource {
       terraformResourceType: 'okta_app_access_policy_assignment',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '4.4.1',
+        providerVersion: '4.4.2',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
