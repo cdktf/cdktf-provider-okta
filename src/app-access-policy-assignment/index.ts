@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/app_access_policy_assignment
 // generated from terraform resource schema
 
