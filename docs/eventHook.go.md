@@ -1,6 +1,6 @@
 # `okta_event_hook`
 
-Refer to the Terraform Registory for docs: [`okta_event_hook`](https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/event_hook).
+Refer to the Terraform Registory for docs: [`okta_event_hook`](https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/event_hook).
 
 # `eventHook` Submodule <a name="`eventHook` Submodule" id="@cdktf/provider-okta.eventHook"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`okta_event_hook`](https://registry.
 
 ### EventHook <a name="EventHook" id="@cdktf/provider-okta.eventHook.EventHook"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/event_hook okta_event_hook}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/event_hook okta_event_hook}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.eventHook.EventHook.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v11/eventhook"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/eventhook"
 
 eventhook.NewEventHook(scope Construct, id *string, config EventHookConfig) EventHook
 ```
@@ -311,7 +311,7 @@ func ResetStatus()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.eventHook.EventHook.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v11/eventhook"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/eventhook"
 
 eventhook.EventHook_IsConstruct(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.eventHook.EventHook.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v11/eventhook"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/eventhook"
 
 eventhook.EventHook_IsTerraformElement(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ eventhook.EventHook_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.eventHook.EventHook.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v11/eventhook"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/eventhook"
 
 eventhook.EventHook_IsTerraformResource(x interface{}) *bool
 ```
@@ -710,7 +710,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.eventHook.EventHookConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v11/eventhook"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/eventhook"
 
 &eventhook.EventHookConfig {
 	Connection: interface{},
@@ -741,13 +741,13 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v11/eventhook"
 | <code><a href="#@cdktf/provider-okta.eventHook.EventHookConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.eventHook.EventHookConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.eventHook.EventHookConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.eventHook.EventHookConfig.property.channel">Channel</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/event_hook#channel EventHook#channel}. |
-| <code><a href="#@cdktf/provider-okta.eventHook.EventHookConfig.property.events">Events</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/event_hook#events EventHook#events}. |
-| <code><a href="#@cdktf/provider-okta.eventHook.EventHookConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/event_hook#name EventHook#name}. |
-| <code><a href="#@cdktf/provider-okta.eventHook.EventHookConfig.property.auth">Auth</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/event_hook#auth EventHook#auth}. |
+| <code><a href="#@cdktf/provider-okta.eventHook.EventHookConfig.property.channel">Channel</a></code> | <code>*map[string]*string</code> | Details of the endpoint the event hook will hit. |
+| <code><a href="#@cdktf/provider-okta.eventHook.EventHookConfig.property.events">Events</a></code> | <code>*[]*string</code> | The events that will be delivered to this hook. [See here for a list of supported events](https://developer.okta.com/docs/reference/api/event-types/?q=event-hook-eligible). |
+| <code><a href="#@cdktf/provider-okta.eventHook.EventHookConfig.property.name">Name</a></code> | <code>*string</code> | The event hook display name. |
+| <code><a href="#@cdktf/provider-okta.eventHook.EventHookConfig.property.auth">Auth</a></code> | <code>*map[string]*string</code> | Authentication required for event hook request. |
 | <code><a href="#@cdktf/provider-okta.eventHook.EventHookConfig.property.headers">Headers</a></code> | <code>interface{}</code> | headers block. |
-| <code><a href="#@cdktf/provider-okta.eventHook.EventHookConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/event_hook#id EventHook#id}. |
-| <code><a href="#@cdktf/provider-okta.eventHook.EventHookConfig.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/event_hook#status EventHook#status}. |
+| <code><a href="#@cdktf/provider-okta.eventHook.EventHookConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/event_hook#id EventHook#id}. |
+| <code><a href="#@cdktf/provider-okta.eventHook.EventHookConfig.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/event_hook#status EventHook#status}. |
 
 ---
 
@@ -829,7 +829,9 @@ Channel *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/event_hook#channel EventHook#channel}.
+Details of the endpoint the event hook will hit.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/event_hook#channel EventHook#channel}
 
 ---
 
@@ -841,7 +843,9 @@ Events *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/event_hook#events EventHook#events}.
+The events that will be delivered to this hook. [See here for a list of supported events](https://developer.okta.com/docs/reference/api/event-types/?q=event-hook-eligible).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/event_hook#events EventHook#events}
 
 ---
 
@@ -853,7 +857,9 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/event_hook#name EventHook#name}.
+The event hook display name.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/event_hook#name EventHook#name}
 
 ---
 
@@ -865,7 +871,9 @@ Auth *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/event_hook#auth EventHook#auth}.
+Authentication required for event hook request.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/event_hook#auth EventHook#auth}
 
 ---
 
@@ -879,7 +887,7 @@ Headers interface{}
 
 headers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/event_hook#headers EventHook#headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/event_hook#headers EventHook#headers}
 
 ---
 
@@ -891,7 +899,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/event_hook#id EventHook#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/event_hook#id EventHook#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -906,7 +914,7 @@ Status *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/event_hook#status EventHook#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/event_hook#status EventHook#status}.
 
 ---
 
@@ -915,7 +923,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.eventHook.EventHookHeaders.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v11/eventhook"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/eventhook"
 
 &eventhook.EventHookHeaders {
 	Key: *string,
@@ -927,8 +935,8 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v11/eventhook"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.eventHook.EventHookHeaders.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/event_hook#key EventHook#key}. |
-| <code><a href="#@cdktf/provider-okta.eventHook.EventHookHeaders.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/event_hook#value EventHook#value}. |
+| <code><a href="#@cdktf/provider-okta.eventHook.EventHookHeaders.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/event_hook#key EventHook#key}. |
+| <code><a href="#@cdktf/provider-okta.eventHook.EventHookHeaders.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/event_hook#value EventHook#value}. |
 
 ---
 
@@ -940,7 +948,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/event_hook#key EventHook#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/event_hook#key EventHook#key}.
 
 ---
 
@@ -952,7 +960,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/event_hook#value EventHook#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/event_hook#value EventHook#value}.
 
 ---
 
@@ -963,7 +971,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.eventHook.EventHookHeadersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v11/eventhook"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/eventhook"
 
 eventhook.NewEventHookHeadersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EventHookHeadersList
 ```
@@ -1106,7 +1114,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.eventHook.EventHookHeadersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v11/eventhook"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/eventhook"
 
 eventhook.NewEventHookHeadersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EventHookHeadersOutputReference
 ```

@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/user_group_memberships
+// https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/user_group_memberships
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface UserGroupMembershipsConfig extends cdktf.TerraformMetaArguments
   /**
   * The list of Okta group IDs which the user should have membership managed for.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/user_group_memberships#groups UserGroupMemberships#groups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/user_group_memberships#groups UserGroupMemberships#groups}
   */
   readonly groups: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/user_group_memberships#id UserGroupMemberships#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/user_group_memberships#id UserGroupMemberships#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,13 +23,13 @@ export interface UserGroupMembershipsConfig extends cdktf.TerraformMetaArguments
   /**
   * ID of a Okta User
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/user_group_memberships#user_id UserGroupMemberships#user_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/user_group_memberships#user_id UserGroupMemberships#user_id}
   */
   readonly userId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/user_group_memberships okta_user_group_memberships}
+* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/user_group_memberships okta_user_group_memberships}
 */
 export class UserGroupMemberships extends cdktf.TerraformResource {
 
@@ -48,7 +43,7 @@ export class UserGroupMemberships extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/user_group_memberships okta_user_group_memberships} Resource
+  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/user_group_memberships okta_user_group_memberships} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -59,7 +54,7 @@ export class UserGroupMemberships extends cdktf.TerraformResource {
       terraformResourceType: 'okta_user_group_memberships',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '4.4.2',
+        providerVersion: '4.4.3',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

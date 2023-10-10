@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/policy_profile_enrollment
+// https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/policy_profile_enrollment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface PolicyProfileEnrollmentConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/policy_profile_enrollment#id PolicyProfileEnrollment#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/policy_profile_enrollment#id PolicyProfileEnrollment#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,19 +17,19 @@ export interface PolicyProfileEnrollmentConfig extends cdktf.TerraformMetaArgume
   /**
   * Name of the policy
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/policy_profile_enrollment#name PolicyProfileEnrollment#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/policy_profile_enrollment#name PolicyProfileEnrollment#name}
   */
   readonly name: string;
   /**
   * Status of the policy
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/policy_profile_enrollment#status PolicyProfileEnrollment#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/policy_profile_enrollment#status PolicyProfileEnrollment#status}
   */
   readonly status?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/policy_profile_enrollment okta_policy_profile_enrollment}
+* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/policy_profile_enrollment okta_policy_profile_enrollment}
 */
 export class PolicyProfileEnrollment extends cdktf.TerraformResource {
 
@@ -48,7 +43,7 @@ export class PolicyProfileEnrollment extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/policy_profile_enrollment okta_policy_profile_enrollment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/policy_profile_enrollment okta_policy_profile_enrollment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -59,7 +54,7 @@ export class PolicyProfileEnrollment extends cdktf.TerraformResource {
       terraformResourceType: 'okta_policy_profile_enrollment',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '4.4.2',
+        providerVersion: '4.4.3',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

@@ -1,6 +1,6 @@
 # `okta_policy_device_assurance_android`
 
-Refer to the Terraform Registory for docs: [`okta_policy_device_assurance_android`](https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/policy_device_assurance_android).
+Refer to the Terraform Registory for docs: [`okta_policy_device_assurance_android`](https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/policy_device_assurance_android).
 
 # `policyDeviceAssuranceAndroid` Submodule <a name="`policyDeviceAssuranceAndroid` Submodule" id="@cdktf/provider-okta.policyDeviceAssuranceAndroid"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`okta_policy_device_assurance_androi
 
 ### PolicyDeviceAssuranceAndroid <a name="PolicyDeviceAssuranceAndroid" id="@cdktf/provider-okta.policyDeviceAssuranceAndroid.PolicyDeviceAssuranceAndroid"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/policy_device_assurance_android okta_policy_device_assurance_android}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/policy_device_assurance_android okta_policy_device_assurance_android}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.policyDeviceAssuranceAndroid.PolicyDeviceAssuranceAndroid.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v11/policydeviceassuranceandroid"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policydeviceassuranceandroid"
 
 policydeviceassuranceandroid.NewPolicyDeviceAssuranceAndroid(scope Construct, id *string, config PolicyDeviceAssuranceAndroidConfig) PolicyDeviceAssuranceAndroid
 ```
@@ -305,7 +305,7 @@ func ResetSecureHardwarePresent()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.policyDeviceAssuranceAndroid.PolicyDeviceAssuranceAndroid.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v11/policydeviceassuranceandroid"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policydeviceassuranceandroid"
 
 policydeviceassuranceandroid.PolicyDeviceAssuranceAndroid_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.policyDeviceAssuranceAndroid.PolicyDeviceAssuranceAndroid.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v11/policydeviceassuranceandroid"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policydeviceassuranceandroid"
 
 policydeviceassuranceandroid.PolicyDeviceAssuranceAndroid_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ policydeviceassuranceandroid.PolicyDeviceAssuranceAndroid_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.policyDeviceAssuranceAndroid.PolicyDeviceAssuranceAndroid.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v11/policydeviceassuranceandroid"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policydeviceassuranceandroid"
 
 policydeviceassuranceandroid.PolicyDeviceAssuranceAndroid_IsTerraformResource(x interface{}) *bool
 ```
@@ -748,7 +748,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.policyDeviceAssuranceAndroid.PolicyDeviceAssuranceAndroidConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v11/policydeviceassuranceandroid"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policydeviceassuranceandroid"
 
 &policydeviceassuranceandroid.PolicyDeviceAssuranceAndroidConfig {
 	Connection: interface{},
@@ -867,7 +867,7 @@ Name *string
 
 Policy device assurance name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/policy_device_assurance_android#name PolicyDeviceAssuranceAndroid#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/policy_device_assurance_android#name PolicyDeviceAssuranceAndroid#name}
 
 ---
 
@@ -881,7 +881,7 @@ DiskEncryptionType *[]*string
 
 List of disk encryption type, can be FULL, USER.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/policy_device_assurance_android#disk_encryption_type PolicyDeviceAssuranceAndroid#disk_encryption_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/policy_device_assurance_android#disk_encryption_type PolicyDeviceAssuranceAndroid#disk_encryption_type}
 
 ---
 
@@ -895,7 +895,7 @@ Jailbreak interface{}
 
 The device jailbreak. Only for android and iOS platform.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/policy_device_assurance_android#jailbreak PolicyDeviceAssuranceAndroid#jailbreak}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/policy_device_assurance_android#jailbreak PolicyDeviceAssuranceAndroid#jailbreak}
 
 ---
 
@@ -909,7 +909,7 @@ OsVersion *string
 
 The device os minimum version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/policy_device_assurance_android#os_version PolicyDeviceAssuranceAndroid#os_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/policy_device_assurance_android#os_version PolicyDeviceAssuranceAndroid#os_version}
 
 ---
 
@@ -923,7 +923,7 @@ ScreenlockType *[]*string
 
 List of screenlock type, can be BIOMETRIC or BIOMETRIC, PASSCODE.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/policy_device_assurance_android#screenlock_type PolicyDeviceAssuranceAndroid#screenlock_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/policy_device_assurance_android#screenlock_type PolicyDeviceAssuranceAndroid#screenlock_type}
 
 ---
 
@@ -937,7 +937,7 @@ SecureHardwarePresent interface{}
 
 Indicates if the device constains a secure hardware functionality.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/policy_device_assurance_android#secure_hardware_present PolicyDeviceAssuranceAndroid#secure_hardware_present}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/policy_device_assurance_android#secure_hardware_present PolicyDeviceAssuranceAndroid#secure_hardware_present}
 
 ---
 
