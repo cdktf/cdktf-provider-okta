@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.policyMfa.PolicyMfa.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/policymfa"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v11/policymfa"
 
 policymfa.NewPolicyMfa(scope Construct, id *string, config PolicyMfaConfig) PolicyMfa
 ```
@@ -459,7 +459,7 @@ func ResetYubikeyToken()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.policyMfa.PolicyMfa.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/policymfa"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v11/policymfa"
 
 policymfa.PolicyMfa_IsConstruct(x interface{}) *bool
 ```
@@ -491,7 +491,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.policyMfa.PolicyMfa.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/policymfa"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v11/policymfa"
 
 policymfa.PolicyMfa_IsTerraformElement(x interface{}) *bool
 ```
@@ -505,7 +505,7 @@ policymfa.PolicyMfa_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.policyMfa.PolicyMfa.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/policymfa"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v11/policymfa"
 
 policymfa.PolicyMfa_IsTerraformResource(x interface{}) *bool
 ```
@@ -1320,7 +1320,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.policyMfa.PolicyMfaConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/policymfa"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v11/policymfa"
 
 &policymfa.PolicyMfaConfig {
 	Connection: interface{},
