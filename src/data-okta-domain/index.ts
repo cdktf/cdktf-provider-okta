@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/okta/okta/4.4.2/docs/data-sources/domain
+// https://registry.terraform.io/providers/okta/okta/4.4.3/docs/data-sources/domain
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface DataOktaDomainConfig extends cdktf.TerraformMetaArguments {
   /**
   * Brand ID
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/data-sources/domain#domain_id_or_name DataOktaDomain#domain_id_or_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/data-sources/domain#domain_id_or_name DataOktaDomain#domain_id_or_name}
   */
   readonly domainIdOrName: string;
 }
@@ -100,7 +100,7 @@ export class DataOktaDomainDnsRecordsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/data-sources/domain okta_domain}
+* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/data-sources/domain okta_domain}
 */
 export class DataOktaDomain extends cdktf.TerraformDataSource {
 
@@ -114,7 +114,7 @@ export class DataOktaDomain extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/data-sources/domain okta_domain} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/data-sources/domain okta_domain} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -125,7 +125,7 @@ export class DataOktaDomain extends cdktf.TerraformDataSource {
       terraformResourceType: 'okta_domain',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '4.4.2',
+        providerVersion: '4.4.3',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

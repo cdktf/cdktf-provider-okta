@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/okta/okta/4.4.2/docs/data-sources/app_oauth
+// https://registry.terraform.io/providers/okta/okta/4.4.3/docs/data-sources/app_oauth
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,40 +15,53 @@ export interface DataOktaAppOauthConfig extends cdktf.TerraformMetaArguments {
   /**
   * Search only ACTIVE applications.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/data-sources/app_oauth#active_only DataOktaAppOauth#active_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/data-sources/app_oauth#active_only DataOktaAppOauth#active_only}
   */
   readonly activeOnly?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/data-sources/app_oauth#id DataOktaAppOauth#id}
+  * Id of application to retrieve, conflicts with label and label_prefix.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/data-sources/app_oauth#id DataOktaAppOauth#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/data-sources/app_oauth#label DataOktaAppOauth#label}
+  * The label of the app to retrieve, conflicts with
+  * 				label_prefix and id. Label uses the ?q=<label> query parameter exposed by
+  * 				Okta's List Apps API. The API will search both name and label using that
+  * 				query. Therefore similarily named and labeled apps may be returned in the query
+  * 				and have the unitended result of associating the wrong app with this data
+  * 				source. See:
+  * 				https://developer.okta.com/docs/reference/api/apps/#list-applications
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/data-sources/app_oauth#label DataOktaAppOauth#label}
   */
   readonly label?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/data-sources/app_oauth#label_prefix DataOktaAppOauth#label_prefix}
+  * Label prefix of the app to retrieve, conflicts with label and id. This will tell the
+  * 				provider to do a starts with query as opposed to an equals query.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/data-sources/app_oauth#label_prefix DataOktaAppOauth#label_prefix}
   */
   readonly labelPrefix?: string;
   /**
   * Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/data-sources/app_oauth#skip_groups DataOktaAppOauth#skip_groups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/data-sources/app_oauth#skip_groups DataOktaAppOauth#skip_groups}
   */
   readonly skipGroups?: boolean | cdktf.IResolvable;
   /**
   * Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/data-sources/app_oauth#skip_users DataOktaAppOauth#skip_users}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/data-sources/app_oauth#skip_users DataOktaAppOauth#skip_users}
   */
   readonly skipUsers?: boolean | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/data-sources/app_oauth okta_app_oauth}
+* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/data-sources/app_oauth okta_app_oauth}
 */
 export class DataOktaAppOauth extends cdktf.TerraformDataSource {
 
@@ -62,7 +75,7 @@ export class DataOktaAppOauth extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/data-sources/app_oauth okta_app_oauth} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/data-sources/app_oauth okta_app_oauth} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -73,7 +86,7 @@ export class DataOktaAppOauth extends cdktf.TerraformDataSource {
       terraformResourceType: 'okta_app_oauth',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '4.4.2',
+        providerVersion: '4.4.3',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

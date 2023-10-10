@@ -1,6 +1,6 @@
 # `okta_app_access_policy_assignment`
 
-Refer to the Terraform Registory for docs: [`okta_app_access_policy_assignment`](https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/app_access_policy_assignment).
+Refer to the Terraform Registory for docs: [`okta_app_access_policy_assignment`](https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/app_access_policy_assignment).
 
 # `appAccessPolicyAssignment` Submodule <a name="`appAccessPolicyAssignment` Submodule" id="@cdktf/provider-okta.appAccessPolicyAssignment"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_app_access_policy_assignment`]
 
 ### AppAccessPolicyAssignment <a name="AppAccessPolicyAssignment" id="@cdktf/provider-okta.appAccessPolicyAssignment.AppAccessPolicyAssignment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/app_access_policy_assignment okta_app_access_policy_assignment}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/app_access_policy_assignment okta_app_access_policy_assignment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appAccessPolicyAssignment.AppAccessPolicyAssignment.Initializer"></a>
 
@@ -596,8 +596,8 @@ new AppAccessPolicyAssignmentConfig {
 | <code><a href="#@cdktf/provider-okta.appAccessPolicyAssignment.AppAccessPolicyAssignmentConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appAccessPolicyAssignment.AppAccessPolicyAssignmentConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appAccessPolicyAssignment.AppAccessPolicyAssignmentConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appAccessPolicyAssignment.AppAccessPolicyAssignmentConfig.property.appId">AppId</a></code> | <code>string</code> | Application ID. |
-| <code><a href="#@cdktf/provider-okta.appAccessPolicyAssignment.AppAccessPolicyAssignmentConfig.property.policyId">PolicyId</a></code> | <code>string</code> | Policy ID. |
+| <code><a href="#@cdktf/provider-okta.appAccessPolicyAssignment.AppAccessPolicyAssignmentConfig.property.appId">AppId</a></code> | <code>string</code> | The application ID; this value is immutable and can not be updated. |
+| <code><a href="#@cdktf/provider-okta.appAccessPolicyAssignment.AppAccessPolicyAssignmentConfig.property.policyId">PolicyId</a></code> | <code>string</code> | The access policy ID. |
 
 ---
 
@@ -679,9 +679,9 @@ public string AppId { get; set; }
 
 - *Type:* string
 
-Application ID.
+The application ID; this value is immutable and can not be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/app_access_policy_assignment#app_id AppAccessPolicyAssignment#app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/app_access_policy_assignment#app_id AppAccessPolicyAssignment#app_id}
 
 ---
 
@@ -693,9 +693,9 @@ public string PolicyId { get; set; }
 
 - *Type:* string
 
-Policy ID.
+The access policy ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/app_access_policy_assignment#policy_id AppAccessPolicyAssignment#policy_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/app_access_policy_assignment#policy_id AppAccessPolicyAssignment#policy_id}
 
 ---
 

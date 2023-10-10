@@ -1,6 +1,6 @@
 # `data_okta_idp_saml`
 
-Refer to the Terraform Registory for docs: [`data_okta_idp_saml`](https://registry.terraform.io/providers/okta/okta/4.4.2/docs/data-sources/idp_saml).
+Refer to the Terraform Registory for docs: [`data_okta_idp_saml`](https://registry.terraform.io/providers/okta/okta/4.4.3/docs/data-sources/idp_saml).
 
 # `dataOktaIdpSaml` Submodule <a name="`dataOktaIdpSaml` Submodule" id="@cdktf/provider-okta.dataOktaIdpSaml"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_okta_idp_saml`](https://regist
 
 ### DataOktaIdpSaml <a name="DataOktaIdpSaml" id="@cdktf/provider-okta.dataOktaIdpSaml.DataOktaIdpSaml"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/data-sources/idp_saml okta_idp_saml}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/data-sources/idp_saml okta_idp_saml}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaIdpSaml.DataOktaIdpSaml.Initializer"></a>
 
@@ -43,8 +43,8 @@ DataOktaIdpSaml.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-okta.dataOktaIdpSaml.DataOktaIdpSaml.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaIdpSaml.DataOktaIdpSaml.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaIdpSaml.DataOktaIdpSaml.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.dataOktaIdpSaml.DataOktaIdpSaml.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/data-sources/idp_saml#id DataOktaIdpSaml#id}. |
-| <code><a href="#@cdktf/provider-okta.dataOktaIdpSaml.DataOktaIdpSaml.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/data-sources/idp_saml#name DataOktaIdpSaml#name}. |
+| <code><a href="#@cdktf/provider-okta.dataOktaIdpSaml.DataOktaIdpSaml.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Id of idp. |
+| <code><a href="#@cdktf/provider-okta.dataOktaIdpSaml.DataOktaIdpSaml.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Name of the idp. |
 
 ---
 
@@ -112,7 +112,9 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/data-sources/idp_saml#id DataOktaIdpSaml#id}.
+Id of idp.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/data-sources/idp_saml#id DataOktaIdpSaml#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -123,7 +125,9 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/data-sources/idp_saml#name DataOktaIdpSaml#name}.
+Name of the idp.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/data-sources/idp_saml#name DataOktaIdpSaml#name}
 
 ---
 
@@ -790,8 +794,8 @@ DataOktaIdpSamlConfig.builder()
 | <code><a href="#@cdktf/provider-okta.dataOktaIdpSaml.DataOktaIdpSamlConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaIdpSaml.DataOktaIdpSamlConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaIdpSaml.DataOktaIdpSamlConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.dataOktaIdpSaml.DataOktaIdpSamlConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/data-sources/idp_saml#id DataOktaIdpSaml#id}. |
-| <code><a href="#@cdktf/provider-okta.dataOktaIdpSaml.DataOktaIdpSamlConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/data-sources/idp_saml#name DataOktaIdpSaml#name}. |
+| <code><a href="#@cdktf/provider-okta.dataOktaIdpSaml.DataOktaIdpSamlConfig.property.id">id</a></code> | <code>java.lang.String</code> | Id of idp. |
+| <code><a href="#@cdktf/provider-okta.dataOktaIdpSaml.DataOktaIdpSamlConfig.property.name">name</a></code> | <code>java.lang.String</code> | Name of the idp. |
 
 ---
 
@@ -873,7 +877,9 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/data-sources/idp_saml#id DataOktaIdpSaml#id}.
+Id of idp.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/data-sources/idp_saml#id DataOktaIdpSaml#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -888,7 +894,9 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/data-sources/idp_saml#name DataOktaIdpSaml#name}.
+Name of the idp.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/data-sources/idp_saml#name DataOktaIdpSaml#name}
 
 ---
 

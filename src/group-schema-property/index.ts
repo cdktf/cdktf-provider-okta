@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/group_schema_property
+// https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/group_schema_property
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,41 +15,41 @@ export interface GroupSchemaPropertyConfig extends cdktf.TerraformMetaArguments 
   /**
   * Custom Subschema enumerated value of a property of type array.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/group_schema_property#array_enum GroupSchemaProperty#array_enum}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/group_schema_property#array_enum GroupSchemaProperty#array_enum}
   */
   readonly arrayEnum?: string[];
   /**
   * Subschema array type: string, number, integer, reference. Type field must be an array.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/group_schema_property#array_type GroupSchemaProperty#array_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/group_schema_property#array_type GroupSchemaProperty#array_type}
   */
   readonly arrayType?: string;
   /**
   * Custom Subschema description
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/group_schema_property#description GroupSchemaProperty#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/group_schema_property#description GroupSchemaProperty#description}
   */
   readonly description?: string;
   /**
   * Custom Subschema enumerated value of the property. see: developer.okta.com/docs/api/resources/schemas#user-profile-schema-property-object
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/group_schema_property#enum GroupSchemaProperty#enum}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/group_schema_property#enum GroupSchemaProperty#enum}
   */
   readonly enum?: string[];
   /**
   * Subschema external name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/group_schema_property#external_name GroupSchemaProperty#external_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/group_schema_property#external_name GroupSchemaProperty#external_name}
   */
   readonly externalName?: string;
   /**
   * Subschema external namespace
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/group_schema_property#external_namespace GroupSchemaProperty#external_namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/group_schema_property#external_namespace GroupSchemaProperty#external_namespace}
   */
   readonly externalNamespace?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/group_schema_property#id GroupSchemaProperty#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/group_schema_property#id GroupSchemaProperty#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -58,77 +58,77 @@ export interface GroupSchemaPropertyConfig extends cdktf.TerraformMetaArguments 
   /**
   * Subschema unique string identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/group_schema_property#index GroupSchemaProperty#index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/group_schema_property#index GroupSchemaProperty#index}
   */
   readonly index: string;
   /**
   * SubSchema profile manager, if not set it will inherit its setting.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/group_schema_property#master GroupSchemaProperty#master}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/group_schema_property#master GroupSchemaProperty#master}
   */
   readonly master?: string;
   /**
   * Subschema of type string maximum length
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/group_schema_property#max_length GroupSchemaProperty#max_length}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/group_schema_property#max_length GroupSchemaProperty#max_length}
   */
   readonly maxLength?: number;
   /**
   * Subschema of type string minimum length
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/group_schema_property#min_length GroupSchemaProperty#min_length}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/group_schema_property#min_length GroupSchemaProperty#min_length}
   */
   readonly minLength?: number;
   /**
   * SubSchema permissions: HIDE, READ_ONLY, or READ_WRITE.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/group_schema_property#permissions GroupSchemaProperty#permissions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/group_schema_property#permissions GroupSchemaProperty#permissions}
   */
   readonly permissions?: string;
   /**
   * Whether the subschema is required
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/group_schema_property#required GroupSchemaProperty#required}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/group_schema_property#required GroupSchemaProperty#required}
   */
   readonly required?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/group_schema_property#scope GroupSchemaProperty#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/group_schema_property#scope GroupSchemaProperty#scope}
   */
   readonly scope?: string;
   /**
   * Subschema title (display name)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/group_schema_property#title GroupSchemaProperty#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/group_schema_property#title GroupSchemaProperty#title}
   */
   readonly title: string;
   /**
   * Subschema type: string, boolean, number, integer, array, or object
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/group_schema_property#type GroupSchemaProperty#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/group_schema_property#type GroupSchemaProperty#type}
   */
   readonly type: string;
   /**
   * Subschema unique restriction
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/group_schema_property#unique GroupSchemaProperty#unique}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/group_schema_property#unique GroupSchemaProperty#unique}
   */
   readonly unique?: string;
   /**
   * array_one_of block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/group_schema_property#array_one_of GroupSchemaProperty#array_one_of}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/group_schema_property#array_one_of GroupSchemaProperty#array_one_of}
   */
   readonly arrayOneOf?: GroupSchemaPropertyArrayOneOf[] | cdktf.IResolvable;
   /**
   * master_override_priority block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/group_schema_property#master_override_priority GroupSchemaProperty#master_override_priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/group_schema_property#master_override_priority GroupSchemaProperty#master_override_priority}
   */
   readonly masterOverridePriority?: GroupSchemaPropertyMasterOverridePriority[] | cdktf.IResolvable;
   /**
   * one_of block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/group_schema_property#one_of GroupSchemaProperty#one_of}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/group_schema_property#one_of GroupSchemaProperty#one_of}
   */
   readonly oneOf?: GroupSchemaPropertyOneOf[] | cdktf.IResolvable;
 }
@@ -136,13 +136,13 @@ export interface GroupSchemaPropertyArrayOneOf {
   /**
   * Enum value
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/group_schema_property#const GroupSchemaProperty#const}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/group_schema_property#const GroupSchemaProperty#const}
   */
   readonly const: string;
   /**
   * Enum title
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/group_schema_property#title GroupSchemaProperty#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/group_schema_property#title GroupSchemaProperty#title}
   */
   readonly title: string;
 }
@@ -256,11 +256,11 @@ export class GroupSchemaPropertyArrayOneOfList extends cdktf.ComplexList {
 }
 export interface GroupSchemaPropertyMasterOverridePriority {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/group_schema_property#type GroupSchemaProperty#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/group_schema_property#type GroupSchemaProperty#type}
   */
   readonly type?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/group_schema_property#value GroupSchemaProperty#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/group_schema_property#value GroupSchemaProperty#value}
   */
   readonly value: string;
 }
@@ -379,13 +379,13 @@ export interface GroupSchemaPropertyOneOf {
   /**
   * Enum value
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/group_schema_property#const GroupSchemaProperty#const}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/group_schema_property#const GroupSchemaProperty#const}
   */
   readonly const: string;
   /**
   * Enum title
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/group_schema_property#title GroupSchemaProperty#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/group_schema_property#title GroupSchemaProperty#title}
   */
   readonly title: string;
 }
@@ -499,7 +499,7 @@ export class GroupSchemaPropertyOneOfList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/group_schema_property okta_group_schema_property}
+* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/group_schema_property okta_group_schema_property}
 */
 export class GroupSchemaProperty extends cdktf.TerraformResource {
 
@@ -513,7 +513,7 @@ export class GroupSchemaProperty extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/group_schema_property okta_group_schema_property} Resource
+  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/group_schema_property okta_group_schema_property} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -524,7 +524,7 @@ export class GroupSchemaProperty extends cdktf.TerraformResource {
       terraformResourceType: 'okta_group_schema_property',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '4.4.2',
+        providerVersion: '4.4.3',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

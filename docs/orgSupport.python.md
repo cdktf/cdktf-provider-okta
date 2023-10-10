@@ -1,6 +1,6 @@
 # `okta_org_support`
 
-Refer to the Terraform Registory for docs: [`okta_org_support`](https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/org_support).
+Refer to the Terraform Registory for docs: [`okta_org_support`](https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/org_support).
 
 # `orgSupport` Submodule <a name="`orgSupport` Submodule" id="@cdktf/provider-okta.orgSupport"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_org_support`](https://registry
 
 ### OrgSupport <a name="OrgSupport" id="@cdktf/provider-okta.orgSupport.OrgSupport"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/org_support okta_org_support}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/org_support okta_org_support}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.orgSupport.OrgSupport.Initializer"></a>
 
@@ -42,7 +42,7 @@ orgSupport.OrgSupport(
 | <code><a href="#@cdktf/provider-okta.orgSupport.OrgSupport.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.orgSupport.OrgSupport.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.orgSupport.OrgSupport.Initializer.parameter.extendBy">extend_by</a></code> | <code>typing.Union[int, float]</code> | Number of days the support should be extended by. |
-| <code><a href="#@cdktf/provider-okta.orgSupport.OrgSupport.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/org_support#id OrgSupport#id}. |
+| <code><a href="#@cdktf/provider-okta.orgSupport.OrgSupport.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/org_support#id OrgSupport#id}. |
 
 ---
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 Number of days the support should be extended by.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/org_support#extend_by OrgSupport#extend_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/org_support#extend_by OrgSupport#extend_by}
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/org_support#id OrgSupport#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/org_support#id OrgSupport#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -730,7 +730,7 @@ orgSupport.OrgSupportConfig(
 | <code><a href="#@cdktf/provider-okta.orgSupport.OrgSupportConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.orgSupport.OrgSupportConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.orgSupport.OrgSupportConfig.property.extendBy">extend_by</a></code> | <code>typing.Union[int, float]</code> | Number of days the support should be extended by. |
-| <code><a href="#@cdktf/provider-okta.orgSupport.OrgSupportConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/org_support#id OrgSupport#id}. |
+| <code><a href="#@cdktf/provider-okta.orgSupport.OrgSupportConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/org_support#id OrgSupport#id}. |
 
 ---
 
@@ -814,7 +814,7 @@ extend_by: typing.Union[int, float]
 
 Number of days the support should be extended by.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/org_support#extend_by OrgSupport#extend_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/org_support#extend_by OrgSupport#extend_by}
 
 ---
 
@@ -826,7 +826,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.2/docs/resources/org_support#id OrgSupport#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/org_support#id OrgSupport#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
