@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appAccessPolicyAssignment.AppAccessPolicyAssignment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/appaccesspolicyassignment"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v11/appaccesspolicyassignment"
 
 appaccesspolicyassignment.NewAppAccessPolicyAssignment(scope Construct, id *string, config AppAccessPolicyAssignmentConfig) AppAccessPolicyAssignment
 ```
@@ -270,7 +270,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.appAccessPolicyAssignment.AppAccessPolicyAssignment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/appaccesspolicyassignment"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v11/appaccesspolicyassignment"
 
 appaccesspolicyassignment.AppAccessPolicyAssignment_IsConstruct(x interface{}) *bool
 ```
@@ -302,7 +302,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.appAccessPolicyAssignment.AppAccessPolicyAssignment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/appaccesspolicyassignment"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v11/appaccesspolicyassignment"
 
 appaccesspolicyassignment.AppAccessPolicyAssignment_IsTerraformElement(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ appaccesspolicyassignment.AppAccessPolicyAssignment_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.appAccessPolicyAssignment.AppAccessPolicyAssignment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/appaccesspolicyassignment"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v11/appaccesspolicyassignment"
 
 appaccesspolicyassignment.AppAccessPolicyAssignment_IsTerraformResource(x interface{}) *bool
 ```
@@ -570,7 +570,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.appAccessPolicyAssignment.AppAccessPolicyAssignmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/appaccesspolicyassignment"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v11/appaccesspolicyassignment"
 
 &appaccesspolicyassignment.AppAccessPolicyAssignmentConfig {
 	Connection: interface{},

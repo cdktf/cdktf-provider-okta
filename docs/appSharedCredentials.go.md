@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appSharedCredentials.AppSharedCredentials.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/appsharedcredentials"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v11/appsharedcredentials"
 
 appsharedcredentials.NewAppSharedCredentials(scope Construct, id *string, config AppSharedCredentialsConfig) AppSharedCredentials
 ```
@@ -472,7 +472,7 @@ func ResetUserNameTemplateType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.appSharedCredentials.AppSharedCredentials.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/appsharedcredentials"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v11/appsharedcredentials"
 
 appsharedcredentials.AppSharedCredentials_IsConstruct(x interface{}) *bool
 ```
@@ -504,7 +504,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.appSharedCredentials.AppSharedCredentials.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/appsharedcredentials"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v11/appsharedcredentials"
 
 appsharedcredentials.AppSharedCredentials_IsTerraformElement(x interface{}) *bool
 ```
@@ -518,7 +518,7 @@ appsharedcredentials.AppSharedCredentials_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.appSharedCredentials.AppSharedCredentials.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/appsharedcredentials"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v11/appsharedcredentials"
 
 appsharedcredentials.AppSharedCredentials_IsTerraformResource(x interface{}) *bool
 ```
@@ -1366,7 +1366,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.appSharedCredentials.AppSharedCredentialsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/appsharedcredentials"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v11/appsharedcredentials"
 
 &appsharedcredentials.AppSharedCredentialsConfig {
 	Connection: interface{},
@@ -1396,7 +1396,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/appsharedcredentials"
 	SharedPassword: *string,
 	SharedUsername: *string,
 	Status: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-okta-go/okta.appSharedCredentials.AppSharedCredentialsTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-okta-go/okta/v11.appSharedCredentials.AppSharedCredentialsTimeouts,
 	Url: *string,
 	UrlRegex: *string,
 	UsernameField: *string,
@@ -1917,7 +1917,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.appSharedCredentials.AppSharedCredentialsTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/appsharedcredentials"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v11/appsharedcredentials"
 
 &appsharedcredentials.AppSharedCredentialsTimeouts {
 	Create: *string,
@@ -1979,7 +1979,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appSharedCredentials.AppSharedCredentialsTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/appsharedcredentials"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v11/appsharedcredentials"
 
 appsharedcredentials.NewAppSharedCredentialsTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSharedCredentialsTimeoutsOutputReference
 ```
