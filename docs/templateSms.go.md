@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.templateSms.TemplateSms.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v11/templatesms"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/templatesms"
 
 templatesms.NewTemplateSms(scope Construct, id *string, config TemplateSmsConfig) TemplateSms
 ```
@@ -297,7 +297,7 @@ func ResetTranslations()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.templateSms.TemplateSms.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v11/templatesms"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/templatesms"
 
 templatesms.TemplateSms_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.templateSms.TemplateSms.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v11/templatesms"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/templatesms"
 
 templatesms.TemplateSms_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ templatesms.TemplateSms_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.templateSms.TemplateSms.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v11/templatesms"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/templatesms"
 
 templatesms.TemplateSms_IsTerraformResource(x interface{}) *bool
 ```
@@ -630,7 +630,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.templateSms.TemplateSmsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v11/templatesms"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/templatesms"
 
 &templatesms.TemplateSmsConfig {
 	Connection: interface{},
@@ -797,7 +797,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.templateSms.TemplateSmsTranslations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v11/templatesms"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/templatesms"
 
 &templatesms.TemplateSmsTranslations {
 	Language: *string,
@@ -845,7 +845,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.templateSms.TemplateSmsTranslationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v11/templatesms"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/templatesms"
 
 templatesms.NewTemplateSmsTranslationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TemplateSmsTranslationsList
 ```
@@ -988,7 +988,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.templateSms.TemplateSmsTranslationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v11/templatesms"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/templatesms"
 
 templatesms.NewTemplateSmsTranslationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) TemplateSmsTranslationsOutputReference
 ```
