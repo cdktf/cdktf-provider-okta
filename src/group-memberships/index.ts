@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/group_memberships
 // generated from terraform resource schema
 
@@ -48,6 +43,20 @@ export class GroupMemberships extends cdktf.TerraformResource {
   // STATIC PROPERTIES
   // =================
   public static readonly tfResourceType = "okta_group_memberships";
+
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a GroupMemberships resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the GroupMemberships to import
+  * @param importFromId The id of the existing GroupMemberships that should be imported. Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/group_memberships#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the GroupMemberships to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "okta_group_memberships", importId: importFromId, provider });
+      }
 
   // ===========
   // INITIALIZER

@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSaml.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktaappsaml"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaappsaml"
 
 dataoktaappsaml.NewDataOktaAppSaml(scope Construct, id *string, config DataOktaAppSamlConfig) DataOktaAppSaml
 ```
@@ -313,13 +313,14 @@ func ResetSkipUsers()
 | <code><a href="#@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSaml.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSaml.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSaml.isTerraformDataSource">IsTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSaml.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DataOktaAppSaml resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSaml.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktaappsaml"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaappsaml"
 
 dataoktaappsaml.DataOktaAppSaml_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +352,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSaml.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktaappsaml"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaappsaml"
 
 dataoktaappsaml.DataOktaAppSaml_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +366,7 @@ dataoktaappsaml.DataOktaAppSaml_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSaml.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktaappsaml"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaappsaml"
 
 dataoktaappsaml.DataOktaAppSaml_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -373,6 +374,50 @@ dataoktaappsaml.DataOktaAppSaml_IsTerraformDataSource(x interface{}) *bool
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSaml.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSaml.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaappsaml"
+
+dataoktaappsaml.DataOktaAppSaml_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a DataOktaAppSaml resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSaml.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSaml.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the DataOktaAppSaml to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSaml.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing DataOktaAppSaml that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/data-sources/app_saml#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSaml.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the DataOktaAppSaml to import is found.
 
 ---
 
@@ -1136,7 +1181,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSamlAttributeStatements.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktaappsaml"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaappsaml"
 
 &dataoktaappsaml.DataOktaAppSamlAttributeStatements {
 
@@ -1149,7 +1194,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktaappsaml"
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSamlConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktaappsaml"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaappsaml"
 
 &dataoktaappsaml.DataOktaAppSamlConfig {
 	Connection: interface{},
@@ -1375,7 +1420,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSamlAttributeStatementsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktaappsaml"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaappsaml"
 
 dataoktaappsaml.NewDataOktaAppSamlAttributeStatementsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOktaAppSamlAttributeStatementsList
 ```
@@ -1507,7 +1552,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSamlAttributeStatementsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktaappsaml"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaappsaml"
 
 dataoktaappsaml.NewDataOktaAppSamlAttributeStatementsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataOktaAppSamlAttributeStatementsOutputReference
 ```

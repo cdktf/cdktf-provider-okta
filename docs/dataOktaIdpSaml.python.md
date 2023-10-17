@@ -382,6 +382,7 @@ def reset_name() -> None
 | <code><a href="#@cdktf/provider-okta.dataOktaIdpSaml.DataOktaIdpSaml.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-okta.dataOktaIdpSaml.DataOktaIdpSaml.isTerraformElement">is_terraform_element</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaIdpSaml.DataOktaIdpSaml.isTerraformDataSource">is_terraform_data_source</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.dataOktaIdpSaml.DataOktaIdpSaml.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a DataOktaIdpSaml resource upon running "cdktf plan <stack-name>". |
 
 ---
 
@@ -448,6 +449,55 @@ dataOktaIdpSaml.DataOktaIdpSaml.is_terraform_data_source(
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-okta.dataOktaIdpSaml.DataOktaIdpSaml.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* typing.Any
+
+---
+
+##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktf/provider-okta.dataOktaIdpSaml.DataOktaIdpSaml.generateConfigForImport"></a>
+
+```python
+from cdktf_cdktf_provider_okta import data_okta_idp_saml
+
+dataOktaIdpSaml.DataOktaIdpSaml.generate_config_for_import(
+  scope: Construct,
+  import_to_id: str,
+  import_from_id: str,
+  provider: TerraformProvider = None
+)
+```
+
+Generates CDKTF code for importing a DataOktaIdpSaml resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-okta.dataOktaIdpSaml.DataOktaIdpSaml.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktf/provider-okta.dataOktaIdpSaml.DataOktaIdpSaml.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* str
+
+The construct id used in the generated config for the DataOktaIdpSaml to import.
+
+---
+
+###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktf/provider-okta.dataOktaIdpSaml.DataOktaIdpSaml.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* str
+
+The id of the existing DataOktaIdpSaml that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/data-sources/idp_saml#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-okta.dataOktaIdpSaml.DataOktaIdpSaml.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* cdktf.TerraformProvider
+
+? Optional instance of the provider where the DataOktaIdpSaml to import is found.
 
 ---
 

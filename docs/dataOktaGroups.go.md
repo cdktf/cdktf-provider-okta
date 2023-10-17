@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaGroups.DataOktaGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktagroups"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktagroups"
 
 dataoktagroups.NewDataOktaGroups(scope Construct, id *string, config DataOktaGroupsConfig) DataOktaGroups
 ```
@@ -292,13 +292,14 @@ func ResetType()
 | <code><a href="#@cdktf/provider-okta.dataOktaGroups.DataOktaGroups.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-okta.dataOktaGroups.DataOktaGroups.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaGroups.DataOktaGroups.isTerraformDataSource">IsTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.dataOktaGroups.DataOktaGroups.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DataOktaGroups resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.dataOktaGroups.DataOktaGroups.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktagroups"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktagroups"
 
 dataoktagroups.DataOktaGroups_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +331,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.dataOktaGroups.DataOktaGroups.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktagroups"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktagroups"
 
 dataoktagroups.DataOktaGroups_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +345,7 @@ dataoktagroups.DataOktaGroups_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-okta.dataOktaGroups.DataOktaGroups.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktagroups"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktagroups"
 
 dataoktagroups.DataOktaGroups_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -352,6 +353,50 @@ dataoktagroups.DataOktaGroups_IsTerraformDataSource(x interface{}) *bool
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-okta.dataOktaGroups.DataOktaGroups.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.dataOktaGroups.DataOktaGroups.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktagroups"
+
+dataoktagroups.DataOktaGroups_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a DataOktaGroups resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-okta.dataOktaGroups.DataOktaGroups.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-okta.dataOktaGroups.DataOktaGroups.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the DataOktaGroups to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-okta.dataOktaGroups.DataOktaGroups.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing DataOktaGroups that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/data-sources/groups#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-okta.dataOktaGroups.DataOktaGroups.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the DataOktaGroups to import is found.
 
 ---
 
@@ -620,7 +665,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaGroups.DataOktaGroupsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktagroups"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktagroups"
 
 &dataoktagroups.DataOktaGroupsConfig {
 	Connection: interface{},
@@ -789,7 +834,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaGroups.DataOktaGroupsGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktagroups"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktagroups"
 
 &dataoktagroups.DataOktaGroupsGroups {
 
@@ -804,7 +849,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktagroups"
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaGroups.DataOktaGroupsGroupsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktagroups"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktagroups"
 
 dataoktagroups.NewDataOktaGroupsGroupsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOktaGroupsGroupsList
 ```
@@ -936,7 +981,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaGroups.DataOktaGroupsGroupsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktagroups"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktagroups"
 
 dataoktagroups.NewDataOktaGroupsGroupsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataOktaGroupsGroupsOutputReference
 ```

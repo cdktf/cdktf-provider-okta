@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaBehavior.DataOktaBehavior.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktabehavior"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktabehavior"
 
 dataoktabehavior.NewDataOktaBehavior(scope Construct, id *string, config DataOktaBehaviorConfig) DataOktaBehavior
 ```
@@ -278,13 +278,14 @@ func ResetName()
 | <code><a href="#@cdktf/provider-okta.dataOktaBehavior.DataOktaBehavior.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-okta.dataOktaBehavior.DataOktaBehavior.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaBehavior.DataOktaBehavior.isTerraformDataSource">IsTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.dataOktaBehavior.DataOktaBehavior.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DataOktaBehavior resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.dataOktaBehavior.DataOktaBehavior.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktabehavior"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktabehavior"
 
 dataoktabehavior.DataOktaBehavior_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +317,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.dataOktaBehavior.DataOktaBehavior.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktabehavior"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktabehavior"
 
 dataoktabehavior.DataOktaBehavior_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +331,7 @@ dataoktabehavior.DataOktaBehavior_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-okta.dataOktaBehavior.DataOktaBehavior.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktabehavior"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktabehavior"
 
 dataoktabehavior.DataOktaBehavior_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,6 +339,50 @@ dataoktabehavior.DataOktaBehavior_IsTerraformDataSource(x interface{}) *bool
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-okta.dataOktaBehavior.DataOktaBehavior.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.dataOktaBehavior.DataOktaBehavior.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktabehavior"
+
+dataoktabehavior.DataOktaBehavior_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a DataOktaBehavior resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-okta.dataOktaBehavior.DataOktaBehavior.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-okta.dataOktaBehavior.DataOktaBehavior.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the DataOktaBehavior to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-okta.dataOktaBehavior.DataOktaBehavior.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing DataOktaBehavior that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/data-sources/behavior#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-okta.dataOktaBehavior.DataOktaBehavior.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the DataOktaBehavior to import is found.
 
 ---
 
@@ -584,7 +629,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaBehavior.DataOktaBehaviorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktabehavior"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktabehavior"
 
 &dataoktabehavior.DataOktaBehaviorConfig {
 	Connection: interface{},
