@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.userAdminRoles.UserAdminRoles.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/useradminroles"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/useradminroles"
 
 useradminroles.NewUserAdminRoles(scope Construct, id *string, config UserAdminRolesConfig) UserAdminRoles
 ```
@@ -346,7 +346,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.userAdminRoles.UserAdminRoles.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/useradminroles"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/useradminroles"
 
 useradminroles.UserAdminRoles_IsConstruct(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.userAdminRoles.UserAdminRoles.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/useradminroles"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/useradminroles"
 
 useradminroles.UserAdminRoles_IsTerraformElement(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ useradminroles.UserAdminRoles_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.userAdminRoles.UserAdminRoles.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/useradminroles"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/useradminroles"
 
 useradminroles.UserAdminRoles_IsTerraformResource(x interface{}) *bool
 ```
@@ -406,7 +406,7 @@ useradminroles.UserAdminRoles_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.userAdminRoles.UserAdminRoles.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/useradminroles"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/useradminroles"
 
 useradminroles.UserAdminRoles_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -723,7 +723,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.userAdminRoles.UserAdminRolesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/useradminroles"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/useradminroles"
 
 &useradminroles.UserAdminRolesConfig {
 	Connection: interface{},
