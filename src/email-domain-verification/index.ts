@@ -37,6 +37,20 @@ export class EmailDomainVerification extends cdktf.TerraformResource {
   // =================
   public static readonly tfResourceType = "okta_email_domain_verification";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a EmailDomainVerification resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the EmailDomainVerification to import
+  * @param importFromId The id of the existing EmailDomainVerification that should be imported. Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/email_domain_verification#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the EmailDomainVerification to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "okta_email_domain_verification", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========

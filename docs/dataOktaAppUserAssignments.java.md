@@ -333,6 +333,7 @@ public IResolvable interpolationForAttribute(java.lang.String terraformAttribute
 | <code><a href="#@cdktf/provider-okta.dataOktaAppUserAssignments.DataOktaAppUserAssignments.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-okta.dataOktaAppUserAssignments.DataOktaAppUserAssignments.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaAppUserAssignments.DataOktaAppUserAssignments.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.dataOktaAppUserAssignments.DataOktaAppUserAssignments.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a DataOktaAppUserAssignments resource upon running "cdktf plan <stack-name>". |
 
 ---
 
@@ -393,6 +394,50 @@ DataOktaAppUserAssignments.isTerraformDataSource(java.lang.Object x)
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-okta.dataOktaAppUserAssignments.DataOktaAppUserAssignments.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* java.lang.Object
+
+---
+
+##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktf/provider-okta.dataOktaAppUserAssignments.DataOktaAppUserAssignments.generateConfigForImport"></a>
+
+```java
+import com.hashicorp.cdktf.providers.okta.data_okta_app_user_assignments.DataOktaAppUserAssignments;
+
+DataOktaAppUserAssignments.generateConfigForImport(Construct scope, java.lang.String importToId, java.lang.String importFromId),DataOktaAppUserAssignments.generateConfigForImport(Construct scope, java.lang.String importToId, java.lang.String importFromId, TerraformProvider provider)
+```
+
+Generates CDKTF code for importing a DataOktaAppUserAssignments resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-okta.dataOktaAppUserAssignments.DataOktaAppUserAssignments.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* software.constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-okta.dataOktaAppUserAssignments.DataOktaAppUserAssignments.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* java.lang.String
+
+The construct id used in the generated config for the DataOktaAppUserAssignments to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-okta.dataOktaAppUserAssignments.DataOktaAppUserAssignments.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* java.lang.String
+
+The id of the existing DataOktaAppUserAssignments that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/data-sources/app_user_assignments#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-okta.dataOktaAppUserAssignments.DataOktaAppUserAssignments.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* com.hashicorp.cdktf.TerraformProvider
+
+? Optional instance of the provider where the DataOktaAppUserAssignments to import is found.
 
 ---
 

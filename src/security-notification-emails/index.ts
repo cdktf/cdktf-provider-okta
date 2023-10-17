@@ -61,6 +61,20 @@ export class SecurityNotificationEmails extends cdktf.TerraformResource {
   // =================
   public static readonly tfResourceType = "okta_security_notification_emails";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a SecurityNotificationEmails resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the SecurityNotificationEmails to import
+  * @param importFromId The id of the existing SecurityNotificationEmails that should be imported. Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/security_notification_emails#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the SecurityNotificationEmails to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "okta_security_notification_emails", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========

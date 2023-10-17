@@ -250,6 +250,20 @@ export class AppBasicAuth extends cdktf.TerraformResource {
   // =================
   public static readonly tfResourceType = "okta_app_basic_auth";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a AppBasicAuth resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the AppBasicAuth to import
+  * @param importFromId The id of the existing AppBasicAuth that should be imported. Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/app_basic_auth#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the AppBasicAuth to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "okta_app_basic_auth", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========

@@ -143,6 +143,20 @@ export class IdpSocial extends cdktf.TerraformResource {
   // =================
   public static readonly tfResourceType = "okta_idp_social";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a IdpSocial resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the IdpSocial to import
+  * @param importFromId The id of the existing IdpSocial that should be imported. Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/idp_social#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the IdpSocial to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "okta_idp_social", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========

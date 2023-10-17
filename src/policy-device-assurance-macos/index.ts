@@ -138,6 +138,20 @@ export class PolicyDeviceAssuranceMacos extends cdktf.TerraformResource {
   // =================
   public static readonly tfResourceType = "okta_policy_device_assurance_macos";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a PolicyDeviceAssuranceMacos resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the PolicyDeviceAssuranceMacos to import
+  * @param importFromId The id of the existing PolicyDeviceAssuranceMacos that should be imported. Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/policy_device_assurance_macos#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the PolicyDeviceAssuranceMacos to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "okta_policy_device_assurance_macos", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========
