@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaEveryoneGroup.DataOktaEveryoneGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaeveryonegroup"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktaeveryonegroup"
 
 dataoktaeveryonegroup.NewDataOktaEveryoneGroup(scope Construct, id *string, config DataOktaEveryoneGroupConfig) DataOktaEveryoneGroup
 ```
@@ -285,7 +285,7 @@ func ResetIncludeUsers()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.dataOktaEveryoneGroup.DataOktaEveryoneGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaeveryonegroup"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktaeveryonegroup"
 
 dataoktaeveryonegroup.DataOktaEveryoneGroup_IsConstruct(x interface{}) *bool
 ```
@@ -317,7 +317,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.dataOktaEveryoneGroup.DataOktaEveryoneGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaeveryonegroup"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktaeveryonegroup"
 
 dataoktaeveryonegroup.DataOktaEveryoneGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -331,7 +331,7 @@ dataoktaeveryonegroup.DataOktaEveryoneGroup_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-okta.dataOktaEveryoneGroup.DataOktaEveryoneGroup.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaeveryonegroup"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktaeveryonegroup"
 
 dataoktaeveryonegroup.DataOktaEveryoneGroup_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -345,7 +345,7 @@ dataoktaeveryonegroup.DataOktaEveryoneGroup_IsTerraformDataSource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.dataOktaEveryoneGroup.DataOktaEveryoneGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaeveryonegroup"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktaeveryonegroup"
 
 dataoktaeveryonegroup.DataOktaEveryoneGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -607,7 +607,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaEveryoneGroup.DataOktaEveryoneGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaeveryonegroup"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktaeveryonegroup"
 
 &dataoktaeveryonegroup.DataOktaEveryoneGroupConfig {
 	Connection: interface{},
