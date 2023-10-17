@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appUser.AppUser.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/appuser"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appuser"
 
 appuser.NewAppUser(scope Construct, id *string, config AppUserConfig) AppUser
 ```
@@ -305,7 +305,7 @@ func ResetUsername()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.appUser.AppUser.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/appuser"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appuser"
 
 appuser.AppUser_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.appUser.AppUser.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/appuser"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appuser"
 
 appuser.AppUser_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ appuser.AppUser_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.appUser.AppUser.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/appuser"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appuser"
 
 appuser.AppUser_IsTerraformResource(x interface{}) *bool
 ```
@@ -715,7 +715,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.appUser.AppUserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/appuser"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appuser"
 
 &appuser.AppUserConfig {
 	Connection: interface{},

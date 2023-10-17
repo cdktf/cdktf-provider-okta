@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.securityNotificationEmails.SecurityNotificationEmails.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/securitynotificationemails"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/securitynotificationemails"
 
 securitynotificationemails.NewSecurityNotificationEmails(scope Construct, id *string, config SecurityNotificationEmailsConfig) SecurityNotificationEmails
 ```
@@ -312,7 +312,7 @@ func ResetSendEmailForPasswordChangedEnabled()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.securityNotificationEmails.SecurityNotificationEmails.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/securitynotificationemails"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/securitynotificationemails"
 
 securitynotificationemails.SecurityNotificationEmails_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.securityNotificationEmails.SecurityNotificationEmails.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/securitynotificationemails"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/securitynotificationemails"
 
 securitynotificationemails.SecurityNotificationEmails_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ securitynotificationemails.SecurityNotificationEmails_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.securityNotificationEmails.SecurityNotificationEmails.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/securitynotificationemails"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/securitynotificationemails"
 
 securitynotificationemails.SecurityNotificationEmails_IsTerraformResource(x interface{}) *bool
 ```
@@ -689,7 +689,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.securityNotificationEmails.SecurityNotificationEmailsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/securitynotificationemails"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/securitynotificationemails"
 
 &securitynotificationemails.SecurityNotificationEmailsConfig {
 	Connection: interface{},
