@@ -1,6 +1,6 @@
 # `okta_policy_device_assurance_ios`
 
-Refer to the Terraform Registory for docs: [`okta_policy_device_assurance_ios`](https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/policy_device_assurance_ios).
+Refer to the Terraform Registory for docs: [`okta_policy_device_assurance_ios`](https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/policy_device_assurance_ios).
 
 # `policyDeviceAssuranceIos` Submodule <a name="`policyDeviceAssuranceIos` Submodule" id="@cdktf/provider-okta.policyDeviceAssuranceIos"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`okta_policy_device_assurance_ios`](
 
 ### PolicyDeviceAssuranceIos <a name="PolicyDeviceAssuranceIos" id="@cdktf/provider-okta.policyDeviceAssuranceIos.PolicyDeviceAssuranceIos"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/policy_device_assurance_ios okta_policy_device_assurance_ios}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/policy_device_assurance_ios okta_policy_device_assurance_ios}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.policyDeviceAssuranceIos.PolicyDeviceAssuranceIos.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policydeviceassuranceios"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policydeviceassuranceios"
 
 policydeviceassuranceios.NewPolicyDeviceAssuranceIos(scope Construct, id *string, config PolicyDeviceAssuranceIosConfig) PolicyDeviceAssuranceIos
 ```
@@ -353,7 +353,7 @@ func ResetScreenlockType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.policyDeviceAssuranceIos.PolicyDeviceAssuranceIos.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policydeviceassuranceios"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policydeviceassuranceios"
 
 policydeviceassuranceios.PolicyDeviceAssuranceIos_IsConstruct(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.policyDeviceAssuranceIos.PolicyDeviceAssuranceIos.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policydeviceassuranceios"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policydeviceassuranceios"
 
 policydeviceassuranceios.PolicyDeviceAssuranceIos_IsTerraformElement(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ policydeviceassuranceios.PolicyDeviceAssuranceIos_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.policyDeviceAssuranceIos.PolicyDeviceAssuranceIos.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policydeviceassuranceios"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policydeviceassuranceios"
 
 policydeviceassuranceios.PolicyDeviceAssuranceIos_IsTerraformResource(x interface{}) *bool
 ```
@@ -413,7 +413,7 @@ policydeviceassuranceios.PolicyDeviceAssuranceIos_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.policyDeviceAssuranceIos.PolicyDeviceAssuranceIos.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policydeviceassuranceios"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policydeviceassuranceios"
 
 policydeviceassuranceios.PolicyDeviceAssuranceIos_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -442,7 +442,7 @@ The construct id used in the generated config for the PolicyDeviceAssuranceIos t
 
 The id of the existing PolicyDeviceAssuranceIos that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/policy_device_assurance_ios#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/policy_device_assurance_ios#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -796,7 +796,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.policyDeviceAssuranceIos.PolicyDeviceAssuranceIosConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policydeviceassuranceios"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policydeviceassuranceios"
 
 &policydeviceassuranceios.PolicyDeviceAssuranceIosConfig {
 	Connection: interface{},
@@ -911,7 +911,7 @@ Name *string
 
 Policy device assurance name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/policy_device_assurance_ios#name PolicyDeviceAssuranceIos#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/policy_device_assurance_ios#name PolicyDeviceAssuranceIos#name}
 
 ---
 
@@ -925,7 +925,7 @@ Jailbreak interface{}
 
 The device jailbreak. Only for android and iOS platform.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/policy_device_assurance_ios#jailbreak PolicyDeviceAssuranceIos#jailbreak}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/policy_device_assurance_ios#jailbreak PolicyDeviceAssuranceIos#jailbreak}
 
 ---
 
@@ -939,7 +939,7 @@ OsVersion *string
 
 The device os minimum version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/policy_device_assurance_ios#os_version PolicyDeviceAssuranceIos#os_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/policy_device_assurance_ios#os_version PolicyDeviceAssuranceIos#os_version}
 
 ---
 
@@ -953,7 +953,7 @@ ScreenlockType *[]*string
 
 List of screenlock type, can be BIOMETRIC or BIOMETRIC, PASSCODE.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/policy_device_assurance_ios#screenlock_type PolicyDeviceAssuranceIos#screenlock_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/policy_device_assurance_ios#screenlock_type PolicyDeviceAssuranceIos#screenlock_type}
 
 ---
 

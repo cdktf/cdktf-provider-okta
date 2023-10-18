@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/user_type
+// https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/user_type
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +10,17 @@ export interface UserTypeConfig extends cdktf.TerraformMetaArguments {
   /**
   * A human-readable description of the User type
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/user_type#description UserType#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/user_type#description UserType#description}
   */
   readonly description: string;
   /**
   * The display name of the user type
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/user_type#display_name UserType#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/user_type#display_name UserType#display_name}
   */
   readonly displayName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/user_type#id UserType#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/user_type#id UserType#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,13 +29,13 @@ export interface UserTypeConfig extends cdktf.TerraformMetaArguments {
   /**
   * Name of the user type
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/user_type#name UserType#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/user_type#name UserType#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/user_type okta_user_type}
+* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/user_type okta_user_type}
 */
 export class UserType extends cdktf.TerraformResource {
 
@@ -56,7 +51,7 @@ export class UserType extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a UserType resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the UserType to import
-  * @param importFromId The id of the existing UserType that should be imported. Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/user_type#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing UserType that should be imported. Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/user_type#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the UserType to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -68,7 +63,7 @@ export class UserType extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/user_type okta_user_type} Resource
+  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/user_type okta_user_type} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -79,7 +74,7 @@ export class UserType extends cdktf.TerraformResource {
       terraformResourceType: 'okta_user_type',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '4.4.3',
+        providerVersion: '4.5.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

@@ -1,6 +1,6 @@
 # `okta_threat_insight_settings`
 
-Refer to the Terraform Registory for docs: [`okta_threat_insight_settings`](https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/threat_insight_settings).
+Refer to the Terraform Registory for docs: [`okta_threat_insight_settings`](https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/threat_insight_settings).
 
 # `threatInsightSettings` Submodule <a name="`threatInsightSettings` Submodule" id="@cdktf/provider-okta.threatInsightSettings"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_threat_insight_settings`](http
 
 ### ThreatInsightSettings <a name="ThreatInsightSettings" id="@cdktf/provider-okta.threatInsightSettings.ThreatInsightSettings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/threat_insight_settings okta_threat_insight_settings}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/threat_insight_settings okta_threat_insight_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.threatInsightSettings.ThreatInsightSettings.Initializer"></a>
 
@@ -435,7 +435,7 @@ The construct id used in the generated config for the ThreatInsightSettings to i
 
 The id of the existing ThreatInsightSettings that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/threat_insight_settings#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/threat_insight_settings#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -729,7 +729,7 @@ new ThreatInsightSettingsConfig {
 | <code><a href="#@cdktf/provider-okta.threatInsightSettings.ThreatInsightSettingsConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.threatInsightSettings.ThreatInsightSettingsConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.threatInsightSettings.ThreatInsightSettingsConfig.property.action">Action</a></code> | <code>string</code> | Specifies how Okta responds to authentication requests from suspicious IPs. |
-| <code><a href="#@cdktf/provider-okta.threatInsightSettings.ThreatInsightSettingsConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/threat_insight_settings#id ThreatInsightSettings#id}. |
+| <code><a href="#@cdktf/provider-okta.threatInsightSettings.ThreatInsightSettingsConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/threat_insight_settings#id ThreatInsightSettings#id}. |
 | <code><a href="#@cdktf/provider-okta.threatInsightSettings.ThreatInsightSettingsConfig.property.networkExcludes">NetworkExcludes</a></code> | <code>string[]</code> | List of Network Zone IDs to exclude to be not logged or blocked by Okta ThreatInsight and proceed to Sign On rules evaluation. |
 
 ---
@@ -814,7 +814,7 @@ public string Action { get; set; }
 
 Specifies how Okta responds to authentication requests from suspicious IPs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/threat_insight_settings#action ThreatInsightSettings#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/threat_insight_settings#action ThreatInsightSettings#action}
 
 ---
 
@@ -826,7 +826,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/threat_insight_settings#id ThreatInsightSettings#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/threat_insight_settings#id ThreatInsightSettings#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -843,7 +843,7 @@ public string[] NetworkExcludes { get; set; }
 
 List of Network Zone IDs to exclude to be not logged or blocked by Okta ThreatInsight and proceed to Sign On rules evaluation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/threat_insight_settings#network_excludes ThreatInsightSettings#network_excludes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/threat_insight_settings#network_excludes ThreatInsightSettings#network_excludes}
 
 ---
 
