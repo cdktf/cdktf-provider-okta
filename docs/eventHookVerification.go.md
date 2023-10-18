@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.eventHookVerification.EventHookVerification.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/eventhookverification"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/eventhookverification"
 
 eventhookverification.NewEventHookVerification(scope Construct, id *string, config EventHookVerificationConfig) EventHookVerification
 ```
@@ -339,7 +339,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.eventHookVerification.EventHookVerification.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/eventhookverification"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/eventhookverification"
 
 eventhookverification.EventHookVerification_IsConstruct(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.eventHookVerification.EventHookVerification.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/eventhookverification"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/eventhookverification"
 
 eventhookverification.EventHookVerification_IsTerraformElement(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ eventhookverification.EventHookVerification_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.eventHookVerification.EventHookVerification.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/eventhookverification"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/eventhookverification"
 
 eventhookverification.EventHookVerification_IsTerraformResource(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ eventhookverification.EventHookVerification_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.eventHookVerification.EventHookVerification.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/eventhookverification"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/eventhookverification"
 
 eventhookverification.EventHookVerification_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -672,7 +672,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.eventHookVerification.EventHookVerificationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/eventhookverification"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/eventhookverification"
 
 &eventhookverification.EventHookVerificationConfig {
 	Connection: interface{},

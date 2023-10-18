@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.authServerPolicyRule.AuthServerPolicyRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/authserverpolicyrule"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/authserverpolicyrule"
 
 authserverpolicyrule.NewAuthServerPolicyRule(scope Construct, id *string, config AuthServerPolicyRuleConfig) AuthServerPolicyRule
 ```
@@ -416,7 +416,7 @@ func ResetUserWhitelist()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.authServerPolicyRule.AuthServerPolicyRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/authserverpolicyrule"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/authserverpolicyrule"
 
 authserverpolicyrule.AuthServerPolicyRule_IsConstruct(x interface{}) *bool
 ```
@@ -448,7 +448,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.authServerPolicyRule.AuthServerPolicyRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/authserverpolicyrule"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/authserverpolicyrule"
 
 authserverpolicyrule.AuthServerPolicyRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -462,7 +462,7 @@ authserverpolicyrule.AuthServerPolicyRule_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.authServerPolicyRule.AuthServerPolicyRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/authserverpolicyrule"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/authserverpolicyrule"
 
 authserverpolicyrule.AuthServerPolicyRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -476,7 +476,7 @@ authserverpolicyrule.AuthServerPolicyRule_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.authServerPolicyRule.AuthServerPolicyRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/authserverpolicyrule"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/authserverpolicyrule"
 
 authserverpolicyrule.AuthServerPolicyRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1079,7 +1079,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.authServerPolicyRule.AuthServerPolicyRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/authserverpolicyrule"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/authserverpolicyrule"
 
 &authserverpolicyrule.AuthServerPolicyRuleConfig {
 	Connection: interface{},

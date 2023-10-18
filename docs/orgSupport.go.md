@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.orgSupport.OrgSupport.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/orgsupport"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/orgsupport"
 
 orgsupport.NewOrgSupport(scope Construct, id *string, config OrgSupportConfig) OrgSupport
 ```
@@ -346,7 +346,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.orgSupport.OrgSupport.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/orgsupport"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/orgsupport"
 
 orgsupport.OrgSupport_IsConstruct(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.orgSupport.OrgSupport.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/orgsupport"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/orgsupport"
 
 orgsupport.OrgSupport_IsTerraformElement(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ orgsupport.OrgSupport_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.orgSupport.OrgSupport.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/orgsupport"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/orgsupport"
 
 orgsupport.OrgSupport_IsTerraformResource(x interface{}) *bool
 ```
@@ -406,7 +406,7 @@ orgsupport.OrgSupport_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.orgSupport.OrgSupport.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/orgsupport"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/orgsupport"
 
 orgsupport.OrgSupport_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -701,7 +701,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.orgSupport.OrgSupportConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/orgsupport"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/orgsupport"
 
 &orgsupport.OrgSupportConfig {
 	Connection: interface{},

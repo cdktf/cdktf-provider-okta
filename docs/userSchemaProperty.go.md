@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.userSchemaProperty.UserSchemaProperty.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/userschemaproperty"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/userschemaproperty"
 
 userschemaproperty.NewUserSchemaProperty(scope Construct, id *string, config UserSchemaPropertyConfig) UserSchemaProperty
 ```
@@ -504,7 +504,7 @@ func ResetUserType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.userSchemaProperty.UserSchemaProperty.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/userschemaproperty"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/userschemaproperty"
 
 userschemaproperty.UserSchemaProperty_IsConstruct(x interface{}) *bool
 ```
@@ -536,7 +536,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.userSchemaProperty.UserSchemaProperty.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/userschemaproperty"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/userschemaproperty"
 
 userschemaproperty.UserSchemaProperty_IsTerraformElement(x interface{}) *bool
 ```
@@ -550,7 +550,7 @@ userschemaproperty.UserSchemaProperty_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.userSchemaProperty.UserSchemaProperty.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/userschemaproperty"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/userschemaproperty"
 
 userschemaproperty.UserSchemaProperty_IsTerraformResource(x interface{}) *bool
 ```
@@ -564,7 +564,7 @@ userschemaproperty.UserSchemaProperty_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.userSchemaProperty.UserSchemaProperty.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/userschemaproperty"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/userschemaproperty"
 
 userschemaproperty.UserSchemaProperty_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1277,7 +1277,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.userSchemaProperty.UserSchemaPropertyArrayOneOf.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/userschemaproperty"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/userschemaproperty"
 
 &userschemaproperty.UserSchemaPropertyArrayOneOf {
 	Const: *string,
@@ -1327,7 +1327,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.userSchemaProperty.UserSchemaPropertyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/userschemaproperty"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/userschemaproperty"
 
 &userschemaproperty.UserSchemaPropertyConfig {
 	Connection: interface{},
@@ -1780,7 +1780,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.userSchemaProperty.UserSchemaPropertyMasterOverridePriority.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/userschemaproperty"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/userschemaproperty"
 
 &userschemaproperty.UserSchemaPropertyMasterOverridePriority {
 	Value: *string,
@@ -1826,7 +1826,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.userSchemaProperty.UserSchemaPropertyOneOf.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/userschemaproperty"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/userschemaproperty"
 
 &userschemaproperty.UserSchemaPropertyOneOf {
 	Const: *string,
@@ -1878,7 +1878,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.userSchemaProperty.UserSchemaPropertyArrayOneOfList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/userschemaproperty"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/userschemaproperty"
 
 userschemaproperty.NewUserSchemaPropertyArrayOneOfList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) UserSchemaPropertyArrayOneOfList
 ```
@@ -2021,7 +2021,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.userSchemaProperty.UserSchemaPropertyArrayOneOfOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/userschemaproperty"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/userschemaproperty"
 
 userschemaproperty.NewUserSchemaPropertyArrayOneOfOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) UserSchemaPropertyArrayOneOfOutputReference
 ```
@@ -2332,7 +2332,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.userSchemaProperty.UserSchemaPropertyMasterOverridePriorityList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/userschemaproperty"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/userschemaproperty"
 
 userschemaproperty.NewUserSchemaPropertyMasterOverridePriorityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) UserSchemaPropertyMasterOverridePriorityList
 ```
@@ -2475,7 +2475,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.userSchemaProperty.UserSchemaPropertyMasterOverridePriorityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/userschemaproperty"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/userschemaproperty"
 
 userschemaproperty.NewUserSchemaPropertyMasterOverridePriorityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) UserSchemaPropertyMasterOverridePriorityOutputReference
 ```
@@ -2793,7 +2793,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.userSchemaProperty.UserSchemaPropertyOneOfList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/userschemaproperty"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/userschemaproperty"
 
 userschemaproperty.NewUserSchemaPropertyOneOfList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) UserSchemaPropertyOneOfList
 ```
@@ -2936,7 +2936,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.userSchemaProperty.UserSchemaPropertyOneOfOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/userschemaproperty"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/userschemaproperty"
 
 userschemaproperty.NewUserSchemaPropertyOneOfOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) UserSchemaPropertyOneOfOutputReference
 ```
