@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.roleSubscription.RoleSubscription.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/rolesubscription"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/rolesubscription"
 
 rolesubscription.NewRoleSubscription(scope Construct, id *string, config RoleSubscriptionConfig) RoleSubscription
 ```
@@ -346,7 +346,7 @@ func ResetStatus()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.roleSubscription.RoleSubscription.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/rolesubscription"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/rolesubscription"
 
 rolesubscription.RoleSubscription_IsConstruct(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.roleSubscription.RoleSubscription.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/rolesubscription"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/rolesubscription"
 
 rolesubscription.RoleSubscription_IsTerraformElement(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ rolesubscription.RoleSubscription_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.roleSubscription.RoleSubscription.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/rolesubscription"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/rolesubscription"
 
 rolesubscription.RoleSubscription_IsTerraformResource(x interface{}) *bool
 ```
@@ -406,7 +406,7 @@ rolesubscription.RoleSubscription_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.roleSubscription.RoleSubscription.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/rolesubscription"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/rolesubscription"
 
 rolesubscription.RoleSubscription_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -723,7 +723,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.roleSubscription.RoleSubscriptionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/rolesubscription"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/rolesubscription"
 
 &rolesubscription.RoleSubscriptionConfig {
 	Connection: interface{},
