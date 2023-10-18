@@ -1,3 +1,3 @@
 # `data_okta_network_zone`
 
-Refer to the Terraform Registory for docs: [`data_okta_network_zone`](https://registry.terraform.io/providers/okta/okta/4.4.3/docs/data-sources/network_zone).
+Refer to the Terraform Registory for docs: [`data_okta_network_zone`](https://registry.terraform.io/providers/okta/okta/4.5.0/docs/data-sources/network_zone).

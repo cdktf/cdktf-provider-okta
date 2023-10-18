@@ -1,6 +1,6 @@
 # `okta_email_domain_verification`
 
-Refer to the Terraform Registory for docs: [`okta_email_domain_verification`](https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/email_domain_verification).
+Refer to the Terraform Registory for docs: [`okta_email_domain_verification`](https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/email_domain_verification).
 
 # `emailDomainVerification` Submodule <a name="`emailDomainVerification` Submodule" id="@cdktf/provider-okta.emailDomainVerification"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_email_domain_verification`](ht
 
 ### EmailDomainVerification <a name="EmailDomainVerification" id="@cdktf/provider-okta.emailDomainVerification.EmailDomainVerification"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/email_domain_verification okta_email_domain_verification}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/email_domain_verification okta_email_domain_verification}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.emailDomainVerification.EmailDomainVerification.Initializer"></a>
 
@@ -44,7 +44,7 @@ EmailDomainVerification.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-okta.emailDomainVerification.EmailDomainVerification.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.emailDomainVerification.EmailDomainVerification.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.emailDomainVerification.EmailDomainVerification.Initializer.parameter.emailDomainId">emailDomainId</a></code> | <code>java.lang.String</code> | Email domain ID. |
-| <code><a href="#@cdktf/provider-okta.emailDomainVerification.EmailDomainVerification.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/email_domain_verification#id EmailDomainVerification#id}. |
+| <code><a href="#@cdktf/provider-okta.emailDomainVerification.EmailDomainVerification.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/email_domain_verification#id EmailDomainVerification#id}. |
 
 ---
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 Email domain ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/email_domain_verification#email_domain_id EmailDomainVerification#email_domain_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/email_domain_verification#email_domain_id EmailDomainVerification#email_domain_id}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/email_domain_verification#id EmailDomainVerification#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/email_domain_verification#id EmailDomainVerification#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -509,7 +509,7 @@ The construct id used in the generated config for the EmailDomainVerification to
 
 The id of the existing EmailDomainVerification that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/email_domain_verification#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/email_domain_verification#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -784,7 +784,7 @@ EmailDomainVerificationConfig.builder()
 | <code><a href="#@cdktf/provider-okta.emailDomainVerification.EmailDomainVerificationConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.emailDomainVerification.EmailDomainVerificationConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.emailDomainVerification.EmailDomainVerificationConfig.property.emailDomainId">emailDomainId</a></code> | <code>java.lang.String</code> | Email domain ID. |
-| <code><a href="#@cdktf/provider-okta.emailDomainVerification.EmailDomainVerificationConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/email_domain_verification#id EmailDomainVerification#id}. |
+| <code><a href="#@cdktf/provider-okta.emailDomainVerification.EmailDomainVerificationConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/email_domain_verification#id EmailDomainVerification#id}. |
 
 ---
 
@@ -868,7 +868,7 @@ public java.lang.String getEmailDomainId();
 
 Email domain ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/email_domain_verification#email_domain_id EmailDomainVerification#email_domain_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/email_domain_verification#email_domain_id EmailDomainVerification#email_domain_id}
 
 ---
 
@@ -880,7 +880,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/email_domain_verification#id EmailDomainVerification#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/email_domain_verification#id EmailDomainVerification#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

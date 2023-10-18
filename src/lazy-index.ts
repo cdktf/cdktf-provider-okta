@@ -17,6 +17,7 @@ Object.defineProperty(exports, 'appOauth', { get: function () { return require('
 Object.defineProperty(exports, 'appOauthApiScope', { get: function () { return require('./app-oauth-api-scope'); } });
 Object.defineProperty(exports, 'appOauthPostLogoutRedirectUri', { get: function () { return require('./app-oauth-post-logout-redirect-uri'); } });
 Object.defineProperty(exports, 'appOauthRedirectUri', { get: function () { return require('./app-oauth-redirect-uri'); } });
+Object.defineProperty(exports, 'appOauthRoleAssignment', { get: function () { return require('./app-oauth-role-assignment'); } });
 Object.defineProperty(exports, 'appSaml', { get: function () { return require('./app-saml'); } });
 Object.defineProperty(exports, 'appSamlAppSettings', { get: function () { return require('./app-saml-app-settings'); } });
 Object.defineProperty(exports, 'appSecurePasswordStore', { get: function () { return require('./app-secure-password-store'); } });
@@ -132,6 +133,7 @@ Object.defineProperty(exports, 'dataOktaIdpOidc', { get: function () { return re
 Object.defineProperty(exports, 'dataOktaIdpSaml', { get: function () { return require('./data-okta-idp-saml'); } });
 Object.defineProperty(exports, 'dataOktaIdpSocial', { get: function () { return require('./data-okta-idp-social'); } });
 Object.defineProperty(exports, 'dataOktaNetworkZone', { get: function () { return require('./data-okta-network-zone'); } });
+Object.defineProperty(exports, 'dataOktaOrgMetadata', { get: function () { return require('./data-okta-org-metadata'); } });
 Object.defineProperty(exports, 'dataOktaPolicy', { get: function () { return require('./data-okta-policy'); } });
 Object.defineProperty(exports, 'dataOktaRoleSubscription', { get: function () { return require('./data-okta-role-subscription'); } });
 Object.defineProperty(exports, 'dataOktaTheme', { get: function () { return require('./data-okta-theme'); } });

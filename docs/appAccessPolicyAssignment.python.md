@@ -1,6 +1,6 @@
 # `okta_app_access_policy_assignment`
 
-Refer to the Terraform Registory for docs: [`okta_app_access_policy_assignment`](https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/app_access_policy_assignment).
+Refer to the Terraform Registory for docs: [`okta_app_access_policy_assignment`](https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/app_access_policy_assignment).
 
 # `appAccessPolicyAssignment` Submodule <a name="`appAccessPolicyAssignment` Submodule" id="@cdktf/provider-okta.appAccessPolicyAssignment"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_app_access_policy_assignment`]
 
 ### AppAccessPolicyAssignment <a name="AppAccessPolicyAssignment" id="@cdktf/provider-okta.appAccessPolicyAssignment.AppAccessPolicyAssignment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/app_access_policy_assignment okta_app_access_policy_assignment}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/app_access_policy_assignment okta_app_access_policy_assignment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appAccessPolicyAssignment.AppAccessPolicyAssignment.Initializer"></a>
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 The application ID; this value is immutable and can not be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/app_access_policy_assignment#app_id AppAccessPolicyAssignment#app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/app_access_policy_assignment#app_id AppAccessPolicyAssignment#app_id}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 The access policy ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/app_access_policy_assignment#policy_id AppAccessPolicyAssignment#policy_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/app_access_policy_assignment#policy_id AppAccessPolicyAssignment#policy_id}
 
 ---
 
@@ -541,7 +541,7 @@ The construct id used in the generated config for the AppAccessPolicyAssignment 
 
 The id of the existing AppAccessPolicyAssignment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/app_access_policy_assignment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/app_access_policy_assignment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -907,7 +907,7 @@ app_id: str
 
 The application ID; this value is immutable and can not be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/app_access_policy_assignment#app_id AppAccessPolicyAssignment#app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/app_access_policy_assignment#app_id AppAccessPolicyAssignment#app_id}
 
 ---
 
@@ -921,7 +921,7 @@ policy_id: str
 
 The access policy ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/app_access_policy_assignment#policy_id AppAccessPolicyAssignment#policy_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/app_access_policy_assignment#policy_id AppAccessPolicyAssignment#policy_id}
 
 ---
 

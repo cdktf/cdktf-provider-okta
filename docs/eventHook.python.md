@@ -1,6 +1,6 @@
 # `okta_event_hook`
 
-Refer to the Terraform Registory for docs: [`okta_event_hook`](https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/event_hook).
+Refer to the Terraform Registory for docs: [`okta_event_hook`](https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/event_hook).
 
 # `eventHook` Submodule <a name="`eventHook` Submodule" id="@cdktf/provider-okta.eventHook"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_event_hook`](https://registry.
 
 ### EventHook <a name="EventHook" id="@cdktf/provider-okta.eventHook.EventHook"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/event_hook okta_event_hook}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/event_hook okta_event_hook}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.eventHook.EventHook.Initializer"></a>
 
@@ -51,8 +51,8 @@ eventHook.EventHook(
 | <code><a href="#@cdktf/provider-okta.eventHook.EventHook.Initializer.parameter.name">name</a></code> | <code>str</code> | The event hook display name. |
 | <code><a href="#@cdktf/provider-okta.eventHook.EventHook.Initializer.parameter.auth">auth</a></code> | <code>typing.Mapping[str]</code> | Authentication required for event hook request. |
 | <code><a href="#@cdktf/provider-okta.eventHook.EventHook.Initializer.parameter.headers">headers</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.eventHook.EventHookHeaders">EventHookHeaders</a>]]</code> | headers block. |
-| <code><a href="#@cdktf/provider-okta.eventHook.EventHook.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/event_hook#id EventHook#id}. |
-| <code><a href="#@cdktf/provider-okta.eventHook.EventHook.Initializer.parameter.status">status</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/event_hook#status EventHook#status}. |
+| <code><a href="#@cdktf/provider-okta.eventHook.EventHook.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/event_hook#id EventHook#id}. |
+| <code><a href="#@cdktf/provider-okta.eventHook.EventHook.Initializer.parameter.status">status</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/event_hook#status EventHook#status}. |
 
 ---
 
@@ -122,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 Details of the endpoint the event hook will hit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/event_hook#channel EventHook#channel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/event_hook#channel EventHook#channel}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 The events that will be delivered to this hook. [See here for a list of supported events](https://developer.okta.com/docs/reference/api/event-types/?q=event-hook-eligible).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/event_hook#events EventHook#events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/event_hook#events EventHook#events}
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 The event hook display name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/event_hook#name EventHook#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/event_hook#name EventHook#name}
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Authentication required for event hook request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/event_hook#auth EventHook#auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/event_hook#auth EventHook#auth}
 
 ---
 
@@ -162,7 +162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 headers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/event_hook#headers EventHook#headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/event_hook#headers EventHook#headers}
 
 ---
 
@@ -170,7 +170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/event_hook#id EventHook#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/event_hook#id EventHook#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -181,7 +181,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/event_hook#status EventHook#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/event_hook#status EventHook#status}.
 
 ---
 
@@ -643,7 +643,7 @@ The construct id used in the generated config for the EventHook to import.
 
 The id of the existing EventHook that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/event_hook#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/event_hook#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1033,8 +1033,8 @@ eventHook.EventHookConfig(
 | <code><a href="#@cdktf/provider-okta.eventHook.EventHookConfig.property.name">name</a></code> | <code>str</code> | The event hook display name. |
 | <code><a href="#@cdktf/provider-okta.eventHook.EventHookConfig.property.auth">auth</a></code> | <code>typing.Mapping[str]</code> | Authentication required for event hook request. |
 | <code><a href="#@cdktf/provider-okta.eventHook.EventHookConfig.property.headers">headers</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.eventHook.EventHookHeaders">EventHookHeaders</a>]]</code> | headers block. |
-| <code><a href="#@cdktf/provider-okta.eventHook.EventHookConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/event_hook#id EventHook#id}. |
-| <code><a href="#@cdktf/provider-okta.eventHook.EventHookConfig.property.status">status</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/event_hook#status EventHook#status}. |
+| <code><a href="#@cdktf/provider-okta.eventHook.EventHookConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/event_hook#id EventHook#id}. |
+| <code><a href="#@cdktf/provider-okta.eventHook.EventHookConfig.property.status">status</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/event_hook#status EventHook#status}. |
 
 ---
 
@@ -1118,7 +1118,7 @@ channel: typing.Mapping[str]
 
 Details of the endpoint the event hook will hit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/event_hook#channel EventHook#channel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/event_hook#channel EventHook#channel}
 
 ---
 
@@ -1132,7 +1132,7 @@ events: typing.List[str]
 
 The events that will be delivered to this hook. [See here for a list of supported events](https://developer.okta.com/docs/reference/api/event-types/?q=event-hook-eligible).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/event_hook#events EventHook#events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/event_hook#events EventHook#events}
 
 ---
 
@@ -1146,7 +1146,7 @@ name: str
 
 The event hook display name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/event_hook#name EventHook#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/event_hook#name EventHook#name}
 
 ---
 
@@ -1160,7 +1160,7 @@ auth: typing.Mapping[str]
 
 Authentication required for event hook request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/event_hook#auth EventHook#auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/event_hook#auth EventHook#auth}
 
 ---
 
@@ -1174,7 +1174,7 @@ headers: typing.Union[IResolvable, typing.List[EventHookHeaders]]
 
 headers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/event_hook#headers EventHook#headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/event_hook#headers EventHook#headers}
 
 ---
 
@@ -1186,7 +1186,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/event_hook#id EventHook#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/event_hook#id EventHook#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1201,7 +1201,7 @@ status: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/event_hook#status EventHook#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/event_hook#status EventHook#status}.
 
 ---
 
@@ -1222,8 +1222,8 @@ eventHook.EventHookHeaders(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.eventHook.EventHookHeaders.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/event_hook#key EventHook#key}. |
-| <code><a href="#@cdktf/provider-okta.eventHook.EventHookHeaders.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/event_hook#value EventHook#value}. |
+| <code><a href="#@cdktf/provider-okta.eventHook.EventHookHeaders.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/event_hook#key EventHook#key}. |
+| <code><a href="#@cdktf/provider-okta.eventHook.EventHookHeaders.property.value">value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/event_hook#value EventHook#value}. |
 
 ---
 
@@ -1235,7 +1235,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/event_hook#key EventHook#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/event_hook#key EventHook#key}.
 
 ---
 
@@ -1247,7 +1247,7 @@ value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.4.3/docs/resources/event_hook#value EventHook#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/event_hook#value EventHook#value}.
 
 ---
 
