@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appOauthRoleAssignment.AppOauthRoleAssignment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/appoauthroleassignment"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appoauthroleassignment"
 
 appoauthroleassignment.NewAppOauthRoleAssignment(scope Construct, id *string, config AppOauthRoleAssignmentConfig) AppOauthRoleAssignment
 ```
@@ -346,7 +346,7 @@ func ResetRole()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.appOauthRoleAssignment.AppOauthRoleAssignment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/appoauthroleassignment"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appoauthroleassignment"
 
 appoauthroleassignment.AppOauthRoleAssignment_IsConstruct(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.appOauthRoleAssignment.AppOauthRoleAssignment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/appoauthroleassignment"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appoauthroleassignment"
 
 appoauthroleassignment.AppOauthRoleAssignment_IsTerraformElement(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ appoauthroleassignment.AppOauthRoleAssignment_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.appOauthRoleAssignment.AppOauthRoleAssignment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/appoauthroleassignment"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appoauthroleassignment"
 
 appoauthroleassignment.AppOauthRoleAssignment_IsTerraformResource(x interface{}) *bool
 ```
@@ -406,7 +406,7 @@ appoauthroleassignment.AppOauthRoleAssignment_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.appOauthRoleAssignment.AppOauthRoleAssignment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/appoauthroleassignment"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appoauthroleassignment"
 
 appoauthroleassignment.AppOauthRoleAssignment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -756,7 +756,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.appOauthRoleAssignment.AppOauthRoleAssignmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/appoauthroleassignment"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appoauthroleassignment"
 
 &appoauthroleassignment.AppOauthRoleAssignmentConfig {
 	Connection: interface{},
