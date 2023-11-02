@@ -1,6 +1,6 @@
 # `data_okta_app_group_assignments`
 
-Refer to the Terraform Registory for docs: [`data_okta_app_group_assignments`](https://registry.terraform.io/providers/okta/okta/4.5.0/docs/data-sources/app_group_assignments).
+Refer to the Terraform Registory for docs: [`data_okta_app_group_assignments`](https://registry.terraform.io/providers/okta/okta/4.6.0/docs/data-sources/app_group_assignments).
 
 # `dataOktaAppGroupAssignments` Submodule <a name="`dataOktaAppGroupAssignments` Submodule" id="@cdktf/provider-okta.dataOktaAppGroupAssignments"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_okta_app_group_assignments`](h
 
 ### DataOktaAppGroupAssignments <a name="DataOktaAppGroupAssignments" id="@cdktf/provider-okta.dataOktaAppGroupAssignments.DataOktaAppGroupAssignments"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/data-sources/app_group_assignments okta_app_group_assignments}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/data-sources/app_group_assignments okta_app_group_assignments}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaAppGroupAssignments.DataOktaAppGroupAssignments.Initializer"></a>
 
@@ -360,7 +360,7 @@ The construct id used in the generated config for the DataOktaAppGroupAssignment
 
 The id of the existing DataOktaAppGroupAssignments that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/data-sources/app_group_assignments#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/data-sources/app_group_assignments#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -671,7 +671,7 @@ public readonly id: string;
 
 ID of the Okta App being queried for groups.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/data-sources/app_group_assignments#id DataOktaAppGroupAssignments#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/data-sources/app_group_assignments#id DataOktaAppGroupAssignments#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

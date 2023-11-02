@@ -1,6 +1,6 @@
 # `okta_domain_verification`
 
-Refer to the Terraform Registory for docs: [`okta_domain_verification`](https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/domain_verification).
+Refer to the Terraform Registory for docs: [`okta_domain_verification`](https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/domain_verification).
 
 # `domainVerification` Submodule <a name="`domainVerification` Submodule" id="@cdktf/provider-okta.domainVerification"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_domain_verification`](https://
 
 ### DomainVerification <a name="DomainVerification" id="@cdktf/provider-okta.domainVerification.DomainVerification"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/domain_verification okta_domain_verification}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/domain_verification okta_domain_verification}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.domainVerification.DomainVerification.Initializer"></a>
 
@@ -42,7 +42,7 @@ domainVerification.DomainVerification(
 | <code><a href="#@cdktf/provider-okta.domainVerification.DomainVerification.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.domainVerification.DomainVerification.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.domainVerification.DomainVerification.Initializer.parameter.domainId">domain_id</a></code> | <code>str</code> | Domain's ID. |
-| <code><a href="#@cdktf/provider-okta.domainVerification.DomainVerification.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/domain_verification#id DomainVerification#id}. |
+| <code><a href="#@cdktf/provider-okta.domainVerification.DomainVerification.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/domain_verification#id DomainVerification#id}. |
 
 ---
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 Domain's ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/domain_verification#domain_id DomainVerification#domain_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/domain_verification#domain_id DomainVerification#domain_id}
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/domain_verification#id DomainVerification#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/domain_verification#id DomainVerification#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -549,7 +549,7 @@ The construct id used in the generated config for the DomainVerification to impo
 
 The id of the existing DomainVerification that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/domain_verification#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/domain_verification#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -820,7 +820,7 @@ domainVerification.DomainVerificationConfig(
 | <code><a href="#@cdktf/provider-okta.domainVerification.DomainVerificationConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.domainVerification.DomainVerificationConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.domainVerification.DomainVerificationConfig.property.domainId">domain_id</a></code> | <code>str</code> | Domain's ID. |
-| <code><a href="#@cdktf/provider-okta.domainVerification.DomainVerificationConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/domain_verification#id DomainVerification#id}. |
+| <code><a href="#@cdktf/provider-okta.domainVerification.DomainVerificationConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/domain_verification#id DomainVerification#id}. |
 
 ---
 
@@ -904,7 +904,7 @@ domain_id: str
 
 Domain's ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/domain_verification#domain_id DomainVerification#domain_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/domain_verification#domain_id DomainVerification#domain_id}
 
 ---
 
@@ -916,7 +916,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/domain_verification#id DomainVerification#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/domain_verification#id DomainVerification#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

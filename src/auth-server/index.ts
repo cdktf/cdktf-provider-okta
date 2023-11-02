@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/auth_server
+// https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/auth_server
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +10,23 @@ export interface AuthServerConfig extends cdktf.TerraformMetaArguments {
   /**
   * Currently Okta only supports a single value here
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/auth_server#audiences AuthServer#audiences}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/auth_server#audiences AuthServer#audiences}
   */
   readonly audiences: string[];
   /**
   * Credential rotation mode, in many cases you cannot set this to MANUAL, the API will ignore the value and you will get a perpetual diff. This should rarely be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/auth_server#credentials_rotation_mode AuthServer#credentials_rotation_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/auth_server#credentials_rotation_mode AuthServer#credentials_rotation_mode}
   */
   readonly credentialsRotationMode?: string;
   /**
   * The description of the authorization server.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/auth_server#description AuthServer#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/auth_server#description AuthServer#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/auth_server#id AuthServer#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/auth_server#id AuthServer#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,23 +35,23 @@ export interface AuthServerConfig extends cdktf.TerraformMetaArguments {
   /**
   * *Early Access Property*. Indicates which value is specified in the issuer of the tokens that a Custom Authorization Server returns: the original Okta org domain URL or a custom domain URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/auth_server#issuer_mode AuthServer#issuer_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/auth_server#issuer_mode AuthServer#issuer_mode}
   */
   readonly issuerMode?: string;
   /**
   * The name of the authorization server.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/auth_server#name AuthServer#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/auth_server#name AuthServer#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/auth_server#status AuthServer#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/auth_server#status AuthServer#status}
   */
   readonly status?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/auth_server okta_auth_server}
+* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/auth_server okta_auth_server}
 */
 export class AuthServer extends cdktf.TerraformResource {
 
@@ -72,7 +67,7 @@ export class AuthServer extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a AuthServer resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AuthServer to import
-  * @param importFromId The id of the existing AuthServer that should be imported. Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/auth_server#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AuthServer that should be imported. Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/auth_server#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AuthServer to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -84,7 +79,7 @@ export class AuthServer extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/auth_server okta_auth_server} Resource
+  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/auth_server okta_auth_server} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -95,7 +90,7 @@ export class AuthServer extends cdktf.TerraformResource {
       terraformResourceType: 'okta_auth_server',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '4.5.0',
+        providerVersion: '4.6.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

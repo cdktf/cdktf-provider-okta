@@ -1,6 +1,6 @@
 # `data_okta_app_metadata_saml`
 
-Refer to the Terraform Registory for docs: [`data_okta_app_metadata_saml`](https://registry.terraform.io/providers/okta/okta/4.5.0/docs/data-sources/app_metadata_saml).
+Refer to the Terraform Registory for docs: [`data_okta_app_metadata_saml`](https://registry.terraform.io/providers/okta/okta/4.6.0/docs/data-sources/app_metadata_saml).
 
 # `dataOktaAppMetadataSaml` Submodule <a name="`dataOktaAppMetadataSaml` Submodule" id="@cdktf/provider-okta.dataOktaAppMetadataSaml"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_okta_app_metadata_saml`](https
 
 ### DataOktaAppMetadataSaml <a name="DataOktaAppMetadataSaml" id="@cdktf/provider-okta.dataOktaAppMetadataSaml.DataOktaAppMetadataSaml"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/data-sources/app_metadata_saml okta_app_metadata_saml}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/data-sources/app_metadata_saml okta_app_metadata_saml}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaAppMetadataSaml.DataOktaAppMetadataSaml.Initializer"></a>
 
@@ -374,7 +374,7 @@ The construct id used in the generated config for the DataOktaAppMetadataSaml to
 
 The id of the existing DataOktaAppMetadataSaml that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/data-sources/app_metadata_saml#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/data-sources/app_metadata_saml#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -701,7 +701,7 @@ const dataOktaAppMetadataSamlConfig: dataOktaAppMetadataSaml.DataOktaAppMetadata
 | <code><a href="#@cdktf/provider-okta.dataOktaAppMetadataSaml.DataOktaAppMetadataSamlConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaAppMetadataSaml.DataOktaAppMetadataSamlConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaAppMetadataSaml.DataOktaAppMetadataSamlConfig.property.appId">appId</a></code> | <code>string</code> | The application ID. |
-| <code><a href="#@cdktf/provider-okta.dataOktaAppMetadataSaml.DataOktaAppMetadataSamlConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/data-sources/app_metadata_saml#id DataOktaAppMetadataSaml#id}. |
+| <code><a href="#@cdktf/provider-okta.dataOktaAppMetadataSaml.DataOktaAppMetadataSamlConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/data-sources/app_metadata_saml#id DataOktaAppMetadataSaml#id}. |
 | <code><a href="#@cdktf/provider-okta.dataOktaAppMetadataSaml.DataOktaAppMetadataSamlConfig.property.keyId">keyId</a></code> | <code>string</code> | Certificate Key ID. |
 
 ---
@@ -786,7 +786,7 @@ public readonly appId: string;
 
 The application ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/data-sources/app_metadata_saml#app_id DataOktaAppMetadataSaml#app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/data-sources/app_metadata_saml#app_id DataOktaAppMetadataSaml#app_id}
 
 ---
 
@@ -798,7 +798,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/data-sources/app_metadata_saml#id DataOktaAppMetadataSaml#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/data-sources/app_metadata_saml#id DataOktaAppMetadataSaml#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -815,7 +815,7 @@ public readonly keyId: string;
 
 Certificate Key ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/data-sources/app_metadata_saml#key_id DataOktaAppMetadataSaml#key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/data-sources/app_metadata_saml#key_id DataOktaAppMetadataSaml#key_id}
 
 ---
 

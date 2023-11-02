@@ -1,6 +1,6 @@
 # `okta_email_sender`
 
-Refer to the Terraform Registory for docs: [`okta_email_sender`](https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/email_sender).
+Refer to the Terraform Registory for docs: [`okta_email_sender`](https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/email_sender).
 
 # `emailSender` Submodule <a name="`emailSender` Submodule" id="@cdktf/provider-okta.emailSender"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_email_sender`](https://registr
 
 ### EmailSender <a name="EmailSender" id="@cdktf/provider-okta.emailSender.EmailSender"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/email_sender okta_email_sender}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/email_sender okta_email_sender}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.emailSender.EmailSender.Initializer"></a>
 
@@ -46,7 +46,7 @@ emailSender.EmailSender(
 | <code><a href="#@cdktf/provider-okta.emailSender.EmailSender.Initializer.parameter.fromAddress">from_address</a></code> | <code>str</code> | Email address to send from. |
 | <code><a href="#@cdktf/provider-okta.emailSender.EmailSender.Initializer.parameter.fromName">from_name</a></code> | <code>str</code> | Name of sender. |
 | <code><a href="#@cdktf/provider-okta.emailSender.EmailSender.Initializer.parameter.subdomain">subdomain</a></code> | <code>str</code> | Mail domain to send from. |
-| <code><a href="#@cdktf/provider-okta.emailSender.EmailSender.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/email_sender#id EmailSender#id}. |
+| <code><a href="#@cdktf/provider-okta.emailSender.EmailSender.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/email_sender#id EmailSender#id}. |
 
 ---
 
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 Email address to send from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/email_sender#from_address EmailSender#from_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/email_sender#from_address EmailSender#from_address}
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Name of sender.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/email_sender#from_name EmailSender#from_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/email_sender#from_name EmailSender#from_name}
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Mail domain to send from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/email_sender#subdomain EmailSender#subdomain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/email_sender#subdomain EmailSender#subdomain}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/email_sender#id EmailSender#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/email_sender#id EmailSender#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -573,7 +573,7 @@ The construct id used in the generated config for the EmailSender to import.
 
 The id of the existing EmailSender that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/email_sender#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/email_sender#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -914,7 +914,7 @@ emailSender.EmailSenderConfig(
 | <code><a href="#@cdktf/provider-okta.emailSender.EmailSenderConfig.property.fromAddress">from_address</a></code> | <code>str</code> | Email address to send from. |
 | <code><a href="#@cdktf/provider-okta.emailSender.EmailSenderConfig.property.fromName">from_name</a></code> | <code>str</code> | Name of sender. |
 | <code><a href="#@cdktf/provider-okta.emailSender.EmailSenderConfig.property.subdomain">subdomain</a></code> | <code>str</code> | Mail domain to send from. |
-| <code><a href="#@cdktf/provider-okta.emailSender.EmailSenderConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/email_sender#id EmailSender#id}. |
+| <code><a href="#@cdktf/provider-okta.emailSender.EmailSenderConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/email_sender#id EmailSender#id}. |
 
 ---
 
@@ -998,7 +998,7 @@ from_address: str
 
 Email address to send from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/email_sender#from_address EmailSender#from_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/email_sender#from_address EmailSender#from_address}
 
 ---
 
@@ -1012,7 +1012,7 @@ from_name: str
 
 Name of sender.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/email_sender#from_name EmailSender#from_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/email_sender#from_name EmailSender#from_name}
 
 ---
 
@@ -1026,7 +1026,7 @@ subdomain: str
 
 Mail domain to send from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/email_sender#subdomain EmailSender#subdomain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/email_sender#subdomain EmailSender#subdomain}
 
 ---
 
@@ -1038,7 +1038,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/email_sender#id EmailSender#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/email_sender#id EmailSender#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

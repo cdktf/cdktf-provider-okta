@@ -1,6 +1,6 @@
 # `okta_user`
 
-Refer to the Terraform Registory for docs: [`okta_user`](https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/user).
+Refer to the Terraform Registory for docs: [`okta_user`](https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/user).
 
 # `user` Submodule <a name="`user` Submodule" id="@cdktf/provider-okta.user"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_user`](https://registry.terraf
 
 ### User <a name="User" id="@cdktf/provider-okta.user.User"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/user okta_user}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/user okta_user}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.user.User.Initializer"></a>
 
@@ -707,7 +707,7 @@ The construct id used in the generated config for the User to import.
 
 The id of the existing User that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/user#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/user#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1896,7 +1896,7 @@ const userConfig: user.UserConfig = { ... }
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.expirePasswordOnCreate">expirePasswordOnCreate</a></code> | <code>boolean \| cdktf.IResolvable</code> | If set to `true`, the user will have to change the password at the next login. |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.honorificPrefix">honorificPrefix</a></code> | <code>string</code> | User honorific prefix. |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.honorificSuffix">honorificSuffix</a></code> | <code>string</code> | User honorific suffix. |
-| <code><a href="#@cdktf/provider-okta.user.UserConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/user#id User#id}. |
+| <code><a href="#@cdktf/provider-okta.user.UserConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/user#id User#id}. |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.locale">locale</a></code> | <code>string</code> | User default location. |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.manager">manager</a></code> | <code>string</code> | Manager of User. |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.managerId">managerId</a></code> | <code>string</code> | Manager ID of User. |
@@ -2006,7 +2006,7 @@ public readonly email: string;
 
 User primary email address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/user#email User#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/user#email User#email}
 
 ---
 
@@ -2020,7 +2020,7 @@ public readonly firstName: string;
 
 User first name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/user#first_name User#first_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/user#first_name User#first_name}
 
 ---
 
@@ -2034,7 +2034,7 @@ public readonly lastName: string;
 
 User last name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/user#last_name User#last_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/user#last_name User#last_name}
 
 ---
 
@@ -2048,7 +2048,7 @@ public readonly login: string;
 
 User Okta login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/user#login User#login}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/user#login User#login}
 
 ---
 
@@ -2062,7 +2062,7 @@ public readonly city: string;
 
 User city.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/user#city User#city}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/user#city User#city}
 
 ---
 
@@ -2076,7 +2076,7 @@ public readonly costCenter: string;
 
 User cost center.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/user#cost_center User#cost_center}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/user#cost_center User#cost_center}
 
 ---
 
@@ -2090,7 +2090,7 @@ public readonly countryCode: string;
 
 User country code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/user#country_code User#country_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/user#country_code User#country_code}
 
 ---
 
@@ -2104,7 +2104,7 @@ public readonly customProfileAttributes: string;
 
 JSON formatted custom attributes for a user. It must be JSON due to various types Okta allows.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/user#custom_profile_attributes User#custom_profile_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/user#custom_profile_attributes User#custom_profile_attributes}
 
 ---
 
@@ -2118,7 +2118,7 @@ public readonly customProfileAttributesToIgnore: string[];
 
 List of custom_profile_attribute keys that should be excluded from being managed by Terraform.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/user#custom_profile_attributes_to_ignore User#custom_profile_attributes_to_ignore}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/user#custom_profile_attributes_to_ignore User#custom_profile_attributes_to_ignore}
 
 ---
 
@@ -2132,7 +2132,7 @@ public readonly department: string;
 
 User department.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/user#department User#department}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/user#department User#department}
 
 ---
 
@@ -2146,7 +2146,7 @@ public readonly displayName: string;
 
 User display name, suitable to show end users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/user#display_name User#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/user#display_name User#display_name}
 
 ---
 
@@ -2160,7 +2160,7 @@ public readonly division: string;
 
 User division.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/user#division User#division}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/user#division User#division}
 
 ---
 
@@ -2174,7 +2174,7 @@ public readonly employeeNumber: string;
 
 User employee number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/user#employee_number User#employee_number}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/user#employee_number User#employee_number}
 
 ---
 
@@ -2190,7 +2190,7 @@ If set to `true`, the user will have to change the password at the next login.
 
 This property will be used when user is being created and works only when `password` field is set
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/user#expire_password_on_create User#expire_password_on_create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/user#expire_password_on_create User#expire_password_on_create}
 
 ---
 
@@ -2204,7 +2204,7 @@ public readonly honorificPrefix: string;
 
 User honorific prefix.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/user#honorific_prefix User#honorific_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/user#honorific_prefix User#honorific_prefix}
 
 ---
 
@@ -2218,7 +2218,7 @@ public readonly honorificSuffix: string;
 
 User honorific suffix.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/user#honorific_suffix User#honorific_suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/user#honorific_suffix User#honorific_suffix}
 
 ---
 
@@ -2230,7 +2230,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/user#id User#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/user#id User#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2247,7 +2247,7 @@ public readonly locale: string;
 
 User default location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/user#locale User#locale}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/user#locale User#locale}
 
 ---
 
@@ -2261,7 +2261,7 @@ public readonly manager: string;
 
 Manager of User.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/user#manager User#manager}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/user#manager User#manager}
 
 ---
 
@@ -2275,7 +2275,7 @@ public readonly managerId: string;
 
 Manager ID of User.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/user#manager_id User#manager_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/user#manager_id User#manager_id}
 
 ---
 
@@ -2289,7 +2289,7 @@ public readonly middleName: string;
 
 User middle name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/user#middle_name User#middle_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/user#middle_name User#middle_name}
 
 ---
 
@@ -2303,7 +2303,7 @@ public readonly mobilePhone: string;
 
 User mobile phone number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/user#mobile_phone User#mobile_phone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/user#mobile_phone User#mobile_phone}
 
 ---
 
@@ -2317,7 +2317,7 @@ public readonly nickName: string;
 
 User nickname.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/user#nick_name User#nick_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/user#nick_name User#nick_name}
 
 ---
 
@@ -2331,7 +2331,7 @@ public readonly oldPassword: string;
 
 Old User Password. Should be only set in case the password was not changed using the provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/user#old_password User#old_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/user#old_password User#old_password}
 
 ---
 
@@ -2345,7 +2345,7 @@ public readonly organization: string;
 
 User organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/user#organization User#organization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/user#organization User#organization}
 
 ---
 
@@ -2359,7 +2359,7 @@ public readonly password: string;
 
 User Password.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/user#password User#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/user#password User#password}
 
 ---
 
@@ -2373,7 +2373,7 @@ public readonly passwordHash: UserPasswordHash;
 
 password_hash block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/user#password_hash User#password_hash}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/user#password_hash User#password_hash}
 
 ---
 
@@ -2387,7 +2387,7 @@ public readonly passwordInlineHook: string;
 
 When specified, the Password Inline Hook is triggered to handle verification of the end user's password the first time the user tries to sign in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/user#password_inline_hook User#password_inline_hook}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/user#password_inline_hook User#password_inline_hook}
 
 ---
 
@@ -2401,7 +2401,7 @@ public readonly postalAddress: string;
 
 User mailing address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/user#postal_address User#postal_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/user#postal_address User#postal_address}
 
 ---
 
@@ -2415,7 +2415,7 @@ public readonly preferredLanguage: string;
 
 User preferred language.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/user#preferred_language User#preferred_language}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/user#preferred_language User#preferred_language}
 
 ---
 
@@ -2429,7 +2429,7 @@ public readonly primaryPhone: string;
 
 User primary phone number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/user#primary_phone User#primary_phone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/user#primary_phone User#primary_phone}
 
 ---
 
@@ -2443,7 +2443,7 @@ public readonly profileUrl: string;
 
 User online profile (web page).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/user#profile_url User#profile_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/user#profile_url User#profile_url}
 
 ---
 
@@ -2457,7 +2457,7 @@ public readonly recoveryAnswer: string;
 
 User Password Recovery Answer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/user#recovery_answer User#recovery_answer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/user#recovery_answer User#recovery_answer}
 
 ---
 
@@ -2471,7 +2471,7 @@ public readonly recoveryQuestion: string;
 
 User Password Recovery Question.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/user#recovery_question User#recovery_question}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/user#recovery_question User#recovery_question}
 
 ---
 
@@ -2485,7 +2485,7 @@ public readonly secondEmail: string;
 
 User secondary email address, used for account recovery.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/user#second_email User#second_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/user#second_email User#second_email}
 
 ---
 
@@ -2499,7 +2499,7 @@ public readonly skipRoles: boolean | IResolvable;
 
 Do not populate user roles information (prevents additional API call).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/user#skip_roles User#skip_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/user#skip_roles User#skip_roles}
 
 ---
 
@@ -2513,7 +2513,7 @@ public readonly state: string;
 
 User state or region.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/user#state User#state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/user#state User#state}
 
 ---
 
@@ -2527,7 +2527,7 @@ public readonly status: string;
 
 The status of the User in Okta - remove to set user back to active/provisioned.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/user#status User#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/user#status User#status}
 
 ---
 
@@ -2541,7 +2541,7 @@ public readonly streetAddress: string;
 
 User street address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/user#street_address User#street_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/user#street_address User#street_address}
 
 ---
 
@@ -2555,7 +2555,7 @@ public readonly timezone: string;
 
 User default timezone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/user#timezone User#timezone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/user#timezone User#timezone}
 
 ---
 
@@ -2569,7 +2569,7 @@ public readonly title: string;
 
 User title.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/user#title User#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/user#title User#title}
 
 ---
 
@@ -2583,7 +2583,7 @@ public readonly userType: string;
 
 User employee type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/user#user_type User#user_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/user#user_type User#user_type}
 
 ---
 
@@ -2597,7 +2597,7 @@ public readonly zipCode: string;
 
 User zipcode or postal code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/user#zip_code User#zip_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/user#zip_code User#zip_code}
 
 ---
 
@@ -2633,7 +2633,7 @@ public readonly algorithm: string;
 
 The algorithm used to generate the hash using the password.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/user#algorithm User#algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/user#algorithm User#algorithm}
 
 ---
 
@@ -2649,7 +2649,7 @@ For SHA-512, SHA-256, SHA-1, MD5, This is the actual base64-encoded hash of the 
 
 This is the Base64 encoded value of the SHA-512/SHA-256/SHA-1/MD5 digest that was computed by either pre-fixing or post-fixing the salt to the password, depending on the saltOrder. If a salt was not used in the source system, then this should just be the the Base64 encoded value of the password's SHA-512/SHA-256/SHA-1/MD5 digest. For BCRYPT, This is the actual radix64-encoded hashed password.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/user#value User#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/user#value User#value}
 
 ---
 
@@ -2663,7 +2663,7 @@ public readonly salt: string;
 
 Only required for salted hashes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/user#salt User#salt}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/user#salt User#salt}
 
 ---
 
@@ -2677,7 +2677,7 @@ public readonly saltOrder: string;
 
 Specifies whether salt was pre- or postfixed to the password before hashing.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/user#salt_order User#salt_order}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/user#salt_order User#salt_order}
 
 ---
 
@@ -2691,7 +2691,7 @@ public readonly workFactor: number;
 
 Governs the strength of the hash and the time required to compute it. Only required for BCRYPT algorithm.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/user#work_factor User#work_factor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/user#work_factor User#work_factor}
 
 ---
 

@@ -1,6 +1,6 @@
 # `data_okta_auth_server_scopes`
 
-Refer to the Terraform Registory for docs: [`data_okta_auth_server_scopes`](https://registry.terraform.io/providers/okta/okta/4.5.0/docs/data-sources/auth_server_scopes).
+Refer to the Terraform Registory for docs: [`data_okta_auth_server_scopes`](https://registry.terraform.io/providers/okta/okta/4.6.0/docs/data-sources/auth_server_scopes).
 
 # `dataOktaAuthServerScopes` Submodule <a name="`dataOktaAuthServerScopes` Submodule" id="@cdktf/provider-okta.dataOktaAuthServerScopes"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_okta_auth_server_scopes`](http
 
 ### DataOktaAuthServerScopes <a name="DataOktaAuthServerScopes" id="@cdktf/provider-okta.dataOktaAuthServerScopes.DataOktaAuthServerScopes"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/data-sources/auth_server_scopes okta_auth_server_scopes}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/data-sources/auth_server_scopes okta_auth_server_scopes}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaAuthServerScopes.DataOktaAuthServerScopes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktaauthserverscopes"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaauthserverscopes"
 
 dataoktaauthserverscopes.NewDataOktaAuthServerScopes(scope Construct, id *string, config DataOktaAuthServerScopesConfig) DataOktaAuthServerScopes
 ```
@@ -278,7 +278,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.dataOktaAuthServerScopes.DataOktaAuthServerScopes.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktaauthserverscopes"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaauthserverscopes"
 
 dataoktaauthserverscopes.DataOktaAuthServerScopes_IsConstruct(x interface{}) *bool
 ```
@@ -310,7 +310,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.dataOktaAuthServerScopes.DataOktaAuthServerScopes.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktaauthserverscopes"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaauthserverscopes"
 
 dataoktaauthserverscopes.DataOktaAuthServerScopes_IsTerraformElement(x interface{}) *bool
 ```
@@ -324,7 +324,7 @@ dataoktaauthserverscopes.DataOktaAuthServerScopes_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-okta.dataOktaAuthServerScopes.DataOktaAuthServerScopes.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktaauthserverscopes"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaauthserverscopes"
 
 dataoktaauthserverscopes.DataOktaAuthServerScopes_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,7 +338,7 @@ dataoktaauthserverscopes.DataOktaAuthServerScopes_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.dataOktaAuthServerScopes.DataOktaAuthServerScopes.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktaauthserverscopes"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaauthserverscopes"
 
 dataoktaauthserverscopes.DataOktaAuthServerScopes_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -367,7 +367,7 @@ The construct id used in the generated config for the DataOktaAuthServerScopes t
 
 The id of the existing DataOktaAuthServerScopes that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/data-sources/auth_server_scopes#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/data-sources/auth_server_scopes#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -600,7 +600,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaAuthServerScopes.DataOktaAuthServerScopesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktaauthserverscopes"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaauthserverscopes"
 
 &dataoktaauthserverscopes.DataOktaAuthServerScopesConfig {
 	Connection: interface{},
@@ -627,7 +627,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktaauthserverscope
 | <code><a href="#@cdktf/provider-okta.dataOktaAuthServerScopes.DataOktaAuthServerScopesConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaAuthServerScopes.DataOktaAuthServerScopesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaAuthServerScopes.DataOktaAuthServerScopesConfig.property.authServerId">AuthServerId</a></code> | <code>*string</code> | Auth server ID. |
-| <code><a href="#@cdktf/provider-okta.dataOktaAuthServerScopes.DataOktaAuthServerScopesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/data-sources/auth_server_scopes#id DataOktaAuthServerScopes#id}. |
+| <code><a href="#@cdktf/provider-okta.dataOktaAuthServerScopes.DataOktaAuthServerScopesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/data-sources/auth_server_scopes#id DataOktaAuthServerScopes#id}. |
 
 ---
 
@@ -711,7 +711,7 @@ AuthServerId *string
 
 Auth server ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/data-sources/auth_server_scopes#auth_server_id DataOktaAuthServerScopes#auth_server_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/data-sources/auth_server_scopes#auth_server_id DataOktaAuthServerScopes#auth_server_id}
 
 ---
 
@@ -723,7 +723,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/data-sources/auth_server_scopes#id DataOktaAuthServerScopes#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/data-sources/auth_server_scopes#id DataOktaAuthServerScopes#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -735,7 +735,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaAuthServerScopes.DataOktaAuthServerScopesScopes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktaauthserverscopes"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaauthserverscopes"
 
 &dataoktaauthserverscopes.DataOktaAuthServerScopesScopes {
 
@@ -750,7 +750,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktaauthserverscope
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaAuthServerScopes.DataOktaAuthServerScopesScopesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktaauthserverscopes"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaauthserverscopes"
 
 dataoktaauthserverscopes.NewDataOktaAuthServerScopesScopesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOktaAuthServerScopesScopesList
 ```
@@ -882,7 +882,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaAuthServerScopes.DataOktaAuthServerScopesScopesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktaauthserverscopes"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaauthserverscopes"
 
 dataoktaauthserverscopes.NewDataOktaAuthServerScopesScopesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataOktaAuthServerScopesScopesOutputReference
 ```

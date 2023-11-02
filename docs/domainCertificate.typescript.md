@@ -1,6 +1,6 @@
 # `okta_domain_certificate`
 
-Refer to the Terraform Registory for docs: [`okta_domain_certificate`](https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/domain_certificate).
+Refer to the Terraform Registory for docs: [`okta_domain_certificate`](https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/domain_certificate).
 
 # `domainCertificate` Submodule <a name="`domainCertificate` Submodule" id="@cdktf/provider-okta.domainCertificate"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_domain_certificate`](https://r
 
 ### DomainCertificate <a name="DomainCertificate" id="@cdktf/provider-okta.domainCertificate.DomainCertificate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/domain_certificate okta_domain_certificate}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/domain_certificate okta_domain_certificate}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.domainCertificate.DomainCertificate.Initializer"></a>
 
@@ -435,7 +435,7 @@ The construct id used in the generated config for the DomainCertificate to impor
 
 The id of the existing DomainCertificate that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/domain_certificate#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/domain_certificate#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -787,7 +787,7 @@ const domainCertificateConfig: domainCertificate.DomainCertificateConfig = { ...
 | <code><a href="#@cdktf/provider-okta.domainCertificate.DomainCertificateConfig.property.certificateChain">certificateChain</a></code> | <code>string</code> | Certificate chain. |
 | <code><a href="#@cdktf/provider-okta.domainCertificate.DomainCertificateConfig.property.domainId">domainId</a></code> | <code>string</code> | Domain's ID. |
 | <code><a href="#@cdktf/provider-okta.domainCertificate.DomainCertificateConfig.property.privateKey">privateKey</a></code> | <code>string</code> | Certificate private key. |
-| <code><a href="#@cdktf/provider-okta.domainCertificate.DomainCertificateConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/domain_certificate#id DomainCertificate#id}. |
+| <code><a href="#@cdktf/provider-okta.domainCertificate.DomainCertificateConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/domain_certificate#id DomainCertificate#id}. |
 | <code><a href="#@cdktf/provider-okta.domainCertificate.DomainCertificateConfig.property.type">type</a></code> | <code>string</code> | Certificate type. |
 
 ---
@@ -872,7 +872,7 @@ public readonly certificate: string;
 
 Certificate content.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/domain_certificate#certificate DomainCertificate#certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/domain_certificate#certificate DomainCertificate#certificate}
 
 ---
 
@@ -886,7 +886,7 @@ public readonly certificateChain: string;
 
 Certificate chain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/domain_certificate#certificate_chain DomainCertificate#certificate_chain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/domain_certificate#certificate_chain DomainCertificate#certificate_chain}
 
 ---
 
@@ -900,7 +900,7 @@ public readonly domainId: string;
 
 Domain's ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/domain_certificate#domain_id DomainCertificate#domain_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/domain_certificate#domain_id DomainCertificate#domain_id}
 
 ---
 
@@ -914,7 +914,7 @@ public readonly privateKey: string;
 
 Certificate private key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/domain_certificate#private_key DomainCertificate#private_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/domain_certificate#private_key DomainCertificate#private_key}
 
 ---
 
@@ -926,7 +926,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/domain_certificate#id DomainCertificate#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/domain_certificate#id DomainCertificate#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -943,7 +943,7 @@ public readonly type: string;
 
 Certificate type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/domain_certificate#type DomainCertificate#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/domain_certificate#type DomainCertificate#type}
 
 ---
 

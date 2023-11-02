@@ -1,6 +1,6 @@
 # `okta_policy_signon`
 
-Refer to the Terraform Registory for docs: [`okta_policy_signon`](https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/policy_signon).
+Refer to the Terraform Registory for docs: [`okta_policy_signon`](https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/policy_signon).
 
 # `policySignon` Submodule <a name="`policySignon` Submodule" id="@cdktf/provider-okta.policySignon"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_policy_signon`](https://regist
 
 ### PolicySignon <a name="PolicySignon" id="@cdktf/provider-okta.policySignon.PolicySignon"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/policy_signon okta_policy_signon}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/policy_signon okta_policy_signon}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.policySignon.PolicySignon.Initializer"></a>
 
@@ -456,7 +456,7 @@ The construct id used in the generated config for the PolicySignon to import.
 
 The id of the existing PolicySignon that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/policy_signon#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/policy_signon#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -807,7 +807,7 @@ const policySignonConfig: policySignon.PolicySignonConfig = { ... }
 | <code><a href="#@cdktf/provider-okta.policySignon.PolicySignonConfig.property.name">name</a></code> | <code>string</code> | Policy Name. |
 | <code><a href="#@cdktf/provider-okta.policySignon.PolicySignonConfig.property.description">description</a></code> | <code>string</code> | Policy Description. |
 | <code><a href="#@cdktf/provider-okta.policySignon.PolicySignonConfig.property.groupsIncluded">groupsIncluded</a></code> | <code>string[]</code> | List of Group IDs to Include. |
-| <code><a href="#@cdktf/provider-okta.policySignon.PolicySignonConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/policy_signon#id PolicySignon#id}. |
+| <code><a href="#@cdktf/provider-okta.policySignon.PolicySignonConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/policy_signon#id PolicySignon#id}. |
 | <code><a href="#@cdktf/provider-okta.policySignon.PolicySignonConfig.property.priority">priority</a></code> | <code>number</code> | Policy Priority, this attribute can be set to a valid priority. |
 | <code><a href="#@cdktf/provider-okta.policySignon.PolicySignonConfig.property.status">status</a></code> | <code>string</code> | Policy Status: ACTIVE or INACTIVE. |
 
@@ -893,7 +893,7 @@ public readonly name: string;
 
 Policy Name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/policy_signon#name PolicySignon#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/policy_signon#name PolicySignon#name}
 
 ---
 
@@ -907,7 +907,7 @@ public readonly description: string;
 
 Policy Description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/policy_signon#description PolicySignon#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/policy_signon#description PolicySignon#description}
 
 ---
 
@@ -921,7 +921,7 @@ public readonly groupsIncluded: string[];
 
 List of Group IDs to Include.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/policy_signon#groups_included PolicySignon#groups_included}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/policy_signon#groups_included PolicySignon#groups_included}
 
 ---
 
@@ -933,7 +933,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/policy_signon#id PolicySignon#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/policy_signon#id PolicySignon#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -952,7 +952,7 @@ Policy Priority, this attribute can be set to a valid priority.
 
 To avoid endless diff situation we error if an invalid priority is provided. API defaults it to the last (lowest) if not there.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/policy_signon#priority PolicySignon#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/policy_signon#priority PolicySignon#priority}
 
 ---
 
@@ -966,7 +966,7 @@ public readonly status: string;
 
 Policy Status: ACTIVE or INACTIVE.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/policy_signon#status PolicySignon#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/policy_signon#status PolicySignon#status}
 
 ---
 

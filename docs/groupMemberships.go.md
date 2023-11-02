@@ -1,6 +1,6 @@
 # `okta_group_memberships`
 
-Refer to the Terraform Registory for docs: [`okta_group_memberships`](https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/group_memberships).
+Refer to the Terraform Registory for docs: [`okta_group_memberships`](https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/group_memberships).
 
 # `groupMemberships` Submodule <a name="`groupMemberships` Submodule" id="@cdktf/provider-okta.groupMemberships"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`okta_group_memberships`](https://re
 
 ### GroupMemberships <a name="GroupMemberships" id="@cdktf/provider-okta.groupMemberships.GroupMemberships"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/group_memberships okta_group_memberships}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/group_memberships okta_group_memberships}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.groupMemberships.GroupMemberships.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/groupmemberships"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/groupmemberships"
 
 groupmemberships.NewGroupMemberships(scope Construct, id *string, config GroupMembershipsConfig) GroupMemberships
 ```
@@ -346,7 +346,7 @@ func ResetTrackAllUsers()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.groupMemberships.GroupMemberships.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/groupmemberships"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/groupmemberships"
 
 groupmemberships.GroupMemberships_IsConstruct(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.groupMemberships.GroupMemberships.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/groupmemberships"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/groupmemberships"
 
 groupmemberships.GroupMemberships_IsTerraformElement(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ groupmemberships.GroupMemberships_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.groupMemberships.GroupMemberships.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/groupmemberships"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/groupmemberships"
 
 groupmemberships.GroupMemberships_IsTerraformResource(x interface{}) *bool
 ```
@@ -406,7 +406,7 @@ groupmemberships.GroupMemberships_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.groupMemberships.GroupMemberships.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/groupmemberships"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/groupmemberships"
 
 groupmemberships.GroupMemberships_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -435,7 +435,7 @@ The construct id used in the generated config for the GroupMemberships to import
 
 The id of the existing GroupMemberships that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/group_memberships#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/group_memberships#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -723,7 +723,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.groupMemberships.GroupMembershipsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/groupmemberships"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/groupmemberships"
 
 &groupmemberships.GroupMembershipsConfig {
 	Connection: interface{},
@@ -753,7 +753,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/groupmemberships"
 | <code><a href="#@cdktf/provider-okta.groupMemberships.GroupMembershipsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupMemberships.GroupMembershipsConfig.property.groupId">GroupId</a></code> | <code>*string</code> | ID of a Okta group. |
 | <code><a href="#@cdktf/provider-okta.groupMemberships.GroupMembershipsConfig.property.users">Users</a></code> | <code>*[]*string</code> | The list of Okta user IDs which the group should have membership managed for. |
-| <code><a href="#@cdktf/provider-okta.groupMemberships.GroupMembershipsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/group_memberships#id GroupMemberships#id}. |
+| <code><a href="#@cdktf/provider-okta.groupMemberships.GroupMembershipsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/group_memberships#id GroupMemberships#id}. |
 | <code><a href="#@cdktf/provider-okta.groupMemberships.GroupMembershipsConfig.property.trackAllUsers">TrackAllUsers</a></code> | <code>interface{}</code> | The resource concerns itself with all users added/deleted to the group; even those managed outside of the resource. |
 
 ---
@@ -838,7 +838,7 @@ GroupId *string
 
 ID of a Okta group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/group_memberships#group_id GroupMemberships#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/group_memberships#group_id GroupMemberships#group_id}
 
 ---
 
@@ -852,7 +852,7 @@ Users *[]*string
 
 The list of Okta user IDs which the group should have membership managed for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/group_memberships#users GroupMemberships#users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/group_memberships#users GroupMemberships#users}
 
 ---
 
@@ -864,7 +864,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/group_memberships#id GroupMemberships#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/group_memberships#id GroupMemberships#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -881,7 +881,7 @@ TrackAllUsers interface{}
 
 The resource concerns itself with all users added/deleted to the group; even those managed outside of the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/group_memberships#track_all_users GroupMemberships#track_all_users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/group_memberships#track_all_users GroupMemberships#track_all_users}
 
 ---
 

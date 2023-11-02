@@ -1,6 +1,6 @@
 # `okta_app_oauth_post_logout_redirect_uri`
 
-Refer to the Terraform Registory for docs: [`okta_app_oauth_post_logout_redirect_uri`](https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/app_oauth_post_logout_redirect_uri).
+Refer to the Terraform Registory for docs: [`okta_app_oauth_post_logout_redirect_uri`](https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/app_oauth_post_logout_redirect_uri).
 
 # `appOauthPostLogoutRedirectUri` Submodule <a name="`appOauthPostLogoutRedirectUri` Submodule" id="@cdktf/provider-okta.appOauthPostLogoutRedirectUri"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_app_oauth_post_logout_redirect
 
 ### AppOauthPostLogoutRedirectUri <a name="AppOauthPostLogoutRedirectUri" id="@cdktf/provider-okta.appOauthPostLogoutRedirectUri.AppOauthPostLogoutRedirectUri"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/app_oauth_post_logout_redirect_uri okta_app_oauth_post_logout_redirect_uri}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/app_oauth_post_logout_redirect_uri okta_app_oauth_post_logout_redirect_uri}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appOauthPostLogoutRedirectUri.AppOauthPostLogoutRedirectUri.Initializer"></a>
 
@@ -428,7 +428,7 @@ The construct id used in the generated config for the AppOauthPostLogoutRedirect
 
 The id of the existing AppOauthPostLogoutRedirectUri that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/app_oauth_post_logout_redirect_uri#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/app_oauth_post_logout_redirect_uri#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -723,7 +723,7 @@ new AppOauthPostLogoutRedirectUriConfig {
 | <code><a href="#@cdktf/provider-okta.appOauthPostLogoutRedirectUri.AppOauthPostLogoutRedirectUriConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauthPostLogoutRedirectUri.AppOauthPostLogoutRedirectUriConfig.property.appId">AppId</a></code> | <code>string</code> | OAuth application ID. |
 | <code><a href="#@cdktf/provider-okta.appOauthPostLogoutRedirectUri.AppOauthPostLogoutRedirectUriConfig.property.uri">Uri</a></code> | <code>string</code> | Post Logout Redirect URI to append to Okta OIDC application. |
-| <code><a href="#@cdktf/provider-okta.appOauthPostLogoutRedirectUri.AppOauthPostLogoutRedirectUriConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/app_oauth_post_logout_redirect_uri#id AppOauthPostLogoutRedirectUri#id}. |
+| <code><a href="#@cdktf/provider-okta.appOauthPostLogoutRedirectUri.AppOauthPostLogoutRedirectUriConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/app_oauth_post_logout_redirect_uri#id AppOauthPostLogoutRedirectUri#id}. |
 
 ---
 
@@ -807,7 +807,7 @@ public string AppId { get; set; }
 
 OAuth application ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/app_oauth_post_logout_redirect_uri#app_id AppOauthPostLogoutRedirectUri#app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/app_oauth_post_logout_redirect_uri#app_id AppOauthPostLogoutRedirectUri#app_id}
 
 ---
 
@@ -821,7 +821,7 @@ public string Uri { get; set; }
 
 Post Logout Redirect URI to append to Okta OIDC application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/app_oauth_post_logout_redirect_uri#uri AppOauthPostLogoutRedirectUri#uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/app_oauth_post_logout_redirect_uri#uri AppOauthPostLogoutRedirectUri#uri}
 
 ---
 
@@ -833,7 +833,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/resources/app_oauth_post_logout_redirect_uri#id AppOauthPostLogoutRedirectUri#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/app_oauth_post_logout_redirect_uri#id AppOauthPostLogoutRedirectUri#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

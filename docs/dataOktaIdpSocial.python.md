@@ -1,6 +1,6 @@
 # `data_okta_idp_social`
 
-Refer to the Terraform Registory for docs: [`data_okta_idp_social`](https://registry.terraform.io/providers/okta/okta/4.5.0/docs/data-sources/idp_social).
+Refer to the Terraform Registory for docs: [`data_okta_idp_social`](https://registry.terraform.io/providers/okta/okta/4.6.0/docs/data-sources/idp_social).
 
 # `dataOktaIdpSocial` Submodule <a name="`dataOktaIdpSocial` Submodule" id="@cdktf/provider-okta.dataOktaIdpSocial"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_okta_idp_social`](https://regi
 
 ### DataOktaIdpSocial <a name="DataOktaIdpSocial" id="@cdktf/provider-okta.dataOktaIdpSocial.DataOktaIdpSocial"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/data-sources/idp_social okta_idp_social}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/data-sources/idp_social okta_idp_social}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaIdpSocial.DataOktaIdpSocial.Initializer"></a>
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 The id of the social idp to retrieve, conflicts with `name`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/data-sources/idp_social#id DataOktaIdpSocial#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/data-sources/idp_social#id DataOktaIdpSocial#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -125,7 +125,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The name of the social idp to retrieve, conflicts with `id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/data-sources/idp_social#name DataOktaIdpSocial#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/data-sources/idp_social#name DataOktaIdpSocial#name}
 
 ---
 
@@ -489,7 +489,7 @@ The construct id used in the generated config for the DataOktaIdpSocial to impor
 
 The id of the existing DataOktaIdpSocial that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/data-sources/idp_social#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/data-sources/idp_social#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1097,7 +1097,7 @@ id: str
 
 The id of the social idp to retrieve, conflicts with `name`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/data-sources/idp_social#id DataOktaIdpSocial#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/data-sources/idp_social#id DataOktaIdpSocial#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1114,7 +1114,7 @@ name: str
 
 The name of the social idp to retrieve, conflicts with `id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.5.0/docs/data-sources/idp_social#name DataOktaIdpSocial#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/data-sources/idp_social#name DataOktaIdpSocial#name}
 
 ---
 
