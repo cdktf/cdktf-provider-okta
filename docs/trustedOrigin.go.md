@@ -1,6 +1,6 @@
 # `okta_trusted_origin`
 
-Refer to the Terraform Registory for docs: [`okta_trusted_origin`](https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/trusted_origin).
+Refer to the Terraform Registory for docs: [`okta_trusted_origin`](https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/trusted_origin).
 
 # `trustedOrigin` Submodule <a name="`trustedOrigin` Submodule" id="@cdktf/provider-okta.trustedOrigin"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`okta_trusted_origin`](https://regis
 
 ### TrustedOrigin <a name="TrustedOrigin" id="@cdktf/provider-okta.trustedOrigin.TrustedOrigin"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/trusted_origin okta_trusted_origin}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/trusted_origin okta_trusted_origin}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.trustedOrigin.TrustedOrigin.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/trustedorigin"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/trustedorigin"
 
 trustedorigin.NewTrustedOrigin(scope Construct, id *string, config TrustedOriginConfig) TrustedOrigin
 ```
@@ -346,7 +346,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.trustedOrigin.TrustedOrigin.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/trustedorigin"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/trustedorigin"
 
 trustedorigin.TrustedOrigin_IsConstruct(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.trustedOrigin.TrustedOrigin.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/trustedorigin"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/trustedorigin"
 
 trustedorigin.TrustedOrigin_IsTerraformElement(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ trustedorigin.TrustedOrigin_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.trustedOrigin.TrustedOrigin.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/trustedorigin"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/trustedorigin"
 
 trustedorigin.TrustedOrigin_IsTerraformResource(x interface{}) *bool
 ```
@@ -406,7 +406,7 @@ trustedorigin.TrustedOrigin_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.trustedOrigin.TrustedOrigin.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/trustedorigin"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/trustedorigin"
 
 trustedorigin.TrustedOrigin_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -435,7 +435,7 @@ The construct id used in the generated config for the TrustedOrigin to import.
 
 The id of the existing TrustedOrigin that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/trusted_origin#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/trusted_origin#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -745,7 +745,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.trustedOrigin.TrustedOriginConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/trustedorigin"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/trustedorigin"
 
 &trustedorigin.TrustedOriginConfig {
 	Connection: interface{},
@@ -778,7 +778,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/trustedorigin"
 | <code><a href="#@cdktf/provider-okta.trustedOrigin.TrustedOriginConfig.property.origin">Origin</a></code> | <code>*string</code> | Unique origin URL for this trusted origin. |
 | <code><a href="#@cdktf/provider-okta.trustedOrigin.TrustedOriginConfig.property.scopes">Scopes</a></code> | <code>*[]*string</code> | Scopes of the Trusted Origin - can either be CORS or REDIRECT only. |
 | <code><a href="#@cdktf/provider-okta.trustedOrigin.TrustedOriginConfig.property.active">Active</a></code> | <code>interface{}</code> | Whether the Trusted Origin is active or not - can only be issued post-creation. |
-| <code><a href="#@cdktf/provider-okta.trustedOrigin.TrustedOriginConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/trusted_origin#id TrustedOrigin#id}. |
+| <code><a href="#@cdktf/provider-okta.trustedOrigin.TrustedOriginConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/trusted_origin#id TrustedOrigin#id}. |
 
 ---
 
@@ -862,7 +862,7 @@ Name *string
 
 Unique name for this trusted origin.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/trusted_origin#name TrustedOrigin#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/trusted_origin#name TrustedOrigin#name}
 
 ---
 
@@ -876,7 +876,7 @@ Origin *string
 
 Unique origin URL for this trusted origin.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/trusted_origin#origin TrustedOrigin#origin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/trusted_origin#origin TrustedOrigin#origin}
 
 ---
 
@@ -890,7 +890,7 @@ Scopes *[]*string
 
 Scopes of the Trusted Origin - can either be CORS or REDIRECT only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/trusted_origin#scopes TrustedOrigin#scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/trusted_origin#scopes TrustedOrigin#scopes}
 
 ---
 
@@ -904,7 +904,7 @@ Active interface{}
 
 Whether the Trusted Origin is active or not - can only be issued post-creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/trusted_origin#active TrustedOrigin#active}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/trusted_origin#active TrustedOrigin#active}
 
 ---
 
@@ -916,7 +916,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/trusted_origin#id TrustedOrigin#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/trusted_origin#id TrustedOrigin#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

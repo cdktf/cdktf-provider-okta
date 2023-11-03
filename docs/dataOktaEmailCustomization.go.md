@@ -1,6 +1,6 @@
 # `data_okta_email_customization`
 
-Refer to the Terraform Registory for docs: [`data_okta_email_customization`](https://registry.terraform.io/providers/okta/okta/4.6.0/docs/data-sources/email_customization).
+Refer to the Terraform Registory for docs: [`data_okta_email_customization`](https://registry.terraform.io/providers/okta/okta/4.6.1/docs/data-sources/email_customization).
 
 # `dataOktaEmailCustomization` Submodule <a name="`dataOktaEmailCustomization` Submodule" id="@cdktf/provider-okta.dataOktaEmailCustomization"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_okta_email_customization`](htt
 
 ### DataOktaEmailCustomization <a name="DataOktaEmailCustomization" id="@cdktf/provider-okta.dataOktaEmailCustomization.DataOktaEmailCustomization"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/data-sources/email_customization okta_email_customization}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/data-sources/email_customization okta_email_customization}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaEmailCustomization.DataOktaEmailCustomization.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktaemailcustomization"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaemailcustomization"
 
 dataoktaemailcustomization.NewDataOktaEmailCustomization(scope Construct, id *string, config DataOktaEmailCustomizationConfig) DataOktaEmailCustomization
 ```
@@ -271,7 +271,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.dataOktaEmailCustomization.DataOktaEmailCustomization.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktaemailcustomization"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaemailcustomization"
 
 dataoktaemailcustomization.DataOktaEmailCustomization_IsConstruct(x interface{}) *bool
 ```
@@ -303,7 +303,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.dataOktaEmailCustomization.DataOktaEmailCustomization.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktaemailcustomization"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaemailcustomization"
 
 dataoktaemailcustomization.DataOktaEmailCustomization_IsTerraformElement(x interface{}) *bool
 ```
@@ -317,7 +317,7 @@ dataoktaemailcustomization.DataOktaEmailCustomization_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-okta.dataOktaEmailCustomization.DataOktaEmailCustomization.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktaemailcustomization"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaemailcustomization"
 
 dataoktaemailcustomization.DataOktaEmailCustomization_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -331,7 +331,7 @@ dataoktaemailcustomization.DataOktaEmailCustomization_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.dataOktaEmailCustomization.DataOktaEmailCustomization.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktaemailcustomization"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaemailcustomization"
 
 dataoktaemailcustomization.DataOktaEmailCustomization_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -360,7 +360,7 @@ The construct id used in the generated config for the DataOktaEmailCustomization
 
 The id of the existing DataOktaEmailCustomization that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/data-sources/email_customization#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/data-sources/email_customization#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -670,7 +670,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaEmailCustomization.DataOktaEmailCustomizationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktaemailcustomization"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaemailcustomization"
 
 &dataoktaemailcustomization.DataOktaEmailCustomizationConfig {
 	Connection: interface{},
@@ -783,7 +783,7 @@ BrandId *string
 
 Brand ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/data-sources/email_customization#brand_id DataOktaEmailCustomization#brand_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/data-sources/email_customization#brand_id DataOktaEmailCustomization#brand_id}
 
 ---
 
@@ -797,7 +797,7 @@ CustomizationId *string
 
 The ID of the customization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/data-sources/email_customization#customization_id DataOktaEmailCustomization#customization_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/data-sources/email_customization#customization_id DataOktaEmailCustomization#customization_id}
 
 ---
 
@@ -811,7 +811,7 @@ TemplateName *string
 
 Template Name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/data-sources/email_customization#template_name DataOktaEmailCustomization#template_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/data-sources/email_customization#template_name DataOktaEmailCustomization#template_name}
 
 ---
 

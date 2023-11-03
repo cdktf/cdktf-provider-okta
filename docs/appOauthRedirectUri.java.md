@@ -1,6 +1,6 @@
 # `okta_app_oauth_redirect_uri`
 
-Refer to the Terraform Registory for docs: [`okta_app_oauth_redirect_uri`](https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/app_oauth_redirect_uri).
+Refer to the Terraform Registory for docs: [`okta_app_oauth_redirect_uri`](https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/app_oauth_redirect_uri).
 
 # `appOauthRedirectUri` Submodule <a name="`appOauthRedirectUri` Submodule" id="@cdktf/provider-okta.appOauthRedirectUri"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_app_oauth_redirect_uri`](https
 
 ### AppOauthRedirectUri <a name="AppOauthRedirectUri" id="@cdktf/provider-okta.appOauthRedirectUri.AppOauthRedirectUri"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/app_oauth_redirect_uri okta_app_oauth_redirect_uri}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/app_oauth_redirect_uri okta_app_oauth_redirect_uri}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appOauthRedirectUri.AppOauthRedirectUri.Initializer"></a>
 
@@ -46,7 +46,7 @@ AppOauthRedirectUri.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-okta.appOauthRedirectUri.AppOauthRedirectUri.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauthRedirectUri.AppOauthRedirectUri.Initializer.parameter.appId">appId</a></code> | <code>java.lang.String</code> | OAuth application ID. |
 | <code><a href="#@cdktf/provider-okta.appOauthRedirectUri.AppOauthRedirectUri.Initializer.parameter.uri">uri</a></code> | <code>java.lang.String</code> | Redirect URI to append to Okta OIDC application. |
-| <code><a href="#@cdktf/provider-okta.appOauthRedirectUri.AppOauthRedirectUri.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/app_oauth_redirect_uri#id AppOauthRedirectUri#id}. |
+| <code><a href="#@cdktf/provider-okta.appOauthRedirectUri.AppOauthRedirectUri.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/app_oauth_redirect_uri#id AppOauthRedirectUri#id}. |
 
 ---
 
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 OAuth application ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/app_oauth_redirect_uri#app_id AppOauthRedirectUri#app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/app_oauth_redirect_uri#app_id AppOauthRedirectUri#app_id}
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Redirect URI to append to Okta OIDC application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/app_oauth_redirect_uri#uri AppOauthRedirectUri#uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/app_oauth_redirect_uri#uri AppOauthRedirectUri#uri}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/app_oauth_redirect_uri#id AppOauthRedirectUri#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/app_oauth_redirect_uri#id AppOauthRedirectUri#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -521,7 +521,7 @@ The construct id used in the generated config for the AppOauthRedirectUri to imp
 
 The id of the existing AppOauthRedirectUri that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/app_oauth_redirect_uri#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/app_oauth_redirect_uri#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -820,7 +820,7 @@ AppOauthRedirectUriConfig.builder()
 | <code><a href="#@cdktf/provider-okta.appOauthRedirectUri.AppOauthRedirectUriConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauthRedirectUri.AppOauthRedirectUriConfig.property.appId">appId</a></code> | <code>java.lang.String</code> | OAuth application ID. |
 | <code><a href="#@cdktf/provider-okta.appOauthRedirectUri.AppOauthRedirectUriConfig.property.uri">uri</a></code> | <code>java.lang.String</code> | Redirect URI to append to Okta OIDC application. |
-| <code><a href="#@cdktf/provider-okta.appOauthRedirectUri.AppOauthRedirectUriConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/app_oauth_redirect_uri#id AppOauthRedirectUri#id}. |
+| <code><a href="#@cdktf/provider-okta.appOauthRedirectUri.AppOauthRedirectUriConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/app_oauth_redirect_uri#id AppOauthRedirectUri#id}. |
 
 ---
 
@@ -904,7 +904,7 @@ public java.lang.String getAppId();
 
 OAuth application ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/app_oauth_redirect_uri#app_id AppOauthRedirectUri#app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/app_oauth_redirect_uri#app_id AppOauthRedirectUri#app_id}
 
 ---
 
@@ -918,7 +918,7 @@ public java.lang.String getUri();
 
 Redirect URI to append to Okta OIDC application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/app_oauth_redirect_uri#uri AppOauthRedirectUri#uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/app_oauth_redirect_uri#uri AppOauthRedirectUri#uri}
 
 ---
 
@@ -930,7 +930,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/app_oauth_redirect_uri#id AppOauthRedirectUri#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/app_oauth_redirect_uri#id AppOauthRedirectUri#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

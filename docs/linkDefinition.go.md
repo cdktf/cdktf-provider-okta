@@ -1,6 +1,6 @@
 # `okta_link_definition`
 
-Refer to the Terraform Registory for docs: [`okta_link_definition`](https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/link_definition).
+Refer to the Terraform Registory for docs: [`okta_link_definition`](https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/link_definition).
 
 # `linkDefinition` Submodule <a name="`linkDefinition` Submodule" id="@cdktf/provider-okta.linkDefinition"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`okta_link_definition`](https://regi
 
 ### LinkDefinition <a name="LinkDefinition" id="@cdktf/provider-okta.linkDefinition.LinkDefinition"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/link_definition okta_link_definition}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/link_definition okta_link_definition}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.linkDefinition.LinkDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/linkdefinition"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/linkdefinition"
 
 linkdefinition.NewLinkDefinition(scope Construct, id *string, config LinkDefinitionConfig) LinkDefinition
 ```
@@ -339,7 +339,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.linkDefinition.LinkDefinition.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/linkdefinition"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/linkdefinition"
 
 linkdefinition.LinkDefinition_IsConstruct(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.linkDefinition.LinkDefinition.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/linkdefinition"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/linkdefinition"
 
 linkdefinition.LinkDefinition_IsTerraformElement(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ linkdefinition.LinkDefinition_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.linkDefinition.LinkDefinition.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/linkdefinition"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/linkdefinition"
 
 linkdefinition.LinkDefinition_IsTerraformResource(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ linkdefinition.LinkDefinition_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.linkDefinition.LinkDefinition.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/linkdefinition"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/linkdefinition"
 
 linkdefinition.LinkDefinition_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -428,7 +428,7 @@ The construct id used in the generated config for the LinkDefinition to import.
 
 The id of the existing LinkDefinition that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/link_definition#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/link_definition#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -782,7 +782,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.linkDefinition.LinkDefinitionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/linkdefinition"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/linkdefinition"
 
 &linkdefinition.LinkDefinitionConfig {
 	Connection: interface{},
@@ -819,7 +819,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/linkdefinition"
 | <code><a href="#@cdktf/provider-okta.linkDefinition.LinkDefinitionConfig.property.primaryDescription">PrimaryDescription</a></code> | <code>*string</code> | Description of the primary relationship. |
 | <code><a href="#@cdktf/provider-okta.linkDefinition.LinkDefinitionConfig.property.primaryName">PrimaryName</a></code> | <code>*string</code> | API name of the primary link. |
 | <code><a href="#@cdktf/provider-okta.linkDefinition.LinkDefinitionConfig.property.primaryTitle">PrimaryTitle</a></code> | <code>*string</code> | Display name of the primary link. |
-| <code><a href="#@cdktf/provider-okta.linkDefinition.LinkDefinitionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/link_definition#id LinkDefinition#id}. |
+| <code><a href="#@cdktf/provider-okta.linkDefinition.LinkDefinitionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/link_definition#id LinkDefinition#id}. |
 
 ---
 
@@ -903,7 +903,7 @@ AssociatedDescription *string
 
 Description of the associated relationship.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/link_definition#associated_description LinkDefinition#associated_description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/link_definition#associated_description LinkDefinition#associated_description}
 
 ---
 
@@ -917,7 +917,7 @@ AssociatedName *string
 
 API name of the associated link.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/link_definition#associated_name LinkDefinition#associated_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/link_definition#associated_name LinkDefinition#associated_name}
 
 ---
 
@@ -931,7 +931,7 @@ AssociatedTitle *string
 
 Display name of the associated link.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/link_definition#associated_title LinkDefinition#associated_title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/link_definition#associated_title LinkDefinition#associated_title}
 
 ---
 
@@ -945,7 +945,7 @@ PrimaryDescription *string
 
 Description of the primary relationship.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/link_definition#primary_description LinkDefinition#primary_description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/link_definition#primary_description LinkDefinition#primary_description}
 
 ---
 
@@ -959,7 +959,7 @@ PrimaryName *string
 
 API name of the primary link.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/link_definition#primary_name LinkDefinition#primary_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/link_definition#primary_name LinkDefinition#primary_name}
 
 ---
 
@@ -973,7 +973,7 @@ PrimaryTitle *string
 
 Display name of the primary link.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/link_definition#primary_title LinkDefinition#primary_title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/link_definition#primary_title LinkDefinition#primary_title}
 
 ---
 
@@ -985,7 +985,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/link_definition#id LinkDefinition#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/link_definition#id LinkDefinition#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

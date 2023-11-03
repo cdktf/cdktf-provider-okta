@@ -1,6 +1,6 @@
 # `okta_app_group_assignment`
 
-Refer to the Terraform Registory for docs: [`okta_app_group_assignment`](https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/app_group_assignment).
+Refer to the Terraform Registory for docs: [`okta_app_group_assignment`](https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/app_group_assignment).
 
 # `appGroupAssignment` Submodule <a name="`appGroupAssignment` Submodule" id="@cdktf/provider-okta.appGroupAssignment"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_app_group_assignment`](https:/
 
 ### AppGroupAssignment <a name="AppGroupAssignment" id="@cdktf/provider-okta.appGroupAssignment.AppGroupAssignment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/app_group_assignment okta_app_group_assignment}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/app_group_assignment okta_app_group_assignment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appGroupAssignment.AppGroupAssignment.Initializer"></a>
 
@@ -469,7 +469,7 @@ The construct id used in the generated config for the AppGroupAssignment to impo
 
 The id of the existing AppGroupAssignment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/app_group_assignment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/app_group_assignment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -856,7 +856,7 @@ new AppGroupAssignmentConfig {
 | <code><a href="#@cdktf/provider-okta.appGroupAssignment.AppGroupAssignmentConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appGroupAssignment.AppGroupAssignmentConfig.property.appId">AppId</a></code> | <code>string</code> | App to associate group with. |
 | <code><a href="#@cdktf/provider-okta.appGroupAssignment.AppGroupAssignmentConfig.property.groupId">GroupId</a></code> | <code>string</code> | Group associated with the application. |
-| <code><a href="#@cdktf/provider-okta.appGroupAssignment.AppGroupAssignmentConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/app_group_assignment#id AppGroupAssignment#id}. |
+| <code><a href="#@cdktf/provider-okta.appGroupAssignment.AppGroupAssignmentConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/app_group_assignment#id AppGroupAssignment#id}. |
 | <code><a href="#@cdktf/provider-okta.appGroupAssignment.AppGroupAssignmentConfig.property.priority">Priority</a></code> | <code>double</code> | Priority of group assignment. |
 | <code><a href="#@cdktf/provider-okta.appGroupAssignment.AppGroupAssignmentConfig.property.profile">Profile</a></code> | <code>string</code> | JSON document containing [application profile](https://developer.okta.com/docs/reference/api/apps/#profile-object). |
 | <code><a href="#@cdktf/provider-okta.appGroupAssignment.AppGroupAssignmentConfig.property.retainAssignment">RetainAssignment</a></code> | <code>object</code> | Retain the group assignment on destroy. |
@@ -944,7 +944,7 @@ public string AppId { get; set; }
 
 App to associate group with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/app_group_assignment#app_id AppGroupAssignment#app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/app_group_assignment#app_id AppGroupAssignment#app_id}
 
 ---
 
@@ -958,7 +958,7 @@ public string GroupId { get; set; }
 
 Group associated with the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/app_group_assignment#group_id AppGroupAssignment#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/app_group_assignment#group_id AppGroupAssignment#group_id}
 
 ---
 
@@ -970,7 +970,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/app_group_assignment#id AppGroupAssignment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/app_group_assignment#id AppGroupAssignment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -987,7 +987,7 @@ public double Priority { get; set; }
 
 Priority of group assignment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/app_group_assignment#priority AppGroupAssignment#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/app_group_assignment#priority AppGroupAssignment#priority}
 
 ---
 
@@ -1001,7 +1001,7 @@ public string Profile { get; set; }
 
 JSON document containing [application profile](https://developer.okta.com/docs/reference/api/apps/#profile-object).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/app_group_assignment#profile AppGroupAssignment#profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/app_group_assignment#profile AppGroupAssignment#profile}
 
 ---
 
@@ -1017,7 +1017,7 @@ Retain the group assignment on destroy.
 
 If set to true, the resource will be removed from state but not from the Okta app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/app_group_assignment#retain_assignment AppGroupAssignment#retain_assignment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/app_group_assignment#retain_assignment AppGroupAssignment#retain_assignment}
 
 ---
 
@@ -1031,7 +1031,7 @@ public AppGroupAssignmentTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/app_group_assignment#timeouts AppGroupAssignment#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/app_group_assignment#timeouts AppGroupAssignment#timeouts}
 
 ---
 
@@ -1053,9 +1053,9 @@ new AppGroupAssignmentTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.appGroupAssignment.AppGroupAssignmentTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/app_group_assignment#create AppGroupAssignment#create}. |
-| <code><a href="#@cdktf/provider-okta.appGroupAssignment.AppGroupAssignmentTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/app_group_assignment#read AppGroupAssignment#read}. |
-| <code><a href="#@cdktf/provider-okta.appGroupAssignment.AppGroupAssignmentTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/app_group_assignment#update AppGroupAssignment#update}. |
+| <code><a href="#@cdktf/provider-okta.appGroupAssignment.AppGroupAssignmentTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/app_group_assignment#create AppGroupAssignment#create}. |
+| <code><a href="#@cdktf/provider-okta.appGroupAssignment.AppGroupAssignmentTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/app_group_assignment#read AppGroupAssignment#read}. |
+| <code><a href="#@cdktf/provider-okta.appGroupAssignment.AppGroupAssignmentTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/app_group_assignment#update AppGroupAssignment#update}. |
 
 ---
 
@@ -1067,7 +1067,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/app_group_assignment#create AppGroupAssignment#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/app_group_assignment#create AppGroupAssignment#create}.
 
 ---
 
@@ -1079,7 +1079,7 @@ public string Read { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/app_group_assignment#read AppGroupAssignment#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/app_group_assignment#read AppGroupAssignment#read}.
 
 ---
 
@@ -1091,7 +1091,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/app_group_assignment#update AppGroupAssignment#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/app_group_assignment#update AppGroupAssignment#update}.
 
 ---
 

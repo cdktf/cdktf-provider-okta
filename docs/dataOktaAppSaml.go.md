@@ -1,6 +1,6 @@
 # `data_okta_app_saml`
 
-Refer to the Terraform Registory for docs: [`data_okta_app_saml`](https://registry.terraform.io/providers/okta/okta/4.6.0/docs/data-sources/app_saml).
+Refer to the Terraform Registory for docs: [`data_okta_app_saml`](https://registry.terraform.io/providers/okta/okta/4.6.1/docs/data-sources/app_saml).
 
 # `dataOktaAppSaml` Submodule <a name="`dataOktaAppSaml` Submodule" id="@cdktf/provider-okta.dataOktaAppSaml"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_okta_app_saml`](https://regist
 
 ### DataOktaAppSaml <a name="DataOktaAppSaml" id="@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSaml"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/data-sources/app_saml okta_app_saml}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/data-sources/app_saml okta_app_saml}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSaml.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktaappsaml"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaappsaml"
 
 dataoktaappsaml.NewDataOktaAppSaml(scope Construct, id *string, config DataOktaAppSamlConfig) DataOktaAppSaml
 ```
@@ -320,7 +320,7 @@ func ResetSkipUsers()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSaml.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktaappsaml"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaappsaml"
 
 dataoktaappsaml.DataOktaAppSaml_IsConstruct(x interface{}) *bool
 ```
@@ -352,7 +352,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSaml.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktaappsaml"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaappsaml"
 
 dataoktaappsaml.DataOktaAppSaml_IsTerraformElement(x interface{}) *bool
 ```
@@ -366,7 +366,7 @@ dataoktaappsaml.DataOktaAppSaml_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSaml.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktaappsaml"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaappsaml"
 
 dataoktaappsaml.DataOktaAppSaml_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -380,7 +380,7 @@ dataoktaappsaml.DataOktaAppSaml_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSaml.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktaappsaml"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaappsaml"
 
 dataoktaappsaml.DataOktaAppSaml_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -409,7 +409,7 @@ The construct id used in the generated config for the DataOktaAppSaml to import.
 
 The id of the existing DataOktaAppSaml that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/data-sources/app_saml#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/data-sources/app_saml#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1181,7 +1181,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSamlAttributeStatements.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktaappsaml"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaappsaml"
 
 &dataoktaappsaml.DataOktaAppSamlAttributeStatements {
 
@@ -1194,7 +1194,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktaappsaml"
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSamlConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktaappsaml"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaappsaml"
 
 &dataoktaappsaml.DataOktaAppSamlConfig {
 	Connection: interface{},
@@ -1315,7 +1315,7 @@ ActiveOnly interface{}
 
 Search only ACTIVE applications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/data-sources/app_saml#active_only DataOktaAppSaml#active_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/data-sources/app_saml#active_only DataOktaAppSaml#active_only}
 
 ---
 
@@ -1329,7 +1329,7 @@ Id *string
 
 Id of application to retrieve, conflicts with label and label_prefix.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/data-sources/app_saml#id DataOktaAppSaml#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/data-sources/app_saml#id DataOktaAppSaml#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1350,7 +1350,7 @@ Label
 uses the ?q=<label> query parameter exposed by Okta's API. It should be noted that at this time
 this searches both name and label. This is used to avoid paginating through all applications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/data-sources/app_saml#label DataOktaAppSaml#label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/data-sources/app_saml#label DataOktaAppSaml#label}
 
 ---
 
@@ -1367,7 +1367,7 @@ Label prefix of the app to retrieve, conflicts with label and id.
 This will tell the
 provider to do a starts with query as opposed to an equals query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/data-sources/app_saml#label_prefix DataOktaAppSaml#label_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/data-sources/app_saml#label_prefix DataOktaAppSaml#label_prefix}
 
 ---
 
@@ -1381,7 +1381,7 @@ RequestCompressed interface{}
 
 Denotes whether the request is compressed or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/data-sources/app_saml#request_compressed DataOktaAppSaml#request_compressed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/data-sources/app_saml#request_compressed DataOktaAppSaml#request_compressed}
 
 ---
 
@@ -1395,7 +1395,7 @@ SkipGroups interface{}
 
 Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/data-sources/app_saml#skip_groups DataOktaAppSaml#skip_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/data-sources/app_saml#skip_groups DataOktaAppSaml#skip_groups}
 
 ---
 
@@ -1409,7 +1409,7 @@ SkipUsers interface{}
 
 Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/data-sources/app_saml#skip_users DataOktaAppSaml#skip_users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/data-sources/app_saml#skip_users DataOktaAppSaml#skip_users}
 
 ---
 
@@ -1420,7 +1420,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSamlAttributeStatementsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktaappsaml"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaappsaml"
 
 dataoktaappsaml.NewDataOktaAppSamlAttributeStatementsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOktaAppSamlAttributeStatementsList
 ```
@@ -1552,7 +1552,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSamlAttributeStatementsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktaappsaml"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaappsaml"
 
 dataoktaappsaml.NewDataOktaAppSamlAttributeStatementsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataOktaAppSamlAttributeStatementsOutputReference
 ```

@@ -1,6 +1,6 @@
 # `okta_template_sms`
 
-Refer to the Terraform Registory for docs: [`okta_template_sms`](https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/template_sms).
+Refer to the Terraform Registory for docs: [`okta_template_sms`](https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/template_sms).
 
 # `templateSms` Submodule <a name="`templateSms` Submodule" id="@cdktf/provider-okta.templateSms"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`okta_template_sms`](https://registr
 
 ### TemplateSms <a name="TemplateSms" id="@cdktf/provider-okta.templateSms.TemplateSms"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/template_sms okta_template_sms}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/template_sms okta_template_sms}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.templateSms.TemplateSms.Initializer"></a>
 
@@ -448,7 +448,7 @@ The construct id used in the generated config for the TemplateSms to import.
 
 The id of the existing TemplateSms that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/template_sms#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/template_sms#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -754,7 +754,7 @@ const templateSmsConfig: templateSms.TemplateSmsConfig = { ... }
 | <code><a href="#@cdktf/provider-okta.templateSms.TemplateSmsConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.templateSms.TemplateSmsConfig.property.template">template</a></code> | <code>string</code> | SMS default template. |
 | <code><a href="#@cdktf/provider-okta.templateSms.TemplateSmsConfig.property.type">type</a></code> | <code>string</code> | SMS template type. |
-| <code><a href="#@cdktf/provider-okta.templateSms.TemplateSmsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/template_sms#id TemplateSms#id}. |
+| <code><a href="#@cdktf/provider-okta.templateSms.TemplateSmsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/template_sms#id TemplateSms#id}. |
 | <code><a href="#@cdktf/provider-okta.templateSms.TemplateSmsConfig.property.translations">translations</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-okta.templateSms.TemplateSmsTranslations">TemplateSmsTranslations</a>[]</code> | translations block. |
 
 ---
@@ -839,7 +839,7 @@ public readonly template: string;
 
 SMS default template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/template_sms#template TemplateSms#template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/template_sms#template TemplateSms#template}
 
 ---
 
@@ -853,7 +853,7 @@ public readonly type: string;
 
 SMS template type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/template_sms#type TemplateSms#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/template_sms#type TemplateSms#type}
 
 ---
 
@@ -865,7 +865,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/template_sms#id TemplateSms#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/template_sms#id TemplateSms#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -882,7 +882,7 @@ public readonly translations: IResolvable | TemplateSmsTranslations[];
 
 translations block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/template_sms#translations TemplateSms#translations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/template_sms#translations TemplateSms#translations}
 
 ---
 
@@ -900,8 +900,8 @@ const templateSmsTranslations: templateSms.TemplateSmsTranslations = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.templateSms.TemplateSmsTranslations.property.language">language</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/template_sms#language TemplateSms#language}. |
-| <code><a href="#@cdktf/provider-okta.templateSms.TemplateSmsTranslations.property.template">template</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/template_sms#template TemplateSms#template}. |
+| <code><a href="#@cdktf/provider-okta.templateSms.TemplateSmsTranslations.property.language">language</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/template_sms#language TemplateSms#language}. |
+| <code><a href="#@cdktf/provider-okta.templateSms.TemplateSmsTranslations.property.template">template</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/template_sms#template TemplateSms#template}. |
 
 ---
 
@@ -913,7 +913,7 @@ public readonly language: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/template_sms#language TemplateSms#language}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/template_sms#language TemplateSms#language}.
 
 ---
 
@@ -925,7 +925,7 @@ public readonly template: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/resources/template_sms#template TemplateSms#template}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/template_sms#template TemplateSms#template}.
 
 ---
 

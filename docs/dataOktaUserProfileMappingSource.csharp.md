@@ -1,6 +1,6 @@
 # `data_okta_user_profile_mapping_source`
 
-Refer to the Terraform Registory for docs: [`data_okta_user_profile_mapping_source`](https://registry.terraform.io/providers/okta/okta/4.6.0/docs/data-sources/user_profile_mapping_source).
+Refer to the Terraform Registory for docs: [`data_okta_user_profile_mapping_source`](https://registry.terraform.io/providers/okta/okta/4.6.1/docs/data-sources/user_profile_mapping_source).
 
 # `dataOktaUserProfileMappingSource` Submodule <a name="`dataOktaUserProfileMappingSource` Submodule" id="@cdktf/provider-okta.dataOktaUserProfileMappingSource"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_okta_user_profile_mapping_sour
 
 ### DataOktaUserProfileMappingSource <a name="DataOktaUserProfileMappingSource" id="@cdktf/provider-okta.dataOktaUserProfileMappingSource.DataOktaUserProfileMappingSource"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/data-sources/user_profile_mapping_source okta_user_profile_mapping_source}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/data-sources/user_profile_mapping_source okta_user_profile_mapping_source}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaUserProfileMappingSource.DataOktaUserProfileMappingSource.Initializer"></a>
 
@@ -360,7 +360,7 @@ The construct id used in the generated config for the DataOktaUserProfileMapping
 
 The id of the existing DataOktaUserProfileMappingSource that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/data-sources/user_profile_mapping_source#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/data-sources/user_profile_mapping_source#import import section} in the documentation of this resource for the id to use
 
 ---
 

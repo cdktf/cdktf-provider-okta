@@ -1,6 +1,6 @@
 # `data_okta_behavior`
 
-Refer to the Terraform Registory for docs: [`data_okta_behavior`](https://registry.terraform.io/providers/okta/okta/4.6.0/docs/data-sources/behavior).
+Refer to the Terraform Registory for docs: [`data_okta_behavior`](https://registry.terraform.io/providers/okta/okta/4.6.1/docs/data-sources/behavior).
 
 # `dataOktaBehavior` Submodule <a name="`dataOktaBehavior` Submodule" id="@cdktf/provider-okta.dataOktaBehavior"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_okta_behavior`](https://regist
 
 ### DataOktaBehavior <a name="DataOktaBehavior" id="@cdktf/provider-okta.dataOktaBehavior.DataOktaBehavior"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/data-sources/behavior okta_behavior}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/data-sources/behavior okta_behavior}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaBehavior.DataOktaBehavior.Initializer"></a>
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 Behavior ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/data-sources/behavior#id DataOktaBehavior#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/data-sources/behavior#id DataOktaBehavior#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -125,7 +125,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Behavior name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/data-sources/behavior#name DataOktaBehavior#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/data-sources/behavior#name DataOktaBehavior#name}
 
 ---
 
@@ -489,7 +489,7 @@ The construct id used in the generated config for the DataOktaBehavior to import
 
 The id of the existing DataOktaBehavior that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/data-sources/behavior#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/data-sources/behavior#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -855,7 +855,7 @@ id: str
 
 Behavior ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/data-sources/behavior#id DataOktaBehavior#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/data-sources/behavior#id DataOktaBehavior#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -872,7 +872,7 @@ name: str
 
 Behavior name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/data-sources/behavior#name DataOktaBehavior#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/data-sources/behavior#name DataOktaBehavior#name}
 
 ---
 

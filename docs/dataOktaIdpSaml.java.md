@@ -1,6 +1,6 @@
 # `data_okta_idp_saml`
 
-Refer to the Terraform Registory for docs: [`data_okta_idp_saml`](https://registry.terraform.io/providers/okta/okta/4.6.0/docs/data-sources/idp_saml).
+Refer to the Terraform Registory for docs: [`data_okta_idp_saml`](https://registry.terraform.io/providers/okta/okta/4.6.1/docs/data-sources/idp_saml).
 
 # `dataOktaIdpSaml` Submodule <a name="`dataOktaIdpSaml` Submodule" id="@cdktf/provider-okta.dataOktaIdpSaml"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_okta_idp_saml`](https://regist
 
 ### DataOktaIdpSaml <a name="DataOktaIdpSaml" id="@cdktf/provider-okta.dataOktaIdpSaml.DataOktaIdpSaml"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/data-sources/idp_saml okta_idp_saml}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/data-sources/idp_saml okta_idp_saml}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaIdpSaml.DataOktaIdpSaml.Initializer"></a>
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 Id of idp.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/data-sources/idp_saml#id DataOktaIdpSaml#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/data-sources/idp_saml#id DataOktaIdpSaml#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -127,7 +127,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Name of the idp.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/data-sources/idp_saml#name DataOktaIdpSaml#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/data-sources/idp_saml#name DataOktaIdpSaml#name}
 
 ---
 
@@ -455,7 +455,7 @@ The construct id used in the generated config for the DataOktaIdpSaml to import.
 
 The id of the existing DataOktaIdpSaml that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/data-sources/idp_saml#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/data-sources/idp_saml#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -924,7 +924,7 @@ public java.lang.String getId();
 
 Id of idp.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/data-sources/idp_saml#id DataOktaIdpSaml#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/data-sources/idp_saml#id DataOktaIdpSaml#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -941,7 +941,7 @@ public java.lang.String getName();
 
 Name of the idp.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.0/docs/data-sources/idp_saml#name DataOktaIdpSaml#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/data-sources/idp_saml#name DataOktaIdpSaml#name}
 
 ---
 
