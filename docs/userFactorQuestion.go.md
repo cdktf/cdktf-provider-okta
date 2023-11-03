@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.userFactorQuestion.UserFactorQuestion.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/userfactorquestion"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/userfactorquestion"
 
 userfactorquestion.NewUserFactorQuestion(scope Construct, id *string, config UserFactorQuestionConfig) UserFactorQuestion
 ```
@@ -339,7 +339,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.userFactorQuestion.UserFactorQuestion.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/userfactorquestion"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/userfactorquestion"
 
 userfactorquestion.UserFactorQuestion_IsConstruct(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.userFactorQuestion.UserFactorQuestion.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/userfactorquestion"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/userfactorquestion"
 
 userfactorquestion.UserFactorQuestion_IsTerraformElement(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ userfactorquestion.UserFactorQuestion_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.userFactorQuestion.UserFactorQuestion.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/userfactorquestion"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/userfactorquestion"
 
 userfactorquestion.UserFactorQuestion_IsTerraformResource(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ userfactorquestion.UserFactorQuestion_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.userFactorQuestion.UserFactorQuestion.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/userfactorquestion"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/userfactorquestion"
 
 userfactorquestion.UserFactorQuestion_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -738,7 +738,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.userFactorQuestion.UserFactorQuestionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/userfactorquestion"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/userfactorquestion"
 
 &userfactorquestion.UserFactorQuestionConfig {
 	Connection: interface{},
