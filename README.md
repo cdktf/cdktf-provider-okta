@@ -1,7 +1,9 @@
 
-# Terraform CDK okta Provider ~> 4.0
+# Terraform CDK okta Provider tracks ~> 4.0
 
 This repo builds and publishes the Terraform okta Provider bindings for [CDK for Terraform](https://cdk.tf).
+
+Is based directly on okta 4.6.1
 
 ## Available Packages
 
@@ -61,7 +63,7 @@ This project is explicitly not tracking the Terraform okta Provider version 1:1.
 These are the upstream dependencies:
 
 - [Terraform CDK](https://cdk.tf)
-- [Terraform okta Provider](https://registry.terraform.io/providers/okta/okta/4.0.0)
+- [Terraform okta Provider](https://registry.terraform.io/providers/okta/okta/4.6.1)
     - This links to the minimum version being tracked, you can find the latest released version [in our releases](https://github.com/cdktf/cdktf-provider-okta/releases)
 - [Terraform Engine](https://terraform.io)
 
