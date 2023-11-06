@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.groupMemberships.GroupMemberships.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/groupmemberships"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/groupmemberships"
 
 groupmemberships.NewGroupMemberships(scope Construct, id *string, config GroupMembershipsConfig) GroupMemberships
 ```
@@ -346,7 +346,7 @@ func ResetTrackAllUsers()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.groupMemberships.GroupMemberships.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/groupmemberships"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/groupmemberships"
 
 groupmemberships.GroupMemberships_IsConstruct(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.groupMemberships.GroupMemberships.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/groupmemberships"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/groupmemberships"
 
 groupmemberships.GroupMemberships_IsTerraformElement(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ groupmemberships.GroupMemberships_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.groupMemberships.GroupMemberships.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/groupmemberships"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/groupmemberships"
 
 groupmemberships.GroupMemberships_IsTerraformResource(x interface{}) *bool
 ```
@@ -406,7 +406,7 @@ groupmemberships.GroupMemberships_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.groupMemberships.GroupMemberships.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/groupmemberships"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/groupmemberships"
 
 groupmemberships.GroupMemberships_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -723,7 +723,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.groupMemberships.GroupMembershipsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/groupmemberships"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/groupmemberships"
 
 &groupmemberships.GroupMembershipsConfig {
 	Connection: interface{},
