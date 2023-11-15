@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaBehavior.DataOktaBehavior.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktabehavior"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktabehavior"
 
 dataoktabehavior.NewDataOktaBehavior(scope Construct, id *string, config DataOktaBehaviorConfig) DataOktaBehavior
 ```
@@ -285,7 +285,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.dataOktaBehavior.DataOktaBehavior.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktabehavior"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktabehavior"
 
 dataoktabehavior.DataOktaBehavior_IsConstruct(x interface{}) *bool
 ```
@@ -317,7 +317,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.dataOktaBehavior.DataOktaBehavior.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktabehavior"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktabehavior"
 
 dataoktabehavior.DataOktaBehavior_IsTerraformElement(x interface{}) *bool
 ```
@@ -331,7 +331,7 @@ dataoktabehavior.DataOktaBehavior_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-okta.dataOktaBehavior.DataOktaBehavior.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktabehavior"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktabehavior"
 
 dataoktabehavior.DataOktaBehavior_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -345,7 +345,7 @@ dataoktabehavior.DataOktaBehavior_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.dataOktaBehavior.DataOktaBehavior.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktabehavior"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktabehavior"
 
 dataoktabehavior.DataOktaBehavior_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -629,7 +629,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaBehavior.DataOktaBehaviorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktabehavior"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktabehavior"
 
 &dataoktabehavior.DataOktaBehaviorConfig {
 	Connection: interface{},
