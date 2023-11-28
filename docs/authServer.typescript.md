@@ -1,7 +1,3 @@
-# `okta_auth_server`
-
-Refer to the Terraform Registory for docs: [`okta_auth_server`](https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/auth_server).
-
 # `authServer` Submodule <a name="`authServer` Submodule" id="@cdktf/provider-okta.authServer"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

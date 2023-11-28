@@ -1,7 +1,3 @@
-# `okta_group_schema_property`
-
-Refer to the Terraform Registory for docs: [`okta_group_schema_property`](https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/group_schema_property).
-
 # `groupSchemaProperty` Submodule <a name="`groupSchemaProperty` Submodule" id="@cdktf/provider-okta.groupSchemaProperty"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

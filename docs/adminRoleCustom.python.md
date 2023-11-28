@@ -1,7 +1,3 @@
-# `okta_admin_role_custom`
-
-Refer to the Terraform Registory for docs: [`okta_admin_role_custom`](https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/admin_role_custom).
-
 # `adminRoleCustom` Submodule <a name="`adminRoleCustom` Submodule" id="@cdktf/provider-okta.adminRoleCustom"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `okta_email_domain`
-
-Refer to the Terraform Registory for docs: [`okta_email_domain`](https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/email_domain).
-
 # `emailDomain` Submodule <a name="`emailDomain` Submodule" id="@cdktf/provider-okta.emailDomain"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

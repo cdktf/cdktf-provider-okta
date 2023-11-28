@@ -1,7 +1,3 @@
-# `data_okta_trusted_origins`
-
-Refer to the Terraform Registory for docs: [`data_okta_trusted_origins`](https://registry.terraform.io/providers/okta/okta/4.6.1/docs/data-sources/trusted_origins).
-
 # `dataOktaTrustedOrigins` Submodule <a name="`dataOktaTrustedOrigins` Submodule" id="@cdktf/provider-okta.dataOktaTrustedOrigins"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

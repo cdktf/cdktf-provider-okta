@@ -1,7 +1,3 @@
-# `okta_email_domain_verification`
-
-Refer to the Terraform Registory for docs: [`okta_email_domain_verification`](https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/email_domain_verification).
-
 # `emailDomainVerification` Submodule <a name="`emailDomainVerification` Submodule" id="@cdktf/provider-okta.emailDomainVerification"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

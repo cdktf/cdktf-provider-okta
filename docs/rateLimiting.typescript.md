@@ -1,7 +1,3 @@
-# `okta_rate_limiting`
-
-Refer to the Terraform Registory for docs: [`okta_rate_limiting`](https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/rate_limiting).
-
 # `rateLimiting` Submodule <a name="`rateLimiting` Submodule" id="@cdktf/provider-okta.rateLimiting"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

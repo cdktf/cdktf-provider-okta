@@ -1,7 +1,3 @@
-# `okta_admin_role_custom_assignments`
-
-Refer to the Terraform Registory for docs: [`okta_admin_role_custom_assignments`](https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/admin_role_custom_assignments).
-
 # `adminRoleCustomAssignments` Submodule <a name="`adminRoleCustomAssignments` Submodule" id="@cdktf/provider-okta.adminRoleCustomAssignments"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

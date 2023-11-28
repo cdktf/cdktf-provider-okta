@@ -1,7 +1,3 @@
-# `okta_app_bookmark`
-
-Refer to the Terraform Registory for docs: [`okta_app_bookmark`](https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/app_bookmark).
-
 # `appBookmark` Submodule <a name="`appBookmark` Submodule" id="@cdktf/provider-okta.appBookmark"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

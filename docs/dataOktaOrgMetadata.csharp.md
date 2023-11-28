@@ -1,7 +1,3 @@
-# `data_okta_org_metadata`
-
-Refer to the Terraform Registory for docs: [`data_okta_org_metadata`](https://registry.terraform.io/providers/okta/okta/4.6.1/docs/data-sources/org_metadata).
-
 # `dataOktaOrgMetadata` Submodule <a name="`dataOktaOrgMetadata` Submodule" id="@cdktf/provider-okta.dataOktaOrgMetadata"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
