@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/policyrulesignon"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policyrulesignon"
 
 policyrulesignon.NewPolicyRuleSignon(scope Construct, id *string, config PolicyRuleSignonConfig) PolicyRuleSignon
 ```
@@ -502,7 +502,7 @@ func ResetUsersExcluded()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/policyrulesignon"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policyrulesignon"
 
 policyrulesignon.PolicyRuleSignon_IsConstruct(x interface{}) *bool
 ```
@@ -534,7 +534,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/policyrulesignon"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policyrulesignon"
 
 policyrulesignon.PolicyRuleSignon_IsTerraformElement(x interface{}) *bool
 ```
@@ -548,7 +548,7 @@ policyrulesignon.PolicyRuleSignon_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/policyrulesignon"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policyrulesignon"
 
 policyrulesignon.PolicyRuleSignon_IsTerraformResource(x interface{}) *bool
 ```
@@ -562,7 +562,7 @@ policyrulesignon.PolicyRuleSignon_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/policyrulesignon"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policyrulesignon"
 
 policyrulesignon.PolicyRuleSignon_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1319,7 +1319,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/policyrulesignon"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policyrulesignon"
 
 &policyrulesignon.PolicyRuleSignonConfig {
 	Connection: interface{},
@@ -1808,7 +1808,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequence.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/policyrulesignon"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policyrulesignon"
 
 &policyrulesignon.PolicyRuleSignonFactorSequence {
 	PrimaryCriteriaFactorType: *string,
@@ -1874,7 +1874,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequenceSecondaryCriteria.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/policyrulesignon"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policyrulesignon"
 
 &policyrulesignon.PolicyRuleSignonFactorSequenceSecondaryCriteria {
 	FactorType: *string,
@@ -1926,7 +1926,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequenceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/policyrulesignon"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policyrulesignon"
 
 policyrulesignon.NewPolicyRuleSignonFactorSequenceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PolicyRuleSignonFactorSequenceList
 ```
@@ -2069,7 +2069,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequenceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/policyrulesignon"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policyrulesignon"
 
 policyrulesignon.NewPolicyRuleSignonFactorSequenceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PolicyRuleSignonFactorSequenceOutputReference
 ```
@@ -2422,7 +2422,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequenceSecondaryCriteriaList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/policyrulesignon"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policyrulesignon"
 
 policyrulesignon.NewPolicyRuleSignonFactorSequenceSecondaryCriteriaList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PolicyRuleSignonFactorSequenceSecondaryCriteriaList
 ```
@@ -2565,7 +2565,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequenceSecondaryCriteriaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/policyrulesignon"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policyrulesignon"
 
 policyrulesignon.NewPolicyRuleSignonFactorSequenceSecondaryCriteriaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PolicyRuleSignonFactorSequenceSecondaryCriteriaOutputReference
 ```

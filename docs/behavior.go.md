@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.behavior.Behavior.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/behavior"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/behavior"
 
 behavior.NewBehavior(scope Construct, id *string, config BehaviorConfig) Behavior
 ```
@@ -370,7 +370,7 @@ func ResetVelocity()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.behavior.Behavior.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/behavior"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/behavior"
 
 behavior.Behavior_IsConstruct(x interface{}) *bool
 ```
@@ -402,7 +402,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.behavior.Behavior.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/behavior"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/behavior"
 
 behavior.Behavior_IsTerraformElement(x interface{}) *bool
 ```
@@ -416,7 +416,7 @@ behavior.Behavior_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.behavior.Behavior.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/behavior"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/behavior"
 
 behavior.Behavior_IsTerraformResource(x interface{}) *bool
 ```
@@ -430,7 +430,7 @@ behavior.Behavior_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.behavior.Behavior.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/behavior"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/behavior"
 
 behavior.Behavior_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -835,7 +835,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.behavior.BehaviorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/behavior"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/behavior"
 
 &behavior.BehaviorConfig {
 	Connection: interface{},
