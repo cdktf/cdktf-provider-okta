@@ -1,7 +1,3 @@
-# `okta_admin_role_custom_assignments`
-
-Refer to the Terraform Registory for docs: [`okta_admin_role_custom_assignments`](https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/admin_role_custom_assignments).
-
 # `adminRoleCustomAssignments` Submodule <a name="`adminRoleCustomAssignments` Submodule" id="@cdktf/provider-okta.adminRoleCustomAssignments"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.adminRoleCustomAssignments.AdminRoleCustomAssignments.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/adminrolecustomassignments"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/adminrolecustomassignments"
 
 adminrolecustomassignments.NewAdminRoleCustomAssignments(scope Construct, id *string, config AdminRoleCustomAssignmentsConfig) AdminRoleCustomAssignments
 ```
@@ -346,7 +342,7 @@ func ResetMembers()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.adminRoleCustomAssignments.AdminRoleCustomAssignments.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/adminrolecustomassignments"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/adminrolecustomassignments"
 
 adminrolecustomassignments.AdminRoleCustomAssignments_IsConstruct(x interface{}) *bool
 ```
@@ -378,7 +374,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.adminRoleCustomAssignments.AdminRoleCustomAssignments.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/adminrolecustomassignments"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/adminrolecustomassignments"
 
 adminrolecustomassignments.AdminRoleCustomAssignments_IsTerraformElement(x interface{}) *bool
 ```
@@ -392,7 +388,7 @@ adminrolecustomassignments.AdminRoleCustomAssignments_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.adminRoleCustomAssignments.AdminRoleCustomAssignments.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/adminrolecustomassignments"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/adminrolecustomassignments"
 
 adminrolecustomassignments.AdminRoleCustomAssignments_IsTerraformResource(x interface{}) *bool
 ```
@@ -406,7 +402,7 @@ adminrolecustomassignments.AdminRoleCustomAssignments_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.adminRoleCustomAssignments.AdminRoleCustomAssignments.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/adminrolecustomassignments"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/adminrolecustomassignments"
 
 adminrolecustomassignments.AdminRoleCustomAssignments_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -723,7 +719,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.adminRoleCustomAssignments.AdminRoleCustomAssignmentsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/adminrolecustomassignments"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/adminrolecustomassignments"
 
 &adminrolecustomassignments.AdminRoleCustomAssignmentsConfig {
 	Connection: interface{},

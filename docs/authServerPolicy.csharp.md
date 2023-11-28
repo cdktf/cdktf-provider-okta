@@ -1,7 +1,3 @@
-# `okta_auth_server_policy`
-
-Refer to the Terraform Registory for docs: [`okta_auth_server_policy`](https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/auth_server_policy).
-
 # `authServerPolicy` Submodule <a name="`authServerPolicy` Submodule" id="@cdktf/provider-okta.authServerPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `data_okta_default_policy`
-
-Refer to the Terraform Registory for docs: [`data_okta_default_policy`](https://registry.terraform.io/providers/okta/okta/4.6.1/docs/data-sources/default_policy).
-
 # `dataOktaDefaultPolicy` Submodule <a name="`dataOktaDefaultPolicy` Submodule" id="@cdktf/provider-okta.dataOktaDefaultPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

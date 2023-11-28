@@ -1,7 +1,3 @@
-# `data_okta_auth_server_claims`
-
-Refer to the Terraform Registory for docs: [`data_okta_auth_server_claims`](https://registry.terraform.io/providers/okta/okta/4.6.1/docs/data-sources/auth_server_claims).
-
 # `dataOktaAuthServerClaims` Submodule <a name="`dataOktaAuthServerClaims` Submodule" id="@cdktf/provider-okta.dataOktaAuthServerClaims"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

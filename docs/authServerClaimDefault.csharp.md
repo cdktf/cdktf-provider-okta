@@ -1,7 +1,3 @@
-# `okta_auth_server_claim_default`
-
-Refer to the Terraform Registory for docs: [`okta_auth_server_claim_default`](https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/auth_server_claim_default).
-
 # `authServerClaimDefault` Submodule <a name="`authServerClaimDefault` Submodule" id="@cdktf/provider-okta.authServerClaimDefault"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

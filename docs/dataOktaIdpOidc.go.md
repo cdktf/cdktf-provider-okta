@@ -1,7 +1,3 @@
-# `data_okta_idp_oidc`
-
-Refer to the Terraform Registory for docs: [`data_okta_idp_oidc`](https://registry.terraform.io/providers/okta/okta/4.6.1/docs/data-sources/idp_oidc).
-
 # `dataOktaIdpOidc` Submodule <a name="`dataOktaIdpOidc` Submodule" id="@cdktf/provider-okta.dataOktaIdpOidc"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaIdpOidc.DataOktaIdpOidc.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktaidpoidc"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaidpoidc"
 
 dataoktaidpoidc.NewDataOktaIdpOidc(scope Construct, id *string, config DataOktaIdpOidcConfig) DataOktaIdpOidc
 ```
@@ -285,7 +281,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.dataOktaIdpOidc.DataOktaIdpOidc.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktaidpoidc"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaidpoidc"
 
 dataoktaidpoidc.DataOktaIdpOidc_IsConstruct(x interface{}) *bool
 ```
@@ -317,7 +313,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.dataOktaIdpOidc.DataOktaIdpOidc.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktaidpoidc"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaidpoidc"
 
 dataoktaidpoidc.DataOktaIdpOidc_IsTerraformElement(x interface{}) *bool
 ```
@@ -331,7 +327,7 @@ dataoktaidpoidc.DataOktaIdpOidc_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-okta.dataOktaIdpOidc.DataOktaIdpOidc.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktaidpoidc"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaidpoidc"
 
 dataoktaidpoidc.DataOktaIdpOidc_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -345,7 +341,7 @@ dataoktaidpoidc.DataOktaIdpOidc_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.dataOktaIdpOidc.DataOktaIdpOidc.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktaidpoidc"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaidpoidc"
 
 dataoktaidpoidc.DataOktaIdpOidc_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -772,7 +768,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaIdpOidc.DataOktaIdpOidcConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktaidpoidc"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaidpoidc"
 
 &dataoktaidpoidc.DataOktaIdpOidcConfig {
 	Connection: interface{},

@@ -1,7 +1,3 @@
-# `okta_app_group_assignment`
-
-Refer to the Terraform Registory for docs: [`okta_app_group_assignment`](https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/app_group_assignment).
-
 # `appGroupAssignment` Submodule <a name="`appGroupAssignment` Submodule" id="@cdktf/provider-okta.appGroupAssignment"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

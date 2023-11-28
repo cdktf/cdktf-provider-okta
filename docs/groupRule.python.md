@@ -1,7 +1,3 @@
-# `okta_group_rule`
-
-Refer to the Terraform Registory for docs: [`okta_group_rule`](https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/group_rule).
-
 # `groupRule` Submodule <a name="`groupRule` Submodule" id="@cdktf/provider-okta.groupRule"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

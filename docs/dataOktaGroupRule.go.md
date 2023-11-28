@@ -1,7 +1,3 @@
-# `data_okta_group_rule`
-
-Refer to the Terraform Registory for docs: [`data_okta_group_rule`](https://registry.terraform.io/providers/okta/okta/4.6.1/docs/data-sources/group_rule).
-
 # `dataOktaGroupRule` Submodule <a name="`dataOktaGroupRule` Submodule" id="@cdktf/provider-okta.dataOktaGroupRule"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaGroupRule.DataOktaGroupRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktagrouprule"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktagrouprule"
 
 dataoktagrouprule.NewDataOktaGroupRule(scope Construct, id *string, config DataOktaGroupRuleConfig) DataOktaGroupRule
 ```
@@ -292,7 +288,7 @@ func ResetStatus()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.dataOktaGroupRule.DataOktaGroupRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktagrouprule"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktagrouprule"
 
 dataoktagrouprule.DataOktaGroupRule_IsConstruct(x interface{}) *bool
 ```
@@ -324,7 +320,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.dataOktaGroupRule.DataOktaGroupRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktagrouprule"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktagrouprule"
 
 dataoktagrouprule.DataOktaGroupRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -338,7 +334,7 @@ dataoktagrouprule.DataOktaGroupRule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-okta.dataOktaGroupRule.DataOktaGroupRule.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktagrouprule"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktagrouprule"
 
 dataoktagrouprule.DataOktaGroupRule_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -352,7 +348,7 @@ dataoktagrouprule.DataOktaGroupRule_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.dataOktaGroupRule.DataOktaGroupRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktagrouprule"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktagrouprule"
 
 dataoktagrouprule.DataOktaGroupRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -669,7 +665,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaGroupRule.DataOktaGroupRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktagrouprule"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktagrouprule"
 
 &dataoktagrouprule.DataOktaGroupRuleConfig {
 	Connection: interface{},

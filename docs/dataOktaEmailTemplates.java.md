@@ -1,7 +1,3 @@
-# `data_okta_email_templates`
-
-Refer to the Terraform Registory for docs: [`data_okta_email_templates`](https://registry.terraform.io/providers/okta/okta/4.6.1/docs/data-sources/email_templates).
-
 # `dataOktaEmailTemplates` Submodule <a name="`dataOktaEmailTemplates` Submodule" id="@cdktf/provider-okta.dataOktaEmailTemplates"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

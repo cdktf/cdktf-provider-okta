@@ -1,7 +1,3 @@
-# `data_okta_auth_server_scopes`
-
-Refer to the Terraform Registory for docs: [`data_okta_auth_server_scopes`](https://registry.terraform.io/providers/okta/okta/4.6.1/docs/data-sources/auth_server_scopes).
-
 # `dataOktaAuthServerScopes` Submodule <a name="`dataOktaAuthServerScopes` Submodule" id="@cdktf/provider-okta.dataOktaAuthServerScopes"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

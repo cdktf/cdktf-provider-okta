@@ -1,7 +1,3 @@
-# `okta_theme`
-
-Refer to the Terraform Registory for docs: [`okta_theme`](https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/theme).
-
 # `theme` Submodule <a name="`theme` Submodule" id="@cdktf/provider-okta.theme"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.theme.Theme.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/theme"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/theme"
 
 theme.NewTheme(scope Construct, id *string, config ThemeConfig) Theme
 ```
@@ -416,7 +412,7 @@ func ResetThemeId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.theme.Theme.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/theme"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/theme"
 
 theme.Theme_IsConstruct(x interface{}) *bool
 ```
@@ -448,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.theme.Theme.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/theme"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/theme"
 
 theme.Theme_IsTerraformElement(x interface{}) *bool
 ```
@@ -462,7 +458,7 @@ theme.Theme_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.theme.Theme.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/theme"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/theme"
 
 theme.Theme_IsTerraformResource(x interface{}) *bool
 ```
@@ -476,7 +472,7 @@ theme.Theme_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.theme.Theme.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/theme"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/theme"
 
 theme.Theme_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1046,7 +1042,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.theme.ThemeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/theme"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/theme"
 
 &theme.ThemeConfig {
 	Connection: interface{},

@@ -1,7 +1,3 @@
-# `okta_threat_insight_settings`
-
-Refer to the Terraform Registory for docs: [`okta_threat_insight_settings`](https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/threat_insight_settings).
-
 # `threatInsightSettings` Submodule <a name="`threatInsightSettings` Submodule" id="@cdktf/provider-okta.threatInsightSettings"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

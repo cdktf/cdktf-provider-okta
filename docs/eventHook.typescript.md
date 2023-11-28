@@ -1,7 +1,3 @@
-# `okta_event_hook`
-
-Refer to the Terraform Registory for docs: [`okta_event_hook`](https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/event_hook).
-
 # `eventHook` Submodule <a name="`eventHook` Submodule" id="@cdktf/provider-okta.eventHook"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

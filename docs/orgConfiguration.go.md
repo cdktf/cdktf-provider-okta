@@ -1,7 +1,3 @@
-# `okta_org_configuration`
-
-Refer to the Terraform Registory for docs: [`okta_org_configuration`](https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/org_configuration).
-
 # `orgConfiguration` Submodule <a name="`orgConfiguration` Submodule" id="@cdktf/provider-okta.orgConfiguration"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.orgConfiguration.OrgConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/orgconfiguration"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/orgconfiguration"
 
 orgconfiguration.NewOrgConfiguration(scope Construct, id *string, config OrgConfigurationConfig) OrgConfiguration
 ```
@@ -437,7 +433,7 @@ func ResetWebsite()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.orgConfiguration.OrgConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/orgconfiguration"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/orgconfiguration"
 
 orgconfiguration.OrgConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -469,7 +465,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.orgConfiguration.OrgConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/orgconfiguration"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/orgconfiguration"
 
 orgconfiguration.OrgConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -483,7 +479,7 @@ orgconfiguration.OrgConfiguration_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.orgConfiguration.OrgConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/orgconfiguration"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/orgconfiguration"
 
 orgconfiguration.OrgConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -497,7 +493,7 @@ orgconfiguration.OrgConfiguration_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.orgConfiguration.OrgConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/orgconfiguration"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/orgconfiguration"
 
 orgconfiguration.OrgConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1100,7 +1096,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.orgConfiguration.OrgConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/orgconfiguration"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/orgconfiguration"
 
 &orgconfiguration.OrgConfigurationConfig {
 	Connection: interface{},

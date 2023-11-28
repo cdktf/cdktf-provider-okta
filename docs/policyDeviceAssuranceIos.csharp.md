@@ -1,7 +1,3 @@
-# `okta_policy_device_assurance_ios`
-
-Refer to the Terraform Registory for docs: [`okta_policy_device_assurance_ios`](https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/policy_device_assurance_ios).
-
 # `policyDeviceAssuranceIos` Submodule <a name="`policyDeviceAssuranceIos` Submodule" id="@cdktf/provider-okta.policyDeviceAssuranceIos"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

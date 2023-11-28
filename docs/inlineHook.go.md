@@ -1,7 +1,3 @@
-# `okta_inline_hook`
-
-Refer to the Terraform Registory for docs: [`okta_inline_hook`](https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/inline_hook).
-
 # `inlineHook` Submodule <a name="`inlineHook` Submodule" id="@cdktf/provider-okta.inlineHook"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.inlineHook.InlineHook.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/inlinehook"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/inlinehook"
 
 inlinehook.NewInlineHook(scope Construct, id *string, config InlineHookConfig) InlineHook
 ```
@@ -373,7 +369,7 @@ func ResetStatus()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.inlineHook.InlineHook.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/inlinehook"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/inlinehook"
 
 inlinehook.InlineHook_IsConstruct(x interface{}) *bool
 ```
@@ -405,7 +401,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.inlineHook.InlineHook.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/inlinehook"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/inlinehook"
 
 inlinehook.InlineHook_IsTerraformElement(x interface{}) *bool
 ```
@@ -419,7 +415,7 @@ inlinehook.InlineHook_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.inlineHook.InlineHook.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/inlinehook"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/inlinehook"
 
 inlinehook.InlineHook_IsTerraformResource(x interface{}) *bool
 ```
@@ -433,7 +429,7 @@ inlinehook.InlineHook_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.inlineHook.InlineHook.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/inlinehook"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/inlinehook"
 
 inlinehook.InlineHook_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -838,7 +834,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.inlineHook.InlineHookConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/inlinehook"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/inlinehook"
 
 &inlinehook.InlineHookConfig {
 	Connection: interface{},
@@ -1057,7 +1053,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.inlineHook.InlineHookHeaders.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/inlinehook"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/inlinehook"
 
 &inlinehook.InlineHookHeaders {
 	Key: *string,
@@ -1105,7 +1101,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.inlineHook.InlineHookHeadersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/inlinehook"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/inlinehook"
 
 inlinehook.NewInlineHookHeadersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) InlineHookHeadersList
 ```
@@ -1248,7 +1244,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.inlineHook.InlineHookHeadersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/inlinehook"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/inlinehook"
 
 inlinehook.NewInlineHookHeadersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) InlineHookHeadersOutputReference
 ```

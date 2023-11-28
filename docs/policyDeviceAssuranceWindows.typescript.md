@@ -1,7 +1,3 @@
-# `okta_policy_device_assurance_windows`
-
-Refer to the Terraform Registory for docs: [`okta_policy_device_assurance_windows`](https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/policy_device_assurance_windows).
-
 # `policyDeviceAssuranceWindows` Submodule <a name="`policyDeviceAssuranceWindows` Submodule" id="@cdktf/provider-okta.policyDeviceAssuranceWindows"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

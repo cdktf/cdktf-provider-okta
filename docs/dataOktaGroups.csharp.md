@@ -1,7 +1,3 @@
-# `data_okta_groups`
-
-Refer to the Terraform Registory for docs: [`data_okta_groups`](https://registry.terraform.io/providers/okta/okta/4.6.1/docs/data-sources/groups).
-
 # `dataOktaGroups` Submodule <a name="`dataOktaGroups` Submodule" id="@cdktf/provider-okta.dataOktaGroups"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `okta_app_saml_app_settings`
-
-Refer to the Terraform Registory for docs: [`okta_app_saml_app_settings`](https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/app_saml_app_settings).
-
 # `appSamlAppSettings` Submodule <a name="`appSamlAppSettings` Submodule" id="@cdktf/provider-okta.appSamlAppSettings"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

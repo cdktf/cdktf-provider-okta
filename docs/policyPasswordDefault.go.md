@@ -1,7 +1,3 @@
-# `okta_policy_password_default`
-
-Refer to the Terraform Registory for docs: [`okta_policy_password_default`](https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/policy_password_default).
-
 # `policyPasswordDefault` Submodule <a name="`policyPasswordDefault` Submodule" id="@cdktf/provider-okta.policyPasswordDefault"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.policyPasswordDefault.PolicyPasswordDefault.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policypassworddefault"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policypassworddefault"
 
 policypassworddefault.NewPolicyPasswordDefault(scope Construct, id *string, config PolicyPasswordDefaultConfig) PolicyPasswordDefault
 ```
@@ -507,7 +503,7 @@ func ResetSmsRecovery()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.policyPasswordDefault.PolicyPasswordDefault.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policypassworddefault"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policypassworddefault"
 
 policypassworddefault.PolicyPasswordDefault_IsConstruct(x interface{}) *bool
 ```
@@ -539,7 +535,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.policyPasswordDefault.PolicyPasswordDefault.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policypassworddefault"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policypassworddefault"
 
 policypassworddefault.PolicyPasswordDefault_IsTerraformElement(x interface{}) *bool
 ```
@@ -553,7 +549,7 @@ policypassworddefault.PolicyPasswordDefault_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.policyPasswordDefault.PolicyPasswordDefault.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policypassworddefault"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policypassworddefault"
 
 policypassworddefault.PolicyPasswordDefault_IsTerraformResource(x interface{}) *bool
 ```
@@ -567,7 +563,7 @@ policypassworddefault.PolicyPasswordDefault_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.policyPasswordDefault.PolicyPasswordDefault.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policypassworddefault"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policypassworddefault"
 
 policypassworddefault.PolicyPasswordDefault_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1412,7 +1408,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.policyPasswordDefault.PolicyPasswordDefaultConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policypassworddefault"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policypassworddefault"
 
 &policypassworddefault.PolicyPasswordDefaultConfig {
 	Connection: interface{},

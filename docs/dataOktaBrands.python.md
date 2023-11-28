@@ -1,7 +1,3 @@
-# `data_okta_brands`
-
-Refer to the Terraform Registory for docs: [`data_okta_brands`](https://registry.terraform.io/providers/okta/okta/4.6.1/docs/data-sources/brands).
-
 # `dataOktaBrands` Submodule <a name="`dataOktaBrands` Submodule" id="@cdktf/provider-okta.dataOktaBrands"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

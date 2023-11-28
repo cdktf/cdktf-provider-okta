@@ -1,7 +1,3 @@
-# `okta_domain`
-
-Refer to the Terraform Registory for docs: [`okta_domain`](https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/domain).
-
 # `domain` Submodule <a name="`domain` Submodule" id="@cdktf/provider-okta.domain"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

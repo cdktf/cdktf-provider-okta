@@ -1,7 +1,3 @@
-# `data_okta_app_user_assignments`
-
-Refer to the Terraform Registory for docs: [`data_okta_app_user_assignments`](https://registry.terraform.io/providers/okta/okta/4.6.1/docs/data-sources/app_user_assignments).
-
 # `dataOktaAppUserAssignments` Submodule <a name="`dataOktaAppUserAssignments` Submodule" id="@cdktf/provider-okta.dataOktaAppUserAssignments"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaAppUserAssignments.DataOktaAppUserAssignments.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktaappuserassignments"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaappuserassignments"
 
 dataoktaappuserassignments.NewDataOktaAppUserAssignments(scope Construct, id *string, config DataOktaAppUserAssignmentsConfig) DataOktaAppUserAssignments
 ```
@@ -271,7 +267,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.dataOktaAppUserAssignments.DataOktaAppUserAssignments.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktaappuserassignments"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaappuserassignments"
 
 dataoktaappuserassignments.DataOktaAppUserAssignments_IsConstruct(x interface{}) *bool
 ```
@@ -303,7 +299,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.dataOktaAppUserAssignments.DataOktaAppUserAssignments.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktaappuserassignments"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaappuserassignments"
 
 dataoktaappuserassignments.DataOktaAppUserAssignments_IsTerraformElement(x interface{}) *bool
 ```
@@ -317,7 +313,7 @@ dataoktaappuserassignments.DataOktaAppUserAssignments_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-okta.dataOktaAppUserAssignments.DataOktaAppUserAssignments.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktaappuserassignments"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaappuserassignments"
 
 dataoktaappuserassignments.DataOktaAppUserAssignments_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -331,7 +327,7 @@ dataoktaappuserassignments.DataOktaAppUserAssignments_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.dataOktaAppUserAssignments.DataOktaAppUserAssignments.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktaappuserassignments"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaappuserassignments"
 
 dataoktaappuserassignments.DataOktaAppUserAssignments_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -571,7 +567,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaAppUserAssignments.DataOktaAppUserAssignmentsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktaappuserassignments"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaappuserassignments"
 
 &dataoktaappuserassignments.DataOktaAppUserAssignmentsConfig {
 	Connection: interface{},

@@ -1,7 +1,3 @@
-# `okta_policy_device_assurance_chromeos`
-
-Refer to the Terraform Registory for docs: [`okta_policy_device_assurance_chromeos`](https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/policy_device_assurance_chromeos).
-
 # `policyDeviceAssuranceChromeos` Submodule <a name="`policyDeviceAssuranceChromeos` Submodule" id="@cdktf/provider-okta.policyDeviceAssuranceChromeos"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policydeviceassurancechromeos"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policydeviceassurancechromeos"
 
 policydeviceassurancechromeos.NewPolicyDeviceAssuranceChromeos(scope Construct, id *string, config PolicyDeviceAssuranceChromeosConfig) PolicyDeviceAssuranceChromeos
 ```
@@ -430,7 +426,7 @@ func ResetTpspSiteIsolationEnabled()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policydeviceassurancechromeos"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policydeviceassurancechromeos"
 
 policydeviceassurancechromeos.PolicyDeviceAssuranceChromeos_IsConstruct(x interface{}) *bool
 ```
@@ -462,7 +458,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policydeviceassurancechromeos"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policydeviceassurancechromeos"
 
 policydeviceassurancechromeos.PolicyDeviceAssuranceChromeos_IsTerraformElement(x interface{}) *bool
 ```
@@ -476,7 +472,7 @@ policydeviceassurancechromeos.PolicyDeviceAssuranceChromeos_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policydeviceassurancechromeos"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policydeviceassurancechromeos"
 
 policydeviceassurancechromeos.PolicyDeviceAssuranceChromeos_IsTerraformResource(x interface{}) *bool
 ```
@@ -490,7 +486,7 @@ policydeviceassurancechromeos.PolicyDeviceAssuranceChromeos_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policydeviceassurancechromeos"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policydeviceassurancechromeos"
 
 policydeviceassurancechromeos.PolicyDeviceAssuranceChromeos_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1115,7 +1111,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeosConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policydeviceassurancechromeos"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policydeviceassurancechromeos"
 
 &policydeviceassurancechromeos.PolicyDeviceAssuranceChromeosConfig {
 	Connection: interface{},

@@ -1,7 +1,3 @@
-# `okta_policy_rule_profile_enrollment`
-
-Refer to the Terraform Registory for docs: [`okta_policy_rule_profile_enrollment`](https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/policy_rule_profile_enrollment).
-
 # `policyRuleProfileEnrollment` Submodule <a name="`policyRuleProfileEnrollment` Submodule" id="@cdktf/provider-okta.policyRuleProfileEnrollment"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.policyRuleProfileEnrollment.PolicyRuleProfileEnrollment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policyruleprofileenrollment"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policyruleprofileenrollment"
 
 policyruleprofileenrollment.NewPolicyRuleProfileEnrollment(scope Construct, id *string, config PolicyRuleProfileEnrollmentConfig) PolicyRuleProfileEnrollment
 ```
@@ -401,7 +397,7 @@ func ResetUiSchemaId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.policyRuleProfileEnrollment.PolicyRuleProfileEnrollment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policyruleprofileenrollment"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policyruleprofileenrollment"
 
 policyruleprofileenrollment.PolicyRuleProfileEnrollment_IsConstruct(x interface{}) *bool
 ```
@@ -433,7 +429,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.policyRuleProfileEnrollment.PolicyRuleProfileEnrollment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policyruleprofileenrollment"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policyruleprofileenrollment"
 
 policyruleprofileenrollment.PolicyRuleProfileEnrollment_IsTerraformElement(x interface{}) *bool
 ```
@@ -447,7 +443,7 @@ policyruleprofileenrollment.PolicyRuleProfileEnrollment_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.policyRuleProfileEnrollment.PolicyRuleProfileEnrollment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policyruleprofileenrollment"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policyruleprofileenrollment"
 
 policyruleprofileenrollment.PolicyRuleProfileEnrollment_IsTerraformResource(x interface{}) *bool
 ```
@@ -461,7 +457,7 @@ policyruleprofileenrollment.PolicyRuleProfileEnrollment_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.policyRuleProfileEnrollment.PolicyRuleProfileEnrollment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policyruleprofileenrollment"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policyruleprofileenrollment"
 
 policyruleprofileenrollment.PolicyRuleProfileEnrollment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -932,7 +928,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.policyRuleProfileEnrollment.PolicyRuleProfileEnrollmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policyruleprofileenrollment"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policyruleprofileenrollment"
 
 &policyruleprofileenrollment.PolicyRuleProfileEnrollmentConfig {
 	Connection: interface{},
@@ -1195,7 +1191,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.policyRuleProfileEnrollment.PolicyRuleProfileEnrollmentProfileAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policyruleprofileenrollment"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policyruleprofileenrollment"
 
 &policyruleprofileenrollment.PolicyRuleProfileEnrollmentProfileAttributes {
 	Label: *string,
@@ -1263,7 +1259,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.policyRuleProfileEnrollment.PolicyRuleProfileEnrollmentProfileAttributesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policyruleprofileenrollment"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policyruleprofileenrollment"
 
 policyruleprofileenrollment.NewPolicyRuleProfileEnrollmentProfileAttributesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PolicyRuleProfileEnrollmentProfileAttributesList
 ```
@@ -1406,7 +1402,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.policyRuleProfileEnrollment.PolicyRuleProfileEnrollmentProfileAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policyruleprofileenrollment"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policyruleprofileenrollment"
 
 policyruleprofileenrollment.NewPolicyRuleProfileEnrollmentProfileAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PolicyRuleProfileEnrollmentProfileAttributesOutputReference
 ```

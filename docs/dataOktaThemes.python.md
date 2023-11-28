@@ -1,7 +1,3 @@
-# `data_okta_themes`
-
-Refer to the Terraform Registory for docs: [`data_okta_themes`](https://registry.terraform.io/providers/okta/okta/4.6.1/docs/data-sources/themes).
-
 # `dataOktaThemes` Submodule <a name="`dataOktaThemes` Submodule" id="@cdktf/provider-okta.dataOktaThemes"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

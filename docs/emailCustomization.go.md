@@ -1,7 +1,3 @@
-# `okta_email_customization`
-
-Refer to the Terraform Registory for docs: [`okta_email_customization`](https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/email_customization).
-
 # `emailCustomization` Submodule <a name="`emailCustomization` Submodule" id="@cdktf/provider-okta.emailCustomization"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.emailCustomization.EmailCustomization.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/emailcustomization"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/emailcustomization"
 
 emailcustomization.NewEmailCustomization(scope Construct, id *string, config EmailCustomizationConfig) EmailCustomization
 ```
@@ -367,7 +363,7 @@ func ResetSubject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.emailCustomization.EmailCustomization.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/emailcustomization"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/emailcustomization"
 
 emailcustomization.EmailCustomization_IsConstruct(x interface{}) *bool
 ```
@@ -399,7 +395,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.emailCustomization.EmailCustomization.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/emailcustomization"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/emailcustomization"
 
 emailcustomization.EmailCustomization_IsTerraformElement(x interface{}) *bool
 ```
@@ -413,7 +409,7 @@ emailcustomization.EmailCustomization_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.emailCustomization.EmailCustomization.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/emailcustomization"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/emailcustomization"
 
 emailcustomization.EmailCustomization_IsTerraformResource(x interface{}) *bool
 ```
@@ -427,7 +423,7 @@ emailcustomization.EmailCustomization_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.emailCustomization.EmailCustomization.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/emailcustomization"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/emailcustomization"
 
 emailcustomization.EmailCustomization_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -832,7 +828,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.emailCustomization.EmailCustomizationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/emailcustomization"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/emailcustomization"
 
 &emailcustomization.EmailCustomizationConfig {
 	Connection: interface{},

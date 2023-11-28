@@ -1,7 +1,3 @@
-# `data_okta_idp_metadata_saml`
-
-Refer to the Terraform Registory for docs: [`data_okta_idp_metadata_saml`](https://registry.terraform.io/providers/okta/okta/4.6.1/docs/data-sources/idp_metadata_saml).
-
 # `dataOktaIdpMetadataSaml` Submodule <a name="`dataOktaIdpMetadataSaml` Submodule" id="@cdktf/provider-okta.dataOktaIdpMetadataSaml"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
