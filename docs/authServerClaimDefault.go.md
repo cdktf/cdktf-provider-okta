@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.authServerClaimDefault.AuthServerClaimDefault.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/authserverclaimdefault"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/authserverclaimdefault"
 
 authserverclaimdefault.NewAuthServerClaimDefault(scope Construct, id *string, config AuthServerClaimDefaultConfig) AuthServerClaimDefault
 ```
@@ -349,7 +349,7 @@ func ResetValue()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.authServerClaimDefault.AuthServerClaimDefault.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/authserverclaimdefault"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/authserverclaimdefault"
 
 authserverclaimdefault.AuthServerClaimDefault_IsConstruct(x interface{}) *bool
 ```
@@ -381,7 +381,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.authServerClaimDefault.AuthServerClaimDefault.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/authserverclaimdefault"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/authserverclaimdefault"
 
 authserverclaimdefault.AuthServerClaimDefault_IsTerraformElement(x interface{}) *bool
 ```
@@ -395,7 +395,7 @@ authserverclaimdefault.AuthServerClaimDefault_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.authServerClaimDefault.AuthServerClaimDefault.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/authserverclaimdefault"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/authserverclaimdefault"
 
 authserverclaimdefault.AuthServerClaimDefault_IsTerraformResource(x interface{}) *bool
 ```
@@ -409,7 +409,7 @@ authserverclaimdefault.AuthServerClaimDefault_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.authServerClaimDefault.AuthServerClaimDefault.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/authserverclaimdefault"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/authserverclaimdefault"
 
 authserverclaimdefault.AuthServerClaimDefault_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -792,7 +792,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.authServerClaimDefault.AuthServerClaimDefaultConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/authserverclaimdefault"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/authserverclaimdefault"
 
 &authserverclaimdefault.AuthServerClaimDefaultConfig {
 	Connection: interface{},

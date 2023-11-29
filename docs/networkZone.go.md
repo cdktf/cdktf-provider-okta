@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.networkZone.NetworkZone.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/networkzone"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/networkzone"
 
 networkzone.NewNetworkZone(scope Construct, id *string, config NetworkZoneConfig) NetworkZone
 ```
@@ -384,7 +384,7 @@ func ResetUsage()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.networkZone.NetworkZone.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/networkzone"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/networkzone"
 
 networkzone.NetworkZone_IsConstruct(x interface{}) *bool
 ```
@@ -416,7 +416,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.networkZone.NetworkZone.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/networkzone"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/networkzone"
 
 networkzone.NetworkZone_IsTerraformElement(x interface{}) *bool
 ```
@@ -430,7 +430,7 @@ networkzone.NetworkZone_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.networkZone.NetworkZone.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/networkzone"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/networkzone"
 
 networkzone.NetworkZone_IsTerraformResource(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ networkzone.NetworkZone_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.networkZone.NetworkZone.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/networkzone"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/networkzone"
 
 networkzone.NetworkZone_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -893,7 +893,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.networkZone.NetworkZoneConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/networkzone"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/networkzone"
 
 &networkzone.NetworkZoneConfig {
 	Connection: interface{},

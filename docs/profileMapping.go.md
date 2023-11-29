@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.profileMapping.ProfileMapping.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/profilemapping"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/profilemapping"
 
 profilemapping.NewProfileMapping(scope Construct, id *string, config ProfileMappingConfig) ProfileMapping
 ```
@@ -369,7 +369,7 @@ func ResetMappings()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.profileMapping.ProfileMapping.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/profilemapping"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/profilemapping"
 
 profilemapping.ProfileMapping_IsConstruct(x interface{}) *bool
 ```
@@ -401,7 +401,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.profileMapping.ProfileMapping.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/profilemapping"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/profilemapping"
 
 profilemapping.ProfileMapping_IsTerraformElement(x interface{}) *bool
 ```
@@ -415,7 +415,7 @@ profilemapping.ProfileMapping_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.profileMapping.ProfileMapping.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/profilemapping"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/profilemapping"
 
 profilemapping.ProfileMapping_IsTerraformResource(x interface{}) *bool
 ```
@@ -429,7 +429,7 @@ profilemapping.ProfileMapping_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.profileMapping.ProfileMapping.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/profilemapping"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/profilemapping"
 
 profilemapping.ProfileMapping_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -834,7 +834,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.profileMapping.ProfileMappingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/profilemapping"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/profilemapping"
 
 &profilemapping.ProfileMappingConfig {
 	Connection: interface{},
@@ -1035,7 +1035,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.profileMapping.ProfileMappingMappings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/profilemapping"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/profilemapping"
 
 &profilemapping.ProfileMappingMappings {
 	Expression: *string,
@@ -1102,7 +1102,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.profileMapping.ProfileMappingMappingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/profilemapping"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/profilemapping"
 
 profilemapping.NewProfileMappingMappingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ProfileMappingMappingsList
 ```
@@ -1245,7 +1245,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.profileMapping.ProfileMappingMappingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/profilemapping"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/profilemapping"
 
 profilemapping.NewProfileMappingMappingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ProfileMappingMappingsOutputReference
 ```

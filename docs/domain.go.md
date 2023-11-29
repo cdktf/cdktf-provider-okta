@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.domain.Domain.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/domain"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/domain"
 
 domain.NewDomain(scope Construct, id *string, config DomainConfig) Domain
 ```
@@ -349,7 +349,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.domain.Domain.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/domain"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/domain"
 
 domain.Domain_IsConstruct(x interface{}) *bool
 ```
@@ -381,7 +381,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.domain.Domain.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/domain"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/domain"
 
 domain.Domain_IsTerraformElement(x interface{}) *bool
 ```
@@ -395,7 +395,7 @@ domain.Domain_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.domain.Domain.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/domain"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/domain"
 
 domain.Domain_IsTerraformResource(x interface{}) *bool
 ```
@@ -409,7 +409,7 @@ domain.Domain_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.domain.Domain.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/domain"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/domain"
 
 domain.Domain_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -748,7 +748,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.domain.DomainConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/domain"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/domain"
 
 &domain.DomainConfig {
 	Connection: interface{},
@@ -917,7 +917,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.domain.DomainDnsRecords.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/domain"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/domain"
 
 &domain.DomainDnsRecords {
 
@@ -932,7 +932,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/domain"
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.domain.DomainDnsRecordsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/domain"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/domain"
 
 domain.NewDomainDnsRecordsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DomainDnsRecordsList
 ```
@@ -1064,7 +1064,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.domain.DomainDnsRecordsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/domain"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/domain"
 
 domain.NewDomainDnsRecordsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DomainDnsRecordsOutputReference
 ```

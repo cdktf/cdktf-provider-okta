@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaUser.DataOktaUser.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktauser"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktauser"
 
 dataoktauser.NewDataOktaUser(scope Construct, id *string, config DataOktaUserConfig) DataOktaUser
 ```
@@ -329,7 +329,7 @@ func ResetUserId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.dataOktaUser.DataOktaUser.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktauser"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktauser"
 
 dataoktauser.DataOktaUser_IsConstruct(x interface{}) *bool
 ```
@@ -361,7 +361,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.dataOktaUser.DataOktaUser.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktauser"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktauser"
 
 dataoktauser.DataOktaUser_IsTerraformElement(x interface{}) *bool
 ```
@@ -375,7 +375,7 @@ dataoktauser.DataOktaUser_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-okta.dataOktaUser.DataOktaUser.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktauser"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktauser"
 
 dataoktauser.DataOktaUser_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -389,7 +389,7 @@ dataoktauser.DataOktaUser_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.dataOktaUser.DataOktaUser.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktauser"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktauser"
 
 dataoktauser.DataOktaUser_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1146,7 +1146,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaUser.DataOktaUserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktauser"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktauser"
 
 &dataoktauser.DataOktaUserConfig {
 	Connection: interface{},
@@ -1363,7 +1363,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaUser.DataOktaUserSearch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktauser"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktauser"
 
 &dataoktauser.DataOktaUserSearch {
 	Comparison: *string,
@@ -1447,7 +1447,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaUser.DataOktaUserSearchList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktauser"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktauser"
 
 dataoktauser.NewDataOktaUserSearchList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOktaUserSearchList
 ```
@@ -1590,7 +1590,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaUser.DataOktaUserSearchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktauser"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktauser"
 
 dataoktauser.NewDataOktaUserSearchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataOktaUserSearchOutputReference
 ```

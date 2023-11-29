@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appSignonPolicyRule.AppSignonPolicyRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/appsignonpolicyrule"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/appsignonpolicyrule"
 
 appsignonpolicyrule.NewAppSignonPolicyRule(scope Construct, id *string, config AppSignonPolicyRuleConfig) AppSignonPolicyRule
 ```
@@ -509,7 +509,7 @@ func ResetUserTypesIncluded()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.appSignonPolicyRule.AppSignonPolicyRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/appsignonpolicyrule"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/appsignonpolicyrule"
 
 appsignonpolicyrule.AppSignonPolicyRule_IsConstruct(x interface{}) *bool
 ```
@@ -541,7 +541,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.appSignonPolicyRule.AppSignonPolicyRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/appsignonpolicyrule"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/appsignonpolicyrule"
 
 appsignonpolicyrule.AppSignonPolicyRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -555,7 +555,7 @@ appsignonpolicyrule.AppSignonPolicyRule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.appSignonPolicyRule.AppSignonPolicyRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/appsignonpolicyrule"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/appsignonpolicyrule"
 
 appsignonpolicyrule.AppSignonPolicyRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -569,7 +569,7 @@ appsignonpolicyrule.AppSignonPolicyRule_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.appSignonPolicyRule.AppSignonPolicyRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/appsignonpolicyrule"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/appsignonpolicyrule"
 
 appsignonpolicyrule.AppSignonPolicyRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1381,7 +1381,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.appSignonPolicyRule.AppSignonPolicyRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/appsignonpolicyrule"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/appsignonpolicyrule"
 
 &appsignonpolicyrule.AppSignonPolicyRuleConfig {
 	Connection: interface{},
@@ -1910,7 +1910,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.appSignonPolicyRule.AppSignonPolicyRulePlatformInclude.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/appsignonpolicyrule"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/appsignonpolicyrule"
 
 &appsignonpolicyrule.AppSignonPolicyRulePlatformInclude {
 	OsExpression: *string,
@@ -1974,7 +1974,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appSignonPolicyRule.AppSignonPolicyRulePlatformIncludeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/appsignonpolicyrule"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/appsignonpolicyrule"
 
 appsignonpolicyrule.NewAppSignonPolicyRulePlatformIncludeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppSignonPolicyRulePlatformIncludeList
 ```
@@ -2117,7 +2117,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appSignonPolicyRule.AppSignonPolicyRulePlatformIncludeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/appsignonpolicyrule"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/appsignonpolicyrule"
 
 appsignonpolicyrule.NewAppSignonPolicyRulePlatformIncludeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppSignonPolicyRulePlatformIncludeOutputReference
 ```
