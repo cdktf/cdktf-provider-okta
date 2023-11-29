@@ -4,12 +4,12 @@
 
 ### DataOktaBrand <a name="DataOktaBrand" id="@cdktf/provider-okta.dataOktaBrand.DataOktaBrand"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/data-sources/brand okta_brand}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/data-sources/brand okta_brand}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaBrand.DataOktaBrand.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktabrand"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktabrand"
 
 dataoktabrand.NewDataOktaBrand(scope Construct, id *string, config DataOktaBrandConfig) DataOktaBrand
 ```
@@ -267,7 +267,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.dataOktaBrand.DataOktaBrand.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktabrand"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktabrand"
 
 dataoktabrand.DataOktaBrand_IsConstruct(x interface{}) *bool
 ```
@@ -299,7 +299,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.dataOktaBrand.DataOktaBrand.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktabrand"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktabrand"
 
 dataoktabrand.DataOktaBrand_IsTerraformElement(x interface{}) *bool
 ```
@@ -313,7 +313,7 @@ dataoktabrand.DataOktaBrand_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-okta.dataOktaBrand.DataOktaBrand.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktabrand"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktabrand"
 
 dataoktabrand.DataOktaBrand_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -327,7 +327,7 @@ dataoktabrand.DataOktaBrand_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.dataOktaBrand.DataOktaBrand.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktabrand"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktabrand"
 
 dataoktabrand.DataOktaBrand_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -356,7 +356,7 @@ The construct id used in the generated config for the DataOktaBrand to import.
 
 The id of the existing DataOktaBrand that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/data-sources/brand#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/data-sources/brand#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -611,7 +611,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaBrand.DataOktaBrandConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktabrand"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktabrand"
 
 &dataoktabrand.DataOktaBrandConfig {
 	Connection: interface{},
@@ -720,7 +720,7 @@ BrandId *string
 
 Brand ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/data-sources/brand#brand_id DataOktaBrand#brand_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/data-sources/brand#brand_id DataOktaBrand#brand_id}
 
 ---
 

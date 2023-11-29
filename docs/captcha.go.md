@@ -4,12 +4,12 @@
 
 ### Captcha <a name="Captcha" id="@cdktf/provider-okta.captcha.Captcha"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/captcha okta_captcha}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/captcha okta_captcha}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.captcha.Captcha.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/captcha"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/captcha"
 
 captcha.NewCaptcha(scope Construct, id *string, config CaptchaConfig) Captcha
 ```
@@ -335,7 +335,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.captcha.Captcha.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/captcha"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/captcha"
 
 captcha.Captcha_IsConstruct(x interface{}) *bool
 ```
@@ -367,7 +367,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.captcha.Captcha.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/captcha"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/captcha"
 
 captcha.Captcha_IsTerraformElement(x interface{}) *bool
 ```
@@ -381,7 +381,7 @@ captcha.Captcha_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.captcha.Captcha.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/captcha"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/captcha"
 
 captcha.Captcha_IsTerraformResource(x interface{}) *bool
 ```
@@ -395,7 +395,7 @@ captcha.Captcha_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.captcha.Captcha.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/captcha"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/captcha"
 
 captcha.Captcha_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -424,7 +424,7 @@ The construct id used in the generated config for the Captcha to import.
 
 The id of the existing Captcha that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/captcha#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/captcha#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -734,7 +734,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.captcha.CaptchaConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/captcha"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/captcha"
 
 &captcha.CaptchaConfig {
 	Connection: interface{},
@@ -767,7 +767,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/captcha"
 | <code><a href="#@cdktf/provider-okta.captcha.CaptchaConfig.property.secretKey">SecretKey</a></code> | <code>*string</code> | Secret key issued from the CAPTCHA vendor to perform server-side validation for a CAPTCHA token. |
 | <code><a href="#@cdktf/provider-okta.captcha.CaptchaConfig.property.siteKey">SiteKey</a></code> | <code>*string</code> | Site key issued from the CAPTCHA vendor to render a CAPTCHA on a page. |
 | <code><a href="#@cdktf/provider-okta.captcha.CaptchaConfig.property.type">Type</a></code> | <code>*string</code> | Captcha type. |
-| <code><a href="#@cdktf/provider-okta.captcha.CaptchaConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/captcha#id Captcha#id}. |
+| <code><a href="#@cdktf/provider-okta.captcha.CaptchaConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/captcha#id Captcha#id}. |
 
 ---
 
@@ -851,7 +851,7 @@ Name *string
 
 Name of the CAPTCHA.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/captcha#name Captcha#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/captcha#name Captcha#name}
 
 ---
 
@@ -865,7 +865,7 @@ SecretKey *string
 
 Secret key issued from the CAPTCHA vendor to perform server-side validation for a CAPTCHA token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/captcha#secret_key Captcha#secret_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/captcha#secret_key Captcha#secret_key}
 
 ---
 
@@ -879,7 +879,7 @@ SiteKey *string
 
 Site key issued from the CAPTCHA vendor to render a CAPTCHA on a page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/captcha#site_key Captcha#site_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/captcha#site_key Captcha#site_key}
 
 ---
 
@@ -893,7 +893,7 @@ Type *string
 
 Captcha type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/captcha#type Captcha#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/captcha#type Captcha#type}
 
 ---
 
@@ -905,7 +905,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/captcha#id Captcha#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/captcha#id Captcha#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

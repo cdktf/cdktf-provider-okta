@@ -4,12 +4,12 @@
 
 ### DataOktaRoleSubscription <a name="DataOktaRoleSubscription" id="@cdktf/provider-okta.dataOktaRoleSubscription.DataOktaRoleSubscription"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/data-sources/role_subscription okta_role_subscription}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/data-sources/role_subscription okta_role_subscription}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaRoleSubscription.DataOktaRoleSubscription.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktarolesubscription"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktarolesubscription"
 
 dataoktarolesubscription.NewDataOktaRoleSubscription(scope Construct, id *string, config DataOktaRoleSubscriptionConfig) DataOktaRoleSubscription
 ```
@@ -274,7 +274,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.dataOktaRoleSubscription.DataOktaRoleSubscription.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktarolesubscription"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktarolesubscription"
 
 dataoktarolesubscription.DataOktaRoleSubscription_IsConstruct(x interface{}) *bool
 ```
@@ -306,7 +306,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.dataOktaRoleSubscription.DataOktaRoleSubscription.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktarolesubscription"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktarolesubscription"
 
 dataoktarolesubscription.DataOktaRoleSubscription_IsTerraformElement(x interface{}) *bool
 ```
@@ -320,7 +320,7 @@ dataoktarolesubscription.DataOktaRoleSubscription_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-okta.dataOktaRoleSubscription.DataOktaRoleSubscription.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktarolesubscription"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktarolesubscription"
 
 dataoktarolesubscription.DataOktaRoleSubscription_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -334,7 +334,7 @@ dataoktarolesubscription.DataOktaRoleSubscription_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.dataOktaRoleSubscription.DataOktaRoleSubscription.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktarolesubscription"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktarolesubscription"
 
 dataoktarolesubscription.DataOktaRoleSubscription_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -363,7 +363,7 @@ The construct id used in the generated config for the DataOktaRoleSubscription t
 
 The id of the existing DataOktaRoleSubscription that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/data-sources/role_subscription#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/data-sources/role_subscription#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -618,7 +618,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaRoleSubscription.DataOktaRoleSubscriptionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktarolesubscription"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktarolesubscription"
 
 &dataoktarolesubscription.DataOktaRoleSubscriptionConfig {
 	Connection: interface{},
@@ -647,7 +647,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktarolesubscriptio
 | <code><a href="#@cdktf/provider-okta.dataOktaRoleSubscription.DataOktaRoleSubscriptionConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaRoleSubscription.DataOktaRoleSubscriptionConfig.property.notificationType">NotificationType</a></code> | <code>*string</code> | Type of the notification. |
 | <code><a href="#@cdktf/provider-okta.dataOktaRoleSubscription.DataOktaRoleSubscriptionConfig.property.roleType">RoleType</a></code> | <code>*string</code> | Type of the role. |
-| <code><a href="#@cdktf/provider-okta.dataOktaRoleSubscription.DataOktaRoleSubscriptionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/data-sources/role_subscription#id DataOktaRoleSubscription#id}. |
+| <code><a href="#@cdktf/provider-okta.dataOktaRoleSubscription.DataOktaRoleSubscriptionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/data-sources/role_subscription#id DataOktaRoleSubscription#id}. |
 
 ---
 
@@ -731,7 +731,7 @@ NotificationType *string
 
 Type of the notification.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/data-sources/role_subscription#notification_type DataOktaRoleSubscription#notification_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/data-sources/role_subscription#notification_type DataOktaRoleSubscription#notification_type}
 
 ---
 
@@ -745,7 +745,7 @@ RoleType *string
 
 Type of the role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/data-sources/role_subscription#role_type DataOktaRoleSubscription#role_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/data-sources/role_subscription#role_type DataOktaRoleSubscription#role_type}
 
 ---
 
@@ -757,7 +757,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/data-sources/role_subscription#id DataOktaRoleSubscription#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/data-sources/role_subscription#id DataOktaRoleSubscription#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

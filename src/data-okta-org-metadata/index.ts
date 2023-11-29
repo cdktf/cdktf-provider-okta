@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/okta/okta/4.6.1/docs/data-sources/org_metadata
+// https://registry.terraform.io/providers/okta/okta/4.6.2/docs/data-sources/org_metadata
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -136,7 +131,7 @@ export class DataOktaOrgMetadataSettingsOutputReference extends cdktf.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/data-sources/org_metadata okta_org_metadata}
+* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/data-sources/org_metadata okta_org_metadata}
 */
 export class DataOktaOrgMetadata extends cdktf.TerraformDataSource {
 
@@ -152,7 +147,7 @@ export class DataOktaOrgMetadata extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataOktaOrgMetadata resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataOktaOrgMetadata to import
-  * @param importFromId The id of the existing DataOktaOrgMetadata that should be imported. Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/data-sources/org_metadata#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataOktaOrgMetadata that should be imported. Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/data-sources/org_metadata#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataOktaOrgMetadata to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -164,7 +159,7 @@ export class DataOktaOrgMetadata extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/data-sources/org_metadata okta_org_metadata} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/data-sources/org_metadata okta_org_metadata} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -175,7 +170,7 @@ export class DataOktaOrgMetadata extends cdktf.TerraformDataSource {
       terraformResourceType: 'okta_org_metadata',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '4.6.1',
+        providerVersion: '4.6.2',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

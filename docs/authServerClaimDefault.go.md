@@ -4,12 +4,12 @@
 
 ### AuthServerClaimDefault <a name="AuthServerClaimDefault" id="@cdktf/provider-okta.authServerClaimDefault.AuthServerClaimDefault"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/auth_server_claim_default okta_auth_server_claim_default}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/auth_server_claim_default okta_auth_server_claim_default}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.authServerClaimDefault.AuthServerClaimDefault.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/authserverclaimdefault"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/authserverclaimdefault"
 
 authserverclaimdefault.NewAuthServerClaimDefault(scope Construct, id *string, config AuthServerClaimDefaultConfig) AuthServerClaimDefault
 ```
@@ -349,7 +349,7 @@ func ResetValue()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.authServerClaimDefault.AuthServerClaimDefault.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/authserverclaimdefault"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/authserverclaimdefault"
 
 authserverclaimdefault.AuthServerClaimDefault_IsConstruct(x interface{}) *bool
 ```
@@ -381,7 +381,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.authServerClaimDefault.AuthServerClaimDefault.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/authserverclaimdefault"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/authserverclaimdefault"
 
 authserverclaimdefault.AuthServerClaimDefault_IsTerraformElement(x interface{}) *bool
 ```
@@ -395,7 +395,7 @@ authserverclaimdefault.AuthServerClaimDefault_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.authServerClaimDefault.AuthServerClaimDefault.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/authserverclaimdefault"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/authserverclaimdefault"
 
 authserverclaimdefault.AuthServerClaimDefault_IsTerraformResource(x interface{}) *bool
 ```
@@ -409,7 +409,7 @@ authserverclaimdefault.AuthServerClaimDefault_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.authServerClaimDefault.AuthServerClaimDefault.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/authserverclaimdefault"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/authserverclaimdefault"
 
 authserverclaimdefault.AuthServerClaimDefault_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -438,7 +438,7 @@ The construct id used in the generated config for the AuthServerClaimDefault to 
 
 The id of the existing AuthServerClaimDefault that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/auth_server_claim_default#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/auth_server_claim_default#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -792,7 +792,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.authServerClaimDefault.AuthServerClaimDefaultConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/authserverclaimdefault"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/authserverclaimdefault"
 
 &authserverclaimdefault.AuthServerClaimDefaultConfig {
 	Connection: interface{},
@@ -824,7 +824,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/authserverclaimdefault"
 | <code><a href="#@cdktf/provider-okta.authServerClaimDefault.AuthServerClaimDefaultConfig.property.authServerId">AuthServerId</a></code> | <code>*string</code> | Auth server ID. |
 | <code><a href="#@cdktf/provider-okta.authServerClaimDefault.AuthServerClaimDefaultConfig.property.name">Name</a></code> | <code>*string</code> | Default auth server claim name. |
 | <code><a href="#@cdktf/provider-okta.authServerClaimDefault.AuthServerClaimDefaultConfig.property.alwaysIncludeInToken">AlwaysIncludeInToken</a></code> | <code>interface{}</code> | Specifies whether to include claims in token. |
-| <code><a href="#@cdktf/provider-okta.authServerClaimDefault.AuthServerClaimDefaultConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/auth_server_claim_default#id AuthServerClaimDefault#id}. |
+| <code><a href="#@cdktf/provider-okta.authServerClaimDefault.AuthServerClaimDefaultConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/auth_server_claim_default#id AuthServerClaimDefault#id}. |
 | <code><a href="#@cdktf/provider-okta.authServerClaimDefault.AuthServerClaimDefaultConfig.property.value">Value</a></code> | <code>*string</code> | The value of the claim. |
 
 ---
@@ -909,7 +909,7 @@ AuthServerId *string
 
 Auth server ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/auth_server_claim_default#auth_server_id AuthServerClaimDefault#auth_server_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/auth_server_claim_default#auth_server_id AuthServerClaimDefault#auth_server_id}
 
 ---
 
@@ -923,7 +923,7 @@ Name *string
 
 Default auth server claim name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/auth_server_claim_default#name AuthServerClaimDefault#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/auth_server_claim_default#name AuthServerClaimDefault#name}
 
 ---
 
@@ -937,7 +937,7 @@ AlwaysIncludeInToken interface{}
 
 Specifies whether to include claims in token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/auth_server_claim_default#always_include_in_token AuthServerClaimDefault#always_include_in_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/auth_server_claim_default#always_include_in_token AuthServerClaimDefault#always_include_in_token}
 
 ---
 
@@ -949,7 +949,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/auth_server_claim_default#id AuthServerClaimDefault#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/auth_server_claim_default#id AuthServerClaimDefault#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -966,7 +966,7 @@ Value *string
 
 The value of the claim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/auth_server_claim_default#value AuthServerClaimDefault#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/auth_server_claim_default#value AuthServerClaimDefault#value}
 
 ---
 

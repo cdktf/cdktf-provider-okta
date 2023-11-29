@@ -4,12 +4,12 @@
 
 ### AppOauthRedirectUri <a name="AppOauthRedirectUri" id="@cdktf/provider-okta.appOauthRedirectUri.AppOauthRedirectUri"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/app_oauth_redirect_uri okta_app_oauth_redirect_uri}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/app_oauth_redirect_uri okta_app_oauth_redirect_uri}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appOauthRedirectUri.AppOauthRedirectUri.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/appoauthredirecturi"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appoauthredirecturi"
 
 appoauthredirecturi.NewAppOauthRedirectUri(scope Construct, id *string, config AppOauthRedirectUriConfig) AppOauthRedirectUri
 ```
@@ -335,7 +335,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.appOauthRedirectUri.AppOauthRedirectUri.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/appoauthredirecturi"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appoauthredirecturi"
 
 appoauthredirecturi.AppOauthRedirectUri_IsConstruct(x interface{}) *bool
 ```
@@ -367,7 +367,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.appOauthRedirectUri.AppOauthRedirectUri.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/appoauthredirecturi"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appoauthredirecturi"
 
 appoauthredirecturi.AppOauthRedirectUri_IsTerraformElement(x interface{}) *bool
 ```
@@ -381,7 +381,7 @@ appoauthredirecturi.AppOauthRedirectUri_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.appOauthRedirectUri.AppOauthRedirectUri.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/appoauthredirecturi"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appoauthredirecturi"
 
 appoauthredirecturi.AppOauthRedirectUri_IsTerraformResource(x interface{}) *bool
 ```
@@ -395,7 +395,7 @@ appoauthredirecturi.AppOauthRedirectUri_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.appOauthRedirectUri.AppOauthRedirectUri.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/appoauthredirecturi"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appoauthredirecturi"
 
 appoauthredirecturi.AppOauthRedirectUri_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -424,7 +424,7 @@ The construct id used in the generated config for the AppOauthRedirectUri to imp
 
 The id of the existing AppOauthRedirectUri that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/app_oauth_redirect_uri#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/app_oauth_redirect_uri#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -690,7 +690,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.appOauthRedirectUri.AppOauthRedirectUriConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/appoauthredirecturi"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appoauthredirecturi"
 
 &appoauthredirecturi.AppOauthRedirectUriConfig {
 	Connection: interface{},
@@ -719,7 +719,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/appoauthredirecturi"
 | <code><a href="#@cdktf/provider-okta.appOauthRedirectUri.AppOauthRedirectUriConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauthRedirectUri.AppOauthRedirectUriConfig.property.appId">AppId</a></code> | <code>*string</code> | OAuth application ID. |
 | <code><a href="#@cdktf/provider-okta.appOauthRedirectUri.AppOauthRedirectUriConfig.property.uri">Uri</a></code> | <code>*string</code> | Redirect URI to append to Okta OIDC application. |
-| <code><a href="#@cdktf/provider-okta.appOauthRedirectUri.AppOauthRedirectUriConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/app_oauth_redirect_uri#id AppOauthRedirectUri#id}. |
+| <code><a href="#@cdktf/provider-okta.appOauthRedirectUri.AppOauthRedirectUriConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/app_oauth_redirect_uri#id AppOauthRedirectUri#id}. |
 
 ---
 
@@ -803,7 +803,7 @@ AppId *string
 
 OAuth application ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/app_oauth_redirect_uri#app_id AppOauthRedirectUri#app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/app_oauth_redirect_uri#app_id AppOauthRedirectUri#app_id}
 
 ---
 
@@ -817,7 +817,7 @@ Uri *string
 
 Redirect URI to append to Okta OIDC application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/app_oauth_redirect_uri#uri AppOauthRedirectUri#uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/app_oauth_redirect_uri#uri AppOauthRedirectUri#uri}
 
 ---
 
@@ -829,7 +829,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/app_oauth_redirect_uri#id AppOauthRedirectUri#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/app_oauth_redirect_uri#id AppOauthRedirectUri#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

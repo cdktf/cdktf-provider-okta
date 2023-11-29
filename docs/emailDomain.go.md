@@ -4,12 +4,12 @@
 
 ### EmailDomain <a name="EmailDomain" id="@cdktf/provider-okta.emailDomain.EmailDomain"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/email_domain okta_email_domain}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/email_domain okta_email_domain}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.emailDomain.EmailDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/emaildomain"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/emaildomain"
 
 emaildomain.NewEmailDomain(scope Construct, id *string, config EmailDomainConfig) EmailDomain
 ```
@@ -335,7 +335,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.emailDomain.EmailDomain.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/emaildomain"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/emaildomain"
 
 emaildomain.EmailDomain_IsConstruct(x interface{}) *bool
 ```
@@ -367,7 +367,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.emailDomain.EmailDomain.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/emaildomain"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/emaildomain"
 
 emaildomain.EmailDomain_IsTerraformElement(x interface{}) *bool
 ```
@@ -381,7 +381,7 @@ emaildomain.EmailDomain_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.emailDomain.EmailDomain.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/emaildomain"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/emaildomain"
 
 emaildomain.EmailDomain_IsTerraformResource(x interface{}) *bool
 ```
@@ -395,7 +395,7 @@ emaildomain.EmailDomain_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.emailDomain.EmailDomain.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/emaildomain"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/emaildomain"
 
 emaildomain.EmailDomain_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -424,7 +424,7 @@ The construct id used in the generated config for the EmailDomain to import.
 
 The id of the existing EmailDomain that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/email_domain#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/email_domain#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -756,7 +756,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.emailDomain.EmailDomainConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/emaildomain"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/emaildomain"
 
 &emaildomain.EmailDomainConfig {
 	Connection: interface{},
@@ -789,7 +789,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/emaildomain"
 | <code><a href="#@cdktf/provider-okta.emailDomain.EmailDomainConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | Display name. |
 | <code><a href="#@cdktf/provider-okta.emailDomain.EmailDomainConfig.property.domain">Domain</a></code> | <code>*string</code> | Domain name. |
 | <code><a href="#@cdktf/provider-okta.emailDomain.EmailDomainConfig.property.userName">UserName</a></code> | <code>*string</code> | User name. |
-| <code><a href="#@cdktf/provider-okta.emailDomain.EmailDomainConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/email_domain#id EmailDomain#id}. |
+| <code><a href="#@cdktf/provider-okta.emailDomain.EmailDomainConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/email_domain#id EmailDomain#id}. |
 
 ---
 
@@ -873,7 +873,7 @@ BrandId *string
 
 Brand id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/email_domain#brand_id EmailDomain#brand_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/email_domain#brand_id EmailDomain#brand_id}
 
 ---
 
@@ -887,7 +887,7 @@ DisplayName *string
 
 Display name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/email_domain#display_name EmailDomain#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/email_domain#display_name EmailDomain#display_name}
 
 ---
 
@@ -901,7 +901,7 @@ Domain *string
 
 Domain name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/email_domain#domain EmailDomain#domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/email_domain#domain EmailDomain#domain}
 
 ---
 
@@ -915,7 +915,7 @@ UserName *string
 
 User name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/email_domain#user_name EmailDomain#user_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/email_domain#user_name EmailDomain#user_name}
 
 ---
 
@@ -927,7 +927,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/email_domain#id EmailDomain#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/email_domain#id EmailDomain#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -939,7 +939,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.emailDomain.EmailDomainDnsValidationRecords.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/emaildomain"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/emaildomain"
 
 &emaildomain.EmailDomainDnsValidationRecords {
 
@@ -954,7 +954,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/emaildomain"
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.emailDomain.EmailDomainDnsValidationRecordsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/emaildomain"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/emaildomain"
 
 emaildomain.NewEmailDomainDnsValidationRecordsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EmailDomainDnsValidationRecordsList
 ```
@@ -1086,7 +1086,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.emailDomain.EmailDomainDnsValidationRecordsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/emaildomain"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/emaildomain"
 
 emaildomain.NewEmailDomainDnsValidationRecordsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EmailDomainDnsValidationRecordsOutputReference
 ```

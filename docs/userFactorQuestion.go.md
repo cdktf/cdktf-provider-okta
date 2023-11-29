@@ -4,12 +4,12 @@
 
 ### UserFactorQuestion <a name="UserFactorQuestion" id="@cdktf/provider-okta.userFactorQuestion.UserFactorQuestion"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/user_factor_question okta_user_factor_question}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/user_factor_question okta_user_factor_question}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.userFactorQuestion.UserFactorQuestion.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/userfactorquestion"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/userfactorquestion"
 
 userfactorquestion.NewUserFactorQuestion(scope Construct, id *string, config UserFactorQuestionConfig) UserFactorQuestion
 ```
@@ -335,7 +335,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.userFactorQuestion.UserFactorQuestion.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/userfactorquestion"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/userfactorquestion"
 
 userfactorquestion.UserFactorQuestion_IsConstruct(x interface{}) *bool
 ```
@@ -367,7 +367,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.userFactorQuestion.UserFactorQuestion.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/userfactorquestion"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/userfactorquestion"
 
 userfactorquestion.UserFactorQuestion_IsTerraformElement(x interface{}) *bool
 ```
@@ -381,7 +381,7 @@ userfactorquestion.UserFactorQuestion_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.userFactorQuestion.UserFactorQuestion.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/userfactorquestion"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/userfactorquestion"
 
 userfactorquestion.UserFactorQuestion_IsTerraformResource(x interface{}) *bool
 ```
@@ -395,7 +395,7 @@ userfactorquestion.UserFactorQuestion_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.userFactorQuestion.UserFactorQuestion.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/userfactorquestion"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/userfactorquestion"
 
 userfactorquestion.UserFactorQuestion_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -424,7 +424,7 @@ The construct id used in the generated config for the UserFactorQuestion to impo
 
 The id of the existing UserFactorQuestion that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/user_factor_question#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/user_factor_question#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -734,7 +734,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.userFactorQuestion.UserFactorQuestionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/userfactorquestion"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/userfactorquestion"
 
 &userfactorquestion.UserFactorQuestionConfig {
 	Connection: interface{},
@@ -765,7 +765,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/userfactorquestion"
 | <code><a href="#@cdktf/provider-okta.userFactorQuestion.UserFactorQuestionConfig.property.answer">Answer</a></code> | <code>*string</code> | User password security answer. |
 | <code><a href="#@cdktf/provider-okta.userFactorQuestion.UserFactorQuestionConfig.property.key">Key</a></code> | <code>*string</code> | Unique key for question. |
 | <code><a href="#@cdktf/provider-okta.userFactorQuestion.UserFactorQuestionConfig.property.userId">UserId</a></code> | <code>*string</code> | ID of a Okta User. |
-| <code><a href="#@cdktf/provider-okta.userFactorQuestion.UserFactorQuestionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/user_factor_question#id UserFactorQuestion#id}. |
+| <code><a href="#@cdktf/provider-okta.userFactorQuestion.UserFactorQuestionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/user_factor_question#id UserFactorQuestion#id}. |
 
 ---
 
@@ -849,7 +849,7 @@ Answer *string
 
 User password security answer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/user_factor_question#answer UserFactorQuestion#answer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/user_factor_question#answer UserFactorQuestion#answer}
 
 ---
 
@@ -863,7 +863,7 @@ Key *string
 
 Unique key for question.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/user_factor_question#key UserFactorQuestion#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/user_factor_question#key UserFactorQuestion#key}
 
 ---
 
@@ -877,7 +877,7 @@ UserId *string
 
 ID of a Okta User.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/user_factor_question#user_id UserFactorQuestion#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/user_factor_question#user_id UserFactorQuestion#user_id}
 
 ---
 
@@ -889,7 +889,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/user_factor_question#id UserFactorQuestion#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/user_factor_question#id UserFactorQuestion#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

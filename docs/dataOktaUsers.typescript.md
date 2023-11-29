@@ -4,7 +4,7 @@
 
 ### DataOktaUsers <a name="DataOktaUsers" id="@cdktf/provider-okta.dataOktaUsers.DataOktaUsers"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/data-sources/users okta_users}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/data-sources/users okta_users}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaUsers.DataOktaUsers.Initializer"></a>
 
@@ -418,7 +418,7 @@ The construct id used in the generated config for the DataOktaUsers to import.
 
 The id of the existing DataOktaUsers that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/data-sources/users#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/data-sources/users#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -780,7 +780,7 @@ const dataOktaUsersConfig: dataOktaUsers.DataOktaUsersConfig = { ... }
 | <code><a href="#@cdktf/provider-okta.dataOktaUsers.DataOktaUsersConfig.property.compoundSearchOperator">compoundSearchOperator</a></code> | <code>string</code> | Search operator used when joining mulitple search clauses. |
 | <code><a href="#@cdktf/provider-okta.dataOktaUsers.DataOktaUsersConfig.property.delayReadSeconds">delayReadSeconds</a></code> | <code>string</code> | Force delay of the users read by N seconds. |
 | <code><a href="#@cdktf/provider-okta.dataOktaUsers.DataOktaUsersConfig.property.groupId">groupId</a></code> | <code>string</code> | Find users based on group membership using the id of the group. |
-| <code><a href="#@cdktf/provider-okta.dataOktaUsers.DataOktaUsersConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/data-sources/users#id DataOktaUsers#id}. |
+| <code><a href="#@cdktf/provider-okta.dataOktaUsers.DataOktaUsersConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/data-sources/users#id DataOktaUsers#id}. |
 | <code><a href="#@cdktf/provider-okta.dataOktaUsers.DataOktaUsersConfig.property.includeGroups">includeGroups</a></code> | <code>boolean \| cdktf.IResolvable</code> | Fetch group memberships for each user. |
 | <code><a href="#@cdktf/provider-okta.dataOktaUsers.DataOktaUsersConfig.property.includeRoles">includeRoles</a></code> | <code>boolean \| cdktf.IResolvable</code> | Fetch user roles for each user. |
 | <code><a href="#@cdktf/provider-okta.dataOktaUsers.DataOktaUsersConfig.property.search">search</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-okta.dataOktaUsers.DataOktaUsersSearch">DataOktaUsersSearch</a>[]</code> | search block. |
@@ -867,7 +867,7 @@ public readonly compoundSearchOperator: string;
 
 Search operator used when joining mulitple search clauses.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/data-sources/users#compound_search_operator DataOktaUsers#compound_search_operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/data-sources/users#compound_search_operator DataOktaUsers#compound_search_operator}
 
 ---
 
@@ -883,7 +883,7 @@ Force delay of the users read by N seconds.
 
 Useful when eventual consistency of users information needs to be allowed for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/data-sources/users#delay_read_seconds DataOktaUsers#delay_read_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/data-sources/users#delay_read_seconds DataOktaUsers#delay_read_seconds}
 
 ---
 
@@ -897,7 +897,7 @@ public readonly groupId: string;
 
 Find users based on group membership using the id of the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/data-sources/users#group_id DataOktaUsers#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/data-sources/users#group_id DataOktaUsers#group_id}
 
 ---
 
@@ -909,7 +909,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/data-sources/users#id DataOktaUsers#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/data-sources/users#id DataOktaUsers#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -926,7 +926,7 @@ public readonly includeGroups: boolean | IResolvable;
 
 Fetch group memberships for each user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/data-sources/users#include_groups DataOktaUsers#include_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/data-sources/users#include_groups DataOktaUsers#include_groups}
 
 ---
 
@@ -940,7 +940,7 @@ public readonly includeRoles: boolean | IResolvable;
 
 Fetch user roles for each user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/data-sources/users#include_roles DataOktaUsers#include_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/data-sources/users#include_roles DataOktaUsers#include_roles}
 
 ---
 
@@ -954,7 +954,7 @@ public readonly search: IResolvable | DataOktaUsersSearch[];
 
 search block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/data-sources/users#search DataOktaUsers#search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/data-sources/users#search DataOktaUsers#search}
 
 ---
 
@@ -972,10 +972,10 @@ const dataOktaUsersSearch: dataOktaUsers.DataOktaUsersSearch = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.dataOktaUsers.DataOktaUsersSearch.property.comparison">comparison</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/data-sources/users#comparison DataOktaUsers#comparison}. |
+| <code><a href="#@cdktf/provider-okta.dataOktaUsers.DataOktaUsersSearch.property.comparison">comparison</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/data-sources/users#comparison DataOktaUsers#comparison}. |
 | <code><a href="#@cdktf/provider-okta.dataOktaUsers.DataOktaUsersSearch.property.expression">expression</a></code> | <code>string</code> | A raw search expression string. |
 | <code><a href="#@cdktf/provider-okta.dataOktaUsers.DataOktaUsersSearch.property.name">name</a></code> | <code>string</code> | Property name to search for. |
-| <code><a href="#@cdktf/provider-okta.dataOktaUsers.DataOktaUsersSearch.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/data-sources/users#value DataOktaUsers#value}. |
+| <code><a href="#@cdktf/provider-okta.dataOktaUsers.DataOktaUsersSearch.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/data-sources/users#value DataOktaUsers#value}. |
 
 ---
 
@@ -987,7 +987,7 @@ public readonly comparison: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/data-sources/users#comparison DataOktaUsers#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/data-sources/users#comparison DataOktaUsers#comparison}.
 
 ---
 
@@ -1003,7 +1003,7 @@ A raw search expression string.
 
 This requires the search feature be on. Please see Okta documentation on their filter API for users. https://developer.okta.com/docs/api/resources/users#list-users-with-search
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/data-sources/users#expression DataOktaUsers#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/data-sources/users#expression DataOktaUsers#expression}
 
 ---
 
@@ -1019,7 +1019,7 @@ Property name to search for.
 
 This requires the search feature be on. Please see Okta documentation on their filter API for users. https://developer.okta.com/docs/api/resources/users#list-users-with-search
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/data-sources/users#name DataOktaUsers#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/data-sources/users#name DataOktaUsers#name}
 
 ---
 
@@ -1031,7 +1031,7 @@ public readonly value: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/data-sources/users#value DataOktaUsers#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/data-sources/users#value DataOktaUsers#value}.
 
 ---
 

@@ -4,12 +4,12 @@
 
 ### DataOktaOrgMetadata <a name="DataOktaOrgMetadata" id="@cdktf/provider-okta.dataOktaOrgMetadata.DataOktaOrgMetadata"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/data-sources/org_metadata okta_org_metadata}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/data-sources/org_metadata okta_org_metadata}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaOrgMetadata.DataOktaOrgMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktaorgmetadata"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaorgmetadata"
 
 dataoktaorgmetadata.NewDataOktaOrgMetadata(scope Construct, id *string, config DataOktaOrgMetadataConfig) DataOktaOrgMetadata
 ```
@@ -267,7 +267,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.dataOktaOrgMetadata.DataOktaOrgMetadata.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktaorgmetadata"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaorgmetadata"
 
 dataoktaorgmetadata.DataOktaOrgMetadata_IsConstruct(x interface{}) *bool
 ```
@@ -299,7 +299,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.dataOktaOrgMetadata.DataOktaOrgMetadata.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktaorgmetadata"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaorgmetadata"
 
 dataoktaorgmetadata.DataOktaOrgMetadata_IsTerraformElement(x interface{}) *bool
 ```
@@ -313,7 +313,7 @@ dataoktaorgmetadata.DataOktaOrgMetadata_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-okta.dataOktaOrgMetadata.DataOktaOrgMetadata.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktaorgmetadata"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaorgmetadata"
 
 dataoktaorgmetadata.DataOktaOrgMetadata_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -327,7 +327,7 @@ dataoktaorgmetadata.DataOktaOrgMetadata_IsTerraformDataSource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.dataOktaOrgMetadata.DataOktaOrgMetadata.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktaorgmetadata"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaorgmetadata"
 
 dataoktaorgmetadata.DataOktaOrgMetadata_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -356,7 +356,7 @@ The construct id used in the generated config for the DataOktaOrgMetadata to imp
 
 The id of the existing DataOktaOrgMetadata that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/data-sources/org_metadata#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/data-sources/org_metadata#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -578,7 +578,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaOrgMetadata.DataOktaOrgMetadataConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktaorgmetadata"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaorgmetadata"
 
 &dataoktaorgmetadata.DataOktaOrgMetadataConfig {
 	Connection: interface{},
@@ -680,7 +680,7 @@ Provisioners *[]interface{}
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaOrgMetadata.DataOktaOrgMetadataDomains.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktaorgmetadata"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaorgmetadata"
 
 &dataoktaorgmetadata.DataOktaOrgMetadataDomains {
 
@@ -693,7 +693,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktaorgmetadata"
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaOrgMetadata.DataOktaOrgMetadataSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktaorgmetadata"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaorgmetadata"
 
 &dataoktaorgmetadata.DataOktaOrgMetadataSettings {
 
@@ -708,7 +708,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktaorgmetadata"
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaOrgMetadata.DataOktaOrgMetadataDomainsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktaorgmetadata"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaorgmetadata"
 
 dataoktaorgmetadata.NewDataOktaOrgMetadataDomainsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataOktaOrgMetadataDomainsOutputReference
 ```
@@ -979,7 +979,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaOrgMetadata.DataOktaOrgMetadataSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktaorgmetadata"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaorgmetadata"
 
 dataoktaorgmetadata.NewDataOktaOrgMetadataSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataOktaOrgMetadataSettingsOutputReference
 ```

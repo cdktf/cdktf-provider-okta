@@ -4,12 +4,12 @@
 
 ### PolicyProfileEnrollmentApps <a name="PolicyProfileEnrollmentApps" id="@cdktf/provider-okta.policyProfileEnrollmentApps.PolicyProfileEnrollmentApps"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/policy_profile_enrollment_apps okta_policy_profile_enrollment_apps}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/policy_profile_enrollment_apps okta_policy_profile_enrollment_apps}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.policyProfileEnrollmentApps.PolicyProfileEnrollmentApps.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policyprofileenrollmentapps"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policyprofileenrollmentapps"
 
 policyprofileenrollmentapps.NewPolicyProfileEnrollmentApps(scope Construct, id *string, config PolicyProfileEnrollmentAppsConfig) PolicyProfileEnrollmentApps
 ```
@@ -342,7 +342,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.policyProfileEnrollmentApps.PolicyProfileEnrollmentApps.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policyprofileenrollmentapps"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policyprofileenrollmentapps"
 
 policyprofileenrollmentapps.PolicyProfileEnrollmentApps_IsConstruct(x interface{}) *bool
 ```
@@ -374,7 +374,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.policyProfileEnrollmentApps.PolicyProfileEnrollmentApps.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policyprofileenrollmentapps"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policyprofileenrollmentapps"
 
 policyprofileenrollmentapps.PolicyProfileEnrollmentApps_IsTerraformElement(x interface{}) *bool
 ```
@@ -388,7 +388,7 @@ policyprofileenrollmentapps.PolicyProfileEnrollmentApps_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.policyProfileEnrollmentApps.PolicyProfileEnrollmentApps.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policyprofileenrollmentapps"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policyprofileenrollmentapps"
 
 policyprofileenrollmentapps.PolicyProfileEnrollmentApps_IsTerraformResource(x interface{}) *bool
 ```
@@ -402,7 +402,7 @@ policyprofileenrollmentapps.PolicyProfileEnrollmentApps_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.policyProfileEnrollmentApps.PolicyProfileEnrollmentApps.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policyprofileenrollmentapps"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policyprofileenrollmentapps"
 
 policyprofileenrollmentapps.PolicyProfileEnrollmentApps_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -431,7 +431,7 @@ The construct id used in the generated config for the PolicyProfileEnrollmentApp
 
 The id of the existing PolicyProfileEnrollmentApps that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/policy_profile_enrollment_apps#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/policy_profile_enrollment_apps#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -708,7 +708,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.policyProfileEnrollmentApps.PolicyProfileEnrollmentAppsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policyprofileenrollmentapps"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policyprofileenrollmentapps"
 
 &policyprofileenrollmentapps.PolicyProfileEnrollmentAppsConfig {
 	Connection: interface{},
@@ -737,7 +737,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policyprofileenrollment
 | <code><a href="#@cdktf/provider-okta.policyProfileEnrollmentApps.PolicyProfileEnrollmentAppsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyProfileEnrollmentApps.PolicyProfileEnrollmentAppsConfig.property.policyId">PolicyId</a></code> | <code>*string</code> | ID of the enrollment policy. |
 | <code><a href="#@cdktf/provider-okta.policyProfileEnrollmentApps.PolicyProfileEnrollmentAppsConfig.property.apps">Apps</a></code> | <code>*[]*string</code> | List of app IDs to be added to this policy. |
-| <code><a href="#@cdktf/provider-okta.policyProfileEnrollmentApps.PolicyProfileEnrollmentAppsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/policy_profile_enrollment_apps#id PolicyProfileEnrollmentApps#id}. |
+| <code><a href="#@cdktf/provider-okta.policyProfileEnrollmentApps.PolicyProfileEnrollmentAppsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/policy_profile_enrollment_apps#id PolicyProfileEnrollmentApps#id}. |
 
 ---
 
@@ -821,7 +821,7 @@ PolicyId *string
 
 ID of the enrollment policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/policy_profile_enrollment_apps#policy_id PolicyProfileEnrollmentApps#policy_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/policy_profile_enrollment_apps#policy_id PolicyProfileEnrollmentApps#policy_id}
 
 ---
 
@@ -835,7 +835,7 @@ Apps *[]*string
 
 List of app IDs to be added to this policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/policy_profile_enrollment_apps#apps PolicyProfileEnrollmentApps#apps}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/policy_profile_enrollment_apps#apps PolicyProfileEnrollmentApps#apps}
 
 ---
 
@@ -847,7 +847,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/policy_profile_enrollment_apps#id PolicyProfileEnrollmentApps#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/policy_profile_enrollment_apps#id PolicyProfileEnrollmentApps#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

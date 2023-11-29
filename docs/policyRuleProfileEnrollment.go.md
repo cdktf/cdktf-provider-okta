@@ -4,12 +4,12 @@
 
 ### PolicyRuleProfileEnrollment <a name="PolicyRuleProfileEnrollment" id="@cdktf/provider-okta.policyRuleProfileEnrollment.PolicyRuleProfileEnrollment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/policy_rule_profile_enrollment okta_policy_rule_profile_enrollment}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/policy_rule_profile_enrollment okta_policy_rule_profile_enrollment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.policyRuleProfileEnrollment.PolicyRuleProfileEnrollment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policyruleprofileenrollment"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policyruleprofileenrollment"
 
 policyruleprofileenrollment.NewPolicyRuleProfileEnrollment(scope Construct, id *string, config PolicyRuleProfileEnrollmentConfig) PolicyRuleProfileEnrollment
 ```
@@ -397,7 +397,7 @@ func ResetUiSchemaId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.policyRuleProfileEnrollment.PolicyRuleProfileEnrollment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policyruleprofileenrollment"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policyruleprofileenrollment"
 
 policyruleprofileenrollment.PolicyRuleProfileEnrollment_IsConstruct(x interface{}) *bool
 ```
@@ -429,7 +429,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.policyRuleProfileEnrollment.PolicyRuleProfileEnrollment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policyruleprofileenrollment"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policyruleprofileenrollment"
 
 policyruleprofileenrollment.PolicyRuleProfileEnrollment_IsTerraformElement(x interface{}) *bool
 ```
@@ -443,7 +443,7 @@ policyruleprofileenrollment.PolicyRuleProfileEnrollment_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.policyRuleProfileEnrollment.PolicyRuleProfileEnrollment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policyruleprofileenrollment"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policyruleprofileenrollment"
 
 policyruleprofileenrollment.PolicyRuleProfileEnrollment_IsTerraformResource(x interface{}) *bool
 ```
@@ -457,7 +457,7 @@ policyruleprofileenrollment.PolicyRuleProfileEnrollment_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.policyRuleProfileEnrollment.PolicyRuleProfileEnrollment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policyruleprofileenrollment"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policyruleprofileenrollment"
 
 policyruleprofileenrollment.PolicyRuleProfileEnrollment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -486,7 +486,7 @@ The construct id used in the generated config for the PolicyRuleProfileEnrollmen
 
 The id of the existing PolicyRuleProfileEnrollment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/policy_rule_profile_enrollment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/policy_rule_profile_enrollment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -928,7 +928,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.policyRuleProfileEnrollment.PolicyRuleProfileEnrollmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policyruleprofileenrollment"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policyruleprofileenrollment"
 
 &policyruleprofileenrollment.PolicyRuleProfileEnrollmentConfig {
 	Connection: interface{},
@@ -966,7 +966,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policyruleprofileenroll
 | <code><a href="#@cdktf/provider-okta.policyRuleProfileEnrollment.PolicyRuleProfileEnrollmentConfig.property.unknownUserAction">UnknownUserAction</a></code> | <code>*string</code> | Which action should be taken if this User is new. |
 | <code><a href="#@cdktf/provider-okta.policyRuleProfileEnrollment.PolicyRuleProfileEnrollmentConfig.property.access">Access</a></code> | <code>*string</code> | Allow or deny access based on the rule conditions: ALLOW or DENY. |
 | <code><a href="#@cdktf/provider-okta.policyRuleProfileEnrollment.PolicyRuleProfileEnrollmentConfig.property.emailVerification">EmailVerification</a></code> | <code>interface{}</code> | Indicates whether email verification should occur before access is granted. |
-| <code><a href="#@cdktf/provider-okta.policyRuleProfileEnrollment.PolicyRuleProfileEnrollmentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/policy_rule_profile_enrollment#id PolicyRuleProfileEnrollment#id}. |
+| <code><a href="#@cdktf/provider-okta.policyRuleProfileEnrollment.PolicyRuleProfileEnrollmentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/policy_rule_profile_enrollment#id PolicyRuleProfileEnrollment#id}. |
 | <code><a href="#@cdktf/provider-okta.policyRuleProfileEnrollment.PolicyRuleProfileEnrollmentConfig.property.inlineHookId">InlineHookId</a></code> | <code>*string</code> | ID of a Registration Inline Hook. |
 | <code><a href="#@cdktf/provider-okta.policyRuleProfileEnrollment.PolicyRuleProfileEnrollmentConfig.property.profileAttributes">ProfileAttributes</a></code> | <code>interface{}</code> | profile_attributes block. |
 | <code><a href="#@cdktf/provider-okta.policyRuleProfileEnrollment.PolicyRuleProfileEnrollmentConfig.property.progressiveProfilingAction">ProgressiveProfilingAction</a></code> | <code>*string</code> | Enabled or disabled progressive profiling action rule conditions: ENABLED or DISABLED. |
@@ -1055,7 +1055,7 @@ PolicyId *string
 
 ID of the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/policy_rule_profile_enrollment#policy_id PolicyRuleProfileEnrollment#policy_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/policy_rule_profile_enrollment#policy_id PolicyRuleProfileEnrollment#policy_id}
 
 ---
 
@@ -1069,7 +1069,7 @@ UnknownUserAction *string
 
 Which action should be taken if this User is new.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/policy_rule_profile_enrollment#unknown_user_action PolicyRuleProfileEnrollment#unknown_user_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/policy_rule_profile_enrollment#unknown_user_action PolicyRuleProfileEnrollment#unknown_user_action}
 
 ---
 
@@ -1083,7 +1083,7 @@ Access *string
 
 Allow or deny access based on the rule conditions: ALLOW or DENY.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/policy_rule_profile_enrollment#access PolicyRuleProfileEnrollment#access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/policy_rule_profile_enrollment#access PolicyRuleProfileEnrollment#access}
 
 ---
 
@@ -1097,7 +1097,7 @@ EmailVerification interface{}
 
 Indicates whether email verification should occur before access is granted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/policy_rule_profile_enrollment#email_verification PolicyRuleProfileEnrollment#email_verification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/policy_rule_profile_enrollment#email_verification PolicyRuleProfileEnrollment#email_verification}
 
 ---
 
@@ -1109,7 +1109,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/policy_rule_profile_enrollment#id PolicyRuleProfileEnrollment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/policy_rule_profile_enrollment#id PolicyRuleProfileEnrollment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1126,7 +1126,7 @@ InlineHookId *string
 
 ID of a Registration Inline Hook.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/policy_rule_profile_enrollment#inline_hook_id PolicyRuleProfileEnrollment#inline_hook_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/policy_rule_profile_enrollment#inline_hook_id PolicyRuleProfileEnrollment#inline_hook_id}
 
 ---
 
@@ -1140,7 +1140,7 @@ ProfileAttributes interface{}
 
 profile_attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/policy_rule_profile_enrollment#profile_attributes PolicyRuleProfileEnrollment#profile_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/policy_rule_profile_enrollment#profile_attributes PolicyRuleProfileEnrollment#profile_attributes}
 
 ---
 
@@ -1154,7 +1154,7 @@ ProgressiveProfilingAction *string
 
 Enabled or disabled progressive profiling action rule conditions: ENABLED or DISABLED.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/policy_rule_profile_enrollment#progressive_profiling_action PolicyRuleProfileEnrollment#progressive_profiling_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/policy_rule_profile_enrollment#progressive_profiling_action PolicyRuleProfileEnrollment#progressive_profiling_action}
 
 ---
 
@@ -1168,7 +1168,7 @@ TargetGroupId *string
 
 The ID of a Group that this User should be added to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/policy_rule_profile_enrollment#target_group_id PolicyRuleProfileEnrollment#target_group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/policy_rule_profile_enrollment#target_group_id PolicyRuleProfileEnrollment#target_group_id}
 
 ---
 
@@ -1182,7 +1182,7 @@ UiSchemaId *string
 
 Value created by the backend. If present all policy updates must include this attribute/value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/policy_rule_profile_enrollment#ui_schema_id PolicyRuleProfileEnrollment#ui_schema_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/policy_rule_profile_enrollment#ui_schema_id PolicyRuleProfileEnrollment#ui_schema_id}
 
 ---
 
@@ -1191,7 +1191,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.policyRuleProfileEnrollment.PolicyRuleProfileEnrollmentProfileAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policyruleprofileenrollment"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policyruleprofileenrollment"
 
 &policyruleprofileenrollment.PolicyRuleProfileEnrollmentProfileAttributes {
 	Label: *string,
@@ -1220,7 +1220,7 @@ Label *string
 
 A display-friendly label for this property.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/policy_rule_profile_enrollment#label PolicyRuleProfileEnrollment#label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/policy_rule_profile_enrollment#label PolicyRuleProfileEnrollment#label}
 
 ---
 
@@ -1234,7 +1234,7 @@ Name *string
 
 The name of a User Profile property.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/policy_rule_profile_enrollment#name PolicyRuleProfileEnrollment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/policy_rule_profile_enrollment#name PolicyRuleProfileEnrollment#name}
 
 ---
 
@@ -1248,7 +1248,7 @@ Required interface{}
 
 Indicates if this property is required for enrollment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/policy_rule_profile_enrollment#required PolicyRuleProfileEnrollment#required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/policy_rule_profile_enrollment#required PolicyRuleProfileEnrollment#required}
 
 ---
 
@@ -1259,7 +1259,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.policyRuleProfileEnrollment.PolicyRuleProfileEnrollmentProfileAttributesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policyruleprofileenrollment"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policyruleprofileenrollment"
 
 policyruleprofileenrollment.NewPolicyRuleProfileEnrollmentProfileAttributesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PolicyRuleProfileEnrollmentProfileAttributesList
 ```
@@ -1402,7 +1402,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.policyRuleProfileEnrollment.PolicyRuleProfileEnrollmentProfileAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policyruleprofileenrollment"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policyruleprofileenrollment"
 
 policyruleprofileenrollment.NewPolicyRuleProfileEnrollmentProfileAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PolicyRuleProfileEnrollmentProfileAttributesOutputReference
 ```
