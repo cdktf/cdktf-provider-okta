@@ -4,7 +4,7 @@
 
 ### Brand <a name="Brand" id="@cdktf/provider-okta.brand.Brand"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/brand okta_brand}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/brand okta_brand}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.brand.Brand.Initializer"></a>
 
@@ -28,7 +28,6 @@ brand.Brand(
   default_app_app_instance_id: str = None,
   default_app_app_link_name: str = None,
   default_app_classic_application_uri: str = None,
-  email_domain_id: str = None,
   locale: str = None,
   remove_powered_by_okta: typing.Union[bool, IResolvable] = None
 )
@@ -52,7 +51,6 @@ brand.Brand(
 | <code><a href="#@cdktf/provider-okta.brand.Brand.Initializer.parameter.defaultAppAppInstanceId">default_app_app_instance_id</a></code> | <code>str</code> | Default app app instance id. |
 | <code><a href="#@cdktf/provider-okta.brand.Brand.Initializer.parameter.defaultAppAppLinkName">default_app_app_link_name</a></code> | <code>str</code> | Default app app link name. |
 | <code><a href="#@cdktf/provider-okta.brand.Brand.Initializer.parameter.defaultAppClassicApplicationUri">default_app_classic_application_uri</a></code> | <code>str</code> | Default app classic application uri. |
-| <code><a href="#@cdktf/provider-okta.brand.Brand.Initializer.parameter.emailDomainId">email_domain_id</a></code> | <code>str</code> | Email Domain ID tied to this brand. |
 | <code><a href="#@cdktf/provider-okta.brand.Brand.Initializer.parameter.locale">locale</a></code> | <code>str</code> | The language specified as an IETF BCP 47 language tag. |
 | <code><a href="#@cdktf/provider-okta.brand.Brand.Initializer.parameter.removePoweredByOkta">remove_powered_by_okta</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Removes "Powered by Okta" from the Okta-hosted sign-in page and "© 2021 Okta, Inc." from the Okta End-User Dashboard. |
 
@@ -124,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 Brand name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/brand#name Brand#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/brand#name Brand#name}
 
 ---
 
@@ -134,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Consent for updating the custom privacy policy URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/brand#agree_to_custom_privacy_policy Brand#agree_to_custom_privacy_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/brand#agree_to_custom_privacy_policy Brand#agree_to_custom_privacy_policy}
 
 ---
 
@@ -146,7 +144,7 @@ Brand ID - Note: Okta API for brands only reads and updates therefore the okta_b
 
 Do this by setting brand_id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/brand#brand_id Brand#brand_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/brand#brand_id Brand#brand_id}
 
 ---
 
@@ -156,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Custom privacy policy URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/brand#custom_privacy_policy_url Brand#custom_privacy_policy_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/brand#custom_privacy_policy_url Brand#custom_privacy_policy_url}
 
 ---
 
@@ -166,7 +164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Default app app instance id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/brand#default_app_app_instance_id Brand#default_app_app_instance_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/brand#default_app_app_instance_id Brand#default_app_app_instance_id}
 
 ---
 
@@ -176,7 +174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Default app app link name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/brand#default_app_app_link_name Brand#default_app_app_link_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/brand#default_app_app_link_name Brand#default_app_app_link_name}
 
 ---
 
@@ -186,17 +184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Default app classic application uri.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/brand#default_app_classic_application_uri Brand#default_app_classic_application_uri}
-
----
-
-##### `email_domain_id`<sup>Optional</sup> <a name="email_domain_id" id="@cdktf/provider-okta.brand.Brand.Initializer.parameter.emailDomainId"></a>
-
-- *Type:* str
-
-Email Domain ID tied to this brand.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/brand#email_domain_id Brand#email_domain_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/brand#default_app_classic_application_uri Brand#default_app_classic_application_uri}
 
 ---
 
@@ -206,7 +194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 The language specified as an IETF BCP 47 language tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/brand#locale Brand#locale}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/brand#locale Brand#locale}
 
 ---
 
@@ -216,7 +204,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Removes "Powered by Okta" from the Okta-hosted sign-in page and "© 2021 Okta, Inc." from the Okta End-User Dashboard.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/brand#remove_powered_by_okta Brand#remove_powered_by_okta}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/brand#remove_powered_by_okta Brand#remove_powered_by_okta}
 
 ---
 
@@ -249,7 +237,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 | <code><a href="#@cdktf/provider-okta.brand.Brand.resetDefaultAppAppInstanceId">reset_default_app_app_instance_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.brand.Brand.resetDefaultAppAppLinkName">reset_default_app_app_link_name</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.brand.Brand.resetDefaultAppClassicApplicationUri">reset_default_app_classic_application_uri</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.brand.Brand.resetEmailDomainId">reset_email_domain_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.brand.Brand.resetLocale">reset_locale</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.brand.Brand.resetRemovePoweredByOkta">reset_remove_powered_by_okta</a></code> | *No description.* |
 
@@ -566,12 +553,6 @@ def reset_default_app_app_link_name() -> None
 def reset_default_app_classic_application_uri() -> None
 ```
 
-##### `reset_email_domain_id` <a name="reset_email_domain_id" id="@cdktf/provider-okta.brand.Brand.resetEmailDomainId"></a>
-
-```python
-def reset_email_domain_id() -> None
-```
-
 ##### `reset_locale` <a name="reset_locale" id="@cdktf/provider-okta.brand.Brand.resetLocale"></a>
 
 ```python
@@ -698,7 +679,7 @@ The construct id used in the generated config for the Brand to import.
 
 The id of the existing Brand that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/brand#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/brand#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -728,6 +709,7 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs
 | <code><a href="#@cdktf/provider-okta.brand.Brand.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.brand.Brand.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.brand.Brand.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.brand.Brand.property.emailDomainId">email_domain_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.brand.Brand.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.brand.Brand.property.isDefault">is_default</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.brand.Brand.property.links">links</a></code> | <code>str</code> | *No description.* |
@@ -737,7 +719,6 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs
 | <code><a href="#@cdktf/provider-okta.brand.Brand.property.defaultAppAppInstanceIdInput">default_app_app_instance_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.brand.Brand.property.defaultAppAppLinkNameInput">default_app_app_link_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.brand.Brand.property.defaultAppClassicApplicationUriInput">default_app_classic_application_uri_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.brand.Brand.property.emailDomainIdInput">email_domain_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.brand.Brand.property.localeInput">locale_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.brand.Brand.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.brand.Brand.property.removePoweredByOktaInput">remove_powered_by_okta_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
@@ -747,7 +728,6 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs
 | <code><a href="#@cdktf/provider-okta.brand.Brand.property.defaultAppAppInstanceId">default_app_app_instance_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.brand.Brand.property.defaultAppAppLinkName">default_app_app_link_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.brand.Brand.property.defaultAppClassicApplicationUri">default_app_classic_application_uri</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.brand.Brand.property.emailDomainId">email_domain_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.brand.Brand.property.locale">locale</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.brand.Brand.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.brand.Brand.property.removePoweredByOkta">remove_powered_by_okta</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
@@ -896,6 +876,16 @@ provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, Re
 
 ---
 
+##### `email_domain_id`<sup>Required</sup> <a name="email_domain_id" id="@cdktf/provider-okta.brand.Brand.property.emailDomainId"></a>
+
+```python
+email_domain_id: str
+```
+
+- *Type:* str
+
+---
+
 ##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-okta.brand.Brand.property.id"></a>
 
 ```python
@@ -980,16 +970,6 @@ default_app_app_link_name_input: str
 
 ```python
 default_app_classic_application_uri_input: str
-```
-
-- *Type:* str
-
----
-
-##### `email_domain_id_input`<sup>Optional</sup> <a name="email_domain_id_input" id="@cdktf/provider-okta.brand.Brand.property.emailDomainIdInput"></a>
-
-```python
-email_domain_id_input: str
 ```
 
 - *Type:* str
@@ -1086,16 +1066,6 @@ default_app_classic_application_uri: str
 
 ---
 
-##### `email_domain_id`<sup>Required</sup> <a name="email_domain_id" id="@cdktf/provider-okta.brand.Brand.property.emailDomainId"></a>
-
-```python
-email_domain_id: str
-```
-
-- *Type:* str
-
----
-
 ##### `locale`<sup>Required</sup> <a name="locale" id="@cdktf/provider-okta.brand.Brand.property.locale"></a>
 
 ```python
@@ -1168,7 +1138,6 @@ brand.BrandConfig(
   default_app_app_instance_id: str = None,
   default_app_app_link_name: str = None,
   default_app_classic_application_uri: str = None,
-  email_domain_id: str = None,
   locale: str = None,
   remove_powered_by_okta: typing.Union[bool, IResolvable] = None
 )
@@ -1192,7 +1161,6 @@ brand.BrandConfig(
 | <code><a href="#@cdktf/provider-okta.brand.BrandConfig.property.defaultAppAppInstanceId">default_app_app_instance_id</a></code> | <code>str</code> | Default app app instance id. |
 | <code><a href="#@cdktf/provider-okta.brand.BrandConfig.property.defaultAppAppLinkName">default_app_app_link_name</a></code> | <code>str</code> | Default app app link name. |
 | <code><a href="#@cdktf/provider-okta.brand.BrandConfig.property.defaultAppClassicApplicationUri">default_app_classic_application_uri</a></code> | <code>str</code> | Default app classic application uri. |
-| <code><a href="#@cdktf/provider-okta.brand.BrandConfig.property.emailDomainId">email_domain_id</a></code> | <code>str</code> | Email Domain ID tied to this brand. |
 | <code><a href="#@cdktf/provider-okta.brand.BrandConfig.property.locale">locale</a></code> | <code>str</code> | The language specified as an IETF BCP 47 language tag. |
 | <code><a href="#@cdktf/provider-okta.brand.BrandConfig.property.removePoweredByOkta">remove_powered_by_okta</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Removes "Powered by Okta" from the Okta-hosted sign-in page and "© 2021 Okta, Inc." from the Okta End-User Dashboard. |
 
@@ -1278,7 +1246,7 @@ name: str
 
 Brand name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/brand#name Brand#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/brand#name Brand#name}
 
 ---
 
@@ -1292,7 +1260,7 @@ agree_to_custom_privacy_policy: typing.Union[bool, IResolvable]
 
 Consent for updating the custom privacy policy URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/brand#agree_to_custom_privacy_policy Brand#agree_to_custom_privacy_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/brand#agree_to_custom_privacy_policy Brand#agree_to_custom_privacy_policy}
 
 ---
 
@@ -1308,7 +1276,7 @@ Brand ID - Note: Okta API for brands only reads and updates therefore the okta_b
 
 Do this by setting brand_id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/brand#brand_id Brand#brand_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/brand#brand_id Brand#brand_id}
 
 ---
 
@@ -1322,7 +1290,7 @@ custom_privacy_policy_url: str
 
 Custom privacy policy URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/brand#custom_privacy_policy_url Brand#custom_privacy_policy_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/brand#custom_privacy_policy_url Brand#custom_privacy_policy_url}
 
 ---
 
@@ -1336,7 +1304,7 @@ default_app_app_instance_id: str
 
 Default app app instance id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/brand#default_app_app_instance_id Brand#default_app_app_instance_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/brand#default_app_app_instance_id Brand#default_app_app_instance_id}
 
 ---
 
@@ -1350,7 +1318,7 @@ default_app_app_link_name: str
 
 Default app app link name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/brand#default_app_app_link_name Brand#default_app_app_link_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/brand#default_app_app_link_name Brand#default_app_app_link_name}
 
 ---
 
@@ -1364,21 +1332,7 @@ default_app_classic_application_uri: str
 
 Default app classic application uri.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/brand#default_app_classic_application_uri Brand#default_app_classic_application_uri}
-
----
-
-##### `email_domain_id`<sup>Optional</sup> <a name="email_domain_id" id="@cdktf/provider-okta.brand.BrandConfig.property.emailDomainId"></a>
-
-```python
-email_domain_id: str
-```
-
-- *Type:* str
-
-Email Domain ID tied to this brand.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/brand#email_domain_id Brand#email_domain_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/brand#default_app_classic_application_uri Brand#default_app_classic_application_uri}
 
 ---
 
@@ -1392,7 +1346,7 @@ locale: str
 
 The language specified as an IETF BCP 47 language tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/brand#locale Brand#locale}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/brand#locale Brand#locale}
 
 ---
 
@@ -1406,7 +1360,7 @@ remove_powered_by_okta: typing.Union[bool, IResolvable]
 
 Removes "Powered by Okta" from the Okta-hosted sign-in page and "© 2021 Okta, Inc." from the Okta End-User Dashboard.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/brand#remove_powered_by_okta Brand#remove_powered_by_okta}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/brand#remove_powered_by_okta Brand#remove_powered_by_okta}
 
 ---
 

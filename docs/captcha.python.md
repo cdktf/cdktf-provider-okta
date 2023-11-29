@@ -4,7 +4,7 @@
 
 ### Captcha <a name="Captcha" id="@cdktf/provider-okta.captcha.Captcha"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/captcha okta_captcha}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/captcha okta_captcha}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.captcha.Captcha.Initializer"></a>
 
@@ -44,7 +44,7 @@ captcha.Captcha(
 | <code><a href="#@cdktf/provider-okta.captcha.Captcha.Initializer.parameter.secretKey">secret_key</a></code> | <code>str</code> | Secret key issued from the CAPTCHA vendor to perform server-side validation for a CAPTCHA token. |
 | <code><a href="#@cdktf/provider-okta.captcha.Captcha.Initializer.parameter.siteKey">site_key</a></code> | <code>str</code> | Site key issued from the CAPTCHA vendor to render a CAPTCHA on a page. |
 | <code><a href="#@cdktf/provider-okta.captcha.Captcha.Initializer.parameter.type">type</a></code> | <code>str</code> | Captcha type. |
-| <code><a href="#@cdktf/provider-okta.captcha.Captcha.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/captcha#id Captcha#id}. |
+| <code><a href="#@cdktf/provider-okta.captcha.Captcha.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/captcha#id Captcha#id}. |
 
 ---
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 Name of the CAPTCHA.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/captcha#name Captcha#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/captcha#name Captcha#name}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Secret key issued from the CAPTCHA vendor to perform server-side validation for a CAPTCHA token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/captcha#secret_key Captcha#secret_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/captcha#secret_key Captcha#secret_key}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Site key issued from the CAPTCHA vendor to render a CAPTCHA on a page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/captcha#site_key Captcha#site_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/captcha#site_key Captcha#site_key}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Captcha type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/captcha#type Captcha#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/captcha#type Captcha#type}
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/captcha#id Captcha#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/captcha#id Captcha#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -581,7 +581,7 @@ The construct id used in the generated config for the Captcha to import.
 
 The id of the existing Captcha that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/captcha#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/captcha#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -924,7 +924,7 @@ captcha.CaptchaConfig(
 | <code><a href="#@cdktf/provider-okta.captcha.CaptchaConfig.property.secretKey">secret_key</a></code> | <code>str</code> | Secret key issued from the CAPTCHA vendor to perform server-side validation for a CAPTCHA token. |
 | <code><a href="#@cdktf/provider-okta.captcha.CaptchaConfig.property.siteKey">site_key</a></code> | <code>str</code> | Site key issued from the CAPTCHA vendor to render a CAPTCHA on a page. |
 | <code><a href="#@cdktf/provider-okta.captcha.CaptchaConfig.property.type">type</a></code> | <code>str</code> | Captcha type. |
-| <code><a href="#@cdktf/provider-okta.captcha.CaptchaConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/captcha#id Captcha#id}. |
+| <code><a href="#@cdktf/provider-okta.captcha.CaptchaConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/captcha#id Captcha#id}. |
 
 ---
 
@@ -1008,7 +1008,7 @@ name: str
 
 Name of the CAPTCHA.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/captcha#name Captcha#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/captcha#name Captcha#name}
 
 ---
 
@@ -1022,7 +1022,7 @@ secret_key: str
 
 Secret key issued from the CAPTCHA vendor to perform server-side validation for a CAPTCHA token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/captcha#secret_key Captcha#secret_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/captcha#secret_key Captcha#secret_key}
 
 ---
 
@@ -1036,7 +1036,7 @@ site_key: str
 
 Site key issued from the CAPTCHA vendor to render a CAPTCHA on a page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/captcha#site_key Captcha#site_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/captcha#site_key Captcha#site_key}
 
 ---
 
@@ -1050,7 +1050,7 @@ type: str
 
 Captcha type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/captcha#type Captcha#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/captcha#type Captcha#type}
 
 ---
 
@@ -1062,7 +1062,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.1/docs/resources/captcha#id Captcha#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/captcha#id Captcha#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
