@@ -4,7 +4,7 @@
 
 ### CaptchaOrgWideSettings <a name="CaptchaOrgWideSettings" id="@cdktf/provider-okta.captchaOrgWideSettings.CaptchaOrgWideSettings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/captcha_org_wide_settings okta_captcha_org_wide_settings}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/captcha_org_wide_settings okta_captcha_org_wide_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.captchaOrgWideSettings.CaptchaOrgWideSettings.Initializer"></a>
 
@@ -438,7 +438,7 @@ The construct id used in the generated config for the CaptchaOrgWideSettings to 
 
 The id of the existing CaptchaOrgWideSettings that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/captcha_org_wide_settings#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/captcha_org_wide_settings#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -722,7 +722,7 @@ const captchaOrgWideSettingsConfig: captchaOrgWideSettings.CaptchaOrgWideSetting
 | <code><a href="#@cdktf/provider-okta.captchaOrgWideSettings.CaptchaOrgWideSettingsConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.captchaOrgWideSettings.CaptchaOrgWideSettingsConfig.property.captchaId">captchaId</a></code> | <code>string</code> | ID of the CAPTCHA. |
 | <code><a href="#@cdktf/provider-okta.captchaOrgWideSettings.CaptchaOrgWideSettingsConfig.property.enabledFor">enabledFor</a></code> | <code>string[]</code> | Set of pages that have CAPTCHA enabled. |
-| <code><a href="#@cdktf/provider-okta.captchaOrgWideSettings.CaptchaOrgWideSettingsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/captcha_org_wide_settings#id CaptchaOrgWideSettings#id}. |
+| <code><a href="#@cdktf/provider-okta.captchaOrgWideSettings.CaptchaOrgWideSettingsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/captcha_org_wide_settings#id CaptchaOrgWideSettings#id}. |
 
 ---
 
@@ -806,7 +806,7 @@ public readonly captchaId: string;
 
 ID of the CAPTCHA.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/captcha_org_wide_settings#captcha_id CaptchaOrgWideSettings#captcha_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/captcha_org_wide_settings#captcha_id CaptchaOrgWideSettings#captcha_id}
 
 ---
 
@@ -820,7 +820,7 @@ public readonly enabledFor: string[];
 
 Set of pages that have CAPTCHA enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/captcha_org_wide_settings#enabled_for CaptchaOrgWideSettings#enabled_for}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/captcha_org_wide_settings#enabled_for CaptchaOrgWideSettings#enabled_for}
 
 ---
 
@@ -832,7 +832,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/captcha_org_wide_settings#id CaptchaOrgWideSettings#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/captcha_org_wide_settings#id CaptchaOrgWideSettings#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

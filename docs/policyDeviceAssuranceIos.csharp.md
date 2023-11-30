@@ -4,7 +4,7 @@
 
 ### PolicyDeviceAssuranceIos <a name="PolicyDeviceAssuranceIos" id="@cdktf/provider-okta.policyDeviceAssuranceIos.PolicyDeviceAssuranceIos"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/policy_device_assurance_ios okta_policy_device_assurance_ios}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/policy_device_assurance_ios okta_policy_device_assurance_ios}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.policyDeviceAssuranceIos.PolicyDeviceAssuranceIos.Initializer"></a>
 
@@ -438,7 +438,7 @@ The construct id used in the generated config for the PolicyDeviceAssuranceIos t
 
 The id of the existing PolicyDeviceAssuranceIos that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/policy_device_assurance_ios#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/policy_device_assurance_ios#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -907,7 +907,7 @@ public string Name { get; set; }
 
 Policy device assurance name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/policy_device_assurance_ios#name PolicyDeviceAssuranceIos#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/policy_device_assurance_ios#name PolicyDeviceAssuranceIos#name}
 
 ---
 
@@ -921,7 +921,7 @@ public object Jailbreak { get; set; }
 
 The device jailbreak. Only for android and iOS platform.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/policy_device_assurance_ios#jailbreak PolicyDeviceAssuranceIos#jailbreak}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/policy_device_assurance_ios#jailbreak PolicyDeviceAssuranceIos#jailbreak}
 
 ---
 
@@ -935,7 +935,7 @@ public string OsVersion { get; set; }
 
 The device os minimum version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/policy_device_assurance_ios#os_version PolicyDeviceAssuranceIos#os_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/policy_device_assurance_ios#os_version PolicyDeviceAssuranceIos#os_version}
 
 ---
 
@@ -949,7 +949,7 @@ public string[] ScreenlockType { get; set; }
 
 List of screenlock type, can be BIOMETRIC or BIOMETRIC, PASSCODE.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/policy_device_assurance_ios#screenlock_type PolicyDeviceAssuranceIos#screenlock_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/policy_device_assurance_ios#screenlock_type PolicyDeviceAssuranceIos#screenlock_type}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### Brand <a name="Brand" id="@cdktf/provider-okta.brand.Brand"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/brand okta_brand}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/brand okta_brand}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.brand.Brand.Initializer"></a>
 
@@ -473,7 +473,7 @@ The construct id used in the generated config for the Brand to import.
 
 The id of the existing Brand that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/brand#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/brand#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1023,7 +1023,7 @@ public readonly name: string;
 
 Brand name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/brand#name Brand#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/brand#name Brand#name}
 
 ---
 
@@ -1037,7 +1037,7 @@ public readonly agreeToCustomPrivacyPolicy: boolean | IResolvable;
 
 Consent for updating the custom privacy policy URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/brand#agree_to_custom_privacy_policy Brand#agree_to_custom_privacy_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/brand#agree_to_custom_privacy_policy Brand#agree_to_custom_privacy_policy}
 
 ---
 
@@ -1053,7 +1053,7 @@ Brand ID - Note: Okta API for brands only reads and updates therefore the okta_b
 
 Do this by setting brand_id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/brand#brand_id Brand#brand_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/brand#brand_id Brand#brand_id}
 
 ---
 
@@ -1067,7 +1067,7 @@ public readonly customPrivacyPolicyUrl: string;
 
 Custom privacy policy URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/brand#custom_privacy_policy_url Brand#custom_privacy_policy_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/brand#custom_privacy_policy_url Brand#custom_privacy_policy_url}
 
 ---
 
@@ -1081,7 +1081,7 @@ public readonly defaultAppAppInstanceId: string;
 
 Default app app instance id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/brand#default_app_app_instance_id Brand#default_app_app_instance_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/brand#default_app_app_instance_id Brand#default_app_app_instance_id}
 
 ---
 
@@ -1095,7 +1095,7 @@ public readonly defaultAppAppLinkName: string;
 
 Default app app link name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/brand#default_app_app_link_name Brand#default_app_app_link_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/brand#default_app_app_link_name Brand#default_app_app_link_name}
 
 ---
 
@@ -1109,7 +1109,7 @@ public readonly defaultAppClassicApplicationUri: string;
 
 Default app classic application uri.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/brand#default_app_classic_application_uri Brand#default_app_classic_application_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/brand#default_app_classic_application_uri Brand#default_app_classic_application_uri}
 
 ---
 
@@ -1123,7 +1123,7 @@ public readonly locale: string;
 
 The language specified as an IETF BCP 47 language tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/brand#locale Brand#locale}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/brand#locale Brand#locale}
 
 ---
 
@@ -1137,7 +1137,7 @@ public readonly removePoweredByOkta: boolean | IResolvable;
 
 Removes "Powered by Okta" from the Okta-hosted sign-in page and "© 2021 Okta, Inc." from the Okta End-User Dashboard.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/brand#remove_powered_by_okta Brand#remove_powered_by_okta}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/brand#remove_powered_by_okta Brand#remove_powered_by_okta}
 
 ---
 

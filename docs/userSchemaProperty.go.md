@@ -4,7 +4,7 @@
 
 ### UserSchemaProperty <a name="UserSchemaProperty" id="@cdktf/provider-okta.userSchemaProperty.UserSchemaProperty"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/user_schema_property okta_user_schema_property}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user_schema_property okta_user_schema_property}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.userSchemaProperty.UserSchemaProperty.Initializer"></a>
 
@@ -589,7 +589,7 @@ The construct id used in the generated config for the UserSchemaProperty to impo
 
 The id of the existing UserSchemaProperty that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/user_schema_property#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user_schema_property#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1300,7 +1300,7 @@ Const *string
 
 Enum value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/user_schema_property#const UserSchemaProperty#const}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user_schema_property#const UserSchemaProperty#const}
 
 ---
 
@@ -1314,7 +1314,7 @@ Title *string
 
 Enum title.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/user_schema_property#title UserSchemaProperty#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user_schema_property#title UserSchemaProperty#title}
 
 ---
 
@@ -1379,7 +1379,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/userschemaproperty"
 | <code><a href="#@cdktf/provider-okta.userSchemaProperty.UserSchemaPropertyConfig.property.enum">Enum</a></code> | <code>*[]*string</code> | Custom Subschema enumerated value of the property. see: developer.okta.com/docs/api/resources/schemas#user-profile-schema-property-object. |
 | <code><a href="#@cdktf/provider-okta.userSchemaProperty.UserSchemaPropertyConfig.property.externalName">ExternalName</a></code> | <code>*string</code> | Subschema external name. |
 | <code><a href="#@cdktf/provider-okta.userSchemaProperty.UserSchemaPropertyConfig.property.externalNamespace">ExternalNamespace</a></code> | <code>*string</code> | Subschema external namespace. |
-| <code><a href="#@cdktf/provider-okta.userSchemaProperty.UserSchemaPropertyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/user_schema_property#id UserSchemaProperty#id}. |
+| <code><a href="#@cdktf/provider-okta.userSchemaProperty.UserSchemaPropertyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user_schema_property#id UserSchemaProperty#id}. |
 | <code><a href="#@cdktf/provider-okta.userSchemaProperty.UserSchemaPropertyConfig.property.master">Master</a></code> | <code>*string</code> | SubSchema profile manager, if not set it will inherit its setting. |
 | <code><a href="#@cdktf/provider-okta.userSchemaProperty.UserSchemaPropertyConfig.property.masterOverridePriority">MasterOverridePriority</a></code> | <code>interface{}</code> | master_override_priority block. |
 | <code><a href="#@cdktf/provider-okta.userSchemaProperty.UserSchemaPropertyConfig.property.maxLength">MaxLength</a></code> | <code>*f64</code> | Subschema of type string maximum length. |
@@ -1388,7 +1388,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/userschemaproperty"
 | <code><a href="#@cdktf/provider-okta.userSchemaProperty.UserSchemaPropertyConfig.property.pattern">Pattern</a></code> | <code>*string</code> | The validation pattern to use for the subschema. Must be in form of '.+', or '[<pattern>]+' if present.'. |
 | <code><a href="#@cdktf/provider-okta.userSchemaProperty.UserSchemaPropertyConfig.property.permissions">Permissions</a></code> | <code>*string</code> | SubSchema permissions: HIDE, READ_ONLY, or READ_WRITE. |
 | <code><a href="#@cdktf/provider-okta.userSchemaProperty.UserSchemaPropertyConfig.property.required">Required</a></code> | <code>interface{}</code> | Whether the subschema is required. |
-| <code><a href="#@cdktf/provider-okta.userSchemaProperty.UserSchemaPropertyConfig.property.scope">Scope</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/user_schema_property#scope UserSchemaProperty#scope}. |
+| <code><a href="#@cdktf/provider-okta.userSchemaProperty.UserSchemaPropertyConfig.property.scope">Scope</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user_schema_property#scope UserSchemaProperty#scope}. |
 | <code><a href="#@cdktf/provider-okta.userSchemaProperty.UserSchemaPropertyConfig.property.unique">Unique</a></code> | <code>*string</code> | Subschema unique restriction. |
 | <code><a href="#@cdktf/provider-okta.userSchemaProperty.UserSchemaPropertyConfig.property.userType">UserType</a></code> | <code>*string</code> | Custom subschema user type. |
 
@@ -1474,7 +1474,7 @@ Index *string
 
 Subschema unique string identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/user_schema_property#index UserSchemaProperty#index}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user_schema_property#index UserSchemaProperty#index}
 
 ---
 
@@ -1488,7 +1488,7 @@ Title *string
 
 Subschema title (display name).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/user_schema_property#title UserSchemaProperty#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user_schema_property#title UserSchemaProperty#title}
 
 ---
 
@@ -1502,7 +1502,7 @@ Type *string
 
 Subschema type: string, boolean, number, integer, array, or object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/user_schema_property#type UserSchemaProperty#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user_schema_property#type UserSchemaProperty#type}
 
 ---
 
@@ -1516,7 +1516,7 @@ ArrayEnum *[]*string
 
 Custom Subschema enumerated value of a property of type array.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/user_schema_property#array_enum UserSchemaProperty#array_enum}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user_schema_property#array_enum UserSchemaProperty#array_enum}
 
 ---
 
@@ -1530,7 +1530,7 @@ ArrayOneOf interface{}
 
 array_one_of block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/user_schema_property#array_one_of UserSchemaProperty#array_one_of}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user_schema_property#array_one_of UserSchemaProperty#array_one_of}
 
 ---
 
@@ -1544,7 +1544,7 @@ ArrayType *string
 
 Subschema array type: string, number, integer, reference. Type field must be an array.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/user_schema_property#array_type UserSchemaProperty#array_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user_schema_property#array_type UserSchemaProperty#array_type}
 
 ---
 
@@ -1558,7 +1558,7 @@ Description *string
 
 Custom Subschema description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/user_schema_property#description UserSchemaProperty#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user_schema_property#description UserSchemaProperty#description}
 
 ---
 
@@ -1572,7 +1572,7 @@ Enum *[]*string
 
 Custom Subschema enumerated value of the property. see: developer.okta.com/docs/api/resources/schemas#user-profile-schema-property-object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/user_schema_property#enum UserSchemaProperty#enum}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user_schema_property#enum UserSchemaProperty#enum}
 
 ---
 
@@ -1586,7 +1586,7 @@ ExternalName *string
 
 Subschema external name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/user_schema_property#external_name UserSchemaProperty#external_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user_schema_property#external_name UserSchemaProperty#external_name}
 
 ---
 
@@ -1600,7 +1600,7 @@ ExternalNamespace *string
 
 Subschema external namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/user_schema_property#external_namespace UserSchemaProperty#external_namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user_schema_property#external_namespace UserSchemaProperty#external_namespace}
 
 ---
 
@@ -1612,7 +1612,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/user_schema_property#id UserSchemaProperty#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user_schema_property#id UserSchemaProperty#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1629,7 +1629,7 @@ Master *string
 
 SubSchema profile manager, if not set it will inherit its setting.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/user_schema_property#master UserSchemaProperty#master}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user_schema_property#master UserSchemaProperty#master}
 
 ---
 
@@ -1643,7 +1643,7 @@ MasterOverridePriority interface{}
 
 master_override_priority block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/user_schema_property#master_override_priority UserSchemaProperty#master_override_priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user_schema_property#master_override_priority UserSchemaProperty#master_override_priority}
 
 ---
 
@@ -1657,7 +1657,7 @@ MaxLength *f64
 
 Subschema of type string maximum length.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/user_schema_property#max_length UserSchemaProperty#max_length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user_schema_property#max_length UserSchemaProperty#max_length}
 
 ---
 
@@ -1671,7 +1671,7 @@ MinLength *f64
 
 Subschema of type string minimum length.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/user_schema_property#min_length UserSchemaProperty#min_length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user_schema_property#min_length UserSchemaProperty#min_length}
 
 ---
 
@@ -1685,7 +1685,7 @@ OneOf interface{}
 
 one_of block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/user_schema_property#one_of UserSchemaProperty#one_of}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user_schema_property#one_of UserSchemaProperty#one_of}
 
 ---
 
@@ -1699,7 +1699,7 @@ Pattern *string
 
 The validation pattern to use for the subschema. Must be in form of '.+', or '[<pattern>]+' if present.'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/user_schema_property#pattern UserSchemaProperty#pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user_schema_property#pattern UserSchemaProperty#pattern}
 
 ---
 
@@ -1713,7 +1713,7 @@ Permissions *string
 
 SubSchema permissions: HIDE, READ_ONLY, or READ_WRITE.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/user_schema_property#permissions UserSchemaProperty#permissions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user_schema_property#permissions UserSchemaProperty#permissions}
 
 ---
 
@@ -1727,7 +1727,7 @@ Required interface{}
 
 Whether the subschema is required.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/user_schema_property#required UserSchemaProperty#required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user_schema_property#required UserSchemaProperty#required}
 
 ---
 
@@ -1739,7 +1739,7 @@ Scope *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/user_schema_property#scope UserSchemaProperty#scope}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user_schema_property#scope UserSchemaProperty#scope}.
 
 ---
 
@@ -1753,7 +1753,7 @@ Unique *string
 
 Subschema unique restriction.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/user_schema_property#unique UserSchemaProperty#unique}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user_schema_property#unique UserSchemaProperty#unique}
 
 ---
 
@@ -1767,7 +1767,7 @@ UserType *string
 
 Custom subschema user type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/user_schema_property#user_type UserSchemaProperty#user_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user_schema_property#user_type UserSchemaProperty#user_type}
 
 ---
 
@@ -1788,8 +1788,8 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/userschemaproperty"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.userSchemaProperty.UserSchemaPropertyMasterOverridePriority.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/user_schema_property#value UserSchemaProperty#value}. |
-| <code><a href="#@cdktf/provider-okta.userSchemaProperty.UserSchemaPropertyMasterOverridePriority.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/user_schema_property#type UserSchemaProperty#type}. |
+| <code><a href="#@cdktf/provider-okta.userSchemaProperty.UserSchemaPropertyMasterOverridePriority.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user_schema_property#value UserSchemaProperty#value}. |
+| <code><a href="#@cdktf/provider-okta.userSchemaProperty.UserSchemaPropertyMasterOverridePriority.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user_schema_property#type UserSchemaProperty#type}. |
 
 ---
 
@@ -1801,7 +1801,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/user_schema_property#value UserSchemaProperty#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user_schema_property#value UserSchemaProperty#value}.
 
 ---
 
@@ -1813,7 +1813,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/user_schema_property#type UserSchemaProperty#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user_schema_property#type UserSchemaProperty#type}.
 
 ---
 
@@ -1849,7 +1849,7 @@ Const *string
 
 Enum value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/user_schema_property#const UserSchemaProperty#const}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user_schema_property#const UserSchemaProperty#const}
 
 ---
 
@@ -1863,7 +1863,7 @@ Title *string
 
 Enum title.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/user_schema_property#title UserSchemaProperty#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user_schema_property#title UserSchemaProperty#title}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### AppSwa <a name="AppSwa" id="@cdktf/provider-okta.appSwa.AppSwa"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/app_swa okta_app_swa}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_swa okta_app_swa}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appSwa.AppSwa.Initializer"></a>
 
@@ -605,7 +605,7 @@ The construct id used in the generated config for the AppSwa to import.
 
 The id of the existing AppSwa that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/app_swa#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_swa#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1472,7 +1472,7 @@ new AppSwaConfig {
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.enduserNote">EnduserNote</a></code> | <code>string</code> | Application notes for end users. |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.hideIos">HideIos</a></code> | <code>object</code> | Do not display application icon on mobile app. |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.hideWeb">HideWeb</a></code> | <code>object</code> | Do not display application icon to users. |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/app_swa#id AppSwa#id}. |
+| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_swa#id AppSwa#id}. |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.logo">Logo</a></code> | <code>string</code> | Local path to logo of the application. |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.passwordField">PasswordField</a></code> | <code>string</code> | Login password field. |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.preconfiguredApp">PreconfiguredApp</a></code> | <code>string</code> | Preconfigured app name. |
@@ -1569,7 +1569,7 @@ public string Label { get; set; }
 
 Pretty name of app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/app_swa#label AppSwa#label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_swa#label AppSwa#label}
 
 ---
 
@@ -1583,7 +1583,7 @@ public string AccessibilityErrorRedirectUrl { get; set; }
 
 Custom error page URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/app_swa#accessibility_error_redirect_url AppSwa#accessibility_error_redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_swa#accessibility_error_redirect_url AppSwa#accessibility_error_redirect_url}
 
 ---
 
@@ -1597,7 +1597,7 @@ public string AccessibilityLoginRedirectUrl { get; set; }
 
 Custom login page URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/app_swa#accessibility_login_redirect_url AppSwa#accessibility_login_redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_swa#accessibility_login_redirect_url AppSwa#accessibility_login_redirect_url}
 
 ---
 
@@ -1611,7 +1611,7 @@ public object AccessibilitySelfService { get; set; }
 
 Enable self service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/app_swa#accessibility_self_service AppSwa#accessibility_self_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_swa#accessibility_self_service AppSwa#accessibility_self_service}
 
 ---
 
@@ -1625,7 +1625,7 @@ public string AdminNote { get; set; }
 
 Application notes for admins.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/app_swa#admin_note AppSwa#admin_note}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_swa#admin_note AppSwa#admin_note}
 
 ---
 
@@ -1639,7 +1639,7 @@ public string AppLinksJson { get; set; }
 
 Displays specific appLinks for the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/app_swa#app_links_json AppSwa#app_links_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_swa#app_links_json AppSwa#app_links_json}
 
 ---
 
@@ -1653,7 +1653,7 @@ public object AutoSubmitToolbar { get; set; }
 
 Display auto submit toolbar.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/app_swa#auto_submit_toolbar AppSwa#auto_submit_toolbar}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_swa#auto_submit_toolbar AppSwa#auto_submit_toolbar}
 
 ---
 
@@ -1667,7 +1667,7 @@ public string ButtonField { get; set; }
 
 Login button field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/app_swa#button_field AppSwa#button_field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_swa#button_field AppSwa#button_field}
 
 ---
 
@@ -1681,7 +1681,7 @@ public string Checkbox { get; set; }
 
 CSS selector for the checkbox.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/app_swa#checkbox AppSwa#checkbox}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_swa#checkbox AppSwa#checkbox}
 
 ---
 
@@ -1695,7 +1695,7 @@ public string EnduserNote { get; set; }
 
 Application notes for end users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/app_swa#enduser_note AppSwa#enduser_note}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_swa#enduser_note AppSwa#enduser_note}
 
 ---
 
@@ -1709,7 +1709,7 @@ public object HideIos { get; set; }
 
 Do not display application icon on mobile app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/app_swa#hide_ios AppSwa#hide_ios}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_swa#hide_ios AppSwa#hide_ios}
 
 ---
 
@@ -1723,7 +1723,7 @@ public object HideWeb { get; set; }
 
 Do not display application icon to users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/app_swa#hide_web AppSwa#hide_web}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_swa#hide_web AppSwa#hide_web}
 
 ---
 
@@ -1735,7 +1735,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/app_swa#id AppSwa#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_swa#id AppSwa#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1752,7 +1752,7 @@ public string Logo { get; set; }
 
 Local path to logo of the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/app_swa#logo AppSwa#logo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_swa#logo AppSwa#logo}
 
 ---
 
@@ -1766,7 +1766,7 @@ public string PasswordField { get; set; }
 
 Login password field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/app_swa#password_field AppSwa#password_field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_swa#password_field AppSwa#password_field}
 
 ---
 
@@ -1780,7 +1780,7 @@ public string PreconfiguredApp { get; set; }
 
 Preconfigured app name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/app_swa#preconfigured_app AppSwa#preconfigured_app}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_swa#preconfigured_app AppSwa#preconfigured_app}
 
 ---
 
@@ -1794,7 +1794,7 @@ public string RedirectUrl { get; set; }
 
 If going to the login page URL redirects to another page, then enter that URL here.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/app_swa#redirect_url AppSwa#redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_swa#redirect_url AppSwa#redirect_url}
 
 ---
 
@@ -1808,7 +1808,7 @@ public string Status { get; set; }
 
 Status of application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/app_swa#status AppSwa#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_swa#status AppSwa#status}
 
 ---
 
@@ -1822,7 +1822,7 @@ public AppSwaTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/app_swa#timeouts AppSwa#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_swa#timeouts AppSwa#timeouts}
 
 ---
 
@@ -1836,7 +1836,7 @@ public string Url { get; set; }
 
 Login URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/app_swa#url AppSwa#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_swa#url AppSwa#url}
 
 ---
 
@@ -1850,7 +1850,7 @@ public string UrlRegex { get; set; }
 
 A regex that further restricts URL to the specified regex.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/app_swa#url_regex AppSwa#url_regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_swa#url_regex AppSwa#url_regex}
 
 ---
 
@@ -1864,7 +1864,7 @@ public string UsernameField { get; set; }
 
 Login username field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/app_swa#username_field AppSwa#username_field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_swa#username_field AppSwa#username_field}
 
 ---
 
@@ -1878,7 +1878,7 @@ public string UserNameTemplate { get; set; }
 
 Username template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/app_swa#user_name_template AppSwa#user_name_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_swa#user_name_template AppSwa#user_name_template}
 
 ---
 
@@ -1892,7 +1892,7 @@ public string UserNameTemplatePushStatus { get; set; }
 
 Push username on update.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/app_swa#user_name_template_push_status AppSwa#user_name_template_push_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_swa#user_name_template_push_status AppSwa#user_name_template_push_status}
 
 ---
 
@@ -1906,7 +1906,7 @@ public string UserNameTemplateSuffix { get; set; }
 
 Username template suffix.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/app_swa#user_name_template_suffix AppSwa#user_name_template_suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_swa#user_name_template_suffix AppSwa#user_name_template_suffix}
 
 ---
 
@@ -1920,7 +1920,7 @@ public string UserNameTemplateType { get; set; }
 
 Username template type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/app_swa#user_name_template_type AppSwa#user_name_template_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_swa#user_name_template_type AppSwa#user_name_template_type}
 
 ---
 
@@ -1942,9 +1942,9 @@ new AppSwaTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/app_swa#create AppSwa#create}. |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/app_swa#read AppSwa#read}. |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/app_swa#update AppSwa#update}. |
+| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_swa#create AppSwa#create}. |
+| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_swa#read AppSwa#read}. |
+| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_swa#update AppSwa#update}. |
 
 ---
 
@@ -1956,7 +1956,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/app_swa#create AppSwa#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_swa#create AppSwa#create}.
 
 ---
 
@@ -1968,7 +1968,7 @@ public string Read { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/app_swa#read AppSwa#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_swa#read AppSwa#read}.
 
 ---
 
@@ -1980,7 +1980,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/app_swa#update AppSwa#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_swa#update AppSwa#update}.
 
 ---
 

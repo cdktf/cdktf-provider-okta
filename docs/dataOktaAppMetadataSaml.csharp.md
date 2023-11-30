@@ -4,7 +4,7 @@
 
 ### DataOktaAppMetadataSaml <a name="DataOktaAppMetadataSaml" id="@cdktf/provider-okta.dataOktaAppMetadataSaml.DataOktaAppMetadataSaml"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/data-sources/app_metadata_saml okta_app_metadata_saml}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/data-sources/app_metadata_saml okta_app_metadata_saml}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaAppMetadataSaml.DataOktaAppMetadataSaml.Initializer"></a>
 
@@ -370,7 +370,7 @@ The construct id used in the generated config for the DataOktaAppMetadataSaml to
 
 The id of the existing DataOktaAppMetadataSaml that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/data-sources/app_metadata_saml#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/data-sources/app_metadata_saml#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -708,7 +708,7 @@ new DataOktaAppMetadataSamlConfig {
 | <code><a href="#@cdktf/provider-okta.dataOktaAppMetadataSaml.DataOktaAppMetadataSamlConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaAppMetadataSaml.DataOktaAppMetadataSamlConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaAppMetadataSaml.DataOktaAppMetadataSamlConfig.property.appId">AppId</a></code> | <code>string</code> | The application ID. |
-| <code><a href="#@cdktf/provider-okta.dataOktaAppMetadataSaml.DataOktaAppMetadataSamlConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/data-sources/app_metadata_saml#id DataOktaAppMetadataSaml#id}. |
+| <code><a href="#@cdktf/provider-okta.dataOktaAppMetadataSaml.DataOktaAppMetadataSamlConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/data-sources/app_metadata_saml#id DataOktaAppMetadataSaml#id}. |
 | <code><a href="#@cdktf/provider-okta.dataOktaAppMetadataSaml.DataOktaAppMetadataSamlConfig.property.keyId">KeyId</a></code> | <code>string</code> | Certificate Key ID. |
 
 ---
@@ -793,7 +793,7 @@ public string AppId { get; set; }
 
 The application ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/data-sources/app_metadata_saml#app_id DataOktaAppMetadataSaml#app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/data-sources/app_metadata_saml#app_id DataOktaAppMetadataSaml#app_id}
 
 ---
 
@@ -805,7 +805,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/data-sources/app_metadata_saml#id DataOktaAppMetadataSaml#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/data-sources/app_metadata_saml#id DataOktaAppMetadataSaml#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -822,7 +822,7 @@ public string KeyId { get; set; }
 
 Certificate Key ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/data-sources/app_metadata_saml#key_id DataOktaAppMetadataSaml#key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/data-sources/app_metadata_saml#key_id DataOktaAppMetadataSaml#key_id}
 
 ---
 

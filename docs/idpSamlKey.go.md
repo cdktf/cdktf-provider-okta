@@ -4,7 +4,7 @@
 
 ### IdpSamlKey <a name="IdpSamlKey" id="@cdktf/provider-okta.idpSamlKey.IdpSamlKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/idp_saml_key okta_idp_saml_key}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/idp_saml_key okta_idp_saml_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.idpSamlKey.IdpSamlKey.Initializer"></a>
 
@@ -424,7 +424,7 @@ The construct id used in the generated config for the IdpSamlKey to import.
 
 The id of the existing IdpSamlKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/idp_saml_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/idp_saml_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -761,7 +761,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/idpsamlkey"
 | <code><a href="#@cdktf/provider-okta.idpSamlKey.IdpSamlKeyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSamlKey.IdpSamlKeyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSamlKey.IdpSamlKeyConfig.property.x5C">X5C</a></code> | <code>*[]*string</code> | base64-encoded X.509 certificate chain with DER encoding. |
-| <code><a href="#@cdktf/provider-okta.idpSamlKey.IdpSamlKeyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/idp_saml_key#id IdpSamlKey#id}. |
+| <code><a href="#@cdktf/provider-okta.idpSamlKey.IdpSamlKeyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/idp_saml_key#id IdpSamlKey#id}. |
 
 ---
 
@@ -845,7 +845,7 @@ X5C *[]*string
 
 base64-encoded X.509 certificate chain with DER encoding.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/idp_saml_key#x5c IdpSamlKey#x5c}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/idp_saml_key#x5c IdpSamlKey#x5c}
 
 ---
 
@@ -857,7 +857,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/idp_saml_key#id IdpSamlKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/idp_saml_key#id IdpSamlKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
