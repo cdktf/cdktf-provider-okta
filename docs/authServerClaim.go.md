@@ -4,12 +4,12 @@
 
 ### AuthServerClaim <a name="AuthServerClaim" id="@cdktf/provider-okta.authServerClaim.AuthServerClaim"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/auth_server_claim okta_auth_server_claim}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/auth_server_claim okta_auth_server_claim}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.authServerClaim.AuthServerClaim.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/authserverclaim"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/authserverclaim"
 
 authserverclaim.NewAuthServerClaim(scope Construct, id *string, config AuthServerClaimConfig) AuthServerClaim
 ```
@@ -370,7 +370,7 @@ func ResetValueType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.authServerClaim.AuthServerClaim.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/authserverclaim"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/authserverclaim"
 
 authserverclaim.AuthServerClaim_IsConstruct(x interface{}) *bool
 ```
@@ -402,7 +402,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.authServerClaim.AuthServerClaim.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/authserverclaim"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/authserverclaim"
 
 authserverclaim.AuthServerClaim_IsTerraformElement(x interface{}) *bool
 ```
@@ -416,7 +416,7 @@ authserverclaim.AuthServerClaim_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.authServerClaim.AuthServerClaim.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/authserverclaim"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/authserverclaim"
 
 authserverclaim.AuthServerClaim_IsTerraformResource(x interface{}) *bool
 ```
@@ -430,7 +430,7 @@ authserverclaim.AuthServerClaim_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.authServerClaim.AuthServerClaim.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/authserverclaim"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/authserverclaim"
 
 authserverclaim.AuthServerClaim_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -459,7 +459,7 @@ The construct id used in the generated config for the AuthServerClaim to import.
 
 The id of the existing AuthServerClaim that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/auth_server_claim#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/auth_server_claim#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -879,7 +879,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.authServerClaim.AuthServerClaimConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/authserverclaim"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/authserverclaim"
 
 &authserverclaim.AuthServerClaimConfig {
 	Connection: interface{},
@@ -919,9 +919,9 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/authserverclaim"
 | <code><a href="#@cdktf/provider-okta.authServerClaim.AuthServerClaimConfig.property.value">Value</a></code> | <code>*string</code> | The value of the claim. |
 | <code><a href="#@cdktf/provider-okta.authServerClaim.AuthServerClaimConfig.property.alwaysIncludeInToken">AlwaysIncludeInToken</a></code> | <code>interface{}</code> | Specifies whether to include claims in token, by default it is set to `true`. |
 | <code><a href="#@cdktf/provider-okta.authServerClaim.AuthServerClaimConfig.property.groupFilterType">GroupFilterType</a></code> | <code>*string</code> | Specifies the type of group filter if `value_type` is `GROUPS`. |
-| <code><a href="#@cdktf/provider-okta.authServerClaim.AuthServerClaimConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/auth_server_claim#id AuthServerClaim#id}. |
+| <code><a href="#@cdktf/provider-okta.authServerClaim.AuthServerClaimConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/auth_server_claim#id AuthServerClaim#id}. |
 | <code><a href="#@cdktf/provider-okta.authServerClaim.AuthServerClaimConfig.property.scopes">Scopes</a></code> | <code>*[]*string</code> | Auth server claim list of scopes. |
-| <code><a href="#@cdktf/provider-okta.authServerClaim.AuthServerClaimConfig.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/auth_server_claim#status AuthServerClaim#status}. |
+| <code><a href="#@cdktf/provider-okta.authServerClaim.AuthServerClaimConfig.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/auth_server_claim#status AuthServerClaim#status}. |
 | <code><a href="#@cdktf/provider-okta.authServerClaim.AuthServerClaimConfig.property.valueType">ValueType</a></code> | <code>*string</code> | The type of value of the claim. It can be set to `EXPRESSION` or `GROUPS`. It defaults to `EXPRESSION`. |
 
 ---
@@ -1006,7 +1006,7 @@ AuthServerId *string
 
 Auth server ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/auth_server_claim#auth_server_id AuthServerClaim#auth_server_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/auth_server_claim#auth_server_id AuthServerClaim#auth_server_id}
 
 ---
 
@@ -1020,7 +1020,7 @@ ClaimType *string
 
 Specifies whether the claim is for an access token `RESOURCE` or ID token `IDENTITY`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/auth_server_claim#claim_type AuthServerClaim#claim_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/auth_server_claim#claim_type AuthServerClaim#claim_type}
 
 ---
 
@@ -1034,7 +1034,7 @@ Name *string
 
 Auth server claim name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/auth_server_claim#name AuthServerClaim#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/auth_server_claim#name AuthServerClaim#name}
 
 ---
 
@@ -1048,7 +1048,7 @@ Value *string
 
 The value of the claim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/auth_server_claim#value AuthServerClaim#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/auth_server_claim#value AuthServerClaim#value}
 
 ---
 
@@ -1062,7 +1062,7 @@ AlwaysIncludeInToken interface{}
 
 Specifies whether to include claims in token, by default it is set to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/auth_server_claim#always_include_in_token AuthServerClaim#always_include_in_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/auth_server_claim#always_include_in_token AuthServerClaim#always_include_in_token}
 
 ---
 
@@ -1078,7 +1078,7 @@ Specifies the type of group filter if `value_type` is `GROUPS`.
 
 Can be set to one of the following `STARTS_WITH`, `EQUALS`, `CONTAINS`, `REGEX`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/auth_server_claim#group_filter_type AuthServerClaim#group_filter_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/auth_server_claim#group_filter_type AuthServerClaim#group_filter_type}
 
 ---
 
@@ -1090,7 +1090,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/auth_server_claim#id AuthServerClaim#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/auth_server_claim#id AuthServerClaim#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1107,7 +1107,7 @@ Scopes *[]*string
 
 Auth server claim list of scopes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/auth_server_claim#scopes AuthServerClaim#scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/auth_server_claim#scopes AuthServerClaim#scopes}
 
 ---
 
@@ -1119,7 +1119,7 @@ Status *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/auth_server_claim#status AuthServerClaim#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/auth_server_claim#status AuthServerClaim#status}.
 
 ---
 
@@ -1133,7 +1133,7 @@ ValueType *string
 
 The type of value of the claim. It can be set to `EXPRESSION` or `GROUPS`. It defaults to `EXPRESSION`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/auth_server_claim#value_type AuthServerClaim#value_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/auth_server_claim#value_type AuthServerClaim#value_type}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### AuthServerPolicyRule <a name="AuthServerPolicyRule" id="@cdktf/provider-okta.authServerPolicyRule.AuthServerPolicyRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/auth_server_policy_rule okta_auth_server_policy_rule}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/auth_server_policy_rule okta_auth_server_policy_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.authServerPolicyRule.AuthServerPolicyRule.Initializer"></a>
 
@@ -501,7 +501,7 @@ The construct id used in the generated config for the AuthServerPolicyRule to im
 
 The id of the existing AuthServerPolicyRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/auth_server_policy_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/auth_server_policy_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1135,12 +1135,12 @@ new AuthServerPolicyRuleConfig {
 | <code><a href="#@cdktf/provider-okta.authServerPolicyRule.AuthServerPolicyRuleConfig.property.accessTokenLifetimeMinutes">AccessTokenLifetimeMinutes</a></code> | <code>double</code> | Lifetime of access token. Can be set to a value between 5 and 1440 minutes. Default is `60`. |
 | <code><a href="#@cdktf/provider-okta.authServerPolicyRule.AuthServerPolicyRuleConfig.property.groupBlacklist">GroupBlacklist</a></code> | <code>string[]</code> | Specifies a set of Groups whose Users are to be excluded. |
 | <code><a href="#@cdktf/provider-okta.authServerPolicyRule.AuthServerPolicyRuleConfig.property.groupWhitelist">GroupWhitelist</a></code> | <code>string[]</code> | Specifies a set of Groups whose Users are to be included. |
-| <code><a href="#@cdktf/provider-okta.authServerPolicyRule.AuthServerPolicyRuleConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/auth_server_policy_rule#id AuthServerPolicyRule#id}. |
+| <code><a href="#@cdktf/provider-okta.authServerPolicyRule.AuthServerPolicyRuleConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/auth_server_policy_rule#id AuthServerPolicyRule#id}. |
 | <code><a href="#@cdktf/provider-okta.authServerPolicyRule.AuthServerPolicyRuleConfig.property.inlineHookId">InlineHookId</a></code> | <code>string</code> | The ID of the inline token to trigger. |
 | <code><a href="#@cdktf/provider-okta.authServerPolicyRule.AuthServerPolicyRuleConfig.property.refreshTokenLifetimeMinutes">RefreshTokenLifetimeMinutes</a></code> | <code>double</code> | Lifetime of refresh token. |
 | <code><a href="#@cdktf/provider-okta.authServerPolicyRule.AuthServerPolicyRuleConfig.property.refreshTokenWindowMinutes">RefreshTokenWindowMinutes</a></code> | <code>double</code> | Window in which a refresh token can be used. |
 | <code><a href="#@cdktf/provider-okta.authServerPolicyRule.AuthServerPolicyRuleConfig.property.scopeWhitelist">ScopeWhitelist</a></code> | <code>string[]</code> | Scopes allowed for this policy rule. |
-| <code><a href="#@cdktf/provider-okta.authServerPolicyRule.AuthServerPolicyRuleConfig.property.status">Status</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/auth_server_policy_rule#status AuthServerPolicyRule#status}. |
+| <code><a href="#@cdktf/provider-okta.authServerPolicyRule.AuthServerPolicyRuleConfig.property.status">Status</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/auth_server_policy_rule#status AuthServerPolicyRule#status}. |
 | <code><a href="#@cdktf/provider-okta.authServerPolicyRule.AuthServerPolicyRuleConfig.property.type">Type</a></code> | <code>string</code> | Auth server policy rule type, unlikely this will be anything other then the default. |
 | <code><a href="#@cdktf/provider-okta.authServerPolicyRule.AuthServerPolicyRuleConfig.property.userBlacklist">UserBlacklist</a></code> | <code>string[]</code> | Specifies a set of Users to be excluded. |
 | <code><a href="#@cdktf/provider-okta.authServerPolicyRule.AuthServerPolicyRuleConfig.property.userWhitelist">UserWhitelist</a></code> | <code>string[]</code> | Specifies a set of Users to be included. |
@@ -1227,7 +1227,7 @@ public string AuthServerId { get; set; }
 
 Auth server ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/auth_server_policy_rule#auth_server_id AuthServerPolicyRule#auth_server_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/auth_server_policy_rule#auth_server_id AuthServerPolicyRule#auth_server_id}
 
 ---
 
@@ -1241,7 +1241,7 @@ public string[] GrantTypeWhitelist { get; set; }
 
 Accepted grant type values: authorization_code, implicit, password, client_credentials.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/auth_server_policy_rule#grant_type_whitelist AuthServerPolicyRule#grant_type_whitelist}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/auth_server_policy_rule#grant_type_whitelist AuthServerPolicyRule#grant_type_whitelist}
 
 ---
 
@@ -1255,7 +1255,7 @@ public string Name { get; set; }
 
 Auth server policy rule name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/auth_server_policy_rule#name AuthServerPolicyRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/auth_server_policy_rule#name AuthServerPolicyRule#name}
 
 ---
 
@@ -1269,7 +1269,7 @@ public string PolicyId { get; set; }
 
 Auth server policy ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/auth_server_policy_rule#policy_id AuthServerPolicyRule#policy_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/auth_server_policy_rule#policy_id AuthServerPolicyRule#policy_id}
 
 ---
 
@@ -1283,7 +1283,7 @@ public double Priority { get; set; }
 
 Priority of the auth server policy rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/auth_server_policy_rule#priority AuthServerPolicyRule#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/auth_server_policy_rule#priority AuthServerPolicyRule#priority}
 
 ---
 
@@ -1297,7 +1297,7 @@ public double AccessTokenLifetimeMinutes { get; set; }
 
 Lifetime of access token. Can be set to a value between 5 and 1440 minutes. Default is `60`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/auth_server_policy_rule#access_token_lifetime_minutes AuthServerPolicyRule#access_token_lifetime_minutes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/auth_server_policy_rule#access_token_lifetime_minutes AuthServerPolicyRule#access_token_lifetime_minutes}
 
 ---
 
@@ -1311,7 +1311,7 @@ public string[] GroupBlacklist { get; set; }
 
 Specifies a set of Groups whose Users are to be excluded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/auth_server_policy_rule#group_blacklist AuthServerPolicyRule#group_blacklist}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/auth_server_policy_rule#group_blacklist AuthServerPolicyRule#group_blacklist}
 
 ---
 
@@ -1327,7 +1327,7 @@ Specifies a set of Groups whose Users are to be included.
 
 Can be set to Group ID or to the following: `EVERYONE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/auth_server_policy_rule#group_whitelist AuthServerPolicyRule#group_whitelist}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/auth_server_policy_rule#group_whitelist AuthServerPolicyRule#group_whitelist}
 
 ---
 
@@ -1339,7 +1339,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/auth_server_policy_rule#id AuthServerPolicyRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/auth_server_policy_rule#id AuthServerPolicyRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1356,7 +1356,7 @@ public string InlineHookId { get; set; }
 
 The ID of the inline token to trigger.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/auth_server_policy_rule#inline_hook_id AuthServerPolicyRule#inline_hook_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/auth_server_policy_rule#inline_hook_id AuthServerPolicyRule#inline_hook_id}
 
 ---
 
@@ -1370,7 +1370,7 @@ public double RefreshTokenLifetimeMinutes { get; set; }
 
 Lifetime of refresh token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/auth_server_policy_rule#refresh_token_lifetime_minutes AuthServerPolicyRule#refresh_token_lifetime_minutes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/auth_server_policy_rule#refresh_token_lifetime_minutes AuthServerPolicyRule#refresh_token_lifetime_minutes}
 
 ---
 
@@ -1386,7 +1386,7 @@ Window in which a refresh token can be used.
 
 It can be a value between 5 and 2628000 (5 years) minutes. Default is `10080` (7 days).`refresh_token_window_minutes` must be between `access_token_lifetime_minutes` and `refresh_token_lifetime_minutes`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/auth_server_policy_rule#refresh_token_window_minutes AuthServerPolicyRule#refresh_token_window_minutes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/auth_server_policy_rule#refresh_token_window_minutes AuthServerPolicyRule#refresh_token_window_minutes}
 
 ---
 
@@ -1402,7 +1402,7 @@ Scopes allowed for this policy rule.
 
 They can be whitelisted by name or all can be whitelisted with `*`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/auth_server_policy_rule#scope_whitelist AuthServerPolicyRule#scope_whitelist}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/auth_server_policy_rule#scope_whitelist AuthServerPolicyRule#scope_whitelist}
 
 ---
 
@@ -1414,7 +1414,7 @@ public string Status { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/auth_server_policy_rule#status AuthServerPolicyRule#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/auth_server_policy_rule#status AuthServerPolicyRule#status}.
 
 ---
 
@@ -1428,7 +1428,7 @@ public string Type { get; set; }
 
 Auth server policy rule type, unlikely this will be anything other then the default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/auth_server_policy_rule#type AuthServerPolicyRule#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/auth_server_policy_rule#type AuthServerPolicyRule#type}
 
 ---
 
@@ -1442,7 +1442,7 @@ public string[] UserBlacklist { get; set; }
 
 Specifies a set of Users to be excluded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/auth_server_policy_rule#user_blacklist AuthServerPolicyRule#user_blacklist}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/auth_server_policy_rule#user_blacklist AuthServerPolicyRule#user_blacklist}
 
 ---
 
@@ -1456,7 +1456,7 @@ public string[] UserWhitelist { get; set; }
 
 Specifies a set of Users to be included.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/auth_server_policy_rule#user_whitelist AuthServerPolicyRule#user_whitelist}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/auth_server_policy_rule#user_whitelist AuthServerPolicyRule#user_whitelist}
 
 ---
 

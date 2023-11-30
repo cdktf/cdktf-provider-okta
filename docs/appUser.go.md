@@ -4,12 +4,12 @@
 
 ### AppUser <a name="AppUser" id="@cdktf/provider-okta.appUser.AppUser"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/app_user okta_app_user}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_user okta_app_user}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appUser.AppUser.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/appuser"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appuser"
 
 appuser.NewAppUser(scope Construct, id *string, config AppUserConfig) AppUser
 ```
@@ -363,7 +363,7 @@ func ResetUsername()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.appUser.AppUser.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/appuser"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appuser"
 
 appuser.AppUser_IsConstruct(x interface{}) *bool
 ```
@@ -395,7 +395,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.appUser.AppUser.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/appuser"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appuser"
 
 appuser.AppUser_IsTerraformElement(x interface{}) *bool
 ```
@@ -409,7 +409,7 @@ appuser.AppUser_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.appUser.AppUser.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/appuser"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appuser"
 
 appuser.AppUser_IsTerraformResource(x interface{}) *bool
 ```
@@ -423,7 +423,7 @@ appuser.AppUser_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.appUser.AppUser.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/appuser"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appuser"
 
 appuser.AppUser_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -452,7 +452,7 @@ The construct id used in the generated config for the AppUser to import.
 
 The id of the existing AppUser that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/app_user#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_user#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -817,7 +817,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.appUser.AppUserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/appuser"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appuser"
 
 &appuser.AppUserConfig {
 	Connection: interface{},
@@ -850,7 +850,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/appuser"
 | <code><a href="#@cdktf/provider-okta.appUser.AppUserConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appUser.AppUserConfig.property.appId">AppId</a></code> | <code>*string</code> | App to associate user with. |
 | <code><a href="#@cdktf/provider-okta.appUser.AppUserConfig.property.userId">UserId</a></code> | <code>*string</code> | User associated with the application. |
-| <code><a href="#@cdktf/provider-okta.appUser.AppUserConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/app_user#id AppUser#id}. |
+| <code><a href="#@cdktf/provider-okta.appUser.AppUserConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_user#id AppUser#id}. |
 | <code><a href="#@cdktf/provider-okta.appUser.AppUserConfig.property.password">Password</a></code> | <code>*string</code> | The password to use. |
 | <code><a href="#@cdktf/provider-okta.appUser.AppUserConfig.property.profile">Profile</a></code> | <code>*string</code> | The JSON profile of the App User. |
 | <code><a href="#@cdktf/provider-okta.appUser.AppUserConfig.property.retainAssignment">RetainAssignment</a></code> | <code>interface{}</code> | Retain the user assignment on destroy. |
@@ -938,7 +938,7 @@ AppId *string
 
 App to associate user with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/app_user#app_id AppUser#app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_user#app_id AppUser#app_id}
 
 ---
 
@@ -952,7 +952,7 @@ UserId *string
 
 User associated with the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/app_user#user_id AppUser#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_user#user_id AppUser#user_id}
 
 ---
 
@@ -964,7 +964,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/app_user#id AppUser#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_user#id AppUser#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -981,7 +981,7 @@ Password *string
 
 The password to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/app_user#password AppUser#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_user#password AppUser#password}
 
 ---
 
@@ -995,7 +995,7 @@ Profile *string
 
 The JSON profile of the App User.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/app_user#profile AppUser#profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_user#profile AppUser#profile}
 
 ---
 
@@ -1011,7 +1011,7 @@ Retain the user assignment on destroy.
 
 If set to true, the resource will be removed from state but not from the Okta app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/app_user#retain_assignment AppUser#retain_assignment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_user#retain_assignment AppUser#retain_assignment}
 
 ---
 
@@ -1027,7 +1027,7 @@ The username to use for the app user.
 
 In case the user is assigned to the app with `SHARED_USERNAME_AND_PASSWORD` credentials scheme, this field will be computed and should not be set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/app_user#username AppUser#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_user#username AppUser#username}
 
 ---
 

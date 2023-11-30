@@ -4,7 +4,7 @@
 
 ### RoleSubscription <a name="RoleSubscription" id="@cdktf/provider-okta.roleSubscription.RoleSubscription"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/role_subscription okta_role_subscription}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/role_subscription okta_role_subscription}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.roleSubscription.RoleSubscription.Initializer"></a>
 
@@ -43,7 +43,7 @@ RoleSubscription.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-okta.roleSubscription.RoleSubscription.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.roleSubscription.RoleSubscription.Initializer.parameter.notificationType">notificationType</a></code> | <code>java.lang.String</code> | Type of the notification. |
 | <code><a href="#@cdktf/provider-okta.roleSubscription.RoleSubscription.Initializer.parameter.roleType">roleType</a></code> | <code>java.lang.String</code> | Type of the role. |
-| <code><a href="#@cdktf/provider-okta.roleSubscription.RoleSubscription.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/role_subscription#id RoleSubscription#id}. |
+| <code><a href="#@cdktf/provider-okta.roleSubscription.RoleSubscription.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/role_subscription#id RoleSubscription#id}. |
 | <code><a href="#@cdktf/provider-okta.roleSubscription.RoleSubscription.Initializer.parameter.status">status</a></code> | <code>java.lang.String</code> | Status of subscription. |
 
 ---
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 Type of the notification.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/role_subscription#notification_type RoleSubscription#notification_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/role_subscription#notification_type RoleSubscription#notification_type}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Type of the role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/role_subscription#role_type RoleSubscription#role_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/role_subscription#role_type RoleSubscription#role_type}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/role_subscription#id RoleSubscription#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/role_subscription#id RoleSubscription#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -145,7 +145,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Status of subscription.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/role_subscription#status RoleSubscription#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/role_subscription#status RoleSubscription#status}
 
 ---
 
@@ -536,7 +536,7 @@ The construct id used in the generated config for the RoleSubscription to import
 
 The id of the existing RoleSubscription that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/role_subscription#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/role_subscription#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -858,7 +858,7 @@ RoleSubscriptionConfig.builder()
 | <code><a href="#@cdktf/provider-okta.roleSubscription.RoleSubscriptionConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.roleSubscription.RoleSubscriptionConfig.property.notificationType">notificationType</a></code> | <code>java.lang.String</code> | Type of the notification. |
 | <code><a href="#@cdktf/provider-okta.roleSubscription.RoleSubscriptionConfig.property.roleType">roleType</a></code> | <code>java.lang.String</code> | Type of the role. |
-| <code><a href="#@cdktf/provider-okta.roleSubscription.RoleSubscriptionConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/role_subscription#id RoleSubscription#id}. |
+| <code><a href="#@cdktf/provider-okta.roleSubscription.RoleSubscriptionConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/role_subscription#id RoleSubscription#id}. |
 | <code><a href="#@cdktf/provider-okta.roleSubscription.RoleSubscriptionConfig.property.status">status</a></code> | <code>java.lang.String</code> | Status of subscription. |
 
 ---
@@ -943,7 +943,7 @@ public java.lang.String getNotificationType();
 
 Type of the notification.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/role_subscription#notification_type RoleSubscription#notification_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/role_subscription#notification_type RoleSubscription#notification_type}
 
 ---
 
@@ -957,7 +957,7 @@ public java.lang.String getRoleType();
 
 Type of the role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/role_subscription#role_type RoleSubscription#role_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/role_subscription#role_type RoleSubscription#role_type}
 
 ---
 
@@ -969,7 +969,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/role_subscription#id RoleSubscription#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/role_subscription#id RoleSubscription#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -986,7 +986,7 @@ public java.lang.String getStatus();
 
 Status of subscription.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/role_subscription#status RoleSubscription#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/role_subscription#status RoleSubscription#status}
 
 ---
 

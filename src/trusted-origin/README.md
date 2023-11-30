@@ -1,3 +1,3 @@
 # `okta_trusted_origin`
 
-Refer to the Terraform Registory for docs: [`okta_trusted_origin`](https://registry.terraform.io/providers/okta/okta/4.6.2/docs/resources/trusted_origin).
+Refer to the Terraform Registory for docs: [`okta_trusted_origin`](https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/trusted_origin).

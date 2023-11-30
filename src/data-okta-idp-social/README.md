@@ -1,3 +1,3 @@
 # `data_okta_idp_social`
 
-Refer to the Terraform Registory for docs: [`data_okta_idp_social`](https://registry.terraform.io/providers/okta/okta/4.6.2/docs/data-sources/idp_social).
+Refer to the Terraform Registory for docs: [`data_okta_idp_social`](https://registry.terraform.io/providers/okta/okta/4.6.3/docs/data-sources/idp_social).

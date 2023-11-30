@@ -4,12 +4,12 @@
 
 ### DataOktaTheme <a name="DataOktaTheme" id="@cdktf/provider-okta.dataOktaTheme.DataOktaTheme"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/data-sources/theme okta_theme}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/data-sources/theme okta_theme}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaTheme.DataOktaTheme.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktatheme"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktatheme"
 
 dataoktatheme.NewDataOktaTheme(scope Construct, id *string, config DataOktaThemeConfig) DataOktaTheme
 ```
@@ -267,7 +267,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.dataOktaTheme.DataOktaTheme.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktatheme"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktatheme"
 
 dataoktatheme.DataOktaTheme_IsConstruct(x interface{}) *bool
 ```
@@ -299,7 +299,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.dataOktaTheme.DataOktaTheme.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktatheme"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktatheme"
 
 dataoktatheme.DataOktaTheme_IsTerraformElement(x interface{}) *bool
 ```
@@ -313,7 +313,7 @@ dataoktatheme.DataOktaTheme_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-okta.dataOktaTheme.DataOktaTheme.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktatheme"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktatheme"
 
 dataoktatheme.DataOktaTheme_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -327,7 +327,7 @@ dataoktatheme.DataOktaTheme_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.dataOktaTheme.DataOktaTheme.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktatheme"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktatheme"
 
 dataoktatheme.DataOktaTheme_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -356,7 +356,7 @@ The construct id used in the generated config for the DataOktaTheme to import.
 
 The id of the existing DataOktaTheme that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/data-sources/theme#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/data-sources/theme#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -721,7 +721,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaTheme.DataOktaThemeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktatheme"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktatheme"
 
 &dataoktatheme.DataOktaThemeConfig {
 	Connection: interface{},
@@ -832,7 +832,7 @@ BrandId *string
 
 Brand ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/data-sources/theme#brand_id DataOktaTheme#brand_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/data-sources/theme#brand_id DataOktaTheme#brand_id}
 
 ---
 
@@ -846,7 +846,7 @@ ThemeId *string
 
 Theme ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/data-sources/theme#theme_id DataOktaTheme#theme_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/data-sources/theme#theme_id DataOktaTheme#theme_id}
 
 ---
 

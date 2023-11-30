@@ -4,7 +4,7 @@
 
 ### DataOktaTheme <a name="DataOktaTheme" id="@cdktf/provider-okta.dataOktaTheme.DataOktaTheme"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/data-sources/theme okta_theme}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/data-sources/theme okta_theme}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaTheme.DataOktaTheme.Initializer"></a>
 
@@ -356,7 +356,7 @@ The construct id used in the generated config for the DataOktaTheme to import.
 
 The id of the existing DataOktaTheme that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/data-sources/theme#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/data-sources/theme#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -822,7 +822,7 @@ public readonly brandId: string;
 
 Brand ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/data-sources/theme#brand_id DataOktaTheme#brand_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/data-sources/theme#brand_id DataOktaTheme#brand_id}
 
 ---
 
@@ -836,7 +836,7 @@ public readonly themeId: string;
 
 Theme ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.2/docs/data-sources/theme#theme_id DataOktaTheme#theme_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/data-sources/theme#theme_id DataOktaTheme#theme_id}
 
 ---
 
