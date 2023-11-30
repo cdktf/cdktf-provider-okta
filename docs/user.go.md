@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.user.User.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/user"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/user"
 
 user.NewUser(scope Construct, id *string, config UserConfig) User
 ```
@@ -614,7 +614,7 @@ func ResetZipCode()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.user.User.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/user"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/user"
 
 user.User_IsConstruct(x interface{}) *bool
 ```
@@ -646,7 +646,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.user.User.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/user"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/user"
 
 user.User_IsTerraformElement(x interface{}) *bool
 ```
@@ -660,7 +660,7 @@ user.User_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.user.User.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/user"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/user"
 
 user.User_IsTerraformResource(x interface{}) *bool
 ```
@@ -674,7 +674,7 @@ user.User_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.user.User.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/user"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/user"
 
 user.User_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1860,7 +1860,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.user.UserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/user"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/user"
 
 &user.UserConfig {
 	Connection: interface{},
@@ -1896,7 +1896,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/user"
 	OldPassword: *string,
 	Organization: *string,
 	Password: *string,
-	PasswordHash: github.com/cdktf/cdktf-provider-okta-go/okta.user.UserPasswordHash,
+	PasswordHash: github.com/cdktf/cdktf-provider-okta-go/okta/v12.user.UserPasswordHash,
 	PasswordInlineHook: *string,
 	PostalAddress: *string,
 	PreferredLanguage: *string,
@@ -2653,7 +2653,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.user.UserPasswordHash.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/user"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/user"
 
 &user.UserPasswordHash {
 	Algorithm: *string,
@@ -2755,7 +2755,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.user.UserPasswordHashOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/user"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/user"
 
 user.NewUserPasswordHashOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) UserPasswordHashOutputReference
 ```

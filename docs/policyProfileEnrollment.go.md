@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.policyProfileEnrollment.PolicyProfileEnrollment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/policyprofileenrollment"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policyprofileenrollment"
 
 policyprofileenrollment.NewPolicyProfileEnrollment(scope Construct, id *string, config PolicyProfileEnrollmentConfig) PolicyProfileEnrollment
 ```
@@ -342,7 +342,7 @@ func ResetStatus()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.policyProfileEnrollment.PolicyProfileEnrollment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/policyprofileenrollment"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policyprofileenrollment"
 
 policyprofileenrollment.PolicyProfileEnrollment_IsConstruct(x interface{}) *bool
 ```
@@ -374,7 +374,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.policyProfileEnrollment.PolicyProfileEnrollment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/policyprofileenrollment"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policyprofileenrollment"
 
 policyprofileenrollment.PolicyProfileEnrollment_IsTerraformElement(x interface{}) *bool
 ```
@@ -388,7 +388,7 @@ policyprofileenrollment.PolicyProfileEnrollment_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.policyProfileEnrollment.PolicyProfileEnrollment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/policyprofileenrollment"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policyprofileenrollment"
 
 policyprofileenrollment.PolicyProfileEnrollment_IsTerraformResource(x interface{}) *bool
 ```
@@ -402,7 +402,7 @@ policyprofileenrollment.PolicyProfileEnrollment_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.policyProfileEnrollment.PolicyProfileEnrollment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/policyprofileenrollment"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policyprofileenrollment"
 
 policyprofileenrollment.PolicyProfileEnrollment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -697,7 +697,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.policyProfileEnrollment.PolicyProfileEnrollmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/policyprofileenrollment"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policyprofileenrollment"
 
 &policyprofileenrollment.PolicyProfileEnrollmentConfig {
 	Connection: interface{},
