@@ -66,9 +66,12 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-okta.captchaOrgWideSettings.CaptchaOrgWideSettings.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.captchaOrgWideSettings.CaptchaOrgWideSettings.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.captchaOrgWideSettings.CaptchaOrgWideSettings.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.captchaOrgWideSettings.CaptchaOrgWideSettings.hasResourceMove">HasResourceMove</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.captchaOrgWideSettings.CaptchaOrgWideSettings.importFrom">ImportFrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.captchaOrgWideSettings.CaptchaOrgWideSettings.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.captchaOrgWideSettings.CaptchaOrgWideSettings.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-okta.captchaOrgWideSettings.CaptchaOrgWideSettings.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktf/provider-okta.captchaOrgWideSettings.CaptchaOrgWideSettings.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-okta.captchaOrgWideSettings.CaptchaOrgWideSettings.resetCaptchaId">ResetCaptchaId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.captchaOrgWideSettings.CaptchaOrgWideSettings.resetEnabledFor">ResetEnabledFor</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.captchaOrgWideSettings.CaptchaOrgWideSettings.resetId">ResetId</a></code> | *No description.* |
@@ -263,6 +266,12 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 
 ---
 
+##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-okta.captchaOrgWideSettings.CaptchaOrgWideSettings.hasResourceMove"></a>
+
+```csharp
+private object HasResourceMove()
+```
+
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-okta.captchaOrgWideSettings.CaptchaOrgWideSettings.importFrom"></a>
 
 ```csharp
@@ -293,6 +302,24 @@ private IResolvable InterpolationForAttribute(string TerraformAttribute)
 
 ---
 
+##### `MoveFromId` <a name="MoveFromId" id="@cdktf/provider-okta.captchaOrgWideSettings.CaptchaOrgWideSettings.moveFromId"></a>
+
+```csharp
+private void MoveFromId(string Id)
+```
+
+Move the resource corresponding to "id" to this resource.
+
+Note that the resource being moved from must be marked as moved using it's instance function.
+
+###### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-okta.captchaOrgWideSettings.CaptchaOrgWideSettings.moveFromId.parameter.id"></a>
+
+- *Type:* string
+
+Full id of resource being moved from, e.g. "aws_s3_bucket.example".
+
+---
+
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-okta.captchaOrgWideSettings.CaptchaOrgWideSettings.moveTo"></a>
 
 ```csharp
@@ -314,6 +341,22 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 - *Type:* object
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
+
+---
+
+##### `MoveToId` <a name="MoveToId" id="@cdktf/provider-okta.captchaOrgWideSettings.CaptchaOrgWideSettings.moveToId"></a>
+
+```csharp
+private void MoveToId(string Id)
+```
+
+Moves this resource to the resource corresponding to "id".
+
+###### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-okta.captchaOrgWideSettings.CaptchaOrgWideSettings.moveToId.parameter.id"></a>
+
+- *Type:* string
+
+Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 

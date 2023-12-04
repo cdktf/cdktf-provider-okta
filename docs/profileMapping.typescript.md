@@ -66,9 +66,12 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.hasResourceMove">hasResourceMove</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.importFrom">importFrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.putMappings">putMappings</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.resetAlwaysApply">resetAlwaysApply</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.resetDeleteWhenAbsent">resetDeleteWhenAbsent</a></code> | *No description.* |
@@ -265,6 +268,12 @@ public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: stri
 
 ---
 
+##### `hasResourceMove` <a name="hasResourceMove" id="@cdktf/provider-okta.profileMapping.ProfileMapping.hasResourceMove"></a>
+
+```typescript
+public hasResourceMove(): TerraformResourceMoveByTarget | TerraformResourceMoveById
+```
+
 ##### `importFrom` <a name="importFrom" id="@cdktf/provider-okta.profileMapping.ProfileMapping.importFrom"></a>
 
 ```typescript
@@ -295,6 +304,24 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
+##### `moveFromId` <a name="moveFromId" id="@cdktf/provider-okta.profileMapping.ProfileMapping.moveFromId"></a>
+
+```typescript
+public moveFromId(id: string): void
+```
+
+Move the resource corresponding to "id" to this resource.
+
+Note that the resource being moved from must be marked as moved using it's instance function.
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-okta.profileMapping.ProfileMapping.moveFromId.parameter.id"></a>
+
+- *Type:* string
+
+Full id of resource being moved from, e.g. "aws_s3_bucket.example".
+
+---
+
 ##### `moveTo` <a name="moveTo" id="@cdktf/provider-okta.profileMapping.ProfileMapping.moveTo"></a>
 
 ```typescript
@@ -316,6 +343,22 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 - *Type:* string | number
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
+
+---
+
+##### `moveToId` <a name="moveToId" id="@cdktf/provider-okta.profileMapping.ProfileMapping.moveToId"></a>
+
+```typescript
+public moveToId(id: string): void
+```
+
+Moves this resource to the resource corresponding to "id".
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-okta.profileMapping.ProfileMapping.moveToId.parameter.id"></a>
+
+- *Type:* string
+
+Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
