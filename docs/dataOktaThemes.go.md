@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaThemes.DataOktaThemes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktathemes"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktathemes"
 
 dataoktathemes.NewDataOktaThemes(scope Construct, id *string, config DataOktaThemesConfig) DataOktaThemes
 ```
@@ -274,7 +274,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.dataOktaThemes.DataOktaThemes.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktathemes"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktathemes"
 
 dataoktathemes.DataOktaThemes_IsConstruct(x interface{}) *bool
 ```
@@ -306,7 +306,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.dataOktaThemes.DataOktaThemes.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktathemes"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktathemes"
 
 dataoktathemes.DataOktaThemes_IsTerraformElement(x interface{}) *bool
 ```
@@ -320,7 +320,7 @@ dataoktathemes.DataOktaThemes_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-okta.dataOktaThemes.DataOktaThemes.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktathemes"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktathemes"
 
 dataoktathemes.DataOktaThemes_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -334,7 +334,7 @@ dataoktathemes.DataOktaThemes_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.dataOktaThemes.DataOktaThemes.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktathemes"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktathemes"
 
 dataoktathemes.DataOktaThemes_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -596,7 +596,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaThemes.DataOktaThemesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktathemes"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktathemes"
 
 &dataoktathemes.DataOktaThemesConfig {
 	Connection: interface{},
@@ -731,7 +731,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaThemes.DataOktaThemesThemes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktathemes"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktathemes"
 
 &dataoktathemes.DataOktaThemesThemes {
 
@@ -746,7 +746,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktathemes"
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaThemes.DataOktaThemesThemesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktathemes"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktathemes"
 
 dataoktathemes.NewDataOktaThemesThemesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOktaThemesThemesList
 ```
@@ -878,7 +878,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaThemes.DataOktaThemesThemesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktathemes"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktathemes"
 
 dataoktathemes.NewDataOktaThemesThemesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataOktaThemesThemesOutputReference
 ```

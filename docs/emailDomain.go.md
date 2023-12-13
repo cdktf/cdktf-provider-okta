@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.emailDomain.EmailDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/emaildomain"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/emaildomain"
 
 emaildomain.NewEmailDomain(scope Construct, id *string, config EmailDomainConfig) EmailDomain
 ```
@@ -378,7 +378,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.emailDomain.EmailDomain.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/emaildomain"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/emaildomain"
 
 emaildomain.EmailDomain_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.emailDomain.EmailDomain.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/emaildomain"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/emaildomain"
 
 emaildomain.EmailDomain_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ emaildomain.EmailDomain_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.emailDomain.EmailDomain.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/emaildomain"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/emaildomain"
 
 emaildomain.EmailDomain_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ emaildomain.EmailDomain_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.emailDomain.EmailDomain.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/emaildomain"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/emaildomain"
 
 emaildomain.EmailDomain_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -799,7 +799,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.emailDomain.EmailDomainConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/emaildomain"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/emaildomain"
 
 &emaildomain.EmailDomainConfig {
 	Connection: interface{},
@@ -982,7 +982,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.emailDomain.EmailDomainDnsValidationRecords.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/emaildomain"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/emaildomain"
 
 &emaildomain.EmailDomainDnsValidationRecords {
 
@@ -997,7 +997,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/emaildomain"
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.emailDomain.EmailDomainDnsValidationRecordsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/emaildomain"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/emaildomain"
 
 emaildomain.NewEmailDomainDnsValidationRecordsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EmailDomainDnsValidationRecordsList
 ```
@@ -1129,7 +1129,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.emailDomain.EmailDomainDnsValidationRecordsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/emaildomain"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/emaildomain"
 
 emaildomain.NewEmailDomainDnsValidationRecordsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EmailDomainDnsValidationRecordsOutputReference
 ```
