@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscovery.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policyruleidpdiscovery"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policyruleidpdiscovery"
 
 policyruleidpdiscovery.NewPolicyRuleIdpDiscovery(scope Construct, id *string, config PolicyRuleIdpDiscoveryConfig) PolicyRuleIdpDiscovery
 ```
@@ -528,7 +528,7 @@ func ResetUserIdentifierType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscovery.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policyruleidpdiscovery"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policyruleidpdiscovery"
 
 policyruleidpdiscovery.PolicyRuleIdpDiscovery_IsConstruct(x interface{}) *bool
 ```
@@ -560,7 +560,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscovery.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policyruleidpdiscovery"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policyruleidpdiscovery"
 
 policyruleidpdiscovery.PolicyRuleIdpDiscovery_IsTerraformElement(x interface{}) *bool
 ```
@@ -574,7 +574,7 @@ policyruleidpdiscovery.PolicyRuleIdpDiscovery_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscovery.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policyruleidpdiscovery"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policyruleidpdiscovery"
 
 policyruleidpdiscovery.PolicyRuleIdpDiscovery_IsTerraformResource(x interface{}) *bool
 ```
@@ -588,7 +588,7 @@ policyruleidpdiscovery.PolicyRuleIdpDiscovery_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscovery.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policyruleidpdiscovery"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policyruleidpdiscovery"
 
 policyruleidpdiscovery.PolicyRuleIdpDiscovery_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1169,7 +1169,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscoveryAppExclude.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policyruleidpdiscovery"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policyruleidpdiscovery"
 
 &policyruleidpdiscovery.PolicyRuleIdpDiscoveryAppExclude {
 	Type: *string,
@@ -1232,7 +1232,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscoveryAppInclude.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policyruleidpdiscovery"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policyruleidpdiscovery"
 
 &policyruleidpdiscovery.PolicyRuleIdpDiscoveryAppInclude {
 	Type: *string,
@@ -1295,7 +1295,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscoveryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policyruleidpdiscovery"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policyruleidpdiscovery"
 
 &policyruleidpdiscovery.PolicyRuleIdpDiscoveryConfig {
 	Connection: interface{},
@@ -1648,7 +1648,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscoveryPlatformInclude.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policyruleidpdiscovery"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policyruleidpdiscovery"
 
 &policyruleidpdiscovery.PolicyRuleIdpDiscoveryPlatformInclude {
 	OsExpression: *string,
@@ -1710,7 +1710,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscoveryUserIdentifierPatterns.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policyruleidpdiscovery"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policyruleidpdiscovery"
 
 &policyruleidpdiscovery.PolicyRuleIdpDiscoveryUserIdentifierPatterns {
 	MatchType: *string,
@@ -1758,7 +1758,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscoveryAppExcludeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policyruleidpdiscovery"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policyruleidpdiscovery"
 
 policyruleidpdiscovery.NewPolicyRuleIdpDiscoveryAppExcludeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PolicyRuleIdpDiscoveryAppExcludeList
 ```
@@ -1901,7 +1901,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscoveryAppExcludeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policyruleidpdiscovery"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policyruleidpdiscovery"
 
 policyruleidpdiscovery.NewPolicyRuleIdpDiscoveryAppExcludeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PolicyRuleIdpDiscoveryAppExcludeOutputReference
 ```
@@ -2248,7 +2248,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscoveryAppIncludeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policyruleidpdiscovery"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policyruleidpdiscovery"
 
 policyruleidpdiscovery.NewPolicyRuleIdpDiscoveryAppIncludeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PolicyRuleIdpDiscoveryAppIncludeList
 ```
@@ -2391,7 +2391,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscoveryAppIncludeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policyruleidpdiscovery"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policyruleidpdiscovery"
 
 policyruleidpdiscovery.NewPolicyRuleIdpDiscoveryAppIncludeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PolicyRuleIdpDiscoveryAppIncludeOutputReference
 ```
@@ -2738,7 +2738,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscoveryPlatformIncludeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policyruleidpdiscovery"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policyruleidpdiscovery"
 
 policyruleidpdiscovery.NewPolicyRuleIdpDiscoveryPlatformIncludeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PolicyRuleIdpDiscoveryPlatformIncludeList
 ```
@@ -2881,7 +2881,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscoveryPlatformIncludeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policyruleidpdiscovery"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policyruleidpdiscovery"
 
 policyruleidpdiscovery.NewPolicyRuleIdpDiscoveryPlatformIncludeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PolicyRuleIdpDiscoveryPlatformIncludeOutputReference
 ```
@@ -3235,7 +3235,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscoveryUserIdentifierPatternsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policyruleidpdiscovery"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policyruleidpdiscovery"
 
 policyruleidpdiscovery.NewPolicyRuleIdpDiscoveryUserIdentifierPatternsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PolicyRuleIdpDiscoveryUserIdentifierPatternsList
 ```
@@ -3378,7 +3378,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscoveryUserIdentifierPatternsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policyruleidpdiscovery"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policyruleidpdiscovery"
 
 policyruleidpdiscovery.NewPolicyRuleIdpDiscoveryUserIdentifierPatternsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PolicyRuleIdpDiscoveryUserIdentifierPatternsOutputReference
 ```
