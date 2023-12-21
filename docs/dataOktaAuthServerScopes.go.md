@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaAuthServerScopes.DataOktaAuthServerScopes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaauthserverscopes"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktaauthserverscopes"
 
 dataoktaauthserverscopes.NewDataOktaAuthServerScopes(scope Construct, id *string, config DataOktaAuthServerScopesConfig) DataOktaAuthServerScopes
 ```
@@ -274,7 +274,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.dataOktaAuthServerScopes.DataOktaAuthServerScopes.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaauthserverscopes"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktaauthserverscopes"
 
 dataoktaauthserverscopes.DataOktaAuthServerScopes_IsConstruct(x interface{}) *bool
 ```
@@ -306,7 +306,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.dataOktaAuthServerScopes.DataOktaAuthServerScopes.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaauthserverscopes"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktaauthserverscopes"
 
 dataoktaauthserverscopes.DataOktaAuthServerScopes_IsTerraformElement(x interface{}) *bool
 ```
@@ -320,7 +320,7 @@ dataoktaauthserverscopes.DataOktaAuthServerScopes_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-okta.dataOktaAuthServerScopes.DataOktaAuthServerScopes.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaauthserverscopes"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktaauthserverscopes"
 
 dataoktaauthserverscopes.DataOktaAuthServerScopes_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -334,7 +334,7 @@ dataoktaauthserverscopes.DataOktaAuthServerScopes_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.dataOktaAuthServerScopes.DataOktaAuthServerScopes.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaauthserverscopes"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktaauthserverscopes"
 
 dataoktaauthserverscopes.DataOktaAuthServerScopes_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -596,7 +596,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaAuthServerScopes.DataOktaAuthServerScopesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaauthserverscopes"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktaauthserverscopes"
 
 &dataoktaauthserverscopes.DataOktaAuthServerScopesConfig {
 	Connection: interface{},
@@ -731,7 +731,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaAuthServerScopes.DataOktaAuthServerScopesScopes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaauthserverscopes"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktaauthserverscopes"
 
 &dataoktaauthserverscopes.DataOktaAuthServerScopesScopes {
 
@@ -746,7 +746,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaauthserverscopes"
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaAuthServerScopes.DataOktaAuthServerScopesScopesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaauthserverscopes"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktaauthserverscopes"
 
 dataoktaauthserverscopes.NewDataOktaAuthServerScopesScopesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOktaAuthServerScopesScopesList
 ```
@@ -878,7 +878,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaAuthServerScopes.DataOktaAuthServerScopesScopesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaauthserverscopes"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktaauthserverscopes"
 
 dataoktaauthserverscopes.NewDataOktaAuthServerScopesScopesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataOktaAuthServerScopesScopesOutputReference
 ```
