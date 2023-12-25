@@ -1,6 +1,9 @@
-# Submodules <a name="Submodules" id="submodules"></a>
+# API Reference <a name="API Reference" id="api-reference"></a>
+
+## Submodules <a name="Submodules" id="submodules"></a>
 
 The following submodules are available:
+
 - [adminRoleCustom](./adminRoleCustom.typescript.md)
 - [adminRoleCustomAssignments](./adminRoleCustomAssignments.typescript.md)
 - [adminRoleTargets](./adminRoleTargets.typescript.md)
@@ -142,3 +145,8 @@ The following submodules are available:
 - [userGroupMemberships](./userGroupMemberships.typescript.md)
 - [userSchemaProperty](./userSchemaProperty.typescript.md)
 - [userType](./userType.typescript.md)
+
+
+
+
+
