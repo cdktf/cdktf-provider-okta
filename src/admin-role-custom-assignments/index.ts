@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/admin_role_custom_assignments
 // generated from terraform resource schema
 
@@ -169,5 +164,37 @@ export class AdminRoleCustomAssignments extends cdktf.TerraformResource {
       members: cdktf.listMapper(cdktf.stringToTerraform, false)(this._members),
       resource_set_id: cdktf.stringToTerraform(this._resourceSetId),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      custom_role_id: {
+        value: cdktf.stringToHclTerraform(this._customRoleId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      members: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._members),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      resource_set_id: {
+        value: cdktf.stringToHclTerraform(this._resourceSetId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

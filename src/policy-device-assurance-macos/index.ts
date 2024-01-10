@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/policy_device_assurance_macos
 // generated from terraform resource schema
 
@@ -561,5 +556,127 @@ export class PolicyDeviceAssuranceMacos extends cdktf.TerraformResource {
       tpsp_screen_lock_secured: cdktf.booleanToTerraform(this._tpspScreenLockSecured),
       tpsp_site_isolation_enabled: cdktf.booleanToTerraform(this._tpspSiteIsolationEnabled),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      disk_encryption_type: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._diskEncryptionType),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      os_version: {
+        value: cdktf.stringToHclTerraform(this._osVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      screenlock_type: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._screenlockType),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      secure_hardware_present: {
+        value: cdktf.booleanToHclTerraform(this._secureHardwarePresent),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      third_party_signal_providers: {
+        value: cdktf.booleanToHclTerraform(this._thirdPartySignalProviders),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      tpsp_browser_version: {
+        value: cdktf.stringToHclTerraform(this._tpspBrowserVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tpsp_builtin_dns_client_enabled: {
+        value: cdktf.booleanToHclTerraform(this._tpspBuiltinDnsClientEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      tpsp_chrome_remote_desktop_app_blocked: {
+        value: cdktf.booleanToHclTerraform(this._tpspChromeRemoteDesktopAppBlocked),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      tpsp_device_enrollment_domain: {
+        value: cdktf.stringToHclTerraform(this._tpspDeviceEnrollmentDomain),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tpsp_disk_encrypted: {
+        value: cdktf.booleanToHclTerraform(this._tpspDiskEncrypted),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      tpsp_key_trust_level: {
+        value: cdktf.stringToHclTerraform(this._tpspKeyTrustLevel),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tpsp_os_firewall: {
+        value: cdktf.booleanToHclTerraform(this._tpspOsFirewall),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      tpsp_os_version: {
+        value: cdktf.stringToHclTerraform(this._tpspOsVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tpsp_password_proctection_warning_trigger: {
+        value: cdktf.stringToHclTerraform(this._tpspPasswordProctectionWarningTrigger),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tpsp_realtime_url_check_mode: {
+        value: cdktf.booleanToHclTerraform(this._tpspRealtimeUrlCheckMode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      tpsp_safe_browsing_protection_level: {
+        value: cdktf.stringToHclTerraform(this._tpspSafeBrowsingProtectionLevel),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tpsp_screen_lock_secured: {
+        value: cdktf.booleanToHclTerraform(this._tpspScreenLockSecured),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      tpsp_site_isolation_enabled: {
+        value: cdktf.booleanToHclTerraform(this._tpspSiteIsolationEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

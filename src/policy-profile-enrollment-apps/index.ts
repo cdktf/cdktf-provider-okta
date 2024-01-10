@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/policy_profile_enrollment_apps
 // generated from terraform resource schema
 
@@ -153,5 +148,31 @@ export class PolicyProfileEnrollmentApps extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       policy_id: cdktf.stringToTerraform(this._policyId),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      apps: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._apps),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      policy_id: {
+        value: cdktf.stringToHclTerraform(this._policyId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/okta/okta/4.6.3/docs/data-sources/brand
 // generated from terraform resource schema
 
@@ -124,5 +119,19 @@ export class DataOktaBrand extends cdktf.TerraformDataSource {
     return {
       brand_id: cdktf.stringToTerraform(this._brandId),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      brand_id: {
+        value: cdktf.stringToHclTerraform(this._brandId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/okta/okta/4.6.3/docs/data-sources/role_subscription
 // generated from terraform resource schema
 
@@ -150,5 +145,31 @@ export class DataOktaRoleSubscription extends cdktf.TerraformDataSource {
       notification_type: cdktf.stringToTerraform(this._notificationType),
       role_type: cdktf.stringToTerraform(this._roleType),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      notification_type: {
+        value: cdktf.stringToHclTerraform(this._notificationType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      role_type: {
+        value: cdktf.stringToHclTerraform(this._roleType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

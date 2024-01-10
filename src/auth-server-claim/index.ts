@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/auth_server_claim
 // generated from terraform resource schema
 
@@ -305,5 +300,73 @@ export class AuthServerClaim extends cdktf.TerraformResource {
       value: cdktf.stringToTerraform(this._value),
       value_type: cdktf.stringToTerraform(this._valueType),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      always_include_in_token: {
+        value: cdktf.booleanToHclTerraform(this._alwaysIncludeInToken),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      auth_server_id: {
+        value: cdktf.stringToHclTerraform(this._authServerId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      claim_type: {
+        value: cdktf.stringToHclTerraform(this._claimType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      group_filter_type: {
+        value: cdktf.stringToHclTerraform(this._groupFilterType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      scopes: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._scopes),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      status: {
+        value: cdktf.stringToHclTerraform(this._status),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      value: {
+        value: cdktf.stringToHclTerraform(this._value),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      value_type: {
+        value: cdktf.stringToHclTerraform(this._valueType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

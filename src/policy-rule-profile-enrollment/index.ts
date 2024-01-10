@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/policy_rule_profile_enrollment
 // generated from terraform resource schema
 
@@ -105,6 +100,37 @@ export function policyRuleProfileEnrollmentProfileAttributesToTerraform(struct?:
     name: cdktf.stringToTerraform(struct!.name),
     required: cdktf.booleanToTerraform(struct!.required),
   }
+}
+
+
+export function policyRuleProfileEnrollmentProfileAttributesToHclTerraform(struct?: PolicyRuleProfileEnrollmentProfileAttributes | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    label: {
+      value: cdktf.stringToHclTerraform(struct!.label),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    required: {
+      value: cdktf.booleanToHclTerraform(struct!.required),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class PolicyRuleProfileEnrollmentProfileAttributesOutputReference extends cdktf.ComplexObject {
@@ -474,5 +500,73 @@ export class PolicyRuleProfileEnrollment extends cdktf.TerraformResource {
       unknown_user_action: cdktf.stringToTerraform(this._unknownUserAction),
       profile_attributes: cdktf.listMapper(policyRuleProfileEnrollmentProfileAttributesToTerraform, true)(this._profileAttributes.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      access: {
+        value: cdktf.stringToHclTerraform(this._access),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      email_verification: {
+        value: cdktf.booleanToHclTerraform(this._emailVerification),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      inline_hook_id: {
+        value: cdktf.stringToHclTerraform(this._inlineHookId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      policy_id: {
+        value: cdktf.stringToHclTerraform(this._policyId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      progressive_profiling_action: {
+        value: cdktf.stringToHclTerraform(this._progressiveProfilingAction),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      target_group_id: {
+        value: cdktf.stringToHclTerraform(this._targetGroupId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ui_schema_id: {
+        value: cdktf.stringToHclTerraform(this._uiSchemaId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      unknown_user_action: {
+        value: cdktf.stringToHclTerraform(this._unknownUserAction),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      profile_attributes: {
+        value: cdktf.listMapperHcl(policyRuleProfileEnrollmentProfileAttributesToHclTerraform, true)(this._profileAttributes.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "PolicyRuleProfileEnrollmentProfileAttributesList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

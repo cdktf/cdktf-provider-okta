@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user_schema_property
 // generated from terraform resource schema
 
@@ -170,6 +165,31 @@ export function userSchemaPropertyArrayOneOfToTerraform(struct?: UserSchemaPrope
   }
 }
 
+
+export function userSchemaPropertyArrayOneOfToHclTerraform(struct?: UserSchemaPropertyArrayOneOf | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    const: {
+      value: cdktf.stringToHclTerraform(struct!.const),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    title: {
+      value: cdktf.stringToHclTerraform(struct!.title),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class UserSchemaPropertyArrayOneOfOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -286,6 +306,31 @@ export function userSchemaPropertyMasterOverridePriorityToTerraform(struct?: Use
     type: cdktf.stringToTerraform(struct!.type),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function userSchemaPropertyMasterOverridePriorityToHclTerraform(struct?: UserSchemaPropertyMasterOverridePriority | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class UserSchemaPropertyMasterOverridePriorityOutputReference extends cdktf.ComplexObject {
@@ -411,6 +456,31 @@ export function userSchemaPropertyOneOfToTerraform(struct?: UserSchemaPropertyOn
     const: cdktf.stringToTerraform(struct!.const),
     title: cdktf.stringToTerraform(struct!.title),
   }
+}
+
+
+export function userSchemaPropertyOneOfToHclTerraform(struct?: UserSchemaPropertyOneOf | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    const: {
+      value: cdktf.stringToHclTerraform(struct!.const),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    title: {
+      value: cdktf.stringToHclTerraform(struct!.title),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class UserSchemaPropertyOneOfOutputReference extends cdktf.ComplexObject {
@@ -961,5 +1031,145 @@ export class UserSchemaProperty extends cdktf.TerraformResource {
       master_override_priority: cdktf.listMapper(userSchemaPropertyMasterOverridePriorityToTerraform, true)(this._masterOverridePriority.internalValue),
       one_of: cdktf.listMapper(userSchemaPropertyOneOfToTerraform, true)(this._oneOf.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      array_enum: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._arrayEnum),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      array_type: {
+        value: cdktf.stringToHclTerraform(this._arrayType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      enum: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._enum),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      external_name: {
+        value: cdktf.stringToHclTerraform(this._externalName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      external_namespace: {
+        value: cdktf.stringToHclTerraform(this._externalNamespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      index: {
+        value: cdktf.stringToHclTerraform(this._index),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      master: {
+        value: cdktf.stringToHclTerraform(this._master),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      max_length: {
+        value: cdktf.numberToHclTerraform(this._maxLength),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      min_length: {
+        value: cdktf.numberToHclTerraform(this._minLength),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      pattern: {
+        value: cdktf.stringToHclTerraform(this._pattern),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      permissions: {
+        value: cdktf.stringToHclTerraform(this._permissions),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      required: {
+        value: cdktf.booleanToHclTerraform(this._required),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      scope: {
+        value: cdktf.stringToHclTerraform(this._scope),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      title: {
+        value: cdktf.stringToHclTerraform(this._title),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      type: {
+        value: cdktf.stringToHclTerraform(this._type),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      unique: {
+        value: cdktf.stringToHclTerraform(this._unique),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      user_type: {
+        value: cdktf.stringToHclTerraform(this._userType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      array_one_of: {
+        value: cdktf.listMapperHcl(userSchemaPropertyArrayOneOfToHclTerraform, true)(this._arrayOneOf.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "UserSchemaPropertyArrayOneOfList",
+      },
+      master_override_priority: {
+        value: cdktf.listMapperHcl(userSchemaPropertyMasterOverridePriorityToHclTerraform, true)(this._masterOverridePriority.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "UserSchemaPropertyMasterOverridePriorityList",
+      },
+      one_of: {
+        value: cdktf.listMapperHcl(userSchemaPropertyOneOfToHclTerraform, true)(this._oneOf.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "UserSchemaPropertyOneOfList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

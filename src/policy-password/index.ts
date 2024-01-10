@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/policy_password
 // generated from terraform resource schema
 
@@ -820,5 +815,199 @@ export class PolicyPassword extends cdktf.TerraformResource {
       sms_recovery: cdktf.stringToTerraform(this._smsRecovery),
       status: cdktf.stringToTerraform(this._status),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      auth_provider: {
+        value: cdktf.stringToHclTerraform(this._authProvider),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      call_recovery: {
+        value: cdktf.stringToHclTerraform(this._callRecovery),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      email_recovery: {
+        value: cdktf.stringToHclTerraform(this._emailRecovery),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      groups_included: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._groupsIncluded),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      password_auto_unlock_minutes: {
+        value: cdktf.numberToHclTerraform(this._passwordAutoUnlockMinutes),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      password_dictionary_lookup: {
+        value: cdktf.booleanToHclTerraform(this._passwordDictionaryLookup),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      password_exclude_first_name: {
+        value: cdktf.booleanToHclTerraform(this._passwordExcludeFirstName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      password_exclude_last_name: {
+        value: cdktf.booleanToHclTerraform(this._passwordExcludeLastName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      password_exclude_username: {
+        value: cdktf.booleanToHclTerraform(this._passwordExcludeUsername),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      password_expire_warn_days: {
+        value: cdktf.numberToHclTerraform(this._passwordExpireWarnDays),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      password_history_count: {
+        value: cdktf.numberToHclTerraform(this._passwordHistoryCount),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      password_lockout_notification_channels: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._passwordLockoutNotificationChannels),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      password_max_age_days: {
+        value: cdktf.numberToHclTerraform(this._passwordMaxAgeDays),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      password_max_lockout_attempts: {
+        value: cdktf.numberToHclTerraform(this._passwordMaxLockoutAttempts),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      password_min_age_minutes: {
+        value: cdktf.numberToHclTerraform(this._passwordMinAgeMinutes),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      password_min_length: {
+        value: cdktf.numberToHclTerraform(this._passwordMinLength),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      password_min_lowercase: {
+        value: cdktf.numberToHclTerraform(this._passwordMinLowercase),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      password_min_number: {
+        value: cdktf.numberToHclTerraform(this._passwordMinNumber),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      password_min_symbol: {
+        value: cdktf.numberToHclTerraform(this._passwordMinSymbol),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      password_min_uppercase: {
+        value: cdktf.numberToHclTerraform(this._passwordMinUppercase),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      password_show_lockout_failures: {
+        value: cdktf.booleanToHclTerraform(this._passwordShowLockoutFailures),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      priority: {
+        value: cdktf.numberToHclTerraform(this._priority),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      question_min_length: {
+        value: cdktf.numberToHclTerraform(this._questionMinLength),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      question_recovery: {
+        value: cdktf.stringToHclTerraform(this._questionRecovery),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      recovery_email_token: {
+        value: cdktf.numberToHclTerraform(this._recoveryEmailToken),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      skip_unlock: {
+        value: cdktf.booleanToHclTerraform(this._skipUnlock),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      sms_recovery: {
+        value: cdktf.stringToHclTerraform(this._smsRecovery),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      status: {
+        value: cdktf.stringToHclTerraform(this._status),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/okta/okta/4.6.3/docs/data-sources/auth_server_claims
 // generated from terraform resource schema
 
@@ -36,6 +31,17 @@ export function dataOktaAuthServerClaimsClaimsToTerraform(struct?: DataOktaAuthS
   }
   return {
   }
+}
+
+
+export function dataOktaAuthServerClaimsClaimsToHclTerraform(struct?: DataOktaAuthServerClaimsClaims): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataOktaAuthServerClaimsClaimsOutputReference extends cdktf.ComplexObject {
@@ -229,5 +235,25 @@ export class DataOktaAuthServerClaims extends cdktf.TerraformDataSource {
       auth_server_id: cdktf.stringToTerraform(this._authServerId),
       id: cdktf.stringToTerraform(this._id),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      auth_server_id: {
+        value: cdktf.stringToHclTerraform(this._authServerId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

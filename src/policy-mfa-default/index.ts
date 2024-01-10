@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/policy_mfa_default
 // generated from terraform resource schema
 
@@ -614,5 +609,151 @@ export class PolicyMfaDefault extends cdktf.TerraformResource {
       webauthn: cdktf.hashMapper(cdktf.stringToTerraform)(this._webauthn),
       yubikey_token: cdktf.hashMapper(cdktf.stringToTerraform)(this._yubikeyToken),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      duo: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._duo),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      external_idp: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._externalIdp),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      fido_u2f: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._fidoU2F),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      fido_webauthn: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._fidoWebauthn),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      google_otp: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._googleOtp),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      hotp: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._hotp),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      is_oie: {
+        value: cdktf.booleanToHclTerraform(this._isOie),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      okta_call: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._oktaCall),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      okta_email: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._oktaEmail),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      okta_otp: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._oktaOtp),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      okta_password: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._oktaPassword),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      okta_push: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._oktaPush),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      okta_question: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._oktaQuestion),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      okta_sms: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._oktaSms),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      okta_verify: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._oktaVerify),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      onprem_mfa: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._onpremMfa),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      phone_number: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._phoneNumber),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      rsa_token: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._rsaToken),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      security_question: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._securityQuestion),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      symantec_vip: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._symantecVip),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      webauthn: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._webauthn),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      yubikey_token: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._yubikeyToken),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

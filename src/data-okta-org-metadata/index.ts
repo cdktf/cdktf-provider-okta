@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/okta/okta/4.6.3/docs/data-sources/org_metadata
 // generated from terraform resource schema
 
@@ -23,6 +18,17 @@ export function dataOktaOrgMetadataDomainsToTerraform(struct?: DataOktaOrgMetada
   }
   return {
   }
+}
+
+
+export function dataOktaOrgMetadataDomainsToHclTerraform(struct?: DataOktaOrgMetadataDomains | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataOktaOrgMetadataDomainsOutputReference extends cdktf.ComplexObject {
@@ -81,6 +87,17 @@ export function dataOktaOrgMetadataSettingsToTerraform(struct?: DataOktaOrgMetad
   }
   return {
   }
+}
+
+
+export function dataOktaOrgMetadataSettingsToHclTerraform(struct?: DataOktaOrgMetadataSettings | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataOktaOrgMetadataSettingsOutputReference extends cdktf.ComplexObject {
@@ -221,5 +238,11 @@ export class DataOktaOrgMetadata extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+    };
+    return attrs;
   }
 }

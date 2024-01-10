@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/okta/okta/4.6.3/docs/data-sources/email_customization
 // generated from terraform resource schema
 
@@ -171,5 +166,31 @@ export class DataOktaEmailCustomization extends cdktf.TerraformDataSource {
       customization_id: cdktf.stringToTerraform(this._customizationId),
       template_name: cdktf.stringToTerraform(this._templateName),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      brand_id: {
+        value: cdktf.stringToHclTerraform(this._brandId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      customization_id: {
+        value: cdktf.stringToHclTerraform(this._customizationId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      template_name: {
+        value: cdktf.stringToHclTerraform(this._templateName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

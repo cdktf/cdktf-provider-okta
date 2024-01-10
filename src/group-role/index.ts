@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/group_role
 // generated from terraform resource schema
 
@@ -217,5 +212,49 @@ export class GroupRole extends cdktf.TerraformResource {
       target_app_list: cdktf.listMapper(cdktf.stringToTerraform, false)(this._targetAppList),
       target_group_list: cdktf.listMapper(cdktf.stringToTerraform, false)(this._targetGroupList),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      disable_notifications: {
+        value: cdktf.booleanToHclTerraform(this._disableNotifications),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      group_id: {
+        value: cdktf.stringToHclTerraform(this._groupId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      role_type: {
+        value: cdktf.stringToHclTerraform(this._roleType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      target_app_list: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._targetAppList),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      target_group_list: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._targetGroupList),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

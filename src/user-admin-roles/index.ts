@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user_admin_roles
 // generated from terraform resource schema
 
@@ -169,5 +164,37 @@ export class UserAdminRoles extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       user_id: cdktf.stringToTerraform(this._userId),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      admin_roles: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._adminRoles),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      disable_notifications: {
+        value: cdktf.booleanToHclTerraform(this._disableNotifications),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      user_id: {
+        value: cdktf.stringToHclTerraform(this._userId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

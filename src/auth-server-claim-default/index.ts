@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/auth_server_claim_default
 // generated from terraform resource schema
 
@@ -213,5 +208,43 @@ export class AuthServerClaimDefault extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       value: cdktf.stringToTerraform(this._value),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      always_include_in_token: {
+        value: cdktf.booleanToHclTerraform(this._alwaysIncludeInToken),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      auth_server_id: {
+        value: cdktf.stringToHclTerraform(this._authServerId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      value: {
+        value: cdktf.stringToHclTerraform(this._value),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

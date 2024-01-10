@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/brand
 // generated from terraform resource schema
 
@@ -311,5 +306,67 @@ export class Brand extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       remove_powered_by_okta: cdktf.booleanToTerraform(this._removePoweredByOkta),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      agree_to_custom_privacy_policy: {
+        value: cdktf.booleanToHclTerraform(this._agreeToCustomPrivacyPolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      brand_id: {
+        value: cdktf.stringToHclTerraform(this._brandId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      custom_privacy_policy_url: {
+        value: cdktf.stringToHclTerraform(this._customPrivacyPolicyUrl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      default_app_app_instance_id: {
+        value: cdktf.stringToHclTerraform(this._defaultAppAppInstanceId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      default_app_app_link_name: {
+        value: cdktf.stringToHclTerraform(this._defaultAppAppLinkName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      default_app_classic_application_uri: {
+        value: cdktf.stringToHclTerraform(this._defaultAppClassicApplicationUri),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      locale: {
+        value: cdktf.stringToHclTerraform(this._locale),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      remove_powered_by_okta: {
+        value: cdktf.booleanToHclTerraform(this._removePoweredByOkta),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

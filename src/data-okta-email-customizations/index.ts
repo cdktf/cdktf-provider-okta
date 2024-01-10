@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/okta/okta/4.6.3/docs/data-sources/email_customizations
 // generated from terraform resource schema
 
@@ -42,6 +37,17 @@ export function dataOktaEmailCustomizationsEmailCustomizationsToTerraform(struct
   }
   return {
   }
+}
+
+
+export function dataOktaEmailCustomizationsEmailCustomizationsToHclTerraform(struct?: DataOktaEmailCustomizationsEmailCustomizations): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataOktaEmailCustomizationsEmailCustomizationsOutputReference extends cdktf.ComplexObject {
@@ -240,5 +246,31 @@ export class DataOktaEmailCustomizations extends cdktf.TerraformDataSource {
       id: cdktf.stringToTerraform(this._id),
       template_name: cdktf.stringToTerraform(this._templateName),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      brand_id: {
+        value: cdktf.stringToHclTerraform(this._brandId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      template_name: {
+        value: cdktf.stringToHclTerraform(this._templateName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/captcha_org_wide_settings
 // generated from terraform resource schema
 
@@ -151,5 +146,31 @@ export class CaptchaOrgWideSettings extends cdktf.TerraformResource {
       enabled_for: cdktf.listMapper(cdktf.stringToTerraform, false)(this._enabledFor),
       id: cdktf.stringToTerraform(this._id),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      captcha_id: {
+        value: cdktf.stringToHclTerraform(this._captchaId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      enabled_for: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._enabledFor),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

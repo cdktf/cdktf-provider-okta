@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/policy_rule_signon
 // generated from terraform resource schema
 
@@ -184,6 +179,31 @@ export function policyRuleSignonFactorSequenceSecondaryCriteriaToTerraform(struc
   }
 }
 
+
+export function policyRuleSignonFactorSequenceSecondaryCriteriaToHclTerraform(struct?: PolicyRuleSignonFactorSequenceSecondaryCriteria | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    factor_type: {
+      value: cdktf.stringToHclTerraform(struct!.factorType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    provider: {
+      value: cdktf.stringToHclTerraform(struct!.provider),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class PolicyRuleSignonFactorSequenceSecondaryCriteriaOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -311,6 +331,37 @@ export function policyRuleSignonFactorSequenceToTerraform(struct?: PolicyRuleSig
     primary_criteria_provider: cdktf.stringToTerraform(struct!.primaryCriteriaProvider),
     secondary_criteria: cdktf.listMapper(policyRuleSignonFactorSequenceSecondaryCriteriaToTerraform, true)(struct!.secondaryCriteria),
   }
+}
+
+
+export function policyRuleSignonFactorSequenceToHclTerraform(struct?: PolicyRuleSignonFactorSequence | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    primary_criteria_factor_type: {
+      value: cdktf.stringToHclTerraform(struct!.primaryCriteriaFactorType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    primary_criteria_provider: {
+      value: cdktf.stringToHclTerraform(struct!.primaryCriteriaProvider),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    secondary_criteria: {
+      value: cdktf.listMapperHcl(policyRuleSignonFactorSequenceSecondaryCriteriaToHclTerraform, true)(struct!.secondaryCriteria),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PolicyRuleSignonFactorSequenceSecondaryCriteriaList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class PolicyRuleSignonFactorSequenceOutputReference extends cdktf.ComplexObject {
@@ -925,5 +976,157 @@ export class PolicyRuleSignon extends cdktf.TerraformResource {
       users_excluded: cdktf.listMapper(cdktf.stringToTerraform, false)(this._usersExcluded),
       factor_sequence: cdktf.listMapper(policyRuleSignonFactorSequenceToTerraform, true)(this._factorSequence.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      access: {
+        value: cdktf.stringToHclTerraform(this._access),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      authtype: {
+        value: cdktf.stringToHclTerraform(this._authtype),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      behaviors: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._behaviors),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      identity_provider: {
+        value: cdktf.stringToHclTerraform(this._identityProvider),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      identity_provider_ids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._identityProviderIds),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      mfa_lifetime: {
+        value: cdktf.numberToHclTerraform(this._mfaLifetime),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      mfa_prompt: {
+        value: cdktf.stringToHclTerraform(this._mfaPrompt),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      mfa_remember_device: {
+        value: cdktf.booleanToHclTerraform(this._mfaRememberDevice),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      mfa_required: {
+        value: cdktf.booleanToHclTerraform(this._mfaRequired),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      network_connection: {
+        value: cdktf.stringToHclTerraform(this._networkConnection),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      network_excludes: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._networkExcludes),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      network_includes: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._networkIncludes),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      policy_id: {
+        value: cdktf.stringToHclTerraform(this._policyId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      primary_factor: {
+        value: cdktf.stringToHclTerraform(this._primaryFactor),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      priority: {
+        value: cdktf.numberToHclTerraform(this._priority),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      risc_level: {
+        value: cdktf.stringToHclTerraform(this._riscLevel),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      session_idle: {
+        value: cdktf.numberToHclTerraform(this._sessionIdle),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      session_lifetime: {
+        value: cdktf.numberToHclTerraform(this._sessionLifetime),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      session_persistent: {
+        value: cdktf.booleanToHclTerraform(this._sessionPersistent),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      status: {
+        value: cdktf.stringToHclTerraform(this._status),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      users_excluded: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._usersExcluded),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      factor_sequence: {
+        value: cdktf.listMapperHcl(policyRuleSignonFactorSequenceToHclTerraform, true)(this._factorSequence.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "PolicyRuleSignonFactorSequenceList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

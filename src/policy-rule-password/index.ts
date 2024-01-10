@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/policy_rule_password
 // generated from terraform resource schema
 
@@ -364,5 +359,85 @@ export class PolicyRulePassword extends cdktf.TerraformResource {
       status: cdktf.stringToTerraform(this._status),
       users_excluded: cdktf.listMapper(cdktf.stringToTerraform, false)(this._usersExcluded),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      network_connection: {
+        value: cdktf.stringToHclTerraform(this._networkConnection),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      network_excludes: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._networkExcludes),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      network_includes: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._networkIncludes),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      password_change: {
+        value: cdktf.stringToHclTerraform(this._passwordChange),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      password_reset: {
+        value: cdktf.stringToHclTerraform(this._passwordReset),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      password_unlock: {
+        value: cdktf.stringToHclTerraform(this._passwordUnlock),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      policy_id: {
+        value: cdktf.stringToHclTerraform(this._policyId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      priority: {
+        value: cdktf.numberToHclTerraform(this._priority),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      status: {
+        value: cdktf.stringToHclTerraform(this._status),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      users_excluded: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._usersExcluded),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

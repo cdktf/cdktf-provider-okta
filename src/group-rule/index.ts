@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/group_rule
 // generated from terraform resource schema
 
@@ -252,5 +247,61 @@ export class GroupRule extends cdktf.TerraformResource {
       status: cdktf.stringToTerraform(this._status),
       users_excluded: cdktf.listMapper(cdktf.stringToTerraform, false)(this._usersExcluded),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      expression_type: {
+        value: cdktf.stringToHclTerraform(this._expressionType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      expression_value: {
+        value: cdktf.stringToHclTerraform(this._expressionValue),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      group_assignments: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._groupAssignments),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      remove_assigned_users: {
+        value: cdktf.booleanToHclTerraform(this._removeAssignedUsers),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      status: {
+        value: cdktf.stringToHclTerraform(this._status),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      users_excluded: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._usersExcluded),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }
