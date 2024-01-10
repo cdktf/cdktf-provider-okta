@@ -247,4 +247,54 @@ export class AppUser extends cdktf.TerraformResource {
       username: cdktf.stringToTerraform(this._username),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      app_id: {
+        value: cdktf.stringToHclTerraform(this._appId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      password: {
+        value: cdktf.stringToHclTerraform(this._password),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      profile: {
+        value: cdktf.stringToHclTerraform(this._profile),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      retain_assignment: {
+        value: cdktf.booleanToHclTerraform(this._retainAssignment),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      user_id: {
+        value: cdktf.stringToHclTerraform(this._userId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      username: {
+        value: cdktf.stringToHclTerraform(this._username),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

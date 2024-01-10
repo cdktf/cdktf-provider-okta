@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaUserProfileMappingSource.DataOktaUserProfileMappingSource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktauserprofilemappingsource"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktauserprofilemappingsource"
 
 dataoktauserprofilemappingsource.NewDataOktaUserProfileMappingSource(scope Construct, id *string, config DataOktaUserProfileMappingSourceConfig) DataOktaUserProfileMappingSource
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-okta.dataOktaUserProfileMappingSource.DataOktaUserProfileMappingSource.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaUserProfileMappingSource.DataOktaUserProfileMappingSource.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-okta.dataOktaUserProfileMappingSource.DataOktaUserProfileMappingSource.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-okta.dataOktaUserProfileMappingSource.DataOktaUserProfileMappingSource.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-okta.dataOktaUserProfileMappingSource.DataOktaUserProfileMappingSource.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaUserProfileMappingSource.DataOktaUserProfileMappingSource.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-okta.dataOktaUserProfileMappingSource.DataOktaUserProfileMappingSource.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
@@ -118,6 +119,14 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-okta.dataOktaUserProfileMappingSource.DataOktaUserProfileMappingSource.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-okta.dataOktaUserProfileMappingSource.DataOktaUserProfileMappingSource.toMetadata"></a>
 
@@ -267,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.dataOktaUserProfileMappingSource.DataOktaUserProfileMappingSource.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktauserprofilemappingsource"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktauserprofilemappingsource"
 
 dataoktauserprofilemappingsource.DataOktaUserProfileMappingSource_IsConstruct(x interface{}) *bool
 ```
@@ -299,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.dataOktaUserProfileMappingSource.DataOktaUserProfileMappingSource.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktauserprofilemappingsource"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktauserprofilemappingsource"
 
 dataoktauserprofilemappingsource.DataOktaUserProfileMappingSource_IsTerraformElement(x interface{}) *bool
 ```
@@ -313,7 +322,7 @@ dataoktauserprofilemappingsource.DataOktaUserProfileMappingSource_IsTerraformEle
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-okta.dataOktaUserProfileMappingSource.DataOktaUserProfileMappingSource.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktauserprofilemappingsource"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktauserprofilemappingsource"
 
 dataoktauserprofilemappingsource.DataOktaUserProfileMappingSource_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -327,7 +336,7 @@ dataoktauserprofilemappingsource.DataOktaUserProfileMappingSource_IsTerraformDat
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.dataOktaUserProfileMappingSource.DataOktaUserProfileMappingSource.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktauserprofilemappingsource"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktauserprofilemappingsource"
 
 dataoktauserprofilemappingsource.DataOktaUserProfileMappingSource_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -567,7 +576,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaUserProfileMappingSource.DataOktaUserProfileMappingSourceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktauserprofilemappingsource"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktauserprofilemappingsource"
 
 &dataoktauserprofilemappingsource.DataOktaUserProfileMappingSourceConfig {
 	Connection: interface{},

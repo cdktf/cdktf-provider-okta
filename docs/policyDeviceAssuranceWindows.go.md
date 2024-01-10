@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.policyDeviceAssuranceWindows.PolicyDeviceAssuranceWindows.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policydeviceassurancewindows"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/policydeviceassurancewindows"
 
 policydeviceassurancewindows.NewPolicyDeviceAssuranceWindows(scope Construct, id *string, config PolicyDeviceAssuranceWindowsConfig) PolicyDeviceAssuranceWindows
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceWindows.PolicyDeviceAssuranceWindows.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceWindows.PolicyDeviceAssuranceWindows.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceWindows.PolicyDeviceAssuranceWindows.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceWindows.PolicyDeviceAssuranceWindows.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceWindows.PolicyDeviceAssuranceWindows.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceWindows.PolicyDeviceAssuranceWindows.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceWindows.PolicyDeviceAssuranceWindows.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -148,6 +149,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-okta.policyDeviceAssuranceWindows.PolicyDeviceAssuranceWindows.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-okta.policyDeviceAssuranceWindows.PolicyDeviceAssuranceWindows.toMetadata"></a>
 
@@ -539,7 +546,7 @@ func ResetTpspWindowsUserDomain()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.policyDeviceAssuranceWindows.PolicyDeviceAssuranceWindows.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policydeviceassurancewindows"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/policydeviceassurancewindows"
 
 policydeviceassurancewindows.PolicyDeviceAssuranceWindows_IsConstruct(x interface{}) *bool
 ```
@@ -571,7 +578,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.policyDeviceAssuranceWindows.PolicyDeviceAssuranceWindows.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policydeviceassurancewindows"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/policydeviceassurancewindows"
 
 policydeviceassurancewindows.PolicyDeviceAssuranceWindows_IsTerraformElement(x interface{}) *bool
 ```
@@ -585,7 +592,7 @@ policydeviceassurancewindows.PolicyDeviceAssuranceWindows_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.policyDeviceAssuranceWindows.PolicyDeviceAssuranceWindows.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policydeviceassurancewindows"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/policydeviceassurancewindows"
 
 policydeviceassurancewindows.PolicyDeviceAssuranceWindows_IsTerraformResource(x interface{}) *bool
 ```
@@ -599,7 +606,7 @@ policydeviceassurancewindows.PolicyDeviceAssuranceWindows_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.policyDeviceAssuranceWindows.PolicyDeviceAssuranceWindows.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policydeviceassurancewindows"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/policydeviceassurancewindows"
 
 policydeviceassurancewindows.PolicyDeviceAssuranceWindows_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1444,7 +1451,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.policyDeviceAssuranceWindows.PolicyDeviceAssuranceWindowsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policydeviceassurancewindows"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/policydeviceassurancewindows"
 
 &policydeviceassurancewindows.PolicyDeviceAssuranceWindowsConfig {
 	Connection: interface{},

@@ -168,4 +168,24 @@ export class DataOktaIdpMetadataSaml extends cdktf.TerraformDataSource {
       idp_id: cdktf.stringToTerraform(this._idpId),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      idp_id: {
+        value: cdktf.stringToHclTerraform(this._idpId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

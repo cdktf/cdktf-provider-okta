@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.idpOidc.IdpOidc.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/idpoidc"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/idpoidc"
 
 idpoidc.NewIdpOidc(scope Construct, id *string, config IdpOidcConfig) IdpOidc
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-okta.idpOidc.IdpOidc.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpOidc.IdpOidc.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-okta.idpOidc.IdpOidc.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-okta.idpOidc.IdpOidc.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpOidc.IdpOidc.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpOidc.IdpOidc.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-okta.idpOidc.IdpOidc.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -146,6 +147,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-okta.idpOidc.IdpOidc.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-okta.idpOidc.IdpOidc.toMetadata"></a>
 
@@ -525,7 +532,7 @@ func ResetUsernameTemplate()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.idpOidc.IdpOidc.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/idpoidc"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/idpoidc"
 
 idpoidc.IdpOidc_IsConstruct(x interface{}) *bool
 ```
@@ -557,7 +564,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.idpOidc.IdpOidc.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/idpoidc"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/idpoidc"
 
 idpoidc.IdpOidc_IsTerraformElement(x interface{}) *bool
 ```
@@ -571,7 +578,7 @@ idpoidc.IdpOidc_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.idpOidc.IdpOidc.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/idpoidc"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/idpoidc"
 
 idpoidc.IdpOidc_IsTerraformResource(x interface{}) *bool
 ```
@@ -585,7 +592,7 @@ idpoidc.IdpOidc_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.idpOidc.IdpOidc.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/idpoidc"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/idpoidc"
 
 idpoidc.IdpOidc_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1562,7 +1569,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.idpOidc.IdpOidcConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/idpoidc"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/idpoidc"
 
 &idpoidc.IdpOidcConfig {
 	Connection: interface{},

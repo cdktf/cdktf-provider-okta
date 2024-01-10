@@ -38,6 +38,17 @@ export function dataOktaBehaviorsBehaviorsToTerraform(struct?: DataOktaBehaviors
   }
 }
 
+
+export function dataOktaBehaviorsBehaviorsToHclTerraform(struct?: DataOktaBehaviorsBehaviors): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataOktaBehaviorsBehaviorsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -218,5 +229,25 @@ export class DataOktaBehaviors extends cdktf.TerraformDataSource {
       id: cdktf.stringToTerraform(this._id),
       q: cdktf.stringToTerraform(this._q),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      q: {
+        value: cdktf.stringToHclTerraform(this._q),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

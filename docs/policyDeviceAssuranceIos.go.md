@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.policyDeviceAssuranceIos.PolicyDeviceAssuranceIos.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policydeviceassuranceios"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/policydeviceassuranceios"
 
 policydeviceassuranceios.NewPolicyDeviceAssuranceIos(scope Construct, id *string, config PolicyDeviceAssuranceIosConfig) PolicyDeviceAssuranceIos
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceIos.PolicyDeviceAssuranceIos.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceIos.PolicyDeviceAssuranceIos.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceIos.PolicyDeviceAssuranceIos.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceIos.PolicyDeviceAssuranceIos.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceIos.PolicyDeviceAssuranceIos.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceIos.PolicyDeviceAssuranceIos.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceIos.PolicyDeviceAssuranceIos.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -127,6 +128,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-okta.policyDeviceAssuranceIos.PolicyDeviceAssuranceIos.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-okta.policyDeviceAssuranceIos.PolicyDeviceAssuranceIos.toMetadata"></a>
 
@@ -392,7 +399,7 @@ func ResetScreenlockType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.policyDeviceAssuranceIos.PolicyDeviceAssuranceIos.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policydeviceassuranceios"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/policydeviceassuranceios"
 
 policydeviceassuranceios.PolicyDeviceAssuranceIos_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.policyDeviceAssuranceIos.PolicyDeviceAssuranceIos.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policydeviceassuranceios"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/policydeviceassuranceios"
 
 policydeviceassuranceios.PolicyDeviceAssuranceIos_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +445,7 @@ policydeviceassuranceios.PolicyDeviceAssuranceIos_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.policyDeviceAssuranceIos.PolicyDeviceAssuranceIos.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policydeviceassuranceios"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/policydeviceassuranceios"
 
 policydeviceassuranceios.PolicyDeviceAssuranceIos_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +459,7 @@ policydeviceassuranceios.PolicyDeviceAssuranceIos_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.policyDeviceAssuranceIos.PolicyDeviceAssuranceIos.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policydeviceassuranceios"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/policydeviceassuranceios"
 
 policydeviceassuranceios.PolicyDeviceAssuranceIos_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -835,7 +842,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.policyDeviceAssuranceIos.PolicyDeviceAssuranceIosConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policydeviceassuranceios"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/policydeviceassuranceios"
 
 &policydeviceassuranceios.PolicyDeviceAssuranceIosConfig {
 	Connection: interface{},

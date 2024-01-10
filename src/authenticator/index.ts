@@ -401,4 +401,90 @@ export class Authenticator extends cdktf.TerraformResource {
       status: cdktf.stringToTerraform(this._status),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      key: {
+        value: cdktf.stringToHclTerraform(this._key),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      provider_auth_port: {
+        value: cdktf.numberToHclTerraform(this._providerAuthPort),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      provider_host: {
+        value: cdktf.stringToHclTerraform(this._providerHost),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      provider_hostname: {
+        value: cdktf.stringToHclTerraform(this._providerHostname),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      provider_integration_key: {
+        value: cdktf.stringToHclTerraform(this._providerIntegrationKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      provider_json: {
+        value: cdktf.stringToHclTerraform(this._providerJson),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      provider_secret_key: {
+        value: cdktf.stringToHclTerraform(this._providerSecretKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      provider_shared_secret: {
+        value: cdktf.stringToHclTerraform(this._providerSharedSecret),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      provider_user_name_template: {
+        value: cdktf.stringToHclTerraform(this._providerUserNameTemplate),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      settings: {
+        value: cdktf.stringToHclTerraform(this._settings),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      status: {
+        value: cdktf.stringToHclTerraform(this._status),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

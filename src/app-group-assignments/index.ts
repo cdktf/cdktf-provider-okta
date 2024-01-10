@@ -68,6 +68,37 @@ export function appGroupAssignmentsGroupToTerraform(struct?: AppGroupAssignments
   }
 }
 
+
+export function appGroupAssignmentsGroupToHclTerraform(struct?: AppGroupAssignmentsGroup | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    id: {
+      value: cdktf.stringToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    priority: {
+      value: cdktf.numberToHclTerraform(struct!.priority),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    profile: {
+      value: cdktf.stringToHclTerraform(struct!.profile),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AppGroupAssignmentsGroupOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -302,5 +333,31 @@ export class AppGroupAssignments extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       group: cdktf.listMapper(appGroupAssignmentsGroupToTerraform, true)(this._group.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      app_id: {
+        value: cdktf.stringToHclTerraform(this._appId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      group: {
+        value: cdktf.listMapperHcl(appGroupAssignmentsGroupToHclTerraform, true)(this._group.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "AppGroupAssignmentsGroupList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

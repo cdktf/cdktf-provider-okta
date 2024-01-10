@@ -706,4 +706,162 @@ export class PolicyDeviceAssuranceWindows extends cdktf.TerraformResource {
       tpsp_windows_user_domain: cdktf.stringToTerraform(this._tpspWindowsUserDomain),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      disk_encryption_type: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._diskEncryptionType),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      os_version: {
+        value: cdktf.stringToHclTerraform(this._osVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      screenlock_type: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._screenlockType),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      secure_hardware_present: {
+        value: cdktf.booleanToHclTerraform(this._secureHardwarePresent),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      third_party_signal_providers: {
+        value: cdktf.booleanToHclTerraform(this._thirdPartySignalProviders),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      tpsp_browser_version: {
+        value: cdktf.stringToHclTerraform(this._tpspBrowserVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tpsp_builtin_dns_client_enabled: {
+        value: cdktf.booleanToHclTerraform(this._tpspBuiltinDnsClientEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      tpsp_chrome_remote_desktop_app_blocked: {
+        value: cdktf.booleanToHclTerraform(this._tpspChromeRemoteDesktopAppBlocked),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      tpsp_crowd_strike_agent_id: {
+        value: cdktf.stringToHclTerraform(this._tpspCrowdStrikeAgentId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tpsp_crowd_strike_customer_id: {
+        value: cdktf.stringToHclTerraform(this._tpspCrowdStrikeCustomerId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tpsp_device_enrollment_domain: {
+        value: cdktf.stringToHclTerraform(this._tpspDeviceEnrollmentDomain),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tpsp_disk_encrypted: {
+        value: cdktf.booleanToHclTerraform(this._tpspDiskEncrypted),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      tpsp_key_trust_level: {
+        value: cdktf.stringToHclTerraform(this._tpspKeyTrustLevel),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tpsp_os_firewall: {
+        value: cdktf.booleanToHclTerraform(this._tpspOsFirewall),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      tpsp_os_version: {
+        value: cdktf.stringToHclTerraform(this._tpspOsVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tpsp_password_proctection_warning_trigger: {
+        value: cdktf.stringToHclTerraform(this._tpspPasswordProctectionWarningTrigger),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tpsp_realtime_url_check_mode: {
+        value: cdktf.booleanToHclTerraform(this._tpspRealtimeUrlCheckMode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      tpsp_safe_browsing_protection_level: {
+        value: cdktf.stringToHclTerraform(this._tpspSafeBrowsingProtectionLevel),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tpsp_screen_lock_secured: {
+        value: cdktf.booleanToHclTerraform(this._tpspScreenLockSecured),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      tpsp_secure_boot_enabled: {
+        value: cdktf.booleanToHclTerraform(this._tpspSecureBootEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      tpsp_site_isolation_enabled: {
+        value: cdktf.booleanToHclTerraform(this._tpspSiteIsolationEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      tpsp_third_party_blocking_enabled: {
+        value: cdktf.booleanToHclTerraform(this._tpspThirdPartyBlockingEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      tpsp_windows_machine_domain: {
+        value: cdktf.stringToHclTerraform(this._tpspWindowsMachineDomain),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tpsp_windows_user_domain: {
+        value: cdktf.stringToHclTerraform(this._tpspWindowsUserDomain),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaAppGroupAssignments.DataOktaAppGroupAssignments.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktaappgroupassignments"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktaappgroupassignments"
 
 dataoktaappgroupassignments.NewDataOktaAppGroupAssignments(scope Construct, id *string, config DataOktaAppGroupAssignmentsConfig) DataOktaAppGroupAssignments
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-okta.dataOktaAppGroupAssignments.DataOktaAppGroupAssignments.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaAppGroupAssignments.DataOktaAppGroupAssignments.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-okta.dataOktaAppGroupAssignments.DataOktaAppGroupAssignments.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-okta.dataOktaAppGroupAssignments.DataOktaAppGroupAssignments.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-okta.dataOktaAppGroupAssignments.DataOktaAppGroupAssignments.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaAppGroupAssignments.DataOktaAppGroupAssignments.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-okta.dataOktaAppGroupAssignments.DataOktaAppGroupAssignments.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
@@ -118,6 +119,14 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-okta.dataOktaAppGroupAssignments.DataOktaAppGroupAssignments.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-okta.dataOktaAppGroupAssignments.DataOktaAppGroupAssignments.toMetadata"></a>
 
@@ -267,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.dataOktaAppGroupAssignments.DataOktaAppGroupAssignments.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktaappgroupassignments"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktaappgroupassignments"
 
 dataoktaappgroupassignments.DataOktaAppGroupAssignments_IsConstruct(x interface{}) *bool
 ```
@@ -299,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.dataOktaAppGroupAssignments.DataOktaAppGroupAssignments.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktaappgroupassignments"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktaappgroupassignments"
 
 dataoktaappgroupassignments.DataOktaAppGroupAssignments_IsTerraformElement(x interface{}) *bool
 ```
@@ -313,7 +322,7 @@ dataoktaappgroupassignments.DataOktaAppGroupAssignments_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-okta.dataOktaAppGroupAssignments.DataOktaAppGroupAssignments.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktaappgroupassignments"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktaappgroupassignments"
 
 dataoktaappgroupassignments.DataOktaAppGroupAssignments_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -327,7 +336,7 @@ dataoktaappgroupassignments.DataOktaAppGroupAssignments_IsTerraformDataSource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.dataOktaAppGroupAssignments.DataOktaAppGroupAssignments.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktaappgroupassignments"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktaappgroupassignments"
 
 dataoktaappgroupassignments.DataOktaAppGroupAssignments_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -567,7 +576,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaAppGroupAssignments.DataOktaAppGroupAssignmentsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktaappgroupassignments"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktaappgroupassignments"
 
 &dataoktaappgroupassignments.DataOktaAppGroupAssignmentsConfig {
 	Connection: interface{},

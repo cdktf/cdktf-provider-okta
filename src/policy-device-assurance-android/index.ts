@@ -250,4 +250,48 @@ export class PolicyDeviceAssuranceAndroid extends cdktf.TerraformResource {
       secure_hardware_present: cdktf.booleanToTerraform(this._secureHardwarePresent),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      disk_encryption_type: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._diskEncryptionType),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      jailbreak: {
+        value: cdktf.booleanToHclTerraform(this._jailbreak),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      os_version: {
+        value: cdktf.stringToHclTerraform(this._osVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      screenlock_type: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._screenlockType),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      secure_hardware_present: {
+        value: cdktf.booleanToHclTerraform(this._secureHardwarePresent),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

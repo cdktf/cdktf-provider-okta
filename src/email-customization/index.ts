@@ -251,4 +251,54 @@ export class EmailCustomization extends cdktf.TerraformResource {
       template_name: cdktf.stringToTerraform(this._templateName),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      body: {
+        value: cdktf.stringToHclTerraform(this._body),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      brand_id: {
+        value: cdktf.stringToHclTerraform(this._brandId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      force_is_default: {
+        value: cdktf.stringToHclTerraform(this._forceIsDefault),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      is_default: {
+        value: cdktf.booleanToHclTerraform(this._isDefault),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      language: {
+        value: cdktf.stringToHclTerraform(this._language),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      subject: {
+        value: cdktf.stringToHclTerraform(this._subject),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      template_name: {
+        value: cdktf.stringToHclTerraform(this._templateName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

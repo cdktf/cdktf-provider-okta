@@ -38,6 +38,17 @@ export function dataOktaThemesThemesToTerraform(struct?: DataOktaThemesThemes): 
   }
 }
 
+
+export function dataOktaThemesThemesToHclTerraform(struct?: DataOktaThemesThemes): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataOktaThemesThemesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -254,5 +265,25 @@ export class DataOktaThemes extends cdktf.TerraformDataSource {
       brand_id: cdktf.stringToTerraform(this._brandId),
       id: cdktf.stringToTerraform(this._id),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      brand_id: {
+        value: cdktf.stringToHclTerraform(this._brandId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

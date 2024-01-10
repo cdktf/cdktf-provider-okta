@@ -170,4 +170,36 @@ export class LinkValue extends cdktf.TerraformResource {
       primary_user_id: cdktf.stringToTerraform(this._primaryUserId),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      associated_user_ids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._associatedUserIds),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      primary_name: {
+        value: cdktf.stringToHclTerraform(this._primaryName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      primary_user_id: {
+        value: cdktf.stringToHclTerraform(this._primaryUserId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

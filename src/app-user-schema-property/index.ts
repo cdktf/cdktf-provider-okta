@@ -172,6 +172,31 @@ export function appUserSchemaPropertyArrayOneOfToTerraform(struct?: AppUserSchem
   }
 }
 
+
+export function appUserSchemaPropertyArrayOneOfToHclTerraform(struct?: AppUserSchemaPropertyArrayOneOf | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    const: {
+      value: cdktf.stringToHclTerraform(struct!.const),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    title: {
+      value: cdktf.stringToHclTerraform(struct!.title),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AppUserSchemaPropertyArrayOneOfOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -292,6 +317,31 @@ export function appUserSchemaPropertyOneOfToTerraform(struct?: AppUserSchemaProp
     const: cdktf.stringToTerraform(struct!.const),
     title: cdktf.stringToTerraform(struct!.title),
   }
+}
+
+
+export function appUserSchemaPropertyOneOfToHclTerraform(struct?: AppUserSchemaPropertyOneOf | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    const: {
+      value: cdktf.stringToHclTerraform(struct!.const),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    title: {
+      value: cdktf.stringToHclTerraform(struct!.title),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AppUserSchemaPropertyOneOfOutputReference extends cdktf.ComplexObject {
@@ -839,5 +889,145 @@ export class AppUserSchemaProperty extends cdktf.TerraformResource {
       array_one_of: cdktf.listMapper(appUserSchemaPropertyArrayOneOfToTerraform, true)(this._arrayOneOf.internalValue),
       one_of: cdktf.listMapper(appUserSchemaPropertyOneOfToTerraform, true)(this._oneOf.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      app_id: {
+        value: cdktf.stringToHclTerraform(this._appId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      array_enum: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._arrayEnum),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      array_type: {
+        value: cdktf.stringToHclTerraform(this._arrayType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      enum: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._enum),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      external_name: {
+        value: cdktf.stringToHclTerraform(this._externalName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      external_namespace: {
+        value: cdktf.stringToHclTerraform(this._externalNamespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      index: {
+        value: cdktf.stringToHclTerraform(this._index),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      master: {
+        value: cdktf.stringToHclTerraform(this._master),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      max_length: {
+        value: cdktf.numberToHclTerraform(this._maxLength),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      min_length: {
+        value: cdktf.numberToHclTerraform(this._minLength),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      permissions: {
+        value: cdktf.stringToHclTerraform(this._permissions),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      required: {
+        value: cdktf.booleanToHclTerraform(this._required),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      scope: {
+        value: cdktf.stringToHclTerraform(this._scope),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      title: {
+        value: cdktf.stringToHclTerraform(this._title),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      type: {
+        value: cdktf.stringToHclTerraform(this._type),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      union: {
+        value: cdktf.booleanToHclTerraform(this._union),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      unique: {
+        value: cdktf.stringToHclTerraform(this._unique),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      user_type: {
+        value: cdktf.stringToHclTerraform(this._userType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      array_one_of: {
+        value: cdktf.listMapperHcl(appUserSchemaPropertyArrayOneOfToHclTerraform, true)(this._arrayOneOf.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "AppUserSchemaPropertyArrayOneOfList",
+      },
+      one_of: {
+        value: cdktf.listMapperHcl(appUserSchemaPropertyOneOfToHclTerraform, true)(this._oneOf.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "AppUserSchemaPropertyOneOfList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

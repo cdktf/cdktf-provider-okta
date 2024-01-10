@@ -191,4 +191,42 @@ export class TrustedOrigin extends cdktf.TerraformResource {
       scopes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._scopes),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      active: {
+        value: cdktf.booleanToHclTerraform(this._active),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      origin: {
+        value: cdktf.stringToHclTerraform(this._origin),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      scopes: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._scopes),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

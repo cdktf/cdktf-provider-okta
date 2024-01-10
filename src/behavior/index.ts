@@ -266,4 +266,60 @@ export class Behavior extends cdktf.TerraformResource {
       velocity: cdktf.numberToTerraform(this._velocity),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      location_granularity_type: {
+        value: cdktf.stringToHclTerraform(this._locationGranularityType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      number_of_authentications: {
+        value: cdktf.numberToHclTerraform(this._numberOfAuthentications),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      radius_from_location: {
+        value: cdktf.numberToHclTerraform(this._radiusFromLocation),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      status: {
+        value: cdktf.stringToHclTerraform(this._status),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      type: {
+        value: cdktf.stringToHclTerraform(this._type),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      velocity: {
+        value: cdktf.numberToHclTerraform(this._velocity),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

@@ -287,4 +287,66 @@ export class UserBaseSchemaProperty extends cdktf.TerraformResource {
       user_type: cdktf.stringToTerraform(this._userType),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      index: {
+        value: cdktf.stringToHclTerraform(this._index),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      master: {
+        value: cdktf.stringToHclTerraform(this._master),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      pattern: {
+        value: cdktf.stringToHclTerraform(this._pattern),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      permissions: {
+        value: cdktf.stringToHclTerraform(this._permissions),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      required: {
+        value: cdktf.booleanToHclTerraform(this._required),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      title: {
+        value: cdktf.stringToHclTerraform(this._title),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      type: {
+        value: cdktf.stringToHclTerraform(this._type),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      user_type: {
+        value: cdktf.stringToHclTerraform(this._userType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

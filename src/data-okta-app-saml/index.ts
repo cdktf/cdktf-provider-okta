@@ -73,6 +73,17 @@ export function dataOktaAppSamlAttributeStatementsToTerraform(struct?: DataOktaA
   }
 }
 
+
+export function dataOktaAppSamlAttributeStatementsToHclTerraform(struct?: DataOktaAppSamlAttributeStatements): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataOktaAppSamlAttributeStatementsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -542,5 +553,55 @@ export class DataOktaAppSaml extends cdktf.TerraformDataSource {
       skip_groups: cdktf.booleanToTerraform(this._skipGroups),
       skip_users: cdktf.booleanToTerraform(this._skipUsers),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      active_only: {
+        value: cdktf.booleanToHclTerraform(this._activeOnly),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      label: {
+        value: cdktf.stringToHclTerraform(this._label),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      label_prefix: {
+        value: cdktf.stringToHclTerraform(this._labelPrefix),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      request_compressed: {
+        value: cdktf.booleanToHclTerraform(this._requestCompressed),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      skip_groups: {
+        value: cdktf.booleanToHclTerraform(this._skipGroups),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      skip_users: {
+        value: cdktf.booleanToHclTerraform(this._skipUsers),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

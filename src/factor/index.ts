@@ -149,4 +149,30 @@ export class Factor extends cdktf.TerraformResource {
       provider_id: cdktf.stringToTerraform(this._providerId),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      active: {
+        value: cdktf.booleanToHclTerraform(this._active),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      provider_id: {
+        value: cdktf.stringToHclTerraform(this._providerId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

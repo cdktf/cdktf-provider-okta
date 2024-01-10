@@ -230,4 +230,54 @@ export class LinkDefinition extends cdktf.TerraformResource {
       primary_title: cdktf.stringToTerraform(this._primaryTitle),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      associated_description: {
+        value: cdktf.stringToHclTerraform(this._associatedDescription),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      associated_name: {
+        value: cdktf.stringToHclTerraform(this._associatedName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      associated_title: {
+        value: cdktf.stringToHclTerraform(this._associatedTitle),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      primary_description: {
+        value: cdktf.stringToHclTerraform(this._primaryDescription),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      primary_name: {
+        value: cdktf.stringToHclTerraform(this._primaryName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      primary_title: {
+        value: cdktf.stringToHclTerraform(this._primaryTitle),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

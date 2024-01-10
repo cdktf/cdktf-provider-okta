@@ -68,6 +68,17 @@ export function dataOktaUsersUsersToTerraform(struct?: DataOktaUsersUsers): any 
   }
 }
 
+
+export function dataOktaUsersUsersToHclTerraform(struct?: DataOktaUsersUsers): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataOktaUsersUsersOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -334,6 +345,43 @@ export function dataOktaUsersSearchToTerraform(struct?: DataOktaUsersSearch | cd
     name: cdktf.stringToTerraform(struct!.name),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function dataOktaUsersSearchToHclTerraform(struct?: DataOktaUsersSearch | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    comparison: {
+      value: cdktf.stringToHclTerraform(struct!.comparison),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    expression: {
+      value: cdktf.stringToHclTerraform(struct!.expression),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataOktaUsersSearchOutputReference extends cdktf.ComplexObject {
@@ -679,5 +727,55 @@ export class DataOktaUsers extends cdktf.TerraformDataSource {
       include_roles: cdktf.booleanToTerraform(this._includeRoles),
       search: cdktf.listMapper(dataOktaUsersSearchToTerraform, true)(this._search.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      compound_search_operator: {
+        value: cdktf.stringToHclTerraform(this._compoundSearchOperator),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      delay_read_seconds: {
+        value: cdktf.stringToHclTerraform(this._delayReadSeconds),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      group_id: {
+        value: cdktf.stringToHclTerraform(this._groupId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      include_groups: {
+        value: cdktf.booleanToHclTerraform(this._includeGroups),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      include_roles: {
+        value: cdktf.booleanToHclTerraform(this._includeRoles),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      search: {
+        value: cdktf.listMapperHcl(dataOktaUsersSearchToHclTerraform, true)(this._search.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "DataOktaUsersSearchList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

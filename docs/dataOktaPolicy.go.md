@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaPolicy.DataOktaPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktapolicy"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktapolicy"
 
 dataoktapolicy.NewDataOktaPolicy(scope Construct, id *string, config DataOktaPolicyConfig) DataOktaPolicy
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-okta.dataOktaPolicy.DataOktaPolicy.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaPolicy.DataOktaPolicy.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-okta.dataOktaPolicy.DataOktaPolicy.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-okta.dataOktaPolicy.DataOktaPolicy.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-okta.dataOktaPolicy.DataOktaPolicy.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaPolicy.DataOktaPolicy.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-okta.dataOktaPolicy.DataOktaPolicy.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
@@ -119,6 +120,14 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-okta.dataOktaPolicy.DataOktaPolicy.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-okta.dataOktaPolicy.DataOktaPolicy.toMetadata"></a>
 
@@ -274,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.dataOktaPolicy.DataOktaPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktapolicy"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktapolicy"
 
 dataoktapolicy.DataOktaPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -306,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.dataOktaPolicy.DataOktaPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktapolicy"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktapolicy"
 
 dataoktapolicy.DataOktaPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -320,7 +329,7 @@ dataoktapolicy.DataOktaPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-okta.dataOktaPolicy.DataOktaPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktapolicy"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktapolicy"
 
 dataoktapolicy.DataOktaPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -334,7 +343,7 @@ dataoktapolicy.DataOktaPolicy_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.dataOktaPolicy.DataOktaPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktapolicy"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktapolicy"
 
 dataoktapolicy.DataOktaPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -618,7 +627,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaPolicy.DataOktaPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktapolicy"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktapolicy"
 
 &dataoktapolicy.DataOktaPolicyConfig {
 	Connection: interface{},

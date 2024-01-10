@@ -170,4 +170,36 @@ export class RateLimiting extends cdktf.TerraformResource {
       login: cdktf.stringToTerraform(this._login),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      authorize: {
+        value: cdktf.stringToHclTerraform(this._authorize),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      communications_enabled: {
+        value: cdktf.booleanToHclTerraform(this._communicationsEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      login: {
+        value: cdktf.stringToHclTerraform(this._login),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

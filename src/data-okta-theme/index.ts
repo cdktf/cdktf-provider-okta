@@ -186,4 +186,24 @@ export class DataOktaTheme extends cdktf.TerraformDataSource {
       theme_id: cdktf.stringToTerraform(this._themeId),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      brand_id: {
+        value: cdktf.stringToHclTerraform(this._brandId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      theme_id: {
+        value: cdktf.stringToHclTerraform(this._themeId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

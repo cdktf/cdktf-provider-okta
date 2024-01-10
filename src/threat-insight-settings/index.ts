@@ -149,4 +149,30 @@ export class ThreatInsightSettings extends cdktf.TerraformResource {
       network_excludes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._networkExcludes),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      action: {
+        value: cdktf.stringToHclTerraform(this._action),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      network_excludes: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._networkExcludes),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

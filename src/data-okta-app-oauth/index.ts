@@ -333,4 +333,48 @@ export class DataOktaAppOauth extends cdktf.TerraformDataSource {
       skip_users: cdktf.booleanToTerraform(this._skipUsers),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      active_only: {
+        value: cdktf.booleanToHclTerraform(this._activeOnly),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      label: {
+        value: cdktf.stringToHclTerraform(this._label),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      label_prefix: {
+        value: cdktf.stringToHclTerraform(this._labelPrefix),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      skip_groups: {
+        value: cdktf.booleanToHclTerraform(this._skipGroups),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      skip_users: {
+        value: cdktf.booleanToHclTerraform(this._skipUsers),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

@@ -793,4 +793,210 @@ export class IdpOidc extends cdktf.TerraformResource {
       username_template: cdktf.stringToTerraform(this._usernameTemplate),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      account_link_action: {
+        value: cdktf.stringToHclTerraform(this._accountLinkAction),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      account_link_group_include: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._accountLinkGroupInclude),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      authorization_binding: {
+        value: cdktf.stringToHclTerraform(this._authorizationBinding),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      authorization_url: {
+        value: cdktf.stringToHclTerraform(this._authorizationUrl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      client_id: {
+        value: cdktf.stringToHclTerraform(this._clientId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      client_secret: {
+        value: cdktf.stringToHclTerraform(this._clientSecret),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      deprovisioned_action: {
+        value: cdktf.stringToHclTerraform(this._deprovisionedAction),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      groups_action: {
+        value: cdktf.stringToHclTerraform(this._groupsAction),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      groups_assignment: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._groupsAssignment),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      groups_attribute: {
+        value: cdktf.stringToHclTerraform(this._groupsAttribute),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      groups_filter: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._groupsFilter),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      issuer_mode: {
+        value: cdktf.stringToHclTerraform(this._issuerMode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      issuer_url: {
+        value: cdktf.stringToHclTerraform(this._issuerUrl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      jwks_binding: {
+        value: cdktf.stringToHclTerraform(this._jwksBinding),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      jwks_url: {
+        value: cdktf.stringToHclTerraform(this._jwksUrl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      max_clock_skew: {
+        value: cdktf.numberToHclTerraform(this._maxClockSkew),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      profile_master: {
+        value: cdktf.booleanToHclTerraform(this._profileMaster),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      protocol_type: {
+        value: cdktf.stringToHclTerraform(this._protocolType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      provisioning_action: {
+        value: cdktf.stringToHclTerraform(this._provisioningAction),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      request_signature_algorithm: {
+        value: cdktf.stringToHclTerraform(this._requestSignatureAlgorithm),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      request_signature_scope: {
+        value: cdktf.stringToHclTerraform(this._requestSignatureScope),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      scopes: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._scopes),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      status: {
+        value: cdktf.stringToHclTerraform(this._status),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      subject_match_attribute: {
+        value: cdktf.stringToHclTerraform(this._subjectMatchAttribute),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      subject_match_type: {
+        value: cdktf.stringToHclTerraform(this._subjectMatchType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      suspended_action: {
+        value: cdktf.stringToHclTerraform(this._suspendedAction),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      token_binding: {
+        value: cdktf.stringToHclTerraform(this._tokenBinding),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      token_url: {
+        value: cdktf.stringToHclTerraform(this._tokenUrl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      user_info_binding: {
+        value: cdktf.stringToHclTerraform(this._userInfoBinding),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      user_info_url: {
+        value: cdktf.stringToHclTerraform(this._userInfoUrl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      username_template: {
+        value: cdktf.stringToHclTerraform(this._usernameTemplate),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

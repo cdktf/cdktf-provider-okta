@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaThemes.DataOktaThemes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktathemes"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktathemes"
 
 dataoktathemes.NewDataOktaThemes(scope Construct, id *string, config DataOktaThemesConfig) DataOktaThemes
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-okta.dataOktaThemes.DataOktaThemes.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaThemes.DataOktaThemes.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-okta.dataOktaThemes.DataOktaThemes.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-okta.dataOktaThemes.DataOktaThemes.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-okta.dataOktaThemes.DataOktaThemes.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaThemes.DataOktaThemes.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-okta.dataOktaThemes.DataOktaThemes.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
@@ -119,6 +120,14 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-okta.dataOktaThemes.DataOktaThemes.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-okta.dataOktaThemes.DataOktaThemes.toMetadata"></a>
 
@@ -274,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.dataOktaThemes.DataOktaThemes.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktathemes"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktathemes"
 
 dataoktathemes.DataOktaThemes_IsConstruct(x interface{}) *bool
 ```
@@ -306,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.dataOktaThemes.DataOktaThemes.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktathemes"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktathemes"
 
 dataoktathemes.DataOktaThemes_IsTerraformElement(x interface{}) *bool
 ```
@@ -320,7 +329,7 @@ dataoktathemes.DataOktaThemes_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-okta.dataOktaThemes.DataOktaThemes.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktathemes"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktathemes"
 
 dataoktathemes.DataOktaThemes_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -334,7 +343,7 @@ dataoktathemes.DataOktaThemes_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.dataOktaThemes.DataOktaThemes.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktathemes"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktathemes"
 
 dataoktathemes.DataOktaThemes_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -596,7 +605,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaThemes.DataOktaThemesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktathemes"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktathemes"
 
 &dataoktathemes.DataOktaThemesConfig {
 	Connection: interface{},
@@ -731,7 +740,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaThemes.DataOktaThemesThemes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktathemes"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktathemes"
 
 &dataoktathemes.DataOktaThemesThemes {
 
@@ -746,7 +755,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktathemes"
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaThemes.DataOktaThemesThemesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktathemes"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktathemes"
 
 dataoktathemes.NewDataOktaThemesThemesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOktaThemesThemesList
 ```
@@ -787,10 +796,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-okta.dataOktaThemes.DataOktaThemesThemesList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-okta.dataOktaThemes.DataOktaThemesThemesList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaThemes.DataOktaThemesThemesList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-okta.dataOktaThemes.DataOktaThemesThemesList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-okta.dataOktaThemes.DataOktaThemesThemesList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-okta.dataOktaThemes.DataOktaThemesThemesList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-okta.dataOktaThemes.DataOktaThemesThemesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -878,7 +904,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaThemes.DataOktaThemesThemesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/dataoktathemes"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktathemes"
 
 dataoktathemes.NewDataOktaThemesThemesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataOktaThemesThemesOutputReference
 ```

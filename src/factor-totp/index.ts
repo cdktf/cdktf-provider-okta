@@ -245,4 +245,54 @@ export class FactorTotp extends cdktf.TerraformResource {
       time_step: cdktf.numberToTerraform(this._timeStep),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      clock_drift_interval: {
+        value: cdktf.numberToHclTerraform(this._clockDriftInterval),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      hmac_algorithm: {
+        value: cdktf.stringToHclTerraform(this._hmacAlgorithm),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      otp_length: {
+        value: cdktf.numberToHclTerraform(this._otpLength),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      shared_secret_encoding: {
+        value: cdktf.stringToHclTerraform(this._sharedSecretEncoding),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      time_step: {
+        value: cdktf.numberToHclTerraform(this._timeStep),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

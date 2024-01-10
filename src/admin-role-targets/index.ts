@@ -199,4 +199,42 @@ export class AdminRoleTargets extends cdktf.TerraformResource {
       user_id: cdktf.stringToTerraform(this._userId),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      apps: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._apps),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      groups: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._groups),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      role_type: {
+        value: cdktf.stringToHclTerraform(this._roleType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      user_id: {
+        value: cdktf.stringToHclTerraform(this._userId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

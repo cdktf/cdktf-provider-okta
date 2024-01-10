@@ -25,6 +25,17 @@ export function dataOktaOrgMetadataDomainsToTerraform(struct?: DataOktaOrgMetada
   }
 }
 
+
+export function dataOktaOrgMetadataDomainsToHclTerraform(struct?: DataOktaOrgMetadataDomains | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataOktaOrgMetadataDomainsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -81,6 +92,17 @@ export function dataOktaOrgMetadataSettingsToTerraform(struct?: DataOktaOrgMetad
   }
   return {
   }
+}
+
+
+export function dataOktaOrgMetadataSettingsToHclTerraform(struct?: DataOktaOrgMetadataSettings | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataOktaOrgMetadataSettingsOutputReference extends cdktf.ComplexObject {
@@ -221,5 +243,11 @@ export class DataOktaOrgMetadata extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+    };
+    return attrs;
   }
 }

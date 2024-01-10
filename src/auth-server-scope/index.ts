@@ -295,4 +295,66 @@ export class AuthServerScope extends cdktf.TerraformResource {
       optional: cdktf.booleanToTerraform(this._optional),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      auth_server_id: {
+        value: cdktf.stringToHclTerraform(this._authServerId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      consent: {
+        value: cdktf.stringToHclTerraform(this._consent),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      default: {
+        value: cdktf.booleanToHclTerraform(this._default),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      display_name: {
+        value: cdktf.stringToHclTerraform(this._displayName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      metadata_publish: {
+        value: cdktf.stringToHclTerraform(this._metadataPublish),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      optional: {
+        value: cdktf.booleanToHclTerraform(this._optional),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

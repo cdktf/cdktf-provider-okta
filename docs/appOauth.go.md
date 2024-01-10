@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appOauth.AppOauth.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/appoauth"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/appoauth"
 
 appoauth.NewAppOauth(scope Construct, id *string, config AppOauthConfig) AppOauth
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -173,6 +174,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-okta.appOauth.AppOauth.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-okta.appOauth.AppOauth.toMetadata"></a>
 
@@ -732,7 +739,7 @@ func ResetWildcardRedirect()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.appOauth.AppOauth.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/appoauth"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/appoauth"
 
 appoauth.AppOauth_IsConstruct(x interface{}) *bool
 ```
@@ -764,7 +771,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.appOauth.AppOauth.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/appoauth"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/appoauth"
 
 appoauth.AppOauth_IsTerraformElement(x interface{}) *bool
 ```
@@ -778,7 +785,7 @@ appoauth.AppOauth_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.appOauth.AppOauth.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/appoauth"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/appoauth"
 
 appoauth.AppOauth_IsTerraformResource(x interface{}) *bool
 ```
@@ -792,7 +799,7 @@ appoauth.AppOauth_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.appOauth.AppOauth.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/appoauth"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/appoauth"
 
 appoauth.AppOauth_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -2121,7 +2128,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.appOauth.AppOauthConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/appoauth"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/appoauth"
 
 &appoauth.AppOauthConfig {
 	Connection: interface{},
@@ -2148,7 +2155,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/appoauth"
 	ConsentMethod: *string,
 	EnduserNote: *string,
 	GrantTypes: *[]*string,
-	GroupsClaim: github.com/cdktf/cdktf-provider-okta-go/okta/v12.appOauth.AppOauthGroupsClaim,
+	GroupsClaim: github.com/cdktf/cdktf-provider-okta-go/okta/v13.appOauth.AppOauthGroupsClaim,
 	HideIos: interface{},
 	HideWeb: interface{},
 	Id: *string,
@@ -2171,7 +2178,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/appoauth"
 	RefreshTokenRotation: *string,
 	ResponseTypes: *[]*string,
 	Status: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-okta-go/okta/v12.appOauth.AppOauthTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-okta-go/okta/v13.appOauth.AppOauthTimeouts,
 	TokenEndpointAuthMethod: *string,
 	TosUri: *string,
 	UserNameTemplate: *string,
@@ -2998,7 +3005,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.appOauth.AppOauthGroupsClaim.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/appoauth"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/appoauth"
 
 &appoauth.AppOauthGroupsClaim {
 	Name: *string,
@@ -3082,7 +3089,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.appOauth.AppOauthJwks.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/appoauth"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/appoauth"
 
 &appoauth.AppOauthJwks {
 	Kid: *string,
@@ -3196,7 +3203,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.appOauth.AppOauthTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/appoauth"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/appoauth"
 
 &appoauth.AppOauthTimeouts {
 	Create: *string,
@@ -3258,7 +3265,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appOauth.AppOauthGroupsClaimOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/appoauth"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/appoauth"
 
 appoauth.NewAppOauthGroupsClaimOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppOauthGroupsClaimOutputReference
 ```
@@ -3613,7 +3620,7 @@ func InternalValue() AppOauthGroupsClaim
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appOauth.AppOauthJwksList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/appoauth"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/appoauth"
 
 appoauth.NewAppOauthJwksList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppOauthJwksList
 ```
@@ -3654,10 +3661,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthJwksList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthJwksList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthJwksList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthJwksList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthJwksList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-okta.appOauth.AppOauthJwksList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-okta.appOauth.AppOauthJwksList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -3756,7 +3780,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appOauth.AppOauthJwksOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/appoauth"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/appoauth"
 
 appoauth.NewAppOauthJwksOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppOauthJwksOutputReference
 ```
@@ -4183,7 +4207,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appOauth.AppOauthTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/appoauth"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/appoauth"
 
 appoauth.NewAppOauthTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppOauthTimeoutsOutputReference
 ```

@@ -505,4 +505,120 @@ export class OktaProvider extends cdktf.TerraformProvider {
       alias: cdktf.stringToTerraform(this._alias),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      access_token: {
+        value: cdktf.stringToHclTerraform(this._accessToken),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      api_token: {
+        value: cdktf.stringToHclTerraform(this._apiToken),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      backoff: {
+        value: cdktf.booleanToHclTerraform(this._backoff),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      base_url: {
+        value: cdktf.stringToHclTerraform(this._baseUrl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      client_id: {
+        value: cdktf.stringToHclTerraform(this._clientId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      http_proxy: {
+        value: cdktf.stringToHclTerraform(this._httpProxy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      log_level: {
+        value: cdktf.numberToHclTerraform(this._logLevel),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      max_api_capacity: {
+        value: cdktf.numberToHclTerraform(this._maxApiCapacity),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      max_retries: {
+        value: cdktf.numberToHclTerraform(this._maxRetries),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      max_wait_seconds: {
+        value: cdktf.numberToHclTerraform(this._maxWaitSeconds),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      min_wait_seconds: {
+        value: cdktf.numberToHclTerraform(this._minWaitSeconds),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      org_name: {
+        value: cdktf.stringToHclTerraform(this._orgName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      parallelism: {
+        value: cdktf.numberToHclTerraform(this._parallelism),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      private_key: {
+        value: cdktf.stringToHclTerraform(this._privateKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      private_key_id: {
+        value: cdktf.stringToHclTerraform(this._privateKeyId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      request_timeout: {
+        value: cdktf.numberToHclTerraform(this._requestTimeout),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      scopes: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._scopes),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      alias: {
+        value: cdktf.stringToHclTerraform(this._alias),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

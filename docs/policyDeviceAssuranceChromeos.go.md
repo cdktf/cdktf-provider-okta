@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policydeviceassurancechromeos"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/policydeviceassurancechromeos"
 
 policydeviceassurancechromeos.NewPolicyDeviceAssuranceChromeos(scope Construct, id *string, config PolicyDeviceAssuranceChromeosConfig) PolicyDeviceAssuranceChromeos
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -138,6 +139,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.toMetadata"></a>
 
@@ -469,7 +476,7 @@ func ResetTpspSiteIsolationEnabled()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policydeviceassurancechromeos"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/policydeviceassurancechromeos"
 
 policydeviceassurancechromeos.PolicyDeviceAssuranceChromeos_IsConstruct(x interface{}) *bool
 ```
@@ -501,7 +508,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policydeviceassurancechromeos"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/policydeviceassurancechromeos"
 
 policydeviceassurancechromeos.PolicyDeviceAssuranceChromeos_IsTerraformElement(x interface{}) *bool
 ```
@@ -515,7 +522,7 @@ policydeviceassurancechromeos.PolicyDeviceAssuranceChromeos_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policydeviceassurancechromeos"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/policydeviceassurancechromeos"
 
 policydeviceassurancechromeos.PolicyDeviceAssuranceChromeos_IsTerraformResource(x interface{}) *bool
 ```
@@ -529,7 +536,7 @@ policydeviceassurancechromeos.PolicyDeviceAssuranceChromeos_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policydeviceassurancechromeos"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/policydeviceassurancechromeos"
 
 policydeviceassurancechromeos.PolicyDeviceAssuranceChromeos_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1154,7 +1161,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeosConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policydeviceassurancechromeos"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/policydeviceassurancechromeos"
 
 &policydeviceassurancechromeos.PolicyDeviceAssuranceChromeosConfig {
 	Connection: interface{},

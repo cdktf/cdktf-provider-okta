@@ -167,4 +167,36 @@ export class AppOauthApiScope extends cdktf.TerraformResource {
       scopes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._scopes),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      app_id: {
+        value: cdktf.stringToHclTerraform(this._appId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      issuer: {
+        value: cdktf.stringToHclTerraform(this._issuer),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      scopes: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._scopes),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

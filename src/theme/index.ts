@@ -413,4 +413,90 @@ export class Theme extends cdktf.TerraformResource {
       theme_id: cdktf.stringToTerraform(this._themeId),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      background_image: {
+        value: cdktf.stringToHclTerraform(this._backgroundImage),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      brand_id: {
+        value: cdktf.stringToHclTerraform(this._brandId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      email_template_touch_point_variant: {
+        value: cdktf.stringToHclTerraform(this._emailTemplateTouchPointVariant),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      end_user_dashboard_touch_point_variant: {
+        value: cdktf.stringToHclTerraform(this._endUserDashboardTouchPointVariant),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      error_page_touch_point_variant: {
+        value: cdktf.stringToHclTerraform(this._errorPageTouchPointVariant),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      favicon: {
+        value: cdktf.stringToHclTerraform(this._favicon),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      logo: {
+        value: cdktf.stringToHclTerraform(this._logo),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      primary_color_contrast_hex: {
+        value: cdktf.stringToHclTerraform(this._primaryColorContrastHex),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      primary_color_hex: {
+        value: cdktf.stringToHclTerraform(this._primaryColorHex),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      secondary_color_contrast_hex: {
+        value: cdktf.stringToHclTerraform(this._secondaryColorContrastHex),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      secondary_color_hex: {
+        value: cdktf.stringToHclTerraform(this._secondaryColorHex),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      sign_in_page_touch_point_variant: {
+        value: cdktf.stringToHclTerraform(this._signInPageTouchPointVariant),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      theme_id: {
+        value: cdktf.stringToHclTerraform(this._themeId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

@@ -476,4 +476,114 @@ export class AuthServerPolicyRule extends cdktf.TerraformResource {
       user_whitelist: cdktf.listMapper(cdktf.stringToTerraform, false)(this._userWhitelist),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      access_token_lifetime_minutes: {
+        value: cdktf.numberToHclTerraform(this._accessTokenLifetimeMinutes),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      auth_server_id: {
+        value: cdktf.stringToHclTerraform(this._authServerId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      grant_type_whitelist: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._grantTypeWhitelist),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      group_blacklist: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._groupBlacklist),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      group_whitelist: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._groupWhitelist),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      inline_hook_id: {
+        value: cdktf.stringToHclTerraform(this._inlineHookId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      policy_id: {
+        value: cdktf.stringToHclTerraform(this._policyId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      priority: {
+        value: cdktf.numberToHclTerraform(this._priority),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      refresh_token_lifetime_minutes: {
+        value: cdktf.numberToHclTerraform(this._refreshTokenLifetimeMinutes),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      refresh_token_window_minutes: {
+        value: cdktf.numberToHclTerraform(this._refreshTokenWindowMinutes),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      scope_whitelist: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._scopeWhitelist),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      status: {
+        value: cdktf.stringToHclTerraform(this._status),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      type: {
+        value: cdktf.stringToHclTerraform(this._type),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      user_blacklist: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._userBlacklist),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      user_whitelist: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._userWhitelist),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

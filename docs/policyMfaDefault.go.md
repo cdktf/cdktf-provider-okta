@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefault.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policymfadefault"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/policymfadefault"
 
 policymfadefault.NewPolicyMfaDefault(scope Construct, id *string, config PolicyMfaDefaultConfig) PolicyMfaDefault
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefault.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefault.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefault.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefault.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefault.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefault.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefault.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -147,6 +148,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefault.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefault.toMetadata"></a>
 
@@ -532,7 +539,7 @@ func ResetYubikeyToken()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefault.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policymfadefault"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/policymfadefault"
 
 policymfadefault.PolicyMfaDefault_IsConstruct(x interface{}) *bool
 ```
@@ -564,7 +571,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefault.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policymfadefault"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/policymfadefault"
 
 policymfadefault.PolicyMfaDefault_IsTerraformElement(x interface{}) *bool
 ```
@@ -578,7 +585,7 @@ policymfadefault.PolicyMfaDefault_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefault.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policymfadefault"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/policymfadefault"
 
 policymfadefault.PolicyMfaDefault_IsTerraformResource(x interface{}) *bool
 ```
@@ -592,7 +599,7 @@ policymfadefault.PolicyMfaDefault_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefault.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policymfadefault"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/policymfadefault"
 
 policymfadefault.PolicyMfaDefault_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1382,7 +1389,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefaultConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v12/policymfadefault"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/policymfadefault"
 
 &policymfadefault.PolicyMfaDefaultConfig {
 	Connection: interface{},

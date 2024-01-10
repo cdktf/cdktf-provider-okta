@@ -202,4 +202,36 @@ export class PolicyDeviceAssuranceIos extends cdktf.TerraformResource {
       screenlock_type: cdktf.listMapper(cdktf.stringToTerraform, false)(this._screenlockType),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      jailbreak: {
+        value: cdktf.booleanToHclTerraform(this._jailbreak),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      os_version: {
+        value: cdktf.stringToHclTerraform(this._osVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      screenlock_type: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._screenlockType),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

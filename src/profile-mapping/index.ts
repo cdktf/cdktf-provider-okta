@@ -82,6 +82,37 @@ export function profileMappingMappingsToTerraform(struct?: ProfileMappingMapping
   }
 }
 
+
+export function profileMappingMappingsToHclTerraform(struct?: ProfileMappingMappings | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    expression: {
+      value: cdktf.stringToHclTerraform(struct!.expression),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    id: {
+      value: cdktf.stringToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    push_status: {
+      value: cdktf.stringToHclTerraform(struct!.pushStatus),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class ProfileMappingMappingsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -387,5 +418,49 @@ export class ProfileMapping extends cdktf.TerraformResource {
       target_id: cdktf.stringToTerraform(this._targetId),
       mappings: cdktf.listMapper(profileMappingMappingsToTerraform, true)(this._mappings.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      always_apply: {
+        value: cdktf.booleanToHclTerraform(this._alwaysApply),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      delete_when_absent: {
+        value: cdktf.booleanToHclTerraform(this._deleteWhenAbsent),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      source_id: {
+        value: cdktf.stringToHclTerraform(this._sourceId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      target_id: {
+        value: cdktf.stringToHclTerraform(this._targetId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      mappings: {
+        value: cdktf.listMapperHcl(profileMappingMappingsToHclTerraform, true)(this._mappings.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "ProfileMappingMappingsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

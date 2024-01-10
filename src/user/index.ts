@@ -319,6 +319,49 @@ export function userPasswordHashToTerraform(struct?: UserPasswordHashOutputRefer
   }
 }
 
+
+export function userPasswordHashToHclTerraform(struct?: UserPasswordHashOutputReference | UserPasswordHash): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    algorithm: {
+      value: cdktf.stringToHclTerraform(struct!.algorithm),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    salt: {
+      value: cdktf.stringToHclTerraform(struct!.salt),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    salt_order: {
+      value: cdktf.stringToHclTerraform(struct!.saltOrder),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    work_factor: {
+      value: cdktf.numberToHclTerraform(struct!.workFactor),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class UserPasswordHashOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1281,5 +1324,271 @@ export class User extends cdktf.TerraformResource {
       zip_code: cdktf.stringToTerraform(this._zipCode),
       password_hash: userPasswordHashToTerraform(this._passwordHash.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      city: {
+        value: cdktf.stringToHclTerraform(this._city),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      cost_center: {
+        value: cdktf.stringToHclTerraform(this._costCenter),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      country_code: {
+        value: cdktf.stringToHclTerraform(this._countryCode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      custom_profile_attributes: {
+        value: cdktf.stringToHclTerraform(this._customProfileAttributes),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      custom_profile_attributes_to_ignore: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._customProfileAttributesToIgnore),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      department: {
+        value: cdktf.stringToHclTerraform(this._department),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      display_name: {
+        value: cdktf.stringToHclTerraform(this._displayName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      division: {
+        value: cdktf.stringToHclTerraform(this._division),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      email: {
+        value: cdktf.stringToHclTerraform(this._email),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      employee_number: {
+        value: cdktf.stringToHclTerraform(this._employeeNumber),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      expire_password_on_create: {
+        value: cdktf.booleanToHclTerraform(this._expirePasswordOnCreate),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      first_name: {
+        value: cdktf.stringToHclTerraform(this._firstName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      honorific_prefix: {
+        value: cdktf.stringToHclTerraform(this._honorificPrefix),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      honorific_suffix: {
+        value: cdktf.stringToHclTerraform(this._honorificSuffix),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      last_name: {
+        value: cdktf.stringToHclTerraform(this._lastName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      locale: {
+        value: cdktf.stringToHclTerraform(this._locale),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      login: {
+        value: cdktf.stringToHclTerraform(this._login),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      manager: {
+        value: cdktf.stringToHclTerraform(this._manager),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      manager_id: {
+        value: cdktf.stringToHclTerraform(this._managerId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      middle_name: {
+        value: cdktf.stringToHclTerraform(this._middleName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      mobile_phone: {
+        value: cdktf.stringToHclTerraform(this._mobilePhone),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      nick_name: {
+        value: cdktf.stringToHclTerraform(this._nickName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      old_password: {
+        value: cdktf.stringToHclTerraform(this._oldPassword),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      organization: {
+        value: cdktf.stringToHclTerraform(this._organization),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      password: {
+        value: cdktf.stringToHclTerraform(this._password),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      password_inline_hook: {
+        value: cdktf.stringToHclTerraform(this._passwordInlineHook),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      postal_address: {
+        value: cdktf.stringToHclTerraform(this._postalAddress),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      preferred_language: {
+        value: cdktf.stringToHclTerraform(this._preferredLanguage),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      primary_phone: {
+        value: cdktf.stringToHclTerraform(this._primaryPhone),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      profile_url: {
+        value: cdktf.stringToHclTerraform(this._profileUrl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      recovery_answer: {
+        value: cdktf.stringToHclTerraform(this._recoveryAnswer),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      recovery_question: {
+        value: cdktf.stringToHclTerraform(this._recoveryQuestion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      second_email: {
+        value: cdktf.stringToHclTerraform(this._secondEmail),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      skip_roles: {
+        value: cdktf.booleanToHclTerraform(this._skipRoles),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      state: {
+        value: cdktf.stringToHclTerraform(this._state),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      status: {
+        value: cdktf.stringToHclTerraform(this._status),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      street_address: {
+        value: cdktf.stringToHclTerraform(this._streetAddress),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      timezone: {
+        value: cdktf.stringToHclTerraform(this._timezone),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      title: {
+        value: cdktf.stringToHclTerraform(this._title),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      user_type: {
+        value: cdktf.stringToHclTerraform(this._userType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      zip_code: {
+        value: cdktf.stringToHclTerraform(this._zipCode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      password_hash: {
+        value: userPasswordHashToHclTerraform(this._passwordHash.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "UserPasswordHashList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

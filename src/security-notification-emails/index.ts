@@ -224,4 +224,48 @@ export class SecurityNotificationEmails extends cdktf.TerraformResource {
       send_email_for_password_changed_enabled: cdktf.booleanToTerraform(this._sendEmailForPasswordChangedEnabled),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      report_suspicious_activity_enabled: {
+        value: cdktf.booleanToHclTerraform(this._reportSuspiciousActivityEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      send_email_for_factor_enrollment_enabled: {
+        value: cdktf.booleanToHclTerraform(this._sendEmailForFactorEnrollmentEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      send_email_for_factor_reset_enabled: {
+        value: cdktf.booleanToHclTerraform(this._sendEmailForFactorResetEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      send_email_for_new_device_enabled: {
+        value: cdktf.booleanToHclTerraform(this._sendEmailForNewDeviceEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      send_email_for_password_changed_enabled: {
+        value: cdktf.booleanToHclTerraform(this._sendEmailForPasswordChangedEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }
