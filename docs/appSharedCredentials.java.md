@@ -4,7 +4,7 @@
 
 ### AppSharedCredentials <a name="AppSharedCredentials" id="@cdktf/provider-okta.appSharedCredentials.AppSharedCredentials"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_shared_credentials okta_app_shared_credentials}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_shared_credentials okta_app_shared_credentials}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appSharedCredentials.AppSharedCredentials.Initializer"></a>
 
@@ -81,7 +81,7 @@ AppSharedCredentials.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-okta.appSharedCredentials.AppSharedCredentials.Initializer.parameter.enduserNote">enduserNote</a></code> | <code>java.lang.String</code> | Application notes for end users. |
 | <code><a href="#@cdktf/provider-okta.appSharedCredentials.AppSharedCredentials.Initializer.parameter.hideIos">hideIos</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Do not display application icon on mobile app. |
 | <code><a href="#@cdktf/provider-okta.appSharedCredentials.AppSharedCredentials.Initializer.parameter.hideWeb">hideWeb</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Do not display application icon to users. |
-| <code><a href="#@cdktf/provider-okta.appSharedCredentials.AppSharedCredentials.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_shared_credentials#id AppSharedCredentials#id}. |
+| <code><a href="#@cdktf/provider-okta.appSharedCredentials.AppSharedCredentials.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_shared_credentials#id AppSharedCredentials#id}. |
 | <code><a href="#@cdktf/provider-okta.appSharedCredentials.AppSharedCredentials.Initializer.parameter.logo">logo</a></code> | <code>java.lang.String</code> | Local path to logo of the application. |
 | <code><a href="#@cdktf/provider-okta.appSharedCredentials.AppSharedCredentials.Initializer.parameter.passwordField">passwordField</a></code> | <code>java.lang.String</code> | Login password field. |
 | <code><a href="#@cdktf/provider-okta.appSharedCredentials.AppSharedCredentials.Initializer.parameter.preconfiguredApp">preconfiguredApp</a></code> | <code>java.lang.String</code> | Preconfigured app name. |
@@ -166,7 +166,7 @@ Must be unique amongst siblings in the same scope
 
 Pretty name of app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_shared_credentials#label AppSharedCredentials#label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_shared_credentials#label AppSharedCredentials#label}
 
 ---
 
@@ -176,7 +176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Custom error page URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_shared_credentials#accessibility_error_redirect_url AppSharedCredentials#accessibility_error_redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_shared_credentials#accessibility_error_redirect_url AppSharedCredentials#accessibility_error_redirect_url}
 
 ---
 
@@ -186,7 +186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Custom login page URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_shared_credentials#accessibility_login_redirect_url AppSharedCredentials#accessibility_login_redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_shared_credentials#accessibility_login_redirect_url AppSharedCredentials#accessibility_login_redirect_url}
 
 ---
 
@@ -196,7 +196,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Enable self service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_shared_credentials#accessibility_self_service AppSharedCredentials#accessibility_self_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_shared_credentials#accessibility_self_service AppSharedCredentials#accessibility_self_service}
 
 ---
 
@@ -206,7 +206,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Application notes for admins.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_shared_credentials#admin_note AppSharedCredentials#admin_note}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_shared_credentials#admin_note AppSharedCredentials#admin_note}
 
 ---
 
@@ -216,7 +216,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Displays specific appLinks for the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_shared_credentials#app_links_json AppSharedCredentials#app_links_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_shared_credentials#app_links_json AppSharedCredentials#app_links_json}
 
 ---
 
@@ -226,7 +226,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Display auto submit toolbar.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_shared_credentials#auto_submit_toolbar AppSharedCredentials#auto_submit_toolbar}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_shared_credentials#auto_submit_toolbar AppSharedCredentials#auto_submit_toolbar}
 
 ---
 
@@ -236,7 +236,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Login button field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_shared_credentials#button_field AppSharedCredentials#button_field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_shared_credentials#button_field AppSharedCredentials#button_field}
 
 ---
 
@@ -246,7 +246,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 CSS selector for the checkbox.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_shared_credentials#checkbox AppSharedCredentials#checkbox}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_shared_credentials#checkbox AppSharedCredentials#checkbox}
 
 ---
 
@@ -256,7 +256,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Application notes for end users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_shared_credentials#enduser_note AppSharedCredentials#enduser_note}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_shared_credentials#enduser_note AppSharedCredentials#enduser_note}
 
 ---
 
@@ -266,7 +266,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Do not display application icon on mobile app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_shared_credentials#hide_ios AppSharedCredentials#hide_ios}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_shared_credentials#hide_ios AppSharedCredentials#hide_ios}
 
 ---
 
@@ -276,7 +276,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Do not display application icon to users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_shared_credentials#hide_web AppSharedCredentials#hide_web}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_shared_credentials#hide_web AppSharedCredentials#hide_web}
 
 ---
 
@@ -284,7 +284,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_shared_credentials#id AppSharedCredentials#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_shared_credentials#id AppSharedCredentials#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -297,7 +297,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Local path to logo of the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_shared_credentials#logo AppSharedCredentials#logo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_shared_credentials#logo AppSharedCredentials#logo}
 
 ---
 
@@ -307,7 +307,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Login password field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_shared_credentials#password_field AppSharedCredentials#password_field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_shared_credentials#password_field AppSharedCredentials#password_field}
 
 ---
 
@@ -317,7 +317,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Preconfigured app name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_shared_credentials#preconfigured_app AppSharedCredentials#preconfigured_app}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_shared_credentials#preconfigured_app AppSharedCredentials#preconfigured_app}
 
 ---
 
@@ -327,7 +327,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Secondary URL of the sign-in page for this app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_shared_credentials#redirect_url AppSharedCredentials#redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_shared_credentials#redirect_url AppSharedCredentials#redirect_url}
 
 ---
 
@@ -337,7 +337,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Shared password, required for certain schemes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_shared_credentials#shared_password AppSharedCredentials#shared_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_shared_credentials#shared_password AppSharedCredentials#shared_password}
 
 ---
 
@@ -347,7 +347,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Shared username, required for certain schemes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_shared_credentials#shared_username AppSharedCredentials#shared_username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_shared_credentials#shared_username AppSharedCredentials#shared_username}
 
 ---
 
@@ -357,7 +357,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Status of application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_shared_credentials#status AppSharedCredentials#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_shared_credentials#status AppSharedCredentials#status}
 
 ---
 
@@ -367,7 +367,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_shared_credentials#timeouts AppSharedCredentials#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_shared_credentials#timeouts AppSharedCredentials#timeouts}
 
 ---
 
@@ -377,7 +377,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Login URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_shared_credentials#url AppSharedCredentials#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_shared_credentials#url AppSharedCredentials#url}
 
 ---
 
@@ -387,7 +387,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 A regex that further restricts URL to the specified regex.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_shared_credentials#url_regex AppSharedCredentials#url_regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_shared_credentials#url_regex AppSharedCredentials#url_regex}
 
 ---
 
@@ -397,7 +397,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Login username field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_shared_credentials#username_field AppSharedCredentials#username_field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_shared_credentials#username_field AppSharedCredentials#username_field}
 
 ---
 
@@ -407,7 +407,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Username template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_shared_credentials#user_name_template AppSharedCredentials#user_name_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_shared_credentials#user_name_template AppSharedCredentials#user_name_template}
 
 ---
 
@@ -417,7 +417,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Push username on update.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_shared_credentials#user_name_template_push_status AppSharedCredentials#user_name_template_push_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_shared_credentials#user_name_template_push_status AppSharedCredentials#user_name_template_push_status}
 
 ---
 
@@ -427,7 +427,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Username template suffix.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_shared_credentials#user_name_template_suffix AppSharedCredentials#user_name_template_suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_shared_credentials#user_name_template_suffix AppSharedCredentials#user_name_template_suffix}
 
 ---
 
@@ -437,7 +437,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Username template type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_shared_credentials#user_name_template_type AppSharedCredentials#user_name_template_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_shared_credentials#user_name_template_type AppSharedCredentials#user_name_template_type}
 
 ---
 
@@ -1066,7 +1066,7 @@ The construct id used in the generated config for the AppSharedCredentials to im
 
 The id of the existing AppSharedCredentials that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_shared_credentials#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_shared_credentials#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1987,7 +1987,7 @@ AppSharedCredentialsConfig.builder()
 | <code><a href="#@cdktf/provider-okta.appSharedCredentials.AppSharedCredentialsConfig.property.enduserNote">enduserNote</a></code> | <code>java.lang.String</code> | Application notes for end users. |
 | <code><a href="#@cdktf/provider-okta.appSharedCredentials.AppSharedCredentialsConfig.property.hideIos">hideIos</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Do not display application icon on mobile app. |
 | <code><a href="#@cdktf/provider-okta.appSharedCredentials.AppSharedCredentialsConfig.property.hideWeb">hideWeb</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Do not display application icon to users. |
-| <code><a href="#@cdktf/provider-okta.appSharedCredentials.AppSharedCredentialsConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_shared_credentials#id AppSharedCredentials#id}. |
+| <code><a href="#@cdktf/provider-okta.appSharedCredentials.AppSharedCredentialsConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_shared_credentials#id AppSharedCredentials#id}. |
 | <code><a href="#@cdktf/provider-okta.appSharedCredentials.AppSharedCredentialsConfig.property.logo">logo</a></code> | <code>java.lang.String</code> | Local path to logo of the application. |
 | <code><a href="#@cdktf/provider-okta.appSharedCredentials.AppSharedCredentialsConfig.property.passwordField">passwordField</a></code> | <code>java.lang.String</code> | Login password field. |
 | <code><a href="#@cdktf/provider-okta.appSharedCredentials.AppSharedCredentialsConfig.property.preconfiguredApp">preconfiguredApp</a></code> | <code>java.lang.String</code> | Preconfigured app name. |
@@ -2086,7 +2086,7 @@ public java.lang.String getLabel();
 
 Pretty name of app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_shared_credentials#label AppSharedCredentials#label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_shared_credentials#label AppSharedCredentials#label}
 
 ---
 
@@ -2100,7 +2100,7 @@ public java.lang.String getAccessibilityErrorRedirectUrl();
 
 Custom error page URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_shared_credentials#accessibility_error_redirect_url AppSharedCredentials#accessibility_error_redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_shared_credentials#accessibility_error_redirect_url AppSharedCredentials#accessibility_error_redirect_url}
 
 ---
 
@@ -2114,7 +2114,7 @@ public java.lang.String getAccessibilityLoginRedirectUrl();
 
 Custom login page URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_shared_credentials#accessibility_login_redirect_url AppSharedCredentials#accessibility_login_redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_shared_credentials#accessibility_login_redirect_url AppSharedCredentials#accessibility_login_redirect_url}
 
 ---
 
@@ -2128,7 +2128,7 @@ public java.lang.Object getAccessibilitySelfService();
 
 Enable self service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_shared_credentials#accessibility_self_service AppSharedCredentials#accessibility_self_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_shared_credentials#accessibility_self_service AppSharedCredentials#accessibility_self_service}
 
 ---
 
@@ -2142,7 +2142,7 @@ public java.lang.String getAdminNote();
 
 Application notes for admins.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_shared_credentials#admin_note AppSharedCredentials#admin_note}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_shared_credentials#admin_note AppSharedCredentials#admin_note}
 
 ---
 
@@ -2156,7 +2156,7 @@ public java.lang.String getAppLinksJson();
 
 Displays specific appLinks for the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_shared_credentials#app_links_json AppSharedCredentials#app_links_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_shared_credentials#app_links_json AppSharedCredentials#app_links_json}
 
 ---
 
@@ -2170,7 +2170,7 @@ public java.lang.Object getAutoSubmitToolbar();
 
 Display auto submit toolbar.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_shared_credentials#auto_submit_toolbar AppSharedCredentials#auto_submit_toolbar}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_shared_credentials#auto_submit_toolbar AppSharedCredentials#auto_submit_toolbar}
 
 ---
 
@@ -2184,7 +2184,7 @@ public java.lang.String getButtonField();
 
 Login button field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_shared_credentials#button_field AppSharedCredentials#button_field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_shared_credentials#button_field AppSharedCredentials#button_field}
 
 ---
 
@@ -2198,7 +2198,7 @@ public java.lang.String getCheckbox();
 
 CSS selector for the checkbox.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_shared_credentials#checkbox AppSharedCredentials#checkbox}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_shared_credentials#checkbox AppSharedCredentials#checkbox}
 
 ---
 
@@ -2212,7 +2212,7 @@ public java.lang.String getEnduserNote();
 
 Application notes for end users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_shared_credentials#enduser_note AppSharedCredentials#enduser_note}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_shared_credentials#enduser_note AppSharedCredentials#enduser_note}
 
 ---
 
@@ -2226,7 +2226,7 @@ public java.lang.Object getHideIos();
 
 Do not display application icon on mobile app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_shared_credentials#hide_ios AppSharedCredentials#hide_ios}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_shared_credentials#hide_ios AppSharedCredentials#hide_ios}
 
 ---
 
@@ -2240,7 +2240,7 @@ public java.lang.Object getHideWeb();
 
 Do not display application icon to users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_shared_credentials#hide_web AppSharedCredentials#hide_web}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_shared_credentials#hide_web AppSharedCredentials#hide_web}
 
 ---
 
@@ -2252,7 +2252,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_shared_credentials#id AppSharedCredentials#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_shared_credentials#id AppSharedCredentials#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2269,7 +2269,7 @@ public java.lang.String getLogo();
 
 Local path to logo of the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_shared_credentials#logo AppSharedCredentials#logo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_shared_credentials#logo AppSharedCredentials#logo}
 
 ---
 
@@ -2283,7 +2283,7 @@ public java.lang.String getPasswordField();
 
 Login password field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_shared_credentials#password_field AppSharedCredentials#password_field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_shared_credentials#password_field AppSharedCredentials#password_field}
 
 ---
 
@@ -2297,7 +2297,7 @@ public java.lang.String getPreconfiguredApp();
 
 Preconfigured app name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_shared_credentials#preconfigured_app AppSharedCredentials#preconfigured_app}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_shared_credentials#preconfigured_app AppSharedCredentials#preconfigured_app}
 
 ---
 
@@ -2311,7 +2311,7 @@ public java.lang.String getRedirectUrl();
 
 Secondary URL of the sign-in page for this app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_shared_credentials#redirect_url AppSharedCredentials#redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_shared_credentials#redirect_url AppSharedCredentials#redirect_url}
 
 ---
 
@@ -2325,7 +2325,7 @@ public java.lang.String getSharedPassword();
 
 Shared password, required for certain schemes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_shared_credentials#shared_password AppSharedCredentials#shared_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_shared_credentials#shared_password AppSharedCredentials#shared_password}
 
 ---
 
@@ -2339,7 +2339,7 @@ public java.lang.String getSharedUsername();
 
 Shared username, required for certain schemes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_shared_credentials#shared_username AppSharedCredentials#shared_username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_shared_credentials#shared_username AppSharedCredentials#shared_username}
 
 ---
 
@@ -2353,7 +2353,7 @@ public java.lang.String getStatus();
 
 Status of application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_shared_credentials#status AppSharedCredentials#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_shared_credentials#status AppSharedCredentials#status}
 
 ---
 
@@ -2367,7 +2367,7 @@ public AppSharedCredentialsTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_shared_credentials#timeouts AppSharedCredentials#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_shared_credentials#timeouts AppSharedCredentials#timeouts}
 
 ---
 
@@ -2381,7 +2381,7 @@ public java.lang.String getUrl();
 
 Login URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_shared_credentials#url AppSharedCredentials#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_shared_credentials#url AppSharedCredentials#url}
 
 ---
 
@@ -2395,7 +2395,7 @@ public java.lang.String getUrlRegex();
 
 A regex that further restricts URL to the specified regex.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_shared_credentials#url_regex AppSharedCredentials#url_regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_shared_credentials#url_regex AppSharedCredentials#url_regex}
 
 ---
 
@@ -2409,7 +2409,7 @@ public java.lang.String getUsernameField();
 
 Login username field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_shared_credentials#username_field AppSharedCredentials#username_field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_shared_credentials#username_field AppSharedCredentials#username_field}
 
 ---
 
@@ -2423,7 +2423,7 @@ public java.lang.String getUserNameTemplate();
 
 Username template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_shared_credentials#user_name_template AppSharedCredentials#user_name_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_shared_credentials#user_name_template AppSharedCredentials#user_name_template}
 
 ---
 
@@ -2437,7 +2437,7 @@ public java.lang.String getUserNameTemplatePushStatus();
 
 Push username on update.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_shared_credentials#user_name_template_push_status AppSharedCredentials#user_name_template_push_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_shared_credentials#user_name_template_push_status AppSharedCredentials#user_name_template_push_status}
 
 ---
 
@@ -2451,7 +2451,7 @@ public java.lang.String getUserNameTemplateSuffix();
 
 Username template suffix.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_shared_credentials#user_name_template_suffix AppSharedCredentials#user_name_template_suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_shared_credentials#user_name_template_suffix AppSharedCredentials#user_name_template_suffix}
 
 ---
 
@@ -2465,7 +2465,7 @@ public java.lang.String getUserNameTemplateType();
 
 Username template type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_shared_credentials#user_name_template_type AppSharedCredentials#user_name_template_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_shared_credentials#user_name_template_type AppSharedCredentials#user_name_template_type}
 
 ---
 
@@ -2487,9 +2487,9 @@ AppSharedCredentialsTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.appSharedCredentials.AppSharedCredentialsTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_shared_credentials#create AppSharedCredentials#create}. |
-| <code><a href="#@cdktf/provider-okta.appSharedCredentials.AppSharedCredentialsTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_shared_credentials#read AppSharedCredentials#read}. |
-| <code><a href="#@cdktf/provider-okta.appSharedCredentials.AppSharedCredentialsTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_shared_credentials#update AppSharedCredentials#update}. |
+| <code><a href="#@cdktf/provider-okta.appSharedCredentials.AppSharedCredentialsTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_shared_credentials#create AppSharedCredentials#create}. |
+| <code><a href="#@cdktf/provider-okta.appSharedCredentials.AppSharedCredentialsTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_shared_credentials#read AppSharedCredentials#read}. |
+| <code><a href="#@cdktf/provider-okta.appSharedCredentials.AppSharedCredentialsTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_shared_credentials#update AppSharedCredentials#update}. |
 
 ---
 
@@ -2501,7 +2501,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_shared_credentials#create AppSharedCredentials#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_shared_credentials#create AppSharedCredentials#create}.
 
 ---
 
@@ -2513,7 +2513,7 @@ public java.lang.String getRead();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_shared_credentials#read AppSharedCredentials#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_shared_credentials#read AppSharedCredentials#read}.
 
 ---
 
@@ -2525,7 +2525,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_shared_credentials#update AppSharedCredentials#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_shared_credentials#update AppSharedCredentials#update}.
 
 ---
 

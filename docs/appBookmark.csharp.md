@@ -4,7 +4,7 @@
 
 ### AppBookmark <a name="AppBookmark" id="@cdktf/provider-okta.appBookmark.AppBookmark"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_bookmark okta_app_bookmark}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_bookmark okta_app_bookmark}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appBookmark.AppBookmark.Initializer"></a>
 
@@ -585,7 +585,7 @@ The construct id used in the generated config for the AppBookmark to import.
 
 The id of the existing AppBookmark that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_bookmark#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_bookmark#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1234,7 +1234,7 @@ new AppBookmarkConfig {
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.label">Label</a></code> | <code>string</code> | Pretty name of app. |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.url">Url</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_bookmark#url AppBookmark#url}. |
+| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.url">Url</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_bookmark#url AppBookmark#url}. |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.accessibilityErrorRedirectUrl">AccessibilityErrorRedirectUrl</a></code> | <code>string</code> | Custom error page URL. |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.accessibilityLoginRedirectUrl">AccessibilityLoginRedirectUrl</a></code> | <code>string</code> | Custom login page URL. |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.accessibilitySelfService">AccessibilitySelfService</a></code> | <code>object</code> | Enable self service. |
@@ -1245,7 +1245,7 @@ new AppBookmarkConfig {
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.enduserNote">EnduserNote</a></code> | <code>string</code> | Application notes for end users. |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.hideIos">HideIos</a></code> | <code>object</code> | Do not display application icon on mobile app. |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.hideWeb">HideWeb</a></code> | <code>object</code> | Do not display application icon to users. |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_bookmark#id AppBookmark#id}. |
+| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_bookmark#id AppBookmark#id}. |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.logo">Logo</a></code> | <code>string</code> | Local path to logo of the application. |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.requestIntegration">RequestIntegration</a></code> | <code>object</code> | Would you like Okta to add an integration for this app? |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.status">Status</a></code> | <code>string</code> | Status of application. |
@@ -1333,7 +1333,7 @@ public string Label { get; set; }
 
 Pretty name of app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_bookmark#label AppBookmark#label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_bookmark#label AppBookmark#label}
 
 ---
 
@@ -1345,7 +1345,7 @@ public string Url { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_bookmark#url AppBookmark#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_bookmark#url AppBookmark#url}.
 
 ---
 
@@ -1359,7 +1359,7 @@ public string AccessibilityErrorRedirectUrl { get; set; }
 
 Custom error page URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_bookmark#accessibility_error_redirect_url AppBookmark#accessibility_error_redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_bookmark#accessibility_error_redirect_url AppBookmark#accessibility_error_redirect_url}
 
 ---
 
@@ -1373,7 +1373,7 @@ public string AccessibilityLoginRedirectUrl { get; set; }
 
 Custom login page URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_bookmark#accessibility_login_redirect_url AppBookmark#accessibility_login_redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_bookmark#accessibility_login_redirect_url AppBookmark#accessibility_login_redirect_url}
 
 ---
 
@@ -1387,7 +1387,7 @@ public object AccessibilitySelfService { get; set; }
 
 Enable self service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_bookmark#accessibility_self_service AppBookmark#accessibility_self_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_bookmark#accessibility_self_service AppBookmark#accessibility_self_service}
 
 ---
 
@@ -1401,7 +1401,7 @@ public string AdminNote { get; set; }
 
 Application notes for admins.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_bookmark#admin_note AppBookmark#admin_note}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_bookmark#admin_note AppBookmark#admin_note}
 
 ---
 
@@ -1415,7 +1415,7 @@ public string AppLinksJson { get; set; }
 
 Displays specific appLinks for the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_bookmark#app_links_json AppBookmark#app_links_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_bookmark#app_links_json AppBookmark#app_links_json}
 
 ---
 
@@ -1429,7 +1429,7 @@ public string AuthenticationPolicy { get; set; }
 
 Id of this apps authentication policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_bookmark#authentication_policy AppBookmark#authentication_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_bookmark#authentication_policy AppBookmark#authentication_policy}
 
 ---
 
@@ -1443,7 +1443,7 @@ public object AutoSubmitToolbar { get; set; }
 
 Display auto submit toolbar.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_bookmark#auto_submit_toolbar AppBookmark#auto_submit_toolbar}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_bookmark#auto_submit_toolbar AppBookmark#auto_submit_toolbar}
 
 ---
 
@@ -1457,7 +1457,7 @@ public string EnduserNote { get; set; }
 
 Application notes for end users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_bookmark#enduser_note AppBookmark#enduser_note}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_bookmark#enduser_note AppBookmark#enduser_note}
 
 ---
 
@@ -1471,7 +1471,7 @@ public object HideIos { get; set; }
 
 Do not display application icon on mobile app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_bookmark#hide_ios AppBookmark#hide_ios}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_bookmark#hide_ios AppBookmark#hide_ios}
 
 ---
 
@@ -1485,7 +1485,7 @@ public object HideWeb { get; set; }
 
 Do not display application icon to users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_bookmark#hide_web AppBookmark#hide_web}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_bookmark#hide_web AppBookmark#hide_web}
 
 ---
 
@@ -1497,7 +1497,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_bookmark#id AppBookmark#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_bookmark#id AppBookmark#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1514,7 +1514,7 @@ public string Logo { get; set; }
 
 Local path to logo of the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_bookmark#logo AppBookmark#logo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_bookmark#logo AppBookmark#logo}
 
 ---
 
@@ -1528,7 +1528,7 @@ public object RequestIntegration { get; set; }
 
 Would you like Okta to add an integration for this app?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_bookmark#request_integration AppBookmark#request_integration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_bookmark#request_integration AppBookmark#request_integration}
 
 ---
 
@@ -1542,7 +1542,7 @@ public string Status { get; set; }
 
 Status of application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_bookmark#status AppBookmark#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_bookmark#status AppBookmark#status}
 
 ---
 
@@ -1556,7 +1556,7 @@ public AppBookmarkTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_bookmark#timeouts AppBookmark#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_bookmark#timeouts AppBookmark#timeouts}
 
 ---
 
@@ -1578,9 +1578,9 @@ new AppBookmarkTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_bookmark#create AppBookmark#create}. |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_bookmark#read AppBookmark#read}. |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_bookmark#update AppBookmark#update}. |
+| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_bookmark#create AppBookmark#create}. |
+| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_bookmark#read AppBookmark#read}. |
+| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_bookmark#update AppBookmark#update}. |
 
 ---
 
@@ -1592,7 +1592,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_bookmark#create AppBookmark#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_bookmark#create AppBookmark#create}.
 
 ---
 
@@ -1604,7 +1604,7 @@ public string Read { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_bookmark#read AppBookmark#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_bookmark#read AppBookmark#read}.
 
 ---
 
@@ -1616,7 +1616,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/app_bookmark#update AppBookmark#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/app_bookmark#update AppBookmark#update}.
 
 ---
 
