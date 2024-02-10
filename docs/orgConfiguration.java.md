@@ -4,7 +4,7 @@
 
 ### OrgConfiguration <a name="OrgConfiguration" id="@cdktf/provider-okta.orgConfiguration.OrgConfiguration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/org_configuration okta_org_configuration}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/org_configuration okta_org_configuration}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.orgConfiguration.OrgConfiguration.Initializer"></a>
 
@@ -61,7 +61,7 @@ OrgConfiguration.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-okta.orgConfiguration.OrgConfiguration.Initializer.parameter.city">city</a></code> | <code>java.lang.String</code> | City of org. |
 | <code><a href="#@cdktf/provider-okta.orgConfiguration.OrgConfiguration.Initializer.parameter.country">country</a></code> | <code>java.lang.String</code> | Country of org. |
 | <code><a href="#@cdktf/provider-okta.orgConfiguration.OrgConfiguration.Initializer.parameter.endUserSupportHelpUrl">endUserSupportHelpUrl</a></code> | <code>java.lang.String</code> | Support link of org. |
-| <code><a href="#@cdktf/provider-okta.orgConfiguration.OrgConfiguration.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/org_configuration#id OrgConfiguration#id}. |
+| <code><a href="#@cdktf/provider-okta.orgConfiguration.OrgConfiguration.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/org_configuration#id OrgConfiguration#id}. |
 | <code><a href="#@cdktf/provider-okta.orgConfiguration.OrgConfiguration.Initializer.parameter.logo">logo</a></code> | <code>java.lang.String</code> | Local path to logo of the org. |
 | <code><a href="#@cdktf/provider-okta.orgConfiguration.OrgConfiguration.Initializer.parameter.optOutCommunicationEmails">optOutCommunicationEmails</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Indicates whether the org's users receive Okta Communication emails. |
 | <code><a href="#@cdktf/provider-okta.orgConfiguration.OrgConfiguration.Initializer.parameter.phoneNumber">phoneNumber</a></code> | <code>java.lang.String</code> | Support help phone of org. |
@@ -139,7 +139,7 @@ Must be unique amongst siblings in the same scope
 
 Name of org.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/org_configuration#company_name OrgConfiguration#company_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/org_configuration#company_name OrgConfiguration#company_name}
 
 ---
 
@@ -149,7 +149,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Primary address of org.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/org_configuration#address_1 OrgConfiguration#address_1}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/org_configuration#address_1 OrgConfiguration#address_1}
 
 ---
 
@@ -159,7 +159,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Secondary address of org.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/org_configuration#address_2 OrgConfiguration#address_2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/org_configuration#address_2 OrgConfiguration#address_2}
 
 ---
 
@@ -169,7 +169,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 User ID representing the billing contact.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/org_configuration#billing_contact_user OrgConfiguration#billing_contact_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/org_configuration#billing_contact_user OrgConfiguration#billing_contact_user}
 
 ---
 
@@ -179,7 +179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 City of org.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/org_configuration#city OrgConfiguration#city}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/org_configuration#city OrgConfiguration#city}
 
 ---
 
@@ -189,7 +189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Country of org.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/org_configuration#country OrgConfiguration#country}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/org_configuration#country OrgConfiguration#country}
 
 ---
 
@@ -199,7 +199,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Support link of org.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/org_configuration#end_user_support_help_url OrgConfiguration#end_user_support_help_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/org_configuration#end_user_support_help_url OrgConfiguration#end_user_support_help_url}
 
 ---
 
@@ -207,7 +207,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/org_configuration#id OrgConfiguration#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/org_configuration#id OrgConfiguration#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -220,7 +220,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Local path to logo of the org.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/org_configuration#logo OrgConfiguration#logo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/org_configuration#logo OrgConfiguration#logo}
 
 ---
 
@@ -230,7 +230,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Indicates whether the org's users receive Okta Communication emails.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/org_configuration#opt_out_communication_emails OrgConfiguration#opt_out_communication_emails}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/org_configuration#opt_out_communication_emails OrgConfiguration#opt_out_communication_emails}
 
 ---
 
@@ -240,7 +240,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Support help phone of org.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/org_configuration#phone_number OrgConfiguration#phone_number}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/org_configuration#phone_number OrgConfiguration#phone_number}
 
 ---
 
@@ -250,7 +250,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Postal code of org.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/org_configuration#postal_code OrgConfiguration#postal_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/org_configuration#postal_code OrgConfiguration#postal_code}
 
 ---
 
@@ -260,7 +260,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 State of org.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/org_configuration#state OrgConfiguration#state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/org_configuration#state OrgConfiguration#state}
 
 ---
 
@@ -270,7 +270,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Support help phone of org.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/org_configuration#support_phone_number OrgConfiguration#support_phone_number}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/org_configuration#support_phone_number OrgConfiguration#support_phone_number}
 
 ---
 
@@ -280,7 +280,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 User ID representing the technical contact.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/org_configuration#technical_contact_user OrgConfiguration#technical_contact_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/org_configuration#technical_contact_user OrgConfiguration#technical_contact_user}
 
 ---
 
@@ -290,7 +290,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 The org's website.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/org_configuration#website OrgConfiguration#website}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/org_configuration#website OrgConfiguration#website}
 
 ---
 
@@ -822,7 +822,7 @@ The construct id used in the generated config for the OrgConfiguration to import
 
 The id of the existing OrgConfiguration that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/org_configuration#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/org_configuration#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1448,7 +1448,7 @@ OrgConfigurationConfig.builder()
 | <code><a href="#@cdktf/provider-okta.orgConfiguration.OrgConfigurationConfig.property.city">city</a></code> | <code>java.lang.String</code> | City of org. |
 | <code><a href="#@cdktf/provider-okta.orgConfiguration.OrgConfigurationConfig.property.country">country</a></code> | <code>java.lang.String</code> | Country of org. |
 | <code><a href="#@cdktf/provider-okta.orgConfiguration.OrgConfigurationConfig.property.endUserSupportHelpUrl">endUserSupportHelpUrl</a></code> | <code>java.lang.String</code> | Support link of org. |
-| <code><a href="#@cdktf/provider-okta.orgConfiguration.OrgConfigurationConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/org_configuration#id OrgConfiguration#id}. |
+| <code><a href="#@cdktf/provider-okta.orgConfiguration.OrgConfigurationConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/org_configuration#id OrgConfiguration#id}. |
 | <code><a href="#@cdktf/provider-okta.orgConfiguration.OrgConfigurationConfig.property.logo">logo</a></code> | <code>java.lang.String</code> | Local path to logo of the org. |
 | <code><a href="#@cdktf/provider-okta.orgConfiguration.OrgConfigurationConfig.property.optOutCommunicationEmails">optOutCommunicationEmails</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Indicates whether the org's users receive Okta Communication emails. |
 | <code><a href="#@cdktf/provider-okta.orgConfiguration.OrgConfigurationConfig.property.phoneNumber">phoneNumber</a></code> | <code>java.lang.String</code> | Support help phone of org. |
@@ -1540,7 +1540,7 @@ public java.lang.String getCompanyName();
 
 Name of org.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/org_configuration#company_name OrgConfiguration#company_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/org_configuration#company_name OrgConfiguration#company_name}
 
 ---
 
@@ -1554,7 +1554,7 @@ public java.lang.String getAddress1();
 
 Primary address of org.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/org_configuration#address_1 OrgConfiguration#address_1}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/org_configuration#address_1 OrgConfiguration#address_1}
 
 ---
 
@@ -1568,7 +1568,7 @@ public java.lang.String getAddress2();
 
 Secondary address of org.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/org_configuration#address_2 OrgConfiguration#address_2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/org_configuration#address_2 OrgConfiguration#address_2}
 
 ---
 
@@ -1582,7 +1582,7 @@ public java.lang.String getBillingContactUser();
 
 User ID representing the billing contact.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/org_configuration#billing_contact_user OrgConfiguration#billing_contact_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/org_configuration#billing_contact_user OrgConfiguration#billing_contact_user}
 
 ---
 
@@ -1596,7 +1596,7 @@ public java.lang.String getCity();
 
 City of org.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/org_configuration#city OrgConfiguration#city}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/org_configuration#city OrgConfiguration#city}
 
 ---
 
@@ -1610,7 +1610,7 @@ public java.lang.String getCountry();
 
 Country of org.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/org_configuration#country OrgConfiguration#country}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/org_configuration#country OrgConfiguration#country}
 
 ---
 
@@ -1624,7 +1624,7 @@ public java.lang.String getEndUserSupportHelpUrl();
 
 Support link of org.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/org_configuration#end_user_support_help_url OrgConfiguration#end_user_support_help_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/org_configuration#end_user_support_help_url OrgConfiguration#end_user_support_help_url}
 
 ---
 
@@ -1636,7 +1636,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/org_configuration#id OrgConfiguration#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/org_configuration#id OrgConfiguration#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1653,7 +1653,7 @@ public java.lang.String getLogo();
 
 Local path to logo of the org.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/org_configuration#logo OrgConfiguration#logo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/org_configuration#logo OrgConfiguration#logo}
 
 ---
 
@@ -1667,7 +1667,7 @@ public java.lang.Object getOptOutCommunicationEmails();
 
 Indicates whether the org's users receive Okta Communication emails.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/org_configuration#opt_out_communication_emails OrgConfiguration#opt_out_communication_emails}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/org_configuration#opt_out_communication_emails OrgConfiguration#opt_out_communication_emails}
 
 ---
 
@@ -1681,7 +1681,7 @@ public java.lang.String getPhoneNumber();
 
 Support help phone of org.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/org_configuration#phone_number OrgConfiguration#phone_number}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/org_configuration#phone_number OrgConfiguration#phone_number}
 
 ---
 
@@ -1695,7 +1695,7 @@ public java.lang.String getPostalCode();
 
 Postal code of org.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/org_configuration#postal_code OrgConfiguration#postal_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/org_configuration#postal_code OrgConfiguration#postal_code}
 
 ---
 
@@ -1709,7 +1709,7 @@ public java.lang.String getState();
 
 State of org.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/org_configuration#state OrgConfiguration#state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/org_configuration#state OrgConfiguration#state}
 
 ---
 
@@ -1723,7 +1723,7 @@ public java.lang.String getSupportPhoneNumber();
 
 Support help phone of org.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/org_configuration#support_phone_number OrgConfiguration#support_phone_number}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/org_configuration#support_phone_number OrgConfiguration#support_phone_number}
 
 ---
 
@@ -1737,7 +1737,7 @@ public java.lang.String getTechnicalContactUser();
 
 User ID representing the technical contact.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/org_configuration#technical_contact_user OrgConfiguration#technical_contact_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/org_configuration#technical_contact_user OrgConfiguration#technical_contact_user}
 
 ---
 
@@ -1751,7 +1751,7 @@ public java.lang.String getWebsite();
 
 The org's website.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/org_configuration#website OrgConfiguration#website}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/org_configuration#website OrgConfiguration#website}
 
 ---
 

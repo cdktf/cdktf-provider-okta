@@ -4,12 +4,12 @@
 
 ### OrgSupport <a name="OrgSupport" id="@cdktf/provider-okta.orgSupport.OrgSupport"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/org_support okta_org_support}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/org_support okta_org_support}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.orgSupport.OrgSupport.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/orgsupport"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/orgsupport"
 
 orgsupport.NewOrgSupport(scope Construct, id *string, config OrgSupportConfig) OrgSupport
 ```
@@ -392,7 +392,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.orgSupport.OrgSupport.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/orgsupport"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/orgsupport"
 
 orgsupport.OrgSupport_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.orgSupport.OrgSupport.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/orgsupport"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/orgsupport"
 
 orgsupport.OrgSupport_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ orgsupport.OrgSupport_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.orgSupport.OrgSupport.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/orgsupport"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/orgsupport"
 
 orgsupport.OrgSupport_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ orgsupport.OrgSupport_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.orgSupport.OrgSupport.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/orgsupport"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/orgsupport"
 
 orgsupport.OrgSupport_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -481,7 +481,7 @@ The construct id used in the generated config for the OrgSupport to import.
 
 The id of the existing OrgSupport that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/org_support#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/org_support#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -747,7 +747,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.orgSupport.OrgSupportConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/orgsupport"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/orgsupport"
 
 &orgsupport.OrgSupportConfig {
 	Connection: interface{},
@@ -774,7 +774,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/orgsupport"
 | <code><a href="#@cdktf/provider-okta.orgSupport.OrgSupportConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.orgSupport.OrgSupportConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.orgSupport.OrgSupportConfig.property.extendBy">ExtendBy</a></code> | <code>*f64</code> | Number of days the support should be extended by. |
-| <code><a href="#@cdktf/provider-okta.orgSupport.OrgSupportConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/org_support#id OrgSupport#id}. |
+| <code><a href="#@cdktf/provider-okta.orgSupport.OrgSupportConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/org_support#id OrgSupport#id}. |
 
 ---
 
@@ -858,7 +858,7 @@ ExtendBy *f64
 
 Number of days the support should be extended by.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/org_support#extend_by OrgSupport#extend_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/org_support#extend_by OrgSupport#extend_by}
 
 ---
 
@@ -870,7 +870,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/org_support#id OrgSupport#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/org_support#id OrgSupport#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

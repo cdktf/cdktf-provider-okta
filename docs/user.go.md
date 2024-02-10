@@ -4,12 +4,12 @@
 
 ### User <a name="User" id="@cdktf/provider-okta.user.User"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user okta_user}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/user okta_user}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.user.User.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/user"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/user"
 
 user.NewUser(scope Construct, id *string, config UserConfig) User
 ```
@@ -664,7 +664,7 @@ func ResetZipCode()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.user.User.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/user"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/user"
 
 user.User_IsConstruct(x interface{}) *bool
 ```
@@ -696,7 +696,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.user.User.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/user"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/user"
 
 user.User_IsTerraformElement(x interface{}) *bool
 ```
@@ -710,7 +710,7 @@ user.User_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.user.User.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/user"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/user"
 
 user.User_IsTerraformResource(x interface{}) *bool
 ```
@@ -724,7 +724,7 @@ user.User_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.user.User.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/user"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/user"
 
 user.User_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -753,7 +753,7 @@ The construct id used in the generated config for the User to import.
 
 The id of the existing User that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/user#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1910,7 +1910,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.user.UserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/user"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/user"
 
 &user.UserConfig {
 	Connection: interface{},
@@ -1946,7 +1946,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/user"
 	OldPassword: *string,
 	Organization: *string,
 	Password: *string,
-	PasswordHash: github.com/cdktf/cdktf-provider-okta-go/okta/v13.user.UserPasswordHash,
+	PasswordHash: github.com/cdktf/cdktf-provider-okta-go/okta.user.UserPasswordHash,
 	PasswordInlineHook: *string,
 	PostalAddress: *string,
 	PreferredLanguage: *string,
@@ -1993,7 +1993,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/user"
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.expirePasswordOnCreate">ExpirePasswordOnCreate</a></code> | <code>interface{}</code> | If set to `true`, the user will have to change the password at the next login. |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.honorificPrefix">HonorificPrefix</a></code> | <code>*string</code> | User honorific prefix. |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.honorificSuffix">HonorificSuffix</a></code> | <code>*string</code> | User honorific suffix. |
-| <code><a href="#@cdktf/provider-okta.user.UserConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user#id User#id}. |
+| <code><a href="#@cdktf/provider-okta.user.UserConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/user#id User#id}. |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.locale">Locale</a></code> | <code>*string</code> | User default location. |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.manager">Manager</a></code> | <code>*string</code> | Manager of User. |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.managerId">ManagerId</a></code> | <code>*string</code> | Manager ID of User. |
@@ -2103,7 +2103,7 @@ Email *string
 
 User primary email address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user#email User#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/user#email User#email}
 
 ---
 
@@ -2117,7 +2117,7 @@ FirstName *string
 
 User first name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user#first_name User#first_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/user#first_name User#first_name}
 
 ---
 
@@ -2131,7 +2131,7 @@ LastName *string
 
 User last name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user#last_name User#last_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/user#last_name User#last_name}
 
 ---
 
@@ -2145,7 +2145,7 @@ Login *string
 
 User Okta login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user#login User#login}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/user#login User#login}
 
 ---
 
@@ -2159,7 +2159,7 @@ City *string
 
 User city.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user#city User#city}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/user#city User#city}
 
 ---
 
@@ -2173,7 +2173,7 @@ CostCenter *string
 
 User cost center.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user#cost_center User#cost_center}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/user#cost_center User#cost_center}
 
 ---
 
@@ -2187,7 +2187,7 @@ CountryCode *string
 
 User country code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user#country_code User#country_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/user#country_code User#country_code}
 
 ---
 
@@ -2201,7 +2201,7 @@ CustomProfileAttributes *string
 
 JSON formatted custom attributes for a user. It must be JSON due to various types Okta allows.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user#custom_profile_attributes User#custom_profile_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/user#custom_profile_attributes User#custom_profile_attributes}
 
 ---
 
@@ -2215,7 +2215,7 @@ CustomProfileAttributesToIgnore *[]*string
 
 List of custom_profile_attribute keys that should be excluded from being managed by Terraform.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user#custom_profile_attributes_to_ignore User#custom_profile_attributes_to_ignore}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/user#custom_profile_attributes_to_ignore User#custom_profile_attributes_to_ignore}
 
 ---
 
@@ -2229,7 +2229,7 @@ Department *string
 
 User department.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user#department User#department}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/user#department User#department}
 
 ---
 
@@ -2243,7 +2243,7 @@ DisplayName *string
 
 User display name, suitable to show end users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user#display_name User#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/user#display_name User#display_name}
 
 ---
 
@@ -2257,7 +2257,7 @@ Division *string
 
 User division.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user#division User#division}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/user#division User#division}
 
 ---
 
@@ -2271,7 +2271,7 @@ EmployeeNumber *string
 
 User employee number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user#employee_number User#employee_number}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/user#employee_number User#employee_number}
 
 ---
 
@@ -2287,7 +2287,7 @@ If set to `true`, the user will have to change the password at the next login.
 
 This property will be used when user is being created and works only when `password` field is set
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user#expire_password_on_create User#expire_password_on_create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/user#expire_password_on_create User#expire_password_on_create}
 
 ---
 
@@ -2301,7 +2301,7 @@ HonorificPrefix *string
 
 User honorific prefix.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user#honorific_prefix User#honorific_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/user#honorific_prefix User#honorific_prefix}
 
 ---
 
@@ -2315,7 +2315,7 @@ HonorificSuffix *string
 
 User honorific suffix.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user#honorific_suffix User#honorific_suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/user#honorific_suffix User#honorific_suffix}
 
 ---
 
@@ -2327,7 +2327,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user#id User#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/user#id User#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2344,7 +2344,7 @@ Locale *string
 
 User default location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user#locale User#locale}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/user#locale User#locale}
 
 ---
 
@@ -2358,7 +2358,7 @@ Manager *string
 
 Manager of User.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user#manager User#manager}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/user#manager User#manager}
 
 ---
 
@@ -2372,7 +2372,7 @@ ManagerId *string
 
 Manager ID of User.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user#manager_id User#manager_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/user#manager_id User#manager_id}
 
 ---
 
@@ -2386,7 +2386,7 @@ MiddleName *string
 
 User middle name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user#middle_name User#middle_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/user#middle_name User#middle_name}
 
 ---
 
@@ -2400,7 +2400,7 @@ MobilePhone *string
 
 User mobile phone number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user#mobile_phone User#mobile_phone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/user#mobile_phone User#mobile_phone}
 
 ---
 
@@ -2414,7 +2414,7 @@ NickName *string
 
 User nickname.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user#nick_name User#nick_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/user#nick_name User#nick_name}
 
 ---
 
@@ -2428,7 +2428,7 @@ OldPassword *string
 
 Old User Password. Should be only set in case the password was not changed using the provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user#old_password User#old_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/user#old_password User#old_password}
 
 ---
 
@@ -2442,7 +2442,7 @@ Organization *string
 
 User organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user#organization User#organization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/user#organization User#organization}
 
 ---
 
@@ -2456,7 +2456,7 @@ Password *string
 
 User Password.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user#password User#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/user#password User#password}
 
 ---
 
@@ -2470,7 +2470,7 @@ PasswordHash UserPasswordHash
 
 password_hash block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user#password_hash User#password_hash}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/user#password_hash User#password_hash}
 
 ---
 
@@ -2484,7 +2484,7 @@ PasswordInlineHook *string
 
 When specified, the Password Inline Hook is triggered to handle verification of the end user's password the first time the user tries to sign in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user#password_inline_hook User#password_inline_hook}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/user#password_inline_hook User#password_inline_hook}
 
 ---
 
@@ -2498,7 +2498,7 @@ PostalAddress *string
 
 User mailing address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user#postal_address User#postal_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/user#postal_address User#postal_address}
 
 ---
 
@@ -2512,7 +2512,7 @@ PreferredLanguage *string
 
 User preferred language.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user#preferred_language User#preferred_language}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/user#preferred_language User#preferred_language}
 
 ---
 
@@ -2526,7 +2526,7 @@ PrimaryPhone *string
 
 User primary phone number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user#primary_phone User#primary_phone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/user#primary_phone User#primary_phone}
 
 ---
 
@@ -2540,7 +2540,7 @@ ProfileUrl *string
 
 User online profile (web page).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user#profile_url User#profile_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/user#profile_url User#profile_url}
 
 ---
 
@@ -2554,7 +2554,7 @@ RecoveryAnswer *string
 
 User Password Recovery Answer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user#recovery_answer User#recovery_answer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/user#recovery_answer User#recovery_answer}
 
 ---
 
@@ -2568,7 +2568,7 @@ RecoveryQuestion *string
 
 User Password Recovery Question.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user#recovery_question User#recovery_question}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/user#recovery_question User#recovery_question}
 
 ---
 
@@ -2582,7 +2582,7 @@ SecondEmail *string
 
 User secondary email address, used for account recovery.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user#second_email User#second_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/user#second_email User#second_email}
 
 ---
 
@@ -2596,7 +2596,7 @@ SkipRoles interface{}
 
 Do not populate user roles information (prevents additional API call).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user#skip_roles User#skip_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/user#skip_roles User#skip_roles}
 
 ---
 
@@ -2610,7 +2610,7 @@ State *string
 
 User state or region.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user#state User#state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/user#state User#state}
 
 ---
 
@@ -2624,7 +2624,7 @@ Status *string
 
 The status of the User in Okta - remove to set user back to active/provisioned.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user#status User#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/user#status User#status}
 
 ---
 
@@ -2638,7 +2638,7 @@ StreetAddress *string
 
 User street address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user#street_address User#street_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/user#street_address User#street_address}
 
 ---
 
@@ -2652,7 +2652,7 @@ Timezone *string
 
 User default timezone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user#timezone User#timezone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/user#timezone User#timezone}
 
 ---
 
@@ -2666,7 +2666,7 @@ Title *string
 
 User title.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user#title User#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/user#title User#title}
 
 ---
 
@@ -2680,7 +2680,7 @@ UserType *string
 
 User employee type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user#user_type User#user_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/user#user_type User#user_type}
 
 ---
 
@@ -2694,7 +2694,7 @@ ZipCode *string
 
 User zipcode or postal code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user#zip_code User#zip_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/user#zip_code User#zip_code}
 
 ---
 
@@ -2703,7 +2703,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.user.UserPasswordHash.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/user"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/user"
 
 &user.UserPasswordHash {
 	Algorithm: *string,
@@ -2736,7 +2736,7 @@ Algorithm *string
 
 The algorithm used to generate the hash using the password.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user#algorithm User#algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/user#algorithm User#algorithm}
 
 ---
 
@@ -2752,7 +2752,7 @@ For SHA-512, SHA-256, SHA-1, MD5, This is the actual base64-encoded hash of the 
 
 This is the Base64 encoded value of the SHA-512/SHA-256/SHA-1/MD5 digest that was computed by either pre-fixing or post-fixing the salt to the password, depending on the saltOrder. If a salt was not used in the source system, then this should just be the the Base64 encoded value of the password's SHA-512/SHA-256/SHA-1/MD5 digest. For BCRYPT, This is the actual radix64-encoded hashed password.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user#value User#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/user#value User#value}
 
 ---
 
@@ -2766,7 +2766,7 @@ Salt *string
 
 Only required for salted hashes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user#salt User#salt}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/user#salt User#salt}
 
 ---
 
@@ -2780,7 +2780,7 @@ SaltOrder *string
 
 Specifies whether salt was pre- or postfixed to the password before hashing.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user#salt_order User#salt_order}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/user#salt_order User#salt_order}
 
 ---
 
@@ -2794,7 +2794,7 @@ WorkFactor *f64
 
 Governs the strength of the hash and the time required to compute it. Only required for BCRYPT algorithm.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.6.3/docs/resources/user#work_factor User#work_factor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/user#work_factor User#work_factor}
 
 ---
 
@@ -2805,7 +2805,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.user.UserPasswordHashOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/user"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/user"
 
 user.NewUserPasswordHashOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) UserPasswordHashOutputReference
 ```
