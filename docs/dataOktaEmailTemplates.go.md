@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaEmailTemplates.DataOktaEmailTemplates.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaemailtemplates"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktaemailtemplates"
 
 dataoktaemailtemplates.NewDataOktaEmailTemplates(scope Construct, id *string, config DataOktaEmailTemplatesConfig) DataOktaEmailTemplates
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.dataOktaEmailTemplates.DataOktaEmailTemplates.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaemailtemplates"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktaemailtemplates"
 
 dataoktaemailtemplates.DataOktaEmailTemplates_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.dataOktaEmailTemplates.DataOktaEmailTemplates.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaemailtemplates"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktaemailtemplates"
 
 dataoktaemailtemplates.DataOktaEmailTemplates_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ dataoktaemailtemplates.DataOktaEmailTemplates_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-okta.dataOktaEmailTemplates.DataOktaEmailTemplates.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaemailtemplates"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktaemailtemplates"
 
 dataoktaemailtemplates.DataOktaEmailTemplates_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataoktaemailtemplates.DataOktaEmailTemplates_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.dataOktaEmailTemplates.DataOktaEmailTemplates.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaemailtemplates"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktaemailtemplates"
 
 dataoktaemailtemplates.DataOktaEmailTemplates_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -605,7 +605,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaEmailTemplates.DataOktaEmailTemplatesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaemailtemplates"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktaemailtemplates"
 
 &dataoktaemailtemplates.DataOktaEmailTemplatesConfig {
 	Connection: interface{},
@@ -740,7 +740,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaEmailTemplates.DataOktaEmailTemplatesEmailTemplates.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaemailtemplates"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktaemailtemplates"
 
 &dataoktaemailtemplates.DataOktaEmailTemplatesEmailTemplates {
 
@@ -755,7 +755,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaemailtemplates"
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaEmailTemplates.DataOktaEmailTemplatesEmailTemplatesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaemailtemplates"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktaemailtemplates"
 
 dataoktaemailtemplates.NewDataOktaEmailTemplatesEmailTemplatesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOktaEmailTemplatesEmailTemplatesList
 ```
@@ -904,7 +904,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaEmailTemplates.DataOktaEmailTemplatesEmailTemplatesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaemailtemplates"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktaemailtemplates"
 
 dataoktaemailtemplates.NewDataOktaEmailTemplatesEmailTemplatesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataOktaEmailTemplatesEmailTemplatesOutputReference
 ```

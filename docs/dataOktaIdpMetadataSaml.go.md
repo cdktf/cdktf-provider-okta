@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaIdpMetadataSaml.DataOktaIdpMetadataSaml.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaidpmetadatasaml"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktaidpmetadatasaml"
 
 dataoktaidpmetadatasaml.NewDataOktaIdpMetadataSaml(scope Construct, id *string, config DataOktaIdpMetadataSamlConfig) DataOktaIdpMetadataSaml
 ```
@@ -290,7 +290,7 @@ func ResetIdpId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.dataOktaIdpMetadataSaml.DataOktaIdpMetadataSaml.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaidpmetadatasaml"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktaidpmetadatasaml"
 
 dataoktaidpmetadatasaml.DataOktaIdpMetadataSaml_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.dataOktaIdpMetadataSaml.DataOktaIdpMetadataSaml.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaidpmetadatasaml"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktaidpmetadatasaml"
 
 dataoktaidpmetadatasaml.DataOktaIdpMetadataSaml_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ dataoktaidpmetadatasaml.DataOktaIdpMetadataSaml_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-okta.dataOktaIdpMetadataSaml.DataOktaIdpMetadataSaml.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaidpmetadatasaml"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktaidpmetadatasaml"
 
 dataoktaidpmetadatasaml.DataOktaIdpMetadataSaml_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataoktaidpmetadatasaml.DataOktaIdpMetadataSaml_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.dataOktaIdpMetadataSaml.DataOktaIdpMetadataSaml.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaidpmetadatasaml"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktaidpmetadatasaml"
 
 dataoktaidpmetadatasaml.DataOktaIdpMetadataSaml_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -689,7 +689,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaIdpMetadataSaml.DataOktaIdpMetadataSamlConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaidpmetadatasaml"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktaidpmetadatasaml"
 
 &dataoktaidpmetadatasaml.DataOktaIdpMetadataSamlConfig {
 	Connection: interface{},
