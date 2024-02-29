@@ -4,7 +4,7 @@
 
 ### FactorTotp <a name="FactorTotp" id="@cdktf/provider-okta.factorTotp.FactorTotp"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/factor_totp okta_factor_totp}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/factor_totp okta_factor_totp}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.factorTotp.FactorTotp.Initializer"></a>
 
@@ -509,7 +509,7 @@ The construct id used in the generated config for the FactorTotp to import.
 
 The id of the existing FactorTotp that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/factor_totp#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/factor_totp#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -897,7 +897,7 @@ new FactorTotpConfig {
 | <code><a href="#@cdktf/provider-okta.factorTotp.FactorTotpConfig.property.name">Name</a></code> | <code>string</code> | The TOTP name. |
 | <code><a href="#@cdktf/provider-okta.factorTotp.FactorTotpConfig.property.clockDriftInterval">ClockDriftInterval</a></code> | <code>double</code> | Clock drift interval. |
 | <code><a href="#@cdktf/provider-okta.factorTotp.FactorTotpConfig.property.hmacAlgorithm">HmacAlgorithm</a></code> | <code>string</code> | Hash-based message authentication code algorithm. |
-| <code><a href="#@cdktf/provider-okta.factorTotp.FactorTotpConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/factor_totp#id FactorTotp#id}. |
+| <code><a href="#@cdktf/provider-okta.factorTotp.FactorTotpConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/factor_totp#id FactorTotp#id}. |
 | <code><a href="#@cdktf/provider-okta.factorTotp.FactorTotpConfig.property.otpLength">OtpLength</a></code> | <code>double</code> | Length of the password. Default is `6`. |
 | <code><a href="#@cdktf/provider-okta.factorTotp.FactorTotpConfig.property.sharedSecretEncoding">SharedSecretEncoding</a></code> | <code>string</code> | Shared secret encoding. |
 | <code><a href="#@cdktf/provider-okta.factorTotp.FactorTotpConfig.property.timeStep">TimeStep</a></code> | <code>double</code> | Time step in seconds. |
@@ -984,7 +984,7 @@ public string Name { get; set; }
 
 The TOTP name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/factor_totp#name FactorTotp#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/factor_totp#name FactorTotp#name}
 
 ---
 
@@ -998,7 +998,7 @@ public double ClockDriftInterval { get; set; }
 
 Clock drift interval.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/factor_totp#clock_drift_interval FactorTotp#clock_drift_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/factor_totp#clock_drift_interval FactorTotp#clock_drift_interval}
 
 ---
 
@@ -1012,7 +1012,7 @@ public string HmacAlgorithm { get; set; }
 
 Hash-based message authentication code algorithm.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/factor_totp#hmac_algorithm FactorTotp#hmac_algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/factor_totp#hmac_algorithm FactorTotp#hmac_algorithm}
 
 ---
 
@@ -1024,7 +1024,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/factor_totp#id FactorTotp#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/factor_totp#id FactorTotp#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1041,7 +1041,7 @@ public double OtpLength { get; set; }
 
 Length of the password. Default is `6`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/factor_totp#otp_length FactorTotp#otp_length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/factor_totp#otp_length FactorTotp#otp_length}
 
 ---
 
@@ -1055,7 +1055,7 @@ public string SharedSecretEncoding { get; set; }
 
 Shared secret encoding.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/factor_totp#shared_secret_encoding FactorTotp#shared_secret_encoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/factor_totp#shared_secret_encoding FactorTotp#shared_secret_encoding}
 
 ---
 
@@ -1069,7 +1069,7 @@ public double TimeStep { get; set; }
 
 Time step in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/factor_totp#time_step FactorTotp#time_step}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/factor_totp#time_step FactorTotp#time_step}
 
 ---
 

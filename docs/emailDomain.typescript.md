@@ -4,7 +4,7 @@
 
 ### EmailDomain <a name="EmailDomain" id="@cdktf/provider-okta.emailDomain.EmailDomain"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/email_domain okta_email_domain}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/email_domain okta_email_domain}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.emailDomain.EmailDomain.Initializer"></a>
 
@@ -474,7 +474,7 @@ The construct id used in the generated config for the EmailDomain to import.
 
 The id of the existing EmailDomain that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/email_domain#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/email_domain#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -826,7 +826,7 @@ const emailDomainConfig: emailDomain.EmailDomainConfig = { ... }
 | <code><a href="#@cdktf/provider-okta.emailDomain.EmailDomainConfig.property.displayName">displayName</a></code> | <code>string</code> | Display name. |
 | <code><a href="#@cdktf/provider-okta.emailDomain.EmailDomainConfig.property.domain">domain</a></code> | <code>string</code> | Domain name. |
 | <code><a href="#@cdktf/provider-okta.emailDomain.EmailDomainConfig.property.userName">userName</a></code> | <code>string</code> | User name. |
-| <code><a href="#@cdktf/provider-okta.emailDomain.EmailDomainConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/email_domain#id EmailDomain#id}. |
+| <code><a href="#@cdktf/provider-okta.emailDomain.EmailDomainConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/email_domain#id EmailDomain#id}. |
 
 ---
 
@@ -910,7 +910,7 @@ public readonly brandId: string;
 
 Brand id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/email_domain#brand_id EmailDomain#brand_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/email_domain#brand_id EmailDomain#brand_id}
 
 ---
 
@@ -924,7 +924,7 @@ public readonly displayName: string;
 
 Display name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/email_domain#display_name EmailDomain#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/email_domain#display_name EmailDomain#display_name}
 
 ---
 
@@ -938,7 +938,7 @@ public readonly domain: string;
 
 Domain name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/email_domain#domain EmailDomain#domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/email_domain#domain EmailDomain#domain}
 
 ---
 
@@ -952,7 +952,7 @@ public readonly userName: string;
 
 User name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/email_domain#user_name EmailDomain#user_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/email_domain#user_name EmailDomain#user_name}
 
 ---
 
@@ -964,7 +964,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/email_domain#id EmailDomain#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/email_domain#id EmailDomain#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

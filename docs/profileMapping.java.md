@@ -4,7 +4,7 @@
 
 ### ProfileMapping <a name="ProfileMapping" id="@cdktf/provider-okta.profileMapping.ProfileMapping"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/profile_mapping okta_profile_mapping}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/profile_mapping okta_profile_mapping}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.profileMapping.ProfileMapping.Initializer"></a>
 
@@ -50,7 +50,7 @@ ProfileMapping.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.Initializer.parameter.targetId">targetId</a></code> | <code>java.lang.String</code> | The target id of the mapping to manage. |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.Initializer.parameter.alwaysApply">alwaysApply</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether apply the changes to all users with this profile after updating or creating the these mappings. |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.Initializer.parameter.deleteWhenAbsent">deleteWhenAbsent</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | When turned on this flag will trigger the provider to delete mapping properties that are not defined in config. |
-| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/profile_mapping#id ProfileMapping#id}. |
+| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/profile_mapping#id ProfileMapping#id}. |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.Initializer.parameter.mappings">mappings</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-okta.profileMapping.ProfileMappingMappings">ProfileMappingMappings</a>></code> | mappings block. |
 
 ---
@@ -121,7 +121,7 @@ Must be unique amongst siblings in the same scope
 
 The source id of the mapping to manage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/profile_mapping#source_id ProfileMapping#source_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/profile_mapping#source_id ProfileMapping#source_id}
 
 ---
 
@@ -131,7 +131,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 The target id of the mapping to manage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/profile_mapping#target_id ProfileMapping#target_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/profile_mapping#target_id ProfileMapping#target_id}
 
 ---
 
@@ -141,7 +141,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Whether apply the changes to all users with this profile after updating or creating the these mappings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/profile_mapping#always_apply ProfileMapping#always_apply}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/profile_mapping#always_apply ProfileMapping#always_apply}
 
 ---
 
@@ -153,7 +153,7 @@ When turned on this flag will trigger the provider to delete mapping properties 
 
 By default, we do not delete missing properties.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/profile_mapping#delete_when_absent ProfileMapping#delete_when_absent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/profile_mapping#delete_when_absent ProfileMapping#delete_when_absent}
 
 ---
 
@@ -161,7 +161,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/profile_mapping#id ProfileMapping#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/profile_mapping#id ProfileMapping#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -174,7 +174,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 mappings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/profile_mapping#mappings ProfileMapping#mappings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/profile_mapping#mappings ProfileMapping#mappings}
 
 ---
 
@@ -642,7 +642,7 @@ The construct id used in the generated config for the ProfileMapping to import.
 
 The id of the existing ProfileMapping that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/profile_mapping#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/profile_mapping#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1059,7 +1059,7 @@ ProfileMappingConfig.builder()
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingConfig.property.targetId">targetId</a></code> | <code>java.lang.String</code> | The target id of the mapping to manage. |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingConfig.property.alwaysApply">alwaysApply</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether apply the changes to all users with this profile after updating or creating the these mappings. |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingConfig.property.deleteWhenAbsent">deleteWhenAbsent</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | When turned on this flag will trigger the provider to delete mapping properties that are not defined in config. |
-| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/profile_mapping#id ProfileMapping#id}. |
+| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/profile_mapping#id ProfileMapping#id}. |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingConfig.property.mappings">mappings</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-okta.profileMapping.ProfileMappingMappings">ProfileMappingMappings</a>></code> | mappings block. |
 
 ---
@@ -1144,7 +1144,7 @@ public java.lang.String getSourceId();
 
 The source id of the mapping to manage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/profile_mapping#source_id ProfileMapping#source_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/profile_mapping#source_id ProfileMapping#source_id}
 
 ---
 
@@ -1158,7 +1158,7 @@ public java.lang.String getTargetId();
 
 The target id of the mapping to manage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/profile_mapping#target_id ProfileMapping#target_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/profile_mapping#target_id ProfileMapping#target_id}
 
 ---
 
@@ -1172,7 +1172,7 @@ public java.lang.Object getAlwaysApply();
 
 Whether apply the changes to all users with this profile after updating or creating the these mappings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/profile_mapping#always_apply ProfileMapping#always_apply}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/profile_mapping#always_apply ProfileMapping#always_apply}
 
 ---
 
@@ -1188,7 +1188,7 @@ When turned on this flag will trigger the provider to delete mapping properties 
 
 By default, we do not delete missing properties.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/profile_mapping#delete_when_absent ProfileMapping#delete_when_absent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/profile_mapping#delete_when_absent ProfileMapping#delete_when_absent}
 
 ---
 
@@ -1200,7 +1200,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/profile_mapping#id ProfileMapping#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/profile_mapping#id ProfileMapping#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1217,7 +1217,7 @@ public java.lang.Object getMappings();
 
 mappings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/profile_mapping#mappings ProfileMapping#mappings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/profile_mapping#mappings ProfileMapping#mappings}
 
 ---
 
@@ -1239,9 +1239,9 @@ ProfileMappingMappings.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingMappings.property.expression">expression</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/profile_mapping#expression ProfileMapping#expression}. |
+| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingMappings.property.expression">expression</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/profile_mapping#expression ProfileMapping#expression}. |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingMappings.property.id">id</a></code> | <code>java.lang.String</code> | The mapping property key. |
-| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingMappings.property.pushStatus">pushStatus</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/profile_mapping#push_status ProfileMapping#push_status}. |
+| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingMappings.property.pushStatus">pushStatus</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/profile_mapping#push_status ProfileMapping#push_status}. |
 
 ---
 
@@ -1253,7 +1253,7 @@ public java.lang.String getExpression();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/profile_mapping#expression ProfileMapping#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/profile_mapping#expression ProfileMapping#expression}.
 
 ---
 
@@ -1267,7 +1267,7 @@ public java.lang.String getId();
 
 The mapping property key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/profile_mapping#id ProfileMapping#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/profile_mapping#id ProfileMapping#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1282,7 +1282,7 @@ public java.lang.String getPushStatus();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/profile_mapping#push_status ProfileMapping#push_status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/profile_mapping#push_status ProfileMapping#push_status}.
 
 ---
 

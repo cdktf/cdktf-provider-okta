@@ -4,7 +4,7 @@
 
 ### Theme <a name="Theme" id="@cdktf/provider-okta.theme.Theme"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/theme okta_theme}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/theme okta_theme}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.theme.Theme.Initializer"></a>
 
@@ -130,7 +130,7 @@ Must be unique amongst siblings in the same scope
 
 Brand ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/theme#brand_id Theme#brand_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/theme#brand_id Theme#brand_id}
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Path to local file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/theme#background_image Theme#background_image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/theme#background_image Theme#background_image}
 
 ---
 
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Variant for email templates (`OKTA_DEFAULT`, `FULL_THEME`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/theme#email_template_touch_point_variant Theme#email_template_touch_point_variant}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/theme#email_template_touch_point_variant Theme#email_template_touch_point_variant}
 
 ---
 
@@ -160,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Variant for the Okta End-User Dashboard (`OKTA_DEFAULT`, `WHITE_LOGO_BACKGROUND`, `FULL_THEME`, `LOGO_ON_FULL_WHITE_BACKGROUND`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/theme#end_user_dashboard_touch_point_variant Theme#end_user_dashboard_touch_point_variant}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/theme#end_user_dashboard_touch_point_variant Theme#end_user_dashboard_touch_point_variant}
 
 ---
 
@@ -170,7 +170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Variant for the error page (`OKTA_DEFAULT`, `BACKGROUND_SECONDARY_COLOR`, `BACKGROUND_IMAGE`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/theme#error_page_touch_point_variant Theme#error_page_touch_point_variant}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/theme#error_page_touch_point_variant Theme#error_page_touch_point_variant}
 
 ---
 
@@ -180,7 +180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Path to local file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/theme#favicon Theme#favicon}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/theme#favicon Theme#favicon}
 
 ---
 
@@ -190,7 +190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Path to local file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/theme#logo Theme#logo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/theme#logo Theme#logo}
 
 ---
 
@@ -200,7 +200,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Primary color contrast hex code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/theme#primary_color_contrast_hex Theme#primary_color_contrast_hex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/theme#primary_color_contrast_hex Theme#primary_color_contrast_hex}
 
 ---
 
@@ -210,7 +210,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Primary color hex code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/theme#primary_color_hex Theme#primary_color_hex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/theme#primary_color_hex Theme#primary_color_hex}
 
 ---
 
@@ -220,7 +220,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Secondary color contrast hex code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/theme#secondary_color_contrast_hex Theme#secondary_color_contrast_hex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/theme#secondary_color_contrast_hex Theme#secondary_color_contrast_hex}
 
 ---
 
@@ -230,7 +230,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Secondary color hex code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/theme#secondary_color_hex Theme#secondary_color_hex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/theme#secondary_color_hex Theme#secondary_color_hex}
 
 ---
 
@@ -240,7 +240,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Variant for the Okta Sign-In Page (`OKTA_DEFAULT`, `BACKGROUND_SECONDARY_COLOR`, `BACKGROUND_IMAGE`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/theme#sign_in_page_touch_point_variant Theme#sign_in_page_touch_point_variant}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/theme#sign_in_page_touch_point_variant Theme#sign_in_page_touch_point_variant}
 
 ---
 
@@ -252,7 +252,7 @@ Theme ID - Note: Okta API for theme only reads and updates therefore the okta_th
 
 Do this by setting theme_id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/theme#theme_id Theme#theme_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/theme#theme_id Theme#theme_id}
 
 ---
 
@@ -809,7 +809,7 @@ The construct id used in the generated config for the Theme to import.
 
 The id of the existing Theme that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/theme#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/theme#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1483,7 +1483,7 @@ brand_id: str
 
 Brand ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/theme#brand_id Theme#brand_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/theme#brand_id Theme#brand_id}
 
 ---
 
@@ -1497,7 +1497,7 @@ background_image: str
 
 Path to local file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/theme#background_image Theme#background_image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/theme#background_image Theme#background_image}
 
 ---
 
@@ -1511,7 +1511,7 @@ email_template_touch_point_variant: str
 
 Variant for email templates (`OKTA_DEFAULT`, `FULL_THEME`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/theme#email_template_touch_point_variant Theme#email_template_touch_point_variant}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/theme#email_template_touch_point_variant Theme#email_template_touch_point_variant}
 
 ---
 
@@ -1525,7 +1525,7 @@ end_user_dashboard_touch_point_variant: str
 
 Variant for the Okta End-User Dashboard (`OKTA_DEFAULT`, `WHITE_LOGO_BACKGROUND`, `FULL_THEME`, `LOGO_ON_FULL_WHITE_BACKGROUND`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/theme#end_user_dashboard_touch_point_variant Theme#end_user_dashboard_touch_point_variant}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/theme#end_user_dashboard_touch_point_variant Theme#end_user_dashboard_touch_point_variant}
 
 ---
 
@@ -1539,7 +1539,7 @@ error_page_touch_point_variant: str
 
 Variant for the error page (`OKTA_DEFAULT`, `BACKGROUND_SECONDARY_COLOR`, `BACKGROUND_IMAGE`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/theme#error_page_touch_point_variant Theme#error_page_touch_point_variant}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/theme#error_page_touch_point_variant Theme#error_page_touch_point_variant}
 
 ---
 
@@ -1553,7 +1553,7 @@ favicon: str
 
 Path to local file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/theme#favicon Theme#favicon}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/theme#favicon Theme#favicon}
 
 ---
 
@@ -1567,7 +1567,7 @@ logo: str
 
 Path to local file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/theme#logo Theme#logo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/theme#logo Theme#logo}
 
 ---
 
@@ -1581,7 +1581,7 @@ primary_color_contrast_hex: str
 
 Primary color contrast hex code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/theme#primary_color_contrast_hex Theme#primary_color_contrast_hex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/theme#primary_color_contrast_hex Theme#primary_color_contrast_hex}
 
 ---
 
@@ -1595,7 +1595,7 @@ primary_color_hex: str
 
 Primary color hex code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/theme#primary_color_hex Theme#primary_color_hex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/theme#primary_color_hex Theme#primary_color_hex}
 
 ---
 
@@ -1609,7 +1609,7 @@ secondary_color_contrast_hex: str
 
 Secondary color contrast hex code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/theme#secondary_color_contrast_hex Theme#secondary_color_contrast_hex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/theme#secondary_color_contrast_hex Theme#secondary_color_contrast_hex}
 
 ---
 
@@ -1623,7 +1623,7 @@ secondary_color_hex: str
 
 Secondary color hex code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/theme#secondary_color_hex Theme#secondary_color_hex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/theme#secondary_color_hex Theme#secondary_color_hex}
 
 ---
 
@@ -1637,7 +1637,7 @@ sign_in_page_touch_point_variant: str
 
 Variant for the Okta Sign-In Page (`OKTA_DEFAULT`, `BACKGROUND_SECONDARY_COLOR`, `BACKGROUND_IMAGE`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/theme#sign_in_page_touch_point_variant Theme#sign_in_page_touch_point_variant}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/theme#sign_in_page_touch_point_variant Theme#sign_in_page_touch_point_variant}
 
 ---
 
@@ -1653,7 +1653,7 @@ Theme ID - Note: Okta API for theme only reads and updates therefore the okta_th
 
 Do this by setting theme_id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/theme#theme_id Theme#theme_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/theme#theme_id Theme#theme_id}
 
 ---
 

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/template_sms
+// https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/template_sms
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface TemplateSmsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/template_sms#id TemplateSms#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/template_sms#id TemplateSms#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,29 +22,29 @@ export interface TemplateSmsConfig extends cdktf.TerraformMetaArguments {
   /**
   * SMS default template
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/template_sms#template TemplateSms#template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/template_sms#template TemplateSms#template}
   */
   readonly template: string;
   /**
   * SMS template type
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/template_sms#type TemplateSms#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/template_sms#type TemplateSms#type}
   */
   readonly type: string;
   /**
   * translations block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/template_sms#translations TemplateSms#translations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/template_sms#translations TemplateSms#translations}
   */
   readonly translations?: TemplateSmsTranslations[] | cdktf.IResolvable;
 }
 export interface TemplateSmsTranslations {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/template_sms#language TemplateSms#language}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/template_sms#language TemplateSms#language}
   */
   readonly language: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/template_sms#template TemplateSms#template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/template_sms#template TemplateSms#template}
   */
   readonly template: string;
 }
@@ -183,7 +183,7 @@ export class TemplateSmsTranslationsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/template_sms okta_template_sms}
+* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/template_sms okta_template_sms}
 */
 export class TemplateSms extends cdktf.TerraformResource {
 
@@ -199,7 +199,7 @@ export class TemplateSms extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a TemplateSms resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the TemplateSms to import
-  * @param importFromId The id of the existing TemplateSms that should be imported. Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/template_sms#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing TemplateSms that should be imported. Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/template_sms#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the TemplateSms to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -211,7 +211,7 @@ export class TemplateSms extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/template_sms okta_template_sms} Resource
+  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/template_sms okta_template_sms} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -222,7 +222,7 @@ export class TemplateSms extends cdktf.TerraformResource {
       terraformResourceType: 'okta_template_sms',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '4.7.0',
+        providerVersion: '4.8.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

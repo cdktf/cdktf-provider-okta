@@ -4,7 +4,7 @@
 
 ### UserFactorQuestion <a name="UserFactorQuestion" id="@cdktf/provider-okta.userFactorQuestion.UserFactorQuestion"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/user_factor_question okta_user_factor_question}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/user_factor_question okta_user_factor_question}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.userFactorQuestion.UserFactorQuestion.Initializer"></a>
 
@@ -474,7 +474,7 @@ The construct id used in the generated config for the UserFactorQuestion to impo
 
 The id of the existing UserFactorQuestion that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/user_factor_question#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/user_factor_question#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -815,7 +815,7 @@ new UserFactorQuestionConfig {
 | <code><a href="#@cdktf/provider-okta.userFactorQuestion.UserFactorQuestionConfig.property.answer">Answer</a></code> | <code>string</code> | User password security answer. |
 | <code><a href="#@cdktf/provider-okta.userFactorQuestion.UserFactorQuestionConfig.property.key">Key</a></code> | <code>string</code> | Unique key for question. |
 | <code><a href="#@cdktf/provider-okta.userFactorQuestion.UserFactorQuestionConfig.property.userId">UserId</a></code> | <code>string</code> | ID of a Okta User. |
-| <code><a href="#@cdktf/provider-okta.userFactorQuestion.UserFactorQuestionConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/user_factor_question#id UserFactorQuestion#id}. |
+| <code><a href="#@cdktf/provider-okta.userFactorQuestion.UserFactorQuestionConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/user_factor_question#id UserFactorQuestion#id}. |
 
 ---
 
@@ -899,7 +899,7 @@ public string Answer { get; set; }
 
 User password security answer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/user_factor_question#answer UserFactorQuestion#answer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/user_factor_question#answer UserFactorQuestion#answer}
 
 ---
 
@@ -913,7 +913,7 @@ public string Key { get; set; }
 
 Unique key for question.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/user_factor_question#key UserFactorQuestion#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/user_factor_question#key UserFactorQuestion#key}
 
 ---
 
@@ -927,7 +927,7 @@ public string UserId { get; set; }
 
 ID of a Okta User.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/user_factor_question#user_id UserFactorQuestion#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/user_factor_question#user_id UserFactorQuestion#user_id}
 
 ---
 
@@ -939,7 +939,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/user_factor_question#id UserFactorQuestion#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/user_factor_question#id UserFactorQuestion#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
