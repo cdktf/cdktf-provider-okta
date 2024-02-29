@@ -4,7 +4,7 @@
 
 ### UserBaseSchemaProperty <a name="UserBaseSchemaProperty" id="@cdktf/provider-okta.userBaseSchemaProperty.UserBaseSchemaProperty"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/user_base_schema_property okta_user_base_schema_property}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/user_base_schema_property okta_user_base_schema_property}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.userBaseSchemaProperty.UserBaseSchemaProperty.Initializer"></a>
 
@@ -509,7 +509,7 @@ The construct id used in the generated config for the UserBaseSchemaProperty to 
 
 The id of the existing UserBaseSchemaProperty that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/user_base_schema_property#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/user_base_schema_property#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -926,7 +926,7 @@ const userBaseSchemaPropertyConfig: userBaseSchemaProperty.UserBaseSchemaPropert
 | <code><a href="#@cdktf/provider-okta.userBaseSchemaProperty.UserBaseSchemaPropertyConfig.property.index">index</a></code> | <code>string</code> | Subschema unique string identifier. |
 | <code><a href="#@cdktf/provider-okta.userBaseSchemaProperty.UserBaseSchemaPropertyConfig.property.title">title</a></code> | <code>string</code> | Subschema title (display name). |
 | <code><a href="#@cdktf/provider-okta.userBaseSchemaProperty.UserBaseSchemaPropertyConfig.property.type">type</a></code> | <code>string</code> | Subschema type: string, boolean, number, integer, array, or object. |
-| <code><a href="#@cdktf/provider-okta.userBaseSchemaProperty.UserBaseSchemaPropertyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/user_base_schema_property#id UserBaseSchemaProperty#id}. |
+| <code><a href="#@cdktf/provider-okta.userBaseSchemaProperty.UserBaseSchemaPropertyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/user_base_schema_property#id UserBaseSchemaProperty#id}. |
 | <code><a href="#@cdktf/provider-okta.userBaseSchemaProperty.UserBaseSchemaPropertyConfig.property.master">master</a></code> | <code>string</code> | SubSchema profile manager, if not set it will inherit its setting. |
 | <code><a href="#@cdktf/provider-okta.userBaseSchemaProperty.UserBaseSchemaPropertyConfig.property.pattern">pattern</a></code> | <code>string</code> | The validation pattern to use for the subschema. Must be in form of '.+', or '[<pattern>]+' if present.'. |
 | <code><a href="#@cdktf/provider-okta.userBaseSchemaProperty.UserBaseSchemaPropertyConfig.property.permissions">permissions</a></code> | <code>string</code> | SubSchema permissions: HIDE, READ_ONLY, or READ_WRITE. |
@@ -1015,7 +1015,7 @@ public readonly index: string;
 
 Subschema unique string identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/user_base_schema_property#index UserBaseSchemaProperty#index}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/user_base_schema_property#index UserBaseSchemaProperty#index}
 
 ---
 
@@ -1029,7 +1029,7 @@ public readonly title: string;
 
 Subschema title (display name).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/user_base_schema_property#title UserBaseSchemaProperty#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/user_base_schema_property#title UserBaseSchemaProperty#title}
 
 ---
 
@@ -1043,7 +1043,7 @@ public readonly type: string;
 
 Subschema type: string, boolean, number, integer, array, or object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/user_base_schema_property#type UserBaseSchemaProperty#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/user_base_schema_property#type UserBaseSchemaProperty#type}
 
 ---
 
@@ -1055,7 +1055,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/user_base_schema_property#id UserBaseSchemaProperty#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/user_base_schema_property#id UserBaseSchemaProperty#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1072,7 +1072,7 @@ public readonly master: string;
 
 SubSchema profile manager, if not set it will inherit its setting.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/user_base_schema_property#master UserBaseSchemaProperty#master}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/user_base_schema_property#master UserBaseSchemaProperty#master}
 
 ---
 
@@ -1086,7 +1086,7 @@ public readonly pattern: string;
 
 The validation pattern to use for the subschema. Must be in form of '.+', or '[<pattern>]+' if present.'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/user_base_schema_property#pattern UserBaseSchemaProperty#pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/user_base_schema_property#pattern UserBaseSchemaProperty#pattern}
 
 ---
 
@@ -1100,7 +1100,7 @@ public readonly permissions: string;
 
 SubSchema permissions: HIDE, READ_ONLY, or READ_WRITE.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/user_base_schema_property#permissions UserBaseSchemaProperty#permissions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/user_base_schema_property#permissions UserBaseSchemaProperty#permissions}
 
 ---
 
@@ -1114,7 +1114,7 @@ public readonly required: boolean | IResolvable;
 
 Whether the subschema is required.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/user_base_schema_property#required UserBaseSchemaProperty#required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/user_base_schema_property#required UserBaseSchemaProperty#required}
 
 ---
 
@@ -1128,7 +1128,7 @@ public readonly userType: string;
 
 Custom subschema user type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.7.0/docs/resources/user_base_schema_property#user_type UserBaseSchemaProperty#user_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/user_base_schema_property#user_type UserBaseSchemaProperty#user_type}
 
 ---
 
