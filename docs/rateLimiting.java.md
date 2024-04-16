@@ -4,7 +4,7 @@
 
 ### RateLimiting <a name="RateLimiting" id="@cdktf/provider-okta.rateLimiting.RateLimiting"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/rate_limiting okta_rate_limiting}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/rate_limiting okta_rate_limiting}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.rateLimiting.RateLimiting.Initializer"></a>
 
@@ -44,8 +44,8 @@ RateLimiting.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-okta.rateLimiting.RateLimiting.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.rateLimiting.RateLimiting.Initializer.parameter.authorize">authorize</a></code> | <code>java.lang.String</code> | Called during authentication. |
 | <code><a href="#@cdktf/provider-okta.rateLimiting.RateLimiting.Initializer.parameter.login">login</a></code> | <code>java.lang.String</code> | Called when accessing the Okta hosted login page. |
-| <code><a href="#@cdktf/provider-okta.rateLimiting.RateLimiting.Initializer.parameter.communicationsEnabled">communicationsEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Enables rate limit warning, violation, notification emails and banners when this org meets rate limits. |
-| <code><a href="#@cdktf/provider-okta.rateLimiting.RateLimiting.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/rate_limiting#id RateLimiting#id}. |
+| <code><a href="#@cdktf/provider-okta.rateLimiting.RateLimiting.Initializer.parameter.communicationsEnabled">communicationsEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Enable or disable rate limiting communications. By default, it is `true`. |
+| <code><a href="#@cdktf/provider-okta.rateLimiting.RateLimiting.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/rate_limiting#id RateLimiting#id}. |
 
 ---
 
@@ -115,7 +115,9 @@ Must be unique amongst siblings in the same scope
 
 Called during authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/rate_limiting#authorize RateLimiting#authorize}
+Valid values: `ENFORCE` *(Enforce limit and log per client (recommended))*, `DISABLE` *(Do nothing (not recommended))*, `PREVIEW` *(Log per client)*.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/rate_limiting#authorize RateLimiting#authorize}
 
 ---
 
@@ -125,7 +127,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Called when accessing the Okta hosted login page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/rate_limiting#login RateLimiting#login}
+Valid values: `ENFORCE` *(Enforce limit and log per client (recommended))*, `DISABLE` *(Do nothing (not recommended))*, `PREVIEW` *(Log per client)*.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/rate_limiting#login RateLimiting#login}
 
 ---
 
@@ -133,9 +137,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Enables rate limit warning, violation, notification emails and banners when this org meets rate limits.
+Enable or disable rate limiting communications. By default, it is `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/rate_limiting#communications_enabled RateLimiting#communications_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/rate_limiting#communications_enabled RateLimiting#communications_enabled}
 
 ---
 
@@ -143,7 +147,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/rate_limiting#id RateLimiting#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/rate_limiting#id RateLimiting#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -587,7 +591,7 @@ The construct id used in the generated config for the RateLimiting to import.
 
 The id of the existing RateLimiting that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/rate_limiting#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/rate_limiting#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -910,8 +914,8 @@ RateLimitingConfig.builder()
 | <code><a href="#@cdktf/provider-okta.rateLimiting.RateLimitingConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.rateLimiting.RateLimitingConfig.property.authorize">authorize</a></code> | <code>java.lang.String</code> | Called during authentication. |
 | <code><a href="#@cdktf/provider-okta.rateLimiting.RateLimitingConfig.property.login">login</a></code> | <code>java.lang.String</code> | Called when accessing the Okta hosted login page. |
-| <code><a href="#@cdktf/provider-okta.rateLimiting.RateLimitingConfig.property.communicationsEnabled">communicationsEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Enables rate limit warning, violation, notification emails and banners when this org meets rate limits. |
-| <code><a href="#@cdktf/provider-okta.rateLimiting.RateLimitingConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/rate_limiting#id RateLimiting#id}. |
+| <code><a href="#@cdktf/provider-okta.rateLimiting.RateLimitingConfig.property.communicationsEnabled">communicationsEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Enable or disable rate limiting communications. By default, it is `true`. |
+| <code><a href="#@cdktf/provider-okta.rateLimiting.RateLimitingConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/rate_limiting#id RateLimiting#id}. |
 
 ---
 
@@ -995,7 +999,9 @@ public java.lang.String getAuthorize();
 
 Called during authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/rate_limiting#authorize RateLimiting#authorize}
+Valid values: `ENFORCE` *(Enforce limit and log per client (recommended))*, `DISABLE` *(Do nothing (not recommended))*, `PREVIEW` *(Log per client)*.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/rate_limiting#authorize RateLimiting#authorize}
 
 ---
 
@@ -1009,7 +1015,9 @@ public java.lang.String getLogin();
 
 Called when accessing the Okta hosted login page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/rate_limiting#login RateLimiting#login}
+Valid values: `ENFORCE` *(Enforce limit and log per client (recommended))*, `DISABLE` *(Do nothing (not recommended))*, `PREVIEW` *(Log per client)*.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/rate_limiting#login RateLimiting#login}
 
 ---
 
@@ -1021,9 +1029,9 @@ public java.lang.Object getCommunicationsEnabled();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Enables rate limit warning, violation, notification emails and banners when this org meets rate limits.
+Enable or disable rate limiting communications. By default, it is `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/rate_limiting#communications_enabled RateLimiting#communications_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/rate_limiting#communications_enabled RateLimiting#communications_enabled}
 
 ---
 
@@ -1035,7 +1043,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/rate_limiting#id RateLimiting#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/rate_limiting#id RateLimiting#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

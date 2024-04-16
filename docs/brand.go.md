@@ -4,12 +4,12 @@
 
 ### Brand <a name="Brand" id="@cdktf/provider-okta.brand.Brand"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/brand okta_brand}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/brand okta_brand}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.brand.Brand.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/brand"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/brand"
 
 brand.NewBrand(scope Construct, id *string, config BrandConfig) Brand
 ```
@@ -434,7 +434,7 @@ func ResetRemovePoweredByOkta()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.brand.Brand.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/brand"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/brand"
 
 brand.Brand_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.brand.Brand.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/brand"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/brand"
 
 brand.Brand_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ brand.Brand_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.brand.Brand.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/brand"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/brand"
 
 brand.Brand_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ brand.Brand_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.brand.Brand.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/brand"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/brand"
 
 brand.Brand_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -523,7 +523,7 @@ The construct id used in the generated config for the Brand to import.
 
 The id of the existing Brand that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/brand#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/brand#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -965,7 +965,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.brand.BrandConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/brand"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/brand"
 
 &brand.BrandConfig {
 	Connection: interface{},
@@ -998,8 +998,8 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/brand"
 | <code><a href="#@cdktf/provider-okta.brand.BrandConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.brand.BrandConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.brand.BrandConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.brand.BrandConfig.property.name">Name</a></code> | <code>*string</code> | Brand name. |
-| <code><a href="#@cdktf/provider-okta.brand.BrandConfig.property.agreeToCustomPrivacyPolicy">AgreeToCustomPrivacyPolicy</a></code> | <code>interface{}</code> | Consent for updating the custom privacy policy URL. |
+| <code><a href="#@cdktf/provider-okta.brand.BrandConfig.property.name">Name</a></code> | <code>*string</code> | Name of the brand. |
+| <code><a href="#@cdktf/provider-okta.brand.BrandConfig.property.agreeToCustomPrivacyPolicy">AgreeToCustomPrivacyPolicy</a></code> | <code>interface{}</code> | Is a required input flag with when changing custom_privacy_url, shouldn't be considered as a readable property. |
 | <code><a href="#@cdktf/provider-okta.brand.BrandConfig.property.brandId">BrandId</a></code> | <code>*string</code> | Brand ID - Note: Okta API for brands only reads and updates therefore the okta_brand resource needs to act as a quasi data source. |
 | <code><a href="#@cdktf/provider-okta.brand.BrandConfig.property.customPrivacyPolicyUrl">CustomPrivacyPolicyUrl</a></code> | <code>*string</code> | Custom privacy policy URL. |
 | <code><a href="#@cdktf/provider-okta.brand.BrandConfig.property.defaultAppAppInstanceId">DefaultAppAppInstanceId</a></code> | <code>*string</code> | Default app app instance id. |
@@ -1088,9 +1088,9 @@ Name *string
 
 - *Type:* *string
 
-Brand name.
+Name of the brand.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/brand#name Brand#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/brand#name Brand#name}
 
 ---
 
@@ -1102,9 +1102,9 @@ AgreeToCustomPrivacyPolicy interface{}
 
 - *Type:* interface{}
 
-Consent for updating the custom privacy policy URL.
+Is a required input flag with when changing custom_privacy_url, shouldn't be considered as a readable property.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/brand#agree_to_custom_privacy_policy Brand#agree_to_custom_privacy_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/brand#agree_to_custom_privacy_policy Brand#agree_to_custom_privacy_policy}
 
 ---
 
@@ -1118,9 +1118,9 @@ BrandId *string
 
 Brand ID - Note: Okta API for brands only reads and updates therefore the okta_brand resource needs to act as a quasi data source.
 
-Do this by setting brand_id.
+Do this by setting brand_id. `DEPRECATED`: Okta has fully support brand creation, this attribute is a no op and will be removed
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/brand#brand_id Brand#brand_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/brand#brand_id Brand#brand_id}
 
 ---
 
@@ -1134,7 +1134,7 @@ CustomPrivacyPolicyUrl *string
 
 Custom privacy policy URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/brand#custom_privacy_policy_url Brand#custom_privacy_policy_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/brand#custom_privacy_policy_url Brand#custom_privacy_policy_url}
 
 ---
 
@@ -1148,7 +1148,7 @@ DefaultAppAppInstanceId *string
 
 Default app app instance id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/brand#default_app_app_instance_id Brand#default_app_app_instance_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/brand#default_app_app_instance_id Brand#default_app_app_instance_id}
 
 ---
 
@@ -1162,7 +1162,7 @@ DefaultAppAppLinkName *string
 
 Default app app link name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/brand#default_app_app_link_name Brand#default_app_app_link_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/brand#default_app_app_link_name Brand#default_app_app_link_name}
 
 ---
 
@@ -1176,7 +1176,7 @@ DefaultAppClassicApplicationUri *string
 
 Default app classic application uri.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/brand#default_app_classic_application_uri Brand#default_app_classic_application_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/brand#default_app_classic_application_uri Brand#default_app_classic_application_uri}
 
 ---
 
@@ -1190,7 +1190,7 @@ Locale *string
 
 The language specified as an IETF BCP 47 language tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/brand#locale Brand#locale}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/brand#locale Brand#locale}
 
 ---
 
@@ -1204,7 +1204,7 @@ RemovePoweredByOkta interface{}
 
 Removes "Powered by Okta" from the Okta-hosted sign-in page and "© 2021 Okta, Inc." from the Okta End-User Dashboard.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/brand#remove_powered_by_okta Brand#remove_powered_by_okta}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/brand#remove_powered_by_okta Brand#remove_powered_by_okta}
 
 ---
 

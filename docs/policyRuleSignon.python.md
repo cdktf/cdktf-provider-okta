@@ -4,7 +4,7 @@
 
 ### PolicyRuleSignon <a name="PolicyRuleSignon" id="@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon okta_policy_rule_signon}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon okta_policy_rule_signon}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer"></a>
 
@@ -40,6 +40,7 @@ policyRuleSignon.PolicyRuleSignon(
   primary_factor: str = None,
   priority: typing.Union[int, float] = None,
   risc_level: str = None,
+  risk_level: str = None,
   session_idle: typing.Union[int, float] = None,
   session_lifetime: typing.Union[int, float] = None,
   session_persistent: typing.Union[bool, IResolvable] = None,
@@ -60,28 +61,29 @@ policyRuleSignon.PolicyRuleSignon(
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.name">name</a></code> | <code>str</code> | Policy Rule Name. |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.access">access</a></code> | <code>str</code> | Allow or deny access based on the rule conditions: ALLOW, DENY or CHALLENGE. |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.authtype">authtype</a></code> | <code>str</code> | Authentication entrypoint: ANY, RADIUS or LDAP_INTERFACE. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.access">access</a></code> | <code>str</code> | Allow or deny access based on the rule conditions: `ALLOW`, `DENY` or `CHALLENGE`. Default: `ALLOW`. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.authtype">authtype</a></code> | <code>str</code> | Authentication entrypoint: `ANY`, `RADIUS` or `LDAP_INTERFACE`. Default: `ANY`. |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.behaviors">behaviors</a></code> | <code>typing.List[str]</code> | List of behavior IDs. |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.factorSequence">factor_sequence</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequence">PolicyRuleSignonFactorSequence</a>]]</code> | factor_sequence block. |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#id PolicyRuleSignon#id}. |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.identityProvider">identity_provider</a></code> | <code>str</code> | Apply rule based on the IdP used: ANY, OKTA or SPECIFIC_IDP. |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.identityProviderIds">identity_provider_ids</a></code> | <code>typing.List[str]</code> | When identity_provider is SPECIFIC_IDP then this is the list of IdP IDs to apply the rule on. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#id PolicyRuleSignon#id}. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.identityProvider">identity_provider</a></code> | <code>str</code> | Apply rule based on the IdP used: `ANY`, `OKTA` or `SPECIFIC_IDP`. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.identityProviderIds">identity_provider_ids</a></code> | <code>typing.List[str]</code> | When identity_provider is `SPECIFIC_IDP` then this is the list of IdP IDs to apply the rule on. |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.mfaLifetime">mfa_lifetime</a></code> | <code>typing.Union[int, float]</code> | Elapsed time before the next MFA challenge. |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.mfaPrompt">mfa_prompt</a></code> | <code>str</code> | Prompt for MFA based on the device used, a factor session lifetime, or every sign-on attempt: DEVICE, SESSION or ALWAYS. |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.mfaRememberDevice">mfa_remember_device</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Remember MFA device. |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.mfaRequired">mfa_required</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Require MFA. |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.networkConnection">network_connection</a></code> | <code>str</code> | Network selection mode: ANYWHERE, ZONE, ON_NETWORK, or OFF_NETWORK. |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.networkExcludes">network_excludes</a></code> | <code>typing.List[str]</code> | The zones to exclude. |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.networkIncludes">network_includes</a></code> | <code>typing.List[str]</code> | The zones to include. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.mfaPrompt">mfa_prompt</a></code> | <code>str</code> | Prompt for MFA based on the device used, a factor session lifetime, or every sign-on attempt: `DEVICE`, `SESSION` or`ALWAYS`. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.mfaRememberDevice">mfa_remember_device</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Remember MFA device. Default: `false`. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.mfaRequired">mfa_required</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Require MFA. Default: `false`. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.networkConnection">network_connection</a></code> | <code>str</code> | Network selection mode: `ANYWHERE`, `ZONE`, `ON_NETWORK`, or `OFF_NETWORK`. Default: `ANYWHERE`. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.networkExcludes">network_excludes</a></code> | <code>typing.List[str]</code> | Required if `network_connection` = `ZONE`. Indicates the network zones to exclude. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.networkIncludes">network_includes</a></code> | <code>typing.List[str]</code> | Required if `network_connection` = `ZONE`. Indicates the network zones to include. |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.policyId">policy_id</a></code> | <code>str</code> | Policy ID of the Rule. |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.primaryFactor">primary_factor</a></code> | <code>str</code> | Primary factor. |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.priority">priority</a></code> | <code>typing.Union[int, float]</code> | Policy Rule Priority, this attribute can be set to a valid priority. |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.riscLevel">risc_level</a></code> | <code>str</code> | Risc level: ANY, LOW, MEDIUM or HIGH. |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.sessionIdle">session_idle</a></code> | <code>typing.Union[int, float]</code> | Max minutes a session can be idle. |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.sessionLifetime">session_lifetime</a></code> | <code>typing.Union[int, float]</code> | Max minutes a session is active: Disable = 0. |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.sessionPersistent">session_persistent</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether session cookies will last across browser sessions. Okta Administrators can never have persistent session cookies. |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.status">status</a></code> | <code>str</code> | Policy Rule Status: ACTIVE or INACTIVE. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.primaryFactor">primary_factor</a></code> | <code>str</code> | Rule's primary factor. **WARNING** Ony works as a part of the Identity Engine. Valid values: `PASSWORD_IDP_ANY_FACTOR`, `PASSWORD_IDP`. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.priority">priority</a></code> | <code>typing.Union[int, float]</code> | Rule priority. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.riscLevel">risc_level</a></code> | <code>str</code> | Risc level: ANY, LOW, MEDIUM or HIGH. Default: `ANY`. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.riskLevel">risk_level</a></code> | <code>str</code> | Risk level: ANY, LOW, MEDIUM or HIGH. Default: `ANY`. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.sessionIdle">session_idle</a></code> | <code>typing.Union[int, float]</code> | Max minutes a session can be idle. Default: `120`. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.sessionLifetime">session_lifetime</a></code> | <code>typing.Union[int, float]</code> | Max minutes a session is active: Disable = 0. Default: `120`. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.sessionPersistent">session_persistent</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether session cookies will last across browser sessions. Okta Administrators can never have persistent session cookies. Default: `false`. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.status">status</a></code> | <code>str</code> | Policy Rule Status: `ACTIVE` or `INACTIVE`. Default: `ACTIVE`. |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.usersExcluded">users_excluded</a></code> | <code>typing.List[str]</code> | Set of User IDs to Exclude. |
 
 ---
@@ -152,7 +154,7 @@ Must be unique amongst siblings in the same scope
 
 Policy Rule Name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#name PolicyRuleSignon#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#name PolicyRuleSignon#name}
 
 ---
 
@@ -160,9 +162,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* str
 
-Allow or deny access based on the rule conditions: ALLOW, DENY or CHALLENGE.
+Allow or deny access based on the rule conditions: `ALLOW`, `DENY` or `CHALLENGE`. Default: `ALLOW`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#access PolicyRuleSignon#access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#access PolicyRuleSignon#access}
 
 ---
 
@@ -170,9 +172,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* str
 
-Authentication entrypoint: ANY, RADIUS or LDAP_INTERFACE.
+Authentication entrypoint: `ANY`, `RADIUS` or `LDAP_INTERFACE`. Default: `ANY`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#authtype PolicyRuleSignon#authtype}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#authtype PolicyRuleSignon#authtype}
 
 ---
 
@@ -182,7 +184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 List of behavior IDs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#behaviors PolicyRuleSignon#behaviors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#behaviors PolicyRuleSignon#behaviors}
 
 ---
 
@@ -192,7 +194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 factor_sequence block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#factor_sequence PolicyRuleSignon#factor_sequence}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#factor_sequence PolicyRuleSignon#factor_sequence}
 
 ---
 
@@ -200,7 +202,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#id PolicyRuleSignon#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#id PolicyRuleSignon#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -211,9 +213,11 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Apply rule based on the IdP used: ANY, OKTA or SPECIFIC_IDP.
+Apply rule based on the IdP used: `ANY`, `OKTA` or `SPECIFIC_IDP`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#identity_provider PolicyRuleSignon#identity_provider}
+Default: `ANY`. ~> **WARNING**: Use of `identity_provider` requires a feature flag to be enabled.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#identity_provider PolicyRuleSignon#identity_provider}
 
 ---
 
@@ -221,9 +225,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* typing.List[str]
 
-When identity_provider is SPECIFIC_IDP then this is the list of IdP IDs to apply the rule on.
+When identity_provider is `SPECIFIC_IDP` then this is the list of IdP IDs to apply the rule on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#identity_provider_ids PolicyRuleSignon#identity_provider_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#identity_provider_ids PolicyRuleSignon#identity_provider_ids}
 
 ---
 
@@ -233,7 +237,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Elapsed time before the next MFA challenge.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#mfa_lifetime PolicyRuleSignon#mfa_lifetime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#mfa_lifetime PolicyRuleSignon#mfa_lifetime}
 
 ---
 
@@ -241,9 +245,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* str
 
-Prompt for MFA based on the device used, a factor session lifetime, or every sign-on attempt: DEVICE, SESSION or ALWAYS.
+Prompt for MFA based on the device used, a factor session lifetime, or every sign-on attempt: `DEVICE`, `SESSION` or`ALWAYS`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#mfa_prompt PolicyRuleSignon#mfa_prompt}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#mfa_prompt PolicyRuleSignon#mfa_prompt}
 
 ---
 
@@ -251,9 +255,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Remember MFA device.
+Remember MFA device. Default: `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#mfa_remember_device PolicyRuleSignon#mfa_remember_device}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#mfa_remember_device PolicyRuleSignon#mfa_remember_device}
 
 ---
 
@@ -261,9 +265,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Require MFA.
+Require MFA. Default: `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#mfa_required PolicyRuleSignon#mfa_required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#mfa_required PolicyRuleSignon#mfa_required}
 
 ---
 
@@ -271,9 +275,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* str
 
-Network selection mode: ANYWHERE, ZONE, ON_NETWORK, or OFF_NETWORK.
+Network selection mode: `ANYWHERE`, `ZONE`, `ON_NETWORK`, or `OFF_NETWORK`. Default: `ANYWHERE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#network_connection PolicyRuleSignon#network_connection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#network_connection PolicyRuleSignon#network_connection}
 
 ---
 
@@ -281,9 +285,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* typing.List[str]
 
-The zones to exclude.
+Required if `network_connection` = `ZONE`. Indicates the network zones to exclude.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#network_excludes PolicyRuleSignon#network_excludes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#network_excludes PolicyRuleSignon#network_excludes}
 
 ---
 
@@ -291,9 +295,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* typing.List[str]
 
-The zones to include.
+Required if `network_connection` = `ZONE`. Indicates the network zones to include.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#network_includes PolicyRuleSignon#network_includes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#network_includes PolicyRuleSignon#network_includes}
 
 ---
 
@@ -303,7 +307,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Policy ID of the Rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#policy_id PolicyRuleSignon#policy_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#policy_id PolicyRuleSignon#policy_id}
 
 ---
 
@@ -311,9 +315,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* str
 
-Primary factor.
+Rule's primary factor. **WARNING** Ony works as a part of the Identity Engine. Valid values: `PASSWORD_IDP_ANY_FACTOR`, `PASSWORD_IDP`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#primary_factor PolicyRuleSignon#primary_factor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#primary_factor PolicyRuleSignon#primary_factor}
 
 ---
 
@@ -321,11 +325,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* typing.Union[int, float]
 
-Policy Rule Priority, this attribute can be set to a valid priority.
+Rule priority.
 
-To avoid endless diff situation we error if an invalid priority is provided. API defaults it to the last (lowest) if not there.
+This attribute can be set to a valid priority. To avoid an endless diff situation an error is thrown if an invalid property is provided. The Okta API defaults to the last (lowest) if not provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#priority PolicyRuleSignon#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#priority PolicyRuleSignon#priority}
 
 ---
 
@@ -333,9 +337,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* str
 
-Risc level: ANY, LOW, MEDIUM or HIGH.
+Risc level: ANY, LOW, MEDIUM or HIGH. Default: `ANY`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#risc_level PolicyRuleSignon#risc_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#risc_level PolicyRuleSignon#risc_level}
+
+---
+
+##### `risk_level`<sup>Optional</sup> <a name="risk_level" id="@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.riskLevel"></a>
+
+- *Type:* str
+
+Risk level: ANY, LOW, MEDIUM or HIGH. Default: `ANY`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#risk_level PolicyRuleSignon#risk_level}
 
 ---
 
@@ -343,9 +357,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* typing.Union[int, float]
 
-Max minutes a session can be idle.
+Max minutes a session can be idle. Default: `120`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#session_idle PolicyRuleSignon#session_idle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#session_idle PolicyRuleSignon#session_idle}
 
 ---
 
@@ -353,9 +367,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* typing.Union[int, float]
 
-Max minutes a session is active: Disable = 0.
+Max minutes a session is active: Disable = 0. Default: `120`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#session_lifetime PolicyRuleSignon#session_lifetime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#session_lifetime PolicyRuleSignon#session_lifetime}
 
 ---
 
@@ -363,9 +377,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Whether session cookies will last across browser sessions. Okta Administrators can never have persistent session cookies.
+Whether session cookies will last across browser sessions. Okta Administrators can never have persistent session cookies. Default: `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#session_persistent PolicyRuleSignon#session_persistent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#session_persistent PolicyRuleSignon#session_persistent}
 
 ---
 
@@ -373,9 +387,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* str
 
-Policy Rule Status: ACTIVE or INACTIVE.
+Policy Rule Status: `ACTIVE` or `INACTIVE`. Default: `ACTIVE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#status PolicyRuleSignon#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#status PolicyRuleSignon#status}
 
 ---
 
@@ -385,7 +399,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Set of User IDs to Exclude.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#users_excluded PolicyRuleSignon#users_excluded}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#users_excluded PolicyRuleSignon#users_excluded}
 
 ---
 
@@ -435,6 +449,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.resetPrimaryFactor">reset_primary_factor</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.resetPriority">reset_priority</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.resetRiscLevel">reset_risc_level</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.resetRiskLevel">reset_risk_level</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.resetSessionIdle">reset_session_idle</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.resetSessionLifetime">reset_session_lifetime</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.resetSessionPersistent">reset_session_persistent</a></code> | *No description.* |
@@ -890,6 +905,12 @@ def reset_priority() -> None
 def reset_risc_level() -> None
 ```
 
+##### `reset_risk_level` <a name="reset_risk_level" id="@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.resetRiskLevel"></a>
+
+```python
+def reset_risk_level() -> None
+```
+
 ##### `reset_session_idle` <a name="reset_session_idle" id="@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.resetSessionIdle"></a>
 
 ```python
@@ -1034,7 +1055,7 @@ The construct id used in the generated config for the PolicyRuleSignon to import
 
 The id of the existing PolicyRuleSignon that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1084,6 +1105,7 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.primaryFactorInput">primary_factor_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.priorityInput">priority_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.riscLevelInput">risc_level_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.riskLevelInput">risk_level_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.sessionIdleInput">session_idle_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.sessionLifetimeInput">session_lifetime_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.sessionPersistentInput">session_persistent_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
@@ -1107,6 +1129,7 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.primaryFactor">primary_factor</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.priority">priority</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.riscLevel">risc_level</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.riskLevel">risk_level</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.sessionIdle">session_idle</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.sessionLifetime">session_lifetime</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.sessionPersistent">session_persistent</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
@@ -1457,6 +1480,16 @@ risc_level_input: str
 
 ---
 
+##### `risk_level_input`<sup>Optional</sup> <a name="risk_level_input" id="@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.riskLevelInput"></a>
+
+```python
+risk_level_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `session_idle_input`<sup>Optional</sup> <a name="session_idle_input" id="@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.sessionIdleInput"></a>
 
 ```python
@@ -1687,6 +1720,16 @@ risc_level: str
 
 ---
 
+##### `risk_level`<sup>Required</sup> <a name="risk_level" id="@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.riskLevel"></a>
+
+```python
+risk_level: str
+```
+
+- *Type:* str
+
+---
+
 ##### `session_idle`<sup>Required</sup> <a name="session_idle" id="@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.sessionIdle"></a>
 
 ```python
@@ -1791,6 +1834,7 @@ policyRuleSignon.PolicyRuleSignonConfig(
   primary_factor: str = None,
   priority: typing.Union[int, float] = None,
   risc_level: str = None,
+  risk_level: str = None,
   session_idle: typing.Union[int, float] = None,
   session_lifetime: typing.Union[int, float] = None,
   session_persistent: typing.Union[bool, IResolvable] = None,
@@ -1811,28 +1855,29 @@ policyRuleSignon.PolicyRuleSignonConfig(
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.name">name</a></code> | <code>str</code> | Policy Rule Name. |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.access">access</a></code> | <code>str</code> | Allow or deny access based on the rule conditions: ALLOW, DENY or CHALLENGE. |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.authtype">authtype</a></code> | <code>str</code> | Authentication entrypoint: ANY, RADIUS or LDAP_INTERFACE. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.access">access</a></code> | <code>str</code> | Allow or deny access based on the rule conditions: `ALLOW`, `DENY` or `CHALLENGE`. Default: `ALLOW`. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.authtype">authtype</a></code> | <code>str</code> | Authentication entrypoint: `ANY`, `RADIUS` or `LDAP_INTERFACE`. Default: `ANY`. |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.behaviors">behaviors</a></code> | <code>typing.List[str]</code> | List of behavior IDs. |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.factorSequence">factor_sequence</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequence">PolicyRuleSignonFactorSequence</a>]]</code> | factor_sequence block. |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#id PolicyRuleSignon#id}. |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.identityProvider">identity_provider</a></code> | <code>str</code> | Apply rule based on the IdP used: ANY, OKTA or SPECIFIC_IDP. |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.identityProviderIds">identity_provider_ids</a></code> | <code>typing.List[str]</code> | When identity_provider is SPECIFIC_IDP then this is the list of IdP IDs to apply the rule on. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#id PolicyRuleSignon#id}. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.identityProvider">identity_provider</a></code> | <code>str</code> | Apply rule based on the IdP used: `ANY`, `OKTA` or `SPECIFIC_IDP`. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.identityProviderIds">identity_provider_ids</a></code> | <code>typing.List[str]</code> | When identity_provider is `SPECIFIC_IDP` then this is the list of IdP IDs to apply the rule on. |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.mfaLifetime">mfa_lifetime</a></code> | <code>typing.Union[int, float]</code> | Elapsed time before the next MFA challenge. |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.mfaPrompt">mfa_prompt</a></code> | <code>str</code> | Prompt for MFA based on the device used, a factor session lifetime, or every sign-on attempt: DEVICE, SESSION or ALWAYS. |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.mfaRememberDevice">mfa_remember_device</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Remember MFA device. |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.mfaRequired">mfa_required</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Require MFA. |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.networkConnection">network_connection</a></code> | <code>str</code> | Network selection mode: ANYWHERE, ZONE, ON_NETWORK, or OFF_NETWORK. |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.networkExcludes">network_excludes</a></code> | <code>typing.List[str]</code> | The zones to exclude. |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.networkIncludes">network_includes</a></code> | <code>typing.List[str]</code> | The zones to include. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.mfaPrompt">mfa_prompt</a></code> | <code>str</code> | Prompt for MFA based on the device used, a factor session lifetime, or every sign-on attempt: `DEVICE`, `SESSION` or`ALWAYS`. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.mfaRememberDevice">mfa_remember_device</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Remember MFA device. Default: `false`. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.mfaRequired">mfa_required</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Require MFA. Default: `false`. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.networkConnection">network_connection</a></code> | <code>str</code> | Network selection mode: `ANYWHERE`, `ZONE`, `ON_NETWORK`, or `OFF_NETWORK`. Default: `ANYWHERE`. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.networkExcludes">network_excludes</a></code> | <code>typing.List[str]</code> | Required if `network_connection` = `ZONE`. Indicates the network zones to exclude. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.networkIncludes">network_includes</a></code> | <code>typing.List[str]</code> | Required if `network_connection` = `ZONE`. Indicates the network zones to include. |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.policyId">policy_id</a></code> | <code>str</code> | Policy ID of the Rule. |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.primaryFactor">primary_factor</a></code> | <code>str</code> | Primary factor. |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.priority">priority</a></code> | <code>typing.Union[int, float]</code> | Policy Rule Priority, this attribute can be set to a valid priority. |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.riscLevel">risc_level</a></code> | <code>str</code> | Risc level: ANY, LOW, MEDIUM or HIGH. |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.sessionIdle">session_idle</a></code> | <code>typing.Union[int, float]</code> | Max minutes a session can be idle. |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.sessionLifetime">session_lifetime</a></code> | <code>typing.Union[int, float]</code> | Max minutes a session is active: Disable = 0. |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.sessionPersistent">session_persistent</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether session cookies will last across browser sessions. Okta Administrators can never have persistent session cookies. |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.status">status</a></code> | <code>str</code> | Policy Rule Status: ACTIVE or INACTIVE. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.primaryFactor">primary_factor</a></code> | <code>str</code> | Rule's primary factor. **WARNING** Ony works as a part of the Identity Engine. Valid values: `PASSWORD_IDP_ANY_FACTOR`, `PASSWORD_IDP`. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.priority">priority</a></code> | <code>typing.Union[int, float]</code> | Rule priority. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.riscLevel">risc_level</a></code> | <code>str</code> | Risc level: ANY, LOW, MEDIUM or HIGH. Default: `ANY`. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.riskLevel">risk_level</a></code> | <code>str</code> | Risk level: ANY, LOW, MEDIUM or HIGH. Default: `ANY`. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.sessionIdle">session_idle</a></code> | <code>typing.Union[int, float]</code> | Max minutes a session can be idle. Default: `120`. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.sessionLifetime">session_lifetime</a></code> | <code>typing.Union[int, float]</code> | Max minutes a session is active: Disable = 0. Default: `120`. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.sessionPersistent">session_persistent</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether session cookies will last across browser sessions. Okta Administrators can never have persistent session cookies. Default: `false`. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.status">status</a></code> | <code>str</code> | Policy Rule Status: `ACTIVE` or `INACTIVE`. Default: `ACTIVE`. |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.usersExcluded">users_excluded</a></code> | <code>typing.List[str]</code> | Set of User IDs to Exclude. |
 
 ---
@@ -1917,7 +1962,7 @@ name: str
 
 Policy Rule Name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#name PolicyRuleSignon#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#name PolicyRuleSignon#name}
 
 ---
 
@@ -1929,9 +1974,9 @@ access: str
 
 - *Type:* str
 
-Allow or deny access based on the rule conditions: ALLOW, DENY or CHALLENGE.
+Allow or deny access based on the rule conditions: `ALLOW`, `DENY` or `CHALLENGE`. Default: `ALLOW`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#access PolicyRuleSignon#access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#access PolicyRuleSignon#access}
 
 ---
 
@@ -1943,9 +1988,9 @@ authtype: str
 
 - *Type:* str
 
-Authentication entrypoint: ANY, RADIUS or LDAP_INTERFACE.
+Authentication entrypoint: `ANY`, `RADIUS` or `LDAP_INTERFACE`. Default: `ANY`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#authtype PolicyRuleSignon#authtype}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#authtype PolicyRuleSignon#authtype}
 
 ---
 
@@ -1959,7 +2004,7 @@ behaviors: typing.List[str]
 
 List of behavior IDs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#behaviors PolicyRuleSignon#behaviors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#behaviors PolicyRuleSignon#behaviors}
 
 ---
 
@@ -1973,7 +2018,7 @@ factor_sequence: typing.Union[IResolvable, typing.List[PolicyRuleSignonFactorSeq
 
 factor_sequence block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#factor_sequence PolicyRuleSignon#factor_sequence}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#factor_sequence PolicyRuleSignon#factor_sequence}
 
 ---
 
@@ -1985,7 +2030,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#id PolicyRuleSignon#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#id PolicyRuleSignon#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2000,9 +2045,11 @@ identity_provider: str
 
 - *Type:* str
 
-Apply rule based on the IdP used: ANY, OKTA or SPECIFIC_IDP.
+Apply rule based on the IdP used: `ANY`, `OKTA` or `SPECIFIC_IDP`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#identity_provider PolicyRuleSignon#identity_provider}
+Default: `ANY`. ~> **WARNING**: Use of `identity_provider` requires a feature flag to be enabled.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#identity_provider PolicyRuleSignon#identity_provider}
 
 ---
 
@@ -2014,9 +2061,9 @@ identity_provider_ids: typing.List[str]
 
 - *Type:* typing.List[str]
 
-When identity_provider is SPECIFIC_IDP then this is the list of IdP IDs to apply the rule on.
+When identity_provider is `SPECIFIC_IDP` then this is the list of IdP IDs to apply the rule on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#identity_provider_ids PolicyRuleSignon#identity_provider_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#identity_provider_ids PolicyRuleSignon#identity_provider_ids}
 
 ---
 
@@ -2030,7 +2077,7 @@ mfa_lifetime: typing.Union[int, float]
 
 Elapsed time before the next MFA challenge.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#mfa_lifetime PolicyRuleSignon#mfa_lifetime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#mfa_lifetime PolicyRuleSignon#mfa_lifetime}
 
 ---
 
@@ -2042,9 +2089,9 @@ mfa_prompt: str
 
 - *Type:* str
 
-Prompt for MFA based on the device used, a factor session lifetime, or every sign-on attempt: DEVICE, SESSION or ALWAYS.
+Prompt for MFA based on the device used, a factor session lifetime, or every sign-on attempt: `DEVICE`, `SESSION` or`ALWAYS`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#mfa_prompt PolicyRuleSignon#mfa_prompt}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#mfa_prompt PolicyRuleSignon#mfa_prompt}
 
 ---
 
@@ -2056,9 +2103,9 @@ mfa_remember_device: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Remember MFA device.
+Remember MFA device. Default: `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#mfa_remember_device PolicyRuleSignon#mfa_remember_device}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#mfa_remember_device PolicyRuleSignon#mfa_remember_device}
 
 ---
 
@@ -2070,9 +2117,9 @@ mfa_required: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Require MFA.
+Require MFA. Default: `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#mfa_required PolicyRuleSignon#mfa_required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#mfa_required PolicyRuleSignon#mfa_required}
 
 ---
 
@@ -2084,9 +2131,9 @@ network_connection: str
 
 - *Type:* str
 
-Network selection mode: ANYWHERE, ZONE, ON_NETWORK, or OFF_NETWORK.
+Network selection mode: `ANYWHERE`, `ZONE`, `ON_NETWORK`, or `OFF_NETWORK`. Default: `ANYWHERE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#network_connection PolicyRuleSignon#network_connection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#network_connection PolicyRuleSignon#network_connection}
 
 ---
 
@@ -2098,9 +2145,9 @@ network_excludes: typing.List[str]
 
 - *Type:* typing.List[str]
 
-The zones to exclude.
+Required if `network_connection` = `ZONE`. Indicates the network zones to exclude.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#network_excludes PolicyRuleSignon#network_excludes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#network_excludes PolicyRuleSignon#network_excludes}
 
 ---
 
@@ -2112,9 +2159,9 @@ network_includes: typing.List[str]
 
 - *Type:* typing.List[str]
 
-The zones to include.
+Required if `network_connection` = `ZONE`. Indicates the network zones to include.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#network_includes PolicyRuleSignon#network_includes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#network_includes PolicyRuleSignon#network_includes}
 
 ---
 
@@ -2128,7 +2175,7 @@ policy_id: str
 
 Policy ID of the Rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#policy_id PolicyRuleSignon#policy_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#policy_id PolicyRuleSignon#policy_id}
 
 ---
 
@@ -2140,9 +2187,9 @@ primary_factor: str
 
 - *Type:* str
 
-Primary factor.
+Rule's primary factor. **WARNING** Ony works as a part of the Identity Engine. Valid values: `PASSWORD_IDP_ANY_FACTOR`, `PASSWORD_IDP`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#primary_factor PolicyRuleSignon#primary_factor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#primary_factor PolicyRuleSignon#primary_factor}
 
 ---
 
@@ -2154,11 +2201,11 @@ priority: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Policy Rule Priority, this attribute can be set to a valid priority.
+Rule priority.
 
-To avoid endless diff situation we error if an invalid priority is provided. API defaults it to the last (lowest) if not there.
+This attribute can be set to a valid priority. To avoid an endless diff situation an error is thrown if an invalid property is provided. The Okta API defaults to the last (lowest) if not provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#priority PolicyRuleSignon#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#priority PolicyRuleSignon#priority}
 
 ---
 
@@ -2170,9 +2217,23 @@ risc_level: str
 
 - *Type:* str
 
-Risc level: ANY, LOW, MEDIUM or HIGH.
+Risc level: ANY, LOW, MEDIUM or HIGH. Default: `ANY`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#risc_level PolicyRuleSignon#risc_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#risc_level PolicyRuleSignon#risc_level}
+
+---
+
+##### `risk_level`<sup>Optional</sup> <a name="risk_level" id="@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.riskLevel"></a>
+
+```python
+risk_level: str
+```
+
+- *Type:* str
+
+Risk level: ANY, LOW, MEDIUM or HIGH. Default: `ANY`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#risk_level PolicyRuleSignon#risk_level}
 
 ---
 
@@ -2184,9 +2245,9 @@ session_idle: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Max minutes a session can be idle.
+Max minutes a session can be idle. Default: `120`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#session_idle PolicyRuleSignon#session_idle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#session_idle PolicyRuleSignon#session_idle}
 
 ---
 
@@ -2198,9 +2259,9 @@ session_lifetime: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Max minutes a session is active: Disable = 0.
+Max minutes a session is active: Disable = 0. Default: `120`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#session_lifetime PolicyRuleSignon#session_lifetime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#session_lifetime PolicyRuleSignon#session_lifetime}
 
 ---
 
@@ -2212,9 +2273,9 @@ session_persistent: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Whether session cookies will last across browser sessions. Okta Administrators can never have persistent session cookies.
+Whether session cookies will last across browser sessions. Okta Administrators can never have persistent session cookies. Default: `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#session_persistent PolicyRuleSignon#session_persistent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#session_persistent PolicyRuleSignon#session_persistent}
 
 ---
 
@@ -2226,9 +2287,9 @@ status: str
 
 - *Type:* str
 
-Policy Rule Status: ACTIVE or INACTIVE.
+Policy Rule Status: `ACTIVE` or `INACTIVE`. Default: `ACTIVE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#status PolicyRuleSignon#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#status PolicyRuleSignon#status}
 
 ---
 
@@ -2242,7 +2303,7 @@ users_excluded: typing.List[str]
 
 Set of User IDs to Exclude.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#users_excluded PolicyRuleSignon#users_excluded}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#users_excluded PolicyRuleSignon#users_excluded}
 
 ---
 
@@ -2280,7 +2341,7 @@ primary_criteria_factor_type: str
 
 Type of a Factor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#primary_criteria_factor_type PolicyRuleSignon#primary_criteria_factor_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#primary_criteria_factor_type PolicyRuleSignon#primary_criteria_factor_type}
 
 ---
 
@@ -2294,7 +2355,7 @@ primary_criteria_provider: str
 
 Factor provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#primary_criteria_provider PolicyRuleSignon#primary_criteria_provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#primary_criteria_provider PolicyRuleSignon#primary_criteria_provider}
 
 ---
 
@@ -2308,7 +2369,7 @@ secondary_criteria: typing.Union[IResolvable, typing.List[PolicyRuleSignonFactor
 
 secondary_criteria block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#secondary_criteria PolicyRuleSignon#secondary_criteria}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#secondary_criteria PolicyRuleSignon#secondary_criteria}
 
 ---
 
@@ -2344,7 +2405,7 @@ factor_type: str
 
 Type of a Factor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#factor_type PolicyRuleSignon#factor_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#factor_type PolicyRuleSignon#factor_type}
 
 ---
 
@@ -2358,7 +2419,7 @@ provider: str
 
 Factor provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#provider PolicyRuleSignon#provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#provider PolicyRuleSignon#provider}
 
 ---
 

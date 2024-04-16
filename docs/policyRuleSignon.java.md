@@ -4,7 +4,7 @@
 
 ### PolicyRuleSignon <a name="PolicyRuleSignon" id="@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon okta_policy_rule_signon}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon okta_policy_rule_signon}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer"></a>
 
@@ -45,6 +45,7 @@ PolicyRuleSignon.Builder.create(Construct scope, java.lang.String id)
 //  .primaryFactor(java.lang.String)
 //  .priority(java.lang.Number)
 //  .riscLevel(java.lang.String)
+//  .riskLevel(java.lang.String)
 //  .sessionIdle(java.lang.Number)
 //  .sessionLifetime(java.lang.Number)
 //  .sessionPersistent(java.lang.Boolean)
@@ -66,28 +67,29 @@ PolicyRuleSignon.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Policy Rule Name. |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.access">access</a></code> | <code>java.lang.String</code> | Allow or deny access based on the rule conditions: ALLOW, DENY or CHALLENGE. |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.authtype">authtype</a></code> | <code>java.lang.String</code> | Authentication entrypoint: ANY, RADIUS or LDAP_INTERFACE. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.access">access</a></code> | <code>java.lang.String</code> | Allow or deny access based on the rule conditions: `ALLOW`, `DENY` or `CHALLENGE`. Default: `ALLOW`. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.authtype">authtype</a></code> | <code>java.lang.String</code> | Authentication entrypoint: `ANY`, `RADIUS` or `LDAP_INTERFACE`. Default: `ANY`. |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.behaviors">behaviors</a></code> | <code>java.util.List<java.lang.String></code> | List of behavior IDs. |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.factorSequence">factorSequence</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequence">PolicyRuleSignonFactorSequence</a>></code> | factor_sequence block. |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#id PolicyRuleSignon#id}. |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.identityProvider">identityProvider</a></code> | <code>java.lang.String</code> | Apply rule based on the IdP used: ANY, OKTA or SPECIFIC_IDP. |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.identityProviderIds">identityProviderIds</a></code> | <code>java.util.List<java.lang.String></code> | When identity_provider is SPECIFIC_IDP then this is the list of IdP IDs to apply the rule on. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#id PolicyRuleSignon#id}. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.identityProvider">identityProvider</a></code> | <code>java.lang.String</code> | Apply rule based on the IdP used: `ANY`, `OKTA` or `SPECIFIC_IDP`. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.identityProviderIds">identityProviderIds</a></code> | <code>java.util.List<java.lang.String></code> | When identity_provider is `SPECIFIC_IDP` then this is the list of IdP IDs to apply the rule on. |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.mfaLifetime">mfaLifetime</a></code> | <code>java.lang.Number</code> | Elapsed time before the next MFA challenge. |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.mfaPrompt">mfaPrompt</a></code> | <code>java.lang.String</code> | Prompt for MFA based on the device used, a factor session lifetime, or every sign-on attempt: DEVICE, SESSION or ALWAYS. |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.mfaRememberDevice">mfaRememberDevice</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Remember MFA device. |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.mfaRequired">mfaRequired</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Require MFA. |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.networkConnection">networkConnection</a></code> | <code>java.lang.String</code> | Network selection mode: ANYWHERE, ZONE, ON_NETWORK, or OFF_NETWORK. |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.networkExcludes">networkExcludes</a></code> | <code>java.util.List<java.lang.String></code> | The zones to exclude. |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.networkIncludes">networkIncludes</a></code> | <code>java.util.List<java.lang.String></code> | The zones to include. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.mfaPrompt">mfaPrompt</a></code> | <code>java.lang.String</code> | Prompt for MFA based on the device used, a factor session lifetime, or every sign-on attempt: `DEVICE`, `SESSION` or`ALWAYS`. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.mfaRememberDevice">mfaRememberDevice</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Remember MFA device. Default: `false`. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.mfaRequired">mfaRequired</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Require MFA. Default: `false`. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.networkConnection">networkConnection</a></code> | <code>java.lang.String</code> | Network selection mode: `ANYWHERE`, `ZONE`, `ON_NETWORK`, or `OFF_NETWORK`. Default: `ANYWHERE`. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.networkExcludes">networkExcludes</a></code> | <code>java.util.List<java.lang.String></code> | Required if `network_connection` = `ZONE`. Indicates the network zones to exclude. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.networkIncludes">networkIncludes</a></code> | <code>java.util.List<java.lang.String></code> | Required if `network_connection` = `ZONE`. Indicates the network zones to include. |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.policyId">policyId</a></code> | <code>java.lang.String</code> | Policy ID of the Rule. |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.primaryFactor">primaryFactor</a></code> | <code>java.lang.String</code> | Primary factor. |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.priority">priority</a></code> | <code>java.lang.Number</code> | Policy Rule Priority, this attribute can be set to a valid priority. |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.riscLevel">riscLevel</a></code> | <code>java.lang.String</code> | Risc level: ANY, LOW, MEDIUM or HIGH. |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.sessionIdle">sessionIdle</a></code> | <code>java.lang.Number</code> | Max minutes a session can be idle. |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.sessionLifetime">sessionLifetime</a></code> | <code>java.lang.Number</code> | Max minutes a session is active: Disable = 0. |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.sessionPersistent">sessionPersistent</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether session cookies will last across browser sessions. Okta Administrators can never have persistent session cookies. |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.status">status</a></code> | <code>java.lang.String</code> | Policy Rule Status: ACTIVE or INACTIVE. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.primaryFactor">primaryFactor</a></code> | <code>java.lang.String</code> | Rule's primary factor. **WARNING** Ony works as a part of the Identity Engine. Valid values: `PASSWORD_IDP_ANY_FACTOR`, `PASSWORD_IDP`. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.priority">priority</a></code> | <code>java.lang.Number</code> | Rule priority. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.riscLevel">riscLevel</a></code> | <code>java.lang.String</code> | Risc level: ANY, LOW, MEDIUM or HIGH. Default: `ANY`. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.riskLevel">riskLevel</a></code> | <code>java.lang.String</code> | Risk level: ANY, LOW, MEDIUM or HIGH. Default: `ANY`. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.sessionIdle">sessionIdle</a></code> | <code>java.lang.Number</code> | Max minutes a session can be idle. Default: `120`. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.sessionLifetime">sessionLifetime</a></code> | <code>java.lang.Number</code> | Max minutes a session is active: Disable = 0. Default: `120`. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.sessionPersistent">sessionPersistent</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether session cookies will last across browser sessions. Okta Administrators can never have persistent session cookies. Default: `false`. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.status">status</a></code> | <code>java.lang.String</code> | Policy Rule Status: `ACTIVE` or `INACTIVE`. Default: `ACTIVE`. |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.usersExcluded">usersExcluded</a></code> | <code>java.util.List<java.lang.String></code> | Set of User IDs to Exclude. |
 
 ---
@@ -158,7 +160,7 @@ Must be unique amongst siblings in the same scope
 
 Policy Rule Name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#name PolicyRuleSignon#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#name PolicyRuleSignon#name}
 
 ---
 
@@ -166,9 +168,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* java.lang.String
 
-Allow or deny access based on the rule conditions: ALLOW, DENY or CHALLENGE.
+Allow or deny access based on the rule conditions: `ALLOW`, `DENY` or `CHALLENGE`. Default: `ALLOW`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#access PolicyRuleSignon#access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#access PolicyRuleSignon#access}
 
 ---
 
@@ -176,9 +178,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* java.lang.String
 
-Authentication entrypoint: ANY, RADIUS or LDAP_INTERFACE.
+Authentication entrypoint: `ANY`, `RADIUS` or `LDAP_INTERFACE`. Default: `ANY`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#authtype PolicyRuleSignon#authtype}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#authtype PolicyRuleSignon#authtype}
 
 ---
 
@@ -188,7 +190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 List of behavior IDs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#behaviors PolicyRuleSignon#behaviors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#behaviors PolicyRuleSignon#behaviors}
 
 ---
 
@@ -198,7 +200,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 factor_sequence block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#factor_sequence PolicyRuleSignon#factor_sequence}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#factor_sequence PolicyRuleSignon#factor_sequence}
 
 ---
 
@@ -206,7 +208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#id PolicyRuleSignon#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#id PolicyRuleSignon#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -217,9 +219,11 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Apply rule based on the IdP used: ANY, OKTA or SPECIFIC_IDP.
+Apply rule based on the IdP used: `ANY`, `OKTA` or `SPECIFIC_IDP`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#identity_provider PolicyRuleSignon#identity_provider}
+Default: `ANY`. ~> **WARNING**: Use of `identity_provider` requires a feature flag to be enabled.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#identity_provider PolicyRuleSignon#identity_provider}
 
 ---
 
@@ -227,9 +231,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* java.util.List<java.lang.String>
 
-When identity_provider is SPECIFIC_IDP then this is the list of IdP IDs to apply the rule on.
+When identity_provider is `SPECIFIC_IDP` then this is the list of IdP IDs to apply the rule on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#identity_provider_ids PolicyRuleSignon#identity_provider_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#identity_provider_ids PolicyRuleSignon#identity_provider_ids}
 
 ---
 
@@ -239,7 +243,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Elapsed time before the next MFA challenge.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#mfa_lifetime PolicyRuleSignon#mfa_lifetime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#mfa_lifetime PolicyRuleSignon#mfa_lifetime}
 
 ---
 
@@ -247,9 +251,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* java.lang.String
 
-Prompt for MFA based on the device used, a factor session lifetime, or every sign-on attempt: DEVICE, SESSION or ALWAYS.
+Prompt for MFA based on the device used, a factor session lifetime, or every sign-on attempt: `DEVICE`, `SESSION` or`ALWAYS`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#mfa_prompt PolicyRuleSignon#mfa_prompt}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#mfa_prompt PolicyRuleSignon#mfa_prompt}
 
 ---
 
@@ -257,9 +261,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Remember MFA device.
+Remember MFA device. Default: `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#mfa_remember_device PolicyRuleSignon#mfa_remember_device}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#mfa_remember_device PolicyRuleSignon#mfa_remember_device}
 
 ---
 
@@ -267,9 +271,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Require MFA.
+Require MFA. Default: `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#mfa_required PolicyRuleSignon#mfa_required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#mfa_required PolicyRuleSignon#mfa_required}
 
 ---
 
@@ -277,9 +281,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* java.lang.String
 
-Network selection mode: ANYWHERE, ZONE, ON_NETWORK, or OFF_NETWORK.
+Network selection mode: `ANYWHERE`, `ZONE`, `ON_NETWORK`, or `OFF_NETWORK`. Default: `ANYWHERE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#network_connection PolicyRuleSignon#network_connection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#network_connection PolicyRuleSignon#network_connection}
 
 ---
 
@@ -287,9 +291,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* java.util.List<java.lang.String>
 
-The zones to exclude.
+Required if `network_connection` = `ZONE`. Indicates the network zones to exclude.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#network_excludes PolicyRuleSignon#network_excludes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#network_excludes PolicyRuleSignon#network_excludes}
 
 ---
 
@@ -297,9 +301,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* java.util.List<java.lang.String>
 
-The zones to include.
+Required if `network_connection` = `ZONE`. Indicates the network zones to include.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#network_includes PolicyRuleSignon#network_includes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#network_includes PolicyRuleSignon#network_includes}
 
 ---
 
@@ -309,7 +313,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Policy ID of the Rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#policy_id PolicyRuleSignon#policy_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#policy_id PolicyRuleSignon#policy_id}
 
 ---
 
@@ -317,9 +321,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* java.lang.String
 
-Primary factor.
+Rule's primary factor. **WARNING** Ony works as a part of the Identity Engine. Valid values: `PASSWORD_IDP_ANY_FACTOR`, `PASSWORD_IDP`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#primary_factor PolicyRuleSignon#primary_factor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#primary_factor PolicyRuleSignon#primary_factor}
 
 ---
 
@@ -327,11 +331,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* java.lang.Number
 
-Policy Rule Priority, this attribute can be set to a valid priority.
+Rule priority.
 
-To avoid endless diff situation we error if an invalid priority is provided. API defaults it to the last (lowest) if not there.
+This attribute can be set to a valid priority. To avoid an endless diff situation an error is thrown if an invalid property is provided. The Okta API defaults to the last (lowest) if not provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#priority PolicyRuleSignon#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#priority PolicyRuleSignon#priority}
 
 ---
 
@@ -339,9 +343,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* java.lang.String
 
-Risc level: ANY, LOW, MEDIUM or HIGH.
+Risc level: ANY, LOW, MEDIUM or HIGH. Default: `ANY`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#risc_level PolicyRuleSignon#risc_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#risc_level PolicyRuleSignon#risc_level}
+
+---
+
+##### `riskLevel`<sup>Optional</sup> <a name="riskLevel" id="@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.riskLevel"></a>
+
+- *Type:* java.lang.String
+
+Risk level: ANY, LOW, MEDIUM or HIGH. Default: `ANY`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#risk_level PolicyRuleSignon#risk_level}
 
 ---
 
@@ -349,9 +363,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* java.lang.Number
 
-Max minutes a session can be idle.
+Max minutes a session can be idle. Default: `120`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#session_idle PolicyRuleSignon#session_idle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#session_idle PolicyRuleSignon#session_idle}
 
 ---
 
@@ -359,9 +373,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* java.lang.Number
 
-Max minutes a session is active: Disable = 0.
+Max minutes a session is active: Disable = 0. Default: `120`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#session_lifetime PolicyRuleSignon#session_lifetime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#session_lifetime PolicyRuleSignon#session_lifetime}
 
 ---
 
@@ -369,9 +383,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Whether session cookies will last across browser sessions. Okta Administrators can never have persistent session cookies.
+Whether session cookies will last across browser sessions. Okta Administrators can never have persistent session cookies. Default: `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#session_persistent PolicyRuleSignon#session_persistent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#session_persistent PolicyRuleSignon#session_persistent}
 
 ---
 
@@ -379,9 +393,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* java.lang.String
 
-Policy Rule Status: ACTIVE or INACTIVE.
+Policy Rule Status: `ACTIVE` or `INACTIVE`. Default: `ACTIVE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#status PolicyRuleSignon#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#status PolicyRuleSignon#status}
 
 ---
 
@@ -391,7 +405,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Set of User IDs to Exclude.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#users_excluded PolicyRuleSignon#users_excluded}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#users_excluded PolicyRuleSignon#users_excluded}
 
 ---
 
@@ -441,6 +455,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.resetPrimaryFactor">resetPrimaryFactor</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.resetPriority">resetPriority</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.resetRiscLevel">resetRiscLevel</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.resetRiskLevel">resetRiskLevel</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.resetSessionIdle">resetSessionIdle</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.resetSessionLifetime">resetSessionLifetime</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.resetSessionPersistent">resetSessionPersistent</a></code> | *No description.* |
@@ -859,6 +874,12 @@ public void resetPriority()
 public void resetRiscLevel()
 ```
 
+##### `resetRiskLevel` <a name="resetRiskLevel" id="@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.resetRiskLevel"></a>
+
+```java
+public void resetRiskLevel()
+```
+
 ##### `resetSessionIdle` <a name="resetSessionIdle" id="@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.resetSessionIdle"></a>
 
 ```java
@@ -992,7 +1013,7 @@ The construct id used in the generated config for the PolicyRuleSignon to import
 
 The id of the existing PolicyRuleSignon that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1042,6 +1063,7 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.primaryFactorInput">primaryFactorInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.priorityInput">priorityInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.riscLevelInput">riscLevelInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.riskLevelInput">riskLevelInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.sessionIdleInput">sessionIdleInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.sessionLifetimeInput">sessionLifetimeInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.sessionPersistentInput">sessionPersistentInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
@@ -1065,6 +1087,7 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.primaryFactor">primaryFactor</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.priority">priority</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.riscLevel">riscLevel</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.riskLevel">riskLevel</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.sessionIdle">sessionIdle</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.sessionLifetime">sessionLifetime</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.sessionPersistent">sessionPersistent</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
@@ -1415,6 +1438,16 @@ public java.lang.String getRiscLevelInput();
 
 ---
 
+##### `riskLevelInput`<sup>Optional</sup> <a name="riskLevelInput" id="@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.riskLevelInput"></a>
+
+```java
+public java.lang.String getRiskLevelInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `sessionIdleInput`<sup>Optional</sup> <a name="sessionIdleInput" id="@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.sessionIdleInput"></a>
 
 ```java
@@ -1645,6 +1678,16 @@ public java.lang.String getRiscLevel();
 
 ---
 
+##### `riskLevel`<sup>Required</sup> <a name="riskLevel" id="@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.riskLevel"></a>
+
+```java
+public java.lang.String getRiskLevel();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `sessionIdle`<sup>Required</sup> <a name="sessionIdle" id="@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.sessionIdle"></a>
 
 ```java
@@ -1756,6 +1799,7 @@ PolicyRuleSignonConfig.builder()
 //  .primaryFactor(java.lang.String)
 //  .priority(java.lang.Number)
 //  .riscLevel(java.lang.String)
+//  .riskLevel(java.lang.String)
 //  .sessionIdle(java.lang.Number)
 //  .sessionLifetime(java.lang.Number)
 //  .sessionPersistent(java.lang.Boolean)
@@ -1777,28 +1821,29 @@ PolicyRuleSignonConfig.builder()
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.name">name</a></code> | <code>java.lang.String</code> | Policy Rule Name. |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.access">access</a></code> | <code>java.lang.String</code> | Allow or deny access based on the rule conditions: ALLOW, DENY or CHALLENGE. |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.authtype">authtype</a></code> | <code>java.lang.String</code> | Authentication entrypoint: ANY, RADIUS or LDAP_INTERFACE. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.access">access</a></code> | <code>java.lang.String</code> | Allow or deny access based on the rule conditions: `ALLOW`, `DENY` or `CHALLENGE`. Default: `ALLOW`. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.authtype">authtype</a></code> | <code>java.lang.String</code> | Authentication entrypoint: `ANY`, `RADIUS` or `LDAP_INTERFACE`. Default: `ANY`. |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.behaviors">behaviors</a></code> | <code>java.util.List<java.lang.String></code> | List of behavior IDs. |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.factorSequence">factorSequence</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequence">PolicyRuleSignonFactorSequence</a>></code> | factor_sequence block. |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#id PolicyRuleSignon#id}. |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.identityProvider">identityProvider</a></code> | <code>java.lang.String</code> | Apply rule based on the IdP used: ANY, OKTA or SPECIFIC_IDP. |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.identityProviderIds">identityProviderIds</a></code> | <code>java.util.List<java.lang.String></code> | When identity_provider is SPECIFIC_IDP then this is the list of IdP IDs to apply the rule on. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#id PolicyRuleSignon#id}. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.identityProvider">identityProvider</a></code> | <code>java.lang.String</code> | Apply rule based on the IdP used: `ANY`, `OKTA` or `SPECIFIC_IDP`. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.identityProviderIds">identityProviderIds</a></code> | <code>java.util.List<java.lang.String></code> | When identity_provider is `SPECIFIC_IDP` then this is the list of IdP IDs to apply the rule on. |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.mfaLifetime">mfaLifetime</a></code> | <code>java.lang.Number</code> | Elapsed time before the next MFA challenge. |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.mfaPrompt">mfaPrompt</a></code> | <code>java.lang.String</code> | Prompt for MFA based on the device used, a factor session lifetime, or every sign-on attempt: DEVICE, SESSION or ALWAYS. |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.mfaRememberDevice">mfaRememberDevice</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Remember MFA device. |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.mfaRequired">mfaRequired</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Require MFA. |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.networkConnection">networkConnection</a></code> | <code>java.lang.String</code> | Network selection mode: ANYWHERE, ZONE, ON_NETWORK, or OFF_NETWORK. |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.networkExcludes">networkExcludes</a></code> | <code>java.util.List<java.lang.String></code> | The zones to exclude. |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.networkIncludes">networkIncludes</a></code> | <code>java.util.List<java.lang.String></code> | The zones to include. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.mfaPrompt">mfaPrompt</a></code> | <code>java.lang.String</code> | Prompt for MFA based on the device used, a factor session lifetime, or every sign-on attempt: `DEVICE`, `SESSION` or`ALWAYS`. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.mfaRememberDevice">mfaRememberDevice</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Remember MFA device. Default: `false`. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.mfaRequired">mfaRequired</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Require MFA. Default: `false`. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.networkConnection">networkConnection</a></code> | <code>java.lang.String</code> | Network selection mode: `ANYWHERE`, `ZONE`, `ON_NETWORK`, or `OFF_NETWORK`. Default: `ANYWHERE`. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.networkExcludes">networkExcludes</a></code> | <code>java.util.List<java.lang.String></code> | Required if `network_connection` = `ZONE`. Indicates the network zones to exclude. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.networkIncludes">networkIncludes</a></code> | <code>java.util.List<java.lang.String></code> | Required if `network_connection` = `ZONE`. Indicates the network zones to include. |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.policyId">policyId</a></code> | <code>java.lang.String</code> | Policy ID of the Rule. |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.primaryFactor">primaryFactor</a></code> | <code>java.lang.String</code> | Primary factor. |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.priority">priority</a></code> | <code>java.lang.Number</code> | Policy Rule Priority, this attribute can be set to a valid priority. |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.riscLevel">riscLevel</a></code> | <code>java.lang.String</code> | Risc level: ANY, LOW, MEDIUM or HIGH. |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.sessionIdle">sessionIdle</a></code> | <code>java.lang.Number</code> | Max minutes a session can be idle. |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.sessionLifetime">sessionLifetime</a></code> | <code>java.lang.Number</code> | Max minutes a session is active: Disable = 0. |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.sessionPersistent">sessionPersistent</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether session cookies will last across browser sessions. Okta Administrators can never have persistent session cookies. |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.status">status</a></code> | <code>java.lang.String</code> | Policy Rule Status: ACTIVE or INACTIVE. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.primaryFactor">primaryFactor</a></code> | <code>java.lang.String</code> | Rule's primary factor. **WARNING** Ony works as a part of the Identity Engine. Valid values: `PASSWORD_IDP_ANY_FACTOR`, `PASSWORD_IDP`. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.priority">priority</a></code> | <code>java.lang.Number</code> | Rule priority. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.riscLevel">riscLevel</a></code> | <code>java.lang.String</code> | Risc level: ANY, LOW, MEDIUM or HIGH. Default: `ANY`. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.riskLevel">riskLevel</a></code> | <code>java.lang.String</code> | Risk level: ANY, LOW, MEDIUM or HIGH. Default: `ANY`. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.sessionIdle">sessionIdle</a></code> | <code>java.lang.Number</code> | Max minutes a session can be idle. Default: `120`. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.sessionLifetime">sessionLifetime</a></code> | <code>java.lang.Number</code> | Max minutes a session is active: Disable = 0. Default: `120`. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.sessionPersistent">sessionPersistent</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether session cookies will last across browser sessions. Okta Administrators can never have persistent session cookies. Default: `false`. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.status">status</a></code> | <code>java.lang.String</code> | Policy Rule Status: `ACTIVE` or `INACTIVE`. Default: `ACTIVE`. |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.usersExcluded">usersExcluded</a></code> | <code>java.util.List<java.lang.String></code> | Set of User IDs to Exclude. |
 
 ---
@@ -1883,7 +1928,7 @@ public java.lang.String getName();
 
 Policy Rule Name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#name PolicyRuleSignon#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#name PolicyRuleSignon#name}
 
 ---
 
@@ -1895,9 +1940,9 @@ public java.lang.String getAccess();
 
 - *Type:* java.lang.String
 
-Allow or deny access based on the rule conditions: ALLOW, DENY or CHALLENGE.
+Allow or deny access based on the rule conditions: `ALLOW`, `DENY` or `CHALLENGE`. Default: `ALLOW`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#access PolicyRuleSignon#access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#access PolicyRuleSignon#access}
 
 ---
 
@@ -1909,9 +1954,9 @@ public java.lang.String getAuthtype();
 
 - *Type:* java.lang.String
 
-Authentication entrypoint: ANY, RADIUS or LDAP_INTERFACE.
+Authentication entrypoint: `ANY`, `RADIUS` or `LDAP_INTERFACE`. Default: `ANY`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#authtype PolicyRuleSignon#authtype}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#authtype PolicyRuleSignon#authtype}
 
 ---
 
@@ -1925,7 +1970,7 @@ public java.util.List<java.lang.String> getBehaviors();
 
 List of behavior IDs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#behaviors PolicyRuleSignon#behaviors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#behaviors PolicyRuleSignon#behaviors}
 
 ---
 
@@ -1939,7 +1984,7 @@ public java.lang.Object getFactorSequence();
 
 factor_sequence block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#factor_sequence PolicyRuleSignon#factor_sequence}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#factor_sequence PolicyRuleSignon#factor_sequence}
 
 ---
 
@@ -1951,7 +1996,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#id PolicyRuleSignon#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#id PolicyRuleSignon#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1966,9 +2011,11 @@ public java.lang.String getIdentityProvider();
 
 - *Type:* java.lang.String
 
-Apply rule based on the IdP used: ANY, OKTA or SPECIFIC_IDP.
+Apply rule based on the IdP used: `ANY`, `OKTA` or `SPECIFIC_IDP`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#identity_provider PolicyRuleSignon#identity_provider}
+Default: `ANY`. ~> **WARNING**: Use of `identity_provider` requires a feature flag to be enabled.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#identity_provider PolicyRuleSignon#identity_provider}
 
 ---
 
@@ -1980,9 +2027,9 @@ public java.util.List<java.lang.String> getIdentityProviderIds();
 
 - *Type:* java.util.List<java.lang.String>
 
-When identity_provider is SPECIFIC_IDP then this is the list of IdP IDs to apply the rule on.
+When identity_provider is `SPECIFIC_IDP` then this is the list of IdP IDs to apply the rule on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#identity_provider_ids PolicyRuleSignon#identity_provider_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#identity_provider_ids PolicyRuleSignon#identity_provider_ids}
 
 ---
 
@@ -1996,7 +2043,7 @@ public java.lang.Number getMfaLifetime();
 
 Elapsed time before the next MFA challenge.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#mfa_lifetime PolicyRuleSignon#mfa_lifetime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#mfa_lifetime PolicyRuleSignon#mfa_lifetime}
 
 ---
 
@@ -2008,9 +2055,9 @@ public java.lang.String getMfaPrompt();
 
 - *Type:* java.lang.String
 
-Prompt for MFA based on the device used, a factor session lifetime, or every sign-on attempt: DEVICE, SESSION or ALWAYS.
+Prompt for MFA based on the device used, a factor session lifetime, or every sign-on attempt: `DEVICE`, `SESSION` or`ALWAYS`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#mfa_prompt PolicyRuleSignon#mfa_prompt}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#mfa_prompt PolicyRuleSignon#mfa_prompt}
 
 ---
 
@@ -2022,9 +2069,9 @@ public java.lang.Object getMfaRememberDevice();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Remember MFA device.
+Remember MFA device. Default: `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#mfa_remember_device PolicyRuleSignon#mfa_remember_device}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#mfa_remember_device PolicyRuleSignon#mfa_remember_device}
 
 ---
 
@@ -2036,9 +2083,9 @@ public java.lang.Object getMfaRequired();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Require MFA.
+Require MFA. Default: `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#mfa_required PolicyRuleSignon#mfa_required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#mfa_required PolicyRuleSignon#mfa_required}
 
 ---
 
@@ -2050,9 +2097,9 @@ public java.lang.String getNetworkConnection();
 
 - *Type:* java.lang.String
 
-Network selection mode: ANYWHERE, ZONE, ON_NETWORK, or OFF_NETWORK.
+Network selection mode: `ANYWHERE`, `ZONE`, `ON_NETWORK`, or `OFF_NETWORK`. Default: `ANYWHERE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#network_connection PolicyRuleSignon#network_connection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#network_connection PolicyRuleSignon#network_connection}
 
 ---
 
@@ -2064,9 +2111,9 @@ public java.util.List<java.lang.String> getNetworkExcludes();
 
 - *Type:* java.util.List<java.lang.String>
 
-The zones to exclude.
+Required if `network_connection` = `ZONE`. Indicates the network zones to exclude.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#network_excludes PolicyRuleSignon#network_excludes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#network_excludes PolicyRuleSignon#network_excludes}
 
 ---
 
@@ -2078,9 +2125,9 @@ public java.util.List<java.lang.String> getNetworkIncludes();
 
 - *Type:* java.util.List<java.lang.String>
 
-The zones to include.
+Required if `network_connection` = `ZONE`. Indicates the network zones to include.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#network_includes PolicyRuleSignon#network_includes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#network_includes PolicyRuleSignon#network_includes}
 
 ---
 
@@ -2094,7 +2141,7 @@ public java.lang.String getPolicyId();
 
 Policy ID of the Rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#policy_id PolicyRuleSignon#policy_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#policy_id PolicyRuleSignon#policy_id}
 
 ---
 
@@ -2106,9 +2153,9 @@ public java.lang.String getPrimaryFactor();
 
 - *Type:* java.lang.String
 
-Primary factor.
+Rule's primary factor. **WARNING** Ony works as a part of the Identity Engine. Valid values: `PASSWORD_IDP_ANY_FACTOR`, `PASSWORD_IDP`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#primary_factor PolicyRuleSignon#primary_factor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#primary_factor PolicyRuleSignon#primary_factor}
 
 ---
 
@@ -2120,11 +2167,11 @@ public java.lang.Number getPriority();
 
 - *Type:* java.lang.Number
 
-Policy Rule Priority, this attribute can be set to a valid priority.
+Rule priority.
 
-To avoid endless diff situation we error if an invalid priority is provided. API defaults it to the last (lowest) if not there.
+This attribute can be set to a valid priority. To avoid an endless diff situation an error is thrown if an invalid property is provided. The Okta API defaults to the last (lowest) if not provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#priority PolicyRuleSignon#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#priority PolicyRuleSignon#priority}
 
 ---
 
@@ -2136,9 +2183,23 @@ public java.lang.String getRiscLevel();
 
 - *Type:* java.lang.String
 
-Risc level: ANY, LOW, MEDIUM or HIGH.
+Risc level: ANY, LOW, MEDIUM or HIGH. Default: `ANY`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#risc_level PolicyRuleSignon#risc_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#risc_level PolicyRuleSignon#risc_level}
+
+---
+
+##### `riskLevel`<sup>Optional</sup> <a name="riskLevel" id="@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.riskLevel"></a>
+
+```java
+public java.lang.String getRiskLevel();
+```
+
+- *Type:* java.lang.String
+
+Risk level: ANY, LOW, MEDIUM or HIGH. Default: `ANY`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#risk_level PolicyRuleSignon#risk_level}
 
 ---
 
@@ -2150,9 +2211,9 @@ public java.lang.Number getSessionIdle();
 
 - *Type:* java.lang.Number
 
-Max minutes a session can be idle.
+Max minutes a session can be idle. Default: `120`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#session_idle PolicyRuleSignon#session_idle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#session_idle PolicyRuleSignon#session_idle}
 
 ---
 
@@ -2164,9 +2225,9 @@ public java.lang.Number getSessionLifetime();
 
 - *Type:* java.lang.Number
 
-Max minutes a session is active: Disable = 0.
+Max minutes a session is active: Disable = 0. Default: `120`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#session_lifetime PolicyRuleSignon#session_lifetime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#session_lifetime PolicyRuleSignon#session_lifetime}
 
 ---
 
@@ -2178,9 +2239,9 @@ public java.lang.Object getSessionPersistent();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Whether session cookies will last across browser sessions. Okta Administrators can never have persistent session cookies.
+Whether session cookies will last across browser sessions. Okta Administrators can never have persistent session cookies. Default: `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#session_persistent PolicyRuleSignon#session_persistent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#session_persistent PolicyRuleSignon#session_persistent}
 
 ---
 
@@ -2192,9 +2253,9 @@ public java.lang.String getStatus();
 
 - *Type:* java.lang.String
 
-Policy Rule Status: ACTIVE or INACTIVE.
+Policy Rule Status: `ACTIVE` or `INACTIVE`. Default: `ACTIVE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#status PolicyRuleSignon#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#status PolicyRuleSignon#status}
 
 ---
 
@@ -2208,7 +2269,7 @@ public java.util.List<java.lang.String> getUsersExcluded();
 
 Set of User IDs to Exclude.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#users_excluded PolicyRuleSignon#users_excluded}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#users_excluded PolicyRuleSignon#users_excluded}
 
 ---
 
@@ -2247,7 +2308,7 @@ public java.lang.String getPrimaryCriteriaFactorType();
 
 Type of a Factor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#primary_criteria_factor_type PolicyRuleSignon#primary_criteria_factor_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#primary_criteria_factor_type PolicyRuleSignon#primary_criteria_factor_type}
 
 ---
 
@@ -2261,7 +2322,7 @@ public java.lang.String getPrimaryCriteriaProvider();
 
 Factor provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#primary_criteria_provider PolicyRuleSignon#primary_criteria_provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#primary_criteria_provider PolicyRuleSignon#primary_criteria_provider}
 
 ---
 
@@ -2275,7 +2336,7 @@ public java.lang.Object getSecondaryCriteria();
 
 secondary_criteria block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#secondary_criteria PolicyRuleSignon#secondary_criteria}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#secondary_criteria PolicyRuleSignon#secondary_criteria}
 
 ---
 
@@ -2311,7 +2372,7 @@ public java.lang.String getFactorType();
 
 Type of a Factor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#factor_type PolicyRuleSignon#factor_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#factor_type PolicyRuleSignon#factor_type}
 
 ---
 
@@ -2325,7 +2386,7 @@ public java.lang.String getProvider();
 
 Factor provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_signon#provider PolicyRuleSignon#provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_signon#provider PolicyRuleSignon#provider}
 
 ---
 

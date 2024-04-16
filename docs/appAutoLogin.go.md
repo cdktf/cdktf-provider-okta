@@ -4,12 +4,12 @@
 
 ### AppAutoLogin <a name="AppAutoLogin" id="@cdktf/provider-okta.appAutoLogin.AppAutoLogin"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/app_auto_login okta_app_auto_login}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_auto_login okta_app_auto_login}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appAutoLogin.AppAutoLogin.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/appautologin"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appautologin"
 
 appautologin.NewAppAutoLogin(scope Construct, id *string, config AppAutoLoginConfig) AppAutoLogin
 ```
@@ -566,7 +566,7 @@ func ResetUserNameTemplateType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.appAutoLogin.AppAutoLogin.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/appautologin"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appautologin"
 
 appautologin.AppAutoLogin_IsConstruct(x interface{}) *bool
 ```
@@ -598,7 +598,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.appAutoLogin.AppAutoLogin.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/appautologin"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appautologin"
 
 appautologin.AppAutoLogin_IsTerraformElement(x interface{}) *bool
 ```
@@ -612,7 +612,7 @@ appautologin.AppAutoLogin_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.appAutoLogin.AppAutoLogin.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/appautologin"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appautologin"
 
 appautologin.AppAutoLogin_IsTerraformResource(x interface{}) *bool
 ```
@@ -626,7 +626,7 @@ appautologin.AppAutoLogin_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.appAutoLogin.AppAutoLogin.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/appautologin"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appautologin"
 
 appautologin.AppAutoLogin_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -655,7 +655,7 @@ The construct id used in the generated config for the AppAutoLogin to import.
 
 The id of the existing AppAutoLogin that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/app_auto_login#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_auto_login#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1460,7 +1460,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.appAutoLogin.AppAutoLoginConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/appautologin"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appautologin"
 
 &appautologin.AppAutoLoginConfig {
 	Connection: interface{},
@@ -1491,7 +1491,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/appautologin"
 	SignOnRedirectUrl: *string,
 	SignOnUrl: *string,
 	Status: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-okta-go/okta/v13.appAutoLogin.AppAutoLoginTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-okta-go/okta.appAutoLogin.AppAutoLoginTimeouts,
 	UserNameTemplate: *string,
 	UserNameTemplatePushStatus: *string,
 	UserNameTemplateSuffix: *string,
@@ -1510,32 +1510,32 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/appautologin"
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginConfig.property.label">Label</a></code> | <code>*string</code> | Pretty name of app. |
+| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginConfig.property.label">Label</a></code> | <code>*string</code> | The Application's display name. |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginConfig.property.accessibilityErrorRedirectUrl">AccessibilityErrorRedirectUrl</a></code> | <code>*string</code> | Custom error page URL. |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginConfig.property.accessibilityLoginRedirectUrl">AccessibilityLoginRedirectUrl</a></code> | <code>*string</code> | Custom login page URL. |
-| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginConfig.property.accessibilitySelfService">AccessibilitySelfService</a></code> | <code>interface{}</code> | Enable self service. |
+| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginConfig.property.accessibilitySelfService">AccessibilitySelfService</a></code> | <code>interface{}</code> | Enable self service. Default is `false`. |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginConfig.property.adminNote">AdminNote</a></code> | <code>*string</code> | Application notes for admins. |
-| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginConfig.property.appLinksJson">AppLinksJson</a></code> | <code>*string</code> | Displays specific appLinks for the app. |
+| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginConfig.property.appLinksJson">AppLinksJson</a></code> | <code>*string</code> | Displays specific appLinks for the app. The value for each application link should be boolean. |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginConfig.property.appSettingsJson">AppSettingsJson</a></code> | <code>*string</code> | Application settings in JSON format. |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginConfig.property.autoSubmitToolbar">AutoSubmitToolbar</a></code> | <code>interface{}</code> | Display auto submit toolbar. |
-| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginConfig.property.credentialsScheme">CredentialsScheme</a></code> | <code>*string</code> | Application credentials scheme. |
+| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginConfig.property.credentialsScheme">CredentialsScheme</a></code> | <code>*string</code> | Application credentials scheme. One of: `EDIT_USERNAME_AND_PASSWORD`, `ADMIN_SETS_CREDENTIALS`, `EDIT_PASSWORD_ONLY`, `EXTERNAL_PASSWORD_SYNC`, or `SHARED_USERNAME_AND_PASSWORD`. |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginConfig.property.enduserNote">EnduserNote</a></code> | <code>*string</code> | Application notes for end users. |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginConfig.property.hideIos">HideIos</a></code> | <code>interface{}</code> | Do not display application icon on mobile app. |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginConfig.property.hideWeb">HideWeb</a></code> | <code>interface{}</code> | Do not display application icon to users. |
-| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/app_auto_login#id AppAutoLogin#id}. |
-| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginConfig.property.logo">Logo</a></code> | <code>*string</code> | Local path to logo of the application. |
-| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginConfig.property.preconfiguredApp">PreconfiguredApp</a></code> | <code>*string</code> | Preconfigured app name. |
+| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_auto_login#id AppAutoLogin#id}. |
+| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginConfig.property.logo">Logo</a></code> | <code>*string</code> | Local file path to the logo. |
+| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginConfig.property.preconfiguredApp">PreconfiguredApp</a></code> | <code>*string</code> | Tells Okta to use an existing application in their application catalog, as opposed to a custom application. |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginConfig.property.revealPassword">RevealPassword</a></code> | <code>interface{}</code> | Allow user to reveal password. |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginConfig.property.sharedPassword">SharedPassword</a></code> | <code>*string</code> | Shared password, required for certain schemes. |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginConfig.property.sharedUsername">SharedUsername</a></code> | <code>*string</code> | Shared username, required for certain schemes. |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginConfig.property.signOnRedirectUrl">SignOnRedirectUrl</a></code> | <code>*string</code> | Post login redirect URL. |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginConfig.property.signOnUrl">SignOnUrl</a></code> | <code>*string</code> | Login URL. |
-| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginConfig.property.status">Status</a></code> | <code>*string</code> | Status of application. |
+| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginConfig.property.status">Status</a></code> | <code>*string</code> | Status of application. By default, it is `ACTIVE`. |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginTimeouts">AppAutoLoginTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginConfig.property.userNameTemplate">UserNameTemplate</a></code> | <code>*string</code> | Username template. |
-| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginConfig.property.userNameTemplatePushStatus">UserNameTemplatePushStatus</a></code> | <code>*string</code> | Push username on update. |
+| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginConfig.property.userNameTemplate">UserNameTemplate</a></code> | <code>*string</code> | Username template. Default: `${source.login}`. |
+| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginConfig.property.userNameTemplatePushStatus">UserNameTemplatePushStatus</a></code> | <code>*string</code> | Push username on update. Valid values: `PUSH` and `DONT_PUSH`. |
 | <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginConfig.property.userNameTemplateSuffix">UserNameTemplateSuffix</a></code> | <code>*string</code> | Username template suffix. |
-| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginConfig.property.userNameTemplateType">UserNameTemplateType</a></code> | <code>*string</code> | Username template type. |
+| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginConfig.property.userNameTemplateType">UserNameTemplateType</a></code> | <code>*string</code> | Username template type. Default: `BUILT_IN`. |
 
 ---
 
@@ -1617,9 +1617,9 @@ Label *string
 
 - *Type:* *string
 
-Pretty name of app.
+The Application's display name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/app_auto_login#label AppAutoLogin#label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_auto_login#label AppAutoLogin#label}
 
 ---
 
@@ -1633,7 +1633,7 @@ AccessibilityErrorRedirectUrl *string
 
 Custom error page URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/app_auto_login#accessibility_error_redirect_url AppAutoLogin#accessibility_error_redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_auto_login#accessibility_error_redirect_url AppAutoLogin#accessibility_error_redirect_url}
 
 ---
 
@@ -1647,7 +1647,7 @@ AccessibilityLoginRedirectUrl *string
 
 Custom login page URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/app_auto_login#accessibility_login_redirect_url AppAutoLogin#accessibility_login_redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_auto_login#accessibility_login_redirect_url AppAutoLogin#accessibility_login_redirect_url}
 
 ---
 
@@ -1659,9 +1659,9 @@ AccessibilitySelfService interface{}
 
 - *Type:* interface{}
 
-Enable self service.
+Enable self service. Default is `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/app_auto_login#accessibility_self_service AppAutoLogin#accessibility_self_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_auto_login#accessibility_self_service AppAutoLogin#accessibility_self_service}
 
 ---
 
@@ -1675,7 +1675,7 @@ AdminNote *string
 
 Application notes for admins.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/app_auto_login#admin_note AppAutoLogin#admin_note}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_auto_login#admin_note AppAutoLogin#admin_note}
 
 ---
 
@@ -1687,9 +1687,9 @@ AppLinksJson *string
 
 - *Type:* *string
 
-Displays specific appLinks for the app.
+Displays specific appLinks for the app. The value for each application link should be boolean.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/app_auto_login#app_links_json AppAutoLogin#app_links_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_auto_login#app_links_json AppAutoLogin#app_links_json}
 
 ---
 
@@ -1703,7 +1703,7 @@ AppSettingsJson *string
 
 Application settings in JSON format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/app_auto_login#app_settings_json AppAutoLogin#app_settings_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_auto_login#app_settings_json AppAutoLogin#app_settings_json}
 
 ---
 
@@ -1717,7 +1717,7 @@ AutoSubmitToolbar interface{}
 
 Display auto submit toolbar.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/app_auto_login#auto_submit_toolbar AppAutoLogin#auto_submit_toolbar}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_auto_login#auto_submit_toolbar AppAutoLogin#auto_submit_toolbar}
 
 ---
 
@@ -1729,9 +1729,9 @@ CredentialsScheme *string
 
 - *Type:* *string
 
-Application credentials scheme.
+Application credentials scheme. One of: `EDIT_USERNAME_AND_PASSWORD`, `ADMIN_SETS_CREDENTIALS`, `EDIT_PASSWORD_ONLY`, `EXTERNAL_PASSWORD_SYNC`, or `SHARED_USERNAME_AND_PASSWORD`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/app_auto_login#credentials_scheme AppAutoLogin#credentials_scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_auto_login#credentials_scheme AppAutoLogin#credentials_scheme}
 
 ---
 
@@ -1745,7 +1745,7 @@ EnduserNote *string
 
 Application notes for end users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/app_auto_login#enduser_note AppAutoLogin#enduser_note}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_auto_login#enduser_note AppAutoLogin#enduser_note}
 
 ---
 
@@ -1759,7 +1759,7 @@ HideIos interface{}
 
 Do not display application icon on mobile app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/app_auto_login#hide_ios AppAutoLogin#hide_ios}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_auto_login#hide_ios AppAutoLogin#hide_ios}
 
 ---
 
@@ -1773,7 +1773,7 @@ HideWeb interface{}
 
 Do not display application icon to users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/app_auto_login#hide_web AppAutoLogin#hide_web}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_auto_login#hide_web AppAutoLogin#hide_web}
 
 ---
 
@@ -1785,7 +1785,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/app_auto_login#id AppAutoLogin#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_auto_login#id AppAutoLogin#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1800,9 +1800,11 @@ Logo *string
 
 - *Type:* *string
 
-Local path to logo of the application.
+Local file path to the logo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/app_auto_login#logo AppAutoLogin#logo}
+The file must be in PNG, JPG, or GIF format, and less than 1 MB in size.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_auto_login#logo AppAutoLogin#logo}
 
 ---
 
@@ -1814,9 +1816,9 @@ PreconfiguredApp *string
 
 - *Type:* *string
 
-Preconfigured app name.
+Tells Okta to use an existing application in their application catalog, as opposed to a custom application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/app_auto_login#preconfigured_app AppAutoLogin#preconfigured_app}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_auto_login#preconfigured_app AppAutoLogin#preconfigured_app}
 
 ---
 
@@ -1830,7 +1832,9 @@ RevealPassword interface{}
 
 Allow user to reveal password.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/app_auto_login#reveal_password AppAutoLogin#reveal_password}
+Default is false. It can not be set to true if credentials_scheme is "ADMIN_SETS_CREDENTIALS", "SHARED_USERNAME_AND_PASSWORD" or "EXTERNAL_PASSWORD_SYNC".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_auto_login#reveal_password AppAutoLogin#reveal_password}
 
 ---
 
@@ -1844,7 +1848,7 @@ SharedPassword *string
 
 Shared password, required for certain schemes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/app_auto_login#shared_password AppAutoLogin#shared_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_auto_login#shared_password AppAutoLogin#shared_password}
 
 ---
 
@@ -1858,7 +1862,7 @@ SharedUsername *string
 
 Shared username, required for certain schemes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/app_auto_login#shared_username AppAutoLogin#shared_username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_auto_login#shared_username AppAutoLogin#shared_username}
 
 ---
 
@@ -1872,7 +1876,7 @@ SignOnRedirectUrl *string
 
 Post login redirect URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/app_auto_login#sign_on_redirect_url AppAutoLogin#sign_on_redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_auto_login#sign_on_redirect_url AppAutoLogin#sign_on_redirect_url}
 
 ---
 
@@ -1886,7 +1890,7 @@ SignOnUrl *string
 
 Login URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/app_auto_login#sign_on_url AppAutoLogin#sign_on_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_auto_login#sign_on_url AppAutoLogin#sign_on_url}
 
 ---
 
@@ -1898,9 +1902,9 @@ Status *string
 
 - *Type:* *string
 
-Status of application.
+Status of application. By default, it is `ACTIVE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/app_auto_login#status AppAutoLogin#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_auto_login#status AppAutoLogin#status}
 
 ---
 
@@ -1914,7 +1918,7 @@ Timeouts AppAutoLoginTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/app_auto_login#timeouts AppAutoLogin#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_auto_login#timeouts AppAutoLogin#timeouts}
 
 ---
 
@@ -1926,9 +1930,9 @@ UserNameTemplate *string
 
 - *Type:* *string
 
-Username template.
+Username template. Default: `${source.login}`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/app_auto_login#user_name_template AppAutoLogin#user_name_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_auto_login#user_name_template AppAutoLogin#user_name_template}
 
 ---
 
@@ -1940,9 +1944,9 @@ UserNameTemplatePushStatus *string
 
 - *Type:* *string
 
-Push username on update.
+Push username on update. Valid values: `PUSH` and `DONT_PUSH`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/app_auto_login#user_name_template_push_status AppAutoLogin#user_name_template_push_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_auto_login#user_name_template_push_status AppAutoLogin#user_name_template_push_status}
 
 ---
 
@@ -1956,7 +1960,7 @@ UserNameTemplateSuffix *string
 
 Username template suffix.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/app_auto_login#user_name_template_suffix AppAutoLogin#user_name_template_suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_auto_login#user_name_template_suffix AppAutoLogin#user_name_template_suffix}
 
 ---
 
@@ -1968,9 +1972,9 @@ UserNameTemplateType *string
 
 - *Type:* *string
 
-Username template type.
+Username template type. Default: `BUILT_IN`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/app_auto_login#user_name_template_type AppAutoLogin#user_name_template_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_auto_login#user_name_template_type AppAutoLogin#user_name_template_type}
 
 ---
 
@@ -1979,7 +1983,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.appAutoLogin.AppAutoLoginTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/appautologin"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appautologin"
 
 &appautologin.AppAutoLoginTimeouts {
 	Create: *string,
@@ -1992,9 +1996,9 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/appautologin"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/app_auto_login#create AppAutoLogin#create}. |
-| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/app_auto_login#read AppAutoLogin#read}. |
-| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/app_auto_login#update AppAutoLogin#update}. |
+| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_auto_login#create AppAutoLogin#create}. |
+| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_auto_login#read AppAutoLogin#read}. |
+| <code><a href="#@cdktf/provider-okta.appAutoLogin.AppAutoLoginTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_auto_login#update AppAutoLogin#update}. |
 
 ---
 
@@ -2006,7 +2010,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/app_auto_login#create AppAutoLogin#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_auto_login#create AppAutoLogin#create}.
 
 ---
 
@@ -2018,7 +2022,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/app_auto_login#read AppAutoLogin#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_auto_login#read AppAutoLogin#read}.
 
 ---
 
@@ -2030,7 +2034,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/app_auto_login#update AppAutoLogin#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_auto_login#update AppAutoLogin#update}.
 
 ---
 
@@ -2041,7 +2045,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appAutoLogin.AppAutoLoginTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/appautologin"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appautologin"
 
 appautologin.NewAppAutoLoginTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppAutoLoginTimeoutsOutputReference
 ```

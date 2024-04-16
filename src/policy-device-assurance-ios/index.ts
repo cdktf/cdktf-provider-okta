@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_device_assurance_ios
+// https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_device_assurance_ios
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,33 +8,33 @@ import * as cdktf from 'cdktf';
 
 export interface PolicyDeviceAssuranceIosConfig extends cdktf.TerraformMetaArguments {
   /**
-  * The device jailbreak. Only for android and iOS platform
+  * Is the device jailbroken in the device assurance policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_device_assurance_ios#jailbreak PolicyDeviceAssuranceIos#jailbreak}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_device_assurance_ios#jailbreak PolicyDeviceAssuranceIos#jailbreak}
   */
   readonly jailbreak?: boolean | cdktf.IResolvable;
   /**
-  * Policy device assurance name
+  * Name of the device assurance policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_device_assurance_ios#name PolicyDeviceAssuranceIos#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_device_assurance_ios#name PolicyDeviceAssuranceIos#name}
   */
   readonly name: string;
   /**
-  * The device os minimum version
+  * Minimum os version of the device in the device assurance policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_device_assurance_ios#os_version PolicyDeviceAssuranceIos#os_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_device_assurance_ios#os_version PolicyDeviceAssuranceIos#os_version}
   */
   readonly osVersion?: string;
   /**
-  * List of screenlock type, can be BIOMETRIC or BIOMETRIC, PASSCODE
+  * List of screenlock type, can be `BIOMETRIC` or `BIOMETRIC, PASSCODE`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_device_assurance_ios#screenlock_type PolicyDeviceAssuranceIos#screenlock_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_device_assurance_ios#screenlock_type PolicyDeviceAssuranceIos#screenlock_type}
   */
   readonly screenlockType?: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_device_assurance_ios okta_policy_device_assurance_ios}
+* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_device_assurance_ios okta_policy_device_assurance_ios}
 */
 export class PolicyDeviceAssuranceIos extends cdktf.TerraformResource {
 
@@ -55,7 +50,7 @@ export class PolicyDeviceAssuranceIos extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a PolicyDeviceAssuranceIos resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PolicyDeviceAssuranceIos to import
-  * @param importFromId The id of the existing PolicyDeviceAssuranceIos that should be imported. Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_device_assurance_ios#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing PolicyDeviceAssuranceIos that should be imported. Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_device_assurance_ios#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PolicyDeviceAssuranceIos to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -67,7 +62,7 @@ export class PolicyDeviceAssuranceIos extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_device_assurance_ios okta_policy_device_assurance_ios} Resource
+  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_device_assurance_ios okta_policy_device_assurance_ios} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -78,7 +73,7 @@ export class PolicyDeviceAssuranceIos extends cdktf.TerraformResource {
       terraformResourceType: 'okta_policy_device_assurance_ios',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '4.8.0',
+        providerVersion: '4.8.1',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

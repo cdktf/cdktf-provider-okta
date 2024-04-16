@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/email_domain
+// https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/email_domain
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,34 +8,34 @@ import * as cdktf from 'cdktf';
 
 export interface EmailDomainConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Brand id
+  * Brand id of the email domain.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/email_domain#brand_id EmailDomain#brand_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/email_domain#brand_id EmailDomain#brand_id}
   */
   readonly brandId: string;
   /**
-  * Display name
+  * Display name of the email domain.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/email_domain#display_name EmailDomain#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/email_domain#display_name EmailDomain#display_name}
   */
   readonly displayName: string;
   /**
-  * Domain name
+  * Mail domain to send from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/email_domain#domain EmailDomain#domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/email_domain#domain EmailDomain#domain}
   */
   readonly domain: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/email_domain#id EmailDomain#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/email_domain#id EmailDomain#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * User name
+  * User name of the email domain.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/email_domain#user_name EmailDomain#user_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/email_domain#user_name EmailDomain#user_name}
   */
   readonly userName: string;
 }
@@ -136,7 +131,7 @@ export class EmailDomainDnsValidationRecordsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/email_domain okta_email_domain}
+* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/email_domain okta_email_domain}
 */
 export class EmailDomain extends cdktf.TerraformResource {
 
@@ -152,7 +147,7 @@ export class EmailDomain extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a EmailDomain resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EmailDomain to import
-  * @param importFromId The id of the existing EmailDomain that should be imported. Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/email_domain#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing EmailDomain that should be imported. Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/email_domain#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EmailDomain to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -164,7 +159,7 @@ export class EmailDomain extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/email_domain okta_email_domain} Resource
+  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/email_domain okta_email_domain} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -175,7 +170,7 @@ export class EmailDomain extends cdktf.TerraformResource {
       terraformResourceType: 'okta_email_domain',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '4.8.0',
+        providerVersion: '4.8.1',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
