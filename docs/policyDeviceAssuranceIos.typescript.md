@@ -4,7 +4,7 @@
 
 ### PolicyDeviceAssuranceIos <a name="PolicyDeviceAssuranceIos" id="@cdktf/provider-okta.policyDeviceAssuranceIos.PolicyDeviceAssuranceIos"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_device_assurance_ios okta_policy_device_assurance_ios}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_device_assurance_ios okta_policy_device_assurance_ios}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.policyDeviceAssuranceIos.PolicyDeviceAssuranceIos.Initializer"></a>
 
@@ -488,7 +488,7 @@ The construct id used in the generated config for the PolicyDeviceAssuranceIos t
 
 The id of the existing PolicyDeviceAssuranceIos that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_device_assurance_ios#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_device_assurance_ios#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -858,10 +858,10 @@ const policyDeviceAssuranceIosConfig: policyDeviceAssuranceIos.PolicyDeviceAssur
 | <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceIos.PolicyDeviceAssuranceIosConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceIos.PolicyDeviceAssuranceIosConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceIos.PolicyDeviceAssuranceIosConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceIos.PolicyDeviceAssuranceIosConfig.property.name">name</a></code> | <code>string</code> | Policy device assurance name. |
-| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceIos.PolicyDeviceAssuranceIosConfig.property.jailbreak">jailbreak</a></code> | <code>boolean \| cdktf.IResolvable</code> | The device jailbreak. Only for android and iOS platform. |
-| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceIos.PolicyDeviceAssuranceIosConfig.property.osVersion">osVersion</a></code> | <code>string</code> | The device os minimum version. |
-| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceIos.PolicyDeviceAssuranceIosConfig.property.screenlockType">screenlockType</a></code> | <code>string[]</code> | List of screenlock type, can be BIOMETRIC or BIOMETRIC, PASSCODE. |
+| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceIos.PolicyDeviceAssuranceIosConfig.property.name">name</a></code> | <code>string</code> | Name of the device assurance policy. |
+| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceIos.PolicyDeviceAssuranceIosConfig.property.jailbreak">jailbreak</a></code> | <code>boolean \| cdktf.IResolvable</code> | Is the device jailbroken in the device assurance policy. |
+| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceIos.PolicyDeviceAssuranceIosConfig.property.osVersion">osVersion</a></code> | <code>string</code> | Minimum os version of the device in the device assurance policy. |
+| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceIos.PolicyDeviceAssuranceIosConfig.property.screenlockType">screenlockType</a></code> | <code>string[]</code> | List of screenlock type, can be `BIOMETRIC` or `BIOMETRIC, PASSCODE`. |
 
 ---
 
@@ -943,9 +943,9 @@ public readonly name: string;
 
 - *Type:* string
 
-Policy device assurance name.
+Name of the device assurance policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_device_assurance_ios#name PolicyDeviceAssuranceIos#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_device_assurance_ios#name PolicyDeviceAssuranceIos#name}
 
 ---
 
@@ -957,9 +957,9 @@ public readonly jailbreak: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-The device jailbreak. Only for android and iOS platform.
+Is the device jailbroken in the device assurance policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_device_assurance_ios#jailbreak PolicyDeviceAssuranceIos#jailbreak}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_device_assurance_ios#jailbreak PolicyDeviceAssuranceIos#jailbreak}
 
 ---
 
@@ -971,9 +971,9 @@ public readonly osVersion: string;
 
 - *Type:* string
 
-The device os minimum version.
+Minimum os version of the device in the device assurance policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_device_assurance_ios#os_version PolicyDeviceAssuranceIos#os_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_device_assurance_ios#os_version PolicyDeviceAssuranceIos#os_version}
 
 ---
 
@@ -985,9 +985,9 @@ public readonly screenlockType: string[];
 
 - *Type:* string[]
 
-List of screenlock type, can be BIOMETRIC or BIOMETRIC, PASSCODE.
+List of screenlock type, can be `BIOMETRIC` or `BIOMETRIC, PASSCODE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_device_assurance_ios#screenlock_type PolicyDeviceAssuranceIos#screenlock_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_device_assurance_ios#screenlock_type PolicyDeviceAssuranceIos#screenlock_type}
 
 ---
 

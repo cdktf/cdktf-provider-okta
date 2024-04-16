@@ -4,7 +4,7 @@
 
 ### PolicyRuleProfileEnrollment <a name="PolicyRuleProfileEnrollment" id="@cdktf/provider-okta.policyRuleProfileEnrollment.PolicyRuleProfileEnrollment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_profile_enrollment okta_policy_rule_profile_enrollment}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_profile_enrollment okta_policy_rule_profile_enrollment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.policyRuleProfileEnrollment.PolicyRuleProfileEnrollment.Initializer"></a>
 
@@ -536,7 +536,7 @@ The construct id used in the generated config for the PolicyRuleProfileEnrollmen
 
 The id of the existing PolicyRuleProfileEnrollment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_profile_enrollment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_profile_enrollment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -995,13 +995,13 @@ const policyRuleProfileEnrollmentConfig: policyRuleProfileEnrollment.PolicyRuleP
 | <code><a href="#@cdktf/provider-okta.policyRuleProfileEnrollment.PolicyRuleProfileEnrollmentConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleProfileEnrollment.PolicyRuleProfileEnrollmentConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleProfileEnrollment.PolicyRuleProfileEnrollmentConfig.property.policyId">policyId</a></code> | <code>string</code> | ID of the policy. |
-| <code><a href="#@cdktf/provider-okta.policyRuleProfileEnrollment.PolicyRuleProfileEnrollmentConfig.property.unknownUserAction">unknownUserAction</a></code> | <code>string</code> | Which action should be taken if this User is new. |
-| <code><a href="#@cdktf/provider-okta.policyRuleProfileEnrollment.PolicyRuleProfileEnrollmentConfig.property.access">access</a></code> | <code>string</code> | Allow or deny access based on the rule conditions: ALLOW or DENY. |
-| <code><a href="#@cdktf/provider-okta.policyRuleProfileEnrollment.PolicyRuleProfileEnrollmentConfig.property.emailVerification">emailVerification</a></code> | <code>boolean \| cdktf.IResolvable</code> | Indicates whether email verification should occur before access is granted. |
-| <code><a href="#@cdktf/provider-okta.policyRuleProfileEnrollment.PolicyRuleProfileEnrollmentConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_profile_enrollment#id PolicyRuleProfileEnrollment#id}. |
+| <code><a href="#@cdktf/provider-okta.policyRuleProfileEnrollment.PolicyRuleProfileEnrollmentConfig.property.unknownUserAction">unknownUserAction</a></code> | <code>string</code> | Which action should be taken if this User is new. Valid values are: `DENY`, `REGISTER`. |
+| <code><a href="#@cdktf/provider-okta.policyRuleProfileEnrollment.PolicyRuleProfileEnrollmentConfig.property.access">access</a></code> | <code>string</code> | Allow or deny access based on the rule conditions. Valid values are: `ALLOW`, `DENY`. Default: `ALLOW`. |
+| <code><a href="#@cdktf/provider-okta.policyRuleProfileEnrollment.PolicyRuleProfileEnrollmentConfig.property.emailVerification">emailVerification</a></code> | <code>boolean \| cdktf.IResolvable</code> | Indicates whether email verification should occur before access is granted. Default: `true`. |
+| <code><a href="#@cdktf/provider-okta.policyRuleProfileEnrollment.PolicyRuleProfileEnrollmentConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_profile_enrollment#id PolicyRuleProfileEnrollment#id}. |
 | <code><a href="#@cdktf/provider-okta.policyRuleProfileEnrollment.PolicyRuleProfileEnrollmentConfig.property.inlineHookId">inlineHookId</a></code> | <code>string</code> | ID of a Registration Inline Hook. |
 | <code><a href="#@cdktf/provider-okta.policyRuleProfileEnrollment.PolicyRuleProfileEnrollmentConfig.property.profileAttributes">profileAttributes</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-okta.policyRuleProfileEnrollment.PolicyRuleProfileEnrollmentProfileAttributes">PolicyRuleProfileEnrollmentProfileAttributes</a>[]</code> | profile_attributes block. |
-| <code><a href="#@cdktf/provider-okta.policyRuleProfileEnrollment.PolicyRuleProfileEnrollmentConfig.property.progressiveProfilingAction">progressiveProfilingAction</a></code> | <code>string</code> | Enabled or disabled progressive profiling action rule conditions: ENABLED or DISABLED. |
+| <code><a href="#@cdktf/provider-okta.policyRuleProfileEnrollment.PolicyRuleProfileEnrollmentConfig.property.progressiveProfilingAction">progressiveProfilingAction</a></code> | <code>string</code> | Enabled or disabled progressive profiling action rule conditions: `ENABLED` or `DISABLED`. Default: `DISABLED`. |
 | <code><a href="#@cdktf/provider-okta.policyRuleProfileEnrollment.PolicyRuleProfileEnrollmentConfig.property.targetGroupId">targetGroupId</a></code> | <code>string</code> | The ID of a Group that this User should be added to. |
 | <code><a href="#@cdktf/provider-okta.policyRuleProfileEnrollment.PolicyRuleProfileEnrollmentConfig.property.uiSchemaId">uiSchemaId</a></code> | <code>string</code> | Value created by the backend. If present all policy updates must include this attribute/value. |
 
@@ -1087,7 +1087,7 @@ public readonly policyId: string;
 
 ID of the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_profile_enrollment#policy_id PolicyRuleProfileEnrollment#policy_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_profile_enrollment#policy_id PolicyRuleProfileEnrollment#policy_id}
 
 ---
 
@@ -1099,9 +1099,9 @@ public readonly unknownUserAction: string;
 
 - *Type:* string
 
-Which action should be taken if this User is new.
+Which action should be taken if this User is new. Valid values are: `DENY`, `REGISTER`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_profile_enrollment#unknown_user_action PolicyRuleProfileEnrollment#unknown_user_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_profile_enrollment#unknown_user_action PolicyRuleProfileEnrollment#unknown_user_action}
 
 ---
 
@@ -1113,9 +1113,9 @@ public readonly access: string;
 
 - *Type:* string
 
-Allow or deny access based on the rule conditions: ALLOW or DENY.
+Allow or deny access based on the rule conditions. Valid values are: `ALLOW`, `DENY`. Default: `ALLOW`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_profile_enrollment#access PolicyRuleProfileEnrollment#access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_profile_enrollment#access PolicyRuleProfileEnrollment#access}
 
 ---
 
@@ -1127,9 +1127,9 @@ public readonly emailVerification: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Indicates whether email verification should occur before access is granted.
+Indicates whether email verification should occur before access is granted. Default: `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_profile_enrollment#email_verification PolicyRuleProfileEnrollment#email_verification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_profile_enrollment#email_verification PolicyRuleProfileEnrollment#email_verification}
 
 ---
 
@@ -1141,7 +1141,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_profile_enrollment#id PolicyRuleProfileEnrollment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_profile_enrollment#id PolicyRuleProfileEnrollment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1158,7 +1158,7 @@ public readonly inlineHookId: string;
 
 ID of a Registration Inline Hook.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_profile_enrollment#inline_hook_id PolicyRuleProfileEnrollment#inline_hook_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_profile_enrollment#inline_hook_id PolicyRuleProfileEnrollment#inline_hook_id}
 
 ---
 
@@ -1172,7 +1172,7 @@ public readonly profileAttributes: IResolvable | PolicyRuleProfileEnrollmentProf
 
 profile_attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_profile_enrollment#profile_attributes PolicyRuleProfileEnrollment#profile_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_profile_enrollment#profile_attributes PolicyRuleProfileEnrollment#profile_attributes}
 
 ---
 
@@ -1184,9 +1184,9 @@ public readonly progressiveProfilingAction: string;
 
 - *Type:* string
 
-Enabled or disabled progressive profiling action rule conditions: ENABLED or DISABLED.
+Enabled or disabled progressive profiling action rule conditions: `ENABLED` or `DISABLED`. Default: `DISABLED`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_profile_enrollment#progressive_profiling_action PolicyRuleProfileEnrollment#progressive_profiling_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_profile_enrollment#progressive_profiling_action PolicyRuleProfileEnrollment#progressive_profiling_action}
 
 ---
 
@@ -1200,7 +1200,7 @@ public readonly targetGroupId: string;
 
 The ID of a Group that this User should be added to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_profile_enrollment#target_group_id PolicyRuleProfileEnrollment#target_group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_profile_enrollment#target_group_id PolicyRuleProfileEnrollment#target_group_id}
 
 ---
 
@@ -1214,7 +1214,7 @@ public readonly uiSchemaId: string;
 
 Value created by the backend. If present all policy updates must include this attribute/value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_profile_enrollment#ui_schema_id PolicyRuleProfileEnrollment#ui_schema_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_profile_enrollment#ui_schema_id PolicyRuleProfileEnrollment#ui_schema_id}
 
 ---
 
@@ -1248,7 +1248,7 @@ public readonly label: string;
 
 A display-friendly label for this property.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_profile_enrollment#label PolicyRuleProfileEnrollment#label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_profile_enrollment#label PolicyRuleProfileEnrollment#label}
 
 ---
 
@@ -1262,7 +1262,7 @@ public readonly name: string;
 
 The name of a User Profile property.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_profile_enrollment#name PolicyRuleProfileEnrollment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_profile_enrollment#name PolicyRuleProfileEnrollment#name}
 
 ---
 
@@ -1276,7 +1276,7 @@ public readonly required: boolean | IResolvable;
 
 Indicates if this property is required for enrollment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/policy_rule_profile_enrollment#required PolicyRuleProfileEnrollment#required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_profile_enrollment#required PolicyRuleProfileEnrollment#required}
 
 ---
 

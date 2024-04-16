@@ -4,7 +4,7 @@
 
 ### Factor <a name="Factor" id="@cdktf/provider-okta.factor.Factor"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/factor okta_factor}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/factor okta_factor}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.factor.Factor.Initializer"></a>
 
@@ -481,7 +481,7 @@ The construct id used in the generated config for the Factor to import.
 
 The id of the existing Factor that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/factor#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/factor#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -774,9 +774,9 @@ new FactorConfig {
 | <code><a href="#@cdktf/provider-okta.factor.FactorConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.factor.FactorConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.factor.FactorConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.factor.FactorConfig.property.providerId">ProviderId</a></code> | <code>string</code> | Factor provider ID. |
-| <code><a href="#@cdktf/provider-okta.factor.FactorConfig.property.active">Active</a></code> | <code>object</code> | Is this provider active? |
-| <code><a href="#@cdktf/provider-okta.factor.FactorConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/factor#id Factor#id}. |
+| <code><a href="#@cdktf/provider-okta.factor.FactorConfig.property.providerId">ProviderId</a></code> | <code>string</code> | The MFA provider name. |
+| <code><a href="#@cdktf/provider-okta.factor.FactorConfig.property.active">Active</a></code> | <code>object</code> | Whether to activate the provider, by default, it is set to `true`. |
+| <code><a href="#@cdktf/provider-okta.factor.FactorConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/factor#id Factor#id}. |
 
 ---
 
@@ -858,9 +858,11 @@ public string ProviderId { get; set; }
 
 - *Type:* string
 
-Factor provider ID.
+The MFA provider name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/factor#provider_id Factor#provider_id}
+Allowed values are `duo`, `fido_u2f`, `fido_webauthn`, `google_otp`, `okta_call`, `okta_otp`, `okta_password`, `okta_push`, `okta_question`, `okta_sms`, `okta_email`, `rsa_token`, `symantec_vip`, `yubikey_token`, or `hotp`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/factor#provider_id Factor#provider_id}
 
 ---
 
@@ -872,9 +874,9 @@ public object Active { get; set; }
 
 - *Type:* object
 
-Is this provider active?
+Whether to activate the provider, by default, it is set to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/factor#active Factor#active}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/factor#active Factor#active}
 
 ---
 
@@ -886,7 +888,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/factor#id Factor#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/factor#id Factor#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

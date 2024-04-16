@@ -4,7 +4,7 @@
 
 ### Authenticator <a name="Authenticator" id="@cdktf/provider-okta.authenticator.Authenticator"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/authenticator okta_authenticator}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/authenticator okta_authenticator}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.authenticator.Authenticator.Initializer"></a>
 
@@ -50,19 +50,19 @@ Authenticator.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-okta.authenticator.Authenticator.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.authenticator.Authenticator.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.authenticator.Authenticator.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.authenticator.Authenticator.Initializer.parameter.key">key</a></code> | <code>java.lang.String</code> | A human-readable string that identifies the Authenticator. |
+| <code><a href="#@cdktf/provider-okta.authenticator.Authenticator.Initializer.parameter.key">key</a></code> | <code>java.lang.String</code> | A human-readable string that identifies the authenticator. |
 | <code><a href="#@cdktf/provider-okta.authenticator.Authenticator.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Display name of the Authenticator. |
-| <code><a href="#@cdktf/provider-okta.authenticator.Authenticator.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/authenticator#id Authenticator#id}. |
-| <code><a href="#@cdktf/provider-okta.authenticator.Authenticator.Initializer.parameter.providerAuthPort">providerAuthPort</a></code> | <code>java.lang.Number</code> | The RADIUS server port (for example 1812). This is defined when the On-Prem RADIUS server is configured. |
-| <code><a href="#@cdktf/provider-okta.authenticator.Authenticator.Initializer.parameter.providerHost">providerHost</a></code> | <code>java.lang.String</code> | The Duo Security API hostname. |
+| <code><a href="#@cdktf/provider-okta.authenticator.Authenticator.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/authenticator#id Authenticator#id}. |
+| <code><a href="#@cdktf/provider-okta.authenticator.Authenticator.Initializer.parameter.providerAuthPort">providerAuthPort</a></code> | <code>java.lang.Number</code> | The RADIUS server port (for example 1812). |
+| <code><a href="#@cdktf/provider-okta.authenticator.Authenticator.Initializer.parameter.providerHost">providerHost</a></code> | <code>java.lang.String</code> | (DUO specific) - The Duo Security API hostname. Conflicts with `provider_json` argument. |
 | <code><a href="#@cdktf/provider-okta.authenticator.Authenticator.Initializer.parameter.providerHostname">providerHostname</a></code> | <code>java.lang.String</code> | Server host name or IP address. |
-| <code><a href="#@cdktf/provider-okta.authenticator.Authenticator.Initializer.parameter.providerIntegrationKey">providerIntegrationKey</a></code> | <code>java.lang.String</code> | The Duo Security integration key. |
-| <code><a href="#@cdktf/provider-okta.authenticator.Authenticator.Initializer.parameter.providerJson">providerJson</a></code> | <code>java.lang.String</code> | Provider in JSON format. |
-| <code><a href="#@cdktf/provider-okta.authenticator.Authenticator.Initializer.parameter.providerSecretKey">providerSecretKey</a></code> | <code>java.lang.String</code> | The Duo Security secret key. |
+| <code><a href="#@cdktf/provider-okta.authenticator.Authenticator.Initializer.parameter.providerIntegrationKey">providerIntegrationKey</a></code> | <code>java.lang.String</code> | (DUO specific) - The Duo Security integration key.  Conflicts with `provider_json` argument. |
+| <code><a href="#@cdktf/provider-okta.authenticator.Authenticator.Initializer.parameter.providerJson">providerJson</a></code> | <code>java.lang.String</code> | Provider JSON allows for expressive providervalues. |
+| <code><a href="#@cdktf/provider-okta.authenticator.Authenticator.Initializer.parameter.providerSecretKey">providerSecretKey</a></code> | <code>java.lang.String</code> | (DUO specific) - The Duo Security secret key.  Conflicts with `provider_json` argument. |
 | <code><a href="#@cdktf/provider-okta.authenticator.Authenticator.Initializer.parameter.providerSharedSecret">providerSharedSecret</a></code> | <code>java.lang.String</code> | An authentication key that must be defined when the RADIUS server is configured, and must be the same on both the RADIUS client and server. |
-| <code><a href="#@cdktf/provider-okta.authenticator.Authenticator.Initializer.parameter.providerUserNameTemplate">providerUserNameTemplate</a></code> | <code>java.lang.String</code> | Format expected by the provider. |
-| <code><a href="#@cdktf/provider-okta.authenticator.Authenticator.Initializer.parameter.settings">settings</a></code> | <code>java.lang.String</code> | Authenticator settings in JSON format. |
-| <code><a href="#@cdktf/provider-okta.authenticator.Authenticator.Initializer.parameter.status">status</a></code> | <code>java.lang.String</code> | Authenticator status: ACTIVE or INACTIVE. |
+| <code><a href="#@cdktf/provider-okta.authenticator.Authenticator.Initializer.parameter.providerUserNameTemplate">providerUserNameTemplate</a></code> | <code>java.lang.String</code> | Username template expected by the provider. Used only for authenticators with type `security_key`.  Conflicts with `provider_json` argument. |
+| <code><a href="#@cdktf/provider-okta.authenticator.Authenticator.Initializer.parameter.settings">settings</a></code> | <code>java.lang.String</code> | Settings for the authenticator. |
+| <code><a href="#@cdktf/provider-okta.authenticator.Authenticator.Initializer.parameter.status">status</a></code> | <code>java.lang.String</code> | Authenticator status: `ACTIVE` or `INACTIVE`. Default: `ACTIVE`. |
 
 ---
 
@@ -130,9 +130,11 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-A human-readable string that identifies the Authenticator.
+A human-readable string that identifies the authenticator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/authenticator#key Authenticator#key}
+Some authenticators are available by feature flag on the organization. Possible values inclue: `duo`, `external_idp`, `google_otp`, `okta_email`, `okta_password`, `okta_verify`, `onprem_mfa`, `phone_number`, `rsa_token`, `security_question`, `webauthn`
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/authenticator#key Authenticator#key}
 
 ---
 
@@ -142,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Display name of the Authenticator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/authenticator#name Authenticator#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/authenticator#name Authenticator#name}
 
 ---
 
@@ -150,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/authenticator#id Authenticator#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/authenticator#id Authenticator#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -161,9 +163,11 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.Number
 
-The RADIUS server port (for example 1812). This is defined when the On-Prem RADIUS server is configured.
+The RADIUS server port (for example 1812).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/authenticator#provider_auth_port Authenticator#provider_auth_port}
+This is defined when the On-Prem RADIUS server is configured. Used only for authenticators with type `security_key`.  Conflicts with `provider_json` argument.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/authenticator#provider_auth_port Authenticator#provider_auth_port}
 
 ---
 
@@ -171,9 +175,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* java.lang.String
 
-The Duo Security API hostname.
+(DUO specific) - The Duo Security API hostname. Conflicts with `provider_json` argument.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/authenticator#provider_host Authenticator#provider_host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/authenticator#provider_host Authenticator#provider_host}
 
 ---
 
@@ -183,7 +187,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Server host name or IP address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/authenticator#provider_hostname Authenticator#provider_hostname}
+Default is `localhost`. Used only for authenticators with type `security_key`. Conflicts with `provider_json` argument.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/authenticator#provider_hostname Authenticator#provider_hostname}
 
 ---
 
@@ -191,9 +197,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* java.lang.String
 
-The Duo Security integration key.
+(DUO specific) - The Duo Security integration key.  Conflicts with `provider_json` argument.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/authenticator#provider_integration_key Authenticator#provider_integration_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/authenticator#provider_integration_key Authenticator#provider_integration_key}
 
 ---
 
@@ -201,9 +207,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* java.lang.String
 
-Provider in JSON format.
+Provider JSON allows for expressive providervalues.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/authenticator#provider_json Authenticator#provider_json}
+This argument conflicts with the other 'provider_xxx' arguments. The [CreateProvider](https://developer.okta.com/docs/reference/api/authenticators-admin/#request) illustrates detailed provider values for a Duo authenticator. [Provider values](https://developer.okta.com/docs/reference/api/authenticators-admin/#authenticators-administration-api-object)are listed in Okta API.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/authenticator#provider_json Authenticator#provider_json}
 
 ---
 
@@ -211,9 +219,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* java.lang.String
 
-The Duo Security secret key.
+(DUO specific) - The Duo Security secret key.  Conflicts with `provider_json` argument.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/authenticator#provider_secret_key Authenticator#provider_secret_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/authenticator#provider_secret_key Authenticator#provider_secret_key}
 
 ---
 
@@ -223,7 +231,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 An authentication key that must be defined when the RADIUS server is configured, and must be the same on both the RADIUS client and server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/authenticator#provider_shared_secret Authenticator#provider_shared_secret}
+Used only for authenticators with type `security_key`. Conflicts with `provider_json` argument.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/authenticator#provider_shared_secret Authenticator#provider_shared_secret}
 
 ---
 
@@ -231,9 +241,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* java.lang.String
 
-Format expected by the provider.
+Username template expected by the provider. Used only for authenticators with type `security_key`.  Conflicts with `provider_json` argument.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/authenticator#provider_user_name_template Authenticator#provider_user_name_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/authenticator#provider_user_name_template Authenticator#provider_user_name_template}
 
 ---
 
@@ -241,9 +251,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* java.lang.String
 
-Authenticator settings in JSON format.
+Settings for the authenticator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/authenticator#settings Authenticator#settings}
+The settings JSON contains values based on Authenticator key. It is not used for authenticators with type `security_key`
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/authenticator#settings Authenticator#settings}
 
 ---
 
@@ -251,9 +263,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* java.lang.String
 
-Authenticator status: ACTIVE or INACTIVE.
+Authenticator status: `ACTIVE` or `INACTIVE`. Default: `ACTIVE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/authenticator#status Authenticator#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/authenticator#status Authenticator#status}
 
 ---
 
@@ -757,7 +769,7 @@ The construct id used in the generated config for the Authenticator to import.
 
 The id of the existing Authenticator that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/authenticator#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/authenticator#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1317,19 +1329,19 @@ AuthenticatorConfig.builder()
 | <code><a href="#@cdktf/provider-okta.authenticator.AuthenticatorConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.authenticator.AuthenticatorConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.authenticator.AuthenticatorConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.authenticator.AuthenticatorConfig.property.key">key</a></code> | <code>java.lang.String</code> | A human-readable string that identifies the Authenticator. |
+| <code><a href="#@cdktf/provider-okta.authenticator.AuthenticatorConfig.property.key">key</a></code> | <code>java.lang.String</code> | A human-readable string that identifies the authenticator. |
 | <code><a href="#@cdktf/provider-okta.authenticator.AuthenticatorConfig.property.name">name</a></code> | <code>java.lang.String</code> | Display name of the Authenticator. |
-| <code><a href="#@cdktf/provider-okta.authenticator.AuthenticatorConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/authenticator#id Authenticator#id}. |
-| <code><a href="#@cdktf/provider-okta.authenticator.AuthenticatorConfig.property.providerAuthPort">providerAuthPort</a></code> | <code>java.lang.Number</code> | The RADIUS server port (for example 1812). This is defined when the On-Prem RADIUS server is configured. |
-| <code><a href="#@cdktf/provider-okta.authenticator.AuthenticatorConfig.property.providerHost">providerHost</a></code> | <code>java.lang.String</code> | The Duo Security API hostname. |
+| <code><a href="#@cdktf/provider-okta.authenticator.AuthenticatorConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/authenticator#id Authenticator#id}. |
+| <code><a href="#@cdktf/provider-okta.authenticator.AuthenticatorConfig.property.providerAuthPort">providerAuthPort</a></code> | <code>java.lang.Number</code> | The RADIUS server port (for example 1812). |
+| <code><a href="#@cdktf/provider-okta.authenticator.AuthenticatorConfig.property.providerHost">providerHost</a></code> | <code>java.lang.String</code> | (DUO specific) - The Duo Security API hostname. Conflicts with `provider_json` argument. |
 | <code><a href="#@cdktf/provider-okta.authenticator.AuthenticatorConfig.property.providerHostname">providerHostname</a></code> | <code>java.lang.String</code> | Server host name or IP address. |
-| <code><a href="#@cdktf/provider-okta.authenticator.AuthenticatorConfig.property.providerIntegrationKey">providerIntegrationKey</a></code> | <code>java.lang.String</code> | The Duo Security integration key. |
-| <code><a href="#@cdktf/provider-okta.authenticator.AuthenticatorConfig.property.providerJson">providerJson</a></code> | <code>java.lang.String</code> | Provider in JSON format. |
-| <code><a href="#@cdktf/provider-okta.authenticator.AuthenticatorConfig.property.providerSecretKey">providerSecretKey</a></code> | <code>java.lang.String</code> | The Duo Security secret key. |
+| <code><a href="#@cdktf/provider-okta.authenticator.AuthenticatorConfig.property.providerIntegrationKey">providerIntegrationKey</a></code> | <code>java.lang.String</code> | (DUO specific) - The Duo Security integration key.  Conflicts with `provider_json` argument. |
+| <code><a href="#@cdktf/provider-okta.authenticator.AuthenticatorConfig.property.providerJson">providerJson</a></code> | <code>java.lang.String</code> | Provider JSON allows for expressive providervalues. |
+| <code><a href="#@cdktf/provider-okta.authenticator.AuthenticatorConfig.property.providerSecretKey">providerSecretKey</a></code> | <code>java.lang.String</code> | (DUO specific) - The Duo Security secret key.  Conflicts with `provider_json` argument. |
 | <code><a href="#@cdktf/provider-okta.authenticator.AuthenticatorConfig.property.providerSharedSecret">providerSharedSecret</a></code> | <code>java.lang.String</code> | An authentication key that must be defined when the RADIUS server is configured, and must be the same on both the RADIUS client and server. |
-| <code><a href="#@cdktf/provider-okta.authenticator.AuthenticatorConfig.property.providerUserNameTemplate">providerUserNameTemplate</a></code> | <code>java.lang.String</code> | Format expected by the provider. |
-| <code><a href="#@cdktf/provider-okta.authenticator.AuthenticatorConfig.property.settings">settings</a></code> | <code>java.lang.String</code> | Authenticator settings in JSON format. |
-| <code><a href="#@cdktf/provider-okta.authenticator.AuthenticatorConfig.property.status">status</a></code> | <code>java.lang.String</code> | Authenticator status: ACTIVE or INACTIVE. |
+| <code><a href="#@cdktf/provider-okta.authenticator.AuthenticatorConfig.property.providerUserNameTemplate">providerUserNameTemplate</a></code> | <code>java.lang.String</code> | Username template expected by the provider. Used only for authenticators with type `security_key`.  Conflicts with `provider_json` argument. |
+| <code><a href="#@cdktf/provider-okta.authenticator.AuthenticatorConfig.property.settings">settings</a></code> | <code>java.lang.String</code> | Settings for the authenticator. |
+| <code><a href="#@cdktf/provider-okta.authenticator.AuthenticatorConfig.property.status">status</a></code> | <code>java.lang.String</code> | Authenticator status: `ACTIVE` or `INACTIVE`. Default: `ACTIVE`. |
 
 ---
 
@@ -1411,9 +1423,11 @@ public java.lang.String getKey();
 
 - *Type:* java.lang.String
 
-A human-readable string that identifies the Authenticator.
+A human-readable string that identifies the authenticator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/authenticator#key Authenticator#key}
+Some authenticators are available by feature flag on the organization. Possible values inclue: `duo`, `external_idp`, `google_otp`, `okta_email`, `okta_password`, `okta_verify`, `onprem_mfa`, `phone_number`, `rsa_token`, `security_question`, `webauthn`
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/authenticator#key Authenticator#key}
 
 ---
 
@@ -1427,7 +1441,7 @@ public java.lang.String getName();
 
 Display name of the Authenticator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/authenticator#name Authenticator#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/authenticator#name Authenticator#name}
 
 ---
 
@@ -1439,7 +1453,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/authenticator#id Authenticator#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/authenticator#id Authenticator#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1454,9 +1468,11 @@ public java.lang.Number getProviderAuthPort();
 
 - *Type:* java.lang.Number
 
-The RADIUS server port (for example 1812). This is defined when the On-Prem RADIUS server is configured.
+The RADIUS server port (for example 1812).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/authenticator#provider_auth_port Authenticator#provider_auth_port}
+This is defined when the On-Prem RADIUS server is configured. Used only for authenticators with type `security_key`.  Conflicts with `provider_json` argument.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/authenticator#provider_auth_port Authenticator#provider_auth_port}
 
 ---
 
@@ -1468,9 +1484,9 @@ public java.lang.String getProviderHost();
 
 - *Type:* java.lang.String
 
-The Duo Security API hostname.
+(DUO specific) - The Duo Security API hostname. Conflicts with `provider_json` argument.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/authenticator#provider_host Authenticator#provider_host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/authenticator#provider_host Authenticator#provider_host}
 
 ---
 
@@ -1484,7 +1500,9 @@ public java.lang.String getProviderHostname();
 
 Server host name or IP address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/authenticator#provider_hostname Authenticator#provider_hostname}
+Default is `localhost`. Used only for authenticators with type `security_key`. Conflicts with `provider_json` argument.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/authenticator#provider_hostname Authenticator#provider_hostname}
 
 ---
 
@@ -1496,9 +1514,9 @@ public java.lang.String getProviderIntegrationKey();
 
 - *Type:* java.lang.String
 
-The Duo Security integration key.
+(DUO specific) - The Duo Security integration key.  Conflicts with `provider_json` argument.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/authenticator#provider_integration_key Authenticator#provider_integration_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/authenticator#provider_integration_key Authenticator#provider_integration_key}
 
 ---
 
@@ -1510,9 +1528,11 @@ public java.lang.String getProviderJson();
 
 - *Type:* java.lang.String
 
-Provider in JSON format.
+Provider JSON allows for expressive providervalues.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/authenticator#provider_json Authenticator#provider_json}
+This argument conflicts with the other 'provider_xxx' arguments. The [CreateProvider](https://developer.okta.com/docs/reference/api/authenticators-admin/#request) illustrates detailed provider values for a Duo authenticator. [Provider values](https://developer.okta.com/docs/reference/api/authenticators-admin/#authenticators-administration-api-object)are listed in Okta API.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/authenticator#provider_json Authenticator#provider_json}
 
 ---
 
@@ -1524,9 +1544,9 @@ public java.lang.String getProviderSecretKey();
 
 - *Type:* java.lang.String
 
-The Duo Security secret key.
+(DUO specific) - The Duo Security secret key.  Conflicts with `provider_json` argument.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/authenticator#provider_secret_key Authenticator#provider_secret_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/authenticator#provider_secret_key Authenticator#provider_secret_key}
 
 ---
 
@@ -1540,7 +1560,9 @@ public java.lang.String getProviderSharedSecret();
 
 An authentication key that must be defined when the RADIUS server is configured, and must be the same on both the RADIUS client and server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/authenticator#provider_shared_secret Authenticator#provider_shared_secret}
+Used only for authenticators with type `security_key`. Conflicts with `provider_json` argument.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/authenticator#provider_shared_secret Authenticator#provider_shared_secret}
 
 ---
 
@@ -1552,9 +1574,9 @@ public java.lang.String getProviderUserNameTemplate();
 
 - *Type:* java.lang.String
 
-Format expected by the provider.
+Username template expected by the provider. Used only for authenticators with type `security_key`.  Conflicts with `provider_json` argument.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/authenticator#provider_user_name_template Authenticator#provider_user_name_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/authenticator#provider_user_name_template Authenticator#provider_user_name_template}
 
 ---
 
@@ -1566,9 +1588,11 @@ public java.lang.String getSettings();
 
 - *Type:* java.lang.String
 
-Authenticator settings in JSON format.
+Settings for the authenticator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/authenticator#settings Authenticator#settings}
+The settings JSON contains values based on Authenticator key. It is not used for authenticators with type `security_key`
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/authenticator#settings Authenticator#settings}
 
 ---
 
@@ -1580,9 +1604,9 @@ public java.lang.String getStatus();
 
 - *Type:* java.lang.String
 
-Authenticator status: ACTIVE or INACTIVE.
+Authenticator status: `ACTIVE` or `INACTIVE`. Default: `ACTIVE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/authenticator#status Authenticator#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/authenticator#status Authenticator#status}
 
 ---
 

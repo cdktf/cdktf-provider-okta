@@ -4,7 +4,7 @@
 
 ### GroupRole <a name="GroupRole" id="@cdktf/provider-okta.groupRole.GroupRole"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/group_role okta_group_role}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/group_role okta_group_role}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.groupRole.GroupRole.Initializer"></a>
 
@@ -42,11 +42,11 @@ groupRole.GroupRole(
 | <code><a href="#@cdktf/provider-okta.groupRole.GroupRole.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRole.GroupRole.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRole.GroupRole.Initializer.parameter.groupId">group_id</a></code> | <code>str</code> | ID of group to attach admin roles to. |
-| <code><a href="#@cdktf/provider-okta.groupRole.GroupRole.Initializer.parameter.roleType">role_type</a></code> | <code>str</code> | Type of Role to assign. |
+| <code><a href="#@cdktf/provider-okta.groupRole.GroupRole.Initializer.parameter.roleType">role_type</a></code> | <code>str</code> | Admin role assigned to the group. |
 | <code><a href="#@cdktf/provider-okta.groupRole.GroupRole.Initializer.parameter.disableNotifications">disable_notifications</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When this setting is enabled, the admins won't receive any of the default Okta administrator emails. |
-| <code><a href="#@cdktf/provider-okta.groupRole.GroupRole.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/group_role#id GroupRole#id}. |
-| <code><a href="#@cdktf/provider-okta.groupRole.GroupRole.Initializer.parameter.targetAppList">target_app_list</a></code> | <code>typing.List[str]</code> | List of apps ids for the targets of the admin role. |
-| <code><a href="#@cdktf/provider-okta.groupRole.GroupRole.Initializer.parameter.targetGroupList">target_group_list</a></code> | <code>typing.List[str]</code> | List of groups ids for the targets of the admin role. |
+| <code><a href="#@cdktf/provider-okta.groupRole.GroupRole.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/group_role#id GroupRole#id}. |
+| <code><a href="#@cdktf/provider-okta.groupRole.GroupRole.Initializer.parameter.targetAppList">target_app_list</a></code> | <code>typing.List[str]</code> | A list of app names (name represents set of app instances, like 'salesforce' or 'facebook'), or a combination of app name and app instance ID (like 'facebook.0oapsqQ6dv19pqyEo0g3') you would like as the targets of the admin role. - Only supported when used with the role type `APP_ADMIN`. |
+| <code><a href="#@cdktf/provider-okta.groupRole.GroupRole.Initializer.parameter.targetGroupList">target_group_list</a></code> | <code>typing.List[str]</code> | A list of group IDs you would like as the targets of the admin role. |
 
 ---
 
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 ID of group to attach admin roles to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/group_role#group_id GroupRole#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/group_role#group_id GroupRole#group_id}
 
 ---
 
@@ -124,9 +124,24 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* str
 
-Type of Role to assign.
+Admin role assigned to the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/group_role#role_type GroupRole#role_type}
+It can be any one of the following values:
+"API_ADMIN",
+"APP_ADMIN",
+"CUSTOM",
+"GROUP_MEMBERSHIP_ADMIN",
+"HELP_DESK_ADMIN",
+"MOBILE_ADMIN",
+"ORG_ADMIN",
+"READ_ONLY_ADMIN",
+"REPORT_ADMIN",
+"SUPER_ADMIN",
+"USER_ADMIN"
+. See [API Docs](https://developer.okta.com/docs/reference/api/roles/#role-types).
+- "USER_ADMIN" is the Group Administrator.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/group_role#role_type GroupRole#role_type}
 
 ---
 
@@ -136,7 +151,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 When this setting is enabled, the admins won't receive any of the default Okta administrator emails.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/group_role#disable_notifications GroupRole#disable_notifications}
+These admins also won't have access to contact Okta Support and open support cases on behalf of your org.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/group_role#disable_notifications GroupRole#disable_notifications}
 
 ---
 
@@ -144,7 +161,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/group_role#id GroupRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/group_role#id GroupRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -155,9 +172,9 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* typing.List[str]
 
-List of apps ids for the targets of the admin role.
+A list of app names (name represents set of app instances, like 'salesforce' or 'facebook'), or a combination of app name and app instance ID (like 'facebook.0oapsqQ6dv19pqyEo0g3') you would like as the targets of the admin role. - Only supported when used with the role type `APP_ADMIN`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/group_role#target_app_list GroupRole#target_app_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/group_role#target_app_list GroupRole#target_app_list}
 
 ---
 
@@ -165,9 +182,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* typing.List[str]
 
-List of groups ids for the targets of the admin role.
+A list of group IDs you would like as the targets of the admin role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/group_role#target_group_list GroupRole#target_group_list}
+* Only supported when used with the role types: `GROUP_MEMBERSHIP_ADMIN`, `HELP_DESK_ADMIN`, or `USER_ADMIN`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/group_role#target_group_list GroupRole#target_group_list}
 
 ---
 
@@ -668,7 +687,7 @@ The construct id used in the generated config for the GroupRole to import.
 
 The id of the existing GroupRole that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/group_role#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/group_role#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1031,11 +1050,11 @@ groupRole.GroupRoleConfig(
 | <code><a href="#@cdktf/provider-okta.groupRole.GroupRoleConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRole.GroupRoleConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRole.GroupRoleConfig.property.groupId">group_id</a></code> | <code>str</code> | ID of group to attach admin roles to. |
-| <code><a href="#@cdktf/provider-okta.groupRole.GroupRoleConfig.property.roleType">role_type</a></code> | <code>str</code> | Type of Role to assign. |
+| <code><a href="#@cdktf/provider-okta.groupRole.GroupRoleConfig.property.roleType">role_type</a></code> | <code>str</code> | Admin role assigned to the group. |
 | <code><a href="#@cdktf/provider-okta.groupRole.GroupRoleConfig.property.disableNotifications">disable_notifications</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When this setting is enabled, the admins won't receive any of the default Okta administrator emails. |
-| <code><a href="#@cdktf/provider-okta.groupRole.GroupRoleConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/group_role#id GroupRole#id}. |
-| <code><a href="#@cdktf/provider-okta.groupRole.GroupRoleConfig.property.targetAppList">target_app_list</a></code> | <code>typing.List[str]</code> | List of apps ids for the targets of the admin role. |
-| <code><a href="#@cdktf/provider-okta.groupRole.GroupRoleConfig.property.targetGroupList">target_group_list</a></code> | <code>typing.List[str]</code> | List of groups ids for the targets of the admin role. |
+| <code><a href="#@cdktf/provider-okta.groupRole.GroupRoleConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/group_role#id GroupRole#id}. |
+| <code><a href="#@cdktf/provider-okta.groupRole.GroupRoleConfig.property.targetAppList">target_app_list</a></code> | <code>typing.List[str]</code> | A list of app names (name represents set of app instances, like 'salesforce' or 'facebook'), or a combination of app name and app instance ID (like 'facebook.0oapsqQ6dv19pqyEo0g3') you would like as the targets of the admin role. - Only supported when used with the role type `APP_ADMIN`. |
+| <code><a href="#@cdktf/provider-okta.groupRole.GroupRoleConfig.property.targetGroupList">target_group_list</a></code> | <code>typing.List[str]</code> | A list of group IDs you would like as the targets of the admin role. |
 
 ---
 
@@ -1119,7 +1138,7 @@ group_id: str
 
 ID of group to attach admin roles to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/group_role#group_id GroupRole#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/group_role#group_id GroupRole#group_id}
 
 ---
 
@@ -1131,9 +1150,24 @@ role_type: str
 
 - *Type:* str
 
-Type of Role to assign.
+Admin role assigned to the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/group_role#role_type GroupRole#role_type}
+It can be any one of the following values:
+"API_ADMIN",
+"APP_ADMIN",
+"CUSTOM",
+"GROUP_MEMBERSHIP_ADMIN",
+"HELP_DESK_ADMIN",
+"MOBILE_ADMIN",
+"ORG_ADMIN",
+"READ_ONLY_ADMIN",
+"REPORT_ADMIN",
+"SUPER_ADMIN",
+"USER_ADMIN"
+. See [API Docs](https://developer.okta.com/docs/reference/api/roles/#role-types).
+- "USER_ADMIN" is the Group Administrator.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/group_role#role_type GroupRole#role_type}
 
 ---
 
@@ -1147,7 +1181,9 @@ disable_notifications: typing.Union[bool, IResolvable]
 
 When this setting is enabled, the admins won't receive any of the default Okta administrator emails.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/group_role#disable_notifications GroupRole#disable_notifications}
+These admins also won't have access to contact Okta Support and open support cases on behalf of your org.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/group_role#disable_notifications GroupRole#disable_notifications}
 
 ---
 
@@ -1159,7 +1195,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/group_role#id GroupRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/group_role#id GroupRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1174,9 +1210,9 @@ target_app_list: typing.List[str]
 
 - *Type:* typing.List[str]
 
-List of apps ids for the targets of the admin role.
+A list of app names (name represents set of app instances, like 'salesforce' or 'facebook'), or a combination of app name and app instance ID (like 'facebook.0oapsqQ6dv19pqyEo0g3') you would like as the targets of the admin role. - Only supported when used with the role type `APP_ADMIN`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/group_role#target_app_list GroupRole#target_app_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/group_role#target_app_list GroupRole#target_app_list}
 
 ---
 
@@ -1188,9 +1224,11 @@ target_group_list: typing.List[str]
 
 - *Type:* typing.List[str]
 
-List of groups ids for the targets of the admin role.
+A list of group IDs you would like as the targets of the admin role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/group_role#target_group_list GroupRole#target_group_list}
+* Only supported when used with the role types: `GROUP_MEMBERSHIP_ADMIN`, `HELP_DESK_ADMIN`, or `USER_ADMIN`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/group_role#target_group_list GroupRole#target_group_list}
 
 ---
 

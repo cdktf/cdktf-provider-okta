@@ -4,7 +4,7 @@
 
 ### EmailCustomization <a name="EmailCustomization" id="@cdktf/provider-okta.emailCustomization.EmailCustomization"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/email_customization okta_email_customization}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/email_customization okta_email_customization}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.emailCustomization.EmailCustomization.Initializer"></a>
 
@@ -502,7 +502,7 @@ The construct id used in the generated config for the EmailCustomization to impo
 
 The id of the existing EmailCustomization that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/email_customization#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/email_customization#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -910,11 +910,11 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/emailcustomization"
 | <code><a href="#@cdktf/provider-okta.emailCustomization.EmailCustomizationConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.emailCustomization.EmailCustomizationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.emailCustomization.EmailCustomizationConfig.property.brandId">BrandId</a></code> | <code>*string</code> | Brand ID. |
-| <code><a href="#@cdktf/provider-okta.emailCustomization.EmailCustomizationConfig.property.templateName">TemplateName</a></code> | <code>*string</code> | Template Name. |
+| <code><a href="#@cdktf/provider-okta.emailCustomization.EmailCustomizationConfig.property.templateName">TemplateName</a></code> | <code>*string</code> | Template Name - Example values: `AccountLockout`,`ADForgotPassword`,`ADForgotPasswordDenied`,`ADSelfServiceUnlock`,`ADUserActivation`,`AuthenticatorEnrolled`,`AuthenticatorReset`,`ChangeEmailConfirmation`,`EmailChallenge`,`EmailChangeConfirmation`,`EmailFactorVerification`,`ForgotPassword`,`ForgotPasswordDenied`,`IGAReviewerEndNotification`,`IGAReviewerNotification`,`IGAReviewerPendingNotification`,`IGAReviewerReassigned`,`LDAPForgotPassword`,`LDAPForgotPasswordDenied`,`LDAPSelfServiceUnlock`,`LDAPUserActivation`,`MyAccountChangeConfirmation`,`NewSignOnNotification`,`OktaVerifyActivation`,`PasswordChanged`,`PasswordResetByAdmin`,`PendingEmailChange`,`RegistrationActivation`,`RegistrationEmailVerification`,`SelfServiceUnlock`,`SelfServiceUnlockOnUnlockedAccount`,`UserActivation`. |
 | <code><a href="#@cdktf/provider-okta.emailCustomization.EmailCustomizationConfig.property.body">Body</a></code> | <code>*string</code> | The body of the customization. |
 | <code><a href="#@cdktf/provider-okta.emailCustomization.EmailCustomizationConfig.property.forceIsDefault">ForceIsDefault</a></code> | <code>*string</code> | Force is_default on the create and delete by deleting all email customizations. |
 | <code><a href="#@cdktf/provider-okta.emailCustomization.EmailCustomizationConfig.property.isDefault">IsDefault</a></code> | <code>interface{}</code> | Whether the customization is the default. |
-| <code><a href="#@cdktf/provider-okta.emailCustomization.EmailCustomizationConfig.property.language">Language</a></code> | <code>*string</code> | The language supported by the customization. |
+| <code><a href="#@cdktf/provider-okta.emailCustomization.EmailCustomizationConfig.property.language">Language</a></code> | <code>*string</code> | The language supported by the customization - Example values from [supported languages](https://developer.okta.com/docs/reference/api/brands/#supported-languages). |
 | <code><a href="#@cdktf/provider-okta.emailCustomization.EmailCustomizationConfig.property.subject">Subject</a></code> | <code>*string</code> | The subject of the customization. |
 
 ---
@@ -999,7 +999,7 @@ BrandId *string
 
 Brand ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/email_customization#brand_id EmailCustomization#brand_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/email_customization#brand_id EmailCustomization#brand_id}
 
 ---
 
@@ -1011,9 +1011,9 @@ TemplateName *string
 
 - *Type:* *string
 
-Template Name.
+Template Name - Example values: `AccountLockout`,`ADForgotPassword`,`ADForgotPasswordDenied`,`ADSelfServiceUnlock`,`ADUserActivation`,`AuthenticatorEnrolled`,`AuthenticatorReset`,`ChangeEmailConfirmation`,`EmailChallenge`,`EmailChangeConfirmation`,`EmailFactorVerification`,`ForgotPassword`,`ForgotPasswordDenied`,`IGAReviewerEndNotification`,`IGAReviewerNotification`,`IGAReviewerPendingNotification`,`IGAReviewerReassigned`,`LDAPForgotPassword`,`LDAPForgotPasswordDenied`,`LDAPSelfServiceUnlock`,`LDAPUserActivation`,`MyAccountChangeConfirmation`,`NewSignOnNotification`,`OktaVerifyActivation`,`PasswordChanged`,`PasswordResetByAdmin`,`PendingEmailChange`,`RegistrationActivation`,`RegistrationEmailVerification`,`SelfServiceUnlock`,`SelfServiceUnlockOnUnlockedAccount`,`UserActivation`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/email_customization#template_name EmailCustomization#template_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/email_customization#template_name EmailCustomization#template_name}
 
 ---
 
@@ -1027,7 +1027,7 @@ Body *string
 
 The body of the customization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/email_customization#body EmailCustomization#body}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/email_customization#body EmailCustomization#body}
 
 ---
 
@@ -1043,7 +1043,7 @@ Force is_default on the create and delete by deleting all email customizations.
 
 Comma separated string with values of 'create' or 'destroy' or both `create,destroy'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/email_customization#force_is_default EmailCustomization#force_is_default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/email_customization#force_is_default EmailCustomization#force_is_default}
 
 ---
 
@@ -1057,7 +1057,7 @@ IsDefault interface{}
 
 Whether the customization is the default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/email_customization#is_default EmailCustomization#is_default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/email_customization#is_default EmailCustomization#is_default}
 
 ---
 
@@ -1069,9 +1069,9 @@ Language *string
 
 - *Type:* *string
 
-The language supported by the customization.
+The language supported by the customization - Example values from [supported languages](https://developer.okta.com/docs/reference/api/brands/#supported-languages).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/email_customization#language EmailCustomization#language}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/email_customization#language EmailCustomization#language}
 
 ---
 
@@ -1085,7 +1085,7 @@ Subject *string
 
 The subject of the customization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.0/docs/resources/email_customization#subject EmailCustomization#subject}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/email_customization#subject EmailCustomization#subject}
 
 ---
 
