@@ -24,7 +24,8 @@ customizedSigninPage.CustomizedSigninPage(
   brand_id: str,
   page_content: str,
   widget_version: str,
-  content_security_policy_setting: CustomizedSigninPageContentSecurityPolicySetting = None
+  content_security_policy_setting: CustomizedSigninPageContentSecurityPolicySetting = None,
+  widget_customizations: CustomizedSigninPageWidgetCustomizations = None
 )
 ```
 
@@ -43,6 +44,7 @@ customizedSigninPage.CustomizedSigninPage(
 | <code><a href="#@cdktf/provider-okta.customizedSigninPage.CustomizedSigninPage.Initializer.parameter.pageContent">page_content</a></code> | <code>str</code> | page content of the preview signin page. |
 | <code><a href="#@cdktf/provider-okta.customizedSigninPage.CustomizedSigninPage.Initializer.parameter.widgetVersion">widget_version</a></code> | <code>str</code> | widget version specified as a Semver. |
 | <code><a href="#@cdktf/provider-okta.customizedSigninPage.CustomizedSigninPage.Initializer.parameter.contentSecurityPolicySetting">content_security_policy_setting</a></code> | <code><a href="#@cdktf/provider-okta.customizedSigninPage.CustomizedSigninPageContentSecurityPolicySetting">CustomizedSigninPageContentSecurityPolicySetting</a></code> | content_security_policy_setting block. |
+| <code><a href="#@cdktf/provider-okta.customizedSigninPage.CustomizedSigninPage.Initializer.parameter.widgetCustomizations">widget_customizations</a></code> | <code><a href="#@cdktf/provider-okta.customizedSigninPage.CustomizedSigninPageWidgetCustomizations">CustomizedSigninPageWidgetCustomizations</a></code> | widget_customizations block. |
 
 ---
 
@@ -153,6 +155,16 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 ---
 
+##### `widget_customizations`<sup>Optional</sup> <a name="widget_customizations" id="@cdktf/provider-okta.customizedSigninPage.CustomizedSigninPage.Initializer.parameter.widgetCustomizations"></a>
+
+- *Type:* <a href="#@cdktf/provider-okta.customizedSigninPage.CustomizedSigninPageWidgetCustomizations">CustomizedSigninPageWidgetCustomizations</a>
+
+widget_customizations block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/customized_signin_page#widget_customizations CustomizedSigninPage#widget_customizations}
+
+---
+
 #### Methods <a name="Methods" id="Methods"></a>
 
 | **Name** | **Description** |
@@ -181,7 +193,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 | <code><a href="#@cdktf/provider-okta.customizedSigninPage.CustomizedSigninPage.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-okta.customizedSigninPage.CustomizedSigninPage.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-okta.customizedSigninPage.CustomizedSigninPage.putContentSecurityPolicySetting">put_content_security_policy_setting</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.customizedSigninPage.CustomizedSigninPage.putWidgetCustomizations">put_widget_customizations</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.customizedSigninPage.CustomizedSigninPage.resetContentSecurityPolicySetting">reset_content_security_policy_setting</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.customizedSigninPage.CustomizedSigninPage.resetWidgetCustomizations">reset_widget_customizations</a></code> | *No description.* |
 
 ---
 
@@ -546,10 +560,212 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 ---
 
+##### `put_widget_customizations` <a name="put_widget_customizations" id="@cdktf/provider-okta.customizedSigninPage.CustomizedSigninPage.putWidgetCustomizations"></a>
+
+```python
+def put_widget_customizations(
+  widget_generation: str,
+  authenticator_page_custom_link_label: str = None,
+  authenticator_page_custom_link_url: str = None,
+  classic_recovery_flow_email_or_username_label: str = None,
+  custom_link1_label: str = None,
+  custom_link1_url: str = None,
+  custom_link2_label: str = None,
+  custom_link2_url: str = None,
+  forgot_password_label: str = None,
+  forgot_password_url: str = None,
+  help_label: str = None,
+  help_url: str = None,
+  password_info_tip: str = None,
+  password_label: str = None,
+  show_password_visibility_toggle: typing.Union[bool, IResolvable] = None,
+  show_user_identifier: typing.Union[bool, IResolvable] = None,
+  sign_in_label: str = None,
+  unlock_account_label: str = None,
+  unlock_account_url: str = None,
+  username_info_tip: str = None,
+  username_label: str = None
+) -> None
+```
+
+###### `widget_generation`<sup>Required</sup> <a name="widget_generation" id="@cdktf/provider-okta.customizedSigninPage.CustomizedSigninPage.putWidgetCustomizations.parameter.widgetGeneration"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/customized_signin_page#widget_generation CustomizedSigninPage#widget_generation}.
+
+---
+
+###### `authenticator_page_custom_link_label`<sup>Optional</sup> <a name="authenticator_page_custom_link_label" id="@cdktf/provider-okta.customizedSigninPage.CustomizedSigninPage.putWidgetCustomizations.parameter.authenticatorPageCustomLinkLabel"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/customized_signin_page#authenticator_page_custom_link_label CustomizedSigninPage#authenticator_page_custom_link_label}.
+
+---
+
+###### `authenticator_page_custom_link_url`<sup>Optional</sup> <a name="authenticator_page_custom_link_url" id="@cdktf/provider-okta.customizedSigninPage.CustomizedSigninPage.putWidgetCustomizations.parameter.authenticatorPageCustomLinkUrl"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/customized_signin_page#authenticator_page_custom_link_url CustomizedSigninPage#authenticator_page_custom_link_url}.
+
+---
+
+###### `classic_recovery_flow_email_or_username_label`<sup>Optional</sup> <a name="classic_recovery_flow_email_or_username_label" id="@cdktf/provider-okta.customizedSigninPage.CustomizedSigninPage.putWidgetCustomizations.parameter.classicRecoveryFlowEmailOrUsernameLabel"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/customized_signin_page#classic_recovery_flow_email_or_username_label CustomizedSigninPage#classic_recovery_flow_email_or_username_label}.
+
+---
+
+###### `custom_link1_label`<sup>Optional</sup> <a name="custom_link1_label" id="@cdktf/provider-okta.customizedSigninPage.CustomizedSigninPage.putWidgetCustomizations.parameter.customLink1Label"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/customized_signin_page#custom_link_1_label CustomizedSigninPage#custom_link_1_label}.
+
+---
+
+###### `custom_link1_url`<sup>Optional</sup> <a name="custom_link1_url" id="@cdktf/provider-okta.customizedSigninPage.CustomizedSigninPage.putWidgetCustomizations.parameter.customLink1Url"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/customized_signin_page#custom_link_1_url CustomizedSigninPage#custom_link_1_url}.
+
+---
+
+###### `custom_link2_label`<sup>Optional</sup> <a name="custom_link2_label" id="@cdktf/provider-okta.customizedSigninPage.CustomizedSigninPage.putWidgetCustomizations.parameter.customLink2Label"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/customized_signin_page#custom_link_2_label CustomizedSigninPage#custom_link_2_label}.
+
+---
+
+###### `custom_link2_url`<sup>Optional</sup> <a name="custom_link2_url" id="@cdktf/provider-okta.customizedSigninPage.CustomizedSigninPage.putWidgetCustomizations.parameter.customLink2Url"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/customized_signin_page#custom_link_2_url CustomizedSigninPage#custom_link_2_url}.
+
+---
+
+###### `forgot_password_label`<sup>Optional</sup> <a name="forgot_password_label" id="@cdktf/provider-okta.customizedSigninPage.CustomizedSigninPage.putWidgetCustomizations.parameter.forgotPasswordLabel"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/customized_signin_page#forgot_password_label CustomizedSigninPage#forgot_password_label}.
+
+---
+
+###### `forgot_password_url`<sup>Optional</sup> <a name="forgot_password_url" id="@cdktf/provider-okta.customizedSigninPage.CustomizedSigninPage.putWidgetCustomizations.parameter.forgotPasswordUrl"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/customized_signin_page#forgot_password_url CustomizedSigninPage#forgot_password_url}.
+
+---
+
+###### `help_label`<sup>Optional</sup> <a name="help_label" id="@cdktf/provider-okta.customizedSigninPage.CustomizedSigninPage.putWidgetCustomizations.parameter.helpLabel"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/customized_signin_page#help_label CustomizedSigninPage#help_label}.
+
+---
+
+###### `help_url`<sup>Optional</sup> <a name="help_url" id="@cdktf/provider-okta.customizedSigninPage.CustomizedSigninPage.putWidgetCustomizations.parameter.helpUrl"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/customized_signin_page#help_url CustomizedSigninPage#help_url}.
+
+---
+
+###### `password_info_tip`<sup>Optional</sup> <a name="password_info_tip" id="@cdktf/provider-okta.customizedSigninPage.CustomizedSigninPage.putWidgetCustomizations.parameter.passwordInfoTip"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/customized_signin_page#password_info_tip CustomizedSigninPage#password_info_tip}.
+
+---
+
+###### `password_label`<sup>Optional</sup> <a name="password_label" id="@cdktf/provider-okta.customizedSigninPage.CustomizedSigninPage.putWidgetCustomizations.parameter.passwordLabel"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/customized_signin_page#password_label CustomizedSigninPage#password_label}.
+
+---
+
+###### `show_password_visibility_toggle`<sup>Optional</sup> <a name="show_password_visibility_toggle" id="@cdktf/provider-okta.customizedSigninPage.CustomizedSigninPage.putWidgetCustomizations.parameter.showPasswordVisibilityToggle"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/customized_signin_page#show_password_visibility_toggle CustomizedSigninPage#show_password_visibility_toggle}.
+
+---
+
+###### `show_user_identifier`<sup>Optional</sup> <a name="show_user_identifier" id="@cdktf/provider-okta.customizedSigninPage.CustomizedSigninPage.putWidgetCustomizations.parameter.showUserIdentifier"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/customized_signin_page#show_user_identifier CustomizedSigninPage#show_user_identifier}.
+
+---
+
+###### `sign_in_label`<sup>Optional</sup> <a name="sign_in_label" id="@cdktf/provider-okta.customizedSigninPage.CustomizedSigninPage.putWidgetCustomizations.parameter.signInLabel"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/customized_signin_page#sign_in_label CustomizedSigninPage#sign_in_label}.
+
+---
+
+###### `unlock_account_label`<sup>Optional</sup> <a name="unlock_account_label" id="@cdktf/provider-okta.customizedSigninPage.CustomizedSigninPage.putWidgetCustomizations.parameter.unlockAccountLabel"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/customized_signin_page#unlock_account_label CustomizedSigninPage#unlock_account_label}.
+
+---
+
+###### `unlock_account_url`<sup>Optional</sup> <a name="unlock_account_url" id="@cdktf/provider-okta.customizedSigninPage.CustomizedSigninPage.putWidgetCustomizations.parameter.unlockAccountUrl"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/customized_signin_page#unlock_account_url CustomizedSigninPage#unlock_account_url}.
+
+---
+
+###### `username_info_tip`<sup>Optional</sup> <a name="username_info_tip" id="@cdktf/provider-okta.customizedSigninPage.CustomizedSigninPage.putWidgetCustomizations.parameter.usernameInfoTip"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/customized_signin_page#username_info_tip CustomizedSigninPage#username_info_tip}.
+
+---
+
+###### `username_label`<sup>Optional</sup> <a name="username_label" id="@cdktf/provider-okta.customizedSigninPage.CustomizedSigninPage.putWidgetCustomizations.parameter.usernameLabel"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/customized_signin_page#username_label CustomizedSigninPage#username_label}.
+
+---
+
 ##### `reset_content_security_policy_setting` <a name="reset_content_security_policy_setting" id="@cdktf/provider-okta.customizedSigninPage.CustomizedSigninPage.resetContentSecurityPolicySetting"></a>
 
 ```python
 def reset_content_security_policy_setting() -> None
+```
+
+##### `reset_widget_customizations` <a name="reset_widget_customizations" id="@cdktf/provider-okta.customizedSigninPage.CustomizedSigninPage.resetWidgetCustomizations"></a>
+
+```python
+def reset_widget_customizations() -> None
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -702,6 +918,7 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs
 | <code><a href="#@cdktf/provider-okta.customizedSigninPage.CustomizedSigninPage.property.brandIdInput">brand_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.customizedSigninPage.CustomizedSigninPage.property.contentSecurityPolicySettingInput">content_security_policy_setting_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-okta.customizedSigninPage.CustomizedSigninPageContentSecurityPolicySetting">CustomizedSigninPageContentSecurityPolicySetting</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.customizedSigninPage.CustomizedSigninPage.property.pageContentInput">page_content_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.customizedSigninPage.CustomizedSigninPage.property.widgetCustomizationsInput">widget_customizations_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-okta.customizedSigninPage.CustomizedSigninPageWidgetCustomizations">CustomizedSigninPageWidgetCustomizations</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.customizedSigninPage.CustomizedSigninPage.property.widgetVersionInput">widget_version_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.customizedSigninPage.CustomizedSigninPage.property.brandId">brand_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.customizedSigninPage.CustomizedSigninPage.property.pageContent">page_content</a></code> | <code>str</code> | *No description.* |
@@ -911,6 +1128,16 @@ page_content_input: str
 
 ---
 
+##### `widget_customizations_input`<sup>Optional</sup> <a name="widget_customizations_input" id="@cdktf/provider-okta.customizedSigninPage.CustomizedSigninPage.property.widgetCustomizationsInput"></a>
+
+```python
+widget_customizations_input: typing.Union[IResolvable, CustomizedSigninPageWidgetCustomizations]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-okta.customizedSigninPage.CustomizedSigninPageWidgetCustomizations">CustomizedSigninPageWidgetCustomizations</a>]
+
+---
+
 ##### `widget_version_input`<sup>Optional</sup> <a name="widget_version_input" id="@cdktf/provider-okta.customizedSigninPage.CustomizedSigninPage.property.widgetVersionInput"></a>
 
 ```python
@@ -989,7 +1216,8 @@ customizedSigninPage.CustomizedSigninPageConfig(
   brand_id: str,
   page_content: str,
   widget_version: str,
-  content_security_policy_setting: CustomizedSigninPageContentSecurityPolicySetting = None
+  content_security_policy_setting: CustomizedSigninPageContentSecurityPolicySetting = None,
+  widget_customizations: CustomizedSigninPageWidgetCustomizations = None
 )
 ```
 
@@ -1008,6 +1236,7 @@ customizedSigninPage.CustomizedSigninPageConfig(
 | <code><a href="#@cdktf/provider-okta.customizedSigninPage.CustomizedSigninPageConfig.property.pageContent">page_content</a></code> | <code>str</code> | page content of the preview signin page. |
 | <code><a href="#@cdktf/provider-okta.customizedSigninPage.CustomizedSigninPageConfig.property.widgetVersion">widget_version</a></code> | <code>str</code> | widget version specified as a Semver. |
 | <code><a href="#@cdktf/provider-okta.customizedSigninPage.CustomizedSigninPageConfig.property.contentSecurityPolicySetting">content_security_policy_setting</a></code> | <code><a href="#@cdktf/provider-okta.customizedSigninPage.CustomizedSigninPageContentSecurityPolicySetting">CustomizedSigninPageContentSecurityPolicySetting</a></code> | content_security_policy_setting block. |
+| <code><a href="#@cdktf/provider-okta.customizedSigninPage.CustomizedSigninPageConfig.property.widgetCustomizations">widget_customizations</a></code> | <code><a href="#@cdktf/provider-okta.customizedSigninPage.CustomizedSigninPageWidgetCustomizations">CustomizedSigninPageWidgetCustomizations</a></code> | widget_customizations block. |
 
 ---
 
@@ -1141,6 +1370,20 @@ content_security_policy_setting: CustomizedSigninPageContentSecurityPolicySettin
 content_security_policy_setting block.
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/customized_signin_page#content_security_policy_setting CustomizedSigninPage#content_security_policy_setting}
+
+---
+
+##### `widget_customizations`<sup>Optional</sup> <a name="widget_customizations" id="@cdktf/provider-okta.customizedSigninPage.CustomizedSigninPageConfig.property.widgetCustomizations"></a>
+
+```python
+widget_customizations: CustomizedSigninPageWidgetCustomizations
+```
+
+- *Type:* <a href="#@cdktf/provider-okta.customizedSigninPage.CustomizedSigninPageWidgetCustomizations">CustomizedSigninPageWidgetCustomizations</a>
+
+widget_customizations block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/customized_signin_page#widget_customizations CustomizedSigninPage#widget_customizations}
 
 ---
 

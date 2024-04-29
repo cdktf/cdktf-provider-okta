@@ -74,7 +74,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-okta.previewSigninPage.PreviewSigninPage.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-okta.previewSigninPage.PreviewSigninPage.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-okta.previewSigninPage.PreviewSigninPage.putContentSecurityPolicySetting">PutContentSecurityPolicySetting</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.previewSigninPage.PreviewSigninPage.putWidgetCustomizations">PutWidgetCustomizations</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.previewSigninPage.PreviewSigninPage.resetContentSecurityPolicySetting">ResetContentSecurityPolicySetting</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.previewSigninPage.PreviewSigninPage.resetWidgetCustomizations">ResetWidgetCustomizations</a></code> | *No description.* |
 
 ---
 
@@ -378,10 +380,28 @@ private void PutContentSecurityPolicySetting(PreviewSigninPageContentSecurityPol
 
 ---
 
+##### `PutWidgetCustomizations` <a name="PutWidgetCustomizations" id="@cdktf/provider-okta.previewSigninPage.PreviewSigninPage.putWidgetCustomizations"></a>
+
+```csharp
+private void PutWidgetCustomizations(PreviewSigninPageWidgetCustomizations Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-okta.previewSigninPage.PreviewSigninPage.putWidgetCustomizations.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-okta.previewSigninPage.PreviewSigninPageWidgetCustomizations">PreviewSigninPageWidgetCustomizations</a>
+
+---
+
 ##### `ResetContentSecurityPolicySetting` <a name="ResetContentSecurityPolicySetting" id="@cdktf/provider-okta.previewSigninPage.PreviewSigninPage.resetContentSecurityPolicySetting"></a>
 
 ```csharp
 private void ResetContentSecurityPolicySetting()
+```
+
+##### `ResetWidgetCustomizations` <a name="ResetWidgetCustomizations" id="@cdktf/provider-okta.previewSigninPage.PreviewSigninPage.resetWidgetCustomizations"></a>
+
+```csharp
+private void ResetWidgetCustomizations()
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -523,6 +543,7 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs
 | <code><a href="#@cdktf/provider-okta.previewSigninPage.PreviewSigninPage.property.brandIdInput">BrandIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.previewSigninPage.PreviewSigninPage.property.contentSecurityPolicySettingInput">ContentSecurityPolicySettingInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.previewSigninPage.PreviewSigninPage.property.pageContentInput">PageContentInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.previewSigninPage.PreviewSigninPage.property.widgetCustomizationsInput">WidgetCustomizationsInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.previewSigninPage.PreviewSigninPage.property.widgetVersionInput">WidgetVersionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.previewSigninPage.PreviewSigninPage.property.brandId">BrandId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.previewSigninPage.PreviewSigninPage.property.pageContent">PageContent</a></code> | <code>string</code> | *No description.* |
@@ -732,6 +753,16 @@ public string PageContentInput { get; }
 
 ---
 
+##### `WidgetCustomizationsInput`<sup>Optional</sup> <a name="WidgetCustomizationsInput" id="@cdktf/provider-okta.previewSigninPage.PreviewSigninPage.property.widgetCustomizationsInput"></a>
+
+```csharp
+public object WidgetCustomizationsInput { get; }
+```
+
+- *Type:* object
+
+---
+
 ##### `WidgetVersionInput`<sup>Optional</sup> <a name="WidgetVersionInput" id="@cdktf/provider-okta.previewSigninPage.PreviewSigninPage.property.widgetVersionInput"></a>
 
 ```csharp
@@ -810,7 +841,8 @@ new PreviewSigninPageConfig {
     string BrandId,
     string PageContent,
     string WidgetVersion,
-    PreviewSigninPageContentSecurityPolicySetting ContentSecurityPolicySetting = null
+    PreviewSigninPageContentSecurityPolicySetting ContentSecurityPolicySetting = null,
+    PreviewSigninPageWidgetCustomizations WidgetCustomizations = null
 };
 ```
 
@@ -829,6 +861,7 @@ new PreviewSigninPageConfig {
 | <code><a href="#@cdktf/provider-okta.previewSigninPage.PreviewSigninPageConfig.property.pageContent">PageContent</a></code> | <code>string</code> | page content of the preview signin page. |
 | <code><a href="#@cdktf/provider-okta.previewSigninPage.PreviewSigninPageConfig.property.widgetVersion">WidgetVersion</a></code> | <code>string</code> | widget version specified as a Semver. |
 | <code><a href="#@cdktf/provider-okta.previewSigninPage.PreviewSigninPageConfig.property.contentSecurityPolicySetting">ContentSecurityPolicySetting</a></code> | <code><a href="#@cdktf/provider-okta.previewSigninPage.PreviewSigninPageContentSecurityPolicySetting">PreviewSigninPageContentSecurityPolicySetting</a></code> | content_security_policy_setting block. |
+| <code><a href="#@cdktf/provider-okta.previewSigninPage.PreviewSigninPageConfig.property.widgetCustomizations">WidgetCustomizations</a></code> | <code><a href="#@cdktf/provider-okta.previewSigninPage.PreviewSigninPageWidgetCustomizations">PreviewSigninPageWidgetCustomizations</a></code> | widget_customizations block. |
 
 ---
 
@@ -962,6 +995,20 @@ public PreviewSigninPageContentSecurityPolicySetting ContentSecurityPolicySettin
 content_security_policy_setting block.
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/preview_signin_page#content_security_policy_setting PreviewSigninPage#content_security_policy_setting}
+
+---
+
+##### `WidgetCustomizations`<sup>Optional</sup> <a name="WidgetCustomizations" id="@cdktf/provider-okta.previewSigninPage.PreviewSigninPageConfig.property.widgetCustomizations"></a>
+
+```csharp
+public PreviewSigninPageWidgetCustomizations WidgetCustomizations { get; set; }
+```
+
+- *Type:* <a href="#@cdktf/provider-okta.previewSigninPage.PreviewSigninPageWidgetCustomizations">PreviewSigninPageWidgetCustomizations</a>
+
+widget_customizations block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/preview_signin_page#widget_customizations PreviewSigninPage#widget_customizations}
 
 ---
 
