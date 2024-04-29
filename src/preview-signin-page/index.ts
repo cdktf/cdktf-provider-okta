@@ -41,6 +41,12 @@ export interface PreviewSigninPageConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/preview_signin_page#content_security_policy_setting PreviewSigninPage#content_security_policy_setting}
   */
   readonly contentSecurityPolicySetting?: PreviewSigninPageContentSecurityPolicySetting;
+  /**
+  * widget_customizations block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/preview_signin_page#widget_customizations PreviewSigninPage#widget_customizations}
+  */
+  readonly widgetCustomizations?: PreviewSigninPageWidgetCustomizations;
 }
 export interface PreviewSigninPageContentSecurityPolicySetting {
   /**
@@ -1011,6 +1017,7 @@ export class PreviewSigninPage extends cdktf.TerraformResource {
     this._pageContent = config.pageContent;
     this._widgetVersion = config.widgetVersion;
     this._contentSecurityPolicySetting.internalValue = config.contentSecurityPolicySetting;
+    this._widgetCustomizations.internalValue = config.widgetCustomizations;
   }
 
   // ==========
@@ -1077,10 +1084,20 @@ export class PreviewSigninPage extends cdktf.TerraformResource {
     return this._contentSecurityPolicySetting.internalValue;
   }
 
-  // widget_customizations - computed: false, optional: false, required: false
+  // widget_customizations - computed: false, optional: true, required: false
   private _widgetCustomizations = new PreviewSigninPageWidgetCustomizationsOutputReference(this, "widget_customizations");
   public get widgetCustomizations() {
     return this._widgetCustomizations;
+  }
+  public putWidgetCustomizations(value: PreviewSigninPageWidgetCustomizations) {
+    this._widgetCustomizations.internalValue = value;
+  }
+  public resetWidgetCustomizations() {
+    this._widgetCustomizations.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get widgetCustomizationsInput() {
+    return this._widgetCustomizations.internalValue;
   }
 
   // =========
@@ -1093,6 +1110,7 @@ export class PreviewSigninPage extends cdktf.TerraformResource {
       page_content: cdktf.stringToTerraform(this._pageContent),
       widget_version: cdktf.stringToTerraform(this._widgetVersion),
       content_security_policy_setting: previewSigninPageContentSecurityPolicySettingToTerraform(this._contentSecurityPolicySetting.internalValue),
+      widget_customizations: previewSigninPageWidgetCustomizationsToTerraform(this._widgetCustomizations.internalValue),
     };
   }
 
@@ -1121,6 +1139,12 @@ export class PreviewSigninPage extends cdktf.TerraformResource {
         isBlock: true,
         type: "struct",
         storageClassType: "PreviewSigninPageContentSecurityPolicySetting",
+      },
+      widget_customizations: {
+        value: previewSigninPageWidgetCustomizationsToHclTerraform(this._widgetCustomizations.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "PreviewSigninPageWidgetCustomizations",
       },
     };
 
