@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaAppSignonPolicy.DataOktaAppSignonPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaappsignonpolicy"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktaappsignonpolicy"
 
 dataoktaappsignonpolicy.NewDataOktaAppSignonPolicy(scope Construct, id *string, config DataOktaAppSignonPolicyConfig) DataOktaAppSignonPolicy
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.dataOktaAppSignonPolicy.DataOktaAppSignonPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaappsignonpolicy"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktaappsignonpolicy"
 
 dataoktaappsignonpolicy.DataOktaAppSignonPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.dataOktaAppSignonPolicy.DataOktaAppSignonPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaappsignonpolicy"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktaappsignonpolicy"
 
 dataoktaappsignonpolicy.DataOktaAppSignonPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ dataoktaappsignonpolicy.DataOktaAppSignonPolicy_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-okta.dataOktaAppSignonPolicy.DataOktaAppSignonPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaappsignonpolicy"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktaappsignonpolicy"
 
 dataoktaappsignonpolicy.DataOktaAppSignonPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataoktaappsignonpolicy.DataOktaAppSignonPolicy_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.dataOktaAppSignonPolicy.DataOktaAppSignonPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaappsignonpolicy"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktaappsignonpolicy"
 
 dataoktaappsignonpolicy.DataOktaAppSignonPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -605,7 +605,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaAppSignonPolicy.DataOktaAppSignonPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaappsignonpolicy"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktaappsignonpolicy"
 
 &dataoktaappsignonpolicy.DataOktaAppSignonPolicyConfig {
 	Connection: interface{},
