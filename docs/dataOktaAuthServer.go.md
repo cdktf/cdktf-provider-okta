@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaAuthServer.DataOktaAuthServer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktaauthserver"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaauthserver"
 
 dataoktaauthserver.NewDataOktaAuthServer(scope Construct, id *string, config DataOktaAuthServerConfig) DataOktaAuthServer
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.dataOktaAuthServer.DataOktaAuthServer.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktaauthserver"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaauthserver"
 
 dataoktaauthserver.DataOktaAuthServer_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.dataOktaAuthServer.DataOktaAuthServer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktaauthserver"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaauthserver"
 
 dataoktaauthserver.DataOktaAuthServer_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ dataoktaauthserver.DataOktaAuthServer_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-okta.dataOktaAuthServer.DataOktaAuthServer.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktaauthserver"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaauthserver"
 
 dataoktaauthserver.DataOktaAuthServer_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataoktaauthserver.DataOktaAuthServer_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.dataOktaAuthServer.DataOktaAuthServer.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktaauthserver"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaauthserver"
 
 dataoktaauthserver.DataOktaAuthServer_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -693,7 +693,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaAuthServer.DataOktaAuthServerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktaauthserver"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaauthserver"
 
 &dataoktaauthserver.DataOktaAuthServerConfig {
 	Connection: interface{},
