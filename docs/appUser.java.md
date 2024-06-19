@@ -4,7 +4,7 @@
 
 ### AppUser <a name="AppUser" id="@cdktf/provider-okta.appUser.AppUser"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_user okta_app_user}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_user okta_app_user}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appUser.AppUser.Initializer"></a>
 
@@ -47,7 +47,7 @@ AppUser.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-okta.appUser.AppUser.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appUser.AppUser.Initializer.parameter.appId">appId</a></code> | <code>java.lang.String</code> | App to associate user with. |
 | <code><a href="#@cdktf/provider-okta.appUser.AppUser.Initializer.parameter.userId">userId</a></code> | <code>java.lang.String</code> | User associated with the application. |
-| <code><a href="#@cdktf/provider-okta.appUser.AppUser.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_user#id AppUser#id}. |
+| <code><a href="#@cdktf/provider-okta.appUser.AppUser.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_user#id AppUser#id}. |
 | <code><a href="#@cdktf/provider-okta.appUser.AppUser.Initializer.parameter.password">password</a></code> | <code>java.lang.String</code> | The password to use. |
 | <code><a href="#@cdktf/provider-okta.appUser.AppUser.Initializer.parameter.profile">profile</a></code> | <code>java.lang.String</code> | The JSON profile of the App User. |
 | <code><a href="#@cdktf/provider-okta.appUser.AppUser.Initializer.parameter.retainAssignment">retainAssignment</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Retain the user assignment on destroy. |
@@ -121,7 +121,7 @@ Must be unique amongst siblings in the same scope
 
 App to associate user with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_user#app_id AppUser#app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_user#app_id AppUser#app_id}
 
 ---
 
@@ -131,7 +131,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 User associated with the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_user#user_id AppUser#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_user#user_id AppUser#user_id}
 
 ---
 
@@ -139,7 +139,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_user#id AppUser#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_user#id AppUser#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -152,7 +152,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The password to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_user#password AppUser#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_user#password AppUser#password}
 
 ---
 
@@ -162,7 +162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 The JSON profile of the App User.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_user#profile AppUser#profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_user#profile AppUser#profile}
 
 ---
 
@@ -174,7 +174,7 @@ Retain the user assignment on destroy.
 
 If set to true, the resource will be removed from state but not from the Okta app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_user#retain_assignment AppUser#retain_assignment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_user#retain_assignment AppUser#retain_assignment}
 
 ---
 
@@ -186,7 +186,7 @@ The username to use for the app user.
 
 In case the user is assigned to the app with `SHARED_USERNAME_AND_PASSWORD` credentials scheme, this field will be computed and should not be set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_user#username AppUser#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_user#username AppUser#username}
 
 ---
 
@@ -648,7 +648,7 @@ The construct id used in the generated config for the AppUser to import.
 
 The id of the existing AppUser that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_user#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_user#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1051,7 +1051,7 @@ AppUserConfig.builder()
 | <code><a href="#@cdktf/provider-okta.appUser.AppUserConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appUser.AppUserConfig.property.appId">appId</a></code> | <code>java.lang.String</code> | App to associate user with. |
 | <code><a href="#@cdktf/provider-okta.appUser.AppUserConfig.property.userId">userId</a></code> | <code>java.lang.String</code> | User associated with the application. |
-| <code><a href="#@cdktf/provider-okta.appUser.AppUserConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_user#id AppUser#id}. |
+| <code><a href="#@cdktf/provider-okta.appUser.AppUserConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_user#id AppUser#id}. |
 | <code><a href="#@cdktf/provider-okta.appUser.AppUserConfig.property.password">password</a></code> | <code>java.lang.String</code> | The password to use. |
 | <code><a href="#@cdktf/provider-okta.appUser.AppUserConfig.property.profile">profile</a></code> | <code>java.lang.String</code> | The JSON profile of the App User. |
 | <code><a href="#@cdktf/provider-okta.appUser.AppUserConfig.property.retainAssignment">retainAssignment</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Retain the user assignment on destroy. |
@@ -1139,7 +1139,7 @@ public java.lang.String getAppId();
 
 App to associate user with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_user#app_id AppUser#app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_user#app_id AppUser#app_id}
 
 ---
 
@@ -1153,7 +1153,7 @@ public java.lang.String getUserId();
 
 User associated with the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_user#user_id AppUser#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_user#user_id AppUser#user_id}
 
 ---
 
@@ -1165,7 +1165,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_user#id AppUser#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_user#id AppUser#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1182,7 +1182,7 @@ public java.lang.String getPassword();
 
 The password to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_user#password AppUser#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_user#password AppUser#password}
 
 ---
 
@@ -1196,7 +1196,7 @@ public java.lang.String getProfile();
 
 The JSON profile of the App User.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_user#profile AppUser#profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_user#profile AppUser#profile}
 
 ---
 
@@ -1212,7 +1212,7 @@ Retain the user assignment on destroy.
 
 If set to true, the resource will be removed from state but not from the Okta app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_user#retain_assignment AppUser#retain_assignment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_user#retain_assignment AppUser#retain_assignment}
 
 ---
 
@@ -1228,7 +1228,7 @@ The username to use for the app user.
 
 In case the user is assigned to the app with `SHARED_USERNAME_AND_PASSWORD` credentials scheme, this field will be computed and should not be set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_user#username AppUser#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_user#username AppUser#username}
 
 ---
 

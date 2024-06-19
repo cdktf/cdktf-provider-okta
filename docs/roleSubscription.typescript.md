@@ -4,7 +4,7 @@
 
 ### RoleSubscription <a name="RoleSubscription" id="@cdktf/provider-okta.roleSubscription.RoleSubscription"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/role_subscription okta_role_subscription}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/role_subscription okta_role_subscription}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.roleSubscription.RoleSubscription.Initializer"></a>
 
@@ -481,7 +481,7 @@ The construct id used in the generated config for the RoleSubscription to import
 
 The id of the existing RoleSubscription that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/role_subscription#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/role_subscription#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -787,7 +787,7 @@ const roleSubscriptionConfig: roleSubscription.RoleSubscriptionConfig = { ... }
 | <code><a href="#@cdktf/provider-okta.roleSubscription.RoleSubscriptionConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.roleSubscription.RoleSubscriptionConfig.property.notificationType">notificationType</a></code> | <code>string</code> | Type of the notification. |
 | <code><a href="#@cdktf/provider-okta.roleSubscription.RoleSubscriptionConfig.property.roleType">roleType</a></code> | <code>string</code> | Type of the role. Valid values: 	'API_ADMIN', 	'APP_ADMIN', 	'CUSTOM', 	'GROUP_MEMBERSHIP_ADMIN', 	'HELP_DESK_ADMIN', 	'MOBILE_ADMIN', 	'ORG_ADMIN', 	'READ_ONLY_ADMIN', 	'REPORT_ADMIN', 	'SUPER_ADMIN', 	'USER_ADMIN' 	. See [API docs](https://developer.okta.com/docs/reference/api/admin-notifications/#role-types). |
-| <code><a href="#@cdktf/provider-okta.roleSubscription.RoleSubscriptionConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/role_subscription#id RoleSubscription#id}. |
+| <code><a href="#@cdktf/provider-okta.roleSubscription.RoleSubscriptionConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/role_subscription#id RoleSubscription#id}. |
 | <code><a href="#@cdktf/provider-okta.roleSubscription.RoleSubscriptionConfig.property.status">status</a></code> | <code>string</code> | Subscription status. Valid values: `subscribed`, `unsubscribed`. |
 
 ---
@@ -887,7 +887,7 @@ Valid values:
 	- 'RATELIMIT_NOTIFICATION' - Rate limit warning and violation.
 	- 'AGENT_AUTO_UPDATE_NOTIFICATION' - Agent auto-update notifications: AD Agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/role_subscription#notification_type RoleSubscription#notification_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/role_subscription#notification_type RoleSubscription#notification_type}
 
 ---
 
@@ -901,7 +901,7 @@ public readonly roleType: string;
 
 Type of the role. Valid values: 	'API_ADMIN', 	'APP_ADMIN', 	'CUSTOM', 	'GROUP_MEMBERSHIP_ADMIN', 	'HELP_DESK_ADMIN', 	'MOBILE_ADMIN', 	'ORG_ADMIN', 	'READ_ONLY_ADMIN', 	'REPORT_ADMIN', 	'SUPER_ADMIN', 	'USER_ADMIN' 	. See [API docs](https://developer.okta.com/docs/reference/api/admin-notifications/#role-types).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/role_subscription#role_type RoleSubscription#role_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/role_subscription#role_type RoleSubscription#role_type}
 
 ---
 
@@ -913,7 +913,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/role_subscription#id RoleSubscription#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/role_subscription#id RoleSubscription#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -930,7 +930,7 @@ public readonly status: string;
 
 Subscription status. Valid values: `subscribed`, `unsubscribed`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/role_subscription#status RoleSubscription#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/role_subscription#status RoleSubscription#status}
 
 ---
 

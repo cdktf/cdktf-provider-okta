@@ -1,3 +1,3 @@
 # `data_okta_theme`
 
-Refer to the Terraform Registry for docs: [`data_okta_theme`](https://registry.terraform.io/providers/okta/okta/4.8.1/docs/data-sources/theme).
+Refer to the Terraform Registry for docs: [`data_okta_theme`](https://registry.terraform.io/providers/okta/okta/4.9.0/docs/data-sources/theme).

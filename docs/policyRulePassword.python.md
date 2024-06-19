@@ -4,7 +4,7 @@
 
 ### PolicyRulePassword <a name="PolicyRulePassword" id="@cdktf/provider-okta.policyRulePassword.PolicyRulePassword"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_password okta_policy_rule_password}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/policy_rule_password okta_policy_rule_password}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.policyRulePassword.PolicyRulePassword.Initializer"></a>
 
@@ -48,7 +48,7 @@ policyRulePassword.PolicyRulePassword(
 | <code><a href="#@cdktf/provider-okta.policyRulePassword.PolicyRulePassword.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRulePassword.PolicyRulePassword.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRulePassword.PolicyRulePassword.Initializer.parameter.name">name</a></code> | <code>str</code> | Policy Rule Name. |
-| <code><a href="#@cdktf/provider-okta.policyRulePassword.PolicyRulePassword.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_password#id PolicyRulePassword#id}. |
+| <code><a href="#@cdktf/provider-okta.policyRulePassword.PolicyRulePassword.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/policy_rule_password#id PolicyRulePassword#id}. |
 | <code><a href="#@cdktf/provider-okta.policyRulePassword.PolicyRulePassword.Initializer.parameter.networkConnection">network_connection</a></code> | <code>str</code> | Network selection mode: `ANYWHERE`, `ZONE`, `ON_NETWORK`, or `OFF_NETWORK`. Default: `ANYWHERE`. |
 | <code><a href="#@cdktf/provider-okta.policyRulePassword.PolicyRulePassword.Initializer.parameter.networkExcludes">network_excludes</a></code> | <code>typing.List[str]</code> | Required if `network_connection` = `ZONE`. Indicates the network zones to exclude. |
 | <code><a href="#@cdktf/provider-okta.policyRulePassword.PolicyRulePassword.Initializer.parameter.networkIncludes">network_includes</a></code> | <code>typing.List[str]</code> | Required if `network_connection` = `ZONE`. Indicates the network zones to include. |
@@ -128,7 +128,7 @@ Must be unique amongst siblings in the same scope
 
 Policy Rule Name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_password#name PolicyRulePassword#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/policy_rule_password#name PolicyRulePassword#name}
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_password#id PolicyRulePassword#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/policy_rule_password#id PolicyRulePassword#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -149,7 +149,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Network selection mode: `ANYWHERE`, `ZONE`, `ON_NETWORK`, or `OFF_NETWORK`. Default: `ANYWHERE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_password#network_connection PolicyRulePassword#network_connection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/policy_rule_password#network_connection PolicyRulePassword#network_connection}
 
 ---
 
@@ -159,7 +159,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Required if `network_connection` = `ZONE`. Indicates the network zones to exclude.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_password#network_excludes PolicyRulePassword#network_excludes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/policy_rule_password#network_excludes PolicyRulePassword#network_excludes}
 
 ---
 
@@ -169,7 +169,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Required if `network_connection` = `ZONE`. Indicates the network zones to include.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_password#network_includes PolicyRulePassword#network_includes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/policy_rule_password#network_includes PolicyRulePassword#network_includes}
 
 ---
 
@@ -179,7 +179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Allow or deny a user to change their password: `ALLOW` or `DENY`. Default: `ALLOW`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_password#password_change PolicyRulePassword#password_change}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/policy_rule_password#password_change PolicyRulePassword#password_change}
 
 ---
 
@@ -189,7 +189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Allow or deny a user to reset their password: `ALLOW` or `DENY`. Default: `ALLOW`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_password#password_reset PolicyRulePassword#password_reset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/policy_rule_password#password_reset PolicyRulePassword#password_reset}
 
 ---
 
@@ -199,7 +199,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Allow or deny a user to unlock. Default: `DENY`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_password#password_unlock PolicyRulePassword#password_unlock}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/policy_rule_password#password_unlock PolicyRulePassword#password_unlock}
 
 ---
 
@@ -209,7 +209,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Policy ID of the Rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_password#policy_id PolicyRulePassword#policy_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/policy_rule_password#policy_id PolicyRulePassword#policy_id}
 
 ---
 
@@ -221,7 +221,7 @@ Rule priority.
 
 This attribute can be set to a valid priority. To avoid an endless diff situation an error is thrown if an invalid property is provided. The Okta API defaults to the last (lowest) if not provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_password#priority PolicyRulePassword#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/policy_rule_password#priority PolicyRulePassword#priority}
 
 ---
 
@@ -231,7 +231,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Policy Rule Status: `ACTIVE` or `INACTIVE`. Default: `ACTIVE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_password#status PolicyRulePassword#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/policy_rule_password#status PolicyRulePassword#status}
 
 ---
 
@@ -241,7 +241,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Set of User IDs to Exclude.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_password#users_excluded PolicyRulePassword#users_excluded}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/policy_rule_password#users_excluded PolicyRulePassword#users_excluded}
 
 ---
 
@@ -791,7 +791,7 @@ The construct id used in the generated config for the PolicyRulePassword to impo
 
 The id of the existing PolicyRulePassword that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_password#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/policy_rule_password#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1292,7 +1292,7 @@ policyRulePassword.PolicyRulePasswordConfig(
 | <code><a href="#@cdktf/provider-okta.policyRulePassword.PolicyRulePasswordConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRulePassword.PolicyRulePasswordConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRulePassword.PolicyRulePasswordConfig.property.name">name</a></code> | <code>str</code> | Policy Rule Name. |
-| <code><a href="#@cdktf/provider-okta.policyRulePassword.PolicyRulePasswordConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_password#id PolicyRulePassword#id}. |
+| <code><a href="#@cdktf/provider-okta.policyRulePassword.PolicyRulePasswordConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/policy_rule_password#id PolicyRulePassword#id}. |
 | <code><a href="#@cdktf/provider-okta.policyRulePassword.PolicyRulePasswordConfig.property.networkConnection">network_connection</a></code> | <code>str</code> | Network selection mode: `ANYWHERE`, `ZONE`, `ON_NETWORK`, or `OFF_NETWORK`. Default: `ANYWHERE`. |
 | <code><a href="#@cdktf/provider-okta.policyRulePassword.PolicyRulePasswordConfig.property.networkExcludes">network_excludes</a></code> | <code>typing.List[str]</code> | Required if `network_connection` = `ZONE`. Indicates the network zones to exclude. |
 | <code><a href="#@cdktf/provider-okta.policyRulePassword.PolicyRulePasswordConfig.property.networkIncludes">network_includes</a></code> | <code>typing.List[str]</code> | Required if `network_connection` = `ZONE`. Indicates the network zones to include. |
@@ -1386,7 +1386,7 @@ name: str
 
 Policy Rule Name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_password#name PolicyRulePassword#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/policy_rule_password#name PolicyRulePassword#name}
 
 ---
 
@@ -1398,7 +1398,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_password#id PolicyRulePassword#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/policy_rule_password#id PolicyRulePassword#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1415,7 +1415,7 @@ network_connection: str
 
 Network selection mode: `ANYWHERE`, `ZONE`, `ON_NETWORK`, or `OFF_NETWORK`. Default: `ANYWHERE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_password#network_connection PolicyRulePassword#network_connection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/policy_rule_password#network_connection PolicyRulePassword#network_connection}
 
 ---
 
@@ -1429,7 +1429,7 @@ network_excludes: typing.List[str]
 
 Required if `network_connection` = `ZONE`. Indicates the network zones to exclude.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_password#network_excludes PolicyRulePassword#network_excludes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/policy_rule_password#network_excludes PolicyRulePassword#network_excludes}
 
 ---
 
@@ -1443,7 +1443,7 @@ network_includes: typing.List[str]
 
 Required if `network_connection` = `ZONE`. Indicates the network zones to include.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_password#network_includes PolicyRulePassword#network_includes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/policy_rule_password#network_includes PolicyRulePassword#network_includes}
 
 ---
 
@@ -1457,7 +1457,7 @@ password_change: str
 
 Allow or deny a user to change their password: `ALLOW` or `DENY`. Default: `ALLOW`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_password#password_change PolicyRulePassword#password_change}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/policy_rule_password#password_change PolicyRulePassword#password_change}
 
 ---
 
@@ -1471,7 +1471,7 @@ password_reset: str
 
 Allow or deny a user to reset their password: `ALLOW` or `DENY`. Default: `ALLOW`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_password#password_reset PolicyRulePassword#password_reset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/policy_rule_password#password_reset PolicyRulePassword#password_reset}
 
 ---
 
@@ -1485,7 +1485,7 @@ password_unlock: str
 
 Allow or deny a user to unlock. Default: `DENY`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_password#password_unlock PolicyRulePassword#password_unlock}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/policy_rule_password#password_unlock PolicyRulePassword#password_unlock}
 
 ---
 
@@ -1499,7 +1499,7 @@ policy_id: str
 
 Policy ID of the Rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_password#policy_id PolicyRulePassword#policy_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/policy_rule_password#policy_id PolicyRulePassword#policy_id}
 
 ---
 
@@ -1515,7 +1515,7 @@ Rule priority.
 
 This attribute can be set to a valid priority. To avoid an endless diff situation an error is thrown if an invalid property is provided. The Okta API defaults to the last (lowest) if not provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_password#priority PolicyRulePassword#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/policy_rule_password#priority PolicyRulePassword#priority}
 
 ---
 
@@ -1529,7 +1529,7 @@ status: str
 
 Policy Rule Status: `ACTIVE` or `INACTIVE`. Default: `ACTIVE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_password#status PolicyRulePassword#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/policy_rule_password#status PolicyRulePassword#status}
 
 ---
 
@@ -1543,7 +1543,7 @@ users_excluded: typing.List[str]
 
 Set of User IDs to Exclude.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_rule_password#users_excluded PolicyRulePassword#users_excluded}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/policy_rule_password#users_excluded PolicyRulePassword#users_excluded}
 
 ---
 
