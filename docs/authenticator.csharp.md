@@ -4,7 +4,7 @@
 
 ### Authenticator <a name="Authenticator" id="@cdktf/provider-okta.authenticator.Authenticator"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/authenticator okta_authenticator}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/authenticator okta_authenticator}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.authenticator.Authenticator.Initializer"></a>
 
@@ -74,6 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-okta.authenticator.Authenticator.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-okta.authenticator.Authenticator.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-okta.authenticator.Authenticator.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.authenticator.Authenticator.resetLegacyIgnoreName">ResetLegacyIgnoreName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.authenticator.Authenticator.resetProviderAuthPort">ResetProviderAuthPort</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.authenticator.Authenticator.resetProviderHost">ResetProviderHost</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.authenticator.Authenticator.resetProviderHostname">ResetProviderHostname</a></code> | *No description.* |
@@ -381,6 +382,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 private void ResetId()
 ```
 
+##### `ResetLegacyIgnoreName` <a name="ResetLegacyIgnoreName" id="@cdktf/provider-okta.authenticator.Authenticator.resetLegacyIgnoreName"></a>
+
+```csharp
+private void ResetLegacyIgnoreName()
+```
+
 ##### `ResetProviderAuthPort` <a name="ResetProviderAuthPort" id="@cdktf/provider-okta.authenticator.Authenticator.resetProviderAuthPort"></a>
 
 ```csharp
@@ -544,7 +551,7 @@ The construct id used in the generated config for the Authenticator to import.
 
 The id of the existing Authenticator that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/authenticator#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/authenticator#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -579,6 +586,7 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs
 | <code><a href="#@cdktf/provider-okta.authenticator.Authenticator.property.type">Type</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.authenticator.Authenticator.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.authenticator.Authenticator.property.keyInput">KeyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.authenticator.Authenticator.property.legacyIgnoreNameInput">LegacyIgnoreNameInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.authenticator.Authenticator.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.authenticator.Authenticator.property.providerAuthPortInput">ProviderAuthPortInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.authenticator.Authenticator.property.providerHostInput">ProviderHostInput</a></code> | <code>string</code> | *No description.* |
@@ -592,6 +600,7 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs
 | <code><a href="#@cdktf/provider-okta.authenticator.Authenticator.property.statusInput">StatusInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.authenticator.Authenticator.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.authenticator.Authenticator.property.key">Key</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.authenticator.Authenticator.property.legacyIgnoreName">LegacyIgnoreName</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.authenticator.Authenticator.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.authenticator.Authenticator.property.providerAuthPort">ProviderAuthPort</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.authenticator.Authenticator.property.providerHost">ProviderHost</a></code> | <code>string</code> | *No description.* |
@@ -798,6 +807,16 @@ public string KeyInput { get; }
 
 ---
 
+##### `LegacyIgnoreNameInput`<sup>Optional</sup> <a name="LegacyIgnoreNameInput" id="@cdktf/provider-okta.authenticator.Authenticator.property.legacyIgnoreNameInput"></a>
+
+```csharp
+public object LegacyIgnoreNameInput { get; }
+```
+
+- *Type:* object
+
+---
+
 ##### `NameInput`<sup>Optional</sup> <a name="NameInput" id="@cdktf/provider-okta.authenticator.Authenticator.property.nameInput"></a>
 
 ```csharp
@@ -925,6 +944,16 @@ public string Key { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `LegacyIgnoreName`<sup>Required</sup> <a name="LegacyIgnoreName" id="@cdktf/provider-okta.authenticator.Authenticator.property.legacyIgnoreName"></a>
+
+```csharp
+public object LegacyIgnoreName { get; }
+```
+
+- *Type:* object
 
 ---
 
@@ -1076,6 +1105,7 @@ new AuthenticatorConfig {
     string Key,
     string Name,
     string Id = null,
+    object LegacyIgnoreName = null,
     double ProviderAuthPort = null,
     string ProviderHost = null,
     string ProviderHostname = null,
@@ -1102,7 +1132,8 @@ new AuthenticatorConfig {
 | <code><a href="#@cdktf/provider-okta.authenticator.AuthenticatorConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.authenticator.AuthenticatorConfig.property.key">Key</a></code> | <code>string</code> | A human-readable string that identifies the authenticator. |
 | <code><a href="#@cdktf/provider-okta.authenticator.AuthenticatorConfig.property.name">Name</a></code> | <code>string</code> | Display name of the Authenticator. |
-| <code><a href="#@cdktf/provider-okta.authenticator.AuthenticatorConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/authenticator#id Authenticator#id}. |
+| <code><a href="#@cdktf/provider-okta.authenticator.AuthenticatorConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/authenticator#id Authenticator#id}. |
+| <code><a href="#@cdktf/provider-okta.authenticator.AuthenticatorConfig.property.legacyIgnoreName">LegacyIgnoreName</a></code> | <code>object</code> | Name does not trigger change detection (legacy behavior). |
 | <code><a href="#@cdktf/provider-okta.authenticator.AuthenticatorConfig.property.providerAuthPort">ProviderAuthPort</a></code> | <code>double</code> | The RADIUS server port (for example 1812). |
 | <code><a href="#@cdktf/provider-okta.authenticator.AuthenticatorConfig.property.providerHost">ProviderHost</a></code> | <code>string</code> | (DUO specific) - The Duo Security API hostname. Conflicts with `provider_json` argument. |
 | <code><a href="#@cdktf/provider-okta.authenticator.AuthenticatorConfig.property.providerHostname">ProviderHostname</a></code> | <code>string</code> | Server host name or IP address. |
@@ -1198,7 +1229,7 @@ A human-readable string that identifies the authenticator.
 
 Some authenticators are available by feature flag on the organization. Possible values inclue: `duo`, `external_idp`, `google_otp`, `okta_email`, `okta_password`, `okta_verify`, `onprem_mfa`, `phone_number`, `rsa_token`, `security_question`, `webauthn`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/authenticator#key Authenticator#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/authenticator#key Authenticator#key}
 
 ---
 
@@ -1212,7 +1243,7 @@ public string Name { get; set; }
 
 Display name of the Authenticator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/authenticator#name Authenticator#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/authenticator#name Authenticator#name}
 
 ---
 
@@ -1224,10 +1255,24 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/authenticator#id Authenticator#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/authenticator#id Authenticator#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `LegacyIgnoreName`<sup>Optional</sup> <a name="LegacyIgnoreName" id="@cdktf/provider-okta.authenticator.AuthenticatorConfig.property.legacyIgnoreName"></a>
+
+```csharp
+public object LegacyIgnoreName { get; set; }
+```
+
+- *Type:* object
+
+Name does not trigger change detection (legacy behavior).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/authenticator#legacy_ignore_name Authenticator#legacy_ignore_name}
 
 ---
 
@@ -1243,7 +1288,7 @@ The RADIUS server port (for example 1812).
 
 This is defined when the On-Prem RADIUS server is configured. Used only for authenticators with type `security_key`.  Conflicts with `provider_json` argument.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/authenticator#provider_auth_port Authenticator#provider_auth_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/authenticator#provider_auth_port Authenticator#provider_auth_port}
 
 ---
 
@@ -1257,7 +1302,7 @@ public string ProviderHost { get; set; }
 
 (DUO specific) - The Duo Security API hostname. Conflicts with `provider_json` argument.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/authenticator#provider_host Authenticator#provider_host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/authenticator#provider_host Authenticator#provider_host}
 
 ---
 
@@ -1273,7 +1318,7 @@ Server host name or IP address.
 
 Default is `localhost`. Used only for authenticators with type `security_key`. Conflicts with `provider_json` argument.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/authenticator#provider_hostname Authenticator#provider_hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/authenticator#provider_hostname Authenticator#provider_hostname}
 
 ---
 
@@ -1287,7 +1332,7 @@ public string ProviderIntegrationKey { get; set; }
 
 (DUO specific) - The Duo Security integration key.  Conflicts with `provider_json` argument.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/authenticator#provider_integration_key Authenticator#provider_integration_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/authenticator#provider_integration_key Authenticator#provider_integration_key}
 
 ---
 
@@ -1303,7 +1348,7 @@ Provider JSON allows for expressive providervalues.
 
 This argument conflicts with the other 'provider_xxx' arguments. The [CreateProvider](https://developer.okta.com/docs/reference/api/authenticators-admin/#request) illustrates detailed provider values for a Duo authenticator. [Provider values](https://developer.okta.com/docs/reference/api/authenticators-admin/#authenticators-administration-api-object)are listed in Okta API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/authenticator#provider_json Authenticator#provider_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/authenticator#provider_json Authenticator#provider_json}
 
 ---
 
@@ -1317,7 +1362,7 @@ public string ProviderSecretKey { get; set; }
 
 (DUO specific) - The Duo Security secret key.  Conflicts with `provider_json` argument.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/authenticator#provider_secret_key Authenticator#provider_secret_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/authenticator#provider_secret_key Authenticator#provider_secret_key}
 
 ---
 
@@ -1333,7 +1378,7 @@ An authentication key that must be defined when the RADIUS server is configured,
 
 Used only for authenticators with type `security_key`. Conflicts with `provider_json` argument.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/authenticator#provider_shared_secret Authenticator#provider_shared_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/authenticator#provider_shared_secret Authenticator#provider_shared_secret}
 
 ---
 
@@ -1347,7 +1392,7 @@ public string ProviderUserNameTemplate { get; set; }
 
 Username template expected by the provider. Used only for authenticators with type `security_key`.  Conflicts with `provider_json` argument.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/authenticator#provider_user_name_template Authenticator#provider_user_name_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/authenticator#provider_user_name_template Authenticator#provider_user_name_template}
 
 ---
 
@@ -1363,7 +1408,7 @@ Settings for the authenticator.
 
 The settings JSON contains values based on Authenticator key. It is not used for authenticators with type `security_key`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/authenticator#settings Authenticator#settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/authenticator#settings Authenticator#settings}
 
 ---
 
@@ -1377,7 +1422,7 @@ public string Status { get; set; }
 
 Authenticator status: `ACTIVE` or `INACTIVE`. Default: `ACTIVE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/authenticator#status Authenticator#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/authenticator#status Authenticator#status}
 
 ---
 

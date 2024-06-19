@@ -4,7 +4,7 @@
 
 ### PolicyProfileEnrollment <a name="PolicyProfileEnrollment" id="@cdktf/provider-okta.policyProfileEnrollment.PolicyProfileEnrollment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_profile_enrollment okta_policy_profile_enrollment}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/policy_profile_enrollment okta_policy_profile_enrollment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.policyProfileEnrollment.PolicyProfileEnrollment.Initializer"></a>
 
@@ -39,7 +39,7 @@ policyProfileEnrollment.PolicyProfileEnrollment(
 | <code><a href="#@cdktf/provider-okta.policyProfileEnrollment.PolicyProfileEnrollment.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyProfileEnrollment.PolicyProfileEnrollment.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyProfileEnrollment.PolicyProfileEnrollment.Initializer.parameter.name">name</a></code> | <code>str</code> | Name of the policy. |
-| <code><a href="#@cdktf/provider-okta.policyProfileEnrollment.PolicyProfileEnrollment.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_profile_enrollment#id PolicyProfileEnrollment#id}. |
+| <code><a href="#@cdktf/provider-okta.policyProfileEnrollment.PolicyProfileEnrollment.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/policy_profile_enrollment#id PolicyProfileEnrollment#id}. |
 | <code><a href="#@cdktf/provider-okta.policyProfileEnrollment.PolicyProfileEnrollment.Initializer.parameter.status">status</a></code> | <code>str</code> | Status of the policy. |
 
 ---
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 Name of the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_profile_enrollment#name PolicyProfileEnrollment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/policy_profile_enrollment#name PolicyProfileEnrollment#name}
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_profile_enrollment#id PolicyProfileEnrollment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/policy_profile_enrollment#id PolicyProfileEnrollment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -131,7 +131,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Status of the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_profile_enrollment#status PolicyProfileEnrollment#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/policy_profile_enrollment#status PolicyProfileEnrollment#status}
 
 ---
 
@@ -618,7 +618,7 @@ The construct id used in the generated config for the PolicyProfileEnrollment to
 
 The id of the existing PolicyProfileEnrollment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_profile_enrollment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/policy_profile_enrollment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -912,7 +912,7 @@ policyProfileEnrollment.PolicyProfileEnrollmentConfig(
 | <code><a href="#@cdktf/provider-okta.policyProfileEnrollment.PolicyProfileEnrollmentConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyProfileEnrollment.PolicyProfileEnrollmentConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyProfileEnrollment.PolicyProfileEnrollmentConfig.property.name">name</a></code> | <code>str</code> | Name of the policy. |
-| <code><a href="#@cdktf/provider-okta.policyProfileEnrollment.PolicyProfileEnrollmentConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_profile_enrollment#id PolicyProfileEnrollment#id}. |
+| <code><a href="#@cdktf/provider-okta.policyProfileEnrollment.PolicyProfileEnrollmentConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/policy_profile_enrollment#id PolicyProfileEnrollment#id}. |
 | <code><a href="#@cdktf/provider-okta.policyProfileEnrollment.PolicyProfileEnrollmentConfig.property.status">status</a></code> | <code>str</code> | Status of the policy. |
 
 ---
@@ -997,7 +997,7 @@ name: str
 
 Name of the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_profile_enrollment#name PolicyProfileEnrollment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/policy_profile_enrollment#name PolicyProfileEnrollment#name}
 
 ---
 
@@ -1009,7 +1009,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_profile_enrollment#id PolicyProfileEnrollment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/policy_profile_enrollment#id PolicyProfileEnrollment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1026,7 +1026,7 @@ status: str
 
 Status of the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/policy_profile_enrollment#status PolicyProfileEnrollment#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/policy_profile_enrollment#status PolicyProfileEnrollment#status}
 
 ---
 

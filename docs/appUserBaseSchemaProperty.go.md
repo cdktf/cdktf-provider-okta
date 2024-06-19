@@ -4,12 +4,12 @@
 
 ### AppUserBaseSchemaProperty <a name="AppUserBaseSchemaProperty" id="@cdktf/provider-okta.appUserBaseSchemaProperty.AppUserBaseSchemaProperty"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_user_base_schema_property okta_app_user_base_schema_property}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_user_base_schema_property okta_app_user_base_schema_property}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appUserBaseSchemaProperty.AppUserBaseSchemaProperty.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/appuserbaseschemaproperty"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appuserbaseschemaproperty"
 
 appuserbaseschemaproperty.NewAppUserBaseSchemaProperty(scope Construct, id *string, config AppUserBaseSchemaPropertyConfig) AppUserBaseSchemaProperty
 ```
@@ -420,7 +420,7 @@ func ResetUserType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.appUserBaseSchemaProperty.AppUserBaseSchemaProperty.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/appuserbaseschemaproperty"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appuserbaseschemaproperty"
 
 appuserbaseschemaproperty.AppUserBaseSchemaProperty_IsConstruct(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.appUserBaseSchemaProperty.AppUserBaseSchemaProperty.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/appuserbaseschemaproperty"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appuserbaseschemaproperty"
 
 appuserbaseschemaproperty.AppUserBaseSchemaProperty_IsTerraformElement(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ appuserbaseschemaproperty.AppUserBaseSchemaProperty_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.appUserBaseSchemaProperty.AppUserBaseSchemaProperty.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/appuserbaseschemaproperty"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appuserbaseschemaproperty"
 
 appuserbaseschemaproperty.AppUserBaseSchemaProperty_IsTerraformResource(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ appuserbaseschemaproperty.AppUserBaseSchemaProperty_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.appUserBaseSchemaProperty.AppUserBaseSchemaProperty.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/appuserbaseschemaproperty"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appuserbaseschemaproperty"
 
 appuserbaseschemaproperty.AppUserBaseSchemaProperty_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -509,7 +509,7 @@ The construct id used in the generated config for the AppUserBaseSchemaProperty 
 
 The id of the existing AppUserBaseSchemaProperty that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_user_base_schema_property#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_user_base_schema_property#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -929,7 +929,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.appUserBaseSchemaProperty.AppUserBaseSchemaPropertyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/appuserbaseschemaproperty"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appuserbaseschemaproperty"
 
 &appuserbaseschemaproperty.AppUserBaseSchemaPropertyConfig {
 	Connection: interface{},
@@ -967,7 +967,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/appuserbaseschemaproper
 | <code><a href="#@cdktf/provider-okta.appUserBaseSchemaProperty.AppUserBaseSchemaPropertyConfig.property.index">Index</a></code> | <code>*string</code> | Subschema unique string identifier. |
 | <code><a href="#@cdktf/provider-okta.appUserBaseSchemaProperty.AppUserBaseSchemaPropertyConfig.property.title">Title</a></code> | <code>*string</code> | Subschema title (display name). |
 | <code><a href="#@cdktf/provider-okta.appUserBaseSchemaProperty.AppUserBaseSchemaPropertyConfig.property.type">Type</a></code> | <code>*string</code> | The type of the schema property. It can be `string`, `boolean`, `number`, `integer`, `array`, or `object`. |
-| <code><a href="#@cdktf/provider-okta.appUserBaseSchemaProperty.AppUserBaseSchemaPropertyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_user_base_schema_property#id AppUserBaseSchemaProperty#id}. |
+| <code><a href="#@cdktf/provider-okta.appUserBaseSchemaProperty.AppUserBaseSchemaPropertyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_user_base_schema_property#id AppUserBaseSchemaProperty#id}. |
 | <code><a href="#@cdktf/provider-okta.appUserBaseSchemaProperty.AppUserBaseSchemaPropertyConfig.property.master">Master</a></code> | <code>*string</code> | Master priority for the user schema property. It can be set to `PROFILE_MASTER` or `OKTA`. Default: `PROFILE_MASTER`. |
 | <code><a href="#@cdktf/provider-okta.appUserBaseSchemaProperty.AppUserBaseSchemaPropertyConfig.property.pattern">Pattern</a></code> | <code>*string</code> | The validation pattern to use for the subschema. Must be in form of '.+', or '[<pattern>]+' if present.'. |
 | <code><a href="#@cdktf/provider-okta.appUserBaseSchemaProperty.AppUserBaseSchemaPropertyConfig.property.permissions">Permissions</a></code> | <code>*string</code> | Access control permissions for the property. It can be set to `READ_WRITE`, `READ_ONLY`, `HIDE`. Default: `READ_ONLY`. |
@@ -1056,7 +1056,7 @@ AppId *string
 
 The Application's ID the user schema property should be assigned to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_user_base_schema_property#app_id AppUserBaseSchemaProperty#app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_user_base_schema_property#app_id AppUserBaseSchemaProperty#app_id}
 
 ---
 
@@ -1070,7 +1070,7 @@ Index *string
 
 Subschema unique string identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_user_base_schema_property#index AppUserBaseSchemaProperty#index}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_user_base_schema_property#index AppUserBaseSchemaProperty#index}
 
 ---
 
@@ -1084,7 +1084,7 @@ Title *string
 
 Subschema title (display name).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_user_base_schema_property#title AppUserBaseSchemaProperty#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_user_base_schema_property#title AppUserBaseSchemaProperty#title}
 
 ---
 
@@ -1098,7 +1098,7 @@ Type *string
 
 The type of the schema property. It can be `string`, `boolean`, `number`, `integer`, `array`, or `object`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_user_base_schema_property#type AppUserBaseSchemaProperty#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_user_base_schema_property#type AppUserBaseSchemaProperty#type}
 
 ---
 
@@ -1110,7 +1110,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_user_base_schema_property#id AppUserBaseSchemaProperty#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_user_base_schema_property#id AppUserBaseSchemaProperty#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1127,7 +1127,7 @@ Master *string
 
 Master priority for the user schema property. It can be set to `PROFILE_MASTER` or `OKTA`. Default: `PROFILE_MASTER`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_user_base_schema_property#master AppUserBaseSchemaProperty#master}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_user_base_schema_property#master AppUserBaseSchemaProperty#master}
 
 ---
 
@@ -1141,7 +1141,7 @@ Pattern *string
 
 The validation pattern to use for the subschema. Must be in form of '.+', or '[<pattern>]+' if present.'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_user_base_schema_property#pattern AppUserBaseSchemaProperty#pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_user_base_schema_property#pattern AppUserBaseSchemaProperty#pattern}
 
 ---
 
@@ -1155,7 +1155,7 @@ Permissions *string
 
 Access control permissions for the property. It can be set to `READ_WRITE`, `READ_ONLY`, `HIDE`. Default: `READ_ONLY`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_user_base_schema_property#permissions AppUserBaseSchemaProperty#permissions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_user_base_schema_property#permissions AppUserBaseSchemaProperty#permissions}
 
 ---
 
@@ -1169,7 +1169,7 @@ Required interface{}
 
 Whether the subschema is required.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_user_base_schema_property#required AppUserBaseSchemaProperty#required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_user_base_schema_property#required AppUserBaseSchemaProperty#required}
 
 ---
 
@@ -1183,7 +1183,7 @@ UserType *string
 
 User type ID. By default, it is `default`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_user_base_schema_property#user_type AppUserBaseSchemaProperty#user_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_user_base_schema_property#user_type AppUserBaseSchemaProperty#user_type}
 
 ---
 

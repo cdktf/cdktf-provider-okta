@@ -4,7 +4,7 @@
 
 ### NetworkZone <a name="NetworkZone" id="@cdktf/provider-okta.networkZone.NetworkZone"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/network_zone okta_network_zone}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/network_zone okta_network_zone}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.networkZone.NetworkZone.Initializer"></a>
 
@@ -523,7 +523,7 @@ The construct id used in the generated config for the NetworkZone to import.
 
 The id of the existing NetworkZone that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/network_zone#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/network_zone#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -965,7 +965,7 @@ const networkZoneConfig: networkZone.NetworkZoneConfig = { ... }
 | <code><a href="#@cdktf/provider-okta.networkZone.NetworkZoneConfig.property.dynamicLocations">dynamicLocations</a></code> | <code>string[]</code> | Array of locations ISO-3166-1(2). Format code: countryCode OR countryCode-regionCode. |
 | <code><a href="#@cdktf/provider-okta.networkZone.NetworkZoneConfig.property.dynamicProxyType">dynamicProxyType</a></code> | <code>string</code> | Type of proxy being controlled by this dynamic network zone - can be one of `Any`, `TorAnonymizer` or `NotTorAnonymizer`. |
 | <code><a href="#@cdktf/provider-okta.networkZone.NetworkZoneConfig.property.gateways">gateways</a></code> | <code>string[]</code> | Array of values in CIDR/range form depending on the way it's been declared (i.e. CIDR will contain /suffix). Please check API docs for examples. |
-| <code><a href="#@cdktf/provider-okta.networkZone.NetworkZoneConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/network_zone#id NetworkZone#id}. |
+| <code><a href="#@cdktf/provider-okta.networkZone.NetworkZoneConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/network_zone#id NetworkZone#id}. |
 | <code><a href="#@cdktf/provider-okta.networkZone.NetworkZoneConfig.property.proxies">proxies</a></code> | <code>string[]</code> | Array of values in CIDR/range form depending on the way it's been declared (i.e. CIDR will contain /suffix). Please check API docs for examples. Can not be set if `usage` is set to `BLOCKLIST`. |
 | <code><a href="#@cdktf/provider-okta.networkZone.NetworkZoneConfig.property.status">status</a></code> | <code>string</code> | Network Status - can either be `ACTIVE` or `INACTIVE` only. |
 | <code><a href="#@cdktf/provider-okta.networkZone.NetworkZoneConfig.property.usage">usage</a></code> | <code>string</code> | Usage of the Network Zone - can be either `POLICY` or `BLOCKLIST`. By default, it is `POLICY`. |
@@ -1052,7 +1052,7 @@ public readonly name: string;
 
 Name of the Network Zone Resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/network_zone#name NetworkZone#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/network_zone#name NetworkZone#name}
 
 ---
 
@@ -1066,7 +1066,7 @@ public readonly type: string;
 
 Type of the Network Zone - can either be `IP` or `DYNAMIC` only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/network_zone#type NetworkZone#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/network_zone#type NetworkZone#type}
 
 ---
 
@@ -1080,7 +1080,7 @@ public readonly asns: string[];
 
 Format of each array value: a string representation of an ASN numeric value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/network_zone#asns NetworkZone#asns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/network_zone#asns NetworkZone#asns}
 
 ---
 
@@ -1094,7 +1094,7 @@ public readonly dynamicLocations: string[];
 
 Array of locations ISO-3166-1(2). Format code: countryCode OR countryCode-regionCode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/network_zone#dynamic_locations NetworkZone#dynamic_locations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/network_zone#dynamic_locations NetworkZone#dynamic_locations}
 
 ---
 
@@ -1108,7 +1108,7 @@ public readonly dynamicProxyType: string;
 
 Type of proxy being controlled by this dynamic network zone - can be one of `Any`, `TorAnonymizer` or `NotTorAnonymizer`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/network_zone#dynamic_proxy_type NetworkZone#dynamic_proxy_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/network_zone#dynamic_proxy_type NetworkZone#dynamic_proxy_type}
 
 ---
 
@@ -1122,7 +1122,7 @@ public readonly gateways: string[];
 
 Array of values in CIDR/range form depending on the way it's been declared (i.e. CIDR will contain /suffix). Please check API docs for examples.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/network_zone#gateways NetworkZone#gateways}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/network_zone#gateways NetworkZone#gateways}
 
 ---
 
@@ -1134,7 +1134,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/network_zone#id NetworkZone#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/network_zone#id NetworkZone#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1151,7 +1151,7 @@ public readonly proxies: string[];
 
 Array of values in CIDR/range form depending on the way it's been declared (i.e. CIDR will contain /suffix). Please check API docs for examples. Can not be set if `usage` is set to `BLOCKLIST`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/network_zone#proxies NetworkZone#proxies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/network_zone#proxies NetworkZone#proxies}
 
 ---
 
@@ -1165,7 +1165,7 @@ public readonly status: string;
 
 Network Status - can either be `ACTIVE` or `INACTIVE` only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/network_zone#status NetworkZone#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/network_zone#status NetworkZone#status}
 
 ---
 
@@ -1179,7 +1179,7 @@ public readonly usage: string;
 
 Usage of the Network Zone - can be either `POLICY` or `BLOCKLIST`. By default, it is `POLICY`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/network_zone#usage NetworkZone#usage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/network_zone#usage NetworkZone#usage}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### AppSaml <a name="AppSaml" id="@cdktf/provider-okta.appSaml.AppSaml"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml okta_app_saml}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml okta_app_saml}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appSaml.AppSaml.Initializer"></a>
 
@@ -117,7 +117,7 @@ AppSaml.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.hideIos">hideIos</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Do not display application icon on mobile app. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.hideWeb">hideWeb</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Do not display application icon to users. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.honorForceAuthn">honorForceAuthn</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Prompt user to re-authenticate if SP asks for it. Default is: `false`. |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#id AppSaml#id}. |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#id AppSaml#id}. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.idpIssuer">idpIssuer</a></code> | <code>java.lang.String</code> | SAML issuer ID. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.implicitAssignment">implicitAssignment</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *Early Access Property*. Enable Federation Broker Mode. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.inlineHookId">inlineHookId</a></code> | <code>java.lang.String</code> | Saml Inline Hook setting. |
@@ -213,7 +213,7 @@ Must be unique amongst siblings in the same scope
 
 The Application's display name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#label AppSaml#label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#label AppSaml#label}
 
 ---
 
@@ -223,7 +223,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Custom error page URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#accessibility_error_redirect_url AppSaml#accessibility_error_redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#accessibility_error_redirect_url AppSaml#accessibility_error_redirect_url}
 
 ---
 
@@ -233,7 +233,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Custom login page URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#accessibility_login_redirect_url AppSaml#accessibility_login_redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#accessibility_login_redirect_url AppSaml#accessibility_login_redirect_url}
 
 ---
 
@@ -243,7 +243,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Enable self service. Default is `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#accessibility_self_service AppSaml#accessibility_self_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#accessibility_self_service AppSaml#accessibility_self_service}
 
 ---
 
@@ -253,7 +253,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 An array of ACS endpoints. You can configure a maximum of 100 endpoints.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#acs_endpoints AppSaml#acs_endpoints}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#acs_endpoints AppSaml#acs_endpoints}
 
 ---
 
@@ -263,7 +263,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Application notes for admins.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#admin_note AppSaml#admin_note}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#admin_note AppSaml#admin_note}
 
 ---
 
@@ -273,7 +273,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Displays specific appLinks for the app. The value for each application link should be boolean.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#app_links_json AppSaml#app_links_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#app_links_json AppSaml#app_links_json}
 
 ---
 
@@ -283,7 +283,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Application settings in JSON format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#app_settings_json AppSaml#app_settings_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#app_settings_json AppSaml#app_settings_json}
 
 ---
 
@@ -293,7 +293,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Determines whether the SAML assertion is digitally signed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#assertion_signed AppSaml#assertion_signed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#assertion_signed AppSaml#assertion_signed}
 
 ---
 
@@ -303,7 +303,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 attribute_statements block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#attribute_statements AppSaml#attribute_statements}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#attribute_statements AppSaml#attribute_statements}
 
 ---
 
@@ -313,7 +313,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Audience Restriction.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#audience AppSaml#audience}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#audience AppSaml#audience}
 
 ---
 
@@ -325,7 +325,7 @@ The ID of the associated `app_signon_policy`.
 
 If this property is removed from the application the `default` sign-on-policy will be associated with this application.y
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#authentication_policy AppSaml#authentication_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#authentication_policy AppSaml#authentication_policy}
 
 ---
 
@@ -335,7 +335,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Identifies the SAML authentication context class for the assertion’s authentication statement.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#authn_context_class_ref AppSaml#authn_context_class_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#authn_context_class_ref AppSaml#authn_context_class_ref}
 
 ---
 
@@ -345,7 +345,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Display auto submit toolbar. Default is: `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#auto_submit_toolbar AppSaml#auto_submit_toolbar}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#auto_submit_toolbar AppSaml#auto_submit_toolbar}
 
 ---
 
@@ -355,7 +355,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Identifies a specific application resource in an IDP initiated SSO scenario.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#default_relay_state AppSaml#default_relay_state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#default_relay_state AppSaml#default_relay_state}
 
 ---
 
@@ -365,7 +365,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Identifies the location where the SAML response is intended to be sent inside of the SAML assertion.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#destination AppSaml#destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#destination AppSaml#destination}
 
 ---
 
@@ -375,7 +375,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Determines the digest algorithm used to digitally sign the SAML assertion and response.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#digest_algorithm AppSaml#digest_algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#digest_algorithm AppSaml#digest_algorithm}
 
 ---
 
@@ -385,7 +385,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Application notes for end users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#enduser_note AppSaml#enduser_note}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#enduser_note AppSaml#enduser_note}
 
 ---
 
@@ -395,7 +395,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Do not display application icon on mobile app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#hide_ios AppSaml#hide_ios}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#hide_ios AppSaml#hide_ios}
 
 ---
 
@@ -405,7 +405,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Do not display application icon to users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#hide_web AppSaml#hide_web}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#hide_web AppSaml#hide_web}
 
 ---
 
@@ -415,7 +415,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Prompt user to re-authenticate if SP asks for it. Default is: `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#honor_force_authn AppSaml#honor_force_authn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#honor_force_authn AppSaml#honor_force_authn}
 
 ---
 
@@ -423,7 +423,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#id AppSaml#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#id AppSaml#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -436,7 +436,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 SAML issuer ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#idp_issuer AppSaml#idp_issuer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#idp_issuer AppSaml#idp_issuer}
 
 ---
 
@@ -446,7 +446,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 *Early Access Property*. Enable Federation Broker Mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#implicit_assignment AppSaml#implicit_assignment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#implicit_assignment AppSaml#implicit_assignment}
 
 ---
 
@@ -456,7 +456,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Saml Inline Hook setting.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#inline_hook_id AppSaml#inline_hook_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#inline_hook_id AppSaml#inline_hook_id}
 
 ---
 
@@ -466,7 +466,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Certificate name. This modulates the rotation of keys. New name == new key. Required to be set with `key_years_valid`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#key_name AppSaml#key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#key_name AppSaml#key_name}
 
 ---
 
@@ -476,7 +476,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Number of years the certificate is valid (2 - 10 years).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#key_years_valid AppSaml#key_years_valid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#key_years_valid AppSaml#key_years_valid}
 
 ---
 
@@ -488,7 +488,7 @@ Local file path to the logo.
 
 The file must be in PNG, JPG, or GIF format, and less than 1 MB in size.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#logo AppSaml#logo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#logo AppSaml#logo}
 
 ---
 
@@ -509,7 +509,7 @@ For instance 'slack'. If not included a custom app will be created.  If not prov
 'digest_algorithm'
 'authn_context_class_ref'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#preconfigured_app AppSaml#preconfigured_app}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#preconfigured_app AppSaml#preconfigured_app}
 
 ---
 
@@ -519,7 +519,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 The location where the app may present the SAML assertion.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#recipient AppSaml#recipient}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#recipient AppSaml#recipient}
 
 ---
 
@@ -529,7 +529,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Denotes whether the request is compressed or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#request_compressed AppSaml#request_compressed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#request_compressed AppSaml#request_compressed}
 
 ---
 
@@ -539,7 +539,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Determines whether the SAML auth response message is digitally signed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#response_signed AppSaml#response_signed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#response_signed AppSaml#response_signed}
 
 ---
 
@@ -549,7 +549,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 SAML Signed Request enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#saml_signed_request_enabled AppSaml#saml_signed_request_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#saml_signed_request_enabled AppSaml#saml_signed_request_enabled}
 
 ---
 
@@ -559,7 +559,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 SAML version for the app's sign-on mode. Valid values are: `2.0` or `1.1`. Default is `2.0`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#saml_version AppSaml#saml_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#saml_version AppSaml#saml_version}
 
 ---
 
@@ -569,7 +569,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Signature algorithm used to digitally sign the assertion and response.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#signature_algorithm AppSaml#signature_algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#signature_algorithm AppSaml#signature_algorithm}
 
 ---
 
@@ -581,7 +581,7 @@ x509 encoded certificate that the Service Provider uses to sign Single Logout re
 
 Note: should be provided without `-----BEGIN CERTIFICATE-----` and `-----END CERTIFICATE-----`, see [official documentation](https://developer.okta.com/docs/reference/api/apps/#service-provider-certificate).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#single_logout_certificate AppSaml#single_logout_certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#single_logout_certificate AppSaml#single_logout_certificate}
 
 ---
 
@@ -591,7 +591,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 The issuer of the Service Provider that generates the Single Logout request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#single_logout_issuer AppSaml#single_logout_issuer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#single_logout_issuer AppSaml#single_logout_issuer}
 
 ---
 
@@ -601,7 +601,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 The location where the logout response is sent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#single_logout_url AppSaml#single_logout_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#single_logout_url AppSaml#single_logout_url}
 
 ---
 
@@ -611,7 +611,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 SAML SP issuer ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#sp_issuer AppSaml#sp_issuer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#sp_issuer AppSaml#sp_issuer}
 
 ---
 
@@ -621,7 +621,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Single Sign On URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#sso_url AppSaml#sso_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#sso_url AppSaml#sso_url}
 
 ---
 
@@ -631,7 +631,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Status of application. By default, it is `ACTIVE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#status AppSaml#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#status AppSaml#status}
 
 ---
 
@@ -641,7 +641,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Identifies the SAML processing rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#subject_name_id_format AppSaml#subject_name_id_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#subject_name_id_format AppSaml#subject_name_id_format}
 
 ---
 
@@ -651,7 +651,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Template for app user's username when a user is assigned to the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#subject_name_id_template AppSaml#subject_name_id_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#subject_name_id_template AppSaml#subject_name_id_template}
 
 ---
 
@@ -661,7 +661,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#timeouts AppSaml#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#timeouts AppSaml#timeouts}
 
 ---
 
@@ -671,7 +671,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Username template. Default: `${source.login}`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#user_name_template AppSaml#user_name_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#user_name_template AppSaml#user_name_template}
 
 ---
 
@@ -681,7 +681,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Push username on update. Valid values: `PUSH` and `DONT_PUSH`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#user_name_template_push_status AppSaml#user_name_template_push_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#user_name_template_push_status AppSaml#user_name_template_push_status}
 
 ---
 
@@ -691,7 +691,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Username template suffix.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#user_name_template_suffix AppSaml#user_name_template_suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#user_name_template_suffix AppSaml#user_name_template_suffix}
 
 ---
 
@@ -701,7 +701,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Username template type. Default: `BUILT_IN`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#user_name_template_type AppSaml#user_name_template_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#user_name_template_type AppSaml#user_name_template_type}
 
 ---
 
@@ -1483,7 +1483,7 @@ The construct id used in the generated config for the AppSaml to import.
 
 The id of the existing AppSaml that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -2914,7 +2914,7 @@ AppSamlAttributeStatements.builder()
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlAttributeStatements.property.filterValue">filterValue</a></code> | <code>java.lang.String</code> | Filter value to use. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlAttributeStatements.property.namespace">namespace</a></code> | <code>java.lang.String</code> | The attribute namespace. It can be set to `urn:oasis:names:tc:SAML:2.0:attrname-format:unspecified`, `urn:oasis:names:tc:SAML:2.0:attrname-format:uri`, or `urn:oasis:names:tc:SAML:2.0:attrname-format:basic`. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlAttributeStatements.property.type">type</a></code> | <code>java.lang.String</code> | The type of attribute statements object. |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlAttributeStatements.property.values">values</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#values AppSaml#values}. |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlAttributeStatements.property.values">values</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#values AppSaml#values}. |
 
 ---
 
@@ -2928,7 +2928,7 @@ public java.lang.String getName();
 
 The reference name of the attribute statement.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#name AppSaml#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#name AppSaml#name}
 
 ---
 
@@ -2942,7 +2942,7 @@ public java.lang.String getFilterType();
 
 Type of group attribute filter. Valid values are: `STARTS_WITH`, `EQUALS`, `CONTAINS`, or `REGEX`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#filter_type AppSaml#filter_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#filter_type AppSaml#filter_type}
 
 ---
 
@@ -2956,7 +2956,7 @@ public java.lang.String getFilterValue();
 
 Filter value to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#filter_value AppSaml#filter_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#filter_value AppSaml#filter_value}
 
 ---
 
@@ -2970,7 +2970,7 @@ public java.lang.String getNamespace();
 
 The attribute namespace. It can be set to `urn:oasis:names:tc:SAML:2.0:attrname-format:unspecified`, `urn:oasis:names:tc:SAML:2.0:attrname-format:uri`, or `urn:oasis:names:tc:SAML:2.0:attrname-format:basic`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#namespace AppSaml#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#namespace AppSaml#namespace}
 
 ---
 
@@ -2984,7 +2984,7 @@ public java.lang.String getType();
 
 The type of attribute statements object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#type AppSaml#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#type AppSaml#type}
 
 ---
 
@@ -2996,7 +2996,7 @@ public java.util.List<java.lang.String> getValues();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#values AppSaml#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#values AppSaml#values}.
 
 ---
 
@@ -3113,7 +3113,7 @@ AppSamlConfig.builder()
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.hideIos">hideIos</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Do not display application icon on mobile app. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.hideWeb">hideWeb</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Do not display application icon to users. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.honorForceAuthn">honorForceAuthn</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Prompt user to re-authenticate if SP asks for it. Default is: `false`. |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#id AppSaml#id}. |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#id AppSaml#id}. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.idpIssuer">idpIssuer</a></code> | <code>java.lang.String</code> | SAML issuer ID. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.implicitAssignment">implicitAssignment</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *Early Access Property*. Enable Federation Broker Mode. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.inlineHookId">inlineHookId</a></code> | <code>java.lang.String</code> | Saml Inline Hook setting. |
@@ -3223,7 +3223,7 @@ public java.lang.String getLabel();
 
 The Application's display name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#label AppSaml#label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#label AppSaml#label}
 
 ---
 
@@ -3237,7 +3237,7 @@ public java.lang.String getAccessibilityErrorRedirectUrl();
 
 Custom error page URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#accessibility_error_redirect_url AppSaml#accessibility_error_redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#accessibility_error_redirect_url AppSaml#accessibility_error_redirect_url}
 
 ---
 
@@ -3251,7 +3251,7 @@ public java.lang.String getAccessibilityLoginRedirectUrl();
 
 Custom login page URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#accessibility_login_redirect_url AppSaml#accessibility_login_redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#accessibility_login_redirect_url AppSaml#accessibility_login_redirect_url}
 
 ---
 
@@ -3265,7 +3265,7 @@ public java.lang.Object getAccessibilitySelfService();
 
 Enable self service. Default is `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#accessibility_self_service AppSaml#accessibility_self_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#accessibility_self_service AppSaml#accessibility_self_service}
 
 ---
 
@@ -3279,7 +3279,7 @@ public java.util.List<java.lang.String> getAcsEndpoints();
 
 An array of ACS endpoints. You can configure a maximum of 100 endpoints.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#acs_endpoints AppSaml#acs_endpoints}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#acs_endpoints AppSaml#acs_endpoints}
 
 ---
 
@@ -3293,7 +3293,7 @@ public java.lang.String getAdminNote();
 
 Application notes for admins.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#admin_note AppSaml#admin_note}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#admin_note AppSaml#admin_note}
 
 ---
 
@@ -3307,7 +3307,7 @@ public java.lang.String getAppLinksJson();
 
 Displays specific appLinks for the app. The value for each application link should be boolean.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#app_links_json AppSaml#app_links_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#app_links_json AppSaml#app_links_json}
 
 ---
 
@@ -3321,7 +3321,7 @@ public java.lang.String getAppSettingsJson();
 
 Application settings in JSON format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#app_settings_json AppSaml#app_settings_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#app_settings_json AppSaml#app_settings_json}
 
 ---
 
@@ -3335,7 +3335,7 @@ public java.lang.Object getAssertionSigned();
 
 Determines whether the SAML assertion is digitally signed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#assertion_signed AppSaml#assertion_signed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#assertion_signed AppSaml#assertion_signed}
 
 ---
 
@@ -3349,7 +3349,7 @@ public java.lang.Object getAttributeStatements();
 
 attribute_statements block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#attribute_statements AppSaml#attribute_statements}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#attribute_statements AppSaml#attribute_statements}
 
 ---
 
@@ -3363,7 +3363,7 @@ public java.lang.String getAudience();
 
 Audience Restriction.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#audience AppSaml#audience}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#audience AppSaml#audience}
 
 ---
 
@@ -3379,7 +3379,7 @@ The ID of the associated `app_signon_policy`.
 
 If this property is removed from the application the `default` sign-on-policy will be associated with this application.y
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#authentication_policy AppSaml#authentication_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#authentication_policy AppSaml#authentication_policy}
 
 ---
 
@@ -3393,7 +3393,7 @@ public java.lang.String getAuthnContextClassRef();
 
 Identifies the SAML authentication context class for the assertion’s authentication statement.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#authn_context_class_ref AppSaml#authn_context_class_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#authn_context_class_ref AppSaml#authn_context_class_ref}
 
 ---
 
@@ -3407,7 +3407,7 @@ public java.lang.Object getAutoSubmitToolbar();
 
 Display auto submit toolbar. Default is: `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#auto_submit_toolbar AppSaml#auto_submit_toolbar}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#auto_submit_toolbar AppSaml#auto_submit_toolbar}
 
 ---
 
@@ -3421,7 +3421,7 @@ public java.lang.String getDefaultRelayState();
 
 Identifies a specific application resource in an IDP initiated SSO scenario.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#default_relay_state AppSaml#default_relay_state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#default_relay_state AppSaml#default_relay_state}
 
 ---
 
@@ -3435,7 +3435,7 @@ public java.lang.String getDestination();
 
 Identifies the location where the SAML response is intended to be sent inside of the SAML assertion.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#destination AppSaml#destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#destination AppSaml#destination}
 
 ---
 
@@ -3449,7 +3449,7 @@ public java.lang.String getDigestAlgorithm();
 
 Determines the digest algorithm used to digitally sign the SAML assertion and response.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#digest_algorithm AppSaml#digest_algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#digest_algorithm AppSaml#digest_algorithm}
 
 ---
 
@@ -3463,7 +3463,7 @@ public java.lang.String getEnduserNote();
 
 Application notes for end users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#enduser_note AppSaml#enduser_note}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#enduser_note AppSaml#enduser_note}
 
 ---
 
@@ -3477,7 +3477,7 @@ public java.lang.Object getHideIos();
 
 Do not display application icon on mobile app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#hide_ios AppSaml#hide_ios}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#hide_ios AppSaml#hide_ios}
 
 ---
 
@@ -3491,7 +3491,7 @@ public java.lang.Object getHideWeb();
 
 Do not display application icon to users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#hide_web AppSaml#hide_web}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#hide_web AppSaml#hide_web}
 
 ---
 
@@ -3505,7 +3505,7 @@ public java.lang.Object getHonorForceAuthn();
 
 Prompt user to re-authenticate if SP asks for it. Default is: `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#honor_force_authn AppSaml#honor_force_authn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#honor_force_authn AppSaml#honor_force_authn}
 
 ---
 
@@ -3517,7 +3517,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#id AppSaml#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#id AppSaml#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -3534,7 +3534,7 @@ public java.lang.String getIdpIssuer();
 
 SAML issuer ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#idp_issuer AppSaml#idp_issuer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#idp_issuer AppSaml#idp_issuer}
 
 ---
 
@@ -3548,7 +3548,7 @@ public java.lang.Object getImplicitAssignment();
 
 *Early Access Property*. Enable Federation Broker Mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#implicit_assignment AppSaml#implicit_assignment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#implicit_assignment AppSaml#implicit_assignment}
 
 ---
 
@@ -3562,7 +3562,7 @@ public java.lang.String getInlineHookId();
 
 Saml Inline Hook setting.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#inline_hook_id AppSaml#inline_hook_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#inline_hook_id AppSaml#inline_hook_id}
 
 ---
 
@@ -3576,7 +3576,7 @@ public java.lang.String getKeyName();
 
 Certificate name. This modulates the rotation of keys. New name == new key. Required to be set with `key_years_valid`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#key_name AppSaml#key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#key_name AppSaml#key_name}
 
 ---
 
@@ -3590,7 +3590,7 @@ public java.lang.Number getKeyYearsValid();
 
 Number of years the certificate is valid (2 - 10 years).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#key_years_valid AppSaml#key_years_valid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#key_years_valid AppSaml#key_years_valid}
 
 ---
 
@@ -3606,7 +3606,7 @@ Local file path to the logo.
 
 The file must be in PNG, JPG, or GIF format, and less than 1 MB in size.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#logo AppSaml#logo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#logo AppSaml#logo}
 
 ---
 
@@ -3631,7 +3631,7 @@ For instance 'slack'. If not included a custom app will be created.  If not prov
 'digest_algorithm'
 'authn_context_class_ref'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#preconfigured_app AppSaml#preconfigured_app}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#preconfigured_app AppSaml#preconfigured_app}
 
 ---
 
@@ -3645,7 +3645,7 @@ public java.lang.String getRecipient();
 
 The location where the app may present the SAML assertion.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#recipient AppSaml#recipient}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#recipient AppSaml#recipient}
 
 ---
 
@@ -3659,7 +3659,7 @@ public java.lang.Object getRequestCompressed();
 
 Denotes whether the request is compressed or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#request_compressed AppSaml#request_compressed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#request_compressed AppSaml#request_compressed}
 
 ---
 
@@ -3673,7 +3673,7 @@ public java.lang.Object getResponseSigned();
 
 Determines whether the SAML auth response message is digitally signed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#response_signed AppSaml#response_signed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#response_signed AppSaml#response_signed}
 
 ---
 
@@ -3687,7 +3687,7 @@ public java.lang.Object getSamlSignedRequestEnabled();
 
 SAML Signed Request enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#saml_signed_request_enabled AppSaml#saml_signed_request_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#saml_signed_request_enabled AppSaml#saml_signed_request_enabled}
 
 ---
 
@@ -3701,7 +3701,7 @@ public java.lang.String getSamlVersion();
 
 SAML version for the app's sign-on mode. Valid values are: `2.0` or `1.1`. Default is `2.0`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#saml_version AppSaml#saml_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#saml_version AppSaml#saml_version}
 
 ---
 
@@ -3715,7 +3715,7 @@ public java.lang.String getSignatureAlgorithm();
 
 Signature algorithm used to digitally sign the assertion and response.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#signature_algorithm AppSaml#signature_algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#signature_algorithm AppSaml#signature_algorithm}
 
 ---
 
@@ -3731,7 +3731,7 @@ x509 encoded certificate that the Service Provider uses to sign Single Logout re
 
 Note: should be provided without `-----BEGIN CERTIFICATE-----` and `-----END CERTIFICATE-----`, see [official documentation](https://developer.okta.com/docs/reference/api/apps/#service-provider-certificate).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#single_logout_certificate AppSaml#single_logout_certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#single_logout_certificate AppSaml#single_logout_certificate}
 
 ---
 
@@ -3745,7 +3745,7 @@ public java.lang.String getSingleLogoutIssuer();
 
 The issuer of the Service Provider that generates the Single Logout request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#single_logout_issuer AppSaml#single_logout_issuer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#single_logout_issuer AppSaml#single_logout_issuer}
 
 ---
 
@@ -3759,7 +3759,7 @@ public java.lang.String getSingleLogoutUrl();
 
 The location where the logout response is sent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#single_logout_url AppSaml#single_logout_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#single_logout_url AppSaml#single_logout_url}
 
 ---
 
@@ -3773,7 +3773,7 @@ public java.lang.String getSpIssuer();
 
 SAML SP issuer ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#sp_issuer AppSaml#sp_issuer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#sp_issuer AppSaml#sp_issuer}
 
 ---
 
@@ -3787,7 +3787,7 @@ public java.lang.String getSsoUrl();
 
 Single Sign On URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#sso_url AppSaml#sso_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#sso_url AppSaml#sso_url}
 
 ---
 
@@ -3801,7 +3801,7 @@ public java.lang.String getStatus();
 
 Status of application. By default, it is `ACTIVE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#status AppSaml#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#status AppSaml#status}
 
 ---
 
@@ -3815,7 +3815,7 @@ public java.lang.String getSubjectNameIdFormat();
 
 Identifies the SAML processing rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#subject_name_id_format AppSaml#subject_name_id_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#subject_name_id_format AppSaml#subject_name_id_format}
 
 ---
 
@@ -3829,7 +3829,7 @@ public java.lang.String getSubjectNameIdTemplate();
 
 Template for app user's username when a user is assigned to the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#subject_name_id_template AppSaml#subject_name_id_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#subject_name_id_template AppSaml#subject_name_id_template}
 
 ---
 
@@ -3843,7 +3843,7 @@ public AppSamlTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#timeouts AppSaml#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#timeouts AppSaml#timeouts}
 
 ---
 
@@ -3857,7 +3857,7 @@ public java.lang.String getUserNameTemplate();
 
 Username template. Default: `${source.login}`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#user_name_template AppSaml#user_name_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#user_name_template AppSaml#user_name_template}
 
 ---
 
@@ -3871,7 +3871,7 @@ public java.lang.String getUserNameTemplatePushStatus();
 
 Push username on update. Valid values: `PUSH` and `DONT_PUSH`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#user_name_template_push_status AppSaml#user_name_template_push_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#user_name_template_push_status AppSaml#user_name_template_push_status}
 
 ---
 
@@ -3885,7 +3885,7 @@ public java.lang.String getUserNameTemplateSuffix();
 
 Username template suffix.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#user_name_template_suffix AppSaml#user_name_template_suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#user_name_template_suffix AppSaml#user_name_template_suffix}
 
 ---
 
@@ -3899,7 +3899,7 @@ public java.lang.String getUserNameTemplateType();
 
 Username template type. Default: `BUILT_IN`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#user_name_template_type AppSaml#user_name_template_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#user_name_template_type AppSaml#user_name_template_type}
 
 ---
 
@@ -3933,9 +3933,9 @@ AppSamlTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#create AppSaml#create}. |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#read AppSaml#read}. |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#update AppSaml#update}. |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#create AppSaml#create}. |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#read AppSaml#read}. |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#update AppSaml#update}. |
 
 ---
 
@@ -3947,7 +3947,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#create AppSaml#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#create AppSaml#create}.
 
 ---
 
@@ -3959,7 +3959,7 @@ public java.lang.String getRead();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#read AppSaml#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#read AppSaml#read}.
 
 ---
 
@@ -3971,7 +3971,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.8.1/docs/resources/app_saml#update AppSaml#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/app_saml#update AppSaml#update}.
 
 ---
 
