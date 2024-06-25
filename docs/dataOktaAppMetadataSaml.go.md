@@ -4,12 +4,12 @@
 
 ### DataOktaAppMetadataSaml <a name="DataOktaAppMetadataSaml" id="@cdktf/provider-okta.dataOktaAppMetadataSaml.DataOktaAppMetadataSaml"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/data-sources/app_metadata_saml okta_app_metadata_saml}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/data-sources/app_metadata_saml okta_app_metadata_saml}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaAppMetadataSaml.DataOktaAppMetadataSaml.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktaappmetadatasaml"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaappmetadatasaml"
 
 dataoktaappmetadatasaml.NewDataOktaAppMetadataSaml(scope Construct, id *string, config DataOktaAppMetadataSamlConfig) DataOktaAppMetadataSaml
 ```
@@ -290,7 +290,7 @@ func ResetKeyId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.dataOktaAppMetadataSaml.DataOktaAppMetadataSaml.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktaappmetadatasaml"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaappmetadatasaml"
 
 dataoktaappmetadatasaml.DataOktaAppMetadataSaml_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.dataOktaAppMetadataSaml.DataOktaAppMetadataSaml.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktaappmetadatasaml"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaappmetadatasaml"
 
 dataoktaappmetadatasaml.DataOktaAppMetadataSaml_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ dataoktaappmetadatasaml.DataOktaAppMetadataSaml_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-okta.dataOktaAppMetadataSaml.DataOktaAppMetadataSaml.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktaappmetadatasaml"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaappmetadatasaml"
 
 dataoktaappmetadatasaml.DataOktaAppMetadataSaml_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataoktaappmetadatasaml.DataOktaAppMetadataSaml_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.dataOktaAppMetadataSaml.DataOktaAppMetadataSaml.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktaappmetadatasaml"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaappmetadatasaml"
 
 dataoktaappmetadatasaml.DataOktaAppMetadataSaml_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -379,7 +379,7 @@ The construct id used in the generated config for the DataOktaAppMetadataSaml to
 
 The id of the existing DataOktaAppMetadataSaml that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/data-sources/app_metadata_saml#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/data-sources/app_metadata_saml#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -689,7 +689,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaAppMetadataSaml.DataOktaAppMetadataSamlConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktaappmetadatasaml"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaappmetadatasaml"
 
 &dataoktaappmetadatasaml.DataOktaAppMetadataSamlConfig {
 	Connection: interface{},
@@ -717,7 +717,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktaappmetadatasaml
 | <code><a href="#@cdktf/provider-okta.dataOktaAppMetadataSaml.DataOktaAppMetadataSamlConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaAppMetadataSaml.DataOktaAppMetadataSamlConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaAppMetadataSaml.DataOktaAppMetadataSamlConfig.property.appId">AppId</a></code> | <code>*string</code> | The application ID. |
-| <code><a href="#@cdktf/provider-okta.dataOktaAppMetadataSaml.DataOktaAppMetadataSamlConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/data-sources/app_metadata_saml#id DataOktaAppMetadataSaml#id}. |
+| <code><a href="#@cdktf/provider-okta.dataOktaAppMetadataSaml.DataOktaAppMetadataSamlConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/data-sources/app_metadata_saml#id DataOktaAppMetadataSaml#id}. |
 | <code><a href="#@cdktf/provider-okta.dataOktaAppMetadataSaml.DataOktaAppMetadataSamlConfig.property.keyId">KeyId</a></code> | <code>*string</code> | Certificate Key ID. |
 
 ---
@@ -802,7 +802,7 @@ AppId *string
 
 The application ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/data-sources/app_metadata_saml#app_id DataOktaAppMetadataSaml#app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/data-sources/app_metadata_saml#app_id DataOktaAppMetadataSaml#app_id}
 
 ---
 
@@ -814,7 +814,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/data-sources/app_metadata_saml#id DataOktaAppMetadataSaml#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/data-sources/app_metadata_saml#id DataOktaAppMetadataSaml#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -831,7 +831,7 @@ KeyId *string
 
 Certificate Key ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/data-sources/app_metadata_saml#key_id DataOktaAppMetadataSaml#key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/data-sources/app_metadata_saml#key_id DataOktaAppMetadataSaml#key_id}
 
 ---
 

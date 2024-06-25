@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/policy_device_assurance_android
+// https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_device_assurance_android
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,43 +10,43 @@ export interface PolicyDeviceAssuranceAndroidConfig extends cdktf.TerraformMetaA
   /**
   * List of disk encryption type, can be `FULL`, `USER`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/policy_device_assurance_android#disk_encryption_type PolicyDeviceAssuranceAndroid#disk_encryption_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_device_assurance_android#disk_encryption_type PolicyDeviceAssuranceAndroid#disk_encryption_type}
   */
   readonly diskEncryptionType?: string[];
   /**
   * Is the device jailbroken in the device assurance policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/policy_device_assurance_android#jailbreak PolicyDeviceAssuranceAndroid#jailbreak}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_device_assurance_android#jailbreak PolicyDeviceAssuranceAndroid#jailbreak}
   */
   readonly jailbreak?: boolean | cdktf.IResolvable;
   /**
   * Policy device assurance name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/policy_device_assurance_android#name PolicyDeviceAssuranceAndroid#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_device_assurance_android#name PolicyDeviceAssuranceAndroid#name}
   */
   readonly name: string;
   /**
   * Minimum os version of the device in the device assurance policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/policy_device_assurance_android#os_version PolicyDeviceAssuranceAndroid#os_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_device_assurance_android#os_version PolicyDeviceAssuranceAndroid#os_version}
   */
   readonly osVersion?: string;
   /**
   * List of screenlock type, can be `BIOMETRIC` or `BIOMETRIC, PASSCODE`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/policy_device_assurance_android#screenlock_type PolicyDeviceAssuranceAndroid#screenlock_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_device_assurance_android#screenlock_type PolicyDeviceAssuranceAndroid#screenlock_type}
   */
   readonly screenlockType?: string[];
   /**
   * Indicates if the device contains a secure hardware functionality
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/policy_device_assurance_android#secure_hardware_present PolicyDeviceAssuranceAndroid#secure_hardware_present}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_device_assurance_android#secure_hardware_present PolicyDeviceAssuranceAndroid#secure_hardware_present}
   */
   readonly secureHardwarePresent?: boolean | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/policy_device_assurance_android okta_policy_device_assurance_android}
+* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_device_assurance_android okta_policy_device_assurance_android}
 */
 export class PolicyDeviceAssuranceAndroid extends cdktf.TerraformResource {
 
@@ -67,7 +62,7 @@ export class PolicyDeviceAssuranceAndroid extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a PolicyDeviceAssuranceAndroid resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PolicyDeviceAssuranceAndroid to import
-  * @param importFromId The id of the existing PolicyDeviceAssuranceAndroid that should be imported. Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/policy_device_assurance_android#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing PolicyDeviceAssuranceAndroid that should be imported. Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_device_assurance_android#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PolicyDeviceAssuranceAndroid to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -79,7 +74,7 @@ export class PolicyDeviceAssuranceAndroid extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.9.0/docs/resources/policy_device_assurance_android okta_policy_device_assurance_android} Resource
+  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_device_assurance_android okta_policy_device_assurance_android} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -90,7 +85,7 @@ export class PolicyDeviceAssuranceAndroid extends cdktf.TerraformResource {
       terraformResourceType: 'okta_policy_device_assurance_android',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '4.9.0',
+        providerVersion: '4.9.1',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
