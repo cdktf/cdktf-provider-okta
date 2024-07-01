@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.previewSigninPage.PreviewSigninPage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/previewsigninpage"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/previewsigninpage"
 
 previewsigninpage.NewPreviewSigninPage(scope Construct, id *string, config PreviewSigninPageConfig) PreviewSigninPage
 ```
@@ -418,7 +418,7 @@ func ResetWidgetCustomizations()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.previewSigninPage.PreviewSigninPage.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/previewsigninpage"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/previewsigninpage"
 
 previewsigninpage.PreviewSigninPage_IsConstruct(x interface{}) *bool
 ```
@@ -450,7 +450,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.previewSigninPage.PreviewSigninPage.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/previewsigninpage"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/previewsigninpage"
 
 previewsigninpage.PreviewSigninPage_IsTerraformElement(x interface{}) *bool
 ```
@@ -464,7 +464,7 @@ previewsigninpage.PreviewSigninPage_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.previewSigninPage.PreviewSigninPage.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/previewsigninpage"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/previewsigninpage"
 
 previewsigninpage.PreviewSigninPage_IsTerraformResource(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ previewsigninpage.PreviewSigninPage_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.previewSigninPage.PreviewSigninPage.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/previewsigninpage"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/previewsigninpage"
 
 previewsigninpage.PreviewSigninPage_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -828,7 +828,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.previewSigninPage.PreviewSigninPageConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/previewsigninpage"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/previewsigninpage"
 
 &previewsigninpage.PreviewSigninPageConfig {
 	Connection: interface{},
@@ -841,8 +841,8 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/previewsigninpage"
 	BrandId: *string,
 	PageContent: *string,
 	WidgetVersion: *string,
-	ContentSecurityPolicySetting: github.com/cdktf/cdktf-provider-okta-go/okta/v13.previewSigninPage.PreviewSigninPageContentSecurityPolicySetting,
-	WidgetCustomizations: github.com/cdktf/cdktf-provider-okta-go/okta/v13.previewSigninPage.PreviewSigninPageWidgetCustomizations,
+	ContentSecurityPolicySetting: github.com/cdktf/cdktf-provider-okta-go/okta.previewSigninPage.PreviewSigninPageContentSecurityPolicySetting,
+	WidgetCustomizations: github.com/cdktf/cdktf-provider-okta-go/okta.previewSigninPage.PreviewSigninPageWidgetCustomizations,
 }
 ```
 
@@ -1017,7 +1017,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.previewSigninPage.PreviewSigninPageContentSecurityPolicySetting.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/previewsigninpage"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/previewsigninpage"
 
 &previewsigninpage.PreviewSigninPageContentSecurityPolicySetting {
 	Mode: *string,
@@ -1079,7 +1079,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.previewSigninPage.PreviewSigninPageWidgetCustomizations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/previewsigninpage"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/previewsigninpage"
 
 &previewsigninpage.PreviewSigninPageWidgetCustomizations {
 	WidgetGeneration: *string,
@@ -1393,7 +1393,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.previewSigninPage.PreviewSigninPageContentSecurityPolicySettingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/previewsigninpage"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/previewsigninpage"
 
 previewsigninpage.NewPreviewSigninPageContentSecurityPolicySettingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PreviewSigninPageContentSecurityPolicySettingOutputReference
 ```
@@ -1729,7 +1729,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.previewSigninPage.PreviewSigninPageWidgetCustomizationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/previewsigninpage"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/previewsigninpage"
 
 previewsigninpage.NewPreviewSigninPageWidgetCustomizationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PreviewSigninPageWidgetCustomizationsOutputReference
 ```
