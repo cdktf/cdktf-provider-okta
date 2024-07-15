@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.policyDeviceAssuranceIos.PolicyDeviceAssuranceIos.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/policydeviceassuranceios"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policydeviceassuranceios"
 
 policydeviceassuranceios.NewPolicyDeviceAssuranceIos(scope Construct, id *string, config PolicyDeviceAssuranceIosConfig) PolicyDeviceAssuranceIos
 ```
@@ -399,7 +399,7 @@ func ResetScreenlockType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.policyDeviceAssuranceIos.PolicyDeviceAssuranceIos.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/policydeviceassuranceios"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policydeviceassuranceios"
 
 policydeviceassuranceios.PolicyDeviceAssuranceIos_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.policyDeviceAssuranceIos.PolicyDeviceAssuranceIos.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/policydeviceassuranceios"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policydeviceassuranceios"
 
 policydeviceassuranceios.PolicyDeviceAssuranceIos_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ policydeviceassuranceios.PolicyDeviceAssuranceIos_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.policyDeviceAssuranceIos.PolicyDeviceAssuranceIos.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/policydeviceassuranceios"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policydeviceassuranceios"
 
 policydeviceassuranceios.PolicyDeviceAssuranceIos_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ policydeviceassuranceios.PolicyDeviceAssuranceIos_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.policyDeviceAssuranceIos.PolicyDeviceAssuranceIos.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/policydeviceassuranceios"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policydeviceassuranceios"
 
 policydeviceassuranceios.PolicyDeviceAssuranceIos_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -842,7 +842,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.policyDeviceAssuranceIos.PolicyDeviceAssuranceIosConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/policydeviceassuranceios"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policydeviceassuranceios"
 
 &policydeviceassuranceios.PolicyDeviceAssuranceIosConfig {
 	Connection: interface{},
