@@ -4,7 +4,7 @@
 
 ### NetworkZone <a name="NetworkZone" id="@cdktf/provider-okta.networkZone.NetworkZone"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/network_zone okta_network_zone}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/network_zone okta_network_zone}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.networkZone.NetworkZone.Initializer"></a>
 
@@ -75,9 +75,12 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-okta.networkZone.NetworkZone.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-okta.networkZone.NetworkZone.resetAsns">resetAsns</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.networkZone.NetworkZone.resetDynamicLocations">resetDynamicLocations</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.networkZone.NetworkZone.resetDynamicLocationsExclude">resetDynamicLocationsExclude</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.networkZone.NetworkZone.resetDynamicProxyType">resetDynamicProxyType</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.networkZone.NetworkZone.resetGateways">resetGateways</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.networkZone.NetworkZone.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.networkZone.NetworkZone.resetIpServiceCategoriesExclude">resetIpServiceCategoriesExclude</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.networkZone.NetworkZone.resetIpServiceCategoriesInclude">resetIpServiceCategoriesInclude</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.networkZone.NetworkZone.resetProxies">resetProxies</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.networkZone.NetworkZone.resetStatus">resetStatus</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.networkZone.NetworkZone.resetUsage">resetUsage</a></code> | *No description.* |
@@ -384,6 +387,12 @@ public resetAsns(): void
 public resetDynamicLocations(): void
 ```
 
+##### `resetDynamicLocationsExclude` <a name="resetDynamicLocationsExclude" id="@cdktf/provider-okta.networkZone.NetworkZone.resetDynamicLocationsExclude"></a>
+
+```typescript
+public resetDynamicLocationsExclude(): void
+```
+
 ##### `resetDynamicProxyType` <a name="resetDynamicProxyType" id="@cdktf/provider-okta.networkZone.NetworkZone.resetDynamicProxyType"></a>
 
 ```typescript
@@ -400,6 +409,18 @@ public resetGateways(): void
 
 ```typescript
 public resetId(): void
+```
+
+##### `resetIpServiceCategoriesExclude` <a name="resetIpServiceCategoriesExclude" id="@cdktf/provider-okta.networkZone.NetworkZone.resetIpServiceCategoriesExclude"></a>
+
+```typescript
+public resetIpServiceCategoriesExclude(): void
+```
+
+##### `resetIpServiceCategoriesInclude` <a name="resetIpServiceCategoriesInclude" id="@cdktf/provider-okta.networkZone.NetworkZone.resetIpServiceCategoriesInclude"></a>
+
+```typescript
+public resetIpServiceCategoriesInclude(): void
 ```
 
 ##### `resetProxies` <a name="resetProxies" id="@cdktf/provider-okta.networkZone.NetworkZone.resetProxies"></a>
@@ -523,7 +544,7 @@ The construct id used in the generated config for the NetworkZone to import.
 
 The id of the existing NetworkZone that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/network_zone#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/network_zone#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -554,10 +575,13 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs
 | <code><a href="#@cdktf/provider-okta.networkZone.NetworkZone.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.networkZone.NetworkZone.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.networkZone.NetworkZone.property.asnsInput">asnsInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.networkZone.NetworkZone.property.dynamicLocationsExcludeInput">dynamicLocationsExcludeInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.networkZone.NetworkZone.property.dynamicLocationsInput">dynamicLocationsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.networkZone.NetworkZone.property.dynamicProxyTypeInput">dynamicProxyTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.networkZone.NetworkZone.property.gatewaysInput">gatewaysInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.networkZone.NetworkZone.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.networkZone.NetworkZone.property.ipServiceCategoriesExcludeInput">ipServiceCategoriesExcludeInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.networkZone.NetworkZone.property.ipServiceCategoriesIncludeInput">ipServiceCategoriesIncludeInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.networkZone.NetworkZone.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.networkZone.NetworkZone.property.proxiesInput">proxiesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.networkZone.NetworkZone.property.statusInput">statusInput</a></code> | <code>string</code> | *No description.* |
@@ -565,9 +589,12 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs
 | <code><a href="#@cdktf/provider-okta.networkZone.NetworkZone.property.usageInput">usageInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.networkZone.NetworkZone.property.asns">asns</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.networkZone.NetworkZone.property.dynamicLocations">dynamicLocations</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.networkZone.NetworkZone.property.dynamicLocationsExclude">dynamicLocationsExclude</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.networkZone.NetworkZone.property.dynamicProxyType">dynamicProxyType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.networkZone.NetworkZone.property.gateways">gateways</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.networkZone.NetworkZone.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.networkZone.NetworkZone.property.ipServiceCategoriesExclude">ipServiceCategoriesExclude</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.networkZone.NetworkZone.property.ipServiceCategoriesInclude">ipServiceCategoriesInclude</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.networkZone.NetworkZone.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.networkZone.NetworkZone.property.proxies">proxies</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.networkZone.NetworkZone.property.status">status</a></code> | <code>string</code> | *No description.* |
@@ -728,6 +755,16 @@ public readonly asnsInput: string[];
 
 ---
 
+##### `dynamicLocationsExcludeInput`<sup>Optional</sup> <a name="dynamicLocationsExcludeInput" id="@cdktf/provider-okta.networkZone.NetworkZone.property.dynamicLocationsExcludeInput"></a>
+
+```typescript
+public readonly dynamicLocationsExcludeInput: string[];
+```
+
+- *Type:* string[]
+
+---
+
 ##### `dynamicLocationsInput`<sup>Optional</sup> <a name="dynamicLocationsInput" id="@cdktf/provider-okta.networkZone.NetworkZone.property.dynamicLocationsInput"></a>
 
 ```typescript
@@ -765,6 +802,26 @@ public readonly idInput: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `ipServiceCategoriesExcludeInput`<sup>Optional</sup> <a name="ipServiceCategoriesExcludeInput" id="@cdktf/provider-okta.networkZone.NetworkZone.property.ipServiceCategoriesExcludeInput"></a>
+
+```typescript
+public readonly ipServiceCategoriesExcludeInput: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `ipServiceCategoriesIncludeInput`<sup>Optional</sup> <a name="ipServiceCategoriesIncludeInput" id="@cdktf/provider-okta.networkZone.NetworkZone.property.ipServiceCategoriesIncludeInput"></a>
+
+```typescript
+public readonly ipServiceCategoriesIncludeInput: string[];
+```
+
+- *Type:* string[]
 
 ---
 
@@ -838,6 +895,16 @@ public readonly dynamicLocations: string[];
 
 ---
 
+##### `dynamicLocationsExclude`<sup>Required</sup> <a name="dynamicLocationsExclude" id="@cdktf/provider-okta.networkZone.NetworkZone.property.dynamicLocationsExclude"></a>
+
+```typescript
+public readonly dynamicLocationsExclude: string[];
+```
+
+- *Type:* string[]
+
+---
+
 ##### `dynamicProxyType`<sup>Required</sup> <a name="dynamicProxyType" id="@cdktf/provider-okta.networkZone.NetworkZone.property.dynamicProxyType"></a>
 
 ```typescript
@@ -865,6 +932,26 @@ public readonly id: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `ipServiceCategoriesExclude`<sup>Required</sup> <a name="ipServiceCategoriesExclude" id="@cdktf/provider-okta.networkZone.NetworkZone.property.ipServiceCategoriesExclude"></a>
+
+```typescript
+public readonly ipServiceCategoriesExclude: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `ipServiceCategoriesInclude`<sup>Required</sup> <a name="ipServiceCategoriesInclude" id="@cdktf/provider-okta.networkZone.NetworkZone.property.ipServiceCategoriesInclude"></a>
+
+```typescript
+public readonly ipServiceCategoriesInclude: string[];
+```
+
+- *Type:* string[]
 
 ---
 
@@ -960,13 +1047,16 @@ const networkZoneConfig: networkZone.NetworkZoneConfig = { ... }
 | <code><a href="#@cdktf/provider-okta.networkZone.NetworkZoneConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.networkZone.NetworkZoneConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.networkZone.NetworkZoneConfig.property.name">name</a></code> | <code>string</code> | Name of the Network Zone Resource. |
-| <code><a href="#@cdktf/provider-okta.networkZone.NetworkZoneConfig.property.type">type</a></code> | <code>string</code> | Type of the Network Zone - can either be `IP` or `DYNAMIC` only. |
-| <code><a href="#@cdktf/provider-okta.networkZone.NetworkZoneConfig.property.asns">asns</a></code> | <code>string[]</code> | Format of each array value: a string representation of an ASN numeric value. |
-| <code><a href="#@cdktf/provider-okta.networkZone.NetworkZoneConfig.property.dynamicLocations">dynamicLocations</a></code> | <code>string[]</code> | Array of locations ISO-3166-1(2). Format code: countryCode OR countryCode-regionCode. |
+| <code><a href="#@cdktf/provider-okta.networkZone.NetworkZoneConfig.property.type">type</a></code> | <code>string</code> | Type of the Network Zone - can be `IP`, `DYNAMIC` or `DYNAMIC_V2` only. |
+| <code><a href="#@cdktf/provider-okta.networkZone.NetworkZoneConfig.property.asns">asns</a></code> | <code>string[]</code> | List of asns included. |
+| <code><a href="#@cdktf/provider-okta.networkZone.NetworkZoneConfig.property.dynamicLocations">dynamicLocations</a></code> | <code>string[]</code> | Array of locations ISO-3166-1(2) included. Format code: countryCode OR countryCode-regionCode. Use with type `DYNAMIC` or `DYNAMIC_V2`. |
+| <code><a href="#@cdktf/provider-okta.networkZone.NetworkZoneConfig.property.dynamicLocationsExclude">dynamicLocationsExclude</a></code> | <code>string[]</code> | Array of locations ISO-3166-1(2) excluded. Format code: countryCode OR countryCode-regionCode. Use with type `DYNAMIC_V2`. |
 | <code><a href="#@cdktf/provider-okta.networkZone.NetworkZoneConfig.property.dynamicProxyType">dynamicProxyType</a></code> | <code>string</code> | Type of proxy being controlled by this dynamic network zone - can be one of `Any`, `TorAnonymizer` or `NotTorAnonymizer`. |
-| <code><a href="#@cdktf/provider-okta.networkZone.NetworkZoneConfig.property.gateways">gateways</a></code> | <code>string[]</code> | Array of values in CIDR/range form depending on the way it's been declared (i.e. CIDR will contain /suffix). Please check API docs for examples. |
-| <code><a href="#@cdktf/provider-okta.networkZone.NetworkZoneConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/network_zone#id NetworkZone#id}. |
-| <code><a href="#@cdktf/provider-okta.networkZone.NetworkZoneConfig.property.proxies">proxies</a></code> | <code>string[]</code> | Array of values in CIDR/range form depending on the way it's been declared (i.e. CIDR will contain /suffix). Please check API docs for examples. Can not be set if `usage` is set to `BLOCKLIST`. |
+| <code><a href="#@cdktf/provider-okta.networkZone.NetworkZoneConfig.property.gateways">gateways</a></code> | <code>string[]</code> | Array of values in CIDR/range form depending on the way it's been declared (i.e. CIDR will contain /suffix). Please check API docs for examples. Use with type `IP`. |
+| <code><a href="#@cdktf/provider-okta.networkZone.NetworkZoneConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/network_zone#id NetworkZone#id}. |
+| <code><a href="#@cdktf/provider-okta.networkZone.NetworkZoneConfig.property.ipServiceCategoriesExclude">ipServiceCategoriesExclude</a></code> | <code>string[]</code> | List of ip service excluded. Use with type `DYNAMIC_V2`. |
+| <code><a href="#@cdktf/provider-okta.networkZone.NetworkZoneConfig.property.ipServiceCategoriesInclude">ipServiceCategoriesInclude</a></code> | <code>string[]</code> | List of ip service included. Use with type `DYNAMIC_V2`. |
+| <code><a href="#@cdktf/provider-okta.networkZone.NetworkZoneConfig.property.proxies">proxies</a></code> | <code>string[]</code> | Array of values in CIDR/range form depending on the way it's been declared (i.e. CIDR will contain /suffix). Please check API docs for examples. Can not be set if `usage` is set to `BLOCKLIST`. Use with type `IP`. |
 | <code><a href="#@cdktf/provider-okta.networkZone.NetworkZoneConfig.property.status">status</a></code> | <code>string</code> | Network Status - can either be `ACTIVE` or `INACTIVE` only. |
 | <code><a href="#@cdktf/provider-okta.networkZone.NetworkZoneConfig.property.usage">usage</a></code> | <code>string</code> | Usage of the Network Zone - can be either `POLICY` or `BLOCKLIST`. By default, it is `POLICY`. |
 
@@ -1052,7 +1142,7 @@ public readonly name: string;
 
 Name of the Network Zone Resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/network_zone#name NetworkZone#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/network_zone#name NetworkZone#name}
 
 ---
 
@@ -1064,9 +1154,9 @@ public readonly type: string;
 
 - *Type:* string
 
-Type of the Network Zone - can either be `IP` or `DYNAMIC` only.
+Type of the Network Zone - can be `IP`, `DYNAMIC` or `DYNAMIC_V2` only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/network_zone#type NetworkZone#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/network_zone#type NetworkZone#type}
 
 ---
 
@@ -1078,9 +1168,11 @@ public readonly asns: string[];
 
 - *Type:* string[]
 
-Format of each array value: a string representation of an ASN numeric value.
+List of asns included.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/network_zone#asns NetworkZone#asns}
+Format of each array value: a string representation of an ASN numeric value. Use with type `DYNAMIC` or `DYNAMIC_V2`
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/network_zone#asns NetworkZone#asns}
 
 ---
 
@@ -1092,9 +1184,23 @@ public readonly dynamicLocations: string[];
 
 - *Type:* string[]
 
-Array of locations ISO-3166-1(2). Format code: countryCode OR countryCode-regionCode.
+Array of locations ISO-3166-1(2) included. Format code: countryCode OR countryCode-regionCode. Use with type `DYNAMIC` or `DYNAMIC_V2`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/network_zone#dynamic_locations NetworkZone#dynamic_locations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/network_zone#dynamic_locations NetworkZone#dynamic_locations}
+
+---
+
+##### `dynamicLocationsExclude`<sup>Optional</sup> <a name="dynamicLocationsExclude" id="@cdktf/provider-okta.networkZone.NetworkZoneConfig.property.dynamicLocationsExclude"></a>
+
+```typescript
+public readonly dynamicLocationsExclude: string[];
+```
+
+- *Type:* string[]
+
+Array of locations ISO-3166-1(2) excluded. Format code: countryCode OR countryCode-regionCode. Use with type `DYNAMIC_V2`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/network_zone#dynamic_locations_exclude NetworkZone#dynamic_locations_exclude}
 
 ---
 
@@ -1108,7 +1214,9 @@ public readonly dynamicProxyType: string;
 
 Type of proxy being controlled by this dynamic network zone - can be one of `Any`, `TorAnonymizer` or `NotTorAnonymizer`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/network_zone#dynamic_proxy_type NetworkZone#dynamic_proxy_type}
+Use with type `DYNAMIC`
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/network_zone#dynamic_proxy_type NetworkZone#dynamic_proxy_type}
 
 ---
 
@@ -1120,9 +1228,9 @@ public readonly gateways: string[];
 
 - *Type:* string[]
 
-Array of values in CIDR/range form depending on the way it's been declared (i.e. CIDR will contain /suffix). Please check API docs for examples.
+Array of values in CIDR/range form depending on the way it's been declared (i.e. CIDR will contain /suffix). Please check API docs for examples. Use with type `IP`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/network_zone#gateways NetworkZone#gateways}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/network_zone#gateways NetworkZone#gateways}
 
 ---
 
@@ -1134,10 +1242,38 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/network_zone#id NetworkZone#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/network_zone#id NetworkZone#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `ipServiceCategoriesExclude`<sup>Optional</sup> <a name="ipServiceCategoriesExclude" id="@cdktf/provider-okta.networkZone.NetworkZoneConfig.property.ipServiceCategoriesExclude"></a>
+
+```typescript
+public readonly ipServiceCategoriesExclude: string[];
+```
+
+- *Type:* string[]
+
+List of ip service excluded. Use with type `DYNAMIC_V2`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/network_zone#ip_service_categories_exclude NetworkZone#ip_service_categories_exclude}
+
+---
+
+##### `ipServiceCategoriesInclude`<sup>Optional</sup> <a name="ipServiceCategoriesInclude" id="@cdktf/provider-okta.networkZone.NetworkZoneConfig.property.ipServiceCategoriesInclude"></a>
+
+```typescript
+public readonly ipServiceCategoriesInclude: string[];
+```
+
+- *Type:* string[]
+
+List of ip service included. Use with type `DYNAMIC_V2`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/network_zone#ip_service_categories_include NetworkZone#ip_service_categories_include}
 
 ---
 
@@ -1149,9 +1285,9 @@ public readonly proxies: string[];
 
 - *Type:* string[]
 
-Array of values in CIDR/range form depending on the way it's been declared (i.e. CIDR will contain /suffix). Please check API docs for examples. Can not be set if `usage` is set to `BLOCKLIST`.
+Array of values in CIDR/range form depending on the way it's been declared (i.e. CIDR will contain /suffix). Please check API docs for examples. Can not be set if `usage` is set to `BLOCKLIST`. Use with type `IP`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/network_zone#proxies NetworkZone#proxies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/network_zone#proxies NetworkZone#proxies}
 
 ---
 
@@ -1165,7 +1301,7 @@ public readonly status: string;
 
 Network Status - can either be `ACTIVE` or `INACTIVE` only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/network_zone#status NetworkZone#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/network_zone#status NetworkZone#status}
 
 ---
 
@@ -1179,7 +1315,7 @@ public readonly usage: string;
 
 Usage of the Network Zone - can be either `POLICY` or `BLOCKLIST`. By default, it is `POLICY`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/network_zone#usage NetworkZone#usage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/network_zone#usage NetworkZone#usage}
 
 ---
 

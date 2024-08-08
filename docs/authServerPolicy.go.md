@@ -4,12 +4,12 @@
 
 ### AuthServerPolicy <a name="AuthServerPolicy" id="@cdktf/provider-okta.authServerPolicy.AuthServerPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/auth_server_policy okta_auth_server_policy}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/auth_server_policy okta_auth_server_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.authServerPolicy.AuthServerPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/authserverpolicy"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/authserverpolicy"
 
 authserverpolicy.NewAuthServerPolicy(scope Construct, id *string, config AuthServerPolicyConfig) AuthServerPolicy
 ```
@@ -392,7 +392,7 @@ func ResetStatus()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.authServerPolicy.AuthServerPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/authserverpolicy"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/authserverpolicy"
 
 authserverpolicy.AuthServerPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.authServerPolicy.AuthServerPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/authserverpolicy"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/authserverpolicy"
 
 authserverpolicy.AuthServerPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ authserverpolicy.AuthServerPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.authServerPolicy.AuthServerPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/authserverpolicy"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/authserverpolicy"
 
 authserverpolicy.AuthServerPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ authserverpolicy.AuthServerPolicy_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.authServerPolicy.AuthServerPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/authserverpolicy"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/authserverpolicy"
 
 authserverpolicy.AuthServerPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -481,7 +481,7 @@ The construct id used in the generated config for the AuthServerPolicy to import
 
 The id of the existing AuthServerPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/auth_server_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/auth_server_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -835,7 +835,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.authServerPolicy.AuthServerPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/authserverpolicy"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/authserverpolicy"
 
 &authserverpolicy.AuthServerPolicyConfig {
 	Connection: interface{},
@@ -871,7 +871,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/authserverpolicy"
 | <code><a href="#@cdktf/provider-okta.authServerPolicy.AuthServerPolicyConfig.property.description">Description</a></code> | <code>*string</code> | The description of the Auth Server Policy. |
 | <code><a href="#@cdktf/provider-okta.authServerPolicy.AuthServerPolicyConfig.property.name">Name</a></code> | <code>*string</code> | The name of the Auth Server Policy. |
 | <code><a href="#@cdktf/provider-okta.authServerPolicy.AuthServerPolicyConfig.property.priority">Priority</a></code> | <code>*f64</code> | Priority of the auth server policy. |
-| <code><a href="#@cdktf/provider-okta.authServerPolicy.AuthServerPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/auth_server_policy#id AuthServerPolicy#id}. |
+| <code><a href="#@cdktf/provider-okta.authServerPolicy.AuthServerPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/auth_server_policy#id AuthServerPolicy#id}. |
 | <code><a href="#@cdktf/provider-okta.authServerPolicy.AuthServerPolicyConfig.property.status">Status</a></code> | <code>*string</code> | Default to `ACTIVE`. |
 
 ---
@@ -956,7 +956,7 @@ AuthServerId *string
 
 The ID of the Auth Server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/auth_server_policy#auth_server_id AuthServerPolicy#auth_server_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/auth_server_policy#auth_server_id AuthServerPolicy#auth_server_id}
 
 ---
 
@@ -972,7 +972,7 @@ The clients to whitelist the policy for.
 
 `[ALL_CLIENTS]` is a special value that can be used to whitelist all clients, otherwise it is a list of client ids.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/auth_server_policy#client_whitelist AuthServerPolicy#client_whitelist}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/auth_server_policy#client_whitelist AuthServerPolicy#client_whitelist}
 
 ---
 
@@ -986,7 +986,7 @@ Description *string
 
 The description of the Auth Server Policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/auth_server_policy#description AuthServerPolicy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/auth_server_policy#description AuthServerPolicy#description}
 
 ---
 
@@ -1000,7 +1000,7 @@ Name *string
 
 The name of the Auth Server Policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/auth_server_policy#name AuthServerPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/auth_server_policy#name AuthServerPolicy#name}
 
 ---
 
@@ -1014,7 +1014,7 @@ Priority *f64
 
 Priority of the auth server policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/auth_server_policy#priority AuthServerPolicy#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/auth_server_policy#priority AuthServerPolicy#priority}
 
 ---
 
@@ -1026,7 +1026,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/auth_server_policy#id AuthServerPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/auth_server_policy#id AuthServerPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1043,7 +1043,7 @@ Status *string
 
 Default to `ACTIVE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/auth_server_policy#status AuthServerPolicy#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/auth_server_policy#status AuthServerPolicy#status}
 
 ---
 

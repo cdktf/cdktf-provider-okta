@@ -143,6 +143,7 @@ The following submodules are available:
 - [theme](./theme.csharp.md)
 - [threatInsightSettings](./threatInsightSettings.csharp.md)
 - [trustedOrigin](./trustedOrigin.csharp.md)
+- [trustedServer](./trustedServer.csharp.md)
 - [user](./user.csharp.md)
 - [userAdminRoles](./userAdminRoles.csharp.md)
 - [userBaseSchemaProperty](./userBaseSchemaProperty.csharp.md)

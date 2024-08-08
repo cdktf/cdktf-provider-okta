@@ -4,12 +4,12 @@
 
 ### AppGroupAssignments <a name="AppGroupAssignments" id="@cdktf/provider-okta.appGroupAssignments.AppGroupAssignments"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/app_group_assignments okta_app_group_assignments}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/app_group_assignments okta_app_group_assignments}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appGroupAssignments.AppGroupAssignments.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/appgroupassignments"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appgroupassignments"
 
 appgroupassignments.NewAppGroupAssignments(scope Construct, id *string, config AppGroupAssignmentsConfig) AppGroupAssignments
 ```
@@ -398,7 +398,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.appGroupAssignments.AppGroupAssignments.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/appgroupassignments"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appgroupassignments"
 
 appgroupassignments.AppGroupAssignments_IsConstruct(x interface{}) *bool
 ```
@@ -430,7 +430,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.appGroupAssignments.AppGroupAssignments.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/appgroupassignments"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appgroupassignments"
 
 appgroupassignments.AppGroupAssignments_IsTerraformElement(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ appgroupassignments.AppGroupAssignments_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.appGroupAssignments.AppGroupAssignments.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/appgroupassignments"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appgroupassignments"
 
 appgroupassignments.AppGroupAssignments_IsTerraformResource(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ appgroupassignments.AppGroupAssignments_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.appGroupAssignments.AppGroupAssignments.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/appgroupassignments"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appgroupassignments"
 
 appgroupassignments.AppGroupAssignments_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -487,7 +487,7 @@ The construct id used in the generated config for the AppGroupAssignments to imp
 
 The id of the existing AppGroupAssignments that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/app_group_assignments#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/app_group_assignments#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -753,7 +753,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.appGroupAssignments.AppGroupAssignmentsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/appgroupassignments"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appgroupassignments"
 
 &appgroupassignments.AppGroupAssignmentsConfig {
 	Connection: interface{},
@@ -782,7 +782,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/appgroupassignments"
 | <code><a href="#@cdktf/provider-okta.appGroupAssignments.AppGroupAssignmentsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appGroupAssignments.AppGroupAssignmentsConfig.property.appId">AppId</a></code> | <code>*string</code> | The ID of the application to assign a group to. |
 | <code><a href="#@cdktf/provider-okta.appGroupAssignments.AppGroupAssignmentsConfig.property.group">Group</a></code> | <code>interface{}</code> | group block. |
-| <code><a href="#@cdktf/provider-okta.appGroupAssignments.AppGroupAssignmentsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/app_group_assignments#id AppGroupAssignments#id}. |
+| <code><a href="#@cdktf/provider-okta.appGroupAssignments.AppGroupAssignmentsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/app_group_assignments#id AppGroupAssignments#id}. |
 
 ---
 
@@ -866,7 +866,7 @@ AppId *string
 
 The ID of the application to assign a group to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/app_group_assignments#app_id AppGroupAssignments#app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/app_group_assignments#app_id AppGroupAssignments#app_id}
 
 ---
 
@@ -880,7 +880,7 @@ Group interface{}
 
 group block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/app_group_assignments#group AppGroupAssignments#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/app_group_assignments#group AppGroupAssignments#group}
 
 ---
 
@@ -892,7 +892,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/app_group_assignments#id AppGroupAssignments#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/app_group_assignments#id AppGroupAssignments#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -904,7 +904,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.appGroupAssignments.AppGroupAssignmentsGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/appgroupassignments"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appgroupassignments"
 
 &appgroupassignments.AppGroupAssignmentsGroup {
 	Id: *string,
@@ -933,7 +933,7 @@ Id *string
 
 A group to associate with the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/app_group_assignments#id AppGroupAssignments#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/app_group_assignments#id AppGroupAssignments#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -950,7 +950,7 @@ Priority *f64
 
 Priority of group assignment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/app_group_assignments#priority AppGroupAssignments#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/app_group_assignments#priority AppGroupAssignments#priority}
 
 ---
 
@@ -964,7 +964,7 @@ Profile *string
 
 JSON document containing [application profile](https://developer.okta.com/docs/reference/api/apps/#profile-object).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/app_group_assignments#profile AppGroupAssignments#profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/app_group_assignments#profile AppGroupAssignments#profile}
 
 ---
 
@@ -975,7 +975,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appGroupAssignments.AppGroupAssignmentsGroupList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/appgroupassignments"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appgroupassignments"
 
 appgroupassignments.NewAppGroupAssignmentsGroupList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppGroupAssignmentsGroupList
 ```
@@ -1135,7 +1135,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appGroupAssignments.AppGroupAssignmentsGroupOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/appgroupassignments"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appgroupassignments"
 
 appgroupassignments.NewAppGroupAssignmentsGroupOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppGroupAssignmentsGroupOutputReference
 ```

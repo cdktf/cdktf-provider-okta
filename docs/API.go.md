@@ -143,6 +143,7 @@ The following submodules are available:
 - [theme](./theme.go.md)
 - [threatInsightSettings](./threatInsightSettings.go.md)
 - [trustedOrigin](./trustedOrigin.go.md)
+- [trustedServer](./trustedServer.go.md)
 - [user](./user.go.md)
 - [userAdminRoles](./userAdminRoles.go.md)
 - [userBaseSchemaProperty](./userBaseSchemaProperty.go.md)

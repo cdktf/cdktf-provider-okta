@@ -143,6 +143,7 @@ The following submodules are available:
 - [theme](./theme.python.md)
 - [threatInsightSettings](./threatInsightSettings.python.md)
 - [trustedOrigin](./trustedOrigin.python.md)
+- [trustedServer](./trustedServer.python.md)
 - [user](./user.python.md)
 - [userAdminRoles](./userAdminRoles.python.md)
 - [userBaseSchemaProperty](./userBaseSchemaProperty.python.md)

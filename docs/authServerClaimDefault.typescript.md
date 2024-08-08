@@ -4,7 +4,7 @@
 
 ### AuthServerClaimDefault <a name="AuthServerClaimDefault" id="@cdktf/provider-okta.authServerClaimDefault.AuthServerClaimDefault"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/auth_server_claim_default okta_auth_server_claim_default}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/auth_server_claim_default okta_auth_server_claim_default}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.authServerClaimDefault.AuthServerClaimDefault.Initializer"></a>
 
@@ -488,7 +488,7 @@ The construct id used in the generated config for the AuthServerClaimDefault to 
 
 The id of the existing AuthServerClaimDefault that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/auth_server_claim_default#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/auth_server_claim_default#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -861,7 +861,7 @@ const authServerClaimDefaultConfig: authServerClaimDefault.AuthServerClaimDefaul
 | <code><a href="#@cdktf/provider-okta.authServerClaimDefault.AuthServerClaimDefaultConfig.property.authServerId">authServerId</a></code> | <code>string</code> | ID of the authorization server. |
 | <code><a href="#@cdktf/provider-okta.authServerClaimDefault.AuthServerClaimDefaultConfig.property.name">name</a></code> | <code>string</code> | The name of the claim. |
 | <code><a href="#@cdktf/provider-okta.authServerClaimDefault.AuthServerClaimDefaultConfig.property.alwaysIncludeInToken">alwaysIncludeInToken</a></code> | <code>boolean \| cdktf.IResolvable</code> | Specifies whether to include claims in token. |
-| <code><a href="#@cdktf/provider-okta.authServerClaimDefault.AuthServerClaimDefaultConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/auth_server_claim_default#id AuthServerClaimDefault#id}. |
+| <code><a href="#@cdktf/provider-okta.authServerClaimDefault.AuthServerClaimDefaultConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/auth_server_claim_default#id AuthServerClaimDefault#id}. |
 | <code><a href="#@cdktf/provider-okta.authServerClaimDefault.AuthServerClaimDefaultConfig.property.value">value</a></code> | <code>string</code> | The value of the claim. Only required for `sub` claim. |
 
 ---
@@ -946,7 +946,7 @@ public readonly authServerId: string;
 
 ID of the authorization server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/auth_server_claim_default#auth_server_id AuthServerClaimDefault#auth_server_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/auth_server_claim_default#auth_server_id AuthServerClaimDefault#auth_server_id}
 
 ---
 
@@ -962,7 +962,7 @@ The name of the claim.
 
 Can be set to `sub`, `address`, `birthdate`, `email`,`email_verified`, `family_name`, `gender`, `given_name`, `locale`, `middle_name`, `name`, `nickname`,`phone_number`, `picture`, `preferred_username`, `profile`, `updated_at`, `website`, `zoneinfo`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/auth_server_claim_default#name AuthServerClaimDefault#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/auth_server_claim_default#name AuthServerClaimDefault#name}
 
 ---
 
@@ -976,7 +976,7 @@ public readonly alwaysIncludeInToken: boolean | IResolvable;
 
 Specifies whether to include claims in token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/auth_server_claim_default#always_include_in_token AuthServerClaimDefault#always_include_in_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/auth_server_claim_default#always_include_in_token AuthServerClaimDefault#always_include_in_token}
 
 ---
 
@@ -988,7 +988,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/auth_server_claim_default#id AuthServerClaimDefault#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/auth_server_claim_default#id AuthServerClaimDefault#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1005,7 +1005,7 @@ public readonly value: string;
 
 The value of the claim. Only required for `sub` claim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/auth_server_claim_default#value AuthServerClaimDefault#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/auth_server_claim_default#value AuthServerClaimDefault#value}
 
 ---
 

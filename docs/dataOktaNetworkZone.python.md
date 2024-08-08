@@ -4,7 +4,7 @@
 
 ### DataOktaNetworkZone <a name="DataOktaNetworkZone" id="@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/data-sources/network_zone okta_network_zone}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/data-sources/network_zone okta_network_zone}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.Initializer"></a>
 
@@ -21,7 +21,10 @@ dataOktaNetworkZone.DataOktaNetworkZone(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  dynamic_locations_exclude: typing.List[str] = None,
   id: str = None,
+  ip_service_categories_exclude: typing.List[str] = None,
+  ip_service_categories_include: typing.List[str] = None,
   name: str = None
 )
 ```
@@ -37,7 +40,10 @@ dataOktaNetworkZone.DataOktaNetworkZone(
 | <code><a href="#@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.Initializer.parameter.dynamicLocationsExclude">dynamic_locations_exclude</a></code> | <code>typing.List[str]</code> | Array of locations ISO-3166-1(2) excluded. Format code: countryCode OR countryCode-regionCode. Use with type `DYNAMIC_V2`. |
 | <code><a href="#@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.Initializer.parameter.id">id</a></code> | <code>str</code> | ID of the network zone to retrieve, conflicts with `name`. |
+| <code><a href="#@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.Initializer.parameter.ipServiceCategoriesExclude">ip_service_categories_exclude</a></code> | <code>typing.List[str]</code> | List of ip service excluded. Use with type `DYNAMIC_V2`. |
+| <code><a href="#@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.Initializer.parameter.ipServiceCategoriesInclude">ip_service_categories_include</a></code> | <code>typing.List[str]</code> | List of ip service included. Use with type `DYNAMIC_V2`. |
 | <code><a href="#@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.Initializer.parameter.name">name</a></code> | <code>str</code> | Name of the network zone to retrieve, conflicts with `id`. |
 
 ---
@@ -102,16 +108,46 @@ Must be unique amongst siblings in the same scope
 
 ---
 
+##### `dynamic_locations_exclude`<sup>Optional</sup> <a name="dynamic_locations_exclude" id="@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.Initializer.parameter.dynamicLocationsExclude"></a>
+
+- *Type:* typing.List[str]
+
+Array of locations ISO-3166-1(2) excluded. Format code: countryCode OR countryCode-regionCode. Use with type `DYNAMIC_V2`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/data-sources/network_zone#dynamic_locations_exclude DataOktaNetworkZone#dynamic_locations_exclude}
+
+---
+
 ##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.Initializer.parameter.id"></a>
 
 - *Type:* str
 
 ID of the network zone to retrieve, conflicts with `name`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/data-sources/network_zone#id DataOktaNetworkZone#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/data-sources/network_zone#id DataOktaNetworkZone#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `ip_service_categories_exclude`<sup>Optional</sup> <a name="ip_service_categories_exclude" id="@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.Initializer.parameter.ipServiceCategoriesExclude"></a>
+
+- *Type:* typing.List[str]
+
+List of ip service excluded. Use with type `DYNAMIC_V2`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/data-sources/network_zone#ip_service_categories_exclude DataOktaNetworkZone#ip_service_categories_exclude}
+
+---
+
+##### `ip_service_categories_include`<sup>Optional</sup> <a name="ip_service_categories_include" id="@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.Initializer.parameter.ipServiceCategoriesInclude"></a>
+
+- *Type:* typing.List[str]
+
+List of ip service included. Use with type `DYNAMIC_V2`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/data-sources/network_zone#ip_service_categories_include DataOktaNetworkZone#ip_service_categories_include}
 
 ---
 
@@ -121,7 +157,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Name of the network zone to retrieve, conflicts with `id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/data-sources/network_zone#name DataOktaNetworkZone#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/data-sources/network_zone#name DataOktaNetworkZone#name}
 
 ---
 
@@ -146,7 +182,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 | <code><a href="#@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.getStringAttribute">get_string_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.resetDynamicLocationsExclude">reset_dynamic_locations_exclude</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.resetIpServiceCategoriesExclude">reset_ip_service_categories_exclude</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.resetIpServiceCategoriesInclude">reset_ip_service_categories_include</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.resetName">reset_name</a></code> | *No description.* |
 
 ---
@@ -368,10 +407,28 @@ def interpolation_for_attribute(
 
 ---
 
+##### `reset_dynamic_locations_exclude` <a name="reset_dynamic_locations_exclude" id="@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.resetDynamicLocationsExclude"></a>
+
+```python
+def reset_dynamic_locations_exclude() -> None
+```
+
 ##### `reset_id` <a name="reset_id" id="@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.resetId"></a>
 
 ```python
 def reset_id() -> None
+```
+
+##### `reset_ip_service_categories_exclude` <a name="reset_ip_service_categories_exclude" id="@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.resetIpServiceCategoriesExclude"></a>
+
+```python
+def reset_ip_service_categories_exclude() -> None
+```
+
+##### `reset_ip_service_categories_include` <a name="reset_ip_service_categories_include" id="@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.resetIpServiceCategoriesInclude"></a>
+
+```python
+def reset_ip_service_categories_include() -> None
 ```
 
 ##### `reset_name` <a name="reset_name" id="@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.resetName"></a>
@@ -494,7 +551,7 @@ The construct id used in the generated config for the DataOktaNetworkZone to imp
 
 The id of the existing DataOktaNetworkZone that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/data-sources/network_zone#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/data-sources/network_zone#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -530,9 +587,15 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs
 | <code><a href="#@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.property.status">status</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.property.type">type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.property.usage">usage</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.property.dynamicLocationsExcludeInput">dynamic_locations_exclude_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.property.ipServiceCategoriesExcludeInput">ip_service_categories_exclude_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.property.ipServiceCategoriesIncludeInput">ip_service_categories_include_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.property.dynamicLocationsExclude">dynamic_locations_exclude</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.property.ipServiceCategoriesExclude">ip_service_categories_exclude</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.property.ipServiceCategoriesInclude">ip_service_categories_include</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.property.name">name</a></code> | <code>str</code> | *No description.* |
 
 ---
@@ -739,6 +802,16 @@ usage: str
 
 ---
 
+##### `dynamic_locations_exclude_input`<sup>Optional</sup> <a name="dynamic_locations_exclude_input" id="@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.property.dynamicLocationsExcludeInput"></a>
+
+```python
+dynamic_locations_exclude_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
 ##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.property.idInput"></a>
 
 ```python
@@ -746,6 +819,26 @@ id_input: str
 ```
 
 - *Type:* str
+
+---
+
+##### `ip_service_categories_exclude_input`<sup>Optional</sup> <a name="ip_service_categories_exclude_input" id="@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.property.ipServiceCategoriesExcludeInput"></a>
+
+```python
+ip_service_categories_exclude_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `ip_service_categories_include_input`<sup>Optional</sup> <a name="ip_service_categories_include_input" id="@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.property.ipServiceCategoriesIncludeInput"></a>
+
+```python
+ip_service_categories_include_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
 
 ---
 
@@ -759,6 +852,16 @@ name_input: str
 
 ---
 
+##### `dynamic_locations_exclude`<sup>Required</sup> <a name="dynamic_locations_exclude" id="@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.property.dynamicLocationsExclude"></a>
+
+```python
+dynamic_locations_exclude: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
 ##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.property.id"></a>
 
 ```python
@@ -766,6 +869,26 @@ id: str
 ```
 
 - *Type:* str
+
+---
+
+##### `ip_service_categories_exclude`<sup>Required</sup> <a name="ip_service_categories_exclude" id="@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.property.ipServiceCategoriesExclude"></a>
+
+```python
+ip_service_categories_exclude: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `ip_service_categories_include`<sup>Required</sup> <a name="ip_service_categories_include" id="@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.property.ipServiceCategoriesInclude"></a>
+
+```python
+ip_service_categories_include: typing.List[str]
+```
+
+- *Type:* typing.List[str]
 
 ---
 
@@ -814,7 +937,10 @@ dataOktaNetworkZone.DataOktaNetworkZoneConfig(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  dynamic_locations_exclude: typing.List[str] = None,
   id: str = None,
+  ip_service_categories_exclude: typing.List[str] = None,
+  ip_service_categories_include: typing.List[str] = None,
   name: str = None
 )
 ```
@@ -830,7 +956,10 @@ dataOktaNetworkZone.DataOktaNetworkZoneConfig(
 | <code><a href="#@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZoneConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZoneConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZoneConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZoneConfig.property.dynamicLocationsExclude">dynamic_locations_exclude</a></code> | <code>typing.List[str]</code> | Array of locations ISO-3166-1(2) excluded. Format code: countryCode OR countryCode-regionCode. Use with type `DYNAMIC_V2`. |
 | <code><a href="#@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZoneConfig.property.id">id</a></code> | <code>str</code> | ID of the network zone to retrieve, conflicts with `name`. |
+| <code><a href="#@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZoneConfig.property.ipServiceCategoriesExclude">ip_service_categories_exclude</a></code> | <code>typing.List[str]</code> | List of ip service excluded. Use with type `DYNAMIC_V2`. |
+| <code><a href="#@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZoneConfig.property.ipServiceCategoriesInclude">ip_service_categories_include</a></code> | <code>typing.List[str]</code> | List of ip service included. Use with type `DYNAMIC_V2`. |
 | <code><a href="#@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZoneConfig.property.name">name</a></code> | <code>str</code> | Name of the network zone to retrieve, conflicts with `id`. |
 
 ---
@@ -905,6 +1034,20 @@ provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, Re
 
 ---
 
+##### `dynamic_locations_exclude`<sup>Optional</sup> <a name="dynamic_locations_exclude" id="@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZoneConfig.property.dynamicLocationsExclude"></a>
+
+```python
+dynamic_locations_exclude: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Array of locations ISO-3166-1(2) excluded. Format code: countryCode OR countryCode-regionCode. Use with type `DYNAMIC_V2`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/data-sources/network_zone#dynamic_locations_exclude DataOktaNetworkZone#dynamic_locations_exclude}
+
+---
+
 ##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZoneConfig.property.id"></a>
 
 ```python
@@ -915,10 +1058,38 @@ id: str
 
 ID of the network zone to retrieve, conflicts with `name`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/data-sources/network_zone#id DataOktaNetworkZone#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/data-sources/network_zone#id DataOktaNetworkZone#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `ip_service_categories_exclude`<sup>Optional</sup> <a name="ip_service_categories_exclude" id="@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZoneConfig.property.ipServiceCategoriesExclude"></a>
+
+```python
+ip_service_categories_exclude: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+List of ip service excluded. Use with type `DYNAMIC_V2`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/data-sources/network_zone#ip_service_categories_exclude DataOktaNetworkZone#ip_service_categories_exclude}
+
+---
+
+##### `ip_service_categories_include`<sup>Optional</sup> <a name="ip_service_categories_include" id="@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZoneConfig.property.ipServiceCategoriesInclude"></a>
+
+```python
+ip_service_categories_include: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+List of ip service included. Use with type `DYNAMIC_V2`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/data-sources/network_zone#ip_service_categories_include DataOktaNetworkZone#ip_service_categories_include}
 
 ---
 
@@ -932,7 +1103,7 @@ name: str
 
 Name of the network zone to retrieve, conflicts with `id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/data-sources/network_zone#name DataOktaNetworkZone#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/data-sources/network_zone#name DataOktaNetworkZone#name}
 
 ---
 

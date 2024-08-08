@@ -4,12 +4,12 @@
 
 ### DataOktaUsers <a name="DataOktaUsers" id="@cdktf/provider-okta.dataOktaUsers.DataOktaUsers"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/data-sources/users okta_users}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/data-sources/users okta_users}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaUsers.DataOktaUsers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktausers"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktausers"
 
 dataoktausers.NewDataOktaUsers(scope Construct, id *string, config DataOktaUsersConfig) DataOktaUsers
 ```
@@ -338,7 +338,7 @@ func ResetSearch()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.dataOktaUsers.DataOktaUsers.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktausers"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktausers"
 
 dataoktausers.DataOktaUsers_IsConstruct(x interface{}) *bool
 ```
@@ -370,7 +370,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.dataOktaUsers.DataOktaUsers.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktausers"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktausers"
 
 dataoktausers.DataOktaUsers_IsTerraformElement(x interface{}) *bool
 ```
@@ -384,7 +384,7 @@ dataoktausers.DataOktaUsers_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-okta.dataOktaUsers.DataOktaUsers.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktausers"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktausers"
 
 dataoktausers.DataOktaUsers_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -398,7 +398,7 @@ dataoktausers.DataOktaUsers_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.dataOktaUsers.DataOktaUsers.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktausers"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktausers"
 
 dataoktausers.DataOktaUsers_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -427,7 +427,7 @@ The construct id used in the generated config for the DataOktaUsers to import.
 
 The id of the existing DataOktaUsers that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/data-sources/users#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/data-sources/users#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -770,7 +770,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaUsers.DataOktaUsersConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktausers"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktausers"
 
 &dataoktausers.DataOktaUsersConfig {
 	Connection: interface{},
@@ -804,7 +804,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktausers"
 | <code><a href="#@cdktf/provider-okta.dataOktaUsers.DataOktaUsersConfig.property.compoundSearchOperator">CompoundSearchOperator</a></code> | <code>*string</code> | Search operator used when joining multiple search clauses. |
 | <code><a href="#@cdktf/provider-okta.dataOktaUsers.DataOktaUsersConfig.property.delayReadSeconds">DelayReadSeconds</a></code> | <code>*string</code> | Force delay of the users read by N seconds. |
 | <code><a href="#@cdktf/provider-okta.dataOktaUsers.DataOktaUsersConfig.property.groupId">GroupId</a></code> | <code>*string</code> | Find users based on group membership using the id of the group. |
-| <code><a href="#@cdktf/provider-okta.dataOktaUsers.DataOktaUsersConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/data-sources/users#id DataOktaUsers#id}. |
+| <code><a href="#@cdktf/provider-okta.dataOktaUsers.DataOktaUsersConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/data-sources/users#id DataOktaUsers#id}. |
 | <code><a href="#@cdktf/provider-okta.dataOktaUsers.DataOktaUsersConfig.property.includeGroups">IncludeGroups</a></code> | <code>interface{}</code> | Fetch group memberships for each user. |
 | <code><a href="#@cdktf/provider-okta.dataOktaUsers.DataOktaUsersConfig.property.includeRoles">IncludeRoles</a></code> | <code>interface{}</code> | Fetch user roles for each user. |
 | <code><a href="#@cdktf/provider-okta.dataOktaUsers.DataOktaUsersConfig.property.search">Search</a></code> | <code>interface{}</code> | search block. |
@@ -891,7 +891,7 @@ CompoundSearchOperator *string
 
 Search operator used when joining multiple search clauses.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/data-sources/users#compound_search_operator DataOktaUsers#compound_search_operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/data-sources/users#compound_search_operator DataOktaUsers#compound_search_operator}
 
 ---
 
@@ -907,7 +907,7 @@ Force delay of the users read by N seconds.
 
 Useful when eventual consistency of users information needs to be allowed for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/data-sources/users#delay_read_seconds DataOktaUsers#delay_read_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/data-sources/users#delay_read_seconds DataOktaUsers#delay_read_seconds}
 
 ---
 
@@ -921,7 +921,7 @@ GroupId *string
 
 Find users based on group membership using the id of the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/data-sources/users#group_id DataOktaUsers#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/data-sources/users#group_id DataOktaUsers#group_id}
 
 ---
 
@@ -933,7 +933,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/data-sources/users#id DataOktaUsers#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/data-sources/users#id DataOktaUsers#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -950,7 +950,7 @@ IncludeGroups interface{}
 
 Fetch group memberships for each user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/data-sources/users#include_groups DataOktaUsers#include_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/data-sources/users#include_groups DataOktaUsers#include_groups}
 
 ---
 
@@ -964,7 +964,7 @@ IncludeRoles interface{}
 
 Fetch user roles for each user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/data-sources/users#include_roles DataOktaUsers#include_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/data-sources/users#include_roles DataOktaUsers#include_roles}
 
 ---
 
@@ -978,7 +978,7 @@ Search interface{}
 
 search block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/data-sources/users#search DataOktaUsers#search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/data-sources/users#search DataOktaUsers#search}
 
 ---
 
@@ -987,7 +987,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaUsers.DataOktaUsersSearch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktausers"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktausers"
 
 &dataoktausers.DataOktaUsersSearch {
 	Comparison: *string,
@@ -1001,10 +1001,10 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktausers"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.dataOktaUsers.DataOktaUsersSearch.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/data-sources/users#comparison DataOktaUsers#comparison}. |
+| <code><a href="#@cdktf/provider-okta.dataOktaUsers.DataOktaUsersSearch.property.comparison">Comparison</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/data-sources/users#comparison DataOktaUsers#comparison}. |
 | <code><a href="#@cdktf/provider-okta.dataOktaUsers.DataOktaUsersSearch.property.expression">Expression</a></code> | <code>*string</code> | A raw search expression string. |
 | <code><a href="#@cdktf/provider-okta.dataOktaUsers.DataOktaUsersSearch.property.name">Name</a></code> | <code>*string</code> | Property name to search for. |
-| <code><a href="#@cdktf/provider-okta.dataOktaUsers.DataOktaUsersSearch.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/data-sources/users#value DataOktaUsers#value}. |
+| <code><a href="#@cdktf/provider-okta.dataOktaUsers.DataOktaUsersSearch.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/data-sources/users#value DataOktaUsers#value}. |
 
 ---
 
@@ -1016,7 +1016,7 @@ Comparison *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/data-sources/users#comparison DataOktaUsers#comparison}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/data-sources/users#comparison DataOktaUsers#comparison}.
 
 ---
 
@@ -1032,7 +1032,7 @@ A raw search expression string.
 
 This requires the search feature be on. Please see Okta documentation on their filter API for users. https://developer.okta.com/docs/api/resources/users#list-users-with-search
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/data-sources/users#expression DataOktaUsers#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/data-sources/users#expression DataOktaUsers#expression}
 
 ---
 
@@ -1048,7 +1048,7 @@ Property name to search for.
 
 This requires the search feature be on. Please see Okta documentation on their filter API for users. https://developer.okta.com/docs/api/resources/users#list-users-with-search
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/data-sources/users#name DataOktaUsers#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/data-sources/users#name DataOktaUsers#name}
 
 ---
 
@@ -1060,7 +1060,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/data-sources/users#value DataOktaUsers#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/data-sources/users#value DataOktaUsers#value}.
 
 ---
 
@@ -1069,7 +1069,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaUsers.DataOktaUsersUsers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktausers"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktausers"
 
 &dataoktausers.DataOktaUsersUsers {
 
@@ -1084,7 +1084,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktausers"
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaUsers.DataOktaUsersSearchList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktausers"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktausers"
 
 dataoktausers.NewDataOktaUsersSearchList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOktaUsersSearchList
 ```
@@ -1244,7 +1244,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaUsers.DataOktaUsersSearchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktausers"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktausers"
 
 dataoktausers.NewDataOktaUsersSearchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataOktaUsersSearchOutputReference
 ```
@@ -1627,7 +1627,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaUsers.DataOktaUsersUsersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktausers"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktausers"
 
 dataoktausers.NewDataOktaUsersUsersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOktaUsersUsersList
 ```
@@ -1776,7 +1776,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaUsers.DataOktaUsersUsersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktausers"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktausers"
 
 dataoktausers.NewDataOktaUsersUsersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataOktaUsersUsersOutputReference
 ```

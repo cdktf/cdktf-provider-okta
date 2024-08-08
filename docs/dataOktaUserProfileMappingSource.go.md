@@ -4,12 +4,12 @@
 
 ### DataOktaUserProfileMappingSource <a name="DataOktaUserProfileMappingSource" id="@cdktf/provider-okta.dataOktaUserProfileMappingSource.DataOktaUserProfileMappingSource"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/data-sources/user_profile_mapping_source okta_user_profile_mapping_source}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/data-sources/user_profile_mapping_source okta_user_profile_mapping_source}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaUserProfileMappingSource.DataOktaUserProfileMappingSource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktauserprofilemappingsource"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktauserprofilemappingsource"
 
 dataoktauserprofilemappingsource.NewDataOktaUserProfileMappingSource(scope Construct, id *string, config DataOktaUserProfileMappingSourceConfig) DataOktaUserProfileMappingSource
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.dataOktaUserProfileMappingSource.DataOktaUserProfileMappingSource.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktauserprofilemappingsource"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktauserprofilemappingsource"
 
 dataoktauserprofilemappingsource.DataOktaUserProfileMappingSource_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.dataOktaUserProfileMappingSource.DataOktaUserProfileMappingSource.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktauserprofilemappingsource"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktauserprofilemappingsource"
 
 dataoktauserprofilemappingsource.DataOktaUserProfileMappingSource_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ dataoktauserprofilemappingsource.DataOktaUserProfileMappingSource_IsTerraformEle
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-okta.dataOktaUserProfileMappingSource.DataOktaUserProfileMappingSource.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktauserprofilemappingsource"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktauserprofilemappingsource"
 
 dataoktauserprofilemappingsource.DataOktaUserProfileMappingSource_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ dataoktauserprofilemappingsource.DataOktaUserProfileMappingSource_IsTerraformDat
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.dataOktaUserProfileMappingSource.DataOktaUserProfileMappingSource.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktauserprofilemappingsource"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktauserprofilemappingsource"
 
 dataoktauserprofilemappingsource.DataOktaUserProfileMappingSource_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataOktaUserProfileMapping
 
 The id of the existing DataOktaUserProfileMappingSource that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/data-sources/user_profile_mapping_source#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/data-sources/user_profile_mapping_source#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -576,7 +576,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaUserProfileMappingSource.DataOktaUserProfileMappingSourceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktauserprofilemappingsource"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktauserprofilemappingsource"
 
 &dataoktauserprofilemappingsource.DataOktaUserProfileMappingSourceConfig {
 	Connection: interface{},

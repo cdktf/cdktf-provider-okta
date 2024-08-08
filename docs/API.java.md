@@ -143,6 +143,7 @@ The following submodules are available:
 - [theme](./theme.java.md)
 - [threatInsightSettings](./threatInsightSettings.java.md)
 - [trustedOrigin](./trustedOrigin.java.md)
+- [trustedServer](./trustedServer.java.md)
 - [user](./user.java.md)
 - [userAdminRoles](./userAdminRoles.java.md)
 - [userBaseSchemaProperty](./userBaseSchemaProperty.java.md)

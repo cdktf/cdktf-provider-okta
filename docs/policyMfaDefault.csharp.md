@@ -4,7 +4,7 @@
 
 ### PolicyMfaDefault <a name="PolicyMfaDefault" id="@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefault"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa_default okta_policy_mfa_default}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa_default okta_policy_mfa_default}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefault.Initializer"></a>
 
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefault.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefault.resetDuo">ResetDuo</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefault.resetExternalIdp">ResetExternalIdp</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefault.resetExternalIdps">ResetExternalIdps</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefault.resetFidoU2F">ResetFidoU2F</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefault.resetFidoWebauthn">ResetFidoWebauthn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefault.resetGoogleOtp">ResetGoogleOtp</a></code> | *No description.* |
@@ -399,6 +400,12 @@ private void ResetDuo()
 private void ResetExternalIdp()
 ```
 
+##### `ResetExternalIdps` <a name="ResetExternalIdps" id="@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefault.resetExternalIdps"></a>
+
+```csharp
+private void ResetExternalIdps()
+```
+
 ##### `ResetFidoU2F` <a name="ResetFidoU2F" id="@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefault.resetFidoU2F"></a>
 
 ```csharp
@@ -628,7 +635,7 @@ The construct id used in the generated config for the PolicyMfaDefault to import
 
 The id of the existing PolicyMfaDefault that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa_default#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa_default#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -665,6 +672,7 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs
 | <code><a href="#@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefault.property.status">Status</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefault.property.duoInput">DuoInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefault.property.externalIdpInput">ExternalIdpInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefault.property.externalIdpsInput">ExternalIdpsInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefault.property.fidoU2FInput">FidoU2FInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefault.property.fidoWebauthnInput">FidoWebauthnInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefault.property.googleOtpInput">GoogleOtpInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
@@ -688,6 +696,7 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs
 | <code><a href="#@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefault.property.yubikeyTokenInput">YubikeyTokenInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefault.property.duo">Duo</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefault.property.externalIdp">ExternalIdp</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefault.property.externalIdps">ExternalIdps</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefault.property.fidoU2F">FidoU2F</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefault.property.fidoWebauthn">FidoWebauthn</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefault.property.googleOtp">GoogleOtp</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
@@ -924,6 +933,16 @@ public System.Collections.Generic.IDictionary<string, string> ExternalIdpInput {
 
 ---
 
+##### `ExternalIdpsInput`<sup>Optional</sup> <a name="ExternalIdpsInput" id="@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefault.property.externalIdpsInput"></a>
+
+```csharp
+public object ExternalIdpsInput { get; }
+```
+
+- *Type:* object
+
+---
+
 ##### `FidoU2FInput`<sup>Optional</sup> <a name="FidoU2FInput" id="@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefault.property.fidoU2FInput"></a>
 
 ```csharp
@@ -1151,6 +1170,16 @@ public System.Collections.Generic.IDictionary<string, string> ExternalIdp { get;
 ```
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
+
+---
+
+##### `ExternalIdps`<sup>Required</sup> <a name="ExternalIdps" id="@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefault.property.externalIdps"></a>
+
+```csharp
+public object ExternalIdps { get; }
+```
+
+- *Type:* object
 
 ---
 
@@ -1401,6 +1430,7 @@ new PolicyMfaDefaultConfig {
     object[] Provisioners = null,
     System.Collections.Generic.IDictionary<string, string> Duo = null,
     System.Collections.Generic.IDictionary<string, string> ExternalIdp = null,
+    object ExternalIdps = null,
     System.Collections.Generic.IDictionary<string, string> FidoU2F = null,
     System.Collections.Generic.IDictionary<string, string> FidoWebauthn = null,
     System.Collections.Generic.IDictionary<string, string> GoogleOtp = null,
@@ -1436,29 +1466,30 @@ new PolicyMfaDefaultConfig {
 | <code><a href="#@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefaultConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefaultConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefaultConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefaultConfig.property.duo">Duo</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa_default#duo PolicyMfaDefault#duo}. |
-| <code><a href="#@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefaultConfig.property.externalIdp">ExternalIdp</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa_default#external_idp PolicyMfaDefault#external_idp}. |
-| <code><a href="#@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefaultConfig.property.fidoU2F">FidoU2F</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa_default#fido_u2f PolicyMfaDefault#fido_u2f}. |
-| <code><a href="#@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefaultConfig.property.fidoWebauthn">FidoWebauthn</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa_default#fido_webauthn PolicyMfaDefault#fido_webauthn}. |
-| <code><a href="#@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefaultConfig.property.googleOtp">GoogleOtp</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa_default#google_otp PolicyMfaDefault#google_otp}. |
-| <code><a href="#@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefaultConfig.property.hotp">Hotp</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa_default#hotp PolicyMfaDefault#hotp}. |
-| <code><a href="#@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefaultConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa_default#id PolicyMfaDefault#id}. |
+| <code><a href="#@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefaultConfig.property.duo">Duo</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa_default#duo PolicyMfaDefault#duo}. |
+| <code><a href="#@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefaultConfig.property.externalIdp">ExternalIdp</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa_default#external_idp PolicyMfaDefault#external_idp}. |
+| <code><a href="#@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefaultConfig.property.externalIdps">ExternalIdps</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa_default#external_idps PolicyMfaDefault#external_idps}. |
+| <code><a href="#@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefaultConfig.property.fidoU2F">FidoU2F</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa_default#fido_u2f PolicyMfaDefault#fido_u2f}. |
+| <code><a href="#@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefaultConfig.property.fidoWebauthn">FidoWebauthn</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa_default#fido_webauthn PolicyMfaDefault#fido_webauthn}. |
+| <code><a href="#@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefaultConfig.property.googleOtp">GoogleOtp</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa_default#google_otp PolicyMfaDefault#google_otp}. |
+| <code><a href="#@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefaultConfig.property.hotp">Hotp</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa_default#hotp PolicyMfaDefault#hotp}. |
+| <code><a href="#@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefaultConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa_default#id PolicyMfaDefault#id}. |
 | <code><a href="#@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefaultConfig.property.isOie">IsOie</a></code> | <code>object</code> | Is the policy using Okta Identity Engine (OIE) with authenticators instead of factors? |
-| <code><a href="#@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefaultConfig.property.oktaCall">OktaCall</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa_default#okta_call PolicyMfaDefault#okta_call}. |
-| <code><a href="#@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefaultConfig.property.oktaEmail">OktaEmail</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa_default#okta_email PolicyMfaDefault#okta_email}. |
-| <code><a href="#@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefaultConfig.property.oktaOtp">OktaOtp</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa_default#okta_otp PolicyMfaDefault#okta_otp}. |
-| <code><a href="#@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefaultConfig.property.oktaPassword">OktaPassword</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa_default#okta_password PolicyMfaDefault#okta_password}. |
-| <code><a href="#@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefaultConfig.property.oktaPush">OktaPush</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa_default#okta_push PolicyMfaDefault#okta_push}. |
-| <code><a href="#@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefaultConfig.property.oktaQuestion">OktaQuestion</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa_default#okta_question PolicyMfaDefault#okta_question}. |
-| <code><a href="#@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefaultConfig.property.oktaSms">OktaSms</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa_default#okta_sms PolicyMfaDefault#okta_sms}. |
-| <code><a href="#@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefaultConfig.property.oktaVerify">OktaVerify</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa_default#okta_verify PolicyMfaDefault#okta_verify}. |
-| <code><a href="#@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefaultConfig.property.onpremMfa">OnpremMfa</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa_default#onprem_mfa PolicyMfaDefault#onprem_mfa}. |
-| <code><a href="#@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefaultConfig.property.phoneNumber">PhoneNumber</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa_default#phone_number PolicyMfaDefault#phone_number}. |
-| <code><a href="#@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefaultConfig.property.rsaToken">RsaToken</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa_default#rsa_token PolicyMfaDefault#rsa_token}. |
-| <code><a href="#@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefaultConfig.property.securityQuestion">SecurityQuestion</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa_default#security_question PolicyMfaDefault#security_question}. |
-| <code><a href="#@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefaultConfig.property.symantecVip">SymantecVip</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa_default#symantec_vip PolicyMfaDefault#symantec_vip}. |
-| <code><a href="#@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefaultConfig.property.webauthn">Webauthn</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa_default#webauthn PolicyMfaDefault#webauthn}. |
-| <code><a href="#@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefaultConfig.property.yubikeyToken">YubikeyToken</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa_default#yubikey_token PolicyMfaDefault#yubikey_token}. |
+| <code><a href="#@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefaultConfig.property.oktaCall">OktaCall</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa_default#okta_call PolicyMfaDefault#okta_call}. |
+| <code><a href="#@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefaultConfig.property.oktaEmail">OktaEmail</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa_default#okta_email PolicyMfaDefault#okta_email}. |
+| <code><a href="#@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefaultConfig.property.oktaOtp">OktaOtp</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa_default#okta_otp PolicyMfaDefault#okta_otp}. |
+| <code><a href="#@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefaultConfig.property.oktaPassword">OktaPassword</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa_default#okta_password PolicyMfaDefault#okta_password}. |
+| <code><a href="#@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefaultConfig.property.oktaPush">OktaPush</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa_default#okta_push PolicyMfaDefault#okta_push}. |
+| <code><a href="#@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefaultConfig.property.oktaQuestion">OktaQuestion</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa_default#okta_question PolicyMfaDefault#okta_question}. |
+| <code><a href="#@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefaultConfig.property.oktaSms">OktaSms</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa_default#okta_sms PolicyMfaDefault#okta_sms}. |
+| <code><a href="#@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefaultConfig.property.oktaVerify">OktaVerify</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa_default#okta_verify PolicyMfaDefault#okta_verify}. |
+| <code><a href="#@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefaultConfig.property.onpremMfa">OnpremMfa</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa_default#onprem_mfa PolicyMfaDefault#onprem_mfa}. |
+| <code><a href="#@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefaultConfig.property.phoneNumber">PhoneNumber</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa_default#phone_number PolicyMfaDefault#phone_number}. |
+| <code><a href="#@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefaultConfig.property.rsaToken">RsaToken</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa_default#rsa_token PolicyMfaDefault#rsa_token}. |
+| <code><a href="#@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefaultConfig.property.securityQuestion">SecurityQuestion</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa_default#security_question PolicyMfaDefault#security_question}. |
+| <code><a href="#@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefaultConfig.property.symantecVip">SymantecVip</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa_default#symantec_vip PolicyMfaDefault#symantec_vip}. |
+| <code><a href="#@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefaultConfig.property.webauthn">Webauthn</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa_default#webauthn PolicyMfaDefault#webauthn}. |
+| <code><a href="#@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefaultConfig.property.yubikeyToken">YubikeyToken</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa_default#yubikey_token PolicyMfaDefault#yubikey_token}. |
 
 ---
 
@@ -1540,7 +1571,7 @@ public System.Collections.Generic.IDictionary<string, string> Duo { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa_default#duo PolicyMfaDefault#duo}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa_default#duo PolicyMfaDefault#duo}.
 
 ---
 
@@ -1552,7 +1583,19 @@ public System.Collections.Generic.IDictionary<string, string> ExternalIdp { get;
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa_default#external_idp PolicyMfaDefault#external_idp}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa_default#external_idp PolicyMfaDefault#external_idp}.
+
+---
+
+##### `ExternalIdps`<sup>Optional</sup> <a name="ExternalIdps" id="@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefaultConfig.property.externalIdps"></a>
+
+```csharp
+public object ExternalIdps { get; set; }
+```
+
+- *Type:* object
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa_default#external_idps PolicyMfaDefault#external_idps}.
 
 ---
 
@@ -1564,7 +1607,7 @@ public System.Collections.Generic.IDictionary<string, string> FidoU2F { get; set
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa_default#fido_u2f PolicyMfaDefault#fido_u2f}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa_default#fido_u2f PolicyMfaDefault#fido_u2f}.
 
 ---
 
@@ -1576,7 +1619,7 @@ public System.Collections.Generic.IDictionary<string, string> FidoWebauthn { get
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa_default#fido_webauthn PolicyMfaDefault#fido_webauthn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa_default#fido_webauthn PolicyMfaDefault#fido_webauthn}.
 
 ---
 
@@ -1588,7 +1631,7 @@ public System.Collections.Generic.IDictionary<string, string> GoogleOtp { get; s
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa_default#google_otp PolicyMfaDefault#google_otp}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa_default#google_otp PolicyMfaDefault#google_otp}.
 
 ---
 
@@ -1600,7 +1643,7 @@ public System.Collections.Generic.IDictionary<string, string> Hotp { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa_default#hotp PolicyMfaDefault#hotp}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa_default#hotp PolicyMfaDefault#hotp}.
 
 ---
 
@@ -1612,7 +1655,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa_default#id PolicyMfaDefault#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa_default#id PolicyMfaDefault#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1629,7 +1672,7 @@ public object IsOie { get; set; }
 
 Is the policy using Okta Identity Engine (OIE) with authenticators instead of factors?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa_default#is_oie PolicyMfaDefault#is_oie}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa_default#is_oie PolicyMfaDefault#is_oie}
 
 ---
 
@@ -1641,7 +1684,7 @@ public System.Collections.Generic.IDictionary<string, string> OktaCall { get; se
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa_default#okta_call PolicyMfaDefault#okta_call}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa_default#okta_call PolicyMfaDefault#okta_call}.
 
 ---
 
@@ -1653,7 +1696,7 @@ public System.Collections.Generic.IDictionary<string, string> OktaEmail { get; s
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa_default#okta_email PolicyMfaDefault#okta_email}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa_default#okta_email PolicyMfaDefault#okta_email}.
 
 ---
 
@@ -1665,7 +1708,7 @@ public System.Collections.Generic.IDictionary<string, string> OktaOtp { get; set
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa_default#okta_otp PolicyMfaDefault#okta_otp}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa_default#okta_otp PolicyMfaDefault#okta_otp}.
 
 ---
 
@@ -1677,7 +1720,7 @@ public System.Collections.Generic.IDictionary<string, string> OktaPassword { get
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa_default#okta_password PolicyMfaDefault#okta_password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa_default#okta_password PolicyMfaDefault#okta_password}.
 
 ---
 
@@ -1689,7 +1732,7 @@ public System.Collections.Generic.IDictionary<string, string> OktaPush { get; se
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa_default#okta_push PolicyMfaDefault#okta_push}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa_default#okta_push PolicyMfaDefault#okta_push}.
 
 ---
 
@@ -1701,7 +1744,7 @@ public System.Collections.Generic.IDictionary<string, string> OktaQuestion { get
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa_default#okta_question PolicyMfaDefault#okta_question}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa_default#okta_question PolicyMfaDefault#okta_question}.
 
 ---
 
@@ -1713,7 +1756,7 @@ public System.Collections.Generic.IDictionary<string, string> OktaSms { get; set
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa_default#okta_sms PolicyMfaDefault#okta_sms}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa_default#okta_sms PolicyMfaDefault#okta_sms}.
 
 ---
 
@@ -1725,7 +1768,7 @@ public System.Collections.Generic.IDictionary<string, string> OktaVerify { get; 
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa_default#okta_verify PolicyMfaDefault#okta_verify}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa_default#okta_verify PolicyMfaDefault#okta_verify}.
 
 ---
 
@@ -1737,7 +1780,7 @@ public System.Collections.Generic.IDictionary<string, string> OnpremMfa { get; s
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa_default#onprem_mfa PolicyMfaDefault#onprem_mfa}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa_default#onprem_mfa PolicyMfaDefault#onprem_mfa}.
 
 ---
 
@@ -1749,7 +1792,7 @@ public System.Collections.Generic.IDictionary<string, string> PhoneNumber { get;
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa_default#phone_number PolicyMfaDefault#phone_number}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa_default#phone_number PolicyMfaDefault#phone_number}.
 
 ---
 
@@ -1761,7 +1804,7 @@ public System.Collections.Generic.IDictionary<string, string> RsaToken { get; se
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa_default#rsa_token PolicyMfaDefault#rsa_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa_default#rsa_token PolicyMfaDefault#rsa_token}.
 
 ---
 
@@ -1773,7 +1816,7 @@ public System.Collections.Generic.IDictionary<string, string> SecurityQuestion {
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa_default#security_question PolicyMfaDefault#security_question}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa_default#security_question PolicyMfaDefault#security_question}.
 
 ---
 
@@ -1785,7 +1828,7 @@ public System.Collections.Generic.IDictionary<string, string> SymantecVip { get;
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa_default#symantec_vip PolicyMfaDefault#symantec_vip}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa_default#symantec_vip PolicyMfaDefault#symantec_vip}.
 
 ---
 
@@ -1797,7 +1840,7 @@ public System.Collections.Generic.IDictionary<string, string> Webauthn { get; se
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa_default#webauthn PolicyMfaDefault#webauthn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa_default#webauthn PolicyMfaDefault#webauthn}.
 
 ---
 
@@ -1809,7 +1852,7 @@ public System.Collections.Generic.IDictionary<string, string> YubikeyToken { get
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa_default#yubikey_token PolicyMfaDefault#yubikey_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa_default#yubikey_token PolicyMfaDefault#yubikey_token}.
 
 ---
 
