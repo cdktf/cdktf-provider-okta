@@ -143,6 +143,7 @@ The following submodules are available:
 - [theme](./theme.typescript.md)
 - [threatInsightSettings](./threatInsightSettings.typescript.md)
 - [trustedOrigin](./trustedOrigin.typescript.md)
+- [trustedServer](./trustedServer.typescript.md)
 - [user](./user.typescript.md)
 - [userAdminRoles](./userAdminRoles.typescript.md)
 - [userBaseSchemaProperty](./userBaseSchemaProperty.typescript.md)

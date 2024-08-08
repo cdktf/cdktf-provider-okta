@@ -4,7 +4,7 @@
 
 ### DataOktaNetworkZone <a name="DataOktaNetworkZone" id="@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/data-sources/network_zone okta_network_zone}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/data-sources/network_zone okta_network_zone}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.Initializer"></a>
 
@@ -23,7 +23,10 @@ DataOktaNetworkZone.Builder.create(Construct scope, java.lang.String id)
 //  .provisioners(java.util.List<FileProvisioner)
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
+//  .dynamicLocationsExclude(java.util.List<java.lang.String>)
 //  .id(java.lang.String)
+//  .ipServiceCategoriesExclude(java.util.List<java.lang.String>)
+//  .ipServiceCategoriesInclude(java.util.List<java.lang.String>)
 //  .name(java.lang.String)
     .build();
 ```
@@ -39,7 +42,10 @@ DataOktaNetworkZone.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.Initializer.parameter.dynamicLocationsExclude">dynamicLocationsExclude</a></code> | <code>java.util.List<java.lang.String></code> | Array of locations ISO-3166-1(2) excluded. Format code: countryCode OR countryCode-regionCode. Use with type `DYNAMIC_V2`. |
 | <code><a href="#@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | ID of the network zone to retrieve, conflicts with `name`. |
+| <code><a href="#@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.Initializer.parameter.ipServiceCategoriesExclude">ipServiceCategoriesExclude</a></code> | <code>java.util.List<java.lang.String></code> | List of ip service excluded. Use with type `DYNAMIC_V2`. |
+| <code><a href="#@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.Initializer.parameter.ipServiceCategoriesInclude">ipServiceCategoriesInclude</a></code> | <code>java.util.List<java.lang.String></code> | List of ip service included. Use with type `DYNAMIC_V2`. |
 | <code><a href="#@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Name of the network zone to retrieve, conflicts with `id`. |
 
 ---
@@ -104,16 +110,46 @@ Must be unique amongst siblings in the same scope
 
 ---
 
+##### `dynamicLocationsExclude`<sup>Optional</sup> <a name="dynamicLocationsExclude" id="@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.Initializer.parameter.dynamicLocationsExclude"></a>
+
+- *Type:* java.util.List<java.lang.String>
+
+Array of locations ISO-3166-1(2) excluded. Format code: countryCode OR countryCode-regionCode. Use with type `DYNAMIC_V2`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/data-sources/network_zone#dynamic_locations_exclude DataOktaNetworkZone#dynamic_locations_exclude}
+
+---
+
 ##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.Initializer.parameter.id"></a>
 
 - *Type:* java.lang.String
 
 ID of the network zone to retrieve, conflicts with `name`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/data-sources/network_zone#id DataOktaNetworkZone#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/data-sources/network_zone#id DataOktaNetworkZone#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `ipServiceCategoriesExclude`<sup>Optional</sup> <a name="ipServiceCategoriesExclude" id="@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.Initializer.parameter.ipServiceCategoriesExclude"></a>
+
+- *Type:* java.util.List<java.lang.String>
+
+List of ip service excluded. Use with type `DYNAMIC_V2`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/data-sources/network_zone#ip_service_categories_exclude DataOktaNetworkZone#ip_service_categories_exclude}
+
+---
+
+##### `ipServiceCategoriesInclude`<sup>Optional</sup> <a name="ipServiceCategoriesInclude" id="@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.Initializer.parameter.ipServiceCategoriesInclude"></a>
+
+- *Type:* java.util.List<java.lang.String>
+
+List of ip service included. Use with type `DYNAMIC_V2`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/data-sources/network_zone#ip_service_categories_include DataOktaNetworkZone#ip_service_categories_include}
 
 ---
 
@@ -123,7 +159,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Name of the network zone to retrieve, conflicts with `id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/data-sources/network_zone#name DataOktaNetworkZone#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/data-sources/network_zone#name DataOktaNetworkZone#name}
 
 ---
 
@@ -148,7 +184,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 | <code><a href="#@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.resetDynamicLocationsExclude">resetDynamicLocationsExclude</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.resetIpServiceCategoriesExclude">resetIpServiceCategoriesExclude</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.resetIpServiceCategoriesInclude">resetIpServiceCategoriesInclude</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.resetName">resetName</a></code> | *No description.* |
 
 ---
@@ -345,10 +384,28 @@ public IResolvable interpolationForAttribute(java.lang.String terraformAttribute
 
 ---
 
+##### `resetDynamicLocationsExclude` <a name="resetDynamicLocationsExclude" id="@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.resetDynamicLocationsExclude"></a>
+
+```java
+public void resetDynamicLocationsExclude()
+```
+
 ##### `resetId` <a name="resetId" id="@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.resetId"></a>
 
 ```java
 public void resetId()
+```
+
+##### `resetIpServiceCategoriesExclude` <a name="resetIpServiceCategoriesExclude" id="@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.resetIpServiceCategoriesExclude"></a>
+
+```java
+public void resetIpServiceCategoriesExclude()
+```
+
+##### `resetIpServiceCategoriesInclude` <a name="resetIpServiceCategoriesInclude" id="@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.resetIpServiceCategoriesInclude"></a>
+
+```java
+public void resetIpServiceCategoriesInclude()
 ```
 
 ##### `resetName` <a name="resetName" id="@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.resetName"></a>
@@ -460,7 +517,7 @@ The construct id used in the generated config for the DataOktaNetworkZone to imp
 
 The id of the existing DataOktaNetworkZone that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/data-sources/network_zone#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/data-sources/network_zone#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -496,9 +553,15 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs
 | <code><a href="#@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.property.status">status</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.property.type">type</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.property.usage">usage</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.property.dynamicLocationsExcludeInput">dynamicLocationsExcludeInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.property.ipServiceCategoriesExcludeInput">ipServiceCategoriesExcludeInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.property.ipServiceCategoriesIncludeInput">ipServiceCategoriesIncludeInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.property.dynamicLocationsExclude">dynamicLocationsExclude</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.property.ipServiceCategoriesExclude">ipServiceCategoriesExclude</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.property.ipServiceCategoriesInclude">ipServiceCategoriesInclude</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 
 ---
@@ -705,6 +768,16 @@ public java.lang.String getUsage();
 
 ---
 
+##### `dynamicLocationsExcludeInput`<sup>Optional</sup> <a name="dynamicLocationsExcludeInput" id="@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.property.dynamicLocationsExcludeInput"></a>
+
+```java
+public java.util.List<java.lang.String> getDynamicLocationsExcludeInput();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
 ##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.property.idInput"></a>
 
 ```java
@@ -712,6 +785,26 @@ public java.lang.String getIdInput();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `ipServiceCategoriesExcludeInput`<sup>Optional</sup> <a name="ipServiceCategoriesExcludeInput" id="@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.property.ipServiceCategoriesExcludeInput"></a>
+
+```java
+public java.util.List<java.lang.String> getIpServiceCategoriesExcludeInput();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `ipServiceCategoriesIncludeInput`<sup>Optional</sup> <a name="ipServiceCategoriesIncludeInput" id="@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.property.ipServiceCategoriesIncludeInput"></a>
+
+```java
+public java.util.List<java.lang.String> getIpServiceCategoriesIncludeInput();
+```
+
+- *Type:* java.util.List<java.lang.String>
 
 ---
 
@@ -725,6 +818,16 @@ public java.lang.String getNameInput();
 
 ---
 
+##### `dynamicLocationsExclude`<sup>Required</sup> <a name="dynamicLocationsExclude" id="@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.property.dynamicLocationsExclude"></a>
+
+```java
+public java.util.List<java.lang.String> getDynamicLocationsExclude();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
 ##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.property.id"></a>
 
 ```java
@@ -732,6 +835,26 @@ public java.lang.String getId();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `ipServiceCategoriesExclude`<sup>Required</sup> <a name="ipServiceCategoriesExclude" id="@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.property.ipServiceCategoriesExclude"></a>
+
+```java
+public java.util.List<java.lang.String> getIpServiceCategoriesExclude();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `ipServiceCategoriesInclude`<sup>Required</sup> <a name="ipServiceCategoriesInclude" id="@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.property.ipServiceCategoriesInclude"></a>
+
+```java
+public java.util.List<java.lang.String> getIpServiceCategoriesInclude();
+```
+
+- *Type:* java.util.List<java.lang.String>
 
 ---
 
@@ -784,7 +907,10 @@ DataOktaNetworkZoneConfig.builder()
 //  .provisioners(java.util.List<FileProvisioner)
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
+//  .dynamicLocationsExclude(java.util.List<java.lang.String>)
 //  .id(java.lang.String)
+//  .ipServiceCategoriesExclude(java.util.List<java.lang.String>)
+//  .ipServiceCategoriesInclude(java.util.List<java.lang.String>)
 //  .name(java.lang.String)
     .build();
 ```
@@ -800,7 +926,10 @@ DataOktaNetworkZoneConfig.builder()
 | <code><a href="#@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZoneConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZoneConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZoneConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZoneConfig.property.dynamicLocationsExclude">dynamicLocationsExclude</a></code> | <code>java.util.List<java.lang.String></code> | Array of locations ISO-3166-1(2) excluded. Format code: countryCode OR countryCode-regionCode. Use with type `DYNAMIC_V2`. |
 | <code><a href="#@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZoneConfig.property.id">id</a></code> | <code>java.lang.String</code> | ID of the network zone to retrieve, conflicts with `name`. |
+| <code><a href="#@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZoneConfig.property.ipServiceCategoriesExclude">ipServiceCategoriesExclude</a></code> | <code>java.util.List<java.lang.String></code> | List of ip service excluded. Use with type `DYNAMIC_V2`. |
+| <code><a href="#@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZoneConfig.property.ipServiceCategoriesInclude">ipServiceCategoriesInclude</a></code> | <code>java.util.List<java.lang.String></code> | List of ip service included. Use with type `DYNAMIC_V2`. |
 | <code><a href="#@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZoneConfig.property.name">name</a></code> | <code>java.lang.String</code> | Name of the network zone to retrieve, conflicts with `id`. |
 
 ---
@@ -875,6 +1004,20 @@ public java.lang.Object getProvisioners();
 
 ---
 
+##### `dynamicLocationsExclude`<sup>Optional</sup> <a name="dynamicLocationsExclude" id="@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZoneConfig.property.dynamicLocationsExclude"></a>
+
+```java
+public java.util.List<java.lang.String> getDynamicLocationsExclude();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+Array of locations ISO-3166-1(2) excluded. Format code: countryCode OR countryCode-regionCode. Use with type `DYNAMIC_V2`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/data-sources/network_zone#dynamic_locations_exclude DataOktaNetworkZone#dynamic_locations_exclude}
+
+---
+
 ##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZoneConfig.property.id"></a>
 
 ```java
@@ -885,10 +1028,38 @@ public java.lang.String getId();
 
 ID of the network zone to retrieve, conflicts with `name`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/data-sources/network_zone#id DataOktaNetworkZone#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/data-sources/network_zone#id DataOktaNetworkZone#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `ipServiceCategoriesExclude`<sup>Optional</sup> <a name="ipServiceCategoriesExclude" id="@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZoneConfig.property.ipServiceCategoriesExclude"></a>
+
+```java
+public java.util.List<java.lang.String> getIpServiceCategoriesExclude();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+List of ip service excluded. Use with type `DYNAMIC_V2`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/data-sources/network_zone#ip_service_categories_exclude DataOktaNetworkZone#ip_service_categories_exclude}
+
+---
+
+##### `ipServiceCategoriesInclude`<sup>Optional</sup> <a name="ipServiceCategoriesInclude" id="@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZoneConfig.property.ipServiceCategoriesInclude"></a>
+
+```java
+public java.util.List<java.lang.String> getIpServiceCategoriesInclude();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+List of ip service included. Use with type `DYNAMIC_V2`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/data-sources/network_zone#ip_service_categories_include DataOktaNetworkZone#ip_service_categories_include}
 
 ---
 
@@ -902,7 +1073,7 @@ public java.lang.String getName();
 
 Name of the network zone to retrieve, conflicts with `id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/data-sources/network_zone#name DataOktaNetworkZone#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/data-sources/network_zone#name DataOktaNetworkZone#name}
 
 ---
 

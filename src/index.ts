@@ -97,6 +97,7 @@ export * as templateSms from './template-sms';
 export * as theme from './theme';
 export * as threatInsightSettings from './threat-insight-settings';
 export * as trustedOrigin from './trusted-origin';
+export * as trustedServer from './trusted-server';
 export * as user from './user';
 export * as userAdminRoles from './user-admin-roles';
 export * as userBaseSchemaProperty from './user-base-schema-property';

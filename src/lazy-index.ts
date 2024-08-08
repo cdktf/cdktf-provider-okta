@@ -97,6 +97,7 @@ Object.defineProperty(exports, 'templateSms', { get: function () { return requir
 Object.defineProperty(exports, 'theme', { get: function () { return require('./theme'); } });
 Object.defineProperty(exports, 'threatInsightSettings', { get: function () { return require('./threat-insight-settings'); } });
 Object.defineProperty(exports, 'trustedOrigin', { get: function () { return require('./trusted-origin'); } });
+Object.defineProperty(exports, 'trustedServer', { get: function () { return require('./trusted-server'); } });
 Object.defineProperty(exports, 'user', { get: function () { return require('./user'); } });
 Object.defineProperty(exports, 'userAdminRoles', { get: function () { return require('./user-admin-roles'); } });
 Object.defineProperty(exports, 'userBaseSchemaProperty', { get: function () { return require('./user-base-schema-property'); } });

@@ -4,7 +4,7 @@
 
 ### PolicyMfa <a name="PolicyMfa" id="@cdktf/provider-okta.policyMfa.PolicyMfa"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa okta_policy_mfa}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa okta_policy_mfa}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.policyMfa.PolicyMfa.Initializer"></a>
 
@@ -76,6 +76,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.resetDuo">ResetDuo</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.resetExternalIdp">ResetExternalIdp</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.resetExternalIdps">ResetExternalIdps</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.resetFidoU2F">ResetFidoU2F</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.resetFidoWebauthn">ResetFidoWebauthn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.resetGoogleOtp">ResetGoogleOtp</a></code> | *No description.* |
@@ -409,6 +410,12 @@ func ResetDuo()
 func ResetExternalIdp()
 ```
 
+##### `ResetExternalIdps` <a name="ResetExternalIdps" id="@cdktf/provider-okta.policyMfa.PolicyMfa.resetExternalIdps"></a>
+
+```go
+func ResetExternalIdps()
+```
+
 ##### `ResetFidoU2F` <a name="ResetFidoU2F" id="@cdktf/provider-okta.policyMfa.PolicyMfa.resetFidoU2F"></a>
 
 ```go
@@ -656,7 +663,7 @@ The construct id used in the generated config for the PolicyMfa to import.
 
 The id of the existing PolicyMfa that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -689,6 +696,7 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.descriptionInput">DescriptionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.duoInput">DuoInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.externalIdpInput">ExternalIdpInput</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.externalIdpsInput">ExternalIdpsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.fidoU2FInput">FidoU2FInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.fidoWebauthnInput">FidoWebauthnInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.googleOtpInput">GoogleOtpInput</a></code> | <code>*map[string]*string</code> | *No description.* |
@@ -717,6 +725,7 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.description">Description</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.duo">Duo</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.externalIdp">ExternalIdp</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.externalIdps">ExternalIdps</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.fidoU2F">FidoU2F</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.fidoWebauthn">FidoWebauthn</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.googleOtp">GoogleOtp</a></code> | <code>*map[string]*string</code> | *No description.* |
@@ -914,6 +923,16 @@ func ExternalIdpInput() *map[string]*string
 ```
 
 - *Type:* *map[string]*string
+
+---
+
+##### `ExternalIdpsInput`<sup>Optional</sup> <a name="ExternalIdpsInput" id="@cdktf/provider-okta.policyMfa.PolicyMfa.property.externalIdpsInput"></a>
+
+```go
+func ExternalIdpsInput() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
@@ -1194,6 +1213,16 @@ func ExternalIdp() *map[string]*string
 ```
 
 - *Type:* *map[string]*string
+
+---
+
+##### `ExternalIdps`<sup>Required</sup> <a name="ExternalIdps" id="@cdktf/provider-okta.policyMfa.PolicyMfa.property.externalIdps"></a>
+
+```go
+func ExternalIdps() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
@@ -1486,6 +1515,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/policymfa"
 	Description: *string,
 	Duo: *map[string]*string,
 	ExternalIdp: *map[string]*string,
+	ExternalIdps: interface{},
 	FidoU2F: *map[string]*string,
 	FidoWebauthn: *map[string]*string,
 	GoogleOtp: *map[string]*string,
@@ -1526,32 +1556,33 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/policymfa"
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.name">Name</a></code> | <code>*string</code> | Policy Name. |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.description">Description</a></code> | <code>*string</code> | Policy Description. |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.duo">Duo</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa#duo PolicyMfa#duo}. |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.externalIdp">ExternalIdp</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa#external_idp PolicyMfa#external_idp}. |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.fidoU2F">FidoU2F</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa#fido_u2f PolicyMfa#fido_u2f}. |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.fidoWebauthn">FidoWebauthn</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa#fido_webauthn PolicyMfa#fido_webauthn}. |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.googleOtp">GoogleOtp</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa#google_otp PolicyMfa#google_otp}. |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.duo">Duo</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa#duo PolicyMfa#duo}. |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.externalIdp">ExternalIdp</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa#external_idp PolicyMfa#external_idp}. |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.externalIdps">ExternalIdps</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa#external_idps PolicyMfa#external_idps}. |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.fidoU2F">FidoU2F</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa#fido_u2f PolicyMfa#fido_u2f}. |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.fidoWebauthn">FidoWebauthn</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa#fido_webauthn PolicyMfa#fido_webauthn}. |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.googleOtp">GoogleOtp</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa#google_otp PolicyMfa#google_otp}. |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.groupsIncluded">GroupsIncluded</a></code> | <code>*[]*string</code> | List of Group IDs to Include. |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.hotp">Hotp</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa#hotp PolicyMfa#hotp}. |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa#id PolicyMfa#id}. |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.hotp">Hotp</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa#hotp PolicyMfa#hotp}. |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa#id PolicyMfa#id}. |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.isOie">IsOie</a></code> | <code>interface{}</code> | Is the policy using Okta Identity Engine (OIE) with authenticators instead of factors? |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.oktaCall">OktaCall</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa#okta_call PolicyMfa#okta_call}. |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.oktaEmail">OktaEmail</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa#okta_email PolicyMfa#okta_email}. |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.oktaOtp">OktaOtp</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa#okta_otp PolicyMfa#okta_otp}. |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.oktaPassword">OktaPassword</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa#okta_password PolicyMfa#okta_password}. |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.oktaPush">OktaPush</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa#okta_push PolicyMfa#okta_push}. |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.oktaQuestion">OktaQuestion</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa#okta_question PolicyMfa#okta_question}. |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.oktaSms">OktaSms</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa#okta_sms PolicyMfa#okta_sms}. |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.oktaVerify">OktaVerify</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa#okta_verify PolicyMfa#okta_verify}. |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.onpremMfa">OnpremMfa</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa#onprem_mfa PolicyMfa#onprem_mfa}. |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.phoneNumber">PhoneNumber</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa#phone_number PolicyMfa#phone_number}. |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.oktaCall">OktaCall</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa#okta_call PolicyMfa#okta_call}. |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.oktaEmail">OktaEmail</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa#okta_email PolicyMfa#okta_email}. |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.oktaOtp">OktaOtp</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa#okta_otp PolicyMfa#okta_otp}. |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.oktaPassword">OktaPassword</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa#okta_password PolicyMfa#okta_password}. |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.oktaPush">OktaPush</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa#okta_push PolicyMfa#okta_push}. |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.oktaQuestion">OktaQuestion</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa#okta_question PolicyMfa#okta_question}. |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.oktaSms">OktaSms</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa#okta_sms PolicyMfa#okta_sms}. |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.oktaVerify">OktaVerify</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa#okta_verify PolicyMfa#okta_verify}. |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.onpremMfa">OnpremMfa</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa#onprem_mfa PolicyMfa#onprem_mfa}. |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.phoneNumber">PhoneNumber</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa#phone_number PolicyMfa#phone_number}. |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.priority">Priority</a></code> | <code>*f64</code> | Policy Priority, this attribute can be set to a valid priority. |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.rsaToken">RsaToken</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa#rsa_token PolicyMfa#rsa_token}. |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.securityQuestion">SecurityQuestion</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa#security_question PolicyMfa#security_question}. |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.rsaToken">RsaToken</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa#rsa_token PolicyMfa#rsa_token}. |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.securityQuestion">SecurityQuestion</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa#security_question PolicyMfa#security_question}. |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.status">Status</a></code> | <code>*string</code> | Policy Status: `ACTIVE` or `INACTIVE`. Default: `ACTIVE`. |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.symantecVip">SymantecVip</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa#symantec_vip PolicyMfa#symantec_vip}. |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.webauthn">Webauthn</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa#webauthn PolicyMfa#webauthn}. |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.yubikeyToken">YubikeyToken</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa#yubikey_token PolicyMfa#yubikey_token}. |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.symantecVip">SymantecVip</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa#symantec_vip PolicyMfa#symantec_vip}. |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.webauthn">Webauthn</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa#webauthn PolicyMfa#webauthn}. |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.yubikeyToken">YubikeyToken</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa#yubikey_token PolicyMfa#yubikey_token}. |
 
 ---
 
@@ -1635,7 +1666,7 @@ Name *string
 
 Policy Name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa#name PolicyMfa#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa#name PolicyMfa#name}
 
 ---
 
@@ -1649,7 +1680,7 @@ Description *string
 
 Policy Description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa#description PolicyMfa#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa#description PolicyMfa#description}
 
 ---
 
@@ -1661,7 +1692,7 @@ Duo *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa#duo PolicyMfa#duo}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa#duo PolicyMfa#duo}.
 
 ---
 
@@ -1673,7 +1704,19 @@ ExternalIdp *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa#external_idp PolicyMfa#external_idp}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa#external_idp PolicyMfa#external_idp}.
+
+---
+
+##### `ExternalIdps`<sup>Optional</sup> <a name="ExternalIdps" id="@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.externalIdps"></a>
+
+```go
+ExternalIdps interface{}
+```
+
+- *Type:* interface{}
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa#external_idps PolicyMfa#external_idps}.
 
 ---
 
@@ -1685,7 +1728,7 @@ FidoU2F *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa#fido_u2f PolicyMfa#fido_u2f}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa#fido_u2f PolicyMfa#fido_u2f}.
 
 ---
 
@@ -1697,7 +1740,7 @@ FidoWebauthn *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa#fido_webauthn PolicyMfa#fido_webauthn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa#fido_webauthn PolicyMfa#fido_webauthn}.
 
 ---
 
@@ -1709,7 +1752,7 @@ GoogleOtp *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa#google_otp PolicyMfa#google_otp}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa#google_otp PolicyMfa#google_otp}.
 
 ---
 
@@ -1723,7 +1766,7 @@ GroupsIncluded *[]*string
 
 List of Group IDs to Include.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa#groups_included PolicyMfa#groups_included}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa#groups_included PolicyMfa#groups_included}
 
 ---
 
@@ -1735,7 +1778,7 @@ Hotp *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa#hotp PolicyMfa#hotp}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa#hotp PolicyMfa#hotp}.
 
 ---
 
@@ -1747,7 +1790,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa#id PolicyMfa#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa#id PolicyMfa#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1764,7 +1807,7 @@ IsOie interface{}
 
 Is the policy using Okta Identity Engine (OIE) with authenticators instead of factors?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa#is_oie PolicyMfa#is_oie}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa#is_oie PolicyMfa#is_oie}
 
 ---
 
@@ -1776,7 +1819,7 @@ OktaCall *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa#okta_call PolicyMfa#okta_call}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa#okta_call PolicyMfa#okta_call}.
 
 ---
 
@@ -1788,7 +1831,7 @@ OktaEmail *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa#okta_email PolicyMfa#okta_email}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa#okta_email PolicyMfa#okta_email}.
 
 ---
 
@@ -1800,7 +1843,7 @@ OktaOtp *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa#okta_otp PolicyMfa#okta_otp}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa#okta_otp PolicyMfa#okta_otp}.
 
 ---
 
@@ -1812,7 +1855,7 @@ OktaPassword *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa#okta_password PolicyMfa#okta_password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa#okta_password PolicyMfa#okta_password}.
 
 ---
 
@@ -1824,7 +1867,7 @@ OktaPush *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa#okta_push PolicyMfa#okta_push}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa#okta_push PolicyMfa#okta_push}.
 
 ---
 
@@ -1836,7 +1879,7 @@ OktaQuestion *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa#okta_question PolicyMfa#okta_question}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa#okta_question PolicyMfa#okta_question}.
 
 ---
 
@@ -1848,7 +1891,7 @@ OktaSms *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa#okta_sms PolicyMfa#okta_sms}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa#okta_sms PolicyMfa#okta_sms}.
 
 ---
 
@@ -1860,7 +1903,7 @@ OktaVerify *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa#okta_verify PolicyMfa#okta_verify}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa#okta_verify PolicyMfa#okta_verify}.
 
 ---
 
@@ -1872,7 +1915,7 @@ OnpremMfa *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa#onprem_mfa PolicyMfa#onprem_mfa}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa#onprem_mfa PolicyMfa#onprem_mfa}.
 
 ---
 
@@ -1884,7 +1927,7 @@ PhoneNumber *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa#phone_number PolicyMfa#phone_number}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa#phone_number PolicyMfa#phone_number}.
 
 ---
 
@@ -1900,7 +1943,7 @@ Policy Priority, this attribute can be set to a valid priority.
 
 To avoid endless diff situation we error if an invalid priority is provided. API defaults it to the last (lowest) if not there.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa#priority PolicyMfa#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa#priority PolicyMfa#priority}
 
 ---
 
@@ -1912,7 +1955,7 @@ RsaToken *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa#rsa_token PolicyMfa#rsa_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa#rsa_token PolicyMfa#rsa_token}.
 
 ---
 
@@ -1924,7 +1967,7 @@ SecurityQuestion *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa#security_question PolicyMfa#security_question}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa#security_question PolicyMfa#security_question}.
 
 ---
 
@@ -1938,7 +1981,7 @@ Status *string
 
 Policy Status: `ACTIVE` or `INACTIVE`. Default: `ACTIVE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa#status PolicyMfa#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa#status PolicyMfa#status}
 
 ---
 
@@ -1950,7 +1993,7 @@ SymantecVip *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa#symantec_vip PolicyMfa#symantec_vip}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa#symantec_vip PolicyMfa#symantec_vip}.
 
 ---
 
@@ -1962,7 +2005,7 @@ Webauthn *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa#webauthn PolicyMfa#webauthn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa#webauthn PolicyMfa#webauthn}.
 
 ---
 
@@ -1974,7 +2017,7 @@ YubikeyToken *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.9.1/docs/resources/policy_mfa#yubikey_token PolicyMfa#yubikey_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/policy_mfa#yubikey_token PolicyMfa#yubikey_token}.
 
 ---
 
