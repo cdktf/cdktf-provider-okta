@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.10.0/doc
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appOauthRedirectUri.AppOauthRedirectUri.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/appoauthredirecturi"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/appoauthredirecturi"
 
 appoauthredirecturi.NewAppOauthRedirectUri(scope Construct, id *string, config AppOauthRedirectUriConfig) AppOauthRedirectUri
 ```
@@ -385,7 +385,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.appOauthRedirectUri.AppOauthRedirectUri.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/appoauthredirecturi"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/appoauthredirecturi"
 
 appoauthredirecturi.AppOauthRedirectUri_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.appOauthRedirectUri.AppOauthRedirectUri.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/appoauthredirecturi"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/appoauthredirecturi"
 
 appoauthredirecturi.AppOauthRedirectUri_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ appoauthredirecturi.AppOauthRedirectUri_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.appOauthRedirectUri.AppOauthRedirectUri.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/appoauthredirecturi"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/appoauthredirecturi"
 
 appoauthredirecturi.AppOauthRedirectUri_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ appoauthredirecturi.AppOauthRedirectUri_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.appOauthRedirectUri.AppOauthRedirectUri.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/appoauthredirecturi"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/appoauthredirecturi"
 
 appoauthredirecturi.AppOauthRedirectUri_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -740,7 +740,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.appOauthRedirectUri.AppOauthRedirectUriConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/appoauthredirecturi"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/appoauthredirecturi"
 
 &appoauthredirecturi.AppOauthRedirectUriConfig {
 	Connection: interface{},
