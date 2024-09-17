@@ -4,12 +4,12 @@
 
 ### ResourceSet <a name="ResourceSet" id="@cdktf/provider-okta.resourceSet.ResourceSet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/resource_set okta_resource_set}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/resource_set okta_resource_set}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.resourceSet.ResourceSet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/resourceset"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/resourceset"
 
 resourceset.NewResourceSet(scope Construct, id *string, config ResourceSetConfig) ResourceSet
 ```
@@ -392,7 +392,7 @@ func ResetResources()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.resourceSet.ResourceSet.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/resourceset"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/resourceset"
 
 resourceset.ResourceSet_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.resourceSet.ResourceSet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/resourceset"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/resourceset"
 
 resourceset.ResourceSet_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ resourceset.ResourceSet_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.resourceSet.ResourceSet.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/resourceset"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/resourceset"
 
 resourceset.ResourceSet_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ resourceset.ResourceSet_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.resourceSet.ResourceSet.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/resourceset"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/resourceset"
 
 resourceset.ResourceSet_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -481,7 +481,7 @@ The construct id used in the generated config for the ResourceSet to import.
 
 The id of the existing ResourceSet that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/resource_set#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/resource_set#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -769,7 +769,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.resourceSet.ResourceSetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/resourceset"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/resourceset"
 
 &resourceset.ResourceSetConfig {
 	Connection: interface{},
@@ -799,7 +799,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/resourceset"
 | <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSetConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSetConfig.property.description">Description</a></code> | <code>*string</code> | A description of the Resource Set. |
 | <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSetConfig.property.label">Label</a></code> | <code>*string</code> | Unique name given to the Resource Set. |
-| <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/resource_set#id ResourceSet#id}. |
+| <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/resource_set#id ResourceSet#id}. |
 | <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSetConfig.property.resources">Resources</a></code> | <code>*[]*string</code> | The endpoints that reference the resources to be included in the new Resource Set. |
 
 ---
@@ -884,7 +884,7 @@ Description *string
 
 A description of the Resource Set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/resource_set#description ResourceSet#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/resource_set#description ResourceSet#description}
 
 ---
 
@@ -898,7 +898,7 @@ Label *string
 
 Unique name given to the Resource Set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/resource_set#label ResourceSet#label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/resource_set#label ResourceSet#label}
 
 ---
 
@@ -910,7 +910,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/resource_set#id ResourceSet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/resource_set#id ResourceSet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -929,7 +929,7 @@ The endpoints that reference the resources to be included in the new Resource Se
 
 At least one endpoint must be specified when creating resource set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/resource_set#resources ResourceSet#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/resource_set#resources ResourceSet#resources}
 
 ---
 

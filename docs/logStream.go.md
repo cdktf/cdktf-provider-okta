@@ -4,12 +4,12 @@
 
 ### LogStream <a name="LogStream" id="@cdktf/provider-okta.logStream.LogStream"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/log_stream okta_log_stream}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/log_stream okta_log_stream}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.logStream.LogStream.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/logstream"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/logstream"
 
 logstream.NewLogStream(scope Construct, id *string, config LogStreamConfig) LogStream
 ```
@@ -405,7 +405,7 @@ func ResetStatus()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.logStream.LogStream.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/logstream"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/logstream"
 
 logstream.LogStream_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.logStream.LogStream.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/logstream"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/logstream"
 
 logstream.LogStream_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ logstream.LogStream_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.logStream.LogStream.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/logstream"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/logstream"
 
 logstream.LogStream_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ logstream.LogStream_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.logStream.LogStream.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/logstream"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/logstream"
 
 logstream.LogStream_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -494,7 +494,7 @@ The construct id used in the generated config for the LogStream to import.
 
 The id of the existing LogStream that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/log_stream#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/log_stream#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -793,7 +793,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.logStream.LogStreamConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/logstream"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/logstream"
 
 &logstream.LogStreamConfig {
 	Connection: interface{},
@@ -805,7 +805,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/logstream"
 	Provisioners: *[]interface{},
 	Name: *string,
 	Type: *string,
-	Settings: github.com/cdktf/cdktf-provider-okta-go/okta/v13.logStream.LogStreamSettings,
+	Settings: github.com/cdktf/cdktf-provider-okta-go/okta.logStream.LogStreamSettings,
 	Status: *string,
 }
 ```
@@ -908,7 +908,7 @@ Name *string
 
 Unique name for the Log Stream object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/log_stream#name LogStream#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/log_stream#name LogStream#name}
 
 ---
 
@@ -922,7 +922,7 @@ Type *string
 
 Streaming provider used - 'aws_eventbridge' or 'splunk_cloud_logstreaming'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/log_stream#type LogStream#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/log_stream#type LogStream#type}
 
 ---
 
@@ -936,7 +936,7 @@ Settings LogStreamSettings
 
 settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/log_stream#settings LogStream#settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/log_stream#settings LogStream#settings}
 
 ---
 
@@ -950,7 +950,7 @@ Status *string
 
 Stream status.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/log_stream#status LogStream#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/log_stream#status LogStream#status}
 
 ---
 
@@ -959,7 +959,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.logStream.LogStreamSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/logstream"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/logstream"
 
 &logstream.LogStreamSettings {
 	AccountId: *string,
@@ -994,7 +994,7 @@ AccountId *string
 
 AWS account ID. Required only for 'aws_eventbridge' type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/log_stream#account_id LogStream#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/log_stream#account_id LogStream#account_id}
 
 ---
 
@@ -1008,7 +1008,7 @@ Edition *string
 
 Edition of the Splunk Cloud instance. Could be one of: 'aws', 'aws_govcloud', 'gcp'. Required only for 'splunk_cloud_logstreaming' type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/log_stream#edition LogStream#edition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/log_stream#edition LogStream#edition}
 
 ---
 
@@ -1022,7 +1022,7 @@ EventSourceName *string
 
 An alphanumeric name (no spaces) to identify this event source in AWS EventBridge. Required only for 'aws_eventbridge' type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/log_stream#event_source_name LogStream#event_source_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/log_stream#event_source_name LogStream#event_source_name}
 
 ---
 
@@ -1038,7 +1038,7 @@ The domain name for Splunk Cloud instance.
 
 Don't include http or https in the string. For example: 'acme.splunkcloud.com'. Required only for 'splunk_cloud_logstreaming' type
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/log_stream#host LogStream#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/log_stream#host LogStream#host}
 
 ---
 
@@ -1052,7 +1052,7 @@ Region *string
 
 The destination AWS region where event source is located. Required only for 'aws_eventbridge' type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/log_stream#region LogStream#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/log_stream#region LogStream#region}
 
 ---
 
@@ -1066,7 +1066,7 @@ Token *string
 
 The HEC token for your Splunk Cloud HTTP Event Collector. Required only for 'splunk_cloud_logstreaming' type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/log_stream#token LogStream#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/log_stream#token LogStream#token}
 
 ---
 
@@ -1077,7 +1077,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.logStream.LogStreamSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/logstream"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/logstream"
 
 logstream.NewLogStreamSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LogStreamSettingsOutputReference
 ```

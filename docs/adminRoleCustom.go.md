@@ -4,12 +4,12 @@
 
 ### AdminRoleCustom <a name="AdminRoleCustom" id="@cdktf/provider-okta.adminRoleCustom.AdminRoleCustom"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/admin_role_custom okta_admin_role_custom}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/admin_role_custom okta_admin_role_custom}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.adminRoleCustom.AdminRoleCustom.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/adminrolecustom"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/adminrolecustom"
 
 adminrolecustom.NewAdminRoleCustom(scope Construct, id *string, config AdminRoleCustomConfig) AdminRoleCustom
 ```
@@ -392,7 +392,7 @@ func ResetPermissions()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.adminRoleCustom.AdminRoleCustom.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/adminrolecustom"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/adminrolecustom"
 
 adminrolecustom.AdminRoleCustom_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.adminRoleCustom.AdminRoleCustom.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/adminrolecustom"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/adminrolecustom"
 
 adminrolecustom.AdminRoleCustom_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ adminrolecustom.AdminRoleCustom_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.adminRoleCustom.AdminRoleCustom.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/adminrolecustom"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/adminrolecustom"
 
 adminrolecustom.AdminRoleCustom_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ adminrolecustom.AdminRoleCustom_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.adminRoleCustom.AdminRoleCustom.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/adminrolecustom"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/adminrolecustom"
 
 adminrolecustom.AdminRoleCustom_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -481,7 +481,7 @@ The construct id used in the generated config for the AdminRoleCustom to import.
 
 The id of the existing AdminRoleCustom that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/admin_role_custom#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/admin_role_custom#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -769,7 +769,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.adminRoleCustom.AdminRoleCustomConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/adminrolecustom"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/adminrolecustom"
 
 &adminrolecustom.AdminRoleCustomConfig {
 	Connection: interface{},
@@ -799,7 +799,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/adminrolecustom"
 | <code><a href="#@cdktf/provider-okta.adminRoleCustom.AdminRoleCustomConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.adminRoleCustom.AdminRoleCustomConfig.property.description">Description</a></code> | <code>*string</code> | A human-readable description of the new Role. |
 | <code><a href="#@cdktf/provider-okta.adminRoleCustom.AdminRoleCustomConfig.property.label">Label</a></code> | <code>*string</code> | The name given to the new Role. |
-| <code><a href="#@cdktf/provider-okta.adminRoleCustom.AdminRoleCustomConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/admin_role_custom#id AdminRoleCustom#id}. |
+| <code><a href="#@cdktf/provider-okta.adminRoleCustom.AdminRoleCustomConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/admin_role_custom#id AdminRoleCustom#id}. |
 | <code><a href="#@cdktf/provider-okta.adminRoleCustom.AdminRoleCustomConfig.property.permissions">Permissions</a></code> | <code>*[]*string</code> | The permissions that the new Role grants. |
 
 ---
@@ -884,7 +884,7 @@ Description *string
 
 A human-readable description of the new Role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/admin_role_custom#description AdminRoleCustom#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/admin_role_custom#description AdminRoleCustom#description}
 
 ---
 
@@ -898,7 +898,7 @@ Label *string
 
 The name given to the new Role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/admin_role_custom#label AdminRoleCustom#label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/admin_role_custom#label AdminRoleCustom#label}
 
 ---
 
@@ -910,7 +910,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/admin_role_custom#id AdminRoleCustom#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/admin_role_custom#id AdminRoleCustom#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -961,7 +961,7 @@ permission must be specified when creating custom role. Valid values: "okta.auth
 "okta.users.userprofile.manage",
 "okta.workflows.invoke".,
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/admin_role_custom#permissions AdminRoleCustom#permissions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/admin_role_custom#permissions AdminRoleCustom#permissions}
 
 ---
 

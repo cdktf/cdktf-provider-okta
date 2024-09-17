@@ -4,12 +4,12 @@
 
 ### DataOktaApp <a name="DataOktaApp" id="@cdktf/provider-okta.dataOktaApp.DataOktaApp"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/data-sources/app okta_app}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/data-sources/app okta_app}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaApp.DataOktaApp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktaapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaapp"
 
 dataoktaapp.NewDataOktaApp(scope Construct, id *string, config DataOktaAppConfig) DataOktaApp
 ```
@@ -318,7 +318,7 @@ func ResetSkipUsers()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.dataOktaApp.DataOktaApp.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktaapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaapp"
 
 dataoktaapp.DataOktaApp_IsConstruct(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.dataOktaApp.DataOktaApp.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktaapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaapp"
 
 dataoktaapp.DataOktaApp_IsTerraformElement(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ dataoktaapp.DataOktaApp_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-okta.dataOktaApp.DataOktaApp.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktaapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaapp"
 
 dataoktaapp.DataOktaApp_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ dataoktaapp.DataOktaApp_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.dataOktaApp.DataOktaApp.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktaapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaapp"
 
 dataoktaapp.DataOktaApp_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -407,7 +407,7 @@ The construct id used in the generated config for the DataOktaApp to import.
 
 The id of the existing DataOktaApp that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/data-sources/app#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/data-sources/app#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -772,7 +772,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaApp.DataOktaAppConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktaapp"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaapp"
 
 &dataoktaapp.DataOktaAppConfig {
 	Connection: interface{},
@@ -891,7 +891,7 @@ ActiveOnly interface{}
 
 Search only ACTIVE applications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/data-sources/app#active_only DataOktaApp#active_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/data-sources/app#active_only DataOktaApp#active_only}
 
 ---
 
@@ -905,7 +905,7 @@ Id *string
 
 Id of application to retrieve, conflicts with label and label_prefix.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/data-sources/app#id DataOktaApp#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/data-sources/app#id DataOktaApp#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -929,7 +929,7 @@ and have the unitended result of associating the wrong app with this data
 source. See:
 https://developer.okta.com/docs/reference/api/apps/#list-applications
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/data-sources/app#label DataOktaApp#label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/data-sources/app#label DataOktaApp#label}
 
 ---
 
@@ -946,7 +946,7 @@ Label prefix of the app to retrieve, conflicts with label and id.
 This will tell the
 provider to do a starts with query as opposed to an equals query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/data-sources/app#label_prefix DataOktaApp#label_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/data-sources/app#label_prefix DataOktaApp#label_prefix}
 
 ---
 
@@ -960,7 +960,7 @@ SkipGroups interface{}
 
 Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/data-sources/app#skip_groups DataOktaApp#skip_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/data-sources/app#skip_groups DataOktaApp#skip_groups}
 
 ---
 
@@ -974,7 +974,7 @@ SkipUsers interface{}
 
 Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/data-sources/app#skip_users DataOktaApp#skip_users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/data-sources/app#skip_users DataOktaApp#skip_users}
 
 ---
 

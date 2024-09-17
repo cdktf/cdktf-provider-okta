@@ -4,7 +4,7 @@
 
 ### IdpSocial <a name="IdpSocial" id="@cdktf/provider-okta.idpSocial.IdpSocial"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/idp_social okta_idp_social}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/idp_social okta_idp_social}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.idpSocial.IdpSocial.Initializer"></a>
 
@@ -79,7 +79,7 @@ IdpSocial.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.groupsAssignment">groupsAssignment</a></code> | <code>java.util.List<java.lang.String></code> | List of Okta Group IDs to add an IdP user as a member with the `ASSIGN` `groups_action`. |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.groupsAttribute">groupsAttribute</a></code> | <code>java.lang.String</code> | IdP user profile attribute name (case-insensitive) for an array value that contains group memberships. |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.groupsFilter">groupsFilter</a></code> | <code>java.util.List<java.lang.String></code> | Whitelist of Okta Group identifiers that are allowed for the `APPEND` or `SYNC` `groups_action`. |
-| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/idp_social#id IdpSocial#id}. |
+| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/idp_social#id IdpSocial#id}. |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.issuerMode">issuerMode</a></code> | <code>java.lang.String</code> | Indicates whether Okta uses the original Okta org domain URL, or a custom domain URL. |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.maxClockSkew">maxClockSkew</a></code> | <code>java.lang.Number</code> | Maximum allowable clock-skew when processing messages from the IdP. |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.profileMaster">profileMaster</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Determines if the IdP should act as a source of truth for user profile attributes. |
@@ -159,7 +159,7 @@ Must be unique amongst siblings in the same scope
 
 Name of the IdP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/idp_social#name IdpSocial#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/idp_social#name IdpSocial#name}
 
 ---
 
@@ -169,7 +169,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 The scopes of the IdP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/idp_social#scopes IdpSocial#scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/idp_social#scopes IdpSocial#scopes}
 
 ---
 
@@ -179,7 +179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Identity Provider Types: https://developer.okta.com/docs/reference/api/idps/#identity-provider-type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/idp_social#type IdpSocial#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/idp_social#type IdpSocial#type}
 
 ---
 
@@ -189,7 +189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Specifies the account linking action for an IdP user. Default: `AUTO`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/idp_social#account_link_action IdpSocial#account_link_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/idp_social#account_link_action IdpSocial#account_link_action}
 
 ---
 
@@ -199,7 +199,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Group memberships to determine link candidates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/idp_social#account_link_group_include IdpSocial#account_link_group_include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/idp_social#account_link_group_include IdpSocial#account_link_group_include}
 
 ---
 
@@ -209,7 +209,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 The Key ID that you obtained from Apple when you created the private key for the client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/idp_social#apple_kid IdpSocial#apple_kid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/idp_social#apple_kid IdpSocial#apple_kid}
 
 ---
 
@@ -221,7 +221,7 @@ The Key ID that you obtained from Apple when you created the private key for the
 
 PrivateKey is required when resource is first created. For all consecutive updates, it can be empty/omitted and keeps the existing value if it is empty/omitted. PrivateKey isn't returned when importing this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/idp_social#apple_private_key IdpSocial#apple_private_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/idp_social#apple_private_key IdpSocial#apple_private_key}
 
 ---
 
@@ -231,7 +231,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 The Team ID associated with your Apple developer account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/idp_social#apple_team_id IdpSocial#apple_team_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/idp_social#apple_team_id IdpSocial#apple_team_id}
 
 ---
 
@@ -241,7 +241,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Unique identifier issued by AS for the Okta IdP instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/idp_social#client_id IdpSocial#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/idp_social#client_id IdpSocial#client_id}
 
 ---
 
@@ -251,7 +251,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Client secret issued by AS for the Okta IdP instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/idp_social#client_secret IdpSocial#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/idp_social#client_secret IdpSocial#client_secret}
 
 ---
 
@@ -261,7 +261,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Action for a previously deprovisioned IdP user during authentication. Can be `NONE` or `REACTIVATE`. Default: `NONE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/idp_social#deprovisioned_action IdpSocial#deprovisioned_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/idp_social#deprovisioned_action IdpSocial#deprovisioned_action}
 
 ---
 
@@ -271,7 +271,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Provisioning action for IdP user's group memberships. It can be `NONE`, `SYNC`, `APPEND`, or `ASSIGN`. Default: `NONE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/idp_social#groups_action IdpSocial#groups_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/idp_social#groups_action IdpSocial#groups_action}
 
 ---
 
@@ -281,7 +281,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 List of Okta Group IDs to add an IdP user as a member with the `ASSIGN` `groups_action`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/idp_social#groups_assignment IdpSocial#groups_assignment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/idp_social#groups_assignment IdpSocial#groups_assignment}
 
 ---
 
@@ -291,7 +291,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 IdP user profile attribute name (case-insensitive) for an array value that contains group memberships.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/idp_social#groups_attribute IdpSocial#groups_attribute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/idp_social#groups_attribute IdpSocial#groups_attribute}
 
 ---
 
@@ -301,7 +301,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Whitelist of Okta Group identifiers that are allowed for the `APPEND` or `SYNC` `groups_action`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/idp_social#groups_filter IdpSocial#groups_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/idp_social#groups_filter IdpSocial#groups_filter}
 
 ---
 
@@ -309,7 +309,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/idp_social#id IdpSocial#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/idp_social#id IdpSocial#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -324,7 +324,7 @@ Indicates whether Okta uses the original Okta org domain URL, or a custom domain
 
 It can be `ORG_URL` or `CUSTOM_URL`. Default: `ORG_URL`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/idp_social#issuer_mode IdpSocial#issuer_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/idp_social#issuer_mode IdpSocial#issuer_mode}
 
 ---
 
@@ -334,7 +334,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Maximum allowable clock-skew when processing messages from the IdP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/idp_social#max_clock_skew IdpSocial#max_clock_skew}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/idp_social#max_clock_skew IdpSocial#max_clock_skew}
 
 ---
 
@@ -344,7 +344,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Determines if the IdP should act as a source of truth for user profile attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/idp_social#profile_master IdpSocial#profile_master}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/idp_social#profile_master IdpSocial#profile_master}
 
 ---
 
@@ -354,7 +354,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 The type of protocol to use. It can be `OIDC` or `OAUTH2`. Default: `OAUTH2`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/idp_social#protocol_type IdpSocial#protocol_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/idp_social#protocol_type IdpSocial#protocol_type}
 
 ---
 
@@ -364,7 +364,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Provisioning action for an IdP user during authentication. Default: `AUTO`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/idp_social#provisioning_action IdpSocial#provisioning_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/idp_social#provisioning_action IdpSocial#provisioning_action}
 
 ---
 
@@ -374,7 +374,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Default to `ACTIVE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/idp_social#status IdpSocial#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/idp_social#status IdpSocial#status}
 
 ---
 
@@ -384,7 +384,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Okta user profile attribute for matching transformed IdP username. Only for matchType `CUSTOM_ATTRIBUTE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/idp_social#subject_match_attribute IdpSocial#subject_match_attribute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/idp_social#subject_match_attribute IdpSocial#subject_match_attribute}
 
 ---
 
@@ -396,7 +396,7 @@ Determines the Okta user profile attribute match conditions for account linking 
 
 By default, it is set to `USERNAME`. It can be set to `USERNAME`, `EMAIL`, `USERNAME_OR_EMAIL` or `CUSTOM_ATTRIBUTE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/idp_social#subject_match_type IdpSocial#subject_match_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/idp_social#subject_match_type IdpSocial#subject_match_type}
 
 ---
 
@@ -406,7 +406,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Action for a previously suspended IdP user during authentication. Can be `NONE` or `REACTIVATE`. Default: `NONE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/idp_social#suspended_action IdpSocial#suspended_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/idp_social#suspended_action IdpSocial#suspended_action}
 
 ---
 
@@ -416,7 +416,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Okta EL Expression to generate or transform a unique username for the IdP user. Default: `idpuser.email`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/idp_social#username_template IdpSocial#username_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/idp_social#username_template IdpSocial#username_template}
 
 ---
 
@@ -1004,7 +1004,7 @@ The construct id used in the generated config for the IdpSocial to import.
 
 The id of the existing IdpSocial that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/idp_social#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/idp_social#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1945,7 +1945,7 @@ IdpSocialConfig.builder()
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.groupsAssignment">groupsAssignment</a></code> | <code>java.util.List<java.lang.String></code> | List of Okta Group IDs to add an IdP user as a member with the `ASSIGN` `groups_action`. |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.groupsAttribute">groupsAttribute</a></code> | <code>java.lang.String</code> | IdP user profile attribute name (case-insensitive) for an array value that contains group memberships. |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.groupsFilter">groupsFilter</a></code> | <code>java.util.List<java.lang.String></code> | Whitelist of Okta Group identifiers that are allowed for the `APPEND` or `SYNC` `groups_action`. |
-| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/idp_social#id IdpSocial#id}. |
+| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/idp_social#id IdpSocial#id}. |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.issuerMode">issuerMode</a></code> | <code>java.lang.String</code> | Indicates whether Okta uses the original Okta org domain URL, or a custom domain URL. |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.maxClockSkew">maxClockSkew</a></code> | <code>java.lang.Number</code> | Maximum allowable clock-skew when processing messages from the IdP. |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.profileMaster">profileMaster</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Determines if the IdP should act as a source of truth for user profile attributes. |
@@ -2039,7 +2039,7 @@ public java.lang.String getName();
 
 Name of the IdP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/idp_social#name IdpSocial#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/idp_social#name IdpSocial#name}
 
 ---
 
@@ -2053,7 +2053,7 @@ public java.util.List<java.lang.String> getScopes();
 
 The scopes of the IdP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/idp_social#scopes IdpSocial#scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/idp_social#scopes IdpSocial#scopes}
 
 ---
 
@@ -2067,7 +2067,7 @@ public java.lang.String getType();
 
 Identity Provider Types: https://developer.okta.com/docs/reference/api/idps/#identity-provider-type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/idp_social#type IdpSocial#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/idp_social#type IdpSocial#type}
 
 ---
 
@@ -2081,7 +2081,7 @@ public java.lang.String getAccountLinkAction();
 
 Specifies the account linking action for an IdP user. Default: `AUTO`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/idp_social#account_link_action IdpSocial#account_link_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/idp_social#account_link_action IdpSocial#account_link_action}
 
 ---
 
@@ -2095,7 +2095,7 @@ public java.util.List<java.lang.String> getAccountLinkGroupInclude();
 
 Group memberships to determine link candidates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/idp_social#account_link_group_include IdpSocial#account_link_group_include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/idp_social#account_link_group_include IdpSocial#account_link_group_include}
 
 ---
 
@@ -2109,7 +2109,7 @@ public java.lang.String getAppleKid();
 
 The Key ID that you obtained from Apple when you created the private key for the client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/idp_social#apple_kid IdpSocial#apple_kid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/idp_social#apple_kid IdpSocial#apple_kid}
 
 ---
 
@@ -2125,7 +2125,7 @@ The Key ID that you obtained from Apple when you created the private key for the
 
 PrivateKey is required when resource is first created. For all consecutive updates, it can be empty/omitted and keeps the existing value if it is empty/omitted. PrivateKey isn't returned when importing this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/idp_social#apple_private_key IdpSocial#apple_private_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/idp_social#apple_private_key IdpSocial#apple_private_key}
 
 ---
 
@@ -2139,7 +2139,7 @@ public java.lang.String getAppleTeamId();
 
 The Team ID associated with your Apple developer account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/idp_social#apple_team_id IdpSocial#apple_team_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/idp_social#apple_team_id IdpSocial#apple_team_id}
 
 ---
 
@@ -2153,7 +2153,7 @@ public java.lang.String getClientId();
 
 Unique identifier issued by AS for the Okta IdP instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/idp_social#client_id IdpSocial#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/idp_social#client_id IdpSocial#client_id}
 
 ---
 
@@ -2167,7 +2167,7 @@ public java.lang.String getClientSecret();
 
 Client secret issued by AS for the Okta IdP instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/idp_social#client_secret IdpSocial#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/idp_social#client_secret IdpSocial#client_secret}
 
 ---
 
@@ -2181,7 +2181,7 @@ public java.lang.String getDeprovisionedAction();
 
 Action for a previously deprovisioned IdP user during authentication. Can be `NONE` or `REACTIVATE`. Default: `NONE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/idp_social#deprovisioned_action IdpSocial#deprovisioned_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/idp_social#deprovisioned_action IdpSocial#deprovisioned_action}
 
 ---
 
@@ -2195,7 +2195,7 @@ public java.lang.String getGroupsAction();
 
 Provisioning action for IdP user's group memberships. It can be `NONE`, `SYNC`, `APPEND`, or `ASSIGN`. Default: `NONE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/idp_social#groups_action IdpSocial#groups_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/idp_social#groups_action IdpSocial#groups_action}
 
 ---
 
@@ -2209,7 +2209,7 @@ public java.util.List<java.lang.String> getGroupsAssignment();
 
 List of Okta Group IDs to add an IdP user as a member with the `ASSIGN` `groups_action`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/idp_social#groups_assignment IdpSocial#groups_assignment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/idp_social#groups_assignment IdpSocial#groups_assignment}
 
 ---
 
@@ -2223,7 +2223,7 @@ public java.lang.String getGroupsAttribute();
 
 IdP user profile attribute name (case-insensitive) for an array value that contains group memberships.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/idp_social#groups_attribute IdpSocial#groups_attribute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/idp_social#groups_attribute IdpSocial#groups_attribute}
 
 ---
 
@@ -2237,7 +2237,7 @@ public java.util.List<java.lang.String> getGroupsFilter();
 
 Whitelist of Okta Group identifiers that are allowed for the `APPEND` or `SYNC` `groups_action`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/idp_social#groups_filter IdpSocial#groups_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/idp_social#groups_filter IdpSocial#groups_filter}
 
 ---
 
@@ -2249,7 +2249,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/idp_social#id IdpSocial#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/idp_social#id IdpSocial#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2268,7 +2268,7 @@ Indicates whether Okta uses the original Okta org domain URL, or a custom domain
 
 It can be `ORG_URL` or `CUSTOM_URL`. Default: `ORG_URL`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/idp_social#issuer_mode IdpSocial#issuer_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/idp_social#issuer_mode IdpSocial#issuer_mode}
 
 ---
 
@@ -2282,7 +2282,7 @@ public java.lang.Number getMaxClockSkew();
 
 Maximum allowable clock-skew when processing messages from the IdP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/idp_social#max_clock_skew IdpSocial#max_clock_skew}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/idp_social#max_clock_skew IdpSocial#max_clock_skew}
 
 ---
 
@@ -2296,7 +2296,7 @@ public java.lang.Object getProfileMaster();
 
 Determines if the IdP should act as a source of truth for user profile attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/idp_social#profile_master IdpSocial#profile_master}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/idp_social#profile_master IdpSocial#profile_master}
 
 ---
 
@@ -2310,7 +2310,7 @@ public java.lang.String getProtocolType();
 
 The type of protocol to use. It can be `OIDC` or `OAUTH2`. Default: `OAUTH2`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/idp_social#protocol_type IdpSocial#protocol_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/idp_social#protocol_type IdpSocial#protocol_type}
 
 ---
 
@@ -2324,7 +2324,7 @@ public java.lang.String getProvisioningAction();
 
 Provisioning action for an IdP user during authentication. Default: `AUTO`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/idp_social#provisioning_action IdpSocial#provisioning_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/idp_social#provisioning_action IdpSocial#provisioning_action}
 
 ---
 
@@ -2338,7 +2338,7 @@ public java.lang.String getStatus();
 
 Default to `ACTIVE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/idp_social#status IdpSocial#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/idp_social#status IdpSocial#status}
 
 ---
 
@@ -2352,7 +2352,7 @@ public java.lang.String getSubjectMatchAttribute();
 
 Okta user profile attribute for matching transformed IdP username. Only for matchType `CUSTOM_ATTRIBUTE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/idp_social#subject_match_attribute IdpSocial#subject_match_attribute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/idp_social#subject_match_attribute IdpSocial#subject_match_attribute}
 
 ---
 
@@ -2368,7 +2368,7 @@ Determines the Okta user profile attribute match conditions for account linking 
 
 By default, it is set to `USERNAME`. It can be set to `USERNAME`, `EMAIL`, `USERNAME_OR_EMAIL` or `CUSTOM_ATTRIBUTE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/idp_social#subject_match_type IdpSocial#subject_match_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/idp_social#subject_match_type IdpSocial#subject_match_type}
 
 ---
 
@@ -2382,7 +2382,7 @@ public java.lang.String getSuspendedAction();
 
 Action for a previously suspended IdP user during authentication. Can be `NONE` or `REACTIVATE`. Default: `NONE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/idp_social#suspended_action IdpSocial#suspended_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/idp_social#suspended_action IdpSocial#suspended_action}
 
 ---
 
@@ -2396,7 +2396,7 @@ public java.lang.String getUsernameTemplate();
 
 Okta EL Expression to generate or transform a unique username for the IdP user. Default: `idpuser.email`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/idp_social#username_template IdpSocial#username_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/idp_social#username_template IdpSocial#username_template}
 
 ---
 

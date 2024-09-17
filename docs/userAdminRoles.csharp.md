@@ -4,7 +4,7 @@
 
 ### UserAdminRoles <a name="UserAdminRoles" id="@cdktf/provider-okta.userAdminRoles.UserAdminRoles"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/user_admin_roles okta_user_admin_roles}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/user_admin_roles okta_user_admin_roles}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.userAdminRoles.UserAdminRoles.Initializer"></a>
 
@@ -481,7 +481,7 @@ The construct id used in the generated config for the UserAdminRoles to import.
 
 The id of the existing UserAdminRoles that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/user_admin_roles#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/user_admin_roles#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -800,7 +800,7 @@ new UserAdminRolesConfig {
 | <code><a href="#@cdktf/provider-okta.userAdminRoles.UserAdminRolesConfig.property.adminRoles">AdminRoles</a></code> | <code>string[]</code> | The list of Okta user admin roles, e.g. `['APP_ADMIN', 'USER_ADMIN']` See [API Docs](https://developer.okta.com/docs/reference/api/roles/#role-types). |
 | <code><a href="#@cdktf/provider-okta.userAdminRoles.UserAdminRolesConfig.property.userId">UserId</a></code> | <code>string</code> | ID of a Okta User. |
 | <code><a href="#@cdktf/provider-okta.userAdminRoles.UserAdminRolesConfig.property.disableNotifications">DisableNotifications</a></code> | <code>object</code> | When this setting is enabled, the admins won't receive any of the default Okta administrator emails. |
-| <code><a href="#@cdktf/provider-okta.userAdminRoles.UserAdminRolesConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/user_admin_roles#id UserAdminRoles#id}. |
+| <code><a href="#@cdktf/provider-okta.userAdminRoles.UserAdminRolesConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/user_admin_roles#id UserAdminRoles#id}. |
 
 ---
 
@@ -884,7 +884,7 @@ public string[] AdminRoles { get; set; }
 
 The list of Okta user admin roles, e.g. `['APP_ADMIN', 'USER_ADMIN']` See [API Docs](https://developer.okta.com/docs/reference/api/roles/#role-types).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/user_admin_roles#admin_roles UserAdminRoles#admin_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/user_admin_roles#admin_roles UserAdminRoles#admin_roles}
 
 ---
 
@@ -898,7 +898,7 @@ public string UserId { get; set; }
 
 ID of a Okta User.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/user_admin_roles#user_id UserAdminRoles#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/user_admin_roles#user_id UserAdminRoles#user_id}
 
 ---
 
@@ -914,7 +914,7 @@ When this setting is enabled, the admins won't receive any of the default Okta a
 
 These admins also won't have access to contact Okta Support and open support cases on behalf of your org.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/user_admin_roles#disable_notifications UserAdminRoles#disable_notifications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/user_admin_roles#disable_notifications UserAdminRoles#disable_notifications}
 
 ---
 
@@ -926,7 +926,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/user_admin_roles#id UserAdminRoles#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/user_admin_roles#id UserAdminRoles#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

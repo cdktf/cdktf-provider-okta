@@ -4,12 +4,12 @@
 
 ### TrustedServer <a name="TrustedServer" id="@cdktf/provider-okta.trustedServer.TrustedServer"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/trusted_server okta_trusted_server}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/trusted_server okta_trusted_server}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.trustedServer.TrustedServer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/trustedserver"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/trustedserver"
 
 trustedserver.NewTrustedServer(scope Construct, id *string, config TrustedServerConfig) TrustedServer
 ```
@@ -378,7 +378,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.trustedServer.TrustedServer.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/trustedserver"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/trustedserver"
 
 trustedserver.TrustedServer_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.trustedServer.TrustedServer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/trustedserver"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/trustedserver"
 
 trustedserver.TrustedServer_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ trustedserver.TrustedServer_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.trustedServer.TrustedServer.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/trustedserver"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/trustedserver"
 
 trustedserver.TrustedServer_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ trustedserver.TrustedServer_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.trustedServer.TrustedServer.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/trustedserver"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/trustedserver"
 
 trustedserver.TrustedServer_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -467,7 +467,7 @@ The construct id used in the generated config for the TrustedServer to import.
 
 The id of the existing TrustedServer that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/trusted_server#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/trusted_server#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -722,7 +722,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.trustedServer.TrustedServerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/trustedserver"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/trustedserver"
 
 &trustedserver.TrustedServerConfig {
 	Connection: interface{},
@@ -833,7 +833,7 @@ AuthServerId *string
 
 Authorization server ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/trusted_server#auth_server_id TrustedServer#auth_server_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/trusted_server#auth_server_id TrustedServer#auth_server_id}
 
 ---
 
@@ -847,7 +847,7 @@ Trusted *[]*string
 
 A list of the authorization server IDs user want to trust.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/trusted_server#trusted TrustedServer#trusted}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/trusted_server#trusted TrustedServer#trusted}
 
 ---
 
