@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.0/doc
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appSecurePasswordStore.AppSecurePasswordStore.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/appsecurepasswordstore"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/appsecurepasswordstore"
 
 appsecurepasswordstore.NewAppSecurePasswordStore(scope Construct, id *string, config AppSecurePasswordStoreConfig) AppSecurePasswordStore
 ```
@@ -580,7 +580,7 @@ func ResetUserNameTemplateType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.appSecurePasswordStore.AppSecurePasswordStore.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/appsecurepasswordstore"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/appsecurepasswordstore"
 
 appsecurepasswordstore.AppSecurePasswordStore_IsConstruct(x interface{}) *bool
 ```
@@ -612,7 +612,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.appSecurePasswordStore.AppSecurePasswordStore.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/appsecurepasswordstore"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/appsecurepasswordstore"
 
 appsecurepasswordstore.AppSecurePasswordStore_IsTerraformElement(x interface{}) *bool
 ```
@@ -626,7 +626,7 @@ appsecurepasswordstore.AppSecurePasswordStore_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.appSecurePasswordStore.AppSecurePasswordStore.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/appsecurepasswordstore"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/appsecurepasswordstore"
 
 appsecurepasswordstore.AppSecurePasswordStore_IsTerraformResource(x interface{}) *bool
 ```
@@ -640,7 +640,7 @@ appsecurepasswordstore.AppSecurePasswordStore_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.appSecurePasswordStore.AppSecurePasswordStore.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/appsecurepasswordstore"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/appsecurepasswordstore"
 
 appsecurepasswordstore.AppSecurePasswordStore_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1584,7 +1584,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.appSecurePasswordStore.AppSecurePasswordStoreConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/appsecurepasswordstore"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/appsecurepasswordstore"
 
 &appsecurepasswordstore.AppSecurePasswordStoreConfig {
 	Connection: interface{},
@@ -1620,7 +1620,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/appsecurepasswordstore"
 	SharedPassword: *string,
 	SharedUsername: *string,
 	Status: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-okta-go/okta.appSecurePasswordStore.AppSecurePasswordStoreTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-okta-go/okta/v13.appSecurePasswordStore.AppSecurePasswordStoreTimeouts,
 	UserNameTemplate: *string,
 	UserNameTemplatePushStatus: *string,
 	UserNameTemplateSuffix: *string,
@@ -2185,7 +2185,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.appSecurePasswordStore.AppSecurePasswordStoreTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/appsecurepasswordstore"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/appsecurepasswordstore"
 
 &appsecurepasswordstore.AppSecurePasswordStoreTimeouts {
 	Create: *string,
@@ -2247,7 +2247,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appSecurePasswordStore.AppSecurePasswordStoreTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/appsecurepasswordstore"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/appsecurepasswordstore"
 
 appsecurepasswordstore.NewAppSecurePasswordStoreTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AppSecurePasswordStoreTimeoutsOutputReference
 ```

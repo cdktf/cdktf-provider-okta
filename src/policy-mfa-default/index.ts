@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/policy_mfa_default
 // generated from terraform resource schema
 
