@@ -101,6 +101,7 @@ The following submodules are available:
 - [factorTotp](./factorTotp.java.md)
 - [group](./group.java.md)
 - [groupMemberships](./groupMemberships.java.md)
+- [groupOwner](./groupOwner.java.md)
 - [groupRole](./groupRole.java.md)
 - [groupRule](./groupRule.java.md)
 - [groupSchemaProperty](./groupSchemaProperty.java.md)

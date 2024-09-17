@@ -101,6 +101,7 @@ The following submodules are available:
 - [factorTotp](./factorTotp.go.md)
 - [group](./group.go.md)
 - [groupMemberships](./groupMemberships.go.md)
+- [groupOwner](./groupOwner.go.md)
 - [groupRole](./groupRole.go.md)
 - [groupRule](./groupRule.go.md)
 - [groupSchemaProperty](./groupSchemaProperty.go.md)

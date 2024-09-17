@@ -56,6 +56,7 @@ Object.defineProperty(exports, 'factor', { get: function () { return require('./
 Object.defineProperty(exports, 'factorTotp', { get: function () { return require('./factor-totp'); } });
 Object.defineProperty(exports, 'group', { get: function () { return require('./group'); } });
 Object.defineProperty(exports, 'groupMemberships', { get: function () { return require('./group-memberships'); } });
+Object.defineProperty(exports, 'groupOwner', { get: function () { return require('./group-owner'); } });
 Object.defineProperty(exports, 'groupRole', { get: function () { return require('./group-role'); } });
 Object.defineProperty(exports, 'groupRule', { get: function () { return require('./group-rule'); } });
 Object.defineProperty(exports, 'groupSchemaProperty', { get: function () { return require('./group-schema-property'); } });

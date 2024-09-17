@@ -101,6 +101,7 @@ The following submodules are available:
 - [factorTotp](./factorTotp.csharp.md)
 - [group](./group.csharp.md)
 - [groupMemberships](./groupMemberships.csharp.md)
+- [groupOwner](./groupOwner.csharp.md)
 - [groupRole](./groupRole.csharp.md)
 - [groupRule](./groupRule.csharp.md)
 - [groupSchemaProperty](./groupSchemaProperty.csharp.md)

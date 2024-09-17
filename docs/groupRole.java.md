@@ -4,7 +4,7 @@
 
 ### GroupRole <a name="GroupRole" id="@cdktf/provider-okta.groupRole.GroupRole"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/group_role okta_group_role}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/group_role okta_group_role}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.groupRole.GroupRole.Initializer"></a>
 
@@ -28,6 +28,8 @@ GroupRole.Builder.create(Construct scope, java.lang.String id)
 //  .disableNotifications(java.lang.Boolean)
 //  .disableNotifications(IResolvable)
 //  .id(java.lang.String)
+//  .resourceSetId(java.lang.String)
+//  .roleId(java.lang.String)
 //  .targetAppList(java.util.List<java.lang.String>)
 //  .targetGroupList(java.util.List<java.lang.String>)
     .build();
@@ -47,7 +49,9 @@ GroupRole.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-okta.groupRole.GroupRole.Initializer.parameter.groupId">groupId</a></code> | <code>java.lang.String</code> | ID of group to attach admin roles to. |
 | <code><a href="#@cdktf/provider-okta.groupRole.GroupRole.Initializer.parameter.roleType">roleType</a></code> | <code>java.lang.String</code> | Admin role assigned to the group. |
 | <code><a href="#@cdktf/provider-okta.groupRole.GroupRole.Initializer.parameter.disableNotifications">disableNotifications</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | When this setting is enabled, the admins won't receive any of the default Okta administrator emails. |
-| <code><a href="#@cdktf/provider-okta.groupRole.GroupRole.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/group_role#id GroupRole#id}. |
+| <code><a href="#@cdktf/provider-okta.groupRole.GroupRole.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/group_role#id GroupRole#id}. |
+| <code><a href="#@cdktf/provider-okta.groupRole.GroupRole.Initializer.parameter.resourceSetId">resourceSetId</a></code> | <code>java.lang.String</code> | Resource Set ID. Required for role_type = `CUSTOM`. |
+| <code><a href="#@cdktf/provider-okta.groupRole.GroupRole.Initializer.parameter.roleId">roleId</a></code> | <code>java.lang.String</code> | Role ID. Required for role_type = `CUSTOM`. |
 | <code><a href="#@cdktf/provider-okta.groupRole.GroupRole.Initializer.parameter.targetAppList">targetAppList</a></code> | <code>java.util.List<java.lang.String></code> | A list of app names (name represents set of app instances, like 'salesforce' or 'facebook'), or a combination of app name and app instance ID (like 'facebook.0oapsqQ6dv19pqyEo0g3') you would like as the targets of the admin role. - Only supported when used with the role type `APP_ADMIN`. |
 | <code><a href="#@cdktf/provider-okta.groupRole.GroupRole.Initializer.parameter.targetGroupList">targetGroupList</a></code> | <code>java.util.List<java.lang.String></code> | A list of group IDs you would like as the targets of the admin role. |
 
@@ -119,7 +123,7 @@ Must be unique amongst siblings in the same scope
 
 ID of group to attach admin roles to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/group_role#group_id GroupRole#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/group_role#group_id GroupRole#group_id}
 
 ---
 
@@ -144,7 +148,7 @@ It can be any one of the following values:
 . See [API Docs](https://developer.okta.com/docs/reference/api/roles/#role-types).
 - "USER_ADMIN" is the Group Administrator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/group_role#role_type GroupRole#role_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/group_role#role_type GroupRole#role_type}
 
 ---
 
@@ -156,7 +160,7 @@ When this setting is enabled, the admins won't receive any of the default Okta a
 
 These admins also won't have access to contact Okta Support and open support cases on behalf of your org.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/group_role#disable_notifications GroupRole#disable_notifications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/group_role#disable_notifications GroupRole#disable_notifications}
 
 ---
 
@@ -164,10 +168,30 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/group_role#id GroupRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/group_role#id GroupRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `resourceSetId`<sup>Optional</sup> <a name="resourceSetId" id="@cdktf/provider-okta.groupRole.GroupRole.Initializer.parameter.resourceSetId"></a>
+
+- *Type:* java.lang.String
+
+Resource Set ID. Required for role_type = `CUSTOM`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/group_role#resource_set_id GroupRole#resource_set_id}
+
+---
+
+##### `roleId`<sup>Optional</sup> <a name="roleId" id="@cdktf/provider-okta.groupRole.GroupRole.Initializer.parameter.roleId"></a>
+
+- *Type:* java.lang.String
+
+Role ID. Required for role_type = `CUSTOM`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/group_role#role_id GroupRole#role_id}
 
 ---
 
@@ -177,7 +201,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 A list of app names (name represents set of app instances, like 'salesforce' or 'facebook'), or a combination of app name and app instance ID (like 'facebook.0oapsqQ6dv19pqyEo0g3') you would like as the targets of the admin role. - Only supported when used with the role type `APP_ADMIN`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/group_role#target_app_list GroupRole#target_app_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/group_role#target_app_list GroupRole#target_app_list}
 
 ---
 
@@ -189,7 +213,7 @@ A list of group IDs you would like as the targets of the admin role.
 
 * Only supported when used with the role types: `GROUP_MEMBERSHIP_ADMIN`, `HELP_DESK_ADMIN`, or `USER_ADMIN`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/group_role#target_group_list GroupRole#target_group_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/group_role#target_group_list GroupRole#target_group_list}
 
 ---
 
@@ -222,6 +246,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 | <code><a href="#@cdktf/provider-okta.groupRole.GroupRole.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-okta.groupRole.GroupRole.resetDisableNotifications">resetDisableNotifications</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRole.GroupRole.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.groupRole.GroupRole.resetResourceSetId">resetResourceSetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.groupRole.GroupRole.resetRoleId">resetRoleId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRole.GroupRole.resetTargetAppList">resetTargetAppList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRole.GroupRole.resetTargetGroupList">resetTargetGroupList</a></code> | *No description.* |
 
@@ -529,6 +555,18 @@ public void resetDisableNotifications()
 public void resetId()
 ```
 
+##### `resetResourceSetId` <a name="resetResourceSetId" id="@cdktf/provider-okta.groupRole.GroupRole.resetResourceSetId"></a>
+
+```java
+public void resetResourceSetId()
+```
+
+##### `resetRoleId` <a name="resetRoleId" id="@cdktf/provider-okta.groupRole.GroupRole.resetRoleId"></a>
+
+```java
+public void resetRoleId()
+```
+
 ##### `resetTargetAppList` <a name="resetTargetAppList" id="@cdktf/provider-okta.groupRole.GroupRole.resetTargetAppList"></a>
 
 ```java
@@ -644,7 +682,7 @@ The construct id used in the generated config for the GroupRole to import.
 
 The id of the existing GroupRole that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/group_role#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/group_role#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -677,12 +715,16 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.10.0/doc
 | <code><a href="#@cdktf/provider-okta.groupRole.GroupRole.property.disableNotificationsInput">disableNotificationsInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRole.GroupRole.property.groupIdInput">groupIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRole.GroupRole.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.groupRole.GroupRole.property.resourceSetIdInput">resourceSetIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.groupRole.GroupRole.property.roleIdInput">roleIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRole.GroupRole.property.roleTypeInput">roleTypeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRole.GroupRole.property.targetAppListInput">targetAppListInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRole.GroupRole.property.targetGroupListInput">targetGroupListInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRole.GroupRole.property.disableNotifications">disableNotifications</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRole.GroupRole.property.groupId">groupId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRole.GroupRole.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.groupRole.GroupRole.property.resourceSetId">resourceSetId</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.groupRole.GroupRole.property.roleId">roleId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRole.GroupRole.property.roleType">roleType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRole.GroupRole.property.targetAppList">targetAppList</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRole.GroupRole.property.targetGroupList">targetGroupList</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
@@ -861,6 +903,26 @@ public java.lang.String getIdInput();
 
 ---
 
+##### `resourceSetIdInput`<sup>Optional</sup> <a name="resourceSetIdInput" id="@cdktf/provider-okta.groupRole.GroupRole.property.resourceSetIdInput"></a>
+
+```java
+public java.lang.String getResourceSetIdInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `roleIdInput`<sup>Optional</sup> <a name="roleIdInput" id="@cdktf/provider-okta.groupRole.GroupRole.property.roleIdInput"></a>
+
+```java
+public java.lang.String getRoleIdInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `roleTypeInput`<sup>Optional</sup> <a name="roleTypeInput" id="@cdktf/provider-okta.groupRole.GroupRole.property.roleTypeInput"></a>
 
 ```java
@@ -915,6 +977,26 @@ public java.lang.String getGroupId();
 
 ```java
 public java.lang.String getId();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `resourceSetId`<sup>Required</sup> <a name="resourceSetId" id="@cdktf/provider-okta.groupRole.GroupRole.property.resourceSetId"></a>
+
+```java
+public java.lang.String getResourceSetId();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `roleId`<sup>Required</sup> <a name="roleId" id="@cdktf/provider-okta.groupRole.GroupRole.property.roleId"></a>
+
+```java
+public java.lang.String getRoleId();
 ```
 
 - *Type:* java.lang.String
@@ -995,6 +1077,8 @@ GroupRoleConfig.builder()
 //  .disableNotifications(java.lang.Boolean)
 //  .disableNotifications(IResolvable)
 //  .id(java.lang.String)
+//  .resourceSetId(java.lang.String)
+//  .roleId(java.lang.String)
 //  .targetAppList(java.util.List<java.lang.String>)
 //  .targetGroupList(java.util.List<java.lang.String>)
     .build();
@@ -1014,7 +1098,9 @@ GroupRoleConfig.builder()
 | <code><a href="#@cdktf/provider-okta.groupRole.GroupRoleConfig.property.groupId">groupId</a></code> | <code>java.lang.String</code> | ID of group to attach admin roles to. |
 | <code><a href="#@cdktf/provider-okta.groupRole.GroupRoleConfig.property.roleType">roleType</a></code> | <code>java.lang.String</code> | Admin role assigned to the group. |
 | <code><a href="#@cdktf/provider-okta.groupRole.GroupRoleConfig.property.disableNotifications">disableNotifications</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | When this setting is enabled, the admins won't receive any of the default Okta administrator emails. |
-| <code><a href="#@cdktf/provider-okta.groupRole.GroupRoleConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/group_role#id GroupRole#id}. |
+| <code><a href="#@cdktf/provider-okta.groupRole.GroupRoleConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/group_role#id GroupRole#id}. |
+| <code><a href="#@cdktf/provider-okta.groupRole.GroupRoleConfig.property.resourceSetId">resourceSetId</a></code> | <code>java.lang.String</code> | Resource Set ID. Required for role_type = `CUSTOM`. |
+| <code><a href="#@cdktf/provider-okta.groupRole.GroupRoleConfig.property.roleId">roleId</a></code> | <code>java.lang.String</code> | Role ID. Required for role_type = `CUSTOM`. |
 | <code><a href="#@cdktf/provider-okta.groupRole.GroupRoleConfig.property.targetAppList">targetAppList</a></code> | <code>java.util.List<java.lang.String></code> | A list of app names (name represents set of app instances, like 'salesforce' or 'facebook'), or a combination of app name and app instance ID (like 'facebook.0oapsqQ6dv19pqyEo0g3') you would like as the targets of the admin role. - Only supported when used with the role type `APP_ADMIN`. |
 | <code><a href="#@cdktf/provider-okta.groupRole.GroupRoleConfig.property.targetGroupList">targetGroupList</a></code> | <code>java.util.List<java.lang.String></code> | A list of group IDs you would like as the targets of the admin role. |
 
@@ -1100,7 +1186,7 @@ public java.lang.String getGroupId();
 
 ID of group to attach admin roles to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/group_role#group_id GroupRole#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/group_role#group_id GroupRole#group_id}
 
 ---
 
@@ -1129,7 +1215,7 @@ It can be any one of the following values:
 . See [API Docs](https://developer.okta.com/docs/reference/api/roles/#role-types).
 - "USER_ADMIN" is the Group Administrator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/group_role#role_type GroupRole#role_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/group_role#role_type GroupRole#role_type}
 
 ---
 
@@ -1145,7 +1231,7 @@ When this setting is enabled, the admins won't receive any of the default Okta a
 
 These admins also won't have access to contact Okta Support and open support cases on behalf of your org.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/group_role#disable_notifications GroupRole#disable_notifications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/group_role#disable_notifications GroupRole#disable_notifications}
 
 ---
 
@@ -1157,10 +1243,38 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/group_role#id GroupRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/group_role#id GroupRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `resourceSetId`<sup>Optional</sup> <a name="resourceSetId" id="@cdktf/provider-okta.groupRole.GroupRoleConfig.property.resourceSetId"></a>
+
+```java
+public java.lang.String getResourceSetId();
+```
+
+- *Type:* java.lang.String
+
+Resource Set ID. Required for role_type = `CUSTOM`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/group_role#resource_set_id GroupRole#resource_set_id}
+
+---
+
+##### `roleId`<sup>Optional</sup> <a name="roleId" id="@cdktf/provider-okta.groupRole.GroupRoleConfig.property.roleId"></a>
+
+```java
+public java.lang.String getRoleId();
+```
+
+- *Type:* java.lang.String
+
+Role ID. Required for role_type = `CUSTOM`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/group_role#role_id GroupRole#role_id}
 
 ---
 
@@ -1174,7 +1288,7 @@ public java.util.List<java.lang.String> getTargetAppList();
 
 A list of app names (name represents set of app instances, like 'salesforce' or 'facebook'), or a combination of app name and app instance ID (like 'facebook.0oapsqQ6dv19pqyEo0g3') you would like as the targets of the admin role. - Only supported when used with the role type `APP_ADMIN`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/group_role#target_app_list GroupRole#target_app_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/group_role#target_app_list GroupRole#target_app_list}
 
 ---
 
@@ -1190,7 +1304,7 @@ A list of group IDs you would like as the targets of the admin role.
 
 * Only supported when used with the role types: `GROUP_MEMBERSHIP_ADMIN`, `HELP_DESK_ADMIN`, or `USER_ADMIN`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/resources/group_role#target_group_list GroupRole#target_group_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/group_role#target_group_list GroupRole#target_group_list}
 
 ---
 

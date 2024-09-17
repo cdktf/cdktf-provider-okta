@@ -101,6 +101,7 @@ The following submodules are available:
 - [factorTotp](./factorTotp.typescript.md)
 - [group](./group.typescript.md)
 - [groupMemberships](./groupMemberships.typescript.md)
+- [groupOwner](./groupOwner.typescript.md)
 - [groupRole](./groupRole.typescript.md)
 - [groupRule](./groupRule.typescript.md)
 - [groupSchemaProperty](./groupSchemaProperty.typescript.md)

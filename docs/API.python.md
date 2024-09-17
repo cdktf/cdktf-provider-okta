@@ -101,6 +101,7 @@ The following submodules are available:
 - [factorTotp](./factorTotp.python.md)
 - [group](./group.python.md)
 - [groupMemberships](./groupMemberships.python.md)
+- [groupOwner](./groupOwner.python.md)
 - [groupRole](./groupRole.python.md)
 - [groupRule](./groupRule.python.md)
 - [groupSchemaProperty](./groupSchemaProperty.python.md)

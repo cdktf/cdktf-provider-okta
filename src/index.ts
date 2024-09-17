@@ -56,6 +56,7 @@ export * as factor from './factor';
 export * as factorTotp from './factor-totp';
 export * as group from './group';
 export * as groupMemberships from './group-memberships';
+export * as groupOwner from './group-owner';
 export * as groupRole from './group-role';
 export * as groupRule from './group-rule';
 export * as groupSchemaProperty from './group-schema-property';

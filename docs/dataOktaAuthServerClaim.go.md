@@ -4,7 +4,7 @@
 
 ### DataOktaAuthServerClaim <a name="DataOktaAuthServerClaim" id="@cdktf/provider-okta.dataOktaAuthServerClaim.DataOktaAuthServerClaim"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/data-sources/auth_server_claim okta_auth_server_claim}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/data-sources/auth_server_claim okta_auth_server_claim}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaAuthServerClaim.DataOktaAuthServerClaim.Initializer"></a>
 
@@ -379,7 +379,7 @@ The construct id used in the generated config for the DataOktaAuthServerClaim to
 
 The id of the existing DataOktaAuthServerClaim that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/data-sources/auth_server_claim#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/data-sources/auth_server_claim#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -802,7 +802,7 @@ AuthServerId *string
 
 Auth server ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/data-sources/auth_server_claim#auth_server_id DataOktaAuthServerClaim#auth_server_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/data-sources/auth_server_claim#auth_server_id DataOktaAuthServerClaim#auth_server_id}
 
 ---
 
@@ -816,7 +816,7 @@ Id *string
 
 Name of the claim. Conflicts with `name`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/data-sources/auth_server_claim#id DataOktaAuthServerClaim#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/data-sources/auth_server_claim#id DataOktaAuthServerClaim#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -833,7 +833,7 @@ Name *string
 
 Name of the claim. Conflicts with `id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.10.0/docs/data-sources/auth_server_claim#name DataOktaAuthServerClaim#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/data-sources/auth_server_claim#name DataOktaAuthServerClaim#name}
 
 ---
 
