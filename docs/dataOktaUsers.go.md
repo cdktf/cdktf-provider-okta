@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.0/doc
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaUsers.DataOktaUsers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktausers"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktausers"
 
 dataoktausers.NewDataOktaUsers(scope Construct, id *string, config DataOktaUsersConfig) DataOktaUsers
 ```
@@ -338,7 +338,7 @@ func ResetSearch()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.dataOktaUsers.DataOktaUsers.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktausers"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktausers"
 
 dataoktausers.DataOktaUsers_IsConstruct(x interface{}) *bool
 ```
@@ -370,7 +370,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.dataOktaUsers.DataOktaUsers.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktausers"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktausers"
 
 dataoktausers.DataOktaUsers_IsTerraformElement(x interface{}) *bool
 ```
@@ -384,7 +384,7 @@ dataoktausers.DataOktaUsers_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-okta.dataOktaUsers.DataOktaUsers.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktausers"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktausers"
 
 dataoktausers.DataOktaUsers_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -398,7 +398,7 @@ dataoktausers.DataOktaUsers_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.dataOktaUsers.DataOktaUsers.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktausers"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktausers"
 
 dataoktausers.DataOktaUsers_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -770,7 +770,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaUsers.DataOktaUsersConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktausers"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktausers"
 
 &dataoktausers.DataOktaUsersConfig {
 	Connection: interface{},
@@ -987,7 +987,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaUsers.DataOktaUsersSearch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktausers"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktausers"
 
 &dataoktausers.DataOktaUsersSearch {
 	Comparison: *string,
@@ -1069,7 +1069,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaUsers.DataOktaUsersUsers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktausers"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktausers"
 
 &dataoktausers.DataOktaUsersUsers {
 
@@ -1084,7 +1084,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktausers"
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaUsers.DataOktaUsersSearchList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktausers"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktausers"
 
 dataoktausers.NewDataOktaUsersSearchList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOktaUsersSearchList
 ```
@@ -1244,7 +1244,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaUsers.DataOktaUsersSearchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktausers"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktausers"
 
 dataoktausers.NewDataOktaUsersSearchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataOktaUsersSearchOutputReference
 ```
@@ -1627,7 +1627,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaUsers.DataOktaUsersUsersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktausers"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktausers"
 
 dataoktausers.NewDataOktaUsersUsersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOktaUsersUsersList
 ```
@@ -1776,7 +1776,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaUsers.DataOktaUsersUsersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktausers"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktausers"
 
 dataoktausers.NewDataOktaUsersUsersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataOktaUsersUsersOutputReference
 ```
