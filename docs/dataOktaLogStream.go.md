@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.0/doc
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaLogStream.DataOktaLogStream.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktalogstream"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktalogstream"
 
 dataoktalogstream.NewDataOktaLogStream(scope Construct, id *string, config DataOktaLogStreamConfig) DataOktaLogStream
 ```
@@ -290,7 +290,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.dataOktaLogStream.DataOktaLogStream.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktalogstream"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktalogstream"
 
 dataoktalogstream.DataOktaLogStream_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.dataOktaLogStream.DataOktaLogStream.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktalogstream"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktalogstream"
 
 dataoktalogstream.DataOktaLogStream_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ dataoktalogstream.DataOktaLogStream_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-okta.dataOktaLogStream.DataOktaLogStream.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktalogstream"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktalogstream"
 
 dataoktalogstream.DataOktaLogStream_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataoktalogstream.DataOktaLogStream_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.dataOktaLogStream.DataOktaLogStream.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktalogstream"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktalogstream"
 
 dataoktalogstream.DataOktaLogStream_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -634,7 +634,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaLogStream.DataOktaLogStreamConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktalogstream"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktalogstream"
 
 &dataoktalogstream.DataOktaLogStreamConfig {
 	Connection: interface{},
@@ -771,7 +771,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaLogStream.DataOktaLogStreamSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktalogstream"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktalogstream"
 
 &dataoktalogstream.DataOktaLogStreamSettings {
 
@@ -786,7 +786,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktalogstream"
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaLogStream.DataOktaLogStreamSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktalogstream"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktalogstream"
 
 dataoktalogstream.NewDataOktaLogStreamSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataOktaLogStreamSettingsOutputReference
 ```
