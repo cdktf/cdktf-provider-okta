@@ -4,12 +4,12 @@
 
 ### EmailCustomization <a name="EmailCustomization" id="@cdktf/provider-okta.emailCustomization.EmailCustomization"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/email_customization okta_email_customization}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/email_customization okta_email_customization}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.emailCustomization.EmailCustomization.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/emailcustomization"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/emailcustomization"
 
 emailcustomization.NewEmailCustomization(scope Construct, id *string, config EmailCustomizationConfig) EmailCustomization
 ```
@@ -413,7 +413,7 @@ func ResetSubject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.emailCustomization.EmailCustomization.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/emailcustomization"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/emailcustomization"
 
 emailcustomization.EmailCustomization_IsConstruct(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.emailCustomization.EmailCustomization.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/emailcustomization"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/emailcustomization"
 
 emailcustomization.EmailCustomization_IsTerraformElement(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ emailcustomization.EmailCustomization_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.emailCustomization.EmailCustomization.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/emailcustomization"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/emailcustomization"
 
 emailcustomization.EmailCustomization_IsTerraformResource(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ emailcustomization.EmailCustomization_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.emailCustomization.EmailCustomization.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/emailcustomization"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/emailcustomization"
 
 emailcustomization.EmailCustomization_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -502,7 +502,7 @@ The construct id used in the generated config for the EmailCustomization to impo
 
 The id of the existing EmailCustomization that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/email_customization#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/email_customization#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -878,7 +878,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.emailCustomization.EmailCustomizationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/emailcustomization"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/emailcustomization"
 
 &emailcustomization.EmailCustomizationConfig {
 	Connection: interface{},
@@ -999,7 +999,7 @@ BrandId *string
 
 Brand ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/email_customization#brand_id EmailCustomization#brand_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/email_customization#brand_id EmailCustomization#brand_id}
 
 ---
 
@@ -1013,7 +1013,7 @@ TemplateName *string
 
 Template Name - Example values: `AccountLockout`,`ADForgotPassword`,`ADForgotPasswordDenied`,`ADSelfServiceUnlock`,`ADUserActivation`,`AuthenticatorEnrolled`,`AuthenticatorReset`,`ChangeEmailConfirmation`,`EmailChallenge`,`EmailChangeConfirmation`,`EmailFactorVerification`,`ForgotPassword`,`ForgotPasswordDenied`,`IGAReviewerEndNotification`,`IGAReviewerNotification`,`IGAReviewerPendingNotification`,`IGAReviewerReassigned`,`LDAPForgotPassword`,`LDAPForgotPasswordDenied`,`LDAPSelfServiceUnlock`,`LDAPUserActivation`,`MyAccountChangeConfirmation`,`NewSignOnNotification`,`OktaVerifyActivation`,`PasswordChanged`,`PasswordResetByAdmin`,`PendingEmailChange`,`RegistrationActivation`,`RegistrationEmailVerification`,`SelfServiceUnlock`,`SelfServiceUnlockOnUnlockedAccount`,`UserActivation`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/email_customization#template_name EmailCustomization#template_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/email_customization#template_name EmailCustomization#template_name}
 
 ---
 
@@ -1027,7 +1027,7 @@ Body *string
 
 The body of the customization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/email_customization#body EmailCustomization#body}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/email_customization#body EmailCustomization#body}
 
 ---
 
@@ -1043,7 +1043,7 @@ Force is_default on the create and delete by deleting all email customizations.
 
 Comma separated string with values of 'create' or 'destroy' or both `create,destroy'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/email_customization#force_is_default EmailCustomization#force_is_default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/email_customization#force_is_default EmailCustomization#force_is_default}
 
 ---
 
@@ -1057,7 +1057,7 @@ IsDefault interface{}
 
 Whether the customization is the default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/email_customization#is_default EmailCustomization#is_default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/email_customization#is_default EmailCustomization#is_default}
 
 ---
 
@@ -1071,7 +1071,7 @@ Language *string
 
 The language supported by the customization - Example values from [supported languages](https://developer.okta.com/docs/reference/api/brands/#supported-languages).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/email_customization#language EmailCustomization#language}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/email_customization#language EmailCustomization#language}
 
 ---
 
@@ -1085,7 +1085,7 @@ Subject *string
 
 The subject of the customization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/email_customization#subject EmailCustomization#subject}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/email_customization#subject EmailCustomization#subject}
 
 ---
 

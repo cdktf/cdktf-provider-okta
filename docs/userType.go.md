@@ -4,12 +4,12 @@
 
 ### UserType <a name="UserType" id="@cdktf/provider-okta.userType.UserType"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/user_type okta_user_type}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/user_type okta_user_type}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.userType.UserType.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/usertype"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/usertype"
 
 usertype.NewUserType(scope Construct, id *string, config UserTypeConfig) UserType
 ```
@@ -385,7 +385,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.userType.UserType.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/usertype"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/usertype"
 
 usertype.UserType_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.userType.UserType.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/usertype"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/usertype"
 
 usertype.UserType_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ usertype.UserType_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.userType.UserType.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/usertype"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/usertype"
 
 usertype.UserType_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ usertype.UserType_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.userType.UserType.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/usertype"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/usertype"
 
 usertype.UserType_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +474,7 @@ The construct id used in the generated config for the UserType to import.
 
 The id of the existing UserType that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/user_type#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/user_type#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -762,7 +762,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.userType.UserTypeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/usertype"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/usertype"
 
 &usertype.UserTypeConfig {
 	Connection: interface{},
@@ -793,7 +793,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/usertype"
 | <code><a href="#@cdktf/provider-okta.userType.UserTypeConfig.property.description">Description</a></code> | <code>*string</code> | Description of the User Type. |
 | <code><a href="#@cdktf/provider-okta.userType.UserTypeConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | Display Name of the User Type. |
 | <code><a href="#@cdktf/provider-okta.userType.UserTypeConfig.property.name">Name</a></code> | <code>*string</code> | Name of the User Type. |
-| <code><a href="#@cdktf/provider-okta.userType.UserTypeConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/user_type#id UserType#id}. |
+| <code><a href="#@cdktf/provider-okta.userType.UserTypeConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/user_type#id UserType#id}. |
 
 ---
 
@@ -877,7 +877,7 @@ Description *string
 
 Description of the User Type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/user_type#description UserType#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/user_type#description UserType#description}
 
 ---
 
@@ -891,7 +891,7 @@ DisplayName *string
 
 Display Name of the User Type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/user_type#display_name UserType#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/user_type#display_name UserType#display_name}
 
 ---
 
@@ -905,7 +905,7 @@ Name *string
 
 Name of the User Type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/user_type#name UserType#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/user_type#name UserType#name}
 
 ---
 
@@ -917,7 +917,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/user_type#id UserType#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/user_type#id UserType#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

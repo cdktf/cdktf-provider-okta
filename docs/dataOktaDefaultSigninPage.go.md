@@ -4,12 +4,12 @@
 
 ### DataOktaDefaultSigninPage <a name="DataOktaDefaultSigninPage" id="@cdktf/provider-okta.dataOktaDefaultSigninPage.DataOktaDefaultSigninPage"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/data-sources/default_signin_page okta_default_signin_page}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/default_signin_page okta_default_signin_page}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaDefaultSigninPage.DataOktaDefaultSigninPage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktadefaultsigninpage"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktadefaultsigninpage"
 
 dataoktadefaultsigninpage.NewDataOktaDefaultSigninPage(scope Construct, id *string, config DataOktaDefaultSigninPageConfig) DataOktaDefaultSigninPage
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.dataOktaDefaultSigninPage.DataOktaDefaultSigninPage.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktadefaultsigninpage"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktadefaultsigninpage"
 
 dataoktadefaultsigninpage.DataOktaDefaultSigninPage_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.dataOktaDefaultSigninPage.DataOktaDefaultSigninPage.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktadefaultsigninpage"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktadefaultsigninpage"
 
 dataoktadefaultsigninpage.DataOktaDefaultSigninPage_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ dataoktadefaultsigninpage.DataOktaDefaultSigninPage_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-okta.dataOktaDefaultSigninPage.DataOktaDefaultSigninPage.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktadefaultsigninpage"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktadefaultsigninpage"
 
 dataoktadefaultsigninpage.DataOktaDefaultSigninPage_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ dataoktadefaultsigninpage.DataOktaDefaultSigninPage_IsTerraformDataSource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.dataOktaDefaultSigninPage.DataOktaDefaultSigninPage.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktadefaultsigninpage"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktadefaultsigninpage"
 
 dataoktadefaultsigninpage.DataOktaDefaultSigninPage_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataOktaDefaultSigninPage 
 
 The id of the existing DataOktaDefaultSigninPage that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/data-sources/default_signin_page#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/default_signin_page#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -620,7 +620,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaDefaultSigninPage.DataOktaDefaultSigninPageConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktadefaultsigninpage"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktadefaultsigninpage"
 
 &dataoktadefaultsigninpage.DataOktaDefaultSigninPageConfig {
 	Connection: interface{},
@@ -729,7 +729,7 @@ BrandId *string
 
 brand id of the preview signin page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/data-sources/default_signin_page#brand_id DataOktaDefaultSigninPage#brand_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/default_signin_page#brand_id DataOktaDefaultSigninPage#brand_id}
 
 ---
 
@@ -738,7 +738,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaDefaultSigninPage.DataOktaDefaultSigninPageContentSecurityPolicySetting.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktadefaultsigninpage"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktadefaultsigninpage"
 
 &dataoktadefaultsigninpage.DataOktaDefaultSigninPageContentSecurityPolicySetting {
 
@@ -751,7 +751,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktadefaultsigninpa
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaDefaultSigninPage.DataOktaDefaultSigninPageWidgetCustomizations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktadefaultsigninpage"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktadefaultsigninpage"
 
 &dataoktadefaultsigninpage.DataOktaDefaultSigninPageWidgetCustomizations {
 
@@ -766,7 +766,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktadefaultsigninpa
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaDefaultSigninPage.DataOktaDefaultSigninPageContentSecurityPolicySettingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktadefaultsigninpage"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktadefaultsigninpage"
 
 dataoktadefaultsigninpage.NewDataOktaDefaultSigninPageContentSecurityPolicySettingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataOktaDefaultSigninPageContentSecurityPolicySettingOutputReference
 ```
@@ -1048,7 +1048,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaDefaultSigninPage.DataOktaDefaultSigninPageWidgetCustomizationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktadefaultsigninpage"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktadefaultsigninpage"
 
 dataoktadefaultsigninpage.NewDataOktaDefaultSigninPageWidgetCustomizationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataOktaDefaultSigninPageWidgetCustomizationsOutputReference
 ```

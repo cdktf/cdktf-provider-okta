@@ -4,12 +4,12 @@
 
 ### GroupSchemaProperty <a name="GroupSchemaProperty" id="@cdktf/provider-okta.groupSchemaProperty.GroupSchemaProperty"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/group_schema_property okta_group_schema_property}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/group_schema_property okta_group_schema_property}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.groupSchemaProperty.GroupSchemaProperty.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/groupschemaproperty"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/groupschemaproperty"
 
 groupschemaproperty.NewGroupSchemaProperty(scope Construct, id *string, config GroupSchemaPropertyConfig) GroupSchemaProperty
 ```
@@ -536,7 +536,7 @@ func ResetUnique()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.groupSchemaProperty.GroupSchemaProperty.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/groupschemaproperty"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/groupschemaproperty"
 
 groupschemaproperty.GroupSchemaProperty_IsConstruct(x interface{}) *bool
 ```
@@ -568,7 +568,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.groupSchemaProperty.GroupSchemaProperty.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/groupschemaproperty"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/groupschemaproperty"
 
 groupschemaproperty.GroupSchemaProperty_IsTerraformElement(x interface{}) *bool
 ```
@@ -582,7 +582,7 @@ groupschemaproperty.GroupSchemaProperty_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.groupSchemaProperty.GroupSchemaProperty.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/groupschemaproperty"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/groupschemaproperty"
 
 groupschemaproperty.GroupSchemaProperty_IsTerraformResource(x interface{}) *bool
 ```
@@ -596,7 +596,7 @@ groupschemaproperty.GroupSchemaProperty_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.groupSchemaProperty.GroupSchemaProperty.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/groupschemaproperty"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/groupschemaproperty"
 
 groupschemaproperty.GroupSchemaProperty_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -625,7 +625,7 @@ The construct id used in the generated config for the GroupSchemaProperty to imp
 
 The id of the existing GroupSchemaProperty that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/group_schema_property#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/group_schema_property#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1265,7 +1265,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.groupSchemaProperty.GroupSchemaPropertyArrayOneOf.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/groupschemaproperty"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/groupschemaproperty"
 
 &groupschemaproperty.GroupSchemaPropertyArrayOneOf {
 	Const: *string,
@@ -1292,7 +1292,7 @@ Const *string
 
 Value mapping to member of `array_enum`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/group_schema_property#const GroupSchemaProperty#const}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/group_schema_property#const GroupSchemaProperty#const}
 
 ---
 
@@ -1306,7 +1306,7 @@ Title *string
 
 Display name for the enum value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/group_schema_property#title GroupSchemaProperty#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/group_schema_property#title GroupSchemaProperty#title}
 
 ---
 
@@ -1315,7 +1315,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.groupSchemaProperty.GroupSchemaPropertyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/groupschemaproperty"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/groupschemaproperty"
 
 &groupschemaproperty.GroupSchemaPropertyConfig {
 	Connection: interface{},
@@ -1369,7 +1369,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/groupschemaproperty"
 | <code><a href="#@cdktf/provider-okta.groupSchemaProperty.GroupSchemaPropertyConfig.property.enum">Enum</a></code> | <code>*[]*string</code> | Array of values a primitive property can be set to. See `array_enum` for arrays. |
 | <code><a href="#@cdktf/provider-okta.groupSchemaProperty.GroupSchemaPropertyConfig.property.externalName">ExternalName</a></code> | <code>*string</code> | External name of the user schema property. |
 | <code><a href="#@cdktf/provider-okta.groupSchemaProperty.GroupSchemaPropertyConfig.property.externalNamespace">ExternalNamespace</a></code> | <code>*string</code> | External namespace of the user schema property. |
-| <code><a href="#@cdktf/provider-okta.groupSchemaProperty.GroupSchemaPropertyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/group_schema_property#id GroupSchemaProperty#id}. |
+| <code><a href="#@cdktf/provider-okta.groupSchemaProperty.GroupSchemaPropertyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/group_schema_property#id GroupSchemaProperty#id}. |
 | <code><a href="#@cdktf/provider-okta.groupSchemaProperty.GroupSchemaPropertyConfig.property.master">Master</a></code> | <code>*string</code> | Master priority for the group schema property. It can be set to `PROFILE_MASTER`, `OVERRIDE` or `OKTA`. Default: `PROFILE_MASTER`. |
 | <code><a href="#@cdktf/provider-okta.groupSchemaProperty.GroupSchemaPropertyConfig.property.masterOverridePriority">MasterOverridePriority</a></code> | <code>interface{}</code> | master_override_priority block. |
 | <code><a href="#@cdktf/provider-okta.groupSchemaProperty.GroupSchemaPropertyConfig.property.maxLength">MaxLength</a></code> | <code>*f64</code> | The maximum length of the user property value. Only applies to type `string`. |
@@ -1377,7 +1377,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/groupschemaproperty"
 | <code><a href="#@cdktf/provider-okta.groupSchemaProperty.GroupSchemaPropertyConfig.property.oneOf">OneOf</a></code> | <code>interface{}</code> | one_of block. |
 | <code><a href="#@cdktf/provider-okta.groupSchemaProperty.GroupSchemaPropertyConfig.property.permissions">Permissions</a></code> | <code>*string</code> | Access control permissions for the property. It can be set to `READ_WRITE`, `READ_ONLY`, `HIDE`. Default: `READ_ONLY`. |
 | <code><a href="#@cdktf/provider-okta.groupSchemaProperty.GroupSchemaPropertyConfig.property.required">Required</a></code> | <code>interface{}</code> | Whether the subschema is required. |
-| <code><a href="#@cdktf/provider-okta.groupSchemaProperty.GroupSchemaPropertyConfig.property.scope">Scope</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/group_schema_property#scope GroupSchemaProperty#scope}. |
+| <code><a href="#@cdktf/provider-okta.groupSchemaProperty.GroupSchemaPropertyConfig.property.scope">Scope</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/group_schema_property#scope GroupSchemaProperty#scope}. |
 | <code><a href="#@cdktf/provider-okta.groupSchemaProperty.GroupSchemaPropertyConfig.property.unique">Unique</a></code> | <code>*string</code> | Whether the property should be unique. It can be set to `UNIQUE_VALIDATED` or `NOT_UNIQUE`. |
 
 ---
@@ -1462,7 +1462,7 @@ Index *string
 
 Subschema unique string identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/group_schema_property#index GroupSchemaProperty#index}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/group_schema_property#index GroupSchemaProperty#index}
 
 ---
 
@@ -1476,7 +1476,7 @@ Title *string
 
 Subschema title (display name).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/group_schema_property#title GroupSchemaProperty#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/group_schema_property#title GroupSchemaProperty#title}
 
 ---
 
@@ -1490,7 +1490,7 @@ Type *string
 
 The type of the schema property. It can be `string`, `boolean`, `number`, `integer`, `array`, or `object`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/group_schema_property#type GroupSchemaProperty#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/group_schema_property#type GroupSchemaProperty#type}
 
 ---
 
@@ -1504,7 +1504,7 @@ ArrayEnum *[]*string
 
 Array of values that an array property's items can be set to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/group_schema_property#array_enum GroupSchemaProperty#array_enum}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/group_schema_property#array_enum GroupSchemaProperty#array_enum}
 
 ---
 
@@ -1518,7 +1518,7 @@ ArrayOneOf interface{}
 
 array_one_of block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/group_schema_property#array_one_of GroupSchemaProperty#array_one_of}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/group_schema_property#array_one_of GroupSchemaProperty#array_one_of}
 
 ---
 
@@ -1532,7 +1532,7 @@ ArrayType *string
 
 The type of the array elements if `type` is set to `array`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/group_schema_property#array_type GroupSchemaProperty#array_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/group_schema_property#array_type GroupSchemaProperty#array_type}
 
 ---
 
@@ -1546,7 +1546,7 @@ Description *string
 
 The description of the user schema property.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/group_schema_property#description GroupSchemaProperty#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/group_schema_property#description GroupSchemaProperty#description}
 
 ---
 
@@ -1560,7 +1560,7 @@ Enum *[]*string
 
 Array of values a primitive property can be set to. See `array_enum` for arrays.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/group_schema_property#enum GroupSchemaProperty#enum}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/group_schema_property#enum GroupSchemaProperty#enum}
 
 ---
 
@@ -1574,7 +1574,7 @@ ExternalName *string
 
 External name of the user schema property.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/group_schema_property#external_name GroupSchemaProperty#external_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/group_schema_property#external_name GroupSchemaProperty#external_name}
 
 ---
 
@@ -1588,7 +1588,7 @@ ExternalNamespace *string
 
 External namespace of the user schema property.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/group_schema_property#external_namespace GroupSchemaProperty#external_namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/group_schema_property#external_namespace GroupSchemaProperty#external_namespace}
 
 ---
 
@@ -1600,7 +1600,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/group_schema_property#id GroupSchemaProperty#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/group_schema_property#id GroupSchemaProperty#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1617,7 +1617,7 @@ Master *string
 
 Master priority for the group schema property. It can be set to `PROFILE_MASTER`, `OVERRIDE` or `OKTA`. Default: `PROFILE_MASTER`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/group_schema_property#master GroupSchemaProperty#master}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/group_schema_property#master GroupSchemaProperty#master}
 
 ---
 
@@ -1631,7 +1631,7 @@ MasterOverridePriority interface{}
 
 master_override_priority block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/group_schema_property#master_override_priority GroupSchemaProperty#master_override_priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/group_schema_property#master_override_priority GroupSchemaProperty#master_override_priority}
 
 ---
 
@@ -1645,7 +1645,7 @@ MaxLength *f64
 
 The maximum length of the user property value. Only applies to type `string`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/group_schema_property#max_length GroupSchemaProperty#max_length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/group_schema_property#max_length GroupSchemaProperty#max_length}
 
 ---
 
@@ -1659,7 +1659,7 @@ MinLength *f64
 
 The minimum length of the user property value. Only applies to type `string`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/group_schema_property#min_length GroupSchemaProperty#min_length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/group_schema_property#min_length GroupSchemaProperty#min_length}
 
 ---
 
@@ -1673,7 +1673,7 @@ OneOf interface{}
 
 one_of block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/group_schema_property#one_of GroupSchemaProperty#one_of}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/group_schema_property#one_of GroupSchemaProperty#one_of}
 
 ---
 
@@ -1687,7 +1687,7 @@ Permissions *string
 
 Access control permissions for the property. It can be set to `READ_WRITE`, `READ_ONLY`, `HIDE`. Default: `READ_ONLY`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/group_schema_property#permissions GroupSchemaProperty#permissions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/group_schema_property#permissions GroupSchemaProperty#permissions}
 
 ---
 
@@ -1701,7 +1701,7 @@ Required interface{}
 
 Whether the subschema is required.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/group_schema_property#required GroupSchemaProperty#required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/group_schema_property#required GroupSchemaProperty#required}
 
 ---
 
@@ -1713,7 +1713,7 @@ Scope *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/group_schema_property#scope GroupSchemaProperty#scope}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/group_schema_property#scope GroupSchemaProperty#scope}.
 
 ---
 
@@ -1727,7 +1727,7 @@ Unique *string
 
 Whether the property should be unique. It can be set to `UNIQUE_VALIDATED` or `NOT_UNIQUE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/group_schema_property#unique GroupSchemaProperty#unique}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/group_schema_property#unique GroupSchemaProperty#unique}
 
 ---
 
@@ -1736,7 +1736,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.groupSchemaProperty.GroupSchemaPropertyMasterOverridePriority.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/groupschemaproperty"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/groupschemaproperty"
 
 &groupschemaproperty.GroupSchemaPropertyMasterOverridePriority {
 	Value: *string,
@@ -1748,8 +1748,8 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/groupschemaproperty"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.groupSchemaProperty.GroupSchemaPropertyMasterOverridePriority.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/group_schema_property#value GroupSchemaProperty#value}. |
-| <code><a href="#@cdktf/provider-okta.groupSchemaProperty.GroupSchemaPropertyMasterOverridePriority.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/group_schema_property#type GroupSchemaProperty#type}. |
+| <code><a href="#@cdktf/provider-okta.groupSchemaProperty.GroupSchemaPropertyMasterOverridePriority.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/group_schema_property#value GroupSchemaProperty#value}. |
+| <code><a href="#@cdktf/provider-okta.groupSchemaProperty.GroupSchemaPropertyMasterOverridePriority.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/group_schema_property#type GroupSchemaProperty#type}. |
 
 ---
 
@@ -1761,7 +1761,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/group_schema_property#value GroupSchemaProperty#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/group_schema_property#value GroupSchemaProperty#value}.
 
 ---
 
@@ -1773,7 +1773,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/group_schema_property#type GroupSchemaProperty#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/group_schema_property#type GroupSchemaProperty#type}.
 
 ---
 
@@ -1782,7 +1782,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.groupSchemaProperty.GroupSchemaPropertyOneOf.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/groupschemaproperty"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/groupschemaproperty"
 
 &groupschemaproperty.GroupSchemaPropertyOneOf {
 	Const: *string,
@@ -1809,7 +1809,7 @@ Const *string
 
 Enum value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/group_schema_property#const GroupSchemaProperty#const}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/group_schema_property#const GroupSchemaProperty#const}
 
 ---
 
@@ -1823,7 +1823,7 @@ Title *string
 
 Enum title.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/group_schema_property#title GroupSchemaProperty#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/group_schema_property#title GroupSchemaProperty#title}
 
 ---
 
@@ -1834,7 +1834,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.groupSchemaProperty.GroupSchemaPropertyArrayOneOfList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/groupschemaproperty"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/groupschemaproperty"
 
 groupschemaproperty.NewGroupSchemaPropertyArrayOneOfList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GroupSchemaPropertyArrayOneOfList
 ```
@@ -1994,7 +1994,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.groupSchemaProperty.GroupSchemaPropertyArrayOneOfOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/groupschemaproperty"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/groupschemaproperty"
 
 groupschemaproperty.NewGroupSchemaPropertyArrayOneOfOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GroupSchemaPropertyArrayOneOfOutputReference
 ```
@@ -2305,7 +2305,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.groupSchemaProperty.GroupSchemaPropertyMasterOverridePriorityList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/groupschemaproperty"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/groupschemaproperty"
 
 groupschemaproperty.NewGroupSchemaPropertyMasterOverridePriorityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GroupSchemaPropertyMasterOverridePriorityList
 ```
@@ -2465,7 +2465,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.groupSchemaProperty.GroupSchemaPropertyMasterOverridePriorityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/groupschemaproperty"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/groupschemaproperty"
 
 groupschemaproperty.NewGroupSchemaPropertyMasterOverridePriorityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GroupSchemaPropertyMasterOverridePriorityOutputReference
 ```
@@ -2783,7 +2783,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.groupSchemaProperty.GroupSchemaPropertyOneOfList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/groupschemaproperty"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/groupschemaproperty"
 
 groupschemaproperty.NewGroupSchemaPropertyOneOfList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GroupSchemaPropertyOneOfList
 ```
@@ -2943,7 +2943,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.groupSchemaProperty.GroupSchemaPropertyOneOfOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/groupschemaproperty"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/groupschemaproperty"
 
 groupschemaproperty.NewGroupSchemaPropertyOneOfOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GroupSchemaPropertyOneOfOutputReference
 ```

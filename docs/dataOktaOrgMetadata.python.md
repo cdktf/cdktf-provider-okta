@@ -4,7 +4,7 @@
 
 ### DataOktaOrgMetadata <a name="DataOktaOrgMetadata" id="@cdktf/provider-okta.dataOktaOrgMetadata.DataOktaOrgMetadata"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/data-sources/org_metadata okta_org_metadata}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/org_metadata okta_org_metadata}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaOrgMetadata.DataOktaOrgMetadata.Initializer"></a>
 
@@ -453,7 +453,7 @@ The construct id used in the generated config for the DataOktaOrgMetadata to imp
 
 The id of the existing DataOktaOrgMetadata that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/data-sources/org_metadata#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/org_metadata#import import section} in the documentation of this resource for the id to use
 
 ---
 
