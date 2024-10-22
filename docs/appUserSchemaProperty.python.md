@@ -4,7 +4,7 @@
 
 ### AppUserSchemaProperty <a name="AppUserSchemaProperty" id="@cdktf/provider-okta.appUserSchemaProperty.AppUserSchemaProperty"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/app_user_schema_property okta_app_user_schema_property}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property okta_app_user_schema_property}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appUserSchemaProperty.AppUserSchemaProperty.Initializer"></a>
 
@@ -68,7 +68,7 @@ appUserSchemaProperty.AppUserSchemaProperty(
 | <code><a href="#@cdktf/provider-okta.appUserSchemaProperty.AppUserSchemaProperty.Initializer.parameter.enum">enum</a></code> | <code>typing.List[str]</code> | Array of values a primitive property can be set to. See `array_enum` for arrays. |
 | <code><a href="#@cdktf/provider-okta.appUserSchemaProperty.AppUserSchemaProperty.Initializer.parameter.externalName">external_name</a></code> | <code>str</code> | External name of the user schema property. |
 | <code><a href="#@cdktf/provider-okta.appUserSchemaProperty.AppUserSchemaProperty.Initializer.parameter.externalNamespace">external_namespace</a></code> | <code>str</code> | External namespace of the user schema property. |
-| <code><a href="#@cdktf/provider-okta.appUserSchemaProperty.AppUserSchemaProperty.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/app_user_schema_property#id AppUserSchemaProperty#id}. |
+| <code><a href="#@cdktf/provider-okta.appUserSchemaProperty.AppUserSchemaProperty.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property#id AppUserSchemaProperty#id}. |
 | <code><a href="#@cdktf/provider-okta.appUserSchemaProperty.AppUserSchemaProperty.Initializer.parameter.master">master</a></code> | <code>str</code> | Master priority for the user schema property. It can be set to `PROFILE_MASTER` or `OKTA`. |
 | <code><a href="#@cdktf/provider-okta.appUserSchemaProperty.AppUserSchemaProperty.Initializer.parameter.maxLength">max_length</a></code> | <code>typing.Union[int, float]</code> | The maximum length of the user property value. Only applies to type `string`. |
 | <code><a href="#@cdktf/provider-okta.appUserSchemaProperty.AppUserSchemaProperty.Initializer.parameter.minLength">min_length</a></code> | <code>typing.Union[int, float]</code> | The minimum length of the user property value. Only applies to type `string`. |
@@ -148,7 +148,7 @@ Must be unique amongst siblings in the same scope
 
 The Application's ID the user custom schema property should be assigned to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/app_user_schema_property#app_id AppUserSchemaProperty#app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property#app_id AppUserSchemaProperty#app_id}
 
 ---
 
@@ -158,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Subschema unique string identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/app_user_schema_property#index AppUserSchemaProperty#index}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property#index AppUserSchemaProperty#index}
 
 ---
 
@@ -168,7 +168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Subschema title (display name).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/app_user_schema_property#title AppUserSchemaProperty#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property#title AppUserSchemaProperty#title}
 
 ---
 
@@ -178,7 +178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 The type of the schema property. It can be `string`, `boolean`, `number`, `integer`, `array`, or `object`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/app_user_schema_property#type AppUserSchemaProperty#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property#type AppUserSchemaProperty#type}
 
 ---
 
@@ -188,7 +188,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Array of values that an array property's items can be set to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/app_user_schema_property#array_enum AppUserSchemaProperty#array_enum}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property#array_enum AppUserSchemaProperty#array_enum}
 
 ---
 
@@ -198,7 +198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 array_one_of block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/app_user_schema_property#array_one_of AppUserSchemaProperty#array_one_of}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property#array_one_of AppUserSchemaProperty#array_one_of}
 
 ---
 
@@ -208,7 +208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 The type of the array elements if `type` is set to `array`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/app_user_schema_property#array_type AppUserSchemaProperty#array_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property#array_type AppUserSchemaProperty#array_type}
 
 ---
 
@@ -218,7 +218,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 The description of the user schema property.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/app_user_schema_property#description AppUserSchemaProperty#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property#description AppUserSchemaProperty#description}
 
 ---
 
@@ -228,7 +228,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Array of values a primitive property can be set to. See `array_enum` for arrays.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/app_user_schema_property#enum AppUserSchemaProperty#enum}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property#enum AppUserSchemaProperty#enum}
 
 ---
 
@@ -238,7 +238,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 External name of the user schema property.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/app_user_schema_property#external_name AppUserSchemaProperty#external_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property#external_name AppUserSchemaProperty#external_name}
 
 ---
 
@@ -248,7 +248,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 External namespace of the user schema property.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/app_user_schema_property#external_namespace AppUserSchemaProperty#external_namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property#external_namespace AppUserSchemaProperty#external_namespace}
 
 ---
 
@@ -256,7 +256,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/app_user_schema_property#id AppUserSchemaProperty#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property#id AppUserSchemaProperty#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -269,7 +269,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Master priority for the user schema property. It can be set to `PROFILE_MASTER` or `OKTA`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/app_user_schema_property#master AppUserSchemaProperty#master}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property#master AppUserSchemaProperty#master}
 
 ---
 
@@ -279,7 +279,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 The maximum length of the user property value. Only applies to type `string`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/app_user_schema_property#max_length AppUserSchemaProperty#max_length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property#max_length AppUserSchemaProperty#max_length}
 
 ---
 
@@ -289,7 +289,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 The minimum length of the user property value. Only applies to type `string`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/app_user_schema_property#min_length AppUserSchemaProperty#min_length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property#min_length AppUserSchemaProperty#min_length}
 
 ---
 
@@ -299,7 +299,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 one_of block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/app_user_schema_property#one_of AppUserSchemaProperty#one_of}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property#one_of AppUserSchemaProperty#one_of}
 
 ---
 
@@ -309,7 +309,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Access control permissions for the property. It can be set to `READ_WRITE`, `READ_ONLY`, `HIDE`. Default: `READ_ONLY`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/app_user_schema_property#permissions AppUserSchemaProperty#permissions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property#permissions AppUserSchemaProperty#permissions}
 
 ---
 
@@ -319,7 +319,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Whether the subschema is required.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/app_user_schema_property#required AppUserSchemaProperty#required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property#required AppUserSchemaProperty#required}
 
 ---
 
@@ -331,7 +331,7 @@ determines whether an app user attribute can be set at the Personal `SELF` or Gr
 
 Default value is `NONE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/app_user_schema_property#scope AppUserSchemaProperty#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property#scope AppUserSchemaProperty#scope}
 
 ---
 
@@ -343,7 +343,7 @@ If `type` is set to `array`, used to set whether attribute value is determined b
 
 Can not be set to `true` if `scope` is set to `SELF`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/app_user_schema_property#union AppUserSchemaProperty#union}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property#union AppUserSchemaProperty#union}
 
 ---
 
@@ -353,7 +353,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Whether the property should be unique. It can be set to `UNIQUE_VALIDATED` or `NOT_UNIQUE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/app_user_schema_property#unique AppUserSchemaProperty#unique}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property#unique AppUserSchemaProperty#unique}
 
 ---
 
@@ -363,7 +363,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 User type ID. By default, it is `default`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/app_user_schema_property#user_type AppUserSchemaProperty#user_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property#user_type AppUserSchemaProperty#user_type}
 
 ---
 
@@ -992,7 +992,7 @@ The construct id used in the generated config for the AppUserSchemaProperty to i
 
 The id of the existing AppUserSchemaProperty that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/app_user_schema_property#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1703,7 +1703,7 @@ const: str
 
 Value mapping to member of `array_enum`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/app_user_schema_property#const AppUserSchemaProperty#const}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property#const AppUserSchemaProperty#const}
 
 ---
 
@@ -1717,7 +1717,7 @@ title: str
 
 Display name for the enum value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/app_user_schema_property#title AppUserSchemaProperty#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property#title AppUserSchemaProperty#title}
 
 ---
 
@@ -1783,7 +1783,7 @@ appUserSchemaProperty.AppUserSchemaPropertyConfig(
 | <code><a href="#@cdktf/provider-okta.appUserSchemaProperty.AppUserSchemaPropertyConfig.property.enum">enum</a></code> | <code>typing.List[str]</code> | Array of values a primitive property can be set to. See `array_enum` for arrays. |
 | <code><a href="#@cdktf/provider-okta.appUserSchemaProperty.AppUserSchemaPropertyConfig.property.externalName">external_name</a></code> | <code>str</code> | External name of the user schema property. |
 | <code><a href="#@cdktf/provider-okta.appUserSchemaProperty.AppUserSchemaPropertyConfig.property.externalNamespace">external_namespace</a></code> | <code>str</code> | External namespace of the user schema property. |
-| <code><a href="#@cdktf/provider-okta.appUserSchemaProperty.AppUserSchemaPropertyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/app_user_schema_property#id AppUserSchemaProperty#id}. |
+| <code><a href="#@cdktf/provider-okta.appUserSchemaProperty.AppUserSchemaPropertyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property#id AppUserSchemaProperty#id}. |
 | <code><a href="#@cdktf/provider-okta.appUserSchemaProperty.AppUserSchemaPropertyConfig.property.master">master</a></code> | <code>str</code> | Master priority for the user schema property. It can be set to `PROFILE_MASTER` or `OKTA`. |
 | <code><a href="#@cdktf/provider-okta.appUserSchemaProperty.AppUserSchemaPropertyConfig.property.maxLength">max_length</a></code> | <code>typing.Union[int, float]</code> | The maximum length of the user property value. Only applies to type `string`. |
 | <code><a href="#@cdktf/provider-okta.appUserSchemaProperty.AppUserSchemaPropertyConfig.property.minLength">min_length</a></code> | <code>typing.Union[int, float]</code> | The minimum length of the user property value. Only applies to type `string`. |
@@ -1877,7 +1877,7 @@ app_id: str
 
 The Application's ID the user custom schema property should be assigned to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/app_user_schema_property#app_id AppUserSchemaProperty#app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property#app_id AppUserSchemaProperty#app_id}
 
 ---
 
@@ -1891,7 +1891,7 @@ index: str
 
 Subschema unique string identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/app_user_schema_property#index AppUserSchemaProperty#index}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property#index AppUserSchemaProperty#index}
 
 ---
 
@@ -1905,7 +1905,7 @@ title: str
 
 Subschema title (display name).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/app_user_schema_property#title AppUserSchemaProperty#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property#title AppUserSchemaProperty#title}
 
 ---
 
@@ -1919,7 +1919,7 @@ type: str
 
 The type of the schema property. It can be `string`, `boolean`, `number`, `integer`, `array`, or `object`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/app_user_schema_property#type AppUserSchemaProperty#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property#type AppUserSchemaProperty#type}
 
 ---
 
@@ -1933,7 +1933,7 @@ array_enum: typing.List[str]
 
 Array of values that an array property's items can be set to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/app_user_schema_property#array_enum AppUserSchemaProperty#array_enum}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property#array_enum AppUserSchemaProperty#array_enum}
 
 ---
 
@@ -1947,7 +1947,7 @@ array_one_of: typing.Union[IResolvable, typing.List[AppUserSchemaPropertyArrayOn
 
 array_one_of block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/app_user_schema_property#array_one_of AppUserSchemaProperty#array_one_of}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property#array_one_of AppUserSchemaProperty#array_one_of}
 
 ---
 
@@ -1961,7 +1961,7 @@ array_type: str
 
 The type of the array elements if `type` is set to `array`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/app_user_schema_property#array_type AppUserSchemaProperty#array_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property#array_type AppUserSchemaProperty#array_type}
 
 ---
 
@@ -1975,7 +1975,7 @@ description: str
 
 The description of the user schema property.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/app_user_schema_property#description AppUserSchemaProperty#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property#description AppUserSchemaProperty#description}
 
 ---
 
@@ -1989,7 +1989,7 @@ enum: typing.List[str]
 
 Array of values a primitive property can be set to. See `array_enum` for arrays.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/app_user_schema_property#enum AppUserSchemaProperty#enum}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property#enum AppUserSchemaProperty#enum}
 
 ---
 
@@ -2003,7 +2003,7 @@ external_name: str
 
 External name of the user schema property.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/app_user_schema_property#external_name AppUserSchemaProperty#external_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property#external_name AppUserSchemaProperty#external_name}
 
 ---
 
@@ -2017,7 +2017,7 @@ external_namespace: str
 
 External namespace of the user schema property.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/app_user_schema_property#external_namespace AppUserSchemaProperty#external_namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property#external_namespace AppUserSchemaProperty#external_namespace}
 
 ---
 
@@ -2029,7 +2029,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/app_user_schema_property#id AppUserSchemaProperty#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property#id AppUserSchemaProperty#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2046,7 +2046,7 @@ master: str
 
 Master priority for the user schema property. It can be set to `PROFILE_MASTER` or `OKTA`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/app_user_schema_property#master AppUserSchemaProperty#master}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property#master AppUserSchemaProperty#master}
 
 ---
 
@@ -2060,7 +2060,7 @@ max_length: typing.Union[int, float]
 
 The maximum length of the user property value. Only applies to type `string`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/app_user_schema_property#max_length AppUserSchemaProperty#max_length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property#max_length AppUserSchemaProperty#max_length}
 
 ---
 
@@ -2074,7 +2074,7 @@ min_length: typing.Union[int, float]
 
 The minimum length of the user property value. Only applies to type `string`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/app_user_schema_property#min_length AppUserSchemaProperty#min_length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property#min_length AppUserSchemaProperty#min_length}
 
 ---
 
@@ -2088,7 +2088,7 @@ one_of: typing.Union[IResolvable, typing.List[AppUserSchemaPropertyOneOf]]
 
 one_of block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/app_user_schema_property#one_of AppUserSchemaProperty#one_of}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property#one_of AppUserSchemaProperty#one_of}
 
 ---
 
@@ -2102,7 +2102,7 @@ permissions: str
 
 Access control permissions for the property. It can be set to `READ_WRITE`, `READ_ONLY`, `HIDE`. Default: `READ_ONLY`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/app_user_schema_property#permissions AppUserSchemaProperty#permissions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property#permissions AppUserSchemaProperty#permissions}
 
 ---
 
@@ -2116,7 +2116,7 @@ required: typing.Union[bool, IResolvable]
 
 Whether the subschema is required.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/app_user_schema_property#required AppUserSchemaProperty#required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property#required AppUserSchemaProperty#required}
 
 ---
 
@@ -2132,7 +2132,7 @@ determines whether an app user attribute can be set at the Personal `SELF` or Gr
 
 Default value is `NONE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/app_user_schema_property#scope AppUserSchemaProperty#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property#scope AppUserSchemaProperty#scope}
 
 ---
 
@@ -2148,7 +2148,7 @@ If `type` is set to `array`, used to set whether attribute value is determined b
 
 Can not be set to `true` if `scope` is set to `SELF`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/app_user_schema_property#union AppUserSchemaProperty#union}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property#union AppUserSchemaProperty#union}
 
 ---
 
@@ -2162,7 +2162,7 @@ unique: str
 
 Whether the property should be unique. It can be set to `UNIQUE_VALIDATED` or `NOT_UNIQUE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/app_user_schema_property#unique AppUserSchemaProperty#unique}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property#unique AppUserSchemaProperty#unique}
 
 ---
 
@@ -2176,7 +2176,7 @@ user_type: str
 
 User type ID. By default, it is `default`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/app_user_schema_property#user_type AppUserSchemaProperty#user_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property#user_type AppUserSchemaProperty#user_type}
 
 ---
 
@@ -2212,7 +2212,7 @@ const: str
 
 Enum value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/app_user_schema_property#const AppUserSchemaProperty#const}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property#const AppUserSchemaProperty#const}
 
 ---
 
@@ -2226,7 +2226,7 @@ title: str
 
 Enum title.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/app_user_schema_property#title AppUserSchemaProperty#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_user_schema_property#title AppUserSchemaProperty#title}
 
 ---
 

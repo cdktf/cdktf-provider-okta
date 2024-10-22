@@ -4,7 +4,7 @@
 
 ### AppSamlAppSettings <a name="AppSamlAppSettings" id="@cdktf/provider-okta.appSamlAppSettings.AppSamlAppSettings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/app_saml_app_settings okta_app_saml_app_settings}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_saml_app_settings okta_app_saml_app_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appSamlAppSettings.AppSamlAppSettings.Initializer"></a>
 
@@ -42,7 +42,7 @@ AppSamlAppSettings.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-okta.appSamlAppSettings.AppSamlAppSettings.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSamlAppSettings.AppSamlAppSettings.Initializer.parameter.appId">appId</a></code> | <code>java.lang.String</code> | ID of the application. |
 | <code><a href="#@cdktf/provider-okta.appSamlAppSettings.AppSamlAppSettings.Initializer.parameter.settings">settings</a></code> | <code>java.lang.String</code> | Application settings in JSON format. |
-| <code><a href="#@cdktf/provider-okta.appSamlAppSettings.AppSamlAppSettings.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/app_saml_app_settings#id AppSamlAppSettings#id}. |
+| <code><a href="#@cdktf/provider-okta.appSamlAppSettings.AppSamlAppSettings.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_saml_app_settings#id AppSamlAppSettings#id}. |
 
 ---
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 ID of the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/app_saml_app_settings#app_id AppSamlAppSettings#app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_saml_app_settings#app_id AppSamlAppSettings#app_id}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Application settings in JSON format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/app_saml_app_settings#settings AppSamlAppSettings#settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_saml_app_settings#settings AppSamlAppSettings#settings}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/app_saml_app_settings#id AppSamlAppSettings#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_saml_app_settings#id AppSamlAppSettings#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -567,7 +567,7 @@ The construct id used in the generated config for the AppSamlAppSettings to impo
 
 The id of the existing AppSamlAppSettings that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/app_saml_app_settings#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_saml_app_settings#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -866,7 +866,7 @@ AppSamlAppSettingsConfig.builder()
 | <code><a href="#@cdktf/provider-okta.appSamlAppSettings.AppSamlAppSettingsConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSamlAppSettings.AppSamlAppSettingsConfig.property.appId">appId</a></code> | <code>java.lang.String</code> | ID of the application. |
 | <code><a href="#@cdktf/provider-okta.appSamlAppSettings.AppSamlAppSettingsConfig.property.settings">settings</a></code> | <code>java.lang.String</code> | Application settings in JSON format. |
-| <code><a href="#@cdktf/provider-okta.appSamlAppSettings.AppSamlAppSettingsConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/app_saml_app_settings#id AppSamlAppSettings#id}. |
+| <code><a href="#@cdktf/provider-okta.appSamlAppSettings.AppSamlAppSettingsConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_saml_app_settings#id AppSamlAppSettings#id}. |
 
 ---
 
@@ -950,7 +950,7 @@ public java.lang.String getAppId();
 
 ID of the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/app_saml_app_settings#app_id AppSamlAppSettings#app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_saml_app_settings#app_id AppSamlAppSettings#app_id}
 
 ---
 
@@ -964,7 +964,7 @@ public java.lang.String getSettings();
 
 Application settings in JSON format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/app_saml_app_settings#settings AppSamlAppSettings#settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_saml_app_settings#settings AppSamlAppSettings#settings}
 
 ---
 
@@ -976,7 +976,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/app_saml_app_settings#id AppSamlAppSettings#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_saml_app_settings#id AppSamlAppSettings#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

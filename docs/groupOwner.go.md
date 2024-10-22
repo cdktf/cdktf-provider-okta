@@ -4,7 +4,7 @@
 
 ### GroupOwner <a name="GroupOwner" id="@cdktf/provider-okta.groupOwner.GroupOwner"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/group_owner okta_group_owner}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/group_owner okta_group_owner}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.groupOwner.GroupOwner.Initializer"></a>
 
@@ -467,7 +467,7 @@ The construct id used in the generated config for the GroupOwner to import.
 
 The id of the existing GroupOwner that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/group_owner#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/group_owner#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -901,7 +901,7 @@ GroupId *string
 
 The id of the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/group_owner#group_id GroupOwner#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/group_owner#group_id GroupOwner#group_id}
 
 ---
 
@@ -915,7 +915,7 @@ IdOfGroupOwner *string
 
 The user id of the group owner.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/group_owner#id_of_group_owner GroupOwner#id_of_group_owner}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/group_owner#id_of_group_owner GroupOwner#id_of_group_owner}
 
 ---
 
@@ -929,7 +929,7 @@ Type *string
 
 The entity type of the owner. Enum: "GROUP" "USER".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.0/docs/resources/group_owner#type GroupOwner#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/group_owner#type GroupOwner#type}
 
 ---
 
