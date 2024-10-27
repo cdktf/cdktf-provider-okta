@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/group
 // generated from terraform resource schema
 
