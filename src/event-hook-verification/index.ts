@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/event_hook_verification
 // generated from terraform resource schema
 

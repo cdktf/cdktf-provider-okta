@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.1/doc
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.trustedServer.TrustedServer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/trustedserver"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/trustedserver"
 
 trustedserver.NewTrustedServer(scope Construct, id *string, config TrustedServerConfig) TrustedServer
 ```
@@ -378,7 +378,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.trustedServer.TrustedServer.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/trustedserver"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/trustedserver"
 
 trustedserver.TrustedServer_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.trustedServer.TrustedServer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/trustedserver"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/trustedserver"
 
 trustedserver.TrustedServer_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ trustedserver.TrustedServer_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.trustedServer.TrustedServer.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/trustedserver"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/trustedserver"
 
 trustedserver.TrustedServer_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ trustedserver.TrustedServer_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.trustedServer.TrustedServer.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/trustedserver"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/trustedserver"
 
 trustedserver.TrustedServer_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -722,7 +722,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.trustedServer.TrustedServerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/trustedserver"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/trustedserver"
 
 &trustedserver.TrustedServerConfig {
 	Connection: interface{},
