@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/email_customizations
+// https://registry.terraform.io/providers/okta/okta/4.12.0/docs/data-sources/email_customizations
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface DataOktaEmailCustomizationsConfig extends cdktf.TerraformMetaAr
   /**
   * Brand ID
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/email_customizations#brand_id DataOktaEmailCustomizations#brand_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/data-sources/email_customizations#brand_id DataOktaEmailCustomizations#brand_id}
   */
   readonly brandId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/email_customizations#id DataOktaEmailCustomizations#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/data-sources/email_customizations#id DataOktaEmailCustomizations#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,7 +28,7 @@ export interface DataOktaEmailCustomizationsConfig extends cdktf.TerraformMetaAr
   /**
   * Template Name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/email_customizations#template_name DataOktaEmailCustomizations#template_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/data-sources/email_customizations#template_name DataOktaEmailCustomizations#template_name}
   */
   readonly templateName: string;
 }
@@ -134,7 +134,7 @@ export class DataOktaEmailCustomizationsEmailCustomizationsList extends cdktf.Co
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/email_customizations okta_email_customizations}
+* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/data-sources/email_customizations okta_email_customizations}
 */
 export class DataOktaEmailCustomizations extends cdktf.TerraformDataSource {
 
@@ -150,7 +150,7 @@ export class DataOktaEmailCustomizations extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataOktaEmailCustomizations resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataOktaEmailCustomizations to import
-  * @param importFromId The id of the existing DataOktaEmailCustomizations that should be imported. Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/email_customizations#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataOktaEmailCustomizations that should be imported. Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/data-sources/email_customizations#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataOktaEmailCustomizations to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -162,7 +162,7 @@ export class DataOktaEmailCustomizations extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/email_customizations okta_email_customizations} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/data-sources/email_customizations okta_email_customizations} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -173,7 +173,7 @@ export class DataOktaEmailCustomizations extends cdktf.TerraformDataSource {
       terraformResourceType: 'okta_email_customizations',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '4.11.1',
+        providerVersion: '4.12.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

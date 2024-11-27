@@ -4,14 +4,14 @@
 
 ### DataOktaUserType <a name="DataOktaUserType" id="@cdktf/provider-okta.dataOktaUserType.DataOktaUserType"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/user_type okta_user_type}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/data-sources/user_type okta_user_type}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaUserType.DataOktaUserType.Initializer"></a>
 
 ```typescript
 import { dataOktaUserType } from '@cdktf/provider-okta'
 
-new dataOktaUserType.DataOktaUserType(scope: Construct, id: string, config: DataOktaUserTypeConfig)
+new dataOktaUserType.DataOktaUserType(scope: Construct, id: string, config?: DataOktaUserTypeConfig)
 ```
 
 | **Name** | **Type** | **Description** |
@@ -40,7 +40,7 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-okta.dataOktaUserType.DataOktaUserType.Initializer.parameter.config"></a>
+##### `config`<sup>Optional</sup> <a name="config" id="@cdktf/provider-okta.dataOktaUserType.DataOktaUserType.Initializer.parameter.config"></a>
 
 - *Type:* <a href="#@cdktf/provider-okta.dataOktaUserType.DataOktaUserTypeConfig">DataOktaUserTypeConfig</a>
 
@@ -68,6 +68,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-okta.dataOktaUserType.DataOktaUserType.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaUserType.DataOktaUserType.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaUserType.DataOktaUserType.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.dataOktaUserType.DataOktaUserType.resetName">resetName</a></code> | *No description.* |
 
 ---
 
@@ -269,6 +270,12 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 public resetId(): void
 ```
 
+##### `resetName` <a name="resetName" id="@cdktf/provider-okta.dataOktaUserType.DataOktaUserType.resetName"></a>
+
+```typescript
+public resetName(): void
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -372,7 +379,7 @@ The construct id used in the generated config for the DataOktaUserType to import
 
 The id of the existing DataOktaUserType that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/user_type#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/data-sources/user_type#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -632,8 +639,8 @@ const dataOktaUserTypeConfig: dataOktaUserType.DataOktaUserTypeConfig = { ... }
 | <code><a href="#@cdktf/provider-okta.dataOktaUserType.DataOktaUserTypeConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaUserType.DataOktaUserTypeConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaUserType.DataOktaUserTypeConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.dataOktaUserType.DataOktaUserTypeConfig.property.name">name</a></code> | <code>string</code> | Name of user type to retrieve. |
-| <code><a href="#@cdktf/provider-okta.dataOktaUserType.DataOktaUserTypeConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/user_type#id DataOktaUserType#id}. |
+| <code><a href="#@cdktf/provider-okta.dataOktaUserType.DataOktaUserTypeConfig.property.id">id</a></code> | <code>string</code> | ID of the user type to retrieve, conflicts with `name`. |
+| <code><a href="#@cdktf/provider-okta.dataOktaUserType.DataOktaUserTypeConfig.property.name">name</a></code> | <code>string</code> | Name of user type to retrieve, conflicts with `id`. |
 
 ---
 
@@ -707,20 +714,6 @@ public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExe
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-okta.dataOktaUserType.DataOktaUserTypeConfig.property.name"></a>
-
-```typescript
-public readonly name: string;
-```
-
-- *Type:* string
-
-Name of user type to retrieve.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/user_type#name DataOktaUserType#name}
-
----
-
 ##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-okta.dataOktaUserType.DataOktaUserTypeConfig.property.id"></a>
 
 ```typescript
@@ -729,10 +722,26 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/user_type#id DataOktaUserType#id}.
+ID of the user type to retrieve, conflicts with `name`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/data-sources/user_type#id DataOktaUserType#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `name`<sup>Optional</sup> <a name="name" id="@cdktf/provider-okta.dataOktaUserType.DataOktaUserTypeConfig.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+Name of user type to retrieve, conflicts with `id`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/data-sources/user_type#name DataOktaUserType#name}
 
 ---
 

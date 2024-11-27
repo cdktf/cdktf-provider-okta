@@ -4,7 +4,7 @@
 
 ### AppOauthRoleAssignment <a name="AppOauthRoleAssignment" id="@cdktf/provider-okta.appOauthRoleAssignment.AppOauthRoleAssignment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_oauth_role_assignment okta_app_oauth_role_assignment}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/app_oauth_role_assignment okta_app_oauth_role_assignment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appOauthRoleAssignment.AppOauthRoleAssignment.Initializer"></a>
 
@@ -481,7 +481,7 @@ The construct id used in the generated config for the AppOauthRoleAssignment to 
 
 The id of the existing AppOauthRoleAssignment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_oauth_role_assignment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/app_oauth_role_assignment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -905,7 +905,7 @@ public readonly clientId: string;
 
 Client ID for the role to be assigned to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_oauth_role_assignment#client_id AppOauthRoleAssignment#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/app_oauth_role_assignment#client_id AppOauthRoleAssignment#client_id}
 
 ---
 
@@ -921,7 +921,7 @@ Role type to assign.
 
 This can be one of the standard Okta roles, such as `HELP_DESK_ADMIN`, or `CUSTOM`. Using custom requires the `resource_set` and `role` attributes to be set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_oauth_role_assignment#type AppOauthRoleAssignment#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/app_oauth_role_assignment#type AppOauthRoleAssignment#type}
 
 ---
 
@@ -935,7 +935,7 @@ public readonly resourceSet: string;
 
 Resource set for the custom role to assign, must be the ID of the created resource set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_oauth_role_assignment#resource_set AppOauthRoleAssignment#resource_set}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/app_oauth_role_assignment#resource_set AppOauthRoleAssignment#resource_set}
 
 ---
 
@@ -949,7 +949,7 @@ public readonly role: string;
 
 Custom Role ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/app_oauth_role_assignment#role AppOauthRoleAssignment#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/app_oauth_role_assignment#role AppOauthRoleAssignment#role}
 
 ---
 

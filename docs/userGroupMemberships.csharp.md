@@ -4,7 +4,7 @@
 
 ### UserGroupMemberships <a name="UserGroupMemberships" id="@cdktf/provider-okta.userGroupMemberships.UserGroupMemberships"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/user_group_memberships okta_user_group_memberships}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/user_group_memberships okta_user_group_memberships}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.userGroupMemberships.UserGroupMemberships.Initializer"></a>
 
@@ -474,7 +474,7 @@ The construct id used in the generated config for the UserGroupMemberships to im
 
 The id of the existing UserGroupMemberships that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/user_group_memberships#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/user_group_memberships#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -769,7 +769,7 @@ new UserGroupMembershipsConfig {
 | <code><a href="#@cdktf/provider-okta.userGroupMemberships.UserGroupMembershipsConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.userGroupMemberships.UserGroupMembershipsConfig.property.groups">Groups</a></code> | <code>string[]</code> | The list of Okta group IDs which the user should have membership managed for. |
 | <code><a href="#@cdktf/provider-okta.userGroupMemberships.UserGroupMembershipsConfig.property.userId">UserId</a></code> | <code>string</code> | ID of a Okta User. |
-| <code><a href="#@cdktf/provider-okta.userGroupMemberships.UserGroupMembershipsConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/user_group_memberships#id UserGroupMemberships#id}. |
+| <code><a href="#@cdktf/provider-okta.userGroupMemberships.UserGroupMembershipsConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/user_group_memberships#id UserGroupMemberships#id}. |
 
 ---
 
@@ -853,7 +853,7 @@ public string[] Groups { get; set; }
 
 The list of Okta group IDs which the user should have membership managed for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/user_group_memberships#groups UserGroupMemberships#groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/user_group_memberships#groups UserGroupMemberships#groups}
 
 ---
 
@@ -867,7 +867,7 @@ public string UserId { get; set; }
 
 ID of a Okta User.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/user_group_memberships#user_id UserGroupMemberships#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/user_group_memberships#user_id UserGroupMemberships#user_id}
 
 ---
 
@@ -879,7 +879,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/resources/user_group_memberships#id UserGroupMemberships#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/user_group_memberships#id UserGroupMemberships#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
