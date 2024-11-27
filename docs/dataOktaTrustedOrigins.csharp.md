@@ -4,7 +4,7 @@
 
 ### DataOktaTrustedOrigins <a name="DataOktaTrustedOrigins" id="@cdktf/provider-okta.dataOktaTrustedOrigins.DataOktaTrustedOrigins"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/trusted_origins okta_trusted_origins}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/data-sources/trusted_origins okta_trusted_origins}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaTrustedOrigins.DataOktaTrustedOrigins.Initializer"></a>
 
@@ -379,7 +379,7 @@ The construct id used in the generated config for the DataOktaTrustedOrigins to 
 
 The id of the existing DataOktaTrustedOrigins that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/trusted_origins#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/data-sources/trusted_origins#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -639,7 +639,7 @@ new DataOktaTrustedOriginsConfig {
 | <code><a href="#@cdktf/provider-okta.dataOktaTrustedOrigins.DataOktaTrustedOriginsConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaTrustedOrigins.DataOktaTrustedOriginsConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaTrustedOrigins.DataOktaTrustedOriginsConfig.property.filter">Filter</a></code> | <code>string</code> | Filter criteria. Filter value will be URL-encoded by the provider. |
-| <code><a href="#@cdktf/provider-okta.dataOktaTrustedOrigins.DataOktaTrustedOriginsConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/trusted_origins#id DataOktaTrustedOrigins#id}. |
+| <code><a href="#@cdktf/provider-okta.dataOktaTrustedOrigins.DataOktaTrustedOriginsConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/data-sources/trusted_origins#id DataOktaTrustedOrigins#id}. |
 
 ---
 
@@ -723,7 +723,7 @@ public string Filter { get; set; }
 
 Filter criteria. Filter value will be URL-encoded by the provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/trusted_origins#filter DataOktaTrustedOrigins#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/data-sources/trusted_origins#filter DataOktaTrustedOrigins#filter}
 
 ---
 
@@ -735,7 +735,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs/data-sources/trusted_origins#id DataOktaTrustedOrigins#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/data-sources/trusted_origins#id DataOktaTrustedOrigins#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
