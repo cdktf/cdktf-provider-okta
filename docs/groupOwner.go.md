@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.12.0/doc
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.groupOwner.GroupOwner.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/groupowner"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/groupowner"
 
 groupowner.NewGroupOwner(scope Construct, id *string, config GroupOwnerConfig) GroupOwner
 ```
@@ -378,7 +378,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.groupOwner.GroupOwner.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/groupowner"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/groupowner"
 
 groupowner.GroupOwner_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.groupOwner.GroupOwner.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/groupowner"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/groupowner"
 
 groupowner.GroupOwner_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ groupowner.GroupOwner_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.groupOwner.GroupOwner.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/groupowner"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/groupowner"
 
 groupowner.GroupOwner_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ groupowner.GroupOwner_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.groupOwner.GroupOwner.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/groupowner"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/groupowner"
 
 groupowner.GroupOwner_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -788,7 +788,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.groupOwner.GroupOwnerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/groupowner"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/groupowner"
 
 &groupowner.GroupOwnerConfig {
 	Connection: interface{},
