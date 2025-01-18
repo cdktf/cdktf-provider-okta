@@ -4,7 +4,7 @@
 
 ### DataOktaLogStream <a name="DataOktaLogStream" id="@cdktf/provider-okta.dataOktaLogStream.DataOktaLogStream"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/data-sources/log_stream okta_log_stream}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/data-sources/log_stream okta_log_stream}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaLogStream.DataOktaLogStream.Initializer"></a>
 
@@ -379,7 +379,7 @@ The construct id used in the generated config for the DataOktaLogStream to impor
 
 The id of the existing DataOktaLogStream that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/data-sources/log_stream#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/data-sources/log_stream#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -735,7 +735,7 @@ public readonly id: string;
 
 ID of the log stream to retrieve, conflicts with `name`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/data-sources/log_stream#id DataOktaLogStream#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/data-sources/log_stream#id DataOktaLogStream#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -752,7 +752,7 @@ public readonly name: string;
 
 Unique name for the Log Stream object, conflicts with `id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/data-sources/log_stream#name DataOktaLogStream#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/data-sources/log_stream#name DataOktaLogStream#name}
 
 ---
 

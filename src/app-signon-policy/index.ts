@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/app_signon_policy
+// https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/app_signon_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,28 +13,27 @@ import * as cdktf from 'cdktf';
 
 export interface AppSignonPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Default rules of the policy set to `DENY` or not. If `false`, it is set to `DENY`. **WARNING** setting this attribute to false change the OKTA default behavior. Use at your own risk. This is only apply during creation, so import or update will not work
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/app_signon_policy#catch_all AppSignonPolicy#catch_all}
+  */
+  readonly catchAll?: boolean | cdktf.IResolvable;
+  /**
   * Description of the policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/app_signon_policy#description AppSignonPolicy#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/app_signon_policy#description AppSignonPolicy#description}
   */
   readonly description: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/app_signon_policy#id AppSignonPolicy#id}
-  *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
-  /**
   * Name of the policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/app_signon_policy#name AppSignonPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/app_signon_policy#name AppSignonPolicy#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/app_signon_policy okta_app_signon_policy}
+* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/app_signon_policy okta_app_signon_policy}
 */
 export class AppSignonPolicy extends cdktf.TerraformResource {
 
@@ -50,7 +49,7 @@ export class AppSignonPolicy extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a AppSignonPolicy resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AppSignonPolicy to import
-  * @param importFromId The id of the existing AppSignonPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/app_signon_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AppSignonPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/app_signon_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AppSignonPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -62,7 +61,7 @@ export class AppSignonPolicy extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/app_signon_policy okta_app_signon_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/app_signon_policy okta_app_signon_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -73,7 +72,7 @@ export class AppSignonPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'okta_app_signon_policy',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '4.12.0',
+        providerVersion: '4.13.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -84,14 +83,35 @@ export class AppSignonPolicy extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._catchAll = config.catchAll;
     this._description = config.description;
-    this._id = config.id;
     this._name = config.name;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // catch_all - computed: true, optional: true, required: false
+  private _catchAll?: boolean | cdktf.IResolvable; 
+  public get catchAll() {
+    return this.getBooleanAttribute('catch_all');
+  }
+  public set catchAll(value: boolean | cdktf.IResolvable) {
+    this._catchAll = value;
+  }
+  public resetCatchAll() {
+    this._catchAll = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get catchAllInput() {
+    return this._catchAll;
+  }
+
+  // default_rule_id - computed: true, optional: false, required: false
+  public get defaultRuleId() {
+    return this.getStringAttribute('default_rule_id');
+  }
 
   // description - computed: false, optional: false, required: true
   private _description?: string; 
@@ -106,20 +126,9 @@ export class AppSignonPolicy extends cdktf.TerraformResource {
     return this._description;
   }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
-  }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -141,22 +150,22 @@ export class AppSignonPolicy extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      catch_all: cdktf.booleanToTerraform(this._catchAll),
       description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
-      description: {
-        value: cdktf.stringToHclTerraform(this._description),
+      catch_all: {
+        value: cdktf.booleanToHclTerraform(this._catchAll),
         isBlock: false,
         type: "simple",
-        storageClassType: "string",
+        storageClassType: "boolean",
       },
-      id: {
-        value: cdktf.stringToHclTerraform(this._id),
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -97,6 +97,7 @@ The following submodules are available:
 - [emailDomainVerification](./emailDomainVerification.java.md)
 - [emailSender](./emailSender.java.md)
 - [emailSenderVerification](./emailSenderVerification.java.md)
+- [emailTemplateSettings](./emailTemplateSettings.java.md)
 - [eventHook](./eventHook.java.md)
 - [eventHookVerification](./eventHookVerification.java.md)
 - [factor](./factor.java.md)

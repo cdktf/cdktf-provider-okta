@@ -4,7 +4,7 @@
 
 ### UserType <a name="UserType" id="@cdktf/provider-okta.userType.UserType"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/user_type okta_user_type}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/user_type okta_user_type}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.userType.UserType.Initializer"></a>
 
@@ -42,7 +42,7 @@ userType.UserType(
 | <code><a href="#@cdktf/provider-okta.userType.UserType.Initializer.parameter.description">description</a></code> | <code>str</code> | Description of the User Type. |
 | <code><a href="#@cdktf/provider-okta.userType.UserType.Initializer.parameter.displayName">display_name</a></code> | <code>str</code> | Display Name of the User Type. |
 | <code><a href="#@cdktf/provider-okta.userType.UserType.Initializer.parameter.name">name</a></code> | <code>str</code> | Name of the User Type. |
-| <code><a href="#@cdktf/provider-okta.userType.UserType.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/user_type#id UserType#id}. |
+| <code><a href="#@cdktf/provider-okta.userType.UserType.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/user_type#id UserType#id}. |
 
 ---
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 Description of the User Type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/user_type#description UserType#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/user_type#description UserType#description}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Display Name of the User Type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/user_type#display_name UserType#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/user_type#display_name UserType#display_name}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Name of the User Type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/user_type#name UserType#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/user_type#name UserType#name}
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/user_type#id UserType#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/user_type#id UserType#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -623,7 +623,7 @@ The construct id used in the generated config for the UserType to import.
 
 The id of the existing UserType that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/user_type#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/user_type#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -942,7 +942,7 @@ userType.UserTypeConfig(
 | <code><a href="#@cdktf/provider-okta.userType.UserTypeConfig.property.description">description</a></code> | <code>str</code> | Description of the User Type. |
 | <code><a href="#@cdktf/provider-okta.userType.UserTypeConfig.property.displayName">display_name</a></code> | <code>str</code> | Display Name of the User Type. |
 | <code><a href="#@cdktf/provider-okta.userType.UserTypeConfig.property.name">name</a></code> | <code>str</code> | Name of the User Type. |
-| <code><a href="#@cdktf/provider-okta.userType.UserTypeConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/user_type#id UserType#id}. |
+| <code><a href="#@cdktf/provider-okta.userType.UserTypeConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/user_type#id UserType#id}. |
 
 ---
 
@@ -1026,7 +1026,7 @@ description: str
 
 Description of the User Type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/user_type#description UserType#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/user_type#description UserType#description}
 
 ---
 
@@ -1040,7 +1040,7 @@ display_name: str
 
 Display Name of the User Type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/user_type#display_name UserType#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/user_type#display_name UserType#display_name}
 
 ---
 
@@ -1054,7 +1054,7 @@ name: str
 
 Name of the User Type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/user_type#name UserType#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/user_type#name UserType#name}
 
 ---
 
@@ -1066,7 +1066,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/user_type#id UserType#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/user_type#id UserType#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

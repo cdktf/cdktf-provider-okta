@@ -4,7 +4,7 @@
 
 ### AppSignonPolicy <a name="AppSignonPolicy" id="@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/app_signon_policy okta_app_signon_policy}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/app_signon_policy okta_app_signon_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy.Initializer"></a>
 
@@ -23,7 +23,7 @@ appSignonPolicy.AppSignonPolicy(
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   description: str,
   name: str,
-  id: str = None
+  catch_all: typing.Union[bool, IResolvable] = None
 )
 ```
 
@@ -40,7 +40,7 @@ appSignonPolicy.AppSignonPolicy(
 | <code><a href="#@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy.Initializer.parameter.description">description</a></code> | <code>str</code> | Description of the policy. |
 | <code><a href="#@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy.Initializer.parameter.name">name</a></code> | <code>str</code> | Name of the policy. |
-| <code><a href="#@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/app_signon_policy#id AppSignonPolicy#id}. |
+| <code><a href="#@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy.Initializer.parameter.catchAll">catch_all</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Default rules of the policy set to `DENY` or not. |
 
 ---
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 Description of the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/app_signon_policy#description AppSignonPolicy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/app_signon_policy#description AppSignonPolicy#description}
 
 ---
 
@@ -120,18 +120,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Name of the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/app_signon_policy#name AppSignonPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/app_signon_policy#name AppSignonPolicy#name}
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy.Initializer.parameter.id"></a>
+##### `catch_all`<sup>Optional</sup> <a name="catch_all" id="@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy.Initializer.parameter.catchAll"></a>
 
-- *Type:* str
+- *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/app_signon_policy#id AppSignonPolicy#id}.
+Default rules of the policy set to `DENY` or not.
 
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+If `false`, it is set to `DENY`. **WARNING** setting this attribute to false change the OKTA default behavior. Use at your own risk. This is only apply during creation, so import or update will not work
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/app_signon_policy#catch_all AppSignonPolicy#catch_all}
 
 ---
 
@@ -162,7 +163,7 @@ If you experience problems setting this value it might not be settable. Please t
 | <code><a href="#@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy.resetCatchAll">reset_catch_all</a></code> | *No description.* |
 
 ---
 
@@ -491,10 +492,10 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy.resetId"></a>
+##### `reset_catch_all` <a name="reset_catch_all" id="@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy.resetCatchAll"></a>
 
 ```python
-def reset_id() -> None
+def reset_catch_all() -> None
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -611,7 +612,7 @@ The construct id used in the generated config for the AppSignonPolicy to import.
 
 The id of the existing AppSignonPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/app_signon_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/app_signon_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -641,11 +642,13 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.12.0/doc
 | <code><a href="#@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy.property.description">description</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy.property.defaultRuleId">default_rule_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy.property.catchAllInput">catch_all_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy.property.catchAll">catch_all</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy.property.name">name</a></code> | <code>str</code> | *No description.* |
 
 ---
@@ -792,20 +795,40 @@ provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, Re
 
 ---
 
-##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy.property.descriptionInput"></a>
+##### `default_rule_id`<sup>Required</sup> <a name="default_rule_id" id="@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy.property.defaultRuleId"></a>
 
 ```python
-description_input: str
+default_rule_id: str
 ```
 
 - *Type:* str
 
 ---
 
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy.property.idInput"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy.property.id"></a>
 
 ```python
-id_input: str
+id: str
+```
+
+- *Type:* str
+
+---
+
+##### `catch_all_input`<sup>Optional</sup> <a name="catch_all_input" id="@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy.property.catchAllInput"></a>
+
+```python
+catch_all_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy.property.descriptionInput"></a>
+
+```python
+description_input: str
 ```
 
 - *Type:* str
@@ -822,20 +845,20 @@ name_input: str
 
 ---
 
+##### `catch_all`<sup>Required</sup> <a name="catch_all" id="@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy.property.catchAll"></a>
+
+```python
+catch_all: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
 ##### `description`<sup>Required</sup> <a name="description" id="@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy.property.description"></a>
 
 ```python
 description: str
-```
-
-- *Type:* str
-
----
-
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy.property.id"></a>
-
-```python
-id: str
 ```
 
 - *Type:* str
@@ -889,7 +912,7 @@ appSignonPolicy.AppSignonPolicyConfig(
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   description: str,
   name: str,
-  id: str = None
+  catch_all: typing.Union[bool, IResolvable] = None
 )
 ```
 
@@ -906,7 +929,7 @@ appSignonPolicy.AppSignonPolicyConfig(
 | <code><a href="#@cdktf/provider-okta.appSignonPolicy.AppSignonPolicyConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSignonPolicy.AppSignonPolicyConfig.property.description">description</a></code> | <code>str</code> | Description of the policy. |
 | <code><a href="#@cdktf/provider-okta.appSignonPolicy.AppSignonPolicyConfig.property.name">name</a></code> | <code>str</code> | Name of the policy. |
-| <code><a href="#@cdktf/provider-okta.appSignonPolicy.AppSignonPolicyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/app_signon_policy#id AppSignonPolicy#id}. |
+| <code><a href="#@cdktf/provider-okta.appSignonPolicy.AppSignonPolicyConfig.property.catchAll">catch_all</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Default rules of the policy set to `DENY` or not. |
 
 ---
 
@@ -990,7 +1013,7 @@ description: str
 
 Description of the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/app_signon_policy#description AppSignonPolicy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/app_signon_policy#description AppSignonPolicy#description}
 
 ---
 
@@ -1004,22 +1027,23 @@ name: str
 
 Name of the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/app_signon_policy#name AppSignonPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/app_signon_policy#name AppSignonPolicy#name}
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-okta.appSignonPolicy.AppSignonPolicyConfig.property.id"></a>
+##### `catch_all`<sup>Optional</sup> <a name="catch_all" id="@cdktf/provider-okta.appSignonPolicy.AppSignonPolicyConfig.property.catchAll"></a>
 
 ```python
-id: str
+catch_all: typing.Union[bool, IResolvable]
 ```
 
-- *Type:* str
+- *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/app_signon_policy#id AppSignonPolicy#id}.
+Default rules of the policy set to `DENY` or not.
 
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+If `false`, it is set to `DENY`. **WARNING** setting this attribute to false change the OKTA default behavior. Use at your own risk. This is only apply during creation, so import or update will not work
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/app_signon_policy#catch_all AppSignonPolicy#catch_all}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### DataOktaApp <a name="DataOktaApp" id="@cdktf/provider-okta.dataOktaApp.DataOktaApp"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/data-sources/app okta_app}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/data-sources/app okta_app}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaApp.DataOktaApp.Initializer"></a>
 
@@ -407,7 +407,7 @@ The construct id used in the generated config for the DataOktaApp to import.
 
 The id of the existing DataOktaApp that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/data-sources/app#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/data-sources/app#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -877,7 +877,7 @@ public readonly activeOnly: boolean | IResolvable;
 
 Search only ACTIVE applications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/data-sources/app#active_only DataOktaApp#active_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/data-sources/app#active_only DataOktaApp#active_only}
 
 ---
 
@@ -891,7 +891,7 @@ public readonly id: string;
 
 Id of application to retrieve, conflicts with label and label_prefix.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/data-sources/app#id DataOktaApp#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/data-sources/app#id DataOktaApp#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -915,7 +915,7 @@ Label uses the ?q=<label> query parameter exposed by
 				source. See:
 				https://developer.okta.com/docs/reference/api/apps/#list-applications
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/data-sources/app#label DataOktaApp#label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/data-sources/app#label DataOktaApp#label}
 
 ---
 
@@ -932,7 +932,7 @@ Label prefix of the app to retrieve, conflicts with label and id.
 This will tell the
 				provider to do a starts with query as opposed to an equals query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/data-sources/app#label_prefix DataOktaApp#label_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/data-sources/app#label_prefix DataOktaApp#label_prefix}
 
 ---
 
@@ -946,7 +946,7 @@ public readonly skipGroups: boolean | IResolvable;
 
 Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/data-sources/app#skip_groups DataOktaApp#skip_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/data-sources/app#skip_groups DataOktaApp#skip_groups}
 
 ---
 
@@ -960,7 +960,7 @@ public readonly skipUsers: boolean | IResolvable;
 
 Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/data-sources/app#skip_users DataOktaApp#skip_users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/data-sources/app#skip_users DataOktaApp#skip_users}
 
 ---
 

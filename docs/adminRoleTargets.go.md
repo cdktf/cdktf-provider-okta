@@ -4,7 +4,7 @@
 
 ### AdminRoleTargets <a name="AdminRoleTargets" id="@cdktf/provider-okta.adminRoleTargets.AdminRoleTargets"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/admin_role_targets okta_admin_role_targets}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/admin_role_targets okta_admin_role_targets}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.adminRoleTargets.AdminRoleTargets.Initializer"></a>
 
@@ -488,7 +488,7 @@ The construct id used in the generated config for the AdminRoleTargets to import
 
 The id of the existing AdminRoleTargets that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/admin_role_targets#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/admin_role_targets#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -838,11 +838,11 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/adminroletargets"
 | <code><a href="#@cdktf/provider-okta.adminRoleTargets.AdminRoleTargetsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.adminRoleTargets.AdminRoleTargetsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.adminRoleTargets.AdminRoleTargetsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.adminRoleTargets.AdminRoleTargetsConfig.property.roleType">RoleType</a></code> | <code>*string</code> | Type of the role that is assigned to the user and supports optional targets. See [API Docs](https://developer.okta.com/docs/reference/api/roles/#role-types). |
+| <code><a href="#@cdktf/provider-okta.adminRoleTargets.AdminRoleTargetsConfig.property.roleType">RoleType</a></code> | <code>*string</code> | Type of the role that is assigned to the user and supports optional targets. See [API Docs](https://developer.okta.com/docs/api/openapi/okta-management/guides/roles/#standard-roles). |
 | <code><a href="#@cdktf/provider-okta.adminRoleTargets.AdminRoleTargetsConfig.property.userId">UserId</a></code> | <code>*string</code> | User associated with the role. |
 | <code><a href="#@cdktf/provider-okta.adminRoleTargets.AdminRoleTargetsConfig.property.apps">Apps</a></code> | <code>*[]*string</code> | List of app names (name represents set of app instances) or a combination of app name and app instance ID (like 'salesforce' or 'facebook.0oapsqQ6dv19pqyEo0g3'). |
 | <code><a href="#@cdktf/provider-okta.adminRoleTargets.AdminRoleTargetsConfig.property.groups">Groups</a></code> | <code>*[]*string</code> | List of group IDs. Conflicts with apps. |
-| <code><a href="#@cdktf/provider-okta.adminRoleTargets.AdminRoleTargetsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/admin_role_targets#id AdminRoleTargets#id}. |
+| <code><a href="#@cdktf/provider-okta.adminRoleTargets.AdminRoleTargetsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/admin_role_targets#id AdminRoleTargets#id}. |
 
 ---
 
@@ -924,9 +924,9 @@ RoleType *string
 
 - *Type:* *string
 
-Type of the role that is assigned to the user and supports optional targets. See [API Docs](https://developer.okta.com/docs/reference/api/roles/#role-types).
+Type of the role that is assigned to the user and supports optional targets. See [API Docs](https://developer.okta.com/docs/api/openapi/okta-management/guides/roles/#standard-roles).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/admin_role_targets#role_type AdminRoleTargets#role_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/admin_role_targets#role_type AdminRoleTargets#role_type}
 
 ---
 
@@ -940,7 +940,7 @@ UserId *string
 
 User associated with the role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/admin_role_targets#user_id AdminRoleTargets#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/admin_role_targets#user_id AdminRoleTargets#user_id}
 
 ---
 
@@ -954,7 +954,7 @@ Apps *[]*string
 
 List of app names (name represents set of app instances) or a combination of app name and app instance ID (like 'salesforce' or 'facebook.0oapsqQ6dv19pqyEo0g3').
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/admin_role_targets#apps AdminRoleTargets#apps}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/admin_role_targets#apps AdminRoleTargets#apps}
 
 ---
 
@@ -968,7 +968,7 @@ Groups *[]*string
 
 List of group IDs. Conflicts with apps.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/admin_role_targets#groups AdminRoleTargets#groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/admin_role_targets#groups AdminRoleTargets#groups}
 
 ---
 
@@ -980,7 +980,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/admin_role_targets#id AdminRoleTargets#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/admin_role_targets#id AdminRoleTargets#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

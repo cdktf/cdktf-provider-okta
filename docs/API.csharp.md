@@ -97,6 +97,7 @@ The following submodules are available:
 - [emailDomainVerification](./emailDomainVerification.csharp.md)
 - [emailSender](./emailSender.csharp.md)
 - [emailSenderVerification](./emailSenderVerification.csharp.md)
+- [emailTemplateSettings](./emailTemplateSettings.csharp.md)
 - [eventHook](./eventHook.csharp.md)
 - [eventHookVerification](./eventHookVerification.csharp.md)
 - [factor](./factor.csharp.md)

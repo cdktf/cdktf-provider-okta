@@ -50,6 +50,7 @@ export * as emailDomain from './email-domain';
 export * as emailDomainVerification from './email-domain-verification';
 export * as emailSender from './email-sender';
 export * as emailSenderVerification from './email-sender-verification';
+export * as emailTemplateSettings from './email-template-settings';
 export * as eventHook from './event-hook';
 export * as eventHookVerification from './event-hook-verification';
 export * as factor from './factor';

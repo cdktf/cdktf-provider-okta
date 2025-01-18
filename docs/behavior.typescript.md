@@ -4,7 +4,7 @@
 
 ### Behavior <a name="Behavior" id="@cdktf/provider-okta.behavior.Behavior"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/behavior okta_behavior}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/behavior okta_behavior}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.behavior.Behavior.Initializer"></a>
 
@@ -509,7 +509,7 @@ The construct id used in the generated config for the Behavior to import.
 
 The id of the existing Behavior that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/behavior#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/behavior#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -903,7 +903,7 @@ const behaviorConfig: behavior.BehaviorConfig = { ... }
 | <code><a href="#@cdktf/provider-okta.behavior.BehaviorConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.behavior.BehaviorConfig.property.name">name</a></code> | <code>string</code> | Name of the behavior. |
 | <code><a href="#@cdktf/provider-okta.behavior.BehaviorConfig.property.type">type</a></code> | <code>string</code> | Type of the behavior. |
-| <code><a href="#@cdktf/provider-okta.behavior.BehaviorConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/behavior#id Behavior#id}. |
+| <code><a href="#@cdktf/provider-okta.behavior.BehaviorConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/behavior#id Behavior#id}. |
 | <code><a href="#@cdktf/provider-okta.behavior.BehaviorConfig.property.locationGranularityType">locationGranularityType</a></code> | <code>string</code> | Determines the method and level of detail used to evaluate the behavior. |
 | <code><a href="#@cdktf/provider-okta.behavior.BehaviorConfig.property.numberOfAuthentications">numberOfAuthentications</a></code> | <code>number</code> | The number of recent authentications used to evaluate the behavior. Required for `ANOMALOUS_LOCATION`, `ANOMALOUS_DEVICE` and `ANOMALOUS_IP` behavior types. |
 | <code><a href="#@cdktf/provider-okta.behavior.BehaviorConfig.property.radiusFromLocation">radiusFromLocation</a></code> | <code>number</code> | Radius from location (in kilometers). Should be at least 5. Required when `location_granularity_type` is set to `LAT_LONG`. |
@@ -992,7 +992,7 @@ public readonly name: string;
 
 Name of the behavior.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/behavior#name Behavior#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/behavior#name Behavior#name}
 
 ---
 
@@ -1008,7 +1008,7 @@ Type of the behavior.
 
 Can be set to `ANOMALOUS_LOCATION`, `ANOMALOUS_DEVICE`, `ANOMALOUS_IP` or `VELOCITY`. Resource will be recreated when the type changes.e
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/behavior#type Behavior#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/behavior#type Behavior#type}
 
 ---
 
@@ -1020,7 +1020,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/behavior#id Behavior#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/behavior#id Behavior#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1039,7 +1039,7 @@ Determines the method and level of detail used to evaluate the behavior.
 
 Required for `ANOMALOUS_LOCATION` behavior type. Can be set to `LAT_LONG`, `CITY`, `COUNTRY` or `SUBDIVISION`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/behavior#location_granularity_type Behavior#location_granularity_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/behavior#location_granularity_type Behavior#location_granularity_type}
 
 ---
 
@@ -1053,7 +1053,7 @@ public readonly numberOfAuthentications: number;
 
 The number of recent authentications used to evaluate the behavior. Required for `ANOMALOUS_LOCATION`, `ANOMALOUS_DEVICE` and `ANOMALOUS_IP` behavior types.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/behavior#number_of_authentications Behavior#number_of_authentications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/behavior#number_of_authentications Behavior#number_of_authentications}
 
 ---
 
@@ -1067,7 +1067,7 @@ public readonly radiusFromLocation: number;
 
 Radius from location (in kilometers). Should be at least 5. Required when `location_granularity_type` is set to `LAT_LONG`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/behavior#radius_from_location Behavior#radius_from_location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/behavior#radius_from_location Behavior#radius_from_location}
 
 ---
 
@@ -1081,7 +1081,7 @@ public readonly status: string;
 
 Behavior status: ACTIVE or INACTIVE. Default: `ACTIVE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/behavior#status Behavior#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/behavior#status Behavior#status}
 
 ---
 
@@ -1095,7 +1095,7 @@ public readonly velocity: number;
 
 Velocity (in kilometers per hour). Should be at least 1. Required for `VELOCITY` behavior.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/behavior#velocity Behavior#velocity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/behavior#velocity Behavior#velocity}
 
 ---
 
