@@ -97,6 +97,7 @@ The following submodules are available:
 - [emailDomainVerification](./emailDomainVerification.python.md)
 - [emailSender](./emailSender.python.md)
 - [emailSenderVerification](./emailSenderVerification.python.md)
+- [emailTemplateSettings](./emailTemplateSettings.python.md)
 - [eventHook](./eventHook.python.md)
 - [eventHookVerification](./eventHookVerification.python.md)
 - [factor](./factor.python.md)

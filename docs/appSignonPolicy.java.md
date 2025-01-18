@@ -4,7 +4,7 @@
 
 ### AppSignonPolicy <a name="AppSignonPolicy" id="@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/app_signon_policy okta_app_signon_policy}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/app_signon_policy okta_app_signon_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy.Initializer"></a>
 
@@ -25,7 +25,8 @@ AppSignonPolicy.Builder.create(Construct scope, java.lang.String id)
 //  .provisioners(RemoteExecProvisioner>)
     .description(java.lang.String)
     .name(java.lang.String)
-//  .id(java.lang.String)
+//  .catchAll(java.lang.Boolean)
+//  .catchAll(IResolvable)
     .build();
 ```
 
@@ -42,7 +43,7 @@ AppSignonPolicy.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Description of the policy. |
 | <code><a href="#@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Name of the policy. |
-| <code><a href="#@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/app_signon_policy#id AppSignonPolicy#id}. |
+| <code><a href="#@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy.Initializer.parameter.catchAll">catchAll</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Default rules of the policy set to `DENY` or not. |
 
 ---
 
@@ -112,7 +113,7 @@ Must be unique amongst siblings in the same scope
 
 Description of the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/app_signon_policy#description AppSignonPolicy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/app_signon_policy#description AppSignonPolicy#description}
 
 ---
 
@@ -122,18 +123,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Name of the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/app_signon_policy#name AppSignonPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/app_signon_policy#name AppSignonPolicy#name}
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy.Initializer.parameter.id"></a>
+##### `catchAll`<sup>Optional</sup> <a name="catchAll" id="@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy.Initializer.parameter.catchAll"></a>
 
-- *Type:* java.lang.String
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/app_signon_policy#id AppSignonPolicy#id}.
+Default rules of the policy set to `DENY` or not.
 
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+If `false`, it is set to `DENY`. **WARNING** setting this attribute to false change the OKTA default behavior. Use at your own risk. This is only apply during creation, so import or update will not work
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/app_signon_policy#catch_all AppSignonPolicy#catch_all}
 
 ---
 
@@ -164,7 +166,7 @@ If you experience problems setting this value it might not be settable. Please t
 | <code><a href="#@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy.resetCatchAll">resetCatchAll</a></code> | *No description.* |
 
 ---
 
@@ -458,10 +460,10 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy.resetId"></a>
+##### `resetCatchAll` <a name="resetCatchAll" id="@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy.resetCatchAll"></a>
 
 ```java
-public void resetId()
+public void resetCatchAll()
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -567,7 +569,7 @@ The construct id used in the generated config for the AppSignonPolicy to import.
 
 The id of the existing AppSignonPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/app_signon_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/app_signon_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -597,11 +599,13 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.12.0/doc
 | <code><a href="#@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy.property.descriptionInput">descriptionInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy.property.description">description</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy.property.defaultRuleId">defaultRuleId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy.property.catchAllInput">catchAllInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy.property.descriptionInput">descriptionInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy.property.catchAll">catchAll</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy.property.description">description</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 
 ---
@@ -748,20 +752,40 @@ public java.lang.Object getProvisioners();
 
 ---
 
-##### `descriptionInput`<sup>Optional</sup> <a name="descriptionInput" id="@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy.property.descriptionInput"></a>
+##### `defaultRuleId`<sup>Required</sup> <a name="defaultRuleId" id="@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy.property.defaultRuleId"></a>
 
 ```java
-public java.lang.String getDescriptionInput();
+public java.lang.String getDefaultRuleId();
 ```
 
 - *Type:* java.lang.String
 
 ---
 
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy.property.idInput"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy.property.id"></a>
 
 ```java
-public java.lang.String getIdInput();
+public java.lang.String getId();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `catchAllInput`<sup>Optional</sup> <a name="catchAllInput" id="@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy.property.catchAllInput"></a>
+
+```java
+public java.lang.Object getCatchAllInput();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `descriptionInput`<sup>Optional</sup> <a name="descriptionInput" id="@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy.property.descriptionInput"></a>
+
+```java
+public java.lang.String getDescriptionInput();
 ```
 
 - *Type:* java.lang.String
@@ -778,20 +802,20 @@ public java.lang.String getNameInput();
 
 ---
 
+##### `catchAll`<sup>Required</sup> <a name="catchAll" id="@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy.property.catchAll"></a>
+
+```java
+public java.lang.Object getCatchAll();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
 ##### `description`<sup>Required</sup> <a name="description" id="@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy.property.description"></a>
 
 ```java
 public java.lang.String getDescription();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy.property.id"></a>
-
-```java
-public java.lang.String getId();
 ```
 
 - *Type:* java.lang.String
@@ -849,7 +873,8 @@ AppSignonPolicyConfig.builder()
 //  .provisioners(RemoteExecProvisioner>)
     .description(java.lang.String)
     .name(java.lang.String)
-//  .id(java.lang.String)
+//  .catchAll(java.lang.Boolean)
+//  .catchAll(IResolvable)
     .build();
 ```
 
@@ -866,7 +891,7 @@ AppSignonPolicyConfig.builder()
 | <code><a href="#@cdktf/provider-okta.appSignonPolicy.AppSignonPolicyConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSignonPolicy.AppSignonPolicyConfig.property.description">description</a></code> | <code>java.lang.String</code> | Description of the policy. |
 | <code><a href="#@cdktf/provider-okta.appSignonPolicy.AppSignonPolicyConfig.property.name">name</a></code> | <code>java.lang.String</code> | Name of the policy. |
-| <code><a href="#@cdktf/provider-okta.appSignonPolicy.AppSignonPolicyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/app_signon_policy#id AppSignonPolicy#id}. |
+| <code><a href="#@cdktf/provider-okta.appSignonPolicy.AppSignonPolicyConfig.property.catchAll">catchAll</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Default rules of the policy set to `DENY` or not. |
 
 ---
 
@@ -950,7 +975,7 @@ public java.lang.String getDescription();
 
 Description of the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/app_signon_policy#description AppSignonPolicy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/app_signon_policy#description AppSignonPolicy#description}
 
 ---
 
@@ -964,22 +989,23 @@ public java.lang.String getName();
 
 Name of the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/app_signon_policy#name AppSignonPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/app_signon_policy#name AppSignonPolicy#name}
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-okta.appSignonPolicy.AppSignonPolicyConfig.property.id"></a>
+##### `catchAll`<sup>Optional</sup> <a name="catchAll" id="@cdktf/provider-okta.appSignonPolicy.AppSignonPolicyConfig.property.catchAll"></a>
 
 ```java
-public java.lang.String getId();
+public java.lang.Object getCatchAll();
 ```
 
-- *Type:* java.lang.String
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/app_signon_policy#id AppSignonPolicy#id}.
+Default rules of the policy set to `DENY` or not.
 
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+If `false`, it is set to `DENY`. **WARNING** setting this attribute to false change the OKTA default behavior. Use at your own risk. This is only apply during creation, so import or update will not work
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/app_signon_policy#catch_all AppSignonPolicy#catch_all}
 
 ---
 

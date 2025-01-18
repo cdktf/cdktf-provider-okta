@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/okta/okta/4.12.0/docs/data-sources/log_stream
+// https://registry.terraform.io/providers/okta/okta/4.13.0/docs/data-sources/log_stream
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +10,7 @@ export interface DataOktaLogStreamConfig extends cdktf.TerraformMetaArguments {
   /**
   * ID of the log stream to retrieve, conflicts with `name`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/data-sources/log_stream#id DataOktaLogStream#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/data-sources/log_stream#id DataOktaLogStream#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -24,7 +19,7 @@ export interface DataOktaLogStreamConfig extends cdktf.TerraformMetaArguments {
   /**
   * Unique name for the Log Stream object, conflicts with `id`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/data-sources/log_stream#name DataOktaLogStream#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/data-sources/log_stream#name DataOktaLogStream#name}
   */
   readonly name?: string;
 }
@@ -119,7 +114,7 @@ export class DataOktaLogStreamSettingsOutputReference extends cdktf.ComplexObjec
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/data-sources/log_stream okta_log_stream}
+* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/data-sources/log_stream okta_log_stream}
 */
 export class DataOktaLogStream extends cdktf.TerraformDataSource {
 
@@ -135,7 +130,7 @@ export class DataOktaLogStream extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataOktaLogStream resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataOktaLogStream to import
-  * @param importFromId The id of the existing DataOktaLogStream that should be imported. Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/data-sources/log_stream#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataOktaLogStream that should be imported. Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/data-sources/log_stream#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataOktaLogStream to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -147,7 +142,7 @@ export class DataOktaLogStream extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/data-sources/log_stream okta_log_stream} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/data-sources/log_stream okta_log_stream} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -158,7 +153,7 @@ export class DataOktaLogStream extends cdktf.TerraformDataSource {
       terraformResourceType: 'okta_log_stream',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '4.12.0',
+        providerVersion: '4.13.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

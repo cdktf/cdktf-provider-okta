@@ -97,6 +97,7 @@ The following submodules are available:
 - [emailDomainVerification](./emailDomainVerification.go.md)
 - [emailSender](./emailSender.go.md)
 - [emailSenderVerification](./emailSenderVerification.go.md)
+- [emailTemplateSettings](./emailTemplateSettings.go.md)
 - [eventHook](./eventHook.go.md)
 - [eventHookVerification](./eventHookVerification.go.md)
 - [factor](./factor.go.md)

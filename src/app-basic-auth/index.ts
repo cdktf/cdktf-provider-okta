@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/app_basic_auth
+// https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/app_basic_auth
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,65 +10,65 @@ export interface AppBasicAuthConfig extends cdktf.TerraformMetaArguments {
   /**
   * Custom error page URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/app_basic_auth#accessibility_error_redirect_url AppBasicAuth#accessibility_error_redirect_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/app_basic_auth#accessibility_error_redirect_url AppBasicAuth#accessibility_error_redirect_url}
   */
   readonly accessibilityErrorRedirectUrl?: string;
   /**
   * Custom login page URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/app_basic_auth#accessibility_login_redirect_url AppBasicAuth#accessibility_login_redirect_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/app_basic_auth#accessibility_login_redirect_url AppBasicAuth#accessibility_login_redirect_url}
   */
   readonly accessibilityLoginRedirectUrl?: string;
   /**
   * Enable self service. Default is `false`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/app_basic_auth#accessibility_self_service AppBasicAuth#accessibility_self_service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/app_basic_auth#accessibility_self_service AppBasicAuth#accessibility_self_service}
   */
   readonly accessibilitySelfService?: boolean | cdktf.IResolvable;
   /**
   * Application notes for admins.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/app_basic_auth#admin_note AppBasicAuth#admin_note}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/app_basic_auth#admin_note AppBasicAuth#admin_note}
   */
   readonly adminNote?: string;
   /**
   * Displays specific appLinks for the app. The value for each application link should be boolean.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/app_basic_auth#app_links_json AppBasicAuth#app_links_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/app_basic_auth#app_links_json AppBasicAuth#app_links_json}
   */
   readonly appLinksJson?: string;
   /**
   * The URL of the authenticating site for this app.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/app_basic_auth#auth_url AppBasicAuth#auth_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/app_basic_auth#auth_url AppBasicAuth#auth_url}
   */
   readonly authUrl: string;
   /**
   * Display auto submit toolbar
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/app_basic_auth#auto_submit_toolbar AppBasicAuth#auto_submit_toolbar}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/app_basic_auth#auto_submit_toolbar AppBasicAuth#auto_submit_toolbar}
   */
   readonly autoSubmitToolbar?: boolean | cdktf.IResolvable;
   /**
   * Application notes for end users.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/app_basic_auth#enduser_note AppBasicAuth#enduser_note}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/app_basic_auth#enduser_note AppBasicAuth#enduser_note}
   */
   readonly enduserNote?: string;
   /**
   * Do not display application icon on mobile app
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/app_basic_auth#hide_ios AppBasicAuth#hide_ios}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/app_basic_auth#hide_ios AppBasicAuth#hide_ios}
   */
   readonly hideIos?: boolean | cdktf.IResolvable;
   /**
   * Do not display application icon to users
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/app_basic_auth#hide_web AppBasicAuth#hide_web}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/app_basic_auth#hide_web AppBasicAuth#hide_web}
   */
   readonly hideWeb?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/app_basic_auth#id AppBasicAuth#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/app_basic_auth#id AppBasicAuth#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -82,45 +77,45 @@ export interface AppBasicAuthConfig extends cdktf.TerraformMetaArguments {
   /**
   * The Application's display name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/app_basic_auth#label AppBasicAuth#label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/app_basic_auth#label AppBasicAuth#label}
   */
   readonly label: string;
   /**
   * Local file path to the logo. The file must be in PNG, JPG, or GIF format, and less than 1 MB in size.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/app_basic_auth#logo AppBasicAuth#logo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/app_basic_auth#logo AppBasicAuth#logo}
   */
   readonly logo?: string;
   /**
   * Status of application. By default, it is `ACTIVE`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/app_basic_auth#status AppBasicAuth#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/app_basic_auth#status AppBasicAuth#status}
   */
   readonly status?: string;
   /**
   * The URL of the sign-in page for this app.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/app_basic_auth#url AppBasicAuth#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/app_basic_auth#url AppBasicAuth#url}
   */
   readonly url: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/app_basic_auth#timeouts AppBasicAuth#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/app_basic_auth#timeouts AppBasicAuth#timeouts}
   */
   readonly timeouts?: AppBasicAuthTimeouts;
 }
 export interface AppBasicAuthTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/app_basic_auth#create AppBasicAuth#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/app_basic_auth#create AppBasicAuth#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/app_basic_auth#read AppBasicAuth#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/app_basic_auth#read AppBasicAuth#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/app_basic_auth#update AppBasicAuth#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/app_basic_auth#update AppBasicAuth#update}
   */
   readonly update?: string;
 }
@@ -272,7 +267,7 @@ export class AppBasicAuthTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/app_basic_auth okta_app_basic_auth}
+* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/app_basic_auth okta_app_basic_auth}
 */
 export class AppBasicAuth extends cdktf.TerraformResource {
 
@@ -288,7 +283,7 @@ export class AppBasicAuth extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a AppBasicAuth resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AppBasicAuth to import
-  * @param importFromId The id of the existing AppBasicAuth that should be imported. Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/app_basic_auth#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AppBasicAuth that should be imported. Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/app_basic_auth#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AppBasicAuth to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -300,7 +295,7 @@ export class AppBasicAuth extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/app_basic_auth okta_app_basic_auth} Resource
+  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/app_basic_auth okta_app_basic_auth} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -311,7 +306,7 @@ export class AppBasicAuth extends cdktf.TerraformResource {
       terraformResourceType: 'okta_app_basic_auth',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '4.12.0',
+        providerVersion: '4.13.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

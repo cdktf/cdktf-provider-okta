@@ -97,6 +97,7 @@ The following submodules are available:
 - [emailDomainVerification](./emailDomainVerification.typescript.md)
 - [emailSender](./emailSender.typescript.md)
 - [emailSenderVerification](./emailSenderVerification.typescript.md)
+- [emailTemplateSettings](./emailTemplateSettings.typescript.md)
 - [eventHook](./eventHook.typescript.md)
 - [eventHookVerification](./eventHookVerification.typescript.md)
 - [factor](./factor.typescript.md)

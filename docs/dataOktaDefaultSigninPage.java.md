@@ -4,7 +4,7 @@
 
 ### DataOktaDefaultSigninPage <a name="DataOktaDefaultSigninPage" id="@cdktf/provider-okta.dataOktaDefaultSigninPage.DataOktaDefaultSigninPage"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/data-sources/default_signin_page okta_default_signin_page}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/data-sources/default_signin_page okta_default_signin_page}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaDefaultSigninPage.DataOktaDefaultSigninPage.Initializer"></a>
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 brand id of the preview signin page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/data-sources/default_signin_page#brand_id DataOktaDefaultSigninPage#brand_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/data-sources/default_signin_page#brand_id DataOktaDefaultSigninPage#brand_id}
 
 ---
 
@@ -431,7 +431,7 @@ The construct id used in the generated config for the DataOktaDefaultSigninPage 
 
 The id of the existing DataOktaDefaultSigninPage that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/data-sources/default_signin_page#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/data-sources/default_signin_page#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -799,7 +799,7 @@ public java.lang.String getBrandId();
 
 brand id of the preview signin page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/data-sources/default_signin_page#brand_id DataOktaDefaultSigninPage#brand_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/data-sources/default_signin_page#brand_id DataOktaDefaultSigninPage#brand_id}
 
 ---
 

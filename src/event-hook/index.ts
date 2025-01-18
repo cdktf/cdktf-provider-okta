@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/event_hook
+// https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/event_hook
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -18,23 +13,23 @@ export interface EventHookConfig extends cdktf.TerraformMetaArguments {
   * 	- 'uri' - (Required) The URI the hook will hit.
   * 	- 'type' - (Optional) The type of hook to trigger. Currently, the only supported type is 'HTTP'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/event_hook#auth EventHook#auth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/event_hook#auth EventHook#auth}
   */
   readonly auth?: { [key: string]: string };
   /**
   * Details of the endpoint the event hook will hit.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/event_hook#channel EventHook#channel}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/event_hook#channel EventHook#channel}
   */
   readonly channel: { [key: string]: string };
   /**
   * The events that will be delivered to this hook. [See here for a list of supported events](https://developer.okta.com/docs/reference/api/event-types/?q=event-hook-eligible).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/event_hook#events EventHook#events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/event_hook#events EventHook#events}
   */
   readonly events: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/event_hook#id EventHook#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/event_hook#id EventHook#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -43,29 +38,29 @@ export interface EventHookConfig extends cdktf.TerraformMetaArguments {
   /**
   * The event hook display name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/event_hook#name EventHook#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/event_hook#name EventHook#name}
   */
   readonly name: string;
   /**
   * Default to `ACTIVE`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/event_hook#status EventHook#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/event_hook#status EventHook#status}
   */
   readonly status?: string;
   /**
   * headers block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/event_hook#headers EventHook#headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/event_hook#headers EventHook#headers}
   */
   readonly headers?: EventHookHeaders[] | cdktf.IResolvable;
 }
 export interface EventHookHeaders {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/event_hook#key EventHook#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/event_hook#key EventHook#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/event_hook#value EventHook#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/event_hook#value EventHook#value}
   */
   readonly value?: string;
 }
@@ -210,7 +205,7 @@ export class EventHookHeadersList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/event_hook okta_event_hook}
+* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/event_hook okta_event_hook}
 */
 export class EventHook extends cdktf.TerraformResource {
 
@@ -226,7 +221,7 @@ export class EventHook extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a EventHook resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EventHook to import
-  * @param importFromId The id of the existing EventHook that should be imported. Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/event_hook#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing EventHook that should be imported. Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/event_hook#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EventHook to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -238,7 +233,7 @@ export class EventHook extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/event_hook okta_event_hook} Resource
+  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/event_hook okta_event_hook} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -249,7 +244,7 @@ export class EventHook extends cdktf.TerraformResource {
       terraformResourceType: 'okta_event_hook',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '4.12.0',
+        providerVersion: '4.13.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

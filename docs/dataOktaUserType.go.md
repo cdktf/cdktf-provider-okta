@@ -4,12 +4,12 @@
 
 ### DataOktaUserType <a name="DataOktaUserType" id="@cdktf/provider-okta.dataOktaUserType.DataOktaUserType"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/data-sources/user_type okta_user_type}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/data-sources/user_type okta_user_type}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaUserType.DataOktaUserType.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktausertype"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktausertype"
 
 dataoktausertype.NewDataOktaUserType(scope Construct, id *string, config DataOktaUserTypeConfig) DataOktaUserType
 ```
@@ -290,7 +290,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.dataOktaUserType.DataOktaUserType.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktausertype"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktausertype"
 
 dataoktausertype.DataOktaUserType_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.dataOktaUserType.DataOktaUserType.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktausertype"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktausertype"
 
 dataoktausertype.DataOktaUserType_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ dataoktausertype.DataOktaUserType_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-okta.dataOktaUserType.DataOktaUserType.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktausertype"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktausertype"
 
 dataoktausertype.DataOktaUserType_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataoktausertype.DataOktaUserType_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.dataOktaUserType.DataOktaUserType.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktausertype"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktausertype"
 
 dataoktausertype.DataOktaUserType_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -379,7 +379,7 @@ The construct id used in the generated config for the DataOktaUserType to import
 
 The id of the existing DataOktaUserType that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/data-sources/user_type#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/data-sources/user_type#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -623,7 +623,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaUserType.DataOktaUserTypeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktausertype"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktausertype"
 
 &dataoktausertype.DataOktaUserTypeConfig {
 	Connection: interface{},
@@ -734,7 +734,7 @@ Id *string
 
 ID of the user type to retrieve, conflicts with `name`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/data-sources/user_type#id DataOktaUserType#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/data-sources/user_type#id DataOktaUserType#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -751,7 +751,7 @@ Name *string
 
 Name of user type to retrieve, conflicts with `id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/data-sources/user_type#name DataOktaUserType#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/data-sources/user_type#name DataOktaUserType#name}
 
 ---
 

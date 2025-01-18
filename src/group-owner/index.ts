@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/group_owner
+// https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/group_owner
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,25 +10,25 @@ export interface GroupOwnerConfig extends cdktf.TerraformMetaArguments {
   /**
   * The id of the group
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/group_owner#group_id GroupOwner#group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/group_owner#group_id GroupOwner#group_id}
   */
   readonly groupId: string;
   /**
   * The user id of the group owner
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/group_owner#id_of_group_owner GroupOwner#id_of_group_owner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/group_owner#id_of_group_owner GroupOwner#id_of_group_owner}
   */
   readonly idOfGroupOwner: string;
   /**
   * The entity type of the owner. Enum: "GROUP" "USER"
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/group_owner#type GroupOwner#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/group_owner#type GroupOwner#type}
   */
   readonly type: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/group_owner okta_group_owner}
+* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/group_owner okta_group_owner}
 */
 export class GroupOwner extends cdktf.TerraformResource {
 
@@ -49,7 +44,7 @@ export class GroupOwner extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GroupOwner resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GroupOwner to import
-  * @param importFromId The id of the existing GroupOwner that should be imported. Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/group_owner#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GroupOwner that should be imported. Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/group_owner#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GroupOwner to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -61,7 +56,7 @@ export class GroupOwner extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.12.0/docs/resources/group_owner okta_group_owner} Resource
+  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/group_owner okta_group_owner} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -72,7 +67,7 @@ export class GroupOwner extends cdktf.TerraformResource {
       terraformResourceType: 'okta_group_owner',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '4.12.0',
+        providerVersion: '4.13.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
