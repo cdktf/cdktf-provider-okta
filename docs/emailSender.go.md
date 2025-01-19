@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.13.0/doc
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.emailSender.EmailSender.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/emailsender"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/emailsender"
 
 emailsender.NewEmailSender(scope Construct, id *string, config EmailSenderConfig) EmailSender
 ```
@@ -385,7 +385,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.emailSender.EmailSender.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/emailsender"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/emailsender"
 
 emailsender.EmailSender_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.emailSender.EmailSender.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/emailsender"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/emailsender"
 
 emailsender.EmailSender_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ emailsender.EmailSender_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.emailSender.EmailSender.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/emailsender"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/emailsender"
 
 emailsender.EmailSender_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ emailsender.EmailSender_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.emailSender.EmailSender.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/emailsender"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/emailsender"
 
 emailsender.EmailSender_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -784,7 +784,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.emailSender.EmailSenderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/emailsender"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/emailsender"
 
 &emailsender.EmailSenderConfig {
 	Connection: interface{},
@@ -951,7 +951,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.emailSender.EmailSenderDnsRecords.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/emailsender"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/emailsender"
 
 &emailsender.EmailSenderDnsRecords {
 
@@ -966,7 +966,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/emailsender"
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.emailSender.EmailSenderDnsRecordsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/emailsender"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/emailsender"
 
 emailsender.NewEmailSenderDnsRecordsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EmailSenderDnsRecordsList
 ```
@@ -1115,7 +1115,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.emailSender.EmailSenderDnsRecordsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/emailsender"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/emailsender"
 
 emailsender.NewEmailSenderDnsRecordsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EmailSenderDnsRecordsOutputReference
 ```
