@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.13.0/doc
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appUserSchemaProperty.AppUserSchemaProperty.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/appuserschemaproperty"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appuserschemaproperty"
 
 appuserschemaproperty.NewAppUserSchemaProperty(scope Construct, id *string, config AppUserSchemaPropertyConfig) AppUserSchemaProperty
 ```
@@ -530,7 +530,7 @@ func ResetUserType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.appUserSchemaProperty.AppUserSchemaProperty.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/appuserschemaproperty"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appuserschemaproperty"
 
 appuserschemaproperty.AppUserSchemaProperty_IsConstruct(x interface{}) *bool
 ```
@@ -562,7 +562,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.appUserSchemaProperty.AppUserSchemaProperty.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/appuserschemaproperty"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appuserschemaproperty"
 
 appuserschemaproperty.AppUserSchemaProperty_IsTerraformElement(x interface{}) *bool
 ```
@@ -576,7 +576,7 @@ appuserschemaproperty.AppUserSchemaProperty_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.appUserSchemaProperty.AppUserSchemaProperty.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/appuserschemaproperty"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appuserschemaproperty"
 
 appuserschemaproperty.AppUserSchemaProperty_IsTerraformResource(x interface{}) *bool
 ```
@@ -590,7 +590,7 @@ appuserschemaproperty.AppUserSchemaProperty_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.appUserSchemaProperty.AppUserSchemaProperty.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/appuserschemaproperty"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appuserschemaproperty"
 
 appuserschemaproperty.AppUserSchemaProperty_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1303,7 +1303,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.appUserSchemaProperty.AppUserSchemaPropertyArrayOneOf.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/appuserschemaproperty"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appuserschemaproperty"
 
 &appuserschemaproperty.AppUserSchemaPropertyArrayOneOf {
 	Const: *string,
@@ -1353,7 +1353,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.appUserSchemaProperty.AppUserSchemaPropertyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/appuserschemaproperty"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appuserschemaproperty"
 
 &appuserschemaproperty.AppUserSchemaPropertyConfig {
 	Connection: interface{},
@@ -1812,7 +1812,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.appUserSchemaProperty.AppUserSchemaPropertyOneOf.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/appuserschemaproperty"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appuserschemaproperty"
 
 &appuserschemaproperty.AppUserSchemaPropertyOneOf {
 	Const: *string,
@@ -1864,7 +1864,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appUserSchemaProperty.AppUserSchemaPropertyArrayOneOfList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/appuserschemaproperty"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appuserschemaproperty"
 
 appuserschemaproperty.NewAppUserSchemaPropertyArrayOneOfList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppUserSchemaPropertyArrayOneOfList
 ```
@@ -2024,7 +2024,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appUserSchemaProperty.AppUserSchemaPropertyArrayOneOfOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/appuserschemaproperty"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appuserschemaproperty"
 
 appuserschemaproperty.NewAppUserSchemaPropertyArrayOneOfOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppUserSchemaPropertyArrayOneOfOutputReference
 ```
@@ -2335,7 +2335,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appUserSchemaProperty.AppUserSchemaPropertyOneOfList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/appuserschemaproperty"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appuserschemaproperty"
 
 appuserschemaproperty.NewAppUserSchemaPropertyOneOfList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AppUserSchemaPropertyOneOfList
 ```
@@ -2495,7 +2495,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appUserSchemaProperty.AppUserSchemaPropertyOneOfOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/appuserschemaproperty"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appuserschemaproperty"
 
 appuserschemaproperty.NewAppUserSchemaPropertyOneOfOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AppUserSchemaPropertyOneOfOutputReference
 ```
