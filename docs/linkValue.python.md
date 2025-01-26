@@ -4,7 +4,7 @@
 
 ### LinkValue <a name="LinkValue" id="@cdktf/provider-okta.linkValue.LinkValue"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/link_value okta_link_value}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/link_value okta_link_value}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.linkValue.LinkValue.Initializer"></a>
 
@@ -42,7 +42,7 @@ linkValue.LinkValue(
 | <code><a href="#@cdktf/provider-okta.linkValue.LinkValue.Initializer.parameter.primaryName">primary_name</a></code> | <code>str</code> | Name of the `primary` relationship being assigned. |
 | <code><a href="#@cdktf/provider-okta.linkValue.LinkValue.Initializer.parameter.primaryUserId">primary_user_id</a></code> | <code>str</code> | User ID to be assigned to `primary` for the 'associated' user in the specified relationship. |
 | <code><a href="#@cdktf/provider-okta.linkValue.LinkValue.Initializer.parameter.associatedUserIds">associated_user_ids</a></code> | <code>typing.List[str]</code> | Set of User IDs or login values of the users to be assigned the `associated` relationship. |
-| <code><a href="#@cdktf/provider-okta.linkValue.LinkValue.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/link_value#id LinkValue#id}. |
+| <code><a href="#@cdktf/provider-okta.linkValue.LinkValue.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/link_value#id LinkValue#id}. |
 
 ---
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 Name of the `primary` relationship being assigned.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/link_value#primary_name LinkValue#primary_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/link_value#primary_name LinkValue#primary_name}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 User ID to be assigned to `primary` for the 'associated' user in the specified relationship.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/link_value#primary_user_id LinkValue#primary_user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/link_value#primary_user_id LinkValue#primary_user_id}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Set of User IDs or login values of the users to be assigned the `associated` relationship.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/link_value#associated_user_ids LinkValue#associated_user_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/link_value#associated_user_ids LinkValue#associated_user_ids}
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/link_value#id LinkValue#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/link_value#id LinkValue#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -630,7 +630,7 @@ The construct id used in the generated config for the LinkValue to import.
 
 The id of the existing LinkValue that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/link_value#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/link_value#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -949,7 +949,7 @@ linkValue.LinkValueConfig(
 | <code><a href="#@cdktf/provider-okta.linkValue.LinkValueConfig.property.primaryName">primary_name</a></code> | <code>str</code> | Name of the `primary` relationship being assigned. |
 | <code><a href="#@cdktf/provider-okta.linkValue.LinkValueConfig.property.primaryUserId">primary_user_id</a></code> | <code>str</code> | User ID to be assigned to `primary` for the 'associated' user in the specified relationship. |
 | <code><a href="#@cdktf/provider-okta.linkValue.LinkValueConfig.property.associatedUserIds">associated_user_ids</a></code> | <code>typing.List[str]</code> | Set of User IDs or login values of the users to be assigned the `associated` relationship. |
-| <code><a href="#@cdktf/provider-okta.linkValue.LinkValueConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/link_value#id LinkValue#id}. |
+| <code><a href="#@cdktf/provider-okta.linkValue.LinkValueConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/link_value#id LinkValue#id}. |
 
 ---
 
@@ -1033,7 +1033,7 @@ primary_name: str
 
 Name of the `primary` relationship being assigned.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/link_value#primary_name LinkValue#primary_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/link_value#primary_name LinkValue#primary_name}
 
 ---
 
@@ -1047,7 +1047,7 @@ primary_user_id: str
 
 User ID to be assigned to `primary` for the 'associated' user in the specified relationship.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/link_value#primary_user_id LinkValue#primary_user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/link_value#primary_user_id LinkValue#primary_user_id}
 
 ---
 
@@ -1061,7 +1061,7 @@ associated_user_ids: typing.List[str]
 
 Set of User IDs or login values of the users to be assigned the `associated` relationship.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/link_value#associated_user_ids LinkValue#associated_user_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/link_value#associated_user_ids LinkValue#associated_user_ids}
 
 ---
 
@@ -1073,7 +1073,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/link_value#id LinkValue#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/link_value#id LinkValue#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

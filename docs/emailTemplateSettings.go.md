@@ -4,12 +4,12 @@
 
 ### EmailTemplateSettings <a name="EmailTemplateSettings" id="@cdktf/provider-okta.emailTemplateSettings.EmailTemplateSettings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/email_template_settings okta_email_template_settings}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/email_template_settings okta_email_template_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.emailTemplateSettings.EmailTemplateSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/emailtemplatesettings"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/emailtemplatesettings"
 
 emailtemplatesettings.NewEmailTemplateSettings(scope Construct, id *string, config EmailTemplateSettingsConfig) EmailTemplateSettings
 ```
@@ -378,7 +378,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.emailTemplateSettings.EmailTemplateSettings.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/emailtemplatesettings"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/emailtemplatesettings"
 
 emailtemplatesettings.EmailTemplateSettings_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.emailTemplateSettings.EmailTemplateSettings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/emailtemplatesettings"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/emailtemplatesettings"
 
 emailtemplatesettings.EmailTemplateSettings_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ emailtemplatesettings.EmailTemplateSettings_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.emailTemplateSettings.EmailTemplateSettings.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/emailtemplatesettings"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/emailtemplatesettings"
 
 emailtemplatesettings.EmailTemplateSettings_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ emailtemplatesettings.EmailTemplateSettings_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.emailTemplateSettings.EmailTemplateSettings.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/emailtemplatesettings"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/emailtemplatesettings"
 
 emailtemplatesettings.EmailTemplateSettings_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -467,7 +467,7 @@ The construct id used in the generated config for the EmailTemplateSettings to i
 
 The id of the existing EmailTemplateSettings that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/email_template_settings#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/email_template_settings#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -744,7 +744,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.emailTemplateSettings.EmailTemplateSettingsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/emailtemplatesettings"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/emailtemplatesettings"
 
 &emailtemplatesettings.EmailTemplateSettingsConfig {
 	Connection: interface{},
@@ -857,7 +857,7 @@ BrandId *string
 
 The ID of the brand.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/email_template_settings#brand_id EmailTemplateSettings#brand_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/email_template_settings#brand_id EmailTemplateSettings#brand_id}
 
 ---
 
@@ -871,7 +871,7 @@ Recipients *string
 
 The recipients the emails of this template will be sent to - Valid values: `ALL_USERS`, `ADMINS_ONLY`, `NO_USERS`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/email_template_settings#recipients EmailTemplateSettings#recipients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/email_template_settings#recipients EmailTemplateSettings#recipients}
 
 ---
 
@@ -885,7 +885,7 @@ TemplateName *string
 
 Email template name - Example values: `AccountLockout`,`ADForgotPassword`,`ADForgotPasswordDenied`,`ADSelfServiceUnlock`,`ADUserActivation`,`AuthenticatorEnrolled`,`AuthenticatorReset`,`ChangeEmailConfirmation`,`EmailChallenge`,`EmailChangeConfirmation`,`EmailFactorVerification`,`ForgotPassword`,`ForgotPasswordDenied`,`IGAReviewerEndNotification`,`IGAReviewerNotification`,`IGAReviewerPendingNotification`,`IGAReviewerReassigned`,`LDAPForgotPassword`,`LDAPForgotPasswordDenied`,`LDAPSelfServiceUnlock`,`LDAPUserActivation`,`MyAccountChangeConfirmation`,`NewSignOnNotification`,`OktaVerifyActivation`,`PasswordChanged`,`PasswordResetByAdmin`,`PendingEmailChange`,`RegistrationActivation`,`RegistrationEmailVerification`,`SelfServiceUnlock`,`SelfServiceUnlockOnUnlockedAccount`,`UserActivation`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/email_template_settings#template_name EmailTemplateSettings#template_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/email_template_settings#template_name EmailTemplateSettings#template_name}
 
 ---
 
