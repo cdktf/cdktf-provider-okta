@@ -4,7 +4,7 @@
 
 ### AuthServer <a name="AuthServer" id="@cdktf/provider-okta.authServer.AuthServer"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/auth_server okta_auth_server}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/auth_server okta_auth_server}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.authServer.AuthServer.Initializer"></a>
 
@@ -48,7 +48,7 @@ AuthServer.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-okta.authServer.AuthServer.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The name of the authorization server. |
 | <code><a href="#@cdktf/provider-okta.authServer.AuthServer.Initializer.parameter.credentialsRotationMode">credentialsRotationMode</a></code> | <code>java.lang.String</code> | The key rotation mode for the authorization server. Can be `AUTO` or `MANUAL`. Default: `AUTO`. |
 | <code><a href="#@cdktf/provider-okta.authServer.AuthServer.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | The description of the authorization server. |
-| <code><a href="#@cdktf/provider-okta.authServer.AuthServer.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/auth_server#id AuthServer#id}. |
+| <code><a href="#@cdktf/provider-okta.authServer.AuthServer.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/auth_server#id AuthServer#id}. |
 | <code><a href="#@cdktf/provider-okta.authServer.AuthServer.Initializer.parameter.issuerMode">issuerMode</a></code> | <code>java.lang.String</code> | *Early Access Property*. |
 | <code><a href="#@cdktf/provider-okta.authServer.AuthServer.Initializer.parameter.status">status</a></code> | <code>java.lang.String</code> | Default to `ACTIVE`. |
 
@@ -122,7 +122,7 @@ The recipients that the tokens are intended for.
 
 This becomes the `aud` claim in an access token. Currently Okta only supports a single value here.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/auth_server#audiences AuthServer#audiences}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/auth_server#audiences AuthServer#audiences}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 The name of the authorization server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/auth_server#name AuthServer#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/auth_server#name AuthServer#name}
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 The key rotation mode for the authorization server. Can be `AUTO` or `MANUAL`. Default: `AUTO`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/auth_server#credentials_rotation_mode AuthServer#credentials_rotation_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/auth_server#credentials_rotation_mode AuthServer#credentials_rotation_mode}
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 The description of the authorization server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/auth_server#description AuthServer#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/auth_server#description AuthServer#description}
 
 ---
 
@@ -160,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/auth_server#id AuthServer#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/auth_server#id AuthServer#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -175,7 +175,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Allows you to use a custom issuer URL. It can be set to `CUSTOM_URL`, `ORG_URL`, or `DYNAMIC`. Default: `ORG_URL`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/auth_server#issuer_mode AuthServer#issuer_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/auth_server#issuer_mode AuthServer#issuer_mode}
 
 ---
 
@@ -185,7 +185,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Default to `ACTIVE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/auth_server#status AuthServer#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/auth_server#status AuthServer#status}
 
 ---
 
@@ -647,7 +647,7 @@ The construct id used in the generated config for the AuthServer to import.
 
 The id of the existing AuthServer that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/auth_server#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/auth_server#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1084,7 +1084,7 @@ AuthServerConfig.builder()
 | <code><a href="#@cdktf/provider-okta.authServer.AuthServerConfig.property.name">name</a></code> | <code>java.lang.String</code> | The name of the authorization server. |
 | <code><a href="#@cdktf/provider-okta.authServer.AuthServerConfig.property.credentialsRotationMode">credentialsRotationMode</a></code> | <code>java.lang.String</code> | The key rotation mode for the authorization server. Can be `AUTO` or `MANUAL`. Default: `AUTO`. |
 | <code><a href="#@cdktf/provider-okta.authServer.AuthServerConfig.property.description">description</a></code> | <code>java.lang.String</code> | The description of the authorization server. |
-| <code><a href="#@cdktf/provider-okta.authServer.AuthServerConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/auth_server#id AuthServer#id}. |
+| <code><a href="#@cdktf/provider-okta.authServer.AuthServerConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/auth_server#id AuthServer#id}. |
 | <code><a href="#@cdktf/provider-okta.authServer.AuthServerConfig.property.issuerMode">issuerMode</a></code> | <code>java.lang.String</code> | *Early Access Property*. |
 | <code><a href="#@cdktf/provider-okta.authServer.AuthServerConfig.property.status">status</a></code> | <code>java.lang.String</code> | Default to `ACTIVE`. |
 
@@ -1172,7 +1172,7 @@ The recipients that the tokens are intended for.
 
 This becomes the `aud` claim in an access token. Currently Okta only supports a single value here.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/auth_server#audiences AuthServer#audiences}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/auth_server#audiences AuthServer#audiences}
 
 ---
 
@@ -1186,7 +1186,7 @@ public java.lang.String getName();
 
 The name of the authorization server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/auth_server#name AuthServer#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/auth_server#name AuthServer#name}
 
 ---
 
@@ -1200,7 +1200,7 @@ public java.lang.String getCredentialsRotationMode();
 
 The key rotation mode for the authorization server. Can be `AUTO` or `MANUAL`. Default: `AUTO`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/auth_server#credentials_rotation_mode AuthServer#credentials_rotation_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/auth_server#credentials_rotation_mode AuthServer#credentials_rotation_mode}
 
 ---
 
@@ -1214,7 +1214,7 @@ public java.lang.String getDescription();
 
 The description of the authorization server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/auth_server#description AuthServer#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/auth_server#description AuthServer#description}
 
 ---
 
@@ -1226,7 +1226,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/auth_server#id AuthServer#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/auth_server#id AuthServer#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1245,7 +1245,7 @@ public java.lang.String getIssuerMode();
 
 Allows you to use a custom issuer URL. It can be set to `CUSTOM_URL`, `ORG_URL`, or `DYNAMIC`. Default: `ORG_URL`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/auth_server#issuer_mode AuthServer#issuer_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/auth_server#issuer_mode AuthServer#issuer_mode}
 
 ---
 
@@ -1259,7 +1259,7 @@ public java.lang.String getStatus();
 
 Default to `ACTIVE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/auth_server#status AuthServer#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/auth_server#status AuthServer#status}
 
 ---
 

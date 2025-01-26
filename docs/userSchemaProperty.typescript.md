@@ -4,7 +4,7 @@
 
 ### UserSchemaProperty <a name="UserSchemaProperty" id="@cdktf/provider-okta.userSchemaProperty.UserSchemaProperty"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/user_schema_property okta_user_schema_property}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/user_schema_property okta_user_schema_property}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.userSchemaProperty.UserSchemaProperty.Initializer"></a>
 
@@ -639,7 +639,7 @@ The construct id used in the generated config for the UserSchemaProperty to impo
 
 The id of the existing UserSchemaProperty that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/user_schema_property#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/user_schema_property#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1347,7 +1347,7 @@ public readonly const: string;
 
 Value mapping to member of `array_enum`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/user_schema_property#const UserSchemaProperty#const}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/user_schema_property#const UserSchemaProperty#const}
 
 ---
 
@@ -1361,7 +1361,7 @@ public readonly title: string;
 
 Display name for the enum value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/user_schema_property#title UserSchemaProperty#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/user_schema_property#title UserSchemaProperty#title}
 
 ---
 
@@ -1396,7 +1396,7 @@ const userSchemaPropertyConfig: userSchemaProperty.UserSchemaPropertyConfig = { 
 | <code><a href="#@cdktf/provider-okta.userSchemaProperty.UserSchemaPropertyConfig.property.enum">enum</a></code> | <code>string[]</code> | Array of values a primitive property can be set to. See `array_enum` for arrays. |
 | <code><a href="#@cdktf/provider-okta.userSchemaProperty.UserSchemaPropertyConfig.property.externalName">externalName</a></code> | <code>string</code> | External name of the user schema property. |
 | <code><a href="#@cdktf/provider-okta.userSchemaProperty.UserSchemaPropertyConfig.property.externalNamespace">externalNamespace</a></code> | <code>string</code> | External namespace of the user schema property. |
-| <code><a href="#@cdktf/provider-okta.userSchemaProperty.UserSchemaPropertyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/user_schema_property#id UserSchemaProperty#id}. |
+| <code><a href="#@cdktf/provider-okta.userSchemaProperty.UserSchemaPropertyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/user_schema_property#id UserSchemaProperty#id}. |
 | <code><a href="#@cdktf/provider-okta.userSchemaProperty.UserSchemaPropertyConfig.property.master">master</a></code> | <code>string</code> | Master priority for the user schema property. It can be set to `PROFILE_MASTER`, `OVERRIDE` or `OKTA`. |
 | <code><a href="#@cdktf/provider-okta.userSchemaProperty.UserSchemaPropertyConfig.property.masterOverridePriority">masterOverridePriority</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-okta.userSchemaProperty.UserSchemaPropertyMasterOverridePriority">UserSchemaPropertyMasterOverridePriority</a>[]</code> | master_override_priority block. |
 | <code><a href="#@cdktf/provider-okta.userSchemaProperty.UserSchemaPropertyConfig.property.maxLength">maxLength</a></code> | <code>number</code> | The maximum length of the user property value. Only applies to type `string`. |
@@ -1491,7 +1491,7 @@ public readonly index: string;
 
 Subschema unique string identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/user_schema_property#index UserSchemaProperty#index}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/user_schema_property#index UserSchemaProperty#index}
 
 ---
 
@@ -1505,7 +1505,7 @@ public readonly title: string;
 
 Subschema title (display name).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/user_schema_property#title UserSchemaProperty#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/user_schema_property#title UserSchemaProperty#title}
 
 ---
 
@@ -1519,7 +1519,7 @@ public readonly type: string;
 
 The type of the schema property. It can be `string`, `boolean`, `number`, `integer`, `array`, or `object`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/user_schema_property#type UserSchemaProperty#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/user_schema_property#type UserSchemaProperty#type}
 
 ---
 
@@ -1533,7 +1533,7 @@ public readonly arrayEnum: string[];
 
 Array of values that an array property's items can be set to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/user_schema_property#array_enum UserSchemaProperty#array_enum}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/user_schema_property#array_enum UserSchemaProperty#array_enum}
 
 ---
 
@@ -1547,7 +1547,7 @@ public readonly arrayOneOf: IResolvable | UserSchemaPropertyArrayOneOf[];
 
 array_one_of block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/user_schema_property#array_one_of UserSchemaProperty#array_one_of}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/user_schema_property#array_one_of UserSchemaProperty#array_one_of}
 
 ---
 
@@ -1561,7 +1561,7 @@ public readonly arrayType: string;
 
 The type of the array elements if `type` is set to `array`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/user_schema_property#array_type UserSchemaProperty#array_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/user_schema_property#array_type UserSchemaProperty#array_type}
 
 ---
 
@@ -1575,7 +1575,7 @@ public readonly description: string;
 
 The description of the user schema property.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/user_schema_property#description UserSchemaProperty#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/user_schema_property#description UserSchemaProperty#description}
 
 ---
 
@@ -1589,7 +1589,7 @@ public readonly enum: string[];
 
 Array of values a primitive property can be set to. See `array_enum` for arrays.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/user_schema_property#enum UserSchemaProperty#enum}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/user_schema_property#enum UserSchemaProperty#enum}
 
 ---
 
@@ -1603,7 +1603,7 @@ public readonly externalName: string;
 
 External name of the user schema property.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/user_schema_property#external_name UserSchemaProperty#external_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/user_schema_property#external_name UserSchemaProperty#external_name}
 
 ---
 
@@ -1617,7 +1617,7 @@ public readonly externalNamespace: string;
 
 External namespace of the user schema property.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/user_schema_property#external_namespace UserSchemaProperty#external_namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/user_schema_property#external_namespace UserSchemaProperty#external_namespace}
 
 ---
 
@@ -1629,7 +1629,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/user_schema_property#id UserSchemaProperty#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/user_schema_property#id UserSchemaProperty#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1646,7 +1646,7 @@ public readonly master: string;
 
 Master priority for the user schema property. It can be set to `PROFILE_MASTER`, `OVERRIDE` or `OKTA`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/user_schema_property#master UserSchemaProperty#master}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/user_schema_property#master UserSchemaProperty#master}
 
 ---
 
@@ -1660,7 +1660,7 @@ public readonly masterOverridePriority: IResolvable | UserSchemaPropertyMasterOv
 
 master_override_priority block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/user_schema_property#master_override_priority UserSchemaProperty#master_override_priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/user_schema_property#master_override_priority UserSchemaProperty#master_override_priority}
 
 ---
 
@@ -1674,7 +1674,7 @@ public readonly maxLength: number;
 
 The maximum length of the user property value. Only applies to type `string`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/user_schema_property#max_length UserSchemaProperty#max_length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/user_schema_property#max_length UserSchemaProperty#max_length}
 
 ---
 
@@ -1688,7 +1688,7 @@ public readonly minLength: number;
 
 The minimum length of the user property value. Only applies to type `string`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/user_schema_property#min_length UserSchemaProperty#min_length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/user_schema_property#min_length UserSchemaProperty#min_length}
 
 ---
 
@@ -1702,7 +1702,7 @@ public readonly oneOf: IResolvable | UserSchemaPropertyOneOf[];
 
 one_of block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/user_schema_property#one_of UserSchemaProperty#one_of}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/user_schema_property#one_of UserSchemaProperty#one_of}
 
 ---
 
@@ -1716,7 +1716,7 @@ public readonly pattern: string;
 
 The validation pattern to use for the subschema. Must be in form of '.+', or '[<pattern>]+' if present.'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/user_schema_property#pattern UserSchemaProperty#pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/user_schema_property#pattern UserSchemaProperty#pattern}
 
 ---
 
@@ -1730,7 +1730,7 @@ public readonly permissions: string;
 
 Access control permissions for the property. It can be set to `READ_WRITE`, `READ_ONLY`, `HIDE`. Default: `READ_ONLY`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/user_schema_property#permissions UserSchemaProperty#permissions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/user_schema_property#permissions UserSchemaProperty#permissions}
 
 ---
 
@@ -1744,7 +1744,7 @@ public readonly required: boolean | IResolvable;
 
 Whether the subschema is required.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/user_schema_property#required UserSchemaProperty#required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/user_schema_property#required UserSchemaProperty#required}
 
 ---
 
@@ -1758,7 +1758,7 @@ public readonly scope: string;
 
 determines whether an app user attribute can be set at the Individual or Group Level. Default: `NONE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/user_schema_property#scope UserSchemaProperty#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/user_schema_property#scope UserSchemaProperty#scope}
 
 ---
 
@@ -1772,7 +1772,7 @@ public readonly unique: string;
 
 Whether the property should be unique. It can be set to `UNIQUE_VALIDATED` or `NOT_UNIQUE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/user_schema_property#unique UserSchemaProperty#unique}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/user_schema_property#unique UserSchemaProperty#unique}
 
 ---
 
@@ -1786,7 +1786,7 @@ public readonly userType: string;
 
 User type ID. By default, it is `default`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/user_schema_property#user_type UserSchemaProperty#user_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/user_schema_property#user_type UserSchemaProperty#user_type}
 
 ---
 
@@ -1804,8 +1804,8 @@ const userSchemaPropertyMasterOverridePriority: userSchemaProperty.UserSchemaPro
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.userSchemaProperty.UserSchemaPropertyMasterOverridePriority.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/user_schema_property#value UserSchemaProperty#value}. |
-| <code><a href="#@cdktf/provider-okta.userSchemaProperty.UserSchemaPropertyMasterOverridePriority.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/user_schema_property#type UserSchemaProperty#type}. |
+| <code><a href="#@cdktf/provider-okta.userSchemaProperty.UserSchemaPropertyMasterOverridePriority.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/user_schema_property#value UserSchemaProperty#value}. |
+| <code><a href="#@cdktf/provider-okta.userSchemaProperty.UserSchemaPropertyMasterOverridePriority.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/user_schema_property#type UserSchemaProperty#type}. |
 
 ---
 
@@ -1817,7 +1817,7 @@ public readonly value: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/user_schema_property#value UserSchemaProperty#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/user_schema_property#value UserSchemaProperty#value}.
 
 ---
 
@@ -1829,7 +1829,7 @@ public readonly type: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/user_schema_property#type UserSchemaProperty#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/user_schema_property#type UserSchemaProperty#type}.
 
 ---
 
@@ -1862,7 +1862,7 @@ public readonly const: string;
 
 Enum value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/user_schema_property#const UserSchemaProperty#const}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/user_schema_property#const UserSchemaProperty#const}
 
 ---
 
@@ -1876,7 +1876,7 @@ public readonly title: string;
 
 Enum title.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/resources/user_schema_property#title UserSchemaProperty#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/user_schema_property#title UserSchemaProperty#title}
 
 ---
 

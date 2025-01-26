@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/okta/okta/4.13.0/docs/data-sources/default_signin_page
+// https://registry.terraform.io/providers/okta/okta/4.13.1/docs/data-sources/default_signin_page
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface DataOktaDefaultSigninPageConfig extends cdktf.TerraformMetaArgu
   /**
   * brand id of the preview signin page
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/data-sources/default_signin_page#brand_id DataOktaDefaultSigninPage#brand_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/data-sources/default_signin_page#brand_id DataOktaDefaultSigninPage#brand_id}
   */
   readonly brandId: string;
 }
@@ -259,7 +259,7 @@ export class DataOktaDefaultSigninPageWidgetCustomizationsOutputReference extend
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/data-sources/default_signin_page okta_default_signin_page}
+* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/data-sources/default_signin_page okta_default_signin_page}
 */
 export class DataOktaDefaultSigninPage extends cdktf.TerraformDataSource {
 
@@ -275,7 +275,7 @@ export class DataOktaDefaultSigninPage extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataOktaDefaultSigninPage resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataOktaDefaultSigninPage to import
-  * @param importFromId The id of the existing DataOktaDefaultSigninPage that should be imported. Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/data-sources/default_signin_page#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataOktaDefaultSigninPage that should be imported. Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/data-sources/default_signin_page#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataOktaDefaultSigninPage to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -287,7 +287,7 @@ export class DataOktaDefaultSigninPage extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.13.0/docs/data-sources/default_signin_page okta_default_signin_page} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/data-sources/default_signin_page okta_default_signin_page} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -298,7 +298,7 @@ export class DataOktaDefaultSigninPage extends cdktf.TerraformDataSource {
       terraformResourceType: 'okta_default_signin_page',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '4.13.0',
+        providerVersion: '4.13.1',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
