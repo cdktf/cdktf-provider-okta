@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.13.1/doc
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaDeviceAssurancePolicy.DataOktaDeviceAssurancePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktadeviceassurancepolicy"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktadeviceassurancepolicy"
 
 dataoktadeviceassurancepolicy.NewDataOktaDeviceAssurancePolicy(scope Construct, id *string, config DataOktaDeviceAssurancePolicyConfig) DataOktaDeviceAssurancePolicy
 ```
@@ -317,7 +317,7 @@ func ResetThirdPartySignalProvider()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.dataOktaDeviceAssurancePolicy.DataOktaDeviceAssurancePolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktadeviceassurancepolicy"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktadeviceassurancepolicy"
 
 dataoktadeviceassurancepolicy.DataOktaDeviceAssurancePolicy_IsConstruct(x interface{}) *bool
 ```
@@ -349,7 +349,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.dataOktaDeviceAssurancePolicy.DataOktaDeviceAssurancePolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktadeviceassurancepolicy"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktadeviceassurancepolicy"
 
 dataoktadeviceassurancepolicy.DataOktaDeviceAssurancePolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -363,7 +363,7 @@ dataoktadeviceassurancepolicy.DataOktaDeviceAssurancePolicy_IsTerraformElement(x
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-okta.dataOktaDeviceAssurancePolicy.DataOktaDeviceAssurancePolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktadeviceassurancepolicy"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktadeviceassurancepolicy"
 
 dataoktadeviceassurancepolicy.DataOktaDeviceAssurancePolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -377,7 +377,7 @@ dataoktadeviceassurancepolicy.DataOktaDeviceAssurancePolicy_IsTerraformDataSourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.dataOktaDeviceAssurancePolicy.DataOktaDeviceAssurancePolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktadeviceassurancepolicy"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktadeviceassurancepolicy"
 
 dataoktadeviceassurancepolicy.DataOktaDeviceAssurancePolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -738,7 +738,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaDeviceAssurancePolicy.DataOktaDeviceAssurancePolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktadeviceassurancepolicy"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktadeviceassurancepolicy"
 
 &dataoktadeviceassurancepolicy.DataOktaDeviceAssurancePolicyConfig {
 	Connection: interface{},
@@ -751,7 +751,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktadeviceassurancepoli
 	Id: *string,
 	Name: *string,
 	SecureHardwarePresent: interface{},
-	ThirdPartySignalProvider: github.com/cdktf/cdktf-provider-okta-go/okta.dataOktaDeviceAssurancePolicy.DataOktaDeviceAssurancePolicyThirdPartySignalProvider,
+	ThirdPartySignalProvider: github.com/cdktf/cdktf-provider-okta-go/okta/v13.dataOktaDeviceAssurancePolicy.DataOktaDeviceAssurancePolicyThirdPartySignalProvider,
 }
 ```
 
@@ -907,7 +907,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaDeviceAssurancePolicy.DataOktaDeviceAssurancePolicyDiskEncryptionType.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktadeviceassurancepolicy"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktadeviceassurancepolicy"
 
 &dataoktadeviceassurancepolicy.DataOktaDeviceAssurancePolicyDiskEncryptionType {
 
@@ -920,7 +920,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktadeviceassurancepoli
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaDeviceAssurancePolicy.DataOktaDeviceAssurancePolicyOsVersion.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktadeviceassurancepolicy"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktadeviceassurancepolicy"
 
 &dataoktadeviceassurancepolicy.DataOktaDeviceAssurancePolicyOsVersion {
 
@@ -933,7 +933,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktadeviceassurancepoli
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaDeviceAssurancePolicy.DataOktaDeviceAssurancePolicyOsVersionConstraint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktadeviceassurancepolicy"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktadeviceassurancepolicy"
 
 &dataoktadeviceassurancepolicy.DataOktaDeviceAssurancePolicyOsVersionConstraint {
 
@@ -946,7 +946,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktadeviceassurancepoli
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaDeviceAssurancePolicy.DataOktaDeviceAssurancePolicyOsVersionConstraintDynamicVersionRequirement.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktadeviceassurancepolicy"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktadeviceassurancepolicy"
 
 &dataoktadeviceassurancepolicy.DataOktaDeviceAssurancePolicyOsVersionConstraintDynamicVersionRequirement {
 
@@ -959,7 +959,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktadeviceassurancepoli
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaDeviceAssurancePolicy.DataOktaDeviceAssurancePolicyOsVersionDynamicVersionRequirement.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktadeviceassurancepolicy"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktadeviceassurancepolicy"
 
 &dataoktadeviceassurancepolicy.DataOktaDeviceAssurancePolicyOsVersionDynamicVersionRequirement {
 
@@ -972,7 +972,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktadeviceassurancepoli
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaDeviceAssurancePolicy.DataOktaDeviceAssurancePolicyScreenlockType.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktadeviceassurancepolicy"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktadeviceassurancepolicy"
 
 &dataoktadeviceassurancepolicy.DataOktaDeviceAssurancePolicyScreenlockType {
 
@@ -985,10 +985,10 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktadeviceassurancepoli
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaDeviceAssurancePolicy.DataOktaDeviceAssurancePolicyThirdPartySignalProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktadeviceassurancepolicy"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktadeviceassurancepolicy"
 
 &dataoktadeviceassurancepolicy.DataOktaDeviceAssurancePolicyThirdPartySignalProvider {
-	Dtc: github.com/cdktf/cdktf-provider-okta-go/okta.dataOktaDeviceAssurancePolicy.DataOktaDeviceAssurancePolicyThirdPartySignalProviderDtc,
+	Dtc: github.com/cdktf/cdktf-provider-okta-go/okta/v13.dataOktaDeviceAssurancePolicy.DataOktaDeviceAssurancePolicyThirdPartySignalProviderDtc,
 }
 ```
 
@@ -1017,11 +1017,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaDeviceAssurancePolicy.DataOktaDeviceAssurancePolicyThirdPartySignalProviderDtc.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktadeviceassurancepolicy"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktadeviceassurancepolicy"
 
 &dataoktadeviceassurancepolicy.DataOktaDeviceAssurancePolicyThirdPartySignalProviderDtc {
 	AllowScreenLock: interface{},
-	BrowserVersion: github.com/cdktf/cdktf-provider-okta-go/okta.dataOktaDeviceAssurancePolicy.DataOktaDeviceAssurancePolicyThirdPartySignalProviderDtcBrowserVersion,
+	BrowserVersion: github.com/cdktf/cdktf-provider-okta-go/okta/v13.dataOktaDeviceAssurancePolicy.DataOktaDeviceAssurancePolicyThirdPartySignalProviderDtcBrowserVersion,
 	BuiltInDnsClientEnabled: interface{},
 	ChromeRemoteDesktopAppBlocked: interface{},
 	CrowdStrikeAgentId: *string,
@@ -1031,7 +1031,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktadeviceassurancepoli
 	KeyTrustLevel: *string,
 	ManagedDevice: interface{},
 	OsFirewall: interface{},
-	OsVersion: github.com/cdktf/cdktf-provider-okta-go/okta.dataOktaDeviceAssurancePolicy.DataOktaDeviceAssurancePolicyThirdPartySignalProviderDtcOsVersion,
+	OsVersion: github.com/cdktf/cdktf-provider-okta-go/okta/v13.dataOktaDeviceAssurancePolicy.DataOktaDeviceAssurancePolicyThirdPartySignalProviderDtcOsVersion,
 	PasswordProtectionWarningTrigger: *string,
 	RealtimeUrlCheckMode: interface{},
 	SafeBrowsingProtectionLevel: *string,
@@ -1315,7 +1315,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaDeviceAssurancePolicy.DataOktaDeviceAssurancePolicyThirdPartySignalProviderDtcBrowserVersion.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktadeviceassurancepolicy"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktadeviceassurancepolicy"
 
 &dataoktadeviceassurancepolicy.DataOktaDeviceAssurancePolicyThirdPartySignalProviderDtcBrowserVersion {
 	Minimum: *string,
@@ -1347,7 +1347,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaDeviceAssurancePolicy.DataOktaDeviceAssurancePolicyThirdPartySignalProviderDtcOsVersion.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktadeviceassurancepolicy"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktadeviceassurancepolicy"
 
 &dataoktadeviceassurancepolicy.DataOktaDeviceAssurancePolicyThirdPartySignalProviderDtcOsVersion {
 	Minimum: *string,
@@ -1381,7 +1381,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaDeviceAssurancePolicy.DataOktaDeviceAssurancePolicyDiskEncryptionTypeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktadeviceassurancepolicy"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktadeviceassurancepolicy"
 
 dataoktadeviceassurancepolicy.NewDataOktaDeviceAssurancePolicyDiskEncryptionTypeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataOktaDeviceAssurancePolicyDiskEncryptionTypeOutputReference
 ```
@@ -1641,7 +1641,7 @@ func InternalValue() DataOktaDeviceAssurancePolicyDiskEncryptionType
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaDeviceAssurancePolicy.DataOktaDeviceAssurancePolicyOsVersionConstraintDynamicVersionRequirementOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktadeviceassurancepolicy"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktadeviceassurancepolicy"
 
 dataoktadeviceassurancepolicy.NewDataOktaDeviceAssurancePolicyOsVersionConstraintDynamicVersionRequirementOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataOktaDeviceAssurancePolicyOsVersionConstraintDynamicVersionRequirementOutputReference
 ```
@@ -1923,7 +1923,7 @@ func InternalValue() DataOktaDeviceAssurancePolicyOsVersionConstraintDynamicVers
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaDeviceAssurancePolicy.DataOktaDeviceAssurancePolicyOsVersionConstraintList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktadeviceassurancepolicy"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktadeviceassurancepolicy"
 
 dataoktadeviceassurancepolicy.NewDataOktaDeviceAssurancePolicyOsVersionConstraintList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOktaDeviceAssurancePolicyOsVersionConstraintList
 ```
@@ -2072,7 +2072,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaDeviceAssurancePolicy.DataOktaDeviceAssurancePolicyOsVersionConstraintOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktadeviceassurancepolicy"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktadeviceassurancepolicy"
 
 dataoktadeviceassurancepolicy.NewDataOktaDeviceAssurancePolicyOsVersionConstraintOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataOktaDeviceAssurancePolicyOsVersionConstraintOutputReference
 ```
@@ -2361,7 +2361,7 @@ func InternalValue() DataOktaDeviceAssurancePolicyOsVersionConstraint
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaDeviceAssurancePolicy.DataOktaDeviceAssurancePolicyOsVersionDynamicVersionRequirementOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktadeviceassurancepolicy"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktadeviceassurancepolicy"
 
 dataoktadeviceassurancepolicy.NewDataOktaDeviceAssurancePolicyOsVersionDynamicVersionRequirementOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataOktaDeviceAssurancePolicyOsVersionDynamicVersionRequirementOutputReference
 ```
@@ -2643,7 +2643,7 @@ func InternalValue() DataOktaDeviceAssurancePolicyOsVersionDynamicVersionRequire
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaDeviceAssurancePolicy.DataOktaDeviceAssurancePolicyOsVersionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktadeviceassurancepolicy"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktadeviceassurancepolicy"
 
 dataoktadeviceassurancepolicy.NewDataOktaDeviceAssurancePolicyOsVersionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataOktaDeviceAssurancePolicyOsVersionOutputReference
 ```
@@ -2914,7 +2914,7 @@ func InternalValue() DataOktaDeviceAssurancePolicyOsVersion
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaDeviceAssurancePolicy.DataOktaDeviceAssurancePolicyScreenlockTypeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktadeviceassurancepolicy"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktadeviceassurancepolicy"
 
 dataoktadeviceassurancepolicy.NewDataOktaDeviceAssurancePolicyScreenlockTypeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataOktaDeviceAssurancePolicyScreenlockTypeOutputReference
 ```
@@ -3174,7 +3174,7 @@ func InternalValue() DataOktaDeviceAssurancePolicyScreenlockType
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaDeviceAssurancePolicy.DataOktaDeviceAssurancePolicyThirdPartySignalProviderDtcBrowserVersionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktadeviceassurancepolicy"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktadeviceassurancepolicy"
 
 dataoktadeviceassurancepolicy.NewDataOktaDeviceAssurancePolicyThirdPartySignalProviderDtcBrowserVersionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataOktaDeviceAssurancePolicyThirdPartySignalProviderDtcBrowserVersionOutputReference
 ```
@@ -3452,7 +3452,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaDeviceAssurancePolicy.DataOktaDeviceAssurancePolicyThirdPartySignalProviderDtcOsVersionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktadeviceassurancepolicy"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktadeviceassurancepolicy"
 
 dataoktadeviceassurancepolicy.NewDataOktaDeviceAssurancePolicyThirdPartySignalProviderDtcOsVersionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataOktaDeviceAssurancePolicyThirdPartySignalProviderDtcOsVersionOutputReference
 ```
@@ -3730,7 +3730,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaDeviceAssurancePolicy.DataOktaDeviceAssurancePolicyThirdPartySignalProviderDtcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktadeviceassurancepolicy"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktadeviceassurancepolicy"
 
 dataoktadeviceassurancepolicy.NewDataOktaDeviceAssurancePolicyThirdPartySignalProviderDtcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataOktaDeviceAssurancePolicyThirdPartySignalProviderDtcOutputReference
 ```
@@ -4585,7 +4585,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaDeviceAssurancePolicy.DataOktaDeviceAssurancePolicyThirdPartySignalProviderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktadeviceassurancepolicy"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktadeviceassurancepolicy"
 
 dataoktadeviceassurancepolicy.NewDataOktaDeviceAssurancePolicyThirdPartySignalProviderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataOktaDeviceAssurancePolicyThirdPartySignalProviderOutputReference
 ```
