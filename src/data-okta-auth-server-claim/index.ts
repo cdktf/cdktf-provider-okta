@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/okta/okta/4.13.1/docs/data-sources/auth_server_claim
+// https://registry.terraform.io/providers/okta/okta/4.14.0/docs/data-sources/auth_server_claim
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface DataOktaAuthServerClaimConfig extends cdktf.TerraformMetaArgume
   /**
   * Auth server ID
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/data-sources/auth_server_claim#auth_server_id DataOktaAuthServerClaim#auth_server_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.0/docs/data-sources/auth_server_claim#auth_server_id DataOktaAuthServerClaim#auth_server_id}
   */
   readonly authServerId: string;
   /**
   * Name of the claim. Conflicts with `name`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/data-sources/auth_server_claim#id DataOktaAuthServerClaim#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.0/docs/data-sources/auth_server_claim#id DataOktaAuthServerClaim#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -30,13 +30,13 @@ export interface DataOktaAuthServerClaimConfig extends cdktf.TerraformMetaArgume
   /**
   * Name of the claim. Conflicts with `id`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/data-sources/auth_server_claim#name DataOktaAuthServerClaim#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.0/docs/data-sources/auth_server_claim#name DataOktaAuthServerClaim#name}
   */
   readonly name?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/data-sources/auth_server_claim okta_auth_server_claim}
+* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.14.0/docs/data-sources/auth_server_claim okta_auth_server_claim}
 */
 export class DataOktaAuthServerClaim extends cdktf.TerraformDataSource {
 
@@ -52,7 +52,7 @@ export class DataOktaAuthServerClaim extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataOktaAuthServerClaim resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataOktaAuthServerClaim to import
-  * @param importFromId The id of the existing DataOktaAuthServerClaim that should be imported. Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/data-sources/auth_server_claim#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataOktaAuthServerClaim that should be imported. Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.14.0/docs/data-sources/auth_server_claim#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataOktaAuthServerClaim to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -64,7 +64,7 @@ export class DataOktaAuthServerClaim extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/data-sources/auth_server_claim okta_auth_server_claim} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.14.0/docs/data-sources/auth_server_claim okta_auth_server_claim} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -75,7 +75,7 @@ export class DataOktaAuthServerClaim extends cdktf.TerraformDataSource {
       terraformResourceType: 'okta_auth_server_claim',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '4.13.1',
+        providerVersion: '4.14.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
