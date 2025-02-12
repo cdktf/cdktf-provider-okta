@@ -4,7 +4,7 @@
 
 ### TrustedServer <a name="TrustedServer" id="@cdktf/provider-okta.trustedServer.TrustedServer"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/trusted_server okta_trusted_server}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.14.0/docs/resources/trusted_server okta_trusted_server}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.trustedServer.TrustedServer.Initializer"></a>
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 Authorization server ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/trusted_server#auth_server_id TrustedServer#auth_server_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.0/docs/resources/trusted_server#auth_server_id TrustedServer#auth_server_id}
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 A list of the authorization server IDs user want to trust.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/trusted_server#trusted TrustedServer#trusted}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.0/docs/resources/trusted_server#trusted TrustedServer#trusted}
 
 ---
 
@@ -547,7 +547,7 @@ The construct id used in the generated config for the TrustedServer to import.
 
 The id of the existing TrustedServer that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/trusted_server#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.14.0/docs/resources/trusted_server#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -917,7 +917,7 @@ public java.lang.String getAuthServerId();
 
 Authorization server ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/trusted_server#auth_server_id TrustedServer#auth_server_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.0/docs/resources/trusted_server#auth_server_id TrustedServer#auth_server_id}
 
 ---
 
@@ -931,7 +931,7 @@ public java.util.List<java.lang.String> getTrusted();
 
 A list of the authorization server IDs user want to trust.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/trusted_server#trusted TrustedServer#trusted}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.0/docs/resources/trusted_server#trusted TrustedServer#trusted}
 
 ---
 

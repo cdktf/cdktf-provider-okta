@@ -4,12 +4,12 @@
 
 ### AppAccessPolicyAssignment <a name="AppAccessPolicyAssignment" id="@cdktf/provider-okta.appAccessPolicyAssignment.AppAccessPolicyAssignment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/app_access_policy_assignment okta_app_access_policy_assignment}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.14.0/docs/resources/app_access_policy_assignment okta_app_access_policy_assignment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appAccessPolicyAssignment.AppAccessPolicyAssignment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/appaccesspolicyassignment"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appaccesspolicyassignment"
 
 appaccesspolicyassignment.NewAppAccessPolicyAssignment(scope Construct, id *string, config AppAccessPolicyAssignmentConfig) AppAccessPolicyAssignment
 ```
@@ -378,7 +378,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.appAccessPolicyAssignment.AppAccessPolicyAssignment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/appaccesspolicyassignment"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appaccesspolicyassignment"
 
 appaccesspolicyassignment.AppAccessPolicyAssignment_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.appAccessPolicyAssignment.AppAccessPolicyAssignment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/appaccesspolicyassignment"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appaccesspolicyassignment"
 
 appaccesspolicyassignment.AppAccessPolicyAssignment_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ appaccesspolicyassignment.AppAccessPolicyAssignment_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.appAccessPolicyAssignment.AppAccessPolicyAssignment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/appaccesspolicyassignment"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appaccesspolicyassignment"
 
 appaccesspolicyassignment.AppAccessPolicyAssignment_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ appaccesspolicyassignment.AppAccessPolicyAssignment_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.appAccessPolicyAssignment.AppAccessPolicyAssignment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/appaccesspolicyassignment"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appaccesspolicyassignment"
 
 appaccesspolicyassignment.AppAccessPolicyAssignment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -467,7 +467,7 @@ The construct id used in the generated config for the AppAccessPolicyAssignment 
 
 The id of the existing AppAccessPolicyAssignment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/app_access_policy_assignment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.14.0/docs/resources/app_access_policy_assignment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -722,7 +722,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.appAccessPolicyAssignment.AppAccessPolicyAssignmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/appaccesspolicyassignment"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/appaccesspolicyassignment"
 
 &appaccesspolicyassignment.AppAccessPolicyAssignmentConfig {
 	Connection: interface{},
@@ -833,7 +833,7 @@ AppId *string
 
 The application ID; this value is immutable and can not be updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/app_access_policy_assignment#app_id AppAccessPolicyAssignment#app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.0/docs/resources/app_access_policy_assignment#app_id AppAccessPolicyAssignment#app_id}
 
 ---
 
@@ -847,7 +847,7 @@ PolicyId *string
 
 The access policy ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.13.1/docs/resources/app_access_policy_assignment#policy_id AppAccessPolicyAssignment#policy_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.0/docs/resources/app_access_policy_assignment#policy_id AppAccessPolicyAssignment#policy_id}
 
 ---
 
