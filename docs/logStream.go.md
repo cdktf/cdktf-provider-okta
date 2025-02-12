@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.14.0/doc
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.logStream.LogStream.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/logstream"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/logstream"
 
 logstream.NewLogStream(scope Construct, id *string, config LogStreamConfig) LogStream
 ```
@@ -405,7 +405,7 @@ func ResetStatus()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.logStream.LogStream.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/logstream"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/logstream"
 
 logstream.LogStream_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.logStream.LogStream.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/logstream"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/logstream"
 
 logstream.LogStream_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ logstream.LogStream_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.logStream.LogStream.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/logstream"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/logstream"
 
 logstream.LogStream_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ logstream.LogStream_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.logStream.LogStream.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/logstream"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/logstream"
 
 logstream.LogStream_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -793,7 +793,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.logStream.LogStreamConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/logstream"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/logstream"
 
 &logstream.LogStreamConfig {
 	Connection: interface{},
@@ -805,7 +805,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/logstream"
 	Provisioners: *[]interface{},
 	Name: *string,
 	Type: *string,
-	Settings: github.com/cdktf/cdktf-provider-okta-go/okta.logStream.LogStreamSettings,
+	Settings: github.com/cdktf/cdktf-provider-okta-go/okta/v13.logStream.LogStreamSettings,
 	Status: *string,
 }
 ```
@@ -959,7 +959,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.logStream.LogStreamSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/logstream"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/logstream"
 
 &logstream.LogStreamSettings {
 	AccountId: *string,
@@ -1077,7 +1077,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.logStream.LogStreamSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/logstream"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/logstream"
 
 logstream.NewLogStreamSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LogStreamSettingsOutputReference
 ```
