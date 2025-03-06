@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/okta/okta/4.14.0/docs/resources/log_stream
+// https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/log_stream
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,25 +10,25 @@ export interface LogStreamConfig extends cdktf.TerraformMetaArguments {
   /**
   * Unique name for the Log Stream object
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.0/docs/resources/log_stream#name LogStream#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/log_stream#name LogStream#name}
   */
   readonly name: string;
   /**
   * Stream status
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.0/docs/resources/log_stream#status LogStream#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/log_stream#status LogStream#status}
   */
   readonly status?: string;
   /**
   * Streaming provider used - 'aws_eventbridge' or 'splunk_cloud_logstreaming'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.0/docs/resources/log_stream#type LogStream#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/log_stream#type LogStream#type}
   */
   readonly type: string;
   /**
   * settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.0/docs/resources/log_stream#settings LogStream#settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/log_stream#settings LogStream#settings}
   */
   readonly settings?: LogStreamSettings;
 }
@@ -41,37 +36,37 @@ export interface LogStreamSettings {
   /**
   * AWS account ID. Required only for 'aws_eventbridge' type
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.0/docs/resources/log_stream#account_id LogStream#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/log_stream#account_id LogStream#account_id}
   */
   readonly accountId?: string;
   /**
   * Edition of the Splunk Cloud instance. Could be one of: 'aws', 'aws_govcloud', 'gcp'. Required only for 'splunk_cloud_logstreaming' type
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.0/docs/resources/log_stream#edition LogStream#edition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/log_stream#edition LogStream#edition}
   */
   readonly edition?: string;
   /**
   * An alphanumeric name (no spaces) to identify this event source in AWS EventBridge. Required only for 'aws_eventbridge' type
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.0/docs/resources/log_stream#event_source_name LogStream#event_source_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/log_stream#event_source_name LogStream#event_source_name}
   */
   readonly eventSourceName?: string;
   /**
   * The domain name for Splunk Cloud instance. Don't include http or https in the string. For example: 'acme.splunkcloud.com'. Required only for 'splunk_cloud_logstreaming' type
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.0/docs/resources/log_stream#host LogStream#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/log_stream#host LogStream#host}
   */
   readonly host?: string;
   /**
   * The destination AWS region where event source is located. Required only for 'aws_eventbridge' type
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.0/docs/resources/log_stream#region LogStream#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/log_stream#region LogStream#region}
   */
   readonly region?: string;
   /**
   * The HEC token for your Splunk Cloud HTTP Event Collector. Required only for 'splunk_cloud_logstreaming' type
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.0/docs/resources/log_stream#token LogStream#token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/log_stream#token LogStream#token}
   */
   readonly token?: string;
 }
@@ -310,7 +305,7 @@ export class LogStreamSettingsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.14.0/docs/resources/log_stream okta_log_stream}
+* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/log_stream okta_log_stream}
 */
 export class LogStream extends cdktf.TerraformResource {
 
@@ -326,7 +321,7 @@ export class LogStream extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a LogStream resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LogStream to import
-  * @param importFromId The id of the existing LogStream that should be imported. Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.14.0/docs/resources/log_stream#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing LogStream that should be imported. Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/log_stream#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LogStream to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -338,7 +333,7 @@ export class LogStream extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.14.0/docs/resources/log_stream okta_log_stream} Resource
+  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/log_stream okta_log_stream} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -349,7 +344,7 @@ export class LogStream extends cdktf.TerraformResource {
       terraformResourceType: 'okta_log_stream',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '4.14.0',
+        providerVersion: '4.14.1',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

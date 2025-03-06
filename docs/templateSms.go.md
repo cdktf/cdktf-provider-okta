@@ -4,12 +4,12 @@
 
 ### TemplateSms <a name="TemplateSms" id="@cdktf/provider-okta.templateSms.TemplateSms"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.14.0/docs/resources/template_sms okta_template_sms}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/template_sms okta_template_sms}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.templateSms.TemplateSms.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/templatesms"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/templatesms"
 
 templatesms.NewTemplateSms(scope Construct, id *string, config TemplateSmsConfig) TemplateSms
 ```
@@ -405,7 +405,7 @@ func ResetTranslations()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.templateSms.TemplateSms.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/templatesms"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/templatesms"
 
 templatesms.TemplateSms_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.templateSms.TemplateSms.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/templatesms"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/templatesms"
 
 templatesms.TemplateSms_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ templatesms.TemplateSms_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.templateSms.TemplateSms.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/templatesms"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/templatesms"
 
 templatesms.TemplateSms_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ templatesms.TemplateSms_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.templateSms.TemplateSms.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/templatesms"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/templatesms"
 
 templatesms.TemplateSms_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -494,7 +494,7 @@ The construct id used in the generated config for the TemplateSms to import.
 
 The id of the existing TemplateSms that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.14.0/docs/resources/template_sms#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/template_sms#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -782,7 +782,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.templateSms.TemplateSmsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/templatesms"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/templatesms"
 
 &templatesms.TemplateSmsConfig {
 	Connection: interface{},
@@ -812,7 +812,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/templatesms"
 | <code><a href="#@cdktf/provider-okta.templateSms.TemplateSmsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.templateSms.TemplateSmsConfig.property.template">Template</a></code> | <code>*string</code> | SMS default template. |
 | <code><a href="#@cdktf/provider-okta.templateSms.TemplateSmsConfig.property.type">Type</a></code> | <code>*string</code> | SMS template type. |
-| <code><a href="#@cdktf/provider-okta.templateSms.TemplateSmsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.0/docs/resources/template_sms#id TemplateSms#id}. |
+| <code><a href="#@cdktf/provider-okta.templateSms.TemplateSmsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/template_sms#id TemplateSms#id}. |
 | <code><a href="#@cdktf/provider-okta.templateSms.TemplateSmsConfig.property.translations">Translations</a></code> | <code>interface{}</code> | translations block. |
 
 ---
@@ -897,7 +897,7 @@ Template *string
 
 SMS default template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.0/docs/resources/template_sms#template TemplateSms#template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/template_sms#template TemplateSms#template}
 
 ---
 
@@ -911,7 +911,7 @@ Type *string
 
 SMS template type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.0/docs/resources/template_sms#type TemplateSms#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/template_sms#type TemplateSms#type}
 
 ---
 
@@ -923,7 +923,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.0/docs/resources/template_sms#id TemplateSms#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/template_sms#id TemplateSms#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -940,7 +940,7 @@ Translations interface{}
 
 translations block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.0/docs/resources/template_sms#translations TemplateSms#translations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/template_sms#translations TemplateSms#translations}
 
 ---
 
@@ -949,7 +949,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.templateSms.TemplateSmsTranslations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/templatesms"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/templatesms"
 
 &templatesms.TemplateSmsTranslations {
 	Language: *string,
@@ -976,7 +976,7 @@ Language *string
 
 The language to map the template to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.0/docs/resources/template_sms#language TemplateSms#language}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/template_sms#language TemplateSms#language}
 
 ---
 
@@ -990,7 +990,7 @@ Template *string
 
 The SMS message.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.0/docs/resources/template_sms#template TemplateSms#template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/template_sms#template TemplateSms#template}
 
 ---
 
@@ -1001,7 +1001,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.templateSms.TemplateSmsTranslationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/templatesms"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/templatesms"
 
 templatesms.NewTemplateSmsTranslationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TemplateSmsTranslationsList
 ```
@@ -1161,7 +1161,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.templateSms.TemplateSmsTranslationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/templatesms"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/templatesms"
 
 templatesms.NewTemplateSmsTranslationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) TemplateSmsTranslationsOutputReference
 ```
