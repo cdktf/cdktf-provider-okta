@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/okta/okta/4.14.0/docs/resources/email_customization
+// https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/email_customization
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,49 +15,49 @@ export interface EmailCustomizationConfig extends cdktf.TerraformMetaArguments {
   /**
   * The body of the customization
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.0/docs/resources/email_customization#body EmailCustomization#body}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/email_customization#body EmailCustomization#body}
   */
   readonly body?: string;
   /**
   * Brand ID
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.0/docs/resources/email_customization#brand_id EmailCustomization#brand_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/email_customization#brand_id EmailCustomization#brand_id}
   */
   readonly brandId: string;
   /**
   * Force is_default on the create and delete by deleting all email customizations. Comma separated string with values of 'create' or 'destroy' or both `create,destroy'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.0/docs/resources/email_customization#force_is_default EmailCustomization#force_is_default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/email_customization#force_is_default EmailCustomization#force_is_default}
   */
   readonly forceIsDefault?: string;
   /**
   * Whether the customization is the default
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.0/docs/resources/email_customization#is_default EmailCustomization#is_default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/email_customization#is_default EmailCustomization#is_default}
   */
   readonly isDefault?: boolean | cdktf.IResolvable;
   /**
   * The language supported by the customization - Example values from [supported languages](https://developer.okta.com/docs/reference/api/brands/#supported-languages)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.0/docs/resources/email_customization#language EmailCustomization#language}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/email_customization#language EmailCustomization#language}
   */
   readonly language?: string;
   /**
   * The subject of the customization
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.0/docs/resources/email_customization#subject EmailCustomization#subject}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/email_customization#subject EmailCustomization#subject}
   */
   readonly subject?: string;
   /**
   * Template Name - Example values: `AccountLockout`,`ADForgotPassword`,`ADForgotPasswordDenied`,`ADSelfServiceUnlock`,`ADUserActivation`,`AuthenticatorEnrolled`,`AuthenticatorReset`,`ChangeEmailConfirmation`,`EmailChallenge`,`EmailChangeConfirmation`,`EmailFactorVerification`,`ForgotPassword`,`ForgotPasswordDenied`,`IGAReviewerEndNotification`,`IGAReviewerNotification`,`IGAReviewerPendingNotification`,`IGAReviewerReassigned`,`LDAPForgotPassword`,`LDAPForgotPasswordDenied`,`LDAPSelfServiceUnlock`,`LDAPUserActivation`,`MyAccountChangeConfirmation`,`NewSignOnNotification`,`OktaVerifyActivation`,`PasswordChanged`,`PasswordResetByAdmin`,`PendingEmailChange`,`RegistrationActivation`,`RegistrationEmailVerification`,`SelfServiceUnlock`,`SelfServiceUnlockOnUnlockedAccount`,`UserActivation`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.0/docs/resources/email_customization#template_name EmailCustomization#template_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/email_customization#template_name EmailCustomization#template_name}
   */
   readonly templateName: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.14.0/docs/resources/email_customization okta_email_customization}
+* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/email_customization okta_email_customization}
 */
 export class EmailCustomization extends cdktf.TerraformResource {
 
@@ -73,7 +73,7 @@ export class EmailCustomization extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a EmailCustomization resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EmailCustomization to import
-  * @param importFromId The id of the existing EmailCustomization that should be imported. Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.14.0/docs/resources/email_customization#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing EmailCustomization that should be imported. Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/email_customization#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EmailCustomization to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -85,7 +85,7 @@ export class EmailCustomization extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.14.0/docs/resources/email_customization okta_email_customization} Resource
+  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/email_customization okta_email_customization} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -96,7 +96,7 @@ export class EmailCustomization extends cdktf.TerraformResource {
       terraformResourceType: 'okta_email_customization',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '4.14.0',
+        providerVersion: '4.14.1',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

@@ -4,7 +4,7 @@
 
 ### TrustedOrigin <a name="TrustedOrigin" id="@cdktf/provider-okta.trustedOrigin.TrustedOrigin"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.14.0/docs/resources/trusted_origin okta_trusted_origin}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/trusted_origin okta_trusted_origin}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.trustedOrigin.TrustedOrigin.Initializer"></a>
 
@@ -481,7 +481,7 @@ The construct id used in the generated config for the TrustedOrigin to import.
 
 The id of the existing TrustedOrigin that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.14.0/docs/resources/trusted_origin#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/trusted_origin#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -811,7 +811,7 @@ const trustedOriginConfig: trustedOrigin.TrustedOriginConfig = { ... }
 | <code><a href="#@cdktf/provider-okta.trustedOrigin.TrustedOriginConfig.property.origin">origin</a></code> | <code>string</code> | Unique origin URL for this trusted origin. |
 | <code><a href="#@cdktf/provider-okta.trustedOrigin.TrustedOriginConfig.property.scopes">scopes</a></code> | <code>string[]</code> | Scopes of the Trusted Origin - can either be `CORS` and/or `REDIRECT`. |
 | <code><a href="#@cdktf/provider-okta.trustedOrigin.TrustedOriginConfig.property.active">active</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether the Trusted Origin is active or not - can only be issued post-creation. By default, it is `true`. |
-| <code><a href="#@cdktf/provider-okta.trustedOrigin.TrustedOriginConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.0/docs/resources/trusted_origin#id TrustedOrigin#id}. |
+| <code><a href="#@cdktf/provider-okta.trustedOrigin.TrustedOriginConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/trusted_origin#id TrustedOrigin#id}. |
 
 ---
 
@@ -895,7 +895,7 @@ public readonly name: string;
 
 Unique name for this trusted origin.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.0/docs/resources/trusted_origin#name TrustedOrigin#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/trusted_origin#name TrustedOrigin#name}
 
 ---
 
@@ -909,7 +909,7 @@ public readonly origin: string;
 
 Unique origin URL for this trusted origin.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.0/docs/resources/trusted_origin#origin TrustedOrigin#origin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/trusted_origin#origin TrustedOrigin#origin}
 
 ---
 
@@ -923,7 +923,7 @@ public readonly scopes: string[];
 
 Scopes of the Trusted Origin - can either be `CORS` and/or `REDIRECT`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.0/docs/resources/trusted_origin#scopes TrustedOrigin#scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/trusted_origin#scopes TrustedOrigin#scopes}
 
 ---
 
@@ -937,7 +937,7 @@ public readonly active: boolean | IResolvable;
 
 Whether the Trusted Origin is active or not - can only be issued post-creation. By default, it is `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.0/docs/resources/trusted_origin#active TrustedOrigin#active}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/trusted_origin#active TrustedOrigin#active}
 
 ---
 
@@ -949,7 +949,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.0/docs/resources/trusted_origin#id TrustedOrigin#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/trusted_origin#id TrustedOrigin#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
