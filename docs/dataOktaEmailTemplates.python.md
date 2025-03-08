@@ -4,7 +4,7 @@
 
 ### DataOktaEmailTemplates <a name="DataOktaEmailTemplates" id="@cdktf/provider-okta.dataOktaEmailTemplates.DataOktaEmailTemplates"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/data-sources/email_templates okta_email_templates}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/data-sources/email_templates okta_email_templates}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaEmailTemplates.DataOktaEmailTemplates.Initializer"></a>
 
@@ -38,7 +38,7 @@ dataOktaEmailTemplates.DataOktaEmailTemplates(
 | <code><a href="#@cdktf/provider-okta.dataOktaEmailTemplates.DataOktaEmailTemplates.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaEmailTemplates.DataOktaEmailTemplates.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaEmailTemplates.DataOktaEmailTemplates.Initializer.parameter.brandId">brand_id</a></code> | <code>str</code> | Brand ID. |
-| <code><a href="#@cdktf/provider-okta.dataOktaEmailTemplates.DataOktaEmailTemplates.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/data-sources/email_templates#id DataOktaEmailTemplates#id}. |
+| <code><a href="#@cdktf/provider-okta.dataOktaEmailTemplates.DataOktaEmailTemplates.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/data-sources/email_templates#id DataOktaEmailTemplates#id}. |
 
 ---
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 Brand ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/data-sources/email_templates#brand_id DataOktaEmailTemplates#brand_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/data-sources/email_templates#brand_id DataOktaEmailTemplates#brand_id}
 
 ---
 
@@ -116,7 +116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/data-sources/email_templates#id DataOktaEmailTemplates#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/data-sources/email_templates#id DataOktaEmailTemplates#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -485,7 +485,7 @@ The construct id used in the generated config for the DataOktaEmailTemplates to 
 
 The id of the existing DataOktaEmailTemplates that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/data-sources/email_templates#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/data-sources/email_templates#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -745,7 +745,7 @@ dataOktaEmailTemplates.DataOktaEmailTemplatesConfig(
 | <code><a href="#@cdktf/provider-okta.dataOktaEmailTemplates.DataOktaEmailTemplatesConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaEmailTemplates.DataOktaEmailTemplatesConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaEmailTemplates.DataOktaEmailTemplatesConfig.property.brandId">brand_id</a></code> | <code>str</code> | Brand ID. |
-| <code><a href="#@cdktf/provider-okta.dataOktaEmailTemplates.DataOktaEmailTemplatesConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/data-sources/email_templates#id DataOktaEmailTemplates#id}. |
+| <code><a href="#@cdktf/provider-okta.dataOktaEmailTemplates.DataOktaEmailTemplatesConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/data-sources/email_templates#id DataOktaEmailTemplates#id}. |
 
 ---
 
@@ -829,7 +829,7 @@ brand_id: str
 
 Brand ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/data-sources/email_templates#brand_id DataOktaEmailTemplates#brand_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/data-sources/email_templates#brand_id DataOktaEmailTemplates#brand_id}
 
 ---
 
@@ -841,7 +841,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/data-sources/email_templates#id DataOktaEmailTemplates#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/data-sources/email_templates#id DataOktaEmailTemplates#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -4,7 +4,7 @@
 
 ### IdpOidc <a name="IdpOidc" id="@cdktf/provider-okta.idpOidc.IdpOidc"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/idp_oidc okta_idp_oidc}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/idp_oidc okta_idp_oidc}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.idpOidc.IdpOidc.Initializer"></a>
 
@@ -91,7 +91,7 @@ IdpOidc.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-okta.idpOidc.IdpOidc.Initializer.parameter.groupsAssignment">groupsAssignment</a></code> | <code>java.util.List<java.lang.String></code> | List of Okta Group IDs to add an IdP user as a member with the `ASSIGN` `groups_action`. |
 | <code><a href="#@cdktf/provider-okta.idpOidc.IdpOidc.Initializer.parameter.groupsAttribute">groupsAttribute</a></code> | <code>java.lang.String</code> | IdP user profile attribute name (case-insensitive) for an array value that contains group memberships. |
 | <code><a href="#@cdktf/provider-okta.idpOidc.IdpOidc.Initializer.parameter.groupsFilter">groupsFilter</a></code> | <code>java.util.List<java.lang.String></code> | Whitelist of Okta Group identifiers that are allowed for the `APPEND` or `SYNC` `groups_action`. |
-| <code><a href="#@cdktf/provider-okta.idpOidc.IdpOidc.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/idp_oidc#id IdpOidc#id}. |
+| <code><a href="#@cdktf/provider-okta.idpOidc.IdpOidc.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/idp_oidc#id IdpOidc#id}. |
 | <code><a href="#@cdktf/provider-okta.idpOidc.IdpOidc.Initializer.parameter.issuerMode">issuerMode</a></code> | <code>java.lang.String</code> | Indicates whether Okta uses the original Okta org domain URL, a custom domain URL, or dynamic. |
 | <code><a href="#@cdktf/provider-okta.idpOidc.IdpOidc.Initializer.parameter.maxClockSkew">maxClockSkew</a></code> | <code>java.lang.Number</code> | Maximum allowable clock-skew when processing messages from the IdP. |
 | <code><a href="#@cdktf/provider-okta.idpOidc.IdpOidc.Initializer.parameter.pkceRequired">pkceRequired</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Require Proof Key for Code Exchange (PKCE) for additional verification key rotation mode. See: https://developer.okta.com/docs/reference/api/idps/#oauth-2-0-and-openid-connect-client-object. |
@@ -104,7 +104,7 @@ IdpOidc.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-okta.idpOidc.IdpOidc.Initializer.parameter.subjectMatchAttribute">subjectMatchAttribute</a></code> | <code>java.lang.String</code> | Okta user profile attribute for matching transformed IdP username. Only for matchType `CUSTOM_ATTRIBUTE`. |
 | <code><a href="#@cdktf/provider-okta.idpOidc.IdpOidc.Initializer.parameter.subjectMatchType">subjectMatchType</a></code> | <code>java.lang.String</code> | Determines the Okta user profile attribute match conditions for account linking and authentication of the transformed IdP username. |
 | <code><a href="#@cdktf/provider-okta.idpOidc.IdpOidc.Initializer.parameter.suspendedAction">suspendedAction</a></code> | <code>java.lang.String</code> | Action for a previously suspended IdP user during authentication. Can be `NONE` or `REACTIVATE`. Default: `NONE`. |
-| <code><a href="#@cdktf/provider-okta.idpOidc.IdpOidc.Initializer.parameter.userInfoBinding">userInfoBinding</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/idp_oidc#user_info_binding IdpOidc#user_info_binding}. |
+| <code><a href="#@cdktf/provider-okta.idpOidc.IdpOidc.Initializer.parameter.userInfoBinding">userInfoBinding</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/idp_oidc#user_info_binding IdpOidc#user_info_binding}. |
 | <code><a href="#@cdktf/provider-okta.idpOidc.IdpOidc.Initializer.parameter.userInfoUrl">userInfoUrl</a></code> | <code>java.lang.String</code> | Protected resource endpoint that returns claims about the authenticated user. |
 | <code><a href="#@cdktf/provider-okta.idpOidc.IdpOidc.Initializer.parameter.usernameTemplate">usernameTemplate</a></code> | <code>java.lang.String</code> | Okta EL Expression to generate or transform a unique username for the IdP user. Default: `idpuser.email`. |
 
@@ -176,7 +176,7 @@ Must be unique amongst siblings in the same scope
 
 The method of making an authorization request. It can be set to `HTTP-POST` or `HTTP-REDIRECT`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/idp_oidc#authorization_binding IdpOidc#authorization_binding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/idp_oidc#authorization_binding IdpOidc#authorization_binding}
 
 ---
 
@@ -186,7 +186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 IdP Authorization Server (AS) endpoint to request consent from the user and obtain an authorization code grant.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/idp_oidc#authorization_url IdpOidc#authorization_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/idp_oidc#authorization_url IdpOidc#authorization_url}
 
 ---
 
@@ -196,7 +196,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Unique identifier issued by AS for the Okta IdP instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/idp_oidc#client_id IdpOidc#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/idp_oidc#client_id IdpOidc#client_id}
 
 ---
 
@@ -206,7 +206,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Client secret issued by AS for the Okta IdP instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/idp_oidc#client_secret IdpOidc#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/idp_oidc#client_secret IdpOidc#client_secret}
 
 ---
 
@@ -216,7 +216,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 URI that identifies the issuer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/idp_oidc#issuer_url IdpOidc#issuer_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/idp_oidc#issuer_url IdpOidc#issuer_url}
 
 ---
 
@@ -226,7 +226,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 The method of making a request for the OIDC JWKS. It can be set to `HTTP-POST` or `HTTP-REDIRECT`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/idp_oidc#jwks_binding IdpOidc#jwks_binding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/idp_oidc#jwks_binding IdpOidc#jwks_binding}
 
 ---
 
@@ -236,7 +236,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Endpoint where the keys signer publishes its keys in a JWK Set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/idp_oidc#jwks_url IdpOidc#jwks_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/idp_oidc#jwks_url IdpOidc#jwks_url}
 
 ---
 
@@ -246,7 +246,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Name of the IdP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/idp_oidc#name IdpOidc#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/idp_oidc#name IdpOidc#name}
 
 ---
 
@@ -256,7 +256,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 The scopes of the IdP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/idp_oidc#scopes IdpOidc#scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/idp_oidc#scopes IdpOidc#scopes}
 
 ---
 
@@ -266,7 +266,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 The method of making a token request. It can be set to `HTTP-POST` or `HTTP-REDIRECT`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/idp_oidc#token_binding IdpOidc#token_binding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/idp_oidc#token_binding IdpOidc#token_binding}
 
 ---
 
@@ -276,7 +276,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 IdP Authorization Server (AS) endpoint to exchange the authorization code grant for an access token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/idp_oidc#token_url IdpOidc#token_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/idp_oidc#token_url IdpOidc#token_url}
 
 ---
 
@@ -286,7 +286,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Specifies the account linking action for an IdP user. Default: `AUTO`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/idp_oidc#account_link_action IdpOidc#account_link_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/idp_oidc#account_link_action IdpOidc#account_link_action}
 
 ---
 
@@ -296,7 +296,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Group memberships to determine link candidates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/idp_oidc#account_link_group_include IdpOidc#account_link_group_include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/idp_oidc#account_link_group_include IdpOidc#account_link_group_include}
 
 ---
 
@@ -306,7 +306,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Action for a previously deprovisioned IdP user during authentication. Can be `NONE` or `REACTIVATE`. Default: `NONE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/idp_oidc#deprovisioned_action IdpOidc#deprovisioned_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/idp_oidc#deprovisioned_action IdpOidc#deprovisioned_action}
 
 ---
 
@@ -316,7 +316,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Provisioning action for IdP user's group memberships. It can be `NONE`, `SYNC`, `APPEND`, or `ASSIGN`. Default: `NONE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/idp_oidc#groups_action IdpOidc#groups_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/idp_oidc#groups_action IdpOidc#groups_action}
 
 ---
 
@@ -326,7 +326,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 List of Okta Group IDs to add an IdP user as a member with the `ASSIGN` `groups_action`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/idp_oidc#groups_assignment IdpOidc#groups_assignment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/idp_oidc#groups_assignment IdpOidc#groups_assignment}
 
 ---
 
@@ -336,7 +336,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 IdP user profile attribute name (case-insensitive) for an array value that contains group memberships.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/idp_oidc#groups_attribute IdpOidc#groups_attribute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/idp_oidc#groups_attribute IdpOidc#groups_attribute}
 
 ---
 
@@ -346,7 +346,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Whitelist of Okta Group identifiers that are allowed for the `APPEND` or `SYNC` `groups_action`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/idp_oidc#groups_filter IdpOidc#groups_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/idp_oidc#groups_filter IdpOidc#groups_filter}
 
 ---
 
@@ -354,7 +354,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/idp_oidc#id IdpOidc#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/idp_oidc#id IdpOidc#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -369,7 +369,7 @@ Indicates whether Okta uses the original Okta org domain URL, a custom domain UR
 
 It can be `ORG_URL`, `CUSTOM_URL`, or `DYNAMIC`. Default: `ORG_URL`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/idp_oidc#issuer_mode IdpOidc#issuer_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/idp_oidc#issuer_mode IdpOidc#issuer_mode}
 
 ---
 
@@ -379,7 +379,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Maximum allowable clock-skew when processing messages from the IdP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/idp_oidc#max_clock_skew IdpOidc#max_clock_skew}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/idp_oidc#max_clock_skew IdpOidc#max_clock_skew}
 
 ---
 
@@ -389,7 +389,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Require Proof Key for Code Exchange (PKCE) for additional verification key rotation mode. See: https://developer.okta.com/docs/reference/api/idps/#oauth-2-0-and-openid-connect-client-object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/idp_oidc#pkce_required IdpOidc#pkce_required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/idp_oidc#pkce_required IdpOidc#pkce_required}
 
 ---
 
@@ -399,7 +399,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Determines if the IdP should act as a source of truth for user profile attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/idp_oidc#profile_master IdpOidc#profile_master}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/idp_oidc#profile_master IdpOidc#profile_master}
 
 ---
 
@@ -409,7 +409,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 The type of protocol to use. It can be `OIDC` or `OAUTH2`. Default: `OIDC`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/idp_oidc#protocol_type IdpOidc#protocol_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/idp_oidc#protocol_type IdpOidc#protocol_type}
 
 ---
 
@@ -419,7 +419,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Provisioning action for an IdP user during authentication. Default: `AUTO`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/idp_oidc#provisioning_action IdpOidc#provisioning_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/idp_oidc#provisioning_action IdpOidc#provisioning_action}
 
 ---
 
@@ -431,7 +431,7 @@ The HMAC Signature Algorithm used when signing an authorization request.
 
 Defaults to `HS256`. It can be `HS256`, `HS384`, `HS512`, `SHA-256`. `RS256`, `RS384`, or `RS512`. NOTE: `SHA-256` an undocumented legacy value and not continue to be valid. See API docs https://developer.okta.com/docs/reference/api/idps/#oidc-request-signature-algorithm-object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/idp_oidc#request_signature_algorithm IdpOidc#request_signature_algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/idp_oidc#request_signature_algorithm IdpOidc#request_signature_algorithm}
 
 ---
 
@@ -443,7 +443,7 @@ Specifies whether to digitally sign an AuthnRequest messages to the IdP.
 
 Defaults to `REQUEST`. It can be `REQUEST` or `NONE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/idp_oidc#request_signature_scope IdpOidc#request_signature_scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/idp_oidc#request_signature_scope IdpOidc#request_signature_scope}
 
 ---
 
@@ -453,7 +453,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Default to `ACTIVE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/idp_oidc#status IdpOidc#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/idp_oidc#status IdpOidc#status}
 
 ---
 
@@ -463,7 +463,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Okta user profile attribute for matching transformed IdP username. Only for matchType `CUSTOM_ATTRIBUTE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/idp_oidc#subject_match_attribute IdpOidc#subject_match_attribute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/idp_oidc#subject_match_attribute IdpOidc#subject_match_attribute}
 
 ---
 
@@ -475,7 +475,7 @@ Determines the Okta user profile attribute match conditions for account linking 
 
 By default, it is set to `USERNAME`. It can be set to `USERNAME`, `EMAIL`, `USERNAME_OR_EMAIL` or `CUSTOM_ATTRIBUTE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/idp_oidc#subject_match_type IdpOidc#subject_match_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/idp_oidc#subject_match_type IdpOidc#subject_match_type}
 
 ---
 
@@ -485,7 +485,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Action for a previously suspended IdP user during authentication. Can be `NONE` or `REACTIVATE`. Default: `NONE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/idp_oidc#suspended_action IdpOidc#suspended_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/idp_oidc#suspended_action IdpOidc#suspended_action}
 
 ---
 
@@ -493,7 +493,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/idp_oidc#user_info_binding IdpOidc#user_info_binding}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/idp_oidc#user_info_binding IdpOidc#user_info_binding}.
 
 ---
 
@@ -503,7 +503,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Protected resource endpoint that returns claims about the authenticated user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/idp_oidc#user_info_url IdpOidc#user_info_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/idp_oidc#user_info_url IdpOidc#user_info_url}
 
 ---
 
@@ -513,7 +513,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Okta EL Expression to generate or transform a unique username for the IdP user. Default: `idpuser.email`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/idp_oidc#username_template IdpOidc#username_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/idp_oidc#username_template IdpOidc#username_template}
 
 ---
 
@@ -1101,7 +1101,7 @@ The construct id used in the generated config for the IdpOidc to import.
 
 The id of the existing IdpOidc that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/idp_oidc#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/idp_oidc#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -2153,7 +2153,7 @@ IdpOidcConfig.builder()
 | <code><a href="#@cdktf/provider-okta.idpOidc.IdpOidcConfig.property.groupsAssignment">groupsAssignment</a></code> | <code>java.util.List<java.lang.String></code> | List of Okta Group IDs to add an IdP user as a member with the `ASSIGN` `groups_action`. |
 | <code><a href="#@cdktf/provider-okta.idpOidc.IdpOidcConfig.property.groupsAttribute">groupsAttribute</a></code> | <code>java.lang.String</code> | IdP user profile attribute name (case-insensitive) for an array value that contains group memberships. |
 | <code><a href="#@cdktf/provider-okta.idpOidc.IdpOidcConfig.property.groupsFilter">groupsFilter</a></code> | <code>java.util.List<java.lang.String></code> | Whitelist of Okta Group identifiers that are allowed for the `APPEND` or `SYNC` `groups_action`. |
-| <code><a href="#@cdktf/provider-okta.idpOidc.IdpOidcConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/idp_oidc#id IdpOidc#id}. |
+| <code><a href="#@cdktf/provider-okta.idpOidc.IdpOidcConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/idp_oidc#id IdpOidc#id}. |
 | <code><a href="#@cdktf/provider-okta.idpOidc.IdpOidcConfig.property.issuerMode">issuerMode</a></code> | <code>java.lang.String</code> | Indicates whether Okta uses the original Okta org domain URL, a custom domain URL, or dynamic. |
 | <code><a href="#@cdktf/provider-okta.idpOidc.IdpOidcConfig.property.maxClockSkew">maxClockSkew</a></code> | <code>java.lang.Number</code> | Maximum allowable clock-skew when processing messages from the IdP. |
 | <code><a href="#@cdktf/provider-okta.idpOidc.IdpOidcConfig.property.pkceRequired">pkceRequired</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Require Proof Key for Code Exchange (PKCE) for additional verification key rotation mode. See: https://developer.okta.com/docs/reference/api/idps/#oauth-2-0-and-openid-connect-client-object. |
@@ -2166,7 +2166,7 @@ IdpOidcConfig.builder()
 | <code><a href="#@cdktf/provider-okta.idpOidc.IdpOidcConfig.property.subjectMatchAttribute">subjectMatchAttribute</a></code> | <code>java.lang.String</code> | Okta user profile attribute for matching transformed IdP username. Only for matchType `CUSTOM_ATTRIBUTE`. |
 | <code><a href="#@cdktf/provider-okta.idpOidc.IdpOidcConfig.property.subjectMatchType">subjectMatchType</a></code> | <code>java.lang.String</code> | Determines the Okta user profile attribute match conditions for account linking and authentication of the transformed IdP username. |
 | <code><a href="#@cdktf/provider-okta.idpOidc.IdpOidcConfig.property.suspendedAction">suspendedAction</a></code> | <code>java.lang.String</code> | Action for a previously suspended IdP user during authentication. Can be `NONE` or `REACTIVATE`. Default: `NONE`. |
-| <code><a href="#@cdktf/provider-okta.idpOidc.IdpOidcConfig.property.userInfoBinding">userInfoBinding</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/idp_oidc#user_info_binding IdpOidc#user_info_binding}. |
+| <code><a href="#@cdktf/provider-okta.idpOidc.IdpOidcConfig.property.userInfoBinding">userInfoBinding</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/idp_oidc#user_info_binding IdpOidc#user_info_binding}. |
 | <code><a href="#@cdktf/provider-okta.idpOidc.IdpOidcConfig.property.userInfoUrl">userInfoUrl</a></code> | <code>java.lang.String</code> | Protected resource endpoint that returns claims about the authenticated user. |
 | <code><a href="#@cdktf/provider-okta.idpOidc.IdpOidcConfig.property.usernameTemplate">usernameTemplate</a></code> | <code>java.lang.String</code> | Okta EL Expression to generate or transform a unique username for the IdP user. Default: `idpuser.email`. |
 
@@ -2252,7 +2252,7 @@ public java.lang.String getAuthorizationBinding();
 
 The method of making an authorization request. It can be set to `HTTP-POST` or `HTTP-REDIRECT`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/idp_oidc#authorization_binding IdpOidc#authorization_binding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/idp_oidc#authorization_binding IdpOidc#authorization_binding}
 
 ---
 
@@ -2266,7 +2266,7 @@ public java.lang.String getAuthorizationUrl();
 
 IdP Authorization Server (AS) endpoint to request consent from the user and obtain an authorization code grant.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/idp_oidc#authorization_url IdpOidc#authorization_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/idp_oidc#authorization_url IdpOidc#authorization_url}
 
 ---
 
@@ -2280,7 +2280,7 @@ public java.lang.String getClientId();
 
 Unique identifier issued by AS for the Okta IdP instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/idp_oidc#client_id IdpOidc#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/idp_oidc#client_id IdpOidc#client_id}
 
 ---
 
@@ -2294,7 +2294,7 @@ public java.lang.String getClientSecret();
 
 Client secret issued by AS for the Okta IdP instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/idp_oidc#client_secret IdpOidc#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/idp_oidc#client_secret IdpOidc#client_secret}
 
 ---
 
@@ -2308,7 +2308,7 @@ public java.lang.String getIssuerUrl();
 
 URI that identifies the issuer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/idp_oidc#issuer_url IdpOidc#issuer_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/idp_oidc#issuer_url IdpOidc#issuer_url}
 
 ---
 
@@ -2322,7 +2322,7 @@ public java.lang.String getJwksBinding();
 
 The method of making a request for the OIDC JWKS. It can be set to `HTTP-POST` or `HTTP-REDIRECT`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/idp_oidc#jwks_binding IdpOidc#jwks_binding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/idp_oidc#jwks_binding IdpOidc#jwks_binding}
 
 ---
 
@@ -2336,7 +2336,7 @@ public java.lang.String getJwksUrl();
 
 Endpoint where the keys signer publishes its keys in a JWK Set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/idp_oidc#jwks_url IdpOidc#jwks_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/idp_oidc#jwks_url IdpOidc#jwks_url}
 
 ---
 
@@ -2350,7 +2350,7 @@ public java.lang.String getName();
 
 Name of the IdP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/idp_oidc#name IdpOidc#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/idp_oidc#name IdpOidc#name}
 
 ---
 
@@ -2364,7 +2364,7 @@ public java.util.List<java.lang.String> getScopes();
 
 The scopes of the IdP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/idp_oidc#scopes IdpOidc#scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/idp_oidc#scopes IdpOidc#scopes}
 
 ---
 
@@ -2378,7 +2378,7 @@ public java.lang.String getTokenBinding();
 
 The method of making a token request. It can be set to `HTTP-POST` or `HTTP-REDIRECT`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/idp_oidc#token_binding IdpOidc#token_binding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/idp_oidc#token_binding IdpOidc#token_binding}
 
 ---
 
@@ -2392,7 +2392,7 @@ public java.lang.String getTokenUrl();
 
 IdP Authorization Server (AS) endpoint to exchange the authorization code grant for an access token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/idp_oidc#token_url IdpOidc#token_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/idp_oidc#token_url IdpOidc#token_url}
 
 ---
 
@@ -2406,7 +2406,7 @@ public java.lang.String getAccountLinkAction();
 
 Specifies the account linking action for an IdP user. Default: `AUTO`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/idp_oidc#account_link_action IdpOidc#account_link_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/idp_oidc#account_link_action IdpOidc#account_link_action}
 
 ---
 
@@ -2420,7 +2420,7 @@ public java.util.List<java.lang.String> getAccountLinkGroupInclude();
 
 Group memberships to determine link candidates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/idp_oidc#account_link_group_include IdpOidc#account_link_group_include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/idp_oidc#account_link_group_include IdpOidc#account_link_group_include}
 
 ---
 
@@ -2434,7 +2434,7 @@ public java.lang.String getDeprovisionedAction();
 
 Action for a previously deprovisioned IdP user during authentication. Can be `NONE` or `REACTIVATE`. Default: `NONE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/idp_oidc#deprovisioned_action IdpOidc#deprovisioned_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/idp_oidc#deprovisioned_action IdpOidc#deprovisioned_action}
 
 ---
 
@@ -2448,7 +2448,7 @@ public java.lang.String getGroupsAction();
 
 Provisioning action for IdP user's group memberships. It can be `NONE`, `SYNC`, `APPEND`, or `ASSIGN`. Default: `NONE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/idp_oidc#groups_action IdpOidc#groups_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/idp_oidc#groups_action IdpOidc#groups_action}
 
 ---
 
@@ -2462,7 +2462,7 @@ public java.util.List<java.lang.String> getGroupsAssignment();
 
 List of Okta Group IDs to add an IdP user as a member with the `ASSIGN` `groups_action`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/idp_oidc#groups_assignment IdpOidc#groups_assignment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/idp_oidc#groups_assignment IdpOidc#groups_assignment}
 
 ---
 
@@ -2476,7 +2476,7 @@ public java.lang.String getGroupsAttribute();
 
 IdP user profile attribute name (case-insensitive) for an array value that contains group memberships.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/idp_oidc#groups_attribute IdpOidc#groups_attribute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/idp_oidc#groups_attribute IdpOidc#groups_attribute}
 
 ---
 
@@ -2490,7 +2490,7 @@ public java.util.List<java.lang.String> getGroupsFilter();
 
 Whitelist of Okta Group identifiers that are allowed for the `APPEND` or `SYNC` `groups_action`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/idp_oidc#groups_filter IdpOidc#groups_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/idp_oidc#groups_filter IdpOidc#groups_filter}
 
 ---
 
@@ -2502,7 +2502,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/idp_oidc#id IdpOidc#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/idp_oidc#id IdpOidc#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2521,7 +2521,7 @@ Indicates whether Okta uses the original Okta org domain URL, a custom domain UR
 
 It can be `ORG_URL`, `CUSTOM_URL`, or `DYNAMIC`. Default: `ORG_URL`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/idp_oidc#issuer_mode IdpOidc#issuer_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/idp_oidc#issuer_mode IdpOidc#issuer_mode}
 
 ---
 
@@ -2535,7 +2535,7 @@ public java.lang.Number getMaxClockSkew();
 
 Maximum allowable clock-skew when processing messages from the IdP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/idp_oidc#max_clock_skew IdpOidc#max_clock_skew}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/idp_oidc#max_clock_skew IdpOidc#max_clock_skew}
 
 ---
 
@@ -2549,7 +2549,7 @@ public java.lang.Object getPkceRequired();
 
 Require Proof Key for Code Exchange (PKCE) for additional verification key rotation mode. See: https://developer.okta.com/docs/reference/api/idps/#oauth-2-0-and-openid-connect-client-object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/idp_oidc#pkce_required IdpOidc#pkce_required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/idp_oidc#pkce_required IdpOidc#pkce_required}
 
 ---
 
@@ -2563,7 +2563,7 @@ public java.lang.Object getProfileMaster();
 
 Determines if the IdP should act as a source of truth for user profile attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/idp_oidc#profile_master IdpOidc#profile_master}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/idp_oidc#profile_master IdpOidc#profile_master}
 
 ---
 
@@ -2577,7 +2577,7 @@ public java.lang.String getProtocolType();
 
 The type of protocol to use. It can be `OIDC` or `OAUTH2`. Default: `OIDC`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/idp_oidc#protocol_type IdpOidc#protocol_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/idp_oidc#protocol_type IdpOidc#protocol_type}
 
 ---
 
@@ -2591,7 +2591,7 @@ public java.lang.String getProvisioningAction();
 
 Provisioning action for an IdP user during authentication. Default: `AUTO`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/idp_oidc#provisioning_action IdpOidc#provisioning_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/idp_oidc#provisioning_action IdpOidc#provisioning_action}
 
 ---
 
@@ -2607,7 +2607,7 @@ The HMAC Signature Algorithm used when signing an authorization request.
 
 Defaults to `HS256`. It can be `HS256`, `HS384`, `HS512`, `SHA-256`. `RS256`, `RS384`, or `RS512`. NOTE: `SHA-256` an undocumented legacy value and not continue to be valid. See API docs https://developer.okta.com/docs/reference/api/idps/#oidc-request-signature-algorithm-object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/idp_oidc#request_signature_algorithm IdpOidc#request_signature_algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/idp_oidc#request_signature_algorithm IdpOidc#request_signature_algorithm}
 
 ---
 
@@ -2623,7 +2623,7 @@ Specifies whether to digitally sign an AuthnRequest messages to the IdP.
 
 Defaults to `REQUEST`. It can be `REQUEST` or `NONE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/idp_oidc#request_signature_scope IdpOidc#request_signature_scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/idp_oidc#request_signature_scope IdpOidc#request_signature_scope}
 
 ---
 
@@ -2637,7 +2637,7 @@ public java.lang.String getStatus();
 
 Default to `ACTIVE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/idp_oidc#status IdpOidc#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/idp_oidc#status IdpOidc#status}
 
 ---
 
@@ -2651,7 +2651,7 @@ public java.lang.String getSubjectMatchAttribute();
 
 Okta user profile attribute for matching transformed IdP username. Only for matchType `CUSTOM_ATTRIBUTE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/idp_oidc#subject_match_attribute IdpOidc#subject_match_attribute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/idp_oidc#subject_match_attribute IdpOidc#subject_match_attribute}
 
 ---
 
@@ -2667,7 +2667,7 @@ Determines the Okta user profile attribute match conditions for account linking 
 
 By default, it is set to `USERNAME`. It can be set to `USERNAME`, `EMAIL`, `USERNAME_OR_EMAIL` or `CUSTOM_ATTRIBUTE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/idp_oidc#subject_match_type IdpOidc#subject_match_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/idp_oidc#subject_match_type IdpOidc#subject_match_type}
 
 ---
 
@@ -2681,7 +2681,7 @@ public java.lang.String getSuspendedAction();
 
 Action for a previously suspended IdP user during authentication. Can be `NONE` or `REACTIVATE`. Default: `NONE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/idp_oidc#suspended_action IdpOidc#suspended_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/idp_oidc#suspended_action IdpOidc#suspended_action}
 
 ---
 
@@ -2693,7 +2693,7 @@ public java.lang.String getUserInfoBinding();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/idp_oidc#user_info_binding IdpOidc#user_info_binding}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/idp_oidc#user_info_binding IdpOidc#user_info_binding}.
 
 ---
 
@@ -2707,7 +2707,7 @@ public java.lang.String getUserInfoUrl();
 
 Protected resource endpoint that returns claims about the authenticated user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/idp_oidc#user_info_url IdpOidc#user_info_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/idp_oidc#user_info_url IdpOidc#user_info_url}
 
 ---
 
@@ -2721,7 +2721,7 @@ public java.lang.String getUsernameTemplate();
 
 Okta EL Expression to generate or transform a unique username for the IdP user. Default: `idpuser.email`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/idp_oidc#username_template IdpOidc#username_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/idp_oidc#username_template IdpOidc#username_template}
 
 ---
 

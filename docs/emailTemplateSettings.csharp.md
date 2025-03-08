@@ -4,7 +4,7 @@
 
 ### EmailTemplateSettings <a name="EmailTemplateSettings" id="@cdktf/provider-okta.emailTemplateSettings.EmailTemplateSettings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/email_template_settings okta_email_template_settings}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/email_template_settings okta_email_template_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.emailTemplateSettings.EmailTemplateSettings.Initializer"></a>
 
@@ -467,7 +467,7 @@ The construct id used in the generated config for the EmailTemplateSettings to i
 
 The id of the existing EmailTemplateSettings that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/email_template_settings#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/email_template_settings#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -857,7 +857,7 @@ public string BrandId { get; set; }
 
 The ID of the brand.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/email_template_settings#brand_id EmailTemplateSettings#brand_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/email_template_settings#brand_id EmailTemplateSettings#brand_id}
 
 ---
 
@@ -871,7 +871,7 @@ public string Recipients { get; set; }
 
 The recipients the emails of this template will be sent to - Valid values: `ALL_USERS`, `ADMINS_ONLY`, `NO_USERS`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/email_template_settings#recipients EmailTemplateSettings#recipients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/email_template_settings#recipients EmailTemplateSettings#recipients}
 
 ---
 
@@ -885,7 +885,7 @@ public string TemplateName { get; set; }
 
 Email template name - Example values: `AccountLockout`,`ADForgotPassword`,`ADForgotPasswordDenied`,`ADSelfServiceUnlock`,`ADUserActivation`,`AuthenticatorEnrolled`,`AuthenticatorReset`,`ChangeEmailConfirmation`,`EmailChallenge`,`EmailChangeConfirmation`,`EmailFactorVerification`,`ForgotPassword`,`ForgotPasswordDenied`,`IGAReviewerEndNotification`,`IGAReviewerNotification`,`IGAReviewerPendingNotification`,`IGAReviewerReassigned`,`LDAPForgotPassword`,`LDAPForgotPasswordDenied`,`LDAPSelfServiceUnlock`,`LDAPUserActivation`,`MyAccountChangeConfirmation`,`NewSignOnNotification`,`OktaVerifyActivation`,`PasswordChanged`,`PasswordResetByAdmin`,`PendingEmailChange`,`RegistrationActivation`,`RegistrationEmailVerification`,`SelfServiceUnlock`,`SelfServiceUnlockOnUnlockedAccount`,`UserActivation`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/email_template_settings#template_name EmailTemplateSettings#template_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/email_template_settings#template_name EmailTemplateSettings#template_name}
 
 ---
 

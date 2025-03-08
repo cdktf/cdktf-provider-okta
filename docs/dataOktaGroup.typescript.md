@@ -4,7 +4,7 @@
 
 ### DataOktaGroup <a name="DataOktaGroup" id="@cdktf/provider-okta.dataOktaGroup.DataOktaGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/data-sources/group okta_group}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/data-sources/group okta_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaGroup.DataOktaGroup.Initializer"></a>
 
@@ -400,7 +400,7 @@ The construct id used in the generated config for the DataOktaGroup to import.
 
 The id of the existing DataOktaGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/data-sources/group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/data-sources/group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -816,7 +816,7 @@ Force delay of the group read by N seconds.
 
 Useful when eventual consistency of group information needs to be allowed for; for instance, when group rules are known to have been applied.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/data-sources/group#delay_read_seconds DataOktaGroup#delay_read_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/data-sources/group#delay_read_seconds DataOktaGroup#delay_read_seconds}
 
 ---
 
@@ -830,7 +830,7 @@ public readonly id: string;
 
 ID of group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/data-sources/group#id DataOktaGroup#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/data-sources/group#id DataOktaGroup#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -847,7 +847,7 @@ public readonly includeUsers: boolean | IResolvable;
 
 Fetch group users, having default off cuts down on API calls.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/data-sources/group#include_users DataOktaGroup#include_users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/data-sources/group#include_users DataOktaGroup#include_users}
 
 ---
 
@@ -861,7 +861,7 @@ public readonly name: string;
 
 Name of group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/data-sources/group#name DataOktaGroup#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/data-sources/group#name DataOktaGroup#name}
 
 ---
 
@@ -877,7 +877,7 @@ Type of the group.
 
 When specified in the terraform resource, will act as a filter when searching for the group
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/data-sources/group#type DataOktaGroup#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/data-sources/group#type DataOktaGroup#type}
 
 ---
 
