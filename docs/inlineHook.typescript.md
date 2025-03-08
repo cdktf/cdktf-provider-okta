@@ -4,7 +4,7 @@
 
 ### InlineHook <a name="InlineHook" id="@cdktf/provider-okta.inlineHook.InlineHook"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/inline_hook okta_inline_hook}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/inline_hook okta_inline_hook}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.inlineHook.InlineHook.Initializer"></a>
 
@@ -75,6 +75,8 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-okta.inlineHook.InlineHook.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-okta.inlineHook.InlineHook.putHeaders">putHeaders</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.inlineHook.InlineHook.resetAuth">resetAuth</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.inlineHook.InlineHook.resetChannel">resetChannel</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.inlineHook.InlineHook.resetChannelJson">resetChannelJson</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.inlineHook.InlineHook.resetHeaders">resetHeaders</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.inlineHook.InlineHook.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.inlineHook.InlineHook.resetStatus">resetStatus</a></code> | *No description.* |
@@ -387,6 +389,18 @@ public putHeaders(value: IResolvable | InlineHookHeaders[]): void
 public resetAuth(): void
 ```
 
+##### `resetChannel` <a name="resetChannel" id="@cdktf/provider-okta.inlineHook.InlineHook.resetChannel"></a>
+
+```typescript
+public resetChannel(): void
+```
+
+##### `resetChannelJson` <a name="resetChannelJson" id="@cdktf/provider-okta.inlineHook.InlineHook.resetChannelJson"></a>
+
+```typescript
+public resetChannelJson(): void
+```
+
 ##### `resetHeaders` <a name="resetHeaders" id="@cdktf/provider-okta.inlineHook.InlineHook.resetHeaders"></a>
 
 ```typescript
@@ -508,7 +522,7 @@ The construct id used in the generated config for the InlineHook to import.
 
 The id of the existing InlineHook that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/inline_hook#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/inline_hook#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -541,6 +555,7 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.14.1/doc
 | <code><a href="#@cdktf/provider-okta.inlineHook.InlineHook.property.headers">headers</a></code> | <code><a href="#@cdktf/provider-okta.inlineHook.InlineHookHeadersList">InlineHookHeadersList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.inlineHook.InlineHook.property.authInput">authInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.inlineHook.InlineHook.property.channelInput">channelInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.inlineHook.InlineHook.property.channelJsonInput">channelJsonInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.inlineHook.InlineHook.property.headersInput">headersInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-okta.inlineHook.InlineHookHeaders">InlineHookHeaders</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.inlineHook.InlineHook.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.inlineHook.InlineHook.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
@@ -549,6 +564,7 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.14.1/doc
 | <code><a href="#@cdktf/provider-okta.inlineHook.InlineHook.property.versionInput">versionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.inlineHook.InlineHook.property.auth">auth</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.inlineHook.InlineHook.property.channel">channel</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.inlineHook.InlineHook.property.channelJson">channelJson</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.inlineHook.InlineHook.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.inlineHook.InlineHook.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.inlineHook.InlineHook.property.status">status</a></code> | <code>string</code> | *No description.* |
@@ -729,6 +745,16 @@ public readonly channelInput: {[ key: string ]: string};
 
 ---
 
+##### `channelJsonInput`<sup>Optional</sup> <a name="channelJsonInput" id="@cdktf/provider-okta.inlineHook.InlineHook.property.channelJsonInput"></a>
+
+```typescript
+public readonly channelJsonInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `headersInput`<sup>Optional</sup> <a name="headersInput" id="@cdktf/provider-okta.inlineHook.InlineHook.property.headersInput"></a>
 
 ```typescript
@@ -806,6 +832,16 @@ public readonly channel: {[ key: string ]: string};
 ```
 
 - *Type:* {[ key: string ]: string}
+
+---
+
+##### `channelJson`<sup>Required</sup> <a name="channelJson" id="@cdktf/provider-okta.inlineHook.InlineHook.property.channelJson"></a>
+
+```typescript
+public readonly channelJson: string;
+```
+
+- *Type:* string
 
 ---
 
@@ -900,13 +936,14 @@ const inlineHookConfig: inlineHook.InlineHookConfig = { ... }
 | <code><a href="#@cdktf/provider-okta.inlineHook.InlineHookConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.inlineHook.InlineHookConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.inlineHook.InlineHookConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.inlineHook.InlineHookConfig.property.channel">channel</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/inline_hook#channel InlineHook#channel}. |
 | <code><a href="#@cdktf/provider-okta.inlineHook.InlineHookConfig.property.name">name</a></code> | <code>string</code> | The inline hook display name. |
 | <code><a href="#@cdktf/provider-okta.inlineHook.InlineHookConfig.property.type">type</a></code> | <code>string</code> | The type of hook to create. [See here for supported types](https://developer.okta.com/docs/reference/api/inline-hooks/#supported-inline-hook-types). |
 | <code><a href="#@cdktf/provider-okta.inlineHook.InlineHookConfig.property.version">version</a></code> | <code>string</code> | The version of the hook. The currently-supported version is `1.0.0`. |
-| <code><a href="#@cdktf/provider-okta.inlineHook.InlineHookConfig.property.auth">auth</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/inline_hook#auth InlineHook#auth}. |
+| <code><a href="#@cdktf/provider-okta.inlineHook.InlineHookConfig.property.auth">auth</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/inline_hook#auth InlineHook#auth}. |
+| <code><a href="#@cdktf/provider-okta.inlineHook.InlineHookConfig.property.channel">channel</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/inline_hook#channel InlineHook#channel}. |
+| <code><a href="#@cdktf/provider-okta.inlineHook.InlineHookConfig.property.channelJson">channelJson</a></code> | <code>string</code> | true channel object for the inline hook API contract. |
 | <code><a href="#@cdktf/provider-okta.inlineHook.InlineHookConfig.property.headers">headers</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-okta.inlineHook.InlineHookHeaders">InlineHookHeaders</a>[]</code> | headers block. |
-| <code><a href="#@cdktf/provider-okta.inlineHook.InlineHookConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/inline_hook#id InlineHook#id}. |
+| <code><a href="#@cdktf/provider-okta.inlineHook.InlineHookConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/inline_hook#id InlineHook#id}. |
 | <code><a href="#@cdktf/provider-okta.inlineHook.InlineHookConfig.property.status">status</a></code> | <code>string</code> | Default to `ACTIVE`. |
 
 ---
@@ -981,18 +1018,6 @@ public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExe
 
 ---
 
-##### `channel`<sup>Required</sup> <a name="channel" id="@cdktf/provider-okta.inlineHook.InlineHookConfig.property.channel"></a>
-
-```typescript
-public readonly channel: {[ key: string ]: string};
-```
-
-- *Type:* {[ key: string ]: string}
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/inline_hook#channel InlineHook#channel}.
-
----
-
 ##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-okta.inlineHook.InlineHookConfig.property.name"></a>
 
 ```typescript
@@ -1003,7 +1028,7 @@ public readonly name: string;
 
 The inline hook display name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/inline_hook#name InlineHook#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/inline_hook#name InlineHook#name}
 
 ---
 
@@ -1017,7 +1042,7 @@ public readonly type: string;
 
 The type of hook to create. [See here for supported types](https://developer.okta.com/docs/reference/api/inline-hooks/#supported-inline-hook-types).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/inline_hook#type InlineHook#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/inline_hook#type InlineHook#type}
 
 ---
 
@@ -1031,7 +1056,7 @@ public readonly version: string;
 
 The version of the hook. The currently-supported version is `1.0.0`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/inline_hook#version InlineHook#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/inline_hook#version InlineHook#version}
 
 ---
 
@@ -1043,7 +1068,33 @@ public readonly auth: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/inline_hook#auth InlineHook#auth}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/inline_hook#auth InlineHook#auth}.
+
+---
+
+##### `channel`<sup>Optional</sup> <a name="channel" id="@cdktf/provider-okta.inlineHook.InlineHookConfig.property.channel"></a>
+
+```typescript
+public readonly channel: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: string}
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/inline_hook#channel InlineHook#channel}.
+
+---
+
+##### `channelJson`<sup>Optional</sup> <a name="channelJson" id="@cdktf/provider-okta.inlineHook.InlineHookConfig.property.channelJson"></a>
+
+```typescript
+public readonly channelJson: string;
+```
+
+- *Type:* string
+
+true channel object for the inline hook API contract.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/inline_hook#channel_json InlineHook#channel_json}
 
 ---
 
@@ -1057,7 +1108,7 @@ public readonly headers: IResolvable | InlineHookHeaders[];
 
 headers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/inline_hook#headers InlineHook#headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/inline_hook#headers InlineHook#headers}
 
 ---
 
@@ -1069,7 +1120,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/inline_hook#id InlineHook#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/inline_hook#id InlineHook#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1086,7 +1137,7 @@ public readonly status: string;
 
 Default to `ACTIVE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/inline_hook#status InlineHook#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/inline_hook#status InlineHook#status}
 
 ---
 
@@ -1104,8 +1155,8 @@ const inlineHookHeaders: inlineHook.InlineHookHeaders = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.inlineHook.InlineHookHeaders.property.key">key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/inline_hook#key InlineHook#key}. |
-| <code><a href="#@cdktf/provider-okta.inlineHook.InlineHookHeaders.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/inline_hook#value InlineHook#value}. |
+| <code><a href="#@cdktf/provider-okta.inlineHook.InlineHookHeaders.property.key">key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/inline_hook#key InlineHook#key}. |
+| <code><a href="#@cdktf/provider-okta.inlineHook.InlineHookHeaders.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/inline_hook#value InlineHook#value}. |
 
 ---
 
@@ -1117,7 +1168,7 @@ public readonly key: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/inline_hook#key InlineHook#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/inline_hook#key InlineHook#key}.
 
 ---
 
@@ -1129,7 +1180,7 @@ public readonly value: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/inline_hook#value InlineHook#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/inline_hook#value InlineHook#value}.
 
 ---
 

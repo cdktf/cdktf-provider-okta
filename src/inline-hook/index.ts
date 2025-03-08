@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/inline_hook
+// https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/inline_hook
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,15 +8,21 @@ import * as cdktf from 'cdktf';
 
 export interface InlineHookConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/inline_hook#auth InlineHook#auth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/inline_hook#auth InlineHook#auth}
   */
   readonly auth?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/inline_hook#channel InlineHook#channel}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/inline_hook#channel InlineHook#channel}
   */
-  readonly channel: { [key: string]: string };
+  readonly channel?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/inline_hook#id InlineHook#id}
+  * true channel object for the inline hook API contract
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/inline_hook#channel_json InlineHook#channel_json}
+  */
+  readonly channelJson?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/inline_hook#id InlineHook#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -30,41 +31,41 @@ export interface InlineHookConfig extends cdktf.TerraformMetaArguments {
   /**
   * The inline hook display name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/inline_hook#name InlineHook#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/inline_hook#name InlineHook#name}
   */
   readonly name: string;
   /**
   * Default to `ACTIVE`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/inline_hook#status InlineHook#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/inline_hook#status InlineHook#status}
   */
   readonly status?: string;
   /**
   * The type of hook to create. [See here for supported types](https://developer.okta.com/docs/reference/api/inline-hooks/#supported-inline-hook-types).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/inline_hook#type InlineHook#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/inline_hook#type InlineHook#type}
   */
   readonly type: string;
   /**
   * The version of the hook. The currently-supported version is `1.0.0`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/inline_hook#version InlineHook#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/inline_hook#version InlineHook#version}
   */
   readonly version: string;
   /**
   * headers block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/inline_hook#headers InlineHook#headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/inline_hook#headers InlineHook#headers}
   */
   readonly headers?: InlineHookHeaders[] | cdktf.IResolvable;
 }
 export interface InlineHookHeaders {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/inline_hook#key InlineHook#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/inline_hook#key InlineHook#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/inline_hook#value InlineHook#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/inline_hook#value InlineHook#value}
   */
   readonly value?: string;
 }
@@ -209,7 +210,7 @@ export class InlineHookHeadersList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/inline_hook okta_inline_hook}
+* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/inline_hook okta_inline_hook}
 */
 export class InlineHook extends cdktf.TerraformResource {
 
@@ -225,7 +226,7 @@ export class InlineHook extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a InlineHook resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the InlineHook to import
-  * @param importFromId The id of the existing InlineHook that should be imported. Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/inline_hook#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing InlineHook that should be imported. Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/inline_hook#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the InlineHook to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -237,7 +238,7 @@ export class InlineHook extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.14.1/docs/resources/inline_hook okta_inline_hook} Resource
+  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/inline_hook okta_inline_hook} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -248,7 +249,7 @@ export class InlineHook extends cdktf.TerraformResource {
       terraformResourceType: 'okta_inline_hook',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '4.14.1',
+        providerVersion: '4.15.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -261,6 +262,7 @@ export class InlineHook extends cdktf.TerraformResource {
     });
     this._auth = config.auth;
     this._channel = config.channel;
+    this._channelJson = config.channelJson;
     this._id = config.id;
     this._name = config.name;
     this._status = config.status;
@@ -289,7 +291,7 @@ export class InlineHook extends cdktf.TerraformResource {
     return this._auth;
   }
 
-  // channel - computed: false, optional: false, required: true
+  // channel - computed: false, optional: true, required: false
   private _channel?: { [key: string]: string }; 
   public get channel() {
     return this.getStringMapAttribute('channel');
@@ -297,9 +299,28 @@ export class InlineHook extends cdktf.TerraformResource {
   public set channel(value: { [key: string]: string }) {
     this._channel = value;
   }
+  public resetChannel() {
+    this._channel = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get channelInput() {
     return this._channel;
+  }
+
+  // channel_json - computed: false, optional: true, required: false
+  private _channelJson?: string; 
+  public get channelJson() {
+    return this.getStringAttribute('channel_json');
+  }
+  public set channelJson(value: string) {
+    this._channelJson = value;
+  }
+  public resetChannelJson() {
+    this._channelJson = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get channelJsonInput() {
+    return this._channelJson;
   }
 
   // id - computed: true, optional: true, required: false
@@ -397,6 +418,7 @@ export class InlineHook extends cdktf.TerraformResource {
     return {
       auth: cdktf.hashMapper(cdktf.stringToTerraform)(this._auth),
       channel: cdktf.hashMapper(cdktf.stringToTerraform)(this._channel),
+      channel_json: cdktf.stringToTerraform(this._channelJson),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       status: cdktf.stringToTerraform(this._status),
@@ -419,6 +441,12 @@ export class InlineHook extends cdktf.TerraformResource {
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
+      },
+      channel_json: {
+        value: cdktf.stringToHclTerraform(this._channelJson),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
       },
       id: {
         value: cdktf.stringToHclTerraform(this._id),
