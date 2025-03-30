@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.15.0/doc
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.policyPassword.PolicyPassword.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/policypassword"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/policypassword"
 
 policypassword.NewPolicyPassword(scope Construct, id *string, config PolicyPasswordConfig) PolicyPassword
 ```
@@ -588,7 +588,7 @@ func ResetStatus()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.policyPassword.PolicyPassword.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/policypassword"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/policypassword"
 
 policypassword.PolicyPassword_IsConstruct(x interface{}) *bool
 ```
@@ -620,7 +620,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.policyPassword.PolicyPassword.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/policypassword"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/policypassword"
 
 policypassword.PolicyPassword_IsTerraformElement(x interface{}) *bool
 ```
@@ -634,7 +634,7 @@ policypassword.PolicyPassword_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.policyPassword.PolicyPassword.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/policypassword"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/policypassword"
 
 policypassword.PolicyPassword_IsTerraformResource(x interface{}) *bool
 ```
@@ -648,7 +648,7 @@ policypassword.PolicyPassword_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.policyPassword.PolicyPassword.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/policypassword"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/policypassword"
 
 policypassword.PolicyPassword_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1559,7 +1559,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.policyPassword.PolicyPasswordConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/policypassword"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/policypassword"
 
 &policypassword.PolicyPasswordConfig {
 	Connection: interface{},
