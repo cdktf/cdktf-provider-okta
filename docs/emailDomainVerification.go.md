@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.15.0/doc
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.emailDomainVerification.EmailDomainVerification.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/emaildomainverification"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/emaildomainverification"
 
 emaildomainverification.NewEmailDomainVerification(scope Construct, id *string, config EmailDomainVerificationConfig) EmailDomainVerification
 ```
@@ -385,7 +385,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.emailDomainVerification.EmailDomainVerification.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/emaildomainverification"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/emaildomainverification"
 
 emaildomainverification.EmailDomainVerification_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.emailDomainVerification.EmailDomainVerification.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/emaildomainverification"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/emaildomainverification"
 
 emaildomainverification.EmailDomainVerification_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ emaildomainverification.EmailDomainVerification_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.emailDomainVerification.EmailDomainVerification.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/emaildomainverification"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/emaildomainverification"
 
 emaildomainverification.EmailDomainVerification_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ emaildomainverification.EmailDomainVerification_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.emailDomainVerification.EmailDomainVerification.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/emaildomainverification"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/emaildomainverification"
 
 emaildomainverification.EmailDomainVerification_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -718,7 +718,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.emailDomainVerification.EmailDomainVerificationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/emaildomainverification"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/emaildomainverification"
 
 &emaildomainverification.EmailDomainVerificationConfig {
 	Connection: interface{},
