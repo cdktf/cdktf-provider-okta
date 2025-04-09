@@ -4,7 +4,7 @@
 
 ### DataOktaAppSaml <a name="DataOktaAppSaml" id="@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSaml"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/data-sources/app_saml okta_app_saml}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/data-sources/app_saml okta_app_saml}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSaml.Initializer"></a>
 
@@ -414,7 +414,7 @@ The construct id used in the generated config for the DataOktaAppSaml to import.
 
 The id of the existing DataOktaAppSaml that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/data-sources/app_saml#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/data-sources/app_saml#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1320,7 +1320,7 @@ public object ActiveOnly { get; set; }
 
 Search only ACTIVE applications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/data-sources/app_saml#active_only DataOktaAppSaml#active_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/data-sources/app_saml#active_only DataOktaAppSaml#active_only}
 
 ---
 
@@ -1334,7 +1334,7 @@ public string Id { get; set; }
 
 Id of application to retrieve, conflicts with label and label_prefix.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/data-sources/app_saml#id DataOktaAppSaml#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/data-sources/app_saml#id DataOktaAppSaml#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1355,7 +1355,7 @@ Label
 uses the ?q=<label> query parameter exposed by Okta's API. It should be noted that at this time
 this searches both name and label. This is used to avoid paginating through all applications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/data-sources/app_saml#label DataOktaAppSaml#label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/data-sources/app_saml#label DataOktaAppSaml#label}
 
 ---
 
@@ -1372,7 +1372,7 @@ Label prefix of the app to retrieve, conflicts with label and id.
 This will tell the
 provider to do a starts with query as opposed to an equals query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/data-sources/app_saml#label_prefix DataOktaAppSaml#label_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/data-sources/app_saml#label_prefix DataOktaAppSaml#label_prefix}
 
 ---
 
@@ -1386,7 +1386,7 @@ public object RequestCompressed { get; set; }
 
 Denotes whether the request is compressed or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/data-sources/app_saml#request_compressed DataOktaAppSaml#request_compressed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/data-sources/app_saml#request_compressed DataOktaAppSaml#request_compressed}
 
 ---
 
@@ -1400,7 +1400,7 @@ public object SkipGroups { get; set; }
 
 Ignore groups sync. This is a temporary solution until 'groups' field is supported in all the app-like resources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/data-sources/app_saml#skip_groups DataOktaAppSaml#skip_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/data-sources/app_saml#skip_groups DataOktaAppSaml#skip_groups}
 
 ---
 
@@ -1414,7 +1414,7 @@ public object SkipUsers { get; set; }
 
 Ignore users sync. This is a temporary solution until 'users' field is supported in all the app-like resources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/data-sources/app_saml#skip_users DataOktaAppSaml#skip_users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/data-sources/app_saml#skip_users DataOktaAppSaml#skip_users}
 
 ---
 

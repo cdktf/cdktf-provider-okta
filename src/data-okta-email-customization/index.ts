@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/okta/okta/4.16.0/docs/data-sources/email_customization
 // generated from terraform resource schema
 

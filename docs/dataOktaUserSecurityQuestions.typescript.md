@@ -4,7 +4,7 @@
 
 ### DataOktaUserSecurityQuestions <a name="DataOktaUserSecurityQuestions" id="@cdktf/provider-okta.dataOktaUserSecurityQuestions.DataOktaUserSecurityQuestions"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/data-sources/user_security_questions okta_user_security_questions}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/data-sources/user_security_questions okta_user_security_questions}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaUserSecurityQuestions.DataOktaUserSecurityQuestions.Initializer"></a>
 
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataOktaUserSecurityQuesti
 
 The id of the existing DataOktaUserSecurityQuestions that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/data-sources/user_security_questions#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/data-sources/user_security_questions#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -622,7 +622,7 @@ const dataOktaUserSecurityQuestionsConfig: dataOktaUserSecurityQuestions.DataOkt
 | <code><a href="#@cdktf/provider-okta.dataOktaUserSecurityQuestions.DataOktaUserSecurityQuestionsConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaUserSecurityQuestions.DataOktaUserSecurityQuestionsConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaUserSecurityQuestions.DataOktaUserSecurityQuestionsConfig.property.userId">userId</a></code> | <code>string</code> | ID of a Okta User. |
-| <code><a href="#@cdktf/provider-okta.dataOktaUserSecurityQuestions.DataOktaUserSecurityQuestionsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/data-sources/user_security_questions#id DataOktaUserSecurityQuestions#id}. |
+| <code><a href="#@cdktf/provider-okta.dataOktaUserSecurityQuestions.DataOktaUserSecurityQuestionsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/data-sources/user_security_questions#id DataOktaUserSecurityQuestions#id}. |
 
 ---
 
@@ -706,7 +706,7 @@ public readonly userId: string;
 
 ID of a Okta User.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/data-sources/user_security_questions#user_id DataOktaUserSecurityQuestions#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/data-sources/user_security_questions#user_id DataOktaUserSecurityQuestions#user_id}
 
 ---
 
@@ -718,7 +718,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/data-sources/user_security_questions#id DataOktaUserSecurityQuestions#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/data-sources/user_security_questions#id DataOktaUserSecurityQuestions#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
