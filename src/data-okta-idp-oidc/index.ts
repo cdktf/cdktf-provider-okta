@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/okta/okta/4.15.0/docs/data-sources/idp_oidc
+// https://registry.terraform.io/providers/okta/okta/4.16.0/docs/data-sources/idp_oidc
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +10,7 @@ export interface DataOktaIdpOidcConfig extends cdktf.TerraformMetaArguments {
   /**
   * Id of idp.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/data-sources/idp_oidc#id DataOktaIdpOidc#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/data-sources/idp_oidc#id DataOktaIdpOidc#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -24,13 +19,13 @@ export interface DataOktaIdpOidcConfig extends cdktf.TerraformMetaArguments {
   /**
   * Name of the idp.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/data-sources/idp_oidc#name DataOktaIdpOidc#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/data-sources/idp_oidc#name DataOktaIdpOidc#name}
   */
   readonly name?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/data-sources/idp_oidc okta_idp_oidc}
+* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/data-sources/idp_oidc okta_idp_oidc}
 */
 export class DataOktaIdpOidc extends cdktf.TerraformDataSource {
 
@@ -46,7 +41,7 @@ export class DataOktaIdpOidc extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataOktaIdpOidc resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataOktaIdpOidc to import
-  * @param importFromId The id of the existing DataOktaIdpOidc that should be imported. Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/data-sources/idp_oidc#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataOktaIdpOidc that should be imported. Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/data-sources/idp_oidc#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataOktaIdpOidc to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -58,7 +53,7 @@ export class DataOktaIdpOidc extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/data-sources/idp_oidc okta_idp_oidc} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/data-sources/idp_oidc okta_idp_oidc} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -69,7 +64,7 @@ export class DataOktaIdpOidc extends cdktf.TerraformDataSource {
       terraformResourceType: 'okta_idp_oidc',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '4.15.0',
+        providerVersion: '4.16.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

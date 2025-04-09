@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/app_group_assignments
+// https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_group_assignments
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface AppGroupAssignmentsConfig extends cdktf.TerraformMetaArguments 
   /**
   * The ID of the application to assign a group to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/app_group_assignments#app_id AppGroupAssignments#app_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_group_assignments#app_id AppGroupAssignments#app_id}
   */
   readonly appId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/app_group_assignments#id AppGroupAssignments#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_group_assignments#id AppGroupAssignments#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,15 +23,21 @@ export interface AppGroupAssignmentsConfig extends cdktf.TerraformMetaArguments 
   /**
   * group block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/app_group_assignments#group AppGroupAssignments#group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_group_assignments#group AppGroupAssignments#group}
   */
   readonly group?: AppGroupAssignmentsGroup[] | cdktf.IResolvable;
+  /**
+  * timeouts block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_group_assignments#timeouts AppGroupAssignments#timeouts}
+  */
+  readonly timeouts?: AppGroupAssignmentsTimeouts;
 }
 export interface AppGroupAssignmentsGroup {
   /**
   * A group to associate with the application
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/app_group_assignments#id AppGroupAssignments#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_group_assignments#id AppGroupAssignments#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -45,13 +46,13 @@ export interface AppGroupAssignmentsGroup {
   /**
   * Priority of group assignment
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/app_group_assignments#priority AppGroupAssignments#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_group_assignments#priority AppGroupAssignments#priority}
   */
   readonly priority?: number;
   /**
   * JSON document containing [application profile](https://developer.okta.com/docs/reference/api/apps/#profile-object)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/app_group_assignments#profile AppGroupAssignments#profile}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_group_assignments#profile AppGroupAssignments#profile}
   */
   readonly profile?: string;
 }
@@ -220,9 +221,169 @@ export class AppGroupAssignmentsGroupList extends cdktf.ComplexList {
     return new AppGroupAssignmentsGroupOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface AppGroupAssignmentsTimeouts {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_group_assignments#create AppGroupAssignments#create}
+  */
+  readonly create?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_group_assignments#read AppGroupAssignments#read}
+  */
+  readonly read?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_group_assignments#update AppGroupAssignments#update}
+  */
+  readonly update?: string;
+}
+
+export function appGroupAssignmentsTimeoutsToTerraform(struct?: AppGroupAssignmentsTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    read: cdktf.stringToTerraform(struct!.read),
+    update: cdktf.stringToTerraform(struct!.update),
+  }
+}
+
+
+export function appGroupAssignmentsTimeoutsToHclTerraform(struct?: AppGroupAssignmentsTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    read: {
+      value: cdktf.stringToHclTerraform(struct!.read),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class AppGroupAssignmentsTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): AppGroupAssignmentsTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._create !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.create = this._create;
+    }
+    if (this._read !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.read = this._read;
+    }
+    if (this._update !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.update = this._update;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AppGroupAssignmentsTimeouts | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._create = undefined;
+      this._read = undefined;
+      this._update = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._create = value.create;
+      this._read = value.read;
+      this._update = value.update;
+    }
+  }
+
+  // create - computed: false, optional: true, required: false
+  private _create?: string; 
+  public get create() {
+    return this.getStringAttribute('create');
+  }
+  public set create(value: string) {
+    this._create = value;
+  }
+  public resetCreate() {
+    this._create = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get createInput() {
+    return this._create;
+  }
+
+  // read - computed: false, optional: true, required: false
+  private _read?: string; 
+  public get read() {
+    return this.getStringAttribute('read');
+  }
+  public set read(value: string) {
+    this._read = value;
+  }
+  public resetRead() {
+    this._read = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get readInput() {
+    return this._read;
+  }
+
+  // update - computed: false, optional: true, required: false
+  private _update?: string; 
+  public get update() {
+    return this.getStringAttribute('update');
+  }
+  public set update(value: string) {
+    this._update = value;
+  }
+  public resetUpdate() {
+    this._update = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get updateInput() {
+    return this._update;
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/app_group_assignments okta_app_group_assignments}
+* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_group_assignments okta_app_group_assignments}
 */
 export class AppGroupAssignments extends cdktf.TerraformResource {
 
@@ -238,7 +399,7 @@ export class AppGroupAssignments extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a AppGroupAssignments resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AppGroupAssignments to import
-  * @param importFromId The id of the existing AppGroupAssignments that should be imported. Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/app_group_assignments#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AppGroupAssignments that should be imported. Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_group_assignments#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AppGroupAssignments to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -250,7 +411,7 @@ export class AppGroupAssignments extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.15.0/docs/resources/app_group_assignments okta_app_group_assignments} Resource
+  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_group_assignments okta_app_group_assignments} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -261,7 +422,7 @@ export class AppGroupAssignments extends cdktf.TerraformResource {
       terraformResourceType: 'okta_app_group_assignments',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '4.15.0',
+        providerVersion: '4.16.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -275,6 +436,7 @@ export class AppGroupAssignments extends cdktf.TerraformResource {
     this._appId = config.appId;
     this._id = config.id;
     this._group.internalValue = config.group;
+    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -326,6 +488,22 @@ export class AppGroupAssignments extends cdktf.TerraformResource {
     return this._group.internalValue;
   }
 
+  // timeouts - computed: false, optional: true, required: false
+  private _timeouts = new AppGroupAssignmentsTimeoutsOutputReference(this, "timeouts");
+  public get timeouts() {
+    return this._timeouts;
+  }
+  public putTimeouts(value: AppGroupAssignmentsTimeouts) {
+    this._timeouts.internalValue = value;
+  }
+  public resetTimeouts() {
+    this._timeouts.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -335,6 +513,7 @@ export class AppGroupAssignments extends cdktf.TerraformResource {
       app_id: cdktf.stringToTerraform(this._appId),
       id: cdktf.stringToTerraform(this._id),
       group: cdktf.listMapper(appGroupAssignmentsGroupToTerraform, true)(this._group.internalValue),
+      timeouts: appGroupAssignmentsTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 
@@ -357,6 +536,12 @@ export class AppGroupAssignments extends cdktf.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "AppGroupAssignmentsGroupList",
+      },
+      timeouts: {
+        value: appGroupAssignmentsTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "AppGroupAssignmentsTimeouts",
       },
     };
 
