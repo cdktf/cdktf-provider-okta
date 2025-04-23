@@ -4,7 +4,7 @@
 
 ### SecurityNotificationEmails <a name="SecurityNotificationEmails" id="@cdktf/provider-okta.securityNotificationEmails.SecurityNotificationEmails"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/security_notification_emails okta_security_notification_emails}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/security_notification_emails okta_security_notification_emails}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.securityNotificationEmails.SecurityNotificationEmails.Initializer"></a>
 
@@ -509,7 +509,7 @@ The construct id used in the generated config for the SecurityNotificationEmails
 
 The id of the existing SecurityNotificationEmails that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/security_notification_emails#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/security_notification_emails#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -871,7 +871,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/securitynotificationema
 | <code><a href="#@cdktf/provider-okta.securityNotificationEmails.SecurityNotificationEmailsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.securityNotificationEmails.SecurityNotificationEmailsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.securityNotificationEmails.SecurityNotificationEmailsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.securityNotificationEmails.SecurityNotificationEmailsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/security_notification_emails#id SecurityNotificationEmails#id}. |
+| <code><a href="#@cdktf/provider-okta.securityNotificationEmails.SecurityNotificationEmailsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/security_notification_emails#id SecurityNotificationEmails#id}. |
 | <code><a href="#@cdktf/provider-okta.securityNotificationEmails.SecurityNotificationEmailsConfig.property.reportSuspiciousActivityEnabled">ReportSuspiciousActivityEnabled</a></code> | <code>interface{}</code> | Notifies end users about suspicious or unrecognized activity from their account. Default is `true`. |
 | <code><a href="#@cdktf/provider-okta.securityNotificationEmails.SecurityNotificationEmailsConfig.property.sendEmailForFactorEnrollmentEnabled">SendEmailForFactorEnrollmentEnabled</a></code> | <code>interface{}</code> | Notifies end users of any activity on their account related to MFA factor enrollment. Default is `true`. |
 | <code><a href="#@cdktf/provider-okta.securityNotificationEmails.SecurityNotificationEmailsConfig.property.sendEmailForFactorResetEnabled">SendEmailForFactorResetEnabled</a></code> | <code>interface{}</code> | Notifies end users that one or more factors have been reset for their account. Default is `true`. |
@@ -958,7 +958,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/security_notification_emails#id SecurityNotificationEmails#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/security_notification_emails#id SecurityNotificationEmails#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -975,7 +975,7 @@ ReportSuspiciousActivityEnabled interface{}
 
 Notifies end users about suspicious or unrecognized activity from their account. Default is `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/security_notification_emails#report_suspicious_activity_enabled SecurityNotificationEmails#report_suspicious_activity_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/security_notification_emails#report_suspicious_activity_enabled SecurityNotificationEmails#report_suspicious_activity_enabled}
 
 ---
 
@@ -989,7 +989,7 @@ SendEmailForFactorEnrollmentEnabled interface{}
 
 Notifies end users of any activity on their account related to MFA factor enrollment. Default is `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/security_notification_emails#send_email_for_factor_enrollment_enabled SecurityNotificationEmails#send_email_for_factor_enrollment_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/security_notification_emails#send_email_for_factor_enrollment_enabled SecurityNotificationEmails#send_email_for_factor_enrollment_enabled}
 
 ---
 
@@ -1003,7 +1003,7 @@ SendEmailForFactorResetEnabled interface{}
 
 Notifies end users that one or more factors have been reset for their account. Default is `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/security_notification_emails#send_email_for_factor_reset_enabled SecurityNotificationEmails#send_email_for_factor_reset_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/security_notification_emails#send_email_for_factor_reset_enabled SecurityNotificationEmails#send_email_for_factor_reset_enabled}
 
 ---
 
@@ -1017,7 +1017,7 @@ SendEmailForNewDeviceEnabled interface{}
 
 Notifies end users about new sign-on activity. Default is `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/security_notification_emails#send_email_for_new_device_enabled SecurityNotificationEmails#send_email_for_new_device_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/security_notification_emails#send_email_for_new_device_enabled SecurityNotificationEmails#send_email_for_new_device_enabled}
 
 ---
 
@@ -1031,7 +1031,7 @@ SendEmailForPasswordChangedEnabled interface{}
 
 Notifies end users that the password for their account has changed. Default is `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/security_notification_emails#send_email_for_password_changed_enabled SecurityNotificationEmails#send_email_for_password_changed_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/security_notification_emails#send_email_for_password_changed_enabled SecurityNotificationEmails#send_email_for_password_changed_enabled}
 
 ---
 

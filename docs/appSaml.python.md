@@ -4,7 +4,7 @@
 
 ### AppSaml <a name="AppSaml" id="@cdktf/provider-okta.appSaml.AppSaml"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml okta_app_saml}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml okta_app_saml}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appSaml.AppSaml.Initializer"></a>
 
@@ -26,6 +26,7 @@ appSaml.AppSaml(
   accessibility_login_redirect_url: str = None,
   accessibility_self_service: typing.Union[bool, IResolvable] = None,
   acs_endpoints: typing.List[str] = None,
+  acs_endpoints_indices: typing.Union[IResolvable, typing.List[AppSamlAcsEndpointsIndices]] = None,
   admin_note: str = None,
   app_links_json: str = None,
   app_settings_json: str = None,
@@ -88,6 +89,7 @@ appSaml.AppSaml(
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.accessibilityLoginRedirectUrl">accessibility_login_redirect_url</a></code> | <code>str</code> | Custom login page URL. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.accessibilitySelfService">accessibility_self_service</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable self service. Default is `false`. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.acsEndpoints">acs_endpoints</a></code> | <code>typing.List[str]</code> | An array of ACS endpoints. You can configure a maximum of 100 endpoints. |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.acsEndpointsIndices">acs_endpoints_indices</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndices">AppSamlAcsEndpointsIndices</a>]]</code> | acs_endpoints_indices block. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.adminNote">admin_note</a></code> | <code>str</code> | Application notes for admins. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.appLinksJson">app_links_json</a></code> | <code>str</code> | Displays specific appLinks for the app. The value for each application link should be boolean. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.appSettingsJson">app_settings_json</a></code> | <code>str</code> | Application settings in JSON format. |
@@ -104,7 +106,7 @@ appSaml.AppSaml(
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.hideIos">hide_ios</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Do not display application icon on mobile app. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.hideWeb">hide_web</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Do not display application icon to users. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.honorForceAuthn">honor_force_authn</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Prompt user to re-authenticate if SP asks for it. Default is: `false`. |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#id AppSaml#id}. |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#id AppSaml#id}. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.idpIssuer">idp_issuer</a></code> | <code>str</code> | SAML issuer ID. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.implicitAssignment">implicit_assignment</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *Early Access Property*. Enable Federation Broker Mode. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.inlineHookId">inline_hook_id</a></code> | <code>str</code> | Saml Inline Hook setting. |
@@ -200,7 +202,7 @@ Must be unique amongst siblings in the same scope
 
 The Application's display name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#label AppSaml#label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#label AppSaml#label}
 
 ---
 
@@ -210,7 +212,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Custom error page URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#accessibility_error_redirect_url AppSaml#accessibility_error_redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#accessibility_error_redirect_url AppSaml#accessibility_error_redirect_url}
 
 ---
 
@@ -220,7 +222,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Custom login page URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#accessibility_login_redirect_url AppSaml#accessibility_login_redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#accessibility_login_redirect_url AppSaml#accessibility_login_redirect_url}
 
 ---
 
@@ -230,7 +232,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Enable self service. Default is `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#accessibility_self_service AppSaml#accessibility_self_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#accessibility_self_service AppSaml#accessibility_self_service}
 
 ---
 
@@ -240,7 +242,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 An array of ACS endpoints. You can configure a maximum of 100 endpoints.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#acs_endpoints AppSaml#acs_endpoints}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#acs_endpoints AppSaml#acs_endpoints}
+
+---
+
+##### `acs_endpoints_indices`<sup>Optional</sup> <a name="acs_endpoints_indices" id="@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.acsEndpointsIndices"></a>
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndices">AppSamlAcsEndpointsIndices</a>]]
+
+acs_endpoints_indices block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#acs_endpoints_indices AppSaml#acs_endpoints_indices}
 
 ---
 
@@ -250,7 +262,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Application notes for admins.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#admin_note AppSaml#admin_note}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#admin_note AppSaml#admin_note}
 
 ---
 
@@ -260,7 +272,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Displays specific appLinks for the app. The value for each application link should be boolean.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#app_links_json AppSaml#app_links_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#app_links_json AppSaml#app_links_json}
 
 ---
 
@@ -270,7 +282,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Application settings in JSON format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#app_settings_json AppSaml#app_settings_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#app_settings_json AppSaml#app_settings_json}
 
 ---
 
@@ -280,7 +292,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Determines whether the SAML assertion is digitally signed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#assertion_signed AppSaml#assertion_signed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#assertion_signed AppSaml#assertion_signed}
 
 ---
 
@@ -290,7 +302,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 attribute_statements block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#attribute_statements AppSaml#attribute_statements}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#attribute_statements AppSaml#attribute_statements}
 
 ---
 
@@ -300,7 +312,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Audience Restriction.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#audience AppSaml#audience}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#audience AppSaml#audience}
 
 ---
 
@@ -312,7 +324,7 @@ The ID of the associated `app_signon_policy`.
 
 If this property is removed from the application the `default` sign-on-policy will be associated with this application.y
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#authentication_policy AppSaml#authentication_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#authentication_policy AppSaml#authentication_policy}
 
 ---
 
@@ -322,7 +334,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Identifies the SAML authentication context class for the assertion’s authentication statement.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#authn_context_class_ref AppSaml#authn_context_class_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#authn_context_class_ref AppSaml#authn_context_class_ref}
 
 ---
 
@@ -332,7 +344,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Display auto submit toolbar. Default is: `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#auto_submit_toolbar AppSaml#auto_submit_toolbar}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#auto_submit_toolbar AppSaml#auto_submit_toolbar}
 
 ---
 
@@ -342,7 +354,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Identifies a specific application resource in an IDP initiated SSO scenario.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#default_relay_state AppSaml#default_relay_state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#default_relay_state AppSaml#default_relay_state}
 
 ---
 
@@ -352,7 +364,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Identifies the location where the SAML response is intended to be sent inside of the SAML assertion.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#destination AppSaml#destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#destination AppSaml#destination}
 
 ---
 
@@ -362,7 +374,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Determines the digest algorithm used to digitally sign the SAML assertion and response.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#digest_algorithm AppSaml#digest_algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#digest_algorithm AppSaml#digest_algorithm}
 
 ---
 
@@ -372,7 +384,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Application notes for end users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#enduser_note AppSaml#enduser_note}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#enduser_note AppSaml#enduser_note}
 
 ---
 
@@ -382,7 +394,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Do not display application icon on mobile app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#hide_ios AppSaml#hide_ios}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#hide_ios AppSaml#hide_ios}
 
 ---
 
@@ -392,7 +404,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Do not display application icon to users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#hide_web AppSaml#hide_web}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#hide_web AppSaml#hide_web}
 
 ---
 
@@ -402,7 +414,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Prompt user to re-authenticate if SP asks for it. Default is: `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#honor_force_authn AppSaml#honor_force_authn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#honor_force_authn AppSaml#honor_force_authn}
 
 ---
 
@@ -410,7 +422,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#id AppSaml#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#id AppSaml#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -423,7 +435,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 SAML issuer ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#idp_issuer AppSaml#idp_issuer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#idp_issuer AppSaml#idp_issuer}
 
 ---
 
@@ -433,7 +445,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 *Early Access Property*. Enable Federation Broker Mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#implicit_assignment AppSaml#implicit_assignment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#implicit_assignment AppSaml#implicit_assignment}
 
 ---
 
@@ -443,7 +455,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Saml Inline Hook setting.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#inline_hook_id AppSaml#inline_hook_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#inline_hook_id AppSaml#inline_hook_id}
 
 ---
 
@@ -453,7 +465,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Certificate name. This modulates the rotation of keys. New name == new key. Required to be set with `key_years_valid`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#key_name AppSaml#key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#key_name AppSaml#key_name}
 
 ---
 
@@ -463,7 +475,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Number of years the certificate is valid (2 - 10 years).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#key_years_valid AppSaml#key_years_valid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#key_years_valid AppSaml#key_years_valid}
 
 ---
 
@@ -475,7 +487,7 @@ Local file path to the logo.
 
 The file must be in PNG, JPG, or GIF format, and less than 1 MB in size.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#logo AppSaml#logo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#logo AppSaml#logo}
 
 ---
 
@@ -496,7 +508,7 @@ For instance 'slack'. If not included a custom app will be created.  If not prov
 'digest_algorithm'
 'authn_context_class_ref'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#preconfigured_app AppSaml#preconfigured_app}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#preconfigured_app AppSaml#preconfigured_app}
 
 ---
 
@@ -506,7 +518,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 The location where the app may present the SAML assertion.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#recipient AppSaml#recipient}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#recipient AppSaml#recipient}
 
 ---
 
@@ -516,7 +528,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Denotes whether the request is compressed or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#request_compressed AppSaml#request_compressed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#request_compressed AppSaml#request_compressed}
 
 ---
 
@@ -526,7 +538,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Determines whether the SAML auth response message is digitally signed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#response_signed AppSaml#response_signed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#response_signed AppSaml#response_signed}
 
 ---
 
@@ -536,7 +548,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 SAML Signed Request enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#saml_signed_request_enabled AppSaml#saml_signed_request_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#saml_signed_request_enabled AppSaml#saml_signed_request_enabled}
 
 ---
 
@@ -546,7 +558,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 SAML version for the app's sign-on mode. Valid values are: `2.0` or `1.1`. Default is `2.0`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#saml_version AppSaml#saml_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#saml_version AppSaml#saml_version}
 
 ---
 
@@ -556,7 +568,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Signature algorithm used to digitally sign the assertion and response.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#signature_algorithm AppSaml#signature_algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#signature_algorithm AppSaml#signature_algorithm}
 
 ---
 
@@ -568,7 +580,7 @@ x509 encoded certificate that the Service Provider uses to sign Single Logout re
 
 Note: should be provided without `-----BEGIN CERTIFICATE-----` and `-----END CERTIFICATE-----`, see [official documentation](https://developer.okta.com/docs/reference/api/apps/#service-provider-certificate).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#single_logout_certificate AppSaml#single_logout_certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#single_logout_certificate AppSaml#single_logout_certificate}
 
 ---
 
@@ -578,7 +590,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 The issuer of the Service Provider that generates the Single Logout request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#single_logout_issuer AppSaml#single_logout_issuer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#single_logout_issuer AppSaml#single_logout_issuer}
 
 ---
 
@@ -588,7 +600,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 The location where the logout response is sent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#single_logout_url AppSaml#single_logout_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#single_logout_url AppSaml#single_logout_url}
 
 ---
 
@@ -598,7 +610,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 SAML SP issuer ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#sp_issuer AppSaml#sp_issuer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#sp_issuer AppSaml#sp_issuer}
 
 ---
 
@@ -608,7 +620,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Single Sign On URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#sso_url AppSaml#sso_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#sso_url AppSaml#sso_url}
 
 ---
 
@@ -618,7 +630,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Status of application. By default, it is `ACTIVE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#status AppSaml#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#status AppSaml#status}
 
 ---
 
@@ -628,7 +640,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Identifies the SAML processing rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#subject_name_id_format AppSaml#subject_name_id_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#subject_name_id_format AppSaml#subject_name_id_format}
 
 ---
 
@@ -638,7 +650,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Template for app user's username when a user is assigned to the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#subject_name_id_template AppSaml#subject_name_id_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#subject_name_id_template AppSaml#subject_name_id_template}
 
 ---
 
@@ -648,7 +660,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#timeouts AppSaml#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#timeouts AppSaml#timeouts}
 
 ---
 
@@ -658,7 +670,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Username template. Default: `${source.login}`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#user_name_template AppSaml#user_name_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#user_name_template AppSaml#user_name_template}
 
 ---
 
@@ -668,7 +680,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Push username on update. Valid values: `PUSH` and `DONT_PUSH`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#user_name_template_push_status AppSaml#user_name_template_push_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#user_name_template_push_status AppSaml#user_name_template_push_status}
 
 ---
 
@@ -678,7 +690,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Username template suffix.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#user_name_template_suffix AppSaml#user_name_template_suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#user_name_template_suffix AppSaml#user_name_template_suffix}
 
 ---
 
@@ -688,7 +700,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Username template type. Default: `BUILT_IN`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#user_name_template_type AppSaml#user_name_template_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#user_name_template_type AppSaml#user_name_template_type}
 
 ---
 
@@ -719,12 +731,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.putAcsEndpointsIndices">put_acs_endpoints_indices</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.putAttributeStatements">put_attribute_statements</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.putTimeouts">put_timeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.resetAccessibilityErrorRedirectUrl">reset_accessibility_error_redirect_url</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.resetAccessibilityLoginRedirectUrl">reset_accessibility_login_redirect_url</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.resetAccessibilitySelfService">reset_accessibility_self_service</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.resetAcsEndpoints">reset_acs_endpoints</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.resetAcsEndpointsIndices">reset_acs_endpoints_indices</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.resetAdminNote">reset_admin_note</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.resetAppLinksJson">reset_app_links_json</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.resetAppSettingsJson">reset_app_settings_json</a></code> | *No description.* |
@@ -1096,6 +1110,20 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `put_acs_endpoints_indices` <a name="put_acs_endpoints_indices" id="@cdktf/provider-okta.appSaml.AppSaml.putAcsEndpointsIndices"></a>
+
+```python
+def put_acs_endpoints_indices(
+  value: typing.Union[IResolvable, typing.List[AppSamlAcsEndpointsIndices]]
+) -> None
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-okta.appSaml.AppSaml.putAcsEndpointsIndices.parameter.value"></a>
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndices">AppSamlAcsEndpointsIndices</a>]]
+
+---
+
 ##### `put_attribute_statements` <a name="put_attribute_statements" id="@cdktf/provider-okta.appSaml.AppSaml.putAttributeStatements"></a>
 
 ```python
@@ -1124,7 +1152,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#create AppSaml#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#create AppSaml#create}.
 
 ---
 
@@ -1132,7 +1160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#read AppSaml#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#read AppSaml#read}.
 
 ---
 
@@ -1140,7 +1168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#update AppSaml#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#update AppSaml#update}.
 
 ---
 
@@ -1166,6 +1194,12 @@ def reset_accessibility_self_service() -> None
 
 ```python
 def reset_acs_endpoints() -> None
+```
+
+##### `reset_acs_endpoints_indices` <a name="reset_acs_endpoints_indices" id="@cdktf/provider-okta.appSaml.AppSaml.resetAcsEndpointsIndices"></a>
+
+```python
+def reset_acs_endpoints_indices() -> None
 ```
 
 ##### `reset_admin_note` <a name="reset_admin_note" id="@cdktf/provider-okta.appSaml.AppSaml.resetAdminNote"></a>
@@ -1540,7 +1574,7 @@ The construct id used in the generated config for the AppSaml to import.
 
 The id of the existing AppSaml that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1570,6 +1604,7 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.16.0/doc
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.acsEndpointsIndices">acs_endpoints_indices</a></code> | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesList">AppSamlAcsEndpointsIndicesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.attributeStatements">attribute_statements</a></code> | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlAttributeStatementsList">AppSamlAttributeStatementsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.certificate">certificate</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.embedUrl">embed_url</a></code> | <code>str</code> | *No description.* |
@@ -1589,6 +1624,7 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.16.0/doc
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.accessibilityErrorRedirectUrlInput">accessibility_error_redirect_url_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.accessibilityLoginRedirectUrlInput">accessibility_login_redirect_url_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.accessibilitySelfServiceInput">accessibility_self_service_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.acsEndpointsIndicesInput">acs_endpoints_indices_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndices">AppSamlAcsEndpointsIndices</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.acsEndpointsInput">acs_endpoints_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.adminNoteInput">admin_note_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.appLinksJsonInput">app_links_json_input</a></code> | <code>str</code> | *No description.* |
@@ -1825,6 +1861,16 @@ provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, Re
 
 ---
 
+##### `acs_endpoints_indices`<sup>Required</sup> <a name="acs_endpoints_indices" id="@cdktf/provider-okta.appSaml.AppSaml.property.acsEndpointsIndices"></a>
+
+```python
+acs_endpoints_indices: AppSamlAcsEndpointsIndicesList
+```
+
+- *Type:* <a href="#@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesList">AppSamlAcsEndpointsIndicesList</a>
+
+---
+
 ##### `attribute_statements`<sup>Required</sup> <a name="attribute_statements" id="@cdktf/provider-okta.appSaml.AppSaml.property.attributeStatements"></a>
 
 ```python
@@ -2012,6 +2058,16 @@ accessibility_self_service_input: typing.Union[bool, IResolvable]
 ```
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `acs_endpoints_indices_input`<sup>Optional</sup> <a name="acs_endpoints_indices_input" id="@cdktf/provider-okta.appSaml.AppSaml.property.acsEndpointsIndicesInput"></a>
+
+```python
+acs_endpoints_indices_input: typing.Union[IResolvable, typing.List[AppSamlAcsEndpointsIndices]]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndices">AppSamlAcsEndpointsIndices</a>]]
 
 ---
 
@@ -2945,6 +3001,52 @@ tfResourceType: str
 
 ## Structs <a name="Structs" id="Structs"></a>
 
+### AppSamlAcsEndpointsIndices <a name="AppSamlAcsEndpointsIndices" id="@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndices"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndices.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_okta import app_saml
+
+appSaml.AppSamlAcsEndpointsIndices(
+  index: typing.Union[int, float],
+  url: str
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndices.property.index">index</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#index AppSaml#index}. |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndices.property.url">url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#url AppSaml#url}. |
+
+---
+
+##### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndices.property.index"></a>
+
+```python
+index: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#index AppSaml#index}.
+
+---
+
+##### `url`<sup>Required</sup> <a name="url" id="@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndices.property.url"></a>
+
+```python
+url: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#url AppSaml#url}.
+
+---
+
 ### AppSamlAttributeStatements <a name="AppSamlAttributeStatements" id="@cdktf/provider-okta.appSaml.AppSamlAttributeStatements"></a>
 
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.appSaml.AppSamlAttributeStatements.Initializer"></a>
@@ -2971,7 +3073,7 @@ appSaml.AppSamlAttributeStatements(
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlAttributeStatements.property.filterValue">filter_value</a></code> | <code>str</code> | Filter value to use. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlAttributeStatements.property.namespace">namespace</a></code> | <code>str</code> | The attribute namespace. It can be set to `urn:oasis:names:tc:SAML:2.0:attrname-format:unspecified`, `urn:oasis:names:tc:SAML:2.0:attrname-format:uri`, or `urn:oasis:names:tc:SAML:2.0:attrname-format:basic`. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlAttributeStatements.property.type">type</a></code> | <code>str</code> | The type of attribute statements object. |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlAttributeStatements.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#values AppSaml#values}. |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlAttributeStatements.property.values">values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#values AppSaml#values}. |
 
 ---
 
@@ -2985,7 +3087,7 @@ name: str
 
 The reference name of the attribute statement.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#name AppSaml#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#name AppSaml#name}
 
 ---
 
@@ -2999,7 +3101,7 @@ filter_type: str
 
 Type of group attribute filter. Valid values are: `STARTS_WITH`, `EQUALS`, `CONTAINS`, or `REGEX`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#filter_type AppSaml#filter_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#filter_type AppSaml#filter_type}
 
 ---
 
@@ -3013,7 +3115,7 @@ filter_value: str
 
 Filter value to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#filter_value AppSaml#filter_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#filter_value AppSaml#filter_value}
 
 ---
 
@@ -3027,7 +3129,7 @@ namespace: str
 
 The attribute namespace. It can be set to `urn:oasis:names:tc:SAML:2.0:attrname-format:unspecified`, `urn:oasis:names:tc:SAML:2.0:attrname-format:uri`, or `urn:oasis:names:tc:SAML:2.0:attrname-format:basic`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#namespace AppSaml#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#namespace AppSaml#namespace}
 
 ---
 
@@ -3041,7 +3143,7 @@ type: str
 
 The type of attribute statements object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#type AppSaml#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#type AppSaml#type}
 
 ---
 
@@ -3053,7 +3155,7 @@ values: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#values AppSaml#values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#values AppSaml#values}.
 
 ---
 
@@ -3077,6 +3179,7 @@ appSaml.AppSamlConfig(
   accessibility_login_redirect_url: str = None,
   accessibility_self_service: typing.Union[bool, IResolvable] = None,
   acs_endpoints: typing.List[str] = None,
+  acs_endpoints_indices: typing.Union[IResolvable, typing.List[AppSamlAcsEndpointsIndices]] = None,
   admin_note: str = None,
   app_links_json: str = None,
   app_settings_json: str = None,
@@ -3139,6 +3242,7 @@ appSaml.AppSamlConfig(
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.accessibilityLoginRedirectUrl">accessibility_login_redirect_url</a></code> | <code>str</code> | Custom login page URL. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.accessibilitySelfService">accessibility_self_service</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable self service. Default is `false`. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.acsEndpoints">acs_endpoints</a></code> | <code>typing.List[str]</code> | An array of ACS endpoints. You can configure a maximum of 100 endpoints. |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.acsEndpointsIndices">acs_endpoints_indices</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndices">AppSamlAcsEndpointsIndices</a>]]</code> | acs_endpoints_indices block. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.adminNote">admin_note</a></code> | <code>str</code> | Application notes for admins. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.appLinksJson">app_links_json</a></code> | <code>str</code> | Displays specific appLinks for the app. The value for each application link should be boolean. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.appSettingsJson">app_settings_json</a></code> | <code>str</code> | Application settings in JSON format. |
@@ -3155,7 +3259,7 @@ appSaml.AppSamlConfig(
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.hideIos">hide_ios</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Do not display application icon on mobile app. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.hideWeb">hide_web</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Do not display application icon to users. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.honorForceAuthn">honor_force_authn</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Prompt user to re-authenticate if SP asks for it. Default is: `false`. |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#id AppSaml#id}. |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#id AppSaml#id}. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.idpIssuer">idp_issuer</a></code> | <code>str</code> | SAML issuer ID. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.implicitAssignment">implicit_assignment</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *Early Access Property*. Enable Federation Broker Mode. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.inlineHookId">inline_hook_id</a></code> | <code>str</code> | Saml Inline Hook setting. |
@@ -3265,7 +3369,7 @@ label: str
 
 The Application's display name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#label AppSaml#label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#label AppSaml#label}
 
 ---
 
@@ -3279,7 +3383,7 @@ accessibility_error_redirect_url: str
 
 Custom error page URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#accessibility_error_redirect_url AppSaml#accessibility_error_redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#accessibility_error_redirect_url AppSaml#accessibility_error_redirect_url}
 
 ---
 
@@ -3293,7 +3397,7 @@ accessibility_login_redirect_url: str
 
 Custom login page URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#accessibility_login_redirect_url AppSaml#accessibility_login_redirect_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#accessibility_login_redirect_url AppSaml#accessibility_login_redirect_url}
 
 ---
 
@@ -3307,7 +3411,7 @@ accessibility_self_service: typing.Union[bool, IResolvable]
 
 Enable self service. Default is `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#accessibility_self_service AppSaml#accessibility_self_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#accessibility_self_service AppSaml#accessibility_self_service}
 
 ---
 
@@ -3321,7 +3425,21 @@ acs_endpoints: typing.List[str]
 
 An array of ACS endpoints. You can configure a maximum of 100 endpoints.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#acs_endpoints AppSaml#acs_endpoints}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#acs_endpoints AppSaml#acs_endpoints}
+
+---
+
+##### `acs_endpoints_indices`<sup>Optional</sup> <a name="acs_endpoints_indices" id="@cdktf/provider-okta.appSaml.AppSamlConfig.property.acsEndpointsIndices"></a>
+
+```python
+acs_endpoints_indices: typing.Union[IResolvable, typing.List[AppSamlAcsEndpointsIndices]]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndices">AppSamlAcsEndpointsIndices</a>]]
+
+acs_endpoints_indices block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#acs_endpoints_indices AppSaml#acs_endpoints_indices}
 
 ---
 
@@ -3335,7 +3453,7 @@ admin_note: str
 
 Application notes for admins.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#admin_note AppSaml#admin_note}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#admin_note AppSaml#admin_note}
 
 ---
 
@@ -3349,7 +3467,7 @@ app_links_json: str
 
 Displays specific appLinks for the app. The value for each application link should be boolean.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#app_links_json AppSaml#app_links_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#app_links_json AppSaml#app_links_json}
 
 ---
 
@@ -3363,7 +3481,7 @@ app_settings_json: str
 
 Application settings in JSON format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#app_settings_json AppSaml#app_settings_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#app_settings_json AppSaml#app_settings_json}
 
 ---
 
@@ -3377,7 +3495,7 @@ assertion_signed: typing.Union[bool, IResolvable]
 
 Determines whether the SAML assertion is digitally signed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#assertion_signed AppSaml#assertion_signed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#assertion_signed AppSaml#assertion_signed}
 
 ---
 
@@ -3391,7 +3509,7 @@ attribute_statements: typing.Union[IResolvable, typing.List[AppSamlAttributeStat
 
 attribute_statements block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#attribute_statements AppSaml#attribute_statements}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#attribute_statements AppSaml#attribute_statements}
 
 ---
 
@@ -3405,7 +3523,7 @@ audience: str
 
 Audience Restriction.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#audience AppSaml#audience}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#audience AppSaml#audience}
 
 ---
 
@@ -3421,7 +3539,7 @@ The ID of the associated `app_signon_policy`.
 
 If this property is removed from the application the `default` sign-on-policy will be associated with this application.y
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#authentication_policy AppSaml#authentication_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#authentication_policy AppSaml#authentication_policy}
 
 ---
 
@@ -3435,7 +3553,7 @@ authn_context_class_ref: str
 
 Identifies the SAML authentication context class for the assertion’s authentication statement.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#authn_context_class_ref AppSaml#authn_context_class_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#authn_context_class_ref AppSaml#authn_context_class_ref}
 
 ---
 
@@ -3449,7 +3567,7 @@ auto_submit_toolbar: typing.Union[bool, IResolvable]
 
 Display auto submit toolbar. Default is: `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#auto_submit_toolbar AppSaml#auto_submit_toolbar}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#auto_submit_toolbar AppSaml#auto_submit_toolbar}
 
 ---
 
@@ -3463,7 +3581,7 @@ default_relay_state: str
 
 Identifies a specific application resource in an IDP initiated SSO scenario.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#default_relay_state AppSaml#default_relay_state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#default_relay_state AppSaml#default_relay_state}
 
 ---
 
@@ -3477,7 +3595,7 @@ destination: str
 
 Identifies the location where the SAML response is intended to be sent inside of the SAML assertion.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#destination AppSaml#destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#destination AppSaml#destination}
 
 ---
 
@@ -3491,7 +3609,7 @@ digest_algorithm: str
 
 Determines the digest algorithm used to digitally sign the SAML assertion and response.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#digest_algorithm AppSaml#digest_algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#digest_algorithm AppSaml#digest_algorithm}
 
 ---
 
@@ -3505,7 +3623,7 @@ enduser_note: str
 
 Application notes for end users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#enduser_note AppSaml#enduser_note}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#enduser_note AppSaml#enduser_note}
 
 ---
 
@@ -3519,7 +3637,7 @@ hide_ios: typing.Union[bool, IResolvable]
 
 Do not display application icon on mobile app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#hide_ios AppSaml#hide_ios}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#hide_ios AppSaml#hide_ios}
 
 ---
 
@@ -3533,7 +3651,7 @@ hide_web: typing.Union[bool, IResolvable]
 
 Do not display application icon to users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#hide_web AppSaml#hide_web}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#hide_web AppSaml#hide_web}
 
 ---
 
@@ -3547,7 +3665,7 @@ honor_force_authn: typing.Union[bool, IResolvable]
 
 Prompt user to re-authenticate if SP asks for it. Default is: `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#honor_force_authn AppSaml#honor_force_authn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#honor_force_authn AppSaml#honor_force_authn}
 
 ---
 
@@ -3559,7 +3677,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#id AppSaml#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#id AppSaml#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -3576,7 +3694,7 @@ idp_issuer: str
 
 SAML issuer ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#idp_issuer AppSaml#idp_issuer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#idp_issuer AppSaml#idp_issuer}
 
 ---
 
@@ -3590,7 +3708,7 @@ implicit_assignment: typing.Union[bool, IResolvable]
 
 *Early Access Property*. Enable Federation Broker Mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#implicit_assignment AppSaml#implicit_assignment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#implicit_assignment AppSaml#implicit_assignment}
 
 ---
 
@@ -3604,7 +3722,7 @@ inline_hook_id: str
 
 Saml Inline Hook setting.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#inline_hook_id AppSaml#inline_hook_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#inline_hook_id AppSaml#inline_hook_id}
 
 ---
 
@@ -3618,7 +3736,7 @@ key_name: str
 
 Certificate name. This modulates the rotation of keys. New name == new key. Required to be set with `key_years_valid`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#key_name AppSaml#key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#key_name AppSaml#key_name}
 
 ---
 
@@ -3632,7 +3750,7 @@ key_years_valid: typing.Union[int, float]
 
 Number of years the certificate is valid (2 - 10 years).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#key_years_valid AppSaml#key_years_valid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#key_years_valid AppSaml#key_years_valid}
 
 ---
 
@@ -3648,7 +3766,7 @@ Local file path to the logo.
 
 The file must be in PNG, JPG, or GIF format, and less than 1 MB in size.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#logo AppSaml#logo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#logo AppSaml#logo}
 
 ---
 
@@ -3673,7 +3791,7 @@ For instance 'slack'. If not included a custom app will be created.  If not prov
 'digest_algorithm'
 'authn_context_class_ref'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#preconfigured_app AppSaml#preconfigured_app}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#preconfigured_app AppSaml#preconfigured_app}
 
 ---
 
@@ -3687,7 +3805,7 @@ recipient: str
 
 The location where the app may present the SAML assertion.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#recipient AppSaml#recipient}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#recipient AppSaml#recipient}
 
 ---
 
@@ -3701,7 +3819,7 @@ request_compressed: typing.Union[bool, IResolvable]
 
 Denotes whether the request is compressed or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#request_compressed AppSaml#request_compressed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#request_compressed AppSaml#request_compressed}
 
 ---
 
@@ -3715,7 +3833,7 @@ response_signed: typing.Union[bool, IResolvable]
 
 Determines whether the SAML auth response message is digitally signed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#response_signed AppSaml#response_signed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#response_signed AppSaml#response_signed}
 
 ---
 
@@ -3729,7 +3847,7 @@ saml_signed_request_enabled: typing.Union[bool, IResolvable]
 
 SAML Signed Request enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#saml_signed_request_enabled AppSaml#saml_signed_request_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#saml_signed_request_enabled AppSaml#saml_signed_request_enabled}
 
 ---
 
@@ -3743,7 +3861,7 @@ saml_version: str
 
 SAML version for the app's sign-on mode. Valid values are: `2.0` or `1.1`. Default is `2.0`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#saml_version AppSaml#saml_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#saml_version AppSaml#saml_version}
 
 ---
 
@@ -3757,7 +3875,7 @@ signature_algorithm: str
 
 Signature algorithm used to digitally sign the assertion and response.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#signature_algorithm AppSaml#signature_algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#signature_algorithm AppSaml#signature_algorithm}
 
 ---
 
@@ -3773,7 +3891,7 @@ x509 encoded certificate that the Service Provider uses to sign Single Logout re
 
 Note: should be provided without `-----BEGIN CERTIFICATE-----` and `-----END CERTIFICATE-----`, see [official documentation](https://developer.okta.com/docs/reference/api/apps/#service-provider-certificate).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#single_logout_certificate AppSaml#single_logout_certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#single_logout_certificate AppSaml#single_logout_certificate}
 
 ---
 
@@ -3787,7 +3905,7 @@ single_logout_issuer: str
 
 The issuer of the Service Provider that generates the Single Logout request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#single_logout_issuer AppSaml#single_logout_issuer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#single_logout_issuer AppSaml#single_logout_issuer}
 
 ---
 
@@ -3801,7 +3919,7 @@ single_logout_url: str
 
 The location where the logout response is sent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#single_logout_url AppSaml#single_logout_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#single_logout_url AppSaml#single_logout_url}
 
 ---
 
@@ -3815,7 +3933,7 @@ sp_issuer: str
 
 SAML SP issuer ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#sp_issuer AppSaml#sp_issuer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#sp_issuer AppSaml#sp_issuer}
 
 ---
 
@@ -3829,7 +3947,7 @@ sso_url: str
 
 Single Sign On URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#sso_url AppSaml#sso_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#sso_url AppSaml#sso_url}
 
 ---
 
@@ -3843,7 +3961,7 @@ status: str
 
 Status of application. By default, it is `ACTIVE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#status AppSaml#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#status AppSaml#status}
 
 ---
 
@@ -3857,7 +3975,7 @@ subject_name_id_format: str
 
 Identifies the SAML processing rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#subject_name_id_format AppSaml#subject_name_id_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#subject_name_id_format AppSaml#subject_name_id_format}
 
 ---
 
@@ -3871,7 +3989,7 @@ subject_name_id_template: str
 
 Template for app user's username when a user is assigned to the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#subject_name_id_template AppSaml#subject_name_id_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#subject_name_id_template AppSaml#subject_name_id_template}
 
 ---
 
@@ -3885,7 +4003,7 @@ timeouts: AppSamlTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#timeouts AppSaml#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#timeouts AppSaml#timeouts}
 
 ---
 
@@ -3899,7 +4017,7 @@ user_name_template: str
 
 Username template. Default: `${source.login}`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#user_name_template AppSaml#user_name_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#user_name_template AppSaml#user_name_template}
 
 ---
 
@@ -3913,7 +4031,7 @@ user_name_template_push_status: str
 
 Push username on update. Valid values: `PUSH` and `DONT_PUSH`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#user_name_template_push_status AppSaml#user_name_template_push_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#user_name_template_push_status AppSaml#user_name_template_push_status}
 
 ---
 
@@ -3927,7 +4045,7 @@ user_name_template_suffix: str
 
 Username template suffix.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#user_name_template_suffix AppSaml#user_name_template_suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#user_name_template_suffix AppSaml#user_name_template_suffix}
 
 ---
 
@@ -3941,7 +4059,7 @@ user_name_template_type: str
 
 Username template type. Default: `BUILT_IN`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#user_name_template_type AppSaml#user_name_template_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#user_name_template_type AppSaml#user_name_template_type}
 
 ---
 
@@ -3974,9 +4092,9 @@ appSaml.AppSamlTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#create AppSaml#create}. |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#read AppSaml#read}. |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#update AppSaml#update}. |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#create AppSaml#create}. |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#read AppSaml#read}. |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#update AppSaml#update}. |
 
 ---
 
@@ -3988,7 +4106,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#create AppSaml#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#create AppSaml#create}.
 
 ---
 
@@ -4000,7 +4118,7 @@ read: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#read AppSaml#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#read AppSaml#read}.
 
 ---
 
@@ -4012,11 +4130,519 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/app_saml#update AppSaml#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_saml#update AppSaml#update}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### AppSamlAcsEndpointsIndicesList <a name="AppSamlAcsEndpointsIndicesList" id="@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesList.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_okta import app_saml
+
+appSaml.AppSamlAcsEndpointsIndicesList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesList.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> AppSamlAcsEndpointsIndicesOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndices">AppSamlAcsEndpointsIndices</a>]]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesList.property.internalValue"></a>
+
+```python
+internal_value: typing.Union[IResolvable, typing.List[AppSamlAcsEndpointsIndices]]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndices">AppSamlAcsEndpointsIndices</a>]]
+
+---
+
+
+### AppSamlAcsEndpointsIndicesOutputReference <a name="AppSamlAcsEndpointsIndicesOutputReference" id="@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_okta import app_saml
+
+appSaml.AppSamlAcsEndpointsIndicesOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesOutputReference.property.indexInput">index_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesOutputReference.property.urlInput">url_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesOutputReference.property.index">index</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesOutputReference.property.url">url</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndices">AppSamlAcsEndpointsIndices</a>]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `index_input`<sup>Optional</sup> <a name="index_input" id="@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesOutputReference.property.indexInput"></a>
+
+```python
+index_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `url_input`<sup>Optional</sup> <a name="url_input" id="@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesOutputReference.property.urlInput"></a>
+
+```python
+url_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesOutputReference.property.index"></a>
+
+```python
+index: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `url`<sup>Required</sup> <a name="url" id="@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesOutputReference.property.url"></a>
+
+```python
+url: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesOutputReference.property.internalValue"></a>
+
+```python
+internal_value: typing.Union[IResolvable, AppSamlAcsEndpointsIndices]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndices">AppSamlAcsEndpointsIndices</a>]
+
+---
+
 
 ### AppSamlAttributeStatementsList <a name="AppSamlAttributeStatementsList" id="@cdktf/provider-okta.appSaml.AppSamlAttributeStatementsList"></a>
 

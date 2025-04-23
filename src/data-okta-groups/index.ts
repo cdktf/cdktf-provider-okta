@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/okta/okta/4.16.0/docs/data-sources/groups
+// https://registry.terraform.io/providers/okta/okta/4.17.0/docs/data-sources/groups
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,28 +13,34 @@ import * as cdktf from 'cdktf';
 
 export interface DataOktaGroupsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/data-sources/groups#id DataOktaGroups#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/data-sources/groups#id DataOktaGroups#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
+  * The maximum number of groups returned by the Okta API, between 1 and 10000.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/data-sources/groups#limit DataOktaGroups#limit}
+  */
+  readonly limit?: number;
+  /**
   * Searches the name property of groups for matching value
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/data-sources/groups#q DataOktaGroups#q}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/data-sources/groups#q DataOktaGroups#q}
   */
   readonly q?: string;
   /**
   * Searches for groups with a supported filtering expression for all attributes except for '_embedded', '_links', and 'objectClass'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/data-sources/groups#search DataOktaGroups#search}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/data-sources/groups#search DataOktaGroups#search}
   */
   readonly search?: string;
   /**
   * Type of the group. When specified in the terraform resource, will act as a filter when searching for the groups
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/data-sources/groups#type DataOktaGroups#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/data-sources/groups#type DataOktaGroups#type}
   */
   readonly type?: string;
 }
@@ -109,6 +115,11 @@ export class DataOktaGroupsGroupsOutputReference extends cdktf.ComplexObject {
     return this.getStringAttribute('name');
   }
 
+  // source - computed: true, optional: false, required: false
+  public get source() {
+    return this.getStringAttribute('source');
+  }
+
   // type - computed: true, optional: false, required: false
   public get type() {
     return this.getStringAttribute('type');
@@ -135,7 +146,7 @@ export class DataOktaGroupsGroupsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/data-sources/groups okta_groups}
+* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/data-sources/groups okta_groups}
 */
 export class DataOktaGroups extends cdktf.TerraformDataSource {
 
@@ -151,7 +162,7 @@ export class DataOktaGroups extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataOktaGroups resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataOktaGroups to import
-  * @param importFromId The id of the existing DataOktaGroups that should be imported. Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/data-sources/groups#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataOktaGroups that should be imported. Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/data-sources/groups#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataOktaGroups to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -163,7 +174,7 @@ export class DataOktaGroups extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/data-sources/groups okta_groups} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/data-sources/groups okta_groups} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -174,7 +185,7 @@ export class DataOktaGroups extends cdktf.TerraformDataSource {
       terraformResourceType: 'okta_groups',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '4.16.0',
+        providerVersion: '4.17.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -186,6 +197,7 @@ export class DataOktaGroups extends cdktf.TerraformDataSource {
       forEach: config.forEach
     });
     this._id = config.id;
+    this._limit = config.limit;
     this._q = config.q;
     this._search = config.search;
     this._type = config.type;
@@ -215,6 +227,22 @@ export class DataOktaGroups extends cdktf.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get idInput() {
     return this._id;
+  }
+
+  // limit - computed: false, optional: true, required: false
+  private _limit?: number; 
+  public get limit() {
+    return this.getNumberAttribute('limit');
+  }
+  public set limit(value: number) {
+    this._limit = value;
+  }
+  public resetLimit() {
+    this._limit = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get limitInput() {
+    return this._limit;
   }
 
   // q - computed: false, optional: true, required: false
@@ -272,6 +300,7 @@ export class DataOktaGroups extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       id: cdktf.stringToTerraform(this._id),
+      limit: cdktf.numberToTerraform(this._limit),
       q: cdktf.stringToTerraform(this._q),
       search: cdktf.stringToTerraform(this._search),
       type: cdktf.stringToTerraform(this._type),
@@ -285,6 +314,12 @@ export class DataOktaGroups extends cdktf.TerraformDataSource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      limit: {
+        value: cdktf.numberToHclTerraform(this._limit),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
       },
       q: {
         value: cdktf.stringToHclTerraform(this._q),

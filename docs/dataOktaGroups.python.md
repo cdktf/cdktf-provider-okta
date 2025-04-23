@@ -4,7 +4,7 @@
 
 ### DataOktaGroups <a name="DataOktaGroups" id="@cdktf/provider-okta.dataOktaGroups.DataOktaGroups"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/data-sources/groups okta_groups}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/data-sources/groups okta_groups}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaGroups.DataOktaGroups.Initializer"></a>
 
@@ -22,6 +22,7 @@ dataOktaGroups.DataOktaGroups(
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   id: str = None,
+  limit: typing.Union[int, float] = None,
   q: str = None,
   search: str = None,
   type: str = None
@@ -39,7 +40,8 @@ dataOktaGroups.DataOktaGroups(
 | <code><a href="#@cdktf/provider-okta.dataOktaGroups.DataOktaGroups.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaGroups.DataOktaGroups.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaGroups.DataOktaGroups.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.dataOktaGroups.DataOktaGroups.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/data-sources/groups#id DataOktaGroups#id}. |
+| <code><a href="#@cdktf/provider-okta.dataOktaGroups.DataOktaGroups.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/data-sources/groups#id DataOktaGroups#id}. |
+| <code><a href="#@cdktf/provider-okta.dataOktaGroups.DataOktaGroups.Initializer.parameter.limit">limit</a></code> | <code>typing.Union[int, float]</code> | The maximum number of groups returned by the Okta API, between 1 and 10000. |
 | <code><a href="#@cdktf/provider-okta.dataOktaGroups.DataOktaGroups.Initializer.parameter.q">q</a></code> | <code>str</code> | Searches the name property of groups for matching value. |
 | <code><a href="#@cdktf/provider-okta.dataOktaGroups.DataOktaGroups.Initializer.parameter.search">search</a></code> | <code>str</code> | Searches for groups with a supported filtering expression for all attributes except for '_embedded', '_links', and 'objectClass'. |
 | <code><a href="#@cdktf/provider-okta.dataOktaGroups.DataOktaGroups.Initializer.parameter.type">type</a></code> | <code>str</code> | Type of the group. |
@@ -110,10 +112,20 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/data-sources/groups#id DataOktaGroups#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/data-sources/groups#id DataOktaGroups#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `limit`<sup>Optional</sup> <a name="limit" id="@cdktf/provider-okta.dataOktaGroups.DataOktaGroups.Initializer.parameter.limit"></a>
+
+- *Type:* typing.Union[int, float]
+
+The maximum number of groups returned by the Okta API, between 1 and 10000.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/data-sources/groups#limit DataOktaGroups#limit}
 
 ---
 
@@ -123,7 +135,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Searches the name property of groups for matching value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/data-sources/groups#q DataOktaGroups#q}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/data-sources/groups#q DataOktaGroups#q}
 
 ---
 
@@ -133,7 +145,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Searches for groups with a supported filtering expression for all attributes except for '_embedded', '_links', and 'objectClass'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/data-sources/groups#search DataOktaGroups#search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/data-sources/groups#search DataOktaGroups#search}
 
 ---
 
@@ -145,7 +157,7 @@ Type of the group.
 
 When specified in the terraform resource, will act as a filter when searching for the groups
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/data-sources/groups#type DataOktaGroups#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/data-sources/groups#type DataOktaGroups#type}
 
 ---
 
@@ -171,6 +183,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 | <code><a href="#@cdktf/provider-okta.dataOktaGroups.DataOktaGroups.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaGroups.DataOktaGroups.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaGroups.DataOktaGroups.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.dataOktaGroups.DataOktaGroups.resetLimit">reset_limit</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaGroups.DataOktaGroups.resetQ">reset_q</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaGroups.DataOktaGroups.resetSearch">reset_search</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaGroups.DataOktaGroups.resetType">reset_type</a></code> | *No description.* |
@@ -400,6 +413,12 @@ def interpolation_for_attribute(
 def reset_id() -> None
 ```
 
+##### `reset_limit` <a name="reset_limit" id="@cdktf/provider-okta.dataOktaGroups.DataOktaGroups.resetLimit"></a>
+
+```python
+def reset_limit() -> None
+```
+
 ##### `reset_q` <a name="reset_q" id="@cdktf/provider-okta.dataOktaGroups.DataOktaGroups.resetQ"></a>
 
 ```python
@@ -532,7 +551,7 @@ The construct id used in the generated config for the DataOktaGroups to import.
 
 The id of the existing DataOktaGroups that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/data-sources/groups#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/data-sources/groups#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -562,10 +581,12 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.16.0/doc
 | <code><a href="#@cdktf/provider-okta.dataOktaGroups.DataOktaGroups.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaGroups.DataOktaGroups.property.groups">groups</a></code> | <code><a href="#@cdktf/provider-okta.dataOktaGroups.DataOktaGroupsGroupsList">DataOktaGroupsGroupsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaGroups.DataOktaGroups.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.dataOktaGroups.DataOktaGroups.property.limitInput">limit_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaGroups.DataOktaGroups.property.qInput">q_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaGroups.DataOktaGroups.property.searchInput">search_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaGroups.DataOktaGroups.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaGroups.DataOktaGroups.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.dataOktaGroups.DataOktaGroups.property.limit">limit</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaGroups.DataOktaGroups.property.q">q</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaGroups.DataOktaGroups.property.search">search</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaGroups.DataOktaGroups.property.type">type</a></code> | <code>str</code> | *No description.* |
@@ -714,6 +735,16 @@ id_input: str
 
 ---
 
+##### `limit_input`<sup>Optional</sup> <a name="limit_input" id="@cdktf/provider-okta.dataOktaGroups.DataOktaGroups.property.limitInput"></a>
+
+```python
+limit_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
 ##### `q_input`<sup>Optional</sup> <a name="q_input" id="@cdktf/provider-okta.dataOktaGroups.DataOktaGroups.property.qInput"></a>
 
 ```python
@@ -751,6 +782,16 @@ id: str
 ```
 
 - *Type:* str
+
+---
+
+##### `limit`<sup>Required</sup> <a name="limit" id="@cdktf/provider-okta.dataOktaGroups.DataOktaGroups.property.limit"></a>
+
+```python
+limit: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
 
 ---
 
@@ -820,6 +861,7 @@ dataOktaGroups.DataOktaGroupsConfig(
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   id: str = None,
+  limit: typing.Union[int, float] = None,
   q: str = None,
   search: str = None,
   type: str = None
@@ -837,7 +879,8 @@ dataOktaGroups.DataOktaGroupsConfig(
 | <code><a href="#@cdktf/provider-okta.dataOktaGroups.DataOktaGroupsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaGroups.DataOktaGroupsConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaGroups.DataOktaGroupsConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.dataOktaGroups.DataOktaGroupsConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/data-sources/groups#id DataOktaGroups#id}. |
+| <code><a href="#@cdktf/provider-okta.dataOktaGroups.DataOktaGroupsConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/data-sources/groups#id DataOktaGroups#id}. |
+| <code><a href="#@cdktf/provider-okta.dataOktaGroups.DataOktaGroupsConfig.property.limit">limit</a></code> | <code>typing.Union[int, float]</code> | The maximum number of groups returned by the Okta API, between 1 and 10000. |
 | <code><a href="#@cdktf/provider-okta.dataOktaGroups.DataOktaGroupsConfig.property.q">q</a></code> | <code>str</code> | Searches the name property of groups for matching value. |
 | <code><a href="#@cdktf/provider-okta.dataOktaGroups.DataOktaGroupsConfig.property.search">search</a></code> | <code>str</code> | Searches for groups with a supported filtering expression for all attributes except for '_embedded', '_links', and 'objectClass'. |
 | <code><a href="#@cdktf/provider-okta.dataOktaGroups.DataOktaGroupsConfig.property.type">type</a></code> | <code>str</code> | Type of the group. |
@@ -922,10 +965,24 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/data-sources/groups#id DataOktaGroups#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/data-sources/groups#id DataOktaGroups#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `limit`<sup>Optional</sup> <a name="limit" id="@cdktf/provider-okta.dataOktaGroups.DataOktaGroupsConfig.property.limit"></a>
+
+```python
+limit: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+The maximum number of groups returned by the Okta API, between 1 and 10000.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/data-sources/groups#limit DataOktaGroups#limit}
 
 ---
 
@@ -939,7 +996,7 @@ q: str
 
 Searches the name property of groups for matching value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/data-sources/groups#q DataOktaGroups#q}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/data-sources/groups#q DataOktaGroups#q}
 
 ---
 
@@ -953,7 +1010,7 @@ search: str
 
 Searches for groups with a supported filtering expression for all attributes except for '_embedded', '_links', and 'objectClass'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/data-sources/groups#search DataOktaGroups#search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/data-sources/groups#search DataOktaGroups#search}
 
 ---
 
@@ -969,7 +1026,7 @@ Type of the group.
 
 When specified in the terraform resource, will act as a filter when searching for the groups
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/data-sources/groups#type DataOktaGroups#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/data-sources/groups#type DataOktaGroups#type}
 
 ---
 
@@ -1404,6 +1461,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-okta.dataOktaGroups.DataOktaGroupsGroupsOutputReference.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaGroups.DataOktaGroupsGroupsOutputReference.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaGroups.DataOktaGroupsGroupsOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.dataOktaGroups.DataOktaGroupsGroupsOutputReference.property.source">source</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaGroups.DataOktaGroupsGroupsOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaGroups.DataOktaGroupsGroupsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-okta.dataOktaGroups.DataOktaGroupsGroups">DataOktaGroupsGroups</a></code> | *No description.* |
 
@@ -1467,6 +1525,16 @@ id: str
 
 ```python
 name: str
+```
+
+- *Type:* str
+
+---
+
+##### `source`<sup>Required</sup> <a name="source" id="@cdktf/provider-okta.dataOktaGroups.DataOktaGroupsGroupsOutputReference.property.source"></a>
+
+```python
+source: str
 ```
 
 - *Type:* str
