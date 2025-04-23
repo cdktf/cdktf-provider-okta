@@ -1,3 +1,3 @@
 # `okta_group_owner`
 
-Refer to the Terraform Registry for docs: [`okta_group_owner`](https://registry.terraform.io/providers/okta/okta/4.16.0/docs/resources/group_owner).
+Refer to the Terraform Registry for docs: [`okta_group_owner`](https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/group_owner).
