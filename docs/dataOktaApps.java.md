@@ -4,7 +4,7 @@
 
 ### DataOktaApps <a name="DataOktaApps" id="@cdktf/provider-okta.dataOktaApps.DataOktaApps"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/data-sources/apps okta_apps}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/data-sources/apps okta_apps}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaApps.DataOktaApps.Initializer"></a>
 
@@ -119,7 +119,7 @@ Must be unique amongst siblings in the same scope
 
 Search only active applications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/data-sources/apps#active_only DataOktaApps#active_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/data-sources/apps#active_only DataOktaApps#active_only}
 
 ---
 
@@ -129,7 +129,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Specifies whether to include non-active, but not deleted apps in the results.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/data-sources/apps#include_non_deleted DataOktaApps#include_non_deleted}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/data-sources/apps#include_non_deleted DataOktaApps#include_non_deleted}
 
 ---
 
@@ -139,7 +139,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Searches for applications whose label or name property matches this value exactly.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/data-sources/apps#label DataOktaApps#label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/data-sources/apps#label DataOktaApps#label}
 
 ---
 
@@ -149,7 +149,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Searches for applications whose label or name property begins with this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/data-sources/apps#label_prefix DataOktaApps#label_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/data-sources/apps#label_prefix DataOktaApps#label_prefix}
 
 ---
 
@@ -161,7 +161,7 @@ Specifies whether to use query optimization.
 
 If you specify `useOptimization=true` in the request query, the response contains a subset of app instance properties.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/data-sources/apps#use_optimization DataOktaApps#use_optimization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/data-sources/apps#use_optimization DataOktaApps#use_optimization}
 
 ---
 
@@ -519,7 +519,7 @@ The construct id used in the generated config for the DataOktaApps to import.
 
 The id of the existing DataOktaApps that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/data-sources/apps#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/data-sources/apps#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -978,7 +978,7 @@ public java.lang.Object getActiveOnly();
 
 Search only active applications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/data-sources/apps#active_only DataOktaApps#active_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/data-sources/apps#active_only DataOktaApps#active_only}
 
 ---
 
@@ -992,7 +992,7 @@ public java.lang.Object getIncludeNonDeleted();
 
 Specifies whether to include non-active, but not deleted apps in the results.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/data-sources/apps#include_non_deleted DataOktaApps#include_non_deleted}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/data-sources/apps#include_non_deleted DataOktaApps#include_non_deleted}
 
 ---
 
@@ -1006,7 +1006,7 @@ public java.lang.String getLabel();
 
 Searches for applications whose label or name property matches this value exactly.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/data-sources/apps#label DataOktaApps#label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/data-sources/apps#label DataOktaApps#label}
 
 ---
 
@@ -1020,7 +1020,7 @@ public java.lang.String getLabelPrefix();
 
 Searches for applications whose label or name property begins with this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/data-sources/apps#label_prefix DataOktaApps#label_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/data-sources/apps#label_prefix DataOktaApps#label_prefix}
 
 ---
 
@@ -1036,7 +1036,7 @@ Specifies whether to use query optimization.
 
 If you specify `useOptimization=true` in the request query, the response contains a subset of app instance properties.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.16.0/docs/data-sources/apps#use_optimization DataOktaApps#use_optimization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/data-sources/apps#use_optimization DataOktaApps#use_optimization}
 
 ---
 
