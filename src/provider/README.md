@@ -1,3 +1,3 @@
 # `provider`
 
-Refer to the Terraform Registry for docs: [`okta`](https://registry.terraform.io/providers/okta/okta/4.17.0/docs).
+Refer to the Terraform Registry for docs: [`okta`](https://registry.terraform.io/providers/okta/okta/4.18.0/docs).

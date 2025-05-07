@@ -1,3 +1,3 @@
 # `okta_user_admin_roles`
 
-Refer to the Terraform Registry for docs: [`okta_user_admin_roles`](https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/user_admin_roles).
+Refer to the Terraform Registry for docs: [`okta_user_admin_roles`](https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/user_admin_roles).

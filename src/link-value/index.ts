@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/link_value
+// https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/link_value
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface LinkValueConfig extends cdktf.TerraformMetaArguments {
   /**
   * Set of User IDs or login values of the users to be assigned the `associated` relationship.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/link_value#associated_user_ids LinkValue#associated_user_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/link_value#associated_user_ids LinkValue#associated_user_ids}
   */
   readonly associatedUserIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/link_value#id LinkValue#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/link_value#id LinkValue#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,19 +23,19 @@ export interface LinkValueConfig extends cdktf.TerraformMetaArguments {
   /**
   * Name of the `primary` relationship being assigned.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/link_value#primary_name LinkValue#primary_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/link_value#primary_name LinkValue#primary_name}
   */
   readonly primaryName: string;
   /**
   * User ID to be assigned to `primary` for the 'associated' user in the specified relationship.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/link_value#primary_user_id LinkValue#primary_user_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/link_value#primary_user_id LinkValue#primary_user_id}
   */
   readonly primaryUserId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/link_value okta_link_value}
+* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/link_value okta_link_value}
 */
 export class LinkValue extends cdktf.TerraformResource {
 
@@ -56,7 +51,7 @@ export class LinkValue extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a LinkValue resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LinkValue to import
-  * @param importFromId The id of the existing LinkValue that should be imported. Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/link_value#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing LinkValue that should be imported. Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/link_value#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LinkValue to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -68,7 +63,7 @@ export class LinkValue extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/link_value okta_link_value} Resource
+  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/link_value okta_link_value} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -79,7 +74,7 @@ export class LinkValue extends cdktf.TerraformResource {
       terraformResourceType: 'okta_link_value',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '4.17.0',
+        providerVersion: '4.18.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

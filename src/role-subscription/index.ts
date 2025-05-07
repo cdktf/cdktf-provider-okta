@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/role_subscription
+// https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/role_subscription
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface RoleSubscriptionConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/role_subscription#id RoleSubscription#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/role_subscription#id RoleSubscription#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -27,7 +22,6 @@ export interface RoleSubscriptionConfig extends cdktf.TerraformMetaArguments {
   * 	- 'LDAP_AGENT' - Disconnects and reconnects: LDAP agent.
   * 	- 'AD_AGENT' - Disconnects and reconnects: AD agent.
   * 	- 'OKTA_ANNOUNCEMENT' - Okta release notes and announcements.
-  * 	- 'OKTA_ISSUE' - Trust incidents and updates.
   * 	- 'OKTA_UPDATE' - Scheduled system updates.
   * 	- 'IWA_AGENT' - Disconnects and reconnects: IWA agent.
   * 	- 'USER_DEPROVISION' - User deprovisions.
@@ -35,7 +29,7 @@ export interface RoleSubscriptionConfig extends cdktf.TerraformMetaArguments {
   * 	- 'RATELIMIT_NOTIFICATION' - Rate limit warning and violation.
   * 	- 'AGENT_AUTO_UPDATE_NOTIFICATION' - Agent auto-update notifications: AD Agent.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/role_subscription#notification_type RoleSubscription#notification_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/role_subscription#notification_type RoleSubscription#notification_type}
   */
   readonly notificationType: string;
   /**
@@ -53,19 +47,19 @@ export interface RoleSubscriptionConfig extends cdktf.TerraformMetaArguments {
   * 	'USER_ADMIN'
   * 	. See [API docs](https://developer.okta.com/docs/reference/api/admin-notifications/#role-types).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/role_subscription#role_type RoleSubscription#role_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/role_subscription#role_type RoleSubscription#role_type}
   */
   readonly roleType: string;
   /**
   * Subscription status. Valid values: `subscribed`, `unsubscribed`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/role_subscription#status RoleSubscription#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/role_subscription#status RoleSubscription#status}
   */
   readonly status?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/role_subscription okta_role_subscription}
+* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/role_subscription okta_role_subscription}
 */
 export class RoleSubscription extends cdktf.TerraformResource {
 
@@ -81,7 +75,7 @@ export class RoleSubscription extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a RoleSubscription resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RoleSubscription to import
-  * @param importFromId The id of the existing RoleSubscription that should be imported. Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/role_subscription#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing RoleSubscription that should be imported. Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/role_subscription#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RoleSubscription to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -93,7 +87,7 @@ export class RoleSubscription extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/role_subscription okta_role_subscription} Resource
+  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/role_subscription okta_role_subscription} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -104,7 +98,7 @@ export class RoleSubscription extends cdktf.TerraformResource {
       terraformResourceType: 'okta_role_subscription',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '4.17.0',
+        providerVersion: '4.18.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
