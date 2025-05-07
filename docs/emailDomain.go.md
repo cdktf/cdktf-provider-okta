@@ -4,7 +4,7 @@
 
 ### EmailDomain <a name="EmailDomain" id="@cdktf/provider-okta.emailDomain.EmailDomain"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/email_domain okta_email_domain}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/email_domain okta_email_domain}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.emailDomain.EmailDomain.Initializer"></a>
 
@@ -474,7 +474,7 @@ The construct id used in the generated config for the EmailDomain to import.
 
 The id of the existing EmailDomain that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/email_domain#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/email_domain#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -839,7 +839,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/emaildomain"
 | <code><a href="#@cdktf/provider-okta.emailDomain.EmailDomainConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | Display name of the email domain. |
 | <code><a href="#@cdktf/provider-okta.emailDomain.EmailDomainConfig.property.domain">Domain</a></code> | <code>*string</code> | Mail domain to send from. |
 | <code><a href="#@cdktf/provider-okta.emailDomain.EmailDomainConfig.property.userName">UserName</a></code> | <code>*string</code> | User name of the email domain. |
-| <code><a href="#@cdktf/provider-okta.emailDomain.EmailDomainConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/email_domain#id EmailDomain#id}. |
+| <code><a href="#@cdktf/provider-okta.emailDomain.EmailDomainConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/email_domain#id EmailDomain#id}. |
 
 ---
 
@@ -923,7 +923,7 @@ BrandId *string
 
 Brand id of the email domain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/email_domain#brand_id EmailDomain#brand_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/email_domain#brand_id EmailDomain#brand_id}
 
 ---
 
@@ -937,7 +937,7 @@ DisplayName *string
 
 Display name of the email domain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/email_domain#display_name EmailDomain#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/email_domain#display_name EmailDomain#display_name}
 
 ---
 
@@ -951,7 +951,7 @@ Domain *string
 
 Mail domain to send from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/email_domain#domain EmailDomain#domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/email_domain#domain EmailDomain#domain}
 
 ---
 
@@ -965,7 +965,7 @@ UserName *string
 
 User name of the email domain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/email_domain#user_name EmailDomain#user_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/email_domain#user_name EmailDomain#user_name}
 
 ---
 
@@ -977,7 +977,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/email_domain#id EmailDomain#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/email_domain#id EmailDomain#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

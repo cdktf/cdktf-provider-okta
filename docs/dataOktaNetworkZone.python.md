@@ -4,7 +4,7 @@
 
 ### DataOktaNetworkZone <a name="DataOktaNetworkZone" id="@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/data-sources/network_zone okta_network_zone}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/data-sources/network_zone okta_network_zone}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone.Initializer"></a>
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 Array of locations ISO-3166-1(2) excluded. Format code: countryCode OR countryCode-regionCode. Use with type `DYNAMIC_V2`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/data-sources/network_zone#dynamic_locations_exclude DataOktaNetworkZone#dynamic_locations_exclude}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/data-sources/network_zone#dynamic_locations_exclude DataOktaNetworkZone#dynamic_locations_exclude}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 ID of the network zone to retrieve, conflicts with `name`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/data-sources/network_zone#id DataOktaNetworkZone#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/data-sources/network_zone#id DataOktaNetworkZone#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -137,7 +137,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 List of ip service excluded. Use with type `DYNAMIC_V2`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/data-sources/network_zone#ip_service_categories_exclude DataOktaNetworkZone#ip_service_categories_exclude}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/data-sources/network_zone#ip_service_categories_exclude DataOktaNetworkZone#ip_service_categories_exclude}
 
 ---
 
@@ -147,7 +147,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 List of ip service included. Use with type `DYNAMIC_V2`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/data-sources/network_zone#ip_service_categories_include DataOktaNetworkZone#ip_service_categories_include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/data-sources/network_zone#ip_service_categories_include DataOktaNetworkZone#ip_service_categories_include}
 
 ---
 
@@ -157,7 +157,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Name of the network zone to retrieve, conflicts with `id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/data-sources/network_zone#name DataOktaNetworkZone#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/data-sources/network_zone#name DataOktaNetworkZone#name}
 
 ---
 
@@ -551,7 +551,7 @@ The construct id used in the generated config for the DataOktaNetworkZone to imp
 
 The id of the existing DataOktaNetworkZone that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/data-sources/network_zone#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/data-sources/network_zone#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1044,7 +1044,7 @@ dynamic_locations_exclude: typing.List[str]
 
 Array of locations ISO-3166-1(2) excluded. Format code: countryCode OR countryCode-regionCode. Use with type `DYNAMIC_V2`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/data-sources/network_zone#dynamic_locations_exclude DataOktaNetworkZone#dynamic_locations_exclude}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/data-sources/network_zone#dynamic_locations_exclude DataOktaNetworkZone#dynamic_locations_exclude}
 
 ---
 
@@ -1058,7 +1058,7 @@ id: str
 
 ID of the network zone to retrieve, conflicts with `name`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/data-sources/network_zone#id DataOktaNetworkZone#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/data-sources/network_zone#id DataOktaNetworkZone#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1075,7 +1075,7 @@ ip_service_categories_exclude: typing.List[str]
 
 List of ip service excluded. Use with type `DYNAMIC_V2`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/data-sources/network_zone#ip_service_categories_exclude DataOktaNetworkZone#ip_service_categories_exclude}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/data-sources/network_zone#ip_service_categories_exclude DataOktaNetworkZone#ip_service_categories_exclude}
 
 ---
 
@@ -1089,7 +1089,7 @@ ip_service_categories_include: typing.List[str]
 
 List of ip service included. Use with type `DYNAMIC_V2`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/data-sources/network_zone#ip_service_categories_include DataOktaNetworkZone#ip_service_categories_include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/data-sources/network_zone#ip_service_categories_include DataOktaNetworkZone#ip_service_categories_include}
 
 ---
 
@@ -1103,7 +1103,7 @@ name: str
 
 Name of the network zone to retrieve, conflicts with `id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/data-sources/network_zone#name DataOktaNetworkZone#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/data-sources/network_zone#name DataOktaNetworkZone#name}
 
 ---
 

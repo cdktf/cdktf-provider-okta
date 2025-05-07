@@ -4,7 +4,7 @@
 
 ### DataOktaRoleSubscription <a name="DataOktaRoleSubscription" id="@cdktf/provider-okta.dataOktaRoleSubscription.DataOktaRoleSubscription"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/data-sources/role_subscription okta_role_subscription}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/data-sources/role_subscription okta_role_subscription}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaRoleSubscription.DataOktaRoleSubscription.Initializer"></a>
 
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataOktaRoleSubscription t
 
 The id of the existing DataOktaRoleSubscription that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/data-sources/role_subscription#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/data-sources/role_subscription#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -645,7 +645,7 @@ const dataOktaRoleSubscriptionConfig: dataOktaRoleSubscription.DataOktaRoleSubsc
 | <code><a href="#@cdktf/provider-okta.dataOktaRoleSubscription.DataOktaRoleSubscriptionConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaRoleSubscription.DataOktaRoleSubscriptionConfig.property.notificationType">notificationType</a></code> | <code>string</code> | Type of the notification. |
 | <code><a href="#@cdktf/provider-okta.dataOktaRoleSubscription.DataOktaRoleSubscriptionConfig.property.roleType">roleType</a></code> | <code>string</code> | Type of the role. |
-| <code><a href="#@cdktf/provider-okta.dataOktaRoleSubscription.DataOktaRoleSubscriptionConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/data-sources/role_subscription#id DataOktaRoleSubscription#id}. |
+| <code><a href="#@cdktf/provider-okta.dataOktaRoleSubscription.DataOktaRoleSubscriptionConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/data-sources/role_subscription#id DataOktaRoleSubscription#id}. |
 
 ---
 
@@ -729,7 +729,7 @@ public readonly notificationType: string;
 
 Type of the notification.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/data-sources/role_subscription#notification_type DataOktaRoleSubscription#notification_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/data-sources/role_subscription#notification_type DataOktaRoleSubscription#notification_type}
 
 ---
 
@@ -743,7 +743,7 @@ public readonly roleType: string;
 
 Type of the role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/data-sources/role_subscription#role_type DataOktaRoleSubscription#role_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/data-sources/role_subscription#role_type DataOktaRoleSubscription#role_type}
 
 ---
 
@@ -755,7 +755,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/data-sources/role_subscription#id DataOktaRoleSubscription#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/data-sources/role_subscription#id DataOktaRoleSubscription#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

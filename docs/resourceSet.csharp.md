@@ -4,7 +4,7 @@
 
 ### ResourceSet <a name="ResourceSet" id="@cdktf/provider-okta.resourceSet.ResourceSet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/resource_set okta_resource_set}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/resource_set okta_resource_set}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.resourceSet.ResourceSet.Initializer"></a>
 
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSet.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSet.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSet.resetResources">ResetResources</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSet.resetResourcesOrn">ResetResourcesOrn</a></code> | *No description.* |
 
 ---
 
@@ -378,6 +379,12 @@ private void ResetId()
 private void ResetResources()
 ```
 
+##### `ResetResourcesOrn` <a name="ResetResourcesOrn" id="@cdktf/provider-okta.resourceSet.ResourceSet.resetResourcesOrn"></a>
+
+```csharp
+private void ResetResourcesOrn()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -481,7 +488,7 @@ The construct id used in the generated config for the ResourceSet to import.
 
 The id of the existing ResourceSet that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/resource_set#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/resource_set#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -515,10 +522,12 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.17.0/doc
 | <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSet.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSet.property.labelInput">LabelInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSet.property.resourcesInput">ResourcesInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSet.property.resourcesOrnInput">ResourcesOrnInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSet.property.description">Description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSet.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSet.property.label">Label</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSet.property.resources">Resources</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSet.property.resourcesOrn">ResourcesOrn</a></code> | <code>string[]</code> | *No description.* |
 
 ---
 
@@ -704,6 +713,16 @@ public string[] ResourcesInput { get; }
 
 ---
 
+##### `ResourcesOrnInput`<sup>Optional</sup> <a name="ResourcesOrnInput" id="@cdktf/provider-okta.resourceSet.ResourceSet.property.resourcesOrnInput"></a>
+
+```csharp
+public string[] ResourcesOrnInput { get; }
+```
+
+- *Type:* string[]
+
+---
+
 ##### `Description`<sup>Required</sup> <a name="Description" id="@cdktf/provider-okta.resourceSet.ResourceSet.property.description"></a>
 
 ```csharp
@@ -738,6 +757,16 @@ public string Label { get; }
 
 ```csharp
 public string[] Resources { get; }
+```
+
+- *Type:* string[]
+
+---
+
+##### `ResourcesOrn`<sup>Required</sup> <a name="ResourcesOrn" id="@cdktf/provider-okta.resourceSet.ResourceSet.property.resourcesOrn"></a>
+
+```csharp
+public string[] ResourcesOrn { get; }
 ```
 
 - *Type:* string[]
@@ -782,7 +811,8 @@ new ResourceSetConfig {
     string Description,
     string Label,
     string Id = null,
-    string[] Resources = null
+    string[] Resources = null,
+    string[] ResourcesOrn = null
 };
 ```
 
@@ -799,8 +829,9 @@ new ResourceSetConfig {
 | <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSetConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSetConfig.property.description">Description</a></code> | <code>string</code> | A description of the Resource Set. |
 | <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSetConfig.property.label">Label</a></code> | <code>string</code> | Unique name given to the Resource Set. |
-| <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSetConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/resource_set#id ResourceSet#id}. |
+| <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSetConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/resource_set#id ResourceSet#id}. |
 | <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSetConfig.property.resources">Resources</a></code> | <code>string[]</code> | The endpoints that reference the resources to be included in the new Resource Set. |
+| <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSetConfig.property.resourcesOrn">ResourcesOrn</a></code> | <code>string[]</code> | The orn(Okta Resource Name) that reference the resources to be included in the new Resource Set. |
 
 ---
 
@@ -884,7 +915,7 @@ public string Description { get; set; }
 
 A description of the Resource Set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/resource_set#description ResourceSet#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/resource_set#description ResourceSet#description}
 
 ---
 
@@ -898,7 +929,7 @@ public string Label { get; set; }
 
 Unique name given to the Resource Set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/resource_set#label ResourceSet#label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/resource_set#label ResourceSet#label}
 
 ---
 
@@ -910,7 +941,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/resource_set#id ResourceSet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/resource_set#id ResourceSet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -927,9 +958,25 @@ public string[] Resources { get; set; }
 
 The endpoints that reference the resources to be included in the new Resource Set.
 
-At least one endpoint must be specified when creating resource set.
+At least one endpoint must be specified when creating resource set. Only one of 'resources' or 'resources_orn' can be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/resource_set#resources ResourceSet#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/resource_set#resources ResourceSet#resources}
+
+---
+
+##### `ResourcesOrn`<sup>Optional</sup> <a name="ResourcesOrn" id="@cdktf/provider-okta.resourceSet.ResourceSetConfig.property.resourcesOrn"></a>
+
+```csharp
+public string[] ResourcesOrn { get; set; }
+```
+
+- *Type:* string[]
+
+The orn(Okta Resource Name) that reference the resources to be included in the new Resource Set.
+
+At least one orn must be specified when creating resource set. Only one of 'resources' or 'resources_orn' can be specified.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/resource_set#resources_orn ResourceSet#resources_orn}
 
 ---
 

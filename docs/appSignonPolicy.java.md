@@ -4,7 +4,7 @@
 
 ### AppSignonPolicy <a name="AppSignonPolicy" id="@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_signon_policy okta_app_signon_policy}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/app_signon_policy okta_app_signon_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appSignonPolicy.AppSignonPolicy.Initializer"></a>
 
@@ -115,7 +115,7 @@ Must be unique amongst siblings in the same scope
 
 Description of the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_signon_policy#description AppSignonPolicy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/app_signon_policy#description AppSignonPolicy#description}
 
 ---
 
@@ -125,7 +125,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Name of the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_signon_policy#name AppSignonPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/app_signon_policy#name AppSignonPolicy#name}
 
 ---
 
@@ -137,7 +137,7 @@ If false, the default rule of the policy is set access to `DENY`.
 
 Otherwise default behavior of the default rule is to leave access at `ALLOW`.  **WARNING** setting this attribute to false changes policy rule's default behavior. Use at your own risk. This is only applied during creation and does not affect import or update.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_signon_policy#catch_all AppSignonPolicy#catch_all}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/app_signon_policy#catch_all AppSignonPolicy#catch_all}
 
 ---
 
@@ -147,7 +147,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Priority of the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_signon_policy#priority AppSignonPolicy#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/app_signon_policy#priority AppSignonPolicy#priority}
 
 ---
 
@@ -588,7 +588,7 @@ The construct id used in the generated config for the AppSignonPolicy to import.
 
 The id of the existing AppSignonPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_signon_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/app_signon_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1018,7 +1018,7 @@ public java.lang.String getDescription();
 
 Description of the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_signon_policy#description AppSignonPolicy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/app_signon_policy#description AppSignonPolicy#description}
 
 ---
 
@@ -1032,7 +1032,7 @@ public java.lang.String getName();
 
 Name of the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_signon_policy#name AppSignonPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/app_signon_policy#name AppSignonPolicy#name}
 
 ---
 
@@ -1048,7 +1048,7 @@ If false, the default rule of the policy is set access to `DENY`.
 
 Otherwise default behavior of the default rule is to leave access at `ALLOW`.  **WARNING** setting this attribute to false changes policy rule's default behavior. Use at your own risk. This is only applied during creation and does not affect import or update.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_signon_policy#catch_all AppSignonPolicy#catch_all}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/app_signon_policy#catch_all AppSignonPolicy#catch_all}
 
 ---
 
@@ -1062,7 +1062,7 @@ public java.lang.Number getPriority();
 
 Priority of the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/app_signon_policy#priority AppSignonPolicy#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/app_signon_policy#priority AppSignonPolicy#priority}
 
 ---
 
