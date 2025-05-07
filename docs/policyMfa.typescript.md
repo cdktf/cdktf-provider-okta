@@ -4,7 +4,7 @@
 
 ### PolicyMfa <a name="PolicyMfa" id="@cdktf/provider-okta.policyMfa.PolicyMfa"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/policy_mfa okta_policy_mfa}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_mfa okta_policy_mfa}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.policyMfa.PolicyMfa.Initializer"></a>
 
@@ -97,6 +97,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.resetPriority">resetPriority</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.resetRsaToken">resetRsaToken</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.resetSecurityQuestion">resetSecurityQuestion</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.resetSmartCardIdp">resetSmartCardIdp</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.resetStatus">resetStatus</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.resetSymantecVip">resetSymantecVip</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.resetWebauthn">resetWebauthn</a></code> | *No description.* |
@@ -536,6 +537,12 @@ public resetRsaToken(): void
 public resetSecurityQuestion(): void
 ```
 
+##### `resetSmartCardIdp` <a name="resetSmartCardIdp" id="@cdktf/provider-okta.policyMfa.PolicyMfa.resetSmartCardIdp"></a>
+
+```typescript
+public resetSmartCardIdp(): void
+```
+
 ##### `resetStatus` <a name="resetStatus" id="@cdktf/provider-okta.policyMfa.PolicyMfa.resetStatus"></a>
 
 ```typescript
@@ -663,7 +670,7 @@ The construct id used in the generated config for the PolicyMfa to import.
 
 The id of the existing PolicyMfa that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/policy_mfa#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_mfa#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -718,6 +725,7 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.17.0/doc
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.priorityInput">priorityInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.rsaTokenInput">rsaTokenInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.securityQuestionInput">securityQuestionInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.smartCardIdpInput">smartCardIdpInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.statusInput">statusInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.symantecVipInput">symantecVipInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.webauthnInput">webauthnInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
@@ -747,6 +755,7 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.17.0/doc
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.priority">priority</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.rsaToken">rsaToken</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.securityQuestion">securityQuestion</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.smartCardIdp">smartCardIdp</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.status">status</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.symantecVip">symantecVip</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.webauthn">webauthn</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
@@ -1146,6 +1155,16 @@ public readonly securityQuestionInput: {[ key: string ]: string};
 
 ---
 
+##### `smartCardIdpInput`<sup>Optional</sup> <a name="smartCardIdpInput" id="@cdktf/provider-okta.policyMfa.PolicyMfa.property.smartCardIdpInput"></a>
+
+```typescript
+public readonly smartCardIdpInput: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: string}
+
+---
+
 ##### `statusInput`<sup>Optional</sup> <a name="statusInput" id="@cdktf/provider-okta.policyMfa.PolicyMfa.property.statusInput"></a>
 
 ```typescript
@@ -1436,6 +1455,16 @@ public readonly securityQuestion: {[ key: string ]: string};
 
 ---
 
+##### `smartCardIdp`<sup>Required</sup> <a name="smartCardIdp" id="@cdktf/provider-okta.policyMfa.PolicyMfa.property.smartCardIdp"></a>
+
+```typescript
+public readonly smartCardIdp: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: string}
+
+---
+
 ##### `status`<sup>Required</sup> <a name="status" id="@cdktf/provider-okta.policyMfa.PolicyMfa.property.status"></a>
 
 ```typescript
@@ -1519,33 +1548,34 @@ const policyMfaConfig: policyMfa.PolicyMfaConfig = { ... }
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.name">name</a></code> | <code>string</code> | Policy Name. |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.description">description</a></code> | <code>string</code> | Policy Description. |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.duo">duo</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/policy_mfa#duo PolicyMfa#duo}. |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.externalIdp">externalIdp</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/policy_mfa#external_idp PolicyMfa#external_idp}. |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.externalIdps">externalIdps</a></code> | <code>cdktf.IResolvable \| {[ key: string ]: string}[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/policy_mfa#external_idps PolicyMfa#external_idps}. |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.fidoU2F">fidoU2F</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/policy_mfa#fido_u2f PolicyMfa#fido_u2f}. |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.fidoWebauthn">fidoWebauthn</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/policy_mfa#fido_webauthn PolicyMfa#fido_webauthn}. |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.googleOtp">googleOtp</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/policy_mfa#google_otp PolicyMfa#google_otp}. |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.duo">duo</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_mfa#duo PolicyMfa#duo}. |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.externalIdp">externalIdp</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_mfa#external_idp PolicyMfa#external_idp}. |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.externalIdps">externalIdps</a></code> | <code>cdktf.IResolvable \| {[ key: string ]: string}[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_mfa#external_idps PolicyMfa#external_idps}. |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.fidoU2F">fidoU2F</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_mfa#fido_u2f PolicyMfa#fido_u2f}. |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.fidoWebauthn">fidoWebauthn</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_mfa#fido_webauthn PolicyMfa#fido_webauthn}. |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.googleOtp">googleOtp</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_mfa#google_otp PolicyMfa#google_otp}. |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.groupsIncluded">groupsIncluded</a></code> | <code>string[]</code> | List of Group IDs to Include. |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.hotp">hotp</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/policy_mfa#hotp PolicyMfa#hotp}. |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/policy_mfa#id PolicyMfa#id}. |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.hotp">hotp</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_mfa#hotp PolicyMfa#hotp}. |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_mfa#id PolicyMfa#id}. |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.isOie">isOie</a></code> | <code>boolean \| cdktf.IResolvable</code> | Is the policy using Okta Identity Engine (OIE) with authenticators instead of factors? |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.oktaCall">oktaCall</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/policy_mfa#okta_call PolicyMfa#okta_call}. |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.oktaEmail">oktaEmail</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/policy_mfa#okta_email PolicyMfa#okta_email}. |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.oktaOtp">oktaOtp</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/policy_mfa#okta_otp PolicyMfa#okta_otp}. |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.oktaPassword">oktaPassword</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/policy_mfa#okta_password PolicyMfa#okta_password}. |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.oktaPush">oktaPush</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/policy_mfa#okta_push PolicyMfa#okta_push}. |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.oktaQuestion">oktaQuestion</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/policy_mfa#okta_question PolicyMfa#okta_question}. |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.oktaSms">oktaSms</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/policy_mfa#okta_sms PolicyMfa#okta_sms}. |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.oktaVerify">oktaVerify</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/policy_mfa#okta_verify PolicyMfa#okta_verify}. |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.onpremMfa">onpremMfa</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/policy_mfa#onprem_mfa PolicyMfa#onprem_mfa}. |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.phoneNumber">phoneNumber</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/policy_mfa#phone_number PolicyMfa#phone_number}. |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.oktaCall">oktaCall</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_mfa#okta_call PolicyMfa#okta_call}. |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.oktaEmail">oktaEmail</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_mfa#okta_email PolicyMfa#okta_email}. |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.oktaOtp">oktaOtp</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_mfa#okta_otp PolicyMfa#okta_otp}. |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.oktaPassword">oktaPassword</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_mfa#okta_password PolicyMfa#okta_password}. |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.oktaPush">oktaPush</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_mfa#okta_push PolicyMfa#okta_push}. |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.oktaQuestion">oktaQuestion</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_mfa#okta_question PolicyMfa#okta_question}. |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.oktaSms">oktaSms</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_mfa#okta_sms PolicyMfa#okta_sms}. |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.oktaVerify">oktaVerify</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_mfa#okta_verify PolicyMfa#okta_verify}. |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.onpremMfa">onpremMfa</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_mfa#onprem_mfa PolicyMfa#onprem_mfa}. |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.phoneNumber">phoneNumber</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_mfa#phone_number PolicyMfa#phone_number}. |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.priority">priority</a></code> | <code>number</code> | Policy Priority, this attribute can be set to a valid priority. |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.rsaToken">rsaToken</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/policy_mfa#rsa_token PolicyMfa#rsa_token}. |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.securityQuestion">securityQuestion</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/policy_mfa#security_question PolicyMfa#security_question}. |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.rsaToken">rsaToken</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_mfa#rsa_token PolicyMfa#rsa_token}. |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.securityQuestion">securityQuestion</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_mfa#security_question PolicyMfa#security_question}. |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.smartCardIdp">smartCardIdp</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_mfa#smart_card_idp PolicyMfa#smart_card_idp}. |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.status">status</a></code> | <code>string</code> | Policy Status: `ACTIVE` or `INACTIVE`. Default: `ACTIVE`. |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.symantecVip">symantecVip</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/policy_mfa#symantec_vip PolicyMfa#symantec_vip}. |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.webauthn">webauthn</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/policy_mfa#webauthn PolicyMfa#webauthn}. |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.yubikeyToken">yubikeyToken</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/policy_mfa#yubikey_token PolicyMfa#yubikey_token}. |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.symantecVip">symantecVip</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_mfa#symantec_vip PolicyMfa#symantec_vip}. |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.webauthn">webauthn</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_mfa#webauthn PolicyMfa#webauthn}. |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.yubikeyToken">yubikeyToken</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_mfa#yubikey_token PolicyMfa#yubikey_token}. |
 
 ---
 
@@ -1629,7 +1659,7 @@ public readonly name: string;
 
 Policy Name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/policy_mfa#name PolicyMfa#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_mfa#name PolicyMfa#name}
 
 ---
 
@@ -1643,7 +1673,7 @@ public readonly description: string;
 
 Policy Description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/policy_mfa#description PolicyMfa#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_mfa#description PolicyMfa#description}
 
 ---
 
@@ -1655,7 +1685,7 @@ public readonly duo: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/policy_mfa#duo PolicyMfa#duo}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_mfa#duo PolicyMfa#duo}.
 
 ---
 
@@ -1667,7 +1697,7 @@ public readonly externalIdp: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/policy_mfa#external_idp PolicyMfa#external_idp}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_mfa#external_idp PolicyMfa#external_idp}.
 
 ---
 
@@ -1679,7 +1709,7 @@ public readonly externalIdps: IResolvable | {[ key: string ]: string}[];
 
 - *Type:* cdktf.IResolvable | {[ key: string ]: string}[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/policy_mfa#external_idps PolicyMfa#external_idps}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_mfa#external_idps PolicyMfa#external_idps}.
 
 ---
 
@@ -1691,7 +1721,7 @@ public readonly fidoU2F: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/policy_mfa#fido_u2f PolicyMfa#fido_u2f}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_mfa#fido_u2f PolicyMfa#fido_u2f}.
 
 ---
 
@@ -1703,7 +1733,7 @@ public readonly fidoWebauthn: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/policy_mfa#fido_webauthn PolicyMfa#fido_webauthn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_mfa#fido_webauthn PolicyMfa#fido_webauthn}.
 
 ---
 
@@ -1715,7 +1745,7 @@ public readonly googleOtp: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/policy_mfa#google_otp PolicyMfa#google_otp}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_mfa#google_otp PolicyMfa#google_otp}.
 
 ---
 
@@ -1729,7 +1759,7 @@ public readonly groupsIncluded: string[];
 
 List of Group IDs to Include.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/policy_mfa#groups_included PolicyMfa#groups_included}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_mfa#groups_included PolicyMfa#groups_included}
 
 ---
 
@@ -1741,7 +1771,7 @@ public readonly hotp: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/policy_mfa#hotp PolicyMfa#hotp}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_mfa#hotp PolicyMfa#hotp}.
 
 ---
 
@@ -1753,7 +1783,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/policy_mfa#id PolicyMfa#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_mfa#id PolicyMfa#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1770,7 +1800,7 @@ public readonly isOie: boolean | IResolvable;
 
 Is the policy using Okta Identity Engine (OIE) with authenticators instead of factors?
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/policy_mfa#is_oie PolicyMfa#is_oie}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_mfa#is_oie PolicyMfa#is_oie}
 
 ---
 
@@ -1782,7 +1812,7 @@ public readonly oktaCall: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/policy_mfa#okta_call PolicyMfa#okta_call}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_mfa#okta_call PolicyMfa#okta_call}.
 
 ---
 
@@ -1794,7 +1824,7 @@ public readonly oktaEmail: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/policy_mfa#okta_email PolicyMfa#okta_email}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_mfa#okta_email PolicyMfa#okta_email}.
 
 ---
 
@@ -1806,7 +1836,7 @@ public readonly oktaOtp: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/policy_mfa#okta_otp PolicyMfa#okta_otp}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_mfa#okta_otp PolicyMfa#okta_otp}.
 
 ---
 
@@ -1818,7 +1848,7 @@ public readonly oktaPassword: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/policy_mfa#okta_password PolicyMfa#okta_password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_mfa#okta_password PolicyMfa#okta_password}.
 
 ---
 
@@ -1830,7 +1860,7 @@ public readonly oktaPush: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/policy_mfa#okta_push PolicyMfa#okta_push}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_mfa#okta_push PolicyMfa#okta_push}.
 
 ---
 
@@ -1842,7 +1872,7 @@ public readonly oktaQuestion: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/policy_mfa#okta_question PolicyMfa#okta_question}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_mfa#okta_question PolicyMfa#okta_question}.
 
 ---
 
@@ -1854,7 +1884,7 @@ public readonly oktaSms: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/policy_mfa#okta_sms PolicyMfa#okta_sms}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_mfa#okta_sms PolicyMfa#okta_sms}.
 
 ---
 
@@ -1866,7 +1896,7 @@ public readonly oktaVerify: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/policy_mfa#okta_verify PolicyMfa#okta_verify}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_mfa#okta_verify PolicyMfa#okta_verify}.
 
 ---
 
@@ -1878,7 +1908,7 @@ public readonly onpremMfa: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/policy_mfa#onprem_mfa PolicyMfa#onprem_mfa}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_mfa#onprem_mfa PolicyMfa#onprem_mfa}.
 
 ---
 
@@ -1890,7 +1920,7 @@ public readonly phoneNumber: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/policy_mfa#phone_number PolicyMfa#phone_number}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_mfa#phone_number PolicyMfa#phone_number}.
 
 ---
 
@@ -1906,7 +1936,7 @@ Policy Priority, this attribute can be set to a valid priority.
 
 To avoid endless diff situation we error if an invalid priority is provided. API defaults it to the last (lowest) if not there.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/policy_mfa#priority PolicyMfa#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_mfa#priority PolicyMfa#priority}
 
 ---
 
@@ -1918,7 +1948,7 @@ public readonly rsaToken: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/policy_mfa#rsa_token PolicyMfa#rsa_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_mfa#rsa_token PolicyMfa#rsa_token}.
 
 ---
 
@@ -1930,7 +1960,19 @@ public readonly securityQuestion: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/policy_mfa#security_question PolicyMfa#security_question}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_mfa#security_question PolicyMfa#security_question}.
+
+---
+
+##### `smartCardIdp`<sup>Optional</sup> <a name="smartCardIdp" id="@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.smartCardIdp"></a>
+
+```typescript
+public readonly smartCardIdp: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: string}
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_mfa#smart_card_idp PolicyMfa#smart_card_idp}.
 
 ---
 
@@ -1944,7 +1986,7 @@ public readonly status: string;
 
 Policy Status: `ACTIVE` or `INACTIVE`. Default: `ACTIVE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/policy_mfa#status PolicyMfa#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_mfa#status PolicyMfa#status}
 
 ---
 
@@ -1956,7 +1998,7 @@ public readonly symantecVip: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/policy_mfa#symantec_vip PolicyMfa#symantec_vip}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_mfa#symantec_vip PolicyMfa#symantec_vip}.
 
 ---
 
@@ -1968,7 +2010,7 @@ public readonly webauthn: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/policy_mfa#webauthn PolicyMfa#webauthn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_mfa#webauthn PolicyMfa#webauthn}.
 
 ---
 
@@ -1980,7 +2022,7 @@ public readonly yubikeyToken: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/policy_mfa#yubikey_token PolicyMfa#yubikey_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_mfa#yubikey_token PolicyMfa#yubikey_token}.
 
 ---
 

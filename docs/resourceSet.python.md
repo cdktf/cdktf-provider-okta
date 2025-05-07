@@ -4,7 +4,7 @@
 
 ### ResourceSet <a name="ResourceSet" id="@cdktf/provider-okta.resourceSet.ResourceSet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/resource_set okta_resource_set}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/resource_set okta_resource_set}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.resourceSet.ResourceSet.Initializer"></a>
 
@@ -24,7 +24,8 @@ resourceSet.ResourceSet(
   description: str,
   label: str,
   id: str = None,
-  resources: typing.List[str] = None
+  resources: typing.List[str] = None,
+  resources_orn: typing.List[str] = None
 )
 ```
 
@@ -41,8 +42,9 @@ resourceSet.ResourceSet(
 | <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSet.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSet.Initializer.parameter.description">description</a></code> | <code>str</code> | A description of the Resource Set. |
 | <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSet.Initializer.parameter.label">label</a></code> | <code>str</code> | Unique name given to the Resource Set. |
-| <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSet.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/resource_set#id ResourceSet#id}. |
+| <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSet.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/resource_set#id ResourceSet#id}. |
 | <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSet.Initializer.parameter.resources">resources</a></code> | <code>typing.List[str]</code> | The endpoints that reference the resources to be included in the new Resource Set. |
+| <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSet.Initializer.parameter.resourcesOrn">resources_orn</a></code> | <code>typing.List[str]</code> | The orn(Okta Resource Name) that reference the resources to be included in the new Resource Set. |
 
 ---
 
@@ -112,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 A description of the Resource Set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/resource_set#description ResourceSet#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/resource_set#description ResourceSet#description}
 
 ---
 
@@ -122,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Unique name given to the Resource Set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/resource_set#label ResourceSet#label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/resource_set#label ResourceSet#label}
 
 ---
 
@@ -130,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/resource_set#id ResourceSet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/resource_set#id ResourceSet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -143,9 +145,21 @@ If you experience problems setting this value it might not be settable. Please t
 
 The endpoints that reference the resources to be included in the new Resource Set.
 
-At least one endpoint must be specified when creating resource set.
+At least one endpoint must be specified when creating resource set. Only one of 'resources' or 'resources_orn' can be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/resource_set#resources ResourceSet#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/resource_set#resources ResourceSet#resources}
+
+---
+
+##### `resources_orn`<sup>Optional</sup> <a name="resources_orn" id="@cdktf/provider-okta.resourceSet.ResourceSet.Initializer.parameter.resourcesOrn"></a>
+
+- *Type:* typing.List[str]
+
+The orn(Okta Resource Name) that reference the resources to be included in the new Resource Set.
+
+At least one orn must be specified when creating resource set. Only one of 'resources' or 'resources_orn' can be specified.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/resource_set#resources_orn ResourceSet#resources_orn}
 
 ---
 
@@ -178,6 +192,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 | <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSet.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSet.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSet.resetResources">reset_resources</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSet.resetResourcesOrn">reset_resources_orn</a></code> | *No description.* |
 
 ---
 
@@ -518,6 +533,12 @@ def reset_id() -> None
 def reset_resources() -> None
 ```
 
+##### `reset_resources_orn` <a name="reset_resources_orn" id="@cdktf/provider-okta.resourceSet.ResourceSet.resetResourcesOrn"></a>
+
+```python
+def reset_resources_orn() -> None
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -632,7 +653,7 @@ The construct id used in the generated config for the ResourceSet to import.
 
 The id of the existing ResourceSet that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/resource_set#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/resource_set#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -666,10 +687,12 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.17.0/doc
 | <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSet.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSet.property.labelInput">label_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSet.property.resourcesInput">resources_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSet.property.resourcesOrnInput">resources_orn_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSet.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSet.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSet.property.label">label</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSet.property.resources">resources</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSet.property.resourcesOrn">resources_orn</a></code> | <code>typing.List[str]</code> | *No description.* |
 
 ---
 
@@ -855,6 +878,16 @@ resources_input: typing.List[str]
 
 ---
 
+##### `resources_orn_input`<sup>Optional</sup> <a name="resources_orn_input" id="@cdktf/provider-okta.resourceSet.ResourceSet.property.resourcesOrnInput"></a>
+
+```python
+resources_orn_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
 ##### `description`<sup>Required</sup> <a name="description" id="@cdktf/provider-okta.resourceSet.ResourceSet.property.description"></a>
 
 ```python
@@ -889,6 +922,16 @@ label: str
 
 ```python
 resources: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `resources_orn`<sup>Required</sup> <a name="resources_orn" id="@cdktf/provider-okta.resourceSet.ResourceSet.property.resourcesOrn"></a>
+
+```python
+resources_orn: typing.List[str]
 ```
 
 - *Type:* typing.List[str]
@@ -933,7 +976,8 @@ resourceSet.ResourceSetConfig(
   description: str,
   label: str,
   id: str = None,
-  resources: typing.List[str] = None
+  resources: typing.List[str] = None,
+  resources_orn: typing.List[str] = None
 )
 ```
 
@@ -950,8 +994,9 @@ resourceSet.ResourceSetConfig(
 | <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSetConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSetConfig.property.description">description</a></code> | <code>str</code> | A description of the Resource Set. |
 | <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSetConfig.property.label">label</a></code> | <code>str</code> | Unique name given to the Resource Set. |
-| <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSetConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/resource_set#id ResourceSet#id}. |
+| <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSetConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/resource_set#id ResourceSet#id}. |
 | <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSetConfig.property.resources">resources</a></code> | <code>typing.List[str]</code> | The endpoints that reference the resources to be included in the new Resource Set. |
+| <code><a href="#@cdktf/provider-okta.resourceSet.ResourceSetConfig.property.resourcesOrn">resources_orn</a></code> | <code>typing.List[str]</code> | The orn(Okta Resource Name) that reference the resources to be included in the new Resource Set. |
 
 ---
 
@@ -1035,7 +1080,7 @@ description: str
 
 A description of the Resource Set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/resource_set#description ResourceSet#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/resource_set#description ResourceSet#description}
 
 ---
 
@@ -1049,7 +1094,7 @@ label: str
 
 Unique name given to the Resource Set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/resource_set#label ResourceSet#label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/resource_set#label ResourceSet#label}
 
 ---
 
@@ -1061,7 +1106,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/resource_set#id ResourceSet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/resource_set#id ResourceSet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1078,9 +1123,25 @@ resources: typing.List[str]
 
 The endpoints that reference the resources to be included in the new Resource Set.
 
-At least one endpoint must be specified when creating resource set.
+At least one endpoint must be specified when creating resource set. Only one of 'resources' or 'resources_orn' can be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/resource_set#resources ResourceSet#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/resource_set#resources ResourceSet#resources}
+
+---
+
+##### `resources_orn`<sup>Optional</sup> <a name="resources_orn" id="@cdktf/provider-okta.resourceSet.ResourceSetConfig.property.resourcesOrn"></a>
+
+```python
+resources_orn: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The orn(Okta Resource Name) that reference the resources to be included in the new Resource Set.
+
+At least one orn must be specified when creating resource set. Only one of 'resources' or 'resources_orn' can be specified.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/resource_set#resources_orn ResourceSet#resources_orn}
 
 ---
 

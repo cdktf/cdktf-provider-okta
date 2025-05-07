@@ -4,7 +4,7 @@
 
 ### EmailDomainVerification <a name="EmailDomainVerification" id="@cdktf/provider-okta.emailDomainVerification.EmailDomainVerification"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/email_domain_verification okta_email_domain_verification}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/email_domain_verification okta_email_domain_verification}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.emailDomainVerification.EmailDomainVerification.Initializer"></a>
 
@@ -38,7 +38,7 @@ emailDomainVerification.EmailDomainVerification(
 | <code><a href="#@cdktf/provider-okta.emailDomainVerification.EmailDomainVerification.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.emailDomainVerification.EmailDomainVerification.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.emailDomainVerification.EmailDomainVerification.Initializer.parameter.emailDomainId">email_domain_id</a></code> | <code>str</code> | Email domain ID. |
-| <code><a href="#@cdktf/provider-okta.emailDomainVerification.EmailDomainVerification.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/email_domain_verification#id EmailDomainVerification#id}. |
+| <code><a href="#@cdktf/provider-okta.emailDomainVerification.EmailDomainVerification.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/email_domain_verification#id EmailDomainVerification#id}. |
 
 ---
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 Email domain ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/email_domain_verification#email_domain_id EmailDomainVerification#email_domain_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/email_domain_verification#email_domain_id EmailDomainVerification#email_domain_id}
 
 ---
 
@@ -116,7 +116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/email_domain_verification#id EmailDomainVerification#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/email_domain_verification#id EmailDomainVerification#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -599,7 +599,7 @@ The construct id used in the generated config for the EmailDomainVerification to
 
 The id of the existing EmailDomainVerification that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/email_domain_verification#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/email_domain_verification#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -870,7 +870,7 @@ emailDomainVerification.EmailDomainVerificationConfig(
 | <code><a href="#@cdktf/provider-okta.emailDomainVerification.EmailDomainVerificationConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.emailDomainVerification.EmailDomainVerificationConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.emailDomainVerification.EmailDomainVerificationConfig.property.emailDomainId">email_domain_id</a></code> | <code>str</code> | Email domain ID. |
-| <code><a href="#@cdktf/provider-okta.emailDomainVerification.EmailDomainVerificationConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/email_domain_verification#id EmailDomainVerification#id}. |
+| <code><a href="#@cdktf/provider-okta.emailDomainVerification.EmailDomainVerificationConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/email_domain_verification#id EmailDomainVerification#id}. |
 
 ---
 
@@ -954,7 +954,7 @@ email_domain_id: str
 
 Email domain ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/email_domain_verification#email_domain_id EmailDomainVerification#email_domain_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/email_domain_verification#email_domain_id EmailDomainVerification#email_domain_id}
 
 ---
 
@@ -966,7 +966,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/resources/email_domain_verification#id EmailDomainVerification#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/email_domain_verification#id EmailDomainVerification#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

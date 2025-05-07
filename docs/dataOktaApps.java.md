@@ -4,7 +4,7 @@
 
 ### DataOktaApps <a name="DataOktaApps" id="@cdktf/provider-okta.dataOktaApps.DataOktaApps"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/data-sources/apps okta_apps}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/data-sources/apps okta_apps}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaApps.DataOktaApps.Initializer"></a>
 
@@ -29,6 +29,7 @@ DataOktaApps.Builder.create(Construct scope, java.lang.String id)
 //  .includeNonDeleted(IResolvable)
 //  .label(java.lang.String)
 //  .labelPrefix(java.lang.String)
+//  .q(java.lang.String)
 //  .useOptimization(java.lang.Boolean)
 //  .useOptimization(IResolvable)
     .build();
@@ -49,6 +50,7 @@ DataOktaApps.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-okta.dataOktaApps.DataOktaApps.Initializer.parameter.includeNonDeleted">includeNonDeleted</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Specifies whether to include non-active, but not deleted apps in the results. |
 | <code><a href="#@cdktf/provider-okta.dataOktaApps.DataOktaApps.Initializer.parameter.label">label</a></code> | <code>java.lang.String</code> | Searches for applications whose label or name property matches this value exactly. |
 | <code><a href="#@cdktf/provider-okta.dataOktaApps.DataOktaApps.Initializer.parameter.labelPrefix">labelPrefix</a></code> | <code>java.lang.String</code> | Searches for applications whose label or name property begins with this value. |
+| <code><a href="#@cdktf/provider-okta.dataOktaApps.DataOktaApps.Initializer.parameter.q">q</a></code> | <code>java.lang.String</code> | Searches for applications whose name or label properties that starts with this value. |
 | <code><a href="#@cdktf/provider-okta.dataOktaApps.DataOktaApps.Initializer.parameter.useOptimization">useOptimization</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Specifies whether to use query optimization. |
 
 ---
@@ -119,7 +121,7 @@ Must be unique amongst siblings in the same scope
 
 Search only active applications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/data-sources/apps#active_only DataOktaApps#active_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/data-sources/apps#active_only DataOktaApps#active_only}
 
 ---
 
@@ -129,7 +131,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Specifies whether to include non-active, but not deleted apps in the results.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/data-sources/apps#include_non_deleted DataOktaApps#include_non_deleted}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/data-sources/apps#include_non_deleted DataOktaApps#include_non_deleted}
 
 ---
 
@@ -139,7 +141,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Searches for applications whose label or name property matches this value exactly.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/data-sources/apps#label DataOktaApps#label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/data-sources/apps#label DataOktaApps#label}
 
 ---
 
@@ -149,7 +151,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Searches for applications whose label or name property begins with this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/data-sources/apps#label_prefix DataOktaApps#label_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/data-sources/apps#label_prefix DataOktaApps#label_prefix}
+
+---
+
+##### `q`<sup>Optional</sup> <a name="q" id="@cdktf/provider-okta.dataOktaApps.DataOktaApps.Initializer.parameter.q"></a>
+
+- *Type:* java.lang.String
+
+Searches for applications whose name or label properties that starts with this value.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/data-sources/apps#q DataOktaApps#q}
 
 ---
 
@@ -161,7 +173,7 @@ Specifies whether to use query optimization.
 
 If you specify `useOptimization=true` in the request query, the response contains a subset of app instance properties.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/data-sources/apps#use_optimization DataOktaApps#use_optimization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/data-sources/apps#use_optimization DataOktaApps#use_optimization}
 
 ---
 
@@ -190,6 +202,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 | <code><a href="#@cdktf/provider-okta.dataOktaApps.DataOktaApps.resetIncludeNonDeleted">resetIncludeNonDeleted</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaApps.DataOktaApps.resetLabel">resetLabel</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaApps.DataOktaApps.resetLabelPrefix">resetLabelPrefix</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.dataOktaApps.DataOktaApps.resetQ">resetQ</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaApps.DataOktaApps.resetUseOptimization">resetUseOptimization</a></code> | *No description.* |
 
 ---
@@ -410,6 +423,12 @@ public void resetLabel()
 public void resetLabelPrefix()
 ```
 
+##### `resetQ` <a name="resetQ" id="@cdktf/provider-okta.dataOktaApps.DataOktaApps.resetQ"></a>
+
+```java
+public void resetQ()
+```
+
 ##### `resetUseOptimization` <a name="resetUseOptimization" id="@cdktf/provider-okta.dataOktaApps.DataOktaApps.resetUseOptimization"></a>
 
 ```java
@@ -519,7 +538,7 @@ The construct id used in the generated config for the DataOktaApps to import.
 
 The id of the existing DataOktaApps that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/data-sources/apps#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/data-sources/apps#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -552,11 +571,13 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.17.0/doc
 | <code><a href="#@cdktf/provider-okta.dataOktaApps.DataOktaApps.property.includeNonDeletedInput">includeNonDeletedInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaApps.DataOktaApps.property.labelInput">labelInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaApps.DataOktaApps.property.labelPrefixInput">labelPrefixInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.dataOktaApps.DataOktaApps.property.qInput">qInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaApps.DataOktaApps.property.useOptimizationInput">useOptimizationInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaApps.DataOktaApps.property.activeOnly">activeOnly</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaApps.DataOktaApps.property.includeNonDeleted">includeNonDeleted</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaApps.DataOktaApps.property.label">label</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaApps.DataOktaApps.property.labelPrefix">labelPrefix</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.dataOktaApps.DataOktaApps.property.q">q</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaApps.DataOktaApps.property.useOptimization">useOptimization</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 
 ---
@@ -733,6 +754,16 @@ public java.lang.String getLabelPrefixInput();
 
 ---
 
+##### `qInput`<sup>Optional</sup> <a name="qInput" id="@cdktf/provider-okta.dataOktaApps.DataOktaApps.property.qInput"></a>
+
+```java
+public java.lang.String getQInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `useOptimizationInput`<sup>Optional</sup> <a name="useOptimizationInput" id="@cdktf/provider-okta.dataOktaApps.DataOktaApps.property.useOptimizationInput"></a>
 
 ```java
@@ -777,6 +808,16 @@ public java.lang.String getLabel();
 
 ```java
 public java.lang.String getLabelPrefix();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `q`<sup>Required</sup> <a name="q" id="@cdktf/provider-okta.dataOktaApps.DataOktaApps.property.q"></a>
+
+```java
+public java.lang.String getQ();
 ```
 
 - *Type:* java.lang.String
@@ -874,6 +915,7 @@ DataOktaAppsConfig.builder()
 //  .includeNonDeleted(IResolvable)
 //  .label(java.lang.String)
 //  .labelPrefix(java.lang.String)
+//  .q(java.lang.String)
 //  .useOptimization(java.lang.Boolean)
 //  .useOptimization(IResolvable)
     .build();
@@ -894,6 +936,7 @@ DataOktaAppsConfig.builder()
 | <code><a href="#@cdktf/provider-okta.dataOktaApps.DataOktaAppsConfig.property.includeNonDeleted">includeNonDeleted</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Specifies whether to include non-active, but not deleted apps in the results. |
 | <code><a href="#@cdktf/provider-okta.dataOktaApps.DataOktaAppsConfig.property.label">label</a></code> | <code>java.lang.String</code> | Searches for applications whose label or name property matches this value exactly. |
 | <code><a href="#@cdktf/provider-okta.dataOktaApps.DataOktaAppsConfig.property.labelPrefix">labelPrefix</a></code> | <code>java.lang.String</code> | Searches for applications whose label or name property begins with this value. |
+| <code><a href="#@cdktf/provider-okta.dataOktaApps.DataOktaAppsConfig.property.q">q</a></code> | <code>java.lang.String</code> | Searches for applications whose name or label properties that starts with this value. |
 | <code><a href="#@cdktf/provider-okta.dataOktaApps.DataOktaAppsConfig.property.useOptimization">useOptimization</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Specifies whether to use query optimization. |
 
 ---
@@ -978,7 +1021,7 @@ public java.lang.Object getActiveOnly();
 
 Search only active applications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/data-sources/apps#active_only DataOktaApps#active_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/data-sources/apps#active_only DataOktaApps#active_only}
 
 ---
 
@@ -992,7 +1035,7 @@ public java.lang.Object getIncludeNonDeleted();
 
 Specifies whether to include non-active, but not deleted apps in the results.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/data-sources/apps#include_non_deleted DataOktaApps#include_non_deleted}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/data-sources/apps#include_non_deleted DataOktaApps#include_non_deleted}
 
 ---
 
@@ -1006,7 +1049,7 @@ public java.lang.String getLabel();
 
 Searches for applications whose label or name property matches this value exactly.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/data-sources/apps#label DataOktaApps#label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/data-sources/apps#label DataOktaApps#label}
 
 ---
 
@@ -1020,7 +1063,21 @@ public java.lang.String getLabelPrefix();
 
 Searches for applications whose label or name property begins with this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/data-sources/apps#label_prefix DataOktaApps#label_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/data-sources/apps#label_prefix DataOktaApps#label_prefix}
+
+---
+
+##### `q`<sup>Optional</sup> <a name="q" id="@cdktf/provider-okta.dataOktaApps.DataOktaAppsConfig.property.q"></a>
+
+```java
+public java.lang.String getQ();
+```
+
+- *Type:* java.lang.String
+
+Searches for applications whose name or label properties that starts with this value.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/data-sources/apps#q DataOktaApps#q}
 
 ---
 
@@ -1036,7 +1093,7 @@ Specifies whether to use query optimization.
 
 If you specify `useOptimization=true` in the request query, the response contains a subset of app instance properties.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.17.0/docs/data-sources/apps#use_optimization DataOktaApps#use_optimization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/data-sources/apps#use_optimization DataOktaApps#use_optimization}
 
 ---
 
