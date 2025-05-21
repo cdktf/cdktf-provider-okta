@@ -50,6 +50,7 @@ Object.defineProperty(exports, 'emailDomain', { get: function () { return requir
 Object.defineProperty(exports, 'emailDomainVerification', { get: function () { return require('./email-domain-verification'); } });
 Object.defineProperty(exports, 'emailSender', { get: function () { return require('./email-sender'); } });
 Object.defineProperty(exports, 'emailSenderVerification', { get: function () { return require('./email-sender-verification'); } });
+Object.defineProperty(exports, 'emailSmtpServer', { get: function () { return require('./email-smtp-server'); } });
 Object.defineProperty(exports, 'emailTemplateSettings', { get: function () { return require('./email-template-settings'); } });
 Object.defineProperty(exports, 'eventHook', { get: function () { return require('./event-hook'); } });
 Object.defineProperty(exports, 'eventHookVerification', { get: function () { return require('./event-hook-verification'); } });
@@ -131,6 +132,7 @@ Object.defineProperty(exports, 'dataOktaDeviceAssurancePolicy', { get: function 
 Object.defineProperty(exports, 'dataOktaDomain', { get: function () { return require('./data-okta-domain'); } });
 Object.defineProperty(exports, 'dataOktaEmailCustomization', { get: function () { return require('./data-okta-email-customization'); } });
 Object.defineProperty(exports, 'dataOktaEmailCustomizations', { get: function () { return require('./data-okta-email-customizations'); } });
+Object.defineProperty(exports, 'dataOktaEmailSmtpServer', { get: function () { return require('./data-okta-email-smtp-server'); } });
 Object.defineProperty(exports, 'dataOktaEmailTemplate', { get: function () { return require('./data-okta-email-template'); } });
 Object.defineProperty(exports, 'dataOktaEmailTemplates', { get: function () { return require('./data-okta-email-templates'); } });
 Object.defineProperty(exports, 'dataOktaEveryoneGroup', { get: function () { return require('./data-okta-everyone-group'); } });

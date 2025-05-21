@@ -50,6 +50,7 @@ export * as emailDomain from './email-domain';
 export * as emailDomainVerification from './email-domain-verification';
 export * as emailSender from './email-sender';
 export * as emailSenderVerification from './email-sender-verification';
+export * as emailSmtpServer from './email-smtp-server';
 export * as emailTemplateSettings from './email-template-settings';
 export * as eventHook from './event-hook';
 export * as eventHookVerification from './event-hook-verification';
@@ -131,6 +132,7 @@ export * as dataOktaDeviceAssurancePolicy from './data-okta-device-assurance-pol
 export * as dataOktaDomain from './data-okta-domain';
 export * as dataOktaEmailCustomization from './data-okta-email-customization';
 export * as dataOktaEmailCustomizations from './data-okta-email-customizations';
+export * as dataOktaEmailSmtpServer from './data-okta-email-smtp-server';
 export * as dataOktaEmailTemplate from './data-okta-email-template';
 export * as dataOktaEmailTemplates from './data-okta-email-templates';
 export * as dataOktaEveryoneGroup from './data-okta-everyone-group';

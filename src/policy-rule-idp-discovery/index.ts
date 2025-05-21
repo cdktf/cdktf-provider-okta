@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_rule_idp_discovery
+// https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/policy_rule_idp_discovery
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,117 +13,111 @@ import * as cdktf from 'cdktf';
 
 export interface PolicyRuleIdpDiscoveryConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_rule_idp_discovery#id PolicyRuleIdpDiscovery#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/policy_rule_idp_discovery#id PolicyRuleIdpDiscovery#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * The identifier for the Idp the rule should route to if all conditions are met.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_rule_idp_discovery#idp_id PolicyRuleIdpDiscovery#idp_id}
-  */
-  readonly idpId?: string;
-  /**
-  * Type of Idp. One of: `SAML2`, `IWA`, `AgentlessDSSO`, `X509`, `FACEBOOK`, `GOOGLE`, `LINKEDIN`, `MICROSOFT`, `OIDC`. Default: `OKTA`
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_rule_idp_discovery#idp_type PolicyRuleIdpDiscovery#idp_type}
-  */
-  readonly idpType?: string;
-  /**
   * Policy Rule Name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_rule_idp_discovery#name PolicyRuleIdpDiscovery#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/policy_rule_idp_discovery#name PolicyRuleIdpDiscovery#name}
   */
   readonly name: string;
   /**
   * Network selection mode: `ANYWHERE`, `ZONE`, `ON_NETWORK`, or `OFF_NETWORK`. Default: `ANYWHERE`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_rule_idp_discovery#network_connection PolicyRuleIdpDiscovery#network_connection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/policy_rule_idp_discovery#network_connection PolicyRuleIdpDiscovery#network_connection}
   */
   readonly networkConnection?: string;
   /**
   * Required if `network_connection` = `ZONE`. Indicates the network zones to exclude.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_rule_idp_discovery#network_excludes PolicyRuleIdpDiscovery#network_excludes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/policy_rule_idp_discovery#network_excludes PolicyRuleIdpDiscovery#network_excludes}
   */
   readonly networkExcludes?: string[];
   /**
   * Required if `network_connection` = `ZONE`. Indicates the network zones to include.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_rule_idp_discovery#network_includes PolicyRuleIdpDiscovery#network_includes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/policy_rule_idp_discovery#network_includes PolicyRuleIdpDiscovery#network_includes}
   */
   readonly networkIncludes?: string[];
   /**
   * Policy ID of the Rule
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_rule_idp_discovery#policy_id PolicyRuleIdpDiscovery#policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/policy_rule_idp_discovery#policy_id PolicyRuleIdpDiscovery#policy_id}
   */
   readonly policyId?: string;
   /**
   * Rule priority. This attribute can be set to a valid priority. To avoid an endless diff situation an error is thrown if an invalid property is provided. The Okta API defaults to the last (lowest) if not provided.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_rule_idp_discovery#priority PolicyRuleIdpDiscovery#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/policy_rule_idp_discovery#priority PolicyRuleIdpDiscovery#priority}
   */
   readonly priority?: number;
   /**
   * Policy Rule Status: `ACTIVE` or `INACTIVE`. Default: `ACTIVE`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_rule_idp_discovery#status PolicyRuleIdpDiscovery#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/policy_rule_idp_discovery#status PolicyRuleIdpDiscovery#status}
   */
   readonly status?: string;
   /**
   * Profile attribute matching can only have a single value that describes the type indicated in `user_identifier_type`. This is the attribute or identifier that the `user_identifier_patterns` are checked against.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_rule_idp_discovery#user_identifier_attribute PolicyRuleIdpDiscovery#user_identifier_attribute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/policy_rule_idp_discovery#user_identifier_attribute PolicyRuleIdpDiscovery#user_identifier_attribute}
   */
   readonly userIdentifierAttribute?: string;
   /**
   * One of: `IDENTIFIER`, `ATTRIBUTE`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_rule_idp_discovery#user_identifier_type PolicyRuleIdpDiscovery#user_identifier_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/policy_rule_idp_discovery#user_identifier_type PolicyRuleIdpDiscovery#user_identifier_type}
   */
   readonly userIdentifierType?: string;
   /**
   * app_exclude block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_rule_idp_discovery#app_exclude PolicyRuleIdpDiscovery#app_exclude}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/policy_rule_idp_discovery#app_exclude PolicyRuleIdpDiscovery#app_exclude}
   */
   readonly appExclude?: PolicyRuleIdpDiscoveryAppExclude[] | cdktf.IResolvable;
   /**
   * app_include block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_rule_idp_discovery#app_include PolicyRuleIdpDiscovery#app_include}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/policy_rule_idp_discovery#app_include PolicyRuleIdpDiscovery#app_include}
   */
   readonly appInclude?: PolicyRuleIdpDiscoveryAppInclude[] | cdktf.IResolvable;
   /**
+  * idp_providers block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/policy_rule_idp_discovery#idp_providers PolicyRuleIdpDiscovery#idp_providers}
+  */
+  readonly idpProviders?: PolicyRuleIdpDiscoveryIdpProviders[] | cdktf.IResolvable;
+  /**
   * platform_include block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_rule_idp_discovery#platform_include PolicyRuleIdpDiscovery#platform_include}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/policy_rule_idp_discovery#platform_include PolicyRuleIdpDiscovery#platform_include}
   */
   readonly platformInclude?: PolicyRuleIdpDiscoveryPlatformInclude[] | cdktf.IResolvable;
   /**
   * user_identifier_patterns block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_rule_idp_discovery#user_identifier_patterns PolicyRuleIdpDiscovery#user_identifier_patterns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/policy_rule_idp_discovery#user_identifier_patterns PolicyRuleIdpDiscovery#user_identifier_patterns}
   */
   readonly userIdentifierPatterns?: PolicyRuleIdpDiscoveryUserIdentifierPatterns[] | cdktf.IResolvable;
 }
 export interface PolicyRuleIdpDiscoveryAppExclude {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_rule_idp_discovery#id PolicyRuleIdpDiscovery#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/policy_rule_idp_discovery#id PolicyRuleIdpDiscovery#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_rule_idp_discovery#name PolicyRuleIdpDiscovery#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/policy_rule_idp_discovery#name PolicyRuleIdpDiscovery#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_rule_idp_discovery#type PolicyRuleIdpDiscovery#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/policy_rule_idp_discovery#type PolicyRuleIdpDiscovery#type}
   */
   readonly type: string;
 }
@@ -294,18 +288,18 @@ export class PolicyRuleIdpDiscoveryAppExcludeList extends cdktf.ComplexList {
 }
 export interface PolicyRuleIdpDiscoveryAppInclude {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_rule_idp_discovery#id PolicyRuleIdpDiscovery#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/policy_rule_idp_discovery#id PolicyRuleIdpDiscovery#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_rule_idp_discovery#name PolicyRuleIdpDiscovery#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/policy_rule_idp_discovery#name PolicyRuleIdpDiscovery#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_rule_idp_discovery#type PolicyRuleIdpDiscovery#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/policy_rule_idp_discovery#type PolicyRuleIdpDiscovery#type}
   */
   readonly type: string;
 }
@@ -474,19 +468,175 @@ export class PolicyRuleIdpDiscoveryAppIncludeList extends cdktf.ComplexList {
     return new PolicyRuleIdpDiscoveryAppIncludeOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface PolicyRuleIdpDiscoveryIdpProviders {
+  /**
+  * The identifier for the Idp the rule should route to if all conditions are met.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/policy_rule_idp_discovery#id PolicyRuleIdpDiscovery#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
+  * Type of IdP. One of: `AMAZON`, `APPLE`, `DISCORD`, `FACEBOOK`, `GITHUB`, `GITLAB`, `GOOGLE`, `IDV_CLEAR`, `IDV_INCODE`, `IDV_PERSONA`, `LINKEDIN`, `LOGINGOV`, `LOGINGOV_SANDBOX`, `MICROSOFT`, `OIDC`, `PAYPAL`, `PAYPAL_SANDBOX`, `SALESFORCE`, `SAML2`, `SPOTIFY`, `X509`, `XERO`, `YAHOO`, `YAHOOJP`, Default: `OKTA`
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/policy_rule_idp_discovery#type PolicyRuleIdpDiscovery#type}
+  */
+  readonly type?: string;
+}
+
+export function policyRuleIdpDiscoveryIdpProvidersToTerraform(struct?: PolicyRuleIdpDiscoveryIdpProviders | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    id: cdktf.stringToTerraform(struct!.id),
+    type: cdktf.stringToTerraform(struct!.type),
+  }
+}
+
+
+export function policyRuleIdpDiscoveryIdpProvidersToHclTerraform(struct?: PolicyRuleIdpDiscoveryIdpProviders | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    id: {
+      value: cdktf.stringToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class PolicyRuleIdpDiscoveryIdpProvidersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): PolicyRuleIdpDiscoveryIdpProviders | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._id !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.id = this._id;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: PolicyRuleIdpDiscoveryIdpProviders | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._id = undefined;
+      this._type = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._id = value.id;
+      this._type = value.type;
+    }
+  }
+
+  // id - computed: false, optional: true, required: false
+  private _id?: string; 
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
+  }
+
+  // type - computed: false, optional: true, required: false
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  public resetType() {
+    this._type = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+}
+
+export class PolicyRuleIdpDiscoveryIdpProvidersList extends cdktf.ComplexList {
+  public internalValue? : PolicyRuleIdpDiscoveryIdpProviders[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): PolicyRuleIdpDiscoveryIdpProvidersOutputReference {
+    return new PolicyRuleIdpDiscoveryIdpProvidersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface PolicyRuleIdpDiscoveryPlatformInclude {
   /**
   * Only available with OTHER OS type
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_rule_idp_discovery#os_expression PolicyRuleIdpDiscovery#os_expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/policy_rule_idp_discovery#os_expression PolicyRuleIdpDiscovery#os_expression}
   */
   readonly osExpression?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_rule_idp_discovery#os_type PolicyRuleIdpDiscovery#os_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/policy_rule_idp_discovery#os_type PolicyRuleIdpDiscovery#os_type}
   */
   readonly osType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_rule_idp_discovery#type PolicyRuleIdpDiscovery#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/policy_rule_idp_discovery#type PolicyRuleIdpDiscovery#type}
   */
   readonly type?: string;
 }
@@ -660,11 +810,11 @@ export class PolicyRuleIdpDiscoveryPlatformIncludeList extends cdktf.ComplexList
 }
 export interface PolicyRuleIdpDiscoveryUserIdentifierPatterns {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_rule_idp_discovery#match_type PolicyRuleIdpDiscovery#match_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/policy_rule_idp_discovery#match_type PolicyRuleIdpDiscovery#match_type}
   */
   readonly matchType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_rule_idp_discovery#value PolicyRuleIdpDiscovery#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/policy_rule_idp_discovery#value PolicyRuleIdpDiscovery#value}
   */
   readonly value?: string;
 }
@@ -809,7 +959,7 @@ export class PolicyRuleIdpDiscoveryUserIdentifierPatternsList extends cdktf.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_rule_idp_discovery okta_policy_rule_idp_discovery}
+* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/policy_rule_idp_discovery okta_policy_rule_idp_discovery}
 */
 export class PolicyRuleIdpDiscovery extends cdktf.TerraformResource {
 
@@ -825,7 +975,7 @@ export class PolicyRuleIdpDiscovery extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a PolicyRuleIdpDiscovery resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PolicyRuleIdpDiscovery to import
-  * @param importFromId The id of the existing PolicyRuleIdpDiscovery that should be imported. Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_rule_idp_discovery#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing PolicyRuleIdpDiscovery that should be imported. Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/policy_rule_idp_discovery#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PolicyRuleIdpDiscovery to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -837,7 +987,7 @@ export class PolicyRuleIdpDiscovery extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/policy_rule_idp_discovery okta_policy_rule_idp_discovery} Resource
+  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/policy_rule_idp_discovery okta_policy_rule_idp_discovery} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -848,7 +998,7 @@ export class PolicyRuleIdpDiscovery extends cdktf.TerraformResource {
       terraformResourceType: 'okta_policy_rule_idp_discovery',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '4.18.0',
+        providerVersion: '4.19.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -860,8 +1010,6 @@ export class PolicyRuleIdpDiscovery extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._id = config.id;
-    this._idpId = config.idpId;
-    this._idpType = config.idpType;
     this._name = config.name;
     this._networkConnection = config.networkConnection;
     this._networkExcludes = config.networkExcludes;
@@ -873,6 +1021,7 @@ export class PolicyRuleIdpDiscovery extends cdktf.TerraformResource {
     this._userIdentifierType = config.userIdentifierType;
     this._appExclude.internalValue = config.appExclude;
     this._appInclude.internalValue = config.appInclude;
+    this._idpProviders.internalValue = config.idpProviders;
     this._platformInclude.internalValue = config.platformInclude;
     this._userIdentifierPatterns.internalValue = config.userIdentifierPatterns;
   }
@@ -895,38 +1044,6 @@ export class PolicyRuleIdpDiscovery extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get idInput() {
     return this._id;
-  }
-
-  // idp_id - computed: false, optional: true, required: false
-  private _idpId?: string; 
-  public get idpId() {
-    return this.getStringAttribute('idp_id');
-  }
-  public set idpId(value: string) {
-    this._idpId = value;
-  }
-  public resetIdpId() {
-    this._idpId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idpIdInput() {
-    return this._idpId;
-  }
-
-  // idp_type - computed: false, optional: true, required: false
-  private _idpType?: string; 
-  public get idpType() {
-    return this.getStringAttribute('idp_type');
-  }
-  public set idpType(value: string) {
-    this._idpType = value;
-  }
-  public resetIdpType() {
-    this._idpType = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idpTypeInput() {
-    return this._idpType;
   }
 
   // name - computed: false, optional: false, required: true
@@ -1102,6 +1219,22 @@ export class PolicyRuleIdpDiscovery extends cdktf.TerraformResource {
     return this._appInclude.internalValue;
   }
 
+  // idp_providers - computed: false, optional: true, required: false
+  private _idpProviders = new PolicyRuleIdpDiscoveryIdpProvidersList(this, "idp_providers", true);
+  public get idpProviders() {
+    return this._idpProviders;
+  }
+  public putIdpProviders(value: PolicyRuleIdpDiscoveryIdpProviders[] | cdktf.IResolvable) {
+    this._idpProviders.internalValue = value;
+  }
+  public resetIdpProviders() {
+    this._idpProviders.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idpProvidersInput() {
+    return this._idpProviders.internalValue;
+  }
+
   // platform_include - computed: false, optional: true, required: false
   private _platformInclude = new PolicyRuleIdpDiscoveryPlatformIncludeList(this, "platform_include", true);
   public get platformInclude() {
@@ -1141,8 +1274,6 @@ export class PolicyRuleIdpDiscovery extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       id: cdktf.stringToTerraform(this._id),
-      idp_id: cdktf.stringToTerraform(this._idpId),
-      idp_type: cdktf.stringToTerraform(this._idpType),
       name: cdktf.stringToTerraform(this._name),
       network_connection: cdktf.stringToTerraform(this._networkConnection),
       network_excludes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._networkExcludes),
@@ -1154,6 +1285,7 @@ export class PolicyRuleIdpDiscovery extends cdktf.TerraformResource {
       user_identifier_type: cdktf.stringToTerraform(this._userIdentifierType),
       app_exclude: cdktf.listMapper(policyRuleIdpDiscoveryAppExcludeToTerraform, true)(this._appExclude.internalValue),
       app_include: cdktf.listMapper(policyRuleIdpDiscoveryAppIncludeToTerraform, true)(this._appInclude.internalValue),
+      idp_providers: cdktf.listMapper(policyRuleIdpDiscoveryIdpProvidersToTerraform, true)(this._idpProviders.internalValue),
       platform_include: cdktf.listMapper(policyRuleIdpDiscoveryPlatformIncludeToTerraform, true)(this._platformInclude.internalValue),
       user_identifier_patterns: cdktf.listMapper(policyRuleIdpDiscoveryUserIdentifierPatternsToTerraform, true)(this._userIdentifierPatterns.internalValue),
     };
@@ -1163,18 +1295,6 @@ export class PolicyRuleIdpDiscovery extends cdktf.TerraformResource {
     const attrs = {
       id: {
         value: cdktf.stringToHclTerraform(this._id),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      idp_id: {
-        value: cdktf.stringToHclTerraform(this._idpId),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      idp_type: {
-        value: cdktf.stringToHclTerraform(this._idpType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -1244,6 +1364,12 @@ export class PolicyRuleIdpDiscovery extends cdktf.TerraformResource {
         isBlock: true,
         type: "set",
         storageClassType: "PolicyRuleIdpDiscoveryAppIncludeList",
+      },
+      idp_providers: {
+        value: cdktf.listMapperHcl(policyRuleIdpDiscoveryIdpProvidersToHclTerraform, true)(this._idpProviders.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "PolicyRuleIdpDiscoveryIdpProvidersList",
       },
       platform_include: {
         value: cdktf.listMapperHcl(policyRuleIdpDiscoveryPlatformIncludeToHclTerraform, true)(this._platformInclude.internalValue),

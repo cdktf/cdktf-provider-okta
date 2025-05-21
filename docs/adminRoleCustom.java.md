@@ -4,7 +4,7 @@
 
 ### AdminRoleCustom <a name="AdminRoleCustom" id="@cdktf/provider-okta.adminRoleCustom.AdminRoleCustom"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/admin_role_custom okta_admin_role_custom}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/admin_role_custom okta_admin_role_custom}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.adminRoleCustom.AdminRoleCustom.Initializer"></a>
 
@@ -43,7 +43,7 @@ AdminRoleCustom.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-okta.adminRoleCustom.AdminRoleCustom.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.adminRoleCustom.AdminRoleCustom.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | A human-readable description of the new Role. |
 | <code><a href="#@cdktf/provider-okta.adminRoleCustom.AdminRoleCustom.Initializer.parameter.label">label</a></code> | <code>java.lang.String</code> | The name given to the new Role. |
-| <code><a href="#@cdktf/provider-okta.adminRoleCustom.AdminRoleCustom.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/admin_role_custom#id AdminRoleCustom#id}. |
+| <code><a href="#@cdktf/provider-okta.adminRoleCustom.AdminRoleCustom.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/admin_role_custom#id AdminRoleCustom#id}. |
 | <code><a href="#@cdktf/provider-okta.adminRoleCustom.AdminRoleCustom.Initializer.parameter.permissions">permissions</a></code> | <code>java.util.List<java.lang.String></code> | The permissions that the new Role grants. |
 
 ---
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 A human-readable description of the new Role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/admin_role_custom#description AdminRoleCustom#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/admin_role_custom#description AdminRoleCustom#description}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 The name given to the new Role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/admin_role_custom#label AdminRoleCustom#label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/admin_role_custom#label AdminRoleCustom#label}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/admin_role_custom#id AdminRoleCustom#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/admin_role_custom#id AdminRoleCustom#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -203,7 +203,7 @@ permission must be specified when creating custom role. Valid values: "okta.user
 "okta.iam.read",
 "okta.support.cases.manage".,
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/admin_role_custom#permissions AdminRoleCustom#permissions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/admin_role_custom#permissions AdminRoleCustom#permissions}
 
 ---
 
@@ -644,7 +644,7 @@ The construct id used in the generated config for the AdminRoleCustom to import.
 
 The id of the existing AdminRoleCustom that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/admin_role_custom#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/admin_role_custom#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -966,7 +966,7 @@ AdminRoleCustomConfig.builder()
 | <code><a href="#@cdktf/provider-okta.adminRoleCustom.AdminRoleCustomConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.adminRoleCustom.AdminRoleCustomConfig.property.description">description</a></code> | <code>java.lang.String</code> | A human-readable description of the new Role. |
 | <code><a href="#@cdktf/provider-okta.adminRoleCustom.AdminRoleCustomConfig.property.label">label</a></code> | <code>java.lang.String</code> | The name given to the new Role. |
-| <code><a href="#@cdktf/provider-okta.adminRoleCustom.AdminRoleCustomConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/admin_role_custom#id AdminRoleCustom#id}. |
+| <code><a href="#@cdktf/provider-okta.adminRoleCustom.AdminRoleCustomConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/admin_role_custom#id AdminRoleCustom#id}. |
 | <code><a href="#@cdktf/provider-okta.adminRoleCustom.AdminRoleCustomConfig.property.permissions">permissions</a></code> | <code>java.util.List<java.lang.String></code> | The permissions that the new Role grants. |
 
 ---
@@ -1051,7 +1051,7 @@ public java.lang.String getDescription();
 
 A human-readable description of the new Role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/admin_role_custom#description AdminRoleCustom#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/admin_role_custom#description AdminRoleCustom#description}
 
 ---
 
@@ -1065,7 +1065,7 @@ public java.lang.String getLabel();
 
 The name given to the new Role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/admin_role_custom#label AdminRoleCustom#label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/admin_role_custom#label AdminRoleCustom#label}
 
 ---
 
@@ -1077,7 +1077,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/admin_role_custom#id AdminRoleCustom#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/admin_role_custom#id AdminRoleCustom#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1152,7 +1152,7 @@ permission must be specified when creating custom role. Valid values: "okta.user
 "okta.iam.read",
 "okta.support.cases.manage".,
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.18.0/docs/resources/admin_role_custom#permissions AdminRoleCustom#permissions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/admin_role_custom#permissions AdminRoleCustom#permissions}
 
 ---
 
