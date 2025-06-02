@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.19.0/doc
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaBehaviors.DataOktaBehaviors.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktabehaviors"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v14/dataoktabehaviors"
 
 dataoktabehaviors.NewDataOktaBehaviors(scope Construct, id *string, config DataOktaBehaviorsConfig) DataOktaBehaviors
 ```
@@ -290,7 +290,7 @@ func ResetQ()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.dataOktaBehaviors.DataOktaBehaviors.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktabehaviors"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v14/dataoktabehaviors"
 
 dataoktabehaviors.DataOktaBehaviors_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.dataOktaBehaviors.DataOktaBehaviors.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktabehaviors"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v14/dataoktabehaviors"
 
 dataoktabehaviors.DataOktaBehaviors_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ dataoktabehaviors.DataOktaBehaviors_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-okta.dataOktaBehaviors.DataOktaBehaviors.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktabehaviors"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v14/dataoktabehaviors"
 
 dataoktabehaviors.DataOktaBehaviors_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataoktabehaviors.DataOktaBehaviors_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.dataOktaBehaviors.DataOktaBehaviors.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktabehaviors"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v14/dataoktabehaviors"
 
 dataoktabehaviors.DataOktaBehaviors_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -612,7 +612,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaBehaviors.DataOktaBehaviorsBehaviors.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktabehaviors"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v14/dataoktabehaviors"
 
 &dataoktabehaviors.DataOktaBehaviorsBehaviors {
 
@@ -625,7 +625,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktabehaviors"
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaBehaviors.DataOktaBehaviorsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktabehaviors"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v14/dataoktabehaviors"
 
 &dataoktabehaviors.DataOktaBehaviorsConfig {
 	Connection: interface{},
@@ -762,7 +762,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaBehaviors.DataOktaBehaviorsBehaviorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktabehaviors"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v14/dataoktabehaviors"
 
 dataoktabehaviors.NewDataOktaBehaviorsBehaviorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOktaBehaviorsBehaviorsList
 ```
@@ -911,7 +911,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaBehaviors.DataOktaBehaviorsBehaviorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/dataoktabehaviors"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v14/dataoktabehaviors"
 
 dataoktabehaviors.NewDataOktaBehaviorsBehaviorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataOktaBehaviorsBehaviorsOutputReference
 ```

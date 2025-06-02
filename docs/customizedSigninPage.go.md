@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.19.0/doc
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.customizedSigninPage.CustomizedSigninPage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/customizedsigninpage"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v14/customizedsigninpage"
 
 customizedsigninpage.NewCustomizedSigninPage(scope Construct, id *string, config CustomizedSigninPageConfig) CustomizedSigninPage
 ```
@@ -418,7 +418,7 @@ func ResetWidgetCustomizations()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.customizedSigninPage.CustomizedSigninPage.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/customizedsigninpage"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v14/customizedsigninpage"
 
 customizedsigninpage.CustomizedSigninPage_IsConstruct(x interface{}) *bool
 ```
@@ -450,7 +450,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.customizedSigninPage.CustomizedSigninPage.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/customizedsigninpage"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v14/customizedsigninpage"
 
 customizedsigninpage.CustomizedSigninPage_IsTerraformElement(x interface{}) *bool
 ```
@@ -464,7 +464,7 @@ customizedsigninpage.CustomizedSigninPage_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.customizedSigninPage.CustomizedSigninPage.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/customizedsigninpage"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v14/customizedsigninpage"
 
 customizedsigninpage.CustomizedSigninPage_IsTerraformResource(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ customizedsigninpage.CustomizedSigninPage_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.customizedSigninPage.CustomizedSigninPage.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/customizedsigninpage"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v14/customizedsigninpage"
 
 customizedsigninpage.CustomizedSigninPage_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -828,7 +828,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.customizedSigninPage.CustomizedSigninPageConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/customizedsigninpage"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v14/customizedsigninpage"
 
 &customizedsigninpage.CustomizedSigninPageConfig {
 	Connection: interface{},
@@ -841,8 +841,8 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/customizedsigninpage"
 	BrandId: *string,
 	PageContent: *string,
 	WidgetVersion: *string,
-	ContentSecurityPolicySetting: github.com/cdktf/cdktf-provider-okta-go/okta/v13.customizedSigninPage.CustomizedSigninPageContentSecurityPolicySetting,
-	WidgetCustomizations: github.com/cdktf/cdktf-provider-okta-go/okta/v13.customizedSigninPage.CustomizedSigninPageWidgetCustomizations,
+	ContentSecurityPolicySetting: github.com/cdktf/cdktf-provider-okta-go/okta/v14.customizedSigninPage.CustomizedSigninPageContentSecurityPolicySetting,
+	WidgetCustomizations: github.com/cdktf/cdktf-provider-okta-go/okta/v14.customizedSigninPage.CustomizedSigninPageWidgetCustomizations,
 }
 ```
 
@@ -1017,7 +1017,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.customizedSigninPage.CustomizedSigninPageContentSecurityPolicySetting.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/customizedsigninpage"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v14/customizedsigninpage"
 
 &customizedsigninpage.CustomizedSigninPageContentSecurityPolicySetting {
 	Mode: *string,
@@ -1079,7 +1079,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.customizedSigninPage.CustomizedSigninPageWidgetCustomizations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/customizedsigninpage"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v14/customizedsigninpage"
 
 &customizedsigninpage.CustomizedSigninPageWidgetCustomizations {
 	WidgetGeneration: *string,
@@ -1393,7 +1393,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.customizedSigninPage.CustomizedSigninPageContentSecurityPolicySettingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/customizedsigninpage"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v14/customizedsigninpage"
 
 customizedsigninpage.NewCustomizedSigninPageContentSecurityPolicySettingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CustomizedSigninPageContentSecurityPolicySettingOutputReference
 ```
@@ -1729,7 +1729,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.customizedSigninPage.CustomizedSigninPageWidgetCustomizationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v13/customizedsigninpage"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v14/customizedsigninpage"
 
 customizedsigninpage.NewCustomizedSigninPageWidgetCustomizationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CustomizedSigninPageWidgetCustomizationsOutputReference
 ```
