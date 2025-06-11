@@ -4,7 +4,7 @@
 
 ### AppOauthApiScope <a name="AppOauthApiScope" id="@cdktf/provider-okta.appOauthApiScope.AppOauthApiScope"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/app_oauth_api_scope okta_app_oauth_api_scope}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/app_oauth_api_scope okta_app_oauth_api_scope}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.appOauthApiScope.AppOauthApiScope.Initializer"></a>
 
@@ -474,7 +474,7 @@ The construct id used in the generated config for the AppOauthApiScope to import
 
 The id of the existing AppOauthApiScope that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/app_oauth_api_scope#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/app_oauth_api_scope#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -793,7 +793,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/v14/appoauthapiscope"
 | <code><a href="#@cdktf/provider-okta.appOauthApiScope.AppOauthApiScopeConfig.property.appId">AppId</a></code> | <code>*string</code> | ID of the application. |
 | <code><a href="#@cdktf/provider-okta.appOauthApiScope.AppOauthApiScopeConfig.property.issuer">Issuer</a></code> | <code>*string</code> | The issuer of your Org Authorization Server, your Org URL. |
 | <code><a href="#@cdktf/provider-okta.appOauthApiScope.AppOauthApiScopeConfig.property.scopes">Scopes</a></code> | <code>*[]*string</code> | Scopes of the application for which consent is granted. |
-| <code><a href="#@cdktf/provider-okta.appOauthApiScope.AppOauthApiScopeConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/app_oauth_api_scope#id AppOauthApiScope#id}. |
+| <code><a href="#@cdktf/provider-okta.appOauthApiScope.AppOauthApiScopeConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/app_oauth_api_scope#id AppOauthApiScope#id}. |
 
 ---
 
@@ -877,7 +877,7 @@ AppId *string
 
 ID of the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/app_oauth_api_scope#app_id AppOauthApiScope#app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/app_oauth_api_scope#app_id AppOauthApiScope#app_id}
 
 ---
 
@@ -891,7 +891,7 @@ Issuer *string
 
 The issuer of your Org Authorization Server, your Org URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/app_oauth_api_scope#issuer AppOauthApiScope#issuer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/app_oauth_api_scope#issuer AppOauthApiScope#issuer}
 
 ---
 
@@ -905,7 +905,7 @@ Scopes *[]*string
 
 Scopes of the application for which consent is granted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/app_oauth_api_scope#scopes AppOauthApiScope#scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/app_oauth_api_scope#scopes AppOauthApiScope#scopes}
 
 ---
 
@@ -917,7 +917,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/app_oauth_api_scope#id AppOauthApiScope#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/app_oauth_api_scope#id AppOauthApiScope#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
