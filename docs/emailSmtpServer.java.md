@@ -4,7 +4,7 @@
 
 ### EmailSmtpServer <a name="EmailSmtpServer" id="@cdktf/provider-okta.emailSmtpServer.EmailSmtpServer"></a>
 
-Represents a {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/email_smtp_server okta_email_smtp_server}.
+Represents a {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/email_smtp_server okta_email_smtp_server}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.emailSmtpServer.EmailSmtpServer.Initializer"></a>
 
@@ -51,7 +51,7 @@ EmailSmtpServer.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-okta.emailSmtpServer.EmailSmtpServer.Initializer.parameter.port">port</a></code> | <code>java.lang.Number</code> | Port number of your SMTP server. |
 | <code><a href="#@cdktf/provider-okta.emailSmtpServer.EmailSmtpServer.Initializer.parameter.username">username</a></code> | <code>java.lang.String</code> | Display name of the email domain. |
 | <code><a href="#@cdktf/provider-okta.emailSmtpServer.EmailSmtpServer.Initializer.parameter.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | If true, routes all email traffic through your SMTP server. |
-| <code><a href="#@cdktf/provider-okta.emailSmtpServer.EmailSmtpServer.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/email_smtp_server#id EmailSmtpServer#id}. |
+| <code><a href="#@cdktf/provider-okta.emailSmtpServer.EmailSmtpServer.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/email_smtp_server#id EmailSmtpServer#id}. |
 
 ---
 
@@ -121,7 +121,7 @@ Must be unique amongst siblings in the same scope
 
 Human-readable name for your SMTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/email_smtp_server#alias EmailSmtpServer#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/email_smtp_server#alias EmailSmtpServer#alias}
 
 ---
 
@@ -131,7 +131,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Hostname or IP address of your SMTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/email_smtp_server#host EmailSmtpServer#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/email_smtp_server#host EmailSmtpServer#host}
 
 ---
 
@@ -141,7 +141,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 User name of the email domain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/email_smtp_server#password EmailSmtpServer#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/email_smtp_server#password EmailSmtpServer#password}
 
 ---
 
@@ -151,7 +151,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Port number of your SMTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/email_smtp_server#port EmailSmtpServer#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/email_smtp_server#port EmailSmtpServer#port}
 
 ---
 
@@ -161,7 +161,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 Display name of the email domain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/email_smtp_server#username EmailSmtpServer#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/email_smtp_server#username EmailSmtpServer#username}
 
 ---
 
@@ -171,7 +171,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 If true, routes all email traffic through your SMTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/email_smtp_server#enabled EmailSmtpServer#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/email_smtp_server#enabled EmailSmtpServer#enabled}
 
 ---
 
@@ -179,7 +179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/email_smtp_server#id EmailSmtpServer#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/email_smtp_server#id EmailSmtpServer#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -623,7 +623,7 @@ The construct id used in the generated config for the EmailSmtpServer to import.
 
 The id of the existing EmailSmtpServer that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/email_smtp_server#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/email_smtp_server#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1019,7 +1019,7 @@ EmailSmtpServerConfig.builder()
 | <code><a href="#@cdktf/provider-okta.emailSmtpServer.EmailSmtpServerConfig.property.port">port</a></code> | <code>java.lang.Number</code> | Port number of your SMTP server. |
 | <code><a href="#@cdktf/provider-okta.emailSmtpServer.EmailSmtpServerConfig.property.username">username</a></code> | <code>java.lang.String</code> | Display name of the email domain. |
 | <code><a href="#@cdktf/provider-okta.emailSmtpServer.EmailSmtpServerConfig.property.enabled">enabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | If true, routes all email traffic through your SMTP server. |
-| <code><a href="#@cdktf/provider-okta.emailSmtpServer.EmailSmtpServerConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/email_smtp_server#id EmailSmtpServer#id}. |
+| <code><a href="#@cdktf/provider-okta.emailSmtpServer.EmailSmtpServerConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/email_smtp_server#id EmailSmtpServer#id}. |
 
 ---
 
@@ -1103,7 +1103,7 @@ public java.lang.String getAlias();
 
 Human-readable name for your SMTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/email_smtp_server#alias EmailSmtpServer#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/email_smtp_server#alias EmailSmtpServer#alias}
 
 ---
 
@@ -1117,7 +1117,7 @@ public java.lang.String getHost();
 
 Hostname or IP address of your SMTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/email_smtp_server#host EmailSmtpServer#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/email_smtp_server#host EmailSmtpServer#host}
 
 ---
 
@@ -1131,7 +1131,7 @@ public java.lang.String getPassword();
 
 User name of the email domain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/email_smtp_server#password EmailSmtpServer#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/email_smtp_server#password EmailSmtpServer#password}
 
 ---
 
@@ -1145,7 +1145,7 @@ public java.lang.Number getPort();
 
 Port number of your SMTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/email_smtp_server#port EmailSmtpServer#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/email_smtp_server#port EmailSmtpServer#port}
 
 ---
 
@@ -1159,7 +1159,7 @@ public java.lang.String getUsername();
 
 Display name of the email domain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/email_smtp_server#username EmailSmtpServer#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/email_smtp_server#username EmailSmtpServer#username}
 
 ---
 
@@ -1173,7 +1173,7 @@ public java.lang.Object getEnabled();
 
 If true, routes all email traffic through your SMTP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/email_smtp_server#enabled EmailSmtpServer#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/email_smtp_server#enabled EmailSmtpServer#enabled}
 
 ---
 
@@ -1185,7 +1185,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/email_smtp_server#id EmailSmtpServer#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/email_smtp_server#id EmailSmtpServer#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

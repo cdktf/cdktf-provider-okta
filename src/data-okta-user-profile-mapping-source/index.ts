@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/okta/okta/4.19.0/docs/data-sources/user_profile_mapping_source
+// https://registry.terraform.io/providers/okta/okta/4.20.0/docs/data-sources/user_profile_mapping_source
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface DataOktaUserProfileMappingSourceConfig extends cdktf.TerraformM
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/data-sources/user_profile_mapping_source okta_user_profile_mapping_source}
+* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/data-sources/user_profile_mapping_source okta_user_profile_mapping_source}
 */
 export class DataOktaUserProfileMappingSource extends cdktf.TerraformDataSource {
 
@@ -31,7 +31,7 @@ export class DataOktaUserProfileMappingSource extends cdktf.TerraformDataSource 
   * Generates CDKTF code for importing a DataOktaUserProfileMappingSource resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataOktaUserProfileMappingSource to import
-  * @param importFromId The id of the existing DataOktaUserProfileMappingSource that should be imported. Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/data-sources/user_profile_mapping_source#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataOktaUserProfileMappingSource that should be imported. Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/data-sources/user_profile_mapping_source#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataOktaUserProfileMappingSource to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -43,7 +43,7 @@ export class DataOktaUserProfileMappingSource extends cdktf.TerraformDataSource 
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/data-sources/user_profile_mapping_source okta_user_profile_mapping_source} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/data-sources/user_profile_mapping_source okta_user_profile_mapping_source} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -54,7 +54,7 @@ export class DataOktaUserProfileMappingSource extends cdktf.TerraformDataSource 
       terraformResourceType: 'okta_user_profile_mapping_source',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '4.19.0',
+        providerVersion: '4.20.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

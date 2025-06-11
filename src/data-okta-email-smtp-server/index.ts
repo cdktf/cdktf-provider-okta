@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/okta/okta/4.19.0/docs/data-sources/email_smtp_server
+// https://registry.terraform.io/providers/okta/okta/4.20.0/docs/data-sources/email_smtp_server
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface DataOktaEmailSmtpServerConfig extends cdktf.TerraformMetaArgume
   /**
   * The ID of the SMTP server.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/data-sources/email_smtp_server#id DataOktaEmailSmtpServer#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/data-sources/email_smtp_server#id DataOktaEmailSmtpServer#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -24,7 +24,7 @@ export interface DataOktaEmailSmtpServerConfig extends cdktf.TerraformMetaArgume
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/data-sources/email_smtp_server okta_email_smtp_server}
+* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/data-sources/email_smtp_server okta_email_smtp_server}
 */
 export class DataOktaEmailSmtpServer extends cdktf.TerraformDataSource {
 
@@ -40,7 +40,7 @@ export class DataOktaEmailSmtpServer extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataOktaEmailSmtpServer resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataOktaEmailSmtpServer to import
-  * @param importFromId The id of the existing DataOktaEmailSmtpServer that should be imported. Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/data-sources/email_smtp_server#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataOktaEmailSmtpServer that should be imported. Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/data-sources/email_smtp_server#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataOktaEmailSmtpServer to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -52,7 +52,7 @@ export class DataOktaEmailSmtpServer extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/data-sources/email_smtp_server okta_email_smtp_server} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/data-sources/email_smtp_server okta_email_smtp_server} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -63,7 +63,7 @@ export class DataOktaEmailSmtpServer extends cdktf.TerraformDataSource {
       terraformResourceType: 'okta_email_smtp_server',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '4.19.0',
+        providerVersion: '4.20.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

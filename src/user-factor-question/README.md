@@ -1,3 +1,3 @@
 # `okta_user_factor_question`
 
-Refer to the Terraform Registry for docs: [`okta_user_factor_question`](https://registry.terraform.io/providers/okta/okta/4.19.0/docs/resources/user_factor_question).
+Refer to the Terraform Registry for docs: [`okta_user_factor_question`](https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/user_factor_question).
