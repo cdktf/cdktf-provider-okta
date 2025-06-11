@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/okta/okta/4.19.0/docs/data-sources/apps
+// https://registry.terraform.io/providers/okta/okta/4.20.0/docs/data-sources/apps
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,37 +15,37 @@ export interface DataOktaAppsConfig extends cdktf.TerraformMetaArguments {
   /**
   * Search only active applications.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/data-sources/apps#active_only DataOktaApps#active_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/data-sources/apps#active_only DataOktaApps#active_only}
   */
   readonly activeOnly?: boolean | cdktf.IResolvable;
   /**
   * Specifies whether to include non-active, but not deleted apps in the results.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/data-sources/apps#include_non_deleted DataOktaApps#include_non_deleted}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/data-sources/apps#include_non_deleted DataOktaApps#include_non_deleted}
   */
   readonly includeNonDeleted?: boolean | cdktf.IResolvable;
   /**
   * Searches for applications whose label or name property matches this value exactly.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/data-sources/apps#label DataOktaApps#label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/data-sources/apps#label DataOktaApps#label}
   */
   readonly label?: string;
   /**
   * Searches for applications whose label or name property begins with this value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/data-sources/apps#label_prefix DataOktaApps#label_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/data-sources/apps#label_prefix DataOktaApps#label_prefix}
   */
   readonly labelPrefix?: string;
   /**
   * Searches for applications whose name or label properties that starts with this value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/data-sources/apps#q DataOktaApps#q}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/data-sources/apps#q DataOktaApps#q}
   */
   readonly q?: string;
   /**
   * Specifies whether to use query optimization. If you specify `useOptimization=true` in the request query, the response contains a subset of app instance properties.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/data-sources/apps#use_optimization DataOktaApps#use_optimization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/data-sources/apps#use_optimization DataOktaApps#use_optimization}
   */
   readonly useOptimization?: boolean | cdktf.IResolvable;
 }
@@ -301,7 +301,7 @@ export class DataOktaAppsAppsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/data-sources/apps okta_apps}
+* Represents a {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/data-sources/apps okta_apps}
 */
 export class DataOktaApps extends cdktf.TerraformDataSource {
 
@@ -317,7 +317,7 @@ export class DataOktaApps extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataOktaApps resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataOktaApps to import
-  * @param importFromId The id of the existing DataOktaApps that should be imported. Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/data-sources/apps#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataOktaApps that should be imported. Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/data-sources/apps#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataOktaApps to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -329,7 +329,7 @@ export class DataOktaApps extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.19.0/docs/data-sources/apps okta_apps} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/data-sources/apps okta_apps} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -340,7 +340,7 @@ export class DataOktaApps extends cdktf.TerraformDataSource {
       terraformResourceType: 'okta_apps',
       terraformGeneratorMetadata: {
         providerName: 'okta',
-        providerVersion: '4.19.0',
+        providerVersion: '4.20.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
