@@ -430,24 +430,24 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 | <code><a href="#@cdktf/provider-okta.dataOktaApps.DataOktaApps.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaApps.DataOktaApps.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaApps.DataOktaApps.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.dataOktaApps.DataOktaApps.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.dataOktaApps.DataOktaApps.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaApps.DataOktaApps.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaApps.DataOktaApps.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaApps.DataOktaApps.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaApps.DataOktaApps.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaApps.DataOktaApps.property.apps">Apps</a></code> | <code><a href="#@cdktf/provider-okta.dataOktaApps.DataOktaAppsAppsList">DataOktaAppsAppsList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.dataOktaApps.DataOktaApps.property.activeOnlyInput">ActiveOnlyInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.dataOktaApps.DataOktaApps.property.includeNonDeletedInput">IncludeNonDeletedInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.dataOktaApps.DataOktaApps.property.activeOnlyInput">ActiveOnlyInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.dataOktaApps.DataOktaApps.property.includeNonDeletedInput">IncludeNonDeletedInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaApps.DataOktaApps.property.labelInput">LabelInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaApps.DataOktaApps.property.labelPrefixInput">LabelPrefixInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaApps.DataOktaApps.property.qInput">QInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.dataOktaApps.DataOktaApps.property.useOptimizationInput">UseOptimizationInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.dataOktaApps.DataOktaApps.property.activeOnly">ActiveOnly</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.dataOktaApps.DataOktaApps.property.includeNonDeleted">IncludeNonDeleted</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.dataOktaApps.DataOktaApps.property.useOptimizationInput">UseOptimizationInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.dataOktaApps.DataOktaApps.property.activeOnly">ActiveOnly</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.dataOktaApps.DataOktaApps.property.includeNonDeleted">IncludeNonDeleted</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaApps.DataOktaApps.property.label">Label</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaApps.DataOktaApps.property.labelPrefix">LabelPrefix</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaApps.DataOktaApps.property.q">Q</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.dataOktaApps.DataOktaApps.property.useOptimization">UseOptimization</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.dataOktaApps.DataOktaApps.property.useOptimization">UseOptimization</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 
 ---
 
@@ -526,10 +526,10 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.dataOktaApps.DataOktaApps.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -586,20 +586,20 @@ public DataOktaAppsAppsList Apps { get; }
 ##### `ActiveOnlyInput`<sup>Optional</sup> <a name="ActiveOnlyInput" id="@cdktf/provider-okta.dataOktaApps.DataOktaApps.property.activeOnlyInput"></a>
 
 ```csharp
-public object ActiveOnlyInput { get; }
+public bool|IResolvable ActiveOnlyInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `IncludeNonDeletedInput`<sup>Optional</sup> <a name="IncludeNonDeletedInput" id="@cdktf/provider-okta.dataOktaApps.DataOktaApps.property.includeNonDeletedInput"></a>
 
 ```csharp
-public object IncludeNonDeletedInput { get; }
+public bool|IResolvable IncludeNonDeletedInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -636,30 +636,30 @@ public string QInput { get; }
 ##### `UseOptimizationInput`<sup>Optional</sup> <a name="UseOptimizationInput" id="@cdktf/provider-okta.dataOktaApps.DataOktaApps.property.useOptimizationInput"></a>
 
 ```csharp
-public object UseOptimizationInput { get; }
+public bool|IResolvable UseOptimizationInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `ActiveOnly`<sup>Required</sup> <a name="ActiveOnly" id="@cdktf/provider-okta.dataOktaApps.DataOktaApps.property.activeOnly"></a>
 
 ```csharp
-public object ActiveOnly { get; }
+public bool|IResolvable ActiveOnly { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `IncludeNonDeleted`<sup>Required</sup> <a name="IncludeNonDeleted" id="@cdktf/provider-okta.dataOktaApps.DataOktaApps.property.includeNonDeleted"></a>
 
 ```csharp
-public object IncludeNonDeleted { get; }
+public bool|IResolvable IncludeNonDeleted { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -696,10 +696,10 @@ public string Q { get; }
 ##### `UseOptimization`<sup>Required</sup> <a name="UseOptimization" id="@cdktf/provider-okta.dataOktaApps.DataOktaApps.property.useOptimization"></a>
 
 ```csharp
-public object UseOptimization { get; }
+public bool|IResolvable UseOptimization { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -770,19 +770,19 @@ new DataOktaAppsAppsVisibilityHide {
 using HashiCorp.Cdktf.Providers.Okta;
 
 new DataOktaAppsConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
-    object ActiveOnly = null,
-    object IncludeNonDeleted = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
+    bool|IResolvable ActiveOnly = null,
+    bool|IResolvable IncludeNonDeleted = null,
     string Label = null,
     string LabelPrefix = null,
     string Q = null,
-    object UseOptimization = null
+    bool|IResolvable UseOptimization = null
 };
 ```
 
@@ -790,39 +790,39 @@ new DataOktaAppsConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.dataOktaApps.DataOktaAppsConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.dataOktaApps.DataOktaAppsConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.dataOktaApps.DataOktaAppsConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.dataOktaApps.DataOktaAppsConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaApps.DataOktaAppsConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaApps.DataOktaAppsConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaApps.DataOktaAppsConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.dataOktaApps.DataOktaAppsConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.dataOktaApps.DataOktaAppsConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.dataOktaApps.DataOktaAppsConfig.property.activeOnly">ActiveOnly</a></code> | <code>object</code> | Search only active applications. |
-| <code><a href="#@cdktf/provider-okta.dataOktaApps.DataOktaAppsConfig.property.includeNonDeleted">IncludeNonDeleted</a></code> | <code>object</code> | Specifies whether to include non-active, but not deleted apps in the results. |
+| <code><a href="#@cdktf/provider-okta.dataOktaApps.DataOktaAppsConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.dataOktaApps.DataOktaAppsConfig.property.activeOnly">ActiveOnly</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Search only active applications. |
+| <code><a href="#@cdktf/provider-okta.dataOktaApps.DataOktaAppsConfig.property.includeNonDeleted">IncludeNonDeleted</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Specifies whether to include non-active, but not deleted apps in the results. |
 | <code><a href="#@cdktf/provider-okta.dataOktaApps.DataOktaAppsConfig.property.label">Label</a></code> | <code>string</code> | Searches for applications whose label or name property matches this value exactly. |
 | <code><a href="#@cdktf/provider-okta.dataOktaApps.DataOktaAppsConfig.property.labelPrefix">LabelPrefix</a></code> | <code>string</code> | Searches for applications whose label or name property begins with this value. |
 | <code><a href="#@cdktf/provider-okta.dataOktaApps.DataOktaAppsConfig.property.q">Q</a></code> | <code>string</code> | Searches for applications whose name or label properties that starts with this value. |
-| <code><a href="#@cdktf/provider-okta.dataOktaApps.DataOktaAppsConfig.property.useOptimization">UseOptimization</a></code> | <code>object</code> | Specifies whether to use query optimization. |
+| <code><a href="#@cdktf/provider-okta.dataOktaApps.DataOktaAppsConfig.property.useOptimization">UseOptimization</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Specifies whether to use query optimization. |
 
 ---
 
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-okta.dataOktaApps.DataOktaAppsConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.dataOktaApps.DataOktaAppsConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -869,20 +869,20 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-okta.dataOktaApps.DataOktaAppsConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
 ##### `ActiveOnly`<sup>Optional</sup> <a name="ActiveOnly" id="@cdktf/provider-okta.dataOktaApps.DataOktaAppsConfig.property.activeOnly"></a>
 
 ```csharp
-public object ActiveOnly { get; set; }
+public bool|IResolvable ActiveOnly { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Search only active applications.
 
@@ -893,10 +893,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 ##### `IncludeNonDeleted`<sup>Optional</sup> <a name="IncludeNonDeleted" id="@cdktf/provider-okta.dataOktaApps.DataOktaAppsConfig.property.includeNonDeleted"></a>
 
 ```csharp
-public object IncludeNonDeleted { get; set; }
+public bool|IResolvable IncludeNonDeleted { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Specifies whether to include non-active, but not deleted apps in the results.
 
@@ -949,10 +949,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 ##### `UseOptimization`<sup>Optional</sup> <a name="UseOptimization" id="@cdktf/provider-okta.dataOktaApps.DataOktaAppsConfig.property.useOptimization"></a>
 
 ```csharp
-public object UseOptimization { get; set; }
+public bool|IResolvable UseOptimization { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Specifies whether to use query optimization.
 

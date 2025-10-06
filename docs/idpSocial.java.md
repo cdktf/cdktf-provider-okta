@@ -12,17 +12,13 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 import com.hashicorp.cdktf.providers.okta.idp_social.IdpSocial;
 
 IdpSocial.Builder.create(Construct scope, java.lang.String id)
-//  .connection(SSHProvisionerConnection)
-//  .connection(WinrmProvisionerConnection)
-//  .count(java.lang.Number)
-//  .count(TerraformCount)
+//  .connection(SSHProvisionerConnection|WinrmProvisionerConnection)
+//  .count(java.lang.Number|TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
-//  .provisioners(java.util.List<FileProvisioner)
-//  .provisioners(LocalExecProvisioner)
-//  .provisioners(RemoteExecProvisioner>)
+//  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .name(java.lang.String)
     .scopes(java.util.List<java.lang.String>)
     .type(java.lang.String)
@@ -41,8 +37,7 @@ IdpSocial.Builder.create(Construct scope, java.lang.String id)
 //  .id(java.lang.String)
 //  .issuerMode(java.lang.String)
 //  .maxClockSkew(java.lang.Number)
-//  .profileMaster(java.lang.Boolean)
-//  .profileMaster(IResolvable)
+//  .profileMaster(java.lang.Boolean|IResolvable)
 //  .protocolType(java.lang.String)
 //  .provisioningAction(java.lang.String)
 //  .status(java.lang.String)
@@ -57,13 +52,13 @@ IdpSocial.Builder.create(Construct scope, java.lang.String id)
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Name of the IdP. |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.scopes">scopes</a></code> | <code>java.util.List<java.lang.String></code> | The scopes of the IdP. |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.type">type</a></code> | <code>java.lang.String</code> | Identity Provider Types: https://developer.okta.com/docs/reference/api/idps/#identity-provider-type. |
@@ -82,7 +77,7 @@ IdpSocial.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/idp_social#id IdpSocial#id}. |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.issuerMode">issuerMode</a></code> | <code>java.lang.String</code> | Indicates whether Okta uses the original Okta org domain URL, or a custom domain URL. |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.maxClockSkew">maxClockSkew</a></code> | <code>java.lang.Number</code> | Maximum allowable clock-skew when processing messages from the IdP. |
-| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.profileMaster">profileMaster</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Determines if the IdP should act as a source of truth for user profile attributes. |
+| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.profileMaster">profileMaster</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Determines if the IdP should act as a source of truth for user profile attributes. |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.protocolType">protocolType</a></code> | <code>java.lang.String</code> | The type of protocol to use. It can be `OIDC` or `OAUTH2`. Default: `OAUTH2`. |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.provisioningAction">provisioningAction</a></code> | <code>java.lang.String</code> | Provisioning action for an IdP user during authentication. Default: `AUTO`. |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.status">status</a></code> | <code>java.lang.String</code> | Default to `ACTIVE`. |
@@ -113,13 +108,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.connection"></a>
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -149,7 +144,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.provisioners"></a>
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -340,7 +335,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 ##### `profileMaster`<sup>Optional</sup> <a name="profileMaster" id="@cdktf/provider-okta.idpSocial.IdpSocial.Initializer.parameter.profileMaster"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Determines if the IdP should act as a source of truth for user profile attributes.
 
@@ -670,7 +665,7 @@ public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(j
 ##### `hasResourceMove` <a name="hasResourceMove" id="@cdktf/provider-okta.idpSocial.IdpSocial.hasResourceMove"></a>
 
 ```java
-public TerraformResourceMoveByTarget OR TerraformResourceMoveById hasResourceMove()
+public TerraformResourceMoveByTarget|TerraformResourceMoveById hasResourceMove()
 ```
 
 ##### `importFrom` <a name="importFrom" id="@cdktf/provider-okta.idpSocial.IdpSocial.importFrom"></a>
@@ -726,7 +721,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ```java
 public void moveTo(java.lang.String moveTarget)
-public void moveTo(java.lang.String moveTarget, java.lang.String OR java.lang.Number index)
+public void moveTo(java.lang.String moveTarget, java.lang.String|java.lang.Number index)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -741,7 +736,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-okta.idpSocial.IdpSocial.moveTo.parameter.index"></a>
 
-- *Type:* java.lang.String OR java.lang.Number
+- *Type:* java.lang.String|java.lang.Number
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -1027,13 +1022,13 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>java.util.Map<java.lang.String, java.lang.Object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.property.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.property.authorizationBinding">authorizationBinding</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.property.authorizationUrl">authorizationUrl</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.property.tokenBinding">tokenBinding</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -1059,7 +1054,7 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.property.issuerModeInput">issuerModeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.property.maxClockSkewInput">maxClockSkewInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.property.profileMasterInput">profileMasterInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.property.profileMasterInput">profileMasterInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.property.protocolTypeInput">protocolTypeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.property.provisioningActionInput">provisioningActionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.property.scopesInput">scopesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
@@ -1085,7 +1080,7 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.property.issuerMode">issuerMode</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.property.maxClockSkew">maxClockSkew</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.property.profileMaster">profileMaster</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.property.profileMaster">profileMaster</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.property.protocolType">protocolType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.property.provisioningAction">provisioningAction</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocial.property.scopes">scopes</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
@@ -1173,20 +1168,20 @@ public TerraformProviderGeneratorMetadata getTerraformGeneratorMetadata();
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-okta.idpSocial.IdpSocial.property.connection"></a>
 
 ```java
-public java.lang.Object getConnection();
+public SSHProvisionerConnection|WinrmProvisionerConnection getConnection();
 ```
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.idpSocial.IdpSocial.property.count"></a>
 
 ```java
-public java.lang.Object getCount();
+public java.lang.Number|TerraformCount getCount();
 ```
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -1233,10 +1228,10 @@ public TerraformProvider getProvider();
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-okta.idpSocial.IdpSocial.property.provisioners"></a>
 
 ```java
-public java.lang.Object getProvisioners();
+public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner> getProvisioners();
 ```
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -1493,10 +1488,10 @@ public java.lang.String getNameInput();
 ##### `profileMasterInput`<sup>Optional</sup> <a name="profileMasterInput" id="@cdktf/provider-okta.idpSocial.IdpSocial.property.profileMasterInput"></a>
 
 ```java
-public java.lang.Object getProfileMasterInput();
+public java.lang.Boolean|IResolvable getProfileMasterInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1753,10 +1748,10 @@ public java.lang.String getName();
 ##### `profileMaster`<sup>Required</sup> <a name="profileMaster" id="@cdktf/provider-okta.idpSocial.IdpSocial.property.profileMaster"></a>
 
 ```java
-public java.lang.Object getProfileMaster();
+public java.lang.Boolean|IResolvable getProfileMaster();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1878,17 +1873,13 @@ public java.lang.String getTfResourceType();
 import com.hashicorp.cdktf.providers.okta.idp_social.IdpSocialConfig;
 
 IdpSocialConfig.builder()
-//  .connection(SSHProvisionerConnection)
-//  .connection(WinrmProvisionerConnection)
-//  .count(java.lang.Number)
-//  .count(TerraformCount)
+//  .connection(SSHProvisionerConnection|WinrmProvisionerConnection)
+//  .count(java.lang.Number|TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
-//  .provisioners(java.util.List<FileProvisioner)
-//  .provisioners(LocalExecProvisioner)
-//  .provisioners(RemoteExecProvisioner>)
+//  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .name(java.lang.String)
     .scopes(java.util.List<java.lang.String>)
     .type(java.lang.String)
@@ -1907,8 +1898,7 @@ IdpSocialConfig.builder()
 //  .id(java.lang.String)
 //  .issuerMode(java.lang.String)
 //  .maxClockSkew(java.lang.Number)
-//  .profileMaster(java.lang.Boolean)
-//  .profileMaster(IResolvable)
+//  .profileMaster(java.lang.Boolean|IResolvable)
 //  .protocolType(java.lang.String)
 //  .provisioningAction(java.lang.String)
 //  .status(java.lang.String)
@@ -1923,13 +1913,13 @@ IdpSocialConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.name">name</a></code> | <code>java.lang.String</code> | Name of the IdP. |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.scopes">scopes</a></code> | <code>java.util.List<java.lang.String></code> | The scopes of the IdP. |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.type">type</a></code> | <code>java.lang.String</code> | Identity Provider Types: https://developer.okta.com/docs/reference/api/idps/#identity-provider-type. |
@@ -1948,7 +1938,7 @@ IdpSocialConfig.builder()
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/idp_social#id IdpSocial#id}. |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.issuerMode">issuerMode</a></code> | <code>java.lang.String</code> | Indicates whether Okta uses the original Okta org domain URL, or a custom domain URL. |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.maxClockSkew">maxClockSkew</a></code> | <code>java.lang.Number</code> | Maximum allowable clock-skew when processing messages from the IdP. |
-| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.profileMaster">profileMaster</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Determines if the IdP should act as a source of truth for user profile attributes. |
+| <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.profileMaster">profileMaster</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Determines if the IdP should act as a source of truth for user profile attributes. |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.protocolType">protocolType</a></code> | <code>java.lang.String</code> | The type of protocol to use. It can be `OIDC` or `OAUTH2`. Default: `OAUTH2`. |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.provisioningAction">provisioningAction</a></code> | <code>java.lang.String</code> | Provisioning action for an IdP user during authentication. Default: `AUTO`. |
 | <code><a href="#@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.status">status</a></code> | <code>java.lang.String</code> | Default to `ACTIVE`. |
@@ -1962,20 +1952,20 @@ IdpSocialConfig.builder()
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.connection"></a>
 
 ```java
-public java.lang.Object getConnection();
+public SSHProvisionerConnection|WinrmProvisionerConnection getConnection();
 ```
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.count"></a>
 
 ```java
-public java.lang.Object getCount();
+public java.lang.Number|TerraformCount getCount();
 ```
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -2022,10 +2012,10 @@ public TerraformProvider getProvider();
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.provisioners"></a>
 
 ```java
-public java.lang.Object getProvisioners();
+public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner> getProvisioners();
 ```
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -2289,10 +2279,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 ##### `profileMaster`<sup>Optional</sup> <a name="profileMaster" id="@cdktf/provider-okta.idpSocial.IdpSocialConfig.property.profileMaster"></a>
 
 ```java
-public java.lang.Object getProfileMaster();
+public java.lang.Boolean|IResolvable getProfileMaster();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Determines if the IdP should act as a source of truth for user profile attributes.
 

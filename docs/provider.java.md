@@ -15,8 +15,7 @@ OktaProvider.Builder.create(Construct scope, java.lang.String id)
 //  .accessToken(java.lang.String)
 //  .alias(java.lang.String)
 //  .apiToken(java.lang.String)
-//  .backoff(java.lang.Boolean)
-//  .backoff(IResolvable)
+//  .backoff(java.lang.Boolean|IResolvable)
 //  .baseUrl(java.lang.String)
 //  .clientId(java.lang.String)
 //  .httpProxy(java.lang.String)
@@ -41,7 +40,7 @@ OktaProvider.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-okta.provider.OktaProvider.Initializer.parameter.accessToken">accessToken</a></code> | <code>java.lang.String</code> | Bearer token granting privileges to Okta API. |
 | <code><a href="#@cdktf/provider-okta.provider.OktaProvider.Initializer.parameter.alias">alias</a></code> | <code>java.lang.String</code> | Alias name. |
 | <code><a href="#@cdktf/provider-okta.provider.OktaProvider.Initializer.parameter.apiToken">apiToken</a></code> | <code>java.lang.String</code> | API Token granting privileges to Okta API. |
-| <code><a href="#@cdktf/provider-okta.provider.OktaProvider.Initializer.parameter.backoff">backoff</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Use exponential back off strategy for rate limits. |
+| <code><a href="#@cdktf/provider-okta.provider.OktaProvider.Initializer.parameter.backoff">backoff</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Use exponential back off strategy for rate limits. |
 | <code><a href="#@cdktf/provider-okta.provider.OktaProvider.Initializer.parameter.baseUrl">baseUrl</a></code> | <code>java.lang.String</code> | The Okta url. (Use 'oktapreview.com' for Okta testing). |
 | <code><a href="#@cdktf/provider-okta.provider.OktaProvider.Initializer.parameter.clientId">clientId</a></code> | <code>java.lang.String</code> | API Token granting privileges to Okta API. |
 | <code><a href="#@cdktf/provider-okta.provider.OktaProvider.Initializer.parameter.httpProxy">httpProxy</a></code> | <code>java.lang.String</code> | Alternate HTTP proxy of scheme://hostname or scheme://hostname:port format. |
@@ -109,7 +108,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 ##### `backoff`<sup>Optional</sup> <a name="backoff" id="@cdktf/provider-okta.provider.OktaProvider.Initializer.parameter.backoff"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Use exponential back off strategy for rate limits.
 
@@ -602,7 +601,7 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 | <code><a href="#@cdktf/provider-okta.provider.OktaProvider.property.accessTokenInput">accessTokenInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.provider.OktaProvider.property.aliasInput">aliasInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.provider.OktaProvider.property.apiTokenInput">apiTokenInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.provider.OktaProvider.property.backoffInput">backoffInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.provider.OktaProvider.property.backoffInput">backoffInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.provider.OktaProvider.property.baseUrlInput">baseUrlInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.provider.OktaProvider.property.clientIdInput">clientIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.provider.OktaProvider.property.httpProxyInput">httpProxyInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -619,7 +618,7 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 | <code><a href="#@cdktf/provider-okta.provider.OktaProvider.property.scopesInput">scopesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.provider.OktaProvider.property.accessToken">accessToken</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.provider.OktaProvider.property.apiToken">apiToken</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.provider.OktaProvider.property.backoff">backoff</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.provider.OktaProvider.property.backoff">backoff</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.provider.OktaProvider.property.baseUrl">baseUrl</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.provider.OktaProvider.property.clientId">clientId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.provider.OktaProvider.property.httpProxy">httpProxy</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -762,10 +761,10 @@ public java.lang.String getApiTokenInput();
 ##### `backoffInput`<sup>Optional</sup> <a name="backoffInput" id="@cdktf/provider-okta.provider.OktaProvider.property.backoffInput"></a>
 
 ```java
-public java.lang.Object getBackoffInput();
+public java.lang.Boolean|IResolvable getBackoffInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -932,10 +931,10 @@ public java.lang.String getApiToken();
 ##### `backoff`<sup>Optional</sup> <a name="backoff" id="@cdktf/provider-okta.provider.OktaProvider.property.backoff"></a>
 
 ```java
-public java.lang.Object getBackoff();
+public java.lang.Boolean|IResolvable getBackoff();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1110,8 +1109,7 @@ OktaProviderConfig.builder()
 //  .accessToken(java.lang.String)
 //  .alias(java.lang.String)
 //  .apiToken(java.lang.String)
-//  .backoff(java.lang.Boolean)
-//  .backoff(IResolvable)
+//  .backoff(java.lang.Boolean|IResolvable)
 //  .baseUrl(java.lang.String)
 //  .clientId(java.lang.String)
 //  .httpProxy(java.lang.String)
@@ -1136,7 +1134,7 @@ OktaProviderConfig.builder()
 | <code><a href="#@cdktf/provider-okta.provider.OktaProviderConfig.property.accessToken">accessToken</a></code> | <code>java.lang.String</code> | Bearer token granting privileges to Okta API. |
 | <code><a href="#@cdktf/provider-okta.provider.OktaProviderConfig.property.alias">alias</a></code> | <code>java.lang.String</code> | Alias name. |
 | <code><a href="#@cdktf/provider-okta.provider.OktaProviderConfig.property.apiToken">apiToken</a></code> | <code>java.lang.String</code> | API Token granting privileges to Okta API. |
-| <code><a href="#@cdktf/provider-okta.provider.OktaProviderConfig.property.backoff">backoff</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Use exponential back off strategy for rate limits. |
+| <code><a href="#@cdktf/provider-okta.provider.OktaProviderConfig.property.backoff">backoff</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Use exponential back off strategy for rate limits. |
 | <code><a href="#@cdktf/provider-okta.provider.OktaProviderConfig.property.baseUrl">baseUrl</a></code> | <code>java.lang.String</code> | The Okta url. (Use 'oktapreview.com' for Okta testing). |
 | <code><a href="#@cdktf/provider-okta.provider.OktaProviderConfig.property.clientId">clientId</a></code> | <code>java.lang.String</code> | API Token granting privileges to Okta API. |
 | <code><a href="#@cdktf/provider-okta.provider.OktaProviderConfig.property.httpProxy">httpProxy</a></code> | <code>java.lang.String</code> | Alternate HTTP proxy of scheme://hostname or scheme://hostname:port format. |
@@ -1199,10 +1197,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 ##### `backoff`<sup>Optional</sup> <a name="backoff" id="@cdktf/provider-okta.provider.OktaProviderConfig.property.backoff"></a>
 
 ```java
-public java.lang.Object getBackoff();
+public java.lang.Boolean|IResolvable getBackoff();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Use exponential back off strategy for rate limits.
 

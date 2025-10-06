@@ -14,28 +14,28 @@ from cdktf_cdktf_provider_okta import policy_device_assurance_chromeos
 policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   name: str,
-  tpsp_allow_screen_lock: typing.Union[bool, IResolvable] = None,
+  tpsp_allow_screen_lock: bool | IResolvable = None,
   tpsp_browser_version: str = None,
-  tpsp_builtin_dns_client_enabled: typing.Union[bool, IResolvable] = None,
-  tpsp_chrome_remote_desktop_app_blocked: typing.Union[bool, IResolvable] = None,
+  tpsp_builtin_dns_client_enabled: bool | IResolvable = None,
+  tpsp_chrome_remote_desktop_app_blocked: bool | IResolvable = None,
   tpsp_device_enrollment_domain: str = None,
-  tpsp_disk_encrypted: typing.Union[bool, IResolvable] = None,
+  tpsp_disk_encrypted: bool | IResolvable = None,
   tpsp_key_trust_level: str = None,
-  tpsp_os_firewall: typing.Union[bool, IResolvable] = None,
+  tpsp_os_firewall: bool | IResolvable = None,
   tpsp_os_version: str = None,
   tpsp_password_proctection_warning_trigger: str = None,
-  tpsp_realtime_url_check_mode: typing.Union[bool, IResolvable] = None,
+  tpsp_realtime_url_check_mode: bool | IResolvable = None,
   tpsp_safe_browsing_protection_level: str = None,
-  tpsp_screen_lock_secured: typing.Union[bool, IResolvable] = None,
-  tpsp_site_isolation_enabled: typing.Union[bool, IResolvable] = None
+  tpsp_screen_lock_secured: bool | IResolvable = None,
+  tpsp_site_isolation_enabled: bool | IResolvable = None
 )
 ```
 
@@ -43,28 +43,28 @@ policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.Initializer.parameter.name">name</a></code> | <code>str</code> | Name of the device assurance policy. |
-| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.Initializer.parameter.tpspAllowScreenLock">tpsp_allow_screen_lock</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Third party signal provider allow screen lock. |
+| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.Initializer.parameter.tpspAllowScreenLock">tpsp_allow_screen_lock</a></code> | <code>bool \| cdktf.IResolvable</code> | Third party signal provider allow screen lock. |
 | <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.Initializer.parameter.tpspBrowserVersion">tpsp_browser_version</a></code> | <code>str</code> | Third party signal provider minimum browser version. |
-| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.Initializer.parameter.tpspBuiltinDnsClientEnabled">tpsp_builtin_dns_client_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Third party signal provider builtin dns client enabled. |
-| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.Initializer.parameter.tpspChromeRemoteDesktopAppBlocked">tpsp_chrome_remote_desktop_app_blocked</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Third party signal provider chrome remote desktop app blocked. |
+| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.Initializer.parameter.tpspBuiltinDnsClientEnabled">tpsp_builtin_dns_client_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Third party signal provider builtin dns client enabled. |
+| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.Initializer.parameter.tpspChromeRemoteDesktopAppBlocked">tpsp_chrome_remote_desktop_app_blocked</a></code> | <code>bool \| cdktf.IResolvable</code> | Third party signal provider chrome remote desktop app blocked. |
 | <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.Initializer.parameter.tpspDeviceEnrollmentDomain">tpsp_device_enrollment_domain</a></code> | <code>str</code> | Third party signal provider device enrollment domain. |
-| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.Initializer.parameter.tpspDiskEncrypted">tpsp_disk_encrypted</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Third party signal provider disk encrypted. |
+| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.Initializer.parameter.tpspDiskEncrypted">tpsp_disk_encrypted</a></code> | <code>bool \| cdktf.IResolvable</code> | Third party signal provider disk encrypted. |
 | <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.Initializer.parameter.tpspKeyTrustLevel">tpsp_key_trust_level</a></code> | <code>str</code> | Third party signal provider key trust level. |
-| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.Initializer.parameter.tpspOsFirewall">tpsp_os_firewall</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Third party signal provider os firewall. |
+| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.Initializer.parameter.tpspOsFirewall">tpsp_os_firewall</a></code> | <code>bool \| cdktf.IResolvable</code> | Third party signal provider os firewall. |
 | <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.Initializer.parameter.tpspOsVersion">tpsp_os_version</a></code> | <code>str</code> | Third party signal provider minimum os version. |
 | <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.Initializer.parameter.tpspPasswordProctectionWarningTrigger">tpsp_password_proctection_warning_trigger</a></code> | <code>str</code> | Third party signal provider password protection warning trigger. |
-| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.Initializer.parameter.tpspRealtimeUrlCheckMode">tpsp_realtime_url_check_mode</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Third party signal provider realtime url check mode. |
+| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.Initializer.parameter.tpspRealtimeUrlCheckMode">tpsp_realtime_url_check_mode</a></code> | <code>bool \| cdktf.IResolvable</code> | Third party signal provider realtime url check mode. |
 | <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.Initializer.parameter.tpspSafeBrowsingProtectionLevel">tpsp_safe_browsing_protection_level</a></code> | <code>str</code> | Third party signal provider safe browsing protection level. |
-| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.Initializer.parameter.tpspScreenLockSecured">tpsp_screen_lock_secured</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Third party signal provider screen lock secure. |
-| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.Initializer.parameter.tpspSiteIsolationEnabled">tpsp_site_isolation_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Third party signal provider site isolation enabled. |
+| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.Initializer.parameter.tpspScreenLockSecured">tpsp_screen_lock_secured</a></code> | <code>bool \| cdktf.IResolvable</code> | Third party signal provider screen lock secure. |
+| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.Initializer.parameter.tpspSiteIsolationEnabled">tpsp_site_isolation_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Third party signal provider site isolation enabled. |
 
 ---
 
@@ -88,13 +88,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -124,7 +124,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 ##### `tpsp_allow_screen_lock`<sup>Optional</sup> <a name="tpsp_allow_screen_lock" id="@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.Initializer.parameter.tpspAllowScreenLock"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Third party signal provider allow screen lock.
 
@@ -160,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 ##### `tpsp_builtin_dns_client_enabled`<sup>Optional</sup> <a name="tpsp_builtin_dns_client_enabled" id="@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.Initializer.parameter.tpspBuiltinDnsClientEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Third party signal provider builtin dns client enabled.
 
@@ -170,7 +170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 ##### `tpsp_chrome_remote_desktop_app_blocked`<sup>Optional</sup> <a name="tpsp_chrome_remote_desktop_app_blocked" id="@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.Initializer.parameter.tpspChromeRemoteDesktopAppBlocked"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Third party signal provider chrome remote desktop app blocked.
 
@@ -190,7 +190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 ##### `tpsp_disk_encrypted`<sup>Optional</sup> <a name="tpsp_disk_encrypted" id="@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.Initializer.parameter.tpspDiskEncrypted"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Third party signal provider disk encrypted.
 
@@ -210,7 +210,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 ##### `tpsp_os_firewall`<sup>Optional</sup> <a name="tpsp_os_firewall" id="@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.Initializer.parameter.tpspOsFirewall"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Third party signal provider os firewall.
 
@@ -240,7 +240,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 ##### `tpsp_realtime_url_check_mode`<sup>Optional</sup> <a name="tpsp_realtime_url_check_mode" id="@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.Initializer.parameter.tpspRealtimeUrlCheckMode"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Third party signal provider realtime url check mode.
 
@@ -260,7 +260,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 ##### `tpsp_screen_lock_secured`<sup>Optional</sup> <a name="tpsp_screen_lock_secured" id="@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.Initializer.parameter.tpspScreenLockSecured"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Third party signal provider screen lock secure.
 
@@ -270,7 +270,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 ##### `tpsp_site_isolation_enabled`<sup>Optional</sup> <a name="tpsp_site_isolation_enabled" id="@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.Initializer.parameter.tpspSiteIsolationEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Third party signal provider site isolation enabled.
 
@@ -544,7 +544,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.importFrom"></a>
@@ -607,7 +607,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -623,7 +623,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -868,13 +868,13 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 | <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.property.createdBy">created_by</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.property.createdDate">created_date</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.property.id">id</a></code> | <code>str</code> | *No description.* |
@@ -882,35 +882,35 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 | <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.property.lastUpdatedBy">last_updated_by</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.property.platform">platform</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.property.tpspAllowScreenLockInput">tpsp_allow_screen_lock_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.property.tpspAllowScreenLockInput">tpsp_allow_screen_lock_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.property.tpspBrowserVersionInput">tpsp_browser_version_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.property.tpspBuiltinDnsClientEnabledInput">tpsp_builtin_dns_client_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.property.tpspChromeRemoteDesktopAppBlockedInput">tpsp_chrome_remote_desktop_app_blocked_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.property.tpspBuiltinDnsClientEnabledInput">tpsp_builtin_dns_client_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.property.tpspChromeRemoteDesktopAppBlockedInput">tpsp_chrome_remote_desktop_app_blocked_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.property.tpspDeviceEnrollmentDomainInput">tpsp_device_enrollment_domain_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.property.tpspDiskEncryptedInput">tpsp_disk_encrypted_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.property.tpspDiskEncryptedInput">tpsp_disk_encrypted_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.property.tpspKeyTrustLevelInput">tpsp_key_trust_level_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.property.tpspOsFirewallInput">tpsp_os_firewall_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.property.tpspOsFirewallInput">tpsp_os_firewall_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.property.tpspOsVersionInput">tpsp_os_version_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.property.tpspPasswordProctectionWarningTriggerInput">tpsp_password_proctection_warning_trigger_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.property.tpspRealtimeUrlCheckModeInput">tpsp_realtime_url_check_mode_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.property.tpspRealtimeUrlCheckModeInput">tpsp_realtime_url_check_mode_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.property.tpspSafeBrowsingProtectionLevelInput">tpsp_safe_browsing_protection_level_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.property.tpspScreenLockSecuredInput">tpsp_screen_lock_secured_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.property.tpspSiteIsolationEnabledInput">tpsp_site_isolation_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.property.tpspScreenLockSecuredInput">tpsp_screen_lock_secured_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.property.tpspSiteIsolationEnabledInput">tpsp_site_isolation_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.property.tpspAllowScreenLock">tpsp_allow_screen_lock</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.property.tpspAllowScreenLock">tpsp_allow_screen_lock</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.property.tpspBrowserVersion">tpsp_browser_version</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.property.tpspBuiltinDnsClientEnabled">tpsp_builtin_dns_client_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.property.tpspChromeRemoteDesktopAppBlocked">tpsp_chrome_remote_desktop_app_blocked</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.property.tpspBuiltinDnsClientEnabled">tpsp_builtin_dns_client_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.property.tpspChromeRemoteDesktopAppBlocked">tpsp_chrome_remote_desktop_app_blocked</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.property.tpspDeviceEnrollmentDomain">tpsp_device_enrollment_domain</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.property.tpspDiskEncrypted">tpsp_disk_encrypted</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.property.tpspDiskEncrypted">tpsp_disk_encrypted</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.property.tpspKeyTrustLevel">tpsp_key_trust_level</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.property.tpspOsFirewall">tpsp_os_firewall</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.property.tpspOsFirewall">tpsp_os_firewall</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.property.tpspOsVersion">tpsp_os_version</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.property.tpspPasswordProctectionWarningTrigger">tpsp_password_proctection_warning_trigger</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.property.tpspRealtimeUrlCheckMode">tpsp_realtime_url_check_mode</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.property.tpspRealtimeUrlCheckMode">tpsp_realtime_url_check_mode</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.property.tpspSafeBrowsingProtectionLevel">tpsp_safe_browsing_protection_level</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.property.tpspScreenLockSecured">tpsp_screen_lock_secured</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.property.tpspSiteIsolationEnabled">tpsp_site_isolation_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.property.tpspScreenLockSecured">tpsp_screen_lock_secured</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.property.tpspSiteIsolationEnabled">tpsp_site_isolation_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 
 ---
 
@@ -989,20 +989,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1049,10 +1049,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1129,10 +1129,10 @@ name_input: str
 ##### `tpsp_allow_screen_lock_input`<sup>Optional</sup> <a name="tpsp_allow_screen_lock_input" id="@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.property.tpspAllowScreenLockInput"></a>
 
 ```python
-tpsp_allow_screen_lock_input: typing.Union[bool, IResolvable]
+tpsp_allow_screen_lock_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1149,20 +1149,20 @@ tpsp_browser_version_input: str
 ##### `tpsp_builtin_dns_client_enabled_input`<sup>Optional</sup> <a name="tpsp_builtin_dns_client_enabled_input" id="@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.property.tpspBuiltinDnsClientEnabledInput"></a>
 
 ```python
-tpsp_builtin_dns_client_enabled_input: typing.Union[bool, IResolvable]
+tpsp_builtin_dns_client_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `tpsp_chrome_remote_desktop_app_blocked_input`<sup>Optional</sup> <a name="tpsp_chrome_remote_desktop_app_blocked_input" id="@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.property.tpspChromeRemoteDesktopAppBlockedInput"></a>
 
 ```python
-tpsp_chrome_remote_desktop_app_blocked_input: typing.Union[bool, IResolvable]
+tpsp_chrome_remote_desktop_app_blocked_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1179,10 +1179,10 @@ tpsp_device_enrollment_domain_input: str
 ##### `tpsp_disk_encrypted_input`<sup>Optional</sup> <a name="tpsp_disk_encrypted_input" id="@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.property.tpspDiskEncryptedInput"></a>
 
 ```python
-tpsp_disk_encrypted_input: typing.Union[bool, IResolvable]
+tpsp_disk_encrypted_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1199,10 +1199,10 @@ tpsp_key_trust_level_input: str
 ##### `tpsp_os_firewall_input`<sup>Optional</sup> <a name="tpsp_os_firewall_input" id="@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.property.tpspOsFirewallInput"></a>
 
 ```python
-tpsp_os_firewall_input: typing.Union[bool, IResolvable]
+tpsp_os_firewall_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1229,10 +1229,10 @@ tpsp_password_proctection_warning_trigger_input: str
 ##### `tpsp_realtime_url_check_mode_input`<sup>Optional</sup> <a name="tpsp_realtime_url_check_mode_input" id="@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.property.tpspRealtimeUrlCheckModeInput"></a>
 
 ```python
-tpsp_realtime_url_check_mode_input: typing.Union[bool, IResolvable]
+tpsp_realtime_url_check_mode_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1249,20 +1249,20 @@ tpsp_safe_browsing_protection_level_input: str
 ##### `tpsp_screen_lock_secured_input`<sup>Optional</sup> <a name="tpsp_screen_lock_secured_input" id="@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.property.tpspScreenLockSecuredInput"></a>
 
 ```python
-tpsp_screen_lock_secured_input: typing.Union[bool, IResolvable]
+tpsp_screen_lock_secured_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `tpsp_site_isolation_enabled_input`<sup>Optional</sup> <a name="tpsp_site_isolation_enabled_input" id="@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.property.tpspSiteIsolationEnabledInput"></a>
 
 ```python
-tpsp_site_isolation_enabled_input: typing.Union[bool, IResolvable]
+tpsp_site_isolation_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1279,10 +1279,10 @@ name: str
 ##### `tpsp_allow_screen_lock`<sup>Required</sup> <a name="tpsp_allow_screen_lock" id="@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.property.tpspAllowScreenLock"></a>
 
 ```python
-tpsp_allow_screen_lock: typing.Union[bool, IResolvable]
+tpsp_allow_screen_lock: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1299,20 +1299,20 @@ tpsp_browser_version: str
 ##### `tpsp_builtin_dns_client_enabled`<sup>Required</sup> <a name="tpsp_builtin_dns_client_enabled" id="@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.property.tpspBuiltinDnsClientEnabled"></a>
 
 ```python
-tpsp_builtin_dns_client_enabled: typing.Union[bool, IResolvable]
+tpsp_builtin_dns_client_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `tpsp_chrome_remote_desktop_app_blocked`<sup>Required</sup> <a name="tpsp_chrome_remote_desktop_app_blocked" id="@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.property.tpspChromeRemoteDesktopAppBlocked"></a>
 
 ```python
-tpsp_chrome_remote_desktop_app_blocked: typing.Union[bool, IResolvable]
+tpsp_chrome_remote_desktop_app_blocked: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1329,10 +1329,10 @@ tpsp_device_enrollment_domain: str
 ##### `tpsp_disk_encrypted`<sup>Required</sup> <a name="tpsp_disk_encrypted" id="@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.property.tpspDiskEncrypted"></a>
 
 ```python
-tpsp_disk_encrypted: typing.Union[bool, IResolvable]
+tpsp_disk_encrypted: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1349,10 +1349,10 @@ tpsp_key_trust_level: str
 ##### `tpsp_os_firewall`<sup>Required</sup> <a name="tpsp_os_firewall" id="@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.property.tpspOsFirewall"></a>
 
 ```python
-tpsp_os_firewall: typing.Union[bool, IResolvable]
+tpsp_os_firewall: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1379,10 +1379,10 @@ tpsp_password_proctection_warning_trigger: str
 ##### `tpsp_realtime_url_check_mode`<sup>Required</sup> <a name="tpsp_realtime_url_check_mode" id="@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.property.tpspRealtimeUrlCheckMode"></a>
 
 ```python
-tpsp_realtime_url_check_mode: typing.Union[bool, IResolvable]
+tpsp_realtime_url_check_mode: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1399,20 +1399,20 @@ tpsp_safe_browsing_protection_level: str
 ##### `tpsp_screen_lock_secured`<sup>Required</sup> <a name="tpsp_screen_lock_secured" id="@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.property.tpspScreenLockSecured"></a>
 
 ```python
-tpsp_screen_lock_secured: typing.Union[bool, IResolvable]
+tpsp_screen_lock_secured: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `tpsp_site_isolation_enabled`<sup>Required</sup> <a name="tpsp_site_isolation_enabled" id="@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeos.property.tpspSiteIsolationEnabled"></a>
 
 ```python
-tpsp_site_isolation_enabled: typing.Union[bool, IResolvable]
+tpsp_site_isolation_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1444,28 +1444,28 @@ tfResourceType: str
 from cdktf_cdktf_provider_okta import policy_device_assurance_chromeos
 
 policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeosConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   name: str,
-  tpsp_allow_screen_lock: typing.Union[bool, IResolvable] = None,
+  tpsp_allow_screen_lock: bool | IResolvable = None,
   tpsp_browser_version: str = None,
-  tpsp_builtin_dns_client_enabled: typing.Union[bool, IResolvable] = None,
-  tpsp_chrome_remote_desktop_app_blocked: typing.Union[bool, IResolvable] = None,
+  tpsp_builtin_dns_client_enabled: bool | IResolvable = None,
+  tpsp_chrome_remote_desktop_app_blocked: bool | IResolvable = None,
   tpsp_device_enrollment_domain: str = None,
-  tpsp_disk_encrypted: typing.Union[bool, IResolvable] = None,
+  tpsp_disk_encrypted: bool | IResolvable = None,
   tpsp_key_trust_level: str = None,
-  tpsp_os_firewall: typing.Union[bool, IResolvable] = None,
+  tpsp_os_firewall: bool | IResolvable = None,
   tpsp_os_version: str = None,
   tpsp_password_proctection_warning_trigger: str = None,
-  tpsp_realtime_url_check_mode: typing.Union[bool, IResolvable] = None,
+  tpsp_realtime_url_check_mode: bool | IResolvable = None,
   tpsp_safe_browsing_protection_level: str = None,
-  tpsp_screen_lock_secured: typing.Union[bool, IResolvable] = None,
-  tpsp_site_isolation_enabled: typing.Union[bool, IResolvable] = None
+  tpsp_screen_lock_secured: bool | IResolvable = None,
+  tpsp_site_isolation_enabled: bool | IResolvable = None
 )
 ```
 
@@ -1473,48 +1473,48 @@ policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeosConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeosConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeosConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeosConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeosConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeosConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeosConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeosConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeosConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeosConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeosConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeosConfig.property.name">name</a></code> | <code>str</code> | Name of the device assurance policy. |
-| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeosConfig.property.tpspAllowScreenLock">tpsp_allow_screen_lock</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Third party signal provider allow screen lock. |
+| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeosConfig.property.tpspAllowScreenLock">tpsp_allow_screen_lock</a></code> | <code>bool \| cdktf.IResolvable</code> | Third party signal provider allow screen lock. |
 | <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeosConfig.property.tpspBrowserVersion">tpsp_browser_version</a></code> | <code>str</code> | Third party signal provider minimum browser version. |
-| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeosConfig.property.tpspBuiltinDnsClientEnabled">tpsp_builtin_dns_client_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Third party signal provider builtin dns client enabled. |
-| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeosConfig.property.tpspChromeRemoteDesktopAppBlocked">tpsp_chrome_remote_desktop_app_blocked</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Third party signal provider chrome remote desktop app blocked. |
+| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeosConfig.property.tpspBuiltinDnsClientEnabled">tpsp_builtin_dns_client_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Third party signal provider builtin dns client enabled. |
+| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeosConfig.property.tpspChromeRemoteDesktopAppBlocked">tpsp_chrome_remote_desktop_app_blocked</a></code> | <code>bool \| cdktf.IResolvable</code> | Third party signal provider chrome remote desktop app blocked. |
 | <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeosConfig.property.tpspDeviceEnrollmentDomain">tpsp_device_enrollment_domain</a></code> | <code>str</code> | Third party signal provider device enrollment domain. |
-| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeosConfig.property.tpspDiskEncrypted">tpsp_disk_encrypted</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Third party signal provider disk encrypted. |
+| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeosConfig.property.tpspDiskEncrypted">tpsp_disk_encrypted</a></code> | <code>bool \| cdktf.IResolvable</code> | Third party signal provider disk encrypted. |
 | <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeosConfig.property.tpspKeyTrustLevel">tpsp_key_trust_level</a></code> | <code>str</code> | Third party signal provider key trust level. |
-| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeosConfig.property.tpspOsFirewall">tpsp_os_firewall</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Third party signal provider os firewall. |
+| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeosConfig.property.tpspOsFirewall">tpsp_os_firewall</a></code> | <code>bool \| cdktf.IResolvable</code> | Third party signal provider os firewall. |
 | <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeosConfig.property.tpspOsVersion">tpsp_os_version</a></code> | <code>str</code> | Third party signal provider minimum os version. |
 | <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeosConfig.property.tpspPasswordProctectionWarningTrigger">tpsp_password_proctection_warning_trigger</a></code> | <code>str</code> | Third party signal provider password protection warning trigger. |
-| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeosConfig.property.tpspRealtimeUrlCheckMode">tpsp_realtime_url_check_mode</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Third party signal provider realtime url check mode. |
+| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeosConfig.property.tpspRealtimeUrlCheckMode">tpsp_realtime_url_check_mode</a></code> | <code>bool \| cdktf.IResolvable</code> | Third party signal provider realtime url check mode. |
 | <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeosConfig.property.tpspSafeBrowsingProtectionLevel">tpsp_safe_browsing_protection_level</a></code> | <code>str</code> | Third party signal provider safe browsing protection level. |
-| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeosConfig.property.tpspScreenLockSecured">tpsp_screen_lock_secured</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Third party signal provider screen lock secure. |
-| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeosConfig.property.tpspSiteIsolationEnabled">tpsp_site_isolation_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Third party signal provider site isolation enabled. |
+| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeosConfig.property.tpspScreenLockSecured">tpsp_screen_lock_secured</a></code> | <code>bool \| cdktf.IResolvable</code> | Third party signal provider screen lock secure. |
+| <code><a href="#@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeosConfig.property.tpspSiteIsolationEnabled">tpsp_site_isolation_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Third party signal provider site isolation enabled. |
 
 ---
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeosConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeosConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1561,10 +1561,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeosConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1585,10 +1585,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 ##### `tpsp_allow_screen_lock`<sup>Optional</sup> <a name="tpsp_allow_screen_lock" id="@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeosConfig.property.tpspAllowScreenLock"></a>
 
 ```python
-tpsp_allow_screen_lock: typing.Union[bool, IResolvable]
+tpsp_allow_screen_lock: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Third party signal provider allow screen lock.
 
@@ -1613,10 +1613,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 ##### `tpsp_builtin_dns_client_enabled`<sup>Optional</sup> <a name="tpsp_builtin_dns_client_enabled" id="@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeosConfig.property.tpspBuiltinDnsClientEnabled"></a>
 
 ```python
-tpsp_builtin_dns_client_enabled: typing.Union[bool, IResolvable]
+tpsp_builtin_dns_client_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Third party signal provider builtin dns client enabled.
 
@@ -1627,10 +1627,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 ##### `tpsp_chrome_remote_desktop_app_blocked`<sup>Optional</sup> <a name="tpsp_chrome_remote_desktop_app_blocked" id="@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeosConfig.property.tpspChromeRemoteDesktopAppBlocked"></a>
 
 ```python
-tpsp_chrome_remote_desktop_app_blocked: typing.Union[bool, IResolvable]
+tpsp_chrome_remote_desktop_app_blocked: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Third party signal provider chrome remote desktop app blocked.
 
@@ -1655,10 +1655,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 ##### `tpsp_disk_encrypted`<sup>Optional</sup> <a name="tpsp_disk_encrypted" id="@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeosConfig.property.tpspDiskEncrypted"></a>
 
 ```python
-tpsp_disk_encrypted: typing.Union[bool, IResolvable]
+tpsp_disk_encrypted: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Third party signal provider disk encrypted.
 
@@ -1683,10 +1683,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 ##### `tpsp_os_firewall`<sup>Optional</sup> <a name="tpsp_os_firewall" id="@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeosConfig.property.tpspOsFirewall"></a>
 
 ```python
-tpsp_os_firewall: typing.Union[bool, IResolvable]
+tpsp_os_firewall: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Third party signal provider os firewall.
 
@@ -1725,10 +1725,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 ##### `tpsp_realtime_url_check_mode`<sup>Optional</sup> <a name="tpsp_realtime_url_check_mode" id="@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeosConfig.property.tpspRealtimeUrlCheckMode"></a>
 
 ```python
-tpsp_realtime_url_check_mode: typing.Union[bool, IResolvable]
+tpsp_realtime_url_check_mode: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Third party signal provider realtime url check mode.
 
@@ -1753,10 +1753,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 ##### `tpsp_screen_lock_secured`<sup>Optional</sup> <a name="tpsp_screen_lock_secured" id="@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeosConfig.property.tpspScreenLockSecured"></a>
 
 ```python
-tpsp_screen_lock_secured: typing.Union[bool, IResolvable]
+tpsp_screen_lock_secured: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Third party signal provider screen lock secure.
 
@@ -1767,10 +1767,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 ##### `tpsp_site_isolation_enabled`<sup>Optional</sup> <a name="tpsp_site_isolation_enabled" id="@cdktf/provider-okta.policyDeviceAssuranceChromeos.PolicyDeviceAssuranceChromeosConfig.property.tpspSiteIsolationEnabled"></a>
 
 ```python
-tpsp_site_isolation_enabled: typing.Union[bool, IResolvable]
+tpsp_site_isolation_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Third party signal provider site isolation enabled.
 

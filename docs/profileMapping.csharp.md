@@ -278,7 +278,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-okta.profileMapping.ProfileMapping.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-okta.profileMapping.ProfileMapping.importFrom"></a>
@@ -332,7 +332,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-okta.profileMapping.ProfileMapping.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -347,7 +347,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-okta.profileMapping.ProfileMapping.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -372,12 +372,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `PutMappings` <a name="PutMappings" id="@cdktf/provider-okta.profileMapping.ProfileMapping.putMappings"></a>
 
 ```csharp
-private void PutMappings(object Value)
+private void PutMappings(IResolvable|ProfileMappingMappings[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-okta.profileMapping.ProfileMapping.putMappings.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-okta.profileMapping.ProfileMappingMappings">ProfileMappingMappings</a>[]
 
 ---
 
@@ -531,26 +531,26 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.property.mappings">Mappings</a></code> | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingMappingsList">ProfileMappingMappingsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.property.sourceName">SourceName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.property.sourceType">SourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.property.targetName">TargetName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.property.targetType">TargetType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.property.alwaysApplyInput">AlwaysApplyInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.property.deleteWhenAbsentInput">DeleteWhenAbsentInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.property.alwaysApplyInput">AlwaysApplyInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.property.deleteWhenAbsentInput">DeleteWhenAbsentInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.property.mappingsInput">MappingsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.property.mappingsInput">MappingsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-okta.profileMapping.ProfileMappingMappings">ProfileMappingMappings</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.property.sourceIdInput">SourceIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.property.targetIdInput">TargetIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.property.alwaysApply">AlwaysApply</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.property.deleteWhenAbsent">DeleteWhenAbsent</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.property.alwaysApply">AlwaysApply</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.property.deleteWhenAbsent">DeleteWhenAbsent</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.property.sourceId">SourceId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.property.targetId">TargetId</a></code> | <code>string</code> | *No description.* |
@@ -632,20 +632,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-okta.profileMapping.ProfileMapping.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.profileMapping.ProfileMapping.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -692,10 +692,10 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-okta.profileMapping.ProfileMapping.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -752,20 +752,20 @@ public string TargetType { get; }
 ##### `AlwaysApplyInput`<sup>Optional</sup> <a name="AlwaysApplyInput" id="@cdktf/provider-okta.profileMapping.ProfileMapping.property.alwaysApplyInput"></a>
 
 ```csharp
-public object AlwaysApplyInput { get; }
+public bool|IResolvable AlwaysApplyInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `DeleteWhenAbsentInput`<sup>Optional</sup> <a name="DeleteWhenAbsentInput" id="@cdktf/provider-okta.profileMapping.ProfileMapping.property.deleteWhenAbsentInput"></a>
 
 ```csharp
-public object DeleteWhenAbsentInput { get; }
+public bool|IResolvable DeleteWhenAbsentInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -782,10 +782,10 @@ public string IdInput { get; }
 ##### `MappingsInput`<sup>Optional</sup> <a name="MappingsInput" id="@cdktf/provider-okta.profileMapping.ProfileMapping.property.mappingsInput"></a>
 
 ```csharp
-public object MappingsInput { get; }
+public IResolvable|ProfileMappingMappings[] MappingsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-okta.profileMapping.ProfileMappingMappings">ProfileMappingMappings</a>[]
 
 ---
 
@@ -812,20 +812,20 @@ public string TargetIdInput { get; }
 ##### `AlwaysApply`<sup>Required</sup> <a name="AlwaysApply" id="@cdktf/provider-okta.profileMapping.ProfileMapping.property.alwaysApply"></a>
 
 ```csharp
-public object AlwaysApply { get; }
+public bool|IResolvable AlwaysApply { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `DeleteWhenAbsent`<sup>Required</sup> <a name="DeleteWhenAbsent" id="@cdktf/provider-okta.profileMapping.ProfileMapping.property.deleteWhenAbsent"></a>
 
 ```csharp
-public object DeleteWhenAbsent { get; }
+public bool|IResolvable DeleteWhenAbsent { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -887,19 +887,19 @@ public string TfResourceType { get; }
 using HashiCorp.Cdktf.Providers.Okta;
 
 new ProfileMappingConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string SourceId,
     string TargetId,
-    object AlwaysApply = null,
-    object DeleteWhenAbsent = null,
+    bool|IResolvable AlwaysApply = null,
+    bool|IResolvable DeleteWhenAbsent = null,
     string Id = null,
-    object Mappings = null
+    IResolvable|ProfileMappingMappings[] Mappings = null
 };
 ```
 
@@ -907,39 +907,39 @@ new ProfileMappingConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingConfig.property.sourceId">SourceId</a></code> | <code>string</code> | The source id of the mapping to manage. |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingConfig.property.targetId">TargetId</a></code> | <code>string</code> | The target id of the mapping to manage. |
-| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingConfig.property.alwaysApply">AlwaysApply</a></code> | <code>object</code> | Whether apply the changes to all users with this profile after updating or creating the these mappings. |
-| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingConfig.property.deleteWhenAbsent">DeleteWhenAbsent</a></code> | <code>object</code> | When turned on this flag will trigger the provider to delete mapping properties that are not defined in config. |
+| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingConfig.property.alwaysApply">AlwaysApply</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether apply the changes to all users with this profile after updating or creating the these mappings. |
+| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingConfig.property.deleteWhenAbsent">DeleteWhenAbsent</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | When turned on this flag will trigger the provider to delete mapping properties that are not defined in config. |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/profile_mapping#id ProfileMapping#id}. |
-| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingConfig.property.mappings">Mappings</a></code> | <code>object</code> | mappings block. |
+| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingConfig.property.mappings">Mappings</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-okta.profileMapping.ProfileMappingMappings">ProfileMappingMappings</a>[]</code> | mappings block. |
 
 ---
 
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-okta.profileMapping.ProfileMappingConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.profileMapping.ProfileMappingConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -986,10 +986,10 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-okta.profileMapping.ProfileMappingConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -1024,10 +1024,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 ##### `AlwaysApply`<sup>Optional</sup> <a name="AlwaysApply" id="@cdktf/provider-okta.profileMapping.ProfileMappingConfig.property.alwaysApply"></a>
 
 ```csharp
-public object AlwaysApply { get; set; }
+public bool|IResolvable AlwaysApply { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether apply the changes to all users with this profile after updating or creating the these mappings.
 
@@ -1041,10 +1041,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 ##### `DeleteWhenAbsent`<sup>Optional</sup> <a name="DeleteWhenAbsent" id="@cdktf/provider-okta.profileMapping.ProfileMappingConfig.property.deleteWhenAbsent"></a>
 
 ```csharp
-public object DeleteWhenAbsent { get; set; }
+public bool|IResolvable DeleteWhenAbsent { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 When turned on this flag will trigger the provider to delete mapping properties that are not defined in config.
 
@@ -1072,10 +1072,10 @@ If you experience problems setting this value it might not be settable. Please t
 ##### `Mappings`<sup>Optional</sup> <a name="Mappings" id="@cdktf/provider-okta.profileMapping.ProfileMappingConfig.property.mappings"></a>
 
 ```csharp
-public object Mappings { get; set; }
+public IResolvable|ProfileMappingMappings[] Mappings { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-okta.profileMapping.ProfileMappingMappings">ProfileMappingMappings</a>[]
 
 mappings block.
 
@@ -1271,7 +1271,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingMappingsList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingMappingsList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingMappingsList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingMappingsList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-okta.profileMapping.ProfileMappingMappings">ProfileMappingMappings</a>[]</code> | *No description.* |
 
 ---
 
@@ -1302,10 +1302,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-okta.profileMapping.ProfileMappingMappingsList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ProfileMappingMappings[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-okta.profileMapping.ProfileMappingMappings">ProfileMappingMappings</a>[]
 
 ---
 
@@ -1551,7 +1551,7 @@ private void ResetPushStatus()
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingMappingsOutputReference.property.expression">Expression</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingMappingsOutputReference.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingMappingsOutputReference.property.pushStatus">PushStatus</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingMappingsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingMappingsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-okta.profileMapping.ProfileMappingMappings">ProfileMappingMappings</a></code> | *No description.* |
 
 ---
 
@@ -1642,10 +1642,10 @@ public string PushStatus { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-okta.profileMapping.ProfileMappingMappingsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ProfileMappingMappings InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-okta.profileMapping.ProfileMappingMappings">ProfileMappingMappings</a>
 
 ---
 

@@ -14,19 +14,19 @@ from cdktf_cdktf_provider_okta import group_rule
 groupRule.GroupRule(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   expression_value: str,
   group_assignments: typing.List[str],
   name: str,
   expression_type: str = None,
   id: str = None,
-  remove_assigned_users: typing.Union[bool, IResolvable] = None,
+  remove_assigned_users: bool | IResolvable = None,
   status: str = None,
   users_excluded: typing.List[str] = None
 )
@@ -36,19 +36,19 @@ groupRule.GroupRule(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.Initializer.parameter.expressionValue">expression_value</a></code> | <code>str</code> | The expression value. |
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.Initializer.parameter.groupAssignments">group_assignments</a></code> | <code>typing.List[str]</code> | The list of group ids to assign the users to. |
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.Initializer.parameter.name">name</a></code> | <code>str</code> | The name of the Group Rule (min character 1; max characters 50). |
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.Initializer.parameter.expressionType">expression_type</a></code> | <code>str</code> | The expression type to use to invoke the rule. The default is `urn:okta:expression:1.0`. |
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/group_rule#id GroupRule#id}. |
-| <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.Initializer.parameter.removeAssignedUsers">remove_assigned_users</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Remove users added by this rule from the assigned group after deleting this resource. Default is `false`. |
+| <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.Initializer.parameter.removeAssignedUsers">remove_assigned_users</a></code> | <code>bool \| cdktf.IResolvable</code> | Remove users added by this rule from the assigned group after deleting this resource. Default is `false`. |
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.Initializer.parameter.status">status</a></code> | <code>str</code> | Default to `ACTIVE`. |
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.Initializer.parameter.usersExcluded">users_excluded</a></code> | <code>typing.List[str]</code> | The list of user IDs that would be excluded when rules are processed. |
 
@@ -74,13 +74,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-okta.groupRule.GroupRule.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.groupRule.GroupRule.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-okta.groupRule.GroupRule.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -167,7 +167,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ##### `remove_assigned_users`<sup>Optional</sup> <a name="remove_assigned_users" id="@cdktf/provider-okta.groupRule.GroupRule.Initializer.parameter.removeAssignedUsers"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Remove users added by this rule from the assigned group after deleting this resource. Default is `false`.
 
@@ -452,7 +452,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-okta.groupRule.GroupRule.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-okta.groupRule.GroupRule.importFrom"></a>
@@ -515,7 +515,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -531,7 +531,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-okta.groupRule.GroupRule.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -722,19 +722,19 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.property.expressionTypeInput">expression_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.property.expressionValueInput">expression_value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.property.groupAssignmentsInput">group_assignments_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.property.removeAssignedUsersInput">remove_assigned_users_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.property.removeAssignedUsersInput">remove_assigned_users_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.property.statusInput">status_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.property.usersExcludedInput">users_excluded_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.property.expressionType">expression_type</a></code> | <code>str</code> | *No description.* |
@@ -742,7 +742,7 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.property.groupAssignments">group_assignments</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.property.removeAssignedUsers">remove_assigned_users</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.property.removeAssignedUsers">remove_assigned_users</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.property.status">status</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.property.usersExcluded">users_excluded</a></code> | <code>typing.List[str]</code> | *No description.* |
 
@@ -823,20 +823,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-okta.groupRule.GroupRule.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.groupRule.GroupRule.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -883,10 +883,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-okta.groupRule.GroupRule.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -943,10 +943,10 @@ name_input: str
 ##### `remove_assigned_users_input`<sup>Optional</sup> <a name="remove_assigned_users_input" id="@cdktf/provider-okta.groupRule.GroupRule.property.removeAssignedUsersInput"></a>
 
 ```python
-remove_assigned_users_input: typing.Union[bool, IResolvable]
+remove_assigned_users_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1023,10 +1023,10 @@ name: str
 ##### `remove_assigned_users`<sup>Required</sup> <a name="remove_assigned_users" id="@cdktf/provider-okta.groupRule.GroupRule.property.removeAssignedUsers"></a>
 
 ```python
-remove_assigned_users: typing.Union[bool, IResolvable]
+remove_assigned_users: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1078,19 +1078,19 @@ tfResourceType: str
 from cdktf_cdktf_provider_okta import group_rule
 
 groupRule.GroupRuleConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   expression_value: str,
   group_assignments: typing.List[str],
   name: str,
   expression_type: str = None,
   id: str = None,
-  remove_assigned_users: typing.Union[bool, IResolvable] = None,
+  remove_assigned_users: bool | IResolvable = None,
   status: str = None,
   users_excluded: typing.List[str] = None
 )
@@ -1100,19 +1100,19 @@ groupRule.GroupRuleConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.groupRule.GroupRuleConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.groupRule.GroupRuleConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.groupRule.GroupRuleConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.groupRule.GroupRuleConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRuleConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRuleConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRuleConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRuleConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.groupRule.GroupRuleConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.groupRule.GroupRuleConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRuleConfig.property.expressionValue">expression_value</a></code> | <code>str</code> | The expression value. |
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRuleConfig.property.groupAssignments">group_assignments</a></code> | <code>typing.List[str]</code> | The list of group ids to assign the users to. |
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRuleConfig.property.name">name</a></code> | <code>str</code> | The name of the Group Rule (min character 1; max characters 50). |
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRuleConfig.property.expressionType">expression_type</a></code> | <code>str</code> | The expression type to use to invoke the rule. The default is `urn:okta:expression:1.0`. |
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRuleConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/group_rule#id GroupRule#id}. |
-| <code><a href="#@cdktf/provider-okta.groupRule.GroupRuleConfig.property.removeAssignedUsers">remove_assigned_users</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Remove users added by this rule from the assigned group after deleting this resource. Default is `false`. |
+| <code><a href="#@cdktf/provider-okta.groupRule.GroupRuleConfig.property.removeAssignedUsers">remove_assigned_users</a></code> | <code>bool \| cdktf.IResolvable</code> | Remove users added by this rule from the assigned group after deleting this resource. Default is `false`. |
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRuleConfig.property.status">status</a></code> | <code>str</code> | Default to `ACTIVE`. |
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRuleConfig.property.usersExcluded">users_excluded</a></code> | <code>typing.List[str]</code> | The list of user IDs that would be excluded when rules are processed. |
 
@@ -1121,20 +1121,20 @@ groupRule.GroupRuleConfig(
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-okta.groupRule.GroupRuleConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.groupRule.GroupRuleConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1181,10 +1181,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-okta.groupRule.GroupRuleConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1262,10 +1262,10 @@ If you experience problems setting this value it might not be settable. Please t
 ##### `remove_assigned_users`<sup>Optional</sup> <a name="remove_assigned_users" id="@cdktf/provider-okta.groupRule.GroupRuleConfig.property.removeAssignedUsers"></a>
 
 ```python
-remove_assigned_users: typing.Union[bool, IResolvable]
+remove_assigned_users: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Remove users added by this rule from the assigned group after deleting this resource. Default is `false`.
 

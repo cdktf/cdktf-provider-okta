@@ -12,31 +12,25 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 import com.hashicorp.cdktf.providers.okta.policy_mfa.PolicyMfa;
 
 PolicyMfa.Builder.create(Construct scope, java.lang.String id)
-//  .connection(SSHProvisionerConnection)
-//  .connection(WinrmProvisionerConnection)
-//  .count(java.lang.Number)
-//  .count(TerraformCount)
+//  .connection(SSHProvisionerConnection|WinrmProvisionerConnection)
+//  .count(java.lang.Number|TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
-//  .provisioners(java.util.List<FileProvisioner)
-//  .provisioners(LocalExecProvisioner)
-//  .provisioners(RemoteExecProvisioner>)
+//  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .name(java.lang.String)
 //  .description(java.lang.String)
 //  .duo(java.util.Map<java.lang.String, java.lang.String>)
 //  .externalIdp(java.util.Map<java.lang.String, java.lang.String>)
-//  .externalIdps(IResolvable)
-//  .externalIdps(java.util.List<java.util.Map<java.lang.String, java.lang.String>>)
+//  .externalIdps(IResolvable|java.util.List<java.util.Map<java.lang.String, java.lang.String>>)
 //  .fidoU2F(java.util.Map<java.lang.String, java.lang.String>)
 //  .fidoWebauthn(java.util.Map<java.lang.String, java.lang.String>)
 //  .googleOtp(java.util.Map<java.lang.String, java.lang.String>)
 //  .groupsIncluded(java.util.List<java.lang.String>)
 //  .hotp(java.util.Map<java.lang.String, java.lang.String>)
 //  .id(java.lang.String)
-//  .isOie(java.lang.Boolean)
-//  .isOie(IResolvable)
+//  .isOie(java.lang.Boolean|IResolvable)
 //  .oktaCall(java.util.Map<java.lang.String, java.lang.String>)
 //  .oktaEmail(java.util.Map<java.lang.String, java.lang.String>)
 //  .oktaOtp(java.util.Map<java.lang.String, java.lang.String>)
@@ -62,25 +56,25 @@ PolicyMfa.Builder.create(Construct scope, java.lang.String id)
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.Initializer.parameter.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Policy Name. |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Policy Description. |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.Initializer.parameter.duo">duo</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/policy_mfa#duo PolicyMfa#duo}. |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.Initializer.parameter.externalIdp">externalIdp</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/policy_mfa#external_idp PolicyMfa#external_idp}. |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.Initializer.parameter.externalIdps">externalIdps</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<java.util.Map<java.lang.String, java.lang.String>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/policy_mfa#external_idps PolicyMfa#external_idps}. |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.Initializer.parameter.externalIdps">externalIdps</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<java.util.Map<java.lang.String, java.lang.String>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/policy_mfa#external_idps PolicyMfa#external_idps}. |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.Initializer.parameter.fidoU2F">fidoU2F</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/policy_mfa#fido_u2f PolicyMfa#fido_u2f}. |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.Initializer.parameter.fidoWebauthn">fidoWebauthn</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/policy_mfa#fido_webauthn PolicyMfa#fido_webauthn}. |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.Initializer.parameter.googleOtp">googleOtp</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/policy_mfa#google_otp PolicyMfa#google_otp}. |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.Initializer.parameter.groupsIncluded">groupsIncluded</a></code> | <code>java.util.List<java.lang.String></code> | List of Group IDs to Include. |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.Initializer.parameter.hotp">hotp</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/policy_mfa#hotp PolicyMfa#hotp}. |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/policy_mfa#id PolicyMfa#id}. |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.Initializer.parameter.isOie">isOie</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Is the policy using Okta Identity Engine (OIE) with authenticators instead of factors? |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.Initializer.parameter.isOie">isOie</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Is the policy using Okta Identity Engine (OIE) with authenticators instead of factors? |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.Initializer.parameter.oktaCall">oktaCall</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/policy_mfa#okta_call PolicyMfa#okta_call}. |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.Initializer.parameter.oktaEmail">oktaEmail</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/policy_mfa#okta_email PolicyMfa#okta_email}. |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.Initializer.parameter.oktaOtp">oktaOtp</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/policy_mfa#okta_otp PolicyMfa#okta_otp}. |
@@ -122,13 +116,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-okta.policyMfa.PolicyMfa.Initializer.parameter.connection"></a>
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.policyMfa.PolicyMfa.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -158,7 +152,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-okta.policyMfa.PolicyMfa.Initializer.parameter.provisioners"></a>
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -200,7 +194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 ##### `externalIdps`<sup>Optional</sup> <a name="externalIdps" id="@cdktf/provider-okta.policyMfa.PolicyMfa.Initializer.parameter.externalIdps"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<java.util.Map<java.lang.String, java.lang.String>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<java.util.Map<java.lang.String, java.lang.String>>
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/policy_mfa#external_idps PolicyMfa#external_idps}.
 
@@ -261,7 +255,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ##### `isOie`<sup>Optional</sup> <a name="isOie" id="@cdktf/provider-okta.policyMfa.PolicyMfa.Initializer.parameter.isOie"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Is the policy using Okta Identity Engine (OIE) with authenticators instead of factors?
 
@@ -675,7 +669,7 @@ public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(j
 ##### `hasResourceMove` <a name="hasResourceMove" id="@cdktf/provider-okta.policyMfa.PolicyMfa.hasResourceMove"></a>
 
 ```java
-public TerraformResourceMoveByTarget OR TerraformResourceMoveById hasResourceMove()
+public TerraformResourceMoveByTarget|TerraformResourceMoveById hasResourceMove()
 ```
 
 ##### `importFrom` <a name="importFrom" id="@cdktf/provider-okta.policyMfa.PolicyMfa.importFrom"></a>
@@ -731,7 +725,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ```java
 public void moveTo(java.lang.String moveTarget)
-public void moveTo(java.lang.String moveTarget, java.lang.String OR java.lang.Number index)
+public void moveTo(java.lang.String moveTarget, java.lang.String|java.lang.Number index)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -746,7 +740,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-okta.policyMfa.PolicyMfa.moveTo.parameter.index"></a>
 
-- *Type:* java.lang.String OR java.lang.Number
+- *Type:* java.lang.String|java.lang.Number
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -1068,24 +1062,24 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>java.util.Map<java.lang.String, java.lang.Object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.descriptionInput">descriptionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.duoInput">duoInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.externalIdpInput">externalIdpInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.externalIdpsInput">externalIdpsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<java.util.Map<java.lang.String, java.lang.String>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.externalIdpsInput">externalIdpsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<java.util.Map<java.lang.String, java.lang.String>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.fidoU2FInput">fidoU2FInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.fidoWebauthnInput">fidoWebauthnInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.googleOtpInput">googleOtpInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.groupsIncludedInput">groupsIncludedInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.hotpInput">hotpInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.isOieInput">isOieInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.isOieInput">isOieInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.oktaCallInput">oktaCallInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.oktaEmailInput">oktaEmailInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
@@ -1108,14 +1102,14 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.description">description</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.duo">duo</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.externalIdp">externalIdp</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.externalIdps">externalIdps</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<java.util.Map<java.lang.String, java.lang.String>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.externalIdps">externalIdps</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<java.util.Map<java.lang.String, java.lang.String>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.fidoU2F">fidoU2F</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.fidoWebauthn">fidoWebauthn</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.googleOtp">googleOtp</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.groupsIncluded">groupsIncluded</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.hotp">hotp</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.isOie">isOie</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.isOie">isOie</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.oktaCall">oktaCall</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.oktaEmail">oktaEmail</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
@@ -1213,20 +1207,20 @@ public TerraformProviderGeneratorMetadata getTerraformGeneratorMetadata();
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-okta.policyMfa.PolicyMfa.property.connection"></a>
 
 ```java
-public java.lang.Object getConnection();
+public SSHProvisionerConnection|WinrmProvisionerConnection getConnection();
 ```
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.policyMfa.PolicyMfa.property.count"></a>
 
 ```java
-public java.lang.Object getCount();
+public java.lang.Number|TerraformCount getCount();
 ```
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -1273,10 +1267,10 @@ public TerraformProvider getProvider();
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-okta.policyMfa.PolicyMfa.property.provisioners"></a>
 
 ```java
-public java.lang.Object getProvisioners();
+public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner> getProvisioners();
 ```
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -1313,10 +1307,10 @@ public java.util.Map<java.lang.String, java.lang.String> getExternalIdpInput();
 ##### `externalIdpsInput`<sup>Optional</sup> <a name="externalIdpsInput" id="@cdktf/provider-okta.policyMfa.PolicyMfa.property.externalIdpsInput"></a>
 
 ```java
-public java.lang.Object getExternalIdpsInput();
+public IResolvable|java.util.List<java.util.Map<java.lang.String, java.lang.String>> getExternalIdpsInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<java.util.Map<java.lang.String, java.lang.String>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<java.util.Map<java.lang.String, java.lang.String>>
 
 ---
 
@@ -1383,10 +1377,10 @@ public java.lang.String getIdInput();
 ##### `isOieInput`<sup>Optional</sup> <a name="isOieInput" id="@cdktf/provider-okta.policyMfa.PolicyMfa.property.isOieInput"></a>
 
 ```java
-public java.lang.Object getIsOieInput();
+public java.lang.Boolean|IResolvable getIsOieInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1613,10 +1607,10 @@ public java.util.Map<java.lang.String, java.lang.String> getExternalIdp();
 ##### `externalIdps`<sup>Required</sup> <a name="externalIdps" id="@cdktf/provider-okta.policyMfa.PolicyMfa.property.externalIdps"></a>
 
 ```java
-public java.lang.Object getExternalIdps();
+public IResolvable|java.util.List<java.util.Map<java.lang.String, java.lang.String>> getExternalIdps();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<java.util.Map<java.lang.String, java.lang.String>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<java.util.Map<java.lang.String, java.lang.String>>
 
 ---
 
@@ -1683,10 +1677,10 @@ public java.lang.String getId();
 ##### `isOie`<sup>Required</sup> <a name="isOie" id="@cdktf/provider-okta.policyMfa.PolicyMfa.property.isOie"></a>
 
 ```java
-public java.lang.Object getIsOie();
+public java.lang.Boolean|IResolvable getIsOie();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1908,31 +1902,25 @@ public java.lang.String getTfResourceType();
 import com.hashicorp.cdktf.providers.okta.policy_mfa.PolicyMfaConfig;
 
 PolicyMfaConfig.builder()
-//  .connection(SSHProvisionerConnection)
-//  .connection(WinrmProvisionerConnection)
-//  .count(java.lang.Number)
-//  .count(TerraformCount)
+//  .connection(SSHProvisionerConnection|WinrmProvisionerConnection)
+//  .count(java.lang.Number|TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
-//  .provisioners(java.util.List<FileProvisioner)
-//  .provisioners(LocalExecProvisioner)
-//  .provisioners(RemoteExecProvisioner>)
+//  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .name(java.lang.String)
 //  .description(java.lang.String)
 //  .duo(java.util.Map<java.lang.String, java.lang.String>)
 //  .externalIdp(java.util.Map<java.lang.String, java.lang.String>)
-//  .externalIdps(IResolvable)
-//  .externalIdps(java.util.List<java.util.Map<java.lang.String, java.lang.String>>)
+//  .externalIdps(IResolvable|java.util.List<java.util.Map<java.lang.String, java.lang.String>>)
 //  .fidoU2F(java.util.Map<java.lang.String, java.lang.String>)
 //  .fidoWebauthn(java.util.Map<java.lang.String, java.lang.String>)
 //  .googleOtp(java.util.Map<java.lang.String, java.lang.String>)
 //  .groupsIncluded(java.util.List<java.lang.String>)
 //  .hotp(java.util.Map<java.lang.String, java.lang.String>)
 //  .id(java.lang.String)
-//  .isOie(java.lang.Boolean)
-//  .isOie(IResolvable)
+//  .isOie(java.lang.Boolean|IResolvable)
 //  .oktaCall(java.util.Map<java.lang.String, java.lang.String>)
 //  .oktaEmail(java.util.Map<java.lang.String, java.lang.String>)
 //  .oktaOtp(java.util.Map<java.lang.String, java.lang.String>)
@@ -1958,25 +1946,25 @@ PolicyMfaConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.name">name</a></code> | <code>java.lang.String</code> | Policy Name. |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.description">description</a></code> | <code>java.lang.String</code> | Policy Description. |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.duo">duo</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/policy_mfa#duo PolicyMfa#duo}. |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.externalIdp">externalIdp</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/policy_mfa#external_idp PolicyMfa#external_idp}. |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.externalIdps">externalIdps</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<java.util.Map<java.lang.String, java.lang.String>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/policy_mfa#external_idps PolicyMfa#external_idps}. |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.externalIdps">externalIdps</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<java.util.Map<java.lang.String, java.lang.String>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/policy_mfa#external_idps PolicyMfa#external_idps}. |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.fidoU2F">fidoU2F</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/policy_mfa#fido_u2f PolicyMfa#fido_u2f}. |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.fidoWebauthn">fidoWebauthn</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/policy_mfa#fido_webauthn PolicyMfa#fido_webauthn}. |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.googleOtp">googleOtp</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/policy_mfa#google_otp PolicyMfa#google_otp}. |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.groupsIncluded">groupsIncluded</a></code> | <code>java.util.List<java.lang.String></code> | List of Group IDs to Include. |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.hotp">hotp</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/policy_mfa#hotp PolicyMfa#hotp}. |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/policy_mfa#id PolicyMfa#id}. |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.isOie">isOie</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Is the policy using Okta Identity Engine (OIE) with authenticators instead of factors? |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.isOie">isOie</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Is the policy using Okta Identity Engine (OIE) with authenticators instead of factors? |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.oktaCall">oktaCall</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/policy_mfa#okta_call PolicyMfa#okta_call}. |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.oktaEmail">oktaEmail</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/policy_mfa#okta_email PolicyMfa#okta_email}. |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.oktaOtp">oktaOtp</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/policy_mfa#okta_otp PolicyMfa#okta_otp}. |
@@ -2001,20 +1989,20 @@ PolicyMfaConfig.builder()
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.connection"></a>
 
 ```java
-public java.lang.Object getConnection();
+public SSHProvisionerConnection|WinrmProvisionerConnection getConnection();
 ```
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.count"></a>
 
 ```java
-public java.lang.Object getCount();
+public java.lang.Number|TerraformCount getCount();
 ```
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -2061,10 +2049,10 @@ public TerraformProvider getProvider();
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.provisioners"></a>
 
 ```java
-public java.lang.Object getProvisioners();
+public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner> getProvisioners();
 ```
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -2123,10 +2111,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 ##### `externalIdps`<sup>Optional</sup> <a name="externalIdps" id="@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.externalIdps"></a>
 
 ```java
-public java.lang.Object getExternalIdps();
+public IResolvable|java.util.List<java.util.Map<java.lang.String, java.lang.String>> getExternalIdps();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<java.util.Map<java.lang.String, java.lang.String>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<java.util.Map<java.lang.String, java.lang.String>>
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/policy_mfa#external_idps PolicyMfa#external_idps}.
 
@@ -2212,10 +2200,10 @@ If you experience problems setting this value it might not be settable. Please t
 ##### `isOie`<sup>Optional</sup> <a name="isOie" id="@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.isOie"></a>
 
 ```java
-public java.lang.Object getIsOie();
+public java.lang.Boolean|IResolvable getIsOie();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Is the policy using Okta Identity Engine (OIE) with authenticators instead of factors?
 

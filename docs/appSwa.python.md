@@ -14,25 +14,25 @@ from cdktf_cdktf_provider_okta import app_swa
 appSwa.AppSwa(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   label: str,
   accessibility_error_redirect_url: str = None,
   accessibility_login_redirect_url: str = None,
-  accessibility_self_service: typing.Union[bool, IResolvable] = None,
+  accessibility_self_service: bool | IResolvable = None,
   admin_note: str = None,
   app_links_json: str = None,
-  auto_submit_toolbar: typing.Union[bool, IResolvable] = None,
+  auto_submit_toolbar: bool | IResolvable = None,
   button_field: str = None,
   checkbox: str = None,
   enduser_note: str = None,
-  hide_ios: typing.Union[bool, IResolvable] = None,
-  hide_web: typing.Union[bool, IResolvable] = None,
+  hide_ios: bool | IResolvable = None,
+  hide_web: bool | IResolvable = None,
   id: str = None,
   logo: str = None,
   password_field: str = None,
@@ -54,25 +54,25 @@ appSwa.AppSwa(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.Initializer.parameter.label">label</a></code> | <code>str</code> | The Application's display name. |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.Initializer.parameter.accessibilityErrorRedirectUrl">accessibility_error_redirect_url</a></code> | <code>str</code> | Custom error page URL. |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.Initializer.parameter.accessibilityLoginRedirectUrl">accessibility_login_redirect_url</a></code> | <code>str</code> | Custom login page URL. |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.Initializer.parameter.accessibilitySelfService">accessibility_self_service</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable self service. Default is `false`. |
+| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.Initializer.parameter.accessibilitySelfService">accessibility_self_service</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable self service. Default is `false`. |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.Initializer.parameter.adminNote">admin_note</a></code> | <code>str</code> | Application notes for admins. |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.Initializer.parameter.appLinksJson">app_links_json</a></code> | <code>str</code> | Displays specific appLinks for the app. The value for each application link should be boolean. |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.Initializer.parameter.autoSubmitToolbar">auto_submit_toolbar</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Display auto submit toolbar. |
+| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.Initializer.parameter.autoSubmitToolbar">auto_submit_toolbar</a></code> | <code>bool \| cdktf.IResolvable</code> | Display auto submit toolbar. |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.Initializer.parameter.buttonField">button_field</a></code> | <code>str</code> | Login button field. |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.Initializer.parameter.checkbox">checkbox</a></code> | <code>str</code> | CSS selector for the checkbox. |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.Initializer.parameter.enduserNote">enduser_note</a></code> | <code>str</code> | Application notes for end users. |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.Initializer.parameter.hideIos">hide_ios</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Do not display application icon on mobile app. |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.Initializer.parameter.hideWeb">hide_web</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Do not display application icon to users. |
+| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.Initializer.parameter.hideIos">hide_ios</a></code> | <code>bool \| cdktf.IResolvable</code> | Do not display application icon on mobile app. |
+| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.Initializer.parameter.hideWeb">hide_web</a></code> | <code>bool \| cdktf.IResolvable</code> | Do not display application icon to users. |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/app_swa#id AppSwa#id}. |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.Initializer.parameter.logo">logo</a></code> | <code>str</code> | Local file path to the logo. |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.Initializer.parameter.passwordField">password_field</a></code> | <code>str</code> | Login password field. |
@@ -110,13 +110,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-okta.appSwa.AppSwa.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.appSwa.AppSwa.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -146,7 +146,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-okta.appSwa.AppSwa.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -182,7 +182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 ##### `accessibility_self_service`<sup>Optional</sup> <a name="accessibility_self_service" id="@cdktf/provider-okta.appSwa.AppSwa.Initializer.parameter.accessibilitySelfService"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable self service. Default is `false`.
 
@@ -212,7 +212,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 ##### `auto_submit_toolbar`<sup>Optional</sup> <a name="auto_submit_toolbar" id="@cdktf/provider-okta.appSwa.AppSwa.Initializer.parameter.autoSubmitToolbar"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Display auto submit toolbar.
 
@@ -252,7 +252,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 ##### `hide_ios`<sup>Optional</sup> <a name="hide_ios" id="@cdktf/provider-okta.appSwa.AppSwa.Initializer.parameter.hideIos"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Do not display application icon on mobile app.
 
@@ -262,7 +262,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 ##### `hide_web`<sup>Optional</sup> <a name="hide_web" id="@cdktf/provider-okta.appSwa.AppSwa.Initializer.parameter.hideWeb"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Do not display application icon to users.
 
@@ -691,7 +691,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-okta.appSwa.AppSwa.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-okta.appSwa.AppSwa.importFrom"></a>
@@ -754,7 +754,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -770,7 +770,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-okta.appSwa.AppSwa.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -1115,28 +1115,28 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.logoUrl">logo_url</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.signOnMode">sign_on_mode</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-okta.appSwa.AppSwaTimeoutsOutputReference">AppSwaTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.accessibilityErrorRedirectUrlInput">accessibility_error_redirect_url_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.accessibilityLoginRedirectUrlInput">accessibility_login_redirect_url_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.accessibilitySelfServiceInput">accessibility_self_service_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.accessibilitySelfServiceInput">accessibility_self_service_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.adminNoteInput">admin_note_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.appLinksJsonInput">app_links_json_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.autoSubmitToolbarInput">auto_submit_toolbar_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.autoSubmitToolbarInput">auto_submit_toolbar_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.buttonFieldInput">button_field_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.checkboxInput">checkbox_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.enduserNoteInput">enduser_note_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.hideIosInput">hide_ios_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.hideWebInput">hide_web_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.hideIosInput">hide_ios_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.hideWebInput">hide_web_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.labelInput">label_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.logoInput">logo_input</a></code> | <code>str</code> | *No description.* |
@@ -1144,7 +1144,7 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.preconfiguredAppInput">preconfigured_app_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.redirectUrlInput">redirect_url_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.statusInput">status_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-okta.appSwa.AppSwaTimeouts">AppSwaTimeouts</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-okta.appSwa.AppSwaTimeouts">AppSwaTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.urlInput">url_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.urlRegexInput">url_regex_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.usernameFieldInput">username_field_input</a></code> | <code>str</code> | *No description.* |
@@ -1154,15 +1154,15 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.userNameTemplateTypeInput">user_name_template_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.accessibilityErrorRedirectUrl">accessibility_error_redirect_url</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.accessibilityLoginRedirectUrl">accessibility_login_redirect_url</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.accessibilitySelfService">accessibility_self_service</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.accessibilitySelfService">accessibility_self_service</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.adminNote">admin_note</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.appLinksJson">app_links_json</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.autoSubmitToolbar">auto_submit_toolbar</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.autoSubmitToolbar">auto_submit_toolbar</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.buttonField">button_field</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.checkbox">checkbox</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.enduserNote">enduser_note</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.hideIos">hide_ios</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.hideWeb">hide_web</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.hideIos">hide_ios</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.hideWeb">hide_web</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.label">label</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.logo">logo</a></code> | <code>str</code> | *No description.* |
@@ -1255,20 +1255,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-okta.appSwa.AppSwa.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.appSwa.AppSwa.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1315,10 +1315,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-okta.appSwa.AppSwa.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1385,10 +1385,10 @@ accessibility_login_redirect_url_input: str
 ##### `accessibility_self_service_input`<sup>Optional</sup> <a name="accessibility_self_service_input" id="@cdktf/provider-okta.appSwa.AppSwa.property.accessibilitySelfServiceInput"></a>
 
 ```python
-accessibility_self_service_input: typing.Union[bool, IResolvable]
+accessibility_self_service_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1415,10 +1415,10 @@ app_links_json_input: str
 ##### `auto_submit_toolbar_input`<sup>Optional</sup> <a name="auto_submit_toolbar_input" id="@cdktf/provider-okta.appSwa.AppSwa.property.autoSubmitToolbarInput"></a>
 
 ```python
-auto_submit_toolbar_input: typing.Union[bool, IResolvable]
+auto_submit_toolbar_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1455,20 +1455,20 @@ enduser_note_input: str
 ##### `hide_ios_input`<sup>Optional</sup> <a name="hide_ios_input" id="@cdktf/provider-okta.appSwa.AppSwa.property.hideIosInput"></a>
 
 ```python
-hide_ios_input: typing.Union[bool, IResolvable]
+hide_ios_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `hide_web_input`<sup>Optional</sup> <a name="hide_web_input" id="@cdktf/provider-okta.appSwa.AppSwa.property.hideWebInput"></a>
 
 ```python
-hide_web_input: typing.Union[bool, IResolvable]
+hide_web_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1545,10 +1545,10 @@ status_input: str
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-okta.appSwa.AppSwa.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[IResolvable, AppSwaTimeouts]
+timeouts_input: IResolvable | AppSwaTimeouts
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-okta.appSwa.AppSwaTimeouts">AppSwaTimeouts</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-okta.appSwa.AppSwaTimeouts">AppSwaTimeouts</a>
 
 ---
 
@@ -1645,10 +1645,10 @@ accessibility_login_redirect_url: str
 ##### `accessibility_self_service`<sup>Required</sup> <a name="accessibility_self_service" id="@cdktf/provider-okta.appSwa.AppSwa.property.accessibilitySelfService"></a>
 
 ```python
-accessibility_self_service: typing.Union[bool, IResolvable]
+accessibility_self_service: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1675,10 +1675,10 @@ app_links_json: str
 ##### `auto_submit_toolbar`<sup>Required</sup> <a name="auto_submit_toolbar" id="@cdktf/provider-okta.appSwa.AppSwa.property.autoSubmitToolbar"></a>
 
 ```python
-auto_submit_toolbar: typing.Union[bool, IResolvable]
+auto_submit_toolbar: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1715,20 +1715,20 @@ enduser_note: str
 ##### `hide_ios`<sup>Required</sup> <a name="hide_ios" id="@cdktf/provider-okta.appSwa.AppSwa.property.hideIos"></a>
 
 ```python
-hide_ios: typing.Union[bool, IResolvable]
+hide_ios: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `hide_web`<sup>Required</sup> <a name="hide_web" id="@cdktf/provider-okta.appSwa.AppSwa.property.hideWeb"></a>
 
 ```python
-hide_web: typing.Union[bool, IResolvable]
+hide_web: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1900,25 +1900,25 @@ tfResourceType: str
 from cdktf_cdktf_provider_okta import app_swa
 
 appSwa.AppSwaConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   label: str,
   accessibility_error_redirect_url: str = None,
   accessibility_login_redirect_url: str = None,
-  accessibility_self_service: typing.Union[bool, IResolvable] = None,
+  accessibility_self_service: bool | IResolvable = None,
   admin_note: str = None,
   app_links_json: str = None,
-  auto_submit_toolbar: typing.Union[bool, IResolvable] = None,
+  auto_submit_toolbar: bool | IResolvable = None,
   button_field: str = None,
   checkbox: str = None,
   enduser_note: str = None,
-  hide_ios: typing.Union[bool, IResolvable] = None,
-  hide_web: typing.Union[bool, IResolvable] = None,
+  hide_ios: bool | IResolvable = None,
+  hide_web: bool | IResolvable = None,
   id: str = None,
   logo: str = None,
   password_field: str = None,
@@ -1940,25 +1940,25 @@ appSwa.AppSwaConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.label">label</a></code> | <code>str</code> | The Application's display name. |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.accessibilityErrorRedirectUrl">accessibility_error_redirect_url</a></code> | <code>str</code> | Custom error page URL. |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.accessibilityLoginRedirectUrl">accessibility_login_redirect_url</a></code> | <code>str</code> | Custom login page URL. |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.accessibilitySelfService">accessibility_self_service</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable self service. Default is `false`. |
+| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.accessibilitySelfService">accessibility_self_service</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable self service. Default is `false`. |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.adminNote">admin_note</a></code> | <code>str</code> | Application notes for admins. |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.appLinksJson">app_links_json</a></code> | <code>str</code> | Displays specific appLinks for the app. The value for each application link should be boolean. |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.autoSubmitToolbar">auto_submit_toolbar</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Display auto submit toolbar. |
+| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.autoSubmitToolbar">auto_submit_toolbar</a></code> | <code>bool \| cdktf.IResolvable</code> | Display auto submit toolbar. |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.buttonField">button_field</a></code> | <code>str</code> | Login button field. |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.checkbox">checkbox</a></code> | <code>str</code> | CSS selector for the checkbox. |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.enduserNote">enduser_note</a></code> | <code>str</code> | Application notes for end users. |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.hideIos">hide_ios</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Do not display application icon on mobile app. |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.hideWeb">hide_web</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Do not display application icon to users. |
+| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.hideIos">hide_ios</a></code> | <code>bool \| cdktf.IResolvable</code> | Do not display application icon on mobile app. |
+| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.hideWeb">hide_web</a></code> | <code>bool \| cdktf.IResolvable</code> | Do not display application icon to users. |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/app_swa#id AppSwa#id}. |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.logo">logo</a></code> | <code>str</code> | Local file path to the logo. |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.passwordField">password_field</a></code> | <code>str</code> | Login password field. |
@@ -1979,20 +1979,20 @@ appSwa.AppSwaConfig(
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-okta.appSwa.AppSwaConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.appSwa.AppSwaConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -2039,10 +2039,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-okta.appSwa.AppSwaConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -2091,10 +2091,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 ##### `accessibility_self_service`<sup>Optional</sup> <a name="accessibility_self_service" id="@cdktf/provider-okta.appSwa.AppSwaConfig.property.accessibilitySelfService"></a>
 
 ```python
-accessibility_self_service: typing.Union[bool, IResolvable]
+accessibility_self_service: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable self service. Default is `false`.
 
@@ -2133,10 +2133,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 ##### `auto_submit_toolbar`<sup>Optional</sup> <a name="auto_submit_toolbar" id="@cdktf/provider-okta.appSwa.AppSwaConfig.property.autoSubmitToolbar"></a>
 
 ```python
-auto_submit_toolbar: typing.Union[bool, IResolvable]
+auto_submit_toolbar: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Display auto submit toolbar.
 
@@ -2189,10 +2189,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 ##### `hide_ios`<sup>Optional</sup> <a name="hide_ios" id="@cdktf/provider-okta.appSwa.AppSwaConfig.property.hideIos"></a>
 
 ```python
-hide_ios: typing.Union[bool, IResolvable]
+hide_ios: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Do not display application icon on mobile app.
 
@@ -2203,10 +2203,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 ##### `hide_web`<sup>Optional</sup> <a name="hide_web" id="@cdktf/provider-okta.appSwa.AppSwaConfig.property.hideWeb"></a>
 
 ```python
-hide_web: typing.Union[bool, IResolvable]
+hide_web: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Do not display application icon to users.
 
@@ -2737,7 +2737,7 @@ def reset_update() -> None
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwaTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwaTimeoutsOutputReference.property.read">read</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwaTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-okta.appSwa.AppSwaTimeouts">AppSwaTimeouts</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-okta.appSwa.AppSwaTimeouts">AppSwaTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -2828,10 +2828,10 @@ update: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-okta.appSwa.AppSwaTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, AppSwaTimeouts]
+internal_value: IResolvable | AppSwaTimeouts
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-okta.appSwa.AppSwaTimeouts">AppSwaTimeouts</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-okta.appSwa.AppSwaTimeouts">AppSwaTimeouts</a>
 
 ---
 

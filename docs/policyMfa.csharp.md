@@ -302,7 +302,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-okta.policyMfa.PolicyMfa.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-okta.policyMfa.PolicyMfa.importFrom"></a>
@@ -356,7 +356,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-okta.policyMfa.PolicyMfa.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -371,7 +371,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-okta.policyMfa.PolicyMfa.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -693,24 +693,24 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.descriptionInput">DescriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.duoInput">DuoInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.externalIdpInput">ExternalIdpInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.externalIdpsInput">ExternalIdpsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.externalIdpsInput">ExternalIdpsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, string>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.fidoU2FInput">FidoU2FInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.fidoWebauthnInput">FidoWebauthnInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.googleOtpInput">GoogleOtpInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.groupsIncludedInput">GroupsIncludedInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.hotpInput">HotpInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.isOieInput">IsOieInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.isOieInput">IsOieInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.oktaCallInput">OktaCallInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.oktaEmailInput">OktaEmailInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
@@ -733,14 +733,14 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.description">Description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.duo">Duo</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.externalIdp">ExternalIdp</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.externalIdps">ExternalIdps</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.externalIdps">ExternalIdps</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, string>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.fidoU2F">FidoU2F</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.fidoWebauthn">FidoWebauthn</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.googleOtp">GoogleOtp</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.groupsIncluded">GroupsIncluded</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.hotp">Hotp</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.id">Id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.isOie">IsOie</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.isOie">IsOie</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.oktaCall">OktaCall</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.oktaEmail">OktaEmail</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
@@ -838,20 +838,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-okta.policyMfa.PolicyMfa.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.policyMfa.PolicyMfa.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -898,10 +898,10 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-okta.policyMfa.PolicyMfa.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -938,10 +938,10 @@ public System.Collections.Generic.IDictionary<string, string> ExternalIdpInput {
 ##### `ExternalIdpsInput`<sup>Optional</sup> <a name="ExternalIdpsInput" id="@cdktf/provider-okta.policyMfa.PolicyMfa.property.externalIdpsInput"></a>
 
 ```csharp
-public object ExternalIdpsInput { get; }
+public IResolvable|System.Collections.Generic.IDictionary<string, string>[] ExternalIdpsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, string>[]
 
 ---
 
@@ -1008,10 +1008,10 @@ public string IdInput { get; }
 ##### `IsOieInput`<sup>Optional</sup> <a name="IsOieInput" id="@cdktf/provider-okta.policyMfa.PolicyMfa.property.isOieInput"></a>
 
 ```csharp
-public object IsOieInput { get; }
+public bool|IResolvable IsOieInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1238,10 +1238,10 @@ public System.Collections.Generic.IDictionary<string, string> ExternalIdp { get;
 ##### `ExternalIdps`<sup>Required</sup> <a name="ExternalIdps" id="@cdktf/provider-okta.policyMfa.PolicyMfa.property.externalIdps"></a>
 
 ```csharp
-public object ExternalIdps { get; }
+public IResolvable|System.Collections.Generic.IDictionary<string, string>[] ExternalIdps { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, string>[]
 
 ---
 
@@ -1308,10 +1308,10 @@ public string Id { get; }
 ##### `IsOie`<sup>Required</sup> <a name="IsOie" id="@cdktf/provider-okta.policyMfa.PolicyMfa.property.isOie"></a>
 
 ```csharp
-public object IsOie { get; }
+public bool|IResolvable IsOie { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1533,25 +1533,25 @@ public string TfResourceType { get; }
 using HashiCorp.Cdktf.Providers.Okta;
 
 new PolicyMfaConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string Name,
     string Description = null,
     System.Collections.Generic.IDictionary<string, string> Duo = null,
     System.Collections.Generic.IDictionary<string, string> ExternalIdp = null,
-    object ExternalIdps = null,
+    IResolvable|System.Collections.Generic.IDictionary<string, string>[] ExternalIdps = null,
     System.Collections.Generic.IDictionary<string, string> FidoU2F = null,
     System.Collections.Generic.IDictionary<string, string> FidoWebauthn = null,
     System.Collections.Generic.IDictionary<string, string> GoogleOtp = null,
     string[] GroupsIncluded = null,
     System.Collections.Generic.IDictionary<string, string> Hotp = null,
     string Id = null,
-    object IsOie = null,
+    bool|IResolvable IsOie = null,
     System.Collections.Generic.IDictionary<string, string> OktaCall = null,
     System.Collections.Generic.IDictionary<string, string> OktaEmail = null,
     System.Collections.Generic.IDictionary<string, string> OktaOtp = null,
@@ -1577,25 +1577,25 @@ new PolicyMfaConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.name">Name</a></code> | <code>string</code> | Policy Name. |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.description">Description</a></code> | <code>string</code> | Policy Description. |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.duo">Duo</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/policy_mfa#duo PolicyMfa#duo}. |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.externalIdp">ExternalIdp</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/policy_mfa#external_idp PolicyMfa#external_idp}. |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.externalIdps">ExternalIdps</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/policy_mfa#external_idps PolicyMfa#external_idps}. |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.externalIdps">ExternalIdps</a></code> | <code>HashiCorp.Cdktf.IResolvable\|System.Collections.Generic.IDictionary<string, string>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/policy_mfa#external_idps PolicyMfa#external_idps}. |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.fidoU2F">FidoU2F</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/policy_mfa#fido_u2f PolicyMfa#fido_u2f}. |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.fidoWebauthn">FidoWebauthn</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/policy_mfa#fido_webauthn PolicyMfa#fido_webauthn}. |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.googleOtp">GoogleOtp</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/policy_mfa#google_otp PolicyMfa#google_otp}. |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.groupsIncluded">GroupsIncluded</a></code> | <code>string[]</code> | List of Group IDs to Include. |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.hotp">Hotp</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/policy_mfa#hotp PolicyMfa#hotp}. |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/policy_mfa#id PolicyMfa#id}. |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.isOie">IsOie</a></code> | <code>object</code> | Is the policy using Okta Identity Engine (OIE) with authenticators instead of factors? |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.isOie">IsOie</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Is the policy using Okta Identity Engine (OIE) with authenticators instead of factors? |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.oktaCall">OktaCall</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/policy_mfa#okta_call PolicyMfa#okta_call}. |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.oktaEmail">OktaEmail</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/policy_mfa#okta_email PolicyMfa#okta_email}. |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.oktaOtp">OktaOtp</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/policy_mfa#okta_otp PolicyMfa#okta_otp}. |
@@ -1620,20 +1620,20 @@ new PolicyMfaConfig {
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -1680,10 +1680,10 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -1742,10 +1742,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 ##### `ExternalIdps`<sup>Optional</sup> <a name="ExternalIdps" id="@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.externalIdps"></a>
 
 ```csharp
-public object ExternalIdps { get; set; }
+public IResolvable|System.Collections.Generic.IDictionary<string, string>[] ExternalIdps { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|System.Collections.Generic.IDictionary<string, string>[]
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/policy_mfa#external_idps PolicyMfa#external_idps}.
 
@@ -1831,10 +1831,10 @@ If you experience problems setting this value it might not be settable. Please t
 ##### `IsOie`<sup>Optional</sup> <a name="IsOie" id="@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.isOie"></a>
 
 ```csharp
-public object IsOie { get; set; }
+public bool|IResolvable IsOie { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Is the policy using Okta Identity Engine (OIE) with authenticators instead of factors?
 

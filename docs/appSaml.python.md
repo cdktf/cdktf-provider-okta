@@ -14,47 +14,47 @@ from cdktf_cdktf_provider_okta import app_saml
 appSaml.AppSaml(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   label: str,
   accessibility_error_redirect_url: str = None,
   accessibility_login_redirect_url: str = None,
-  accessibility_self_service: typing.Union[bool, IResolvable] = None,
+  accessibility_self_service: bool | IResolvable = None,
   acs_endpoints: typing.List[str] = None,
-  acs_endpoints_indices: typing.Union[IResolvable, typing.List[AppSamlAcsEndpointsIndices]] = None,
+  acs_endpoints_indices: IResolvable | typing.List[AppSamlAcsEndpointsIndices] = None,
   admin_note: str = None,
   app_links_json: str = None,
   app_settings_json: str = None,
-  assertion_signed: typing.Union[bool, IResolvable] = None,
-  attribute_statements: typing.Union[IResolvable, typing.List[AppSamlAttributeStatements]] = None,
+  assertion_signed: bool | IResolvable = None,
+  attribute_statements: IResolvable | typing.List[AppSamlAttributeStatements] = None,
   audience: str = None,
   authentication_policy: str = None,
   authn_context_class_ref: str = None,
-  auto_submit_toolbar: typing.Union[bool, IResolvable] = None,
+  auto_submit_toolbar: bool | IResolvable = None,
   default_relay_state: str = None,
   destination: str = None,
   digest_algorithm: str = None,
   enduser_note: str = None,
-  hide_ios: typing.Union[bool, IResolvable] = None,
-  hide_web: typing.Union[bool, IResolvable] = None,
-  honor_force_authn: typing.Union[bool, IResolvable] = None,
+  hide_ios: bool | IResolvable = None,
+  hide_web: bool | IResolvable = None,
+  honor_force_authn: bool | IResolvable = None,
   id: str = None,
   idp_issuer: str = None,
-  implicit_assignment: typing.Union[bool, IResolvable] = None,
+  implicit_assignment: bool | IResolvable = None,
   inline_hook_id: str = None,
   key_name: str = None,
   key_years_valid: typing.Union[int, float] = None,
   logo: str = None,
   preconfigured_app: str = None,
   recipient: str = None,
-  request_compressed: typing.Union[bool, IResolvable] = None,
-  response_signed: typing.Union[bool, IResolvable] = None,
-  saml_signed_request_enabled: typing.Union[bool, IResolvable] = None,
+  request_compressed: bool | IResolvable = None,
+  response_signed: bool | IResolvable = None,
+  saml_signed_request_enabled: bool | IResolvable = None,
   saml_version: str = None,
   signature_algorithm: str = None,
   single_logout_certificate: str = None,
@@ -77,47 +77,47 @@ appSaml.AppSaml(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.label">label</a></code> | <code>str</code> | The Application's display name. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.accessibilityErrorRedirectUrl">accessibility_error_redirect_url</a></code> | <code>str</code> | Custom error page URL. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.accessibilityLoginRedirectUrl">accessibility_login_redirect_url</a></code> | <code>str</code> | Custom login page URL. |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.accessibilitySelfService">accessibility_self_service</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable self service. Default is `false`. |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.accessibilitySelfService">accessibility_self_service</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable self service. Default is `false`. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.acsEndpoints">acs_endpoints</a></code> | <code>typing.List[str]</code> | An array of ACS endpoints. You can configure a maximum of 100 endpoints. |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.acsEndpointsIndices">acs_endpoints_indices</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndices">AppSamlAcsEndpointsIndices</a>]]</code> | acs_endpoints_indices block. |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.acsEndpointsIndices">acs_endpoints_indices</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndices">AppSamlAcsEndpointsIndices</a>]</code> | acs_endpoints_indices block. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.adminNote">admin_note</a></code> | <code>str</code> | Application notes for admins. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.appLinksJson">app_links_json</a></code> | <code>str</code> | Displays specific appLinks for the app. The value for each application link should be boolean. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.appSettingsJson">app_settings_json</a></code> | <code>str</code> | Application settings in JSON format. |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.assertionSigned">assertion_signed</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Determines whether the SAML assertion is digitally signed. |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.attributeStatements">attribute_statements</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.appSaml.AppSamlAttributeStatements">AppSamlAttributeStatements</a>]]</code> | attribute_statements block. |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.assertionSigned">assertion_signed</a></code> | <code>bool \| cdktf.IResolvable</code> | Determines whether the SAML assertion is digitally signed. |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.attributeStatements">attribute_statements</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-okta.appSaml.AppSamlAttributeStatements">AppSamlAttributeStatements</a>]</code> | attribute_statements block. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.audience">audience</a></code> | <code>str</code> | Audience Restriction. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.authenticationPolicy">authentication_policy</a></code> | <code>str</code> | The ID of the associated `app_signon_policy`. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.authnContextClassRef">authn_context_class_ref</a></code> | <code>str</code> | Identifies the SAML authentication context class for the assertion’s authentication statement. |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.autoSubmitToolbar">auto_submit_toolbar</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Display auto submit toolbar. Default is: `false`. |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.autoSubmitToolbar">auto_submit_toolbar</a></code> | <code>bool \| cdktf.IResolvable</code> | Display auto submit toolbar. Default is: `false`. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.defaultRelayState">default_relay_state</a></code> | <code>str</code> | Identifies a specific application resource in an IDP initiated SSO scenario. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.destination">destination</a></code> | <code>str</code> | Identifies the location where the SAML response is intended to be sent inside of the SAML assertion. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.digestAlgorithm">digest_algorithm</a></code> | <code>str</code> | Determines the digest algorithm used to digitally sign the SAML assertion and response. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.enduserNote">enduser_note</a></code> | <code>str</code> | Application notes for end users. |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.hideIos">hide_ios</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Do not display application icon on mobile app. |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.hideWeb">hide_web</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Do not display application icon to users. |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.honorForceAuthn">honor_force_authn</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Prompt user to re-authenticate if SP asks for it. Default is: `false`. |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.hideIos">hide_ios</a></code> | <code>bool \| cdktf.IResolvable</code> | Do not display application icon on mobile app. |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.hideWeb">hide_web</a></code> | <code>bool \| cdktf.IResolvable</code> | Do not display application icon to users. |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.honorForceAuthn">honor_force_authn</a></code> | <code>bool \| cdktf.IResolvable</code> | Prompt user to re-authenticate if SP asks for it. Default is: `false`. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/app_saml#id AppSaml#id}. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.idpIssuer">idp_issuer</a></code> | <code>str</code> | SAML issuer ID. |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.implicitAssignment">implicit_assignment</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *Early Access Property*. Enable Federation Broker Mode. |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.implicitAssignment">implicit_assignment</a></code> | <code>bool \| cdktf.IResolvable</code> | *Early Access Property*. Enable Federation Broker Mode. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.inlineHookId">inline_hook_id</a></code> | <code>str</code> | Saml Inline Hook setting. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.keyName">key_name</a></code> | <code>str</code> | Certificate name. This modulates the rotation of keys. New name == new key. Required to be set with `key_years_valid`. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.keyYearsValid">key_years_valid</a></code> | <code>typing.Union[int, float]</code> | Number of years the certificate is valid (2 - 10 years). |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.logo">logo</a></code> | <code>str</code> | Local file path to the logo. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.preconfiguredApp">preconfigured_app</a></code> | <code>str</code> | Name of application from the Okta Integration Network. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.recipient">recipient</a></code> | <code>str</code> | The location where the app may present the SAML assertion. |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.requestCompressed">request_compressed</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Denotes whether the request is compressed or not. |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.responseSigned">response_signed</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Determines whether the SAML auth response message is digitally signed. |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.samlSignedRequestEnabled">saml_signed_request_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | SAML Signed Request enabled. |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.requestCompressed">request_compressed</a></code> | <code>bool \| cdktf.IResolvable</code> | Denotes whether the request is compressed or not. |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.responseSigned">response_signed</a></code> | <code>bool \| cdktf.IResolvable</code> | Determines whether the SAML auth response message is digitally signed. |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.samlSignedRequestEnabled">saml_signed_request_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | SAML Signed Request enabled. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.samlVersion">saml_version</a></code> | <code>str</code> | SAML version for the app's sign-on mode. Valid values are: `2.0` or `1.1`. Default is `2.0`. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.signatureAlgorithm">signature_algorithm</a></code> | <code>str</code> | Signature algorithm used to digitally sign the assertion and response. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.singleLogoutCertificate">single_logout_certificate</a></code> | <code>str</code> | x509 encoded certificate that the Service Provider uses to sign Single Logout requests. |
@@ -156,13 +156,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -192,7 +192,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -228,7 +228,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 ##### `accessibility_self_service`<sup>Optional</sup> <a name="accessibility_self_service" id="@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.accessibilitySelfService"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable self service. Default is `false`.
 
@@ -248,7 +248,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 ##### `acs_endpoints_indices`<sup>Optional</sup> <a name="acs_endpoints_indices" id="@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.acsEndpointsIndices"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndices">AppSamlAcsEndpointsIndices</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndices">AppSamlAcsEndpointsIndices</a>]
 
 acs_endpoints_indices block.
 
@@ -288,7 +288,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 ##### `assertion_signed`<sup>Optional</sup> <a name="assertion_signed" id="@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.assertionSigned"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Determines whether the SAML assertion is digitally signed.
 
@@ -298,7 +298,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 ##### `attribute_statements`<sup>Optional</sup> <a name="attribute_statements" id="@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.attributeStatements"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.appSaml.AppSamlAttributeStatements">AppSamlAttributeStatements</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-okta.appSaml.AppSamlAttributeStatements">AppSamlAttributeStatements</a>]
 
 attribute_statements block.
 
@@ -340,7 +340,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 ##### `auto_submit_toolbar`<sup>Optional</sup> <a name="auto_submit_toolbar" id="@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.autoSubmitToolbar"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Display auto submit toolbar. Default is: `false`.
 
@@ -390,7 +390,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 ##### `hide_ios`<sup>Optional</sup> <a name="hide_ios" id="@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.hideIos"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Do not display application icon on mobile app.
 
@@ -400,7 +400,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 ##### `hide_web`<sup>Optional</sup> <a name="hide_web" id="@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.hideWeb"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Do not display application icon to users.
 
@@ -410,7 +410,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 ##### `honor_force_authn`<sup>Optional</sup> <a name="honor_force_authn" id="@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.honorForceAuthn"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Prompt user to re-authenticate if SP asks for it. Default is: `false`.
 
@@ -441,7 +441,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 ##### `implicit_assignment`<sup>Optional</sup> <a name="implicit_assignment" id="@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.implicitAssignment"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 *Early Access Property*. Enable Federation Broker Mode.
 
@@ -524,7 +524,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 ##### `request_compressed`<sup>Optional</sup> <a name="request_compressed" id="@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.requestCompressed"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Denotes whether the request is compressed or not.
 
@@ -534,7 +534,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 ##### `response_signed`<sup>Optional</sup> <a name="response_signed" id="@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.responseSigned"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Determines whether the SAML auth response message is digitally signed.
 
@@ -544,7 +544,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 ##### `saml_signed_request_enabled`<sup>Optional</sup> <a name="saml_signed_request_enabled" id="@cdktf/provider-okta.appSaml.AppSaml.Initializer.parameter.samlSignedRequestEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 SAML Signed Request enabled.
 
@@ -1007,7 +1007,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-okta.appSaml.AppSaml.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-okta.appSaml.AppSaml.importFrom"></a>
@@ -1070,7 +1070,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -1086,7 +1086,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-okta.appSaml.AppSaml.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -1114,13 +1114,13 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ```python
 def put_acs_endpoints_indices(
-  value: typing.Union[IResolvable, typing.List[AppSamlAcsEndpointsIndices]]
+  value: IResolvable | typing.List[AppSamlAcsEndpointsIndices]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-okta.appSaml.AppSaml.putAcsEndpointsIndices.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndices">AppSamlAcsEndpointsIndices</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndices">AppSamlAcsEndpointsIndices</a>]
 
 ---
 
@@ -1128,13 +1128,13 @@ def put_acs_endpoints_indices(
 
 ```python
 def put_attribute_statements(
-  value: typing.Union[IResolvable, typing.List[AppSamlAttributeStatements]]
+  value: IResolvable | typing.List[AppSamlAttributeStatements]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-okta.appSaml.AppSaml.putAttributeStatements.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.appSaml.AppSamlAttributeStatements">AppSamlAttributeStatements</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-okta.appSaml.AppSamlAttributeStatements">AppSamlAttributeStatements</a>]
 
 ---
 
@@ -1597,13 +1597,13 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.acsEndpointsIndices">acs_endpoints_indices</a></code> | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesList">AppSamlAcsEndpointsIndicesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.attributeStatements">attribute_statements</a></code> | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlAttributeStatementsList">AppSamlAttributeStatementsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.certificate">certificate</a></code> | <code>str</code> | *No description.* |
@@ -1623,28 +1623,28 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlTimeoutsOutputReference">AppSamlTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.accessibilityErrorRedirectUrlInput">accessibility_error_redirect_url_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.accessibilityLoginRedirectUrlInput">accessibility_login_redirect_url_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.accessibilitySelfServiceInput">accessibility_self_service_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.acsEndpointsIndicesInput">acs_endpoints_indices_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndices">AppSamlAcsEndpointsIndices</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.accessibilitySelfServiceInput">accessibility_self_service_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.acsEndpointsIndicesInput">acs_endpoints_indices_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndices">AppSamlAcsEndpointsIndices</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.acsEndpointsInput">acs_endpoints_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.adminNoteInput">admin_note_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.appLinksJsonInput">app_links_json_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.appSettingsJsonInput">app_settings_json_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.assertionSignedInput">assertion_signed_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.attributeStatementsInput">attribute_statements_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.appSaml.AppSamlAttributeStatements">AppSamlAttributeStatements</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.assertionSignedInput">assertion_signed_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.attributeStatementsInput">attribute_statements_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-okta.appSaml.AppSamlAttributeStatements">AppSamlAttributeStatements</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.audienceInput">audience_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.authenticationPolicyInput">authentication_policy_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.authnContextClassRefInput">authn_context_class_ref_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.autoSubmitToolbarInput">auto_submit_toolbar_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.autoSubmitToolbarInput">auto_submit_toolbar_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.defaultRelayStateInput">default_relay_state_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.destinationInput">destination_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.digestAlgorithmInput">digest_algorithm_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.enduserNoteInput">enduser_note_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.hideIosInput">hide_ios_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.hideWebInput">hide_web_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.honorForceAuthnInput">honor_force_authn_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.hideIosInput">hide_ios_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.hideWebInput">hide_web_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.honorForceAuthnInput">honor_force_authn_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.idpIssuerInput">idp_issuer_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.implicitAssignmentInput">implicit_assignment_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.implicitAssignmentInput">implicit_assignment_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.inlineHookIdInput">inline_hook_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.keyNameInput">key_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.keyYearsValidInput">key_years_valid_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -1652,9 +1652,9 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.logoInput">logo_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.preconfiguredAppInput">preconfigured_app_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.recipientInput">recipient_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.requestCompressedInput">request_compressed_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.responseSignedInput">response_signed_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.samlSignedRequestEnabledInput">saml_signed_request_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.requestCompressedInput">request_compressed_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.responseSignedInput">response_signed_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.samlSignedRequestEnabledInput">saml_signed_request_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.samlVersionInput">saml_version_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.signatureAlgorithmInput">signature_algorithm_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.singleLogoutCertificateInput">single_logout_certificate_input</a></code> | <code>str</code> | *No description.* |
@@ -1665,33 +1665,33 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.statusInput">status_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.subjectNameIdFormatInput">subject_name_id_format_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.subjectNameIdTemplateInput">subject_name_id_template_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-okta.appSaml.AppSamlTimeouts">AppSamlTimeouts</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-okta.appSaml.AppSamlTimeouts">AppSamlTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.userNameTemplateInput">user_name_template_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.userNameTemplatePushStatusInput">user_name_template_push_status_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.userNameTemplateSuffixInput">user_name_template_suffix_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.userNameTemplateTypeInput">user_name_template_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.accessibilityErrorRedirectUrl">accessibility_error_redirect_url</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.accessibilityLoginRedirectUrl">accessibility_login_redirect_url</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.accessibilitySelfService">accessibility_self_service</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.accessibilitySelfService">accessibility_self_service</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.acsEndpoints">acs_endpoints</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.adminNote">admin_note</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.appLinksJson">app_links_json</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.appSettingsJson">app_settings_json</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.assertionSigned">assertion_signed</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.assertionSigned">assertion_signed</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.audience">audience</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.authenticationPolicy">authentication_policy</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.authnContextClassRef">authn_context_class_ref</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.autoSubmitToolbar">auto_submit_toolbar</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.autoSubmitToolbar">auto_submit_toolbar</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.defaultRelayState">default_relay_state</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.destination">destination</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.digestAlgorithm">digest_algorithm</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.enduserNote">enduser_note</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.hideIos">hide_ios</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.hideWeb">hide_web</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.honorForceAuthn">honor_force_authn</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.hideIos">hide_ios</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.hideWeb">hide_web</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.honorForceAuthn">honor_force_authn</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.idpIssuer">idp_issuer</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.implicitAssignment">implicit_assignment</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.implicitAssignment">implicit_assignment</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.inlineHookId">inline_hook_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.keyName">key_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.keyYearsValid">key_years_valid</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -1699,9 +1699,9 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.logo">logo</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.preconfiguredApp">preconfigured_app</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.recipient">recipient</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.requestCompressed">request_compressed</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.responseSigned">response_signed</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.samlSignedRequestEnabled">saml_signed_request_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.requestCompressed">request_compressed</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.responseSigned">response_signed</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.samlSignedRequestEnabled">saml_signed_request_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.samlVersion">saml_version</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.signatureAlgorithm">signature_algorithm</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSaml.property.singleLogoutCertificate">single_logout_certificate</a></code> | <code>str</code> | *No description.* |
@@ -1794,20 +1794,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-okta.appSaml.AppSaml.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.appSaml.AppSaml.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1854,10 +1854,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-okta.appSaml.AppSaml.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -2054,20 +2054,20 @@ accessibility_login_redirect_url_input: str
 ##### `accessibility_self_service_input`<sup>Optional</sup> <a name="accessibility_self_service_input" id="@cdktf/provider-okta.appSaml.AppSaml.property.accessibilitySelfServiceInput"></a>
 
 ```python
-accessibility_self_service_input: typing.Union[bool, IResolvable]
+accessibility_self_service_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `acs_endpoints_indices_input`<sup>Optional</sup> <a name="acs_endpoints_indices_input" id="@cdktf/provider-okta.appSaml.AppSaml.property.acsEndpointsIndicesInput"></a>
 
 ```python
-acs_endpoints_indices_input: typing.Union[IResolvable, typing.List[AppSamlAcsEndpointsIndices]]
+acs_endpoints_indices_input: IResolvable | typing.List[AppSamlAcsEndpointsIndices]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndices">AppSamlAcsEndpointsIndices</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndices">AppSamlAcsEndpointsIndices</a>]
 
 ---
 
@@ -2114,20 +2114,20 @@ app_settings_json_input: str
 ##### `assertion_signed_input`<sup>Optional</sup> <a name="assertion_signed_input" id="@cdktf/provider-okta.appSaml.AppSaml.property.assertionSignedInput"></a>
 
 ```python
-assertion_signed_input: typing.Union[bool, IResolvable]
+assertion_signed_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `attribute_statements_input`<sup>Optional</sup> <a name="attribute_statements_input" id="@cdktf/provider-okta.appSaml.AppSaml.property.attributeStatementsInput"></a>
 
 ```python
-attribute_statements_input: typing.Union[IResolvable, typing.List[AppSamlAttributeStatements]]
+attribute_statements_input: IResolvable | typing.List[AppSamlAttributeStatements]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.appSaml.AppSamlAttributeStatements">AppSamlAttributeStatements</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-okta.appSaml.AppSamlAttributeStatements">AppSamlAttributeStatements</a>]
 
 ---
 
@@ -2164,10 +2164,10 @@ authn_context_class_ref_input: str
 ##### `auto_submit_toolbar_input`<sup>Optional</sup> <a name="auto_submit_toolbar_input" id="@cdktf/provider-okta.appSaml.AppSaml.property.autoSubmitToolbarInput"></a>
 
 ```python
-auto_submit_toolbar_input: typing.Union[bool, IResolvable]
+auto_submit_toolbar_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2214,30 +2214,30 @@ enduser_note_input: str
 ##### `hide_ios_input`<sup>Optional</sup> <a name="hide_ios_input" id="@cdktf/provider-okta.appSaml.AppSaml.property.hideIosInput"></a>
 
 ```python
-hide_ios_input: typing.Union[bool, IResolvable]
+hide_ios_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `hide_web_input`<sup>Optional</sup> <a name="hide_web_input" id="@cdktf/provider-okta.appSaml.AppSaml.property.hideWebInput"></a>
 
 ```python
-hide_web_input: typing.Union[bool, IResolvable]
+hide_web_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `honor_force_authn_input`<sup>Optional</sup> <a name="honor_force_authn_input" id="@cdktf/provider-okta.appSaml.AppSaml.property.honorForceAuthnInput"></a>
 
 ```python
-honor_force_authn_input: typing.Union[bool, IResolvable]
+honor_force_authn_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2264,10 +2264,10 @@ idp_issuer_input: str
 ##### `implicit_assignment_input`<sup>Optional</sup> <a name="implicit_assignment_input" id="@cdktf/provider-okta.appSaml.AppSaml.property.implicitAssignmentInput"></a>
 
 ```python
-implicit_assignment_input: typing.Union[bool, IResolvable]
+implicit_assignment_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2344,30 +2344,30 @@ recipient_input: str
 ##### `request_compressed_input`<sup>Optional</sup> <a name="request_compressed_input" id="@cdktf/provider-okta.appSaml.AppSaml.property.requestCompressedInput"></a>
 
 ```python
-request_compressed_input: typing.Union[bool, IResolvable]
+request_compressed_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `response_signed_input`<sup>Optional</sup> <a name="response_signed_input" id="@cdktf/provider-okta.appSaml.AppSaml.property.responseSignedInput"></a>
 
 ```python
-response_signed_input: typing.Union[bool, IResolvable]
+response_signed_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `saml_signed_request_enabled_input`<sup>Optional</sup> <a name="saml_signed_request_enabled_input" id="@cdktf/provider-okta.appSaml.AppSaml.property.samlSignedRequestEnabledInput"></a>
 
 ```python
-saml_signed_request_enabled_input: typing.Union[bool, IResolvable]
+saml_signed_request_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2474,10 +2474,10 @@ subject_name_id_template_input: str
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-okta.appSaml.AppSaml.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[IResolvable, AppSamlTimeouts]
+timeouts_input: IResolvable | AppSamlTimeouts
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-okta.appSaml.AppSamlTimeouts">AppSamlTimeouts</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-okta.appSaml.AppSamlTimeouts">AppSamlTimeouts</a>
 
 ---
 
@@ -2544,10 +2544,10 @@ accessibility_login_redirect_url: str
 ##### `accessibility_self_service`<sup>Required</sup> <a name="accessibility_self_service" id="@cdktf/provider-okta.appSaml.AppSaml.property.accessibilitySelfService"></a>
 
 ```python
-accessibility_self_service: typing.Union[bool, IResolvable]
+accessibility_self_service: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2594,10 +2594,10 @@ app_settings_json: str
 ##### `assertion_signed`<sup>Required</sup> <a name="assertion_signed" id="@cdktf/provider-okta.appSaml.AppSaml.property.assertionSigned"></a>
 
 ```python
-assertion_signed: typing.Union[bool, IResolvable]
+assertion_signed: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2634,10 +2634,10 @@ authn_context_class_ref: str
 ##### `auto_submit_toolbar`<sup>Required</sup> <a name="auto_submit_toolbar" id="@cdktf/provider-okta.appSaml.AppSaml.property.autoSubmitToolbar"></a>
 
 ```python
-auto_submit_toolbar: typing.Union[bool, IResolvable]
+auto_submit_toolbar: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2684,30 +2684,30 @@ enduser_note: str
 ##### `hide_ios`<sup>Required</sup> <a name="hide_ios" id="@cdktf/provider-okta.appSaml.AppSaml.property.hideIos"></a>
 
 ```python
-hide_ios: typing.Union[bool, IResolvable]
+hide_ios: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `hide_web`<sup>Required</sup> <a name="hide_web" id="@cdktf/provider-okta.appSaml.AppSaml.property.hideWeb"></a>
 
 ```python
-hide_web: typing.Union[bool, IResolvable]
+hide_web: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `honor_force_authn`<sup>Required</sup> <a name="honor_force_authn" id="@cdktf/provider-okta.appSaml.AppSaml.property.honorForceAuthn"></a>
 
 ```python
-honor_force_authn: typing.Union[bool, IResolvable]
+honor_force_authn: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2734,10 +2734,10 @@ idp_issuer: str
 ##### `implicit_assignment`<sup>Required</sup> <a name="implicit_assignment" id="@cdktf/provider-okta.appSaml.AppSaml.property.implicitAssignment"></a>
 
 ```python
-implicit_assignment: typing.Union[bool, IResolvable]
+implicit_assignment: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2814,30 +2814,30 @@ recipient: str
 ##### `request_compressed`<sup>Required</sup> <a name="request_compressed" id="@cdktf/provider-okta.appSaml.AppSaml.property.requestCompressed"></a>
 
 ```python
-request_compressed: typing.Union[bool, IResolvable]
+request_compressed: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `response_signed`<sup>Required</sup> <a name="response_signed" id="@cdktf/provider-okta.appSaml.AppSaml.property.responseSigned"></a>
 
 ```python
-response_signed: typing.Union[bool, IResolvable]
+response_signed: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `saml_signed_request_enabled`<sup>Required</sup> <a name="saml_signed_request_enabled" id="@cdktf/provider-okta.appSaml.AppSaml.property.samlSignedRequestEnabled"></a>
 
 ```python
-saml_signed_request_enabled: typing.Union[bool, IResolvable]
+saml_signed_request_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3167,47 +3167,47 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 from cdktf_cdktf_provider_okta import app_saml
 
 appSaml.AppSamlConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   label: str,
   accessibility_error_redirect_url: str = None,
   accessibility_login_redirect_url: str = None,
-  accessibility_self_service: typing.Union[bool, IResolvable] = None,
+  accessibility_self_service: bool | IResolvable = None,
   acs_endpoints: typing.List[str] = None,
-  acs_endpoints_indices: typing.Union[IResolvable, typing.List[AppSamlAcsEndpointsIndices]] = None,
+  acs_endpoints_indices: IResolvable | typing.List[AppSamlAcsEndpointsIndices] = None,
   admin_note: str = None,
   app_links_json: str = None,
   app_settings_json: str = None,
-  assertion_signed: typing.Union[bool, IResolvable] = None,
-  attribute_statements: typing.Union[IResolvable, typing.List[AppSamlAttributeStatements]] = None,
+  assertion_signed: bool | IResolvable = None,
+  attribute_statements: IResolvable | typing.List[AppSamlAttributeStatements] = None,
   audience: str = None,
   authentication_policy: str = None,
   authn_context_class_ref: str = None,
-  auto_submit_toolbar: typing.Union[bool, IResolvable] = None,
+  auto_submit_toolbar: bool | IResolvable = None,
   default_relay_state: str = None,
   destination: str = None,
   digest_algorithm: str = None,
   enduser_note: str = None,
-  hide_ios: typing.Union[bool, IResolvable] = None,
-  hide_web: typing.Union[bool, IResolvable] = None,
-  honor_force_authn: typing.Union[bool, IResolvable] = None,
+  hide_ios: bool | IResolvable = None,
+  hide_web: bool | IResolvable = None,
+  honor_force_authn: bool | IResolvable = None,
   id: str = None,
   idp_issuer: str = None,
-  implicit_assignment: typing.Union[bool, IResolvable] = None,
+  implicit_assignment: bool | IResolvable = None,
   inline_hook_id: str = None,
   key_name: str = None,
   key_years_valid: typing.Union[int, float] = None,
   logo: str = None,
   preconfigured_app: str = None,
   recipient: str = None,
-  request_compressed: typing.Union[bool, IResolvable] = None,
-  response_signed: typing.Union[bool, IResolvable] = None,
-  saml_signed_request_enabled: typing.Union[bool, IResolvable] = None,
+  request_compressed: bool | IResolvable = None,
+  response_signed: bool | IResolvable = None,
+  saml_signed_request_enabled: bool | IResolvable = None,
   saml_version: str = None,
   signature_algorithm: str = None,
   single_logout_certificate: str = None,
@@ -3230,47 +3230,47 @@ appSaml.AppSamlConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.label">label</a></code> | <code>str</code> | The Application's display name. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.accessibilityErrorRedirectUrl">accessibility_error_redirect_url</a></code> | <code>str</code> | Custom error page URL. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.accessibilityLoginRedirectUrl">accessibility_login_redirect_url</a></code> | <code>str</code> | Custom login page URL. |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.accessibilitySelfService">accessibility_self_service</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable self service. Default is `false`. |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.accessibilitySelfService">accessibility_self_service</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable self service. Default is `false`. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.acsEndpoints">acs_endpoints</a></code> | <code>typing.List[str]</code> | An array of ACS endpoints. You can configure a maximum of 100 endpoints. |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.acsEndpointsIndices">acs_endpoints_indices</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndices">AppSamlAcsEndpointsIndices</a>]]</code> | acs_endpoints_indices block. |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.acsEndpointsIndices">acs_endpoints_indices</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndices">AppSamlAcsEndpointsIndices</a>]</code> | acs_endpoints_indices block. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.adminNote">admin_note</a></code> | <code>str</code> | Application notes for admins. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.appLinksJson">app_links_json</a></code> | <code>str</code> | Displays specific appLinks for the app. The value for each application link should be boolean. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.appSettingsJson">app_settings_json</a></code> | <code>str</code> | Application settings in JSON format. |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.assertionSigned">assertion_signed</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Determines whether the SAML assertion is digitally signed. |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.attributeStatements">attribute_statements</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.appSaml.AppSamlAttributeStatements">AppSamlAttributeStatements</a>]]</code> | attribute_statements block. |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.assertionSigned">assertion_signed</a></code> | <code>bool \| cdktf.IResolvable</code> | Determines whether the SAML assertion is digitally signed. |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.attributeStatements">attribute_statements</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-okta.appSaml.AppSamlAttributeStatements">AppSamlAttributeStatements</a>]</code> | attribute_statements block. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.audience">audience</a></code> | <code>str</code> | Audience Restriction. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.authenticationPolicy">authentication_policy</a></code> | <code>str</code> | The ID of the associated `app_signon_policy`. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.authnContextClassRef">authn_context_class_ref</a></code> | <code>str</code> | Identifies the SAML authentication context class for the assertion’s authentication statement. |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.autoSubmitToolbar">auto_submit_toolbar</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Display auto submit toolbar. Default is: `false`. |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.autoSubmitToolbar">auto_submit_toolbar</a></code> | <code>bool \| cdktf.IResolvable</code> | Display auto submit toolbar. Default is: `false`. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.defaultRelayState">default_relay_state</a></code> | <code>str</code> | Identifies a specific application resource in an IDP initiated SSO scenario. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.destination">destination</a></code> | <code>str</code> | Identifies the location where the SAML response is intended to be sent inside of the SAML assertion. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.digestAlgorithm">digest_algorithm</a></code> | <code>str</code> | Determines the digest algorithm used to digitally sign the SAML assertion and response. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.enduserNote">enduser_note</a></code> | <code>str</code> | Application notes for end users. |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.hideIos">hide_ios</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Do not display application icon on mobile app. |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.hideWeb">hide_web</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Do not display application icon to users. |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.honorForceAuthn">honor_force_authn</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Prompt user to re-authenticate if SP asks for it. Default is: `false`. |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.hideIos">hide_ios</a></code> | <code>bool \| cdktf.IResolvable</code> | Do not display application icon on mobile app. |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.hideWeb">hide_web</a></code> | <code>bool \| cdktf.IResolvable</code> | Do not display application icon to users. |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.honorForceAuthn">honor_force_authn</a></code> | <code>bool \| cdktf.IResolvable</code> | Prompt user to re-authenticate if SP asks for it. Default is: `false`. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/app_saml#id AppSaml#id}. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.idpIssuer">idp_issuer</a></code> | <code>str</code> | SAML issuer ID. |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.implicitAssignment">implicit_assignment</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *Early Access Property*. Enable Federation Broker Mode. |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.implicitAssignment">implicit_assignment</a></code> | <code>bool \| cdktf.IResolvable</code> | *Early Access Property*. Enable Federation Broker Mode. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.inlineHookId">inline_hook_id</a></code> | <code>str</code> | Saml Inline Hook setting. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.keyName">key_name</a></code> | <code>str</code> | Certificate name. This modulates the rotation of keys. New name == new key. Required to be set with `key_years_valid`. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.keyYearsValid">key_years_valid</a></code> | <code>typing.Union[int, float]</code> | Number of years the certificate is valid (2 - 10 years). |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.logo">logo</a></code> | <code>str</code> | Local file path to the logo. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.preconfiguredApp">preconfigured_app</a></code> | <code>str</code> | Name of application from the Okta Integration Network. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.recipient">recipient</a></code> | <code>str</code> | The location where the app may present the SAML assertion. |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.requestCompressed">request_compressed</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Denotes whether the request is compressed or not. |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.responseSigned">response_signed</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Determines whether the SAML auth response message is digitally signed. |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.samlSignedRequestEnabled">saml_signed_request_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | SAML Signed Request enabled. |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.requestCompressed">request_compressed</a></code> | <code>bool \| cdktf.IResolvable</code> | Denotes whether the request is compressed or not. |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.responseSigned">response_signed</a></code> | <code>bool \| cdktf.IResolvable</code> | Determines whether the SAML auth response message is digitally signed. |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.samlSignedRequestEnabled">saml_signed_request_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | SAML Signed Request enabled. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.samlVersion">saml_version</a></code> | <code>str</code> | SAML version for the app's sign-on mode. Valid values are: `2.0` or `1.1`. Default is `2.0`. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.signatureAlgorithm">signature_algorithm</a></code> | <code>str</code> | Signature algorithm used to digitally sign the assertion and response. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlConfig.property.singleLogoutCertificate">single_logout_certificate</a></code> | <code>str</code> | x509 encoded certificate that the Service Provider uses to sign Single Logout requests. |
@@ -3292,20 +3292,20 @@ appSaml.AppSamlConfig(
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-okta.appSaml.AppSamlConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.appSaml.AppSamlConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -3352,10 +3352,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-okta.appSaml.AppSamlConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -3404,10 +3404,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 ##### `accessibility_self_service`<sup>Optional</sup> <a name="accessibility_self_service" id="@cdktf/provider-okta.appSaml.AppSamlConfig.property.accessibilitySelfService"></a>
 
 ```python
-accessibility_self_service: typing.Union[bool, IResolvable]
+accessibility_self_service: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable self service. Default is `false`.
 
@@ -3432,10 +3432,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 ##### `acs_endpoints_indices`<sup>Optional</sup> <a name="acs_endpoints_indices" id="@cdktf/provider-okta.appSaml.AppSamlConfig.property.acsEndpointsIndices"></a>
 
 ```python
-acs_endpoints_indices: typing.Union[IResolvable, typing.List[AppSamlAcsEndpointsIndices]]
+acs_endpoints_indices: IResolvable | typing.List[AppSamlAcsEndpointsIndices]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndices">AppSamlAcsEndpointsIndices</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndices">AppSamlAcsEndpointsIndices</a>]
 
 acs_endpoints_indices block.
 
@@ -3488,10 +3488,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 ##### `assertion_signed`<sup>Optional</sup> <a name="assertion_signed" id="@cdktf/provider-okta.appSaml.AppSamlConfig.property.assertionSigned"></a>
 
 ```python
-assertion_signed: typing.Union[bool, IResolvable]
+assertion_signed: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Determines whether the SAML assertion is digitally signed.
 
@@ -3502,10 +3502,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 ##### `attribute_statements`<sup>Optional</sup> <a name="attribute_statements" id="@cdktf/provider-okta.appSaml.AppSamlConfig.property.attributeStatements"></a>
 
 ```python
-attribute_statements: typing.Union[IResolvable, typing.List[AppSamlAttributeStatements]]
+attribute_statements: IResolvable | typing.List[AppSamlAttributeStatements]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.appSaml.AppSamlAttributeStatements">AppSamlAttributeStatements</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-okta.appSaml.AppSamlAttributeStatements">AppSamlAttributeStatements</a>]
 
 attribute_statements block.
 
@@ -3560,10 +3560,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 ##### `auto_submit_toolbar`<sup>Optional</sup> <a name="auto_submit_toolbar" id="@cdktf/provider-okta.appSaml.AppSamlConfig.property.autoSubmitToolbar"></a>
 
 ```python
-auto_submit_toolbar: typing.Union[bool, IResolvable]
+auto_submit_toolbar: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Display auto submit toolbar. Default is: `false`.
 
@@ -3630,10 +3630,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 ##### `hide_ios`<sup>Optional</sup> <a name="hide_ios" id="@cdktf/provider-okta.appSaml.AppSamlConfig.property.hideIos"></a>
 
 ```python
-hide_ios: typing.Union[bool, IResolvable]
+hide_ios: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Do not display application icon on mobile app.
 
@@ -3644,10 +3644,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 ##### `hide_web`<sup>Optional</sup> <a name="hide_web" id="@cdktf/provider-okta.appSaml.AppSamlConfig.property.hideWeb"></a>
 
 ```python
-hide_web: typing.Union[bool, IResolvable]
+hide_web: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Do not display application icon to users.
 
@@ -3658,10 +3658,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 ##### `honor_force_authn`<sup>Optional</sup> <a name="honor_force_authn" id="@cdktf/provider-okta.appSaml.AppSamlConfig.property.honorForceAuthn"></a>
 
 ```python
-honor_force_authn: typing.Union[bool, IResolvable]
+honor_force_authn: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Prompt user to re-authenticate if SP asks for it. Default is: `false`.
 
@@ -3701,10 +3701,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 ##### `implicit_assignment`<sup>Optional</sup> <a name="implicit_assignment" id="@cdktf/provider-okta.appSaml.AppSamlConfig.property.implicitAssignment"></a>
 
 ```python
-implicit_assignment: typing.Union[bool, IResolvable]
+implicit_assignment: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 *Early Access Property*. Enable Federation Broker Mode.
 
@@ -3812,10 +3812,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 ##### `request_compressed`<sup>Optional</sup> <a name="request_compressed" id="@cdktf/provider-okta.appSaml.AppSamlConfig.property.requestCompressed"></a>
 
 ```python
-request_compressed: typing.Union[bool, IResolvable]
+request_compressed: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Denotes whether the request is compressed or not.
 
@@ -3826,10 +3826,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 ##### `response_signed`<sup>Optional</sup> <a name="response_signed" id="@cdktf/provider-okta.appSaml.AppSamlConfig.property.responseSigned"></a>
 
 ```python
-response_signed: typing.Union[bool, IResolvable]
+response_signed: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Determines whether the SAML auth response message is digitally signed.
 
@@ -3840,10 +3840,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 ##### `saml_signed_request_enabled`<sup>Optional</sup> <a name="saml_signed_request_enabled" id="@cdktf/provider-okta.appSaml.AppSamlConfig.property.samlSignedRequestEnabled"></a>
 
 ```python
-saml_signed_request_enabled: typing.Union[bool, IResolvable]
+saml_signed_request_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 SAML Signed Request enabled.
 
@@ -4267,7 +4267,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndices">AppSamlAcsEndpointsIndices</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndices">AppSamlAcsEndpointsIndices</a>]</code> | *No description.* |
 
 ---
 
@@ -4298,10 +4298,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[AppSamlAcsEndpointsIndices]]
+internal_value: IResolvable | typing.List[AppSamlAcsEndpointsIndices]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndices">AppSamlAcsEndpointsIndices</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndices">AppSamlAcsEndpointsIndices</a>]
 
 ---
 
@@ -4565,7 +4565,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesOutputReference.property.urlInput">url_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesOutputReference.property.index">index</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesOutputReference.property.url">url</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndices">AppSamlAcsEndpointsIndices</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndices">AppSamlAcsEndpointsIndices</a></code> | *No description.* |
 
 ---
 
@@ -4636,10 +4636,10 @@ url: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndicesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, AppSamlAcsEndpointsIndices]
+internal_value: IResolvable | AppSamlAcsEndpointsIndices
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndices">AppSamlAcsEndpointsIndices</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-okta.appSaml.AppSamlAcsEndpointsIndices">AppSamlAcsEndpointsIndices</a>
 
 ---
 
@@ -4775,7 +4775,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlAttributeStatementsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlAttributeStatementsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlAttributeStatementsList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.appSaml.AppSamlAttributeStatements">AppSamlAttributeStatements</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlAttributeStatementsList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-okta.appSaml.AppSamlAttributeStatements">AppSamlAttributeStatements</a>]</code> | *No description.* |
 
 ---
 
@@ -4806,10 +4806,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-okta.appSaml.AppSamlAttributeStatementsList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[AppSamlAttributeStatements]]
+internal_value: IResolvable | typing.List[AppSamlAttributeStatements]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.appSaml.AppSamlAttributeStatements">AppSamlAttributeStatements</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-okta.appSaml.AppSamlAttributeStatements">AppSamlAttributeStatements</a>]
 
 ---
 
@@ -5116,7 +5116,7 @@ def reset_values() -> None
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlAttributeStatementsOutputReference.property.namespace">namespace</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlAttributeStatementsOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlAttributeStatementsOutputReference.property.values">values</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlAttributeStatementsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-okta.appSaml.AppSamlAttributeStatements">AppSamlAttributeStatements</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlAttributeStatementsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-okta.appSaml.AppSamlAttributeStatements">AppSamlAttributeStatements</a></code> | *No description.* |
 
 ---
 
@@ -5267,10 +5267,10 @@ values: typing.List[str]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-okta.appSaml.AppSamlAttributeStatementsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, AppSamlAttributeStatements]
+internal_value: IResolvable | AppSamlAttributeStatements
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-okta.appSaml.AppSamlAttributeStatements">AppSamlAttributeStatements</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-okta.appSaml.AppSamlAttributeStatements">AppSamlAttributeStatements</a>
 
 ---
 
@@ -6100,7 +6100,7 @@ def reset_update() -> None
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlTimeoutsOutputReference.property.read">read</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSaml.AppSamlTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-okta.appSaml.AppSamlTimeouts">AppSamlTimeouts</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSaml.AppSamlTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-okta.appSaml.AppSamlTimeouts">AppSamlTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -6191,10 +6191,10 @@ update: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-okta.appSaml.AppSamlTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, AppSamlTimeouts]
+internal_value: IResolvable | AppSamlTimeouts
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-okta.appSaml.AppSamlTimeouts">AppSamlTimeouts</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-okta.appSaml.AppSamlTimeouts">AppSamlTimeouts</a>
 
 ---
 

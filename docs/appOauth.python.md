@@ -14,24 +14,24 @@ from cdktf_cdktf_provider_okta import app_oauth
 appOauth.AppOauth(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   label: str,
   type: str,
   accessibility_error_redirect_url: str = None,
   accessibility_login_redirect_url: str = None,
-  accessibility_self_service: typing.Union[bool, IResolvable] = None,
+  accessibility_self_service: bool | IResolvable = None,
   admin_note: str = None,
   app_links_json: str = None,
   app_settings_json: str = None,
   authentication_policy: str = None,
-  auto_key_rotation: typing.Union[bool, IResolvable] = None,
-  auto_submit_toolbar: typing.Union[bool, IResolvable] = None,
+  auto_key_rotation: bool | IResolvable = None,
+  auto_submit_toolbar: bool | IResolvable = None,
   client_basic_secret: str = None,
   client_id: str = None,
   client_uri: str = None,
@@ -39,20 +39,20 @@ appOauth.AppOauth(
   enduser_note: str = None,
   grant_types: typing.List[str] = None,
   groups_claim: AppOauthGroupsClaim = None,
-  hide_ios: typing.Union[bool, IResolvable] = None,
-  hide_web: typing.Union[bool, IResolvable] = None,
+  hide_ios: bool | IResolvable = None,
+  hide_web: bool | IResolvable = None,
   id: str = None,
-  implicit_assignment: typing.Union[bool, IResolvable] = None,
+  implicit_assignment: bool | IResolvable = None,
   issuer_mode: str = None,
-  jwks: typing.Union[IResolvable, typing.List[AppOauthJwks]] = None,
+  jwks: IResolvable | typing.List[AppOauthJwks] = None,
   jwks_uri: str = None,
   login_mode: str = None,
   login_scopes: typing.List[str] = None,
   login_uri: str = None,
   logo: str = None,
   logo_uri: str = None,
-  omit_secret: typing.Union[bool, IResolvable] = None,
-  pkce_required: typing.Union[bool, IResolvable] = None,
+  omit_secret: bool | IResolvable = None,
+  pkce_required: bool | IResolvable = None,
   policy_uri: str = None,
   post_logout_redirect_uris: typing.List[str] = None,
   profile: str = None,
@@ -76,24 +76,24 @@ appOauth.AppOauth(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.Initializer.parameter.label">label</a></code> | <code>str</code> | The Application's display name. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.Initializer.parameter.type">type</a></code> | <code>str</code> | The type of client application. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.Initializer.parameter.accessibilityErrorRedirectUrl">accessibility_error_redirect_url</a></code> | <code>str</code> | Custom error page URL. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.Initializer.parameter.accessibilityLoginRedirectUrl">accessibility_login_redirect_url</a></code> | <code>str</code> | Custom login page URL. |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.Initializer.parameter.accessibilitySelfService">accessibility_self_service</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable self service. Default is `false`. |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.Initializer.parameter.accessibilitySelfService">accessibility_self_service</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable self service. Default is `false`. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.Initializer.parameter.adminNote">admin_note</a></code> | <code>str</code> | Application notes for admins. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.Initializer.parameter.appLinksJson">app_links_json</a></code> | <code>str</code> | Displays specific appLinks for the app. The value for each application link should be boolean. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.Initializer.parameter.appSettingsJson">app_settings_json</a></code> | <code>str</code> | Application settings in JSON format. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.Initializer.parameter.authenticationPolicy">authentication_policy</a></code> | <code>str</code> | The ID of the associated app_signon_policy. |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.Initializer.parameter.autoKeyRotation">auto_key_rotation</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Requested key rotation mode. |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.Initializer.parameter.autoSubmitToolbar">auto_submit_toolbar</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Display auto submit toolbar. |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.Initializer.parameter.autoKeyRotation">auto_key_rotation</a></code> | <code>bool \| cdktf.IResolvable</code> | Requested key rotation mode. |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.Initializer.parameter.autoSubmitToolbar">auto_submit_toolbar</a></code> | <code>bool \| cdktf.IResolvable</code> | Display auto submit toolbar. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.Initializer.parameter.clientBasicSecret">client_basic_secret</a></code> | <code>str</code> | The user provided OAuth client secret key value, this can be set when token_endpoint_auth_method is client_secret_basic. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.Initializer.parameter.clientId">client_id</a></code> | <code>str</code> | OAuth client ID. If set during creation, app is created with this id. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.Initializer.parameter.clientUri">client_uri</a></code> | <code>str</code> | URI to a web page providing information about the client. |
@@ -101,20 +101,20 @@ appOauth.AppOauth(
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.Initializer.parameter.enduserNote">enduser_note</a></code> | <code>str</code> | Application notes for end users. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.Initializer.parameter.grantTypes">grant_types</a></code> | <code>typing.List[str]</code> | List of OAuth 2.0 grant types. Conditional validation params found here https://developer.okta.com/docs/api/resources/apps#credentials-settings-details. Defaults to minimum requirements per app type. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.Initializer.parameter.groupsClaim">groups_claim</a></code> | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthGroupsClaim">AppOauthGroupsClaim</a></code> | groups_claim block. |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.Initializer.parameter.hideIos">hide_ios</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Do not display application icon on mobile app. |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.Initializer.parameter.hideWeb">hide_web</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Do not display application icon to users. |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.Initializer.parameter.hideIos">hide_ios</a></code> | <code>bool \| cdktf.IResolvable</code> | Do not display application icon on mobile app. |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.Initializer.parameter.hideWeb">hide_web</a></code> | <code>bool \| cdktf.IResolvable</code> | Do not display application icon to users. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/app_oauth#id AppOauth#id}. |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.Initializer.parameter.implicitAssignment">implicit_assignment</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *Early Access Property*. Enable Federation Broker Mode. |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.Initializer.parameter.implicitAssignment">implicit_assignment</a></code> | <code>bool \| cdktf.IResolvable</code> | *Early Access Property*. Enable Federation Broker Mode. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.Initializer.parameter.issuerMode">issuer_mode</a></code> | <code>str</code> | *Early Access Property*. |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.Initializer.parameter.jwks">jwks</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.appOauth.AppOauthJwks">AppOauthJwks</a>]]</code> | jwks block. |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.Initializer.parameter.jwks">jwks</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-okta.appOauth.AppOauthJwks">AppOauthJwks</a>]</code> | jwks block. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.Initializer.parameter.jwksUri">jwks_uri</a></code> | <code>str</code> | URL reference to JWKS. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.Initializer.parameter.loginMode">login_mode</a></code> | <code>str</code> | The type of Idp-Initiated login that the client supports, if any. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.Initializer.parameter.loginScopes">login_scopes</a></code> | <code>typing.List[str]</code> | List of scopes to use for the request. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.Initializer.parameter.loginUri">login_uri</a></code> | <code>str</code> | URI that initiates login. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.Initializer.parameter.logo">logo</a></code> | <code>str</code> | Local file path to the logo. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.Initializer.parameter.logoUri">logo_uri</a></code> | <code>str</code> | URI that references a logo for the client. |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.Initializer.parameter.omitSecret">omit_secret</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | This tells the provider not manage the client_secret value in state. |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.Initializer.parameter.pkceRequired">pkce_required</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Require Proof Key for Code Exchange (PKCE) for additional verification key rotation mode. See: https://developer.okta.com/docs/reference/api/apps/#oauth-credential-object. |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.Initializer.parameter.omitSecret">omit_secret</a></code> | <code>bool \| cdktf.IResolvable</code> | This tells the provider not manage the client_secret value in state. |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.Initializer.parameter.pkceRequired">pkce_required</a></code> | <code>bool \| cdktf.IResolvable</code> | Require Proof Key for Code Exchange (PKCE) for additional verification key rotation mode. See: https://developer.okta.com/docs/reference/api/apps/#oauth-credential-object. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.Initializer.parameter.policyUri">policy_uri</a></code> | <code>str</code> | URI to web page providing client policy document. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.Initializer.parameter.postLogoutRedirectUris">post_logout_redirect_uris</a></code> | <code>typing.List[str]</code> | List of URIs for redirection after logout. Note: see okta_app_oauth_post_logout_redirect_uri for appending to this list in a decentralized way. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.Initializer.parameter.profile">profile</a></code> | <code>str</code> | Custom JSON that represents an OAuth application's profile. |
@@ -154,13 +154,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-okta.appOauth.AppOauth.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.appOauth.AppOauth.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -190,7 +190,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-okta.appOauth.AppOauth.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -236,7 +236,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 ##### `accessibility_self_service`<sup>Optional</sup> <a name="accessibility_self_service" id="@cdktf/provider-okta.appOauth.AppOauth.Initializer.parameter.accessibilitySelfService"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable self service. Default is `false`.
 
@@ -288,7 +288,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 ##### `auto_key_rotation`<sup>Optional</sup> <a name="auto_key_rotation" id="@cdktf/provider-okta.appOauth.AppOauth.Initializer.parameter.autoKeyRotation"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Requested key rotation mode.
 
@@ -304,7 +304,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 ##### `auto_submit_toolbar`<sup>Optional</sup> <a name="auto_submit_toolbar" id="@cdktf/provider-okta.appOauth.AppOauth.Initializer.parameter.autoSubmitToolbar"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Display auto submit toolbar.
 
@@ -386,7 +386,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 ##### `hide_ios`<sup>Optional</sup> <a name="hide_ios" id="@cdktf/provider-okta.appOauth.AppOauth.Initializer.parameter.hideIos"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Do not display application icon on mobile app.
 
@@ -396,7 +396,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 ##### `hide_web`<sup>Optional</sup> <a name="hide_web" id="@cdktf/provider-okta.appOauth.AppOauth.Initializer.parameter.hideWeb"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Do not display application icon to users.
 
@@ -417,7 +417,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ##### `implicit_assignment`<sup>Optional</sup> <a name="implicit_assignment" id="@cdktf/provider-okta.appOauth.AppOauth.Initializer.parameter.implicitAssignment"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 *Early Access Property*. Enable Federation Broker Mode.
 
@@ -439,7 +439,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 ##### `jwks`<sup>Optional</sup> <a name="jwks" id="@cdktf/provider-okta.appOauth.AppOauth.Initializer.parameter.jwks"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.appOauth.AppOauthJwks">AppOauthJwks</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-okta.appOauth.AppOauthJwks">AppOauthJwks</a>]
 
 jwks block.
 
@@ -511,7 +511,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 ##### `omit_secret`<sup>Optional</sup> <a name="omit_secret" id="@cdktf/provider-okta.appOauth.AppOauth.Initializer.parameter.omitSecret"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 This tells the provider not manage the client_secret value in state.
 
@@ -523,7 +523,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 ##### `pkce_required`<sup>Optional</sup> <a name="pkce_required" id="@cdktf/provider-okta.appOauth.AppOauth.Initializer.parameter.pkceRequired"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Require Proof Key for Code Exchange (PKCE) for additional verification key rotation mode. See: https://developer.okta.com/docs/reference/api/apps/#oauth-credential-object.
 
@@ -994,7 +994,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-okta.appOauth.AppOauth.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-okta.appOauth.AppOauth.importFrom"></a>
@@ -1057,7 +1057,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -1073,7 +1073,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-okta.appOauth.AppOauth.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -1154,13 +1154,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 ```python
 def put_jwks(
-  value: typing.Union[IResolvable, typing.List[AppOauthJwks]]
+  value: IResolvable | typing.List[AppOauthJwks]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-okta.appOauth.AppOauth.putJwks.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.appOauth.AppOauthJwks">AppOauthJwks</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-okta.appOauth.AppOauthJwks">AppOauthJwks</a>]
 
 ---
 
@@ -1611,13 +1611,13 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.clientSecret">client_secret</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.groupsClaim">groups_claim</a></code> | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthGroupsClaimOutputReference">AppOauthGroupsClaimOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.jwks">jwks</a></code> | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthJwksList">AppOauthJwksList</a></code> | *No description.* |
@@ -1627,13 +1627,13 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthTimeoutsOutputReference">AppOauthTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.accessibilityErrorRedirectUrlInput">accessibility_error_redirect_url_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.accessibilityLoginRedirectUrlInput">accessibility_login_redirect_url_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.accessibilitySelfServiceInput">accessibility_self_service_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.accessibilitySelfServiceInput">accessibility_self_service_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.adminNoteInput">admin_note_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.appLinksJsonInput">app_links_json_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.appSettingsJsonInput">app_settings_json_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.authenticationPolicyInput">authentication_policy_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.autoKeyRotationInput">auto_key_rotation_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.autoSubmitToolbarInput">auto_submit_toolbar_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.autoKeyRotationInput">auto_key_rotation_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.autoSubmitToolbarInput">auto_submit_toolbar_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.clientBasicSecretInput">client_basic_secret_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.clientIdInput">client_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.clientUriInput">client_uri_input</a></code> | <code>str</code> | *No description.* |
@@ -1641,12 +1641,12 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.enduserNoteInput">enduser_note_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.grantTypesInput">grant_types_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.groupsClaimInput">groups_claim_input</a></code> | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthGroupsClaim">AppOauthGroupsClaim</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.hideIosInput">hide_ios_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.hideWebInput">hide_web_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.hideIosInput">hide_ios_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.hideWebInput">hide_web_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.implicitAssignmentInput">implicit_assignment_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.implicitAssignmentInput">implicit_assignment_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.issuerModeInput">issuer_mode_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.jwksInput">jwks_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.appOauth.AppOauthJwks">AppOauthJwks</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.jwksInput">jwks_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-okta.appOauth.AppOauthJwks">AppOauthJwks</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.jwksUriInput">jwks_uri_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.labelInput">label_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.loginModeInput">login_mode_input</a></code> | <code>str</code> | *No description.* |
@@ -1654,8 +1654,8 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.loginUriInput">login_uri_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.logoInput">logo_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.logoUriInput">logo_uri_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.omitSecretInput">omit_secret_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.pkceRequiredInput">pkce_required_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.omitSecretInput">omit_secret_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.pkceRequiredInput">pkce_required_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.policyUriInput">policy_uri_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.postLogoutRedirectUrisInput">post_logout_redirect_uris_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.profileInput">profile_input</a></code> | <code>str</code> | *No description.* |
@@ -1664,7 +1664,7 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.refreshTokenRotationInput">refresh_token_rotation_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.responseTypesInput">response_types_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.statusInput">status_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-okta.appOauth.AppOauthTimeouts">AppOauthTimeouts</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-okta.appOauth.AppOauthTimeouts">AppOauthTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.tokenEndpointAuthMethodInput">token_endpoint_auth_method_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.tosUriInput">tos_uri_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
@@ -1675,23 +1675,23 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.wildcardRedirectInput">wildcard_redirect_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.accessibilityErrorRedirectUrl">accessibility_error_redirect_url</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.accessibilityLoginRedirectUrl">accessibility_login_redirect_url</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.accessibilitySelfService">accessibility_self_service</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.accessibilitySelfService">accessibility_self_service</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.adminNote">admin_note</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.appLinksJson">app_links_json</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.appSettingsJson">app_settings_json</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.authenticationPolicy">authentication_policy</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.autoKeyRotation">auto_key_rotation</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.autoSubmitToolbar">auto_submit_toolbar</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.autoKeyRotation">auto_key_rotation</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.autoSubmitToolbar">auto_submit_toolbar</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.clientBasicSecret">client_basic_secret</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.clientId">client_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.clientUri">client_uri</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.consentMethod">consent_method</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.enduserNote">enduser_note</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.grantTypes">grant_types</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.hideIos">hide_ios</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.hideWeb">hide_web</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.hideIos">hide_ios</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.hideWeb">hide_web</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.implicitAssignment">implicit_assignment</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.implicitAssignment">implicit_assignment</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.issuerMode">issuer_mode</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.jwksUri">jwks_uri</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.label">label</a></code> | <code>str</code> | *No description.* |
@@ -1700,8 +1700,8 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.loginUri">login_uri</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.logo">logo</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.logoUri">logo_uri</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.omitSecret">omit_secret</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.pkceRequired">pkce_required</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.omitSecret">omit_secret</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.pkceRequired">pkce_required</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.policyUri">policy_uri</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.postLogoutRedirectUris">post_logout_redirect_uris</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.profile">profile</a></code> | <code>str</code> | *No description.* |
@@ -1796,20 +1796,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-okta.appOauth.AppOauth.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.appOauth.AppOauth.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1856,10 +1856,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-okta.appOauth.AppOauth.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1956,10 +1956,10 @@ accessibility_login_redirect_url_input: str
 ##### `accessibility_self_service_input`<sup>Optional</sup> <a name="accessibility_self_service_input" id="@cdktf/provider-okta.appOauth.AppOauth.property.accessibilitySelfServiceInput"></a>
 
 ```python
-accessibility_self_service_input: typing.Union[bool, IResolvable]
+accessibility_self_service_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2006,20 +2006,20 @@ authentication_policy_input: str
 ##### `auto_key_rotation_input`<sup>Optional</sup> <a name="auto_key_rotation_input" id="@cdktf/provider-okta.appOauth.AppOauth.property.autoKeyRotationInput"></a>
 
 ```python
-auto_key_rotation_input: typing.Union[bool, IResolvable]
+auto_key_rotation_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `auto_submit_toolbar_input`<sup>Optional</sup> <a name="auto_submit_toolbar_input" id="@cdktf/provider-okta.appOauth.AppOauth.property.autoSubmitToolbarInput"></a>
 
 ```python
-auto_submit_toolbar_input: typing.Union[bool, IResolvable]
+auto_submit_toolbar_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2096,20 +2096,20 @@ groups_claim_input: AppOauthGroupsClaim
 ##### `hide_ios_input`<sup>Optional</sup> <a name="hide_ios_input" id="@cdktf/provider-okta.appOauth.AppOauth.property.hideIosInput"></a>
 
 ```python
-hide_ios_input: typing.Union[bool, IResolvable]
+hide_ios_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `hide_web_input`<sup>Optional</sup> <a name="hide_web_input" id="@cdktf/provider-okta.appOauth.AppOauth.property.hideWebInput"></a>
 
 ```python
-hide_web_input: typing.Union[bool, IResolvable]
+hide_web_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2126,10 +2126,10 @@ id_input: str
 ##### `implicit_assignment_input`<sup>Optional</sup> <a name="implicit_assignment_input" id="@cdktf/provider-okta.appOauth.AppOauth.property.implicitAssignmentInput"></a>
 
 ```python
-implicit_assignment_input: typing.Union[bool, IResolvable]
+implicit_assignment_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2146,10 +2146,10 @@ issuer_mode_input: str
 ##### `jwks_input`<sup>Optional</sup> <a name="jwks_input" id="@cdktf/provider-okta.appOauth.AppOauth.property.jwksInput"></a>
 
 ```python
-jwks_input: typing.Union[IResolvable, typing.List[AppOauthJwks]]
+jwks_input: IResolvable | typing.List[AppOauthJwks]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.appOauth.AppOauthJwks">AppOauthJwks</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-okta.appOauth.AppOauthJwks">AppOauthJwks</a>]
 
 ---
 
@@ -2226,20 +2226,20 @@ logo_uri_input: str
 ##### `omit_secret_input`<sup>Optional</sup> <a name="omit_secret_input" id="@cdktf/provider-okta.appOauth.AppOauth.property.omitSecretInput"></a>
 
 ```python
-omit_secret_input: typing.Union[bool, IResolvable]
+omit_secret_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `pkce_required_input`<sup>Optional</sup> <a name="pkce_required_input" id="@cdktf/provider-okta.appOauth.AppOauth.property.pkceRequiredInput"></a>
 
 ```python
-pkce_required_input: typing.Union[bool, IResolvable]
+pkce_required_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2326,10 +2326,10 @@ status_input: str
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-okta.appOauth.AppOauth.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[IResolvable, AppOauthTimeouts]
+timeouts_input: IResolvable | AppOauthTimeouts
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-okta.appOauth.AppOauthTimeouts">AppOauthTimeouts</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-okta.appOauth.AppOauthTimeouts">AppOauthTimeouts</a>
 
 ---
 
@@ -2436,10 +2436,10 @@ accessibility_login_redirect_url: str
 ##### `accessibility_self_service`<sup>Required</sup> <a name="accessibility_self_service" id="@cdktf/provider-okta.appOauth.AppOauth.property.accessibilitySelfService"></a>
 
 ```python
-accessibility_self_service: typing.Union[bool, IResolvable]
+accessibility_self_service: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2486,20 +2486,20 @@ authentication_policy: str
 ##### `auto_key_rotation`<sup>Required</sup> <a name="auto_key_rotation" id="@cdktf/provider-okta.appOauth.AppOauth.property.autoKeyRotation"></a>
 
 ```python
-auto_key_rotation: typing.Union[bool, IResolvable]
+auto_key_rotation: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `auto_submit_toolbar`<sup>Required</sup> <a name="auto_submit_toolbar" id="@cdktf/provider-okta.appOauth.AppOauth.property.autoSubmitToolbar"></a>
 
 ```python
-auto_submit_toolbar: typing.Union[bool, IResolvable]
+auto_submit_toolbar: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2566,20 +2566,20 @@ grant_types: typing.List[str]
 ##### `hide_ios`<sup>Required</sup> <a name="hide_ios" id="@cdktf/provider-okta.appOauth.AppOauth.property.hideIos"></a>
 
 ```python
-hide_ios: typing.Union[bool, IResolvable]
+hide_ios: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `hide_web`<sup>Required</sup> <a name="hide_web" id="@cdktf/provider-okta.appOauth.AppOauth.property.hideWeb"></a>
 
 ```python
-hide_web: typing.Union[bool, IResolvable]
+hide_web: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2596,10 +2596,10 @@ id: str
 ##### `implicit_assignment`<sup>Required</sup> <a name="implicit_assignment" id="@cdktf/provider-okta.appOauth.AppOauth.property.implicitAssignment"></a>
 
 ```python
-implicit_assignment: typing.Union[bool, IResolvable]
+implicit_assignment: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2686,20 +2686,20 @@ logo_uri: str
 ##### `omit_secret`<sup>Required</sup> <a name="omit_secret" id="@cdktf/provider-okta.appOauth.AppOauth.property.omitSecret"></a>
 
 ```python
-omit_secret: typing.Union[bool, IResolvable]
+omit_secret: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `pkce_required`<sup>Required</sup> <a name="pkce_required" id="@cdktf/provider-okta.appOauth.AppOauth.property.pkceRequired"></a>
 
 ```python
-pkce_required: typing.Union[bool, IResolvable]
+pkce_required: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2891,24 +2891,24 @@ tfResourceType: str
 from cdktf_cdktf_provider_okta import app_oauth
 
 appOauth.AppOauthConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   label: str,
   type: str,
   accessibility_error_redirect_url: str = None,
   accessibility_login_redirect_url: str = None,
-  accessibility_self_service: typing.Union[bool, IResolvable] = None,
+  accessibility_self_service: bool | IResolvable = None,
   admin_note: str = None,
   app_links_json: str = None,
   app_settings_json: str = None,
   authentication_policy: str = None,
-  auto_key_rotation: typing.Union[bool, IResolvable] = None,
-  auto_submit_toolbar: typing.Union[bool, IResolvable] = None,
+  auto_key_rotation: bool | IResolvable = None,
+  auto_submit_toolbar: bool | IResolvable = None,
   client_basic_secret: str = None,
   client_id: str = None,
   client_uri: str = None,
@@ -2916,20 +2916,20 @@ appOauth.AppOauthConfig(
   enduser_note: str = None,
   grant_types: typing.List[str] = None,
   groups_claim: AppOauthGroupsClaim = None,
-  hide_ios: typing.Union[bool, IResolvable] = None,
-  hide_web: typing.Union[bool, IResolvable] = None,
+  hide_ios: bool | IResolvable = None,
+  hide_web: bool | IResolvable = None,
   id: str = None,
-  implicit_assignment: typing.Union[bool, IResolvable] = None,
+  implicit_assignment: bool | IResolvable = None,
   issuer_mode: str = None,
-  jwks: typing.Union[IResolvable, typing.List[AppOauthJwks]] = None,
+  jwks: IResolvable | typing.List[AppOauthJwks] = None,
   jwks_uri: str = None,
   login_mode: str = None,
   login_scopes: typing.List[str] = None,
   login_uri: str = None,
   logo: str = None,
   logo_uri: str = None,
-  omit_secret: typing.Union[bool, IResolvable] = None,
-  pkce_required: typing.Union[bool, IResolvable] = None,
+  omit_secret: bool | IResolvable = None,
+  pkce_required: bool | IResolvable = None,
   policy_uri: str = None,
   post_logout_redirect_uris: typing.List[str] = None,
   profile: str = None,
@@ -2953,24 +2953,24 @@ appOauth.AppOauthConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.label">label</a></code> | <code>str</code> | The Application's display name. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.type">type</a></code> | <code>str</code> | The type of client application. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.accessibilityErrorRedirectUrl">accessibility_error_redirect_url</a></code> | <code>str</code> | Custom error page URL. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.accessibilityLoginRedirectUrl">accessibility_login_redirect_url</a></code> | <code>str</code> | Custom login page URL. |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.accessibilitySelfService">accessibility_self_service</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable self service. Default is `false`. |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.accessibilitySelfService">accessibility_self_service</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable self service. Default is `false`. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.adminNote">admin_note</a></code> | <code>str</code> | Application notes for admins. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.appLinksJson">app_links_json</a></code> | <code>str</code> | Displays specific appLinks for the app. The value for each application link should be boolean. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.appSettingsJson">app_settings_json</a></code> | <code>str</code> | Application settings in JSON format. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.authenticationPolicy">authentication_policy</a></code> | <code>str</code> | The ID of the associated app_signon_policy. |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.autoKeyRotation">auto_key_rotation</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Requested key rotation mode. |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.autoSubmitToolbar">auto_submit_toolbar</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Display auto submit toolbar. |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.autoKeyRotation">auto_key_rotation</a></code> | <code>bool \| cdktf.IResolvable</code> | Requested key rotation mode. |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.autoSubmitToolbar">auto_submit_toolbar</a></code> | <code>bool \| cdktf.IResolvable</code> | Display auto submit toolbar. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.clientBasicSecret">client_basic_secret</a></code> | <code>str</code> | The user provided OAuth client secret key value, this can be set when token_endpoint_auth_method is client_secret_basic. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.clientId">client_id</a></code> | <code>str</code> | OAuth client ID. If set during creation, app is created with this id. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.clientUri">client_uri</a></code> | <code>str</code> | URI to a web page providing information about the client. |
@@ -2978,20 +2978,20 @@ appOauth.AppOauthConfig(
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.enduserNote">enduser_note</a></code> | <code>str</code> | Application notes for end users. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.grantTypes">grant_types</a></code> | <code>typing.List[str]</code> | List of OAuth 2.0 grant types. Conditional validation params found here https://developer.okta.com/docs/api/resources/apps#credentials-settings-details. Defaults to minimum requirements per app type. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.groupsClaim">groups_claim</a></code> | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthGroupsClaim">AppOauthGroupsClaim</a></code> | groups_claim block. |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.hideIos">hide_ios</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Do not display application icon on mobile app. |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.hideWeb">hide_web</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Do not display application icon to users. |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.hideIos">hide_ios</a></code> | <code>bool \| cdktf.IResolvable</code> | Do not display application icon on mobile app. |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.hideWeb">hide_web</a></code> | <code>bool \| cdktf.IResolvable</code> | Do not display application icon to users. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/app_oauth#id AppOauth#id}. |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.implicitAssignment">implicit_assignment</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *Early Access Property*. Enable Federation Broker Mode. |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.implicitAssignment">implicit_assignment</a></code> | <code>bool \| cdktf.IResolvable</code> | *Early Access Property*. Enable Federation Broker Mode. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.issuerMode">issuer_mode</a></code> | <code>str</code> | *Early Access Property*. |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.jwks">jwks</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.appOauth.AppOauthJwks">AppOauthJwks</a>]]</code> | jwks block. |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.jwks">jwks</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-okta.appOauth.AppOauthJwks">AppOauthJwks</a>]</code> | jwks block. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.jwksUri">jwks_uri</a></code> | <code>str</code> | URL reference to JWKS. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.loginMode">login_mode</a></code> | <code>str</code> | The type of Idp-Initiated login that the client supports, if any. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.loginScopes">login_scopes</a></code> | <code>typing.List[str]</code> | List of scopes to use for the request. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.loginUri">login_uri</a></code> | <code>str</code> | URI that initiates login. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.logo">logo</a></code> | <code>str</code> | Local file path to the logo. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.logoUri">logo_uri</a></code> | <code>str</code> | URI that references a logo for the client. |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.omitSecret">omit_secret</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | This tells the provider not manage the client_secret value in state. |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.pkceRequired">pkce_required</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Require Proof Key for Code Exchange (PKCE) for additional verification key rotation mode. See: https://developer.okta.com/docs/reference/api/apps/#oauth-credential-object. |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.omitSecret">omit_secret</a></code> | <code>bool \| cdktf.IResolvable</code> | This tells the provider not manage the client_secret value in state. |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.pkceRequired">pkce_required</a></code> | <code>bool \| cdktf.IResolvable</code> | Require Proof Key for Code Exchange (PKCE) for additional verification key rotation mode. See: https://developer.okta.com/docs/reference/api/apps/#oauth-credential-object. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.policyUri">policy_uri</a></code> | <code>str</code> | URI to web page providing client policy document. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.postLogoutRedirectUris">post_logout_redirect_uris</a></code> | <code>typing.List[str]</code> | List of URIs for redirection after logout. Note: see okta_app_oauth_post_logout_redirect_uri for appending to this list in a decentralized way. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.profile">profile</a></code> | <code>str</code> | Custom JSON that represents an OAuth application's profile. |
@@ -3014,20 +3014,20 @@ appOauth.AppOauthConfig(
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-okta.appOauth.AppOauthConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.appOauth.AppOauthConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -3074,10 +3074,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-okta.appOauth.AppOauthConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -3140,10 +3140,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 ##### `accessibility_self_service`<sup>Optional</sup> <a name="accessibility_self_service" id="@cdktf/provider-okta.appOauth.AppOauthConfig.property.accessibilitySelfService"></a>
 
 ```python
-accessibility_self_service: typing.Union[bool, IResolvable]
+accessibility_self_service: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable self service. Default is `false`.
 
@@ -3212,10 +3212,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 ##### `auto_key_rotation`<sup>Optional</sup> <a name="auto_key_rotation" id="@cdktf/provider-okta.appOauth.AppOauthConfig.property.autoKeyRotation"></a>
 
 ```python
-auto_key_rotation: typing.Union[bool, IResolvable]
+auto_key_rotation: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Requested key rotation mode.
 
@@ -3232,10 +3232,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 ##### `auto_submit_toolbar`<sup>Optional</sup> <a name="auto_submit_toolbar" id="@cdktf/provider-okta.appOauth.AppOauthConfig.property.autoSubmitToolbar"></a>
 
 ```python
-auto_submit_toolbar: typing.Union[bool, IResolvable]
+auto_submit_toolbar: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Display auto submit toolbar.
 
@@ -3346,10 +3346,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 ##### `hide_ios`<sup>Optional</sup> <a name="hide_ios" id="@cdktf/provider-okta.appOauth.AppOauthConfig.property.hideIos"></a>
 
 ```python
-hide_ios: typing.Union[bool, IResolvable]
+hide_ios: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Do not display application icon on mobile app.
 
@@ -3360,10 +3360,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 ##### `hide_web`<sup>Optional</sup> <a name="hide_web" id="@cdktf/provider-okta.appOauth.AppOauthConfig.property.hideWeb"></a>
 
 ```python
-hide_web: typing.Union[bool, IResolvable]
+hide_web: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Do not display application icon to users.
 
@@ -3389,10 +3389,10 @@ If you experience problems setting this value it might not be settable. Please t
 ##### `implicit_assignment`<sup>Optional</sup> <a name="implicit_assignment" id="@cdktf/provider-okta.appOauth.AppOauthConfig.property.implicitAssignment"></a>
 
 ```python
-implicit_assignment: typing.Union[bool, IResolvable]
+implicit_assignment: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 *Early Access Property*. Enable Federation Broker Mode.
 
@@ -3419,10 +3419,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 ##### `jwks`<sup>Optional</sup> <a name="jwks" id="@cdktf/provider-okta.appOauth.AppOauthConfig.property.jwks"></a>
 
 ```python
-jwks: typing.Union[IResolvable, typing.List[AppOauthJwks]]
+jwks: IResolvable | typing.List[AppOauthJwks]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.appOauth.AppOauthJwks">AppOauthJwks</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-okta.appOauth.AppOauthJwks">AppOauthJwks</a>]
 
 jwks block.
 
@@ -3519,10 +3519,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 ##### `omit_secret`<sup>Optional</sup> <a name="omit_secret" id="@cdktf/provider-okta.appOauth.AppOauthConfig.property.omitSecret"></a>
 
 ```python
-omit_secret: typing.Union[bool, IResolvable]
+omit_secret: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 This tells the provider not manage the client_secret value in state.
 
@@ -3535,10 +3535,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 ##### `pkce_required`<sup>Optional</sup> <a name="pkce_required" id="@cdktf/provider-okta.appOauth.AppOauthConfig.property.pkceRequired"></a>
 
 ```python
-pkce_required: typing.Union[bool, IResolvable]
+pkce_required: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Require Proof Key for Code Exchange (PKCE) for additional verification key rotation mode. See: https://developer.okta.com/docs/reference/api/apps/#oauth-credential-object.
 
@@ -4543,7 +4543,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthJwksList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthJwksList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthJwksList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.appOauth.AppOauthJwks">AppOauthJwks</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthJwksList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-okta.appOauth.AppOauthJwks">AppOauthJwks</a>]</code> | *No description.* |
 
 ---
 
@@ -4574,10 +4574,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-okta.appOauth.AppOauthJwksList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[AppOauthJwks]]
+internal_value: IResolvable | typing.List[AppOauthJwks]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.appOauth.AppOauthJwks">AppOauthJwks</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-okta.appOauth.AppOauthJwks">AppOauthJwks</a>]
 
 ---
 
@@ -4877,7 +4877,7 @@ def reset_y() -> None
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthJwksOutputReference.property.n">n</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthJwksOutputReference.property.x">x</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthJwksOutputReference.property.y">y</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthJwksOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-okta.appOauth.AppOauthJwks">AppOauthJwks</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthJwksOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-okta.appOauth.AppOauthJwks">AppOauthJwks</a></code> | *No description.* |
 
 ---
 
@@ -5028,10 +5028,10 @@ y: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-okta.appOauth.AppOauthJwksOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, AppOauthJwks]
+internal_value: IResolvable | AppOauthJwks
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-okta.appOauth.AppOauthJwks">AppOauthJwks</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-okta.appOauth.AppOauthJwks">AppOauthJwks</a>
 
 ---
 
@@ -5298,7 +5298,7 @@ def reset_update() -> None
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthTimeoutsOutputReference.property.read">read</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-okta.appOauth.AppOauthTimeouts">AppOauthTimeouts</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-okta.appOauth.AppOauthTimeouts">AppOauthTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -5389,10 +5389,10 @@ update: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-okta.appOauth.AppOauthTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, AppOauthTimeouts]
+internal_value: IResolvable | AppOauthTimeouts
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-okta.appOauth.AppOauthTimeouts">AppOauthTimeouts</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-okta.appOauth.AppOauthTimeouts">AppOauthTimeouts</a>
 
 ---
 

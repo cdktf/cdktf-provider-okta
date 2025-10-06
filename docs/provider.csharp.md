@@ -387,7 +387,7 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 | <code><a href="#@cdktf/provider-okta.provider.OktaProvider.property.accessTokenInput">AccessTokenInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.provider.OktaProvider.property.aliasInput">AliasInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.provider.OktaProvider.property.apiTokenInput">ApiTokenInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.provider.OktaProvider.property.backoffInput">BackoffInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.provider.OktaProvider.property.backoffInput">BackoffInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.provider.OktaProvider.property.baseUrlInput">BaseUrlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.provider.OktaProvider.property.clientIdInput">ClientIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.provider.OktaProvider.property.httpProxyInput">HttpProxyInput</a></code> | <code>string</code> | *No description.* |
@@ -404,7 +404,7 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 | <code><a href="#@cdktf/provider-okta.provider.OktaProvider.property.scopesInput">ScopesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.provider.OktaProvider.property.accessToken">AccessToken</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.provider.OktaProvider.property.apiToken">ApiToken</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.provider.OktaProvider.property.backoff">Backoff</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.provider.OktaProvider.property.backoff">Backoff</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.provider.OktaProvider.property.baseUrl">BaseUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.provider.OktaProvider.property.clientId">ClientId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.provider.OktaProvider.property.httpProxy">HttpProxy</a></code> | <code>string</code> | *No description.* |
@@ -547,10 +547,10 @@ public string ApiTokenInput { get; }
 ##### `BackoffInput`<sup>Optional</sup> <a name="BackoffInput" id="@cdktf/provider-okta.provider.OktaProvider.property.backoffInput"></a>
 
 ```csharp
-public object BackoffInput { get; }
+public bool|IResolvable BackoffInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -717,10 +717,10 @@ public string ApiToken { get; }
 ##### `Backoff`<sup>Optional</sup> <a name="Backoff" id="@cdktf/provider-okta.provider.OktaProvider.property.backoff"></a>
 
 ```csharp
-public object Backoff { get; }
+public bool|IResolvable Backoff { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -895,7 +895,7 @@ new OktaProviderConfig {
     string AccessToken = null,
     string Alias = null,
     string ApiToken = null,
-    object Backoff = null,
+    bool|IResolvable Backoff = null,
     string BaseUrl = null,
     string ClientId = null,
     string HttpProxy = null,
@@ -920,7 +920,7 @@ new OktaProviderConfig {
 | <code><a href="#@cdktf/provider-okta.provider.OktaProviderConfig.property.accessToken">AccessToken</a></code> | <code>string</code> | Bearer token granting privileges to Okta API. |
 | <code><a href="#@cdktf/provider-okta.provider.OktaProviderConfig.property.alias">Alias</a></code> | <code>string</code> | Alias name. |
 | <code><a href="#@cdktf/provider-okta.provider.OktaProviderConfig.property.apiToken">ApiToken</a></code> | <code>string</code> | API Token granting privileges to Okta API. |
-| <code><a href="#@cdktf/provider-okta.provider.OktaProviderConfig.property.backoff">Backoff</a></code> | <code>object</code> | Use exponential back off strategy for rate limits. |
+| <code><a href="#@cdktf/provider-okta.provider.OktaProviderConfig.property.backoff">Backoff</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Use exponential back off strategy for rate limits. |
 | <code><a href="#@cdktf/provider-okta.provider.OktaProviderConfig.property.baseUrl">BaseUrl</a></code> | <code>string</code> | The Okta url. (Use 'oktapreview.com' for Okta testing). |
 | <code><a href="#@cdktf/provider-okta.provider.OktaProviderConfig.property.clientId">ClientId</a></code> | <code>string</code> | API Token granting privileges to Okta API. |
 | <code><a href="#@cdktf/provider-okta.provider.OktaProviderConfig.property.httpProxy">HttpProxy</a></code> | <code>string</code> | Alternate HTTP proxy of scheme://hostname or scheme://hostname:port format. |
@@ -983,10 +983,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 ##### `Backoff`<sup>Optional</sup> <a name="Backoff" id="@cdktf/provider-okta.provider.OktaProviderConfig.property.backoff"></a>
 
 ```csharp
-public object Backoff { get; set; }
+public bool|IResolvable Backoff { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Use exponential back off strategy for rate limits.
 

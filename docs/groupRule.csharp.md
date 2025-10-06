@@ -278,7 +278,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-okta.groupRule.GroupRule.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-okta.groupRule.GroupRule.importFrom"></a>
@@ -332,7 +332,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-okta.groupRule.GroupRule.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -347,7 +347,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-okta.groupRule.GroupRule.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -525,19 +525,19 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.property.expressionTypeInput">ExpressionTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.property.expressionValueInput">ExpressionValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.property.groupAssignmentsInput">GroupAssignmentsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.property.removeAssignedUsersInput">RemoveAssignedUsersInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.property.removeAssignedUsersInput">RemoveAssignedUsersInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.property.statusInput">StatusInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.property.usersExcludedInput">UsersExcludedInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.property.expressionType">ExpressionType</a></code> | <code>string</code> | *No description.* |
@@ -545,7 +545,7 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.property.groupAssignments">GroupAssignments</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.property.name">Name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.property.removeAssignedUsers">RemoveAssignedUsers</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.property.removeAssignedUsers">RemoveAssignedUsers</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.property.status">Status</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRule.property.usersExcluded">UsersExcluded</a></code> | <code>string[]</code> | *No description.* |
 
@@ -626,20 +626,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-okta.groupRule.GroupRule.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.groupRule.GroupRule.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -686,10 +686,10 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-okta.groupRule.GroupRule.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -746,10 +746,10 @@ public string NameInput { get; }
 ##### `RemoveAssignedUsersInput`<sup>Optional</sup> <a name="RemoveAssignedUsersInput" id="@cdktf/provider-okta.groupRule.GroupRule.property.removeAssignedUsersInput"></a>
 
 ```csharp
-public object RemoveAssignedUsersInput { get; }
+public bool|IResolvable RemoveAssignedUsersInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -826,10 +826,10 @@ public string Name { get; }
 ##### `RemoveAssignedUsers`<sup>Required</sup> <a name="RemoveAssignedUsers" id="@cdktf/provider-okta.groupRule.GroupRule.property.removeAssignedUsers"></a>
 
 ```csharp
-public object RemoveAssignedUsers { get; }
+public bool|IResolvable RemoveAssignedUsers { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -881,19 +881,19 @@ public string TfResourceType { get; }
 using HashiCorp.Cdktf.Providers.Okta;
 
 new GroupRuleConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string ExpressionValue,
     string[] GroupAssignments,
     string Name,
     string ExpressionType = null,
     string Id = null,
-    object RemoveAssignedUsers = null,
+    bool|IResolvable RemoveAssignedUsers = null,
     string Status = null,
     string[] UsersExcluded = null
 };
@@ -903,19 +903,19 @@ new GroupRuleConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.groupRule.GroupRuleConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.groupRule.GroupRuleConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.groupRule.GroupRuleConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.groupRule.GroupRuleConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRuleConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRuleConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRuleConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRuleConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.groupRule.GroupRuleConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.groupRule.GroupRuleConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRuleConfig.property.expressionValue">ExpressionValue</a></code> | <code>string</code> | The expression value. |
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRuleConfig.property.groupAssignments">GroupAssignments</a></code> | <code>string[]</code> | The list of group ids to assign the users to. |
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRuleConfig.property.name">Name</a></code> | <code>string</code> | The name of the Group Rule (min character 1; max characters 50). |
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRuleConfig.property.expressionType">ExpressionType</a></code> | <code>string</code> | The expression type to use to invoke the rule. The default is `urn:okta:expression:1.0`. |
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRuleConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/group_rule#id GroupRule#id}. |
-| <code><a href="#@cdktf/provider-okta.groupRule.GroupRuleConfig.property.removeAssignedUsers">RemoveAssignedUsers</a></code> | <code>object</code> | Remove users added by this rule from the assigned group after deleting this resource. Default is `false`. |
+| <code><a href="#@cdktf/provider-okta.groupRule.GroupRuleConfig.property.removeAssignedUsers">RemoveAssignedUsers</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Remove users added by this rule from the assigned group after deleting this resource. Default is `false`. |
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRuleConfig.property.status">Status</a></code> | <code>string</code> | Default to `ACTIVE`. |
 | <code><a href="#@cdktf/provider-okta.groupRule.GroupRuleConfig.property.usersExcluded">UsersExcluded</a></code> | <code>string[]</code> | The list of user IDs that would be excluded when rules are processed. |
 
@@ -924,20 +924,20 @@ new GroupRuleConfig {
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-okta.groupRule.GroupRuleConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.groupRule.GroupRuleConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -984,10 +984,10 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-okta.groupRule.GroupRuleConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -1065,10 +1065,10 @@ If you experience problems setting this value it might not be settable. Please t
 ##### `RemoveAssignedUsers`<sup>Optional</sup> <a name="RemoveAssignedUsers" id="@cdktf/provider-okta.groupRule.GroupRuleConfig.property.removeAssignedUsers"></a>
 
 ```csharp
-public object RemoveAssignedUsers { get; set; }
+public bool|IResolvable RemoveAssignedUsers { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Remove users added by this rule from the assigned group after deleting this resource. Default is `false`.
 

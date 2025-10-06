@@ -322,7 +322,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-okta.appOauth.AppOauth.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-okta.appOauth.AppOauth.importFrom"></a>
@@ -376,7 +376,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-okta.appOauth.AppOauth.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -391,7 +391,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-okta.appOauth.AppOauth.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -428,12 +428,12 @@ private void PutGroupsClaim(AppOauthGroupsClaim Value)
 ##### `PutJwks` <a name="PutJwks" id="@cdktf/provider-okta.appOauth.AppOauth.putJwks"></a>
 
 ```csharp
-private void PutJwks(object Value)
+private void PutJwks(IResolvable|AppOauthJwks[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-okta.appOauth.AppOauth.putJwks.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-okta.appOauth.AppOauthJwks">AppOauthJwks</a>[]
 
 ---
 
@@ -851,13 +851,13 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.clientSecret">ClientSecret</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.groupsClaim">GroupsClaim</a></code> | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthGroupsClaimOutputReference">AppOauthGroupsClaimOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.jwks">Jwks</a></code> | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthJwksList">AppOauthJwksList</a></code> | *No description.* |
@@ -867,13 +867,13 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthTimeoutsOutputReference">AppOauthTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.accessibilityErrorRedirectUrlInput">AccessibilityErrorRedirectUrlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.accessibilityLoginRedirectUrlInput">AccessibilityLoginRedirectUrlInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.accessibilitySelfServiceInput">AccessibilitySelfServiceInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.accessibilitySelfServiceInput">AccessibilitySelfServiceInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.adminNoteInput">AdminNoteInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.appLinksJsonInput">AppLinksJsonInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.appSettingsJsonInput">AppSettingsJsonInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.authenticationPolicyInput">AuthenticationPolicyInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.autoKeyRotationInput">AutoKeyRotationInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.autoSubmitToolbarInput">AutoSubmitToolbarInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.autoKeyRotationInput">AutoKeyRotationInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.autoSubmitToolbarInput">AutoSubmitToolbarInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.clientBasicSecretInput">ClientBasicSecretInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.clientIdInput">ClientIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.clientUriInput">ClientUriInput</a></code> | <code>string</code> | *No description.* |
@@ -881,12 +881,12 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.enduserNoteInput">EnduserNoteInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.grantTypesInput">GrantTypesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.groupsClaimInput">GroupsClaimInput</a></code> | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthGroupsClaim">AppOauthGroupsClaim</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.hideIosInput">HideIosInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.hideWebInput">HideWebInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.hideIosInput">HideIosInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.hideWebInput">HideWebInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.implicitAssignmentInput">ImplicitAssignmentInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.implicitAssignmentInput">ImplicitAssignmentInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.issuerModeInput">IssuerModeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.jwksInput">JwksInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.jwksInput">JwksInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-okta.appOauth.AppOauthJwks">AppOauthJwks</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.jwksUriInput">JwksUriInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.labelInput">LabelInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.loginModeInput">LoginModeInput</a></code> | <code>string</code> | *No description.* |
@@ -894,8 +894,8 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.loginUriInput">LoginUriInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.logoInput">LogoInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.logoUriInput">LogoUriInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.omitSecretInput">OmitSecretInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.pkceRequiredInput">PkceRequiredInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.omitSecretInput">OmitSecretInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.pkceRequiredInput">PkceRequiredInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.policyUriInput">PolicyUriInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.postLogoutRedirectUrisInput">PostLogoutRedirectUrisInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.profileInput">ProfileInput</a></code> | <code>string</code> | *No description.* |
@@ -904,7 +904,7 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.refreshTokenRotationInput">RefreshTokenRotationInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.responseTypesInput">ResponseTypesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.statusInput">StatusInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.timeoutsInput">TimeoutsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.timeoutsInput">TimeoutsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-okta.appOauth.AppOauthTimeouts">AppOauthTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.tokenEndpointAuthMethodInput">TokenEndpointAuthMethodInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.tosUriInput">TosUriInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.typeInput">TypeInput</a></code> | <code>string</code> | *No description.* |
@@ -915,23 +915,23 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.wildcardRedirectInput">WildcardRedirectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.accessibilityErrorRedirectUrl">AccessibilityErrorRedirectUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.accessibilityLoginRedirectUrl">AccessibilityLoginRedirectUrl</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.accessibilitySelfService">AccessibilitySelfService</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.accessibilitySelfService">AccessibilitySelfService</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.adminNote">AdminNote</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.appLinksJson">AppLinksJson</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.appSettingsJson">AppSettingsJson</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.authenticationPolicy">AuthenticationPolicy</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.autoKeyRotation">AutoKeyRotation</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.autoSubmitToolbar">AutoSubmitToolbar</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.autoKeyRotation">AutoKeyRotation</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.autoSubmitToolbar">AutoSubmitToolbar</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.clientBasicSecret">ClientBasicSecret</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.clientId">ClientId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.clientUri">ClientUri</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.consentMethod">ConsentMethod</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.enduserNote">EnduserNote</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.grantTypes">GrantTypes</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.hideIos">HideIos</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.hideWeb">HideWeb</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.hideIos">HideIos</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.hideWeb">HideWeb</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.id">Id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.implicitAssignment">ImplicitAssignment</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.implicitAssignment">ImplicitAssignment</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.issuerMode">IssuerMode</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.jwksUri">JwksUri</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.label">Label</a></code> | <code>string</code> | *No description.* |
@@ -940,8 +940,8 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.loginUri">LoginUri</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.logo">Logo</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.logoUri">LogoUri</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.omitSecret">OmitSecret</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.pkceRequired">PkceRequired</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.omitSecret">OmitSecret</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.pkceRequired">PkceRequired</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.policyUri">PolicyUri</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.postLogoutRedirectUris">PostLogoutRedirectUris</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauth.property.profile">Profile</a></code> | <code>string</code> | *No description.* |
@@ -1036,20 +1036,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-okta.appOauth.AppOauth.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.appOauth.AppOauth.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -1096,10 +1096,10 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-okta.appOauth.AppOauth.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -1196,10 +1196,10 @@ public string AccessibilityLoginRedirectUrlInput { get; }
 ##### `AccessibilitySelfServiceInput`<sup>Optional</sup> <a name="AccessibilitySelfServiceInput" id="@cdktf/provider-okta.appOauth.AppOauth.property.accessibilitySelfServiceInput"></a>
 
 ```csharp
-public object AccessibilitySelfServiceInput { get; }
+public bool|IResolvable AccessibilitySelfServiceInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1246,20 +1246,20 @@ public string AuthenticationPolicyInput { get; }
 ##### `AutoKeyRotationInput`<sup>Optional</sup> <a name="AutoKeyRotationInput" id="@cdktf/provider-okta.appOauth.AppOauth.property.autoKeyRotationInput"></a>
 
 ```csharp
-public object AutoKeyRotationInput { get; }
+public bool|IResolvable AutoKeyRotationInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AutoSubmitToolbarInput`<sup>Optional</sup> <a name="AutoSubmitToolbarInput" id="@cdktf/provider-okta.appOauth.AppOauth.property.autoSubmitToolbarInput"></a>
 
 ```csharp
-public object AutoSubmitToolbarInput { get; }
+public bool|IResolvable AutoSubmitToolbarInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1336,20 +1336,20 @@ public AppOauthGroupsClaim GroupsClaimInput { get; }
 ##### `HideIosInput`<sup>Optional</sup> <a name="HideIosInput" id="@cdktf/provider-okta.appOauth.AppOauth.property.hideIosInput"></a>
 
 ```csharp
-public object HideIosInput { get; }
+public bool|IResolvable HideIosInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `HideWebInput`<sup>Optional</sup> <a name="HideWebInput" id="@cdktf/provider-okta.appOauth.AppOauth.property.hideWebInput"></a>
 
 ```csharp
-public object HideWebInput { get; }
+public bool|IResolvable HideWebInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1366,10 +1366,10 @@ public string IdInput { get; }
 ##### `ImplicitAssignmentInput`<sup>Optional</sup> <a name="ImplicitAssignmentInput" id="@cdktf/provider-okta.appOauth.AppOauth.property.implicitAssignmentInput"></a>
 
 ```csharp
-public object ImplicitAssignmentInput { get; }
+public bool|IResolvable ImplicitAssignmentInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1386,10 +1386,10 @@ public string IssuerModeInput { get; }
 ##### `JwksInput`<sup>Optional</sup> <a name="JwksInput" id="@cdktf/provider-okta.appOauth.AppOauth.property.jwksInput"></a>
 
 ```csharp
-public object JwksInput { get; }
+public IResolvable|AppOauthJwks[] JwksInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-okta.appOauth.AppOauthJwks">AppOauthJwks</a>[]
 
 ---
 
@@ -1466,20 +1466,20 @@ public string LogoUriInput { get; }
 ##### `OmitSecretInput`<sup>Optional</sup> <a name="OmitSecretInput" id="@cdktf/provider-okta.appOauth.AppOauth.property.omitSecretInput"></a>
 
 ```csharp
-public object OmitSecretInput { get; }
+public bool|IResolvable OmitSecretInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `PkceRequiredInput`<sup>Optional</sup> <a name="PkceRequiredInput" id="@cdktf/provider-okta.appOauth.AppOauth.property.pkceRequiredInput"></a>
 
 ```csharp
-public object PkceRequiredInput { get; }
+public bool|IResolvable PkceRequiredInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1566,10 +1566,10 @@ public string StatusInput { get; }
 ##### `TimeoutsInput`<sup>Optional</sup> <a name="TimeoutsInput" id="@cdktf/provider-okta.appOauth.AppOauth.property.timeoutsInput"></a>
 
 ```csharp
-public object TimeoutsInput { get; }
+public IResolvable|AppOauthTimeouts TimeoutsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-okta.appOauth.AppOauthTimeouts">AppOauthTimeouts</a>
 
 ---
 
@@ -1676,10 +1676,10 @@ public string AccessibilityLoginRedirectUrl { get; }
 ##### `AccessibilitySelfService`<sup>Required</sup> <a name="AccessibilitySelfService" id="@cdktf/provider-okta.appOauth.AppOauth.property.accessibilitySelfService"></a>
 
 ```csharp
-public object AccessibilitySelfService { get; }
+public bool|IResolvable AccessibilitySelfService { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1726,20 +1726,20 @@ public string AuthenticationPolicy { get; }
 ##### `AutoKeyRotation`<sup>Required</sup> <a name="AutoKeyRotation" id="@cdktf/provider-okta.appOauth.AppOauth.property.autoKeyRotation"></a>
 
 ```csharp
-public object AutoKeyRotation { get; }
+public bool|IResolvable AutoKeyRotation { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AutoSubmitToolbar`<sup>Required</sup> <a name="AutoSubmitToolbar" id="@cdktf/provider-okta.appOauth.AppOauth.property.autoSubmitToolbar"></a>
 
 ```csharp
-public object AutoSubmitToolbar { get; }
+public bool|IResolvable AutoSubmitToolbar { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1806,20 +1806,20 @@ public string[] GrantTypes { get; }
 ##### `HideIos`<sup>Required</sup> <a name="HideIos" id="@cdktf/provider-okta.appOauth.AppOauth.property.hideIos"></a>
 
 ```csharp
-public object HideIos { get; }
+public bool|IResolvable HideIos { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `HideWeb`<sup>Required</sup> <a name="HideWeb" id="@cdktf/provider-okta.appOauth.AppOauth.property.hideWeb"></a>
 
 ```csharp
-public object HideWeb { get; }
+public bool|IResolvable HideWeb { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1836,10 +1836,10 @@ public string Id { get; }
 ##### `ImplicitAssignment`<sup>Required</sup> <a name="ImplicitAssignment" id="@cdktf/provider-okta.appOauth.AppOauth.property.implicitAssignment"></a>
 
 ```csharp
-public object ImplicitAssignment { get; }
+public bool|IResolvable ImplicitAssignment { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1926,20 +1926,20 @@ public string LogoUri { get; }
 ##### `OmitSecret`<sup>Required</sup> <a name="OmitSecret" id="@cdktf/provider-okta.appOauth.AppOauth.property.omitSecret"></a>
 
 ```csharp
-public object OmitSecret { get; }
+public bool|IResolvable OmitSecret { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `PkceRequired`<sup>Required</sup> <a name="PkceRequired" id="@cdktf/provider-okta.appOauth.AppOauth.property.pkceRequired"></a>
 
 ```csharp
-public object PkceRequired { get; }
+public bool|IResolvable PkceRequired { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -2131,24 +2131,24 @@ public string TfResourceType { get; }
 using HashiCorp.Cdktf.Providers.Okta;
 
 new AppOauthConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string Label,
     string Type,
     string AccessibilityErrorRedirectUrl = null,
     string AccessibilityLoginRedirectUrl = null,
-    object AccessibilitySelfService = null,
+    bool|IResolvable AccessibilitySelfService = null,
     string AdminNote = null,
     string AppLinksJson = null,
     string AppSettingsJson = null,
     string AuthenticationPolicy = null,
-    object AutoKeyRotation = null,
-    object AutoSubmitToolbar = null,
+    bool|IResolvable AutoKeyRotation = null,
+    bool|IResolvable AutoSubmitToolbar = null,
     string ClientBasicSecret = null,
     string ClientId = null,
     string ClientUri = null,
@@ -2156,20 +2156,20 @@ new AppOauthConfig {
     string EnduserNote = null,
     string[] GrantTypes = null,
     AppOauthGroupsClaim GroupsClaim = null,
-    object HideIos = null,
-    object HideWeb = null,
+    bool|IResolvable HideIos = null,
+    bool|IResolvable HideWeb = null,
     string Id = null,
-    object ImplicitAssignment = null,
+    bool|IResolvable ImplicitAssignment = null,
     string IssuerMode = null,
-    object Jwks = null,
+    IResolvable|AppOauthJwks[] Jwks = null,
     string JwksUri = null,
     string LoginMode = null,
     string[] LoginScopes = null,
     string LoginUri = null,
     string Logo = null,
     string LogoUri = null,
-    object OmitSecret = null,
-    object PkceRequired = null,
+    bool|IResolvable OmitSecret = null,
+    bool|IResolvable PkceRequired = null,
     string PolicyUri = null,
     string[] PostLogoutRedirectUris = null,
     string Profile = null,
@@ -2193,24 +2193,24 @@ new AppOauthConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.label">Label</a></code> | <code>string</code> | The Application's display name. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.type">Type</a></code> | <code>string</code> | The type of client application. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.accessibilityErrorRedirectUrl">AccessibilityErrorRedirectUrl</a></code> | <code>string</code> | Custom error page URL. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.accessibilityLoginRedirectUrl">AccessibilityLoginRedirectUrl</a></code> | <code>string</code> | Custom login page URL. |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.accessibilitySelfService">AccessibilitySelfService</a></code> | <code>object</code> | Enable self service. Default is `false`. |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.accessibilitySelfService">AccessibilitySelfService</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable self service. Default is `false`. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.adminNote">AdminNote</a></code> | <code>string</code> | Application notes for admins. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.appLinksJson">AppLinksJson</a></code> | <code>string</code> | Displays specific appLinks for the app. The value for each application link should be boolean. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.appSettingsJson">AppSettingsJson</a></code> | <code>string</code> | Application settings in JSON format. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.authenticationPolicy">AuthenticationPolicy</a></code> | <code>string</code> | The ID of the associated app_signon_policy. |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.autoKeyRotation">AutoKeyRotation</a></code> | <code>object</code> | Requested key rotation mode. |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.autoSubmitToolbar">AutoSubmitToolbar</a></code> | <code>object</code> | Display auto submit toolbar. |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.autoKeyRotation">AutoKeyRotation</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Requested key rotation mode. |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.autoSubmitToolbar">AutoSubmitToolbar</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Display auto submit toolbar. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.clientBasicSecret">ClientBasicSecret</a></code> | <code>string</code> | The user provided OAuth client secret key value, this can be set when token_endpoint_auth_method is client_secret_basic. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.clientId">ClientId</a></code> | <code>string</code> | OAuth client ID. If set during creation, app is created with this id. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.clientUri">ClientUri</a></code> | <code>string</code> | URI to a web page providing information about the client. |
@@ -2218,20 +2218,20 @@ new AppOauthConfig {
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.enduserNote">EnduserNote</a></code> | <code>string</code> | Application notes for end users. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.grantTypes">GrantTypes</a></code> | <code>string[]</code> | List of OAuth 2.0 grant types. Conditional validation params found here https://developer.okta.com/docs/api/resources/apps#credentials-settings-details. Defaults to minimum requirements per app type. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.groupsClaim">GroupsClaim</a></code> | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthGroupsClaim">AppOauthGroupsClaim</a></code> | groups_claim block. |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.hideIos">HideIos</a></code> | <code>object</code> | Do not display application icon on mobile app. |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.hideWeb">HideWeb</a></code> | <code>object</code> | Do not display application icon to users. |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.hideIos">HideIos</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Do not display application icon on mobile app. |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.hideWeb">HideWeb</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Do not display application icon to users. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/app_oauth#id AppOauth#id}. |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.implicitAssignment">ImplicitAssignment</a></code> | <code>object</code> | *Early Access Property*. Enable Federation Broker Mode. |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.implicitAssignment">ImplicitAssignment</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *Early Access Property*. Enable Federation Broker Mode. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.issuerMode">IssuerMode</a></code> | <code>string</code> | *Early Access Property*. |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.jwks">Jwks</a></code> | <code>object</code> | jwks block. |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.jwks">Jwks</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-okta.appOauth.AppOauthJwks">AppOauthJwks</a>[]</code> | jwks block. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.jwksUri">JwksUri</a></code> | <code>string</code> | URL reference to JWKS. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.loginMode">LoginMode</a></code> | <code>string</code> | The type of Idp-Initiated login that the client supports, if any. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.loginScopes">LoginScopes</a></code> | <code>string[]</code> | List of scopes to use for the request. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.loginUri">LoginUri</a></code> | <code>string</code> | URI that initiates login. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.logo">Logo</a></code> | <code>string</code> | Local file path to the logo. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.logoUri">LogoUri</a></code> | <code>string</code> | URI that references a logo for the client. |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.omitSecret">OmitSecret</a></code> | <code>object</code> | This tells the provider not manage the client_secret value in state. |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.pkceRequired">PkceRequired</a></code> | <code>object</code> | Require Proof Key for Code Exchange (PKCE) for additional verification key rotation mode. See: https://developer.okta.com/docs/reference/api/apps/#oauth-credential-object. |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.omitSecret">OmitSecret</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | This tells the provider not manage the client_secret value in state. |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.pkceRequired">PkceRequired</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Require Proof Key for Code Exchange (PKCE) for additional verification key rotation mode. See: https://developer.okta.com/docs/reference/api/apps/#oauth-credential-object. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.policyUri">PolicyUri</a></code> | <code>string</code> | URI to web page providing client policy document. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.postLogoutRedirectUris">PostLogoutRedirectUris</a></code> | <code>string[]</code> | List of URIs for redirection after logout. Note: see okta_app_oauth_post_logout_redirect_uri for appending to this list in a decentralized way. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthConfig.property.profile">Profile</a></code> | <code>string</code> | Custom JSON that represents an OAuth application's profile. |
@@ -2254,20 +2254,20 @@ new AppOauthConfig {
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-okta.appOauth.AppOauthConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.appOauth.AppOauthConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -2314,10 +2314,10 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-okta.appOauth.AppOauthConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -2380,10 +2380,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 ##### `AccessibilitySelfService`<sup>Optional</sup> <a name="AccessibilitySelfService" id="@cdktf/provider-okta.appOauth.AppOauthConfig.property.accessibilitySelfService"></a>
 
 ```csharp
-public object AccessibilitySelfService { get; set; }
+public bool|IResolvable AccessibilitySelfService { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enable self service. Default is `false`.
 
@@ -2452,10 +2452,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 ##### `AutoKeyRotation`<sup>Optional</sup> <a name="AutoKeyRotation" id="@cdktf/provider-okta.appOauth.AppOauthConfig.property.autoKeyRotation"></a>
 
 ```csharp
-public object AutoKeyRotation { get; set; }
+public bool|IResolvable AutoKeyRotation { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Requested key rotation mode.
 
@@ -2472,10 +2472,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 ##### `AutoSubmitToolbar`<sup>Optional</sup> <a name="AutoSubmitToolbar" id="@cdktf/provider-okta.appOauth.AppOauthConfig.property.autoSubmitToolbar"></a>
 
 ```csharp
-public object AutoSubmitToolbar { get; set; }
+public bool|IResolvable AutoSubmitToolbar { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Display auto submit toolbar.
 
@@ -2586,10 +2586,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 ##### `HideIos`<sup>Optional</sup> <a name="HideIos" id="@cdktf/provider-okta.appOauth.AppOauthConfig.property.hideIos"></a>
 
 ```csharp
-public object HideIos { get; set; }
+public bool|IResolvable HideIos { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Do not display application icon on mobile app.
 
@@ -2600,10 +2600,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 ##### `HideWeb`<sup>Optional</sup> <a name="HideWeb" id="@cdktf/provider-okta.appOauth.AppOauthConfig.property.hideWeb"></a>
 
 ```csharp
-public object HideWeb { get; set; }
+public bool|IResolvable HideWeb { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Do not display application icon to users.
 
@@ -2629,10 +2629,10 @@ If you experience problems setting this value it might not be settable. Please t
 ##### `ImplicitAssignment`<sup>Optional</sup> <a name="ImplicitAssignment" id="@cdktf/provider-okta.appOauth.AppOauthConfig.property.implicitAssignment"></a>
 
 ```csharp
-public object ImplicitAssignment { get; set; }
+public bool|IResolvable ImplicitAssignment { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 *Early Access Property*. Enable Federation Broker Mode.
 
@@ -2659,10 +2659,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 ##### `Jwks`<sup>Optional</sup> <a name="Jwks" id="@cdktf/provider-okta.appOauth.AppOauthConfig.property.jwks"></a>
 
 ```csharp
-public object Jwks { get; set; }
+public IResolvable|AppOauthJwks[] Jwks { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-okta.appOauth.AppOauthJwks">AppOauthJwks</a>[]
 
 jwks block.
 
@@ -2759,10 +2759,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 ##### `OmitSecret`<sup>Optional</sup> <a name="OmitSecret" id="@cdktf/provider-okta.appOauth.AppOauthConfig.property.omitSecret"></a>
 
 ```csharp
-public object OmitSecret { get; set; }
+public bool|IResolvable OmitSecret { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 This tells the provider not manage the client_secret value in state.
 
@@ -2775,10 +2775,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 ##### `PkceRequired`<sup>Optional</sup> <a name="PkceRequired" id="@cdktf/provider-okta.appOauth.AppOauthConfig.property.pkceRequired"></a>
 
 ```csharp
-public object PkceRequired { get; set; }
+public bool|IResolvable PkceRequired { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Require Proof Key for Code Exchange (PKCE) for additional verification key rotation mode. See: https://developer.okta.com/docs/reference/api/apps/#oauth-credential-object.
 
@@ -3748,7 +3748,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthJwksList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthJwksList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthJwksList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthJwksList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-okta.appOauth.AppOauthJwks">AppOauthJwks</a>[]</code> | *No description.* |
 
 ---
 
@@ -3779,10 +3779,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-okta.appOauth.AppOauthJwksList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppOauthJwks[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-okta.appOauth.AppOauthJwks">AppOauthJwks</a>[]
 
 ---
 
@@ -4055,7 +4055,7 @@ private void ResetY()
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthJwksOutputReference.property.n">N</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthJwksOutputReference.property.x">X</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthJwksOutputReference.property.y">Y</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthJwksOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthJwksOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-okta.appOauth.AppOauthJwks">AppOauthJwks</a></code> | *No description.* |
 
 ---
 
@@ -4206,10 +4206,10 @@ public string Y { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-okta.appOauth.AppOauthJwksOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppOauthJwks InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-okta.appOauth.AppOauthJwks">AppOauthJwks</a>
 
 ---
 
@@ -4451,7 +4451,7 @@ private void ResetUpdate()
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthTimeoutsOutputReference.property.create">Create</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthTimeoutsOutputReference.property.read">Read</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appOauth.AppOauthTimeoutsOutputReference.property.update">Update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appOauth.AppOauthTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-okta.appOauth.AppOauthTimeouts">AppOauthTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -4542,10 +4542,10 @@ public string Update { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-okta.appOauth.AppOauthTimeoutsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppOauthTimeouts InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-okta.appOauth.AppOauthTimeouts">AppOauthTimeouts</a>
 
 ---
 

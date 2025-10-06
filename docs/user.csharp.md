@@ -313,7 +313,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-okta.user.User.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-okta.user.User.importFrom"></a>
@@ -367,7 +367,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-okta.user.User.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -382,7 +382,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-okta.user.User.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -776,13 +776,13 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 | <code><a href="#@cdktf/provider-okta.user.User.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.user.User.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.user.User.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.user.User.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.user.User.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.user.User.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.user.User.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.passwordHash">PasswordHash</a></code> | <code><a href="#@cdktf/provider-okta.user.UserPasswordHashOutputReference">UserPasswordHashOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.rawStatus">RawStatus</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.cityInput">CityInput</a></code> | <code>string</code> | *No description.* |
@@ -795,7 +795,7 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 | <code><a href="#@cdktf/provider-okta.user.User.property.divisionInput">DivisionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.emailInput">EmailInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.employeeNumberInput">EmployeeNumberInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.user.User.property.expirePasswordOnCreateInput">ExpirePasswordOnCreateInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.user.User.property.expirePasswordOnCreateInput">ExpirePasswordOnCreateInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.firstNameInput">FirstNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.honorificPrefixInput">HonorificPrefixInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.honorificSuffixInput">HonorificSuffixInput</a></code> | <code>string</code> | *No description.* |
@@ -820,7 +820,7 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 | <code><a href="#@cdktf/provider-okta.user.User.property.recoveryAnswerInput">RecoveryAnswerInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.recoveryQuestionInput">RecoveryQuestionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.secondEmailInput">SecondEmailInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.user.User.property.skipRolesInput">SkipRolesInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.user.User.property.skipRolesInput">SkipRolesInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.stateInput">StateInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.statusInput">StatusInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.streetAddressInput">StreetAddressInput</a></code> | <code>string</code> | *No description.* |
@@ -838,7 +838,7 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 | <code><a href="#@cdktf/provider-okta.user.User.property.division">Division</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.email">Email</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.employeeNumber">EmployeeNumber</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.user.User.property.expirePasswordOnCreate">ExpirePasswordOnCreate</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.user.User.property.expirePasswordOnCreate">ExpirePasswordOnCreate</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.firstName">FirstName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.honorificPrefix">HonorificPrefix</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.honorificSuffix">HonorificSuffix</a></code> | <code>string</code> | *No description.* |
@@ -862,7 +862,7 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 | <code><a href="#@cdktf/provider-okta.user.User.property.recoveryAnswer">RecoveryAnswer</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.recoveryQuestion">RecoveryQuestion</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.secondEmail">SecondEmail</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.user.User.property.skipRoles">SkipRoles</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.user.User.property.skipRoles">SkipRoles</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.state">State</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.status">Status</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.streetAddress">StreetAddress</a></code> | <code>string</code> | *No description.* |
@@ -948,20 +948,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-okta.user.User.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.user.User.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -1008,10 +1008,10 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-okta.user.User.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -1138,10 +1138,10 @@ public string EmployeeNumberInput { get; }
 ##### `ExpirePasswordOnCreateInput`<sup>Optional</sup> <a name="ExpirePasswordOnCreateInput" id="@cdktf/provider-okta.user.User.property.expirePasswordOnCreateInput"></a>
 
 ```csharp
-public object ExpirePasswordOnCreateInput { get; }
+public bool|IResolvable ExpirePasswordOnCreateInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1388,10 +1388,10 @@ public string SecondEmailInput { get; }
 ##### `SkipRolesInput`<sup>Optional</sup> <a name="SkipRolesInput" id="@cdktf/provider-okta.user.User.property.skipRolesInput"></a>
 
 ```csharp
-public object SkipRolesInput { get; }
+public bool|IResolvable SkipRolesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1568,10 +1568,10 @@ public string EmployeeNumber { get; }
 ##### `ExpirePasswordOnCreate`<sup>Required</sup> <a name="ExpirePasswordOnCreate" id="@cdktf/provider-okta.user.User.property.expirePasswordOnCreate"></a>
 
 ```csharp
-public object ExpirePasswordOnCreate { get; }
+public bool|IResolvable ExpirePasswordOnCreate { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1808,10 +1808,10 @@ public string SecondEmail { get; }
 ##### `SkipRoles`<sup>Required</sup> <a name="SkipRoles" id="@cdktf/provider-okta.user.User.property.skipRoles"></a>
 
 ```csharp
-public object SkipRoles { get; }
+public bool|IResolvable SkipRoles { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1913,13 +1913,13 @@ public string TfResourceType { get; }
 using HashiCorp.Cdktf.Providers.Okta;
 
 new UserConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string Email,
     string FirstName,
     string LastName,
@@ -1933,7 +1933,7 @@ new UserConfig {
     string DisplayName = null,
     string Division = null,
     string EmployeeNumber = null,
-    object ExpirePasswordOnCreate = null,
+    bool|IResolvable ExpirePasswordOnCreate = null,
     string HonorificPrefix = null,
     string HonorificSuffix = null,
     string Id = null,
@@ -1955,7 +1955,7 @@ new UserConfig {
     string RecoveryAnswer = null,
     string RecoveryQuestion = null,
     string SecondEmail = null,
-    object SkipRoles = null,
+    bool|IResolvable SkipRoles = null,
     string State = null,
     string Status = null,
     string StreetAddress = null,
@@ -1970,13 +1970,13 @@ new UserConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.user.UserConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.user.UserConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.user.UserConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.user.UserConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.user.UserConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.user.UserConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.email">Email</a></code> | <code>string</code> | User primary email address. |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.firstName">FirstName</a></code> | <code>string</code> | User first name. |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.lastName">LastName</a></code> | <code>string</code> | User last name. |
@@ -1990,7 +1990,7 @@ new UserConfig {
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.displayName">DisplayName</a></code> | <code>string</code> | User display name, suitable to show end users. |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.division">Division</a></code> | <code>string</code> | User division. |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.employeeNumber">EmployeeNumber</a></code> | <code>string</code> | User employee number. |
-| <code><a href="#@cdktf/provider-okta.user.UserConfig.property.expirePasswordOnCreate">ExpirePasswordOnCreate</a></code> | <code>object</code> | If set to `true`, the user will have to change the password at the next login. |
+| <code><a href="#@cdktf/provider-okta.user.UserConfig.property.expirePasswordOnCreate">ExpirePasswordOnCreate</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | If set to `true`, the user will have to change the password at the next login. |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.honorificPrefix">HonorificPrefix</a></code> | <code>string</code> | User honorific prefix. |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.honorificSuffix">HonorificSuffix</a></code> | <code>string</code> | User honorific suffix. |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/user#id User#id}. |
@@ -2012,7 +2012,7 @@ new UserConfig {
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.recoveryAnswer">RecoveryAnswer</a></code> | <code>string</code> | User Password Recovery Answer. |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.recoveryQuestion">RecoveryQuestion</a></code> | <code>string</code> | User Password Recovery Question. |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.secondEmail">SecondEmail</a></code> | <code>string</code> | User secondary email address, used for account recovery. |
-| <code><a href="#@cdktf/provider-okta.user.UserConfig.property.skipRoles">SkipRoles</a></code> | <code>object</code> | Do not populate user roles information (prevents additional API call). |
+| <code><a href="#@cdktf/provider-okta.user.UserConfig.property.skipRoles">SkipRoles</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Do not populate user roles information (prevents additional API call). |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.state">State</a></code> | <code>string</code> | User state or region. |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.status">Status</a></code> | <code>string</code> | User profile property. Valid values are `ACTIVE`, `DEPROVISIONED`, `STAGED`, `SUSPENDED`. Default: `ACTIVE`. |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.streetAddress">StreetAddress</a></code> | <code>string</code> | User street address. |
@@ -2026,20 +2026,20 @@ new UserConfig {
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-okta.user.UserConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.user.UserConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -2086,10 +2086,10 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-okta.user.UserConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -2280,10 +2280,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 ##### `ExpirePasswordOnCreate`<sup>Optional</sup> <a name="ExpirePasswordOnCreate" id="@cdktf/provider-okta.user.UserConfig.property.expirePasswordOnCreate"></a>
 
 ```csharp
-public object ExpirePasswordOnCreate { get; set; }
+public bool|IResolvable ExpirePasswordOnCreate { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 If set to `true`, the user will have to change the password at the next login.
 
@@ -2595,10 +2595,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 ##### `SkipRoles`<sup>Optional</sup> <a name="SkipRoles" id="@cdktf/provider-okta.user.UserConfig.property.skipRoles"></a>
 
 ```csharp
-public object SkipRoles { get; set; }
+public bool|IResolvable SkipRoles { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Do not populate user roles information (prevents additional API call).
 

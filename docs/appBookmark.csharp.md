@@ -289,7 +289,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-okta.appBookmark.AppBookmark.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-okta.appBookmark.AppBookmark.importFrom"></a>
@@ -343,7 +343,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-okta.appBookmark.AppBookmark.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -358,7 +358,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-okta.appBookmark.AppBookmark.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -608,48 +608,48 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.logoUrl">LogoUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.signOnMode">SignOnMode</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkTimeoutsOutputReference">AppBookmarkTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.accessibilityErrorRedirectUrlInput">AccessibilityErrorRedirectUrlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.accessibilityLoginRedirectUrlInput">AccessibilityLoginRedirectUrlInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.accessibilitySelfServiceInput">AccessibilitySelfServiceInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.accessibilitySelfServiceInput">AccessibilitySelfServiceInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.adminNoteInput">AdminNoteInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.appLinksJsonInput">AppLinksJsonInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.authenticationPolicyInput">AuthenticationPolicyInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.autoSubmitToolbarInput">AutoSubmitToolbarInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.autoSubmitToolbarInput">AutoSubmitToolbarInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.enduserNoteInput">EnduserNoteInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.hideIosInput">HideIosInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.hideWebInput">HideWebInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.hideIosInput">HideIosInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.hideWebInput">HideWebInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.labelInput">LabelInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.logoInput">LogoInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.requestIntegrationInput">RequestIntegrationInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.requestIntegrationInput">RequestIntegrationInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.statusInput">StatusInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.timeoutsInput">TimeoutsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.timeoutsInput">TimeoutsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-okta.appBookmark.AppBookmarkTimeouts">AppBookmarkTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.urlInput">UrlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.accessibilityErrorRedirectUrl">AccessibilityErrorRedirectUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.accessibilityLoginRedirectUrl">AccessibilityLoginRedirectUrl</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.accessibilitySelfService">AccessibilitySelfService</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.accessibilitySelfService">AccessibilitySelfService</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.adminNote">AdminNote</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.appLinksJson">AppLinksJson</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.authenticationPolicy">AuthenticationPolicy</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.autoSubmitToolbar">AutoSubmitToolbar</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.autoSubmitToolbar">AutoSubmitToolbar</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.enduserNote">EnduserNote</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.hideIos">HideIos</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.hideWeb">HideWeb</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.hideIos">HideIos</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.hideWeb">HideWeb</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.label">Label</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.logo">Logo</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.requestIntegration">RequestIntegration</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.requestIntegration">RequestIntegration</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.status">Status</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmark.property.url">Url</a></code> | <code>string</code> | *No description.* |
 
@@ -730,20 +730,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-okta.appBookmark.AppBookmark.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.appBookmark.AppBookmark.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -790,10 +790,10 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-okta.appBookmark.AppBookmark.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -860,10 +860,10 @@ public string AccessibilityLoginRedirectUrlInput { get; }
 ##### `AccessibilitySelfServiceInput`<sup>Optional</sup> <a name="AccessibilitySelfServiceInput" id="@cdktf/provider-okta.appBookmark.AppBookmark.property.accessibilitySelfServiceInput"></a>
 
 ```csharp
-public object AccessibilitySelfServiceInput { get; }
+public bool|IResolvable AccessibilitySelfServiceInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -900,10 +900,10 @@ public string AuthenticationPolicyInput { get; }
 ##### `AutoSubmitToolbarInput`<sup>Optional</sup> <a name="AutoSubmitToolbarInput" id="@cdktf/provider-okta.appBookmark.AppBookmark.property.autoSubmitToolbarInput"></a>
 
 ```csharp
-public object AutoSubmitToolbarInput { get; }
+public bool|IResolvable AutoSubmitToolbarInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -920,20 +920,20 @@ public string EnduserNoteInput { get; }
 ##### `HideIosInput`<sup>Optional</sup> <a name="HideIosInput" id="@cdktf/provider-okta.appBookmark.AppBookmark.property.hideIosInput"></a>
 
 ```csharp
-public object HideIosInput { get; }
+public bool|IResolvable HideIosInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `HideWebInput`<sup>Optional</sup> <a name="HideWebInput" id="@cdktf/provider-okta.appBookmark.AppBookmark.property.hideWebInput"></a>
 
 ```csharp
-public object HideWebInput { get; }
+public bool|IResolvable HideWebInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -970,10 +970,10 @@ public string LogoInput { get; }
 ##### `RequestIntegrationInput`<sup>Optional</sup> <a name="RequestIntegrationInput" id="@cdktf/provider-okta.appBookmark.AppBookmark.property.requestIntegrationInput"></a>
 
 ```csharp
-public object RequestIntegrationInput { get; }
+public bool|IResolvable RequestIntegrationInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -990,10 +990,10 @@ public string StatusInput { get; }
 ##### `TimeoutsInput`<sup>Optional</sup> <a name="TimeoutsInput" id="@cdktf/provider-okta.appBookmark.AppBookmark.property.timeoutsInput"></a>
 
 ```csharp
-public object TimeoutsInput { get; }
+public IResolvable|AppBookmarkTimeouts TimeoutsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-okta.appBookmark.AppBookmarkTimeouts">AppBookmarkTimeouts</a>
 
 ---
 
@@ -1030,10 +1030,10 @@ public string AccessibilityLoginRedirectUrl { get; }
 ##### `AccessibilitySelfService`<sup>Required</sup> <a name="AccessibilitySelfService" id="@cdktf/provider-okta.appBookmark.AppBookmark.property.accessibilitySelfService"></a>
 
 ```csharp
-public object AccessibilitySelfService { get; }
+public bool|IResolvable AccessibilitySelfService { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1070,10 +1070,10 @@ public string AuthenticationPolicy { get; }
 ##### `AutoSubmitToolbar`<sup>Required</sup> <a name="AutoSubmitToolbar" id="@cdktf/provider-okta.appBookmark.AppBookmark.property.autoSubmitToolbar"></a>
 
 ```csharp
-public object AutoSubmitToolbar { get; }
+public bool|IResolvable AutoSubmitToolbar { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1090,20 +1090,20 @@ public string EnduserNote { get; }
 ##### `HideIos`<sup>Required</sup> <a name="HideIos" id="@cdktf/provider-okta.appBookmark.AppBookmark.property.hideIos"></a>
 
 ```csharp
-public object HideIos { get; }
+public bool|IResolvable HideIos { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `HideWeb`<sup>Required</sup> <a name="HideWeb" id="@cdktf/provider-okta.appBookmark.AppBookmark.property.hideWeb"></a>
 
 ```csharp
-public object HideWeb { get; }
+public bool|IResolvable HideWeb { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1140,10 +1140,10 @@ public string Logo { get; }
 ##### `RequestIntegration`<sup>Required</sup> <a name="RequestIntegration" id="@cdktf/provider-okta.appBookmark.AppBookmark.property.requestIntegration"></a>
 
 ```csharp
-public object RequestIntegration { get; }
+public bool|IResolvable RequestIntegration { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1195,28 +1195,28 @@ public string TfResourceType { get; }
 using HashiCorp.Cdktf.Providers.Okta;
 
 new AppBookmarkConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string Label,
     string Url,
     string AccessibilityErrorRedirectUrl = null,
     string AccessibilityLoginRedirectUrl = null,
-    object AccessibilitySelfService = null,
+    bool|IResolvable AccessibilitySelfService = null,
     string AdminNote = null,
     string AppLinksJson = null,
     string AuthenticationPolicy = null,
-    object AutoSubmitToolbar = null,
+    bool|IResolvable AutoSubmitToolbar = null,
     string EnduserNote = null,
-    object HideIos = null,
-    object HideWeb = null,
+    bool|IResolvable HideIos = null,
+    bool|IResolvable HideWeb = null,
     string Id = null,
     string Logo = null,
-    object RequestIntegration = null,
+    bool|IResolvable RequestIntegration = null,
     string Status = null,
     AppBookmarkTimeouts Timeouts = null
 };
@@ -1226,28 +1226,28 @@ new AppBookmarkConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.label">Label</a></code> | <code>string</code> | The Application's display name. |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.url">Url</a></code> | <code>string</code> | The URL of the bookmark. |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.accessibilityErrorRedirectUrl">AccessibilityErrorRedirectUrl</a></code> | <code>string</code> | Custom error page URL. |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.accessibilityLoginRedirectUrl">AccessibilityLoginRedirectUrl</a></code> | <code>string</code> | Custom login page URL. |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.accessibilitySelfService">AccessibilitySelfService</a></code> | <code>object</code> | Enable self service. Default is `false`. |
+| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.accessibilitySelfService">AccessibilitySelfService</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable self service. Default is `false`. |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.adminNote">AdminNote</a></code> | <code>string</code> | Application notes for admins. |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.appLinksJson">AppLinksJson</a></code> | <code>string</code> | Displays specific appLinks for the app. The value for each application link should be boolean. |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.authenticationPolicy">AuthenticationPolicy</a></code> | <code>string</code> | The ID of the associated app_signon_policy. |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.autoSubmitToolbar">AutoSubmitToolbar</a></code> | <code>object</code> | Display auto submit toolbar. |
+| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.autoSubmitToolbar">AutoSubmitToolbar</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Display auto submit toolbar. |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.enduserNote">EnduserNote</a></code> | <code>string</code> | Application notes for end users. |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.hideIos">HideIos</a></code> | <code>object</code> | Do not display application icon on mobile app. |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.hideWeb">HideWeb</a></code> | <code>object</code> | Do not display application icon to users. |
+| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.hideIos">HideIos</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Do not display application icon on mobile app. |
+| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.hideWeb">HideWeb</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Do not display application icon to users. |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/app_bookmark#id AppBookmark#id}. |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.logo">Logo</a></code> | <code>string</code> | Local file path to the logo. |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.requestIntegration">RequestIntegration</a></code> | <code>object</code> | Would you like Okta to add an integration for this app? |
+| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.requestIntegration">RequestIntegration</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Would you like Okta to add an integration for this app? |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.status">Status</a></code> | <code>string</code> | Status of application. By default, it is `ACTIVE`. |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkTimeouts">AppBookmarkTimeouts</a></code> | timeouts block. |
 
@@ -1256,20 +1256,20 @@ new AppBookmarkConfig {
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -1316,10 +1316,10 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -1382,10 +1382,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 ##### `AccessibilitySelfService`<sup>Optional</sup> <a name="AccessibilitySelfService" id="@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.accessibilitySelfService"></a>
 
 ```csharp
-public object AccessibilitySelfService { get; set; }
+public bool|IResolvable AccessibilitySelfService { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enable self service. Default is `false`.
 
@@ -1440,10 +1440,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 ##### `AutoSubmitToolbar`<sup>Optional</sup> <a name="AutoSubmitToolbar" id="@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.autoSubmitToolbar"></a>
 
 ```csharp
-public object AutoSubmitToolbar { get; set; }
+public bool|IResolvable AutoSubmitToolbar { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Display auto submit toolbar.
 
@@ -1468,10 +1468,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 ##### `HideIos`<sup>Optional</sup> <a name="HideIos" id="@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.hideIos"></a>
 
 ```csharp
-public object HideIos { get; set; }
+public bool|IResolvable HideIos { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Do not display application icon on mobile app.
 
@@ -1482,10 +1482,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 ##### `HideWeb`<sup>Optional</sup> <a name="HideWeb" id="@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.hideWeb"></a>
 
 ```csharp
-public object HideWeb { get; set; }
+public bool|IResolvable HideWeb { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Do not display application icon to users.
 
@@ -1527,10 +1527,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 ##### `RequestIntegration`<sup>Optional</sup> <a name="RequestIntegration" id="@cdktf/provider-okta.appBookmark.AppBookmarkConfig.property.requestIntegration"></a>
 
 ```csharp
-public object RequestIntegration { get; set; }
+public bool|IResolvable RequestIntegration { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Would you like Okta to add an integration for this app?
 
@@ -1865,7 +1865,7 @@ private void ResetUpdate()
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkTimeoutsOutputReference.property.create">Create</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkTimeoutsOutputReference.property.read">Read</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkTimeoutsOutputReference.property.update">Update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appBookmark.AppBookmarkTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-okta.appBookmark.AppBookmarkTimeouts">AppBookmarkTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -1956,10 +1956,10 @@ public string Update { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-okta.appBookmark.AppBookmarkTimeoutsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppBookmarkTimeouts InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-okta.appBookmark.AppBookmarkTimeouts">AppBookmarkTimeouts</a>
 
 ---
 

@@ -14,13 +14,13 @@ from cdktf_cdktf_provider_okta import idp_saml
 idpSaml.IdpSaml(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   issuer: str,
   kid: str,
   name: str,
@@ -33,12 +33,12 @@ idpSaml.IdpSaml(
   groups_assignment: typing.List[str] = None,
   groups_attribute: str = None,
   groups_filter: typing.List[str] = None,
-  honor_persistent_name_id: typing.Union[bool, IResolvable] = None,
+  honor_persistent_name_id: bool | IResolvable = None,
   id: str = None,
   issuer_mode: str = None,
   max_clock_skew: typing.Union[int, float] = None,
   name_format: str = None,
-  profile_master: typing.Union[bool, IResolvable] = None,
+  profile_master: bool | IResolvable = None,
   provisioning_action: str = None,
   request_signature_algorithm: str = None,
   request_signature_scope: str = None,
@@ -60,13 +60,13 @@ idpSaml.IdpSaml(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.Initializer.parameter.issuer">issuer</a></code> | <code>str</code> | URI that identifies the issuer. |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.Initializer.parameter.kid">kid</a></code> | <code>str</code> | The ID of the signing key. |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.Initializer.parameter.name">name</a></code> | <code>str</code> | Name of the IdP. |
@@ -79,12 +79,12 @@ idpSaml.IdpSaml(
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.Initializer.parameter.groupsAssignment">groups_assignment</a></code> | <code>typing.List[str]</code> | List of Okta Group IDs to add an IdP user as a member with the `ASSIGN` `groups_action`. |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.Initializer.parameter.groupsAttribute">groups_attribute</a></code> | <code>str</code> | IdP user profile attribute name (case-insensitive) for an array value that contains group memberships. |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.Initializer.parameter.groupsFilter">groups_filter</a></code> | <code>typing.List[str]</code> | Whitelist of Okta Group identifiers that are allowed for the `APPEND` or `SYNC` `groups_action`. |
-| <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.Initializer.parameter.honorPersistentNameId">honor_persistent_name_id</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Determines if the IdP should persist account linking when the incoming assertion NameID format is urn:oasis:names:tc:SAML:2.0:nameid-format:persistent. |
+| <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.Initializer.parameter.honorPersistentNameId">honor_persistent_name_id</a></code> | <code>bool \| cdktf.IResolvable</code> | Determines if the IdP should persist account linking when the incoming assertion NameID format is urn:oasis:names:tc:SAML:2.0:nameid-format:persistent. |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/idp_saml#id IdpSaml#id}. |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.Initializer.parameter.issuerMode">issuer_mode</a></code> | <code>str</code> | Indicates whether Okta uses the original Okta org domain URL, or a custom domain URL. |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.Initializer.parameter.maxClockSkew">max_clock_skew</a></code> | <code>typing.Union[int, float]</code> | Maximum allowable clock-skew when processing messages from the IdP. |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.Initializer.parameter.nameFormat">name_format</a></code> | <code>str</code> | The name identifier format to use. By default `urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified`. |
-| <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.Initializer.parameter.profileMaster">profile_master</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Determines if the IdP should act as a source of truth for user profile attributes. |
+| <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.Initializer.parameter.profileMaster">profile_master</a></code> | <code>bool \| cdktf.IResolvable</code> | Determines if the IdP should act as a source of truth for user profile attributes. |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.Initializer.parameter.provisioningAction">provisioning_action</a></code> | <code>str</code> | Provisioning action for an IdP user during authentication. Default: `AUTO`. |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.Initializer.parameter.requestSignatureAlgorithm">request_signature_algorithm</a></code> | <code>str</code> | The XML digital Signature Algorithm used when signing an `AuthnRequest` message. It can be `SHA-256` or `SHA-1`. Default: `SHA-256`. |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.Initializer.parameter.requestSignatureScope">request_signature_scope</a></code> | <code>str</code> | Specifies whether to digitally sign an AuthnRequest messages to the IdP. It can be `REQUEST` or `NONE`. Default: `REQUEST`. |
@@ -122,13 +122,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-okta.idpSaml.IdpSaml.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.idpSaml.IdpSaml.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -158,7 +158,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-okta.idpSaml.IdpSaml.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -284,7 +284,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 ##### `honor_persistent_name_id`<sup>Optional</sup> <a name="honor_persistent_name_id" id="@cdktf/provider-okta.idpSaml.IdpSaml.Initializer.parameter.honorPersistentNameId"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Determines if the IdP should persist account linking when the incoming assertion NameID format is urn:oasis:names:tc:SAML:2.0:nameid-format:persistent.
 
@@ -335,7 +335,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 ##### `profile_master`<sup>Optional</sup> <a name="profile_master" id="@cdktf/provider-okta.idpSaml.IdpSaml.Initializer.parameter.profileMaster"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Determines if the IdP should act as a source of truth for user profile attributes.
 
@@ -769,7 +769,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-okta.idpSaml.IdpSaml.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-okta.idpSaml.IdpSaml.importFrom"></a>
@@ -832,7 +832,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -848,7 +848,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-okta.idpSaml.IdpSaml.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -1177,13 +1177,13 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.acsBinding">acs_binding</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.audience">audience</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.type">type</a></code> | <code>str</code> | *No description.* |
@@ -1196,7 +1196,7 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.groupsAssignmentInput">groups_assignment_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.groupsAttributeInput">groups_attribute_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.groupsFilterInput">groups_filter_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.honorPersistentNameIdInput">honor_persistent_name_id_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.honorPersistentNameIdInput">honor_persistent_name_id_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.issuerInput">issuer_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.issuerModeInput">issuer_mode_input</a></code> | <code>str</code> | *No description.* |
@@ -1204,7 +1204,7 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.maxClockSkewInput">max_clock_skew_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.nameFormatInput">name_format_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.profileMasterInput">profile_master_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.profileMasterInput">profile_master_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.provisioningActionInput">provisioning_action_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.requestSignatureAlgorithmInput">request_signature_algorithm_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.requestSignatureScopeInput">request_signature_scope_input</a></code> | <code>str</code> | *No description.* |
@@ -1228,7 +1228,7 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.groupsAssignment">groups_assignment</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.groupsAttribute">groups_attribute</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.groupsFilter">groups_filter</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.honorPersistentNameId">honor_persistent_name_id</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.honorPersistentNameId">honor_persistent_name_id</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.issuer">issuer</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.issuerMode">issuer_mode</a></code> | <code>str</code> | *No description.* |
@@ -1236,7 +1236,7 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.maxClockSkew">max_clock_skew</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.nameFormat">name_format</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.profileMaster">profile_master</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.profileMaster">profile_master</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.provisioningAction">provisioning_action</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.requestSignatureAlgorithm">request_signature_algorithm</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.requestSignatureScope">request_signature_scope</a></code> | <code>str</code> | *No description.* |
@@ -1330,20 +1330,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-okta.idpSaml.IdpSaml.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.idpSaml.IdpSaml.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1390,10 +1390,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-okta.idpSaml.IdpSaml.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1520,10 +1520,10 @@ groups_filter_input: typing.List[str]
 ##### `honor_persistent_name_id_input`<sup>Optional</sup> <a name="honor_persistent_name_id_input" id="@cdktf/provider-okta.idpSaml.IdpSaml.property.honorPersistentNameIdInput"></a>
 
 ```python
-honor_persistent_name_id_input: typing.Union[bool, IResolvable]
+honor_persistent_name_id_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1600,10 +1600,10 @@ name_input: str
 ##### `profile_master_input`<sup>Optional</sup> <a name="profile_master_input" id="@cdktf/provider-okta.idpSaml.IdpSaml.property.profileMasterInput"></a>
 
 ```python
-profile_master_input: typing.Union[bool, IResolvable]
+profile_master_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1840,10 +1840,10 @@ groups_filter: typing.List[str]
 ##### `honor_persistent_name_id`<sup>Required</sup> <a name="honor_persistent_name_id" id="@cdktf/provider-okta.idpSaml.IdpSaml.property.honorPersistentNameId"></a>
 
 ```python
-honor_persistent_name_id: typing.Union[bool, IResolvable]
+honor_persistent_name_id: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1920,10 +1920,10 @@ name_format: str
 ##### `profile_master`<sup>Required</sup> <a name="profile_master" id="@cdktf/provider-okta.idpSaml.IdpSaml.property.profileMaster"></a>
 
 ```python
-profile_master: typing.Union[bool, IResolvable]
+profile_master: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2105,13 +2105,13 @@ tfResourceType: str
 from cdktf_cdktf_provider_okta import idp_saml
 
 idpSaml.IdpSamlConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   issuer: str,
   kid: str,
   name: str,
@@ -2124,12 +2124,12 @@ idpSaml.IdpSamlConfig(
   groups_assignment: typing.List[str] = None,
   groups_attribute: str = None,
   groups_filter: typing.List[str] = None,
-  honor_persistent_name_id: typing.Union[bool, IResolvable] = None,
+  honor_persistent_name_id: bool | IResolvable = None,
   id: str = None,
   issuer_mode: str = None,
   max_clock_skew: typing.Union[int, float] = None,
   name_format: str = None,
-  profile_master: typing.Union[bool, IResolvable] = None,
+  profile_master: bool | IResolvable = None,
   provisioning_action: str = None,
   request_signature_algorithm: str = None,
   request_signature_scope: str = None,
@@ -2151,13 +2151,13 @@ idpSaml.IdpSamlConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.idpSaml.IdpSamlConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.idpSaml.IdpSamlConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.idpSaml.IdpSamlConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.idpSaml.IdpSamlConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSamlConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSamlConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSamlConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSamlConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.idpSaml.IdpSamlConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.idpSaml.IdpSamlConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSamlConfig.property.issuer">issuer</a></code> | <code>str</code> | URI that identifies the issuer. |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSamlConfig.property.kid">kid</a></code> | <code>str</code> | The ID of the signing key. |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSamlConfig.property.name">name</a></code> | <code>str</code> | Name of the IdP. |
@@ -2170,12 +2170,12 @@ idpSaml.IdpSamlConfig(
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSamlConfig.property.groupsAssignment">groups_assignment</a></code> | <code>typing.List[str]</code> | List of Okta Group IDs to add an IdP user as a member with the `ASSIGN` `groups_action`. |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSamlConfig.property.groupsAttribute">groups_attribute</a></code> | <code>str</code> | IdP user profile attribute name (case-insensitive) for an array value that contains group memberships. |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSamlConfig.property.groupsFilter">groups_filter</a></code> | <code>typing.List[str]</code> | Whitelist of Okta Group identifiers that are allowed for the `APPEND` or `SYNC` `groups_action`. |
-| <code><a href="#@cdktf/provider-okta.idpSaml.IdpSamlConfig.property.honorPersistentNameId">honor_persistent_name_id</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Determines if the IdP should persist account linking when the incoming assertion NameID format is urn:oasis:names:tc:SAML:2.0:nameid-format:persistent. |
+| <code><a href="#@cdktf/provider-okta.idpSaml.IdpSamlConfig.property.honorPersistentNameId">honor_persistent_name_id</a></code> | <code>bool \| cdktf.IResolvable</code> | Determines if the IdP should persist account linking when the incoming assertion NameID format is urn:oasis:names:tc:SAML:2.0:nameid-format:persistent. |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSamlConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/idp_saml#id IdpSaml#id}. |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSamlConfig.property.issuerMode">issuer_mode</a></code> | <code>str</code> | Indicates whether Okta uses the original Okta org domain URL, or a custom domain URL. |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSamlConfig.property.maxClockSkew">max_clock_skew</a></code> | <code>typing.Union[int, float]</code> | Maximum allowable clock-skew when processing messages from the IdP. |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSamlConfig.property.nameFormat">name_format</a></code> | <code>str</code> | The name identifier format to use. By default `urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified`. |
-| <code><a href="#@cdktf/provider-okta.idpSaml.IdpSamlConfig.property.profileMaster">profile_master</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Determines if the IdP should act as a source of truth for user profile attributes. |
+| <code><a href="#@cdktf/provider-okta.idpSaml.IdpSamlConfig.property.profileMaster">profile_master</a></code> | <code>bool \| cdktf.IResolvable</code> | Determines if the IdP should act as a source of truth for user profile attributes. |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSamlConfig.property.provisioningAction">provisioning_action</a></code> | <code>str</code> | Provisioning action for an IdP user during authentication. Default: `AUTO`. |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSamlConfig.property.requestSignatureAlgorithm">request_signature_algorithm</a></code> | <code>str</code> | The XML digital Signature Algorithm used when signing an `AuthnRequest` message. It can be `SHA-256` or `SHA-1`. Default: `SHA-256`. |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSamlConfig.property.requestSignatureScope">request_signature_scope</a></code> | <code>str</code> | Specifies whether to digitally sign an AuthnRequest messages to the IdP. It can be `REQUEST` or `NONE`. Default: `REQUEST`. |
@@ -2196,20 +2196,20 @@ idpSaml.IdpSamlConfig(
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-okta.idpSaml.IdpSamlConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.idpSaml.IdpSamlConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -2256,10 +2256,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-okta.idpSaml.IdpSamlConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -2434,10 +2434,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 ##### `honor_persistent_name_id`<sup>Optional</sup> <a name="honor_persistent_name_id" id="@cdktf/provider-okta.idpSaml.IdpSamlConfig.property.honorPersistentNameId"></a>
 
 ```python
-honor_persistent_name_id: typing.Union[bool, IResolvable]
+honor_persistent_name_id: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Determines if the IdP should persist account linking when the incoming assertion NameID format is urn:oasis:names:tc:SAML:2.0:nameid-format:persistent.
 
@@ -2505,10 +2505,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 ##### `profile_master`<sup>Optional</sup> <a name="profile_master" id="@cdktf/provider-okta.idpSaml.IdpSamlConfig.property.profileMaster"></a>
 
 ```python
-profile_master: typing.Union[bool, IResolvable]
+profile_master: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Determines if the IdP should act as a source of truth for user profile attributes.
 

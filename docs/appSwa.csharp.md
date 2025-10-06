@@ -299,7 +299,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-okta.appSwa.AppSwa.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-okta.appSwa.AppSwa.importFrom"></a>
@@ -353,7 +353,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-okta.appSwa.AppSwa.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -368,7 +368,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-okta.appSwa.AppSwa.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -678,28 +678,28 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.logoUrl">LogoUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.signOnMode">SignOnMode</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-okta.appSwa.AppSwaTimeoutsOutputReference">AppSwaTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.accessibilityErrorRedirectUrlInput">AccessibilityErrorRedirectUrlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.accessibilityLoginRedirectUrlInput">AccessibilityLoginRedirectUrlInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.accessibilitySelfServiceInput">AccessibilitySelfServiceInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.accessibilitySelfServiceInput">AccessibilitySelfServiceInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.adminNoteInput">AdminNoteInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.appLinksJsonInput">AppLinksJsonInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.autoSubmitToolbarInput">AutoSubmitToolbarInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.autoSubmitToolbarInput">AutoSubmitToolbarInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.buttonFieldInput">ButtonFieldInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.checkboxInput">CheckboxInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.enduserNoteInput">EnduserNoteInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.hideIosInput">HideIosInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.hideWebInput">HideWebInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.hideIosInput">HideIosInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.hideWebInput">HideWebInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.labelInput">LabelInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.logoInput">LogoInput</a></code> | <code>string</code> | *No description.* |
@@ -707,7 +707,7 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.preconfiguredAppInput">PreconfiguredAppInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.redirectUrlInput">RedirectUrlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.statusInput">StatusInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.timeoutsInput">TimeoutsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.timeoutsInput">TimeoutsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-okta.appSwa.AppSwaTimeouts">AppSwaTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.urlInput">UrlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.urlRegexInput">UrlRegexInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.usernameFieldInput">UsernameFieldInput</a></code> | <code>string</code> | *No description.* |
@@ -717,15 +717,15 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.userNameTemplateTypeInput">UserNameTemplateTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.accessibilityErrorRedirectUrl">AccessibilityErrorRedirectUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.accessibilityLoginRedirectUrl">AccessibilityLoginRedirectUrl</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.accessibilitySelfService">AccessibilitySelfService</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.accessibilitySelfService">AccessibilitySelfService</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.adminNote">AdminNote</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.appLinksJson">AppLinksJson</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.autoSubmitToolbar">AutoSubmitToolbar</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.autoSubmitToolbar">AutoSubmitToolbar</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.buttonField">ButtonField</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.checkbox">Checkbox</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.enduserNote">EnduserNote</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.hideIos">HideIos</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.hideWeb">HideWeb</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.hideIos">HideIos</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.hideWeb">HideWeb</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.label">Label</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwa.property.logo">Logo</a></code> | <code>string</code> | *No description.* |
@@ -818,20 +818,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-okta.appSwa.AppSwa.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.appSwa.AppSwa.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -878,10 +878,10 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-okta.appSwa.AppSwa.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -948,10 +948,10 @@ public string AccessibilityLoginRedirectUrlInput { get; }
 ##### `AccessibilitySelfServiceInput`<sup>Optional</sup> <a name="AccessibilitySelfServiceInput" id="@cdktf/provider-okta.appSwa.AppSwa.property.accessibilitySelfServiceInput"></a>
 
 ```csharp
-public object AccessibilitySelfServiceInput { get; }
+public bool|IResolvable AccessibilitySelfServiceInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -978,10 +978,10 @@ public string AppLinksJsonInput { get; }
 ##### `AutoSubmitToolbarInput`<sup>Optional</sup> <a name="AutoSubmitToolbarInput" id="@cdktf/provider-okta.appSwa.AppSwa.property.autoSubmitToolbarInput"></a>
 
 ```csharp
-public object AutoSubmitToolbarInput { get; }
+public bool|IResolvable AutoSubmitToolbarInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1018,20 +1018,20 @@ public string EnduserNoteInput { get; }
 ##### `HideIosInput`<sup>Optional</sup> <a name="HideIosInput" id="@cdktf/provider-okta.appSwa.AppSwa.property.hideIosInput"></a>
 
 ```csharp
-public object HideIosInput { get; }
+public bool|IResolvable HideIosInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `HideWebInput`<sup>Optional</sup> <a name="HideWebInput" id="@cdktf/provider-okta.appSwa.AppSwa.property.hideWebInput"></a>
 
 ```csharp
-public object HideWebInput { get; }
+public bool|IResolvable HideWebInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1108,10 +1108,10 @@ public string StatusInput { get; }
 ##### `TimeoutsInput`<sup>Optional</sup> <a name="TimeoutsInput" id="@cdktf/provider-okta.appSwa.AppSwa.property.timeoutsInput"></a>
 
 ```csharp
-public object TimeoutsInput { get; }
+public IResolvable|AppSwaTimeouts TimeoutsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-okta.appSwa.AppSwaTimeouts">AppSwaTimeouts</a>
 
 ---
 
@@ -1208,10 +1208,10 @@ public string AccessibilityLoginRedirectUrl { get; }
 ##### `AccessibilitySelfService`<sup>Required</sup> <a name="AccessibilitySelfService" id="@cdktf/provider-okta.appSwa.AppSwa.property.accessibilitySelfService"></a>
 
 ```csharp
-public object AccessibilitySelfService { get; }
+public bool|IResolvable AccessibilitySelfService { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1238,10 +1238,10 @@ public string AppLinksJson { get; }
 ##### `AutoSubmitToolbar`<sup>Required</sup> <a name="AutoSubmitToolbar" id="@cdktf/provider-okta.appSwa.AppSwa.property.autoSubmitToolbar"></a>
 
 ```csharp
-public object AutoSubmitToolbar { get; }
+public bool|IResolvable AutoSubmitToolbar { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1278,20 +1278,20 @@ public string EnduserNote { get; }
 ##### `HideIos`<sup>Required</sup> <a name="HideIos" id="@cdktf/provider-okta.appSwa.AppSwa.property.hideIos"></a>
 
 ```csharp
-public object HideIos { get; }
+public bool|IResolvable HideIos { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `HideWeb`<sup>Required</sup> <a name="HideWeb" id="@cdktf/provider-okta.appSwa.AppSwa.property.hideWeb"></a>
 
 ```csharp
-public object HideWeb { get; }
+public bool|IResolvable HideWeb { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1463,25 +1463,25 @@ public string TfResourceType { get; }
 using HashiCorp.Cdktf.Providers.Okta;
 
 new AppSwaConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string Label,
     string AccessibilityErrorRedirectUrl = null,
     string AccessibilityLoginRedirectUrl = null,
-    object AccessibilitySelfService = null,
+    bool|IResolvable AccessibilitySelfService = null,
     string AdminNote = null,
     string AppLinksJson = null,
-    object AutoSubmitToolbar = null,
+    bool|IResolvable AutoSubmitToolbar = null,
     string ButtonField = null,
     string Checkbox = null,
     string EnduserNote = null,
-    object HideIos = null,
-    object HideWeb = null,
+    bool|IResolvable HideIos = null,
+    bool|IResolvable HideWeb = null,
     string Id = null,
     string Logo = null,
     string PasswordField = null,
@@ -1503,25 +1503,25 @@ new AppSwaConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.label">Label</a></code> | <code>string</code> | The Application's display name. |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.accessibilityErrorRedirectUrl">AccessibilityErrorRedirectUrl</a></code> | <code>string</code> | Custom error page URL. |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.accessibilityLoginRedirectUrl">AccessibilityLoginRedirectUrl</a></code> | <code>string</code> | Custom login page URL. |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.accessibilitySelfService">AccessibilitySelfService</a></code> | <code>object</code> | Enable self service. Default is `false`. |
+| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.accessibilitySelfService">AccessibilitySelfService</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable self service. Default is `false`. |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.adminNote">AdminNote</a></code> | <code>string</code> | Application notes for admins. |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.appLinksJson">AppLinksJson</a></code> | <code>string</code> | Displays specific appLinks for the app. The value for each application link should be boolean. |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.autoSubmitToolbar">AutoSubmitToolbar</a></code> | <code>object</code> | Display auto submit toolbar. |
+| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.autoSubmitToolbar">AutoSubmitToolbar</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Display auto submit toolbar. |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.buttonField">ButtonField</a></code> | <code>string</code> | Login button field. |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.checkbox">Checkbox</a></code> | <code>string</code> | CSS selector for the checkbox. |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.enduserNote">EnduserNote</a></code> | <code>string</code> | Application notes for end users. |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.hideIos">HideIos</a></code> | <code>object</code> | Do not display application icon on mobile app. |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.hideWeb">HideWeb</a></code> | <code>object</code> | Do not display application icon to users. |
+| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.hideIos">HideIos</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Do not display application icon on mobile app. |
+| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.hideWeb">HideWeb</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Do not display application icon to users. |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/app_swa#id AppSwa#id}. |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.logo">Logo</a></code> | <code>string</code> | Local file path to the logo. |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwaConfig.property.passwordField">PasswordField</a></code> | <code>string</code> | Login password field. |
@@ -1542,20 +1542,20 @@ new AppSwaConfig {
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-okta.appSwa.AppSwaConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.appSwa.AppSwaConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -1602,10 +1602,10 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-okta.appSwa.AppSwaConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -1654,10 +1654,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 ##### `AccessibilitySelfService`<sup>Optional</sup> <a name="AccessibilitySelfService" id="@cdktf/provider-okta.appSwa.AppSwaConfig.property.accessibilitySelfService"></a>
 
 ```csharp
-public object AccessibilitySelfService { get; set; }
+public bool|IResolvable AccessibilitySelfService { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enable self service. Default is `false`.
 
@@ -1696,10 +1696,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 ##### `AutoSubmitToolbar`<sup>Optional</sup> <a name="AutoSubmitToolbar" id="@cdktf/provider-okta.appSwa.AppSwaConfig.property.autoSubmitToolbar"></a>
 
 ```csharp
-public object AutoSubmitToolbar { get; set; }
+public bool|IResolvable AutoSubmitToolbar { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Display auto submit toolbar.
 
@@ -1752,10 +1752,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 ##### `HideIos`<sup>Optional</sup> <a name="HideIos" id="@cdktf/provider-okta.appSwa.AppSwaConfig.property.hideIos"></a>
 
 ```csharp
-public object HideIos { get; set; }
+public bool|IResolvable HideIos { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Do not display application icon on mobile app.
 
@@ -1766,10 +1766,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 ##### `HideWeb`<sup>Optional</sup> <a name="HideWeb" id="@cdktf/provider-okta.appSwa.AppSwaConfig.property.hideWeb"></a>
 
 ```csharp
-public object HideWeb { get; set; }
+public bool|IResolvable HideWeb { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Do not display application icon to users.
 
@@ -2275,7 +2275,7 @@ private void ResetUpdate()
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwaTimeoutsOutputReference.property.create">Create</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwaTimeoutsOutputReference.property.read">Read</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.appSwa.AppSwaTimeoutsOutputReference.property.update">Update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.appSwa.AppSwaTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-okta.appSwa.AppSwaTimeouts">AppSwaTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -2366,10 +2366,10 @@ public string Update { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-okta.appSwa.AppSwaTimeoutsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AppSwaTimeouts InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-okta.appSwa.AppSwaTimeouts">AppSwaTimeouts</a>
 
 ---
 

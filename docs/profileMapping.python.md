@@ -14,19 +14,19 @@ from cdktf_cdktf_provider_okta import profile_mapping
 profileMapping.ProfileMapping(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   source_id: str,
   target_id: str,
-  always_apply: typing.Union[bool, IResolvable] = None,
-  delete_when_absent: typing.Union[bool, IResolvable] = None,
+  always_apply: bool | IResolvable = None,
+  delete_when_absent: bool | IResolvable = None,
   id: str = None,
-  mappings: typing.Union[IResolvable, typing.List[ProfileMappingMappings]] = None
+  mappings: IResolvable | typing.List[ProfileMappingMappings] = None
 )
 ```
 
@@ -34,19 +34,19 @@ profileMapping.ProfileMapping(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.Initializer.parameter.sourceId">source_id</a></code> | <code>str</code> | The source id of the mapping to manage. |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.Initializer.parameter.targetId">target_id</a></code> | <code>str</code> | The target id of the mapping to manage. |
-| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.Initializer.parameter.alwaysApply">always_apply</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether apply the changes to all users with this profile after updating or creating the these mappings. |
-| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.Initializer.parameter.deleteWhenAbsent">delete_when_absent</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When turned on this flag will trigger the provider to delete mapping properties that are not defined in config. |
+| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.Initializer.parameter.alwaysApply">always_apply</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether apply the changes to all users with this profile after updating or creating the these mappings. |
+| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.Initializer.parameter.deleteWhenAbsent">delete_when_absent</a></code> | <code>bool \| cdktf.IResolvable</code> | When turned on this flag will trigger the provider to delete mapping properties that are not defined in config. |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/profile_mapping#id ProfileMapping#id}. |
-| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.Initializer.parameter.mappings">mappings</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.profileMapping.ProfileMappingMappings">ProfileMappingMappings</a>]]</code> | mappings block. |
+| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.Initializer.parameter.mappings">mappings</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-okta.profileMapping.ProfileMappingMappings">ProfileMappingMappings</a>]</code> | mappings block. |
 
 ---
 
@@ -70,13 +70,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-okta.profileMapping.ProfileMapping.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.profileMapping.ProfileMapping.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-okta.profileMapping.ProfileMapping.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 ##### `always_apply`<sup>Optional</sup> <a name="always_apply" id="@cdktf/provider-okta.profileMapping.ProfileMapping.Initializer.parameter.alwaysApply"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether apply the changes to all users with this profile after updating or creating the these mappings.
 
@@ -145,7 +145,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 ##### `delete_when_absent`<sup>Optional</sup> <a name="delete_when_absent" id="@cdktf/provider-okta.profileMapping.ProfileMapping.Initializer.parameter.deleteWhenAbsent"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 When turned on this flag will trigger the provider to delete mapping properties that are not defined in config.
 
@@ -168,7 +168,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ##### `mappings`<sup>Optional</sup> <a name="mappings" id="@cdktf/provider-okta.profileMapping.ProfileMapping.Initializer.parameter.mappings"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.profileMapping.ProfileMappingMappings">ProfileMappingMappings</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-okta.profileMapping.ProfileMappingMappings">ProfileMappingMappings</a>]
 
 mappings block.
 
@@ -433,7 +433,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-okta.profileMapping.ProfileMapping.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-okta.profileMapping.ProfileMapping.importFrom"></a>
@@ -496,7 +496,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -512,7 +512,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-okta.profileMapping.ProfileMapping.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -540,13 +540,13 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ```python
 def put_mappings(
-  value: typing.Union[IResolvable, typing.List[ProfileMappingMappings]]
+  value: IResolvable | typing.List[ProfileMappingMappings]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-okta.profileMapping.ProfileMapping.putMappings.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.profileMapping.ProfileMappingMappings">ProfileMappingMappings</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-okta.profileMapping.ProfileMappingMappings">ProfileMappingMappings</a>]
 
 ---
 
@@ -711,26 +711,26 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.property.mappings">mappings</a></code> | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingMappingsList">ProfileMappingMappingsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.property.sourceName">source_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.property.sourceType">source_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.property.targetName">target_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.property.targetType">target_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.property.alwaysApplyInput">always_apply_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.property.deleteWhenAbsentInput">delete_when_absent_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.property.alwaysApplyInput">always_apply_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.property.deleteWhenAbsentInput">delete_when_absent_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.property.mappingsInput">mappings_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.profileMapping.ProfileMappingMappings">ProfileMappingMappings</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.property.mappingsInput">mappings_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-okta.profileMapping.ProfileMappingMappings">ProfileMappingMappings</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.property.sourceIdInput">source_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.property.targetIdInput">target_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.property.alwaysApply">always_apply</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.property.deleteWhenAbsent">delete_when_absent</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.property.alwaysApply">always_apply</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.property.deleteWhenAbsent">delete_when_absent</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.property.sourceId">source_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMapping.property.targetId">target_id</a></code> | <code>str</code> | *No description.* |
@@ -812,20 +812,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-okta.profileMapping.ProfileMapping.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.profileMapping.ProfileMapping.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -872,10 +872,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-okta.profileMapping.ProfileMapping.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -932,20 +932,20 @@ target_type: str
 ##### `always_apply_input`<sup>Optional</sup> <a name="always_apply_input" id="@cdktf/provider-okta.profileMapping.ProfileMapping.property.alwaysApplyInput"></a>
 
 ```python
-always_apply_input: typing.Union[bool, IResolvable]
+always_apply_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `delete_when_absent_input`<sup>Optional</sup> <a name="delete_when_absent_input" id="@cdktf/provider-okta.profileMapping.ProfileMapping.property.deleteWhenAbsentInput"></a>
 
 ```python
-delete_when_absent_input: typing.Union[bool, IResolvable]
+delete_when_absent_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -962,10 +962,10 @@ id_input: str
 ##### `mappings_input`<sup>Optional</sup> <a name="mappings_input" id="@cdktf/provider-okta.profileMapping.ProfileMapping.property.mappingsInput"></a>
 
 ```python
-mappings_input: typing.Union[IResolvable, typing.List[ProfileMappingMappings]]
+mappings_input: IResolvable | typing.List[ProfileMappingMappings]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.profileMapping.ProfileMappingMappings">ProfileMappingMappings</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-okta.profileMapping.ProfileMappingMappings">ProfileMappingMappings</a>]
 
 ---
 
@@ -992,20 +992,20 @@ target_id_input: str
 ##### `always_apply`<sup>Required</sup> <a name="always_apply" id="@cdktf/provider-okta.profileMapping.ProfileMapping.property.alwaysApply"></a>
 
 ```python
-always_apply: typing.Union[bool, IResolvable]
+always_apply: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `delete_when_absent`<sup>Required</sup> <a name="delete_when_absent" id="@cdktf/provider-okta.profileMapping.ProfileMapping.property.deleteWhenAbsent"></a>
 
 ```python
-delete_when_absent: typing.Union[bool, IResolvable]
+delete_when_absent: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1067,19 +1067,19 @@ tfResourceType: str
 from cdktf_cdktf_provider_okta import profile_mapping
 
 profileMapping.ProfileMappingConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   source_id: str,
   target_id: str,
-  always_apply: typing.Union[bool, IResolvable] = None,
-  delete_when_absent: typing.Union[bool, IResolvable] = None,
+  always_apply: bool | IResolvable = None,
+  delete_when_absent: bool | IResolvable = None,
   id: str = None,
-  mappings: typing.Union[IResolvable, typing.List[ProfileMappingMappings]] = None
+  mappings: IResolvable | typing.List[ProfileMappingMappings] = None
 )
 ```
 
@@ -1087,39 +1087,39 @@ profileMapping.ProfileMappingConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingConfig.property.sourceId">source_id</a></code> | <code>str</code> | The source id of the mapping to manage. |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingConfig.property.targetId">target_id</a></code> | <code>str</code> | The target id of the mapping to manage. |
-| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingConfig.property.alwaysApply">always_apply</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether apply the changes to all users with this profile after updating or creating the these mappings. |
-| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingConfig.property.deleteWhenAbsent">delete_when_absent</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When turned on this flag will trigger the provider to delete mapping properties that are not defined in config. |
+| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingConfig.property.alwaysApply">always_apply</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether apply the changes to all users with this profile after updating or creating the these mappings. |
+| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingConfig.property.deleteWhenAbsent">delete_when_absent</a></code> | <code>bool \| cdktf.IResolvable</code> | When turned on this flag will trigger the provider to delete mapping properties that are not defined in config. |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/profile_mapping#id ProfileMapping#id}. |
-| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingConfig.property.mappings">mappings</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.profileMapping.ProfileMappingMappings">ProfileMappingMappings</a>]]</code> | mappings block. |
+| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingConfig.property.mappings">mappings</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-okta.profileMapping.ProfileMappingMappings">ProfileMappingMappings</a>]</code> | mappings block. |
 
 ---
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-okta.profileMapping.ProfileMappingConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.profileMapping.ProfileMappingConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1166,10 +1166,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-okta.profileMapping.ProfileMappingConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1204,10 +1204,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 ##### `always_apply`<sup>Optional</sup> <a name="always_apply" id="@cdktf/provider-okta.profileMapping.ProfileMappingConfig.property.alwaysApply"></a>
 
 ```python
-always_apply: typing.Union[bool, IResolvable]
+always_apply: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether apply the changes to all users with this profile after updating or creating the these mappings.
 
@@ -1221,10 +1221,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 ##### `delete_when_absent`<sup>Optional</sup> <a name="delete_when_absent" id="@cdktf/provider-okta.profileMapping.ProfileMappingConfig.property.deleteWhenAbsent"></a>
 
 ```python
-delete_when_absent: typing.Union[bool, IResolvable]
+delete_when_absent: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 When turned on this flag will trigger the provider to delete mapping properties that are not defined in config.
 
@@ -1252,10 +1252,10 @@ If you experience problems setting this value it might not be settable. Please t
 ##### `mappings`<sup>Optional</sup> <a name="mappings" id="@cdktf/provider-okta.profileMapping.ProfileMappingConfig.property.mappings"></a>
 
 ```python
-mappings: typing.Union[IResolvable, typing.List[ProfileMappingMappings]]
+mappings: IResolvable | typing.List[ProfileMappingMappings]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.profileMapping.ProfileMappingMappings">ProfileMappingMappings</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-okta.profileMapping.ProfileMappingMappings">ProfileMappingMappings</a>]
 
 mappings block.
 
@@ -1461,7 +1461,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingMappingsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingMappingsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingMappingsList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.profileMapping.ProfileMappingMappings">ProfileMappingMappings</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingMappingsList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-okta.profileMapping.ProfileMappingMappings">ProfileMappingMappings</a>]</code> | *No description.* |
 
 ---
 
@@ -1492,10 +1492,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-okta.profileMapping.ProfileMappingMappingsList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[ProfileMappingMappings]]
+internal_value: IResolvable | typing.List[ProfileMappingMappings]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.profileMapping.ProfileMappingMappings">ProfileMappingMappings</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-okta.profileMapping.ProfileMappingMappings">ProfileMappingMappings</a>]
 
 ---
 
@@ -1768,7 +1768,7 @@ def reset_push_status() -> None
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingMappingsOutputReference.property.expression">expression</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingMappingsOutputReference.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingMappingsOutputReference.property.pushStatus">push_status</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingMappingsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-okta.profileMapping.ProfileMappingMappings">ProfileMappingMappings</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.profileMapping.ProfileMappingMappingsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-okta.profileMapping.ProfileMappingMappings">ProfileMappingMappings</a></code> | *No description.* |
 
 ---
 
@@ -1859,10 +1859,10 @@ push_status: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-okta.profileMapping.ProfileMappingMappingsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, ProfileMappingMappings]
+internal_value: IResolvable | ProfileMappingMappings
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-okta.profileMapping.ProfileMappingMappings">ProfileMappingMappings</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-okta.profileMapping.ProfileMappingMappings">ProfileMappingMappings</a>
 
 ---
 

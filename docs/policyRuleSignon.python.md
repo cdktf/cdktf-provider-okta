@@ -14,25 +14,25 @@ from cdktf_cdktf_provider_okta import policy_rule_signon
 policyRuleSignon.PolicyRuleSignon(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   name: str,
   access: str = None,
   authtype: str = None,
   behaviors: typing.List[str] = None,
-  factor_sequence: typing.Union[IResolvable, typing.List[PolicyRuleSignonFactorSequence]] = None,
+  factor_sequence: IResolvable | typing.List[PolicyRuleSignonFactorSequence] = None,
   id: str = None,
   identity_provider: str = None,
   identity_provider_ids: typing.List[str] = None,
   mfa_lifetime: typing.Union[int, float] = None,
   mfa_prompt: str = None,
-  mfa_remember_device: typing.Union[bool, IResolvable] = None,
-  mfa_required: typing.Union[bool, IResolvable] = None,
+  mfa_remember_device: bool | IResolvable = None,
+  mfa_required: bool | IResolvable = None,
   network_connection: str = None,
   network_excludes: typing.List[str] = None,
   network_includes: typing.List[str] = None,
@@ -43,7 +43,7 @@ policyRuleSignon.PolicyRuleSignon(
   risk_level: str = None,
   session_idle: typing.Union[int, float] = None,
   session_lifetime: typing.Union[int, float] = None,
-  session_persistent: typing.Union[bool, IResolvable] = None,
+  session_persistent: bool | IResolvable = None,
   status: str = None,
   users_excluded: typing.List[str] = None
 )
@@ -53,25 +53,25 @@ policyRuleSignon.PolicyRuleSignon(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.name">name</a></code> | <code>str</code> | Policy Rule Name. |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.access">access</a></code> | <code>str</code> | Allow or deny access based on the rule conditions: `ALLOW`, `DENY` or `CHALLENGE`. Default: `ALLOW`. |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.authtype">authtype</a></code> | <code>str</code> | Authentication entrypoint: `ANY`, `RADIUS` or `LDAP_INTERFACE`. Default: `ANY`. |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.behaviors">behaviors</a></code> | <code>typing.List[str]</code> | List of behavior IDs. |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.factorSequence">factor_sequence</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequence">PolicyRuleSignonFactorSequence</a>]]</code> | factor_sequence block. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.factorSequence">factor_sequence</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequence">PolicyRuleSignonFactorSequence</a>]</code> | factor_sequence block. |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/policy_rule_signon#id PolicyRuleSignon#id}. |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.identityProvider">identity_provider</a></code> | <code>str</code> | Apply rule based on the IdP used: `ANY`, `OKTA` or `SPECIFIC_IDP`. |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.identityProviderIds">identity_provider_ids</a></code> | <code>typing.List[str]</code> | When identity_provider is `SPECIFIC_IDP` then this is the list of IdP IDs to apply the rule on. |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.mfaLifetime">mfa_lifetime</a></code> | <code>typing.Union[int, float]</code> | Elapsed time before the next MFA challenge. |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.mfaPrompt">mfa_prompt</a></code> | <code>str</code> | Prompt for MFA based on the device used, a factor session lifetime, or every sign-on attempt: `DEVICE`, `SESSION` or`ALWAYS`. |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.mfaRememberDevice">mfa_remember_device</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Remember MFA device. Default: `false`. |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.mfaRequired">mfa_required</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Require MFA. Default: `false`. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.mfaRememberDevice">mfa_remember_device</a></code> | <code>bool \| cdktf.IResolvable</code> | Remember MFA device. Default: `false`. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.mfaRequired">mfa_required</a></code> | <code>bool \| cdktf.IResolvable</code> | Require MFA. Default: `false`. |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.networkConnection">network_connection</a></code> | <code>str</code> | Network selection mode: `ANYWHERE`, `ZONE`, `ON_NETWORK`, or `OFF_NETWORK`. Default: `ANYWHERE`. |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.networkExcludes">network_excludes</a></code> | <code>typing.List[str]</code> | Required if `network_connection` = `ZONE`. Indicates the network zones to exclude. |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.networkIncludes">network_includes</a></code> | <code>typing.List[str]</code> | Required if `network_connection` = `ZONE`. Indicates the network zones to include. |
@@ -82,7 +82,7 @@ policyRuleSignon.PolicyRuleSignon(
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.riskLevel">risk_level</a></code> | <code>str</code> | Risk level: ANY, LOW, MEDIUM or HIGH. Default: `ANY`. |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.sessionIdle">session_idle</a></code> | <code>typing.Union[int, float]</code> | Max minutes a session can be idle. Default: `120`. |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.sessionLifetime">session_lifetime</a></code> | <code>typing.Union[int, float]</code> | Max minutes a session is active: Disable = 0. Default: `120`. |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.sessionPersistent">session_persistent</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether session cookies will last across browser sessions. Okta Administrators can never have persistent session cookies. Default: `false`. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.sessionPersistent">session_persistent</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether session cookies will last across browser sessions. Okta Administrators can never have persistent session cookies. Default: `false`. |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.status">status</a></code> | <code>str</code> | Policy Rule Status: `ACTIVE` or `INACTIVE`. Default: `ACTIVE`. |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.usersExcluded">users_excluded</a></code> | <code>typing.List[str]</code> | Set of User IDs to Exclude. |
 
@@ -108,13 +108,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -144,7 +144,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -190,7 +190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 ##### `factor_sequence`<sup>Optional</sup> <a name="factor_sequence" id="@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.factorSequence"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequence">PolicyRuleSignonFactorSequence</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequence">PolicyRuleSignonFactorSequence</a>]
 
 factor_sequence block.
 
@@ -253,7 +253,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 ##### `mfa_remember_device`<sup>Optional</sup> <a name="mfa_remember_device" id="@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.mfaRememberDevice"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Remember MFA device. Default: `false`.
 
@@ -263,7 +263,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 ##### `mfa_required`<sup>Optional</sup> <a name="mfa_required" id="@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.mfaRequired"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Require MFA. Default: `false`.
 
@@ -375,7 +375,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 ##### `session_persistent`<sup>Optional</sup> <a name="session_persistent" id="@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.Initializer.parameter.sessionPersistent"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether session cookies will last across browser sessions. Okta Administrators can never have persistent session cookies. Default: `false`.
 
@@ -680,7 +680,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.importFrom"></a>
@@ -743,7 +743,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -759,7 +759,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -787,13 +787,13 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ```python
 def put_factor_sequence(
-  value: typing.Union[IResolvable, typing.List[PolicyRuleSignonFactorSequence]]
+  value: IResolvable | typing.List[PolicyRuleSignonFactorSequence]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.putFactorSequence.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequence">PolicyRuleSignonFactorSequence</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequence">PolicyRuleSignonFactorSequence</a>]
 
 ---
 
@@ -1078,25 +1078,25 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.factorSequence">factor_sequence</a></code> | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequenceList">PolicyRuleSignonFactorSequenceList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.accessInput">access_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.authtypeInput">authtype_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.behaviorsInput">behaviors_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.factorSequenceInput">factor_sequence_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequence">PolicyRuleSignonFactorSequence</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.factorSequenceInput">factor_sequence_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequence">PolicyRuleSignonFactorSequence</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.identityProviderIdsInput">identity_provider_ids_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.identityProviderInput">identity_provider_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.mfaLifetimeInput">mfa_lifetime_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.mfaPromptInput">mfa_prompt_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.mfaRememberDeviceInput">mfa_remember_device_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.mfaRequiredInput">mfa_required_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.mfaRememberDeviceInput">mfa_remember_device_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.mfaRequiredInput">mfa_required_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.networkConnectionInput">network_connection_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.networkExcludesInput">network_excludes_input</a></code> | <code>typing.List[str]</code> | *No description.* |
@@ -1108,7 +1108,7 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.riskLevelInput">risk_level_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.sessionIdleInput">session_idle_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.sessionLifetimeInput">session_lifetime_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.sessionPersistentInput">session_persistent_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.sessionPersistentInput">session_persistent_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.statusInput">status_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.usersExcludedInput">users_excluded_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.access">access</a></code> | <code>str</code> | *No description.* |
@@ -1119,8 +1119,8 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.identityProviderIds">identity_provider_ids</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.mfaLifetime">mfa_lifetime</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.mfaPrompt">mfa_prompt</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.mfaRememberDevice">mfa_remember_device</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.mfaRequired">mfa_required</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.mfaRememberDevice">mfa_remember_device</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.mfaRequired">mfa_required</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.networkConnection">network_connection</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.networkExcludes">network_excludes</a></code> | <code>typing.List[str]</code> | *No description.* |
@@ -1132,7 +1132,7 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.riskLevel">risk_level</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.sessionIdle">session_idle</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.sessionLifetime">session_lifetime</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.sessionPersistent">session_persistent</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.sessionPersistent">session_persistent</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.status">status</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.usersExcluded">users_excluded</a></code> | <code>typing.List[str]</code> | *No description.* |
 
@@ -1213,20 +1213,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1273,10 +1273,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1323,10 +1323,10 @@ behaviors_input: typing.List[str]
 ##### `factor_sequence_input`<sup>Optional</sup> <a name="factor_sequence_input" id="@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.factorSequenceInput"></a>
 
 ```python
-factor_sequence_input: typing.Union[IResolvable, typing.List[PolicyRuleSignonFactorSequence]]
+factor_sequence_input: IResolvable | typing.List[PolicyRuleSignonFactorSequence]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequence">PolicyRuleSignonFactorSequence</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequence">PolicyRuleSignonFactorSequence</a>]
 
 ---
 
@@ -1383,20 +1383,20 @@ mfa_prompt_input: str
 ##### `mfa_remember_device_input`<sup>Optional</sup> <a name="mfa_remember_device_input" id="@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.mfaRememberDeviceInput"></a>
 
 ```python
-mfa_remember_device_input: typing.Union[bool, IResolvable]
+mfa_remember_device_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `mfa_required_input`<sup>Optional</sup> <a name="mfa_required_input" id="@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.mfaRequiredInput"></a>
 
 ```python
-mfa_required_input: typing.Union[bool, IResolvable]
+mfa_required_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1513,10 +1513,10 @@ session_lifetime_input: typing.Union[int, float]
 ##### `session_persistent_input`<sup>Optional</sup> <a name="session_persistent_input" id="@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.sessionPersistentInput"></a>
 
 ```python
-session_persistent_input: typing.Union[bool, IResolvable]
+session_persistent_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1623,20 +1623,20 @@ mfa_prompt: str
 ##### `mfa_remember_device`<sup>Required</sup> <a name="mfa_remember_device" id="@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.mfaRememberDevice"></a>
 
 ```python
-mfa_remember_device: typing.Union[bool, IResolvable]
+mfa_remember_device: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `mfa_required`<sup>Required</sup> <a name="mfa_required" id="@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.mfaRequired"></a>
 
 ```python
-mfa_required: typing.Union[bool, IResolvable]
+mfa_required: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1753,10 +1753,10 @@ session_lifetime: typing.Union[int, float]
 ##### `session_persistent`<sup>Required</sup> <a name="session_persistent" id="@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon.property.sessionPersistent"></a>
 
 ```python
-session_persistent: typing.Union[bool, IResolvable]
+session_persistent: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1808,25 +1808,25 @@ tfResourceType: str
 from cdktf_cdktf_provider_okta import policy_rule_signon
 
 policyRuleSignon.PolicyRuleSignonConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   name: str,
   access: str = None,
   authtype: str = None,
   behaviors: typing.List[str] = None,
-  factor_sequence: typing.Union[IResolvable, typing.List[PolicyRuleSignonFactorSequence]] = None,
+  factor_sequence: IResolvable | typing.List[PolicyRuleSignonFactorSequence] = None,
   id: str = None,
   identity_provider: str = None,
   identity_provider_ids: typing.List[str] = None,
   mfa_lifetime: typing.Union[int, float] = None,
   mfa_prompt: str = None,
-  mfa_remember_device: typing.Union[bool, IResolvable] = None,
-  mfa_required: typing.Union[bool, IResolvable] = None,
+  mfa_remember_device: bool | IResolvable = None,
+  mfa_required: bool | IResolvable = None,
   network_connection: str = None,
   network_excludes: typing.List[str] = None,
   network_includes: typing.List[str] = None,
@@ -1837,7 +1837,7 @@ policyRuleSignon.PolicyRuleSignonConfig(
   risk_level: str = None,
   session_idle: typing.Union[int, float] = None,
   session_lifetime: typing.Union[int, float] = None,
-  session_persistent: typing.Union[bool, IResolvable] = None,
+  session_persistent: bool | IResolvable = None,
   status: str = None,
   users_excluded: typing.List[str] = None
 )
@@ -1847,25 +1847,25 @@ policyRuleSignon.PolicyRuleSignonConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.name">name</a></code> | <code>str</code> | Policy Rule Name. |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.access">access</a></code> | <code>str</code> | Allow or deny access based on the rule conditions: `ALLOW`, `DENY` or `CHALLENGE`. Default: `ALLOW`. |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.authtype">authtype</a></code> | <code>str</code> | Authentication entrypoint: `ANY`, `RADIUS` or `LDAP_INTERFACE`. Default: `ANY`. |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.behaviors">behaviors</a></code> | <code>typing.List[str]</code> | List of behavior IDs. |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.factorSequence">factor_sequence</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequence">PolicyRuleSignonFactorSequence</a>]]</code> | factor_sequence block. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.factorSequence">factor_sequence</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequence">PolicyRuleSignonFactorSequence</a>]</code> | factor_sequence block. |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/policy_rule_signon#id PolicyRuleSignon#id}. |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.identityProvider">identity_provider</a></code> | <code>str</code> | Apply rule based on the IdP used: `ANY`, `OKTA` or `SPECIFIC_IDP`. |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.identityProviderIds">identity_provider_ids</a></code> | <code>typing.List[str]</code> | When identity_provider is `SPECIFIC_IDP` then this is the list of IdP IDs to apply the rule on. |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.mfaLifetime">mfa_lifetime</a></code> | <code>typing.Union[int, float]</code> | Elapsed time before the next MFA challenge. |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.mfaPrompt">mfa_prompt</a></code> | <code>str</code> | Prompt for MFA based on the device used, a factor session lifetime, or every sign-on attempt: `DEVICE`, `SESSION` or`ALWAYS`. |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.mfaRememberDevice">mfa_remember_device</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Remember MFA device. Default: `false`. |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.mfaRequired">mfa_required</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Require MFA. Default: `false`. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.mfaRememberDevice">mfa_remember_device</a></code> | <code>bool \| cdktf.IResolvable</code> | Remember MFA device. Default: `false`. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.mfaRequired">mfa_required</a></code> | <code>bool \| cdktf.IResolvable</code> | Require MFA. Default: `false`. |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.networkConnection">network_connection</a></code> | <code>str</code> | Network selection mode: `ANYWHERE`, `ZONE`, `ON_NETWORK`, or `OFF_NETWORK`. Default: `ANYWHERE`. |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.networkExcludes">network_excludes</a></code> | <code>typing.List[str]</code> | Required if `network_connection` = `ZONE`. Indicates the network zones to exclude. |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.networkIncludes">network_includes</a></code> | <code>typing.List[str]</code> | Required if `network_connection` = `ZONE`. Indicates the network zones to include. |
@@ -1876,7 +1876,7 @@ policyRuleSignon.PolicyRuleSignonConfig(
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.riskLevel">risk_level</a></code> | <code>str</code> | Risk level: ANY, LOW, MEDIUM or HIGH. Default: `ANY`. |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.sessionIdle">session_idle</a></code> | <code>typing.Union[int, float]</code> | Max minutes a session can be idle. Default: `120`. |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.sessionLifetime">session_lifetime</a></code> | <code>typing.Union[int, float]</code> | Max minutes a session is active: Disable = 0. Default: `120`. |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.sessionPersistent">session_persistent</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether session cookies will last across browser sessions. Okta Administrators can never have persistent session cookies. Default: `false`. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.sessionPersistent">session_persistent</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether session cookies will last across browser sessions. Okta Administrators can never have persistent session cookies. Default: `false`. |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.status">status</a></code> | <code>str</code> | Policy Rule Status: `ACTIVE` or `INACTIVE`. Default: `ACTIVE`. |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.usersExcluded">users_excluded</a></code> | <code>typing.List[str]</code> | Set of User IDs to Exclude. |
 
@@ -1885,20 +1885,20 @@ policyRuleSignon.PolicyRuleSignonConfig(
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1945,10 +1945,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -2011,10 +2011,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 ##### `factor_sequence`<sup>Optional</sup> <a name="factor_sequence" id="@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.factorSequence"></a>
 
 ```python
-factor_sequence: typing.Union[IResolvable, typing.List[PolicyRuleSignonFactorSequence]]
+factor_sequence: IResolvable | typing.List[PolicyRuleSignonFactorSequence]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequence">PolicyRuleSignonFactorSequence</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequence">PolicyRuleSignonFactorSequence</a>]
 
 factor_sequence block.
 
@@ -2098,10 +2098,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 ##### `mfa_remember_device`<sup>Optional</sup> <a name="mfa_remember_device" id="@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.mfaRememberDevice"></a>
 
 ```python
-mfa_remember_device: typing.Union[bool, IResolvable]
+mfa_remember_device: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Remember MFA device. Default: `false`.
 
@@ -2112,10 +2112,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 ##### `mfa_required`<sup>Optional</sup> <a name="mfa_required" id="@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.mfaRequired"></a>
 
 ```python
-mfa_required: typing.Union[bool, IResolvable]
+mfa_required: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Require MFA. Default: `false`.
 
@@ -2268,10 +2268,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 ##### `session_persistent`<sup>Optional</sup> <a name="session_persistent" id="@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig.property.sessionPersistent"></a>
 
 ```python
-session_persistent: typing.Union[bool, IResolvable]
+session_persistent: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether session cookies will last across browser sessions. Okta Administrators can never have persistent session cookies. Default: `false`.
 
@@ -2317,7 +2317,7 @@ from cdktf_cdktf_provider_okta import policy_rule_signon
 policyRuleSignon.PolicyRuleSignonFactorSequence(
   primary_criteria_factor_type: str,
   primary_criteria_provider: str,
-  secondary_criteria: typing.Union[IResolvable, typing.List[PolicyRuleSignonFactorSequenceSecondaryCriteria]] = None
+  secondary_criteria: IResolvable | typing.List[PolicyRuleSignonFactorSequenceSecondaryCriteria] = None
 )
 ```
 
@@ -2327,7 +2327,7 @@ policyRuleSignon.PolicyRuleSignonFactorSequence(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequence.property.primaryCriteriaFactorType">primary_criteria_factor_type</a></code> | <code>str</code> | Type of a Factor. |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequence.property.primaryCriteriaProvider">primary_criteria_provider</a></code> | <code>str</code> | Factor provider. |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequence.property.secondaryCriteria">secondary_criteria</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequenceSecondaryCriteria">PolicyRuleSignonFactorSequenceSecondaryCriteria</a>]]</code> | secondary_criteria block. |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequence.property.secondaryCriteria">secondary_criteria</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequenceSecondaryCriteria">PolicyRuleSignonFactorSequenceSecondaryCriteria</a>]</code> | secondary_criteria block. |
 
 ---
 
@@ -2362,10 +2362,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 ##### `secondary_criteria`<sup>Optional</sup> <a name="secondary_criteria" id="@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequence.property.secondaryCriteria"></a>
 
 ```python
-secondary_criteria: typing.Union[IResolvable, typing.List[PolicyRuleSignonFactorSequenceSecondaryCriteria]]
+secondary_criteria: IResolvable | typing.List[PolicyRuleSignonFactorSequenceSecondaryCriteria]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequenceSecondaryCriteria">PolicyRuleSignonFactorSequenceSecondaryCriteria</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequenceSecondaryCriteria">PolicyRuleSignonFactorSequenceSecondaryCriteria</a>]
 
 secondary_criteria block.
 
@@ -2556,7 +2556,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequenceList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequenceList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequenceList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequence">PolicyRuleSignonFactorSequence</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequenceList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequence">PolicyRuleSignonFactorSequence</a>]</code> | *No description.* |
 
 ---
 
@@ -2587,10 +2587,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequenceList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[PolicyRuleSignonFactorSequence]]
+internal_value: IResolvable | typing.List[PolicyRuleSignonFactorSequence]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequence">PolicyRuleSignonFactorSequence</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequence">PolicyRuleSignonFactorSequence</a>]
 
 ---
 
@@ -2849,13 +2849,13 @@ Returns a reversible string representation.
 
 ```python
 def put_secondary_criteria(
-  value: typing.Union[IResolvable, typing.List[PolicyRuleSignonFactorSequenceSecondaryCriteria]]
+  value: IResolvable | typing.List[PolicyRuleSignonFactorSequenceSecondaryCriteria]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequenceOutputReference.putSecondaryCriteria.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequenceSecondaryCriteria">PolicyRuleSignonFactorSequenceSecondaryCriteria</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequenceSecondaryCriteria">PolicyRuleSignonFactorSequenceSecondaryCriteria</a>]
 
 ---
 
@@ -2875,10 +2875,10 @@ def reset_secondary_criteria() -> None
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequenceOutputReference.property.secondaryCriteria">secondary_criteria</a></code> | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequenceSecondaryCriteriaList">PolicyRuleSignonFactorSequenceSecondaryCriteriaList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequenceOutputReference.property.primaryCriteriaFactorTypeInput">primary_criteria_factor_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequenceOutputReference.property.primaryCriteriaProviderInput">primary_criteria_provider_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequenceOutputReference.property.secondaryCriteriaInput">secondary_criteria_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequenceSecondaryCriteria">PolicyRuleSignonFactorSequenceSecondaryCriteria</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequenceOutputReference.property.secondaryCriteriaInput">secondary_criteria_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequenceSecondaryCriteria">PolicyRuleSignonFactorSequenceSecondaryCriteria</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequenceOutputReference.property.primaryCriteriaFactorType">primary_criteria_factor_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequenceOutputReference.property.primaryCriteriaProvider">primary_criteria_provider</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequenceOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequence">PolicyRuleSignonFactorSequence</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequenceOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequence">PolicyRuleSignonFactorSequence</a></code> | *No description.* |
 
 ---
 
@@ -2939,10 +2939,10 @@ primary_criteria_provider_input: str
 ##### `secondary_criteria_input`<sup>Optional</sup> <a name="secondary_criteria_input" id="@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequenceOutputReference.property.secondaryCriteriaInput"></a>
 
 ```python
-secondary_criteria_input: typing.Union[IResolvable, typing.List[PolicyRuleSignonFactorSequenceSecondaryCriteria]]
+secondary_criteria_input: IResolvable | typing.List[PolicyRuleSignonFactorSequenceSecondaryCriteria]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequenceSecondaryCriteria">PolicyRuleSignonFactorSequenceSecondaryCriteria</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequenceSecondaryCriteria">PolicyRuleSignonFactorSequenceSecondaryCriteria</a>]
 
 ---
 
@@ -2969,10 +2969,10 @@ primary_criteria_provider: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequenceOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, PolicyRuleSignonFactorSequence]
+internal_value: IResolvable | PolicyRuleSignonFactorSequence
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequence">PolicyRuleSignonFactorSequence</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequence">PolicyRuleSignonFactorSequence</a>
 
 ---
 
@@ -3108,7 +3108,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequenceSecondaryCriteriaList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequenceSecondaryCriteriaList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequenceSecondaryCriteriaList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequenceSecondaryCriteria">PolicyRuleSignonFactorSequenceSecondaryCriteria</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequenceSecondaryCriteriaList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequenceSecondaryCriteria">PolicyRuleSignonFactorSequenceSecondaryCriteria</a>]</code> | *No description.* |
 
 ---
 
@@ -3139,10 +3139,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequenceSecondaryCriteriaList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[PolicyRuleSignonFactorSequenceSecondaryCriteria]]
+internal_value: IResolvable | typing.List[PolicyRuleSignonFactorSequenceSecondaryCriteria]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequenceSecondaryCriteria">PolicyRuleSignonFactorSequenceSecondaryCriteria</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequenceSecondaryCriteria">PolicyRuleSignonFactorSequenceSecondaryCriteria</a>]
 
 ---
 
@@ -3406,7 +3406,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequenceSecondaryCriteriaOutputReference.property.providerInput">provider_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequenceSecondaryCriteriaOutputReference.property.factorType">factor_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequenceSecondaryCriteriaOutputReference.property.provider">provider</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequenceSecondaryCriteriaOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequenceSecondaryCriteria">PolicyRuleSignonFactorSequenceSecondaryCriteria</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequenceSecondaryCriteriaOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequenceSecondaryCriteria">PolicyRuleSignonFactorSequenceSecondaryCriteria</a></code> | *No description.* |
 
 ---
 
@@ -3477,10 +3477,10 @@ provider: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequenceSecondaryCriteriaOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, PolicyRuleSignonFactorSequenceSecondaryCriteria]
+internal_value: IResolvable | PolicyRuleSignonFactorSequenceSecondaryCriteria
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequenceSecondaryCriteria">PolicyRuleSignonFactorSequenceSecondaryCriteria</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequenceSecondaryCriteria">PolicyRuleSignonFactorSequenceSecondaryCriteria</a>
 
 ---
 

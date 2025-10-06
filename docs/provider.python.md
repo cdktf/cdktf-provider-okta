@@ -17,7 +17,7 @@ provider.OktaProvider(
   access_token: str = None,
   alias: str = None,
   api_token: str = None,
-  backoff: typing.Union[bool, IResolvable] = None,
+  backoff: bool | IResolvable = None,
   base_url: str = None,
   client_id: str = None,
   http_proxy: str = None,
@@ -42,7 +42,7 @@ provider.OktaProvider(
 | <code><a href="#@cdktf/provider-okta.provider.OktaProvider.Initializer.parameter.accessToken">access_token</a></code> | <code>str</code> | Bearer token granting privileges to Okta API. |
 | <code><a href="#@cdktf/provider-okta.provider.OktaProvider.Initializer.parameter.alias">alias</a></code> | <code>str</code> | Alias name. |
 | <code><a href="#@cdktf/provider-okta.provider.OktaProvider.Initializer.parameter.apiToken">api_token</a></code> | <code>str</code> | API Token granting privileges to Okta API. |
-| <code><a href="#@cdktf/provider-okta.provider.OktaProvider.Initializer.parameter.backoff">backoff</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Use exponential back off strategy for rate limits. |
+| <code><a href="#@cdktf/provider-okta.provider.OktaProvider.Initializer.parameter.backoff">backoff</a></code> | <code>bool \| cdktf.IResolvable</code> | Use exponential back off strategy for rate limits. |
 | <code><a href="#@cdktf/provider-okta.provider.OktaProvider.Initializer.parameter.baseUrl">base_url</a></code> | <code>str</code> | The Okta url. (Use 'oktapreview.com' for Okta testing). |
 | <code><a href="#@cdktf/provider-okta.provider.OktaProvider.Initializer.parameter.clientId">client_id</a></code> | <code>str</code> | API Token granting privileges to Okta API. |
 | <code><a href="#@cdktf/provider-okta.provider.OktaProvider.Initializer.parameter.httpProxy">http_proxy</a></code> | <code>str</code> | Alternate HTTP proxy of scheme://hostname or scheme://hostname:port format. |
@@ -110,7 +110,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 ##### `backoff`<sup>Optional</sup> <a name="backoff" id="@cdktf/provider-okta.provider.OktaProvider.Initializer.parameter.backoff"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Use exponential back off strategy for rate limits.
 
@@ -619,7 +619,7 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 | <code><a href="#@cdktf/provider-okta.provider.OktaProvider.property.accessTokenInput">access_token_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.provider.OktaProvider.property.aliasInput">alias_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.provider.OktaProvider.property.apiTokenInput">api_token_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.provider.OktaProvider.property.backoffInput">backoff_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.provider.OktaProvider.property.backoffInput">backoff_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.provider.OktaProvider.property.baseUrlInput">base_url_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.provider.OktaProvider.property.clientIdInput">client_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.provider.OktaProvider.property.httpProxyInput">http_proxy_input</a></code> | <code>str</code> | *No description.* |
@@ -636,7 +636,7 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 | <code><a href="#@cdktf/provider-okta.provider.OktaProvider.property.scopesInput">scopes_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.provider.OktaProvider.property.accessToken">access_token</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.provider.OktaProvider.property.apiToken">api_token</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.provider.OktaProvider.property.backoff">backoff</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.provider.OktaProvider.property.backoff">backoff</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.provider.OktaProvider.property.baseUrl">base_url</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.provider.OktaProvider.property.clientId">client_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.provider.OktaProvider.property.httpProxy">http_proxy</a></code> | <code>str</code> | *No description.* |
@@ -779,10 +779,10 @@ api_token_input: str
 ##### `backoff_input`<sup>Optional</sup> <a name="backoff_input" id="@cdktf/provider-okta.provider.OktaProvider.property.backoffInput"></a>
 
 ```python
-backoff_input: typing.Union[bool, IResolvable]
+backoff_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -949,10 +949,10 @@ api_token: str
 ##### `backoff`<sup>Optional</sup> <a name="backoff" id="@cdktf/provider-okta.provider.OktaProvider.property.backoff"></a>
 
 ```python
-backoff: typing.Union[bool, IResolvable]
+backoff: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1127,7 +1127,7 @@ provider.OktaProviderConfig(
   access_token: str = None,
   alias: str = None,
   api_token: str = None,
-  backoff: typing.Union[bool, IResolvable] = None,
+  backoff: bool | IResolvable = None,
   base_url: str = None,
   client_id: str = None,
   http_proxy: str = None,
@@ -1152,7 +1152,7 @@ provider.OktaProviderConfig(
 | <code><a href="#@cdktf/provider-okta.provider.OktaProviderConfig.property.accessToken">access_token</a></code> | <code>str</code> | Bearer token granting privileges to Okta API. |
 | <code><a href="#@cdktf/provider-okta.provider.OktaProviderConfig.property.alias">alias</a></code> | <code>str</code> | Alias name. |
 | <code><a href="#@cdktf/provider-okta.provider.OktaProviderConfig.property.apiToken">api_token</a></code> | <code>str</code> | API Token granting privileges to Okta API. |
-| <code><a href="#@cdktf/provider-okta.provider.OktaProviderConfig.property.backoff">backoff</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Use exponential back off strategy for rate limits. |
+| <code><a href="#@cdktf/provider-okta.provider.OktaProviderConfig.property.backoff">backoff</a></code> | <code>bool \| cdktf.IResolvable</code> | Use exponential back off strategy for rate limits. |
 | <code><a href="#@cdktf/provider-okta.provider.OktaProviderConfig.property.baseUrl">base_url</a></code> | <code>str</code> | The Okta url. (Use 'oktapreview.com' for Okta testing). |
 | <code><a href="#@cdktf/provider-okta.provider.OktaProviderConfig.property.clientId">client_id</a></code> | <code>str</code> | API Token granting privileges to Okta API. |
 | <code><a href="#@cdktf/provider-okta.provider.OktaProviderConfig.property.httpProxy">http_proxy</a></code> | <code>str</code> | Alternate HTTP proxy of scheme://hostname or scheme://hostname:port format. |
@@ -1215,10 +1215,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 ##### `backoff`<sup>Optional</sup> <a name="backoff" id="@cdktf/provider-okta.provider.OktaProviderConfig.property.backoff"></a>
 
 ```python
-backoff: typing.Union[bool, IResolvable]
+backoff: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Use exponential back off strategy for rate limits.
 

@@ -14,13 +14,13 @@ from cdktf_cdktf_provider_okta import policy_password
 policyPassword.PolicyPassword(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   name: str,
   auth_provider: str = None,
   call_recovery: str = None,
@@ -29,10 +29,10 @@ policyPassword.PolicyPassword(
   groups_included: typing.List[str] = None,
   id: str = None,
   password_auto_unlock_minutes: typing.Union[int, float] = None,
-  password_dictionary_lookup: typing.Union[bool, IResolvable] = None,
-  password_exclude_first_name: typing.Union[bool, IResolvable] = None,
-  password_exclude_last_name: typing.Union[bool, IResolvable] = None,
-  password_exclude_username: typing.Union[bool, IResolvable] = None,
+  password_dictionary_lookup: bool | IResolvable = None,
+  password_exclude_first_name: bool | IResolvable = None,
+  password_exclude_last_name: bool | IResolvable = None,
+  password_exclude_username: bool | IResolvable = None,
   password_expire_warn_days: typing.Union[int, float] = None,
   password_history_count: typing.Union[int, float] = None,
   password_lockout_notification_channels: typing.List[str] = None,
@@ -44,12 +44,12 @@ policyPassword.PolicyPassword(
   password_min_number: typing.Union[int, float] = None,
   password_min_symbol: typing.Union[int, float] = None,
   password_min_uppercase: typing.Union[int, float] = None,
-  password_show_lockout_failures: typing.Union[bool, IResolvable] = None,
+  password_show_lockout_failures: bool | IResolvable = None,
   priority: typing.Union[int, float] = None,
   question_min_length: typing.Union[int, float] = None,
   question_recovery: str = None,
   recovery_email_token: typing.Union[int, float] = None,
-  skip_unlock: typing.Union[bool, IResolvable] = None,
+  skip_unlock: bool | IResolvable = None,
   sms_recovery: str = None,
   status: str = None
 )
@@ -59,13 +59,13 @@ policyPassword.PolicyPassword(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.Initializer.parameter.name">name</a></code> | <code>str</code> | Policy Name. |
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.Initializer.parameter.authProvider">auth_provider</a></code> | <code>str</code> | Authentication Provider: `OKTA`, `ACTIVE_DIRECTORY` or `LDAP`. Default: `OKTA`. |
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.Initializer.parameter.callRecovery">call_recovery</a></code> | <code>str</code> | Enable or disable voice call recovery: `ACTIVE` or `INACTIVE`. Default: `INACTIVE`. |
@@ -74,10 +74,10 @@ policyPassword.PolicyPassword(
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.Initializer.parameter.groupsIncluded">groups_included</a></code> | <code>typing.List[str]</code> | List of Group IDs to Include. |
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/policy_password#id PolicyPassword#id}. |
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.Initializer.parameter.passwordAutoUnlockMinutes">password_auto_unlock_minutes</a></code> | <code>typing.Union[int, float]</code> | Number of minutes before a locked account is unlocked: 0 = no limit. Default: `0`. |
-| <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.Initializer.parameter.passwordDictionaryLookup">password_dictionary_lookup</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Check Passwords Against Common Password Dictionary. Default: `false`. |
-| <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.Initializer.parameter.passwordExcludeFirstName">password_exclude_first_name</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | User firstName attribute must be excluded from the password. |
-| <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.Initializer.parameter.passwordExcludeLastName">password_exclude_last_name</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | User lastName attribute must be excluded from the password. |
-| <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.Initializer.parameter.passwordExcludeUsername">password_exclude_username</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If the user name must be excluded from the password. Default: `true`. |
+| <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.Initializer.parameter.passwordDictionaryLookup">password_dictionary_lookup</a></code> | <code>bool \| cdktf.IResolvable</code> | Check Passwords Against Common Password Dictionary. Default: `false`. |
+| <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.Initializer.parameter.passwordExcludeFirstName">password_exclude_first_name</a></code> | <code>bool \| cdktf.IResolvable</code> | User firstName attribute must be excluded from the password. |
+| <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.Initializer.parameter.passwordExcludeLastName">password_exclude_last_name</a></code> | <code>bool \| cdktf.IResolvable</code> | User lastName attribute must be excluded from the password. |
+| <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.Initializer.parameter.passwordExcludeUsername">password_exclude_username</a></code> | <code>bool \| cdktf.IResolvable</code> | If the user name must be excluded from the password. Default: `true`. |
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.Initializer.parameter.passwordExpireWarnDays">password_expire_warn_days</a></code> | <code>typing.Union[int, float]</code> | Length in days a user will be warned before password expiry: 0 = no warning. Default: `0`. |
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.Initializer.parameter.passwordHistoryCount">password_history_count</a></code> | <code>typing.Union[int, float]</code> | Number of distinct passwords that must be created before they can be reused: 0 = none. Default: `0`. |
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.Initializer.parameter.passwordLockoutNotificationChannels">password_lockout_notification_channels</a></code> | <code>typing.List[str]</code> | Notification channels to use to notify a user when their account has been locked. |
@@ -89,12 +89,12 @@ policyPassword.PolicyPassword(
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.Initializer.parameter.passwordMinNumber">password_min_number</a></code> | <code>typing.Union[int, float]</code> | If a password must contain at least one number: 0 = no, 1 = yes. Default: `1`. |
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.Initializer.parameter.passwordMinSymbol">password_min_symbol</a></code> | <code>typing.Union[int, float]</code> | If a password must contain at least one symbol (!@#$%^&*): 0 = no, 1 = yes. Default: `0`. |
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.Initializer.parameter.passwordMinUppercase">password_min_uppercase</a></code> | <code>typing.Union[int, float]</code> | If a password must contain at least one upper case letter: 0 = no, 1 = yes. Default: `1`. |
-| <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.Initializer.parameter.passwordShowLockoutFailures">password_show_lockout_failures</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If a user should be informed when their account is locked. Default: `false`. |
+| <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.Initializer.parameter.passwordShowLockoutFailures">password_show_lockout_failures</a></code> | <code>bool \| cdktf.IResolvable</code> | If a user should be informed when their account is locked. Default: `false`. |
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.Initializer.parameter.priority">priority</a></code> | <code>typing.Union[int, float]</code> | Policy Priority, this attribute can be set to a valid priority. |
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.Initializer.parameter.questionMinLength">question_min_length</a></code> | <code>typing.Union[int, float]</code> | Min length of the password recovery question answer. Default: `4`. |
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.Initializer.parameter.questionRecovery">question_recovery</a></code> | <code>str</code> | Enable or disable security question password recovery: `ACTIVE` or `INACTIVE`. Default: `ACTIVE`. |
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.Initializer.parameter.recoveryEmailToken">recovery_email_token</a></code> | <code>typing.Union[int, float]</code> | Lifetime in minutes of the recovery email token. Default: `60`. |
-| <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.Initializer.parameter.skipUnlock">skip_unlock</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When an Active Directory user is locked out of Okta, the Okta unlock operation should also attempt to unlock the user's Windows account. |
+| <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.Initializer.parameter.skipUnlock">skip_unlock</a></code> | <code>bool \| cdktf.IResolvable</code> | When an Active Directory user is locked out of Okta, the Okta unlock operation should also attempt to unlock the user's Windows account. |
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.Initializer.parameter.smsRecovery">sms_recovery</a></code> | <code>str</code> | Enable or disable SMS password recovery: `ACTIVE` or `INACTIVE`. Default: `INACTIVE`. |
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.Initializer.parameter.status">status</a></code> | <code>str</code> | Policy Status: `ACTIVE` or `INACTIVE`. Default: `ACTIVE`. |
 
@@ -120,13 +120,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-okta.policyPassword.PolicyPassword.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.policyPassword.PolicyPassword.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -156,7 +156,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-okta.policyPassword.PolicyPassword.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -243,7 +243,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 ##### `password_dictionary_lookup`<sup>Optional</sup> <a name="password_dictionary_lookup" id="@cdktf/provider-okta.policyPassword.PolicyPassword.Initializer.parameter.passwordDictionaryLookup"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Check Passwords Against Common Password Dictionary. Default: `false`.
 
@@ -253,7 +253,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 ##### `password_exclude_first_name`<sup>Optional</sup> <a name="password_exclude_first_name" id="@cdktf/provider-okta.policyPassword.PolicyPassword.Initializer.parameter.passwordExcludeFirstName"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 User firstName attribute must be excluded from the password.
 
@@ -263,7 +263,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 ##### `password_exclude_last_name`<sup>Optional</sup> <a name="password_exclude_last_name" id="@cdktf/provider-okta.policyPassword.PolicyPassword.Initializer.parameter.passwordExcludeLastName"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 User lastName attribute must be excluded from the password.
 
@@ -273,7 +273,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 ##### `password_exclude_username`<sup>Optional</sup> <a name="password_exclude_username" id="@cdktf/provider-okta.policyPassword.PolicyPassword.Initializer.parameter.passwordExcludeUsername"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 If the user name must be excluded from the password. Default: `true`.
 
@@ -393,7 +393,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 ##### `password_show_lockout_failures`<sup>Optional</sup> <a name="password_show_lockout_failures" id="@cdktf/provider-okta.policyPassword.PolicyPassword.Initializer.parameter.passwordShowLockoutFailures"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 If a user should be informed when their account is locked. Default: `false`.
 
@@ -445,7 +445,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 ##### `skip_unlock`<sup>Optional</sup> <a name="skip_unlock" id="@cdktf/provider-okta.policyPassword.PolicyPassword.Initializer.parameter.skipUnlock"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 When an Active Directory user is locked out of Okta, the Okta unlock operation should also attempt to unlock the user's Windows account.
 
@@ -757,7 +757,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-okta.policyPassword.PolicyPassword.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-okta.policyPassword.PolicyPassword.importFrom"></a>
@@ -820,7 +820,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -836,7 +836,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-okta.policyPassword.PolicyPassword.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -1177,13 +1177,13 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.property.authProviderInput">auth_provider_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.property.callRecoveryInput">call_recovery_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
@@ -1192,10 +1192,10 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.property.passwordAutoUnlockMinutesInput">password_auto_unlock_minutes_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.property.passwordDictionaryLookupInput">password_dictionary_lookup_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.property.passwordExcludeFirstNameInput">password_exclude_first_name_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.property.passwordExcludeLastNameInput">password_exclude_last_name_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.property.passwordExcludeUsernameInput">password_exclude_username_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.property.passwordDictionaryLookupInput">password_dictionary_lookup_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.property.passwordExcludeFirstNameInput">password_exclude_first_name_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.property.passwordExcludeLastNameInput">password_exclude_last_name_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.property.passwordExcludeUsernameInput">password_exclude_username_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.property.passwordExpireWarnDaysInput">password_expire_warn_days_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.property.passwordHistoryCountInput">password_history_count_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.property.passwordLockoutNotificationChannelsInput">password_lockout_notification_channels_input</a></code> | <code>typing.List[str]</code> | *No description.* |
@@ -1207,12 +1207,12 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.property.passwordMinNumberInput">password_min_number_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.property.passwordMinSymbolInput">password_min_symbol_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.property.passwordMinUppercaseInput">password_min_uppercase_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.property.passwordShowLockoutFailuresInput">password_show_lockout_failures_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.property.passwordShowLockoutFailuresInput">password_show_lockout_failures_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.property.priorityInput">priority_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.property.questionMinLengthInput">question_min_length_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.property.questionRecoveryInput">question_recovery_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.property.recoveryEmailTokenInput">recovery_email_token_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.property.skipUnlockInput">skip_unlock_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.property.skipUnlockInput">skip_unlock_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.property.smsRecoveryInput">sms_recovery_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.property.statusInput">status_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.property.authProvider">auth_provider</a></code> | <code>str</code> | *No description.* |
@@ -1223,10 +1223,10 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.property.passwordAutoUnlockMinutes">password_auto_unlock_minutes</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.property.passwordDictionaryLookup">password_dictionary_lookup</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.property.passwordExcludeFirstName">password_exclude_first_name</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.property.passwordExcludeLastName">password_exclude_last_name</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.property.passwordExcludeUsername">password_exclude_username</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.property.passwordDictionaryLookup">password_dictionary_lookup</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.property.passwordExcludeFirstName">password_exclude_first_name</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.property.passwordExcludeLastName">password_exclude_last_name</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.property.passwordExcludeUsername">password_exclude_username</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.property.passwordExpireWarnDays">password_expire_warn_days</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.property.passwordHistoryCount">password_history_count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.property.passwordLockoutNotificationChannels">password_lockout_notification_channels</a></code> | <code>typing.List[str]</code> | *No description.* |
@@ -1238,12 +1238,12 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.property.passwordMinNumber">password_min_number</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.property.passwordMinSymbol">password_min_symbol</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.property.passwordMinUppercase">password_min_uppercase</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.property.passwordShowLockoutFailures">password_show_lockout_failures</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.property.passwordShowLockoutFailures">password_show_lockout_failures</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.property.priority">priority</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.property.questionMinLength">question_min_length</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.property.questionRecovery">question_recovery</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.property.recoveryEmailToken">recovery_email_token</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.property.skipUnlock">skip_unlock</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.property.skipUnlock">skip_unlock</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.property.smsRecovery">sms_recovery</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPassword.property.status">status</a></code> | <code>str</code> | *No description.* |
 
@@ -1324,20 +1324,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-okta.policyPassword.PolicyPassword.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.policyPassword.PolicyPassword.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1384,10 +1384,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-okta.policyPassword.PolicyPassword.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1474,40 +1474,40 @@ password_auto_unlock_minutes_input: typing.Union[int, float]
 ##### `password_dictionary_lookup_input`<sup>Optional</sup> <a name="password_dictionary_lookup_input" id="@cdktf/provider-okta.policyPassword.PolicyPassword.property.passwordDictionaryLookupInput"></a>
 
 ```python
-password_dictionary_lookup_input: typing.Union[bool, IResolvable]
+password_dictionary_lookup_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `password_exclude_first_name_input`<sup>Optional</sup> <a name="password_exclude_first_name_input" id="@cdktf/provider-okta.policyPassword.PolicyPassword.property.passwordExcludeFirstNameInput"></a>
 
 ```python
-password_exclude_first_name_input: typing.Union[bool, IResolvable]
+password_exclude_first_name_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `password_exclude_last_name_input`<sup>Optional</sup> <a name="password_exclude_last_name_input" id="@cdktf/provider-okta.policyPassword.PolicyPassword.property.passwordExcludeLastNameInput"></a>
 
 ```python
-password_exclude_last_name_input: typing.Union[bool, IResolvable]
+password_exclude_last_name_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `password_exclude_username_input`<sup>Optional</sup> <a name="password_exclude_username_input" id="@cdktf/provider-okta.policyPassword.PolicyPassword.property.passwordExcludeUsernameInput"></a>
 
 ```python
-password_exclude_username_input: typing.Union[bool, IResolvable]
+password_exclude_username_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1624,10 +1624,10 @@ password_min_uppercase_input: typing.Union[int, float]
 ##### `password_show_lockout_failures_input`<sup>Optional</sup> <a name="password_show_lockout_failures_input" id="@cdktf/provider-okta.policyPassword.PolicyPassword.property.passwordShowLockoutFailuresInput"></a>
 
 ```python
-password_show_lockout_failures_input: typing.Union[bool, IResolvable]
+password_show_lockout_failures_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1674,10 +1674,10 @@ recovery_email_token_input: typing.Union[int, float]
 ##### `skip_unlock_input`<sup>Optional</sup> <a name="skip_unlock_input" id="@cdktf/provider-okta.policyPassword.PolicyPassword.property.skipUnlockInput"></a>
 
 ```python
-skip_unlock_input: typing.Union[bool, IResolvable]
+skip_unlock_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1784,40 +1784,40 @@ password_auto_unlock_minutes: typing.Union[int, float]
 ##### `password_dictionary_lookup`<sup>Required</sup> <a name="password_dictionary_lookup" id="@cdktf/provider-okta.policyPassword.PolicyPassword.property.passwordDictionaryLookup"></a>
 
 ```python
-password_dictionary_lookup: typing.Union[bool, IResolvable]
+password_dictionary_lookup: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `password_exclude_first_name`<sup>Required</sup> <a name="password_exclude_first_name" id="@cdktf/provider-okta.policyPassword.PolicyPassword.property.passwordExcludeFirstName"></a>
 
 ```python
-password_exclude_first_name: typing.Union[bool, IResolvable]
+password_exclude_first_name: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `password_exclude_last_name`<sup>Required</sup> <a name="password_exclude_last_name" id="@cdktf/provider-okta.policyPassword.PolicyPassword.property.passwordExcludeLastName"></a>
 
 ```python
-password_exclude_last_name: typing.Union[bool, IResolvable]
+password_exclude_last_name: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `password_exclude_username`<sup>Required</sup> <a name="password_exclude_username" id="@cdktf/provider-okta.policyPassword.PolicyPassword.property.passwordExcludeUsername"></a>
 
 ```python
-password_exclude_username: typing.Union[bool, IResolvable]
+password_exclude_username: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1934,10 +1934,10 @@ password_min_uppercase: typing.Union[int, float]
 ##### `password_show_lockout_failures`<sup>Required</sup> <a name="password_show_lockout_failures" id="@cdktf/provider-okta.policyPassword.PolicyPassword.property.passwordShowLockoutFailures"></a>
 
 ```python
-password_show_lockout_failures: typing.Union[bool, IResolvable]
+password_show_lockout_failures: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1984,10 +1984,10 @@ recovery_email_token: typing.Union[int, float]
 ##### `skip_unlock`<sup>Required</sup> <a name="skip_unlock" id="@cdktf/provider-okta.policyPassword.PolicyPassword.property.skipUnlock"></a>
 
 ```python
-skip_unlock: typing.Union[bool, IResolvable]
+skip_unlock: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2039,13 +2039,13 @@ tfResourceType: str
 from cdktf_cdktf_provider_okta import policy_password
 
 policyPassword.PolicyPasswordConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   name: str,
   auth_provider: str = None,
   call_recovery: str = None,
@@ -2054,10 +2054,10 @@ policyPassword.PolicyPasswordConfig(
   groups_included: typing.List[str] = None,
   id: str = None,
   password_auto_unlock_minutes: typing.Union[int, float] = None,
-  password_dictionary_lookup: typing.Union[bool, IResolvable] = None,
-  password_exclude_first_name: typing.Union[bool, IResolvable] = None,
-  password_exclude_last_name: typing.Union[bool, IResolvable] = None,
-  password_exclude_username: typing.Union[bool, IResolvable] = None,
+  password_dictionary_lookup: bool | IResolvable = None,
+  password_exclude_first_name: bool | IResolvable = None,
+  password_exclude_last_name: bool | IResolvable = None,
+  password_exclude_username: bool | IResolvable = None,
   password_expire_warn_days: typing.Union[int, float] = None,
   password_history_count: typing.Union[int, float] = None,
   password_lockout_notification_channels: typing.List[str] = None,
@@ -2069,12 +2069,12 @@ policyPassword.PolicyPasswordConfig(
   password_min_number: typing.Union[int, float] = None,
   password_min_symbol: typing.Union[int, float] = None,
   password_min_uppercase: typing.Union[int, float] = None,
-  password_show_lockout_failures: typing.Union[bool, IResolvable] = None,
+  password_show_lockout_failures: bool | IResolvable = None,
   priority: typing.Union[int, float] = None,
   question_min_length: typing.Union[int, float] = None,
   question_recovery: str = None,
   recovery_email_token: typing.Union[int, float] = None,
-  skip_unlock: typing.Union[bool, IResolvable] = None,
+  skip_unlock: bool | IResolvable = None,
   sms_recovery: str = None,
   status: str = None
 )
@@ -2084,13 +2084,13 @@ policyPassword.PolicyPasswordConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPasswordConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPasswordConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPasswordConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPasswordConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPasswordConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPasswordConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPasswordConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPasswordConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPasswordConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPasswordConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPasswordConfig.property.name">name</a></code> | <code>str</code> | Policy Name. |
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPasswordConfig.property.authProvider">auth_provider</a></code> | <code>str</code> | Authentication Provider: `OKTA`, `ACTIVE_DIRECTORY` or `LDAP`. Default: `OKTA`. |
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPasswordConfig.property.callRecovery">call_recovery</a></code> | <code>str</code> | Enable or disable voice call recovery: `ACTIVE` or `INACTIVE`. Default: `INACTIVE`. |
@@ -2099,10 +2099,10 @@ policyPassword.PolicyPasswordConfig(
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPasswordConfig.property.groupsIncluded">groups_included</a></code> | <code>typing.List[str]</code> | List of Group IDs to Include. |
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPasswordConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/policy_password#id PolicyPassword#id}. |
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPasswordConfig.property.passwordAutoUnlockMinutes">password_auto_unlock_minutes</a></code> | <code>typing.Union[int, float]</code> | Number of minutes before a locked account is unlocked: 0 = no limit. Default: `0`. |
-| <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPasswordConfig.property.passwordDictionaryLookup">password_dictionary_lookup</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Check Passwords Against Common Password Dictionary. Default: `false`. |
-| <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPasswordConfig.property.passwordExcludeFirstName">password_exclude_first_name</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | User firstName attribute must be excluded from the password. |
-| <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPasswordConfig.property.passwordExcludeLastName">password_exclude_last_name</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | User lastName attribute must be excluded from the password. |
-| <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPasswordConfig.property.passwordExcludeUsername">password_exclude_username</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If the user name must be excluded from the password. Default: `true`. |
+| <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPasswordConfig.property.passwordDictionaryLookup">password_dictionary_lookup</a></code> | <code>bool \| cdktf.IResolvable</code> | Check Passwords Against Common Password Dictionary. Default: `false`. |
+| <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPasswordConfig.property.passwordExcludeFirstName">password_exclude_first_name</a></code> | <code>bool \| cdktf.IResolvable</code> | User firstName attribute must be excluded from the password. |
+| <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPasswordConfig.property.passwordExcludeLastName">password_exclude_last_name</a></code> | <code>bool \| cdktf.IResolvable</code> | User lastName attribute must be excluded from the password. |
+| <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPasswordConfig.property.passwordExcludeUsername">password_exclude_username</a></code> | <code>bool \| cdktf.IResolvable</code> | If the user name must be excluded from the password. Default: `true`. |
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPasswordConfig.property.passwordExpireWarnDays">password_expire_warn_days</a></code> | <code>typing.Union[int, float]</code> | Length in days a user will be warned before password expiry: 0 = no warning. Default: `0`. |
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPasswordConfig.property.passwordHistoryCount">password_history_count</a></code> | <code>typing.Union[int, float]</code> | Number of distinct passwords that must be created before they can be reused: 0 = none. Default: `0`. |
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPasswordConfig.property.passwordLockoutNotificationChannels">password_lockout_notification_channels</a></code> | <code>typing.List[str]</code> | Notification channels to use to notify a user when their account has been locked. |
@@ -2114,12 +2114,12 @@ policyPassword.PolicyPasswordConfig(
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPasswordConfig.property.passwordMinNumber">password_min_number</a></code> | <code>typing.Union[int, float]</code> | If a password must contain at least one number: 0 = no, 1 = yes. Default: `1`. |
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPasswordConfig.property.passwordMinSymbol">password_min_symbol</a></code> | <code>typing.Union[int, float]</code> | If a password must contain at least one symbol (!@#$%^&*): 0 = no, 1 = yes. Default: `0`. |
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPasswordConfig.property.passwordMinUppercase">password_min_uppercase</a></code> | <code>typing.Union[int, float]</code> | If a password must contain at least one upper case letter: 0 = no, 1 = yes. Default: `1`. |
-| <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPasswordConfig.property.passwordShowLockoutFailures">password_show_lockout_failures</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If a user should be informed when their account is locked. Default: `false`. |
+| <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPasswordConfig.property.passwordShowLockoutFailures">password_show_lockout_failures</a></code> | <code>bool \| cdktf.IResolvable</code> | If a user should be informed when their account is locked. Default: `false`. |
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPasswordConfig.property.priority">priority</a></code> | <code>typing.Union[int, float]</code> | Policy Priority, this attribute can be set to a valid priority. |
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPasswordConfig.property.questionMinLength">question_min_length</a></code> | <code>typing.Union[int, float]</code> | Min length of the password recovery question answer. Default: `4`. |
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPasswordConfig.property.questionRecovery">question_recovery</a></code> | <code>str</code> | Enable or disable security question password recovery: `ACTIVE` or `INACTIVE`. Default: `ACTIVE`. |
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPasswordConfig.property.recoveryEmailToken">recovery_email_token</a></code> | <code>typing.Union[int, float]</code> | Lifetime in minutes of the recovery email token. Default: `60`. |
-| <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPasswordConfig.property.skipUnlock">skip_unlock</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When an Active Directory user is locked out of Okta, the Okta unlock operation should also attempt to unlock the user's Windows account. |
+| <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPasswordConfig.property.skipUnlock">skip_unlock</a></code> | <code>bool \| cdktf.IResolvable</code> | When an Active Directory user is locked out of Okta, the Okta unlock operation should also attempt to unlock the user's Windows account. |
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPasswordConfig.property.smsRecovery">sms_recovery</a></code> | <code>str</code> | Enable or disable SMS password recovery: `ACTIVE` or `INACTIVE`. Default: `INACTIVE`. |
 | <code><a href="#@cdktf/provider-okta.policyPassword.PolicyPasswordConfig.property.status">status</a></code> | <code>str</code> | Policy Status: `ACTIVE` or `INACTIVE`. Default: `ACTIVE`. |
 
@@ -2128,20 +2128,20 @@ policyPassword.PolicyPasswordConfig(
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-okta.policyPassword.PolicyPasswordConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.policyPassword.PolicyPasswordConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -2188,10 +2188,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-okta.policyPassword.PolicyPasswordConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -2311,10 +2311,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 ##### `password_dictionary_lookup`<sup>Optional</sup> <a name="password_dictionary_lookup" id="@cdktf/provider-okta.policyPassword.PolicyPasswordConfig.property.passwordDictionaryLookup"></a>
 
 ```python
-password_dictionary_lookup: typing.Union[bool, IResolvable]
+password_dictionary_lookup: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Check Passwords Against Common Password Dictionary. Default: `false`.
 
@@ -2325,10 +2325,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 ##### `password_exclude_first_name`<sup>Optional</sup> <a name="password_exclude_first_name" id="@cdktf/provider-okta.policyPassword.PolicyPasswordConfig.property.passwordExcludeFirstName"></a>
 
 ```python
-password_exclude_first_name: typing.Union[bool, IResolvable]
+password_exclude_first_name: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 User firstName attribute must be excluded from the password.
 
@@ -2339,10 +2339,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 ##### `password_exclude_last_name`<sup>Optional</sup> <a name="password_exclude_last_name" id="@cdktf/provider-okta.policyPassword.PolicyPasswordConfig.property.passwordExcludeLastName"></a>
 
 ```python
-password_exclude_last_name: typing.Union[bool, IResolvable]
+password_exclude_last_name: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 User lastName attribute must be excluded from the password.
 
@@ -2353,10 +2353,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 ##### `password_exclude_username`<sup>Optional</sup> <a name="password_exclude_username" id="@cdktf/provider-okta.policyPassword.PolicyPasswordConfig.property.passwordExcludeUsername"></a>
 
 ```python
-password_exclude_username: typing.Union[bool, IResolvable]
+password_exclude_username: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 If the user name must be excluded from the password. Default: `true`.
 
@@ -2521,10 +2521,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 ##### `password_show_lockout_failures`<sup>Optional</sup> <a name="password_show_lockout_failures" id="@cdktf/provider-okta.policyPassword.PolicyPasswordConfig.property.passwordShowLockoutFailures"></a>
 
 ```python
-password_show_lockout_failures: typing.Union[bool, IResolvable]
+password_show_lockout_failures: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 If a user should be informed when their account is locked. Default: `false`.
 
@@ -2593,10 +2593,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 ##### `skip_unlock`<sup>Optional</sup> <a name="skip_unlock" id="@cdktf/provider-okta.policyPassword.PolicyPasswordConfig.property.skipUnlock"></a>
 
 ```python
-skip_unlock: typing.Union[bool, IResolvable]
+skip_unlock: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 When an Active Directory user is locked out of Okta, the Okta unlock operation should also attempt to unlock the user's Windows account.
 
