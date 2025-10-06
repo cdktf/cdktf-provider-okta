@@ -301,7 +301,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-okta.idpSaml.IdpSaml.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-okta.idpSaml.IdpSaml.importFrom"></a>
@@ -355,7 +355,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-okta.idpSaml.IdpSaml.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -370,7 +370,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-okta.idpSaml.IdpSaml.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -686,13 +686,13 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.acsBinding">AcsBinding</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.audience">Audience</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.type">Type</a></code> | <code>string</code> | *No description.* |
@@ -705,7 +705,7 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.groupsAssignmentInput">GroupsAssignmentInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.groupsAttributeInput">GroupsAttributeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.groupsFilterInput">GroupsFilterInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.honorPersistentNameIdInput">HonorPersistentNameIdInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.honorPersistentNameIdInput">HonorPersistentNameIdInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.issuerInput">IssuerInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.issuerModeInput">IssuerModeInput</a></code> | <code>string</code> | *No description.* |
@@ -713,7 +713,7 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.maxClockSkewInput">MaxClockSkewInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.nameFormatInput">NameFormatInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.profileMasterInput">ProfileMasterInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.profileMasterInput">ProfileMasterInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.provisioningActionInput">ProvisioningActionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.requestSignatureAlgorithmInput">RequestSignatureAlgorithmInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.requestSignatureScopeInput">RequestSignatureScopeInput</a></code> | <code>string</code> | *No description.* |
@@ -737,7 +737,7 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.groupsAssignment">GroupsAssignment</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.groupsAttribute">GroupsAttribute</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.groupsFilter">GroupsFilter</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.honorPersistentNameId">HonorPersistentNameId</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.honorPersistentNameId">HonorPersistentNameId</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.issuer">Issuer</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.issuerMode">IssuerMode</a></code> | <code>string</code> | *No description.* |
@@ -745,7 +745,7 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.maxClockSkew">MaxClockSkew</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.nameFormat">NameFormat</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.profileMaster">ProfileMaster</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.profileMaster">ProfileMaster</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.provisioningAction">ProvisioningAction</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.requestSignatureAlgorithm">RequestSignatureAlgorithm</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSaml.property.requestSignatureScope">RequestSignatureScope</a></code> | <code>string</code> | *No description.* |
@@ -839,20 +839,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-okta.idpSaml.IdpSaml.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.idpSaml.IdpSaml.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -899,10 +899,10 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-okta.idpSaml.IdpSaml.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -1029,10 +1029,10 @@ public string[] GroupsFilterInput { get; }
 ##### `HonorPersistentNameIdInput`<sup>Optional</sup> <a name="HonorPersistentNameIdInput" id="@cdktf/provider-okta.idpSaml.IdpSaml.property.honorPersistentNameIdInput"></a>
 
 ```csharp
-public object HonorPersistentNameIdInput { get; }
+public bool|IResolvable HonorPersistentNameIdInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1109,10 +1109,10 @@ public string NameInput { get; }
 ##### `ProfileMasterInput`<sup>Optional</sup> <a name="ProfileMasterInput" id="@cdktf/provider-okta.idpSaml.IdpSaml.property.profileMasterInput"></a>
 
 ```csharp
-public object ProfileMasterInput { get; }
+public bool|IResolvable ProfileMasterInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1349,10 +1349,10 @@ public string[] GroupsFilter { get; }
 ##### `HonorPersistentNameId`<sup>Required</sup> <a name="HonorPersistentNameId" id="@cdktf/provider-okta.idpSaml.IdpSaml.property.honorPersistentNameId"></a>
 
 ```csharp
-public object HonorPersistentNameId { get; }
+public bool|IResolvable HonorPersistentNameId { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1429,10 +1429,10 @@ public string NameFormat { get; }
 ##### `ProfileMaster`<sup>Required</sup> <a name="ProfileMaster" id="@cdktf/provider-okta.idpSaml.IdpSaml.property.profileMaster"></a>
 
 ```csharp
-public object ProfileMaster { get; }
+public bool|IResolvable ProfileMaster { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1614,13 +1614,13 @@ public string TfResourceType { get; }
 using HashiCorp.Cdktf.Providers.Okta;
 
 new IdpSamlConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string Issuer,
     string Kid,
     string Name,
@@ -1633,12 +1633,12 @@ new IdpSamlConfig {
     string[] GroupsAssignment = null,
     string GroupsAttribute = null,
     string[] GroupsFilter = null,
-    object HonorPersistentNameId = null,
+    bool|IResolvable HonorPersistentNameId = null,
     string Id = null,
     string IssuerMode = null,
     double MaxClockSkew = null,
     string NameFormat = null,
-    object ProfileMaster = null,
+    bool|IResolvable ProfileMaster = null,
     string ProvisioningAction = null,
     string RequestSignatureAlgorithm = null,
     string RequestSignatureScope = null,
@@ -1660,13 +1660,13 @@ new IdpSamlConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.idpSaml.IdpSamlConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.idpSaml.IdpSamlConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.idpSaml.IdpSamlConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.idpSaml.IdpSamlConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSamlConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSamlConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSamlConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSamlConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.idpSaml.IdpSamlConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.idpSaml.IdpSamlConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSamlConfig.property.issuer">Issuer</a></code> | <code>string</code> | URI that identifies the issuer. |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSamlConfig.property.kid">Kid</a></code> | <code>string</code> | The ID of the signing key. |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSamlConfig.property.name">Name</a></code> | <code>string</code> | Name of the IdP. |
@@ -1679,12 +1679,12 @@ new IdpSamlConfig {
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSamlConfig.property.groupsAssignment">GroupsAssignment</a></code> | <code>string[]</code> | List of Okta Group IDs to add an IdP user as a member with the `ASSIGN` `groups_action`. |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSamlConfig.property.groupsAttribute">GroupsAttribute</a></code> | <code>string</code> | IdP user profile attribute name (case-insensitive) for an array value that contains group memberships. |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSamlConfig.property.groupsFilter">GroupsFilter</a></code> | <code>string[]</code> | Whitelist of Okta Group identifiers that are allowed for the `APPEND` or `SYNC` `groups_action`. |
-| <code><a href="#@cdktf/provider-okta.idpSaml.IdpSamlConfig.property.honorPersistentNameId">HonorPersistentNameId</a></code> | <code>object</code> | Determines if the IdP should persist account linking when the incoming assertion NameID format is urn:oasis:names:tc:SAML:2.0:nameid-format:persistent. |
+| <code><a href="#@cdktf/provider-okta.idpSaml.IdpSamlConfig.property.honorPersistentNameId">HonorPersistentNameId</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Determines if the IdP should persist account linking when the incoming assertion NameID format is urn:oasis:names:tc:SAML:2.0:nameid-format:persistent. |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSamlConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/idp_saml#id IdpSaml#id}. |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSamlConfig.property.issuerMode">IssuerMode</a></code> | <code>string</code> | Indicates whether Okta uses the original Okta org domain URL, or a custom domain URL. |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSamlConfig.property.maxClockSkew">MaxClockSkew</a></code> | <code>double</code> | Maximum allowable clock-skew when processing messages from the IdP. |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSamlConfig.property.nameFormat">NameFormat</a></code> | <code>string</code> | The name identifier format to use. By default `urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified`. |
-| <code><a href="#@cdktf/provider-okta.idpSaml.IdpSamlConfig.property.profileMaster">ProfileMaster</a></code> | <code>object</code> | Determines if the IdP should act as a source of truth for user profile attributes. |
+| <code><a href="#@cdktf/provider-okta.idpSaml.IdpSamlConfig.property.profileMaster">ProfileMaster</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Determines if the IdP should act as a source of truth for user profile attributes. |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSamlConfig.property.provisioningAction">ProvisioningAction</a></code> | <code>string</code> | Provisioning action for an IdP user during authentication. Default: `AUTO`. |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSamlConfig.property.requestSignatureAlgorithm">RequestSignatureAlgorithm</a></code> | <code>string</code> | The XML digital Signature Algorithm used when signing an `AuthnRequest` message. It can be `SHA-256` or `SHA-1`. Default: `SHA-256`. |
 | <code><a href="#@cdktf/provider-okta.idpSaml.IdpSamlConfig.property.requestSignatureScope">RequestSignatureScope</a></code> | <code>string</code> | Specifies whether to digitally sign an AuthnRequest messages to the IdP. It can be `REQUEST` or `NONE`. Default: `REQUEST`. |
@@ -1705,20 +1705,20 @@ new IdpSamlConfig {
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-okta.idpSaml.IdpSamlConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-okta.idpSaml.IdpSamlConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -1765,10 +1765,10 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-okta.idpSaml.IdpSamlConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -1943,10 +1943,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 ##### `HonorPersistentNameId`<sup>Optional</sup> <a name="HonorPersistentNameId" id="@cdktf/provider-okta.idpSaml.IdpSamlConfig.property.honorPersistentNameId"></a>
 
 ```csharp
-public object HonorPersistentNameId { get; set; }
+public bool|IResolvable HonorPersistentNameId { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Determines if the IdP should persist account linking when the incoming assertion NameID format is urn:oasis:names:tc:SAML:2.0:nameid-format:persistent.
 
@@ -2014,10 +2014,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 ##### `ProfileMaster`<sup>Optional</sup> <a name="ProfileMaster" id="@cdktf/provider-okta.idpSaml.IdpSamlConfig.property.profileMaster"></a>
 
 ```csharp
-public object ProfileMaster { get; set; }
+public bool|IResolvable ProfileMaster { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Determines if the IdP should act as a source of truth for user profile attributes.
 

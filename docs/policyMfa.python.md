@@ -14,25 +14,25 @@ from cdktf_cdktf_provider_okta import policy_mfa
 policyMfa.PolicyMfa(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   name: str,
   description: str = None,
   duo: typing.Mapping[str] = None,
   external_idp: typing.Mapping[str] = None,
-  external_idps: typing.Union[IResolvable, typing.List[typing.Mapping[str]]] = None,
+  external_idps: IResolvable | typing.List[typing.Mapping[str]] = None,
   fido_u2_f: typing.Mapping[str] = None,
   fido_webauthn: typing.Mapping[str] = None,
   google_otp: typing.Mapping[str] = None,
   groups_included: typing.List[str] = None,
   hotp: typing.Mapping[str] = None,
   id: str = None,
-  is_oie: typing.Union[bool, IResolvable] = None,
+  is_oie: bool | IResolvable = None,
   okta_call: typing.Mapping[str] = None,
   okta_email: typing.Mapping[str] = None,
   okta_otp: typing.Mapping[str] = None,
@@ -58,25 +58,25 @@ policyMfa.PolicyMfa(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.Initializer.parameter.name">name</a></code> | <code>str</code> | Policy Name. |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.Initializer.parameter.description">description</a></code> | <code>str</code> | Policy Description. |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.Initializer.parameter.duo">duo</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/policy_mfa#duo PolicyMfa#duo}. |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.Initializer.parameter.externalIdp">external_idp</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/policy_mfa#external_idp PolicyMfa#external_idp}. |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.Initializer.parameter.externalIdps">external_idps</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[typing.Mapping[str]]]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/policy_mfa#external_idps PolicyMfa#external_idps}. |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.Initializer.parameter.externalIdps">external_idps</a></code> | <code>cdktf.IResolvable \| typing.List[typing.Mapping[str]]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/policy_mfa#external_idps PolicyMfa#external_idps}. |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.Initializer.parameter.fidoU2F">fido_u2_f</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/policy_mfa#fido_u2f PolicyMfa#fido_u2f}. |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.Initializer.parameter.fidoWebauthn">fido_webauthn</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/policy_mfa#fido_webauthn PolicyMfa#fido_webauthn}. |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.Initializer.parameter.googleOtp">google_otp</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/policy_mfa#google_otp PolicyMfa#google_otp}. |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.Initializer.parameter.groupsIncluded">groups_included</a></code> | <code>typing.List[str]</code> | List of Group IDs to Include. |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.Initializer.parameter.hotp">hotp</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/policy_mfa#hotp PolicyMfa#hotp}. |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/policy_mfa#id PolicyMfa#id}. |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.Initializer.parameter.isOie">is_oie</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Is the policy using Okta Identity Engine (OIE) with authenticators instead of factors? |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.Initializer.parameter.isOie">is_oie</a></code> | <code>bool \| cdktf.IResolvable</code> | Is the policy using Okta Identity Engine (OIE) with authenticators instead of factors? |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.Initializer.parameter.oktaCall">okta_call</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/policy_mfa#okta_call PolicyMfa#okta_call}. |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.Initializer.parameter.oktaEmail">okta_email</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/policy_mfa#okta_email PolicyMfa#okta_email}. |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.Initializer.parameter.oktaOtp">okta_otp</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/policy_mfa#okta_otp PolicyMfa#okta_otp}. |
@@ -118,13 +118,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-okta.policyMfa.PolicyMfa.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.policyMfa.PolicyMfa.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -154,7 +154,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-okta.policyMfa.PolicyMfa.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -196,7 +196,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 ##### `external_idps`<sup>Optional</sup> <a name="external_idps" id="@cdktf/provider-okta.policyMfa.PolicyMfa.Initializer.parameter.externalIdps"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[typing.Mapping[str]]]
+- *Type:* cdktf.IResolvable | typing.List[typing.Mapping[str]]
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/policy_mfa#external_idps PolicyMfa#external_idps}.
 
@@ -257,7 +257,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ##### `is_oie`<sup>Optional</sup> <a name="is_oie" id="@cdktf/provider-okta.policyMfa.PolicyMfa.Initializer.parameter.isOie"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Is the policy using Okta Identity Engine (OIE) with authenticators instead of factors?
 
@@ -696,7 +696,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-okta.policyMfa.PolicyMfa.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-okta.policyMfa.PolicyMfa.importFrom"></a>
@@ -759,7 +759,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -775,7 +775,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-okta.policyMfa.PolicyMfa.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -1110,24 +1110,24 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.duoInput">duo_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.externalIdpInput">external_idp_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.externalIdpsInput">external_idps_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[typing.Mapping[str]]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.externalIdpsInput">external_idps_input</a></code> | <code>cdktf.IResolvable \| typing.List[typing.Mapping[str]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.fidoU2FInput">fido_u2_f_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.fidoWebauthnInput">fido_webauthn_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.googleOtpInput">google_otp_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.groupsIncludedInput">groups_included_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.hotpInput">hotp_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.isOieInput">is_oie_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.isOieInput">is_oie_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.oktaCallInput">okta_call_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.oktaEmailInput">okta_email_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
@@ -1150,14 +1150,14 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.duo">duo</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.externalIdp">external_idp</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.externalIdps">external_idps</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[typing.Mapping[str]]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.externalIdps">external_idps</a></code> | <code>cdktf.IResolvable \| typing.List[typing.Mapping[str]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.fidoU2F">fido_u2_f</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.fidoWebauthn">fido_webauthn</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.googleOtp">google_otp</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.groupsIncluded">groups_included</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.hotp">hotp</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.isOie">is_oie</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.isOie">is_oie</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.oktaCall">okta_call</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfa.property.oktaEmail">okta_email</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
@@ -1255,20 +1255,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-okta.policyMfa.PolicyMfa.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.policyMfa.PolicyMfa.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1315,10 +1315,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-okta.policyMfa.PolicyMfa.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1355,10 +1355,10 @@ external_idp_input: typing.Mapping[str]
 ##### `external_idps_input`<sup>Optional</sup> <a name="external_idps_input" id="@cdktf/provider-okta.policyMfa.PolicyMfa.property.externalIdpsInput"></a>
 
 ```python
-external_idps_input: typing.Union[IResolvable, typing.List[typing.Mapping[str]]]
+external_idps_input: IResolvable | typing.List[typing.Mapping[str]]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[typing.Mapping[str]]]
+- *Type:* cdktf.IResolvable | typing.List[typing.Mapping[str]]
 
 ---
 
@@ -1425,10 +1425,10 @@ id_input: str
 ##### `is_oie_input`<sup>Optional</sup> <a name="is_oie_input" id="@cdktf/provider-okta.policyMfa.PolicyMfa.property.isOieInput"></a>
 
 ```python
-is_oie_input: typing.Union[bool, IResolvable]
+is_oie_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1655,10 +1655,10 @@ external_idp: typing.Mapping[str]
 ##### `external_idps`<sup>Required</sup> <a name="external_idps" id="@cdktf/provider-okta.policyMfa.PolicyMfa.property.externalIdps"></a>
 
 ```python
-external_idps: typing.Union[IResolvable, typing.List[typing.Mapping[str]]]
+external_idps: IResolvable | typing.List[typing.Mapping[str]]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[typing.Mapping[str]]]
+- *Type:* cdktf.IResolvable | typing.List[typing.Mapping[str]]
 
 ---
 
@@ -1725,10 +1725,10 @@ id: str
 ##### `is_oie`<sup>Required</sup> <a name="is_oie" id="@cdktf/provider-okta.policyMfa.PolicyMfa.property.isOie"></a>
 
 ```python
-is_oie: typing.Union[bool, IResolvable]
+is_oie: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1950,25 +1950,25 @@ tfResourceType: str
 from cdktf_cdktf_provider_okta import policy_mfa
 
 policyMfa.PolicyMfaConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   name: str,
   description: str = None,
   duo: typing.Mapping[str] = None,
   external_idp: typing.Mapping[str] = None,
-  external_idps: typing.Union[IResolvable, typing.List[typing.Mapping[str]]] = None,
+  external_idps: IResolvable | typing.List[typing.Mapping[str]] = None,
   fido_u2_f: typing.Mapping[str] = None,
   fido_webauthn: typing.Mapping[str] = None,
   google_otp: typing.Mapping[str] = None,
   groups_included: typing.List[str] = None,
   hotp: typing.Mapping[str] = None,
   id: str = None,
-  is_oie: typing.Union[bool, IResolvable] = None,
+  is_oie: bool | IResolvable = None,
   okta_call: typing.Mapping[str] = None,
   okta_email: typing.Mapping[str] = None,
   okta_otp: typing.Mapping[str] = None,
@@ -1994,25 +1994,25 @@ policyMfa.PolicyMfaConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.name">name</a></code> | <code>str</code> | Policy Name. |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.description">description</a></code> | <code>str</code> | Policy Description. |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.duo">duo</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/policy_mfa#duo PolicyMfa#duo}. |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.externalIdp">external_idp</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/policy_mfa#external_idp PolicyMfa#external_idp}. |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.externalIdps">external_idps</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[typing.Mapping[str]]]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/policy_mfa#external_idps PolicyMfa#external_idps}. |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.externalIdps">external_idps</a></code> | <code>cdktf.IResolvable \| typing.List[typing.Mapping[str]]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/policy_mfa#external_idps PolicyMfa#external_idps}. |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.fidoU2F">fido_u2_f</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/policy_mfa#fido_u2f PolicyMfa#fido_u2f}. |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.fidoWebauthn">fido_webauthn</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/policy_mfa#fido_webauthn PolicyMfa#fido_webauthn}. |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.googleOtp">google_otp</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/policy_mfa#google_otp PolicyMfa#google_otp}. |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.groupsIncluded">groups_included</a></code> | <code>typing.List[str]</code> | List of Group IDs to Include. |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.hotp">hotp</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/policy_mfa#hotp PolicyMfa#hotp}. |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/policy_mfa#id PolicyMfa#id}. |
-| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.isOie">is_oie</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Is the policy using Okta Identity Engine (OIE) with authenticators instead of factors? |
+| <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.isOie">is_oie</a></code> | <code>bool \| cdktf.IResolvable</code> | Is the policy using Okta Identity Engine (OIE) with authenticators instead of factors? |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.oktaCall">okta_call</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/policy_mfa#okta_call PolicyMfa#okta_call}. |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.oktaEmail">okta_email</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/policy_mfa#okta_email PolicyMfa#okta_email}. |
 | <code><a href="#@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.oktaOtp">okta_otp</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/policy_mfa#okta_otp PolicyMfa#okta_otp}. |
@@ -2037,20 +2037,20 @@ policyMfa.PolicyMfaConfig(
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -2097,10 +2097,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -2159,10 +2159,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 ##### `external_idps`<sup>Optional</sup> <a name="external_idps" id="@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.externalIdps"></a>
 
 ```python
-external_idps: typing.Union[IResolvable, typing.List[typing.Mapping[str]]]
+external_idps: IResolvable | typing.List[typing.Mapping[str]]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[typing.Mapping[str]]]
+- *Type:* cdktf.IResolvable | typing.List[typing.Mapping[str]]
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/policy_mfa#external_idps PolicyMfa#external_idps}.
 
@@ -2248,10 +2248,10 @@ If you experience problems setting this value it might not be settable. Please t
 ##### `is_oie`<sup>Optional</sup> <a name="is_oie" id="@cdktf/provider-okta.policyMfa.PolicyMfaConfig.property.isOie"></a>
 
 ```python
-is_oie: typing.Union[bool, IResolvable]
+is_oie: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Is the policy using Okta Identity Engine (OIE) with authenticators instead of factors?
 

@@ -14,13 +14,13 @@ from cdktf_cdktf_provider_okta import user
 user.User(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   email: str,
   first_name: str,
   last_name: str,
@@ -34,7 +34,7 @@ user.User(
   display_name: str = None,
   division: str = None,
   employee_number: str = None,
-  expire_password_on_create: typing.Union[bool, IResolvable] = None,
+  expire_password_on_create: bool | IResolvable = None,
   honorific_prefix: str = None,
   honorific_suffix: str = None,
   id: str = None,
@@ -56,7 +56,7 @@ user.User(
   recovery_answer: str = None,
   recovery_question: str = None,
   second_email: str = None,
-  skip_roles: typing.Union[bool, IResolvable] = None,
+  skip_roles: bool | IResolvable = None,
   state: str = None,
   status: str = None,
   street_address: str = None,
@@ -71,13 +71,13 @@ user.User(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-okta.user.User.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-okta.user.User.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-okta.user.User.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.user.User.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.user.User.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.user.User.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.user.User.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.user.User.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.Initializer.parameter.email">email</a></code> | <code>str</code> | User primary email address. |
 | <code><a href="#@cdktf/provider-okta.user.User.Initializer.parameter.firstName">first_name</a></code> | <code>str</code> | User first name. |
 | <code><a href="#@cdktf/provider-okta.user.User.Initializer.parameter.lastName">last_name</a></code> | <code>str</code> | User last name. |
@@ -91,7 +91,7 @@ user.User(
 | <code><a href="#@cdktf/provider-okta.user.User.Initializer.parameter.displayName">display_name</a></code> | <code>str</code> | User display name, suitable to show end users. |
 | <code><a href="#@cdktf/provider-okta.user.User.Initializer.parameter.division">division</a></code> | <code>str</code> | User division. |
 | <code><a href="#@cdktf/provider-okta.user.User.Initializer.parameter.employeeNumber">employee_number</a></code> | <code>str</code> | User employee number. |
-| <code><a href="#@cdktf/provider-okta.user.User.Initializer.parameter.expirePasswordOnCreate">expire_password_on_create</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If set to `true`, the user will have to change the password at the next login. |
+| <code><a href="#@cdktf/provider-okta.user.User.Initializer.parameter.expirePasswordOnCreate">expire_password_on_create</a></code> | <code>bool \| cdktf.IResolvable</code> | If set to `true`, the user will have to change the password at the next login. |
 | <code><a href="#@cdktf/provider-okta.user.User.Initializer.parameter.honorificPrefix">honorific_prefix</a></code> | <code>str</code> | User honorific prefix. |
 | <code><a href="#@cdktf/provider-okta.user.User.Initializer.parameter.honorificSuffix">honorific_suffix</a></code> | <code>str</code> | User honorific suffix. |
 | <code><a href="#@cdktf/provider-okta.user.User.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/user#id User#id}. |
@@ -113,7 +113,7 @@ user.User(
 | <code><a href="#@cdktf/provider-okta.user.User.Initializer.parameter.recoveryAnswer">recovery_answer</a></code> | <code>str</code> | User Password Recovery Answer. |
 | <code><a href="#@cdktf/provider-okta.user.User.Initializer.parameter.recoveryQuestion">recovery_question</a></code> | <code>str</code> | User Password Recovery Question. |
 | <code><a href="#@cdktf/provider-okta.user.User.Initializer.parameter.secondEmail">second_email</a></code> | <code>str</code> | User secondary email address, used for account recovery. |
-| <code><a href="#@cdktf/provider-okta.user.User.Initializer.parameter.skipRoles">skip_roles</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Do not populate user roles information (prevents additional API call). |
+| <code><a href="#@cdktf/provider-okta.user.User.Initializer.parameter.skipRoles">skip_roles</a></code> | <code>bool \| cdktf.IResolvable</code> | Do not populate user roles information (prevents additional API call). |
 | <code><a href="#@cdktf/provider-okta.user.User.Initializer.parameter.state">state</a></code> | <code>str</code> | User state or region. |
 | <code><a href="#@cdktf/provider-okta.user.User.Initializer.parameter.status">status</a></code> | <code>str</code> | User profile property. Valid values are `ACTIVE`, `DEPROVISIONED`, `STAGED`, `SUSPENDED`. Default: `ACTIVE`. |
 | <code><a href="#@cdktf/provider-okta.user.User.Initializer.parameter.streetAddress">street_address</a></code> | <code>str</code> | User street address. |
@@ -144,13 +144,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-okta.user.User.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.user.User.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -180,7 +180,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-okta.user.User.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -318,7 +318,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 ##### `expire_password_on_create`<sup>Optional</sup> <a name="expire_password_on_create" id="@cdktf/provider-okta.user.User.Initializer.parameter.expirePasswordOnCreate"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 If set to `true`, the user will have to change the password at the next login.
 
@@ -545,7 +545,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 
 ##### `skip_roles`<sup>Optional</sup> <a name="skip_roles" id="@cdktf/provider-okta.user.User.Initializer.parameter.skipRoles"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Do not populate user roles information (prevents additional API call).
 
@@ -915,7 +915,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-okta.user.User.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-okta.user.User.importFrom"></a>
@@ -978,7 +978,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -994,7 +994,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-okta.user.User.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -1453,13 +1453,13 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 | <code><a href="#@cdktf/provider-okta.user.User.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.user.User.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.user.User.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.user.User.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.user.User.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.user.User.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.user.User.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.passwordHash">password_hash</a></code> | <code><a href="#@cdktf/provider-okta.user.UserPasswordHashOutputReference">UserPasswordHashOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.rawStatus">raw_status</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.cityInput">city_input</a></code> | <code>str</code> | *No description.* |
@@ -1472,7 +1472,7 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 | <code><a href="#@cdktf/provider-okta.user.User.property.divisionInput">division_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.emailInput">email_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.employeeNumberInput">employee_number_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.user.User.property.expirePasswordOnCreateInput">expire_password_on_create_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.user.User.property.expirePasswordOnCreateInput">expire_password_on_create_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.firstNameInput">first_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.honorificPrefixInput">honorific_prefix_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.honorificSuffixInput">honorific_suffix_input</a></code> | <code>str</code> | *No description.* |
@@ -1497,7 +1497,7 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 | <code><a href="#@cdktf/provider-okta.user.User.property.recoveryAnswerInput">recovery_answer_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.recoveryQuestionInput">recovery_question_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.secondEmailInput">second_email_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.user.User.property.skipRolesInput">skip_roles_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.user.User.property.skipRolesInput">skip_roles_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.stateInput">state_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.statusInput">status_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.streetAddressInput">street_address_input</a></code> | <code>str</code> | *No description.* |
@@ -1515,7 +1515,7 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 | <code><a href="#@cdktf/provider-okta.user.User.property.division">division</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.email">email</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.employeeNumber">employee_number</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.user.User.property.expirePasswordOnCreate">expire_password_on_create</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.user.User.property.expirePasswordOnCreate">expire_password_on_create</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.firstName">first_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.honorificPrefix">honorific_prefix</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.honorificSuffix">honorific_suffix</a></code> | <code>str</code> | *No description.* |
@@ -1539,7 +1539,7 @@ Refer to the {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 | <code><a href="#@cdktf/provider-okta.user.User.property.recoveryAnswer">recovery_answer</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.recoveryQuestion">recovery_question</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.secondEmail">second_email</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.user.User.property.skipRoles">skip_roles</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.user.User.property.skipRoles">skip_roles</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.state">state</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.status">status</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.User.property.streetAddress">street_address</a></code> | <code>str</code> | *No description.* |
@@ -1625,20 +1625,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-okta.user.User.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.user.User.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1685,10 +1685,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-okta.user.User.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1815,10 +1815,10 @@ employee_number_input: str
 ##### `expire_password_on_create_input`<sup>Optional</sup> <a name="expire_password_on_create_input" id="@cdktf/provider-okta.user.User.property.expirePasswordOnCreateInput"></a>
 
 ```python
-expire_password_on_create_input: typing.Union[bool, IResolvable]
+expire_password_on_create_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2065,10 +2065,10 @@ second_email_input: str
 ##### `skip_roles_input`<sup>Optional</sup> <a name="skip_roles_input" id="@cdktf/provider-okta.user.User.property.skipRolesInput"></a>
 
 ```python
-skip_roles_input: typing.Union[bool, IResolvable]
+skip_roles_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2245,10 +2245,10 @@ employee_number: str
 ##### `expire_password_on_create`<sup>Required</sup> <a name="expire_password_on_create" id="@cdktf/provider-okta.user.User.property.expirePasswordOnCreate"></a>
 
 ```python
-expire_password_on_create: typing.Union[bool, IResolvable]
+expire_password_on_create: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2485,10 +2485,10 @@ second_email: str
 ##### `skip_roles`<sup>Required</sup> <a name="skip_roles" id="@cdktf/provider-okta.user.User.property.skipRoles"></a>
 
 ```python
-skip_roles: typing.Union[bool, IResolvable]
+skip_roles: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2590,13 +2590,13 @@ tfResourceType: str
 from cdktf_cdktf_provider_okta import user
 
 user.UserConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   email: str,
   first_name: str,
   last_name: str,
@@ -2610,7 +2610,7 @@ user.UserConfig(
   display_name: str = None,
   division: str = None,
   employee_number: str = None,
-  expire_password_on_create: typing.Union[bool, IResolvable] = None,
+  expire_password_on_create: bool | IResolvable = None,
   honorific_prefix: str = None,
   honorific_suffix: str = None,
   id: str = None,
@@ -2632,7 +2632,7 @@ user.UserConfig(
   recovery_answer: str = None,
   recovery_question: str = None,
   second_email: str = None,
-  skip_roles: typing.Union[bool, IResolvable] = None,
+  skip_roles: bool | IResolvable = None,
   state: str = None,
   status: str = None,
   street_address: str = None,
@@ -2647,13 +2647,13 @@ user.UserConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-okta.user.UserConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.user.UserConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.user.UserConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.user.UserConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-okta.user.UserConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-okta.user.UserConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.email">email</a></code> | <code>str</code> | User primary email address. |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.firstName">first_name</a></code> | <code>str</code> | User first name. |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.lastName">last_name</a></code> | <code>str</code> | User last name. |
@@ -2667,7 +2667,7 @@ user.UserConfig(
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.displayName">display_name</a></code> | <code>str</code> | User display name, suitable to show end users. |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.division">division</a></code> | <code>str</code> | User division. |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.employeeNumber">employee_number</a></code> | <code>str</code> | User employee number. |
-| <code><a href="#@cdktf/provider-okta.user.UserConfig.property.expirePasswordOnCreate">expire_password_on_create</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If set to `true`, the user will have to change the password at the next login. |
+| <code><a href="#@cdktf/provider-okta.user.UserConfig.property.expirePasswordOnCreate">expire_password_on_create</a></code> | <code>bool \| cdktf.IResolvable</code> | If set to `true`, the user will have to change the password at the next login. |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.honorificPrefix">honorific_prefix</a></code> | <code>str</code> | User honorific prefix. |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.honorificSuffix">honorific_suffix</a></code> | <code>str</code> | User honorific suffix. |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/okta/4.20.0/docs/resources/user#id User#id}. |
@@ -2689,7 +2689,7 @@ user.UserConfig(
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.recoveryAnswer">recovery_answer</a></code> | <code>str</code> | User Password Recovery Answer. |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.recoveryQuestion">recovery_question</a></code> | <code>str</code> | User Password Recovery Question. |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.secondEmail">second_email</a></code> | <code>str</code> | User secondary email address, used for account recovery. |
-| <code><a href="#@cdktf/provider-okta.user.UserConfig.property.skipRoles">skip_roles</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Do not populate user roles information (prevents additional API call). |
+| <code><a href="#@cdktf/provider-okta.user.UserConfig.property.skipRoles">skip_roles</a></code> | <code>bool \| cdktf.IResolvable</code> | Do not populate user roles information (prevents additional API call). |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.state">state</a></code> | <code>str</code> | User state or region. |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.status">status</a></code> | <code>str</code> | User profile property. Valid values are `ACTIVE`, `DEPROVISIONED`, `STAGED`, `SUSPENDED`. Default: `ACTIVE`. |
 | <code><a href="#@cdktf/provider-okta.user.UserConfig.property.streetAddress">street_address</a></code> | <code>str</code> | User street address. |
@@ -2703,20 +2703,20 @@ user.UserConfig(
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-okta.user.UserConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-okta.user.UserConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -2763,10 +2763,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-okta.user.UserConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -2957,10 +2957,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 ##### `expire_password_on_create`<sup>Optional</sup> <a name="expire_password_on_create" id="@cdktf/provider-okta.user.UserConfig.property.expirePasswordOnCreate"></a>
 
 ```python
-expire_password_on_create: typing.Union[bool, IResolvable]
+expire_password_on_create: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 If set to `true`, the user will have to change the password at the next login.
 
@@ -3272,10 +3272,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 ##### `skip_roles`<sup>Optional</sup> <a name="skip_roles" id="@cdktf/provider-okta.user.UserConfig.property.skipRoles"></a>
 
 ```python
-skip_roles: typing.Union[bool, IResolvable]
+skip_roles: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Do not populate user roles information (prevents additional API call).
 
