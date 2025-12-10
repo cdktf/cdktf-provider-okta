@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefault.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v14/policymfadefault"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policymfadefault"
 
 policymfadefault.NewPolicyMfaDefault(scope Construct, id *string, config PolicyMfaDefaultConfig) PolicyMfaDefault
 ```
@@ -553,7 +553,7 @@ func ResetYubikeyToken()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefault.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v14/policymfadefault"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policymfadefault"
 
 policymfadefault.PolicyMfaDefault_IsConstruct(x interface{}) *bool
 ```
@@ -585,7 +585,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefault.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v14/policymfadefault"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policymfadefault"
 
 policymfadefault.PolicyMfaDefault_IsTerraformElement(x interface{}) *bool
 ```
@@ -599,7 +599,7 @@ policymfadefault.PolicyMfaDefault_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefault.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v14/policymfadefault"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policymfadefault"
 
 policymfadefault.PolicyMfaDefault_IsTerraformResource(x interface{}) *bool
 ```
@@ -613,7 +613,7 @@ policymfadefault.PolicyMfaDefault_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefault.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v14/policymfadefault"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policymfadefault"
 
 policymfadefault.PolicyMfaDefault_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1447,7 +1447,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefaultConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v14/policymfadefault"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policymfadefault"
 
 &policymfadefault.PolicyMfaDefaultConfig {
 	Connection: interface{},

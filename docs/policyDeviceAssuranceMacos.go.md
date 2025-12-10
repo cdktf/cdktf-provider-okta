@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.policyDeviceAssuranceMacos.PolicyDeviceAssuranceMacos.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v14/policydeviceassurancemacos"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policydeviceassurancemacos"
 
 policydeviceassurancemacos.NewPolicyDeviceAssuranceMacos(scope Construct, id *string, config PolicyDeviceAssuranceMacosConfig) PolicyDeviceAssuranceMacos
 ```
@@ -504,7 +504,7 @@ func ResetTpspSiteIsolationEnabled()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.policyDeviceAssuranceMacos.PolicyDeviceAssuranceMacos.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v14/policydeviceassurancemacos"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policydeviceassurancemacos"
 
 policydeviceassurancemacos.PolicyDeviceAssuranceMacos_IsConstruct(x interface{}) *bool
 ```
@@ -536,7 +536,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.policyDeviceAssuranceMacos.PolicyDeviceAssuranceMacos.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v14/policydeviceassurancemacos"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policydeviceassurancemacos"
 
 policydeviceassurancemacos.PolicyDeviceAssuranceMacos_IsTerraformElement(x interface{}) *bool
 ```
@@ -550,7 +550,7 @@ policydeviceassurancemacos.PolicyDeviceAssuranceMacos_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-okta.policyDeviceAssuranceMacos.PolicyDeviceAssuranceMacos.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v14/policydeviceassurancemacos"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policydeviceassurancemacos"
 
 policydeviceassurancemacos.PolicyDeviceAssuranceMacos_IsTerraformResource(x interface{}) *bool
 ```
@@ -564,7 +564,7 @@ policydeviceassurancemacos.PolicyDeviceAssuranceMacos_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.policyDeviceAssuranceMacos.PolicyDeviceAssuranceMacos.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v14/policydeviceassurancemacos"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policydeviceassurancemacos"
 
 policydeviceassurancemacos.PolicyDeviceAssuranceMacos_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1277,7 +1277,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.policyDeviceAssuranceMacos.PolicyDeviceAssuranceMacosConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v14/policydeviceassurancemacos"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/policydeviceassurancemacos"
 
 &policydeviceassurancemacos.PolicyDeviceAssuranceMacosConfig {
 	Connection: interface{},

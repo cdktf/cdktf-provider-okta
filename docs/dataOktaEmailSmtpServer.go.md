@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaEmailSmtpServer.DataOktaEmailSmtpServer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v14/dataoktaemailsmtpserver"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaemailsmtpserver"
 
 dataoktaemailsmtpserver.NewDataOktaEmailSmtpServer(scope Construct, id *string, config DataOktaEmailSmtpServerConfig) DataOktaEmailSmtpServer
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.dataOktaEmailSmtpServer.DataOktaEmailSmtpServer.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v14/dataoktaemailsmtpserver"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaemailsmtpserver"
 
 dataoktaemailsmtpserver.DataOktaEmailSmtpServer_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.dataOktaEmailSmtpServer.DataOktaEmailSmtpServer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v14/dataoktaemailsmtpserver"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaemailsmtpserver"
 
 dataoktaemailsmtpserver.DataOktaEmailSmtpServer_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ dataoktaemailsmtpserver.DataOktaEmailSmtpServer_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-okta.dataOktaEmailSmtpServer.DataOktaEmailSmtpServer.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v14/dataoktaemailsmtpserver"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaemailsmtpserver"
 
 dataoktaemailsmtpserver.DataOktaEmailSmtpServer_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ dataoktaemailsmtpserver.DataOktaEmailSmtpServer_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.dataOktaEmailSmtpServer.DataOktaEmailSmtpServer.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v14/dataoktaemailsmtpserver"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaemailsmtpserver"
 
 dataoktaemailsmtpserver.DataOktaEmailSmtpServer_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -620,7 +620,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaEmailSmtpServer.DataOktaEmailSmtpServerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/v14/dataoktaemailsmtpserver"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaemailsmtpserver"
 
 &dataoktaemailsmtpserver.DataOktaEmailSmtpServerConfig {
 	Connection: interface{},
