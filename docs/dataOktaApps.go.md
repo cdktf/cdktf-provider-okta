@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/okta/okta/4.20.0/doc
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaApps.DataOktaApps.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaapps"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v14/dataoktaapps"
 
 dataoktaapps.NewDataOktaApps(scope Construct, id *string, config DataOktaAppsConfig) DataOktaApps
 ```
@@ -318,7 +318,7 @@ func ResetUseOptimization()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-okta.dataOktaApps.DataOktaApps.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaapps"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v14/dataoktaapps"
 
 dataoktaapps.DataOktaApps_IsConstruct(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-okta.dataOktaApps.DataOktaApps.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaapps"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v14/dataoktaapps"
 
 dataoktaapps.DataOktaApps_IsTerraformElement(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ dataoktaapps.DataOktaApps_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-okta.dataOktaApps.DataOktaApps.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaapps"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v14/dataoktaapps"
 
 dataoktaapps.DataOktaApps_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ dataoktaapps.DataOktaApps_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-okta.dataOktaApps.DataOktaApps.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaapps"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v14/dataoktaapps"
 
 dataoktaapps.DataOktaApps_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -728,7 +728,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaApps.DataOktaAppsApps.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaapps"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v14/dataoktaapps"
 
 &dataoktaapps.DataOktaAppsApps {
 
@@ -741,7 +741,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaapps"
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaApps.DataOktaAppsAppsVisibility.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaapps"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v14/dataoktaapps"
 
 &dataoktaapps.DataOktaAppsAppsVisibility {
 
@@ -754,7 +754,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaapps"
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaApps.DataOktaAppsAppsVisibilityHide.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaapps"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v14/dataoktaapps"
 
 &dataoktaapps.DataOktaAppsAppsVisibilityHide {
 
@@ -767,7 +767,7 @@ import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaapps"
 #### Initializer <a name="Initializer" id="@cdktf/provider-okta.dataOktaApps.DataOktaAppsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaapps"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v14/dataoktaapps"
 
 &dataoktaapps.DataOktaAppsConfig {
 	Connection: interface{},
@@ -969,7 +969,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/okta/
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaApps.DataOktaAppsAppsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaapps"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v14/dataoktaapps"
 
 dataoktaapps.NewDataOktaAppsAppsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOktaAppsAppsList
 ```
@@ -1118,7 +1118,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaApps.DataOktaAppsAppsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaapps"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v14/dataoktaapps"
 
 dataoktaapps.NewDataOktaAppsAppsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataOktaAppsAppsOutputReference
 ```
@@ -1506,7 +1506,7 @@ func InternalValue() DataOktaAppsApps
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaApps.DataOktaAppsAppsVisibilityHideOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaapps"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v14/dataoktaapps"
 
 dataoktaapps.NewDataOktaAppsAppsVisibilityHideOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataOktaAppsAppsVisibilityHideOutputReference
 ```
@@ -1777,7 +1777,7 @@ func InternalValue() DataOktaAppsAppsVisibilityHide
 #### Initializers <a name="Initializers" id="@cdktf/provider-okta.dataOktaApps.DataOktaAppsAppsVisibilityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-okta-go/okta/dataoktaapps"
+import "github.com/cdktf/cdktf-provider-okta-go/okta/v14/dataoktaapps"
 
 dataoktaapps.NewDataOktaAppsAppsVisibilityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataOktaAppsAppsVisibilityOutputReference
 ```
